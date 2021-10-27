@@ -1,11 +1,12 @@
 <script>
-  export let sprite, name, types, level, moves, item
+  export let sprite, name, types, level, moves, maxStat, stats, item
 
   import { capitalise } from '$lib/utils/string'
 
   import ColorMap from '$lib/data/colors.json'
   import TypeBadge from '$lib/components/type-badge.svelte'
   import MoveCard from '$lib/components/move-card.svelte'
+  import StatBlock from '$lib/components/stat-block.svelte'
 
   import { Bubbles as Pattern } from '$lib/utils/pattern'
 
@@ -34,11 +35,15 @@
     </div>
   </div>
 
-  <div class='bg-white rounded-b-lg z-10'>
-    <div class='grid grid-cols-2 grid-rows-2 w-2/3 my-3 mx-4 gap-y-4'>
+  <div class='inline-flex items-center bg-white rounded-b-lg z-10'>
+    <div class='grid grid-cols-2 grid-rows-2 w-2/3 my-3 ml-4 gap-y-4'>
       {#each moves as m}
         <MoveCard {...m} />
       {/each}
+    </div>
+
+    <div class='w-1/3 mr-4'>
+      <StatBlock max={maxStat} {...stats} />
     </div>
 
   </div>
@@ -67,6 +72,11 @@
   .card__header::before {
     z-index: -1;
     background: linear-gradient(to right, white 33%, transparent);
+  }
+
+  .dark .card__header::before {
+    z-index: -1;
+    background: linear-gradient(to right, #1f2937 33%, transparent);
   }
 
 </style>

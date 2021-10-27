@@ -17,20 +17,31 @@
 <script>
   export let data;
 
+  const levelCap = data.pokemon.reduce((acc, it) => Math.max(acc, it.level), 0)
+  const teamCap = data.pokemon.length
+  const maxStat = data.pokemon.reduce((acc, it) => Math.max(acc, Math.max(...Object.values(it.stats))), 0)
+  
   import Pokemon from '$lib/components/pokemon.svelte'
   import TypeBadge from '$lib/components/type-badge.svelte'
+  import Label from '$lib/components/label.svelte'
 </script>
 
-<div class='m-6'>
+<div class='m-6 relative'>
   <span class='inline-flex gap-x-2'>
     <h1 class='text-xl font-medium'>{data.name}</h1>
     <div><TypeBadge type={data.speciality} /></div>
   </span>
-  <h2 class='text-md font-medium'>The {data.speciality} gym</h2>
 
+  <div class='absolute top-0 right-0 inline-flex gap-x-2'>
+    <Label heading='Level cap' body={levelCap} />
+    <Label heading='Team cap' body={teamCap} />
+  </div>
+  
+  <h2 class='text-md font-medium'>The {data.speciality} gym</h2>
+  
   <div class='grid lg:grid-cols-3 md:grid-cols-2 mt-8 gap-x-6 gap-y-10'>
     {#each data.pokemon as p}
-      <Pokemon {...p} />
+      <Pokemon {...p} maxStat={maxStat} />
     {/each}
   </div>
 </div>

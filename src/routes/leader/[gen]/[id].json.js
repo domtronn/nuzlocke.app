@@ -5,6 +5,15 @@ import { map, compose, prop, path, pick, evolve, applySpec } from 'ramda'
 
 const maybe = (f, param) => param ? f(param) : Promise.resolve(null)
 
+const statNameMap = {
+  'special-attack': 'spatk', 
+  'special-defense': 'spdef', 
+  'defense': 'def', 
+  'attack': 'atk', 
+  'speed': 'spd', 
+  'hp': 'hp', 
+}
+
 const toMoves = map(compose(
   pick(['name', 'power', 'pp', 'priority', 'accuracy', 'type', 'damage_class']),
   evolve({
@@ -16,7 +25,13 @@ const toMoves = map(compose(
 const toTypes = map(path(['type', 'name']))
 const toPokemon = applySpec({
   sprite: s => s.sprites.front_default,
-  types: d => toTypes(d.types)
+  types: d => toTypes(d.types), 
+  stats: d => d
+    .stats
+    .reduce((acc, it) => ({
+      ...acc, 
+      [statNameMap[it.stat.name]]: it.base_stat
+    }), {})
 })
 
 export async function get ({ params }) {
