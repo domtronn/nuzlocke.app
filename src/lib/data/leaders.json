@@ -1,0 +1,458 @@
+{
+  "swsh": {
+    "progression": {
+      "sw": ["1", "2", "3", "4a", "5", "6a", "7", "8"],
+      "sh": ["1", "2", "3", "4b", "5", "6b", "7", "8"]
+    },
+    "leaders": {
+      "1": {
+        "name": "Milo",
+        "speciality": "grass",
+        "pokemon": [
+          {
+            "name": "gossifleur",
+            "level": 19,
+            "moves": [
+              "magical-leaf",
+              "round",
+              "rapid-spin"
+            ],
+            "held": null
+          },
+          {
+            "name": "eldegoss",
+            "level": 20,
+            "moves": [
+              "magical-leaf",
+              "round",
+              "leafage"
+            ],
+            "held": null
+          }
+        ]
+      },
+      "2": {
+        "name": "Nessa",
+        "speciality": "water",
+        "pokemon": [
+          {
+            "name": "goldeen",
+            "level": 22,
+            "moves": [
+              "water-pulse",
+              "whirlpool",
+              "horn-attack",
+              "agility"
+            ],
+            "held": null
+          },
+          {
+            "name": "arrokuda",
+            "level": 23,
+            "moves": [
+              "aqua-jet",
+              "bite",
+              "whirlpool",
+              "fury-attack"
+            ],
+            "held": null
+          },
+          {
+            "name": "drednaw",
+            "level": 24,
+            "moves": [
+              "razor-shell",
+              "water-gun",
+              "bite",
+              "headbutt"
+            ],
+            "held": null
+          }
+        ]
+      },
+      "3": {
+        "name": "Kabu",
+        "speciality": "fire",
+        "pokemon": [
+          {
+            "name": "ninetales",
+            "level": 25,
+            "moves": [
+              "will-o-wisp",
+              "fire-spin",
+              "quick-attack",
+              "ember"
+            ],
+            "held": null
+          },
+          {
+            "name": "arcanine",
+            "level": 25,
+            "moves": [
+              "will-o-wisp",
+              "flame-wheel",
+              "bite",
+              "agility"
+            ],
+            "held": null
+          },
+          {
+            "name": "centiskorch",
+            "level": 27,
+            "moves": [
+              "flame-wheel",
+              "coil",
+              "bug-bite",
+              "smokescreen"
+            ],
+            "held": null
+          }
+        ]
+      },
+      "4a": {
+        "name": "Bea",
+        "speciality": "fighting",
+        "pokemon": [
+          {
+            "name": "hitmontop",
+            "level": 34,
+            "moves": [
+              "triple-kick",
+              "quick-attack",
+              "counter",
+              "revenge"
+            ],
+            "held": null
+          },
+          {
+            "name": "pangoro",
+            "level": 34,
+            "moves": [
+              "bullet-punch",
+              "circle-throw",
+              "night-slash",
+              "work-up"
+            ],
+            "held": null
+          },
+          {
+            "name": "sirfetchd",
+            "level": 35,
+            "moves": [
+              "detect",
+              "swords-dance",
+              "brutal-swing",
+              "revenge"
+            ],
+            "held": null
+          },
+          {
+            "name": "machamp",
+            "level": 36,
+            "moves": [
+              "scary-face",
+              "revenge",
+              "knock-off",
+              "strength"
+            ],
+            "held": null
+          }
+        ]
+      },
+      "4b": {
+        "name": "Allister",
+        "speciality": "ghost",
+        "pokemon": [
+          {
+            "name": "yamask",
+            "level": 34,
+            "moves": [
+              "brutal-swing",
+              "hex",
+              "disable"
+            ],
+            "held": null
+          },
+          {
+            "name": "mimikyu-disguised",
+            "level": 34,
+            "moves": [
+              "shadow-sneak",
+              "baby-doll-eyes",
+              "hone-claws",
+              "slash"
+            ],
+            "held": null
+          },
+          {
+            "name": "cursola",
+            "level": 35,
+            "moves": [
+              "ancient-power",
+              "curse",
+              "hex"
+            ],
+            "held": null
+          },
+          {
+            "name": "gengar",
+            "level": 36,
+            "moves": [
+              "venoshock",
+              "hex",
+              "hypnosis",
+              "payback"
+            ],
+            "held": null
+          }
+        ]
+      },
+      "5": {
+        "name": "Opal",
+        "speciality": "fairy",
+        "pokemon": [
+          {
+            "name": "weezing-galar",
+            "level": 36,
+            "moves": [
+              "sludge",
+              "fairy-wind",
+              "tackle"
+            ],
+            "held": null
+          },
+          {
+            "name": "mawile",
+            "level": 36,
+            "moves": [
+              "draining-kiss",
+              "crunch",
+              "iron-defense",
+              "astonish"
+            ],
+            "held": null
+          },
+          {
+            "name": "togekiss",
+            "level": 37,
+            "moves": [
+              "air-slash",
+              "draining-kiss",
+              "ancient-power"
+            ],
+            "held": null
+          },
+          {
+            "name": "alcremie",
+            "level": 38,
+            "moves": [
+              "draining-kiss",
+              "acid-armor",
+              "sweet-kiss"
+            ],
+            "held": null
+          }
+        ]
+      },
+      "6a": {
+        "name": "Gordie",
+        "speciality": "rock",
+        "pokemon": [
+          {
+            "name": "barbaracle",
+            "level": 40,
+            "moves": [
+              "shell-smash",
+              "rock-tomb",
+              "razor-shell"
+            ],
+            "held": null
+          },
+          {
+            "name": "shuckle",
+            "level": 40,
+            "moves": [
+              "power-split",
+              "stone-edge",
+              "struggle-bug",
+              "rock-tomb"
+            ],
+            "held": null
+          },
+          {
+            "name": "stonjourner",
+            "level": 41,
+            "moves": [
+              "stealth-rock",
+              "rock-tomb",
+              "body-slam",
+              "wonder-room"
+            ],
+            "held": null
+          },
+          {
+            "name": "coalossal",
+            "level": 42,
+            "moves": [
+              "tar-shot",
+              "stealth-rock",
+              "heat-crash",
+              "rock-tomb"
+            ],
+            "held": null
+          }
+        ]
+      },
+      "6b": {
+        "name": "Melony",
+        "speciality": "ice",
+        "pokemon": [
+          {
+            "name": "frosmoth",
+            "level": 40,
+            "moves": [
+              "icy-wind",
+              "feather-dance",
+              "bug-buzz",
+              "hail"
+            ],
+            "held": null
+          },
+          {
+            "name": "darmanitan-standard-galar",
+            "level": 40,
+            "moves": [
+              "icicle-crash",
+              "headbutt",
+              "taunt",
+              "fire-fang"
+            ],
+            "held": null
+          },
+          {
+            "name": "eiscue-ice",
+            "level": 41,
+            "moves": [
+              "amnesia",
+              "freeze-dry",
+              "hail",
+              "icy-wind"
+            ],
+            "held": null
+          },
+          {
+            "name": "lapras",
+            "level": 42,
+            "moves": [
+              "icy-wind",
+              "ice-beam",
+              "surf",
+              "sing"
+            ],
+            "held": null
+          }
+        ]
+      },
+      "7": {
+        "name": "Piers",
+        "speciality": "dark",
+        "pokemon": [
+          {
+            "name": "scrafty",
+            "level": 44,
+            "moves": [
+              "fake-out",
+              "sand-attack",
+              "brick-break",
+              "payback"
+            ],
+            "held": null
+          },
+          {
+            "name": "malamar",
+            "level": 45,
+            "moves": [
+              "night-slash",
+              "foul-play",
+              "psycho-cut",
+              "payback"
+            ],
+            "held": null
+          },
+          {
+            "name": "skuntank",
+            "level": 45,
+            "moves": [
+              "sucker-punch",
+              "screech",
+              "toxic",
+              "snarl"
+            ],
+            "held": null
+          },
+          {
+            "name": "obstagoon",
+            "level": 46,
+            "moves": [
+              "obstruct",
+              "throat-chop",
+              "counter",
+              "shadow-claw"
+            ],
+            "held": null
+          }
+        ]
+      },
+      "8": {
+        "name": "Raihan",
+        "speciality": "dragon",
+        "pokemon": [
+          {
+            "name": "gigalith",
+            "level": 46,
+            "moves": [
+              "stealth-rock",
+              "sand-tomb",
+              "rock-blast",
+              "body-press"
+            ],
+            "held": null
+          },
+          {
+            "name": "flygon",
+            "level": 47,
+            "moves": [
+              "thunder-punch",
+              "breaking-swipe",
+              "crunch",
+              "steel-wing"
+            ],
+            "held": null
+          },
+          {
+            "name": "sandaconda",
+            "level": 46,
+            "moves": [
+              "protect",
+              "glare",
+              "fire-fang",
+              "earth-power"
+            ],
+            "held": null
+          },
+          {
+            "name": "duraludon",
+            "level": 48,
+            "moves": [
+              "breaking-swipe",
+              "body-press",
+              "stone-edge",
+              "iron-head"
+            ],
+            "held": null
+          }
+        ]
+      }
+    }
+  }
+}
