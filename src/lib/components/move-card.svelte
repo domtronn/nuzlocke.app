@@ -27,7 +27,10 @@
           />
       {/if}
 
-      <span class='font-medium'>{capitalise(name)}</span>
+
+      <span class='font-medium'>
+        {capitalise(name)}
+      </span>
     </span>
 
     {#if power}
@@ -35,13 +38,16 @@
         <span class='relative'>
           <Icon src={Sword} className='text-xs fill-current' />
         </span>
-        <span class='relative'>
+        <span
+          data-tooltip={stab && power ? `Base power ${power}` : null}
+          class='relative'
+        >
           {#if stab}
             <Icon src={Chevron} className='absolute left-1/2 -translate-x-1/2 -translate-y-1/2 fill-current' />
-          {Math.round(power * 1.5)}
-        {:else}
-          {power}
-        {/if}
+            {Math.round(power * 1.5)}
+          {:else}
+            {power}
+          {/if}
         </span>
       </span>
     {/if}
