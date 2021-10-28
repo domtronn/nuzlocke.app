@@ -1,6 +1,6 @@
 <script>
-  export let max, atk, def, spdef, spatk, spd
-  const stats = { atk, def, spdef, spatk, spd }
+  export let max, atk, def, spdef, spatk, spd, hp
+  const stats = { hp, atk, def, spdef, spatk, spd }
   const total = Object.values(stats).reduce((acc, it) => acc + it, 0)
 </script>
 

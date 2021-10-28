@@ -8,7 +8,7 @@
   import MoveCard from '$lib/components/move-card.svelte'
   import StatBlock from '$lib/components/stat-block.svelte'
 
-  import { Bubbles as Pattern } from '$lib/utils/pattern'
+  import { Stars as Pattern } from '$lib/utils/pattern'
 
   const cols = types.map(t => ColorMap[t])
   const bgImg = Pattern(cols[1] || cols[0])
@@ -19,9 +19,12 @@
     style='--t-col: {cols[0]}; background-image: url("{bgImg}")'
     class='card__header flex justify-between px-4 pt-4 pb-3 relative z-0 rounded-t-lg'
     >
-    <div>
-      <p class='font-bold'>{capitalise(name)}</p>
-      <p class='text-xs'>Level <b>{level}</b></p>
+    <div class='flex flex-row items-end gap-x-2'>
+      <div class='flex flex-col items-center'>
+        <span class='text-xs -mb-2'>Level</span>
+        <span class='text-3xl font-bold'>{level}</span>
+      </div>
+      <p class='text-xl mb-0.25'>{capitalise(name)}</p>
     </div>
 
     <div class='h-0'>

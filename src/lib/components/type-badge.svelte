@@ -20,7 +20,7 @@
 
 
 {#if icon}
-  <div style="--badge-color: {col[0]}; padding: 2px 4px;">
+  <div style="--badge-color: {col[0]}; padding: 4px 5px;">
     <Icon src={icon} color={col[1]} />
   </div>
 {:else}
@@ -44,7 +44,7 @@
     font-size: 14px;
     letter-spacing: 2px;
 
-    border-radius: 4px;
+    border-radius: 6px;
     padding: 1px 5px 1px 8px;
   }
 
