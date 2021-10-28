@@ -5,6 +5,7 @@
 
   import Icon from 'svelte-icons-pack'
 
+  import Sword from 'svelte-icons-pack/ri/RiOthersSwordFill'
   import Info from 'svelte-icons-pack/ri/RiEditorAsterisk'
   import Priority from 'svelte-icons-pack/fi/FiChevronUp'
   import HighPriority from 'svelte-icons-pack/fi/FiChevronsUp'
@@ -13,7 +14,7 @@
 
 <div class='my-2'>
 
-  <p class='text-sm mb-1 relative items-center flex flex-row gap-x-1'>
+  <p class='text-sm mb-1 relative items-center flex divide-x divide-black'>
     <span
       class='w-auto bg-red relative'
       data-tooltip={effect || null}>
@@ -26,10 +27,7 @@
           />
       {/if}
 
-      {#if power}
-        <span class='font-bold'>{power}</span>
-      {/if}
-      <span>{capitalise(name)}</span>
+    <span>{capitalise(name)}</span>
     </span>
 
       {#if priority > 3}
@@ -43,7 +41,14 @@
       {:else if priority > 0}
         <Icon src={Priority} />
       {/if}
-  </p>
+
+      {#if power}
+        <span class='font-bold text-xs inline-flex items-center text-gray-800'>
+          <Icon src={Sword} className='fill-current' />
+          {power}
+        </span>
+      {/if}
+    </p>
 
   <div class='flex gap-x-1 justify-start items-center'>
     <TypeBadge type={damage_class} />
