@@ -29,12 +29,12 @@
   class='max-w-lg mx-auto text-center flex flex-col items-center justify-center h-screen {text}'
   >
   <span class='z-20 relative mt-32'>
-    <span class='centre text-8xl drop-shadow-text absolute -translate-y-full -translate-x-1/2 -top-3 -rotate-6' src={Question}>?</span>
-    <span class='right text-7xl drop-shadow-text absolute translate-x-8 -translate-y-full top-0 rotate-12' src={Question}>?</span>
-    <span class='left text-6xl drop-shadow-text absolute -translate-x-full -translate-y-full left-2 -top-1 -rotate-12' src={Question}>?</span>
+    <span class='centre text-8xl drop-shadow-text absolute -translate-y-full -translate-x-1/2 top-3 -rotate-6' src={Question}>?</span>
+    <span class='right text-7xl drop-shadow-text absolute translate-x-8 -translate-y-full top-5 rotate-12' src={Question}>?</span>
+    <span class='left text-6xl drop-shadow-text absolute -translate-x-full -translate-y-full left-6 top-4 -rotate-12' src={Question}>?</span>
     <span class=''>
-      <h1 class='tracking-wide drop-shadow-text translate-y-48 font-bold text-6xl'>{status}</h1>
-      <h2 class='tracking-wide translate-y-48'>{message}</h2>
+      <h1 class='tracking-wide drop-shadow-text translate-y-56 font-bold text-8xl'>{status}</h1>
+      <h2 class='font-sans text-gray-800 font-medium tracking-wide translate-y-56'>{message}</h2>
     </span>
   </span>
   <img src={img} alt='wobuffet' class='w-96 mx-auto drop-shadow-md -translate-y-1/2 z-0' />
