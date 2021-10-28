@@ -4,6 +4,7 @@
 @tailwind utilities;
 
 [data-tooltip] {
+  font-weight: normal !important;
   position: relative;
   z-index: 2;
   display: block;
