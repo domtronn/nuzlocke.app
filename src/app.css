@@ -25,9 +25,9 @@
   left: 50%;
   margin-bottom: 5px;
   padding: 7px;
-  width: 160px;
-  min-width: 120px;
-  max-width: 250px;
+  width: 100%;
+  min-width: 160px;
+  max-width: 350px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;

@@ -5,7 +5,7 @@
 
   import Icon from 'svelte-icons-pack'
 
-  import Info from 'svelte-icons-pack/ti/TiInfoLarge'
+  import Info from 'svelte-icons-pack/ri/RiEditorAsterisk'
   import Priority from 'svelte-icons-pack/fi/FiChevronUp'
   import HighPriority from 'svelte-icons-pack/fi/FiChevronsUp'
 
@@ -14,28 +14,39 @@
 <div class='my-2'>
 
   <p class='text-sm mb-1 relative items-center flex flex-row gap-x-1'>
-{#if power}<span class='font-bold'>{power}</span>{/if}
-  <span>{capitalise(name)}</span>
-  {#if priority > 3}
-    <Icon src={HighPriority} className='-mr-2.5' />
-    <Icon src={HighPriority} />
-  {:else if priority > 2}
-    <Icon src={HighPriority} className='-mr-2.5' />
-    <Icon src={Priority} />
-  {:else if priority > 1}
-    <Icon src={HighPriority} />
-  {:else if priority > 0}
-    <Icon src={Priority} />
-  {/if}
-</p>
+    <span
+      class='w-auto bg-red relative'
+      data-tooltip={effect || null}>
+
+      {#if effect}
+        <Icon
+          size='0.5em'
+          src={Info}
+          className='fill-current absolute top-0 left-0 -translate-x-full'
+          />
+      {/if}
+
+      {#if power}
+        <span class='font-bold'>{power}</span>
+      {/if}
+      <span>{capitalise(name)}</span>
+    </span>
+
+      {#if priority > 3}
+        <Icon src={HighPriority} className='-mr-2.5' />
+        <Icon src={HighPriority} />
+      {:else if priority > 2}
+        <Icon src={HighPriority} className='-mr-2.5' />
+        <Icon src={Priority} />
+      {:else if priority > 1}
+        <Icon src={HighPriority} />
+      {:else if priority > 0}
+        <Icon src={Priority} />
+      {/if}
+  </p>
 
   <div class='flex gap-x-1 justify-start items-center'>
     <TypeBadge type={damage_class} />
     <TypeBadge type={type} />
-    {#if effect}
-      <span data-tooltip={effect}>
-        <Icon src={Info} className='hover:text-red-300 text-green-200' />
-      </span>
-    {/if}
   </div>
 </div>
