@@ -41,7 +41,7 @@
   <div class='inline-flex items-center bg-white rounded-b-lg z-10'>
     <div class='grid grid-cols-2 grid-rows-2 w-2/3 my-3 ml-4 gap-y-4'>
       {#each moves as m}
-        <MoveCard {...m} />
+        <MoveCard {...m} stab={types.includes(m.type)} />
       {/each}
     </div>
 

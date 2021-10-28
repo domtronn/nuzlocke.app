@@ -22,7 +22,7 @@
       </span>
 
       <div class='absolute top-0 right-0 inline-flex gap-x-2'>
-        <Label heading='Level cap' body={levelCap} />
+        <Label heading='Lvl cap' body={levelCap} />
         <Label heading='Team cap' body={teamCap} />
       </div>
 
