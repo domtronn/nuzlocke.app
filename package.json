@@ -19,10 +19,13 @@
   },
   "dependencies": {
     "pokedex-promise-v2": "^3.3.2",
+    "pokemon-assets": "^0.6.0",
     "prettier": "^2.3.2",
     "prettier-plugin-svelte": "^2.3.1",
     "ramda": "^0.27.1",
-    "svelte-icons-pack": "^1.4.6"
+    "simple-svelte-autocomplete": "^2.2.3",
+    "svelte-icons-pack": "^1.4.6",
+    "svelte-select": "^4.4.3"
   },
   "prettier": {
     "arrowParens": "always",

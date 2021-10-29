@@ -1,5 +1,6 @@
 <script>
   import '../app.css'
+  import 'pokemon-assets/assets/css/pokemon.css'
 </script>
 
 <style global lang="postcss">
