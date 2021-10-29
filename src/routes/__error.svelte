@@ -19,8 +19,6 @@
 
 <script>
   export let text, img, status, message
-  import Icon from 'svelte-icons-pack'
-  import Question from 'svelte-icons-pack/bs/BsQuestion'
 </script>
 
 
@@ -29,9 +27,9 @@
   class='max-w-lg mx-auto text-center flex flex-col items-center justify-center h-screen {text}'
   >
   <span class='z-20 relative mt-32'>
-    <span class='centre text-8xl drop-shadow-text absolute -translate-y-full -translate-x-1/2 top-3 -rotate-6' src={Question}>?</span>
-    <span class='right text-7xl drop-shadow-text absolute translate-x-8 -translate-y-full top-5 rotate-12' src={Question}>?</span>
-    <span class='left text-6xl drop-shadow-text absolute -translate-x-full -translate-y-full left-6 top-4 -rotate-12' src={Question}>?</span>
+    <span class='_centre text-8xl drop-shadow-text absolute -translate-y-full -translate-x-1/2 top-3 -rotate-6'>?</span>
+    <span class='_right text-7xl drop-shadow-text absolute translate-x-8 -translate-y-full top-5 rotate-12'>?</span>
+    <span class='_left text-6xl drop-shadow-text absolute -translate-x-full -ml-10 -translate-y-full top-4 -rotate-12'>?</span>
     <span class=''>
       <h1 class='tracking-wide drop-shadow-text translate-y-56 font-bold text-8xl'>{status}</h1>
       <h2 class='font-sans text-gray-800 font-medium tracking-wide translate-y-56'>{message}</h2>

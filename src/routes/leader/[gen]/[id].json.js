@@ -6,11 +6,11 @@ import { map, compose, prop, path, pick, evolve, applySpec } from 'ramda'
 const maybe = (f, param) => param ? f(param) : Promise.resolve(null)
 
 const statNameMap = {
-  'special-attack': 'spatk',
-  'special-defense': 'spdef',
+  'special-attack': 'spa',
+  'special-defense': 'spd',
   'defense': 'def',
   'attack': 'atk',
-  'speed': 'spd',
+  'speed': 'spe',
   'hp': 'hp',
 }
 

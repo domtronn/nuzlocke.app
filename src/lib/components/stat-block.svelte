@@ -1,6 +1,6 @@
 <script>
-  export let max, showHint, atk, def, spdef, spatk, spd, hp
-  const stats = { hp, atk, def, spdef, spatk, spd }
+  export let max, showHint, atk, def, spd, spa, spe, hp
+  const stats = { hp, atk, def, spa, spd, spe }
   const total = Object.values(stats).reduce((acc, it) => acc + it, 0)
 
   import StatBar from '$lib/components/stat-bar.svelte'

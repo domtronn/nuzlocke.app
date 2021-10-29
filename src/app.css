@@ -82,17 +82,27 @@
   color: theme('colors.gray.800') !important;
 }
 
+.autocomplete {
+  margin-top: -1px;
+  min-width: 0 !important;
+}
+
 .autocomplete-list-item.confirmed {
   background-color: theme('colors.indigo.500') !important;
   color: white !important;
 }
 
 .ac__input-container {
-  margin-top: -1px !important;
+  cursor: pointer !important;
+  margin-top: -2px !important;
   min-width: 0 !important;
   padding: calc(0.5rem + 1px) 0.75rem !important;
 }
 
 .has-item .ac__input-container {
   padding-left: 68px !important;
+}
+
+.has-status .ac__input-container {
+  padding-left: 32px !important;
 }
