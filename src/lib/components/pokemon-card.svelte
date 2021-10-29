@@ -49,7 +49,7 @@
       </div>
     {/if}
 
-    <div class={moves && moves.length ? 'w-2/5 sm:w-1/3 mr-4 sm:mt-0 mt-5' : 'm-4'}>
+    <div class={moves && moves.length ? 'w-2/5 sm:w-1/3 mr-4 sm:mt-0 mt-5' : 'w-full m-4'}>
       <StatBlock max={maxStat} {...stats} />
     </div>
 

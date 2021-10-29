@@ -35,7 +35,7 @@
 <div class='container mx-auto'>
   <div class='flex justify-center'>
     <main role='main' class='w-full sm:w-2/3 md:w-3/4 grid grid-cols-8 gap-x-4 gap-y-8 my-10'>
-      <div class='grid grid-cols-5 gap-x-2 gap-y-2 col-span-3'>
+      <div class='grid grid-cols-5 gap-x-2 gap-y-2 col-span-3 mb-6'>
         {#each types as type}
           {#if typeCounts[type] > 0}
             <button on:click={filterType(type)} class='inline-flex'>
@@ -45,7 +45,7 @@
         {/each}
       </div>
 
-      <div class='grid grid-cols-3 gap-x-2 gap-y-2 col-span-2'>
+      <div class='grid grid-cols-3 gap-x-2 col-span-2'>
         {#each ['hp', 'atk', 'spa', 'def', 'spd', 'spe'] as stat}
           <button on:click={sortStat(stat)} class='inline-flex'>
             <span class='text-xs px-2 border shadow-sm rounded-lg'>
@@ -63,11 +63,11 @@
 
       <div class='col-span-2' />
       
-      {#each box as p (p.pokemon)}
+      {#each box as p (p.id)}
         <span class='col-span-2'>
           <PokemonCard
             sprite={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${Pokemon[p.pokemon].num}.png`}
-            maxStat={255}
+            maxStat={Math.max(150, ...Object.values(Pokemon[p.pokemon].baseStats))}
             moves={[]}
             name={p.nickname
             ? p.nickname
