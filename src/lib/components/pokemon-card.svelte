@@ -1,5 +1,5 @@
 <script>
-  export let sprite, name, types, level, moves, maxStat, stats, item
+  export let sprite, name, types, level, moves, maxStat, stats
 
   import { capitalise } from '$lib/utils/string'
 
@@ -81,10 +81,6 @@
     background: linear-gradient(to right, white 33%, transparent);
   }
 
-  .dark .card__header::before {
-    z-index: -1;
-    background: linear-gradient(to right, #1f2937 33%, transparent);
-  }
 
   img {
     min-width: 160px;

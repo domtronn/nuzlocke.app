@@ -1,5 +1,5 @@
 <script>
-  export let max, showHint, atk, def, spd, spa, spe, hp
+  export let max, atk, def, spd, spa, spe, hp
   const stats = { hp, atk, def, spa, spd, spe }
   const total = Object.values(stats).reduce((acc, it) => acc + it, 0)
 

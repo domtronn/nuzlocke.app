@@ -1,12 +1,12 @@
 <script>
-  export let name, accuracy, priority, power, type, damage_class, effect, stab
+  export let name, priority, power, type, damage_class, effect, stab
   import { capitalise } from '$lib/utils/string'
   import TypeBadge from '$lib/components/type-badge.svelte'
 
   import Icon from 'svelte-icons-pack'
 
   import Sword from 'svelte-icons-pack/ri/RiOthersSwordFill'
-  import Chevron from 'svelte-icons-pack/Io/IoChevronUpOutline'
+  import Chevron from 'svelte-icons-pack/io/IoChevronUpOutline'
   import Info from 'svelte-icons-pack/ri/RiEditorAsterisk'
   import Priority from 'svelte-icons-pack/bi/BiSolidChevronUp'
   import HighPriority from 'svelte-icons-pack/bi/BiSolidChevronsUp'

@@ -3,8 +3,6 @@
  import Chevron from 'svelte-icons-pack/cg/CgChevronRightO'
  import Icon from 'svelte-icons-pack'
 
- export let entry
-
  let isOpen = false
  const toggle = _ => isOpen = !isOpen
 </script>
