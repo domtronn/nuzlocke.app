@@ -38,14 +38,14 @@
     </div>
   </div>
 
-  <div class='inline-flex items-center bg-white rounded-b-lg z-10'>
-    <div class='grid grid-cols-2 grid-rows-2 w-2/3 my-3 ml-4 gap-y-4'>
+  <div class='relative inline-flex sm:items-center bg-white rounded-b-lg z-10'>
+    <div class='grid grid-cols-1 sm:grid-cols-2 grid-rows-2 w-3/5 sm:w-2/3 my-3 ml-4 gap-y-0 sm:gap-y-3'>
       {#each moves as m}
         <MoveCard {...m} stab={types.includes(m.type)} />
       {/each}
     </div>
 
-    <div class='w-1/3 mr-4'>
+    <div class='w-2/5 sm:w-1/3 mr-4 mt-5 sm:mt-0'>
       <StatBlock max={maxStat} {...stats} />
     </div>
 

@@ -7,9 +7,8 @@
 
 </script>
 
-<div class='grid grid-cols-7 gap-x-2 gap-y-1 items-center -mt-10'>
-  <span class='col-span-3' />
-  <span class='col-span-4 mb-1'>
+<div class='grid grid-cols-11 sm:grid-cols-7 gap-x-2 gap-y-1 items-center'>
+  <span class='absolute top-0 -translate-y-1/2 -translate-x-1/2 right-10'>
     <b class='py-1 -ml-2 pl-2 pr-2.5'>{total}</b>
   </span>
 
@@ -42,7 +41,7 @@
     background-color: white;
     position: absolute;
     top: -1px;
-    transform: translateY(calc(100% - 2px));
+    transform: translateY(calc(100% - 1px));
     left: -2px;
     right: 2px;
     width: calc(100% + 4px);

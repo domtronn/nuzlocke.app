@@ -6,6 +6,10 @@ const config = {
 
   theme: {
     extend: {
+      fontSize: {
+        tiny: '0.7rem',
+        xxs: '0.6rem'
+      },
       animation: {
         'ping-slow': 'ping 3s ease infinite'
       },
@@ -14,7 +18,8 @@ const config = {
       },
       colors: {
         orange: colors.orange,
-        lime: colors.lime
+        lime: colors.lime,
+        gray: colors.coolGray
       }
     }
   },

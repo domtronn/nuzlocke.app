@@ -14,7 +14,7 @@
 </script>
 
 <div class='my-2'>
-  <p class='text-sm mb-1 relative items-center flex space-x-1'>
+  <p class='text-sm mb-1 relative items-center flex flex-row space-x-1'>
     <span
       class='w-auto bg-red relative {effect ? 'mr-2' : ''}'
       data-tooltip={effect || null}>
@@ -35,36 +35,50 @@
 
     {#if power}
       <span class='font-bold text-sm inline-flex items-center'>
+        <!-- Icon -->
         <span class='relative'>
           <Icon src={Sword} className='text-xs fill-current' />
         </span>
+
+        <!-- Desktop power -->
         <span
           data-tooltip={stab && power ? `Base power ${power}` : null}
-          class='relative'
+          class='w-0 invisible sm:w-auto sm:visible relative'
         >
           {#if stab}
             <Icon src={Chevron} className='absolute left-1/2 -translate-x-1/2 -translate-y-1/2 fill-current' />
-            {Math.round(power * 1.5)}
+            <span class='font-bold'>{Math.round(power * 1.5)}</span>
           {:else}
             {power}
+          {/if}
+        </span>
+
+        <!-- Mobile Power -->
+        <span class='items-center font-bold inline-flex w-auto visible sm:hidden sm:w-0'>
+          {power}
+          {#if stab}
+            <span class='ml-0.5 font-normal text-tiny text-gray-500'>+{Math.round(power * 0.5)}</span>
           {/if}
         </span>
       </span>
     {/if}
 
-    <span class='flex flex-row'>
-    {#if priority > 3}
-      <Icon src={HighPriority} className='-mr-1.5' />
-      <Icon src={HighPriority} />
-    {:else if priority > 2}
-      <Icon src={HighPriority} className='-mr-1.5' />
-      <Icon src={Priority} />
-    {:else if priority > 1}
-      <Icon src={HighPriority} />
-    {:else if priority > 0}
-      <Icon src={Priority} />
+    <!-- Priority icons -->
+    {#if priority > 0}
+      <span class='flex flex-row'>
+        {#if priority > 3}
+          <Icon src={HighPriority} className='-mr-1.5' />
+          <Icon src={HighPriority} />
+        {:else if priority > 2}
+          <Icon src={HighPriority} className='-mr-1.5' />
+          <Icon src={Priority} />
+        {:else if priority > 1}
+          <Icon src={HighPriority} />
+        {:else}
+          <Icon src={Priority} />
+        {/if}
+      </span>
     {/if}
-    </span>
 
   </p>
 
