@@ -12,9 +12,9 @@
       <main role="main" class="w-full sm:w-2/3 md:w-3/4 px-8 py-6">
         <div class='flex flex-col gap-y-4'>
           <h1 class='text-4xl mb-2'>Pokémon {game.title}</h1>
-          {#each game.progression as p}
+          {#each game.progression as p, i}
             {#if p.type === 'route'}
-              <PokemonSelector location={p.name} />
+              <PokemonSelector id={i} location={p.name} />
             {:else if p.type === 'gym'}
               <GymCard game='swsh' id={p.value} />
             {/if}

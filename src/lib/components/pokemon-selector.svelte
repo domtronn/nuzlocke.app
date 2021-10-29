@@ -1,5 +1,5 @@
 <script>
- export let location
+ export let id, location
 
  import { game, read, patch } from '$lib/store'
 
@@ -42,9 +42,11 @@
    if (selected)
      game.update(patch({
        [location]: {
+         id,
          pokemon: selected?.alias,
          status: status?.id,
          nickname,
+         location
        }
      }))
  }

@@ -18,6 +18,12 @@
     box = ogbox.filter(p => Pokemon[p.pokemon].types.map(i => i.toLowerCase()).includes(type))
   }
 
+  const sortStat = (stat) => () => {
+    box = box.sort((a, b) => Pokemon[b.pokemon].baseStats[stat] - Pokemon[a.pokemon].baseStats[stat])
+  }
+
+  const clear = () => { box = ogbox.sort((a, b) => a.id - b.id) }
+
   const typeCounts = types
     .reduce((acc, it) => ({
       ...acc,
@@ -39,7 +45,23 @@
         {/each}
       </div>
 
-      <div class='col-span-5' />
+      <div class='grid grid-cols-3 gap-x-2 gap-y-2 col-span-2'>
+        {#each ['hp', 'atk', 'spa', 'def', 'spd', 'spe'] as stat}
+          <button on:click={sortStat(stat)} class='inline-flex'>
+            <span class='text-xs px-2 border shadow-sm rounded-lg'>
+              {stat}
+            </span>
+          </button>
+        {/each}
+      </div>
+
+      <div class='col-span-1'>
+        <button on:click={clear}>
+          Clear filters
+        </button>
+      </div>
+
+      <div class='col-span-2' />
       
       {#each box as p (p.pokemon)}
         <span class='col-span-2'>
