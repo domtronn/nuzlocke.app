@@ -74,7 +74,7 @@
  }
 </script>
 
-<div class='m-6 relative'>
+<div class='my-6 md:mx-6 relative'>
   <Accordion>
     <span slot='heading' class='text-left'>
       <span class='inline-flex gap-x-2'>

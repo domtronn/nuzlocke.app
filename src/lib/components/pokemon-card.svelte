@@ -1,5 +1,5 @@
 <script>
-  export let sprite, name, types, level, moves, maxStat, stats
+  export let sprite, name, types, level, moves, maxStat, held, stats
 
   import { capitalise } from '$lib/utils/string'
 
@@ -14,7 +14,7 @@
   const bgImg = Pattern(cols[1] || cols[0])
 </script>
 
-<div class='card flex flex-col border rounded-lg divide divide-y'>
+<div class='card relative flex flex-col border rounded-lg divide divide-y'>
   <div
     style='--t-col: {cols[0]}; background-image: url("{bgImg}")'
     class='card__header flex justify-between pl-4 pt-4 pb-3 relative z-0 rounded-t-lg'
@@ -26,11 +26,21 @@
           <span class='text-3xl font-bold'>{level}</span>
         </div>
       {/if}
-      <p class='text-xl mb-0.25'>{capitalise(name)}</p>
+      <p class='relative text-xl mb-0.25'>
+        {capitalise(name)}
+        {#if held}
+        <div
+          data-tooltip={held.effect}
+          class='absolute right-0 bottom-0 translate-x-full -mb-1 z-20 p-1 absolute'>
+          <img src={held.sprite} alt={held.name} />
+        </div>
+      {/if}
+      </p>
+
     </div>
 
     <div class='absolute -right-8 h-0'>
-      <img class='-translate-y-16 h-40 w-auto' src={sprite} alt={name} />
+      <img class='img__pkm -translate-y-16 h-40 w-auto' src={sprite} alt={name} />
     </div>
 
     <div class='flex gap-x-1 absolute top-0 transform -translate-y-1/2'>
@@ -52,7 +62,6 @@
     <div class={moves && moves.length ? 'w-2/5 sm:w-1/3 mr-4 sm:mt-0 mt-5' : 'w-full m-4'}>
       <StatBlock max={maxStat} {...stats} />
     </div>
-
   </div>
 </div>
 
@@ -81,9 +90,7 @@
     background: linear-gradient(to right, white 33%, transparent);
   }
 
-
-  img {
+  .img__pkm {
     min-width: 160px;
   }
-
 </style>

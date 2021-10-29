@@ -30,9 +30,15 @@ const toMoves = map(compose(
   })
 ))
 
+const toHeld = applySpec({
+  sprite: s => s.sprites.default,
+  name: s => s.names.find(l => l.language.name === 'en').name,
+  effect: s => s.effect_entries[0].short_effect
+})
+
 const toTypes = map(path(['type', 'name']))
 const toPokemon = applySpec({
-  name: s => s.species.name, 
+  name: s => s.species.name,
   sprite: s => s.sprites.front_default,
   types: d => toTypes(d.types),
   stats: d => d
@@ -58,7 +64,7 @@ export async function get ({ params }) {
           const held = await maybe(P.getItemByName, p.held)
           const moves = await Promise.all(p.moves.map(m => P.getMoveByName(m)))
 
-          return { ...p, ...toPokemon(data), moves: toMoves(moves), held }
+          return { ...p, ...toPokemon(data), moves: toMoves(moves), held: held ? toHeld(held) : null }
         })
     )
 

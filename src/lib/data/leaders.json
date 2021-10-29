@@ -1,5 +1,9 @@
 {
   "progressions": {
+    "hgss": {
+      "leaders": "hgss",
+      "path": ["1"]
+    }, 
     "sw": {
       "leaders": "swsh",
       "path": [
@@ -34,6 +38,62 @@
       ]
     }
   },
+  "hgss": {
+    "1": {
+      "name": "Falkner",
+      "speciality": "flying",
+      "pokemon": [
+        {
+          "name": "pidgey",
+          "level": 9,
+          "moves": [
+            "tackle",
+            "sand-attack"
+          ]
+        },
+        {
+          "name": "pidgeotto",
+          "level": 13,
+          "moves": [
+            "tackle",
+            "roost",
+            "gust"
+          ]
+        }
+      ]
+    },
+    "2": {
+      "name": "Bugsy",
+      "speciality": "bug",
+      "pokemon": [
+        {
+          "name": "scyther",
+          "level": 17,
+          "moves": [
+            "quick-attack",
+            "leer",
+            "u-turn", 
+            "focus-energy"
+          ],
+          "held": "sitrus-berry"
+        },
+        {
+          "name": "kakuna",
+          "level": 15,
+          "moves": [
+            "poison-sting"
+          ]
+        },
+        {
+          "name": "metapod",
+          "level": 15,
+          "moves": [
+            "tackle"
+          ]
+        }
+      ]
+    }
+  }, 
   "swsh": {
     "1": {
       "name": "Milo",
