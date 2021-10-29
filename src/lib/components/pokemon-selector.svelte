@@ -56,6 +56,10 @@
    game.update(patch({ [location]: {} }))
  }
 
+ function handleDeath () {
+   status = NuzlockeStates[5]
+ }
+
  $: gray = ['Deceased', 'Missed'].includes(status?.state)
 
 </script>
@@ -144,6 +148,14 @@
     >
       <Icon src={Bin} className='fill-current' />
     </button>
+    {#if status && status.id !== 4 && status.id !== 5}
+      <button
+        class='bg-white hover:active:bg-indigo-50 shadow-md text-gray-400 border-gray-200 active:shadow-sm active:text-indigo-600 hover:active:border-indigo-600 hover:text-indigo-300 hover:border-indigo-200 rounded-lg p-2 transition-all border-2'
+        on:click={handleDeath}
+      >
+        <Icon src={Deceased} className='fill-current' />
+      </button>
+    {/if}
   </span>
 
 </div>

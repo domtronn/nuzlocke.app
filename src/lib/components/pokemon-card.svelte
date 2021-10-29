@@ -17,18 +17,20 @@
 <div class='card flex flex-col border rounded-lg divide divide-y'>
   <div
     style='--t-col: {cols[0]}; background-image: url("{bgImg}")'
-    class='card__header flex justify-between px-4 pt-4 pb-3 relative z-0 rounded-t-lg'
+    class='card__header flex justify-between pl-4 pt-4 pb-3 relative z-0 rounded-t-lg'
     >
     <div class='flex flex-row items-end gap-x-2'>
-      <div class='flex flex-col items-center'>
-        <span class='text-xs -mb-2'>Level</span>
-        <span class='text-3xl font-bold'>{level}</span>
-      </div>
+      {#if level}
+        <div class='flex flex-col items-center'>
+          <span class='text-xs -mb-2'>Level</span>
+          <span class='text-3xl font-bold'>{level}</span>
+        </div>
+      {/if}
       <p class='text-xl mb-0.25'>{capitalise(name)}</p>
     </div>
 
-    <div class='h-0'>
-      <img class='-translate-y-16 h-40' src={sprite} alt={name} />
+    <div class='absolute -right-8 h-0'>
+      <img class='-translate-y-16 h-40 w-auto' src={sprite} alt={name} />
     </div>
 
     <div class='flex gap-x-1 absolute top-0 transform -translate-y-1/2'>
@@ -39,13 +41,15 @@
   </div>
 
   <div class='relative inline-flex sm:items-center bg-white rounded-b-lg z-10'>
-    <div class='grid grid-cols-1 sm:grid-cols-2 grid-rows-2 w-3/5 sm:w-2/3 my-3 ml-4 gap-y-0 sm:gap-y-3'>
-      {#each moves as m}
-        <MoveCard {...m} stab={types.includes(m.type)} />
-      {/each}
-    </div>
+    {#if moves && moves.length}
+      <div class='grid grid-cols-1 sm:grid-cols-2 grid-rows-2 w-3/5 sm:w-2/3 my-3 ml-4 gap-y-0 sm:gap-y-3'>
+        {#each moves as m}
+          <MoveCard {...m} stab={types.includes(m.type)} />
+        {/each}
+      </div>
+    {/if}
 
-    <div class='w-2/5 sm:w-1/3 mr-4 mt-5 sm:mt-0'>
+    <div class={moves && moves.length ? 'w-2/5 sm:w-1/3 mr-4 sm:mt-0 mt-5' : 'm-4'}>
       <StatBlock max={maxStat} {...stats} />
     </div>
 
@@ -80,6 +84,10 @@
   .dark .card__header::before {
     z-index: -1;
     background: linear-gradient(to right, #1f2937 33%, transparent);
+  }
+
+  img {
+    min-width: 160px;
   }
 
 </style>

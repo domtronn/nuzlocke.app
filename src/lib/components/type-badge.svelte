@@ -1,5 +1,5 @@
 <script>
-  export let type
+  export let type, className
 
   import Icon from 'svelte-icons-pack/Icon.svelte'
   import Special from 'svelte-icons-pack/fi/FiTarget'
@@ -20,11 +20,11 @@
 
 
 {#if icon}
-  <div style="--badge-color: {col[0]}; padding: 4px 5px;">
+  <div style="--badge-color: {col[0]}; padding: 4px 5px;" class={className}>
     <Icon src={icon} color={col[1]} />
   </div>
 {:else}
-  <div style="--badge-color: {col}; --badge-content: '{content}'">
+  <div style="--badge-color: {col}; --badge-content: '{content}'" class={className}>
   {content}
 </div>
 {/if}
