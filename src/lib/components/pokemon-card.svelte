@@ -26,7 +26,7 @@
           <span class='text-3xl font-bold'>{level}</span>
         </div>
       {/if}
-      <p class='relative text-xl mb-0.25'>
+      <p class='relative text-xl mb-0.25 bg-white pr-2 z-40'>
         {capitalise(name)}
         {#if held}
         <div

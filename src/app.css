@@ -83,6 +83,7 @@
 }
 
 .autocomplete {
+  height: 36px !important;
   margin-top: -1px;
   min-width: 0 !important;
 }
@@ -94,13 +95,18 @@
 
 .ac__input-container {
   cursor: pointer !important;
-  margin-top: -2px !important;
   min-width: 0 !important;
-  padding: calc(0.5rem + 1px) 0.75rem !important;
+  padding: theme('padding.2') theme('padding.3') !important;
 }
 
 .has-item .ac__input-container {
-  padding-left: 68px !important;
+  padding-left: 48px !important;
+}
+
+@media (min-width: 640px) {
+  .has-item .ac__input-container {
+   padding-left: 60px !important;
+  }
 }
 
 .has-status .ac__input-container {

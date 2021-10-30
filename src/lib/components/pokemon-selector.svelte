@@ -66,16 +66,16 @@
 
 </script>
 
-<div class='grid grid-cols-2 md:grid-cols-8 gap-y-4 md:gap-y-0 gap-x-2 flex items-center'>
+<div class='grid grid-cols-2 md:grid-cols-8 gap-y-2 md:gap-y-0 gap-x-2 flex justify-start items-center'>
 
   <span class='col-span-2 md:text-right mr-4 text-sm'>
     {location}
   </span>
 
-  <span class='relative col-span-2'>
+  <span class='relative md:col-span-2'>
     {#if selected}
       <PIcon
-        className='absolute z-10 left-0 bottom-1 translate-y-1/4 {gray ? 'filter grayscale' : ''}'
+        className='absolute z-10 -left-2 md:left-0 bottom-1 translate-y-1/4 {gray ? 'filter grayscale' : ''}'
         name={selected.sprite}
       />
     {/if}
@@ -83,18 +83,18 @@
     <AutoComplete
       hideArrow
       maxItemsToShowInList={20}
-                           items={Object.values(Pokemon)}
+      items={Object.values(Pokemon)}
       bind:selectedItem={selected}
-                           placeholder={selected ? selected.name : 'Encounter'}
+      placeholder={selected ? selected.name : 'Encounter'}
       labelFieldName='name'
 
-      className='w-full min-w-0 {selected ? 'has-item' : ''}'
-      inputClassName='ac__input-container text-md transition-colors hover:border-indigo-200 focus:outline-none focus:border-indigo-600 border-2 shadow-md block bg-gray-50 w-full rounded-lg px-4 py-2'
-      dropdownClassName='ac__dropdown-container rounded-lg bg-gray-50 border-2 border-gray-200 mt-2 shadow-md'
+      className='text-xs md:text-md w-full min-w-0 {selected ? 'has-item' : ''}'
+      inputClassName='ac__input-container transition-colors hover:border-indigo-200 focus:outline-none focus:border-indigo-600 border-2 shadow-md block w-full rounded-lg'
+      dropdownClassName='ac__dropdown-container rounded-lg border-2 border-gray-200 mt-2 shadow-md'
     >
       <div class='-m-3 flex inline-flex items-center' slot='item' let:item={item} let:label={label}>
-        <PIcon name={item.sprite} />
-        {@html label}
+        <PIcon className="-translate-x-2 transform scale-75 md:scale-100" name={item.sprite} />
+        <span class="-ml-2">{label}</span>
       </div>
 
       <div slot="no-results" let:noResultsText={noResultsText}>
@@ -104,12 +104,12 @@
     </AutoComplete>
   </span>
 
-  <span class='col-span-2'>
+  <span class='sm:col-span-2'>
     <input
       type='text'
       bind:value={nickname}
       placeholder='Nickname'
-      class='transition-colors hover:border-indigo-200 text-md focus:outline-none leading-5 focus:border-indigo-600 border-2 shadow-md block bg-gray-50 w-full rounded-lg px-3 py-2'
+      class='text-xs md:text-md transition-colors hover:border-indigo-200 text-md focus:outline-none leading-4 focus:border-indigo-600 border-2 shadow-md block  w-full rounded-lg px-3 py-2'
     />
   </span>
 
@@ -128,9 +128,9 @@
       placeholder='Status'
       labelFieldName='state'
 
-      className='w-full min-w-0 {status ? 'has-status' : ''}'
-      inputClassName='ac__input-container text-md transition-colors hover:border-indigo-200 focus:outline-none focus:border-indigo-600 border-2 shadow-md block bg-gray-50 w-full rounded-lg px-4 py-2'
-      dropdownClassName='ac__dropdown-container rounded-lg bg-gray-50 border-2 border-gray-200 mt-2 shadow-md'
+      className='text-xs md:text-md w-full min-w-0 {status ? 'has-status' : ''}'
+      inputClassName='ac__input-container text-md transition-colors hover:border-indigo-200 focus:outline-none focus:border-indigo-600 border-2 shadow-md block  w-full rounded-lg px-4 py-2'
+      dropdownClassName='ac__dropdown-container rounded-lg  border-2 border-gray-200 mt-2 shadow-md'
     >
       <div class='flex inline-flex gap-x-2 py-2 items-center' slot='item' let:item={item} let:label={label}>
         <Icon src={item.icon} className='fill-current' />
@@ -150,6 +150,7 @@
     >
       <Icon src={Bin} className='fill-current' />
     </button>
+
     {#if status && status.id !== 4 && status.id !== 5}
       <button
         class='bg-white hover:active:bg-indigo-50 shadow-md text-gray-400 border-gray-200 active:shadow-sm active:text-indigo-600 hover:active:border-indigo-600 hover:text-indigo-300 hover:border-indigo-200 rounded-lg p-2 transition-all border-2'
