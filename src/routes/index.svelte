@@ -1,5 +1,5 @@
 <script>
-  import { createGame } from '$lib/store'
+  import { savedGames, createGame } from '$lib/store'
 
   const data = [
     {
@@ -14,12 +14,10 @@
     }
   ]
 
+  savedGames.subscribe(val => console.log(val))
+
   let gameName
-
-  const handleNewGame = () => {
-    createGame(gameName, 'sw')
-  }
-
+  const handleNewGame = () => savedGames.update(createGame(gameName, 'sw'))
 </script>
 
 <div class='container px-96 mx-auto'>

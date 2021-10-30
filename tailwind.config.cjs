@@ -6,6 +6,9 @@ const config = {
 
   theme: {
     extend: {
+      fontFamily: {
+        mono: 'VT323'
+      },
       fontSize: {
         tiny: '0.7rem',
         xxs: '0.6rem'

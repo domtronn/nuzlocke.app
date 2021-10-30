@@ -4,36 +4,44 @@ import { writable } from 'svelte/store'
 
 import { uuid } from '$lib/utils/uuid'
 
-export const activeGame = () => {
-  const nuzlocke = browser ? localStorage.getItem('nuzlocke') : ''
-  const game = writable(nuzlocke)
-  game.subscribe((val) => localStorage.setItem('nuzlocke', val))
-  return game
+const IDS = {
+  saves  : 'nuzlocke.saves',
+  active : 'nuzlocke',
+  game   : id => `nuzlocke.${id}`
 }
 
-export const createGame = (name, game) => {
+const createWritable = (id, f = val => browser && localStorage.setItem(id, val), ssDefault = '') => {
+  const store = browser ? localStorage.getItem(id) : ssDefault
+  const w = writable(store)
+  w.subscribe(f)
+  return w
+}
+
+export const activeGame = createWritable(IDS.active)
+export const savedGames = createWritable(IDS.saves)
+
+export const createGame = (name, game) => (payload) => {
   if (!browser) return
 
-  const id = 'nuzlocke.saves'
-  const games = (localStorage.getItem(id) || '').split(',').filter(i => i.length)
-
-  console.log(`Creating new save game for ${name} ${game}`)
+  const games = payload === 'null' || payload === null || payload === 'undefined'
+    ? []
+    : payload.split(',').filter(i => i.length)
   const gameData = `${uuid()}|${+new Date()}|${name}|${game}`
-  localStorage.setItem(id, games.concat(gameData).join(','))
+
+  console.log(`Creating new game for ${name} ${game}`)
+
+  return games.concat(gameData).join(',')
 }
 
-export const getGame = (id) => {
-  const nuzlocke = browser ? localStorage.getItem(`nuzlocke.${id}`) : {}
-  const game = writable(nuzlocke)
-
-  game.subscribe((val) => {
+export const getGame = (id) => createWritable(
+  IDS.game(id),
+  (val) => {
     if (!browser) return
     console.log('Updating localstorage', val)
-    localStorage.setItem(`nuzlocke.${id}`, val)
-  })
-
-  return game
-}
+    localStorage.setItem(IDS.game(id), val)
+  },
+  {}
+)
 
 export const patch = (payload) => (data) => JSON.stringify({
   ...JSON.parse(data),
