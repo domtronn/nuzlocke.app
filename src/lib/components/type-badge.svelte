@@ -1,5 +1,5 @@
 <script>
-  export let type, className
+  export let type, className = ''
 
   import Icon from 'svelte-icons-pack/Icon.svelte'
   import Special from 'svelte-icons-pack/fi/FiTarget'

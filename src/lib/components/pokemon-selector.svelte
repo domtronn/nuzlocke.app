@@ -1,7 +1,7 @@
 <script>
  export let id, location
 
- import { game, read, patch } from '$lib/store'
+ import { getGame, read, patch } from '$lib/store'
 
  import Pokemon from 'pokemon-assets/assets/data/pokemon.json'
  import Accordion from '$lib/components/accordion.svelte'
@@ -28,6 +28,8 @@
  let selected
  let nickname
  let status
+
+ const game = getGame('nuzlocke')
 
  game.subscribe(read(data => {
    const pkmn = data[location]
@@ -94,7 +96,7 @@
     >
       <div class='-m-3 flex inline-flex items-center' slot='item' let:item={item} let:label={label}>
         <PIcon className="-translate-x-2 transform scale-75 md:scale-100" name={item.sprite} />
-        <span class="-ml-2">{label}</span>
+        <span class="-ml-2">{@html label}</span>
       </div>
 
       <div slot="no-results" let:noResultsText={noResultsText}>

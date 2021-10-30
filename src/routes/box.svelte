@@ -3,12 +3,13 @@
   import PokemonCard from '$lib/components/pokemon-card.svelte'
 
   import TypeBadge from '$lib/components/type-badge.svelte'
-  import { game, read } from '$lib/store'
+  import { getGame, read } from '$lib/store'
   import { types } from '$lib/data/types'
   import { stats, StatIconMap } from '$lib/data/stats'
 
   import Icon from 'svelte-icons-pack'
 
+  const game = getGame('nuzlocke')
   let ogbox = [], box = []
   game.subscribe(read(data => {
     ogbox = box = Object
@@ -51,9 +52,9 @@
 
       <div class='grid grid-cols-3 gap-2 col-span-2'>
         {#each stats as stat}
-          <button on:click={sortStat(stat)} class='inline-flex'>
-            <span class='text-xs px-2 py-1 w-full border shadow-sm rounded-lg inline-flex'>
-              <Icon className='text-xxs translate-y-1/2 -mt-0.5 mr-1'  src={StatIconMap[stat]} />
+          <button on:click={sortStat(stat)} class='inline-flex text-center'>
+            <span class='text-xs px-2 py-1 w-full text-gray-400 border-gray-300 font-medium border shadow-sm rounded-lg inline-flex t'>
+              <Icon className='text-xxs {stat !== 'spa' ? 'fill-current' : ''} translate-y-1/2 -mt-0.5 mr-1'  src={StatIconMap[stat]} />
               {stat}
             </span>
           </button>
