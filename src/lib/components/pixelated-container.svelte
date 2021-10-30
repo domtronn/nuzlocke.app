@@ -1,8 +1,8 @@
 <script>
-  export let className
+  export let className, width = '.3rem', border = 'black'
 </script>
 
-<div class='pixel-border {className}'>
+<div class='pixel-border {className}' style='--pixel: {width}; --pixel-border: {border}; --pixel-border-3: {border};'>
   <slot />
 </div>
 
@@ -12,7 +12,6 @@
     --pixel-border: black;
     --pixel-border-2: theme('colors.gray.200');
     --pixel-border-3: var(--pixel-border);
-    --pixel: .3rem;
   }
 
   .pixel-border {

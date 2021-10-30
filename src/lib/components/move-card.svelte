@@ -14,7 +14,7 @@
 </script>
 
 <div class='my-2'>
-  <p class='text-sm mb-1 relative items-center flex flex-row space-x-1'>
+  <p class='text-sm overflow-ellipsis mb-1 relative items-center flex flex-row space-x-1'>
     <span
       class='w-auto bg-red relative {effect ? 'mr-2' : ''}'
       data-tooltip={effect || null}>
@@ -63,6 +63,11 @@
       </span>
     {/if}
 
+  </p>
+
+  <div class='flex gap-x-1 justify-start items-center'>
+    <TypeBadge type={damage_class} />
+    <TypeBadge type={type} />
     <!-- Priority icons -->
     {#if priority > 0}
       <span class='flex flex-row'>
@@ -79,11 +84,5 @@
         {/if}
       </span>
     {/if}
-
-  </p>
-
-  <div class='flex gap-x-1 justify-start items-center'>
-    <TypeBadge type={damage_class} />
-    <TypeBadge type={type} />
   </div>
 </div>
