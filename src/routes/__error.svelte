@@ -5,8 +5,8 @@
     return {
       props: {
         text: shiny
-          ? 'text-pink-400'
-          : 'text-blue-400',
+          ? '#e67cd4'
+          : '#3294ee',
         img: shiny
           ? 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/202.png'
           : 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/202.png',
@@ -22,7 +22,7 @@
 </script>
 
 
-<div class='font-mono max-w-lg mx-auto text-center flex flex-col items-center justify-center h-screen {text}'>
+<div style='color: {text};' class='font-mono max-w-lg mx-auto text-center flex flex-col items-center justify-center h-screen'>
   <span class='z-20 relative mt-32'>
     <span class='_centre text-8xl drop-shadow-text absolute -translate-y-full -translate-x-1/2 top-3 -rotate-6'>?</span>
     <span class='_right text-7xl drop-shadow-text absolute translate-x-8 -translate-y-full top-5 rotate-12'>?</span>
@@ -34,3 +34,7 @@
   </span>
   <img src={img} alt='wobuffet' class='w-96 mx-auto drop-shadow-md -translate-y-1/2 z-0' />
 </div>
+
+<style>
+  img { image-rendering: pixelated; }
+</style>
