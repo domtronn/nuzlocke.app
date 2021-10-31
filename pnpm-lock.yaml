@@ -17,7 +17,6 @@ specifiers:
   svelte: ^3.38.3
   svelte-icons-pack: ^1.4.6
   svelte-preprocess: ^4.9.8
-  svelte-select: ^4.4.3
   tailwindcss: ^2.2.16
 
 dependencies:
@@ -29,7 +28,6 @@ dependencies:
   ramda: 0.27.1
   simple-svelte-autocomplete: 2.2.3
   svelte-icons-pack: 1.4.6
-  svelte-select: 4.4.3
 
 devDependencies:
   '@sveltejs/adapter-vercel': 1.0.0-next.31
@@ -1927,10 +1925,6 @@ packages:
       strip-indent: 3.0.0
       svelte: 3.44.0
     dev: true
-
-  /svelte-select/4.4.3:
-    resolution: {integrity: sha512-cH11qwT4XTbeypFbRqGbBlJxmksib4jshGvjuLwKWBY2G5YieI1aNoO/W7fLyKGbq1erOiKDWsbgDKFhil4dWw==}
-    dev: false
 
   /svelte/3.44.0:
     resolution: {integrity: sha512-zWACSJBSncGiDvFfYOMFGNV5zDLOlyhftmO5yOZ0lEtQMptpElaRtl39MWz1+lYCpwUq4F3Q2lTzI9TrTL+eMA==}

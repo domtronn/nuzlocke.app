@@ -33,7 +33,7 @@
 <main class='container mx-auto h-screen flex flex-col justify-center'>
 
   <span class='mx-auto text-center'>
-    <img class:grayscale={!hovering} src='/pkmn-logo.png' class='transition h-32 -translate-x-2 translate-y-2 mx-auto'/>
+    <img class:grayscale={!hovering} alt='Pokemon brand logo' src='/pkmn-logo.png' class='transition h-32 -translate-x-2 translate-y-2 mx-auto'/>
     <h1 class='font-mono text-5xl'>Nuzlocke tracker</h1>
   </span>
 
@@ -43,20 +43,20 @@
       <div class='font-bold flex flex-col'>
 
         {#if active}
-          <a href="/game">
+          <a sveltekit:prefetch href="/game">
             <button class='tracking-widest hover:drop-shadow-text hover:text-pink-500 transition duration-300' on:mouseenter={toggleHover} on:mouseleave={toggleHover}>
               Continue
             </button>
           </a>
         {/if}
 
-        <a href="/new">
+        <a sveltekit:prefetch href="/new">
           <button class='tracking-widest hover:drop-shadow-text hover:text-yellow-300 transition duration-300' on:mouseenter={toggleHover} on:mouseleave={toggleHover}>
             New Game
           </button>
         </a>
 
-        <a href="/saves">
+        <a sveltekit:prefetch href="/saves">
           <button class='tracking-widest hover:drop-shadow-text hover:text-blue-400 transition duration-300' on:mouseenter={toggleHover} on:mouseleave={toggleHover}>
             Load Game
           </button>
@@ -72,10 +72,10 @@
 
       <div class='img__container h-full -mx-12 relative'>
         {#if !flip}
-          <img class:grayscale={!hovering} src={src} out:fly={{ y: distance, duration }} in:fly={{ y: -distance, duration }} class='absolute transition right-0 w-full -my-2 md:-my-12 -ml-12' />
+          <img alt='Pokemon #{id}' class:grayscale={!hovering} src={src} out:fly={{ y: distance, duration }} in:fly={{ y: -distance, duration }} class='absolute transition right-0 w-full -my-2 md:-my-12 -ml-12' />
         {/if}
         {#if flip}
-          <img class:grayscale={!hovering} src={src} out:fly={{ y: distance, duration }} in:fly={{ y: -distance, duration }} class='absolute transition right-0 grayscale w-full -my-2 md:-my-12 -ml-12' />
+          <img alt='Pokemon #{id}' class:grayscale={!hovering} src={src} out:fly={{ y: distance, duration }} in:fly={{ y: -distance, duration }} class='absolute transition right-0 grayscale w-full -my-2 md:-my-12 -ml-12' />
         {/if}
       </div>
     </PixelatedContainer>

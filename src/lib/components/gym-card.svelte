@@ -91,7 +91,7 @@
 
       {#if img}
         <div class='overflow-hidden h-16 w-24 text-center'>
-          <img class='inline h-32' src={img} />
+          <img class='inline h-32' src={img} alt='Gym leader {name}' />
         </div>
       {/if}
 
@@ -109,7 +109,7 @@
         </span>
 
         {#if loading}
-          <h2 class='h-4 w-48 animate-pulse bg-gray-400 rounded-md' />
+          <div class='h-4 w-48 animate-pulse bg-gray-400 rounded-md' />
         {:else}
           <h2 class='h-4 text-md font-medium'>
             <span>{location}</span>
