@@ -22,10 +22,7 @@
 </script>
 
 
-<div
-  style="font-family: 'VT323', monospace;"
-  class='max-w-lg mx-auto text-center flex flex-col items-center justify-center h-screen {text}'
-  >
+<div class='font-mono max-w-lg mx-auto text-center flex flex-col items-center justify-center h-screen {text}'>
   <span class='z-20 relative mt-32'>
     <span class='_centre text-8xl drop-shadow-text absolute -translate-y-full -translate-x-1/2 top-3 -rotate-6'>?</span>
     <span class='_right text-7xl drop-shadow-text absolute translate-x-8 -translate-y-full top-5 rotate-12'>?</span>

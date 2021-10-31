@@ -10,7 +10,7 @@ const IDS = {
   game   : id => `nuzlocke.${id}`
 }
 
-const createWritable = (id, f = val => browser && localStorage.setItem(id, val), ssDefault = '') => {
+const createWritable = (id, f = val => browser && val && localStorage.setItem(id, val), ssDefault = '') => {
   const store = browser ? localStorage.getItem(id) : ssDefault
   const w = writable(store)
   w.subscribe(f)

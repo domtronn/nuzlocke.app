@@ -18,7 +18,7 @@
   savedGames.subscribe(val => console.log(val))
 
   let gameName = ''
-  const handleNewGame = () => savedGames.update(createGame(gameName, 'sw'))
+  const handleNewGame = () => savedGames.update(createGame(gameName, selected))
 
   let hoverActive = false
   const togglehover = _ => hoverActive = !hoverActive
