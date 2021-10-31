@@ -1,7 +1,11 @@
 <script>
-  export let sprite, name, types, level, moves, maxStat, held, stats
+  export let sprite, name, types, level, moves, maxStat, held, ability, stats
 
   import { capitalise } from '$lib/utils/string'
+
+  import PIcon from '$lib/components/pokemon-icon.svelte'
+  import Icon from 'svelte-icons-pack'
+  import Hand from 'svelte-icons-pack/fa/FaSolidHandHolding'
 
   import ColorMap from '$lib/data/colors.json'
   import TypeBadge from '$lib/components/type-badge.svelte'
@@ -26,16 +30,29 @@
           <span class='text-3xl font-bold'>{level}</span>
         </div>
       {/if}
-      <p class='relative text-xl mb-0.25 bg-white pr-2 z-40'>
-        {capitalise(name)}
-        {#if held}
-        <div
-          data-tooltip={held.effect}
-          class='absolute right-0 bottom-0 translate-x-full -mb-1 z-20 p-1 absolute'>
-          <img src={held.sprite} alt={held.name} />
-        </div>
-      {/if}
-      </p>
+      <div>
+        <p class='relative text-xl mb-0.25 bg-white pr-2 z-40'>
+          {#if ability}
+            <p
+              class='-mb-1 w-auto relative text-xs bg-white z-40'
+              >
+              <span data-tooltip={ability.effect}>
+                {ability.name}
+              </span>
+            </p>
+          {/if}
+
+          {capitalise(name)}
+          {#if held}
+            <div
+              data-tooltip={held.effect}
+              class='absolute right-0 bottom-0 translate-x-full z-20 p-1 mb-1 flex flex-col items-center'>
+              <PIcon type='item' name={held.sprite} />
+              <Icon src={Hand} className='-mt-3.5' />
+            </div>
+          {/if}
+        </p>
+      </div>
 
     </div>
 

@@ -4,6 +4,7 @@ import leaders from '$lib/data/leaders.json'
 import { map, compose, prop, path, pick, evolve, applySpec } from 'ramda'
 
 const maybe = (f, param) => param ? f(param) : Promise.resolve(null)
+const LANG = 'en'
 
 const statNameMap = {
   'special-attack': 'spa',
@@ -24,16 +25,21 @@ const toMoves = map(compose(
   ({ names, ...rest }) => ({ ...rest, name: names }),
   pick(['names', 'power', 'pp', 'priority', 'accuracy', 'type', 'damage_class', 'effect_chance', 'effect_entries']),
   evolve({
-    names: n => n.find(l => l.language.name === 'en').name,
+    names: n => n.find(l => l.language.name === LANG).name,
     type: prop('name'),
     damage_class: prop('name')
   })
 ))
 
 const toHeld = applySpec({
-  sprite: s => s.sprites.default,
-  name: s => s.names.find(l => l.language.name === 'en').name,
+  sprite: s => s.name,
+  name: s => s.names.find(l => l.language.name === LANG).name,
   effect: s => s.effect_entries[0].short_effect
+})
+
+const toAbility = applySpec({
+  name: s => s.names.find(l => l.language.name === LANG).name,
+  effect: s => s.effect_entries.find(i => i.language.name === LANG).short_effect
 })
 
 const toTypes = map(path(['type', 'name']))
@@ -62,9 +68,16 @@ export async function get ({ params }) {
         .map(async p => {
           const data = await P.getPokemonByName(p.name)
           const held = await maybe(P.getItemByName, p.held)
+          const ability = await maybe(P.getAbilityByName, p.ability)
           const moves = await Promise.all(p.moves.map(m => P.getMoveByName(m)))
 
-          return { ...p, ...toPokemon(data), moves: toMoves(moves), held: held ? toHeld(held) : null }
+          return {
+            ...p,
+            ...toPokemon(data),
+            moves: toMoves(moves),
+            held: held ? toHeld(held) : null,
+            ability: ability ? toAbility(ability): null,
+          }
         })
     )
 

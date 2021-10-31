@@ -136,6 +136,7 @@
             "horn-attack",
             "agility"
           ],
+          "ability": "swift-swim",
           "held": null
         },
         {
@@ -147,6 +148,7 @@
             "whirlpool",
             "fury-attack"
           ],
+          "ability": "swift-swim",
           "held": null
         },
         {
@@ -158,7 +160,8 @@
             "bite",
             "headbutt"
           ],
-          "held": null
+          "ability": "swift-swim",
+          "held": "leppa-berry"
         }
       ]
     },
@@ -170,6 +173,7 @@
         {
           "name": "ninetales",
           "level": 25,
+          "ability": "flash-fire", 
           "moves": [
             "will-o-wisp",
             "fire-spin",
@@ -181,6 +185,7 @@
         {
           "name": "arcanine",
           "level": 25,
+          "ability": "intimidate",
           "moves": [
             "will-o-wisp",
             "flame-wheel",
@@ -192,6 +197,7 @@
         {
           "name": "centiskorch",
           "level": 27,
+          "ability": "flash-fire", 
           "moves": [
             "flame-wheel",
             "coil",

@@ -6,7 +6,7 @@
 [data-tooltip] {
   font-weight: normal !important;
   position: relative;
-  z-index: 2;
+  z-index: 100;
   display: block;
   cursor: pointer;
 }
