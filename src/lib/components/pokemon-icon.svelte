@@ -1,8 +1,8 @@
 <script>
-  export let name, className
+  export let name, className = '', type = 'm'
 </script>
 
-<span class='pkm-wrapper {className || ''}'>
-  <i class='pkm pkm-{name}' />
+<span class='pk{type}-wrapper {className}'>
+  <i class='pk{type} pk{type}-{name}' />
   <slot />
 </span>

@@ -7,8 +7,8 @@
 <script>
   export let id
 
-  let flip = 0
   import { fly } from 'svelte/transition'
+  import { activeGame } from '$lib/store'
   import PixelatedContainer from '$lib/components/pixelated-container.svelte'
 
   const interval = 5000
@@ -17,10 +17,14 @@
   let hovering = false
   const toggleHover = _ => hovering = !hovering
 
+  let flip = 0
   setInterval(() => {
     flip = (flip + 1) % 2
     id = Math.round(Math.random() * 898)
   }, interval)
+
+  let active
+  activeGame.subscribe(id => active = id)
 
   $: duration = Math.min(interval / 3, 1000)
   $: src = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png`
@@ -37,6 +41,14 @@
     <PixelatedContainer className='font-mono relative h-32 max-w-md mx-auto flex sm:flex-row justify-evenly items-center gap-y-2 text-3xl py-2 w-auto'>
 
       <div class='font-bold flex flex-col'>
+
+        {#if active}
+          <span>
+            <button class='tracking-widest hover:drop-shadow-text hover:text-pink-500 transition duration-300' on:mouseenter={toggleHover} on:mouseleave={toggleHover}>
+              Continue
+            </button>
+          </span>
+        {/if}
 
         <span>
           <button class='tracking-widest hover:drop-shadow-text hover:text-yellow-300 transition duration-300' on:mouseenter={toggleHover} on:mouseleave={toggleHover}>

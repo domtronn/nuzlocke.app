@@ -1,44 +1,38 @@
 <script>
- export let id, location
+  export let id, location
 
- import { getGame, read, patch } from '$lib/store'
+  import { activeGame, getGame, read, patch } from '$lib/store'
 
- import Pokemon from 'pokemon-assets/assets/data/pokemon.json'
- import Accordion from '$lib/components/accordion.svelte'
- import PIcon from '$lib/components/pokemon-icon.svelte'
- import StatBlock from '$lib/components/stat-block.svelte'
- import AutoComplete from 'simple-svelte-autocomplete'
+  import Pokemon from 'pokemon-assets/assets/data/pokemon.json'
+  import { NuzlockeStates } from '$lib/data/states'
 
- import Icon from 'svelte-icons-pack'
- import Ball from 'svelte-icons-pack/bi/BiTennisBall'
- import Gift from 'svelte-icons-pack/bi/BiSolidGift'
- import Traded from 'svelte-icons-pack/cg/CgArrowsExchange'
- import Missed from 'svelte-icons-pack/ri/RiWeatherWindyLine'
- import Deceased from 'svelte-icons-pack/fa/FaSolidSkullCrossbones'
- import Bin from 'svelte-icons-pack/bi/BiTrash'
+  import Accordion from '$lib/components/accordion.svelte'
+  import StatBlock from '$lib/components/stat-block.svelte'
+  import AutoComplete from 'simple-svelte-autocomplete'
 
- const NuzlockeStates = {
-   1: { id: 1, state: 'Captured', icon: Ball },
-   2: { id: 2, state: 'Received', icon: Gift },
-   3: { id: 3, state: 'Traded', icon: Traded },
-   4: { id: 4, state: 'Missed', icon: Missed },
-   5: { id: 5, state: 'Deceased', icon: Deceased },
- }
+  import PIcon from '$lib/components/pokemon-icon.svelte'
+  import Icon from 'svelte-icons-pack'
+  import Bin from 'svelte-icons-pack/bi/BiTrash'
+  import Deceased from 'svelte-icons-pack/fa/FaSolidSkullCrossbones'
 
- let selected
- let nickname
- let status
+  let selected
+  let nickname
+  let status
 
- const game = getGame('nuzlocke')
+  let game
+  let loading = true
+  activeGame.subscribe(gameId => {
+    game = getGame(gameId)
+    game.subscribe(read(data => {
+      loading = false
+      const pkmn = data[location]
+      if (!pkmn) return
 
- game.subscribe(read(data => {
-   const pkmn = data[location]
-   if (!pkmn) return
-
-   status = pkmn.status ? NuzlockeStates[pkmn.status] : null
-   selected = Pokemon[pkmn.pokemon]
-   nickname = pkmn.nickname
- }))
+      status = pkmn.status ? NuzlockeStates[pkmn.status] : null
+      selected = Pokemon[pkmn.pokemon]
+      nickname = pkmn.nickname
+    }))
+  })
 
  $: {
    if (selected)
@@ -60,9 +54,7 @@
    game.update(patch({ [location]: {} }))
  }
 
- function handleDeath () {
-   status = NuzlockeStates[5]
- }
+  const handleStatus = (sid) => _ => status = NuzlockeStates[sid]
 
  $: gray = ['Deceased', 'Missed'].includes(status?.state)
 
@@ -111,6 +103,7 @@
       type='text'
       bind:value={nickname}
       placeholder='Nickname'
+      class:animate-pulse={loading}
       class='text-xs md:text-md transition-colors hover:border-indigo-200 text-md focus:outline-none leading-4 focus:border-indigo-600 border-2 shadow-md block  w-full rounded-lg px-3 py-2'
     />
   </span>
@@ -145,7 +138,7 @@
     </AutoComplete>
   </span>
 
-  <span class='text-left'>
+  <span class='text-left inline-flex gap-x-2'>
     <button
       class='bg-white hover:active:bg-indigo-50 shadow-md text-gray-400 border-gray-200 active:shadow-sm active:text-indigo-600 hover:active:border-indigo-600 hover:text-indigo-300 hover:border-indigo-200 rounded-lg p-2 transition-all border-2'
       on:click={handleClear}
@@ -156,11 +149,21 @@
     {#if status && status.id !== 4 && status.id !== 5}
       <button
         class='bg-white hover:active:bg-indigo-50 shadow-md text-gray-400 border-gray-200 active:shadow-sm active:text-indigo-600 hover:active:border-indigo-600 hover:text-indigo-300 hover:border-indigo-200 rounded-lg p-2 transition-all border-2'
-        on:click={handleDeath}
+        on:click={handleStatus(5)}
       >
         <Icon src={Deceased} className='fill-current' />
       </button>
     {/if}
+
+    {#if selected && !status}
+      <button
+        class='group flex items-center bg-white hover:grayscale-0 hover:opacity-100 grayscale hover:active:bg-orange-100 shadow-md text-gray-400 border-gray-200 active:shadow-sm active:text-orange-600 hover:active:border-orange-600 hover:border-orange-300 rounded-lg transition-all border-2'
+        on:click={handleStatus(1)}
+      >
+        <PIcon name='poke-ball' type='item' className='transition-opacity -translate-y-0.5 opacity-50 group-hover:opacity-100' />
+      </button>
+    {/if}
+
   </span>
 
 </div>

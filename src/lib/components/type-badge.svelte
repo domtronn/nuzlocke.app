@@ -6,7 +6,7 @@
   import Physical from 'svelte-icons-pack/fa/FaSolidFistRaised'
   import Status from 'svelte-icons-pack/bi/BiSolidYinYang'
 
-  import ColorMap from '$lib/data/colors.json' 
+  import ColorMap from '$lib/data/colors.json'
   const IconMap = {
     status: Status,
     physical: Physical,
@@ -17,7 +17,6 @@
   const col = ColorMap[type.toLowerCase()]
   const icon = IconMap[type.toLowerCase()]
 </script>
-
 
 {#if icon}
   <div style="--badge-color: {col[0]}; padding: 4px 5px;" class={className}>

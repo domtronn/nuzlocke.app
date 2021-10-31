@@ -3,20 +3,23 @@
   import PokemonCard from '$lib/components/pokemon-card.svelte'
 
   import TypeBadge from '$lib/components/type-badge.svelte'
-  import { getGame, read } from '$lib/store'
+  import { activeGame, getGame, read } from '$lib/store'
   import { types } from '$lib/data/types'
   import { stats, StatIconMap } from '$lib/data/stats'
 
   import Icon from 'svelte-icons-pack'
 
-  const game = getGame('nuzlocke')
+  let loading = true
   let ogbox = [], box = []
-  game.subscribe(read(data => {
-    ogbox = box = Object
-      .values(data)
-      .filter(i => i.pokemon)
-      .filter(({ status }) => status !== 5 && status !== 4)
-  }))
+  activeGame.subscribe(gameId => {
+    getGame(gameId).subscribe(read(data => {
+      loading = false
+      ogbox = box = Object
+        .values(data)
+        .filter(i => i.pokemon)
+        .filter(({ status }) => status !== 5 && status !== 4)
+    }))
+  })
 
   const filterType = (type) => () => {
     box = ogbox.filter(p => (Pokemon[p.pokemon].types || []).map(i => i.toLowerCase()).includes(type))

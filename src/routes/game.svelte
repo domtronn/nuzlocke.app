@@ -23,5 +23,3 @@
         </main>
     </div>
 </div>
-<footer class="mt-auto">
-</footer>

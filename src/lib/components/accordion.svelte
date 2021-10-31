@@ -3,8 +3,10 @@
  import Chevron from 'svelte-icons-pack/cg/CgChevronRightO'
  import Icon from 'svelte-icons-pack'
 
- let isOpen = false
- const toggle = _ => isOpen = !isOpen
+  let isOpen = false
+  const toggle = _ => isOpen = !isOpen
+
+  export let iconClassName = ''
 </script>
 
 <style>
@@ -19,7 +21,7 @@
   class='inline-flex items-center w-full cursor-pointer'
 >
   <p class='mr-4'>
-    <Icon src={Chevron} size='1.4em' />
+    <Icon src={Chevron} size='1.4em' className={iconClassName} />
   </p>
   <slot name='heading' />
 </button>

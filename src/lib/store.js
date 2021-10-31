@@ -29,7 +29,6 @@ export const createGame = (name, game) => (payload) => {
   const gameData = `${uuid()}|${+new Date()}|${name}|${game}`
 
   console.log(`Creating new game for ${name} ${game}`)
-
   return games.concat(gameData).join(',')
 }
 
@@ -37,7 +36,8 @@ export const getGame = (id) => createWritable(
   IDS.game(id),
   (val) => {
     if (!browser) return
-    console.log('Updating localstorage', val)
+    if (!val) return
+    console.log(`Updating localstorage for game ${id}`, val)
     localStorage.setItem(IDS.game(id), val)
   },
   {}
