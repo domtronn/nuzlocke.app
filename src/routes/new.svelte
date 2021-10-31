@@ -1,5 +1,5 @@
 <script>
-  import { savedGames, createGame } from '$lib/store'
+  import { savedGames, activeGame, createGame } from '$lib/store'
   import PixelatedContainer from '$lib/components/pixelated-container.svelte'
 
   const data = [
@@ -18,7 +18,10 @@
   savedGames.subscribe(val => console.log(val))
 
   let gameName = ''
-  const handleNewGame = () => savedGames.update(createGame(gameName, selected))
+  const handleNewGame = () => {
+    savedGames.update(createGame(gameName, selected))
+    window.location = '/game'
+  }
 
   let hoverActive = false
   const togglehover = _ => hoverActive = !hoverActive

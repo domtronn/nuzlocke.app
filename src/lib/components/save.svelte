@@ -16,8 +16,11 @@
     pkmn = Object.values(data)
   }))
 
-  const onclick = _ => activeGame.set(id)
   const ondelete = _ => deleteGame(id)
+  const onclick = _ => {
+    activeGame.set(id)
+    window.location = '/game'
+  }
 
   $: date = dayjs(+created).format('DD MM YYYY')
   $: available = pkmn.filter(i => !i.status || NuzlockeGroups.Available.includes(i?.status))
