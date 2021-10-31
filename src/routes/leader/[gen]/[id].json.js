@@ -34,12 +34,12 @@ const toMoves = map(compose(
 const toHeld = applySpec({
   sprite: s => s.name,
   name: s => s.names.find(l => l.language.name === LANG).name,
-  effect: s => s.effect_entries[0].short_effect
+  effect: s => s.effect_entries[0]?.short_effect
 })
 
 const toAbility = applySpec({
   name: s => s.names.find(l => l.language.name === LANG).name,
-  effect: s => s.effect_entries.find(i => i.language.name === LANG).short_effect
+  effect: s => s.effect_entries.find(i => i.language.name === LANG)?.short_effect
 })
 
 const toTypes = map(path(['type', 'name']))

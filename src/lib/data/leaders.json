@@ -108,6 +108,7 @@
             "round",
             "rapid-spin"
           ],
+          "ability": "regenerator", 
           "held": null
         },
         {
@@ -118,6 +119,7 @@
             "round",
             "leafage"
           ],
+          "ability": "regenerator", 
           "held": null
         }
       ]
@@ -161,7 +163,7 @@
             "headbutt"
           ],
           "ability": "swift-swim",
-          "held": "leppa-berry"
+          "held": null
         }
       ]
     },
@@ -222,6 +224,7 @@
             "counter",
             "revenge"
           ],
+          "ability": "technician", 
           "held": null
         },
         {
@@ -233,6 +236,7 @@
             "night-slash",
             "work-up"
           ],
+          "ability": "mold-breaker",
           "held": null
         },
         {
@@ -244,6 +248,7 @@
             "brutal-swing",
             "revenge"
           ],
+          "ability": "steadfast",
           "held": null
         },
         {
@@ -255,6 +260,7 @@
             "knock-off",
             "strength"
           ],
+          "ability": "guts",
           "held": null
         }
       ]
@@ -272,6 +278,7 @@
             "hex",
             "disable"
           ],
+          "ability": "wandering-spirit",
           "held": null
         },
         {
@@ -283,6 +290,7 @@
             "hone-claws",
             "slash"
           ],
+          "ability": "disguise",
           "held": null
         },
         {
@@ -293,6 +301,7 @@
             "curse",
             "hex"
           ],
+          "ability": "weak-armor",
           "held": null
         },
         {
@@ -304,6 +313,7 @@
             "hypnosis",
             "payback"
           ],
+          "ability": "cursed-body",
           "held": null
         }
       ]
@@ -321,6 +331,7 @@
             "fairy-wind",
             "tackle"
           ],
+          "ability": "levitate",
           "held": null
         },
         {
@@ -332,6 +343,7 @@
             "iron-defense",
             "astonish"
           ],
+          "ability": "intimidate",
           "held": null
         },
         {
@@ -342,6 +354,7 @@
             "draining-kiss",
             "ancient-power"
           ],
+          "ability": "hustle",
           "held": null
         },
         {
@@ -352,6 +365,7 @@
             "acid-armor",
             "sweet-kiss"
           ],
+          "ability": "sweet-veil",
           "held": null
         }
       ]
@@ -369,6 +383,7 @@
             "rock-tomb",
             "razor-shell"
           ],
+          "ability": "tough-claws",
           "held": null
         },
         {
@@ -380,6 +395,7 @@
             "struggle-bug",
             "rock-tomb"
           ],
+          "ability": "contrary",
           "held": null
         },
         {
@@ -391,6 +407,7 @@
             "body-slam",
             "wonder-room"
           ],
+          "ability": "power-spot",
           "held": null
         },
         {
@@ -402,6 +419,7 @@
             "heat-crash",
             "rock-tomb"
           ],
+          "ability": "steam-engine",
           "held": null
         }
       ]
@@ -420,6 +438,7 @@
             "bug-buzz",
             "hail"
           ],
+          "ability": "shield-dust",
           "held": null
         },
         {
@@ -431,6 +450,7 @@
             "taunt",
             "fire-fang"
           ],
+          "ability": "zen-mode",
           "held": null
         },
         {
@@ -442,6 +462,7 @@
             "hail",
             "icy-wind"
           ],
+          "ability": "ice-face",
           "held": null
         },
         {
@@ -453,6 +474,7 @@
             "surf",
             "sing"
           ],
+          "ability": "shell-armor",
           "held": null
         }
       ]
@@ -471,6 +493,7 @@
             "brick-break",
             "payback"
           ],
+          "ability": "intimidate",
           "held": null
         },
         {
@@ -482,6 +505,7 @@
             "psycho-cut",
             "payback"
           ],
+          "ability": "contrary",
           "held": null
         },
         {
@@ -493,6 +517,7 @@
             "toxic",
             "snarl"
           ],
+          "ability": "aftermath",
           "held": null
         },
         {
@@ -504,6 +529,7 @@
             "counter",
             "shadow-claw"
           ],
+          "ability": "reckless",
           "held": null
         }
       ]
@@ -522,6 +548,7 @@
             "rock-blast",
             "body-press"
           ],
+          "ability": "sand-stream",
           "held": null
         },
         {
@@ -533,6 +560,7 @@
             "crunch",
             "steel-wing"
           ],
+          "ability": "levitate",
           "held": null
         },
         {
@@ -544,6 +572,7 @@
             "fire-fang",
             "earth-power"
           ],
+          "ability": "sand-spit",
           "held": null
         },
         {
@@ -555,6 +584,7 @@
             "stone-edge",
             "iron-head"
           ],
+          "ability": "heavy-metal",
           "held": null
         }
       ]
