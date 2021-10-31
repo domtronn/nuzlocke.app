@@ -90,8 +90,8 @@
       >
 
       {#if img}
-        <div class='overflow-hidden h-16'>
-          <img class='inline h-32g' src={img} />
+        <div class='overflow-hidden h-16 w-24 text-center'>
+          <img class='inline h-32' src={img} />
           </div>
       {/if}
 
