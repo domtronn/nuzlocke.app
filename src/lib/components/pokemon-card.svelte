@@ -108,7 +108,7 @@
 
   .card__header::before {
     z-index: -1;
-    background: linear-gradient(to right, white 33%, transparent);
+    background: linear-gradient(to right, white 55%, transparent);
   }
 
   .img__pkm {

@@ -28,24 +28,43 @@
 
 </script>
 
-{#if loading}
-  {:else}
-    <div on:click={onclick}>
-      <h2>{name}</h2>
-      <h3>Created {date}</h3>
-      <span class='inline-flex'>
-        {available.length}
-        <PIcon type='item' name='poke-ball' />
-        {deceased.length}
-        <Icon src={NuzlockeStates[5].icon} />
-      </span>
+<div class='font-mono tracking-widest flex flex-row justify-between items-center gap-x-8'>
+  {#if loading}
+    <div>
+      <p class='w-16 h-5 animate-pulse bg-gray-400 rounded-md' />
+      <p class='w-32 mt-1 h-3 animate-pulse bg-gray-400 rounded-md' />
+      <div class='h-4 mt-2 inline-flex gap-x-1'>
+        <div class='w-4 h-4 animate-pulse bg-gray-400 rounded-full' />
+        <div class='w-4 h-4 animate-pulse bg-gray-400 rounded-full' />
+        <div class='w-4 h-4 animate-pulse bg-gray-400 rounded-full' />
+        <div class='w-4 h-4 animate-pulse bg-gray-400 rounded-full' />
+      </div>
+    </div>
 
+    <div class='w-12 h-4 inline-flex animate-pulse bg-gray-400 rounded-md' />
+
+  {:else}
+
+    <div on:click={onclick} >
+      <h2 class='text-2xl'>{name}</h2>
+      <h3 class='-mt-2'>Created {date}</h3>
+      <span class='font-sans inline-flex items-center'>
+        {available.length}
+        <PIcon className='mr-2 -mt-1' type='item' name='poke-ball' />
+        {deceased.length}
+        <Icon className='ml-1' src={NuzlockeStates[5].icon} />
+      </span>
+    </div>
+
+    <div class='flex flex-col items-end'>
       <button
-        class='bg-white hover:active:bg-indigo-50 shadow-md text-gray-400 border-gray-200 active:shadow-sm active:text-indigo-600 hover:active:border-indigo-600 hover:text-indigo-300 hover:border-indigo-200 rounded-lg p-2 transition-all border-2'
+        class='font-sans text-xs bg-white inline-flex items-center gap-x-2 hover:active:bg-indigo-50 shadow-md text-gray-400 border-gray-200 active:shadow-sm active:text-indigo-600 hover:active:border-indigo-600 hover:text-indigo-300 hover:border-indigo-200 rounded-lg px-2 py-1 transition-all border-2'
         on:click={ondelete}
-      >
+        >
+        Delete
         <Icon src={Bin} className='fill-current' />
       </button>
-
     </div>
+
   {/if}
+</div>
