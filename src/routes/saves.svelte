@@ -1,6 +1,7 @@
 <script>
   import { savedGames } from '$lib/store'
 
+  // TODO: No saves and back button
 
   import Save from '$lib/components/save.svelte'
   import PixelatedContainer from '$lib/components/pixelated-container.svelte'
@@ -26,9 +27,11 @@
       </span>
 
       <hr />
-      {#each games as game (game.id)}
-        <Save {...game} />
-      {/each}
+      <div transition:slide={{ duration: 300 }}>
+        {#each games as game (game.id)}
+          <Save {...game} />
+        {/each}
+      </div>
     </PixelatedContainer>
   </main>
 </div>

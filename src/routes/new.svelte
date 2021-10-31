@@ -32,8 +32,8 @@
   $: disabled = !gameName.length || !selected
 </script>
 
-<div class='container px-96 mx-auto'>
-  <main class='px-4 md:px-8 py-6 flex flex-col items-center gap-y-4'>
+<div class='container mx-auto h-screen items-center justify-center flex'>
+  <main class='flex flex-col mx-auto'>
     <h1 class='text-4xl'>New Nuzlocke</h1>
     <div class='inline-flex gap-x-2'>
       <input
@@ -57,16 +57,16 @@
 
     </div>
 
-    <div class='grid grid-cols-2 gap-x-10 mt-4'>
+    <div class='grid grid-cols-2 gap-x-10 mt-12'>
       {#each data as game}
         <PixelatedContainer
           width='.2rem'
           className='px-4 py-2 text-center inline-flex'
         >
-            <span class='h-full inline-flex items-center justify-center'>
+            <span class='h-full inline-flex items-center justify-between w-full'>
               {#each game.logos as logoId}
                 <img
-                  class='w-32 hover:grayscale-0 cursor-pointer'
+                  class='w-12 md:w-32 hover:grayscale-0 cursor-pointer'
                   class:grayscale={(selected && selected !== logoId) || hoverActive}
                   class:grayscale-0={selected === logoId}
                   on:click={handleSelect(logoId)}
