@@ -12,6 +12,6 @@
     .map(([id, created, name, game]) => ({ id, created, name, game}))
 </script>
 
-{#each games as game}
+{#each games as game (game.id)}
   <Save {...game} />
 {/each}

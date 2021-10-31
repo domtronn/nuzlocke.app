@@ -5,9 +5,9 @@ import { writable } from 'svelte/store'
 import { uuid } from '$lib/utils/uuid'
 
 const IDS = {
-  saves  : 'nuzlocke.saves',
-  active : 'nuzlocke',
-  game   : id => `nuzlocke.${id}`
+  active: 'nuzlocke',
+  saves: 'nuzlocke.saves',
+  game: id => `nuzlocke.${id}`
 }
 
 const createWritable = (id, f = val => browser && val && localStorage.setItem(id, val), ssDefault = '') => {
@@ -19,6 +19,20 @@ const createWritable = (id, f = val => browser && val && localStorage.setItem(id
 
 export const activeGame = createWritable(IDS.active)
 export const savedGames = createWritable(IDS.saves)
+
+export const deleteGame = (id) => {
+  if (!window.confirm('This will delete all data, are you sure?'))
+    return
+
+  localStorage.removeItem(IDS.game(id))
+  savedGames.update(g => {
+    debugger
+    return g
+      .split(',')
+      .filter(i => !i.startsWith(id))
+      .join(',')
+  })
+}
 
 export const createGame = (name, game) => (payload) => {
   if (!browser) return

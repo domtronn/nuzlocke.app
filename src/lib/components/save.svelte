@@ -1,12 +1,13 @@
 <script>
   export let id, created, name, game
-  import { activeGame, getGame, read } from '$lib/store'
+  import { activeGame, deleteGame, getGame, read } from '$lib/store'
   import dayjs from 'dayjs'
 
   import { NuzlockeGroups, NuzlockeStates } from '$lib/data/states'
 
   import PIcon from '$lib/components/pokemon-icon.svelte'
   import Icon from 'svelte-icons-pack'
+  import Bin from 'svelte-icons-pack/bi/BiTrash'
 
   let pkmn = []
   let loading = true
@@ -16,6 +17,7 @@
   }))
 
   const onclick = _ => activeGame.set(id)
+  const ondelete = _ => deleteGame(id)
 
   $: date = dayjs(+created).format('DD MM YYYY')
   $: available = pkmn.filter(i => !i.status || NuzlockeGroups.Available.includes(i?.status))
@@ -34,5 +36,13 @@
         {deceased.length}
         <Icon src={NuzlockeStates[5].icon} />
       </span>
+
+      <button
+        class='bg-white hover:active:bg-indigo-50 shadow-md text-gray-400 border-gray-200 active:shadow-sm active:text-indigo-600 hover:active:border-indigo-600 hover:text-indigo-300 hover:border-indigo-200 rounded-lg p-2 transition-all border-2'
+        on:click={ondelete}
+      >
+        <Icon src={Bin} className='fill-current' />
+      </button>
+
     </div>
   {/if}
