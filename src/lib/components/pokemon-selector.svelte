@@ -1,7 +1,7 @@
 <script>
-  export let id, location
+  export let id, location, store
 
-  import { activeGame, getGame, read, patch } from '$lib/store'
+  import { read, patch } from '$lib/store'
 
   import Pokemon from 'pokemon-assets/assets/data/pokemon.json'
   import { NuzlockeStates } from '$lib/data/states'
@@ -19,24 +19,20 @@
   let nickname
   let status
 
-  let game
   let loading = true
-  activeGame.subscribe(gameId => {
-    game = getGame(gameId)
-    game.subscribe(read(data => {
-      loading = false
-      const pkmn = data[location]
-      if (!pkmn) return
+  store.subscribe(read(data => {
+    loading = false
+    const pkmn = data[location]
+    if (!pkmn) return
 
-      status = pkmn.status ? NuzlockeStates[pkmn.status] : null
-      selected = Pokemon[pkmn.pokemon]
-      nickname = pkmn.nickname
-    }))
-  })
+    status = pkmn.status ? NuzlockeStates[pkmn.status] : null
+    selected = Pokemon[pkmn.pokemon]
+    nickname = pkmn.nickname
+  }))
 
  $: {
    if (selected)
-     game.update(patch({
+     store.update(patch({
        [location]: {
          id,
          pokemon: selected?.alias,
@@ -48,10 +44,8 @@
  }
 
  function handleClear () {
-   selected = null
-   nickname = null
-   status = null
-   game.update(patch({ [location]: {} }))
+   status = nickname = selected = null
+   store.update(patch({ [location]: {} }))
  }
 
   const handleStatus = (sid) => _ => status = NuzlockeStates[sid]

@@ -1,87 +1,101 @@
-<script>
-  import { savedGames, createGame } from '$lib/store'
-  import PixelatedContainer from '$lib/components/pixelated-container.svelte'
-
-  const data = [
-    {
-      title: 'Sword & Shield',
-      logos: ['sw', 'sh'],
-      gen: 'VIII'
-    },
-    {
-      title: 'Heart Gold & Soul Silver',
-      logos: ['hg', 'ss'],
-      gen: 'II'
-    }
-  ]
-
-  savedGames.subscribe(val => console.log(val))
-
-  let gameName = ''
-  const handleNewGame = () => savedGames.update(createGame(gameName, selected))
-
-  let hoverActive = false
-  const togglehover = _ => hoverActive = !hoverActive
-
-  let selected
-  const handleSelect = id => _ => selected === id ? selected = null : selected = id
-
-  $: disabled = !gameName.length || !selected
+<script context="module">
+  export function load() {
+    return { props: { id: 25 } }
+  }
 </script>
 
-<div class='container px-96 mx-auto'>
-  <main class='px-4 md:px-8 py-6 flex flex-col items-center gap-y-4'>
-    <h1 class='text-4xl'>New Nuzlocke</h1>
-    <div class='inline-flex gap-x-2'>
-      <input
-        type='text'
-        bind:value={gameName}
-        placeholder='Name'
-        class='transition-colors hover:border-indigo-200 text-md focus:outline-none leading-4 focus:border-indigo-600 border-2 shadow-md block rounded-lg px-3 py-2'
-        />
+<script>
+  export let id
 
-      <button
-        disabled={disabled}
-        on:click={handleNewGame}
-        class:focus:active:border-indigo-600={!disabled}
-        class:focus:active:bg-indigo-600={!disabled}
-        class:focus:active:text-white={!disabled}
-        class:hover:text-indigo-300={!disabled}
-        class:hover:border-indigo-200={!disabled}
-        class='disabled:opacity-25 disabled:bg-gray-50 disabled:cursor-default disabled:border-gray-300 disabled:text-gray-500 transition-colors text-gray-500   text-md focus:outline-none leading-4  border-2 shadow-md block rounded-lg px-3 py-2'>
-        New game
-      </button>
+  import { fly } from 'svelte/transition'
+  import { activeGame } from '$lib/store'
+  import PixelatedContainer from '$lib/components/pixelated-container.svelte'
 
-    </div>
+  const interval = 5000
+  const distance = 300
 
-    <div class='grid grid-cols-2 gap-x-10 mt-4'>
-      {#each data as game}
-        <PixelatedContainer
-          width='.2rem'
-          className='px-4 py-2 text-center inline-flex'
-        >
-            <span class='h-full inline-flex items-center justify-center'>
-              {#each game.logos as logoId}
-                <img
-                  class='w-32 hover:grayscale-0 cursor-pointer'
-                  class:grayscale={(selected && selected !== logoId) || hoverActive}
-                  class:grayscale-0={selected === logoId}
-                  on:click={handleSelect(logoId)}
-                  on:mouseenter={togglehover}
-                  on:mouseleave={togglehover}
-                  src='/{logoId}-logo.png'
-                  alt={logoId}
-                  />
-              {/each}
-            </span>
-          </PixelatedContainer>
-      {/each}
-    </div>
-  </main>
-</div>
+  let hovering = false
+  const toggleHover = _ => hovering = !hovering
+
+  let flip = 0
+  setInterval(() => {
+    flip = (flip + 1) % 2
+    id = Math.round(Math.random() * 898)
+  }, interval)
+
+  let active
+  activeGame.subscribe(id => active = id)
+
+  $: duration = Math.min(interval / 3, 1000)
+  $: src = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png`
+</script>
+
+<main class='container mx-auto h-screen flex flex-col justify-center'>
+
+  <span class='mx-auto text-center'>
+    <img class:grayscale={!hovering} src='/pkmn-logo.png' class='transition h-32 -translate-x-2 translate-y-2 mx-auto'/>
+    <h1 class='font-mono text-5xl'>Nuzlocke tracker</h1>
+  </span>
+
+  <div class='py-11 px-10 sm:px-4 overflow-hidden mt-10'>
+    <PixelatedContainer className='font-mono relative h-32 max-w-md mx-auto flex sm:flex-row justify-evenly items-center gap-y-2 text-3xl py-2 w-auto'>
+
+      <div class='font-bold flex flex-col'>
+
+        {#if active}
+          <a href="/game">
+            <button class='tracking-widest hover:drop-shadow-text hover:text-pink-500 transition duration-300' on:mouseenter={toggleHover} on:mouseleave={toggleHover}>
+              Continue
+            </button>
+          </a>
+        {/if}
+
+        <a href="/new">
+          <button class='tracking-widest hover:drop-shadow-text hover:text-yellow-300 transition duration-300' on:mouseenter={toggleHover} on:mouseleave={toggleHover}>
+            New Game
+          </button>
+        </a>
+
+        <a href="/saves">
+          <button class='tracking-widest hover:drop-shadow-text hover:text-blue-400 transition duration-300' on:mouseenter={toggleHover} on:mouseleave={toggleHover}>
+            Load Game
+          </button>
+        </a>
+
+        <span>
+          <button class='tracking-widest hover:drop-shadow-text hover:text-orange-400 transition duration-300' on:mouseenter={toggleHover} on:mouseleave={toggleHover}>
+            Settings
+          </button>
+        </span>
+
+      </div>
+
+      <div class='img__container h-full -mx-12 relative'>
+        {#if !flip}
+          <img class:grayscale={!hovering} src={src} out:fly={{ y: distance, duration }} in:fly={{ y: -distance, duration }} class='absolute transition right-0 w-full -my-2 md:-my-12 -ml-12' />
+        {/if}
+        {#if flip}
+          <img class:grayscale={!hovering} src={src} out:fly={{ y: distance, duration }} in:fly={{ y: -distance, duration }} class='absolute transition right-0 grayscale w-full -my-2 md:-my-12 -ml-12' />
+        {/if}
+      </div>
+    </PixelatedContainer>
+  </div>
+
+</main>
 
 <style>
+  .img__container {
+    width: theme('spacing.32');
+  }
+
+  @media (min-width: 640px) {
+    .img__container {
+      width: theme('spacing.52');
+    }
+  }
+
   img {
-    transition-duration: 250ms !important;
+    image-rendering: pixelated;
+    transition-duration: 300ms !important;
   }
 </style>

@@ -26,7 +26,6 @@ export const deleteGame = (id) => {
 
   localStorage.removeItem(IDS.game(id))
   savedGames.update(g => {
-    debugger
     return g
       .split(',')
       .filter(i => !i.startsWith(id))
@@ -62,6 +61,7 @@ export const getGame = (id) => createWritable(
 )
 
 export const patch = (payload) => (data) => {
+  console.log('Patching this', JSON.stringify(payload), ' into ', data)
   return JSON.stringify({
     ...JSON.parse(data),
     ...payload
