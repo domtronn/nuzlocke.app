@@ -43,25 +43,24 @@
       <div class='font-bold flex flex-col'>
 
         {#if active}
-          <span>
+          <a href="/game">
             <button class='tracking-widest hover:drop-shadow-text hover:text-pink-500 transition duration-300' on:mouseenter={toggleHover} on:mouseleave={toggleHover}>
               Continue
             </button>
-          </span>
+          </a>
         {/if}
 
-        <span>
+        <a href="/">
           <button class='tracking-widest hover:drop-shadow-text hover:text-yellow-300 transition duration-300' on:mouseenter={toggleHover} on:mouseleave={toggleHover}>
             New Game
           </button>
-        </span>
+        </a>
 
-        <span>
+        <a href="/saves">
           <button class='tracking-widest hover:drop-shadow-text hover:text-blue-400 transition duration-300' on:mouseenter={toggleHover} on:mouseleave={toggleHover}>
             Load Game
           </button>
-        </span>
-
+        </a>
 
         <span>
           <button class='tracking-widest hover:drop-shadow-text hover:text-orange-400 transition duration-300' on:mouseenter={toggleHover} on:mouseleave={toggleHover}>
