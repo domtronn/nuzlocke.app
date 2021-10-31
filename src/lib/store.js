@@ -54,19 +54,15 @@ export const getGame = (id) => createWritable(
   (val) => {
     if (!browser) return
     if (!val) return
-    console.log(`Updating localstorage for game ${id}`, val)
     localStorage.setItem(IDS.game(id), val)
   },
   {}
 )
 
-export const patch = (payload) => (data) => {
-  console.log('Patching this', JSON.stringify(payload), ' into ', data)
-  return JSON.stringify({
-    ...JSON.parse(data),
-    ...payload
-  })
-}
+export const patch = (payload) => (data) => JSON.stringify({
+  ...JSON.parse(data),
+  ...payload
+})
 
 export const read = (cb) => (payload) => {
   if (!payload) return

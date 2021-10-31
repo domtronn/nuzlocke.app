@@ -1,5 +1,5 @@
 <script>
-  export let game, id
+  export let game, id, location = ''
   let pokemon = [], name = '', speciality = '', img
 
   import { onMount } from 'svelte'
@@ -110,8 +110,10 @@
 
         {#if loading}
           <h2 class='h-4 w-48 animate-pulse bg-gray-400 rounded-md' />
-        {:else if speciality}
-          <h2 class='h-4 text-md font-medium'>The {speciality} gym</h2>
+        {:else}
+          <h2 class='h-4 text-md font-medium'>
+            <span>{location}</span>
+          </h2>
         {/if}
       </span>
 
