@@ -11,3 +11,9 @@ export const NuzlockeStates = {
   4: { id: 4, state: 'Missed', icon: Missed },
   5: { id: 5, state: 'Deceased', icon: Deceased },
 }
+
+export const NuzlockeGroups = {
+  Available: [1, 2, 3],
+  Dead: [5],
+  Unavailable: [4, 5],
+}

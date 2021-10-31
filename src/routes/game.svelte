@@ -4,7 +4,6 @@
   import Games from '$lib/data/games.json'
   
   const game = Games.sw
-  
 </script> 
 
 <div class="container mx-auto">

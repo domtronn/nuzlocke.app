@@ -23,10 +23,14 @@ export const savedGames = createWritable(IDS.saves)
 export const createGame = (name, game) => (payload) => {
   if (!browser) return
 
+  const id = uuid()
   const games = payload === 'null' || payload === null || payload === 'undefined'
     ? []
     : payload.split(',').filter(i => i.length)
-  const gameData = `${uuid()}|${+new Date()}|${name}|${game}`
+  const gameData = `${id}|${+new Date()}|${name}|${game}`
+
+  if (!localStorage.getItem(IDS.game(id)))
+    localStorage.setItem(IDS.game(id), JSON.stringify({}))
 
   console.log(`Creating new game for ${name} ${game}`)
   return games.concat(gameData).join(',')
@@ -43,10 +47,12 @@ export const getGame = (id) => createWritable(
   {}
 )
 
-export const patch = (payload) => (data) => JSON.stringify({
-  ...JSON.parse(data),
-  ...payload
-})
+export const patch = (payload) => (data) => {
+  return JSON.stringify({
+    ...JSON.parse(data),
+    ...payload
+  })
+}
 
 export const read = (cb) => (payload) => {
   if (!payload) return

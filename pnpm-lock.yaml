@@ -5,6 +5,7 @@ specifiers:
   '@sveltejs/kit': next
   autoprefixer: ^10.3.7
   cssnano: ^5.0.8
+  dayjs: ^1.10.7
   pokedex-promise-v2: ^3.3.2
   pokemon-assets: ^0.6.0
   postcss: ^8.3.9
@@ -20,6 +21,7 @@ specifiers:
   tailwindcss: ^2.2.16
 
 dependencies:
+  dayjs: 1.10.7
   pokedex-promise-v2: 3.3.2
   pokemon-assets: 0.6.0
   prettier: 2.4.1
@@ -539,6 +541,10 @@ packages:
     dependencies:
       css-tree: 1.1.3
     dev: true
+
+  /dayjs/1.10.7:
+    resolution: {integrity: sha512-P6twpd70BcPK34K26uJ1KT3wlhpuOAPoMwJzpsIWUxHZ7wpmbdZL/hQqBDfz7hGurYSa5PhzdhDHtt319hL3ig==}
+    dev: false
 
   /debug/4.3.2:
     resolution: {integrity: sha512-mOp8wKcvj7XxC78zLgw/ZA+6TSgkoE2C/ienthhRD298T7UNwAg9diBpLRxC0mOezLl4B0xV7M0cCO6P/O0Xhw==}
