@@ -92,7 +92,7 @@
     </AutoComplete>
   </span>
 
-  <span class='sm:col-span-2'>
+  <span class='md:col-span-2'>
     <input
       type='text'
       bind:value={nickname}

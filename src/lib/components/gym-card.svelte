@@ -81,7 +81,7 @@
   }
 </script>
 
-<div class='my-6 md:mx-6 relative'>
+<div class='my-6 relative'>
   <Accordion iconClassName='transition duration-1000 {loading ? 'opacity-0' : 'opacity-100'}'>
 
     <span
@@ -90,7 +90,7 @@
       >
 
       {#if img}
-        <div class='overflow-hidden h-16 w-24 text-center'>
+        <div class='overflow-hidden h-16 w-24 text-center -ml-4'>
           <img class='inline h-32' src={img} alt='Gym leader {name}' />
         </div>
       {/if}
