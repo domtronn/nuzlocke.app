@@ -21,7 +21,7 @@
   let selected
   const handleSelect = id => _ => selected === id ? selected = null : selected = id
 
-  $: selectedGame = Games.find(i => i.id === selected)
+  $: selectedGame = Games[selected]
   $: disabled = !gameName.length || !selected
 </script>
 
@@ -54,15 +54,15 @@
 
   </div>
 
-  <div class='grid grid-cols-4 md:grid-cols-4 items-center justify-center gap-x-4 gap-y-6'>
-    {#each Games as game}
+  <div class='grid items-center justify-center gap-x-4 gap-y-6 grid-cols-4'>
+    {#each Object.entries(Games) as [id, game]}
       {#if game.logo}
         <span class='w-full text-center'>
           <img
             class='w-24 md:w-32 mx-auto hover:grayscale-0 cursor-pointer'
-            class:grayscale={(selected && selected !== game.id) || hoverActive}
-            class:grayscale-0={selected === game.id}
-            on:click={handleSelect(game.id)}
+            class:grayscale={(selected && selected !== id) || hoverActive}
+            class:grayscale-0={selected === id}
+            on:click={handleSelect(id)}
             on:mouseenter={togglehover}
             on:mouseleave={togglehover}
             src={game.logo}

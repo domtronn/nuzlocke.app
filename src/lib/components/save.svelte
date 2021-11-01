@@ -6,6 +6,7 @@
   import dayjs from 'dayjs'
 
   import { NuzlockeGroups, NuzlockeStates } from '$lib/data/states'
+  import Games from '$lib/data/games'
 
   import PIcon from '$lib/components/pokemon-icon.svelte'
   import Icon from 'svelte-icons-pack'
@@ -25,16 +26,19 @@
   $: date = dayjs(+created).format('DD MM YYYY')
   $: available = pkmn.filter(i => !i.status || NuzlockeGroups.Available.includes(i?.status))
   $: deceased = pkmn.filter(i => NuzlockeGroups.Dead.includes(i?.status))
+  $: gameData = Games[game]
 
 </script>
 
 <div class='transition cursor-pointer font-mono tracking-widest flex flex-row justify-between items-center gap-x-8'>
     <div out:fade on:click={onclick} class='group flex flex-col sm:flex-row gap-x-4 items-start md:items-center'>
-      <img
-        alt='{name} logo'
-        src='/{game}-logo.png'
-        class='w-16 group-hover:grayscale-0 grayscale transition hidden md:block'
-      />
+      {#if gameData.logo}
+        <img
+          alt='{name} logo'
+          src='{gameData.logo}'
+          class='w-16 group-hover:grayscale-0 grayscale transition hidden md:block'
+          />
+      {/if}
 
       <div>
         <h2 class='group-hover:text-yellow-400 transition text-2xl'>{name}</h2>

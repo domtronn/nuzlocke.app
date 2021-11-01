@@ -1,5 +1,8 @@
 <script>
+  import { browser } from '$app/env'
+
   import GymCard from '$lib/components/gym-card.svelte'
+  import Loader from '$lib/components/loader.svelte'
   import PokemonSelector from '$lib/components/pokemon-selector.svelte'
 
   import Games from '$lib/data/progression.json'
@@ -13,14 +16,14 @@
     savedGames.subscribe(games => {
       const gameKey = games.split(',').map(i => i.split('|')).filter(i => i[0] === gameId)[0][3]
       game = Games[gameKey]
-      loading = false
+      loading = !browser
     })
   })
 
 </script>
 
 {#if loading || !game}
-  loading
+  <Loader />
 {:else}
   <div class="container mx-auto">
     <div class="flex flex-row flex-wrap h-screen items-center justify-center">

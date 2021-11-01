@@ -24,3 +24,7 @@
     </PixelatedContainer>
   </main>
 </div>
+
+<style>
+  main { min-width: 480px; }
+</style>
