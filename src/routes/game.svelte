@@ -2,7 +2,7 @@
   import GymCard from '$lib/components/gym-card.svelte'
   import PokemonSelector from '$lib/components/pokemon-selector.svelte'
 
-  import Games from '$lib/data/games.json'
+  import Games from '$lib/data/progression.json'
   import { activeGame, savedGames, getGame } from '$lib/store'
 
   let gameStore, game

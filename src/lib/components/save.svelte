@@ -45,11 +45,11 @@
     <div class='w-12 h-4 inline-flex animate-pulse bg-gray-400 rounded-md' />
 
   {:else}
-    <div out:fade on:click={onclick} class='group flex inline-flex gap-x-4 items-center'>
+    <div out:fade on:click={onclick} class='group flex flex-col sm:flex-row gap-x-4 items-start md:items-center'>
       <img
         alt='{name} logo'
         src='/{game}-logo.png'
-        class='w-16 group-hover:grayscale-0 grayscale transition'
+        class='w-16 group-hover:grayscale-0 grayscale transition hidden md:block'
       />
 
       <div>

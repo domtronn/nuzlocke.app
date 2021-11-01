@@ -1,0 +1,902 @@
+{
+  "sw": {
+    "title": "Sword",
+    "progression": [
+      {
+        "name": "Starter",
+        "type": "route",
+        "value": 0
+      },
+      {
+        "name": "Slumbering Weald",
+        "type": "route",
+        "value": 1
+      },
+      {
+        "name": "Route 1",
+        "type": "route",
+        "value": 2
+      },
+      {
+        "name": "Wedgehurst",
+        "type": "route",
+        "value": 3
+      },
+      {
+        "name": "Route 2",
+        "type": "route",
+        "value": 4
+      },
+      {
+        "name": "Wild Area: Rolling Fields",
+        "type": "route",
+        "value": 5
+      },
+      {
+        "name": "Wild Area: Dappled Grove",
+        "type": "route",
+        "value": 6
+      },
+      {
+        "name": "Wild Area: West Lake Axewell",
+        "type": "route",
+        "value": 7
+      },
+      {
+        "name": "Wild Area: Watchtower Ruins",
+        "type": "route",
+        "value": 8
+      },
+      {
+        "name": "Wild Area: East Lake Axewell",
+        "type": "route",
+        "value": 9
+      },
+      {
+        "name": "Wild Area: South Lake Miloch",
+        "type": "route",
+        "value": 10
+      },
+      {
+        "name": "Wild Area: Giant's Seat",
+        "type": "route",
+        "value": 11
+      },
+      {
+        "name": "Wild Area: North Lake Miloch",
+        "type": "route",
+        "value": 12
+      },
+      {
+        "name": "Motostoke",
+        "type": "route",
+        "value": 13
+      },
+      {
+        "name": "Route 3",
+        "type": "route",
+        "value": 14
+      },
+      {
+        "name": "Galar Mine",
+        "type": "route",
+        "value": 15
+      },
+      {
+        "name": "Route 4",
+        "type": "route",
+        "value": 16
+      },
+      {
+        "name": "Turfield Gym",
+        "type": "gym",
+        "value": "1"
+      },
+      {
+        "name": "Route 5",
+        "type": "route",
+        "value": 17
+      },
+      {
+        "name": "Hulbury",
+        "type": "route",
+        "value": 18
+      },
+      {
+        "name": "Hulbury Gym",
+        "type": "gym",
+        "value": "2"
+      },
+      {
+        "name": "Galar Mine No. 2",
+        "type": "route",
+        "value": 19
+      },
+      {
+        "name": "Motostoke Outskirts",
+        "type": "route",
+        "value": 20
+      },
+      {
+        "name": "Motostoke Stadium",
+        "type": "route",
+        "value": 21
+      },
+      {
+        "name": "Motostoke Gym",
+        "type": "gym",
+        "value": "3"
+      },
+      {
+        "name": "Wild Area: Motostoke Riverbank",
+        "type": "route",
+        "value": 22
+      },
+      {
+        "name": "Wild Area: Bridge Field",
+        "type": "route",
+        "value": 23
+      },
+      {
+        "name": "Wild Area: Stony Wilderness",
+        "type": "route",
+        "value": 24
+      },
+      {
+        "name": "Wild Area: Giant's Mirror",
+        "type": "route",
+        "value": 25
+      },
+      {
+        "name": "Wild Area: Dusty Bowl",
+        "type": "route",
+        "value": 26
+      },
+      {
+        "name": "Wild Area: Giant's Cap",
+        "type": "route",
+        "value": 27
+      },
+      {
+        "name": "Wild Area: Hammerlocke Hills",
+        "type": "route",
+        "value": 28
+      },
+      {
+        "name": "Wild Area: Lake of Outrage",
+        "type": "route",
+        "value": 29
+      },
+      {
+        "name": "Route 6",
+        "type": "route",
+        "value": 30
+      },
+      {
+        "name": "Stow-on-Side Gym",
+        "type": "gym",
+        "value": "4a"
+      },
+      {
+        "name": "Glimwood Tangle",
+        "type": "route",
+        "value": 31
+      },
+      {
+        "name": "Ballonlea Gym",
+        "type": "gym",
+        "value": "5"
+      },
+      {
+        "name": "Router 7",
+        "type": "route",
+        "value": 32
+      },
+      {
+        "name": "Route 8",
+        "type": "route",
+        "value": 33
+      },
+      {
+        "name": "Circhester Gym",
+        "type": "gym",
+        "value": "6a"
+      },
+      {
+        "name": "Route 9",
+        "type": "route",
+        "value": 34
+      },
+      {
+        "name": "Spikemouth Gym",
+        "type": "gym",
+        "value": "7"
+      },
+      {
+        "name": "Hammerlock Gym",
+        "type": "gym",
+        "value": "8"
+      },
+      {
+        "name": "Route 10",
+        "type": "route",
+        "value": 300
+      },
+      {
+        "name": "Wild Area: Axew's Eye",
+        "type": "route",
+        "value": 35
+      },
+      {
+        "name": "Wyndon Semi Finals",
+        "type": "gym",
+        "value": "e1"
+      },
+      {
+        "name": "Wyndon Semi Finals",
+        "type": "gym",
+        "value": "e2a"
+      },
+      {
+        "name": "Wyndon Championship Match",
+        "type": "gym",
+        "value": "e3"
+      },
+      {
+        "name": "Wyndon Championship Match",
+        "type": "gym",
+        "value": "e4"
+      },
+      {
+        "name": "Wyndon Championship Match",
+        "type": "gym",
+        "value": "e5a"
+      },
+      {
+        "name": "Wyndon Championship Match",
+        "type": "gym",
+        "value": "e6"
+      },
+      {
+        "name": "Wyndon Championship Final",
+        "type": "gym",
+        "value": "ca"
+      },
+      {
+        "name": "Isle of Armor: Fields of Honor",
+        "type": "route",
+        "value": 36
+      },
+      {
+        "name": "Isle of Armor: Soothing Wetlands",
+        "type": "route",
+        "value": 37
+      },
+      {
+        "name": "Isle of Armor: Forest of Focus",
+        "type": "route",
+        "value": 38
+      },
+      {
+        "name": "Isle of Armor: Challenge Beach",
+        "type": "route",
+        "value": 39
+      },
+      {
+        "name": "Isle of Armor: Brawlers' Cave",
+        "type": "route",
+        "value": 40
+      },
+      {
+        "name": "Isle of Armor: Challenge Road",
+        "type": "route",
+        "value": 41
+      },
+      {
+        "name": "Isle of Armor: Courageous Cavern",
+        "type": "route",
+        "value": 42
+      },
+      {
+        "name": "Isle of Armor: Loop Lagoon",
+        "type": "route",
+        "value": 43
+      },
+      {
+        "name": "Isle of Armor: Training Lowlands",
+        "type": "route",
+        "value": 44
+      },
+      {
+        "name": "Isle of Armor: Warm-Up Tunnel",
+        "type": "route",
+        "value": 45
+      },
+      {
+        "name": "Isle of Armor: Potbottom Desert",
+        "type": "route",
+        "value": 46
+      },
+      {
+        "name": "Isle of Armor: Workout Sea",
+        "type": "route",
+        "value": 47
+      },
+      {
+        "name": "Isle of Armor: Stepping-Stone Sea",
+        "type": "route",
+        "value": 48
+      },
+      {
+        "name": "Isle of Armor: Insular Sea",
+        "type": "route",
+        "value": 49
+      },
+      {
+        "name": "Isle of Armor: Honeycalm Sea",
+        "type": "route",
+        "value": 50
+      },
+      {
+        "name": "Isle of Armor: Honeycalm Island",
+        "type": "route",
+        "value": 51
+      },
+      {
+        "name": "Crown Tundra: Slippery Slope",
+        "type": "route",
+        "value": 52
+      },
+      {
+        "name": "Crown Tundra: Freezington",
+        "type": "route",
+        "value": 53
+      },
+      {
+        "name": "Crown Tundra: Max Lair",
+        "type": "route",
+        "value": 54
+      },
+      {
+        "name": "Crown Tundra: Frostpoint Field",
+        "type": "route",
+        "value": 55
+      },
+      {
+        "name": "Crown Tundra: Giant's Bed",
+        "type": "route",
+        "value": 56
+      },
+      {
+        "name": "Crown Tundra: Old Cemetery",
+        "type": "route",
+        "value": 57
+      },
+      {
+        "name": "Crown Tundra: Snowslide Slope",
+        "type": "route",
+        "value": 58
+      },
+      {
+        "name": "Crown Tundra: Tunnel to the Top",
+        "type": "route",
+        "value": 59
+      },
+      {
+        "name": "Crown Tundra: Path to the Peak",
+        "type": "route",
+        "value": 60
+      },
+      {
+        "name": "Crown Tundra: Crown Shrine",
+        "type": "route",
+        "value": 61
+      },
+      {
+        "name": "Crown Tundra: Giant's Foot",
+        "type": "route",
+        "value": 62
+      },
+      {
+        "name": "Crown Tundra: Roaring-Sea Caves",
+        "type": "route",
+        "value": 63
+      },
+      {
+        "name": "Crown Tundra: Frigrid Sea",
+        "type": "route",
+        "value": 64
+      },
+      {
+        "name": "Crown Tundra: Three-Point Pass",
+        "type": "route",
+        "value": 65
+      },
+      {
+        "name": "Crown Tundra: Ballimere Lake",
+        "type": "route",
+        "value": 66
+      },
+      {
+        "name": "Crown Tundra: Lakeside Cave",
+        "type": "route",
+        "value": 67
+      },
+      {
+        "name": "Crown Tundra: Dyna Tree Hill",
+        "type": "route",
+        "value": 68
+      },
+      {
+        "name": "Crown Tundra: Rock Peak Ruins",
+        "type": "route",
+        "value": 69
+      },
+      {
+        "name": "Crown Tundra: Iceberg Ruins",
+        "type": "route",
+        "value": 70
+      },
+      {
+        "name": "Crown Tundra: Iron Ruins",
+        "type": "route",
+        "value": 71
+      },
+      {
+        "name": "Crown Tundra: Split-Decision Ruins",
+        "type": "route",
+        "value": 72
+      }
+    ]
+  },
+  "sh": {
+    "title": "Shield",
+    "progression": [
+      {
+        "name": "Starter",
+        "type": "route",
+        "value": 0
+      },
+      {
+        "name": "Slumbering Weald",
+        "type": "route",
+        "value": 1
+      },
+      {
+        "name": "Route 1",
+        "type": "route",
+        "value": 2
+      },
+      {
+        "name": "Wedgehurst",
+        "type": "route",
+        "value": 3
+      },
+      {
+        "name": "Route 2",
+        "type": "route",
+        "value": 4
+      },
+      {
+        "name": "Wild Area: Rolling Fields",
+        "type": "route",
+        "value": 5
+      },
+      {
+        "name": "Wild Area: Dappled Grove",
+        "type": "route",
+        "value": 6
+      },
+      {
+        "name": "Wild Area: West Lake Axewell",
+        "type": "route",
+        "value": 7
+      },
+      {
+        "name": "Wild Area: Watchtower Ruins",
+        "type": "route",
+        "value": 8
+      },
+      {
+        "name": "Wild Area: East Lake Axewell",
+        "type": "route",
+        "value": 9
+      },
+      {
+        "name": "Wild Area: South Lake Miloch",
+        "type": "route",
+        "value": 10
+      },
+      {
+        "name": "Wild Area: Giant's Seat",
+        "type": "route",
+        "value": 11
+      },
+      {
+        "name": "Wild Area: North Lake Miloch",
+        "type": "route",
+        "value": 12
+      },
+      {
+        "name": "Motostoke",
+        "type": "route",
+        "value": 13
+      },
+      {
+        "name": "Route 3",
+        "type": "route",
+        "value": 14
+      },
+      {
+        "name": "Galar Mine",
+        "type": "route",
+        "value": 15
+      },
+      {
+        "name": "Route 4",
+        "type": "route",
+        "value": 16
+      },
+      {
+        "name": "Turfield Gym",
+        "type": "gym",
+        "value": "1"
+      },
+      {
+        "name": "Route 5",
+        "type": "route",
+        "value": 17
+      },
+      {
+        "name": "Hulbury",
+        "type": "route",
+        "value": 18
+      },
+      {
+        "name": "Hulbury Gym",
+        "type": "gym",
+        "value": "2"
+      },
+      {
+        "name": "Galar Mine No. 2",
+        "type": "route",
+        "value": 19
+      },
+      {
+        "name": "Motostoke Outskirts",
+        "type": "route",
+        "value": 20
+      },
+      {
+        "name": "Motostoke Stadium",
+        "type": "route",
+        "value": 21
+      },
+      {
+        "name": "Motostoke Gym",
+        "type": "gym",
+        "value": "3"
+      },
+      {
+        "name": "Wild Area: Motostoke Riverbank",
+        "type": "route",
+        "value": 22
+      },
+      {
+        "name": "Wild Area: Bridge Field",
+        "type": "route",
+        "value": 23
+      },
+      {
+        "name": "Wild Area: Stony Wilderness",
+        "type": "route",
+        "value": 24
+      },
+      {
+        "name": "Wild Area: Giant's Mirror",
+        "type": "route",
+        "value": 25
+      },
+      {
+        "name": "Wild Area: Dusty Bowl",
+        "type": "route",
+        "value": 26
+      },
+      {
+        "name": "Wild Area: Giant's Cap",
+        "type": "route",
+        "value": 27
+      },
+      {
+        "name": "Wild Area: Hammerlocke Hills",
+        "type": "route",
+        "value": 28
+      },
+      {
+        "name": "Wild Area: Lake of Outrage",
+        "type": "route",
+        "value": 29
+      },
+      {
+        "name": "Route 6",
+        "type": "route",
+        "value": 30
+      },
+      {
+        "name": "Stow-on-Side Gym",
+        "type": "gym",
+        "value": "4b"
+      },
+      {
+        "name": "Glimwood Tangle",
+        "type": "route",
+        "value": 31
+      },
+      {
+        "name": "Ballonlea Gym",
+        "type": "gym",
+        "value": "5"
+      },
+      {
+        "name": "Router 7",
+        "type": "route",
+        "value": 32
+      },
+      {
+        "name": "Route 8",
+        "type": "route",
+        "value": 33
+      },
+      {
+        "name": "Circhester Gym",
+        "type": "gym",
+        "value": "6b"
+      },
+      {
+        "name": "Route 9",
+        "type": "route",
+        "value": 34
+      },
+      {
+        "name": "Spikemouth Gym",
+        "type": "gym",
+        "value": "7"
+      },
+      {
+        "name": "Hammerlock Gym",
+        "type": "gym",
+        "value": "8"
+      },
+      {
+        "name": "Route 10",
+        "type": "route",
+        "value": 300
+      },
+      {
+        "name": "Wild Area: Axew's Eye",
+        "type": "route",
+        "value": 35
+      },
+      {
+        "name": "Wyndon Semi Finals",
+        "type": "gym",
+        "value": "e1"
+      },
+      {
+        "name": "Wyndon Semi Finals",
+        "type": "gym",
+        "value": "e2a"
+      },
+      {
+        "name": "Wyndon Championship Match",
+        "type": "gym",
+        "value": "e3"
+      },
+      {
+        "name": "Wyndon Championship Match",
+        "type": "gym",
+        "value": "e4"
+      },
+      {
+        "name": "Wyndon Championship Match",
+        "type": "gym",
+        "value": "e5a"
+      },
+      {
+        "name": "Wyndon Championship Match",
+        "type": "gym",
+        "value": "e6"
+      },
+      {
+        "name": "Wyndon Championship Final",
+        "type": "gym",
+        "value": "ca"
+      },
+      {
+        "name": "Isle of Armor: Fields of Honor",
+        "type": "route",
+        "value": 36
+      },
+      {
+        "name": "Isle of Armor: Soothing Wetlands",
+        "type": "route",
+        "value": 37
+      },
+      {
+        "name": "Isle of Armor: Forest of Focus",
+        "type": "route",
+        "value": 38
+      },
+      {
+        "name": "Isle of Armor: Challenge Beach",
+        "type": "route",
+        "value": 39
+      },
+      {
+        "name": "Isle of Armor: Brawlers' Cave",
+        "type": "route",
+        "value": 40
+      },
+      {
+        "name": "Isle of Armor: Challenge Road",
+        "type": "route",
+        "value": 41
+      },
+      {
+        "name": "Isle of Armor: Courageous Cavern",
+        "type": "route",
+        "value": 42
+      },
+      {
+        "name": "Isle of Armor: Loop Lagoon",
+        "type": "route",
+        "value": 43
+      },
+      {
+        "name": "Isle of Armor: Training Lowlands",
+        "type": "route",
+        "value": 44
+      },
+      {
+        "name": "Isle of Armor: Warm-Up Tunnel",
+        "type": "route",
+        "value": 45
+      },
+      {
+        "name": "Isle of Armor: Potbottom Desert",
+        "type": "route",
+        "value": 46
+      },
+      {
+        "name": "Isle of Armor: Workout Sea",
+        "type": "route",
+        "value": 47
+      },
+      {
+        "name": "Isle of Armor: Stepping-Stone Sea",
+        "type": "route",
+        "value": 48
+      },
+      {
+        "name": "Isle of Armor: Insular Sea",
+        "type": "route",
+        "value": 49
+      },
+      {
+        "name": "Isle of Armor: Honeycalm Sea",
+        "type": "route",
+        "value": 50
+      },
+      {
+        "name": "Isle of Armor: Honeycalm Island",
+        "type": "route",
+        "value": 51
+      },
+      {
+        "name": "Crown Tundra: Slippery Slope",
+        "type": "route",
+        "value": 52
+      },
+      {
+        "name": "Crown Tundra: Freezington",
+        "type": "route",
+        "value": 53
+      },
+      {
+        "name": "Crown Tundra: Max Lair",
+        "type": "route",
+        "value": 54
+      },
+      {
+        "name": "Crown Tundra: Frostpoint Field",
+        "type": "route",
+        "value": 55
+      },
+      {
+        "name": "Crown Tundra: Giant's Bed",
+        "type": "route",
+        "value": 56
+      },
+      {
+        "name": "Crown Tundra: Old Cemetery",
+        "type": "route",
+        "value": 57
+      },
+      {
+        "name": "Crown Tundra: Snowslide Slope",
+        "type": "route",
+        "value": 58
+      },
+      {
+        "name": "Crown Tundra: Tunnel to the Top",
+        "type": "route",
+        "value": 59
+      },
+      {
+        "name": "Crown Tundra: Path to the Peak",
+        "type": "route",
+        "value": 60
+      },
+      {
+        "name": "Crown Tundra: Crown Shrine",
+        "type": "route",
+        "value": 61
+      },
+      {
+        "name": "Crown Tundra: Giant's Foot",
+        "type": "route",
+        "value": 62
+      },
+      {
+        "name": "Crown Tundra: Roaring-Sea Caves",
+        "type": "route",
+        "value": 63
+      },
+      {
+        "name": "Crown Tundra: Frigrid Sea",
+        "type": "route",
+        "value": 64
+      },
+      {
+        "name": "Crown Tundra: Three-Point Pass",
+        "type": "route",
+        "value": 65
+      },
+      {
+        "name": "Crown Tundra: Ballimere Lake",
+        "type": "route",
+        "value": 66
+      },
+      {
+        "name": "Crown Tundra: Lakeside Cave",
+        "type": "route",
+        "value": 67
+      },
+      {
+        "name": "Crown Tundra: Dyna Tree Hill",
+        "type": "route",
+        "value": 68
+      },
+      {
+        "name": "Crown Tundra: Rock Peak Ruins",
+        "type": "route",
+        "value": 69
+      },
+      {
+        "name": "Crown Tundra: Iceberg Ruins",
+        "type": "route",
+        "value": 70
+      },
+      {
+        "name": "Crown Tundra: Iron Ruins",
+        "type": "route",
+        "value": 71
+      },
+      {
+        "name": "Crown Tundra: Split-Decision Ruins",
+        "type": "route",
+        "value": 72
+      }
+    ]
+  }
+}
