@@ -1,6 +1,7 @@
 <script>
+  import { browser } from '$app/env'
   import { savedGames } from '$lib/store'
-  import { slide } from 'svelte/transition'
+  import { slide, fade } from 'svelte/transition'
 
   // TODO: No saves and back button
 
@@ -11,30 +12,48 @@
   import Floppy from 'svelte-icons-pack/im/ImFloppyDisk'
 
   let gameData = ''
-  savedGames.subscribe(val => gameData = val)
+  let loading = true
+  savedGames.subscribe(val => {
+    loading = !browser
+    gameData = val
+  })
 
   $: games = (gameData || '')
-    .split(',')
-    .filter(i => i)
-    .map(s => s.split('|'))
-    .map(([id, created, name, game]) => ({ id, created, name, game}))
+      .split(',')
+      .filter(i => i)
+      .map(s => s.split('|'))
+      .map(([id, created, name, game]) => ({ id, created, name, game}))
 </script>
 
 <ScreenContainer>
-  <span class='flex justify-between items-center px-2 gap-x-24'>
+  <span class='flex justify-between items-center gap-x-24'>
     <h1 class='text-2xl'>Load game</h1>
     <Icon src={Floppy} size='1.4em' />
   </span>
 
   <hr />
 
+  <div class='flex flex-col gap-y-4' transition:slide={{ duration: 300 }}>
+    {#if loading}
+      <div class='flex flex-row justify-between items-center'>
+        <div>
+          <p class=' transition w-16 h-5 animate-pulse bg-gray-400 rounded-md' />
+          <p class=' transition w-32 mt-1 h-3 animate-pulse bg-gray-400 rounded-md' />
+          <div class='h-4 mt-2 inline-flex gap-x-1'>
+            <div class='w-4 h-4 animate-pulse bg-gray-400 rounded-full' />
+            <div class='w-4 h-4 animate-pulse bg-gray-400 rounded-full' />
+            <div class='w-4 h-4 animate-pulse bg-gray-400 rounded-full' />
+            <div class='w-4 h-4 animate-pulse bg-gray-400 rounded-full' />
+          </div>
+        </div>
 
-  <div transition:slide={{ duration: 300 }}>
-    {#if games.length}
+        <div class='w-12 h-4 inline-flex animate-pulse bg-gray-400 rounded-md' />
+      </div>
+    {:else if games.length}
       {#each games as game (game.id)}
         <Save {...game} />
       {/each}
-    {:else}
+    {:else if !loading && !games.length}
       You have no games
         <a sveltekit:prefetch href="/new">
           <button>New game</button>

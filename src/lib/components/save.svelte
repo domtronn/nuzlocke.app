@@ -1,5 +1,6 @@
 <script>
   export let id, created, name, game
+
   import { activeGame, deleteGame, getGame, read } from '$lib/store'
   import { fade } from 'svelte/transition'
   import dayjs from 'dayjs'
@@ -11,9 +12,7 @@
   import Bin from 'svelte-icons-pack/bi/BiTrash'
 
   let pkmn = []
-  let loading = true
   getGame(id).subscribe(read(data => {
-    loading = false
     pkmn = Object.values(data)
   }))
 
@@ -30,21 +29,6 @@
 </script>
 
 <div class='transition cursor-pointer font-mono tracking-widest flex flex-row justify-between items-center gap-x-8'>
-  {#if loading}
-    <div>
-      <p class=' transition w-16 h-5 animate-pulse bg-gray-400 rounded-md' />
-      <p class=' transition w-32 mt-1 h-3 animate-pulse bg-gray-400 rounded-md' />
-      <div class='h-4 mt-2 inline-flex gap-x-1'>
-        <div class='w-4 h-4 animate-pulse bg-gray-400 rounded-full' />
-        <div class='w-4 h-4 animate-pulse bg-gray-400 rounded-full' />
-        <div class='w-4 h-4 animate-pulse bg-gray-400 rounded-full' />
-        <div class='w-4 h-4 animate-pulse bg-gray-400 rounded-full' />
-      </div>
-    </div>
-
-    <div class='w-12 h-4 inline-flex animate-pulse bg-gray-400 rounded-md' />
-
-  {:else}
     <div out:fade on:click={onclick} class='group flex flex-col sm:flex-row gap-x-4 items-start md:items-center'>
       <img
         alt='{name} logo'
@@ -73,6 +57,4 @@
         <Icon src={Bin} className='fill-current' />
       </button>
     </div>
-
-  {/if}
 </div>

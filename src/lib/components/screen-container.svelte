@@ -12,7 +12,7 @@
       className='px-4 py-2 flex flex-col gap-y-4 {className}'
       >
       {#if title}
-        <span class='flex justify-between items-center px-2 gap-x-24'>
+        <span class='flex justify-between items-center gap-x-24'>
           <h1 class='text-2xl'>{title}</h1>
           {#if icon}
             <Icon src={icon} size='1.4em' />
