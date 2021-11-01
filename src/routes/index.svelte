@@ -8,8 +8,11 @@
   export let id
 
   import { fly } from 'svelte/transition'
-  import { activeGame } from '$lib/store'
+  import { activeGame, savedGames, parse, getGame, read, summarise } from '$lib/store'
   import PixelatedContainer from '$lib/components/pixelated-container.svelte'
+  import PIcon from '$lib/components/pokemon-icon.svelte'
+  import Icon from 'svelte-icons-pack'
+  import Deceased from 'svelte-icons-pack/fa/FaSolidSkullCrossbones'
 
   const interval = 5000
   const distance = 300
@@ -23,8 +26,17 @@
     id = Math.round(Math.random() * 898)
   }, interval)
 
-  let active
-  activeGame.subscribe(id => active = id)
+  let activeId, active = {}, summary = {}
+  activeGame.subscribe(id => {
+    activeId = id
+    savedGames.subscribe(parse(games => {
+      active = games[id]
+    }))
+
+    getGame(id).subscribe(read(summarise(data =>
+      summary = data
+    )))
+  })
 
   $: duration = Math.min(interval / 3, 1000)
   $: src = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png`
@@ -33,8 +45,8 @@
 <main class='container mx-auto h-screen flex flex-col justify-center'>
 
   <span class='mx-auto text-center'>
-    <img class:grayscale={!hovering} alt='Pokemon brand logo' src='/pkmn-logo.png' class='transition h-32 -translate-x-2 translate-y-2 mx-auto'/>
-    <h1 class='font-mono text-5xl'>Nuzlocke tracker</h1>
+    <img class:grayscale={!hovering} alt='Pokemon brand logo' src='/pkmn-logo.png' class='transition h-24 md:h-32 -translate-x-2 translate-y-2 mx-auto'/>
+    <h1 class='font-mono text-4xl'>Nuzlocke tracker</h1>
   </span>
 
   <div class='py-11 px-10 sm:px-4 overflow-hidden mt-10'>
@@ -42,11 +54,18 @@
 
       <div class='font-bold flex flex-col'>
 
-        {#if active}
-          <a sveltekit:prefetch href="/game">
-            <button class='tracking-widest hover:drop-shadow-text hover:text-pink-500 transition duration-300' on:mouseenter={toggleHover} on:mouseleave={toggleHover}>
+        {#if active.game}
+          <a class='mb-1 group' on:mouseenter={toggleHover} on:mouseleave={toggleHover} sveltekit:prefetch href="/game">
+            <button class='tracking-widest group-hover:drop-shadow-text group-hover:text-pink-500 transition duration-300'>
               Continue
             </button>
+            <div class:grayscale-0={hovering} class='flex flex-row grayscale items-center transition h-8 -mt-1 font-sans text-sm font-normal'>
+              <img class='w-8 h-8 mr-2' src='/data/{active.game}.png' alt='{active.game} logo' />
+              <span>{summary.available.length}</span>
+              <PIcon className='transform scale-75 -ml-1' type='item' name='poke-ball' />
+              <span>{summary.deceased.length}</span>
+              <Icon className='ml-1 w-3 h-3' src={Deceased} />
+            </div>
           </a>
         {/if}
 
@@ -66,6 +85,7 @@
           <button class='tracking-widest hover:drop-shadow-text hover:text-orange-400 transition duration-300' on:mouseenter={toggleHover} on:mouseleave={toggleHover}>
             Settings
           </button>
+          <!-- TODO: Rules -->
         </span>
 
       </div>

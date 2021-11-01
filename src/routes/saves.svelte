@@ -1,6 +1,6 @@
 <script>
   import { browser } from '$app/env'
-  import { savedGames } from '$lib/store'
+  import { savedGames, parse } from '$lib/store'
   import { slide, fade } from 'svelte/transition'
 
   // TODO: No saves and back button
@@ -11,18 +11,12 @@
   import Icon from 'svelte-icons-pack'
   import Floppy from 'svelte-icons-pack/im/ImFloppyDisk'
 
-  let gameData = ''
+  let games = []
   let loading = true
-  savedGames.subscribe(val => {
+  savedGames.subscribe(parse(g => {
     loading = !browser
-    gameData = val
-  })
-
-  $: games = (gameData || '')
-      .split(',')
-      .filter(i => i)
-      .map(s => s.split('|'))
-      .map(([id, created, name, game]) => ({ id, created, name, game}))
+    games = Object.values(g)
+  }))
 </script>
 
 <ScreenContainer>

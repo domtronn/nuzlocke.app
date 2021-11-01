@@ -3,6 +3,7 @@ import { browser } from '$app/env'
 import { writable } from 'svelte/store'
 
 import { uuid } from '$lib/utils/uuid'
+import { NuzlockeGroups, NuzlockeStates } from '$lib/data/states'
 
 const IDS = {
   active: 'nuzlocke',
@@ -69,4 +70,24 @@ export const read = (cb) => (payload) => {
   let data = {}
   try { data = JSON.parse(payload) } catch (e) {}
   cb(data || {})
+}
+
+export const parse = (cb = i => {}) => (gameData) => {
+  cb(
+    (gameData || '')
+      .split(',')
+      .map(i => i.split('|'))
+      .reduce((acc, [id, created, name, game]) => ({
+        ...acc,
+        [id]: { id, created, name, game }
+      }), {})
+  )
+}
+
+export const summarise = (cb = i => {}) => data => {
+  const pkmn = Object.values(data)
+  cb({
+    available: pkmn.filter(i => !i.status || NuzlockeGroups.Available.includes(i?.status)),
+    deceased: pkmn.filter(i => NuzlockeGroups.Dead.includes(i?.status))
+  })
 }
