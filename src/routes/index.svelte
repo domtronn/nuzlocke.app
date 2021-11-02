@@ -1,11 +1,5 @@
-<script context="module">
-  export function load() {
-    return { props: { id: 25 } }
-  }
-</script>
-
 <script>
-  export let id
+  export let id = 25
 
   import { fly } from 'svelte/transition'
   import { activeGame, savedGames, parse, getGame, read, summarise } from '$lib/store'
@@ -55,11 +49,11 @@
       <div class='font-bold flex flex-col'>
 
         {#if active.game}
-          <a class='mb-1 group' on:mouseenter={toggleHover} on:mouseleave={toggleHover} sveltekit:prefetch href="/game">
-            <button class='tracking-widest group-hover:drop-shadow-text group-hover:text-pink-500 transition duration-300'>
+          <a class='mb-1 group' on:mouseenter={toggleHover} on:mouseleave={toggleHover} href="/game">
+            <button class='tracking-widest group-hover:drop-shadow-text group-hover:text-pink-500'>
               Continue
             </button>
-            <div class:grayscale-0={hovering} class='flex flex-row grayscale items-center transition h-8 -mt-1 font-sans text-sm font-normal'>
+            <div class:grayscale-0={hovering} class='flex flex-row group-hover:grayscale-0 grayscale items-center transition h-8 -mt-1 font-sans text-sm font-normal'>
               <img class='w-8 h-8 mr-2' src='/data/{active.game}.png' alt='{active.game} logo' />
               <span>{summary.available.length}</span>
               <PIcon className='transform scale-75 -ml-1' type='item' name='poke-ball' />
@@ -69,20 +63,20 @@
           </a>
         {/if}
 
-        <a sveltekit:prefetch href="/new">
-          <button class='tracking-widest hover:drop-shadow-text hover:text-yellow-300 transition duration-300' on:mouseenter={toggleHover} on:mouseleave={toggleHover}>
+        <a href="/new">
+          <button class='tracking-widest hover:drop-shadow-text hover:text-yellow-300' on:mouseenter={toggleHover} on:mouseleave={toggleHover}>
             New Game
           </button>
         </a>
 
-        <a sveltekit:prefetch href="/saves">
-          <button class='tracking-widest hover:drop-shadow-text hover:text-blue-400 transition duration-300' on:mouseenter={toggleHover} on:mouseleave={toggleHover}>
+        <a href="/saves">
+          <button class='tracking-widest hover:drop-shadow-text hover:text-blue-400' on:mouseenter={toggleHover} on:mouseleave={toggleHover}>
             Load Game
           </button>
         </a>
 
         <span>
-          <button class='tracking-widest hover:drop-shadow-text hover:text-orange-400 transition duration-300' on:mouseenter={toggleHover} on:mouseleave={toggleHover}>
+          <button class='tracking-widest hover:drop-shadow-text hover:text-orange-400' on:mouseenter={toggleHover} on:mouseleave={toggleHover}>
             Settings
           </button>
           <!-- TODO: Rules -->
