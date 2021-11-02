@@ -53,7 +53,7 @@
             <button class='tracking-widest group-hover:drop-shadow-text group-hover:text-pink-500'>
               Continue
             </button>
-            <div class:grayscale-0={hovering} class='flex flex-row group-hover:grayscale-0 grayscale items-center transition h-8 -mt-1 font-sans text-sm font-normal'>
+            <div class='flex flex-row group-hover:grayscale-0 grayscale items-center transition h-8 -mt-1 font-sans text-sm font-normal'>
               <img class='w-8 h-8 mr-2' src='/data/{active.game}.png' alt='{active.game} logo' />
               <span>{summary.available.length}</span>
               <PIcon className='transform scale-75 -ml-1' type='item' name='poke-ball' />
