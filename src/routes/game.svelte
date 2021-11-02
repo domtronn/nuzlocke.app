@@ -9,14 +9,30 @@
   import Icon from 'svelte-icons-pack'
   import Box from 'svelte-icons-pack/bi/BiSolidPackage'
 
+  import Water from 'svelte-icons-pack/io/IoWater'
+  import Fire from 'svelte-icons-pack/im/ImFire'
+  import Grass from 'svelte-icons-pack/fa/FaSolidLeaf'
+
   import Games from '$lib/data/progression.json'
-  import { activeGame, savedGames, getGame } from '$lib/store'
+  import Colors from '$lib/data/colors.json'
+  import { activeGame, savedGames, getGame, patch, read } from '$lib/store'
 
   let gameStore, game
   let loading = true
 
+  let filter = 0
+  const filters = [ 'Combined', 'Nuzlocke route', 'Gyms' ]
+
+  let starter = ''
+  const starters = [
+    { name: 'fire', icon: Fire },
+    { name: 'water', icon: Water },
+    { name: 'grass', icon: Grass }
+  ]
+
   activeGame.subscribe(gameId => {
     gameStore = getGame(gameId)
+    gameStore.subscribe(read(game => starter = game.__starter))
 
     savedGames.subscribe(games => {
       const gameKey = games.split(',').map(i => i.split('|')).filter(i => i[0] === gameId)[0][3]
@@ -25,8 +41,7 @@
     })
   })
 
-  let filter = 0
-  const filters = [ 'Combined', 'Nuzlocke route', 'Gyms' ]
+  const setstarter = () => setTimeout(_ => gameStore.update(patch({ __starter: starter })) , 1)
 
 </script>
 
@@ -40,6 +55,20 @@
           <h1 class='text-4xl mb-2'>Pokémon {game.title}</h1>
 
           <div class='flex flex-row justify-between'>
+            <div class='flex flex-row gap-x-4'>
+              {#each starters as s, i}
+                <label
+                  class='flex w-6 h-6 p-1.5 items-center justify-center rounded-full grayscale cursor-pointer transition opacity-50 hover:opacity-75 hover:grayscale-0'
+                  class:opacity-100={starter === s.name}
+                  class:grayscale-0={starter === s.name}
+                  style='background-color: {Colors[s.name]};'
+                >
+                  <input type='radio' on:click={setstarter} bind:group={starter} name='starter' value={s.name} />
+                  <Icon src={s.icon} color='white' className='fill-current text-white stroke-white' />
+                </label>
+              {/each}
+            </div>
+
           <div class='flex flex-row gap-x-4'>
             {#each filters as f, i}
               <label
@@ -74,12 +103,12 @@
                       id={i}
                       store={gameStore}
                       location={p.name}
-                      />
+                    />
                   </span>
                   {/if}
                 {:else if p.type === 'gym' && [0, 2].includes(filter)}
                   <span transition:fade>
-                    <GymCard game='swsh' id={p.value} location={p.name} />
+                    <GymCard game='swsh' starter={starter} id={p.value} location={p.name} />
                   </span >
                 {/if}
           {/each}

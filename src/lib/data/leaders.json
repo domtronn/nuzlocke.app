@@ -603,6 +603,7 @@
             "nasty-plot",
             "snarl"
           ],
+          "ability": "prankster", 
           "held": null
         },
         {
@@ -614,6 +615,7 @@
             "swagger",
             "toxic"
           ],
+          "ability": "dry-skin",
           "held": null
         },
         {
@@ -625,6 +627,7 @@
             "brick-break",
             "crunch"
           ],
+          "ability": "shed-skin",
           "held": null
         },
         {
@@ -636,6 +639,7 @@
             "spark",
             "bite"
           ],
+          "ability": "hunger-switch",
           "held": null
         },
         {
@@ -647,12 +651,13 @@
             "bulk-up",
             "torment"
           ],
+          "ability": "prankster",
           "held": null
         }
       ]
     },
     "e2a": {
-      "name": "Hop - Scorbunny starter",
+      "name": "Hop",
       "speciality": null,
       "img": "/leaders/hop.png",
       "pokemon": [
@@ -665,6 +670,7 @@
             "body-slam",
             "zen-headbutt"
           ],
+          "ability": "steadfast", 
           "held": null
         },
         {
@@ -676,6 +682,7 @@
             "scary-face",
             "swagger"
           ],
+          "ability": "unnerve",
           "held": null
         },
         {
@@ -686,6 +693,7 @@
             "poison-jab",
             "curse"
           ],
+          "ability": "lightning-rod",
           "held": null
         },
         {
@@ -696,10 +704,12 @@
             "high-horsepower",
             "hammer-arm"
           ],
+          "ability": "thick-fat",
           "held": null
         },
         {
           "name": "inteleon",
+          "starter": "grass", 
           "level": 49,
           "moves": [
             "snipe-shot",
@@ -707,59 +717,12 @@
             "icy-wind",
             "dark-pulse"
           ],
-          "held": null
-        }
-      ]
-    },
-    "e2b": {
-      "name": "Hop - Sobble starter",
-      "speciality": null,
-      "img": "/leaders/hop.png",
-      "pokemon": [
-        {
-          "name": "dubwool",
-          "level": 48,
-          "moves": [
-            "cotton-guard",
-            "reversal",
-            "body-slam",
-            "zen-headbutt"
-          ],
-          "held": null
-        },
-        {
-          "name": "corviknight",
-          "level": 48,
-          "moves": [
-            "steel-wing",
-            "drill-peck",
-            "scary-face",
-            "swagger"
-          ],
-          "held": null
-        },
-        {
-          "name": "pincurchin",
-          "level": 47,
-          "moves": [
-            "thunderbolt",
-            "poison-jab",
-            "curse"
-          ],
-          "held": null
-        },
-        {
-          "name": "snorlax",
-          "level": 47,
-          "moves": [
-            "heavy-slam",
-            "high-horsepower",
-            "hammer-arm"
-          ],
+          "ability": "torrent",
           "held": null
         },
         {
           "name": "rillaboom",
+          "starter": "fire",
           "level": 49,
           "moves": [
             "drum-beating",
@@ -767,59 +730,12 @@
             "snarl",
             "uproar"
           ],
-          "held": null
-        }
-      ]
-    },
-    "e2c": {
-      "name": "Hop - Grookey starter",
-      "speciality": null,
-      "img": "/leaders/hop.png",
-      "pokemon": [
-        {
-          "name": "dubwool",
-          "level": 48,
-          "moves": [
-            "cotton-guard",
-            "reversal",
-            "body-slam",
-            "zen-headbutt"
-          ],
-          "held": null
-        },
-        {
-          "name": "corviknight",
-          "level": 48,
-          "moves": [
-            "steel-wing",
-            "drill-peck",
-            "scary-face",
-            "swagger"
-          ],
-          "held": null
-        },
-        {
-          "name": "pincurchin",
-          "level": 47,
-          "moves": [
-            "thunderbolt",
-            "poison-jab",
-            "curse"
-          ],
-          "held": null
-        },
-        {
-          "name": "snorlax",
-          "level": 47,
-          "moves": [
-            "heavy-slam",
-            "high-horsepower",
-            "hammer-arm"
-          ],
+          "ability": "overgrow",
           "held": null
         },
         {
           "name": "cinderace",
+          "starter": "water",
           "level": 49,
           "moves": [
             "pyro-ball",
@@ -827,7 +743,8 @@
             "gunk-shot",
             "bounce"
           ],
-          "held": null
+          "held": null,
+          "ability": "blaze"
         }
       ]
     },
@@ -844,6 +761,7 @@
             "iron-head",
             "crunch"
           ],
+          "ability": "intimidate",
           "held": null
         },
         {
@@ -855,6 +773,7 @@
             "calm-mind",
             "wish"
           ],
+          "ability": "synchronize",
           "held": null
         },
         {
@@ -866,6 +785,7 @@
             "dazzling-gleam",
             "quick-attack"
           ],
+          "ability": "pastel-veil",
           "held": null
         },
         {
@@ -877,6 +797,7 @@
             "calm-mind",
             "mystical-fire"
           ],
+          "ability": "anticipation",
           "held": null
         }
       ]
@@ -895,6 +816,7 @@
             "swords-dance", 
             "shadow-claw"
           ],
+          "ability": "emergency-exit",
           "held": null
         },
         {
@@ -906,6 +828,7 @@
             "water-pulse",
             "tailwind"
           ],
+          "ability": "drizzle",
           "held": null
         },
         {
@@ -917,6 +840,7 @@
             "ice-fang",
             "drill-run"
           ],
+          "ability": "swift-swim",
           "held": null
         },
         {
@@ -928,6 +852,7 @@
             "aqua-ring",
             "waterfall"
           ],
+          "ability": "swift-swim", 
           "held": null
         },
         {
@@ -939,6 +864,7 @@
             "rock-tomb",
             "crunch"
           ],
+          "ability": "shell-armor",
           "held": null
         }
       ]
@@ -956,6 +882,7 @@
             "high-jump-kick",
             "bounce"
           ],
+          "ability": "limber",
           "held": null
         },
         {
@@ -967,6 +894,7 @@
             "bind",
             "mega-punch"
           ],
+          "ability": "limber",
           "held": null
         },
         {
@@ -978,6 +906,7 @@
             "brick-break",
             "brutal-swing"
           ],
+          "ability": "steadfast",
           "held": null
         },
         {
@@ -989,6 +918,7 @@
             "close-combat",
             "rock-tomb"
           ],
+          "ability": "battle-armor",
           "held": null
         },
         {
@@ -1000,6 +930,7 @@
             "fire-punch",
             "strength"
           ],
+          "ability": "guts",
           "held": null
         }
       ]
@@ -1018,6 +949,7 @@
             "rock-tomb",
             "disable"
           ],
+          "ability": "pressure",
           "held": null
         },
         {
@@ -1028,6 +960,7 @@
             "mystical-fire",
             "will-o-wisp"
           ],
+          "ability": "flash-fire",
           "held": null
         },
         {
@@ -1039,6 +972,7 @@
             "ancient-power",
             "amnesia"
           ],
+          "ability": "weak-armor",
           "held": null
         },
         {
@@ -1050,6 +984,7 @@
             "nasty-plot",
             "giga-drain"
           ],
+          "ability": "weak-armor",
           "held": null
         },
         {
@@ -1061,6 +996,7 @@
             "dark-pulse",
             "hypnosis"
           ],
+          "ability": "cursed-body",
           "held": null
         }
       ]
@@ -1079,6 +1015,7 @@
             "solar-beam",
             "yawn"
           ],
+          "ability": "drought", 
           "held": null
         },
         {
@@ -1090,6 +1027,7 @@
             "thunder",
             "muddy-water"
           ],
+          "ability": "sap-sipper",
           "held": null
         },
         {
@@ -1101,6 +1039,7 @@
             "shell-trap",
             "fire-blast"
           ],
+          "ability": "shell-armor",
           "held": null
         },
         {
@@ -1112,6 +1051,7 @@
             "earthquake",
             "crunch"
           ],
+          "ability": "levitate",
           "held": null
         },
         {
@@ -1123,6 +1063,7 @@
             "stone-edge",
             "iron-head"
           ],
+          "ability": "light-metal",
           "held": null
         }
       ]
@@ -1141,6 +1082,7 @@
             "sacred-sword",
             "flash-cannon"
           ],
+          "ability": "stance-change",
           "held": null
         },
         {
@@ -1152,6 +1094,7 @@
             "thunderbolt",
             "dragon-breath"
           ],
+          "ability": "clear-body",
           "held": null
         },
         {
@@ -1163,10 +1106,12 @@
             "outrage",
             "earthquake"
           ],
+          "ability": "mold-breaker",
           "held": null
         },
         {
           "name": "seismitoad",
+          "starter": "grass",
           "level": 64,
           "moves": [
             "toxic",
@@ -1174,10 +1119,38 @@
             "liquidation",
             "earthquake"
           ],
+          "ability": "water-absorb",
           "held": null
         },
         {
+          "name": "mr-rime",
+          "starter": "fire",
+          "level": 64,
+          "moves": [
+            "teeter-dance",
+            "psychic",
+            "freeze-dry",
+            "thunderbolt"
+          ],
+          "ability": "tangled-feet",
+          "held": null
+        },
+        {
+          "name": "rhyperior",
+          "starter": "water",
+          "level": 64,
+          "moves": [
+            "earthquake",
+            "stone-edge",
+            "megahorn",
+            "heat-crash"
+          ],
+          "ability": "solid-rock",
+          "held": null
+        }, 
+        {
           "name": "cinderace",
+          "starter": "grass", 
           "level": 64,
           "moves": [
             "pyro-ball",
@@ -1185,6 +1158,33 @@
             "acrobatics",
             "quick-attack"
           ],
+          "ability": "blaze",
+          "held": null
+        },
+        {
+          "name": "inteleon",
+          "starter": "fire", 
+          "level": 64,
+          "moves": [
+            "snipe-shot",
+            "dark-pulse",
+            "mud-shot",
+            "tearful-look"
+          ],
+          "ability": "torrent",
+          "held": null
+        },
+        {
+          "name": "rillaboom",
+          "starter": "water", 
+          "level": 64,
+          "moves": [
+            "drum-beating",
+            "knock-off",
+            "high-horsepower",
+            "endeavor"
+          ],
+          "ability": "overgrow",
           "held": null
         },
         {
@@ -1196,6 +1196,7 @@
             "solar-beam",
             "ancient-power"
           ],
+          "ability": "blaze",
           "held": null
         }
       ]

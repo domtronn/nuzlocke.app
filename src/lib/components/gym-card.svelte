@@ -1,5 +1,5 @@
 <script>
-  export let game, id, location = ''
+  export let game, id, location = '', starter = ''
   let pokemon = [], name = '', speciality = '', img
 
   import { onMount } from 'svelte'
@@ -15,8 +15,8 @@
 
   let loading = true
 
-  onMount(async () => {
-    const res = await fetch(`/leader/${game}/${id}.json`)
+  const fetchData = async (starter) => {
+    const res = await fetch(`/leader/${game}/${id}.json?starter=${starter}`)
     const data = await res.json()
 
     img = data.img
@@ -25,7 +25,9 @@
     speciality = data.speciality
 
     loading = false
-  })
+  }
+
+  $: (async () => await fetchData(starter))()
 
   const threshold = -15
 
@@ -132,7 +134,7 @@
     </span>
 
     <div slot='item' class='grid lg:grid-cols-2 md:grid-cols-2 mt-8 gap-x-6 gap-y-10'>
-      {#each pokemon as p}
+      {#each pokemon as p (p.name)}
         <Pokemon {...p} maxStat={maxStat} />
       {/each}
     </div>

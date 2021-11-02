@@ -34,6 +34,7 @@
    if (selected)
      store.update(patch({
        [location]: {
+         ...(location === 'Starter' ? { type: selected?.types[0].toLowerCase() } : {}),
          id,
          pokemon: selected?.alias,
          status: status?.id,

@@ -55,8 +55,9 @@ const toPokemon = applySpec({
     }), {})
 })
 
-export async function get ({ params }) {
+export async function get ({ params, query }) {
   const { gen, id } = params
+  const starter = query.get('starter')
   const leader = path([gen, id], leaders)
 
   if (!leader) return
@@ -65,6 +66,7 @@ export async function get ({ params }) {
     const pokemon = await Promise.all(
       leader
         .pokemon
+        .filter(p => !p.starter || p.starter === starter)
         .map(async p => {
           const data = await P.getPokemonByName(p.name)
           const held = await maybe(P.getItemByName, p.held)
