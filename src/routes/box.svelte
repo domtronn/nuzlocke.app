@@ -92,6 +92,7 @@
       {#each box.filter(filter) as p (p.id)}
         <span
           animate:flip={{ duration: d => 10 * Math.sqrt(d) }}
+          out:fade={{ duration: 150 }}
           class='col-span-4 md:col-span-2 my-3'
           >
             <PokemonCard
