@@ -84,7 +84,7 @@ export const parse = (cb = i => {}) => (gameData) => {
   )
 }
 
-export const summarise = (cb = i => {}) => data => {
+export const summarise = (cb = i => {}) => ({ __starter, ...data }) => {
   const pkmn = Object.values(data)
   cb({
     available: pkmn.filter(i => !i.status || NuzlockeGroups.Available.includes(i?.status)),

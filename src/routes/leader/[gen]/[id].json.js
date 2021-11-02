@@ -1,4 +1,5 @@
 import P from '$lib/api/pokeapi'
+import games from '$lib/data/games.json'
 import leaders from '$lib/data/leaders.json'
 
 import { map, compose, prop, path, pick, evolve, applySpec } from 'ramda'
@@ -57,8 +58,10 @@ const toPokemon = applySpec({
 
 export async function get ({ params, query }) {
   const { gen, id } = params
+  const game = games[gen]
+
   const starter = query.get('starter')
-  const leader = path([gen, id], leaders)
+  const leader = path([game.lid || game.pid, id], leaders)
 
   if (!leader) return
 

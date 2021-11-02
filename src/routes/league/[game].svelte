@@ -1,11 +1,14 @@
 <script context="module">
-  import games from '$lib/data/leaders.json'
-  import Games from '$lib/data/games.json'
+  import leaders from '$lib/data/leaders.json'
+  import games from '$lib/data/games.json'
 
   export async function load({ page, fetch }) {
-    const { pid } = Games[page.params.game]
-    const { leaders, path } = games.progressions[pid]
-    return { props: { game: leaders, path } }
+    const { pid } = games[page.params.game]
+    const path = Object.keys(leaders[pid])
+
+    console.log({ game: page.params.game, path })
+
+    return { props: { game: pid, path } }
   }
 </script>
 

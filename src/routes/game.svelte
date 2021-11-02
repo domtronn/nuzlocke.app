@@ -11,11 +11,12 @@
   import Icon from 'svelte-icons-pack'
   import Box from 'svelte-icons-pack/bi/BiSolidPackage'
 
-  import Games from '$lib/data/progression.json'
+  import Progress from '$lib/data/progression.json'
+  import Games from '$lib/data/games.json'
   import Colors from '$lib/data/colors.json'
   import { activeGame, savedGames, getGame, patch, read, parse } from '$lib/store'
 
-  let gameStore, game
+  let gameStore, gameKey
   let loading = true
   let starter = 'fire'
 
@@ -27,20 +28,18 @@
     gameStore.subscribe(read(game => starter = game.__starter))
 
     savedGames.subscribe(parse(games => {
-      game = games[gameKey]
+      gameKey = games[gameId].game
       loading = !browser
     }))
   })
 
   const setstarter = (e) => {
-    console.log(e.detail.value)
     starter = e.detail.value
     gameStore.update(patch({ __starter: e.detail.value }))
   }
-
 </script>
 
-{#if loading || !game}
+{#if loading || !gameKey}
   <Loader />
 {:else}
   <div transition:fade class="container mx-auto">
@@ -83,7 +82,7 @@
 
           </div>
 
-          {#each game.progression as p, i}
+          {#each Progress[Games[gameKey].pid] as p, i}
               {#if p.type === 'route' && [0, 1].includes(filter)}
                 {#if gameStore}
                   <span transition:fade>
@@ -96,7 +95,7 @@
                   {/if}
                 {:else if p.type === 'gym' && [0, 2].includes(filter)}
                   <span transition:fade>
-                    <GymCard game='swsh' starter={starter} id={p.value} location={p.name} />
+                    <GymCard game={gameKey} starter={starter} id={p.value} location={p.name} />
                   </span >
                 {/if}
           {/each}
