@@ -1,21 +1,19 @@
 <script context="module">
   import games from '$lib/data/leaders.json'
+  import Games from '$lib/data/games.json'
 
   export async function load({ page, fetch }) {
-    const { leaders, path } = games.progressions[page.params.game]
-    const data = await Promise.all(
-      path.map(id => fetch(`/leader/${leaders}/${id}.json`).then(res => res.json()))
-    )
-
-    return { props: { data } }
+    const { pid } = Games[page.params.game]
+    const { leaders, path } = games.progressions[pid]
+    return { props: { game: leaders, path } }
   }
 </script>
 
 <script>
-  export let data
+  export let game, path
   import GymCard from '$lib/components/gym-card.svelte'
 </script>
 
-{#each data as gym}
-  <GymCard {...gym} />
+{#each path as gym}
+  <GymCard game={game} id={gym} />
 {/each}

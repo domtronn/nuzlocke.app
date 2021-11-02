@@ -4,6 +4,7 @@
 
   import Pokemon from 'pokemon-assets/assets/data/pokemon.json'
   import PokemonCard from '$lib/components/pokemon-card.svelte'
+  import GameHeading from '$lib/components/game-heading.svelte'
 
   import TypeBadge from '$lib/components/type-badge.svelte'
   import { activeGame, getGame, read } from '$lib/store'
@@ -47,9 +48,9 @@
 </script>
 
 <div transition:fade class='container mx-auto'>
-  <div class='flex justify-center'>
-    <main role='main' class='w-full sm:w-2/3 md:w-3/4 grid grid-cols-3  md:grid-cols-8 gap-x-4 gap-y-4 md:gap-y-8 my-10 px-4 overflow-hidden'>
-
+  <div class='flex flex-col mx-auto items-center justify-center'>
+    <main role='main' class='w-full sm:w-2/3 md:w-3/4 grid grid-cols-3 md:grid-cols-8 gap-x-4 gap-y-4 md:gap-y-8 py-6 px-4 md:px-8 overflow-hidden'>
+      <GameHeading className='col-span-8' />
       <div class='grid grid-cols-5 gap-x-2 gap-y-2 col-span-3'>
         {#each types as t}
           {#if typeCounts[t] > 0}
@@ -69,7 +70,7 @@
       <div class='grid grid-cols-3 gap-2 col-span-2'>
         {#each stats as s}
           <label
-            class='transition inline-flex text-center text-xs px-2 py-1 w-full text-gray-400 border-gray-300 font-medium border shadow-sm rounded-lg inline-flex'
+            class='transition cursor-pointer inline-flex text-center text-xs px-2 py-1 w-full text-gray-400 border-gray-300 font-medium border shadow-sm rounded-lg inline-flex'
             class:border-black={stat === s}
             class:text-black={stat === s}
             >

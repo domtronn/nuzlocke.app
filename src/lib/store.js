@@ -43,7 +43,7 @@ export const createGame = (name, game) => (payload) => {
     : payload.split(',').filter(i => i.length)
   const gameData = `${id}|${+new Date()}|${name}|${game}`
 
-  localStorage.setItem(IDS.game(id), JSON.stringify({}))
+  localStorage.setItem(IDS.game(id), '{}')
   activeGame.set(id)
 
   console.log(`Creating new game for ${name} ${game}`)

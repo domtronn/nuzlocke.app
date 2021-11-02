@@ -25,7 +25,6 @@
   $: disabled = !gameName.length || !selected
 </script>
 
-
 <ScreenContainer title='New Nuzlocke' icon={File}>
   {#if selected}
     <p>

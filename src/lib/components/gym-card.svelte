@@ -2,7 +2,7 @@
   export let game, id, location = '', starter = ''
   let pokemon = [], name = '', speciality = '', img
 
-  import { onMount } from 'svelte'
+  import { browser } from '$app/env'
   import { fade } from 'svelte/transition'
 
   import Pokemon from '$lib/components/pokemon-card.svelte'
@@ -16,15 +16,19 @@
   let loading = true
 
   const fetchData = async (starter) => {
-    const res = await fetch(`/leader/${game}/${id}.json?starter=${starter}`)
-    const data = await res.json()
+    if (!browser) return
+    try {
+      const res = await fetch(`/leader/${game}/${id}.json?starter=${starter}`)
+      const data = await res.json()
 
-    img = data.img
-    pokemon = data.pokemon
-    name = data.name
-    speciality = data.speciality
-
-    loading = false
+      img = data.img
+      pokemon = data.pokemon
+      name = data.name
+      speciality = data.speciality
+      loading = false
+    } catch (e) {
+      console.error(e)
+    }
   }
 
   $: (async () => await fetchData(starter))()
@@ -92,8 +96,8 @@
       >
 
       {#if img}
-        <div class='overflow-hidden h-16 w-24 text-center -ml-4'>
-          <img class='inline h-32' src={img} alt='Gym leader {name}' />
+        <div class='overflow-hidden max-h-16 w-20 text-center -ml-4'>
+          <img class='inline h-auto w-full' src={img} alt='Gym leader {name}' />
         </div>
       {/if}
 
@@ -112,7 +116,7 @@
 
         {#if loading}
           <div class='h-4 w-48 animate-pulse bg-gray-400 rounded-md' />
-        {:else}
+        {:else if location}
           <h2 class='h-4 text-md font-medium'>
             <span>{location}</span>
           </h2>
@@ -134,7 +138,7 @@
     </span>
 
     <div slot='item' class='grid lg:grid-cols-2 md:grid-cols-2 mt-8 gap-x-6 gap-y-10'>
-      {#each pokemon as p (p.name)}
+      {#each pokemon as p, i (p.name + i)}
         <Pokemon {...p} maxStat={maxStat} />
       {/each}
     </div>

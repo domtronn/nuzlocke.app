@@ -23,7 +23,7 @@ const toMoves = map(compose(
       .map(({ short_effect }) => short_effect.replace('$effect_chance', effect_chance)).join('\n')
   }),
   ({ names, ...rest }) => ({ ...rest, name: names }),
-  pick(['names', 'power', 'pp', 'priority', 'accuracy', 'type', 'damage_class', 'effect_chance', 'effect_entries']),
+  pick(['names', 'power', 'priority', 'type', 'damage_class', 'effect_chance', 'effect_entries']),
   evolve({
     names: n => n.find(l => l.language.name === LANG).name,
     type: prop('name'),

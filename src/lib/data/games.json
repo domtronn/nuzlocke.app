@@ -14,7 +14,7 @@
   "pt": { "pid": "pt", "logo": "/logos/platinum-logo.png", "title": "Platinum", "gen": "IV", "supported": false  },
   "d": { "pid": "dp", "logo": "/logos/diamond-logo.png", "title": "Diamond", "gen": "IV", "supported": false  },
   "p": { "pid": "dp", "logo": "/logos/pearl-logo.png", "title": "Pearl", "gen": "IV", "supported": false  },
-  "em": { "pid": "em", "logo": "/logos/emerald-logo.png", "title": "Emerald", "gen": "III", "supported": false  },
+  "em": { "pid": "em", "logo": "/logos/emerald-logo.png", "title": "Emerald", "gen": "III", "supported": true  },
   "r": { "pid": "rs", "logo": "/logos/ruby-logo.png", "title": "Ruby", "gen": "III", "supported": false  },
   "s": { "pid": "rs", "logo": "/logos/sapphire-logo.png", "title": "Sapphire", "gen": "III", "supported": false  },
   "or": { "pid": "oras", "logo": "/logos/omega-ruby-logo.png", "title": "Omega Ruby", "gen": "III", "supported": false  },
