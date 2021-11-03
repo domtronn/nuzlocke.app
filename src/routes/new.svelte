@@ -21,6 +21,8 @@
   let selected
   const handleSelect = id => _ => selected === id ? selected = null : selected = id
 
+  let gen = 'All'
+
   $: selectedGame = Games[selected]
   $: disabled = !gameName.length || !selected
 </script>
@@ -53,12 +55,35 @@
 
   </div>
 
+  <div class='flex flex-row gap-x-2'>
+    {#each ['All'].concat(['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII']) as val, i}
+      <label
+        class='cursor-pointer transition-colors border-b-2 rounded-none text-md'
+        class:border-transparent={gen !== val}
+        class:border-black={gen === val}
+        class:text-black={gen === val}
+        class:text-gray-400={gen !== val}
+        class:hover:border-gray-300={gen !== val}
+      >
+        <input type=radio bind:group={gen} name='gen' value={val} />
+        {#if i !== 0}
+          <span class='hidden md:inline-block'>
+            Gen
+          </span>
+        {/if}
+        {val}
+      </label>
+    {/each}
+
+  </div>
+
   <div class='grid items-center justify-center gap-x-4 gap-y-6 grid-cols-3 md:grid-cols-4'>
+
     {#each Object.entries(Games) as [id, game]}
-      {#if game.logo}
+      {#if game.logo && (gen === 'All' || game.gen === gen) }
         <span class='w-full text-center'>
           <img
-            class='w-24 md:w-32 mx-auto hover:grayscale-0 cursor-pointer'
+            class='w-auto md:w-32 mx-auto hover:grayscale-0 cursor-pointer'
             class:grayscale={(selected && selected !== id) || hoverActive}
             class:grayscale-0={selected === id}
             on:click={handleSelect(id)}
@@ -74,6 +99,7 @@
 </ScreenContainer>
 
 <style>
+  label > input { display: none; }
   img {
     transition-duration: 250ms !important;
   }
