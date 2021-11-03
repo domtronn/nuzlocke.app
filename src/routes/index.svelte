@@ -51,7 +51,7 @@
   </span>
 
   <div class='py-7 px-6 sm:px-4 overflow-hidden mt-10'>
-    <PixelatedContainer className='font-mono relative h-32 max-w-md mx-auto flex sm:flex-row justify-evenly items-center gap-y-2 text-3xl py-2 w-auto'>
+    <PixelatedContainer className='font-mono relative max-h-48 max-w-md mx-auto flex sm:flex-row justify-evenly items-center gap-y-2 text-3xl py-8 h-full w-auto'>
 
       <div class='font-bold flex flex-col'>
 
