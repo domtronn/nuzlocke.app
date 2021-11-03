@@ -109,8 +109,8 @@
   }
 }
 
-.pkm { background-image: url(../node_modules/pokemon-assets/assets/img/pokemon.png) !important; }
-.pkitem { background-image: url(../node_modules/pokemon-assets/assets/img/items.png) !important; }
+.pkm { background-image: url(/assets/pokemon.webp) !important; }
+.pkitem { background-image: url(/assets/items.webp) !important; }
 
 .has-status .ac__input-container {
   padding-left: 32px !important;
