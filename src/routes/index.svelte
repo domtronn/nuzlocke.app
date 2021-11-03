@@ -44,7 +44,7 @@
       height=104
       class:grayscale={!hovering}
       alt='Pokemon brand logo'
-      src='/pkmn-logo.png'
+      src='/pkmn-logo.webp'
       class='transition h-24 md:h-32 -translate-x-2 translate-y-2 mx-auto'
     />
     <h1 class='font-mono text-4xl'>Nuzlocke tracker</h1>
