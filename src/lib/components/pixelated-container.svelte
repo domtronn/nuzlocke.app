@@ -1,5 +1,5 @@
 <script>
-  export let className, width = '.3rem', border = 'black'
+  export let className, width = '.2rem', border = 'black'
 </script>
 
 <div class='pixel-border {className}' style='--pixel: {width}; --pixel-border: {border}; --pixel-border-3: {border};'>
