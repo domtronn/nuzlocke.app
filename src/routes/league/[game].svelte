@@ -1,10 +1,10 @@
 <script context="module">
-  import leaders from '$lib/data/leaders.json'
+  import league from '$lib/data/league.json'
   import games from '$lib/data/games.json'
 
   export async function load({ page, fetch }) {
     const { pid } = games[page.params.game]
-    const path = Object.keys(leaders[pid])
+    const path = Object.keys(league[pid])
 
     console.log({ game: page.params.game, path })
 
