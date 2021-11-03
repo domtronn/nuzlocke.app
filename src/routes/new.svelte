@@ -53,7 +53,7 @@
 
   </div>
 
-  <div class='grid items-center justify-center gap-x-4 gap-y-6 grid-cols-4'>
+  <div class='grid items-center justify-center gap-x-4 gap-y-6 grid-cols-3 md:grid-cols-4'>
     {#each Object.entries(Games) as [id, game]}
       {#if game.logo}
         <span class='w-full text-center'>
@@ -65,8 +65,8 @@
             on:mouseenter={togglehover}
             on:mouseleave={togglehover}
             src={game.logo}
-            alt={game.name}
-            />
+            alt={'Pokémon ' + game.title + ' logo'}
+          />
         </span>
       {/if}
     {/each}

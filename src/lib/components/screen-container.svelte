@@ -4,7 +4,7 @@
   import Icon from 'svelte-icons-pack'
 </script>
 
-<div class='container mx-auto h-screen flex flex-col justify-center'>
+<div class='container mx-auto my-12 sm:my-0 md:h-screen flex flex-col justify-center'>
   <slot name='title' />
   <main class='w-full sm:w-auto px-6 flex flex-col mx-auto'>
     <PixelatedContainer className='px-4 py-2 flex flex-col gap-y-4 {className}'>
