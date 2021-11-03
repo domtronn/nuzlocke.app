@@ -4,3 +4,5 @@ node_modules
 /package
 .vercel_build_output
 .vercel
+/static/**/*.png
+/static/*.png
