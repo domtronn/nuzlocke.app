@@ -21,7 +21,7 @@
   let starter = 'fire'
 
   let filter = 0
-  const filters = [ 'Combined', 'Nuzlocke route', 'Gyms' ]
+  const filters = [ 'Complete Nuzlocke', 'Route', 'Bosses' ]
 
   activeGame.subscribe(gameId => {
     if (browser && !gameId) return window.location = '/'

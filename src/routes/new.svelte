@@ -83,7 +83,7 @@
       {#if game.logo && (gen === 'All' || game.gen === gen) }
         <span class='w-full text-center'>
           <img
-            class='w-auto md:w-32 mx-auto hover:grayscale-0 cursor-pointer'
+            class='w-auto md:w-32 mx-auto transition hover:grayscale-0 cursor-pointer'
             class:grayscale={(selected && selected !== id) || hoverActive}
             class:grayscale-0={selected === id}
             on:click={handleSelect(id)}

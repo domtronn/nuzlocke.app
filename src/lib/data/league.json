@@ -1303,6 +1303,477 @@
         }
       ]
     },
+    "r1": {
+      "name": "Hop",
+      "speciality": "",
+      "img": "/leaders/hop.webp",
+      "pokemon": [
+        {
+          "name": "wooloo",
+          "level": "3",
+          "moves": [
+            "tackle"
+          ],
+          "ability": "run-away"
+        },
+        {
+          "name": "sobble",
+          "level": "5",
+          "moves": [
+            "pound",
+            "growl"
+          ],
+          "ability": "torrent",
+          "starter": "grass"
+        },
+        {
+          "name": "grookey",
+          "level": "5",
+          "moves": [
+            "scratch",
+            "growl"
+          ],
+          "ability": "overgrow",
+          "starter": "fire"
+        },
+        {
+          "name": "scorbunny",
+          "level": "5",
+          "moves": [
+            "tackle",
+            "growl"
+          ],
+          "ability": "blaze",
+          "starter": "water"
+        }
+      ]
+    },
+    "r2": {
+      "name": "Hop",
+      "speciality": "",
+      "img": "/leaders/hop.webp",
+      "pokemon": [
+        {
+          "name": "wooloo",
+          "level": "6",
+          "moves": [
+            "tackle",
+            "growl"
+          ],
+          "ability": "run-away"
+        },
+        {
+          "name": "rookidee",
+          "level": "5",
+          "moves": [
+            "leer",
+            "peck"
+          ],
+          "ability": "unnerve"
+        },
+        {
+          "name": "sobble",
+          "level": "8",
+          "moves": [
+            "pound",
+            "growl",
+            "water-gun"
+          ],
+          "ability": "torrent",
+          "starter": "grass"
+        },
+        {
+          "name": "grookey",
+          "level": "8",
+          "moves": [
+            "scratch",
+            "growl",
+            "branch-poke"
+          ],
+          "ability": "overgrow",
+          "starter": "fire"
+        },
+        {
+          "name": "scorbunny",
+          "level": "8",
+          "moves": [
+            "tackle",
+            "growl",
+            "ember"
+          ],
+          "ability": "blaze",
+          "starter": "water"
+        }
+      ]
+    },
+    "r3": {
+      "name": "Hop",
+      "speciality": "",
+      "img": "/leaders/hop.webp",
+      "pokemon": [
+        {
+          "name": "wooloo",
+          "level": "11",
+          "moves": [
+            "tackle",
+            "growl"
+          ],
+          "ability": "run-away"
+        },
+        {
+          "name": "rookidee",
+          "level": "12",
+          "moves": [
+            "leer",
+            "peck"
+          ],
+          "ability": "unnerve"
+        },
+        {
+          "name": "sobble",
+          "level": "14",
+          "moves": [
+            "pound",
+            "growl",
+            "water-gun",
+            "bind"
+          ],
+          "ability": "torrent",
+          "starter": "grass"
+        },
+        {
+          "name": "grookey",
+          "level": "14",
+          "moves": [
+            "scratch",
+            "growl",
+            "branch-poke",
+            "taunt"
+          ],
+          "ability": "overgrow",
+          "starter": "fire"
+        },
+        {
+          "name": "scorbunny",
+          "level": "14",
+          "moves": [
+            "tackle",
+            "growl",
+            "ember",
+            "quick-attack"
+          ],
+          "ability": "blaze",
+          "starter": "water"
+        }
+      ]
+    },
+    "r4": {
+      "name": "Hop",
+      "speciality": "",
+      "img": "/leaders/hop.webp",
+      "pokemon": [
+        {
+          "name": "wooloo",
+          "level": "18",
+          "moves": [
+            "tackle",
+            "growl"
+          ],
+          "ability": "run-away"
+        },
+        {
+          "name": "corvisquire",
+          "level": "19",
+          "moves": [
+            "leer",
+            "peck",
+            "fury-attack",
+            "pluck"
+          ],
+          "ability": "unnerve"
+        },
+        {
+          "name": "drizzile",
+          "level": "21",
+          "moves": [
+            "round",
+            "growl",
+            "water-pulse",
+            "bind"
+          ],
+          "ability": "torrent",
+          "starter": "grass"
+        },
+        {
+          "name": "thwackey",
+          "level": "21",
+          "moves": [
+            "round",
+            "razor-leaf",
+            "double-hit",
+            "screech"
+          ],
+          "ability": "overgrow",
+          "starter": "fire"
+        },
+        {
+          "name": "raboot",
+          "level": "21",
+          "moves": [
+            "round",
+            "growl",
+            "double-kick",
+            "flame-charge"
+          ],
+          "ability": "blaze",
+          "starter": "water"
+        }
+      ]
+    },
+    "r5": {
+      "name": "Hop",
+      "speciality": "",
+      "img": "/leaders/hop.webp",
+      "pokemon": [
+        {
+          "name": "cramorant",
+          "level": "28",
+          "moves": [
+            "dive",
+            "pluck",
+            "fury-attack"
+          ],
+          "ability": "gulp-missile"
+        },
+        {
+          "name": "toxel",
+          "level": "29",
+          "moves": [
+            "tearful-look",
+            "nuzzle",
+            "flail",
+            "acid"
+          ],
+          "ability": "static"
+        },
+        {
+          "name": "silicobra",
+          "level": "30",
+          "moves": [
+            "glare",
+            "dig",
+            "brutal-swing"
+          ],
+          "ability": "shed-skin"
+        },
+        {
+          "name": "drizzile",
+          "level": "33",
+          "moves": [
+            "water-pulse",
+            "sucker-punch",
+            "round",
+            "tearful-look"
+          ],
+          "ability": "torrent",
+          "starter": "grass"
+        },
+        {
+          "name": "thwackey",
+          "level": "33",
+          "moves": [
+            "knock-off",
+            "razor-leaf",
+            "screech",
+            "round"
+          ],
+          "ability": "overgrow",
+          "starter": "fire"
+        },
+        {
+          "name": "raboot",
+          "level": "33",
+          "moves": [
+            "flame-charge",
+            "agility",
+            "round",
+            "double-kick"
+          ],
+          "ability": "blaze",
+          "starter": "water"
+        }
+      ]
+    },
+    "r6": {
+      "name": "Hop",
+      "speciality": "",
+      "img": "/leaders/hop.webp",
+      "pokemon": [
+        {
+          "name": "trevenant",
+          "level": "34",
+          "moves": [
+            "horn-leech",
+            "shadow-claw",
+            "confuse-ray"
+          ],
+          "ability": "natural-cure"
+        },
+        {
+          "name": "heatmor",
+          "level": "34",
+          "moves": [
+            "fire-lash",
+            "bug-bite",
+            "slash",
+            "lick"
+          ],
+          "ability": "flash-fire"
+        },
+        {
+          "name": "snorlax",
+          "level": "35",
+          "moves": [
+            "body-slam",
+            "stockpile",
+            "heavy-slam"
+          ],
+          "ability": "thick-fat"
+        },
+        {
+          "name": "boltund",
+          "level": "35",
+          "moves": [
+            "spark",
+            "crunch",
+            "roar",
+            "nuzzle"
+          ],
+          "ability": "strong-jaw"
+        },
+        {
+          "name": "inteleon",
+          "level": "37",
+          "moves": [
+            "snipe-shot",
+            "sucker-punch",
+            "tearful-look",
+            "whirlpool"
+          ],
+          "ability": "torrent",
+          "starter": "grass"
+        },
+        {
+          "name": "rillaboom",
+          "level": "37",
+          "moves": [
+            "drum-beating",
+            "knock-off",
+            "slam",
+            "brutal-swing"
+          ],
+          "ability": "overgrow",
+          "starter": "fire"
+        },
+        {
+          "name": "cinderace",
+          "level": "37",
+          "moves": [
+            "pyro-ball",
+            "headbutt",
+            "acrobatics",
+            "agility"
+          ],
+          "ability": "blaze",
+          "starter": "water"
+        }
+      ]
+    },
+    "r7": {
+      "name": "Hop",
+      "speciality": "",
+      "img": "/leaders/hop.webp",
+      "pokemon": [
+        {
+          "name": "dubwool",
+          "level": "40",
+          "moves": [
+            "growl",
+            "defense-curl",
+            "double-kick",
+            "take-down"
+          ],
+          "ability": "steadfast"
+        },
+        {
+          "name": "corviknight",
+          "level": "40",
+          "moves": [
+            "fury-attack",
+            "pluck",
+            "scary-face",
+            "drill-peck"
+          ],
+          "ability": "unnerve"
+        },
+        {
+          "name": "pincurchin",
+          "level": "39",
+          "moves": [
+            "spark",
+            "bubble-beam",
+            "curse"
+          ],
+          "ability": "lightning-rod"
+        },
+        {
+          "name": "snorlax",
+          "level": "39",
+          "moves": [
+            "crunch",
+            "heavy-slam",
+            "body-slam"
+          ],
+          "ability": "thick-fat"
+        },
+        {
+          "name": "inteleon",
+          "level": "41",
+          "moves": [
+            "tearful-look",
+            "sucker-punch",
+            "snipe-shot",
+            "liquidation"
+          ],
+          "ability": "torrent",
+          "starter": "grass"
+        },
+        {
+          "name": "rillaboom",
+          "level": "41",
+          "moves": [
+            "double-hit",
+            "knock-off",
+            "drum-beating",
+            "brick-break"
+          ],
+          "ability": "overgrow",
+          "starter": "fire"
+        },
+        {
+          "name": "cinderace",
+          "level": "41",
+          "moves": [
+            "double-kick",
+            "pyro-ball",
+            "counter",
+            "mega-kick"
+          ],
+          "ability": "blaze",
+          "starter": "water"
+        }
+      ]
+    },
     "4a": {
       "name": "Bea",
       "speciality": "fighting",

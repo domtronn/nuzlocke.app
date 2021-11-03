@@ -1102,6 +1102,11 @@
       "name": "Starter"
     },
     {
+      "type": "gym",
+      "name": "Rival",
+      "value": "r1"
+    },
+    {
       "type": "route",
       "name": "Slumbering Weald"
     },
@@ -1116,6 +1121,11 @@
     {
       "type": "route",
       "name": "Route 2"
+    },
+    {
+      "type": "gym",
+      "name": "Rival",
+      "value": "r2"
     },
     {
       "type": "route",
@@ -1154,6 +1164,11 @@
       "name": "Motostoke"
     },
     {
+      "type": "gym",
+      "name": "Rival",
+      "value": "r3"
+    },
+    {
       "type": "route",
       "name": "Route 3"
     },
@@ -1173,6 +1188,11 @@
     {
       "type": "route",
       "name": "Route 5"
+    },
+    {
+      "type": "gym",
+      "name": "Rival",
+      "value": "r4"
     },
     {
       "type": "route",
@@ -1238,6 +1258,11 @@
     },
     {
       "type": "gym",
+      "name": "Rival",
+      "value": "r5"
+    },
+    {
+      "type": "gym",
       "name": "Stow-on-Side Gym",
       "value": "4a"
     },
@@ -1255,8 +1280,18 @@
       "name": "Router 7"
     },
     {
+      "type": "gym",
+      "name": "Rival",
+      "value": "r6"
+    },
+    {
       "type": "route",
       "name": "Route 8"
+    },
+    {
+      "type": "gym",
+      "name": "Rival",
+      "value": "r7"
     },
     {
       "type": "gym",
