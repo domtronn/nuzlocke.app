@@ -39,7 +39,14 @@
 <main class='container mx-auto h-screen flex flex-col justify-center'>
 
   <span class='mx-auto text-center'>
-    <img class:grayscale={!hovering} alt='Pokemon brand logo' src='/pkmn-logo.png' class='transition h-24 md:h-32 -translate-x-2 translate-y-2 mx-auto'/>
+    <img
+      width=325
+      height=128
+      class:grayscale={!hovering}
+      alt='Pokemon brand logo'
+      src='/pkmn-logo.png'
+      class='transition h-24 md:h-32 -translate-x-2 translate-y-2 mx-auto'
+    />
     <h1 class='font-mono text-4xl'>Nuzlocke tracker</h1>
   </span>
 
@@ -54,7 +61,7 @@
               Continue
             </button>
             <div class='flex flex-row group-hover:grayscale-0 grayscale items-center transition h-8 -mt-1 font-sans text-sm font-normal'>
-              <img class='w-8 h-8 mr-2' src='/assets/{active.game}.png' alt='{active.game} logo' />
+              <img width=auto height=32 class='w-8 h-8 mr-2' src='/assets/{active.game}.png' alt='{active.game} logo' />
               <span>{summary.available.length}</span>
               <PIcon className='transform scale-75 -ml-1' type='item' name='poke-ball' />
               <span>{summary.deceased.length}</span>
