@@ -112,3 +112,11 @@
 .has-status .ac__input-container {
   padding-left: 32px !important;
 }
+
+.pkm.shiny {
+  background-image: url(node_modules/pokemon-assets/assets/img/pokemon-shiny.png) !important;
+}
+
+.pkm {
+  background-image: url(node_modules/pokemon-assets/assets/img/pokemon.png) !important;
+}
