@@ -11,7 +11,7 @@
   import Icon from 'svelte-icons-pack'
   import Box from 'svelte-icons-pack/bi/BiSolidPackage'
 
-  import Progress from '$lib/data/progression.json'
+  import Routes from '$lib/data/routes.json'
   import Games from '$lib/data/games.json'
   import Colors from '$lib/data/colors.json'
   import { activeGame, savedGames, getGame, patch, read, parse } from '$lib/store'
@@ -82,7 +82,7 @@
 
           </div>
 
-          {#each Progress[Games[gameKey].pid] as p, i}
+          {#each Routes[Games[gameKey].pid] as p, i}
               {#if p.type === 'route' && [0, 1].includes(filter)}
                 {#if gameStore}
                   <span transition:fade>

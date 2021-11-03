@@ -12,7 +12,7 @@
 
 
 <span class='{className} inline-flex items-center -ml-4'>
-  <img src='/data/{game.game}.png' class='w-28 h-28' />
+  <img src='/data/{game.game}.png' class='h-28 mr-6' />
   <h1 class='text-3xl'>
     {game.name}
   </h1>

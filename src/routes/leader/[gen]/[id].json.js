@@ -1,6 +1,6 @@
 import P from '$lib/api/pokeapi'
 import games from '$lib/data/games.json'
-import leaders from '$lib/data/leaders.json'
+import leaders from '$lib/data/league.json'
 
 import { map, compose, prop, path, pick, evolve, applySpec } from 'ramda'
 
