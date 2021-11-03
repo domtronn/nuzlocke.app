@@ -8,6 +8,7 @@
       game = games[id]
     }))
   })
+
 </script>
 
 

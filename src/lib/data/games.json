@@ -5,8 +5,8 @@
   "umoon": { "pid": "umoon", "lid": "usum", "logo": "/logos/ultra-moon-logo.webp", "title": "Ultra Moon", "gen": "VII", "supported": false  },
   "sun": { "pid": "sm", "lid": "sm", "logo": "/logos/sun-logo.webp", "title": "Sun", "gen": "VII", "supported": false  },
   "moon": { "pid": "moon", "lid": "sm", "logo": "/logos/moon-logo.webp", "title": "Moon", "gen": "VII", "supported": false  },
-  "x": { "pid": "xy", "logo": "/logos/x-logo.webp", "title": "X", "gen": "VI", "supported": false  },
-  "y": { "pid": "xy", "logo": "/logos/y-logo.webp", "title": "Y", "gen": "VI", "supported": false  },
+  "x": { "pid": "xy", "logo": "/logos/x-logo.webp", "title": "X", "gen": "VI", "supported": false },
+  "y": { "pid": "xy", "logo": "/logos/y-logo.webp", "title": "Y", "gen": "VI", "supported": false },
   "bl": { "pid": "bw", "logo": "/logos/black-logo.webp", "title": "Black", "gen": "V", "supported": false  },
   "wh": { "pid": "bw", "logo": "/logos/white-logo.webp", "title": "White", "gen": "V", "supported": false  },
   "bl2": { "pid": "b2w2", "logo": "/logos/black-2-logo.webp", "title": "Black 2", "gen": "V", "supported": false  },
@@ -25,7 +25,7 @@
   "s": { "pid": "gs", "title": "Silver", "gen": "II", "supported": false  },
   "fr": { "pid": "frlg", "logo": "/logos/fire-red-logo.webp", "title": "Fire Red", "gen": "I", "supported": false  },
   "lg": { "pid": "frlg", "logo": "/logos/leaf-green-logo.webp", "title": "Leaf Green", "gen": "I", "supported": false  },
-  "y": { "pid": "y", "title": "Yellow", "gen": "I", "supported": false  },
+  "ye": { "pid": "y", "title": "Yellow", "gen": "I", "supported": false  },
   "r": { "pid": "rb", "title": "Red", "gen": "I", "supported": false  },
   "b": { "pid": "rb", "title": "Blue", "gen": "I", "supported": false  }
 }

@@ -30,7 +30,7 @@
     gameStore.subscribe(read(game => starter = game.__starter))
 
     savedGames.subscribe(parse(games => {
-      gameKey = games[gameId].game
+      gameKey = games[gameId]?.game
       loading = !browser
     }))
   })
