@@ -10,6 +10,7 @@
   import Label from '$lib/components/label.svelte'
   import Accordion from '$lib/components/accordion.svelte'
 
+  import PIcon from '$lib/components/pokemon-icon.svelte'
   import Icon from 'svelte-icons-pack'
   import Info from 'svelte-icons-pack/ri/RiEditorAsterisk'
 
@@ -93,7 +94,7 @@
     <span
       slot='heading'
       class='text-left inline-flex gap-x-2 items-center'
-      >
+    >
 
       {#if img}
         <div class='overflow-hidden max-h-16 w-20 text-center -ml-4 hidden md:block'>
@@ -128,6 +129,11 @@
           <div class='h-14 w-14 animate-pulse bg-gray-400 rounded-md' />
           <div class='h-14 w-14 animate-pulse bg-gray-400 rounded-md' />
         {:else}
+          <span class='items-center gap-x-2 hidden lg:inline-flex'>
+            {#each pokemon as p, i (p.name + i)}
+              <PIcon name={p.name} className='-m-4 z-10 relative' />
+            {/each}
+          </span>
           <span transition:fade data-tooltip={msg.join('\n')}>
             <Icon src={Info} className="fill-current text-gray-400" />
           </span>
