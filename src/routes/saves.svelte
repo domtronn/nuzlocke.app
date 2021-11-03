@@ -20,7 +20,7 @@
 </script>
 
 <ScreenContainer>
-  <span class='flex justify-between items-center gap-x-24'>
+  <span class='flex justify-between items-center md:gap-x-24'>
     <h1 class='text-2xl'>Load game</h1>
     <Icon src={Floppy} size='1.4em' />
   </span>

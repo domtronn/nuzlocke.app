@@ -76,6 +76,7 @@ export const parse = (cb = i => {}) => (gameData) => {
   cb(
     (gameData || '')
       .split(',')
+      .filter(i => i.length)
       .map(i => i.split('|'))
       .reduce((acc, [id, created, name, game]) => ({
         ...acc,
