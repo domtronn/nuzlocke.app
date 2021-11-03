@@ -24,6 +24,8 @@
   const filters = [ 'Combined', 'Nuzlocke route', 'Gyms' ]
 
   activeGame.subscribe(gameId => {
+    if (browser && !gameId) return window.location = '/'
+
     gameStore = getGame(gameId)
     gameStore.subscribe(read(game => starter = game.__starter))
 

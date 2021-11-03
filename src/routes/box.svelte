@@ -1,4 +1,5 @@
 <script>
+  import { browser } from '$app/env'
   import { fade, slide } from 'svelte/transition'
   import { flip } from 'svelte/animate'
 
@@ -17,6 +18,8 @@
   let loading = true
   let ogbox = [], box = []
   activeGame.subscribe(gameId => {
+    if (browser && !gameId) return window.location = '/'
+
     getGame(gameId).subscribe(read(data => {
       loading = false
       ogbox = box = Object
