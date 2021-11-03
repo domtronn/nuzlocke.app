@@ -40,8 +40,8 @@
 
   <span class='mx-auto text-center'>
     <img
-      width=325
-      height=128
+      width=264
+      height=104
       class:grayscale={!hovering}
       alt='Pokemon brand logo'
       src='/pkmn-logo.png'
@@ -55,7 +55,7 @@
 
       <div class='font-bold flex flex-col'>
 
-        {#if active.game}
+        {#if active && active.game}
           <a class='mb-1 group' on:mouseenter={toggleHover} on:mouseleave={toggleHover} href="/game">
             <button class='tracking-widest group-hover:drop-shadow-text group-hover:text-pink-500'>
               Continue
