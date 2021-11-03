@@ -27,9 +27,14 @@
     />
     <meta name="twitter:image" content="/twitter.png" />
 
-    <link rel="preload" href="/node_modules/pokemon-assets/assets/css/pokemon.css" as="style" onload="this.onload=null;this.rel='stylesheet'" >
+    <link rel="preload" href="/assets/pokemon.css" as="style" onload="this.onload=null;this.rel='stylesheet'" >
     <noscript>
-      <link rel="stylesheet" href="/node_modules/pokemon-assets/assets/css/pokemon.css" >
+      <link rel="stylesheet" href="/assets/pokemon.css" >
+    </noscript>
+
+    <link rel="preload" href="/assets/items.css" as="style" onload="this.onload=null;this.rel='stylesheet'" >
+    <noscript>
+      <link rel="stylesheet" href="/assets/items.css" >
     </noscript>
 
     %svelte.head%

@@ -1,6 +1,5 @@
 <script>
   import '../app.css'
-  import 'pokemon-assets/assets/css/items.css'
 </script>
 
 <style global lang="postcss">
@@ -19,7 +18,6 @@
     }
 
     .pkm {
-      background-image: url(node_modules/pokemon-assets/assets/img/pokemon.png);
       display: inline-block;
       vertical-align: middle;
       image-rendering: crisp-edges;

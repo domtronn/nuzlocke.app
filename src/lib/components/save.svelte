@@ -30,7 +30,7 @@
     <div out:fade on:click={onclick} class='group flex flex-col sm:flex-row gap-x-4 items-start md:items-center'>
         <img
           alt='{name} logo'
-          src='/data/{game}.png'
+          src='/assets/{game}.png'
           class='w-16 group-hover:grayscale-0 grayscale transition hidden md:block'
           />
 
