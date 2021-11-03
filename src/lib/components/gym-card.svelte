@@ -96,7 +96,7 @@
       >
 
       {#if img}
-        <div class='overflow-hidden max-h-16 w-20 text-center -ml-4'>
+        <div class='overflow-hidden max-h-16 w-20 text-center -ml-4 hidden md:block'>
           <img class='inline h-auto w-full' src={img} alt='Gym leader {name}' />
         </div>
       {/if}

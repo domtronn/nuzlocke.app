@@ -49,26 +49,26 @@
 
           <GameHeading />
 
-          <div class='flex flex-row justify-between'>
+          <div class='flex gap-y-4 flex-wrap flex-row justify-between'>
             <div class='flex flex-row items-center gap-x-2'>
             <p>Starter type</p>
               <StarterType on:select={setstarter} starter={starter} />
             </div>
 
-          <div class='flex flex-row gap-x-4'>
-            {#each filters as f, i}
-              <label
-                class='cursor-pointer transition-colors border-b-2 rounded-none text-md'
-                class:border-transparent={filter !== i}
-                class:border-black={filter === i}
-                class:text-black={filter === i}
-                class:text-gray-400={filter !== i}
-                class:hover:border-gray-300={filter !== i}
-                >
-                <input type=radio bind:group={filter} name='filter' value={i} />
-                {f}
-              </label>
-            {/each}
+            <div class='order-4 md:order-none flex flex-row gap-x-4'>
+              {#each filters as f, i}
+                <label
+                  class='cursor-pointer transition-colors border-b-2 rounded-none text-md'
+                  class:border-transparent={filter !== i}
+                  class:border-black={filter === i}
+                  class:text-black={filter === i}
+                  class:text-gray-400={filter !== i}
+                  class:hover:border-gray-300={filter !== i}
+                  >
+                  <input type=radio bind:group={filter} name='filter' value={i} />
+                  {f}
+                </label>
+              {/each}
           </div>
 
           <div>

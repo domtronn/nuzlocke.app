@@ -3,10 +3,6 @@
 </script>
 
 <style global lang="postcss">
-    @tailwind base;
-    @tailwind components;
-    @tailwind utilities;
-
     .pkm-wrapper {
       width: 67px;
       height: 56px;
