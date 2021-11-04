@@ -91,7 +91,7 @@
 
     <AutoComplete
       hideArrow
-      delay={200}
+      delay={150}
       searchFunction={fetchItems}
       bind:selectedItem={selected}
       placeholder={selected ? selected.name : 'Encounter'}
