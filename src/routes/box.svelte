@@ -20,6 +20,7 @@
     try {
       const res = await fetch(`/pokemon.json?p=${pkmn.join(',')}`)
       const data = await res.json()
+      console.log(data)
       return data
     } catch (e) {
       console.error(e)
@@ -50,8 +51,7 @@
 
   const clear = () => stat = type = ''
   $: filter = (p) => !type || (Pokemon[p.pokemon]?.types || []).map(i => i.toLowerCase()).includes(type)
-
-  const typeCounts = types
+  $: typeCounts = types
     .reduce((acc, it) => ({
       ...acc,
       [it]: ogbox.filter(p => (Pokemon[p.pokemon]?.types || []).map(i => i.toLowerCase()).includes(it)).length
@@ -114,7 +114,7 @@
           </div>
         </div>
 
-        <div class='grid grid-cols-2 md:grid-cols-4 gap-x-4'>
+        <div class='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-4'>
           {#each box.filter(filter) as p (p.id)}
             <span
               animate:flip={{ duration: d => 10 * Math.sqrt(d) }}

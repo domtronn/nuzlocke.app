@@ -1,5 +1,5 @@
 <script>
-  export let sprite, name, types, level, moves, maxStat, held, ability, stats
+  export let sprite, name, types, level = '', moves, maxStat, held = '', ability = '', stats
 
   import { capitalise } from '$lib/utils/string'
 
