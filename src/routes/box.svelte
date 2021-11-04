@@ -4,7 +4,6 @@
   import { flip } from 'svelte/animate'
 
   import PokemonCard from '$lib/components/pokemon-card.svelte'
-  import GameHeading from '$lib/components/game-heading.svelte'
   import Loader from '$lib/components/loader.svelte'
 
   import TypeBadge from '$lib/components/type-badge.svelte'
@@ -73,8 +72,6 @@
     <div class='flex flex-col mx-auto items-center justify-center'>
       <main role='main' class='w-full sm:w-2/3 md:w-3/4 flex flex-col gap-y-4 py-6 px-4 md:px-8 overflow-hidden'>
 
-        <GameHeading className='col-span-8' />
-
         <div class='inline-flex flex-wrap flex-col sm:flex-row gap-y-2 gap-x-4 sm:items-start z-50'>
           <div class='grid grid-cols-6 w-full sm:w-auto sm:grid-cols-3 gap-2 sm:gap-2 col-span-2'>
             {#each stats as s}
@@ -82,6 +79,7 @@
                 class='transition cursor-pointer inline-flex text-center text-xs px-2 py-1 w-full text-gray-500 border-gray-400 font-medium border shadow-sm rounded-lg inline-flex'
                 class:border-black={stat === s}
                 class:text-black={stat === s}
+                class:bg-gray-200={stat === s}
                 >
                 <input type=radio bind:group={stat} name='sortable' value={s} />
                 <Icon className='text-xxs {s !== 'spa' ? 'fill-current' : ''} translate-y-1/2 -mt-0.5 mr-1'  src={StatIconMap[s]} />

@@ -2,7 +2,6 @@
   import { browser } from '$app/env'
   import { fade } from 'svelte/transition'
 
-  import GameHeading from '$lib/components/game-heading.svelte'
   import StarterType from '$lib/components/starter-type.svelte'
   import GymCard from '$lib/components/gym-card.svelte'
   import Loader from '$lib/components/loader.svelte'
@@ -49,14 +48,7 @@
       <main role="main" class="w-full sm:w-2/3 md:w-3/4 px-4 md:px-8 py-6 overflow-hidden">
         <div class='flex flex-col gap-y-4'>
 
-          <GameHeading />
-
-          <div class='flex gap-y-4 flex-wrap flex-row justify-between'>
-            <div class='flex flex-row items-center gap-x-2'>
-              <p>Starter type</p>
-              <StarterType on:select={setstarter} starter={starter} />
-            </div>
-
+          <div class='flex flex-row justify-between mb-6'>
             <div class='order-4 md:order-none flex flex-row gap-x-4'>
               {#each filters as f, i}
                 <label
@@ -73,15 +65,10 @@
               {/each}
             </div>
 
-            <div>
-              <a href='/box' >
-                <button class='text-lg inline-flex gap-x-1 items-center'>
-                  <Icon src={Box} size='1.2em' />
-                  Box
-                </button>
-              </a>
+            <div class='flex flex-row items-center gap-x-2'>
+              <p>Starter type</p>
+              <StarterType on:select={setstarter} starter={starter} />
             </div>
-
           </div>
 
           {#each Routes[Games[gameKey].pid] as p, i}

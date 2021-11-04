@@ -1,7 +1,9 @@
 <script>
   export let id = 25
 
-  import { fly } from 'svelte/transition'
+  import { fly, fade } from 'svelte/transition'
+  import { goto } from '$app/navigation'
+
   import { activeGame, savedGames, parse, getGame, read, summarise } from '$lib/store'
   import PixelatedContainer from '$lib/components/pixelated-container.svelte'
   import PIcon from '$lib/components/pokemon-icon.svelte'
@@ -27,9 +29,7 @@
       active = games[id]
     }))
 
-    getGame(id).subscribe(read(summarise(data =>
-      summary = data
-    )))
+    getGame(id).subscribe(read(summarise(data => summary = data)))
   })
 
   $: duration = Math.min(interval / 3, 1000)
@@ -56,7 +56,7 @@
       <div class='font-bold flex flex-col'>
 
         {#if active && active.game}
-          <a class='mb-1 group' on:mouseenter={toggleHover} on:mouseleave={toggleHover} href="/game">
+          <a class='mb-1 group' on:mouseenter={toggleHover} on:mouseleave={toggleHover} rel="external" href='/game'>
             <button class='tracking-widest group-hover:drop-shadow-text group-hover:text-pink-500'>
               Continue
             </button>
@@ -70,13 +70,13 @@
           </a>
         {/if}
 
-        <a href="/new">
+        <a rel="external" href="/new">
           <button class='tracking-widest hover:drop-shadow-text hover:text-yellow-300' on:mouseenter={toggleHover} on:mouseleave={toggleHover}>
             New Game
           </button>
         </a>
 
-        <a href="/saves">
+        <a rel="external" href="/saves">
           <button class='tracking-widest hover:drop-shadow-text hover:text-blue-400' on:mouseenter={toggleHover} on:mouseleave={toggleHover}>
             Load Game
           </button>

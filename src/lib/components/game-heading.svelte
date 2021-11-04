@@ -1,6 +1,11 @@
 <script>
   export let className = ''
   import { activeGame, savedGames, getGame, read, parse } from '$lib/store'
+  import { fade } from 'svelte/transition'
+  import { page } from '$app/stores'
+
+  let path = ''
+  page.subscribe(p => path = p.path)
 
   let game = {}
   activeGame.subscribe(id => {
@@ -9,11 +14,46 @@
     }))
   })
 
+  import Icon from 'svelte-icons-pack'
+  import Box from 'svelte-icons-pack/bi/BiPackage'
+  import Game from 'svelte-icons-pack/cg/CgGames'
+  import Home from 'svelte-icons-pack/ai/AiOutlineHome'
+
+  const pages = [
+    { name: 'Home', link: '/', icon: Home },
+    { name: 'Game', link: '/game', icon: Game },
+    { name: 'Box', link: '/box', icon: Box },
+  ]
+
 </script>
 
-<span class='{className} inline-flex items-center -ml-4'>
-  <img src='/assets/{game?.game}.png' alt={game?.game + ' logo'} class='h-28 mr-6' />
-  <h1 class='text-3xl'>
-    {game?.name}
-  </h1>
-</span>
+<nav class='container mx-auto mb-8'>
+  <div class="w-full sm:w-2/3 md:w-3/4 px-4 md:px-8 mx-auto flex justify-between">
+    <span class='{className} inline-flex items-center pt-4 -ml-2'>
+      {#if game?.game}
+        <img in:fade src='/assets/{game?.game}.png' alt={game?.game + ' logo'} width=48 class='h-auto mr-2' />
+        <h1 in:fade class='text-xl'>
+          {game?.name || ''}
+        </h1>
+      {/if}
+    </span>
+
+    <span class='inline-block'>
+      {#each pages as p}
+        <a
+          class='inline-flex items-center gap-x-1 border-black transition p-4'
+          class:border-b-2={p.link == path}
+          class:bg-gray-50={p.link == path}
+          class:cursor-default={p.link == path}
+          class:opacity-50={p.link !== path}
+          class:hover:opacity-100={p.link !== path}
+          class:cursor-pointer={p.link !== path}
+          href={p.link}
+          >
+          <Icon src={p.icon} />
+          {p.name}
+        </a>
+      {/each}
+    </span>
+  </div>
+</nav>

@@ -10,6 +10,8 @@
   import '../app.css'
   import { onMount } from 'svelte'
 
+  import GameHeading from '$lib/components/game-heading.svelte'
+
   const mountStyle = (src) => {
     if (document.createStyleSheet) document.createStyleSheet(src)
     else {
@@ -59,5 +61,9 @@
 <svelte:head>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </svelte:head>
+
+{#if ['/game', '/box'].includes(path) }
+  <GameHeading />
+{/if}
 
 <slot />
