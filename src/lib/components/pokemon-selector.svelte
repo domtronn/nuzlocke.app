@@ -1,9 +1,9 @@
 <script>
-  export let id, location, store
+  export let id, location, store, items
 
+  import { browser } from '$app/env'
   import { read, patch } from '$lib/store'
 
-  import Pokemon from 'pokemon-assets/assets/data/pokemon.json'
   import { NuzlockeStates } from '$lib/data/states'
 
   import Accordion from '$lib/components/accordion.svelte'
@@ -19,29 +19,43 @@
   let nickname
   let status
 
+  const fetchData = async (id) => {
+    if (!browser) return
+    try {
+      const res = await fetch(`/pokemon/${id}.json`)
+      const data = await res.json()
+      return data
+    } catch (e) {
+      console.error(e)
+    }
+  }
+
   let loading = true
   store.subscribe(read(data => {
-    loading = false
     const pkmn = data[location]
     if (!pkmn) return
 
     status = pkmn.status ? NuzlockeStates[pkmn.status] : null
-    selected = Pokemon[pkmn.pokemon]
     nickname = pkmn.nickname
+    if (pkmn.pokemon)
+      fetchData(pkmn.pokemon)
+        .then(p => {
+          selected = p
+          loading = false
+        })
   }))
 
  $: {
    if (selected)
      store.update(patch({
        [location]: {
-         ...(location === 'Starter' ? { type: selected?.types[0].toLowerCase() } : {}),
          id,
          pokemon: selected?.alias,
          status: status?.id,
          nickname,
          location
        }
-     }))
+   }))
  }
 
  function handleClear () {
@@ -72,7 +86,7 @@
     <AutoComplete
       hideArrow
       maxItemsToShowInList={20}
-      items={Object.values(Pokemon)}
+      items={items}
       bind:selectedItem={selected}
       placeholder={selected ? selected.name : 'Encounter'}
       labelFieldName='name'

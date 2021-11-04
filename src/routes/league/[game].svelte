@@ -2,11 +2,9 @@
   import league from '$lib/data/league.json'
   import games from '$lib/data/games.json'
 
-  export async function load({ page, fetch }) {
+  export async function load({ page }) {
     const { pid } = games[page.params.game]
     const path = Object.keys(league[pid])
-
-    console.log({ game: page.params.game, path })
 
     return { props: { game: pid, path } }
   }

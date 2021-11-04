@@ -4,11 +4,16 @@ import autoprefixer from 'autoprefixer'
 import preprocess from 'svelte-preprocess'
 import vercel from '@sveltejs/adapter-vercel'
 
+import { visualizer } from 'rollup-plugin-visualizer'
+
 export default {
   kit: {
     adapter: vercel(),
     target: '#svelte',
     vite: {
+      plugins: [
+        visualizer()
+      ],
       build: {
         target: ['es2020']
       }

@@ -40,8 +40,8 @@
 
   <span class='mx-auto text-center'>
     <img
-      width=264
-      height=104
+      width=300
+      height=118
       class:grayscale={!hovering}
       alt='Pokemon brand logo'
       src='/pkmn-logo.webp'

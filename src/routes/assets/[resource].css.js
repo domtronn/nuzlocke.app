@@ -15,7 +15,7 @@ export async function get ({ params }) {
     status: 200,
     body: clean.minify(resourceMap[resource]).styles,
     headers: {
-      'Cache-Control': 'public, max-age 31536000',
+      'Cache-Control': 'public, max-age=31536000',
       'Content-Type': 'text/css'
     }
   }
