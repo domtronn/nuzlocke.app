@@ -1303,6 +1303,347 @@
         }
       ]
     },
+    "rose": {
+      "name": "Rose",
+      "speciality": "",
+      "img": "/leaders/rose.webp",
+      "pokemon": [
+        {
+          "name": "escavalier",
+          "level": "55",
+          "moves": [
+            "drill-run",
+            "iron-head",
+            "megahorn",
+            "swords-dance"
+          ],
+          "ability": "shell-armor"
+        },
+        {
+          "name": "ferrothorn",
+          "level": "55",
+          "moves": [
+            "gyro-ball",
+            "power-whip",
+            "body-press",
+            "curse"
+          ],
+          "ability": "iron-barbs"
+        },
+        {
+          "name": "perrserker",
+          "level": "55",
+          "moves": [
+            "iron-head",
+            "screech",
+            "shadow-claw",
+            "throat-chop"
+          ],
+          "ability": "tough-claws"
+        },
+        {
+          "name": "klinklang",
+          "level": "56",
+          "moves": [
+            "gear-grind",
+            "shift-gear",
+            "wild-charge",
+            "assurance"
+          ],
+          "ability": "minus"
+        },
+        {
+          "name": "copperajah",
+          "level": "57",
+          "moves": [
+            "heavy-slam",
+            "iron-head",
+            "high-horsepower",
+            "zen-headbutt"
+          ],
+          "ability": "sheer-force"
+        }
+      ]
+    },
+    "oleana": {
+      "name": "Oleana",
+      "speciality": "",
+      "img": "/leaders/oleana.webp",
+      "pokemon": [
+        {
+          "name": "froslass",
+          "level": "50",
+          "moves": [
+            "hex",
+            "icy-wind",
+            "will-o-wisp",
+            "double-team"
+          ],
+          "ability": "snow-cloak"
+        },
+        {
+          "name": "tsareena",
+          "level": "50",
+          "moves": [
+            "trop-kick",
+            "stomp",
+            "attract",
+            "acrobatics"
+          ],
+          "ability": "queenly-majesty"
+        },
+        {
+          "name": "salazzle",
+          "level": "50",
+          "moves": [
+            "venoshock",
+            "incinerate",
+            "poison-gas",
+            "dragon-pulse"
+          ],
+          "ability": "corrosion"
+        },
+        {
+          "name": "milotic",
+          "level": "51",
+          "moves": [
+            "surf",
+            "safeguard",
+            "aqua-ring",
+            "recover"
+          ],
+          "ability": "competitive"
+        },
+        {
+          "name": "garbodor",
+          "level": "52",
+          "moves": [
+            "gunk-shot",
+            "stomping-tantrum",
+            "rock-blast",
+            "toxic-spikes"
+          ],
+          "ability": "weak-armor"
+        }
+      ]
+    },
+    "b1": {
+      "name": "Bede",
+      "speciality": "",
+      "img": "/leaders/bede.webp",
+      "pokemon": [
+        {
+          "name": "solosis",
+          "level": "13",
+          "moves": [
+            "endeavor",
+            "confusion"
+          ],
+          "ability": "magic-guard"
+        },
+        {
+          "name": "gothita",
+          "level": "15",
+          "moves": [
+            "psybeam",
+            "tickle",
+            "pound"
+          ],
+          "ability": "competitive"
+        },
+        {
+          "name": "hatenna",
+          "level": "16",
+          "moves": [
+            "confusion",
+            "round",
+            "disarming-voice"
+          ],
+          "ability": "anticipation"
+        }
+      ]
+    },
+    "b2": {
+      "name": "Bede",
+      "speciality": "",
+      "img": "/leaders/bede.webp",
+      "pokemon": [
+        {
+          "name": "solosis",
+          "level": "21",
+          "moves": [
+            "psyshock",
+            "psybeam",
+            "endeavor"
+          ],
+          "ability": "magic-guard"
+        },
+        {
+          "name": "gothita",
+          "level": "22",
+          "moves": [
+            "psyshock",
+            "rock-tomb",
+            "psybeam"
+          ],
+          "ability": "competitive"
+        },
+        {
+          "name": "ponyta-galar",
+          "level": "22",
+          "moves": [
+            "confusion",
+            "fairy-wind"
+          ],
+          "ability": "pastel-veil"
+        },
+        {
+          "name": "hatenna",
+          "level": "23",
+          "moves": [
+            "psybeam",
+            "disarming-voice"
+          ],
+          "ability": "anticipation"
+        }
+      ]
+    },
+    "b3": {
+      "name": "Bede",
+      "speciality": "",
+      "img": "/leaders/bede.webp",
+      "pokemon": [
+        {
+          "name": "duosion",
+          "level": "32",
+          "moves": [
+            "light-screen",
+            "reflect",
+            "psyshock",
+            "psybeam"
+          ],
+          "ability": "magic-guard"
+        },
+        {
+          "name": "gothorita",
+          "level": "32",
+          "moves": [
+            "fake-tears",
+            "psybeam",
+            "rock-tomb"
+          ],
+          "ability": "competitive"
+        },
+        {
+          "name": "ponyta-galar",
+          "level": "33",
+          "moves": [
+            "fairy-wind",
+            "psybeam",
+            "agility"
+          ],
+          "ability": "pastel-veil"
+        },
+        {
+          "name": "hattrem",
+          "level": "35",
+          "moves": [
+            "dazzling-gleam",
+            "psybeam"
+          ],
+          "ability": "anticipation"
+        }
+      ]
+    },
+    "m1": {
+      "name": "Marnie",
+      "speciality": "",
+      "img": "/leaders/marnie.webp",
+      "pokemon": [
+        {
+          "name": "croagunk",
+          "level": "24",
+          "moves": [
+            "poison-sting",
+            "venoshock",
+            "revenge",
+            "sucker-punch"
+          ],
+          "ability": "dry-skin"
+        },
+        {
+          "name": "scraggy",
+          "level": "24",
+          "moves": [
+            "beat-up",
+            "headbutt",
+            "low-kick"
+          ],
+          "ability": "shed-skin"
+        },
+        {
+          "name": "morpeko",
+          "level": "26",
+          "moves": [
+            "bite",
+            "thunder-shock",
+            "quick-attack"
+          ],
+          "ability": "hunger-switch"
+        }
+      ]
+    },
+    "m2": {
+      "name": "Marnie",
+      "speciality": "",
+      "img": "/leaders/marnie.webp",
+      "pokemon": [
+        {
+          "name": "liepard",
+          "level": "42",
+          "moves": [
+            "fake-out",
+            "torment",
+            "nastly-plot",
+            "sucker-punch"
+          ],
+          "ability": "prankset"
+        },
+        {
+          "name": "toxicroak",
+          "level": "43",
+          "moves": [
+            "venoshock",
+            "sucker-punch",
+            "swagger",
+            "poison-jab"
+          ],
+          "ability": "dry-skin"
+        },
+        {
+          "name": "scrafty",
+          "level": "43",
+          "moves": [
+            "brick-break",
+            "scary-face",
+            "crunch",
+            "swagger"
+          ],
+          "ability": "shed-skin"
+        },
+        {
+          "name": "morpeko",
+          "level": "44",
+          "moves": [
+            "quick-attack",
+            "torment",
+            "spark",
+            "bite"
+          ],
+          "ability": "hunger-switch"
+        }
+      ]
+    },
     "r1": {
       "name": "Hop",
       "speciality": "",
