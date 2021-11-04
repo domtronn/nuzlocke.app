@@ -29,17 +29,18 @@
 
     %svelte.head%
   </head>
-  <body class="dark">
-    <div id="svelte">%svelte.body%</div>
+  <body id="svelte">
+    %svelte.body%
   </body>
+
+  <link rel="preload" href="/assets/items.css" as="style" onload="this.onload=null;this.rel='stylesheet'" >
+  <noscript>
+    <link rel="stylesheet" href="/assets/items.css" >
+  </noscript>
 
   <link rel="preload" href="/assets/pokemon.css" as="style" onload="this.onload=null;this.rel='stylesheet'" >
   <noscript>
     <link rel="stylesheet" href="/assets/pokemon.css" >
   </noscript>
 
-  <link rel="preload" href="/assets/items.css" as="style" onload="this.onload=null;this.rel='stylesheet'" >
-  <noscript>
-    <link rel="stylesheet" href="/assets/items.css" >
-  </noscript>
 </html>

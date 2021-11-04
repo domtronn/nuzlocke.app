@@ -53,7 +53,7 @@
 
           <div class='flex gap-y-4 flex-wrap flex-row justify-between'>
             <div class='flex flex-row items-center gap-x-2'>
-            <p>Starter type</p>
+              <p>Starter type</p>
               <StarterType on:select={setstarter} starter={starter} />
             </div>
 
@@ -64,42 +64,42 @@
                   class:border-transparent={filter !== i}
                   class:border-black={filter === i}
                   class:text-black={filter === i}
-                  class:text-gray-400={filter !== i}
+                  class:text-gray-500={filter !== i}
                   class:hover:border-gray-300={filter !== i}
                   >
                   <input type=radio bind:group={filter} name='filter' value={i} />
                   {f}
                 </label>
               {/each}
-          </div>
+            </div>
 
-          <div>
-            <a href='/box' >
-              <button class='text-lg inline-flex gap-x-1 items-center'>
-                <Icon src={Box} size='1.2em' />
-                Box
-              </button>
-            </a>
-          </div>
+            <div>
+              <a href='/box' >
+                <button class='text-lg inline-flex gap-x-1 items-center'>
+                  <Icon src={Box} size='1.2em' />
+                  Box
+                </button>
+              </a>
+            </div>
 
           </div>
 
           {#each Routes[Games[gameKey].pid] as p, i}
-              {#if p.type === 'route' && [0, 1].includes(filter)}
-                {#if gameStore}
-                  <span transition:fade>
-                    <PokemonSelector
-                      id={i}
-                      store={gameStore}
-                      location={p.name}
+            {#if p.type === 'route' && [0, 1].includes(filter)}
+              {#if gameStore}
+                <span transition:fade>
+                  <PokemonSelector
+                    id={i}
+                    store={gameStore}
+                    location={p.name}
                     />
-                  </span>
-                  {/if}
-                {:else if p.type === 'gym' && [0, 2].includes(filter)}
-                  <span transition:fade>
-                    <GymCard game={gameKey} starter={starter} id={p.value} location={p.name} />
-                  </span >
-                {/if}
+                </span>
+              {/if}
+            {:else if p.type === 'gym' && [0, 2].includes(filter)}
+              <span transition:fade>
+                <GymCard game={gameKey} starter={starter} id={p.value} location={p.name} />
+              </span >
+            {/if}
           {/each}
         </div>
       </main>

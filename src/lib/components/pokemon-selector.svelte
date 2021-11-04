@@ -155,6 +155,7 @@
 
   <span class='text-left inline-flex gap-x-2'>
     <button
+      aria-label='Clear pokemon'
       class='bg-white hover:active:bg-indigo-50 shadow-md text-gray-400 border-gray-200 active:shadow-sm active:text-indigo-600 hover:active:border-indigo-600 hover:text-indigo-300 hover:border-indigo-200 rounded-lg p-2 transition-all border-2'
       on:click={handleClear}
     >
@@ -163,6 +164,7 @@
 
     {#if status && status.id !== 4 && status.id !== 5}
       <button
+        aria-label='Kill pokemon'
         class='bg-white hover:active:bg-indigo-50 shadow-md text-gray-400 border-gray-200 active:shadow-sm active:text-indigo-600 hover:active:border-indigo-600 hover:text-indigo-300 hover:border-indigo-200 rounded-lg p-2 transition-all border-2'
         on:click={handleStatus(5)}
       >
@@ -172,6 +174,7 @@
 
     {#if selected && !status}
       <button
+        aria-label='Capture pokemon'
         class='group flex items-center bg-white hover:grayscale-0 hover:opacity-100 grayscale hover:active:bg-orange-100 shadow-md text-gray-400 border-gray-200 active:shadow-sm active:text-orange-600 hover:active:border-orange-600 hover:border-orange-300 rounded-lg transition-all border-2'
         on:click={handleStatus(1)}
       >

@@ -48,7 +48,7 @@
 
     <div class='flex flex-col items-end'>
       <button
-        class='font-sans text-xs bg-white inline-flex items-center gap-x-2 hover:active:bg-yellow-50 shadow-md text-gray-400 border-gray-200 active:shadow-sm active:text-yellow-600 hover:active:border-yellow-600 hover:text-yellow-300 hover:border-yellow-200 rounded-lg px-2 py-1 transition-all border-2'
+        class='font-sans text-xs bg-white inline-flex items-center gap-x-2 hover:active:bg-yellow-50 shadow-md text-gray-500 border-gray-400 active:shadow-sm active:text-yellow-600 hover:active:border-yellow-600 hover:text-yellow-300 hover:border-yellow-200 rounded-lg px-2 py-1 transition-all border-2'
         on:click={ondelete}
         >
         Delete
