@@ -1,14 +1,4 @@
-<script context="module">
-  export async function load({ fetch }) {
-    const res = await fetch('/pokemon/all.json')
-    const items = await res.json()
-    return { props: { items } }
-  }
-</script>
-
 <script>
-  export let items
-
   import { browser } from '$app/env'
   import { fade } from 'svelte/transition'
 
@@ -100,7 +90,6 @@
                   <span transition:fade>
                     <PokemonSelector
                       id={i}
-                      items={items}
                       store={gameStore}
                       location={p.name}
                     />

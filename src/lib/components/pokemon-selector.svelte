@@ -1,5 +1,5 @@
 <script>
-  export let id, location, store, items
+  export let id, location, store
 
   import { browser } from '$app/env'
   import { read, patch } from '$lib/store'
@@ -18,6 +18,12 @@
   let selected
   let nickname
   let status
+
+  const fetchItems = async () => {
+    const res = await fetch('/pokemon/all.json')
+    const items = await res.json()
+    return items
+  }
 
   const fetchData = async (id) => {
     if (!browser) return
@@ -85,8 +91,8 @@
 
     <AutoComplete
       hideArrow
-      maxItemsToShowInList={20}
-      items={items}
+      delay={200}
+      searchFunction={fetchItems}
       bind:selectedItem={selected}
       placeholder={selected ? selected.name : 'Encounter'}
       labelFieldName='name'
