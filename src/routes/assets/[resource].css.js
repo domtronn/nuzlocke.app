@@ -1,6 +1,9 @@
+import Clean from 'clean-css'
+
 import pokemon from 'pokemon-assets/assets/css/pokemon.css'
 import items from 'pokemon-assets/assets/css/items.css'
 
+const clean = new Clean()
 const resourceMap = { pokemon, items }
 
 export async function get ({ params }) {
@@ -10,7 +13,7 @@ export async function get ({ params }) {
 
   return {
     status: 200,
-    body: resourceMap[resource],
+    body: clean.minify(resourceMap[resource]).styles,
     headers: {
       'Cache-Control': 'public, max-age 31536000',
       'Content-Type': 'text/css'
