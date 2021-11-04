@@ -75,11 +75,11 @@
 
         <GameHeading className='col-span-8' />
 
-        <div class='inline-flex flex-wrap flex-col sm:flex-row gap-y-2 gap-x-4 sm:items-start'>
+        <div class='inline-flex flex-wrap flex-col sm:flex-row gap-y-2 gap-x-4 sm:items-start z-50'>
           <div class='grid grid-cols-6 w-full sm:w-auto sm:grid-cols-3 gap-2 sm:gap-2 col-span-2'>
             {#each stats as s}
               <label
-                class='transition cursor-pointer inline-flex text-center text-xs px-2 py-1 w-full text-gray-400 border-gray-300 font-medium border shadow-sm rounded-lg inline-flex'
+                class='transition cursor-pointer inline-flex text-center text-xs px-2 py-1 w-full text-gray-500 border-gray-400 font-medium border shadow-sm rounded-lg inline-flex'
                 class:border-black={stat === s}
                 class:text-black={stat === s}
                 >

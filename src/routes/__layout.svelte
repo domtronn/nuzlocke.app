@@ -1,5 +1,30 @@
+<script context='module'>
+  export function load ({ page }) {
+    return { props: page }
+  }
+</script>
+
 <script>
+  export let path = ''
+
   import '../app.css'
+  import { onMount } from 'svelte'
+
+  const mountStyle = (src) => {
+    if (document.createStyleSheet) document.createStyleSheet(src)
+    else {
+      const [head] = document.getElementsByTagName('head')
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = src
+      head.appendChild(link)
+    }
+  }
+
+  onMount(() => {
+    mountStyle('/assets/items.css')
+    if (path === '/game') mountStyle('/assets/pokemon.css')
+  })
 </script>
 
 <style global lang="postcss">
