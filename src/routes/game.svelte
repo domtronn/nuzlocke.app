@@ -44,7 +44,7 @@
   <Loader />
 {:else}
   <div transition:fade class="container mx-auto">
-    <div class="flex flex-row flex-wrap h-screen items-center justify-center">
+    <div class="flex flex-row flex-wrap h-screen justify-center">
       <main role="main" class="w-full sm:w-2/3 md:w-3/4 px-4 md:px-8 md:py-6 overflow-hidden">
         <div class='flex flex-col gap-y-4'>
 

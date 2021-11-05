@@ -118,7 +118,6 @@
       type='text'
       bind:value={nickname}
       placeholder='Nickname'
-      class:animate-pulse={loading}
       class='text-xs md:text-md transition-colors hover:border-indigo-200 text-md focus:outline-none leading-4 focus:border-indigo-600 border-2 shadow-md block  w-full rounded-lg px-3 py-2'
     />
   </span>
