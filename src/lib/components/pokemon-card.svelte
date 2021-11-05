@@ -30,29 +30,30 @@
           <span class='text-3xl font-bold'>{level}</span>
         </div>
       {/if}
-      <div>
-        <p class='relative text-xl mb-0.25 bg-white pr-2 z-40'>
-          {#if ability}
-            <p
-              class='-mb-1 w-auto relative text-xs bg-white z-40'
-              >
-              <span data-tooltip={ability.effect}>
-                {ability.name}
-              </span>
-            </p>
-          {/if}
+      <span class='relative text-xl mb-0.25 bg-white pr-2 z-40'>
+        {#if ability}
+          <p
+            class='-mb-1 w-auto relative text-xs bg-white z-40'
+            >
+            <span data-tooltip={ability.effect}>
+              {ability.name}
+            </span>
+          </p>
+        {/if}
 
-          {capitalise(name)}
+{capitalise(name)}
+
           {#if held}
             <div
-              data-tooltip={held.effect}
-              class='absolute right-0 bottom-0 translate-x-full z-20 p-1 mb-1 flex flex-col items-center'>
-              <PIcon type='item' name={held.sprite} />
+              class='absolute right-0 -bottom-0.5 translate-x-full z-20 p-1 mb-1 flex flex-col items-center'>
+              <span data-tooltip={held.effect}>
+                <PIcon type='item' name={held.sprite} />
+              </span>
               <Icon src={Hand} className='-mt-3.5' />
             </div>
           {/if}
-        </p>
-      </div>
+
+      </span>
 
     </div>
 

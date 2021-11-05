@@ -60,6 +60,8 @@ export async function get ({ params, query }) {
   const { gen, id } = params
   const game = games[gen]
 
+  if (!game) return { status: 404 }
+
   const starter = query.get('starter')
   const leader = path([game.lid || game.pid, id], leaders)
 

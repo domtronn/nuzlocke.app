@@ -717,6 +717,400 @@
         }
       ]
     },
+    "r1": {
+      "name": "Silver",
+      "speciality": "",
+      "pokemon": [
+        {
+          "name": "cyndaquil",
+          "level": "5",
+          "moves": [
+            "tackle",
+            "leer"
+          ],
+          "ability": "blaze",
+          "starter": "grass"
+        },
+        {
+          "name": "totodile",
+          "level": "5",
+          "moves": [
+            "scratch",
+            "leer"
+          ],
+          "ability": "torrent",
+          "starter": "fire"
+        },
+        {
+          "name": "chikorita",
+          "level": "5",
+          "moves": [
+            "tackle",
+            "growl"
+          ],
+          "ability": "overgrow",
+          "starter": "grass"
+        }
+      ]
+    },
+    "elder": {
+      "name": "Elder li",
+      "speciality": "",
+      "pokemon": [
+        {
+          "name": "bellsprout",
+          "level": "7",
+          "moves": [
+            "vine-whip",
+            "growth"
+          ],
+          "ability": "chlorophyll"
+        },
+        {
+          "name": "bellsprout",
+          "level": "7",
+          "moves": [
+            "vine-whip",
+            "growth"
+          ],
+          "ability": "chlorophyll"
+        },
+        {
+          "name": "hoothoot",
+          "level": "10",
+          "moves": [
+            "growl",
+            "foresight",
+            "hypnosis",
+            "peck"
+          ],
+          "ability": "insomnia"
+        }
+      ]
+    },
+    "r2": {
+      "name": "Silver",
+      "speciality": "",
+      "pokemon": [
+        {
+          "name": "gastly",
+          "level": "14",
+          "moves": [
+            "lick",
+            "spite",
+            "mean-look",
+            "curse"
+          ],
+          "ability": "levitate"
+        },
+        {
+          "name": "zubat",
+          "level": "16",
+          "moves": [
+            "leech-life",
+            "supersonic",
+            "astonish",
+            "bite"
+          ],
+          "ability": "inner-focus"
+        },
+        {
+          "name": "quilava",
+          "level": "18",
+          "moves": [
+            "leer",
+            "smoke-screen",
+            "ember",
+            "quick-attack"
+          ],
+          "ability": "blaze",
+          "starter": "grass"
+        },
+        {
+          "name": "croconaw",
+          "level": "18",
+          "moves": [
+            "water-gun",
+            "rage",
+            "bite",
+            "scary-face"
+          ],
+          "ability": "torrent",
+          "starter": "fire"
+        },
+        {
+          "name": "bayleef",
+          "level": "18",
+          "moves": [
+            "poison-powder",
+            "reflect",
+            "synthesis",
+            "razor-leaf"
+          ],
+          "ability": "overgrow",
+          "starter": "grass"
+        }
+      ]
+    },
+    "r3": {
+      "name": "Silver",
+      "speciality": "",
+      "pokemon": [
+        {
+          "name": "gastly",
+          "level": "20",
+          "moves": [
+            "lick",
+            "confuse-ray",
+            "mean-look",
+            "curse"
+          ],
+          "ability": "levitate"
+        },
+        {
+          "name": "zubat",
+          "level": "20",
+          "moves": [
+            "wing-attack",
+            "supersonic",
+            "astonish",
+            "bite"
+          ],
+          "ability": "inner-focus"
+        },
+        {
+          "name": "magnemite",
+          "level": "18",
+          "moves": [
+            "thunder-shock",
+            "supersonic",
+            "sonic-boom",
+            "thunder-wave"
+          ],
+          "ability": "magnet-pull"
+        },
+        {
+          "name": "quilava",
+          "level": "22",
+          "moves": [
+            "flame-wheel",
+            "smoke-screen",
+            "ember",
+            "quick-attack"
+          ],
+          "ability": "blaze",
+          "starter": "grass"
+        },
+        {
+          "name": "croconaw",
+          "level": "22",
+          "moves": [
+            "water-gun",
+            "scary-face",
+            "ice-fang",
+            "bite"
+          ],
+          "ability": "torrent",
+          "starter": "fire"
+        },
+        {
+          "name": "bayleef",
+          "level": "22",
+          "moves": [
+            "reflect",
+            "magical-leaf",
+            "poison-powder",
+            "synthesis"
+          ],
+          "ability": "overgrow",
+          "starter": "grass"
+        }
+      ]
+    },
+    "r4": {
+      "name": "Silver",
+      "speciality": "",
+      "pokemon": [
+        {
+          "name": "golbat",
+          "level": "32",
+          "moves": [
+            "air-cutter",
+            "confuse-ray",
+            "bite",
+            "astonish"
+          ],
+          "ability": "inner-focus"
+        },
+        {
+          "name": "magnemite",
+          "level": "30",
+          "moves": [
+            "thunder-wave",
+            "spark",
+            "supersonic",
+            "sonic-boom"
+          ],
+          "ability": "magnet-pull"
+        },
+        {
+          "name": "haunter",
+          "level": "30",
+          "moves": [
+            "shadow-ball",
+            "confuse-ray",
+            "mean-look",
+            "curse"
+          ],
+          "ability": "levitate"
+        },
+        {
+          "name": "sneasel",
+          "level": "34",
+          "moves": [
+            "feint-attack",
+            "quick-attack",
+            "icy-wind",
+            "fury-swipes"
+          ],
+          "ability": "inner-focus"
+        },
+        {
+          "name": "quilava",
+          "level": "34",
+          "moves": [
+            "smoke-screen",
+            "swift",
+            "quick-attack",
+            "flame-wheel"
+          ],
+          "ability": "blaze",
+          "starter": "grass"
+        },
+        {
+          "name": "feraligatr",
+          "level": "32",
+          "moves": [
+            "water-gun",
+            "ice-fang",
+            "crunch",
+            "thrash"
+          ],
+          "ability": "torrent",
+          "starter": "fire"
+        },
+        {
+          "name": "meganium",
+          "level": "34",
+          "moves": [
+            "reflect",
+            "petal-dance",
+            "poison-powder",
+            "synthesis"
+          ],
+          "ability": "overgrow",
+          "starter": "grass"
+        }
+      ]
+    },
+    "r5": {
+      "name": "Silver",
+      "speciality": "",
+      "pokemon": [
+        {
+          "name": "sneasel",
+          "level": "36",
+          "moves": [
+            "feint-attack",
+            "quick-attack",
+            "icy-wind",
+            "fury-swipes"
+          ],
+          "ability": "inner-focus"
+        },
+        {
+          "name": "golbat",
+          "level": "38",
+          "moves": [
+            "air-cutter",
+            "confuse-ray",
+            "bite",
+            "astonish"
+          ],
+          "ability": "inner-focus"
+        },
+        {
+          "name": "magneton",
+          "level": "37",
+          "moves": [
+            "thunder-wave",
+            "spark",
+            "supersonic",
+            "magnet-bomb"
+          ],
+          "ability": "magnet-pull"
+        },
+        {
+          "name": "kadabra",
+          "level": "37",
+          "moves": [
+            "reflect",
+            "disable",
+            "psybeam",
+            "recover"
+          ],
+          "ability": "synchronize"
+        },
+        {
+          "name": "haunter",
+          "level": "37",
+          "moves": [
+            "shadow-ball",
+            "confuse-ray",
+            "mean-look",
+            "curse"
+          ],
+          "ability": "levitate"
+        },
+        {
+          "name": "typhlosion",
+          "level": "40",
+          "moves": [
+            "lava-plume",
+            "flame-wheel",
+            "swift",
+            "quick-attack",
+            "flame-wheel"
+          ],
+          "ability": "blaze",
+          "starter": "grass"
+        },
+        {
+          "name": "feraligatr",
+          "level": "40",
+          "moves": [
+            "waterfall",
+            "ice-fang",
+            "crunch",
+            "slash"
+          ],
+          "ability": "torrent",
+          "starter": "fire"
+        },
+        {
+          "name": "meganium",
+          "level": "40",
+          "moves": [
+            "petal-dance",
+            "synthesis",
+            "reflect",
+            "poison-powder"
+          ],
+          "ability": "overgrow",
+          "starter": "grass"
+        }
+      ]
+    },
     "e1": {
       "name": "Will",
       "speciality": "psychic",

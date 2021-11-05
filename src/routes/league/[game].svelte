@@ -3,10 +3,10 @@
   import games from '$lib/data/games.json'
 
   export async function load({ page }) {
-    const { pid } = games[page.params.game]
-    const path = Object.keys(league[pid])
+    const { pid, lid } = games[page.params.game]
+    const path = Object.keys(league[lid || pid])
 
-    return { props: { game: pid, path } }
+    return { props: { game: page.params.game, path } }
   }
 </script>
 
