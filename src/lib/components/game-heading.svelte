@@ -45,12 +45,12 @@
           class:border-b-2={p.link == path}
           class:bg-gray-50={p.link == path}
           class:cursor-default={p.link == path}
-          class:opacity-50={p.link !== path}
-          class:hover:opacity-100={p.link !== path}
+          class:text-gray-500={p.link !== path}
+          class:hover:text-black={p.link !== path}
           class:cursor-pointer={p.link !== path}
           href={p.link}
           >
-          <Icon src={p.icon} />
+          <Icon src={p.icon} className='fill-current' />
           {p.name}
         </a>
       {/each}

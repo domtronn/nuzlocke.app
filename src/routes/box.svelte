@@ -112,7 +112,7 @@
           </div>
         </div>
 
-        <div class='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-4'>
+        <div class='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-4 mt-6'>
           {#each box.filter(filter) as p (p.id)}
             <span
               animate:flip={{ duration: d => 10 * Math.sqrt(d) }}
