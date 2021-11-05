@@ -12,7 +12,7 @@
   import { stats, StatIconMap } from '$lib/data/stats'
 
   import Icon from 'svelte-icons-pack'
-  import X from 'svelte-icons-pack/bi/BiX'
+  import X from 'svelte-icons-pack/ri/RiSystemFilterOffFill'
 
   const fetchData = async (pkmn) => {
     if (!browser) return
@@ -71,23 +71,23 @@
     <div class='flex flex-col mx-auto items-center justify-center'>
       <main role='main' class='w-full sm:w-2/3 md:w-3/4 flex flex-col gap-y-4 py-6 px-4 md:px-8 overflow-hidden'>
 
-        <div class='inline-flex flex-wrap flex-col sm:flex-row gap-y-2 gap-x-4 sm:items-start z-50'>
+        <div class='inline-flex flex-wrap flex-col sm:flex-row gap-y-2 gap-x-4 sm:items-start z-50 mt-2'>
           <div class='grid grid-cols-6 w-full sm:w-auto sm:grid-cols-3 gap-2 sm:gap-2 col-span-2'>
             {#each stats as s}
               <label
-                class='transition cursor-pointer inline-flex text-center text-xs px-2 py-1 w-full text-gray-500 border-gray-400 font-medium border shadow-sm rounded-lg inline-flex'
+                class='transition shadow-md cursor-pointer inline-flex text-center text-xs px-2 py-1 w-full text-gray-500 border-gray-400 font-medium border shadow-sm rounded-lg justify-center md:justify-between'
                 class:border-black={stat === s}
                 class:text-black={stat === s}
                 class:bg-gray-200={stat === s}
                 >
                 <input type=radio bind:group={stat} name='sortable' value={s} />
-                <Icon className='text-xxs {s !== 'spa' ? 'fill-current' : ''} translate-y-1/2 -mt-0.5 mr-1'  src={StatIconMap[s]} />
+                <Icon className='hidden md:block text-xxs {s !== 'spa' ? 'fill-current' : ''} translate-y-1/2 -mt-0.5 mr-1'  src={StatIconMap[s]} />
                 {s}
               </label>
             {/each}
           </div>
 
-          <div class='grid grid-cols-5 sm:grid-cols-9 gap-x-2 gap-y-2 col-span-3'>
+          <div class='grid grid-cols-5 md:grid-cols-9 gap-x-2 gap-y-2 col-span-3'>
             {#each types as t}
               {#if typeCounts[t] > 0}
                 <label
@@ -104,8 +104,11 @@
           </div>
 
           <div class='sm:order-none order-first col-span-1 flex justify-end -mt-8 sm:mt-0'>
-            <button on:click={clear} class='inline-flex items-center' >
-              <Icon src={X} size='1.6em' />
+            <button
+              on:click={clear}
+              class='font-sans text-xs bg-white inline-flex items-center gap-x-2 hover:active:bg-indigo-50 shadow-md text-gray-500 border-gray-400 active:shadow-sm active:text-indigo-600 hover:active:border-indigo-600 hover:text-indigo-300 hover:border-indigo-200 rounded-lg px-2 py-1 transition-all border'
+            >
+              <Icon src={X} className='fill-current' size='1.2em' />
               Clear filters
             </button>
           </div>

@@ -31,17 +31,15 @@
         </div>
       {/if}
       <span class='relative text-xl mb-0.25 bg-white pr-2 z-40'>
+          <p class='-mb-1 w-auto relative text-xs bg-white z-40 h-4'>
         {#if ability}
-          <p
-            class='-mb-1 w-auto relative text-xs bg-white z-40'
-            >
             <span data-tooltip={ability.effect}>
               {ability.name}
             </span>
-          </p>
         {/if}
+          </p>
 
-{capitalise(name)}
+          {capitalise(name)}
 
           {#if held}
             <div
