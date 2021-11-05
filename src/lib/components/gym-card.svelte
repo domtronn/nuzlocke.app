@@ -93,7 +93,7 @@
 
     <span
       slot='heading'
-      class='text-left inline-flex gap-x-2 items-center'
+      class='text-left inline-flex gap-x-2 h-16 items-center -mt-4'
     >
 
       {#if img}
