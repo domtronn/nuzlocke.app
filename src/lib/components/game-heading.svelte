@@ -41,7 +41,7 @@
     <span class='inline-block'>
       {#each pages as p}
         <a
-          class='inline-flex items-center gap-x-1 border-black transition p-2 px-3 md:p-4 text-sm md:text-md'
+          class='inline-flex items-center gap-x-1 border-black transition p-2 px-3 md:p-4 text-sm md:text-base'
           class:border-b-2={p.link == path}
           class:bg-gray-50={p.link == path}
           class:text-black={p.link == path}
