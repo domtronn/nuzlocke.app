@@ -123,7 +123,8 @@
                 sprite={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${Pokemon[p.pokemon].num}.png`}
                 maxStat={Math.max(150, ...Object.values(Pokemon[p.pokemon].baseStats))}
                 moves={[]}
-                name={p.nickname ? p.nickname : Pokemon[p.pokemon].name}
+                ability={p.nickname ? { name: p.nickname + ' the' } : null}
+                name={Pokemon[p.pokemon].name}
                 stats={Pokemon[p.pokemon].baseStats}
                 types={(Pokemon[p.pokemon].types || []).map(t => t.toLowerCase())}
                 />

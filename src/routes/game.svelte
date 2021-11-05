@@ -48,7 +48,7 @@
       <main role="main" class="w-full sm:w-2/3 md:w-3/4 px-4 md:px-8 py-6 overflow-hidden">
         <div class='flex flex-col gap-y-4'>
 
-          <div class='flex flex-row justify-between mb-6'>
+          <div class='flex flex-col gap-y-4 md:gap-y-0 md:flex-row justify-between mb-6'>
             <div class='order-4 md:order-none flex flex-row gap-x-4'>
               {#each filters as f, i}
                 <label
