@@ -86,7 +86,13 @@ export async function get ({ params, query }) {
         })
     )
 
-    return { body: JSON.stringify({ ...leader, pokemon }) }
+    return {
+      body: JSON.stringify({ ...leader, pokemon }),
+      headers: {
+        'Cache-Control': 'public, max-age=3600',
+        'Content-Type': 'application/json'
+      }
+    }
   } catch (E) {
     console.log(E)
     console.log(E.response.status, E.request.path)
