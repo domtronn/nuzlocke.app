@@ -112,6 +112,5 @@
 .pkm { background-image: url(/assets/pokemon.webp) !important; }
 .pkitem { background-image: url(/assets/items.webp) !important; }
 
-.has-status .ac__input-container {
-  padding-left: 32px !important;
-}
+.has-status .ac__input-container { padding-left: 32px !important; }
+.has-status-lg .ac__input-container { padding-left: 48px !important; }

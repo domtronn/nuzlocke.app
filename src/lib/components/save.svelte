@@ -26,7 +26,7 @@
   $: date = dayjs(+created).format('DD MM YYYY')
 </script>
 
-<div class='transition cursor-pointer font-mono tracking-widest flex flex-row justify-between items-center gap-x-8'>
+<div class='transition cursor-pointer font-mono tracking-widest flex flex-row justify-between items-center md:gap-x-24'>
     <div out:fade on:click={onclick} class='group flex flex-col sm:flex-row gap-x-4 items-start md:items-center'>
         <img
           alt='{name} logo'

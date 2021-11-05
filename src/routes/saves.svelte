@@ -21,7 +21,7 @@
 
 <ScreenContainer>
   <span class='flex justify-between items-center md:gap-x-24'>
-    <h1 class='text-2xl'>Load game</h1>
+    <h1 class='text-lg md:text-2xl'>Load game</h1>
     <Icon src={Floppy} size='1.4em' />
   </span>
 

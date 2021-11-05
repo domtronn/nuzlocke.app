@@ -133,16 +133,16 @@
     <AutoComplete
       hideArrow
       items={Object.values(NuzlockeStates)}
-            bind:selectedItem={status}
+      bind:selectedItem={status}
       placeholder='Status'
-      labelFieldName='state'
+      labelFieldName='title'
 
       className='text-xs md:text-md w-full min-w-0 {status ? 'has-status' : ''}'
       inputClassName='ac__input-container text-md transition-colors hover:border-indigo-200 focus:outline-none focus:border-indigo-600 border-2 shadow-md block  w-full rounded-lg px-4 py-2'
       dropdownClassName='ac__dropdown-container rounded-lg  border-2 border-gray-200 mt-2 shadow-md'
     >
       <div class='flex inline-flex gap-x-2 py-2 items-center' slot='item' let:item={item} let:label={label}>
-        <Icon src={item.icon} className='fill-current' />
+        <img src={item.logo} alt={item.title + ' logo'} />
         {@html label}
       </div>
 
