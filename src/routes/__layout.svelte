@@ -1,6 +1,6 @@
 <script context='module'>
   export function load ({ page }) {
-    return { props: page }
+    return { props: { path: page.path } }
   }
 </script>
 

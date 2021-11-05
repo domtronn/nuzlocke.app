@@ -19,7 +19,6 @@
     try {
       const res = await fetch(`/pokemon.json?p=${pkmn.join(',')}`)
       const data = await res.json()
-      console.log(data)
       return data
     } catch (e) {
       console.error(e)
