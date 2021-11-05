@@ -2,6 +2,8 @@
   import { browser } from '$app/env'
   import { fade } from 'svelte/transition'
 
+  import IntersectionObserver from "svelte-intersection-observer"
+
   import StarterType from '$lib/components/starter-type.svelte'
   import GymCard from '$lib/components/gym-card.svelte'
   import Loader from '$lib/components/loader.svelte'
@@ -10,7 +12,6 @@
   import Icon from 'svelte-icons-pack'
   import Box from 'svelte-icons-pack/bi/BiSolidPackage'
 
-  import Routes from '$lib/data/routes.json'
   import Games from '$lib/data/games.json'
   import Colors from '$lib/data/colors.json'
   import { activeGame, savedGames, getGame, patch, read, parse } from '$lib/store'
@@ -18,20 +19,32 @@
   let gameStore, gameKey
   let loading = true
   let starter = 'fire'
+  let element
 
   let filter = 0
   const filters = [ 'Complete Nuzlocke', 'Route', 'Bosses' ]
 
-  activeGame.subscribe(gameId => {
-    if (browser && !gameId) return window.location = '/'
+  let limit = 20
 
-    gameStore = getGame(gameId)
-    gameStore.subscribe(read(game => starter = game.__starter))
+  const fetchRoute = async (gen) => {
+    const res = await fetch(`/route/${gen}.json`)
+    return await res.json()
+  }
 
-    savedGames.subscribe(parse(games => {
-      gameKey = games[gameId]?.game
-      loading = !browser
-    }))
+  const setup = () => new Promise((resolve, reject) => {
+    activeGame.subscribe(gameId => {
+      if (browser && !gameId) return window.location = '/'
+
+      gameStore = getGame(gameId)
+      gameStore.subscribe(read(game => starter = game.__starter))
+
+      savedGames.subscribe(parse(games => {
+        gameKey = games[gameId]?.game
+        loading = !browser
+
+        fetchRoute(Games[gameKey].pid).then(r => resolve(r))
+      }))
+    })
   })
 
   const setstarter = (e) => {
@@ -40,9 +53,9 @@
   }
 </script>
 
-{#if loading || !gameKey}
+{#await setup()}
   <Loader />
-{:else}
+{:then route}
   <div transition:fade class="container mx-auto">
     <div class="flex flex-row flex-wrap h-screen justify-center">
       <main role="main" class="w-full sm:w-2/3 md:w-3/4 px-4 md:px-8 md:py-6 overflow-hidden">
@@ -71,7 +84,7 @@
             </div>
           </div>
 
-          {#each Routes[Games[gameKey].pid] as p, i}
+          {#each route.slice(0, limit) as p, i}
             {#if p.type === 'route' && [0, 1].includes(filter)}
               {#if gameStore}
                 <span transition:fade>
@@ -88,11 +101,15 @@
               </span >
             {/if}
           {/each}
+
+          <IntersectionObserver {element} on:intersect={e => limit+=5}>
+            <span bind:this={element} />
+          </IntersectionObserver>
         </div>
       </main>
     </div>
   </div>
-{/if}
+{/await}
 
 <style>
   input { display: none; }
