@@ -14,6 +14,7 @@
   import Icon from 'svelte-icons-pack'
   import Bin from 'svelte-icons-pack/bi/BiTrash'
   import Deceased from 'svelte-icons-pack/fa/FaSolidSkullCrossbones'
+  import Spinner from 'svelte-icons-pack/cg/CgSpinner'
 
   let selected
   let nickname
@@ -107,9 +108,18 @@
       </div>
 
       <div slot="no-results" let:noResultsText={noResultsText}>
-        <strong>NO RESULTS - {noResultsText}</strong>
+        <span class='inline-flex items-center h-6 text-sm text-gray-600'>
+          <PIcon className='grayscale transform scale-75 -my-4 -mr-4 -ml-5' name='unown-question' />
+          {noResultsText}
+        </span>
       </div>
 
+      <div slot="loading" let:loadingText={loadingText}>
+        <span class='inline-flex items-center h-6 text-sm text-gray-600'>
+          <Icon src={Spinner} className='fill-current animate-spin mr-2' />
+          {loadingText}
+        </span>
+      </div>
     </AutoComplete>
   </span>
 
@@ -135,19 +145,22 @@
       items={Object.values(NuzlockeStates)}
       bind:selectedItem={status}
       placeholder='Status'
-      labelFieldName='title'
+      labelFieldName='state'
 
       className='text-xs md:text-md w-full min-w-0 {status ? 'has-status' : ''}'
       inputClassName='ac__input-container text-md transition-colors hover:border-indigo-200 focus:outline-none focus:border-indigo-600 border-2 shadow-md block  w-full rounded-lg px-4 py-2'
       dropdownClassName='ac__dropdown-container rounded-lg  border-2 border-gray-200 mt-2 shadow-md'
-    >
+      >
       <div class='flex inline-flex gap-x-2 py-2 items-center' slot='item' let:item={item} let:label={label}>
-        <img src={item.logo} alt={item.title + ' logo'} />
+        <Icon src={item.icon} className='fill-current' />
         {@html label}
       </div>
 
       <div slot="no-results" let:noResultsText={noResultsText}>
-        <strong>NO RESULTS - {noResultsText}</strong>
+        <span class='inline-flex items-center h-6 text-sm text-gray-600'>
+          <PIcon className='grayscale transform scale-75 -my-4 -mr-4 -ml-5' name='unown-question' />
+          {noResultsText}
+        </span>
       </div>
     </AutoComplete>
   </span>
