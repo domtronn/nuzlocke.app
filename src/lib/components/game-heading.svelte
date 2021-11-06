@@ -30,7 +30,6 @@
   }
 
   const pages = [
-    { name: 'Home', link: '/', icon: Home },
     { name: 'Game', link: '/game', icon: Game },
     { name: 'Box', link: '/box', icon: Box },
   ]
@@ -38,17 +37,20 @@
 
 <nav class='container mx-auto mb-8 md:mb-2 bg-black text-white dark:sm:text-gray-200 sm:text-black sm:bg-transparent'>
   <div class="w-full sm:w-2/3 md:w-3/4 sm:px-4 md:px-8 mx-auto flex justify-between">
-    <span class='{className} inline-flex items-center pt-4 ml-4 -mt-4 md:mt-0 md:-ml-2'>
+    <a
+      href="/"
+      rel="external"
+      class='{className} inline-flex items-center pt-4 ml-4 -mt-4 md:mt-0 md:-ml-2 group'>
       {#if game?.game}
         <img in:fade src='/assets/{game?.game}.png' alt={game?.game + ' logo'} width=48 class='h-auto mr-2 hidden md:block' />
-        <h1 in:fade class='text-md sm:text-xl'>
+        <h1 in:fade class='text-md sm:text-xl group-hover:border-black dark:group-hover:border-white border-transparent border-b-2 transition'>
           {game?.name || ''}
         </h1>
       {/if}
-    </span>
+    </a>
 
-    <span class='inline-block'>
-      <span class='inline-flex gap-x-2 items-center'>
+    <span class='inline-flex'>
+      <span class='inline-flex gap-x-2 items-center mr-4'>
         <Icon size='1.2em' className='dark:text-gray-200' src={DarkMode} />
         <Toggle
           toggled={$theme === 'dark'}
