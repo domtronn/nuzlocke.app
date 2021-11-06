@@ -62,8 +62,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </svelte:head>
 
-<div class='absolute top-0 w-full g-g>
-
 {#if ['/game', '/box'].includes(path) }
   <GameHeading />
 {/if}
