@@ -11,7 +11,6 @@
   import { onMount } from 'svelte'
 
   import GameHeading from '$lib/components/game-heading.svelte'
-  import CookieConsent from "svelte-tailwind-cookieconsent/src"
 
   const mountStyle = (src) => {
     if (document.createStyleSheet) document.createStyleSheet(src)
