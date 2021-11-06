@@ -28,11 +28,11 @@
 
 <div class='transition cursor-pointer font-mono tracking-widest flex flex-row justify-between items-center md:gap-x-24'>
     <div out:fade on:click={onclick} class='group flex flex-col sm:flex-row gap-x-4 items-start md:items-center'>
-        <img
-          alt='{name} logo'
-          src='/assets/{game}.png'
-          class='w-16 group-hover:grayscale-0 grayscale transition hidden md:block'
-          />
+      <img
+        alt='{name} logo'
+        src='/assets/{game}.png'
+        class='w-16 group-hover:grayscale-0 grayscale transition hidden md:block'
+        />
 
       <div>
         <h2 class='group-hover:text-yellow-400 transition text-2xl'>{name}</h2>
@@ -41,14 +41,14 @@
           {(available || []).length}
           <PIcon className='transition group-hover:grayscale-0 grayscale mr-2 -mt-1' type='item' name='poke-ball' />
           {(deceased || []).length}
-          <Icon className='ml-1' src={NuzlockeStates[5].icon} />
+          <Icon className='ml-1 fill-current' src={NuzlockeStates[5].icon} />
         </span>
       </div>
     </div>
 
     <div class='flex flex-col items-end'>
       <button
-        class='font-sans text-xs bg-white inline-flex items-center gap-x-2 hover:active:bg-yellow-50 shadow-md text-gray-500 border-gray-400 active:shadow-sm active:text-yellow-600 hover:active:border-yellow-600 hover:text-yellow-300 hover:border-yellow-200 rounded-lg px-2 py-1 transition-all border-2'
+        class='font-sans text-xs dark:bg-transparent dark:text-gray-300 dark:border-gray-300 dark:hover:text-indigo-400 dark:hover:border-indigo-400 dark:hover:active:bg-indigo-900 bg-white inline-flex items-center gap-x-2 hover:active:bg-yellow-50 shadow-md text-gray-500 border-gray-400 active:shadow-sm active:text-yellow-600 hover:active:border-yellow-600 hover:text-yellow-300 hover:border-yellow-200 rounded-lg px-2 py-1 transition-all border-2'
         on:click={ondelete}
         >
         Delete

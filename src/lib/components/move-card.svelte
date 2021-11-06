@@ -70,17 +70,17 @@
     <TypeBadge type={type} />
     <!-- Priority icons -->
     {#if priority > 0}
-      <span class='flex flex-row'>
+      <span class='flex flex-row dark:text-gray-200'>
         {#if priority > 3}
-          <Icon src={HighPriority} className='-mr-1.5' />
-          <Icon src={HighPriority} />
+          <Icon src={HighPriority} className='fill-current -mr-1.5' />
+          <Icon src={HighPriority} className='fill-current' />
         {:else if priority > 2}
-          <Icon src={HighPriority} className='-mr-1.5' />
-          <Icon src={Priority} />
+          <Icon src={HighPriority} className='-mr-1.5 fill-current' />
+          <Icon src={Priority} className='fill-current' />
         {:else if priority > 1}
-          <Icon src={HighPriority} />
+          <Icon src={HighPriority} className='fill-current' />
         {:else}
-          <Icon src={Priority} />
+          <Icon src={Priority} className='fill-current' />
         {/if}
       </span>
     {/if}

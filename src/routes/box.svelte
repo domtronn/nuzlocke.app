@@ -67,7 +67,7 @@
 {#if loading}
   <Loader />
 {:else}
-  <div transition:fade class='container mx-auto'>
+  <div out:fade={{ duration: 250 }} in:fade={{ duration: 250, delay: 300 }} class='container mx-auto'>
     <div class='flex flex-col mx-auto items-center justify-center'>
       <main role='main' class='w-full sm:w-2/3 md:w-3/4 flex flex-col gap-y-4 py-6 px-4 md:px-8 overflow-hidden'>
 
@@ -79,6 +79,9 @@
                 class:border-black={stat === s}
                 class:text-black={stat === s}
                 class:bg-gray-200={stat === s}
+                class:dark:bg-gray-900={stat === s}
+                class:dark:text-gray-200={stat === s}
+                class:dark:border-gray-200={stat === s}
                 >
                 <input type=radio bind:group={stat} name='sortable' value={s} />
                 <Icon className='hidden md:block text-xxs {s !== 'spa' ? 'fill-current' : ''} translate-y-1/2 -mt-0.5 mr-1'  src={StatIconMap[s]} />
@@ -106,7 +109,7 @@
           <div class='sm:order-none order-first col-span-1 flex justify-end -mt-8 sm:mt-0'>
             <button
               on:click={clear}
-              class='font-sans text-xs bg-white inline-flex items-center gap-x-2 hover:active:bg-indigo-50 shadow-md text-gray-500 border-gray-400 active:shadow-sm active:text-indigo-600 hover:active:border-indigo-600 hover:text-indigo-300 hover:border-indigo-200 rounded-lg px-2 py-1 transition-all border'
+              class='font-sans text-xs dark:bg-transparent dark:text-gray-300 dark:border-gray-300 dark:hover:text-indigo-400 dark:hover:border-indigo-400 dark:hover:active:bg-indigo-900 bg-white inline-flex items-center gap-x-2 hover:active:bg-yellow-50 shadow-md text-gray-500 border-gray-400 active:shadow-sm active:text-yellow-600 hover:active:border-yellow-600 hover:text-yellow-300 hover:border-yellow-200 rounded-lg px-2 py-1 transition-all border-2'
             >
               <Icon src={X} className='fill-current' size='1.2em' />
               Clear filters

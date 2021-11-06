@@ -1,10 +1,9 @@
-<div class='h-screen flex items-center justify-center'>
+<div class='h-screen absolute top-0 w-full flex items-center justify-center dark:text-gray-500 text-black'>
   <span />
 </div>
 
 <style>
   span {
-    color: black;
     font-size: 20px;
     margin: 100px auto;
     width: 1em;

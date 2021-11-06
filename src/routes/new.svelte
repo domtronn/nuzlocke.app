@@ -6,7 +6,7 @@
   import AutoComplete from 'simple-svelte-autocomplete'
   import File from 'svelte-icons-pack/cg/CgFileAdd'
   import Games from '$lib/data/games.json'
-
+  import PIcon from '$lib/components/pokemon-icon.svelte'
 
   let gameName = ''
   const handleNewGame = () => {
@@ -35,7 +35,7 @@
       type='text'
       bind:value={gameName}
       placeholder='Name'
-      class='transition-colors w-full md:w-auto hover:border-indigo-200 text-base focus:outline-none leading-4 focus:border-indigo-600 border-2 shadow-md block rounded-lg px-3 py-2'
+      class='text-xs md:text-base dark:border-gray-600 dark:bg-gray-700 transition-colors dark:hover:border-indigo-400 hover:border-indigo-200 text-md focus:outline-none leading-4 focus:border-indigo-600 border-2 shadow-md block w-full md:w-auto rounded-lg px-3 py-2'
     />
 
     <span class='relative block md:hidden'>
@@ -77,7 +77,14 @@
       class:focus:active:text-white={!disabled}
       class:hover:text-indigo-300={!disabled}
       class:hover:border-indigo-200={!disabled}
-      class='bg-white disabled:opacity-25 w-full md:w-auto disabled:bg-gray-50 disabled:cursor-default disabled:border-gray-300 disabled:text-gray-500 transition-colors text-gray-500 text-base focus:outline-none leading-4  border-2 shadow-md block rounded-lg px-3 py-2'>
+
+      class:dark:border-indigo-600={!disabled}
+      class:dark:bg-indigo-600={!disabled}
+      class:dark:text-gray-200={!disabled}
+      class:dark:hover:bg-indigo-400={!disabled}
+      class:dark:hover:text-indigo-600={!disabled}
+
+      class='bg-white dark:bg-gray-700 dark:text-gray-200 dark:border-gray-600 disabled:opacity-25 w-full md:w-auto disabled:bg-gray-50 disabled:cursor-default disabled:border-gray-300 disabled:text-gray-500 transition-colors text-gray-500 text-base focus:outline-none leading-4  border-2 shadow-md block rounded-lg px-3 py-2'>
       Create game
     </button>
 
@@ -124,7 +131,5 @@
 
 <style>
   label > input { display: none; }
-  img {
-    transition-duration: 250ms !important;
-  }
+  img { transition-duration: 250ms !important; }
 </style>

@@ -22,14 +22,14 @@
 <ScreenContainer>
   <span class='flex justify-between items-center md:gap-x-24'>
     <h1 class='text-lg md:text-2xl'>Load game</h1>
-    <Icon src={Floppy} size='1.4em' />
+    <Icon src={Floppy} size='1.4em' className='fill-current dark:text-gray-200' />
   </span>
 
   <hr />
 
   <div class='flex flex-col gap-y-4' transition:slide={{ duration: 300 }}>
     {#if loading}
-      <div class='flex flex-row justify-between items-center gap-x-18'>
+      <div class='flex flex-row justify-between items-center gap-x-32'>
         <div class='flex flex-row items-center'>
           <div class='bg-gray-400 animate-pulse h-16 w-16 -mt-1.5 mr-4 rounded-md' />
 

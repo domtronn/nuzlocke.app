@@ -22,7 +22,7 @@ const config = {
       colors: {
         orange: colors.orange,
         lime: colors.lime,
-        gray: colors.coolGray
+        gray: colors.trueGray
       }
     }
   },

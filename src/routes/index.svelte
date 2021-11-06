@@ -65,7 +65,7 @@
               <span>{summary.available.length}</span>
               <PIcon className='transform scale-75 -ml-1' type='item' name='poke-ball' />
               <span>{summary.deceased.length}</span>
-              <Icon className='ml-1 w-3 h-3' src={Deceased} />
+              <Icon className='ml-1 w-3 h-3 fill-current' src={Deceased} />
             </div>
           </a>
         {/if}

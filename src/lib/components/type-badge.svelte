@@ -29,6 +29,8 @@
 {/if}
 
 <style>
+  :global(.dark) div { color: theme('colors.gray.900') }
+
   div {
     z-index: 2;
     position: relative;

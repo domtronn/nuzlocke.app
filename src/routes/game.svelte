@@ -56,7 +56,7 @@
 {#await setup()}
   <Loader />
 {:then route}
-  <div transition:fade class="container mx-auto">
+  <div out:fade={{ duration: 250 }} in:fade={{ duration: 250, delay: 300 }} class="container mx-auto">
     <div class="flex flex-row flex-wrap h-screen justify-center">
       <main role="main" class="w-full sm:w-2/3 md:w-3/4 px-4 md:px-8 md:py-6 overflow-hidden">
         <div class='flex flex-col gap-y-4'>
@@ -68,9 +68,12 @@
                   class='cursor-pointer transition-colors border-b-2 rounded-none text-md'
                   class:border-transparent={filter !== i}
                   class:border-black={filter === i}
+                  class:dark:border-gray-200={filter === i}
                   class:text-black={filter === i}
+                  class:dark:text-gray-200={filter === i}
                   class:text-gray-500={filter !== i}
                   class:hover:border-gray-300={filter !== i}
+                  class:dark:hover:border-gray-500={filter !== i}
                   >
                   <input type=radio bind:group={filter} name='filter' value={i} />
                   {f}

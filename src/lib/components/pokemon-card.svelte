@@ -18,10 +18,10 @@
   const bgImg = Pattern(cols[1] || cols[0])
 </script>
 
-<div class='card relative flex flex-col border rounded-lg divide divide-y'>
+<div class='card relative flex flex-col border dark:border-gray-900 dark:shadow-lg rounded-lg divide divide-y-2 dark:divide-y-0'>
   <div
-    style='--t-col: {cols[0]}; background-image: url("{bgImg}")'
-    class='card__header flex justify-between pl-4 pt-4 pb-3 relative z-0 rounded-t-lg'
+    style='--t-col: {cols[0]}; background-image: url("{bgImg}"); border-color: {cols[0]}'
+    class='card__header flex justify-between pl-4 pt-4 pb-3 relative z-0 rounded-t-lg dark:border-b-2'
     >
     <div class='flex flex-row items-end gap-x-2'>
       {#if level}
@@ -30,8 +30,8 @@
           <span class='text-3xl font-bold'>{level}</span>
         </div>
       {/if}
-      <span class='relative text-xl mb-0.25 bg-white pr-2 z-40'>
-          <p class='-mb-1 w-auto relative text-xs bg-white z-40 h-4'>
+      <span class='relative text-xl mb-0.25 bg-white dark:bg-gray-900 dark:sm:bg-transparent sm:bg-transparent pr-2 z-40'>
+          <p class='-mb-1 w-auto relative text-xs bg-white dark:bg-gray-900 dark:sm:bg-transparent sm:bg-transparent z-40 h-4'>
         {#if ability}
             <span data-tooltip={ability.effect}>
               {ability.name}
@@ -66,7 +66,7 @@
     </div>
   </div>
 
-  <div class='relative inline-flex sm:items-center bg-white rounded-b-lg z-10'>
+  <div class='relative inline-flex sm:items-center bg-white dark:bg-gray-900 rounded-b-lg z-10'>
     {#if moves && moves.length}
       <div class='grid grid-cols-1 sm:grid-cols-2 grid-rows-2 w-3/5 sm:w-2/3 my-3 ml-4 gap-y-0 sm:gap-y-3'>
         {#each moves as m}
@@ -76,7 +76,7 @@
     {/if}
 
     <div class={moves && moves.length ? 'w-2/5 sm:w-1/3 mr-4 sm:mt-0 mt-5' : 'w-full m-4'}>
-      <StatBlock max={maxStat} {...stats} />
+      <StatBlock col={cols[0]} max={maxStat} {...stats} />
     </div>
   </div>
 </div>
@@ -108,6 +108,10 @@
   .card__header::before {
     z-index: -1;
     background: linear-gradient(to right, white 55%, transparent);
+  }
+
+  :global(.dark) .card__header::before {
+    background: linear-gradient(130deg, theme('colors.gray.900') 40%, transparent);
   }
 
   .img__pkm {

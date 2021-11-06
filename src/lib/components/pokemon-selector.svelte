@@ -99,7 +99,7 @@
       labelFieldName='name'
 
       className='text-xs md:text-md w-full min-w-0 {selected ? 'has-item' : ''}'
-      inputClassName='ac__input-container transition-colors hover:border-indigo-200 focus:outline-none focus:border-indigo-600 border-2 shadow-md block w-full rounded-lg'
+      inputClassName='ac__input-container dark:bg-gray-700 dark:border-gray-600 transition-colors hover:border-indigo-200 focus:outline-none focus:border-indigo-600 border-2 shadow-md block w-full rounded-lg'
       dropdownClassName='ac__dropdown-container rounded-lg border-2 border-gray-200 mt-2 shadow-md'
     >
       <div class='-m-3 flex inline-flex items-center' slot='item' let:item={item} let:label={label}>
@@ -128,14 +128,14 @@
       type='text'
       bind:value={nickname}
       placeholder='Nickname'
-      class='text-xs md:text-md transition-colors hover:border-indigo-200 text-md focus:outline-none leading-4 focus:border-indigo-600 border-2 shadow-md block  w-full rounded-lg px-3 py-2'
+      class='text-xs md:text-md dark:border-gray-600 dark:bg-gray-700 transition-colors dark:hover:border-indigo-400 hover:border-indigo-200 text-md focus:outline-none leading-4 focus:border-indigo-600 border-2 shadow-md block w-full rounded-lg px-3 py-2'
     />
   </span>
 
   <span class='relative col-span-1'>
     {#if status}
       <Icon
-        className='absolute z-10 left-3 bottom-0 mb-0.5 -translate-y-1/2'
+        className='absolute z-10 left-3 bottom-0 mb-0.5 -translate-y-1/2 fill-current'
         src={status.icon}
       />
     {/if}
@@ -148,7 +148,7 @@
       labelFieldName='state'
 
       className='text-xs md:text-md w-full min-w-0 {status ? 'has-status' : ''}'
-      inputClassName='ac__input-container text-md transition-colors hover:border-indigo-200 focus:outline-none focus:border-indigo-600 border-2 shadow-md block  w-full rounded-lg px-4 py-2'
+      inputClassName='ac__input-container dark:bg-gray-700 dark:border-gray-600 text-base transition-colors hover:border-indigo-200 focus:outline-none focus:border-indigo-600 border-2 shadow-md block  w-full rounded-lg px-4 py-2'
       dropdownClassName='ac__dropdown-container rounded-lg  border-2 border-gray-200 mt-2 shadow-md'
       >
       <div class='flex inline-flex gap-x-2 py-2 items-center' slot='item' let:item={item} let:label={label}>
@@ -168,7 +168,7 @@
   <span class='text-left inline-flex gap-x-2'>
     <button
       aria-label='Clear pokemon'
-      class='bg-white hover:active:bg-indigo-50 shadow-md text-gray-400 border-gray-200 active:shadow-sm active:text-indigo-600 hover:active:border-indigo-600 hover:text-indigo-300 hover:border-indigo-200 rounded-lg p-2 transition-all border-2'
+      class='bg-white dark:border-gray-600 dark:bg-gray-700 dark:text-gray-400 dark:hover:border-indigo-400 dark:hover:text-indigo-400 dark:hover:active:bg-indigo-800 dark:hover:active:text-indigo-400 hover:active:bg-indigo-50 shadow-md text-gray-400 border-gray-200 active:shadow-sm active:text-indigo-600 hover:active:border-indigo-600 hover:text-indigo-300 hover:border-indigo-200 rounded-lg p-2 transition-all border-2'
       on:click={handleClear}
     >
       <Icon src={Bin} className='fill-current' />
@@ -177,7 +177,7 @@
     {#if status && status.id !== 4 && status.id !== 5}
       <button
         aria-label='Kill pokemon'
-        class='bg-white hover:active:bg-indigo-50 shadow-md text-gray-400 border-gray-200 active:shadow-sm active:text-indigo-600 hover:active:border-indigo-600 hover:text-indigo-300 hover:border-indigo-200 rounded-lg p-2 transition-all border-2'
+        class='bg-white dark:border-gray-600 dark:bg-gray-700 dark:text-gray-400 dark:hover:border-indigo-400 dark:hover:text-indigo-400 dark:hover:active:bg-indigo-800 dark:hover:active:text-indigo-400 hover:active:bg-indigo-50 shadow-md text-gray-400 border-gray-200 active:shadow-sm active:text-indigo-600 hover:active:border-indigo-600 hover:text-indigo-300 hover:border-indigo-200 rounded-lg p-2 transition-all border-2'
         on:click={handleStatus(5)}
       >
         <Icon src={Deceased} className='fill-current' />
@@ -187,7 +187,7 @@
     {#if selected && !status}
       <button
         aria-label='Capture pokemon'
-        class='group flex items-center bg-white hover:grayscale-0 hover:opacity-100 grayscale hover:active:bg-orange-100 shadow-md text-gray-400 border-gray-200 active:shadow-sm active:text-orange-600 hover:active:border-orange-600 hover:border-orange-300 rounded-lg transition-all border-2'
+        class='group flex items-center bg-white dark:bg-gray-700 dark:text-gray-400 dark:border-gray-600 dark:hover:border-orange-400 dark:hover:active:bg-orange-800 dark:hover:active:text-orange-400 hover:grayscale-0 hover:opacity-100 grayscale hover:active:bg-orange-100 shadow-md text-gray-400 border-gray-200 active:shadow-sm active:text-orange-600 hover:active:border-orange-600 hover:border-orange-300 rounded-lg transition-all border-2'
         on:click={handleStatus(1)}
       >
         <PIcon name='poke-ball' type='item' className='transition-opacity -translate-y-0.5 opacity-50 group-hover:opacity-100' />
