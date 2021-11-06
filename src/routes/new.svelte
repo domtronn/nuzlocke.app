@@ -35,12 +35,12 @@
       type='text'
       bind:value={gameName}
       placeholder='Name'
-      class='text-xs md:text-base dark:border-gray-600 dark:bg-gray-700 transition-colors dark:hover:border-indigo-400 hover:border-indigo-200 text-md focus:outline-none leading-4 focus:border-indigo-600 border-2 shadow-md block w-full md:w-auto rounded-lg px-3 py-2'
+      class='text-xs md:text-md dark:border-gray-600 dark:bg-gray-700 transition-colors dark:hover:border-indigo-400 hover:border-indigo-200 text-md focus:outline-none leading-4 focus:border-indigo-600 border-2 shadow-md block w-full rounded-lg px-3 py-2'
     />
 
     <span class='relative block md:hidden'>
       {#if selectedGame}
-        <img class='absolute z-40 left-2' width=36 src={selectedGame.logo} alt={selectedGame.title + ' logo'} />
+        <img class='absolute z-40 left-2 top-1/2 -translate-y-1/2' width=36 src={selectedGame.logo} alt={selectedGame.title + ' logo'} />
       {/if}
       <AutoComplete
         hideArrow
@@ -49,8 +49,8 @@
         bind:selectedItem={selected}
         labelFunction={function (id) { return id && Games[id].title }}
 
-        className=' text-base w-full min-w-0 {selected ? 'has-status-lg' : ''}'
-        inputClassName='ac__input-container text-base transition-colors hover:border-indigo-200 focus:outline-none focus:border-indigo-600 border-2 shadow-md block w-full rounded-lg py-2'
+        className='text-xs sm:text-base w-full min-w-0 {selected ? 'has-status-lg' : ''}'
+        inputClassName='ac__input-container dark:bg-gray-700 dark:border-gray-600 transition-colors hover:border-indigo-200 focus:outline-none focus:border-indigo-600 border-2 shadow-md block w-full rounded-lg'
         dropdownClassName='ac__dropdown-container rounded-lg  border-2 border-gray-200 mt-2 shadow-md'
         >
         <div class='flex inline-flex gap-x-2 py-2 items-center h-8' slot='item' let:item={item} let:label={label}>

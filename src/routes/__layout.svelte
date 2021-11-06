@@ -11,6 +11,7 @@
   import { onMount } from 'svelte'
 
   import GameHeading from '$lib/components/game-heading.svelte'
+  import CookieConsent from "svelte-tailwind-cookieconsent/src"
 
   const mountStyle = (src) => {
     if (document.createStyleSheet) document.createStyleSheet(src)
@@ -61,6 +62,8 @@
 <svelte:head>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </svelte:head>
+
+<div class='absolute top-0 w-full g-g>
 
 {#if ['/game', '/box'].includes(path) }
   <GameHeading />

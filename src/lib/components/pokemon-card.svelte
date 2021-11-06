@@ -18,10 +18,10 @@
   const bgImg = Pattern(cols[1] || cols[0])
 </script>
 
-<div class='card relative flex flex-col border dark:border-gray-900 dark:shadow-lg rounded-lg divide divide-y-2 dark:divide-y-0'>
+<div class='card relative flex flex-col border dark:border-gray-900 dark:shadow-lg rounded-lg divide divide-y-2'>
   <div
-    style='--t-col: {cols[0]}; background-image: url("{bgImg}"); border-color: {cols[0]}'
-    class='card__header flex justify-between pl-4 pt-4 pb-3 relative z-0 rounded-t-lg dark:border-b-2'
+    style='--t-col: {cols[0]}; background-image: url("{bgImg}");'
+    class='card__header flex justify-between pl-4 pt-4 pb-3 relative z-0 rounded-t-lg'
     >
     <div class='flex flex-row items-end gap-x-2'>
       {#if level}
@@ -66,7 +66,9 @@
     </div>
   </div>
 
-  <div class='relative inline-flex sm:items-center bg-white dark:bg-gray-900 rounded-b-lg z-10'>
+  <div
+    style='border-color: {cols[0]}'
+    class='relative inline-flex dark:border-t-2 sm:items-center bg-white dark:bg-gray-900 rounded-b-lg z-10'>
     {#if moves && moves.length}
       <div class='grid grid-cols-1 sm:grid-cols-2 grid-rows-2 w-3/5 sm:w-2/3 my-3 ml-4 gap-y-0 sm:gap-y-3'>
         {#each moves as m}
