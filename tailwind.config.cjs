@@ -27,7 +27,7 @@ const config = {
     }
   },
 
-  darkMode: 'media',
+  darkMode: 'class',
   plugins: []
 };
 

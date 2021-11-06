@@ -6,6 +6,7 @@ import { uuid } from '$lib/utils/uuid'
 import { NuzlockeGroups, NuzlockeStates } from '$lib/data/states'
 
 const IDS = {
+  theme: 'nuzlocke.theme',
   active: 'nuzlocke',
   saves: 'nuzlocke.saves',
   game: id => `nuzlocke.${id}`
@@ -18,6 +19,7 @@ const createWritable = (id, f = val => browser && val && localStorage.setItem(id
   return w
 }
 
+export const theme = createWritable(IDS.theme)
 export const activeGame = createWritable(IDS.active)
 export const savedGames = createWritable(IDS.saves)
 

@@ -1,11 +1,8 @@
 <script>
   export let className = ''
-  import { activeGame, savedGames, getGame, read, parse } from '$lib/store'
+  import { activeGame, savedGames, getGame, theme, read, parse } from '$lib/store'
   import { fade } from 'svelte/transition'
   import { page } from '$app/stores'
-
-  let path = ''
-  page.subscribe(p => path = p.path)
 
   let game = {}
   activeGame.subscribe(id => {
@@ -14,17 +11,29 @@
     }))
   })
 
+  import Toggle from 'svelte-toggle'
+
   import Icon from 'svelte-icons-pack'
   import Box from 'svelte-icons-pack/bi/BiPackage'
   import Game from 'svelte-icons-pack/cg/CgGames'
   import Home from 'svelte-icons-pack/ai/AiOutlineHome'
+  import DarkMode from 'svelte-icons-pack/vsc/VscColorMode'
+
+  const toggleTheme = () => {
+    if ($theme === 'dark') {
+      theme.set('light')
+      document.documentElement.classList.remove('dark')
+    } else {
+      theme.set('dark')
+      document.documentElement.classList.add('dark')
+    }
+  }
 
   const pages = [
     { name: 'Home', link: '/', icon: Home },
     { name: 'Game', link: '/game', icon: Game },
     { name: 'Box', link: '/box', icon: Box },
   ]
-
 </script>
 
 <nav class='container mx-auto mb-8 md:mb-2 bg-black text-white sm:text-black sm:bg-transparent'>
@@ -39,17 +48,25 @@
     </span>
 
     <span class='inline-block'>
+      <span class='inline-flex gap-x-1 items-center'>
+        <Icon size='1.2em' src={DarkMode} />
+        <Toggle
+          toggled={$theme === 'dark'}
+          on:toggle={toggleTheme}
+          small hideLabel label='Dark mode' />
+      </span>
+
       {#each pages as p}
         <a
           class='inline-flex items-center gap-x-1 border-black transition p-2 px-3 md:p-4 text-sm md:text-base'
-          class:border-b-2={p.link == path}
-          class:bg-gray-50={p.link == path}
-          class:text-black={p.link == path}
-          class:cursor-default={p.link == path}
-          class:sm:text-gray-500={p.link !== path}
-          class:text-white={p.link !== path}
-          class:hover:text-black={p.link !== path}
-          class:cursor-pointer={p.link !== path}
+          class:border-b-2={p.link == $page.path}
+          class:bg-gray-50={p.link == $page.path}
+          class:text-black={p.link == $page.path}
+          class:cursor-default={p.link == $page.path}
+          class:sm:text-gray-500={p.link !== $page.path}
+          class:text-white={p.link !== $page.path}
+          class:hover:text-black={p.link !== $page.path}
+          class:cursor-pointer={p.link !== $page.path}
           href={p.link}
           >
           <Icon src={p.icon} className='fill-current' />
