@@ -138,7 +138,6 @@
             <Icon src={Info} className="fill-current text-gray-400" />
           </span>
           <Label heading='Lvl cap' body={levelCap} />
-          <Label heading='Team' body={teamCap} />
         {/if}
       </div>
     </span>
