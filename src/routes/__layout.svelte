@@ -72,3 +72,8 @@
 <slot />
 
 <CookieBanner />
+
+<footer class='text-center absolute w-full bottom-0 mb-4 px-4 text-xs text-gray-400 dark:text-gray-600'>
+  <p>All content & design © Pokémon Nuzlocke Tracker, 2021-{(new Date()).getFullYear()}. <a class='underline transition dark:hover:text-gray-400 hover:text-gray-200' href='/privacy-policy'>Privacy Policy</a></p>
+  <p>Pokémon images & names © 1995-2021 Nintendo/Creatures Inc./GAME FREAK inc. TM</p>
+</footer>

@@ -57,7 +57,7 @@
   <Loader />
 {:then route}
   <div out:fade={{ duration: 250 }} in:fade={{ duration: 250, delay: 300 }} class="container mx-auto">
-    <div class="flex flex-row flex-wrap h-screen justify-center">
+    <div class="flex flex-row flex-wrap pb-16 justify-center">
       <main role="main" class="w-full sm:w-2/3 md:w-3/4 px-4 md:px-8 md:py-6 overflow-hidden">
         <div class='flex flex-col gap-y-4'>
 
@@ -103,11 +103,13 @@
                 <GymCard game={gameKey} starter={starter} id={p.value} location={p.name} />
               </span >
             {/if}
-          {/each}
 
-          <IntersectionObserver {element} on:intersect={e => limit+=5}>
-            <span bind:this={element} />
-          </IntersectionObserver>
+            {#if i === limit -5}
+              <IntersectionObserver {element} on:intersect={e => limit+=5}>
+                <span bind:this={element} />
+              </IntersectionObserver>
+            {/if}
+          {/each}
         </div>
       </main>
     </div>
