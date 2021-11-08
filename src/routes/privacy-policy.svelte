@@ -2,8 +2,8 @@
   import PixelatedContainer from '$lib/components/pixelated-container.svelte'
 </script>
 
-<main class='container text-gray-800 dark:text-gray-300'>
-  <div class='w-full mx-auto pb-16 sm:pb-12 mx-4'>
+<main class='container text-gray-800 pt-8 sm:pt-0 dark:text-gray-300'>
+  <div class='mx-auto pb-16 sm:pb-12 mx-4'>
     <PixelatedContainer className='my-16 py-6 px-8 overflow-x-hidden mx-auto max-w-prose'>
       <h1 class='text-2xl'>Privacy Policy</h1>
       <p class='text-xs -mt-px'>Last updated: November 7th, 2021</p>
