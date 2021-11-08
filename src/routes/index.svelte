@@ -39,15 +39,15 @@
 <main class='container mx-auto h-screen -mt-16 flex flex-col justify-center'>
 
   <span class='mx-auto text-center'>
+    <h1 class='font-mono text-4xl'>Pokémon</h1>
     <img
-      width=300
-      height=128
+      width=321
       class:grayscale={!hovering}
       alt='Pokemon brand logo'
-      src='/pkmn-logo.webp'
-      class='transition h-auto md:h-32 -translate-x-2 translate-y-2 mx-auto'
+      src='/logo.png'
+      class='transition h-auto md:h-16 mt-2 mx-auto'
     />
-    <h1 class='font-mono text-4xl'>Nuzlocke tracker</h1>
+    <h1 class='font-mono text-4xl'>tracker</h1>
   </span>
 
   <div class='py-7 px-6 sm:px-4 overflow-hidden mt-10'>
