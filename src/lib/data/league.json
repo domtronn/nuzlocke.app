@@ -3436,6 +3436,333 @@
         }
       ]
     },
+    "mustard1": {
+      "name": "",
+      "speciality": "",
+      "pokemon": [
+        {
+          "name": "mienfoo",
+          "level": "61",
+          "moves": [
+            "fake-out",
+            "u-turn",
+            "force-palm"
+          ],
+          "ability": "inner-focus"
+        },
+        {
+          "name": "shinx",
+          "level": "61",
+          "moves": [
+            "spark",
+            "bite"
+          ],
+          "ability": "intimidate"
+        }
+      ]
+    },
+    "mustard2": {
+      "name": "",
+      "speciality": "",
+      "pokemon": [
+        {
+          "name": "mienshao",
+          "level": "78",
+          "moves": [
+            "fake-out",
+            "close-combat",
+            "blaze-kick",
+            "u-turn"
+          ],
+          "ability": "inner-focus"
+        },
+        {
+          "name": "luxray",
+          "level": "78",
+          "moves": [
+            "wild-charge",
+            "crunch",
+            "psychic-fangs",
+            "play-rough"
+          ],
+          "ability": "intimidate"
+        },
+        {
+          "name": "corviknight",
+          "level": "79",
+          "moves": [
+            "iron-head",
+            "brave-bird",
+            "light-screen",
+            "body-press"
+          ],
+          "ability": "unnerve"
+        },
+        {
+          "name": "lycanroc-midday",
+          "level": "80",
+          "moves": [
+            "stone-edge",
+            "accelerock",
+            "play-rough",
+            "stealth-rock"
+          ],
+          "ability": "keen-eye"
+        },
+        {
+          "name": "kommo-o",
+          "level": "80",
+          "moves": [
+            "clanging-scales",
+            "flash-cannon",
+            "aura-sphere",
+            "clangorous-soul"
+          ],
+          "ability": "soundproof"
+        },
+        {
+          "name": "urshifu-single-strike",
+          "level": "wicked-blow,close-combat,iron-head,poison-jab",
+          "moves": [
+            "unseen-fist"
+          ]
+        },
+        {
+          "name": "urshifu-rapid-strike",
+          "level": "surging-strikes,close-combat,iron-head,poison-jab",
+          "moves": [
+            "unseen-fist"
+          ]
+        }
+      ]
+    },
+    "kl1": {
+      "name": "Klara",
+      "speciality": "poison",
+      "pokemon": [
+        {
+          "name": "venipede",
+          "level": "58",
+          "moves": [
+            "poison-tail"
+          ],
+          "ability": "poison-point"
+        },
+        {
+          "name": "slowpoke",
+          "level": "60",
+          "moves": [
+            "confusion",
+            "acid"
+          ],
+          "ability": "gluttony"
+        }
+      ]
+    },
+    "kl2": {
+      "name": "Klara",
+      "speciality": "poison",
+      "pokemon": [
+        {
+          "name": "slowpoke",
+          "level": "62",
+          "moves": [
+            "confusion",
+            "acid"
+          ],
+          "ability": "gluttony"
+        },
+        {
+          "name": "koffing",
+          "level": "62",
+          "moves": [
+            "clear-smog",
+            "assurance"
+          ],
+          "ability": "levitate"
+        },
+        {
+          "name": "whirlipede",
+          "level": "63",
+          "moves": [
+            "poison-tail",
+            "bug-bite"
+          ],
+          "ability": "poison-point"
+        }
+      ]
+    },
+    "kl3": {
+      "name": "Klara",
+      "speciality": "poison",
+      "pokemon": [
+        {
+          "name": "skorupi",
+          "level": "65",
+          "moves": [
+            "bite",
+            "poison-fang"
+          ],
+          "ability": "battle-armor"
+        },
+        {
+          "name": "weezing-galar",
+          "level": "66",
+          "moves": [
+            "clear-smog",
+            "assurance"
+          ],
+          "ability": "levitate"
+        },
+        {
+          "name": "whirlipede",
+          "level": "66",
+          "moves": [
+            "poison-tail",
+            "bug-bite"
+          ],
+          "ability": "poison-point"
+        },
+        {
+          "name": "slowbro-galar",
+          "level": "67",
+          "moves": [
+            "water-pulse",
+            "confusion",
+            "shell-side-arm"
+          ],
+          "ability": "quick-draw"
+        }
+      ]
+    },
+    "av1": {
+      "name": "Avery",
+      "speciality": "psychic",
+      "pokemon": [
+        {
+          "name": "abra",
+          "level": "58",
+          "moves": [
+            "confusion"
+          ],
+          "ability": "synchronize"
+        },
+        {
+          "name": "slowpoke",
+          "level": "60",
+          "moves": [
+            "confusion",
+            "acid"
+          ],
+          "ability": "gluttony"
+        }
+      ]
+    },
+    "av2": {
+      "name": "Avery",
+      "speciality": "psychic",
+      "pokemon": [
+        {
+          "name": "slowpoke",
+          "level": "62",
+          "moves": [
+            "confusion",
+            "acid"
+          ],
+          "ability": "gluttony"
+        },
+        {
+          "name": "woobat",
+          "level": "62",
+          "moves": [
+            "confusion",
+            "air-cutter"
+          ],
+          "ability": "unaware"
+        },
+        {
+          "name": "kadabra",
+          "level": "53",
+          "moves": [
+            "psybeam",
+            "swift"
+          ],
+          "ability": "synchronize"
+        }
+      ]
+    },
+    "av3": {
+      "name": "Avery",
+      "speciality": "psychic",
+      "pokemon": [
+        {
+          "name": "ponyta-galar",
+          "level": "65",
+          "moves": [
+            "psybeam",
+            "fairy-wind"
+          ],
+          "ability": "run-away"
+        },
+        {
+          "name": "swoobat",
+          "level": "66",
+          "moves": [
+            "confusion",
+            "air-cutter"
+          ],
+          "ability": "unaware"
+        },
+        {
+          "name": "kadabra",
+          "level": "66",
+          "moves": [
+            "psybeam",
+            "swift"
+          ],
+          "ability": "synchronize"
+        },
+        {
+          "name": "slowbro-galar",
+          "level": "67",
+          "moves": [
+            "water-pulse",
+            "shell-side-arm",
+            "confusion"
+          ],
+          "ability": "quick-draw"
+        }
+      ]
+    },
+    "p": {
+      "name": "Peony",
+      "speciality": "steel",
+      "pokemon": [
+        {
+          "name": "copperajah",
+          "level": "70",
+          "moves": [
+            "high-horsepower",
+            "heavy-slam",
+            "play-rough",
+            "superpower"
+          ],
+          "ability": "sheer-force"
+        },
+        {
+          "name": "aggron",
+          "level": "70",
+          "moves": [
+            "body-press",
+            "stone-edge",
+            "crunch",
+            "iron-head"
+          ],
+          "ability": "sturdy",
+          "held": "sitrus-berry"
+        }
+      ]
+    },
     "4a": {
       "name": "Bea",
       "speciality": "fighting",

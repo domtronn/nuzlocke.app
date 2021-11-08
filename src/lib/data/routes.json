@@ -895,7 +895,8 @@
     {
       "type": "gym",
       "name": "Rival",
-      "value": "r1"
+      "value": "r1",
+      "group": "rival"
     },
     {
       "type": "route",
@@ -916,7 +917,8 @@
     {
       "type": "gym",
       "name": "Rival",
-      "value": "r2"
+      "value": "r2",
+      "group": "rival"
     },
     {
       "type": "route",
@@ -957,7 +959,8 @@
     {
       "type": "gym",
       "name": "Rival",
-      "value": "r3"
+      "value": "r3",
+      "group": "rival"
     },
     {
       "type": "route",
@@ -968,13 +971,20 @@
       "name": "Galar Mine"
     },
     {
+      "type": "gym",
+      "name": "Rival",
+      "value": "b1",
+      "group": "rival"
+    },
+    {
       "type": "route",
       "name": "Route 4"
     },
     {
       "type": "gym",
       "name": "Turfield Gym",
-      "value": "1"
+      "value": "1",
+      "group": "gym-leader"
     },
     {
       "type": "route",
@@ -983,7 +993,8 @@
     {
       "type": "gym",
       "name": "Rival",
-      "value": "r4"
+      "value": "r4",
+      "group": "rival"
     },
     {
       "type": "route",
@@ -992,11 +1003,18 @@
     {
       "type": "gym",
       "name": "Hulbury Gym",
-      "value": "2"
+      "value": "2",
+      "group": "gym-leader"
     },
     {
       "type": "route",
-      "name": "Galar Mine No. 2"
+      "name": "Galar Mine No.2"
+    },
+    {
+      "type": "gym",
+      "name": "Galar Mine No.2 Exit",
+      "value": "b2",
+      "group": "rival"
     },
     {
       "type": "route",
@@ -1005,7 +1023,8 @@
     {
       "type": "gym",
       "name": "Budew Drop Inn",
-      "value": "m1"
+      "value": "m1",
+      "group": "rival"
     },
     {
       "type": "route",
@@ -1014,7 +1033,8 @@
     {
       "type": "gym",
       "name": "Motostoke Gym",
-      "value": "3"
+      "value": "3",
+      "group": "gym-leader"
     },
     {
       "type": "route",
@@ -1055,12 +1075,20 @@
     {
       "type": "gym",
       "name": "Rival",
-      "value": "r5"
+      "value": "r5",
+      "group": "rival"
     },
     {
       "type": "gym",
       "name": "Stow-on-Side Gym",
-      "value": "4b"
+      "value": "4b",
+      "group": "gym-leader"
+    },
+    {
+      "type": "gym",
+      "name": "Stow-on-Side Monument",
+      "value": "b3",
+      "group": "rival"
     },
     {
       "type": "route",
@@ -1069,7 +1097,8 @@
     {
       "type": "gym",
       "name": "Ballonlea Gym",
-      "value": "5"
+      "value": "5",
+      "group": "gym-leader"
     },
     {
       "type": "route",
@@ -1078,7 +1107,8 @@
     {
       "type": "gym",
       "name": "Rival",
-      "value": "r6"
+      "value": "r6",
+      "group": "rival"
     },
     {
       "type": "route",
@@ -1087,12 +1117,14 @@
     {
       "type": "gym",
       "name": "Rival",
-      "value": "r7"
+      "value": "r7",
+      "group": "rival"
     },
     {
       "type": "gym",
       "name": "Circhester Gym",
-      "value": "6b"
+      "value": "6b",
+      "group": "gym-leader"
     },
     {
       "type": "route",
@@ -1101,17 +1133,20 @@
     {
       "type": "gym",
       "name": "Outer Spikemouth",
-      "value": "m2"
+      "value": "m2",
+      "group": "rival"
     },
     {
       "type": "gym",
       "name": "Spikemouth Gym",
-      "value": "7"
+      "value": "7",
+      "group": "gym-leader"
     },
     {
       "type": "gym",
       "name": "Hammerlock Gym",
-      "value": "8"
+      "value": "8",
+      "group": "gym-leader"
     },
     {
       "type": "route",
@@ -1124,51 +1159,72 @@
     {
       "type": "gym",
       "name": "Wyndon Semi Finals",
-      "value": "e1"
+      "value": "e1",
+      "group": "elite-four"
     },
     {
       "type": "gym",
       "name": "Wyndon Semi Finals",
-      "value": "e2"
+      "value": "e2",
+      "group": "elite-four"
     },
     {
       "type": "gym",
       "name": "Rose Tower",
-      "value": "olebna"
+      "value": "oleana",
+      "group": "evil-team"
     },
     {
       "type": "gym",
       "name": "Wyndon Championship Match",
-      "value": "e3"
+      "value": "e3",
+      "group": "elite-four"
     },
     {
       "type": "gym",
       "name": "Wyndon Championship Match",
-      "value": "e4"
+      "value": "e4",
+      "group": "elite-four"
     },
     {
       "type": "gym",
       "name": "Wyndon Championship Match",
-      "value": "e5b"
+      "value": "e5a",
+      "group": "elite-four"
     },
     {
       "type": "gym",
       "name": "Wyndon Championship Match",
-      "value": "e6"
+      "value": "e6",
+      "group": "elite-four"
     },
     {
       "type": "gym",
       "name": "Energy Plant",
-      "value": "rose"
+      "value": "rose",
+      "group": "evil-team"
     },
     {
       "type": "gym",
       "name": "Wyndon Championship Final",
-      "value": "ca"
+      "value": "ca",
+      "group": "elite-four"
     },
     {
       "type": "route",
       "name": "Isle of Armor: Fields of Honor"
+    },
+    {
+      "type": "gym",
+      "name": "Fields of Honor",
+      "value": "av1",
+      "group": "rival "
+    },
+    {
+      "type": "gym",
+      "name": "Master Dojo",
+      "value": "mustard1",
+      "group": "rival"
     },
     {
       "type": "route",
@@ -1207,6 +1263,12 @@
       "name": "Isle of Armor: Warm-Up Tunnel"
     },
     {
+      "type": "gym",
+      "name": "Warm-Up Tunnel",
+      "value": "av2",
+      "group": "rival"
+    },
+    {
       "type": "route",
       "name": "Isle of Armor: Potbottom Desert"
     },
@@ -1231,8 +1293,26 @@
       "name": "Isle of Armor: Honeycalm Island"
     },
     {
+      "type": "gym",
+      "name": "Battle Court",
+      "value": "av3",
+      "group": "rival"
+    },
+    {
+      "type": "gym",
+      "name": "Battle Court",
+      "value": "mustard2",
+      "group": "rival"
+    },
+    {
       "type": "route",
       "name": "Crown Tundra: Slippery Slope"
+    },
+    {
+      "type": "gym",
+      "name": "Slipper Slope Ambush",
+      "value": "p",
+      "group": "rival"
     },
     {
       "type": "route",
@@ -1323,7 +1403,8 @@
     {
       "type": "gym",
       "name": "Rival",
-      "value": "r1"
+      "value": "r1",
+      "group": "rival"
     },
     {
       "type": "route",
@@ -1344,7 +1425,8 @@
     {
       "type": "gym",
       "name": "Rival",
-      "value": "r2"
+      "value": "r2",
+      "group": "rival"
     },
     {
       "type": "route",
@@ -1385,7 +1467,8 @@
     {
       "type": "gym",
       "name": "Rival",
-      "value": "r3"
+      "value": "r3",
+      "group": "rival"
     },
     {
       "type": "route",
@@ -1396,13 +1479,20 @@
       "name": "Galar Mine"
     },
     {
+      "type": "gym",
+      "name": "Rival",
+      "value": "b1",
+      "group": "rival"
+    },
+    {
       "type": "route",
       "name": "Route 4"
     },
     {
       "type": "gym",
       "name": "Turfield Gym",
-      "value": "1"
+      "value": "1",
+      "group": "gym-leader"
     },
     {
       "type": "route",
@@ -1411,7 +1501,8 @@
     {
       "type": "gym",
       "name": "Rival",
-      "value": "r4"
+      "value": "r4",
+      "group": "rival"
     },
     {
       "type": "route",
@@ -1420,11 +1511,18 @@
     {
       "type": "gym",
       "name": "Hulbury Gym",
-      "value": "2"
+      "value": "2",
+      "group": "gym-leader"
     },
     {
       "type": "route",
-      "name": "Galar Mine No. 2"
+      "name": "Galar Mine No.2"
+    },
+    {
+      "type": "gym",
+      "name": "Galar Mine No.2 Exit",
+      "value": "b2",
+      "group": "rival"
     },
     {
       "type": "route",
@@ -1433,7 +1531,8 @@
     {
       "type": "gym",
       "name": "Budew Drop Inn",
-      "value": "m1"
+      "value": "m1",
+      "group": "rival"
     },
     {
       "type": "route",
@@ -1442,7 +1541,8 @@
     {
       "type": "gym",
       "name": "Motostoke Gym",
-      "value": "3"
+      "value": "3",
+      "group": "gym-leader"
     },
     {
       "type": "route",
@@ -1483,12 +1583,20 @@
     {
       "type": "gym",
       "name": "Rival",
-      "value": "r5"
+      "value": "r5",
+      "group": "rival"
     },
     {
       "type": "gym",
       "name": "Stow-on-Side Gym",
-      "value": "4a"
+      "value": "4a",
+      "group": "gym-leader"
+    },
+    {
+      "type": "gym",
+      "name": "Stow-on-Side Monument",
+      "value": "b3",
+      "group": "rival"
     },
     {
       "type": "route",
@@ -1497,7 +1605,8 @@
     {
       "type": "gym",
       "name": "Ballonlea Gym",
-      "value": "5"
+      "value": "5",
+      "group": "gym-leader"
     },
     {
       "type": "route",
@@ -1506,7 +1615,8 @@
     {
       "type": "gym",
       "name": "Rival",
-      "value": "r6"
+      "value": "r6",
+      "group": "rival"
     },
     {
       "type": "route",
@@ -1515,12 +1625,14 @@
     {
       "type": "gym",
       "name": "Rival",
-      "value": "r7"
+      "value": "r7",
+      "group": "rival"
     },
     {
       "type": "gym",
       "name": "Circhester Gym",
-      "value": "6a"
+      "value": "6a",
+      "group": "gym-leader"
     },
     {
       "type": "route",
@@ -1529,17 +1641,20 @@
     {
       "type": "gym",
       "name": "Outer Spikemouth",
-      "value": "m2"
+      "value": "m2",
+      "group": "rival"
     },
     {
       "type": "gym",
       "name": "Spikemouth Gym",
-      "value": "7"
+      "value": "7",
+      "group": "gym-leader"
     },
     {
       "type": "gym",
       "name": "Hammerlock Gym",
-      "value": "8"
+      "value": "8",
+      "group": "gym-leader"
     },
     {
       "type": "route",
@@ -1552,51 +1667,72 @@
     {
       "type": "gym",
       "name": "Wyndon Semi Finals",
-      "value": "e1"
+      "value": "e1",
+      "group": "elite-four"
     },
     {
       "type": "gym",
       "name": "Wyndon Semi Finals",
-      "value": "e2"
+      "value": "e2",
+      "group": "elite-four"
     },
     {
       "type": "gym",
       "name": "Rose Tower",
-      "value": "oleana"
+      "value": "oleana",
+      "group": "evil-team"
     },
     {
       "type": "gym",
       "name": "Wyndon Championship Match",
-      "value": "e3"
+      "value": "e3",
+      "group": "elite-four"
     },
     {
       "type": "gym",
       "name": "Wyndon Championship Match",
-      "value": "e4"
+      "value": "e4",
+      "group": "elite-four"
     },
     {
       "type": "gym",
       "name": "Wyndon Championship Match",
-      "value": "e5a"
+      "value": "e5a",
+      "group": "elite-four"
     },
     {
       "type": "gym",
       "name": "Wyndon Championship Match",
-      "value": "e6"
+      "value": "e6",
+      "group": "elite-four"
     },
     {
       "type": "gym",
       "name": "Energy Plant",
-      "value": "rose"
+      "value": "rose",
+      "group": "evil-team"
     },
     {
       "type": "gym",
       "name": "Wyndon Championship Final",
-      "value": "ca"
+      "value": "ca",
+      "group": "elite-four"
     },
     {
       "type": "route",
       "name": "Isle of Armor: Fields of Honor"
+    },
+    {
+      "type": "gym",
+      "name": "Fields of Honor",
+      "value": "kl1",
+      "group": "rival "
+    },
+    {
+      "type": "gym",
+      "name": "Master Dojo",
+      "value": "mustard1",
+      "group": "rival"
     },
     {
       "type": "route",
@@ -1635,6 +1771,12 @@
       "name": "Isle of Armor: Warm-Up Tunnel"
     },
     {
+      "type": "gym",
+      "name": "Warm-Up Tunnel",
+      "value": "kl2",
+      "group": "rival"
+    },
+    {
       "type": "route",
       "name": "Isle of Armor: Potbottom Desert"
     },
@@ -1659,8 +1801,26 @@
       "name": "Isle of Armor: Honeycalm Island"
     },
     {
+      "type": "gym",
+      "name": "Battle Court",
+      "value": "kl3",
+      "group": "rival"
+    },
+    {
+      "type": "gym",
+      "name": "Battle Court",
+      "value": "mustard2",
+      "group": "rival"
+    },
+    {
       "type": "route",
       "name": "Crown Tundra: Slippery Slope"
+    },
+    {
+      "type": "gym",
+      "name": "Slipper Slope Ambush",
+      "value": "p",
+      "group": "rival"
     },
     {
       "type": "route",
