@@ -36,7 +36,7 @@
   $: src = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png`
 </script>
 
-<main class='container mx-auto h-screen flex flex-col justify-center'>
+<main class='container mx-auto h-screen -mt-16 flex flex-col justify-center'>
 
   <span class='mx-auto text-center'>
     <img

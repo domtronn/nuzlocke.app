@@ -29,7 +29,7 @@
   $: disabled = !gameName.length || !selected
 </script>
 
-<ScreenContainer title='New Nuzlocke' icon={File}>
+<ScreenContainer title='New Nuzlocke' className='-mt-16' icon={File}>
   <div class='flex flex-col md:flex-row md:flex-wrap gap-y-4 gap-2'>
     <input
       type='text'

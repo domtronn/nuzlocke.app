@@ -11,23 +11,12 @@
     }))
   })
 
-  import Toggle from 'svelte-toggle'
+  import ThemeToggle from '$lib/components/theme-toggle.svelte'
 
   import Icon from 'svelte-icons-pack'
   import Box from 'svelte-icons-pack/bi/BiPackage'
   import Game from 'svelte-icons-pack/cg/CgGames'
   import Home from 'svelte-icons-pack/ai/AiOutlineHome'
-  import DarkMode from 'svelte-icons-pack/vsc/VscColorMode'
-
-  const toggleTheme = () => {
-    if ($theme === 'dark') {
-      theme.set('light')
-      document.documentElement.classList.remove('dark')
-    } else {
-      theme.set('dark')
-      document.documentElement.classList.add('dark')
-    }
-  }
 
   const pages = [
     { name: 'Game', link: '/game', icon: Game },
@@ -50,13 +39,7 @@
     </a>
 
     <span class='inline-flex'>
-      <span class='inline-flex gap-x-2 items-center mr-4'>
-        <Icon size='1.2em' className='dark:text-gray-200' src={DarkMode} />
-        <Toggle
-          toggled={$theme === 'dark'}
-          on:toggle={toggleTheme}
-          small hideLabel label='Dark mode' />
-      </span>
+      <ThemeToggle />
 
       {#each pages as p}
         <a
