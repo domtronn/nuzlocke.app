@@ -17,7 +17,7 @@
 </script>
 
 <span class='inline-flex gap-x-2 items-center mr-4'>
-  <Icon size='1.2em' className='dark:text-gray-200 fill-currentg' src={DarkMode} />
+  <Icon size='1.2em' className='dark:text-gray-200 fill-current' src={DarkMode} />
 
   <Toggle
     toggled={$theme === 'dark'}
