@@ -34,7 +34,7 @@
 
   <div class='flex flex-col gap-y-4' transition:slide={{ duration: 300 }}>
     {#if loading}
-      <div class='flex flex-row justify-between items-center gap-x-32'>
+      <div class='flex flex-row justify-between items-center gap-x-24 mt-2'>
         <div class='flex flex-row items-center'>
           <div class='bg-gray-400 animate-pulse h-16 w-16 -mt-1.5 mr-4 rounded-md' />
 
@@ -57,9 +57,24 @@
         <Save {...game} />
       {/each}
     {:else if !loading && !games.length}
-      You have no games
+      You currently have no saved games
         <a sveltekit:prefetch href="/new">
-          <button>New game</button>
+          <button
+            class:focus:active:border-indigo-600={true}
+            class:focus:active:bg-indigo-600={true}
+            class:focus:active:text-white={true}
+            class:hover:text-indigo-300={true}
+            class:hover:border-indigo-200={true}
+
+            class:dark:border-indigo-600={true}
+            class:dark:bg-indigo-600={true}
+            class:dark:text-gray-200={true}
+            class:dark:hover:bg-indigo-400={true}
+            class:dark:hover:text-indigo-600={true}
+
+            class='bg-white flex-1 dark:bg-gray-700 dark:text-gray-200 dark:border-gray-600 disabled:opacity-25 w-full disabled:bg-gray-50 disabled:cursor-default disabled:border-gray-300 disabled:text-gray-500 transition-colors text-gray-500 text-base focus:outline-none leading-4  border-2 shadow-md block rounded-lg px-3 py-2'>
+            Create game
+          </button>
         </a>
       {/if}
   </div>
