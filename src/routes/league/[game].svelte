@@ -3,6 +3,9 @@
   import games from '$lib/data/games.json'
 
   export async function load({ page }) {
+    if (!games[page.params.game])
+      return { props: {} }
+
     const { pid, lid } = games[page.params.game]
     const path = Object.keys(league[lid || pid])
 
@@ -16,5 +19,5 @@
 </script>
 
 {#each path as gym}
-  <GymCard game={game} id={gym} />
+  <GymCard starter='fire' game={game} id={gym} />
 {/each}

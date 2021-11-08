@@ -301,7 +301,8 @@
     {
       "type": "gym",
       "name": "Cherrygrove City",
-      "value": "r1"
+      "value": "r1",
+      "group": "rival"
     },
     {
       "type": "route",
@@ -322,16 +323,12 @@
     {
       "type": "gym",
       "name": "Violet City Gym",
-      "value": "1"
+      "value": "1",
+      "group": "gym-leader"
     },
     {
       "type": "route",
       "name": "Sprout Tower"
-    },
-    {
-      "type": "gym",
-      "name": "Sprout Tower",
-      "value": "elder"
     },
     {
       "type": "route",
@@ -354,18 +351,26 @@
       "name": "Azalea Town"
     },
     {
-      "type": "gym",
-      "name": "Azalea Town Gym",
-      "value": "2"
-    },
-    {
       "type": "route",
       "name": "Slowpoke Well"
     },
     {
       "type": "gym",
-      "name": "Azalea Town",
-      "value": "r2"
+      "name": "Slowpoke Well",
+      "value": "proton1",
+      "group": "evil-team"
+    },
+    {
+      "type": "gym",
+      "name": "Azalea Town Gym",
+      "value": "2",
+      "group": "gym-leader"
+    },
+    {
+      "type": "gym",
+      "name": "Exit to Ilex Forest",
+      "value": "r2",
+      "group": "rival"
     },
     {
       "type": "route",
@@ -382,12 +387,8 @@
     {
       "type": "gym",
       "name": "Goldenrod City Gym",
-      "value": "3"
-    },
-    {
-      "type": "gym",
-      "name": "Goldenrod Tunnel",
-      "value": "r4"
+      "value": "3",
+      "group": "gym-leader"
     },
     {
       "type": "route",
@@ -416,7 +417,8 @@
     {
       "type": "gym",
       "name": "Burned Tower",
-      "value": "r3"
+      "value": "r3",
+      "group": "rival"
     },
     {
       "type": "route",
@@ -425,7 +427,8 @@
     {
       "type": "gym",
       "name": "Ecruteak City Gym",
-      "value": "4"
+      "value": "4",
+      "group": "gym-leader"
     },
     {
       "type": "route",
@@ -457,13 +460,21 @@
     },
     {
       "type": "gym",
+      "name": "Suicune Encounter",
+      "value": "eusine",
+      "group": "rival"
+    },
+    {
+      "type": "gym",
       "name": "Cianwood City Gym",
-      "value": "5"
+      "value": "5",
+      "group": "gym-leader"
     },
     {
       "type": "gym",
       "name": "Olivine City Gym",
-      "value": "6"
+      "value": "6",
+      "group": "gym-leader"
     },
     {
       "type": "route",
@@ -507,16 +518,59 @@
     },
     {
       "type": "route",
-      "name": "Route 43"
-    },
-    {
-      "type": "route",
       "name": "Lake of Rage"
     },
     {
       "type": "gym",
+      "name": "Rocket Hideout",
+      "value": "petrel1",
+      "group": "evil-team"
+    },
+    {
+      "type": "gym",
+      "name": "Rocket Hideout",
+      "value": "ariana1",
+      "group": "evil-team"
+    },
+    {
+      "type": "route",
+      "name": "Route 43"
+    },
+    {
+      "type": "gym",
       "name": "Mahogany Town Gym",
-      "value": "7"
+      "value": "7",
+      "group": "gym-leader"
+    },
+    {
+      "type": "gym",
+      "name": "Goldenrod tunnel",
+      "value": "r4",
+      "group": "rival"
+    },
+    {
+      "type": "gym",
+      "name": "Goldenrod Radio Tower",
+      "value": "petrel2",
+      "group": "evil-team"
+    },
+    {
+      "type": "gym",
+      "name": "Goldenrod Radio Tower",
+      "value": "proton2",
+      "group": "evil-team"
+    },
+    {
+      "type": "gym",
+      "name": "Goldenrod Radio Tower",
+      "value": "ariana2",
+      "group": "evil-team"
+    },
+    {
+      "type": "gym",
+      "name": "Goldenrod Radio Tower",
+      "value": "archer",
+      "group": "evil-team"
     },
     {
       "type": "route",
@@ -537,7 +591,8 @@
     {
       "type": "gym",
       "name": "Blackthorn City Gym",
-      "value": "8"
+      "value": "8",
+      "group": "gym-leader"
     },
     {
       "type": "route",
@@ -570,7 +625,8 @@
     {
       "type": "gym",
       "name": "Victory Road",
-      "value": "r5"
+      "value": "r5",
+      "group": "rival"
     },
     {
       "type": "route",
@@ -579,26 +635,42 @@
     {
       "type": "gym",
       "name": "Elite Four",
-      "value": "e1"
+      "value": "e1",
+      "group": "elite-four"
     },
     {
       "type": "gym",
       "name": "Elite Four",
-      "value": "e2"
+      "value": "e2",
+      "group": "elite-four"
     },
     {
       "type": "gym",
       "name": "Elite Four",
-      "value": "e3"
+      "value": "e3",
+      "group": "elite-four"
+    },
+    {
+      "type": "gym",
+      "name": "Elite Four",
+      "value": "e4",
+      "group": "elite-four"
     },
     {
       "type": "gym",
       "name": "Champion Fight",
-      "value": "e4"
+      "value": "c",
+      "group": "elite-four"
     },
     {
       "type": "route",
       "name": "Vermillion City"
+    },
+    {
+      "type": "gym",
+      "name": "Vermillion City Gym",
+      "value": "k1",
+      "group": "gym-leader"
     },
     {
       "type": "route",
@@ -609,8 +681,10 @@
       "name": "Saffron City"
     },
     {
-      "type": "route",
-      "name": "Route 5"
+      "type": "gym",
+      "name": "Saffron City Gym",
+      "value": "k2",
+      "group": "gym-leader"
     },
     {
       "type": "route",
@@ -618,39 +692,13 @@
     },
     {
       "type": "route",
-      "name": "Route 8"
+      "name": "Celadon City"
     },
     {
-      "type": "route",
-      "name": "Route 10"
-    },
-    {
-      "type": "route",
-      "name": "Power Plant"
-    },
-    {
-      "type": "route",
-      "name": "Rock Tunnel"
-    },
-    {
-      "type": "route",
-      "name": "Route 9"
-    },
-    {
-      "type": "route",
-      "name": "Cerulean City"
-    },
-    {
-      "type": "route",
-      "name": "Route 24"
-    },
-    {
-      "type": "route",
-      "name": "Route 25"
-    },
-    {
-      "type": "route",
-      "name": "Route 4"
+      "type": "gym",
+      "name": "Celadon City Gym",
+      "value": "k3",
+      "group": "gym-leader"
     },
     {
       "type": "route",
@@ -667,6 +715,12 @@
     {
       "type": "route",
       "name": "Fuschia City"
+    },
+    {
+      "type": "gym",
+      "name": "Fuschia City Gym",
+      "value": "k4",
+      "group": "gym-leader"
     },
     {
       "type": "route",
@@ -686,6 +740,52 @@
     },
     {
       "type": "route",
+      "name": "Route 8"
+    },
+    {
+      "type": "route",
+      "name": "Route 5"
+    },
+    {
+      "type": "route",
+      "name": "Route 9"
+    },
+    {
+      "type": "route",
+      "name": "Route 10"
+    },
+    {
+      "type": "route",
+      "name": "Power Plant"
+    },
+    {
+      "type": "route",
+      "name": "Route 24"
+    },
+    {
+      "type": "route",
+      "name": "Route 25"
+    },
+    {
+      "type": "route",
+      "name": "Cerulean City"
+    },
+    {
+      "type": "gym",
+      "name": "Cerulean City Gym",
+      "value": "k5",
+      "group": "gym-leader"
+    },
+    {
+      "type": "route",
+      "name": "Rock Tunnel"
+    },
+    {
+      "type": "route",
+      "name": "Route 4"
+    },
+    {
+      "type": "route",
       "name": "Route 11"
     },
     {
@@ -694,11 +794,13 @@
     },
     {
       "type": "route",
-      "name": "Route 2"
+      "name": "Pewter City"
     },
     {
-      "type": "route",
-      "name": "Pewter City"
+      "type": "gym",
+      "name": "Pewter City Gym",
+      "value": "k6",
+      "group": "gym-leader"
     },
     {
       "type": "route",
@@ -707,6 +809,20 @@
     {
       "type": "route",
       "name": "Mt. Moon"
+    },
+    {
+      "type": "gym",
+      "name": "Mt. Moon Rival",
+      "value": "r6",
+      "group": "rival"
+    },
+    {
+      "type": "route",
+      "name": "Viridian Forest"
+    },
+    {
+      "type": "route",
+      "name": "Route 2"
     },
     {
       "type": "route",
@@ -733,6 +849,18 @@
       "name": "Route 20"
     },
     {
+      "type": "gym",
+      "name": "Cinnabar Island Gym",
+      "value": "k7",
+      "group": "gym-leader"
+    },
+    {
+      "type": "gym",
+      "name": "Virdian City Gym",
+      "value": "k8",
+      "group": "gym-leader"
+    },
+    {
       "type": "route",
       "name": "Route 19"
     },
@@ -747,6 +875,12 @@
     {
       "type": "route",
       "name": "Mt. Silver"
+    },
+    {
+      "type": "gym",
+      "name": "Champion",
+      "value": "red",
+      "group": "rival"
     },
     {
       "type": "route",

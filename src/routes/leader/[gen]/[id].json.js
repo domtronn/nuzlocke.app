@@ -96,7 +96,6 @@ export async function get ({ params, query }) {
       }
     }
   } catch (E) {
-    console.log(E)
     console.log(E.response.status, E.request.path)
   }
 }

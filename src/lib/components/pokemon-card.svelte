@@ -47,7 +47,7 @@
               <span data-tooltip={held.effect}>
                 <PIcon type='item' name={held.sprite} />
               </span>
-              <Icon src={Hand} className='-mt-3.5' />
+              <Icon src={Hand} className='-mt-3.5 fill-current dark:text-white' />
             </div>
           {/if}
 
