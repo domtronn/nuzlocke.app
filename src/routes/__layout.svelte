@@ -10,7 +10,10 @@
   import '../app.css'
   import { onMount } from 'svelte'
 
+  import { slide } from 'svelte/transition'
+
   import GameHeading from '$lib/components/game-heading.svelte'
+  import CookieBanner from '$lib/components/cookie-banner.svelte'
 
   const mountStyle = (src) => {
     if (document.createStyleSheet) document.createStyleSheet(src)
@@ -67,3 +70,5 @@
 {/if}
 
 <slot />
+
+<CookieBanner />

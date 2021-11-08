@@ -25,7 +25,6 @@
 
   :global(.dark) b::after {
     background-color: theme('colors.gray.900');
-    border-color: var(--t-col);
   }
 
   :global(.dark) b::before {
@@ -42,7 +41,7 @@
     left: 0;
     border-radius: 6px;
     z-index: -5;
-    border: 2px solid #e5e7eb;
+    border: 2px solid var(--t-col);
   }
 
   b::before {

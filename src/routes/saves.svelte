@@ -11,6 +11,11 @@
   import Icon from 'svelte-icons-pack'
   import Floppy from 'svelte-icons-pack/im/ImFloppyDisk'
 
+  const FloppyIcon = {
+    ...Floppy,
+    c: Floppy.c.replace(/fill="#000000"/g, '')
+  }
+
   let games = []
   let loading = true
   savedGames.subscribe(parse(g => {
@@ -22,7 +27,7 @@
 <ScreenContainer>
   <span class='flex justify-between items-center md:gap-x-24'>
     <h1 class='text-lg md:text-2xl'>Load game</h1>
-    <Icon src={Floppy} size='1.4em' className='fill-current dark:text-gray-200' />
+    <Icon src={FloppyIcon} size='1.4em' className='fill-current dark:text-gray-200g' />
   </span>
 
   <hr />

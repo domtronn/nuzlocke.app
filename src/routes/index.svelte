@@ -41,11 +41,11 @@
   <span class='mx-auto text-center'>
     <img
       width=300
-      height=118
+      height=128
       class:grayscale={!hovering}
       alt='Pokemon brand logo'
       src='/pkmn-logo.webp'
-      class='transition h-24 md:h-32 -translate-x-2 translate-y-2 mx-auto'
+      class='transition h-auto md:h-32 -translate-x-2 translate-y-2 mx-auto'
     />
     <h1 class='font-mono text-4xl'>Nuzlocke tracker</h1>
   </span>
