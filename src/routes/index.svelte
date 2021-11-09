@@ -57,7 +57,7 @@
       <div class='font-bold flex flex-col'>
 
         {#if active && active.game}
-          <a class='mb-1 group tracking-widest group-hover:drop-shadow-text group-hover:text-pink-500' on:mouseenter={toggleHover} on:mouseleave={toggleHover} rel="external" href='/game'>
+          <a class='mb-1 group tracking-widest hover:drop-shadow-text hover:text-pink-500' on:mouseenter={toggleHover} on:mouseleave={toggleHover} rel="external" href='/game'>
             Continue
             <div class='flex flex-row group-hover:grayscale-0 grayscale items-center transition h-8 -mt-1 font-sans text-sm font-normal'>
               <img width=auto height=32 class='w-auto h-8 mr-2' src='/assets/{active.game}.png' alt='{active.game} logo' />
