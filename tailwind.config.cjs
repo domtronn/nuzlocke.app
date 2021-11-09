@@ -10,7 +10,7 @@ const config = {
         mono: 'VT323'
       },
       fontSize: {
-        tiny: '0.6rem',
+        tiny: '12px',
         xxs: '16px'
       },
       animation: {
