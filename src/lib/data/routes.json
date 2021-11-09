@@ -14,11 +14,17 @@
     },
     {
       "type": "route",
-      "name": "Route 102"
+      "name": "Route 103"
+    },
+    {
+      "type": "gym",
+      "name": "Rival battle",
+      "value": "r1",
+      "group": "rival"
     },
     {
       "type": "route",
-      "name": "Route 103"
+      "name": "Route 102"
     },
     {
       "type": "route",
@@ -37,6 +43,18 @@
       "name": "Rustboro City"
     },
     {
+      "type": "gym",
+      "name": "Rustboro Gym",
+      "value": "1",
+      "group": "gym-leader"
+    },
+    {
+      "type": "gym",
+      "name": "Optional Rival",
+      "value": "r2",
+      "group": "rival"
+    },
+    {
       "type": "route",
       "name": "Route 115"
     },
@@ -51,6 +69,12 @@
     {
       "type": "route",
       "name": "Dewford Town"
+    },
+    {
+      "type": "gym",
+      "name": "Dewford Gym",
+      "value": "2",
+      "group": "gym-leader"
     },
     {
       "type": "route",
@@ -73,6 +97,12 @@
       "name": "Route 110"
     },
     {
+      "type": "gym",
+      "name": "Rival battle",
+      "value": "r3",
+      "group": "rival"
+    },
+    {
       "type": "route",
       "name": "Altering Cave"
     },
@@ -81,24 +111,30 @@
       "name": "New Mauville"
     },
     {
+      "type": "gym",
+      "name": "Mauville City Rival",
+      "value": "w1",
+      "group": "rival"
+    },
+    {
+      "type": "gym",
+      "name": "Mauville City Gym",
+      "value": "3",
+      "group": "gym-leader"
+    },
+    {
       "type": "route",
       "name": "Route 117"
-    },
-    {
-      "type": "route",
-      "name": "Route 111"
-    },
-    {
-      "type": "route",
-      "name": "Mirage Tower (Emerald)"
     },
     {
       "type": "route",
       "name": "Route 112"
     },
     {
-      "type": "route",
-      "name": "Fiery Path"
+      "type": "gym",
+      "name": "Mt. Chimney",
+      "value": "mt1",
+      "group": "evil-team"
     },
     {
       "type": "route",
@@ -110,7 +146,7 @@
     },
     {
       "type": "route",
-      "name": "Desert Underpass (Emerald)"
+      "name": "Desert Underpass"
     },
     {
       "type": "route",
@@ -118,11 +154,31 @@
     },
     {
       "type": "route",
-      "name": "Jagged Pass"
+      "name": "Lavaridge Town"
+    },
+    {
+      "type": "gym",
+      "name": "Lavaridge Gym",
+      "value": "4",
+      "group": "gym-leader"
     },
     {
       "type": "route",
-      "name": "Lavaridge Town"
+      "name": "Fiery Path"
+    },
+    {
+      "type": "route",
+      "name": "Route 111"
+    },
+    {
+      "type": "route",
+      "name": "Mirage Tower"
+    },
+    {
+      "type": "gym",
+      "name": "Petalburg Gym",
+      "value": "5",
+      "group": "gym-leader"
     },
     {
       "type": "route",
@@ -133,6 +189,18 @@
       "name": "Route 119"
     },
     {
+      "type": "gym",
+      "name": "Weather Institude",
+      "value": "as1",
+      "group": "evil-team"
+    },
+    {
+      "type": "gym",
+      "name": "Rival ambush",
+      "value": "r4",
+      "group": "rival"
+    },
+    {
       "type": "route",
       "name": "Fortree City"
     },
@@ -141,16 +209,18 @@
       "name": "Route 120"
     },
     {
+      "type": "gym",
+      "name": "Fortree City Gym",
+      "value": "6",
+      "group": "gym-leader"
+    },
+    {
       "type": "route",
       "name": "Route 121"
     },
     {
       "type": "route",
       "name": "Safari Zone"
-    },
-    {
-      "type": "route",
-      "name": "Lilycove City"
     },
     {
       "type": "route",
@@ -166,7 +236,39 @@
     },
     {
       "type": "route",
-      "name": "Team Magma Hideout (Emerald)"
+      "name": "Jagged Pass"
+    },
+    {
+      "type": "route",
+      "name": "Team Magma Hideout"
+    },
+    {
+      "type": "gym",
+      "name": "Team Magma Hideout",
+      "value": "mt2",
+      "group": "evil-team"
+    },
+    {
+      "type": "gym",
+      "name": "Team Magma Hideout",
+      "value": "mtmax",
+      "group": "evil-team"
+    },
+    {
+      "type": "route",
+      "name": "Lilycove City"
+    },
+    {
+      "type": "gym",
+      "name": "Optional Rival",
+      "value": "r5",
+      "group": "rival"
+    },
+    {
+      "type": "gym",
+      "name": "Team Aqua Hideout",
+      "value": "am1",
+      "group": "evil-team"
     },
     {
       "type": "route",
@@ -175,6 +277,18 @@
     {
       "type": "route",
       "name": "Mossdeep City"
+    },
+    {
+      "type": "gym",
+      "name": "Mossdeep City Gym",
+      "value": "7",
+      "group": "gym-leader"
+    },
+    {
+      "type": "gym",
+      "name": "Mossdeep Space Center",
+      "value": "mtmaxt",
+      "group": "evil-team"
     },
     {
       "type": "route",
@@ -197,12 +311,30 @@
       "name": "Seafloor Cavern"
     },
     {
+      "type": "gym",
+      "name": "Seafloor Cavern",
+      "value": "as2",
+      "group": "evil-team"
+    },
+    {
+      "type": "gym",
+      "name": "Seafloor Cavern",
+      "value": "aqarc",
+      "group": "evil-team"
+    },
+    {
       "type": "route",
       "name": "Route 126"
     },
     {
       "type": "route",
       "name": "Sootopolis City"
+    },
+    {
+      "type": "gym",
+      "name": "Sootopolis Gym",
+      "value": "8",
+      "group": "gym-leader"
     },
     {
       "type": "route",
@@ -267,6 +399,42 @@
     {
       "type": "route",
       "name": "Victory Road"
+    },
+    {
+      "type": "gym",
+      "name": "Rival Ambush",
+      "value": "w2",
+      "group": "rival"
+    },
+    {
+      "type": "gym",
+      "name": "Pokémon League",
+      "value": "e1",
+      "group": "elite-four"
+    },
+    {
+      "type": "gym",
+      "name": "Pokémon League",
+      "value": "e2",
+      "group": "elite-four"
+    },
+    {
+      "type": "gym",
+      "name": "Pokémon League",
+      "value": "e3",
+      "group": "elite-four"
+    },
+    {
+      "type": "gym",
+      "name": "Pokémon League Champion",
+      "value": "c1",
+      "group": "elite-four"
+    },
+    {
+      "type": "gym",
+      "name": "Meteor Falls Champion",
+      "value": "c2",
+      "group": "rival"
     },
     {
       "type": "route",
