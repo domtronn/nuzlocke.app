@@ -15,6 +15,7 @@
       <a
         href="/"
         rel="external"
+        aria-label="Home"
         class='border-b-2 ml-4 pb-1 border-b-transparent transition hover:border-b-current'>
         <Icon src={Home} size='1.4rem' className='fill-current' />
       </a>
