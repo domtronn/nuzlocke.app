@@ -1,7 +1,7 @@
 <script>
   import { theme } from '$lib/store'
 
-  import Toggle from 'svelte-toggle'
+  import Toggle from '$lib/components/toggle'
   import Icon from 'svelte-icons-pack'
   import DarkMode from 'svelte-icons-pack/ti/TiLightbulb'
 

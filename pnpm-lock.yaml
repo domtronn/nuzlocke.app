@@ -20,7 +20,6 @@ specifiers:
   svelte-icons-pack: ^1.4.6
   svelte-intersection-observer: ^0.9.1
   svelte-preprocess: ^4.9.8
-  svelte-toggle: ^3.1.0
   tailwindcss: ^2.2.16
 
 dependencies:
@@ -34,7 +33,6 @@ dependencies:
   simple-svelte-autocomplete: 2.2.3
   svelte-icons-pack: 1.4.6
   svelte-intersection-observer: 0.9.1
-  svelte-toggle: 3.1.0
 
 devDependencies:
   '@sveltejs/adapter-vercel': 1.0.0-next.31
@@ -2030,10 +2028,6 @@ packages:
       strip-indent: 3.0.0
       svelte: 3.44.0
     dev: true
-
-  /svelte-toggle/3.1.0:
-    resolution: {integrity: sha512-2gzDDMDhM+ImDaLEZVlnlHVY1340Y368tT4Qk5IwLnCeRJ4zV3cVwliVGacoHy7iCDukcGXzKwDzG/hTTcaljg==}
-    dev: false
 
   /svelte/3.44.0:
     resolution: {integrity: sha512-zWACSJBSncGiDvFfYOMFGNV5zDLOlyhftmO5yOZ0lEtQMptpElaRtl39MWz1+lYCpwUq4F3Q2lTzI9TrTL+eMA==}
