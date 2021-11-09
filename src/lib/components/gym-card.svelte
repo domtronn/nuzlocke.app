@@ -105,7 +105,7 @@
       <span class='flex flex-col gap-y-2'>
         <span class='h-6 inline-flex gap-x-2'>
           {#if loading}
-            <span class='w-24 animate-pulse bg-gray-400 rounded-md' />
+            <span class='w-20 md:w-24 -ml-9 md:ml-0 animate-pulse bg-gray-400 rounded-md' />
           {:else}
             <h1 class='text-xl font-medium'>{name}</h1>
           {/if}
@@ -116,7 +116,7 @@
         </span>
 
         {#if loading}
-          <div class='h-4 w-48 animate-pulse bg-gray-400 rounded-md' />
+          <div class='h-4 w-32 md:w-48 -ml-9 md:ml-0 animate-pulse bg-gray-400 rounded-md' />
         {:else if location}
           <h2 class='h-4 text-md font-medium'>
             <span>{location}</span>
@@ -126,8 +126,7 @@
 
       <div class='absolute top-0 right-0 inline-flex gap-x-2'>
         {#if loading}
-          <div class='h-14 w-14 animate-pulse bg-gray-400 rounded-md' />
-          <div class='h-14 w-14 animate-pulse bg-gray-400 rounded-md' />
+          <div class='h-14 w-14 animate-pulse bg-gray-400 -mt-2 rounded-md' />
         {:else}
           <span class='items-center gap-x-2 hidden lg:inline-flex'>
             {#each pokemon as p, i (p.name + i)}
