@@ -62,6 +62,7 @@
         : a.id - b.id
     })
 
+  $: enabled = box.length && (stat || type)
 </script>
 
 {#if loading}
@@ -108,8 +109,20 @@
 
           <div class='sm:order-none order-first col-span-1 flex justify-end -mt-8 sm:mt-0'>
             <button
+              class:focus:active:border-indigo-600={enabled}
+              class:focus:active:bg-indigo-600={enabled}
+              class:focus:active:text-white={enabled}
+              class:hover:text-indigo-300={enabled}
+              class:hover:border-indigo-200={enabled}
+
+              class:dark:border-indigo-600={enabled}
+              class:dark:bg-indigo-600={enabled}
+              class:dark:text-gray-200={enabled}
+              class:dark:hover:bg-indigo-400={enabled}
+              class:dark:hover:text-indigo-600={enabled}
+              disabled={!enabled}
               on:click={clear}
-              class='font-sans text-xs dark:bg-transparent dark:text-gray-300 dark:border-gray-300 dark:hover:text-indigo-400 dark:hover:border-indigo-400 dark:hover:active:bg-indigo-900 bg-white inline-flex items-center gap-x-2 hover:active:bg-yellow-50 shadow-md text-gray-500 border-gray-400 active:shadow-sm active:text-yellow-600 hover:active:border-yellow-600 hover:text-yellow-300 hover:border-yellow-200 rounded-lg px-2 py-1 transition-all border-2'
+              class='inline-flex gap-x-2 dark:bg-gray-700 dark:text-gray-200 dark:border-gray-600 disabled:opacity-25 w-full md:w-auto disabled:bg-gray-50 disabled:cursor-default disabled:border-gray-300 disabled:text-gray-500 transition-colors text-gray-500 text-xs focus:outline-none leading-4  border-2 shadow-md block rounded-lg px-3 py-2'
             >
               <Icon src={X} className='fill-current' size='1.2em' />
               Clear filters
@@ -118,6 +131,9 @@
         </div>
 
         <div class='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-4 mt-6'>
+          {#if box.length === 0}
+            <span class='h-96 flex items-center justify-center col-span-4 dark:text-gray-600 text-xl'>You have no Pokémon in your box</span>
+          {/if}
           {#each box.filter(filter) as p (p.id)}
             <span
               animate:flip={{ duration: d => 10 * Math.sqrt(d) }}
