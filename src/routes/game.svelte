@@ -86,10 +86,10 @@
             </div>
 
             {#if filter === 2}
-              <div transition:slide={{ duration: 200 }} class='order-4 md:order-none flex flex-row gap-x-4'>
+              <div transition:slide={{ duration: 200 }} class='order-4 md:order-none flex flex-row overflow-x-scroll gap-x-4'>
                 {#each bossFilters as f, i}
                   <label
-                    class='cursor-pointer transition-colors border-b-2 rounded-none text-md'
+                    class='cursor-pointer transition-colors border-b-2 rounded-none text-md flex-shrink-0'
                     class:border-transparent={bossFilter !== f.id}
                     class:border-black={bossFilter === f.id}
                     class:dark:border-gray-200={bossFilter === f.id}
