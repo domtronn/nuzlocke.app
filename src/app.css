@@ -146,5 +146,11 @@
 .pkm { background-image: url(/assets/pokemon.webp) !important; }
 .pkitem { background-image: url(/assets/items.webp) !important; }
 
+.pkitem-poke-ball {
+  width: 18px;
+  height: 18px;
+  background-position: -566px -272px;
+}
+
 .has-status .ac__input-container { padding-left: 32px !important; }
 .has-status-lg .ac__input-container { padding-left: 48px !important; }

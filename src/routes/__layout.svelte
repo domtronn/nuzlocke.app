@@ -16,7 +16,7 @@
   import NavHeading from '$lib/components/nav-heading.svelte'
   import CookieBanner from '$lib/components/cookie-banner.svelte'
 
-  const mountStyle = (src) => {
+  const deferStyle = (src) => {
     if (document.createStyleSheet) document.createStyleSheet(src)
     else {
       const [head] = document.getElementsByTagName('head')
@@ -28,8 +28,9 @@
   }
 
   onMount(() => {
-    mountStyle('/assets/items.css')
-    if (path === '/game') mountStyle('/assets/pokemon.css')
+    if (path !== '/game') return
+    deferStyle('/assets/items.css')
+    deferStyle('/assets/pokemon.css')
   })
 </script>
 
