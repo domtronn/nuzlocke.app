@@ -32,7 +32,7 @@
       class='{className} inline-flex items-center pt-4 ml-4 -mt-4 md:mt-0 md:-ml-2 group h-12'>
       {#if game?.game}
         <img in:fade src='/assets/{game?.game}.png' alt={game?.game + ' logo'} width=48 class='h-auto mr-2 hidden md:block' />
-        <h1 in:fade class='text-md sm:text-xl group-hover:border-black dark:group-hover:border-white border-transparent border-b-2 transition'>
+        <h1 in:fade class='text-md sm:text-xl group-hover:border-black dark:group-hover:border-white border-transparent border-b-2 transition -mb-1.5 sm:mb-0'>
           {game?.name || ''}
         </h1>
       {/if}
