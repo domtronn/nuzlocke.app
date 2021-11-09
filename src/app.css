@@ -146,6 +146,25 @@
 .pkm { background-image: url(/assets/pokemon.webp) !important; }
 .pkitem { background-image: url(/assets/items.webp) !important; }
 
+.pkitem-wrapper {
+  width: 32px;
+  height: 30px;
+  line-height: 28px;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 1px;
+}
+
+.pkitem {
+  display: inline-block;
+  vertical-align: middle;
+  image-rendering: crisp-edges;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -webkit-crisp-edges;
+  image-rendering: pixelated;
+}
+
 .pkitem-poke-ball {
   width: 18px;
   height: 18px;

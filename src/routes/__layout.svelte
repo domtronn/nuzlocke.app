@@ -15,23 +15,6 @@
   import GameHeading from '$lib/components/game-heading.svelte'
   import NavHeading from '$lib/components/nav-heading.svelte'
   import CookieBanner from '$lib/components/cookie-banner.svelte'
-
-  const deferStyle = (src) => {
-    if (document.createStyleSheet) document.createStyleSheet(src)
-    else {
-      const [head] = document.getElementsByTagName('head')
-      const link = document.createElement('link')
-      link.rel = 'stylesheet'
-      link.href = src
-      head.appendChild(link)
-    }
-  }
-
-  onMount(() => {
-    if (path !== '/game') return
-    deferStyle('/assets/items.css')
-    deferStyle('/assets/pokemon.css')
-  })
 </script>
 
 <style global lang="postcss">

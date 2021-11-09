@@ -4786,7 +4786,8 @@
             "play-rough",
             "stealth-rock"
           ],
-          "ability": "keen-eye"
+          "ability": "keen-eye",
+          "sprite": "lycanroc"
         },
         {
           "name": "kommo-o",
@@ -4804,14 +4805,16 @@
           "level": "wicked-blow,close-combat,iron-head,poison-jab",
           "moves": [
             "unseen-fist"
-          ]
+          ],
+          "sprite": "urshifu"
         },
         {
           "name": "urshifu-rapid-strike",
           "level": "surging-strikes,close-combat,iron-head,poison-jab",
           "moves": [
             "unseen-fist"
-          ]
+          ],
+          "sprite": "urshifu"
         }
       ]
     },
@@ -5117,7 +5120,8 @@
             "hone-claws",
             "slash"
           ],
-          "ability": "disguise"
+          "ability": "disguise",
+          "sprite": "mimikyu"
         },
         {
           "name": "cursola",
@@ -5217,7 +5221,8 @@
             "taunt",
             "fire-fang"
           ],
-          "ability": "zen-mode"
+          "ability": "zen-mode",
+          "sprite": "darmanitan-galar"
         },
         {
           "name": "eiscue-ice",
@@ -5228,7 +5233,8 @@
             "hail",
             "icy-wind"
           ],
-          "ability": "ice-face"
+          "ability": "ice-face",
+          "sprite": "eiscue"
         },
         {
           "name": "lapras",
@@ -5700,7 +5706,8 @@
             "sacred-sword",
             "flash-cannon"
           ],
-          "ability": "stance-change"
+          "ability": "stance-change",
+          "sprite": "aegislash"
         },
         {
           "name": "dragapult",

@@ -1,4 +1,5 @@
 <script>
+  import { onMount } from 'svelte'
   import { browser } from '$app/env'
   import { fade, slide } from 'svelte/transition'
 
@@ -14,6 +15,7 @@
 
   import Games from '$lib/data/games.json'
   import Colors from '$lib/data/colors.json'
+  import deferStyles from '$lib/utils/defer-styles'
   import { activeGame, savedGames, getGame, patch, read, parse } from '$lib/store'
 
   let gameStore, gameKey
@@ -34,6 +36,8 @@
     return await res.json()
   }
 
+  onMount(() => deferStyles('/assets/pokemon.css'))
+
   const setup = () => new Promise((resolve, reject) => {
     activeGame.subscribe(gameId => {
       if (browser && !gameId) return window.location = '/'
@@ -43,9 +47,12 @@
 
       savedGames.subscribe(parse(games => {
         gameKey = games[gameId]?.game
+        gameId =
         loading = !browser
 
-        fetchRoute(Games[gameKey].pid).then(r => resolve(r))
+        deferStyles(`/assets/items/${gameKey}.css`)
+        fetchRoute(Games[gameKey].pid)
+          .then(r => resolve(r))
       }))
     })
   })
