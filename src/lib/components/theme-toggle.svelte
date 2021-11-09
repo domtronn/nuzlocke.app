@@ -22,6 +22,6 @@
   <Toggle
     toggled={$theme === 'dark'}
     on:toggle={toggleTheme}
-    small hideLabel label='Dark mode'
+    small hideLabel label={$theme === 'dark' ? 'Light mode' : 'Dark mode'}
     />
 </span>
