@@ -61,7 +61,7 @@
               Continue
             </button>
             <div class='flex flex-row group-hover:grayscale-0 grayscale items-center transition h-8 -mt-1 font-sans text-sm font-normal'>
-              <img width=auto height=32 class='w-8 h-8 mr-2' src='/assets/{active.game}.png' alt='{active.game} logo' />
+              <img width=auto height=32 class='w-auto h-8 mr-2' src='/assets/{active.game}.png' alt='{active.game} logo' />
               <span>{summary.available.length}</span>
               <PIcon className='transform scale-75 -ml-1' type='item' name='poke-ball' />
               <span>{summary.deceased.length}</span>
