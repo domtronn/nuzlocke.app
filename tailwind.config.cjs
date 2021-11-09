@@ -10,8 +10,8 @@ const config = {
         mono: 'VT323'
       },
       fontSize: {
-        tiny: '0.7rem',
-        xxs: '0.6rem'
+        tiny: '0.6rem',
+        xxs: '16px'
       },
       animation: {
         'ping-slow': 'ping 3s ease infinite'
