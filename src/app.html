@@ -32,7 +32,7 @@
      const lsid = 'nuzlocke.theme'
      const mdark = !(lsid in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches
 
-     if (mediaDark) localStorage.setItem(lsid, 'dark')
+     if (mdark) localStorage.setItem(lsid, 'dark')
      if (localStorage[lsid] === 'dark') {
        document.documentElement.classList.add('dark')
      } else {
