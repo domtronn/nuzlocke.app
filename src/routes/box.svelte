@@ -84,7 +84,7 @@
                 class:dark:border-gray-200={stat === s}
                 >
                 <input type=radio bind:group={stat} name='sortable' value={s} />
-                <Icon className='hidden md:block text-xxs {s !== 'spa' ? 'fill-current' : ''} translate-y-1/2 -mt-0.5 mr-1'  src={StatIconMap[s]} />
+                <Icon className='hidden md:block text-tiny {s !== 'spa' ? 'fill-current' : ''} translate-y-1/2 -mt-0.5 mr-1'  src={StatIconMap[s]} />
                 {s}
               </label>
             {/each}
