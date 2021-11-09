@@ -18,7 +18,7 @@
       </span>
       <button
         on:click={consent.set.bind({}, true)}
-        class='ml-6 font-sans transition text-xs text-white hover:ring-indigo-300 hover:active:ring-indigo-600 hover:active:bg-indigo-600 ring-white ring-2 rounded-lg bg-indigo-500 px-4 py-2'
+        class='ml-6 font-sans transition text-xs text-white hover:ring-indigo-400 hover:active:ring-indigo-800 hover:active:bg-indigo-800 ring-white ring-2 rounded-lg bg-indigo-700 px-4 py-2'
       >
         <Icon src={Cookie} size='1.2rem' className='hidden md:inline fill-current mr-px -ml-1' />
         Okay
