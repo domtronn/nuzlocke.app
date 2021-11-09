@@ -69,6 +69,16 @@
 }
 
 .ac__dropdown-container {
+  width: calc(200% + theme('spacing.2')) !important;
+}
+
+@media (min-width: 640px) {
+  .ac__dropdown-container {
+    width: 100% !important;
+  }
+}
+
+.ac__dropdown-container {
   padding: 0 !important;
   border: 2px solid theme('colors.gray.200') !important;
 }

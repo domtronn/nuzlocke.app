@@ -76,8 +76,7 @@
 
 </script>
 
-<div class='grid grid-cols-2 md:grid-cols-8 gap-y-2 md:gap-y-0 gap-x-2 flex justify-start items-center'>
-
+<div class='grid grid-cols-2 md:grid-cols-8 gap-y-3 md:gap-y-0 gap-x-2 flex justify-start items-center'>
   <span class='col-span-2 md:text-right mr-4 text-sm'>
     {location}
   </span>
