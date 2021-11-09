@@ -29,7 +29,11 @@
 
     <script>
      // On page load or when changing themes, best to add inline in `head` to avoid FOUC
-     if (localStorage['nuzlocke.theme'] === 'dark' || (!('nuzlocke.theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+     const lsid = 'nuzlocke.theme'
+     const mdark = !(lsid in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches
+
+     if (mediaDark) localStorage.setItem(lsid, 'dark')
+     if (localStorage[lsid] === 'dark') {
        document.documentElement.classList.add('dark')
      } else {
        document.documentElement.classList.remove('dark')
