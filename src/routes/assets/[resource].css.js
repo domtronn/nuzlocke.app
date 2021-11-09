@@ -1,10 +1,9 @@
 import Clean from 'clean-css'
 
 import pokemon from 'pokemon-assets/assets/css/pokemon.css'
-import items from 'pokemon-assets/assets/css/items.css'
 
 const clean = new Clean()
-const resourceMap = { pokemon, items }
+const resourceMap = { pokemon }
 
 export async function get ({ params }) {
   const { resource } = params
