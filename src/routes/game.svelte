@@ -49,7 +49,7 @@
       if (browser && !gameId) return window.location = '/'
 
       gameStore = getGame(gameId)
-      gameStore.subscribe(read(game => starter = game.__starter))
+      gameStore.subscribe(read(game => starter = game.__starter || 'fire'))
 
       savedGames.subscribe(parse(games => {
         gameKey = games[gameId]?.game
@@ -74,50 +74,49 @@
 {:then route}
   <div out:fade={{ duration: 250 }} in:fade={{ duration: 250, delay: 300 }} class="container mx-auto">
     <div class="flex flex-row flex-wrap pb-16 justify-center">
-      <main role="main" class="w-full sm:w-2/3 md:w-3/4 px-4 md:px-8 md:py-6 overflow-hidden">
-        <div class='flex flex-col gap-y-4'>
+      <main role="main" class="w-full sm:w-2/3 md:w-3/4 px-4 md:px-8 md:py-6 overflow-hidden flex flex-col gap-y-4">
 
           <div class='flex flex-col gap-y-4 md:gap-y-0 md:flex-row justify-between mb-6'>
             <div class='flex flex-col gap-y-2'>
-            <div class='order-4 md:order-none flex flex-row gap-x-4'>
-              {#each filters as f, i}
-                <label
-                  class='cursor-pointer transition-colors border-b-2 rounded-none text-md'
-                  class:border-transparent={filter !== i}
-                  class:border-black={filter === i}
-                  class:dark:border-gray-200={filter === i}
-                  class:text-black={filter === i}
-                  class:dark:text-gray-200={filter === i}
-                  class:text-gray-500={filter !== i}
-                  class:hover:border-gray-300={filter !== i}
-                  class:dark:hover:border-gray-500={filter !== i}
-                  >
-                  <input type=radio bind:group={filter} name='filter' value={i} />
-                  {f}
-                </label>
-              {/each}
-            </div>
-
-            {#if filter === 2}
-              <div transition:slide={{ duration: 200 }} class='order-4 md:order-none flex flex-row overflow-x-scroll gap-x-4'>
-                {#each bossFilters as f, i}
+              <div class='order-4 md:order-none flex flex-row gap-x-4'>
+                {#each filters as f, i}
                   <label
-                    class='cursor-pointer transition-colors border-b-2 rounded-none text-md flex-shrink-0'
-                    class:border-transparent={bossFilter !== f.id}
-                    class:border-black={bossFilter === f.id}
-                    class:dark:border-gray-200={bossFilter === f.id}
-                    class:text-black={bossFilter === f.id}
-                    class:dark:text-gray-200={bossFilter === f.id}
-                    class:text-gray-500={bossFilter !== f.id}
-                    class:hover:border-gray-300={bossFilter !== f.id}
-                    class:dark:hover:border-gray-500={bossFilter !== f.id}
+                    class='cursor-pointer transition-colors border-b-2 rounded-none text-md'
+                    class:border-transparent={filter !== i}
+                    class:border-black={filter === i}
+                    class:dark:border-gray-200={filter === i}
+                    class:text-black={filter === i}
+                    class:dark:text-gray-200={filter === i}
+                    class:text-gray-500={filter !== i}
+                    class:hover:border-gray-300={filter !== i}
+                    class:dark:hover:border-gray-500={filter !== i}
                     >
-                    <input type=radio bind:group={bossFilter} name='boss-filter' value={f.id} />
-                    {f.name}
+                    <input type=radio bind:group={filter} name='filter' value={i} />
+                    {f}
                   </label>
                 {/each}
               </div>
-            {/if}
+
+              {#if filter === 2}
+                <div transition:slide={{ duration: 200 }} class='order-4 md:order-none flex flex-row overflow-x-scroll gap-x-4'>
+                  {#each bossFilters as f, i}
+                    <label
+                      class='cursor-pointer transition-colors border-b-2 rounded-none text-md flex-shrink-0'
+                      class:border-transparent={bossFilter !== f.id}
+                      class:border-black={bossFilter === f.id}
+                      class:dark:border-gray-200={bossFilter === f.id}
+                      class:text-black={bossFilter === f.id}
+                      class:dark:text-gray-200={bossFilter === f.id}
+                      class:text-gray-500={bossFilter !== f.id}
+                      class:hover:border-gray-300={bossFilter !== f.id}
+                      class:dark:hover:border-gray-500={bossFilter !== f.id}
+                      >
+                      <input type=radio bind:group={bossFilter} name='boss-filter' value={f.id} />
+                      {f.name}
+                    </label>
+                  {/each}
+                </div>
+              {/if}
             </div>
 
             <div class='flex flex-row items-center gap-x-2'>
@@ -126,30 +125,31 @@
             </div>
           </div>
 
-          {#each route.slice(0, limit) as p, i}
-            {#if p.type === 'route' && [0, 1].includes(filter)}
-              {#if gameStore}
-                <span transition:fade>
-                  <PokemonSelector
-                    id={i}
-                    store={gameStore}
-                    location={p.name}
-                    />
-                </span>
+          <ul class='flex flex-col gap-y-4 md:gap-y-2'>
+            {#each route.slice(0, limit) as p, i}
+              {#if p.type === 'route' && [0, 1].includes(filter)}
+                {#if gameStore}
+                  <li transition:fade>
+                    <PokemonSelector
+                      id={i}
+                      store={gameStore}
+                      location={p.name}
+                      />
+                  </li>
+                {/if}
+              {:else if p.type === 'gym' && [0, 2].includes(filter) && (bossFilter === 'all' || bossFilter === p.group)}
+                <li transition:fade>
+                  <GymCard game={gameKey} starter={starter} id={p.value} location={p.name} />
+                </li >
               {/if}
-            {:else if p.type === 'gym' && [0, 2].includes(filter) && (bossFilter === 'all' || bossFilter === p.group)}
-              <span transition:fade>
-                <GymCard game={gameKey} starter={starter} id={p.value} location={p.name} />
-              </span >
-            {/if}
 
-            {#if i === limit -5}
-              <IntersectionObserver {element} on:intersect={e => limit+=5}>
-                <span bind:this={element} />
-              </IntersectionObserver>
-            {/if}
-          {/each}
-        </div>
+              {#if i === limit -5}
+                <IntersectionObserver {element} on:intersect={e => limit+=5}>
+                  <span bind:this={element} />
+                </IntersectionObserver>
+              {/if}
+            {/each}
+          </ul>
       </main>
     </div>
   </div>
