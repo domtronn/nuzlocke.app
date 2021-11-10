@@ -1,6 +1,6 @@
 <script>
   export let title, icon, containerClassName = '', className = ''
-  import PixelatedContainer from '$lib/components/pixelated-container.svelte'
+  import { PixelatedContainer } from '$lib/components/containers'
   import Icon from 'svelte-icons-pack'
 </script>
 

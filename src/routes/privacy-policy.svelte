@@ -1,5 +1,5 @@
 <script>
-  import PixelatedContainer from '$lib/components/pixelated-container.svelte'
+  import { PixelatedContainer } from '$lib/components/containers'
 </script>
 
 <main class='container text-gray-800 pt-8 sm:pt-0 dark:text-gray-300'>

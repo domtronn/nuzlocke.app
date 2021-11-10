@@ -5,7 +5,8 @@
   import { goto } from '$app/navigation'
 
   import { activeGame, savedGames, parse, getGame, read, summarise } from '$lib/store'
-  import PixelatedContainer from '$lib/components/pixelated-container.svelte'
+  import { PixelatedContainer } from '$lib/components/containers'
+
   import PIcon from '$lib/components/pokemon-icon.svelte'
   import Icon from 'svelte-icons-pack'
   import Deceased from 'svelte-icons-pack/fa/FaSolidSkullCrossbones'

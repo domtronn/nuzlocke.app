@@ -6,8 +6,8 @@
   // TODO: No saves and back button
 
   import Save from '$lib/components/save.svelte'
-  import ScreenContainer from '$lib/components/screen-container.svelte'
-  import PixelatedContainer from '$lib/components/pixelated-container.svelte'
+  import { ScreenContainer, PixelatedContainer } from '$lib/components/containers'
+
   import Icon from 'svelte-icons-pack'
   import Floppy from 'svelte-icons-pack/im/ImFloppyDisk'
 

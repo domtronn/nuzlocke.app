@@ -1,7 +1,6 @@
 <script>
   import { savedGames, activeGame, createGame } from '$lib/store'
-  import PixelatedContainer from '$lib/components/pixelated-container.svelte'
-  import ScreenContainer from '$lib/components/screen-container.svelte'
+  import { PixelatedContainer, ScreenContainer } from '$lib/components/containers'
 
   import AutoComplete from 'simple-svelte-autocomplete'
   import File from 'svelte-icons-pack/cg/CgFileAdd'
