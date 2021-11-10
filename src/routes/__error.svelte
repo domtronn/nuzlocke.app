@@ -29,7 +29,7 @@
     <span class='_left text-6xl drop-shadow-text absolute -translate-x-full -ml-10 -translate-y-full top-4 -rotate-12'>?</span>
     <span class=''>
       <h1 class='tracking-wide drop-shadow-text translate-y-56 font-bold text-8xl'>{status}</h1>
-      <h2 class='font-sans text-gray-800 font-medium tracking-wide translate-y-56'>{message}</h2>
+      <h2 class='font-sans dark:text-gray-400 text-gray-800 font-medium tracking-wide translate-y-56'>{message}</h2>
     </span>
   </span>
   <img src={img} alt='wobuffet' class='w-96 mx-auto drop-shadow-md -translate-y-1/2 z-0' />
