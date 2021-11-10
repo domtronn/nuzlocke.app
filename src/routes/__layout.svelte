@@ -12,8 +12,7 @@
 
   import { slide } from 'svelte/transition'
 
-  import GameHeading from '$lib/components/game-heading.svelte'
-  import NavHeading from '$lib/components/nav-heading.svelte'
+  import { GameHeading, NavHeading } from '$lib/components/navs'
   import CookieBanner from '$lib/components/cookie-banner.svelte'
 </script>
 
