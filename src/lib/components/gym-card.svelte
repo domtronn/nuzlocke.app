@@ -19,7 +19,7 @@
   const fetchData = async (starter) => {
     if (!browser) return
     try {
-      const res = await fetch(`/leader/${game}/${id}.json?starter=${starter}`)
+      const res = await fetch(`/api/battle/${game}/${id}.json?starter=${starter}`)
       const data = await res.json()
 
       img = data.img

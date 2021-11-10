@@ -27,12 +27,18 @@
   const filters = [ 'Nuzlocke', 'Routes', 'Bosses' ]
 
   let bossFilter = 'all'
-  const bossFilters = [ { name: 'All', id: 'all' }, { name: 'Gym leaders', id: 'gym-leader' }, { name: 'Elite Four', id: 'elite-four' }, { name: 'Rival fights', id: 'rival' }, { name: 'Evil team', id: 'evil-team' } ]
+  const bossFilters = [
+    { name: 'All', id: 'all' },
+    { name: 'Gym leaders', id: 'gym-leader' },
+    { name: 'Elite Four', id: 'elite-four' },
+    { name: 'Rival fights', id: 'rival' },
+    { name: 'Evil team', id: 'evil-team' }
+  ]
 
   let limit = 20
 
   const fetchRoute = async (gen) => {
-    const res = await fetch(`/route/${gen}.json`)
+    const res = await fetch(`/api/route/${gen}.json`)
     return await res.json()
   }
 

@@ -21,7 +21,7 @@
   let status
 
   const fetchItems = async () => {
-    const res = await fetch('/pokemon/all.json')
+    const res = await fetch('/api/pokemon/all.json')
     const items = await res.json()
     return items
   }
@@ -29,7 +29,7 @@
   const fetchData = async (id) => {
     if (!browser) return
     try {
-      const res = await fetch(`/pokemon/${id}.json`)
+      const res = await fetch(`/api/pokemon/${id}.json`)
       const data = await res.json()
       return data
     } catch (e) {

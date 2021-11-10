@@ -17,7 +17,7 @@
   const fetchData = async (pkmn) => {
     if (!browser) return
     try {
-      const res = await fetch(`/pokemon.json?p=${pkmn.join(',')}`)
+      const res = await fetch(`/api/pokemon.json?p=${pkmn.join(',')}`)
       const data = await res.json()
       return data
     } catch (e) {
