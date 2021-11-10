@@ -92,7 +92,7 @@ export const parse = (cb = i => {}) => (gameData) => {
 export const summarise = (cb = i => {}) => ({ __starter, ...data }) => {
   const pkmn = Object.values(data)
   cb({
-    available: pkmn.filter(i => !i.status || NuzlockeGroups.Available.includes(i?.status)),
-    deceased: pkmn.filter(i => NuzlockeGroups.Dead.includes(i?.status))
+    available: pkmn.filter(i => i.pokemon && (!i.status || NuzlockeGroups.Available.includes(i?.status))),
+    deceased: pkmn.filter(i => i.pokemon && NuzlockeGroups.Dead.includes(i?.status))
   })
 }
