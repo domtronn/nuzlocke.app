@@ -32,7 +32,7 @@
         alt='{name} logo'
         src='/assets/{game}.png'
         class='w-16 group-hover:grayscale-0 grayscale transition hidden md:block'
-        />
+      />
 
       <div>
         <h2 class='group-hover:text-yellow-400 transition text-2xl'>{name}</h2>

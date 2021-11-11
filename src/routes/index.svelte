@@ -41,14 +41,10 @@
 
   <span class='mx-auto text-center'>
     <h1 class='font-mono text-4xl'>Pokémon</h1>
-    <img
-      width=321
-      height=64
-      class:grayscale={!hovering}
-      alt='Pokemon brand logo'
-      src='/logo.png'
-      class='transition h-auto md:h-16 mt-2 mx-auto'
-    />
+    <picture>
+      <source srcset='/logo.webp' type='image/webp' />
+      <img class:grayscale={!hovering} class='transition h-auto md:h-16 mt-2 mx-auto' width=321 height=auto src='/logo.png' alt='Nuzlocke tracker' />
+    </picture>
     <h1 class='font-mono text-4xl'>tracker</h1>
   </span>
 
