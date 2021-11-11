@@ -7,7 +7,7 @@
 
   const dispatch = createEventDispatcher()
 
-  import Portal from 'svelte-portal'
+  import Portal from 'svelte-portal/src/Portal.svelte'
   import Icon from 'svelte-icons-pack'
 
   import X from 'svelte-icons-pack/bi/BiX'
