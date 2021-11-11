@@ -53,7 +53,7 @@
     {/each}
 
     <li
-      on:click={_ => document.getElementById('sidenav_button').scrollIntoView({ behavior: 'smooth' })}
+      on:click={_ => document.getElementById('svelte').scrollIntoView({ behavior: 'smooth' })}
       class='text-sm inline-flex items-center gap-x-1 mt-4 underline transition hover:text-black dark:hover:text-gray-200 hover:cursor-pointer'
       >
       <Icon src={ArrowToTop} size='1.2em' className='fill-current' /> Back to top
