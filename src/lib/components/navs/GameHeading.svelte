@@ -38,7 +38,7 @@
       {/if}
     </a>
 
-    <span class='inline-flex'>
+    <span class='inline-flex relative'>
       <ThemeToggle />
 
       {#each pages as p}
@@ -62,6 +62,9 @@
           {p.name}
         </a>
       {/each}
+
+      <span class='right-0 translate-x-full mt-1 top-1/2 -translate-y-1/2 absolute flex items-center justify-center' id='sidenav_button' />
+
     </span>
   </div>
 </nav>

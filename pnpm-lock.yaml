@@ -19,6 +19,7 @@ specifiers:
   svelte: ^3.38.3
   svelte-icons-pack: ^1.4.6
   svelte-intersection-observer: ^0.9.1
+  svelte-portal: ^2.1.2
   svelte-preprocess: ^4.9.8
   tailwindcss: ^2.2.16
 
@@ -33,6 +34,7 @@ dependencies:
   simple-svelte-autocomplete: 2.2.3
   svelte-icons-pack: 1.4.6
   svelte-intersection-observer: 0.9.1
+  svelte-portal: 2.1.2
 
 devDependencies:
   '@sveltejs/adapter-vercel': 1.0.0-next.31
@@ -1975,6 +1977,10 @@ packages:
 
   /svelte-intersection-observer/0.9.1:
     resolution: {integrity: sha512-sXoJ6z3l/o7jpdXpuGW9hIOHHE70Zljr+az79WGTUmV0/36LNLFPw6WU91LN8PSynZAb1zAqJADLWN/qMPIQWA==}
+    dev: false
+
+  /svelte-portal/2.1.2:
+    resolution: {integrity: sha512-u1ONI4ZJDNhVJPDW7tH6RH1ZIzALt6kJZbF00Hz9bgNIVRlzvzimsnwf35rGFMtPFA+FYenvsTHUR815yYNc9A==}
     dev: false
 
   /svelte-preprocess/4.9.8_9cd47afbf674b8038a3115607d96b979:

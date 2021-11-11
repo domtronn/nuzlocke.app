@@ -10,6 +10,8 @@
   import Loader from '$lib/components/loader.svelte'
   import PokemonSelector from '$lib/components/pokemon-selector.svelte'
 
+  import SideNav from '$lib/components/navs/SideNav.svelte'
+
   import Icon from 'svelte-icons-pack'
   import Box from 'svelte-icons-pack/bi/BiSolidPackage'
 
@@ -67,6 +69,14 @@
     starter = e.detail.value
     gameStore.update(patch({ __starter: e.detail.value }))
   }
+
+  const setnav = (e) => {
+    limit = Math.max(limit, e.detail.value + 20)
+    setTimeout(_ => document.getElementById(`boss-${e.detail.value}`).scrollIntoView({ behavior: 'smooth' }), 50)
+  }
+
+  let show = true
+
 </script>
 
 {#await setup()}
@@ -74,7 +84,14 @@
 {:then route}
   <div out:fade={{ duration: 250 }} in:fade={{ duration: 250, delay: 300 }} class="container mx-auto">
     <div class="flex flex-row flex-wrap pb-16 justify-center">
-      <main role="main" class="w-full sm:w-2/3 md:w-3/4 px-4 md:px-8 md:py-6 overflow-hidden flex flex-col gap-y-4">
+      <main id='main' role="main" class="w-full sm:w-2/3 md:w-3/4 px-4 md:px-8 md:py-6 overflow-hidden flex flex-col gap-y-4 relative">
+        <SideNav
+          className='hidden lg:block'
+          bind:show={show}
+          on:nav={setnav}
+          route={route}
+        />
+
 
           <div class='flex flex-col gap-y-4 md:gap-y-0 md:flex-row justify-between mb-6'>
             <div class='flex flex-col gap-y-2'>
@@ -138,7 +155,7 @@
                   </li>
                 {/if}
               {:else if p.type === 'gym' && [0, 2].includes(filter) && (bossFilter === 'all' || bossFilter === p.group)}
-                <li transition:fade>
+                <li id={`boss-${i}`} transition:fade>
                   <GymCard game={gameKey} starter={starter} id={p.value} location={p.name} />
                 </li >
               {/if}
