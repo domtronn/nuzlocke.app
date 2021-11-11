@@ -162,7 +162,7 @@
 
               {#if i === limit -5}
                 <IntersectionObserver {element} on:intersect={e => limit+=5}>
-                  <span bind:this={element} />
+                  <li bind:this={element} />
                 </IntersectionObserver>
               {/if}
             {/each}

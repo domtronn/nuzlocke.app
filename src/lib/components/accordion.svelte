@@ -16,6 +16,7 @@
 </style>
 
 <button
+  aria-label='Open accordion'
   aria-expanded={isOpen}
   on:click={toggle}
   class='inline-flex items-center w-full cursor-pointer'
