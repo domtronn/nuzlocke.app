@@ -43,7 +43,7 @@
     <h1 class='font-mono text-4xl'>Pokémon</h1>
     <img
       width=321
-      height=auto
+      height=64
       class:grayscale={!hovering}
       alt='Pokemon brand logo'
       src='/logo.png'
