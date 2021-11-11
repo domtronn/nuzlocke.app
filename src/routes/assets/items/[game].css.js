@@ -45,7 +45,7 @@ export async function get ({ params }) {
     status: 200,
     body: criticalCss,
     headers: {
-      'Cache-Control': 'public, max-age=3600',
+      'Cache-Control': 'public, max-age=31536000',
       'Content-Type': 'text/css'
     }
   }

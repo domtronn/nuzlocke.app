@@ -91,7 +91,7 @@ export async function get ({ params, query }) {
     return {
       body: JSON.stringify({ ...leader, pokemon }),
       headers: {
-        'Cache-Control': 'public, max-age=3600',
+        'Cache-Control': 'public, max-age=31536000',
         'Content-Type': 'application/json'
       }
     }
