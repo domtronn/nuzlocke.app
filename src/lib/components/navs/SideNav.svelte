@@ -35,7 +35,7 @@
   </button>
 </Portal>
 
-{#if !show}
+{#if show}
   <ul transition:fly={{ x: 250, opacity: 1 }}
       class='fixed dark:bg-gray-900 border-l-1 border-black h-full top-1/2 right-0 -translate-y-1/2 px-8 py-4 text-gray-400 {className}'
   >
