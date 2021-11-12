@@ -6,6 +6,8 @@ const PokemonNum = Object
     [it.num]: it
   }), {})
 
+// Need id,name,alias,sprite,evos
+
 export async function get ({ params }) {
   const { id } = params
   const pkmn = Pokemon[id] || PokemonNum[id]
