@@ -18,7 +18,7 @@
   const bgImg = Pattern(cols[1] || cols[0])
 </script>
 
-<div class='card relative flex flex-col border dark:border-gray-900 dark:shadow-lg rounded-lg divide divide-y-2'>
+<div class='card relative flex flex-col border dark:border-gray-900 bg-white dark:bg-gray-900 dark:shadow-lg rounded-lg'>
   <div
     style='--t-col: {cols[0]}; background-image: url("{bgImg}");'
     class='card__header flex justify-between pl-4 pt-4 pb-3 relative z-0 rounded-t-lg'
@@ -30,8 +30,8 @@
           <span class='text-3xl font-bold'>{level}</span>
         </div>
       {/if}
-      <span class='relative text-xl mb-0.25 bg-white dark:bg-gray-900 dark:sm:bg-transparent sm:bg-transparent pr-2 z-40'>
-          <p class='-mb-1 w-auto relative text-xs bg-white dark:bg-gray-900 dark:sm:bg-transparent sm:bg-transparent z-40 h-4'>
+      <span class='relative text-xl mb-0.25 dark:sm:bg-transparent sm:bg-transparent pr-2 z-40'>
+        <p class='-mb-1 w-auto relative text-xs dark:sm:bg-transparent sm:bg-transparent z-40 h-4'>
         {#if ability}
             <span data-tooltip={ability.effect}>
               {ability.name}
@@ -68,7 +68,7 @@
 
   <div
     style='border-color: {cols[0]}'
-    class='relative inline-flex dark:border-t-2 sm:items-center bg-white dark:bg-gray-900 rounded-b-lg z-10'>
+    class='relative inline-flex border-t-2 sm:items-center rounded-b-lg z-10'>
     {#if moves && moves.length}
       <div class='grid grid-cols-1 lg:grid-cols-2 lg:grid-rows-2 w-3/5 sm:w-2/3 my-3 ml-4 gap-y-0 lg:gap-y-3'>
         {#each moves as m}
@@ -81,6 +81,7 @@
       <StatBlock col={cols[0]} max={maxStat} {...stats} />
     </div>
   </div>
+    <slot name="footer" />
 </div>
 
 <style>

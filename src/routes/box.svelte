@@ -148,7 +148,15 @@
                 name={Pokemon[p.pokemon].name}
                 stats={Pokemon[p.pokemon].baseStats}
                 types={(Pokemon[p.pokemon].types || []).map(t => t.toLowerCase())}
-                />
+              >
+                <span class='text-xs text-center p-2 -mt-4 dark:text-gray-600 text-gray-400' slot="footer">
+                  {#if p.location === 'Starter'}
+                    Met in a fateful encounter
+                  {:else}
+                    Met {p.location.startsWith('Route') ? 'on' : 'in'} {p.location}
+                  {/if}
+                </span>
+              </PokemonCard>
             </span>
           {/each}
         </div>
