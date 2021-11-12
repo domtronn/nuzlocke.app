@@ -17,7 +17,7 @@
 </script>
 
 <div class='flex flex-col items-center dark:bg-gray-900 bg-gray-50 rounded-lg p-8 mx-auto shadow-lg border dark:text-gray-200 dark:border-gray-600'>
-  {capitalise(base)} is evolving!
+  <span><strong>{capitalise(base)}</strong> is evolving!</span>
 
   <span class='relative text-base mb-8 mt-2'>
     <Icon src={Bubbles} size='4rem' className='animate-spin-slow-2 text-orange-200 dark:text-gray-800 fill-current absolute top-0 left-0' />
