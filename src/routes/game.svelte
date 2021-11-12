@@ -11,6 +11,7 @@
   import PokemonSelector from '$lib/components/pokemon-selector.svelte'
 
   import SideNav from '$lib/components/navs/SideNav.svelte'
+  import Modal from 'svelte-simple-modal'
 
   import Icon from 'svelte-icons-pack'
   import Box from 'svelte-icons-pack/bi/BiSolidPackage'
@@ -56,7 +57,7 @@
       savedGames.subscribe(parse(games => {
         gameKey = games[gameId]?.game
         gameId =
-        loading = !browser
+          loading = !browser
 
         deferStyles(`/assets/items/${gameKey}.css`)
         fetchRoute(Games[gameKey].pid)
@@ -84,13 +85,18 @@
 {:then route}
   <div out:fade={{ duration: 250 }} in:fade={{ duration: 250, delay: 300 }} class="container mx-auto">
     <div class="flex flex-row flex-wrap pb-16 justify-center">
-      <main id='main' role="main" class="w-full sm:w-2/3 md:w-3/4 px-4 md:px-8 md:py-6 overflow-hidden flex flex-col gap-y-4 relative">
-        <SideNav
-          className='hidden md:block'
-          bind:show={show}
-          on:nav={setnav}
-          route={route}
-        />
+      <Modal
+        closeButton={false}
+        styleWindow={{ background: 'transparent !important', maxWidth: '320px' }}
+        styleContent={{ padding: '0 !important' }}
+        >
+        <main id='main' role="main" class="w-full sm:w-2/3 md:w-3/4 px-4 md:px-8 md:py-6 overflow-hidden flex flex-col gap-y-4 relative">
+          <SideNav
+            className='hidden md:block'
+            bind:show={show}
+            on:nav={setnav}
+            route={route}
+            />
 
 
           <div class='flex flex-col gap-y-4 md:gap-y-0 md:flex-row justify-between mb-6'>
@@ -167,7 +173,8 @@
               {/if}
             {/each}
           </ul>
-      </main>
+        </main>
+      </Modal>
     </div>
   </div>
 {/await}

@@ -177,3 +177,12 @@
 }
 .has-status .ac__input-container { padding-left: 32px !important; }
 .has-status-lg .ac__input-container { padding-left: 48px !important; }
+
+@keyframes full-pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .2;
+  }
+}

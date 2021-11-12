@@ -9,7 +9,6 @@
 
   import '../app.css'
   import { onMount } from 'svelte'
-
   import { slide } from 'svelte/transition'
 
   import { GameHeading, NavHeading } from '$lib/components/navs'

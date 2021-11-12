@@ -21,6 +21,7 @@ specifiers:
   svelte-intersection-observer: ^0.9.1
   svelte-portal: ^2.1.2
   svelte-preprocess: ^4.9.8
+  svelte-simple-modal: ^1.1.1
   tailwindcss: ^2.2.16
 
 dependencies:
@@ -35,10 +36,11 @@ dependencies:
   svelte-icons-pack: 1.4.6
   svelte-intersection-observer: 0.9.1
   svelte-portal: 2.1.2
+  svelte-simple-modal: 1.1.1_svelte@3.44.0
 
 devDependencies:
   '@sveltejs/adapter-vercel': 1.0.0-next.31
-  '@sveltejs/kit': 1.0.0-next.195_svelte@3.44.0
+  '@sveltejs/kit': 1.0.0-next.196_svelte@3.44.0
   autoprefixer: 10.3.7_postcss@8.3.11
   cssnano: 5.0.8_postcss@8.3.11
   postcss: 8.3.11
@@ -106,8 +108,8 @@ packages:
       esbuild: 0.13.9
     dev: true
 
-  /@sveltejs/kit/1.0.0-next.195_svelte@3.44.0:
-    resolution: {integrity: sha512-R2X4FgzXQhp63XOik6S1Flw91S2CEA7sTxdsnNFrq3O+bIN7pQhJhkm6zgH68MZANdDcq8oIiSRkxT4M3t1+jQ==}
+  /@sveltejs/kit/1.0.0-next.196_svelte@3.44.0:
+    resolution: {integrity: sha512-z7sA/2/3Il5biibjPXCYXJC11TyFhgCvMaJvvbtMnu2l3EmOmJBMS+r2djGptzfFsugSVNwGQFn8+ldWQWq3jA==}
     engines: {node: '>=14.13'}
     hasBin: true
     peerDependencies:
@@ -2034,6 +2036,14 @@ packages:
       strip-indent: 3.0.0
       svelte: 3.44.0
     dev: true
+
+  /svelte-simple-modal/1.1.1_svelte@3.44.0:
+    resolution: {integrity: sha512-2u6bGk0TwZ/0oxIEX9d2shQZsqKGQwyJHHL4eiNL2e/wDA9k5zHc9F884Y0qmKa/Pg0D80t+5CrY3At3zmUDzA==}
+    peerDependencies:
+      svelte: ^3.31.2
+    dependencies:
+      svelte: 3.44.0
+    dev: false
 
   /svelte/3.44.0:
     resolution: {integrity: sha512-zWACSJBSncGiDvFfYOMFGNV5zDLOlyhftmO5yOZ0lEtQMptpElaRtl39MWz1+lYCpwUq4F3Q2lTzI9TrTL+eMA==}

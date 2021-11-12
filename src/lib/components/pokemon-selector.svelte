@@ -16,6 +16,9 @@
   import Deceased from 'svelte-icons-pack/fa/FaSolidSkullCrossbones'
   import Spinner from 'svelte-icons-pack/cg/CgSpinner'
 
+  import EvoModal from '$lib/components/EvolutionModal.svelte'
+  import { getContext } from 'svelte'
+
   let selected
   let nickname
   let status
@@ -72,12 +75,18 @@
 
   const handleStatus = (sid) => _ => status = NuzlockeStates[sid]
 
-  // TODO: Handle EVOs when split evolution etc
-  const handleEvolution = (name) => async _ => fetchData(name)
-        .then(p => selected = p)
+  const { open } = getContext('simple-modal')
+  const handleSplitEvolution = (base, evolutions) => open(EvoModal, { evolutions, base, select: handleSingleEvolution })
+  const handleSingleEvolution = async (id) => fetchData(id).then(p => selected = p)
+
+  const handleEvolution = (base, evos) => async _ => {
+    const evoList = evos.map(e => e.toLowerCase())
+
+    if (evos.length > 1) return handleSplitEvolution(base, evoList)
+    handleSingleEvolution(evoList[0])
+  }
 
  $: gray = ['Deceased', 'Missed'].includes(status?.state)
-
 </script>
 
 <div class='grid grid-cols-2 md:grid-cols-8 gap-y-3 md:gap-y-0 gap-x-2 flex justify-start items-center'>
@@ -197,11 +206,11 @@
       </button>
     {/if}
 
-    {#if selected && selected.evos.length}
+    {#if selected && selected?.evos?.length}
       <button
         aria-label='Evolve pokemon'
         class='group flex items-center bg-white dark:bg-gray-700 dark:text-gray-400 dark:border-gray-600 dark:hover:border-green-400 dark:hover:active:bg-green-800 dark:hover:active:text-green-400 hover:grayscale-0 hover:opacity-100 grayscale hover:active:bg-green-100 shadow-md text-gray-400 border-gray-200 active:shadow-sm active:text-green-600 hover:active:border-green-600 hover:border-green-300 rounded-lg transition-all border-2'
-        on:click={handleEvolution(selected.evos[0].toLowerCase())}
+        on:click={handleEvolution(selected.sprite, selected.evos)}
       >
         <PIcon name='dawn-stone' type='item' className='transition-opacity -translate-y-0.5 opacity-50 group-hover:opacity-100' />
       </button>
