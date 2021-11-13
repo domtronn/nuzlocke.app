@@ -16,7 +16,7 @@
 <div class='my-2'>
   <p class='text-sm overflow-ellipsis mb-1 relative items-center flex flex-row space-x-1'>
     <span
-      class='w-auto bg-red relative {effect ? 'mr-2' : ''}'
+      class='w-auto relative {effect ? 'mr-2' : ''}'
       data-tooltip={effect || null}>
 
       {#if effect}
