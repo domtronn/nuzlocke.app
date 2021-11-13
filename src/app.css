@@ -122,7 +122,7 @@
 .ac__input-container {
   cursor: pointer !important;
   min-width: 0 !important;
-  padding: theme('padding.2') theme('padding.3') !important;
+  padding: theme('padding.1') theme('padding.2') !important;
 }
 
 .dark .ac__input-container:hover {
@@ -138,6 +138,10 @@
 }
 
 @media (min-width: 640px) {
+  .ac__input-container {
+    padding: theme('padding.2') theme('padding.3') !important;
+  }
+
   .has-item .ac__input-container {
    padding-left: 60px !important;
   }
