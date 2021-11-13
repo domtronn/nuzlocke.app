@@ -161,7 +161,7 @@
       type='text'
       bind:value={nickname}
       placeholder='Nickname'
-      class='text-xxs md:text-xs dark:border-gray-600 dark:bg-gray-700 transition-colors dark:hover:border-indigo-400 hover:border-indigo-200 text-xs focus:outline-none leading-4 focus:border-indigo-600 border-2 shadow-md block w-full rounded-lg px-3 py-2'
+      class='text-xxs md:text-xs dark:border-gray-600 dark:bg-gray-700 transition-colors dark:hover:border-indigo-400 hover:border-indigo-200 text-xs focus:outline-none leading-4 focus:border-indigo-600 border-2 shadow-md block w-full rounded-lg px-3 sm:py-2 py-1.5'
     />
   </span>
 
