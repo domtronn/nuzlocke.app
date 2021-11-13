@@ -92,9 +92,7 @@
 
   const handleEvolution = (base, evos) => async _ => {
     const evoList = evos.map(e => e.toLowerCase())
-
-    if (evos.length > 1) return handleSplitEvolution(base, evoList)
-    handleSingleEvolution(evoList[0])
+    handleSplitEvolution(base, evoList)
   }
 
  $: gray = ['Deceased', 'Missed'].includes(status?.state)
