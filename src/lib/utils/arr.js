@@ -7,3 +7,5 @@ export const groupBy = (field, arr, asTuple = false) => {
 
   return asTuple ? Object.entries(res) : res
 }
+
+export const random = (arr) => arr[Math.floor(Math.random() * arr.length)]

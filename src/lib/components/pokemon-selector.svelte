@@ -16,12 +16,15 @@
   import Deceased from 'svelte-icons-pack/fa/FaSolidSkullCrossbones'
   import Spinner from 'svelte-icons-pack/cg/CgSpinner'
 
-  import EvoModal from '$lib/components/EvolutionModal.svelte'
-  import { getContext } from 'svelte'
+  import { onMount, getContext } from 'svelte'
 
-  let selected
-  let nickname
-  let status
+  let selected, nickname, status
+
+  let Particles, EvoModal
+  onMount(() => {
+    import('$lib/components/particles').then(m => Particles = m.default)
+    import('$lib/components/EvolutionModal.svelte').then(m => EvoModal = m.default)
+  })
 
   const fetchItems = async () => {
     const res = await fetch('/api/pokemon/all.json')
@@ -73,11 +76,19 @@
    store.update(patch({ [location]: {} }))
  }
 
-  const handleStatus = (sid) => _ => status = NuzlockeStates[sid]
+  let captureComplete = false
+  const handleStatus = (sid) => _ => {
+    if (sid === 1) captureComplete = true
+    status = NuzlockeStates[sid]
+  }
 
   const { open } = getContext('simple-modal')
+  let evoComplete = false
   const handleSplitEvolution = (base, evolutions) => open(EvoModal, { evolutions, base, select: handleSingleEvolution })
-  const handleSingleEvolution = async (id) => fetchData(id).then(p => selected = p)
+  const handleSingleEvolution = async (id) => fetchData(id).then(p => {
+    selected = p
+    evoComplete = true
+  })
 
   const handleEvolution = (base, evos) => async _ => {
     const evoList = evos.map(e => e.toLowerCase())
@@ -95,6 +106,16 @@
   </span>
 
   <span class='relative md:col-span-2'>
+    <span class='absolute left-4 top-2 z-30'>
+      {#if evoComplete}
+        <Particles icons={['shiny-stone', 'ice-stone', 'fire-stone']} on:end={_ => evoComplete = false} />
+      {/if}
+
+      {#if captureComplete}
+        <Particles icons={['poke-ball', 'friend-ball', 'heavy-ball', 'master-ball']} on:end={_ => captureComplete = false} />
+      {/if}
+    </span>
+
     {#if selected}
       <PIcon
         className='absolute z-10 -left-2 md:left-0 bottom-1 translate-y-1/4 {gray ? 'filter grayscale' : ''}'

@@ -1,13 +1,7 @@
-import Clean from 'clean-css'
+import minifiedItems from './index.js'
 
 import games from '$lib/data/games.json'
 import leagues from '$lib/data/league.json'
-
-import items from 'pokemon-assets/assets/css/items.css'
-
-const clean = new Clean()
-
-const minifiedItems = clean.minify(items).styles
 
 const toSet = (l) => [...new Set(l)]
   .filter(i => i)

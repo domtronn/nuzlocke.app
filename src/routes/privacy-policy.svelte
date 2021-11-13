@@ -1,3 +1,7 @@
+<script context="module">
+  export const prerender = true
+</script>
+
 <script>
   import { PixelatedContainer } from '$lib/components/containers'
 </script>
@@ -69,7 +73,7 @@
       </table>
 
       <p>
-        You can clear all your stored data by visiting the <a href="/settings">settings</a> page.
+        You can clear all your stored data by visiting the <a href="/">settings</a> page.
       </p>
 
       <h2 class='text-xl mb-2'>Changes to this Privacy Policy</h2>

@@ -1,3 +1,7 @@
+<script context="module">
+  export const prerender = true
+</script>
+
 <script>
   import { savedGames, activeGame, createGame } from '$lib/store'
   import { PixelatedContainer, ScreenContainer } from '$lib/components/containers'
