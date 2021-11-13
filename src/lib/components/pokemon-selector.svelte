@@ -227,7 +227,7 @@
       </button>
     {/if}
 
-    {#if selected && selected?.evos?.length}
+    {#if selected && selected?.evos?.length && NuzlockeGroups.Available.includes(status)}
       <button
         aria-label='Evolve pokemon'
         class='group flex items-center bg-white dark:bg-gray-700 dark:text-gray-400 dark:border-gray-600 dark:hover:border-green-400 dark:hover:active:bg-green-800 dark:hover:active:text-green-400 hover:grayscale-0 hover:opacity-100 grayscale hover:active:bg-green-100 shadow-md text-gray-400 border-gray-200 active:shadow-sm active:text-green-600 hover:active:border-green-600 hover:border-green-300 rounded-lg transition-all border-2'
