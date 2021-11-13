@@ -4,7 +4,7 @@
   import { browser } from '$app/env'
   import { read, patch } from '$lib/store'
 
-  import { NuzlockeStates } from '$lib/data/states'
+  import { NuzlockeStates, NuzlockeGroups } from '$lib/data/states'
 
   import Accordion from '$lib/components/accordion.svelte'
   import StatBlock from '$lib/components/stat-block.svelte'

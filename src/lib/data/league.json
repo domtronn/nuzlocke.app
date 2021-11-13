@@ -1558,7 +1558,9 @@
             "brick-break",
             "earthquake",
             "giga-impact"
-          ]
+          ],
+          "ability": "sand-veil",
+          "held": "sitrus-berry"
         }
       ]
     }
@@ -6280,7 +6282,7 @@
       ]
     },
     "mustard1": {
-      "name": "",
+      "name": "Mustard",
       "speciality": "",
       "pokemon": [
         {
@@ -6305,7 +6307,7 @@
       ]
     },
     "mustard2": {
-      "name": "",
+      "name": "Master Mustard",
       "speciality": "",
       "pokemon": [
         {
