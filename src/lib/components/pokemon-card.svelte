@@ -45,7 +45,10 @@
 
           {#if held}
             <div class='absolute right-0 -bottom-0.5 translate-x-full z-20 p-1 mb-1 flex flex-col items-center'>
-              <Tooltip>{held.effect}</Tooltip>
+              <Tooltip>
+                <p class='underline'>{held.name}</p>
+                <p>{held.effect.replace(/Held:/g, '')}</p>
+              </Tooltip>
               <span>
                 <PIcon type='item' name={held.sprite} />
               </span>
