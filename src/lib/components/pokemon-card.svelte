@@ -8,6 +8,7 @@
   import Hand from 'svelte-icons-pack/fa/FaSolidHandHolding'
 
   import ColorMap from '$lib/data/colors.json'
+  import Tooltip from '$lib/components/Tooltip.svelte'
   import TypeBadge from '$lib/components/type-badge.svelte'
   import MoveCard from '$lib/components/move-card.svelte'
   import StatBlock from '$lib/components/stat-block.svelte'
@@ -32,8 +33,9 @@
       {/if}
       <span class='relative text-xl mb-0.25 dark:sm:bg-transparent sm:bg-transparent pr-2 z-40'>
         <p class='-mb-1 w-auto relative text-xs dark:sm:bg-transparent sm:bg-transparent z-40 h-4'>
-        {#if ability}
-            <span data-tooltip={ability.effect}>
+          {#if ability}
+            <span>
+              <Tooltip>{ability.effect}</Tooltip>
               {ability.name}
             </span>
         {/if}
@@ -42,9 +44,9 @@
           {capitalise(name)}
 
           {#if held}
-            <div
-              class='absolute right-0 -bottom-0.5 translate-x-full z-20 p-1 mb-1 flex flex-col items-center'>
-              <span data-tooltip={held.effect}>
+            <div class='absolute right-0 -bottom-0.5 translate-x-full z-20 p-1 mb-1 flex flex-col items-center'>
+              <Tooltip>{held.effect}</Tooltip>
+              <span>
                 <PIcon type='item' name={held.sprite} />
               </span>
               <Icon src={Hand} className='-mt-3.5 fill-current dark:text-white' />

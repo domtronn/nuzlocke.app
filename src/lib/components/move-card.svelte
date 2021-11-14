@@ -2,6 +2,7 @@
   export let name, priority, power, type, damage_class, effect, stab
   import { capitalise } from '$lib/utils/string'
   import TypeBadge from '$lib/components/type-badge.svelte'
+  import Tooltip from '$lib/components/Tooltip.svelte'
 
   import Icon from 'svelte-icons-pack'
 
@@ -15,11 +16,10 @@
 
 <div class='my-2'>
   <p class='text-sm overflow-ellipsis mb-1 relative items-center flex flex-row space-x-1'>
-    <span
-      class='w-auto relative {effect ? 'mr-2' : ''}'
-      data-tooltip={effect || null}>
+    <span class='w-auto relative {effect ? 'mr-2' : ''}'>
 
       {#if effect}
+        <Tooltip>{effect}</Tooltip>
         <Icon
           size='0.5em'
           src={Info}
@@ -41,11 +41,9 @@
         </span>
 
         <!-- Desktop power -->
-        <span
-          data-tooltip={stab && power ? `Base power ${power}` : null}
-          class='w-0 invisible sm:w-auto sm:visible relative'
-        >
+        <span class='w-0 invisible sm:w-auto sm:visible relative'>
           {#if stab}
+            <Tooltip>Base power {power}</Tooltip>
             <Icon src={Chevron} className='absolute left-1/2 -translate-x-1/2 -translate-y-1/2 fill-current' />
             <span class='font-bold'>{Math.round(power * 1.5)}</span>
           {:else}
