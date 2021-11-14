@@ -81,7 +81,7 @@
       <StatBlock col={cols[0]} max={maxStat} {...stats} />
     </div>
   </div>
-    <slot name="footer" />
+  <slot name="footer" />
 </div>
 
 <style>

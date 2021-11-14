@@ -149,7 +149,7 @@
                 stats={Pokemon[p.pokemon].baseStats}
                 types={(Pokemon[p.pokemon].types || []).map(t => t.toLowerCase())}
               >
-                <span class='text-xs text-center p-2 -mt-4 dark:text-gray-600 text-gray-400' slot="footer">
+                <span class='text-xs text-center p-2 -mt-4 dark:text-gray-600 text-gray-400 z-40' slot="footer">
                   {#if p.location === 'Starter'}
                     Met in a fateful encounter
                   {:else}
