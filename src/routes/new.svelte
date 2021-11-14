@@ -63,12 +63,11 @@
           {@html label}
         </div>
 
-        <div slot="no-results" let:noResultsText={noResultsText}>
-          <span class='inline-flex items-center h-6 text-sm text-gray-600'>
-            <PIcon className='grayscale transform scale-75 -my-4 -mr-4 -ml-5' name='unown-question' />
-            {noResultsText}
-          </span>
-        </div>
+        <span slot="no-results" let:noResultsText={noResultsText} class='inline-flex items-center h-6 text-sm text-gray-600 dark:text-gray-50'>
+          <PIcon className='grayscale transform scale-75 -my-4 -mr-4 -ml-5' name='unown-question' />
+          {noResultsText}
+        </span>
+
       </AutoComplete>
     </span>
 

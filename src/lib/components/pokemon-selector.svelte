@@ -101,7 +101,7 @@
   </span>
 
   <span class='relative md:col-span-2'>
-    <span class='absolute left-4 top-2 z-30'>
+    <div class='absolute left-4 top-2 z-30'>
       {#if evoComplete}
         <Particles icons={['ice-stone', 'dawn-stone', 'fire-stone']} on:end={_ => evoComplete = false} />
       {/if}
@@ -109,7 +109,7 @@
       {#if captureComplete}
         <Particles icons={['poke-ball', 'friend-ball', 'heavy-ball', 'master-ball']} on:end={_ => captureComplete = false} />
       {/if}
-    </span>
+    </div>
 
     {#if selected}
       <PIcon
@@ -135,12 +135,10 @@
         <span class="-ml-2">{@html label}</span>
       </div>
 
-      <div slot="no-results" let:noResultsText={noResultsText}>
-        <span class='inline-flex items-center h-6 text-sm text-gray-600'>
-          <PIcon className='grayscale transform scale-75 -my-4 -mr-4 -ml-5' name='unown-question' />
-          {noResultsText}
-        </span>
-      </div>
+      <span slot="no-results" let:noResultsText={noResultsText} class='inline-flex items-center h-6 text-sm text-gray-600 dark:text-gray-50'>
+        <PIcon className='grayscale transform scale-75 -my-4 -mr-4 -ml-5' name='unown-question' />
+        {noResultsText}
+      </span>
 
       <div slot="loading" let:loadingText={loadingText}>
         <span class='inline-flex items-center h-6 text-sm text-gray-600'>
@@ -184,12 +182,10 @@
         {@html label}
       </div>
 
-      <div slot="no-results" let:noResultsText={noResultsText}>
-        <span class='inline-flex items-center h-6 text-sm text-gray-600'>
-          <PIcon className='grayscale transform scale-75 -my-4 -mr-4 -ml-5' name='unown-question' />
-          {noResultsText}
-        </span>
-      </div>
+      <span slot="no-results" let:noResultsText={noResultsText} class='inline-flex items-center h-6 text-sm text-gray-600 dark:text-gray-50'>
+        <PIcon className='grayscale transform scale-75 -my-4 -mr-4 -ml-5' name='unown-question' />
+        {noResultsText}
+      </span>
     </AutoComplete>
   </span>
 

@@ -38,7 +38,7 @@
     { name: 'Evil team', id: 'evil-team' }
   ]
 
-  let limit = 20
+  let limit = 10
 
   const fetchRoute = async (gen) => {
     const res = await fetch(`/api/route/${gen}.json`)
