@@ -76,13 +76,13 @@
           <div class='grid grid-cols-6 w-full sm:w-auto sm:grid-cols-3 gap-2 sm:gap-2 col-span-2'>
             {#each stats as s}
               <label
-                class='transition shadow-md cursor-pointer inline-flex text-center text-xs px-2 py-1 w-full text-gray-500 border-gray-400 font-medium border shadow-sm rounded-lg justify-center md:justify-between'
-                class:border-black={stat === s}
-                class:text-black={stat === s}
-                class:bg-gray-200={stat === s}
-                class:dark:bg-gray-900={stat === s}
-                class:dark:text-gray-200={stat === s}
-                class:dark:border-gray-200={stat === s}
+                class='transition shadow-md cursor-pointer inline-flex text-center text-xs px-2 py-1 w-full text-gray-500 dark:text-gray-400 border-gray-400 font-medium border shadow-sm rounded-lg justify-center md:justify-between'
+                class:border-gray-600={stat === s}
+                class:text-gray-50={stat === s}
+                class:bg-gray-600={stat === s}
+                class:dark:bg-gray-50={stat === s}
+                class:dark:text-gray-900={stat === s}
+                class:dark:border-gray-50={stat === s}
                 >
                 <input type=radio bind:group={stat} name='sortable' value={s} />
                 <Icon className='hidden md:block text-tiny {s !== 'spa' ? 'fill-current' : ''} translate-y-1/2 -mt-0.5 mr-1'  src={StatIconMap[s]} />
