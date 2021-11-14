@@ -115,8 +115,7 @@
                     class:text-black={filter === i}
                     class:dark:text-gray-200={filter === i}
                     class:text-gray-500={filter !== i}
-                    class:hover:border-gray-300={filter !== i}
-                    class:dark:hover:border-gray-500={filter !== i}
+                    class:hover:border-gray-500={filter !== i}
                     >
                     <input type=radio bind:group={filter} name='filter' value={i} />
                     {f}
@@ -135,8 +134,7 @@
                       class:text-black={bossFilter === f.id}
                       class:dark:text-gray-200={bossFilter === f.id}
                       class:text-gray-500={bossFilter !== f.id}
-                      class:hover:border-gray-300={bossFilter !== f.id}
-                      class:dark:hover:border-gray-500={bossFilter !== f.id}
+                      class:hover:border-gray-500={bossFilter !== f.id}
                       >
                       <input type=radio bind:group={bossFilter} name='boss-filter' value={f.id} />
                       {f.name}
