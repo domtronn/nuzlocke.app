@@ -29,7 +29,7 @@
     in:fade
     on:click={_ => show = !show}
     aria-label={show ? 'Close menu' : 'Open menu'}
-    class='h-full transition text-white dark:text-black md:dark:text-gray-500 md:dark:hover:text-gray-200 w-8 h-8 flex items-center justify-center rounded-full bg-gray-900 shadow-lg dark:bg-white md:bg-transparent text-center {className}'
+    class='h-full transition text-white sm:text-gray-600 dark:text-black md:dark:text-gray-500 md:dark:hover:text-gray-200 w-8 h-8 flex items-center justify-center rounded-full bg-gray-900 shadow-lg sm:shadow-none dark:bg-white sm:bg-transparent dark:sm:bg-transparent text-center {className}'
   >
     <Icon size='1.2rem' src={show ? X : Menu} className='fill-current' />
   </button>
