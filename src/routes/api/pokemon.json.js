@@ -1,5 +1,6 @@
 import { pick } from 'ramda'
-import Pokemon from 'pokemon-assets/assets/data/pokemon.json'
+import Pokemon from './pokemon'
+import { mapObj } from '$lib/utils/arr'
 
 export async function get ({ params, query }) {
   if (!query.get('p'))
@@ -8,7 +9,13 @@ export async function get ({ params, query }) {
   const plist = query.get('p').split(',')
 
   return {
-    body: pick(plist, Pokemon),
+    body: mapObj(
+      pick(plist, Pokemon),
+      d => ({
+        ...pick(['num', 'baseStats', 'name', 'types'], d),
+        imgId: d.num
+      })
+    ),
     headers: {
       'Content-Type': 'application/json'
     }

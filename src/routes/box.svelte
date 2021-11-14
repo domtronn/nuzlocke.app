@@ -72,7 +72,7 @@
     <div class='flex flex-col mx-auto items-center justify-center'>
       <main role='main' class='w-full sm:w-2/3 md:w-3/4 flex flex-col gap-y-4 py-6 pb-32 px-4 md:px-8 overflow-hidden'>
 
-        <div class='inline-flex flex-wrap flex-col sm:flex-row gap-y-2 gap-x-4 sm:items-start z-50 mt-2'>
+        <div class='inline-flex flex-wrap sm:flex-row gap-y-2 gap-x-4 sm:items-start z-50 mt-2'>
           <div class='grid grid-cols-6 w-full sm:w-auto sm:grid-cols-3 gap-2 sm:gap-2 col-span-2'>
             {#each stats as s}
               <label
@@ -91,15 +91,15 @@
             {/each}
           </div>
 
-          <div class='grid grid-cols-5 md:grid-cols-9 gap-x-2 gap-y-2 col-span-3'>
+          <div class='w-full sm:w-auto grid grid-rows-3 grid-cols-5 md:grid-cols-9 gap-x-2 gap-y-2 col-span-3'>
             {#each types as t}
               {#if typeCounts[t] > 0}
                 <label
-                  class='transition cursor-pointer'
+                  class='transition cursor-pointer h-6'
                   class:grayscale={(type && type !== t) || !typeCounts[t]}
                   class:opacity-50={(type && type !== t) || !typeCounts[t]}
                   class:grayscale-0={type && type === t}
-                  >
+                >
                   <input disabled={!typeCounts[t]} type=radio bind:group={type} name='filter' value={t} />
                   <TypeBadge type={t} className='w-full justify-center' />
                 </label>
@@ -107,7 +107,7 @@
             {/each}
           </div>
 
-          <div class='sm:order-none order-first col-span-1 flex justify-end -mt-8 sm:mt-0'>
+          <div class='sm:order-none w-full sm:w-auto order-first col-span-1 flex justify-end -mt-8 sm:mt-0'>
             <button
               class:focus:active:border-indigo-600={enabled}
               class:focus:active:bg-indigo-600={enabled}
@@ -141,7 +141,7 @@
               class='my-3'
               >
               <PokemonCard
-                sprite={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${Pokemon[p.pokemon].num}.png`}
+                sprite={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${Pokemon[p.pokemon].imgId}.png`}
                 maxStat={Math.max(150, ...Object.values(Pokemon[p.pokemon].baseStats))}
                 moves={[]}
                 ability={p.nickname ? { name: p.nickname + ' the' } : null}

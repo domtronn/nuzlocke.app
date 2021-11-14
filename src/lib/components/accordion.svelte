@@ -10,8 +10,8 @@
 </script>
 
 <style>
- button *:first-child { transition: transform 0.2s ease; }
- [aria-expanded=true] *:first-child { transform: rotate(0.25turn); }
+ button span { transition: transform 0.2s ease; }
+ [aria-expanded=true] span { transform: rotate(0.25turn); }
 </style>
 
 <button
@@ -20,7 +20,9 @@
   on:click={toggle}
   class='inline-flex items-center w-full cursor-pointer'
 >
-  <Icon src={Chevron} className='mr-2 md:mr-4 text-base md:text-xl {iconClassName}' />
+  <span class='mr-2 md:mr-4'>
+    <Icon src={Chevron} className='text-base md:text-xl {iconClassName}' />
+  </span>
   <slot name='heading' />
 </button>
 

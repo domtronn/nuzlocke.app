@@ -1,10 +1,12 @@
-import Pokemon from 'pokemon-assets/assets/data/pokemon.json'
+import Pokemon from './index.js'
+import { pick } from 'ramda'
+
 const rotate = (keyF, o) => Object.values(o).reduce((acc, it) => ({ ...acc, [keyF(it)]: it }), {})
 
 const PokemonNum = rotate(it => it.name, Pokemon)
 const PokemonName = rotate(it => it.name.toLowerCase(), Pokemon)
 
-// Need id,name,alias,sprite,evos
+const props = ['num', 'name', 'alias', 'sprite']
 
 export async function get ({ params }) {
   const { id } = params
@@ -14,7 +16,11 @@ export async function get ({ params }) {
     return { status: 404 }
 
   return {
-    body: pkmn,
+    body: {
+      ...pick(props, pkmn),
+      evos: pkmn.evos.map(i => i.toLowerCase()),
+      types: pkmn.types.map(i => i.toLowerCase()),
+    },
     headers: {
       'Cache-Control': 'public, max-age=31536000',
       'Content-Type': 'application/json'

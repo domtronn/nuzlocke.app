@@ -90,23 +90,20 @@
     evoComplete = true
   })
 
-  const handleEvolution = (base, evos) => async _ => {
-    const evoList = evos.map(e => e.toLowerCase())
-    handleSplitEvolution(base, evoList)
-  }
+  const handleEvolution = (base, evos) => async _ => handleSplitEvolution(base, evos)
 
  $: gray = ['Deceased', 'Missed'].includes(status?.state)
 </script>
 
 <div class='grid grid-cols-2 md:grid-cols-8 gap-y-3 md:gap-y-0 gap-x-2 flex justify-start items-center'>
-  <span class='col-span-2 md:text-right mr-4 text-sm'>
+  <span class='col-span-2 md:text-right mr-4 sm:text-sm text-lg mt-4 sm:mt-0'>
     {location}
   </span>
 
   <span class='relative md:col-span-2'>
     <span class='absolute left-4 top-2 z-30'>
       {#if evoComplete}
-        <Particles icons={['shiny-stone', 'ice-stone', 'fire-stone']} on:end={_ => evoComplete = false} />
+        <Particles icons={['ice-stone', 'dawn-stone', 'fire-stone']} on:end={_ => evoComplete = false} />
       {/if}
 
       {#if captureComplete}

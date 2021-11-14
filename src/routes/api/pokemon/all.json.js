@@ -1,5 +1,5 @@
 import { pick } from 'ramda'
-import Pokemon from 'pokemon-assets/assets/data/pokemon.json'
+import Pokemon from './index.js'
 
 export async function get ({ params }) {
   const items = Object

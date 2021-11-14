@@ -88,7 +88,7 @@
 {#await setup()}
   <Loader />
 {:then route}
-  <div out:fade={{ duration: 250 }} in:fade={{ duration: 250, delay: 300 }} class="container mx-auto">
+  <div out:fade={{ duration: 250 }} in:fade={{ duration: 250, delay: 300 }} class="container mx-auto pb-8">
     <div class="flex flex-row flex-wrap pb-16 justify-center">
       <Modal
         closeButton={false}
@@ -161,11 +161,11 @@
                       id={i}
                       store={gameStore}
                       location={p.name}
-                      />
+                    />
                   </li>
                 {/if}
               {:else if p.type === 'gym' && [0, 2].includes(filter) && (bossFilter === 'all' || bossFilter === p.group)}
-                <li id={`boss-${i}`} transition:fade>
+                <li class='-mb-4' id={`boss-${i}`} transition:fade>
                   <GymCard game={gameKey} starter={starter} id={p.value} location={p.name} />
                 </li >
               {/if}
