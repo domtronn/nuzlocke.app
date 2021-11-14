@@ -63,7 +63,7 @@
         </a>
       {/each}
 
-      <span class='right-0 translate-x-full top-1/2 -translate-y-1/2 absolute flex items-center justify-center' id='sidenav_button' />
+      <span class='z-50 bottom-4 right-4 fixed md:absolute md:right-0 md:bottom-auto md:top-1/2 md:-translate-y-1/2 md:translate-x-full flex items-center justify-center' id='sidenav_button' />
 
     </span>
   </div>

@@ -28,16 +28,16 @@
   <button
     in:fade
     on:click={_ => show = !show}
-    aria-label='Open menu'
-    class='h-full transition dark:text-gray-500 dark:hover:text-gray-200 {className}'
-    >
-    <Icon size='1.2rem' src={Menu} className='fill-current' />
+    aria-label={show ? 'Close menu' : 'Open menu'}
+    class='h-full transition dark:text-black md:dark:text-gray-500 md:dark:hover:text-gray-200 w-8 h-8 flex items-center justify-center rounded-full bg-white md:bg-transparent text-center {className}'
+  >
+    <Icon size='1.2rem' src={show ? X : Menu} className='fill-current' />
   </button>
 </Portal>
 
 {#if show}
   <ul transition:fly={{ x: 250, opacity: 1 }}
-      class='fixed bg-gray-50 z-20 dark:bg-gray-900 border-l border-gray-200 dark:border-black h-full top-1/2 right-0 -translate-y-1/2 px-8 py-4 text-gray-600 dark:text-gray-400 {className}'
+      class='fixed bg-gray-50 z-30 dark:bg-gray-900 border-l border-gray-200 dark:border-black h-full top-1/2 right-0 -translate-y-1/2 px-8 py-4 overflow-y-scroll text-gray-600 dark:text-gray-400 {className}'
   >
     <button on:click={_ => show = !show}>
       <Icon src={X} size='1.8rem' className='-ml-2 mb-2 fill-current transition-colors hover:cursor-pointer text-gray-800 hover:text-black dark:text-gray-500 dark:hover:text-gray-200' />
