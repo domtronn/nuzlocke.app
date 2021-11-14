@@ -16,7 +16,7 @@
 
 </script>
 
-<div class='flex flex-col items-center dark:bg-gray-900 bg-gray-50 rounded-lg p-8 mx-auto shadow-lg border dark:text-gray-200 dark:border-gray-600'>
+<div class='flex flex-col items-center dark:bg-gray-900 bg-gray-50 rounded-lg p-8 pb-14 mx-auto shadow-lg border dark:text-gray-200 dark:border-gray-600'>
   <span><strong>{capitalise(base)}</strong> is evolving!</span>
 
   <span class='relative text-base mb-8 mt-2'>
