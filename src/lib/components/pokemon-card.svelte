@@ -41,7 +41,7 @@
         {/if}
           </p>
 
-          {capitalise(name)}
+          {capitalise(name.replace(/-.*/, ''))}
 
           {#if held}
             <div class='absolute right-0 -bottom-0.5 translate-x-full z-20 p-1 mb-1 flex flex-col items-center'>
