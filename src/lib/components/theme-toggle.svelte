@@ -1,7 +1,6 @@
 <script>
   import { theme } from '$lib/store'
 
-  import Toggle from '$lib/components/toggle'
   import Icon from 'svelte-icons-pack'
   import DarkMode from 'svelte-icons-pack/ti/TiLightbulb'
 
@@ -16,12 +15,6 @@
   }
 </script>
 
-<span class='inline-flex gap-x-2 items-center mr-4'>
+<button aria-label={$theme === 'dark' ? 'Light mode' : 'Dark mode'} on:click={toggleTheme}>
   <Icon size='1.2em' className='dark:text-gray-200 fill-current' src={DarkMode} />
-
-  <Toggle
-    toggled={$theme === 'dark'}
-    on:toggle={toggleTheme}
-    small hideLabel label={$theme === 'dark' ? 'Light mode' : 'Dark mode'}
-    />
-</span>
+</button>
