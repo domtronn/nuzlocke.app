@@ -7,6 +7,8 @@
   import Loader from '$lib/components/loader.svelte'
 
   import TypeBadge from '$lib/components/type-badge.svelte'
+  import IconButton from '$lib/components/core/IconButton.svelte'
+
   import { activeGame, getGame, read } from '$lib/store'
   import { types } from '$lib/data/types'
   import { stats, StatIconMap } from '$lib/data/stats'
@@ -108,25 +110,12 @@
           </div>
 
           <div class='sm:order-none w-full sm:w-auto order-first col-span-1 flex justify-end -mt-8 sm:mt-0'>
-            <button
-              class:focus:active:border-indigo-600={enabled}
-              class:focus:active:bg-indigo-600={enabled}
-              class:focus:active:text-white={enabled}
-              class:hover:text-indigo-300={enabled}
-              class:hover:border-indigo-200={enabled}
-
-              class:dark:border-indigo-600={enabled}
-              class:dark:bg-indigo-600={enabled}
-              class:dark:text-gray-200={enabled}
-              class:dark:hover:bg-indigo-400={enabled}
-              class:dark:hover:text-indigo-600={enabled}
+            <IconButton
+              src={X}
+              title='Clear filters'
               disabled={!enabled}
               on:click={clear}
-              class='inline-flex gap-x-2 dark:bg-gray-700 dark:text-gray-200 dark:border-gray-600 disabled:opacity-25 w-full md:w-auto disabled:bg-gray-50 disabled:cursor-default disabled:border-gray-300 disabled:text-gray-500 transition-colors text-gray-500 text-xs focus:outline-none leading-4  border-2 shadow-md block rounded-lg px-3 py-2'
-            >
-              <Icon src={X} className='fill-current' size='1.2em' />
-              Clear filters
-            </button>
+            />
           </div>
         </div>
 

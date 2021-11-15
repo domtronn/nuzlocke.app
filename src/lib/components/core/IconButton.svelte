@@ -1,5 +1,5 @@
 <script>
-  export let title, src, name, className = '', color = 'gray'
+  export let title, src, name, disabled, className = '', color = 'gray'
 
   import { createEventDispatcher } from 'svelte'
   import Icon from 'svelte-icons-pack'
@@ -10,9 +10,11 @@
 </script>
 
 <button
+  disabled={disabled}
   aria-label={title}
   title={title}
   on:click={onclick}
+  class:disabled={disabled}
   class='{color} group flex items-center rounded-lg border-2 transition hover:grayscale-0 grayscale shadow-sm'
 >
   {#if src}
@@ -57,24 +59,32 @@
     --icb-bg: theme('colors.green.700');
   }
 
-  :global(.dark) button {
+  :global(.dark) button,
+  :global(.dark) button.disabled
+  {
     background-color: theme('colors.gray.700');
     border-color: theme('colors.gray.600');
     color: theme('colors.gray.400');
   }
 
-  button {
+  button,
+  button.disabled {
     background-color: theme('colors.white');
     border-color: theme('colors.gray.200');
     color: theme('colors.gray.400');
   }
 
-  button:hover {
+  button.disabled {
+    opacity: 0.5;
+    cursor: initial;
+  }
+
+  button:not(.disabled):hover {
     border-color: var(--icb-hover);
     color: var(--icb-hover);
   }
 
-  button:hover:active {
+  button:not(.disabled):hover:active {
     background-color: var(--icb-bg);
     border-color: var(--icb-active);
     color: var(--icb-active);
