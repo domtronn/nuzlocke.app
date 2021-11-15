@@ -75,10 +75,18 @@
       <main role='main' class='w-full sm:w-2/3 md:w-3/4 flex flex-col gap-y-4 py-6 pb-32 px-4 md:px-8 overflow-hidden'>
 
         <div class='inline-flex flex-wrap sm:flex-row gap-y-2 gap-x-4 sm:items-start z-50 mt-2'>
-          <div class='grid grid-cols-6 w-full sm:w-auto sm:grid-cols-3 gap-2 sm:gap-2 col-span-2'>
+          <div class='grid sm:grid-rows-2 grid-cols-7 w-full sm:w-auto sm:grid-cols-4 gap-1 sm:gap-2 col-span-2'>
+            <IconButton
+              src={X}
+              title='Clear filters'
+              containerClassName='sm:row-span-2 flex items-center justify-center'
+              disabled={!enabled}
+              on:click={clear}
+            />
+
             {#each stats as s}
               <label
-                class='transition shadow-md cursor-pointer inline-flex text-center text-xs px-2 py-1 w-full text-gray-500 dark:text-gray-400 border-gray-400 font-medium border shadow-sm rounded-lg justify-center md:justify-between'
+                class='transition items-center shadow-sm cursor-pointer inline-flex text-center row-span-1 text-xs px-2 py-1 w-full text-gray-500 dark:text-gray-400 border-gray-400 font-medium border shadow-sm rounded-lg justify-center md:justify-between'
                 class:border-gray-600={stat === s}
                 class:text-gray-50={stat === s}
                 class:bg-gray-600={stat === s}
@@ -87,7 +95,7 @@
                 class:dark:border-gray-50={stat === s}
                 >
                 <input type=radio bind:group={stat} name='sortable' value={s} />
-                <Icon className='hidden md:block text-tiny {s !== 'spa' ? 'fill-current' : ''} translate-y-1/2 -mt-0.5 mr-1'  src={StatIconMap[s]} />
+                <Icon className='hidden md:block text-tiny {s !== 'spa' ? 'fill-current' : ''} translate-y-1/2 -mt-2.5 mr-1'  src={StatIconMap[s]} />
                 {s}
               </label>
             {/each}
@@ -110,12 +118,7 @@
           </div>
 
           <div class='sm:order-none w-full sm:w-auto order-first col-span-1 flex justify-end -mt-8 sm:mt-0'>
-            <IconButton
-              src={X}
-              title='Clear filters'
-              disabled={!enabled}
-              on:click={clear}
-            />
+
           </div>
         </div>
 

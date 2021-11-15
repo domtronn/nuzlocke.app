@@ -1,5 +1,5 @@
 <script>
-  export let title, src, name, disabled, className = '', color = 'gray'
+  export let title, src, name, disabled, containerClassName = '', className = '', color = 'gray'
 
   import { createEventDispatcher } from 'svelte'
   import Icon from 'svelte-icons-pack'
@@ -15,13 +15,14 @@
   title={title}
   on:click={onclick}
   class:disabled={disabled}
-  class='{color} group flex items-center rounded-lg border-2 transition hover:grayscale-0 grayscale shadow-sm'
+  class='{color} {containerClassName} group flex items-center rounded-lg border-2 transition hover:grayscale-0 grayscale shadow-sm'
 >
   {#if src}
     <Icon className='fill-current m-2 {className}' src={src} />
-  {:else}
+  {:else if name}
     <PIcon className='transition-opacity opacity-50 group-hover:opacity-100 {className}' name={name} type='item' />
   {/if}
+  <slot />
 </button>
 
 <style>
