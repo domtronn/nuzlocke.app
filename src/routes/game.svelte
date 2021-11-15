@@ -10,6 +10,7 @@
   import Loader from '$lib/components/loader.svelte'
   import PokemonSelector from '$lib/components/pokemon-selector.svelte'
 
+  import Tabs from '$lib/components/core/Tabs.svelte'
   import SideNav from '$lib/components/navs/SideNav.svelte'
   import Modal from 'svelte-simple-modal'
 
@@ -27,15 +28,19 @@
   let element
 
   let filter = 0
-  const filters = [ 'Nuzlocke', 'Routes', 'Bosses' ]
+  const filters = [
+    { label: 'Nuzlocke', id: 0 },
+    { label: 'Routes', id: 1 },
+    { label: 'Bosses', id: 2 }
+  ]
 
   let bossFilter = 'all'
   const bossFilters = [
-    { name: 'All', id: 'all' },
-    { name: 'Gym leaders', id: 'gym-leader' },
-    { name: 'Elite Four', id: 'elite-four' },
-    { name: 'Rival fights', id: 'rival' },
-    { name: 'Evil team', id: 'evil-team' }
+    { label: 'All', id: 'all' },
+    { label: 'Gym leaders', id: 'gym-leader' },
+    { label: 'Elite Four', id: 'elite-four' },
+    { label: 'Rival fights', id: 'rival' },
+    { label: 'Evil team', id: 'evil-team' }
   ]
 
   let limit = 10
@@ -100,46 +105,10 @@
 
           <div class='flex flex-col gap-y-4 md:gap-y-0 md:flex-row justify-between mb-6'>
             <div class='flex flex-col gap-y-2'>
-              <div class='order-4 md:order-none flex flex-row gap-x-4'>
-                {#each filters as f, i}
-                  <label
-                    class='cursor-pointer transition-colors border-b-2 rounded-none text-md'
-                    class:border-transparent={filter !== i}
-                    class:border-black={filter === i}
-                    class:dark:border-gray-200={filter === i}
-                    class:text-black={filter === i}
-                    class:dark:text-gray-200={filter === i}
-                    class:text-gray-500={filter !== i}
-                    class:dark:text-gray-400={filter !== i}
-                    class:hover:border-gray-500={filter !== i}
-                    class:dark:hover:border-gray-400={filter !== i}
-                    >
-                    <input type=radio bind:group={filter} name='filter' value={i} />
-                    {f}
-                  </label>
-                {/each}
-              </div>
+              <Tabs tabs={filters} on:change={e => filter = e.detail.value.id} />
 
               {#if filter === 2}
-                <div transition:slide={{ duration: 200 }} class='order-4 md:order-none flex flex-row overflow-x-scroll gap-x-4'>
-                  {#each bossFilters as f, i}
-                    <label
-                      class='cursor-pointer transition-colors border-b-2 rounded-none text-md flex-shrink-0'
-                      class:border-transparent={bossFilter !== f.id}
-                      class:border-black={bossFilter === f.id}
-                      class:dark:border-gray-200={bossFilter === f.id}
-                      class:text-black={bossFilter === f.id}
-                      class:dark:text-gray-200={bossFilter === f.id}
-                      class:text-gray-500={bossFilter !== f.id}
-                      class:dark:text-gray-400={bossFilter !== f.id}
-                      class:hover:border-gray-500={bossFilter !== f.id}
-                      class:dark:hover:border-gray-400={bossFilter !== f.id}
-                      >
-                      <input type=radio bind:group={bossFilter} name='boss-filter' value={f.id} />
-                      {f.name}
-                    </label>
-                  {/each}
-                </div>
+                <Tabs tabs={bossFilters} on:change={e => bossFilter = e.detail.value.id} />
               {/if}
             </div>
 
