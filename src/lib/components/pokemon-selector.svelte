@@ -6,6 +6,8 @@
 
   import { NuzlockeStates, NuzlockeGroups } from '$lib/data/states'
 
+  import IconButton from '$lib/components/core/IconButton.svelte'
+
   import Accordion from '$lib/components/accordion.svelte'
   import StatBlock from '$lib/components/stat-block.svelte'
   import AutoComplete from 'simple-svelte-autocomplete'
@@ -127,8 +129,8 @@
       labelFieldName='name'
 
       className='text-xxs md:text-xs w-full min-w-0 {selected ? 'has-item' : ''}'
-      inputClassName='ac__input-container dark:bg-gray-700 dark:border-gray-600 transition-colors hover:border-indigo-200 focus:outline-none focus:border-indigo-600 border-2 shadow-md block w-full rounded-lg'
-      dropdownClassName='ac__dropdown-container rounded-lg border-2 border-gray-200 mt-2 shadow-md'
+      inputClassName='ac__input-container dark:bg-gray-700 dark:border-gray-600 transition-colors hover:border-indigo-200 focus:outline-none focus:border-indigo-600 border-2 shadow-sm block w-full rounded-lg'
+      dropdownClassName='ac__dropdown-container rounded-lg border-2 border-gray-200 mt-2 shadow-sm'
     >
       <div class='-m-3 flex inline-flex items-center' slot='item' let:item={item} let:label={label}>
         <PIcon className="-translate-x-2 transform scale-75 md:scale-100" name={item.sprite} />
@@ -154,7 +156,7 @@
       type='text'
       bind:value={nickname}
       placeholder='Nickname'
-      class='text-xxs md:text-xs dark:border-gray-600 dark:bg-gray-700 transition-colors dark:hover:border-indigo-400 hover:border-indigo-200 text-xs focus:outline-none leading-4 focus:border-indigo-600 border-2 shadow-md block w-full rounded-lg px-3 sm:py-2 py-1.5'
+      class='text-xxs md:text-xs dark:border-gray-600 dark:bg-gray-700 transition-colors dark:hover:border-indigo-400 hover:border-indigo-200 text-xs focus:outline-none leading-4 focus:border-indigo-600 border-2 shadow-sm block w-full rounded-lg px-3 sm:py-2 py-1.5'
     />
   </span>
 
@@ -174,8 +176,8 @@
       labelFieldName='state'
 
       className='text-xxs md:text-xs w-full min-w-0 {status ? 'has-status' : ''}'
-      inputClassName='ac__input-container dark:bg-gray-700 dark:border-gray-600 text-base transition-colors hover:border-indigo-200 focus:outline-none focus:border-indigo-600 border-2 shadow-md block  w-full rounded-lg px-4 py-2'
-      dropdownClassName='ac__dropdown-container rounded-lg  border-2 border-gray-200 mt-2 shadow-md'
+      inputClassName='ac__input-container dark:bg-gray-700 dark:border-gray-600 text-base transition-colors hover:border-indigo-200 focus:outline-none focus:border-indigo-600 border-2 shadow-sm block  w-full rounded-lg px-4 py-2'
+      dropdownClassName='ac__dropdown-container rounded-lg  border-2 border-gray-200 mt-2 shadow-sm'
       >
       <div class='flex inline-flex gap-x-2 py-2 items-center' slot='item' let:item={item} let:label={label}>
         <Icon src={item.icon} className='fill-current' />
@@ -190,48 +192,42 @@
   </span>
 
   <span class='text-left inline-flex gap-x-2'>
-    <button
-      aria-label='Clear'
+    <IconButton
+      src={Bin}
       title='Clear'
-      class='bg-white dark:border-gray-600 dark:bg-gray-700 dark:text-gray-400 dark:hover:border-indigo-400 dark:hover:text-indigo-400 dark:hover:active:bg-indigo-800 dark:hover:active:text-indigo-400 hover:active:bg-indigo-50 shadow-md text-gray-400 border-gray-200 active:shadow-sm active:text-indigo-600 hover:active:border-indigo-600 hover:text-indigo-300 hover:border-indigo-200 rounded-lg p-2 transition-all border-2'
       on:click={handleClear}
-    >
-      <Icon src={Bin} className='fill-current' />
-    </button>
+    />
 
     {#if selected && status && status.id !== 4 && status.id !== 5}
-      <button
-        aria-label='Kill {selected.name}'
+      <IconButton
+        src={Deceased}
         title='Kill {selected.name}'
-        class='bg-white dark:border-gray-600 dark:bg-gray-700 dark:text-gray-400 dark:hover:border-red-400 dark:hover:text-red-400 dark:hover:active:bg-red-800 dark:hover:active:text-red-400 hover:active:bg-red-50 shadow-md text-gray-400 border-gray-200 active:shadow-sm active:text-red-600 hover:active:border-red-600 hover:text-red-300 hover:border-red-200 rounded-lg p-2 transition-all border-2'
         on:click={handleStatus(5)}
-      >
-        <Icon src={Deceased} className='fill-current' />
-      </button>
+      />
     {/if}
 
     {#if selected && !status}
-      <button
-        aria-label='Capture {selected.name}'
+      <IconButton
+        name='poke-ball'
         title='Capture {selected.name}'
-        class='group flex items-center bg-white dark:bg-gray-700 dark:text-gray-400 dark:border-gray-600 dark:hover:border-orange-400 dark:hover:active:bg-orange-800 dark:hover:active:text-orange-400 hover:grayscale-0 hover:opacity-100 grayscale hover:active:bg-orange-100 shadow-md text-gray-400 border-gray-200 active:shadow-sm active:text-orange-600 hover:active:border-orange-600 hover:border-orange-300 rounded-lg transition-all border-2'
+        className='-translate-y-0.5'
+        color='orange'
         on:click={handleStatus(1)}
-      >
-        <PIcon name='poke-ball' type='item' className='transition-opacity -translate-y-0.5 opacity-50 group-hover:opacity-100' />
-      </button>
+      />
     {/if}
 
     {#if selected && selected?.evos?.length && (!status || NuzlockeGroups.Available.includes(status.id))}
-      <button
-        aria-label='Evolve {selected.name}'
+      <IconButton
+        name='dawn-stone'
         title='Evolve {selected.name}'
-        class='group flex items-center bg-white dark:bg-gray-700 dark:text-gray-400 dark:border-gray-600 dark:hover:border-green-400 dark:hover:active:bg-green-800 dark:hover:active:text-green-400 hover:grayscale-0 hover:opacity-100 grayscale hover:active:bg-green-100 shadow-md text-gray-400 border-gray-200 active:shadow-sm active:text-green-600 hover:active:border-green-600 hover:border-green-300 rounded-lg transition-all border-2'
+        className='-translate-y-0.5'
+        color='green'
         on:click={handleEvolution(selected.sprite, selected.evos)}
-      >
-        <PIcon name='dawn-stone' type='item' className='transition-opacity -translate-y-0.5 opacity-50 group-hover:opacity-100' />
-      </button>
+      />
     {/if}
 
   </span>
+
+
 
 </div>
