@@ -80,11 +80,6 @@
 
 </script>
 
-<svelte:head>
-  <script src="https://unpkg.com/popper.js@1"></script>
-  <script src="https://unpkg.com/tippy.js@5"></script>
-</svelte:head>
-
 {#await setup()}
   <Loader />
 {:then route}
