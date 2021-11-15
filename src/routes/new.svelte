@@ -11,6 +11,10 @@
   import Games from '$lib/data/games.json'
   import PIcon from '$lib/components/pokemon-icon.svelte'
 
+  import { filterObj } from '$lib/utils/arr'
+
+  let validGames = filterObj(Games, g => g.supported)
+
   let gameName = ''
   const handleNewGame = () => {
     if (!selectedGame.supported)
@@ -28,7 +32,7 @@
 
   let gen = 'All'
 
-  $: selectedGame = Games[selected]
+  $: selectedGame = validGames[selected]
   $: disabled = !gameName.length || !selected
 </script>
 
@@ -45,9 +49,10 @@
       {#if selectedGame}
         <img class='absolute z-40 left-2 top-1/2 -translate-y-1/2' width=36 src={selectedGame.logo} alt={selectedGame.title + ' logo'} />
       {/if}
+
       <AutoComplete
         hideArrow
-        items={Object.keys(Games)}
+        items={Object.keys(validGames)}
         placeholder='Game'
         bind:selectedItem={selected}
         labelFunction={function (id) { return id && Games[id].title }}
@@ -112,7 +117,7 @@
   </div>
 
   <div class='grid items-center justify-center gap-x-4 gap-y-6 grid-cols-3 md:grid-cols-4 hidden md:grid'>
-    {#each Object.entries(Games) as [id, game]}
+    {#each Object.entries(validGames) as [id, game]}
       {#if game.logo && (gen === 'All' || game.gen === gen) }
         <span class='w-full text-center'>
           <img
@@ -129,6 +134,12 @@
       {/if}
     {/each}
   </div>
+
+  <i class='p-2 text-sm text-center text-gray-400'>
+    <b>N.B.</b> Missing games just haven't had the data created for them yet,
+    <br />they will be updated regularly so check back soon for your favourite!
+  </i>
+
 </ScreenContainer>
 
 <style>
