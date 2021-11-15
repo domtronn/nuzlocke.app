@@ -9,7 +9,7 @@ export const NuzlockeStates = {
   2: { id: 2, state: 'Received', icon: Gift },
   3: { id: 3, state: 'Traded', icon: Traded },
   4: { id: 4, state: 'Missed', icon: Missed },
-  5: { id: 5, state: 'Deceased', icon: Deceased },
+  5: { id: 5, state: 'Dead', icon: Deceased },
 }
 
 export const NuzlockeGroups = {
