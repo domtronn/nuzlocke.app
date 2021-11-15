@@ -115,7 +115,7 @@
 
   .card__header::before {
     z-index: -1;
-    background: linear-gradient(130deg, white 55%, transparent);
+    background: linear-gradient(130deg, white 40%, transparent);
   }
 
   :global(.dark) .card__header::before {
