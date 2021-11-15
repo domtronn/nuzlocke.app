@@ -191,16 +191,18 @@
 
   <span class='text-left inline-flex gap-x-2'>
     <button
-      aria-label='Clear pokemon'
+      aria-label='Clear'
+      title='Clear'
       class='bg-white dark:border-gray-600 dark:bg-gray-700 dark:text-gray-400 dark:hover:border-indigo-400 dark:hover:text-indigo-400 dark:hover:active:bg-indigo-800 dark:hover:active:text-indigo-400 hover:active:bg-indigo-50 shadow-md text-gray-400 border-gray-200 active:shadow-sm active:text-indigo-600 hover:active:border-indigo-600 hover:text-indigo-300 hover:border-indigo-200 rounded-lg p-2 transition-all border-2'
       on:click={handleClear}
     >
       <Icon src={Bin} className='fill-current' />
     </button>
 
-    {#if status && status.id !== 4 && status.id !== 5}
+    {#if selected && status && status.id !== 4 && status.id !== 5}
       <button
-        aria-label='Kill pokemon'
+        aria-label='Kill {selected.name}'
+        title='Kill {selected.name}'
         class='bg-white dark:border-gray-600 dark:bg-gray-700 dark:text-gray-400 dark:hover:border-red-400 dark:hover:text-red-400 dark:hover:active:bg-red-800 dark:hover:active:text-red-400 hover:active:bg-red-50 shadow-md text-gray-400 border-gray-200 active:shadow-sm active:text-red-600 hover:active:border-red-600 hover:text-red-300 hover:border-red-200 rounded-lg p-2 transition-all border-2'
         on:click={handleStatus(5)}
       >
@@ -210,7 +212,8 @@
 
     {#if selected && !status}
       <button
-        aria-label='Capture pokemon'
+        aria-label='Capture {selected.name}'
+        title='Capture {selected.name}'
         class='group flex items-center bg-white dark:bg-gray-700 dark:text-gray-400 dark:border-gray-600 dark:hover:border-orange-400 dark:hover:active:bg-orange-800 dark:hover:active:text-orange-400 hover:grayscale-0 hover:opacity-100 grayscale hover:active:bg-orange-100 shadow-md text-gray-400 border-gray-200 active:shadow-sm active:text-orange-600 hover:active:border-orange-600 hover:border-orange-300 rounded-lg transition-all border-2'
         on:click={handleStatus(1)}
       >
@@ -220,7 +223,8 @@
 
     {#if selected && selected?.evos?.length && (!status || NuzlockeGroups.Available.includes(status.id))}
       <button
-        aria-label='Evolve pokemon'
+        aria-label='Evolve {selected.name}'
+        title='Evolve {selected.name}'
         class='group flex items-center bg-white dark:bg-gray-700 dark:text-gray-400 dark:border-gray-600 dark:hover:border-green-400 dark:hover:active:bg-green-800 dark:hover:active:text-green-400 hover:grayscale-0 hover:opacity-100 grayscale hover:active:bg-green-100 shadow-md text-gray-400 border-gray-200 active:shadow-sm active:text-green-600 hover:active:border-green-600 hover:border-green-300 rounded-lg transition-all border-2'
         on:click={handleEvolution(selected.sprite, selected.evos)}
       >
