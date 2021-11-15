@@ -79,7 +79,7 @@
             <IconButton
               src={X}
               title='Clear filters'
-              containerClassName='sm:row-span-2 flex items-center justify-center'
+              containerClassName='sm:row-span-2 flex flex-col order-last sm:order-none items-center justify-center'
               disabled={!enabled}
               on:click={clear}
             />
@@ -122,7 +122,7 @@
           </div>
         </div>
 
-        <div class='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-4 mt-6'>
+        <div class='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-8 sm:mt-6'>
           {#if box.length === 0}
             <span class='h-96 flex items-center justify-center col-span-4 dark:text-gray-600 text-xl'>You have no Pokémon in your box</span>
           {/if}
@@ -130,8 +130,7 @@
             <span
               animate:flip={{ duration: d => 10 * Math.sqrt(d) }}
               out:fade={{ duration: 150 }}
-              class='my-3'
-              >
+            >
               <PokemonCard
                 sprite={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${Pokemon[p.pokemon].imgId}.png`}
                 maxStat={Math.max(150, ...Object.values(Pokemon[p.pokemon].baseStats))}
