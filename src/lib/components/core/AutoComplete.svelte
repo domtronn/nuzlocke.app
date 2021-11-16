@@ -118,12 +118,20 @@
     height: theme('spacing.10') !important;
   }
 
+  :global(div.autocomplete-list) {
+    width: calc(100vw - theme('spacing.8')) !important;
+  }
+
   @media (min-width: theme('screens.sm')) {
     :global(input.autocomplete-input),
     :global(input.autocomplete)
     {
       font-size: theme('fontSize.xs') !important;
       height: theme('spacing.10') !important;
+    }
+
+    :global(div.autocomplete-list) {
+      width: 100% !important;
     }
   }
 
@@ -149,7 +157,6 @@
 
   :global(.dark div.autocomplete-list) {
     border-color: theme('colors.gray.700') !important;
-    width: calc(100% + theme('spacing.2')) !important;
   }
 
   :global(div.autocomplete-list-item) {

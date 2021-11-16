@@ -77,6 +77,7 @@
         <div class='inline-flex flex-wrap sm:flex-row gap-y-2 gap-x-4 sm:items-start z-50 mt-2'>
           <div class='grid sm:grid-rows-2 grid-cols-7 w-full sm:w-auto sm:grid-cols-4 gap-1 sm:gap-2 col-span-2'>
             <IconButton
+              rounded
               src={X}
               title='Clear filters'
               containerClassName='sm:row-span-2 flex flex-col order-last sm:order-none items-center justify-center'
