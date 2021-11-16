@@ -58,7 +58,13 @@
       <div class='font-bold flex flex-col'>
 
         {#if active && active.game}
-          <a class='mb-1 group tracking-widest hover:drop-shadow-text hover:text-pink-500' on:mouseenter={toggleHover} on:mouseleave={toggleHover} rel="external" href='/game'>
+          <a class='mb-1 group tracking-widest hover:drop-shadow-text hover:text-pink-500'
+             on:mouseenter={toggleHover}
+             on:mouseleave={toggleHover}
+             rel="external"
+             href='/game'
+             sveltekit:prefetch
+           >
             Continue
             <div class='flex flex-row group-hover:grayscale-0 grayscale items-center transition h-8 -mt-1 font-sans text-sm font-normal'>
               <img width=auto height=32 class='w-auto h-8 mr-2' src='/assets/{active.game}.png' alt='{active.game} logo' />
@@ -72,13 +78,16 @@
 
         <a rel="external" href="/new"
            class='tracking-widest hover:drop-shadow-text hover:text-yellow-300'
+           sveltekit:prefetch
            on:mouseenter={toggleHover} on:mouseleave={toggleHover}
          >
             New Game
         </a>
 
         <a rel="external" href="/saves"
-            class='tracking-widest hover:drop-shadow-text hover:text-blue-400' on:mouseenter={toggleHover} on:mouseleave={toggleHover}>
+           class='tracking-widest hover:drop-shadow-text hover:text-blue-400'
+           sveltekit:prefetch
+           on:mouseenter={toggleHover} on:mouseleave={toggleHover}>
           Load Game
         </a>
 

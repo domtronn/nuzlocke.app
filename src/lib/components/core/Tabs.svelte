@@ -1,25 +1,22 @@
 <script>
-  export let name, tabs = [], className = ''
-
-  import { createEventDispatcher } from 'svelte'
-  const dispatch = createEventDispatcher()
-
-  const onclick = value => _ => dispatch('change', { value })
+  export let name, selected, tabs = [], className = '', select = i => i.val
 
   $: active = 0
+  $: selected = select(tabs[active]) || active
 </script>
 
-<ul class='flex flex-row gap-x-4 {className}'>
+<ul class='flex flex-row gap-x-4 overflow-x-scroll {className}'>
   {#each tabs as tab, i}
-    <label class:active={active === i} class='text-base cursor-pointer transition-colors'>
+    <label class:active={active === i} class='text-base cursor-pointer transition-colors '>
       <input type=radio bind:group={active} name={name} value={i} />
-      <span on:click={onclick(tab)}>{tab.label}</span>
+      <span>{typeof tab === 'string' ? tab : tab.label}</span>
     </label>
   {/each}
 </ul>
 
 <style>
   input { display: none; }
+  span { white-space: pre; }
 
   label {
     color: theme('colors.gray.500');

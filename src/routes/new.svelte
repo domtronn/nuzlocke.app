@@ -9,6 +9,8 @@
   import AutoComplete from 'simple-svelte-autocomplete'
   import File from 'svelte-icons-pack/cg/CgFileAdd'
   import Games from '$lib/data/games.json'
+  import Button from '$lib/components/core/Button.svelte'
+  import Tabs from '$lib/components/core/Tabs.svelte'
   import PIcon from '$lib/components/pokemon-icon.svelte'
 
   import { filterObj } from '$lib/utils/arr'
@@ -31,6 +33,9 @@
   const handleSelect = id => _ => selected === id ? selected = null : selected = id
 
   let gen = 'All'
+  const gens = ['All']
+    .concat(['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII'])
+    .map((l, i) => ({ label: i === 0 ? l : `Gen ${l}`, val: l }))
 
   $: selectedGame = validGames[selected]
   $: disabled = !gameName.length || !selected
@@ -76,45 +81,12 @@
       </AutoComplete>
     </span>
 
-    <button
-      disabled={disabled}
-      on:click={handleNewGame}
-      class:focus:active:border-indigo-600={!disabled}
-      class:focus:active:bg-indigo-600={!disabled}
-      class:focus:active:text-white={!disabled}
-      class:hover:text-indigo-300={!disabled}
-      class:hover:border-indigo-200={!disabled}
-
-      class:dark:border-indigo-600={!disabled}
-      class:dark:bg-indigo-600={!disabled}
-      class:dark:text-gray-200={!disabled}
-      class:dark:hover:bg-indigo-400={!disabled}
-      class:dark:hover:text-indigo-600={!disabled}
-
-      class='bg-white flex-1 dark:bg-gray-700 dark:text-gray-200 dark:border-gray-600 disabled:opacity-25 w-full md:w-auto disabled:bg-gray-50 disabled:cursor-default disabled:border-gray-300 disabled:text-gray-500 transition-colors text-gray-500 text-base focus:outline-none leading-4  border-2 shadow-md block rounded-lg px-3 py-2'>
+    <Button disabled={disabled} on:click={handleNewGame}>
       Create game
-    </button>
+    </Button>
   </div>
 
-  <div class='flex-row gap-x-3 hidden md:flex'>
-    {#each ['All'].concat(['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII']) as val, i}
-      <label
-        class='cursor-pointer transition-colors border-b-2 rounded-none text-base'
-        class:border-transparent={gen !== val}
-        class:border-black={gen === val}
-        class:text-black={gen === val}
-        class:dark:text-gray-50={gen === val}
-        class:text-gray-400={gen !== val}
-        class:hover:border-gray-300={gen !== val}
-      >
-        <input type=radio bind:group={gen} name='gen' value={val} />
-        {#if i !== 0}
-          Gen
-        {/if}
-        {val}
-      </label>
-    {/each}
-  </div>
+  <Tabs name='gens' className='hidden md:flex' tabs={gens} bind:selected={gen} />
 
   <div class='grid items-center justify-center gap-x-4 gap-y-6 grid-cols-3 md:grid-cols-4 hidden md:grid'>
     {#each Object.entries(validGames) as [id, game]}
@@ -143,6 +115,5 @@
 </ScreenContainer>
 
 <style>
-  label > input { display: none; }
   img { transition-duration: 250ms !important; }
 </style>

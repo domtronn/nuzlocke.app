@@ -28,19 +28,15 @@
   let element
 
   let filter = 0
-  const filters = [
-    { label: 'Nuzlocke', id: 0 },
-    { label: 'Routes', id: 1 },
-    { label: 'Bosses', id: 2 }
-  ]
+  const filters = ['Nuzlocke', 'Routes', 'Bosses']
 
   let bossFilter = 'all'
   const bossFilters = [
-    { label: 'All', id: 'all' },
-    { label: 'Gym leaders', id: 'gym-leader' },
-    { label: 'Elite Four', id: 'elite-four' },
-    { label: 'Rival fights', id: 'rival' },
-    { label: 'Evil team', id: 'evil-team' }
+    { label: 'All', val: 'all' },
+    { label: 'Gym leaders', val: 'gym-leader' },
+    { label: 'Elite Four', val: 'elite-four' },
+    { label: 'Rival fights', val: 'rival' },
+    { label: 'Evil team', val: 'evil-team' }
   ]
 
   let limit = 10
@@ -105,10 +101,10 @@
 
           <div class='flex flex-col gap-y-4 md:gap-y-0 md:flex-row justify-between mb-6'>
             <div class='flex flex-col gap-y-2'>
-              <Tabs tabs={filters} on:change={e => filter = e.detail.value.id} />
+              <Tabs tabs={filters} bind:selected={filter} />
 
               {#if filter === 2}
-                <Tabs tabs={bossFilters} on:change={e => bossFilter = e.detail.value.id} />
+                <Tabs tabs={bossFilters} bind:selected={bossFilter} />
               {/if}
             </div>
 
