@@ -17,6 +17,8 @@
 
   const cols = types.map(t => ColorMap[t])
   const bgImg = Pattern(cols[1] || cols[0])
+
+  const anim = Math.floor(Math.random() * 4) + 4
 </script>
 
 <div class='card relative flex flex-col border dark:border-gray-900 bg-white dark:bg-gray-900 dark:shadow-lg rounded-lg'>
@@ -46,7 +48,7 @@
           {#if held}
             <div class='absolute right-0 -bottom-0.5 translate-x-full z-20 p-1 mb-1 flex flex-col items-center'>
               <Tooltip>
-                {held.name} - {held.effect.replace(/Held:/g, '')}
+                {held.name}
               </Tooltip>
               <span>
                 <PIcon type='item' name={held.sprite} />
@@ -60,7 +62,7 @@
     </div>
 
     <div class='absolute -right-8 h-0'>
-      <img class='img__pkm -translate-y-16 h-40 w-auto' src={sprite} alt={name} />
+      <img style="--v-anim: {anim}s;" class='img__pkm -translate-y-16 h-40 w-auto' src={sprite} alt={name} />
     </div>
 
     <div class='flex gap-x-1 absolute top-0 transform -translate-y-1/2'>
@@ -124,4 +126,15 @@
   .img__pkm {
     min-width: 160px;
   }
+
+  img {
+    animation: bob var(--v-anim) ease infinite;
+  }
+
+  @keyframes bob {
+    0%, 100% {transform: var(--tw-transform) scaleX(1) scaleY(1);}
+    25%, 75% { transform: var(--tw-transform) scaleX(1.05) scaleY(0.95); }
+    50% { transform: var(--tw-transform) scaleX(0.95) scaleY(1.05); }
+  }
+
 </style>
