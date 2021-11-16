@@ -99,7 +99,7 @@
           />
 
 
-          <div class='flex flex-col gap-y-4 md:gap-y-0 md:flex-row justify-between mb-6'>
+          <div class='flex flex-col gap-y-4 md:gap-y-0 md:flex-row justify-between items-start mb-6'>
             <div class='flex flex-col gap-y-2'>
               <Tabs tabs={filters} bind:selected={filter} />
 
@@ -109,7 +109,7 @@
             </div>
 
             <div class='flex flex-row items-center gap-x-2'>
-              <p>Starter type</p>
+              <p>Starter</p>
               <StarterType on:select={setstarter} starter={starter} />
             </div>
           </div>
