@@ -75,6 +75,7 @@
     --auc-fg: theme('colors.gray.100');
     --auc-bg: theme('colors.gray.800');
     --auc-focus: theme('colors.white');
+    --auc-focus-fg: theme('colors.gray.900');
     --auc-focus-2: theme('colors.gray.200');
   }
 

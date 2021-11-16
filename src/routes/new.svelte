@@ -66,39 +66,7 @@
         {/if}
         {@html label}
       </div>
-
     </AutoComplete>
-
-    <span class='relative block md:hidden'>
-      {#if selectedGame}
-        <img class='absolute z-40 left-2 top-1/2 -translate-y-1/2' width=36 src={selectedGame.logo} alt={selectedGame.title + ' logo'} />
-      {/if}
-
-      <AutoComplete
-        hideArrow
-        items={Object.keys(validGames)}
-        placeholder='Game'
-        bind:selectedItem={selected}
-        labelFunction={function (id) { return id && Games[id].title }}
-
-        className='text-xxs sm:text-base w-full min-w-0 {selected ? 'has-status-lg' : ''}'
-        inputClassName='ac__input-container dark:bg-gray-700 dark:border-gray-600 transition-colors hover:border-indigo-200 focus:outline-none focus:border-indigo-600 border-2 shadow-md block w-full rounded-lg'
-        dropdownClassName='ac__dropdown-container rounded-lg  border-2 border-gray-200 mt-2 shadow-md'
-        >
-        <div class='flex inline-flex gap-x-2 py-2 items-center h-8' slot='item' let:item={item} let:label={label}>
-          {#if Games[item].logo}
-            <img width=32 src={Games[item].logo} alt={Games[item].title + ' logo'} />
-          {/if}
-          {@html label}
-        </div>
-
-        <span slot="no-results" let:noResultsText={noResultsText} class='inline-flex items-center h-6 text-sm text-gray-600 dark:text-gray-50'>
-          <PIcon className='grayscale transform scale-75 -my-4 -mr-4 -ml-5' name='unown-question' />
-          {noResultsText}
-        </span>
-
-      </AutoComplete>
-    </span>
 
     <Button rounded disabled={disabled} on:click={handleNewGame}>
       Create game
