@@ -151,7 +151,7 @@
 
     <svelte:fragment slot=icon let:iconClass let:selected>
       {#if selected}
-        <Icon className='{iconClass} left-3' src={selected.icon} />
+        <Icon className='{iconClass} fill-current left-3' src={selected.icon} />
       {/if}
     </svelte:fragment>
 
