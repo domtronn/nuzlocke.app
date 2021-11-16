@@ -94,7 +94,7 @@
 
   const handleEvolution = (base, evos) => async _ => handleSplitEvolution(base, evos)
 
- $: gray = ['Deceased', 'Missed'].includes(status?.state)
+ $: gray = ['Dead', 'Missed'].includes(status?.state)
 </script>
 
 <div data-selected={!!selected} class='grid grid-cols-2 md:grid-cols-8 gap-y-3 md:gap-y-0 gap-x-2 flex justify-start items-center'>
