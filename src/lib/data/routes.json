@@ -2460,5 +2460,425 @@
       "type": "route",
       "name": "Crown Tundra: Split-Decision Ruins"
     }
+  ],
+  "xy": [
+    {
+      "type": "route",
+      "name": "Starter"
+    },
+    {
+      "type": "route",
+      "name": "Aquacorde Town"
+    },
+    {
+      "type": "gym",
+      "name": "1st Shauna Battle",
+      "value": "sh1",
+      "group": "rival"
+    },
+    {
+      "type": "route",
+      "name": "Route 2"
+    },
+    {
+      "type": "route",
+      "name": "Santalune Forest"
+    },
+    {
+      "type": "gym",
+      "name": "Santlune Gym",
+      "value": "1",
+      "group": "gym-leader"
+    },
+    {
+      "type": "route",
+      "name": "Route 3"
+    },
+    {
+      "type": "route",
+      "name": "Route 22"
+    },
+    {
+      "type": "route",
+      "name": "Route 4"
+    },
+    {
+      "type": "route",
+      "name": "Lumiose City"
+    },
+    {
+      "type": "gym",
+      "name": "Pokémon Lab",
+      "value": "sy1",
+      "group": "rival"
+    },
+    {
+      "type": "route",
+      "name": "Route 5"
+    },
+    {
+      "type": "gym",
+      "name": "1st Tierno Battle",
+      "value": "ti1",
+      "group": "rival"
+    },
+    {
+      "type": "route",
+      "name": "Route 6"
+    },
+    {
+      "type": "route",
+      "name": "Parfum Palace"
+    },
+    {
+      "type": "route",
+      "name": "Route 7"
+    },
+    {
+      "type": "gym",
+      "name": "Multi Battle",
+      "value": "tnt",
+      "group": "rival"
+    },
+    {
+      "type": "route",
+      "name": "Battle Chateau"
+    },
+    {
+      "type": "route",
+      "name": "Connecting Cave"
+    },
+    {
+      "type": "route",
+      "name": "Route 8"
+    },
+    {
+      "type": "route",
+      "name": "Ambrette Town"
+    },
+    {
+      "type": "route",
+      "name": "Route 9"
+    },
+    {
+      "type": "route",
+      "name": "Glittering Cave"
+    },
+    {
+      "type": "route",
+      "name": "Cyllage City"
+    },
+    {
+      "type": "gym",
+      "name": "Cyllage Gym",
+      "value": "2",
+      "group": "gym-leader"
+    },
+    {
+      "type": "route",
+      "name": "Route 10"
+    },
+    {
+      "type": "gym",
+      "name": "Geosenge Korrina Battle",
+      "value": "3a",
+      "group": "rival"
+    },
+    {
+      "type": "route",
+      "name": "Route 11"
+    },
+    {
+      "type": "route",
+      "name": "Reflection Cave"
+    },
+    {
+      "type": "route",
+      "name": "Shalour City"
+    },
+    {
+      "type": "route",
+      "name": "Tower of Mystery"
+    },
+    {
+      "type": "gym",
+      "name": "Tower of Mastery Rival Battle",
+      "value": "se1",
+      "group": "rival"
+    },
+    {
+      "type": "gym",
+      "name": "Shalour Gym",
+      "value": "3",
+      "group": "gym-leader"
+    },
+    {
+      "type": "gym",
+      "name": "Tower of Mastery Korrina Battle",
+      "value": "3b",
+      "group": "rival"
+    },
+    {
+      "type": "route",
+      "name": "Route 12"
+    },
+    {
+      "type": "route",
+      "name": "Azure Bay"
+    },
+    {
+      "type": "gym",
+      "name": "Coumarine Pokémon Center Rival Battle",
+      "value": "se2",
+      "group": "rival"
+    },
+    {
+      "type": "gym",
+      "name": "Coumarine Gym",
+      "value": "4",
+      "group": "gym-leader"
+    },
+    {
+      "type": "route",
+      "name": "Route 13"
+    },
+    {
+      "type": "gym",
+      "name": "Power Plant",
+      "value": "al1",
+      "group": "evil-team"
+    },
+    {
+      "type": "gym",
+      "name": "Lumiose Gym",
+      "value": "5",
+      "group": "gym-leader"
+    },
+    {
+      "type": "route",
+      "name": "Route 14"
+    },
+    {
+      "type": "gym",
+      "name": "Route 14 Rival Battle",
+      "value": "se3",
+      "group": "rival"
+    },
+    {
+      "type": "route",
+      "name": "Laverre City"
+    },
+    {
+      "type": "gym",
+      "name": "Laverre Gym",
+      "value": "5",
+      "group": "gym-leader"
+    },
+    {
+      "type": "gym",
+      "name": "Pokéball Factory",
+      "value": "cnb",
+      "group": "evil-team"
+    },
+    {
+      "type": "route",
+      "name": "Route 15"
+    },
+    {
+      "type": "route",
+      "name": "Lost Hotel"
+    },
+    {
+      "type": "route",
+      "name": "Route 16"
+    },
+    {
+      "type": "route",
+      "name": "Frost Cavern"
+    },
+    {
+      "type": "gym",
+      "name": "Frost Cavern",
+      "value": "m1",
+      "group": "evil-team"
+    },
+    {
+      "type": "route",
+      "name": "Route 17"
+    },
+    {
+      "type": "gym",
+      "name": "Anistar City Rival Battle",
+      "value": "se4",
+      "group": "rival"
+    },
+    {
+      "type": "gym",
+      "name": "Anistar Gym",
+      "value": "6",
+      "group": "gym-leader"
+    },
+    {
+      "type": "gym",
+      "name": "Lysandre Labs",
+      "value": "l1",
+      "group": "evil-team"
+    },
+    {
+      "type": "gym",
+      "name": "Lysandre Labs",
+      "value": "al2",
+      "group": "evil-team"
+    },
+    {
+      "type": "gym",
+      "name": "Lysandre Labs",
+      "value": "c",
+      "group": "evil-team"
+    },
+    {
+      "type": "gym",
+      "name": "Lysandre Labs",
+      "value": "b",
+      "group": "evil-team"
+    },
+    {
+      "type": "gym",
+      "name": "Lysandre Labs",
+      "value": "m2",
+      "group": "evil-team"
+    },
+    {
+      "type": "gym",
+      "name": "Lysandre Labs",
+      "value": "x",
+      "group": "evil-team"
+    },
+    {
+      "type": "gym",
+      "name": "Team Flare Secret HQ",
+      "value": "l2",
+      "group": "evil-team"
+    },
+    {
+      "type": "route",
+      "name": "Team Flare Secret HQ"
+    },
+    {
+      "type": "gym",
+      "name": "Team Flare Secret HQ",
+      "value": "l3",
+      "group": "evil-team"
+    },
+    {
+      "type": "route",
+      "name": "Route 18"
+    },
+    {
+      "type": "route",
+      "name": "Couriway Town"
+    },
+    {
+      "type": "gym",
+      "name": "Couriway Town Sycamore Battle",
+      "value": "sy2",
+      "group": "rival"
+    },
+    {
+      "type": "route",
+      "name": "Route 19"
+    },
+    {
+      "type": "gym",
+      "name": "Route 19 Shauna Battle",
+      "value": "sh2",
+      "group": "rival"
+    },
+    {
+      "type": "gym",
+      "name": "Route 19 Tierno Battle",
+      "value": "ti2",
+      "group": "rival"
+    },
+    {
+      "type": "gym",
+      "name": "Route 19 Trevor Battle",
+      "value": "trv",
+      "group": "rival"
+    },
+    {
+      "type": "route",
+      "name": "Route 20"
+    },
+    {
+      "type": "route",
+      "name": "Pokémon Village"
+    },
+    {
+      "type": "gym",
+      "name": "Snowbelle Gym",
+      "value": "8",
+      "group": "gym-leader"
+    },
+    {
+      "type": "route",
+      "name": "Route 21"
+    },
+    {
+      "type": "route",
+      "name": "Route 22"
+    },
+    {
+      "type": "route",
+      "name": "Victory Roa"
+    },
+    {
+      "type": "gym",
+      "name": "Victory Road Rival Battle",
+      "value": "se5",
+      "group": "rival"
+    },
+    {
+      "type": "gym",
+      "name": "Pokémon League Blazing Chamber",
+      "value": "e1",
+      "group": "elite-four"
+    },
+    {
+      "type": "gym",
+      "name": "Pokémon League Flood Chamber",
+      "value": "e2",
+      "group": "elite-four"
+    },
+    {
+      "type": "gym",
+      "name": "Pokémon League Ironworks Chamber",
+      "value": "e3",
+      "group": "elite-four"
+    },
+    {
+      "type": "gym",
+      "name": "Pokémon League Dragonmark Chamber",
+      "value": "e4",
+      "group": "elite-four"
+    },
+    {
+      "type": "gym",
+      "name": "Pokémon Champion Radiant Chamber",
+      "value": "c1",
+      "group": "elite-four"
+    },
+    {
+      "type": "route",
+      "name": "Terminus Cave"
+    },
+    {
+      "type": "route",
+      "name": "Sea Spirit's Den"
+    },
+    {
+      "type": "route",
+      "name": "Friend Safari"
+    }
   ]
 }

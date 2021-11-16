@@ -1,5 +1,5 @@
 <script>
-  export let title, src, name, disabled, containerClassName = '', className = '', color = 'gray'
+  export let title, src = false, name = false, disabled = false, containerClassName = '', className = '', color = 'gray'
 
   import { createEventDispatcher } from 'svelte'
   import Icon from 'svelte-icons-pack'

@@ -97,7 +97,7 @@
  $: gray = ['Deceased', 'Missed'].includes(status?.state)
 </script>
 
-<div class='grid grid-cols-2 md:grid-cols-8 gap-y-3 md:gap-y-0 gap-x-2 flex justify-start items-center'>
+<div data-selected={!!selected} class='grid grid-cols-2 md:grid-cols-8 gap-y-3 md:gap-y-0 gap-x-2 flex justify-start items-center'>
   <span class='col-span-2 md:text-right mr-4 sm:text-sm text-lg mt-4 sm:mt-0'>
     {location}
   </span>
