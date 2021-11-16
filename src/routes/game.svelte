@@ -88,7 +88,7 @@
     <div class="flex flex-row flex-wrap pb-16 justify-center">
       <Modal
         closeButton={false}
-        styleWindow={{ background: 'transparent !important', maxWidth: '320px' }}
+        styleWindow={{ background: 'transparent !important', maxWidth: '320px', width: 'auto' }}
         styleContent={{ padding: '0 !important' }}
       >
         <main id='main' role="main" class="w-full sm:w-2/3 md:w-3/4 px-4 md:px-8 md:py-6 overflow-hidden flex flex-col gap-y-4 relative">
