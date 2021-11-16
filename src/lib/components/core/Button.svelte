@@ -1,7 +1,7 @@
 <script>
   import { createEventDispatcher } from 'svelte'
 
-  export let disabled, className = ''
+  export let disabled, className = '', rounded = false
 
   const dispatch = createEventDispatcher()
   const onclick = _ => !disabled && dispatch('click')
@@ -10,29 +10,29 @@
 <button
   on:click={onclick}
   class:disabled={disabled}
-  class='border-2 ring-2 ring-transparent rounded-lg px-4 py-2 transition-colors {className}'
+  class:rounded-lg={rounded}
+  class='border-2 ring-2 ring-transparent px-4 transition-colors h-8 sm:h-10 {className}'
 >
   <slot />
 </button>
 
 <style>
   :root {
-    --b-fg: theme('colors.gray.800');
+    --b-fg: theme('colors.gray.700');
     --b-bg: theme('colors.gray.100');
-    --b-light-1: theme('colors.indigo.50');
-    --b-light-2: theme('colors.indigo.300');
-    --b-highlight-1: theme('colors.indigo.600');
-    --b-highlight-2: theme('colors.indigo.700');
-
+    --b-light-1: theme('colors.orange.50');
+    --b-light-2: theme('colors.orange.300');
+    --b-highlight-1: theme('colors.orange.500');
+    --b-highlight-2: theme('colors.orange.300');
   }
 
   :global(.dark)  {
     --b-fg: theme('colors.gray.200');
     --b-bg: theme('colors.gray.900');
-    --b-light-1: theme('colors.indigo.900');
+    --b-light-1: theme('colors.orange.500');
     --b-light-2: transparent;
-    --b-highlight-1: theme('colors.indigo.400');
-    --b-highlight-2: theme('colors.indigo.500');
+    --b-highlight-1: theme('colors.orange.400');
+    --b-highlight-2: theme('colors.gray.800');
   }
 
   button {

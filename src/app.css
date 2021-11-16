@@ -4,84 +4,9 @@
 @tailwind utilities;
 
 
-.ac__dropdown-container {
-  width: calc(200% + theme('spacing.2')) !important;
-}
-
-@media (min-width: 640px) {
-  .ac__dropdown-container {
-    width: 100% !important;
-  }
-}
-
-.ac__dropdown-container {
-  padding: 0 !important;
-  border: 2px solid theme('colors.gray.200') !important;
-}
-
-.dark .ac__dropdown-container {
-  padding: 0 !important;
-  border: 2px solid theme('colors.gray.600') !important;
-  background-color: theme('colors.gray.700') !important;
-}
-
-.ac__dropdown-container .autocomplete-list-item {
-  transition: background-color 0.2s ease, color 0.2s ease;
-  color: theme('colors.gray.900') !important;
-}
-
-.dark .ac__dropdown-container .autocomplete-list-item {
-  color: theme('colors.gray.200') !important;
-}
-
-.autocomplete-list-item.selected {
-  background-color: theme('colors.indigo.300') !important;
-  color: theme('colors.gray.800') !important;
-}
-
-.dark .autocomplete-list-item.selected {
-  background-color: theme('colors.indigo.300') !important;
-  color: theme('colors.gray.900') !important;
-}
-
-.autocomplete {
-  height: 36px !important;
-  margin-top: -1px;
-  min-width: 0 !important;
-}
-
-.autocomplete-list-item.confirmed {
-  background-color: theme('colors.indigo.500') !important;
-  color: white !important;
-}
-
-.ac__input-container {
-  cursor: pointer !important;
-  min-width: 0 !important;
-  padding: theme('padding.1') theme('padding.2') !important;
-}
-
-.dark .ac__input-container:hover {
-  border-color: theme('colors.indigo.400') !important;
-}
-
-.ac__input-container:hover {
-  border-color: theme('colors.indigo.200') !important;
-}
-
-.has-item .ac__input-container {
-  padding-left: 48px !important;
-}
-
-@media (min-width: 640px) {
-  .ac__input-container {
-    padding: theme('padding.2') theme('padding.3') !important;
-  }
-
-  .has-item .ac__input-container {
-   padding-left: 60px !important;
-  }
-}
+/* .ac__dropdown-container { */
+/*   width: calc(200% + theme('spacing.2')) !important; */
+/* } */
 
 .pkm { background-image: url(/assets/pokemon.webp) !important; }
 .pkitem { background-image: url(/assets/items.webp) !important; }
@@ -115,8 +40,6 @@
   height: 19px;
   background-position: -484px -222px;
 }
-.has-status .ac__input-container { padding-left: 32px !important; }
-.has-status-lg .ac__input-container { padding-left: 48px !important; }
 
 @keyframes full-pulse {
   0%, 100% {

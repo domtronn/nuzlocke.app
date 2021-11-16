@@ -1,5 +1,5 @@
 <script>
-  export let title, src = false, name = false, disabled = false, containerClassName = '', className = '', color = 'gray'
+  export let title, src = false, name = false, disabled = false, containerClassName = '', className = '', color = 'gray', rounded = false
 
   import { createEventDispatcher } from 'svelte'
   import Icon from 'svelte-icons-pack'
@@ -15,7 +15,8 @@
   title={title}
   on:click={onclick}
   class:disabled={disabled}
-  class='{color} {containerClassName} group flex items-center rounded-lg border-2 transition hover:grayscale-0 grayscale shadow-sm'
+  class:rounded-lg={rounded}
+  class='{color} {containerClassName} group flex items-center border-2 ring-2 ring-transparent transition hover:grayscale-0 grayscale shadow-sm'
 >
   {#if src}
     <Icon className='fill-current m-2 {className}' src={src} />
@@ -40,7 +41,7 @@
 
   .orange {
     --icb-hover: theme('colors.orange.400');
-    --icb-active: theme('colors.orange.600');
+    --icb-active: theme('colors.orange.400');
     --icb-bg: theme('colors.orange.200');
   }
 
@@ -65,7 +66,6 @@
   {
     background-color: theme('colors.gray.700');
     border-color: theme('colors.gray.600');
-    color: theme('colors.gray.400');
   }
 
   button,
@@ -86,7 +86,7 @@
   }
 
   button:not(.disabled):hover:active {
-    background-color: var(--icb-bg);
+    --tw-ring-color: var(--icb-bg);
     border-color: var(--icb-active);
     color: var(--icb-active);
   }

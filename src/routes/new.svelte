@@ -6,7 +6,8 @@
   import { savedGames, activeGame, createGame } from '$lib/store'
   import { PixelatedContainer, ScreenContainer } from '$lib/components/containers'
 
-  import AutoComplete from 'simple-svelte-autocomplete'
+  import { AutoComplete, Input } from '$lib/components/core'
+
   import File from 'svelte-icons-pack/cg/CgFileAdd'
   import Games from '$lib/data/games.json'
   import Button from '$lib/components/core/Button.svelte'
@@ -42,13 +43,31 @@
 </script>
 
 <ScreenContainer title='New Nuzlocke' className='-mt-16' icon={File}>
-  <div class='flex flex-col md:flex-row md:flex-wrap gap-y-4 gap-2'>
-    <input
-      type='text'
+  <div class='flex flex-col md:flex-row md:flex-wrap sm:gap-y-4 gap-2'>
+    <Input
+      rounded
+      placeholder=Name
+      className=sm:flex-1
       bind:value={gameName}
-      placeholder='Name'
-      class='text-xxs md:text-base flex-1 dark:border-gray-600 dark:bg-gray-700 transition-colors dark:hover:border-indigo-400 hover:border-indigo-200 text-md focus:outline-none leading-4 focus:border-indigo-600 border-2 shadow-md block w-full rounded-lg px-3 py-2'
     />
+
+    <AutoComplete
+      rounded
+      placeholder=Game
+      className='block sm:hidden'
+      items={Object.keys(validGames)}
+      label={i => i && Games[i].title}
+      bind:selected={selected}
+    >
+
+      <div class='flex inline-flex gap-x-2 py-2 items-center h-8' slot='item' let:item={i} let:label={label}>
+        {#if Games[i].logo}
+          <img width=32 src={Games[i].logo} alt={Games[i].title + ' logo'} />
+        {/if}
+        {@html label}
+      </div>
+
+    </AutoComplete>
 
     <span class='relative block md:hidden'>
       {#if selectedGame}
@@ -81,7 +100,7 @@
       </AutoComplete>
     </span>
 
-    <Button disabled={disabled} on:click={handleNewGame}>
+    <Button rounded disabled={disabled} on:click={handleNewGame}>
       Create game
     </Button>
   </div>

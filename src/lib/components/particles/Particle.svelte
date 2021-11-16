@@ -5,10 +5,10 @@
   import Noise from 'simplex-noise'
   const simplex = new Noise()
 
-  export let theta, v, decay = 0.975, g = 3, scale = 1
+  export let theta, v, decay = 0.975, g = 3, scale = 1, className = ''
+
   const random = (Math.random() * 600) + 200
   let x = 0, y = 0, tiltTheta = 0
-
 
   onMount(() => {
     let frame
@@ -31,7 +31,7 @@
 
 <span
   out:fade
-  class='absolute flex items-center justify-center'
+  class='absolute flex items-center justify-center {className}'
   style='left: {x}px; top: {y}px; transform: rotate({tiltTheta}rad) scale({scale});'
   >
   <slot />

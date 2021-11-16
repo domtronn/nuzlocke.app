@@ -5,12 +5,10 @@
   import { read, patch } from '$lib/store'
 
   import { NuzlockeStates, NuzlockeGroups } from '$lib/data/states'
-
-  import IconButton from '$lib/components/core/IconButton.svelte'
+  import { IconButton, AutoComplete, Input } from '$lib/components/core'
 
   import Accordion from '$lib/components/accordion.svelte'
   import StatBlock from '$lib/components/stat-block.svelte'
-  import AutoComplete from 'simple-svelte-autocomplete'
 
   import PIcon from '$lib/components/pokemon-icon.svelte'
   import Icon from 'svelte-icons-pack'
@@ -30,7 +28,8 @@
 
   const fetchItems = async () => {
     const res = await fetch('/api/pokemon/all.json')
-    const items = await res.json()
+    const items =  res.json()
+    console.log(items)
     return items
   }
 
@@ -97,109 +96,82 @@
  $: gray = ['Dead', 'Missed'].includes(status?.state)
 </script>
 
-<div data-selected={!!selected} class='grid grid-cols-2 md:grid-cols-8 gap-y-3 md:gap-y-0 gap-x-2 flex justify-start items-center'>
-  <span class='col-span-2 md:text-right mr-4 sm:text-sm text-lg mt-4 sm:mt-0'>
+<div data-selected={!!selected} class='grid grid-cols-2 md:grid-cols-8 gap-y-3 md:gap-y-0 gap-x-2 flex'>
+  <span class='col-span-2 md:text-right mr-4 sm:text-sm text-lg mt-4 sm:mt-0 h-full font-medium sm:font-normal flex md:justify-end items-center'>
     {location}
   </span>
 
-  <span class='relative md:col-span-2'>
-    <div class='absolute left-4 top-2 z-30'>
-      {#if evoComplete}
-        <Particles icons={['ice-stone', 'dawn-stone', 'fire-stone']} on:end={_ => evoComplete = false} />
-      {/if}
+  <AutoComplete
+    rounded
+    fetch={fetchItems}
+    inset={!!selected}
+    bind:selected={selected}
+    placeholder=Encounter
+    label=name
 
-      {#if captureComplete}
-        <Particles icons={['poke-ball', 'friend-ball', 'heavy-ball', 'master-ball']} on:end={_ => captureComplete = false} />
+    className=col-span-2
+  >
+    <span class='flex items-center h-8' slot=item let:item let:label>
+      <PIcon name={item.sprite} className='transform scale-75 md:scale-100 -mb-4 -ml-6 -mt-5 -mr-2' />
+      {@html label}
+    </span>
+
+    <svelte:fragment slot=icon let:iconClass>
+      {#if selected}
+        <div class='absolute left-4 top-2 z-50'>
+          {#if evoComplete}
+            <Particles icons={['ice-stone', 'dawn-stone', 'fire-stone']} on:end={_ => evoComplete = false} />
+          {/if}
+          {#if captureComplete}
+            <Particles icons={['poke-ball', 'friend-ball', 'heavy-ball', 'master-ball']} on:end={_ => captureComplete = false} />
+          {/if}
+        </div>
+
+        <PIcon name={selected.sprite} className='{gray ? 'filter grayscale' : ''} {iconClass}' />
       {/if}
+    </svelte:fragment>
+  </AutoComplete>
+
+  <Input
+    rounded
+    bind:value={nickname}
+    placeholder=Nickname
+    className=col-span-2
+  />
+
+  <AutoComplete
+    rounded
+    items={Object.values(NuzlockeStates)}
+    bind:selected={status}
+    placeholder=Status
+    label=state
+    inset={status ? '2rem' : null}
+    className=col-span-1
+  >
+
+    <svelte:fragment slot=icon let:iconClass let:selected>
+      {#if selected}
+        <Icon className='{iconClass} left-3' src={selected.icon} />
+      {/if}
+    </svelte:fragment>
+
+    <div class='flex inline-flex gap-x-2 py-2 items-center' slot=item let:item let:label>
+      <Icon src={item.icon} className='fill-current' />
+      {@html label}
     </div>
-
-    {#if selected}
-      <PIcon
-        className='absolute z-10 -left-2 md:left-0 bottom-1 translate-y-1/4 {gray ? 'filter grayscale' : ''}'
-        name={selected.sprite}
-      />
-    {/if}
-
-    <AutoComplete
-      hideArrow
-      delay={150}
-      searchFunction={fetchItems}
-      bind:selectedItem={selected}
-      placeholder={selected ? selected.name : 'Encounter'}
-      labelFieldName='name'
-
-      className='text-xxs md:text-xs w-full min-w-0 {selected ? 'has-item' : ''}'
-      inputClassName='ac__input-container dark:bg-gray-700 dark:border-gray-600 transition-colors hover:border-indigo-200 focus:outline-none focus:border-indigo-600 border-2 shadow-sm block w-full rounded-lg'
-      dropdownClassName='ac__dropdown-container rounded-lg border-2 border-gray-200 mt-2 shadow-sm'
-    >
-      <div class='-m-3 flex inline-flex items-center' slot='item' let:item={item} let:label={label}>
-        <PIcon className="-translate-x-2 transform scale-75 md:scale-100" name={item.sprite} />
-        <span class="-ml-2">{@html label}</span>
-      </div>
-
-      <span slot="no-results" let:noResultsText={noResultsText} class='inline-flex items-center h-6 text-sm text-gray-600 dark:text-gray-50'>
-        <PIcon className='grayscale transform scale-75 -my-4 -mr-4 -ml-5' name='unown-question' />
-        {noResultsText}
-      </span>
-
-      <div slot="loading" let:loadingText={loadingText}>
-        <span class='inline-flex items-center h-6 text-sm text-gray-600'>
-          <Icon src={Spinner} className='fill-current animate-spin mr-2' />
-          {loadingText}
-        </span>
-      </div>
-    </AutoComplete>
-  </span>
-
-  <span class='md:col-span-2'>
-    <input
-      type='text'
-      bind:value={nickname}
-      placeholder='Nickname'
-      class='text-xxs md:text-xs dark:border-gray-600 dark:bg-gray-700 transition-colors dark:hover:border-indigo-400 hover:border-indigo-200 text-xs focus:outline-none leading-4 focus:border-indigo-600 border-2 shadow-sm block w-full rounded-lg px-3 sm:py-2 py-1.5'
-    />
-  </span>
-
-  <span class='relative col-span-1'>
-    {#if status}
-      <Icon
-        className='absolute z-10 left-3 bottom-0 mb-0.5 -translate-y-1/2 fill-current'
-        src={status.icon}
-      />
-    {/if}
-
-    <AutoComplete
-      hideArrow
-      items={Object.values(NuzlockeStates)}
-      bind:selectedItem={status}
-      placeholder='Status'
-      labelFieldName='state'
-
-      className='text-xxs md:text-xs w-full min-w-0 {status ? 'has-status' : ''}'
-      inputClassName='ac__input-container dark:bg-gray-700 dark:border-gray-600 text-base transition-colors hover:border-indigo-200 focus:outline-none focus:border-indigo-600 border-2 shadow-sm block  w-full rounded-lg px-4 py-2'
-      dropdownClassName='ac__dropdown-container rounded-lg  border-2 border-gray-200 mt-2 shadow-sm'
-      >
-      <div class='flex inline-flex gap-x-2 py-2 items-center' slot='item' let:item={item} let:label={label}>
-        <Icon src={item.icon} className='fill-current' />
-        {@html label}
-      </div>
-
-      <span slot="no-results" let:noResultsText={noResultsText} class='inline-flex items-center h-6 text-sm text-gray-600 dark:text-gray-50'>
-        <PIcon className='grayscale transform scale-75 -my-4 -mr-4 -ml-5' name='unown-question' />
-        {noResultsText}
-      </span>
-    </AutoComplete>
-  </span>
+  </AutoComplete>
 
   <span class='text-left inline-flex gap-x-2'>
     <IconButton
+      rounded
       src={Bin}
-      title='Clear'
+      title=Clear
       on:click={handleClear}
     />
 
     {#if selected && status && status.id !== 4 && status.id !== 5}
       <IconButton
+        rounded
         src={Deceased}
         title='Kill {selected.name}'
         on:click={handleStatus(5)}
@@ -208,20 +180,22 @@
 
     {#if selected && !status}
       <IconButton
-        name='poke-ball'
-        title='Capture {selected.name}'
-        className='-translate-y-0.5'
-        color='orange'
+        rounded
+        name=poke-ball
+        color=orange
+        className=-translate-y-0.5
         on:click={handleStatus(1)}
+        title='Capture {selected.name}'
       />
     {/if}
 
     {#if selected && selected?.evos?.length && (!status || NuzlockeGroups.Available.includes(status.id))}
       <IconButton
-        name='dawn-stone'
+        rounded
+        name=dawn-stone
+        className=-translate-y-0.5
+        color=green
         title='Evolve {selected.name}'
-        className='-translate-y-0.5'
-        color='green'
         on:click={handleEvolution(selected.sprite, selected.evos)}
       />
     {/if}
