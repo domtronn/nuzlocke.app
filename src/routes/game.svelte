@@ -126,7 +126,7 @@
                     />
                   </li>
                 {/if}
-              {:else if p.type === 'gym' && [0, 2].includes(filter) && (bossFilter === 'all' || bossFilter === p.group)}
+              {:else if p.type === 'gym' && [0, 2].includes(filter) && (filter === 0 || bossFilter === 'all' || bossFilter === p.group)}
                 <li class='-mb-4' id={`boss-${i}`} transition:fade>
                   <GymCard game={gameKey} starter={starter} id={p.value} location={p.name} />
                 </li >
