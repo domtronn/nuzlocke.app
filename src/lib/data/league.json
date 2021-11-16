@@ -8010,6 +8010,45 @@
       "speciality": "",
       "pokemon": [
         {
+          "name": "froakie",
+          "level": "5",
+          "moves": [
+            "pound",
+            "growl",
+            "bubble"
+          ],
+          "ability": "torrent",
+          "starter": "grass"
+        },
+        {
+          "name": "chespin",
+          "level": "5",
+          "moves": [
+            "tackle",
+            "growl",
+            "vine-whip"
+          ],
+          "ability": "overgrow",
+          "starter": "fire"
+        },
+        {
+          "name": "fennekin",
+          "level": "5",
+          "moves": [
+            "scratch",
+            "tail-whip",
+            "ember"
+          ],
+          "ability": "blaze",
+          "starter": "water"
+        }
+      ]
+    },
+    "sh2": {
+      "name": "Shauna",
+      "speciality": "",
+      "pokemon": [
+        {
           "name": "delcatty",
           "level": "49",
           "moves": [
@@ -8060,45 +8099,6 @@
             "mystical-fire",
             "psychic",
             "calm-mind"
-          ],
-          "ability": "blaze",
-          "starter": "water"
-        }
-      ]
-    },
-    "sh2": {
-      "name": "Shauna",
-      "speciality": "",
-      "pokemon": [
-        {
-          "name": "froakie",
-          "level": "5",
-          "moves": [
-            "pound",
-            "growl",
-            "bubble"
-          ],
-          "ability": "torrent",
-          "starter": "grass"
-        },
-        {
-          "name": "chespin",
-          "level": "5",
-          "moves": [
-            "tackle",
-            "growl",
-            "vine-whip"
-          ],
-          "ability": "overgrow",
-          "starter": "fire"
-        },
-        {
-          "name": "fennekin",
-          "level": "5",
-          "moves": [
-            "scratch",
-            "tail-whip",
-            "ember"
           ],
           "ability": "blaze",
           "starter": "water"

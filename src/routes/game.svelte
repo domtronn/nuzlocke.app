@@ -144,7 +144,3 @@
     </div>
   </div>
 {/await}
-
-<style>
-  input { display: none; }
-</style>
