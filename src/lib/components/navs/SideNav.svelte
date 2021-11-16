@@ -36,7 +36,7 @@
 </Portal>
 
 {#if show}
-  <ul transition:fly={{ x: 250, opacity: 1 }}
+  <div transition:fly={{ x: 250, opacity: 1 }}
       class='fixed bg-gray-50 z-30 dark:bg-gray-900 border-l border-gray-200 dark:border-black h-full top-1/2 right-0 -translate-y-1/2 px-8 py-4 overflow-y-scroll text-gray-600 dark:text-gray-400 {className}'
   >
     <button on:click={_ => show = !show}>
@@ -46,17 +46,19 @@
     {#each groups as group}
       <h3 class='text-lg font-light text-gray-800 dark:text-gray-200 mt-4'>{capitalise(unslugify(group))}</h3>
       {#each grouped[group] as b}
-        <li class='text-xs underline hover:text-black dark:hover:text-gray-200 hover:scale-110 hover:cursor-pointer origin-left transition' on:click={onnav(b.oid)}>
-          {b.name}
-        </li>
+        <ul>
+          <li class='text-xs underline hover:text-black dark:hover:text-gray-200 hover:scale-110 hover:cursor-pointer origin-left transition' on:click={onnav(b.oid)}>
+            {b.name}
+          </li>
+        </ul>
       {/each}
     {/each}
 
-    <li
+    <span
       on:click={_ => document.getElementById('svelte').scrollIntoView({ behavior: 'smooth' })}
       class='text-sm inline-flex items-center gap-x-1 mt-4 underline transition hover:text-black dark:hover:text-gray-200 hover:cursor-pointer'
       >
       <Icon src={ArrowToTop} size='1.2em' className='fill-current' /> Back to top
-    <li>
-  </ul>
+    <span>
+  </div>
 {/if}
