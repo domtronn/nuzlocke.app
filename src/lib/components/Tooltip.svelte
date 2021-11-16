@@ -1,6 +1,16 @@
 <script>
-  import tippy from 'tippy.js';
-  import 'tippy.js/dist/tippy.css';
+  import { onMount } from 'svelte'
+
+  let loaded = false
+  let tippy
+
+  onMount(() => {
+    import('tippy.js/dist/tippy.css')
+    import('tippy.js').then(m => {
+      tippy = m.default
+      loaded = true
+    })
+  })
 
   const init = (node, options) => {
     if (typeof tippy === 'undefined') return console.error('Tippy is undefined - tooltips will not work')
@@ -21,7 +31,9 @@
   };
 </script>
 
-<div use:init><slot /></div>
+{#if loaded}
+  <div use:init><slot /></div>
+{/if}
 
 <style>
   div { display: none; }
