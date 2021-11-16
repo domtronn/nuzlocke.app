@@ -1,28 +1,42 @@
-# SvelteKit
+# Nuzlock tracker
 
-Example project using SvelteKit with the [SpaceX GraphQL API](https://api.spacex.land/graphql/), deployed to [Vercel](https://vercel.com).
+This project is designed for tracking Nuzlocke runs, the Pokemon
+you've encountered and their status. But it also provides information
+and adivce for Bosses you face. 
 
-## Deploy Your Own
+### Contributing
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fvercel%2Fvercel%2Ftree%2Fmain%2Fexamples%2Fsveltekit&project-name=sveltekit-vercel&repository-name=sveltekit-vercel&demo-title=SvelteKit%20%2B%20Vercel&demo-description=SvelteKit%20app%20fetching%20data%20from%20the%20SpaceX%20GraphQL%20API.&demo-url=https%3A%2F%2Fsveltekit.examples.vercel.com%2F&demo-image=https%3A%2F%2Fsveltekit.examples.vercel.com%2Ftwitter.png)
+Currently, I'm working through entering the data for all existing
+games but this can easily be made to support mods or other game
+formats.
 
-_Live Example: https://sveltekit.examples.vercel.com_
+If you want to contribute you will need to provide 2 files, the
+`routes.txt` and `league.txt` which should be in the following format
+below
 
-## Developing
-
-Once you've created a project and installed dependencies with `npm install`, start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+**League data**
+```
+--1|Gym Leader Name|Gym Leader Speciality|/image/path
+pokemon|level|move1,move2,move3,move4|ability|held-item
+pokemon|level|move1,move2,move3,move4|ability|held-item
+pokemon|level|move1,move2,move3,move4|ability|held-item
 ```
 
-## Building
-
-This uses the [Vercel Adapter](https://github.com/sveltejs/kit/tree/master/packages/adapter-vercel) for SvelteKit.
-
-```bash
-npm run build
+**Route data**
 ```
+Route 1
+Route 2
+--Gym battle|1|gym-leader
+Route 3
+```
+
+### Alternatives
+
+There are a lot of alternatives out there, and whilst they don't meet
+the needs I personally was looking for, you should absolutely check
+them out and thank their creators.
+
+- [Nuzlock tracker](https://nuzlocke.netlify.app/) - An all in one nuzlocke manager (most similar) 
+- [Nuzlocke tracker](https://ashenfactory.github.io/nuzlocke-tracker/) - A simple in order route tracker
+- [Nuzlog](https://techyfatih.github.io/Nuzlog/) - A journal, team and item manager
+- [Nuzlocke Generator](https://nuzlocke-generator.herokuapp.com/) - Image creator for runs 
