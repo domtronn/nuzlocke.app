@@ -8223,7 +8223,45 @@
       ]
     },
     "sy1": {
-      "name": "Prof. Sycamore",
+      "name": "Sycamore",
+      "pokemon": [
+        {
+          "name": "bulbasaur",
+          "level": "10",
+          "moves": [
+            "tackle",
+            "growl",
+            "leech-seed",
+            "vine-whip"
+          ],
+          "ability": "overgrow"
+        },
+        {
+          "name": "charmander",
+          "level": "10",
+          "moves": [
+            "scratch",
+            "growl",
+            "smoke-screen",
+            "ember"
+          ],
+          "ability": "blaze"
+        },
+        {
+          "name": "squirtle",
+          "level": "10",
+          "moves": [
+            "tackle",
+            "tail-whip",
+            "bubble",
+            "withdraw"
+          ],
+          "ability": "torrent"
+        }
+      ]
+    },
+    "sy2": {
+      "name": "Sycamore",
       "pokemon": [
         {
           "name": "venusaur",
