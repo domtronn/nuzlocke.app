@@ -13,6 +13,10 @@
 
   import { GameHeading, NavHeading } from '$lib/components/navs'
   import CookieBanner from '$lib/components/cookie-banner.svelte'
+
+  import Icon from 'svelte-icons-pack'
+  import GitHub from 'svelte-icons-pack/bi/BiLogoGithub'
+  import Comms from 'svelte-icons-pack/ri/RiCommunicationDiscussFill'
 </script>
 
 <style global lang="postcss">
@@ -59,6 +63,17 @@
 <CookieBanner />
 
 <footer class='text-center absolute w-full bottom-0 my-12 px-4 text-tiny md:text-xs text-gray-500 dark:text-gray-400 leading-3'>
+  <p class='flex justify-center text-lg md:text-2xl gap-x-2 mb-2 '>
+    <a href="https://github.com/domtronn/dc-nuzlocke/issues/new?assignees=&labels=&template=bug_report.md&title="
+       rel="noreferrer" target="_blank">
+      <button aria-label='Report bugs' title='Report bugs' class='transition-colors dark:hover:text-white hover:text-black '><Icon className='fill-current' src={GitHub} /></button>
+    </a>
+    <a href="https://github.com/domtronn/dc-nuzlocke/discussions"
+       rel="noreferrer" target="_blank">
+      <button aria-label='Discuss the app' title='Discuss the app' class='transition-colors dark:hover:text-white hover:text-black '><Icon className='fill-current' src={Comms} /></button>
+    </a>
+  </p>
+
   All content & design © Pokémon Nuzlocke Tracker, 2021-{(new Date()).getFullYear()}. <a class='underline transition dark:hover:text-gray-400 hover:text-gray-200' href='/privacy-policy'>Privacy Policy</a>.
   <br class='hidden md:block' />
   Pokémon images & names © 1995-2021 Nintendo/Creatures Inc./GAME FREAK inc. TM
