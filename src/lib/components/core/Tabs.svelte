@@ -5,14 +5,14 @@
   $: selected = select(tabs[active]) || active
 </script>
 
-<ul class='flex flex-row gap-x-4 overflow-x-scroll {className}'>
+<div class='flex flex-row gap-x-4 w-screen sm:w-auto overflow-x-scroll {className}'>
   {#each tabs as tab, i}
     <label class:active={active === i} class='text-base cursor-pointer transition-colors '>
       <input type=radio bind:group={active} name={name} value={i} />
       <span>{typeof tab === 'string' ? tab : tab.label}</span>
     </label>
   {/each}
-</ul>
+</div>
 
 <style>
   input { display: none; }

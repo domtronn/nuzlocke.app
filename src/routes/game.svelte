@@ -16,13 +16,14 @@
 
   import Icon from 'svelte-icons-pack'
   import Box from 'svelte-icons-pack/bi/BiSolidPackage'
+  import Arrow from 'svelte-icons-pack/bi/BiRightArrowAlt'
 
   import Games from '$lib/data/games.json'
   import Colors from '$lib/data/colors.json'
   import deferStyles from '$lib/utils/defer-styles'
   import { activeGame, savedGames, getGame, patch, read, parse } from '$lib/store'
 
-  let gameStore, gameKey
+  let gameStore, gameKey, gameData
   let loading = true
   let starter = 'fire'
   let element
@@ -53,7 +54,10 @@
       if (browser && !gameId) return window.location = '/'
 
       gameStore = getGame(gameId)
-      gameStore.subscribe(read(game => starter = game.__starter || 'fire'))
+      gameStore.subscribe(read(game => {
+        gameData = game
+        starter = game.__starter || 'fire'
+      }))
 
       savedGames.subscribe(parse(games => {
         gameKey = games[gameId]?.game
@@ -72,9 +76,27 @@
     gameStore.update(patch({ __starter: e.detail.value }))
   }
 
-  const setnav = (e) => {
-    limit = Math.max(limit, e.detail.value + 20)
-    setTimeout(_ => document.getElementById(`boss-${e.detail.value}`).scrollIntoView({ behavior: 'smooth' }), 50)
+
+  const setnav = (e) => setroute(`boss-${e.detail.value}`, e.detail.value + 20)
+  const setroute = (id, i) => {
+    limit = Math.max(limit, i + 20)
+    setTimeout(_ => document.getElementById(id).scrollIntoView({ behavior: 'smooth' }), 50)
+  }
+
+  const latestnav = (routes, game) => {
+    const locations = Object
+      .values(game)
+      .filter(i => i.pokemon)
+      .map(i => i.location)
+
+    let i = 0
+    while (
+      (locations.includes(routes[i].name) ||
+       routes[i].type !== 'route') &&
+        i < routes.length
+    ) { i++ }
+
+    return [`route-${routes[i].name}`, i]
   }
 
   let show = true
@@ -98,9 +120,15 @@
             route={route}
           />
 
-
           <div class='flex flex-col gap-y-4 md:gap-y-0 md:flex-row justify-between items-start mb-6'>
-            <div class='flex flex-col gap-y-2'>
+            <div class='flex flex-col gap-y-2 overflow-x-scroll'>
+              <button
+                class='sm:hidden text-sm inline-flex items-center justify-end mr-8'
+                on:click={_ => setroute(...latestnav(route, gameData))}>
+                Continue
+                <Icon className='fill-current' src={Arrow} />
+              </button>
+
               <Tabs tabs={filters} bind:selected={filter} />
 
               {#if filter === 2}
@@ -118,7 +146,7 @@
             {#each route.slice(0, limit) as p, i}
               {#if p.type === 'route' && [0, 1].includes(filter)}
                 {#if gameStore}
-                  <li transition:fade>
+                  <li id='route-{p.name}' transition:fade>
                     <PokemonSelector
                       id={i}
                       store={gameStore}
@@ -127,7 +155,7 @@
                   </li>
                 {/if}
               {:else if p.type === 'gym' && [0, 2].includes(filter) && (filter === 0 || bossFilter === 'all' || bossFilter === p.group)}
-                <li class='-mb-4' id={`boss-${i}`} transition:fade>
+                <li class=-mb-4 id='boss-{i}' transition:fade>
                   <GymCard game={gameKey} starter={starter} id={p.value} location={p.name} />
                 </li >
               {/if}
