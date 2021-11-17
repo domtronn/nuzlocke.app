@@ -18,7 +18,7 @@
   const cols = types.map(t => ColorMap[t])
   const bgImg = Pattern(cols[1] || cols[0])
 
-  const anim = ['bob', 'bob2', 'bob3'][Math.floor(Math.random() * 3)]
+  const anim = ['bob'][Math.floor(Math.random() * 1)]
   const animDur = Math.floor(Math.random() * 4) + 4
   const animDelay = Math.floor(Math.random() * 10) / 10
 </script>
@@ -130,29 +130,11 @@
   }
 
   img { animation-delay: var(--v-anim-delay); }
-
   img.bob { animation: bob var(--v-anim-dur) ease infinite; }
-  img.bob2 { animation: bob2 var(--v-anim-dur) ease infinite; }
-  img.bob3 { animation: bob3 var(--v-anim-dur) ease infinite; }
 
   @keyframes bob {
     0%, 100% {transform: var(--tw-transform) scaleX(1) scaleY(1);}
     25%, 75% { transform: var(--tw-transform) scaleX(1.02) scaleY(0.95); }
     50% { transform: var(--tw-transform) scaleX(0.95) scaleY(1.03); }
   }
-
-  @keyframes bob2 {
-    0%, 100% {transform: var(--tw-transform) skewX(0) skewY(0);}
-    25% { transform: var(--tw-transform) skewX(2deg) skewY(0deg) scaleX(1.05) scaleY(0.95);; }
-    75% { transform: var(--tw-transform) skewX(1deg) skewY(-2deg) scaleX(0.95) scaleY(1.05);; }
-    50% { transform: var(--tw-transform) skewX(0deg) skewY(5deg) scaleX(1) scaleY(1);; }
-  }
-
-  @keyframes bob3 {
-    0%, 100% {transform: var(--tw-transform) skewX(0) skewY(0);}
-    25% { transform: var(--tw-transform) skewX(-3deg) skewY(-2deg) scaleX(1.15) scaleY(0.95); }
-    75% { transform: var(--tw-transform) skewX(6deg) skewY(-2deg) scaleX(0.95) scaleY(1.1); }
-    50% { transform: var(--tw-transform) skewX(0deg) skewY(2deg) scaleX(1) scaleY(1); }
-  }
-
 </style>

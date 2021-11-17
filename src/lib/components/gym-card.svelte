@@ -37,8 +37,8 @@
 
   /* TODO: Move all of this logic onto the server */
   $: levelCap = pokemon.reduce((acc, it) => Math.max(acc, it.level), 0)
+  $: maxStat = pokemon.reduce((acc, it) => Math.max(acc, Math.max(...Object.values(it.stats))), 0)
   // $: teamCap = pokemon.length
-  // $: maxStat = pokemon.reduce((acc, it) => Math.max(acc, Math.max(...Object.values(it.stats))), 0)
 
   // $: atkMoves = pokemon.reduce((acc, it) => acc + it.moves.filter(i => i.damage_class !== 'status').length, 0)
   // $: physMoves = pokemon.reduce((acc, it) => acc + it.moves.filter(i => i.damage_class === 'physical').length, 0)
