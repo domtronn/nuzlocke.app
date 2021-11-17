@@ -122,7 +122,7 @@
           </div>
         </div>
 
-        <div class='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-8 sm:mt-6'>
+        <div class='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-4 gap-y-8 :mt-6'>
           {#if box.length === 0}
             <span class='h-96 flex items-center justify-center col-span-4 dark:text-gray-600 text-xl'>You have no Pokémon in your box</span>
           {/if}
@@ -135,7 +135,7 @@
                 sprite={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${Pokemon[p.pokemon].imgId}.png`}
                 maxStat={Math.max(150, ...Object.values(Pokemon[p.pokemon].baseStats))}
                 moves={[]}
-                ability={p.nickname ? { name: p.nickname + ' the' } : null}
+                ability={p.nickname ? { name: p.nickname + ' the ' + (p.nature || '').toLowerCase() } : null}
                 name={Pokemon[p.pokemon].name}
                 stats={Pokemon[p.pokemon].baseStats}
                 nature={p.nature}
