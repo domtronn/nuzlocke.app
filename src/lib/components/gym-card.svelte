@@ -137,7 +137,7 @@
       </div>
     </span>
 
-    <div slot='item' class='grid lg:grid-cols-2 md:grid-cols-2 mt-8 gap-x-6 gap-y-10'>
+    <div slot='item' class='grid lg:grid-cols-2 md:grid-cols-2 mt-8 md:gap-x-2 lg:gap-x-6 gap-y-10'>
       {#each pokemon as p, i (p.name + i)}
         <Pokemon {...p} maxStat={maxStat} />
       {/each}

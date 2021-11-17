@@ -120,7 +120,7 @@
             route={route}
           />
 
-          <div class='flex flex-col gap-y-4 md:gap-y-0 md:flex-row justify-between items-start mb-6'>
+          <div class='flex flex-col gap-y-4 lg:gap-y-0 md:flex-row justify-between items-start mb-6'>
             <div class='flex flex-col gap-y-2'>
               <button
                 class='sm:hidden text-sm inline-flex items-center justify-end'
@@ -144,7 +144,7 @@
             </div>
           </div>
 
-          <ul class='flex flex-col gap-y-4 md:gap-y-2'>
+          <ul class='flex flex-col gap-y-4 lg:gap-y-2'>
             {#each route.slice(0, limit) as p, i}
               {#if p.type === 'route' && [0, 1].includes(filter)}
                 {#if gameStore}
