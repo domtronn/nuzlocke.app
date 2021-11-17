@@ -1,5 +1,6 @@
 <script>
   export let name, value = null, color = '', className = '', placeholder = '', rounded = false
+  name = name || placeholder
 </script>
 
 <label for={name}>{name}</label>

@@ -50,7 +50,6 @@
   <div class='flex flex-col sm:flex-row sm:flex-wrap sm:gap-y-4 gap-2'>
     <Input
       rounded
-      name=Name
       placeholder=Name
       className=sm:flex-1
       bind:value={gameName}
@@ -58,7 +57,6 @@
 
     <AutoComplete
       rounded
-      name=Game
       placeholder=Game
       className='block sm:hidden'
       items={Object.keys(validGames)}

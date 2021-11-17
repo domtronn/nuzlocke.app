@@ -10,6 +10,8 @@
   export let placeholder, name, inset = false, color = '', label = 'label', className = '', dropdownClass = '', wide = false, rounded = false
   export let selected = null, style = ''
 
+  name = name || placeholder
+
   const iconclass = 'absolute z-40 -left-2 top-1/2 -translate-y-1/2'
   const roundedClass = rounded ? 'rounded-lg' : ''
   const labelProps = {
