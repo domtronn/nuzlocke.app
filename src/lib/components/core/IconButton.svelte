@@ -19,9 +19,9 @@
   class='{color} {containerClassName} group flex items-center border-2 ring-2 ring-transparent transition shadow-sm'
 >
   {#if src}
-    <Icon className='fill-current m-2 {className}' src={src} />
+    <Icon className='fill-current m-2 grayscale group-hover:grayscale-0 {className}' src={src} />
   {:else if name}
-    <PIcon className='transition-opacity opacity-50 group-hover:opacity-100 {className}' name={name} type='item' />
+    <PIcon className='transition grayscale group-hover:grayscale-0 opacity-50 group-hover:opacity-100 {className}' name={name} type='item' />
   {/if}
   <slot />
 </button>
