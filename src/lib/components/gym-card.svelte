@@ -8,7 +8,7 @@
   import Pokemon from '$lib/components/pokemon-card.svelte'
   import TypeBadge from '$lib/components/type-badge.svelte'
   import Label from '$lib/components/label.svelte'
-  import Accordion from '$lib/components/accordion.svelte'
+  import Accordion from '$lib/components/core/Accordion.svelte'
 
   import PIcon from '$lib/components/core/PokemonIcon.svelte'
   import Icon from 'svelte-icons-pack'
@@ -133,9 +133,8 @@
               <PIcon name={p.name} className='-m-4 z-10 relative' />
             {/each}
           </span>
-          <span transition:fade data-tooltip={msg.join('\n')}>
-            <Icon src={Info} className="fill-current text-gray-400" />
-          </span>
+
+          <Icon src={Info} className="fill-current text-gray-400" />
           <Label heading='Lvl cap' body={levelCap} />
         {/if}
       </div>

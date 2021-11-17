@@ -5,9 +5,8 @@
   import { read, patch } from '$lib/store'
 
   import { NuzlockeStates, NuzlockeGroups } from '$lib/data/states'
-  import { IconButton, AutoComplete, Input } from '$lib/components/core'
+  import { IconButton, AutoComplete, Input, Accordion } from '$lib/components/core'
 
-  import Accordion from '$lib/components/accordion.svelte'
   import StatBlock from '$lib/components/stat-block.svelte'
 
   import PIcon from '$lib/components/core/PokemonIcon.svelte'

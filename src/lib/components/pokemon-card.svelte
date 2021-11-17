@@ -8,7 +8,7 @@
   import Hand from 'svelte-icons-pack/fa/FaSolidHandHolding'
 
   import ColorMap from '$lib/data/colors.json'
-  import Tooltip from '$lib/components/Tooltip.svelte'
+  import Tooltip from '$lib/components/core/Tooltip.svelte'
   import TypeBadge from '$lib/components/type-badge.svelte'
   import MoveCard from '$lib/components/move-card.svelte'
   import StatBlock from '$lib/components/stat-block.svelte'

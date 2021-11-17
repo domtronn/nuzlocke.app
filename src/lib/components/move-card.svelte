@@ -2,7 +2,7 @@
   export let name, priority, power, type, damage_class, effect, stab
   import { capitalise } from '$lib/utils/string'
   import TypeBadge from '$lib/components/type-badge.svelte'
-  import Tooltip from '$lib/components/Tooltip.svelte'
+  import Tooltip from '$lib/components/core/Tooltip.svelte'
 
   import Icon from 'svelte-icons-pack'
 
