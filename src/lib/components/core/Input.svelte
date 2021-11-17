@@ -1,5 +1,5 @@
 <script>
-  export let value, color = '', className = '', placeholder = '', rounded = false
+  export let value = null, color = '', className = '', placeholder = '', rounded = false
 </script>
 
 <input

@@ -15,7 +15,7 @@
   import ArrowToTop from 'svelte-icons-pack/bi/BiArrowToTop'
 
   export let route = [], className = ''
-  let show = false
+  export let show = false
 
   const bosses = route.reduce((acc, r, i) => r.type === 'gym' ? acc.concat({ ...r, oid: i }) : acc, [])
   const grouped = groupBy('group', bosses)

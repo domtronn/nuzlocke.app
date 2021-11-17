@@ -5,7 +5,8 @@
   import Icon from 'svelte-icons-pack'
   import Spinner from 'svelte-icons-pack/cg/CgSpinner'
 
-  export let items, placeholder, inset = false, color = '', label = 'label', className = '', wide = false, rounded = false, fetch
+  export let items = undefined, fetch = undefined
+  export let placeholder, inset = false, color = '', label = 'label', className = '', wide = false, rounded = false
   export let selected = null, style = ''
 
   const iconclass = 'absolute z-40 -left-2 top-1/2 -translate-y-1/2'

@@ -36,7 +36,7 @@
 
 
   /* TODO: Move all of this logic onto the server */
-  // $: levelCap = pokemon.reduce((acc, it) => Math.max(acc, it.level), 0)
+  $: levelCap = pokemon.reduce((acc, it) => Math.max(acc, it.level), 0)
   // $: teamCap = pokemon.length
   // $: maxStat = pokemon.reduce((acc, it) => Math.max(acc, Math.max(...Object.values(it.stats))), 0)
 

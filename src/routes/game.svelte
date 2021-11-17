@@ -99,7 +99,7 @@
     return [`route-${routes[i].name}`, i]
   }
 
-  let show = true
+  let show = false
 
 </script>
 
@@ -129,11 +129,11 @@
                 <Icon className='fill-current' src={Arrow} />
               </button>
 
-              <Tabs tabs={filters} bind:selected={filter} />
+              <Tabs name=filter tabs={filters} bind:selected={filter} />
 
               {#if filter === 2}
                 <span transition:slide={{ duration: 250 }}>
-                  <Tabs tabs={bossFilters} bind:selected={bossFilter} />
+                  <Tabs name=bosses tabs={bossFilters} bind:selected={bossFilter} />
                 </span>
               {/if}
             </div>
