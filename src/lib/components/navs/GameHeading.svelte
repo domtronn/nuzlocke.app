@@ -24,6 +24,10 @@
   ]
 </script>
 
+<svelte:head>
+  <title> Nuzlocke | {game?.name || ''} </title>
+</svelte:head>
+
 <nav class='container mx-auto mb-8 md:mb-2 bg-black text-white dark:sm:text-gray-200 sm:text-black sm:bg-transparent'>
   <div class="w-full sm:w-2/3 md:w-3/4 sm:px-4 md:px-8 mx-auto flex justify-between">
     <a

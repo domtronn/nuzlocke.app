@@ -29,6 +29,10 @@
   }))
 </script>
 
+<svelte:head>
+  <title>Nuzlocke Tracker | Load game</title>
+</svelte:head>
+
 <ScreenContainer>
   <span class='flex justify-between items-center md:gap-x-24'>
     <h1 class='text-lg md:text-2xl'>Load game</h1>

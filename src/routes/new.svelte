@@ -42,6 +42,11 @@
   $: disabled = !gameName.length || !selected
 </script>
 
+<svelte:head>
+  <title> Nuzlocke Tracker | New game </title>
+</svelte:head>
+
+
 <ScreenContainer title='New Nuzlocke' className='-mt-16' icon={File}>
   <div class='flex flex-col md:flex-row md:flex-wrap sm:gap-y-4 gap-2'>
     <Input

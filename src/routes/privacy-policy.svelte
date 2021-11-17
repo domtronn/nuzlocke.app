@@ -6,6 +6,10 @@
   import { PixelatedContainer } from '$lib/components/containers'
 </script>
 
+<svelte:head>
+  <title>Nuzlocke Tracker | Privacy Policy</title>
+</svelte:head>
+
 <main class='container text-gray-800 pt-8 sm:pt-0 dark:text-gray-300'>
   <div class='mx-auto pb-16 sm:pb-12 mx-4'>
     <PixelatedContainer className='my-16 py-6 px-8 overflow-x-hidden mx-auto max-w-prose'>
