@@ -4,7 +4,7 @@
   import deferStyles from '$lib/utils/defer-styles'
 
   import Particle from './Particle.svelte'
-  import PIcon from '$lib/components/pokemon-icon.svelte'
+  import PIcon from '$lib/components/core/PokemonIcon.svelte'
 
   export let amount = 15, gravity = 3.2, decay = 0.974, timeout = 1200, icons = [], className = ''
 

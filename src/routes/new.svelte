@@ -12,7 +12,7 @@
   import Games from '$lib/data/games.json'
   import Button from '$lib/components/core/Button.svelte'
   import Tabs from '$lib/components/core/Tabs.svelte'
-  import PIcon from '$lib/components/pokemon-icon.svelte'
+  import PIcon from '$lib/components/core/PokemonIcon.svelte'
 
   import { filterObj } from '$lib/utils/arr'
 

@@ -3,7 +3,7 @@
 
   import { capitalise } from '$lib/utils/string'
 
-  import PIcon from '$lib/components/pokemon-icon.svelte'
+  import PIcon from '$lib/components/core/PokemonIcon.svelte'
   import Icon from 'svelte-icons-pack'
   import Hand from 'svelte-icons-pack/fa/FaSolidHandHolding'
 

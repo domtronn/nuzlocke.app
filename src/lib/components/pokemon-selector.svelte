@@ -10,7 +10,7 @@
   import Accordion from '$lib/components/accordion.svelte'
   import StatBlock from '$lib/components/stat-block.svelte'
 
-  import PIcon from '$lib/components/pokemon-icon.svelte'
+  import PIcon from '$lib/components/core/PokemonIcon.svelte'
   import Icon from 'svelte-icons-pack'
   import Bin from 'svelte-icons-pack/bi/BiTrash'
   import Deceased from 'svelte-icons-pack/fa/FaSolidSkullCrossbones'

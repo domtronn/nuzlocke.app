@@ -1,7 +1,7 @@
 <script>
   import AutoComplete from 'simple-svelte-autocomplete'
 
-  import PIcon from '$lib/components/pokemon-icon.svelte'
+  import PIcon from '$lib/components/core/PokemonIcon.svelte'
   import Icon from 'svelte-icons-pack'
   import Spinner from 'svelte-icons-pack/cg/CgSpinner'
 

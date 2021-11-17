@@ -10,7 +10,7 @@
   import Label from '$lib/components/label.svelte'
   import Accordion from '$lib/components/accordion.svelte'
 
-  import PIcon from '$lib/components/pokemon-icon.svelte'
+  import PIcon from '$lib/components/core/PokemonIcon.svelte'
   import Icon from 'svelte-icons-pack'
   import Info from 'svelte-icons-pack/ri/RiEditorAsterisk'
 

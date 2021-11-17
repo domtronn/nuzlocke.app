@@ -3,7 +3,7 @@
 
   import { capitalise } from '$lib/utils/string'
 
-  import Picon from '$lib/components/pokemon-icon.svelte'
+  import Picon from '$lib/components/core/PokemonIcon.svelte'
   import Icon from 'svelte-icons-pack'
   import Bubbles from 'svelte-icons-pack/ri/RiBusinessBubbleChartFill'
 

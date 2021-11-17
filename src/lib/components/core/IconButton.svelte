@@ -3,7 +3,7 @@
 
   import { createEventDispatcher } from 'svelte'
   import Icon from 'svelte-icons-pack'
-  import PIcon from '$lib/components/pokemon-icon.svelte'
+  import PIcon from '$lib/components/core/PokemonIcon.svelte'
 
   const dispatch = createEventDispatcher()
   const onclick = e => dispatch('click', e)

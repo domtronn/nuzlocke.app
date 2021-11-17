@@ -7,7 +7,7 @@
 
   import { NuzlockeStates } from '$lib/data/states'
 
-  import PIcon from '$lib/components/pokemon-icon.svelte'
+  import PIcon from '$lib/components/core/PokemonIcon.svelte'
   import Icon from 'svelte-icons-pack'
   import Bin from 'svelte-icons-pack/bi/BiTrash'
 
