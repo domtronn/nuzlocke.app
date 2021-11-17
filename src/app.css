@@ -11,6 +11,23 @@
 .pkm { background-image: url(/assets/pokemon.webp) !important; }
 .pkitem { background-image: url(/assets/items.webp) !important; }
 
+.pkm-wrapper {
+  width: 67px;
+  height: 56px;
+  line-height: 54px;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 1px;
+}
+
+.pkm {
+  display: inline-block;
+  vertical-align: middle;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+}
+
 .pkitem-wrapper {
   width: 32px;
   height: 30px;
