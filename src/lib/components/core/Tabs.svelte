@@ -15,6 +15,12 @@
 </div>
 
 <style>
+
+  div {
+    width: calc(100vw - theme('spacing.8'));
+  }
+
+
   input { display: none; }
   span { white-space: pre; }
 

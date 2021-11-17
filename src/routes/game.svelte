@@ -121,7 +121,7 @@
           />
 
           <div class='flex flex-col gap-y-4 md:gap-y-0 md:flex-row justify-between items-start mb-6'>
-            <div class='flex flex-col gap-y-2 overflow-x-scroll'>
+            <div class='flex flex-col gap-y-2'>
               <button
                 class='sm:hidden text-sm inline-flex items-center justify-end mr-8'
                 on:click={_ => setroute(...latestnav(route, gameData))}>
