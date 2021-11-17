@@ -9,7 +9,7 @@ export async function get ({ params }) {
   return {
     status: 301,
     headers: {
-      Location: logoPath + '.png'
+      Location: logoPath + '.webp'
     }
   }
 }

@@ -7,11 +7,9 @@
   import { savedGames, parse } from '$lib/store'
   import { slide, fade } from 'svelte/transition'
 
-  // TODO: No saves and back button
-
   import Save from '$lib/components/save.svelte'
   import { ScreenContainer, PixelatedContainer } from '$lib/components/containers'
-  import Button from '$lib/components/core/Button.svelte'
+  import { Button } from '$lib/components/core'
 
   import Icon from 'svelte-icons-pack'
   import Floppy from 'svelte-icons-pack/im/ImFloppyDisk'

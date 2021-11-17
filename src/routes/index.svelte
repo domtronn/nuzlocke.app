@@ -11,7 +11,8 @@
   import { activeGame, savedGames, parse, getGame, read, summarise } from '$lib/store'
   import { PixelatedContainer } from '$lib/components/containers'
 
-  import PIcon from '$lib/components/core/PokemonIcon.svelte'
+  import { Picture, PIcon } from '$lib/components/core'
+
   import Icon from 'svelte-icons-pack'
   import Deceased from 'svelte-icons-pack/fa/FaSolidSkullCrossbones'
 
@@ -42,13 +43,14 @@
 </script>
 
 <main class='container mx-auto h-screen -mt-16 flex flex-col justify-center'>
-
   <span class='mx-auto text-center'>
     <h1 class='font-mono text-4xl'>Pokémon</h1>
-    <picture>
-      <source srcset='/logo.webp' type='image/webp' />
-      <img class:grayscale={!hovering} class='transition h-auto md:h-16 mt-2 mx-auto' width=321 height=auto src='/logo.png' alt='Nuzlocke tracker' />
-    </picture>
+    <Picture
+      src=/logo
+      aspect=324x62
+      alt='Nuzlocke logo'
+      className='transition h-auto md:h-16 mt-2 mx-auto {hovering ? '' : 'grayscale'}'
+    />
     <h1 class='font-mono text-4xl'>tracker</h1>
   </span>
 

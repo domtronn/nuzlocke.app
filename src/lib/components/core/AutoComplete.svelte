@@ -7,7 +7,7 @@
   import Chevron from 'svelte-icons-pack/bi/BiSolidChevronUp'
 
   export let items = undefined, fetch = undefined
-  export let placeholder, inset = false, color = '', label = 'label', className = '', dropdownClass = '', wide = false, rounded = false
+  export let placeholder, name, inset = false, color = '', label = 'label', className = '', dropdownClass = '', wide = false, rounded = false
   export let selected = null, style = ''
 
   const iconclass = 'absolute z-40 -left-2 top-1/2 -translate-y-1/2'
@@ -29,9 +29,12 @@
     className='z-40 absolute right-1 pointer-events-none top-1/2 -translate-y-1/2 fill-current text-gray-200 dark:text-gray-500 dark:border-gray-500 transform rotate-180 border-r w-6'
   />
 
+  <label for={name}>{name}</label>
+
   <AutoComplete
     hideArrow
 
+    inputId={name}
     bind:selectedItem={selected}
 
     {items}
@@ -188,4 +191,17 @@
     color: var(--auc-focus-fg) !important;
     background-color: var(--auc-focus-2) !important;
   }
+
+  label {
+    border: 0;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+
 </style>

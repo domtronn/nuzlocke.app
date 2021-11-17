@@ -17,7 +17,7 @@ const natures = {
   modest: ['spa', 'atk'],
   mild: ['spa', 'def'],
   quiet: ['spa', 'spe'],
-  quiet: ['spa', 'spd'],
+  rash: ['spa', 'spd'],
   calm: ['spd', 'atk'],
   careful: ['spd', 'spa'],
   gentle: ['spd', 'def'],

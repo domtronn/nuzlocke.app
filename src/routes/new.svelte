@@ -6,7 +6,7 @@
   import { savedGames, activeGame, createGame } from '$lib/store'
   import { PixelatedContainer, ScreenContainer } from '$lib/components/containers'
 
-  import { AutoComplete, Input } from '$lib/components/core'
+  import { AutoComplete, Input, Picture } from '$lib/components/core'
 
   import File from 'svelte-icons-pack/cg/CgFileAdd'
   import Games from '$lib/data/games.json'
@@ -46,11 +46,11 @@
   <title> Nuzlocke Tracker | New game </title>
 </svelte:head>
 
-
 <ScreenContainer title='New Nuzlocke' className='-mt-16' icon={File}>
-  <div class='flex flex-col md:flex-row md:flex-wrap sm:gap-y-4 gap-2'>
+  <div class='flex flex-col sm:flex-row sm:flex-wrap sm:gap-y-4 gap-2'>
     <Input
       rounded
+      name=Name
       placeholder=Name
       className=sm:flex-1
       bind:value={gameName}
@@ -58,6 +58,7 @@
 
     <AutoComplete
       rounded
+      name=Game
       placeholder=Game
       className='block sm:hidden'
       items={Object.keys(validGames)}
@@ -67,7 +68,11 @@
 
       <div class='flex inline-flex gap-x-2 py-2 items-center h-8' slot='item' let:item={i} let:label={label}>
         {#if Games[i].logo}
-          <img width=32 src={Games[i].logo} alt={Games[i].title + ' logo'} />
+          <Picture
+            src={Games[i].logo}
+            alt={Games[i].title + ' logo'}
+            aspect=32xauto
+          />
         {/if}
         {@html label}
       </div>
@@ -78,21 +83,22 @@
     </Button>
   </div>
 
-  <Tabs name='gens' className='hidden md:flex' tabs={gens} bind:selected={gen} />
+  <Tabs name='gens' className='hidden sm:flex' tabs={gens} bind:selected={gen} />
 
-  <div class='grid items-center justify-center gap-x-4 gap-y-6 grid-cols-3 md:grid-cols-4 hidden md:grid'>
+  <div class='grid items-center justify-center gap-x-4 gap-y-6 grid-cols-3 sm:grid-cols-4 hidden sm:grid'>
     {#each Object.entries(validGames) as [id, game]}
       {#if game.logo && (gen === 'All' || game.gen === gen) }
-        <span class='w-full text-center'>
-          <img
-            class='w-24 mx-auto transition hover:grayscale-0 cursor-pointer'
-            class:grayscale={(selected && selected !== id) || hoverActive}
-            class:grayscale-0={selected === id}
-            on:click={handleSelect(id)}
-            on:mouseenter={togglehover}
-            on:mouseleave={togglehover}
+        <span
+          on:click={handleSelect(id)}
+          on:mouseenter={togglehover}
+          on:mouseleave={togglehover}
+          class='w-full text-center'
+        >
+          <Picture
             src={game.logo}
+            aspect={game.aspect}
             alt={'Pokémon ' + game.title + ' logo'}
+            className='w-24 mx-auto transition hover:grayscale-0 {(selected && selected !== id) || hoverActive ? 'grayscale' : ''} {selected === id ? 'grayscale-0' : ''} cursor-pointer'
           />
         </span>
       {/if}
