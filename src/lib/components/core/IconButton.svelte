@@ -30,7 +30,7 @@
   :root {
     --icb-hover: theme('colors.gray.800');
     --icb-active: theme('colors.gray.900');
-    --icb-bg: theme('colors.gray.200');
+    --icb-bg: theme('colors.gray.400');
   }
 
   :global(.dark) {

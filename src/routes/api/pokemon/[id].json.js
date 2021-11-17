@@ -3,7 +3,7 @@ import { pick } from 'ramda'
 
 const rotate = (keyF, o) => Object.values(o).reduce((acc, it) => ({ ...acc, [keyF(it)]: it }), {})
 
-const PokemonNum = rotate(it => it.name, Pokemon)
+const PokemonNum = rotate(it => it.num, Pokemon)
 const PokemonName = rotate(it => it.name.toLowerCase(), Pokemon)
 
 const props = ['num', 'name', 'alias', 'label', 'sprite']
