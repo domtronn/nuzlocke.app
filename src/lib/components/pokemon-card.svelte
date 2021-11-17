@@ -39,13 +39,16 @@
         <p class='-mb-1 w-auto relative text-xs dark:sm:bg-transparent sm:bg-transparent z-40 h-4'>
           {#if ability}
             <span>
-              <Tooltip>{ability.effect}</Tooltip>
+              {#if ability.effect}
+                <Tooltip>{ability.effect}</Tooltip>
+              {/if}
+
               {ability.name}
             </span>
-        {/if}
-          </p>
+          {/if}
+        </p>
 
-          {capitalise(name.replace(/-.*/, ''))}
+        {capitalise(name.replace(/-.*/, ''))}
 
           {#if held}
             <div class='absolute right-0 -bottom-0.5 translate-x-full z-20 p-1 mb-1 flex flex-col items-center'>
