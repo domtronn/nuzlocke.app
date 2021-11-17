@@ -13,11 +13,8 @@
   })
 
   const init = (node, options) => {
-    if (typeof tippy === 'undefined') return console.error('Tippy is undefined - tooltips will not work')
-
     const instance = tippy(node.parentNode, Object.assign({
       content: node.innerHTML,
-      animation: 'scale',
       onCreate() {
         node.parentNode.removeChild(node);
       }
