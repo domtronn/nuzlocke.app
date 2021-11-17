@@ -77,8 +77,9 @@
   }
 
 
-  const setnav = (e) => setroute(`boss-${e.detail.value}`, e.detail.value + 20)
-  const setroute = (id, i) => {
+  const setnav = (e) => setloc(`boss-${e.detail.value}`, e.detail.value + 20)
+  const setroute = ({ name, id }) => _ => setloc(`route-${name}`, id + 10)
+  const setloc = (id, i) => {
     limit = Math.max(limit, i + 20)
     setTimeout(_ => document.getElementById(id).scrollIntoView({ behavior: 'smooth' }), 50)
   }
@@ -96,7 +97,9 @@
         i < routes.length
     ) { i++ }
 
-    return [`route-${routes[i].name}`, i]
+    const j = Math.max(0, i - 1)
+    const r = routes[j]
+    return { ...r, id: j }
   }
 
   let show = false
@@ -123,9 +126,10 @@
           <div class='flex flex-col gap-y-4 lg:gap-y-0 md:flex-row justify-between items-start mb-6'>
             <div class='flex flex-col gap-y-2'>
               <button
-                class='sm:hidden text-sm inline-flex items-center justify-end'
-                on:click={_ => setroute(...latestnav(route, gameData))}>
-                Continue
+                class='text-sm inline-flex items-center'
+                on:click={setroute(latestnav(route, gameData))}
+              >
+                Continue at {latestnav(route, gameData).name}
                 <Icon className='fill-current' src={Arrow} />
               </button>
 
@@ -144,7 +148,7 @@
             </div>
           </div>
 
-          <ul class='flex flex-col gap-y-4 lg:gap-y-2'>
+          <ul class='flex flex-col gap-y-4 lg:gap-y-2 -mt-8 sm:mt-0'>
             {#each route.slice(0, limit) as p, i}
               {#if p.type === 'route' && [0, 1].includes(filter)}
                 {#if gameStore}
