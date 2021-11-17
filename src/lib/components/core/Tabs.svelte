@@ -5,7 +5,7 @@
   $: selected = select(tabs[active]) || active
 </script>
 
-<div class='flex flex-row gap-x-4 w-screen sm:w-auto overflow-x-scroll {className}'>
+<div class='flex flex-row gap-x-4 sm:w-initial overflow-x-scroll {className}'>
   {#each tabs as tab, i}
     <label class:active={active === i} class='text-base cursor-pointer transition-colors '>
       <input type=radio bind:group={active} name={name} value={i} />
@@ -15,11 +15,10 @@
 </div>
 
 <style>
-
-  div {
-    width: calc(100vw - theme('spacing.8'));
+  div { width: calc(100vw - theme('spacing.8')); }
+  @media (min-width: theme('screens.sm')) {
+    div { width: auto; }
   }
-
 
   input { display: none; }
   span { white-space: pre; }

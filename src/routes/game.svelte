@@ -123,7 +123,7 @@
           <div class='flex flex-col gap-y-4 md:gap-y-0 md:flex-row justify-between items-start mb-6'>
             <div class='flex flex-col gap-y-2'>
               <button
-                class='sm:hidden text-sm inline-flex items-center justify-end mr-8'
+                class='sm:hidden text-sm inline-flex items-center justify-end'
                 on:click={_ => setroute(...latestnav(route, gameData))}>
                 Continue
                 <Icon className='fill-current' src={Arrow} />
@@ -132,7 +132,9 @@
               <Tabs tabs={filters} bind:selected={filter} />
 
               {#if filter === 2}
-                <Tabs tabs={bossFilters} bind:selected={bossFilter} />
+                <span transition:slide={{ duration: 250 }}>
+                  <Tabs tabs={bossFilters} bind:selected={bossFilter} />
+                </span>
               {/if}
             </div>
 
