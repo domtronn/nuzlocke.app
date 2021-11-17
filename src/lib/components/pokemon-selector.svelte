@@ -139,6 +139,7 @@
   />
 
   <AutoComplete
+    wide
     rounded
     items={Object.values(NuzlockeStates)}
     bind:selected={status}
