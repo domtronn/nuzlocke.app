@@ -6,7 +6,7 @@ const rotate = (keyF, o) => Object.values(o).reduce((acc, it) => ({ ...acc, [key
 const PokemonNum = rotate(it => it.name, Pokemon)
 const PokemonName = rotate(it => it.name.toLowerCase(), Pokemon)
 
-const props = ['num', 'name', 'alias', 'sprite']
+const props = ['num', 'name', 'alias', 'label', 'sprite']
 
 export async function get ({ params }) {
   const { id } = params

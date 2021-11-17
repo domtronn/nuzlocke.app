@@ -1,11 +1,11 @@
 import { pick } from 'ramda'
 import Pokemon from './index.js'
 
-export async function get ({ params }) {
-  const items = Object
-    .values(Pokemon)
-    .map(pick(['name', 'sprite', 'alias']))
+const items = Object
+  .values(Pokemon)
+  .map(pick(['name', 'sprite', 'label', 'alias']))
 
+export async function get ({ params }) {
   return {
     body: items,
     headers: {
