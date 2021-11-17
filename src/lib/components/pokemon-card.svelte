@@ -129,15 +129,11 @@
     min-width: 160px;
   }
 
-  img.bob {
-    animation: bob var(--v-anim-dur) ease infinite;
-    animation-delay: var(--v-anim-delay);
-  }
+  img { animation-delay: var(--v-anim-delay); }
 
-  img.bob2 {
-    animation: bob2 var(--v-anim-dur) ease infinite;
-    animation-delay: var(--v-anim-delay);
-  }
+  img.bob { animation: bob var(--v-anim-dur) ease infinite; }
+  img.bob2 { animation: bob2 var(--v-anim-dur) ease infinite; }
+  img.bob3 { animation: bob3 var(--v-anim-dur) ease infinite; }
 
   @keyframes bob {
     0%, 100% {transform: var(--tw-transform) scaleX(1) scaleY(1);}
