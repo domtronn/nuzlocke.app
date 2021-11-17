@@ -97,9 +97,8 @@
         i < routes.length
     ) { i++ }
 
-    const j = Math.max(0, i - 1)
-    const r = routes[j]
-    return { ...r, id: j }
+    const r = routes[i]
+    return { ...r, id: i }
   }
 
   let show = false
