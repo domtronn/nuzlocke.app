@@ -5,9 +5,9 @@
 
   import IntersectionObserver from "svelte-intersection-observer"
 
+  import { Loader } from '$lib/components/core'
   import StarterType from '$lib/components/starter-type.svelte'
   import GymCard from '$lib/components/gym-card.svelte'
-  import Loader from '$lib/components/loader.svelte'
   import PokemonSelector from '$lib/components/pokemon-selector.svelte'
 
   import Tabs from '$lib/components/core/Tabs.svelte'

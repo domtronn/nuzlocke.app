@@ -4,10 +4,9 @@
   import { flip } from 'svelte/animate'
 
   import PokemonCard from '$lib/components/pokemon-card.svelte'
-  import Loader from '$lib/components/loader.svelte'
 
+  import { Loader, IconButton } from '$lib/components/core'
   import TypeBadge from '$lib/components/type-badge.svelte'
-  import IconButton from '$lib/components/core/IconButton.svelte'
 
   import { activeGame, getGame, read } from '$lib/store'
   import { types } from '$lib/data/types'
