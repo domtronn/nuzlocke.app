@@ -18,7 +18,7 @@
   const cols = types.map(t => ColorMap[t])
   const bgImg = Pattern(cols[1] || cols[0])
 
-  const anim = ['bob', 'bob2', 'bob3'][Math.floor(Math.random() * 2)]
+  const anim = ['bob', 'bob2', 'bob3'][Math.floor(Math.random() * 3)]
   const animDur = Math.floor(Math.random() * 4) + 4
   const animDelay = Math.floor(Math.random() * 10) / 10
 </script>
