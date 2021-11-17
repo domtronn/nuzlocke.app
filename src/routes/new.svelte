@@ -111,7 +111,3 @@
   </i>
 
 </ScreenContainer>
-
-<style>
-  img { transition-duration: 250ms !important; }
-</style>

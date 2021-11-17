@@ -25,6 +25,9 @@ specifiers:
   svelte-simple-modal: ^1.1.1
   tailwindcss: ^2.2.16
   tippy.js: ^6.3.7
+  workbox-expiration: ^6.4.1
+  workbox-routing: ^6.4.1
+  workbox-strategies: ^6.4.1
 
 dependencies:
   clean-css: 5.2.2
@@ -41,6 +44,9 @@ dependencies:
   svelte-portal: 2.1.2
   svelte-simple-modal: 1.1.1_svelte@3.44.0
   tippy.js: 6.3.7
+  workbox-expiration: 6.4.1
+  workbox-routing: 6.4.1
+  workbox-strategies: 6.4.1
 
 devDependencies:
   '@sveltejs/adapter-vercel': 1.0.0-next.31
@@ -974,6 +980,10 @@ packages:
     resolution: {integrity: sha512-1qYz89hW3lFDEazhjW0yVAV87lw8lVkrJocr72XmBkMKsoSVJCQx3W8BXsC7hO2qAt8BoVjYjtAcZ9perqGnNg==}
     engines: {node: '>=8'}
     dev: true
+
+  /idb/6.1.5:
+    resolution: {integrity: sha512-IJtugpKkiVXQn5Y+LteyBCNk1N8xpGV3wWZk9EVtZWH8DYkjBn0bX1XnGP9RkyZF0sAcywa6unHqSWKe7q4LGw==}
+    dev: false
 
   /import-cwd/3.0.0:
     resolution: {integrity: sha512-4pnzH16plW+hgvRECbDWpQl3cqtvSofHWh44met7ESfZ8UZOWWddm8hEyDTqREJ9RbYHY8gi8DqmaelApoOGMg==}
@@ -2186,6 +2196,29 @@ packages:
     optionalDependencies:
       fsevents: 2.3.2
     dev: true
+
+  /workbox-core/6.4.1:
+    resolution: {integrity: sha512-5hosqpSK+48jHlj+5EHN5dtH1Ade4fqTe4+xX3U9wWK1SDaXEqXpVxdHuBqYfg75UE1PUINA0rhMZWTqeGoLFg==}
+    dev: false
+
+  /workbox-expiration/6.4.1:
+    resolution: {integrity: sha512-N912AGhi95vhf2vebE3wPhnGjnR+t5W4yALDY7Pl6bcuhySNbwkkp2RjQcBB+dxrdiX2rOvavvdcf/q1LSnEyg==}
+    dependencies:
+      idb: 6.1.5
+      workbox-core: 6.4.1
+    dev: false
+
+  /workbox-routing/6.4.1:
+    resolution: {integrity: sha512-FIy27mwM3WdDASOTMX10OZ8q3Un47ULeDtDrDAKfWYIP/oTF2xoA1/HtXpOjBlyg5VP/poPX5GDojXHXAXpfzQ==}
+    dependencies:
+      workbox-core: 6.4.1
+    dev: false
+
+  /workbox-strategies/6.4.1:
+    resolution: {integrity: sha512-2UQ+7Siy4Z5QG2LebbVhDLmPG3M7bVo/tZqN4LNUGXS6fDlpbTTK6A3Hu0W8gCVwIX0tSg7U3mVhDntH4qt3Dg==}
+    dependencies:
+      workbox-core: 6.4.1
+    dev: false
 
   /wrap-ansi/7.0.0:
     resolution: {integrity: sha512-YVGIj2kamLSTxw6NsZjoBxfSwsn0ycdesmc4p+Q21c5zPuZ1pl+NfxVdxPtdHvmNVOQ6XSYG4AUtyt/Fi7D16Q==}
