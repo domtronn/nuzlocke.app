@@ -4,6 +4,7 @@
   import { browser } from '$app/env'
   import { read, patch } from '$lib/store'
 
+  import { Natures, NaturesMap } from '$lib/data/natures'
   import { NuzlockeStates, NuzlockeGroups } from '$lib/data/states'
   import { IconButton, AutoComplete, Input, Accordion } from '$lib/components/core'
 
@@ -11,13 +12,14 @@
 
   import PIcon from '$lib/components/core/PokemonIcon.svelte'
   import Icon from 'svelte-icons-pack'
+  import Chevron from 'svelte-icons-pack/bi/BiSolidChevronUp'
   import Bin from 'svelte-icons-pack/bi/BiTrash'
   import Deceased from 'svelte-icons-pack/fa/FaSolidSkullCrossbones'
   import Spinner from 'svelte-icons-pack/cg/CgSpinner'
 
   import { onMount, getContext } from 'svelte'
 
-  let selected, nickname, status
+  let selected, nickname, status, nature
 
   let Particles, EvoModal
   onMount(() => {
@@ -49,6 +51,7 @@
     if (!pkmn) return
 
     status = pkmn.status ? NuzlockeStates[pkmn.status] : null
+    nature = pkmn.nature ? NaturesMap[pkmn.nature] : null
     nickname = pkmn.nickname
     if (pkmn.pokemon)
       fetchData(pkmn.pokemon)
@@ -65,6 +68,7 @@
          id,
          pokemon: selected?.alias,
          status: status?.id,
+         nature: nature?.id,
          nickname,
          location
        }
@@ -96,7 +100,7 @@
 </script>
 
 <div data-selected={!!selected} class='grid grid-cols-2 md:grid-cols-8 gap-y-3 md:gap-y-0 gap-x-2 flex'>
-  <span class='col-span-2 md:text-right mr-4 sm:text-sm text-lg mt-4 sm:mt-0 h-full font-medium sm:font-normal flex md:justify-end items-center'>
+  <span class='col-span-1 md:text-right mr-4 sm:text-sm text-lg mt-4 sm:mt-0 h-full font-medium sm:font-normal flex md:justify-end items-center'>
     {location}
   </span>
 
@@ -148,7 +152,6 @@
     inset={status ? '2rem' : null}
     className=col-span-1
   >
-
     <svelte:fragment slot=icon let:iconClass let:selected>
       {#if selected}
         <Icon className='{iconClass} fill-current left-3' src={selected.icon} />
@@ -158,6 +161,32 @@
     <div class='flex inline-flex gap-x-2 py-2 items-center' slot=item let:item let:label>
       <Icon src={item.icon} className='fill-current' />
       {@html label}
+    </div>
+  </AutoComplete>
+
+  <AutoComplete
+    wide
+    rounded
+    items={Natures}
+    bind:selected={nature}
+    placeholder=Nature
+    className=col-span-1
+    dropdownClass='-translate-x-1/2 -ml-1 sm:translate-x-0 sm:ml-0'
+  >
+    <div class='flex inline-flex justify-between w-full py-2 -mx-1 items-center' slot=item let:item let:label>
+      <span>{@html label}</span>
+      {#if item.value.length}
+        <span class='flex sm:flex-col -my-4 -mr-3 gap-x-2 sm:gap-x-0 text-tiny sm:gap-y-1'>
+          <span class='inline-flex justify-end items-center dark:text-blue-300 text-blue-400'>
+            {item.value[0]}
+            <Icon src={Chevron} className='fill-current' />
+          </span>
+          <span class='inline-flex items-center dark:text-orange-300 text-orange-600'>
+            {item.value[1]}
+            <Icon src={Chevron} className='fill-current transform rotate-180' />
+          </span>
+        </span>
+      {/if}
     </div>
   </AutoComplete>
 
@@ -201,7 +230,7 @@
     {/if}
 
   </span>
-
-
-
 </div>
+
+<style>
+</style>

@@ -1,9 +1,12 @@
 <script>
-  export let max, atk, def, spd, spa, spe, hp, col = ''
-  const stats = { hp, atk, def, spa, spd, spe }
-  const total = Object.values(stats).reduce((acc, it) => acc + it, 0)
+  export let max, atk, def, spd, spa, spe, hp, col = '', nature = []
 
   import StatBar from '$lib/components/stat-bar.svelte'
+  import NaturesMap from '$lib/data/natures'
+
+  const [pos, neg] = NaturesMap[nature] || []
+  const stats = { hp, atk, def, spa, spd, spe }
+  const total = Object.values(stats).reduce((acc, it) => acc + it, 0)
 
 </script>
 
@@ -13,7 +16,7 @@
   </span>
 
   {#each Object.entries(stats) as [s, sval]}
-    <StatBar stat={s} val={sval} max={max} />
+    <StatBar mod={s === pos ? 1.1 : s === neg ? 0.9 : 1} stat={s} val={sval} max={max} />
   {/each}
 </div>
 

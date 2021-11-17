@@ -6,7 +6,7 @@
   import Spinner from 'svelte-icons-pack/cg/CgSpinner'
 
   export let items = undefined, fetch = undefined
-  export let placeholder, inset = false, color = '', label = 'label', className = '', wide = false, rounded = false
+  export let placeholder, inset = false, color = '', label = 'label', className = '', dropdownClass = '', wide = false, rounded = false
   export let selected = null, style = ''
 
   const iconclass = 'absolute z-40 -left-2 top-1/2 -translate-y-1/2'
@@ -35,7 +35,7 @@
     searchFunction={fetch}
 
     className='{color} {wide ? 'wide' : ''} w-full text-xxs md:text-xs'
-    dropdownClassName='shadow-lg {roundedClass}'
+    dropdownClassName='shadow-lg {roundedClass} {dropdownClass}'
     inputClassName='transition-colors border-2 ring-2 ring-transparent placeholder-gray-400 dark:placeholder-gray-500 text-gray-800 dark:text-gray-100 shadow-sm text-xxs focus:outline-none md:text-base px-3 {roundedClass}'
   >
 
@@ -135,8 +135,10 @@
       height: theme('spacing.10') !important;
     }
 
-    :global(div.autocomplete-list) {
-      width: 100% !important;
+    :global(div.autocomplete-list),
+    :global(.wide div.autocomplete-list)
+    {
+      width: auto !important;
     }
   }
 

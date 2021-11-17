@@ -1,5 +1,5 @@
 <script>
-  export let sprite, name, types, level = '', moves, maxStat, held = '', ability = '', stats
+  export let sprite, name, types, level = '', moves, maxStat, held = '', ability = '', stats, nature = undefined
 
   import { capitalise } from '$lib/utils/string'
 
@@ -86,7 +86,7 @@
     {/if}
 
     <div class={moves && moves.length ? 'w-2/5 sm:w-1/3 mr-4 sm:mt-0 mt-5' : 'w-full m-4'}>
-      <StatBlock col={cols[0]} max={maxStat} {...stats} />
+      <StatBlock nature={nature} col={cols[0]} max={maxStat} {...stats} />
     </div>
   </div>
   <slot name="footer" />

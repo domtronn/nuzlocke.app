@@ -138,6 +138,7 @@
                 ability={p.nickname ? { name: p.nickname + ' the' } : null}
                 name={Pokemon[p.pokemon].name}
                 stats={Pokemon[p.pokemon].baseStats}
+                nature={p.nature}
                 types={(Pokemon[p.pokemon].types || []).map(t => t.toLowerCase())}
               >
                 <span class='text-xs text-center p-2 -mt-4 text-gray-500 z-40' slot="footer">
