@@ -16,7 +16,7 @@
   on:click={onclick}
   class:disabled={disabled}
   class:rounded-lg={rounded}
-  class='{color} {containerClassName} group flex items-center border-2 ring-2 ring-transparent transition hover:grayscale-0 grayscale shadow-sm'
+  class='{color} {containerClassName} group flex items-center border-2 ring-2 ring-transparent transition shadow-sm'
 >
   {#if src}
     <Icon className='fill-current m-2 {className}' src={src} />
@@ -36,7 +36,7 @@
   :global(.dark) {
     --icb-hover: theme('colors.gray.200');
     --icb-active: theme('colors.gray.100');
-    --icb-bg: theme('colors.gray.800');
+    --icb-bg: theme('colors.gray.500');
   }
 
   .orange {
@@ -64,13 +64,12 @@
   :global(.dark) button,
   :global(.dark) button.disabled
   {
-    background-color: theme('colors.gray.700');
     border-color: theme('colors.gray.600');
   }
 
   button,
   button.disabled {
-    background-color: theme('colors.white');
+    background-color: var(--input-bg);
     border-color: theme('colors.gray.200');
     color: theme('colors.gray.400');
   }

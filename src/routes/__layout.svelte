@@ -17,6 +17,9 @@
 </script>
 
 <style global lang="postcss">
+  :global(:root){ --input-bg: theme('colors.white'); }
+  :global(.dark) { --input-bg: theme('colors.gray.800'); }
+
   /* latin */
   @font-face {
     font-family: 'VT323';

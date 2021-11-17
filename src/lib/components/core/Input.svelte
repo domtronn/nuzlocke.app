@@ -25,12 +25,11 @@
   .orange { --inp-focus: theme('colors.orange.400'); --inp-focus-2: theme('colors.orange.200'); }
 
   input {
-    background-color: theme('colors.white');
+    background-color: var(--input-bg);
     border-color: theme('colors.gray.200');
   }
 
   :global(.dark) input {
-    background-color: theme('colors.gray.700');
     border-color: theme('colors.gray.600');
   }
 

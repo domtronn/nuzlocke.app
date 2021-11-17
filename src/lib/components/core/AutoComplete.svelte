@@ -23,7 +23,11 @@
 <div {style} class='group relative inline-block {className}'>
   <slot iconClass='pointer-events-none absolute z-40 -left-2 top-1/2 -translate-y-1/2' {selected} name=icon />
 
-  <Icon size='1em' src={Chevron} className='z-40 absolute right-1 pointer-events-none top-1/2 -translate-y-1/2 fill-current text-gray-200 dark:text-gray-500 dark:border-gray-500 transform rotate-180 border-r w-6' />
+  <Icon
+    size=1em
+    src={Chevron}
+    className='z-40 absolute right-1 pointer-events-none top-1/2 -translate-y-1/2 fill-current text-gray-200 dark:text-gray-500 dark:border-gray-500 transform rotate-180 border-r w-6'
+  />
 
   <AutoComplete
     hideArrow
@@ -107,7 +111,7 @@
   :global(input.autocomplete-input) {
     padding: 0 !important;
     padding-left: var(--auc-inset) !important;
-    background-color: theme('colors.white');
+    background-color: var(--input-bg);
     border-color: theme('colors.gray.200');
   }
 
@@ -146,7 +150,6 @@
   }
 
   :global(.dark input.autocomplete-input) {
-    background-color: theme('colors.gray.700');
     border-color: theme('colors.gray.600');
   }
 
