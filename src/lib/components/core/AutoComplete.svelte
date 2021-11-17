@@ -4,6 +4,7 @@
   import PIcon from '$lib/components/core/PokemonIcon.svelte'
   import Icon from 'svelte-icons-pack'
   import Spinner from 'svelte-icons-pack/cg/CgSpinner'
+  import Chevron from 'svelte-icons-pack/bi/BiSolidChevronUp'
 
   export let items = undefined, fetch = undefined
   export let placeholder, inset = false, color = '', label = 'label', className = '', dropdownClass = '', wide = false, rounded = false
@@ -19,8 +20,10 @@
   $: style = inset ? `--auc-inset: ${typeof inset === 'string' ? inset : '3.2rem'}` : ''
 </script>
 
-<div {style} class='relative inline-block {className}'>
+<div {style} class='group relative inline-block {className}'>
   <slot iconClass='pointer-events-none absolute z-40 -left-2 top-1/2 -translate-y-1/2' {selected} name=icon />
+
+  <Icon size='1em' src={Chevron} className='z-40 absolute right-1 pointer-events-none top-1/2 -translate-y-1/2 fill-current text-gray-200 dark:text-gray-500 dark:border-gray-500 transform rotate-180 border-r w-6' />
 
   <AutoComplete
     hideArrow
