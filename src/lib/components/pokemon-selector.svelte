@@ -108,6 +108,7 @@
     fetch={fetchItems}
     inset={!!selected}
     bind:selected={selected}
+    name='{location} Encounter'
     placeholder=Encounter
 
     className=col-span-2
@@ -136,6 +137,7 @@
   <Input
     rounded
     bind:value={nickname}
+    name='{location} Nickname'
     placeholder=Nickname
     className=col-span-2
   />
@@ -145,6 +147,7 @@
     rounded
     items={Object.values(NuzlockeStates)}
     bind:selected={status}
+    name='{location} Status'
     placeholder=Status
     label=state
     inset={status ? '2rem' : null}
@@ -167,6 +170,7 @@
     rounded
     items={Natures}
     bind:selected={nature}
+    name='{location} Nature'
     placeholder=Nature
     className=col-span-1
     dropdownClass='-translate-x-1/2 -ml-1 sm:translate-x-0 sm:ml-0'

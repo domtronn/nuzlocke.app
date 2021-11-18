@@ -42,8 +42,8 @@ const FormMap = {
 }
 
 export async function get ({ params, query }) {
-  if (!query.get('p'))
-    return { status: 404 }
+  if (!query.has('p'))
+    return { body: {} }
 
   const plist = query.get('p').split(',')
 

@@ -45,7 +45,7 @@
 
 <CookieBanner />
 
-<footer class='text-center absolute w-full bottom-0 my-8 sm:my-10 px-4 text-tiny md:text-xs text-gray-500 dark:text-gray-400 leading-3'>
+<footer class='text-center w-full absolute bottom-0 my-8 sm:my-10 px-4 text-tiny md:text-xs text-gray-500 dark:text-gray-400 leading-3'>
   <p class='flex justify-center text-2xl gap-x-2 '>
     <a href="https://github.com/domtronn/dc-nuzlocke/issues/new?assignees=&labels=&template=bug_report.md&title="
        rel="noreferrer" target="_blank">

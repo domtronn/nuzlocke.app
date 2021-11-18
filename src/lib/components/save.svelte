@@ -30,8 +30,9 @@
   <div out:fade on:click={onclick} class='group flex flex-col sm:flex-row gap-x-4 items-start md:items-center'>
     <Picture
       alt='{name} logo'
-      src='/assets/{game}'
-      aspect=72xauto
+      src=/assets/{game}
+      className='hidden sm:block'
+      aspect=72x72
     />
 
       <div>
@@ -52,7 +53,7 @@
       on:click={ondelete}
     >
       Delete
-      <Icon src={Bin} className='fill-current inline-block -mt-1' />
+      <Icon src={Bin} className='hidden sm:inline-block fill-current -mt-1' />
     </Button>
   </div>
 </div>

@@ -4,7 +4,7 @@
 
 <script>
   import { savedGames, activeGame, createGame } from '$lib/store'
-  import { PixelatedContainer, ScreenContainer } from '$lib/components/containers'
+  import { ScreenContainer } from '$lib/components/containers'
 
   import { AutoComplete, Input, Picture } from '$lib/components/core'
 
@@ -46,7 +46,7 @@
   <title> Nuzlocke Tracker | New game </title>
 </svelte:head>
 
-<ScreenContainer title='New Nuzlocke' className='-mt-16' icon={File}>
+<ScreenContainer title='New Nuzlocke' icon={File}>
   <div class='flex flex-col sm:flex-row sm:flex-wrap sm:gap-y-4 gap-2'>
     <Input
       rounded
@@ -64,12 +64,12 @@
       bind:selected={selected}
     >
 
-      <div class='flex inline-flex gap-x-2 py-2 items-center h-8' slot='item' let:item={i} let:label={label}>
+      <div class='flex inline-flex gap-x-2 py-2 items-center h-auto w-full max-h-8' slot='item' let:item={i} let:label={label}>
         {#if Games[i].logo}
           <Picture
             src={Games[i].logo}
             alt={Games[i].title + ' logo'}
-            aspect=32xauto
+            aspect=42x42
           />
         {/if}
         {@html label}
@@ -103,7 +103,7 @@
     {/each}
   </div>
 
-  <i class='p-2 text-sm text-center text-gray-400'>
+  <i class='p-2 text-sm text-center text-gray-500 dark:text-gray-400 -mb-2'>
     <b>N.B.</b> Missing games just haven't had the data created for them yet,
     <br />they will be updated regularly so check back soon for your favourite!
   </i>

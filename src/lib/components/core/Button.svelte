@@ -1,13 +1,14 @@
 <script>
   import { createEventDispatcher } from 'svelte'
 
-  export let disabled, className = '', rounded = false
+  export let className = '', rounded = false, disabled = false
 
   const dispatch = createEventDispatcher()
   const onclick = _ => !disabled && dispatch('click')
 </script>
 
 <button
+  {disabled}
   on:click={onclick}
   class:disabled={disabled}
   class:rounded-lg={rounded}
