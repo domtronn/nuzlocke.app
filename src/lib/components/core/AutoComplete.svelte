@@ -28,7 +28,7 @@
   <Icon
     size=1em
     src={Chevron}
-    className='z-40 absolute right-1 pointer-events-none top-1/2 -translate-y-1/2 fill-current text-gray-200 dark:text-gray-500 dark:border-gray-500 transform rotate-180 border-r w-6'
+    className='z-10 absolute right-1 pointer-events-none top-1/2 -translate-y-1/2 fill-current text-gray-200 dark:text-gray-500 dark:border-gray-500 transform rotate-180 border-r w-6'
   />
 
   <label for={name}>{name}</label>
