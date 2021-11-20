@@ -1,5 +1,5 @@
 <script context="module">
-  export async function load({ page, fetch }) {
+  export async function load({ page }) {
     return { props: page.params }
   }
 </script>

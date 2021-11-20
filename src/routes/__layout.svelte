@@ -8,12 +8,32 @@
   export let path = ''
 
   import '../app.css'
-  import { onMount } from 'svelte'
+  import { setContext } from 'svelte'
+  import { browser } from '$app/env'
 
   import { GameHeading, NavHeading, CookieBanner } from '$lib/components/navs'
 
   import Icon from 'svelte-icons-pack'
   import GitHub from 'svelte-icons-pack/bi/BiLogoGithub'
+
+  let data
+  const fetchData = async () => {
+    if (!browser) return
+    if (data) return data
+    const res = await fetch('/api/pokemon/all.json')
+    data = await res.json()
+    return data
+  }
+
+  setContext('game', {
+    getAllPkmn: fetchData,
+    getPkmn: id => fetchData().then((ps = []) => ps.find(p => p.num == id || p.name == id || p.alias == id)),
+    getPkmns: ids => fetchData()
+      .then((ps = []) => ps
+            .filter(p => ids.includes(p.num) || ids.includes(p.name) || ids.includes(p.alias))
+            .reduce((acc, it) => ({ ...acc, [it.alias]: it }), {})),
+  })
+
 </script>
 
 <style global lang="postcss">

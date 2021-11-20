@@ -5,10 +5,10 @@
 <script>
   import { browser } from '$app/env'
   import { savedGames, parse } from '$lib/store'
-  import { slide, fade } from 'svelte/transition'
+  import { slide } from 'svelte/transition'
 
   import Save from '$lib/components/save.svelte'
-  import { ScreenContainer, PixelatedContainer } from '$lib/components/containers'
+  import { ScreenContainer } from '$lib/components/containers'
   import { Button } from '$lib/components/core'
 
   import Icon from 'svelte-icons-pack'

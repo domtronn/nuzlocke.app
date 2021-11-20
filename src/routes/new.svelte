@@ -3,16 +3,13 @@
 </script>
 
 <script>
-  import { savedGames, activeGame, createGame } from '$lib/store'
+  import { savedGames, createGame } from '$lib/store'
   import { ScreenContainer } from '$lib/components/containers'
 
-  import { AutoComplete, Input, Picture } from '$lib/components/core'
+  import { Button, Tabs, AutoComplete, Input, Picture } from '$lib/components/core'
 
   import File from 'svelte-icons-pack/cg/CgFileAdd'
   import Games from '$lib/data/games.json'
-  import Button from '$lib/components/core/Button.svelte'
-  import Tabs from '$lib/components/core/Tabs.svelte'
-  import PIcon from '$lib/components/core/PokemonIcon.svelte'
 
   import { filterObj } from '$lib/utils/arr'
 
@@ -28,10 +25,10 @@
   }
 
   let hoverActive = false
-  const togglehover = _ => hoverActive = !hoverActive
+  const togglehover = () => hoverActive = !hoverActive
 
   let selected
-  const handleSelect = id => _ => selected === id ? selected = null : selected = id
+  const handleSelect = id => () => selected === id ? selected = null : selected = id
 
   let gen = 'All'
   const gens = ['All']

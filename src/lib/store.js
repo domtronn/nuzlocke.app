@@ -3,7 +3,7 @@ import { browser } from '$app/env'
 import { writable } from 'svelte/store'
 
 import { uuid } from '$lib/utils/uuid'
-import { NuzlockeGroups, NuzlockeStates } from '$lib/data/states'
+import { NuzlockeGroups } from '$lib/data/states'
 
 const IDS = {
   theme: 'nuzlocke.theme',
@@ -72,11 +72,17 @@ export const patch = (payload) => (data) => JSON.stringify({
 export const read = (cb) => (payload) => {
   if (!payload) return
   let data = {}
-  try { data = JSON.parse(payload) } catch (e) {}
+  try {
+    data = typeof payload === 'string'
+      ? JSON.parse(payload)
+      : {}
+  } catch (e) {
+    console.error(e)
+  }
   cb(data || {})
 }
 
-export const parse = (cb = i => {}) => (gameData) => {
+export const parse = (cb = () => {}) => (gameData) => {
   cb(
     (gameData || '')
       .split(',')

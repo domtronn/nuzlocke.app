@@ -11,4 +11,4 @@ export const groupBy = (field, arr, asTuple = false) => {
 export const random = (arr) => arr[Math.floor(Math.random() * arr.length)]
 
 export const mapObj = (o, f) => Object.entries(o).map(([k, v]) => [k, f(v)]).reduce((acc, [k, v]) => ({ ...acc, [k]: v}), {})
-export const filterObj = (o, f) => Object.entries(o).filter(([k, v]) => f(v)).reduce((acc, [k, v]) => ({ ...acc, [k]: v}), {})
+export const filterObj = (o, f) => Object.entries(o).filter(([, v]) => f(v)).reduce((acc, [k, v]) => ({ ...acc, [k]: v}), {})

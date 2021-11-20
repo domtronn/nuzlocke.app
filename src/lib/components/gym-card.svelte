@@ -3,7 +3,6 @@
   let pokemon = [], name = '', speciality = '', img
 
   import { browser } from '$app/env'
-  import { fade } from 'svelte/transition'
 
   import Pokemon from '$lib/components/pokemon-card.svelte'
   import TypeBadge from '$lib/components/type-badge.svelte'
@@ -31,9 +30,6 @@
   }
 
   $: (async () => await fetchData(starter))()
-
-  const threshold = -15
-
 
   /* TODO: Move all of this logic onto the server */
   $: levelCap = pokemon.reduce((acc, it) => Math.max(acc, it.level), 0)

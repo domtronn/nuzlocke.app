@@ -1,6 +1,6 @@
 <script>
   export let className = ''
-  import { activeGame, savedGames, getGame, theme, read, parse } from '$lib/store'
+  import { activeGame, savedGames, parse } from '$lib/store'
   import { fade } from 'svelte/transition'
   import { page } from '$app/stores'
 
@@ -17,7 +17,6 @@
   import Icon from 'svelte-icons-pack'
   import Box from 'svelte-icons-pack/bi/BiPackage'
   import Game from 'svelte-icons-pack/cg/CgGames'
-  import Home from 'svelte-icons-pack/ai/AiOutlineHome'
 
   const pages = [
     { name: 'Game', link: '/game', icon: Game },

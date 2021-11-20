@@ -1,8 +1,5 @@
 /// <reference lib="webworker" />
 import { build, files, timestamp } from '$service-worker'
-import { registerRoute } from 'workbox-routing'
-import { CacheFirst, StaleWhileRevalidate } from 'workbox-strategies'
-import { ExpirationPlugin } from 'workbox-expiration'
 
 const cacheKey = `cache@${timestamp}`
 
@@ -12,9 +9,7 @@ const toCache = build
       .filter(i => i.includes('/logos/') || i.includes('/leaders/') || i.includes('/assets/'))
       .filter(i => i.endsWith('.png') || i.endsWith('.webp'))
   )
-  .concat(
-    '/index.html'
-  )
+  .concat('/index.html', '/', '/new', '/saves', '/game', '/box')
 
 const staticAssets = new Set(toCache)
 
@@ -23,7 +18,7 @@ self.addEventListener('install', evt => {
     caches
       .open(cacheKey)
       .then(c => c.addAll(toCache))
-      .then(_ => self.skipWaiting())
+      .then(() => self.skipWaiting())
       .catch(e => console.error(e))
   )
 })
@@ -37,7 +32,7 @@ self.addEventListener('activate', evt => {
           .filter(key => key !== cacheKey)
           .map(key => caches.delete(key))
       ))
-      .then(_ => self.clients.claim())
+      .then(() => self.clients.claim())
   )
 })
 

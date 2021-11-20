@@ -1,6 +1,6 @@
 import Routes from '$lib/data/routes.json'
 
-export async function get ({ params, query }) {
+export async function get ({ params }) {
   const { gen } = params
 
   if (!Routes[gen])

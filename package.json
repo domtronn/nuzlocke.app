@@ -12,6 +12,8 @@
     "@sveltejs/kit": "next",
     "autoprefixer": "^10.3.7",
     "cssnano": "^5.0.8",
+    "eslint": "^8.2.0",
+    "eslint-plugin-svelte3": "^3.2.1",
     "postcss": "^8.3.9",
     "postcss-load-config": "^3.1.0",
     "rollup-plugin-visualizer": "^5.5.2",

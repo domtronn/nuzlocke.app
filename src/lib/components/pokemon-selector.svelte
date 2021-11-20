@@ -1,21 +1,17 @@
 <script>
   export let id, location, store
 
-  import { browser } from '$app/env'
   import { read, patch } from '$lib/store'
 
   import { Natures, NaturesMap } from '$lib/data/natures'
   import { NuzlockeStates, NuzlockeGroups } from '$lib/data/states'
-  import { IconButton, AutoComplete, Input, Accordion } from '$lib/components/core'
-
-  import StatBlock from '$lib/components/stat-block.svelte'
+  import { IconButton, AutoComplete, Input } from '$lib/components/core'
 
   import PIcon from '$lib/components/core/PokemonIcon.svelte'
   import Icon from 'svelte-icons-pack'
   import Chevron from 'svelte-icons-pack/bi/BiSolidChevronUp'
   import Bin from 'svelte-icons-pack/bi/BiTrash'
   import Deceased from 'svelte-icons-pack/fa/FaSolidSkullCrossbones'
-  import Spinner from 'svelte-icons-pack/cg/CgSpinner'
 
   import { onMount, getContext } from 'svelte'
 
@@ -27,22 +23,7 @@
     import('$lib/components/EvolutionModal.svelte').then(m => EvoModal = m.default)
   })
 
-  const fetchItems = async () => {
-    const res = await fetch('/api/pokemon/all.json')
-    const items =  res.json()
-    return items
-  }
-
-  const fetchData = async (id) => {
-    if (!browser) return
-    try {
-      const res = await fetch(`/api/pokemon/${id}.json`)
-      const data = await res.json()
-      return data
-    } catch (e) {
-      console.error(e)
-    }
-  }
+  const { getAllPkmn, getPkmn } = getContext('game')
 
   let loading = true
   store.subscribe(read(data => {
@@ -53,7 +34,7 @@
     nature = pkmn.nature ? NaturesMap[pkmn.nature] : null
     nickname = pkmn.nickname
     if (pkmn.pokemon)
-      fetchData(pkmn.pokemon)
+      getPkmn(pkmn.pokemon)
         .then(p => {
           selected = p
           loading = false
@@ -80,7 +61,7 @@
  }
 
   let captureComplete = false
-  const handleStatus = (sid) => _ => {
+  const handleStatus = (sid) => () => {
     if (sid === 1) captureComplete = true
     status = NuzlockeStates[sid]
   }
@@ -88,12 +69,12 @@
   const { open } = getContext('simple-modal')
   let evoComplete = false
   const handleSplitEvolution = (base, evolutions) => open(EvoModal, { evolutions, base, select: handleSingleEvolution })
-  const handleSingleEvolution = async (id) => fetchData(id).then(p => {
+  const handleSingleEvolution = async (id) => getPkmn(id).then(p => {
     selected = p
     evoComplete = true
   })
 
-  const handleEvolution = (base, evos) => async _ => handleSplitEvolution(base, evos)
+  const handleEvolution = (base, evos) => async () => handleSplitEvolution(base, evos)
 
  $: gray = ['Dead', 'Missed'].includes(status?.state)
 </script>
@@ -105,7 +86,7 @@
 
   <AutoComplete
     rounded
-    fetch={fetchItems}
+    fetch={getAllPkmn}
     inset={!!selected}
     bind:selected={selected}
     name='{location} Encounter'
@@ -122,10 +103,10 @@
       {#if selected}
         <div class='absolute left-4 top-2 z-50'>
           {#if evoComplete}
-            <Particles icons={['ice-stone', 'dawn-stone', 'fire-stone']} on:end={_ => evoComplete = false} />
+            <Particles icons={['ice-stone', 'dawn-stone', 'fire-stone']} on:end={() => evoComplete = false} />
           {/if}
           {#if captureComplete}
-            <Particles icons={['poke-ball', 'friend-ball', 'heavy-ball', 'master-ball']} on:end={_ => captureComplete = false} />
+            <Particles icons={['poke-ball', 'friend-ball', 'heavy-ball', 'master-ball']} on:end={() => captureComplete = false} />
           {/if}
         </div>
 

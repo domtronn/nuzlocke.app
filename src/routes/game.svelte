@@ -15,11 +15,9 @@
   import Modal from 'svelte-simple-modal'
 
   import Icon from 'svelte-icons-pack'
-  import Box from 'svelte-icons-pack/bi/BiSolidPackage'
   import Arrow from 'svelte-icons-pack/bi/BiRightArrowAlt'
 
   import Games from '$lib/data/games.json'
-  import Colors from '$lib/data/colors.json'
   import deferStyles from '$lib/utils/defer-styles'
   import { activeGame, savedGames, getGame, patch, read, parse } from '$lib/store'
 
@@ -42,14 +40,17 @@
 
   let limit = 10
 
+  let route
   const fetchRoute = async (gen) => {
+    if (route) return route
     const res = await fetch(`/api/route/${gen}.json`)
-    return await res.json()
+    route = await res.json()
+    return route
   }
 
-  onMount(() => deferStyles('/assets/pokemon.css'))
+  onMount(async () => deferStyles('/assets/pokemon.css'))
 
-  const setup = () => new Promise((resolve, reject) => {
+  const setup = () => new Promise((resolve) => {
     activeGame.subscribe(gameId => {
       if (browser && !gameId) return window.location = '/'
 
@@ -65,23 +66,21 @@
           loading = !browser
 
         deferStyles(`/assets/items/${gameKey}.css`)
-        fetchRoute(Games[gameKey].pid)
-          .then(r => resolve(r))
+        fetchRoute(Games[gameKey].pid).then(r => resolve(r))
       }))
     })
   })
 
   const setstarter = (e) => {
     starter = e.detail.value
-    gameStore.update(patch({ __starter: e.detail.value }))
+    gameStore.update(patch({ __starter: starter }))
   }
 
-
   const setnav = (e) => setloc(`boss-${e.detail.value}`, e.detail.value + 20)
-  const setroute = ({ name, id }) => _ => setloc(`route-${name}`, id + 10)
+  const setroute = ({ name, id }) => () => setloc(`route-${name}`, id + 10)
   const setloc = (id, i) => {
     limit = Math.max(limit, i + 20)
-    setTimeout(_ => document.getElementById(id).scrollIntoView({ behavior: 'smooth' }), 50)
+    setTimeout(() => document.getElementById(id).scrollIntoView({ behavior: 'smooth' }), 50)
   }
 
   const latestnav = (routes, game) => {
@@ -143,7 +142,7 @@
 
             <div class='flex flex-row items-center gap-x-2'>
               <p>Starter</p>
-              <StarterType on:select={setstarter} starter={starter} />
+              <StarterType on:select={setstarter} bind:starter={starter} />
             </div>
           </div>
 
@@ -166,7 +165,7 @@
               {/if}
 
               {#if i === limit -5}
-                <IntersectionObserver {element} on:intersect={e => limit+=5}>
+                <IntersectionObserver {element} on:intersect={() => limit+=5}>
                   <li bind:this={element} />
                 </IntersectionObserver>
               {/if}

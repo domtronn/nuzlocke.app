@@ -1,6 +1,7 @@
 <script>
   import { browser } from '$app/env'
-  import { fade, slide } from 'svelte/transition'
+  import { getContext } from 'svelte'
+  import { fade } from 'svelte/transition'
   import { flip } from 'svelte/animate'
 
   import PokemonCard from '$lib/components/pokemon-card.svelte'
@@ -15,16 +16,7 @@
   import Icon from 'svelte-icons-pack'
   import X from 'svelte-icons-pack/ri/RiSystemFilterOffFill'
 
-  const fetchData = async (pkmn) => {
-    if (!browser) return
-    try {
-      const res = await fetch(`/api/pokemon.json?p=${pkmn.join(',')}`)
-      const data = await res.json()
-      return data
-    } catch (e) {
-      console.error(e)
-    }
-  }
+  const { getPkmns } = getContext('game')
 
   let loading = true
   let ogbox = [], box = [], Pokemon = {}
@@ -37,7 +29,7 @@
         .filter(i => i.pokemon)
         .filter(({ status }) => status !== 5 && status !== 4)
 
-      fetchData(box.map(i => i.pokemon))
+      getPkmns(box.map(i => i.pokemon))
         .then(data => {
           Pokemon = data
           loading = false

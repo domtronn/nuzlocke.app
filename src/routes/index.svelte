@@ -1,8 +1,12 @@
+<script context='module'>
+  export const router = false
+</script>
+
 <script>
+
   export let id = 25
 
-  import { fly, fade } from 'svelte/transition'
-  import { goto } from '$app/navigation'
+  import { fly } from 'svelte/transition'
 
   import { activeGame, savedGames, parse, getGame, read, summarise } from '$lib/store'
   import { PixelatedContainer } from '$lib/components/containers'
@@ -16,7 +20,7 @@
   const distance = 300
 
   let hovering = false
-  const toggleHover = _ => hovering = !hovering
+  const toggleHover = () => hovering = !hovering
 
   let flip = 0
   setInterval(() => {
@@ -59,7 +63,6 @@
           <a class='mb-1 group tracking-widest hover:drop-shadow-text hover:text-pink-500'
              on:mouseenter={toggleHover}
              on:mouseleave={toggleHover}
-             rel="external"
              href='/game'
              sveltekit:prefetch
            >
@@ -80,7 +83,7 @@
           </a>
         {/if}
 
-        <a rel="external" href="/new"
+        <a href="/new"
            class='tracking-widest hover:drop-shadow-text hover:text-yellow-300'
            sveltekit:prefetch
            on:mouseenter={toggleHover} on:mouseleave={toggleHover}
@@ -88,7 +91,7 @@
             New Game
         </a>
 
-        <a rel="external" href="/saves"
+        <a href="/saves"
            class='tracking-widest hover:drop-shadow-text hover:text-blue-400'
            sveltekit:prefetch
            on:mouseenter={toggleHover} on:mouseleave={toggleHover}>

@@ -4,7 +4,7 @@
  import Icon from 'svelte-icons-pack'
 
   let isOpen = false
-  const toggle = _ => isOpen = !isOpen
+  const toggle = () => isOpen = !isOpen
 
   export let iconClassName = ''
 </script>
