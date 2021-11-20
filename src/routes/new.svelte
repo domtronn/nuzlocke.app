@@ -66,6 +66,7 @@
           <Picture
             src={Games[i].logo}
             alt={Games[i].title + ' logo'}
+            className=w-12
             aspect=192x96
           />
         {/if}
