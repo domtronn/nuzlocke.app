@@ -124,7 +124,7 @@
           >
             <button
               slot='continue'
-              class='text-sm underline inline-flex items-center -ml-6 transition-colors hover:dark:text-gray-200 hover:text-black'
+              class='text-sm underline inline-flex items-center -ml-6 transition-colors dark:hover:text-gray-200 hover:text-black'
               on:click={setroute(latestnav(route, gameData))}
             >
               <Icon size='1.2rem' className='fill-current mr-1' src={Arrow} />
