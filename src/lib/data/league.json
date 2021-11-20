@@ -369,6 +369,7 @@
           "name": "starly",
           "level": "7",
           "moves": [
+            "tackle",
             "quick-attack",
             "growl"
           ],
@@ -417,7 +418,7 @@
           "moves": [
             "endeavor",
             "double-team",
-            "wing-attack",
+            "pluck",
             "quick-attack"
           ],
           "ability": "keen-eye"
@@ -427,11 +428,11 @@
           "level": "20",
           "moves": [
             "poison-sting",
-            "stun-spore",
+            "grass-knot",
             "mega-drain",
             "leech-seed"
           ],
-          "ability": "natural-cure",
+          "ability": "poison-point",
           "starter": "fire"
         },
         {
@@ -439,19 +440,19 @@
           "level": "20",
           "moves": [
             "poison-sting",
-            "stun-spore",
+            "grass-knot",
             "mega-drain",
             "leech-seed"
           ],
-          "ability": "natural-cure",
+          "ability": "poison-point",
           "starter": "grass"
         },
         {
           "name": "buizel",
           "level": "20",
           "moves": [
-            "pursuit",
-            "growl",
+            "bite",
+            "tail-whip",
             "water-gun",
             "quick-attack"
           ],
@@ -462,8 +463,8 @@
           "name": "buizel",
           "level": "20",
           "moves": [
-            "pursuit",
-            "growl",
+            "bite",
+            "tail-whip",
             "water-gun",
             "quick-attack"
           ],
@@ -476,10 +477,10 @@
           "moves": [
             "tackle",
             "tail-whip",
-            "growl",
-            "ember"
+            "agility",
+            "flame-charge"
           ],
-          "ability": "run-away",
+          "ability": "flash-fire",
           "starter": "fire"
         },
         {
@@ -488,17 +489,17 @@
           "moves": [
             "tackle",
             "tail-whip",
-            "growl",
-            "ember"
+            "agility",
+            "flame-charge"
           ],
-          "ability": "run-away",
+          "ability": "flash-fire",
           "starter": "water"
         },
         {
           "name": "monferno",
           "level": "21",
           "moves": [
-            "fury-swipes",
+            "stealth-rock",
             "leer",
             "mach-punch",
             "flame-wheel"
@@ -510,10 +511,10 @@
           "name": "prinplup",
           "level": "21",
           "moves": [
-            "peck",
+            "stealth-rock",
             "metal-claw",
-            "bubble",
-            "growl"
+            "bubble-beam",
+            "grass-knot"
           ],
           "ability": "torrent",
           "starter": "fire"
@@ -522,10 +523,10 @@
           "name": "grotle",
           "level": "21",
           "moves": [
-            "tackle",
-            "withdraw",
+            "stealth-rock",
+            "absorb",
             "razor-leaf",
-            "absorb"
+            "curse"
           ],
           "ability": "overgrow",
           "starter": "water"
@@ -543,117 +544,127 @@
           "moves": [
             "endeavor",
             "double-team",
-            "wing-attack",
+            "pluck",
             "quick-attack"
           ],
-          "ability": "keen-eye"
+          "ability": "keen-eye",
+          "held": "quick-claw"
         },
         {
           "name": "roselia",
-          "level": "25",
+          "level": "27",
           "moves": [
             "poison-sting",
-            "toxic-spikes",
+            "sweet-scent",
             "mega-drain",
-            "magical-leaf"
+            "grass-knot"
           ],
-          "ability": "natural-cure",
+          "ability": "poison-point",
+          "held": "miracle-seed",
           "starter": "fire"
         },
         {
           "name": "roselia",
-          "level": "25",
+          "level": "27",
           "moves": [
             "poison-sting",
-            "toxic-spikes",
+            "sweet-scent",
             "mega-drain",
-            "magical-leaf"
+            "grass-knot"
           ],
-          "ability": "natural-cure",
+          "ability": "poison-point",
+          "held": "miracle-seed",
           "starter": "grass"
         },
         {
           "name": "buizel",
-          "level": "25",
+          "level": "26",
           "moves": [
-            "pursuit",
+            "bite",
             "aqua-jet",
-            "quick-attack",
-            "growl"
+            "swift",
+            "tail-whip"
           ],
           "ability": "swift-swim",
+          "held": "sea-incense",
           "starter": "grass"
         },
         {
           "name": "buizel",
-          "level": "25",
+          "level": "26",
           "moves": [
-            "pursuit",
+            "bite",
             "aqua-jet",
-            "quick-attack",
-            "growl"
+            "swift",
+            "tail-whip"
           ],
           "ability": "swift-swim",
+          "held": "sea-incense",
           "starter": "water"
         },
         {
           "name": "ponyta",
-          "level": "25",
+          "level": "27",
           "moves": [
-            "stomp",
+            "tackle",
             "tail-whip",
-            "growl",
-            "ember"
+            "agility",
+            "flame-wheel"
           ],
-          "ability": "run-away",
+          "ability": "flash-fire",
+          "held": "shell-bell",
           "starter": "fire"
         },
         {
           "name": "ponyta",
-          "level": "25",
+          "level": "27",
           "moves": [
-            "stomp",
+            "tackle",
             "tail-whip",
-            "growl",
-            "ember"
+            "agility",
+            "flame-wheel"
           ],
-          "ability": "run-away",
+          "ability": "flash-fire",
+          "held": "shell-bell",
           "starter": "water"
         },
         {
           "name": "monferno",
-          "level": "28",
+          "level": "31",
           "moves": [
-            "fury-swipes",
-            "leer",
             "mach-punch",
-            "flame-wheel"
+            "power-up-punch",
+            "flame-wheel",
+            "leer"
           ],
           "ability": "blaze",
+          "held": "shell-bell",
           "starter": "grass"
         },
         {
           "name": "prinplup",
-          "level": "28",
+          "level": "31",
           "moves": [
-            "peck",
             "metal-claw",
             "bubble-beam",
-            "growl"
+            "charm",
+            "grass-knot"
           ],
           "ability": "torrent",
+          "held": "sea-incense",
           "starter": "fire"
         },
         {
           "name": "grotle",
-          "level": "28",
+          "level": "31",
           "moves": [
             "bite",
-            "withdraw",
+            "stealth-rock",
             "razor-leaf",
             "mega-drain"
           ],
           "ability": "overgrow",
+          "held": "miracle-seed",
           "starter": "water"
         }
       ]
@@ -665,132 +676,142 @@
       "pokemon": [
         {
           "name": "staravia",
-          "level": "31",
+          "level": "32",
           "moves": [
-            "aerial-ace",
+            "pluck",
             "double-team",
-            "take-down",
+            "endeavor",
             "quick-attack"
           ],
-          "ability": "keen-eye"
+          "ability": "keen-eye",
+          "held": "quick-claw"
         },
         {
           "name": "heracross",
-          "level": "30",
+          "level": "32",
           "moves": [
-            "horn-attack",
-            "night-slash",
             "aerial-ace",
-            "brick-break"
+            "brick-break",
+            "leer",
+            "thief"
           ],
           "ability": "swarm"
         },
         {
           "name": "roselia",
-          "level": "32",
+          "level": "34",
           "moves": [
+            "poison-sting",
+            "sweet-scent",
             "giga-drain",
-            "grass-whistle",
-            "leech-seed",
-            "toxic-spikes"
+            "grass-knot"
           ],
-          "ability": "natural-cure",
+          "ability": "poison-point",
+          "held": "big-root",
           "starter": "fire"
         },
         {
           "name": "roselia",
-          "level": "32",
+          "level": "34",
           "moves": [
+            "poison-sting",
+            "sweet-scent",
             "giga-drain",
-            "grass-whistle",
-            "leech-seed",
-            "toxic-spikes"
+            "grass-knot"
           ],
-          "ability": "natural-cure",
+          "ability": "poison-point",
+          "held": "big-root",
           "starter": "grass"
         },
         {
           "name": "buizel",
-          "level": "32",
+          "level": "33",
           "moves": [
-            "pursuit",
-            "aqua-jet",
-            "quick-attack",
+            "bite",
+            "brine",
+            "tail-whip",
             "swift"
           ],
           "ability": "swift-swim",
+          "held": "sea-incense",
           "starter": "grass"
         },
         {
           "name": "buizel",
-          "level": "32",
+          "level": "33",
           "moves": [
-            "pursuit",
-            "aqua-jet",
-            "quick-attack",
+            "bite",
+            "brine",
+            "tail-whip",
             "swift"
           ],
           "ability": "swift-swim",
+          "held": "sea-incense",
           "starter": "water"
         },
         {
           "name": "ponyta",
-          "level": "32",
+          "level": "34",
           "moves": [
             "stomp",
-            "take-down",
             "tail-whip",
-            "fire-spin"
+            "agility",
+            "flame-wheel"
           ],
-          "ability": "run-away",
+          "ability": "flash-fire",
+          "held": "shell-bell",
           "starter": "fire"
         },
         {
           "name": "ponyta",
-          "level": "32",
+          "level": "34",
           "moves": [
             "stomp",
-            "take-down",
             "tail-whip",
-            "fire-spin"
+            "agility",
+            "flame-wheel"
           ],
-          "ability": "run-away",
+          "ability": "flash-fire",
+          "held": "shell-bell",
           "starter": "water"
         },
         {
           "name": "monferno",
-          "level": "35",
+          "level": "37",
           "moves": [
             "flame-wheel",
-            "aerial-ace",
+            "shadow-claw",
             "mach-punch",
-            "brick-break"
+            "power-up-punch"
           ],
           "ability": "blaze",
+          "held": "shell-bell",
           "starter": "grass"
         },
         {
           "name": "prinplup",
-          "level": "35",
+          "level": "37",
           "moves": [
-            "fury-attack",
-            "bubble-beam",
             "metal-claw",
-            "aerial-ace"
+            "brine",
+            "grass-knot",
+            "charm"
           ],
           "ability": "torrent",
+          "held": "sea-incense",
           "starter": "fire"
         },
         {
           "name": "grotle",
-          "level": "35",
+          "level": "37",
           "moves": [
             "razor-leaf",
             "leech-seed",
             "bite",
-            "mega-drain"
+            "stealth-rock"
           ],
           "ability": "overgrow",
+          "held": "big-root",
           "starter": "water"
         }
       ]
@@ -802,47 +823,49 @@
       "pokemon": [
         {
           "name": "staraptor",
-          "level": "48",
+          "level": "49",
           "moves": [
             "close-combat",
-            "aerial-ace",
+            "pluck",
             "steel-wing",
             "u-turn"
           ],
-          "ability": "keen-eye"
+          "ability": "keen-eye",
+          "held": "focus-sash"
         },
         {
           "name": "heracross",
-          "level": "50",
+          "level": "51",
           "moves": [
             "rock-slide",
-            "close-combat",
-            "night-slash",
-            "aerial-ace"
+            "swords-dance",
+            "thief",
+            "pin-missile"
           ],
           "ability": "swarm"
         },
         {
           "name": "snorlax",
-          "level": "51",
+          "level": "52",
           "moves": [
-            "rest",
+            "covet",
+            "yawn",
             "crunch",
-            "earthquake",
-            "body-slam"
+            "high-horsepower"
           ],
-          "ability": "immunity"
+          "ability": "thick-fat"
         },
         {
           "name": "roserade",
           "level": "49",
           "moves": [
             "giga-drain",
-            "grass-whistle",
-            "poison-jab",
-            "shadow-ball"
+            "grass-knot",
+            "grassy-terrain",
+            "toxic"
           ],
-          "ability": "natural-cure",
+          "ability": "poison-point",
+          "held": "big-root",
           "starter": "fire"
         },
         {
@@ -850,95 +873,103 @@
           "level": "49",
           "moves": [
             "giga-drain",
-            "grass-whistle",
-            "poison-jab",
-            "shadow-ball"
+            "grass-knot",
+            "grassy-terrain",
+            "toxic"
           ],
-          "ability": "natural-cure",
+          "ability": "poison-point",
+          "held": "big-root",
           "starter": "grass"
         },
         {
           "name": "floatzel",
           "level": "49",
           "moves": [
-            "aqua-jet",
+            "brine",
             "ice-fang",
             "crunch",
-            "brick-break"
+            "swift"
           ],
           "ability": "swift-swim",
+          "held": "quick-attack",
           "starter": "grass"
         },
         {
           "name": "floatzel",
           "level": "49",
           "moves": [
-            "aqua-jet",
+            "brine",
             "ice-fang",
             "crunch",
-            "brick-break"
+            "swift"
           ],
           "ability": "swift-swim",
+          "held": "quick-attack",
           "starter": "water"
         },
         {
           "name": "rapidash",
           "level": "49",
           "moves": [
-            "will-o-wisp",
-            "sunny-day",
-            "fire-blast",
-            "bounce"
+            "flame-wheel",
+            "megahorn",
+            "smart-strike",
+            "poison-jab"
           ],
-          "ability": "run-away",
+          "ability": "flash-fire",
+          "held": "expert-belt",
           "starter": "fire"
         },
         {
           "name": "rapidash",
           "level": "49",
           "moves": [
-            "will-o-wisp",
-            "sunny-day",
-            "fire-blast",
-            "bounce"
+            "flame-wheel",
+            "megahorn",
+            "smart-strike",
+            "poison-jab"
           ],
-          "ability": "run-away",
+          "ability": "flash-fire",
+          "held": "expert-belt",
           "starter": "water"
         },
         {
           "name": "infernape",
-          "level": "53",
+          "level": "55",
           "moves": [
-            "flamethrower",
-            "focus-blast",
-            "aerial-ace",
+            "flame-wheel",
+            "close-combat",
+            "u-turn",
             "shadow-claw"
           ],
           "ability": "blaze",
+          "held": "expert-belt",
           "starter": "grass"
         },
         {
           "name": "empoleon",
-          "level": "53",
+          "level": "55",
           "moves": [
             "brine",
-            "metal-claw",
-            "aerial-ace",
-            "shadow-claw"
+            "flash-cannon",
+            "grass-knot",
+            "charm"
           ],
           "ability": "torrent",
+          "held": "quick-claw",
           "starter": "fire"
         },
         {
           "name": "torterra",
-          "level": "53",
+          "level": "55",
           "moves": [
-            "leaf-storm",
-            "synthesis",
             "earthquake",
-            "crunch"
+            "woodhammer",
+            "roar",
+            "stealth-rock"
           ],
           "ability": "overgrow",
+          "held": "leftovers",
           "starter": "water"
         }
       ]
@@ -952,9 +983,10 @@
           "name": "zubat",
           "level": "14",
           "moves": [
-            "bite",
-            "leech-life",
-            "toxic"
+            "absorb",
+            "astonish",
+            "supersonic",
+            "u-turn"
           ],
           "ability": "inner-focus"
         },
@@ -964,7 +996,8 @@
           "moves": [
             "fake-out",
             "scratch",
-            "feint-attack"
+            "growl",
+            "thief"
           ],
           "ability": "thick-fat",
           "held": "oran-berry"
@@ -980,10 +1013,10 @@
           "name": "golbat",
           "level": "37",
           "moves": [
-            "air-cutter",
-            "supersonic",
+            "astonish",
+            "poison-fang",
             "bite",
-            "toxic"
+            "u-turn"
           ],
           "ability": "inner-focus"
         },
@@ -994,7 +1027,7 @@
             "iron-defense",
             "gyro-ball",
             "confuse-ray",
-            "extrasensory"
+            "payback"
           ],
           "ability": "levitate"
         },
@@ -1002,13 +1035,13 @@
           "name": "purugly",
           "level": "39",
           "moves": [
-            "fake-out",
+            "growl",
             "slash",
-            "feint-attack",
-            "hypnosis"
+            "aerial-ace",
+            "u-turn"
           ],
           "ability": "thick-fat",
-          "held": "oran-berry"
+          "held": "sitrus-berry"
         }
       ]
     },
@@ -1021,9 +1054,10 @@
           "name": "zubat",
           "level": "18",
           "moves": [
-            "wing-attack",
-            "giga-drain",
-            "bite"
+            "absorb",
+            "poison-fang",
+            "supersonic",
+            "mean-look"
           ],
           "ability": "inner-focus"
         },
@@ -1031,10 +1065,10 @@
           "name": "skuntank",
           "level": "20",
           "moves": [
-            "night-slash",
+            "flamethrower",
             "poison-gas",
-            "smokescreen",
-            "screech"
+            "acid-spray",
+            "snarl"
           ],
           "ability": "stench",
           "held": "sitrus-berry"
@@ -1050,35 +1084,35 @@
           "name": "kadabra",
           "level": "35",
           "moves": [
-            "shock-wave",
-            "embargo",
-            "recover",
-            "psychic"
+            "kinesis",
+            "reflect",
+            "psychic",
+            "rain-dance"
           ],
-          "ability": "synchronize"
+          "ability": "inner-focus",
+          "held": "damp-rock"
+        },
+        {
+          "name": "bronzor",
+          "level": "35",
+          "moves": [
+            "payback",
+            "gyro-ball",
+            "confuse-ray",
+            "extrasensory"
+          ],
+          "ability": "levitate"
         },
         {
           "name": "toxicroak",
           "level": "37",
           "moves": [
             "revenge",
-            "feint-attack",
-            "mud-bomb",
-            "poison-jab"
+            "mud-slap",
+            "toxic",
+            "thief"
           ],
-          "ability": "anticipation",
-          "held": "sitrus-berry"
-        },
-        {
-          "name": "bronzor",
-          "level": "35",
-          "moves": [
-            "iron-defense",
-            "gyro-ball",
-            "rock-tomb",
-            "shadow-ball"
-          ],
-          "ability": "levitate"
+          "ability": "dry-skin"
         }
       ]
     },
@@ -1091,35 +1125,35 @@
           "name": "kadabra",
           "level": "38",
           "moves": [
-            "shock-wave",
-            "embargo",
-            "recover",
-            "psychic"
+            "kinesis",
+            "reflect",
+            "psychic",
+            "rain-dance"
           ],
-          "ability": "synchronize"
+          "ability": "inner-focus",
+          "held": "damp-rock"
+        },
+        {
+          "name": "bronzor",
+          "level": "38",
+          "moves": [
+            "extrasensory",
+            "gyro-ball",
+            "confuse-ray",
+            "payback"
+          ],
+          "ability": "levitate"
         },
         {
           "name": "toxicroak",
           "level": "40",
           "moves": [
             "brick-break",
-            "swagger",
-            "x-scissor",
-            "poison-jab"
+            "thief",
+            "toxic",
+            "mud-slap"
           ],
-          "ability": "anticipation",
-          "held": "sitrus-berry"
-        },
-        {
-          "name": "bronzor",
-          "level": "35",
-          "moves": [
-            "extrasensory",
-            "gyro-ball",
-            "confuse-ray",
-            "shadow-ball"
-          ],
-          "ability": "levitate"
+          "ability": "dry-skin"
         }
       ]
     },
@@ -1134,8 +1168,8 @@
           "moves": [
             "gyro-ball",
             "confuse-ray",
-            "extrasensory",
-            "light-screen"
+            "payback",
+            "reflect"
           ],
           "ability": "levitate"
         },
@@ -1143,8 +1177,8 @@
           "name": "golbat",
           "level": "42",
           "moves": [
-            "air-cutter",
-            "confuse-ray",
+            "haze",
+            "u-turn",
             "bite",
             "poison-fang"
           ],
@@ -1154,10 +1188,10 @@
           "name": "purugly",
           "level": "45",
           "moves": [
-            "shadow-claw",
-            "slash",
+            "dig",
+            "body-slam",
             "aerial-ace",
-            "hypnosis"
+            "u-turn"
           ],
           "ability": "thick-fat",
           "held": "sitrus-berry"
@@ -1166,21 +1200,21 @@
           "name": "bronzor",
           "level": "41",
           "moves": [
-            "gyro-ball",
-            "rock-slide",
-            "reflect",
+            "confuse-ray",
+            "payback",
+            "light-screen",
             "extrasensory"
           ],
           "ability": "levitate"
         },
         {
           "name": "golbat",
-          "level": "42",
+          "level": "41",
           "moves": [
-            "sludge-bomb",
             "air-cutter",
+            "haze",
             "giga-drain",
-            "mean-look"
+            "sludge-bomb"
           ],
           "ability": "inner-focus"
         },
@@ -1188,12 +1222,12 @@
           "name": "skuntank",
           "level": "46",
           "moves": [
-            "poison-jab",
-            "night-slash",
+            "poison-gas",
+            "belch",
             "flamethrower",
-            "smokescreen"
+            "snarl"
           ],
-          "ability": "stench",
+          "ability": "aftermath",
           "held": "sitrus-berry"
         }
       ]
@@ -1208,9 +1242,9 @@
           "level": "40",
           "moves": [
             "night-shade",
-            "astonish",
-            "embargo",
-            "drill-peck"
+            "wing-attack",
+            "taunt",
+            "assurance"
           ],
           "ability": "insomnia"
         },
@@ -1218,9 +1252,9 @@
           "name": "golbat",
           "level": "40",
           "moves": [
-            "air-cutter",
+            "screech",
             "poison-fang",
-            "supersonic",
+            "air-cutter",
             "bite"
           ],
           "ability": "inner-focus"
@@ -1229,12 +1263,12 @@
           "name": "sneasel",
           "level": "43",
           "moves": [
-            "ice-punch",
-            "slash",
-            "quick-attack",
-            "screech"
+            "metal-claw",
+            "icy-wind",
+            "hone-claws",
+            "beat-up"
           ],
-          "ability": "inner-focus",
+          "ability": "keen-eye",
           "held": "sitrus-berry"
         }
       ]
@@ -1248,46 +1282,49 @@
           "name": "honchkrow",
           "level": "45",
           "moves": [
-            "dark-pulse",
-            "embargo",
-            "drill-peck",
+            "air-cutter",
+            "defog",
+            "night-slash",
             "steel-wing"
           ],
-          "ability": "insomnia"
+          "ability": "super-luck",
+          "held": "scope-lens"
         },
         {
           "name": "gyarados",
           "level": "45",
           "moves": [
-            "aqua-tail",
-            "giga-impact",
+            "waterfall",
+            "ice-fang",
             "earthquake",
-            "ice-fang"
+            "crunch"
           ],
-          "ability": "intimidate"
+          "ability": "intimidate",
+          "held": "wacan-berry"
         },
         {
           "name": "crobat",
           "level": "46",
           "moves": [
-            "air-slash",
+            "air-cutter",
+            "tailwind",
             "cross-poison",
-            "confuse-ray",
-            "bite"
+            "u-turn"
           ],
-          "ability": "inner-focus"
+          "ability": "infiltrator",
+          "held": "quick-claw"
         },
         {
           "name": "weavile",
           "level": "48",
           "moves": [
-            "night-slash",
-            "ice-punch",
-            "brick-break",
-            "x-scissor"
+            "metal-claw",
+            "fling",
+            "dig",
+            "aerial-ace"
           ],
-          "ability": "pressure",
-          "held": "sitrus-berry"
+          "ability": "pickpocket",
+          "held": "chople-berry"
         }
       ]
     },

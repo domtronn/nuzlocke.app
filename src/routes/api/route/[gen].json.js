@@ -10,7 +10,7 @@ export async function get ({ params }) {
     body: Routes[gen],
     headers: {
       'Content-Type': 'application/json',
-      'Cache-Control': 'public, max-age=31536000',
+      'Cache-Control': 's-maxage=1, stale-while-revalidate',
     }
   }
 }
