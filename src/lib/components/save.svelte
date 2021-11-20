@@ -32,7 +32,7 @@
       alt='{name} logo'
       src=/assets/{game}
       className='hidden sm:block'
-      aspect=72x72
+      aspect=192x96
     />
 
       <div>

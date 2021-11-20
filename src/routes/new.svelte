@@ -66,7 +66,7 @@
           <Picture
             src={Games[i].logo}
             alt={Games[i].title + ' logo'}
-            aspect=42x42
+            aspect=192x96
           />
         {/if}
         {@html label}
@@ -91,7 +91,7 @@
         >
           <Picture
             src={game.logo}
-            aspect={game.aspect}
+            aspect=192x96
             alt={'Pokémon ' + game.title + ' logo'}
             className='w-24 mx-auto transition hover:grayscale-0 {(selected && selected !== id) || hoverActive ? 'grayscale' : ''} {selected === id ? 'grayscale-0' : ''} cursor-pointer'
           />

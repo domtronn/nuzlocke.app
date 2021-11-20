@@ -39,7 +39,7 @@
           src=/assets/{game?.game}
           className='hidden md:block md:mr-4'
           alt='{game?.game} logo'
-          aspect=48xauto
+          aspect=192x96
         />
         <h1 in:fade class='text-md sm:text-xl group-hover:border-black dark:group-hover:border-white border-transparent border-b-2 transition -mb-1.5 sm:mb-0'>
           {game?.name || ''}
