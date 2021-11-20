@@ -1,4 +1,7 @@
 <script context="module">
+  export const hydrate = false
+  export const router = false
+
   export function load({ error, status }) {
     const shiny = Math.round(Math.random() * 8) === 0
 
