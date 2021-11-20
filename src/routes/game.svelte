@@ -5,7 +5,7 @@
 
   import IntersectionObserver from "svelte-intersection-observer"
 
-  import { Loader } from '$lib/components/core'
+  import { Loader, Tooltip } from '$lib/components/core'
   import StarterType from '$lib/components/starter-type.svelte'
   import GymCard from '$lib/components/gym-card.svelte'
   import PokemonSelector from '$lib/components/pokemon-selector.svelte'
@@ -155,6 +155,7 @@
             </div>
 
             <div class='flex flex-row items-center gap-x-2'>
+              <Tooltip>Selecting a starter type modifies Rival encounters.</Tooltip>
               <p>Starter</p>
               <StarterType on:select={setstarter} bind:starter={starter} />
             </div>
