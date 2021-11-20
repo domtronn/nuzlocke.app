@@ -7,9 +7,7 @@
   import Pokemon from '$lib/components/pokemon-card.svelte'
   import TypeBadge from '$lib/components/type-badge.svelte'
   import Label from '$lib/components/label.svelte'
-  import Accordion from '$lib/components/core/Accordion.svelte'
-
-  import PIcon from '$lib/components/core/PokemonIcon.svelte'
+  import { Picture, PIcon, Accordion} from '$lib/components/core'
 
   let loading = true
 
@@ -91,9 +89,15 @@
     >
 
       {#if img}
-        <div class='overflow-hidden max-h-16 w-20 text-center -ml-4 hidden md:block'>
-          <img class='inline h-auto w-full' src={img} alt='Gym leader {name}' />
-        </div>
+        <span class=-mx-3>
+          <Picture
+            src={img}
+            alt={name}
+            pixelated
+            className='w-18 md:w-36'
+            aspect=72x52
+            />
+        </span>
       {/if}
 
       <span class='flex flex-col gap-y-2'>
@@ -141,7 +145,3 @@
 
   </Accordion>
 </div>
-
-<style>
-  img { image-rendering: pixelated; }
-</style>

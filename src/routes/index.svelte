@@ -48,6 +48,7 @@
     <Picture
       src=/logo
       aspect=324x62
+      pixelated
       alt='Nuzlocke logo'
       className='transition h-auto md:h-16 mt-2 mx-auto {hovering ? '' : 'grayscale'}'
     />

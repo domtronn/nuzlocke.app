@@ -3,6 +3,7 @@
     "1": {
       "name": "Roark",
       "speciality": "rock",
+      "img": "/leaders/roark",
       "pokemon": [
         {
           "name": "geodude",
@@ -39,6 +40,7 @@
     "2": {
       "name": "Gardenia",
       "speciality": "grass",
+      "img": "/leaders/gardenia",
       "pokemon": [
         {
           "name": "cherubi",
@@ -80,6 +82,7 @@
     "3": {
       "name": "Maylene",
       "speciality": "fighting",
+      "img": "/leaders/maylene",
       "pokemon": [
         {
           "name": "meditite",
@@ -122,6 +125,7 @@
     "4": {
       "name": "Crasher Wake",
       "speciality": "water",
+      "img": "/leaders/wake",
       "pokemon": [
         {
           "name": "gyarados",
@@ -164,6 +168,7 @@
     "5": {
       "name": "Fantina",
       "speciality": "ghost",
+      "img": "/leaders/fantina",
       "pokemon": [
         {
           "name": "drifblim",
@@ -206,6 +211,7 @@
     "6": {
       "name": "Byron",
       "speciality": "steel",
+      "img": "/leaders/byron",
       "pokemon": [
         {
           "name": "bronzor",
@@ -247,6 +253,7 @@
     "7": {
       "name": "Candice",
       "speciality": "ice",
+      "img": "/leaders/candice",
       "pokemon": [
         {
           "name": "snover",
@@ -301,6 +308,7 @@
     "8": {
       "name": "Volkner",
       "speciality": "electric",
+      "img": "/leaders/volkner",
       "pokemon": [
         {
           "name": "raichu",
@@ -354,6 +362,8 @@
     },
     "b1": {
       "name": "Barry",
+      "speciality": "",
+      "img": "/leaders/barry",
       "pokemon": [
         {
           "name": "starly",
@@ -398,6 +408,8 @@
     },
     "b2": {
       "name": "Barry",
+      "speciality": "",
+      "img": "/leaders/barry",
       "pokemon": [
         {
           "name": "starly",
@@ -522,6 +534,8 @@
     },
     "b3": {
       "name": "Barry",
+      "speciality": "",
+      "img": "/leaders/barry",
       "pokemon": [
         {
           "name": "starly",
@@ -646,6 +660,8 @@
     },
     "b4": {
       "name": "Barry",
+      "speciality": "",
+      "img": "/leaders/barry",
       "pokemon": [
         {
           "name": "staravia",
@@ -781,6 +797,8 @@
     },
     "b5": {
       "name": "Barry",
+      "speciality": "",
+      "img": "/leaders/barry",
       "pokemon": [
         {
           "name": "staraptor",
@@ -928,6 +946,7 @@
     "mars1": {
       "name": "Mars",
       "speciality": "",
+      "img": "/leaders/mars",
       "pokemon": [
         {
           "name": "zubat",
@@ -955,6 +974,7 @@
     "mars2": {
       "name": "Mars",
       "speciality": "",
+      "img": "/leaders/mars",
       "pokemon": [
         {
           "name": "golbat",
@@ -994,6 +1014,8 @@
     },
     "jup1": {
       "name": "Jupiter",
+      "speciality": "",
+      "img": "/leaders/jupiter",
       "pokemon": [
         {
           "name": "zubat",
@@ -1021,6 +1043,8 @@
     },
     "sat1": {
       "name": "Saturn",
+      "speciality": "",
+      "img": "/leaders/saturn",
       "pokemon": [
         {
           "name": "kadabra",
@@ -1060,6 +1084,8 @@
     },
     "sat2": {
       "name": "Saturn",
+      "speciality": "",
+      "img": "/leaders/saturn",
       "pokemon": [
         {
           "name": "kadabra",
@@ -1098,7 +1124,9 @@
       ]
     },
     "mnj": {
-      "name": "Mars & Jupter",
+      "name": "Mars & Jupiter",
+      "speciality": "",
+      "img": "/leaders/mars-jupiter",
       "pokemon": [
         {
           "name": "bronzor",
@@ -1172,6 +1200,8 @@
     },
     "cyr1": {
       "name": "Cyrus",
+      "speciality": "",
+      "img": "/leaders/cyrus",
       "pokemon": [
         {
           "name": "murkrow",
@@ -1211,6 +1241,8 @@
     },
     "cyr2": {
       "name": "Cyrus",
+      "speciality": "",
+      "img": "/leaders/cyrus",
       "pokemon": [
         {
           "name": "honchkrow",
@@ -1262,6 +1294,7 @@
     "e1": {
       "name": "Aaron",
       "speciality": "bug",
+      "img": "/leaders/aaron",
       "pokemon": [
         {
           "name": "dustox",
@@ -1328,6 +1361,7 @@
     "e2": {
       "name": "Bertha",
       "speciality": "ground",
+      "img": "/leaders/bertha",
       "pokemon": [
         {
           "name": "quagsire",
@@ -1394,6 +1428,7 @@
     "e3": {
       "name": "Flint",
       "speciality": "fire",
+      "img": "/leaders/flint",
       "pokemon": [
         {
           "name": "rapidash",
@@ -1460,6 +1495,7 @@
     "e4": {
       "name": "Lucian",
       "speciality": "psychic",
+      "img": "/leaders/lucian",
       "pokemon": [
         {
           "name": "mr-mime",
@@ -1525,6 +1561,8 @@
     },
     "c": {
       "name": "Cynthia",
+      "speciality": "",
+      "img": "/leaders/cynthia",
       "pokemon": [
         {
           "name": "spiritomb",
@@ -1605,6 +1643,7 @@
     "1": {
       "name": "Roark",
       "speciality": "rock",
+      "img": "/leaders/roark",
       "pokemon": [
         {
           "name": "geodude",
@@ -1640,6 +1679,7 @@
     "2": {
       "name": "Gardenia",
       "speciality": "grass",
+      "img": "/leaders/gardenia",
       "pokemon": [
         {
           "name": "cherubi",
@@ -1680,6 +1720,7 @@
     "3": {
       "name": "Maylene",
       "speciality": "fighting",
+      "img": "/leaders/maylene",
       "pokemon": [
         {
           "name": "meditite",
@@ -1720,6 +1761,7 @@
     "4": {
       "name": "Crasher Wake",
       "speciality": "water",
+      "img": "/leaders/wake",
       "pokemon": [
         {
           "name": "gyarados",
@@ -1760,6 +1802,7 @@
     "5": {
       "name": "Fantina",
       "speciality": "ghost",
+      "img": "/leaders/fantina",
       "pokemon": [
         {
           "name": "drifblim",
@@ -1800,6 +1843,7 @@
     "6": {
       "name": "Byron",
       "speciality": "steel",
+      "img": "/leaders/byron",
       "pokemon": [
         {
           "name": "bronzor",
@@ -1840,6 +1884,7 @@
     "7": {
       "name": "Candice",
       "speciality": "ice",
+      "img": "/leaders/candice",
       "pokemon": [
         {
           "name": "snover",
@@ -1891,6 +1936,7 @@
     "8": {
       "name": "Volkner",
       "speciality": "electric",
+      "img": "/leaders/volkner",
       "pokemon": [
         {
           "name": "raichu",
@@ -1941,6 +1987,8 @@
     },
     "b1": {
       "name": "Barry",
+      "speciality": "",
+      "img": "/leaders/barry",
       "pokemon": [
         {
           "name": "starly",
@@ -1985,6 +2033,8 @@
     },
     "b2": {
       "name": "Barry",
+      "speciality": "",
+      "img": "/leaders/barry",
       "pokemon": [
         {
           "name": "starly",
@@ -2109,6 +2159,8 @@
     },
     "b3": {
       "name": "Barry",
+      "speciality": "",
+      "img": "/leaders/barry",
       "pokemon": [
         {
           "name": "starly",
@@ -2233,6 +2285,8 @@
     },
     "b4": {
       "name": "Barry",
+      "speciality": "",
+      "img": "/leaders/barry",
       "pokemon": [
         {
           "name": "staravia",
@@ -2368,6 +2422,8 @@
     },
     "b5": {
       "name": "Barry",
+      "speciality": "",
+      "img": "/leaders/barry",
       "pokemon": [
         {
           "name": "staraptor",
@@ -2515,6 +2571,7 @@
     "mars1": {
       "name": "Mars",
       "speciality": "",
+      "img": "/leaders/mars",
       "pokemon": [
         {
           "name": "zubat",
@@ -2542,6 +2599,7 @@
     "mars2": {
       "name": "Mars",
       "speciality": "",
+      "img": "/leaders/mars",
       "pokemon": [
         {
           "name": "golbat",
@@ -2581,6 +2639,8 @@
     },
     "jup1": {
       "name": "Jupiter",
+      "speciality": "",
+      "img": "/leaders/jupiter",
       "pokemon": [
         {
           "name": "zubat",
@@ -2608,6 +2668,8 @@
     },
     "sat1": {
       "name": "Saturn",
+      "speciality": "",
+      "img": "/leaders/saturn",
       "pokemon": [
         {
           "name": "kadabra",
@@ -2647,6 +2709,8 @@
     },
     "sat2": {
       "name": "Saturn",
+      "speciality": "",
+      "img": "/leaders/saturn",
       "pokemon": [
         {
           "name": "kadabra",
@@ -2685,7 +2749,9 @@
       ]
     },
     "mnj": {
-      "name": "Mars & Jupter",
+      "name": "Mars & Jupiter",
+      "speciality": "",
+      "img": "/leaders/mars-jupiter",
       "pokemon": [
         {
           "name": "bronzor",
@@ -2759,6 +2825,8 @@
     },
     "cyr1": {
       "name": "Cyrus",
+      "speciality": "",
+      "img": "/leaders/cyrus",
       "pokemon": [
         {
           "name": "murkrow",
@@ -2798,6 +2866,8 @@
     },
     "cyr2": {
       "name": "Cyrus",
+      "speciality": "",
+      "img": "/leaders/cyrus",
       "pokemon": [
         {
           "name": "honchkrow",
@@ -2849,6 +2919,7 @@
     "e1": {
       "name": "Aaron",
       "speciality": "bug",
+      "img": "/leaders/aaron",
       "pokemon": [
         {
           "name": "dustox",
@@ -2911,6 +2982,7 @@
     "e2": {
       "name": "Bertha",
       "speciality": "ground",
+      "img": "/leaders/bertha",
       "pokemon": [
         {
           "name": "quagsire",
@@ -2973,6 +3045,7 @@
     "e3": {
       "name": "Flint",
       "speciality": "fire",
+      "img": "/leaders/flint",
       "pokemon": [
         {
           "name": "rapidash",
@@ -3035,6 +3108,7 @@
     "e4": {
       "name": "Lucian",
       "speciality": "psychic",
+      "img": "/leaders/lucian",
       "pokemon": [
         {
           "name": "mr-mime",
@@ -3096,6 +3170,8 @@
     },
     "c": {
       "name": "Cynthia",
+      "speciality": "",
+      "img": "/leaders/cynthia",
       "pokemon": [
         {
           "name": "spiritomb",
@@ -3171,6 +3247,7 @@
     "1": {
       "name": "Roxanne",
       "speciality": "rock",
+      "img": "/leaders/roxanne",
       "pokemon": [
         {
           "name": "geodude",
@@ -3210,6 +3287,7 @@
     "2": {
       "name": "Brawly",
       "speciality": "fighting",
+      "img": "/leaders/brawly",
       "pokemon": [
         {
           "name": "machop",
@@ -3250,6 +3328,7 @@
     "3": {
       "name": "Wattson",
       "speciality": "electric",
+      "img": "/leaders/wattson",
       "pokemon": [
         {
           "name": "voltorb",
@@ -3301,6 +3380,7 @@
     "4": {
       "name": "Flannery",
       "speciality": "fire",
+      "img": "/leaders/flannery",
       "pokemon": [
         {
           "name": "numel",
@@ -3352,6 +3432,7 @@
     "5": {
       "name": "Norman",
       "speciality": "normal",
+      "img": "/leaders/norman",
       "pokemon": [
         {
           "name": "spinda",
@@ -3403,6 +3484,7 @@
     "6": {
       "name": "Winona",
       "speciality": "flying",
+      "img": "/leaders/winona",
       "pokemon": [
         {
           "name": "swablu",
@@ -3465,6 +3547,7 @@
     "7": {
       "name": "Tate & Liza",
       "speciality": "psychic",
+      "img": "/leaders/tate-liza",
       "pokemon": [
         {
           "name": "claydol",
@@ -3517,6 +3600,7 @@
     "8": {
       "name": "Juan",
       "speciality": "Water",
+      "img": "/leaders/juan",
       "pokemon": [
         {
           "name": "luvdisc",
@@ -3579,6 +3663,7 @@
     "mt1": {
       "name": "Tabitha",
       "speciality": "",
+      "img": "/leaders/tabitha",
       "pokemon": [
         {
           "name": "numel",
@@ -3628,6 +3713,7 @@
     "mt2": {
       "name": "Tabitha",
       "speciality": "",
+      "img": "/leaders/tabitha",
       "pokemon": [
         {
           "name": "numel",
@@ -3677,6 +3763,8 @@
     },
     "mtmax": {
       "name": "Maxie",
+      "speciality": "",
+      "img": "/leaders/maxie",
       "pokemon": [
         {
           "name": "mightyena",
@@ -3715,6 +3803,8 @@
     },
     "mtmaxt": {
       "name": "Maxie & Tabitha",
+      "speciality": "",
+      "img": "/leaders/maxie-tabitha",
       "pokemon": [
         {
           "name": "mightyena",
@@ -3787,6 +3877,7 @@
     "as1": {
       "name": "Shelly",
       "speciality": "",
+      "img": "/leaders/shelly",
       "pokemon": [
         {
           "name": "carvanha",
@@ -3815,6 +3906,7 @@
     "as2": {
       "name": "Shelly",
       "speciality": "",
+      "img": "/leaders/shelly",
       "pokemon": [
         {
           "name": "sharpedo",
@@ -3843,6 +3935,7 @@
     "am1": {
       "name": "Matt",
       "speciality": "",
+      "img": "/leaders/matt",
       "pokemon": [
         {
           "name": "sharpedo",
@@ -3882,6 +3975,7 @@
     "aqarc": {
       "name": "Archie",
       "speciality": "",
+      "img": "/leaders/archie",
       "pokemon": [
         {
           "name": "mightyena",
@@ -3921,6 +4015,7 @@
     "w1": {
       "name": "Wally",
       "speciality": "",
+      "img": "/leaders/wally",
       "pokemon": [
         {
           "name": "ralts",
@@ -3938,6 +4033,7 @@
     "w2": {
       "name": "Wally",
       "speciality": "",
+      "img": "/leaders/wally",
       "pokemon": [
         {
           "name": "altaria",
@@ -3999,6 +4095,7 @@
     "r1": {
       "name": "May",
       "speciality": "",
+      "img": "/leaders/may",
       "pokemon": [
         {
           "name": "torchic",
@@ -4035,6 +4132,7 @@
     "r2": {
       "name": "May",
       "speciality": "",
+      "img": "/leaders/may",
       "pokemon": [
         {
           "name": "lotad",
@@ -4112,6 +4210,7 @@
     "r3": {
       "name": "May",
       "speciality": "",
+      "img": "/leaders/may",
       "pokemon": [
         {
           "name": "wingull",
@@ -4226,6 +4325,7 @@
     "r4": {
       "name": "May",
       "speciality": "",
+      "img": "/leaders/may",
       "pokemon": [
         {
           "name": "pelipper",
@@ -4340,6 +4440,7 @@
     "r5": {
       "name": "May",
       "speciality": "",
+      "img": "/leaders/may",
       "pokemon": [
         {
           "name": "tropius",
@@ -4465,6 +4566,7 @@
     "e1": {
       "name": "Sidney",
       "speciality": "dark",
+      "img": "/leaders/sidney",
       "pokemon": [
         {
           "name": "mightyena",
@@ -4527,6 +4629,7 @@
     "e2": {
       "name": "Phoebe",
       "speciality": "ghost",
+      "img": "/leaders/phoebe",
       "pokemon": [
         {
           "name": "dusclops",
@@ -4589,6 +4692,7 @@
     "e3": {
       "name": "Glacia",
       "speciality": "ice",
+      "img": "/leaders/glacia",
       "pokemon": [
         {
           "name": "sealeo",
@@ -4650,6 +4754,7 @@
     "e4": {
       "name": "Drake",
       "speciality": "dragon",
+      "img": "/leaders/drake",
       "pokemon": [
         {
           "name": "shelgon",
@@ -4712,6 +4817,7 @@
     "c1": {
       "name": "Wallace",
       "speciality": "water",
+      "img": "/leaders/wallace",
       "pokemon": [
         {
           "name": "wailord",
@@ -4785,6 +4891,7 @@
     "c2": {
       "name": "Steven",
       "speciality": "rock",
+      "img": "/leaders/steven",
       "pokemon": [
         {
           "name": "skarmory",
@@ -4860,7 +4967,7 @@
     "1": {
       "name": "Falkner",
       "speciality": "flying",
-      "img": "/leaders/falkner.webp",
+      "img": "/leaders/falkner",
       "pokemon": [
         {
           "name": "pidgey",
@@ -4886,7 +4993,7 @@
     "2": {
       "name": "Bugsy",
       "speciality": "bug",
-      "img": "/leaders/bugsy.webp",
+      "img": "/leaders/bugsy",
       "pokemon": [
         {
           "name": "scyther",
@@ -4921,7 +5028,7 @@
     "3": {
       "name": "Whitney",
       "speciality": "normal",
-      "img": "/leaders/whitney.webp",
+      "img": "/leaders/whitney",
       "pokemon": [
         {
           "name": "clefairy",
@@ -4951,7 +5058,7 @@
     "4": {
       "name": "Morty",
       "speciality": "ghost",
-      "img": "/leaders/morty.webp",
+      "img": "/leaders/morty",
       "pokemon": [
         {
           "name": "gastly",
@@ -5003,7 +5110,7 @@
     "5": {
       "name": "Chuck",
       "speciality": "fighting",
-      "img": "/leaders/chuck.webp",
+      "img": "/leaders/chuck",
       "pokemon": [
         {
           "name": "primeape",
@@ -5033,7 +5140,7 @@
     "6": {
       "name": "Jasmine",
       "speciality": "steel",
-      "img": "/leaders/jasmine.webp",
+      "img": "/leaders/jasmine",
       "pokemon": [
         {
           "name": "magnemite",
@@ -5074,7 +5181,7 @@
     "7": {
       "name": "Pryce",
       "speciality": "ice",
-      "img": "/leaders/pryce.webp",
+      "img": "/leaders/pryce",
       "pokemon": [
         {
           "name": "seel",
@@ -5115,7 +5222,7 @@
     "8": {
       "name": "Clair",
       "speciality": "dragon",
-      "img": "/leaders/clair.webp",
+      "img": "/leaders/clair",
       "pokemon": [
         {
           "name": "gyarados",
@@ -5167,6 +5274,7 @@
     "archer": {
       "name": "Executive Archer",
       "speciality": "",
+      "img": "/leaders/archer",
       "pokemon": [
         {
           "name": "houndour",
@@ -5206,6 +5314,7 @@
     "proton1": {
       "name": "Executive Proton",
       "speciality": "",
+      "img": "/leaders/proton",
       "pokemon": [
         {
           "name": "zubat",
@@ -5260,6 +5369,7 @@
     "petrel1": {
       "name": "Executive Petrel",
       "speciality": "",
+      "img": "/leaders/petrel",
       "pokemon": [
         {
           "name": "zubat",
@@ -5299,6 +5409,7 @@
     "petrel2": {
       "name": "Executive Petrel",
       "speciality": "",
+      "img": "/leaders/petrel",
       "pokemon": [
         {
           "name": "koffing",
@@ -5371,6 +5482,7 @@
     "ariana1": {
       "name": "Executive Ariana & Grunt",
       "speciality": "",
+      "img": "/leaders/ariana",
       "pokemon": [
         {
           "name": "arbok",
@@ -5432,6 +5544,7 @@
     "ariana2": {
       "name": "Executive Ariana",
       "speciality": "",
+      "img": "/leaders/ariana",
       "pokemon": [
         {
           "name": "arbok",
@@ -5471,6 +5584,7 @@
     "eusine": {
       "name": "Eusine",
       "speciality": "",
+      "img": "/leaders/eusine",
       "pokemon": [
         {
           "name": "drowzee",
@@ -5510,7 +5624,7 @@
     "r1": {
       "name": "Silver",
       "speciality": "",
-      "img": "/leaders/silver.webp",
+      "img": "/leaders/silver",
       "pokemon": [
         {
           "name": "cyndaquil",
@@ -5547,7 +5661,7 @@
     "r2": {
       "name": "Silver",
       "speciality": "",
-      "img": "/leaders/silver.webp",
+      "img": "/leaders/silver",
       "pokemon": [
         {
           "name": "gastly",
@@ -5612,7 +5726,7 @@
     "r3": {
       "name": "Silver",
       "speciality": "",
-      "img": "/leaders/silver.webp",
+      "img": "/leaders/silver",
       "pokemon": [
         {
           "name": "gastly",
@@ -5688,7 +5802,7 @@
     "r4": {
       "name": "Silver",
       "speciality": "",
-      "img": "/leaders/silver.webp",
+      "img": "/leaders/silver",
       "pokemon": [
         {
           "name": "golbat",
@@ -5775,7 +5889,7 @@
     "r5": {
       "name": "Silver",
       "speciality": "",
-      "img": "/leaders/silver.webp",
+      "img": "/leaders/silver",
       "pokemon": [
         {
           "name": "sneasel",
@@ -5874,7 +5988,7 @@
     "r6": {
       "name": "Silver",
       "speciality": "",
-      "img": "/leaders/silver.webp",
+      "img": "/leaders/silver",
       "pokemon": [
         {
           "name": "sneasel",
@@ -5972,7 +6086,7 @@
     "e1": {
       "name": "Will",
       "speciality": "psychic",
-      "img": "/leaders/will.webp",
+      "img": "/leaders/will",
       "pokemon": [
         {
           "name": "xatu",
@@ -6035,7 +6149,7 @@
     "e2": {
       "name": "Koga",
       "speciality": "poison",
-      "img": "/leaders/koga.webp",
+      "img": "/leaders/koga",
       "pokemon": [
         {
           "name": "ariados",
@@ -6099,7 +6213,7 @@
     "e3": {
       "name": "Bruno",
       "speciality": "fighting",
-      "img": "/leaders/bruno.webp",
+      "img": "/leaders/bruno",
       "pokemon": [
         {
           "name": "hitmontop",
@@ -6161,8 +6275,8 @@
     },
     "e4": {
       "name": "Karen",
-      "speciality": "Dark",
-      "img": "/leaders/karen.webp",
+      "speciality": "dark",
+      "img": "/leaders/karen",
       "pokemon": [
         {
           "name": "umbreon",
@@ -6224,8 +6338,8 @@
     },
     "c": {
       "name": "Lance",
-      "speciality": "Dragon",
-      "img": "/leaders/lance.webp",
+      "speciality": "dragon",
+      "img": "/leaders/lance",
       "pokemon": [
         {
           "name": "gyarados",
@@ -6298,7 +6412,8 @@
     },
     "k1": {
       "name": "Lt. Surge",
-      "speciality": "Electric",
+      "speciality": "electric",
+      "img": "/leaders/surge2",
       "pokemon": [
         {
           "name": "raichu",
@@ -6361,6 +6476,7 @@
     "k2": {
       "name": "Sabrina",
       "speciality": "psychic",
+      "img": "/leaders/sabrina2",
       "pokemon": [
         {
           "name": "espeon",
@@ -6401,6 +6517,7 @@
     "k3": {
       "name": "Erika",
       "speciality": "grass",
+      "img": "/leaders/erika2",
       "pokemon": [
         {
           "name": "jumpluff",
@@ -6452,6 +6569,7 @@
     "k4": {
       "name": "Janine",
       "speciality": "poison",
+      "img": "/leaders/janine",
       "pokemon": [
         {
           "name": "crobat",
@@ -6514,6 +6632,7 @@
     "k5": {
       "name": "Misty",
       "speciality": "water",
+      "img": "/leaders/misty2",
       "pokemon": [
         {
           "name": "golduck",
@@ -6565,6 +6684,7 @@
     "k6": {
       "name": "Brock",
       "speciality": "rock",
+      "img": "/leaders/brock2",
       "pokemon": [
         {
           "name": "graveler",
@@ -6627,6 +6747,7 @@
     "k7": {
       "name": "Blaine",
       "speciality": "fire",
+      "img": "/leaders/blaine2",
       "pokemon": [
         {
           "name": "magcargo",
@@ -6669,6 +6790,7 @@
     "k8": {
       "name": "Blue",
       "speciality": "",
+      "img": "/leaders/blue",
       "pokemon": [
         {
           "name": "exeggutor",
@@ -6742,6 +6864,7 @@
     "red": {
       "name": "Red",
       "speciality": "",
+      "img": "/leaders/red",
       "pokemon": [
         {
           "name": "pikachu",
@@ -6817,6 +6940,7 @@
     "1": {
       "name": "Roxanne",
       "speciality": "rock",
+      "img": "/leaders/roxanne",
       "pokemon": [
         {
           "name": "geodude",
@@ -6843,6 +6967,7 @@
     "2": {
       "name": "Brawly",
       "speciality": "fighting",
+      "img": "/leaders/brawly",
       "pokemon": [
         {
           "name": "machop",
@@ -6871,6 +6996,7 @@
     "3": {
       "name": "Wattson",
       "speciality": "electric",
+      "img": "/leaders/wattson",
       "pokemon": [
         {
           "name": "magnemite",
@@ -6907,6 +7033,7 @@
     "4": {
       "name": "Flannery",
       "speciality": "fire",
+      "img": "/leaders/flannery",
       "pokemon": [
         {
           "name": "slugma",
@@ -6946,6 +7073,7 @@
     "5": {
       "name": "Norman",
       "speciality": "normal",
+      "img": "/leaders/norman",
       "pokemon": [
         {
           "name": "slaking",
@@ -6985,6 +7113,7 @@
     "6": {
       "name": "Winona",
       "speciality": "flying",
+      "img": "/leaders/winona",
       "pokemon": [
         {
           "name": "swellow",
@@ -7035,6 +7164,7 @@
     "7": {
       "name": "Tate & Liza",
       "speciality": "psychic",
+      "img": "/leaders/tate-liza",
       "pokemon": [
         {
           "name": "lunatone",
@@ -7061,6 +7191,7 @@
     "8": {
       "name": "Wallace",
       "speciality": "Water",
+      "img": "/leaders/wallace",
       "pokemon": [
         {
           "name": "luvdisc",
@@ -7121,6 +7252,8 @@
     },
     "ruby1": {
       "name": "Tabitha & Grunt",
+      "speciality": "",
+      "img": "/leaders/tabitha",
       "pokemon": [
         {
           "name": "mightyena",
@@ -7159,6 +7292,8 @@
     },
     "saph1": {
       "name": "Shelly & Grunt",
+      "speciality": "",
+      "img": "/leaders/shelly",
       "pokemon": [
         {
           "name": "mightyena",
@@ -7197,6 +7332,8 @@
     },
     "ruby2": {
       "name": "Tabitha",
+      "speciality": "",
+      "img": "/leaders/tabitha",
       "pokemon": [
         {
           "name": "koffing",
@@ -7224,6 +7361,8 @@
     },
     "saph2": {
       "name": "Shelly",
+      "speciality": "",
+      "img": "/leaders/shelly",
       "pokemon": [
         {
           "name": "grimer",
@@ -7251,6 +7390,8 @@
     },
     "ruby3": {
       "name": "Courtney & Grunt",
+      "speciality": "",
+      "img": "/leaders/courtney",
       "pokemon": [
         {
           "name": "camerupt",
@@ -7278,6 +7419,8 @@
     },
     "saph3": {
       "name": "Matt & Grunt",
+      "speciality": "",
+      "img": "/leaders/matt",
       "pokemon": [
         {
           "name": "sharpedo",
@@ -7305,6 +7448,8 @@
     },
     "ruby4": {
       "name": "Tabitha",
+      "speciality": "",
+      "img": "/leaders/tabitha",
       "pokemon": [
         {
           "name": "camerupt",
@@ -7321,6 +7466,8 @@
     },
     "saph4": {
       "name": "Shelly",
+      "speciality": "",
+      "img": "/leaders/shelly",
       "pokemon": [
         {
           "name": "sharpedo",
@@ -7337,6 +7484,8 @@
     },
     "ruby5": {
       "name": "Courtney",
+      "speciality": "",
+      "img": "/leaders/courtney",
       "pokemon": [
         {
           "name": "camerupt",
@@ -7353,6 +7502,8 @@
     },
     "saph5": {
       "name": "Matt",
+      "speciality": "",
+      "img": "/leaders/matt",
       "pokemon": [
         {
           "name": "sharpedo",
@@ -7369,6 +7520,8 @@
     },
     "ruby6": {
       "name": "Courtney",
+      "speciality": "",
+      "img": "/leaders/courtney",
       "pokemon": [
         {
           "name": "camerupt",
@@ -7385,6 +7538,8 @@
     },
     "saph6": {
       "name": "Matt",
+      "speciality": "",
+      "img": "/leaders/matt",
       "pokemon": [
         {
           "name": "sharpedo",
@@ -7401,6 +7556,8 @@
     },
     "max1": {
       "name": "Maxie",
+      "speciality": "",
+      "img": "/leaders/maxie",
       "pokemon": [
         {
           "name": "mightyena",
@@ -7439,6 +7596,8 @@
     },
     "arc1": {
       "name": "Archie",
+      "speciality": "",
+      "img": "/leaders/archie",
       "pokemon": [
         {
           "name": "mightyena",
@@ -7477,6 +7636,8 @@
     },
     "max2": {
       "name": "Maxie",
+      "speciality": "",
+      "img": "/leaders/maxie",
       "pokemon": [
         {
           "name": "mightyena",
@@ -7527,6 +7688,8 @@
     },
     "arc2": {
       "name": "Archie",
+      "speciality": "",
+      "img": "/leaders/archie",
       "pokemon": [
         {
           "name": "mightyena",
@@ -7577,6 +7740,8 @@
     },
     "r1": {
       "name": "Rival",
+      "speciality": "",
+      "img": "/leaders/may",
       "pokemon": [
         {
           "name": "torchic",
@@ -7609,6 +7774,8 @@
     },
     "r2": {
       "name": "Rival",
+      "speciality": "",
+      "img": "/leaders/may",
       "pokemon": [
         {
           "name": "wailmer",
@@ -7722,6 +7889,8 @@
     },
     "r3": {
       "name": "Rival",
+      "speciality": "",
+      "img": "/leaders/may",
       "pokemon": [
         {
           "name": "wailmer",
@@ -7835,6 +8004,8 @@
     },
     "r4": {
       "name": "Rival",
+      "speciality": "",
+      "img": "/leaders/may",
       "pokemon": [
         {
           "name": "swellow",
@@ -7959,6 +8130,8 @@
     },
     "w1": {
       "name": "Wally",
+      "speciality": "",
+      "img": "/leaders/wally",
       "pokemon": [
         {
           "name": "ralts",
@@ -7975,6 +8148,8 @@
     },
     "w2": {
       "name": "Wally",
+      "speciality": "",
+      "img": "/leaders/wally",
       "pokemon": [
         {
           "name": "altaria",
@@ -8054,6 +8229,7 @@
     "e1": {
       "name": "Sidney",
       "speciality": "dark",
+      "img": "/leaders/sidney",
       "pokemon": [
         {
           "name": "mightyena",
@@ -8115,6 +8291,7 @@
     "e2": {
       "name": "Phoebe",
       "speciality": "ghost",
+      "img": "/leaders/phoebe",
       "pokemon": [
         {
           "name": "dusclops",
@@ -8176,6 +8353,7 @@
     "e3": {
       "name": "Glacia",
       "speciality": "ice",
+      "img": "/leaders/glacia",
       "pokemon": [
         {
           "name": "glalie",
@@ -8237,6 +8415,7 @@
     "e4": {
       "name": "Drake",
       "speciality": "dragon",
+      "img": "/leaders/drake",
       "pokemon": [
         {
           "name": "altaria",
@@ -8298,6 +8477,7 @@
     "c": {
       "name": "Steven",
       "speciality": "steel",
+      "img": "/leaders/steven",
       "pokemon": [
         {
           "name": "skarmory",
@@ -8373,7 +8553,7 @@
     "1": {
       "name": "Milo",
       "speciality": "grass",
-      "img": "/leaders/milo.webp",
+      "img": "/leaders/milo",
       "pokemon": [
         {
           "name": "gossifleur",
@@ -8400,7 +8580,7 @@
     "2": {
       "name": "Nessa",
       "speciality": "water",
-      "img": "/leaders/nessa.webp",
+      "img": "/leaders/nessa",
       "pokemon": [
         {
           "name": "goldeen",
@@ -8440,7 +8620,7 @@
     "3": {
       "name": "Kabu",
       "speciality": "fire",
-      "img": "/leaders/kabu.webp",
+      "img": "/leaders/kabu",
       "pokemon": [
         {
           "name": "ninetales",
@@ -8480,7 +8660,7 @@
     "5": {
       "name": "Opal",
       "speciality": "fairy",
-      "img": "/leaders/opal.webp",
+      "img": "/leaders/opal",
       "pokemon": [
         {
           "name": "weezing-galar",
@@ -8528,7 +8708,7 @@
     "7": {
       "name": "Piers",
       "speciality": "dark",
-      "img": "/leaders/piers.webp",
+      "img": "/leaders/piers",
       "pokemon": [
         {
           "name": "scrafty",
@@ -8579,7 +8759,7 @@
     "8": {
       "name": "Raihan",
       "speciality": "dragon",
-      "img": "/leaders/raihan.webp",
+      "img": "/leaders/raihan",
       "pokemon": [
         {
           "name": "gigalith",
@@ -8630,7 +8810,7 @@
     "rose": {
       "name": "Rose",
       "speciality": "",
-      "img": "/leaders/rose.webp",
+      "img": "/leaders/rose",
       "pokemon": [
         {
           "name": "escavalier",
@@ -8692,7 +8872,7 @@
     "oleana": {
       "name": "Oleana",
       "speciality": "",
-      "img": "/leaders/oleana.webp",
+      "img": "/leaders/oleana",
       "pokemon": [
         {
           "name": "froslass",
@@ -8754,7 +8934,7 @@
     "b1": {
       "name": "Bede",
       "speciality": "",
-      "img": "/leaders/bede.webp",
+      "img": "/leaders/bede",
       "pokemon": [
         {
           "name": "solosis",
@@ -8790,7 +8970,7 @@
     "b2": {
       "name": "Bede",
       "speciality": "",
-      "img": "/leaders/bede.webp",
+      "img": "/leaders/bede",
       "pokemon": [
         {
           "name": "solosis",
@@ -8835,7 +9015,7 @@
     "b3": {
       "name": "Bede",
       "speciality": "",
-      "img": "/leaders/bede.webp",
+      "img": "/leaders/bede",
       "pokemon": [
         {
           "name": "duosion",
@@ -8882,7 +9062,7 @@
     "m1": {
       "name": "Marnie",
       "speciality": "",
-      "img": "/leaders/marnie.webp",
+      "img": "/leaders/marnie",
       "pokemon": [
         {
           "name": "croagunk",
@@ -8920,7 +9100,7 @@
     "m2": {
       "name": "Marnie",
       "speciality": "",
-      "img": "/leaders/marnie.webp",
+      "img": "/leaders/marnie",
       "pokemon": [
         {
           "name": "liepard",
@@ -8971,7 +9151,7 @@
     "r1": {
       "name": "Hop",
       "speciality": "",
-      "img": "/leaders/hop.webp",
+      "img": "/leaders/hop",
       "pokemon": [
         {
           "name": "wooloo",
@@ -9016,7 +9196,7 @@
     "r2": {
       "name": "Hop",
       "speciality": "",
-      "img": "/leaders/hop.webp",
+      "img": "/leaders/hop",
       "pokemon": [
         {
           "name": "wooloo",
@@ -9074,7 +9254,7 @@
     "r3": {
       "name": "Hop",
       "speciality": "",
-      "img": "/leaders/hop.webp",
+      "img": "/leaders/hop",
       "pokemon": [
         {
           "name": "wooloo",
@@ -9135,7 +9315,7 @@
     "r4": {
       "name": "Hop",
       "speciality": "",
-      "img": "/leaders/hop.webp",
+      "img": "/leaders/hop",
       "pokemon": [
         {
           "name": "wooloo",
@@ -9198,7 +9378,7 @@
     "r5": {
       "name": "Hop",
       "speciality": "",
-      "img": "/leaders/hop.webp",
+      "img": "/leaders/hop",
       "pokemon": [
         {
           "name": "cramorant",
@@ -9272,7 +9452,7 @@
     "r6": {
       "name": "Hop",
       "speciality": "",
-      "img": "/leaders/hop.webp",
+      "img": "/leaders/hop",
       "pokemon": [
         {
           "name": "trevenant",
@@ -9357,7 +9537,7 @@
     "r7": {
       "name": "Hop",
       "speciality": "",
-      "img": "/leaders/hop.webp",
+      "img": "/leaders/hop",
       "pokemon": [
         {
           "name": "dubwool",
@@ -9442,6 +9622,7 @@
     "mustard1": {
       "name": "Mustard",
       "speciality": "",
+      "img": "/leaders/mustard",
       "pokemon": [
         {
           "name": "mienfoo",
@@ -9467,6 +9648,7 @@
     "mustard2": {
       "name": "Master Mustard",
       "speciality": "",
+      "img": "/leaders/mustard2",
       "pokemon": [
         {
           "name": "mienshao",
@@ -9553,6 +9735,7 @@
     "kl1": {
       "name": "Klara",
       "speciality": "poison",
+      "img": "/leaders/klara",
       "pokemon": [
         {
           "name": "venipede",
@@ -9576,6 +9759,7 @@
     "kl2": {
       "name": "Klara",
       "speciality": "poison",
+      "img": "/leaders/klara",
       "pokemon": [
         {
           "name": "slowpoke",
@@ -9609,6 +9793,7 @@
     "kl3": {
       "name": "Klara",
       "speciality": "poison",
+      "img": "/leaders/klara",
       "pokemon": [
         {
           "name": "skorupi",
@@ -9652,6 +9837,7 @@
     "av1": {
       "name": "Avery",
       "speciality": "psychic",
+      "img": "/leaders/avery",
       "pokemon": [
         {
           "name": "abra",
@@ -9675,6 +9861,7 @@
     "av2": {
       "name": "Avery",
       "speciality": "psychic",
+      "img": "/leaders/avery",
       "pokemon": [
         {
           "name": "slowpoke",
@@ -9708,6 +9895,7 @@
     "av3": {
       "name": "Avery",
       "speciality": "psychic",
+      "img": "/leaders/avery",
       "pokemon": [
         {
           "name": "ponyta-galar",
@@ -9780,7 +9968,7 @@
     "4a": {
       "name": "Bea",
       "speciality": "fighting",
-      "img": "/leaders/bea.webp",
+      "img": "/leaders/bea",
       "pokemon": [
         {
           "name": "hitmontop",
@@ -9831,7 +10019,7 @@
     "4b": {
       "name": "Allister",
       "speciality": "ghost",
-      "img": "/leaders/allister.webp",
+      "img": "/leaders/allister",
       "pokemon": [
         {
           "name": "yamask",
@@ -9881,7 +10069,7 @@
     "6a": {
       "name": "Gordie",
       "speciality": "rock",
-      "img": "/leaders/gordie.webp",
+      "img": "/leaders/gordie",
       "pokemon": [
         {
           "name": "barbaracle",
@@ -9931,7 +10119,7 @@
     "6b": {
       "name": "Melony",
       "speciality": "ice",
-      "img": "/leaders/melony.webp",
+      "img": "/leaders/melony",
       "pokemon": [
         {
           "name": "frosmoth",
@@ -9984,7 +10172,7 @@
     "e1": {
       "name": "Marnie",
       "speciality": "dark",
-      "img": "/leaders/marnie.webp",
+      "img": "/leaders/marnie",
       "pokemon": [
         {
           "name": "liepard",
@@ -10046,7 +10234,7 @@
     "e2": {
       "name": "Hop",
       "speciality": "",
-      "img": "/leaders/hop.webp",
+      "img": "/leaders/hop",
       "pokemon": [
         {
           "name": "dubwool",
@@ -10131,7 +10319,7 @@
     "e3": {
       "name": "Bede",
       "speciality": "psychic",
-      "img": "/leaders/bede.webp",
+      "img": "/leaders/bede",
       "pokemon": [
         {
           "name": "mawile",
@@ -10181,7 +10369,7 @@
     "e4": {
       "name": "Nessa",
       "speciality": "water",
-      "img": "/leaders/nessa.webp",
+      "img": "/leaders/nessa",
       "pokemon": [
         {
           "name": "golisopod",
@@ -10243,7 +10431,7 @@
     "e5a": {
       "name": "Bea",
       "speciality": "fighting",
-      "img": "/leaders/bea.webp",
+      "img": "/leaders/bea",
       "pokemon": [
         {
           "name": "hawlucha",
@@ -10304,7 +10492,7 @@
     "e5b": {
       "name": "Allister",
       "speciality": "ghost",
-      "img": "/leaders/allister.webp",
+      "img": "/leaders/allister",
       "pokemon": [
         {
           "name": "dusknoir",
@@ -10365,7 +10553,7 @@
     "e6": {
       "name": "Raihan",
       "speciality": "dragon",
-      "img": "/leaders/raihan.webp",
+      "img": "/leaders/raihan",
       "pokemon": [
         {
           "name": "torkoal",
@@ -10427,7 +10615,7 @@
     "ca": {
       "name": "Champion Leon",
       "speciality": "",
-      "img": "/leaders/leon.webp",
+      "img": "/leaders/leon",
       "pokemon": [
         {
           "name": "aegislash-shield",
