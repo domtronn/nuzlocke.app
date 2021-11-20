@@ -66,6 +66,7 @@
              on:mouseleave={toggleHover}
              href='/game'
              sveltekit:prefetch
+             rel=external
            >
             Continue
             <div class='flex flex-row group-hover:grayscale-0 grayscale items-center transition h-8 -mt-1 font-sans text-sm font-normal'>
@@ -88,6 +89,7 @@
            class='tracking-widest hover:drop-shadow-text hover:text-yellow-300'
            sveltekit:prefetch
            on:mouseenter={toggleHover} on:mouseleave={toggleHover}
+           rel=external
          >
             New Game
         </a>
@@ -95,16 +97,18 @@
         <a href="/saves"
            class='tracking-widest hover:drop-shadow-text hover:text-blue-400'
            sveltekit:prefetch
-           on:mouseenter={toggleHover} on:mouseleave={toggleHover}>
+           on:mouseenter={toggleHover} on:mouseleave={toggleHover}
+           rel=external
+         >
           Load Game
         </a>
 
-        <span>
-          <button class='tracking-widest hover:drop-shadow-text hover:text-orange-400' on:mouseenter={toggleHover} on:mouseleave={toggleHover}>
-            Settings
-          </button>
-          <!-- TODO: Rules -->
-        </span>
+        <!-- <span> -->
+        <!--   <button class='tracking-widest hover:drop-shadow-text hover:text-orange-400' on:mouseenter={toggleHover} on:mouseleave={toggleHover}> -->
+        <!--     Settings -->
+        <!--   </button> -->
+        <!--   <\!-- TODO: Rules -\-> -->
+        <!-- </span> -->
 
       </div>
 

@@ -69,7 +69,7 @@
   <p class='flex justify-center text-2xl gap-x-2 '>
     <a href="https://github.com/domtronn/dc-nuzlocke/issues/new?assignees=&labels=&template=bug_report.md&title="
        rel="noreferrer" target="_blank">
-      <button aria-label='Report bugs' title='Report bugs' class='transition-colors dark:hover:text-white hover:text-black '><Icon className='fill-current' src={GitHub} /></button>
+      <button aria-label='Report bugs' title='Report bugs' class='transition-colors dark:hover:text-white hover:text-black p-3'><Icon className='fill-current' src={GitHub} /></button>
     </a>
   </p>
 
