@@ -119,8 +119,18 @@
           <SideNav
             bind:show={show}
             on:nav={setnav}
+            on:continue={setroute(latestnav(route, gameData))}
             route={route}
-          />
+          >
+            <button
+              slot='continue'
+              class='text-sm underline inline-flex items-center -ml-6 transition-colors hover:dark:text-gray-200 hover:text-black'
+              on:click={setroute(latestnav(route, gameData))}
+            >
+              <Icon size='1.2rem' className='fill-current mr-1' src={Arrow} />
+              Continue at {latestnav(route, gameData).name}
+            </button>
+          </SideNav>
 
           <div class='flex flex-col gap-y-4 lg:gap-y-0 md:flex-row justify-between items-start mb-6'>
             <div class='flex flex-col gap-y-2'>

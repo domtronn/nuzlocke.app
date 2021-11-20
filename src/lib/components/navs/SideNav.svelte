@@ -29,9 +29,9 @@
     in:fade
     on:click={_ => show = !show}
     aria-label={show ? 'Close menu' : 'Open menu'}
-    class='h-full transition text-white sm:text-gray-600 dark:text-black md:dark:text-gray-400 md:dark:hover:text-gray-100 w-8 h-8 flex items-center justify-center rounded-full bg-gray-900 shadow-lg sm:shadow-none dark:bg-white sm:bg-transparent dark:sm:bg-transparent text-center {className}'
+    class='h-full transition text-white sm:text-gray-600 dark:text-black md:dark:text-gray-400 md:dark:hover:text-gray-100 w-11 h-11 flex items-center justify-center rounded-full bg-gray-900 shadow-lg sm:shadow-none dark:bg-white sm:bg-transparent dark:sm:bg-transparent text-center {className}'
   >
-    <Icon size='1.2rem' src={show ? X : Menu} className='fill-current' />
+    <Icon size='1.2rem' src={show ? X : Menu} className='fill-current transform scale-150 sm:transform-none' />
   </button>
 </Portal>
 
@@ -43,6 +43,20 @@
       <Icon src={X} size='1.8rem' className='-ml-2 mb-2 fill-current transition-colors hover:cursor-pointer text-gray-800 hover:text-black dark:text-gray-500 dark:hover:text-gray-200' />
     </button>
 
+    <br />
+
+    <span
+      on:click={_ => document.getElementById('svelte').scrollIntoView({ behavior: 'smooth' })}
+      class='text-sm -ml-6 -translate-x-0.5 inline-flex items-center gap-x-1 mt-2 underline transition hover:text-black dark:hover:text-gray-200 hover:cursor-pointer'
+      >
+      <Icon src={ArrowToTop} size='1.3em' className='fill-current ml-1 -mr-.5' />
+      Back to top
+    </span>
+
+    <br />
+
+    <slot name='continue' />
+
     {#each groups as group}
       <h3 class='text-lg font-light text-gray-800 dark:text-gray-200 mt-4'>{capitalise(unslugify(group))}</h3>
       {#each grouped[group] as b}
@@ -53,12 +67,5 @@
         </ul>
       {/each}
     {/each}
-
-    <span
-      on:click={_ => document.getElementById('svelte').scrollIntoView({ behavior: 'smooth' })}
-      class='text-sm inline-flex items-center gap-x-1 mt-4 underline transition hover:text-black dark:hover:text-gray-200 hover:cursor-pointer'
-      >
-      <Icon src={ArrowToTop} size='1.2em' className='fill-current' /> Back to top
-    <span>
   </div>
 {/if}
