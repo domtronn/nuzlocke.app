@@ -84,19 +84,20 @@
   }
 
   const latestnav = (routes, game) => {
-    const locations = Object
-      .values(game)
-      .filter(i => i.pokemon)
-      .map(i => i.location)
+    const locations = new Set(
+      Object
+        .values(game)
+        .filter(i => i.pokemon)
+        .map(i => i.location)
+    )
 
     let i = 0
-    while (
-      (locations.includes(routes[i].name) ||
-       routes[i].type !== 'route') &&
-        i < routes.length
-    ) { i++ }
+    while (locations.size || routes[i].type !== 'route') {
+      locations.delete(routes[i].name)
+      i++
+    }
 
-    const r = routes[i]
+    const r = routes[Math.min(i, routes.length - 1)]
     return { ...r, id: i }
   }
 
