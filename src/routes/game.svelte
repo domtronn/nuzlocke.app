@@ -123,13 +123,16 @@
 
           <div class='flex flex-col gap-y-4 lg:gap-y-0 md:flex-row justify-between items-start mb-6'>
             <div class='flex flex-col gap-y-2'>
-              <button
-                class='text-sm inline-flex items-center'
-                on:click={setroute(latestnav(route, gameData))}
-              >
-                Continue at {latestnav(route, gameData).name}
-                <Icon className='fill-current' src={Arrow} />
-              </button>
+              {#if [0, 1].includes(filter)}
+                <button
+                  transition:slide={{ duration: 250 }}
+                  class='text-sm inline-flex items-center'
+                  on:click={setroute(latestnav(route, gameData))}
+                >
+                  Continue at {latestnav(route, gameData).name}
+                  <Icon className='fill-current' src={Arrow} />
+                </button>
+              {/if}
 
               <Tabs name=filter tabs={filters} bind:selected={filter} />
 
