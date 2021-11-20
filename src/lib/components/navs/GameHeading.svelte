@@ -37,7 +37,7 @@
       {#if game?.game}
         <Picture
           src=/assets/{game?.game}
-          className='hidden md:block md:mr-4'
+          className='hidden md:block md:mr-4 w-20'
           alt='{game?.game} logo'
           aspect=192x96
         />
@@ -60,10 +60,10 @@
           class:dark:border-b-gray-200={p.link == $page.path}
           class:text-black={p.link == $page.path}
           class:cursor-default={p.link == $page.path}
-          class:sm:text-gray-500={p.link !== $page.path}
+          class:sm:text-gray-400={p.link !== $page.path}
           class:text-white={p.link !== $page.path}
           class:hover:text-black={p.link !== $page.path}
-          class:dark:hover:text-gray-200={p.link !== $page.path}
+          class:dark:hover:text-gray-100={p.link !== $page.path}
           class:cursor-pointer={p.link !== $page.path}
           href={p.link}
           >
