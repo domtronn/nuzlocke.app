@@ -9,7 +9,8 @@ const toCache = build
       .filter(i => i.includes('/logos/') || i.includes('/leaders/') || i.includes('/assets/'))
       .filter(i => i.endsWith('.png') || i.endsWith('.webp'))
   )
-  .concat('/index.html', '/', '/new', '/saves', '/game', '/box')
+      .concat('/index.html', '/', '/new', '/saves', '/game', '/box')
+      .concat('/api/pokemon/all.json', '/assets/pokemon.css', '/assets/items.css')
 
 const staticAssets = new Set(toCache)
 

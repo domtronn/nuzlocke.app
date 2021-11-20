@@ -489,6 +489,396 @@
       "name": "Mirage Mountain"
     }
   ],
+  "bdsp": [
+    {
+      "type": "route",
+      "name": "Starter"
+    },
+    {
+      "type": "route",
+      "name": "Twinleaf Town"
+    },
+    {
+      "type": "route",
+      "name": "Route 201"
+    },
+    {
+      "type": "route",
+      "name": "Lake Verity"
+    },
+    {
+      "type": "route",
+      "name": "Route 202"
+    },
+    {
+      "type": "route",
+      "name": "Route 203"
+    },
+    {
+      "type": "gym",
+      "name": "1st Rival Battle",
+      "value": "b1",
+      "group": "rival"
+    },
+    {
+      "type": "route",
+      "name": "Oreburgh Gate"
+    },
+    {
+      "type": "route",
+      "name": "Oreburgh City"
+    },
+    {
+      "type": "gym",
+      "name": "Oreburgh Gym",
+      "value": "1",
+      "group": "gym-leader"
+    },
+    {
+      "type": "route",
+      "name": "Oreburgh Mine"
+    },
+    {
+      "type": "route",
+      "name": "Route 207"
+    },
+    {
+      "type": "route",
+      "name": "Route 204"
+    },
+    {
+      "type": "route",
+      "name": "Ravaged Path"
+    },
+    {
+      "type": "route",
+      "name": "Floaroma Meadow"
+    },
+    {
+      "type": "route",
+      "name": "Route 205"
+    },
+    {
+      "type": "route",
+      "name": "Valley Windworks"
+    },
+    {
+      "type": "gym",
+      "name": "Valley Windoworks Galactic Encounter",
+      "value": "mars1",
+      "group": "evil-team"
+    },
+    {
+      "type": "route",
+      "name": "Eterna Forest"
+    },
+    {
+      "type": "route",
+      "name": "The Old Chateau"
+    },
+    {
+      "type": "route",
+      "name": "Eterna City"
+    },
+    {
+      "type": "gym",
+      "name": "Eterna Gym",
+      "value": "2",
+      "group": "gym-leader"
+    },
+    {
+      "type": "gym",
+      "name": "Eterna Building",
+      "value": "jup1",
+      "group": "evil-team"
+    },
+    {
+      "type": "route",
+      "name": "Route 206"
+    },
+    {
+      "type": "route",
+      "name": "Wayward Cave"
+    },
+    {
+      "type": "route",
+      "name": "Mt. Coronet"
+    },
+    {
+      "type": "route",
+      "name": "Route 208"
+    },
+    {
+      "type": "route",
+      "name": "Hearthome City"
+    },
+    {
+      "type": "gym",
+      "name": "2nd Rival Battle",
+      "value": "b2",
+      "group": "rival"
+    },
+    {
+      "type": "route",
+      "name": "Route 209"
+    },
+    {
+      "type": "route",
+      "name": "The Lost Tower"
+    },
+    {
+      "type": "route",
+      "name": "Solaceon Ruins"
+    },
+    {
+      "type": "route",
+      "name": "Route 210"
+    },
+    {
+      "type": "route",
+      "name": "Route 215"
+    },
+    {
+      "type": "route",
+      "name": "Veilstone City"
+    },
+    {
+      "type": "gym",
+      "name": "Veilstone Gym",
+      "value": "3",
+      "group": "gym-leader"
+    },
+    {
+      "type": "route",
+      "name": "Trophy Garden"
+    },
+    {
+      "type": "route",
+      "name": "Pastoria City"
+    },
+    {
+      "type": "route",
+      "name": "Great Marsh"
+    },
+    {
+      "type": "gym",
+      "name": "Pastoria Gym",
+      "value": "4",
+      "group": "gym-leader"
+    },
+    {
+      "type": "gym",
+      "name": "3rd Rival Battle",
+      "value": "b3",
+      "group": "rival"
+    },
+    {
+      "type": "route",
+      "name": "Route 212"
+    },
+    {
+      "type": "route",
+      "name": "Route 213"
+    },
+    {
+      "type": "route",
+      "name": "Valor Lakefront"
+    },
+    {
+      "type": "route",
+      "name": "Lake Valor"
+    },
+    {
+      "type": "route",
+      "name": "Route 214"
+    },
+    {
+      "type": "route",
+      "name": "Ruin Maniac's Cave"
+    },
+    {
+      "type": "route",
+      "name": "Ruin Maniac's Tunnel"
+    },
+    {
+      "type": "route",
+      "name": "Celestic Town"
+    },
+    {
+      "type": "gym",
+      "name": "Hearthome Gym",
+      "value": "5",
+      "group": "gym-leader"
+    },
+    {
+      "type": "route",
+      "name": "Fuego Ironworks"
+    },
+    {
+      "type": "route",
+      "name": "Routes 219"
+    },
+    {
+      "type": "route",
+      "name": "Route 220"
+    },
+    {
+      "type": "route",
+      "name": "Route 221"
+    },
+    {
+      "type": "route",
+      "name": "Route 218"
+    },
+    {
+      "type": "gym",
+      "name": "4th Rival Battle",
+      "value": "b4",
+      "group": "rival"
+    },
+    {
+      "type": "route",
+      "name": "Canalave City"
+    },
+    {
+      "type": "route",
+      "name": "Iron Island"
+    },
+    {
+      "type": "gym",
+      "name": "Canalave Gym",
+      "value": "6",
+      "group": "gym-leader"
+    },
+    {
+      "type": "route",
+      "name": "Route 211"
+    },
+    {
+      "type": "gym",
+      "name": "Valor Cavern",
+      "value": "sat1",
+      "group": "evil-team"
+    },
+    {
+      "type": "gym",
+      "name": "Lake Verity",
+      "value": "mars2",
+      "group": "evil-team"
+    },
+    {
+      "type": "route",
+      "name": "Route 216"
+    },
+    {
+      "type": "route",
+      "name": "Route 217"
+    },
+    {
+      "type": "route",
+      "name": "Acuity Lakefront"
+    },
+    {
+      "type": "route",
+      "name": "Lake Acuity"
+    },
+    {
+      "type": "route",
+      "name": "Snowpoint Temple"
+    },
+    {
+      "type": "gym",
+      "name": "Snowpoint Gym",
+      "value": "7",
+      "group": "gym-leader"
+    },
+    {
+      "type": "gym",
+      "name": "Galactic HQ",
+      "value": "cyr1",
+      "group": "evil-team"
+    },
+    {
+      "type": "gym",
+      "name": "Galactic HQ",
+      "value": "sat2",
+      "group": "evil-team"
+    },
+    {
+      "type": "gym",
+      "name": "Spear Pillar",
+      "value": "mnj",
+      "group": "evil-team"
+    },
+    {
+      "type": "gym",
+      "name": "Spear Pillar",
+      "value": "cyr2",
+      "group": "evil-team"
+    },
+    {
+      "type": "route",
+      "name": "Route 222"
+    },
+    {
+      "type": "route",
+      "name": "Sunyshore City"
+    },
+    {
+      "type": "gym",
+      "name": "Sunyshore Gym",
+      "value": "8",
+      "group": "gym-leader"
+    },
+    {
+      "type": "route",
+      "name": "Route 223"
+    },
+    {
+      "type": "route",
+      "name": "Pokémon League"
+    },
+    {
+      "type": "gym",
+      "name": "Final Rival Battle",
+      "value": "b5",
+      "group": "rival"
+    },
+    {
+      "type": "route",
+      "name": "Victory Road"
+    },
+    {
+      "type": "gym",
+      "name": "Elite Four",
+      "value": "e1",
+      "group": "elite-four"
+    },
+    {
+      "type": "gym",
+      "name": "Elite Four",
+      "value": "e2",
+      "group": "elite-four"
+    },
+    {
+      "type": "gym",
+      "name": "Elite Four",
+      "value": "e3",
+      "group": "elite-four"
+    },
+    {
+      "type": "gym",
+      "name": "Elite Four",
+      "value": "e4",
+      "group": "elite-four"
+    },
+    {
+      "type": "gym",
+      "name": "Champion",
+      "value": "c",
+      "group": "elite-four"
+    }
+  ],
   "dp": [
     {
       "type": "route",
