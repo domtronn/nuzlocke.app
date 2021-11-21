@@ -50,7 +50,7 @@
       aspect=324x62
       pixelated
       alt='Nuzlocke logo'
-      className='transition h-auto md:h-16 mt-2 mx-auto {hovering ? '' : 'grayscale'}'
+      className='transition h-auto md:h-16 mt-2 mx-auto {hovering ? '' : 'md:grayscale'}'
     />
     <h1 class='font-mono text-4xl'>tracker</h1>
   </span>
@@ -69,7 +69,7 @@
              rel=external
            >
             Continue
-            <div class='flex flex-row group-hover:grayscale-0 grayscale items-center transition h-8 -mt-1 font-sans text-sm font-normal'>
+            <div class='flex flex-row group-hover:grayscale-0 md:grayscale items-center transition h-8 -mt-1 font-sans text-sm font-normal'>
               <Picture
                 src=/assets/{active.game}
                 alt='{active.game} logo'
@@ -114,10 +114,10 @@
 
       <div class='img__container h-full -mx-12 relative'>
         {#if !flip}
-          <img alt='Pokemon #{id}' class:grayscale={!hovering} src={src} out:fly={{ y: distance, duration }} in:fly={{ y: -distance, duration }} class='absolute transition right-0 w-full -my-2 md:-my-12 -ml-12' />
+          <img alt='Pokemon #{id}' class:md:grayscale={!hovering} src={src} out:fly={{ y: distance, duration }} in:fly={{ y: -distance, duration }} class='absolute transition right-0 w-full -my-2 md:-my-12 -ml-12' />
         {/if}
         {#if flip}
-          <img alt='Pokemon #{id}' class:grayscale={!hovering} src={src} out:fly={{ y: distance, duration }} in:fly={{ y: -distance, duration }} class='absolute transition right-0 grayscale w-full -my-2 md:-my-12 -ml-12' />
+          <img alt='Pokemon #{id}' class:md:grayscale={!hovering} src={src} out:fly={{ y: distance, duration }} in:fly={{ y: -distance, duration }} class='absolute transition right-0 w-full -my-2 md:-my-12 -ml-12' />
         {/if}
       </div>
     </PixelatedContainer>
