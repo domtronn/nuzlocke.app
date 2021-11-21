@@ -33,7 +33,6 @@
             .filter(p => ids.includes(p.num) || ids.includes(p.name) || ids.includes(p.alias))
             .reduce((acc, it) => ({ ...acc, [it.alias]: it }), {})),
   })
-
 </script>
 
 <style global lang="postcss">
@@ -56,13 +55,12 @@
   footer button { @apply transition-colors dark:hover:text-white hover:text-black; }
   footer button { @apply p-3 }
   footer > p + a { @apply underline p-0; }
-
 </style>
 
 <svelte:head>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://raw.githubusercontent.com" crossorigin>
-  {#if dev && !browser}
+  {#if !dev && browser}
     <script async defer data-website-id="dae73bab-b128-46a6-93e1-46ebc3da783c" src="https://nuzlocke-analytics.vercel.app/umami.js"></script>
   {/if}
 </svelte:head>
