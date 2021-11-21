@@ -9,7 +9,7 @@
 
   import '../app.css'
   import { setContext } from 'svelte'
-  import { browser } from '$app/env'
+  import { browser, dev } from '$app/env'
 
   import { GameHeading, NavHeading, CookieBanner } from '$lib/components/navs'
 
@@ -61,6 +61,10 @@
 
 <svelte:head>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://raw.githubusercontent.com" crossorigin>
+  {#if dev && !browser}
+    <script async defer data-website-id="dae73bab-b128-46a6-93e1-46ebc3da783c" src="https://nuzlocke-analytics.vercel.app/umami.js"></script>
+  {/if}
 </svelte:head>
 
 {#if ['/game', '/box'].includes(path) }
