@@ -28,9 +28,9 @@
 </nav>
 
 <style>
-  nav {
-    @apply container mx-auto mb-8 md:mb-2 py-4 -mb-16 dark:sm:text-gray-200 sm:text-black sm:bg-transparent;
-  }
+  nav { @apply container mx-auto mb-8 md:mb-2 py-4 -mb-16 sm:text-black sm:bg-transparent; }
+
+  :global(.dark) nav { @apply text-gray-200; }
 
   a {
     @apply border-b-2 ml-4 pb-1 border-b-transparent transition hover:border-b-current;
