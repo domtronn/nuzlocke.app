@@ -1,0 +1,71 @@
+.pkb-wrapper {
+	width: 32px;
+	height: 30px;
+	line-height: 28px;
+	text-align: center;
+	display: inline-block;
+	vertical-align: middle;
+	padding: 1px;
+}
+
+/* Gen 1 */
+.pkb-pewter  { width: 14px; height: 14px; background-position: -2px -3px; }
+.pkb-cascade { width: 11px; height: 14px; background-position: -20px -3px; }
+.pkb-thunder { width: 16px; height: 16px; background-position: -35px -2px; }
+.pkb-rainbow { width: 16px; height: 16px; background-position: -52px -2px; }
+.pkb-soul    { width: 14px; height: 14px; background-position: -70px -3px; }
+.pkb-marsh   { width: 14px; height: 14px; background-position: -87px -3px; }
+.pkb-volcano { width: 13px; height: 16px; background-position: -104px -2px; }
+.pkb-earth   { width: 16px; height: 16px; background-position: -120px -2px; }
+
+/* Gen 2 */
+.pkb-zephyr  { width: 16px; height: 16px; background-position: -1px -19px; }
+.pkb-hive    { width: 16px; height: 16px; background-position: -18px -19px; }
+.pkb-plain   { width: 16px; height: 16px; background-position: -35px -19px; }
+.pkb-fog     { width: 16px; height: 16px; background-position: -52px -19px; }
+.pkb-storm   { width: 16px; height: 16px; background-position: -69px -20px; }
+.pkb-mineral { width: 16px; height: 16px; background-position: -86px -19px; }
+.pkb-glacier { width: 16px; height: 16px; background-position: -103px -19px; }
+.pkb-rising  { width: 16px; height: 16px; background-position: -120px -19px; }
+
+/* Gen 3 */
+.pkb-stone   { width: 16px; height: 16px; background-position: -1px -36px; }
+.pkb-knuckle { width: 16px; height: 16px; background-position: -18px -36px; }
+.pkb-dynamo  { width: 16px; height: 16px; background-position: -35px -36px; }
+.pkb-heat    { width: 16px; height: 16px; background-position: -52px -36px; }
+.pkb-balance { width: 16px; height: 16px; background-position: -69px -36px; }
+.pkb-feather { width: 16px; height: 16px; background-position: -86px -36px; }
+.pkb-mind    { width: 16px; height: 16px; background-position: -103px -36px; }
+.pkb-rain    { width: 16px; height: 16px; background-position: -120px -36px; }
+
+/* Gen 4 */
+.pkb-coal   { width: 16px; height: 16px; background-position: -1px -53px; }
+.pkb-forest { width: 16px; height: 16px; background-position: -18px -53px; }
+.pkb-cobble { width: 16px; height: 16px; background-position: -35px -53px; }
+.pkb-fen    { width: 16px; height: 16px; background-position: -52px -53px; }
+.pkb-relic  { width: 16px; height: 16px; background-position: -69px -53px; }
+.pkb-mine   { width: 16px; height: 16px; background-position: -86px -53px; }
+.pkb-icicle { width: 16px; height: 16px; background-position: -103px -53px; }
+.pkb-beacon { width: 16px; height: 16px; background-position: -120px -53px; }
+
+/* Gen 5 */
+.pkb-trio   { width: 16px; height: 16px; background-position: -1px -87px; }
+.pkb-basic  { width: 16px; height: 16px; background-position: -18px -87px; }
+.pkb-insect { width: 16px; height: 16px; background-position: -35px -87px; }
+.pkb-bolt   { width: 16px; height: 16px; background-position: -52px -87px; }
+.pkb-quake  { width: 16px; height: 16px; background-position: -69px -87px; }
+.pkb-jet    { width: 16px; height: 16px; background-position: -86px -87px; }
+.pkb-freeze { width: 16px; height: 16px; background-position: -103px -87px; }
+.pkb-legend { width: 16px; height: 16px; background-position: -120px -87px; }
+.pkb-toxic  { width: 16px; height: 16px; background-position: -103px -70px; }
+.pkb-wave   { width: 16px; height: 16px; background-position: -120px -70px; }
+
+/* Gen 6 */
+.pkb-bug     { width: 16px; height: 16px; background-position: -1px -104px; }
+.pkb-cliff   { width: 16px; height: 16px; background-position: -18px -104px; }
+.pkb-rumble  { width: 16px; height: 16px; background-position: -35px -104px; }
+.pkb-plant   { width: 16px; height: 16px; background-position: -52px -104px; }
+.pkb-voltage { width: 16px; height: 16px; background-position: -69px -104px; }
+.pkb-fairy   { width: 16px; height: 16px; background-position: -86px -104px; }
+.pkb-psychic { width: 16px; height: 16px; background-position: -103px -104px; }
+.pkb-iceberg { width: 16px; height: 16px; background-position: -120px -104px; }
