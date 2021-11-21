@@ -8,5 +8,4 @@ export { default as Tabs } from './Tabs.svelte'
 export { default as Loader } from './Loader'
 
 export { default as PIcon } from './PokemonIcon.svelte'
-export { default as ParticleIcon } from './ParticleIcon.svelte'
 export { default as Picture } from './Picture.svelte'
