@@ -1,5 +1,5 @@
 import { pick } from 'ramda'
-import Pokemon from './index.js'
+import Pokemon from './_data.js'
 
 const props = ['evos', 'types', 'name', 'sprite', 'label', 'alias', 'imgId', 'baseStats']
 const items = Object

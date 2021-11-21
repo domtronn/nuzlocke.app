@@ -1,5 +1,5 @@
 import Clean from 'clean-css'
-import badges from './badges.css'
+import badges from './_badges.css'
 
 const clean = new Clean()
 const minifiedBadges = clean.minify(badges).styles
