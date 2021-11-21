@@ -20,7 +20,7 @@
   const fetchData = async () => {
     if (!browser) return
     if (data) return data
-    const res = await fetch('/api/pokemon/all.json')
+    const res = await fetch('/api/pokemon.json')
     data = await res.json()
     return data
   }
