@@ -49,6 +49,14 @@
     src: url(https://fonts.gstatic.com/s/vt323/v12/pxiKyp0ihIEF2isfFJXUdVNF.woff2) format('woff2');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
   }
+
+  footer { @apply text-center w-full absolute bottom-0 my-8 sm:my-10 px-4 text-tiny md:text-xs text-gray-500 dark:text-gray-400 leading-3; }
+  footer > p { @apply flex justify-center text-2xl gap-x-2; }
+  footer a,
+  footer button { @apply transition-colors dark:hover:text-white hover:text-black; }
+  footer button { @apply p-3 }
+  footer > p + a { @apply underline p-0; }
+
 </style>
 
 <svelte:head>
@@ -65,15 +73,17 @@
 
 <CookieBanner />
 
-<footer class='text-center w-full absolute bottom-0 my-8 sm:my-10 px-4 text-tiny md:text-xs text-gray-500 dark:text-gray-400 leading-3'>
-  <p class='flex justify-center text-2xl gap-x-2 '>
+<footer>
+  <p >
     <a href="https://github.com/domtronn/dc-nuzlocke/issues/new?assignees=&labels=&template=bug_report.md&title="
-       rel="noreferrer" target="_blank">
-      <button aria-label='Report bugs' title='Report bugs' class='transition-colors dark:hover:text-white hover:text-black p-3'><Icon className='fill-current' src={GitHub} /></button>
+       rel=noreferrer target=_blank>
+      <button aria-label='Report bugs' title='Report bugs'>
+        <Icon className='fill-current' src={GitHub} />
+      </button>
     </a>
   </p>
 
-  All content & design © Pokémon Nuzlocke Tracker, 2021-{(new Date()).getFullYear()}. <a class='underline transition dark:hover:text-gray-400 hover:text-gray-200' href='/privacy-policy'>Privacy Policy</a>.
+  All content & design © Pokémon Nuzlocke Tracker, 2021-{(new Date()).getFullYear()}. <a href='/privacy-policy'>Privacy Policy</a>.
   <br class='hidden md:block' />
   Pokémon images & names © 1995-2021 Nintendo/Creatures Inc./GAME FREAK inc. TM
 </footer>

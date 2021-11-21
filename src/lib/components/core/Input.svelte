@@ -10,7 +10,7 @@
   type=text
   bind:value={value}
   class:rounded-lg={rounded}
-  class='text-xxs sm:text-xs w-full transition-colors border-2 ring-2 ring-transparent placeholder-gray-400 dark:placeholder-gray-500 text-gray-800 dark:text-gray-100 shadow-sm focus:outline-none px-3 h-10 {color} {className}'
+  class='{color} {className}'
 />
 
 <style>
@@ -28,11 +28,14 @@
   .orange { --inp-focus: theme('colors.orange.400'); --inp-focus-2: theme('colors.orange.200'); }
 
   input {
+    /* @apply  sm:text-xs */
+    @apply text-xxs sm:text-xs w-full transition-colors border-2 ring-2 ring-transparent text-gray-800 placeholder-gray-400 shadow-sm focus:outline-none px-3 h-10;
     background-color: var(--input-bg);
     border-color: theme('colors.gray.200');
   }
 
   :global(.dark) input {
+    @apply text-gray-100 placeholder-gray-500;
     border-color: theme('colors.gray.600');
   }
 

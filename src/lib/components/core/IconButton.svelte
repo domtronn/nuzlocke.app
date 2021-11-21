@@ -13,12 +13,14 @@
   disabled={disabled}
   aria-label={title}
   title={title}
-  on:click={onclick}
+  on:click|stopPropagation={onclick}
   class:disabled={disabled}
   class:rounded-lg={rounded}
-  class='{color} {containerClassName} group flex items-center border-2 ring-2 ring-transparent transition shadow-sm'
+  class='group {color} {containerClassName} '
 >
-  {#if src}
+  {#if $$slots.icon}
+    <slot name=icon />
+  {:else if src}
     <Icon className='fill-current m-2 grayscale group-hover:grayscale-0 {className}' src={src} />
   {:else if name}
     <PIcon className='transition grayscale group-hover:grayscale-0 opacity-50 group-hover:opacity-100 {className}' name={name} type='item' />
@@ -50,6 +52,17 @@
     --icb-bg: theme('colors.orange.700');
   }
 
+  .yellow {
+    --icb-hover: theme('colors.yellow.400');
+    --icb-active: theme('colors.yellow.400');
+    --icb-bg: theme('colors.yellow.200');
+  }
+
+  :global(.dark) .yellow {
+    --icb-active: theme('colors.yellow.300');
+    --icb-bg: theme('colors.yellow.700');
+  }
+
   .green {
     --icb-hover: theme('colors.green.400');
     --icb-active: theme('colors.green.500');
@@ -69,6 +82,7 @@
 
   button,
   button.disabled {
+    @apply flex items-center border-2 ring-2 ring-transparent transition shadow-sm;
     background-color: var(--input-bg);
     border-color: theme('colors.gray.200');
     color: theme('colors.gray.400');

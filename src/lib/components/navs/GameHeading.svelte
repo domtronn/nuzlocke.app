@@ -28,12 +28,12 @@
   <title> Nuzlocke | {game?.name || ''} </title>
 </svelte:head>
 
-<nav class='container mx-auto mb-8 md:mb-2 bg-black text-white dark:sm:text-gray-200 sm:text-black sm:bg-transparent'>
-  <div class="w-full sm:w-2/3 md:w-3/4 sm:px-4 md:px-8 mx-auto flex justify-between">
+<nav>
+  <div class=p-container>
     <a
       href="/"
       rel="external"
-      class='{className} inline-flex items-center pt-4 ml-4 -mt-4 md:mt-0 md:-ml-2 group h-12'>
+      class='{className} home group'>
       {#if game?.game}
         <Picture
           src=/assets/{game?.game}
@@ -41,7 +41,7 @@
           alt='{game?.game} logo'
           aspect=192x96
         />
-        <h1 in:fade class='text-md sm:text-xl group-hover:border-black dark:group-hover:border-white border-transparent border-b-2 transition -mb-1.5 sm:mb-0'>
+        <h1 in:fade class='group-hover:border-black dark:group-hover:border-white'>
           {game?.name || ''}
         </h1>
       {/if}
@@ -52,19 +52,8 @@
 
       {#each pages as p}
         <a
-          class='inline-flex items-center gap-x-1 border-black transition p-2 px-3 md:p-4 text-sm md:text-base'
-          class:border-b-2={p.link == $page.path}
-          class:bg-gray-50={p.link == $page.path}
-          class:dark:bg-gray-900={p.link == $page.path}
-          class:dark:text-gray-200={p.link == $page.path}
-          class:dark:border-b-gray-200={p.link == $page.path}
-          class:text-black={p.link == $page.path}
-          class:cursor-default={p.link == $page.path}
-          class:sm:text-gray-400={p.link !== $page.path}
-          class:text-white={p.link !== $page.path}
-          class:hover:text-black={p.link !== $page.path}
-          class:dark:hover:text-gray-100={p.link !== $page.path}
-          class:cursor-pointer={p.link !== $page.path}
+          class=link
+          class:active={p.link == $page.path}
           href={p.link}
           >
           <Icon src={p.icon} className='fill-current' />
@@ -72,8 +61,34 @@
         </a>
       {/each}
 
-      <span class='z-50 md:z-10 bottom-4 right-4 fixed md:absolute md:right-0 md:bottom-auto md:top-1/2 md:-translate-y-1/2 md:translate-x-full flex items-center justify-center' id='sidenav_button' />
+      <span id='sidenav_button' />
 
     </span>
   </div>
 </nav>
+
+
+<style>
+  nav {
+    @apply container mx-auto mb-8 md:mb-2 bg-black text-white sm:text-black sm:bg-transparent;
+  }
+
+  :global(.dark) nav {
+    @apply sm:text-gray-200;
+  }
+
+  h1 { @apply text-base sm:text-xl border-transparent border-b-2 transition -mb-1.5 sm:mb-0; }
+
+  a.home { @apply inline-flex items-center pt-4 ml-4 -mt-4 md:mt-0 md:-ml-2 h-12; }
+  a.link { @apply inline-flex items-center gap-x-1 border-black transition p-2 px-3 md:p-4 text-sm md:text-base; }
+
+  a.link.active { @apply border-b-2 bg-gray-50 text-black cursor-default; }
+  a.link:not(.active) { @apply sm:text-gray-500 hover:text-black  cursor-pointer; }
+
+  :global(.dark) a.link:not(.active) { @apply hover:text-gray-100 text-gray-400; }
+  :global(.dark) a.link.active { @apply hover:text-gray-100 text-gray-50 bg-gray-900 border-b-gray-200; }
+
+  #sidenav_button {
+    @apply z-50 md:z-10 bottom-4 right-4 fixed md:absolute md:right-0 md:bottom-auto md:top-1/2 md:-translate-y-1/2 md:translate-x-full flex items-center justify-center;
+  }
+</style>

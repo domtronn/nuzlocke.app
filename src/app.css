@@ -9,6 +9,12 @@
 
 .pkm { background-image: url(/assets/pokemon.webp) !important; }
 .pkitem { background-image: url(/assets/items.webp) !important; }
+.pkb {
+  background-image: url('/assets/badges.webp') !important;
+  display: inline-block;
+  vertical-align: middle;
+  image-rendering: pixelated;
+}
 
 .pkm-wrapper {
   width: 67px;
@@ -80,4 +86,16 @@
   50% { width: 5px; height: 5px; bottom: -5px; z-index: 10 }
   75% { width: 2px; height: 2px }
   100% { width: 5px; height: 5px; bottom: 100% }
+}
+
+body {
+  @apply bg-transparent transition-colors dark:text-gray-200 dark:bg-gray-800 relative min-h-screen;
+}
+
+:global(.dark) body {
+  @apply text-gray-200 bg-gray-800 ;
+}
+
+.p-container {
+  @apply w-full sm:w-2/3 md:w-3/4 sm:px-4 md:px-8 mx-auto flex justify-between;
 }

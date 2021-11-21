@@ -31,7 +31,7 @@
 
 <span
   out:fade
-  class='absolute flex items-center justify-center {className}'
+  class='absolute flex items-center justify-center pointer-events-none {className}'
   style='left: {x}px; top: {y}px; transform: rotate({tiltTheta}rad) scale({scale});'
   >
   <slot />

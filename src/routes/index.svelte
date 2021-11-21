@@ -42,7 +42,7 @@
   $: src = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png`
 </script>
 
-<main class='container mx-auto h-screen -mt-16 flex flex-col justify-center'>
+<main>
   <span class='mx-auto text-center'>
     <h1 class='font-mono text-4xl'>Pokémon</h1>
     <Picture
@@ -55,8 +55,8 @@
     <h1 class='font-mono text-4xl'>tracker</h1>
   </span>
 
-  <div class='py-7 px-6 sm:px-4 overflow-hidden mt-10'>
-    <PixelatedContainer className='font-mono relative max-h-48 max-w-md mx-auto flex sm:flex-row justify-evenly items-center gap-y-2 text-3xl py-8 h-full w-auto'>
+  <div>
+    <PixelatedContainer className=container__index>
 
       <div class='font-bold flex flex-col'>
 
@@ -126,6 +126,13 @@
 </main>
 
 <style>
+  main { @apply container mx-auto h-screen -mt-16 flex flex-col justify-center; }
+  main > div { @apply py-7 px-6 sm:px-4 overflow-hidden mt-10; }
+
+  :global(.container__index) {
+    @apply font-mono relative max-h-48 max-w-md mx-auto flex sm:flex-row justify-evenly items-center gap-y-2 text-3xl py-8 h-full w-auto;
+  }
+
   .img__container {
     width: theme('spacing.32');
   }

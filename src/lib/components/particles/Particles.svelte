@@ -6,7 +6,7 @@
   import Particle from './Particle.svelte'
   import PIcon from '$lib/components/core/PokemonIcon.svelte'
 
-  export let amount = 15, gravity = 3.2, decay = 0.974, timeout = 1200, icons = [], className = ''
+  export let amount = 15, gravity = 3.2, decay = 0.974, timeout = 1200, icons = [], className = '', type = 'item'
 
   const dispatch = createEventDispatcher()
   const particles = [...Array(amount)]
@@ -29,8 +29,8 @@
 
 {#if show}
   {#each particles as p}
-    <Particle v={p.v} scale={p.scale} theta={p.theta} g={gravity} decay={decay} className={className}>
-      <PIcon name={p.icon} type='item' />
+    <Particle {...p} g={gravity} decay={decay} className={className}>
+      <PIcon name={p.icon} {type} />
     </Particle>
   {/each}
 {/if}

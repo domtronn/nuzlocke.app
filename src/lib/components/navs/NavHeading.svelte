@@ -9,15 +9,15 @@
 </script>
 
 
-<nav class='container mx-auto mb-8 md:mb-2 py-4 -mb-16 dark:sm:text-gray-200 sm:text-black sm:bg-transparent'>
-  <div class="w-full sm:w-2/3 md:w-3/4 sm:px-4 md:px-8 mx-auto flex items-center justify-between">
+<nav>
+  <div class=p-container>
     {#if $page.path !== '/'}
       <a
-        href="/"
-        rel="external"
-        aria-label="Home"
-        class='border-b-2 ml-4 pb-1 border-b-transparent transition hover:border-b-current'>
-        <Icon src={Home} size='1.4rem' className='fill-current' />
+        href=/
+        rel=external
+        aria-label=Home
+        >
+        <Icon src={Home} size=1.4rem className='fill-current' />
       </a>
     {:else}
       <span />
@@ -26,3 +26,14 @@
     <ThemeToggle />
   </div>
 </nav>
+
+<style>
+  nav {
+    @apply container mx-auto mb-8 md:mb-2 py-4 -mb-16 dark:sm:text-gray-200 sm:text-black sm:bg-transparent;
+  }
+
+  a {
+    @apply border-b-2 ml-4 pb-1 border-b-transparent transition hover:border-b-current;
+  }
+
+</style>

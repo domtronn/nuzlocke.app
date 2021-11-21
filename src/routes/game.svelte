@@ -108,7 +108,7 @@
 {#await setup()}
   <Loader />
 {:then route}
-  <div out:fade={{ duration: 250 }} in:fade={{ duration: 250, delay: 300 }} class="container mx-auto pb-8">
+  <div out:fade={{ duration: 250 }} in:fade={{ duration: 250, delay: 300 }} class="container mx-auto pb-8 overflow-hidden">
     <div class="flex flex-row flex-wrap pb-16 justify-center">
       <Modal
         closeButton={false}
