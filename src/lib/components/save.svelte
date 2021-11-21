@@ -31,7 +31,7 @@
     <Picture
       alt='{name} logo'
       src=/assets/{game}
-      className='hidden sm:block'
+      className='hidden sm:block w-32'
       aspect=192x96
     />
 
