@@ -23,7 +23,7 @@
       <span />
     {/if}
 
-    <ThemeToggle />
+    <ThemeToggle className=mt-2 />
   </div>
 </nav>
 

@@ -76,7 +76,7 @@
 <CookieBanner />
 
 <footer>
-  <p >
+  <p>
     <a href="https://github.com/domtronn/dc-nuzlocke/issues/new?assignees=&labels=&template=bug_report.md&title="
        rel=noreferrer target=_blank>
       <button aria-label='Report bugs' title='Report bugs'>

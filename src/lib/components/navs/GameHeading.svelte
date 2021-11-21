@@ -48,7 +48,7 @@
     </a>
 
     <span class='inline-flex relative'>
-      <ThemeToggle className='-mt-4 -translate-x-full' />
+      <ThemeToggle />
 
       {#each pages as p}
         <a
