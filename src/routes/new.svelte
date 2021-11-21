@@ -35,7 +35,7 @@
     .concat(['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII'])
     .map((l, i) => ({ label: i === 0 ? l : `Gen ${l}`, val: l }))
 
-  $: trackClass = `umami--submit--${selected}`
+  $: trackClass = `umami--click--submit-${selected}`
   $: selectedGame = validGames[selected]
   $: disabled = !gameName.length || !selected
 </script>
