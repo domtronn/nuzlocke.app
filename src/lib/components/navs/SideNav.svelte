@@ -29,7 +29,7 @@
     in:fade
     on:click={_ => show = !show}
     aria-label={show ? 'Close menu' : 'Open menu'}
-    class='h-full transition text-white sm:text-gray-600 dark:text-black md:dark:text-gray-400 md:dark:hover:text-gray-100 w-11 h-11 flex items-center justify-center rounded-full bg-gray-900 shadow-lg sm:shadow-none dark:bg-white sm:bg-transparent dark:sm:bg-transparent text-center {className}'
+    class='umami--click--sidenav-{show ? 'close' : 'open'} h-full transition text-white sm:text-gray-600 dark:text-black md:dark:text-gray-400 md:dark:hover:text-gray-100 w-11 h-11 flex items-center justify-center rounded-full bg-gray-900 shadow-lg sm:shadow-none dark:bg-white sm:bg-transparent dark:sm:bg-transparent text-center {className}'
   >
     <Icon size='1.2rem' src={show ? X : Menu} className='fill-current transform scale-150 sm:transform-none' />
   </button>
@@ -40,14 +40,14 @@
       class='fixed bg-gray-50 z-30 dark:bg-gray-900 border-l border-gray-200 dark:border-black h-full top-1/2 right-0 -translate-y-1/2 px-8 py-4 overflow-y-scroll text-gray-600 dark:text-gray-400 {className}'
   >
     <button on:click={_ => show = !show}>
-      <Icon src={X} size='1.8rem' className='-ml-2 mb-2 fill-current transition-colors hover:cursor-pointer text-gray-800 hover:text-black dark:text-gray-500 dark:hover:text-gray-200' />
+      <Icon src={X} size='umami--click--sidenav-close 1.8rem' className='-ml-2 mb-2 fill-current transition-colors hover:cursor-pointer text-gray-800 hover:text-black dark:text-gray-500 dark:hover:text-gray-200' />
     </button>
 
     <br />
 
     <span
       on:click={_ => document.getElementById('svelte').scrollIntoView({ behavior: 'smooth' })}
-      class='text-sm -ml-6 -translate-x-0.5 inline-flex items-center gap-x-1 mt-2 underline transition hover:text-black dark:hover:text-gray-200 hover:cursor-pointer'
+      class='umami--click--back-to-top text-sm -ml-6 -translate-x-0.5 inline-flex items-center gap-x-1 mt-2 underline transition hover:text-black dark:hover:text-gray-200 hover:cursor-pointer'
       >
       <Icon src={ArrowToTop} size='1.3em' className='fill-current ml-1 -mr-.5' />
       Back to top

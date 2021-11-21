@@ -35,6 +35,7 @@
     .concat(['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII'])
     .map((l, i) => ({ label: i === 0 ? l : `Gen ${l}`, val: l }))
 
+  $: trackClass = `umami--submit--${selected}`
   $: selectedGame = validGames[selected]
   $: disabled = !gameName.length || !selected
 </script>
@@ -74,7 +75,7 @@
       </div>
     </AutoComplete>
 
-    <Button rounded disabled={disabled} on:click={handleNewGame}>
+    <Button rounded disabled={disabled} className={trackClass} on:click={handleNewGame}>
       Create game
     </Button>
   </div>

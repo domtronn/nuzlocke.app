@@ -70,6 +70,7 @@
             <IconButton
               rounded
               src={X}
+              track=clear-filters
               title='Clear filters'
               containerClassName='sm:row-span-2 flex flex-col order-last sm:order-none items-center justify-center'
               disabled={!enabled}

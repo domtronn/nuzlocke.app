@@ -15,6 +15,6 @@
   }
 </script>
 
-<button class='px-2' aria-label={$theme === 'dark' ? 'Light mode' : 'Dark mode'} on:click={toggleTheme}>
+<button class='px-2 umami--click--toggle-{$theme}' aria-label={$theme === 'dark' ? 'Light mode' : 'Dark mode'} on:click={toggleTheme}>
   <Icon size='1.2em' className='dark:text-gray-200 fill-current' src={DarkMode} />
 </button>

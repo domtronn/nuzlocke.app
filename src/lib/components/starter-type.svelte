@@ -20,7 +20,7 @@
 
 {#each starters as s, i}
   <label
-    class='flex w-6 h-6 p-1 items-center justify-center rounded-full cursor-pointer transition border-2'
+    class='flex w-6 h-6 p-1 items-center justify-center rounded-full cursor-pointer transition border-2 umami--click--starter-{s.name}'
     class:opacity-50={starter !== s.name}
     class:hover:opacity-75={starter !== s.name}
     class:opacity-100={starter === s.name}

@@ -124,7 +124,7 @@
           >
             <button
               slot='continue'
-              class='text-sm underline inline-flex items-center -ml-6 transition-colors dark:hover:text-gray-200 hover:text-black'
+              class='umami--click--continue text-sm underline inline-flex items-center -ml-6 transition-colors dark:hover:text-gray-200 hover:text-black'
               on:click={setroute(latestnav(route, gameData))}
             >
               <Icon size='1.2rem' className='fill-current mr-1' src={Arrow} />
@@ -137,7 +137,7 @@
               {#if [0, 1].includes(filter)}
                 <button
                   transition:slide={{ duration: 250 }}
-                  class='text-sm inline-flex items-center'
+                  class='umami--click--continue text-sm inline-flex items-center'
                   on:click={setroute(latestnav(route, gameData))}
                 >
                   Continue at {latestnav(route, gameData).name}
