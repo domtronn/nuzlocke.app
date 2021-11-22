@@ -39,8 +39,8 @@
   <div transition:fly={{ x: 250, opacity: 1 }}
       class='fixed bg-gray-50 z-30 dark:bg-gray-900 border-l border-gray-200 dark:border-black h-full top-1/2 right-0 -translate-y-1/2 px-8 py-4 overflow-y-scroll text-gray-600 dark:text-gray-400 {className}'
   >
-    <button on:click={_ => show = !show}>
-      <Icon src={X} size='umami--click--sidenav-close 1.8rem' className='-ml-2 mb-2 fill-current transition-colors hover:cursor-pointer text-gray-800 hover:text-black dark:text-gray-500 dark:hover:text-gray-200' />
+    <button on:click={_ => show = !show} class=umami--click--sidenav-close >
+      <Icon src={X} size='1.8rem' className='-ml-2 mb-2 fill-current transition-colors hover:cursor-pointer text-gray-800 hover:text-black dark:text-gray-500 dark:hover:text-gray-200' />
     </button>
 
     <br />
