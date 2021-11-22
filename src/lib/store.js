@@ -64,6 +64,17 @@ export const getGame = (id) => createWritable(
   {}
 )
 
+export const getBox = (cb = () => {}) => activeGame.subscribe(gameId => {
+  if (browser && !gameId) return window.location = '/'
+
+  getGame(gameId).subscribe(read(data => {
+    cb(Object
+      .values(data)
+      .filter(i => i.pokemon)
+       .filter(({ status }) => status !== 5 && status !== 4))
+  }))
+})
+
 export const patch = (payload) => (data) => JSON.stringify({
   ...JSON.parse(data),
   ...payload

@@ -9,7 +9,7 @@
   import { Loader, IconButton } from '$lib/components/core'
   import TypeBadge from '$lib/components/type-badge.svelte'
 
-  import { activeGame, getGame, read } from '$lib/store'
+  import { activeGame, getGame, getBox, read } from '$lib/store'
   import { types } from '$lib/data/types'
   import { stats, StatIconMap } from '$lib/data/stats'
 
@@ -20,21 +20,13 @@
 
   let loading = true
   let ogbox = [], box = [], Pokemon = {}
-  activeGame.subscribe(gameId => {
-    if (browser && !gameId) return window.location = '/'
-
-    getGame(gameId).subscribe(read(data => {
-      ogbox = box = Object
-        .values(data)
-        .filter(i => i.pokemon)
-        .filter(({ status }) => status !== 5 && status !== 4)
-
-      getPkmns(box.map(i => i.pokemon))
-        .then(data => {
-          Pokemon = data
-          loading = false
-        })
-    }))
+  getBox(b => {
+    ogbox = box = b
+    getPkmns(box.map(i => i.pokemon))
+      .then(data => {
+        Pokemon = data
+        loading = false
+      })
   })
 
   let type = ''
@@ -57,6 +49,8 @@
 
   $: enabled = box.length && (stat || type)
 </script>
+
+{JSON.stringify(box)}
 
 {#if loading}
   <Loader />
