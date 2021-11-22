@@ -18,7 +18,7 @@
   aria-label='Open accordion'
   aria-expanded={isOpen}
   on:click={toggle}
-  class='inline-flex items-center w-full cursor-pointer umami--click--open-accordion'
+  class='inline-flex items-center w-full cursor-pointer umami--accordion--{isOpen ? 'close' : 'open'}}'
 >
   <span class='mr-2 md:mr-4'>
     <Icon src={Chevron} className='text-base md:text-xl {iconClassName}' />

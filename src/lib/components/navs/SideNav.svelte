@@ -29,7 +29,7 @@
     in:fade
     on:click={_ => show = !show}
     aria-label={show ? 'Close menu' : 'Open menu'}
-    class='umami--click--sidenav-{show ? 'close' : 'open'} h-full transition text-white sm:text-gray-600 dark:text-black md:dark:text-gray-400 md:dark:hover:text-gray-100 w-11 h-11 flex items-center justify-center rounded-full bg-gray-900 shadow-lg sm:shadow-none dark:bg-white sm:bg-transparent dark:sm:bg-transparent text-center {className}'
+    class='umami--sidenav--{show ? 'close' : 'open'} h-full transition text-white sm:text-gray-600 dark:text-black md:dark:text-gray-400 md:dark:hover:text-gray-100 w-11 h-11 flex items-center justify-center rounded-full bg-gray-900 shadow-lg sm:shadow-none dark:bg-white sm:bg-transparent dark:sm:bg-transparent text-center {className}'
   >
     <Icon size='1.2rem' src={show ? X : Menu} className='fill-current transform scale-150 sm:transform-none' />
   </button>
@@ -39,7 +39,7 @@
   <div transition:fly={{ x: 250, opacity: 1 }}
       class='fixed bg-gray-50 z-30 dark:bg-gray-900 border-l border-gray-200 dark:border-black h-full top-1/2 right-0 -translate-y-1/2 px-8 py-4 overflow-y-scroll text-gray-600 dark:text-gray-400 {className}'
   >
-    <button on:click={_ => show = !show} class=umami--click--sidenav-close >
+    <button on:click={_ => show = !show} class=umami--sideanv--close >
       <Icon src={X} size='1.8rem' className='-ml-2 mb-2 fill-current transition-colors hover:cursor-pointer text-gray-800 hover:text-black dark:text-gray-500 dark:hover:text-gray-200' />
     </button>
 
