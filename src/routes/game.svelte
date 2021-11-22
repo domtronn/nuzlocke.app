@@ -9,6 +9,7 @@
   import StarterType from '$lib/components/starter-type.svelte'
   import GymCard from '$lib/components/gym-card.svelte'
   import PokemonSelector from '$lib/components/pokemon-selector.svelte'
+  import ProgressBar from '$lib/components/ProgressBar.svelte'
 
   import Tabs from '$lib/components/core/Tabs.svelte'
   import SideNav from '$lib/components/navs/SideNav.svelte'
@@ -132,6 +133,16 @@
             </button>
           </SideNav>
 
+          <span class='absolute top-6 left-0 z-50 text-center w-full mx-auto'>
+            <ProgressBar
+              segments={
+              route
+              .filter(r => r.type === 'gym')
+              .map(({ value, group }) => ({ type: group, value: gameData[value]?.value || false }))
+              }
+              />
+          </span>
+
           <div class='flex flex-col gap-y-4 lg:gap-y-0 md:flex-row justify-between items-start mb-6'>
             <div class='flex flex-col gap-y-2'>
               {#if [0, 1].includes(filter)}
@@ -175,8 +186,15 @@
                 {/if}
               {:else if p.type === 'gym' && [0, 2].includes(filter) && (filter === 0 || bossFilter === 'all' || bossFilter === p.group)}
                 <li class='-mb-4 md:my-2' id='boss-{i}' transition:fade>
-                  <GymCard game={gameKey} starter={starter} id={p.value} location={p.name} />
-                </li >
+                  <GymCard
+                    game={gameKey}
+                    store={gameStore}
+                    starter={starter}
+                    id={p.value}
+                    location={p.name}
+                    type={p.group}
+                  />
+                </li>
               {/if}
 
               {#if i === limit -5}

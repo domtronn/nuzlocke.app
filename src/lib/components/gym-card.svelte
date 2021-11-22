@@ -1,15 +1,25 @@
 <script>
-  export let game, id, location = '', starter = ''
+  export let game, id, location = '', starter = '', type = '', store
   let pokemon = [], name = '', speciality = '', img
 
   import { browser } from '$app/env'
+  import { patch } from '$lib/store'
 
   import Pokemon from '$lib/components/pokemon-card.svelte'
   import TypeBadge from '$lib/components/type-badge.svelte'
   import Label from '$lib/components/label.svelte'
-  import { Picture, PIcon, Accordion} from '$lib/components/core'
+  import { Picture, PIcon, IconButton, ParticleIcon, Accordion} from '$lib/components/core'
+
+  import Icon from 'svelte-icons-pack'
+  import BiTrophy from 'svelte-icons-pack/bi/BiTrophy'
 
   let loading = true
+
+  const oncomplete = _ => {
+    store.update(patch({
+      [id]: { type, value: true }
+    }))
+  }
 
   const fetchData = async (starter) => {
     if (!browser) return
@@ -133,6 +143,16 @@
           </span>
 
           <Label heading='Lvl cap' body={levelCap} />
+
+          <IconButton on:click={oncomplete} rounded color=yellow containerClassName='my-2 z-40'>
+            <ParticleIcon
+              slot=icon
+              icons={['electric-gem', 'relic-gold', 'relic-silver', 'nugget', 'gold-leaf', 'gold-bottle-cap']}
+            >
+              <Icon className='fill-current m-2' size='1.2em' src={BiTrophy} />
+            </ParticleIcon>
+          </IconButton>
+
         {/if}
       </div>
     </span>
