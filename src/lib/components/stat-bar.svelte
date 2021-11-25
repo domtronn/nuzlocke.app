@@ -1,5 +1,5 @@
 <script>
-  export let max, stat, val, mod = 1
+  export let max, stat, val, mod = 1, className = ''
 
   import Icon from 'svelte-icons-pack'
   import Priority from 'svelte-icons-pack/bi/BiSolidChevronUp'
@@ -14,7 +14,7 @@
 </script>
 
 <span
-  class='col-span-2 flex justify-end items-center sm:col-span-2 text-xs text-right'
+  class='col-span-2 flex justify-end items-center sm:col-span-2 text-xs text-right {className}'
   class:pos={mod > 1}
   class:neg={mod < 1}
 >
@@ -24,8 +24,8 @@
     {stat}
 </span>
 
-<span class='{c} col-span-3 sm:col-span-1 -ml-1 font-bold text-xs text-right'>{val}</span>
-<div style='width: {100 * val / max}%' class='{c} col-span-5 sm:col-span-4 h-2 rounded-md ring-2' />
+<span class='{c} {className} transition col-span-3 sm:col-span-1 -ml-1 font-bold text-xs text-right'>{val}</span>
+<div style='width: {100 * val / max}%' class='{c} {className} transition col-span-5 sm:col-span-4 h-2 rounded-md ring-2' />
 
 <style>
 

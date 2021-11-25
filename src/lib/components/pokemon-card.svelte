@@ -89,7 +89,11 @@
     {/if}
 
     <div class={moves && moves.length ? 'w-2/5 sm:w-1/3 mr-4 sm:mt-0 mt-5' : 'w-full m-4'}>
-      <StatBlock nature={nature} col={cols[0]} max={maxStat} {...stats} />
+      {#if $$slots.stats}
+        <slot name='stats' />
+      {:else}
+        <StatBlock nature={nature} max={maxStat} {...stats} />
+      {/if}
     </div>
   </div>
   <slot name="footer" />

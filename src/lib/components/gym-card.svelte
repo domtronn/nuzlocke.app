@@ -3,11 +3,20 @@
   let pokemon = [], name = '', speciality = '', img
 
   import { browser } from '$app/env'
+  import { getContext } from 'svelte'
 
   import Pokemon from '$lib/components/pokemon-card.svelte'
   import TypeBadge from '$lib/components/type-badge.svelte'
   import Label from '$lib/components/label.svelte'
   import { Picture, PIcon, Accordion} from '$lib/components/core'
+
+  import Icon from 'svelte-icons-pack'
+  import Badge from 'svelte-icons-pack/fi/FiRefreshCcw'
+  import Ball from 'svelte-icons-pack/cg/CgPokemon'
+
+  import CompareModal from '$lib/components/CompareModal.svelte'
+
+  const { open } = getContext('simple-modal')
 
   let loading = true
 
@@ -139,7 +148,16 @@
 
     <div slot='item' class='grid lg:grid-cols-2 md:grid-cols-2 mt-8 md:gap-x-2 lg:gap-x-6 gap-y-10'>
       {#each pokemon as p, i (p.name + i)}
-        <Pokemon {...p} maxStat={maxStat} />
+        <Pokemon {...p} maxStat={maxStat}>
+          <button class='opacity-25 mx-8 -mt-4 mb-2 z-50' slot=footer on:click={_ => open(CompareModal, { pokemon: p })} >
+            <span class='absolute w-8 h-8'>
+              <Icon className='absolute' size=1.4em src={Badge} />
+              <Icon className='absolute dark:bg-gray-800 bg-white rounded-full -top-0.5 right-1.5' size=0.8em src={Ball} />
+              <Icon className='absolute dark:bg-gray-800 bg-white rounded-full bottom-2 -left-0.5' size=0.8em src={Ball} />
+            </span>
+            <span class=ml-8>Compare</span>
+          </button>
+        </Pokemon>
       {/each}
     </div>
 
