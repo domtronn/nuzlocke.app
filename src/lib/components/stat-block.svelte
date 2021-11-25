@@ -1,5 +1,5 @@
 <script>
-  export let max, atk, def, spd, spa, spe, hp, col = '', nature = []
+  export let max, atk, def, spd, spa, spe, hp, col = '', nature = [], compare
 
   import StatBar from '$lib/components/stat-bar.svelte'
   import NaturesMap from '$lib/data/natures'
@@ -7,7 +7,6 @@
   const [pos, neg] = NaturesMap[nature] || []
   const stats = { hp, atk, def, spa, spd, spe }
   const total = Object.values(stats).reduce((acc, it) => acc + it, 0)
-
 </script>
 
 <div style='--t-col: {col}' class='grid grid-cols-11 sm:grid-cols-7 gap-x-2 gap-y-1 items-center'>
@@ -16,7 +15,9 @@
   </span>
 
   {#each Object.entries(stats) as [s, sval]}
-    <StatBar mod={s === pos ? 1.1 : s === neg ? 0.9 : 1} stat={s} val={sval} max={max} />
+    <StatBar
+      className={compare && sval <= compare[s] ? 'grayscale opacity-25' : ''}
+      mod={s === pos ? 1.1 : s === neg ? 0.9 : 1} stat={s} val={sval} max={max} />
   {/each}
 </div>
 

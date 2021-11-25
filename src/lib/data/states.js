@@ -1,4 +1,4 @@
-import Ball from 'svelte-icons-pack/bi/BiTennisBall'
+import Ball from 'svelte-icons-pack/cg/CgPokemon'
 import Gift from 'svelte-icons-pack/bi/BiSolidGift'
 import Traded from 'svelte-icons-pack/cg/CgArrowsExchange'
 import Missed from 'svelte-icons-pack/ri/RiWeatherWindyLine'
