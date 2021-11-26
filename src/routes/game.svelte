@@ -112,7 +112,7 @@
     <div class="flex flex-row flex-wrap pb-16 justify-center">
       <Modal
         closeButton={false}
-        styleBg={{ background: 'rgba(0, 0, 0, 0.8)' }}
+        styleBg={{ background: 'rgba(0, 0, 0, 0.8)', zIndex: 9999 }}
         styleWindow={{ background: 'transparent !important' }}
         styleContent={{ padding: '0 !important' }}
       >
