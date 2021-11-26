@@ -74,5 +74,5 @@
 {/if}
 
 <style>
-  section { z-index: 999; }
+  section { z-index: 10000; }
 </style>
