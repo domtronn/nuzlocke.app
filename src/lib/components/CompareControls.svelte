@@ -49,7 +49,7 @@
       class:opacity-50={value !== (page * pageSize) + i}
       class:grayscale={value !== (page * pageSize) + i}
       class:scale-150={value === (page * pageSize) + i}
-      class='transform transition hover:grayscale-0 hover:scale-150 cursor-pointer'
+      class='transform transition hover:grayscale-0 hover:scale-150 origin-center cursor-pointer'
       on:click={e => value = (page * pageSize) + i}>
       <PIcon name={select(p)} />
     </div>
