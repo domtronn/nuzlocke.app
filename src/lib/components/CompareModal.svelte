@@ -17,6 +17,8 @@
   import { PIcon } from '$lib/components/core'
   import StatBlock from '$lib/components/stat-block.svelte'
 
+  import Portal from 'svelte-portal/src/Portal.svelte'
+
   import { capitalise } from '$lib/utils/string'
 
   const { getPkmn } = getContext('game')
@@ -42,6 +44,22 @@
 
 <section class='dark:bg-gray-800 bg-white dark:text-gray-200 px-6 md:px-32 py-6 md:py-10 rounded-lg flex flex-col overflow-x-hidden'>
   {#if available.length}
+    <Portal target='#compare_button' hidden>
+      {#if i !== available.length - 1}
+        <button on:click={inc} class='right umami--click--next-compare'>
+          <PIcon className='-m-2 -ml-8 md:-m-5 -mr-3' name={available[i + 1].pokemon} />
+          <Icon size=1.6em src={Arrow} className='fill-current -mr-2 md:ml-2 mt-0.5' />
+        </button>
+      {/if}
+      {#if i !== 0}
+        <button on:click={dec} class='left umami--click--prev-compare'>
+          <Icon size=1.6em src={Arrow} className='fill-current transform rotate-180 -ml-2 md:mr-2 mt-0.5' />
+          <PIcon className='-m-2 -mr-6 md:-m-5 -ml-3' name={available[i - 1].pokemon} />
+        </button>
+      {/if}
+    </Portal>
+
+
     <div class='text-center mb-4 md:mb-8'>
       <h2 class='text-xl font-bold -ml-6'>
         Compare
@@ -56,19 +74,6 @@
 
     <div class='flex flex-col flex-col-reverse md:flex-col'>
       <div class='md:relative z-50 mt-6 md:mt-0 md:mb-6'>
-        {#if i !== available.length - 1}
-          <button on:click={inc} class='right umami--click--next-compare'>
-            <PIcon className='-m-2 -ml-8 md:-m-5 -mr-3' name={available[i + 1].pokemon} />
-            <Icon size=1.6em src={Arrow} className='fill-current -mr-2 md:ml-2 mt-0.5' />
-          </button>
-        {/if}
-        {#if i !== 0}
-          <button on:click={dec} class='left umami--click--prev-compare'>
-            <Icon size=1.6em src={Arrow} className='fill-current transform rotate-180 -ml-2 md:mr-2 mt-0.5' />
-            <PIcon className='-m-2 -mr-6 md:-m-5 -ml-3' name={available[i - 1].pokemon} />
-          </button>
-        {/if}
-
         {#each [available[i]] as p (p)}
           <PokemonCard
             {...p}
@@ -91,11 +96,11 @@
   section { min-width: 100%; }
 
   button {
-    @apply fixed bg-white z-50 bottom-0 my-6 px-5 rounded-full border shadow-md flex flex-row items-center hover:border-indigo-200 hover:bg-gray-900 transition
+    @apply fixed bg-white z-50 bottom-0 my-6 px-5 rounded-full border shadow-md flex flex-row items-center md:hover:border-indigo-200 md:hover:bg-gray-900 transition
   }
 
   :global(.dark) button {
-    @apply bg-gray-800 border-2 border-gray-300 text-gray-200 hover:border-indigo-700 hover:text-indigo-800 hover:bg-gray-900;
+    @apply bg-gray-800 border-2 border-gray-300 text-gray-200 md:hover:border-indigo-700 md:hover:text-indigo-800 md:hover:bg-gray-900;
   }
 
   button.right {
