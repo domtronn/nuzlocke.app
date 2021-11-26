@@ -149,13 +149,20 @@
     <div slot='item' class='grid lg:grid-cols-2 md:grid-cols-2 mt-8 md:gap-x-2 lg:gap-x-6 gap-y-10'>
       {#each pokemon as p, i (p.name + i)}
         <Pokemon {...p} maxStat={maxStat}>
-          <button class='umami--click--compare opacity-25 hover:opacity-75 transition mx-8 -mt-4 mb-2 z-50' slot=footer on:click={_ => open(CompareModal, { pokemon: p })} >
+          <button
+            class:mt-0={p.moves.length < 3}
+            class='umami--click--compare opacity-25 hover:opacity-75 transition mx-8 -mt-4 mb-2 z-50'
+            slot=footer
+            on:click={_ => open(CompareModal, { pokemon: p })}
+          >
             <span class='absolute w-8 h-8 -mb-2 transform md:scale-75'>
               <Icon className='absolute' size=1.4em src={Badge} />
               <Icon className='absolute dark:bg-gray-800 bg-white rounded-full -top-0.5 right-1.5' size=0.8em src={Ball} />
               <Icon className='absolute dark:bg-gray-800 bg-white rounded-full bottom-2 -left-0.5' size=0.8em src={Ball} />
             </span>
-            <span class='ml-8 md:ml-6 md:text-xs'>Compare</span>
+            <span class='ml-8 md:ml-6 md:text-xs'>
+              Compare
+            </span>
           </button>
         </Pokemon>
       {/each}

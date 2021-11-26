@@ -1,5 +1,5 @@
 <script>
-  export let max, atk, def, spd, spa, spe, hp, col = '', nature = [], compare
+  export let max, atk, def, spd, spa, spe, hp, col = '', nature = [], compare, side = 'right'
 
   import StatBar from '$lib/components/stat-bar.svelte'
   import NaturesMap from '$lib/data/natures'
@@ -10,7 +10,7 @@
 </script>
 
 <div style='--t-col: {col}' class='grid grid-cols-11 sm:grid-cols-7 gap-x-2 gap-y-1 items-center'>
-  <span class='absolute top-0 -translate-y-1/2 -translate-x-1/2 right-2'>
+  <span class='z-40 absolute top-0 -translate-y-1/2 {side === 'right' ? '-' : ''}translate-x-1/2 {side}-2'>
     <b class='py-1 -ml-2 pl-2 pr-2.5'>{total}</b>
   </span>
 
