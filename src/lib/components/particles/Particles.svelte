@@ -29,7 +29,7 @@
 
 {#if show}
   {#each particles as p}
-    <Particle {...p} g={gravity} decay={decay} className={className}>
+    <Particle {...p} g={gravity} decay={decay} {className}>
       <PIcon name={p.icon} {type} />
     </Particle>
   {/each}

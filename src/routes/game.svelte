@@ -92,8 +92,8 @@
     )
 
     let i = 0
-    while (locations.size || routes[i].type !== 'route') {
-      locations.delete(routes[i].name)
+    while (i < routes.length && (locations.size || routes[i].type !== 'route')) {
+      locations.delete(routes[i]?.name)
       i++
     }
 
