@@ -1,5 +1,5 @@
 <script>
-  export let pokemon = []
+  export let pokemon = [], id = 0
 
   import { browser } from '$app/env'
 
@@ -39,8 +39,8 @@
     }))
   })
 
-  let i = 0, j = 0
-  $: i = 0, j = 0
+  let i = 0, j = id
+  $: i = 0, j = id
   $: compare = [box[i], gym[j]]
 
   const select = p => p?.sprite
@@ -51,7 +51,7 @@
     <CompareCard className=mt-12 pokemon={compare} />
     <div class='flex rounded-xl py-2 flex-col gap-y-4 sm:gap-y-0 sm:gap-x-2 mt-2 sm:mt-0'>
       <CompareControls title='Your team' className=flex-1 bind:value={i} list={box} {select} />
-      <CompareControls title='Gym team' className=flex-1 bind:value={j} list={gym} {select} />
+      <CompareControls title='Gym team' pageSize={6} controls={false} className=flex-1 bind:value={j} list={gym} {select} />
     </div>
   {/if}
 </section>

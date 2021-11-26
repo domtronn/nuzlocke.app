@@ -1,5 +1,5 @@
 <script>
-  export let value, list, pageSize = 5, select = i => i, className = '', title = ''
+  export let value, list, pageSize = 5, select = i => i, className = '', title = '', controls = true
 
   import { PIcon } from '$lib/components/core'
   import Icon from 'svelte-icons-pack'
@@ -37,10 +37,12 @@
   class:justify-start={page === max}
   class:justify-between={page < max && page > 0}
 >
-  <button disabled={page === 0} class='disabled:opacity-25 block' on:click={dec}>
+  <button class:hidden={!controls} disabled={page === 0} class='disabled:opacity-25 block' on:click={dec}>
     <Icon className='fill-current transform rotate-180' src={Arrow} />
   </button>
-  <div class='grid -my-2 grid-cols-5 gap-x-2'>
+  <div
+    class='grid -my-2 gap-x-2'
+    style='grid-template-columns: repeat({pageSize}, minmax(0, 1fr));'>
     {#each pages[page] as p, i (p)}
     <div
       in:fade={{ duration: 300, delay: 50 }}
@@ -53,7 +55,7 @@
     </div>
   {/each}
   </div>
-  <button disabled={page === max} class=disabled:opacity-25 on:click={inc}>
+  <button class:hidden={!controls} disabled={page === max} class=disabled:opacity-25 on:click={inc}>
     <Icon className=fill-current src={Arrow} />
   </button>
 </div>
