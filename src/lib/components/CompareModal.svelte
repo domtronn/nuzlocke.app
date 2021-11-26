@@ -54,8 +54,8 @@
       <h3 class='text-base font-medium'>{available[i].name} vs {capitalise(pokemon.name)}</h3>
     </div>
 
-    <div class='flex flex-col flex-col-reverse md:flex-col gap-y-4'>
-      <div class='md:relative z-50'>
+    <div class='flex flex-col flex-col-reverse md:flex-col'>
+      <div class='md:relative z-50 mt-6 md:mt-0 md:mb-6'>
         {#if i !== available.length - 1}
           <button on:click={inc} class='right umami--click--next-compare'>
             <PIcon className='-m-2 -ml-8 md:-m-5 -mr-3' name={available[i + 1].pokemon} />
@@ -78,8 +78,8 @@
             <StatBlock col={ColorMap[p.types[0]]} slot=stats max=250 compare={pokemon.stats} {...p.baseStats} />
           </PokemonCard>
         {/each}
-
       </div>
+
       <PokemonCard {...pokemon} level={''} maxStat=250 moves={[]}>
         <StatBlock slot=stats max=250 col={ColorMap[pokemon.types[0]]} {...pokemon.stats} compare={available[i].baseStats} />
       </PokemonCard>
