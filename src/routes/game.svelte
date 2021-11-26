@@ -120,13 +120,15 @@
           <SideNav
             bind:show={show}
             on:nav={setnav}
-            on:continue={setroute(latestnav(route, gameData))}
             route={route}
           >
             <button
               slot='continue'
               class='umami--click--continue text-sm underline inline-flex items-center -ml-6 transition-colors dark:hover:text-gray-200 hover:text-black'
-              on:click={setroute(latestnav(route, gameData))}
+              on:click={_ => {
+                show = !show
+                setroute(latestnav(route, gameData))()
+              }}
             >
               <Icon size='1.2rem' className='fill-current mr-1' src={Arrow} />
               Continue at {latestnav(route, gameData).name}

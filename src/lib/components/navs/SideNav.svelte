@@ -46,9 +46,12 @@
     <br />
 
     <span
-      on:click={_ => document.getElementById('svelte').scrollIntoView({ behavior: 'smooth' })}
+      on:click={_ => {
+        document.getElementById('svelte').scrollIntoView({ behavior: 'smooth' })
+        show = !show
+      }}
       class='umami--click--back-to-top text-sm -ml-6 -translate-x-0.5 inline-flex items-center gap-x-1 mt-2 underline transition hover:text-black dark:hover:text-gray-200 hover:cursor-pointer'
-      >
+    >
       <Icon src={ArrowToTop} size='1.3em' className='fill-current ml-1 -mr-.5' />
       Back to top
     </span>
