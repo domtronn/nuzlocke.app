@@ -1,5 +1,5 @@
 <script>
-  export let pokemon
+  export let pokemon = []
 
   import { browser } from '$app/env'
 
@@ -13,56 +13,46 @@
   import Arrow from 'svelte-icons-pack/bi/BiSolidRightArrow'
 
   import CompareCard from './CompareCard.svelte'
+  import CompareControls from './CompareControls.svelte'
   import { PIcon } from '$lib/components/core'
 
-  const { getPkmn } = getContext('game')
+  const { getPkmn, getPkmns } = getContext('game')
 
-  $: available = []
-  $: def = null
+  $: box = []
+  $: gym = []
+
   activeGame.subscribe(gameId => {
     if (browser && !gameId) return
+
     getGame(gameId).subscribe(read(data => {
-      getPkmn(pokemon.name).then(d => def = d)
+      // Fetch all gym pokemon from cache
+      getPkmns(pokemon.map(p => p.name))
+        .then(d => gym = Object.values(d))
+
+      // Fetch all box pokemon from cache
       Promise.all(
         Object
           .values(data)
           .filter(i => NuzlockeGroups.Available.includes(i.status))
           .map(p => getPkmn(p.pokemon).then(d => ({ ...p, ...d })))
-      ).then(d => available = d)
+      ).then(d => box = d)
     }))
   })
 
-  $: i = 0
-  const inc = _ => i = Math.min(available.length - 1, i + 1)
-  const dec = _ => i = Math.max(0, i - 1)
+  let i = 0, j = 0
+  $: i = 0, j = 0
+  $: compare = [box[i], gym[j]]
+
+  const select = p => p?.sprite
 </script>
 
-<section>
-  {#if available.length && def}
-
-    <CompareCard className='mt-12' pokemon={[available[i], def]} />
-
-    <div
-      class=flex
-      class:justify-end={i === 0}
-      class:justify-start={i !== available.length - 1}
-      class:justify-between={i < available.length && i > 0}
-    >
-      {#if i !== 0}
-        <button on:click={dec} class='left umami--click--prev-compare'>
-          <Icon size=1.2em src={Arrow} className='fill-current transform rotate-180 md:-ml-2 mt-0.5' />
-          <PIcon className='-m-2 -mr-8 md:-ml-2 md:-mr-7 md:-my-3' name={available[i - 1].pokemon} />
-        </button>
-      {/if}
-
-      {#if i !== available.length - 1}
-        <button on:click={inc} class='right umami--click--next-compare' >
-          <PIcon className='-m-2 -ml-8 md:-mr-4 md:-ml-7 md:-my-3' name={available[i + 1].pokemon} />
-          <Icon size=1.2em src={Arrow} className='fill-current -mr-2 md:ml-2 mt-0.5' />
-        </button>
-      {/if}
+<section class=pb-4>
+  {#if box.length && gym.length}
+    <CompareCard className=mt-12 pokemon={compare} />
+    <div class='flex rounded-xl py-2 flex-col gap-y-4 sm:gap-y-0 sm:gap-x-2 mt-2 sm:mt-0'>
+      <CompareControls title='Your team' className=flex-1 bind:value={i} list={box} {select} />
+      <CompareControls title='Gym team' className=flex-1 bind:value={j} list={gym} {select} />
     </div>
-
   {/if}
 </section>
 

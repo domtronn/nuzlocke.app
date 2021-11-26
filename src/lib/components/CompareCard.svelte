@@ -17,9 +17,9 @@
   $: atkCols = atk.types.map(t => ColorMap[t.toLowerCase()])
   $: atkBgImg = Pattern(atkCols[1] || atkCols[0])
 
-  const def = pokemon[1]
-  const defCols = def.types.map(t => ColorMap[t.toLowerCase()])
-  const defBgImg = Pattern(defCols[1] || defCols[0])
+  $: def = pokemon[1]
+  $: defCols = def.types.map(t => ColorMap[t.toLowerCase()])
+  $: defBgImg = Pattern(defCols[1] || defCols[0])
 
   const sprite = id => `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png`
 
@@ -30,21 +30,26 @@
   <!-- Pokemon face off -->
   <div class='relative flex flex-row justify-around h-24 overflow-hidden -mt-8'>
     <!-- Colouring for types -->
-    {#key atk}
-      <div class='absolute bottom-0 top-0 left-0 mt-8 rounded-tl-lg overflow-hidden' style='width: 50%; background: {atkCols[0]};'>
+    {#key `atk__${atk.name}`}
+      <div in:fade={{ duration: 400, delay: 100 }} class='absolute bottom-0 top-0 left-0 mt-8 rounded-tl-lg overflow-hidden' style='width: 50%; background: {atkCols[0]};'>
         <div class='absolute inset-0' style='background-image: url("{atkBgImg}");' />
       </div>
     {/key}
-    <div class='absolute bottom-0 top-0 left-1/2 mt-8 rounded-tr-lg overflow-hidden' style='width: 50%; background: {defCols[0]};'>
-      <div class='absolute inset-0' style='background-image: url("{defBgImg}");' />
-    </div>
+
+    {#key `def__${def.name}`}
+      <div in:fade={{ duration: 400, delay: 100 }} class='absolute bottom-0 top-0 left-1/2 mt-8 rounded-tr-lg overflow-hidden' style='width: 50%; background: {defCols[0]};'>
+        <div class='absolute inset-0' style='background-image: url("{defBgImg}");' />
+      </div>
+    {/key}
     <div class='divider absolute rounded-t-lg bottom-0 top-0 left-0 mt-8' style='width: 100%;' />
 
     <!-- Images -->
-    {#key atk}
+    {#key `atk__${atk.name}`}
       <img in:fade={{ duration: 500 }} class='flip z-20 flex -mx-6 h-32 w-32' style='transform: scaleX(-1); ' src={sprite(atk.imgId)} />
     {/key}
-    <img class='z-20 flex -mx-6 h-32 w-32' src={sprite(def.imgId)} />
+    {#key `def__${def.name}`}
+      <img in:fade={{ duration: 500 }} class='z-20 flex -mx-6 h-32 w-32' src={sprite(def.imgId)} />
+    {/key}
 
     <!-- VS Icon -->
     <div class='absolute left-1/2 -translate-x-1/2 bottom-1 w-8 h-8'>
@@ -64,7 +69,7 @@
 
   <!-- Stat comparison -->
   <div class='relative flex flex-row gap-x-2 p-4 bg-white dark:text-gray-50 dark:bg-gray-900 rounded-b-lg'>
-    {#key atk}
+    {#key `atk__${atk.name}`}
     <div class=flex-1>
       <span class='flex gap-x-2 mb-2 -ml-2 justify-start transform scale-75'>
         {#each atk.types as t}
@@ -75,6 +80,7 @@
     </div>
     {/key}
 
+    {#key `def__${def.name}`}
     <div class=flex-1>
       <span class='flex gap-x-2 mb-2 -mr-1 justify-end transform scale-75'>
         {#each def.types as t}
@@ -83,6 +89,7 @@
       </span>
       <StatBlock max={250} {...def.baseStats} col={defCols[0]} compare={atk.baseStats} side='right' />
     </div>
+    {/key}
   </div>
 
   <slot />
