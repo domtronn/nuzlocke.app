@@ -67,10 +67,20 @@
   </div>
 </nav>
 
+<div class=fauxnav />
 
 <style>
+  .fauxnav { @apply h-12; }
+
   nav {
+    position: fixed;
+    z-index: 500000;
     @apply container mx-auto mb-8 md:mb-2 bg-black text-white sm:text-black sm:bg-transparent;
+  }
+
+  @media (min-width:theme('screens.sm')) {
+    .fauxnav { display: none; }
+    nav { position: relative; }
   }
 
   :global(.dark) nav {
