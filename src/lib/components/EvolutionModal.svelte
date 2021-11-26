@@ -40,8 +40,6 @@
 </section>
 
 <style>
-  section { margin-top: 50%; }
-
   @keyframes shake {
     0%, 50% { transform: scale(2.2) rotate(0);}
     5%, 45% { transform: scale(2.2) rotate(-2deg);}
