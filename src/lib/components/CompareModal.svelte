@@ -40,9 +40,9 @@
 
 </script>
 
-<div class='dark:bg-gray-800 bg-white dark:text-gray-200 px-6 pb-24 md:px-32 py-6 md:py-10 rounded-lg flex flex-col overflow-x-hidden'>
+<section class='dark:bg-gray-800 bg-white dark:text-gray-200 px-6 md:px-32 py-6 md:py-10 rounded-lg flex flex-col overflow-x-hidden'>
   {#if available.length}
-    <div class='text-center mb-8'>
+    <div class='text-center mb-4 md:mb-8'>
       <h2 class='text-xl font-bold -ml-6'>
         Compare
         <span class='absolute ml-2 w-8 h-8'>
@@ -57,19 +57,18 @@
     <div class='flex flex-col flex-col-reverse md:flex-col gap-y-4'>
       <div class='md:relative z-50'>
         {#if i !== available.length - 1}
-          <button on:click={inc} class=right>
-            <PIcon className='-m-2 -ml-6 md:-m-6 -mr-2' name={available[i + 1].pokemon} />
-            <Icon size=1.6em src={Arrow} className='fill-current -mr-2 mt-0.5' />
+          <button on:click={inc} class='right umami--click--next-compare'>
+            <PIcon className='-m-2 -ml-8 md:-m-5 -mr-3' name={available[i + 1].pokemon} />
+            <Icon size=1.6em src={Arrow} className='fill-current -mr-2 md:ml-2 mt-0.5' />
           </button>
         {/if}
         {#if i !== 0}
-          <button on:click={dec} class=left>
-            <Icon size=1.6em src={Arrow} className='fill-current transform rotate-180 -ml-2 mt-0.5' />
-            <PIcon className='-m-2 -mr-6 md:m-6 -ml-2' name={available[i - 1].pokemon} />
+          <button on:click={dec} class='left umami--click--prev-compare'>
+            <Icon size=1.6em src={Arrow} className='fill-current transform rotate-180 -ml-2 md:mr-2 mt-0.5' />
+            <PIcon className='-m-2 -mr-6 md:-m-5 -ml-3' name={available[i - 1].pokemon} />
           </button>
         {/if}
 
-      <div>
         {#each [available[i]] as p (p)}
           <PokemonCard
             {...p}
@@ -79,7 +78,6 @@
             <StatBlock col={ColorMap[p.types[0]]} slot=stats max=250 compare={pokemon.stats} {...p.baseStats} />
           </PokemonCard>
         {/each}
-      </div>
 
       </div>
       <PokemonCard {...pokemon} level={''} maxStat=250 moves={[]}>
@@ -87,15 +85,17 @@
       </PokemonCard>
     </div>
   {/if}
-</div>
+</section>
 
 <style>
+  section { min-width: 100%; }
+
   button {
-    @apply absolute bottom-1 my-6 px-5 rounded-full border shadow-md flex flex-row items-center
+    @apply fixed bg-white z-50 bottom-0 my-6 px-5 rounded-full border shadow-md flex flex-row items-center hover:border-indigo-200 hover:bg-gray-900 transition
   }
 
   :global(.dark) button {
-    @apply bg-gray-900 border-0 text-gray-500;
+    @apply bg-gray-800 border-2 border-gray-300 text-gray-200 hover:border-indigo-700 hover:text-indigo-800 hover:bg-gray-900;
   }
 
   button.right {
@@ -107,7 +107,9 @@
   }
 
   @media (min-width:theme('screens.sm')) {
-    button { @apply top-1/2 -translate-y-1/2; }
+    section { min-width: 520px; }
+
+    button { @apply absolute top-1/2 -translate-y-1/2 h-12; }
 
     button.right {
       @apply -right-4 translate-x-full
