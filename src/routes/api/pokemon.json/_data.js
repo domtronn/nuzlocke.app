@@ -13,7 +13,7 @@ const FormMap = {
   weezinggalar: 10164, mrmimegalar: 10165, articunogalar: 10166,
   zapdosgalar: 10167, moltresgalar: 10168, slowkinggalar: 10169,
   corsolagalar: 10170, zigzagoongalar: 10171, linoonegalar: 10172,
-  darumakagalar: 10173, yamaskgalar: 10176, stunfiskgalar: 10177
+  darumakagalar: 10173, yamaskgalar: 10176, stunfiskgalar: 10177, darmanitangalar: 10174
 }
 
 export const format = ({ name, forme }) => {
