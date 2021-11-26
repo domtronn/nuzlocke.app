@@ -110,9 +110,9 @@
 {:then route}
   <div out:fade={{ duration: 250 }} in:fade={{ duration: 250, delay: 300 }} class="container mx-auto pb-8 overflow-hidden">
     <div class="flex flex-row flex-wrap pb-16 justify-center">
-      <span id='compare_button' />
       <Modal
         closeButton={false}
+        styleBg={{ background: 'rgba(0, 0, 0, 0.8)' }}
         styleWindow={{ background: 'transparent !important' }}
         styleContent={{ padding: '0 !important' }}
       >

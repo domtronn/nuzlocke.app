@@ -108,4 +108,4 @@ body {
   .window-wrap { margin: 0 2rem !important; }
 }
 
-#compare_button { z-index: 9999 !important; }
+.bg + main { filter: blur(5px); }
