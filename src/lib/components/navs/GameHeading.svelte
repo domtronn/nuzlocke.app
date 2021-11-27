@@ -67,10 +67,26 @@
   </div>
 </nav>
 
+<div class=fauxnav />
 
 <style>
+  .fauxnav { @apply h-12; }
+
   nav {
-    @apply container mx-auto mb-8 md:mb-2 bg-black text-white sm:text-black sm:bg-transparent;
+    position: fixed;
+    z-index: 5000;
+    @apply container mx-auto mb-8 md:mb-2 bg-black sm:bg-white text-white sm:text-black;
+
+  }
+
+  @media (min-width:theme('screens.sm')) {
+    .fauxnav { @apply h-16; }
+    nav {transform: translateX(32px);}
+    nav::after {
+      content: '';
+      background: linear-gradient(white 50%, transparent);
+      @apply absolute w-full -bottom-6 h-6;
+    }
   }
 
   :global(.dark) nav {

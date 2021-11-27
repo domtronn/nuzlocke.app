@@ -99,3 +99,13 @@ body {
 .p-container {
   @apply w-full sm:w-2/3 md:w-3/4 sm:px-4 md:px-8 mx-auto flex justify-between;
 }
+
+.window { width: 100% !important; margin: 1rem 0 !important; }
+.window-wrap { margin: 0 1rem !important; }
+
+@media (min-width:theme('screens.sm')) {
+  .window { width: fit-content !important; margin: 2rem auto !important; }
+  .window-wrap { margin: 0 2rem !important; }
+}
+
+.bg + main { filter: blur(5px); }

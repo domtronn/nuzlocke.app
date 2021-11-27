@@ -92,8 +92,8 @@
     )
 
     let i = 0
-    while (locations.size || routes[i].type !== 'route') {
-      locations.delete(routes[i].name)
+    while (i < routes.length && (locations.size || routes[i].type !== 'route')) {
+      locations.delete(routes[i]?.name)
       i++
     }
 
@@ -112,20 +112,23 @@
     <div class="flex flex-row flex-wrap pb-16 justify-center">
       <Modal
         closeButton={false}
-        styleWindow={{ background: 'transparent !important', width: 'fit-content' }}
+        styleBg={{ background: 'rgba(0, 0, 0, 0.8)', zIndex: 9999 }}
+        styleWindow={{ background: 'transparent !important' }}
         styleContent={{ padding: '0 !important' }}
       >
         <main id='main' role="main" class="w-full sm:w-2/3 md:w-3/4 px-4 md:px-8 md:py-6 flex flex-col gap-y-4 relative">
           <SideNav
             bind:show={show}
             on:nav={setnav}
-            on:continue={setroute(latestnav(route, gameData))}
             route={route}
           >
             <button
               slot='continue'
               class='umami--click--continue text-sm underline inline-flex items-center -ml-6 transition-colors dark:hover:text-gray-200 hover:text-black'
-              on:click={setroute(latestnav(route, gameData))}
+              on:click={_ => {
+                show = !show
+                setroute(latestnav(route, gameData))()
+              }}
             >
               <Icon size='1.2rem' className='fill-current mr-1' src={Arrow} />
               Continue at {latestnav(route, gameData).name}
