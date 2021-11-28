@@ -41,6 +41,7 @@
   let stat = ''
 
   const clear = () => stat = type = ''
+  const sum = l => l.reduce((acc, it) => acc + it, 0)
   $: filter = (p) => !type || (Pokemon[p.pokemon]?.types || []).map(i => i.toLowerCase()).includes(type)
   $: typeCounts = types
     .reduce((acc, it) => ({
@@ -48,11 +49,18 @@
       [it]: ogbox.filter(p => (Pokemon[p.pokemon]?.types || []).map(i => i.toLowerCase()).includes(it)).length
     }), {})
 
+
+
   $: box = ogbox
-    .sort((a, b) => {
-      return stat
-        ? Pokemon[b.pokemon]?.baseStats[stat] - Pokemon[a.pokemon]?.baseStats[stat]
-        : a.id - b.id
+  .sort((a, b) => {
+    if (stat === 'total') {
+      return sum(Object.values(Pokemon[b.pokemon]?.baseStats))
+        - sum(Object.values(Pokemon[a.pokemon]?.baseStats))
+    }
+
+    return stat
+      ? Pokemon[b.pokemon]?.baseStats[stat] - Pokemon[a.pokemon]?.baseStats[stat]
+      : a.id - b.id
     })
 
   $: enabled = box.length && (stat || type)
@@ -66,18 +74,18 @@
       <main role='main' class='w-full sm:w-2/3 md:w-3/4 flex flex-col gap-y-4 py-6 pb-32 px-4 md:px-8 overflow-hidden'>
 
         <div class='inline-flex flex-wrap sm:flex-row gap-y-2 gap-x-4 sm:items-start z-50 mt-2'>
-          <div class='grid sm:grid-rows-2 grid-cols-7 w-full sm:w-auto sm:grid-cols-4 gap-1 sm:gap-2 col-span-2'>
+          <div class='grid sm:grid-rows-2 grid-cols-8 w-full sm:w-auto sm:grid-cols-5 gap-1 sm:gap-2 col-span-2'>
             <IconButton
               rounded
               src={X}
               track=clear-filters
               title='Clear filters'
-              containerClassName='sm:row-span-2 flex flex-col order-last sm:order-none items-center justify-center'
+              containerClassName='flex flex-col order-last sm:row-span-2 sm:order-none items-center justify-center'
               disabled={!enabled}
               on:click={clear}
             />
 
-            {#each stats as s}
+            {#each ['total'].concat(stats) as s}
               <label
                 class='transition items-center shadow-sm cursor-pointer inline-flex text-center row-span-1 text-xs px-2 py-1 w-full text-gray-500 dark:text-gray-400 border-gray-400 font-medium border shadow-sm rounded-lg justify-center md:justify-between'
                 class:border-gray-600={stat === s}
@@ -88,7 +96,11 @@
                 class:dark:border-gray-50={stat === s}
                 >
                 <input type=radio bind:group={stat} name='sortable' value={s} />
-                <Icon className='hidden md:block text-tiny {s !== 'spa' ? 'fill-current' : ''} translate-y-1/2 -mt-2.5 mr-1'  src={StatIconMap[s]} />
+                {#if StatIconMap[s]}
+                  <Icon className='hidden md:block text-tiny {s !== 'spa' ? 'fill-current' : ''} translate-y-1/2 -mt-2.5 mr-1'  src={StatIconMap[s]} />
+                {:else}
+                  <span />
+                {/if}
                 {s}
               </label>
             {/each}
