@@ -11,15 +11,28 @@
 
   import Icon from 'svelte-icons-pack'
   import Arrow from 'svelte-icons-pack/bi/BiSolidRightArrow'
+  import Plus from 'svelte-icons-pack/bi/BiPlus'
+  import Minus from 'svelte-icons-pack/bi/BiMinus'
 
   import CompareCard from './CompareCard.svelte'
   import CompareControls from './CompareControls.svelte'
-  import { PIcon } from '$lib/components/core'
+  import CompareInfo from './CompareInfo.svelte'
+
+  import { Accordion, PIcon } from '$lib/components/core'
 
   const { getPkmn, getPkmns } = getContext('game')
 
   $: box = []
   $: gym = []
+
+  const fetchadvice = (team, box) =>
+    fetch('/api/battle/advice.json', {
+      method: 'POST',
+      body: JSON.stringify({ team, box }),
+      headers: {
+        'Content-Type': 'application/json',
+      }
+    }).then(res => res.json())
 
   activeGame.subscribe(gameId => {
     if (browser && !gameId) return
@@ -48,11 +61,35 @@
 
 <section class=pb-4>
   {#if box.length && gym.length}
-    <CompareCard className=mt-12 pokemon={compare} />
-    <div class='flex rounded-xl py-2 flex-col gap-y-4 sm:gap-y-0 sm:gap-x-2 mt-2 sm:mt-0'>
-      <CompareControls title='Your team' className=flex-1 bind:value={i} list={box} {select} />
-      <CompareControls title='Gym team' pageSize={6} controls={false} className=flex-1 bind:value={j} list={gym} {select} />
-    </div>
+    {#await fetchadvice(pokemon, box) then advice}
+      <CompareCard className=mt-12 pokemon={compare}>
+
+        <div class='bg-white dark:bg-gray-900 border-t border-gray-300 dark:border-gray-800 text-gray-600 dark:text-gray-500 pl-4 pr-2 sm:pl-8 sm:pr-4 py-3 rounded-b-lg'>
+          <Accordion className='flex-row-reverse justify-between'>
+            <span slot=heading class=text-sm> Info </span>
+            <span slot=icon let:isOpen={isOpen} let:className={className}>
+              {#if isOpen}
+                <Icon size=0.8em src={Minus} className='{className} transform -rotate-90' />
+              {:else}
+                <Icon size=0.8em src={Plus} {className} />
+              {/if}
+            </span>
+
+            <div class=inline slot=item>
+              {#key compare}
+              <CompareInfo {...advice} pokemon={compare} />
+              {/key}
+            </div>
+          </Accordion>
+        </div>
+
+      </CompareCard>
+
+      <div class='flex rounded-xl py-2 flex-col gap-y-4 sm:gap-y-0 sm:gap-x-2 mt-2 sm:mt-0'>
+        <CompareControls title='Your team' className=flex-1 bind:value={i} list={box} {select} />
+        <CompareControls title='Gym team' pageSize={6} controls={false} className=flex-1 bind:value={j} list={gym} {select} />
+      </div>
+    {/await}
   {/if}
 </section>
 

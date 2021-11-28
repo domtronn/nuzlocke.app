@@ -68,7 +68,7 @@
   />
 
   <!-- Stat comparison -->
-  <div class='relative flex flex-row gap-x-2 p-4 bg-white dark:text-gray-50 dark:bg-gray-900 rounded-b-lg'>
+  <div class='relative flex flex-row gap-x-2 p-4 bg-white dark:text-gray-50 dark:bg-gray-900'>
     {#key `atk__${atk.name}`}
     <div class=flex-1>
       <span class='flex gap-x-2 mb-2 -ml-2 justify-start transform scale-75'>

@@ -6,7 +6,7 @@
   let isOpen = false
   const toggle = () => isOpen = !isOpen
 
-  export let iconClassName = ''
+  export let iconClassName = '', className = '', icon
 </script>
 
 <style>
@@ -18,10 +18,14 @@
   aria-label='Open accordion'
   aria-expanded={isOpen}
   on:click={toggle}
-  class='inline-flex items-center w-full cursor-pointer umami--accordion--{isOpen ? 'close' : 'open'}}'
+  class='inline-flex items-center w-full cursor-pointer umami--accordion--{isOpen ? 'close' : 'open'}} {className}'
 >
   <span class='mr-2 md:mr-4'>
-    <Icon src={Chevron} className='text-base md:text-xl {iconClassName}' />
+    {#if $$slots.icon}
+      <slot name='icon' {isOpen} className='text-base fill-current md:text-xl {iconClassName}' />
+    {:else}
+      <Icon src={Chevron} className='text-base md:text-xl {iconClassName}' />
+    {/if}
   </span>
   <slot name='heading' />
 </button>
