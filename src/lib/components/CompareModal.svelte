@@ -122,16 +122,7 @@
 <style>
   section { min-width: 100%; }
 
-  button {
-    @apply flex bg-white z-50 my-6 px-5 rounded-full border-2 shadow-md flex flex-row items-center border-gray-600 text-gray-600 md:hover:border-indigo-600 md:hover:text-indigo-600 transition
-  }
-
-  :global(.dark) button {
-    @apply bg-gray-800 border-2 border-gray-600 text-gray-600 md:hover:border-indigo-700 md:hover:text-indigo-800 md:hover:bg-gray-900;
-  }
-
   @media (min-width:theme('screens.sm')) {
     section { min-width: 360px; }
   }
-
 </style>

@@ -38,8 +38,6 @@ export async function post ({ body }) {
     moves: Object.fromEntries(moveAdvice),
   }
 
-  console.log(payload)
-
   return {
     status: 200,
     headers: {
