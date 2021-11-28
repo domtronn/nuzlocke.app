@@ -69,8 +69,8 @@ export const getBox = (cb = () => {}) => activeGame.subscribe(gameId => {
 
   getGame(gameId).subscribe(read(data => {
     cb(Object
-      .values(data)
-      .filter(i => i.pokemon)
+       .values(data)
+       .filter(i => i.pokemon)
        .filter(({ status }) => status !== 5 && status !== 4))
   }))
 })
