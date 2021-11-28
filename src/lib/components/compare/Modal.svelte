@@ -1,5 +1,5 @@
 <script>
-  export let pokemon = [], id = 0
+  export let pokemon = [], id = ''
 
   import { browser } from '$app/env'
 
@@ -40,7 +40,10 @@
     getGame(gameId).subscribe(read(data => {
       // Fetch all gym pokemon from cache
       getPkmns(pokemon.map(p => p.name))
-        .then(d => gym = Object.values(d))
+        .then(d => {
+          gym = Object.values(d)
+          j = Math.max(gym.findIndex(i => i.alias === id), 0)
+        })
 
       // Fetch all box pokemon from cache
       Promise.all(
@@ -54,9 +57,9 @@
       })
     }))
   })
-
-  let i = 0, j = id
-  $: i = 0, j = id
+  
+  let i = 0, j = 0
+  $: i = 0, j = 0
   $: compare = [box[i], gym[j]]
 
   let tab = 0
@@ -107,7 +110,7 @@
               {/if}
             </span>
 
-            <div slot=item class='inline-flex flex-wrap text-gray-800'>
+            <div slot=item class='inline-flex flex-wrap text-gray-800 dark:text-gray-200'>
               {#key compare}
                 <CompareInfo {...advice} pokemon={compare} />
               {/key}

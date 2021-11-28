@@ -110,7 +110,7 @@
             class:mt-0={p.moves.length < 3}
             class='umami--click--compare opacity-25 hover:opacity-75 transition mx-8 -mt-4 mb-2 z-50'
             slot=footer
-            on:click={_ => open(CompareModal, { pokemon, id })}
+            on:click={_ => open(CompareModal, { pokemon, id: p.name })}
           >
             <span class='absolute w-8 h-8 -mb-2 transform md:scale-75'>
               <Icon className='absolute' size=1.4em src={Badge} />
