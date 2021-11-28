@@ -50,7 +50,7 @@
 <!-- Type weaknesses of attacking pokemon -->
 <div class='tracking-tighter flex flex-col md:ml-4 mt-4 md:mt-0'>
   <span class='font-normal text-tiny'>
-    {opp.name}'s weakness
+    {opp.name}'s weaknesses
   </span>
   {#each toGroups(opp.alias) as [mod, types]}
     <div class='inline-flex items-center tracking-normal leading-5 text-xl font-mono'>

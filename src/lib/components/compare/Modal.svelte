@@ -15,12 +15,8 @@
   import Arrow from 'svelte-icons-pack/bi/BiSolidRightArrow'
   import Plus from 'svelte-icons-pack/bi/BiPlus'
   import Minus from 'svelte-icons-pack/bi/BiMinus'
-
-  import CompareCard from './CompareCard.svelte'
-  import CompareControls from './CompareControls.svelte'
-  import CompareInfo from './CompareInfo.svelte'
-  import CompareStats from './CompareStats.svelte'
-
+  
+  import { CompareStats, CompareCard, CompareControls, CompareInfo } from './'
   import { Accordion, Tabs, PIcon } from '$lib/components/core'
 
   const { getPkmn, getPkmns } = getContext('game')

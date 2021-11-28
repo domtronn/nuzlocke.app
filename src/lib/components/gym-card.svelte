@@ -16,8 +16,8 @@
 
   let CompareModal
   onMount(() =>{
-    import('$lib/components/CompareModal.svelte')
-      .then(i => CompareModal = i.default)
+    import('$lib/components/compare')
+      .then(i => CompareModal = i.CompareModal)
   })
 
   const { open } = getContext('simple-modal')
