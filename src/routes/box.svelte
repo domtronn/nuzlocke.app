@@ -50,8 +50,6 @@
   $: enabled = box.length && (stat || type)
 </script>
 
-{JSON.stringify(box)}
-
 {#if loading}
   <Loader />
 {:else}
