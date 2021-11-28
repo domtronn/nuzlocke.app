@@ -3,7 +3,7 @@
   let pokemon = [], name = '', speciality = '', img
 
   import { browser } from '$app/env'
-  import { getContext } from 'svelte'
+  import { getContext, onMount } from 'svelte'
 
   import Pokemon from '$lib/components/pokemon-card.svelte'
   import TypeBadge from '$lib/components/type-badge.svelte'
@@ -14,7 +14,11 @@
   import Badge from 'svelte-icons-pack/fi/FiRefreshCcw'
   import Ball from 'svelte-icons-pack/cg/CgPokemon'
 
-  import CompareModal from '$lib/components/CompareModal.svelte'
+  let CompareModal
+  onMount(() =>{
+    import('$lib/components/CompareModal.svelte')
+      .then(i => CompareModal = i.default)
+  })
 
   const { open } = getContext('simple-modal')
 

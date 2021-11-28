@@ -22,12 +22,12 @@
 
 <!-- Maximum Dmg modifier for defending pokemon -->
 <div
-  style='width: fit-content; transform: translateY(-5.5px)'
-  class='relative align-top inline-block text-center mr-4 tracking-tighter'
+  style='transform: translateY(-5.5px)'
+  class='relative text-center w-1/2 md:w-auto md:mr-4 tracking-tighter'
 >
   <span class=text-tiny>Max dmg</span>
-  <Icon size=2.2rem className='-mt-1 fill-current mx-auto' src={Shield} />
-  <span class='absolute text-2xl -mt-2 font-mono top-1/2 -translate-x-1/2'>
+  <Icon size=2.2rem className='fill-current mx-auto' src={Shield} />
+  <span class='absolute text-2xl -mt-2 font-mono top-8 -translate-x-1/2'>
     <Tooltip> Based on {opp.name}'s moveset </Tooltip>
 
     {dmg[team.alias][opp.alias] || 1}x
@@ -35,9 +35,9 @@
 </div>
 
 <!-- Phys vs Spec distribution -->
-<div class='tracking-tighter inline-block align-top text-tiny font-medium'>
+<div class='tracking-tighter w-1/2 md:w-auto text-tiny font-medium'>
   <span class='font-normal text-tiny'>Dmg types</span>
-  <div class='flex gap-x-1 items-center mb-1'>
+  <div class='flex gap-x-1 items-center my-1'>
     <TypeBadge type=physical />
     {moves[opp.alias]?.physical || 0}%
   </div>
@@ -48,13 +48,18 @@
 </div>
 
 <!-- Type weaknesses of attacking pokemon -->
-<div class='tracking-tighter inline-block align-top ml-10 -mt-0.5'>
+<div class='tracking-tighter flex flex-col md:ml-4 mt-4 md:mt-0'>
+  <span class='font-normal text-tiny'>
+    {opp.name}'s weakness
+  </span>
   {#each toGroups(opp.alias) as [mod, types]}
-    <div class='transform scale-75 -translate-x-10 tracking-normal leading-5 text-xl font-mono'>
+    <div class='inline-flex items-center tracking-normal leading-5 text-xl font-mono'>
       <span>{toFraction(mod)}x</span>
-      {#each types as type}
-        <TypeBadge className='text-xs mr-1' {type} />
-      {/each}
+      <div class='transform scale-75 origin-left ml-1'>
+        {#each types as type}
+          <TypeBadge className='text-xs mr-1' {type} />
+        {/each}
+      </div>
     </div>
   {/each}
 </div>

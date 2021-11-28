@@ -7,11 +7,8 @@
   import Badge from 'svelte-icons-pack/fi/FiRefreshCcw'
   import Ball from 'svelte-icons-pack/cg/CgPokemon'
 
-  import { Stars as Pattern } from '$lib/utils/pattern'
-  import TypeBadge from '$lib/components/type-badge.svelte'
   import ColorMap from '$lib/data/colors.json'
-
-  import StatBlock from '$lib/components/stat-block.svelte'
+  import { Stars as Pattern } from '$lib/utils/pattern'
 
   $: atk = pokemon[0]
   $: atkCols = atk.types.map(t => ColorMap[t.toLowerCase()])
@@ -22,7 +19,6 @@
   $: defBgImg = Pattern(defCols[1] || defCols[0])
 
   const sprite = id => `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png`
-
 </script>
 
 <div class='shadow-lg dark:text-gray-50 relative {className}'>
@@ -66,31 +62,6 @@
     class='separator w-full'
     style='background: linear-gradient(90deg, {atkCols[0]} 35%, {defCols[0]} 65%, {defCols[0]});'
   />
-
-  <!-- Stat comparison -->
-  <div class='relative flex flex-row gap-x-2 p-4 bg-white dark:text-gray-50 dark:bg-gray-900'>
-    {#key `atk__${atk.name}`}
-    <div class=flex-1>
-      <span class='flex gap-x-2 mb-2 -ml-2 justify-start transform scale-75'>
-        {#each atk.types as t}
-          <TypeBadge type={t.toLowerCase()} />
-        {/each}
-      </span>
-      <StatBlock max={250} {...atk.baseStats} col={atkCols[0]} compare={def.baseStats} side='left' />
-    </div>
-    {/key}
-
-    {#key `def__${def.name}`}
-    <div class=flex-1>
-      <span class='flex gap-x-2 mb-2 -mr-1 justify-end transform scale-75'>
-        {#each def.types as t}
-          <TypeBadge type={t.toLowerCase()} />
-        {/each}
-      </span>
-      <StatBlock max={250} {...def.baseStats} col={defCols[0]} compare={atk.baseStats} side='right' />
-    </div>
-    {/key}
-  </div>
 
   <slot />
 
