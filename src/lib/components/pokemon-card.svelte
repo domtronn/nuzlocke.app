@@ -92,7 +92,7 @@
       {#if $$slots.stats}
         <slot name='stats' />
       {:else}
-        <StatBlock nature={nature} max={maxStat} {...stats} />
+        <StatBlock col={cols[0]} nature={nature} max={maxStat} {...stats} />
       {/if}
     </div>
   </div>
