@@ -6,7 +6,7 @@
   let isOpen = false
   const toggle = () => isOpen = !isOpen
 
-  export let iconClassName = '', className = '', icon
+  export let iconClassName = '', className = ''
 </script>
 
 <style>

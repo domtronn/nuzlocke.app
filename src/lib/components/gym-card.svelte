@@ -3,19 +3,12 @@
   let pokemon = [], name = '', speciality = '', img
 
   import { browser } from '$app/env'
-  import { getContext, onMount } from 'svelte'
+  import { getContext } from 'svelte'
 
   import Pokemon from '$lib/components/pokemon-card.svelte'
   import TypeBadge from '$lib/components/type-badge.svelte'
   import Label from '$lib/components/label.svelte'
-  import { Picture, PIcon, IconButton, Accordion } from '$lib/components/core'
-
-  let Modal
-  onMount(() => {
-    import('$lib/components/InfoModal').then(m => Modal = m.InfoModal)
-  })
-
-  import Info from 'svelte-icons-pack/ti/TiInfoLarge'
+  import { Picture, PIcon, Accordion } from '$lib/components/core'
 
   import Icon from 'svelte-icons-pack'
   import Badge from 'svelte-icons-pack/fi/FiRefreshCcw'
@@ -102,8 +95,6 @@
           </span>
 
           <Label heading='Lvl cap' body={levelCap} />
-
-          <IconButton src={Info} name=Info on:click={_ => open(Modal, { team: pokemon })} />
         {/if}
       </div>
     </span>

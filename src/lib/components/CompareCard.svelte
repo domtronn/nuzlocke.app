@@ -45,10 +45,10 @@
 
     <!-- Images -->
     {#key `atk__${atk.name}`}
-      <img in:fade={{ duration: 500 }} class='flip z-20 flex -mx-6 h-32 w-32' style='transform: scaleX(-1); ' src={sprite(atk.imgId)} />
+      <img alt={atk.name} in:fade={{ duration: 500 }} class='flip z-20 flex -mx-6 h-32 w-32' style='transform: scaleX(-1); ' src={sprite(atk.imgId)} />
     {/key}
     {#key `def__${def.name}`}
-      <img in:fade={{ duration: 500 }} class='z-20 flex -mx-6 h-32 w-32' src={sprite(def.imgId)} />
+      <img alt={def.name} in:fade={{ duration: 500 }} class='z-20 flex -mx-6 h-32 w-32' src={sprite(def.imgId)} />
     {/key}
 
     <!-- VS Icon -->

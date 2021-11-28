@@ -106,7 +106,7 @@ export const parse = (cb = () => {}) => (gameData) => {
   )
 }
 
-export const summarise = (cb = i => {}) => ({ __starter, ...data }) => {
+export const summarise = (cb = _ => {}) => ({ __starter, ...data }) => {
   const pkmn = Object.values(data)
   cb({
     available: pkmn.filter(i => i.pokemon && (!i.status || NuzlockeGroups.Available.includes(i?.status))),

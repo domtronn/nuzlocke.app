@@ -23,7 +23,7 @@ export default (team) => {
   else if (stats.def - stats.spd > threshold) defenseType = 'physical'
   else if (stats.spd - stats.def > threshold) defenseType = 'special'
 
-  const moves = team.reduce((acc, { name, moves }) => acc.concat(movesToCategory(moves)), [])
+  const moves = team.reduce((acc, { moves }) => acc.concat(movesToCategory(moves)), [])
   const specMoves = moves.filter(i => i === 'special').length
   const physMoves = moves.filter(i => i === 'physical').length
 

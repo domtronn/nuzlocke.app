@@ -34,7 +34,7 @@ export const typeAdvMap = Object
 const weakness = (type) => {
   return Object
     .entries(typeAdvMap)
-    .filter(([t, dmgMod]) => typeof dmgMod[type] !== 'undefined')
+    .filter(([, dmgMod]) => typeof dmgMod[type] !== 'undefined')
     .map(([t, dmgMod]) => [t, dmgMod[type]])
     .reduce((acc, [t, dmgMod]) => ({ ...acc, [t]: dmgMod }), {})
 }
