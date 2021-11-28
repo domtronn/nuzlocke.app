@@ -1,4 +1,4 @@
-import { typeAdvMap } from './_types'
+import { typeAdvMap, pivotWeaknesses as weaknesses } from './_types'
 
 /**
  * Calculates the damage modifier for an attack given a list of defensive types
@@ -10,7 +10,7 @@ const moveResistance = (atkType, pkmnTypes) => {
   const res = pkmnTypes.reduce((acc, defType) => {
     return acc * (typeAdvMap[atkType][defType] || 1)
   }, 1)
-  
+
   return res
 }
 
@@ -45,26 +45,17 @@ export default (defTeam, atkTeam) => {
   return defTeam.map(({ sprite: defName, types: defTypes }) => {
     const coverageAll = atkTeam.map(({ name: atkName, types: atkTypes }) => {
       const maxDmgMod = coverageResistance(atkTypes, defTypes)
-      const minDmgMod = coverageWeakness(atkTypes, defTypes)
 
-      return {
-        atkName,
-        maxDmgMod,
-        minDmgMod,
-        avgDmgMod: (maxDmgMod + minDmgMod) / 2
-      }
+      return { atkName, maxDmgMod }
     })
-
-    const coverageTeam = {
-      maxDmgMod: Math.max(...coverageAll.map(i => i.maxDmgMod)),
-      minDmgMod: Math.min(...coverageAll.map(i => i.minDmgMod)),
-      avgDmgMod: coverageAll.reduce((acc, { avgDmgMod }) => acc + avgDmgMod, 0) / atkTeam.length
-    }
 
     return {
       name: defName,
-      suitability: calcSuitability(coverageTeam),
-      teamSuitability: coverageAll.map(calcSuitability).reduce((acc, [k, v]) => ({ ...acc, [k]: v}), {}),
+      dmg: coverageAll.reduce((acc, { atkName, maxDmgMod }) => ({ ...acc, [atkName]: maxDmgMod }), {}),
     }
   })
+    .reduce((acc, { name, dmg }) => ({
+      ...acc,
+      [name]: dmg
+    }), {})
 }

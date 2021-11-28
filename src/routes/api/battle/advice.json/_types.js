@@ -30,3 +30,38 @@ export const typeAdvMap = Object
         ...types.reduce((acc, type) => ({ ...acc, [type]: +adv }), {})
       }), {})
   }), {})
+
+const weakness = (type) => {
+  return Object
+    .entries(typeAdvMap)
+    .filter(([t, dmgMod]) => typeof dmgMod[type] !== 'undefined')
+    .map(([t, dmgMod]) => [t, dmgMod[type]])
+    .reduce((acc, [t, dmgMod]) => ({ ...acc, [t]: dmgMod }), {})
+}
+
+const weaknesses = (t1, t2) => {
+  const w1 = weakness(t1)
+  const w2 = weakness(t2)
+
+  return Object
+    .entries(w1)
+    .reduce((acc, [t, dmgMod]) => {
+      const mod = (typeof acc[t] === 'undefined' ? 1 : acc[t]) * dmgMod
+
+      if (mod === 1) {
+        delete acc[t]
+        return acc
+      }
+
+      return { ...acc, [t]: mod }
+    }, w2)
+}
+
+export const pivotWeaknesses = (t1, t2) => {
+  return Object
+    .entries(weaknesses(t1, t2))
+    .reduce((acc, [t, mod]) => ({
+      ...acc,
+      [mod]: (acc[mod] || []).concat(t)
+    }), {})
+}

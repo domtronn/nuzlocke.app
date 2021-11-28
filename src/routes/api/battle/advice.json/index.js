@@ -18,30 +18,16 @@ export async function post ({ body }) {
       types: movesToTypes(moves)
     }))
 
-  const result = calcTypeAdvice(box, teamMoves)
-  const teamMatchup = team
-    .reduce((acc, { name }) => ({
-      ...acc,
-      [name]: matchup(result, i => i.teamSuitability[name])
-    }), {})
+  const typeAdvice = calcTypeAdvice(box, teamMoves)
+  console.log(typeAdvice)
 
-  const advice = {
-    ...calcStatAdvice(team),
-    summary: matchup(result),
-    team: teamMatchup,
 
-  }
-
-  console.log(advice)
 
   return {
     status: 200,
     headers: {
       'Content-Type': 'application/json',
     },
-    body: {
-      ...advice,
-      ...(debug ? {_meta: { result, box, teamMoves }} : {})
-    }
+    body: typeAdvice,
   }
 }
