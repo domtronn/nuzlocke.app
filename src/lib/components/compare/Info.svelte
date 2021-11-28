@@ -30,7 +30,7 @@
   <span class='absolute text-2xl -mt-2 font-mono top-8 -translate-x-1/2'>
     <Tooltip> Based on {opp.name}'s moveset </Tooltip>
 
-    {dmg[team.alias][opp.alias] || 1}x
+    {toFraction(dmg[team.alias][opp.alias] || 1)}x
   </span>
 </div>
 
