@@ -49,13 +49,9 @@ export default (defTeam, atkTeam) => {
       return { atkName, maxDmgMod }
     })
 
-    return {
-      name: defName,
-      dmg: coverageAll.reduce((acc, { atkName, maxDmgMod }) => ({ ...acc, [atkName]: maxDmgMod }), {}),
-    }
+    return [
+      defName,
+      coverageAll.reduce((acc, { atkName, maxDmgMod }) => ({ ...acc, [atkName]: maxDmgMod }), {}),
+    ]
   })
-    .reduce((acc, { name, dmg }) => ({
-      ...acc,
-      [name]: dmg
-    }), {})
 }
