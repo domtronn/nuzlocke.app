@@ -3,21 +3,17 @@
   let pokemon = [], name = '', speciality = '', img
 
   import { browser } from '$app/env'
-  import { getContext } from 'svelte'
+  import { getContext, onMount } from 'svelte'
 
   import Pokemon from '$lib/components/pokemon-card.svelte'
   import TypeBadge from '$lib/components/type-badge.svelte'
   import Label from '$lib/components/label.svelte'
   import { Picture, PIcon, IconButton, Accordion } from '$lib/components/core'
 
-  import { getContext, onMount } from 'svelte'
-
   let Modal
   onMount(() => {
     import('$lib/components/InfoModal').then(m => Modal = m.InfoModal)
   })
-
-  const { open } = getContext('simple-modal')
 
   import Info from 'svelte-icons-pack/ti/TiInfoLarge'
 
