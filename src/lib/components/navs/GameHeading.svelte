@@ -76,7 +76,10 @@
     position: fixed;
     z-index: 5000;
     @apply container mx-auto mb-8 md:mb-2 bg-black sm:bg-white text-white sm:text-black;
+  }
 
+  :global(.dark) nav {
+    @apply sm:bg-gray-800
   }
 
   @media (min-width:theme('screens.sm')) {
@@ -86,6 +89,10 @@
       content: '';
       background: linear-gradient(white 50%, transparent);
       @apply absolute w-full -bottom-6 h-6;
+    }
+
+    :global(.dark) nav::after {
+      background: linear-gradient(theme('colors.gray.800') 50%, transparent);
     }
   }
 
