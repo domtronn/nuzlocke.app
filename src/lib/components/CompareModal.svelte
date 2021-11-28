@@ -27,6 +27,7 @@
 
   $: box = []
   $: gym = []
+  $: loading = true
 
   const fetchadvice = (team, box) =>
     fetch('/api/battle/advice.json', {
@@ -51,7 +52,10 @@
           .values(data)
           .filter(i => !i.status || NuzlockeGroups.Available.includes(i.status))
           .map(p => getPkmn(p.pokemon).then(d => ({ ...p, ...d })))
-      ).then(d => box = d)
+      ).then(d => {
+        box = d
+        loading = false
+      })
     }))
   })
 
@@ -65,7 +69,13 @@
 </script>
 
 <section class=pb-4>
-  {#if box.length && gym.length}
+  {#if !loading && !box.length}
+    <div class='bg-white px-4 py-8 text-center rounded-xl text-xl dark:bg-gray-900 shadow-lg'>
+      <p>You currently have no Pokémon to compare.</p>
+      <p>Go back out there and Catch 'em All!</p>
+
+    </div>
+  {:else if box.length && gym.length}
     {#await fetchadvice(pokemon, box) then advice}
       <CompareCard className=mt-12 pokemon={compare}>
 
