@@ -64,6 +64,17 @@ export const getGame = (id) => createWritable(
   {}
 )
 
+export const getBox = (cb = () => {}) => activeGame.subscribe(gameId => {
+  if (browser && !gameId) return window.location = '/'
+
+  getGame(gameId).subscribe(read(data => {
+    cb(Object
+       .values(data)
+       .filter(i => i.pokemon)
+       .filter(({ status }) => status !== 5 && status !== 4))
+  }))
+})
+
 export const patch = (payload) => (data) => JSON.stringify({
   ...JSON.parse(data),
   ...payload
@@ -95,7 +106,7 @@ export const parse = (cb = () => {}) => (gameData) => {
   )
 }
 
-export const summarise = (cb = i => {}) => ({ __starter, ...data }) => {
+export const summarise = (cb = _ => {}) => ({ __starter, ...data }) => {
   const pkmn = Object.values(data)
   cb({
     available: pkmn.filter(i => i.pokemon && (!i.status || NuzlockeGroups.Available.includes(i?.status))),

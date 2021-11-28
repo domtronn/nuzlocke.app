@@ -3,18 +3,22 @@
   let pokemon = [], name = '', speciality = '', img
 
   import { browser } from '$app/env'
-  import { getContext } from 'svelte'
+  import { onMount, getContext } from 'svelte'
 
   import Pokemon from '$lib/components/pokemon-card.svelte'
   import TypeBadge from '$lib/components/type-badge.svelte'
   import Label from '$lib/components/label.svelte'
-  import { Picture, PIcon, Accordion} from '$lib/components/core'
+  import { Picture, PIcon, Accordion } from '$lib/components/core'
 
   import Icon from 'svelte-icons-pack'
   import Badge from 'svelte-icons-pack/fi/FiRefreshCcw'
   import Ball from 'svelte-icons-pack/cg/CgPokemon'
 
-  import CompareModal from '$lib/components/CompareModal.svelte'
+  let CompareModal
+  onMount(() =>{
+    import('$lib/components/compare')
+      .then(i => CompareModal = i.CompareModal)
+  })
 
   const { open } = getContext('simple-modal')
 
@@ -37,56 +41,9 @@
   }
 
   $: (async () => await fetchData(starter))()
-
-  /* TODO: Move all of this logic onto the server */
   $: levelCap = pokemon.reduce((acc, it) => Math.max(acc, it.level), 0)
   $: maxStat = pokemon.reduce((acc, it) => Math.max(acc, Math.max(...Object.values(it.stats))), 0)
-  // $: teamCap = pokemon.length
 
-  // $: atkMoves = pokemon.reduce((acc, it) => acc + it.moves.filter(i => i.damage_class !== 'status').length, 0)
-  // $: physMoves = pokemon.reduce((acc, it) => acc + it.moves.filter(i => i.damage_class === 'physical').length, 0)
-  // $: specMoves = pokemon.reduce((acc, it) => acc + it.moves.filter(i => i.damage_class === 'special').length, 0)
-
-  // $: aggStats = pokemon.reduce((acc, it, i, arr) => ({
-  //   spdef: (acc.spdef || []).concat(it.stats.spdef),
-  //   def: (acc.def || []).concat(it.stats.def),
-  //   spatk: (acc.spatk || []).concat(it.stats.spatk),
-  //   atk: (acc.atk || []).concat(it.stats.atk),
-  // }), { spdef: [], def: [], spatk: [], atk: [] })
-
-  // $: stats = Object
-  // .entries(aggStats)
-  // .map(([key, vals]) => [
-  //   key, {
-  //     min: Math.min(...vals),
-  //     max: Math.max(...vals),
-  //     avg: vals.reduce((acc, it) => acc + it, 0) / vals.length
-  //   }
-  // ])
-  // .reduce((acc, [key, val]) => ({ ...acc, [key]: val }), {})
-
-  // let msg = []
-  // $: {
-  //   msg = []
-  //   if (stats.def.avg - stats.spdef.avg <= threshold)
-  //     msg.push('Recommend using a Physical attacker since their def is a weakness.')
-  //   else if (stats.spdef.avg - stats.def.avg <= threshold)
-  //     msg.push('Recommend using a Special attacker since their spd is a weakness.')
-  //   else
-  //     msg.push('Recommend using a mixture as their defenses are balanced.')
-
-  //   if (stats.atk.avg - stats.spatk.avg <= threshold)
-  //     msg.push('Their team is strong Special attackers.')
-  //   else if (stats.spatk.avg - stats.atk.avg <= threshold)
-  //     msg.push('Their team is strong Physical attackers.')
-  //   else
-  //     msg.push('Their team uses mixed attackers.')
-
-  //   if ((physMoves / atkMoves) > 0.5)
-  //     msg.push(`With most of their attacks being physical (${Math.round(physMoves / atkMoves * 100)}%).`)
-  //   else if ((specMoves / atkMoves) > 0.5)
-  //     msg.push(`With most of their attacks being special (${Math.round(specMoves / atkMoves * 100)}%).`)
-  // }
 </script>
 
 <div class='my-6 relative'>

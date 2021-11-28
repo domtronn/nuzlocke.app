@@ -19,5 +19,7 @@
     "ecmaVersion": 13,
     "sourceType": "module"
   },
-  "rules": {}
+  "rules": {
+    "no-unused-vars": ["error", {"argsIgnorePattern": "^_"}]
+  }
 }
