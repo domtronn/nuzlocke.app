@@ -54,7 +54,6 @@
         <a
           class=link
           class:active={p.link == $page.path}
-          rel="external"
           href={p.link}
           >
           <Icon src={p.icon} className='fill-current' />

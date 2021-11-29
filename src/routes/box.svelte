@@ -1,6 +1,6 @@
 <script>
   import { browser } from '$app/env'
-  import { getContext } from 'svelte'
+  import { onMount, getContext } from 'svelte'
   import { fade } from 'svelte/transition'
   import { flip } from 'svelte/animate'
 
@@ -17,6 +17,14 @@
   import X from 'svelte-icons-pack/ri/RiSystemFilterOffFill'
 
   const { getPkmns } = getContext('game')
+
+  onMount(() => {
+    // FIXME: Awkward hack to allow page transition cleanup
+    ['game_el', 'sidenav_el'].forEach(id =>{
+      const el = document.getElementById(id)
+      if (el) setTimeout(_ => el.remove(), 500)
+    })
+  })
 
   let loading = true
   let ogbox = [], box = [], Pokemon = {}
@@ -61,7 +69,7 @@
 {#if loading}
   <Loader />
 {:else}
-  <div out:fade={{ duration: 250 }} in:fade={{ duration: 250, delay: 300 }} class='container mx-auto'>
+  <div out:fade|local={{ duration: 250 }} in:fade|local={{ duration: 250, delay: 300 }} class='container mx-auto'>
     <div class='flex flex-col mx-auto items-center justify-center'>
       <main role='main' class='w-full sm:w-2/3 md:w-3/4 flex flex-col gap-y-4 py-6 pb-32 px-4 md:px-8 overflow-hidden'>
 

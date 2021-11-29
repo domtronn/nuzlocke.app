@@ -28,6 +28,7 @@
   <button
     in:fade
     on:click={_ => show = !show}
+    id='sidenav_el'
     aria-label={show ? 'Close menu' : 'Open menu'}
     class='umami--sidenav--{show ? 'close' : 'open'} h-full transition text-white sm:text-gray-600 dark:text-black md:dark:text-gray-400 md:dark:hover:text-gray-100 w-11 h-11 flex items-center justify-center rounded-full bg-gray-900 shadow-lg sm:shadow-none dark:bg-white sm:bg-transparent dark:sm:bg-transparent text-center {className}'
   >
