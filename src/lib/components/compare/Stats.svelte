@@ -17,6 +17,7 @@
   </span>
 
   <StatBlock
+    nature={atk.nature}
     {...atk.baseStats}
     compare={def.baseStats}
     max={250}
