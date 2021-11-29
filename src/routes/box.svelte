@@ -22,7 +22,10 @@
     // FIXME: Awkward hack to allow page transition cleanup
     ['game_el', 'sidenav_el'].forEach(id =>{
       const el = document.getElementById(id)
-      if (el) setTimeout(_ => el.remove(), 500)
+      if (el) {
+        el.style = 'opacity: 0';
+        setTimeout(_ => el.remove(), 500)
+      }
     })
   })
 
@@ -125,7 +128,7 @@
           </div>
         </div>
 
-        <div class='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-4 gap-y-8 :mt-6'>
+        <div class='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-4 gap-y-8 mt-6'>
           {#if box.length === 0}
             <span class='h-96 flex items-center justify-center col-span-4 dark:text-gray-600 text-xl'>You have no Pokémon in your box</span>
           {/if}
