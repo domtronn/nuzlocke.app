@@ -13839,7 +13839,7 @@
             "tackle",
             "harden",
             "water-gun",
-            "bubblebeam"
+            "bubble-beam"
           ]
         }
       ]
@@ -14133,7 +14133,8 @@
           "moves": [
             "tackle",
             "tail-whip",
-            "quick-attack-hyper-fang"
+            "quick-attack",
+            "hyper-fang"
           ]
         },
         {
@@ -14166,7 +14167,8 @@
           "moves": [
             "tackle",
             "tail-whip",
-            "quick-attack-hyper-fang"
+            "quick-attack",
+            "hyper-fang"
           ]
         },
         {
@@ -14186,6 +14188,516 @@
             "tail-whip",
             "sand-attack",
             "growl"
+          ]
+        }
+      ]
+    },
+    "r5": {
+      "name": "Blue",
+      "pokemon": [
+        {
+          "name": "fearow",
+          "level": "25",
+          "moves": [
+            "mirror-move",
+            "growl",
+            "leer",
+            "fury-attack"
+          ]
+        },
+        {
+          "name": "vulpix",
+          "level": "23",
+          "moves": [
+            "ember",
+            "tail-whip",
+            "quick-attack",
+            "roar"
+          ],
+          "ability": "",
+          "starter": "water"
+        },
+        {
+          "name": "vulpix",
+          "level": "22",
+          "moves": [
+            "ember",
+            "tail-whip",
+            "quick-attack",
+            "roar"
+          ],
+          "ability": "",
+          "starter": "grass"
+        },
+        {
+          "name": "magnemite",
+          "level": "23",
+          "moves": [
+            "tackle",
+            "sonic-boom"
+          ],
+          "ability": "",
+          "starter": "fire"
+        },
+        {
+          "name": "magnemite",
+          "level": "22",
+          "moves": [
+            "tackle",
+            "sonic-boom"
+          ],
+          "ability": "",
+          "starter": "water"
+        },
+        {
+          "name": "shellder",
+          "level": "23",
+          "moves": [
+            "tackle",
+            "supersonic",
+            "withdraw",
+            "clamp"
+          ],
+          "ability": "",
+          "starter": "grass"
+        },
+        {
+          "name": "shellder",
+          "level": "22",
+          "moves": [
+            "tackle",
+            "supersonic",
+            "withdraw",
+            "clamp"
+          ],
+          "ability": "",
+          "starter": "fire"
+        },
+        {
+          "name": "sandshrew",
+          "level": "20",
+          "moves": [
+            "scratch",
+            "sand-attack",
+            "slash"
+          ]
+        },
+        {
+          "name": "eevee",
+          "level": "25",
+          "moves": [
+            "quick-attack",
+            "tail-whip",
+            "sand-attack",
+            "growl"
+          ]
+        }
+      ]
+    },
+    "r6": {
+      "name": "Blue",
+      "pokemon": [
+        {
+          "name": "sandslash",
+          "level": "38",
+          "moves": [
+            "swift",
+            "sand-attack",
+            "slash",
+            "poison-sting"
+          ]
+        },
+        {
+          "name": "ninetales",
+          "level": "37",
+          "moves": [
+            "ember",
+            "tail-whip",
+            "quick-attack",
+            "roar"
+          ],
+          "ability": "",
+          "starter": "water"
+        },
+        {
+          "name": "ninetales",
+          "level": "35",
+          "moves": [
+            "ember",
+            "tail-whip",
+            "quick-attack",
+            "roar"
+          ],
+          "ability": "",
+          "starter": "grass"
+        },
+        {
+          "name": "magneton",
+          "level": "37",
+          "moves": [
+            "tackle",
+            "sonic-boom",
+            "thunder-shock",
+            "supersonic"
+          ],
+          "ability": "",
+          "starter": "fire"
+        },
+        {
+          "name": "magneton",
+          "level": "35",
+          "moves": [
+            "tackle",
+            "sonic-boom",
+            "thunder-shock",
+            "supersonic"
+          ],
+          "ability": "",
+          "starter": "water"
+        },
+        {
+          "name": "cloyster",
+          "level": "37",
+          "moves": [
+            "withdraw",
+            "clamp",
+            "supersonic",
+            "aurora-beam"
+          ],
+          "ability": "",
+          "starter": "grass"
+        },
+        {
+          "name": "cloyster",
+          "level": "35",
+          "moves": [
+            "withdraw",
+            "clamp",
+            "supersonic",
+            "aurora-beam"
+          ],
+          "ability": "",
+          "starter": "fire"
+        },
+        {
+          "name": "kadabra",
+          "level": "35",
+          "moves": [
+            "confusion",
+            "psybeam",
+            "disable",
+            "recover"
+          ]
+        },
+        {
+          "name": "jolteon",
+          "level": "40",
+          "moves": [
+            "thunder-shock",
+            "quick-attack",
+            "double-kick",
+            "pin-missile"
+          ],
+          "ability": "",
+          "starter": "grass"
+        },
+        {
+          "name": "vaporeon",
+          "level": "40",
+          "moves": [
+            "water-gun",
+            "quick-attack",
+            "bite",
+            "aurora-beam"
+          ],
+          "ability": "",
+          "starter": "water"
+        },
+        {
+          "name": "flareon",
+          "level": "40",
+          "moves": [
+            "ember",
+            "fire-spin",
+            "quick-attack",
+            "bite"
+          ],
+          "ability": "",
+          "starter": "fire"
+        }
+      ]
+    },
+    "r7": {
+      "name": "Blue",
+      "pokemon": [
+        {
+          "name": "sandslash",
+          "level": "47",
+          "moves": [
+            "swift",
+            "fury-swipes",
+            "slash",
+            "poison-sting"
+          ]
+        },
+        {
+          "name": "exeggcute",
+          "level": "45",
+          "moves": [
+            "leech-seed",
+            "stun-spore",
+            "solar-beam",
+            "poison-powder"
+          ]
+        },
+        {
+          "name": "ninetales",
+          "level": "47",
+          "moves": [
+            "ember",
+            "tail-whip",
+            "quick-attack",
+            "roar"
+          ],
+          "ability": "",
+          "starter": "water"
+        },
+        {
+          "name": "ninetales",
+          "level": "45",
+          "moves": [
+            "ember",
+            "tail-whip",
+            "quick-attack",
+            "roar"
+          ],
+          "ability": "",
+          "starter": "grass"
+        },
+        {
+          "name": "magneton",
+          "level": "47",
+          "moves": [
+            "supersonic",
+            "sonic-boom",
+            "thunder-shock",
+            "thunder-wave"
+          ],
+          "ability": "",
+          "starter": "fire"
+        },
+        {
+          "name": "magneton",
+          "level": "45",
+          "moves": [
+            "supersonic",
+            "sonic-boom",
+            "thunder-shock",
+            "thunder-wave"
+          ],
+          "ability": "",
+          "starter": "water"
+        },
+        {
+          "name": "cloyster",
+          "level": "47",
+          "moves": [
+            "withdraw",
+            "clamp",
+            "supersonic",
+            "aurora-beam"
+          ],
+          "ability": "",
+          "starter": "grass"
+        },
+        {
+          "name": "cloyster",
+          "level": "45",
+          "moves": [
+            "withdraw",
+            "clamp",
+            "supersonic",
+            "aurora-beam"
+          ],
+          "ability": "",
+          "starter": "fire"
+        },
+        {
+          "name": "kadabra",
+          "level": "50",
+          "moves": [
+            "psychic",
+            "psybeam",
+            "reflect",
+            "recover"
+          ]
+        },
+        {
+          "name": "jolteon",
+          "level": "40",
+          "moves": [
+            "thunder-shock",
+            "thunder",
+            "agility",
+            "pin-missile"
+          ],
+          "ability": "",
+          "starter": "grass"
+        },
+        {
+          "name": "vaporeon",
+          "level": "40",
+          "moves": [
+            "hydro-pump",
+            "mist",
+            "haze",
+            "acid-armor"
+          ],
+          "ability": "",
+          "starter": "water"
+        },
+        {
+          "name": "flareon",
+          "level": "40",
+          "moves": [
+            "flamethrower",
+            "fire-spin",
+            "leer",
+            "smog"
+          ],
+          "ability": "",
+          "starter": "fire"
+        }
+      ]
+    },
+    "jj1": {
+      "name": "Jessie & James",
+      "pokemon": [
+        {
+          "name": "ekans",
+          "level": "14",
+          "moves": [
+            "wrap",
+            "leer",
+            "poison-sting"
+          ]
+        },
+        {
+          "name": "meowth",
+          "level": "14",
+          "moves": [
+            "scratch",
+            "growl",
+            "bite"
+          ]
+        },
+        {
+          "name": "koffing",
+          "level": "14",
+          "moves": [
+            "tackle",
+            "smog"
+          ]
+        }
+      ]
+    },
+    "jj2": {
+      "name": "Jessie & James",
+      "pokemon": [
+        {
+          "name": "ekans",
+          "level": "25",
+          "moves": [
+            "bite",
+            "leer",
+            "glare",
+            "poison-sting"
+          ]
+        },
+        {
+          "name": "meowth",
+          "level": "25",
+          "moves": [
+            "growl",
+            "bite",
+            "screech",
+            "pay-day"
+          ]
+        },
+        {
+          "name": "koffing",
+          "level": "25",
+          "moves": [
+            "tackle",
+            "smog"
+          ]
+        }
+      ]
+    },
+    "jj3": {
+      "name": "Jessie & James",
+      "pokemon": [
+        {
+          "name": "arbok",
+          "level": "27",
+          "moves": [
+            "bite",
+            "leer",
+            "glare",
+            "poison-sting"
+          ]
+        },
+        {
+          "name": "meowth",
+          "level": "27",
+          "moves": [
+            "growl",
+            "bite",
+            "screech",
+            "pay-day"
+          ]
+        },
+        {
+          "name": "weezing",
+          "level": "27",
+          "moves": [
+            "tackle",
+            "smog",
+            "sludge"
+          ]
+        }
+      ]
+    },
+    "jj4": {
+      "name": "Jessie & James",
+      "pokemon": [
+        {
+          "name": "arbok",
+          "level": "31",
+          "moves": [
+            "bite",
+            "leer",
+            "glare",
+            "poison-sting"
+          ]
+        },
+        {
+          "name": "meowth",
+          "level": "31",
+          "moves": [
+            "growl",
+            "bite",
+            "screech",
+            "pay-day"
+          ]
+        },
+        {
+          "name": "weezing",
+          "level": "31",
+          "moves": [
+            "tackle",
+            "smog",
+            "sludge"
           ]
         }
       ]
@@ -14455,7 +14967,8 @@
           "level": "56",
           "moves": [
             "thunderbolt",
-            "thunder-waveslam",
+            "thunder-wave",
+            "slam",
             "hyper-beam"
           ]
         },
@@ -14488,6 +15001,149 @@
             "thunder",
             "hyper-beam"
           ]
+        }
+      ]
+    },
+    "c": {
+      "name": "Blue",
+      "pokemon": [
+        {
+          "name": "sandslash",
+          "level": "61",
+          "moves": [
+            "swift",
+            "fury-swipes",
+            "earthquake",
+            "poison-sting"
+          ]
+        },
+        {
+          "name": "alakazam",
+          "level": "59",
+          "moves": [
+            "psychic",
+            "psybeam",
+            "kinesis",
+            "recover"
+          ]
+        },
+        {
+          "name": "exeggutor",
+          "level": "61",
+          "moves": [
+            "leech-seed",
+            "hypnosis",
+            "barrage",
+            "stomp"
+          ]
+        },
+        {
+          "name": "ninetales",
+          "level": "61",
+          "moves": [
+            "fire-spin",
+            "tail-whip",
+            "quick-attack",
+            "confuse-ray"
+          ],
+          "ability": "",
+          "starter": "water"
+        },
+        {
+          "name": "ninetales",
+          "level": "63",
+          "moves": [
+            "fire-spin",
+            "tail-whip",
+            "quick-attack",
+            "confuse-ray"
+          ],
+          "ability": "",
+          "starter": "grass"
+        },
+        {
+          "name": "magneton",
+          "level": "61",
+          "moves": [
+            "swift",
+            "screech",
+            "thunderbolt",
+            "thunder-wave"
+          ],
+          "ability": "",
+          "starter": "fire"
+        },
+        {
+          "name": "magneton",
+          "level": "63",
+          "moves": [
+            "swift",
+            "screech",
+            "thunderbolt",
+            "thunder-wave"
+          ],
+          "ability": "",
+          "starter": "water"
+        },
+        {
+          "name": "cloyster",
+          "level": "61",
+          "moves": [
+            "spike-cannon",
+            "clamp",
+            "ice-beam",
+            "aurora-beam"
+          ],
+          "ability": "",
+          "starter": "grass"
+        },
+        {
+          "name": "cloyster",
+          "level": "63",
+          "moves": [
+            "spike-cannon",
+            "clamp",
+            "ice-beam",
+            "aurora-beam"
+          ],
+          "ability": "",
+          "starter": "fire"
+        },
+        {
+          "name": "jolteon",
+          "level": "65",
+          "moves": [
+            "thunderbolt",
+            "thunder",
+            "quick-attack",
+            "pin-missile"
+          ],
+          "ability": "",
+          "starter": "grass"
+        },
+        {
+          "name": "vaporeon",
+          "level": "65",
+          "moves": [
+            "hydro-pump",
+            "quick-attack",
+            "mist",
+            "aurora-beam"
+          ],
+          "ability": "",
+          "starter": "water"
+        },
+        {
+          "name": "flareon",
+          "level": "65",
+          "moves": [
+            "flamethrower",
+            "fire-spin",
+            "reflect",
+            "quick-attack"
+          ],
+          "ability": "",
+          "starter": "fire"
         }
       ]
     }

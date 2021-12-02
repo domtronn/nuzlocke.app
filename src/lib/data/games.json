@@ -27,7 +27,7 @@
   "s": { "pid": "gs", "title": "Silver", "gen": "II", "supported": false  },
   "fr": { "pid": "frlg", "logo": "/logos/fire-red-logo", "title": "Fire Red", "gen": "I", "supported": false  },
   "lg": { "pid": "frlg", "logo": "/logos/leaf-green-logo", "title": "Leaf Green", "gen": "I", "supported": false  },
-  "ye": { "pid": "y", "title": "Yellow", "gen": "I", "supported": false  },
+  "yel": { "pid": "yel", "title": "Yellow", "gen": "I", "supported": true, "logo": "/logos/yellow-logo" },
   "red": { "pid": "rb", "title": "Red", "gen": "I", "supported": true, "logo": "/logos/red" },
   "blue": { "pid": "rb", "title": "Blue", "gen": "I", "supported": true, "logo": "/logos/blue" }
 }

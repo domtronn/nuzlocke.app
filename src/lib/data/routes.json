@@ -2889,6 +2889,12 @@
       "name": "Pallet Town"
     },
     {
+      "type": "gym",
+      "name": "Rival",
+      "value": "r1",
+      "group": "rival"
+    },
+    {
       "type": "route",
       "name": "Route 1"
     },
@@ -3052,7 +3058,7 @@
       "type": "gym",
       "name": "Silph Co.",
       "value": "g2",
-      "group": "rival"
+      "group": "evil-team"
     },
     {
       "type": "gym",
@@ -4621,6 +4627,344 @@
     {
       "type": "route",
       "name": "Friend Safari"
+    }
+  ],
+  "yel": [
+    {
+      "type": "route",
+      "name": "Starter"
+    },
+    {
+      "type": "route",
+      "name": "Pallet Town"
+    },
+    {
+      "type": "gym",
+      "name": "Rival",
+      "value": "r1",
+      "group": "rival"
+    },
+    {
+      "type": "route",
+      "name": "Route 1"
+    },
+    {
+      "type": "route",
+      "name": "Viridian City"
+    },
+    {
+      "type": "route",
+      "name": "Route 22"
+    },
+    {
+      "type": "gym",
+      "name": "Rival",
+      "value": "r2",
+      "group": "rival"
+    },
+    {
+      "type": "route",
+      "name": "Route 2"
+    },
+    {
+      "type": "route",
+      "name": "Viridian Forest"
+    },
+    {
+      "type": "gym",
+      "name": "Pewter City Gym",
+      "value": "1",
+      "group": "gym-leader"
+    },
+    {
+      "type": "route",
+      "name": "Route 3"
+    },
+    {
+      "type": "route",
+      "name": "Route 4"
+    },
+    {
+      "type": "route",
+      "name": "Mt. Moon"
+    },
+    {
+      "type": "gym",
+      "name": "Team Rocket",
+      "value": "jj1",
+      "group": "evil-team"
+    },
+    {
+      "type": "route",
+      "name": "Cerulean City"
+    },
+    {
+      "type": "gym",
+      "name": "Cerulean City Gym",
+      "value": "2",
+      "group": "gym-leader"
+    },
+    {
+      "type": "route",
+      "name": "Route 24"
+    },
+    {
+      "type": "gym",
+      "name": "Rival",
+      "value": "r3",
+      "group": "rival"
+    },
+    {
+      "type": "route",
+      "name": "Route 25"
+    },
+    {
+      "type": "route",
+      "name": "Route 5"
+    },
+    {
+      "type": "route",
+      "name": "Route 6"
+    },
+    {
+      "type": "route",
+      "name": "Vermillion City"
+    },
+    {
+      "type": "gym",
+      "name": "S.S. Anne",
+      "value": "r4",
+      "group": "rival"
+    },
+    {
+      "type": "gym",
+      "name": "Vermillion City Gym",
+      "value": "3",
+      "group": "gym-leader"
+    },
+    {
+      "type": "route",
+      "name": "Route 11"
+    },
+    {
+      "type": "route",
+      "name": "Diglett's Cave"
+    },
+    {
+      "type": "route",
+      "name": "Route 9"
+    },
+    {
+      "type": "route",
+      "name": "Route 10"
+    },
+    {
+      "type": "route",
+      "name": "Rock Tunnel"
+    },
+    {
+      "type": "route",
+      "name": "Pokémon Tower"
+    },
+    {
+      "type": "route",
+      "name": "Route 12"
+    },
+    {
+      "type": "route",
+      "name": "Route 8"
+    },
+    {
+      "type": "route",
+      "name": "Route 7"
+    },
+    {
+      "type": "route",
+      "name": "Celadon City"
+    },
+    {
+      "type": "gym",
+      "name": "Celadon City Gym",
+      "value": "4",
+      "group": "gym-leader"
+    },
+    {
+      "type": "gym",
+      "name": "Rocket Hideout",
+      "value": "jj2",
+      "group": "evil-team"
+    },
+    {
+      "type": "gym",
+      "name": "Rocket Hideout",
+      "value": "g1",
+      "group": "evil-team"
+    },
+    {
+      "type": "gym",
+      "name": "Pokemon Tower",
+      "value": "jj3",
+      "group": "evil-team"
+    },
+    {
+      "type": "gym",
+      "name": "Pokemon Tower Rival",
+      "value": "r5",
+      "group": "rival"
+    },
+    {
+      "type": "route",
+      "name": "Saffron City"
+    },
+    {
+      "type": "gym",
+      "name": "Silph Co. Rival",
+      "value": "r6",
+      "group": "rival"
+    },
+    {
+      "type": "gym",
+      "name": "Silph Co.",
+      "value": "jj4",
+      "group": "evil-team"
+    },
+    {
+      "type": "gym",
+      "name": "Silph Co. Boss",
+      "value": "g2",
+      "group": "evil-team"
+    },
+    {
+      "type": "gym",
+      "name": "Saffron City Gym",
+      "value": "6",
+      "group": "gym-leader"
+    },
+    {
+      "type": "route",
+      "name": "Route 16"
+    },
+    {
+      "type": "route",
+      "name": "Route 17"
+    },
+    {
+      "type": "route",
+      "name": "Route 18"
+    },
+    {
+      "type": "route",
+      "name": "Fuschia City"
+    },
+    {
+      "type": "gym",
+      "name": "Fuschia City Gym",
+      "value": "5",
+      "group": "gym-leader"
+    },
+    {
+      "type": "route",
+      "name": "Safari Zone"
+    },
+    {
+      "type": "route",
+      "name": "Route 15"
+    },
+    {
+      "type": "route",
+      "name": "Route 14"
+    },
+    {
+      "type": "route",
+      "name": "Route 13"
+    },
+    {
+      "type": "route",
+      "name": "Power Plant"
+    },
+    {
+      "type": "route",
+      "name": "Route 19"
+    },
+    {
+      "type": "route",
+      "name": "Route 20"
+    },
+    {
+      "type": "route",
+      "name": "Seafoam Islands"
+    },
+    {
+      "type": "route",
+      "name": "Cinnabar Island"
+    },
+    {
+      "type": "route",
+      "name": "Pokémon Mansion"
+    },
+    {
+      "type": "gym",
+      "name": "Cinnabar Island Gym",
+      "value": "7",
+      "group": "gym-leader"
+    },
+    {
+      "type": "route",
+      "name": "Route 21"
+    },
+    {
+      "type": "gym",
+      "name": "Viridian City Gym",
+      "value": "8",
+      "group": "gym-leader"
+    },
+    {
+      "type": "route",
+      "name": "Route 23"
+    },
+    {
+      "type": "route",
+      "name": "Victory Road"
+    },
+    {
+      "type": "gym",
+      "name": "Rival",
+      "value": "r7",
+      "group": "rival"
+    },
+    {
+      "type": "gym",
+      "name": "Indigo Plateau",
+      "value": "e1",
+      "group": "elite-four"
+    },
+    {
+      "type": "gym",
+      "name": "Indigo Plateau",
+      "value": "e2",
+      "group": "elite-four"
+    },
+    {
+      "type": "gym",
+      "name": "Indigo Plateau",
+      "value": "e3",
+      "group": "elite-four"
+    },
+    {
+      "type": "gym",
+      "name": "Indigo Plateau",
+      "value": "e4",
+      "group": "elite-four"
+    },
+    {
+      "type": "gym",
+      "name": "Champion",
+      "value": "c",
+      "group": "elite-four"
+    },
+    {
+      "type": "route",
+      "name": "Cerulean Cave"
     }
   ]
 }
