@@ -89,13 +89,13 @@
           on:click={handleSelect(id)}
           on:mouseenter={togglehover}
           on:mouseleave={togglehover}
-          class='w-full text-center text-xs hover:text-yellow-500 dark:hover:text-yellow-300 transition font-medium text-wrap cursor-pointer'
+          class='group w-full text-center text-xs hover:text-yellow-500 dark:hover:text-yellow-300 transition font-medium text-wrap cursor-pointer'
         >
           <Picture
             src={game.logo}
             aspect=192x96
             alt={'Pokémon ' + game.title + ' logo'}
-            className='w-24 mb-2 mx-auto transition hover:grayscale-0 {(selected && selected !== id) || hoverActive ? 'grayscale' : ''} {selected === id ? 'grayscale-0' : ''} cursor-pointer'
+            className='w-24 mb-2 mx-auto transition group-hover:grayscale-0 {(selected && selected !== id) || hoverActive ? 'grayscale' : ''} {selected === id ? 'grayscale-0' : ''} cursor-pointer'
             />
           {game.title}
         </span>
