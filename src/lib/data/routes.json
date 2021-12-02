@@ -489,6 +489,436 @@
       "name": "Mirage Mountain"
     }
   ],
+  "b2w2": [
+    {
+      "type": "route",
+      "name": "Starter"
+    },
+    {
+      "type": "route",
+      "name": "Aspertia City"
+    },
+    {
+      "type": "gym",
+      "name": "1st Rival",
+      "value": "r1",
+      "group": "rival"
+    },
+    {
+      "type": "route",
+      "name": "Route 19"
+    },
+    {
+      "type": "route",
+      "name": "Floccesy Town"
+    },
+    {
+      "type": "route",
+      "name": "Route 20"
+    },
+    {
+      "type": "route",
+      "name": "Floccesy Ranch"
+    },
+    {
+      "type": "gym",
+      "name": "2nd Rival",
+      "value": "r2",
+      "group": "rival"
+    },
+    {
+      "type": "route",
+      "name": "Aspertia Gym"
+    },
+    {
+      "type": "gym",
+      "name": "Aspertia City Gym",
+      "value": "1n",
+      "group": "gym-leader"
+    },
+    {
+      "type": "route",
+      "name": "Virbank City"
+    },
+    {
+      "type": "gym",
+      "name": "Virbank City Gym",
+      "value": "2n",
+      "group": "gym-leader"
+    },
+    {
+      "type": "route",
+      "name": "Virbank Complex"
+    },
+    {
+      "type": "route",
+      "name": "Castelia City"
+    },
+    {
+      "type": "route",
+      "name": "Castelia Sewers"
+    },
+    {
+      "type": "gym",
+      "name": "Castelia City Gym",
+      "value": "3n",
+      "group": "gym-leader"
+    },
+    {
+      "type": "route",
+      "name": "Relic Passage"
+    },
+    {
+      "type": "route",
+      "name": "Route 4"
+    },
+    {
+      "type": "gym",
+      "name": "Challenge Colress",
+      "value": "col1",
+      "group": "evil-team"
+    },
+    {
+      "type": "route",
+      "name": "Desert Resort"
+    },
+    {
+      "type": "route",
+      "name": "Relic Castle"
+    },
+    {
+      "type": "gym",
+      "name": "Nimbasa Subway",
+      "value": "subway",
+      "group": "rival"
+    },
+    {
+      "type": "gym",
+      "name": "Nimbasa City Gym",
+      "value": "4n",
+      "group": "gym-leader"
+    },
+    {
+      "type": "route",
+      "name": "Route 16"
+    },
+    {
+      "type": "route",
+      "name": "Lostlorn Forest"
+    },
+    {
+      "type": "route",
+      "name": "Route 5"
+    },
+    {
+      "type": "route",
+      "name": "Driftveil Drawbridge"
+    },
+    {
+      "type": "route",
+      "name": "Driftveil City"
+    },
+    {
+      "type": "gym",
+      "name": "Driftveil City Gym",
+      "value": "5n",
+      "group": "gym-leader"
+    },
+    {
+      "type": "gym",
+      "name": "Driftveil Tournament Round 1",
+      "value": "r3",
+      "group": "rival"
+    },
+    {
+      "type": "gym",
+      "name": "Driftveil Tournament Round 2",
+      "value": "ch",
+      "group": "rival"
+    },
+    {
+      "type": "gym",
+      "name": "Driftveil Tournament Round 3",
+      "value": "col2",
+      "group": "rival"
+    },
+    {
+      "type": "route",
+      "name": "Route 6"
+    },
+    {
+      "type": "route",
+      "name": "Mistralton Cave"
+    },
+    {
+      "type": "route",
+      "name": "Chargestone Cave"
+    },
+    {
+      "type": "route",
+      "name": "Route 7"
+    },
+    {
+      "type": "route",
+      "name": "Celestial Tower"
+    },
+    {
+      "type": "route",
+      "name": "Reversal Mountain"
+    },
+    {
+      "type": "route",
+      "name": "Strange House"
+    },
+    {
+      "type": "route",
+      "name": "Undella Town"
+    },
+    {
+      "type": "gym",
+      "name": "3rd Rival",
+      "value": "r4",
+      "group": "rival"
+    },
+    {
+      "type": "route",
+      "name": "Undella Bay"
+    },
+    {
+      "type": "route",
+      "name": "Route 13"
+    },
+    {
+      "type": "gym",
+      "name": "Lacunosa Town",
+      "value": "zinz1",
+      "group": "evil-team"
+    },
+    {
+      "type": "route",
+      "name": "Route 12"
+    },
+    {
+      "type": "route",
+      "name": "Village Bridge"
+    },
+    {
+      "type": "route",
+      "name": "Route 11"
+    },
+    {
+      "type": "route",
+      "name": "Route 9"
+    },
+    {
+      "type": "gym",
+      "name": "Opelucid City Gym",
+      "value": "7n",
+      "group": "gym-leader"
+    },
+    {
+      "type": "gym",
+      "name": "Opelucid City",
+      "value": "zinz2",
+      "group": "evil-team"
+    },
+    {
+      "type": "gym",
+      "name": "Opelucid City",
+      "value": "shad",
+      "group": "evil-team"
+    },
+    {
+      "type": "route",
+      "name": "Seaside Cave"
+    },
+    {
+      "type": "route",
+      "name": "Route 21"
+    },
+    {
+      "type": "route",
+      "name": "Humilau City"
+    },
+    {
+      "type": "gym",
+      "name": "Humilau City Gym",
+      "value": "7n",
+      "group": "gym-leader"
+    },
+    {
+      "type": "route",
+      "name": "Route 22"
+    },
+    {
+      "type": "gym",
+      "name": "Command Center",
+      "value": "zinz3",
+      "group": "evil-team"
+    },
+    {
+      "type": "gym",
+      "name": "Kyurem's Location",
+      "value": "zinz4",
+      "group": "evil-team"
+    },
+    {
+      "type": "gym",
+      "name": "Control Room",
+      "value": "col3",
+      "group": "evil-team"
+    },
+    {
+      "type": "route",
+      "name": "Giant Chasm"
+    },
+    {
+      "type": "gym",
+      "name": "Giant Chasm",
+      "value": "ghetsis",
+      "group": "evil-team"
+    },
+    {
+      "type": "route",
+      "name": "Route 23"
+    },
+    {
+      "type": "route",
+      "name": "Victory Road"
+    },
+    {
+      "type": "gym",
+      "name": "Final Rival",
+      "value": "r5",
+      "group": "rival"
+    },
+    {
+      "type": "gym",
+      "name": "Pokémon League W Room",
+      "value": "e1n",
+      "group": "elite-four"
+    },
+    {
+      "type": "gym",
+      "name": "Pokémon League NW Room",
+      "value": "e2n",
+      "group": "elite-four"
+    },
+    {
+      "type": "gym",
+      "name": "Pokémon League NE Room",
+      "value": "e3n",
+      "group": "elite-four"
+    },
+    {
+      "type": "gym",
+      "name": "Pokémon League E Room",
+      "value": "e4n",
+      "group": "elite-four"
+    },
+    {
+      "type": "gym",
+      "name": "Pokémon League Champion",
+      "value": "cn",
+      "group": "elite-four"
+    },
+    {
+      "type": "route",
+      "name": "Old Victory Road"
+    },
+    {
+      "type": "route",
+      "name": "Marvelous Bridge"
+    },
+    {
+      "type": "route",
+      "name": "Route 15"
+    },
+    {
+      "type": "route",
+      "name": "Route 14"
+    },
+    {
+      "type": "route",
+      "name": "Abundant Shrine"
+    },
+    {
+      "type": "route",
+      "name": "Moor of Icirrus"
+    },
+    {
+      "type": "route",
+      "name": "Icirrus City"
+    },
+    {
+      "type": "route",
+      "name": "Dragonspiral Tower"
+    },
+    {
+      "type": "route",
+      "name": "Twist Mountain"
+    },
+    {
+      "type": "route",
+      "name": "Clay Tunnel"
+    },
+    {
+      "type": "route",
+      "name": "Underground Ruins"
+    },
+    {
+      "type": "route",
+      "name": "Pinwheel Forest"
+    },
+    {
+      "type": "route",
+      "name": "Nacrene City"
+    },
+    {
+      "type": "route",
+      "name": "Route 3"
+    },
+    {
+      "type": "route",
+      "name": "Wellspring Cave"
+    },
+    {
+      "type": "route",
+      "name": "Striaton City"
+    },
+    {
+      "type": "route",
+      "name": "Dreamyard"
+    },
+    {
+      "type": "route",
+      "name": "Route 2"
+    },
+    {
+      "type": "route",
+      "name": "Accumula Town"
+    },
+    {
+      "type": "route",
+      "name": "Route 1"
+    },
+    {
+      "type": "route",
+      "name": "Route 17"
+    },
+    {
+      "type": "route",
+      "name": "Route 18"
+    },
+    {
+      "type": "route",
+      "name": "P2 Laboratory"
+    },
+    {
+      "type": "route",
+      "name": "Nature Preserve"
+    }
+  ],
   "bdsp": [
     {
       "type": "route",
@@ -941,6 +1371,436 @@
       "name": "Champion",
       "value": "c",
       "group": "elite-four"
+    }
+  ],
+  "chb2w2": [
+    {
+      "type": "route",
+      "name": "Starter"
+    },
+    {
+      "type": "route",
+      "name": "Aspertia City"
+    },
+    {
+      "type": "gym",
+      "name": "1st Rival",
+      "value": "r1",
+      "group": "rival"
+    },
+    {
+      "type": "route",
+      "name": "Route 19"
+    },
+    {
+      "type": "route",
+      "name": "Floccesy Town"
+    },
+    {
+      "type": "route",
+      "name": "Route 20"
+    },
+    {
+      "type": "route",
+      "name": "Floccesy Ranch"
+    },
+    {
+      "type": "gym",
+      "name": "2nd Rival",
+      "value": "r2",
+      "group": "rival"
+    },
+    {
+      "type": "route",
+      "name": "Aspertia Gym"
+    },
+    {
+      "type": "gym",
+      "name": "Aspertia City Gym",
+      "value": "1c",
+      "group": "gym-leader"
+    },
+    {
+      "type": "route",
+      "name": "Virbank City"
+    },
+    {
+      "type": "gym",
+      "name": "Virbank City Gym",
+      "value": "2c",
+      "group": "gym-leader"
+    },
+    {
+      "type": "route",
+      "name": "Virbank Complex"
+    },
+    {
+      "type": "route",
+      "name": "Castelia City"
+    },
+    {
+      "type": "route",
+      "name": "Castelia Sewers"
+    },
+    {
+      "type": "gym",
+      "name": "Castelia City Gym",
+      "value": "3c",
+      "group": "gym-leader"
+    },
+    {
+      "type": "route",
+      "name": "Relic Passage"
+    },
+    {
+      "type": "route",
+      "name": "Route 4"
+    },
+    {
+      "type": "gym",
+      "name": "Challenge Colress",
+      "value": "col1",
+      "group": "evil-team"
+    },
+    {
+      "type": "route",
+      "name": "Desert Resort"
+    },
+    {
+      "type": "route",
+      "name": "Relic Castle"
+    },
+    {
+      "type": "gym",
+      "name": "Nimbasa Subway",
+      "value": "subway",
+      "group": "rival"
+    },
+    {
+      "type": "gym",
+      "name": "Nimbasa City Gym",
+      "value": "4c",
+      "group": "gym-leader"
+    },
+    {
+      "type": "route",
+      "name": "Route 16"
+    },
+    {
+      "type": "route",
+      "name": "Lostlorn Forest"
+    },
+    {
+      "type": "route",
+      "name": "Route 5"
+    },
+    {
+      "type": "route",
+      "name": "Driftveil Drawbridge"
+    },
+    {
+      "type": "route",
+      "name": "Driftveil City"
+    },
+    {
+      "type": "gym",
+      "name": "Driftveil City Gym",
+      "value": "5c",
+      "group": "gym-leader"
+    },
+    {
+      "type": "gym",
+      "name": "Driftveil Tournament Round 1",
+      "value": "r3",
+      "group": "rival"
+    },
+    {
+      "type": "gym",
+      "name": "Driftveil Tournament Round 2",
+      "value": "ch",
+      "group": "rival"
+    },
+    {
+      "type": "gym",
+      "name": "Driftveil Tournament Round 3",
+      "value": "col2",
+      "group": "rival"
+    },
+    {
+      "type": "route",
+      "name": "Route 6"
+    },
+    {
+      "type": "route",
+      "name": "Mistralton Cave"
+    },
+    {
+      "type": "route",
+      "name": "Chargestone Cave"
+    },
+    {
+      "type": "route",
+      "name": "Route 7"
+    },
+    {
+      "type": "route",
+      "name": "Celestial Tower"
+    },
+    {
+      "type": "route",
+      "name": "Reversal Mountain"
+    },
+    {
+      "type": "route",
+      "name": "Strange House"
+    },
+    {
+      "type": "route",
+      "name": "Undella Town"
+    },
+    {
+      "type": "gym",
+      "name": "3rd Rival",
+      "value": "r4",
+      "group": "rival"
+    },
+    {
+      "type": "route",
+      "name": "Undella Bay"
+    },
+    {
+      "type": "route",
+      "name": "Route 13"
+    },
+    {
+      "type": "gym",
+      "name": "Lacunosa Town",
+      "value": "zinz1",
+      "group": "evil-team"
+    },
+    {
+      "type": "route",
+      "name": "Route 12"
+    },
+    {
+      "type": "route",
+      "name": "Village Bridge"
+    },
+    {
+      "type": "route",
+      "name": "Route 11"
+    },
+    {
+      "type": "route",
+      "name": "Route 9"
+    },
+    {
+      "type": "gym",
+      "name": "Opelucid City Gym",
+      "value": "7c",
+      "group": "gym-leader"
+    },
+    {
+      "type": "gym",
+      "name": "Opelucid City",
+      "value": "zinz2",
+      "group": "evil-team"
+    },
+    {
+      "type": "gym",
+      "name": "Opelucid City",
+      "value": "shad",
+      "group": "evil-team"
+    },
+    {
+      "type": "route",
+      "name": "Seaside Cave"
+    },
+    {
+      "type": "route",
+      "name": "Route 21"
+    },
+    {
+      "type": "route",
+      "name": "Humilau City"
+    },
+    {
+      "type": "gym",
+      "name": "Humilau City Gym",
+      "value": "7c",
+      "group": "gym-leader"
+    },
+    {
+      "type": "route",
+      "name": "Route 22"
+    },
+    {
+      "type": "gym",
+      "name": "Command Center",
+      "value": "zinz3",
+      "group": "evil-team"
+    },
+    {
+      "type": "gym",
+      "name": "Kyurem's Location",
+      "value": "zinz4",
+      "group": "evil-team"
+    },
+    {
+      "type": "gym",
+      "name": "Control Room",
+      "value": "col3",
+      "group": "evil-team"
+    },
+    {
+      "type": "route",
+      "name": "Giant Chasm"
+    },
+    {
+      "type": "gym",
+      "name": "Giant Chasm",
+      "value": "ghetsis",
+      "group": "evil-team"
+    },
+    {
+      "type": "route",
+      "name": "Route 23"
+    },
+    {
+      "type": "route",
+      "name": "Victory Road"
+    },
+    {
+      "type": "gym",
+      "name": "Final Rival",
+      "value": "r5",
+      "group": "rival"
+    },
+    {
+      "type": "gym",
+      "name": "Pokémon League W Room",
+      "value": "e1c",
+      "group": "elite-four"
+    },
+    {
+      "type": "gym",
+      "name": "Pokémon League NW Room",
+      "value": "e2c",
+      "group": "elite-four"
+    },
+    {
+      "type": "gym",
+      "name": "Pokémon League NE Room",
+      "value": "e3c",
+      "group": "elite-four"
+    },
+    {
+      "type": "gym",
+      "name": "Pokémon League E Room",
+      "value": "e4c",
+      "group": "elite-four"
+    },
+    {
+      "type": "gym",
+      "name": "Pokémon League Champion",
+      "value": "cc",
+      "group": "elite-four"
+    },
+    {
+      "type": "route",
+      "name": "Old Victory Road"
+    },
+    {
+      "type": "route",
+      "name": "Marvelous Bridge"
+    },
+    {
+      "type": "route",
+      "name": "Route 15"
+    },
+    {
+      "type": "route",
+      "name": "Route 14"
+    },
+    {
+      "type": "route",
+      "name": "Abundant Shrine"
+    },
+    {
+      "type": "route",
+      "name": "Moor of Icirrus"
+    },
+    {
+      "type": "route",
+      "name": "Icirrus City"
+    },
+    {
+      "type": "route",
+      "name": "Dragonspiral Tower"
+    },
+    {
+      "type": "route",
+      "name": "Twist Mountain"
+    },
+    {
+      "type": "route",
+      "name": "Clay Tunnel"
+    },
+    {
+      "type": "route",
+      "name": "Underground Ruins"
+    },
+    {
+      "type": "route",
+      "name": "Pinwheel Forest"
+    },
+    {
+      "type": "route",
+      "name": "Nacrene City"
+    },
+    {
+      "type": "route",
+      "name": "Route 3"
+    },
+    {
+      "type": "route",
+      "name": "Wellspring Cave"
+    },
+    {
+      "type": "route",
+      "name": "Striaton City"
+    },
+    {
+      "type": "route",
+      "name": "Dreamyard"
+    },
+    {
+      "type": "route",
+      "name": "Route 2"
+    },
+    {
+      "type": "route",
+      "name": "Accumula Town"
+    },
+    {
+      "type": "route",
+      "name": "Route 1"
+    },
+    {
+      "type": "route",
+      "name": "Route 17"
+    },
+    {
+      "type": "route",
+      "name": "Route 18"
+    },
+    {
+      "type": "route",
+      "name": "P2 Laboratory"
+    },
+    {
+      "type": "route",
+      "name": "Nature Preserve"
     }
   ],
   "dp": [

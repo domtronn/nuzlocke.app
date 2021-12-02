@@ -1,4 +1,2481 @@
 {
+  "b2w2": {
+    "col1": {
+      "name": "Colress",
+      "speciality": "steel",
+      "pokemon": [
+        {
+          "name": "magnemite",
+          "level": "21",
+          "moves": [
+            "thunder-wave",
+            "spark",
+            "magnet-bomb"
+          ],
+          "ability": "sturdy"
+        },
+        {
+          "name": "klink",
+          "level": "23",
+          "moves": [
+            "charge",
+            "thunder-shock",
+            "gear-grind"
+          ],
+          "ability": "plus"
+        }
+      ]
+    },
+    "col3": {
+      "name": "Colress",
+      "speciality": "steel",
+      "pokemon": [
+        {
+          "name": "magneton",
+          "level": "50",
+          "moves": [
+            "thunder-wave",
+            "volt-switch",
+            "tri-attack",
+            "flash-cannon"
+          ],
+          "ability": "sturdy",
+          "held": "eviolite"
+        },
+        {
+          "name": "beheeyem",
+          "level": "50",
+          "moves": [
+            "psychic",
+            "calm-mind",
+            "energy-ball",
+            "recover"
+          ],
+          "ability": "synchronize"
+        },
+        {
+          "name": "metang",
+          "level": "50",
+          "moves": [
+            "meteor-mash",
+            "rock-slide",
+            "agility",
+            "zen-headbutt"
+          ],
+          "ability": "clear-body"
+        },
+        {
+          "name": "magnezone",
+          "level": "50",
+          "moves": [
+            "discharge",
+            "thunder-wave",
+            "flash-cannon",
+            "explosion"
+          ],
+          "ability": "sturdy"
+        },
+        {
+          "name": "klinklang",
+          "level": "52",
+          "moves": [
+            "shift-gear",
+            "gear-grind",
+            "thunderbolt",
+            "giga-impact"
+          ],
+          "ability": "plus",
+          "held": "air-balloon"
+        }
+      ]
+    },
+    "rood": {
+      "name": "Rood",
+      "pokemon": [
+        {
+          "name": "herdier",
+          "level": "27",
+          "moves": [
+            "helping-hand",
+            "take-down",
+            "work-up",
+            "crunch"
+          ],
+          "ability": "intimidate"
+        },
+        {
+          "name": "swoobat",
+          "level": "27",
+          "moves": [
+            "heart-stamp",
+            "imprison",
+            "air-cutter",
+            "attract"
+          ],
+          "ability": "unaware"
+        }
+      ]
+    },
+    "zinz1": {
+      "name": "Zinzolin & Grunt",
+      "pokemon": [
+        {
+          "name": "cryogonal",
+          "level": "42",
+          "moves": [
+            "light-screen",
+            "reflect",
+            "slash",
+            "ice-beam"
+          ],
+          "ability": "levitate"
+        },
+        {
+          "name": "sneasel",
+          "level": "44",
+          "moves": [
+            "snatch",
+            "punishment",
+            "slash",
+            "screech"
+          ],
+          "ability": "inner-focus"
+        },
+        {
+          "name": "golbat",
+          "level": "39",
+          "moves": [
+            "air-cutter",
+            "acrobatics",
+            "mean-look",
+            "poison-fang"
+          ],
+          "ability": "inner-focus"
+        },
+        {
+          "name": "garbodor",
+          "level": "39",
+          "moves": [
+            "sludge-bomb",
+            "clear-smog",
+            "toxic",
+            "body-slam"
+          ],
+          "ability": "weak-armor"
+        }
+      ]
+    },
+    "zinz2": {
+      "name": "Zinzolin",
+      "pokemon": [
+        {
+          "name": "cryogonal",
+          "level": "46",
+          "moves": [
+            "slash",
+            "ice-beam",
+            "confuse-ray",
+            "reflect"
+          ],
+          "ability": "levitate"
+        },
+        {
+          "name": "cryogonal",
+          "level": "46",
+          "moves": [
+            "slash",
+            "ice-beam",
+            "confuse-ray",
+            "reflect"
+          ],
+          "ability": "levitate"
+        },
+        {
+          "name": "weavile",
+          "level": "48",
+          "moves": [
+            "slash",
+            "metal-claw",
+            "night-slash",
+            "ice-shard"
+          ],
+          "ability": "pressure"
+        }
+      ]
+    },
+    "zinz3": {
+      "name": "Zinzolin & grunt",
+      "pokemon": [
+        {
+          "name": "cryogonal",
+          "level": "48",
+          "moves": [
+            "slash",
+            "ice-beam",
+            "confuse-ray",
+            "reflect"
+          ],
+          "ability": "levitate"
+        },
+        {
+          "name": "cryogonal",
+          "level": "48",
+          "moves": [
+            "slash",
+            "ice-beam",
+            "confuse-ray",
+            "light-screen"
+          ],
+          "ability": "levitate"
+        },
+        {
+          "name": "weavile",
+          "level": "50",
+          "moves": [
+            "slash",
+            "metal-claw",
+            "night-slash",
+            "ice-shard"
+          ],
+          "ability": "pressure"
+        },
+        {
+          "name": "liepard",
+          "level": "45",
+          "moves": [
+            "taunt",
+            "assurance",
+            "night-slash",
+            "slash"
+          ],
+          "ability": "limber"
+        },
+        {
+          "name": "watchog",
+          "level": "45",
+          "moves": [
+            "slam",
+            "hyper-fang",
+            "baton-pass",
+            "mean-look"
+          ],
+          "ability": "illuminate"
+        },
+        {
+          "name": "scolipede",
+          "level": "45",
+          "moves": [
+            "steamroller",
+            "agility",
+            "baton-pass",
+            "toxic"
+          ],
+          "ability": "poison-point"
+        }
+      ]
+    },
+    "zinz4": {
+      "name": "Zinzolin",
+      "pokemon": [
+        {
+          "name": "cryogonal",
+          "level": "49",
+          "moves": [
+            "slash",
+            "ice-beam",
+            "confuse-ray",
+            "reflect"
+          ],
+          "ability": "levitate"
+        },
+        {
+          "name": "cryogonal",
+          "level": "49",
+          "moves": [
+            "slash",
+            "ice-beam",
+            "confuse-ray",
+            "light-screen"
+          ],
+          "ability": "levitate"
+        },
+        {
+          "name": "weavile",
+          "level": "51",
+          "moves": [
+            "slash",
+            "metal-claw",
+            "night-slash",
+            "ice-shard"
+          ],
+          "ability": "pressure"
+        }
+      ]
+    },
+    "shad": {
+      "name": "Shadow",
+      "pokemon": [
+        {
+          "name": "pawniard",
+          "level": "46",
+          "moves": [
+            "metal-claw",
+            "feint-attack",
+            "slash",
+            "scary-face"
+          ],
+          "ability": "defiant"
+        },
+        {
+          "name": "pawniard",
+          "level": "46",
+          "moves": [
+            "metal-claw",
+            "feint-attack",
+            "slash",
+            "scary-face"
+          ],
+          "ability": "inner-focus"
+        },
+        {
+          "name": "absol",
+          "level": "48",
+          "moves": [
+            "swords-dance",
+            "slash",
+            "night-slash",
+            "future-sight"
+          ],
+          "ability": "super-luck"
+        }
+      ]
+    },
+    "shad1": {
+      "name": "Shadow",
+      "pokemon": [
+        {
+          "name": "pawniard",
+          "level": "49",
+          "moves": [
+            "metal-claw",
+            "feint-attack",
+            "slash",
+            "scary-face"
+          ],
+          "ability": "defiant"
+        },
+        {
+          "name": "pawniard",
+          "level": "49",
+          "moves": [
+            "metal-claw",
+            "feint-attack",
+            "slash",
+            "hone-claws"
+          ],
+          "ability": "inner-focus"
+        },
+        {
+          "name": "absol",
+          "level": "51",
+          "moves": [
+            "swords-dance",
+            "slash",
+            "night-slash",
+            "future-sight"
+          ],
+          "ability": "super-luck"
+        }
+      ]
+    },
+    "shad2": {
+      "name": "Shadow",
+      "pokemon": [
+        {
+          "name": "pawniard",
+          "level": "49",
+          "moves": [
+            "metal-claw",
+            "feint-attack",
+            "slash",
+            "scary-face"
+          ],
+          "ability": "defiant"
+        },
+        {
+          "name": "pawniard",
+          "level": "49",
+          "moves": [
+            "metal-claw",
+            "feint-attack",
+            "slash",
+            "hone-claws"
+          ],
+          "ability": "inner-focus"
+        },
+        {
+          "name": "banette",
+          "level": "51",
+          "moves": [
+            "shadow-claw",
+            "will-o-wisp",
+            "psychic",
+            "sucker-punch"
+          ],
+          "ability": "insomnia"
+        }
+      ]
+    },
+    "shad3": {
+      "name": "Shadow",
+      "pokemon": [
+        {
+          "name": "pawniard",
+          "level": "49",
+          "moves": [
+            "metal-claw",
+            "feint-attack",
+            "slash",
+            "scary-face"
+          ],
+          "ability": "defiant"
+        },
+        {
+          "name": "pawniard",
+          "level": "49",
+          "moves": [
+            "metal-claw",
+            "feint-attack",
+            "slash",
+            "hone-claws"
+          ],
+          "ability": "inner-focus"
+        },
+        {
+          "name": "accelgor",
+          "level": "51",
+          "moves": [
+            "bug-buzz",
+            "giga-drain",
+            "me-first",
+            "swift"
+          ],
+          "ability": "hydration"
+        }
+      ]
+    },
+    "ghetsis": {
+      "name": "Ghetsis",
+      "pokemon": [
+        {
+          "name": "cofagrigus",
+          "level": "50",
+          "moves": [
+            "shadow-ball",
+            "psychic",
+            "protect",
+            "toxic"
+          ],
+          "ability": "mummy",
+          "held": "leftovers"
+        },
+        {
+          "name": "seismitoad",
+          "level": "50",
+          "moves": [
+            "muddy-water",
+            "earthquake",
+            "drain-punch",
+            "sludge-wave"
+          ],
+          "ability": "poison-touch"
+        },
+        {
+          "name": "eelektross",
+          "level": "50",
+          "moves": [
+            "flamethrower",
+            "acrobatics",
+            "thunderbolt",
+            "crunch"
+          ],
+          "ability": "levitate"
+        },
+        {
+          "name": "drapion",
+          "level": "50",
+          "moves": [
+            "night-slash",
+            "earthquake",
+            "poison-fang",
+            "x-scissor"
+          ],
+          "ability": "sniper"
+        },
+        {
+          "name": "toxicroak",
+          "level": "50",
+          "moves": [
+            "brick-break",
+            "shadow-ball",
+            "sucker-punch",
+            "poison-jab"
+          ],
+          "ability": "anticipation"
+        },
+        {
+          "name": "hydreigon",
+          "level": "52",
+          "moves": [
+            "dragon-rush",
+            "crunch",
+            "rock-slide",
+            "frustration"
+          ],
+          "ability": "levitate",
+          "held": "life-orb"
+        }
+      ]
+    },
+    "alder": {
+      "name": "Alder",
+      "speciality": "",
+      "pokemon": [
+        {
+          "name": "accelgor",
+          "level": "60",
+          "moves": [
+            "focus-blast",
+            "acid-spray",
+            "giga-drain",
+            "bug-buzz"
+          ],
+          "ability": "sticky-hold"
+        },
+        {
+          "name": "escavalier",
+          "level": "60",
+          "moves": [
+            "x-scissor",
+            "swords-dance",
+            "iron-head",
+            "reversal"
+          ],
+          "ability": "shell-armor"
+        },
+        {
+          "name": "bouffalant",
+          "level": "60",
+          "moves": [
+            "wild-charge",
+            "earthquake",
+            "megahorn",
+            "head-charge"
+          ],
+          "ability": "reckless"
+        },
+        {
+          "name": "conkeldurr",
+          "level": "60",
+          "moves": [
+            "stone-edge",
+            "superpower",
+            "earthquake",
+            "poison-jab"
+          ],
+          "ability": "guts"
+        },
+        {
+          "name": "braviary",
+          "level": "60",
+          "moves": [
+            "crush-claw",
+            "superpower",
+            "rock-slide",
+            "aerial-ace"
+          ],
+          "ability": "keen-eye"
+        },
+        {
+          "name": "volcarona",
+          "level": "62",
+          "moves": [
+            "quiver-dance",
+            "silver-wind",
+            "heat-wave",
+            "psychic"
+          ],
+          "ability": "flame-body",
+          "held": "sitrus-berry"
+        }
+      ]
+    },
+    "r1": {
+      "name": "Hugh",
+      "speciality": "",
+      "pokemon": [
+        {
+          "name": "tepig",
+          "level": "5",
+          "moves": [
+            "tackle",
+            "tail-whip"
+          ],
+          "ability": "blaze",
+          "starter": "grass"
+        },
+        {
+          "name": "oshawott",
+          "level": "5",
+          "moves": [
+            "tackle",
+            "tail-whip"
+          ],
+          "ability": "torrent",
+          "starter": "fire"
+        },
+        {
+          "name": "snivy",
+          "level": "5",
+          "moves": [
+            "tackle",
+            "leer"
+          ],
+          "ability": "overgrow",
+          "starter": "water"
+        }
+      ]
+    },
+    "r2": {
+      "name": "Hugh",
+      "speciality": "",
+      "pokemon": [
+        {
+          "name": "tepig",
+          "level": "8",
+          "moves": [
+            "tackle",
+            "tail-whip"
+          ],
+          "ability": "blaze",
+          "starter": "grass"
+        },
+        {
+          "name": "oshawott",
+          "level": "8",
+          "moves": [
+            "tackle",
+            "tail-whip"
+          ],
+          "ability": "torrent",
+          "starter": "fire"
+        },
+        {
+          "name": "snivy",
+          "level": "8",
+          "moves": [
+            "tackle",
+            "leer"
+          ],
+          "ability": "overgrow",
+          "starter": "water"
+        }
+      ]
+    },
+    "r3": {
+      "name": "Hugh",
+      "speciality": "",
+      "pokemon": [
+        {
+          "name": "pignite",
+          "level": "25",
+          "moves": [
+            "take-down",
+            "smog",
+            "heat-crash",
+            "rollout"
+          ],
+          "ability": "blaze",
+          "starter": "grass"
+        },
+        {
+          "name": "simipour",
+          "level": "25",
+          "moves": [
+            "scald",
+            "leer",
+            "lick",
+            "fury-swipes"
+          ],
+          "ability": "gluttony",
+          "starter": "grass"
+        },
+        {
+          "name": "dewott",
+          "level": "25",
+          "moves": [
+            "aqua-jet",
+            "water-pulse",
+            "revenge",
+            "fury-cutter"
+          ],
+          "ability": "torrent",
+          "starter": "fire"
+        },
+        {
+          "name": "simisage",
+          "level": "25",
+          "moves": [
+            "seed-bomb",
+            "leer",
+            "lick",
+            "fury-swipes"
+          ],
+          "ability": "gluttony",
+          "starter": "fire"
+        },
+        {
+          "name": "servine",
+          "level": "25",
+          "moves": [
+            "leech-seed",
+            "leaf-blade",
+            "mega-drain",
+            "slam"
+          ],
+          "ability": "overgrow",
+          "starter": "water"
+        },
+        {
+          "name": "simisear",
+          "level": "25",
+          "moves": [
+            "flame-burst",
+            "leer",
+            "lick",
+            "fury-swipes"
+          ],
+          "ability": "gluttony",
+          "starter": "water"
+        },
+        {
+          "name": "tranquill",
+          "level": "25",
+          "moves": [
+            "air-cutter",
+            "roost",
+            "taunt",
+            "detect"
+          ],
+          "ability": "super-luck"
+        }
+      ]
+    },
+    "r4": {
+      "name": "Hugh",
+      "speciality": "",
+      "pokemon": [
+        {
+          "name": "unfezant",
+          "level": "39",
+          "moves": [
+            "taunt",
+            "air-slash",
+            "razor-wind",
+            "detect"
+          ],
+          "ability": "super-luck",
+          "held": "scope-lens"
+        },
+        {
+          "name": "simipour",
+          "level": "39",
+          "moves": [
+            "scald",
+            "leer",
+            "lick",
+            "fury-swipes"
+          ],
+          "ability": "gluttony",
+          "held": "mystic-water",
+          "starter": "grass"
+        },
+        {
+          "name": "emboar",
+          "level": "41",
+          "moves": [
+            "take-down",
+            "assurance",
+            "heat-crash",
+            "rollout"
+          ],
+          "ability": "blaze",
+          "held": "charcoal",
+          "starter": "grass"
+        },
+        {
+          "name": "simisage",
+          "level": "39",
+          "moves": [
+            "seed-bomb",
+            "leer",
+            "lick",
+            "fury-swipes"
+          ],
+          "ability": "gluttony",
+          "held": "miracle-seed",
+          "starter": "fire"
+        },
+        {
+          "name": "dewott",
+          "level": "41",
+          "moves": [
+            "aqua-jet",
+            "encore",
+            "revenge",
+            "slash"
+          ],
+          "ability": "torrent",
+          "held": "mystic-water",
+          "starter": "fire"
+        },
+        {
+          "name": "simisear",
+          "level": "39",
+          "moves": [
+            "flame-burst",
+            "leer",
+            "lick",
+            "fury-swipes"
+          ],
+          "ability": "gluttony",
+          "held": "charcoal",
+          "starter": "water"
+        },
+        {
+          "name": "servine",
+          "level": "41",
+          "moves": [
+            "coil",
+            "leaf-blade",
+            "mega-drain",
+            "slam"
+          ],
+          "ability": "overgrow",
+          "held": "miracle-seed",
+          "starter": "water"
+        }
+      ]
+    },
+    "r5": {
+      "name": "Hugh",
+      "speciality": "",
+      "pokemon": [
+        {
+          "name": "unfezant",
+          "level": "55",
+          "moves": [
+            "facade",
+            "aerial-ace",
+            "u-turn",
+            "swagger"
+          ],
+          "ability": "super-luck",
+          "held": "scope-lens"
+        },
+        {
+          "name": "simipour",
+          "level": "55",
+          "moves": [
+            "surf",
+            "rock-slide",
+            "crunch",
+            "brick-break"
+          ],
+          "ability": "gluttony",
+          "held": "mystic-water",
+          "starter": "grass"
+        },
+        {
+          "name": "simisage",
+          "level": "55",
+          "moves": [
+            "energy-ball",
+            "crunch",
+            "brick-break",
+            "rock-slide"
+          ],
+          "ability": "gluttony",
+          "held": "miracle-seed",
+          "starter": "fire"
+        },
+        {
+          "name": "simisear",
+          "level": "55",
+          "moves": [
+            "rock-slide",
+            "crunch",
+            "brick-break",
+            "flamethrower"
+          ],
+          "ability": "gluttony",
+          "held": "charcoal",
+          "starter": "water"
+        },
+        {
+          "name": "bouffalant",
+          "level": "55",
+          "moves": [
+            "head-charge",
+            "wild-charge",
+            "megahorn",
+            "earthquake"
+          ],
+          "ability": "sap-sipper"
+        },
+        {
+          "name": "emboar",
+          "level": "57",
+          "moves": [
+            "flamethrower",
+            "rock-slide",
+            "brick-break",
+            "scald"
+          ],
+          "ability": "blaze",
+          "held": "charcoal",
+          "starter": "grass"
+        },
+        {
+          "name": "samurott",
+          "level": "57",
+          "moves": [
+            "surf",
+            "x-scissor",
+            "revenge",
+            "ice-beam"
+          ],
+          "ability": "torrent",
+          "held": "mystic-water",
+          "starter": "fire"
+        },
+        {
+          "name": "serperior",
+          "level": "57",
+          "moves": [
+            "giga-drain",
+            "leaf-blade",
+            "dragon-tail",
+            "coil"
+          ],
+          "ability": "overgrow",
+          "held": "miracle-seed",
+          "starter": "water"
+        }
+      ]
+    },
+    "ch": {
+      "name": "Cheren",
+      "speciality": "normal",
+      "pokemon": [
+        {
+          "name": "stoutland",
+          "level": "25",
+          "moves": [
+            "tackle",
+            "work-up",
+            "odor-sleuth",
+            "bite"
+          ],
+          "ability": "intimidate"
+        },
+        {
+          "name": "cinccino",
+          "level": "25",
+          "moves": [
+            "sing",
+            "work-up",
+            "wake-up-slap",
+            "bullet-seed"
+          ],
+          "ability": "cute-charm"
+        },
+        {
+          "name": "watchog",
+          "level": "25",
+          "moves": [
+            "confuse-ray",
+            "work-up",
+            "hypnosis",
+            "bite"
+          ],
+          "ability": "illuminate"
+        }
+      ]
+    },
+    "col2": {
+      "name": "Colress",
+      "speciality": "steel",
+      "pokemon": [
+        {
+          "name": "magneton",
+          "level": "25",
+          "moves": [
+            "thunder-wave",
+            "thunder-shock",
+            "supersonic",
+            "mirror-shot"
+          ],
+          "ability": "sturdy"
+        },
+        {
+          "name": "elgyem",
+          "level": "25",
+          "moves": [
+            "growl",
+            "headbutt",
+            "psybeam",
+            "heal-block"
+          ],
+          "ability": "telepathy"
+        },
+        {
+          "name": "klink",
+          "level": "25",
+          "moves": [
+            "charge",
+            "thunder-shock",
+            "gear-grind",
+            "bind"
+          ],
+          "ability": "plus"
+        }
+      ]
+    },
+    "gf1": {
+      "name": "Morimoto",
+      "pokemon": [
+        {
+          "name": "pansage",
+          "level": "14",
+          "moves": [
+            "vine-whip",
+            "lick",
+            "fury-swipes"
+          ],
+          "ability": "gluttony",
+          "held": "oran-berry"
+        },
+        {
+          "name": "pansear",
+          "level": "14",
+          "moves": [
+            "incinerate",
+            "lick",
+            "fury-swipes"
+          ],
+          "ability": "gluttony",
+          "held": "oran-berry"
+        },
+        {
+          "name": "panpour",
+          "level": "14",
+          "moves": [
+            "water-gun",
+            "lick",
+            "fury-swipes"
+          ],
+          "ability": "gluttony",
+          "held": "oran-berry"
+        }
+      ]
+    },
+    "gf2": {
+      "name": "Nishino",
+      "pokemon": [
+        {
+          "name": "clefairy",
+          "level": "16",
+          "moves": [
+            "growl",
+            "double-slap",
+            "follow-me",
+            "encore"
+          ],
+          "ability": "cute-charm",
+          "held": "leftovers"
+        }
+      ]
+    },
+    "subway": {
+      "name": "Ingo & Emmet",
+      "pokemon": [
+        {
+          "name": "gurdurr",
+          "level": "26",
+          "moves": [
+            "wake-up-slap",
+            "low-kick",
+            "rock-throw",
+            "chip-away"
+          ],
+          "ability": "sheer-force"
+        },
+        {
+          "name": "boldore",
+          "level": "26",
+          "moves": [
+            "iron-defense",
+            "mud-slap",
+            "power-gem",
+            "smack-down"
+          ],
+          "ability": "sturdy"
+        }
+      ]
+    },
+    "charles": {
+      "name": "Charles",
+      "pokemon": [
+        {
+          "name": "sigilyph",
+          "level": "26",
+          "moves": [
+            "air-cutter",
+            "whirlwind",
+            "psybeam",
+            "light-screen"
+          ],
+          "ability": "magic-guard"
+        },
+        {
+          "name": "archen",
+          "level": "26",
+          "moves": [
+            "pluck",
+            "agility",
+            "ancient-power",
+            "quick-guard"
+          ],
+          "ability": "defeatist"
+        },
+        {
+          "name": "tirtouga",
+          "level": "26",
+          "moves": [
+            "wide-guard",
+            "ancient-power",
+            "aqua-jet",
+            "crunch"
+          ],
+          "ability": "solid-rock"
+        }
+      ]
+    },
+    "1n": {
+      "name": "Cheren",
+      "speciality": "normal",
+      "pokemon": [
+        {
+          "name": "patrat",
+          "level": "11",
+          "moves": [
+            "tackle",
+            "work-up",
+            "bite"
+          ],
+          "ability": "keen-eye"
+        },
+        {
+          "name": "lillipup",
+          "level": "13",
+          "moves": [
+            "tackle",
+            "work-up",
+            "bite"
+          ],
+          "ability": "vital-spirit"
+        }
+      ]
+    },
+    "1c": {
+      "name": "Cheren",
+      "speciality": "normal",
+      "pokemon": [
+        {
+          "name": "patrat",
+          "level": "12",
+          "moves": [
+            "tackle",
+            "work-up",
+            "bite",
+            "detect"
+          ],
+          "ability": "keen-eye"
+        },
+        {
+          "name": "pidove",
+          "level": "12",
+          "moves": [
+            "quick-attack",
+            "work-up",
+            "leer",
+            "growl"
+          ],
+          "ability": "super-luck"
+        },
+        {
+          "name": "lillipup",
+          "level": "14",
+          "moves": [
+            "tackle",
+            "work-up",
+            "bite",
+            "helping-hand"
+          ],
+          "ability": "vital-spirit",
+          "held": "oran-berry"
+        }
+      ]
+    },
+    "2n": {
+      "name": "Roxie",
+      "speciality": "poison",
+      "pokemon": [
+        {
+          "name": "koffing",
+          "level": "16",
+          "moves": [
+            "assurance",
+            "tackle",
+            "smog"
+          ],
+          "ability": "levitate"
+        },
+        {
+          "name": "whirlipede",
+          "level": "18",
+          "moves": [
+            "venoshock",
+            "poison-sting",
+            "protect",
+            "pursuit"
+          ],
+          "ability": "poison-point"
+        }
+      ]
+    },
+    "2c": {
+      "name": "Roxie",
+      "speciality": "poison",
+      "pokemon": [
+        {
+          "name": "koffing",
+          "level": "17",
+          "moves": [
+            "assurance",
+            "tackle",
+            "smog",
+            "venoshock"
+          ],
+          "ability": "levitate",
+          "held": "oran-berry"
+        },
+        {
+          "name": "grimer",
+          "level": "17",
+          "moves": [
+            "venoshock",
+            "mud-slap",
+            "poison-gas",
+            "disable"
+          ],
+          "ability": "stench"
+        },
+        {
+          "name": "whirlipede",
+          "level": "19",
+          "moves": [
+            "venoshock",
+            "poison-sting",
+            "protect",
+            "rollout"
+          ],
+          "ability": "poison-point",
+          "held": "oran-berry"
+        }
+      ]
+    },
+    "3n": {
+      "name": "Burgh",
+      "speciality": "bug",
+      "pokemon": [
+        {
+          "name": "dwebble",
+          "level": "22",
+          "moves": [
+            "rock-polish",
+            "smack-down",
+            "feint-attack",
+            "struggle-bug"
+          ],
+          "ability": "sturdy"
+        },
+        {
+          "name": "swadloon",
+          "level": "22",
+          "moves": [
+            "string-shot",
+            "struggle-bug",
+            "protect",
+            "razor-leaf"
+          ],
+          "ability": "leaf-guard"
+        },
+        {
+          "name": "leavanny",
+          "level": "24",
+          "moves": [
+            "cut",
+            "razor-leaf",
+            "string-shot",
+            "struggle-bug"
+          ],
+          "ability": "swarm",
+          "held": "sitrus-berry"
+        }
+      ]
+    },
+    "3c": {
+      "name": "Burgh",
+      "speciality": "bug",
+      "pokemon": [
+        {
+          "name": "dwebble",
+          "level": "24",
+          "moves": [
+            "rock-polish",
+            "rock-blast",
+            "feint-attack",
+            "struggle-bug"
+          ],
+          "ability": "sturdy",
+          "held": "sitrus-berry"
+        },
+        {
+          "name": "shelmet",
+          "level": "24",
+          "moves": [
+            "acid",
+            "curse",
+            "mega-drain",
+            "struggle-bug"
+          ],
+          "ability": "shell-armor"
+        },
+        {
+          "name": "karrablast",
+          "level": "24",
+          "moves": [
+            "endure",
+            "headbutt",
+            "aerial-ace",
+            "struggle-bug"
+          ],
+          "ability": "shed-skin"
+        },
+        {
+          "name": "leavanny",
+          "level": "26",
+          "moves": [
+            "grass-whistle",
+            "razor-leaf",
+            "aerial-ace",
+            "struggle-bug"
+          ],
+          "ability": "swarm",
+          "held": "sitrus-berry"
+        }
+      ]
+    },
+    "4n": {
+      "name": "Elesa",
+      "speciality": "electric",
+      "pokemon": [
+        {
+          "name": "emolga",
+          "level": "28",
+          "moves": [
+            "quick-attack",
+            "pursuit",
+            "volt-switch"
+          ],
+          "ability": "static"
+        },
+        {
+          "name": "flaaffy",
+          "level": "28",
+          "moves": [
+            "thunder-wave",
+            "volt-switch",
+            "take-down"
+          ],
+          "ability": "static"
+        },
+        {
+          "name": "zebstrika",
+          "level": "30",
+          "moves": [
+            "volt-switch",
+            "pursuit",
+            "flame-charge",
+            "quick-attack"
+          ],
+          "ability": "motor-drive",
+          "held": "sitrus-berry"
+        }
+      ]
+    },
+    "4c": {
+      "name": "Elesa",
+      "speciality": "electric",
+      "pokemon": [
+        {
+          "name": "emolga",
+          "level": "30",
+          "moves": [
+            "quick-attack",
+            "pursuit",
+            "aerial-ace",
+            "volt-switch"
+          ],
+          "ability": "static",
+          "held": "sitrus-berry"
+        },
+        {
+          "name": "flaaffy",
+          "level": "30",
+          "moves": [
+            "thunder-wave",
+            "volt-switch",
+            "confuse-ray",
+            "take-down"
+          ],
+          "ability": "static"
+        },
+        {
+          "name": "joltik",
+          "level": "30",
+          "moves": [
+            "thunder-wave",
+            "volt-switch",
+            "energy-ball",
+            "x-scissor"
+          ],
+          "ability": "unnerve"
+        },
+        {
+          "name": "zebstrika",
+          "level": "32",
+          "moves": [
+            "volt-switch",
+            "pursuit",
+            "flame-charge",
+            "stomp"
+          ],
+          "ability": "motor-drive",
+          "held": "sitrus-berry"
+        }
+      ]
+    },
+    "5n": {
+      "name": "Clay",
+      "speciality": "ground",
+      "pokemon": [
+        {
+          "name": "krokorok",
+          "level": "31",
+          "moves": [
+            "crunch",
+            "torment",
+            "sand-tomb",
+            "bulldoze"
+          ],
+          "ability": "intimidate"
+        },
+        {
+          "name": "sandslash",
+          "level": "31",
+          "moves": [
+            "bulldoze",
+            "rollout",
+            "crush-claw",
+            "fury-cutter"
+          ],
+          "ability": "sand-veil"
+        },
+        {
+          "name": "excadrill",
+          "level": "33",
+          "moves": [
+            "slash",
+            "bulldoze",
+            "metal-claw",
+            "rock-slide"
+          ],
+          "ability": "sand-force",
+          "held": "sitrus-berry"
+        }
+      ]
+    },
+    "5c": {
+      "name": "Clay",
+      "speciality": "ground",
+      "pokemon": [
+        {
+          "name": "krokorok",
+          "level": "34",
+          "moves": [
+            "crunch",
+            "torment",
+            "sandstorm",
+            "bulldoze"
+          ],
+          "ability": "intimidate",
+          "held": "sitrus-berry"
+        },
+        {
+          "name": "sandslash",
+          "level": "34",
+          "moves": [
+            "bulldoze",
+            "rock-slide",
+            "crush-claw",
+            "hone-claws"
+          ],
+          "ability": "sand-veil"
+        },
+        {
+          "name": "onix",
+          "level": "34",
+          "moves": [
+            "explosion",
+            "bulldoze",
+            "rock-polish",
+            "rock-slide"
+          ],
+          "ability": "sturdy"
+        },
+        {
+          "name": "excadrill",
+          "level": "36",
+          "moves": [
+            "slash",
+            "bulldoze",
+            "metal-claw",
+            "rock-slide"
+          ],
+          "ability": "sand-force",
+          "held": "sitrus-berry"
+        }
+      ]
+    },
+    "6n": {
+      "name": "Skyla",
+      "speciality": "flying",
+      "pokemon": [
+        {
+          "name": "swoobat",
+          "level": "37",
+          "moves": [
+            "heart-stamp",
+            "attract",
+            "acrobatic",
+            "assurance"
+          ],
+          "ability": "unaware"
+        },
+        {
+          "name": "skarmory",
+          "level": "37",
+          "moves": [
+            "aerial-ace",
+            "steel-wing",
+            "fury-attack",
+            "agility"
+          ],
+          "ability": "sturdy",
+          "held": "sitrus-berry"
+        },
+        {
+          "name": "swanna",
+          "level": "39",
+          "moves": [
+            "roost",
+            "feather-dance",
+            "air-slash",
+            "bubble-beam"
+          ],
+          "ability": "big-pecks",
+          "held": "sitrus-berry"
+        }
+      ]
+    },
+    "6c": {
+      "name": "Skyla",
+      "speciality": "flying",
+      "pokemon": [
+        {
+          "name": "swoobat",
+          "level": "40",
+          "moves": [
+            "psychic",
+            "acrobatic",
+            "energy-ball",
+            "attract"
+          ],
+          "ability": "unaware"
+        },
+        {
+          "name": "skarmory",
+          "level": "40",
+          "moves": [
+            "aerial-ace",
+            "steel-wing",
+            "x-scissor",
+            "agility"
+          ],
+          "ability": "sturdy",
+          "held": "sitrus-berry"
+        },
+        {
+          "name": "sigilyph",
+          "level": "40",
+          "moves": [
+            "psychic",
+            "hypnosis",
+            "air-cutter",
+            "flash-cannon"
+          ],
+          "ability": "magic-guard"
+        },
+        {
+          "name": "swanna",
+          "level": "42",
+          "moves": [
+            "roost",
+            "feather-dance",
+            "air-slash",
+            "surf"
+          ],
+          "ability": "big-pecks",
+          "held": "sitrus-berry"
+        }
+      ]
+    },
+    "7n": {
+      "name": "Drayden",
+      "speciality": "dragon",
+      "pokemon": [
+        {
+          "name": "druddigon",
+          "level": "46",
+          "moves": [
+            "revenge",
+            "crunch",
+            "slash",
+            "dragon-tail"
+          ],
+          "ability": "sheer-force"
+        },
+        {
+          "name": "flygon",
+          "level": "46",
+          "moves": [
+            "rock-slide",
+            "dragon-tail",
+            "crunch",
+            "earth-power"
+          ],
+          "ability": "levitate"
+        },
+        {
+          "name": "haxorus",
+          "level": "48",
+          "moves": [
+            "dragon-dance",
+            "dragon-tail",
+            "slash",
+            "assurance"
+          ],
+          "ability": "mold-breaker",
+          "held": "sitrus-berry"
+        }
+      ]
+    },
+    "7c": {
+      "name": "Drayden",
+      "speciality": "dragon",
+      "pokemon": [
+        {
+          "name": "druddigon",
+          "level": "50",
+          "moves": [
+            "revenge",
+            "crunch",
+            "slash",
+            "rock-slide"
+          ],
+          "ability": "sheer-force",
+          "held": "sitrus-berry"
+        },
+        {
+          "name": "flygon",
+          "level": "50",
+          "moves": [
+            "rock-slide",
+            "dragon-tail",
+            "crunch",
+            "earth-power"
+          ],
+          "ability": "levitate"
+        },
+        {
+          "name": "altaria",
+          "level": "50",
+          "moves": [
+            "cotton-guard",
+            "fire-blast",
+            "sing",
+            "dragon-pulse"
+          ],
+          "ability": "natural-cure"
+        },
+        {
+          "name": "haxorus",
+          "level": "52",
+          "moves": [
+            "dragon-dance",
+            "dragon-tail",
+            "x-scissor",
+            "shadow-claw"
+          ],
+          "ability": "mold-breaker",
+          "held": "sitrus-berry"
+        }
+      ]
+    },
+    "8n": {
+      "name": "Marlon",
+      "speciality": "water",
+      "pokemon": [
+        {
+          "name": "carracosta",
+          "level": "49",
+          "moves": [
+            "smack-down",
+            "shell-smash",
+            "scald",
+            "crunch"
+          ],
+          "ability": "sturdy"
+        },
+        {
+          "name": "wailord",
+          "level": "49",
+          "moves": [
+            "scald",
+            "amnesia",
+            "rollout",
+            "bounce"
+          ],
+          "ability": "water-veil"
+        },
+        {
+          "name": "jellicent",
+          "level": "51",
+          "moves": [
+            "brine",
+            "scald",
+            "recover",
+            "ominous-wind"
+          ],
+          "ability": "cursed-body",
+          "held": "sitrus-berry"
+        }
+      ]
+    },
+    "8c": {
+      "name": "Marlon",
+      "speciality": "water",
+      "pokemon": [
+        {
+          "name": "wailord",
+          "level": "53",
+          "moves": [
+            "scald",
+            "rain-dance",
+            "ice-beam",
+            "earthquake"
+          ],
+          "ability": "water-veil"
+        },
+        {
+          "name": "mantine",
+          "level": "53",
+          "moves": [
+            "air-slash",
+            "confuse-ray",
+            "ice-beam",
+            "scald"
+          ],
+          "ability": "swift-swim"
+        },
+        {
+          "name": "carracosta",
+          "level": "53",
+          "moves": [
+            "rock-slide",
+            "shell-smash",
+            "scald",
+            "crunch"
+          ],
+          "ability": "sturdy",
+          "held": "sitrus-berry"
+        },
+        {
+          "name": "jellicent",
+          "level": "55",
+          "moves": [
+            "energy-ball",
+            "recover",
+            "scald",
+            "shadow-ball"
+          ],
+          "ability": "cursed-body",
+          "held": "sitrus-berry"
+        }
+      ]
+    },
+    "e1n": {
+      "name": "Shauntal",
+      "speciality": "ghost",
+      "pokemon": [
+        {
+          "name": "cofagrigus",
+          "level": "56",
+          "moves": [
+            "grass-knot",
+            "shadow-ball",
+            "will-o-wisp",
+            "psychic"
+          ],
+          "ability": "mummy"
+        },
+        {
+          "name": "drifblim",
+          "level": "56",
+          "moves": [
+            "acrobatics",
+            "thunderbolt",
+            "shadow-ball",
+            "psychic"
+          ],
+          "ability": "aftermath"
+        },
+        {
+          "name": "golurk",
+          "level": "56",
+          "moves": [
+            "heavy-slam",
+            "earthquake",
+            "brick-break",
+            "shadow-punch"
+          ],
+          "ability": "iron-fist"
+        },
+        {
+          "name": "chandelure",
+          "level": "58",
+          "moves": [
+            "fire-blast",
+            "energy-ball",
+            "shadow-ball",
+            "psychic"
+          ],
+          "ability": "flame-body",
+          "held": "sitrus-berry"
+        }
+      ]
+    },
+    "e1c": {
+      "name": "Shauntal",
+      "speciality": "ghost",
+      "pokemon": [
+        {
+          "name": "cofagrigus",
+          "level": "60",
+          "moves": [
+            "grass-knot",
+            "shadow-ball",
+            "will-o-wisp",
+            "psychic"
+          ],
+          "ability": "mummy",
+          "held": "leftovers"
+        },
+        {
+          "name": "drifblim",
+          "level": "60",
+          "moves": [
+            "psychic",
+            "thunderbolt",
+            "shadow-ball",
+            "acrobatics"
+          ],
+          "ability": "unburden",
+          "held": "flying-gem"
+        },
+        {
+          "name": "golurk",
+          "level": "60",
+          "moves": [
+            "heavy-slam",
+            "earthquake",
+            "brick-break",
+            "shadow-punch"
+          ],
+          "ability": "iron-fist",
+          "held": "expert-belt"
+        },
+        {
+          "name": "banette",
+          "level": "60",
+          "moves": [
+            "shadow-claw",
+            "will-o-wisp",
+            "psychic",
+            "sucker-punch"
+          ],
+          "ability": "insomnia",
+          "held": "muscle-band"
+        },
+        {
+          "name": "chandelure",
+          "level": "62",
+          "moves": [
+            "fire-blast",
+            "energy-ball",
+            "shadow-ball",
+            "psychic"
+          ],
+          "ability": "flame-body",
+          "held": "choice-scarf"
+        }
+      ]
+    },
+    "e2n": {
+      "name": "Grimsley",
+      "speciality": "dark",
+      "pokemon": [
+        {
+          "name": "liepard",
+          "level": "56",
+          "moves": [
+            "fake-out",
+            "attract",
+            "night-slash",
+            "aerial-ace"
+          ],
+          "ability": "limber"
+        },
+        {
+          "name": "scrafty",
+          "level": "56",
+          "moves": [
+            "rock-tomb",
+            "crunch",
+            "brick-break",
+            "poison-jab"
+          ],
+          "ability": "moxie"
+        },
+        {
+          "name": "krookodile",
+          "level": "56",
+          "moves": [
+            "crunch",
+            "dragon-claw",
+            "rock-tomb",
+            "earthquake"
+          ],
+          "ability": "intimidate"
+        },
+        {
+          "name": "bisharp",
+          "level": "58",
+          "moves": [
+            "night-slash",
+            "aerial-ace",
+            "x-scissor",
+            "metal-claw"
+          ],
+          "ability": "defiant",
+          "held": "sitrus-berry"
+        }
+      ]
+    },
+    "e2c": {
+      "name": "Grimsley",
+      "speciality": "dark",
+      "pokemon": [
+        {
+          "name": "liepard",
+          "level": "60",
+          "moves": [
+            "fake-out",
+            "attract",
+            "night-slash",
+            "aerial-ace"
+          ],
+          "ability": "unburden",
+          "held": "normal-gem"
+        },
+        {
+          "name": "scrafty",
+          "level": "60",
+          "moves": [
+            "rock-tomb",
+            "crunch",
+            "brick-break",
+            "poison-jab"
+          ],
+          "ability": "moxie",
+          "held": "leftovers"
+        },
+        {
+          "name": "krookodile",
+          "level": "60",
+          "moves": [
+            "crunch",
+            "dragon-claw",
+            "rock-tomb",
+            "earthquake"
+          ],
+          "ability": "intimidate",
+          "held": "expert-belt"
+        },
+        {
+          "name": "absol",
+          "level": "60",
+          "moves": [
+            "swords-dance",
+            "psycho-cut",
+            "x-scissor",
+            "night-slash"
+          ],
+          "ability": "super-luck",
+          "held": "muscle-band"
+        },
+        {
+          "name": "bisharp",
+          "level": "62",
+          "moves": [
+            "metal-claw",
+            "aerial-ace",
+            "x-scissor",
+            "night-slash"
+          ],
+          "ability": "defiant",
+          "held": "quick-claw"
+        }
+      ]
+    },
+    "e3n": {
+      "name": "Caitlin",
+      "speciality": "psychic",
+      "pokemon": [
+        {
+          "name": "musharna",
+          "level": "56",
+          "moves": [
+            "reflect",
+            "yawn",
+            "dream-eater",
+            "charge-beam"
+          ],
+          "ability": "synchronize"
+        },
+        {
+          "name": "sigilyph",
+          "level": "56",
+          "moves": [
+            "psychic",
+            "shadow-ball",
+            "ice-beam",
+            "air-slash"
+          ],
+          "ability": "wonder-skin"
+        },
+        {
+          "name": "reuniclus",
+          "level": "56",
+          "moves": [
+            "psychic",
+            "energy-ball",
+            "focus-blast",
+            "recover"
+          ],
+          "ability": "magic-guard"
+        },
+        {
+          "name": "gothitelle",
+          "level": "58",
+          "moves": [
+            "calm-mind",
+            "psychic",
+            "shadow-ball",
+            "thunderbolt"
+          ],
+          "ability": "frisk",
+          "held": "sitrus-berry"
+        }
+      ]
+    },
+    "e3c": {
+      "name": "Caitlin",
+      "speciality": "psychic",
+      "pokemon": [
+        {
+          "name": "musharna",
+          "level": "60",
+          "moves": [
+            "reflect",
+            "hypnosis",
+            "dream-eater",
+            "charge-beam"
+          ],
+          "ability": "synchronize",
+          "held": "zoom-lens"
+        },
+        {
+          "name": "sigilyph",
+          "level": "60",
+          "moves": [
+            "psychic",
+            "shadow-ball",
+            "ice-beam",
+            "air-slash"
+          ],
+          "ability": "wonder-skin",
+          "held": "expert-belt"
+        },
+        {
+          "name": "reuniclus",
+          "level": "60",
+          "moves": [
+            "psychic",
+            "energy-ball",
+            "focus-blast",
+            "recover"
+          ],
+          "ability": "magic-guard",
+          "held": "leftovers"
+        },
+        {
+          "name": "gothitelle",
+          "level": "60",
+          "moves": [
+            "calm-mind",
+            "psychic",
+            "shadow-ball",
+            "thunderbolt"
+          ],
+          "ability": "frisk",
+          "held": "wise-glasses"
+        },
+        {
+          "name": "metagross",
+          "level": "62",
+          "moves": [
+            "zen-headbutt",
+            "bullet-punch",
+            "hammer-arm",
+            "shadow-ball"
+          ],
+          "ability": "clear-body",
+          "held": "life-orb"
+        }
+      ]
+    },
+    "e4n": {
+      "name": "Caitlin",
+      "speciality": "fighting",
+      "pokemon": [
+        {
+          "name": "throh",
+          "level": "56",
+          "moves": [
+            "storm-throw",
+            "bulldoze",
+            "rock-tomb",
+            "payback"
+          ],
+          "ability": "guts"
+        },
+        {
+          "name": "sawk",
+          "level": "56",
+          "moves": [
+            "brick-break",
+            "rock-slide",
+            "retaliate",
+            "payback"
+          ],
+          "ability": "sturdy"
+        },
+        {
+          "name": "mienshao",
+          "level": "56",
+          "moves": [
+            "high-jump-kick",
+            "u-turn",
+            "bounce",
+            "retaliate"
+          ],
+          "ability": "regenerator"
+        },
+        {
+          "name": "conkeldurr",
+          "level": "58",
+          "moves": [
+            "hammer-arm",
+            "bulk-up",
+            "stone-edge",
+            "retaliate"
+          ],
+          "ability": "sheer-force",
+          "held": "sitrus-berry"
+        }
+      ]
+    },
+    "e4c": {
+      "name": "Caitlin",
+      "speciality": "fighting",
+      "pokemon": [
+        {
+          "name": "throh",
+          "level": "60",
+          "moves": [
+            "storm-throw",
+            "bulldoze",
+            "rock-tomb",
+            "payback"
+          ],
+          "ability": "guts",
+          "held": "leftovers"
+        },
+        {
+          "name": "sawk",
+          "level": "60",
+          "moves": [
+            "brick-break",
+            "rock-slide",
+            "retaliate",
+            "payback"
+          ],
+          "ability": "sturdy",
+          "held": "muscle-band"
+        },
+        {
+          "name": "mienshao",
+          "level": "60",
+          "moves": [
+            "high-jump-kick",
+            "u-turn",
+            "bounce",
+            "retaliate"
+          ],
+          "ability": "regenerator",
+          "held": "expert-belt"
+        },
+        {
+          "name": "lucario",
+          "level": "60",
+          "moves": [
+            "shadow-ball",
+            "aura-sphere",
+            "psychic",
+            "calm-mind"
+          ],
+          "ability": "inner-focus",
+          "held": "wise-glasses"
+        },
+        {
+          "name": "conkeldurr",
+          "level": "62",
+          "moves": [
+            "hammer-arm",
+            "bulk-up",
+            "stone-edge",
+            "earthquake"
+          ],
+          "ability": "guts",
+          "held": "flame-orb"
+        }
+      ]
+    },
+    "cc": {
+      "name": "Iris",
+      "pokemon": [
+        {
+          "name": "hydreigon",
+          "level": "61",
+          "moves": [
+            "dragon-pulse",
+            "surf",
+            "fire-blast",
+            "focus-blast"
+          ],
+          "ability": "levitate",
+          "held": "wise-glasses"
+        },
+        {
+          "name": "druddigon",
+          "level": "61",
+          "moves": [
+            "outrage",
+            "fire-punch",
+            "thunder-punch",
+            "focus-blast"
+          ],
+          "ability": "sheer-force",
+          "held": "life-orb"
+        },
+        {
+          "name": "aggron",
+          "level": "61",
+          "moves": [
+            "head-smash",
+            "double-edge",
+            "earthquake",
+            "autotomize"
+          ],
+          "ability": "rock-head",
+          "held": "muscle-band"
+        },
+        {
+          "name": "archeops",
+          "level": "61",
+          "moves": [
+            "acrobatics",
+            "stone-edge",
+            "dragon-claw",
+            "endeavor"
+          ],
+          "ability": "defeatist",
+          "held": "flying-gem"
+        },
+        {
+          "name": "lapras",
+          "level": "61",
+          "moves": [
+            "hydro-pump",
+            "blizzard",
+            "thunder",
+            "sing"
+          ],
+          "ability": "water-absorb",
+          "held": "wide-lens"
+        },
+        {
+          "name": "haxorus",
+          "level": "63",
+          "moves": [
+            "outrage",
+            "dragon-dance",
+            "earthquake",
+            "x-scissor"
+          ],
+          "ability": "mold-breaker",
+          "held": "focus-sash"
+        }
+      ]
+    },
+    "cn": {
+      "name": "Iris",
+      "pokemon": [
+        {
+          "name": "hydreigon",
+          "level": "57",
+          "moves": [
+            "dragon-pulse",
+            "surf",
+            "flamethrower",
+            "charge-beam"
+          ],
+          "ability": "levitate"
+        },
+        {
+          "name": "druddigon",
+          "level": "57",
+          "moves": [
+            "dragon-tail",
+            "rock-slide",
+            "flamethrower",
+            "focus-blast"
+          ],
+          "ability": "sheer-force",
+          "held": "life-orb"
+        },
+        {
+          "name": "aggron",
+          "level": "57",
+          "moves": [
+            "rock-slide",
+            "double-edge",
+            "earthquake",
+            "autotomize"
+          ],
+          "ability": "rock-head"
+        },
+        {
+          "name": "archeops",
+          "level": "57",
+          "moves": [
+            "acrobatics",
+            "rock-slide",
+            "dragon-claw",
+            "endeavor"
+          ],
+          "ability": "defeatist"
+        },
+        {
+          "name": "lapras",
+          "level": "57",
+          "moves": [
+            "surf",
+            "ice-beam",
+            "thunderbolt",
+            "sing"
+          ],
+          "ability": "water-absorb"
+        },
+        {
+          "name": "haxorus",
+          "level": "59",
+          "moves": [
+            "dual-chop",
+            "dragon-dance",
+            "earthquake",
+            "x-scissor"
+          ],
+          "ability": "mold-breaker",
+          "held": "focus-sash"
+        }
+      ]
+    }
+  },
   "bdsp": {
     "1": {
       "name": "Roark",
