@@ -110,4 +110,4 @@
 
 </ScreenContainer>
 
-<div class='h-28 w-8 bg-red-50' ></div>
+<div class='h-28 w-8' ></div>
