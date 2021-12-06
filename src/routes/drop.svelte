@@ -18,7 +18,9 @@
     const gamedata = JSON.stringify(payload.data)
 
     savedGames.subscribe(saves => {
-      if (!saves.includes(save.id))
+      if (!saves)
+        savedGames.set(format(save))
+      else if (!saves.includes(save.id))
         savedGames.set(`${saves},${format(save)}`)
 
       localStorage.setItem(
