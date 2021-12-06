@@ -36,7 +36,7 @@
   $: date = day(+created).format('Do of MMM, YYYY')
 </script>
 
-<div class='transition font-mono tracking-widest flex flex-row justify-between items-center'>
+<div class='transition tracking-widest flex flex-row justify-between items-center'>
   <div title='Load saved game {name}'
           class='group flex flex-col flex-1 sm:flex-row gap-x-4 items-start md:items-center cursor-pointer md:pr-24 umami--click--load-save'
           out:fade on:click={onclick}>
@@ -48,8 +48,8 @@
     />
 
     <div>
-      <h2 class='group-hover:text-yellow-400 transition text-2xl leading-6 mb-2'>{name}</h2>
-      <h3 class='group-hover:text-yellow-400 font-sans text-xs transition -mt-1'>{date}</h3>
+      <h2 class='font-bold transition text-xl leading-7'><mark class='bg-transparent dark:text-gray-50 dark:group-hover:text-gray-900 transition group-hover:bg-yellow-300'>{name}</mark></h2>
+      <h3 class='text-sm transition'><mark class='bg-transparent dark:text-gray-50 dark:group-hover:text-gray-900 transition group-hover:bg-yellow-300'>{date}<mark></h3>
       <span class='font-sans inline-flex items-center'>
         {(available || []).length}
         <PIcon className='transition group-hover:grayscale-0 grayscale mr-2 -mt-1' type='item' name='poke-ball' />
@@ -60,18 +60,17 @@
   </div>
 
   <div class='flex flex-col gap-y-2 md:flex-row md:gap-x-3 items-end md:items-center'>
-    <Button
+    <IconButton
       rounded
-      className=umami--click--delete-save
-      on:click={ondelete}
-    >
-      Delete
-      <Icon src={Bin} className='hidden sm:inline-block fill-current -mt-1' />
-    </Button>
+      color=yellow
+      src={Bin}
+      track=delete-save
+      title='Delete save'
+      on:click={ondelete} />
 
     <IconButton
       rounded
-      color=orange
+      color=yellow
       src={Share}
       track=transfer-save
       title='Transfer save'
