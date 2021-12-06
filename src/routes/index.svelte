@@ -86,6 +86,7 @@
         {/if}
 
         <a href="/new"
+           class:mt-7={!active || !active.game}
            class='tracking-widest hover:drop-shadow-text hover:text-yellow-300'
            sveltekit:prefetch
            on:mouseenter={toggleHover} on:mouseleave={toggleHover}
@@ -95,6 +96,7 @@
         </a>
 
         <a href="/saves"
+           class:mb-7={!active || !active.game}
            class='tracking-widest hover:drop-shadow-text hover:text-blue-400'
            sveltekit:prefetch
            on:mouseenter={toggleHover} on:mouseleave={toggleHover}
