@@ -34,18 +34,20 @@
         }).then(res => res.json())
 </script>
 
-<section class='flex flex-col mx-auto items-center gap-y-4'>
-  <h1 class='font-bold inline-flex items-center text-xl -mb-2'>
+<section>
+  <h1>
     <Icon src={Share} className='fill-current -ml-4 mr-2' />
-    Share your save
+    Transfer your save
   </h1>
 
-  <p class='text-center leading-5 text-sm max-w-xs'>
-    Scan the QR Code or go to the link below to transfer your save to a new device
+  <p>
+    Scan the QR code or go to the link below to transfer your save to
+    a new device
   </p>
   
   {#await fetchurl({ data, save }) then tiny}
-    <a transition:fade class='flex flex-col items-center tracking-widest' href={tiny.url} rel=external>
+    
+    <a transition:fade href={tiny.url} rel=external>
       <mark class='text-xs md:text-base tracking-wide font-bold'>
         https://tinyurl.com
       </mark>
@@ -56,34 +58,32 @@
     
     <div transition:fade class='p-2 bg-white'>
       <QRCode value={tiny.url} />
-      <!-- {#await getPkmn(pokemon) then p} -->
-      <!--   <img -->
-      <!--     class='absolute bottom-0 right-0 translate-x-1/4 translate-y-1/4' -->
-      <!--     width=120 -->
-      <!--     src=https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{p.imgId}.png -->
-      <!--     alt={pokemon} /> -->
-      <!--   {/await} -->
     </div>
   {/await}
+  
+  <p class='hidde md:block'>
+    Open the <a href=/transfer>tranfer</a> page on the other device to scan the code using your camera
+  </p>
 </section>
 
 <style>
   
   h1 {
-    @apply text-lg md:text-4xl
+    @apply text-lg md:text-4xl font-bold inline-flex items-center -mb-2
   }
   
   section {
-    @apply bg-gray-50 text-gray-800 rounded-xl py-10 px-6 md:px-12 overflow-hidden
+    @apply bg-gray-50 text-gray-800 rounded-xl py-10 px-6 md:px-12 overflow-hidden flex flex-col items-center mx-auto gap-y-4
   }
   
   :global(.dark) section {
     @apply bg-gray-800 text-white
   }
-  
 
+  p { @apply text-center leading-5 text-sm max-w-xs }
+  
   a mark { @apply bg-transparent transition }
-  a { @apply mt-4 mb-8 }
+  a { @apply mt-4 mb-8 flex flex-col items-center tracking-widest }
   
   
   :global(.dark) a mark { @apply text-yellow-500 }
