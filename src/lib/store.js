@@ -5,7 +5,7 @@ import { writable } from 'svelte/store'
 import { uuid } from '$lib/utils/uuid'
 import { NuzlockeGroups } from '$lib/data/states'
 
-const IDS = {
+export const IDS = {
   theme: 'nuzlocke.theme',
   active: 'nuzlocke',
   saves: 'nuzlocke.saves',
@@ -45,7 +45,13 @@ export const createGame = (name, game) => (payload) => {
   const games = payload === 'null' || payload === null || payload === 'undefined'
     ? []
     : payload.split(',').filter(i => i.length)
-  const gameData = `${id}|${+new Date()}|${name}|${game}`
+
+  const gameData = format({
+    id,
+    created: +new Date(),
+    name,
+    game
+  })
 
   localStorage.setItem(IDS.game(id), '{}')
   activeGame.set(id)
@@ -105,6 +111,14 @@ export const parse = (cb = () => {}) => (gameData) => {
       }), {})
   )
 }
+
+export const format = (saveData) => [
+  saveData.id,
+  saveData.created,
+  saveData.name,
+  saveData.game,
+].join('|')
+
 
 export const summarise = (cb = _ => {}) => ({ __starter, ...data }) => {
   const pkmn = Object.values(data)

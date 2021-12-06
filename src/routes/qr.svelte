@@ -4,6 +4,7 @@
 
 <script>
   import { onMount } from 'svelte'
+
   import QR from '$lib/components/qr/QRCode.svelte'
   import QRScanner from '$lib/components/qr/QRScanner.svelte'
 
@@ -21,20 +22,23 @@
     }))
   })
 
-  $: encoded = encodeURIComponent(JSON.stringify({ save, data }))
-
-  console.log(data)
-
+  const fetchurl = (data) =>
+    fetch('/api/tiny.json', {
+      method: 'POST',
+      body: JSON.stringify({
+        url: `http://localhost:3000/drop?payload=${encodeURIComponent(JSON.stringify(data))}`
+      }),
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    }).then(res => res.json())
 </script>
 
-<span>
-  {('https://nuzlocke.vercel.app/drop?' + encoded).length}
-</span>
-<span>
-  https://nuzlocke.vercel.app/drop?{encoded}
-</span>
-<QR
-  size=480
-  value='https://nulzocke.vercel.app/drop?kajshdaksjdhaksjdhaksjdhaksjdhaksdjhaksjdhaksjdhaksjdhaksdjhakjhdkajhsdkasjhdakjshdaksjdhaksjdhaksjdhaksjdhaksjdhaksjdhakjshdakjshdaksjdhaksjdhaksjdhakjsdhaksjdhaksjdhaksjdhaksjdh' />
+{#await fetchurl({ data, save }) then tiny}
+  <a href={tiny.url}>
+    {tiny.url}
+  </a>
+  <QR size=480 value={tiny.url} />
+{/await}
 
-<QRScanner on:scan={e => alert(e.detail.value)} />
+<!-- <QRScanner on:scan={e => alert(e.detail.value)} /> -->
