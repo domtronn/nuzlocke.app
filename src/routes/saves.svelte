@@ -40,12 +40,7 @@
   styleWindow={{ background: 'transparent !important' }}
   styleContent={{ padding: '0 !important', overflow: 'hidden' }}
 >
-  <ScreenContainer className='mb-40'>
-    <span class='flex justify-between items-center md:gap-x-24'>
-      <h1 class='text-lg md:text-2xl'>Load game</h1>
-      <Icon src={FloppyIcon} size='1.4em' className='fill-current dark:text-gray-200' />
-    </span>
-
+  <ScreenContainer className=mb-40 title='Load game' icon={FloppyIcon}>
     <div class='flex flex-row gap-x-2 text-xs w-full'>
       <Import className='flex-1 p-1'>
         Import saved game
@@ -57,8 +52,6 @@
         </Button>
       </a>
     </div>
-
-    <hr />
 
     <div class='flex flex-col gap-y-8 md:gap-y-4' transition:slide={{ duration: 300 }}>
       {#if loading}
