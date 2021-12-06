@@ -15,7 +15,7 @@
 
     window.Instascan.Camera
       .getCameras()
-      .catch(e => dispatch('error', { value: e }))
+      .catch(e => dispatch('error', { value: e.toString() }))
       .then(cameras => {
         if (!cameras.length) dispatch('error', { value: 'No cameras' })
 

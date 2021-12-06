@@ -85,7 +85,7 @@
 <style>
   
   h1 {
-    @apply text-lg md:text-4xl font-bold inline-flex items-center -mb-2
+    @apply text-2xl md:text-4xl font-bold inline-flex items-center -mb-2
   }
   
   section {
