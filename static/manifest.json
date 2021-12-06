@@ -4,8 +4,8 @@
   "short_name": "Nuzlocke Tracker",
   "theme_color": "#ff143b",
   "background_color": "#ff143b",
-  "display": "browser",
-  "orientation": "portrait",
+  "display": "standalone",
+  "orientation": "portrait-primary",
   "scope": "/",
   "start_url": "/index.html",
   "icons": [
