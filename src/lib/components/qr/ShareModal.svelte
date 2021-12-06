@@ -5,13 +5,14 @@
   import { PIcon } from '$lib/components/core'
 
   import { getContext } from 'svelte'
-  import { fade } from 'svelte/transition'
+  import { fade, fly } from 'svelte/transition'
   import { random } from '$lib/utils/arr'
   import { page } from '$app/stores'
   import { getGame, savedGames, activeGame, read, parse } from '$lib/store'
 
   import Icon from 'svelte-icons-pack'
   import Share from 'svelte-icons-pack/ri/RiSystemShareForwardLine'
+  import Check from 'svelte-icons-pack/bi/BiMessageSquareCheck'
   
   const { getPkmn } = getContext('game')
   
@@ -21,6 +22,14 @@
   
   const selectPokemon = data => random(Object.values(data).filter(i => typeof i !== 'string')).pokemon
   const pokemon = selectPokemon(data)
+  
+  let copy, copytimeout
+  const handlecopy = url => _ => {
+    navigator.clipboard.writeText(url);
+    copy = true
+    clearTimeout(copytimeout)
+    setTimeout(() => copy = false, 1500)
+  }
   
   const fetchurl = (data) =>
         fetch('/api/tiny.json', {
@@ -47,24 +56,31 @@
   
   {#await fetchurl({ data, save }) then tiny}
     
-    <a transition:fade href={tiny.url} rel=external>
+    <span on:click={handlecopy(tiny.url)} transition:fade href={tiny.url} rel=external>
       <mark class='text-xs md:text-base tracking-wide font-bold'>
         https://tinyurl.com
       </mark>
       <mark class='text-3xl md:text-6xl'>
         {tiny.url.replace(/https:\/\/tinyurl.com/i, '')}
       </mark>
-    </a>
+    </span>
     
     <div transition:fade class='p-2 bg-white'>
       <QRCode value={tiny.url} />
     </div>
   {/await}
-  
-  <p class='hidde md:block'>
-    Open the <a href=/transfer>tranfer</a> page on the other device to scan the code using your camera
-  </p>
 </section>
+
+{#if copy}
+  <div
+    transition:fly={{ y: 50 }}
+    class='fixed bottom-0 left-0 md:left-1/2 md:-translate-x-1/2 px-4 w-full md:w-auto' >
+    <div class='inline-flex max-w-sm px-6 justify-center text-green-600 bg-green-100 rounded-t-lg py-2 w-full font-bold'>
+      Copied share link!
+      <Icon src={Check} size=1.4em className='ml-2 fill-current' />
+    </div>
+  </div>
+{/if}
 
 <style>
   
@@ -82,13 +98,12 @@
 
   p { @apply text-center leading-5 text-sm max-w-xs }
   
-  a mark { @apply bg-transparent transition }
-  a { @apply mt-4 mb-8 flex flex-col items-center tracking-widest }
+  span mark { @apply bg-transparent transition cursor-pointer }
+  span { @apply mt-4 mb-8 flex flex-col items-center tracking-widest }
   
-  
-  :global(.dark) a mark { @apply text-yellow-500 }
-  :global(.dark) a:hover mark { @apply bg-yellow-400 text-gray-900 }
-  a mark { @apply text-yellow-400 transition }
-  a:hover mark { @apply bg-yellow-300 text-gray-900 }
+  :global(.dark) span mark { @apply text-yellow-500 }
+  :global(.dark) span:hover mark { @apply bg-yellow-400 text-gray-900 }
+  span mark { @apply text-yellow-400 transition }
+  span:hover mark { @apply bg-yellow-300 text-gray-900 }
   
 </style>
