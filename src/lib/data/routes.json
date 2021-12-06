@@ -2643,6 +2643,352 @@
       "name": "Artisan Cave"
     }
   ],
+  "frlg": [
+    {
+      "type": "route",
+      "name": "Starter"
+    },
+    {
+      "type": "route",
+      "name": "Pallet Town"
+    },
+    {
+      "type": "gym",
+      "name": "Rival",
+      "value": "r1",
+      "group": "rival"
+    },
+    {
+      "type": "route",
+      "name": "Route 1"
+    },
+    {
+      "type": "route",
+      "name": "Viridian City"
+    },
+    {
+      "type": "route",
+      "name": "Route 22"
+    },
+    {
+      "type": "gym",
+      "name": "Rival",
+      "value": "r2",
+      "group": "rival"
+    },
+    {
+      "type": "route",
+      "name": "Route 2"
+    },
+    {
+      "type": "route",
+      "name": "Viridian Forest"
+    },
+    {
+      "type": "gym",
+      "name": "Pewter City Gym",
+      "value": "1",
+      "group": "gym-leader"
+    },
+    {
+      "type": "route",
+      "name": "Route 3"
+    },
+    {
+      "type": "route",
+      "name": "Route 4"
+    },
+    {
+      "type": "route",
+      "name": "Mt. Moon"
+    },
+    {
+      "type": "route",
+      "name": "Cerulean City"
+    },
+    {
+      "type": "gym",
+      "name": "Cerulean City Gym",
+      "value": "2",
+      "group": "gym-leader"
+    },
+    {
+      "type": "route",
+      "name": "Route 24"
+    },
+    {
+      "type": "gym",
+      "name": "Rival",
+      "value": "r2",
+      "group": "rival"
+    },
+    {
+      "type": "route",
+      "name": "Route 25"
+    },
+    {
+      "type": "route",
+      "name": "Route 5"
+    },
+    {
+      "type": "route",
+      "name": "Route 6"
+    },
+    {
+      "type": "route",
+      "name": "Vermillion City"
+    },
+    {
+      "type": "gym",
+      "name": "S.S. Anne",
+      "value": "r3",
+      "group": "rival"
+    },
+    {
+      "type": "gym",
+      "name": "Vermillion City Gym",
+      "value": "3",
+      "group": "gym-leader"
+    },
+    {
+      "type": "route",
+      "name": "Route 11"
+    },
+    {
+      "type": "route",
+      "name": "Diglett's Cave"
+    },
+    {
+      "type": "route",
+      "name": "Route 9"
+    },
+    {
+      "type": "route",
+      "name": "Route 10"
+    },
+    {
+      "type": "route",
+      "name": "Rock Tunnel"
+    },
+    {
+      "type": "route",
+      "name": "Pokémon Tower"
+    },
+    {
+      "type": "route",
+      "name": "Route 12"
+    },
+    {
+      "type": "route",
+      "name": "Route 8"
+    },
+    {
+      "type": "route",
+      "name": "Route 7"
+    },
+    {
+      "type": "route",
+      "name": "Celadon City"
+    },
+    {
+      "type": "gym",
+      "name": "Celadon City Gym",
+      "value": "4",
+      "group": "gym-leader"
+    },
+    {
+      "type": "gym",
+      "name": "Rocket Hideout",
+      "value": "g1",
+      "group": "evil-team"
+    },
+    {
+      "type": "gym",
+      "name": "Pokemon Tower Rival",
+      "value": "r5",
+      "group": "rival"
+    },
+    {
+      "type": "route",
+      "name": "Saffron City"
+    },
+    {
+      "type": "gym",
+      "name": "Silph Co. Rival",
+      "value": "r6",
+      "group": "rival"
+    },
+    {
+      "type": "gym",
+      "name": "Silph Co.",
+      "value": "g2",
+      "group": "evil-team"
+    },
+    {
+      "type": "gym",
+      "name": "Saffron City Gym",
+      "value": "6",
+      "group": "gym-leader"
+    },
+    {
+      "type": "route",
+      "name": "Route 16"
+    },
+    {
+      "type": "route",
+      "name": "Route 17"
+    },
+    {
+      "type": "route",
+      "name": "Route 18"
+    },
+    {
+      "type": "route",
+      "name": "Fuschia City"
+    },
+    {
+      "type": "gym",
+      "name": "Fuschia City Gym",
+      "value": "5",
+      "group": "gym-leader"
+    },
+    {
+      "type": "route",
+      "name": "Safari Zone"
+    },
+    {
+      "type": "route",
+      "name": "Route 15"
+    },
+    {
+      "type": "route",
+      "name": "Route 14"
+    },
+    {
+      "type": "route",
+      "name": "Route 13"
+    },
+    {
+      "type": "route",
+      "name": "Power Plant"
+    },
+    {
+      "type": "route",
+      "name": "Route 19"
+    },
+    {
+      "type": "route",
+      "name": "Route 20"
+    },
+    {
+      "type": "route",
+      "name": "Seafoam Islands"
+    },
+    {
+      "type": "route",
+      "name": "Cinnabar Island"
+    },
+    {
+      "type": "route",
+      "name": "Pokémon Mansion"
+    },
+    {
+      "type": "gym",
+      "name": "Cinnabar Island Gym",
+      "value": "7",
+      "group": "gym-leader"
+    },
+    {
+      "type": "route",
+      "name": "One Island"
+    },
+    {
+      "type": "route",
+      "name": "Two Island"
+    },
+    {
+      "type": "route",
+      "name": "Three Island"
+    },
+    {
+      "type": "route",
+      "name": "Route 21"
+    },
+    {
+      "type": "route",
+      "name": "Power Plant"
+    },
+    {
+      "type": "gym",
+      "name": "Viridian City Gym",
+      "value": "8",
+      "group": "gym-leader"
+    },
+    {
+      "type": "route",
+      "name": "Route 23"
+    },
+    {
+      "type": "route",
+      "name": "Victory Road"
+    },
+    {
+      "type": "gym",
+      "name": "Rival",
+      "value": "r7",
+      "group": "rival"
+    },
+    {
+      "type": "gym",
+      "name": "Indigo Plateau",
+      "value": "e1",
+      "group": "elite-four"
+    },
+    {
+      "type": "gym",
+      "name": "Indigo Plateau",
+      "value": "e2",
+      "group": "elite-four"
+    },
+    {
+      "type": "gym",
+      "name": "Indigo Plateau",
+      "value": "e3",
+      "group": "elite-four"
+    },
+    {
+      "type": "gym",
+      "name": "Indigo Plateau",
+      "value": "e4",
+      "group": "elite-four"
+    },
+    {
+      "type": "gym",
+      "name": "Champion",
+      "value": "c",
+      "group": "elite-four"
+    },
+    {
+      "type": "route",
+      "name": "Four Island"
+    },
+    {
+      "type": "route",
+      "name": "Five Isalnd"
+    },
+    {
+      "type": "route",
+      "name": "Six Isalnd"
+    },
+    {
+      "type": "route",
+      "name": "Seven Isalnd"
+    },
+    {
+      "type": "route",
+      "name": "Cerulean Cave"
+    }
+  ],
   "hgss": [
     {
       "type": "route",
@@ -4559,6 +4905,348 @@
     {
       "type": "route",
       "name": "Split-Decision Ruins"
+    }
+  ],
+  "sm": [
+    {
+      "type": "route",
+      "name": "Starter"
+    },
+    {
+      "type": "route",
+      "name": "Hau'oli Outskirts"
+    },
+    {
+      "type": "route",
+      "name": "Iki Town"
+    },
+    {
+      "type": "gym",
+      "name": "1st Rival",
+      "value": "r1",
+      "group": "rival"
+    },
+    {
+      "type": "route",
+      "name": "Route 1"
+    },
+    {
+      "type": "gym",
+      "name": "Iki Town Festival",
+      "value": "r2",
+      "group": "rival"
+    },
+    {
+      "type": "route",
+      "name": "Melemele Sea"
+    },
+    {
+      "type": "route",
+      "name": "Hau'oli City"
+    },
+    {
+      "type": "gym",
+      "name": "Hau'oli City Trial Captain",
+      "value": "1",
+      "group": "gym-leader"
+    },
+    {
+      "type": "route",
+      "name": "Route 2"
+    },
+    {
+      "type": "route",
+      "name": "Berry Fields"
+    },
+    {
+      "type": "route",
+      "name": "Verdant Cavern"
+    },
+    {
+      "type": "gym",
+      "name": "Totem Trial",
+      "value": "1a",
+      "group": "gym-leader"
+    },
+    {
+      "type": "route",
+      "name": "Hau'oli Cemetery"
+    },
+    {
+      "type": "route",
+      "name": "Route 3"
+    },
+    {
+      "type": "gym",
+      "name": "2nd Rival",
+      "value": "r3",
+      "group": "rival"
+    },
+    {
+      "type": "route",
+      "name": "Melemele Meadow"
+    },
+    {
+      "type": "route",
+      "name": "Seaward Cave"
+    },
+    {
+      "type": "gym",
+      "name": "Hala's Grand Trial",
+      "value": "2",
+      "group": "gym-leader"
+    },
+    {
+      "type": "route",
+      "name": "Kala'e Bay"
+    },
+    {
+      "type": "route",
+      "name": "Ten Carat Hill"
+    },
+    {
+      "type": "route",
+      "name": "Hano Beach"
+    },
+    {
+      "type": "gym",
+      "name": "Heahea City",
+      "value": "dsa",
+      "group": "rival"
+    },
+    {
+      "type": "route",
+      "name": "Route 4"
+    },
+    {
+      "type": "route",
+      "name": "Paniola Town"
+    },
+    {
+      "type": "gym",
+      "name": "3rd Rival",
+      "value": "r4",
+      "group": "rival"
+    },
+    {
+      "type": "route",
+      "name": "Paniola Ranch"
+    },
+    {
+      "type": "route",
+      "name": "Route 5"
+    },
+    {
+      "type": "gym",
+      "name": "Team skull",
+      "value": "g1",
+      "group": "evil-team"
+    },
+    {
+      "type": "route",
+      "name": "Brooklet Hill"
+    },
+    {
+      "type": "gym",
+      "name": "Totem Trial",
+      "value": "3",
+      "group": "gym-leader"
+    },
+    {
+      "type": "route",
+      "name": "Route 6"
+    },
+    {
+      "type": "route",
+      "name": "Route 7"
+    },
+    {
+      "type": "route",
+      "name": "Wela Volcano Park"
+    },
+    {
+      "type": "route",
+      "name": "Route 8"
+    },
+    {
+      "type": "route",
+      "name": "Fossil Restoration Center"
+    },
+    {
+      "type": "route",
+      "name": "Lush Jungle"
+    },
+    {
+      "type": "route",
+      "name": "Diglett's Tunnel"
+    },
+    {
+      "type": "route",
+      "name": "Route 9"
+    },
+    {
+      "type": "route",
+      "name": "Konikoni City"
+    },
+    {
+      "type": "route",
+      "name": "Memorial Hill"
+    },
+    {
+      "type": "route",
+      "name": "Akala Outskirts"
+    },
+    {
+      "type": "route",
+      "name": "Malie City"
+    },
+    {
+      "type": "route",
+      "name": "Malie Garden"
+    },
+    {
+      "type": "route",
+      "name": "Route 10"
+    },
+    {
+      "type": "route",
+      "name": "Mount Hokulani"
+    },
+    {
+      "type": "route",
+      "name": "Route 11"
+    },
+    {
+      "type": "route",
+      "name": "Route 12"
+    },
+    {
+      "type": "route",
+      "name": "Secluded Shore"
+    },
+    {
+      "type": "route",
+      "name": "Blush Mountain"
+    },
+    {
+      "type": "route",
+      "name": "Route 13"
+    },
+    {
+      "type": "route",
+      "name": "Haina Desert"
+    },
+    {
+      "type": "route",
+      "name": "Tapu Village"
+    },
+    {
+      "type": "route",
+      "name": "Route 15"
+    },
+    {
+      "type": "route",
+      "name": "Aether House"
+    },
+    {
+      "type": "route",
+      "name": "Route 14"
+    },
+    {
+      "type": "route",
+      "name": "Thrifty Megamart"
+    },
+    {
+      "type": "route",
+      "name": "Route 16"
+    },
+    {
+      "type": "route",
+      "name": "Ula'ula Meadow"
+    },
+    {
+      "type": "route",
+      "name": "Lake of the Moone/Sunne"
+    },
+    {
+      "type": "route",
+      "name": "Route 17"
+    },
+    {
+      "type": "route",
+      "name": "Shady House"
+    },
+    {
+      "type": "route",
+      "name": "Seafolk Village"
+    },
+    {
+      "type": "route",
+      "name": "Poni Wilds"
+    },
+    {
+      "type": "route",
+      "name": "Ancient Poni Path"
+    },
+    {
+      "type": "route",
+      "name": "Poni Breaker Coast"
+    },
+    {
+      "type": "route",
+      "name": "Exeggutor Island"
+    },
+    {
+      "type": "route",
+      "name": "Vast Poni Canyon"
+    },
+    {
+      "type": "route",
+      "name": "Altar of the Moone/Sunne"
+    },
+    {
+      "type": "route",
+      "name": "Mount Lanakila"
+    },
+    {
+      "type": "route",
+      "name": "Poni Grove"
+    },
+    {
+      "type": "route",
+      "name": "Poni Plains"
+    },
+    {
+      "type": "route",
+      "name": "Poni Meadow"
+    },
+    {
+      "type": "route",
+      "name": "Resolution Cave"
+    },
+    {
+      "type": "route",
+      "name": "Poni Coast"
+    },
+    {
+      "type": "route",
+      "name": "Poni Gauntlet"
+    },
+    {
+      "type": "route",
+      "name": "Ruins of Conflict"
+    },
+    {
+      "type": "route",
+      "name": "Ruins of Life"
+    },
+    {
+      "type": "route",
+      "name": "Ruins of Abundance"
+    },
+    {
+      "type": "route",
+      "name": "Ruins of Hope"
     }
   ],
   "sw": [

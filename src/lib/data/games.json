@@ -27,8 +27,8 @@
   "ss": { "pid": "hgss", "logo": "/logos/soul-silver-logo", "title": "Soul Silver", "gen": "II", "supported": true  },
   "g": { "pid": "gs", "title": "Gold", "gen": "II", "supported": false  },
   "s": { "pid": "gs", "title": "Silver", "gen": "II", "supported": false  },
-  "fr": { "pid": "frlg", "logo": "/logos/fire-red-logo", "title": "Fire Red", "gen": "I", "supported": false  },
-  "lg": { "pid": "frlg", "logo": "/logos/leaf-green-logo", "title": "Leaf Green", "gen": "I", "supported": false  },
+  "fr": { "pid": "frlg", "logo": "/logos/fire-red-logo", "title": "Fire Red", "gen": "I", "supported": true  },
+  "lg": { "pid": "frlg", "logo": "/logos/leaf-green-logo", "title": "Leaf Green", "gen": "I", "supported": true  },
   "yel": { "pid": "yel", "title": "Yellow", "gen": "I", "supported": true, "logo": "/logos/yellow-logo" },
   "red": { "pid": "rb", "title": "Red", "gen": "I", "supported": true, "logo": "/logos/red" },
   "blue": { "pid": "rb", "title": "Blue", "gen": "I", "supported": true, "logo": "/logos/blue" }
