@@ -13,7 +13,6 @@
   })
 </script>
 
-
 <svelte:head>
   <script bind:this={script} {src} />
 </svelte:head>

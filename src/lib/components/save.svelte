@@ -36,8 +36,8 @@
   $: date = day(+created).format('Do of MMM, YYYY')
 </script>
 
-<div class='transition cursor-pointer font-mono tracking-widest flex flex-row justify-between items-center md:gap-x-24'>
-  <div out:fade on:click={onclick} class='group flex flex-col sm:flex-row gap-x-4 items-start md:items-center'>
+<div class='transition font-mono tracking-widest flex flex-row justify-between items-center'>
+  <div out:fade on:click={onclick} class='group flex flex-col flex-1 sm:flex-row gap-x-4 items-start md:items-center cursor-pointer md:pr-24'>
     <Picture
       alt='{name} logo'
       src=/assets/{game}
@@ -45,17 +45,17 @@
       aspect=192x96
     />
 
-      <div>
-        <h2 class='group-hover:text-yellow-400 transition text-2xl leading-6 mb-2'>{name}</h2>
-        <h3 class='group-hover:text-yellow-400 font-sans text-xs transition -mt-1'>{date}</h3>
-        <span class='font-sans inline-flex items-center'>
-          {(available || []).length}
-          <PIcon className='transition group-hover:grayscale-0 grayscale mr-2 -mt-1' type='item' name='poke-ball' />
-          {(deceased || []).length}
-          <Icon className='ml-1 fill-current' src={NuzlockeStates[5].icon} />
-        </span>
-      </div>
+    <div>
+      <h2 class='group-hover:text-yellow-400 transition text-2xl leading-6 mb-2'>{name}</h2>
+      <h3 class='group-hover:text-yellow-400 font-sans text-xs transition -mt-1'>{date}</h3>
+      <span class='font-sans inline-flex items-center'>
+        {(available || []).length}
+        <PIcon className='transition group-hover:grayscale-0 grayscale mr-2 -mt-1' type='item' name='poke-ball' />
+        {(deceased || []).length}
+        <Icon className='ml-1 fill-current' src={NuzlockeStates[5].icon} />
+      </span>
     </div>
+  </div>
 
   <div class='flex flex-col gap-y-2 md:flex-row md:gap-x-3 items-end md:items-center'>
     <Button
