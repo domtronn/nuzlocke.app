@@ -40,7 +40,7 @@
   styleWindow={{ background: 'transparent !important' }}
   styleContent={{ padding: '0 !important', overflow: 'hidden' }}
 >
-  <ScreenContainer>
+  <ScreenContainer className='mb-40'>
     <span class='flex justify-between items-center md:gap-x-24'>
       <h1 class='text-lg md:text-2xl'>Load game</h1>
       <Icon src={FloppyIcon} size='1.4em' className='fill-current dark:text-gray-200' />
@@ -87,7 +87,7 @@
       {:else if !loading && !games.length}
         <span class='text-center'>You currently have no saved games</span>
         <a sveltekit:prefetch href="/new" class='text-center'>
-          <Button className='w-full umami--click--new-game'>
+          <Button rounded className='w-full umami--click--new-game'>
             Create game
           </Button>
         </a>
