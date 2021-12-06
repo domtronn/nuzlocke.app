@@ -9,12 +9,16 @@
   import Share from 'svelte-icons-pack/ri/RiSystemShareForwardLine'
   import Floppy from 'svelte-icons-pack/im/ImFloppyDisk'
 
+  import Transfer from 'svelte-icons-pack/bi/BiTransfer'
+  import Mobile from 'svelte-icons-pack/im/ImMobile2'
+  import Desktop from 'svelte-icons-pack/io/IoDesktopSharp'
+
   import Error from 'svelte-icons-pack/bi/BiErrorAlt'
 
-  const FloppyIcon = {
-    ...Floppy,
-    c: Floppy.c.replace(/fill="#000000"/g, '')
-  }
+  const fixIcon = i => ({ ...i, c: i.c.replace(/fill="#000000"/g, '') })
+
+  const FloppyIcon = fixIcon(Floppy)
+  const MobileIcon = fixIcon(Mobile)
 
   const handlescan = e => {
     const url = e.detail.value
@@ -33,13 +37,19 @@
 
 <section>
   <h1>
-    <Icon src={QR} className='fill-current -ml-2 md:-ml-6 mr-2' />
+    <Icon src={QR} className='fill-current -ml-4 md:-ml-6 mr-2' />
     Import a save
   </h1>
 
   <p>
-    Scan a QR code using your device camera to load a save file.
+    Scan a QR code on your Mobile device using your camera to transfer the save data.
   </p>
+
+  <div class='text-4xl inline-flex items-center -ml-4 my-4'>
+    <Icon size=0.9em src={MobileIcon} className=fill-current />
+    <Icon size=0.6em src={Transfer} className='fill-current mr-2 ml-1' />
+    <Icon src={Desktop} className=fill-current />
+  </div>
 
   <ol>
     <li>Open your <a href='/saves'><mark>Save files <Icon size=0.9em src={FloppyIcon} className=fill-current /></mark></a> on your first device</li>
@@ -82,8 +92,9 @@
   h1 { @apply text-2xl md:text-4xl font-bold inline-flex items-center -mb-2 }
   p{ @apply text-center leading-5 text-sm max-w-xs }
   ol { @apply text-sm leading-4 list-outside list-decimal }
-  li { @apply mb-2 md:mb-1 }
-  mark { @apply inline-flex items-center gap-x-1 bg-yellow-200 leading-5 font-bold px-1 mx-px }
+  li { @apply mb-2 md:mb-1 pl-2 -ml-2 }
+  mark { @apply inline-flex items-center transition gap-x-1 bg-yellow-200 leading-5 font-bold px-1 mx-px }
+  a mark:hover { @apply bg-yellow-400 cursor-pointer }
 
   section {
     @apply bg-gray-50 text-gray-800 rounded-xl py-10 px-6 md:px-12 overflow-hidden flex flex-col items-center mx-auto gap-y-4
@@ -92,5 +103,6 @@
   :global(.dark) section {
     @apply bg-gray-800 text-white
   }
+
 
 </style>

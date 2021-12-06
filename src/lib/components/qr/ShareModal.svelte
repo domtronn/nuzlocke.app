@@ -74,7 +74,7 @@
 {#if copy}
   <div
     transition:fly={{ y: 50 }}
-    class='fixed bottom-0 left-0 md:left-1/2 md:-translate-x-1/2 px-4 w-full md:w-auto' >
+    class='fixed z-50 bottom-0 left-0 md:left-1/2 md:-translate-x-1/2 px-4 w-full md:w-auto' >
     <div class='inline-flex max-w-sm px-6 justify-center text-green-600 bg-green-100 rounded-t-lg py-2 w-full font-bold'>
       Copied share link!
       <Icon src={Check} size=1.4em className='ml-2 fill-current' />
@@ -101,8 +101,8 @@
   span mark { @apply bg-transparent transition cursor-pointer }
   span { @apply mt-4 mb-8 flex flex-col items-center tracking-widest }
   
-  :global(.dark) span mark { @apply text-yellow-500 }
-  :global(.dark) span:hover mark { @apply bg-yellow-400 text-gray-900 }
+  :global(.dark) span mark { @apply text-yellow-300 }
+  :global(.dark) span:hover mark { @apply bg-yellow-200 text-gray-900 }
   span mark { @apply text-yellow-400 transition }
   span:hover mark { @apply bg-yellow-300 text-gray-900 }
   
