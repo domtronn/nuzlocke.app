@@ -6,13 +6,12 @@
   import { browser } from '$app/env'
   import { savedGames, parse } from '$lib/store'
   import { slide } from 'svelte/transition'
-  import { onMount } from 'svelte'
 
   import Save from '$lib/components/save.svelte'
   import Import from '$lib/components/qr/Import.svelte'
 
   import { ScreenContainer } from '$lib/components/containers'
-  import { Button, IconButton } from '$lib/components/core'
+  import { Button } from '$lib/components/core'
 
   import Modal from 'svelte-simple-modal'
   import Icon from 'svelte-icons-pack'

@@ -7,7 +7,7 @@
   import day from '$lib/utils/date'
 
   import { NuzlockeStates } from '$lib/data/states'
-  import { PIcon, Button, IconButton, Picture } from '$lib/components/core'
+  import { PIcon, IconButton, Picture } from '$lib/components/core'
 
   import Icon from 'svelte-icons-pack'
   import Bin from 'svelte-icons-pack/bi/BiTrash'

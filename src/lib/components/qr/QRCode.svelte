@@ -1,7 +1,6 @@
 <script>
   const src = 'https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js'
-
-  import { fade } from 'svelte/transition'
+  
   import LibLoader from './LibLoader.svelte'
 
   export let value, size = 192
@@ -15,12 +14,6 @@
   }
 
   const gen = _ => qrCode.makeCode(value)
-  const clear = _ => {
-    qrCode.clear()
-    value = null
-    gen()
-  }
-  
 </script>
 
 <LibLoader

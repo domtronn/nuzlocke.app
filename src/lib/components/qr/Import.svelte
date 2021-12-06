@@ -7,7 +7,7 @@
   const { open } = getContext('simple-modal')
   const handleimport = _ => open(ImportModal)
 
-  let ImportModal, ShareModal
+  let ImportModal
   onMount(_ => import('$lib/components/qr/ImportModal.svelte').then(mod => ImportModal = mod.default))
 </script>
 
