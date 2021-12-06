@@ -28,4 +28,4 @@
   expected=QRCode
   on:loaded={onloaded} />
 
-<div class='p-2 bg-white w-auto' transition:fade id={qrCodeId} />
+<div id={qrCodeId} />
