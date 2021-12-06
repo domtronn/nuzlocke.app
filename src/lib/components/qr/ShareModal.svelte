@@ -28,11 +28,12 @@
     setTimeout(() => copy = false, 1500)
   }
   
+  const normalise = (url) => url.replace(/^https:/, window.location.protocol)
   const fetchurl = (data) =>
-        fetch('/api/tiny.json', {
+        fetch('/api/drop.json', {
           method: 'POST',
           body: JSON.stringify({
-            url: `http://${$page.host}/drop?payload=${encodeURIComponent(JSON.stringify(data))}`
+            url: `${window.location.protocol}//${$page.host}/drop?payload=${encodeURIComponent(JSON.stringify(data))}`
           }),
           headers: {
             'Content-Type': 'application/json'
@@ -52,18 +53,18 @@
   </p>
   
   <span style='min-height: 340px;'>
-    {#await fetchurl({ data, save }) then tiny}
-      <span on:click={handlecopy(tiny.url)} transition:fade href={tiny.url} rel=external>
+    {#await fetchurl({ data, save }) then drop}
+      <span on:click={handlecopy(normalise(drop.url))} transition:fade>
         <mark class='text-xs md:text-base tracking-wide font-bold'>
-          https://tinyurl.com
+          {normalise(drop.url).replace(/drop.*/, 'drop')}
         </mark>
         <mark class='text-4xl md:text-6xl'>
-          {tiny.url.replace(/https:\/\/tinyurl.com/i, '')}
+          {drop.url.replace(/.*\/drop/i, '')}
         </mark>
       </span>
       
       <div transition:fade class='p-2 bg-white'>
-        <QRCode value={tiny.url} />
+        <QRCode value={normalise(drop.url)} />
       </div>
     {/await}
   </span>
