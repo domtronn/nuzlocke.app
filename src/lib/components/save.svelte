@@ -38,7 +38,7 @@
 
 <div class='transition font-mono tracking-widest flex flex-row justify-between items-center'>
   <div title='Load saved game {name}'
-          class='group flex flex-col flex-1 sm:flex-row gap-x-4 items-start md:items-center cursor-pointer md:pr-24 umami--click--load-game'
+          class='group flex flex-col flex-1 sm:flex-row gap-x-4 items-start md:items-center cursor-pointer md:pr-24 umami--click--load-save'
           out:fade on:click={onclick}>
     <Picture
       alt='{name} logo'
@@ -73,7 +73,7 @@
       rounded
       color=orange
       src={Share}
-      track=share-game
+      track=transfer-save
       title='Transfer save'
       on:click={onshare} />
 

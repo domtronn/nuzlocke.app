@@ -20,9 +20,6 @@
   savedGames.subscribe(parse(g => save = g[id]))
   getGame(id).subscribe(read(game => data = game))
   
-  const selectPokemon = data => random(Object.values(data).filter(i => typeof i !== 'string')).pokemon
-  const pokemon = selectPokemon(data)
-  
   let copy, copytimeout
   const handlecopy = url => _ => {
     navigator.clipboard.writeText(url);
@@ -54,21 +51,22 @@
     a new device
   </p>
   
-  {#await fetchurl({ data, save }) then tiny}
-    
-    <span on:click={handlecopy(tiny.url)} transition:fade href={tiny.url} rel=external>
-      <mark class='text-xs md:text-base tracking-wide font-bold'>
-        https://tinyurl.com
-      </mark>
-      <mark class='text-3xl md:text-6xl'>
-        {tiny.url.replace(/https:\/\/tinyurl.com/i, '')}
-      </mark>
-    </span>
-    
-    <div transition:fade class='p-2 bg-white'>
-      <QRCode value={tiny.url} />
-    </div>
-  {/await}
+  <span style='min-height: 340px;'>
+    {#await fetchurl({ data, save }) then tiny}
+      <span on:click={handlecopy(tiny.url)} transition:fade href={tiny.url} rel=external>
+        <mark class='text-xs md:text-base tracking-wide font-bold'>
+          https://tinyurl.com
+        </mark>
+        <mark class='text-4xl md:text-6xl'>
+          {tiny.url.replace(/https:\/\/tinyurl.com/i, '')}
+        </mark>
+      </span>
+      
+      <div transition:fade class='p-2 bg-white'>
+        <QRCode value={tiny.url} />
+      </div>
+    {/await}
+  </span>
 </section>
 
 {#if copy}

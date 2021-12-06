@@ -6,8 +6,11 @@
   import { browser } from '$app/env'
   import { savedGames, parse } from '$lib/store'
   import { slide } from 'svelte/transition'
+  import { onMount } from 'svelte'
 
   import Save from '$lib/components/save.svelte'
+  import Import from '$lib/components/qr/Import.svelte'
+
   import { ScreenContainer } from '$lib/components/containers'
   import { Button, IconButton } from '$lib/components/core'
 
@@ -32,18 +35,29 @@
   <title>Nuzlocke Tracker | Load game</title>
 </svelte:head>
 
-
 <Modal
   closeButton={false}
   styleBg={{ background: 'rgba(0, 0, 0, 0.8)', zIndex: 9999 }}
   styleWindow={{ background: 'transparent !important' }}
   styleContent={{ padding: '0 !important', overflow: 'hidden' }}
-  >
+>
   <ScreenContainer>
     <span class='flex justify-between items-center md:gap-x-24'>
       <h1 class='text-lg md:text-2xl'>Load game</h1>
-      <Icon src={FloppyIcon} size='1.4em' className='fill-current dark:text-gray-200g' />
+      <Icon src={FloppyIcon} size='1.4em' className='fill-current dark:text-gray-200' />
     </span>
+
+    <div class='flex flex-row gap-x-2 text-xs w-full'>
+      <Import className='flex-1 p-1'>
+        Import saved game
+      </Import>
+
+      <a sveltekit:prefetch href="/new" class='text-center flex flex-1'>
+        <Button rounded className='w-full p-1 umami--click--new-game'>
+          Create game
+        </Button>
+      </a>
+    </div>
 
     <hr />
 
@@ -74,7 +88,7 @@
       {:else if !loading && !games.length}
         <span class='text-center'>You currently have no saved games</span>
         <a sveltekit:prefetch href="/new" class='text-center'>
-          <Button className='w-full'>
+          <Button className='w-full umami--click--new-game'>
             Create game
           </Button>
         </a>

@@ -45,7 +45,7 @@
     Scan a QR code on your Mobile device using your camera to transfer the save data.
   </p>
 
-  <div class='text-4xl inline-flex items-center -ml-4 my-4'>
+  <div class='text-4xl inline-flex items-center transform scale-75 md:scale-100 -ml-4 md:my-4'>
     <Icon size=0.9em src={MobileIcon} className=fill-current />
     <Icon size=0.6em src={Transfer} className='fill-current mr-2 ml-1' />
     <Icon src={Desktop} className=fill-current />
@@ -92,7 +92,7 @@
   h1 { @apply text-2xl md:text-4xl font-bold inline-flex items-center -mb-2 }
   p{ @apply text-center leading-5 text-sm max-w-xs }
   ol { @apply text-sm leading-4 list-outside list-decimal }
-  li { @apply mb-2 md:mb-1 pl-2 -ml-2 }
+  li { @apply mb-2 md:mb-1 md:pl-2 md:-ml-2 }
   mark { @apply inline-flex items-center transition gap-x-1 bg-yellow-200 leading-5 font-bold px-1 mx-px }
   a mark:hover { @apply bg-yellow-400 cursor-pointer }
 
