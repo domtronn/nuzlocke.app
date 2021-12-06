@@ -1,6 +1,7 @@
 <script>
   import QRScanner from './QRScanner.svelte'
 
+  import { page } from '$app/stores'
   import { fly } from 'svelte/transition'
 
   import Icon from 'svelte-icons-pack'
@@ -22,7 +23,11 @@
 
   const handlescan = e => {
     const url = e.detail.value
-    if (!url.startsWith('https://tinyurl.com/')) return handleerror('Invalid QR code link')
+    console.log('url', url, e)
+
+    if (!url.startsWith(`${window.location.protocol}//${$page.host}/`))
+      return handleerror(`Invalid QR code link - Only accept links to //${$page.host}/drop/...`)
+
     window.location = e.detail.value
   }
 
