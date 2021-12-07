@@ -33,6 +33,11 @@
         <div class='flex flex-col items-center'>
           <span class='text-xs -mb-2'>Level</span>
           <span class='text-3xl font-bold'>{level}</span>
+          {#if level.startsWith('+') || level.startsWith('-')}
+            <Tooltip>
+              Calculated as your party's Max Level {level}
+            </Tooltip>
+          {/if}
         </div>
       {/if}
       <span class='relative text-xl mb-0.25 dark:sm:bg-transparent sm:bg-transparent pr-2 z-40'>

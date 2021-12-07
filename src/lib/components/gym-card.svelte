@@ -41,7 +41,7 @@
   }
 
   $: (async () => await fetchData(starter))()
-  $: levelCap = pokemon.reduce((acc, it) => Math.max(acc, it.level), 0)
+  $: levelCap = pokemon.every(it => it.level.startsWith('+') || it.level.startsWith('-')) ? null : pokemon.reduce((acc, it) => Math.max(acc, it.level), 0)
   $: maxStat = pokemon.reduce((acc, it) => Math.max(acc, Math.max(...Object.values(it.stats))), 0)
 
 </script>
@@ -98,7 +98,9 @@
             {/each}
           </span>
 
-          <Label heading='Lvl cap' body={levelCap} />
+          {#if levelCap}
+            <Label heading='Lvl cap' body={levelCap} />
+          {/if}
         {/if}
       </div>
     </span>
