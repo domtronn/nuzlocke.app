@@ -17,7 +17,7 @@ const statNameMap = {
   'hp': 'hp',
 }
 
-const toMoves = (moves, patches) => map(compose(
+const toMoves = (moves, patches = {}) => map(compose(
   d => ({
     ...d,
     type: patches[d.name]?.type || d.type,
@@ -85,7 +85,7 @@ export async function get ({ params, query }) {
 
   if (!game) return { status: 404 }
 
-  const patch = patches[gen]
+  const patch = patches[gen] || {}
   const starter = query.get('starter')
   const leader = path([game.lid || game.pid, id], leaders)
 
@@ -121,6 +121,6 @@ export async function get ({ params, query }) {
     }
   } catch (E) {
     console.log(E)
-    console.log(E.response?.status || 'XXX', E.request.path)
+    console.log(E.response?.status || 'XXX', E?.request?.path)
   }
 }

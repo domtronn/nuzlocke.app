@@ -3595,6 +3595,516 @@
       "name": "Cerulean Cave"
     }
   ],
+  "incem": [
+    {
+      "type": "route",
+      "name": "Starter"
+    },
+    {
+      "type": "route",
+      "name": "Littleroot Town"
+    },
+    {
+      "type": "route",
+      "name": "Route 101"
+    },
+    {
+      "type": "route",
+      "name": "Route 103"
+    },
+    {
+      "type": "route",
+      "name": "Route 102"
+    },
+    {
+      "type": "route",
+      "name": "Petalburg City"
+    },
+    {
+      "type": "route",
+      "name": "Route 104"
+    },
+    {
+      "type": "route",
+      "name": "Petalburg Woods"
+    },
+    {
+      "type": "gym",
+      "name": "Petalbug Woods grunt",
+      "value": "g1",
+      "group": "evil-team"
+    },
+    {
+      "type": "route",
+      "name": "Rustboro City"
+    },
+    {
+      "type": "gym",
+      "name": "Rival",
+      "value": "r1b",
+      "group": "rival"
+    },
+    {
+      "type": "gym",
+      "name": "Rival",
+      "value": "r1m",
+      "group": "rival"
+    },
+    {
+      "type": "gym",
+      "name": "Rustboro Gym",
+      "value": "1",
+      "group": "gym-leader"
+    },
+    {
+      "type": "route",
+      "name": "Route 105"
+    },
+    {
+      "type": "route",
+      "name": "Route 116"
+    },
+    {
+      "type": "route",
+      "name": "Rusturf Tunnel"
+    },
+    {
+      "type": "route",
+      "name": "Dewford Town"
+    },
+    {
+      "type": "gym",
+      "name": "Dewford Gym",
+      "value": "2",
+      "group": "gym-leader"
+    },
+    {
+      "type": "route",
+      "name": "Route 106"
+    },
+    {
+      "type": "route",
+      "name": "Granite Cave"
+    },
+    {
+      "type": "route",
+      "name": "Route 107"
+    },
+    {
+      "type": "route",
+      "name": "Slateport City"
+    },
+    {
+      "type": "gym",
+      "name": "Slateport Museum",
+      "value": "g2",
+      "group": "evil-team"
+    },
+    {
+      "type": "gym",
+      "name": "Slateport Museum",
+      "value": "aa1",
+      "group": "evil-team"
+    },
+    {
+      "type": "route",
+      "name": "Route 110"
+    },
+    {
+      "type": "gym",
+      "name": "Rival battle",
+      "value": "r2b",
+      "group": "rival"
+    },
+    {
+      "type": "gym",
+      "name": "Rival battle",
+      "value": "r2m",
+      "group": "rival"
+    },
+    {
+      "type": "route",
+      "name": "Altering Cave"
+    },
+    {
+      "type": "route",
+      "name": "New Mauville"
+    },
+    {
+      "type": "gym",
+      "name": "Mauville City",
+      "value": "w1",
+      "group": "rival"
+    },
+    {
+      "type": "gym",
+      "name": "Mauville City Gym",
+      "value": "3",
+      "group": "gym-leader"
+    },
+    {
+      "type": "route",
+      "name": "Route 117"
+    },
+    {
+      "type": "route",
+      "name": "Route 112"
+    },
+    {
+      "type": "gym",
+      "name": "Mt. Chimney",
+      "value": "mt1",
+      "group": "evil-team"
+    },
+    {
+      "type": "gym",
+      "name": "Mt. Chimney",
+      "value": "mm1",
+      "group": "evil-team"
+    },
+    {
+      "type": "route",
+      "name": "Route 113"
+    },
+    {
+      "type": "route",
+      "name": "Route 114"
+    },
+    {
+      "type": "route",
+      "name": "Desert Underpass"
+    },
+    {
+      "type": "route",
+      "name": "Meteor Falls"
+    },
+    {
+      "type": "gym",
+      "name": "Meteor Falls",
+      "value": "mc1",
+      "group": "evil-team"
+    },
+    {
+      "type": "route",
+      "name": "Lavaridge Town"
+    },
+    {
+      "type": "gym",
+      "name": "Lavaridge Gym",
+      "value": "4",
+      "group": "gym-leader"
+    },
+    {
+      "type": "route",
+      "name": "Fiery Path"
+    },
+    {
+      "type": "route",
+      "name": "Route 111"
+    },
+    {
+      "type": "route",
+      "name": "Mirage Tower"
+    },
+    {
+      "type": "gym",
+      "name": "Petalburg Gym",
+      "value": "5",
+      "group": "gym-leader"
+    },
+    {
+      "type": "route",
+      "name": "Route 118"
+    },
+    {
+      "type": "route",
+      "name": "Route 119"
+    },
+    {
+      "type": "gym",
+      "name": "Weather Institude",
+      "value": "as1",
+      "group": "evil-team"
+    },
+    {
+      "type": "gym",
+      "name": "Rival ambush",
+      "value": "r3b",
+      "group": "rival"
+    },
+    {
+      "type": "gym",
+      "name": "Rival ambush",
+      "value": "r3m",
+      "group": "rival"
+    },
+    {
+      "type": "route",
+      "name": "Fortree City"
+    },
+    {
+      "type": "route",
+      "name": "Route 120"
+    },
+    {
+      "type": "gym",
+      "name": "Fortree City Gym",
+      "value": "6",
+      "group": "gym-leader"
+    },
+    {
+      "type": "route",
+      "name": "Route 121"
+    },
+    {
+      "type": "route",
+      "name": "Safari Zone"
+    },
+    {
+      "type": "route",
+      "name": "Route 122"
+    },
+    {
+      "type": "route",
+      "name": "Mt. Pyre"
+    },
+    {
+      "type": "gym",
+      "name": "Mt. Pyre",
+      "value": "am1",
+      "group": "evil-team"
+    },
+    {
+      "type": "route",
+      "name": "Route 123"
+    },
+    {
+      "type": "route",
+      "name": "Jagged Pass"
+    },
+    {
+      "type": "route",
+      "name": "Team Magma Hideout"
+    },
+    {
+      "type": "gym",
+      "name": "Team Magma Hideout",
+      "value": "mtc",
+      "group": "evil-team"
+    },
+    {
+      "type": "gym",
+      "name": "Team Magma Hideout",
+      "value": "mtm",
+      "group": "evil-team"
+    },
+    {
+      "type": "route",
+      "name": "Lilycove City"
+    },
+    {
+      "type": "gym",
+      "name": "Optional Rival",
+      "value": "r4b",
+      "group": "rival"
+    },
+    {
+      "type": "gym",
+      "name": "Optional Rival",
+      "value": "r4m",
+      "group": "rival"
+    },
+    {
+      "type": "gym",
+      "name": "Team Aqua Hideout",
+      "value": "am2",
+      "group": "evil-team"
+    },
+    {
+      "type": "route",
+      "name": "Route 124"
+    },
+    {
+      "type": "route",
+      "name": "Mossdeep City"
+    },
+    {
+      "type": "gym",
+      "name": "Mossdeep City Gym",
+      "value": "7",
+      "group": "gym-leader"
+    },
+    {
+      "type": "gym",
+      "name": "Mossdeep Space Center",
+      "value": "mt2",
+      "group": "evil-team"
+    },
+    {
+      "type": "gym",
+      "name": "Mossdeep Space Center",
+      "value": "mmc",
+      "group": "evil-team"
+    },
+    {
+      "type": "route",
+      "name": "Route 125"
+    },
+    {
+      "type": "route",
+      "name": "Shoal Cave"
+    },
+    {
+      "type": "route",
+      "name": "Route 127"
+    },
+    {
+      "type": "route",
+      "name": "Route 128"
+    },
+    {
+      "type": "route",
+      "name": "Seafloor Cavern"
+    },
+    {
+      "type": "gym",
+      "name": "Seafloor Cavern",
+      "value": "as2",
+      "group": "evil-team"
+    },
+    {
+      "type": "gym",
+      "name": "Seafloor Cavern",
+      "value": "aa2",
+      "group": "evil-team"
+    },
+    {
+      "type": "route",
+      "name": "Route 126"
+    },
+    {
+      "type": "route",
+      "name": "Sootopolis City"
+    },
+    {
+      "type": "gym",
+      "name": "Sootopolis Gym",
+      "value": "8",
+      "group": "gym-leader"
+    },
+    {
+      "type": "route",
+      "name": "Cave of Origin"
+    },
+    {
+      "type": "route",
+      "name": "Route 129"
+    },
+    {
+      "type": "route",
+      "name": "Route 130"
+    },
+    {
+      "type": "route",
+      "name": "Route 131"
+    },
+    {
+      "type": "route",
+      "name": "Sky Pillar"
+    },
+    {
+      "type": "route",
+      "name": "Pacifidlog Town"
+    },
+    {
+      "type": "route",
+      "name": "Mirage Island"
+    },
+    {
+      "type": "route",
+      "name": "Route 105"
+    },
+    {
+      "type": "route",
+      "name": "Route 108"
+    },
+    {
+      "type": "route",
+      "name": "Abandoned Ship"
+    },
+    {
+      "type": "route",
+      "name": "Route 109"
+    },
+    {
+      "type": "route",
+      "name": "Route 132"
+    },
+    {
+      "type": "route",
+      "name": "Route 133"
+    },
+    {
+      "type": "route",
+      "name": "Route 134"
+    },
+    {
+      "type": "route",
+      "name": "Ever Grande City"
+    },
+    {
+      "type": "route",
+      "name": "Victory Road"
+    },
+    {
+      "type": "gym",
+      "name": "Rival Ambush",
+      "value": "w2",
+      "group": "rival"
+    },
+    {
+      "type": "gym",
+      "name": "Pokémon League",
+      "value": "e1",
+      "group": "elite-four"
+    },
+    {
+      "type": "gym",
+      "name": "Pokémon League",
+      "value": "e2",
+      "group": "elite-four"
+    },
+    {
+      "type": "gym",
+      "name": "Pokémon League",
+      "value": "e3",
+      "group": "elite-four"
+    },
+    {
+      "type": "gym",
+      "name": "Pokémon League Champion",
+      "value": "c1",
+      "group": "elite-four"
+    },
+    {
+      "type": "gym",
+      "name": "Meteor Falls Champion",
+      "value": "c2",
+      "group": "rival"
+    },
+    {
+      "type": "route",
+      "name": "S.S. Tidal"
+    },
+    {
+      "type": "route",
+      "name": "Battle Frontier"
+    },
+    {
+      "type": "route",
+      "name": "Artisan Cave"
+    }
+  ],
   "or": [
     {
       "type": "route",

@@ -1,5 +1,6 @@
 import Pokemon from 'pokemon-assets/assets/data/pokemon.json'
 import { filterObj, mapObj } from '$lib/utils/arr'
+import { pick } from 'ramda'
 
 const FormMap = {
   rattataalola: 10091, raticatealola: 10092, raichualola: 10100,
@@ -33,3 +34,12 @@ export default mapObj(
     label: format(pkmn)
   })
 )
+
+const props = ['evos', 'types', 'name', 'sprite', 'label', 'alias', 'imgId', 'baseStats']
+export const filterdata = o => Object
+  .values(o)
+  .map((p) => ({
+    ...pick(props, p),
+    evos: p.evos.map(e => e.toLowerCase()),
+    types: p.types.map(t => t.toLowerCase())
+  }))

@@ -19,7 +19,7 @@
   "d": { "pid": "dp", "logo": "/logos/diamond-logo", "title": "Diamond", "gen": "IV", "supported": true  },
   "p": { "pid": "dp", "logo": "/logos/pearl-logo", "title": "Pearl", "gen": "IV", "supported": true  },
   "em": { "pid": "em", "logo": "/logos/emerald-logo", "title": "Emerald", "gen": "III", "supported": true  },
-  "incem": { "pid": "incem", "logo": "/logos/inclement-emerald-logo", "title": "Inclement Emerald", "gen": "romhack", "supported": true  },
+  "incem": { "pid": "incem", "logo": "/logos/inclement-emerald-logo", "title": "Inclement Emerald", "gen": "romhack", "supported": true, "patched": true },
   "r": { "pid": "rs", "logo": "/logos/ruby-logo", "title": "Ruby", "gen": "III", "supported": false  },
   "s": { "pid": "rs", "logo": "/logos/sapphire-logo", "title": "Sapphire", "gen": "III", "supported": false  },
   "or": { "pid": "or", "lid": "oras", "logo": "/logos/omega-ruby-logo", "title": "Omega Ruby", "gen": "III", "supported": true  },

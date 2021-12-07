@@ -54,6 +54,14 @@ export const createGame = (name, game) => (payload) => {
   return games.concat(gameData).join(',')
 }
 
+export const getGen = _ => new Promise((resolve) => {
+  activeGame.subscribe(gameId => {
+    savedGames.subscribe(parse(games => {
+      resolve(games[gameId]?.game)
+    }))
+  })
+})
+
 export const getGame = (id) => createWritable(
   IDS.game(id),
   (val) => {

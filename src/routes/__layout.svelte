@@ -11,18 +11,22 @@
   import { setContext } from 'svelte'
   import { browser, dev } from '$app/env'
 
+  import { getGen } from '$lib/store'
   import { GameHeading, NavHeading, CookieBanner } from '$lib/components/navs'
 
   import Icon from 'svelte-icons-pack'
   import GitHub from 'svelte-icons-pack/bi/BiLogoGithub'
 
-  let data
+  let data = {}
   const fetchData = async () => {
     if (!browser) return
-    if (data) return data
-    const res = await fetch('/api/pokemon.json')
-    data = await res.json()
-    return data
+
+    const gen = await getGen()
+    if (data[gen]) return data[gen]
+
+    const res = await fetch(`/api/${gen}/pokemon.json`)
+    data[gen] = await res.json()
+    return data[gen]
   }
 
   setContext('game', {
