@@ -4,24 +4,24 @@
       "miloticite": {
         "name": "Miloticite",
         "sprite": "audinite",
-        "effect": "Allows Milotic to mega evolve"
+        "effect": "Allows Milotic to Mega Evolve into Mega Miltoic."
       },
       "kingdranite": {
         "name": "Kingdranite",
         "sprite": "garchompite",
-        "effect": "Allows Kingdra to mega evolve"
+        "effect": "Allows Kingdra to Mega Evolve into Mega Kingdra."
       }
     },
     "move": {
       "cut": {
         "power": "90",
         "type": "steel",
-        "effect": "Has an increased critical hit chance"
+        "effect": "Has an increased chance for a critical hit."
       },
       "strength": {
         "power": "100",
         "type": "rock",
-        "effect": "Lowers the user's defense and special defense after use"
+        "effect": "Lowers the user's Defense and Special Defense by one stage after use."
       },
       "wing-attack": {
         "power": "80"
@@ -43,10 +43,10 @@
       },
       "draining-kiss": {
         "power": "75",
-        "effect": "Restores the User's HP by 50% of the damage dealt"
+        "effect": "Drains 50% of the damage inflicted to heal the user."
       },
       "drill-peck": {
-        "effect": "Has an increased critical hit chance"
+        "effect": "Has an increased chance for a critical hit."
       },
       "freeze-dry": {
         "power": "95"
@@ -64,21 +64,21 @@
         "power": "90"
       },
       "x-scissor": {
-        "effect": "Has an increased critical hit chance"
+        "effect": "Has an increased chance for a critical hit."
       }
     },
     "ability": {
       "overgrow": {
         "name": "Overgrow",
-        "effect": "Increases damage by 20%. This increases to 50% while the Pokémon is at or below 1/3 HP."
+        "effect": "Strengthens grass moves by 1.2×. This increases to 1.5× while the Pokémon is at ⅓ HP or less."
       },
       "blaze": {
         "name": "Blaze",
-        "effect": "Increases damage by 20%. This increases to 50% while the Pokémon is at or below 1/3 HP."
+        "effect": "Strengthens fire moves by 1.2×. This increases to 1.5× while the Pokémon is at ⅓ HP or less."
       },
       "torrent": {
         "name": "Torrent",
-        "effect": "Increases damage by 20%. This increases to 50% while the Pokémon is at or below 1/3 HP."
+        "effect": "Strengthens water moves by 1.2×. This increases to 1.5× while the Pokémon is at ⅓ HP or less."
       },
       "chloroplast": {
         "name": "Chloroplast",
@@ -86,7 +86,7 @@
       },
       "whiteout": {
         "name": "Whiteout",
-        "effect": "Boosts the power of Ice-type attacks in Hail by 50%"
+        "effect": "Boosts the power of Ice-type attacks in Hail by 1.5×."
       }
     },
     "pokemon": {

@@ -5,7 +5,7 @@ import patches from '$lib/data/patches.json'
 
 import { map, compose, prop, path, pick, evolve, applySpec } from 'ramda'
 
-const maybe = (f, ...params) => params.length ? f(...params) : Promise.resolve(null)
+const maybe = (f, param) => param ? f(param) : Promise.resolve(null)
 const LANG = 'en'
 
 const statNameMap = {
@@ -51,6 +51,7 @@ const toHeld = (held, patch) => {
 
 const toAbility = (ability, patches = {}) => {
   if (patches[ability]) return patches[ability]
+  if (patches[ability.name]) return patches[ability.name]
 
   return {
     name: ability.names.find(l => l.language.name === LANG).name,
@@ -120,6 +121,6 @@ export async function get ({ params, query }) {
     }
   } catch (E) {
     console.log(E)
-    console.log(E.response.status, E.request.path)
+    console.log(E.response?.status || 'XXX', E.request.path)
   }
 }
