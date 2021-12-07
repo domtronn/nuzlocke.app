@@ -12,7 +12,7 @@ formats.
 
 If you want to contribute you will need to provide 2 files, the
 `routes.txt` and `league.txt` which should be in the following format
-below
+below named after the generation, e.g. `oras.txt`
 
 **League data**
 ```
@@ -29,6 +29,36 @@ Route 2
 --Gym battle|1|gym-leader
 Route 3
 ```
+
+**Patches**
+Patches are needed by
+[RomHacks](https://en.wikipedia.org/wiki/ROM_Hacking) as they often
+make changes to abilities, moves, items, and stats.
+
+To support a **RomHack** you will need to provide a patches file containing the following
+
+```
+--item
+item name|item sprite|item description
+
+--move
+name|type*|power*|description 
+
+--ability
+name|description
+
+--pokemon
+hp,atk,def,spa,spd,spe*|name|type1,type2*
+```
+
+`*` denotes optional fields, you can leave these blank but you must
+include the necessary number of `|`s, e.g. `cut||90` will just modify
+the power of `cut`
+
+Pokemon stats are a **comma** `,` separated list, but you should only
+include the modifications, e.g. `,,100` will modify the defense to
+`100`
+
 
 ### Alternatives
 
