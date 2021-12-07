@@ -15,6 +15,7 @@
 
   import Icon from 'svelte-icons-pack'
   import GitHub from 'svelte-icons-pack/bi/BiLogoGithub'
+  import Discord from 'svelte-icons-pack/bi/BiLogoDiscord'
 
   let data
   const fetchData = async () => {
@@ -83,6 +84,13 @@
         <Icon className='fill-current' src={GitHub} />
       </button>
     </a>
+    <a href="https://discord.com/channels/917869259261100142/917869259776991257"
+       rel=noreferrer target=_blank>
+      <button aria-label='Discuss' title='Discuss'>
+        <Icon className=' fill-current' src={Discord} />
+      </button>
+    </a>
+
   </p>
 
   All content & design © Pokémon Nuzlocke Tracker, 2021-{(new Date()).getFullYear()}. <a href='/privacy-policy'>Privacy Policy</a>.
