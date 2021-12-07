@@ -67,7 +67,11 @@
     </div>
 
     <div class='absolute -right-8 h-0'>
-      <img width=96 height=96 style="--v-anim-dur: {animDur}s; --v-anim-delay: {animDelay}s" class='{anim} img__pkm -translate-y-16 h-40 w-auto' src={sprite} alt={name} />
+      {#if sprite}
+        <img width=96 height=96 style="--v-anim-dur: {animDur}s; --v-anim-delay: {animDelay}s" class='{anim} img__pkm -translate-y-16 h-40 w-auto' src={sprite} alt={name} />
+      {:else}
+        <img width=96 height=96 style="--v-anim-dur: {animDur}s; --v-anim-delay: {animDelay}s" class='{anim} img__pkm scale-75 -translate-y-16 -translate-x-6 h-40 w-auto' src='https://img.pokemondb.net/sprites/home/normal/unown-qm.png' alt='Unknown sprite for {name}'>
+      {/if}
     </div>
 
     <div class='flex gap-x-1 absolute top-0 transform -translate-y-1/2'>
