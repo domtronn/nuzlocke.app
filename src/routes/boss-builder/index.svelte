@@ -1,9 +1,9 @@
 <script>
-  let value = `--1|Red||/leaders/red
+  let value = `--1|Red
 charizard|48|fire-spin,flamethrower,fly,dragon-dance|blaze|fire-gem
 pikachu|50|volt-tackle,nuzzle,quick-attack,fake-out|static|light-ball
 
---2|Your trainer
+--2|Boss|dark
 `
   import PokemonData from 'pokemon-assets/assets/data/pokemon.json'
   import _MovesData from 'pokemon-assets/assets/data/moves.json'
@@ -31,6 +31,13 @@ pikachu|50|volt-tackle,nuzzle,quick-attack,fake-out|static|light-ball
 
   import Error from 'svelte-icons-pack/fa/FaSolidTimesCircle'
   import Success from 'svelte-icons-pack/bi/BiSolidBadgeCheck'
+
+  import Mobile from 'svelte-icons-pack/ai/AiOutlineMobile'
+  import Stop from 'svelte-icons-pack/ai/AiOutlineStop'
+
+  import GitHub from 'svelte-icons-pack/bi/BiLogoGithub'
+  import Discord from 'svelte-icons-pack/bi/BiLogoDiscord'
+  import Info from 'svelte-icons-pack/bi/BiInfoSquare'
 
   import Camera from 'svelte-icons-pack/bi/BiCamera'
   import Copy from 'svelte-icons-pack/fa/FaClipboard'
@@ -132,7 +139,7 @@ pikachu|50|volt-tackle,nuzzle,quick-attack,fake-out|static|light-ball
   }
 
   let toast
-  const onclick = _ => {
+  const oncopy = _ => {
     window
       .navigator
       .clipboard
@@ -142,6 +149,14 @@ pikachu|50|volt-tackle,nuzzle,quick-attack,fake-out|static|light-ball
         content: 'Data copied to clipboard',
         icon: Clipboard
       }))
+  }
+
+  const onscreenshot = async _ => {
+    toast.toast({
+      variant: 'failure',
+      content: 'Sorry! Screenshots are not currently supported.',
+      icon: Camera
+    })
   }
 
   const debouncedError = debounce(_ =>
@@ -164,8 +179,22 @@ pikachu|50|volt-tackle,nuzzle,quick-attack,fake-out|static|light-ball
   <link rel=stylesheet href=/assets/items.css />
 </svelte:head>
 
-<main class='flex flex-col px-12 pr-6'>
-  <h1>Boss builder</h1>
+<div class='block xl:hidden absolute inset-0 flex flex-col items-center justify-center text-2xl text-center px-2 max-w-md mx-auto -mt-12'>
+  <div class='relative h-32'>
+    <Icon size=4em src={Mobile} className='fill-current absolute text-gray-900 dark:text-gray-50 -translate-x-1/2 left-1/2' />
+    <Icon size=6em src={Stop} className='fill-current absolute text-hotpink-500 -translate-x-1/2 left-1/2 -translate-y-6' />
+  </div>
+  <h4 class='tracking-wide mb-4 text-5xl font-bold'>Screen to small</h4>
+  <span class='leading-6 text-lg'>
+    The <strong>boss editor</strong> isn't available on smaller devices. You need the room of a desktop browser in order to display everything correctly.
+  </span>
+  <span class='leading-6 text-lg mt-4'>
+    Please open this link again or resize your screen!
+  </span>
+</div>
+
+<main class='flex flex-col px-12 pr-6 hidden xl:block'>
+  <h1>Boss Editor</h1>
 
   <div class='w-full flex z-50'>
     <div class='flex flex-col w-1/3 py-4 pr-4'>
@@ -196,14 +225,29 @@ pikachu|50|volt-tackle,nuzzle,quick-attack,fake-out|static|light-ball
       </div>
       </div>
 
+      <p class=mt-6>
+        This editor lets you build and preview boss battles for the <a rel=external target=blank href='https://nuzlocke.vercel.app'><mark>Nuzlocke Tracker app</mark></a>.
+        Use the example above, or click
+        <button>
+          <mark>
+            here
+            <Icon src={Info} className='fill-current translate-y-px'/>
+          </mark>
+        </button>
+        to see detailed instrunctions on the necessary data format.
+      </p>
+      <p class=mb-2>
+        You can submit bosses on <mark><Icon src={GitHub} className='fill-current translate-y-px' />GitHub</mark> or directly on <mark><Icon src={Discord} className='fill-current translate-y-px'/>Discord</mark>.
+      </p>
+
       <span class='mt-4 flex gap-x-2'>
-        <Button on:click={onclick} className=w-full rounded>
+        <Button on:click={oncopy} className='umami--click--export w-full' rounded>
           <span class='inline-flex items-center font-medium'>
           <Icon size=1.2em src={Copy} className='fill-current mr-2 -ml-2'/>
           Copy to clipboard
           </span>
         </Button>
-        <Button on:click={onclick} className=w-full rounded>
+        <Button disabled on:click={onscreenshot} className='umami--click--screenshot w-full' rounded>
           <span class='inline-flex items-center font-medium -mb-1'>
           <Icon size=1.4em src={Camera} className='fill-current mr-2 translate-y-0.5 -ml-2'/>
           Take screenshot
@@ -215,13 +259,10 @@ pikachu|50|volt-tackle,nuzzle,quick-attack,fake-out|static|light-ball
     <div class='w-2/3 my-4 overflow-y-scroll pr-6 preview'>
       <div class='preview__grad preview__grad--top -mt-2' />
 
-      <div class='grid grid-cols-2 gap-x-4 gap-y-8'>
+      <div id=capture class='grid grid-cols-2 gap-x-4 gap-y-8'>
         {#each Object.values(parsed) as boss (boss)}
           <div class='flex w-full gap-x-4 justify-between col-span-2'>
             <div class='flex items-center'>
-              {#if boss.img}
-                <Picture src={boss.img} alt={boss.name} aspect=72x72 pixelated />
-              {/if}
               <h2>{boss?.name || ''}</h2>
               {#if boss.speciality}
                 <TypeBadge type={boss.speciality} />
@@ -251,7 +292,8 @@ pikachu|50|volt-tackle,nuzzle,quick-attack,fake-out|static|light-ball
 
 <style>
   :root {
-    --h: 55vh;
+    --h: 50vh;
+    --max-h: 60vh
   }
 
   h1 { @apply text-4xl font-bold }
@@ -310,15 +352,34 @@ pikachu|50|volt-tackle,nuzzle,quick-attack,fake-out|static|light-ball
     box-shadow: theme('boxShadow.lg');
   }
 
+  .errors::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 6px;
+  }
+
+  .errors::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-color: theme('colors.hotpink.200');
+    box-shadow: theme('boxShadow.lg');
+  }
+
   textarea {
     @apply w-full rounded-t-2xl p-4 text-gray-900 text-xs bg-gray-50 overflow-scroll whitespace-nowrap z-10 border-0 outline-none transition;
     resize: none;
     height: var(--h);
   }
 
+  .errors * {
+    direction: ltr;
+  }
   .errors {
-    height: calc(70vh - var(--h));
+    direction: rtl;
+    height: calc(var(--max-h) - var(--h));
     @apply transition p-4 leading-4 text-tiny text-hotpink-500 bg-hotpink-50 rounded-2xl z-0 border-gray-50 border-8 overflow-y-scroll overflow-x-hidden;
+  }
+
+  .errors p {
+    @apply text-hotpink-500;
   }
 
   :global(.dark) .errors {
@@ -336,4 +397,13 @@ pikachu|50|volt-tackle,nuzzle,quick-attack,fake-out|static|light-ball
   :global(.dark) textarea {
     @apply text-gray-50 bg-gray-900 ;
   }
+
+  p {
+    @apply text-sm leading-4 text-gray-900;
+  }
+
+  mark {
+    @apply inline-flex translate-y-px gap-x-1 bg-yellow-200 text-gray-900 px-1
+  }
+
 </style>
