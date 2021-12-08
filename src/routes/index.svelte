@@ -188,7 +188,7 @@ pikachu|50|volt-tackle,nuzzle,quick-attack,fake-out|static|light-ball
     <Icon size=4em src={Mobile} className='fill-current absolute text-gray-900 dark:text-gray-50 -translate-x-1/2 left-1/2' />
     <Icon size=6em src={Stop} className='fill-current absolute text-hotpink-500 -translate-x-1/2 left-1/2 -translate-y-6' />
   </div>
-  <h4 class='tracking-wide mb-4 text-5xl font-bold'>Screen to small</h4>
+  <h4 class='tracking-wide mb-4 text-5xl font-bold'>Screen too small</h4>
   <span class='leading-6 text-lg'>
     The <strong>boss editor</strong> isn't available on smaller devices. You need the room of a desktop browser in order to display everything correctly.
   </span>
