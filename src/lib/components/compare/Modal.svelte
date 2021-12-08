@@ -69,7 +69,7 @@
 
 <section class=pb-4>
   {#if !loading && !box.length}
-    <div class='bg-white px-4 py-8 text-center rounded-xl text-xl dark:bg-gray-900 shadow-lg'>
+    <div class='bg-white px-4 py-8 text-center rounded-xl text-xl dark:bg-gray-900 dark:text-gray-50 shadow-lg'>
       <p>You currently have no Pokémon to compare.</p>
       <p>Go back out there and Catch 'em All!</p>
 
