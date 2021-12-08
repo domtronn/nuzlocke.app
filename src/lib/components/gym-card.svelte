@@ -15,7 +15,7 @@
   import Ball from 'svelte-icons-pack/cg/CgPokemon'
 
   let CompareModal
-  onMount(() =>{
+  onMount(() => {
     import('$lib/components/compare')
       .then(i => CompareModal = i.CompareModal)
   })

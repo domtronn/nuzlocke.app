@@ -11,7 +11,7 @@
 
 <nav>
   <div class=p-container>
-    {#if $page.path !== '/'}
+    {#if $page.path !== '/' && $page. path !== '/boss-builder'}
       <a
         href=/
         rel=external
