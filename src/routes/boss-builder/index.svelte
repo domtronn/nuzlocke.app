@@ -162,12 +162,16 @@ pikachu|50|volt-tackle,nuzzle,quick-attack,fake-out|static|light-ball
   const debouncedError = debounce(_ =>
     errors = Object
       .values(parsed)
-      .reduce((acc, boss) => acc.concat(
-        boss.pokemon.reduce((acc, p) => {
-          const [err] = fauxfetch(p)
-          if (err) return acc.concat(err)
-          return acc
-        }, [])), [])
+      .reduce((acc, boss) => {
+        return acc
+          .concat(
+            boss.pokemon.reduce((acc, p) => {
+              const [err] = fauxfetch(p)
+              if (err) return acc.concat(err)
+              return acc
+            }, [])
+          )
+      }, [])
     , 200)
 
   let parsed = {}, errors = []
@@ -198,9 +202,37 @@ pikachu|50|volt-tackle,nuzzle,quick-attack,fake-out|static|light-ball
 
   <div class='w-full flex z-50'>
     <div class='flex flex-col w-1/3 py-4 pr-4'>
+      <p>
+        This editor lets you build and preview boss battles for the <a class='underline transition hover:text-hotpink-500 dark:hover:text-hotpink-400' rel=external target=blank href='https://nuzlocke.vercel.app'>Nuzlocke Tracker app</a>.
+        Use the example above, or click
+        <button>
+          <mark>
+            here
+            <Icon src={Info} className='fill-current translate-y-px'/>
+          </mark>
+        </button>
+        to see detailed instrunctions on the necessary data format.
+      </p>
+      <p class=mb-6>
+        You can submit bosses on
+        <a href="https://github.com/domtronn/dc-nuzlocke-data"
+           rel=noreferrer target=_blank>
+          <mark><Icon src={GitHub} className='fill-current translate-y-px' />GitHub</mark>
+        </a>
+        or directly on
+
+        <a href="https://discord.com/channels/917869259261100142/917869259776991257"
+           rel=noreferrer target=_blank>
+          <mark><Icon src={Discord} className='fill-current translate-y-px'/>Discord</mark>
+        </a>
+        .
+      </p>
+
       <div class='shadow-xl rounded-2xl bg-gray-50 dark:bg-gray-900 relative editor'
            class:valid={errors.length === 0}>
-      <textarea bind:value />
+
+
+      <textarea spellcheck=false bind:value />
 
       <div class=errors class:valid={!errors.length} >
         {#if errors.length}
@@ -224,21 +256,6 @@ pikachu|50|volt-tackle,nuzzle,quick-attack,fake-out|static|light-ball
         {/each}
       </div>
       </div>
-
-      <p class=mt-6>
-        This editor lets you build and preview boss battles for the <a rel=external target=blank href='https://nuzlocke.vercel.app'><mark>Nuzlocke Tracker app</mark></a>.
-        Use the example above, or click
-        <button>
-          <mark>
-            here
-            <Icon src={Info} className='fill-current translate-y-px'/>
-          </mark>
-        </button>
-        to see detailed instrunctions on the necessary data format.
-      </p>
-      <p class=mb-2>
-        You can submit bosses on <mark><Icon src={GitHub} className='fill-current translate-y-px' />GitHub</mark> or directly on <mark><Icon src={Discord} className='fill-current translate-y-px'/>Discord</mark>.
-      </p>
 
       <span class='mt-4 flex gap-x-2'>
         <Button on:click={oncopy} className='umami--click--export w-full' rounded>
@@ -364,7 +381,7 @@ pikachu|50|volt-tackle,nuzzle,quick-attack,fake-out|static|light-ball
   }
 
   textarea {
-    @apply w-full rounded-t-2xl p-4 text-gray-900 text-xs bg-gray-50 overflow-scroll whitespace-nowrap z-10 border-0 outline-none transition;
+    @apply w-full rounded-t-2xl p-4 text-gray-900 text-sm bg-gray-50 overflow-scroll whitespace-nowrap z-10 border-0 outline-none transition;
     resize: none;
     height: var(--h);
   }
@@ -386,6 +403,10 @@ pikachu|50|volt-tackle,nuzzle,quick-attack,fake-out|static|light-ball
     @apply border-gray-900;
   }
 
+  :global(.dark) .errors p {
+    @apply text-hotpink-500;
+  }
+
   :global(.dark) .errors.valid {
     @apply bg-gray-900 border-transparent
   }
@@ -400,6 +421,10 @@ pikachu|50|volt-tackle,nuzzle,quick-attack,fake-out|static|light-ball
 
   p {
     @apply text-sm leading-4 text-gray-900;
+  }
+
+  :global(.dark) p {
+    @apply text-gray-400;
   }
 
   mark {

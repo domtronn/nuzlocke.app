@@ -51,7 +51,7 @@
   }
 
   footer {
-    @apply text-center w-full absolute bottom-0 my-8 sm:my-10 px-4 text-tiny md:text-xs text-gray-500 dark:text-gray-400 leading-3;
+    @apply text-center absolute left-1/2 -translate-x-1/2 bottom-0 my-4 sm:my-6 px-4 text-tiny md:text-xs text-gray-500 dark:text-gray-400 leading-3;
   }
   footer > p { @apply flex justify-center text-2xl gap-x-2; }
   footer a { z-index: 2000 }
