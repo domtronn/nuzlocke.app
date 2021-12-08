@@ -77,7 +77,7 @@
       </table>
 
       <p>
-        You can clear all your stored data by visiting the <a href="/">settings</a> page.
+        You can clear all your stored data by visiting the settings page.
       </p>
 
       <h2 class='text-xl mb-2'>Changes to this Privacy Policy</h2>
