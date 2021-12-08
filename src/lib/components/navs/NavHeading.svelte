@@ -10,21 +10,10 @@
 
 
 <nav>
-  <div class=p-container>
-    {#if $page.path !== '/' && $page. path !== '/boss-builder'}
-      <a
-        href=/
-        rel=external
-        aria-label=Home
-        >
-        <Icon src={Home} size=1.4rem className='fill-current' />
-      </a>
-    {:else}
-      <span />
-    {/if}
 
+  <span class='float-right'>
     <ThemeToggle className=mt-2 />
-  </div>
+  </span>
 </nav>
 
 <style>
