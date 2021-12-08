@@ -11,7 +11,7 @@
   {disabled}
   on:click={onclick}
   class:disabled={disabled}
-  class:rounded-lg={rounded}
+  class:rounded-full={rounded}
   class='border-2 ring-2 ring-transparent px-4 transition-colors h-10 {className}'
 >
   <slot />
@@ -21,24 +21,24 @@
   :root {
     --b-fg: theme('colors.gray.700');
     --b-bg: theme('colors.gray.100');
-    --b-light-1: theme('colors.orange.50');
-    --b-light-2: theme('colors.orange.300');
-    --b-highlight-1: theme('colors.orange.500');
-    --b-highlight-2: theme('colors.orange.300');
+    --b-light-1: theme('colors.hotpink.50');
+    --b-light-2: theme('colors.hotpink.300');
+    --b-highlight-1: theme('colors.hotpink.500');
+    --b-highlight-2: theme('colors.hotpink.300');
   }
 
   :global(.dark)  {
     --b-fg: theme('colors.gray.200');
     --b-bg: theme('colors.gray.900');
-    --b-light-1: theme('colors.orange.500');
+    --b-light-1: theme('colors.hotpink.500');
     --b-light-2: transparent;
-    --b-highlight-1: theme('colors.orange.400');
+    --b-highlight-1: theme('colors.hotpink.400');
     --b-highlight-2: theme('colors.gray.800');
   }
 
   button {
     color: var(--b-fg);
-    border-color: var(--b-fg);
+    border-color: transparent;
     background-color: var(--b-bg);
   }
 

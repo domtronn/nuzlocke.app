@@ -3,11 +3,18 @@
   import { fade } from 'svelte/transition'
 
   const [width, height] = aspect.split('x')
+  let error = false, loading = true
+  const onerror = _ => error = true
+  const onload = _ => { error = false; loading = false }
 </script>
 
-<picture in:fade>
-  <source srcset='{src}.webp' type='image/webp' />
-  <img class={className} class:pixelated={pixelated} src='{src}.png' {width} {height} {alt} />
+<picture class:hidden={loading} in:fade>
+  {#if !error}
+    <source srcset='{src}.webp' type='image/webp' />
+    <img
+      on:error={onerror} on:load={onload}
+      class={className} class:pixelated={pixelated} src='{src}.png' {width} {height} {alt} />
+  {/if}
 </picture>
 
 <style>

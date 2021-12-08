@@ -22,7 +22,7 @@
   <div style="--badge-color: {col[0]}; padding: 4px 5px;" class={className}>
     <Icon src={icon} color={col[1]} />
   </div>
-{:else}
+{:else if col}
   <div style="--badge-color: {col}; --badge-content: '{content}'" class={className}>
   {content}
 </div>

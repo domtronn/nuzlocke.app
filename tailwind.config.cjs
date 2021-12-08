@@ -16,7 +16,7 @@ const config = {
       animation: {
         'ping-slow': 'ping 3s ease infinite',
         'spin-slow': 'spin 3s linear infinite',
-        'spin-slow-2': 'spin 4s linear infinite', 
+        'spin-slow-2': 'spin 4s linear infinite',
         'full-pulse': 'full-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite'
       },
       dropShadow: {
@@ -25,8 +25,16 @@ const config = {
       scale: {
         200: '2',
         250: '2.5'
-      }, 
+      },
       colors: {
+        hotpink: {
+          50: '#ffe8eb',
+          100: '#ffd0d8',
+          200: '#ffa1b1',
+          300: '#ff7289',
+          400: '#ff4362',
+          500: '#ff143b',
+        },
         orange: colors.orange,
         lime: colors.lime,
         gray: colors.trueGray

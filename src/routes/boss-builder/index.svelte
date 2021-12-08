@@ -1,11 +1,10 @@
 <script>
-  let value = `--1|Fireman Sam|fire
-torkoal|23|explosion,sunny-day,solar-beam,recover|drought|fire-gem
-arcanine|22|fire-spin,extreme-speed,quick-attack|intimidate|sitrus-berry
+  let value = `--1|Red||/leaders/red
+charizard|48|fire-spin,flamethrower,fly,dragon-dance|blaze|fire-gem
+pikachu|50|volt-tackle,nuzzle,quick-attack,fake-out|static|light-ball
 
---2|
+--2|Your trainer
 `
-
   import PokemonData from 'pokemon-assets/assets/data/pokemon.json'
   import _MovesData from 'pokemon-assets/assets/data/moves.json'
   import _AbilityData from 'pokemon-assets/assets/data/abilities.json'
@@ -15,17 +14,46 @@ arcanine|22|fire-spin,extreme-speed,quick-attack|intimidate|sitrus-berry
   const MovesData = Object.values(_MovesData).reduce((ac, it) => ({ ...ac, [it.slug]: it }), {})
   const ItemData = Object.values(_ItemData).reduce((ac, it) => ({ ...ac, [it.sprite]: it }), {})
 
+  const debounce = (fn, ms = 0) => {
+    let timeoutId;
+    return function(...args) {
+      clearTimeout(timeoutId);
+      timeoutId = setTimeout(() => fn.apply(this, args), ms);
+    };
+  };
+
   import Pokemon from '$lib/components/pokemon-card.svelte'
   import TypeBadge from '$lib/components/type-badge.svelte'
   import Label from '$lib/components/label.svelte'
 
-  import { Button } from '$lib/components/core'
+  import { fade } from 'svelte/transition'
+  import Icon from 'svelte-icons-pack'
+
+  import Error from 'svelte-icons-pack/fa/FaSolidTimesCircle'
+  import Success from 'svelte-icons-pack/bi/BiSolidBadgeCheck'
+
+  import Camera from 'svelte-icons-pack/bi/BiCamera'
+  import Copy from 'svelte-icons-pack/fa/FaClipboard'
+  import Clipboard from 'svelte-icons-pack/fa/FaSolidClipboardCheck'
+
+  import { Button, Toast, Picture } from '$lib/components/core'
 
   const fauxfetch = p => {
+    let fauxerrors = [] // Reset list of errors
+
     const fullP = PokemonData[p.name]
+    if (p.name && !fullP)
+      fauxerrors.push(`Invalid pokemon: ${p.name}`)
+    if (p.level && isNaN(p.level))
+      fauxerrors.push(`Invalid level: '${p.level}' must be a number`)
+
     const fullMoves = (p?.moves || []).map(m => {
       const data = MovesData[m]
-      if (!data) return
+      if (!data) {
+        fauxerrors.push(`Inalid move: ${m}`)
+        return
+      }
+
       return {
         name: data.name,
         damage_class: data.category.toLowerCase(),
@@ -34,24 +62,32 @@ arcanine|22|fire-spin,extreme-speed,quick-attack|intimidate|sitrus-berry
         type: data.type.toLowerCase()
       }
     })
+
     const fullAbility = AbilityData[p.ability]
+    if (p.ability && !fullAbility) fauxerrors.push(`Invalid ability: ${p.ability}`)
+
     const fullItem = ItemData[p.held]
+    if (p.held && !fullItem) fauxerrors.push(`Invalid item: ${p.held}`)
 
-    console.log(fullMoves)
+    let err = fauxerrors.length ? fauxerrors : null
 
-    if (!fullP) return
+    if (!fullP) return [err] // Exit early
 
-    return {
-      ...fullP,
-      ...p,
-      sprite: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${fullP.num}.png`,
-      held: fullItem ? { name: fullItem.name, effect: '...', sprite: fullItem.sprite } : '',
-      ability: fullAbility ? { name: fullAbility.name } : '',
-      stats: fullP.baseStats,
-      types: fullP.types.map(i => i.toLowerCase()),
-      maxStat: Math.max(...Object.values(fullP.baseStats)),
-      moves: fullMoves.filter(i => !!i)
-    }
+    return [
+      err,
+      {
+        ...fullP,
+        ...p,
+        level: p.level ? isNaN(p.level) ? '??' : p.level : '',
+        sprite: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${fullP.num}.png`,
+        held: fullItem ? { name: fullItem.name, effect: '...', sprite: fullItem.sprite } : '',
+        ability: fullAbility ? { name: fullAbility.name } : '',
+        stats: fullP.baseStats,
+        types: fullP.types.map(i => i.toLowerCase()),
+        maxStat: Math.max(...Object.values(fullP.baseStats)),
+        moves: fullMoves.filter(i => !!i)
+      }
+    ]
   }
 
   const nonnull = (o = {}) => Object.fromEntries(Object.entries(o).filter(([, val]) => !!val))
@@ -95,24 +131,84 @@ arcanine|22|fire-spin,extreme-speed,quick-attack|intimidate|sitrus-berry
     }, {})
   }
 
-  let parsed = {}
+  let toast
+  const onclick = _ => {
+    window
+      .navigator
+      .clipboard
+      .writeText(value)
+      .then(_ => toast.toast({
+        variant: 'success',
+        content: 'Data copied to clipboard',
+        icon: Clipboard
+      }))
+  }
+
+  const debouncedError = debounce(_ =>
+    errors = Object
+      .values(parsed)
+      .reduce((acc, boss) => acc.concat(
+        boss.pokemon.reduce((acc, p) => {
+          const [err] = fauxfetch(p)
+          if (err) return acc.concat(err)
+          return acc
+        }, [])), [])
+    , 200)
+
+  let parsed = {}, errors = []
   $: value, parsed = parse(value)
+  $: parsed, debouncedError()
 </script>
 
 <svelte:head>
   <link rel=stylesheet href=/assets/items.css />
 </svelte:head>
 
-<div class='flex flex-col px-12 pr-6'>
+<main class='flex flex-col px-12 pr-6'>
   <h1>Boss builder</h1>
 
-  <div class='w-full flex'>
+  <div class='w-full flex z-50'>
     <div class='flex flex-col w-1/3 py-4 pr-4'>
+      <div class='shadow-xl rounded-2xl bg-gray-50 dark:bg-gray-900 relative editor'
+           class:valid={errors.length === 0}>
       <textarea bind:value />
 
+      <div class=errors class:valid={!errors.length} >
+        {#if errors.length}
+          <h3 in:fade={{ delay: 75, duration: 150 }} out:fade={{ duration: 150 }}
+              class='absolute bottom-3 right-5 font-bold text-base text-underline flex items-center'>
+            {errors.length} Error{errors.length !== 1 ? 's' : ''}
+            <Icon src={Error} className='fill-current ml-1' />
+          </h3>
+        {:else}
+          <h3 in:fade={{ delay: 75, duration: 150 }} out:fade={{ duration: 150 }}
+              class='font-bold text-base text-underline text-green-500 absolute bottom-3 right-4 flex items-center'>
+             Valid
+            <Icon size=1.4em src={Success} className='fill-current ml-1' />
+          </h3>
+        {/if}
+        {#each (errors || []) as e}
+          <p>
+            <b>{e.replace(/:.*/, ':')}</b>
+            {e.replace(/^.*?:/, '')}
+          </p>
+        {/each}
+      </div>
+      </div>
 
-      <span class=mt-4>
-        <Button className=w-full rounded>Export</Button>
+      <span class='mt-4 flex gap-x-2'>
+        <Button on:click={onclick} className=w-full rounded>
+          <span class='inline-flex items-center font-medium'>
+          <Icon size=1.2em src={Copy} className='fill-current mr-2 -ml-2'/>
+          Copy to clipboard
+          </span>
+        </Button>
+        <Button on:click={onclick} className=w-full rounded>
+          <span class='inline-flex items-center font-medium -mb-1'>
+          <Icon size=1.4em src={Camera} className='fill-current mr-2 translate-y-0.5 -ml-2'/>
+          Take screenshot
+          </span>
+        </Button>
       </span>
     </div>
 
@@ -123,6 +219,9 @@ arcanine|22|fire-spin,extreme-speed,quick-attack|intimidate|sitrus-berry
         {#each Object.values(parsed) as boss (boss)}
           <div class='flex w-full gap-x-4 justify-between col-span-2'>
             <div class='flex items-center'>
+              {#if boss.img}
+                <Picture src={boss.img} alt={boss.name} aspect=72x72 pixelated />
+              {/if}
               <h2>{boss?.name || ''}</h2>
               {#if boss.speciality}
                 <TypeBadge type={boss.speciality} />
@@ -136,8 +235,8 @@ arcanine|22|fire-spin,extreme-speed,quick-attack|intimidate|sitrus-berry
           </div>
 
           {#each boss.pokemon as pokemon}
-            {#if fauxfetch(pokemon)}
-              <Pokemon {...fauxfetch(pokemon)} />
+            {#if fauxfetch(pokemon)[1]}
+              <Pokemon {...fauxfetch(pokemon)[1]} />
             {/if}
           {/each}
         {/each}
@@ -147,22 +246,34 @@ arcanine|22|fire-spin,extreme-speed,quick-attack|intimidate|sitrus-berry
     </div>
   </div>
 
-</div>
+  <Toast bind:this={toast} />
+</main>
 
 <style>
+  :root {
+    --h: 55vh;
+  }
+
   h1 { @apply text-4xl font-bold }
   h2 { @apply text-2xl font-bold mr-2 }
 
   .preview {
     margin-top: -16px;
     position: relative;
-    height: 82vh;
+    height: 80vh;
     overflow-y: scroll;
     overflow-x: hidden;
   }
 
+  .editor {
+    @apply border-2 border-transparent outline-none hover:ring-0 transition hover:border-hotpink-400 hover:ring-hotpink-400 hover:focus-within:ring-2 focus-within:ring-2 focus-within:border-hotpink-500 focus-within:ring-hotpink-500
+  }
 
-  :global(.dark) .preview__grad--bottomg {
+  .editor.valid {
+    @apply border-2 border-transparent outline-none hover:ring-0 transition hover:border-green-400 hover:ring-green-400 hover:focus-within:ring-2 focus-within:ring-2 focus-within:border-green-500 focus-within:ring-green-500
+  }
+
+  :global(.dark) .preview__grad--bottom {
     background: linear-gradient(transparent, theme('colors.gray.800') 50%);
   }
   :global(.dark) .preview__grad--top {
@@ -178,10 +289,11 @@ arcanine|22|fire-spin,extreme-speed,quick-attack|intimidate|sitrus-berry
     background: linear-gradient(transparent, white 40%);
   }
   .preview__grad {
+    transition: background 1s ease;
     width: 120%;
     position: sticky;
     left: 0;
-    height: 32px;
+    height: 24px;
     z-index: 60;
   }
 
@@ -199,12 +311,29 @@ arcanine|22|fire-spin,extreme-speed,quick-attack|intimidate|sitrus-berry
   }
 
   textarea {
-    @apply w-full rounded-lg p-4 text-gray-900 text-xs bg-gray-50 shadow-lg overflow-scroll whitespace-nowrap border;
+    @apply w-full rounded-t-2xl p-4 text-gray-900 text-xs bg-gray-50 overflow-scroll whitespace-nowrap z-10 border-0 outline-none transition;
     resize: none;
-    height: 70vh;
+    height: var(--h);
+  }
+
+  .errors {
+    height: calc(70vh - var(--h));
+    @apply transition p-4 leading-4 text-tiny text-hotpink-500 bg-hotpink-50 rounded-2xl z-0 border-gray-50 border-8 overflow-y-scroll overflow-x-hidden;
+  }
+
+  :global(.dark) .errors {
+    @apply border-gray-900;
+  }
+
+  :global(.dark) .errors.valid {
+    @apply bg-gray-900 border-transparent
+  }
+
+  .errors.valid {
+    @apply bg-gray-50 border-transparent
   }
 
   :global(.dark) textarea {
-    @apply text-gray-50 bg-gray-900;
+    @apply text-gray-50 bg-gray-900 ;
   }
 </style>
