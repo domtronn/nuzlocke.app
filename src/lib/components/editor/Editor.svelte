@@ -2,7 +2,7 @@
   export let errors, value, className
 
   import Icon from 'svelte-icons-pack'
-  import { Button } from '$lib/components/core'
+  import { Button, Tooltip } from '$lib/components/core'
 
   import { fade } from 'svelte/transition'
   import { createEventDispatcher } from 'svelte'
@@ -67,12 +67,13 @@
       </span>
     </Button>
 
-    <Button disabled on:click={onscreenshot} className='umami--click--screenshot w-full' rounded>
-      <span class='inline-flex items-center font-medium -mb-1'>
-        <Icon size=1.4em src={Camera} className='fill-current mr-2 translate-y-0.5 -ml-2'/>
-        Take screenshot
-      </span>
-    </Button>
+      <Button disabled on:click={onscreenshot} className='umami--click--screenshot w-full' rounded>
+        <span class='inline-flex items-center font-medium -mb-1'>
+        <Tooltip>Coming Soon. This feature isn't ready yet!</Tooltip>
+          <Icon size=1.4em src={Camera} className='fill-current mr-2 translate-y-0.5 -ml-2'/>
+          Take screenshot
+        </span>
+      </Button>
   </span>
 
 </div>
