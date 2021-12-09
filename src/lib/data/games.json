@@ -15,7 +15,7 @@
   "wh": { "pid": "bw", "logo": "/logos/white-logo", "title": "White", "gen": "V", "supported": false  },
   "bd": { "pid": "bdsp", "logo": "/logos/brilliant-diamond-logo", "title": "Brilliant Diamond", "gen": "IV", "supported": true  },
   "sp": { "pid": "bdsp", "logo": "/logos/shining-pearl-logo", "title": "Shining Pearl", "gen": "IV", "supported": true  },
-  "pt": { "pid": "pt", "logo": "/logos/platinum-logo", "title": "Platinum", "gen": "IV", "supported": false  },
+  "pt": { "pid": "plat", "logo": "/logos/platinum-logo", "title": "Platinum", "gen": "IV", "supported": true },
   "d": { "pid": "dp", "logo": "/logos/diamond-logo", "title": "Diamond", "gen": "IV", "supported": true  },
   "p": { "pid": "dp", "logo": "/logos/pearl-logo", "title": "Pearl", "gen": "IV", "supported": true  },
   "em": { "pid": "em", "logo": "/logos/emerald-logo", "title": "Emerald", "gen": "III", "supported": true  },
