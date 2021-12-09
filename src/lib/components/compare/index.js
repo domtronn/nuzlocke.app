@@ -1,6 +1,0 @@
-export { default as CompareCard } from './Card.svelte'
-export { default as CompareInfo } from './Info.svelte'
-export { default as CompareStats } from './Stats.svelte'
-export { default as CompareModal } from './Modal.svelte'
-export { default as CompareControls } from './Controls.svelte'
-export { default } from './Modal.svelte'
