@@ -40,7 +40,6 @@
             class='absolute bottom-3 right-5 font-bold text-base text-underline flex items-center'
             >
           {errors.length} Error{errors.length !== 1 ? 's' : ''}
-          <Icon src={Error} className='fill-current ml-1' />
         </h3>
       {:else}
         <h3 in:fade={animIn} out:fade={animOut}

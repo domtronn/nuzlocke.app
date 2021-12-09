@@ -74,8 +74,16 @@ pikachu|50|volt-tackle,nuzzle,quick-attack,fake-out|static|light-ball
       }, [])
     , 500)
 
+  const debouncedParse = debounce(_ => {
+    loading = true
+    parsed = parse(value)
+    loading = false
+  }, 500)
+
+  let loading = false
   let parsed = {}, errors = []
-  $: value, parsed = parse(value)
+  $: loading
+  $: value, debouncedParse()
   $: parsed, debouncedError()
 </script>
 
@@ -100,7 +108,9 @@ pikachu|50|volt-tackle,nuzzle,quick-attack,fake-out|static|light-ball
         bind:value
         on:copy={oncopy}
         on:screenshot={onscreenshot}
-        {errors}>
+        {errors}
+        {loading}
+      >
 
         <p>
           This editor lets you build and preview boss battles for the <a class='underline transition hover:text-hotpink-500 dark:hover:text-hotpink-400' rel=external target=blank href='https://nuzlocke.vercel.app'>Nuzlocke Tracker app</a>.
