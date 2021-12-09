@@ -55,6 +55,7 @@
 
   div {
     @apply px-12 w-auto py-2 absolute bottom-0 rounded-t-xl left-1/2 -translate-x-1/2 font-medium inline-flex items-center;
+    z-index: 50000000;
 
     background-color: var(--bg);
     color: var(--fg);
