@@ -120,9 +120,8 @@ pikachu|50|volt-tackle,nuzzle,quick-attack,fake-out|static|light-ball
              rel=noreferrer target=_blank>
             <mark><Icon src={Icons.GitHub} className='fill-current translate-y-px' />GitHub</mark>
           </a>
-          or directly on
-
-          <a href="https://discord.com/channels/917869259261100142/917869259776991257"
+          or messaging me on
+          <a href="https://discord.gg/gtdceegtYB"
              rel=noreferrer target=_blank>
             <mark><Icon src={Icons.Discord} className='fill-current translate-y-px'/>Discord</mark>
           </a>.

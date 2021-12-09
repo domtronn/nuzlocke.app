@@ -87,9 +87,9 @@
         <Icon className='fill-current' src={GitHub} />
       </button>
     </a>
-    <a href="https://discord.com/channels/917869259261100142/917869259776991257"
+    <a href="https://discord.gg/gtdceegtYB"
        rel=noreferrer target=_blank>
-      <button aria-label='Discuss' title='Discuss'>
+      <button aria-label='Discuss & follow updates' title='Discuss & follow updates'>
         <Icon className=' fill-current' src={Discord} />
       </button>
     </a>
