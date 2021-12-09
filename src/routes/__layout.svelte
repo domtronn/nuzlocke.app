@@ -86,7 +86,7 @@
     </a>
     <a href="https://discord.gg/gtdceegtYB"
        rel=noreferrer target=_blank>
-      <button aria-label='Discuss' title='Discuss'>
+      <button aria-label='Discuss & follow new features' title='Discuss & follow new features'>
         <Icon className=' fill-current' src={Discord} />
       </button>
     </a>
