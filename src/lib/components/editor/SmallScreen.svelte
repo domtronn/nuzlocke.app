@@ -15,6 +15,6 @@
     The <strong>boss editor</strong> isn't available on smaller devices. You need the room of a desktop browser in order to display everything correctly.
   </span>
   <span class='leading-6 text-lg mt-4'>
-    Please open this link again or resize your screen!
+    Please open this page on a larger device or resize your window!
   </span>
 </div>
