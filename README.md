@@ -40,3 +40,5 @@ them out and thank their creators.
 - [Nuzlocke tracker](https://ashenfactory.github.io/nuzlocke-tracker/) - A simple in order route tracker
 - [Nuzlog](https://techyfatih.github.io/Nuzlog/) - A journal, team and item manager
 - [Nuzlocke Generator](https://nuzlocke-generator.herokuapp.com/) - Image creator for runs 
+
+<!-- Video available here https://gfycat.com/happyunnaturaljenny -->
