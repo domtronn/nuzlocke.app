@@ -60,7 +60,7 @@
   </div>
 
   <span class='mt-4 flex gap-x-2'>
-    <Button on:click={oncopy} className='umami--click--export w-full' rounded>
+    <Button disabled={hasErrors} on:click={oncopy} className='umami--click--export w-full' rounded>
       <span class='inline-flex items-center font-medium'>
         <Icon size=1.2em src={Copy} className='fill-current mr-2 -ml-2'/>
         Copy to clipboard

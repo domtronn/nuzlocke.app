@@ -22,7 +22,7 @@ const parseleader = l => {
  */
 const parsepokemon = l => {
   const [name, level, moves = '', ability, held, starter] = l.split('|')
-  return nonnull({ name, level, moves: moves.split(',').filter(i => i.length), ability, held, starter })
+  return nonnull({ name, level, moves: moves.split(',').filter(i => i.length).map(i => i.trim()), ability, held, starter })
 }
 
 /**

@@ -20,6 +20,8 @@ const createWritable = (id, f = val => browser && val && localStorage.setItem(id
   return w
 }
 
+export const modal = writable(null)
+
 export const theme = createWritable(IDS.theme)
 export const consent = createWritable(IDS.consent)
 export const activeGame = createWritable(IDS.active)

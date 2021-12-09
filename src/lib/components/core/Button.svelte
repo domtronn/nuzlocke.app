@@ -21,18 +21,18 @@
   :root {
     --b-fg: theme('colors.gray.700');
     --b-bg: theme('colors.gray.100');
-    --b-light-1: theme('colors.hotpink.50');
-    --b-light-2: theme('colors.hotpink.300');
-    --b-highlight-1: theme('colors.hotpink.500');
-    --b-highlight-2: theme('colors.hotpink.300');
+    --b-light-1: theme('colors.green.50');
+    --b-light-2: theme('colors.green.300');
+    --b-highlight-1: theme('colors.green.500');
+    --b-highlight-2: theme('colors.green.300');
   }
 
   :global(.dark)  {
     --b-fg: theme('colors.gray.200');
     --b-bg: theme('colors.gray.900');
-    --b-light-1: theme('colors.hotpink.500');
+    --b-light-1: theme('colors.green.500');
     --b-light-2: transparent;
-    --b-highlight-1: theme('colors.hotpink.400');
+    --b-highlight-1: theme('colors.green.400');
     --b-highlight-2: theme('colors.gray.800');
   }
 

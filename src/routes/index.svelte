@@ -28,12 +28,16 @@ pikachu|50|volt-tackle,nuzzle,quick-attack,fake-out|static|light-ball
   import { fade } from 'svelte/transition'
   import Icon from 'svelte-icons-pack'
 
-  import { Icons, Preview, Editor, SmallScreen } from '$lib/components/editor'
+  import { HelpModal, Icons, Preview, Editor, SmallScreen } from '$lib/components/editor'
   import { Button, Toast, Picture } from '$lib/components/core'
 
   import { parse } from './_parse.js'
   import { fauxfetch } from './_fetch.js'
 
+  import Modal from 'svelte-simple-modal'
+  import { modal } from '$lib/store'
+  const showModal = _ => modal.set(HelpModal)
+  
   let toast
   const oncopy = _ => {
     window
@@ -81,56 +85,62 @@ pikachu|50|volt-tackle,nuzzle,quick-attack,fake-out|static|light-ball
 
 <SmallScreen />
 
-<main class='flex flex-col px-12 pr-6 hidden xl:block'>
-  <h1>Boss Editor</h1>
-
-  <div class='w-full flex z-50'>
+<Modal show={$modal}
+       styleBg={{ background: 'rgba(0, 0, 0, 0.8)', zIndex: 9999 }}
+       styleWindow={{ background: 'transparent !important' }}
+       styleContent={{ padding: '0 !important' }}
+       >
+  <main class='flex flex-col px-12 pr-6 hidden xl:block'>
+    <h1>Boss Editor</h1>
     
-    <Editor
-      className='w-1/3 pr-4'
-      bind:value
-      on:copy={oncopy}
-      on:screenshot={onscreenshot}
-      {errors}>
+    <div class='w-full flex z-50'>
+      
+      <Editor
+        className='w-1/3 pr-4'
+        bind:value
+        on:copy={oncopy}
+        on:screenshot={onscreenshot}
+        {errors}>
 
-      <p>
-        This editor lets you build and preview boss battles for the <a class='underline transition hover:text-hotpink-500 dark:hover:text-hotpink-400' rel=external target=blank href='https://nuzlocke.vercel.app'>Nuzlocke Tracker app</a>.
-        Use the example above, or click
-        <button>
-          <mark>
-            here
-            <Icon src={Icons.Info} className='fill-current translate-y-px'/>
-          </mark>
-        </button>
-        to see detailed instrunctions on the necessary data format.
-      </p>
+        <p>
+          This editor lets you build and preview boss battles for the <a class='underline transition hover:text-hotpink-500 dark:hover:text-hotpink-400' rel=external target=blank href='https://nuzlocke.vercel.app'>Nuzlocke Tracker app</a>.
+          Use the example below, or click
+          <button on:click={showModal}>
+            <mark>
+              here
+              <Icon src={Icons.Info} className='fill-current translate-y-px'/>
+            </mark>
+          </button>
+          to see detailed instrunctions on the necessary data format.
+        </p>
 
-      <p class=mb-6>
-        You can submit bosses on
-        <a href="https://github.com/domtronn/dc-nuzlocke-data"
-           rel=noreferrer target=_blank>
-          <mark><Icon src={Icons.GitHub} className='fill-current translate-y-px' />GitHub</mark>
-        </a>
-        or directly on
+        <p class=mb-6>
+          You can submit bosses on
+          <a href="https://github.com/domtronn/dc-nuzlocke-data"
+             rel=noreferrer target=_blank>
+            <mark><Icon src={Icons.GitHub} className='fill-current translate-y-px' />GitHub</mark>
+          </a>
+          or directly on
 
-        <a href="https://discord.com/channels/917869259261100142/917869259776991257"
-           rel=noreferrer target=_blank>
-          <mark><Icon src={Icons.Discord} className='fill-current translate-y-px'/>Discord</mark>
-        </a>.
-      </p>
+          <a href="https://discord.com/channels/917869259261100142/917869259776991257"
+             rel=noreferrer target=_blank>
+            <mark><Icon src={Icons.Discord} className='fill-current translate-y-px'/>Discord</mark>
+          </a>.
+        </p>
 
-    </Editor>
-    
-    <Preview
-      className='w-2/3 pr-6'
-      bosses={parsed}
-      {data}
-    />
-  </div>
+      </Editor>
+      
+      <Preview
+        className='w-2/3 pr-6'
+        bosses={parsed}
+        {data}
+        />
+    </div>
 
-  <Toast bind:this={toast} />
+    <Toast bind:this={toast} />
 
-</main>
+  </main>
+</Modal>
 
 <style>
   
@@ -144,8 +154,10 @@ pikachu|50|volt-tackle,nuzzle,quick-attack,fake-out|static|light-ball
     @apply text-gray-400;
   }
 
-  mark {
-    @apply inline-flex translate-y-px gap-x-1 bg-yellow-200 text-gray-900 px-1
-  }
+  mark { @apply inline-flex translate-y-px gap-x-1 bg-yellow-100 text-gray-900 px-1 transition }
+  :global(.dark) mark { @apply bg-hotpink-100 }
+
+  :global(.dark) mark:hover { @apply bg-hotpink-400 text-white }
+  mark:hover { @apply bg-yellow-200 }
 
 </style>
