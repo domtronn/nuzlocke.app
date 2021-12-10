@@ -104,10 +104,10 @@ export async function get ({ params, query }) {
 
           return {
             ...p,
-            ...toPokemon(data, patch.pokemon),
-            moves: toMoves(moves, patch.move),
-            held: held ? toHeld(held, patch.item) : null,
-            ability: ability ? toAbility(ability, patch.ability) : null,
+            ...toPokemon(data, patch.pokemon || {}),
+            moves: toMoves(moves, patch.move || {}),
+            held: held ? toHeld(held, patch.item || {}) : null,
+            ability: ability ? toAbility(ability, patch.ability || {}) : null,
           }
         })
     )
