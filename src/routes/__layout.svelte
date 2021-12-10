@@ -65,7 +65,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://raw.githubusercontent.com" crossorigin>
   {#if !dev && browser}
-    <script async defer data-website-id="dae73bab-b128-46a6-93e1-46ebc3da783c" src="https://nuzlocke-analytics.vercel.app/umami.js"></script>
+    <script async defer data-website-id="d17b13cf-cc0c-4fed-8ce5-92188be6fe55" src="https://nuzlocke-analytics.vercel.app/umami.js"></script>
   {/if}
 </svelte:head>
 
