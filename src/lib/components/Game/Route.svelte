@@ -20,12 +20,13 @@
 
   $: filtered = search ? route.filter(r => {
     const item = game.data[r.name]
+    const s = search.toLowerCase()
     return !item
-      ? r.name.toLowerCase().includes(search)
-      : r.name.toLowerCase().includes(search)
-        || item.pokemon?.toLowerCase()?.includes(search) // Search by pokemon name
-        || item.nickname?.toLowerCase()?.includes(search) //  Search by nickname
-        || NuzlockeStates[item.status]?.state?.toLowerCase()?.includes(search) // Search by status status
+      ? r.name.toLowerCase().includes(s)
+      : r.name.toLowerCase().includes(s)
+        || item.pokemon?.toLowerCase()?.includes(s) // Search by pokemon name
+        || item.nickname?.toLowerCase()?.includes(s) //  Search by nickname
+        || NuzlockeStates[item.status]?.state?.toLowerCase()?.includes(s) // Search by status status
   }) : route
 
 
