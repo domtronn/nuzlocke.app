@@ -3,14 +3,11 @@
   import { browser } from '$app/env'
   import { fade, slide } from 'svelte/transition'
 
-  import IntersectionObserver from "svelte-intersection-observer"
-
-  import { Loader, Tooltip } from '$lib/components/core'
+  import { Loader, Tooltip, Tabs, Input } from '$lib/components/core'
   import StarterType from '$lib/components/starter-type.svelte'
-  import GymCard from '$lib/components/gym-card.svelte'
-  import PokemonSelector from '$lib/components/pokemon-selector.svelte'
 
-  import Tabs from '$lib/components/core/Tabs.svelte'
+  import GameRoute from '$lib/components/Game/Route.svelte'
+  import Search from '$lib/components/Game/Search.svelte'
   import SideNav from '$lib/components/navs/SideNav.svelte'
   import Modal from 'svelte-simple-modal'
 
@@ -26,6 +23,8 @@
   let starter = 'fire'
   let element
 
+  let search = ''
+
   let filter = 0
   const filters = ['Nuzlocke', 'Routes', 'Bosses']
 
@@ -37,8 +36,6 @@
     { label: 'Rival fights', val: 'rival' },
     { label: 'Evil team', val: 'evil-team' }
   ]
-
-  let limit = 10
 
   let route
   const fetchRoute = async (gen) => {
@@ -157,38 +154,30 @@
               {/if}
             </div>
 
-            <div class='flex flex-row items-center gap-x-2'>
-              <Tooltip>Selecting a starter type modifies Rival encounters.</Tooltip>
-              <p>Starter</p>
-              <StarterType on:select={setstarter} bind:starter={starter} />
+            <div class='fixed md:relative bottom-4 md:bottom-0 z-50 md:shadow-none shadow-lg'>
+              <Search bind:term={search} />
             </div>
+
           </div>
 
-          <ul class='flex flex-col gap-y-4 lg:gap-y-2 -mt-8 sm:mt-0'>
-            {#each route.slice(0, limit) as p, i}
-              {#if p.type === 'route' && [0, 1].includes(filter)}
-                {#if gameStore}
-                  <li id='route-{p.name}' transition:fade>
-                    <PokemonSelector
-                      id={i}
-                      store={gameStore}
-                      location={p.name}
-                    />
-                  </li>
-                {/if}
-              {:else if p.type === 'gym' && [0, 2].includes(filter) && (filter === 0 || bossFilter === 'all' || bossFilter === p.group)}
-                <li class='-mb-4 md:my-2' id='boss-{i}' transition:fade>
-                  <GymCard game={gameKey} starter={starter} id={p.value} location={p.name} />
-                </li >
-              {/if}
+          <div class='flex flex-row items-center gap-x-2'>
+            <p>
+              Starter*
+              <Tooltip>Selecting a starter type modifies Rival encounters.</Tooltip>
+            </p>
+            <StarterType on:select={setstarter} bind:starter={starter} />
+          </div>
 
-              {#if i === limit -5}
-                <IntersectionObserver {element} on:intersect={() => limit+=5}>
-                  <li bind:this={element} />
-                </IntersectionObserver>
-              {/if}
-            {/each}
-          </ul>
+          <GameRoute
+            {route}
+            {search}
+            {starter}
+            {filter}
+            {bossFilter}
+            className='-mt-8 sm:mt-0'
+            game={{ data: gameData, store: gameStore, key: gameKey }}
+          />
+
         </main>
       </Modal>
     </div>
