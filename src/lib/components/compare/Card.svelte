@@ -18,7 +18,7 @@
   $: defCols = def.types.map(t => ColorMap[t.toLowerCase()])
   $: defBgImg = Pattern(defCols[1] || defCols[0])
 
-  const sprite = id => `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png`
+  const sprite = (id, status) => `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${status === 6 ? 'shiny/' : ''}${id}.png`
 </script>
 
 <div class='shadow-lg dark:text-gray-50 relative {className}'>
@@ -41,7 +41,7 @@
 
     <!-- Images -->
     {#key `atk__${atk.name}`}
-      <img alt={atk.name} in:fade={{ duration: 500 }} class='flip z-20 flex -mx-6 h-32 w-32' style='transform: scaleX(-1); ' src={sprite(atk.imgId)} />
+      <img alt={atk.name} in:fade={{ duration: 500 }} class='flip z-20 flex -mx-6 h-32 w-32' style='transform: scaleX(-1); ' src={sprite(atk.imgId, atk.status)} />
     {/key}
     {#key `def__${def.name}`}
       <img alt={def.name} in:fade={{ duration: 500 }} class='z-20 flex -mx-6 h-32 w-32' src={sprite(def.imgId)} />
