@@ -52,6 +52,7 @@
       [it]: ogbox.filter(p => (Pokemon[p.pokemon]?.types || []).map(i => i.toLowerCase()).includes(it)).length
     }), {})
 
+
   $: box = ogbox
   .sort((a, b) => {
     if (stat === 'total') {
@@ -138,7 +139,7 @@
               out:fade={{ duration: 150 }}
             >
               <PokemonCard
-                sprite={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${Pokemon[p.pokemon].imgId}.png`}
+                sprite={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${p.status === 6 ? 'shiny/' : ''}${Pokemon[p.pokemon].imgId}.png`}
                 maxStat={Math.max(150, ...Object.values(Pokemon[p.pokemon].baseStats))}
                 moves={[]}
                 ability={p.nickname ? { name: p.nickname + ' the ' + (p.nature || '').toLowerCase() } : null}
