@@ -56,7 +56,7 @@
         >
           <div
             slot=location
-            class='flex flex-row-reverse md:flex-row items-center gap-x-2 md:-ml-6 -mr-1'
+            class='flex flex-row-reverse lg:flex-row items-center gap-x-2 lg:-ml-6 -mr-1'
           >
             <StarterType on:select={setstarter} bind:starter />
             <p>
