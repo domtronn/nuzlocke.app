@@ -138,7 +138,7 @@
   main > div { @apply py-7 px-6 sm:px-4 overflow-hidden mt-10; }
 
   p {
-    @apply max-w-sm mt-4 mx-auto text-center leading-4 text-tiny text-gray-900
+    @apply max-w-sm mt-4 mx-auto text-center leading-4 text-tiny text-gray-900 px-4
   }
 
   :global(.dark) p {
