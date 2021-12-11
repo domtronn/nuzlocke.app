@@ -21,6 +21,7 @@
   let gameStore, gameKey, gameData
   let loading = true
   let starter = 'fire'
+  let routeEl
   let element
 
   let search = ''
@@ -73,13 +74,6 @@
     gameStore.update(patch({ __starter: starter }))
   }
 
-  const setnav = (e) => setloc(`boss-${e.detail.value}`, e.detail.value + 20)
-  const setroute = ({ name, id }) => () => setloc(`route-${name}`, id + 10)
-  const setloc = (id, i) => {
-    limit = Math.max(limit, i + 20)
-    setTimeout(() => document.getElementById(id).scrollIntoView({ behavior: 'smooth' }), 50)
-  }
-
   const latestnav = (routes, game) => {
     const locations = new Set(
       Object
@@ -116,7 +110,7 @@
         <main id='main' role="main" class="w-full sm:w-3/4 px-4 md:px-8 md:py-6 flex flex-col gap-y-4 relative">
           <SideNav
             bind:show={show}
-            on:nav={setnav}
+            on:nav={routeEl.setnav}
             route={route}
           >
             <button
@@ -124,7 +118,7 @@
               class='umami--click--continue text-sm underline inline-flex items-center -ml-6 transition-colors dark:hover:text-gray-200 hover:text-black'
               on:click={_ => {
                 show = !show
-                setroute(latestnav(route, gameData))()
+                routeEl.setroute(latestnav(route, gameData))()
               }}
             >
               <Icon size='1.2rem' className='fill-current mr-1' src={Arrow} />
@@ -138,7 +132,7 @@
                 <button
                   transition:slide={{ duration: 250 }}
                   class='umami--click--continue text-sm inline-flex items-center'
-                  on:click={setroute(latestnav(route, gameData))}
+                  on:click={routeEl.setroute(latestnav(route, gameData))}
                 >
                   Continue at {latestnav(route, gameData).name}
                   <Icon className='fill-current' src={Arrow} />
@@ -174,6 +168,7 @@
             {starter}
             {filter}
             {bossFilter}
+            bind:this={routeEl}
             className='-mt-8 sm:mt-0'
             game={{ data: gameData, store: gameStore, key: gameKey }}
           />

@@ -23,6 +23,16 @@
         || NuzlockeStates[item.status]?.state?.toLowerCase()?.includes(search) // Search by status status
   }) : route
 
+
+  export const setnav = (e) => setloc(`boss-${e.detail.value}`, e.detail.value + 20)
+  export const setroute = ({ name, id }) => () => setloc(`route-${name}`, id + 10)
+
+  const setloc = (id, i) => {
+    limit = Math.max(limit, i + 20)
+    setTimeout(() => document.getElementById(id).scrollIntoView({ behavior: 'smooth' }), 50)
+  }
+
+
 </script>
 
 <ul class='flex flex-col gap-y-4 lg:gap-y-2 {className}'>

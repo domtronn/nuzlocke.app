@@ -19,7 +19,10 @@
 
   const bosses = route.reduce((acc, r, i) => r.type === 'gym' ? acc.concat({ ...r, oid: i }) : acc, [])
   const grouped = groupBy('group', bosses)
-  const onnav = (value) => _ => dispatch('nav', { value })
+  const onnav = (value) => _ => {
+    show = !show
+    dispatch('nav', { value })
+  }
 
   const groups = ['gym-leader', 'elite-four', 'rival', 'evil-team']
 </script>
