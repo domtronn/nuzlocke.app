@@ -20,7 +20,6 @@
 
   let gameStore, gameKey, gameData
   let loading = true
-  let starter = 'fire'
   let routeEl
   let element
 
@@ -55,24 +54,17 @@
       gameStore = getGame(gameId)
       gameStore.subscribe(read(game => {
         gameData = game
-        starter = game.__starter || 'fire'
       }))
 
       savedGames.subscribe(parse(games => {
         gameKey = games[gameId]?.game
-        gameId =
-          loading = !browser
+        loading = !browser
 
         deferStyles(`/assets/items/${gameKey}.css`)
         fetchRoute(Games[gameKey].pid).then(r => resolve(r))
       }))
     })
   })
-
-  const setstarter = (e) => {
-    starter = e.detail.value
-    gameStore.update(patch({ __starter: starter }))
-  }
 
   const latestnav = (routes, game) => {
     const locations = new Set(
@@ -151,21 +143,11 @@
             <div class='fixed md:relative bottom-4 md:bottom-0 z-50 md:shadow-none shadow-lg'>
               <Search bind:term={search} />
             </div>
-
-          </div>
-
-          <div class='flex flex-row items-center gap-x-2'>
-            <p>
-              Starter*
-              <Tooltip>Selecting a starter type modifies Rival encounters.</Tooltip>
-            </p>
-            <StarterType on:select={setstarter} bind:starter={starter} />
           </div>
 
           <GameRoute
             {route}
             {search}
-            {starter}
             {filter}
             {bossFilter}
             bind:this={routeEl}

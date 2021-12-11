@@ -81,8 +81,12 @@
 
 <div class='grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-y-3 md:gap-y-2 lg:gap-y-0 gap-x-2 flex'>
   <span class=location>
+  {#if $$slots.location}
+    <slot name=location />
+  {:else}
     {location}
-  </span>
+  {/if}
+</span>
 
   <AutoComplete
     rounded
