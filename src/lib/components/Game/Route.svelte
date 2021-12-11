@@ -18,15 +18,23 @@
   let limit = 10
   const inclimit = _ => limit = limit + 5
 
+  const routefilter = (s, route) => {
+    return route.name?.toLowerCase()?.includes(s)
+      || route.boss?.toLowerCase()?.includes(s)
+  }
+
+  const pokemonfilter = (s, item) => {
+    return item.pokemon?.toLowerCase()?.includes(s) // Search by pokemon name
+      || item.nickname?.toLowerCase()?.includes(s) //  Search by nickname
+      || NuzlockeStates[item.status]?.state?.toLowerCase()?.includes(s) // Search by status status
+  }
+
   $: filtered = search ? route.filter(r => {
     const item = game.data[r.name]
     const s = search.toLowerCase()
     return !item
-      ? r.name.toLowerCase().includes(s)
-      : r.name.toLowerCase().includes(s)
-        || item.pokemon?.toLowerCase()?.includes(s) // Search by pokemon name
-        || item.nickname?.toLowerCase()?.includes(s) //  Search by nickname
-        || NuzlockeStates[item.status]?.state?.toLowerCase()?.includes(s) // Search by status status
+      ? routefilter(s, r)
+      : routefilter(s, r) || pokemonfilter(s, item)
   }) : route
 
 

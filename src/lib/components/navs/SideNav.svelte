@@ -69,7 +69,7 @@
       {#each grouped[group] as b}
         <ul>
           <li class='text-xs underline hover:text-black dark:hover:text-gray-200 hover:scale-110 hover:cursor-pointer origin-left transition' on:click={onnav(b.oid)}>
-            {b.name}
+            {b.boss} at {b.name}
           </li>
         </ul>
       {/each}

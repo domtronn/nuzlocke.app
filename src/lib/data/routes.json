@@ -22,9 +22,10 @@
     },
     {
       "type": "gym",
-      "name": "1st Rival Battle",
+      "name": "Route 103",
       "value": "r1",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Rival"
     },
     {
       "type": "route",
@@ -46,7 +47,8 @@
       "type": "gym",
       "name": "Rustboro Gym",
       "value": "1",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Roxanne"
     },
     {
       "type": "route",
@@ -68,7 +70,8 @@
       "type": "gym",
       "name": "Dewford Gym",
       "value": "2",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Brawly"
     },
     {
       "type": "route",
@@ -92,9 +95,10 @@
     },
     {
       "type": "gym",
-      "name": "2nd Rival Battle",
+      "name": "Route 110",
       "value": "r2",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Rival"
     },
     {
       "type": "route",
@@ -108,13 +112,15 @@
       "type": "gym",
       "name": "Mauville City",
       "value": "w1",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Wally"
     },
     {
       "type": "gym",
       "name": "Mauville Gym",
       "value": "3",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Wattson"
     },
     {
       "type": "route",
@@ -148,7 +154,8 @@
       "type": "gym",
       "name": "Meteor Falls",
       "value": "saph1",
-      "group": "evil-team"
+      "group": "evil-team",
+      "boss": "Shelly & Grunt"
     },
     {
       "type": "route",
@@ -158,13 +165,15 @@
       "type": "gym",
       "name": "Mt. Chimney",
       "value": "saph2",
-      "group": "evil-team"
+      "group": "evil-team",
+      "boss": "Shelly"
     },
     {
       "type": "gym",
       "name": "Mt. Chimney",
       "value": "arc1",
-      "group": "evil-team"
+      "group": "evil-team",
+      "boss": "Archie"
     },
     {
       "type": "route",
@@ -178,13 +187,15 @@
       "type": "gym",
       "name": "Lavaridge Gym",
       "value": "4",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Flannery"
     },
     {
       "type": "gym",
       "name": "Petalburg Gym",
       "value": "5",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Norman"
     },
     {
       "type": "route",
@@ -198,7 +209,8 @@
       "type": "gym",
       "name": "Southern Island",
       "value": "saph3",
-      "group": "evil-team"
+      "group": "evil-team",
+      "boss": "Matt & Grunt"
     },
     {
       "type": "route",
@@ -208,13 +220,15 @@
       "type": "gym",
       "name": "Weather Institute",
       "value": "saph4",
-      "group": "evil-team"
+      "group": "evil-team",
+      "boss": "Shelly"
     },
     {
       "type": "gym",
       "name": "Route 119",
       "value": "r3",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Rival"
     },
     {
       "type": "route",
@@ -224,13 +238,15 @@
       "type": "gym",
       "name": "Fortree City",
       "value": "aarune",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Aarune"
     },
     {
       "type": "gym",
       "name": "Fortree Gym",
       "value": "6",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Winona"
     },
     {
       "type": "route",
@@ -252,7 +268,8 @@
       "type": "gym",
       "name": "Mt. Pyre Summit",
       "value": "saph5",
-      "group": "evil-team"
+      "group": "evil-team",
+      "boss": "Matt"
     },
     {
       "type": "route",
@@ -270,7 +287,8 @@
       "type": "gym",
       "name": "Lilycove City",
       "value": "r4",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Rival"
     },
     {
       "type": "route",
@@ -280,7 +298,8 @@
       "type": "gym",
       "name": "Aqua Hideout B1F",
       "value": "saph6",
-      "group": "evil-team"
+      "group": "evil-team",
+      "boss": "Matt"
     },
     {
       "type": "route",
@@ -294,7 +313,8 @@
       "type": "gym",
       "name": "Mossdeep Gym",
       "value": "7",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Tate & Liza"
     },
     {
       "type": "route",
@@ -320,7 +340,8 @@
       "type": "gym",
       "name": "Seafloor Cavern",
       "value": "arc2",
-      "group": "evil-team"
+      "group": "evil-team",
+      "boss": "Archie"
     },
     {
       "type": "route",
@@ -334,7 +355,8 @@
       "type": "gym",
       "name": "Sootopolis Gym",
       "value": "8",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Wallace"
     },
     {
       "type": "route",
@@ -408,37 +430,43 @@
       "type": "gym",
       "name": "Victory Road",
       "value": "w2",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Wally"
     },
     {
       "type": "gym",
       "name": "Pokémon League",
       "value": "e1",
-      "group": "elite-four"
+      "group": "elite-four",
+      "boss": "Sidney"
     },
     {
       "type": "gym",
       "name": "Pokémon League",
       "value": "e2",
-      "group": "elite-four"
+      "group": "elite-four",
+      "boss": "Phoebe"
     },
     {
       "type": "gym",
       "name": "Pokémon League",
       "value": "e3",
-      "group": "elite-four"
+      "group": "elite-four",
+      "boss": "Glacia"
     },
     {
       "type": "gym",
       "name": "Pokémon League",
       "value": "e4",
-      "group": "elite-four"
+      "group": "elite-four",
+      "boss": "Drake"
     },
     {
       "type": "gym",
       "name": "Pokémon Champion",
       "value": "c",
-      "group": "elite-four"
+      "group": "elite-four",
+      "boss": "Steven"
     },
     {
       "type": "route",
@@ -500,9 +528,10 @@
     },
     {
       "type": "gym",
-      "name": "1st Rival",
+      "name": "Aspertia City",
       "value": "r1",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Hugh"
     },
     {
       "type": "route",
@@ -522,9 +551,10 @@
     },
     {
       "type": "gym",
-      "name": "2nd Rival",
+      "name": "Floccesy Ranch",
       "value": "r2",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Hugh"
     },
     {
       "type": "route",
@@ -534,7 +564,8 @@
       "type": "gym",
       "name": "Aspertia City Gym",
       "value": "1n",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Cheren"
     },
     {
       "type": "route",
@@ -544,7 +575,8 @@
       "type": "gym",
       "name": "Virbank City Gym",
       "value": "2n",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Roxie"
     },
     {
       "type": "route",
@@ -562,7 +594,8 @@
       "type": "gym",
       "name": "Castelia City Gym",
       "value": "3n",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Burgh"
     },
     {
       "type": "route",
@@ -576,7 +609,8 @@
       "type": "gym",
       "name": "Challenge Colress",
       "value": "col1",
-      "group": "evil-team"
+      "group": "evil-team",
+      "boss": "Colress"
     },
     {
       "type": "route",
@@ -590,13 +624,15 @@
       "type": "gym",
       "name": "Nimbasa Subway",
       "value": "subway",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Ingo & Emmet"
     },
     {
       "type": "gym",
       "name": "Nimbasa City Gym",
       "value": "4n",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Elesa"
     },
     {
       "type": "route",
@@ -622,25 +658,29 @@
       "type": "gym",
       "name": "Driftveil City Gym",
       "value": "5n",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Clay"
     },
     {
       "type": "gym",
       "name": "Driftveil Tournament Round 1",
       "value": "r3",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Hugh"
     },
     {
       "type": "gym",
       "name": "Driftveil Tournament Round 2",
       "value": "ch",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Cheren"
     },
     {
       "type": "gym",
       "name": "Driftveil Tournament Round 3",
       "value": "col2",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Colress"
     },
     {
       "type": "route",
@@ -676,9 +716,10 @@
     },
     {
       "type": "gym",
-      "name": "3rd Rival",
+      "name": "Undella Town",
       "value": "r4",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Hugh"
     },
     {
       "type": "route",
@@ -692,7 +733,8 @@
       "type": "gym",
       "name": "Lacunosa Town",
       "value": "zinz1",
-      "group": "evil-team"
+      "group": "evil-team",
+      "boss": "Zinzolin & Grunt"
     },
     {
       "type": "route",
@@ -714,19 +756,22 @@
       "type": "gym",
       "name": "Opelucid City Gym",
       "value": "7n",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Drayden"
     },
     {
       "type": "gym",
       "name": "Opelucid City",
       "value": "zinz2",
-      "group": "evil-team"
+      "group": "evil-team",
+      "boss": "Zinzolin"
     },
     {
       "type": "gym",
       "name": "Opelucid City",
       "value": "shad",
-      "group": "evil-team"
+      "group": "evil-team",
+      "boss": "Shadow"
     },
     {
       "type": "route",
@@ -744,7 +789,8 @@
       "type": "gym",
       "name": "Humilau City Gym",
       "value": "7n",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Drayden"
     },
     {
       "type": "route",
@@ -754,19 +800,22 @@
       "type": "gym",
       "name": "Command Center",
       "value": "zinz3",
-      "group": "evil-team"
+      "group": "evil-team",
+      "boss": "Zinzolin & grunt"
     },
     {
       "type": "gym",
       "name": "Kyurem's Location",
       "value": "zinz4",
-      "group": "evil-team"
+      "group": "evil-team",
+      "boss": "Zinzolin"
     },
     {
       "type": "gym",
       "name": "Control Room",
       "value": "col3",
-      "group": "evil-team"
+      "group": "evil-team",
+      "boss": "Colress"
     },
     {
       "type": "route",
@@ -776,7 +825,8 @@
       "type": "gym",
       "name": "Giant Chasm",
       "value": "ghetsis",
-      "group": "evil-team"
+      "group": "evil-team",
+      "boss": "Ghetsis"
     },
     {
       "type": "route",
@@ -788,39 +838,45 @@
     },
     {
       "type": "gym",
-      "name": "Final Rival",
+      "name": "Victory Road",
       "value": "r5",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Hugh"
     },
     {
       "type": "gym",
       "name": "Pokémon League W Room",
       "value": "e1n",
-      "group": "elite-four"
+      "group": "elite-four",
+      "boss": "Shauntal"
     },
     {
       "type": "gym",
       "name": "Pokémon League NW Room",
       "value": "e2n",
-      "group": "elite-four"
+      "group": "elite-four",
+      "boss": "Grimsley"
     },
     {
       "type": "gym",
       "name": "Pokémon League NE Room",
       "value": "e3n",
-      "group": "elite-four"
+      "group": "elite-four",
+      "boss": "Caitlin"
     },
     {
       "type": "gym",
       "name": "Pokémon League E Room",
       "value": "e4n",
-      "group": "elite-four"
+      "group": "elite-four",
+      "boss": "Caitlin"
     },
     {
       "type": "gym",
       "name": "Pokémon League Champion",
       "value": "cn",
-      "group": "elite-four"
+      "group": "elite-four",
+      "boss": "Iris"
     },
     {
       "type": "route",
@@ -946,9 +1002,10 @@
     },
     {
       "type": "gym",
-      "name": "1st Rival Battle",
+      "name": "Route 203",
       "value": "b1",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Barry"
     },
     {
       "type": "route",
@@ -962,7 +1019,8 @@
       "type": "gym",
       "name": "Oreburgh Gym",
       "value": "1",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Roark"
     },
     {
       "type": "route",
@@ -996,7 +1054,8 @@
       "type": "gym",
       "name": "Valley Windoworks",
       "value": "mars1",
-      "group": "evil-team"
+      "group": "evil-team",
+      "boss": "Mars"
     },
     {
       "type": "route",
@@ -1014,13 +1073,15 @@
       "type": "gym",
       "name": "Eterna Gym",
       "value": "2",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Gardenia"
     },
     {
       "type": "gym",
       "name": "Eterna Building",
       "value": "jup1",
-      "group": "evil-team"
+      "group": "evil-team",
+      "boss": "Jupiter"
     },
     {
       "type": "route",
@@ -1108,9 +1169,10 @@
     },
     {
       "type": "gym",
-      "name": "2nd Rival Battle",
+      "name": "Hearthome City",
       "value": "b2",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Barry"
     },
     {
       "type": "route",
@@ -1140,7 +1202,8 @@
       "type": "gym",
       "name": "Veilstone Gym",
       "value": "3",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Maylene"
     },
     {
       "type": "route",
@@ -1158,13 +1221,15 @@
       "type": "gym",
       "name": "Pastoria Gym",
       "value": "4",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Crasher Wake"
     },
     {
       "type": "gym",
-      "name": "3rd Rival Battle",
+      "name": "Pastoria City",
       "value": "b3",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Barry"
     },
     {
       "type": "route",
@@ -1202,7 +1267,8 @@
       "type": "gym",
       "name": "Hearthome Gym",
       "value": "5",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Fantina"
     },
     {
       "type": "route",
@@ -1225,14 +1291,15 @@
       "name": "Route 218"
     },
     {
-      "type": "gym",
-      "name": "4th Rival Battle",
-      "value": "b4",
-      "group": "rival"
-    },
-    {
       "type": "route",
       "name": "Canalave City"
+    },
+    {
+      "type": "gym",
+      "name": "Canalave City",
+      "value": "b4",
+      "group": "rival",
+      "boss": "Barry"
     },
     {
       "type": "route",
@@ -1242,7 +1309,8 @@
       "type": "gym",
       "name": "Canalave Gym",
       "value": "6",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Byron"
     },
     {
       "type": "route",
@@ -1252,13 +1320,15 @@
       "type": "gym",
       "name": "Valor Cavern",
       "value": "sat1",
-      "group": "evil-team"
+      "group": "evil-team",
+      "boss": "Saturn"
     },
     {
       "type": "gym",
       "name": "Lake Verity",
       "value": "mars2",
-      "group": "evil-team"
+      "group": "evil-team",
+      "boss": "Mars"
     },
     {
       "type": "route",
@@ -1284,31 +1354,36 @@
       "type": "gym",
       "name": "Snowpoint Gym",
       "value": "7",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Candice"
     },
     {
       "type": "gym",
       "name": "Galactic HQ",
       "value": "cyr1",
-      "group": "evil-team"
+      "group": "evil-team",
+      "boss": "Cyrus"
     },
     {
       "type": "gym",
       "name": "Galactic HQ",
       "value": "sat2",
-      "group": "evil-team"
+      "group": "evil-team",
+      "boss": "Saturn"
     },
     {
       "type": "gym",
       "name": "Spear Pillar",
       "value": "mnj",
-      "group": "evil-team"
+      "group": "evil-team",
+      "boss": "Mars & Jupiter"
     },
     {
       "type": "gym",
       "name": "Spear Pillar",
       "value": "cyr2",
-      "group": "evil-team"
+      "group": "evil-team",
+      "boss": "Cyrus"
     },
     {
       "type": "route",
@@ -1322,7 +1397,8 @@
       "type": "gym",
       "name": "Sunyshore Gym",
       "value": "8",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Volkner"
     },
     {
       "type": "route",
@@ -1334,9 +1410,10 @@
     },
     {
       "type": "gym",
-      "name": "Final Rival Battle",
+      "name": "Victory Road",
       "value": "b5",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Barry"
     },
     {
       "type": "route",
@@ -1346,31 +1423,36 @@
       "type": "gym",
       "name": "Elite Four",
       "value": "e1",
-      "group": "elite-four"
+      "group": "elite-four",
+      "boss": "Aaron"
     },
     {
       "type": "gym",
       "name": "Elite Four",
       "value": "e2",
-      "group": "elite-four"
+      "group": "elite-four",
+      "boss": "Bertha"
     },
     {
       "type": "gym",
       "name": "Elite Four",
       "value": "e3",
-      "group": "elite-four"
+      "group": "elite-four",
+      "boss": "Flint"
     },
     {
       "type": "gym",
       "name": "Elite Four",
       "value": "e4",
-      "group": "elite-four"
+      "group": "elite-four",
+      "boss": "Lucian"
     },
     {
       "type": "gym",
       "name": "Champion",
       "value": "c",
-      "group": "elite-four"
+      "group": "elite-four",
+      "boss": "Cynthia"
     }
   ],
   "chb2w2": [
@@ -1384,9 +1466,10 @@
     },
     {
       "type": "gym",
-      "name": "1st Rival",
+      "name": "Aspertia City",
       "value": "r1",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Hugh"
     },
     {
       "type": "route",
@@ -1406,9 +1489,10 @@
     },
     {
       "type": "gym",
-      "name": "2nd Rival",
+      "name": "Floccesy Ranch",
       "value": "r2",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Hugh"
     },
     {
       "type": "route",
@@ -1418,7 +1502,8 @@
       "type": "gym",
       "name": "Aspertia City Gym",
       "value": "1c",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Cheren"
     },
     {
       "type": "route",
@@ -1428,7 +1513,8 @@
       "type": "gym",
       "name": "Virbank City Gym",
       "value": "2c",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Roxie"
     },
     {
       "type": "route",
@@ -1446,7 +1532,8 @@
       "type": "gym",
       "name": "Castelia City Gym",
       "value": "3c",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Burgh"
     },
     {
       "type": "route",
@@ -1460,7 +1547,8 @@
       "type": "gym",
       "name": "Challenge Colress",
       "value": "col1",
-      "group": "evil-team"
+      "group": "evil-team",
+      "boss": "Colress"
     },
     {
       "type": "route",
@@ -1474,13 +1562,15 @@
       "type": "gym",
       "name": "Nimbasa Subway",
       "value": "subway",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Ingo & Emmet"
     },
     {
       "type": "gym",
       "name": "Nimbasa City Gym",
       "value": "4c",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Elesa"
     },
     {
       "type": "route",
@@ -1506,25 +1596,29 @@
       "type": "gym",
       "name": "Driftveil City Gym",
       "value": "5c",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Clay"
     },
     {
       "type": "gym",
       "name": "Driftveil Tournament Round 1",
       "value": "r3",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Hugh"
     },
     {
       "type": "gym",
       "name": "Driftveil Tournament Round 2",
       "value": "ch",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Cheren"
     },
     {
       "type": "gym",
       "name": "Driftveil Tournament Round 3",
       "value": "col2",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Colress"
     },
     {
       "type": "route",
@@ -1560,9 +1654,10 @@
     },
     {
       "type": "gym",
-      "name": "3rd Rival",
+      "name": "Undella Town",
       "value": "r4",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Hugh"
     },
     {
       "type": "route",
@@ -1576,7 +1671,8 @@
       "type": "gym",
       "name": "Lacunosa Town",
       "value": "zinz1",
-      "group": "evil-team"
+      "group": "evil-team",
+      "boss": "Zinzolin & Grunt"
     },
     {
       "type": "route",
@@ -1598,19 +1694,22 @@
       "type": "gym",
       "name": "Opelucid City Gym",
       "value": "7c",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Drayden"
     },
     {
       "type": "gym",
       "name": "Opelucid City",
       "value": "zinz2",
-      "group": "evil-team"
+      "group": "evil-team",
+      "boss": "Zinzolin"
     },
     {
       "type": "gym",
       "name": "Opelucid City",
       "value": "shad",
-      "group": "evil-team"
+      "group": "evil-team",
+      "boss": "Shadow"
     },
     {
       "type": "route",
@@ -1628,7 +1727,8 @@
       "type": "gym",
       "name": "Humilau City Gym",
       "value": "7c",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Drayden"
     },
     {
       "type": "route",
@@ -1638,19 +1738,22 @@
       "type": "gym",
       "name": "Command Center",
       "value": "zinz3",
-      "group": "evil-team"
+      "group": "evil-team",
+      "boss": "Zinzolin & grunt"
     },
     {
       "type": "gym",
       "name": "Kyurem's Location",
       "value": "zinz4",
-      "group": "evil-team"
+      "group": "evil-team",
+      "boss": "Zinzolin"
     },
     {
       "type": "gym",
       "name": "Control Room",
       "value": "col3",
-      "group": "evil-team"
+      "group": "evil-team",
+      "boss": "Colress"
     },
     {
       "type": "route",
@@ -1660,7 +1763,8 @@
       "type": "gym",
       "name": "Giant Chasm",
       "value": "ghetsis",
-      "group": "evil-team"
+      "group": "evil-team",
+      "boss": "Ghetsis"
     },
     {
       "type": "route",
@@ -1672,39 +1776,45 @@
     },
     {
       "type": "gym",
-      "name": "Final Rival",
+      "name": "Victory Road",
       "value": "r5",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Hugh"
     },
     {
       "type": "gym",
       "name": "Pokémon League W Room",
       "value": "e1c",
-      "group": "elite-four"
+      "group": "elite-four",
+      "boss": "Shauntal"
     },
     {
       "type": "gym",
       "name": "Pokémon League NW Room",
       "value": "e2c",
-      "group": "elite-four"
+      "group": "elite-four",
+      "boss": "Grimsley"
     },
     {
       "type": "gym",
       "name": "Pokémon League NE Room",
       "value": "e3c",
-      "group": "elite-four"
+      "group": "elite-four",
+      "boss": "Caitlin"
     },
     {
       "type": "gym",
       "name": "Pokémon League E Room",
       "value": "e4c",
-      "group": "elite-four"
+      "group": "elite-four",
+      "boss": "Caitlin"
     },
     {
       "type": "gym",
       "name": "Pokémon League Champion",
       "value": "cc",
-      "group": "elite-four"
+      "group": "elite-four",
+      "boss": "Iris"
     },
     {
       "type": "route",
@@ -1830,9 +1940,10 @@
     },
     {
       "type": "gym",
-      "name": "1st Rival Battle",
+      "name": "Route 203",
       "value": "b1",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Barry"
     },
     {
       "type": "route",
@@ -1846,7 +1957,8 @@
       "type": "gym",
       "name": "Oreburgh Gym",
       "value": "1",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Roark"
     },
     {
       "type": "route",
@@ -1880,7 +1992,8 @@
       "type": "gym",
       "name": "Valley Windoworks",
       "value": "mars1",
-      "group": "evil-team"
+      "group": "evil-team",
+      "boss": "Mars"
     },
     {
       "type": "route",
@@ -1898,13 +2011,15 @@
       "type": "gym",
       "name": "Eterna Gym",
       "value": "2",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Gardenia"
     },
     {
       "type": "gym",
       "name": "Eterna Building",
       "value": "jup1",
-      "group": "evil-team"
+      "group": "evil-team",
+      "boss": "Jupiter"
     },
     {
       "type": "route",
@@ -1928,9 +2043,10 @@
     },
     {
       "type": "gym",
-      "name": "2nd Rival Battle",
+      "name": "Hearthome City",
       "value": "b2",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Barry"
     },
     {
       "type": "route",
@@ -1960,7 +2076,8 @@
       "type": "gym",
       "name": "Veilstone Gym",
       "value": "3",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Maylene"
     },
     {
       "type": "route",
@@ -1978,13 +2095,15 @@
       "type": "gym",
       "name": "Pastoria Gym",
       "value": "4",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Crasher Wake"
     },
     {
       "type": "gym",
-      "name": "3rd Rival Battle",
+      "name": "Pastoria City",
       "value": "b3",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Barry"
     },
     {
       "type": "route",
@@ -2022,7 +2141,8 @@
       "type": "gym",
       "name": "Hearthome Gym",
       "value": "5",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Fantina"
     },
     {
       "type": "route",
@@ -2046,9 +2166,10 @@
     },
     {
       "type": "gym",
-      "name": "4th Rival Battle",
+      "name": "Route 218",
       "value": "b4",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Barry"
     },
     {
       "type": "route",
@@ -2062,7 +2183,8 @@
       "type": "gym",
       "name": "Canalave Gym",
       "value": "6",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Byron"
     },
     {
       "type": "route",
@@ -2072,13 +2194,15 @@
       "type": "gym",
       "name": "Valor Cavern",
       "value": "sat1",
-      "group": "evil-team"
+      "group": "evil-team",
+      "boss": "Saturn"
     },
     {
       "type": "gym",
       "name": "Lake Verity",
       "value": "mars2",
-      "group": "evil-team"
+      "group": "evil-team",
+      "boss": "Mars"
     },
     {
       "type": "route",
@@ -2104,31 +2228,36 @@
       "type": "gym",
       "name": "Snowpoint Gym",
       "value": "7",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Candice"
     },
     {
       "type": "gym",
       "name": "Galactic HQ",
       "value": "cyr1",
-      "group": "evil-team"
+      "group": "evil-team",
+      "boss": "Cyrus"
     },
     {
       "type": "gym",
       "name": "Galactic HQ",
       "value": "sat2",
-      "group": "evil-team"
+      "group": "evil-team",
+      "boss": "Saturn"
     },
     {
       "type": "gym",
       "name": "Spear Pillar",
       "value": "mnj",
-      "group": "evil-team"
+      "group": "evil-team",
+      "boss": "Mars & Jupiter"
     },
     {
       "type": "gym",
       "name": "Spear Pillar",
       "value": "cyr2",
-      "group": "evil-team"
+      "group": "evil-team",
+      "boss": "Cyrus"
     },
     {
       "type": "route",
@@ -2142,7 +2271,8 @@
       "type": "gym",
       "name": "Sunyshore Gym",
       "value": "8",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Volkner"
     },
     {
       "type": "route",
@@ -2150,47 +2280,53 @@
     },
     {
       "type": "route",
-      "name": "Pokémon League"
+      "name": "Victory Road"
     },
     {
       "type": "gym",
-      "name": "Final Rival Battle",
+      "name": "Victory Road",
       "value": "b5",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Barry"
     },
     {
       "type": "route",
-      "name": "Victory Road"
+      "name": "Pokémon League"
     },
     {
       "type": "gym",
       "name": "Elite Four",
       "value": "e1",
-      "group": "elite-four"
+      "group": "elite-four",
+      "boss": "Aaron"
     },
     {
       "type": "gym",
       "name": "Elite Four",
       "value": "e2",
-      "group": "elite-four"
+      "group": "elite-four",
+      "boss": "Bertha"
     },
     {
       "type": "gym",
       "name": "Elite Four",
       "value": "e3",
-      "group": "elite-four"
+      "group": "elite-four",
+      "boss": "Flint"
     },
     {
       "type": "gym",
       "name": "Elite Four",
       "value": "e4",
-      "group": "elite-four"
+      "group": "elite-four",
+      "boss": "Lucian"
     },
     {
       "type": "gym",
       "name": "Champion",
       "value": "c",
-      "group": "elite-four"
+      "group": "elite-four",
+      "boss": "Cynthia"
     }
   ],
   "em": [
@@ -2212,9 +2348,10 @@
     },
     {
       "type": "gym",
-      "name": "Rival battle",
+      "name": "Route 103",
       "value": "r1",
-      "group": "rival"
+      "group": "rival",
+      "boss": "May"
     },
     {
       "type": "route",
@@ -2240,13 +2377,15 @@
       "type": "gym",
       "name": "Rustboro Gym",
       "value": "1",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Roxanne"
     },
     {
       "type": "gym",
-      "name": "Optional Rival",
+      "name": "Rustboro City",
       "value": "r2",
-      "group": "rival"
+      "group": "rival",
+      "boss": "May"
     },
     {
       "type": "route",
@@ -2268,7 +2407,8 @@
       "type": "gym",
       "name": "Dewford Gym",
       "value": "2",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Brawly"
     },
     {
       "type": "route",
@@ -2292,9 +2432,10 @@
     },
     {
       "type": "gym",
-      "name": "Rival battle",
+      "name": "Route 110",
       "value": "r3",
-      "group": "rival"
+      "group": "rival",
+      "boss": "May"
     },
     {
       "type": "route",
@@ -2308,13 +2449,15 @@
       "type": "gym",
       "name": "Mauville City",
       "value": "w1",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Wally"
     },
     {
       "type": "gym",
       "name": "Mauville City Gym",
       "value": "3",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Wattson"
     },
     {
       "type": "route",
@@ -2328,7 +2471,8 @@
       "type": "gym",
       "name": "Mt. Chimney",
       "value": "mt1",
-      "group": "evil-team"
+      "group": "evil-team",
+      "boss": "Tabitha"
     },
     {
       "type": "route",
@@ -2354,7 +2498,8 @@
       "type": "gym",
       "name": "Lavaridge Gym",
       "value": "4",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Flannery"
     },
     {
       "type": "route",
@@ -2372,7 +2517,8 @@
       "type": "gym",
       "name": "Petalburg Gym",
       "value": "5",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Norman"
     },
     {
       "type": "route",
@@ -2384,15 +2530,17 @@
     },
     {
       "type": "gym",
-      "name": "Weather Institude",
+      "name": "Weather Institute",
       "value": "as1",
-      "group": "evil-team"
+      "group": "evil-team",
+      "boss": "Shelly"
     },
     {
       "type": "gym",
-      "name": "Rival ambush",
+      "name": "Weather Institute",
       "value": "r4",
-      "group": "rival"
+      "group": "rival",
+      "boss": "May"
     },
     {
       "type": "route",
@@ -2406,7 +2554,8 @@
       "type": "gym",
       "name": "Fortree City Gym",
       "value": "6",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Winona"
     },
     {
       "type": "route",
@@ -2440,13 +2589,15 @@
       "type": "gym",
       "name": "Team Magma Hideout",
       "value": "mt2",
-      "group": "evil-team"
+      "group": "evil-team",
+      "boss": "Tabitha"
     },
     {
       "type": "gym",
       "name": "Team Magma Hideout",
       "value": "mtmax",
-      "group": "evil-team"
+      "group": "evil-team",
+      "boss": "Maxie"
     },
     {
       "type": "route",
@@ -2454,15 +2605,17 @@
     },
     {
       "type": "gym",
-      "name": "Optional Rival",
+      "name": "Lilycove City",
       "value": "r5",
-      "group": "rival"
+      "group": "rival",
+      "boss": "May"
     },
     {
       "type": "gym",
       "name": "Team Aqua Hideout",
       "value": "am1",
-      "group": "evil-team"
+      "group": "evil-team",
+      "boss": "Matt"
     },
     {
       "type": "route",
@@ -2476,13 +2629,15 @@
       "type": "gym",
       "name": "Mossdeep City Gym",
       "value": "7",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Tate & Liza"
     },
     {
       "type": "gym",
       "name": "Mossdeep Space Center",
       "value": "mtmaxt",
-      "group": "evil-team"
+      "group": "evil-team",
+      "boss": "Maxie & Tabitha"
     },
     {
       "type": "route",
@@ -2508,13 +2663,15 @@
       "type": "gym",
       "name": "Seafloor Cavern",
       "value": "as2",
-      "group": "evil-team"
+      "group": "evil-team",
+      "boss": "Shelly"
     },
     {
       "type": "gym",
       "name": "Seafloor Cavern",
       "value": "aqarc",
-      "group": "evil-team"
+      "group": "evil-team",
+      "boss": "Archie"
     },
     {
       "type": "route",
@@ -2528,7 +2685,8 @@
       "type": "gym",
       "name": "Sootopolis Gym",
       "value": "8",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Juan"
     },
     {
       "type": "route",
@@ -2596,39 +2754,45 @@
     },
     {
       "type": "gym",
-      "name": "Rival Ambush",
+      "name": "Victory Road",
       "value": "w2",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Wally"
     },
     {
       "type": "gym",
       "name": "Pokémon League",
       "value": "e1",
-      "group": "elite-four"
+      "group": "elite-four",
+      "boss": "Sidney"
     },
     {
       "type": "gym",
       "name": "Pokémon League",
       "value": "e2",
-      "group": "elite-four"
+      "group": "elite-four",
+      "boss": "Phoebe"
     },
     {
       "type": "gym",
       "name": "Pokémon League",
       "value": "e3",
-      "group": "elite-four"
+      "group": "elite-four",
+      "boss": "Glacia"
     },
     {
       "type": "gym",
       "name": "Pokémon League Champion",
       "value": "c1",
-      "group": "elite-four"
+      "group": "elite-four",
+      "boss": "Wallace"
     },
     {
       "type": "gym",
       "name": "Meteor Falls Champion",
       "value": "c2",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Steven"
     },
     {
       "type": "route",
@@ -2656,7 +2820,8 @@
       "type": "gym",
       "name": "Rival",
       "value": "r1",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Blue"
     },
     {
       "type": "route",
@@ -2674,7 +2839,8 @@
       "type": "gym",
       "name": "Rival",
       "value": "r2",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Blue"
     },
     {
       "type": "route",
@@ -2688,7 +2854,8 @@
       "type": "gym",
       "name": "Pewter City Gym",
       "value": "1",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Brock"
     },
     {
       "type": "route",
@@ -2710,7 +2877,8 @@
       "type": "gym",
       "name": "Cerulean City Gym",
       "value": "2",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Misty"
     },
     {
       "type": "route",
@@ -2720,7 +2888,8 @@
       "type": "gym",
       "name": "Rival",
       "value": "r2",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Blue"
     },
     {
       "type": "route",
@@ -2742,13 +2911,15 @@
       "type": "gym",
       "name": "S.S. Anne",
       "value": "r3",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Blue"
     },
     {
       "type": "gym",
       "name": "Vermillion City Gym",
       "value": "3",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Lt. Surge"
     },
     {
       "type": "route",
@@ -2794,19 +2965,22 @@
       "type": "gym",
       "name": "Celadon City Gym",
       "value": "4",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Erica"
     },
     {
       "type": "gym",
       "name": "Rocket Hideout",
       "value": "g1",
-      "group": "evil-team"
+      "group": "evil-team",
+      "boss": "Giovanni"
     },
     {
       "type": "gym",
       "name": "Pokemon Tower Rival",
       "value": "r5",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Blue"
     },
     {
       "type": "route",
@@ -2816,19 +2990,22 @@
       "type": "gym",
       "name": "Silph Co. Rival",
       "value": "r6",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Blue"
     },
     {
       "type": "gym",
       "name": "Silph Co.",
       "value": "g2",
-      "group": "evil-team"
+      "group": "evil-team",
+      "boss": "Giovanni"
     },
     {
       "type": "gym",
       "name": "Saffron City Gym",
       "value": "6",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Sabrina"
     },
     {
       "type": "route",
@@ -2850,7 +3027,8 @@
       "type": "gym",
       "name": "Fuschia City Gym",
       "value": "5",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Koga"
     },
     {
       "type": "route",
@@ -2896,7 +3074,8 @@
       "type": "gym",
       "name": "Cinnabar Island Gym",
       "value": "7",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Blaine"
     },
     {
       "type": "route",
@@ -2922,7 +3101,8 @@
       "type": "gym",
       "name": "Viridian City Gym",
       "value": "8",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Giovanni"
     },
     {
       "type": "route",
@@ -2936,37 +3116,43 @@
       "type": "gym",
       "name": "Rival",
       "value": "r7",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Blue"
     },
     {
       "type": "gym",
       "name": "Indigo Plateau",
       "value": "e1",
-      "group": "elite-four"
+      "group": "elite-four",
+      "boss": "Lorelei"
     },
     {
       "type": "gym",
       "name": "Indigo Plateau",
       "value": "e2",
-      "group": "elite-four"
+      "group": "elite-four",
+      "boss": "Bruno"
     },
     {
       "type": "gym",
       "name": "Indigo Plateau",
       "value": "e3",
-      "group": "elite-four"
+      "group": "elite-four",
+      "boss": "Agatha"
     },
     {
       "type": "gym",
       "name": "Indigo Plateau",
       "value": "e4",
-      "group": "elite-four"
+      "group": "elite-four",
+      "boss": "Lance"
     },
     {
       "type": "gym",
       "name": "Champion",
       "value": "c",
-      "group": "elite-four"
+      "group": "elite-four",
+      "boss": "Blue"
     },
     {
       "type": "route",
@@ -3010,7 +3196,8 @@
       "type": "gym",
       "name": "Cherrygrove City",
       "value": "r1",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Silver"
     },
     {
       "type": "route",
@@ -3032,7 +3219,8 @@
       "type": "gym",
       "name": "Violet City Gym",
       "value": "1",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Falkner"
     },
     {
       "type": "route",
@@ -3066,19 +3254,22 @@
       "type": "gym",
       "name": "Slowpoke Well",
       "value": "proton1",
-      "group": "evil-team"
+      "group": "evil-team",
+      "boss": "Executive Proton"
     },
     {
       "type": "gym",
       "name": "Azalea Town Gym",
       "value": "2",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Bugsy"
     },
     {
       "type": "gym",
       "name": "Exit to Ilex Forest",
       "value": "r2",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Silver"
     },
     {
       "type": "route",
@@ -3096,7 +3287,8 @@
       "type": "gym",
       "name": "Goldenrod City Gym",
       "value": "3",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Whitney"
     },
     {
       "type": "route",
@@ -3126,7 +3318,8 @@
       "type": "gym",
       "name": "Burned Tower",
       "value": "r3",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Silver"
     },
     {
       "type": "route",
@@ -3136,7 +3329,8 @@
       "type": "gym",
       "name": "Ecruteak City Gym",
       "value": "4",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Morty"
     },
     {
       "type": "route",
@@ -3170,19 +3364,22 @@
       "type": "gym",
       "name": "Suicune Encounter",
       "value": "eusine",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Eusine"
     },
     {
       "type": "gym",
       "name": "Cianwood City Gym",
       "value": "5",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Chuck"
     },
     {
       "type": "gym",
       "name": "Olivine City Gym",
       "value": "6",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Jasmine"
     },
     {
       "type": "route",
@@ -3232,13 +3429,15 @@
       "type": "gym",
       "name": "Rocket Hideout",
       "value": "petrel1",
-      "group": "evil-team"
+      "group": "evil-team",
+      "boss": "Executive Petrel"
     },
     {
       "type": "gym",
       "name": "Rocket Hideout",
       "value": "ariana1",
-      "group": "evil-team"
+      "group": "evil-team",
+      "boss": "Executive Ariana & Grunt"
     },
     {
       "type": "route",
@@ -3248,37 +3447,43 @@
       "type": "gym",
       "name": "Mahogany Town Gym",
       "value": "7",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Pryce"
     },
     {
       "type": "gym",
       "name": "Goldenrod tunnel",
       "value": "r4",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Silver"
     },
     {
       "type": "gym",
       "name": "Goldenrod Radio Tower",
       "value": "petrel2",
-      "group": "evil-team"
+      "group": "evil-team",
+      "boss": "Executive Petrel"
     },
     {
       "type": "gym",
       "name": "Goldenrod Radio Tower",
       "value": "proton2",
-      "group": "evil-team"
+      "group": "evil-team",
+      "boss": "Executive Proton"
     },
     {
       "type": "gym",
       "name": "Goldenrod Radio Tower",
       "value": "ariana2",
-      "group": "evil-team"
+      "group": "evil-team",
+      "boss": "Executive Ariana"
     },
     {
       "type": "gym",
       "name": "Goldenrod Radio Tower",
       "value": "archer",
-      "group": "evil-team"
+      "group": "evil-team",
+      "boss": "Executive Archer"
     },
     {
       "type": "route",
@@ -3300,7 +3505,8 @@
       "type": "gym",
       "name": "Blackthorn City Gym",
       "value": "8",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Clair"
     },
     {
       "type": "route",
@@ -3334,7 +3540,8 @@
       "type": "gym",
       "name": "Victory Road",
       "value": "r5",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Silver"
     },
     {
       "type": "route",
@@ -3344,31 +3551,36 @@
       "type": "gym",
       "name": "Elite Four",
       "value": "e1",
-      "group": "elite-four"
+      "group": "elite-four",
+      "boss": "Will"
     },
     {
       "type": "gym",
       "name": "Elite Four",
       "value": "e2",
-      "group": "elite-four"
+      "group": "elite-four",
+      "boss": "Koga"
     },
     {
       "type": "gym",
       "name": "Elite Four",
       "value": "e3",
-      "group": "elite-four"
+      "group": "elite-four",
+      "boss": "Bruno"
     },
     {
       "type": "gym",
       "name": "Elite Four",
       "value": "e4",
-      "group": "elite-four"
+      "group": "elite-four",
+      "boss": "Karen"
     },
     {
       "type": "gym",
       "name": "Champion Fight",
       "value": "c",
-      "group": "elite-four"
+      "group": "elite-four",
+      "boss": "Lance"
     },
     {
       "type": "route",
@@ -3378,7 +3590,8 @@
       "type": "gym",
       "name": "Vermillion City Gym",
       "value": "k1",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Lt. Surge"
     },
     {
       "type": "route",
@@ -3392,7 +3605,8 @@
       "type": "gym",
       "name": "Saffron City Gym",
       "value": "k2",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Sabrina"
     },
     {
       "type": "route",
@@ -3406,7 +3620,8 @@
       "type": "gym",
       "name": "Celadon City Gym",
       "value": "k3",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Erika"
     },
     {
       "type": "route",
@@ -3428,7 +3643,8 @@
       "type": "gym",
       "name": "Fuschia City Gym",
       "value": "k4",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Janine"
     },
     {
       "type": "route",
@@ -3482,7 +3698,8 @@
       "type": "gym",
       "name": "Cerulean City Gym",
       "value": "k5",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Misty"
     },
     {
       "type": "route",
@@ -3508,7 +3725,8 @@
       "type": "gym",
       "name": "Pewter City Gym",
       "value": "k6",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Brock"
     },
     {
       "type": "route",
@@ -3522,7 +3740,8 @@
       "type": "gym",
       "name": "Mt. Moon Rival",
       "value": "r6",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Silver"
     },
     {
       "type": "route",
@@ -3560,13 +3779,15 @@
       "type": "gym",
       "name": "Cinnabar Island Gym",
       "value": "k7",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Blaine"
     },
     {
       "type": "gym",
       "name": "Virdian City Gym",
       "value": "k8",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Blue"
     },
     {
       "type": "route",
@@ -3588,7 +3809,8 @@
       "type": "gym",
       "name": "Champion",
       "value": "red",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Red"
     },
     {
       "type": "route",
@@ -3618,9 +3840,10 @@
     },
     {
       "type": "gym",
-      "name": "1st Rival Battle",
+      "name": "Route 103",
       "value": "r1",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Rival"
     },
     {
       "type": "route",
@@ -3642,7 +3865,8 @@
       "type": "gym",
       "name": "Rustboro Gym",
       "value": "1",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Roxanne"
     },
     {
       "type": "route",
@@ -3664,7 +3888,8 @@
       "type": "gym",
       "name": "Dewford Gym",
       "value": "2",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Brawly"
     },
     {
       "type": "route",
@@ -3688,9 +3913,10 @@
     },
     {
       "type": "gym",
-      "name": "2nd Rival Battle",
+      "name": "Route 110",
       "value": "r2",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Rival"
     },
     {
       "type": "route",
@@ -3704,13 +3930,15 @@
       "type": "gym",
       "name": "Mauville City",
       "value": "w1",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Wally"
     },
     {
       "type": "gym",
       "name": "Mauville Gym",
       "value": "3",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Wattson"
     },
     {
       "type": "route",
@@ -3744,7 +3972,8 @@
       "type": "gym",
       "name": "Meteor Falls",
       "value": "ruby1",
-      "group": "evil-team"
+      "group": "evil-team",
+      "boss": "Tabitha & Grunt"
     },
     {
       "type": "route",
@@ -3754,13 +3983,15 @@
       "type": "gym",
       "name": "Mt. Chimney",
       "value": "ruby2",
-      "group": "evil-team"
+      "group": "evil-team",
+      "boss": "Tabitha"
     },
     {
       "type": "gym",
       "name": "Mt. Chimney",
       "value": "max1",
-      "group": "evil-team"
+      "group": "evil-team",
+      "boss": "Maxie"
     },
     {
       "type": "route",
@@ -3774,13 +4005,15 @@
       "type": "gym",
       "name": "Lavaridge Gym",
       "value": "4",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Flannery"
     },
     {
       "type": "gym",
       "name": "Petalburg Gym",
       "value": "5",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Norman"
     },
     {
       "type": "route",
@@ -3794,7 +4027,8 @@
       "type": "gym",
       "name": "Southern Island",
       "value": "ruby3",
-      "group": "evil-team"
+      "group": "evil-team",
+      "boss": "Courtney & Grunt"
     },
     {
       "type": "route",
@@ -3804,13 +4038,15 @@
       "type": "gym",
       "name": "Weather Institute",
       "value": "ruby4",
-      "group": "evil-team"
+      "group": "evil-team",
+      "boss": "Tabitha"
     },
     {
       "type": "gym",
       "name": "Route 119",
       "value": "r3",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Rival"
     },
     {
       "type": "route",
@@ -3820,13 +4056,15 @@
       "type": "gym",
       "name": "Fortree City",
       "value": "aarune",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Aarune"
     },
     {
       "type": "gym",
       "name": "Fortree Gym",
       "value": "6",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Winona"
     },
     {
       "type": "route",
@@ -3848,7 +4086,8 @@
       "type": "gym",
       "name": "Mt. Pyre Summit",
       "value": "ruby5",
-      "group": "evil-team"
+      "group": "evil-team",
+      "boss": "Courtney"
     },
     {
       "type": "route",
@@ -3866,7 +4105,8 @@
       "type": "gym",
       "name": "Lilycove City",
       "value": "r4",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Rival"
     },
     {
       "type": "route",
@@ -3876,7 +4116,8 @@
       "type": "gym",
       "name": "Magma Hideout B1F",
       "value": "ruby6",
-      "group": "evil-team"
+      "group": "evil-team",
+      "boss": "Courtney"
     },
     {
       "type": "route",
@@ -3890,7 +4131,8 @@
       "type": "gym",
       "name": "Mossdeep Gym",
       "value": "7",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Tate & Liza"
     },
     {
       "type": "route",
@@ -3916,7 +4158,8 @@
       "type": "gym",
       "name": "Seafloor Cavern",
       "value": "max2",
-      "group": "evil-team"
+      "group": "evil-team",
+      "boss": "Maxie"
     },
     {
       "type": "route",
@@ -3930,7 +4173,8 @@
       "type": "gym",
       "name": "Sootopolis Gym",
       "value": "8",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Wallace"
     },
     {
       "type": "route",
@@ -4004,37 +4248,43 @@
       "type": "gym",
       "name": "Victory Road",
       "value": "w2",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Wally"
     },
     {
       "type": "gym",
       "name": "Pokémon League",
       "value": "e1",
-      "group": "elite-four"
+      "group": "elite-four",
+      "boss": "Sidney"
     },
     {
       "type": "gym",
       "name": "Pokémon League",
       "value": "e2",
-      "group": "elite-four"
+      "group": "elite-four",
+      "boss": "Phoebe"
     },
     {
       "type": "gym",
       "name": "Pokémon League",
       "value": "e3",
-      "group": "elite-four"
+      "group": "elite-four",
+      "boss": "Glacia"
     },
     {
       "type": "gym",
       "name": "Pokémon League",
       "value": "e4",
-      "group": "elite-four"
+      "group": "elite-four",
+      "boss": "Drake"
     },
     {
       "type": "gym",
       "name": "Pokémon Champion",
       "value": "c",
-      "group": "elite-four"
+      "group": "elite-four",
+      "boss": "Steven"
     },
     {
       "type": "route",
@@ -4100,9 +4350,10 @@
     },
     {
       "type": "gym",
-      "name": "1st Rival Battle",
+      "name": "Route 201",
       "value": "b1",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Barry"
     },
     {
       "type": "route",
@@ -4118,9 +4369,10 @@
     },
     {
       "type": "gym",
-      "name": "2nd Rival Battle",
+      "name": "Route 203",
       "value": "b2",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Barry"
     },
     {
       "type": "route",
@@ -4134,7 +4386,8 @@
       "type": "gym",
       "name": "Oreburgh Gym",
       "value": "1",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Roark"
     },
     {
       "type": "route",
@@ -4168,7 +4421,8 @@
       "type": "gym",
       "name": "Valley Windoworks",
       "value": "mars1",
-      "group": "evil-team"
+      "group": "evil-team",
+      "boss": "Mars"
     },
     {
       "type": "route",
@@ -4186,13 +4440,15 @@
       "type": "gym",
       "name": "Eterna Gym",
       "value": "2",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Gardenia"
     },
     {
       "type": "gym",
       "name": "Eterna Building",
       "value": "jup1",
-      "group": "evil-team"
+      "group": "evil-team",
+      "boss": "Jupiter"
     },
     {
       "type": "route",
@@ -4218,7 +4474,8 @@
       "type": "gym",
       "name": "Hearthome Gym",
       "value": "3",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Fantina"
     },
     {
       "type": "route",
@@ -4226,9 +4483,10 @@
     },
     {
       "type": "gym",
-      "name": "3rd Rival Battle",
+      "name": "Route 209",
       "value": "b3",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Barry"
     },
     {
       "type": "route",
@@ -4254,7 +4512,8 @@
       "type": "gym",
       "name": "Veilstone Gym",
       "value": "4",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Maylene"
     },
     {
       "type": "route",
@@ -4282,15 +4541,17 @@
     },
     {
       "type": "gym",
-      "name": "4th Rival Battle",
+      "name": "Pastoria City",
       "value": "b4",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Barry"
     },
     {
       "type": "gym",
       "name": "Pastoria Gym",
       "value": "5",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Crasher Wake"
     },
     {
       "type": "route",
@@ -4308,7 +4569,8 @@
       "type": "gym",
       "name": "Celestic Town",
       "value": "cyr1",
-      "group": "evil-team"
+      "group": "evil-team",
+      "boss": "Cyrus"
     },
     {
       "type": "route",
@@ -4336,15 +4598,17 @@
     },
     {
       "type": "gym",
-      "name": "5th Rival Battle",
+      "name": "Canalave City",
       "value": "b5",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Barry"
     },
     {
       "type": "gym",
       "name": "Canalave Gym",
       "value": "6",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Byron"
     },
     {
       "type": "route",
@@ -4358,13 +4622,15 @@
       "type": "gym",
       "name": "Valor Cavern",
       "value": "sat1",
-      "group": "evil-team"
+      "group": "evil-team",
+      "boss": "Saturn"
     },
     {
       "type": "gym",
       "name": "Lake Verity",
       "value": "mars2",
-      "group": "evil-team"
+      "group": "evil-team",
+      "boss": "Mars"
     },
     {
       "type": "route",
@@ -4390,31 +4656,36 @@
       "type": "gym",
       "name": "Snowpoint Gym",
       "value": "7",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Candice"
     },
     {
       "type": "gym",
       "name": "Galactic HQ",
-      "value": "cyr1",
-      "group": "evil-team"
+      "value": "cyr2",
+      "group": "evil-team",
+      "boss": "Cyrus"
     },
     {
       "type": "gym",
       "name": "Galactic HQ",
       "value": "sat2",
-      "group": "evil-team"
+      "group": "evil-team",
+      "boss": "Saturn"
     },
     {
       "type": "gym",
       "name": "Spear Pillar",
       "value": "mnj",
-      "group": "evil-team"
+      "group": "evil-team",
+      "boss": "Mars & Jupiter"
     },
     {
       "type": "gym",
       "name": "Distortion World",
       "value": "cyr3",
-      "group": "evil-team"
+      "group": "evil-team",
+      "boss": "Cyrus"
     },
     {
       "type": "route",
@@ -4428,7 +4699,8 @@
       "type": "gym",
       "name": "Sunyshore Gym",
       "value": "8",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Volkner"
     },
     {
       "type": "route",
@@ -4440,9 +4712,10 @@
     },
     {
       "type": "gym",
-      "name": "Final Rival Battle",
+      "name": "Victory Road",
       "value": "b5",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Barry"
     },
     {
       "type": "route",
@@ -4452,31 +4725,36 @@
       "type": "gym",
       "name": "Elite Four",
       "value": "e1",
-      "group": "elite-four"
+      "group": "elite-four",
+      "boss": "Aaron"
     },
     {
       "type": "gym",
       "name": "Elite Four",
       "value": "e2",
-      "group": "elite-four"
+      "group": "elite-four",
+      "boss": "Bertha"
     },
     {
       "type": "gym",
       "name": "Elite Four",
       "value": "e3",
-      "group": "elite-four"
+      "group": "elite-four",
+      "boss": "Flint"
     },
     {
       "type": "gym",
       "name": "Elite Four",
       "value": "e4",
-      "group": "elite-four"
+      "group": "elite-four",
+      "boss": "Lucian"
     },
     {
       "type": "gym",
       "name": "Champion",
       "value": "c",
-      "group": "elite-four"
+      "group": "elite-four",
+      "boss": "Cynthia"
     }
   ],
   "rb": [
@@ -4492,7 +4770,8 @@
       "type": "gym",
       "name": "Rival",
       "value": "r1",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Blue"
     },
     {
       "type": "route",
@@ -4510,7 +4789,8 @@
       "type": "gym",
       "name": "Rival",
       "value": "r2",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Blue"
     },
     {
       "type": "route",
@@ -4524,7 +4804,8 @@
       "type": "gym",
       "name": "Pewter City Gym",
       "value": "1",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Brock"
     },
     {
       "type": "route",
@@ -4546,7 +4827,8 @@
       "type": "gym",
       "name": "Cerulean City Gym",
       "value": "2",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Misty"
     },
     {
       "type": "route",
@@ -4556,7 +4838,8 @@
       "type": "gym",
       "name": "Rival",
       "value": "r2",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Blue"
     },
     {
       "type": "route",
@@ -4578,13 +4861,15 @@
       "type": "gym",
       "name": "S.S. Anne",
       "value": "r3",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Blue"
     },
     {
       "type": "gym",
       "name": "Vermillion City Gym",
       "value": "3",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Lt. Surge"
     },
     {
       "type": "route",
@@ -4630,19 +4915,22 @@
       "type": "gym",
       "name": "Celadon City Gym",
       "value": "4",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Erica"
     },
     {
       "type": "gym",
       "name": "Rocket Hideout",
       "value": "g1",
-      "group": "evil-team"
+      "group": "evil-team",
+      "boss": "Giovanni"
     },
     {
       "type": "gym",
       "name": "Pokemon Tower Rival",
       "value": "r5",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Blue"
     },
     {
       "type": "route",
@@ -4652,19 +4940,22 @@
       "type": "gym",
       "name": "Silph Co. Rival",
       "value": "r6",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Blue"
     },
     {
       "type": "gym",
       "name": "Silph Co.",
       "value": "g2",
-      "group": "evil-team"
+      "group": "evil-team",
+      "boss": "Giovanni"
     },
     {
       "type": "gym",
       "name": "Saffron City Gym",
       "value": "6",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Sabrina"
     },
     {
       "type": "route",
@@ -4686,7 +4977,8 @@
       "type": "gym",
       "name": "Fuschia City Gym",
       "value": "5",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Koga"
     },
     {
       "type": "route",
@@ -4732,7 +5024,8 @@
       "type": "gym",
       "name": "Cinnabar Island Gym",
       "value": "7",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Blaine"
     },
     {
       "type": "route",
@@ -4742,7 +5035,8 @@
       "type": "gym",
       "name": "Viridian City Gym",
       "value": "8",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Giovanni"
     },
     {
       "type": "route",
@@ -4756,37 +5050,43 @@
       "type": "gym",
       "name": "Rival",
       "value": "r7",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Blue"
     },
     {
       "type": "gym",
       "name": "Indigo Plateau",
       "value": "e1",
-      "group": "elite-four"
+      "group": "elite-four",
+      "boss": "Lorelei"
     },
     {
       "type": "gym",
       "name": "Indigo Plateau",
       "value": "e2",
-      "group": "elite-four"
+      "group": "elite-four",
+      "boss": "Bruno"
     },
     {
       "type": "gym",
       "name": "Indigo Plateau",
       "value": "e3",
-      "group": "elite-four"
+      "group": "elite-four",
+      "boss": "Agatha"
     },
     {
       "type": "gym",
       "name": "Indigo Plateau",
       "value": "e4",
-      "group": "elite-four"
+      "group": "elite-four",
+      "boss": "Lance"
     },
     {
       "type": "gym",
       "name": "Champion",
       "value": "c",
-      "group": "elite-four"
+      "group": "elite-four",
+      "boss": "Blue"
     },
     {
       "type": "route",
@@ -4802,7 +5102,8 @@
       "type": "gym",
       "name": "Rival",
       "value": "r1",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Hop"
     },
     {
       "type": "route",
@@ -4824,7 +5125,8 @@
       "type": "gym",
       "name": "Rival",
       "value": "r2",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Hop"
     },
     {
       "type": "route",
@@ -4866,7 +5168,8 @@
       "type": "gym",
       "name": "Rival",
       "value": "r3",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Hop"
     },
     {
       "type": "route",
@@ -4880,7 +5183,8 @@
       "type": "gym",
       "name": "Rival",
       "value": "b1",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Bede"
     },
     {
       "type": "route",
@@ -4890,7 +5194,8 @@
       "type": "gym",
       "name": "Turfield Gym",
       "value": "1",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Milo"
     },
     {
       "type": "route",
@@ -4900,7 +5205,8 @@
       "type": "gym",
       "name": "Rival",
       "value": "r4",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Hop"
     },
     {
       "type": "route",
@@ -4910,7 +5216,8 @@
       "type": "gym",
       "name": "Hulbury Gym",
       "value": "2",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Nessa"
     },
     {
       "type": "route",
@@ -4920,7 +5227,8 @@
       "type": "gym",
       "name": "Galar Mine No.2 Exit",
       "value": "b2",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Bede"
     },
     {
       "type": "route",
@@ -4930,7 +5238,8 @@
       "type": "gym",
       "name": "Budew Drop Inn",
       "value": "m1",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Marnie"
     },
     {
       "type": "route",
@@ -4940,7 +5249,8 @@
       "type": "gym",
       "name": "Motostoke Gym",
       "value": "3",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Kabu"
     },
     {
       "type": "route",
@@ -4982,19 +5292,22 @@
       "type": "gym",
       "name": "Rival",
       "value": "r5",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Hop"
     },
     {
       "type": "gym",
       "name": "Stow-on-Side Gym",
       "value": "4b",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Allister"
     },
     {
       "type": "gym",
       "name": "Stow-on-Side Monument",
       "value": "b3",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Bede"
     },
     {
       "type": "route",
@@ -5004,7 +5317,8 @@
       "type": "gym",
       "name": "Ballonlea Gym",
       "value": "5",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Opal"
     },
     {
       "type": "route",
@@ -5014,7 +5328,8 @@
       "type": "gym",
       "name": "Rival",
       "value": "r6",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Hop"
     },
     {
       "type": "route",
@@ -5024,13 +5339,15 @@
       "type": "gym",
       "name": "Rival",
       "value": "r7",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Hop"
     },
     {
       "type": "gym",
       "name": "Circhester Gym",
       "value": "6b",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Melony"
     },
     {
       "type": "route",
@@ -5040,19 +5357,22 @@
       "type": "gym",
       "name": "Outer Spikemouth",
       "value": "m2",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Marnie"
     },
     {
       "type": "gym",
       "name": "Spikemouth Gym",
       "value": "7",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Piers"
     },
     {
       "type": "gym",
       "name": "Hammerlock Gym",
       "value": "8",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Raihan"
     },
     {
       "type": "route",
@@ -5066,55 +5386,64 @@
       "type": "gym",
       "name": "Wyndon Semi Finals",
       "value": "e1",
-      "group": "elite-four"
+      "group": "elite-four",
+      "boss": "Marnie"
     },
     {
       "type": "gym",
       "name": "Wyndon Semi Finals",
       "value": "e2",
-      "group": "elite-four"
+      "group": "elite-four",
+      "boss": "Hop"
     },
     {
       "type": "gym",
       "name": "Rose Tower",
       "value": "oleana",
-      "group": "evil-team"
+      "group": "evil-team",
+      "boss": "Oleana"
     },
     {
       "type": "gym",
       "name": "Wyndon Championship Match",
       "value": "e3",
-      "group": "elite-four"
+      "group": "elite-four",
+      "boss": "Bede"
     },
     {
       "type": "gym",
       "name": "Wyndon Championship Match",
       "value": "e4",
-      "group": "elite-four"
+      "group": "elite-four",
+      "boss": "Nessa"
     },
     {
       "type": "gym",
       "name": "Wyndon Championship Match",
       "value": "e5a",
-      "group": "elite-four"
+      "group": "elite-four",
+      "boss": "Bea"
     },
     {
       "type": "gym",
       "name": "Wyndon Championship Match",
       "value": "e6",
-      "group": "elite-four"
+      "group": "elite-four",
+      "boss": "Raihan"
     },
     {
       "type": "gym",
       "name": "Energy Plant",
       "value": "rose",
-      "group": "evil-team"
+      "group": "evil-team",
+      "boss": "Rose"
     },
     {
       "type": "gym",
       "name": "Wyndon Championship Final",
       "value": "ca",
-      "group": "elite-four"
+      "group": "elite-four",
+      "boss": "Champion Leon"
     },
     {
       "type": "route",
@@ -5124,13 +5453,15 @@
       "type": "gym",
       "name": "Fields of Honor",
       "value": "av1",
-      "group": "rival "
+      "group": "rival ",
+      "boss": "Avery"
     },
     {
       "type": "gym",
       "name": "Master Dojo",
       "value": "mustard1",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Mustard"
     },
     {
       "type": "route",
@@ -5172,7 +5503,8 @@
       "type": "gym",
       "name": "Warm-Up Tunnel",
       "value": "av2",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Avery"
     },
     {
       "type": "route",
@@ -5202,13 +5534,15 @@
       "type": "gym",
       "name": "Battle Court",
       "value": "av3",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Avery"
     },
     {
       "type": "gym",
       "name": "Battle Court",
       "value": "mustard2",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Master Mustard"
     },
     {
       "type": "route",
@@ -5218,7 +5552,8 @@
       "type": "gym",
       "name": "Slipper Slope Ambush",
       "value": "p",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Peony"
     },
     {
       "type": "route",
@@ -5316,9 +5651,10 @@
     },
     {
       "type": "gym",
-      "name": "1st Rival",
+      "name": "Iki Town",
       "value": "r1",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Hau"
     },
     {
       "type": "route",
@@ -5328,7 +5664,8 @@
       "type": "gym",
       "name": "Iki Town Festival",
       "value": "r2",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Hau"
     },
     {
       "type": "route",
@@ -5342,7 +5679,8 @@
       "type": "gym",
       "name": "Hau'oli City Trial Captain",
       "value": "1",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Ilima"
     },
     {
       "type": "route",
@@ -5360,7 +5698,8 @@
       "type": "gym",
       "name": "Totem Trial",
       "value": "1a",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Ilima's trial"
     },
     {
       "type": "route",
@@ -5374,7 +5713,8 @@
       "type": "gym",
       "name": "2nd Rival",
       "value": "r3",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Hau"
     },
     {
       "type": "route",
@@ -5388,7 +5728,8 @@
       "type": "gym",
       "name": "Hala's Grand Trial",
       "value": "2",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Hala"
     },
     {
       "type": "route",
@@ -5406,7 +5747,8 @@
       "type": "gym",
       "name": "Heahea City",
       "value": "dsa",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Dexio"
     },
     {
       "type": "route",
@@ -5420,7 +5762,8 @@
       "type": "gym",
       "name": "3rd Rival",
       "value": "r4",
-      "group": "rival"
+      "group": "rival",
+      "boss": "undefined"
     },
     {
       "type": "route",
@@ -5434,7 +5777,8 @@
       "type": "gym",
       "name": "Team skull",
       "value": "g1",
-      "group": "evil-team"
+      "group": "evil-team",
+      "boss": "Gladion"
     },
     {
       "type": "route",
@@ -5444,7 +5788,8 @@
       "type": "gym",
       "name": "Totem Trial",
       "value": "3",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Lana's trial"
     },
     {
       "type": "route",
@@ -5652,7 +5997,8 @@
       "type": "gym",
       "name": "Rival",
       "value": "r1",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Hop"
     },
     {
       "type": "route",
@@ -5674,7 +6020,8 @@
       "type": "gym",
       "name": "Rival",
       "value": "r2",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Hop"
     },
     {
       "type": "route",
@@ -5716,7 +6063,8 @@
       "type": "gym",
       "name": "Rival",
       "value": "r3",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Hop"
     },
     {
       "type": "route",
@@ -5730,7 +6078,8 @@
       "type": "gym",
       "name": "Rival",
       "value": "b1",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Bede"
     },
     {
       "type": "route",
@@ -5740,7 +6089,8 @@
       "type": "gym",
       "name": "Turfield Gym",
       "value": "1",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Milo"
     },
     {
       "type": "route",
@@ -5750,7 +6100,8 @@
       "type": "gym",
       "name": "Rival",
       "value": "r4",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Hop"
     },
     {
       "type": "route",
@@ -5760,7 +6111,8 @@
       "type": "gym",
       "name": "Hulbury Gym",
       "value": "2",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Nessa"
     },
     {
       "type": "route",
@@ -5770,7 +6122,8 @@
       "type": "gym",
       "name": "Galar Mine No.2 Exit",
       "value": "b2",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Bede"
     },
     {
       "type": "route",
@@ -5780,7 +6133,8 @@
       "type": "gym",
       "name": "Budew Drop Inn",
       "value": "m1",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Marnie"
     },
     {
       "type": "route",
@@ -5790,7 +6144,8 @@
       "type": "gym",
       "name": "Motostoke Gym",
       "value": "3",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Kabu"
     },
     {
       "type": "route",
@@ -5832,19 +6187,22 @@
       "type": "gym",
       "name": "Rival",
       "value": "r5",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Hop"
     },
     {
       "type": "gym",
       "name": "Stow-on-Side Gym",
       "value": "4a",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Bea"
     },
     {
       "type": "gym",
       "name": "Stow-on-Side Monument",
       "value": "b3",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Bede"
     },
     {
       "type": "route",
@@ -5854,7 +6212,8 @@
       "type": "gym",
       "name": "Ballonlea Gym",
       "value": "5",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Opal"
     },
     {
       "type": "route",
@@ -5864,7 +6223,8 @@
       "type": "gym",
       "name": "Rival",
       "value": "r6",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Hop"
     },
     {
       "type": "route",
@@ -5874,13 +6234,15 @@
       "type": "gym",
       "name": "Rival",
       "value": "r7",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Hop"
     },
     {
       "type": "gym",
       "name": "Circhester Gym",
       "value": "6a",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Gordie"
     },
     {
       "type": "route",
@@ -5890,19 +6252,22 @@
       "type": "gym",
       "name": "Outer Spikemouth",
       "value": "m2",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Marnie"
     },
     {
       "type": "gym",
       "name": "Spikemouth Gym",
       "value": "7",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Piers"
     },
     {
       "type": "gym",
       "name": "Hammerlock Gym",
       "value": "8",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Raihan"
     },
     {
       "type": "route",
@@ -5916,55 +6281,64 @@
       "type": "gym",
       "name": "Wyndon Semi Finals",
       "value": "e1",
-      "group": "elite-four"
+      "group": "elite-four",
+      "boss": "Marnie"
     },
     {
       "type": "gym",
       "name": "Wyndon Semi Finals",
       "value": "e2",
-      "group": "elite-four"
+      "group": "elite-four",
+      "boss": "Hop"
     },
     {
       "type": "gym",
       "name": "Rose Tower",
       "value": "oleana",
-      "group": "evil-team"
+      "group": "evil-team",
+      "boss": "Oleana"
     },
     {
       "type": "gym",
       "name": "Wyndon Championship Match",
       "value": "e3",
-      "group": "elite-four"
+      "group": "elite-four",
+      "boss": "Bede"
     },
     {
       "type": "gym",
       "name": "Wyndon Championship Match",
       "value": "e4",
-      "group": "elite-four"
+      "group": "elite-four",
+      "boss": "Nessa"
     },
     {
       "type": "gym",
       "name": "Wyndon Championship Match",
       "value": "e5a",
-      "group": "elite-four"
+      "group": "elite-four",
+      "boss": "Bea"
     },
     {
       "type": "gym",
       "name": "Wyndon Championship Match",
       "value": "e6",
-      "group": "elite-four"
+      "group": "elite-four",
+      "boss": "Raihan"
     },
     {
       "type": "gym",
       "name": "Energy Plant",
       "value": "rose",
-      "group": "evil-team"
+      "group": "evil-team",
+      "boss": "Rose"
     },
     {
       "type": "gym",
       "name": "Wyndon Championship Final",
       "value": "ca",
-      "group": "elite-four"
+      "group": "elite-four",
+      "boss": "Champion Leon"
     },
     {
       "type": "route",
@@ -5974,13 +6348,15 @@
       "type": "gym",
       "name": "Fields of Honor",
       "value": "kl1",
-      "group": "rival "
+      "group": "rival ",
+      "boss": "Klara"
     },
     {
       "type": "gym",
       "name": "Master Dojo",
       "value": "mustard1",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Mustard"
     },
     {
       "type": "route",
@@ -6022,7 +6398,8 @@
       "type": "gym",
       "name": "Warm-Up Tunnel",
       "value": "kl2",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Klara"
     },
     {
       "type": "route",
@@ -6052,13 +6429,15 @@
       "type": "gym",
       "name": "Battle Court",
       "value": "kl3",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Klara"
     },
     {
       "type": "gym",
       "name": "Battle Court",
       "value": "mustard2",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Master Mustard"
     },
     {
       "type": "route",
@@ -6068,7 +6447,8 @@
       "type": "gym",
       "name": "Slipper Slope Ambush",
       "value": "p",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Peony"
     },
     {
       "type": "route",
@@ -6162,9 +6542,10 @@
     },
     {
       "type": "gym",
-      "name": "1st Shauna Battle",
+      "name": "Aquacode Town",
       "value": "sh1",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Shauna"
     },
     {
       "type": "route",
@@ -6178,7 +6559,8 @@
       "type": "gym",
       "name": "Santlune Gym",
       "value": "1",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Viola"
     },
     {
       "type": "route",
@@ -6200,7 +6582,8 @@
       "type": "gym",
       "name": "Pokémon Lab",
       "value": "sy1",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Sycamore"
     },
     {
       "type": "route",
@@ -6208,9 +6591,10 @@
     },
     {
       "type": "gym",
-      "name": "1st Tierno Battle",
+      "name": "Route 5",
       "value": "ti1",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Tierno"
     },
     {
       "type": "route",
@@ -6226,9 +6610,10 @@
     },
     {
       "type": "gym",
-      "name": "Multi Battle",
+      "name": "Route 7",
       "value": "tnt",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Trevor & Tierno"
     },
     {
       "type": "route",
@@ -6262,7 +6647,8 @@
       "type": "gym",
       "name": "Cyllage Gym",
       "value": "2",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Grant"
     },
     {
       "type": "route",
@@ -6270,9 +6656,10 @@
     },
     {
       "type": "gym",
-      "name": "Geosenge Korrina Battle",
+      "name": "Geosenge",
       "value": "3a",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Korrina"
     },
     {
       "type": "route",
@@ -6292,21 +6679,24 @@
     },
     {
       "type": "gym",
-      "name": "Tower of Mastery Rival Battle",
+      "name": "Tower of Mastery",
       "value": "se1",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Serena"
     },
     {
       "type": "gym",
       "name": "Shalour Gym",
       "value": "3",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Korrina"
     },
     {
       "type": "gym",
-      "name": "Tower of Mastery Korrina Battle",
+      "name": "Tower of Mastery",
       "value": "3b",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Korrina"
     },
     {
       "type": "route",
@@ -6318,15 +6708,17 @@
     },
     {
       "type": "gym",
-      "name": "Coumarine Pokémon Center Rival Battle",
+      "name": "Coumarine Pokémon Center",
       "value": "se2",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Serena"
     },
     {
       "type": "gym",
       "name": "Coumarine Gym",
       "value": "4",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Ramos"
     },
     {
       "type": "route",
@@ -6336,13 +6728,15 @@
       "type": "gym",
       "name": "Power Plant",
       "value": "al1",
-      "group": "evil-team"
+      "group": "evil-team",
+      "boss": "Aliana"
     },
     {
       "type": "gym",
       "name": "Lumiose Gym",
       "value": "5",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Clemont"
     },
     {
       "type": "route",
@@ -6350,9 +6744,10 @@
     },
     {
       "type": "gym",
-      "name": "Route 14 Rival Battle",
+      "name": "Route 14",
       "value": "se3",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Serena"
     },
     {
       "type": "route",
@@ -6362,13 +6757,15 @@
       "type": "gym",
       "name": "Laverre Gym",
       "value": "6",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Valeria"
     },
     {
       "type": "gym",
       "name": "Pokéball Factory",
       "value": "cnb",
-      "group": "evil-team"
+      "group": "evil-team",
+      "boss": "Celosia & Bryony"
     },
     {
       "type": "route",
@@ -6390,7 +6787,8 @@
       "type": "gym",
       "name": "Frost Cavern",
       "value": "m1",
-      "group": "evil-team"
+      "group": "evil-team",
+      "boss": "Mable"
     },
     {
       "type": "route",
@@ -6398,57 +6796,66 @@
     },
     {
       "type": "gym",
-      "name": "Anistar City Rival Battle",
+      "name": "Anistar City",
       "value": "se4",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Serena"
     },
     {
       "type": "gym",
       "name": "Anistar Gym",
       "value": "7",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Olympia"
     },
     {
       "type": "gym",
       "name": "Lysandre Labs",
       "value": "l1",
-      "group": "evil-team"
+      "group": "evil-team",
+      "boss": "Lysandre"
     },
     {
       "type": "gym",
       "name": "Lysandre Labs",
       "value": "al2",
-      "group": "evil-team"
+      "group": "evil-team",
+      "boss": "Aliana"
     },
     {
       "type": "gym",
       "name": "Lysandre Labs",
       "value": "c",
-      "group": "evil-team"
+      "group": "evil-team",
+      "boss": "Celosia"
     },
     {
       "type": "gym",
       "name": "Lysandre Labs",
       "value": "b",
-      "group": "evil-team"
+      "group": "evil-team",
+      "boss": "Bryony"
     },
     {
       "type": "gym",
       "name": "Lysandre Labs",
       "value": "m2",
-      "group": "evil-team"
+      "group": "evil-team",
+      "boss": "Mable"
     },
     {
       "type": "gym",
       "name": "Lysandre Labs",
       "value": "x",
-      "group": "evil-team"
+      "group": "evil-team",
+      "boss": "Xerosic"
     },
     {
       "type": "gym",
       "name": "Team Flare Secret HQ",
       "value": "l2",
-      "group": "evil-team"
+      "group": "evil-team",
+      "boss": "Lysandre"
     },
     {
       "type": "route",
@@ -6458,7 +6865,8 @@
       "type": "gym",
       "name": "Team Flare Secret HQ",
       "value": "l3",
-      "group": "evil-team"
+      "group": "evil-team",
+      "boss": "Lysandre"
     },
     {
       "type": "route",
@@ -6472,7 +6880,8 @@
       "type": "gym",
       "name": "Couriway Town Sycamore Battle",
       "value": "sy2",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Sycamore"
     },
     {
       "type": "route",
@@ -6480,21 +6889,24 @@
     },
     {
       "type": "gym",
-      "name": "Route 19 Shauna Battle",
+      "name": "Route 19",
       "value": "sh2",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Shauna"
     },
     {
       "type": "gym",
-      "name": "Route 19 Tierno Battle",
+      "name": "Route 19",
       "value": "ti2",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Tierno"
     },
     {
       "type": "gym",
-      "name": "Route 19 Trevor Battle",
+      "name": "Route 19",
       "value": "trv",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Trevor"
     },
     {
       "type": "route",
@@ -6508,7 +6920,8 @@
       "type": "gym",
       "name": "Snowbelle Gym",
       "value": "8",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Wulfric"
     },
     {
       "type": "route",
@@ -6524,39 +6937,45 @@
     },
     {
       "type": "gym",
-      "name": "Victory Road Rival Battle",
+      "name": "Victory Road",
       "value": "se5",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Serena"
     },
     {
       "type": "gym",
-      "name": "Pokémon League Blazing Chamber",
+      "name": "Pokémon League - Blazing Chamber",
       "value": "e1",
-      "group": "elite-four"
+      "group": "elite-four",
+      "boss": "Malva"
     },
     {
       "type": "gym",
-      "name": "Pokémon League Flood Chamber",
+      "name": "Pokémon League - Flood Chamber",
       "value": "e2",
-      "group": "elite-four"
+      "group": "elite-four",
+      "boss": "Siebold"
     },
     {
       "type": "gym",
-      "name": "Pokémon League Ironworks Chamber",
+      "name": "Pokémon League - Ironworks Chamber",
       "value": "e3",
-      "group": "elite-four"
+      "group": "elite-four",
+      "boss": "Wikstrom"
     },
     {
       "type": "gym",
-      "name": "Pokémon League Dragonmark Chamber",
+      "name": "Pokémon League - Dragonmark Chamber",
       "value": "e4",
-      "group": "elite-four"
+      "group": "elite-four",
+      "boss": "Drasna"
     },
     {
       "type": "gym",
-      "name": "Pokémon Champion Radiant Chamber",
+      "name": "Pokémon Champion - Radiant Chamber",
       "value": "c1",
-      "group": "elite-four"
+      "group": "elite-four",
+      "boss": "Diantha"
     },
     {
       "type": "route",
@@ -6584,7 +7003,8 @@
       "type": "gym",
       "name": "Rival",
       "value": "r1",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Blue"
     },
     {
       "type": "route",
@@ -6602,7 +7022,8 @@
       "type": "gym",
       "name": "Rival",
       "value": "r2",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Blue (Optional)"
     },
     {
       "type": "route",
@@ -6616,7 +7037,8 @@
       "type": "gym",
       "name": "Pewter City Gym",
       "value": "1",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Brock"
     },
     {
       "type": "route",
@@ -6634,7 +7056,8 @@
       "type": "gym",
       "name": "Team Rocket",
       "value": "jj1",
-      "group": "evil-team"
+      "group": "evil-team",
+      "boss": "Jessie & James"
     },
     {
       "type": "route",
@@ -6644,7 +7067,8 @@
       "type": "gym",
       "name": "Cerulean City Gym",
       "value": "2",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Misty"
     },
     {
       "type": "route",
@@ -6654,7 +7078,8 @@
       "type": "gym",
       "name": "Rival",
       "value": "r3",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Blue"
     },
     {
       "type": "route",
@@ -6676,13 +7101,15 @@
       "type": "gym",
       "name": "S.S. Anne",
       "value": "r4",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Blue"
     },
     {
       "type": "gym",
       "name": "Vermillion City Gym",
       "value": "3",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Lt. Surge"
     },
     {
       "type": "route",
@@ -6728,31 +7155,36 @@
       "type": "gym",
       "name": "Celadon City Gym",
       "value": "4",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Erica"
     },
     {
       "type": "gym",
       "name": "Rocket Hideout",
       "value": "jj2",
-      "group": "evil-team"
+      "group": "evil-team",
+      "boss": "Jessie & James"
     },
     {
       "type": "gym",
       "name": "Rocket Hideout",
       "value": "g1",
-      "group": "evil-team"
+      "group": "evil-team",
+      "boss": "Giovanni"
     },
     {
       "type": "gym",
       "name": "Pokemon Tower",
       "value": "jj3",
-      "group": "evil-team"
+      "group": "evil-team",
+      "boss": "Jessie & James"
     },
     {
       "type": "gym",
       "name": "Pokemon Tower Rival",
       "value": "r5",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Blue"
     },
     {
       "type": "route",
@@ -6762,25 +7194,29 @@
       "type": "gym",
       "name": "Silph Co. Rival",
       "value": "r6",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Blue"
     },
     {
       "type": "gym",
       "name": "Silph Co.",
       "value": "jj4",
-      "group": "evil-team"
+      "group": "evil-team",
+      "boss": "Jessie & James"
     },
     {
       "type": "gym",
       "name": "Silph Co. Boss",
       "value": "g2",
-      "group": "evil-team"
+      "group": "evil-team",
+      "boss": "Giovanni"
     },
     {
       "type": "gym",
       "name": "Saffron City Gym",
       "value": "6",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Sabrina"
     },
     {
       "type": "route",
@@ -6802,7 +7238,8 @@
       "type": "gym",
       "name": "Fuschia City Gym",
       "value": "5",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Koga"
     },
     {
       "type": "route",
@@ -6848,7 +7285,8 @@
       "type": "gym",
       "name": "Cinnabar Island Gym",
       "value": "7",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Blaine"
     },
     {
       "type": "route",
@@ -6858,7 +7296,8 @@
       "type": "gym",
       "name": "Viridian City Gym",
       "value": "8",
-      "group": "gym-leader"
+      "group": "gym-leader",
+      "boss": "Giovanni"
     },
     {
       "type": "route",
@@ -6872,37 +7311,43 @@
       "type": "gym",
       "name": "Rival",
       "value": "r7",
-      "group": "rival"
+      "group": "rival",
+      "boss": "Blue"
     },
     {
       "type": "gym",
       "name": "Indigo Plateau",
       "value": "e1",
-      "group": "elite-four"
+      "group": "elite-four",
+      "boss": "Lorelei"
     },
     {
       "type": "gym",
       "name": "Indigo Plateau",
       "value": "e2",
-      "group": "elite-four"
+      "group": "elite-four",
+      "boss": "Bruno"
     },
     {
       "type": "gym",
       "name": "Indigo Plateau",
       "value": "e3",
-      "group": "elite-four"
+      "group": "elite-four",
+      "boss": "Agatha"
     },
     {
       "type": "gym",
       "name": "Indigo Plateau",
       "value": "e4",
-      "group": "elite-four"
+      "group": "elite-four",
+      "boss": "Lance"
     },
     {
       "type": "gym",
       "name": "Champion",
       "value": "c",
-      "group": "elite-four"
+      "group": "elite-four",
+      "boss": "Blue"
     },
     {
       "type": "route",
