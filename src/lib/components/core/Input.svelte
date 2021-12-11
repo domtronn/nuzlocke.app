@@ -4,29 +4,27 @@
   name = name || placeholder
 </script>
 
-<div>
-  <label for={name}>{name}</label>
-  <input
-    id={name}
-    {placeholder}
-    type=text
-    bind:value={value}
-    class:rounded-lg={rounded}
-    class:pl-8={!!icon}
-    class:pl-3={!icon}
-    class='{color} {className}'
-    autocomplete=off
+<label for={name}>{name}</label>
+<input
+  id={name}
+  {placeholder}
+  type=text
+  bind:value={value}
+  class:rounded-lg={rounded}
+  class:pl-8={!!icon}
+  class:pl-3={!icon}
+  class='{color} {className}'
+  autocomplete=off
   />
-  {#if icon}
-    <span>
-      <Icon src={icon} className='fill-current absolute left-0 top-1/2 -translate-y-1/2 ml-3' />
-    </span>
-  {/if}
-  <slot />
-</div>
+{#if icon}
+  <span>
+    <Icon src={icon} className='fill-current absolute left-0 top-1/2 -translate-y-1/2 ml-3' />
+  </span>
+{/if}
+<slot />
 
 <style>
-  div { position: relative; }
+  div { position: relative; width: 100%; }
 
   :root {
     --inp-focus: theme('colors.black');
@@ -53,9 +51,9 @@
     border-color: theme('colors.gray.600');
   }
 
-  :global(.dark) div { @apply text-gray-500 transition }
+  :global(.dark) span { @apply text-gray-500 transition }
   :global(.dark) input:hover + span, :global(.dark) input:focus + span { @apply text-gray-100 }
-  div { @apply text-gray-400 transition }
+  span { @apply text-gray-400 transition }
   input:hover + span, input:focus + span { @apply text-gray-800 }
 
   input:hover { border-color: var(--inp-focus-2); }

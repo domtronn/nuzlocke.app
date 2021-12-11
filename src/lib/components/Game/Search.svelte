@@ -30,7 +30,7 @@
     </button>
   {/if}
 
-  <div class='absolute right-0 translate-x-full top-1/2 -translate-y-1/2 hidden md:block cursor-help'>
+  <div class='absolute right-0 translate-x-full top-1/2 -translate-y-1/2 hidden md:block cursor-help text-gray-400 dark:text-gray-600'>
     <Tooltip>
       Search and filter by Pokémon name, nickname, status or location name. e.g. Route 27, or captured
     </Tooltip>
