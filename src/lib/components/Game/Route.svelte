@@ -61,6 +61,7 @@
           id={i}
           {store}
           location={p.name}
+          encounters={p.encounters}
         >
           <div
             slot=location
@@ -82,6 +83,7 @@
           id={i}
           {store}
           location={p.name}
+          encounters={p.encounters}
         />
       </li>
     {/if}

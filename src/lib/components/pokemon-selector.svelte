@@ -15,18 +15,22 @@
 
   import { onMount, getContext } from 'svelte'
 
-  let selected, nickname, status, nature
+  let selected, nickname, status, nature, search
+
+  export let encounters
+  let encounterItems = []
 
   let Particles, EvoModal
   onMount(() => {
+    getPkmns(encounters).then(e => encounterItems = encounters.map(id => e[id]))
     import('$lib/components/particles').then(m => Particles = m.default)
     import('$lib/components/EvolutionModal.svelte').then(m => EvoModal = m.default)
   })
 
-  const { getAllPkmn, getPkmn } = getContext('game')
+  const { getAllPkmn, getPkmn, getPkmns } = getContext('game')
 
   let loading = true
-  store.subscribe(read(data => {
+  store && store.subscribe(read(data => {
     const pkmn = data[location]
     if (!pkmn) return
 
@@ -76,7 +80,9 @@
 
   const handleEvolution = (base, evos) => async () => handleSplitEvolution(base, evos)
 
- $: gray = ['Dead', 'Missed'].includes(status?.state)
+  $: gray = ['Dead', 'Missed'].includes(status?.state)
+
+
 </script>
 
 <div class='grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-y-3 md:gap-y-2 lg:gap-y-0 gap-x-2 flex'>
@@ -90,9 +96,11 @@
 
   <AutoComplete
     rounded
-    fetch={getAllPkmn}
+    fetch={search ? getAllPkmn : null}
+    items={search ? null : encounterItems}
     inset={!!selected}
-    bind:selected={selected}
+    bind:search
+    bind:selected
     name='{location} Encounter'
     placeholder=Encounter
 
