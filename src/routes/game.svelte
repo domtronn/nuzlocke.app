@@ -16,7 +16,7 @@
 
   import Games from '$lib/data/games.json'
   import deferStyles from '$lib/utils/defer-styles'
-  import { activeGame, savedGames, getGame, patch, read, parse } from '$lib/store'
+  import { activeGame, savedGames, getGame, patch, read, readdata, parse } from '$lib/store'
 
   let gameStore, gameKey, gameData
   let loading = true
@@ -48,22 +48,15 @@
   onMount(async () => deferStyles('/assets/pokemon.css'))
 
   const setup = () => new Promise((resolve) => {
-    activeGame.subscribe(gameId => {
-      if (browser && !gameId) return window.location = '/'
+    const [data, key, id] = readdata()
+    if (browser && !id) return window.location = '/'
 
-      gameStore = getGame(gameId)
-      gameStore.subscribe(read(game => {
-        gameData = game
-      }))
+    gameStore = getGame(id)
+    gameData = data
+    gameKey = key
 
-      savedGames.subscribe(parse(games => {
-        gameKey = games[gameId]?.game
-        loading = !browser
-
-        deferStyles(`/assets/items/${gameKey}.css`)
-        fetchRoute(Games[gameKey].pid).then(r => resolve(r))
-      }))
-    })
+    deferStyles(`/assets/items/${key}.css`)
+    fetchRoute(Games[key].pid).then(r => resolve(r))
   })
 
   const latestnav = (routes, game) => {
