@@ -14,6 +14,7 @@
   import { stats, StatIconMap } from '$lib/data/stats'
 
   import Icon from 'svelte-icons-pack'
+  import Shiny from 'svelte-icons-pack/wi/WiStars'
   import X from 'svelte-icons-pack/ri/RiSystemFilterOffFill'
 
   const { getPkmns } = getContext('game')
@@ -148,6 +149,12 @@
                 nature={p.nature}
                 types={(Pokemon[p.pokemon].types || []).map(t => t.toLowerCase())}
               >
+                <span slot=img>
+                  {#if p.status === 6}
+                    <Icon src={Shiny} size=3.6em className='fill-current absolute animate-pulse z-50 text-orange-200 -translate-y-3/4 left-1/2 -translate-x-full' />
+                    <Icon src={Shiny} size=2.8em className='fill-current absolute animate-pulse z-50 text-orange-300 top-0 transform rotate-180 right-0 translate-y-1/4 -translate-x-2/3' />
+                  {/if}
+                </span>
                 <span class='text-xs text-center p-2 -mt-4 text-gray-500 z-40' slot="footer">
                   {#if p.location === 'Starter'}
                     Met in a fateful encounter

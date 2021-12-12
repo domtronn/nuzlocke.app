@@ -67,6 +67,7 @@
     </div>
 
     <div class='absolute -right-8 h-0'>
+      <slot name=img />
       <img width=96 height=96 style="--v-anim-dur: {animDur}s; --v-anim-delay: {animDelay}s" class='{anim} img__pkm -translate-y-16 h-40 w-auto' src={sprite} alt={name} />
     </div>
 
