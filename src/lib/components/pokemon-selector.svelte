@@ -22,7 +22,8 @@
 
   let Particles, EvoModal
   onMount(() => {
-    getPkmns(encounters).then(e => encounterItems = encounters.map(id => e[id]).filter(i => i))
+    getPkmns(encounters)
+      .then(e => encounterItems = (encounters || []).map(id => e[id]).filter(i => i))
     import('$lib/components/particles').then(m => Particles = m.default)
     import('$lib/components/EvolutionModal.svelte').then(m => EvoModal = m.default)
   })
@@ -32,7 +33,7 @@
   let loading = true
   let evolines = new Set()
   store && store.subscribe(read(data => {
-    getPkmns(Object.values(data).map(p => p.pokemon))
+    getPkmns(Object.values(data).map(p => p.pokemon).filter(i => i))
       .then(p => evolines = new Set(Object.values(p).map(p => p?.evoline)))
 
     const pkmn = data[location]
