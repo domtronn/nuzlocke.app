@@ -17,12 +17,12 @@
 
   let selected, nickname, status, nature, search
 
-  export let encounters
+  export let encounters = []
   let encounterItems = []
 
   let Particles, EvoModal
   onMount(() => {
-    getPkmns(encounters).then(e => encounterItems = encounters.map(id => e[id]))
+    getPkmns(encounters).then(e => encounterItems = encounters.map(id => e[id]).filter(i => i))
     import('$lib/components/particles').then(m => Particles = m.default)
     import('$lib/components/EvolutionModal.svelte').then(m => EvoModal = m.default)
   })
@@ -30,7 +30,11 @@
   const { getAllPkmn, getPkmn, getPkmns } = getContext('game')
 
   let loading = true
+  let evolines = new Set()
   store && store.subscribe(read(data => {
+    getPkmns(Object.values(data).map(p => p.pokemon))
+      .then(p => evolines = new Set(Object.values(p).map(p => p?.evoline)))
+
     const pkmn = data[location]
     if (!pkmn) return
 
@@ -45,7 +49,7 @@
         })
   }))
 
- $: {
+  $: {
    if (selected)
      store.update(patch({
        [location]: {
@@ -81,8 +85,6 @@
   const handleEvolution = (base, evos) => async () => handleSplitEvolution(base, evos)
 
   $: gray = ['Dead', 'Missed'].includes(status?.state)
-
-
 </script>
 
 <div class='grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-y-3 md:gap-y-2 lg:gap-y-0 gap-x-2 flex'>
@@ -106,9 +108,12 @@
 
     className=col-span-2
   >
-    <span class='flex items-center h-8' slot=item let:item let:label>
-      <PIcon name={item.sprite} className='transform scale-75 md:scale-100 -mb-4 -ml-6 -mt-5 -mr-2' />
+    <span class='flex items-center h-8' class:dupe={evolines.has(item?.evoline)} slot=item let:item let:label>
+      <PIcon name={item?.sprite} className='transform scale-75 md:scale-100 -mb-4 -ml-6 -mt-5 -mr-2' />
       {@html label}
+      {#if evolines.has(item?.evoline)}
+        <span class='absolute right-0'>dupe</span>
+      {/if}
     </span>
 
     <svelte:fragment slot=icon let:iconClass>
@@ -232,6 +237,10 @@
 </div>
 
 <style>
+  .dupe {
+    @apply opacity-25 grayscale;
+  }
+
   .location {
     @apply col-span-2 sm:col-span-1 md:col-span-4 lg:col-span-1 lg:text-right mr-4 sm:text-sm text-lg mt-4 sm:mt-0 h-full font-medium sm:font-normal flex lg:justify-end items-center;
   }
