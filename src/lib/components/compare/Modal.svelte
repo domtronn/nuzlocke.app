@@ -100,7 +100,7 @@
 
         <Tabs
           bind:selected={tab}
-          className='md:hidden w-full justify-end pr-8 dark:bg-gray-900 bg-white -my-1'
+          className='md:hidden w-full justify-end pr-5 dark:bg-gray-900 bg-white -my-1'
           name=page tabs={[ 'Stats', 'Info', 'Moves']}
         />
 

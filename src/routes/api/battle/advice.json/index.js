@@ -23,21 +23,22 @@ export async function post ({ body }) {
 
   const dmgAdvice = Object.fromEntries(
     box.map(({ name: defName, sprite: defId, nature }) => {
+      const maxLevel = Math.max(...team.map(t => +t.level))
       return [
         defId,
         Object.fromEntries(
           team
-            .map(({ name: atkName, moves, level, item, ability, ...rest }) => {
+            .map(({ name: atkName, moves, item, ability, ...rest }) => {
               return [atkName, moves.filter(m => !!m.power && m.damage_class !== 'status').map(m => {
                 try {
                   const res = calculate(
                     gen,
-                    new Pokemon(gen, atkName, nonnull({ level: +level, item, ability: ability.name })),
-                    new Pokemon(gen, defName, nonnull({ level: +level, nature: capitalise(nature || 'bashful') })),
+                    new Pokemon(gen, atkName, nonnull({ level: +maxLevel, item, ability: ability.name })),
+                    new Pokemon(gen, defName, nonnull({ level: +maxLevel, nature: capitalise(nature || 'bashful') })),
                     new Move(gen, m.name)
                   )
 
-                  return { ...m, kochance: res.kochance().text, dmgrange: res.moveDesc() }
+                  return { ...m, kochance: res.kochance().text, desc: res.moveDesc(), range: res.range() }
                 } catch (e) { return m }
               })]
             })

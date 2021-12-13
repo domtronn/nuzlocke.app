@@ -87,7 +87,7 @@
     {/if}
   {:else if p.type === 'gym' && [0, 2].includes(filter) && (filter === 0 || bossFilter === 'all' || bossFilter === p.group)}
     <li class='-mb-4 md:my-2' id='boss-{i}' transition:fade>
-      <GymCard game={key} starter={starter} id={p.value} location={p.name} />
+      <GymCard game={key} starter={starter} id={p.value} location={p.name} type={p.group} />
     </li >
   {/if}
 
