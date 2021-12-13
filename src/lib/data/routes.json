@@ -2,23 +2,62 @@
   "as": [
     {
       "type": "route",
-      "name": "Starter"
+      "name": "Starter",
+      "encounters": [
+        "torchic",
+        "treecko",
+        "mudkip"
+      ]
     },
     {
       "type": "route",
-      "name": "Littleroot Town"
+      "name": "Route 101",
+      "encounters": [
+        "poochyena",
+        "zigzagoon",
+        "wurmple",
+        "lillipup",
+        "sewaddle",
+        "zorua"
+      ]
     },
     {
       "type": "route",
-      "name": "Route 101"
+      "name": "Route 102",
+      "encounters": [
+        "poochyena",
+        "zigzagoon",
+        "wurmple",
+        "lotad",
+        "seedot",
+        "ralts",
+        "lillipup",
+        "tympole",
+        "gothita",
+        "goldeen",
+        "magikarp",
+        "marill",
+        "azumarill",
+        "surskit",
+        "masquerain"
+      ]
     },
     {
       "type": "route",
-      "name": "Route 102"
-    },
-    {
-      "type": "route",
-      "name": "Route 103"
+      "name": "Route 103",
+      "encounters": [
+        "poochyena",
+        "zigzagoon",
+        "wingull",
+        "shellos",
+        "chatot",
+        "lillipup",
+        "tentacool",
+        "wingull",
+        "pelipper",
+        "magikarp",
+        "wailmer"
+      ]
     },
     {
       "type": "gym",
@@ -29,19 +68,54 @@
     },
     {
       "type": "route",
-      "name": "Petalburg City"
+      "name": "Petalburg City",
+      "encounters": [
+        "marill",
+        "azumarill",
+        "surskit",
+        "masquerain",
+        "goldeen",
+        "magikarp",
+        "corphish"
+      ]
     },
     {
       "type": "route",
-      "name": "Route 104"
+      "name": "Route 104",
+      "encounters": [
+        "zigzagoon",
+        "wurmple",
+        "taillow",
+        "wingull",
+        "pelipper",
+        "chatot",
+        "pidove",
+        "sewaddle",
+        "magikarp"
+      ]
     },
     {
       "type": "route",
-      "name": "Petalburg Woods"
+      "name": "Petalburg Woods",
+      "encounters": [
+        "zigzagoon",
+        "wurmple",
+        "silcoon",
+        "cascoon",
+        "taillow",
+        "shroomish",
+        "slakoth",
+        "paras",
+        "cottonee",
+        "phantump"
+      ]
     },
     {
       "type": "route",
-      "name": "Rustboro City"
+      "name": "Rustboro City",
+      "encounters": [
+        "makuhita"
+      ]
     },
     {
       "type": "gym",
@@ -52,19 +126,51 @@
     },
     {
       "type": "route",
-      "name": "Route 105"
+      "name": "Route 105",
+      "encounters": [
+        "tentacool",
+        "wingull",
+        "pelipper",
+        "krabby",
+        "frillish",
+        "skrelp",
+        "clauncher",
+        "magikarp",
+        "wailmer"
+      ]
     },
     {
       "type": "route",
-      "name": "Route 116"
+      "name": "Route 116",
+      "encounters": [
+        "zigzagoon",
+        "taillow",
+        "nincada",
+        "whismur",
+        "skitty",
+        "eevee",
+        "pidove",
+        "joltik"
+      ]
     },
     {
       "type": "route",
-      "name": "Rusturf Tunnel"
+      "name": "Rusturf Tunnel",
+      "encounters": [
+        "whismur",
+        "geodude"
+      ]
     },
     {
       "type": "route",
-      "name": "Dewford Town"
+      "name": "Dewford Town",
+      "encounters": [
+        "tentacool",
+        "wingull",
+        "pelipper",
+        "magikarp",
+        "wailmer"
+      ]
     },
     {
       "type": "gym",
@@ -75,23 +181,86 @@
     },
     {
       "type": "route",
-      "name": "Route 106"
+      "name": "Route 106",
+      "encounters": [
+        "tentacool",
+        "wingull",
+        "pelipper",
+        "krabby",
+        "frillish",
+        "skrelp",
+        "clauncher",
+        "magikarp",
+        "wailmer"
+      ]
     },
     {
       "type": "route",
-      "name": "Granite Cave"
+      "name": "Granite Cave",
+      "encounters": [
+        "zubat",
+        "abra",
+        "geodude",
+        "makuhita",
+        "aron",
+        "mawile",
+        "sableye",
+        "onix",
+        "timbubrr",
+        "axew",
+        "nosepass"
+      ]
     },
     {
       "type": "route",
-      "name": "Route 107"
+      "name": "Route 107",
+      "encounters": [
+        "tentacool",
+        "wingull",
+        "pelipper",
+        "krabby",
+        "frillish",
+        "skrelp",
+        "clauncher",
+        "magikarp",
+        "wailmer",
+        "chinchou",
+        "lanturn",
+        "clamperl",
+        "relicanth"
+      ]
     },
     {
       "type": "route",
-      "name": "Slateport City"
+      "name": "Slateport City",
+      "encounters": [
+        "tentacool",
+        "wingull",
+        "pelipper",
+        "magikarp",
+        "wailmer",
+        "pikachu"
+      ]
     },
     {
       "type": "route",
-      "name": "Route 110"
+      "name": "Route 110",
+      "encounters": [
+        "electrike",
+        "zigzagoon",
+        "gulpin",
+        "oddish",
+        "wingull",
+        "minun",
+        "plusle",
+        "voltorb",
+        "magnemite",
+        "shellos",
+        "trubbish",
+        "chatot",
+        "magikarp",
+        "wailmer"
+      ]
     },
     {
       "type": "gym",
@@ -102,11 +271,11 @@
     },
     {
       "type": "route",
-      "name": "Altering Cave"
-    },
-    {
-      "type": "route",
-      "name": "New Mauville"
+      "name": "New Mauville",
+      "encounters": [
+        "magnemite",
+        "voltorb"
+      ]
     },
     {
       "type": "gym",
@@ -124,31 +293,127 @@
     },
     {
       "type": "route",
-      "name": "Route 117"
+      "name": "Route 117",
+      "encounters": [
+        "oddish",
+        "marill",
+        "zigzagoon",
+        "surskit",
+        "masquerain",
+        "volbeat",
+        "illumise",
+        "roselia",
+        "rattata",
+        "tympole",
+        "deerling",
+        "goldeen",
+        "magikarp",
+        "crawdaunt"
+      ]
     },
     {
       "type": "route",
-      "name": "Route 111"
+      "name": "Route 111",
+      "encounters": [
+        "geodude",
+        "marill",
+        "azumarill",
+        "surskit",
+        "masquerain",
+        "sandshrew",
+        "trapinch",
+        "cacnea",
+        "baltoy",
+        "gible",
+        "sandile",
+        "dwebble",
+        "goldeen",
+        "magikarp",
+        "barboach",
+        ""
+      ]
     },
     {
       "type": "route",
-      "name": "Route 112"
+      "name": "Route 112",
+      "encounters": [
+        "machop",
+        "tyrogue",
+        "numel",
+        "ponyta",
+        "sawk",
+        "throh"
+      ]
     },
     {
       "type": "route",
-      "name": "Fiery Path"
+      "name": "Fiery Path",
+      "encounters": [
+        "machop",
+        "grimer",
+        "koffing",
+        "slugma",
+        "numel",
+        "torkoal",
+        "diglett",
+        "tyrogue",
+        "roggenrola"
+      ]
     },
     {
       "type": "route",
-      "name": "Route 113"
+      "name": "Route 113",
+      "encounters": [
+        "spinda",
+        "sandshrew",
+        "skarmory",
+        "scraggy",
+        "bouffalant",
+        "klefki"
+      ]
     },
     {
       "type": "route",
-      "name": "Route 114"
+      "name": "Route 114",
+      "encounters": [
+        "lotad",
+        "lombre",
+        "seedot",
+        "nuzleaf",
+        "surskit",
+        "masquerain",
+        "swablu",
+        "zangoose",
+        "seviper",
+        "misdreavus",
+        "skorupi",
+        "tympole",
+        "marill",
+        "azumarill",
+        "goldeen",
+        "magikarp",
+        "barboach",
+        "geodude"
+      ]
     },
     {
       "type": "route",
-      "name": "Meteor Falls"
+      "name": "Meteor Falls",
+      "encounters": [
+        "zubat",
+        "lunatone",
+        "solrock",
+        "clefairy",
+        "bagon",
+        "druddigon",
+        "deino",
+        "zubat",
+        "golbat",
+        "goldeen",
+        "magikarp",
+        "barboach",
+        "whiscash"
+      ]
     },
     {
       "type": "gym",
@@ -159,7 +424,20 @@
     },
     {
       "type": "route",
-      "name": "Route 115"
+      "name": "Route 115",
+      "encounters": [
+        "jigglypuff",
+        "taillow",
+        "wingull",
+        "pelipper",
+        "swablu",
+        "pidove",
+        "misdreavus",
+        "clefairy",
+        "tentacool",
+        "magikarp",
+        "wailmer"
+      ]
     },
     {
       "type": "gym",
@@ -177,11 +455,24 @@
     },
     {
       "type": "route",
-      "name": "Jagged Pass"
+      "name": "Jagged Pass",
+      "encounters": [
+        "machop",
+        "numel",
+        "spoink",
+        "mankey",
+        "ponyta",
+        "tyrogue"
+      ]
     },
     {
       "type": "route",
-      "name": "Lavaridge Town"
+      "name": "Lavaridge Town",
+      "encounters": [
+        "togepi",
+        "wynaut",
+        "kecleon"
+      ]
     },
     {
       "type": "gym",
@@ -199,11 +490,29 @@
     },
     {
       "type": "route",
-      "name": "Route 118"
+      "name": "Route 118",
+      "encounters": [
+        "linoone",
+        "wingull",
+        "pelipper",
+        "electrike",
+        "kecleon",
+        "raticate",
+        "aipom",
+        "luxio",
+        "tentacool",
+        "magikarp",
+        "carvanha",
+        "sharpedo"
+      ]
     },
     {
       "type": "route",
-      "name": "Southern Island"
+      "name": "Southern Island",
+      "encounters": [
+        "latias",
+        "latios"
+      ]
     },
     {
       "type": "gym",
@@ -214,7 +523,21 @@
     },
     {
       "type": "route",
-      "name": "Route 119"
+      "name": "Route 119",
+      "encounters": [
+        "oddish",
+        "gloom",
+        "linoone",
+        "kecleon",
+        "tropius",
+        "feebas",
+        "carvanha",
+        "sharpedo",
+        "tentacool",
+        "wingull",
+        "pelipper",
+        "magikarp"
+      ]
     },
     {
       "type": "gym",
@@ -232,7 +555,10 @@
     },
     {
       "type": "route",
-      "name": "Fortree City"
+      "name": "Fortree City",
+      "encounters": [
+        "skitty"
+      ]
     },
     {
       "type": "gym",
@@ -250,19 +576,65 @@
     },
     {
       "type": "route",
-      "name": "Route 120"
+      "name": "Route 120",
+      "encounters": [
+        "oddish",
+        "gloom",
+        "linoone",
+        "kecleon",
+        "tropius",
+        "absol",
+        "marill",
+        "azumarill",
+        "surskit",
+        "masquerain",
+        "tentacool",
+        "magikarp",
+        "barboach"
+      ]
     },
     {
       "type": "route",
-      "name": "Route 121"
+      "name": "Route 121",
+      "encounters": [
+        "shuppet",
+        "gloom",
+        "linoone",
+        "kecleon",
+        "wingull",
+        "pelipper",
+        "hypno",
+        "aipom",
+        "elgyem"
+      ]
     },
     {
       "type": "route",
-      "name": "Route 122"
+      "name": "Route 122",
+      "encounters": [
+        "tentacool",
+        "wingull",
+        "pelipper",
+        "finneon",
+        "frillish.alomomola",
+        "magikarp",
+        "wailmer"
+      ]
     },
     {
       "type": "route",
-      "name": "Mt. Pyre"
+      "name": "Mt. Pyre",
+      "encounters": [
+        "shuppet",
+        "duskull",
+        "vulpix",
+        "growlithe",
+        "bronzor",
+        "elgyem",
+        "wingull",
+        "meditite",
+        "chimecho"
+      ]
     },
     {
       "type": "gym",
@@ -273,15 +645,60 @@
     },
     {
       "type": "route",
-      "name": "Route 123"
+      "name": "Route 123",
+      "encounters": [
+        "gloom",
+        "shuppet",
+        "linoone",
+        "kecleon",
+        "wingull",
+        "pelipper",
+        "marill",
+        "azumarill",
+        "surskit",
+        "masquerain",
+        "goldeen",
+        "magikarp",
+        "corphish",
+        "crawdaunt"
+      ]
     },
     {
       "type": "route",
-      "name": "Safari Zone"
+      "name": "Safari Zone",
+      "encounters": [
+        "pikachu",
+        "gloom",
+        "psyduck",
+        "doduo",
+        "xatu",
+        "girafarig",
+        "wobbuffet",
+        "rhyhorn",
+        "donphan",
+        "heracross",
+        "pinsir",
+        "kakuna",
+        "pidgeotto",
+        "buneary",
+        "goldeen",
+        "seaking",
+        "magikarp"
+      ]
     },
     {
       "type": "route",
-      "name": "Lilycove City"
+      "name": "Lilycove City",
+      "encounters": [
+        "pikachu",
+        "graveler",
+        "tentacool",
+        "wingull",
+        "pelipper",
+        "magikarp",
+        "wailmer",
+        "staryu"
+      ]
     },
     {
       "type": "gym",
@@ -292,7 +709,14 @@
     },
     {
       "type": "route",
-      "name": "Team Aqua Hideout"
+      "name": "Team Aqua Hideout",
+      "encounters": [
+        "electrode",
+        "tentacool",
+        "magikarp",
+        "wailmer",
+        "staryu"
+      ]
     },
     {
       "type": "gym",
@@ -303,11 +727,34 @@
     },
     {
       "type": "route",
-      "name": "Route 124"
+      "name": "Route 124",
+      "encounters": [
+        "chinchou",
+        "lanturn",
+        "clamperl",
+        "relicanth",
+        "tentacool",
+        "tentacruel",
+        "pelipper",
+        "finneon",
+        "frillish",
+        "alomomola",
+        "magikarp",
+        "wailmer",
+        ""
+      ]
     },
     {
       "type": "route",
-      "name": "Mossdeep City"
+      "name": "Mossdeep City",
+      "encounters": [
+        "beldum",
+        "tentacool",
+        "tentacruel",
+        "pelipper",
+        "magikarp",
+        "wailmer"
+      ]
     },
     {
       "type": "gym",
@@ -318,23 +765,83 @@
     },
     {
       "type": "route",
-      "name": "Route 125"
+      "name": "Route 125",
+      "encounters": [
+        "tentacool",
+        "tentacruel",
+        "pelipper",
+        "seel",
+        "finneon",
+        "frillish",
+        "magikarp",
+        "wailmer"
+      ]
     },
     {
       "type": "route",
-      "name": "Shoal Cave"
+      "name": "Shoal Cave",
+      "encounters": [
+        "zubat",
+        "golbat",
+        "snorunt",
+        "spheal",
+        "sealeo",
+        "dewgong",
+        "delibird",
+        "cubchoo",
+        "tentacool",
+        "tentacruel",
+        "magikarp",
+        "wailmer",
+        "graveler"
+      ]
     },
     {
       "type": "route",
-      "name": "Route 127"
+      "name": "Route 127",
+      "encounters": [
+        "tentacool",
+        "tentacruel",
+        "pelipper",
+        "finneon",
+        "frillish",
+        "alomomola",
+        "magikarp",
+        "wailmer"
+      ]
     },
     {
       "type": "route",
-      "name": "Route 128"
+      "name": "Route 128",
+      "encounters": [
+        "luvdisc",
+        "corsola",
+        "chinchou",
+        "lanturn",
+        "clamperl",
+        "relicanth",
+        "tentacool",
+        "tentacruel",
+        "pelipper",
+        "finneon",
+        "frillish",
+        "alomomola",
+        "magikarp",
+        "wailmer"
+      ]
     },
     {
       "type": "route",
-      "name": "Seafloor Cavern"
+      "name": "Seafloor Cavern",
+      "encounters": [
+        "zubat",
+        "golbat",
+        "tentacool",
+        "tentacruel",
+        "magikarp",
+        "wailmer",
+        "graveler"
+      ]
     },
     {
       "type": "gym",
@@ -345,11 +852,28 @@
     },
     {
       "type": "route",
-      "name": "Route 126"
+      "name": "Route 126",
+      "encounters": [
+        "chinchou",
+        "lanturn",
+        "clamperl",
+        "relicanth",
+        "tentacool",
+        "tentacruel",
+        "pelipper",
+        "finneon",
+        "frillish.alomomola",
+        "magikarp",
+        "wailmer"
+      ]
     },
     {
       "type": "route",
-      "name": "Sootopolis City"
+      "name": "Sootopolis City",
+      "encounters": [
+        "magikarp",
+        "gyarados"
+      ]
     },
     {
       "type": "gym",
@@ -360,71 +884,246 @@
     },
     {
       "type": "route",
-      "name": "Cave of Origin"
+      "name": "Cave of Origin",
+      "encounters": [
+        "kyogre",
+        "zubat",
+        "golbat",
+        "sableye",
+        "mawile"
+      ]
     },
     {
       "type": "route",
-      "name": "Soaring"
+      "name": "Soaring",
+      "encounters": [
+        "murkrow",
+        "taillow",
+        "wingull",
+        "pelipper",
+        "swablu",
+        "drifloon",
+        "braviary",
+        "dialga",
+        "giratina",
+        "thundurus",
+        "landorus"
+      ]
     },
     {
       "type": "route",
-      "name": "Route 129"
+      "name": "Route 129",
+      "encounters": [
+        "chinchou",
+        "lanturn",
+        "clamperl",
+        "relicanth",
+        "tentacool",
+        "tentacruel",
+        "pelipper",
+        "finneon",
+        "frillish",
+        "alomomola",
+        "magikarp",
+        "wailmer"
+      ]
     },
     {
       "type": "route",
-      "name": "Route 130"
+      "name": "Route 130",
+      "encounters": [
+        "horsea",
+        "seadra",
+        "chinchou",
+        "lanturn",
+        "clamperl",
+        "relicanth",
+        "tentacool",
+        "tentacruel",
+        "pelipper",
+        "finneon",
+        "frillish",
+        "alomomola",
+        "magikarp",
+        "wailmer"
+      ]
     },
     {
       "type": "route",
-      "name": "Route 131"
+      "name": "Route 131",
+      "encounters": [
+        "horsea",
+        "seadra",
+        "tentacool",
+        "tentacruel",
+        "pelipper",
+        "finneon",
+        "frillish",
+        "alomomola",
+        "magikarp",
+        "wailmer"
+      ]
     },
     {
       "type": "route",
-      "name": "Sky Pillar"
+      "name": "Sky Pillar",
+      "encounters": [
+        "rayquaza",
+        "deoxys",
+        "golbat",
+        "ariados",
+        "sableye",
+        "mawile",
+        "claydol",
+        "swablu"
+      ]
     },
     {
       "type": "route",
-      "name": "Pacifidlog Town"
+      "name": "Edge of space",
+      "encounters": [
+        "deoxys"
+      ]
     },
     {
       "type": "route",
-      "name": "Mirage Island"
+      "name": "Pacifidlog Town",
+      "encounters": [
+        "corsola",
+        "tentacool",
+        "tentacruel",
+        "pelipper",
+        "magikarp",
+        "wailmer"
+      ]
     },
     {
       "type": "route",
-      "name": "Route 105"
+      "name": "Mirage Island",
+      "encounters": [
+        "wynaut"
+      ]
     },
     {
       "type": "route",
-      "name": "Route 108"
+      "name": "Route 108",
+      "encounters": [
+        "tentacool",
+        "wingull",
+        "pelipper",
+        "krabby",
+        "frillish",
+        "skrelp",
+        "clauncher",
+        "magikarp",
+        "wailmer"
+      ]
     },
     {
       "type": "route",
-      "name": "Abandoned Ship"
+      "name": "Abandoned Ship",
+      "encounters": [
+        "tentacool",
+        "tentacruel",
+        "magikarp"
+      ]
     },
     {
       "type": "route",
-      "name": "Route 109"
+      "name": "Route 109",
+      "encounters": [
+        "tentacool",
+        "wingull",
+        "pelipper",
+        "krabby",
+        "frillish",
+        "skrelp",
+        "clauncher",
+        "magikarp",
+        "wailmer"
+      ]
     },
     {
       "type": "route",
-      "name": "Route 132"
+      "name": "Route 132",
+      "encounters": [
+        "horsea",
+        "seadra",
+        "tentacool",
+        "tentacruel",
+        "pelipper",
+        "finneon",
+        "frillish",
+        "alomomola",
+        "magikarp",
+        "wailmer"
+      ]
     },
     {
       "type": "route",
-      "name": "Route 133"
+      "name": "Route 133",
+      "encounters": [
+        "horsea",
+        "seadra",
+        "tentacool",
+        "tentacruel",
+        "pelipper",
+        "finneon",
+        "frillish",
+        "alomomola",
+        "magikarp",
+        "wailmer"
+      ]
     },
     {
       "type": "route",
-      "name": "Route 134"
+      "name": "Route 134",
+      "encounters": [
+        "horsea",
+        "seadra",
+        "tentacool",
+        "tentacruel",
+        "pelipper",
+        "finneon",
+        "frillish",
+        "alomomola",
+        "magikarp",
+        "wailmer"
+      ]
     },
     {
       "type": "route",
-      "name": "Ever Grande City"
+      "name": "Ever Grande City",
+      "encounters": [
+        "luvdisc",
+        "corsola",
+        "tentacool",
+        "tentacruel",
+        "pelipper",
+        "magikarp",
+        "wailmer"
+      ]
     },
     {
       "type": "route",
-      "name": "Victory Road"
+      "name": "Victory Road",
+      "encounters": [
+        "zubat",
+        "golbat",
+        "loudred",
+        "hariyama",
+        "sableye",
+        "mawile",
+        "aron",
+        "lairon",
+        "medicham",
+        "tentacool",
+        "tentacruel",
+        "magikarp",
+        "wailmer",
+        "luvdisc",
+        "barboach"
+      ]
     },
     {
       "type": "gym",
@@ -978,27 +1677,78 @@
   "bdsp": [
     {
       "type": "route",
-      "name": "Starter"
+      "name": "Starter",
+      "encounters": [
+        "piplup",
+        "chimchar",
+        "turtwig"
+      ]
     },
     {
       "type": "route",
-      "name": "Twinleaf Town"
+      "name": "Twinleaf Town",
+      "encounters": [
+        "psyduck",
+        "golduck",
+        "magikarp",
+        "gyarados"
+      ]
     },
     {
       "type": "route",
-      "name": "Route 201"
+      "name": "Route 201",
+      "encounters": [
+        "starly",
+        "bidoof",
+        "doduo",
+        "nidoran-female",
+        "nidoran-male"
+      ]
     },
     {
       "type": "route",
-      "name": "Lake Verity"
+      "name": "Lake Verity",
+      "encounters": [
+        "starly",
+        "bidoof",
+        "psyduck",
+        "golduck",
+        "magikarp",
+        "gyarados",
+        "surskit",
+        "wobbuffet"
+      ]
     },
     {
       "type": "route",
-      "name": "Route 202"
+      "name": "Route 202",
+      "encounters": [
+        "starly",
+        "bidoof",
+        "kricketot",
+        "shinx",
+        "zigzagoon",
+        "sentret"
+      ]
     },
     {
       "type": "route",
-      "name": "Route 203"
+      "name": "Route 203",
+      "encounters": [
+        "zubat",
+        "abra",
+        "starly",
+        "bidoof",
+        "kricketot",
+        "shinx",
+        "psyduck",
+        "golduck",
+        "magikarp",
+        "gyarados",
+        "cubone",
+        "ralts",
+        "kirlia"
+      ]
     },
     {
       "type": "gym",
@@ -1009,11 +1759,25 @@
     },
     {
       "type": "route",
-      "name": "Oreburgh Gate"
+      "name": "Oreburgh Gate",
+      "encounters": [
+        "zubat",
+        "golbat",
+        "geodude",
+        "psyduck",
+        "golduck",
+        "magikarp",
+        "gyarados",
+        "barboach",
+        "whiscash"
+      ]
     },
     {
       "type": "route",
-      "name": "Oreburgh City"
+      "name": "Oreburgh City",
+      "encounters": [
+        "abra"
+      ]
     },
     {
       "type": "gym",
@@ -1024,31 +1788,115 @@
     },
     {
       "type": "route",
-      "name": "Oreburgh Mine"
+      "name": "Oreburgh Mine",
+      "encounters": [
+        "zubat",
+        "geodude",
+        "onix"
+      ]
     },
     {
       "type": "route",
-      "name": "Route 207"
+      "name": "Route 207",
+      "encounters": [
+        "zubat",
+        "machop",
+        "geodude",
+        "kricketot",
+        "phanpy",
+        "stantler",
+        "larvitar"
+      ]
     },
     {
       "type": "route",
-      "name": "Route 204"
+      "name": "Route 204",
+      "encounters": [
+        "zubat",
+        "starly",
+        "bidoof",
+        "kricketot",
+        "shinx",
+        "budex",
+        "psyduck",
+        "golduck",
+        "magikarp",
+        "gyarados",
+        "goldeen",
+        "ralts"
+      ]
     },
     {
       "type": "route",
-      "name": "Ravaged Path"
+      "name": "Ravaged Path",
+      "encounters": [
+        "zubat",
+        "golbat",
+        "geodude",
+        "psyduck",
+        "golduck",
+        "magikarp",
+        "gyarados",
+        "barboach",
+        "whiscash"
+      ]
     },
     {
       "type": "route",
-      "name": "Floaroma Meadow"
+      "name": "Floaroma Meadow",
+      "encounters": [
+        "aipom",
+        "heracross",
+        "wurmple",
+        "silcoon",
+        "cascoon",
+        "burmy",
+        "combee",
+        "cherubi",
+        "munchlax"
+      ]
     },
     {
       "type": "route",
-      "name": "Route 205"
+      "name": "Route 205",
+      "encounters": [
+        "bidoof",
+        "pachirisu",
+        "buizel",
+        "shellos",
+        "tentacool",
+        "tentacruel",
+        "wingull",
+        "pelipper",
+        "magikarp",
+        "gyarados",
+        "finneon",
+        "lumineon",
+        "shellder",
+        "hoppip"
+      ]
     },
     {
       "type": "route",
-      "name": "Valley Windworks"
+      "name": "Valley Windworks",
+      "encounters": [
+        "drifloon",
+        "bidoof",
+        "pachirisu",
+        "buizel",
+        "shellos",
+        "tentacruel",
+        "tentacruel",
+        "wingull",
+        "pelipper",
+        "magikarp",
+        "gyarados",
+        "finneon",
+        "lumineon",
+        "shellder",
+        "electrike",
+        "mareep"
+      ]
     },
     {
       "type": "gym",
@@ -1059,15 +1907,40 @@
     },
     {
       "type": "route",
-      "name": "Eterna Forest"
+      "name": "Eterna Forest",
+      "encounters": [
+        "murkrow",
+        "misdreavus",
+        "wurmple",
+        "silcoon",
+        "beautifly",
+        "cascoon",
+        "dustox",
+        "budew",
+        "buneary",
+        "slakoth",
+        "nincada"
+      ]
     },
     {
       "type": "route",
-      "name": "The Old Chateau"
+      "name": "The Old Chateau",
+      "encounters": [
+        "gastly",
+        "rotom"
+      ]
     },
     {
       "type": "route",
-      "name": "Eterna City"
+      "name": "Eterna City",
+      "encounters": [
+        "psyduck",
+        "golduck",
+        "magikarp",
+        "gyarados",
+        "barboach",
+        "whiscash"
+      ]
     },
     {
       "type": "gym",
@@ -1149,23 +2022,86 @@
     },
     {
       "type": "route",
-      "name": "Route 206"
+      "name": "Route 206",
+      "encounters": [
+        "zubat",
+        "geodude",
+        "ponyta",
+        "kricketot",
+        "kricketune",
+        "stunky",
+        "bronzor",
+        "nosepass",
+        "baltoy"
+      ]
     },
     {
       "type": "route",
-      "name": "Wayward Cave"
+      "name": "Wayward Cave",
+      "encounters": [
+        "zubat",
+        "geodude",
+        "bronzor",
+        "gible"
+      ]
     },
     {
       "type": "route",
-      "name": "Mt. Coronet"
+      "name": "Mt. Coronet",
+      "encounters": [
+        "zubat",
+        "golbat",
+        "machop",
+        "machoke",
+        "geodude",
+        "graveler",
+        "meditite",
+        "medicham",
+        "cleffa",
+        "clefairy",
+        "bronzor",
+        "bronzong",
+        "chimecho",
+        "chingling",
+        "noctowl",
+        "snover",
+        "abomasnow",
+        "loudred",
+        "magikarp",
+        "gyarados",
+        "barboach",
+        "whiscash",
+        "dratini",
+        "dragonair"
+      ]
     },
     {
       "type": "route",
-      "name": "Route 208"
+      "name": "Route 208",
+      "encounters": [
+        "zubat",
+        "psyduck",
+        "machop",
+        "meditite",
+        "bidoof",
+        "bibarel",
+        "psyduck",
+        "golduck",
+        "magikarp",
+        "gyarados",
+        "barboach",
+        "whiscash",
+        "dunsparce",
+        "tyrogue"
+      ]
     },
     {
       "type": "route",
-      "name": "Hearthome City"
+      "name": "Hearthome City",
+      "encounters": [
+        "eevee",
+        "happiny"
+      ]
     },
     {
       "type": "gym",
@@ -1176,27 +2112,86 @@
     },
     {
       "type": "route",
-      "name": "Route 209"
+      "name": "Route 209",
+      "encounters": [
+        "zubat",
+        "gastly",
+        "chansey",
+        "starly",
+        "staravia",
+        "bibarel",
+        "bonsly",
+        "mime-jr",
+        "psyduck",
+        "golduck",
+        "magikarp",
+        "gyarados",
+        "goldeen",
+        "seaking",
+        "snubbull",
+        "tauros",
+        "miltank"
+      ]
     },
     {
       "type": "route",
-      "name": "The Lost Tower"
+      "name": "The Lost Tower",
+      "encounters": [
+        "zubat",
+        "golbat",
+        "gastly",
+        "murkrow",
+        "misdreavus"
+      ]
     },
     {
       "type": "route",
-      "name": "Solaceon Ruins"
+      "name": "Solaceon Ruins",
+      "encounters": [
+        "unown"
+      ]
     },
     {
       "type": "route",
-      "name": "Route 210"
+      "name": "Route 210",
+      "encounters": [
+        "geodude",
+        "machop",
+        "machoke",
+        "hoothoot",
+        "noctowl",
+        "meditite",
+        "bibarel",
+        "ponyta",
+        "chansey",
+        "kricketune",
+        "bonsly",
+        "mime-jr",
+        "tauros",
+        "miltank",
+        "psyduck",
+        "golduck",
+        "barboach",
+        "whiscash",
+        "magikarp",
+        "gyarados",
+        "kecleon",
+        "bagon"
+      ]
     },
     {
       "type": "route",
-      "name": "Route 215"
-    },
-    {
-      "type": "route",
-      "name": "Veilstone City"
+      "name": "Route 215",
+      "encounters": [
+        "abra",
+        "kadabra",
+        "geodude",
+        "ponyta",
+        "kricketune",
+        "drowzee",
+        "houndoom",
+        "mightyena"
+      ]
     },
     {
       "type": "gym",
@@ -1207,15 +2202,50 @@
     },
     {
       "type": "route",
-      "name": "Trophy Garden"
+      "name": "Trophy Garden",
+      "encounters": [
+        "pikachu",
+        "pichu",
+        "roselia",
+        "staravia",
+        "kricketune"
+      ]
     },
     {
       "type": "route",
-      "name": "Pastoria City"
+      "name": "Pastoria City",
+      "encounters": [
+        "tentacool",
+        "tentacruel",
+        "wingull",
+        "pelipper",
+        "magikarp",
+        "gyarados",
+        "remoraid",
+        "octillery"
+      ]
     },
     {
       "type": "route",
-      "name": "Great Marsh"
+      "name": "Great Marsh",
+      "encounters": [
+        "psyduck",
+        "hoothoot",
+        "noctowl",
+        "azurill",
+        "marill",
+        "wooper",
+        "quagsire",
+        "starly",
+        "bidoofy",
+        "bibarel",
+        "budew",
+        "magikarp",
+        "gyarados",
+        "barboach",
+        "whiscash",
+        "carvanha"
+      ]
     },
     {
       "type": "gym",
@@ -1233,35 +2263,114 @@
     },
     {
       "type": "route",
-      "name": "Route 212"
+      "name": "Route 212",
+      "encounters": [
+        "wooper",
+        "quagsire",
+        "roselia",
+        "bibarel",
+        "starly",
+        "staravia",
+        "kricketune",
+        "budew",
+        "psyduck",
+        "golduck",
+        "magikarp",
+        "gyarados",
+        "smeagle",
+        "grimer"
+      ]
     },
     {
       "type": "route",
-      "name": "Route 213"
+      "name": "Route 213",
+      "encounters": [
+        "wingull",
+        "buizel",
+        "floatzel",
+        "shellos",
+        "tentacool",
+        "tentacruel",
+        "wingull",
+        "pelipper",
+        "magikarp",
+        "gyarados",
+        "remoraid",
+        "octillery",
+        "sharpedo",
+        "absol",
+        "swellow"
+      ]
     },
     {
       "type": "route",
-      "name": "Valor Lakefront"
+      "name": "Valor Lakefront",
+      "encounters": [
+        "geodude",
+        "graveler",
+        "girafarig",
+        "staravia",
+        "bibarel",
+        "kricketune",
+        "nidorina",
+        "nidorino"
+      ]
     },
     {
       "type": "route",
-      "name": "Lake Valor"
+      "name": "Lake Valor",
+      "encounters": [
+        "azelf",
+        "psyduck",
+        "golduck",
+        "noctowl",
+        "staravia",
+        "bibarel",
+        "chingling",
+        "magikarp",
+        "gyarados",
+        "goldeen",
+        "seaking",
+        "lickitung",
+        "wobbuffet"
+      ]
     },
     {
       "type": "route",
-      "name": "Route 214"
+      "name": "Route 214",
+      "encounters": [
+        "geodude",
+        "graveler",
+        "ponyta",
+        "sudowoodo",
+        "girafarig",
+        "kricketune",
+        "stunky",
+        "magikarp",
+        "goldeen"
+      ]
     },
     {
       "type": "route",
-      "name": "Ruin Maniac's Cave"
+      "name": "Ruin Maniac's Cave",
+      "encounters": [
+        "geodude",
+        "hippopotas"
+      ]
     },
     {
       "type": "route",
-      "name": "Ruin Maniac's Tunnel"
-    },
-    {
-      "type": "route",
-      "name": "Celestic Town"
+      "name": "Celestic Town",
+      "encounters": [
+        "psyduck",
+        "goldeen",
+        "magikarp",
+        "gyarados",
+        "barboach",
+        "whiscash",
+        "corphish",
+        "crawdaunt"
+      ]
     },
     {
       "type": "gym",
@@ -1272,27 +2381,108 @@
     },
     {
       "type": "route",
-      "name": "Fuego Ironworks"
+      "name": "Fuego Ironworks",
+      "encounters": [
+        "shinx",
+        "luxio",
+        "pachirisu",
+        "floatzel",
+        "shellos",
+        "gastrodon",
+        "tentacool",
+        "tentacruel",
+        "wingull",
+        "pelipper",
+        "magikarp",
+        "gyarados",
+        "finneon",
+        "lumineon",
+        "shellder",
+        "magnemite",
+        "hoppip",
+        "skiploom",
+        "aron"
+      ]
     },
     {
       "type": "route",
-      "name": "Routes 219"
+      "name": "Routes 219",
+      "encounters": [
+        "tentacool",
+        "tentacruel",
+        "wingull",
+        "pelipper",
+        "magikarp",
+        "gyarados",
+        "finneon",
+        "clamperl",
+        "lumineon"
+      ]
     },
     {
       "type": "route",
-      "name": "Route 220"
+      "name": "Route 220",
+      "encounters": [
+        "tentacool",
+        "tentacruel",
+        "wingull",
+        "pelipper",
+        "magikarp",
+        "gyarados",
+        "finneon",
+        "lumineon",
+        "chinchou"
+      ]
     },
     {
       "type": "route",
-      "name": "Route 221"
+      "name": "Route 221",
+      "encounters": [
+        "sudowoodo",
+        "wingull",
+        "roselia",
+        "floatzel",
+        "shellos",
+        "gastrodon",
+        "stunky",
+        "skuntank",
+        "te"
+      ]
     },
     {
       "type": "route",
-      "name": "Route 218"
+      "name": "Route 218",
+      "encounters": [
+        "mr-mime",
+        "floatzel",
+        "shellos",
+        "gastrodon",
+        "glameow",
+        "tentacool",
+        "wingull",
+        "pelipper",
+        "magikarp",
+        "gyarados",
+        "finneon",
+        "lumineon",
+        "voltorb",
+        "ditto"
+      ]
     },
     {
       "type": "route",
-      "name": "Canalave City"
+      "name": "Canalave City",
+      "encounters": [
+        "tentacool",
+        "tentacruel",
+        "wingull",
+        "pelipper",
+        "magikarp",
+        "gyarados",
+        "finneon",
+        "lumineon",
+        "staryu"
+      ]
     },
     {
       "type": "gym",
@@ -1303,7 +2493,25 @@
     },
     {
       "type": "route",
-      "name": "Iron Island"
+      "name": "Iron Island",
+      "encounters": [
+        "riolu",
+        "zubat",
+        "golbat",
+        "geodude",
+        "graveler",
+        "onix",
+        "steelix",
+        "tentacool",
+        "tentacruel",
+        "wingull",
+        "pelipper",
+        "magikarp",
+        "gyarados",
+        "finneon",
+        "lumineon",
+        "qwillfish"
+      ]
     },
     {
       "type": "gym",
@@ -1314,7 +2522,21 @@
     },
     {
       "type": "route",
-      "name": "Route 211"
+      "name": "Route 211",
+      "encounters": [
+        "zubat",
+        "machoke",
+        "geodude",
+        "graveler",
+        "ponyta",
+        "hoothoot",
+        "noctowl",
+        "meditite",
+        "bidoof",
+        "chingling",
+        "tyrogue",
+        "swablu"
+      ]
     },
     {
       "type": "gym",
@@ -1332,23 +2554,65 @@
     },
     {
       "type": "route",
-      "name": "Route 216"
+      "name": "Route 216",
+      "encounters": [
+        "zubat",
+        "machoke",
+        "graveler",
+        "noctowl",
+        "sneasel",
+        "meditite",
+        "snover",
+        "delibird",
+        "snorunt"
+      ]
     },
     {
       "type": "route",
-      "name": "Route 217"
+      "name": "Route 217",
+      "encounters": [
+        "zubat",
+        "machoke",
+        "noctowl",
+        "sneasel",
+        "meditite",
+        "medicham",
+        "snover",
+        "swinub",
+        "snorunt"
+      ]
     },
     {
       "type": "route",
-      "name": "Acuity Lakefront"
+      "name": "Acuity Lakefront",
+      "encounters": [
+        "zubat",
+        "machoke",
+        "noctowl",
+        "sneasel",
+        "meditite",
+        "medicham",
+        "snover",
+        "snorunt"
+      ]
     },
     {
       "type": "route",
-      "name": "Lake Acuity"
+      "name": "Lake Acuity",
+      "encounters": [
+        "uxie"
+      ]
     },
     {
       "type": "route",
-      "name": "Snowpoint Temple"
+      "name": "Snowpoint Temple",
+      "encounters": [
+        "golbat",
+        "graveler",
+        "onix",
+        "steelix",
+        "sneasel"
+      ]
     },
     {
       "type": "gym",
@@ -1387,11 +2651,41 @@
     },
     {
       "type": "route",
-      "name": "Route 222"
+      "name": "Route 222",
+      "encounters": [
+        "mr-mime",
+        "floatzel",
+        "gastrodon",
+        "glameow",
+        "purugly",
+        "chatot",
+        "tentacool",
+        "tentacruel",
+        "wingull",
+        "pelipper",
+        "magikarp",
+        "gyarados",
+        "remoraid",
+        "octillery",
+        "sharpedo",
+        "skitty",
+        "flaafy"
+      ]
     },
     {
       "type": "route",
-      "name": "Sunyshore City"
+      "name": "Sunyshore City",
+      "encounters": [
+        "mantyke",
+        "tentacruel",
+        "pelipper",
+        "magikarp",
+        "gyarados",
+        "remoraid",
+        "octillery",
+        "sharpedo",
+        "staryu"
+      ]
     },
     {
       "type": "gym",
@@ -1402,11 +2696,49 @@
     },
     {
       "type": "route",
-      "name": "Route 223"
+      "name": "Route 223",
+      "encounters": [
+        "mantyke",
+        "wailmer",
+        "wailord",
+        "tentacruel",
+        "pelipper",
+        "magikarp",
+        "gyarados",
+        "remoraid",
+        "octillery",
+        "sharpedo"
+      ]
     },
     {
       "type": "route",
-      "name": "Pokémon League"
+      "name": "Victory Road",
+      "encounters": [
+        "lapras",
+        "golbat",
+        "machoke",
+        "graveler",
+        "onix",
+        "steelix",
+        "medicham",
+        "kadabra",
+        "floatzel",
+        "magikarp",
+        "gyarados"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Pokémon League",
+      "encounters": [
+        "tentacruel",
+        "pelipper",
+        "magikarp",
+        "gyarados",
+        "remoraid",
+        "octillery",
+        "luvdisc"
+      ]
     },
     {
       "type": "gym",
@@ -1414,10 +2746,6 @@
       "value": "b5",
       "group": "rival",
       "boss": "Barry"
-    },
-    {
-      "type": "route",
-      "name": "Victory Road"
     },
     {
       "type": "gym",
@@ -3820,23 +5148,62 @@
   "or": [
     {
       "type": "route",
-      "name": "Starter"
+      "name": "Starter",
+      "encounters": [
+        "torchic",
+        "treecko",
+        "mudkip"
+      ]
     },
     {
       "type": "route",
-      "name": "Littleroot Town"
+      "name": "Route 101",
+      "encounters": [
+        "poochyena",
+        "zigzagoon",
+        "wurmple",
+        "lillipup",
+        "sewaddle",
+        "zorua"
+      ]
     },
     {
       "type": "route",
-      "name": "Route 101"
+      "name": "Route 102",
+      "encounters": [
+        "poochyena",
+        "zigzagoon",
+        "wurmple",
+        "lotad",
+        "seedot",
+        "ralts",
+        "lillipup",
+        "tympole",
+        "gothita",
+        "goldeen",
+        "magikarp",
+        "marill",
+        "azumarill",
+        "surskit",
+        "masquerain"
+      ]
     },
     {
       "type": "route",
-      "name": "Route 102"
-    },
-    {
-      "type": "route",
-      "name": "Route 103"
+      "name": "Route 103",
+      "encounters": [
+        "poochyena",
+        "zigzagoon",
+        "wingull",
+        "shellos",
+        "chatot",
+        "lillipup",
+        "tentacool",
+        "wingull",
+        "pelipper",
+        "magikarp",
+        "wailmer"
+      ]
     },
     {
       "type": "gym",
@@ -3847,19 +5214,54 @@
     },
     {
       "type": "route",
-      "name": "Petalburg City"
+      "name": "Petalburg City",
+      "encounters": [
+        "marill",
+        "azumarill",
+        "surskit",
+        "masquerain",
+        "goldeen",
+        "magikarp",
+        "corphish"
+      ]
     },
     {
       "type": "route",
-      "name": "Route 104"
+      "name": "Route 104",
+      "encounters": [
+        "zigzagoon",
+        "wurmple",
+        "taillow",
+        "wingull",
+        "pelipper",
+        "chatot",
+        "pidove",
+        "sewaddle",
+        "magikarp"
+      ]
     },
     {
       "type": "route",
-      "name": "Petalburg Woods"
+      "name": "Petalburg Woods",
+      "encounters": [
+        "zigzagoon",
+        "wurmple",
+        "silcoon",
+        "cascoon",
+        "taillow",
+        "shroomish",
+        "slakoth",
+        "paras",
+        "cottonee",
+        "phantump"
+      ]
     },
     {
       "type": "route",
-      "name": "Rustboro City"
+      "name": "Rustboro City",
+      "encounters": [
+        "makuhita"
+      ]
     },
     {
       "type": "gym",
@@ -3870,19 +5272,51 @@
     },
     {
       "type": "route",
-      "name": "Route 105"
+      "name": "Route 105",
+      "encounters": [
+        "tentacool",
+        "wingull",
+        "pelipper",
+        "krabby",
+        "frillish",
+        "skrelp",
+        "clauncher",
+        "magikarp",
+        "wailmer"
+      ]
     },
     {
       "type": "route",
-      "name": "Route 116"
+      "name": "Route 116",
+      "encounters": [
+        "zigzagoon",
+        "taillow",
+        "nincada",
+        "whismur",
+        "skitty",
+        "eevee",
+        "pidove",
+        "joltik"
+      ]
     },
     {
       "type": "route",
-      "name": "Rusturf Tunnel"
+      "name": "Rusturf Tunnel",
+      "encounters": [
+        "whismur",
+        "geodude"
+      ]
     },
     {
       "type": "route",
-      "name": "Dewford Town"
+      "name": "Dewford Town",
+      "encounters": [
+        "tentacool",
+        "wingull",
+        "pelipper",
+        "magikarp",
+        "wailmer"
+      ]
     },
     {
       "type": "gym",
@@ -3893,23 +5327,86 @@
     },
     {
       "type": "route",
-      "name": "Route 106"
+      "name": "Route 106",
+      "encounters": [
+        "tentacool",
+        "wingull",
+        "pelipper",
+        "krabby",
+        "frillish",
+        "skrelp",
+        "clauncher",
+        "magikarp",
+        "wailmer"
+      ]
     },
     {
       "type": "route",
-      "name": "Granite Cave"
+      "name": "Granite Cave",
+      "encounters": [
+        "zubat",
+        "abra",
+        "geodude",
+        "makuhita",
+        "aron",
+        "mawile",
+        "sableye",
+        "onix",
+        "timbubrr",
+        "axew",
+        "nosepass"
+      ]
     },
     {
       "type": "route",
-      "name": "Route 107"
+      "name": "Route 107",
+      "encounters": [
+        "tentacool",
+        "wingull",
+        "pelipper",
+        "krabby",
+        "frillish",
+        "skrelp",
+        "clauncher",
+        "magikarp",
+        "wailmer",
+        "chinchou",
+        "lanturn",
+        "clamperl",
+        "relicanth"
+      ]
     },
     {
       "type": "route",
-      "name": "Slateport City"
+      "name": "Slateport City",
+      "encounters": [
+        "tentacool",
+        "wingull",
+        "pelipper",
+        "magikarp",
+        "wailmer",
+        "pikachu"
+      ]
     },
     {
       "type": "route",
-      "name": "Route 110"
+      "name": "Route 110",
+      "encounters": [
+        "electrike",
+        "zigzagoon",
+        "gulpin",
+        "oddish",
+        "wingull",
+        "minun",
+        "plusle",
+        "voltorb",
+        "magnemite",
+        "shellos",
+        "trubbish",
+        "chatot",
+        "magikarp",
+        "wailmer"
+      ]
     },
     {
       "type": "gym",
@@ -3920,11 +5417,11 @@
     },
     {
       "type": "route",
-      "name": "Altering Cave"
-    },
-    {
-      "type": "route",
-      "name": "New Mauville"
+      "name": "New Mauville",
+      "encounters": [
+        "magnemite",
+        "voltorb"
+      ]
     },
     {
       "type": "gym",
@@ -3942,31 +5439,127 @@
     },
     {
       "type": "route",
-      "name": "Route 117"
+      "name": "Route 117",
+      "encounters": [
+        "oddish",
+        "marill",
+        "zigzagoon",
+        "surskit",
+        "masquerain",
+        "volbeat",
+        "illumise",
+        "roselia",
+        "rattata",
+        "tympole",
+        "deerling",
+        "goldeen",
+        "magikarp",
+        "crawdaunt"
+      ]
     },
     {
       "type": "route",
-      "name": "Route 111"
+      "name": "Route 111",
+      "encounters": [
+        "geodude",
+        "marill",
+        "azumarill",
+        "surskit",
+        "masquerain",
+        "sandshrew",
+        "trapinch",
+        "cacnea",
+        "baltoy",
+        "gible",
+        "sandile",
+        "dwebble",
+        "goldeen",
+        "magikarp",
+        "barboach",
+        ""
+      ]
     },
     {
       "type": "route",
-      "name": "Route 112"
+      "name": "Route 112",
+      "encounters": [
+        "machop",
+        "tyrogue",
+        "numel",
+        "ponyta",
+        "sawk",
+        "throh"
+      ]
     },
     {
       "type": "route",
-      "name": "Fiery Path"
+      "name": "Fiery Path",
+      "encounters": [
+        "machop",
+        "grimer",
+        "koffing",
+        "slugma",
+        "numel",
+        "torkoal",
+        "diglett",
+        "tyrogue",
+        "roggenrola"
+      ]
     },
     {
       "type": "route",
-      "name": "Route 113"
+      "name": "Route 113",
+      "encounters": [
+        "spinda",
+        "sandshrew",
+        "skarmory",
+        "scraggy",
+        "bouffalant",
+        "klefki"
+      ]
     },
     {
       "type": "route",
-      "name": "Route 114"
+      "name": "Route 114",
+      "encounters": [
+        "lotad",
+        "lombre",
+        "seedot",
+        "nuzleaf",
+        "surskit",
+        "masquerain",
+        "swablu",
+        "zangoose",
+        "seviper",
+        "misdreavus",
+        "skorupi",
+        "tympole",
+        "marill",
+        "azumarill",
+        "goldeen",
+        "magikarp",
+        "barboach",
+        "geodude"
+      ]
     },
     {
       "type": "route",
-      "name": "Meteor Falls"
+      "name": "Meteor Falls",
+      "encounters": [
+        "zubat",
+        "lunatone",
+        "solrock",
+        "clefairy",
+        "bagon",
+        "druddigon",
+        "deino",
+        "zubat",
+        "golbat",
+        "goldeen",
+        "magikarp",
+        "barboach",
+        "whiscash"
+      ]
     },
     {
       "type": "gym",
@@ -3977,7 +5570,20 @@
     },
     {
       "type": "route",
-      "name": "Route 115"
+      "name": "Route 115",
+      "encounters": [
+        "jigglypuff",
+        "taillow",
+        "wingull",
+        "pelipper",
+        "swablu",
+        "pidove",
+        "misdreavus",
+        "clefairy",
+        "tentacool",
+        "magikarp",
+        "wailmer"
+      ]
     },
     {
       "type": "gym",
@@ -3995,11 +5601,24 @@
     },
     {
       "type": "route",
-      "name": "Jagged Pass"
+      "name": "Jagged Pass",
+      "encounters": [
+        "machop",
+        "numel",
+        "spoink",
+        "mankey",
+        "ponyta",
+        "tyrogue"
+      ]
     },
     {
       "type": "route",
-      "name": "Lavaridge Town"
+      "name": "Lavaridge Town",
+      "encounters": [
+        "togepi",
+        "wynaut",
+        "kecleon"
+      ]
     },
     {
       "type": "gym",
@@ -4017,11 +5636,29 @@
     },
     {
       "type": "route",
-      "name": "Route 118"
+      "name": "Route 118",
+      "encounters": [
+        "linoone",
+        "wingull",
+        "pelipper",
+        "electrike",
+        "kecleon",
+        "raticate",
+        "aipom",
+        "luxio",
+        "tentacool",
+        "magikarp",
+        "carvanha",
+        "sharpedo"
+      ]
     },
     {
       "type": "route",
-      "name": "Southern Island"
+      "name": "Southern Island",
+      "encounters": [
+        "latias",
+        "latios"
+      ]
     },
     {
       "type": "gym",
@@ -4032,7 +5669,21 @@
     },
     {
       "type": "route",
-      "name": "Route 119"
+      "name": "Route 119",
+      "encounters": [
+        "oddish",
+        "gloom",
+        "linoone",
+        "kecleon",
+        "tropius",
+        "feebas",
+        "carvanha",
+        "sharpedo",
+        "tentacool",
+        "wingull",
+        "pelipper",
+        "magikarp"
+      ]
     },
     {
       "type": "gym",
@@ -4050,7 +5701,10 @@
     },
     {
       "type": "route",
-      "name": "Fortree City"
+      "name": "Fortree City",
+      "encounters": [
+        "skitty"
+      ]
     },
     {
       "type": "gym",
@@ -4068,19 +5722,65 @@
     },
     {
       "type": "route",
-      "name": "Route 120"
+      "name": "Route 120",
+      "encounters": [
+        "oddish",
+        "gloom",
+        "linoone",
+        "kecleon",
+        "tropius",
+        "absol",
+        "marill",
+        "azumarill",
+        "surskit",
+        "masquerain",
+        "tentacool",
+        "magikarp",
+        "barboach"
+      ]
     },
     {
       "type": "route",
-      "name": "Route 121"
+      "name": "Route 121",
+      "encounters": [
+        "shuppet",
+        "gloom",
+        "linoone",
+        "kecleon",
+        "wingull",
+        "pelipper",
+        "hypno",
+        "aipom",
+        "elgyem"
+      ]
     },
     {
       "type": "route",
-      "name": "Route 122"
+      "name": "Route 122",
+      "encounters": [
+        "tentacool",
+        "wingull",
+        "pelipper",
+        "finneon",
+        "frillish.alomomola",
+        "magikarp",
+        "wailmer"
+      ]
     },
     {
       "type": "route",
-      "name": "Mt. Pyre"
+      "name": "Mt. Pyre",
+      "encounters": [
+        "shuppet",
+        "duskull",
+        "vulpix",
+        "growlithe",
+        "bronzor",
+        "elgyem",
+        "wingull",
+        "meditite",
+        "chimecho"
+      ]
     },
     {
       "type": "gym",
@@ -4091,15 +5791,60 @@
     },
     {
       "type": "route",
-      "name": "Route 123"
+      "name": "Route 123",
+      "encounters": [
+        "gloom",
+        "shuppet",
+        "linoone",
+        "kecleon",
+        "wingull",
+        "pelipper",
+        "marill",
+        "azumarill",
+        "surskit",
+        "masquerain",
+        "goldeen",
+        "magikarp",
+        "corphish",
+        "crawdaunt"
+      ]
     },
     {
       "type": "route",
-      "name": "Safari Zone"
+      "name": "Safari Zone",
+      "encounters": [
+        "pikachu",
+        "gloom",
+        "psyduck",
+        "doduo",
+        "xatu",
+        "girafarig",
+        "wobbuffet",
+        "rhyhorn",
+        "donphan",
+        "heracross",
+        "pinsir",
+        "kakuna",
+        "pidgeotto",
+        "buneary",
+        "goldeen",
+        "seaking",
+        "magikarp"
+      ]
     },
     {
       "type": "route",
-      "name": "Lilycove City"
+      "name": "Lilycove City",
+      "encounters": [
+        "pikachu",
+        "graveler",
+        "tentacool",
+        "wingull",
+        "pelipper",
+        "magikarp",
+        "wailmer",
+        "staryu"
+      ]
     },
     {
       "type": "gym",
@@ -4110,7 +5855,14 @@
     },
     {
       "type": "route",
-      "name": "Team Magma Hideout"
+      "name": "Team Magma Hideout",
+      "encounters": [
+        "electrode",
+        "tentacool",
+        "magikarp",
+        "wailmer",
+        "staryu"
+      ]
     },
     {
       "type": "gym",
@@ -4121,11 +5873,34 @@
     },
     {
       "type": "route",
-      "name": "Route 124"
+      "name": "Route 124",
+      "encounters": [
+        "chinchou",
+        "lanturn",
+        "clamperl",
+        "relicanth",
+        "tentacool",
+        "tentacruel",
+        "pelipper",
+        "finneon",
+        "frillish",
+        "alomomola",
+        "magikarp",
+        "wailmer",
+        ""
+      ]
     },
     {
       "type": "route",
-      "name": "Mossdeep City"
+      "name": "Mossdeep City",
+      "encounters": [
+        "beldum",
+        "tentacool",
+        "tentacruel",
+        "pelipper",
+        "magikarp",
+        "wailmer"
+      ]
     },
     {
       "type": "gym",
@@ -4136,23 +5911,83 @@
     },
     {
       "type": "route",
-      "name": "Route 125"
+      "name": "Route 125",
+      "encounters": [
+        "tentacool",
+        "tentacruel",
+        "pelipper",
+        "seel",
+        "finneon",
+        "frillish",
+        "magikarp",
+        "wailmer"
+      ]
     },
     {
       "type": "route",
-      "name": "Shoal Cave"
+      "name": "Shoal Cave",
+      "encounters": [
+        "zubat",
+        "golbat",
+        "snorunt",
+        "spheal",
+        "sealeo",
+        "dewgong",
+        "delibird",
+        "cubchoo",
+        "tentacool",
+        "tentacruel",
+        "magikarp",
+        "wailmer",
+        "graveler"
+      ]
     },
     {
       "type": "route",
-      "name": "Route 127"
+      "name": "Route 127",
+      "encounters": [
+        "tentacool",
+        "tentacruel",
+        "pelipper",
+        "finneon",
+        "frillish",
+        "alomomola",
+        "magikarp",
+        "wailmer"
+      ]
     },
     {
       "type": "route",
-      "name": "Route 128"
+      "name": "Route 128",
+      "encounters": [
+        "luvdisc",
+        "corsola",
+        "chinchou",
+        "lanturn",
+        "clamperl",
+        "relicanth",
+        "tentacool",
+        "tentacruel",
+        "pelipper",
+        "finneon",
+        "frillish",
+        "alomomola",
+        "magikarp",
+        "wailmer"
+      ]
     },
     {
       "type": "route",
-      "name": "Seafloor Cavern"
+      "name": "Seafloor Cavern",
+      "encounters": [
+        "zubat",
+        "golbat",
+        "tentacool",
+        "tentacruel",
+        "magikarp",
+        "wailmer",
+        "graveler"
+      ]
     },
     {
       "type": "gym",
@@ -4163,11 +5998,28 @@
     },
     {
       "type": "route",
-      "name": "Route 126"
+      "name": "Route 126",
+      "encounters": [
+        "chinchou",
+        "lanturn",
+        "clamperl",
+        "relicanth",
+        "tentacool",
+        "tentacruel",
+        "pelipper",
+        "finneon",
+        "frillish.alomomola",
+        "magikarp",
+        "wailmer"
+      ]
     },
     {
       "type": "route",
-      "name": "Sootopolis City"
+      "name": "Sootopolis City",
+      "encounters": [
+        "magikarp",
+        "gyarados"
+      ]
     },
     {
       "type": "gym",
@@ -4178,71 +6030,246 @@
     },
     {
       "type": "route",
-      "name": "Cave of Origin"
+      "name": "Cave of Origin",
+      "encounters": [
+        "groudon",
+        "zubat",
+        "golbat",
+        "sableye",
+        "mawile"
+      ]
     },
     {
       "type": "route",
-      "name": "Soaring"
+      "name": "Soaring",
+      "encounters": [
+        "murkrow",
+        "taillow",
+        "wingull",
+        "pelipper",
+        "swablu",
+        "drifloon",
+        "braviary",
+        "palkia",
+        "giratina",
+        "tornadus",
+        "landorus"
+      ]
     },
     {
       "type": "route",
-      "name": "Route 129"
+      "name": "Route 129",
+      "encounters": [
+        "chinchou",
+        "lanturn",
+        "clamperl",
+        "relicanth",
+        "tentacool",
+        "tentacruel",
+        "pelipper",
+        "finneon",
+        "frillish",
+        "alomomola",
+        "magikarp",
+        "wailmer"
+      ]
     },
     {
       "type": "route",
-      "name": "Route 130"
+      "name": "Route 130",
+      "encounters": [
+        "horsea",
+        "seadra",
+        "chinchou",
+        "lanturn",
+        "clamperl",
+        "relicanth",
+        "tentacool",
+        "tentacruel",
+        "pelipper",
+        "finneon",
+        "frillish",
+        "alomomola",
+        "magikarp",
+        "wailmer"
+      ]
     },
     {
       "type": "route",
-      "name": "Route 131"
+      "name": "Route 131",
+      "encounters": [
+        "horsea",
+        "seadra",
+        "tentacool",
+        "tentacruel",
+        "pelipper",
+        "finneon",
+        "frillish",
+        "alomomola",
+        "magikarp",
+        "wailmer"
+      ]
     },
     {
       "type": "route",
-      "name": "Sky Pillar"
+      "name": "Sky Pillar",
+      "encounters": [
+        "rayquaza",
+        "deoxys",
+        "golbat",
+        "ariados",
+        "sableye",
+        "mawile",
+        "claydol",
+        "swablu"
+      ]
     },
     {
       "type": "route",
-      "name": "Pacifidlog Town"
+      "name": "Edge of space",
+      "encounters": [
+        "deoxys"
+      ]
     },
     {
       "type": "route",
-      "name": "Mirage Island"
+      "name": "Pacifidlog Town",
+      "encounters": [
+        "corsola",
+        "tentacool",
+        "tentacruel",
+        "pelipper",
+        "magikarp",
+        "wailmer"
+      ]
     },
     {
       "type": "route",
-      "name": "Route 105"
+      "name": "Mirage Island",
+      "encounters": [
+        "wynaut"
+      ]
     },
     {
       "type": "route",
-      "name": "Route 108"
+      "name": "Route 108",
+      "encounters": [
+        "tentacool",
+        "wingull",
+        "pelipper",
+        "krabby",
+        "frillish",
+        "skrelp",
+        "clauncher",
+        "magikarp",
+        "wailmer"
+      ]
     },
     {
       "type": "route",
-      "name": "Abandoned Ship"
+      "name": "Abandoned Ship",
+      "encounters": [
+        "tentacool",
+        "tentacruel",
+        "magikarp"
+      ]
     },
     {
       "type": "route",
-      "name": "Route 109"
+      "name": "Route 109",
+      "encounters": [
+        "tentacool",
+        "wingull",
+        "pelipper",
+        "krabby",
+        "frillish",
+        "skrelp",
+        "clauncher",
+        "magikarp",
+        "wailmer"
+      ]
     },
     {
       "type": "route",
-      "name": "Route 132"
+      "name": "Route 132",
+      "encounters": [
+        "horsea",
+        "seadra",
+        "tentacool",
+        "tentacruel",
+        "pelipper",
+        "finneon",
+        "frillish",
+        "alomomola",
+        "magikarp",
+        "wailmer"
+      ]
     },
     {
       "type": "route",
-      "name": "Route 133"
+      "name": "Route 133",
+      "encounters": [
+        "horsea",
+        "seadra",
+        "tentacool",
+        "tentacruel",
+        "pelipper",
+        "finneon",
+        "frillish",
+        "alomomola",
+        "magikarp",
+        "wailmer"
+      ]
     },
     {
       "type": "route",
-      "name": "Route 134"
+      "name": "Route 134",
+      "encounters": [
+        "horsea",
+        "seadra",
+        "tentacool",
+        "tentacruel",
+        "pelipper",
+        "finneon",
+        "frillish",
+        "alomomola",
+        "magikarp",
+        "wailmer"
+      ]
     },
     {
       "type": "route",
-      "name": "Ever Grande City"
+      "name": "Ever Grande City",
+      "encounters": [
+        "luvdisc",
+        "corsola",
+        "tentacool",
+        "tentacruel",
+        "pelipper",
+        "magikarp",
+        "wailmer"
+      ]
     },
     {
       "type": "route",
-      "name": "Victory Road"
+      "name": "Victory Road",
+      "encounters": [
+        "zubat",
+        "golbat",
+        "loudred",
+        "hariyama",
+        "sableye",
+        "mawile",
+        "aron",
+        "lairon",
+        "medicham",
+        "tentacool",
+        "tentacruel",
+        "magikarp",
+        "wailmer",
+        "luvdisc",
+        "barboach"
+      ]
     },
     {
       "type": "gym",

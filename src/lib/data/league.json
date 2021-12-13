@@ -11745,6 +11745,105 @@
         }
       ]
     },
+    "z1": {
+      "name": "Zinnia",
+      "pokemon": [
+        {
+          "name": "tyrantrum",
+          "level": "55",
+          "moves": [
+            "dragon-claw",
+            "crunch",
+            "earthquake",
+            "stone-edge"
+          ],
+          "ability": "strong-jaw"
+        },
+        {
+          "name": "altaria",
+          "level": "55",
+          "moves": [
+            "dragon-pulse",
+            "moonblast",
+            "flamethrower",
+            "hyper-voice"
+          ],
+          "ability": "natural-cure"
+        },
+        {
+          "name": "salamence",
+          "level": "57",
+          "moves": [
+            "dragon-claw",
+            "crunch",
+            "fire-fang",
+            "thunder-fang"
+          ],
+          "ability": "intimidate"
+        }
+      ]
+    },
+    "z2": {
+      "name": "Zinnia",
+      "pokemon": [
+        {
+          "name": "goodra",
+          "level": "60",
+          "moves": [
+            "dragon-pulse",
+            "muddy-wter",
+            "thunderbolt",
+            "ice-beam"
+          ],
+          "ability": "sap-sipper"
+        },
+        {
+          "name": "tyrantrum",
+          "level": "60",
+          "moves": [
+            "dragon-claw",
+            "crunch",
+            "earthquake",
+            "stone-edge"
+          ],
+          "ability": "strong-jaw"
+        },
+        {
+          "name": "altaria",
+          "level": "60",
+          "moves": [
+            "dragon-pulse",
+            "moonblast",
+            "flamethrower",
+            "hyper-voice"
+          ],
+          "ability": "natural-cure"
+        },
+        {
+          "name": "noivern",
+          "level": "60",
+          "moves": [
+            "dragon-pulse",
+            "aur-slash",
+            "shadow-ball",
+            "super-fang"
+          ],
+          "ability": "infiltrator"
+        },
+        {
+          "name": "salamence",
+          "level": "62",
+          "moves": [
+            "dragon-claw",
+            "crunch",
+            "fire-fang",
+            "thunder-fang"
+          ],
+          "ability": "intimidate",
+          "held": "salamencite"
+        }
+      ]
+    },
     "r1": {
       "name": "Rival",
       "speciality": "",
