@@ -15,8 +15,8 @@
   import Arrow from 'svelte-icons-pack/bi/BiSolidRightArrow'
   import Plus from 'svelte-icons-pack/bi/BiPlus'
   import Minus from 'svelte-icons-pack/bi/BiMinus'
-  
-  import { CompareStats, CompareCard, CompareControls, CompareInfo } from './'
+
+  import { CompareStats, CompareCard, CompareControls, CompareInfo, CompareMoves } from './'
   import { Accordion, Tabs, PIcon } from '$lib/components/core'
 
   const { getPkmn, getPkmns } = getContext('game')
@@ -57,7 +57,7 @@
       })
     }))
   })
-  
+
   let i = 0, j = 0
   $: i = 0, j = 0
   $: compare = [box[i], gym[j]]
@@ -80,22 +80,28 @@
 
         <!-- Mobile display compare stats & info in tabs -->
         {#key compare}
-        <div class:hidden={tab === 1} class='md:flex relative flex flex-row gap-x-2 p-4 bg-white dark:text-gray-50 dark:bg-gray-900'>
+        <div class:hidden={tab !== 0} class='md:flex relative flex flex-row gap-x-2 p-4 bg-white dark:text-gray-50 dark:bg-gray-900'>
           <CompareStats pokemon={compare} side=left />
           <CompareStats pokemon={[...compare].reverse()} side=right />
         </div>
 
         <div
-          class='py-4 bg-white dark:bg-gray-900 flex flex-wrap md:border-t border-gray-300 dark:border-gray-800 text-gray-600 dark:text-gray-200 pl-4 pr-2 pb-4 md:pl-8 md:pr-4 md:py-3 rounded-b-lg'
-          class:hidden={tab === 0}>
+          class='py-4 bg-white dark:bg-gray-900 flex flex-wrap md:border-t border-gray-300 dark:border-gray-800 text-gray-600 dark:text-gray-200 pl-4 pr-2 pb-4 md:pl-8 md:pr-4 md:py-3'
+          class:hidden={tab !== 1}>
           <CompareInfo {...advice} pokemon={compare} />
+        </div>
+
+        <div
+          class='w-full py-4 bg-white dark:bg-gray-900 flex flex-wrap md:border-t border-gray-300 dark:border-gray-800 text-gray-600 dark:text-gray-200 pl-4 pr-2 pb-4 md:pl-8 md:pr-4 md:py-3 rounded-b-lg'
+          class:hidden={tab !== 2}>
+          <CompareMoves calc={advice.calc} pokemon={compare} />
         </div>
         {/key}
 
         <Tabs
           bind:selected={tab}
           className='md:hidden w-full justify-end pr-8 dark:bg-gray-900 bg-white -my-1'
-          name=page tabs={[ 'Stats', 'Info']}
+          name=page tabs={[ 'Stats', 'Info', 'Moves']}
         />
 
         <!-- Accordion info Desktop display -->
@@ -110,9 +116,13 @@
               {/if}
             </span>
 
-            <div slot=item class='inline-flex flex-wrap text-gray-800 dark:text-gray-200'>
+            <div slot=item class='text-gray-800 dark:text-gray-200'>
               {#key compare}
-                <CompareInfo {...advice} pokemon={compare} />
+                <div class=inline-flex>
+                  <CompareInfo {...advice} pokemon={compare} />
+                </div>
+                <br />
+                <CompareMoves {...advice} pokemon={compare} />
               {/key}
             </div>
           </Accordion>

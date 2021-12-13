@@ -1,6 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
+  '@smogon/calc': ^0.6.0
   '@sveltejs/adapter-vercel': next
   '@sveltejs/kit': next
   autoprefixer: ^10.3.7
@@ -32,6 +33,7 @@ specifiers:
   workbox-strategies: ^6.4.1
 
 dependencies:
+  '@smogon/calc': 0.6.0
   clean-css: 5.2.2
   dayjs: 1.10.7
   pokedex-promise-v2: 3.3.2
@@ -52,7 +54,7 @@ dependencies:
 
 devDependencies:
   '@sveltejs/adapter-vercel': 1.0.0-next.31
-  '@sveltejs/kit': 1.0.0-next.196_svelte@3.44.0
+  '@sveltejs/kit': 1.0.0-next.201_svelte@3.44.0
   autoprefixer: 10.3.7_postcss@8.3.11
   cssnano: 5.0.8_postcss@8.3.11
   eslint: 8.2.0
@@ -152,14 +154,20 @@ packages:
       picomatch: 2.3.0
     dev: true
 
+  /@smogon/calc/0.6.0:
+    resolution: {integrity: sha512-0HMOKOFOuHY0GIQont/3gtQjZltY13PzsWX5SAn7ws26uL20yG2RYC2V7kG/EYT2lZB48H/ZpBLm52totI65Sw==}
+    dependencies:
+      '@types/node': 14.18.0
+    dev: false
+
   /@sveltejs/adapter-vercel/1.0.0-next.31:
     resolution: {integrity: sha512-W8p/U00B6ihVrDpwMkgEexfVUzaLmn4MRtXj//Gw4NDFfsrZR4P5wBidrOAIkCYBMvqCOHD+vbAvIiAMOaN23g==}
     dependencies:
       esbuild: 0.13.9
     dev: true
 
-  /@sveltejs/kit/1.0.0-next.196_svelte@3.44.0:
-    resolution: {integrity: sha512-z7sA/2/3Il5biibjPXCYXJC11TyFhgCvMaJvvbtMnu2l3EmOmJBMS+r2djGptzfFsugSVNwGQFn8+ldWQWq3jA==}
+  /@sveltejs/kit/1.0.0-next.201_svelte@3.44.0:
+    resolution: {integrity: sha512-WcYexOEPWgDWOk0oOteTU5QwWykdIcOFJig+akeHqwE/jVtPURLZFtTNx0ymUWXN4S+dUXf60KF6HEMv74FHpA==}
     engines: {node: '>=14.13'}
     hasBin: true
     peerDependencies:
@@ -205,6 +213,10 @@ packages:
     resolution: {integrity: sha512-L7z9BgrNEcYyUYtF+HaEfiS5ebkh9jXqbszz7pC0hRBPaatV0XjSD3+eHrpqFemQfgwiFF0QPIarnIihIDn7OA==}
     engines: {node: '>=10.13.0'}
     dev: true
+
+  /@types/node/14.18.0:
+    resolution: {integrity: sha512-0GeIl2kmVMXEnx8tg1SlG6Gg8vkqirrW752KqolYo1PHevhhZN3bhJ67qHj+bQaINhX0Ra3TlWwRvMCd9iEfNQ==}
+    dev: false
 
   /@types/node/16.11.6:
     resolution: {integrity: sha512-ua7PgUoeQFjmWPcoo9khiPum3Pd60k4/2ZGXt18sm2Slk0W0xZTqt5Y0Ny1NyBiN1EVQ/+FaF9NcY4Qe6rwk5w==}
