@@ -33,8 +33,13 @@
   let loading = true
   let evolines = new Set()
   store && store.subscribe(read(data => {
-    getPkmns(Object.values(data).map(p => p.pokemon).filter(i => i))
-      .then(p => evolines = new Set(Object.values(p).map(p => p?.evoline)))
+    getPkmns(
+      Object
+        .values(data)
+        .filter(p => p && (!p.status || NuzlockeGroups.Dupes.includes(p?.status)))
+        .map(p => p.pokemon)
+        .filter(i => i)
+    ).then(p => evolines = new Set(Object.values(p).map(p => p?.evoline)))
 
     const pkmn = data[location]
     if (!pkmn) return
