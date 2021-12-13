@@ -18,7 +18,9 @@
           {move.name}
         </strong>
 
-        <span class='text-gray-500'>({move.dmgrange})</span>
+        {#if move.dmgrange}
+          <span class='text-gray-500'>({move.dmgrange})</span>
+        {/if}
       </p>
 
       <p class=inline-flex>
