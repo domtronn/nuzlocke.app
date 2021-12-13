@@ -1,7 +1,7 @@
 import { pick } from 'ramda'
 import Pokemon from './_data.js'
 
-const props = ['evos', 'types', 'name', 'sprite', 'label', 'alias', 'imgId', 'baseStats']
+const props = ['evos', 'evoline', 'types', 'name', 'sprite', 'label', 'alias', 'imgId', 'baseStats']
 const items = Object
   .values(Pokemon)
   .map(p => ({

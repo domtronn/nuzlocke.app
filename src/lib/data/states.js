@@ -15,6 +15,7 @@ export const NuzlockeStates = {
 }
 
 export const NuzlockeGroups = {
+  Dupes: [1, 2, 3, 5],
   Available: [1, 2, 3, 6],
   Dead: [5],
   Unavailable: [4, 5],
