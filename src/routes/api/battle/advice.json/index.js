@@ -28,15 +28,17 @@ export async function post ({ body }) {
         Object.fromEntries(
           team
             .map(({ name: atkName, moves, level, item, ability, ...rest }) => {
-              return [atkName, moves.filter(m => m.damage_class !== 'status').map(m => {
-                const res = calculate(
-                  gen,
-                  new Pokemon(gen, atkName, nonnull({ level: +level, item, ability: ability.name })),
-                  new Pokemon(gen, defName, nonnull({ level: +level, nature: capitalise(nature || 'bashful') })),
-                  new Move(gen, m.name)
-                )
+              return [atkName, moves.filter(m => !!m.power && m.damage_class !== 'status').map(m => {
+                try {
+                  const res = calculate(
+                    gen,
+                    new Pokemon(gen, atkName, nonnull({ level: +level, item, ability: ability.name })),
+                    new Pokemon(gen, defName, nonnull({ level: +level, nature: capitalise(nature || 'bashful') })),
+                    new Move(gen, m.name)
+                  )
 
-                return { ...m, kochance: res.kochance().text, dmgrange: res.moveDesc() }
+                  return { ...m, kochance: res.kochance().text, dmgrange: res.moveDesc() }
+                } catch (e) { return m }
               })]
             })
         )
