@@ -17,10 +17,11 @@
 
   let selected, nickname, status, nature
 
-  let Particles, EvoModal
+  let Particles, EvoModal, DeathModal
   onMount(() => {
     import('$lib/components/particles').then(m => Particles = m.default)
     import('$lib/components/EvolutionModal.svelte').then(m => EvoModal = m.default)
+    import('$lib/components/DeathModal.svelte').then(m => DeathModal = m.default)
   })
 
   const { getAllPkmn, getPkmn } = getContext('game')
@@ -75,6 +76,8 @@
   })
 
   const handleEvolution = (base, evos) => async () => handleSplitEvolution(base, evos)
+
+  const handleDeath = () => open(DeathModal)
 
  $: gray = ['Dead', 'Missed'].includes(status?.state)
 </script>
@@ -192,7 +195,7 @@
         src={Deceased}
         title='Kill {selected.name}'
         track=kill
-        on:click={handleStatus(5)}
+        on:click={handleDeath}
       />
     {/if}
 
