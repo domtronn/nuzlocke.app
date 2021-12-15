@@ -33,7 +33,7 @@ export async function get ({ params }) {
     .values(league)
     .reduce((acc, it) => acc.concat(it.pokemon), [])
 
-  const items = toSet(all.map(i => patchData?.item[i.held]?.sprite || i.held))
+  const items = toSet(all.map(i => patchData?.item?.[i.held]?.sprite || i.held))
 
   const criticalCss = items.reduce((acc, it) => acc + extract(it, minifiedItems), '')
 
