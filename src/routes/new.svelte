@@ -88,7 +88,7 @@
 
   <div class='grid items-center justify-center gap-x-4 gap-y-6 grid-cols-3 sm:grid-cols-4 hidden sm:grid'>
     {#each Object.entries(validGames) as [id, game]}
-      {#if game.logo && (gen === 'All' && game.gen !== 'romhack' || game.gen === gen) }
+      {#if game.logo && (gen === 'All' || game.gen === gen) }
         <span
           on:click={handleSelect(id)}
           on:mouseenter={togglehover}
