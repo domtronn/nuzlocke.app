@@ -109,11 +109,6 @@
     {/each}
   </div>
 
-  <i class='p-2 text-sm text-center text-gray-500 dark:text-gray-400 -mb-2'>
-    <b>N.B.</b> Missing games haven't had the data created for them yet,
-    <br />they will be updated regularly so check back soon for your favourite!
-  </i>
-
 </ScreenContainer>
 
 <div class='h-28 w-8' ></div>
