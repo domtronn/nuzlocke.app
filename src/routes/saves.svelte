@@ -31,7 +31,7 @@
   <title>Nuzlocke Tracker | Load game</title>
 </svelte:head>
 
-<ScreenContainer>
+<ScreenContainer containerClassName='pb-48 mb-0 sm:mb-0 md:mb-0'>
   <span class='flex justify-between items-center md:gap-x-24'>
     <h1 class='text-lg md:text-2xl'>Load game</h1>
     <Icon src={FloppyIcon} size='1.4em' className='fill-current dark:text-gray-200g' />

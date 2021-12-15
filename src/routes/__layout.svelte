@@ -105,9 +105,10 @@
 
   </p>
 
+
+  <span class='inline-flex items-center mb-2'>Made with <Icon src={Heart} className='mx-1 fill-current text-red-500' /> by<strong class=ml-1>Domtronn</strong></span>
+  <br />
   All content & design © Pokémon Nuzlocke Tracker, 2021-{(new Date()).getFullYear()}. <a href='/privacy-policy'>Privacy Policy</a>.
   <br class='hidden md:block' />
   Pokémon images & names © 1995-2021 Nintendo/Creatures Inc./GAME FREAK inc. TM
-  <br class='hidden md:block' />
-  <span class='inline-flex items-center mt-2'>Made with <Icon src={Heart} className='mx-1 fill-current text-red-500' /> by<strong class=ml-1>Domtronn</strong></span>
 </footer>
