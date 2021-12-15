@@ -5,6 +5,17 @@ import { writable } from 'svelte/store'
 import { uuid } from '$lib/utils/uuid'
 import { NuzlockeGroups } from '$lib/data/states'
 
+export const readdata = _ => {
+  const active = window.localStorage.getItem(IDS.active)
+  const saveData = _parse(window.localStorage.getItem(IDS.saves))
+  const gameData = _read(window.localStorage.getItem(IDS.game(active)))
+  const gameKey = saveData[active]?.game
+
+  console.log(active, saveData, gameData, gameKey)
+
+  return [gameData, gameKey, active]
+}
+
 const IDS = {
   theme: 'nuzlocke.theme',
   active: 'nuzlocke',
@@ -88,22 +99,22 @@ export const patch = (payload) => (data) => JSON.stringify({
   ...payload
 })
 
-export const read = (cb) => (payload) => {
+const _read = (payload) => {
   if (!payload) return
   let data = {}
   try {
-    data = typeof payload === 'string'
+    return typeof payload === 'string'
       ? JSON.parse(payload)
       : {}
   } catch (e) {
     console.error(e)
+    return {}
   }
-  cb(data || {})
 }
 
-export const parse = (cb = () => {}) => (gameData) => {
-  cb(
-    (gameData || '')
+export const read = (cb) => (payload) => cb(_read(payload) || {})
+
+const _parse = (gameData) => (gameData || '')
       .split(',')
       .filter(i => i.length)
       .map(i => i.split('|'))
@@ -111,8 +122,8 @@ export const parse = (cb = () => {}) => (gameData) => {
         ...acc,
         [id]: { id, created, name, game }
       }), {})
-  )
-}
+
+export const parse = (cb = () => {}) => (gameData) => cb(_parse(gameData))
 
 export const summarise = (cb = _ => {}) => ({ __starter, ...data }) => {
   const pkmn = Object.values(data)

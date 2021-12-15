@@ -3,14 +3,11 @@
   import { browser } from '$app/env'
   import { fade, slide } from 'svelte/transition'
 
-  import IntersectionObserver from "svelte-intersection-observer"
-
-  import { Loader, Tooltip } from '$lib/components/core'
+  import { Loader, Tooltip, Tabs, Input } from '$lib/components/core'
   import StarterType from '$lib/components/starter-type.svelte'
-  import GymCard from '$lib/components/gym-card.svelte'
-  import PokemonSelector from '$lib/components/pokemon-selector.svelte'
 
-  import Tabs from '$lib/components/core/Tabs.svelte'
+  import GameRoute from '$lib/components/Game/Route.svelte'
+  import Search from '$lib/components/Game/Search.svelte'
   import SideNav from '$lib/components/navs/SideNav.svelte'
   import Modal from 'svelte-simple-modal'
 
@@ -19,12 +16,14 @@
 
   import Games from '$lib/data/games.json'
   import deferStyles from '$lib/utils/defer-styles'
-  import { activeGame, savedGames, getGame, patch, read, parse } from '$lib/store'
+  import { activeGame, savedGames, getGame, patch, read, readdata, parse } from '$lib/store'
 
   let gameStore, gameKey, gameData
   let loading = true
-  let starter = 'fire'
+  let routeEl
   let element
+
+  let search = ''
 
   let filter = 0
   const filters = ['Nuzlocke', 'Routes', 'Bosses']
@@ -38,8 +37,6 @@
     { label: 'Evil team', val: 'evil-team' }
   ]
 
-  let limit = 10
-
   let route
   const fetchRoute = async (gen) => {
     if (route) return route
@@ -51,37 +48,16 @@
   onMount(async () => deferStyles('/assets/pokemon.css'))
 
   const setup = () => new Promise((resolve) => {
-    activeGame.subscribe(gameId => {
-      if (browser && !gameId) return window.location = '/'
+    const [data, key, id] = readdata()
+    if (browser && !id) return window.location = '/'
 
-      gameStore = getGame(gameId)
-      gameStore.subscribe(read(game => {
-        gameData = game
-        starter = game.__starter || 'fire'
-      }))
+    gameStore = getGame(id)
+    gameData = data
+    gameKey = key
 
-      savedGames.subscribe(parse(games => {
-        gameKey = games[gameId]?.game
-        gameId =
-          loading = !browser
-
-        deferStyles(`/assets/items/${gameKey}.css`)
-        fetchRoute(Games[gameKey].pid).then(r => resolve(r))
-      }))
-    })
+    deferStyles(`/assets/items/${key}.css`)
+    fetchRoute(Games[key].pid).then(r => resolve(r))
   })
-
-  const setstarter = (e) => {
-    starter = e.detail.value
-    gameStore.update(patch({ __starter: starter }))
-  }
-
-  const setnav = (e) => setloc(`boss-${e.detail.value}`, e.detail.value + 20)
-  const setroute = ({ name, id }) => () => setloc(`route-${name}`, id + 10)
-  const setloc = (id, i) => {
-    limit = Math.max(limit, i + 20)
-    setTimeout(() => document.getElementById(id).scrollIntoView({ behavior: 'smooth' }), 50)
-  }
 
   const latestnav = (routes, game) => {
     const locations = new Set(
@@ -119,7 +95,7 @@
         <main id='main' role="main" class="w-full sm:w-3/4 px-4 md:px-8 md:py-6 flex flex-col gap-y-4 relative">
           <SideNav
             bind:show={show}
-            on:nav={setnav}
+            on:nav={routeEl.setnav}
             route={route}
           >
             <button
@@ -127,7 +103,7 @@
               class='umami--click--continue text-sm underline inline-flex items-center -ml-6 transition-colors dark:hover:text-gray-200 hover:text-black'
               on:click={_ => {
                 show = !show
-                setroute(latestnav(route, gameData))()
+                routeEl.setroute(latestnav(route, gameData))()
               }}
             >
               <Icon size='1.2rem' className='fill-current mr-1' src={Arrow} />
@@ -141,7 +117,7 @@
                 <button
                   transition:slide={{ duration: 250 }}
                   class='umami--click--continue text-sm inline-flex items-center'
-                  on:click={setroute(latestnav(route, gameData))}
+                  on:click={routeEl.setroute(latestnav(route, gameData))}
                 >
                   Continue at {latestnav(route, gameData).name}
                   <Icon className='fill-current' src={Arrow} />
@@ -157,38 +133,21 @@
               {/if}
             </div>
 
-            <div class='flex flex-row items-center gap-x-2'>
-              <Tooltip>Selecting a starter type modifies Rival encounters.</Tooltip>
-              <p>Starter</p>
-              <StarterType on:select={setstarter} bind:starter={starter} />
+            <div class='fixed md:relative bottom-4 md:bottom-0 z-50 md:shadow-none shadow-lg'>
+              <Search bind:term={search} />
             </div>
           </div>
 
-          <ul class='flex flex-col gap-y-4 lg:gap-y-2 -mt-8 sm:mt-0'>
-            {#each route.slice(0, limit) as p, i}
-              {#if p.type === 'route' && [0, 1].includes(filter)}
-                {#if gameStore}
-                  <li id='route-{p.name}' transition:fade>
-                    <PokemonSelector
-                      id={i}
-                      store={gameStore}
-                      location={p.name}
-                    />
-                  </li>
-                {/if}
-              {:else if p.type === 'gym' && [0, 2].includes(filter) && (filter === 0 || bossFilter === 'all' || bossFilter === p.group)}
-                <li class='-mb-4 md:my-2' id='boss-{i}' transition:fade>
-                  <GymCard game={gameKey} starter={starter} id={p.value} location={p.name} />
-                </li >
-              {/if}
+          <GameRoute
+            {route}
+            {search}
+            {filter}
+            {bossFilter}
+            bind:this={routeEl}
+            className='-mt-8 sm:mt-0'
+            game={{ data: gameData, store: gameStore, key: gameKey }}
+          />
 
-              {#if i === limit -5}
-                <IntersectionObserver {element} on:intersect={() => limit+=5}>
-                  <li bind:this={element} />
-                </IntersectionObserver>
-              {/if}
-            {/each}
-          </ul>
         </main>
       </Modal>
     </div>

@@ -39,7 +39,7 @@ export async function get ({ params }) {
 
   return {
     status: 200,
-    body: criticalCss,
+    body: criticalCss.replace(/null/g, ''),
     headers: {
       'Cache-Control': 'public, max-age=31536000',
       'Content-Type': 'text/css'

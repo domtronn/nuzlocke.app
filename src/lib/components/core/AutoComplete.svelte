@@ -19,6 +19,8 @@
     ...(typeof label === 'function' ? { labelFunction: label }: {})
   }
 
+  export let search
+
   $: style = inset ? `--auc-inset: ${typeof inset === 'string' ? inset : '3.2rem'}` : ''
 </script>
 
@@ -37,6 +39,7 @@
     hideArrow
 
     inputId={name}
+    bind:text={search}
     bind:selectedItem={selected}
 
     {items}

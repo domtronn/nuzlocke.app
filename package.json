@@ -23,6 +23,7 @@
     "tailwindcss": "^2.2.16"
   },
   "dependencies": {
+    "@smogon/calc": "^0.6.0",
     "clean-css": "^5.2.2",
     "dayjs": "^1.10.7",
     "pokedex-promise-v2": "^3.3.2",

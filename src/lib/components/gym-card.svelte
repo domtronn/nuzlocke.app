@@ -1,5 +1,5 @@
 <script>
-  export let game, id, location = '', starter = ''
+  export let game, id, location = '', starter = '', type
   let pokemon = [], name = '', speciality = '', img
 
   import { browser } from '$app/env'
@@ -98,7 +98,7 @@
             {/each}
           </span>
 
-          {#if levelCap}
+          {#if levelCap (type === 'gym-leader' || type === 'elite-four')}
             <Label heading='Lvl cap' body={levelCap} />
           {/if}
         {/if}

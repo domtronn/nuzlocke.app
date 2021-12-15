@@ -17,6 +17,18 @@ const FormMap = {
   darumakagalar: 10173, yamaskgalar: 10176, stunfiskgalar: 10177, darmanitangalar: 10174
 }
 
+const findEvoLine = p => {
+  let res = p
+  while (res?.prevo) {
+    res = res?.baseSpecies && res?.prevo
+      ? Object.values(Pokemon).find(p => p.sprite === res.baseSpecies.toLowerCase())
+      : Object.values(Pokemon).find(p => p.sprite === res.prevo.toLowerCase())
+  }
+  return res?.baseSpecies
+    ? Object.values(Pokemon).find(p => p.sprite === res.baseSpecies.toLowerCase())?.sprite
+    : res?.sprite
+}
+
 export const format = ({ name, forme }) => {
   if (forme === 'Galar') return `Galarian ${name.replace(/-Galar/g, '')}`
   if (forme === 'Alola') return `Alolan ${name.replace(/-Alola/g, '')}`
@@ -31,6 +43,7 @@ export default mapObj(
   pkmn => ({
     ...pkmn,
     imgId: FormMap[pkmn.alias] || pkmn.num,
+    evoline: findEvoLine(pkmn),
     label: format(pkmn)
   })
 )

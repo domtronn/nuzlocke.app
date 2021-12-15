@@ -19,7 +19,10 @@
 
   const bosses = route.reduce((acc, r, i) => r.type === 'gym' ? acc.concat({ ...r, oid: i }) : acc, [])
   const grouped = groupBy('group', bosses)
-  const onnav = (value) => _ => dispatch('nav', { value })
+  const onnav = (value) => _ => {
+    show = !show
+    dispatch('nav', { value })
+  }
 
   const groups = ['gym-leader', 'elite-four', 'rival', 'evil-team']
 </script>
@@ -66,7 +69,7 @@
       {#each grouped[group] as b}
         <ul>
           <li class='text-xs underline hover:text-black dark:hover:text-gray-200 hover:scale-110 hover:cursor-pointer origin-left transition' on:click={onnav(b.oid)}>
-            {b.name}
+            {b.boss} at {b.name}
           </li>
         </ul>
       {/each}
