@@ -109,3 +109,10 @@ body {
 }
 
 .bg + main { filter: blur(5px); }
+
+.drop-shadow-highlight {
+  filter: drop-shadow(1px 1px 0 theme('colors.yellow.500'))
+          drop-shadow(-1px -1px 0 theme('colors.yellow.500'))
+          drop-shadow(-1px 1px 0 theme('colors.yellow.500'))
+          drop-shadow(1px -1px 0 theme('colors.yellow.500')) !important;
+}
