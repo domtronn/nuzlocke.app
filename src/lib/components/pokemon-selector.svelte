@@ -244,7 +244,7 @@
 
 <style>
   .dupe {
-    @apply opacity-25 grayscale;
+    @apply opacity-25 grayscale mr-2 text-tiny;
   }
 
   .location {
