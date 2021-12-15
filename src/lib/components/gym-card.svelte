@@ -98,7 +98,7 @@
             {/each}
           </span>
 
-          {#if levelCap (type === 'gym-leader' || type === 'elite-four')}
+          {#if levelCap && (type === 'gym-leader' || type === 'elite-four')}
             <Label heading='Lvl cap' body={levelCap} />
           {/if}
         {/if}
