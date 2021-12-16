@@ -133,7 +133,7 @@
               {/if}
             </div>
 
-            <div class='fixed md:relative bottom-6 md:bottom-0 md:shadow-none shadow-lg' style='z-index: 10000000;'>
+            <div class='fixed md:relative bottom-6 md:bottom-0 md:shadow-none shadow-lg' style='z-index: 4444;'>
               <Search bind:term={search} />
             </div>
           </div>
