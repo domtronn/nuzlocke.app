@@ -46,15 +46,26 @@
     border-color: theme('colors.gray.200');
   }
 
-  :global(.dark) input {
+  :global(.dark) input
+  {
     @apply text-gray-100 placeholder-gray-500;
     border-color: theme('colors.gray.600');
   }
 
   :global(.dark) span { @apply text-gray-500 transition }
-  :global(.dark) input:hover + span, :global(.dark) input:focus + span { @apply text-gray-100 }
+
   span { @apply text-gray-400 transition }
-  input:hover + span, input:focus + span { @apply text-gray-800 }
+
+  input:hover + span,
+  input:focus + span {
+    @apply text-gray-800
+  }
+
+  :global(.dark) input:hover + span,
+  :global(.dark) input:focus + span {
+    @apply text-gray-100
+  }
+
 
   input:hover { border-color: var(--inp-focus-2); }
   input:focus {
@@ -73,5 +84,26 @@
     position: absolute;
     width: 1px;
   }
+
+  @media (max-width: theme('screens.sm')) {
+    input.sm\:inverted:hover + span,
+    input.sm\:inverted:focus + span {
+      @apply text-gray-100;
+    }
+
+    :global(.dark) input.sm\:inverted:hover + span,
+    :global(.dark) input.sm\:inverted:focus + span {
+      @apply text-gray-800;
+    }
+
+    input.sm\:inverted {
+      @apply bg-black text-white;
+    }
+
+    :global(.dark) input.sm\:inverted {
+      @apply bg-gray-50 text-black;
+    }
+  }
+
 
 </style>

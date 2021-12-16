@@ -15,6 +15,7 @@
 <Input
   rounded
   name=search
+  className=sm:inverted
   placeholder=Search...
   bind:value={term}
   icon={Search}
