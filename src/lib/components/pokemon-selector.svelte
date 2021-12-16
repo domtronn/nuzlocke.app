@@ -67,7 +67,13 @@
          location
        }
    }))
- }
+  }
+
+  function onnew () {
+    store.update(patch({
+      '__custom': { [id]: { type: 'custom', name: '' } }
+    }))
+  }
 
  function handleClear () {
    status = nickname = selected = null
@@ -94,13 +100,24 @@
 </script>
 
 <div class='grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-y-3 md:gap-y-2 lg:gap-y-0 gap-x-2 flex'>
-  <span class=location>
-  {#if $$slots.location}
-    <slot name=location />
-  {:else}
-    {location}
-  {/if}
-</span>
+  <span class='group location relative z-50'>
+
+    <div class='location__add absolute -left-0 translate-y-1/2 -bottom-1 group-hover:opacity-10 hover:opacity-100 opacity-0 transition cursor-pointer'>
+      <div
+        style='background: linear-gradient(90deg, black, transparent)'
+        class='absolute top-1/2 translate-x-4 -translate-y-1/2 w-96 h-1 bg-black' />
+      <button on:click={onnew} class='rounded-full w-6 h-6 bg-black text-white text-lg text-center relative'>
+        <span
+          class='absolute -mt-px top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2'>+</span>
+      </button>
+    </div>
+
+    {#if $$slots.location}
+      <slot name=location />
+    {:else}
+      {location}
+    {/if}
+  </span>
 
   <AutoComplete
     rounded
@@ -236,6 +253,7 @@
     {/if}
 
   </span>
+
 </div>
 
 <style>

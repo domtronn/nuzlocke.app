@@ -1,7 +1,7 @@
 <script>
   import { fade } from 'svelte/transition'
   import { NuzlockeStates } from '$lib/data/states'
-  import { patch } from '$lib/store'
+  import { patch, read } from '$lib/store'
 
   import { Tooltip } from '$lib/components/core'
   import StarterType from '$lib/components/starter-type.svelte'
@@ -11,6 +11,16 @@
 
   export let route, game, filter, bossFilter, search, className = ''
   const { store, key, data } = game
+
+  store.subscribe(read(d => {
+    const { __custom } = d
+    const res = route
+    Object // XXX: Mutatey 🤮
+      .entries(__custom)
+      .forEach(([i, data]) => route.splice(i, 0, data))
+
+    console.log(res)
+  }))
 
   let starter = data.__starter || 'fire'
 
@@ -29,13 +39,19 @@
       || NuzlockeStates[item.status]?.state?.toLowerCase()?.includes(s) // Search by status status
   }
 
+  const patchRoute = (route, i) => route && route.reduce((acc, it, j) => {
+    return i === j
+      ? acc.concat([{type: 'route', name: 'Dom\'s Awesome Mege Route'}, it])
+      : acc.concat(it)
+  }, [])
+
   $: filtered = search ? route.filter(r => {
     const item = game.data[r.name]
     const s = search.toLowerCase()
     return !item
       ? routefilter(s, r)
       : routefilter(s, r) || pokemonfilter(s, item)
-  }) : route
+  }) : patchRoute(route, 10)
 
 
   const setstarter = (e) => {
@@ -60,7 +76,6 @@
         <PokemonSelector
           id={i}
           {store}
-          location={p.name}
           encounters={p.encounters}
         >
           <div
@@ -85,6 +100,20 @@
           location={p.name}
           encounters={p.encounters}
         />
+      </li>
+    {/if}
+  {:else if p.type === 'custom' && [0, 1].includes(filter)}
+    {#if store}
+      <li id='custom-{i}' transition:fade>
+        <PokemonSelector
+          id={i}
+          {store}
+          encounters={p.encounters}
+        >
+          <div contentEditable slot=location>
+            {p.name}
+          </div>
+        </PokemonSelector>
       </li>
     {/if}
   {:else if p.type === 'gym' && [0, 2].includes(filter) && (filter === 0 || bossFilter === 'all' || bossFilter === p.group)}

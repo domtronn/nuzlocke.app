@@ -11,8 +11,6 @@ export const readdata = _ => {
   const gameData = _read(window.localStorage.getItem(IDS.game(active)))
   const gameKey = saveData[active]?.game
 
-  console.log(active, saveData, gameData, gameKey)
-
   return [gameData, gameKey, active]
 }
 
