@@ -20619,7 +20619,7 @@
       "pokemon": [
         {
           "name": "zubat",
-          "level": "14",
+          "level": "15",
           "moves": [
             "bite",
             "leech-life",
@@ -20629,7 +20629,7 @@
         },
         {
           "name": "purugly",
-          "level": "16",
+          "level": "17",
           "moves": [
             "fake-out",
             "scratch",
@@ -20657,7 +20657,7 @@
         },
         {
           "name": "skuntank",
-          "level": "20",
+          "level": "23",
           "moves": [
             "night-slash",
             "poison-gas",
@@ -21661,7 +21661,7 @@
         },
         {
           "name": "heracross",
-          "level": "41",
+          "level": "51",
           "moves": [
             "megahorn",
             "close-combat",
@@ -21735,7 +21735,7 @@
         },
         {
           "name": "hippowdon",
-          "level": "59",
+          "level": "52",
           "moves": [
             "earthquake",
             "stone-edge",
@@ -21850,7 +21850,7 @@
         },
         {
           "name": "bronzong",
-          "level": "63",
+          "level": "54",
           "moves": [
             "psychic",
             "gyro-ball",
@@ -21912,17 +21912,6 @@
           "ability": "natural-cure"
         },
         {
-          "name": "milotic",
-          "level": "58",
-          "moves": [
-            "dragon-pulse",
-            "surf",
-            "mirror-coat",
-            "ice-beam"
-          ],
-          "ability": "marvel-scale"
-        },
-        {
           "name": "lucario",
           "level": "60",
           "moves": [
@@ -21943,6 +21932,17 @@
             "shock-wave"
           ],
           "ability": "hustle"
+        },
+        {
+          "name": "milotic",
+          "level": "58",
+          "moves": [
+            "dragon-pulse",
+            "surf",
+            "mirror-coat",
+            "ice-beam"
+          ],
+          "ability": "marvel-scale"
         },
         {
           "name": "garchomp",
@@ -29614,7 +29614,28 @@
             "ember",
             "tackle"
           ],
-          "ability": "technician"
+          "ability": "technician",
+          "starter": "grass"
+        },
+        {
+          "name": "smeargle",
+          "level": "10",
+          "moves": [
+            "water-gun",
+            "tackle"
+          ],
+          "ability": "technician",
+          "starter": "fire"
+        },
+        {
+          "name": "smeargle",
+          "level": "10",
+          "moves": [
+            "leafage",
+            "tackle"
+          ],
+          "ability": "technician",
+          "starter": "water"
         }
       ]
     },
@@ -30925,6 +30946,34 @@
             "quick-attack"
           ],
           "ability": "snow-cloak"
+        }
+      ]
+    },
+    "1_2": {
+      "name": "Ilima (Optional)",
+      "speciality": "normal",
+      "pokemon": [
+        {
+          "name": "gumshoos",
+          "level": "15",
+          "moves": [
+            "tackle",
+            "pursuit",
+            "leer"
+          ],
+          "ability": "strong-jaw",
+          "held": "normalium-z--held"
+        },
+        {
+          "name": "smeargle",
+          "level": "14",
+          "moves": [
+            "ember",
+            "water-gun",
+            "leafage",
+            "tackle"
+          ],
+          "ability": "technician"
         }
       ]
     },
@@ -33535,7 +33584,28 @@
             "ember",
             "tackle"
           ],
-          "ability": "technician"
+          "ability": "technician",
+          "starter": "grass"
+        },
+        {
+          "name": "smeargle",
+          "level": "11",
+          "moves": [
+            "water-gun",
+            "tackle"
+          ],
+          "ability": "technician",
+          "starter": "fire"
+        },
+        {
+          "name": "smeargle",
+          "level": "11",
+          "moves": [
+            "leafage",
+            "tackle"
+          ],
+          "ability": "technician",
+          "starter": "water"
         }
       ]
     },
