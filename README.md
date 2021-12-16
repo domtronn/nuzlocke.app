@@ -70,3 +70,8 @@ them out and thank their creators.
 - [Nuzlocke tracker](https://ashenfactory.github.io/nuzlocke-tracker/) - A simple in order route tracker
 - [Nuzlog](https://techyfatih.github.io/Nuzlog/) - A journal, team and item manager
 - [Nuzlocke Generator](https://nuzlocke-generator.herokuapp.com/) - Image creator for runs 
+
+### Useful links
+
+- [Sentry](https://sentry.io/organizations/nuzlocke-tracker/issues/?project=6109144) - Sentry error tracking
+- [Analytics](https://nuzlocke-analytics.vercel.app/) - Page views and click trackingc
