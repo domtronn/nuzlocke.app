@@ -81,7 +81,6 @@
             <IconButton
               rounded
               src={X}
-              track=clear-filters
               title='Clear filters'
               containerClassName='flex flex-col order-last sm:row-span-2 sm:order-none items-center justify-center'
               disabled={!enabled}
@@ -90,7 +89,7 @@
 
             {#each ['total'].concat(stats) as s}
               <label
-                class='umami--click--sort-{s} transition items-center shadow-sm cursor-pointer inline-flex text-center row-span-1 text-xs px-2 py-1 w-full text-gray-500 dark:text-gray-400 border-gray-400 font-medium border shadow-sm rounded-lg justify-center md:justify-between'
+                class='transition items-center shadow-sm cursor-pointer inline-flex text-center row-span-1 text-xs px-2 py-1 w-full text-gray-500 dark:text-gray-400 border-gray-400 font-medium border shadow-sm rounded-lg justify-center md:justify-between'
                 class:border-gray-600={stat === s}
                 class:text-gray-50={stat === s}
                 class:bg-gray-600={stat === s}
@@ -113,7 +112,7 @@
             {#each types as t}
               {#if typeCounts[t] > 0}
                 <label
-                  class='transition cursor-pointer h-6 umami--click--filter-{t}'
+                  class='transition cursor-pointer h-6'
                   class:grayscale={(type && type !== t) || !typeCounts[t]}
                   class:opacity-50={(type && type !== t) || !typeCounts[t]}
                   class:grayscale-0={type && type === t}

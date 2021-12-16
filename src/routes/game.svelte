@@ -100,7 +100,7 @@
           >
             <button
               slot='continue'
-              class='umami--click--continue text-sm underline inline-flex items-center -ml-6 transition-colors dark:hover:text-gray-200 hover:text-black'
+              class='text-sm underline inline-flex items-center -ml-6 transition-colors dark:hover:text-gray-200 hover:text-black'
               on:click={_ => {
                 show = !show
                 routeEl.setroute(latestnav(route, gameData))()
@@ -116,7 +116,7 @@
               {#if [0, 1].includes(filter)}
                 <button
                   transition:slide={{ duration: 250 }}
-                  class='umami--click--continue text-sm inline-flex items-center'
+                  class='text-sm inline-flex items-center'
                   on:click={routeEl.setroute(latestnav(route, gameData))}
                 >
                   Continue at {latestnav(route, gameData).name}

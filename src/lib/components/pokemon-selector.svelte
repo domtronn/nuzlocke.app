@@ -201,7 +201,6 @@
       rounded
       src={Bin}
       title=Clear
-      track=clear
       on:click={handleClear}
     />
 
@@ -210,7 +209,6 @@
         rounded
         src={Deceased}
         title='Kill {selected.name}'
-        track=kill
         on:click={handleStatus(5)}
       />
     {/if}
@@ -222,7 +220,6 @@
         color=orange
         className=-translate-y-0.5
         on:click={handleStatus(1)}
-        track=capture
         title='Capture {selected.name}'
       />
     {/if}
@@ -233,7 +230,6 @@
         name=dawn-stone
         className=-translate-y-0.5
         color=green
-        track=evolve
         title='Evolve {selected.name}'
         on:click={handleEvolution(selected.sprite, selected.evos)}
       />

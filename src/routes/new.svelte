@@ -39,7 +39,6 @@
       .map((l, i) => ({ label: `Gen ${l}`, val: l }))
   )
 
-  $: trackClass = `umami--click--submit-${selected}`
   $: selectedGame = validGames[selected]
   $: disabled = !gameName.length || !selected
 </script>
@@ -79,7 +78,7 @@
       </div>
     </AutoComplete>
 
-    <Button rounded disabled={disabled} className={trackClass} on:click={handleNewGame}>
+    <Button rounded disabled={disabled} on:click={handleNewGame}>
       Create game
     </Button>
   </div>

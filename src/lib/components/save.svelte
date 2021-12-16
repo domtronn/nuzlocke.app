@@ -50,7 +50,6 @@
   <div class='flex flex-col items-end'>
     <Button
       rounded
-      className=umami--click--delete-save
       on:click={ondelete}
     >
       Delete
