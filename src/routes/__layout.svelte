@@ -5,6 +5,15 @@
 </script>
 
 <script>
+  import * as Sentry from '@sentry/browser'
+  import { Integrations } from '@sentry/tracing'
+
+  Sentry.init({
+    dsn: 'https://c785c122f32c47d68a777aea5af577b1@o1091749.ingest.sentry.io/6109144',
+    integrations: [new Integrations.BrowserTracing()],
+    tracesSampleRate: 1.0,
+  })
+
   export let path = ''
 
   import '../app.css'

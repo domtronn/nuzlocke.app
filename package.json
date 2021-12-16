@@ -23,6 +23,8 @@
     "tailwindcss": "^2.2.16"
   },
   "dependencies": {
+    "@sentry/browser": "^6.16.1",
+    "@sentry/tracing": "^6.16.1",
     "@smogon/calc": "^0.6.0",
     "clean-css": "^5.2.2",
     "dayjs": "^1.10.7",
