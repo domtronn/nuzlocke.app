@@ -43,7 +43,7 @@
       <span class='relative text-xl mb-0.25 dark:sm:bg-transparent sm:bg-transparent pr-2 z-40'>
         <p class='-mb-1 w-auto relative text-xs dark:sm:bg-transparent sm:bg-transparent z-40 h-4'>
           {#if ability}
-            <span>
+            <span class:cursor-help={!!ability.effect}>
               {#if ability.effect}
                 <Tooltip>{ability.effect}</Tooltip>
               {/if}
@@ -56,7 +56,7 @@
         {capitalise(name.replace(/-(Alola|Galar)/, ''))}
 
           {#if held}
-            <div class='absolute right-0 -bottom-0.5 translate-x-full z-20 p-1 mb-1 flex flex-col items-center'>
+            <div class='absolute right-0 -bottom-0.5 translate-x-full z-20 p-1 mb-1 flex flex-col cursor-help items-center'>
               <Tooltip>
                 {held.name}: {held.effect.replace(/^Held: +/g, '')}
               </Tooltip>

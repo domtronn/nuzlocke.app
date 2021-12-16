@@ -16,7 +16,7 @@
 
 <div class='my-2'>
   <p class='text-sm overflow-ellipsis mb-1 relative items-center flex flex-row space-x-1'>
-    <span class='w-auto relative {effect ? 'mr-2' : ''}'>
+    <span class='w-auto relative {effect ? 'mr-2 cursor-help' : ''}'>
 
       {#if effect}
         <Tooltip>{effect}</Tooltip>
