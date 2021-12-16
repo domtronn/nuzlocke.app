@@ -25,9 +25,11 @@
     if (!browser) return
 
     const gen = await getGen()
-    if (data[gen]) return data[gen]
+    const uri = `/api/${gen}/pokemon.json`
+    if (data[gen]) return data[gen]                // Return the raw data if it exists
+    if (!data[uri]) data[uri] = fetch(uri) // "Cache" the promise rather than make a new fetch each time
 
-    const res = await fetch(`/api/${gen}/pokemon.json`)
+    const res = await data[uri]
     data[gen] = await res.json()
     return data[gen]
   }
