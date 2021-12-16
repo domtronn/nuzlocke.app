@@ -26,11 +26,11 @@
 
     const gen = await getGen()
     const uri = `/api/${gen}/pokemon.json`
-    if (data[gen]) return data[gen]                // Return the raw data if it exists
+    if (data[gen]) return data[gen]        // Return the raw data if it exists
     if (!data[uri]) data[uri] = fetch(uri) // "Cache" the promise rather than make a new fetch each time
+      .then(res => res.json())
 
-    const res = await data[uri]
-    data[gen] = await res.json()
+    data[gen] = await data[uri]
     return data[gen]
   }
 
