@@ -21,6 +21,7 @@
   const routefilter = (s, route) => {
     return route.name?.toLowerCase()?.includes(s)
       || route.boss?.toLowerCase()?.includes(s)
+      || route.encounters?.some(i => i.toLowerCase().includes(s.toLowerCase()))
   }
 
   const pokemonfilter = (s, item) => {
