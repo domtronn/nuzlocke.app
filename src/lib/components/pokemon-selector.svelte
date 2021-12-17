@@ -1,7 +1,7 @@
 <script>
   export let id, location, store
 
-  import { read, patch } from '$lib/store'
+  import { read, readdata, patch } from '$lib/store'
 
   import { Natures, NaturesMap } from '$lib/data/natures'
   import { NuzlockeStates, NuzlockeGroups } from '$lib/data/states'
@@ -22,6 +22,9 @@
 
   let Particles, EvoModal
   onMount(() => {
+    const [data] = readdata()
+    selected = data[location]
+
     getPkmns(encounters)
       .then(e => encounterItems = (encounters || []).map(id => e[id]).filter(i => i))
     import('$lib/components/particles').then(m => Particles = m.default)
