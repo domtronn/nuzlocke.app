@@ -1,6 +1,6 @@
 # Nuzlock tracker
 
-<a href="https://www.buymeacoffee.com/gbraad" target="_blank">
+<a href="https://www.buymeacoffee.com/nuzlocketracker" target="_blank">
 <img
     src="https://www.buymeacoffee.com/assets/img/custom_images/yellow_img.png" 
     alt="Buy Me A Coffee" 
