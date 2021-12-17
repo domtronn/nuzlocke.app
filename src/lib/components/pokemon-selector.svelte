@@ -24,8 +24,7 @@
   onMount(() => {
     const [data] = readdata()
     const loc = data[location]
-    selected = typeof loc?.name !== 'undefined' ? loc : undefined
-
+    selected = typeof loc?.pokemon !== 'undefined' ? loc : undefined
 
     getPkmns(encounters)
       .then(e => encounterItems = (encounters || []).map(id => e[id]).filter(i => i))
