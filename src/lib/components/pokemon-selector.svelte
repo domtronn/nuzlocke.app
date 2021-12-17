@@ -93,7 +93,7 @@
   $: gray = ['Dead', 'Missed'].includes(status?.state)
 </script>
 
-<div class='grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-y-3 md:gap-y-2 lg:gap-y-0 gap-x-2 flex'>
+<div class='w-full sm:w-auto grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-y-3 md:gap-y-2 lg:gap-y-0 gap-x-2 flex'>
   <span class=location>
   {#if $$slots.location}
     <slot name=location />
@@ -143,7 +143,7 @@
     bind:value={nickname}
     name='{location} Nickname'
     placeholder=Nickname
-    className=col-span-2
+    className='col-span-2 {!selected ? 'hidden sm:block' : ''}'
   />
 
   <AutoComplete
@@ -155,7 +155,7 @@
     placeholder=Status
     label=state
     inset={status ? '2rem' : null}
-    className=col-span-1
+    className='col-span-1 {!selected ? 'hidden sm:block' : ''}'
   >
     <svelte:fragment slot=icon let:iconClass let:selected>
       {#if selected}
@@ -176,7 +176,7 @@
     bind:selected={nature}
     name='{location} Nature'
     placeholder=Nature
-    className=col-span-1
+    className='col-span-1 {!selected ? 'hidden sm:block' : ''}'
     dropdownClass='-translate-x-1/2 -ml-1 sm:translate-x-0 sm:ml-0'
   >
     <div class='flex inline-flex justify-between w-full py-2 -mx-1 items-center' slot=item let:item let:label>
@@ -196,7 +196,7 @@
     </div>
   </AutoComplete>
 
-  <span class='text-left inline-flex gap-x-2'>
+  <span class='text-left inline-flex gap-x-2 {!selected ? 'hidden sm:block' : ''}'>
     <IconButton
       rounded
       src={Bin}

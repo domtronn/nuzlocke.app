@@ -5,15 +5,6 @@
 </script>
 
 <script>
-  import * as Sentry from '@sentry/browser'
-  import { Integrations } from '@sentry/tracing'
-
-  Sentry.init({
-    dsn: 'https://c785c122f32c47d68a777aea5af577b1@o1091749.ingest.sentry.io/6109144',
-    integrations: [new Integrations.BrowserTracing()],
-    tracesSampleRate: 1.0,
-  })
-
   export let path = ''
 
   import '../app.css'
@@ -28,6 +19,15 @@
   import GitHub from 'svelte-icons-pack/bi/BiLogoGithub'
   import Discord from 'svelte-icons-pack/bi/BiLogoDiscord'
   import Heart from 'svelte-icons-pack/ti/TiHeartFullOutline'
+
+  import * as Sentry from '@sentry/browser'
+  import { Integrations } from '@sentry/tracing'
+
+  Sentry.init({
+    dsn: 'https://c785c122f32c47d68a777aea5af577b1@o1091749.ingest.sentry.io/6109144',
+    integrations: [new Integrations.BrowserTracing()],
+    tracesSampleRate: dev ? 0 : 1.0,
+  })
 
   let data = {}
   const fetchData = async () => {
