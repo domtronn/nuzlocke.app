@@ -10,6 +10,7 @@ specifiers:
   clean-css: ^5.2.2
   cssnano: ^5.0.8
   dayjs: ^1.10.7
+  deepmerge: ^4.2.2
   eslint: ^8.2.0
   eslint-plugin-svelte3: ^3.2.1
   pokedex-promise-v2: ^3.3.2
@@ -40,6 +41,7 @@ dependencies:
   '@smogon/calc': 0.6.0
   clean-css: 5.2.2
   dayjs: 1.10.7
+  deepmerge: 4.2.2
   pokedex-promise-v2: 3.3.2
   pokemon-assets: 0.6.0
   prettier: 2.4.1
@@ -759,6 +761,11 @@ packages:
   /deep-is/0.1.4:
     resolution: {integrity: sha512-oIPzksmTg4/MriiaYGO+okXDT7ztn/w3Eptv/+gSIdMdKsJo0u4CfYNFJPy+4SKMuCqGw2wxnA+URMg3t8a/bQ==}
     dev: true
+
+  /deepmerge/4.2.2:
+    resolution: {integrity: sha512-FJ3UgI4gIl+PHZm53knsuSFpE+nESMr7M4v9QcgB7S63Kj/6WqMiFQJpBBYz1Pt+66bZpP3Q7Lye0Oo9MPKEdg==}
+    engines: {node: '>=0.10.0'}
+    dev: false
 
   /defined/1.0.0:
     resolution: {integrity: sha1-yY2bzvdWdBiOEQlpFRGZ45sfppM=}

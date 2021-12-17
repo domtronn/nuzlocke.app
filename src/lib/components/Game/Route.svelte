@@ -12,15 +12,25 @@
   export let route, game, filter, bossFilter, search, className = ''
   const { store, key, data } = game
 
-  store.subscribe(read(d => {
-    const { __custom } = d
-    const res = route
-    Object // XXX: Mutatey 🤮
-      .entries(__custom)
-      .forEach(([i, data]) => route.splice(i, 0, data))
+  const insert = (arr, item, i) => {
+    return [
+      ...arr.slice(0, i),
+      item,
+      ...arr.slice(i)
+    ]
+  }
 
-    console.log(res)
+  let custom = []
+  store.subscribe(read(d => {
+    if (!custom.length && d.__custom?.length) custom = d.__custom
   }))
+
+  const onnewlocation = (e) => {
+    const index = e.detail.id + 1
+    const loc = { type: 'custom', name: '', index }
+    custom = custom.concat(loc)
+    store.update(patch({ '__custom': [loc] }))
+  }
 
   let starter = data.__starter || 'fire'
 
@@ -39,20 +49,14 @@
       || NuzlockeStates[item.status]?.state?.toLowerCase()?.includes(s) // Search by status status
   }
 
-  const patchRoute = (route, i) => route && route.reduce((acc, it, j) => {
-    return i === j
-      ? acc.concat([{type: 'route', name: 'Dom\'s Awesome Mege Route'}, it])
-      : acc.concat(it)
-  }, [])
-
   $: filtered = search ? route.filter(r => {
     const item = game.data[r.name]
     const s = search.toLowerCase()
     return !item
       ? routefilter(s, r)
       : routefilter(s, r) || pokemonfilter(s, item)
-  }) : patchRoute(route, 10)
-
+  }) : custom.reduce((acc, { index, ...item }) => insert(acc, item, index), route)
+  $: filtered, console.log('filtered', new Date())
 
   const setstarter = (e) => {
     starter = e.detail.value
@@ -69,63 +73,57 @@
 </script>
 
 <ul class='flex flex-col gap-y-4 lg:gap-y-2 {className}'>
-{#each filtered.slice(0, limit) as p, i (p)}
-  {#if p.type === 'route' && [0, 1].includes(filter) && p.name.toLowerCase() === 'starter'}
-    {#if store}
-      <li class='flex items-center gap-x-2' id='route-{p.name}' transition:fade>
-        <PokemonSelector
-          id={i}
-          {store}
-          encounters={p.encounters}
-        >
-          <div
-            slot=location
-            class='flex flex-row-reverse lg:flex-row items-center gap-x-2 lg:-ml-6 -mr-1'
-          >
-            <StarterType on:select={setstarter} bind:starter />
-            <p>
-              Starter*
-              <Tooltip>Selecting a starter type modifies Rival encounters.</Tooltip>
-            </p>
-          </div>
-        </PokemonSelector>
-      </li>
-    {/if}
-  {:else if p.type === 'route' && [0, 1].includes(filter)}
-    {#if store}
-      <li id='route-{p.name}' transition:fade>
-        <PokemonSelector
-          id={i}
-          {store}
-          location={p.name}
-          encounters={p.encounters}
-        />
-      </li>
-    {/if}
-  {:else if p.type === 'custom' && [0, 1].includes(filter)}
-    {#if store}
-      <li id='custom-{i}' transition:fade>
-        <PokemonSelector
-          id={i}
-          {store}
-          encounters={p.encounters}
-        >
-          <div contentEditable slot=location>
-            {p.name}
-          </div>
-        </PokemonSelector>
-      </li>
-    {/if}
-  {:else if p.type === 'gym' && [0, 2].includes(filter) && (filter === 0 || bossFilter === 'all' || bossFilter === p.group)}
-    <li class='-mb-4 md:my-2' id='boss-{i}' transition:fade>
-      <GymCard game={key} starter={starter} id={p.value} location={p.name} type={p.group} />
-    </li >
-  {/if}
+  {#each filtered.slice(0, limit) as p, i (p)}
+    {#if p.type === 'route' && [0, 1].includes(filter) && p.name.toLowerCase() === 'starter'}
+      {#if store}
+        <li class='flex items-center gap-x-2' id='route-{p.name}' in:fade>
+          <PokemonSelector
+            id={i}
+            {store}
+            encounters={p.encounters}
+            on:new={onnewlocation}
+            >
+            <div
+              slot=location
+              class='flex flex-row-reverse lg:flex-row items-center gap-x-2 lg:-ml-6 -mr-1'
+              >
+              <StarterType on:select={setstarter} bind:starter />
+              <p>
+                Starter*
+                <Tooltip>Selecting a starter type modifies Rival encounters.</Tooltip>
+              </p>
+            </div>
+          </PokemonSelector>
+        </li>
+      {/if}
+    {:else if p.type === 'route' && [0, 1].includes(filter)}
+      {#if store}
+        <li id='route-{p.name}' in:fade>
+          <PokemonSelector
+            id={i}
+            {store}
+            location={p.name}
+            encounters={p.encounters}
+            on:new={onnewlocation}
+            />
+        </li>
+      {/if}
 
-  {#if i === limit - 5}
-    <IntersectionObserver {element} on:intersect={inclimit}>
-      <li bind:this={element} />
-    </IntersectionObserver>
-  {/if}
-{/each}
+    {:else if p.type === 'custom' && [0, 1].includes(filter)}
+      <li id='custom-{p.id}'>
+        <pre>{JSON.stringify(p)}</pre>
+      </li>
+
+    {:else if p.type === 'gym' && [0, 2].includes(filter) && (filter === 0 || bossFilter === 'all' || bossFilter === p.group)}
+      <li class='-mb-4 md:my-2' id='boss-{i}' in:fade>
+        <GymCard game={key} starter={starter} id={p.value} location={p.name} type={p.group} />
+      </li >
+    {/if}
+
+    {#if i === limit - 5}
+      <IntersectionObserver {element} on:intersect={inclimit}>
+        <li bind:this={element} />
+      </IntersectionObserver>
+    {/if}
+  {/each}
 </ul>

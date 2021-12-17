@@ -1,7 +1,7 @@
 <script>
   export let id, location, store
 
-  import { read, patch } from '$lib/store'
+  import { read, readdata, patch } from '$lib/store'
 
   import { Natures, NaturesMap } from '$lib/data/natures'
   import { NuzlockeStates, NuzlockeGroups } from '$lib/data/states'
@@ -13,7 +13,7 @@
   import Bin from 'svelte-icons-pack/bi/BiTrash'
   import Deceased from 'svelte-icons-pack/fa/FaSolidSkullCrossbones'
 
-  import { onMount, getContext } from 'svelte'
+  import { createEventDispatcher, onMount, getContext } from 'svelte'
 
   let selected, nickname, status, nature, search
 
@@ -22,6 +22,8 @@
 
   let Particles, EvoModal
   onMount(() => {
+    const [data] = readdata()
+    selected = data[location]
     getPkmns(encounters)
       .then(e => encounterItems = (encounters || []).map(id => e[id]).filter(i => i))
     import('$lib/components/particles').then(m => Particles = m.default)
@@ -29,6 +31,7 @@
   })
 
   const { getAllPkmn, getPkmn, getPkmns } = getContext('game')
+  const dispatch = createEventDispatcher()
 
   let loading = true
   let evolines = new Set()
@@ -70,9 +73,7 @@
   }
 
   function onnew () {
-    store.update(patch({
-      '__custom': { [id]: { type: 'custom', name: '' } }
-    }))
+    dispatch('new', { id })
   }
 
  function handleClear () {
@@ -115,7 +116,7 @@
     {#if $$slots.location}
       <slot name=location />
     {:else}
-      {location}
+      {id} {location}
     {/if}
   </span>
 
@@ -160,7 +161,7 @@
     bind:value={nickname}
     name='{location} Nickname'
     placeholder=Nickname
-    className=col-span-2
+    className='col-span-2 {!selected ? 'hidden sm:block' : ''}'
   />
 
   <AutoComplete
@@ -172,7 +173,7 @@
     placeholder=Status
     label=state
     inset={status ? '2rem' : null}
-    className=col-span-1
+    className='col-span-1 {!selected ? 'hidden sm:block' : ''}'
   >
     <svelte:fragment slot=icon let:iconClass let:selected>
       {#if selected}
@@ -193,7 +194,7 @@
     bind:selected={nature}
     name='{location} Nature'
     placeholder=Nature
-    className=col-span-1
+    className='col-span-1 {!selected ? 'hidden sm:block' : ''}'
     dropdownClass='-translate-x-1/2 -ml-1 sm:translate-x-0 sm:ml-0'
   >
     <div class='flex inline-flex justify-between w-full py-2 -mx-1 items-center' slot=item let:item let:label>
@@ -213,7 +214,7 @@
     </div>
   </AutoComplete>
 
-  <span class='text-left inline-flex gap-x-2'>
+  <span class='text-left inline-flex gap-x-2 {!selected ? 'hidden sm:block' : ''}'>
     <IconButton
       rounded
       src={Bin}

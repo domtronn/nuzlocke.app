@@ -2,6 +2,7 @@
 import { browser } from '$app/env'
 import { writable } from 'svelte/store'
 
+import merge from 'deepmerge'
 import { uuid } from '$lib/utils/uuid'
 import { NuzlockeGroups } from '$lib/data/states'
 
@@ -92,10 +93,10 @@ export const getBox = (cb = () => {}) => activeGame.subscribe(gameId => {
   }))
 })
 
-export const patch = (payload) => (data) => JSON.stringify({
-  ...JSON.parse(data),
-  ...payload
-})
+export const patch = (payload) => (data) => JSON.stringify(merge(
+  JSON.parse(data),
+  payload
+))
 
 const _read = (payload) => {
   if (!payload) return
