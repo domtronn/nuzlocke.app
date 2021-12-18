@@ -10,7 +10,7 @@ export const readdata = _ => {
   const saveData = _parse(window.localStorage.getItem(IDS.saves))
   const gameData = _read(window.localStorage.getItem(IDS.game(active)))
   const gameKey = saveData[active]?.game
-g
+
   return [gameData, gameKey, active]
 }
 
