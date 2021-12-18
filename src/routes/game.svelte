@@ -3,8 +3,7 @@
   import { browser } from '$app/env'
   import { fade, slide } from 'svelte/transition'
 
-  import { Loader, Tooltip, Tabs, Input } from '$lib/components/core'
-  import StarterType from '$lib/components/starter-type.svelte'
+  import { Loader, Tabs } from '$lib/components/core'
 
   import GameRoute from '$lib/components/Game/Route.svelte'
   import Search from '$lib/components/Game/Search.svelte'
@@ -16,12 +15,10 @@
 
   import Games from '$lib/data/games.json'
   import deferStyles from '$lib/utils/defer-styles'
-  import { activeGame, savedGames, getGame, patch, read, readdata, parse } from '$lib/store'
+  import { getGame, readdata } from '$lib/store'
 
   let gameStore, gameKey, gameData
-  let loading = true
   let routeEl
-  let element
 
   let search = ''
 

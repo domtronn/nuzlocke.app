@@ -1,7 +1,7 @@
 <script>
- import { slide } from 'svelte/transition'
- import Chevron from 'svelte-icons-pack/cg/CgChevronRightO'
- import Icon from 'svelte-icons-pack'
+  import { slide } from 'svelte/transition'
+  import Chevron from 'svelte-icons-pack/cg/CgChevronRightO'
+  import Icon from 'svelte-icons-pack'
 
   let isOpen = false
   const toggle = () => isOpen = !isOpen

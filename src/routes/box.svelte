@@ -1,5 +1,4 @@
 <script>
-  import { browser } from '$app/env'
   import { onMount, getContext } from 'svelte'
   import { fade } from 'svelte/transition'
   import { flip } from 'svelte/animate'
@@ -9,7 +8,7 @@
   import { Loader, IconButton } from '$lib/components/core'
   import TypeBadge from '$lib/components/type-badge.svelte'
 
-  import { activeGame, getGame, getBox, read } from '$lib/store'
+  import { getBox } from '$lib/store'
   import { types } from '$lib/data/types'
   import { stats, StatIconMap } from '$lib/data/stats'
 

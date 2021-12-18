@@ -100,7 +100,6 @@ export const patch = (payload) => (data) => JSON.stringify(merge(
 
 const _read = (payload) => {
   if (!payload) return
-  let data = {}
   try {
     return typeof payload === 'string'
       ? JSON.parse(payload)

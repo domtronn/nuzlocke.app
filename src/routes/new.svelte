@@ -36,7 +36,7 @@
     { label: 'Rom Hacks', val: 'romhack' },
   ].concat(
     ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII']
-      .map((l, i) => ({ label: `Gen ${l}`, val: l }))
+      .map(l => ({ label: `Gen ${l}`, val: l }))
   )
 
   $: selectedGame = validGames[selected]
