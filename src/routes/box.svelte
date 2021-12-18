@@ -163,7 +163,10 @@
                     Met {p.location.startsWith('Route') ? 'on' : 'in'} {p.location}
                   {/if}
                   <span class=mx-1>ǀ</span>
-                  <a class='hover:text-black transition border-b border-transparent hover:border-black inline' rel=noreferrer target=_blank href='https://pokemondb.net/pokedex/{id}'>
+                  <a class='hover:text-black transition border-b border-transparent hover:border-black inline'
+                     href='https://pokemondb.net/pokedex/{id}'
+                     title='Pokémon DB Link for {id}'
+                     rel=noreferrer target=_blank >
                     Info
                     <Icon src={External} className='fill-current inline -mt-0.5' />
                   </a>
