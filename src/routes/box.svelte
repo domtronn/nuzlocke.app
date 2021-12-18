@@ -16,6 +16,7 @@
   import Icon from 'svelte-icons-pack'
   import Shiny from 'svelte-icons-pack/wi/WiStars'
   import X from 'svelte-icons-pack/ri/RiSystemFilterOffFill'
+  import External from 'svelte-icons-pack/ri/RiSystemExternalLinkLine'
 
   const { getPkmns } = getContext('game')
 
@@ -154,12 +155,19 @@
                     <Icon src={Shiny} size=2.8em className='fill-current absolute animate-pulse z-50 text-orange-300 top-0 transform rotate-180 right-0 translate-y-1/4 -translate-x-2/3' />
                   {/if}
                 </span>
-                <span class='text-xs text-center p-2 -mt-4 text-gray-500 z-40' slot="footer">
+
+                <span class='text-xs text-center p-2 -mt-4 text-gray-500 z-40' slot="footer" let:id>
                   {#if p.location === 'Starter'}
                     Met in a fateful encounter
                   {:else}
                     Met {p.location.startsWith('Route') ? 'on' : 'in'} {p.location}
                   {/if}
+                  <span class=mx-1>ǀ</span>
+                  <a class='hover:text-black transition border-b border-transparent hover:border-black inline' rel=noreferrer target=_blank href='https://pokemondb.net/pokedex/{id}'>
+                    Info
+                    <Icon src={External} className='fill-current inline -mt-0.5' />
+                  </a>
+
                 </span>
               </PokemonCard>
             </span>

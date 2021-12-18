@@ -1,4 +1,5 @@
 <script>
+
   export let sprite, name, types, level = '', moves, maxStat, held = '', ability = '', stats, nature = undefined
 
   import { capitalise } from '$lib/utils/string'
@@ -14,6 +15,8 @@
   import StatBlock from '$lib/components/stat-block.svelte'
 
   import { Stars as Pattern } from '$lib/utils/pattern'
+
+  const canonname = name.replace(/-(Alola|Galar)/, '')
 
   const cols = types.map(t => ColorMap[t])
   const bgImg = Pattern(cols[1] || cols[0])
@@ -53,19 +56,19 @@
           {/if}
         </p>
 
-        {capitalise(name.replace(/-(Alola|Galar)/, ''))}
+        {capitalise(canonname)}
 
-          {#if held}
-            <div class='absolute right-0 -bottom-0.5 translate-x-full z-20 p-1 mb-1 flex flex-col cursor-help items-center'>
-              <Tooltip>
-                {held.name}: {held.effect.replace(/^Held: +/g, '')}
-              </Tooltip>
-              <span>
-                <PIcon type='item' name={held.sprite} />
-              </span>
-              <Icon src={Hand} className='-mt-3.5 fill-current dark:text-white' />
-            </div>
-          {/if}
+        {#if held}
+          <div class='absolute right-0 -bottom-0.5 translate-x-full z-20 p-1 mb-1 flex flex-col cursor-help items-center'>
+            <Tooltip>
+              {held.name}: {held.effect.replace(/^Held: +/g, '')}
+            </Tooltip>
+            <span>
+              <PIcon type='item' name={held.sprite} />
+            </span>
+            <Icon src={Hand} className='-mt-3.5 fill-current dark:text-white' />
+          </div>
+        {/if}
 
       </span>
 
@@ -76,7 +79,11 @@
       {#if sprite}
         <img width=96 height=96 style="--v-anim-dur: {animDur}s; --v-anim-delay: {animDelay}s" class='{anim} img__pkm -translate-y-16 h-40 w-auto' src={sprite} alt={name} />
       {:else}
-        <img width=96 height=96 style="--v-anim-dur: {animDur}s; --v-anim-delay: {animDelay}s" class='{anim} img__pkm scale-75 -translate-y-16 -translate-x-6 h-40 w-auto' src='https://img.pokemondb.net/sprites/home/normal/unown-qm.png' alt='Unknown sprite for {name}'>
+        <img width=96 height=96
+             style="--v-anim-dur: {animDur}s; --v-anim-delay: {animDelay}s" class='{anim} img__pkm scale-75 -translate-y-16 -translate-x-6 h-40 w-auto'
+             src='https://img.pokemondb.net/sprites/home/normal/unown-qm.png'
+             alt='Unknown sprite for {name}'
+             />
       {/if}
     </div>
 
@@ -106,7 +113,8 @@
       {/if}
     </div>
   </div>
-  <slot name="footer" />
+
+  <slot name="footer" id={canonname} />
 </div>
 
 <style>
