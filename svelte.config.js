@@ -15,6 +15,7 @@ export default {
         visualizer()
       ],
       build: {
+        sourcemap: true,
         target: ['es2020']
       }
     }

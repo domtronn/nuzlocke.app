@@ -24,8 +24,6 @@
 <slot />
 
 <style>
-  div { position: relative; width: 100%; }
-
   :root {
     --inp-focus: theme('colors.black');
     --inp-focus-2: theme('colors.gray.500');
@@ -104,6 +102,4 @@
       @apply bg-gray-50 text-black;
     }
   }
-
-
 </style>
