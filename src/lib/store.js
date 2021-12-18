@@ -2,9 +2,10 @@
 import { browser } from '$app/env'
 import { writable } from 'svelte/store'
 
-import merge from 'deepmerge'
 import { uuid } from '$lib/utils/uuid'
 import { NuzlockeGroups } from '$lib/data/states'
+
+export const popover = writable(null)
 
 export const readdata = _ => {
   const active = window.localStorage.getItem(IDS.active)
@@ -93,10 +94,30 @@ export const getBox = (cb = () => {}) => activeGame.subscribe(gameId => {
   }))
 })
 
-export const patch = (payload) => (data) => JSON.stringify(merge(
-  JSON.parse(data),
-  payload
-))
+export const patch = (payload) => (data) => JSON.stringify({
+  ...JSON.parse(data),
+  ...payload
+})
+
+export const addlocation = (payload) => (data) => JSON.stringify({
+  ...JSON.parse(data),
+  __custom: (JSON.parse(data).__custom || [])
+    .concat(payload)
+})
+
+export const removelocation = (id) => data => JSON.stringify({
+  ...JSON.parse(data),
+  __custom: (JSON.parse(data)
+    .__custom || [])
+    .filter(i => i.id !== id)
+})
+
+export const patchlocation = (payload) => data => JSON.stringify({
+  ...JSON.parse(data),
+  __custom: JSON.parse(data)
+    .__custom
+    .map(c => c.id === payload.id ? { ...c, ...payload } : c)
+})
 
 const _read = (payload) => {
   if (!payload) return

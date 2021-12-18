@@ -132,7 +132,7 @@
           {#if box.length === 0}
             <span class='h-96 flex items-center justify-center col-span-4 dark:text-gray-600 text-xl'>You have no Pokémon in your box</span>
           {/if}
-          {#each box.filter(filter) as p (p.id)}
+          {#each box.filter(filter) as p (p)}
             <span
               animate:flip={{ duration: d => 10 * Math.sqrt(d) }}
               out:fade={{ duration: 150 }}
@@ -156,7 +156,8 @@
                 <span class='text-xs text-center p-2 -mt-4 text-gray-500 z-40' slot="footer">
                   {#if p.location === 'Starter'}
                     Met in a fateful encounter
-                  {:else}
+                  {:else if p.type !== 'custom'}
+                    <!-- FIXME: Allow custom location data -->
                     Met {p.location.startsWith('Route') ? 'on' : 'in'} {p.location}
                   {/if}
                 </span>
