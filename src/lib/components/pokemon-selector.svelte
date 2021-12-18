@@ -24,7 +24,7 @@
   onMount(() => {
     const [data] = readdata()
     const loc = data[location]
-    if (loc?.pokemon !== 'undefined')
+    if (typeof loc?.pokemon !== 'undefined')
       selected = loc
 
     getPkmns(encounters)
