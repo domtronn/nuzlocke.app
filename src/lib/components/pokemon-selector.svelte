@@ -113,7 +113,7 @@
   $: gray = ['Dead', 'Missed'].includes(status?.state)
 </script>
 
-<div class='grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-y-3 md:gap-y-2 lg:gap-y-0 gap-x-2 flex'>
+<div class='grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-y-3 md:gap-y-2 lg:gap-y-0 gap-x-2 flex relative w-full sm:w-auto'>
   <span class='group location relative z-50'>
     {#if $$slots.location}
       <slot name=location />
@@ -132,7 +132,7 @@
     name='{location} Encounter'
     placeholder=Encounter
 
-    className=col-span-2
+    className='col-span-2 w-11/12 sm:w-full'
   >
     <span class='flex items-center h-8' class:dupe={evolines.has(item?.evoline)} slot=item let:item let:label>
       <PIcon name={item?.sprite} className='transform scale-75 md:scale-100 -mb-4 -ml-6 -mt-5 -mr-2' />
@@ -216,13 +216,14 @@
     </div>
   </AutoComplete>
 
-  <span class='text-left inline-flex gap-x-2 {!selected ? 'hidden sm:block' : ''}'>
+  <span class='text-left inline-flex gap-x-2'>
 
     {#if selected && status && status.id !== 4 && status.id !== 5}
       <IconButton
         rounded
         src={Deceased}
         title='Kill {selected.name}'
+        containerClassName={!selected ? 'hidden sm:block' : ''}
         on:click={handleStatus(5)}
       />
     {/if}
@@ -233,6 +234,7 @@
         name=poke-ball
         color=orange
         className=-translate-y-0.5
+        containerClassName={!selected ? 'hidden sm:block' : ''}
         on:click={handleStatus(1)}
         title='Capture {selected.name}'
       />
@@ -243,49 +245,49 @@
         rounded
         name=dawn-stone
         className=-translate-y-0.5
+        containerClassName={!selected ? 'hidden sm:block' : ''}
         color=green
         title='Evolve {selected.name}'
         on:click={handleEvolution(selected.sprite, selected.evos)}
       />
     {/if}
 
-  <Popover title='Open contextul menu'>
-    <Icon size=1.4em src={Dots} className=fill-current />
+    <Popover title='Open contextul menu' className='absolute top-16 right-1 sm:top-0 sm:relative '>
+      <Icon size=1.4em src={Dots} className=fill-current />
 
-    <ul in:fly={{ duration: 250, x: 50 }} class='popover bg-white dark:bg-gray-900 rounded-xl shadow-lg w-44 pt-2 flex flex-col divide-y dark:divide-gray-600' slot=popover>
-      <strong class='px-4 pb-2 inline-flex justify-between w-full items-center'>
-        {locationName || location}
-        <Icon src={Map} className=fill-current />
-      </strong>
+      <ul in:fly={{ duration: 250, x: 50 }} class='popover bg-white dark:bg-gray-900 rounded-xl shadow-lg w-44 pt-2 flex flex-col divide-y dark:divide-gray-600' slot=popover>
+        <strong class='px-4 pb-2 inline-flex justify-between w-full items-center'>
+          {locationName || location}
+          <Icon src={Map} className=fill-current />
+        </strong>
 
-      <li>
-        <button on:click={onnew}>
-          <Icon src={Add} className='fill-current mr-1 -mt-1'/>
-          Add Location
-        </button>
-      </li>
-
-      <li>
-        <button on:click={handleClear}>
-          <Icon src={Delete} className='fill-current mr-1 -mt-1'/>
-          Clear Location
-        </button>
-      </li>
-
-      {#if type === 'custom'}
         <li>
-          <button on:click={ondelete}>
-            <Icon src={Bin} className='fill-current mr-1 -mt-1'/>
-            Delete Location
+          <button on:click={onnew}>
+            <Icon src={Add} className='fill-current mr-1 -mt-1'/>
+            Add Location
           </button>
         </li>
-      {/if}
-      <!-- TODO: <button><li><Icon src={Bin} className='fill-current mr-1 -mt-1'/>Evolve</li></button> -->
-      <!-- <button on:click={handleStatus(5)}><li><Icon src={Deceased} className='fill-current mr-1 -mt-1'/>Kill</li></button> -->
-      <!-- <button on:click={handleStatus(1)}><li>Capture</li></button> -->
-    </ul>
-  </Popover>
 
+        <li>
+          <button on:click={handleClear}>
+            <Icon src={Delete} className='fill-current mr-1 -mt-1'/>
+            Clear Encounter
+          </button>
+        </li>
+
+        {#if type === 'custom'}
+          <li>
+            <button on:click={ondelete}>
+              <Icon src={Bin} className='fill-current mr-1 -mt-1'/>
+              Delete Location
+            </button>
+          </li>
+        {/if}
+        <!-- TODO: <button><li><Icon src={Bin} className='fill-current mr-1 -mt-1'/>Evolve</li></button> -->
+          <!-- <button on:click={handleStatus(5)}><li><Icon src={Deceased} className='fill-current mr-1 -mt-1'/>Kill</li></button> -->
+          <!-- <button on:click={handleStatus(1)}><li>Capture</li></button> -->
+      </ul>
+    </Popover>
   </span>
 
 </div>

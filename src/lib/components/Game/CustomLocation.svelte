@@ -26,7 +26,7 @@
   <Icon
     size=1.6em
     src={Edit}
-    className='{!value ? 'absolute right-0 top-0' : 'absolute -left-8 -translate-x-full dark:text-gray-500 text-gray-300 hover:text-black'} fill-current cursor-edit pointer-events-none transition -mb-1'
+    className='{!value ? 'absolute right-0 translate-x-full sm:translate-x-0 top-0' : 'absolute -right-2 sm:right-initial translate-x-full sm:-translate-x-full sm:-left-8 dark:text-gray-500 text-gray-300 hover:text-black'} fill-current cursor-edit pointer-events-none transition sm:-mb-1'
   />
 </div>
 

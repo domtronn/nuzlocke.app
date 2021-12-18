@@ -1,5 +1,5 @@
 <script>
-  export let title
+  export let title, className = ''
 
   import { onMount, setContext, getContext } from 'svelte'
   import { popover } from '$lib/store'
@@ -30,13 +30,17 @@
 
 <svelte:window on:click={reset} />
 
-<button class='flex items-center h-full dark:text-gray-600 dark:hover:text-gray-50 transition'
+<button class='flex items-center dark:text-gray-600 dark:hover:text-gray-50 transition {className}'
         {title} bind:this={btnref} on:click|stopPropagation={toggle}>
   <slot />
 </button>
 
-<div class='z-50' bind:this={popoverref}>
+<div bind:this={popoverref}>
   {#if $popover === id}
     <slot name=popover />
   {/if}
 </div>
+
+<style>
+  div { z-index: 6666; }
+</style>
