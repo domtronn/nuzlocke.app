@@ -1,4 +1,5 @@
 <script>
+  import { createEventDispatcher } from 'svelte'
   import { fade } from 'svelte/transition'
 
   import Icon from 'svelte-icons-pack'
@@ -10,6 +11,10 @@
 
   export let term
   const clearterm = _ => term = ''
+  const dispatch = createEventDispatcher()
+
+  $: term, dispatch('search', { search: term })
+
 </script>
 
 <Input

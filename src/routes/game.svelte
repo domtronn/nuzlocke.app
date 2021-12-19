@@ -16,6 +16,7 @@
 
   import Games from '$lib/data/games.json'
   import deferStyles from '$lib/utils/defer-styles'
+  import debounce from '$lib/utils/debounce'
   import { activeGame, savedGames, getGame, patch, read, readdata, parse } from '$lib/store'
 
   let gameStore, gameKey, gameData
@@ -58,6 +59,9 @@
     deferStyles(`/assets/items/${key}.css`)
     fetchRoute(Games[key].pid).then(r => resolve(r))
   })
+
+  const _onsearch = (e) => search = e.detail.search
+  const onsearch = debounce(_onsearch, 350)
 
   const latestnav = (routes, game) => {
     const locations = new Set(
@@ -134,7 +138,7 @@
             </div>
 
             <div class='fixed md:relative bottom-6 md:bottom-0 md:shadow-none shadow-lg' style='z-index: 4444;'>
-              <Search bind:term={search} />
+              <Search on:search={onsearch} />
             </div>
           </div>
 
