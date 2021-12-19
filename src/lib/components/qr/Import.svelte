@@ -11,6 +11,6 @@
   onMount(_ => import('$lib/components/qr/ImportModal.svelte').then(mod => ImportModal = mod.default))
 </script>
 
-<Button className='{className} umami--click--import-save' rounded on:click={handleimport}>
+<Button rounded {className} on:click={handleimport}>
   <slot />
 </Button>
