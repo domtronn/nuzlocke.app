@@ -52,12 +52,12 @@
   <span class='font-normal text-tiny'>
     {opp.name}'s weaknesses
   </span>
-  {#each toGroups(opp.sprite) as [mod, types]}
-    <div class='inline-flex items-center tracking-normal leading-5 text-xl font-mono'>
+  {#each toGroups(opp.sprite) as [mod, types], i}
+    <div class='flex items-center tracking-normal leading-5 text-xl font-mono'>
       <span>{toFraction(mod)}x</span>
-      <div class='transform scale-75 origin-left ml-1'>
+      <div class='transform scale-75 origin-left ml-1 flex flex-wrap gap-1 lg:w-60'>
         {#each types as type}
-          <TypeBadge className='text-xs mr-1' {type} />
+          <TypeBadge {type} />
         {/each}
       </div>
     </div>

@@ -9,22 +9,23 @@
   import Info from 'svelte-icons-pack/ri/RiSystemInformationLine'
 </script>
 
-<ul class='relative grid grid-cols-2 lg:grid-cols-3 w-full md:mt-2 text-sm md:text-xs'>
+<ul class='relative grid grid-cols-2 lg:grid-cols-4 w-full md:mt-2 text-sm md:text-xs'>
 
-  <div class='absolute top-2 right-4 text-gray-400 dark:text-gray-600 cursor-help text-lg'>
+  <div class='absolute top-2 right-4 lg:top-0 text-gray-400 dark:text-gray-600 cursor-help text-lg'>
     <Icon src={Info} className=fill-current />
     <Tooltip>
       Damage calculations are max estimates based on the team having 0EVs and max IVs.
     </Tooltip>
   </div>
 
+  <span class='hidden lg:block text-sm col-span-4'>Moves</span>
   {#each calc[team.sprite][opp.sprite] as move}
-    <li class='my-2 flex flex-col leading-4 lg:leading-3'>
+    <li class='my-2 flex flex-col leading-4 lg:leading-3 lg:w-24'>
       <strong>
         {move.name}
       </strong>
 
-      <p class='inline-flex my-1'>
+      <p class='inline-flex my-1 transform scale-90 origin-left'>
         <TypeBadge type={move.damage_class} />
         <TypeBadge type={move.type} className='ml-1' />
       </p>
