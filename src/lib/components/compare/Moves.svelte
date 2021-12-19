@@ -32,8 +32,8 @@
 
       {#if move.desc}
         <p class=text-gray-500>
-          <span>Dmg</span>
           <strong>~{Math.ceil(move.range[1] / 5) * 5}</strong>
+          <span>dmg</span>
         </p>
       {/if}
 
