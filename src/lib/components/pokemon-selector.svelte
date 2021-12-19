@@ -252,7 +252,7 @@
       />
     {/if}
 
-    <Popover title='Open contextul menu' className='absolute top-16 right-1 sm:top-0 sm:relative '>
+    <Popover title='Open contextul menu' className='absolute top-16 mt-0.5 right-1 sm:top-0 sm:relative '>
       <Icon size=1.4em src={Dots} className=fill-current />
 
       <ul in:fly={{ duration: 250, x: 50 }} class='popover bg-white dark:bg-gray-900 rounded-xl shadow-lg w-44 pt-2 flex flex-col divide-y dark:divide-gray-600' slot=popover>
