@@ -14,8 +14,7 @@
   <div class='absolute top-2 right-4 text-gray-400 dark:text-gray-600 cursor-help text-lg'>
     <Icon src={Info} className=fill-current />
     <Tooltip>
-      Damage calculations are based on the team having 0EVs and max
-      health all matching the max levelcap for the fight
+      Damage calculations are max estimates based on the team having 0EVs and max IVs.
     </Tooltip>
   </div>
 
@@ -33,9 +32,7 @@
       {#if move.desc}
         <p class=text-gray-500>
           <span>Dmg</span>
-          <strong>{move.range[0]}</strong>
-          to
-          <strong>{move.range[1]}</strong>
+          <strong>~{Math.ceil(move.range[1] / 5) * 5}</strong>
         </p>
       {/if}
 
