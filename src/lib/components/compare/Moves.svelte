@@ -18,12 +18,12 @@
     </Tooltip>
   </div>
 
-  <span class='hidden lg:block text-sm col-span-4'>Moves</span>
+  <strong class='hidden text-gray-600 dark:text-gray-50 lg:block text-sm col-span-4'>Moves</strong>
   {#each calc[team.sprite][opp.sprite] as move}
     <li class='my-2 flex flex-col leading-4 lg:leading-3 lg:w-24 -mt-1'>
-      <strong style='line-height:1.2em; min-height:2.4em;' class='flex items-end'>
+      <span style='line-height:1.2em; min-height:2.4em;' class='flex items-end tracking-tighter'>
         {move.name}
-      </strong>
+      </span>
 
       <p class='inline-flex my-1 transform scale-90 origin-left'>
         <TypeBadge type={move.damage_class} />
