@@ -30,7 +30,7 @@
 
 <svelte:window on:click={reset} />
 
-<button class='flex items-center dark:text-gray-600 dark:hover:text-gray-50 transition {className}'
+<button class='flex items-center text-gray-300 hover:text-gray-800 dark:text-gray-600 dark:hover:text-gray-50 transition {className}'
         {title} bind:this={btnref} on:click|stopPropagation={toggle}>
   <slot />
 </button>
