@@ -8,9 +8,12 @@
   import { slide } from 'svelte/transition'
 
   import Save from '$lib/components/save.svelte'
+  import Import from '$lib/components/qr/Import.svelte'
+
   import { ScreenContainer } from '$lib/components/containers'
   import { Button } from '$lib/components/core'
 
+  import Modal from 'svelte-simple-modal'
   import Icon from 'svelte-icons-pack'
   import Floppy from 'svelte-icons-pack/im/ImFloppyDisk'
 
@@ -31,45 +34,57 @@
   <title>Nuzlocke Tracker | Load game</title>
 </svelte:head>
 
-<ScreenContainer containerClassName='pb-48 mb-0 sm:mb-0 md:mb-0'>
-  <span class='flex justify-between items-center md:gap-x-24'>
-    <h1 class='text-lg md:text-2xl'>Load game</h1>
-    <Icon src={FloppyIcon} size='1.4em' className='fill-current dark:text-gray-200g' />
-  </span>
+<Modal
+  closeButton={false}
+  styleBg={{ background: 'rgba(0, 0, 0, 0.8)', zIndex: 9999 }}
+  styleWindow={{ background: 'transparent !important' }}
+  styleContent={{ padding: '0 !important', overflow: 'hidden' }}
+>
+  <ScreenContainer containerClassName='pb-48 mb-0 sm:mb-0 md:mb-0' title='Load game' icon={FloppyIcon}>
+    <div class='flex flex-row gap-x-2 text-xs w-full'>
+      <Import className='flex-1 p-1'>
+        Import saved game
+      </Import>
 
-  <hr />
-
-  <div class='flex flex-col gap-y-4' transition:slide={{ duration: 300 }}>
-    {#if loading}
-      <div class='flex flex-row justify-between items-center gap-x-24 mt-2'>
-        <div class='flex flex-row items-center'>
-          <div class='bg-gray-400 animate-pulse h-16 w-16 -mt-1.5 mr-4 rounded-md' />
-
-          <div>
-            <p class=' transition w-16 h-5 animate-pulse bg-gray-400 rounded-md' />
-            <p class=' transition w-32 mt-1 h-3 animate-pulse bg-gray-400 rounded-md' />
-            <div class='h-4 mt-2 inline-flex gap-x-1'>
-              <div class='w-4 h-4 animate-pulse bg-gray-400 rounded-full' />
-              <div class='w-4 h-4 animate-pulse bg-gray-400 rounded-full' />
-              <div class='w-4 h-4 animate-pulse bg-gray-400 rounded-full' />
-              <div class='w-4 h-4 animate-pulse bg-gray-400 rounded-full' />
-            </div>
-          </div>
-        </div>
-
-        <div class='w-20 h-6 inline-flex animate-pulse bg-gray-400 rounded-md' />
-      </div>
-    {:else if games.length}
-      {#each games as game (game.id)}
-        <Save {...game} />
-      {/each}
-    {:else if !loading && !games.length}
-      <span class='text-center'>You currently have no saved games</span>
-      <a sveltekit:prefetch href="/new" class='text-center'>
-        <Button className='w-full'>
+      <a sveltekit:prefetch href="/new" class='text-center flex flex-1'>
+        <Button rounded className='w-full p-1 umami--click--new-game'>
           Create game
         </Button>
       </a>
-    {/if}
-  </div>
-</ScreenContainer>
+    </div>
+
+    <div class='flex flex-col gap-y-8 md:gap-y-4' transition:slide={{ duration: 300 }}>
+      {#if loading}
+        <div class='flex flex-row justify-between items-center gap-x-24 mt-2'>
+          <div class='flex flex-row items-center'>
+            <div class='bg-gray-400 animate-pulse h-16 w-16 -mt-1.5 mr-4 rounded-md' />
+
+            <div>
+              <p class=' transition w-16 h-5 animate-pulse bg-gray-400 rounded-md' />
+              <p class=' transition w-32 mt-1 h-3 animate-pulse bg-gray-400 rounded-md' />
+              <div class='h-4 mt-2 inline-flex gap-x-1'>
+                <div class='w-4 h-4 animate-pulse bg-gray-400 rounded-full' />
+                <div class='w-4 h-4 animate-pulse bg-gray-400 rounded-full' />
+                <div class='w-4 h-4 animate-pulse bg-gray-400 rounded-full' />
+                <div class='w-4 h-4 animate-pulse bg-gray-400 rounded-full' />
+              </div>
+            </div>
+          </div>
+
+          <div class='w-20 h-6 inline-flex animate-pulse bg-gray-400 rounded-md' />
+        </div>
+      {:else if games.length}
+        {#each games as game (game.id)}
+          <Save {...game} />
+        {/each}
+      {:else if !loading && !games.length}
+        <span class='text-center'>You currently have no saved games</span>
+        <a sveltekit:prefetch href="/new" class='text-center'>
+          <Button rounded className='w-full umami--click--new-game'>
+            Create game
+          </Button>
+        </a>
+      {/if}
+    </div>
+  </ScreenContainer>
+</Modal>

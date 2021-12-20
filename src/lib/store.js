@@ -14,7 +14,7 @@ export const readdata = _ => {
   return [gameData, gameKey, active]
 }
 
-const IDS = {
+export const IDS = {
   theme: 'nuzlocke.theme',
   active: 'nuzlocke',
   saves: 'nuzlocke.saves',
@@ -54,7 +54,13 @@ export const createGame = (name, game) => (payload) => {
   const games = payload === 'null' || payload === null || payload === 'undefined'
     ? []
     : payload.split(',').filter(i => i.length)
-  const gameData = `${id}|${+new Date()}|${name}|${game}`
+
+  const gameData = format({
+    id,
+    created: +new Date(),
+    name,
+    game
+  })
 
   localStorage.setItem(IDS.game(id), '{}')
   activeGame.set(id)
@@ -122,6 +128,14 @@ const _parse = (gameData) => (gameData || '')
       }), {})
 
 export const parse = (cb = () => {}) => (gameData) => cb(_parse(gameData))
+
+export const format = (saveData) => [
+  saveData.id,
+  saveData.created,
+  saveData.name,
+  saveData.game,
+].join('|')
+
 
 export const summarise = (cb = _ => {}) => ({ __starter, ...data }) => {
   const pkmn = Object.values(data)

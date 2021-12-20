@@ -47,7 +47,7 @@
   <title> Nuzlocke Tracker | New game </title>
 </svelte:head>
 
-<ScreenContainer title='New Nuzlocke' icon={File}>
+<ScreenContainer title='New Nuzlocke' icon={File} className=mb-20 >
   <div class='flex flex-col sm:flex-row sm:flex-wrap sm:gap-y-4 gap-2'>
     <Input
       rounded
