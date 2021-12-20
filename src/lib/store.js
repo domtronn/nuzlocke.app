@@ -5,6 +5,8 @@ import { writable } from 'svelte/store'
 import { uuid } from '$lib/utils/uuid'
 import { NuzlockeGroups } from '$lib/data/states'
 
+export const popover = writable(null)
+
 export const readdata = _ => {
   const active = window.localStorage.getItem(IDS.active)
   const saveData = _parse(window.localStorage.getItem(IDS.saves))
@@ -103,9 +105,28 @@ export const patch = (payload) => (data) => JSON.stringify({
   ...payload
 })
 
+export const addlocation = (payload) => (data) => JSON.stringify({
+  ...JSON.parse(data),
+  __custom: (JSON.parse(data).__custom || [])
+    .concat(payload)
+})
+
+export const removelocation = (id) => data => JSON.stringify({
+  ...JSON.parse(data),
+  __custom: (JSON.parse(data)
+    .__custom || [])
+    .filter(i => i.id !== id)
+})
+
+export const patchlocation = (payload) => data => JSON.stringify({
+  ...JSON.parse(data),
+  __custom: JSON.parse(data)
+    .__custom
+    .map(c => c.id === payload.id ? { ...c, ...payload } : c)
+})
+
 const _read = (payload) => {
   if (!payload) return
-  let data = {}
   try {
     return typeof payload === 'string'
       ? JSON.parse(payload)

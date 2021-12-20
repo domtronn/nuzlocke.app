@@ -9,3 +9,5 @@ export const uuid = () => {
     ).toString(16)
   )
 }
+
+export const shortuuid = () => uuid().split('-')[0]

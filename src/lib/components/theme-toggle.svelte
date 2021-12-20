@@ -1,6 +1,5 @@
 <script>
   import { theme } from '$lib/store'
-  import { fly, fade } from 'svelte/transition'
   import { sineInOut } from 'svelte/easing';
 
   import Icon from 'svelte-icons-pack'

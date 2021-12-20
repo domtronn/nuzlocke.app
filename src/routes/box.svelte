@@ -1,5 +1,4 @@
 <script>
-  import { browser } from '$app/env'
   import { onMount, getContext } from 'svelte'
   import { fade } from 'svelte/transition'
   import { flip } from 'svelte/animate'
@@ -9,7 +8,7 @@
   import { Loader, IconButton } from '$lib/components/core'
   import TypeBadge from '$lib/components/type-badge.svelte'
 
-  import { activeGame, getGame, getBox, read } from '$lib/store'
+  import { getBox } from '$lib/store'
   import { types } from '$lib/data/types'
   import { stats, StatIconMap } from '$lib/data/stats'
 
@@ -124,17 +123,13 @@
               {/if}
             {/each}
           </div>
-
-          <div class='sm:order-none w-full sm:w-auto order-first col-span-1 flex justify-end -mt-8 sm:mt-0'>
-
-          </div>
         </div>
 
         <div class='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-4 gap-y-8 mt-6'>
           {#if box.length === 0}
             <span class='h-96 flex items-center justify-center col-span-4 dark:text-gray-600 text-xl'>You have no Pokémon in your box</span>
           {/if}
-          {#each box.filter(filter) as p (p.id)}
+          {#each box.filter(filter) as p (p)}
             <span
               animate:flip={{ duration: d => 10 * Math.sqrt(d) }}
               out:fade={{ duration: 150 }}
@@ -159,7 +154,8 @@
                 <span class='text-xs text-center p-2 -mt-4 text-gray-500 z-40' slot="footer" let:id>
                   {#if p.location === 'Starter'}
                     Met in a fateful encounter
-                  {:else}
+                  {:else if p.type !== 'custom'}
+                    <!-- FIXME: Allow custom location data -->
                     Met {p.location.startsWith('Route') ? 'on' : 'in'} {p.location}
                   {/if}
                   <span class=mx-1>ǀ</span>

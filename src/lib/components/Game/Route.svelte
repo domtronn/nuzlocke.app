@@ -1,9 +1,13 @@
 <script>
   import { fade } from 'svelte/transition'
   import { NuzlockeStates } from '$lib/data/states'
-  import { patch } from '$lib/store'
+  import { patch, addlocation, removelocation, read } from '$lib/store'
+
+  import { insertList } from '$lib/utils/arr'
+  import { shortuuid } from '$lib/utils/uuid'
 
   import { Tooltip } from '$lib/components/core'
+  import CustomLocation from './CustomLocation.svelte'
   import StarterType from '$lib/components/starter-type.svelte'
   import GymCard from '$lib/components/gym-card.svelte'
   import PokemonSelector from '$lib/components/pokemon-selector.svelte'
@@ -16,8 +20,27 @@
 
   let element
   let limit = 10
-  const inclimit = _ => limit = limit + 5
 
+  /** Custom route handlers */
+  let custom = []
+  store.subscribe(read(d => {
+    if (!custom.length && d.__custom?.length) custom = d.__custom
+  }))
+
+  const onnewlocation = (e) => {
+    const index = e.detail.id + 1
+    const loc = { type: 'custom', name: '', id: shortuuid(), index }
+    custom = custom.concat(loc)
+    store.update(addlocation(loc))
+  }
+
+  const ondeletelocation = (e) => {
+    const id = e.detail.id
+    custom = custom.filter(i => i.id !== id)
+    store.update(removelocation(id))
+  }
+
+  /** Search filter functions */
   const routefilter = (s, route) => {
     return route.name?.toLowerCase()?.includes(s)
       || route.boss?.toLowerCase()?.includes(s)
@@ -30,74 +53,98 @@
       || NuzlockeStates[item.status]?.state?.toLowerCase()?.includes(s) // Search by status status
   }
 
-  $: filtered = search ? route.filter(r => {
+  $: filtered = insertList(route, custom).filter(r => {
+    if (!search) return true
     const item = game.data[r.name]
     const s = search.toLowerCase()
+
+    if (r.type === 'custom') console.log(r)
+
     return !item
       ? routefilter(s, r)
       : routefilter(s, r) || pokemonfilter(s, item)
-  }) : route
+  })
 
-
+  /** Event Handlers */
   const setstarter = (e) => {
     starter = e.detail.value
     game.store.update(patch({ __starter: starter }))
   }
 
+  const inclimit = _ => limit = limit + 5
+
   export const setnav = (e) => setloc(`boss-${e.detail.value}`, e.detail.value + 20)
   export const setroute = ({ name, id }) => () => setloc(`route-${name}`, id + 10)
-
   const setloc = (id, i) => {
     limit = Math.max(limit, i + 20)
     setTimeout(() => document.getElementById(id).scrollIntoView({ behavior: 'smooth' }), 50)
   }
+
+  /** Predicates */
+  const isStarterRoute = (r, filter) => r.type === 'route' && r.name.toLowerCase() === 'starter' && [0, 1].includes(filter)
+  const isRoute = (r, filter) => r.type === 'route' && [0, 1].includes(filter)
+  const isCustom = (r, filter) => r.type === 'custom' && [0, 1].includes(filter)
+  const isGym = (r, filter) => r.type === 'gym' && [0, 2].includes(filter) && (filter === 0 || bossFilter === 'all' || bossFilter === r.group)
 </script>
 
 <ul class='flex flex-col gap-y-4 lg:gap-y-2 {className}'>
-{#each filtered.slice(0, limit) as p, i (p)}
-  {#if p.type === 'route' && [0, 1].includes(filter) && p.name.toLowerCase() === 'starter'}
-    {#if store}
-      <li class='flex items-center gap-x-2' id='route-{p.name}' transition:fade>
+  {#each filtered.slice(0, limit) as p, id (p)}
+    {#if isStarterRoute(p, filter)}
+      {#if store}
+        <li class='flex items-center gap-x-2' id='route-{p.name}' in:fade>
+          <PokemonSelector {id} {store} encounters={p.encounters} locationName=Starter on:new={onnewlocation}>
+            <div slot=location class='flex flex-row-reverse lg:flex-row items-center gap-x-2 lg:-ml-6 -mr-1'>
+              <StarterType on:select={setstarter} bind:starter />
+              <p>Starter* <Tooltip>Selecting a starter type modifies Rival encounters.</Tooltip></p>
+            </div>
+          </PokemonSelector>
+        </li>
+      {/if}
+
+    {:else if isRoute(p, filter)}
+      {#if store}
+        <li id='route-{p.name}' in:fade>
+          <PokemonSelector
+            {id}
+            {store}
+            location={p.name}
+            encounters={p.encounters}
+            on:new={onnewlocation}
+            />
+        </li>
+      {/if}
+
+    {:else if isCustom(p, filter)}
+      <li class='flex items-center gap-x-2' id='custom-{p.index}' in:fade>
         <PokemonSelector
-          id={i}
-          {store}
-          location={p.name}
-          encounters={p.encounters}
+          type=custom
+          locationName={p.name}
+          location={p.id}
+          {id} {store}
+
+          on:new={onnewlocation}
+          on:delete={ondeletelocation}
         >
-          <div
-            slot=location
-            class='flex flex-row-reverse lg:flex-row items-center gap-x-2 lg:-ml-6 -mr-1'
-          >
-            <StarterType on:select={setstarter} bind:starter />
-            <p>
-              Starter*
-              <Tooltip>Selecting a starter type modifies Rival encounters.</Tooltip>
-            </p>
-          </div>
+          <svelte:fragment slot=location>
+            <CustomLocation
+              {store}
+              value={p.name}
+              id={p.id}
+              />
+          </svelte:fragment>
         </PokemonSelector>
       </li>
-    {/if}
-  {:else if p.type === 'route' && [0, 1].includes(filter)}
-    {#if store}
-      <li id='route-{p.name}' transition:fade>
-        <PokemonSelector
-          id={i}
-          {store}
-          location={p.name}
-          encounters={p.encounters}
-        />
-      </li>
-    {/if}
-  {:else if p.type === 'gym' && [0, 2].includes(filter) && (filter === 0 || bossFilter === 'all' || bossFilter === p.group)}
-    <li class='-mb-4 md:my-2' id='boss-{i}' transition:fade>
-      <GymCard game={key} starter={starter} id={p.value} location={p.name} type={p.group} />
-    </li >
-  {/if}
 
-  {#if i <= limit - 5}
-    <IntersectionObserver {element} on:intersect={inclimit}>
-      <li bind:this={element} />
-    </IntersectionObserver>
-  {/if}
-{/each}
+    {:else if isGym(p, filter, bossFilter)}
+      <li class='-mb-4 md:my-2' id='boss-{id}' in:fade>
+        <GymCard game={key} starter={starter} id={p.value} location={p.name} type={p.group} />
+      </li >
+    {/if}
+
+    {#if i <= limit - 5}
+      <IntersectionObserver {element} on:intersect={inclimit}>
+        <li bind:this={element} />
+      </IntersectionObserver>
+    {/if}
+  {/each}
 </ul>

@@ -1,19 +1,26 @@
 <script>
-  export let id, location, store
+  export let id, store, location, locationName = '', type = ''
 
-  import { read, readdata, patch } from '$lib/store'
+  import { read, readdata, patch, removelocation } from '$lib/store'
 
+  import { fly } from 'svelte/transition'
   import { Natures, NaturesMap } from '$lib/data/natures'
   import { NuzlockeStates, NuzlockeGroups } from '$lib/data/states'
   import { IconButton, AutoComplete, Input } from '$lib/components/core'
 
+  import Popover from '$lib/components/core/Popover.svelte'
+
   import PIcon from '$lib/components/core/PokemonIcon.svelte'
   import Icon from 'svelte-icons-pack'
   import Chevron from 'svelte-icons-pack/bi/BiSolidChevronUp'
-  import Bin from 'svelte-icons-pack/bi/BiTrash'
+  import Add from 'svelte-icons-pack/cg/CgAddR'
+  import Delete from 'svelte-icons-pack/ri/RiSystemDeleteBack2Line'
   import Deceased from 'svelte-icons-pack/fa/FaSolidSkullCrossbones'
+  import Bin from 'svelte-icons-pack/bi/BiTrash'
+  import Dots from 'svelte-icons-pack/bs/BsThreeDotsVertical'
+  import Map from 'svelte-icons-pack/bi/BiMapAlt'
 
-  import { onMount, getContext } from 'svelte'
+  import { createEventDispatcher, onMount, getContext } from 'svelte'
 
   let selected, nickname, status, nature, search
 
@@ -34,6 +41,7 @@
   })
 
   const { getAllPkmn, getPkmn, getPkmns } = getContext('game')
+  const dispatch = createEventDispatcher()
 
   let loading = true
   let evolines = new Set()
@@ -68,11 +76,21 @@
          pokemon: selected?.alias,
          status: status?.id,
          nature: nature?.id,
+         location: locationName || location,
          nickname,
-         location
        }
    }))
- }
+  }
+
+  const onnew = () => dispatch('new', { id })
+  const ondelete = () => {
+    if (selected &&
+        !confirm(`You are about to delete a custom location - this will also delete your Pokémon, ${selected.name}. Are you sure you wish to continue?`))
+      return
+
+    handleClear()
+    dispatch('delete', { id: location })
+  }
 
  function handleClear () {
    status = nickname = selected = null
@@ -98,14 +116,14 @@
   $: gray = ['Dead', 'Missed'].includes(status?.state)
 </script>
 
-<div class='w-full sm:w-auto grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-y-3 md:gap-y-2 lg:gap-y-0 gap-x-2 flex'>
-  <span class=location>
-  {#if $$slots.location}
-    <slot name=location />
-  {:else}
-    {location}
-  {/if}
-</span>
+<div class='grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-y-3 md:gap-y-2 lg:gap-y-0 gap-x-2 flex relative w-full sm:w-auto'>
+  <span class='group location relative z-50'>
+    {#if $$slots.location}
+      <slot name=location />
+    {:else}
+      {location}
+    {/if}
+  </span>
 
   <AutoComplete
     rounded
@@ -117,7 +135,7 @@
     name='{location} Encounter'
     placeholder=Encounter
 
-    className=col-span-2
+    className='col-span-2 w-11/12 sm:w-full'
   >
     <span class='flex items-center h-8' class:dupe={evolines.has(item?.evoline)} slot=item let:item let:label>
       <PIcon name={item?.sprite} className='transform scale-75 md:scale-100 -mb-4 -ml-6 -mt-5 -mr-2' />
@@ -201,19 +219,13 @@
     </div>
   </AutoComplete>
 
-  <span class='text-left inline-flex gap-x-2 {!selected ? 'hidden sm:block' : ''}'>
-    <IconButton
-      rounded
-      src={Bin}
-      title=Clear
-      on:click={handleClear}
-    />
-
+  <span class='text-left inline-flex gap-x-2'>
     {#if selected && status && status.id !== 4 && status.id !== 5}
       <IconButton
         rounded
         src={Deceased}
         title='Kill {selected.name}'
+        containerClassName={!selected ? 'hidden sm:block' : ''}
         on:click={handleStatus(5)}
       />
     {/if}
@@ -224,6 +236,7 @@
         name=poke-ball
         color=orange
         className=-translate-y-0.5
+        containerClassName={!selected ? 'hidden sm:block' : ''}
         on:click={handleStatus(1)}
         title='Capture {selected.name}'
       />
@@ -234,13 +247,75 @@
         rounded
         name=dawn-stone
         className=-translate-y-0.5
+        containerClassName={!selected ? 'hidden sm:block' : ''}
         color=green
         title='Evolve {selected.name}'
         on:click={handleEvolution(selected.sprite, selected.evos)}
       />
     {/if}
 
+    <Popover title='Open contextul menu' className='absolute top-16 mt-0.5 right-1 sm:top-0 sm:relative '>
+      <Icon size=1.4em src={Dots} className=fill-current />
+
+      <ul in:fly={{ duration: 250, x: 50 }} class='popover bg-white dark:bg-gray-900 rounded-xl shadow-lg w-44 pt-2 flex flex-col divide-y dark:divide-gray-600' slot=popover>
+        <strong class='px-4 pb-2 inline-flex justify-between w-full items-center'>
+          {locationName || location}
+          <Icon src={Map} className=fill-current />
+        </strong>
+
+        <li>
+          <button on:click={onnew}>
+            <Icon src={Add} className='fill-current mr-2'/>
+            Add Location
+          </button>
+        </li>
+
+        <li>
+          <button on:click={handleClear}>
+            <Icon src={Delete} className='fill-current mr-2'/>
+            Clear Encounter
+          </button>
+        </li>
+
+        {#if type === 'custom'}
+          <li>
+            <button on:click={ondelete}>
+              <Icon src={Bin} className='fill-current mr-2'/>
+              Delete Location
+            </button>
+          </li>
+        {/if}
+
+        {#if selected && selected?.evos?.length && (!status || NuzlockeGroups.Available.includes(status.id))}
+          <li>
+            <button class=inline-flex on:click={handleEvolution(selected.sprite, selected.evos)}>
+              <PIcon className='transform scale-75 -mr-2 -ml-1.5 -my-1 grayscale' type='item' name='dawn-stone' />
+              <span class=ml-0.5>Evolve {nickname || selected.name}</span>
+            </button>
+          </li>
+        {/if}
+
+        {#if selected && status && status.id !== 4 && status.id !== 5}
+          <li>
+            <button class=inline-flex on:click={handleStatus(5)}>
+              <Icon src={Deceased} className='fill-current mr-2' />
+              Kill {nickname || selected.name}
+            </button>
+          </li>
+        {/if}
+
+        {#if selected && !status}
+          <li>
+            <button class=inline-flex on:click={handleStatus(1)}>
+              <PIcon className='transform scale-75 -mr-2 -ml-1.5 -my-1 grayscale' type='item' name='poke-ball' />
+              Capture {selected.name}
+            </button>
+          </li>
+        {/if}
+      </ul>
+    </Popover>
   </span>
+
 </div>
 
 <style>
@@ -251,4 +326,13 @@
   .location {
     @apply col-span-2 sm:col-span-1 md:col-span-4 lg:col-span-1 lg:text-right mr-4 sm:text-sm text-lg mt-4 sm:mt-0 h-full font-medium sm:font-normal flex lg:justify-end items-center;
   }
+
+  ul.popover { @apply text-gray-800; }
+  .popover button { @apply text-tiny px-4 py-2 transition text-left w-full cursor-pointer; }
+  .popover li:hover { @apply text-red-400; }
+  .popover li:last-of-type { @apply rounded-b-xl; }
+  .popover li, .popover li :global(*) { @apply inline-flex items-center; }
+
+  :global(.dark) ul.popover { @apply text-gray-50; }
+  :global(.dark) .popover li:hover { @apply bg-indigo-500 text-white; }
 </style>

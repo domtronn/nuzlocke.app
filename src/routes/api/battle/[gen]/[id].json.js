@@ -3,7 +3,7 @@ import games from '$lib/data/games.json'
 import leaders from '$lib/data/league.json'
 import patches from '$lib/data/patches.json'
 
-import { map, compose, prop, path, pick, evolve, applySpec } from 'ramda'
+import { map, compose, prop, path, pick, evolve } from 'ramda'
 
 const maybe = (f, param) => param ? f(param) : Promise.resolve(null)
 const LANG = 'en'
