@@ -47,7 +47,7 @@
       </Import>
 
       <a sveltekit:prefetch href="/new" class='text-center flex flex-1'>
-        <Button rounded className='w-full p-1 umami--click--new-game'>
+        <Button rounded className='w-full p-1'>
           Create game
         </Button>
       </a>
@@ -80,7 +80,7 @@
       {:else if !loading && !games.length}
         <span class='text-center'>You currently have no saved games</span>
         <a sveltekit:prefetch href="/new" class='text-center'>
-          <Button rounded className='w-full umami--click--new-game'>
+          <Button rounded className='w-full'>
             Create game
           </Button>
         </a>

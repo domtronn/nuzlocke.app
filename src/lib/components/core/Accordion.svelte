@@ -18,7 +18,7 @@
   aria-label='Open accordion'
   aria-expanded={isOpen}
   on:click={toggle}
-  class='inline-flex items-center w-full cursor-pointer umami--accordion--{isOpen ? 'close' : 'open'}} {className}'
+  class='inline-flex items-center w-full cursor-pointer {className}'
 >
   <span class='mr-2 md:mr-4'>
     {#if $$slots.icon}

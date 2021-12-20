@@ -38,7 +38,7 @@
 
 <div class='transition tracking-widest flex flex-row justify-between items-center'>
   <div title='Load saved game {name}'
-          class='group flex flex-col flex-1 sm:flex-row gap-x-4 items-start md:items-center cursor-pointer md:pr-24 umami--click--load-save'
+          class='group flex flex-col flex-1 sm:flex-row gap-x-4 items-start md:items-center cursor-pointer md:pr-24'
           out:fade on:click={onclick}>
     <Picture
       alt='{name} logo'
