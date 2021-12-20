@@ -263,14 +263,14 @@
 
         <li>
           <button on:click={onnew}>
-            <Icon src={Add} className='fill-current mr-1 -mt-1'/>
+            <Icon src={Add} className='fill-current mr-2'/>
             Add Location
           </button>
         </li>
 
         <li>
           <button on:click={handleClear}>
-            <Icon src={Delete} className='fill-current mr-1 -mt-1'/>
+            <Icon src={Delete} className='fill-current mr-2'/>
             Clear Encounter
           </button>
         </li>
@@ -278,14 +278,38 @@
         {#if type === 'custom'}
           <li>
             <button on:click={ondelete}>
-              <Icon src={Bin} className='fill-current mr-1 -mt-1'/>
+              <Icon src={Bin} className='fill-current mr-2'/>
               Delete Location
             </button>
           </li>
         {/if}
-        <!-- TODO: <button><li><Icon src={Bin} className='fill-current mr-1 -mt-1'/>Evolve</li></button> -->
-          <!-- <button on:click={handleStatus(5)}><li><Icon src={Deceased} className='fill-current mr-1 -mt-1'/>Kill</li></button> -->
-          <!-- <button on:click={handleStatus(1)}><li>Capture</li></button> -->
+
+        {#if selected && selected?.evos?.length && (!status || NuzlockeGroups.Available.includes(status.id))}
+          <li>
+            <button class=inline-flex on:click={handleEvolution(selected.sprite, selected.evos)}>
+              <PIcon className='transform scale-75 -mr-2 -ml-1.5 -my-1 grayscale' type='item' name='dawn-stone' />
+              <span class=ml-0.5>Evolve {nickname || selected.name}</span>
+            </button>
+          </li>
+        {/if}
+
+        {#if selected && status && status.id !== 4 && status.id !== 5}
+          <li>
+            <button class=inline-flex on:click={handleStatus(5)}>
+              <Icon src={Deceased} className='fill-current mr-2' />
+              Kill {nickname || selected.name}
+            </button>
+          </li>
+        {/if}
+
+        {#if selected && !status}
+          <li>
+            <button class=inline-flex on:click={handleStatus(1)}>
+              <PIcon className='transform scale-75 -mr-2 -ml-1.5 -my-1 grayscale' type='item' name='poke-ball' />
+              Capture {selected.name}
+            </button>
+          </li>
+        {/if}
       </ul>
     </Popover>
   </span>
@@ -305,7 +329,7 @@
   .popover button { @apply text-tiny px-4 py-2 transition text-left w-full cursor-pointer; }
   .popover li:hover { @apply text-red-400; }
   .popover li:last-of-type { @apply rounded-b-xl; }
-  .popover li, .popover li :global(*) { @apply inline; }
+  .popover li, .popover li :global(*) { @apply inline-flex items-center; }
 
   :global(.dark) ul.popover { @apply text-gray-50; }
   :global(.dark) .popover li:hover { @apply bg-indigo-500 text-white; }
