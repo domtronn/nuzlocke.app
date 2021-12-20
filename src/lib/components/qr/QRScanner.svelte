@@ -19,8 +19,8 @@
       .then(cameras => {
         if (!cameras.length) dispatch('error', { value: 'No cameras' })
 
-        camera = cameras[0]
-        scanner.start(cameras[0])
+        camera = cameras.find(c => c.name.includes('back')) || cameras[0]
+        scanner.start(camera)
         dispatch('start')
       })
   }
