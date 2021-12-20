@@ -3,6 +3,7 @@
   import { NuzlockeStates } from '$lib/data/states'
   import { patch, addlocation, removelocation, read } from '$lib/store'
 
+  import { toDbLocation } from '$lib/utils/link'
   import { insertList } from '$lib/utils/arr'
   import { shortuuid } from '$lib/utils/uuid'
 
@@ -107,6 +108,7 @@
           <PokemonSelector
             {id}
             {store}
+            infolink={toDbLocation(key, p.name)}
             location={p.name}
             encounters={p.encounters}
             on:new={onnewlocation}

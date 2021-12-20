@@ -11,6 +11,7 @@
   import { getBox } from '$lib/store'
   import { types } from '$lib/data/types'
   import { stats, StatIconMap } from '$lib/data/stats'
+  import { toDb } from '$lib/utils/link'
 
   import Icon from 'svelte-icons-pack'
   import Shiny from 'svelte-icons-pack/wi/WiStars'
@@ -158,9 +159,10 @@
                     <!-- FIXME: Allow custom location data -->
                     Met {p.location.startsWith('Route') ? 'on' : 'in'} {p.location}
                   {/if}
+
                   <span class=mx-1>ǀ</span>
-                  <a class='hover:text-black transition border-b border-transparent hover:border-black inline'
-                     href='https://pokemondb.net/pokedex/{id}'
+                  <a class='hover:text-black dark:hover:text-gray-50 transition border-b border-transparent hover:border-black inline'
+                     href={toDb(id)}
                      title='Pokémon DB Link for {id}'
                      rel=noreferrer target=_blank >
                     Info

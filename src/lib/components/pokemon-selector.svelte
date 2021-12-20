@@ -1,5 +1,5 @@
 <script>
-  export let id, store, location, locationName = '', type = ''
+  export let id, store, location, locationName = '', type = '', infolink = ''
 
   import { read, readdata, patch, removelocation } from '$lib/store'
 
@@ -16,6 +16,7 @@
   import Add from 'svelte-icons-pack/cg/CgAddR'
   import Delete from 'svelte-icons-pack/ri/RiSystemDeleteBack2Line'
   import Deceased from 'svelte-icons-pack/fa/FaSolidSkullCrossbones'
+  import External from 'svelte-icons-pack/ri/RiSystemExternalLinkLine'
   import Bin from 'svelte-icons-pack/bi/BiTrash'
   import Dots from 'svelte-icons-pack/bs/BsThreeDotsVertical'
   import Map from 'svelte-icons-pack/bi/BiMapAlt'
@@ -313,6 +314,17 @@
             </button>
           </li>
         {/if}
+
+        {#if infolink}
+          <li>
+            <a href={infolink}
+               title='Pokémon DB Link for {location}'
+               rel=noreferrer target=_blank >
+              <Icon src={External} className='fill-current inline -mt-0.5 mr-2' />
+              Route Info
+            </a>
+          </li>
+        {/if}
       </ul>
     </Popover>
   </span>
@@ -329,7 +341,7 @@
   }
 
   ul.popover { @apply text-gray-800; }
-  .popover button { @apply text-tiny px-4 py-2 transition text-left w-full cursor-pointer; }
+  .popover button, .popover a { @apply text-tiny px-4 py-2 transition text-left w-full cursor-pointer; }
   .popover li:hover { @apply text-red-400; }
   .popover li:last-of-type { @apply rounded-b-xl; }
   .popover li, .popover li :global(*) { @apply inline-flex items-center; }
