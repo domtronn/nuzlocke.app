@@ -20,8 +20,8 @@
 
   <span class='hidden lg:block text-sm col-span-4'>Moves</span>
   {#each calc[team.sprite][opp.sprite] as move}
-    <li class='my-2 flex flex-col leading-4 lg:leading-3 lg:w-24'>
-      <strong>
+    <li class='my-2 flex flex-col leading-4 lg:leading-3 lg:w-24 -mt-1'>
+      <strong style='line-height:1.2em; min-height:2.4em;' class='flex items-end'>
         {move.name}
       </strong>
 
@@ -34,6 +34,7 @@
         <p class=text-gray-500>
           <strong>~{Math.ceil(move.range[1] / 5) * 5}</strong>
           <span>dmg</span>
+          <small>({parseInt(move.desc.split(' - ')[1])}%)</small>
         </p>
       {/if}
 
