@@ -31,6 +31,7 @@
 <style>
   span:focus ~ :global(*) { opacity: 0; }
   @media (max-width:theme('screens.sm')) {
-    span { min-width: 50%; }
+    span { min-width: 480px; user-select: text; }
+    span:focus { min-width: 0; }
   }
 </style>
