@@ -2,10 +2,10 @@
   const src = 'https://cdn.rawgit.com/schmich/instascan-builds/master/instascan.min.js'
 
   import LibLoader from './LibLoader.svelte'
-  import { createEventDispatcher } from 'svelte'
+  import { createEventDispatcher, onDestroy } from 'svelte'
   const dispatch = createEventDispatcher()
 
-  let scanner
+  let scanner, camera
   const onloaded = _ => {
     scanner = new window.Instascan.Scanner({
       video: document.getElementById('preview')
@@ -19,10 +19,16 @@
       .then(cameras => {
         if (!cameras.length) dispatch('error', { value: 'No cameras' })
 
+        camera = cameras[0]
         scanner.start(cameras[0])
         dispatch('start')
       })
   }
+
+  onDestroy(() => {
+    if (scanner && camera) scanner.stop(camera)
+  })
+
 </script>
 
 <LibLoader
