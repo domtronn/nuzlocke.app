@@ -94,7 +94,7 @@
     </li >
   {/if}
 
-  {#if i === limit - 5}
+  {#if i <= limit - 5}
     <IntersectionObserver {element} on:intersect={inclimit}>
       <li bind:this={element} />
     </IntersectionObserver>

@@ -46,6 +46,7 @@
     {placeholder}
     {...labelProps}
 
+    html5autocomplete={false}
     delay={fetch ? 75 : 0}
     searchFunction={fetch}
 
