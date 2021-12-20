@@ -14,7 +14,7 @@
   <div class='absolute top-2 right-4 lg:top-0 text-gray-400 dark:text-gray-600 cursor-help text-lg'>
     <Icon src={Info} className=fill-current />
     <Tooltip>
-      Damage calculations are max estimates based on the team having 0EVs and max IVs.
+      Damage calculations are estimates based on the team being at the Level Cap and having 0EVs and max IVs.
     </Tooltip>
   </div>
 
