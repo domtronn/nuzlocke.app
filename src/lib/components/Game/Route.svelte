@@ -92,7 +92,7 @@
     {#if isStarterRoute(p, filter)}
       {#if store}
         <li class='flex items-center gap-x-2' id='route-{p.name}' in:fade>
-          <PokemonSelector {id} {store} encounters={p.encounters} locationName=Starter on:new={onnewlocation}>
+          <PokemonSelector {id} {store} encounters={p.encounters} location=Starter locationName=Starter on:new={onnewlocation}>
             <div slot=location class='flex flex-row-reverse lg:flex-row items-center gap-x-2 lg:-ml-6 -mr-1'>
               <StarterType on:select={setstarter} bind:starter />
               <p>Starter* <Tooltip>Selecting a starter type modifies Rival encounters.</Tooltip></p>
