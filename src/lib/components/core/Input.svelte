@@ -54,18 +54,20 @@
 
   span { @apply text-gray-400 transition }
 
-  input:hover + span,
   input:focus + span {
     @apply text-gray-800
   }
 
-  :global(.dark) input:hover + span,
   :global(.dark) input:focus + span {
     @apply text-gray-100
   }
 
+  @media (hover: hover) {
+    input:focus + span { @apply text-gray-800 }
+    :global(.dark) input:hover + span { @apply text-gray-100 }
+    input:hover { border-color: var(--inp-focus-2); }
+  }
 
-  input:hover { border-color: var(--inp-focus-2); }
   input:focus {
     border-color: var(--inp-focus);
     --tw-ring-color: var(--inp-focus-2);

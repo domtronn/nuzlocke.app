@@ -207,19 +207,12 @@
     color: var(--auc-focus-fg) !important;
   }
 
-  :global(div.autocomplete-list-item:hover),
-  :global(div.autocomplete-list-item.selected)
-  {
-    color: var(--auc-focus-fg) !important;
-    background-color: var(--auc-focus-2) !important;
-  }
-
-  @media (hover: none) {
+  @media (hover: hover) {
     :global(div.autocomplete-list-item:hover),
     :global(div.autocomplete-list-item.selected)
     {
-      color: var(--auc-fg) !important;
-      background-color: var(--auc-bg) !important;
+      color: var(--auc-focus-fg) !important;
+      background-color: var(--auc-focus-2) !important;
     }
   }
 
