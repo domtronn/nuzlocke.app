@@ -16,20 +16,21 @@
   <span
     bind:textContent={value}
     contenteditable
-    class:border-gray-500={!value}
-    class:border-transparent={value}
     class:hover:border-black={value}
-    class:dark:border-gray-50={!value}
     class:dark:hover:border-gray-50={value}
-    class='flex select-text transition border-b hover:border-gray-500 focus:border-black dark:focus:border-gray-50 dark:focus:text-gray-50 focus:text-black focus:w-auto text-right outline-none flex-row-reverse items-center gap-x-2 lg:-ml-6 -mr-1'
+    class='flex select-text transition border-b border-transparent hover:border-gray-500 focus:border-black dark:focus:border-gray-50 dark:focus:text-gray-50 focus:text-black md:w-auto focus:w-auto text-left sm:text-right outline-none flex-row sm:flex-row-reverse items-center gap-x-2 lg:-ml-6 -mr-1'
     />
   <Icon
-    size=1.6em
+    size=1.4em
     src={Edit}
-    className='{!value ? 'absolute right-0 translate-x-full sm:translate-x-0 top-0' : 'absolute -right-2 sm:right-initial translate-x-full sm:-translate-x-full sm:-left-8 dark:text-gray-500 text-gray-300 hover:text-black'} fill-current cursor-edit pointer-events-none transition sm:-mb-1'
+    className='{!value ? 'absolute left-0 sm:right-0 sm:-translate-x-full top-0' : 'absolute -right-2 sm:right-initial translate-x-full sm:-translate-x-full sm:-left-8 dark:text-gray-500 text-gray-300 hover:text-black'} fill-current cursor-edit pointer-events-none transition'
     />
+
 </div>
 
 <style>
   span:focus ~ :global(*) { opacity: 0; }
+  @media (max-width:theme('screens.sm')) {
+    span { min-width: 50%; }
+  }
 </style>
