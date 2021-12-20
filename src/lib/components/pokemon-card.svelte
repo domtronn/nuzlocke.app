@@ -1,4 +1,5 @@
 <script>
+
   export let sprite, name, types, level = '', moves, maxStat, held = '', ability = '', stats, nature = undefined
 
   import { capitalise } from '$lib/utils/string'
@@ -14,6 +15,8 @@
   import StatBlock from '$lib/components/stat-block.svelte'
 
   import { Stars as Pattern } from '$lib/utils/pattern'
+
+  const canonname = name.replace(/-(Alola|Galar)/, '')
 
   const cols = types.map(t => ColorMap[t])
   const bgImg = Pattern(cols[1] || cols[0])
@@ -33,12 +36,17 @@
         <div class='flex flex-col items-center'>
           <span class='text-xs -mb-2'>Level</span>
           <span class='text-3xl font-bold'>{level}</span>
+          {#if level.startsWith('+') || level.startsWith('-')}
+            <Tooltip>
+              Calculated as your party's Max Level {level}
+            </Tooltip>
+          {/if}
         </div>
       {/if}
       <span class='relative text-xl mb-0.25 dark:sm:bg-transparent sm:bg-transparent pr-2 z-40'>
         <p class='-mb-1 w-auto relative text-xs dark:sm:bg-transparent sm:bg-transparent z-40 h-4'>
           {#if ability}
-            <span>
+            <span class:cursor-help={!!ability.effect}>
               {#if ability.effect}
                 <Tooltip>{ability.effect}</Tooltip>
               {/if}
@@ -48,26 +56,35 @@
           {/if}
         </p>
 
-        {capitalise(name.replace(/-(Alola|Galar)/, ''))}
+        {capitalise(canonname)}
 
-          {#if held}
-            <div class='absolute right-0 -bottom-0.5 translate-x-full z-20 p-1 mb-1 flex flex-col items-center'>
-              <Tooltip>
-                {held.name}: {held.effect.replace(/^Held: +/g, '')}
-              </Tooltip>
-              <span>
-                <PIcon type='item' name={held.sprite} />
-              </span>
-              <Icon src={Hand} className='-mt-3.5 fill-current dark:text-white' />
-            </div>
-          {/if}
+        {#if held}
+          <div class='absolute right-0 -bottom-0.5 translate-x-full z-20 p-1 mb-1 flex flex-col cursor-help items-center'>
+            <Tooltip>
+              {held.name}: {held.effect.replace(/^Held: +/g, '')}
+            </Tooltip>
+            <span>
+              <PIcon type='item' name={held.sprite} />
+            </span>
+            <Icon src={Hand} className='-mt-3.5 fill-current dark:text-white' />
+          </div>
+        {/if}
 
       </span>
 
     </div>
 
     <div class='absolute -right-8 h-0'>
-      <img width=96 height=96 style="--v-anim-dur: {animDur}s; --v-anim-delay: {animDelay}s" class='{anim} img__pkm -translate-y-16 h-40 w-auto' src={sprite} alt={name} />
+      <slot name=img />
+      {#if sprite}
+        <img width=96 height=96 style="--v-anim-dur: {animDur}s; --v-anim-delay: {animDelay}s" class='{anim} img__pkm -translate-y-16 h-40 w-auto' src={sprite} alt={name} />
+      {:else}
+        <img width=96 height=96
+             style="--v-anim-dur: {animDur}s; --v-anim-delay: {animDelay}s" class='{anim} img__pkm scale-75 -translate-y-16 -translate-x-6 h-40 w-auto'
+             src='https://img.pokemondb.net/sprites/home/normal/unown-qm.png'
+             alt='Unknown sprite for {name}'
+             />
+      {/if}
     </div>
 
     <div class='flex gap-x-1 absolute top-0 transform -translate-y-1/2'>
@@ -96,7 +113,8 @@
       {/if}
     </div>
   </div>
-  <slot name="footer" />
+
+  <slot name="footer" id={canonname} />
 </div>
 
 <style>

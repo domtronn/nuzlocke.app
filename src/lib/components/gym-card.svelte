@@ -1,5 +1,5 @@
 <script>
-  export let game, id, location = '', starter = ''
+  export let game, id, location = '', starter = '', type
   let pokemon = [], name = '', speciality = '', img
 
   import { browser } from '$app/env'
@@ -41,7 +41,7 @@
   }
 
   $: (async () => await fetchData(starter))()
-  $: levelCap = pokemon.reduce((acc, it) => Math.max(acc, it.level), 0)
+  $: levelCap = pokemon.every(it => it.level.startsWith('+') || it.level.startsWith('-')) ? null : pokemon.reduce((acc, it) => Math.max(acc, it.level), 0)
   $: maxStat = pokemon.reduce((acc, it) => Math.max(acc, Math.max(...Object.values(it.stats))), 0)
 
 </script>
@@ -98,7 +98,9 @@
             {/each}
           </span>
 
-          <Label heading='Lvl cap' body={levelCap} />
+          {#if levelCap && (type === 'gym-leader' || type === 'elite-four')}
+            <Label heading='Lvl cap' body={levelCap} />
+          {/if}
         {/if}
       </div>
     </span>
@@ -108,7 +110,7 @@
         <Pokemon {...p} maxStat={maxStat}>
           <button
             class:mt-0={p.moves.length < 3}
-            class='umami--click--compare opacity-25 hover:opacity-75 transition mx-8 -mt-4 mb-2 z-50'
+            class='opacity-25 hover:opacity-75 transition mx-8 -mt-4 mb-2 z-50'
             slot=footer
             on:click={_ => open(CompareModal, { pokemon, id: p.name })}
           >

@@ -40,7 +40,7 @@
   styleWindow={{ background: 'transparent !important' }}
   styleContent={{ padding: '0 !important', overflow: 'hidden' }}
 >
-  <ScreenContainer className=mb-40 title='Load game' icon={FloppyIcon}>
+  <ScreenContainer containerClassName='pb-48 mb-0 sm:mb-0 md:mb-0' title='Load game' icon={FloppyIcon}>
     <div class='flex flex-row gap-x-2 text-xs w-full'>
       <Import className='flex-1 p-1'>
         Import saved game

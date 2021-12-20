@@ -1,5 +1,5 @@
 <script>
-  export let title, src = false, name = false, disabled = false, containerClassName = '', className = '', color = 'gray', track = 'icon-button', rounded = false
+  export let title, src = false, name = false, disabled = false, containerClassName = '', className = '', color = 'gray', rounded = false
 
   import { createEventDispatcher } from 'svelte'
   import Icon from 'svelte-icons-pack'
@@ -16,7 +16,7 @@
   on:click|stopPropagation={onclick}
   class:disabled={disabled}
   class:rounded-lg={rounded}
-  class='group umami--click--{track} {color} {containerClassName} '
+  class='group {color} {containerClassName} '
 >
   {#if $$slots.icon}
     <slot name=icon />

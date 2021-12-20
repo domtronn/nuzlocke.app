@@ -39,7 +39,7 @@
 
 </script>
 
-<button class='{className} relative w-10 sm:w-16 h-full umami--click--toggle-{$theme}' aria-label={$theme === 'dark' ? 'Light mode' : 'Dark mode'} on:click={toggleTheme}>
+<button class='{className} relative w-10 sm:w-16 h-full' aria-label={$theme === 'dark' ? 'Light mode' : 'Dark mode'} on:click={toggleTheme}>
   {#if $theme == 'light'}
     <div in:fadefly={{ duration, delay, y: -y }} out:fadefly={{ duration, y: -y }} >
       <Icon size='1.2em' className='-mt-2 absolute left-1/2 -translate-x-1/2 transition fill-current' src={DarkMode} />

@@ -14,7 +14,9 @@
   import { stats, StatIconMap } from '$lib/data/stats'
 
   import Icon from 'svelte-icons-pack'
+  import Shiny from 'svelte-icons-pack/wi/WiStars'
   import X from 'svelte-icons-pack/ri/RiSystemFilterOffFill'
+  import External from 'svelte-icons-pack/ri/RiSystemExternalLinkLine'
 
   const { getPkmns } = getContext('game')
 
@@ -52,6 +54,7 @@
       [it]: ogbox.filter(p => (Pokemon[p.pokemon]?.types || []).map(i => i.toLowerCase()).includes(it)).length
     }), {})
 
+
   $: box = ogbox
   .sort((a, b) => {
     if (stat === 'total') {
@@ -79,7 +82,6 @@
             <IconButton
               rounded
               src={X}
-              track=clear-filters
               title='Clear filters'
               containerClassName='flex flex-col order-last sm:row-span-2 sm:order-none items-center justify-center'
               disabled={!enabled}
@@ -88,7 +90,7 @@
 
             {#each ['total'].concat(stats) as s}
               <label
-                class='umami--click--sort-{s} transition items-center shadow-sm cursor-pointer inline-flex text-center row-span-1 text-xs px-2 py-1 w-full text-gray-500 dark:text-gray-400 border-gray-400 font-medium border shadow-sm rounded-lg justify-center md:justify-between'
+                class='transition items-center shadow-sm cursor-pointer inline-flex text-center row-span-1 text-xs px-2 py-1 w-full text-gray-500 dark:text-gray-400 border-gray-400 font-medium border shadow-sm rounded-lg justify-center md:justify-between'
                 class:border-gray-600={stat === s}
                 class:text-gray-50={stat === s}
                 class:bg-gray-600={stat === s}
@@ -111,7 +113,7 @@
             {#each types as t}
               {#if typeCounts[t] > 0}
                 <label
-                  class='transition cursor-pointer h-6 umami--click--filter-{t}'
+                  class='transition cursor-pointer h-6'
                   class:grayscale={(type && type !== t) || !typeCounts[t]}
                   class:opacity-50={(type && type !== t) || !typeCounts[t]}
                   class:grayscale-0={type && type === t}
@@ -138,7 +140,7 @@
               out:fade={{ duration: 150 }}
             >
               <PokemonCard
-                sprite={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${Pokemon[p.pokemon].imgId}.png`}
+                sprite={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${p.status === 6 ? 'shiny/' : ''}${Pokemon[p.pokemon].imgId}.png`}
                 maxStat={Math.max(150, ...Object.values(Pokemon[p.pokemon].baseStats))}
                 moves={[]}
                 ability={p.nickname ? { name: p.nickname + ' the ' + (p.nature || '').toLowerCase() } : null}
@@ -147,12 +149,28 @@
                 nature={p.nature}
                 types={(Pokemon[p.pokemon].types || []).map(t => t.toLowerCase())}
               >
-                <span class='text-xs text-center p-2 -mt-4 text-gray-500 z-40' slot="footer">
+                <span slot=img>
+                  {#if p.status === 6}
+                    <Icon src={Shiny} size=3.6em className='fill-current absolute animate-pulse z-50 text-orange-200 -translate-y-3/4 left-1/2 -translate-x-full' />
+                    <Icon src={Shiny} size=2.8em className='fill-current absolute animate-pulse z-50 text-orange-300 top-0 transform rotate-180 right-0 translate-y-1/4 -translate-x-2/3' />
+                  {/if}
+                </span>
+
+                <span class='text-xs text-center p-2 -mt-4 text-gray-500 z-40' slot="footer" let:id>
                   {#if p.location === 'Starter'}
                     Met in a fateful encounter
                   {:else}
                     Met {p.location.startsWith('Route') ? 'on' : 'in'} {p.location}
                   {/if}
+                  <span class=mx-1>ǀ</span>
+                  <a class='hover:text-black transition border-b border-transparent hover:border-black inline'
+                     href='https://pokemondb.net/pokedex/{id}'
+                     title='Pokémon DB Link for {id}'
+                     rel=noreferrer target=_blank >
+                    Info
+                    <Icon src={External} className='fill-current inline -mt-0.5' />
+                  </a>
+
                 </span>
               </PokemonCard>
             </span>

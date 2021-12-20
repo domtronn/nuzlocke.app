@@ -64,7 +64,6 @@
       rounded
       color=yellow
       src={Bin}
-      track=delete-save
       title='Delete save'
       on:click={ondelete} />
 
@@ -72,7 +71,6 @@
       rounded
       color=yellow
       src={Share}
-      track=transfer-save
       title='Transfer save'
       on:click={onshare} />
 

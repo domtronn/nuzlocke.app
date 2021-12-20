@@ -30,7 +30,7 @@
   <span class='absolute text-2xl -mt-2 font-mono top-8 -translate-x-1/2'>
     <Tooltip> Based on {opp.name}'s moveset </Tooltip>
 
-    {toFraction(dmg[team.alias][opp.alias] || 1)}x
+    {toFraction(dmg[team.sprite][opp.sprite] || 1)}x
   </span>
 </div>
 
@@ -39,11 +39,11 @@
   <span class='font-normal text-tiny'>Dmg types</span>
   <div class='flex gap-x-1 items-center my-1'>
     <TypeBadge type=physical />
-    {moves[opp.alias]?.physical || 0}%
+    {moves[opp.sprite]?.physical || 0}%
   </div>
   <div class='flex gap-x-1 items-center'>
     <TypeBadge type=special />
-    {moves[opp.alias]?.special || 0}%
+    {moves[opp.sprite]?.special || 0}%
   </div>
 </div>
 
@@ -52,12 +52,12 @@
   <span class='font-normal text-tiny'>
     {opp.name}'s weaknesses
   </span>
-  {#each toGroups(opp.alias) as [mod, types]}
-    <div class='inline-flex items-center tracking-normal leading-5 text-xl font-mono'>
+  {#each toGroups(opp.sprite) as [mod, types], i}
+    <div class='flex items-center tracking-normal leading-5 text-xl font-mono'>
       <span>{toFraction(mod)}x</span>
-      <div class='transform scale-75 origin-left ml-1'>
+      <div class='transform scale-75 origin-left ml-1 flex flex-wrap gap-1 lg:w-60'>
         {#each types as type}
-          <TypeBadge className='text-xs mr-1' {type} />
+          <TypeBadge {type} />
         {/each}
       </div>
     </div>

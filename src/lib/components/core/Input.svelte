@@ -1,5 +1,6 @@
 <script>
-  export let name, value = null, color = '', className = '', placeholder = '', rounded = false
+  export let name, value = null, color = '', className = '', placeholder = '', icon, rounded = false
+  import Icon from 'svelte-icons-pack'
   name = name || placeholder
 </script>
 
@@ -10,8 +11,17 @@
   type=text
   bind:value={value}
   class:rounded-lg={rounded}
+  class:pl-8={!!icon}
+  class:pl-3={!icon}
   class='{color} {className}'
-/>
+  autocomplete=off
+  />
+{#if icon}
+  <span>
+    <Icon src={icon} className='fill-current absolute left-0 top-1/2 -translate-y-1/2 ml-3' />
+  </span>
+{/if}
+<slot />
 
 <style>
   :root {
@@ -29,15 +39,31 @@
 
   input {
     /* @apply  sm:text-xs */
-    @apply text-xxs sm:text-xs w-full transition-colors border-2 ring-2 ring-transparent text-gray-800 placeholder-gray-400 shadow-sm focus:outline-none px-3 h-10;
+    @apply text-xxs sm:text-xs w-full transition-colors border-2 ring-2 ring-transparent text-gray-800 placeholder-gray-400 shadow-sm focus:outline-none pr-3 h-10;
     background-color: var(--input-bg);
     border-color: theme('colors.gray.200');
   }
 
-  :global(.dark) input {
+  :global(.dark) input
+  {
     @apply text-gray-100 placeholder-gray-500;
     border-color: theme('colors.gray.600');
   }
+
+  :global(.dark) span { @apply text-gray-500 transition }
+
+  span { @apply text-gray-400 transition }
+
+  input:hover + span,
+  input:focus + span {
+    @apply text-gray-800
+  }
+
+  :global(.dark) input:hover + span,
+  :global(.dark) input:focus + span {
+    @apply text-gray-100
+  }
+
 
   input:hover { border-color: var(--inp-focus-2); }
   input:focus {
@@ -57,4 +83,23 @@
     width: 1px;
   }
 
+  @media (max-width: theme('screens.sm')) {
+    input.sm\:inverted:hover + span,
+    input.sm\:inverted:focus + span {
+      @apply text-gray-100;
+    }
+
+    :global(.dark) input.sm\:inverted:hover + span,
+    :global(.dark) input.sm\:inverted:focus + span {
+      @apply text-gray-800;
+    }
+
+    input.sm\:inverted {
+      @apply bg-black text-white;
+    }
+
+    :global(.dark) input.sm\:inverted {
+      @apply bg-gray-50 text-black;
+    }
+  }
 </style>

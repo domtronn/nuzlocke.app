@@ -31,11 +31,14 @@
   const handleSelect = id => () => selected === id ? selected = null : selected = id
 
   let gen = 'All'
-  const gens = ['All']
-    .concat(['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII'])
-    .map((l, i) => ({ label: i === 0 ? l : `Gen ${l}`, val: l }))
+  const gens = [
+    { label: 'All', val: 'All' },
+    { label: 'Rom Hacks', val: 'romhack' },
+  ].concat(
+    ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII']
+      .map((l, i) => ({ label: `Gen ${l}`, val: l }))
+  )
 
-  $: trackClass = `umami--click--submit-${selected}`
   $: selectedGame = validGames[selected]
   $: disabled = !gameName.length || !selected
 </script>
@@ -75,7 +78,7 @@
       </div>
     </AutoComplete>
 
-    <Button rounded disabled={disabled} className={trackClass} on:click={handleNewGame}>
+    <Button rounded disabled={disabled} on:click={handleNewGame}>
       Create game
     </Button>
   </div>
@@ -89,24 +92,21 @@
           on:click={handleSelect(id)}
           on:mouseenter={togglehover}
           on:mouseleave={togglehover}
-          class='group w-full text-center text-xs hover:text-yellow-500 dark:hover:text-yellow-300 transition font-medium text-wrap cursor-pointer'
+          class='group w-full text-center text-xs hover:text-yellow-500 dark:hover:text-yellow-300 transition-colors font-medium text-wrap cursor-pointer'
+          class:dark:text-yellow-300={selected === id}
+          class:text-yellow-500={selected === id}
         >
           <Picture
             src={game.logo}
             aspect=192x96
             alt={'Pokémon ' + game.title + ' logo'}
-            className='w-24 mb-2 mx-auto transition group-hover:grayscale-0 {(selected && selected !== id) || hoverActive ? 'grayscale' : ''} {selected === id ? 'grayscale-0' : ''} cursor-pointer'
+            className='w-24 mb-2 mx-auto transition group-hover:grayscale-0 {(selected && selected !== id) || hoverActive ? 'grayscale' : ''} {selected === id ? 'drop-shadow-highlight grayscale-0' : ''} cursor-pointer'
             />
-          {game.title}
+          <strong>{game.title}</strong>
         </span>
       {/if}
     {/each}
   </div>
-
-  <i class='p-2 text-sm text-center text-gray-500 dark:text-gray-400 -mb-2'>
-    <b>N.B.</b> Missing games haven't had the data created for them yet,
-    <br />they will be updated regularly so check back soon for your favourite!
-  </i>
 
 </ScreenContainer>
 

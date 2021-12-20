@@ -86,6 +86,7 @@
         {/if}
 
         <a href="/new"
+           class:mt-7={!active || !active.game}
            class='tracking-widest hover:drop-shadow-text hover:text-yellow-300'
            sveltekit:prefetch
            on:mouseenter={toggleHover} on:mouseleave={toggleHover}
@@ -95,6 +96,7 @@
         </a>
 
         <a href="/saves"
+           class:mb-7={!active || !active.game}
            class='tracking-widest hover:drop-shadow-text hover:text-blue-400'
            sveltekit:prefetch
            on:mouseenter={toggleHover} on:mouseleave={toggleHover}
@@ -122,12 +124,26 @@
       </div>
     </PixelatedContainer>
   </div>
+  <p>
+    Keep track of your Pokémon encounters across multiple Nuzlocke
+    runs, and prepare for Gym battles and Rival fights so you never
+    wipe again! Get insights into team match ups, compare stat
+    blocks and get detail on Gym movesets & abilities.
+  </p>
 
 </main>
 
 <style>
   main { @apply container mx-auto h-screen -mt-16 flex flex-col justify-center; }
   main > div { @apply py-7 px-6 sm:px-4 overflow-hidden mt-10; }
+
+  p {
+    @apply max-w-lg mt-4 mx-auto text-center leading-4 text-tiny text-gray-900 px-4
+  }
+
+  :global(.dark) p {
+    @apply text-gray-400
+  }
 
   :global(.container__index) {
     @apply font-mono relative max-h-48 max-w-md mx-auto flex sm:flex-row justify-evenly items-center gap-y-2 text-3xl py-8 h-full w-auto;

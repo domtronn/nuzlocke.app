@@ -19,7 +19,10 @@
 
   const bosses = route.reduce((acc, r, i) => r.type === 'gym' ? acc.concat({ ...r, oid: i }) : acc, [])
   const grouped = groupBy('group', bosses)
-  const onnav = (value) => _ => dispatch('nav', { value })
+  const onnav = (value) => _ => {
+    show = !show
+    dispatch('nav', { value })
+  }
 
   const groups = ['gym-leader', 'elite-four', 'rival', 'evil-team']
 </script>
@@ -51,7 +54,7 @@
         document.getElementById('svelte').scrollIntoView({ behavior: 'smooth' })
         show = !show
       }}
-      class='umami--click--back-to-top text-sm -ml-6 -translate-x-0.5 inline-flex items-center gap-x-1 mt-2 underline transition hover:text-black dark:hover:text-gray-200 hover:cursor-pointer'
+      class='text-sm -ml-6 -translate-x-0.5 inline-flex items-center gap-x-1 mt-2 underline transition hover:text-black dark:hover:text-gray-200 hover:cursor-pointer'
     >
       <Icon src={ArrowToTop} size='1.3em' className='fill-current ml-1 -mr-.5' />
       Back to top
@@ -66,7 +69,7 @@
       {#each grouped[group] as b}
         <ul>
           <li class='text-xs underline hover:text-black dark:hover:text-gray-200 hover:scale-110 hover:cursor-pointer origin-left transition' on:click={onnav(b.oid)}>
-            {b.name}
+            {b.boss} at {b.name}
           </li>
         </ul>
       {/each}

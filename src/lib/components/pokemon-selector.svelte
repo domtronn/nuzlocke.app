@@ -1,7 +1,7 @@
 <script>
   export let id, location, store
 
-  import { read, patch } from '$lib/store'
+  import { read, readdata, patch } from '$lib/store'
 
   import { Natures, NaturesMap } from '$lib/data/natures'
   import { NuzlockeStates, NuzlockeGroups } from '$lib/data/states'
@@ -15,18 +15,37 @@
 
   import { onMount, getContext } from 'svelte'
 
-  let selected, nickname, status, nature
+  let selected, nickname, status, nature, search
+
+  export let encounters = []
+  let encounterItems = []
 
   let Particles, EvoModal
   onMount(() => {
+    const [data] = readdata()
+    const loc = data[location]
+    if (typeof loc?.pokemon !== 'undefined')
+      selected = loc
+
+    getPkmns(encounters)
+      .then(e => encounterItems = (encounters || []).map(id => e[id]).filter(i => i))
     import('$lib/components/particles').then(m => Particles = m.default)
     import('$lib/components/EvolutionModal.svelte').then(m => EvoModal = m.default)
   })
 
-  const { getAllPkmn, getPkmn } = getContext('game')
+  const { getAllPkmn, getPkmn, getPkmns } = getContext('game')
 
   let loading = true
-  store.subscribe(read(data => {
+  let evolines = new Set()
+  store && store.subscribe(read(data => {
+    getPkmns(
+      Object
+        .values(data)
+        .filter(p => p && (!p.status || NuzlockeGroups.Dupes.includes(p?.status)))
+        .map(p => p.pokemon)
+        .filter(i => i)
+    ).then(p => evolines = new Set(Object.values(p).map(p => p?.evoline)))
+
     const pkmn = data[location]
     if (!pkmn) return
 
@@ -41,7 +60,7 @@
         })
   }))
 
- $: {
+  $: {
    if (selected)
      store.update(patch({
        [location]: {
@@ -76,27 +95,36 @@
 
   const handleEvolution = (base, evos) => async () => handleSplitEvolution(base, evos)
 
- $: gray = ['Dead', 'Missed'].includes(status?.state)
+  $: gray = ['Dead', 'Missed'].includes(status?.state)
 </script>
 
-<div class='grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-y-3 md:gap-y-2 lg:gap-y-0 gap-x-2 flex'>
+<div class='w-full sm:w-auto grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-y-3 md:gap-y-2 lg:gap-y-0 gap-x-2 flex'>
   <span class=location>
+  {#if $$slots.location}
+    <slot name=location />
+  {:else}
     {location}
-  </span>
+  {/if}
+</span>
 
   <AutoComplete
     rounded
-    fetch={getAllPkmn}
+    fetch={search ? getAllPkmn : null}
+    items={search ? null : encounterItems}
     inset={!!selected}
-    bind:selected={selected}
+    bind:search
+    bind:selected
     name='{location} Encounter'
     placeholder=Encounter
 
     className=col-span-2
   >
-    <span class='flex items-center h-8' slot=item let:item let:label>
-      <PIcon name={item.sprite} className='transform scale-75 md:scale-100 -mb-4 -ml-6 -mt-5 -mr-2' />
+    <span class='flex items-center h-8' class:dupe={evolines.has(item?.evoline)} slot=item let:item let:label>
+      <PIcon name={item?.sprite} className='transform scale-75 md:scale-100 -mb-4 -ml-6 -mt-5 -mr-2' />
       {@html label}
+      {#if evolines.has(item?.evoline)}
+        <span class='dupe__span absolute right-0'>dupe</span>
+      {/if}
     </span>
 
     <svelte:fragment slot=icon let:iconClass>
@@ -120,7 +148,7 @@
     bind:value={nickname}
     name='{location} Nickname'
     placeholder=Nickname
-    className=col-span-2
+    className='col-span-2 {!selected ? 'hidden sm:block' : ''}'
   />
 
   <AutoComplete
@@ -132,7 +160,7 @@
     placeholder=Status
     label=state
     inset={status ? '2rem' : null}
-    className=col-span-1
+    className='col-span-1 {!selected ? 'hidden sm:block' : ''}'
   >
     <svelte:fragment slot=icon let:iconClass let:selected>
       {#if selected}
@@ -153,7 +181,7 @@
     bind:selected={nature}
     name='{location} Nature'
     placeholder=Nature
-    className=col-span-1
+    className='col-span-1 {!selected ? 'hidden sm:block' : ''}'
     dropdownClass='-translate-x-1/2 -ml-1 sm:translate-x-0 sm:ml-0'
   >
     <div class='flex inline-flex justify-between w-full py-2 -mx-1 items-center' slot=item let:item let:label>
@@ -173,12 +201,11 @@
     </div>
   </AutoComplete>
 
-  <span class='text-left inline-flex gap-x-2'>
+  <span class='text-left inline-flex gap-x-2 {!selected ? 'hidden sm:block' : ''}'>
     <IconButton
       rounded
       src={Bin}
       title=Clear
-      track=clear
       on:click={handleClear}
     />
 
@@ -187,7 +214,6 @@
         rounded
         src={Deceased}
         title='Kill {selected.name}'
-        track=kill
         on:click={handleStatus(5)}
       />
     {/if}
@@ -199,7 +225,6 @@
         color=orange
         className=-translate-y-0.5
         on:click={handleStatus(1)}
-        track=capture
         title='Capture {selected.name}'
       />
     {/if}
@@ -210,7 +235,6 @@
         name=dawn-stone
         className=-translate-y-0.5
         color=green
-        track=evolve
         title='Evolve {selected.name}'
         on:click={handleEvolution(selected.sprite, selected.evos)}
       />
@@ -220,6 +244,10 @@
 </div>
 
 <style>
+  .dupe {
+    @apply opacity-25 grayscale mr-2 text-tiny;
+  }
+
   .location {
     @apply col-span-2 sm:col-span-1 md:col-span-4 lg:col-span-1 lg:text-right mr-4 sm:text-sm text-lg mt-4 sm:mt-0 h-full font-medium sm:font-normal flex lg:justify-end items-center;
   }
