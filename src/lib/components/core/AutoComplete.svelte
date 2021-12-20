@@ -216,6 +216,16 @@
     }
   }
 
+  @media (hover: none) {
+    :global(div.autocomplete-list-item:hover),
+    :global(div.autocomplete-list-item.selected)
+    {
+      color: var(--auc-fg) !important;
+      background-color: var(--auc-bg) !important;
+    }
+  }
+
+
   label {
     border: 0;
     clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
