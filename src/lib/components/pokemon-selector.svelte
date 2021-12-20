@@ -32,7 +32,7 @@
     const [data] = readdata()
     const loc = data[location]
     if (typeof loc?.pokemon !== 'undefined')
-      selected = loc.pokemon
+      selected = { ...loc, alias: loc.pokemon, sprite: loc.pokemon }
 
     getPkmns(encounters)
       .then(e => encounterItems = (encounters || []).map(id => e[id]).filter(i => i))
