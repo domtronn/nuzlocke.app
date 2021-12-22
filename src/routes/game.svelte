@@ -17,7 +17,7 @@
   import Games from '$lib/data/games.json'
   import deferStyles from '$lib/utils/defer-styles'
   import debounce from '$lib/utils/debounce'
-  import { getGame, readdata } from '$lib/store'
+  import { getGame, read, readdata } from '$lib/store'
 
   let gameStore, gameKey, gameData
   let routeEl
@@ -25,7 +25,7 @@
   let search = ''
 
   let filter = 0
-  const filters = ['Nuzlocke', 'Routes', 'Bosses']
+  const filters = ['Nuzlocke', 'Routes', 'Bosses', 'Progress']
 
   let bossFilter = 'all'
   const bossFilters = [
@@ -51,11 +51,14 @@
     if (browser && !id) return window.location = '/'
 
     gameStore = getGame(id)
-    gameData = data
     gameKey = key
 
     deferStyles(`/assets/items/${key}.css`)
     fetchRoute(Games[key].pid).then(r => resolve(r))
+
+    gameStore.subscribe(read(game => {
+      $: gameData = game
+    }))
   })
 
   const _onsearch = (e) => search = e.detail.search
@@ -77,6 +80,11 @@
 
     const r = routes[Math.min(i, routes.length - 1)]
     return { ...r, id: i }
+  }
+
+  const oncontinue = (route, gameData) => _ => {
+    show = !show
+    routeEl.setroute(latestnav(route, gameData))()
   }
 
   let show = false
@@ -105,10 +113,7 @@
             <button
               slot='continue'
               class='text-sm underline inline-flex items-center -ml-6 transition-colors dark:hover:text-gray-200 hover:text-black'
-              on:click={_ => {
-                show = !show
-                routeEl.setroute(latestnav(route, gameData))()
-              }}
+              on:click={oncontinue(route, gameData)}
             >
               <Icon size='1.2rem' className='fill-current mr-1' src={Arrow} />
               Continue at {latestnav(route, gameData).name}
@@ -126,6 +131,7 @@
                   Continue at {latestnav(route, gameData).name}
                   <Icon className='fill-current' src={Arrow} />
                 </button>
+              {:else if filter === 3}
               {/if}
 
               <Tabs name=filter tabs={filters} bind:selected={filter} />
@@ -135,6 +141,15 @@
                   <Tabs name=bosses tabs={bossFilters} bind:selected={bossFilter} />
                 </span>
               {/if}
+
+              {#if filter === 3}
+                <i transition:slide={{ duration: 250 }} class='leading-6 dark:text-gray-400 text-sm'>
+                  Progress Mode shows the latest routes & upcoming bosses
+                  <br />
+                  <b>{latestnav(route, gameData).id}</b> earlier items are hidden
+                </i>
+              {/if}
+
             </div>
 
             <div class='fixed md:relative bottom-6 md:bottom-0 md:shadow-none shadow-lg' style='z-index: 4444;'>
@@ -150,6 +165,7 @@
             bind:this={routeEl}
             className='-mt-8 sm:mt-0'
             game={{ data: gameData, store: gameStore, key: gameKey }}
+            progress={latestnav(route, gameData).id}
           />
 
         </main>

@@ -14,7 +14,7 @@
   import PokemonSelector from '$lib/components/pokemon-selector.svelte'
   import IntersectionObserver from 'svelte-intersection-observer'
 
-  export let route, game, filter, bossFilter, search, className = ''
+  export let route, game, filter, bossFilter, search, progress = '', className = ''
   const { store, key, data } = game
 
   let starter = data.__starter || 'fire'
@@ -54,17 +54,20 @@
       || NuzlockeStates[item.status]?.state?.toLowerCase()?.includes(s) // Search by status status
   }
 
-  $: filtered = insertList(route, custom).filter(r => {
+  $: filtered = insertList(route.map((o, id) => ({ ...o, oid: id })), custom).filter(r => {
+    if (filter === 3 && !search) return r.origPos >= progress
     if (!search) return true
     const item = game.data[r.name]
     const s = search.toLowerCase()
 
-    if (r.type === 'custom') console.log(r)
-
-    return !item
+    const match = !item
       ? routefilter(s, r)
       : routefilter(s, r) || pokemonfilter(s, item)
+
+    return filter === 3 ? match && r.origPos >= progress : match
   })
+
+  $: filtered, console.log(filtered)
 
   /** Event Handlers */
   const setstarter = (e) => {
@@ -89,10 +92,14 @@
   }
 
   /** Predicates */
-  const isStarterRoute = (r, filter) => r.type === 'route' && r.name.toLowerCase() === 'starter' && [0, 1].includes(filter)
-  const isRoute = (r, filter) => r.type === 'route' && [0, 1].includes(filter)
-  const isCustom = (r, filter) => r.type === 'custom' && [0, 1].includes(filter)
-  const isGym = (r, filter) => r.type === 'gym' && [0, 2].includes(filter) && (filter === 0 || bossFilter === 'all' || bossFilter === r.group)
+  const routeIds = [0, 1, 3]
+  const bossIds = [0, 2, 3]
+
+  const isStarterRoute = (r, filter) => r.type === 'route' && r.name.toLowerCase() === 'starter' && routeIds.includes(filter)
+  const isRoute = (r, filter) => r.type === 'route' && routeIds.includes(filter)
+  const isCustom = (r, filter) => r.type === 'custom' && routeIds.includes(filter)
+  const isGym = (r, filter) => r.type === 'gym' && bossIds.includes(filter) && (filter === 0 || bossFilter === 'all' || bossFilter === r.group)
+
 </script>
 
 <ul class='flex flex-col gap-y-4 lg:gap-y-2 {className}'>

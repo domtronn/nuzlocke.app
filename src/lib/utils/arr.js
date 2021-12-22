@@ -16,7 +16,10 @@ export const filterObj = (o, f) => Object.entries(o).filter(([, v]) => f(v)).red
 export const chunk = (arr, size) =>
   Array.from({ length: Math.ceil(arr.length / size) }, (v, i) =>
     arr.slice(i * size, i * size + size)
-  );
+  )
 
 export const insert = (arr, item, i) => [...arr.slice(0, i), item, ...arr.slice(i)]
-export const insertList = (arr, items, indexProp = 'index') => items.reduce((acc, item) => insert(acc, item, item[indexProp]), arr)
+export const insertList = (arr, items, indexProp = 'index') => items.reduce((acc, item) => {
+  const last = acc[acc.length - 1]
+  return insert(acc, { ...item, origPos: last.origPos }, item[indexProp])
+}, arr.map((i, origPos) => ({ ...i, origPos })))
