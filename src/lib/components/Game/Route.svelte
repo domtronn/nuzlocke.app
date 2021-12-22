@@ -78,7 +78,14 @@
   export const setroute = ({ name, id }) => () => setloc(`route-${name}`, id + 10)
   const setloc = (id, i) => {
     limit = Math.max(limit, i + 20)
-    setTimeout(() => document.getElementById(id).scrollIntoView({ behavior: 'smooth' }), 50)
+    setTimeout(() => {
+      const offset = window.innerWidth < 700 ? 38 : 76
+      const y = document
+            .getElementById(id)
+            .getBoundingClientRect().top + window.pageYOffset
+
+      window.scrollTo({ top: y - offset, behavior: 'smooth' })
+    }, 50)
   }
 
   /** Predicates */
