@@ -26,7 +26,7 @@
   let search = ''
 
   let filter = 0
-  const filters = ['Nuzlocke', 'Routes', 'Bosses', 'Upcoming']
+  const filters = ['Nuzlocke', 'Bosses', 'Upcoming']
 
   let bossFilter = 'all'
   const bossFilters = [
@@ -121,7 +121,7 @@
 
           <div class='flex flex-col gap-y-4 lg:gap-y-0 md:flex-row justify-between items-start mb-6'>
             <div class='flex flex-col gap-y-2'>
-              {#if [0, 1].includes(filter)}
+              {#if filter === 0}
                 <button
                   transition:slide={{ duration: 250 }}
                   class='text-sm inline-flex items-center'
@@ -134,13 +134,13 @@
 
               <Tabs name=filter tabs={filters} bind:selected={filter} />
 
-              {#if filter === 2}
+              {#if filter === 1}
                 <span transition:slide={{ duration: 250 }}>
                   <Tabs name=bosses tabs={bossFilters} bind:selected={bossFilter} />
                 </span>
               {/if}
 
-              {#if filter === 3}
+              {#if filter === 2}
                 <span transition:slide={{ duration: 250 }} class='leading-5 inline-block tracking-tight dark:text-gray-400 text-sm -mb-4'>
                   <Icon size=1.2em src={Hide} className='inline-block -mt-1 mr-1 fill-current'/><b>{latestnav(route, gameData).id}</b> items hidden
                 </span>

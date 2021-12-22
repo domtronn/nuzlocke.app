@@ -55,7 +55,7 @@
   }
 
   $: filtered = insertList(route.map((o, id) => ({ ...o, oid: id })), custom).filter(r => {
-    if (filter === 3 && !search) return r.origPos >= progress
+    if (filter === 2 && !search) return r.origPos >= progress
     if (!search) return true
     const item = game.data[r.name]
     const s = search.toLowerCase()
@@ -64,7 +64,7 @@
       ? routefilter(s, r)
       : routefilter(s, r) || pokemonfilter(s, item)
 
-    return filter === 3 ? match && r.origPos >= progress : match
+    return filter === 2 ? match && r.origPos >= progress : match
   })
 
   /** Event Handlers */
@@ -90,8 +90,8 @@
   }
 
   /** Predicates */
-  const routeIds = [0, 1, 3]
-  const bossIds = [0, 2, 3]
+  const routeIds = [0, 2]
+  const bossIds = [0, 1, 2]
 
   const isStarterRoute = (r, filter) => r.type === 'route' && r.name.toLowerCase() === 'starter' && routeIds.includes(filter)
   const isRoute = (r, filter) => r.type === 'route' && routeIds.includes(filter)
