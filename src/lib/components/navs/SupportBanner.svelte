@@ -26,7 +26,7 @@
   <div style='z-index:9999999' transition:slide={{ y: 200, duration: 500, delay:200 }} class='z-50 w-auto fixed rounded-xl right-0 bottom-0 m-2 md:m-6 px-4 py-3 dark:text-gray-800 font-medium dark:bg-white bg-gray-100 shadow-lg'>
     <div class='container mx-auto inline-flex text-xs text-right md:text-sm lg:text-base items-center justify-between'>
       <span class='leading-4 sm:leading-5'>
-        Hey <span aria-role=img>👋</span> I hope you're enjoying the <b>Nuzlocke tracker</b>!
+        Hey <span role=img>👋</span> I hope you're enjoying the <b>Nuzlocke tracker</b>!
         <br class='hidden sm:block' />Would you consider supporting me to make it awesome?
       </span>
       <div class='flex flex-row-reverse sm:flex-row'>

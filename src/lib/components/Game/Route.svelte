@@ -67,8 +67,6 @@
     return filter === 3 ? match && r.origPos >= progress : match
   })
 
-  $: filtered, console.log(filtered)
-
   /** Event Handlers */
   const setstarter = (e) => {
     starter = e.detail.value

@@ -28,7 +28,7 @@ export async function post ({ body }) {
         defId,
         Object.fromEntries(
           team
-            .map(({ name: atkName, moves, item, ability, ...rest }) => {
+            .map(({ name: atkName, moves, item, ability }) => {
               return [atkName, moves.map(m => {
                 if (!m.power || m.damage_clas === 'status') return m
                 try {

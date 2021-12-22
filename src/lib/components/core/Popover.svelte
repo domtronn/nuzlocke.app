@@ -1,7 +1,7 @@
 <script>
   export let title, className = ''
 
-  import { onMount, setContext, getContext } from 'svelte'
+  import { onMount } from 'svelte'
   import { popover } from '$lib/store'
   import { shortuuid } from '$lib/utils/uuid'
 

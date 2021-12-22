@@ -12,8 +12,6 @@
       colorLight: '#fff', correctLevel: window.QRCode.CorrectLevel.H,
     })
   }
-
-  const gen = _ => qrCode.makeCode(value)
 </script>
 
 <LibLoader

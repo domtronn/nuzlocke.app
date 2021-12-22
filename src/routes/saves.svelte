@@ -14,7 +14,6 @@
   import { Button } from '$lib/components/core'
 
   import Modal from 'svelte-simple-modal'
-  import Icon from 'svelte-icons-pack'
   import Floppy from 'svelte-icons-pack/im/ImFloppyDisk'
 
   const FloppyIcon = {

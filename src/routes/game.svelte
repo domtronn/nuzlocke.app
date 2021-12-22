@@ -25,7 +25,7 @@
   let search = ''
 
   let filter = 0
-  const filters = ['Nuzlocke', 'Routes', 'Bosses', 'Progress']
+  const filters = ['Nuzlocke', 'Routes', 'Bosses', 'Upcoming']
 
   let bossFilter = 'all'
   const bossFilters = [
@@ -47,7 +47,7 @@
   onMount(async () => deferStyles('/assets/pokemon.css'))
 
   const setup = () => new Promise((resolve) => {
-    const [data, key, id] = readdata()
+    const [, key, id] = readdata()
     if (browser && !id) return window.location = '/'
 
     gameStore = getGame(id)
@@ -56,9 +56,7 @@
     deferStyles(`/assets/items/${key}.css`)
     fetchRoute(Games[key].pid).then(r => resolve(r))
 
-    gameStore.subscribe(read(game => {
-      $: gameData = game
-    }))
+    gameStore.subscribe(read(game => gameData = game))
   })
 
   const _onsearch = (e) => search = e.detail.search
@@ -131,7 +129,6 @@
                   Continue at {latestnav(route, gameData).name}
                   <Icon className='fill-current' src={Arrow} />
                 </button>
-              {:else if filter === 3}
               {/if}
 
               <Tabs name=filter tabs={filters} bind:selected={filter} />
@@ -144,7 +141,7 @@
 
               {#if filter === 3}
                 <i transition:slide={{ duration: 250 }} class='leading-6 dark:text-gray-400 text-sm'>
-                  Progress Mode shows the latest routes & upcoming bosses
+                  Upcoming Mode shows the upcoming routes & bosses
                   <br />
                   <b>{latestnav(route, gameData).id}</b> earlier items are hidden
                 </i>

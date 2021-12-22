@@ -6,7 +6,7 @@ const opts = {
   port: 443
 }
 
-export async function get ({ params, host, req }) {
+export async function get ({ params, host }) {
   return new Promise(resolve => {
     const req = https.request(
       { ...opts, path: '/' + params.id },
