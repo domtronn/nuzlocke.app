@@ -2,6 +2,7 @@
   export let id, store, location, locationName = '', type = '', infolink = ''
 
   import { read, readdata, patch, removelocation } from '$lib/store'
+  import { capitalise } from '$lib/utils/string'
 
   import { fly } from 'svelte/transition'
   import { Natures, NaturesMap } from '$lib/data/natures'
@@ -32,9 +33,10 @@
   onMount(() => {
     const [data] = readdata()
     const loc = data[location]
-    // FIXME: Maybe this isn't the best thing to go for?
-    // if (typeof loc?.pokemon !== 'undefined')
-    //   selected = { ...loc, alias: loc.pokemon, sprite: loc.pokemon }
+    if (typeof loc?.pokemon !== 'undefined') {
+      const o = { ...loc, alias: loc.pokemon, sprite: loc.pokemon, label: capitalise(loc.pokemon) }
+      selected = o
+    }
 
     getPkmns(encounters)
       .then(e => encounterItems = (encounters || []).map(id => e[id]).filter(i => i))
