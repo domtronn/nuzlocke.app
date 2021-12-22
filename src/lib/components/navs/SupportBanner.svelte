@@ -23,28 +23,34 @@
 </script>
 
 {#if mounted && $consent && $support !== SUPPORTED}
-  <div transition:slide={{ y: 200, duration: 500, delay:200 }} class='z-50 w-auto fixed rounded-xl right-0 bottom-0 m-2 md:m-6 px-4 py-3 dark:text-gray-800 font-medium dark:bg-white bg-gray-100 shadow-lg'>
+  <div style='z-index:9999999' transition:slide={{ y: 200, duration: 500, delay:200 }} class='z-50 w-auto fixed rounded-xl right-0 bottom-0 m-2 md:m-6 px-4 py-3 dark:text-gray-800 font-medium dark:bg-white bg-gray-100 shadow-lg'>
     <div class='container mx-auto inline-flex text-xs text-right md:text-sm lg:text-base items-center justify-between'>
-      <span class='leading-5'>
-        Hope you're enjoying the <b>Nuzlocke tracker</b>!
-        <br />Would you consider supporting me to make it awesome?
+      <span class='leading-4 sm:leading-5'>
+        Hey <span aria-role=img>👋</span> I hope you're enjoying the <b>Nuzlocke tracker</b>!
+        <br class='hidden sm:block' />Would you consider supporting me to make it awesome?
       </span>
-      <a href="https://www.buymeacoffee.com/nuzlocketracker" target="_blank">
+      <div class='flex flex-row-reverse sm:flex-row'>
+        <a href="https://www.buymeacoffee.com/nuzlocketracker" target="_blank">
+          <button
+            title='Open support link'
+            on:click={support.set.bind({}, SUPPORTED)}
+            class='umami--click--support ml-2 sm:ml-4 font-sans transition text-xs text-pink-50 hover:ring-pink-200 hover:active:ring-pink-500 hover:active:bg-pink-500 ring-white ring-2 rounded-lg bg-pink-400 px-4 py-4 sm:py-2'
+            >
+            <Icon src={Coffee} size='1.2rem' className='hidden md:inline fill-current mr-px -ml-1' />
+            <span class='hidden sm:inline-block'>Buy me a Coffee</span>
+            <span class='sm:hidden'>Okay</span>
+          </button>
+        </a>
         <button
+          title='Close support modal'
           on:click={support.set.bind({}, SUPPORTED)}
-          class='umami--click--support ml-4 font-sans transition text-xs text-pink-50 hover:ring-pink-200 hover:active:ring-pink-500 hover:active:bg-pink-500 ring-white ring-2 rounded-lg bg-pink-400 px-4 py-2'
+          class='umami--click--no-support ml-2 font-sans transition text-xs text-gray-700 hover:ring-gray-100 hover:active:ring-gray-300 hover:active:bg-gray-300 ring-white ring-2 rounded-lg bg-gray-200 px-4 py-4 sm:py-2'
           >
-          <Icon src={Coffee} size='1.2rem' className='hidden md:inline fill-current mr-px -ml-1' />
-          Buy me a Coffee
+          <Icon src={Coffee} size='1.2rem' className='w-0 hidden md:inline fill-current mr-px -ml-1' />
+          <span class='hidden sm:inline-block'>No thanks</span>
+          <span class='sm:hidden'>No</span>
         </button>
-      </a>
-      <button
-        on:click={support.set.bind({}, SUPPORTED)}
-        class='umami--click--no-support ml-2 font-sans transition text-xs text-gray-700 hover:ring-gray-100 hover:active:ring-gray-300 hover:active:bg-gray-300 ring-white ring-2 rounded-lg bg-gray-200 px-4 py-2'
-      >
-        <Icon src={Coffee} size='1.2rem' className='w-0 hidden md:inline fill-current mr-px -ml-1' />
-        No thanks
-      </button>
+      </div>
     </div>
   </div>
 {/if}
