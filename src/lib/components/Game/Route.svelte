@@ -1,4 +1,5 @@
 <script>
+  import { afterUpdate } from 'svelte'
   import { fade } from 'svelte/transition'
   import { NuzlockeStates } from '$lib/data/states'
   import { patch, addlocation, removelocation, read } from '$lib/store'
@@ -78,17 +79,29 @@
 
   export const setnav = (e) => setloc(`boss-${e.detail.value}`, e.detail.value + 20)
   export const setroute = ({ name, id }) => () => setloc(`route-${name}`, id + 10)
+
+  let scroll
+  const scrollToItem = (id) => {
+    const offset = window.innerWidth < 700 ? 38 : 76
+    const y = document
+          .getElementById(id)
+          .getBoundingClientRect().top + window.pageYOffset
+
+    window.scrollTo({ top: y - offset, behavior: 'smooth' })
+  }
+
   const setloc = (id, i) => {
     limit = Math.max(limit, i + 20)
-    setTimeout(() => {
-      const offset = window.innerWidth < 700 ? 38 : 76
-      const y = document
-            .getElementById(id)
-            .getBoundingClientRect().top + window.pageYOffset
-
-      window.scrollTo({ top: y - offset, behavior: 'smooth' })
-    }, 50)
+    document.getElementById(id)
+      ? scrollToItem(id)
+      : (scroll = id)
   }
+
+  afterUpdate(() => {
+    if (!scroll) return
+    setTimeout(scrollToItem.bind({}, scroll))
+    scroll = null
+  })
 
   /** Predicates */
   const routeIds = [0, 2]
