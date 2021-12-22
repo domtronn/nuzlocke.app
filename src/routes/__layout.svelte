@@ -12,7 +12,7 @@
   import { browser, dev } from '$app/env'
 
   import { getGen } from '$lib/store'
-  import { GameHeading, NavHeading, CookieBanner, SupportBanner } from '$lib/components/navs'
+  import { GameHeading, NavHeading, CookieBanner } from '$lib/components/navs'
 
   import Icon from 'svelte-icons-pack'
   import Coffee from 'svelte-icons-pack/si/SiBuymeacoffee'
@@ -92,7 +92,6 @@
 <slot />
 
 <CookieBanner />
-<SupportBanner />
 
 <footer>
   <p>
