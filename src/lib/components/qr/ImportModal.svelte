@@ -108,6 +108,4 @@
   :global(.dark) section {
     @apply bg-gray-800 text-white
   }
-
-
 </style>

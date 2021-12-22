@@ -17,7 +17,7 @@
       .getCameras()
       .catch(e => dispatch('error', { value: e.toString() }))
       .then(cameras => {
-        if (!cameras.length) dispatch('error', { value: 'No cameras' })
+        if (!cameras || !cameras.length) dispatch('error', { value: 'No cameras' })
 
         camera = cameras.find(c => c.name.indexOf('back') > -1) || cameras[0]
         scanner.start(camera)
