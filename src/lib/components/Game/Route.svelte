@@ -54,7 +54,7 @@
       || NuzlockeStates[item.status]?.state?.toLowerCase()?.includes(s) // Search by status status
   }
 
-  $: filtered = insertList(route.map((o, id) => ({ ...o, oid: id })), custom).filter(r => {
+  $: filtered = insertList(route, custom).filter(r => {
     if (filter === 2 && !search) return r.origPos >= progress
     if (!search) return true
     const item = game.data[r.name]
