@@ -140,9 +140,9 @@
               {/if}
 
               {#if filter === 3}
-                <i transition:slide={{ duration: 250 }} class='leading-6 dark:text-gray-400 text-sm'>
-                  Upcoming Mode shows the upcoming routes & bosses
-                  <br />
+                <i transition:slide={{ duration: 250 }} class='leading-5 tracking-tight dark:text-gray-400 text-sm -mb-4'>
+                  This view shows upcoing routes & bosses after your last catch
+                  <br class='hidden sm:block' />
                   <b>{latestnav(route, gameData).id}</b> earlier items are hidden
                 </i>
               {/if}
