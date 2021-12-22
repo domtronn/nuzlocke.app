@@ -1,7 +1,7 @@
 import games from '$lib/data/games.json'
 import patches from '$lib/data/patches.json'
 
-import Pokemon, { filterdata } from '../pokemon.json/_data.js'
+import Pokemon, { filterdata, sumObj } from '../pokemon.json/_data.js'
 const base = filterdata(Pokemon)
 
 export async function get({ params }) {
@@ -13,14 +13,18 @@ export async function get({ params }) {
 
   const items = base.map(p => {
     const patch = pokemon[p.alias] || pokemon[p.sprite] || {}
+    const baseStats = {
+      ...p.baseStats,
+      ...(patch.stats || {})
+    }
+
+    const total = sumObj(baseStats)
 
     return {
       ...p,
       types: patch.types || p.types,
-      baseStats: {
-        ...p.baseStats,
-        ...(patch.stats || {})
-      }
+      baseStats,
+      total
     }
   })
 

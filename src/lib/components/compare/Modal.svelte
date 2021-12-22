@@ -41,7 +41,7 @@
       // Fetch all gym pokemon from cache
       getPkmns(pokemon.map(p => p.name))
         .then(d => {
-          gym = Object.values(d)
+          gym = pokemon.reduce((acc, it) => acc.concat(d[it.name]), [])
           j = Math.max(gym.findIndex(i => i.alias === id), 0)
         })
 
@@ -52,7 +52,7 @@
           .filter(i => i.pokemon && (!i.status || NuzlockeGroups.Available.includes(i.status)))
           .map(p => getPkmn(p.pokemon).then(d => ({ ...p, ...d })))
       ).then(d => {
-        box = d
+        box = d.sort((a, b) => b.total - a.total)
         loading = false
       })
     }))
@@ -69,8 +69,8 @@
 
 <section class=pb-4>
   {#if !loading && !box.length}
-    <div class='bg-white px-4 py-8 text-center rounded-xl text-xl dark:bg-gray-900 dark:text-gray-50 shadow-lg'>
-      <p>You currently have no Pokémon to compare.</p>
+    <div class='bg-white px-6 py-8 text-center rounded-xl text-xl dark:bg-gray-900 dark:text-gray-50 shadow-lg'>
+      <p class='mb-4'>You currently have no Pokémon to compare.</p>
       <p>Go back out there and Catch 'em All!</p>
 
     </div>

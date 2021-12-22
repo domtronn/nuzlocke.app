@@ -35,6 +35,8 @@ export const format = ({ name, forme }) => {
   return name
 }
 
+export const sumObj = o => Object.values(o).reduce((acc, it) => acc + it, 0)
+
 export default mapObj(
   filterObj(
     Pokemon,
@@ -43,12 +45,13 @@ export default mapObj(
   pkmn => ({
     ...pkmn,
     imgId: FormMap[pkmn.alias] || pkmn.num,
+    total: sumObj(pkmn.baseStats),
     evoline: findEvoLine(pkmn),
     label: format(pkmn)
   })
 )
 
-const props = ['evos', 'evoline', 'types', 'name', 'sprite', 'label', 'alias', 'imgId', 'baseStats']
+const props = ['evos', 'evoline', 'types', 'name', 'sprite', 'label', 'alias', 'imgId', 'baseStats', 'total']
 export const filterdata = o => Object
   .values(o)
   .map((p) => ({
