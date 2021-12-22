@@ -21,6 +21,7 @@ export const IDS = {
   active: 'nuzlocke',
   saves: 'nuzlocke.saves',
   consent: 'nuzlocke.consent',
+  support: 'nuzlocke.support',
   game: id => `nuzlocke.${id}`,
 }
 
@@ -33,6 +34,7 @@ const createWritable = (id, f = val => browser && val && localStorage.setItem(id
 
 export const theme = createWritable(IDS.theme)
 export const consent = createWritable(IDS.consent)
+export const support = createWritable(IDS.support)
 export const activeGame = createWritable(IDS.active)
 export const savedGames = createWritable(IDS.saves)
 
