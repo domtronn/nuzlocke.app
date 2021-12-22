@@ -170,7 +170,7 @@
     bind:value={nickname}
     name='{location} Nickname'
     placeholder=Nickname
-    className='col-span-2 {!selected ? 'hidden sm:block' : ''}'
+    className='col-span-2 {!selected || status?.id === 4 ? 'hidden sm:block' : ''}'
   />
 
   <AutoComplete
@@ -182,7 +182,7 @@
     placeholder=Status
     label=state
     inset={status ? '2rem' : null}
-    className='col-span-1 {!selected ? 'hidden sm:block' : ''}'
+    className='{!selected ? 'hidden sm:block' : ''} {status?.id === 4 ? 'col-span-2 sm:col-span-1' : 'col-span-1'}'
   >
     <svelte:fragment slot=icon let:iconClass let:selected>
       {#if selected}
@@ -203,7 +203,7 @@
     bind:selected={nature}
     name='{location} Nature'
     placeholder=Nature
-    className='col-span-1 {!selected ? 'hidden sm:block' : ''}'
+    className='col-span-1 {!selected || status?.id === 4 ? 'hidden sm:block' : ''}'
     dropdownClass='-translate-x-1/2 -ml-1 sm:translate-x-0 sm:ml-0'
   >
     <div class='flex inline-flex justify-between w-full py-2 -mx-1 items-center' slot=item let:item let:label>
