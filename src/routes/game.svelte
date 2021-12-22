@@ -25,6 +25,7 @@
 
   let search = ''
 
+  $: filter, routeEl && routeEl.resetlimit()
   let filter = 0
   const filters = ['Nuzlocke', 'Bosses', 'Upcoming']
 

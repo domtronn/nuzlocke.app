@@ -20,7 +20,6 @@
   let starter = data.__starter || 'fire'
 
   let element
-  let limit = 10
 
   /** Custom route handlers */
   let custom = []
@@ -73,7 +72,9 @@
     game.store.update(patch({ __starter: starter }))
   }
 
+  let limit = 10
   const inclimit = _ => limit = limit + 5
+  export const resetlimit = _ => limit = 10
 
   export const setnav = (e) => setloc(`boss-${e.detail.value}`, e.detail.value + 20)
   export const setroute = ({ name, id }) => () => setloc(`route-${name}`, id + 10)
