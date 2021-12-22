@@ -13,6 +13,7 @@
 
   import Icon from 'svelte-icons-pack'
   import Arrow from 'svelte-icons-pack/bi/BiRightArrowAlt'
+  import Hide from 'svelte-icons-pack/bi/BiHide'
 
   import Games from '$lib/data/games.json'
   import deferStyles from '$lib/utils/defer-styles'
@@ -140,11 +141,9 @@
               {/if}
 
               {#if filter === 3}
-                <i transition:slide={{ duration: 250 }} class='leading-5 tracking-tight dark:text-gray-400 text-sm -mb-4'>
-                  This view shows upcoing routes & bosses after your last catch
-                  <br class='hidden sm:block' />
-                  <b>{latestnav(route, gameData).id}</b> earlier items are hidden
-                </i>
+                <span transition:slide={{ duration: 250 }} class='leading-5 inline-block tracking-tight dark:text-gray-400 text-sm -mb-4'>
+                  <Icon size=1.2em src={Hide} className='inline-block -mt-1 mr-1 fill-current'/><b>{latestnav(route, gameData).id}</b> items hidden
+                </span>
               {/if}
 
             </div>
