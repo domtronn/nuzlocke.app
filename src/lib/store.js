@@ -96,7 +96,7 @@ export const getBox = (cb = () => {}) => activeGame.subscribe(gameId => {
     cb(Object
        .values(data)
        .filter(i => i.pokemon)
-       .filter(({ status }) => status !== 5 && status !== 4))
+       .filter(({ status }) => NuzlockeGroups.Available.includes(status)))
   }))
 })
 
