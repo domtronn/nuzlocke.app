@@ -46,7 +46,7 @@
   setContext('game', {
     getAllPkmn: fetchData,
     getPkmn: id => fetchData().then((ps = []) => ps.find(p => p.num == id || p.name == id || p.alias == id || p.sprite == id)),
-    getPkmns: ids => fetchData()
+    getPkmns: (ids = []) => fetchData()
       .then((ps = []) => ps
             .filter(p => ids.includes(p.num) || ids.includes(p.name) || ids.includes(p.alias))
             .reduce((acc, it) => ({ ...acc, [it.alias]: it }), {})),

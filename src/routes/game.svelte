@@ -58,18 +58,21 @@
     deferStyles(`/assets/items/${key}.css`)
     fetchRoute(Games[key].pid).then(r => resolve(r))
 
-    gameStore.subscribe(read(game => gameData = game))
+    gameStore.subscribe(read(game => {
+      gameData = game
+    }))
   })
 
   const _onsearch = (e) => search = e.detail.search
   const onsearch = debounce(_onsearch, 350)
 
   const latestnav = (routes, game) => {
+    const custom = (game?.__custom || []).reduce((acc, c) => ({ ...acc, [c.id]: true }), {})
     const locations = new Set(
       Object
-        .values(game)
-        .filter(i => i.pokemon)
-        .map(i => i.location)
+        .entries(game)
+        .filter(([id, loc]) => loc.pokemon && !custom[id])
+        .map(([, i]) => i.location)
     )
 
     let i = 0

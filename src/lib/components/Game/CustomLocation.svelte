@@ -1,11 +1,23 @@
 <script>
-  export let store, id, value
-  import { patchlocation } from '$lib/store'
+  export let store, id
+  import { onMount } from 'svelte'
+  import { readdata, patchlocation } from '$lib/store'
 
   import Icon from 'svelte-icons-pack'
   import Edit from 'svelte-icons-pack/ai/AiOutlineEdit'
 
-  $: store.update(patchlocation({id, name: value}))
+  let value
+  onMount(() => {
+    const [data] = readdata()
+    const custom = (data?.__custom || [])
+    const match = custom.find(i => i.id === id)
+    value = match.name
+  })
+
+  const oninput = e => {
+    const val = e.target.innerText
+    store.update(patchlocation({ id, name: val }))
+  }
 </script>
 
 <div
@@ -14,12 +26,14 @@
   class:dark:text-gray-50={value}
   class='inline-flex items-center justify-end relative w-auto text-gray-500 border-gray-500 transition cursor-edit'>
   <span
-    bind:textContent={value}
     contenteditable
+    on:input={oninput}
     class:hover:border-black={value}
     class:dark:hover:border-gray-50={value}
-    class='flex select-text transition border-b border-transparent hover:border-gray-500 focus:border-black dark:focus:border-gray-50 dark:focus:text-gray-50 focus:text-black md:w-auto focus:w-auto text-left sm:text-right outline-none flex-row sm:flex-row-reverse items-center gap-x-2 lg:-ml-6 -mr-1'
-    />
+    class='transition border-b border-transparent hover:border-gray-500 focus:border-black dark:focus:border-gray-50 dark:focus:text-gray-50 focus:text-black md:w-auto focus:w-auto text-left sm:text-right outline-none flex-row sm:flex-row-reverse items-center gap-x-2 lg:-ml-6 -mr-1'
+  >
+    {value}
+  </span>
   <Icon
     size=1.4em
     src={Edit}

@@ -20,6 +20,6 @@ export const chunk = (arr, size) =>
 
 export const insert = (arr, item, i) => [...arr.slice(0, i), item, ...arr.slice(i)]
 export const insertList = (arr, items, indexProp = 'index') => items.reduce((acc, item) => {
-  const last = acc[acc.length - 1]
-  return insert(acc, Object.assign(item, { origPos: last.origPos }), item[indexProp])
+  const origPos = item[indexProp]
+  return insert(acc, Object.assign(item, { origPos }), item[indexProp])
 }, arr.map((i, origPos) => Object.assign(i, { origPos })))

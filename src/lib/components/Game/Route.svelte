@@ -156,7 +156,6 @@
           <svelte:fragment slot=location>
             <CustomLocation
               {store}
-              value={p.name}
               id={p.id}
               />
           </svelte:fragment>
