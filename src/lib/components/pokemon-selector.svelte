@@ -131,48 +131,50 @@
     {/if}
   </span>
 
-  <SettingsWrapper id=dupe-clause let:setting>
-    <AutoComplete
-      inset={selected ? true : '2.4em'}
-      rounded
-      fetch={search ? getAllPkmn : null}
-      items={search && setting !== 2 ? null : encounterItems}
-      bind:search
-      bind:selected
-      name='{location} Encounter'
-      placeholder='Find encounter'
+  <SettingsWrapper id=encounter-suggestions let:setting={suggest}>
+    <SettingsWrapper id=dupe-clause let:setting>
+      <AutoComplete
+        inset={selected ? true : '2.4em'}
+        rounded
+        fetch={search || suggest ? getAllPkmn : null}
+        items={search || !suggest ? null : encounterItems}
+        bind:search
+        bind:selected
+        name='{location} Encounter'
+        placeholder='Find encounter'
 
-      className='col-span-2 w-11/12 sm:w-full'
-      >
+        className='col-span-2 w-11/12 sm:w-full'
+        >
 
-      <span class='flex items-center h-8 px-4 py-5 md:py-6'
-            class:hidden={setting === 2 && evolines.has(item?.evoline)}
-            class:dupe={setting === 1 && evolines.has(item?.evoline)}
-            slot=item let:item let:label>
-        <PIcon name={item?.sprite} className='transform -mb-4 -ml-6 -mt-5 -mr-2' />
-        {@html label}
-        {#if setting === 1 && evolines.has(item?.evoline)}
-          <span class='absolute text-tiny right-4'>dupe</span>
-        {/if}
-      </span>
+        <span class='flex items-center h-8 px-4 py-5 md:py-6'
+              class:hidden={setting === 2 && evolines.has(item?.evoline)}
+              class:dupe={setting === 1 && evolines.has(item?.evoline)}
+              slot=item let:item let:label>
+          <PIcon name={item?.sprite} className='transform -mb-4 -ml-6 -mt-5 -mr-2' />
+          {@html label}
+          {#if setting === 1 && evolines.has(item?.evoline)}
+            <span class='absolute text-tiny right-4'>dupe</span>
+          {/if}
+        </span>
 
-      <svelte:fragment slot=icon let:iconClass>
-        {#if selected}
-          <div class='absolute left-4 top-2 z-50'>
-            {#if evoComplete}
-              <Particles icons={['ice-stone', 'dawn-stone', 'fire-stone']} on:end={() => evoComplete = false} />
-            {/if}
-            {#if captureComplete}
-              <Particles icons={['poke-ball', 'friend-ball', 'heavy-ball', 'master-ball']} on:end={() => captureComplete = false} />
-            {/if}
-          </div>
+        <svelte:fragment slot=icon let:iconClass>
+          {#if selected}
+            <div class='absolute left-4 top-2 z-50'>
+              {#if evoComplete}
+                <Particles icons={['ice-stone', 'dawn-stone', 'fire-stone']} on:end={() => evoComplete = false} />
+              {/if}
+              {#if captureComplete}
+                <Particles icons={['poke-ball', 'friend-ball', 'heavy-ball', 'master-ball']} on:end={() => captureComplete = false} />
+              {/if}
+            </div>
 
-          <PIcon name={selected.sprite} className='{gray ? 'filter grayscale' : ''} {iconClass}' />
-        {:else}
-          <Icon size=0.7em src={Search} className='fill-current left-3 text-gray-500 {iconClass}' />
-        {/if}
-      </svelte:fragment>
-    </AutoComplete>
+            <PIcon name={selected.sprite} className='{gray ? 'filter grayscale' : ''} {iconClass}' />
+          {:else}
+            <Icon size=0.7em src={Search} className='fill-current left-3 text-gray-500 {iconClass}' />
+          {/if}
+        </svelte:fragment>
+      </AutoComplete>
+    </SettingsWrapper>
   </SettingsWrapper>
 
   <Input
@@ -184,7 +186,7 @@
   />
 
   <SettingsWrapper id=permadeath on=1 condition={status?.id === 5}>
-    <div class='border-2 dark:border-gray-600 rounded-lg col-span-2 md:col-span-1 h-10 flex items-center text-sm dark:text-gray-200 text-gray-800 cursor-not-allowed'>
+    <div class='border-2 dark:border-gray-600 shadow-sm rounded-lg h-10 flex items-center text-sm dark:text-gray-200 text-gray-800 cursor-not-allowed'>
       <Icon className='fill-current mx-2' src={NuzlockeStates[5].icon} />
       Dead
     </div>
