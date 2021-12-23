@@ -16,6 +16,6 @@
   rounded
   src={Settings}
   title='Open game settings'
-  containerClassName='mr-2 absolute top-0 right-2 md:relative'
+  containerClassName='absolute top-0 right-2 md:relative'
   on:click={onopen}
 />
