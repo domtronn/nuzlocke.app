@@ -154,6 +154,7 @@
     :global(div.autocomplete-list),
     :global(.wide div.autocomplete-list)
     {
+      padding: 0 !important;
       width: auto !important;
     }
 
