@@ -213,7 +213,7 @@
                   <div class='card-controls absolute -bottom-4 flex left-1/2 -translate-x-1/2 border border-gray-200 bg-red-200 rounded-lg shadow-md'>
                     {#if Pokemon[p.pokemon].evos?.length}
                       <IconButton
-                        className='translate-y-1 transform scale-75'
+                        className='translate-y-1 -mb-px transform scale-75'
                         borderless
                         name=dawn-stone
                         on:click={handleEvo(Pokemon[p.pokemon], p)}
@@ -257,7 +257,7 @@
     background-color: white;
     width: calc(100% + 12px);
     left: -6px;
-    bottom: 50%;
+    bottom: calc(50% + 1px);
     z-index: -10;
     height: calc(50% + 1px);
   }
