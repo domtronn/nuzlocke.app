@@ -6,8 +6,8 @@
   import { Loader, Tabs } from '$lib/components/core'
 
   import { SupportBanner } from '$lib/components/navs'
-  import GameRoute from '$lib/components/Game/Route.svelte'
-  import Search from '$lib/components/Game/Search.svelte'
+  import { GameRoute, Search } from '$lib/components/Game'
+
   import SideNav from '$lib/components/navs/SideNav.svelte'
   import Modal from 'svelte-simple-modal'
 

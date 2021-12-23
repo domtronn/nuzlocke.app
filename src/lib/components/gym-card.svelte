@@ -8,14 +8,16 @@
   import Pokemon from '$lib/components/pokemon-card.svelte'
   import TypeBadge from '$lib/components/type-badge.svelte'
   import Label from '$lib/components/label.svelte'
+
   import { Picture, PIcon, Accordion } from '$lib/components/core'
+  import { Wrapper as SettingWrapper } from '$lib/components/Settings'
 
   import Icon from 'svelte-icons-pack'
   import Badge from 'svelte-icons-pack/fi/FiRefreshCcw'
   import Ball from 'svelte-icons-pack/cg/CgPokemon'
 
   let CompareModal
-  onMount(() =>{
+  onMount(() => {
     import('$lib/components/compare')
       .then(i => CompareModal = i.CompareModal)
   })
@@ -98,9 +100,19 @@
             {/each}
           </span>
 
-          {#if levelCap && (type === 'gym-leader' || type === 'elite-four')}
+          <SettingWrapper id=level-caps on=1
+                          condition={levelCap && (type === 'gym-leader' || type === 'elite-four')}>
             <Label heading='Lvl cap' body={levelCap} />
-          {/if}
+          </SettingWrapper>
+
+          <SettingWrapper id=level-caps on=2
+                          condition={levelCap && (type === 'gym-leader' || type === 'elite-four' || type === 'rival')}>
+            <Label heading='Lvl cap' body={levelCap} />
+          </SettingWrapper>
+
+          <SettingWrapper id=level-caps on=3 condition={levelCap}>
+            <Label heading='Lvl cap' body={levelCap} />
+          </SettingWrapper>
         {/if}
       </div>
     </span>
