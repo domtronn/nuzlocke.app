@@ -295,7 +295,7 @@
           </button>
         </li>
 
-        <SettingsWrapper id=permadeath condition={status?.id === 5}>
+        <SettingsWrapper id=permadeath on=1 condition={status?.id === 5}>
           <li slot=else>
             <button on:click={handleClear}>
               <Icon src={Delete} className='fill-current mr-2'/>
