@@ -13,6 +13,7 @@
 
   import { getGen } from '$lib/store'
   import { GameHeading, NavHeading, CookieBanner } from '$lib/components/navs'
+  import Modal from 'svelte-simple-modal'
 
   import Icon from 'svelte-icons-pack'
   import Coffee from 'svelte-icons-pack/si/SiBuymeacoffee'
@@ -89,7 +90,14 @@
   <NavHeading />
 {/if}
 
-<slot />
+<Modal
+  closeButton={false}
+  styleBg={{ background: 'rgba(0, 0, 0, 0.8)', zIndex: 9999 }}
+  styleWindow={{ background: 'transparent !important' }}
+  styleContent={{ padding: '0 !important' }}
+>
+  <slot />
+</Modal>
 
 <CookieBanner />
 

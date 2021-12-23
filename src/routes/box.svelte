@@ -8,21 +8,29 @@
   import { Loader, IconButton } from '$lib/components/core'
   import TypeBadge from '$lib/components/type-badge.svelte'
 
-  import { getBox } from '$lib/store'
+  import { getBox, updatePokemon, killPokemon } from '$lib/store'
   import { types } from '$lib/data/types'
   import { stats, StatIconMap } from '$lib/data/stats'
   import { toDb } from '$lib/utils/link'
+  import deferStyles from '$lib/utils/defer-styles'
 
   import Icon from 'svelte-icons-pack'
   import Shiny from 'svelte-icons-pack/wi/WiStars'
   import X from 'svelte-icons-pack/ri/RiSystemFilterOffFill'
+  import Deceased from 'svelte-icons-pack/fa/FaSolidSkullCrossbones'
   import External from 'svelte-icons-pack/ri/RiSystemExternalLinkLine'
 
-  const { getPkmns } = getContext('game')
+  const { getPkmns, getPkmn } = getContext('game')
+  const { open } = getContext('simple-modal')
 
+  let Particles, EvoModal
   onMount(() => {
+    deferStyles('/assets/pokemon.css')
+    import('$lib/components/particles').then(m => Particles = m.default)
+    import('$lib/components/EvolutionModal.svelte').then(m => EvoModal = m.default)
+
     // FIXME: Awkward hack to allow page transition cleanup
-    ['game_el', 'sidenav_el'].forEach(id =>{
+    ;['game_el', 'sidenav_el'].forEach(id =>{
       const el = document.getElementById(id)
       if (el) {
         el.style = 'opacity: 0';
@@ -48,12 +56,12 @@
   const clear = () => stat = type = ''
   const sum = l => l.reduce((acc, it) => acc + it, 0)
   $: filter = (p) => !type || (Pokemon[p.pokemon]?.types || []).map(i => i.toLowerCase()).includes(type)
+
   $: typeCounts = types
     .reduce((acc, it) => ({
       ...acc,
       [it]: ogbox.filter(p => (Pokemon[p.pokemon]?.types || []).map(i => i.toLowerCase()).includes(it)).length
     }), {})
-
 
   $: box = ogbox
   .sort((a, b) => {
@@ -68,6 +76,28 @@
     })
 
   $: enabled = box.length && (stat || type)
+
+  let evoComplete = false
+  const handleEvo = ({ evos, alias }, original) => open(EvoModal, { evolutions: evos, base: alias, select: handleEvoComplete(original) })
+  const handleEvoComplete = o => async id => getPkmn(id)
+    .then(p => {
+      getPkmns(box.map(i => i.pokemon).concat(p.alias))
+        .then(data => {
+          Pokemon = data
+          ogbox = ogbox.map(i => {
+            return i.id === o.id ? { ...i, pokemon: p.alias } : i
+          })
+
+          updatePokemon({ ...o, pokemon: p.alias })
+          evoComplete = o.id
+        })
+    })
+
+  const handleKill = o => _ => {
+    ogbox = ogbox.filter(i => i.id !== o.id)
+    killPokemon(o)
+  }
+
 </script>
 
 {#if loading}
@@ -79,7 +109,7 @@
 
         <div class='inline-flex flex-wrap sm:flex-row gap-y-2 gap-x-4 sm:items-start z-50 mt-2'>
           <div class='grid sm:grid-rows-2 grid-cols-8 w-full sm:w-auto sm:grid-cols-5 gap-1 sm:gap-2 col-span-2'>
-            <IconButton
+            <IconButton className=-mt-1
               rounded
               src={X}
               title='Clear filters'
@@ -109,7 +139,7 @@
             {/each}
           </div>
 
-          <div class='w-full sm:w-auto grid grid-rows-3 grid-cols-5 md:grid-cols-9 gap-x-2 gap-y-2 col-span-3'>
+          <div class='w-full sm:w-auto grid grid-cols-5 md:grid-cols-9 gap-x-2 gap-y-2 col-span-3'>
             {#each types as t}
               {#if typeCounts[t] > 0}
                 <label
@@ -135,6 +165,7 @@
               animate:flip={{ duration: d => 10 * Math.sqrt(d) }}
               out:fade={{ duration: 150 }}
             >
+              {#key p}
               <PokemonCard
                 sprite={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${p.status === 6 ? 'shiny/' : ''}${Pokemon[p.pokemon].imgId}.png`}
                 maxStat={Math.max(150, ...Object.values(Pokemon[p.pokemon].baseStats))}
@@ -144,8 +175,22 @@
                 stats={Pokemon[p.pokemon].baseStats}
                 nature={p.nature}
                 types={(Pokemon[p.pokemon].types || []).map(t => t.toLowerCase())}
-              >
+                >
+                <div slot=right let:col
+                     class='flex flex-col absolute right-2 sm:bottom-auto sm:right-auto sm:left-2 lg:left-0 xl:left-2 2xl:left-4 top-3'
+                     >
+                </div>
+
                 <span slot=img>
+                  {#if evoComplete === p.id}
+                    <span style='z-index: 999999' class='absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2'>
+                      <Particles
+                        amount={25}
+                        icons={['ice-stone', 'dawn-stone', 'fire-stone']}
+                        on:end={() => evoComplete = false}
+                        />
+                    </span>
+                  {/if}
                   {#if p.status === 6}
                     <Icon src={Shiny} size=3.6em className='fill-current absolute animate-pulse z-50 text-orange-200 -translate-y-3/4 left-1/2 -translate-x-full' />
                     <Icon src={Shiny} size=2.8em className='fill-current absolute animate-pulse z-50 text-orange-300 top-0 transform rotate-180 right-0 translate-y-1/4 -translate-x-2/3' />
@@ -161,6 +206,7 @@
                   {/if}
 
                   <span class=mx-1>ǀ</span>
+
                   <a class='hover:text-black dark:hover:text-gray-50 transition border-b border-transparent hover:border-black inline'
                      href={toDb(id)}
                      title='Pokémon DB Link for {id}'
@@ -169,8 +215,20 @@
                     <Icon src={External} className='fill-current inline -mt-0.5' />
                   </a>
 
+                  <div class='card-controls absolute -bottom-4 flex left-1/2 -translate-x-1/2 border border-gray-200 bg-red-200 rounded-lg shadow-md'>
+                    {#if Pokemon[p.pokemon].evos?.length}
+                      <IconButton className='translate-y-1 transform scale-75' borderless on:click={handleEvo(Pokemon[p.pokemon], p)} name=dawn-stone />
+                    {/if}
+                    <IconButton
+                      on:click={handleKill(p)}
+                      className=translate-y-1
+                      borderless src={Deceased}
+                      />
+                  </div>
+
                 </span>
               </PokemonCard>
+              {/key}
             </span>
           {/each}
         </div>
@@ -181,4 +239,25 @@
 
 <style>
   input { display: none; }
+
+  .card-controls {
+    z-index: -2;
+    background-color: white;
+  }
+
+  :global(.dark) .card-controls,
+  :global(.dark) .card-controls:after {
+    background-color: theme('colors.gray.900');
+    border-color: transparent;
+  }
+  .card-controls:after {
+    content: '';
+    position: absolute;
+    background-color: white;
+    width: calc(100% + 12px);
+    left: -6px;
+    bottom: 50%;
+    z-index: -10;
+    height: calc(50% + 1px);
+  }
 </style>
