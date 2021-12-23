@@ -51,7 +51,7 @@
   const planKeywords = ['uncaught', 'uncaptured', 'empty', 'plan', 'planned', 'no status']
   const pokemonfilter = (s, item) => {
     if (planKeywords.includes(s.toLowerCase()))
-      return !item.status
+      return item.pokemon?.length && !item.status
 
     return item.pokemon?.toLowerCase()?.includes(s) // Search by pokemon name
       || item.nickname?.toLowerCase()?.includes(s) //  Search by nickname
