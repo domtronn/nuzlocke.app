@@ -17,6 +17,7 @@
   const oninput = e => {
     const val = e.target.innerText
     store.update(patchlocation({ id, name: val }))
+    value = val
   }
 </script>
 
@@ -30,7 +31,7 @@
     on:input={oninput}
     class:hover:border-black={value}
     class:dark:hover:border-gray-50={value}
-    class='transition border-b border-transparent hover:border-gray-500 focus:border-black dark:focus:border-gray-50 dark:focus:text-gray-50 focus:text-black md:w-auto focus:w-auto text-left sm:text-right outline-none flex-row sm:flex-row-reverse items-center gap-x-2 lg:-ml-6 -mr-1'
+    class='flex select-text transition border-b border-transparent hover:border-gray-500 focus:border-black dark:focus:border-gray-50 dark:focus:text-gray-50 focus:text-black md:w-auto focus:w-auto text-left sm:text-right outline-none flex-row sm:flex-row-reverse items-center gap-x-2 lg:-ml-6 -mr-1'
   >
     {value}
   </span>
