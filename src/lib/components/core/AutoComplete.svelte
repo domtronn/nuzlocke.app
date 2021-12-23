@@ -182,6 +182,7 @@
   }
 
   :global(div.autocomplete-list-item) {
+    padding: 0 !important;
     color: var(--auc-fg) !important;
   }
 

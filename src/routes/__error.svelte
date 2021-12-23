@@ -34,10 +34,10 @@
       <h1 class='tracking-wide drop-shadow-text translate-y-56 font-bold text-6xl'>{status}</h1>
       <h2 class='mb-4 text-xl font-sans dark:text-gray-400 text-gray-800 font-medium tracking-wide translate-y-56'>{message}</h2>
 
-      <p class='font-sans dark:text-gray-400 text-gray-800 translate-y-56'>
+      <p class='mx-auto font-sans dark:text-gray-400 text-gray-800 translate-y-56'>
         Oh no! Something's gone wrong.
       </p>
-      <p class='max-w-sm sm:max-w-md font-sans dark:text-gray-400 text-gray-800 translate-y-56'>
+      <p class='mx-auto max-w-sm sm:max-w-md font-sans dark:text-gray-400 text-gray-800 translate-y-56'>
         Try <b>reloading the page</b>, if the problem persists report the bug on
         <a class='underline hover:text-pink-500 transition' href='https://discord.gg/gtdceegtYB' target=_blank rel=noreferrer>Discord</a>.
       </p>

@@ -8,6 +8,7 @@
   import { Natures, NaturesMap } from '$lib/data/natures'
   import { NuzlockeStates, NuzlockeGroups } from '$lib/data/states'
   import { IconButton, AutoComplete, Input } from '$lib/components/core'
+  import { Wrapper as SettingsWrapper } from '$lib/components/Settings'
 
   import Popover from '$lib/components/core/Popover.svelte'
 
@@ -21,6 +22,7 @@
   import Bin from 'svelte-icons-pack/bi/BiTrash'
   import Dots from 'svelte-icons-pack/bs/BsThreeDotsVertical'
   import Map from 'svelte-icons-pack/bi/BiMapAlt'
+  import Search from 'svelte-icons-pack/bs/BsSearch'
 
   import { createEventDispatcher, onMount, getContext } from 'svelte'
 
@@ -129,41 +131,51 @@
     {/if}
   </span>
 
-  <AutoComplete
-    rounded
-    fetch={search ? getAllPkmn : null}
-    items={search ? null : encounterItems}
-    inset={!!selected}
-    bind:search
-    bind:selected
-    name='{location} Encounter'
-    placeholder=Encounter
+  <SettingsWrapper id=encounter-suggestions let:setting={suggest}>
+    <SettingsWrapper id=dupe-clause let:setting>
+      <AutoComplete
+        inset={selected ? true : '2.4em'}
+        rounded
+        fetch={search || suggest ? getAllPkmn : null}
+        items={search || !suggest ? null : encounterItems}
+        bind:search
+        bind:selected
+        name='{location} Encounter'
+        placeholder='Find encounter'
 
-    className='col-span-2 w-11/12 sm:w-full'
-  >
-    <span class='flex items-center h-8' class:dupe={evolines.has(item?.evoline)} slot=item let:item let:label>
-      <PIcon name={item?.sprite} className='transform scale-75 md:scale-100 -mb-4 -ml-6 -mt-5 -mr-2' />
-      {@html label}
-      {#if evolines.has(item?.evoline)}
-        <span class='dupe__span absolute right-0'>dupe</span>
-      {/if}
-    </span>
+        className='col-span-2 w-11/12 sm:w-full'
+        >
 
-    <svelte:fragment slot=icon let:iconClass>
-      {#if selected}
-        <div class='absolute left-4 top-2 z-50'>
-          {#if evoComplete}
-            <Particles icons={['ice-stone', 'dawn-stone', 'fire-stone']} on:end={() => evoComplete = false} />
+        <span class='flex items-center h-8 px-4 py-5 md:py-6'
+              class:hidden={setting === 2 && evolines.has(item?.evoline)}
+              class:dupe={setting === 1 && evolines.has(item?.evoline)}
+              slot=item let:item let:label>
+          <PIcon name={item?.sprite} className='transform -mb-4 -ml-6 -mt-5 -mr-2' />
+          {@html label}
+          {#if setting === 1 && evolines.has(item?.evoline)}
+            <span class='absolute text-tiny right-4'>dupe</span>
           {/if}
-          {#if captureComplete}
-            <Particles icons={['poke-ball', 'friend-ball', 'heavy-ball', 'master-ball']} on:end={() => captureComplete = false} />
-          {/if}
-        </div>
+        </span>
 
-        <PIcon name={selected.sprite} className='{gray ? 'filter grayscale' : ''} {iconClass}' />
-      {/if}
-    </svelte:fragment>
-  </AutoComplete>
+        <svelte:fragment slot=icon let:iconClass>
+          {#if selected}
+            <div class='absolute left-4 top-2 z-50'>
+              {#if evoComplete}
+                <Particles icons={['ice-stone', 'dawn-stone', 'fire-stone']} on:end={() => evoComplete = false} />
+              {/if}
+              {#if captureComplete}
+                <Particles icons={['poke-ball', 'friend-ball', 'heavy-ball', 'master-ball']} on:end={() => captureComplete = false} />
+              {/if}
+            </div>
+
+            <PIcon name={selected.sprite} className='{gray ? 'filter grayscale' : ''} {iconClass}' />
+          {:else}
+            <Icon size=0.7em src={Search} className='fill-current left-3 text-gray-500 {iconClass}' />
+          {/if}
+        </svelte:fragment>
+      </AutoComplete>
+    </SettingsWrapper>
+  </SettingsWrapper>
 
   <Input
     rounded
@@ -173,28 +185,37 @@
     className='col-span-2 {!selected || status?.id === 4 ? 'hidden sm:block' : ''}'
   />
 
-  <AutoComplete
-    wide
-    rounded
-    items={Object.values(NuzlockeStates)}
-    bind:selected={status}
-    name='{location} Status'
-    placeholder=Status
-    label=state
-    inset={status ? '2rem' : null}
-    className='{!selected ? 'hidden sm:block' : ''} {status?.id === 4 ? 'col-span-2 sm:col-span-1' : 'col-span-1'}'
-  >
-    <svelte:fragment slot=icon let:iconClass let:selected>
-      {#if selected}
-        <Icon className='{iconClass} fill-current left-3' src={selected.icon} />
-      {/if}
-    </svelte:fragment>
-
-    <div class='flex inline-flex gap-x-2 py-2 items-center' slot=item let:item let:label>
-      <Icon src={item.icon} className='fill-current' />
-      {@html label}
+  <SettingsWrapper id=permadeath on=1 condition={status?.id === 5}>
+    <div class='border-2 dark:border-gray-600 shadow-sm rounded-lg h-10 flex items-center text-sm dark:text-gray-200 text-gray-800 cursor-not-allowed'>
+      <Icon className='fill-current mx-2' src={NuzlockeStates[5].icon} />
+      Dead
     </div>
-  </AutoComplete>
+
+    <svelte:fragment slot=else>
+      <AutoComplete
+        wide
+        rounded
+        items={Object.values(NuzlockeStates)}
+        bind:selected={status}
+        name='{location} Status'
+        placeholder=Status
+        label=state
+        inset={status ? '2rem' : null}
+        className='{!selected ? 'hidden sm:block' : ''} {status?.id === 4 ? 'col-span-2 sm:col-span-1' : 'col-span-1'}'
+        >
+        <svelte:fragment slot=icon let:iconClass let:selected>
+          {#if selected}
+            <Icon className='{iconClass} fill-current left-3' src={selected.icon} />
+          {/if}
+        </svelte:fragment>
+
+        <div class='flex inline-flex gap-x-2 py-2 items-center' slot=item let:item let:label>
+          <Icon src={item.icon} className='fill-current' />
+          {@html label}
+        </div>
+      </AutoComplete>
+    </svelte:fragment>
+  </SettingsWrapper>
 
   <AutoComplete
     wide
@@ -274,12 +295,14 @@
           </button>
         </li>
 
-        <li>
-          <button on:click={handleClear}>
-            <Icon src={Delete} className='fill-current mr-2'/>
-            Clear Encounter
-          </button>
-        </li>
+        <SettingsWrapper id=permadeath condition={status?.id === 5}>
+          <li slot=else>
+            <button on:click={handleClear}>
+              <Icon src={Delete} className='fill-current mr-2'/>
+              Clear Encounter
+            </button>
+          </li>
+        </SettingsWrapper>
 
         {#if type === 'custom'}
           <li>

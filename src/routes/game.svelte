@@ -3,11 +3,12 @@
   import { browser } from '$app/env'
   import { fade, slide } from 'svelte/transition'
 
-  import { Loader, Tabs } from '$lib/components/core'
+  import { Loader, Tabs, IconButton } from '$lib/components/core'
 
   import { SupportBanner } from '$lib/components/navs'
-  import GameRoute from '$lib/components/Game/Route.svelte'
-  import Search from '$lib/components/Game/Search.svelte'
+  import { GameRoute, Search } from '$lib/components/Game'
+  import { Settings } from '$lib/components/Settings'
+
   import SideNav from '$lib/components/navs/SideNav.svelte'
   import Modal from 'svelte-simple-modal'
 
@@ -152,8 +153,12 @@
 
             </div>
 
-            <div class='fixed md:relative bottom-6 md:bottom-0 md:shadow-none shadow-lg' style='z-index: 4444;'>
-              <Search on:search={onsearch} />
+            <div class=inline-flex>
+              <Settings />
+
+              <div class='fixed md:relative bottom-6 md:bottom-0 md:shadow-none shadow-lg' style='z-index: 4444;'>
+                <Search on:search={onsearch} />
+              </div>
             </div>
           </div>
 

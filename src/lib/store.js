@@ -63,7 +63,8 @@ export const createGame = (name, game) => (payload) => {
     id,
     created: +new Date(),
     name,
-    game
+    game,
+    settings: '01110'
   })
 
   localStorage.setItem(IDS.game(id), '{}')
@@ -71,6 +72,17 @@ export const createGame = (name, game) => (payload) => {
 
   console.log(`Creating new game for ${name} ${game}`)
   return games.concat(gameData).join(',')
+}
+
+export const updateGame = (game) => (payload) => {
+  if (!browser) return
+
+  const games = payload === 'null' || payload === null || payload === 'undefined'
+        ? [] : _parse(payload)
+
+  games[game.id] = game
+
+  return Object.values(games).map(format).join(',')
 }
 
 export const getGen = _ => new Promise((resolve) => {
@@ -145,9 +157,9 @@ const _parse = (gameData) => (gameData || '')
       .split(',')
       .filter(i => i.length)
       .map(i => i.split('|'))
-      .reduce((acc, [id, created, name, game]) => ({
+      .reduce((acc, [id, created, name, game, settings]) => ({
         ...acc,
-        [id]: { id, created, name, game }
+        [id]: { id, created, name, game, settings }
       }), {})
 
 export const parse = (cb = () => {}) => (gameData) => cb(_parse(gameData))
@@ -157,8 +169,8 @@ export const format = (saveData) => [
   saveData.created,
   saveData.name,
   saveData.game,
+  saveData.settings
 ].join('|')
-
 
 export const summarise = (cb = _ => {}) => ({ __starter, ...data }) => {
   const pkmn = Object.values(data)
