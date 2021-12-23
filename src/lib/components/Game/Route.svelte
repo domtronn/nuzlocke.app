@@ -48,7 +48,11 @@
       || route.encounters?.some(i => i.toLowerCase().includes(s.toLowerCase()))
   }
 
+  const planKeywords = ['uncaught', 'uncaptured', 'empty', 'plan', 'planned', 'no status']
   const pokemonfilter = (s, item) => {
+    if (planKeywords.includes(s.toLowerCase()))
+      return !item.status
+
     return item.pokemon?.toLowerCase()?.includes(s) // Search by pokemon name
       || item.nickname?.toLowerCase()?.includes(s) //  Search by nickname
       || NuzlockeStates[item.status]?.state?.toLowerCase()?.includes(s) // Search by status status
