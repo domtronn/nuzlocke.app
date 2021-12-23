@@ -72,7 +72,7 @@
     const locations = new Set(
       Object
         .entries(game)
-        .filter(([id, loc]) => loc.pokemon && !custom[id])
+        .filter(([id, loc]) => loc.pokemon && !!loc.status && !custom[id])
         .map(([, i]) => i.location)
     )
 

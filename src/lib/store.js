@@ -110,7 +110,7 @@ export const getBox = (cb = () => {}) => activeGame.subscribe(gameId => {
     cb(Object
        .values(data)
        .filter(i => i.pokemon)
-       .filter(({ status }) => !status || NuzlockeGroups.Available.includes(status)))
+       .filter(({ status }) => NuzlockeGroups.Available.includes(status)))
   }))
 })
 
@@ -175,7 +175,7 @@ export const format = (saveData) => [
 export const summarise = (cb = _ => {}) => ({ __starter, ...data }) => {
   const pkmn = Object.values(data)
   cb({
-    available: pkmn.filter(i => i.pokemon && (!i.status || NuzlockeGroups.Available.includes(i?.status))),
+    available: pkmn.filter(i => i.pokemon && NuzlockeGroups.Available.includes(i?.status)),
     deceased: pkmn.filter(i => i.pokemon && NuzlockeGroups.Dead.includes(i?.status))
   })
 }

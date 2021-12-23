@@ -49,7 +49,7 @@
       Promise.all(
         Object
           .values(data)
-          .filter(i => i.pokemon && (!i.status || NuzlockeGroups.Available.includes(i.status)))
+          .filter(i => i.pokemon && NuzlockeGroups.Available.includes(i.status))
           .map(p => getPkmn(p.pokemon).then(d => ({ ...p, ...d })))
       ).then(d => {
         box = d.sort((a, b) => b.total - a.total)
