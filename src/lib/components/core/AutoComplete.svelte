@@ -181,7 +181,7 @@
 
   /* Autocomplete list */
   :global(div.autocomplete-list) {
-    padding: 0 !important;
+    padding: theme('spacing.2') 0 !important;
     margin-top: theme('spacing.2');
     border-width: theme('borderWidth.2') !important;
     border-color: theme('colors.gray.200') !important;

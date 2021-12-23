@@ -209,7 +209,7 @@
           {/if}
         </svelte:fragment>
 
-        <div class='flex inline-flex gap-x-2 px-2 py-2 md:py-3 items-center' slot=item let:item let:label>
+        <div class='flex inline-flex gap-x-2 px-3 py-2 md:py-3 items-center' slot=item let:item let:label>
           <Icon src={item.icon} className='fill-current transform md:scale-125' />
           {@html label}
         </div>
@@ -227,7 +227,7 @@
     className='col-span-1 {!selected || status?.id === 4 ? 'hidden sm:block' : ''}'
     dropdownClass='-translate-x-1/2 -ml-1 sm:translate-x-0 sm:ml-0'
   >
-    <div class='flex inline-flex justify-between w-full px-3 py-3 -mx-1 items-center' slot=item let:item let:label>
+    <div class='flex inline-flex justify-between w-full px-5 py-2 md:py-3 -mx-1 items-center' slot=item let:item let:label>
       <span>{@html label}</span>
       {#if item.value.length}
         <span class='flex sm:flex-col -my-4 -mr-3 gap-x-2 sm:gap-x-0 text-tiny sm:gap-y-1'>
