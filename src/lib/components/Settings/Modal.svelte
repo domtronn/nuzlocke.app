@@ -28,7 +28,7 @@
   }))
 </script>
 
-<div class='max-w-xs mx-auto'>
+<section class='max-w-sm mx-auto bg-gray-50 dark:bg-gray-900 p-8 rounded-2xl pb-2'>
   <h2 class='text-lg dark:text-gray-50 text-gray-900 font-bold flex justify-between'>
     Game settings
     <Icon size=1.6em src={Settings} className='fill-current inline-block' />
@@ -61,4 +61,4 @@
       </div>
     {/each}
   </ul>
-</div>
+</section>
