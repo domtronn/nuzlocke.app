@@ -109,7 +109,7 @@
 
         <div class='inline-flex flex-wrap sm:flex-row gap-y-2 gap-x-4 sm:items-start z-50 mt-2'>
           <div class='grid sm:grid-rows-2 grid-cols-8 w-full sm:w-auto sm:grid-cols-5 gap-1 sm:gap-2 col-span-2'>
-            <IconButton className=-mt-1
+            <IconButton
               rounded
               src={X}
               title='Clear filters'
@@ -175,12 +175,7 @@
                 stats={Pokemon[p.pokemon].baseStats}
                 nature={p.nature}
                 types={(Pokemon[p.pokemon].types || []).map(t => t.toLowerCase())}
-                >
-                <div slot=right let:col
-                     class='flex flex-col absolute right-2 sm:bottom-auto sm:right-auto sm:left-2 lg:left-0 xl:left-2 2xl:left-4 top-3'
-                     >
-                </div>
-
+              >
                 <span slot=img>
                   {#if evoComplete === p.id}
                     <span style='z-index: 999999' class='absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2'>
@@ -217,12 +212,18 @@
 
                   <div class='card-controls absolute -bottom-4 flex left-1/2 -translate-x-1/2 border border-gray-200 bg-red-200 rounded-lg shadow-md'>
                     {#if Pokemon[p.pokemon].evos?.length}
-                      <IconButton className='translate-y-1 transform scale-75' borderless on:click={handleEvo(Pokemon[p.pokemon], p)} name=dawn-stone />
+                      <IconButton
+                        className='translate-y-1 transform scale-75'
+                        borderless
+                        name=dawn-stone
+                        on:click={handleEvo(Pokemon[p.pokemon], p)}
+                      />
                     {/if}
                     <IconButton
                       on:click={handleKill(p)}
                       className=translate-y-1
-                      borderless src={Deceased}
+                      src={Deceased}
+                      borderless
                       />
                   </div>
 

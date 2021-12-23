@@ -8,7 +8,6 @@
   import Icon from 'svelte-icons-pack'
   import Hand from 'svelte-icons-pack/fa/FaSolidHandHolding'
 
-
   import ColorMap from '$lib/data/colors.json'
   import Tooltip from '$lib/components/core/Tooltip.svelte'
   import TypeBadge from '$lib/components/type-badge.svelte'
@@ -114,9 +113,6 @@
         <StatBlock col={cols[0]} nature={nature} max={maxStat} {...stats} />
       {/if}
     </div>
-
-    <slot col={cols[0]} name='right' />
-
   </div>
 
   <slot name="footer" id={canonname} />
