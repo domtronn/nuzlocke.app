@@ -7,8 +7,8 @@
   export let setting
 
   savedGames.subscribe(parse(saves => {
-    const { settings = settingsDefault} = saves[$activeGame] || {}
-    setting = settings[getSetting(id)]
+    const { settings } = saves[$activeGame] || {}
+    setting = (settings || settingsDefault)[getSetting(id)]
   }))
 </script>
 
