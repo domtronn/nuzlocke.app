@@ -100,19 +100,21 @@
             {/each}
           </span>
 
-          <SettingWrapper id=level-caps on=1
-                          condition={levelCap && (type === 'gym-leader' || type === 'elite-four')}>
-            <Label heading='Lvl cap' body={levelCap} />
+          <SettingWrapper id=team-caps on=1>
+            <Label heading='Max' className='-mr-4' body={Math.min(6, pokemon.length)} />
           </SettingWrapper>
 
-          <SettingWrapper id=level-caps on=2
-                          condition={levelCap && (type === 'gym-leader' || type === 'elite-four' || type === 'rival')}>
-            <Label heading='Lvl cap' body={levelCap} />
-          </SettingWrapper>
+          {#if levelCap}
+            <SettingWrapper let:setting id=level-caps>
+              {#if ((setting === 1 && (type === 'gym-leader' || type === 'elite-four')) ||
+                    (setting === 2 && (type === 'gym-leader' || type === 'elite-four' || type === 'rival')) ||
+                    (setting === 3))}
+                <Label heading='Lvl cap' body={levelCap} />
+              {/if}
+            </SettingWrapper>
+          {/if}
 
-          <SettingWrapper id=level-caps on=3 condition={levelCap}>
-            <Label heading='Lvl cap' body={levelCap} />
-          </SettingWrapper>
+
         {/if}
       </div>
     </span>

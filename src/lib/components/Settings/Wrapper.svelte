@@ -3,8 +3,8 @@
   import { settingsDefault, getSetting } from './_data'
   import { parse, activeGame, savedGames } from '$lib/store'
 
-  export let id, on = 1, condition = true
-  let setting
+  export let id, on = undefined, condition = true
+  export let setting
 
   savedGames.subscribe(parse(saves => {
     const { settings = settingsDefault} = saves[$activeGame] || {}
@@ -12,8 +12,8 @@
   }))
 </script>
 
-{#if +setting === +on && condition}
-  <slot />
+{#if !on || (+setting === +on && condition)}
+  <slot setting={+setting} />
 {:else}
-  <slot name=else />
+  <slot setting={+setting} name=else />
 {/if}
