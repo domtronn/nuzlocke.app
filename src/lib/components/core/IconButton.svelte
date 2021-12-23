@@ -1,5 +1,5 @@
 <script>
-  export let title, src = false, name = false, disabled = false, containerClassName = '', className = '', color = 'gray', rounded = false
+  export let title, src = false, name = false, disabled = false, containerClassName = '', className = '', color = 'gray', rounded = false, borderless = false
 
   import { createEventDispatcher } from 'svelte'
   import Icon from 'svelte-icons-pack'
@@ -14,6 +14,7 @@
   aria-label={title}
   title={title}
   on:click|stopPropagation={onclick}
+  class:borderless={borderless}
   class:disabled={disabled}
   class:rounded-lg={rounded}
   class='group {color} {containerClassName} '
@@ -86,6 +87,11 @@
     background-color: var(--input-bg);
     border-color: theme('colors.gray.200');
     color: theme('colors.gray.400');
+  }
+
+  button.borderless,
+  button.disabled.borderless {
+    @apply border-0 bg-transparent shadow-none;
   }
 
   button.disabled {

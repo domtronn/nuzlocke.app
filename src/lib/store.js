@@ -85,6 +85,22 @@ export const updateGame = (game) => (payload) => {
   return Object.values(games).map(format).join(',')
 }
 
+export const updatePokemon = p => {
+  activeGame.subscribe(gameId => {
+    getGame(gameId).update(patch({
+      [p.location]: p
+    }))
+  })
+}
+
+export const killPokemon = p => {
+  activeGame.subscribe(gameId => {
+    getGame(gameId).update(patch({
+      [p.location]: { ...p, status: 5 }
+    }))
+  })
+}
+
 export const getGen = _ => new Promise((resolve) => {
   activeGame.subscribe(gameId => {
     savedGames.subscribe(parse(games => {
@@ -172,10 +188,11 @@ export const format = (saveData) => [
   saveData.settings
 ].join('|')
 
-export const summarise = (cb = _ => {}) => ({ __starter, ...data }) => {
+export const summarise = (cb = _ => {}) => ({ __starter, __custom, ...data }) => {
   const pkmn = Object.values(data)
+  console.log(pkmn)
   cb({
-    available: pkmn.filter(i => i.pokemon && NuzlockeGroups.Available.includes(i?.status)),
-    deceased: pkmn.filter(i => i.pokemon && NuzlockeGroups.Dead.includes(i?.status))
+    available: pkmn.filter(i => i?.pokemon && NuzlockeGroups.Available.includes(i?.status)),
+    deceased: pkmn.filter(i => i?.pokemon && NuzlockeGroups.Dead.includes(i?.status))
   })
 }

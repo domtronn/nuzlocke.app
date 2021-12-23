@@ -97,6 +97,7 @@
   <div
     style='border-color: {cols[0]}'
     class='relative inline-flex bg-white dark:bg-gray-900  border-t-2 sm:items-center rounded-b-lg z-10'>
+
     {#if moves && moves.length}
       <div class='grid grid-cols-1 xl:grid-cols-2 xl:grid-rows-2 w-3/5 sm:w-2/3 my-3 ml-4 gap-y-0 lg:gap-y-3'>
         {#each moves as m}

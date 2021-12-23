@@ -10,7 +10,6 @@
   import { Settings } from '$lib/components/Settings'
 
   import SideNav from '$lib/components/navs/SideNav.svelte'
-  import Modal from 'svelte-simple-modal'
 
   import Icon from 'svelte-icons-pack'
   import Arrow from 'svelte-icons-pack/bi/BiRightArrowAlt'
@@ -102,12 +101,6 @@
 {:then route}
   <div id='game_el' out:fade|local={{ duration: 250 }} in:fade|local={{ duration: 250, delay: 300 }} class="container mx-auto pb-24 overflow-hidden">
     <div class="flex flex-row flex-wrap pb-16 justify-center">
-      <Modal
-        closeButton={false}
-        styleBg={{ background: 'rgba(0, 0, 0, 0.8)', zIndex: 9999 }}
-        styleWindow={{ background: 'transparent !important' }}
-        styleContent={{ padding: '0 !important' }}
-      >
         <main id='main' role="main" class="w-full sm:w-3/4 px-4 md:px-8 md:py-6 flex flex-col gap-y-4 relative">
           <SideNav
             bind:show={show}
@@ -174,7 +167,6 @@
           />
 
         </main>
-      </Modal>
     </div>
   </div>
 {/await}
