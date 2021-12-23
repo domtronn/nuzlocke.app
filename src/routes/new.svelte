@@ -65,7 +65,7 @@
       bind:selected={selected}
     >
 
-      <div class='flex inline-flex gap-x-2 py-2 items-center h-auto w-full max-h-8' slot='item' let:item={i} let:label={label}>
+      <div class='flex inline-flex gap-x-2 px-2 py-6 items-center h-auto w-full max-h-8' slot='item' let:item={i} let:label={label}>
         {#if Games[i].logo}
           <Picture
             src={Games[i].logo}
