@@ -156,6 +156,17 @@
     {
       width: auto !important;
     }
+
+    :global(div.autocomplete-list-item.selected .dupe),
+    :global(div.autocomplete-list-item.confirmed .dupe) {
+      opacity: 100% !important;
+      filter: none;
+    }
+
+    :global(div.autocomplete-list-item.selected .dupe__span),
+    :global(div.autocomplete-list-item.confirmed .dupe__span) {
+      display: none;
+    }
   }
 
   :global(.dark input.autocomplete-input) {
@@ -184,17 +195,6 @@
   :global(div.autocomplete-list-item) {
     padding: 0 !important;
     color: var(--auc-fg) !important;
-  }
-
-  :global(div.autocomplete-list-item.selected .dupe),
-  :global(div.autocomplete-list-item.confirmed .dupe) {
-    opacity: 100% !important;
-    filter: none;
-  }
-
-  :global(div.autocomplete-list-item.selected .dupe__span),
-  :global(div.autocomplete-list-item.confirmed .dupe__span) {
-    display: none;
   }
 
   :global(div.autocomplete-list-item.confirmed),

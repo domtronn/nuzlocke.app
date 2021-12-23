@@ -153,7 +153,7 @@
           <PIcon name={item?.sprite} className='transform -mb-4 -ml-6 -mt-5 -mr-2' />
           {@html label}
           {#if setting === 1 && evolines.has(item?.evoline)}
-            <span class='absolute text-tiny right-4'>dupe</span>
+            <span class='dupe__span absolute text-tiny right-4'>dupe</span>
           {/if}
         </span>
 
