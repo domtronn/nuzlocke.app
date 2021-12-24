@@ -21485,7 +21485,7 @@
     },
     {
       "type": "gym",
-      "name": "Rival",
+      "name": "Hop's House",
       "value": "r1",
       "group": "rival",
       "boss": "Hop"
@@ -21559,7 +21559,7 @@
     },
     {
       "type": "gym",
-      "name": "Rival",
+      "name": "Route 2",
       "value": "r2",
       "group": "rival",
       "boss": "Hop"
@@ -21933,7 +21933,7 @@
     },
     {
       "type": "gym",
-      "name": "Rival",
+      "name": "Motostoke",
       "value": "r3",
       "group": "rival",
       "boss": "Hop"
@@ -21976,7 +21976,7 @@
     },
     {
       "type": "gym",
-      "name": "Rival",
+      "name": "Galar Mine Exit",
       "value": "b1",
       "group": "rival",
       "boss": "Bede"
@@ -22039,7 +22039,7 @@
     },
     {
       "type": "gym",
-      "name": "Rival",
+      "name": "Route 5",
       "value": "r4",
       "group": "rival",
       "boss": "Hop"
@@ -22758,7 +22758,7 @@
     },
     {
       "type": "gym",
-      "name": "Rival",
+      "name": "Route 6",
       "value": "r5",
       "group": "rival",
       "boss": "Hop"
@@ -22804,11 +22804,26 @@
     },
     {
       "type": "route",
-      "name": "Router 7"
+      "name": "Route 7",
+      "encounters": [
+        "liepard",
+        "seismitoad",
+        "karrablast",
+        "shelmet",
+        "meowstic",
+        "corviknight",
+        "toxel",
+        "greedent",
+        "galvantula",
+        "inkay",
+        "thievul",
+        "perrserker",
+        "morpeko"
+      ]
     },
     {
       "type": "gym",
-      "name": "Rival",
+      "name": "Route 7",
       "value": "r6",
       "group": "rival",
       "boss": "Hop"
@@ -22848,7 +22863,7 @@
     },
     {
       "type": "gym",
-      "name": "Rival",
+      "name": "Route 8",
       "value": "r7",
       "group": "rival",
       "boss": "Hop"
@@ -24497,7 +24512,7 @@
     },
     {
       "type": "gym",
-      "name": "Rival",
+      "name": "Hop's House",
       "value": "r1",
       "group": "rival",
       "boss": "Hop"
@@ -24571,7 +24586,7 @@
     },
     {
       "type": "gym",
-      "name": "Rival",
+      "name": "Route 2",
       "value": "r2",
       "group": "rival",
       "boss": "Hop"
@@ -24945,7 +24960,7 @@
     },
     {
       "type": "gym",
-      "name": "Rival",
+      "name": "Motostoke",
       "value": "r3",
       "group": "rival",
       "boss": "Hop"
@@ -24988,7 +25003,7 @@
     },
     {
       "type": "gym",
-      "name": "Rival",
+      "name": "Galar Mine Exit",
       "value": "b1",
       "group": "rival",
       "boss": "Bede"
@@ -25051,7 +25066,7 @@
     },
     {
       "type": "gym",
-      "name": "Rival",
+      "name": "Route 5",
       "value": "r4",
       "group": "rival",
       "boss": "Hop"
