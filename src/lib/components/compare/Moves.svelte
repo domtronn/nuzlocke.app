@@ -30,7 +30,7 @@
 
 
   {#each calc[team.sprite][opp.sprite] as move}
-    <li class='my-2 flex flex-col leading-4 lg:leading-3 lg:w-24 -mt-1'>
+    <li class='my-2 flex col-span-2 md:col-span-1 flex-col leading-4 lg:leading-3 lg:w-24 -mt-1'>
       <div
         style='line-height:1.2em; min-height:2.4em;'
         class='flex items-end tracking-tighter'
