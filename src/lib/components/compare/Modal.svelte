@@ -41,7 +41,7 @@
       // Fetch all gym pokemon from cache
       getPkmns(pokemon.map(p => p.name))
         .then(d => {
-          gym = pokemon.reduce((acc, it) => acc.concat(d[it.name]), [])
+          gym = pokemon.reduce((acc, it) => acc.concat({ original: it, ...d[it.name] }), [])
           j = Math.max(gym.findIndex(i => i.alias === id), 0)
         })
 

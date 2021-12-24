@@ -7,10 +7,11 @@
 
   import Icon from 'svelte-icons-pack'
   import Info from 'svelte-icons-pack/ri/RiSystemInformationLine'
+
+  const moves = (opp?.original?.moves || []).reduce((acc, it) => ({ ...acc, [it.name]: it }), {})
 </script>
 
 <ul class='relative grid grid-cols-2 lg:grid-cols-4 w-full md:mt-2 text-sm md:text-xs'>
-
   <div class='absolute top-2 right-4 lg:top-0 text-gray-400 dark:text-gray-600 cursor-help text-lg'>
     <Icon src={Info} className=fill-current />
     <Tooltip>
@@ -21,9 +22,18 @@
   <strong class='hidden text-gray-600 dark:text-gray-50 lg:block text-sm col-span-4'>Moves</strong>
   {#each calc[team.sprite][opp.sprite] as move}
     <li class='my-2 flex flex-col leading-4 lg:leading-3 lg:w-24 -mt-1'>
-      <span style='line-height:1.2em; min-height:2.4em;' class='flex items-end tracking-tighter'>
-        {move.name}
-      </span>
+      <div
+        style='line-height:1.2em; min-height:2.4em;'
+        class='flex items-end tracking-tighter'
+        >
+        <span class:cursor-help={moves[move.name].effect}>
+          {move.name}
+          {#if moves[move.name].effect}
+            *
+            <Tooltip>{moves[move.name].effect}</Tooltip>
+          {/if}
+        </span>
+      </div>
 
       <p class='inline-flex my-1 transform scale-90 origin-left'>
         <TypeBadge type={move.damage_class} />
