@@ -83,7 +83,8 @@
                    target=_blank
                    rel=noopener
                    on:click|stopPropagation={function () {}}
-                   class='absolute italic text-tiny text-gray-500 dark:hover:text-gray-400 hover:text-indigo-500 -mb-1 hover:underline transition '>
+                   class:mt-7={location}
+                   class='absolute italic text-tiny text-gray-500 dark:hover:text-gray-400 hover:text-indigo-500 hover:underline transition '>
                   Sprite by <strong>{img.author}</strong>
                 </a>
               {/if}
@@ -98,7 +99,8 @@
         {#if loading}
           <div class='h-4 w-32 md:w-48 -ml-9 md:ml-0 animate-pulse bg-gray-400 rounded-md' />
         {:else if location}
-          <h2 class='h-4 text-md font-medium'>
+          <h2
+            class='h-4 -mt-1 text-md font-medium'>
             <span>{location}</span>
           </h2>
         {/if}
