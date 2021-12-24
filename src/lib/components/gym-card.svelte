@@ -83,8 +83,8 @@
                    target=_blank
                    rel=noopener
                    on:click|stopPropagation={function () {}}
-                   class:mt-7={location}
-                   class='absolute italic text-tiny text-gray-500 dark:hover:text-gray-400 hover:text-indigo-500 hover:underline transition '>
+                   class:mt-6={location}
+                   class='absolute italic text-tiny text-gray-300 dark:text-gray-600 dark:hover:text-indigo-400 hover:text-indigo-300 hover:underline transition '>
                   Sprite by <strong>{img.author}</strong>
                 </a>
               {/if}
