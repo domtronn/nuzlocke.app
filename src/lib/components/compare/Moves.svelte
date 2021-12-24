@@ -4,6 +4,7 @@
 
   import TypeBadge from '$lib/components/type-badge.svelte'
   import { Tooltip } from '$lib/components/core'
+  import { CompareSummary } from './'
 
   import Icon from 'svelte-icons-pack'
   import Info from 'svelte-icons-pack/ri/RiSystemInformationLine'
@@ -19,7 +20,15 @@
     </Tooltip>
   </div>
 
-  <strong class='hidden text-gray-600 dark:text-gray-50 lg:block text-sm col-span-4'>Moves</strong>
+
+  <div class='flex items-center col-span-4'>
+    <strong class='hidden text-gray-600 dark:text-gray-50 lg:block text-sm mr-2'>
+    Moves
+    </strong>
+    <CompareSummary pokemon={opp.original} />
+  </div>
+
+
   {#each calc[team.sprite][opp.sprite] as move}
     <li class='my-2 flex flex-col leading-4 lg:leading-3 lg:w-24 -mt-1'>
       <div

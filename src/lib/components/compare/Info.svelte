@@ -27,7 +27,7 @@
 >
   <span class=text-tiny>Max dmg</span>
   <Icon size=2.2rem className='fill-current mx-auto' src={Shield} />
-  <span class='absolute text-2xl -mt-2 font-mono top-8 -translate-x-1/2'>
+  <span class='cursor-help absolute text-2xl -mt-2 font-mono top-8 -translate-x-1/2'>
     <Tooltip> Based on {opp.name}'s moveset </Tooltip>
 
     {toFraction(dmg[team.sprite][opp.sprite] || 1)}x

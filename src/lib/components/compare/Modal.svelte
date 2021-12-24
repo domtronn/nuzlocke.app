@@ -121,7 +121,6 @@
                 <div class=inline-flex>
                   <CompareInfo {...advice} pokemon={compare} />
                 </div>
-                <br />
                 <CompareMoves {...advice} pokemon={compare} />
               {/key}
             </div>
