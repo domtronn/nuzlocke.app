@@ -1,6 +1,6 @@
 <script>
   export let game, id, location = '', starter = '', type
-  let pokemon = [], name = '', speciality = '', img
+  let pokemon = [], name = '', speciality = '', img, imgCredit, imgLink
 
   import { browser } from '$app/env'
   import { onMount, getContext } from 'svelte'
@@ -32,7 +32,10 @@
       const res = await fetch(`/api/battle/${game}/${id}.json?starter=${starter}`)
       const data = await res.json()
 
-      img = data.img
+      img = typeof data.img === 'string'
+        ? { src: data.img }
+        : data.img
+
       pokemon = data.pokemon
       name = data.name
       speciality = data.speciality
@@ -57,9 +60,9 @@
     >
 
       {#if img}
-        <span class=-mx-3>
+        <span class='relative -mx-3'>
           <Picture
-            src={img}
+            src={img.src}
             alt={name}
             pixelated
             className='w-18 md:w-36'
@@ -73,7 +76,18 @@
           {#if loading}
             <span class='w-20 md:w-24 -ml-9 md:ml-0 animate-pulse bg-gray-400 rounded-md' />
           {:else}
-            <h1 class='text-xl font-medium'>{name}</h1>
+            <div>
+              <h1 class='text-xl font-medium'>{name}</h1>
+              {#if img?.author}
+                <a href={img.link}
+                   target=_blank
+                   rel=noopener
+                   on:click|stopPropagation={function () {}}
+                   class='absolute italic text-tiny text-gray-500 dark:hover:text-gray-400 hover:text-indigo-500 -mb-1 hover:underline transition '>
+                  Sprite by <strong>{img.author}</strong>
+                </a>
+              {/if}
+            </div>
           {/if}
 
           {#if speciality}
