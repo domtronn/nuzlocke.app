@@ -19619,6 +19619,25 @@
         }
       ]
     },
+    "aarune": {
+      "name": "Aarune",
+      "speciality": "",
+      "img": "/leaders/rs-aarune",
+      "pokemon": [
+        {
+          "name": "flygon",
+          "level": "23",
+          "moves": [
+            "secret-power",
+            "fly",
+            "earth-power",
+            "dragon-claw"
+          ],
+          "ability": "levitate",
+          "held": "normal-gem"
+        }
+      ]
+    },
     "z1": {
       "name": "Zinnia",
       "speciality": "dragon",
