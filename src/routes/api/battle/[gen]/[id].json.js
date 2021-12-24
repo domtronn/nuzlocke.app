@@ -5,6 +5,7 @@ import patches from '$lib/data/patches.json'
 
 import { map, compose, prop, path, pick, evolve } from 'ramda'
 
+const nonnull = o => Object.fromEntries(Object.entries(o).filter(([, v]) => !!v))
 const maybe = (f, param) => param ? f(param) : Promise.resolve(null)
 const LANG = 'en'
 
@@ -18,7 +19,7 @@ const statNameMap = {
 }
 
 const toMoves = (moves, patches = {}) => map(compose(
-  d => ({
+  d => nonnull({
     ...d,
     type: patches[d.name]?.type || d.type,
     power: patches[d.name]?.power || d.power,
@@ -36,34 +37,34 @@ const toMoves = (moves, patches = {}) => map(compose(
     names: n => n.find(l => l.language.name === LANG).name,
     type: prop('name'),
     damage_class: prop('name')
-  }),
+  })
 ))(moves)
 
 const toHeld = (held, patch) => {
   if (patch[held]) return patch[held]
 
-  return {
+  return nonnull({
     sprite: held.name,
     name: held.names.find(l => l.language.name === LANG).name,
     effect: held.effect_entries[0]?.short_effect
-  }
+  })
 }
 
 const toAbility = (ability, patches = {}) => {
   if (patches[ability]) return patches[ability]
   if (patches[ability.name]) return patches[ability.name]
 
-  return {
+  return nonnull({
     name: ability.names.find(l => l.language.name === LANG).name,
     effect: ability.effect_entries.find(i => i.language.name === LANG)?.short_effect
-  }
+  })
 }
 
 const toTypes = map(path(['type', 'name']))
 const toPokemon = (p, patches = {}) => {
   let patch = patches[p] || {}
 
-  return {
+  return nonnull({
     name: p?.species?.name || p,
     sprite: p?.sprites?.front_default,
     types: patch.types || toTypes(p.types),
@@ -76,7 +77,7 @@ const toPokemon = (p, patches = {}) => {
       ...(patch?.stats || {})
     }
 
-  }
+  })
 }
 
 export async function get ({ params, query }) {
@@ -102,13 +103,13 @@ export async function get ({ params, query }) {
           const ability = await maybe(P.getAbilityByName, p.ability).catch(_ => p.ability)
           const moves = await Promise.all(p.moves.map(m => P.getMoveByName(m)))
 
-          return {
+          return nonnull({
             ...p,
             ...toPokemon(data, patch.pokemon || {}),
             moves: toMoves(moves, patch.move || {}),
             held: held ? toHeld(held, patch.item || {}) : null,
             ability: ability ? toAbility(ability, patch.ability || {}) : null,
-          }
+          })
         })
     )
 

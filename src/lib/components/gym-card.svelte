@@ -22,6 +22,7 @@
       .then(i => CompareModal = i.CompareModal)
   })
 
+  const { getLeague } = getContext('game')
   const { open } = getContext('simple-modal')
 
   let loading = true
@@ -29,8 +30,8 @@
   const fetchData = async (starter) => {
     if (!browser) return
     try {
-      const res = await fetch(`/api/battle/${game}/${id}.json?starter=${starter}`)
-      const data = await res.json()
+      const league = await getLeague(game)
+      const data = league[id]
 
       img = typeof data.img === 'string'
         ? { src: data.img }

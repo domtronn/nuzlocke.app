@@ -44,7 +44,22 @@
     return data[gen]
   }
 
+  let league = {}
+  const fetchLeague = async (game, starter = 'fire') => {
+    if (!browser) return
+
+    const id = `${game}@${starter}`
+    const uri = `/league/${game}.${starter}.json`
+    if (league[id]) return league[id]
+    if (!league[uri]) league[uri] = fetch(uri)
+      .then(res => res.json())
+
+    league[id] = await league[uri]
+    return league[id]
+  }
+
   setContext('game', {
+    getLeague: fetchLeague,
     getAllPkmn: fetchData,
     getPkmn: id => fetchData().then((ps = []) => ps.find(p => p.num == id || p.name == id || p.alias == id || p.sprite == id)),
     getPkmns: (ids = []) => fetchData()
