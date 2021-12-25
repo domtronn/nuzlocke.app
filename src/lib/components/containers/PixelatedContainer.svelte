@@ -7,6 +7,13 @@
 </div>
 
 <style>
+
+  @media (min-width:theme('screens.sm')) {
+    div {
+      min-width: theme('maxWidth.lg');
+    }
+  }
+
   :root {
     --pixel-bg: theme('colors.gray.50');
     --pixel-border: black;
