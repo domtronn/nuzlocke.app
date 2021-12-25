@@ -59,7 +59,7 @@
   }
 
   $: filtered = insertList(route, custom).filter(r => {
-    if (filter === 2 && !search) return r.origPos >= progress
+    if (filter === 2 && !search) return r.origPos >= progress - 1
     if (!search) return true
     const item = game.data[r.name]
     const s = search.toLowerCase()
@@ -68,7 +68,7 @@
       ? routefilter(s, r)
       : routefilter(s, r) || pokemonfilter(s, item)
 
-    return filter === 2 ? match && r.origPos >= progress : match
+    return filter === 2 ? match && r.origPos >= progress - 1 : match
   })
 
   /** Event Handlers */
