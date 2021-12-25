@@ -136,8 +136,8 @@
       <AutoComplete
         inset={selected ? true : '2.4em'}
         rounded
-        fetch={search || !suggest ? getAllPkmn : null}
-        items={search || !suggest ? null : encounterItems}
+        fetch={search || !suggest ? getAllPkmn : []}
+        items={search || !suggest ? [] : encounterItems}
         bind:search
         bind:selected
         name='{location} Encounter'
