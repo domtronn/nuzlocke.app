@@ -49,7 +49,7 @@
   </button>
 
   <div
-    class='grid -my-2 gap-x-2'
+    class='grid -my-2 mx-auto overflow-hidden'
     style='grid-template-columns: repeat({pageSize}, minmax(0, 1fr));'>
     {#each pages[page] as p, i (p)}
       <div
