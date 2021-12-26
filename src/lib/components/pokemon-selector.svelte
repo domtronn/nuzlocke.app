@@ -98,21 +98,23 @@
     dispatch('delete', { id: location })
   }
 
- function handleClear () {
-   status = nickname = selected = null
-   store.update(patch({ [location]: {} }))
- }
+  function handleClear () {
+    status = nickname = selected = null
+    store.update(patch({ [location]: {} }))
+  }
 
+  let statusComplete = false
   $: {
-    if (prevstatus !== undefined) {
-      if (status.id !== prevstatus.id && status.id === 1) captureComplete = true
-      if (status.id !== prevstatus.id && status.id === 5) deathComplete = true
+    if (prevstatus !== undefined && status.id !== prevstatus.id) {
+      if (status.id === 2 || status.id === 3) statusComplete = ['parcel', 'profs-letter']
+      if (status.id === 1) statusComplete = ['poke-ball', 'friend-ball', 'heavy-ball', 'master-ball']
+      if (status.id === 5) statusComplete = ['thick-club', 'quick-claw', 'rare-bone', 'dragon-fang', 'sharp-beak']
+      if (status.id === 6) statusComplete = ['health-av-candy', 'tapunium-z--held', 'revive', 'electric-gem', 'max-revive']
     }
 
     prevstatus = status
   }
 
-  let captureComplete = false, deathComplete = false
   const handleStatus = (sid) => () => status = NuzlockeStates[sid]
 
   const { open } = getContext('simple-modal')
@@ -173,11 +175,8 @@
               {#if evoComplete}
                 <Particles icons={['ice-stone', 'dawn-stone', 'fire-stone']} on:end={() => evoComplete = false} />
               {/if}
-              {#if captureComplete}
-                <Particles icons={['poke-ball', 'friend-ball', 'heavy-ball', 'master-ball']} on:end={() => captureComplete = false} />
-              {/if}
-              {#if deathComplete}
-                <Particles amount={15} icons={['thick-club', 'quick-claw', 'rare-bone', 'dragon-fang', 'sharp-beak']} on:end={() => deathComplete = false} />
+              {#if statusComplete}
+                <Particles amount={Math.round(Math.random() * 4) + Math. pow(statusComplete.length, 2)} icons={statusComplete} on:end={() => statusComplete = false} />
               {/if}
             </div>
 
