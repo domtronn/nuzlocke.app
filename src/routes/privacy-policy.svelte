@@ -4,13 +4,30 @@
 
 <script>
   import { PixelatedContainer } from '$lib/components/containers'
+  const clear = _ => {
+    if (!confirm('This will delete all of your saved data and could degrade app performance. Are you sure you want to continue?'))
+      return
+
+    Object
+      .keys(window.localStorage)
+      .filter(i => i.startsWith('nuzlocke'))
+      .forEach(it => window.localStorage.removeItem(it))
+
+    // Clear all serviceworkers
+    navigator.serviceWorker.getRegistrations().then(function(registrations) {
+      for(let registration of registrations) {
+        registration.unregister()
+      } })
+
+    alert('All data deleted successfully')
+  }
 </script>
 
 <svelte:head>
   <title>Nuzlocke Tracker | Privacy Policy</title>
 </svelte:head>
 
-<main class='container text-gray-800 pt-8 sm:pt-0 dark:text-gray-300'>
+<main class='container mx-auto text-gray-800 pb-24 pt-8 sm:pt-0 dark:text-gray-300'>
   <div class='mx-auto pb-16 sm:pb-12 mx-4'>
     <PixelatedContainer className='my-16 py-6 px-8 overflow-x-hidden mx-auto max-w-prose'>
       <h1 class='text-2xl'>Privacy Policy</h1>
@@ -77,7 +94,7 @@
       </table>
 
       <p>
-        You can clear all your stored data by visiting the <a href="/">settings</a> page.
+        You can clear all your stored data by <button on:click={clear} class='hover:cursor-pointer underline' title='Clear all stored data'>Clicking Here</button>.
       </p>
 
       <h2 class='text-xl mb-2'>Changes to this Privacy Policy</h2>
