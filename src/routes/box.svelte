@@ -63,7 +63,7 @@
       [it]: ogbox.filter(p => (Pokemon[p.pokemon]?.types || []).map(i => i.toLowerCase()).includes(it)).length
     }), {})
 
-  $: box = ogbox
+  $: box = [...ogbox]
   .sort((a, b) => {
     if (stat === 'total') {
       return sum(Object.values(Pokemon[b.pokemon]?.baseStats))
@@ -77,6 +77,8 @@
 
   $: enabled = box.length && (stat || type)
 
+  const toid = p => `${p.id}@${p.location}`
+
   let evoComplete = false
   const handleEvo = ({ evos, alias }, original) => open(EvoModal, { evolutions: evos, base: alias, select: handleEvoComplete(original) })
   const handleEvoComplete = o => async id => getPkmn(id)
@@ -85,16 +87,16 @@
         .then(data => {
           Pokemon = data
           ogbox = ogbox.map(i => {
-            return i.id === o.id ? { ...i, pokemon: p.alias } : i
+            return toid(i) == toid(o) ? { ...i, pokemon: p.alias } : i
           })
 
           updatePokemon({ ...o, pokemon: p.alias })
-          evoComplete = o.id
+          evoComplete = toid(o)
         })
     })
 
   const handleKill = o => _ => {
-    ogbox = ogbox.filter(i => i.id !== o.id)
+    ogbox = ogbox.filter(i => toid(i) !== toid(o))
     killPokemon(o)
   }
 
@@ -177,7 +179,7 @@
                 types={(Pokemon[p.pokemon].types || []).map(t => t.toLowerCase())}
               >
                 <span slot=img>
-                  {#if evoComplete === p.id}
+                  {#if evoComplete === toid(p)}
                     <span style='z-index: 999999' class='absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2'>
                       <Particles
                         amount={25}
