@@ -13,7 +13,7 @@ export const readdata = _ => {
   const gameData = _read(window.localStorage.getItem(IDS.game(active))) || []
   const gameKey = saveData[active]?.game
 
-  return [gameData, gameKey, active]
+  return [gameData, gameKey, active, saveData[active]]
 }
 
 export const IDS = {

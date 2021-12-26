@@ -3,12 +3,13 @@
 </script>
 
 <script>
-
   export let id = 25
 
+  import { flip as animflip } from 'svelte/animate'
   import { fly } from 'svelte/transition'
+  import { onMount } from 'svelte'
 
-  import { activeGame, savedGames, parse, getGame, read, summarise } from '$lib/store'
+  import { readdata, activeGame, savedGames, parse, getGame, read, summarise } from '$lib/store'
   import { PixelatedContainer } from '$lib/components/containers'
 
   import { Picture, PIcon } from '$lib/components/core'
@@ -22,6 +23,8 @@
   let hovering = false
   const toggleHover = () => hovering = !hovering
 
+  const dur = d => 10 * Math.sqrt(d)
+
   let flip = 0
   setInterval(() => {
     flip = (flip + 1) % 2
@@ -29,13 +32,23 @@
   }, interval)
 
   let activeId, active = {}, summary = {}
-  activeGame.subscribe(id => {
-    activeId = id
-    savedGames.subscribe(parse(games => {
-      active = games[id]
-    }))
+  let links = [
+    { title: 'New Game', href: '/new', color: 'blue' },
+    { title: 'Load Game', href: '/saves', color: 'pink' }
+  ]
 
-    getGame(id).subscribe(read(summarise(data => summary = data)))
+  onMount(() => {
+    const [data,,id, save] = readdata()
+    activeId = id
+    active = save
+    summarise(data => summary = data)(data)
+
+    if (active) {
+      links = [
+        { title: 'Continue', href: '/game', color: 'yellow' },
+        ...links
+      ]
+    }
   })
 
   $: duration = Math.min(interval / 3, 1000)
@@ -58,52 +71,35 @@
   <div>
     <PixelatedContainer className=container__index>
 
-      <div class='font-bold flex flex-col'>
+      <div class='font-bold flex flex-col h-36 justify-center'>
 
-        {#if active && active.game}
-          <a class='mb-1 group tracking-widest hover:drop-shadow-text hover:text-pink-500'
+        {#each links as { title, href, color } (href)}
+          <a animate:animflip in:fly={{ x: -50 }}
+             class='group tracking-widest hover:drop-shadow-text {color}'
              on:mouseenter={toggleHover}
              on:mouseleave={toggleHover}
-             href='/game'
+             {href}
              sveltekit:prefetch
              rel=external
            >
-            Continue
-            <div class='flex flex-row group-hover:grayscale-0 md:grayscale items-center transition h-8 -mt-1 font-sans text-sm font-normal'>
-              <Picture
-                src=/assets/{active.game}
-                alt='{active.game} logo'
-                className=mr-2
-                aspect=32xauto
-              />
+            {title}
+            {#if title === 'Continue'}
+              <div class='flex flex-row group-hover:grayscale-0 md:grayscale items-center transition h-8 -mt-1 font-sans text-sm font-normal'>
+                <Picture
+                  src=/assets/{active.game}
+                  alt='{active.game} logo'
+                  className=mr-2
+                  aspect=32xauto
+                  />
 
-              <span>{summary.available.length}</span>
-              <PIcon className='transform scale-75 -ml-1' type='item' name='poke-ball' />
-              <span>{summary.deceased.length}</span>
-              <Icon className='ml-1 w-3 h-3 fill-current' src={Deceased} />
-            </div>
+                <span>{summary.available.length}</span>
+                <PIcon className='transform scale-75 -ml-1' type='item' name='poke-ball' />
+                <span>{summary.deceased.length}</span>
+                <Icon className='ml-1 w-3 h-3 fill-current' src={Deceased} />
+              </div>
+            {/if}
           </a>
-        {/if}
-
-        <a href="/new"
-           class:mt-7={!active || !active.game}
-           class='tracking-widest hover:drop-shadow-text hover:text-yellow-300'
-           sveltekit:prefetch
-           on:mouseenter={toggleHover} on:mouseleave={toggleHover}
-           rel=external
-         >
-            New Game
-        </a>
-
-        <a href="/saves"
-           class:mb-7={!active || !active.game}
-           class='tracking-widest hover:drop-shadow-text hover:text-blue-400'
-           sveltekit:prefetch
-           on:mouseenter={toggleHover} on:mouseleave={toggleHover}
-           rel=external
-         >
-          Load Game
-        </a>
+        {/each}
 
         <!-- <span> -->
         <!--   <button class='tracking-widest hover:drop-shadow-text hover:text-orange-400' on:mouseenter={toggleHover} on:mouseleave={toggleHover}> -->
@@ -163,4 +159,8 @@
     image-rendering: pixelated;
     transition-duration: 300ms !important;
   }
+
+  .pink { @apply hover:text-pink-500 }
+  .blue { @apply hover:text-blue-400 }
+  .yellow { @apply hover:text-yellow-400 }
 </style>
