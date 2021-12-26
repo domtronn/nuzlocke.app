@@ -26,7 +26,7 @@
 
   import { createEventDispatcher, onMount, getContext } from 'svelte'
 
-  let selected, nickname, status, nature, search
+  let selected, nickname, prevstatus, status, nature, search
 
   export let encounters = []
   let encounterItems = []
@@ -103,11 +103,17 @@
    store.update(patch({ [location]: {} }))
  }
 
-  let captureComplete = false
-  const handleStatus = (sid) => () => {
-    if (sid === 1) captureComplete = true
-    status = NuzlockeStates[sid]
+  $: {
+    if (prevstatus !== undefined) {
+      if (status.id !== prevstatus.id && status.id === 1) captureComplete = true
+      if (status.id !== prevstatus.id && status.id === 5) deathComplete = true
+    }
+
+    prevstatus = status
   }
+
+  let captureComplete = false, deathComplete = false
+  const handleStatus = (sid) => () => status = NuzlockeStates[sid]
 
   const { open } = getContext('simple-modal')
   let evoComplete = false
@@ -122,7 +128,11 @@
   $: gray = NuzlockeGroups.Unavailable.includes(status?.id)
 </script>
 
-<div class='grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-y-3 md:gap-y-2 lg:gap-y-0 gap-x-2 flex relative w-full sm:w-auto'>
+<SettingsWrapper id=nickname-clause let:setting={nicknames}>
+  <div
+    class:lg:grid-cols-8={nicknames}
+    class:lg:grid-cols-6={!nicknames}
+    class='grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-y-3 md:gap-y-2 lg:gap-y-0 gap-x-2 flex relative w-full'>
   <span class='group location relative z-50'>
     {#if $$slots.location}
       <slot name=location />
@@ -166,6 +176,9 @@
               {#if captureComplete}
                 <Particles icons={['poke-ball', 'friend-ball', 'heavy-ball', 'master-ball']} on:end={() => captureComplete = false} />
               {/if}
+              {#if deathComplete}
+                <Particles amount={15} icons={['thick-club', 'quick-claw', 'rare-bone', 'dragon-fang', 'sharp-beak']} on:end={() => deathComplete = false} />
+              {/if}
             </div>
 
             <PIcon name={selected.sprite} className='{gray ? 'filter grayscale' : ''} {iconClass}' />
@@ -177,13 +190,15 @@
     </SettingsWrapper>
   </SettingsWrapper>
 
-  <Input
-    rounded
-    bind:value={nickname}
-    name='{location} Nickname'
-    placeholder=Nickname
-    className='col-span-2 {!selected || status?.id === 4 ? 'hidden sm:block' : ''}'
-  />
+  <SettingsWrapper id=nickname-clause on=1>
+    <Input
+      rounded
+      bind:value={nickname}
+      name='{location} Nickname'
+      placeholder=Nickname
+      className='col-span-2 {!selected || status?.id === 4 ? 'hidden sm:block' : ''}'
+      />
+  </SettingsWrapper>
 
   <SettingsWrapper id=permadeath on=1 condition={status?.id === 5}>
     <div class='border-2 dark:border-gray-600 shadow-sm rounded-lg h-10 flex items-center text-sm dark:text-gray-200 text-gray-800 cursor-not-allowed'>
@@ -353,8 +368,8 @@
       </ul>
     </Popover>
   </span>
-
-</div>
+  </div>
+</SettingsWrapper>
 
 <style>
   .dupe {

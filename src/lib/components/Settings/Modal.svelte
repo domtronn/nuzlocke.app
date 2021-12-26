@@ -10,18 +10,23 @@
   import Settings from 'svelte-icons-pack/vsc/VscSettings'
   import { settingsData, settingsDefault } from './_data'
 
-  let settings = [...settingsData]
-  let game, settingHash = settingsDefault
+  let game, settingHash = settingsDefault, settings = []
+
   onMount(() => {
     parse(saves => {
       if (!browser) return
       game = saves[$activeGame]
       const s = (game.settings || settingsDefault).split('')
-      settings = settings.map((setting, i) => ({ ...setting, state: +s[i] }))
+
+      settings = [...settingsData]
+        .map(setting => ({ ...setting, state: +s[setting.index] }))
     })($savedGames)
   })
 
-  $: settingHash = settings.map(i => +i.state).join('')
+  $: settingHash = [...settings]
+    .sort((a, b) => a.index - b.index)
+    .map(i => +i.state).join('')
+
   $: settings, savedGames.update(updateGame({
     ...game,
     settings: settingHash

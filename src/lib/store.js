@@ -64,7 +64,7 @@ export const createGame = (name, game) => (payload) => {
     created: +new Date(),
     name,
     game,
-    settings: '01110'
+    settings: '011101'
   })
 
   localStorage.setItem(IDS.game(id), '{}')

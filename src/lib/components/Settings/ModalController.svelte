@@ -12,11 +12,10 @@
   const onopen = _ => open(SettingsModal)
 </script>
 
-<!-- TODO: Readd -->
-<!-- <IconButton -->
-<!--   rounded -->
-<!--   src={Settings} -->
-<!--   title='Open game settings' -->
-<!--   containerClassName='absolute top-0 right-2 md:relative' -->
-<!--   on:click={onopen} -->
-<!-- /> -->
+<IconButton
+  rounded
+  src={Settings}
+  title='Open game settings'
+  containerClassName='absolute top-0 right-2 md:relative'
+  on:click={onopen}
+/>
