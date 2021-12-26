@@ -26,14 +26,14 @@
 </script>
 
 <svelte:head>
-  <title>Nuzlocke Tracker | Credit</title>
+  <title>Nuzlocke Tracker | Artist credit</title>
 </svelte:head>
 
 <main class='container mx-auto text-gray-800 pb-24 pt-8 sm:pt-0 dark:text-gray-300'>
   <div class='mx-auto pb-16 sm:pb-12 mx-4'>
     <PixelatedContainer className='my-16 py-6 px-8 overflow-x-hidden mx-auto text-center max-w-prose'>
 
-      <h1 class='text-4xl font-bold -mb-2'>Credit</h1>
+      <h1 class='text-4xl font-bold -mb-2'>Artist Credits</h1>
 
       <div class='inline-flex mx-24 my-6'>
         {#each credit.slice(0, Math.floor(credit.length / 2)) as { name, img }, i (img)}
