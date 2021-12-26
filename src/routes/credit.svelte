@@ -54,13 +54,13 @@
 
       <p class='mx-16'>
         This application is made infinitely better through the great
-        work of the community and their generosity in sharing their work!
+        work of the Pokémon community and their generosity in sharing it
       </p>
 
       <p class='mx-16 '>
-        I want to say a huge thank you to everyone for letting me use
-        their work, and encourage everyone to support them and check
-        out their own projects.
+        I want to say a huge thank you to those artists letting me use their
+         work, and encourage you all to support them and check
+        out their projects or portfolios below
       </p>
 
       <div class='mx-24 inline-flex my-6'>
