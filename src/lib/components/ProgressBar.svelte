@@ -8,23 +8,24 @@
     ...acc,
     [type]: (acc[type] || 0) + (value ? 1 : 0)
   }), {})
+
 </script>
 
 <div class='w-full max-w-md mx-auto bg-gray-900 ring-8 ring-gray-800 shadow-lg relative h-4 border border-gray-200 rounded-md flex overflow-hidden'>
   {#each Object.entries(counted) as [type, amt]}
     <span
       class='{type} h-full'
-      style='width: {(amt + 1) / segments.length * 100}%;'
+      style='width: {(amt / segments.length) * 100}%;'
     >
       <Tooltip>{type} victories: {amt}</Tooltip>
     </span>
   {/each}
   <p
     class='h-full absolute left-0 pointer-events-none'
-    style='width: {(max + 1) / segments.length * 100}%; animation-duration: {(max / segments.length) * 60}s; background-image: url("{Pattern('rgba(255, 255, 255, 0.2)')}")'
+    style='width: {max / segments.length * 100}%; animation-duration: {(max / segments.length) * 60}s; background-image: url("{Pattern('rgba(255, 255, 255, 0.2)')}")'
   />
 </div>
-<span class='absolute left-1/2 -translate-x-1/2 px-4 pb-2 -mt-2 shadow-lg bg-gray-800 translate-y-4 rounded-b-lg '>Progress: <b>{Math.ceil((max + 1) / segments.length * 100)}%</b></span>
+<span class='absolute left-1/2 -translate-x-1/2 px-4 pb-2 -mt-2 shadow-lg bg-gray-800 translate-y-4 rounded-b-lg '>Progress: <b>{Math.ceil(max / segments.length * 100)}%</b></span>
 
 <style>
   .gym-leader { @apply bg-orange-400; }
