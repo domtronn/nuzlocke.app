@@ -13,7 +13,11 @@
   let mounted, pokemon
   onMount(() => {
     const [data] = readdata()
-    pokemon = random(Object.values(data).filter(i => !!i.nickname && i.status && NuzlockeGroups.Available.includes(i.status)))
+    pokemon = random(
+      Object
+        .values(data || [])
+        .filter(i => !!i.nickname && i.status && NuzlockeGroups.Available.includes(i.status))
+    )
 
     if ($support === SUPPORTED || !$consent) return
     

@@ -35,11 +35,11 @@
         style='line-height:1.2em; min-height:2.4em;'
         class='flex items-end tracking-tighter'
         >
-        <span class:cursor-help={moves[move.name].effect}>
+        <span class:cursor-help={moves[move.name]?.effect}>
           {move.name}
-          {#if moves[move.name].effect}
+          {#if moves[move.name]?.effect}
             *
-            <Tooltip>{moves[move.name].effect}</Tooltip>
+            <Tooltip>{moves[move.name]?.effect}</Tooltip>
           {/if}
         </span>
       </div>

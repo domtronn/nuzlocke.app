@@ -10,7 +10,7 @@ export const popover = writable(null)
 export const readdata = _ => {
   const active = window.localStorage.getItem(IDS.active)
   const saveData = _parse(window.localStorage.getItem(IDS.saves))
-  const gameData = _read(window.localStorage.getItem(IDS.game(active)))
+  const gameData = _read(window.localStorage.getItem(IDS.game(active))) || []
   const gameKey = saveData[active]?.game
 
   return [gameData, gameKey, active]
