@@ -44,9 +44,14 @@ export const deleteGame = (id) => {
 
   localStorage.removeItem(IDS.game(id))
   savedGames.update(g => {
+    if (!id) return g
+      .split(',')
+      .filter(i => !i.startsWith('|'))
+      .join(',')
+
     return g
       .split(',')
-      .filter(i => !i.startsWith(id))
+      .filter(i => !i.startsWith(id) && !i.startsWith('|'))
       .join(',')
   })
 }
