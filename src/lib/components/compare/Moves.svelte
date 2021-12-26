@@ -15,7 +15,7 @@
   const moves = (opp?.original?.moves || []).reduce((acc, it) => ({ ...acc, [it.name]: it }), {})
 </script>
 
-<ul class='relative grid grid-cols-2 lg:grid-cols-4 w-full md:mt-2 text-sm md:text-xs'>
+<ul class='relative grid grid-cols-4 w-full md:mt-2 text-sm md:text-xs'>
   <div class='absolute top-2 right-4 lg:top-0 text-gray-400 dark:text-gray-600 cursor-help text-lg'>
     <Icon src={Info} className=fill-current />
     <Tooltip>
@@ -53,8 +53,9 @@
 
       {#if move.desc}
         <p class=text-gray-500>
-          <strong>~{Math.ceil(move.range[1] / 5) * 5}</strong>
+          <strong class=sm:-ml-2>~{Math.ceil(move.range[1] / 5) * 5}</strong>
           <span>dmg</span>
+          <br class='hidden sm:block' />
           <small>({parseInt(move.desc.split(' - ')[1])}%)</small>
         </p>
       {/if}
