@@ -110,7 +110,7 @@
         <div class='bg-white dark:bg-gray-900 md:border-t border-gray-200 dark:border-gray-800 text-gray-600 dark:text-gray-200 pl-4 pr-2 pb-4 md:pl-8 md:pr-4 md:py-3 rounded-b-lg'>
           <Accordion className='hidden md:flex flex-row-reverse justify-between'>
             <strong slot=heading class=text-sm> Info </strong>
-            <span slot=icon let:isOpen={isOpen} let:className={className}>
+            <span slot=icon let:isOpen={isOpen} let:classes={className}>
               {#if isOpen}
                 <Icon size=0.8em src={Minus} className='{className} transform -rotate-90' />
               {:else}

@@ -1,6 +1,6 @@
 <script>
   export let game, id, location = '', starter = '', type
-  let pokemon = [], name = '', speciality = '', img, imgCredit, imgLink
+  let pokemon = [], name = '', speciality = '', img
 
   import { browser } from '$app/env'
   import { onMount, getContext } from 'svelte'

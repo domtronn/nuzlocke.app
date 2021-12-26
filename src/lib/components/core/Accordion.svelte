@@ -22,9 +22,9 @@
 >
   <span class='mr-2 md:mr-4'>
     {#if $$slots.icon}
-      <slot name='icon' {isOpen} className='text-base fill-current md:text-xl {iconClassName}' />
+      <slot name='icon' {isOpen} classes='text-base fill-current md:text-xl {iconClassName}' />
     {:else}
-      <Icon src={Chevron} className='text-base md:text-xl {iconClassName}' />
+      <Icon src={Chevron} classes='text-base md:text-xl {iconClassName}' />
     {/if}
   </span>
   <slot name='heading' />

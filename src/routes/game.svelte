@@ -3,7 +3,7 @@
   import { browser } from '$app/env'
   import { fade, slide } from 'svelte/transition'
 
-  import { Loader, Tabs, IconButton } from '$lib/components/core'
+  import { Loader, Tabs } from '$lib/components/core'
 
   import { SupportBanner } from '$lib/components/navs'
   import { GameRoute, Search } from '$lib/components/Game'

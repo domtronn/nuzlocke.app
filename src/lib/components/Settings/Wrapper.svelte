@@ -1,5 +1,4 @@
 <script>
-  import { browser } from '$app/env'
   import { settingsDefault, getSetting } from './_data'
   import { parse, activeGame, savedGames } from '$lib/store'
 
