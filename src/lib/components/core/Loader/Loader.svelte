@@ -2,58 +2,59 @@
   import { PIcon } from '$lib/components/core'
 </script>
 
-<div class='flex items-center justify-center transform scale-150'>
-  <div class='absolute flex items-center justify-center -translate-y-full top-1/2'>
-    <div class=spinner>
-      <div class=bounce1>
-        <PIcon className='absolute -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2' type=item name=poke-ball />
-      </div>
-      <div class=bounce2>
-        <PIcon className='absolute -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2' type=item name=great-ball />
-      </div>
-      <div class=bounce3>
-        <PIcon className='absolute -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2' type=item name=ultra-ball />
-      </div>
+<div class='absolute flex items-center justify-center -translate-y-full top-1/2 left-1/2 -translate-x-1/2 transform scale-150'>
+
+    <div class=spin>
+      <PIcon className='absolute -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2' type=item name=poke-ball />
     </div>
-  </div>
+    <div class='shadow bg-black' />
+
 </div>
 
 <style>
-  .spinner {
-    margin: 100px auto 0;
-    width: 70px;
-    text-align: center;
+  .spin {
+    @apply origin-center;
+    animation: loader 2.4s infinite;
   }
 
-  .spinner > div {
-    width: 18px;
-    height: 18px;
-
+  .shadow {
+    @apply w-4 h-1 -mb-5;
     border-radius: 100%;
-    display: inline-block;
-    -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
-    animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+    margin-left: -2px;
+    animation: shadow 2.4s infinite;
   }
 
-  .spinner .bounce1 { animation-delay: -0.32s; }
-  .spinner .bounce2 { animation-delay: -0.16s; }
+  @keyframes loader {
+    0%, 100% { opacity: 0; }
+    10%, 90% { opacity: 1; }
 
-  @-webkit-keyframes sk-bouncedelay {
-    0%, 80%, 100% { -webkit-transform: scale(0) }
-    40% { -webkit-transform: scale(1.0) }
+    0% { transform: translateX(-100px) translateY(0) rotate(0); animation-timing-function: ease-out; }
+    12.5% { transform: translateX(-75px) translateY(-48px) rotate(160deg); animation-timing-function: ease-in; }
+    25% { transform: translateX(-50px) translateY(0) rotate(360deg); animation-timing-function: ease-out; }
+    37.5% {transform: translateX(-25px) translateY(-48px) rotate(580deg); animation-timing-function: ease-in; }
+    50% {transform: translateX(0) translateY(0) rotate(760deg); animation-timing-function: ease-out; }
+
+    62.5% {transform: translateX(25px) translateY(-48px) rotate(930deg); animation-timing-function: ease-in; }
+    75% {transform: translateX(50px) translateY(0) rotate(1000deg); animation-timing-function: ease-out; }
+    87.5% { transform: translateX(75px) translateY(-48px) rotate(1320deg); animation-timing-function: ease-in; }
+    100% { transform: translateX(100px) translateY(0) rotate(1440deg); animation-timing-function: ease-out; }
   }
 
-  @keyframes sk-bouncedelay {
-    0%, 80%, 100% {
-      -webkit-transform: scale(0);
-      transform: scale(0);
-    } 40% {
-      -webkit-transform: scale(1.0);
-      transform: scale(1.0);
-    }
+  @keyframes shadow {
+    0%, 100% { opacity: 0; }
+    10%, 90% { opacity: 0.25; }
+
+    0% { width: 4px; height: 1px; transform: translateX(-100px); animation-timing-function: ease-out; }
+    12.5% { width: 16px; height: 4px; transform: translateX(-75px); animation-timing-function: ease-in; }
+    25% { width: 4px;height: 1px; transform: translateX(-50px); animation-timing-function: ease-out; }
+    37.5% {width: 16px; height: 4px;  transform: translateX(-25px); animation-timing-function: ease-in; }
+    50% { width: 4px; height: 1px; transform: translateX(0); animation-timing-function: ease-out; }
+
+    62.5% {width: 16px; height: 4px;  transform: translateX(25px); animation-timing-function: ease-in; }
+    75% { width: 4px; height: 1px; transform: translateX(50px); animation-timing-function: ease-out; }
+    87.5% { width: 16px; height: 4px;  transform: translateX(75px); animation-timing-function: ease-in; }
+    100% { width: 4px; height: 1px; transform: translateX(100px); animation-timing-function: ease-out; }
   }
-  div { height: calc(100vh - 10rem); }
-  div > div { height: auto; }
 
   :global(.pkitem-great-ball) {
     width: 18px;
