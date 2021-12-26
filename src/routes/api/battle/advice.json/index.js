@@ -28,8 +28,8 @@ export async function post ({ body }) {
         defId,
         Object.fromEntries(
           team
-            .map(({ name: atkName, moves, item, ability }) => {
-              return [atkName, moves.map(m => {
+            .map(({ name: atkName, moves, item, ability }, i) => {
+              return [`${atkName}-${i}`, moves.map(m => {
                 if (!m.power || m.damage_clas === 'status') return m
                 try {
                   const res = calculate(

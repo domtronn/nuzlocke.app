@@ -2,6 +2,9 @@
   export let calc, pokemon = []
   const [team, opp] = pokemon
 
+  $: teamId = team.sprite
+  $: oppId = `${opp.sprite}-${opp.id}`
+
   import TypeBadge from '$lib/components/type-badge.svelte'
   import { Tooltip } from '$lib/components/core'
   import { CompareSummary } from './'
@@ -20,7 +23,6 @@
     </Tooltip>
   </div>
 
-
   <div class='flex items-center col-span-4'>
     <strong class='hidden text-gray-600 dark:text-gray-50 lg:block text-sm mr-2'>
     Moves
@@ -29,7 +31,7 @@
   </div>
 
 
-  {#each calc[team.sprite][opp.sprite] as move}
+  {#each calc[teamId][oppId] as move (move)}
     <li class='my-2 flex col-span-2 md:col-span-1 flex-col leading-4 lg:leading-3 lg:w-24 -mt-1'>
       <div
         style='line-height:1.2em; min-height:2.4em;'
