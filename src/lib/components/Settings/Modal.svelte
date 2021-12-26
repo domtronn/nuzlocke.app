@@ -27,10 +27,12 @@
     .sort((a, b) => a.index - b.index)
     .map(i => +i.state).join('')
 
-  $: settings, savedGames.update(updateGame({
-    ...game,
-    settings: settingHash
-  }))
+  $: if (game) {
+    savedGames.update(updateGame({
+      ...game,
+      settings: settingHash
+    }))
+  }
 </script>
 
 <section class='max-w-sm mx-auto bg-gray-50 dark:bg-gray-900 p-8 rounded-2xl pb-2'>
