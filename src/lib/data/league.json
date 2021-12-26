@@ -3711,15 +3711,15 @@
           "ability": "levitate"
         },
         {
-          "name": "golbat",
-          "level": "42",
+          "name": "bronzor",
+          "level": "41",
           "moves": [
-            "haze",
-            "u-turn",
-            "bite",
-            "poison-fang"
+            "confuse-ray",
+            "payback",
+            "light-screen",
+            "extrasensory"
           ],
-          "ability": "inner-focus"
+          "ability": "levitate"
         },
         {
           "name": "purugly",
@@ -3734,15 +3734,27 @@
           "held": "sitrus-berry"
         },
         {
-          "name": "bronzor",
-          "level": "41",
+          "name": "skuntank",
+          "level": "46",
           "moves": [
-            "confuse-ray",
-            "payback",
-            "light-screen",
-            "extrasensory"
+            "poison-gas",
+            "belch",
+            "flamethrower",
+            "snarl"
           ],
-          "ability": "levitate"
+          "ability": "aftermath",
+          "held": "sitrus-berry"
+        },
+        {
+          "name": "golbat",
+          "level": "42",
+          "moves": [
+            "haze",
+            "u-turn",
+            "bite",
+            "poison-fang"
+          ],
+          "ability": "inner-focus"
         },
         {
           "name": "golbat",
@@ -3754,18 +3766,6 @@
             "sludge-bomb"
           ],
           "ability": "inner-focus"
-        },
-        {
-          "name": "skuntank",
-          "level": "46",
-          "moves": [
-            "poison-gas",
-            "belch",
-            "flamethrower",
-            "snarl"
-          ],
-          "ability": "aftermath",
-          "held": "sitrus-berry"
         }
       ]
     },
@@ -30126,9 +30126,21 @@
       "img": {
         "src": "/leaders/sm-mallow",
         "author": "Kyledove",
-        "link": "https://www.deviantart.com/kyle-dovelurantis"
+        "link": "https://www.deviantart.com/kyle-dove"
       },
       "pokemon": [
+        {
+          "name": "lurantis",
+          "level": "24",
+          "moves": [
+            "razor-leaf",
+            "x-scissor",
+            "solar-blade",
+            "synthesis"
+          ],
+          "ability": "leaf-guard",
+          "held": "power-herb"
+        },
         {
           "name": "trumbeak",
           "level": "22",
