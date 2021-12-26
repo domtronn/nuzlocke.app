@@ -1,22 +1,31 @@
 <script>
   export let className = ''
   import { activeGame, savedGames, parse } from '$lib/store'
-  import { fade } from 'svelte/transition'
+  import { fade, fly } from 'svelte/transition'
   import { page } from '$app/stores'
 
-  let game = {}
+  let game = {}, games
   activeGame.subscribe(id => {
-    savedGames.subscribe(parse(games => {
-      game = games[id]
+    savedGames.subscribe(parse(g => {
+      game = g[id]
+      games = Object.values(g).filter(i => i.id !== id)
     }))
   })
 
+  const load = game => {
+    $activeGame = game.id
+    window.location.reload()
+  }
+
   import ThemeToggle from '$lib/components/theme-toggle.svelte'
-  import { Picture } from '$lib/components/core'
+  import { Picture, Popover } from '$lib/components/core'
 
   import Icon from 'svelte-icons-pack'
   import Box from 'svelte-icons-pack/bi/BiPackage'
+  import Save from 'svelte-icons-pack/bi/BiSave'
   import Game from 'svelte-icons-pack/cg/CgGames'
+  import RightArr from 'svelte-icons-pack/ai/AiFillCaretRight'
+  import DownArr from 'svelte-icons-pack/ai/AiFillCaretDown'
 
   const pages = [
     { name: 'Game', link: '/game', icon: Game },
@@ -30,7 +39,8 @@
 
 <nav>
   <div class=p-container>
-    <a
+    <div class='inline-flex items-center'>
+      <a
       href="/"
       rel="external"
       class='{className} home group'>
@@ -46,6 +56,37 @@
         </h1>
       {/if}
     </a>
+
+      {#if games.length}
+        <Popover className='mt-1 sm:mt-4' title='Load saves' position={window?.innerWidth < 700 ? 'bottom' : 'right'}>
+          <span class='inline-flex'>
+            <Icon className='transition fill-current ml-2' src={Save} />
+            <Icon className='hidden sm:block transition fill-current -ml-0.5' src={RightArr} />
+            <Icon className='block sm:hidden transition fill-current -ml-0.5' src={DownArr} />
+          </span>
+
+          <ul in:fly={{ duration: 250, y: 50 }} out:fade={{ duration: 100 }} class='popover bg-white dark:bg-gray-900 rounded-xl shadow-lg w-60 mt-6 ml-4 sm:mt-4 sm:ml-2 flex flex-col divide-y dark:divide-gray-700' slot=popover>
+            <strong class='bg-black sm:bg-gray-800 text-white dark:bg-black rounded-t-xl -mb-px z-50 py-3 px-4'>Load Game</strong>
+            {#each games as game}
+              <li
+                class='px-4 py-2 text-gray-600 dark:text-gray-200 w-full text-sm cursor-pointer dark:hover:text-blue-500 hover:text-blue-400 inline-flex justify-between items-center transition'
+                title='Load game {game.name}'
+                on:click={load(game)}>
+                {game.name}
+
+                <Picture
+                  alt='{game.name} logo'
+                  src=/assets/{game.game}
+                  className='w-16'
+                  aspect=192x96
+                  />
+              </li>
+            {/each}
+          </ul>
+        </Popover>
+      {/if}
+
+  </div>
 
     <span class='inline-flex relative'>
       <ThemeToggle />

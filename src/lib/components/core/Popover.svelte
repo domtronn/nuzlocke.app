@@ -1,5 +1,5 @@
 <script>
-  export let title, className = ''
+  export let title, className = '', position = 'left'
 
   import { onMount } from 'svelte'
   import { popover } from '$lib/store'
@@ -22,7 +22,7 @@
     else {
       $popover = id
       create(btnref, popoverref, {
-        placement: 'left'
+        placement: position
       })
     }
   }
