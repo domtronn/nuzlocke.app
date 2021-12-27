@@ -30,7 +30,7 @@
   const fetchData = async (starter) => {
     if (!browser) return
     try {
-      const league = await getLeague(game)
+      const league = await getLeague(game, starter)
       const data = league[id]
 
       img = typeof data.img === 'string'
