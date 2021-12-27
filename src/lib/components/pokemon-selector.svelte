@@ -26,7 +26,8 @@
 
   import { createEventDispatcher, onMount, getContext } from 'svelte'
 
-  let selected, nickname, prevstatus, status, nature, search
+  let selected, nickname, status, nature, search
+  let prevstatus = 'loading'
 
   export let encounters = []
   let encounterItems = []
@@ -44,6 +45,7 @@
       .then(e => encounterItems = (encounters || []).map(id => e[id]).filter(i => i))
     import('$lib/components/particles').then(m => Particles = m.default)
     import('$lib/components/EvolutionModal.svelte').then(m => EvoModal = m.default)
+    prevstatus = null
   })
 
   const { getAllPkmn, getPkmn, getPkmns } = getContext('game')
@@ -104,17 +106,6 @@
   }
 
   let statusComplete = false
-  $: {
-    if (!prevstatus || (prevstatus?.id && status?.id && status.id !== prevstatus.id)) {
-      if (status?.id === 2 || status?.id === 3) statusComplete = ['parcel', 'profs-letter']
-      if (status?.id === 1) statusComplete = ['poke-ball', 'friend-ball', 'heavy-ball', 'master-ball']
-      if (status?.id === 5) statusComplete = ['thick-club', 'quick-claw', 'rare-bone', 'dragon-fang', 'sharp-beak']
-      if (status?.id === 6) statusComplete = ['health-av-candy', 'tapunium-z--held', 'revive', 'electric-gem', 'max-revive']
-    }
-
-    prevstatus = status
-  }
-
   const handleStatus = (sid) => () => status = NuzlockeStates[sid]
 
   const { open } = getContext('simple-modal')
@@ -169,12 +160,11 @@
           {/if}
         </span>
 
+        {selected}
+
         <svelte:fragment slot=icon let:iconClass>
           {#if selected}
             <div class='absolute left-4 top-2 z-50'>
-              {#if evoComplete}
-                <Particles icons={['ice-stone', 'dawn-stone', 'fire-stone']} on:end={() => evoComplete = false} />
-              {/if}
               {#if statusComplete}
                 <Particles amount={Math.round(Math.random() * 4) + Math. pow(statusComplete.length, 2)} icons={statusComplete} on:end={() => statusComplete = false} />
               {/if}
