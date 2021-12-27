@@ -13,7 +13,7 @@
 </script>
 
 {#if !gapTypes.length}
-  <div in:fade style='max-width: fit-content' class='mx-auto my-4 overflow-hidden rounded-xl shadow-lg bg-yellow-50 flex mt-4 items-center'>
+  <div in:fade style='max-width: fit-content' class='mx-auto mb-4 mt-3 overflow-hidden rounded-xl shadow-lg bg-yellow-50 flex items-center'>
     <Icon color=yellow size=sm
           icons={[ shardicons, sashicons ]}
           scale={_ => 0.2 + Math.random()}>
@@ -25,9 +25,7 @@
     </p>
   </div>
 
-  <slot />
-
-  <p in:fade={{ delay: 2000 }} class='text-center my-4 text-sm'>
+  <p in:fade class='text-center my-4 text-sm'>
     You could still improve your coverage against
     {#each weakTypes as type, i}
       <span class=ml-1>
@@ -38,6 +36,8 @@
       <TypeBadge className='leading-4' {type} />
     {/each}
   </p>
+
+  <slot />
 
 {:else}
 

@@ -32,7 +32,7 @@
   rounded
   disabled={!box || !box.length}
   title='Open Analysis'
-  containerClassName='absolute top-0 right-2 md:relative'
+  containerClassName='absolute w-full sm:w-auto md:relative'
   on:click={onopen}
 >
   <span style='--img-dark: url("{Bubbles('#fff')}"); --img: url("{Bubbles('#000')}")'

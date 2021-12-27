@@ -12,11 +12,13 @@
 <td in:fly|once={{ duration, x: 50, delay }}>
   {#if weak}
     <div class='weak c-{Math.floor(Math.min(weakpct, 49) / 10)} float-right'
-         style='width: calc({weakpct}% - 20px);'
-         />
-    <span>
-      <b>{weak}</b> ({weakpct}%)
-    </span>
+         style='width: {weakpct}%;'
+         >
+      <span>
+        <b>{weak}</b>
+        <i>({weakpct}%)</i>
+      </span>
+    </div>
   {/if}
 </td>
 
@@ -30,16 +32,23 @@
 <td in:fly|once={{ duration, delay, x: -50 }}>
   {#if resist}
     <div class='resist c-{Math.floor(Math.min(resistpct, 49) / 10)} float-left'
-         style='width: calc({resistpct}% - 20px);'
-         />
-    <span>
-      <b>{resist}</b> ({resistpct}%)
-    </span>
+         style='width: {resistpct}%;'
+         >
+      <span>
+        <b>{resist}</b>
+        <i>({resistpct}%)</i>
+      </span>
+    </div>
   {/if}
 </td>
 
 <style>
-  span { @apply tracking-tight }
+  span { @apply top-1/2 -translate-y-1/2 absolute sm:w-16 w-8 }
+  .resist i, .weak i { @apply tracking-tight hidden sm:inline-block }
+
+  .resist, .weak { position: relative; }
+  .resist span { @apply -right-1 translate-x-full }
+  .weak span { @apply -left-1 -translate-x-full }
   
   :global(.dark) .resist.c-0 { background-color: theme('colors.lime.900')}
   :global(.dark) .resist.c-1 { background-color: theme('colors.lime.700')}
@@ -66,9 +75,9 @@
   .weak.c-4 { background-color: theme('colors.red.500')}
 
   td + td { @apply w-auto py-1; }
-  td, td + td + td { @apply w-48 sm:w-60 text-tiny py-0; }
+  td, td + td + td { @apply w-60 lg:w-60 text-tiny py-0; }
 
-  td { @apply table-cell align-middle h-full }
+  td { @apply table-cell align-middle h-full relative }
   td { text-align: right; }
   td + td + td { text-align: left; }
   

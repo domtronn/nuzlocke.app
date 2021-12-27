@@ -24,19 +24,18 @@
     .map(([ type ]) => type)
 
   let sort = 0
-  const sortFns = [sorts.lexio, sorts.weak, sorts.resist, sorts.ratio]
-  const sortDescs = ['Alphabetical', 'Most weaknesses', 'Most resistances', 'Worst coverage']
+  const sortFns = [sorts.weak, sorts.resist, sorts.ratio, sorts.lexico]
+  const sortDescs = ['Most weaknesses', 'Most resistances', 'Worst coverage', 'Alphabetical']
   const sortIcons = [SortAlph, Sort, Sort, Sort]
   const nextsort = _ => sort = (sort + 1) % 4
   const filter = ([, { weak, resist }]) => weak || resist
 
 </script>
 
-<section class='bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-100 p-6 rounded-2xl shadow-lg' >
-  <div class='flex justify-between items-center mb-2'>
-    <h2 class='text-xl font-bold flex items-center'><Icon size=1.2em className='fill-current mr-1' src={Analysis} />Analysis</h2>
+<section class='bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-100 py-3 px-3 sm:p-6 rounded-2xl shadow-lg' >
+  <div class='flex justify-end items-center mb-2'>
     <h3 class='inline-flex gap-x-1 items-center text-sm'>
-      <span class=ml-1>Sorted: </span>
+      <span class='ml-1 text-gray-500 '>Sorted: </span>
       <strong>{sortDescs[sort]}</strong>
       <IconButton containerClassName=ml-1 rounded src={sortIcons[sort]} on:click={nextsort} />
     </h3>
@@ -46,8 +45,7 @@
     weakTypes={weakest}
     gapTypes={typegap}
     {suggestions}
-    >
-
+  >
     <table>
       {#each [...analysis].filter(filter).sort(sortFns[sort]) as [type, data], i (type)}
         <tr animate:flip={{ duration: 500 }} class=py-1>
