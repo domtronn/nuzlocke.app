@@ -7,6 +7,7 @@
 
   import { Loader, IconButton } from '$lib/components/core'
   import TypeBadge from '$lib/components/type-badge.svelte'
+  import { Modal as AnalysisModal } from '$lib/components/Analysis'
 
   import { getBox, updatePokemon, killPokemon } from '$lib/store'
   import { types } from '$lib/data/types'
@@ -108,6 +109,10 @@
   <div out:fade|local={{ duration: 250 }} in:fade|local={{ duration: 250, delay: 300 }} class='container mx-auto'>
     <div class='flex flex-col mx-auto items-center justify-center'>
       <main role='main' class='w-full sm:w-3/4 flex flex-col gap-y-4 py-6 pb-32 px-4 md:px-8 overflow-hidden'>
+
+        <div class='-my-2 px-2'>
+          <AnalysisModal box={Object.values(Pokemon)} />
+        </div>
 
         <div class='inline-flex flex-wrap sm:flex-row gap-y-2 gap-x-4 sm:items-start z-50 mt-2'>
           <div class='grid sm:grid-rows-2 grid-cols-8 w-full sm:w-auto sm:grid-cols-5 gap-1 sm:gap-2 col-span-2'>

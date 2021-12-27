@@ -1,0 +1,64 @@
+<script>
+  export let count, analysis, suggestions
+
+  import { flip } from 'svelte/animate'
+  import sorts from './_sorts'
+  import TypeSummary from './Summary.svelte'
+  import TypeMessage from './Message.svelte'
+
+  import { IconButton } from '$lib/components/core'
+  import Icon from 'svelte-icons-pack'
+  import Analysis from 'svelte-icons-pack/ri/RiHealthTestTubeFill'
+  import Sort from 'svelte-icons-pack/bs/BsSortDownAlt'
+  import SortAlph from 'svelte-icons-pack/bs/BsSortAlphaDown'
+
+  const weakest = analysis // Calculate the weakest ratio of resists to weaknesses
+    .filter(([, { weak, resist }]) => {
+      if (weak && resist && weak / resist > 1.5) return true
+      if (!resist && weak) return true
+    })
+    .map(([type]) => type)
+
+  const typegap = analysis // Find types that you don't resist
+    .filter(([, { resist }]) => !resist)
+    .map(([ type ]) => type)
+
+  let sort = 0
+  const sortFns = [sorts.lexio, sorts.weak, sorts.resist, sorts.ratio]
+  const sortDescs = ['Alphabetical', 'Most weaknesses', 'Most resistances', 'Worst coverage']
+  const sortIcons = [SortAlph, Sort, Sort, Sort]
+  const nextsort = _ => sort = (sort + 1) % 4
+  const filter = ([, { weak, resist }]) => weak || resist
+
+</script>
+
+<section class='bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-100 p-6 rounded-2xl shadow-lg' >
+  <div class='flex justify-between items-center mb-2'>
+    <h2 class='text-xl font-bold flex items-center'><Icon size=1.2em className='fill-current mr-1' src={Analysis} />Analysis</h2>
+    <h3 class='inline-flex gap-x-1 items-center text-sm'>
+      <span class=ml-1>Sorted: </span>
+      <strong>{sortDescs[sort]}</strong>
+      <IconButton containerClassName=ml-1 rounded src={sortIcons[sort]} on:click={nextsort} />
+    </h3>
+  </div>
+
+  <TypeMessage
+    weakTypes={weakest}
+    gapTypes={typegap}
+    {suggestions}
+    >
+
+    <table>
+      {#each [...analysis].filter(filter).sort(sortFns[sort]) as [type, data], i (type)}
+        <tr animate:flip={{ duration: 500 }} class=py-1>
+          <TypeSummary
+            {i}
+            {type}
+            {count}
+            {...data}
+            />
+        </tr>
+      {/each}
+    </table>
+  </TypeMessage>
+</section>

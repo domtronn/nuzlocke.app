@@ -6,7 +6,7 @@ import { typeAdvMap } from './_types'
  * @param {string[]} defType - The defensive types being hit
  * @returns {int} The damage mod of the attack against the types
  */
-const moveResistance = (atkType, pkmnTypes) => {
+export const moveResistance = (atkType, pkmnTypes) => {
   const res = pkmnTypes.reduce((acc, defType) => {
     return acc * (typeAdvMap[atkType][defType] || 1)
   }, 1)
@@ -19,7 +19,7 @@ const moveResistance = (atkType, pkmnTypes) => {
  * @param {string[]} atkTypes - List of attacking move types
  * @param {string[]} pkmnTypes - List of defending types
  */
-const coverageResistance = (atkTypes, pkmnTypes) =>
+export const coverageResistance = (atkTypes, pkmnTypes) =>
   Math.max(...atkTypes.map(atkType => moveResistance(atkType, pkmnTypes)))
 
 export default (defTeam, atkTeam) => {

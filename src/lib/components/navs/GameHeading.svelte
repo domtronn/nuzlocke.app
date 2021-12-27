@@ -77,7 +77,7 @@
                 <Picture
                   alt='{game.name} logo'
                   src=/assets/{game.game}
-                  className='w-16'
+                  className='ml-2 w-16'
                   aspect=192x96
                   />
               </li>
