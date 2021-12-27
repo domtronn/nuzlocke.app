@@ -105,11 +105,11 @@
 
   let statusComplete = false
   $: {
-    if (prevstatus !== undefined && status.id !== prevstatus.id) {
-      if (status.id === 2 || status.id === 3) statusComplete = ['parcel', 'profs-letter']
-      if (status.id === 1) statusComplete = ['poke-ball', 'friend-ball', 'heavy-ball', 'master-ball']
-      if (status.id === 5) statusComplete = ['thick-club', 'quick-claw', 'rare-bone', 'dragon-fang', 'sharp-beak']
-      if (status.id === 6) statusComplete = ['health-av-candy', 'tapunium-z--held', 'revive', 'electric-gem', 'max-revive']
+    if (!prevstatus || (prevstatus?.id && status?.id && status.id !== prevstatus.id)) {
+      if (status?.id === 2 || status?.id === 3) statusComplete = ['parcel', 'profs-letter']
+      if (status?.id === 1) statusComplete = ['poke-ball', 'friend-ball', 'heavy-ball', 'master-ball']
+      if (status?.id === 5) statusComplete = ['thick-club', 'quick-claw', 'rare-bone', 'dragon-fang', 'sharp-beak']
+      if (status?.id === 6) statusComplete = ['health-av-candy', 'tapunium-z--held', 'revive', 'electric-gem', 'max-revive']
     }
 
     prevstatus = status
