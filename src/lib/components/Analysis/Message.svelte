@@ -41,7 +41,7 @@
 
 {:else}
 
-  <div in:fade style='max-width: fit-content' class='overflow-hidden rounded-xl shadow-lg border flex items-center my-4 mx-auto'>
+  <div in:fade style='max-width: fit-content' class='overflow-hidden rounded-xl shadow-lg border flex items-center my-4 bg-gray-50 mx-auto'>
     <Icon color=blue size=xs
           icons={[ ['great-ball', 'poke-ball', 'net-ball', 'dive-ball'] ]}
           scale={_ => 0.4 + Math.random() / 2}>
