@@ -14,12 +14,12 @@ export async function post ({ body }) {
       .reduce((acc, it) => {
         const dmg = box.map(({ types }) => moveResistance(it, types))
         const minDmg = dmg
-              .reduce((acc, it) => {
-                const id = it < 1 ? 'resist' : it > 1 ? 'weak' : 'neutral'
-                return {
-                  ...acc,
-                  [id]: (+acc[id] || 0) + 1
-                }}, {})
+          .reduce((acc, it) => {
+            const id = it < 1 ? 'resist' : it > 1 ? 'weak' : 'neutral'
+            return {
+              ...acc,
+              [id]: (+acc[id] || 0) + 1
+            }}, {})
 
         return { ...acc, [it]: minDmg }
       }, {})

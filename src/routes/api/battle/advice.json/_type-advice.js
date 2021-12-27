@@ -8,7 +8,8 @@ import { typeAdvMap } from './_types'
  */
 export const moveResistance = (atkType, pkmnTypes) => {
   const res = pkmnTypes.reduce((acc, defType) => {
-    return acc * (typeAdvMap[atkType][defType] || 1)
+    const mod = typeAdvMap[atkType][defType]
+    return acc * (typeof mod === 'undefined' ? 1 : mod)
   }, 1)
 
   return res

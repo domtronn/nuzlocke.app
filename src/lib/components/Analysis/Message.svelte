@@ -26,17 +26,19 @@
     </p>
   </div>
 
-<p in:fade class='text-center my-4 text-sm'>
-  But you have <b>poor</b> coverage against
-  {#each weakTypes as type, i}
-    <span class=ml-1>
-      {#if i === weakTypes.length - 1}
-        &
-      {/if}
-    </span>
-    <TypeBadge className='leading-4' {type} />
-  {/each}
-</p>
+  {#if weakTypes.length}
+    <p in:fade class='text-center my-4 text-sm'>
+      But you have <b>poor</b> coverage against
+      {#each weakTypes as type, i}
+        <span class=ml-1>
+          {#if weakTypes.length > 1 && i === weakTypes.length - 1}
+            &
+          {/if}
+        </span>
+        <TypeBadge className='leading-4' {type} />
+      {/each}
+    </p>
+  {/if}
 
 
   <slot />
