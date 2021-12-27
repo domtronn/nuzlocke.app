@@ -10,7 +10,6 @@
   import Icon from 'svelte-icons-pack'
   import Analysis from 'svelte-icons-pack/ri/RiHealthTestTubeFill'
   import Sort from 'svelte-icons-pack/bs/BsSortDownAlt'
-  import SortAlph from 'svelte-icons-pack/bs/BsSortAlphaDown'
 
   const weakest = analysis // Calculate the weakest ratio of resists to weaknesses
     .filter(([, { weak, resist }]) => {
@@ -24,10 +23,9 @@
     .map(([ type ]) => type)
 
   let sort = 0
-  const sortFns = [sorts.weak, sorts.resist, sorts.ratio, sorts.lexico]
-  const sortDescs = ['Most weaknesses', 'Most resistances', 'Worst coverage', 'Alphabetical']
-  const sortIcons = [SortAlph, Sort, Sort, Sort]
-  const nextsort = _ => sort = (sort + 1) % 4
+  const sortFns = [sorts.weak, sorts.resist, sorts.ratio]
+  const sortDescs = ['Most weaknesses', 'Most resistances', 'Worst coverage']
+  const nextsort = _ => sort = (sort + 1) % sortFns.length
   const filter = ([, { weak, resist }]) => weak || resist
 
 </script>
@@ -37,7 +35,7 @@
     <h3 class='inline-flex gap-x-1 items-center text-sm'>
       <span class='ml-1 text-gray-500 '>Sorted: </span>
       <strong>{sortDescs[sort]}</strong>
-      <IconButton containerClassName=ml-1 rounded src={sortIcons[sort]} on:click={nextsort} />
+      <IconButton containerClassName=ml-1 rounded src={Sort} on:click={nextsort} />
     </h3>
   </div>
 

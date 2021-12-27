@@ -13,6 +13,6 @@
   }
 </script>
 
-<Particle bind:y bind:x g={1 + Math.random()} {v} {theta} {scale} {className}>
+<Particle bind:y bind:x g={0.4 + Math.random()} {v} {theta} {scale} {className}>
   <slot />
 </Particle>

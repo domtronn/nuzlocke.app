@@ -13,17 +13,6 @@
 </script>
 
 {#if !gapTypes.length}
-  <div in:fade style='max-width: fit-content' class='mx-auto mb-4 mt-3 overflow-hidden rounded-xl shadow-lg bg-yellow-50 flex items-center'>
-    <Icon color=yellow size=sm
-          icons={[ shardicons, sashicons ]}
-          scale={_ => 0.2 + Math.random()}>
-      🎉
-    </Icon>
-
-    <p style='text-align: left !important; max-width: 300px !important' class='text-gray-800 px-4 max-w-xs'>
-      Your box is full of Pokémon that resist every offensive type!
-    </p>
-  </div>
 
   <p in:fade class='text-center my-4 text-sm'>
     You could still improve your coverage against
@@ -37,28 +26,41 @@
     {/each}
   </p>
 
-  <slot />
-
-{:else}
-
-  <div in:fade style='max-width: fit-content' class='overflow-hidden rounded-xl shadow-lg border flex items-center my-4 bg-gray-50 mx-auto'>
-    <Icon color=blue size=xs
-          icons={[ ['great-ball', 'poke-ball', 'net-ball', 'dive-ball'] ]}
-          scale={_ => 0.4 + Math.random() / 2}>
-      😱
+  <div in:fade style='max-width: fit-content' class='mx-auto mb-4 mt-3 overflow-hidden rounded-xl shadow-lg bg-yellow-50 flex items-center'>
+    <Icon color=yellow size=xs
+          icons={[ shardicons, sashicons ]}
+          scale={_ => 0.2 + Math.random()}>
+      🎉
     </Icon>
 
-    <div class='px-4 p-2 text-gray-800 text-sm leading-5'>
-      <p class='font-bold hidden text-gray-800 sm:block'>Your team is missing coverage</p>
-    </div>
+    <p style='text-align: left !important; max-width: 300px !important' class='text-gray-800 px-4 max-w-xs'>
+      Your box is full of <b>Pokémon</b> that resist <b>every</b> offensive type!
+    </p>
   </div>
 
   <slot />
 
-  <p in:fade={{ delay: 1600 }}>
-    Your team has no resistances for <b class=text-lg>{gapTypes.length}</b> types
+{:else}
+
+  <div in:fade style='max-width: fit-content' class='overflow-hidden rounded-xl shadow-lg border dark:border-none flex items-center my-3 bg-red-200 mx-auto'>
+    <Icon color=red size=xs
+          icons={[]}
+          scale={_ => 0.2 + (Math.random() / 10)}>
+      😱
+    </Icon>
+
+    <div class='px-4 p-2 text-gray-900 text-sm leading-5'>
+      <p class='font-bold text-gray-900'>Your team is missing coverage</p>
+    </div>
+  </div>
+
+  <p class=mb-3>
+    Your team has <b class=text-lg>no</b> resistances for <b class=text-lg>{gapTypes.length}</b> types
   </p>
-  <p in:fade={{ delay: 1800 }}>
+
+  <slot />
+
+  <p class='mb-2 mt-4' in:fade={{ delay: 1800 }}>
     You should add some
     {#each suggestions.slice(0, 3) as type, i}
       <span class=ml-1>

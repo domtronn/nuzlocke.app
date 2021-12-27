@@ -2,7 +2,7 @@
   export let icons, size, color, scale, className
   import { onMount } from 'svelte'
 
-  const sizes = { base: 80, sm: 64, lg: 128, xs: 32}
+  const sizes = { base: 80, sm: 64, lg: 128, xs: 48}
   const dim = sizes[size]
   const amount = Math.floor(Math.sqrt(dim))
 
@@ -34,9 +34,10 @@
   div { @apply relative overflow-hidden; flex-shrink: 0}
   .base { @apply w-20 h-20 text-5xl }
   .sm { @apply w-16 h-16 text-4xl }
-  .xs { @apply w-10 h-10 text-lg }
+  .xs { @apply w-12 h-12 text-2xl }
   .lg { @apply w-32 h-32 text-6xl }
 
   .yellow { @apply bg-yellow-200 }
   .blue { @apply bg-blue-200 }
+  .red { @apply bg-red-400 }
 </style>
