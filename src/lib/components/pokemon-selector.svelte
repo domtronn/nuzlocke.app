@@ -106,7 +106,18 @@
   }
 
   let statusComplete = false
-  const handleStatus = (sid) => () => status = NuzlockeStates[sid]
+  const handleStatus = (sid) => () => {
+    status = NuzlockeStates[sid]
+    _animateStatus(sid)
+  }
+
+  const animateStatus = item => _ => _animateStatus(item.id)
+  const _animateStatus = (sid) => {
+    if (sid === 2 || sid === 3) statusComplete = ['parcel', 'profs-letter']
+    if (sid === 1) statusComplete = ['poke-ball', 'friend-ball', 'heavy-ball', 'master-ball']
+    if (sid === 5) statusComplete = ['thick-club', 'quick-claw', 'rare-bone', 'dragon-fang', 'sharp-beak']
+    if (sid === 6) statusComplete = ['health-av-candy', 'tapunium-z--held', 'revive', 'electric-gem', 'max-revive']
+  }
 
   const { open } = getContext('simple-modal')
   let evoComplete = false
@@ -213,7 +224,7 @@
           {/if}
         </svelte:fragment>
 
-        <div class='flex inline-flex gap-x-2 px-3 py-2 md:py-3 items-center' slot=item let:item let:label>
+        <div on:click={animateStatus(item)} class='flex inline-flex gap-x-2 px-3 py-2 md:py-3 items-center' slot=item let:item let:label>
           <Icon src={item.icon} className='fill-current transform md:scale-125' />
           {@html label}
         </div>
