@@ -45,6 +45,11 @@
     {suggestions}
   >
     <table>
+      <tr>
+        <td class='font-bold text-tiny tracking-widest text-right uppercase pr-4'>Weaknesses</td>
+        <td class='font-bold text-tiny tracking-widest text-center uppercase border-l border-r border-gray-400'>Types</td>
+        <td class='font-bold text-tiny tracking-widest text-left uppercase pl-4'>Resistances</td>
+      </tr>
       {#each [...analysis].filter(filter).sort(sortFns[sort]) as [type, data], i (type)}
         <tr animate:flip={{ duration: 500 }} class=py-1>
           <TypeSummary

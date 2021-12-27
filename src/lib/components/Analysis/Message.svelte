@@ -14,18 +14,6 @@
 
 {#if !gapTypes.length}
 
-  <p in:fade class='text-center my-4 text-sm'>
-    You could still improve your coverage against
-    {#each weakTypes as type, i}
-      <span class=ml-1>
-        {#if i === weakTypes.length - 1}
-          &
-        {/if}
-      </span>
-      <TypeBadge className='leading-4' {type} />
-    {/each}
-  </p>
-
   <div in:fade style='max-width: fit-content' class='mx-auto mb-4 mt-3 overflow-hidden rounded-xl shadow-lg bg-yellow-50 flex items-center'>
     <Icon color=yellow size=xs
           icons={[ shardicons, sashicons ]}
@@ -37,6 +25,19 @@
       Your box is full of <b>Pokémon</b> that resist <b>every</b> offensive type!
     </p>
   </div>
+
+<p in:fade class='text-center my-4 text-sm'>
+  But you have <b>poor</b> coverage against
+  {#each weakTypes as type, i}
+    <span class=ml-1>
+      {#if i === weakTypes.length - 1}
+        &
+      {/if}
+    </span>
+    <TypeBadge className='leading-4' {type} />
+  {/each}
+</p>
+
 
   <slot />
 
