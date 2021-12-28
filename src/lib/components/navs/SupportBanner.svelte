@@ -41,7 +41,8 @@
         <br class='hidden sm:block' />Would you consider supporting me to make it awesome?
         <br />
         {#if pokemon}
-          I know <b>{pokemon.nickname}</b> would really appreciate it <PIcon name={pokemon.pokemon} className='-m-5 -ml-5 transform scale-125 -mr-12 -mt-10' />
+          I know <b>{pokemon.nickname}</b> would really appreciate it
+        <PIcon name={pokemon.pokemon} className='-m-5 -ml-5 shake transform scale-150 -mr-14 -mt-10 top-3 sm:bottom-auto sm:right-auto right-24 absolute sm:relative' />
         {/if}
       </span>
       <div class='flex flex-row-reverse sm:flex-row'>

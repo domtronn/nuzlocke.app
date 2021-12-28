@@ -116,3 +116,15 @@ body {
           drop-shadow(-1px 1px 0 theme('colors.yellow.500'))
           drop-shadow(1px -1px 0 theme('colors.yellow.500')) !important;
 }
+
+.shake {
+  animation: shake 3.2s cubic-bezier(.36,.07,.19,.97) infinite;
+}
+
+@keyframes shake {
+  0%, 50% { transform: var(--tw-transform) rotate(0);}
+  5%, 45% { transform: var(--tw-transform) rotate(-2deg);}
+  10%, 40% { transform: var(--tw-transform) rotate(2deg);}
+  15%, 25%, 35% { transform: var(--tw-transform) rotate(-5deg);}
+  20%, 30% { transform: var(--tw-transform) rotate(5deg);}
+}
