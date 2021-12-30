@@ -50,15 +50,17 @@
     {/key}
 
       {#if def?.original?.held}
-        <div style='transform: var(--tw-transform) scaleX(-1)' class='absolute right-0 top-1/2 -translate-y-3 -translate-x-5 z-20 p-1 mb-1 flex flex-col cursor-help items-center'>
-          <Tooltip>
-            {def.original.held.name}: {def.original.held.effect.replace(/^Held: +/g, '')}
-          </Tooltip>
-          <span>
-            <PIcon type='item' name={def.original.held.sprite} />
-          </span>
-          <Icon src={Hand} className='-mt-3.5 fill-current dark:text-white' />
-        </div>
+        {#key def.original.held.name}
+          <div style='transform: var(--tw-transform) scaleX(-1)' class='absolute right-0 top-1/2 -translate-y-3 -translate-x-5 z-20 p-1 mb-1 flex flex-col cursor-help items-center'>
+            <Tooltip>
+              {def.original.held.name}: {def.original.held.effect.replace(/^Held: +/g, '')}
+            </Tooltip>
+            <span>
+              <PIcon type='item' name={def.original.held.sprite} />
+            </span>
+            <Icon src={Hand} className='-mt-3.5 fill-current dark:text-white' />
+          </div>
+        {/key}
       {/if}
 
     <!-- VS Icon -->
