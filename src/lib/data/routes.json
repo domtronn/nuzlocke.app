@@ -1221,10 +1221,6 @@
     },
     {
       "type": "route",
-      "name": "Mirage Island"
-    },
-    {
-      "type": "route",
       "name": "Mirage Mountain"
     }
   ],
@@ -6828,6 +6824,7 @@
       "type": "route",
       "name": "Route 105",
       "encounters": [
+        "regice",
         "tentacool",
         "magikarp",
         "wingull",
@@ -7613,17 +7610,6 @@
     },
     {
       "type": "route",
-      "name": "Route 105",
-      "encounters": [
-        "tentacool",
-        "magikarp",
-        "wingull",
-        "pelipper",
-        "wailmer"
-      ]
-    },
-    {
-      "type": "route",
       "name": "Route 108",
       "encounters": [
         "tentacool",
@@ -8337,13 +8323,13 @@
       "type": "route",
       "name": "Power Plant",
       "encounters": [
+        "zapdos",
         "pikachu",
         "magnemite",
         "magneton",
         "voltorb",
         "electrode",
-        "electabuzz",
-        "zapdos"
+        "electabuzz"
       ]
     },
     {
@@ -8464,19 +8450,6 @@
         "seadra",
         "magikarp",
         "gyarados"
-      ]
-    },
-    {
-      "type": "route",
-      "name": "Power Plant",
-      "encounters": [
-        "pikachu",
-        "magnemite",
-        "magneton",
-        "voltorb",
-        "electrode",
-        "electabuzz",
-        "zapdos"
       ]
     },
     {
@@ -10234,6 +10207,17 @@
     },
     {
       "type": "route",
+      "name": "Route 46",
+      "encounters": [
+        "rattata",
+        "spearow",
+        "geodude",
+        "aipom",
+        "heracross"
+      ]
+    },
+    {
+      "type": "route",
       "name": "Cherrygrove City",
       "encounters": [
         "tentacool",
@@ -11023,17 +11007,6 @@
         "teddiursa",
         "skarmory",
         "phanpy"
-      ]
-    },
-    {
-      "type": "route",
-      "name": "Route 46",
-      "encounters": [
-        "rattata",
-        "spearow",
-        "geodude",
-        "aipom",
-        "heracross"
       ]
     },
     {
@@ -15869,10 +15842,6 @@
     {
       "type": "route",
       "name": "Mirage Forest"
-    },
-    {
-      "type": "route",
-      "name": "Mirage Island"
     },
     {
       "type": "route",
@@ -31096,29 +31065,6 @@
         "floatzel",
         "basculin",
         "swablu"
-      ]
-    },
-    {
-      "type": "route",
-      "name": "Route 22",
-      "encounters": [
-        "psyduck",
-        "farfetch'd",
-        "goldeen",
-        "seaking",
-        "magikarp",
-        "gyarados",
-        "azumarill",
-        "dunsparce",
-        "azurill",
-        "carvanha",
-        "sharpedo",
-        "bidoof",
-        "bibarel",
-        "riolu",
-        "bunnelby",
-        "diggersby",
-        "litleo"
       ]
     },
     {
