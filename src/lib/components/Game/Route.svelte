@@ -15,16 +15,16 @@
   import PokemonSelector from '$lib/components/pokemon-selector.svelte'
   import IntersectionObserver from 'svelte-intersection-observer'
 
-  export let route, game, filter, bossFilter, search, progress = '', className = ''
+  export let route, game, filters, search, progress = '', className = ''
   const { store, key, data } = game
 
   let starter = data.__starter || 'fire'
-
   let element
 
-  /** Custom route handlers */
-  let custom = []
+  /** Custom route handlers & Empty routes */
+  let custom = [], filledRoutes = []
   store.subscribe(read(d => {
+    filledRoutes = Object.entries(d).filter(([, i]) => !!i.pokemon).map(([i]) => i)
     if (!custom.length && d.__custom?.length) custom = d.__custom
   }))
 
@@ -59,16 +59,17 @@
   }
 
   $: filtered = insertList(route, custom).filter(r => {
-    if (filter === 2 && !search) return r.origPos >= progress - 1
+    const upcomingF = filters.main === 'upcoming' || (filters.main === 'route' && filters.route === 'upcoming')
+    if (upcomingF && !search) return r.origPos >= progress - 1
     if (!search) return true
     const item = game.data[r.name]
-    const s = search.toLowerCase()
+    const s = search.toLowerCase().trim()
 
     const match = !item
       ? routefilter(s, r)
       : routefilter(s, r) || pokemonfilter(s, item)
 
-    return filter === 2 ? match && r.origPos >= progress - 1 : match
+    return upcomingF ? match && r.origPos >= progress - 1 : match
   })
 
   /** Event Handlers */
@@ -108,22 +109,29 @@
   })
 
   /** Predicates */
-  const routeIds = [0, 2]
-  const bossIds = [0, 1, 2]
+  const routeIds = ['nuzlocke', 'route', 'upcoming']
+  const bossIds = ['nuzlocke', 'bosses', 'upcoming']
 
-  const isStarterRoute = (r, filter) => r.type === 'route' && r.name.toLowerCase() === 'starter' && routeIds.includes(filter)
-  const isRoute = (r, filter) => r.type === 'route' && routeIds.includes(filter)
+  const filterFilled = (r) => filters.route === 'missed' ? filledRoutes.includes(r.name) : false
+  const isStarterRoute = (r, filter) => r.type === 'route' && r.name.toLowerCase() === 'starter' && routeIds.includes(filter) && !filterFilled(r)
+  const isRoute = (r, filter) => r.type === 'route' && routeIds.includes(filter) && !filterFilled(r)
   const isCustom = (r, filter) => r.type === 'custom' && routeIds.includes(filter)
-  const isGym = (r, filter) => r.type === 'gym' && bossIds.includes(filter) && (filter === 0 || bossFilter === 'all' || bossFilter === r.group)
+  const isGym = (r, filter) => r.type === 'gym' && bossIds.includes(filters.main) && (filter === 'nuzlocke' || filter === 'all' || filter === r.group)
 
 </script>
 
 <ul class='flex flex-col gap-y-4 lg:gap-y-2 {className}'>
   {#each filtered.slice(0, limit) as p, id (p)}
-    {#if isStarterRoute(p, filter)}
+    {#if isStarterRoute(p, filters.main)}
       {#if store}
         <li class='flex items-center gap-x-2' id='route-{p.name}' in:fade>
-          <PokemonSelector {id} {store} encounters={p.encounters} location=Starter locationName=Starter on:new={onnewlocation}>
+          <PokemonSelector
+            {id} {store}
+            encounters={p.encounters}
+            location=Starter
+            locationName=Starter
+            on:new={onnewlocation}
+          >
             <div slot=location class='flex flex-row-reverse lg:flex-row items-center gap-x-2 lg:-ml-6 -mr-1'>
               <StarterType on:select={setstarter} bind:starter />
               <p>Starter* <Tooltip>Selecting a starter type modifies Rival encounters.</Tooltip></p>
@@ -132,7 +140,7 @@
         </li>
       {/if}
 
-    {:else if isRoute(p, filter)}
+    {:else if isRoute(p, filters.main)}
       {#if store}
         <li id='route-{p.name}' in:fade>
           <PokemonSelector
@@ -146,7 +154,7 @@
         </li>
       {/if}
 
-    {:else if isCustom(p, filter)}
+    {:else if isCustom(p, filters.main)}
       <li class='flex items-center gap-x-2' id='custom-{p.index}' in:fade>
         <PokemonSelector
           type=custom
@@ -166,7 +174,7 @@
         </PokemonSelector>
       </li>
 
-    {:else if isGym(p, filter, bossFilter)}
+    {:else if isGym(p, filters.main)}
       <li class='-mb-4 md:my-2' id='boss-{id}' in:fade>
         <GymCard game={key} starter={starter} id={p.value} location={p.name} type={p.group} />
       </li >
