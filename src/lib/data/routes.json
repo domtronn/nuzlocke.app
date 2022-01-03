@@ -20353,18 +20353,6 @@
     },
     {
       "type": "route",
-      "name": "Route 105",
-      "encounters": [
-        "regice",
-        "tentacool",
-        "magikarp",
-        "wingull",
-        "pelipper",
-        "wailmer"
-      ]
-    },
-    {
-      "type": "route",
       "name": "Ever Grande City",
       "encounters": [
         "tentacool",
@@ -20602,6 +20590,7 @@
       "type": "route",
       "name": "Route 105",
       "encounters": [
+        "regice",
         "tentacool",
         "magikarp",
         "wingull",
@@ -21399,18 +21388,6 @@
         "wingull",
         "pelipper",
         "sharpedo",
-        "wailmer"
-      ]
-    },
-    {
-      "type": "route",
-      "name": "Route 105",
-      "encounters": [
-        "regice",
-        "tentacool",
-        "magikarp",
-        "wingull",
-        "pelipper",
         "wailmer"
       ]
     },
