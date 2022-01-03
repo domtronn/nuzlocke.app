@@ -1,5 +1,5 @@
 <script>
-  export let icons, size, color, scale, className
+  export let icons, size, color, scale = _ => 0
   import { onMount } from 'svelte'
 
   const sizes = { base: 80, sm: 64, lg: 128, xs: 48}
