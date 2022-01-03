@@ -47,11 +47,11 @@
       {#if game?.game}
         <Picture
           src=/assets/{game?.game}
-          className='hidden md:block md:mr-4 w-20'
+          className='h-7 w-auto my-1 md:mr-4 md:w-20'
           alt='{game?.game} logo'
           aspect=192x96
         />
-        <h1 in:fade class='group-hover:border-black dark:group-hover:border-white'>
+        <h1 in:fade class='hidden md:block group-hover:border-black dark:group-hover:border-white'>
           {game?.name || ''}
         </h1>
       {/if}
