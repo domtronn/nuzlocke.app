@@ -20,6 +20,7 @@ export const hideRouteF = (data) => {
   return (route, filters) => {
     const { name } = route
 
+    if (filters.main !== 'route') return false
     if (filters.route === 'planned') return !planned.includes(name) // Filter locations that are not planned
     if (filters.route === 'missed') return filled.includes(name) // Filter locations that are filled
 
