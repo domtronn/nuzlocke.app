@@ -10,7 +10,7 @@ const GYM_FILTERS = ['nuzlocke', 'bosses', 'upcoming']
 export const hideRouteF = (data) => {
   const locations = Object.values(data)
   const filled = locations // Has pokemon && status
-    .filter(l => !!l.pokemon && !!l.status)
+    .filter(l => !!l.pokemon)
     .map(l => l.location)
 
   const planned = locations // Has pokemon but no status
