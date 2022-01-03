@@ -29,17 +29,17 @@
   <title>Nuzlocke Tracker | Artist credit</title>
 </svelte:head>
 
-<main class='container mx-auto text-gray-800 pb-24 pt-8 sm:pt-0 dark:text-gray-300'>
+<main class='container mx-auto text-gray-800 px-2 pb-24 pt-8 sm:pt-0 dark:text-gray-300'>
   <div class='mx-auto pb-16 sm:pb-12 mx-4'>
     <PixelatedContainer className='my-16 py-6 px-8 overflow-x-hidden mx-auto text-center max-w-prose'>
 
-      <h1 class='text-4xl font-bold -mb-2'>Artist Credits</h1>
+      <h1 class='text-xl sm:text-2xl md:text-4xl font-bold -mb-2'>Artist Credits</h1>
 
-      <div class='inline-flex mx-24 my-6'>
+      <div class='inline-flex mx-6 sm:mx-24 my-4 sm:my-6'>
         {#each credit.slice(0, Math.floor(credit.length / 2)) as { name, img }, i (img)}
           <div
             style='transform: scaleX({i % 2 ? -1 : 1})'
-            class='-mx-8'>
+            class='-mx-6 md:-mx-8'>
             <Picture
               pixelated
               src={img}
@@ -52,22 +52,22 @@
       </div>
 
 
-      <p class='mx-16'>
+      <p>
         This application is made infinitely better through the great
         work of the Pokémon community and their generosity in sharing it
       </p>
 
-      <p class='mx-16 '>
+      <p>
         I want to say a huge thank you to those artists letting me use their
          work, and encourage you all to support them and check
         out their projects or portfolios below
       </p>
 
-      <div class='mx-24 inline-flex my-6'>
+      <div class='mx-6 sm:mx-24 inline-flex my-2 md:my-6'>
         {#each credit.slice(Math.ceil(credit.length / 2)) as { name, img }, i (img)}
           <div
             style='transform: scaleX({i % 2 ? -1 : 1})'
-            class='-mx-8'>
+            class='-mx-6 md:-mx-8'>
             <Picture
               pixelated
               src={img}
@@ -79,12 +79,12 @@
         {/each}
       </div>
 
-      <h2 class='text-2xl font-bold inline-flex items-center mb-4'>
+      <h2 class='text-xl md:text-2xl font-bold inline-flex items-center mb-4'>
         Thank you
         <Icon size=1.2em className='fill-current ml-2 text-red-500' src={Heart} />
       </h2>
 
-      <p class='mx-16 whitespace-normal'>
+      <p class='whitespace-normal'>
         {#each credit as { name, href }, i}
           <a class='mr-1 transition underline hover:text-indigo-400' {href} rel=external target=_blank>
             {name}{i < credit.length - 1 ? ',' : ''}
@@ -97,5 +97,8 @@
 </main>
 
 <style>
-  p { margin-bottom: 16px; }
+  p {
+    margin-bottom: 16px;
+    @apply px-0 sm:px-12 md:px-16 text-sm md:text-base
+  }
 </style>
