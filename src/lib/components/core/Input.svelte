@@ -85,6 +85,10 @@
     width: 1px;
   }
 
+  input.important\:pr {
+    padding-right: 32px !important;
+  }
+
   @media (max-width: theme('screens.sm')) {
     input.sm\:inverted:hover + span,
     input.sm\:inverted:focus + span {

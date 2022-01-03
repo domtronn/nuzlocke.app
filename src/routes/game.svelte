@@ -26,8 +26,21 @@
   let search = ''
 
   $: filter, routeEl && routeEl.resetlimit()
-  let filter = 0
-  const filters = ['Nuzlocke', 'Bosses', 'Upcoming']
+  let filter = 'nuzlocke'
+  const filters = [
+    { label: 'Nuzlocke', val: 'nuzlocke' },
+    { label: 'Routes', val: 'route' },
+    { label: 'Bosses', val: 'bosses' },
+    { label: 'Upcoming', val: 'upcoming' },
+  ]
+
+  let routeFilter = 'all'
+  let routeFilters = [
+    { label: 'All', val: 'all' },
+    { label: 'Upcoming', val: 'upcoming' },
+    { label: 'Planned', val: 'planned' },
+    { label: 'Missed', val: 'missed' },
+  ]
 
   let bossFilter = 'all'
   const bossFilters = [
@@ -119,7 +132,7 @@
 
           <div class='flex flex-col gap-y-4 lg:gap-y-0 md:flex-row justify-between items-start mb-6'>
             <div class='flex flex-col gap-y-2'>
-              {#if filter === 0}
+              {#if filter === 'nuzlocke'}
                 <button
                   transition:slide={{ duration: 250 }}
                   class='text-sm inline-flex items-center'
@@ -132,13 +145,19 @@
 
               <Tabs name=filter tabs={filters} bind:selected={filter} />
 
-              {#if filter === 1}
+              {#if filter === 'bosses'}
                 <span transition:slide={{ duration: 250 }}>
                   <Tabs name=bosses tabs={bossFilters} bind:selected={bossFilter} />
                 </span>
               {/if}
 
-              {#if filter === 2}
+              {#if filter === 'route'}
+                <span transition:slide={{ duration: 250 }}>
+                  <Tabs name=route tabs={routeFilters} bind:selected={routeFilter} />
+                </span>
+              {/if}
+
+              {#if filter === 'upcoming'}
                 <span transition:slide={{ duration: 250 }} class='leading-5 inline-block tracking-tight dark:text-gray-400 text-sm -mb-4'>
                   <Icon size=1.2em src={Hide} className='inline-block -mt-1 mr-1 fill-current'/><b>{latestnav(route, gameData).id}</b> items hidden
                 </span>
@@ -158,8 +177,7 @@
           <GameRoute
             {route}
             {search}
-            {filter}
-            {bossFilter}
+            filters={{ main: filter, boss: bossFilter, route: routeFilter }}
             bind:this={routeEl}
             className='-mt-8 sm:mt-0'
             game={{ data: gameData, store: gameStore, key: gameKey }}
