@@ -47,7 +47,7 @@
       {#if game?.game}
         <Picture
           src=/assets/{game?.game}
-          className='h-7 w-auto my-1 md:mr-4 md:w-20'
+          className='h-7 w-auto my-1 md:mr-4 md:w-20 md:h-auto'
           alt='{game?.game} logo'
           aspect=192x96
         />
