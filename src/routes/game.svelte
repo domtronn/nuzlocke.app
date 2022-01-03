@@ -29,7 +29,7 @@
   let filter = 'nuzlocke'
   const filters = [
     { label: 'Nuzlocke', val: 'nuzlocke' },
-    { label: 'Route', val: 'route' },
+    { label: 'Routes', val: 'route' },
     { label: 'Bosses', val: 'bosses' },
     { label: 'Upcoming', val: 'upcoming' },
   ]
@@ -38,6 +38,7 @@
   let routeFilters = [
     { label: 'All', val: 'all' },
     { label: 'Upcoming', val: 'upcoming' },
+    { label: 'Planned', val: 'planned' },
     { label: 'Missed', val: 'missed' },
   ]
 

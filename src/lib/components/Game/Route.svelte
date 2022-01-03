@@ -1,7 +1,6 @@
 <script>
   import { afterUpdate } from 'svelte'
   import { fade } from 'svelte/transition'
-  import { NuzlockeStates } from '$lib/data/states'
   import { patch, addlocation, removelocation, read } from '$lib/store'
 
   import { toDbLocation } from '$lib/utils/link'
@@ -15,6 +14,9 @@
   import PokemonSelector from '$lib/components/pokemon-selector.svelte'
   import IntersectionObserver from 'svelte-intersection-observer'
 
+  import { hideRouteF, showStarterRoute, showRoute, showGym, showCustom } from './_predicates'
+  import { filterEntry } from './_filters'
+
   export let route, game, filters, search, progress = '', className = ''
   const { store, key, data } = game
 
@@ -22,10 +24,10 @@
   let element
 
   /** Custom route handlers & Empty routes */
-  let custom = [], filledRoutes = []
+  let custom = [], hideRoute = _ => false
   store.subscribe(read(d => {
-    filledRoutes = Object.entries(d).filter(([, i]) => !!i.pokemon).map(([i]) => i)
     if (!custom.length && d.__custom?.length) custom = d.__custom
+    hideRoute = hideRouteF(d)
   }))
 
   const onnewlocation = (e) => {
@@ -41,36 +43,8 @@
     store.update(removelocation(id))
   }
 
-  /** Search filter functions */
-  const routefilter = (s, route) => {
-    return route.name?.toLowerCase()?.includes(s)
-      || route.boss?.toLowerCase()?.includes(s)
-      || route.encounters?.some(i => i.toLowerCase().includes(s.toLowerCase()))
-  }
-
-  const planKeywords = ['uncaught', 'uncaptured', 'empty', 'plan', 'planned', 'no status']
-  const pokemonfilter = (s, item) => {
-    if (planKeywords.includes(s.toLowerCase()))
-      return item.pokemon?.length && !item.status
-
-    return item.pokemon?.toLowerCase()?.includes(s) // Search by pokemon name
-      || item.nickname?.toLowerCase()?.includes(s) //  Search by nickname
-      || NuzlockeStates[item.status]?.state?.toLowerCase()?.includes(s) // Search by status status
-  }
-
-  $: filtered = insertList(route, custom).filter(r => {
-    const upcomingF = filters.main === 'upcoming' || (filters.main === 'route' && filters.route === 'upcoming')
-    if (upcomingF && !search) return r.origPos >= progress - 1
-    if (!search) return true
-    const item = game.data[r.name]
-    const s = search.toLowerCase().trim()
-
-    const match = !item
-      ? routefilter(s, r)
-      : routefilter(s, r) || pokemonfilter(s, item)
-
-    return upcomingF ? match && r.origPos >= progress - 1 : match
-  })
+  $: filtered = insertList(route, custom)
+    .filter(filterEntry(filters, search, game.data, progress - 1))
 
   /** Event Handlers */
   const setstarter = (e) => {
@@ -107,54 +81,40 @@
     setTimeout(scrollToItem.bind({}, scroll))
     scroll = null
   })
-
-  /** Predicates */
-  const routeIds = ['nuzlocke', 'route', 'upcoming']
-  const bossIds = ['nuzlocke', 'bosses', 'upcoming']
-
-  const filterFilled = (r) => filters.route === 'missed' ? filledRoutes.includes(r.name) : false
-  const isStarterRoute = (r, filter) => r.type === 'route' && r.name.toLowerCase() === 'starter' && routeIds.includes(filter) && !filterFilled(r)
-  const isRoute = (r, filter) => r.type === 'route' && routeIds.includes(filter) && !filterFilled(r)
-  const isCustom = (r, filter) => r.type === 'custom' && routeIds.includes(filter)
-  const isGym = (r, filter) => r.type === 'gym' && bossIds.includes(filters.main) && (filter === 'nuzlocke' || filter === 'all' || filter === r.group)
-
 </script>
 
 <ul class='flex flex-col gap-y-4 lg:gap-y-2 {className}'>
   {#each filtered.slice(0, limit) as p, id (p)}
-    {#if isStarterRoute(p, filters.main)}
-      {#if store}
-        <li class='flex items-center gap-x-2' id='route-{p.name}' in:fade>
-          <PokemonSelector
-            {id} {store}
-            encounters={p.encounters}
-            location=Starter
-            locationName=Starter
-            on:new={onnewlocation}
+
+    {#if showStarterRoute(p, filters, hideRoute)}
+      <li class='flex items-center gap-x-2' id='route-{p.name}' in:fade>
+        <PokemonSelector
+          {id} {store}
+          encounters={p.encounters}
+          location=Starter
+          locationName=Starter
+          on:new={onnewlocation}
           >
-            <div slot=location class='flex flex-row-reverse lg:flex-row items-center gap-x-2 lg:-ml-6 -mr-1'>
-              <StarterType on:select={setstarter} bind:starter />
-              <p>Starter* <Tooltip>Selecting a starter type modifies Rival encounters.</Tooltip></p>
-            </div>
-          </PokemonSelector>
-        </li>
-      {/if}
+          <div slot=location class='flex flex-row-reverse lg:flex-row items-center gap-x-2 lg:-ml-6 -mr-1'>
+            <StarterType on:select={setstarter} bind:starter />
+            <p>Starter* <Tooltip>Selecting a starter type modifies Rival encounters.</Tooltip></p>
+          </div>
+        </PokemonSelector>
+      </li>
 
-    {:else if isRoute(p, filters.main)}
-      {#if store}
-        <li id='route-{p.name}' in:fade>
-          <PokemonSelector
-            {id}
-            {store}
-            infolink={toDbLocation(key, p.name)}
-            location={p.name}
-            encounters={p.encounters}
-            on:new={onnewlocation}
-            />
-        </li>
-      {/if}
+    {:else if showRoute(p, filters, hideRoute)}
+      <li id='route-{p.name}' in:fade>
+        <PokemonSelector
+          {id}
+          {store}
+          infolink={toDbLocation(key, p.name)}
+          location={p.name}
+          encounters={p.encounters}
+          on:new={onnewlocation}
+          />
+      </li>
 
-    {:else if isCustom(p, filters.main)}
+    {:else if showCustom(p, filters, hideRoute)}
       <li class='flex items-center gap-x-2' id='custom-{p.index}' in:fade>
         <PokemonSelector
           type=custom
@@ -174,9 +134,15 @@
         </PokemonSelector>
       </li>
 
-    {:else if isGym(p, filters.main)}
+    {:else if showGym(p, filters, hideRoute)}
       <li class='-mb-4 md:my-2' id='boss-{id}' in:fade>
-        <GymCard game={key} starter={starter} id={p.value} location={p.name} type={p.group} />
+        <GymCard
+          {starter}
+          game={key}
+          id={p.value}
+          location={p.name}
+          type={p.group}
+        />
       </li >
     {/if}
 
