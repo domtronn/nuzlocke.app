@@ -16,7 +16,8 @@
     const instance = tippy(node.parentNode, Object.assign({
       content: node.innerHTML,
       onCreate() {
-        node.parentNode.removeChild(node);
+        if (node.parentNode)
+          node.parentNode.removeChild(node);
       }
     }, options));
 
