@@ -6961,16 +6961,6 @@
       ]
     },
     {
-      "type": "route",
-      "name": "New Mauville",
-      "encounters": [
-        "magnemite",
-        "magneton",
-        "voltorb",
-        "electrode"
-      ]
-    },
-    {
       "type": "gym",
       "name": "Mauville City",
       "value": "w1",
@@ -7140,6 +7130,16 @@
       "value": "5",
       "group": "gym-leader",
       "boss": "Norman"
+    },
+    {
+      "type": "route",
+      "name": "New Mauville",
+      "encounters": [
+        "magnemite",
+        "magneton",
+        "voltorb",
+        "electrode"
+      ]
     },
     {
       "type": "route",
@@ -11780,9 +11780,24 @@
       "type": "route",
       "name": "Starter",
       "encounters": [
+        "bulbasaur",
+        "squirtle",
+        "charmander",
         "treecko",
         "mudkip",
-        "torchic"
+        "torchic",
+        "turtwig",
+        "piplup",
+        "chimchar",
+        "snivy",
+        "oshawott",
+        "tepig",
+        "chespin",
+        "froakie",
+        "fennekin",
+        "rowlet",
+        "popplio",
+        "litten"
       ]
     },
     {
@@ -11947,6 +11962,26 @@
       "value": "g1",
       "group": "evil-team",
       "boss": "Grunt"
+    },
+    {
+      "type": "route",
+      "name": "Seaspray Cave",
+      "encounters": [
+        "tynamo",
+        "psyduck",
+        "zubat",
+        "golbat",
+        "wooper",
+        "quagsire",
+        "woobat",
+        "stunfisk",
+        "eelektrik",
+        "wishiwashi",
+        "krabby",
+        "kingler",
+        "binacle",
+        "dwebble"
+      ]
     },
     {
       "type": "route",
@@ -12213,49 +12248,6 @@
       "value": "r2m",
       "group": "rival",
       "boss": "May"
-    },
-    {
-      "type": "route",
-      "name": "Altering Cave",
-      "encounters": [
-        "mewtwo",
-        "rhydon",
-        "swoobat",
-        "noivern",
-        "druddigon",
-        "lucario",
-        "parasect",
-        "wobuffet",
-        "gigalith",
-        "eelektross",
-        "shiinotic",
-        "dugtrio",
-        "blissey",
-        "seaking",
-        "gastrodon",
-        "barboach",
-        "whiscash",
-        "magikarp",
-        "gyarados",
-        "steelix",
-        "shuckle",
-        "crustle"
-      ]
-    },
-    {
-      "type": "route",
-      "name": "New Mauville",
-      "encounters": [
-        "rotom",
-        "magnemite",
-        "magneton",
-        "klink",
-        "klang",
-        "elekid",
-        "electrode",
-        "electabuzz",
-        "togedemaru"
-      ]
     },
     {
       "type": "gym",
@@ -12551,6 +12543,21 @@
       "value": "5",
       "group": "gym-leader",
       "boss": "Norman"
+    },
+    {
+      "type": "route",
+      "name": "New Mauville",
+      "encounters": [
+        "rotom",
+        "magnemite",
+        "magneton",
+        "klink",
+        "klang",
+        "elekid",
+        "electrode",
+        "electabuzz",
+        "togedemaru"
+      ]
     },
     {
       "type": "route",
@@ -13367,6 +13374,34 @@
       "name": "Artisan Cave",
       "encounters": [
         "smeargle"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Altering Cave",
+      "encounters": [
+        "mewtwo",
+        "rhydon",
+        "swoobat",
+        "noivern",
+        "druddigon",
+        "lucario",
+        "parasect",
+        "wobuffet",
+        "gigalith",
+        "eelektross",
+        "shiinotic",
+        "dugtrio",
+        "blissey",
+        "seaking",
+        "gastrodon",
+        "barboach",
+        "whiscash",
+        "magikarp",
+        "gyarados",
+        "steelix",
+        "shuckle",
+        "crustle"
       ]
     }
   ],
