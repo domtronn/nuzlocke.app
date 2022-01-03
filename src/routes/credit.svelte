@@ -88,25 +88,14 @@
         {#each credit as { name, href }, i}
           <a class='mr-1 transition underline hover:text-indigo-400' {href} rel=external target=_blank>
             {name}{i < credit.length - 1 ? ',' : ''}
-                       </a>
-                     {/each}
-                   </p>
-
+          </a>
+        {/each}
+      </p>
 
     </PixelatedContainer>
   </div>
 </main>
 
 <style>
-  td + td + td,
-  th + th + th { display: none; }
-  @media (min-width: 640px) {
-    td + td + td,
-    th + th + th { display: block; }
-  }
-
   p { margin-bottom: 16px; }
-  tr, thead { font-size: .75rem; }
-  thead { text-align: left; }
-  tr code { font-size: 1rem; }
 </style>

@@ -5,10 +5,11 @@
   import TypeBadge from '$lib/components/type-badge.svelte'
   import Icon from './Icon.svelte'
 
-  export let weakTypes = [], gapTypes = [], suggestions, scale
+  export let weakTypes = [], gapTypes = [], suggestions
 
   const shardicons = [ 'yellow-shard', 'green-shard', 'red-shard']
   const sashicons = [ 'focus-sash', 'red-chain' ]
+  const scale = _ => 0.2 + Math.random()
 
 </script>
 
@@ -17,7 +18,7 @@
   <div in:fade style='max-width: fit-content' class='mx-auto mb-4 mt-3 overflow-hidden rounded-xl shadow-lg bg-yellow-50 flex items-center'>
     <Icon color=yellow size=xs
           icons={[ shardicons, sashicons ]}
-          scale={_ => 0.2 + Math.random()}>
+          {scale}>
       🎉
     </Icon>
 
@@ -46,9 +47,7 @@
 {:else}
 
   <div in:fade style='max-width: fit-content' class='overflow-hidden rounded-xl shadow-lg border dark:border-none flex items-center my-3 bg-red-200 mx-auto'>
-    <Icon color=red size=xs
-          icons={[]}
-          scale={_ => 0.2 + (Math.random() / 10)}>
+    <Icon color=red size=xs icons={[]}>
       😱
     </Icon>
 
