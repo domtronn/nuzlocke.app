@@ -33477,6 +33477,72 @@
         }
       ]
     },
+    "p2": {
+      "name": "Peony",
+      "speciality": "steel",
+      "img": {
+        "src": "/leaders/swsh-peony",
+        "author": "Brumirage",
+        "link": "https://www.instagram.com/brumirage"
+      },
+      "pokemon": [
+        {
+          "name": "perrserker",
+          "level": "74",
+          "moves": [
+            "u-turn",
+            "iron-head",
+            "seed-bomb",
+            "throat-chop"
+          ],
+          "ability": "tough-claws"
+        },
+        {
+          "name": "bronzong",
+          "level": "73",
+          "moves": [
+            "extrasensory",
+            "calm-mind",
+            "flash-cannon",
+            "shadow-ball"
+          ],
+          "ability": "heatproof"
+        },
+        {
+          "name": "scizor",
+          "level": "73",
+          "moves": [
+            "x-scissor",
+            "bullet-punch",
+            "wing-attack",
+            "double-hit"
+          ],
+          "ability": "technician"
+        },
+        {
+          "name": "aggron",
+          "level": "74",
+          "moves": [
+            "body-press",
+            "stone-edge",
+            "crunch",
+            "iron-head"
+          ],
+          "ability": "sturdy"
+        },
+        {
+          "name": "copperajah",
+          "level": "74",
+          "moves": [
+            "high-horsepower",
+            "heavy-slam",
+            "play-rough",
+            "superpower"
+          ],
+          "ability": "sheer-force"
+        }
+      ]
+    },
     "4a": {
       "name": "Bea",
       "speciality": "fighting",

@@ -1,38 +1,304 @@
 {
-  "sw": { "pid": "sw", "lid": "swsh", "logo": "/logos/sword-logo", "title": "Sword", "gen": "VIII", "supported": true, "region": "galar" },
-  "sh": { "pid": "sh", "lid": "swsh", "logo": "/logos/shield-logo", "title": "Shield", "gen": "VIII", "supported": true, "region": "galar" },
-  "usun": { "pid": "usun", "lid": "usum", "logo": "/logos/ultra-sun-logo", "title": "Ultra Sun", "gen": "VII", "supported": true, "region": "alola" },
-  "umoon": { "pid": "umoon", "lid": "usum", "logo": "/logos/ultra-moon-logo", "title": "Ultra Moon", "gen": "VII", "supported": true, "region": "alola" },
-  "sun": { "pid": "sun", "lid": "sm", "logo": "/logos/sun-logo", "title": "Sun", "gen": "VII", "supported": true, "region": "alola" },
-  "moon": { "pid": "moon", "lid": "sm", "logo": "/logos/moon-logo", "title": "Moon", "gen": "VII", "supported": true, "region": "alola" },
-  "x": { "pid": "xy", "logo": "/logos/x-logo", "title": "X", "gen": "VI", "supported": true, "region": "kalos "},
-  "y": { "pid": "xy", "logo": "/logos/y-logo", "title": "Y", "gen": "VI", "supported": true, "region": "kalos "},
-  "bl2": { "pid": "b2w2", "logo": "/logos/black-2-logo", "title": "Black 2", "gen": "V", "supported": true, "region": "unova" },
-  "wh2": { "pid": "b2w2", "logo": "/logos/white-2-logo", "title": "White 2", "gen": "V", "supported": true, "region": "unova" },
-  "bl2c": { "pid": "chb2w2", "lid": "b2w2", "logo": "/logos/black-2-logo", "title": "Black 2 Challenge", "gen": "V", "supported": true, "region": "unova" },
-  "wh2c": { "pid": "chb2w2", "lid": "b2w2", "logo": "/logos/white-2-logo", "title": "White 2 Challenge", "gen": "V", "supported": true, "region": "unova" },
-  "bl": { "pid": "bl", "lid": "bw", "logo": "/logos/black-logo", "title": "Black", "gen": "V", "supported":  true, "region": "unova" },
-  "wh": { "pid": "wh", "lid": "bw", "logo": "/logos/white-logo", "title": "White", "gen": "V", "supported": true, "region": "unova" },
-  "bd": { "pid": "bdsp", "logo": "/logos/brilliant-diamond-logo", "title": "Brilliant Diamond", "gen": "IV", "supported": true, "region": "sinnoh" },
-  "sp": { "pid": "bdsp", "logo": "/logos/shining-pearl-logo", "title": "Shining Pearl", "gen": "IV", "supported": true, "region": "sinnoh" },
-  "renplat": { "pid": "renplat", "logo": "/logos/renplat-logo", "title": "Renegade Platinum", "gen": "romhack", "supported": true, "patched": true },
-  "pt": { "pid": "plat", "logo": "/logos/platinum-logo", "title": "Platinum", "gen": "IV", "supported": true, "region": "sinnoh" },
-  "d": { "pid": "dp", "logo": "/logos/diamond-logo", "title": "Diamond", "gen": "IV", "supported": true, "region": "sinnoh" },
-  "p": { "pid": "dp", "logo": "/logos/pearl-logo", "title": "Pearl", "gen": "IV", "supported": true, "region": "sinnoh" },
-  "or": { "pid": "or", "lid": "oras", "logo": "/logos/omega-ruby-logo", "title": "Omega Ruby", "gen": "III", "supported": true, "region": "hoenn" },
-  "as": { "pid": "as", "lid": "oras", "logo": "/logos/alpha-sapphire-logo", "title": "Alpha Sapphire", "gen": "III", "supported": true, "region": "hoenn" },
-  "em": { "pid": "em", "logo": "/logos/emerald-logo", "title": "Emerald", "gen": "III", "supported": true, "region": "hoenn" },
-  "incem": { "pid": "incem", "logo": "/logos/inclement-emerald-logo", "title": "Inclement Emerald", "gen": "romhack", "supported": true, "patched": true },
-  "ruby": { "pid": "ruby", "lid": "rs", "logo": "/logos/ruby-logo", "title": "Ruby", "gen": "III", "supported": true, "region": "hoenn" },
-  "saph": { "pid": "saph", "lid": "rs", "logo": "/logos/sapphire-logo", "title": "Sapphire", "gen": "III", "supported": true, "region": "hoenn" },
-  "hg": { "pid": "hgss", "logo": "/logos/heart-gold-logo", "title": "Heart Gold", "gen": "II", "supported": true, "region": "johto" },
-  "ss": { "pid": "hgss", "logo": "/logos/soul-silver-logo", "title": "Soul Silver", "gen": "II", "supported": true, "region": "johto" },
-  "gold": { "pid": "gsc", "logo": "/logos/gold-logo", "title": "Gold", "gen": "II", "supported": true, "region": "johto" },
-  "silv": { "pid": "gsc", "logo": "/logos/silver-logo", "title": "Silver", "gen": "II", "supported": true, "region": "johto" },
-  "crys": { "pid": "gsc", "logo": "/logos/crystal-logo", "title": "Crystal", "gen": "II", "supported": true, "region": "johto" },
-  "fr": { "pid": "frlg", "logo": "/logos/fire-red-logo", "title": "Fire Red", "gen": "I", "supported": true, "region": "kanto" },
-  "lg": { "pid": "frlg", "logo": "/logos/leaf-green-logo", "title": "Leaf Green", "gen": "I", "supported": true, "region": "kanto" },
-  "yel": { "pid": "yel", "title": "Yellow", "gen": "I", "supported": true, "logo": "/logos/yellow-logo", "region": "kanto" },
-  "red": { "pid": "rb", "title": "Red", "gen": "I", "supported": true, "logo": "/logos/red", "region": "kanto" },
-  "blue": { "pid": "rb", "title": "Blue", "gen": "I", "supported": true, "logo": "/logos/blue", "region": "kanto" }
+  "sw": {
+    "pid": "sw",
+    "lid": "swsh",
+    "logo": "/logos/sword-logo",
+    "title": "Sword",
+    "gen": "VIII",
+    "supported": true,
+    "region": "galar"
+  },
+  "sh": {
+    "pid": "sh",
+    "lid": "swsh",
+    "logo": "/logos/shield-logo",
+    "title": "Shield",
+    "gen": "VIII",
+    "supported": true,
+    "region": "galar"
+  },
+  "usun": {
+    "pid": "usun",
+    "lid": "usum",
+    "logo": "/logos/ultra-sun-logo",
+    "title": "Ultra Sun",
+    "gen": "VII",
+    "supported": true,
+    "region": "alola"
+  },
+  "umoon": {
+    "pid": "umoon",
+    "lid": "usum",
+    "logo": "/logos/ultra-moon-logo",
+    "title": "Ultra Moon",
+    "gen": "VII",
+    "supported": true,
+    "region": "alola"
+  },
+  "sun": {
+    "pid": "sun",
+    "lid": "sm",
+    "logo": "/logos/sun-logo",
+    "title": "Sun",
+    "gen": "VII",
+    "supported": true,
+    "region": "alola"
+  },
+  "moon": {
+    "pid": "moon",
+    "lid": "sm",
+    "logo": "/logos/moon-logo",
+    "title": "Moon",
+    "gen": "VII",
+    "supported": true,
+    "region": "alola"
+  },
+  "x": {
+    "pid": "x",
+    "logo": "/logos/x-logo",
+    "title": "X",
+    "gen": "VI",
+    "supported": true,
+    "region": "kalos"
+  },
+  "y": {
+    "pid": "y",
+    "logo": "/logos/y-logo",
+    "title": "Y",
+    "gen": "VI",
+    "supported": true,
+    "region": "kalos"
+  },
+  "bl2": {
+    "pid": "bl2",
+    "logo": "/logos/black-2-logo",
+    "title": "Black 2",
+    "gen": "V",
+    "supported": true,
+    "region": "unova"
+  },
+  "wh2": {
+    "pid": "wh2",
+    "logo": "/logos/white-2-logo",
+    "title": "White 2",
+    "gen": "V",
+    "supported": true,
+    "region": "unova"
+  },
+  "bl2c": {
+    "pid": "bl2c",
+    "lid": "b2w2",
+    "logo": "/logos/black-2-logo",
+    "title": "Black 2 Challenge",
+    "gen": "V",
+    "supported": true,
+    "region": "unova"
+  },
+  "wh2c": {
+    "pid": "wh2c",
+    "lid": "b2w2",
+    "logo": "/logos/white-2-logo",
+    "title": "White 2 Challenge",
+    "gen": "V",
+    "supported": true,
+    "region": "unova"
+  },
+  "bl": {
+    "pid": "bl",
+    "lid": "bw",
+    "logo": "/logos/black-logo",
+    "title": "Black",
+    "gen": "V",
+    "supported": true,
+    "region": "unova"
+  },
+  "wh": {
+    "pid": "wh",
+    "lid": "bw",
+    "logo": "/logos/white-logo",
+    "title": "White",
+    "gen": "V",
+    "supported": true,
+    "region": "unova"
+  },
+  "bd": {
+    "pid": "bd",
+    "logo": "/logos/brilliant-diamond-logo",
+    "title": "Brilliant Diamond",
+    "gen": "IV",
+    "supported": true,
+    "region": "sinnoh"
+  },
+  "sp": {
+    "pid": "sp",
+    "logo": "/logos/shining-pearl-logo",
+    "title": "Shining Pearl",
+    "gen": "IV",
+    "supported": true,
+    "region": "sinnoh"
+  },
+  "renplat": {
+    "pid": "renplat",
+    "logo": "/logos/renplat-logo",
+    "title": "Renegade Platinum",
+    "gen": "romhack",
+    "supported": true,
+    "patched": true
+  },
+  "pt": {
+    "pid": "pt",
+    "logo": "/logos/platinum-logo",
+    "title": "Platinum",
+    "gen": "IV",
+    "supported": true,
+    "region": "sinnoh"
+  },
+  "d": {
+    "pid": "d",
+    "logo": "/logos/diamond-logo",
+    "title": "Diamond",
+    "gen": "IV",
+    "supported": true,
+    "region": "sinnoh"
+  },
+  "p": {
+    "pid": "p",
+    "logo": "/logos/pearl-logo",
+    "title": "Pearl",
+    "gen": "IV",
+    "supported": true,
+    "region": "sinnoh"
+  },
+  "or": {
+    "pid": "or",
+    "lid": "oras",
+    "logo": "/logos/omega-ruby-logo",
+    "title": "Omega Ruby",
+    "gen": "III",
+    "supported": true,
+    "region": "hoenn"
+  },
+  "as": {
+    "pid": "as",
+    "lid": "oras",
+    "logo": "/logos/alpha-sapphire-logo",
+    "title": "Alpha Sapphire",
+    "gen": "III",
+    "supported": true,
+    "region": "hoenn"
+  },
+  "em": {
+    "pid": "em",
+    "logo": "/logos/emerald-logo",
+    "title": "Emerald",
+    "gen": "III",
+    "supported": true,
+    "region": "hoenn"
+  },
+  "incem": {
+    "pid": "incem",
+    "logo": "/logos/inclement-emerald-logo",
+    "title": "Inclement Emerald",
+    "gen": "romhack",
+    "supported": true,
+    "patched": true
+  },
+  "ruby": {
+    "pid": "ruby",
+    "lid": "rs",
+    "logo": "/logos/ruby-logo",
+    "title": "Ruby",
+    "gen": "III",
+    "supported": true,
+    "region": "hoenn"
+  },
+  "saph": {
+    "pid": "saph",
+    "lid": "rs",
+    "logo": "/logos/sapphire-logo",
+    "title": "Sapphire",
+    "gen": "III",
+    "supported": true,
+    "region": "hoenn"
+  },
+  "hg": {
+    "pid": "hg",
+    "logo": "/logos/heart-gold-logo",
+    "title": "Heart Gold",
+    "gen": "II",
+    "supported": true,
+    "region": "johto"
+  },
+  "ss": {
+    "pid": "ss",
+    "logo": "/logos/soul-silver-logo",
+    "title": "Soul Silver",
+    "gen": "II",
+    "supported": true,
+    "region": "johto"
+  },
+  "gold": {
+    "pid": "gold",
+    "logo": "/logos/gold-logo",
+    "title": "Gold",
+    "gen": "II",
+    "supported": true,
+    "region": "johto"
+  },
+  "silv": {
+    "pid": "silv",
+    "logo": "/logos/silver-logo",
+    "title": "Silver",
+    "gen": "II",
+    "supported": true,
+    "region": "johto"
+  },
+  "crys": {
+    "pid": "crys",
+    "logo": "/logos/crystal-logo",
+    "title": "Crystal",
+    "gen": "II",
+    "supported": true,
+    "region": "johto"
+  },
+  "fr": {
+    "pid": "fr",
+    "logo": "/logos/fire-red-logo",
+    "title": "Fire Red",
+    "gen": "I",
+    "supported": true,
+    "region": "kanto"
+  },
+  "lg": {
+    "pid": "lg",
+    "logo": "/logos/leaf-green-logo",
+    "title": "Leaf Green",
+    "gen": "I",
+    "supported": true,
+    "region": "kanto"
+  },
+  "yel": {
+    "pid": "yel",
+    "title": "Yellow",
+    "gen": "I",
+    "supported": true,
+    "logo": "/logos/yellow-logo",
+    "region": "kanto"
+  },
+  "red": {
+    "pid": "red",
+    "title": "Red",
+    "gen": "I",
+    "supported": true,
+    "logo": "/logos/red",
+    "region": "kanto"
+  },
+  "blue": {
+    "pid": "blue",
+    "title": "Blue",
+    "gen": "I",
+    "supported": true,
+    "logo": "/logos/blue",
+    "region": "kanto"
+  }
 }
