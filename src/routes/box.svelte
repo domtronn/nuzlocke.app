@@ -13,6 +13,9 @@
   import { types } from '$lib/data/types'
   import { stats, StatIconMap } from '$lib/data/stats'
   import { toDb } from '$lib/utils/link'
+
+  import { setHash, parseHash } from '$lib/utils/url'
+
   import deferStyles from '$lib/utils/defer-styles'
 
   import Icon from 'svelte-icons-pack'
@@ -29,6 +32,10 @@
     deferStyles('/assets/pokemon.css')
     import('$lib/components/particles').then(m => Particles = m.default)
     import('$lib/components/EvolutionModal.svelte').then(m => EvoModal = m.default)
+
+    const hashData = parseHash()
+    type = hashData.type
+    stat = hashData.stat
 
     // FIXME: Awkward hack to allow page transition cleanup
     ;['game_el', 'sidenav_el'].forEach(id =>{
@@ -54,7 +61,13 @@
   let type = ''
   let stat = ''
 
-  const clear = () => stat = type = ''
+  const hashtype = type => _ => setHash('type', type)
+  const hashstat = stat => _ => setHash('stat', stat)
+  const clear = () => {
+    stat = type = ''
+    setHash('type', '')
+    setHash('stat', '')
+  }
   const sum = l => l.reduce((acc, it) => acc + it, 0)
   $: filter = (p) => !type || (Pokemon[p.pokemon]?.types || []).map(i => i.toLowerCase()).includes(type)
 
@@ -135,7 +148,7 @@
                 class:dark:text-gray-900={stat === s}
                 class:dark:border-gray-50={stat === s}
                 >
-                <input type=radio bind:group={stat} name='sortable' value={s} />
+                <input type=radio on:click={hashstat(s)} bind:group={stat} name='sortable' value={s} />
                 {#if StatIconMap[s]}
                   <Icon className='hidden md:block text-tiny {s !== 'spa' ? 'fill-current' : ''} translate-y-1/2 -mt-2.5 mr-1'  src={StatIconMap[s]} />
                 {:else}
@@ -155,7 +168,7 @@
                   class:opacity-50={(type && type !== t) || !typeCounts[t]}
                   class:grayscale-0={type && type === t}
                 >
-                  <input disabled={!typeCounts[t]} type=radio bind:group={type} name='filter' value={t} />
+                  <input disabled={!typeCounts[t]} type=radio on:click={hashtype(t)} bind:group={type} name='filter' value={t} />
                   <TypeBadge type={t} className='w-full justify-center' />
                 </label>
               {/if}
