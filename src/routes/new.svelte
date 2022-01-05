@@ -47,7 +47,7 @@
   <title>Nuzlocke Tracker | Create new game</title>
 </svelte:head>
 
-<ScreenContainer title='New Nuzlocke' icon={File} className=mb-20 >
+<ScreenContainer title='Select a New Nuzlocke' icon={File} className=mb-20 >
   <div class='flex flex-col sm:flex-row sm:flex-wrap sm:gap-y-4 gap-2'>
     <Input
       rounded
@@ -71,6 +71,7 @@
             src={Games[i].logo}
             alt={Games[i].title + ' logo'}
             className=w-12
+            role=presentation
             aspect=192x96
           />
         {/if}
@@ -85,10 +86,14 @@
 
   <Tabs name='gens' className='hidden sm:flex' tabs={gens} bind:selected={gen} />
 
-  <div class='grid items-center justify-center gap-x-4 gap-y-6 grid-cols-3 sm:grid-cols-4 hidden sm:grid'>
+  <ul role=radiogroup aria-labelledby=sc_title
+      class='grid items-center justify-center gap-x-4 gap-y-6 grid-cols-3 sm:grid-cols-4 hidden sm:grid'>
     {#each Object.entries(validGames) as [id, game]}
       {#if game.logo && (gen === 'All' || game.gen === gen) }
-        <span
+        <li
+          role=radio
+          aria-checked={selected === id}
+
           title='Pokemon {game.title}'
           on:click={handleSelect(id)}
           on:mouseenter={togglehover}
@@ -100,14 +105,15 @@
           <Picture
             src={game.logo}
             aspect=192x96
+            role=presentation
             alt={'Pokémon ' + game.title + ' logo'}
             className='w-24 mb-2 mx-auto transition group-hover:grayscale-0 {(selected && selected !== id) || hoverActive ? 'grayscale' : ''} {selected === id ? 'drop-shadow-highlight grayscale-0' : ''} cursor-pointer'
             />
           <strong>{game.title}</strong>
-        </span>
+        </li>
       {/if}
     {/each}
-  </div>
+  </ul>
 
 </ScreenContainer>
 
