@@ -55,6 +55,7 @@
   },
   "x": {
     "pid": "x",
+    "lid": "xy",
     "logo": "/logos/x-logo",
     "title": "X",
     "gen": "VI",
@@ -63,6 +64,7 @@
   },
   "y": {
     "pid": "y",
+    "lid": "xy",
     "logo": "/logos/y-logo",
     "title": "Y",
     "gen": "VI",
@@ -71,6 +73,7 @@
   },
   "bl2": {
     "pid": "bl2",
+    "lid": "b2w2",
     "logo": "/logos/black-2-logo",
     "title": "Black 2",
     "gen": "V",
@@ -79,6 +82,7 @@
   },
   "wh2": {
     "pid": "wh2",
+    "lid": "b2w2",
     "logo": "/logos/white-2-logo",
     "title": "White 2",
     "gen": "V",
@@ -123,6 +127,7 @@
   },
   "bd": {
     "pid": "bd",
+    "lid": "bdsp",
     "logo": "/logos/brilliant-diamond-logo",
     "title": "Brilliant Diamond",
     "gen": "IV",
@@ -131,11 +136,20 @@
   },
   "sp": {
     "pid": "sp",
+    "lid": "bdsp",
     "logo": "/logos/shining-pearl-logo",
     "title": "Shining Pearl",
     "gen": "IV",
     "supported": true,
     "region": "sinnoh"
+  },
+  "radred": {
+    "pid": "radred",
+    "logo": "/logos/radical-red-logo",
+    "title": "Radical Red",
+    "gen": "romhack",
+    "supported": true,
+    "patched": true
   },
   "renplat": {
     "pid": "renplat",
@@ -147,6 +161,7 @@
   },
   "pt": {
     "pid": "pt",
+    "lid": "plat",
     "logo": "/logos/platinum-logo",
     "title": "Platinum",
     "gen": "IV",
@@ -155,6 +170,7 @@
   },
   "d": {
     "pid": "d",
+    "lid": "dp",
     "logo": "/logos/diamond-logo",
     "title": "Diamond",
     "gen": "IV",
@@ -163,6 +179,7 @@
   },
   "p": {
     "pid": "p",
+    "lid": "dp",
     "logo": "/logos/pearl-logo",
     "title": "Pearl",
     "gen": "IV",
@@ -223,6 +240,7 @@
   },
   "hg": {
     "pid": "hg",
+    "lid": "hgss",
     "logo": "/logos/heart-gold-logo",
     "title": "Heart Gold",
     "gen": "II",
@@ -231,6 +249,7 @@
   },
   "ss": {
     "pid": "ss",
+    "lid": "hgss",
     "logo": "/logos/soul-silver-logo",
     "title": "Soul Silver",
     "gen": "II",
@@ -239,6 +258,7 @@
   },
   "gold": {
     "pid": "gold",
+    "lid": "gsc",
     "logo": "/logos/gold-logo",
     "title": "Gold",
     "gen": "II",
@@ -247,6 +267,7 @@
   },
   "silv": {
     "pid": "silv",
+    "lid": "gsc",
     "logo": "/logos/silver-logo",
     "title": "Silver",
     "gen": "II",
@@ -255,14 +276,16 @@
   },
   "crys": {
     "pid": "crys",
+    "lid": "gsc",
     "logo": "/logos/crystal-logo",
     "title": "Crystal",
     "gen": "II",
     "supported": true,
     "region": "johto"
   },
-  "fr": {
+  "fr":  {
     "pid": "fr",
+    "lid": "frlg",
     "logo": "/logos/fire-red-logo",
     "title": "Fire Red",
     "gen": "I",
@@ -271,6 +294,7 @@
   },
   "lg": {
     "pid": "lg",
+    "lid": "frlg",
     "logo": "/logos/leaf-green-logo",
     "title": "Leaf Green",
     "gen": "I",
@@ -287,6 +311,7 @@
   },
   "red": {
     "pid": "red",
+    "lid": "rb",
     "title": "Red",
     "gen": "I",
     "supported": true,
@@ -295,6 +320,7 @@
   },
   "blue": {
     "pid": "blue",
+    "lid": "rb",
     "title": "Blue",
     "gen": "I",
     "supported": true,
