@@ -44,7 +44,7 @@
 </script>
 
 <svelte:head>
-  <title> Nuzlocke Tracker | New game </title>
+  <title>Nuzlocke Tracker | Create new game</title>
 </svelte:head>
 
 <ScreenContainer title='New Nuzlocke' icon={File} className=mb-20 >
@@ -89,6 +89,7 @@
     {#each Object.entries(validGames) as [id, game]}
       {#if game.logo && (gen === 'All' || game.gen === gen) }
         <span
+          title='Pokemon {game.title}'
           on:click={handleSelect(id)}
           on:mouseenter={togglehover}
           on:mouseleave={togglehover}
