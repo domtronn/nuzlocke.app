@@ -9,4 +9,4 @@
   import GymCard from '$lib/components/gym-card.svelte'
 </script>
 
-<GymCard game={gen} id={id} />
+<GymCard starter=fire game={gen} id={id} />

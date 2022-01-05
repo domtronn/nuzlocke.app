@@ -5,6 +5,12 @@ import patches from '$lib/data/patches.json'
 
 import { map, compose, prop, path, pick, evolve } from 'ramda'
 
+const titleCase = str =>
+  str
+    .match(/[A-Z]{2,}(?=[A-Z][a-z]+[0-9]*|\b)|[A-Z]?[a-z]+[0-9]*|[A-Z]|[0-9]+/g)
+    .map(x => x.charAt(0).toUpperCase() + x.slice(1))
+    .join(' ')
+
 const nonnull = o => Object.fromEntries(Object.entries(o).filter(([, v]) => !!v))
 const maybe = (f, param) => param ? f(param) : Promise.resolve(null)
 const LANG = 'en'
@@ -18,27 +24,33 @@ const statNameMap = {
   'hp': 'hp',
 }
 
-const toMoves = (moves, patches = {}) => map(compose(
-  d => nonnull({
-    ...d,
-    type: patches[d.name]?.type || d.type,
-    power: patches[d.name]?.power || d.power,
-    effect: patches[d.name]?.effect || d.effect
-  }),
-  ({ effect_chance, effect_entries, ...rest }) => ({
-    ...rest,
-    effect: effect_entries
-      .filter(({ effect }) => effect !== 'Inflicts regular damage.')
-      .map(({ short_effect }) => short_effect.replace('$effect_chance', effect_chance)).join('\n')
-  }),
-  ({ names, ...rest }) => ({ ...rest, name: names }),
-  pick(['names', 'power', 'priority', 'type', 'damage_class', 'effect_chance', 'effect_entries']),
-  evolve({
-    names: n => n.find(l => l.language.name === LANG).name,
-    type: prop('name'),
-    damage_class: prop('name')
-  })
-))(moves)
+const toMoves = (moves, patches = {}) => {
+  return map(compose(
+    d => {
+      return nonnull({
+        ...d,
+        name: patches[d.name] ? titleCase(d.name) : d.name,
+        type: patches[d.name]?.type || d.type,
+        power: patches[d.name]?.power || d.power,
+        effect: patches[d.name]?.effect || d.effect,
+        damage_class: patches[d.name]?.category || d.damage_class
+      })
+    },
+    ({ effect_chance, effect_entries, ...rest }) => ({
+      ...rest,
+      effect: (effect_entries || [])
+        .filter(({ effect }) => effect !== 'Inflicts regular damage.')
+        .map(({ short_effect }) => short_effect.replace('$effect_chance', effect_chance)).join('\n')
+    }),
+    ({ names, ...rest }) => ({ ...rest, name: names }),
+    pick(['names', 'power', 'priority', 'type', 'damage_class', 'effect_chance', 'effect_entries']),
+    evolve({
+      names: n => n.find(l => l.language.name === LANG).name,
+      type: prop('name'),
+      damage_class: prop('name')
+    })
+  ))(moves)
+}
 
 const toHeld = (held, patch) => {
   if (patch[held]) return patch[held]
@@ -62,6 +74,7 @@ const toAbility = (ability, patches = {}) => {
 
 const toTypes = map(path(['type', 'name']))
 const toPokemon = (p, patches = {}) => {
+  console.log(p?.species?.name || p)
   let patch = patches[p] || {}
 
   return nonnull({
@@ -101,7 +114,20 @@ export async function get ({ params, query }) {
           const data = await P.getPokemonByName(p.name).catch(_ => p.name)
           const held = await maybe(P.getItemByName, p.held).catch(_ => p.held)
           const ability = await maybe(P.getAbilityByName, p.ability).catch(_ => p.ability)
-          const moves = await Promise.all(p.moves.map(m => P.getMoveByName(m)))
+          const moves = await Promise.all(
+            p.moves.map(m =>
+              P
+                .getMoveByName(m)
+                .catch(e => {
+                  if (!patch.move[m])
+                    throw new Error(e)
+                  return {
+                    name: m,
+                    names: [{ name: m, language: { name: LANG } }]
+                  }
+                })
+            )
+          )
 
           return nonnull({
             ...p,
