@@ -61,7 +61,7 @@
         {#if held}
           <div class='absolute right-0 -bottom-0.5 translate-x-full z-20 p-1 mb-1 flex flex-col cursor-help items-center'>
             <Tooltip>
-              {held.name}: {held.effect.replace(/^Held: +/g, '')}
+              {held.name}: {held.effect?.replace(/^Held: +/g, '')}
             </Tooltip>
             <span>
               <PIcon type='item' name={held.sprite} />

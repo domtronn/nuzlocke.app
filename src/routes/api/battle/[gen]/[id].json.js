@@ -54,6 +54,7 @@ const toMoves = (moves, patches = {}) => {
 
 const toHeld = (held, patch) => {
   if (patch[held]) return patch[held]
+  if (patch[held?.name]) return patch[held?.name]
 
   return nonnull({
     sprite: held.name,
