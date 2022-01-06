@@ -74,7 +74,6 @@ const toAbility = (ability, patches = {}) => {
 
 const toTypes = map(path(['type', 'name']))
 const toPokemon = (p, patches = {}) => {
-  console.log(p?.species?.name || p)
   let patch = patches[p] || {}
 
   return nonnull({
