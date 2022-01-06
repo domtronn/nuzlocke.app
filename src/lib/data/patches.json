@@ -65,6 +65,12 @@
       },
       "x-scissor": {
         "effect": "Has an increased chance for a critical hit."
+      },
+      "hidden-power-fire": {
+        "power": "60",
+        "type": "fire",
+        "category": "special",
+        "locale": "Hidden Power"
       }
     },
     "ability": {
