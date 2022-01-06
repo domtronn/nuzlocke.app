@@ -2160,6 +2160,36 @@
         "type": "dark",
         "effect": "This move has a 40% chance to inflict sleep on the target, it also bypasses substitute.",
         "category": "special"
+      },
+      "hidden-power-grass": {
+        "power": "60",
+        "type": "grass",
+        "category": "special",
+        "locale": "Hidden Power"
+      },
+      "hidden-power-fire": {
+        "power": "60",
+        "type": "fire",
+        "category": "special",
+        "locale": "Hidden Power"
+      },
+      "hidden-power-fighting": {
+        "power": "60",
+        "type": "fighting",
+        "category": "special",
+        "locale": "Hidden Power"
+      },
+      "hidden-power-dark": {
+        "power": "60",
+        "type": "dark",
+        "category": "special",
+        "locale": "Hidden Power"
+      },
+      "hidden-power-ice": {
+        "power": "60",
+        "type": "ice",
+        "category": "special",
+        "locale": "Hidden Power"
       }
     },
     "ability": {

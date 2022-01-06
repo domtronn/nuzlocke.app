@@ -29,7 +29,7 @@ const toMoves = (moves, patches = {}) => {
     d => {
       return nonnull({
         ...d,
-        name: patches[d.name] ? titleCase(d.name) : d.name,
+        name: patches[d.name] ? titleCase(patches[d.name]?.locale || d.name) : d.name,
         type: patches[d.name]?.type || d.type,
         power: patches[d.name]?.power || d.power,
         effect: patches[d.name]?.effect || d.effect,

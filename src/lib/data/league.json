@@ -22304,7 +22304,7 @@
           "moves": [
             "incinerate",
             "ominous-wind",
-            "hidden-power",
+            "hidden-power-grass",
             "sleep-talk"
           ],
           "ability": "flash-fire",
@@ -22359,7 +22359,7 @@
             "water-pulse",
             "flip-turn",
             "icy-wind",
-            "hidden-power"
+            "hidden-power-grass"
           ],
           "ability": "technician",
           "held": "mystic-water"
@@ -22383,7 +22383,7 @@
             "parabolic-charge",
             "scald",
             "icy-wind",
-            "hidden-power"
+            "hidden-power-dark"
           ],
           "ability": "volt-absorb",
           "held": "iapapa-berry"
@@ -22402,7 +22402,7 @@
             "volt-switch",
             "scald",
             "discharge",
-            "hidden-power"
+            "hidden-power-grass"
           ],
           "ability": "electric-surge",
           "held": "electric-seed"
@@ -22432,18 +22432,6 @@
           "held": "occa-berry"
         },
         {
-          "name": "manectric",
-          "level": "34",
-          "moves": [
-            "charge-beam",
-            "flame-burst",
-            "volt-switch",
-            "hidden-power"
-          ],
-          "ability": "intimidate",
-          "held": "manectite"
-        },
-        {
           "name": "boltund",
           "level": "34",
           "moves": [
@@ -22454,6 +22442,18 @@
           ],
           "ability": "strong-jaw",
           "held": "expert-belt"
+        },
+        {
+          "name": "manectric",
+          "level": "34",
+          "moves": [
+            "charge-beam",
+            "flame-burst",
+            "volt-switch",
+            "hidden-power-grass"
+          ],
+          "ability": "intimidate",
+          "held": "manectite"
         }
       ]
     },
@@ -22481,7 +22481,7 @@
             "leaf-storm",
             "giga-drain",
             "dragon-pulse",
-            "hidden-power"
+            "hidden-power-fire"
           ],
           "ability": "contrary",
           "held": "focus-sash"
@@ -22493,7 +22493,7 @@
             "giga-drain",
             "dazzling-gleam",
             "ancient-power",
-            "hidden-power"
+            "hidden-power-fire"
           ],
           "ability": "triage",
           "held": "grassy-seed"
@@ -22725,7 +22725,7 @@
           "moves": [
             "eruption",
             "flamethrower",
-            "hidden-power",
+            "hidden-power-ice",
             "focus-blast"
           ],
           "ability": "blazing-soul",
@@ -22859,7 +22859,7 @@
           "moves": [
             "snarl",
             "incinerate",
-            "hidden-power",
+            "hidden-power-grass",
             "thunder-fang"
           ],
           "ability": "flash-fire",
@@ -22957,7 +22957,7 @@
           "moves": [
             "psychic",
             "shadow-ball",
-            "hidden-power",
+            "hidden-power-fighting",
             "thunder-wave"
           ],
           "ability": "competitive",
@@ -24803,7 +24803,7 @@
             "blizzard",
             "earth-power",
             "freeze-dry",
-            "hidden-power"
+            "hidden-power-fire"
           ],
           "ability": "slush-rush",
           "held": "choice-specs"
@@ -24850,7 +24850,7 @@
           "moves": [
             "blizzard",
             "focus-blast",
-            "hidden-power",
+            "hidden-power-fire",
             "energy-ball"
           ],
           "ability": "snow-warning",
@@ -25117,7 +25117,7 @@
           "level": "85",
           "moves": [
             "shadow-ball",
-            "hidden-power",
+            "hidden-power-fighting",
             "dark-pulse",
             "sleep-talk"
           ],
@@ -25221,7 +25221,7 @@
           "moves": [
             "shadow-ball",
             "dark-pulse",
-            "hidden-power",
+            "hidden-power-fighting",
             "sleep-talk"
           ],
           "ability": "grim-neigh",
