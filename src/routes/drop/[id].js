@@ -11,7 +11,11 @@ export async function get ({ params, host }) {
     const req = https.request(
       { ...opts, path: '/' + params.id },
       res => {
-        const { location } = res.headers
+        let { location } = res.headers
+
+        if (host.startsWith('localhost')) {
+          location = location.replace(/.*?\/drop/, `http://${host}/drop`)
+        }
 
         if (!location) return resolve({ status: 404 })
         if (!location.includes(`://${host}`)) return resolve({ status: 400 })
