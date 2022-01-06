@@ -62,8 +62,6 @@
   $: i = 0, j = 0
   $: compare = [{ ...box[i], id: i }, { ...gym[j], id: j }]
 
-  console.log('compare', compare)
-
   let tab = 0
   $: tab = 0
   const select = p => p?.sprite

@@ -13,13 +13,20 @@
   import Info from 'svelte-icons-pack/ri/RiSystemInformationLine'
 
   const moves = (opp?.original?.moves || []).reduce((acc, it) => ({ ...acc, [it.name]: it }), {})
+  const lvl = opp?.original?.level
 </script>
 
 <ul class='relative grid grid-cols-4 w-full md:mt-2 text-sm md:text-xs'>
   <div class='absolute top-2 right-4 lg:top-0 text-gray-400 dark:text-gray-600 cursor-help text-lg'>
     <Icon src={Info} className=fill-current />
     <Tooltip>
-      Damage calculations are estimates based on the team being at the Level Cap and having 0EVs and max IVs.
+      Damage calculations are estimates
+      {#if lvl.startsWith('+') || lvl.startsWith('-')}
+        with the team and relative levels being at Level 50
+      {:else}
+        with the team being at the Level Cap.
+      {/if}
+       with 0EVs and max IVs.
     </Tooltip>
   </div>
 

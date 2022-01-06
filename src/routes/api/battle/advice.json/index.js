@@ -24,6 +24,10 @@ export async function post ({ body }) {
   const dmgAdvice = Object.fromEntries(
     box.map(({ name: defName, sprite: defId, nature }) => {
       const maxLevel = Math.max(...team.map(t => +t.level))
+
+      const pkmnLevel = maxLevel < 5 ? 50 : maxLevel
+      const enemyLevel = maxLevel < 5 ? 50 + maxLevel : maxLevel
+
       return [
         defId,
         Object.fromEntries(
@@ -34,8 +38,8 @@ export async function post ({ body }) {
                 try {
                   const res = calculate(
                     gen,
-                    new Pokemon(gen, atkName, nonnull({ level: +maxLevel, item, ability: ability.name })),
-                    new Pokemon(gen, defName, nonnull({ level: +maxLevel, nature: capitalise(nature || 'bashful') })),
+                    new Pokemon(gen, atkName, nonnull({ level: +enemyLevel, item, ability: ability.name })),
+                    new Pokemon(gen, defName, nonnull({ level: +pkmnLevel, nature: capitalise(nature || 'bashful') })),
                     new Move(gen, m.name)
                   )
 
