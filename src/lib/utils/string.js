@@ -11,3 +11,16 @@ export const toKebabCase = str =>
     .match(/[A-Z]{2,}(?=[A-Z][a-z]+[0-9]*|\b)|[A-Z]?[a-z]+[0-9]*|[A-Z]|[0-9]+/g)
     .map(x => x.toLowerCase())
     .join('-');
+
+export const toSlug = str =>
+  str
+    .toLowerCase()
+    .trim()
+    .replace(/[^\w\s-]/g, '')
+    .replace(/[\s_-]+/g, '-')
+    .replace(/^-+|-+$/g, '');
+
+export const toId = {
+  encounter: type => toSlug(type + ' encounters'),
+  boss: (boss, name) => toSlug(boss + ' ' + name),
+}

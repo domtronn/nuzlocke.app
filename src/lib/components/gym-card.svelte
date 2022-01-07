@@ -1,5 +1,5 @@
 <script>
-  export let game, id, location = '', starter = '', type
+  export let game, id, location = '', starter = '', type, forceLevelCap = false
   let pokemon = [], name = '', speciality = '', img
 
   import { browser } from '$app/env'
@@ -25,7 +25,7 @@
   const { getLeague } = getContext('game')
   const { open } = getContext('simple-modal')
 
-  let loading = true
+  export let loading = false
 
   const fetchData = async (starter) => {
     if (!browser) return
@@ -78,7 +78,7 @@
             <span class='w-20 md:w-24 -ml-9 md:ml-0 animate-pulse bg-gray-400 rounded-md' />
           {:else}
             <div>
-              <h1 class='text-xl font-medium'>{name}</h1>
+              <h6 class='text-xl font-medium'>{name}</h6>
               {#if img?.author}
                 <a href={img.link}
                    target=_blank
@@ -125,7 +125,8 @@
             <SettingWrapper let:setting id=level-caps>
               {#if ((setting === 1 && (type === 'gym-leader' || type === 'elite-four')) ||
                     (setting === 2 && (type === 'gym-leader' || type === 'elite-four' || type === 'rival')) ||
-                    (setting === 3))}
+                    (setting === 3) ||
+                    (forceLevelCap))}
                 <Label heading='Lvl cap' body={levelCap} />
               {/if}
             </SettingWrapper>
@@ -141,7 +142,7 @@
         <Pokemon {...p} maxStat={maxStat}>
           <button
             class:mt-0={p.moves.length < 3}
-            class='opacity-25 hover:opacity-75 transition mx-8 -mt-4 mb-2 z-50'
+            class='compare opacity-25 hover:opacity-75 transition mx-8 -mt-4 mb-2 z-50'
             slot=footer
             on:click={_ => open(CompareModal, { pokemon, id: p.name })}
           >

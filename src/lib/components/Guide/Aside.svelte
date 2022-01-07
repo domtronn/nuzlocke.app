@@ -1,0 +1,135 @@
+<script>
+  export let encounters, gyms, path
+  import { toSlug, toId } from '$utils/string'
+  
+  import { PIcon } from '$c/core'
+  import Icon from 'svelte-icons-pack'
+  import Chevron from 'svelte-icons-pack/cg/CgChevronDown'
+  
+  const splitAt = (arr, i) => [arr.slice(0, i), arr.slice(i)]
+  
+  const bossOrder = ['Gym Leader', 'Elite Four', 'Rival', 'Evil Team', 'Other'].filter(i => gyms[i])
+  
+  let show = false
+  const onshow = _ => show = !show
+</script>
+
+<aside class:show class=g-container>
+  <div class=head on:click={onshow}>
+    <h3>In this guide</h3>
+    
+    <Icon src={Chevron} className=fill-current size=2rem />
+  </div>
+  
+  <div class=main>
+    <div class=encounters>
+      <h4>
+        <a on:click={onshow} href='{path}#encounters'>Encounters</a>
+      </h4>
+      <ul>
+        {#each Object.keys(encounters) as type}
+          <li>
+            <a on:click={onshow} href='{path}#{toId.encounter(type)}'>
+              <PIcon type=symbol className=icon name='type-{type.toLowerCase()}-badge-32px' />
+              {type} Encounters
+            </a>
+          </li>
+        {/each}
+      </ul>
+    </div>
+
+    <div class=boss>
+      <h4>
+        <a on:click={onshow} href='{path}#boss-summary'>Boss battles</a>
+      </h4>
+    </div>
+
+    {#each splitAt(bossOrder, 2) as groups}
+      <div class=boss-group>
+        {#each groups as group}
+          <h5>
+            <a on:click={onshow} href='{path}#{toSlug(group)}'>{group} fights</a>
+          </h5>
+
+          <ul>
+            {#each gyms[group] as { boss, name }}
+              <li>
+                <a on:click={onshow} href='{path}#{toId.boss(boss, name)}'>{boss} at {name}</a>
+              </li>
+            {/each}
+          </ul>
+        {/each}
+      </div>
+    {/each}
+  </div>
+  
+</aside>
+
+<style>
+ h3 { @apply text-xl }
+
+ ul { @apply divide-y }
+ li a { @apply flex py-2 text-sm text-gray-500 font-medium }
+ li a :global(.icon) {
+   @apply -m-4 -mr-2;
+ }
+ 
+ li:hover a {
+   @apply pl-4 bg-gray-50;
+   color: #4434ff;
+ }
+
+ h4:hover, h5:hover {
+   color: #4434ff;
+ }
+ 
+ li, a {
+   transition: all 0.2s ease;
+   @apply pl-0 w-full inline-flex items-center
+ }
+
+ h3, h4, h5 {
+   transition: all 0.1s ease !important;
+   @apply my-4 font-bold flex
+ }
+
+ * { @apply tracking-widest }
+
+ .main { @apply grid gap-x-10 md:grid-cols-3 }
+ .main {
+   max-height: 0;
+   @apply overflow-hidden;
+ }
+
+ .show .head h3 + :global(*) {
+   @apply rotate-180;
+   color: #4434ff;
+ }
+
+ .main, .head, .head h3 +:global(*)
+ {
+   transition: all 0.3s ease;
+ }
+ 
+ .show .main {
+     max-height: 9999px;
+   }
+ 
+ @media (min-width:theme('screens.sm')) {
+   .show .main {
+     max-height: 1000px;
+   }
+ }
+
+ .head { @apply col-span-3 flex items-center justify-between border-b cursor-pointer }
+ .head:hover {
+   color: #4434ff;
+ }
+ 
+ .encounters { @apply col-span-2 md:col-span-1 row-span-4 }
+
+ .boss { @apply col-span-2 }
+ .boss-group { @apply col-span-2 md:col-span-1 }
+
+ aside { @apply mt-4 md:mt-16 }
+</style>

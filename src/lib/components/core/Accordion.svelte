@@ -1,6 +1,6 @@
 <script>
   import { slide } from 'svelte/transition'
-  import Chevron from 'svelte-icons-pack/cg/CgChevronRightO'
+  import Chevron from 'svelte-icons-pack/bi/BiSolidChevronRight'
   import Icon from 'svelte-icons-pack'
 
   let isOpen = false
@@ -24,7 +24,7 @@
     {#if $$slots.icon}
       <slot name='icon' {isOpen} classes='text-base fill-current md:text-xl {iconClassName}' />
     {:else}
-      <Icon src={Chevron} classes='text-base md:text-xl {iconClassName}' />
+      <Icon size=1.5em src={Chevron} classes='text-base md:text-xl {iconClassName} -mr-6' />
     {/if}
   </span>
   <slot name='heading' />
