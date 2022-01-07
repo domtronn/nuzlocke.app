@@ -1,6 +1,6 @@
 <script>
   export let encounters, gyms, path
-  import { toSlug, toId } from '$utils/string'
+  import { toSlug, toId, capitalise } from '$utils/string'
 
   import { PIcon } from '$c/core'
   import Icon from 'svelte-icons-pack'
@@ -16,22 +16,22 @@
 
 <aside class:show class=g-container>
   <div class=head on:click={onshow}>
-    <h3>In this guide</h3>
+    <h2>In this guide</h2>
 
     <Icon src={Chevron} className=fill-current size=2rem />
   </div>
 
   <div class=main>
     <div class=encounters>
-      <h4>
+      <h3>
         <a on:click={onshow} href='{path}#encounters'>Encounters</a>
-      </h4>
+      </h3>
       <ul>
         {#each Object.keys(encounters) as type}
           <li>
             <a on:click={onshow} href='{path}#{toId.encounter(type)}'>
               <PIcon type=symbol className=icon name='type-{type.toLowerCase()}-badge-32px' />
-              {type} Encounters
+              {capitalise(type)} Encounters
             </a>
           </li>
         {/each}
@@ -39,17 +39,17 @@
     </div>
 
     <div class=boss>
-      <h4>
+      <h3>
         <a on:click={onshow} href='{path}#boss-summary'>Boss battles</a>
-      </h4>
+      </h3>
     </div>
 
     {#each splitAt(bossOrder, 2) as groups}
       <div class=boss-group>
         {#each groups as group}
-          <h5>
+          <h4>
             <a on:click={onshow} href='{path}#{toSlug(group)}'>{group} fights</a>
-          </h5>
+          </h4>
 
           <ul>
             {#each gyms[group] as { boss, name }}
@@ -87,7 +87,7 @@
    @apply bg-gray-700 text-white;
  }
 
- h4:hover, h5:hover {
+ h3:hover, h5:hover {
    color: #4434ff;
  }
 
@@ -96,7 +96,7 @@
    @apply pl-0 w-full inline-flex items-center
  }
 
- h3, h4, h5 {
+ h2, h3, h5 {
    transition: all 0.1s ease !important;
    @apply my-4 font-bold flex
  }

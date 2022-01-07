@@ -13,7 +13,7 @@
 </script>
 
 <h2 id=encounters>
-  <a href='{path}#encounters'>
+  <a title='{game.title} Encounters' href='{path}#encounters'>
     <Icon src={Link} size=1.8rem className=fill-current />
   </a>
   {game.title} Encounters
@@ -32,7 +32,7 @@
     <section id={toId.encounter(type)}>
       <h3>
         <span>
-          <a href='{path}#{toId.encounter(type)}'>
+          <a title='{capitalise(type)} Pokémon encounters' href='{path}#{toId.encounter(type)}'>
             <Icon src={Link} size=1.8rem className=fill-current />
           </a>
           <span class=figure>{encounters.length}</span>{capitalise(type)} Pokémon encounters

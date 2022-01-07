@@ -16,7 +16,7 @@
 
 <header style='--col1: {theme[0]}; --col2: {theme[1]}; --col3: {theme[2] || '#000'}'>
   <div class='g-container nav'>
-    <a href='/'>
+    <a title='Home' href='/'>
       <Icon size=1.4rem src={Home} className=fill-current />
     </a>
     <div>

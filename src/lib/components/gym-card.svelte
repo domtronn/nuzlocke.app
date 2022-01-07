@@ -78,14 +78,14 @@
             <span class='w-20 md:w-24 -ml-9 md:ml-0 animate-pulse bg-gray-400 rounded-md' />
           {:else}
             <div>
-              <h6 class='text-xl font-medium'>{name}</h6>
+              <h4 class='text-xl font-medium'>{name}</h4>
               {#if img?.author}
                 <a href={img.link}
                    target=_blank
                    rel=noopener
                    on:click|stopPropagation={function () {}}
                    class:mt-6={location}
-                   class='absolute italic text-tiny text-gray-300 dark:text-gray-600 dark:hover:text-indigo-400 hover:text-indigo-300 hover:underline transition '>
+                   class='absolute italic text-tiny text-gray-500 dark:text-gray-600 dark:hover:text-indigo-400 hover:text-indigo-300 hover:underline transition '>
                   Sprite by <strong>{img.author}</strong>
                 </a>
               {/if}
@@ -100,10 +100,10 @@
         {#if loading}
           <div class='h-4 w-32 md:w-48 -ml-9 md:ml-0 animate-pulse bg-gray-400 rounded-md' />
         {:else if location}
-          <h2
+          <h5
             class='h-4 -mt-1 text-md font-medium'>
             <span>{location}</span>
-          </h2>
+          </h5>
         {/if}
       </span>
 

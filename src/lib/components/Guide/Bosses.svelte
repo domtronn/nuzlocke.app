@@ -16,7 +16,7 @@
 </script>
 
 <h2 id=bosses>
-  <a href='{path}#bosses'>
+  <a title='{game.title} Boss Battles' href='{path}#bosses'>
     <Icon src={Link} size=1.8rem className=fill-current />
   </a>
   {game.title} Boss Battles
@@ -56,7 +56,7 @@
   {#each order as group, i}
     <section>
       <h3 id={toSlug(group)}>
-        <a href='{path}#{toSlug(group)}'>
+        <a title='{group} fights' href='{path}#{toSlug(group)}'>
           <Icon src={Link} size=1.8rem className=fill-current />
         </a>
 
@@ -65,8 +65,7 @@
 
       <ul>
         {#each gyms[group] as { group, value, boss, name, lvlCap }}
-          <li>
-            <h6 id={toId.boss(boss, name)} />
+          <li id={toId.boss(boss, name)}>
             <GymCard
               forceLevelCap
               loading={false}

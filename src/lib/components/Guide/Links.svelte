@@ -30,9 +30,9 @@
 
   nav { @apply relative bg-gray-900 pb-40 mt-40 }
 
-  a { @apply text-sm py-3 md:text-xs flex items-center gap-x-2 md:py-0 text-gray-600 transition }
+  a { @apply text-base py-2 md:text-xs flex items-center gap-x-2 md:py-0 text-gray-400 tracking-wide transition }
   a:hover { @apply text-gray-200 }
-  h2, h3 { @apply text-gray-400 tracking-widest }
+  h2, h3 { @apply text-gray-200 tracking-widest }
   h2 { @apply text-lg my-6 }
   h3 { @apply text-base }
 </style>
