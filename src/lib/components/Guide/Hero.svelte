@@ -19,7 +19,9 @@
     <a href='/'>
       <Icon size=1.4rem src={Home} className=fill-current />
     </a>
-    <ThemeToggle />
+    <div>
+      <ThemeToggle />
+    </div>
   </div>
 
   <div class='g-container hero'>
@@ -105,5 +107,6 @@
   }
 
   .hero { @apply pt-20 }
-  .nav { @apply py-4 }
+  .nav { @apply py-4 flex flex-row justify-between }
+  .nav div { @apply -mt-2 }
 </style>

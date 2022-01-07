@@ -83,6 +83,7 @@
   import { setContext } from 'svelte'
 
   import { Hero, Links, Summary, Bosses, Aside } from '$c/Guide'
+  import { faq } from '$c/Guide/schemas'
 
   setContext('game', {
     getLeague: (_, starter) => data[starter],
@@ -112,7 +113,8 @@
     "dateModified": "2022-01-07",
     "description": description
   }
-  const schemaScript = `<script type="application/ld+json">${JSON.stringify(schema)}<\/script>`
+  const articleSchema = `<script type="application/ld+json">${JSON.stringify(schema)}<\/script>`
+  const faqSchema = `<script type="application/ld+json">${JSON.stringify(faq(game, data.fire, route))}<\/script>`
 
 </script>
 
@@ -124,7 +126,8 @@
   <meta content={description} name=description />
   <meta content={description} name=twitter:description  />
 
-  {@html schemaScript}
+  {@html articleSchema}
+  {@html faqSchema}
 </svelte:head>
 
 <Hero {...game} />
