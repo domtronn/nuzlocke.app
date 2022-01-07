@@ -89,6 +89,7 @@
 
   div section:first-child { @apply flex flex-wrap gap-y-4 justify-evenly }
   div section:first-child > p { @apply flex flex-col w-40 h-32 justify-center items-center text-4xl md:text-6xl font-bold text-gray-800 bg-gray-50 rounded-xl mb-0 }
+  :global(.dark) div section:first-child > p { @apply bg-gray-900 text-gray-50 }
 
   div section:first-child > p span { @apply text-sm tracking-normal font-normal mt-2 }
 
@@ -142,6 +143,14 @@
     opacity: 0.5;
     transition: all 0.2s ease;
   }
+
+  :global(.dark .starter-icon) {
+    @apply cursor-pointer;
+    filter: brightness(10);
+    opacity: 0.5;
+    transition: all 0.2s ease;
+  }
+
   .starter li[aria-checked=false]:hover :global(.starter-icon) {
     filter: brightness(1);
     opacity: 1;

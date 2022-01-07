@@ -52,6 +52,14 @@
 </style>
 
 <svelte:head>
+  <title>Nuzlocke Tracker | Track Pokémon encounters, analyse your team, and be prepared</title>
+  <meta property="og:title" content="Nuzlocke Tracker | Track Pokémon encounters, analyse your team, and be prepared" />
+  <meta name="twitter:title" content="Nuzlocke Tracker" />
+
+  <meta content="Best application for tracking Pokémon encounters and helping prepare you for the boss batles on your Nuzlocke runs. Get insights into team match ups, compare stat blocks and get detail on Gym movesets & abilities - all in one place - so you never lose again." name="description" />
+  <meta name="twitter:description" content="Best application for tracking Pokémon encounters and helping prepare you for the boss batles on your Nuzlocke runs. Get insights into team match ups, compare stat blocks and get detail on Gym movesets & abilities - all in one place - so you never lose again." />
+
+
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://raw.githubusercontent.com" crossorigin>
   {#if !dev && browser}

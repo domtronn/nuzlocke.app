@@ -140,3 +140,13 @@ body {
   15%, 25%, 35% { transform: var(--tw-transform) rotate(-5deg);}
   20%, 30% { transform: var(--tw-transform) rotate(5deg);}
 }
+
+.dark svg.waves g.fill {
+  fill: theme('colors.gray.800');
+}
+
+
+svg g { @apply transition; }
+svg.waves g.fill {
+  fill: theme('colors.white');
+}

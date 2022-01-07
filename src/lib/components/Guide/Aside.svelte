@@ -1,15 +1,15 @@
 <script>
   export let encounters, gyms, path
   import { toSlug, toId } from '$utils/string'
-  
+
   import { PIcon } from '$c/core'
   import Icon from 'svelte-icons-pack'
   import Chevron from 'svelte-icons-pack/cg/CgChevronDown'
-  
+
   const splitAt = (arr, i) => [arr.slice(0, i), arr.slice(i)]
-  
+
   const bossOrder = ['Gym Leader', 'Elite Four', 'Rival', 'Evil Team', 'Other'].filter(i => gyms[i])
-  
+
   let show = false
   const onshow = _ => show = !show
 </script>
@@ -17,10 +17,10 @@
 <aside class:show class=g-container>
   <div class=head on:click={onshow}>
     <h3>In this guide</h3>
-    
+
     <Icon src={Chevron} className=fill-current size=2rem />
   </div>
-  
+
   <div class=main>
     <div class=encounters>
       <h4>
@@ -62,7 +62,7 @@
       </div>
     {/each}
   </div>
-  
+
 </aside>
 
 <style>
@@ -73,16 +73,24 @@
  li a :global(.icon) {
    @apply -m-4 -mr-2;
  }
- 
+
  li:hover a {
    @apply pl-4 bg-gray-50;
    color: #4434ff;
  }
 
+ :global(.dark) li a {
+   @apply text-gray-400 font-light;
+ }
+
+ :global(.dark) li:hover a {
+   @apply bg-gray-700 text-white;
+ }
+
  h4:hover, h5:hover {
    color: #4434ff;
  }
- 
+
  li, a {
    transition: all 0.2s ease;
    @apply pl-0 w-full inline-flex items-center
@@ -110,11 +118,15 @@
  {
    transition: all 0.3s ease;
  }
- 
+
+ .main {
+   @apply border-b -mt-px
+ }
+
  .show .main {
-     max-height: 9999px;
-   }
- 
+   max-height: 9999px;
+ }
+
  @media (min-width:theme('screens.sm')) {
    .show .main {
      max-height: 1000px;
@@ -125,7 +137,7 @@
  .head:hover {
    color: #4434ff;
  }
- 
+
  .encounters { @apply col-span-2 md:col-span-1 row-span-4 }
 
  .boss { @apply col-span-2 }

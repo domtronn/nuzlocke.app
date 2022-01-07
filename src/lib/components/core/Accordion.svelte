@@ -20,11 +20,11 @@
   on:click={toggle}
   class='inline-flex items-center w-full cursor-pointer {className}'
 >
-  <span class='mr-2 md:mr-4'>
+  <span class='mr-2 md:-mr-2'>
     {#if $$slots.icon}
       <slot name='icon' {isOpen} classes='text-base fill-current md:text-xl {iconClassName}' />
     {:else}
-      <Icon size=1.5em src={Chevron} classes='text-base md:text-xl {iconClassName} -mr-6' />
+      <Icon src={Chevron} className='text-base fill-current md:text-xl {iconClassName}' />
     {/if}
   </span>
   <slot name='heading' />

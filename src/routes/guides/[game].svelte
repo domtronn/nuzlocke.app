@@ -1,7 +1,6 @@
 <script context='module'>
   import Games from '$lib/data/games.json'
   import Themes from '$lib/data/theme.json'
-  import Pokemon from 'pokemon-assets/assets/data/pokemon.json'
 
   export const prerender = true
   export async function load ({ page, fetch }) {
@@ -23,7 +22,8 @@
           .join(' ')
 
     const fetchJson = uri => fetch(uri).then(res => res.json())
-    const [route, fire, water, grass] = await Promise.all([
+    const [pokemon, route, fire, water, grass] = await Promise.all([
+      fetchJson(`/api/pokemon.json`),
       fetchJson(`/api/route/${game}.json`),
       fetchJson(`/league/${game}.fire.json`),
       fetchJson(`/league/${game}.water.json`),
@@ -38,9 +38,7 @@
     )]
 
     const encounterdata = encounters.reduce((acc, i) => {
-      if (Pokemon[i]) return acc.concat(Pokemon[i])
-
-      const found = Object.values(Pokemon).find(p => p.alias === i || p.sprite === i)
+      const found = pokemon.find(p => p.alias === i || p.sprite === i)
       if (found) return acc.concat(found)
 
       console.log(i, 'Not found')
@@ -92,7 +90,42 @@
   setContext('simple-modal', {
     open: false
   })
+
+  const gymCount = Object.values(route.gyms).flat().length
+  const encounterCount = route.count
+  const routeCount = route.routes.length
+
+  const title = `Nuzlocke Tracker | Pokémon ${game.title} Nuzlocke Guide`
+  const description = `This guide shows you all ${encounterCount} Pokémon available across ${routeCount} route encounters in Pokémon ${game.title}, as well as detailed information on all ${gymCount} boss battles!`
+
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": `A Nuzlocke guide for Pokémon ${game.title}`,
+    "alternativeHeadline": `A guide and overview to Nuzlocking Pokémon ${game.title}`,
+    "image": `https://nuzlocke.vercel.app${game.logo}.png`,
+    "genre": "Pokémon",
+    "keywords": `pokemon nuzlocke ${game.title} encounters boss battles fights`,
+    "url": `https://nuzlocke.vercel.app/guides/${game.pid}`,
+    "datePublished": "2022-01-07",
+    "dateCreated": "2022-01-07",
+    "dateModified": "2022-01-07",
+    "description": description
+  }
+  const schemaScript = `<script type="application/ld+json">${JSON.stringify(schema)}<\/script>`
+
 </script>
+
+<svelte:head>
+  <title>{title}</title>
+  <meta property=og:title content={title} />
+  <meta name=twitter:title content={title} />
+
+  <meta content={description} name=description />
+  <meta content={description} name=twitter:description  />
+
+  {@html schemaScript}
+</svelte:head>
 
 <Hero {...game} />
 
