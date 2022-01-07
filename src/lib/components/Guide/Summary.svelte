@@ -5,6 +5,8 @@
   import { PIcon } from '$c/core'
   import TypeBadge from '$c/type-badge.svelte'
 
+  import { capitalise } from '$utils/string'
+
   import Icon from 'svelte-icons-pack'
   import Link from 'svelte-icons-pack/bi/BiLink'
 
@@ -33,11 +35,10 @@
           <a href='{path}#{toId.encounter(type)}'>
             <Icon src={Link} size=1.8rem className=fill-current />
           </a>
-          <span class=figure>{encounters.length}</span> {type} Pokémon encounters
+          <span class=figure>{encounters.length}</span>{capitalise(type)} Pokémon encounters
         </span>
         <TypeBadge type={type.toLowerCase()} />
       </h3>
-
 
       <ul>
         {#each encounters as name}
