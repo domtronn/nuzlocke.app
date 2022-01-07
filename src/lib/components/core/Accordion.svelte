@@ -1,6 +1,6 @@
 <script>
   import { slide } from 'svelte/transition'
-  import Chevron from 'svelte-icons-pack/cg/CgChevronRightO'
+  import Chevron from 'svelte-icons-pack/bi/BiSolidChevronRight'
   import Icon from 'svelte-icons-pack'
 
   let isOpen = false
@@ -20,11 +20,11 @@
   on:click={toggle}
   class='inline-flex items-center w-full cursor-pointer {className}'
 >
-  <span class='mr-2 md:mr-4'>
+  <span class='mr-2 md:-mr-2'>
     {#if $$slots.icon}
       <slot name='icon' {isOpen} classes='text-base fill-current md:text-xl {iconClassName}' />
     {:else}
-      <Icon src={Chevron} classes='text-base md:text-xl {iconClassName}' />
+      <Icon src={Chevron} className='text-base fill-current md:text-xl {iconClassName}' />
     {/if}
   </span>
   <slot name='heading' />

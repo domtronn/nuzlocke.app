@@ -96,6 +96,10 @@ body {
   @apply text-gray-200 bg-gray-800 ;
 }
 
+.g-container {
+  @apply max-w-6xl mx-auto px-4 md:px-12
+}
+
 .p-container {
   @apply w-full sm:w-2/3 md:w-3/4 sm:px-4 md:px-8 mx-auto flex justify-between;
 }
@@ -117,6 +121,14 @@ body {
           drop-shadow(1px -1px 0 theme('colors.yellow.500')) !important;
 }
 
+.drop-shadow-mark {
+  filter: drop-shadow(2px 2px 0 theme('colors.gray.900'))
+          drop-shadow(-2px -2px 0 theme('colors.gray.900'))
+          drop-shadow(-2px 2px 0 theme('colors.gray.900'))
+          drop-shadow(2px -2px 0 theme('colors.gray.900')) !important;
+}
+
+
 .shake {
   animation: shake 3.2s cubic-bezier(.36,.07,.19,.97) infinite;
 }
@@ -127,4 +139,14 @@ body {
   10%, 40% { transform: var(--tw-transform) rotate(2deg);}
   15%, 25%, 35% { transform: var(--tw-transform) rotate(-5deg);}
   20%, 30% { transform: var(--tw-transform) rotate(5deg);}
+}
+
+.dark svg.waves g.fill {
+  fill: theme('colors.gray.800');
+}
+
+
+svg g { @apply transition; }
+svg.waves g.fill {
+  fill: theme('colors.white');
 }

@@ -23599,7 +23599,7 @@
         "morelull",
         "bounsweet",
         "oddish",
-        "bellsproute",
+        "bellsprout",
         "yanma",
         "croagunk",
         "misdreavus",
@@ -23608,7 +23608,7 @@
         "dewpider",
         "audino",
         "pikachu",
-        "aipon",
+        "aipom",
         "cherubi",
         "poliwag",
         "poliwhirl",
@@ -23820,7 +23820,7 @@
         "aron",
         "abra",
         "axew",
-        "timbubrr",
+        "timburr",
         "mawile",
         "sableye",
         "onix",
@@ -23850,7 +23850,7 @@
       "type": "route",
       "name": "Slateport City",
       "encounters": [
-        "tentatcool",
+        "tentacool",
         "wingull",
         "pelipper",
         "horsea",
@@ -24255,7 +24255,7 @@
         "gumshoos",
         "tropius",
         "goomy",
-        "sluggoo",
+        "sliggoo",
         "oranguru",
         "passimian",
         "comfey",
@@ -24336,7 +24336,7 @@
         "heatran",
         "gurdurr",
         "dugtrio",
-        "boldor",
+        "boldore",
         "zweilous",
         "turtonator",
         "magmar",
@@ -24360,7 +24360,7 @@
       "type": "route",
       "name": "Route 121",
       "encounters": [
-        "arboke",
+        "arbok",
         "heracross",
         "shuppet",
         "duskull",
@@ -24482,7 +24482,7 @@
         "moltres",
         "magcargo",
         "magmar",
-        "boldor",
+        "boldore",
         "golbat",
         "grumpig",
         "larvesta"
@@ -24510,7 +24510,7 @@
       "name": "Team Magma Hideout",
       "encounters": [
         "graveler",
-        "boldor",
+        "boldore",
         "excadrill",
         "torkoal",
         "turtonator",
@@ -24777,10 +24777,10 @@
       "type": "route",
       "name": "Cave of Origin",
       "encounters": [
-        "diance",
+        "diancie",
         "sableye",
         "mawile",
-        "boldor",
+        "boldore",
         "carbink",
         "noivern"
       ]
@@ -24802,7 +24802,7 @@
         "kingdra",
         "tentacruel",
         "alomomola",
-        "wailorda"
+        "wailord"
       ]
     },
     {
@@ -24822,7 +24822,7 @@
         "kingdra",
         "tentacruel",
         "alomomola",
-        "wailorda"
+        "wailord"
       ]
     },
     {
@@ -24842,7 +24842,7 @@
         "kingdra",
         "tentacruel",
         "alomomola",
-        "wailorda"
+        "wailord"
       ]
     },
     {
@@ -25059,7 +25059,7 @@
         "druddigon",
         "lucario",
         "parasect",
-        "wobuffet",
+        "wobbuffet",
         "gigalith",
         "eelektross",
         "shiinotic",
@@ -26712,7 +26712,7 @@
       "type": "route",
       "name": "Lake of the Sunne",
       "encounters": [
-        "cosmog#Sun"
+        "cosmog"
       ]
     },
     {
@@ -32086,7 +32086,7 @@
         "swinub",
         "budew",
         "snubbull",
-        "deerling-summer",
+        "deerling",
         "pikipek",
         "rockruff",
         "pansear",
@@ -32094,7 +32094,7 @@
         "sandshrew-alola",
         "skiddo",
         "flabebe",
-        "deerling-alolautumn",
+        "deerling",
         "rookidee",
         "goldeen",
         "psyduck",
@@ -32110,7 +32110,7 @@
       "type": "route",
       "name": "Route 2",
       "encounters": [
-        "mrmime-galar",
+        "mrmime",
         "patrat",
         "shinx",
         "wingull",
@@ -32119,7 +32119,7 @@
         "litleo",
         "phanpy",
         "sandshrew",
-        "burmy-sandy",
+        "burmy",
         "skwovet",
         "pansage",
         "poochyena",
@@ -32147,7 +32147,7 @@
         "spinarak",
         "wurmple",
         "blipbug",
-        "burmy-trash",
+        "burmy",
         "sewaddle",
         "kricketot",
         "pumpkaboo",
@@ -32165,7 +32165,7 @@
       "type": "gym",
       "name": "Pewter City Museum",
       "value": "mb1",
-      "group": "rival",
+      "group": "",
       "boss": "Falkner"
     },
     {
@@ -32191,7 +32191,7 @@
         "numel",
         "axew",
         "grimer-alola",
-        "exeggcute-alola",
+        "exeggcute",
         "espurr",
         "meowth-galar",
         "gastly",
@@ -32351,7 +32351,7 @@
       "type": "gym",
       "name": "Bill's House",
       "value": "mb2",
-      "group": "rival",
+      "group": "",
       "boss": "Bugsy"
     },
     {
@@ -32461,7 +32461,7 @@
         "noibat",
         "scraggy",
         "trapinch",
-        "sandyghast",
+        "sandygast",
         "numel",
         "nosepass",
         "diglett-alola",
@@ -32500,7 +32500,7 @@
         "maractus",
         "bunnelby",
         "scraggy",
-        "sandyghast",
+        "sandygast",
         "sigilyph",
         "pancham",
         "cacnea",
@@ -32511,7 +32511,7 @@
       "type": "gym",
       "name": "Route 11",
       "value": "mb3",
-      "group": "rival",
+      "group": "",
       "boss": "Whitney"
     },
     {
@@ -32524,10 +32524,10 @@
         "dewpider",
         "indeedee",
         "corvisquire",
-        "mime jr.",
+        "mime-jr",
         "tropius",
         "skorupi",
-        "exeggcute-alola",
+        "exeggcute",
         "salandit",
         "indeedee-f",
         "espurr"
@@ -32597,7 +32597,7 @@
       "type": "gym",
       "name": "Lavender Town",
       "value": "mb4",
-      "group": "rival",
+      "group": "",
       "boss": "Morty"
     },
     {
@@ -32608,12 +32608,12 @@
         "cofagrigus",
         "dusclops",
         "mismagius",
-        "cubone-alola",
+        "cubone",
         "spiritomb",
         "sableye",
         "polteageist",
         "lampent",
-        "runerigus "
+        "runerigus"
       ]
     },
     {
@@ -32674,7 +32674,7 @@
         "passimian",
         "mienfoo",
         "porygon",
-        "deerling-winter",
+        "deerling",
         "vullaby",
         "oranguru"
       ]
@@ -32704,7 +32704,7 @@
         "litten",
         "oshawott",
         "piplup",
-        "poplio",
+        "popplio",
         "riolu",
         "rotom",
         "rowlet",
@@ -32732,7 +32732,7 @@
         "psyduck",
         "mareanie",
         "muk",
-        "muk-alolan",
+        "muk-alola",
         "poliwhirl"
       ]
     },
@@ -32779,7 +32779,7 @@
       "type": "gym",
       "name": "Saffron City Dojo",
       "value": "mb5",
-      "group": "rival",
+      "group": "",
       "boss": "Chuck"
     },
     {
@@ -32834,11 +32834,11 @@
         "leavanny",
         "abomasnow",
         "altaria",
-        "oricorio-baile",
+        "oricorio",
         "toxicroak",
         "bisharp",
         "eevee",
-        "oricorio-pom",
+        "oricoriopompom",
         "drapion"
       ]
     },
@@ -32953,7 +32953,7 @@
         "tsareena",
         "galvantula",
         "panpour",
-        "oricorio-baile",
+        "oricorio",
         "sigilyph",
         "ferrothorn",
         "ditto",
@@ -32983,7 +32983,7 @@
         "roselia",
         "lurantis",
         "simisage",
-        "oricorio-pau",
+        "oricoriopau",
         "miltank",
         "zangoose",
         "charmander",
@@ -33104,21 +33104,21 @@
       "type": "gym",
       "name": "Seafoam Islands",
       "value": "mb6a",
-      "group": "rival",
+      "group": "",
       "boss": "Pryce (Team A)"
     },
     {
       "type": "gym",
       "name": "Seafoam Islands",
       "value": "mb6b",
-      "group": "rival",
+      "group": "",
       "boss": "Pryce (Team B)"
     },
     {
       "type": "gym",
       "name": "Seafoam Islands",
       "value": "mb6c",
-      "group": "rival",
+      "group": "",
       "boss": "Pryce (Team C)"
     },
     {
@@ -33146,21 +33146,21 @@
       "type": "gym",
       "name": "Cinnabar Island",
       "value": "mb7a",
-      "group": "rival",
+      "group": "",
       "boss": "Jasmine (Team A)"
     },
     {
       "type": "gym",
       "name": "Cinnabar Island",
       "value": "mb7b",
-      "group": "rival",
+      "group": "",
       "boss": "Jasmine (Team B)"
     },
     {
       "type": "gym",
       "name": "Cinnabar Island",
       "value": "mb7c",
-      "group": "rival",
+      "group": "",
       "boss": "Jasmine (Team C)"
     },
     {
@@ -33174,7 +33174,7 @@
       "type": "route",
       "name": "Pokémon Mansion",
       "encounters": [
-        "graticate",
+        "raticate",
         "audino",
         "muk",
         "weezing",
@@ -33186,7 +33186,6 @@
         "muk-alola",
         "weezing-galar",
         "ninetales",
-        "alot",
         "heatmor",
         "mightyena",
         "houndoom",
@@ -35286,7 +35285,7 @@
         "pidgey",
         "hoothoot",
         "taillow",
-        "farfetchd "
+        "farfetchd"
       ]
     },
     {
@@ -35339,7 +35338,7 @@
         "misdreavus",
         "beautifly",
         "dustox",
-        "beedrill "
+        "beedrill"
       ]
     },
     {
@@ -35458,7 +35457,7 @@
       "type": "gym",
       "name": "Wayward Cave",
       "value": "mira",
-      "group": "rival",
+      "group": "",
       "boss": "Mira"
     },
     {
@@ -35533,7 +35532,7 @@
       "type": "gym",
       "name": "Route 208",
       "value": "aaron",
-      "group": "rival",
+      "group": "",
       "boss": "Aaron"
     },
     {
@@ -35566,7 +35565,7 @@
         "glameow",
         "vulpix",
         "bonsly",
-        "mime jr.",
+        "mime-jr",
         "snubbull",
         "meowth",
         "chansey",
@@ -35962,7 +35961,7 @@
       "type": "gym",
       "name": "Pal Park",
       "value": "darach",
-      "group": "rival",
+      "group": "",
       "boss": "Castle Valet Darach"
     },
     {
@@ -35972,7 +35971,7 @@
         "floatzel",
         "gastrodon",
         "purugly",
-        "mr. mime",
+        "mr-mime",
         "electrode",
         "ditto",
         "electabuzz",
@@ -36046,7 +36045,7 @@
       "type": "gym",
       "name": "Iron Island",
       "value": "riley",
-      "group": "rival",
+      "group": "",
       "boss": "Riley"
     },
     {
@@ -36073,7 +36072,7 @@
         "kakuna",
         "munchlax",
         "chingling",
-        "tyrogue "
+        "tyrogue"
       ]
     },
     {
@@ -36213,7 +36212,7 @@
         "purugly",
         "pelipper",
         "flaaffy",
-        "mr. mime",
+        "mr-mime",
         "chatot",
         "delcatty",
         "tentacool",
@@ -36250,7 +36249,7 @@
       "type": "gym",
       "name": "Sunyshore City",
       "value": "dahlia",
-      "group": "rival",
+      "group": "",
       "boss": "Arcade Star Dahlia"
     },
     {
@@ -46479,7 +46478,7 @@
       "type": "route",
       "name": "Lake of the Moone",
       "encounters": [
-        "cosmog#Sun"
+        "cosmog"
       ]
     },
     {
