@@ -125,9 +125,6 @@
 
   <meta content={description} name=description />
   <meta content={description} name=twitter:description  />
-
-  {@html articleSchema}
-  {@html faqSchema}
 </svelte:head>
 
 <Hero {...game} />
@@ -143,6 +140,9 @@
 </article>
 
 <Links {links} />
+
+{@html articleSchema}
+{@html faqSchema}
 
 <style>
 

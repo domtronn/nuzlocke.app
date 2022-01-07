@@ -26,11 +26,11 @@
 </nav>
 
 <style>
-  div.grid { @apply grid grid-cols-3 md:grid-cols-5 gap-x-2 gap-y-4 }
+  div.grid { @apply grid grid-cols-2 md:grid-cols-5 gap-x-2 gap-y-4 }
 
   nav { @apply relative bg-gray-900 pb-40 mt-40 }
 
-  a { @apply text-xs flex items-center gap-x-2 text-gray-600 transition }
+  a { @apply text-sm py-3 md:text-xs flex items-center gap-x-2 md:py-0 text-gray-600 transition }
   a:hover { @apply text-gray-200 }
   h2, h3 { @apply text-gray-400 tracking-widest }
   h2 { @apply text-lg my-6 }
