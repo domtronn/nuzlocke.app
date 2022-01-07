@@ -119,8 +119,12 @@
   }
 
   .copy div + div p {
-    @apply flex flex-col items-center justify-center text-4xl font-bold w-28 h-24 text-center bg-gray-100 shadow-lg rounded-sm mb-0
+    @apply flex flex-col items-center justify-center text-4xl font-bold w-28 h-24 text-center bg-gray-100 shadow-lg rounded-lg mb-0
   }
+  :global(.dark) .copy div + div p {
+    @apply bg-gray-900
+  }
+
   .copy div + div span {
     @apply text-sm tracking-widest
   }
