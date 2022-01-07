@@ -25,7 +25,7 @@
   const { getLeague } = getContext('game')
   const { open } = getContext('simple-modal')
 
-  export let loading = false
+  export let loading = true
 
   const fetchData = async (starter) => {
     if (!browser) return

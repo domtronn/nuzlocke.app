@@ -135,7 +135,7 @@
 
   <Summary {path} {game} {...route} />
 
-  <Bosses {path} {game} {...route} />
+  <Bosses {path} {data} {game} {...route} />
 
 </article>
 

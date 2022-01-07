@@ -5,6 +5,7 @@
   import ThemeToggle from '$c/theme-toggle.svelte'
   import Icon from 'svelte-icons-pack'
   import Home from 'svelte-icons-pack/ai/AiOutlineHome'
+  import Track from 'svelte-icons-pack/ri/RiMapFootprintFill'
 
   import { savedGames, createGame } from '$store'
 
@@ -29,13 +30,14 @@
       <small>Nuzlocke Tracker</small>
       <h1> Pokémon {title} Nuzlocke Guide </h1>
       <p>
-        This guide contains useful overview information for a <strong>{title} Nuzlocke</strong>.
-        It shows you all of the Pokémon available during a run, the number of possible encounters, and detailed overvies of all <strong>Boss battles</strong>.
+        This guide contains useful information for a <strong>{title} Nuzlocke</strong>.
+        Lists of all of the available Pokémon, the number of encounters, and detailed overviews of all <strong>Boss battles</strong>.
       </p>
 
       <button on:click={onnew}>
         <span>
-        Start a new game
+          Start tracking
+          <Icon src={Track} className='translate-y-1 ml-2 fill-current' size=1.4rem />
         </span>
       </button>
     </div>
@@ -69,7 +71,7 @@
   }
 
   h1 {
-    @apply text-4xl md:text-6xl font-bold my-4
+    @apply text-4xl md:text-6xl font-bold my-4 tracking-wide
 
   }
 
@@ -96,6 +98,8 @@
   }
 
   button span {
+    @apply flex;
+    color: var(--col1);
     background: -webkit-linear-gradient(130deg, var(--col1), var(--col2));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

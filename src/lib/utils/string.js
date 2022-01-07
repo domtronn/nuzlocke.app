@@ -1,6 +1,9 @@
-export const capitalise = ([first, ...rest], lowerRest = false) =>
-  first.toUpperCase() +
-  (lowerRest ? rest.join('').toLowerCase() : rest.join(''));
+export const capitalise = (str, lowerRest = false) => {
+  if (!str) return ''
+  const [first, ...rest] = str
+  return first.toUpperCase() +
+    (lowerRest ? rest.join('').toLowerCase() : rest.join(''));
+}
 
 export const unslugify = (s = '') => s.replace(/-/g, ' ')
 export const slugify = (s = '') => s.toLowerCase().replace(/ +/g, '-')
@@ -12,7 +15,7 @@ export const toKebabCase = str =>
     .map(x => x.toLowerCase())
     .join('-');
 
-export const toSlug = str =>
+export const toSlug = (str = '') =>
   str
     .toLowerCase()
     .trim()

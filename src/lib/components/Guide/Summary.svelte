@@ -20,11 +20,18 @@
 </h2>
 
 <p>
-  <b>{game.title}</b> has <span class=figure>{routes.length}</span> different
+  A fun aspect of Nuzlocke runs is the variety of encounters forcing
+  you to try out new Pokémon you've never used before. That is
+  why it's important to know which Pokémon will be available
+  during a run. We've compiled a list of every encounter
+  for <b>Pokémon {game.title}</b> so you can quickly see who you might want on
+  your team!
+</p>
+<p>
+  <b>Pokémon {game.title}</b> has <span class=figure>{routes.length}</span> different
   encounter locations with
   <span class=figure>{count}</span> different Pokémon available as wild
-  encounters. You can see a lists of all available Pokémon by type
-  below.
+  encounters.
 </p>
 
 <div>
@@ -32,10 +39,10 @@
     <section id={toId.encounter(type)}>
       <h3>
         <span>
-          <a title='{capitalise(type)} Pokémon encounters' href='{path}#{toId.encounter(type)}'>
+          <a title='{capitalise(type)} Pokémon' href='{path}#{toId.encounter(type)}'>
             <Icon src={Link} size=1.8rem className=fill-current />
           </a>
-          <span class=figure>{encounters.length}</span>{capitalise(type)} Pokémon encounters
+          <span class=figure>{encounters.length}</span>{capitalise(type)} Pokémon
         </span>
         <TypeBadge type={type.toLowerCase()} />
       </h3>
