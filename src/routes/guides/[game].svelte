@@ -105,6 +105,7 @@
     "headline": `A Nuzlocke guide for Pokémon ${game.title}`,
     "alternativeHeadline": `A guide and overview to Nuzlocking Pokémon ${game.title}`,
     "image": `https://nuzlocke.vercel.app${game.logo}.png`,
+    "author": "Nuzlocke Tracker",
     "genre": "Pokémon",
     "keywords": `pokemon nuzlocke ${game.title} encounters boss battles fights`,
     "url": `https://nuzlocke.vercel.app/guides/${game.pid}`,
