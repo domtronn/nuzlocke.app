@@ -127,17 +127,19 @@
   <meta content={description} name=twitter:description  />
 </svelte:head>
 
-<Hero {...game} />
+<Hero {...game}>
 
-<Aside {path} {...route} />
+  <Aside {path} {...route} />
 
-<article class=g-container>
+  <article class=g-container>
 
-  <Summary {path} {game} {...route} />
+    <Summary {path} {game} {...route} />
 
-  <Bosses {path} {data} {game} {...route} />
+    <Bosses {path} {data} {game} {...route} />
 
-</article>
+  </article>
+
+</Hero>
 
 <Links {links} />
 

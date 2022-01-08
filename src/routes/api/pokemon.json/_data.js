@@ -51,7 +51,7 @@ export default mapObj(
   })
 )
 
-const props = ['evos', 'evoline', 'types', 'name', 'sprite', 'label', 'alias', 'imgId', 'baseStats', 'total']
+const props = ['evos', 'evoline', 'types', 'name', 'sprite', 'label', 'alias', 'imgId', 'baseStats', 'total', 'num']
 export const filterdata = o => Object
   .values(o)
   .map((p) => ({

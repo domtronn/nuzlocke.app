@@ -4,7 +4,7 @@ import patches from '$lib/data/patches.json'
 import Pokemon, { filterdata, sumObj } from '../pokemon.json/_data.js'
 const base = filterdata(Pokemon)
 
-export async function get({ params }) {
+export async function get ({ params }) {
   const game = games[params.game]
   const { pokemon } = patches[params.game] || {}
 

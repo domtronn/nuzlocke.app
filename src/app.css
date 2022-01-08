@@ -97,7 +97,7 @@ body {
 }
 
 .g-container {
-  @apply max-w-6xl mx-auto px-4 md:px-12
+  @apply max-w-6xl mx-auto px-4 md:px-12 overflow-x-hidden
 }
 
 .p-container {

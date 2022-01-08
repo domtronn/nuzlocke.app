@@ -56,6 +56,23 @@
   {@html SVGs.waves}
 </header>
 
+<slot />
+
+<div class='end g-container' style='--col1: {theme[0]}; --col2: {theme[1]}; --col3: {theme[2] || '#000'}'>
+  <p>
+    Now that you're ready to take on the <b>Pokémon {title} Nuzlocke
+      Challenge</b>, why not keep track of all your encounters with the
+    <b>Nuzlocke Tracker</b>?
+
+    <br />
+
+    <button class=inverted on:click={onnew}>
+      Start Tracking
+      <Icon src={Track} className='translate-y-1 ml-2 fill-current' size=1.4rem />
+    </button>
+  </p>
+</div>
+
 <style>
   header {
     color: var(--col3);
@@ -93,6 +110,13 @@
     cursor: pointer;
   }
 
+  button.inverted {
+    @apply flex text-white mx-auto;
+    background: linear-gradient(130deg, var(--col1), var(--col2));
+  }
+
+  :global(.dark) button.invert { @apply text-gray-900; }
+
   button:hover {
     opacity: 0.6;
   }
@@ -100,9 +124,6 @@
   button span {
     @apply flex;
     color: var(--col1);
-    background: -webkit-linear-gradient(130deg, var(--col1), var(--col2));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
   }
 
   header div:first-child {
@@ -113,4 +134,7 @@
   .hero { @apply pt-20 }
   .nav { @apply py-4 flex flex-row justify-between }
   .nav div { @apply -mt-2 }
+  .end { @apply text-center mt-12 -mb-6 }
+  .end p { @apply mx-auto text-base leading-loose }
+
 </style>
