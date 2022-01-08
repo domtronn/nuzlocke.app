@@ -34,7 +34,7 @@
   encounters.
 </p>
 
-<p class=reader>
+<p class=sr-only>
   {#each Object.entries(encounters).sort(([, a], [, b])=> a.length - b.length) as [type, encounters]}
     <h3>{encounters.length} {capitalise(type)} Pokémon encounters</h3>
     <ul>

@@ -55,8 +55,8 @@
 </script>
 
 {#if reader}
-  <h4 class=reader>{name} - {#if location}{location}{/if}</h4>
-    <p class=reader>
+  <h4 class=sr-only>{name} - {#if location}{location}{/if}</h4>
+    <p class=sr-only>
       {name} has a team of {pokemon.length}, made up of
       {toList(pokemon, p => `a level ${p?.level} ${p?.name}`)}. The level cap for this fight is level {levelCap}.
     </p>
@@ -171,7 +171,3 @@
 
   </Accordion>
 </div>
-
-<style>
-  .reader { display: none; }
-</style>
