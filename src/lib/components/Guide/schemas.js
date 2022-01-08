@@ -1,3 +1,11 @@
+import { capitalise } from '$utils/string'
+
+const toList = (arr, f = i => i) => {
+  const front = arr.slice(0, -1)
+  const last = arr.slice(-1)[0]
+  return front.map(f).join(', ') + (front.length ? ' & ' : '') + f(last)
+}
+
 export const faq = (game, data, { routes, gyms, encounters}) => {
   const { title } = game
   const routesQuestion = [
@@ -8,7 +16,7 @@ export const faq = (game, data, { routes, gyms, encounters}) => {
         .entries(encounters)
         .map(([type, encs]) => [
           `How many ${type} Pokémon are there in Pokémon ${title}?`,
-          `You can encounter and catch ${encs.length} different ${type} Pokémon in Pokémon ${title}.`
+          `You can encounter and catch ${encs.length} different ${type} Pokémon in Pokémon ${title}, including ${toList(encs, capitalise)}`
         ]).concat(
           [[`How many different Pokémon encounters are there in Pokémon ${title}?`,
             `You can encounter and catch ${Object.values(encounters).flat().length} different Pokémon in Pokémon ${title}.`]]
@@ -32,8 +40,8 @@ export const faq = (game, data, { routes, gyms, encounters}) => {
       [
         `How many Pokémon does ${name} use in Pokémon ${title}?`,
         speciality
-          ? `${name} has a team of ${pokemon.length} and uses only ${speciality} type Pokémon in Pokémon {title}.`
-          : `${name} has a team of ${pokemon.length} in Pokémon {title}.`,
+          ? `${name} has a team of ${pokemon.length} and uses only ${speciality} type Pokémon in Pokémon ${title}.`
+          : `${name} has a team of ${pokemon.length} in Pokémon ${title}.`,
       ],
       [
         `What is the level cap for ${name} in Pokémon ${title}?`,
@@ -41,7 +49,7 @@ export const faq = (game, data, { routes, gyms, encounters}) => {
       ],
       [
         `What team of Pokémon does ${name} use in Pokémon ${title}?`,
-        `${name} uses a team of ${pokemon.slice(0, -1).map(p => p.name).join(', ')} ${pokemon.length > 1 ? '& ' : ''}${pokemon.slice(-1).map(p => p.name)}.`
+        `${name} uses a team of ${toList(pokemon, p => capitalise(p.name))}.`
       ]
     ]).flat()
 
