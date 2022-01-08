@@ -87,6 +87,7 @@
       {#each gyms[group] as { group, value, boss, name, lvlCap }}
         <li id={toId.boss(boss, name)}>
           <GymCard
+            reader
             forceLevelCap
             loading={false}
             {game}

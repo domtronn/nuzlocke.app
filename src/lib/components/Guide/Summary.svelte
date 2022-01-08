@@ -34,6 +34,19 @@
   encounters.
 </p>
 
+<p class=reader>
+  {#each Object.entries(encounters).sort(([, a], [, b])=> a.length - b.length) as [type, encounters]}
+    <h3>{encounters.length} {capitalise(type)} Pokémon encounters</h3>
+    <ul>
+      {#each encounters as name}
+        <li>
+          {capitalise(name)}
+        </li>
+      {/each}
+    </ul>
+  {/each}
+</p>
+
 <div>
   {#each Object.entries(encounters).sort(([, a], [, b])=> a.length - b.length) as [type, encounters]}
     <section id={toId.encounter(type)}>
@@ -87,5 +100,7 @@
     color: #4434ff;
     @apply opacity-100
   }
+
+  .reader { display: none; }
 
 </style>

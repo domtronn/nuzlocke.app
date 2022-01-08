@@ -1,5 +1,5 @@
 <script>
-  export let game, id, location = '', starter = '', type, forceLevelCap = false
+  export let game, id, location = '', starter = '', type, forceLevelCap = false, reader = false
   let pokemon = [], name = '', speciality = '', img
 
   import { browser } from '$app/env'
@@ -8,6 +8,8 @@
   import Pokemon from '$lib/components/pokemon-card.svelte'
   import TypeBadge from '$lib/components/type-badge.svelte'
   import Label from '$lib/components/label.svelte'
+
+  import { toList } from '$utils/string'
 
   import { Picture, PIcon, Accordion } from '$lib/components/core'
   import { Wrapper as SettingWrapper } from '$lib/components/Settings'
@@ -51,6 +53,14 @@
   $: maxStat = pokemon.reduce((acc, it) => Math.max(acc, Math.max(...Object.values(it.stats))), 0)
 
 </script>
+
+{#if reader}
+  <h4 class=reader>{name} - {#if location}{location}{/if}</h4>
+    <p class=reader>
+      {name} has a team of {pokemon.length}, made up of
+      {toList(pokemon, p => `a level ${p?.level} ${p?.name}`)}. The level cap for this fight is level {levelCap}.
+    </p>
+{/if}
 
 <div class='my-6 relative'>
   <Accordion iconClassName='transition duration-1000 {loading ? 'opacity-0' : 'opacity-100'}'>
@@ -161,3 +171,7 @@
 
   </Accordion>
 </div>
+
+<style>
+  .reader { display: none; }
+</style>

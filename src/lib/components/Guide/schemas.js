@@ -1,10 +1,4 @@
-import { capitalise } from '$utils/string'
-
-const toList = (arr, f = i => i) => {
-  const front = arr.slice(0, -1)
-  const last = arr.slice(-1)[0]
-  return front.map(f).join(', ') + (front.length ? ' & ' : '') + f(last)
-}
+import { toList, capitalise } from '$utils/string'
 
 export const faq = (game, data, { routes, gyms, encounters}) => {
   const { title } = game
@@ -23,14 +17,14 @@ export const faq = (game, data, { routes, gyms, encounters}) => {
         )
 
   const gymGroupQuestions = Object
-        .entries(gyms)
-        .map(([group, gyms]) => [
-          `How many ${group} fights are there in Pokémon ${title}?`,
-          `There are ${gyms.length} ${group} fights in Pokémon ${title}.`
-        ]).concat(
-          [[`How many Boss fights are there in Pokémon ${title}?`,
-            `There are ${Object.values(gyms).flat().length} Boss fights in total in Pokémon ${title}.`]]
-        )
+      .entries(gyms)
+      .map(([group, gyms]) => [
+        `How many ${group} fights are there in Pokémon ${title}?`,
+        `There are ${gyms.length} ${group} fights in Pokémon ${title}.`
+      ]).concat(
+        [[`How many Boss fights are there in Pokémon ${title}?`,
+          `There are ${Object.values(gyms).flat().length} Boss fights in total in Pokémon ${title}.`]]
+      )
 
   const gymTeamQuestions = [
     ...gyms['Gym Leader'],
