@@ -85,6 +85,7 @@
     background: linear-gradient(150deg, var(--col1), var(--col2));
   }
 
+
   small {
     @apply uppercase text-sm leading-relaxed tracking-widest font-bold
   }
@@ -140,5 +141,9 @@
   .nav div { @apply -mt-2 }
   .end { @apply text-center mt-12 -mb-6 }
   .end p { @apply mx-auto text-base leading-loose }
+
+  header :global(svg) {
+    @apply translate-y-px;
+  }
 
 </style>
