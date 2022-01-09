@@ -87,7 +87,7 @@
    @apply bg-gray-700 text-white;
  }
 
- h3:hover, h5:hover {
+ h3:hover {
    color: #4434ff;
  }
 
@@ -96,7 +96,7 @@
    @apply pl-0 w-full inline-flex items-center
  }
 
- h2, h3, h5 {
+ h2, h3 {
    transition: all 0.1s ease !important;
    @apply my-4 font-bold flex
  }
@@ -109,12 +109,12 @@
    @apply overflow-hidden;
  }
 
- .show .head h3 + :global(*) {
+ .show .head h2 + :global(*) {
    @apply rotate-180;
    color: #4434ff;
  }
 
- .main, .head, .head h3 +:global(*)
+ .main, .head, .head h2 +:global(*)
  {
    transition: all 0.3s ease;
  }

@@ -100,7 +100,4 @@
     color: #4434ff;
     @apply opacity-100
   }
-
-  .reader { display: none; }
-
 </style>

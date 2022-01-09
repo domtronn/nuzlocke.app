@@ -115,8 +115,6 @@
     background: linear-gradient(130deg, var(--col1), var(--col2));
   }
 
-  :global(.dark) button.invert { @apply text-gray-900; }
-
   button:hover {
     opacity: 0.6;
   }
