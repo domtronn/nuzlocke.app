@@ -34,7 +34,8 @@
   let activeId, active = {}, summary = {}
   let links = [
     { title: 'New Game', href: '/new', color: 'blue' },
-    { title: 'Load Game', href: '/saves', color: 'pink' }
+    { title: 'Load Game', href: '/saves', color: 'pink' },
+    { title: 'Guides', href: '/guides', color: 'green' }
   ]
 
   onMount(() => {
@@ -162,5 +163,6 @@
 
   .pink { @apply hover:text-pink-500 }
   .blue { @apply hover:text-blue-400 }
+  .green { @apply hover:text-green-400 }
   .yellow { @apply hover:text-yellow-400 }
 </style>
