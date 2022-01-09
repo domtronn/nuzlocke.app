@@ -128,6 +128,7 @@
   <meta content={description} name=twitter:description  />
 </svelte:head>
 
+{#key game.pid}
 <Hero {...game}>
 
   <Aside {path} {...route} />
@@ -146,6 +147,7 @@
 
 {@html articleSchema}
 {@html faqSchema}
+{/key}
 
 <style>
 

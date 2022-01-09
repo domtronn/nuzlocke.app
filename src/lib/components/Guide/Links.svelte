@@ -15,7 +15,7 @@
         <div>
           <h3>{id.startsWith('rom') ? 'Rom hacks' : `Gen ${id}`}</h3>
           {#each links[id] as { href, logo, title }}
-            <a {href} rel=external sveltekit:prefetch title='Pokémon {title} Nuzlocke Guide'>
+            <a {href} sveltekit:prefetch title='Pokémon {title} Nuzlocke Guide'>
               Pokémon {title}
             </a>
           {/each}
