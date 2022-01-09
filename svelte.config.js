@@ -13,6 +13,9 @@ export default {
     adapter: vercel(),
     target: '#svelte',
     vite: {
+      prerender: {
+        entries: '/guides/sun'
+      },
       resolve: {
         alias: {
           $c: path.resolve('./src/lib/components'),
