@@ -24,12 +24,12 @@
   <div class=main>
     <div class=encounters>
       <h3>
-        <a on:click={onshow} href='{path}#encounters'>Encounters</a>
+        <a href='{path}#encounters'>Encounters</a>
       </h3>
       <ul>
         {#each Object.keys(encounters) as type}
           <li>
-            <a on:click={onshow} href='{path}#{toId.encounter(type)}'>
+            <a href='{path}#{toId.encounter(type)}'>
               <PIcon type=symbol className=icon name='type-{type.toLowerCase()}-badge-32px' />
               {capitalise(type)} Encounters
             </a>
@@ -40,7 +40,7 @@
 
     <div class=boss>
       <h3>
-        <a on:click={onshow} href='{path}#boss-summary'>Boss battles</a>
+        <a href='{path}#boss-summary'>Boss battles</a>
       </h3>
     </div>
 
@@ -48,13 +48,13 @@
       <div class=boss-group>
         {#each groups as group}
           <h4>
-            <a on:click={onshow} href='{path}#{toSlug(group)}'>{group} fights</a>
+            <a href='{path}#{toSlug(group)}'>{group} fights</a>
           </h4>
 
           <ul>
             {#each gyms[group] as { boss, name }}
               <li>
-                <a on:click={onshow} href='{path}#{toId.boss(boss, name)}'>{boss} at {name}</a>
+                <a href='{path}#{toId.boss(boss, name)}'>{boss} at {name}</a>
               </li>
             {/each}
           </ul>
@@ -69,7 +69,12 @@
  h3 { @apply text-xl }
 
  ul { @apply divide-y }
+ :global(.dark) ul {
+   @apply divide-gray-600
+ }
+
  li a { @apply flex py-2 text-sm text-gray-500 font-medium }
+
  li a :global(.icon) {
    @apply -m-4 -mr-2;
  }
@@ -80,7 +85,7 @@
  }
 
  :global(.dark) li a {
-   @apply text-gray-400 font-light;
+   @apply text-gray-200 font-light;
  }
 
  :global(.dark) li:hover a {
@@ -121,6 +126,12 @@
 
  .main {
    @apply border-b -mt-px
+ }
+
+ :global(.dark) .main,
+ :global(.dark) .head
+ {
+   @apply border-gray-600
  }
 
  .show .main {
