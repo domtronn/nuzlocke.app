@@ -26,31 +26,35 @@
   </div>
 
   <div class='g-container hero'>
-    <div>
-      <small>Nuzlocke Tracker</small>
-      <h1> Pokémon {title} Nuzlocke Guide </h1>
-      <p>
-        This guide contains useful information for a <strong>{title} Nuzlocke</strong>.
-        Lists of all of the available Pokémon, the number of encounters, and detailed overviews of all <strong>Boss battles</strong>.
-      </p>
+    {#if $$slots.hero}
+      <slot name=hero />
+    {:else}
+      <div>
+        <small>Nuzlocke Tracker</small>
+        <h1> Pokémon {title} Nuzlocke Guide </h1>
+        <p>
+          This guide contains useful information for a <strong>{title} Nuzlocke</strong>.
+          Lists of all of the available Pokémon, the number of encounters, and detailed overviews of all <strong>Boss battles</strong>.
+        </p>
 
-      <button on:click={onnew}>
-        <span>
-          Start tracking
-          <Icon src={Track} className='translate-y-1 ml-2 fill-current' size=1.4rem />
-        </span>
-      </button>
-    </div>
+        <button on:click={onnew}>
+          <span>
+            Start tracking
+            <Icon src={Track} className='translate-y-1 ml-2 fill-current' size=1.4rem />
+          </span>
+        </button>
+      </div>
 
 
-    <div>
-      <Picture
-        src={logo}
-        role=presentation
-        aspect=192x96
-        className=drop-shadow-mark
-      />
-    </div>
+      <div>
+        <Picture
+          src={logo}
+          role=presentation
+          aspect=192x96
+          className=drop-shadow-mark
+          />
+      </div>
+    {/if}
   </div>
 
   {@html SVGs.waves}
@@ -58,20 +62,22 @@
 
 <slot />
 
-<div class='end g-container' style='--col1: {theme[0]}; --col2: {theme[1]}; --col3: {theme[2] || '#000'}'>
-  <p>
-    Now that you're ready to take on the <b>Pokémon {title} Nuzlocke
-      Challenge</b>, why not keep track of all your encounters with the
-    <b>Nuzlocke Tracker</b>?
+{#if !$$slots.hero}
+  <div class='end g-container' style='--col1: {theme[0]}; --col2: {theme[1]}; --col3: {theme[2] || '#000'}'>
+    <p>
+      Now that you're ready to take on the <b>Pokémon {title} Nuzlocke
+        Challenge</b>, why not keep track of all your encounters with the
+      <b>Nuzlocke Tracker</b>?
 
-    <br />
+      <br />
 
-    <button class=inverted on:click={onnew}>
-      Start Tracking
-      <Icon src={Track} className='translate-y-1 ml-2 fill-current' size=1.4rem />
-    </button>
-  </p>
-</div>
+      <button class=inverted on:click={onnew}>
+        Start Tracking
+        <Icon src={Track} className='translate-y-1 ml-2 fill-current' size=1.4rem />
+      </button>
+    </p>
+  </div>
+{/if}
 
 <style>
   header {
