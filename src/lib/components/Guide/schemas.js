@@ -29,8 +29,11 @@ export const faq = (game, data, { routes, gyms, encounters}) => {
   const gymTeamQuestions = [
     ...gyms['Gym Leader'],
     ...gyms['Elite Four']
-  ].map(g => data[g.value])
-   .map(({ name, speciality, pokemon }) => [
+  ]
+    .map(g => data[g.value])
+    .map((data) => {
+      const { name, speciality, pokemon } = data
+      return [
       [
         `How many Pokémon does ${name} use in Pokémon ${title}?`,
         speciality
@@ -45,7 +48,7 @@ export const faq = (game, data, { routes, gyms, encounters}) => {
         `What team of Pokémon does ${name} use in Pokémon ${title}?`,
         `${name} uses a team of ${toList(pokemon, p => capitalise(p.name))}.`
       ]
-    ]).flat()
+    ]}).flat()
 
   return {
     '@context': 'https://schema.org',

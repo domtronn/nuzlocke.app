@@ -67,11 +67,12 @@
 
     <span
       slot='heading'
+      class:md:-ml-2={!!img}
       class='text-left inline-flex gap-x-2 h-16 items-center -mt-4'
     >
 
       {#if img}
-        <span class='relative -mx-3'>
+        <span class='relative -mx-5'>
           <Picture
             src={img.src}
             alt={name}
@@ -95,7 +96,7 @@
                    rel=noopener
                    on:click|stopPropagation={function () {}}
                    class:mt-6={location}
-                   class='absolute italic text-tiny text-gray-500 dark:text-gray-600 dark:hover:text-indigo-400 hover:text-indigo-300 hover:underline transition '>
+                   class='absolute italic text-tiny text-gray-500 dark:text-gray-600 dark:hover:text-indigo-400 hover:text-indigo-300 hover:underline transition'>
                   Sprite by <strong>{img.author}</strong>
                 </a>
               {/if}
