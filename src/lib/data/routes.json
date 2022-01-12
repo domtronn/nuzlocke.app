@@ -38262,11 +38262,11 @@
       "name": "Safari Zone"
     },
     {
-      "type": "route",
+      "type": "gym",
       "name": "Safari Zone Gate",
-      "encounters": [
-        "archer"
-      ]
+      "value": "archer",
+      "group": "evil-team",
+      "boss": "Executive Archer"
     },
     {
       "type": "route",
@@ -48592,11 +48592,11 @@
       "name": "Safari Zone"
     },
     {
-      "type": "route",
+      "type": "gym",
       "name": "Safari Zone Gate",
-      "encounters": [
-        "archer"
-      ]
+      "value": "archer",
+      "group": "evil-team",
+      "boss": "Executive Archer"
     },
     {
       "type": "route",
