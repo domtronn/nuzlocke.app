@@ -125,7 +125,10 @@
 
   @media (min-width:theme('screens.sm')) {
     .fauxnav { @apply h-16; }
-    nav {transform: translateX(32px);}
+
+    nav {
+      position: relative;
+    }
     nav::after {
       content: '';
       background: linear-gradient(white 50%, transparent);
