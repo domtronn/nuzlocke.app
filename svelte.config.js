@@ -6,16 +6,13 @@ import vercel from '@sveltejs/adapter-vercel'
 
 import path from 'path'
 
-// import { visualizer } from 'rollup-plugin-visualizer'
+import { visualizer } from 'rollup-plugin-visualizer'
 
 export default {
   kit: {
     adapter: vercel(),
     target: '#svelte',
     vite: {
-      prerender: {
-        entries: '/guides/sun'
-      },
       resolve: {
         alias: {
           $c: path.resolve('./src/lib/components'),
@@ -25,7 +22,7 @@ export default {
         }
       },
       plugins: [
-        // visualizer()
+        visualizer()
       ],
       build: {
         sourcemap: true,
