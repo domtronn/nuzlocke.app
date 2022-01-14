@@ -87,4 +87,5 @@
 
 <CookieBanner />
 
+<iframe id='cdls' src='https://nuzlocke.vercel.app/iframe.html' title='Cross Domain LocalStorage migration interface' />
 <Footer />
