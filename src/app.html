@@ -60,7 +60,7 @@
        if (!action || !action.startsWith('cdls_'))
          return log(`Invalid message action: ${action}`)
 
-       log('Received message', action)
+       log(`Received message: ${action}`)
 
        let migrated = false
        const iframe = document.getElementById('cdls')
