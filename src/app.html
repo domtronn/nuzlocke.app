@@ -61,6 +61,7 @@
        if (!action || !action.startsWith('cdls_'))
          return log(`Invalid message action: ${action}`)
 
+       let migrated = false
        const iframe = document.getElementById('cdls')
        if (action == 'cdls_ready') iframe.contentWindow.postMessage({ action: 'cdls_get' }, target)
        if (action == 'cdls_data')
@@ -71,8 +72,11 @@
                return log(`Skipping ${key}`)
 
              log(`Setting item ${key}`)
+             migrated = true
              localStorage.setItem(key, val)
            })
+
+       if (migrated) document.loaction.reload()
      }
 
      window.addEventListener('message', messageHandler, false)
