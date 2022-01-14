@@ -4,7 +4,7 @@
   import { dev, browser } from '$app/env'
 </script>
 
-<selte:head>
+<svelte:head>
   {#if !dev && browser}
     <script async defer
             data-website-id="dae73bab-b128-46a6-93e1-46ebc3da783c"
