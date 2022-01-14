@@ -195,7 +195,6 @@ export const format = (saveData) => [
 
 export const summarise = (cb = _ => {}) => ({ __starter, __custom, ...data }) => {
   const pkmn = Object.values(data)
-  console.log(pkmn)
   cb({
     available: pkmn.filter(i => i?.pokemon && NuzlockeGroups.Available.includes(i?.status)),
     deceased: pkmn.filter(i => i?.pokemon && NuzlockeGroups.Dead.includes(i?.status))
