@@ -47,6 +47,39 @@
     <meta name="twitter:image" content="/twitter.png" />
 
     <script>
+     // Cross domain local storage migration
+     const log = msg => console.log(`[cdls] ${msg}`)
+     const target = 'https://nuzlocke.vercel.app'
+
+     function messageHandler (evt) {
+       if (evt.origin !== target)
+         return log(`Invalid event origin: ${evt.origin}`)
+
+       const { action, data } = evt.data
+
+       log('[cdls] Received message')
+       if (!action || !action.startsWith('cdls_'))
+         return log(`Invalid message action: ${action}`)
+
+       const iframe = document.getElementById('cdls')
+       if (action == 'cdls_ready') iframe.contentWindow.postMessage({ action: 'cdls_get' }, target)
+       if (action == 'cdls_data')
+         Object
+           .entries(data)
+           .forEach(([ key, val ]) => {
+             if (!!localStorage.getItem(key))
+               return log(`Skipping ${key}`)
+
+             log(`Setting item ${key}`)
+             localStorage.setItem(key, val)
+           })
+     }
+
+     window.addEventListener('message', messageHandler, false)
+     log('Parent listening for messages')
+    </script>
+
+    <script>
      // On page load or when changing themes, best to add inline in `head` to avoid FOUC
      const lsid = 'nuzlocke.theme'
      const mdark = !(lsid in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches
@@ -64,4 +97,9 @@
   <body id="svelte">
     %svelte.body%
   </body>
+  <iframe
+    id='cdls'
+    src='http://localhost:3000/iframe.html'
+    title='Cross Domain LocalStorage migration interface'
+  />
 </html>
