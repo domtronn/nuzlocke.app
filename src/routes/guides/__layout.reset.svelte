@@ -1,7 +1,17 @@
 <script>
   import '../../app.css'
   import { Footer, CookieBanner } from '$c/navs'
+  import { dev, browser } from '$app/env'
 </script>
+
+<selte:head>
+  {#if !dev && browser}
+    <script async defer
+            data-website-id="dae73bab-b128-46a6-93e1-46ebc3da783c"
+            src="https://nuzlocke-analytics.vercel.app/umami.js">
+    </script>
+  {/if}
+</svelte:head>
 
 <style global lang="postcss">
   :global(:root){ --input-bg: theme('colors.white'); }
