@@ -57,7 +57,7 @@
 </script>
 
 <main>
-  <span role=heading aria-level=1 class='mx-auto text-center font-mono text-4xl'>
+  <h1 role=heading aria-level=1 class='mx-auto text-center font-mono text-4xl'>
     Pokémon
     <Picture
       src=/logo
@@ -67,7 +67,7 @@
       className='transition h-auto md:h-16 mt-2 mx-auto {hovering ? '' : 'md:grayscale'}'
     />
     tracker
-  </span>
+  </h1>
 
   <div>
     <PixelatedContainer className=container__index>
