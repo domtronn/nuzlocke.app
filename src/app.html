@@ -57,9 +57,10 @@
 
        const { action, data } = evt.data
 
-       log('[cdls] Received message')
        if (!action || !action.startsWith('cdls_'))
          return log(`Invalid message action: ${action}`)
+
+       log('Received message', action)
 
        let migrated = false
        const iframe = document.getElementById('cdls')
@@ -98,12 +99,9 @@
 
     %svelte.head%
   </head>
+
   <body id="svelte">
     %svelte.body%
+    <iframe id='cdls' src='https://nuzlocke.vercel.app/iframe.html' title='Cross Domain LocalStorage migration interface' />
   </body>
-  <iframe
-    id='cdls'
-    src='https://nuzlocke.vercel.app/iframe.html'
-    title='Cross Domain LocalStorage migration interface'
-  />
 </html>
