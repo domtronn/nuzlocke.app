@@ -57,8 +57,8 @@
 </script>
 
 <main>
-  <span class='mx-auto text-center'>
-    <h1 class='font-mono text-4xl'>Pokémon</h1>
+  <span role=heading aria-level=1 class='mx-auto text-center font-mono text-4xl'>
+    Pokémon
     <Picture
       src=/logo
       aspect=324x62
@@ -66,7 +66,7 @@
       alt='Nuzlocke logo'
       className='transition h-auto md:h-16 mt-2 mx-auto {hovering ? '' : 'md:grayscale'}'
     />
-    <h1 class='font-mono text-4xl'>tracker</h1>
+    tracker
   </span>
 
   <div>
