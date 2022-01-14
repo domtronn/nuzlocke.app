@@ -24,7 +24,6 @@
     tracesSampleRate: dev ? 0 : 1.0,
   })
 
-
   setContext('game', {
     getLeague: fetchLeague,
     getAllPkmn: fetchData,
@@ -34,6 +33,10 @@
             .filter(p => ids.includes(p.num) || ids.includes(p.name) || ids.includes(p.alias))
             .reduce((acc, it) => ({ ...acc, [it.alias]: it }), {})),
   })
+
+  const title = 'Nuzlocke Tracker'
+  const subtitle = 'Track encounters, analyse your team, be prepared'
+  const description = 'Best application to track Pokémon encounters and prepare for every boss battle with details on stats, movesets, & abilities - never lose a Nuzlocke run again.'
 </script>
 
 <style global lang="postcss">
@@ -52,13 +55,12 @@
 </style>
 
 <svelte:head>
-  <title>Nuzlocke Tracker | Track Pokémon encounters, analyse your team, and be prepared</title>
-  <meta property="og:title" content="Nuzlocke Tracker | Track Pokémon encounters, analyse your team, and be prepared" />
-  <meta name="twitter:title" content="Nuzlocke Tracker" />
+  <title>{title} | {subtitle}</title>
+  <meta property="og:title" content="{title} | {subtitle}" />
+  <meta name="twitter:title" content={title} />
 
-  <meta content="Best application for tracking Pokémon encounters and helping prepare you for the boss batles on your Nuzlocke runs. Get insights into team match ups, compare stat blocks and get detail on Gym movesets & abilities - all in one place - so you never lose again." name="description" />
-  <meta name="twitter:description" content="Best application for tracking Pokémon encounters and helping prepare you for the boss batles on your Nuzlocke runs. Get insights into team match ups, compare stat blocks and get detail on Gym movesets & abilities - all in one place - so you never lose again." />
-
+  <meta content={description} name="description" />
+  <meta name="twitter:description" content={description} />
 
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://raw.githubusercontent.com" crossorigin>
