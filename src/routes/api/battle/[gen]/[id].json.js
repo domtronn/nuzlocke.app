@@ -75,7 +75,7 @@ const toAbility = (ability, patches = {}) => {
 
 const toTypes = map(path(['type', 'name']))
 const toPokemon = (p, patches = {}) => {
-  let patch = patches[p] || {}
+  let patch = patches[p.name] || {}
 
   return nonnull({
     name: p?.species?.name || p,
@@ -111,31 +111,35 @@ export async function get ({ params, query }) {
         .pokemon
         .filter(p => !p.starter || starter === 'all' || p.starter === starter)
         .map(async p => {
-          const data = await P.getPokemonByName(p.name).catch(_ => p.name)
-          const held = await maybe(P.getItemByName, p.held).catch(_ => p.held)
-          const ability = await maybe(P.getAbilityByName, p.ability).catch(_ => p.ability)
-          const moves = await Promise.all(
-            p.moves.map(m =>
-              P
-                .getMoveByName(m)
-                .catch(e => {
-                  if (!patch.move[m])
-                    throw new Error(e)
-                  return {
-                    name: m,
-                    names: [{ name: m, language: { name: LANG } }]
-                  }
-                })
+          try {
+            const data = await P.getPokemonByName(p.name).catch(_ => p.name)
+            const held = await maybe(P.getItemByName, p.held).catch(_ => p.held)
+            const ability = await maybe(P.getAbilityByName, p.ability).catch(_ => p.ability)
+            const moves = await Promise.all(
+              p.moves.map(m =>
+                P
+                  .getMoveByName(m)
+                  .catch(e => {
+                    if (!patch.move[m])
+                      throw new Error(e)
+                    return {
+                      name: m,
+                      names: [{ name: m, language: { name: LANG } }]
+                    }
+                  })
+              )
             )
-          )
 
-          return nonnull({
-            ...p,
-            ...toPokemon(data, patch.pokemon || {}),
-            moves: toMoves(moves, patch.move || {}),
-            held: held ? toHeld(held, patch.item || {}) : null,
-            ability: ability ? toAbility(ability, patch.ability || {}) : null,
-          })
+            return nonnull({
+              ...p,
+              ...toPokemon(data, patch.pokemon || {}),
+              moves: toMoves(moves, patch.move || {}),
+              held: held ? toHeld(held, patch.item || {}) : null,
+              ability: ability ? toAbility(ability, patch.ability || {}) : null,
+            })
+          } catch (e) {
+            console.error('Error fetching', p.name)
+          }
         })
     )
 
@@ -147,6 +151,7 @@ export async function get ({ params, query }) {
       }
     }
   } catch (E) {
+    console.log('Error fetching')
     console.log(E)
     console.log(E.response?.status || 'XXX', E?.request?.path)
   }
