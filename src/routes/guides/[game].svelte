@@ -41,7 +41,7 @@
 
     const gen = gameObj.gen
     const genFilter = (type) => {
-      console.log(gen, type)
+      if (gen == 'romhack') return true
       if (gen == 'I')
         return !['dark', 'steel', 'fairy'].includes(type)
 
