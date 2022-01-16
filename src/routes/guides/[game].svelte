@@ -30,6 +30,8 @@
       fetchJson(`/league/${game}.grass.json`),
     ])
 
+    const gameObj = { ...Games[game], theme: Themes[game] }
+
     const routes = route.filter(r => r.type === 'route')
     const encounters = [...new Set(
       route
@@ -37,21 +39,34 @@
         .filter(i => i)
     )]
 
-    const encounterdata = encounters.reduce((acc, i) => {
-      const found = pokemon.find(p => p.alias === i || p.sprite === i)
-      if (found) return acc.concat(found)
+    const gen = gameObj.gen
+    const genFilter = (type) => {
+      console.log(gen, type)
+      if (gen == 'I')
+        return !['dark', 'steel', 'fairy'].includes(type)
 
-      console.log(i, 'Not found')
-      return acc
-    }, [])
+      if (['II', 'III', 'IV', 'V'].includes(gen))
+        return type !== 'fairy'
+    }
+
+    const encounterdata = encounters
+          .reduce((acc, i) => {
+            const found = pokemon.find(p => p.alias === i || p.sprite === i)
+            if (found) return acc.concat(found)
+
+            console.log(i, 'Not found')
+            return acc
+          }, [])
           .sort((a, b) => a.num - b.num)
-          .reduce((acc, p) => ({
-            ...acc,
-            [p.types[0]]: (acc[p.types[0]] || []).concat(p.sprite),
-            ...(p.types[1] ? {
-              [p.types[1]]: (acc[p.types[1]] || []).concat(p.sprite)
-            } : {})
-          }), {})
+          .reduce((acc, p) => {
+            const [t1, t2] = p.types.filter(genFilter)
+
+            return {
+              ...acc,
+              [t1 || 'normal']: (acc[t1] || []).concat(p.sprite),
+              ...(t2 ? { [t2]: (acc[t2] || []).concat(p.sprite) } : {})
+            }
+          }, {})
 
     const gyms = route
           .filter(r => r.type === 'gym')
@@ -65,7 +80,6 @@
               })
           }}, {})
 
-    const gameObj = { ...Games[game], theme: Themes[game] }
     return { props: {
       links, game: gameObj, path: page.path,
       route: { routes, gyms, count: encounters.length, encounters: encounterdata },
