@@ -39,14 +39,20 @@
         .filter(i => i)
     )]
 
-    const gen = gameObj.gen
+    const { gen, pid } = gameObj
     const genFilter = (type) => {
+      // Show all types for romhacks
       if (gen == 'romhack') return true
-      if (gen == 'I')
-        return !['dark', 'steel', 'fairy'].includes(type)
 
-      if (['II', 'III', 'IV', 'V'].includes(gen))
-        return type !== 'fairy'
+      // For gen I games, filter out dark,steel,and fairy
+      if (gen == 'I')
+        if (!['fr', 'lg'].includes(pid))
+          return !['dark', 'steel', 'fairy'].includes(type)
+
+      // For pre gen VI, filter out fairy
+      if (['I', 'II', 'III', 'IV', 'V'].includes(gen))
+        if (!['or', 'as', 'bd', 'sp'].includes(pid))
+          return type !== 'fairy'
     }
 
     const encounterdata = encounters
