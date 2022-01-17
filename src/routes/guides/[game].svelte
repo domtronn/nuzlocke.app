@@ -38,8 +38,7 @@
     const encounterMap = routes
       .reduce((acc, route) => ({
         ...acc,
-        ...route
-          .encounters
+        ...(route.encounters || [])
           .reduce((rest, encounter) => ({
             ...rest,
             [encounter]: (acc[encounter] || []).concat(route.name)
