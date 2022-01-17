@@ -28,7 +28,7 @@
   <b>Pokémon {game.title}</b> has <span class=figure>{routes.length}</span> different
   encounter locations with
   <span class=figure>{count}</span> different Pokémon available as wild
-  encounters.
+  encounters. <span aria-hidden>Hover over a Pokémon to see where to encounter it!</span>
 </p>
 
 <p class=sr-only>

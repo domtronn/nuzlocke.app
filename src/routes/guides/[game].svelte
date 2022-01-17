@@ -65,6 +65,8 @@
       if (['I', 'II', 'III', 'IV', 'V'].includes(gen))
         if (!['or', 'as', 'bd', 'sp'].includes(pid))
           return type !== 'fairy'
+
+      return true
     }
 
     const encounterdata = encounters
