@@ -30,9 +30,22 @@
       fetchJson(`/league/${game}.grass.json`),
     ])
 
+
+    const findPokemon = id => pokemon.find(p => p.alias === id || p.sprite === id)
     const gameObj = { ...Games[game], theme: Themes[game] }
 
     const routes = route.filter(r => r.type === 'route')
+    const encounterMap = routes
+      .reduce((acc, route) => ({
+        ...acc,
+        ...route
+          .encounters
+          .reduce((rest, encounter) => ({
+            ...rest,
+            [encounter]: (acc[encounter] || []).concat(route.name)
+          }), {})
+      }), {})
+
     const encounters = [...new Set(
       route
         .map(r => r.encounters).flat()
@@ -57,8 +70,8 @@
 
     const encounterdata = encounters
           .reduce((acc, i) => {
-            const found = pokemon.find(p => p.alias === i || p.sprite === i)
-            if (found) return acc.concat(found)
+            const found = findPokemon(i)
+            if (found) return acc.concat({ ...found, original: i })
 
             console.log(i, 'Not found')
             return acc
@@ -69,8 +82,8 @@
 
             return {
               ...acc,
-              [t1 || 'normal']: (acc[t1] || []).concat(p.sprite),
-              ...(t2 ? { [t2]: (acc[t2] || []).concat(p.sprite) } : {})
+              [t1 || 'normal']: (acc[t1] || []).concat(p),
+              ...(t2 ? { [t2]: (acc[t2] || []).concat(p) } : {})
             }
           }, {})
 
@@ -88,7 +101,7 @@
 
     return { props: {
       links, game: gameObj, path: page.path,
-      route: { routes, gyms, count: encounters.length, encounters: encounterdata },
+      route: { routes, gyms, count: encounters.length, encounters: encounterdata, encounterMap },
       data: { fire, water, grass }
     } }
   }

@@ -1,6 +1,6 @@
 import { toList, capitalise } from '$utils/string'
 
-export const faq = (game, data, { routes, gyms, encounters}) => {
+export const faq = (game, data, { routes, gyms, encounters }) => {
   const { title } = game
   const routesQuestion = [
     `How many encounters are there in a Pokémon ${title} Nuzlocke`,
@@ -10,7 +10,7 @@ export const faq = (game, data, { routes, gyms, encounters}) => {
         .entries(encounters)
         .map(([type, encs]) => [
           `How many ${type} Pokémon are there in Pokémon ${title}?`,
-          `You can encounter and catch ${encs.length} different ${type} Pokémon in Pokémon ${title}, including ${toList(encs, capitalise)}`
+          `You can encounter and catch ${encs.length} different ${type} Pokémon in Pokémon ${title}, including ${toList(encs, e => e.name)}`
         ]).concat(
           [[`How many different Pokémon encounters are there in Pokémon ${title}?`,
             `You can encounter and catch ${Object.values(encounters).flat().length} different Pokémon in Pokémon ${title}.`]]

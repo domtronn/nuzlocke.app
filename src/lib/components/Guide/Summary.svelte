@@ -1,15 +1,12 @@
 <script>
-  export let game, encounters, count, routes, path
+  export let game, encounters, encounterMap, count, routes, path
 
-  import { toId } from '$utils/string'
-  import { PIcon } from '$c/core'
+  import { toId, toList, capitalise } from '$utils/string'
+  import { PIcon, Tooltip } from '$c/core'
   import TypeBadge from '$c/type-badge.svelte'
-
-  import { capitalise } from '$utils/string'
 
   import Icon from 'svelte-icons-pack'
   import Link from 'svelte-icons-pack/bi/BiLink'
-
 </script>
 
 <h2 id=encounters>
@@ -38,9 +35,9 @@
   {#each Object.entries(encounters).sort(([, a], [, b])=> a.length - b.length) as [type, encounters]}
     <h3>{encounters.length} {capitalise(type)} Pokémon encounters</h3>
     <ul>
-      {#each encounters as name}
+      {#each encounters as { name, sprite }}
         <li>
-          {capitalise(name)}
+          {capitalise(name)} - {toList(encounterMap[sprite] || [], i => i, 'and')}
         </li>
       {/each}
     </ul>
@@ -50,7 +47,7 @@
 <div>
   {#each Object.entries(encounters).sort(([, a], [, b])=> a.length - b.length) as [type, encounters]}
     <section id={toId.encounter(type)}>
-      <h3>
+      <h3 aria-hidden>
         <span>
           <a title='{capitalise(type)} Pokémon' href='{path}#{toId.encounter(type)}'>
             <Icon src={Link} size=1.8rem className=fill-current />
@@ -61,9 +58,12 @@
       </h3>
 
       <ul>
-        {#each encounters as name}
+        {#each encounters as { name, sprite, original }}
           <li title={name}>
-            <PIcon {name} />
+            <PIcon name={sprite} />
+            <Tooltip>
+              Find {name} at {toList(encounterMap[sprite] || [], i => i, 'and')}
+            </Tooltip>
           </li>
         {/each}
       </ul>
@@ -88,7 +88,9 @@
   }
 
   li {
-    @apply flex items-center justify-center -my-3 scale-125;
+    @apply flex items-center justify-center scale-125;
+    max-height: 40px;
+    overflow: hidden;
   }
 
   h2, span { @apply relative }

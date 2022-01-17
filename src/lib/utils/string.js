@@ -28,8 +28,8 @@ export const toId = {
   boss: (boss, name) => toSlug(boss + ' ' + name),
 }
 
-export const toList = (arr, f = i => i) => {
+export const toList = (arr, f = i => i, and = '&') => {
   const front = arr.slice(0, -1)
   const last = arr.slice(-1)[0]
-  return front.map(f).join(', ') + (front.length ? ' & ' : '') + f(last)
+  return front.map(f).join(', ') + (front.length ? ` ${and} ` : '') + f(last)
 }
