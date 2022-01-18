@@ -131,7 +131,22 @@
 </main>
 
 <style>
-  main { @apply container mx-auto h-screen -mt-16 flex flex-col justify-center; }
+  main {
+    @apply container mx-auto flex flex-col justify-center mt-16
+  }
+
+  @media (min-width:640px) {
+    main {
+      @apply absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 -mt-8;
+    }
+  }
+
+  @media (min-height:700px) {
+    main {
+      @apply absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 -mt-8;
+    }
+  }
+
   main > div { @apply py-7 px-6 sm:px-4 overflow-hidden mt-10; }
 
   p {
@@ -146,7 +161,14 @@
     @apply font-mono relative max-h-48 max-w-md mx-auto flex sm:flex-row justify-evenly items-center gap-y-2 text-3xl py-8 h-full w-auto;
   }
 
+  @media (max-width:640px) {
+    :global(.container__index > div) {
+      @apply -ml-8;
+    }
+  }
+
   .img__container {
+    @apply -mt-32;
     width: theme('spacing.32');
   }
 
