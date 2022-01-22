@@ -7,11 +7,15 @@
   ],
   "headers": [
     {
-      "source": "/sprites/(.*)",
+      "source": "/sprites/:id*",
       "headers": [
         {
           "key": "Cache-Control",
           "value": "public, max-age=31536000"
+        },
+        {
+          "key": "X-Proxy",
+          "value": "raw.githubusercontent.com"
         }
       ]
     },
