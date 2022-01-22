@@ -1,5 +1,20 @@
 {
+  "rewrites": [
+    {
+      "source": "/sprites/:post(\\d{1,}).png",
+      "detination": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/:post.png"
+    }
+  ],
   "headers": [
+    {
+      "source": "/sprites/(.*).png",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value":"public, max-age=31536000"
+        }
+      ]
+    }, 
     {
       "source": "/(.*)",
       "headers" : [
