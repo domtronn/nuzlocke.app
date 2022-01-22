@@ -7,7 +7,7 @@
   ],
   "headers": [
     {
-      "source": "/sprites/(.*).png",
+      "source": "/sprites/(.*)",
       "headers": [
         {
           "key": "Cache-Control",
