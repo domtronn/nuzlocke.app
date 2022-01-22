@@ -1,0 +1,8 @@
+{
+  "headers": {
+    "X-Frame-Options": "SAMEORIGIN",
+    "X-XSS-Protection": "1; mode=block",
+    "X-Content-Type-Options": "nosniff",
+    "Content-Security-Policy": "default-src 'self'; img-src *; script-src nuzlocke.app nuzlocke.vercel.app nuzlocke-beta.vercel.app nuzlocke-anlaytics.vercel.app"
+  }
+}
