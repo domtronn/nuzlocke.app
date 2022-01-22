@@ -40,7 +40,7 @@
         },
         {
           "key": "Content-Security-Policy",
-          "value": "default-src 'self'; img-src *; frame-src nuzlocke.vercel.app; font-src 'self' fonts.gstatic.com; style-src 'self' 'unsafe-inline'; script-src 'unsafe-inline' 'self' nuzlocke-analytics.vercel.app;"
+          "value": "default-src 'self'; img-src *; frame-src nuzlocke.vercel.app; font-src 'self' fonts.gstatic.com; style-src 'self' 'unsafe-inline'; connect-src o1091749.ingest.sentry.io nuzlocke-analytics.vercel.app; script-src 'unsafe-inline' 'self' nuzlocke-analytics.vercel.app;"
         }
       ]
     }
