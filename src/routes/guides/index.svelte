@@ -44,7 +44,7 @@
             src={logo}
             alt='{title} Logo'
             role=presentation
-            aspect=180
+            aspect=180x90
             className=drop-shadow-mark
           />
         </div>
