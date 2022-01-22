@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/sprites/:id*",
-      "detination": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/:id*"
+      "destination": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/:id*"
     }
   ],
   "headers": [
