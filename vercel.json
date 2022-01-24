@@ -10,11 +10,11 @@
     },
     {
       "source": "/assets/js/qrcode.min.js",
-      "destination": "https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"
+      "destination": "https://cdn.jsdelivr.net/gh/davidshimjs/qrcodejs@gh-pages/qrcode.min.js"
     },
     {
       "source": "/assets/js/instascan.min.js",
-      "destination": "https://cdn.rawgit.com/schmich/instascan-builds/master/instascan.min.js"
+      "destination": "https://cdn.jsdelivr.net/gh/schmich/instascan-builds@master/instascan.min.js"
     }
   ],
   "headers": [
