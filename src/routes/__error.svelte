@@ -11,8 +11,8 @@
           ? '#e67cd4'
           : '#3294ee',
         img: shiny
-          ? 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/202.png'
-          : 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/202.png',
+          ? '/sprites/shiny/202.png'
+          : '/sprites/202.png',
         status: status,
         message: error.message
       }

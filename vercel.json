@@ -1,6 +1,10 @@
 {
   "rewrites": [
     {
+      "source": "/sprites/unown-qm",
+      "destination": "https://img.pokemondb.net/sprites/home/normal/unown-qm.png"
+    },
+    {
       "source": "/sprites/:id*",
       "destination": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/:id*"
     },

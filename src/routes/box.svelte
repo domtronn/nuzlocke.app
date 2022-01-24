@@ -174,7 +174,7 @@
             >
               {#key p}
               <PokemonCard
-                sprite={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${p.status === 6 ? 'shiny/' : ''}${Pokemon[p.pokemon].imgId}.png`}
+                sprite={`/sprites/${p.status === 6 ? 'shiny/' : ''}${Pokemon[p.pokemon].imgId}.png`}
                 maxStat={Math.max(150, ...Object.values(Pokemon[p.pokemon].baseStats))}
                 moves={[]}
                 ability={p.nickname ? { name: p.nickname + ' the ' + (p.nature || '').toLowerCase() } : null}

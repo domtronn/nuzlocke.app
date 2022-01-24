@@ -20,7 +20,7 @@
   $: defCols = def.types.map(t => ColorMap[t.toLowerCase()])
   $: defBgImg = Pattern(defCols[1] || defCols[0])
 
-  const sprite = (id, status) => `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${status === 6 ? 'shiny/' : ''}${id}.png`
+  const sprite = (id, status) => `/sprites/${status === 6 ? 'shiny/' : ''}${id}.png`
 </script>
 
 <div class='shadow-lg dark:text-gray-50 relative {className}'>
