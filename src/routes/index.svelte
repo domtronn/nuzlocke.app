@@ -5,6 +5,7 @@
 <script>
   export let id = 25
 
+  import { prerendering } from '$app/env'
   import { flip as animflip } from 'svelte/animate'
   import { fly } from 'svelte/transition'
   import { onMount } from 'svelte'
@@ -53,7 +54,9 @@
   })
 
   $: duration = Math.min(interval / 3, 1000)
-  $: src = `/sprites/${id}.png`
+  $: src = prerendering
+    ? `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png`
+    : `/sprites/${id}.png`
 </script>
 
 <main>
@@ -113,14 +116,25 @@
 
       <div class='img__container h-full -mx-12 relative'>
         {#if !flip}
-          <img alt='Pokemon #{id}' class:md:grayscale={!hovering} src={src} out:fly={{ y: distance, duration }} in:fly={{ y: -distance, duration }} class='absolute transition right-0 w-full -my-2 md:-my-12 -ml-12' />
+          <img {src} rel=external alt='Pokemon #{id}'
+               class='absolute transition right-0 w-full -my-2 md:-my-12 -ml-12'
+               class:md:grayscale={!hovering}
+               out:fly={{ y: distance, duration }}
+               in:fly={{ y: -distance, duration }}
+             />
         {/if}
         {#if flip}
-          <img alt='Pokemon #{id}' class:md:grayscale={!hovering} src={src} out:fly={{ y: distance, duration }} in:fly={{ y: -distance, duration }} class='absolute transition right-0 w-full -my-2 md:-my-12 -ml-12' />
+          <img {src} rel=external alt='Pokemon #{id}'
+               class='absolute transition right-0 w-full -my-2 md:-my-12 -ml-12'
+               class:md:grayscale={!hovering}
+               out:fly={{ y: distance, duration }}
+               in:fly={{ y: -distance, duration }}
+             />
         {/if}
       </div>
     </PixelatedContainer>
   </div>
+
   <p>
     Keep track of your Pokémon encounters across multiple Nuzlocke
     runs, and prepare for Gym battles and Rival fights so you never
