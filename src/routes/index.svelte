@@ -5,7 +5,7 @@
 <script>
   export let id = 25
 
-  import { prerendering } from '$app/env'
+  import { dev, prerendering } from '$app/env'
   import { flip as animflip } from 'svelte/animate'
   import { fly } from 'svelte/transition'
   import { onMount } from 'svelte'
@@ -54,7 +54,7 @@
   })
 
   $: duration = Math.min(interval / 3, 1000)
-  $: src = prerendering
+  $: src = prerendering || dev
     ? `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png`
     : `/sprites/${id}.png`
 </script>

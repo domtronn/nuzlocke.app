@@ -1,6 +1,7 @@
 <script>
   export let pokemon = [], className = ''
 
+  import { dev, prerendering } from '$app/env'
   import { fade } from 'svelte/transition'
 
   import Icon from 'svelte-icons-pack'
@@ -20,7 +21,9 @@
   $: defCols = def.types.map(t => ColorMap[t.toLowerCase()])
   $: defBgImg = Pattern(defCols[1] || defCols[0])
 
-  const sprite = (id, status) => `/sprites/${status === 6 ? 'shiny/' : ''}${id}.png`
+  const sprite = dev || prerendering
+    ? (id, status) => `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/${status === 6 ? 'shiny/' : ''}${id}.png`
+    : (id, status) => `/sprites/${status === 6 ? 'shiny/' : ''}${id}.png`
 </script>
 
 <div class='shadow-lg dark:text-gray-50 relative {className}'>
