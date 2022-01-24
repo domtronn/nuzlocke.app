@@ -1,5 +1,5 @@
 <script>
-  const src = 'https://cdn.rawgit.com/schmich/instascan-builds/master/instascan.min.js'
+  const src = '/assets/js/instascan.min.js'
 
   import LibLoader from './LibLoader.svelte'
   import { createEventDispatcher, onDestroy } from 'svelte'

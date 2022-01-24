@@ -1,5 +1,5 @@
 <script>
-  const src = 'https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js'
+  const src = '/assets/js/qrcode.min.js'
   
   import LibLoader from './LibLoader.svelte'
 

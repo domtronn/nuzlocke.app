@@ -3,6 +3,14 @@
     {
       "source": "/sprites/:id*",
       "destination": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/:id*"
+    },
+    {
+      "source": "/assets/js/qrcode.min.js",
+      "destination": "https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"
+    },
+    {
+      "source": "/assets/js/instascan.min.js",
+      "destination": "https://cdn.rawgit.com/schmich/instascan-builds/master/instascan.min.js"
     }
   ],
   "headers": [
@@ -11,7 +19,7 @@
       "headers": [
         {
           "key": "Cache-Control",
-          "value": "public, max-age=31536000"
+          "value": "public, max-age=31536000, must-revalidate"
         },
         {
           "key": "X-Proxy",
