@@ -66,7 +66,7 @@
   {#if !dev && browser}
     <script async defer
             data-website-id="dae73bab-b128-46a6-93e1-46ebc3da783c"
-            src="https://nuzlocke-analytics.vercel.app/umami.js">
+            src="/assets/js/umami.js">
     </script>
   {/if}
 </svelte:head>

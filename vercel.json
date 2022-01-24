@@ -9,6 +9,10 @@
       "destination": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/:id*"
     },
     {
+      "source": "/assets/js/umami.js",
+      "destination": "https://nuzlocke-analytics.vercel.app/umami.js"
+    },
+    {
       "source": "/assets/js/qrcode.min.js",
       "destination": "https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"
     },
