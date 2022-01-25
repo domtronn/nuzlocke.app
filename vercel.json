@@ -1,0 +1,47 @@
+{
+  "rewrites": [
+    {
+      "source": "/sprites/unown-qm",
+      "destination": "https://img.pokemondb.net/sprites/home/normal/unown-qm.png"
+    },
+    {
+      "source": "/sprites/:id*",
+      "destination": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/:id*"
+    },
+    {
+      "source": "/assets/js/qrcode.min.js",
+      "destination": "https://cdn.jsdelivr.net/gh/davidshimjs/qrcodejs@gh-pages/qrcode.min.js"
+    },
+    {
+      "source": "/assets/js/instascan.min.js",
+      "destination": "https://cdn.jsdelivr.net/gh/schmich/instascan-builds@master/instascan.min.js"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "X-XSS-Protection",
+          "value": "1; mode=block"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin"
+        },
+        {
+          "key": "Content-Security-Policy",
+          "value": "default-src 'self'; img-src * data:; frame-src nuzlocke.vercel.app; font-src 'self' fonts.gstatic.com; style-src 'self' 'unsafe-inline'; connect-src 'self' *.clarity.ms fonts.gstatic.com raw.githubusercontent.com o1091749.ingest.sentry.io nuzlocke-analytics.vercel.app; script-src 'unsafe-inline' 'self' *.clarity.ms nuzlocke-analytics.vercel.app;"
+        }
+      ]
+    }
+  ]
+}

@@ -1,7 +1,6 @@
 <script>
-  const src = 'https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js'
-  
   import LibLoader from './LibLoader.svelte'
+  import { QRCODE } from '$utils/rewrites'
 
   export let value, size = 192
 
@@ -15,7 +14,7 @@
 </script>
 
 <LibLoader
-  {src}
+  src={QRCODE}
   expected=QRCode
   on:loaded={onloaded} />
 

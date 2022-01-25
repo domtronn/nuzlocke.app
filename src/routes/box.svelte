@@ -12,8 +12,10 @@
   import { getBox, updatePokemon, killPokemon } from '$lib/store'
   import { types } from '$lib/data/types'
   import { stats, StatIconMap } from '$lib/data/stats'
-  import { toDb } from '$lib/utils/link'
-  import deferStyles from '$lib/utils/defer-styles'
+
+  import { SPRITE } from '$utils/rewrites'
+  import { toDb } from '$utils/link'
+  import deferStyles from '$utils/defer-styles'
 
   import Icon from 'svelte-icons-pack'
   import Shiny from 'svelte-icons-pack/wi/WiStars'
@@ -174,7 +176,7 @@
             >
               {#key p}
               <PokemonCard
-                sprite={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${p.status === 6 ? 'shiny/' : ''}${Pokemon[p.pokemon].imgId}.png`}
+                sprite={`${SPRITE}/${p.status === 6 ? 'shiny/' : ''}${Pokemon[p.pokemon].imgId}.png`}
                 maxStat={Math.max(150, ...Object.values(Pokemon[p.pokemon].baseStats))}
                 moves={[]}
                 ability={p.nickname ? { name: p.nickname + ' the ' + (p.nature || '').toLowerCase() } : null}

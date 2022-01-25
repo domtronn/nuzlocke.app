@@ -9,6 +9,7 @@
   import TypeBadge from '$lib/components/type-badge.svelte'
   import Label from '$lib/components/label.svelte'
 
+  import { SPRITE } from '$utils/rewrites'
   import { toList } from '$utils/string'
 
   import { Picture, PIcon, Accordion } from '$lib/components/core'
@@ -150,7 +151,11 @@
 
     <div slot='item' class='grid lg:grid-cols-2 md:grid-cols-2 mt-8 md:gap-x-2 lg:gap-x-6 gap-y-10'>
       {#each pokemon as p, id (p.name + id)}
-        <Pokemon {...p} maxStat={maxStat}>
+        <Pokemon
+          {...p}
+          sprite={`${SPRITE}/${p.sprite}`}
+          maxStat={maxStat}
+        >
           <button
             class:mt-0={p.moves.length < 3}
             class='compare opacity-25 hover:opacity-75 transition mx-8 -mt-4 mb-2 z-50'

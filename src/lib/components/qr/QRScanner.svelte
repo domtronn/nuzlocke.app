@@ -1,7 +1,7 @@
 <script>
-  const src = 'https://cdn.rawgit.com/schmich/instascan-builds/master/instascan.min.js'
-
   import LibLoader from './LibLoader.svelte'
+  import { INSTASCAN } from '$utils/rewrites'
+
   import { createEventDispatcher, onDestroy } from 'svelte'
   const dispatch = createEventDispatcher()
 
@@ -32,7 +32,7 @@
 </script>
 
 <LibLoader
-  {src}
+  src={INSTASCAN}
   expected=Instascan
   on:loaded={onloaded} />
 
