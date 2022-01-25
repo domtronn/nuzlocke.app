@@ -15,15 +15,6 @@
   import { GameHeading, NavHeading, CookieBanner, Footer } from '$c/navs'
   import Modal from 'svelte-simple-modal'
 
-  import * as Sentry from '@sentry/browser'
-  import { Integrations } from '@sentry/tracing'
-
-  Sentry.init({
-    dsn: 'https://c785c122f32c47d68a777aea5af577b1@o1091749.ingest.sentry.io/6109144',
-    integrations: [new Integrations.BrowserTracing()],
-    tracesSampleRate: dev ? 0 : 1.0,
-  })
-
   setContext('game', {
     getLeague: fetchLeague,
     getAllPkmn: fetchData,
