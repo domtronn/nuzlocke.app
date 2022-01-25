@@ -5,7 +5,7 @@
 <script>
   export let id = 25
 
-  import { dev, prerendering } from '$app/env'
+  import { SPRITE } from '$utils/rewrites'
   import { flip as animflip } from 'svelte/animate'
   import { fly } from 'svelte/transition'
   import { onMount } from 'svelte'
@@ -14,6 +14,7 @@
   import { PixelatedContainer } from '$lib/components/containers'
 
   import { Picture, PIcon } from '$lib/components/core'
+
 
   import Icon from 'svelte-icons-pack'
   import Deceased from 'svelte-icons-pack/fa/FaSolidSkullCrossbones'
@@ -54,9 +55,7 @@
   })
 
   $: duration = Math.min(interval / 3, 1000)
-  $: src = prerendering || dev
-    ? `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png`
-    : `/sprites/${id}.png`
+  $: src = `${SPRITE}/${id}.png`
 </script>
 
 <main>

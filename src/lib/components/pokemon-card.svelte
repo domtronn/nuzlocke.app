@@ -14,7 +14,8 @@
   import MoveCard from '$lib/components/move-card.svelte'
   import StatBlock from '$lib/components/stat-block.svelte'
 
-  import { Stars as Pattern } from '$lib/utils/pattern'
+  import { SPRITE } from '$utils/rewrites'
+  import { Stars as Pattern } from '$utils/pattern'
 
   const canonname = name.replace(/-(Alola|Galar)/, '')
 
@@ -80,8 +81,8 @@
         <img width=96 height=96 style="--v-anim-dur: {animDur}s; --v-anim-delay: {animDelay}s" class='{anim} img__pkm -translate-y-16 h-40 w-auto' src={sprite} alt={name} />
       {:else}
         <img width=96 height=96
+             src={UNOWN}
              style="--v-anim-dur: {animDur}s; --v-anim-delay: {animDelay}s" class='{anim} img__pkm scale-75 -translate-y-16 -translate-x-6 h-40 w-auto'
-             src='/sprites/unown-qm.png'
              alt='Unknown sprite for {name}'
              />
       {/if}
