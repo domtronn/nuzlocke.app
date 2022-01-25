@@ -19,19 +19,6 @@
   ],
   "headers": [
     {
-      "source": "/sprites/:id*",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=31536000, must-revalidate"
-        },
-        {
-          "key": "X-Proxy",
-          "value": "raw.githubusercontent.com"
-        }
-      ]
-    },
-    {
       "source": "/(.*)",
       "headers": [
         {
@@ -52,7 +39,7 @@
         },
         {
           "key": "Content-Security-Policy",
-          "value": "default-src 'self'; img-src *; frame-src nuzlocke.vercel.app; font-src 'self' fonts.gstatic.com; style-src 'self' 'unsafe-inline'; connect-src 'self' fonts.gstatic.com raw.githubusercontent.com o1091749.ingest.sentry.io nuzlocke-analytics.vercel.app; script-src 'unsafe-inline' 'self' nuzlocke-analytics.vercel.app;"
+          "value": "default-src 'self'; img-src * data; frame-src nuzlocke.vercel.app; font-src 'self' fonts.gstatic.com; style-src 'self' 'unsafe-inline'; connect-src 'self' fonts.gstatic.com raw.githubusercontent.com o1091749.ingest.sentry.io nuzlocke-analytics.vercel.app; script-src 'unsafe-inline' 'self' nuzlocke-analytics.vercel.app;"
         }
       ]
     }
