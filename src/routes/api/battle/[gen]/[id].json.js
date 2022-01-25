@@ -79,8 +79,7 @@ const toPokemon = (p, patches = {}) => {
 
   return nonnull({
     name: p?.species?.name || p,
-    sprite: (p?.sprites?.front_default || '')
-      .replace(/^https.*sprites\/pokemon\//g, ''),
+    sprite: p?.sprites?.front_default,
     types: patch.types || toTypes(p.types),
     stats: {
       ...(p?.stats || [])
