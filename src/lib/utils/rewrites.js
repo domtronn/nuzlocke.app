@@ -6,7 +6,7 @@ const rewrite = !prerendering && !dev
 
 export const SPRITE = rewrite
   ? '/sprites'
-  : 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon'
+  : 'https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/'
 
 export const QRCODE = rewrite
   ? '/assets/js/qrcode.min.js'
