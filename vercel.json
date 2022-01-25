@@ -6,7 +6,7 @@
     },
     {
       "source": "/sprites/:id*",
-      "destination": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/:id*"
+      "destination": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/:id*"
     },
     {
       "source": "/assets/js/qrcode.min.js",
