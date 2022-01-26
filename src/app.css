@@ -102,7 +102,7 @@ body {
 }
 
 .p-container {
-  @apply w-full sm:w-2/3 md:w-3/4 sm:px-4 md:px-8 mx-auto flex justify-between;
+  @apply w-full md:w-11/12 px-4 md:px-12 xl:w-3/4 mx-auto flex justify-between;
 }
 
 .window { width: 100% !important; margin: 1rem 0 !important; }
