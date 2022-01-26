@@ -6,7 +6,7 @@ import vercel from '@sveltejs/adapter-vercel'
 
 import path from 'path'
 
-// import { visualizer } from 'rollup-plugin-visualizer'
+import { visualizer } from 'rollup-plugin-visualizer'
 
 export default {
   kit: {
@@ -21,7 +21,9 @@ export default {
           $store: path.resolve('./src/lib/store.js')
         }
       },
-      plugins: [],
+      plugins: [
+        visualizer()
+      ],
       build: {
         sourcemap: true,
         target: ['es2020']
