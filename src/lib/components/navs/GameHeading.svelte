@@ -119,13 +119,21 @@
     @apply container mx-auto mb-8 md:mb-2 bg-black sm:bg-white text-white sm:text-black;
   }
 
+  nav :global(.p-container) {
+    @apply px-0;
+  }
+
   :global(.dark) nav {
     @apply sm:bg-gray-800
   }
 
   @media (min-width:theme('screens.sm')) {
     .fauxnav { @apply h-16; }
-    nav {transform: translateX(32px);}
+    nav {
+      width: 100%;
+      left: 0;
+      right: 0;
+    }
     nav::after {
       content: '';
       background: linear-gradient(white 50%, transparent);
