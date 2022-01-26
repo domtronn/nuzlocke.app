@@ -39,7 +39,7 @@
         },
         {
           "key": "Content-Security-Policy",
-          "value": "default-src 'self'; img-src * data:; frame-src nuzlocke.vercel.app; font-src 'self' fonts.gstatic.com; style-src 'self' 'unsafe-inline'; connect-src 'self' *.clarity.ms fonts.gstatic.com raw.githubusercontent.com nuzlocke-analytics.vercel.app; script-src 'unsafe-inline' 'self' *.clarity.ms nuzlocke-analytics.vercel.app;"
+          "value": "default-src 'self'; img-src * c.bin.com cdn.statically.io data:; frame-src nuzlocke.vercel.app; font-src 'self' fonts.gstatic.com; style-src 'self' 'unsafe-inline'; connect-src 'self' *.clarity.ms cdn.statically.io c.bin.com fonts.gstatic.com raw.githubusercontent.com nuzlocke-analytics.vercel.app; script-src 'unsafe-inline' 'self' *.clarity.ms nuzlocke-analytics.vercel.app;"
         }
       ]
     }
