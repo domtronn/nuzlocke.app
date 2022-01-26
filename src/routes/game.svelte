@@ -114,7 +114,7 @@
 {:then route}
   <div id='game_el' out:fade|local={{ duration: 250 }} in:fade|local={{ duration: 250, delay: 300 }} class="container mx-auto pb-24 overflow-hidden">
     <div class="flex flex-row flex-wrap pb-16 justify-center">
-        <main id='main' role="main" class="w-full sm:w-3/4 px-4 md:px-8 md:py-6 flex flex-col gap-y-4 relative">
+        <main id='main' role="main" class="p-container px-4 sm:px-0 xl:px-8 md:py-6 flex flex-col gap-y-4 relative">
           <SideNav
             bind:show={show}
             on:nav={routeEl.setnav}
