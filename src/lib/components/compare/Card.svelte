@@ -22,7 +22,7 @@
   $: defCols = def.types.map(t => ColorMap[t.toLowerCase()])
   $: defBgImg = Pattern(defCols[1] || defCols[0])
 
-  const sprite = `${SPRITE}/${status === 6 ? 'shiny/' : ''}${id}.png`
+  const sprite = id => `${SPRITE}/${status === 6 ? 'shiny/' : ''}${id}.png`
 </script>
 
 <div class='shadow-lg dark:text-gray-50 relative {className}'>
