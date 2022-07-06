@@ -6,6 +6,7 @@
   export let id = 25
 
   import { SPRITE } from '$utils/rewrites'
+
   import { flip as animflip } from 'svelte/animate'
   import { fly } from 'svelte/transition'
   import { onMount } from 'svelte'
@@ -30,7 +31,7 @@
   let flip = 0
   setInterval(() => {
     flip = (flip + 1) % 2
-    id = Math.round(Math.random() * 898)
+    id = Math.round(Math.random() * 151)
   }, interval)
 
   let activeId, active = {}, summary = {}
@@ -55,7 +56,7 @@
   })
 
   $: duration = Math.min(interval / 3, 1000)
-  $: src = `${SPRITE}/${id}.png`
+  $: src = `${SPRITE}/${id}.png?auto=format`
 </script>
 
 <main>
