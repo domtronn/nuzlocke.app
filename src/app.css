@@ -7,10 +7,14 @@
 /*   width: calc(200% + theme('spacing.2')) !important; */
 /* } */
 
-.pkm { background-image: url(/assets/pokemon.webp) !important; }
-.pkitem { background-image: url(/assets/items.webp) !important; }
+.pkm {
+  background-image: url(https://img.nuzlocke.app/assets/pokemon.webp) !important;
+}
+.pkitem {
+  background-image: url(https://img.nuzlocke.app/assets/items.webp) !important;
+}
 .pkb {
-  background-image: url('/assets/badges.webp') !important;
+  background-image: url('https://img.nuzlocke.app/assets/badges.webp') !important;
   display: inline-block;
   vertical-align: middle;
   image-rendering: pixelated;
@@ -65,28 +69,69 @@
 }
 
 @keyframes full-pulse {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 1;
   }
   50% {
-    opacity: .2;
+    opacity: 0.2;
   }
 }
 
 @keyframes helix {
-  0% { width: 5px; height: 5px; bottom: -5px; z-index: 10 }
-  25% { width: 2px; height: 2px }
-  50% { width: 5px; height: 5px; bottom: 100%; z-index: 20 }
-  75% { width: 8px; height: 8px }
-  100% { width: 5px; height: 5px; bottom: -5px }
+  0% {
+    width: 5px;
+    height: 5px;
+    bottom: -5px;
+    z-index: 10;
+  }
+  25% {
+    width: 2px;
+    height: 2px;
+  }
+  50% {
+    width: 5px;
+    height: 5px;
+    bottom: 100%;
+    z-index: 20;
+  }
+  75% {
+    width: 8px;
+    height: 8px;
+  }
+  100% {
+    width: 5px;
+    height: 5px;
+    bottom: -5px;
+  }
 }
 
 @keyframes helix-reversed {
-  0% { width: 5px; height: 5px; bottom: 100%; z-index: 20 }
-  25% { width: 8px; height: 8px }
-  50% { width: 5px; height: 5px; bottom: -5px; z-index: 10 }
-  75% { width: 2px; height: 2px }
-  100% { width: 5px; height: 5px; bottom: 100% }
+  0% {
+    width: 5px;
+    height: 5px;
+    bottom: 100%;
+    z-index: 20;
+  }
+  25% {
+    width: 8px;
+    height: 8px;
+  }
+  50% {
+    width: 5px;
+    height: 5px;
+    bottom: -5px;
+    z-index: 10;
+  }
+  75% {
+    width: 2px;
+    height: 2px;
+  }
+  100% {
+    width: 5px;
+    height: 5px;
+    bottom: 100%;
+  }
 }
 
 body {
@@ -94,60 +139,88 @@ body {
 }
 
 :global(.dark) body {
-  @apply text-gray-200 bg-gray-800 ;
+  @apply text-gray-200 bg-gray-800;
 }
 
 .g-container {
-  @apply max-w-6xl mx-auto px-4 md:px-12 overflow-x-hidden
+  @apply max-w-6xl mx-auto px-4 md:px-12 overflow-x-hidden;
 }
 
 .p-container {
   @apply w-full md:w-11/12 px-4 md:px-12 xl:w-3/4 mx-auto flex justify-between;
 }
 
-.window { width: 100% !important; margin: 1rem 0 !important; }
-.window-wrap { margin: 0 1rem !important; }
-
-@media (min-width:theme('screens.sm')) {
-  .window { width: fit-content !important; margin: 2rem auto !important; }
-  .window-wrap { margin: 0 2rem !important; }
+.window {
+  width: 100% !important;
+  margin: 1rem 0 !important;
+}
+.window-wrap {
+  margin: 0 1rem !important;
 }
 
-.bg + main { filter: blur(5px); }
+@media (min-width: theme('screens.sm')) {
+  .window {
+    width: fit-content !important;
+    margin: 2rem auto !important;
+  }
+  .window-wrap {
+    margin: 0 2rem !important;
+  }
+}
+
+.bg + main {
+  filter: blur(5px);
+}
 
 .drop-shadow-highlight {
   filter: drop-shadow(1px 1px 0 theme('colors.yellow.500'))
-          drop-shadow(-1px -1px 0 theme('colors.yellow.500'))
-          drop-shadow(-1px 1px 0 theme('colors.yellow.500'))
-          drop-shadow(1px -1px 0 theme('colors.yellow.500')) !important;
+    drop-shadow(-1px -1px 0 theme('colors.yellow.500'))
+    drop-shadow(-1px 1px 0 theme('colors.yellow.500'))
+    drop-shadow(1px -1px 0 theme('colors.yellow.500')) !important;
 }
 
 .drop-shadow-mark {
   filter: drop-shadow(2px 2px 0 theme('colors.gray.900'))
-          drop-shadow(-2px -2px 0 theme('colors.gray.900'))
-          drop-shadow(-2px 2px 0 theme('colors.gray.900'))
-          drop-shadow(2px -2px 0 theme('colors.gray.900')) !important;
+    drop-shadow(-2px -2px 0 theme('colors.gray.900'))
+    drop-shadow(-2px 2px 0 theme('colors.gray.900'))
+    drop-shadow(2px -2px 0 theme('colors.gray.900')) !important;
 }
 
-
 .shake {
-  animation: shake 3.2s cubic-bezier(.36,.07,.19,.97) infinite;
+  animation: shake 3.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) infinite;
 }
 
 @keyframes shake {
-  0%, 50% { transform: var(--tw-transform) rotate(0);}
-  5%, 45% { transform: var(--tw-transform) rotate(-2deg);}
-  10%, 40% { transform: var(--tw-transform) rotate(2deg);}
-  15%, 25%, 35% { transform: var(--tw-transform) rotate(-5deg);}
-  20%, 30% { transform: var(--tw-transform) rotate(5deg);}
+  0%,
+  50% {
+    transform: var(--tw-transform) rotate(0);
+  }
+  5%,
+  45% {
+    transform: var(--tw-transform) rotate(-2deg);
+  }
+  10%,
+  40% {
+    transform: var(--tw-transform) rotate(2deg);
+  }
+  15%,
+  25%,
+  35% {
+    transform: var(--tw-transform) rotate(-5deg);
+  }
+  20%,
+  30% {
+    transform: var(--tw-transform) rotate(5deg);
+  }
 }
 
 .dark svg.waves g.fill {
   fill: theme('colors.gray.800');
 }
 
-
-svg g { @apply transition; }
+svg g {
+  @apply transition;
+}
 svg.waves g.fill {
   fill: theme('colors.white');
 }
