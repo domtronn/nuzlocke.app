@@ -51,7 +51,7 @@
   <meta content={description} name="description" />
   <meta name="twitter:description" content={description} />
 
-  <link rel="preload" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="dns-prefetch" href="https://img.nuzlocke.app" crossorigin />
 
   {#if !dev && browser}
