@@ -48,7 +48,7 @@
 
       <div>
         <Picture
-          src={logo}
+          src='https://img.nuzlocke.app{logo}'
           alt='{title} Logo'
           role=presentation
           aspect=192x96

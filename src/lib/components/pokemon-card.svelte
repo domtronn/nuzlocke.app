@@ -14,7 +14,7 @@
   import MoveCard from '$lib/components/move-card.svelte'
   import StatBlock from '$lib/components/stat-block.svelte'
 
-  import { SPRITE, UNOWN } from '$utils/rewrites'
+  import { UNOWN } from '$utils/rewrites'
   import { Stars as Pattern } from '$utils/pattern'
 
   const canonname = name.replace(/-(Alola|Galar)/, '')

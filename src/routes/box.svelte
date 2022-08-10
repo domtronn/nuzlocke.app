@@ -176,7 +176,7 @@
             >
               {#key p}
               <PokemonCard
-                sprite={`${SPRITE}/${p.status === 6 ? 'shiny/' : ''}${Pokemon[p.pokemon].imgId}.png?auto=format`}
+                sprite={`${SPRITE}/${p.status === 6 ? 'shiny/' : ''}${Pokemon[p.pokemon].imgId}.png`}
                 maxStat={Math.max(150, ...Object.values(Pokemon[p.pokemon].baseStats))}
                 moves={[]}
                 ability={p.nickname ? { name: p.nickname + ' the ' + (p.nature || '').toLowerCase() } : null}

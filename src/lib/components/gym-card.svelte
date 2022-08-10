@@ -153,7 +153,7 @@
       {#each pokemon as p, id (p.name + id)}
         <Pokemon
           {...p}
-          sprite={`${SPRITE}/${p.sprite}?auto=format`}
+          sprite={`${SPRITE}/${p.sprite}`}
           maxStat={maxStat}
         >
           <button

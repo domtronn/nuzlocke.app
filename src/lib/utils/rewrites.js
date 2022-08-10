@@ -4,7 +4,7 @@ const rewrite = !prerendering && !dev;
 // TODO: Remember to update `vercel.json` in root of project when
 // modifying these sources
 
-export const SPRITE = 'https://nuzlocke.imgix.net';
+export const SPRITE = 'https://img.nuzlocke.app/sprite';
 
 export const QRCODE = rewrite
   ? '/assets/js/qrcode.min.js'

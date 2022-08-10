@@ -56,7 +56,7 @@
   })
 
   $: duration = Math.min(interval / 3, 1000)
-  $: src = `${SPRITE}/${id}.png?auto=format`
+  $: src = `${SPRITE}/${id}.png`
 </script>
 
 <main>
