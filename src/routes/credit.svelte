@@ -42,10 +42,10 @@
             class='-mx-6 md:-mx-8'>
             <Picture
               pixelated
-              src={img}
-              alt={'Credit to '+name}
-              className='gap-x-6 inline-block'
               aspect=192x96
+              src='https://img.nuzlocke.app{img}'
+              alt='Credit to {name}'
+              className='gap-x-6 inline-block'
               />
           </div>
         {/each}
