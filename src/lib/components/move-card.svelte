@@ -4,13 +4,11 @@
   import TypeBadge from '$lib/components/type-badge.svelte'
   import Tooltip from '$lib/components/core/Tooltip.svelte'
 
-  import Icon from 'svelte-icons-pack'
+  import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
 
-  import Sword from 'svelte-icons-pack/ri/RiOthersSwordFill'
-  import Chevron from 'svelte-icons-pack/io/IoChevronUpOutline'
-  import Info from 'svelte-icons-pack/ri/RiEditorAsterisk'
-  import Priority from 'svelte-icons-pack/bi/BiSolidChevronUp'
-  import HighPriority from 'svelte-icons-pack/bi/BiSolidChevronsUp'
+  import { Sword } from '$icons'
+  import { Asterisk as Info } from '$icons'
+  import { Chevron as Priority, DoubleChevron as HighPriority } from '$icons'
 
 </script>
 
@@ -21,9 +19,10 @@
       {#if effect}
         <Tooltip>{effect}</Tooltip>
         <Icon
-          size='0.5em'
-          src={Info}
-          className='fill-current absolute right-0 top-1 -translate-y-1/2 translate-x-full'
+          inline={true}
+          height='0.8em'
+          icon={Info}
+          class='fill-current absolute right-0 top-1 -translate-y-1/2 translate-x-full'
           />
       {/if}
 
@@ -37,14 +36,14 @@
       <span class='font-bold text-sm inline-flex items-center'>
         <!-- Icon -->
         <span class='relative'>
-          <Icon src={Sword} className='text-xs fill-current' />
+          <Icon src={Sword} class='text-xs fill-current' />
         </span>
 
         <!-- Desktop power -->
         <span class='w-0 invisible sm:w-auto sm:visible relative'>
           {#if stab}
             <Tooltip>Base power {power}</Tooltip>
-            <Icon src={Chevron} className='absolute left-1/2 -translate-x-1/2 -translate-y-1/2 fill-current' />
+            <Icon src={Priority} class='absolute left-1/2 -translate-x-1/2 -translate-y-1/2 fill-current' />
             <span class='font-bold'>{Math.round(power * 1.5)}</span>
           {:else}
             {power}
@@ -70,15 +69,15 @@
     {#if priority > 0}
       <span class='flex flex-row dark:text-gray-200'>
         {#if priority > 3}
-          <Icon src={HighPriority} className='fill-current -mr-1.5' />
-          <Icon src={HighPriority} className='fill-current' />
+          <Icon src={HighPriority} class='fill-current -mr-1.5' />
+          <Icon src={HighPriority} class='fill-current' />
         {:else if priority > 2}
-          <Icon src={HighPriority} className='-mr-1.5 fill-current' />
-          <Icon src={Priority} className='fill-current' />
+          <Icon src={HighPriority} class='-mr-1.5 fill-current' />
+          <Icon src={Priority} class='fill-current' />
         {:else if priority > 1}
-          <Icon src={HighPriority} className='fill-current' />
+          <Icon src={HighPriority} class='fill-current' />
         {:else}
-          <Icon src={Priority} className='fill-current' />
+          <Icon src={Priority} class='fill-current' />
         {/if}
       </span>
     {/if}

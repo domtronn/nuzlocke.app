@@ -10,9 +10,9 @@
   import { page } from '$app/stores'
   import { getGame, savedGames, activeGame, read, parse } from '$lib/store'
 
-  import Icon from 'svelte-icons-pack'
-  import Share from 'svelte-icons-pack/ri/RiSystemShareForwardLine'
-  import Check from 'svelte-icons-pack/bi/BiMessageSquareCheck'
+  import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
+  import { Share } from '$icons'
+  import { Check } from '$icons'
   
   const { getPkmn } = getContext('game')
   
@@ -43,7 +43,7 @@
 
 <section>
   <h1>
-    <Icon src={Share} className='fill-current -ml-4 mr-2' />
+    <Icon inline={true} icon={Share} class='fill-current -ml-4 mr-2' />
     Transfer your save
   </h1>
 
@@ -76,7 +76,7 @@
     class='fixed z-50 bottom-0 left-0 md:left-1/2 md:-translate-x-1/2 px-4 w-full md:w-auto' >
     <div class='inline-flex max-w-sm px-6 justify-center text-green-600 bg-green-100 rounded-t-lg py-2 w-full font-bold'>
       Copied share link!
-      <Icon src={Check} size=1.4em className='ml-2 fill-current' />
+      <Icon inline={true} icon={Check} height=1.4em class='ml-2 fill-current' />
     </div>
   </div>
 {/if}

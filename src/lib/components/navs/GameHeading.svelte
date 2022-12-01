@@ -20,12 +20,8 @@
   import ThemeToggle from '$lib/components/theme-toggle.svelte'
   import { Picture, Popover } from '$lib/components/core'
 
-  import Icon from 'svelte-icons-pack'
-  import Box from 'svelte-icons-pack/bi/BiPackage'
-  import Save from 'svelte-icons-pack/bi/BiSave'
-  import Game from 'svelte-icons-pack/cg/CgGames'
-  import RightArr from 'svelte-icons-pack/ai/AiFillCaretRight'
-  import DownArr from 'svelte-icons-pack/ai/AiFillCaretDown'
+  import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
+  import { Box, Save, Game, Caret, CaretRight } from '$icons'
 
   const pages = [
     { name: 'Game', link: '/game', icon: Game },
@@ -60,9 +56,9 @@
       {#if games.length}
         <Popover className='mt-1 sm:mt-4' title='Load saves' position={window?.innerWidth < 700 ? 'bottom' : 'right'}>
           <span class='inline-flex'>
-            <Icon className='transition fill-current ml-2' src={Save} />
-            <Icon className='hidden sm:block transition fill-current -ml-0.5' src={RightArr} />
-            <Icon className='block sm:hidden transition fill-current -ml-0.5' src={DownArr} />
+            <Icon inline={true} class='transition fill-current ml-2' icon={Save} />
+            <Icon inline={true} class='hidden sm:block transition fill-current -ml-0.5' icon={CaretRight} />
+            <Icon inline={true} class='block sm:hidden transition fill-current -ml-0.5' icon={Caret} />
           </span>
 
           <ul in:fly={{ duration: 250, y: 50 }} out:fade={{ duration: 100 }} class='popover bg-white dark:bg-gray-900 rounded-xl shadow-lg w-60 mt-6 ml-4 sm:mt-4 sm:ml-2 flex flex-col divide-y dark:divide-gray-700' slot=popover>
@@ -94,10 +90,10 @@
       {#each pages as p}
         <a
           class=link
-          class:active={p.link == $page.path}
+          class:active={p.link == $page.url.pathname}
           href={p.link}
           >
-          <Icon src={p.icon} className='fill-current' />
+          <Icon inline={true} icon={p.icon} class='fill-current' />
           {p.name}
         </a>
       {/each}

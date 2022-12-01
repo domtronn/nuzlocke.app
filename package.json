@@ -4,25 +4,35 @@
   "type": "module",
   "scripts": {
     "lint": "eslint src",
-    "dev": "svelte-kit dev",
+    "dev": "vite dev",
     "build": "svelte-kit build --verbose",
     "preview": "svelte-kit preview"
   },
   "devDependencies": {
     "@sveltejs/adapter-vercel": "next",
     "@sveltejs/kit": "next",
-    "autoprefixer": "^10.3.7",
+    "autoprefixer": "^10.4.13",
     "cssnano": "^5.0.8",
     "eslint": "^8.2.0",
     "eslint-plugin-svelte3": "^3.2.1",
-    "postcss": "^8.3.9",
-    "postcss-load-config": "^3.1.0",
+    "postcss": "^8.4.19",
+    "postcss-load-config": "^4.0.1",
     "rollup-plugin-visualizer": "^5.5.4",
     "svelte": "^3.38.3",
     "svelte-preprocess": "^4.9.8",
-    "tailwindcss": "^2.2.16"
+    "tailwindcss": "^3.2.4",
+    "vite": "^3.2.4"
   },
   "dependencies": {
+    "@iconify-icons/emojione-monotone": "^1.2.4",
+    "@iconify-icons/fa-solid": "^1.2.4",
+    "@iconify-icons/fe": "^1.2.3",
+    "@iconify-icons/gg": "^1.2.3",
+    "@iconify-icons/ph": "^1.2.3",
+    "@iconify-icons/ri": "^1.2.4",
+    "@iconify-icons/simple-icons": "^1.2.37",
+    "@iconify-icons/wi": "^1.2.3",
+    "@iconify/svelte": "^3.0.1",
     "@smogon/calc": "^0.6.0",
     "clean-css": "^5.2.2",
     "dayjs": "^1.10.7",
@@ -33,7 +43,6 @@
     "ramda": "^0.27.1",
     "simple-svelte-autocomplete": "^2.2.3",
     "simplex-noise": "^3.0.0",
-    "svelte-icons-pack": "^1.4.6",
     "svelte-intersection-observer": "^0.9.1",
     "svelte-portal": "^2.1.2",
     "svelte-simple-modal": "^1.1.1",
@@ -45,5 +54,10 @@
     "singleQuote": true,
     "tabWidth": 2,
     "trailingComma": "none"
-  }
+  },
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/domtronn/dc-nuzlocke",
+  "author": "domtronn <dgc336@gmail.com>",
+  "license": "MIT"
 }

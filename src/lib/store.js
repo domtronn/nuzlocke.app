@@ -1,5 +1,5 @@
 /* eslint no-undef: 0 */
-import { browser } from '$app/env'
+import { browser } from '$app/environment'
 import { writable } from 'svelte/store'
 
 import { uuid } from '$lib/utils/uuid'

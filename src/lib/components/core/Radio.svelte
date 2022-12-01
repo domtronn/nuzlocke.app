@@ -1,16 +1,16 @@
 <script>
   export let options, selected, name, className
 
-  import Icon from 'svelte-icons-pack'
-  import On from 'svelte-icons-pack/cg/CgRadioChecked'
-  import Off from 'svelte-icons-pack/cg/CgRadioCheck'
+  import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
+  import { On } from '$icons'
+  import { Off } from '$icons'
 </script>
 
 {#each options as o, i}
   <label class={className}>
     <input type=radio bind:group={selected} {name} value={i} />
-    <span class=on><Icon size=1.4em src={On} className='fill-current ml-0.5 text-indigo-600 dark:text-indigo-500' /></span>
-    <span class=off><Icon size=1.4em src={Off} className='fill-current ml-0.5' /></span>
+    <span class=on><Icon inline={true} height=1.4em icon={On} class='fill-current ml-0.5 text-indigo-600 dark:text-indigo-500' /></span>
+    <span class=off><Icon inline={true} height=1.4em icon={Off} class='fill-current ml-0.5' /></span>
     <small>{o}</small>
   </label>
 {/each}

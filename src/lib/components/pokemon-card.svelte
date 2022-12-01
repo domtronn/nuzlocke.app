@@ -5,8 +5,8 @@
   import { capitalise } from '$lib/utils/string'
 
   import PIcon from '$lib/components/core/PokemonIcon.svelte'
-  import Icon from 'svelte-icons-pack'
-  import Hand from 'svelte-icons-pack/fa/FaSolidHandHolding'
+  import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
+  import { Hand } from '$icons'
 
   import ColorMap from '$lib/data/colors.json'
   import Tooltip from '$lib/components/core/Tooltip.svelte'
@@ -67,7 +67,7 @@
             <span>
               <PIcon type='item' name={held.sprite} />
             </span>
-            <Icon src={Hand} className='-mt-3.5 fill-current dark:text-white' />
+            <Icon inline={true} icon={Hand} class='-mt-3.5 fill-current dark:text-white' />
           </div>
         {/if}
 

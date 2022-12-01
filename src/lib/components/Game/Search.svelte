@@ -2,10 +2,10 @@
   import { createEventDispatcher } from 'svelte'
   import { fade } from 'svelte/transition'
 
-  import Icon from 'svelte-icons-pack'
-  import Search from 'svelte-icons-pack/bs/BsSearch'
-  import X from 'svelte-icons-pack/bi/BiX'
-  import Info from 'svelte-icons-pack/ri/RiSystemInformationLine'
+  import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
+  import { Search } from '$icons'
+  import { X } from '$icons'
+  import { Info } from '$icons'
 
   import { Tooltip, Input } from '$lib/components/core'
 
@@ -32,7 +32,7 @@
       title='Clear search'
       class='absolute right-0 top-0 bottom-0 px-2 text-gray-500 hover:text-gray-800 dark:hover:text-gray-100 transition z-index-50'
     >
-      <Icon src={X} className='fill-current' size=1.4em/>
+      <Icon inline={true} icon={X} class='fill-current' height=1.4em/>
     </button>
   {/if}
 
@@ -40,7 +40,7 @@
     <Tooltip>
       Search and filter by Pokémon name, nickname, status, location name or encounter table. e.g. Route 27, or captured
     </Tooltip>
-    <Icon size=1.5em src={Info} className='m-2 fill-current' />
+    <Icon inline={true} height=1.5em icon={Info} class='m-2 fill-current' />
   </div>
 
 </Input>

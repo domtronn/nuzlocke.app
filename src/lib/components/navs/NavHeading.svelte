@@ -1,8 +1,8 @@
 <script>
   import { page } from '$app/stores'
 
-  import Icon from 'svelte-icons-pack'
-  import Home from 'svelte-icons-pack/ai/AiOutlineHome'
+  import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
+  import { Home } from '$icons'
 
   import ThemeToggle from '$lib/components/theme-toggle.svelte'
 
@@ -11,13 +11,13 @@
 
 <nav>
   <div class=p-container>
-    {#if $page.path !== '/'}
+    {#if $page.url.pathname !== '/'}
       <a
         href=/
         rel=external
         aria-label=Home
         >
-        <Icon src={Home} size=1.4rem className='fill-current' />
+        <Icon inline={true} icon={Home} height=1.4rem class='fill-current' />
       </a>
     {:else}
       <span />

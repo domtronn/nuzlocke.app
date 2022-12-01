@@ -5,8 +5,8 @@
 
   import { capitalise, toSlug, toId } from '$utils/string'
 
-  import Icon from 'svelte-icons-pack'
-  import Link from 'svelte-icons-pack/bi/BiLink'
+  import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
+  import { Link } from '$icons'
 
   const count = Object.values(gyms).flat().length
   const order = ['Gym Leader', 'Elite Four', 'Rival', 'Evil Team', 'Other'].filter(i => gyms[i])
@@ -23,7 +23,7 @@
 
 <h2 id=boss-summary>
   <a title='{game.title} Boss Battles' href='{path}#bosses'>
-    <Icon src={Link} size=1.8rem className=fill-current />
+    <Icon inline={true} icon={Link} height=1.8rem class=fill-current />
   </a>
   {game.title} Boss Battles
 </h2>
@@ -77,7 +77,7 @@
   <section>
     <h3 id={toSlug(group)}>
       <a title='{group} fights' href='{path}#{toSlug(group)}'>
-        <Icon src={Link} size=1.8rem className=fill-current />
+        <Icon inline={true} icon={Link} height=1.8rem class=fill-current />
       </a>
 
       {group} fights

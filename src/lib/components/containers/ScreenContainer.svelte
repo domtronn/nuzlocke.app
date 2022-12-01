@@ -1,7 +1,7 @@
 <script>
   export let title, icon, containerClassName = '', className = ''
   import { PixelatedContainer } from '$lib/components/containers'
-  import Icon from 'svelte-icons-pack'
+  import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
 </script>
 
 <div class='container mx-auto mt-32 sm:mt-16 w-full flex flex-col justify-center {containerClassName}'>
@@ -12,7 +12,7 @@
         <span class='flex justify-between items-center md:gap-x-24'>
           <h1 id=sc_title class='text-xl md:text-2xl font-bold'>{title}</h1>
           {#if icon}
-            <Icon src={icon} size='1.2em' className='fill-current' />
+            <Icon inline={true} icon={icon} height='1.2em' class='fill-current' />
           {/if}
         </span>
         <hr >

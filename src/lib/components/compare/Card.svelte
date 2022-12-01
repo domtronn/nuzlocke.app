@@ -3,10 +3,10 @@
 
   import { fade } from 'svelte/transition'
 
-  import Icon from 'svelte-icons-pack'
-  import Hand from 'svelte-icons-pack/fa/FaSolidHandHolding'
-  import Badge from 'svelte-icons-pack/fi/FiRefreshCcw'
-  import Ball from 'svelte-icons-pack/cg/CgPokemon'
+  import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
+  import { Hand } from '$icons'
+  import { Loop as Badge } from '$icons'
+  import { Ball } from '$icons'
 
   import { Tooltip, PIcon } from '$lib/components/core'
   import ColorMap from '$lib/data/colors.json'
@@ -60,7 +60,7 @@
             <span>
               <PIcon type='item' name={def.original.held.sprite} />
             </span>
-            <Icon src={Hand} className='-mt-3.5 fill-current dark:text-white' />
+            <Icon inline={true} icon={Hand} class='-mt-3.5 fill-current dark:text-white' />
           </div>
         {/key}
       {/if}
@@ -68,9 +68,9 @@
     <!-- VS Icon -->
     <div class='absolute left-1/2 -translate-x-1/2 bottom-1 w-8 h-8'>
       <span class='flex'>
-        <Icon className='absolute' size=1.4em src={Badge} />
-        <Icon className='absolute dark:bg-gray-800 bg-white rounded-full -top-0.5 right-2' size=0.8em src={Ball} />
-        <Icon className='absolute dark:bg-gray-800 bg-white rounded-full bottom-2 -left-0.5' size=0.8em src={Ball} />
+        <Icon inline={true} class='absolute' height=1.4em icon={Badge} />
+        <Icon inline={true} class='absolute dark:bg-gray-800 bg-white rounded-full -top-0.5 right-2' height=0.8em icon={Ball} />
+        <Icon inline={true} class='absolute dark:bg-gray-800 bg-white rounded-full bottom-2 -left-0.5' height=0.8em icon={Ball} />
       </span>
       <p class='text-2xl font-mono left-0.5 absolute bottom-7'>vs</p>
     </div>

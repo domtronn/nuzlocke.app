@@ -2,10 +2,10 @@
   export let value, list, pageSize = 5, select = i => i, className = '', title = '', controls = true
 
   import { PIcon } from '$lib/components/core'
-  import Icon from 'svelte-icons-pack'
-  import Arrow from 'svelte-icons-pack/bi/BiSolidRightArrow'
+  import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
+  import { Arrow } from '$icons'
 
-  import Pip from 'svelte-icons-pack/bs/BsCircleFill'
+  import { Pip } from '$icons'
 
   import { fade } from 'svelte/transition'
   import { chunk } from '$lib/utils/arr'
@@ -31,7 +31,7 @@
             title='Page {i + 1}'
             on:click={set(i)}
           >
-            <Icon size=0.5rem src={Pip} className='fill-current transform transition {page === i ? 'scale-150' : 'scale-100 opacity-50'}' />
+            <Icon inline={true} height=0.5rem icon={Pip} class='fill-current transform transition {page === i ? 'scale-150' : 'scale-100 opacity-50'}' />
           </button>
         {/each}
       </div>
@@ -45,7 +45,7 @@
   class:justify-between={page < max && page > 0}
 >
   <button title='Previous page' class:hidden={!controls} disabled={page === 0} class='page disabled:opacity-25 block' on:click={dec}>
-    <Icon className='fill-current transform rotate-180' src={Arrow} />
+    <Icon inline={true} class='fill-current transform rotate-180' icon={Arrow} />
   </button>
 
   <div
@@ -65,7 +65,7 @@
   </div>
 
   <button title='Next page' class:hidden={!controls} disabled={page === max} class='page disabled:opacity-25' on:click={inc}>
-    <Icon className=fill-current src={Arrow} />
+    <Icon inline={true} class=fill-current icon={Arrow} />
   </button>
 </div>
 {/if}

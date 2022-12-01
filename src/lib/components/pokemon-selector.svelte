@@ -13,16 +13,16 @@
   import Popover from '$lib/components/core/Popover.svelte'
 
   import PIcon from '$lib/components/core/PokemonIcon.svelte'
-  import Icon from 'svelte-icons-pack'
-  import Chevron from 'svelte-icons-pack/bi/BiSolidChevronUp'
-  import Add from 'svelte-icons-pack/cg/CgAddR'
-  import Delete from 'svelte-icons-pack/ri/RiSystemDeleteBack2Line'
-  import Deceased from 'svelte-icons-pack/fa/FaSolidSkullCrossbones'
-  import External from 'svelte-icons-pack/ri/RiSystemExternalLinkLine'
-  import Bin from 'svelte-icons-pack/bi/BiTrash'
-  import Dots from 'svelte-icons-pack/bs/BsThreeDotsVertical'
-  import Map from 'svelte-icons-pack/bi/BiMapAlt'
-  import Search from 'svelte-icons-pack/bs/BsSearch'
+  import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
+  import { Chevron } from '$icons'
+  import { Add } from '$icons'
+  import { Delete } from '$icons'
+  import { Deceased } from '$icons'
+  import { External } from '$icons'
+  import { Bin } from '$icons'
+  import { Dots } from '$icons'
+  import { Map } from '$icons'
+  import { Search } from '$icons'
 
   import { createEventDispatcher, onMount, getContext } from 'svelte'
 
@@ -183,7 +183,7 @@
 
             <PIcon name={selected.sprite} className='{gray ? 'filter grayscale' : ''} {iconClass}' />
           {:else}
-            <Icon size=0.7em src={Search} className='fill-current left-3 text-gray-500 {iconClass}' />
+            <Icon inline={true} height=0.7em icon={Search} class='fill-current left-3 text-gray-500 {iconClass}' />
           {/if}
         </svelte:fragment>
       </AutoComplete>
@@ -202,7 +202,7 @@
 
   <SettingsWrapper id=permadeath on=1 condition={status?.id === 5}>
     <div class='border-2 dark:border-gray-600 shadow-sm rounded-lg h-10 flex items-center text-sm dark:text-gray-200 text-gray-800 cursor-not-allowed'>
-      <Icon className='fill-current mx-2' src={NuzlockeStates[5].icon} />
+      <Icon inline={true} class='fill-current mx-2' icon={NuzlockeStates[5].icon} />
       Dead
     </div>
 
@@ -220,12 +220,12 @@
         >
         <svelte:fragment slot=icon let:iconClass let:selected>
           {#if selected}
-            <Icon className='{iconClass} fill-current left-3' src={selected.icon} />
+            <Icon inline={true} class='{iconClass} fill-current left-3' icon={selected.icon} />
           {/if}
         </svelte:fragment>
 
         <div on:click={animateStatus(item)} class='flex inline-flex gap-x-2 px-3 py-2 md:py-3 items-center' slot=item let:item let:label>
-          <Icon src={item.icon} className='fill-current transform md:scale-125' />
+          <Icon inline={true} icon={item.icon} class='fill-current transform md:scale-125' />
           {@html label}
         </div>
       </AutoComplete>
@@ -245,14 +245,14 @@
     <div class='flex inline-flex justify-between w-full px-5 md:px-3 py-2 md:py-3 -mx-1 items-center' slot=item let:item let:label>
       <span>{@html label}</span>
       {#if item.value.length}
-        <span class='flex sm:flex-col -my-4 -mr-3 gap-x-2 sm:gap-x-0 text-tiny sm:gap-y-1'>
+        <span class='flex sm:flex-col items-end -my-4 -mr-3 gap-x-2 sm:gap-x-0 text-tiny sm:gap-y-1'>
           <span class='inline-flex justify-end items-center dark:text-blue-300 text-blue-400'>
             {item.value[0]}
-            <Icon src={Chevron} className='fill-current' />
+            <Icon inline={true} icon={Chevron} class='fill-current' />
           </span>
           <span class='inline-flex items-center dark:text-orange-300 text-orange-600'>
             {item.value[1]}
-            <Icon src={Chevron} className='fill-current transform rotate-180' />
+            <Icon inline={true} icon={Chevron} class='fill-current transform rotate-180' />
           </span>
         </span>
       {/if}
@@ -295,17 +295,17 @@
     {/if}
 
     <Popover title='Open contextul menu' className='absolute top-16 mt-0.5 right-1 sm:top-0 sm:relative '>
-      <Icon size=1.4em src={Dots} className=fill-current />
+      <Icon inline={true} height=1.4em icon={Dots} class=fill-current />
 
       <ul in:fly={{ duration: 250, x: 50 }} class='popover bg-white dark:bg-gray-900 rounded-xl shadow-lg w-44 pt-2 flex flex-col divide-y dark:divide-gray-600' slot=popover>
         <strong class='px-4 pb-2 inline-flex justify-between w-full items-center'>
           {locationName || location}
-          <Icon src={Map} className=fill-current />
+          <Icon inline={true} icon={Map} class=fill-current />
         </strong>
 
         <li>
           <button on:click={onnew}>
-            <Icon src={Add} className='fill-current mr-2'/>
+            <Icon inline={true} icon={Add} class='fill-current mr-2'/>
             Add Location
           </button>
         </li>
@@ -313,7 +313,7 @@
         <SettingsWrapper id=permadeath on=1 condition={status?.id === 5}>
           <li slot=else>
             <button on:click={handleClear}>
-              <Icon src={Delete} className='fill-current mr-2'/>
+              <Icon inline={true} icon={Delete} class='fill-current mr-2'/>
               Clear Encounter
             </button>
           </li>
@@ -322,7 +322,7 @@
         {#if type === 'custom'}
           <li>
             <button on:click={ondelete}>
-              <Icon src={Bin} className='fill-current mr-2'/>
+              <Icon inline={true} icon={Bin} class='fill-current mr-2'/>
               Delete Location
             </button>
           </li>
@@ -340,7 +340,7 @@
         {#if selected && status && status.id !== 4 && status.id !== 5}
           <li>
             <button class=inline-flex on:click={handleStatus(5)}>
-              <Icon src={Deceased} className='fill-current mr-2' />
+              <Icon inline={true} icon={Deceased} class='fill-current mr-2' />
               Kill {nickname || selected.name}
             </button>
           </li>
@@ -360,7 +360,7 @@
             <a href={infolink}
                title='Pokémon DB Link for {location}'
                rel=noreferrer target=_blank >
-              <Icon src={External} className='fill-current inline -mt-0.5 mr-2' />
+              <Icon inline={true} icon={External} class='fill-current inline -mt-0.5 mr-2' />
               Route Info
             </a>
           </li>

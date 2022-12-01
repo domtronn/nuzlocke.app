@@ -3,7 +3,7 @@
   export let borderless = false
 
   import { createEventDispatcher } from 'svelte'
-  import Icon from 'svelte-icons-pack'
+  import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
   import PIcon from '$lib/components/core/PokemonIcon.svelte'
 
   const dispatch = createEventDispatcher()
@@ -24,7 +24,7 @@
   {#if $$slots.icon}
     <slot name=icon />
   {:else if src}
-    <Icon className='fill-current m-2 grayscale group-hover:grayscale-0 {className}' src={src} />
+    <Icon inline={true} class='fill-current m-2 grayscale group-hover:grayscale-0 {className}' icon={src} />
   {:else if name}
     <PIcon className='transition grayscale group-hover:grayscale-0 opacity-50 group-hover:opacity-100 {className}' name={name} type='item' />
   {/if}

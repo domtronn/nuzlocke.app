@@ -1,7 +1,7 @@
 <script>
   import '../../app.css'
   import { Footer, CookieBanner } from '$c/navs'
-  import { dev, browser } from '$app/env'
+  import { dev, browser } from '$app/environment'
 </script>
 
 <svelte:head>

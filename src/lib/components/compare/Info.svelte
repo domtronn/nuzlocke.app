@@ -3,8 +3,8 @@
 
   const [team, opp] = pokemon
 
-  import Icon from 'svelte-icons-pack'
-  import Shield from 'svelte-icons-pack/bs/BsShield'
+  import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
+  import { Shield } from '$icons'
 
   import TypeBadge from '$lib/components/type-badge.svelte'
   import { Tooltip } from '$lib/components/core'
@@ -26,7 +26,7 @@
   class='relative text-center w-1/2 md:w-auto md:mr-4 tracking-tighter'
 >
   <span class=text-tiny>Max dmg</span>
-  <Icon size=2.2rem className='fill-current mx-auto' src={Shield} />
+  <Icon inline={true} height=2.2rem class='fill-current mx-auto' icon={Shield} />
   <span class='cursor-help absolute text-2xl -mt-2 font-mono top-8 -translate-x-1/2'>
     <Tooltip> Based on {opp.name}'s moveset </Tooltip>
 

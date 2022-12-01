@@ -1,10 +1,10 @@
-import Ball from 'svelte-icons-pack/cg/CgPokemon'
-import Gift from 'svelte-icons-pack/bi/BiSolidGift'
-import Traded from 'svelte-icons-pack/cg/CgArrowsExchange'
-import Missed from 'svelte-icons-pack/ri/RiWeatherWindyLine'
-import Deceased from 'svelte-icons-pack/fa/FaSolidSkullCrossbones'
-import Shiny from 'svelte-icons-pack/wi/WiStars'
-import Trash from 'svelte-icons-pack/ri/RiSystemDeleteBin5Fill'
+import { Ball } from '$icons'
+import { Gift } from '$icons'
+import { Traded } from '$icons'
+import { Missed } from '$icons'
+import { Deceased } from '$icons'
+import { Shiny } from '$icons'
+import { Trash } from '$icons'
 
 export const NuzlockeStates = {
   1: { id: 1, state: 'Captured', icon: Ball },

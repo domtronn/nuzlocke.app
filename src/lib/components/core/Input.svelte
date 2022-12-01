@@ -1,6 +1,6 @@
 <script>
   export let name, value = null, color = '', className = '', placeholder = '', icon, rounded = false
-  import Icon from 'svelte-icons-pack'
+  import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
   name = name || placeholder
 </script>
 
@@ -18,7 +18,7 @@
   />
 {#if icon}
   <span>
-    <Icon src={icon} className='fill-current absolute left-0 top-1/2 -translate-y-1/2 ml-3' />
+    <Icon inline={true} icon={icon} class='fill-current absolute left-0 top-1/2 -translate-y-1/2 ml-3' />
   </span>
 {/if}
 <slot />

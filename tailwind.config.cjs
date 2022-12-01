@@ -1,8 +1,7 @@
-const colors = require('tailwindcss/colors')
+const colors = require('tailwindcss/colors');
 
 const config = {
-  mode: 'jit',
-  purge: ['./src/**/*.{html,js,svelte,ts}'],
+  content: ['./src/**/*.{html,js,svelte,ts}'],
 
   theme: {
     extend: {
@@ -16,7 +15,7 @@ const config = {
       animation: {
         'ping-slow': 'ping 3s ease infinite',
         'spin-slow': 'spin 3s linear infinite',
-        'spin-slow-2': 'spin 4s linear infinite', 
+        'spin-slow-2': 'spin 4s linear infinite',
         'full-pulse': 'full-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite'
       },
       dropShadow: {
@@ -25,11 +24,11 @@ const config = {
       scale: {
         200: '2',
         250: '2.5'
-      }, 
+      },
       colors: {
         orange: colors.orange,
         lime: colors.lime,
-        gray: colors.trueGray
+        gray: colors.neutral
       }
     }
   },

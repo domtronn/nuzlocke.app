@@ -8,11 +8,11 @@
   const dispatch = createEventDispatcher()
 
   import Portal from 'svelte-portal/src/Portal.svelte'
-  import Icon from 'svelte-icons-pack'
+  import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
 
-  import X from 'svelte-icons-pack/bi/BiX'
-  import Menu from 'svelte-icons-pack/bi/BiMenu'
-  import ArrowToTop from 'svelte-icons-pack/bi/BiArrowToTop'
+  import { X } from '$icons'
+  import { Menu } from '$icons'
+  import { ArrowToTop } from '$icons'
 
   export let route = [], className = ''
   export let show = false
@@ -35,7 +35,7 @@
     aria-label={show ? 'Close menu' : 'Open menu'}
     class='h-full transition text-white sm:text-gray-600 dark:text-black md:dark:text-gray-400 md:dark:hover:text-gray-100 w-11 h-11 flex items-center justify-center rounded-full bg-gray-900 shadow-lg sm:shadow-none dark:bg-white sm:bg-transparent dark:sm:bg-transparent text-center {className}'
   >
-    <Icon size='1.2rem' src={show ? X : Menu} className='fill-current transform scale-150 sm:transform-none' />
+    <Icon inline={true} height='1.2rem' icon={show ? X : Menu} class='fill-current transform scale-150 sm:transform-none' />
   </button>
 </Portal>
 
@@ -44,7 +44,7 @@
       class='fixed bg-gray-50 dark:bg-gray-900 border-l-2 border-gray-200 dark:border-gray-600 h-full top-1/2 right-0 -translate-y-1/2 px-8 py-4 overflow-y-scroll text-gray-600 dark:text-gray-400 {className}'
   >
     <button on:click={_ => show = !show} >
-      <Icon src={X} size='1.8rem' className='-ml-2 mb-2 fill-current transition-colors hover:cursor-pointer text-gray-800 hover:text-black dark:text-gray-500 dark:hover:text-gray-200' />
+      <Icon inline={true} icon={X} height='1.8rem' class='-ml-2 mb-2 fill-current transition-colors hover:cursor-pointer text-gray-800 hover:text-black dark:text-gray-500 dark:hover:text-gray-200' />
     </button>
 
     <br />
@@ -56,7 +56,7 @@
       }}
       class='text-sm -ml-6 -translate-x-0.5 inline-flex items-center gap-x-1 mt-2 underline transition hover:text-black dark:hover:text-gray-200 hover:cursor-pointer'
     >
-      <Icon src={ArrowToTop} size='1.3em' className='fill-current ml-1 -mr-.5' />
+      <Icon inline={true} icon={ArrowToTop} height='1.3em' class='fill-current ml-1 -mr-.5' />
       Back to top
     </span>
 

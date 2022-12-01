@@ -9,8 +9,8 @@
   import { Tooltip } from '$lib/components/core'
   import { CompareSummary } from './'
 
-  import Icon from 'svelte-icons-pack'
-  import Info from 'svelte-icons-pack/ri/RiSystemInformationLine'
+  import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
+  import { Info } from '$icons'
 
   const moves = (opp?.original?.moves || []).reduce((acc, it) => ({ ...acc, [it.name]: it }), {})
   const lvl = opp?.original?.level
@@ -18,7 +18,7 @@
 
 <ul class='relative grid grid-cols-4 w-full md:mt-2 text-sm md:text-xs'>
   <div class='absolute top-2 right-4 lg:top-0 text-gray-400 dark:text-gray-600 cursor-help text-lg'>
-    <Icon src={Info} className=fill-current />
+    <Icon inline={true} icon={Info} class=fill-current />
     <Tooltip>
       Damage calculations are estimates
       {#if lvl.startsWith('+') || lvl.startsWith('-')}

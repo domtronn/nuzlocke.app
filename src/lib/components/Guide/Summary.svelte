@@ -5,13 +5,13 @@
   import { PIcon, Tooltip } from '$c/core'
   import TypeBadge from '$c/type-badge.svelte'
 
-  import Icon from 'svelte-icons-pack'
-  import Link from 'svelte-icons-pack/bi/BiLink'
+  import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
+  import { Link } from '$icons'
 </script>
 
 <h2 id=encounters>
   <a title='{game.title} Encounters' href='{path}#encounters'>
-    <Icon src={Link} size=1.8rem className=fill-current />
+    <Icon inline={true} icon={Link} height=1.8rem class=fill-current />
   </a>
   {game.title} Encounters
 </h2>
@@ -50,7 +50,7 @@
       <h3 aria-hidden>
         <span>
           <a title='{capitalise(type)} Pokémon' href='{path}#{toId.encounter(type)}'>
-            <Icon src={Link} size=1.8rem className=fill-current />
+            <Icon inline={true} icon={Link} height=1.8rem class=fill-current />
           </a>
           <span class=figure>{encounters.length}</span>{capitalise(type)} Pokémon
         </span>

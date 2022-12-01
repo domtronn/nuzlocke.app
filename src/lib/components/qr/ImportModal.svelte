@@ -4,17 +4,17 @@
   import { page } from '$app/stores'
   import { fly } from 'svelte/transition'
 
-  import Icon from 'svelte-icons-pack'
-  import QR from 'svelte-icons-pack/cg/CgQr'
-  import QRCode from 'svelte-icons-pack/ri/RiDeviceQrCodeLine'
-  import Share from 'svelte-icons-pack/ri/RiSystemShareForwardLine'
-  import Floppy from 'svelte-icons-pack/im/ImFloppyDisk'
+  import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
+  import { QR } from '$icons'
+  import { QRCode } from '$icons'
+  import { Share } from '$icons'
+  import { Floppy } from '$icons'
 
-  import Transfer from 'svelte-icons-pack/bi/BiTransfer'
-  import Mobile from 'svelte-icons-pack/im/ImMobile2'
-  import Desktop from 'svelte-icons-pack/io/IoDesktopSharp'
+  import { Transfer } from '$icons'
+  import { Mobile } from '$icons'
+  import { Desktop } from '$icons'
 
-  import Error from 'svelte-icons-pack/bi/BiErrorAlt'
+  import { Error } from '$icons'
 
   const fixIcon = i => ({ ...i, c: i.c.replace(/fill="#000000"/g, '') })
 
@@ -42,7 +42,7 @@
 
 <section>
   <h1>
-    <Icon src={QR} className='fill-current -ml-4 md:-ml-6 mr-2' />
+    <Icon inline={true} icon={QR} class='fill-current -ml-4 md:-ml-6 mr-2' />
     Import a save
   </h1>
 
@@ -51,16 +51,16 @@
   </p>
 
   <div class='text-4xl inline-flex items-center transform scale-75 md:scale-100 -ml-4 md:my-4'>
-    <Icon size=0.9em src={MobileIcon} className=fill-current />
-    <Icon size=0.6em src={Transfer} className='fill-current mr-2 ml-1' />
-    <Icon src={Desktop} className=fill-current />
+    <Icon inline={true} height=0.9em icon={MobileIcon} class=fill-current />
+    <Icon inline={true} height=0.6em icon={Transfer} class='fill-current mr-2 ml-1' />
+    <Icon inline={true} icon={Desktop} class=fill-current />
   </div>
 
   <ol>
-    <li>Open your <a href='/saves'><mark>Save files <Icon size=0.9em src={FloppyIcon} className=fill-current /></mark></a> on your first device</li>
-    <li>Select the <mark>Share <Icon src={Share} className='fill-current' /></mark> icon on the save you want to transfer</li>
+    <li>Open your <a href='/saves'><mark>Save files <Icon inline={true} height=0.9em icon={FloppyIcon} class=fill-current /></mark></a> on your first device</li>
+    <li>Select the <mark>Share <Icon inline={true} icon={Share} class='fill-current' /></mark> icon on the save you want to transfer</li>
     <li>Open <a href='/transfer'><mark>this page</mark></a> on your second device</li>
-    <li>Scan the <mark>QR code <Icon src={QRCode} className='fill-current' /></mark> with your camera</li>
+    <li>Scan the <mark>QR code <Icon inline={true} icon={QRCode} class='fill-current' /></mark> with your camera</li>
   </ol>
 
   <div class='rounded-xl overflow-hidden max-w-sm'>
@@ -84,7 +84,7 @@
     class='fixed bottom-0 left-0 md:left-1/2 md:-translate-x-1/2 px-4 w-full md:w-auto z-50' >
     <div class='flex flex-col items-center text-center z-50 max-w-base px-6 justify-center text-red-600 bg-red-100 rounded-t-lg py-2 w-full text-sm'>
       <span class='inline-flex items-center'>
-        <Icon src={Error} size=1.8em className='mr-2 fill-current' />
+        <Icon inline={true} icon={Error} height=1.8em class='mr-2 fill-current' />
         <b>Something went wrong</b>
       </span>
       {err}

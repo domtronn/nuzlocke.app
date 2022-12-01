@@ -9,9 +9,9 @@
   import { NuzlockeStates } from '$lib/data/states'
   import { PIcon, IconButton, Picture } from '$lib/components/core'
 
-  import Icon from 'svelte-icons-pack'
-  import Bin from 'svelte-icons-pack/bi/BiTrash'
-  import Share from 'svelte-icons-pack/ri/RiSystemShareForwardLine'
+  import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
+  import { Bin } from '$icons'
+  import { Share } from '$icons'
 
   let ShareModal
   onMount(_ => {
@@ -54,7 +54,7 @@
         {(available || []).length}
         <PIcon className='transition group-hover:grayscale-0 grayscale mr-2 -mt-1' type='item' name='poke-ball' />
         {(deceased || []).length}
-        <Icon className='ml-1 fill-current' src={NuzlockeStates[5].icon} />
+        <Icon inline={true} class='ml-1 fill-current' icon={NuzlockeStates[5].icon} />
       </span>
     </div>
   </div>

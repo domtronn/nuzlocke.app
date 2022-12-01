@@ -1,8 +1,8 @@
 <script>
   export let max, stat, val, mod = 1, className = ''
 
-  import Icon from 'svelte-icons-pack'
-  import Priority from 'svelte-icons-pack/bi/BiSolidChevronUp'
+  import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
+  import { Chevron as Priority } from '$icons'
 
   let c
   if (val < 50) c = 'poor'
@@ -19,7 +19,7 @@
   class:neg={mod < 1}
 >
     {#if mod !== 1}
-      <Icon className='fill-current {mod < 1 ? 'transform rotate-180' : ''}' src={Priority} />
+      <Icon inline={true} class='fill-current {mod < 1 ? 'transform rotate-180' : ''}' icon={Priority} />
     {/if}
     {stat}
 </span>
