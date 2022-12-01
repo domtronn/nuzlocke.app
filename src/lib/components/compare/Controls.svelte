@@ -70,7 +70,7 @@
 </div>
 {/if}
 
-<style>
+<style lang="postcss">
   button.page {
     @apply z-50 p-3 text-gray-600 hover:text-orange-600 disabled:hover:text-gray-600 disabled:cursor-default transition
   }

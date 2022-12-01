@@ -31,7 +31,7 @@
   <slot />
 </button>
 
-<style>
+<style lang="postcss">
   :root {
     --icb-hover: theme('colors.gray.800');
     --icb-active: theme('colors.gray.900');

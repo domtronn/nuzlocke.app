@@ -29,6 +29,6 @@
   </label>
 {/each}
 
-<style>
+<style lang="postcss">
   input { display: none; }
 </style>

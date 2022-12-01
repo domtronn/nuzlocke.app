@@ -27,7 +27,7 @@
 <span class='{c} {className} transition col-span-3 sm:col-span-1 -ml-1 font-bold text-xs text-right'>{val}</span>
 <div style='width: {100 * val / max}%' class='{c} {className} transition col-span-5 sm:col-span-4 h-2 rounded-md ring-2' />
 
-<style>
+<style lang="postcss">
 
   .pos { color: theme('colors.blue.400'); }
   .neg { color: theme('colors.orange.600'); }

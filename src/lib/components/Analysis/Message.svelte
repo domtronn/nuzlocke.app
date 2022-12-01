@@ -74,7 +74,7 @@
   </p>
 {/if}
 
-<style>
+<style lang="postcss">
   p {
     @apply text-sm text-center max-w-xs mx-auto leading-5;
   }

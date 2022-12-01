@@ -183,7 +183,7 @@
 {@html faqSchema}
 {/key}
 
-<style>
+<style lang="postcss">
 
   :global(button.compare) { display: none; }
   :global(svg.lines) {

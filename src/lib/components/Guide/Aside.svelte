@@ -65,7 +65,7 @@
 
 </aside>
 
-<style>
+<style lang="postcss">
  h3 { @apply text-xl }
 
  ul { @apply divide-y }

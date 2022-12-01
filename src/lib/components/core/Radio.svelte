@@ -15,7 +15,7 @@
   </label>
 {/each}
 
-<style>
+<style lang="postcss">
   label {
     display: flex;
     @apply flex-row-reverse w-24;

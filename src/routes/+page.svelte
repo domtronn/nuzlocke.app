@@ -143,7 +143,7 @@
 
 </main>
 
-<style>
+<style lang="postcss">
   main {
     @apply container mx-auto flex flex-col justify-center mt-16
   }

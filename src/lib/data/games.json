@@ -1,4 +1,22 @@
 {
+  "vi": {
+    "pid": "vi",
+    "lid": "scvi",
+    "logo": "/logos/sword-logo",
+    "title": "Sword",
+    "gen": "IX",
+    "supported": true,
+    "region": "paldea"
+  },
+  "sc": {
+    "pid": "sc",
+    "lid": "scvi",
+    "logo": "/logos/shield-logo",
+    "title": "Scarlet",
+    "gen": "IX",
+    "supported": true,
+    "region": "paldea"
+  },
   "sw": {
     "pid": "sw",
     "lid": "swsh",
@@ -304,7 +322,7 @@
     "supported": true,
     "region": "johto"
   },
-  "fr":  {
+  "fr": {
     "pid": "fr",
     "lid": "frlg",
     "logo": "/logos/fire-red-logo",

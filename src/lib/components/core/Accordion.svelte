@@ -9,7 +9,7 @@
   export let iconClassName = '', className = ''
 </script>
 
-<style>
+<style lang="postcss">
  button span { transition: transform 0.2s ease; }
  [aria-expanded=true] span { transform: rotate(0.25turn); }
 </style>

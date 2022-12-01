@@ -25,7 +25,7 @@
   </div>
 </nav>
 
-<style>
+<style lang="postcss">
   div.grid { @apply grid grid-cols-2 md:grid-cols-5 gap-x-2 gap-y-4 }
 
   nav { @apply relative bg-gray-900 pb-40 mt-40 }

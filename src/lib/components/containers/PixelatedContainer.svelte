@@ -6,7 +6,7 @@
   <slot />
 </div>
 
-<style>
+<style lang="postcss">
 
   @media (min-width:theme('screens.sm')) {
     div {

@@ -34,7 +34,7 @@
     {/if}
 {/if}
 
-<style>
+<style lang="postcss">
   :global(.dark) div { color: theme('colors.gray.900') }
 
   div {

@@ -247,7 +247,7 @@
   </div>
 {/if}
 
-<style>
+<style lang="postcss">
   input { display: none; }
 
   .card-controls {

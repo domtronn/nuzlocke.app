@@ -71,7 +71,7 @@
   {/each}
 </div>
 
-<style>
+<style lang="postcss">
   section { @apply my-6 }
 
   h2, h3 { @apply tracking-widest }

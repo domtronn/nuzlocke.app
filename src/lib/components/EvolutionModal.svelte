@@ -39,7 +39,7 @@
   </div>
 </section>
 
-<style>
+<style lang="postcss">
   @keyframes shake {
     0%, 50% { transform: scale(2.2) rotate(0);}
     5%, 45% { transform: scale(2.2) rotate(-2deg);}

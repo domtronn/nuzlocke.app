@@ -17,7 +17,7 @@
   {/each}
 </div>
 
-<style>
+<style lang="postcss">
   div {
     border-radius: 100%;
     overflow: hidden;

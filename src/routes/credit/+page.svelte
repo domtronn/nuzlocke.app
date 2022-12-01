@@ -96,7 +96,7 @@
   </div>
 </main>
 
-<style>
+<style lang="postcss">
   p {
     margin-bottom: 16px;
     @apply px-0 sm:px-12 md:px-16 text-sm md:text-base

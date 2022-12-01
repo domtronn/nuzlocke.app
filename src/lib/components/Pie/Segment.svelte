@@ -13,7 +13,7 @@
           --b: ${over50 ? '200%;' : '100%;'}`}
   />
 
-<style>
+<style lang="postcss">
   div:after,
   div:before {
     background: var(--color, #ff00aa);

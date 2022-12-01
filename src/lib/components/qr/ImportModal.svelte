@@ -93,7 +93,7 @@
 {/if}
 
 
-<style>
+<style lang="postcss">
   h1 { @apply text-2xl md:text-4xl font-bold inline-flex items-center -mb-2 }
   p{ @apply text-center leading-5 text-sm max-w-xs }
   ol { @apply text-sm leading-4 list-outside list-decimal }

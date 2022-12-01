@@ -81,7 +81,7 @@
   </div>
 {/if}
 
-<style>
+<style lang="postcss">
   
   h1 {
     @apply text-2xl md:text-4xl font-bold inline-flex items-center -mb-2

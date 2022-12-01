@@ -65,7 +65,7 @@
   {/each}
 </main>
 
-<style>
+<style lang="postcss">
   main {
     @apply flex flex-wrap max-w-6xl mx-auto px-4 md:px-12 mt-12 pb-40
   }

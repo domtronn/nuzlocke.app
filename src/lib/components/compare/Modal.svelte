@@ -137,7 +137,7 @@
   {/if}
 </section>
 
-<style>
+<style lang="postcss">
   section { min-width: 100%; }
 
   @media (min-width:theme('screens.sm')) {

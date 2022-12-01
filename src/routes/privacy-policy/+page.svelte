@@ -120,7 +120,7 @@
   </div>
 </main>
 
-<style>
+<style lang="postcss">
   td + td + td,
   th + th + th { display: none; }
   @media (min-width: 640px) {

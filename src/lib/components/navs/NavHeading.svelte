@@ -27,7 +27,7 @@
   </div>
 </nav>
 
-<style>
+<style lang="postcss">
   nav { @apply container mx-auto mb-8 md:mb-2 py-4 -mb-16 sm:text-black sm:bg-transparent; }
 
   :global(.dark) nav { @apply text-gray-200; }

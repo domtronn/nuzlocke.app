@@ -77,6 +77,6 @@
   </section>
 {/if}
 
-<style>
+<style lang="postcss">
   section { z-index: 10000; }
 </style>

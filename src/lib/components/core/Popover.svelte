@@ -41,6 +41,6 @@
   {/if}
 </div>
 
-<style>
+<style lang="postcss">
   div { z-index: 6666; }
 </style>

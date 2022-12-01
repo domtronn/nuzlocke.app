@@ -42,7 +42,7 @@
   {/if}
 </td>
 
-<style>
+<style lang="postcss">
   span { @apply top-1/2 -translate-y-1/2 absolute sm:w-16 w-8 }
   .resist i, .weak i { @apply tracking-tight hidden sm:inline-block }
 

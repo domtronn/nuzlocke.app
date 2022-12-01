@@ -11,7 +11,7 @@
 
 </div>
 
-<style>
+<style lang="postcss">
   .spin {
     @apply origin-center;
     animation: loader 2.4s infinite;

@@ -102,7 +102,7 @@
 {/each}
 
 
-<style>
+<style lang="postcss">
   .lvlcap { @apply absolute top-3 right-0 md:-right-16}
 
   h2, li, div { @apply relative }

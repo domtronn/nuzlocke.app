@@ -46,6 +46,6 @@
   <img src={img} alt='wobuffet' class='-mt-16 w-96 mx-auto drop-shadow-md -translate-y-1/2 z-0' />
 </div>
 
-<style>
+<style lang="postcss">
   img { image-rendering: pixelated; }
 </style>

@@ -10,7 +10,7 @@
   <img class={className} class:pixelated={pixelated} src='{src}.png' {width} {height} {alt} {role} />
 </picture>
 
-<style>
+<style lang="postcss">
   img.pixelated {
     image-rendering: pixelated;
   }

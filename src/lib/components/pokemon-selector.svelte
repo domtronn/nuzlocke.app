@@ -1,7 +1,7 @@
 <script>
   export let id, store, location, locationName = '', type = '', infolink = ''
 
-  import { read, readdata, patch, removelocation } from '$lib/store'
+  import { read, readdata, patch } from '$lib/store'
   import { capitalise } from '$lib/utils/string'
 
   import { fly } from 'svelte/transition'
@@ -14,15 +14,7 @@
 
   import PIcon from '$lib/components/core/PokemonIcon.svelte'
   import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
-  import { Chevron } from '$icons'
-  import { Add } from '$icons'
-  import { Delete } from '$icons'
-  import { Deceased } from '$icons'
-  import { External } from '$icons'
-  import { Bin } from '$icons'
-  import { Dots } from '$icons'
-  import { Map } from '$icons'
-  import { Search } from '$icons'
+  import { Chevron, Add, Delete, Deceased, External, Bin, Dots, Map, Search } from '$icons'
 
   import { createEventDispatcher, onMount, getContext } from 'svelte'
 
@@ -150,13 +142,12 @@
       <AutoComplete
         inset={selected ? true : '2.4em'}
         rounded
-        fetch={search || !suggest ? getAllPkmn : []}
+        fetch={search || !suggest ? getAllPkmn : null}
         items={search || !suggest ? [] : encounterItems}
         bind:search
         bind:selected
         name='{location} Encounter'
         placeholder='Find encounter'
-
         className='col-span-2 w-11/12 sm:w-full'
         >
 
@@ -371,7 +362,7 @@
   </div>
 </SettingsWrapper>
 
-<style>
+<style lang="postcss">
   .dupe {
     @apply opacity-25 grayscale mr-2 text-tiny;
   }

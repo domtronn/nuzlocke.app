@@ -43,7 +43,7 @@
   </span>
 </IconButton>
 
-<style>
+<style lang="postcss">
   span.disabled::before {
     background: none !important;
   }

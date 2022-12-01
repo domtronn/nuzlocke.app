@@ -6,7 +6,9 @@ export default {
     adapter: vercel()
   },
 
-  preprocess: preprocess({
-    postcss: true
-  })
+  preprocess: [
+    preprocess({
+      postcss: true
+    })
+  ]
 };

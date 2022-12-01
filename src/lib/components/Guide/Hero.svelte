@@ -80,7 +80,7 @@
   </div>
 {/if}
 
-<style>
+<style lang="postcss">
   header {
     color: var(--col3);
     background: linear-gradient(150deg, var(--col1), var(--col2));

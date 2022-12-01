@@ -40439,6 +40439,271 @@
       ]
     }
   ],
+  "scarlet": [
+    {
+      "type": "route",
+      "name": "Starter",
+      "encounters": [
+        "fuecoco",
+        "quaxly",
+        "sprigatito"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Poco Path",
+      "encounters": [
+        "hoppip",
+        "fletchling",
+        "scatterbug",
+        "tarountula",
+        "lechonk",
+        "pawmi",
+        "houndour"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "# Los Platos *"
+    },
+    {
+      "type": "route",
+      "name": "Inlet Grotto",
+      "encounters": [
+        "diglett",
+        "yungoos",
+        "houndour"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "South Province - Area 1",
+      "encounters": [
+        "azurill",
+        "bonsly",
+        "bounsweet",
+        "buizel",
+        "chewtle",
+        "combee",
+        "deerling",
+        "drowzee",
+        "fidough",
+        "flamigo",
+        "fletchinder",
+        "fletchling",
+        "gastly",
+        "gimmighoul",
+        "happiny",
+        "hoppip",
+        "igglybuff",
+        "lechonk",
+        "magikarp",
+        "oricorio",
+        "pachirisu",
+        "pichu",
+        "psyduck",
+        "ralts",
+        "scatterbug",
+        "shroodle",
+        "skwovet",
+        "spewpa",
+        "sunkern",
+        "surskit",
+        "vigoroth",
+        "wiglett",
+        "wingull",
+        "wooper"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "# Mesagoza *"
+    },
+    {
+      "type": "route",
+      "name": "# Naranja/Uva Academy **"
+    },
+    {
+      "type": "route",
+      "name": "Pokemon League"
+    },
+    {
+      "type": "route",
+      "name": "South Province - Area 2",
+      "encounters": [
+        "arrokuda",
+        "azurill",
+        "bronzor",
+        "buizel",
+        "chewtle",
+        "combee",
+        "diglett",
+        "fidough",
+        "fletchling",
+        "gimmighoul",
+        "happiny",
+        "hoppip",
+        "igglybuff",
+        "jigglypuff",
+        "kricketot",
+        "magikarp",
+        "makuhita",
+        "mareep",
+        "maschiff",
+        "meowth",
+        "misdreavus[violetonly]",
+        "nacli",
+        "pichu",
+        "pikachu",
+        "psyduck",
+        "rockruff",
+        "skwovet",
+        "smoliv",
+        "staravia",
+        "starly",
+        "sunkern",
+        "tadbulb",
+        "tinkatink",
+        "vespiquen"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "South Province - Area 3"
+    },
+    {
+      "type": "route",
+      "name": "Cortondo"
+    },
+    {
+      "type": "route",
+      "name": "Artazon *"
+    },
+    {
+      "type": "route",
+      "name": "West Province - Area 1"
+    },
+    {
+      "type": "route",
+      "name": "Cascarrafa"
+    },
+    {
+      "type": "route",
+      "name": "South Province - Area 4"
+    },
+    {
+      "type": "route",
+      "name": "East Province - Area 1"
+    },
+    {
+      "type": "route",
+      "name": "Asado Desert"
+    },
+    {
+      "type": "route",
+      "name": "East Province - Area 2"
+    },
+    {
+      "type": "route",
+      "name": "Levincia"
+    },
+    {
+      "type": "route",
+      "name": "South Province - Area 5"
+    },
+    {
+      "type": "route",
+      "name": "East Province - Area 3"
+    },
+    {
+      "type": "route",
+      "name": "West Province - Area 2"
+    },
+    {
+      "type": "route",
+      "name": "Porto Marinada *"
+    },
+    {
+      "type": "route",
+      "name": "Zapapico *"
+    },
+    {
+      "type": "route",
+      "name": "Tagree Thicket"
+    },
+    {
+      "type": "route",
+      "name": "Dalizapa Passage"
+    },
+    {
+      "type": "route",
+      "name": "West Province - Area 3"
+    },
+    {
+      "type": "route",
+      "name": "Medali *"
+    },
+    {
+      "type": "route",
+      "name": "Glaseado Mountain"
+    },
+    {
+      "type": "route",
+      "name": "Montenevera *"
+    },
+    {
+      "type": "route",
+      "name": "Alfornada Cavern"
+    },
+    {
+      "type": "route",
+      "name": "Alfornada *"
+    },
+    {
+      "type": "route",
+      "name": "South Province - Area 6"
+    },
+    {
+      "type": "route",
+      "name": "North Province - Area 3"
+    },
+    {
+      "type": "route",
+      "name": "North Province - Area 1"
+    },
+    {
+      "type": "route",
+      "name": "North Province - Area 2"
+    },
+    {
+      "type": "route",
+      "name": "Casseroya Lake"
+    },
+    {
+      "type": "route",
+      "name": "Socarrat Trail"
+    },
+    {
+      "type": "route",
+      "name": "West Paldean Sea"
+    },
+    {
+      "type": "route",
+      "name": "South Paldean Sea"
+    },
+    {
+      "type": "route",
+      "name": "East Paldean Sea"
+    },
+    {
+      "type": "route",
+      "name": "North Paldean Sea"
+    },
+    {
+      "type": "route",
+      "name": "Area Zero"
+    }
+  ],
   "sh": [
     {
       "type": "route",
@@ -56299,6 +56564,7 @@
       ]
     }
   ],
+  "violet": [],
   "wh": [
     {
       "type": "route",

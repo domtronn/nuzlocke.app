@@ -77,7 +77,7 @@
   </AutoComplete>
 </div>
 
-<style>
+<style lang="postcss">
   :root {
     --auc-inset: theme('spacing.3');
 

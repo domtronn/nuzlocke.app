@@ -23,7 +23,7 @@
 {/if}
 <slot />
 
-<style>
+<style lang="postcss">
   :root {
     --inp-focus: theme('colors.black');
     --inp-focus-2: theme('colors.gray.500');

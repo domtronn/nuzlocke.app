@@ -85,7 +85,7 @@
 
 </div>
 
-<style>
+<style lang="postcss">
   img.flip { animation: bob-left 4.5s ease 0.3s infinite; }
   img {
     animation: bob 5.5s ease 0.3s infinite;

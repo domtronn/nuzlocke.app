@@ -106,7 +106,7 @@
 
 <div class=fauxnav />
 
-<style>
+<style lang="postcss">
   .fauxnav { @apply h-12; }
 
   nav {

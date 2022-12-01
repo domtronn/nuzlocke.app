@@ -44,7 +44,7 @@
 
 </div>
 
-<style>
+<style lang="postcss">
   span:focus ~ :global(*) { opacity: 0; }
   @media (max-width:theme('screens.sm')) {
     span { min-width: 480px; user-select: text; }

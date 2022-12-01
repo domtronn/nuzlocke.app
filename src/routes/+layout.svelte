@@ -1,8 +1,10 @@
 <script>
+  import "../app.postcss";
+  import "../app.postcss";
   import { page } from '$app/stores'
   let path = $page.url.pathname;
 
-  import '../app.css';
+  import "../app.postcss";
   import { setContext } from 'svelte';
   import { browser, dev } from '$app/environment';
 

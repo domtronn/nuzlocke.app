@@ -17,7 +17,7 @@ export { default as Bin } from '@iconify-icons/gg/trash';
 export { default as Trash } from '@iconify-icons/gg/trash';
 
 export { default as Delete } from '@iconify-icons/ri/delete-back-2-line';
-export { default as Dots } from '@iconify-icons/ph/dots-three-vertical';
+export { default as Dots } from '@iconify-icons/ph/dots-three-vertical-bold';
 export { default as Caret } from '@iconify-icons/ph/caret-down-fill'; // Previous DownArr
 export { default as CaretRight } from '@iconify-icons/ph/caret-right-fill'; // Previous RightArr
 export { default as X } from '@iconify-icons/ri/close-fill';
