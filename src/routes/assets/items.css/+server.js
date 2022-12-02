@@ -1,4 +1,4 @@
-import items from '../items/+server.js';
+import items from '../items/_data.js';
 
 const extract = (id, str) => {
   try {

@@ -10,7 +10,7 @@
   <div class=g-container>
     <h2>Other Nuzlocke Guides</h2>
 
-    <div class=grid>
+    <div class=g-grid>
       {#each order as id}
         <div>
           <h3>{id.startsWith('rom') ? 'Rom hacks' : `Gen ${id}`}</h3>
@@ -26,7 +26,7 @@
 </nav>
 
 <style lang="postcss">
-  div.grid { @apply grid grid-cols-2 md:grid-cols-5 gap-x-2 gap-y-4 }
+  div.g-grid { @apply grid grid-cols-2 md:grid-cols-5 gap-x-2 gap-y-4 }
 
   nav { @apply relative bg-gray-900 pb-40 mt-40 }
 

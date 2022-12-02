@@ -1,4 +1,4 @@
-import minifiedItems from './_data.js';
+import minifiedItems from '../_data.js';
 
 import games from '$lib/data/games.json';
 import leagues from '$lib/data/league.json';

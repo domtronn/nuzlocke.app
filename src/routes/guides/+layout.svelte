@@ -1,5 +1,5 @@
 <script>
-  import '../../app.css'
+  import '../../app.postcss'
   import { Footer, CookieBanner } from '$c/navs'
   import { dev, browser } from '$app/environment'
 </script>
