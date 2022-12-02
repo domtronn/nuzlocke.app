@@ -111,14 +111,14 @@ const toPokemon = (p, patches = {}) => {
   });
 };
 
-export async function GET({ params, query }) {
+export async function GET({ params, url }) {
   const { gen, id } = params;
   const game = games[gen];
 
   if (!game) return { status: 404 };
 
   const patch = patches[gen] || {};
-  const starter = query.get('starter');
+  const starter = url.searchParams.get('starter');
   const leader = path([game.lid || game.pid, id], leaders);
 
   if (!leader) return;

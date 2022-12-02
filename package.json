@@ -5,10 +5,11 @@
   "scripts": {
     "lint": "eslint src",
     "dev": "vite dev",
-    "build": "svelte-kit build --verbose",
-    "preview": "svelte-kit preview"
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "devDependencies": {
+    "@iconify-icons/mdi": "^1.2.34",
     "@sveltejs/adapter-vercel": "next",
     "@sveltejs/kit": "next",
     "autoprefixer": "^10.4.7",

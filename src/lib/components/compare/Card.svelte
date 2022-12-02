@@ -53,7 +53,7 @@
 
       {#if def?.original?.held}
         {#key def.original.held.name}
-          <div style='transform: var(--tw-transform) scaleX(-1)' class='absolute right-0 top-1/2 -translate-y-3 -translate-x-5 z-20 p-1 mb-1 flex flex-col cursor-help items-center'>
+          <div style='transform: translate(var(--tw-translate-x),var(--tw-translate-y)) scaleX(-1)' class='absolute right-0 top-1/2 -translate-y-3 -translate-x-5 z-20 p-1 mb-1 flex flex-col cursor-help items-center'>
             <Tooltip>
               {def.original.held.name}: {def.original.held.effect.replace(/^Held: +/g, '')}
             </Tooltip>
@@ -93,15 +93,15 @@
   }
 
   @keyframes bob {
-    0%, 100% {transform: var(--tw-transform) scaleX(1) scaleY(1);}
-    25%, 75% { transform: var(--tw-transform) scaleX(1.03) scaleY(0.97); }
-    50% { transform: var(--tw-transform) scaleX(0.99) scaleY(1.03); }
+    0%, 100% {transform: translate(var(--tw-translate-x),var(--tw-translate-y)) scaleX(1) scaleY(1);}
+    25%, 75% { transform: translate(var(--tw-translate-x),var(--tw-translate-y)) scaleX(1.03) scaleY(0.97); }
+    50% { transform: translate(var(--tw-translate-x),var(--tw-translate-y)) scaleX(0.99) scaleY(1.03); }
   }
 
   @keyframes bob-left {
-    0%, 100% {transform: var(--tw-transform) scaleX(-1) scaleY(1);}
-    25%, 75% { transform: var(--tw-transform) scaleX(-1.02) scaleY(0.97); }
-    50% { transform: var(--tw-transform) scaleX(-0.96) scaleY(1.01); }
+    0%, 100% {transform: translate(var(--tw-translate-x),var(--tw-translate-y)) scaleX(-1) scaleY(1);}
+    25%, 75% { transform: translate(var(--tw-translate-x),var(--tw-translate-y)) scaleX(-1.02) scaleY(0.97); }
+    50% { transform: translate(var(--tw-translate-x),var(--tw-translate-y)) scaleX(-0.96) scaleY(1.01); }
   }
 
   .separator { height: theme('borderWidth.2'); }

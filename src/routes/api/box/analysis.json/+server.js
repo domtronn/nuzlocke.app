@@ -1,6 +1,6 @@
 import { types } from '$lib/data/types';
-import { moveResistance } from '../battle/advice.json/_type-advice';
-import { typeAdvantages } from '../battle/advice.json/_types';
+import { moveResistance } from '../../battle/advice.json/_type-advice';
+import { typeAdvantages } from '../../battle/advice.json/_types';
 
 /**
  * Calculates the box coverage for types

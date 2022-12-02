@@ -116,6 +116,7 @@ const props = [
   'total',
   'num'
 ];
+
 export const filterdata = (o) =>
   Object.values(o).map((p) => ({
     ...pick(props, p),

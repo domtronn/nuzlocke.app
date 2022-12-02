@@ -1,9 +1,4 @@
-import { HP } from '$icons';
-import { Atk } from '$icons';
-import { Spa } from '$icons';
-import { Def } from '$icons';
-import { Spd } from '$icons';
-import { Spe } from '$icons';
+import { HP, Atk, Spa, Def, Spd, Spe } from '$icons';
 
 export const StatIconMap = {
   hp: HP,

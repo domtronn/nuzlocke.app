@@ -74,6 +74,13 @@
   dependencies:
     "@iconify/types" "*"
 
+"@iconify-icons/mdi@^1.2.34":
+  version "1.2.34"
+  resolved "https://registry.yarnpkg.com/@iconify-icons/mdi/-/mdi-1.2.34.tgz#3fd6eb923a477c7577cbd69f87c2549038192fb7"
+  integrity sha512-3A7ezd/9mQKM9KEqR8QIfJaBWJ/HfZ3u45oy5/yU6FlTQrfRx+f+e0hD0nwAkbOptZmz2sFsGIfwBdX4Kl+JIw==
+  dependencies:
+    "@iconify/types" "*"
+
 "@iconify-icons/ph@^1.2.3":
   version "1.2.3"
   resolved "https://registry.yarnpkg.com/@iconify-icons/ph/-/ph-1.2.3.tgz#dc759a22fa6b747e4bc6292be6e1c9a03c359c34"

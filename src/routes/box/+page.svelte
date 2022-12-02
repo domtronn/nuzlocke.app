@@ -110,7 +110,7 @@
 {:else}
   <div out:fade|local={{ duration: 250 }} in:fade|local={{ duration: 250, delay: 300 }} class='container mx-auto'>
     <div class='flex flex-col mx-auto items-center justify-center'>
-      <main role='main' class='w-full sm:w-3/4 flex flex-col gap-y-4 py-6 pb-32 px-4 md:px-8 overflow-hidden'>
+      <main class='w-full sm:w-3/4 flex flex-col gap-y-4 py-6 pb-32 px-4 md:px-8 overflow-hidden'>
 
         <div class='relative mb-6 -mt-6 sm:-my-2'>
           <AnalysisModal box={Object.values(Pokemon)} />

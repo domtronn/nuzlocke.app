@@ -44,6 +44,8 @@ export { default as Gift } from '@iconify-icons/ph/gift';
 export { default as Traded } from '@iconify-icons/gg/arrows-exchange';
 export { default as Missed } from '@iconify-icons/ri/windy-line';
 
+export { default as LongGrass } from '@iconify-icons/mdi/grass';
+
 // UI Icons - Things like hearts & visual
 export { default as Add } from '@iconify-icons/gg/add-r';
 export { default as Ball } from '@iconify-icons/gg/pokemon';

@@ -6,7 +6,7 @@
   import { savedGames, createGame } from '$lib/store'
   import { ScreenContainer } from '$lib/components/containers'
 
-  import { Button, Tabs, AutoComplete, Input, Picture } from '$lib/components/core'
+  import { Button, Tabs, AutoComplete, Input, Picture, Tooltip } from '$lib/components/core'
 
   import { File } from '$icons'
   import Games from '$lib/data/games.json'
@@ -22,6 +22,19 @@
 
     savedGames.update(createGame(gameName, selected))
     window.location = '/game'
+  }
+
+  const handleGenGame = () => {
+    if (!selectedGame.supported)
+      return alert(`Sorry, ${selectedGame.title} is currently not supported`)
+
+    fetch(`/api/route/generate/${selected}.json`)
+      .then(res => res.text())
+      .then((res) => {
+        savedGames.update(createGame(gameName, selected, res))
+        window.location = '/game'
+      })
+
   }
 
   let hoverActive = false
@@ -82,6 +95,13 @@
     <Button rounded disabled={disabled} on:click={handleNewGame}>
       Create game
     </Button>
+    <div>
+      <Tooltip>Generate a game with precalculated encounters, useful for games like Sword & Shield which don't have traditional encounters</Tooltip>
+      <Button rounded disabled={disabled} on:click={handleGenGame}>
+        Precalculate
+      </Button>
+    </div>
+
   </div>
 
   <Tabs name='gens' className='hidden sm:flex' tabs={gens} bind:selected={gen} />

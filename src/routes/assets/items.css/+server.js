@@ -1,4 +1,4 @@
-import items from './items';
+import items from '../items/+server.js';
 
 const extract = (id, str) => {
   try {
@@ -10,8 +10,8 @@ const extract = (id, str) => {
   }
 };
 
-export async function GET({ query }) {
-  if (!query.get('i'))
+export async function GET({ url }) {
+  if (!url.searchParams.get('i'))
     return {
       status: 200,
       body: items,
@@ -21,7 +21,7 @@ export async function GET({ query }) {
       }
     };
 
-  const ilist = query.get('i').split(',');
+  const ilist = url.searchParams.get('i').split(',');
   const criticalCss = ilist.reduce((acc, it) => acc + extract(it, items), '');
 
   return new Response(criticalCss, {
