@@ -18,8 +18,11 @@
 
   import { createEventDispatcher, onMount, getContext } from 'svelte'
 
-  let selected, nickname, status, nature, search, hidden
+  let selected, nickname, status, nature, hidden
   let prevstatus = 'loading'
+
+  // Search text bindings for ACs
+  let search, statusSearch, natureSearch
 
   export let encounters = []
   let encounterItems = []
@@ -95,6 +98,7 @@
 
   function handleClear () {
     status = nickname = selected = null
+    search = statusSearch = natureSearch = null
     store.update(patch({ [location]: {} }))
   }
 
@@ -225,6 +229,7 @@
         wide
         rounded
         items={Object.values(NuzlockeStates)}
+        bind:search={statusSearch}
         bind:selected={status}
         name='{location} Status'
         placeholder=Status
@@ -250,6 +255,7 @@
     wide
     rounded
     items={Natures}
+    bind:search={natureSearch}
     bind:selected={nature}
     name='{location} Nature'
     placeholder=Nature
