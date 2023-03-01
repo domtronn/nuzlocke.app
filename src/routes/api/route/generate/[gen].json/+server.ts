@@ -69,7 +69,7 @@ const generateGame = (routes: Route[]): Record<string, Result | string[]> => {
         ...acc,
         [it.name]: {
           id,
-          pokemon: encounter,
+          pokemon: PokemonMap[normalise(encounter)].alias,
           location: it.name,
           hidden: true
         }
