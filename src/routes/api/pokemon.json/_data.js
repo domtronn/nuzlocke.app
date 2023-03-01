@@ -1,5 +1,5 @@
 import Pokemon from './_pokemon.json';
-import { filterObj, mapObj } from '$lib/utils/arr';
+import { mapObj } from '$lib/utils/arr';
 import { pick } from 'ramda';
 
 const FormMap = {
@@ -91,14 +91,12 @@ export const format = ({ name, alias }) => {
 
 export const sumObj = (o) => Object.values(o).reduce((acc, it) => acc + it, 0);
 
-export default mapObj(
-  Pokemon,
+export default Pokemon.map(
   (pkmn) => ({
     ...pkmn,
     imgId: pkmn.imgId,
     label: format(pkmn)
-  })
-);
+  }))
 
 const props = [
   'evos',

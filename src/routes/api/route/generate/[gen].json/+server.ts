@@ -1,6 +1,12 @@
 import Routes from '$lib/data/routes.json';
 import Pokemon from '../../../pokemon.json/_data.js';
 
+const normalise = id => id.replace(/-/g, '')
+const PokemonMap = Pokemon.reduce((acc, it) => ({
+    ...acc,
+    [normalise(it.alias)]: it
+}), {})
+
 enum RouteType {
   route = 'route',
   gym = 'gym'
@@ -41,18 +47,24 @@ const generateGame = (routes: Route[]): Record<string, Result | string[]> => {
   return routes
     .filter((r) => r.type === RouteType.route)
     .reduce((acc, it, id) => {
-      const validEncounters = (it as IRoute).encounters.filter((e) => {
-        const evoline = Pokemon[e.replace(/-/g, '')].evoline;
+        const validEncounters = (it as IRoute).encounters?.filter((e) => {
+            if (!e) return
+            if (!PokemonMap[normalise(e)]) console.log(e)
 
-        return !seen.has(evoline);
+            try {
+                const evoline = PokemonMap[normalise(e)].evoline;
+                return !seen.has(evoline);
+            } catch (err) {
+                console.log('"' + normalise(e) + '"', err)
+            }
       });
 
-      if (!validEncounters.length) return acc;
+      if (!validEncounters || !validEncounters.length) return acc;
 
       const encounter =
         validEncounters[Math.floor(Math.random() * validEncounters.length)];
 
-      seen.add(Pokemon[encounter.replace(/-/g, '')].evoline);
+        seen.add(PokemonMap[normalise(encounter)].evoline);
       return {
         ...acc,
         [it.name]: {
