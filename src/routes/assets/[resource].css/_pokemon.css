@@ -1,0 +1,4051 @@
+i.pkmn {
+  display: inline-block;
+  width: 40px;
+  height: 0;
+  line-height: 11px;
+  vertical-align: middle;
+  margin: 0 .5em 0 0;
+  backface-visibility: hidden;
+}
+
+.pkmn::before {
+  display: block;
+  content: '';
+  width: 68px;
+  height: 56px;
+  position: absolute;
+  top: -14px;
+  left: -4px;
+}
+
+.pkmn.bulbasaur::before {
+  background-position: -68px 0
+}
+
+.pkmn.ivysaur::before {
+  background-position: -136px 0
+}
+
+.pkmn.venusaur::before {
+  background-position: -204px 0
+}
+
+.pkmn.charmander::before {
+  background-position: -272px 0
+}
+
+.pkmn.charmeleon::before {
+  background-position: -340px 0
+}
+
+.pkmn.charizard::before {
+  background-position: -408px 0
+}
+
+.pkmn.squirtle::before {
+  background-position: -476px 0
+}
+
+.pkmn.wartortle::before {
+  background-position: -544px 0
+}
+
+.pkmn.blastoise::before {
+  background-position: -612px 0
+}
+
+.pkmn.caterpie::before {
+  background-position: -680px 0
+}
+
+.pkmn.metapod::before {
+  background-position: -748px 0
+}
+
+.pkmn.butterfree::before {
+  background-position: -816px 0
+}
+
+.pkmn.weedle::before {
+  background-position: -884px 0
+}
+
+.pkmn.kakuna::before {
+  background-position: -952px 0
+}
+
+.pkmn.beedrill::before {
+  background-position: -1020px 0
+}
+
+.pkmn.pidgey::before {
+  background-position: -1088px 0
+}
+
+.pkmn.pidgeotto::before {
+  background-position: -1156px 0
+}
+
+.pkmn.pidgeot::before {
+  background-position: -1224px 0
+}
+
+.pkmn.rattata::before {
+  background-position: -1292px 0
+}
+
+.pkmn.raticate::before {
+  background-position: -1360px 0
+}
+
+.pkmn.spearow::before {
+  background-position: -1428px 0
+}
+
+.pkmn.fearow::before {
+  background-position: -1496px 0
+}
+
+.pkmn.ekans::before {
+  background-position: -1564px 0
+}
+
+.pkmn.arbok::before {
+  background-position: -1632px 0
+}
+
+.pkmn.pikachu::before {
+  background-position: -1700px 0
+}
+
+.pkmn.raichu::before {
+  background-position: -1768px 0
+}
+
+.pkmn.sandshrew::before {
+  background-position: -1836px 0
+}
+
+.pkmn.sandslash::before {
+  background-position: -1904px 0
+}
+
+.pkmn.nidoran-f::before {
+  background-position: -1972px 0
+}
+
+.pkmn.nidorina::before {
+  background-position: -2040px 0
+}
+
+.pkmn.nidoqueen::before {
+  background-position: -2108px 0
+}
+
+.pkmn.nidoran-m::before {
+  background-position: 0 -56px;
+}
+
+.pkmn.nidorino::before {
+  background-position: -68px -56px;
+}
+
+.pkmn.nidoking::before {
+  background-position: -136px -56px;
+}
+
+.pkmn.clefairy::before {
+  background-position: -204px -56px;
+}
+
+.pkmn.clefable::before {
+  background-position: -272px -56px;
+}
+
+.pkmn.vulpix::before {
+  background-position: -340px -56px;
+}
+
+.pkmn.ninetales::before {
+  background-position: -408px -56px;
+}
+
+.pkmn.jigglypuff::before {
+  background-position: -476px -56px;
+}
+
+.pkmn.wigglytuff::before {
+  background-position: -544px -56px;
+}
+
+.pkmn.zubat::before {
+  background-position: -612px -56px;
+}
+
+.pkmn.golbat::before {
+  background-position: -680px -56px;
+}
+
+.pkmn.oddish::before {
+  background-position: -748px -56px;
+}
+
+.pkmn.gloom::before {
+  background-position: -816px -56px;
+}
+
+.pkmn.vileplume::before {
+  background-position: -884px -56px;
+}
+
+.pkmn.paras::before {
+  background-position: -952px -56px;
+}
+
+.pkmn.parasect::before {
+  background-position: -1020px -56px;
+}
+
+.pkmn.venonat::before {
+  background-position: -1088px -56px;
+}
+
+.pkmn.venomoth::before {
+  background-position: -1156px -56px;
+}
+
+.pkmn.diglett::before {
+  background-position: -1224px -56px;
+}
+
+.pkmn.dugtrio::before {
+  background-position: -1292px -56px;
+}
+
+.pkmn.meowth::before {
+  background-position: -1360px -56px;
+}
+
+.pkmn.persian::before {
+  background-position: -1428px -56px;
+}
+
+.pkmn.psyduck::before {
+  background-position: -1496px -56px;
+}
+
+.pkmn.golduck::before {
+  background-position: -1564px -56px;
+}
+
+.pkmn.mankey::before {
+  background-position: -1632px -56px;
+}
+
+.pkmn.primeape::before {
+  background-position: -1700px -56px;
+}
+
+.pkmn.growlithe::before {
+  background-position: -1768px -56px;
+}
+
+.pkmn.arcanine::before {
+  background-position: -1836px -56px;
+}
+
+.pkmn.poliwag::before {
+  background-position: -1904px -56px;
+}
+
+.pkmn.poliwhirl::before {
+  background-position: -1972px -56px;
+}
+
+.pkmn.poliwrath::before {
+  background-position: -2040px -56px;
+}
+
+.pkmn.abra::before {
+  background-position: -2108px -56px;
+}
+
+.pkmn.kadabra::before {
+  background-position: 0 -112px;
+}
+
+.pkmn.alakazam::before {
+  background-position: -68px -112px;
+}
+
+.pkmn.machop::before {
+  background-position: -136px -112px;
+}
+
+.pkmn.machoke::before {
+  background-position: -204px -112px;
+}
+
+.pkmn.machamp::before {
+  background-position: -272px -112px;
+}
+
+.pkmn.bellsprout::before {
+  background-position: -340px -112px;
+}
+
+.pkmn.weepinbell::before {
+  background-position: -408px -112px;
+}
+
+.pkmn.victreebel::before {
+  background-position: -476px -112px;
+}
+
+.pkmn.tentacool::before {
+  background-position: -544px -112px;
+}
+
+.pkmn.tentacruel::before {
+  background-position: -612px -112px;
+}
+
+.pkmn.geodude::before {
+  background-position: -680px -112px;
+}
+
+.pkmn.graveler::before {
+  background-position: -748px -112px;
+}
+
+.pkmn.golem::before {
+  background-position: -816px -112px;
+}
+
+.pkmn.ponyta::before {
+  background-position: -884px -112px;
+}
+
+.pkmn.rapidash::before {
+  background-position: -952px -112px;
+}
+
+.pkmn.slowpoke::before {
+  background-position: -1020px -112px;
+}
+
+.pkmn.slowbro::before {
+  background-position: -1088px -112px;
+}
+
+.pkmn.magnemite::before {
+  background-position: -1156px -112px;
+}
+
+.pkmn.magneton::before {
+  background-position: -1224px -112px;
+}
+
+.pkmn.farfetchd::before {
+  background-position: -1292px -112px;
+}
+
+.pkmn.doduo::before {
+  background-position: -1360px -112px;
+}
+
+.pkmn.dodrio::before {
+  background-position: -1428px -112px;
+}
+
+.pkmn.seel::before {
+  background-position: -1496px -112px;
+}
+
+.pkmn.dewgong::before {
+  background-position: -1564px -112px;
+}
+
+.pkmn.grimer::before {
+  background-position: -1632px -112px;
+}
+
+.pkmn.muk::before {
+  background-position: -1700px -112px;
+}
+
+.pkmn.shellder::before {
+  background-position: -1768px -112px;
+}
+
+.pkmn.cloyster::before {
+  background-position: -1836px -112px;
+}
+
+.pkmn.gastly::before {
+  background-position: -1904px -112px;
+}
+
+.pkmn.haunter::before {
+  background-position: -1972px -112px;
+}
+
+.pkmn.gengar::before {
+  background-position: -2040px -112px;
+}
+
+.pkmn.onix::before {
+  background-position: -2108px -112px;
+}
+
+.pkmn.drowzee::before {
+  background-position: 0 -168px;
+}
+
+.pkmn.hypno::before {
+  background-position: -68px -168px;
+}
+
+.pkmn.krabby::before {
+  background-position: -136px -168px;
+}
+
+.pkmn.kingler::before {
+  background-position: -204px -168px;
+}
+
+.pkmn.voltorb::before {
+  background-position: -272px -168px;
+}
+
+.pkmn.electrode::before {
+  background-position: -340px -168px;
+}
+
+.pkmn.exeggcute::before {
+  background-position: -408px -168px;
+}
+
+.pkmn.exeggutor::before {
+  background-position: -476px -168px;
+}
+
+.pkmn.cubone::before {
+  background-position: -544px -168px;
+}
+
+.pkmn.marowak::before {
+  background-position: -612px -168px;
+}
+
+.pkmn.hitmonlee::before {
+  background-position: -680px -168px;
+}
+
+.pkmn.hitmonchan::before {
+  background-position: -748px -168px;
+}
+
+.pkmn.lickitung::before {
+  background-position: -816px -168px;
+}
+
+.pkmn.koffing::before {
+  background-position: -884px -168px;
+}
+
+.pkmn.weezing::before {
+  background-position: -952px -168px;
+}
+
+.pkmn.rhyhorn::before {
+  background-position: -1020px -168px;
+}
+
+.pkmn.rhydon::before {
+  background-position: -1088px -168px;
+}
+
+.pkmn.chansey::before {
+  background-position: -1156px -168px;
+}
+
+.pkmn.tangela::before {
+  background-position: -1224px -168px;
+}
+
+.pkmn.kangaskhan::before {
+  background-position: -1292px -168px;
+}
+
+.pkmn.horsea::before {
+  background-position: -1360px -168px;
+}
+
+.pkmn.seadra::before {
+  background-position: -1428px -168px;
+}
+
+.pkmn.goldeen::before {
+  background-position: -1496px -168px;
+}
+
+.pkmn.seaking::before {
+  background-position: -1564px -168px;
+}
+
+.pkmn.staryu::before {
+  background-position: -1632px -168px;
+}
+
+.pkmn.starmie::before {
+  background-position: -1700px -168px;
+}
+
+.pkmn.mr-mime::before {
+  background-position: -1768px -168px;
+}
+
+.pkmn.scyther::before {
+  background-position: -1836px -168px;
+}
+
+.pkmn.jynx::before {
+  background-position: -1904px -168px;
+}
+
+.pkmn.electabuzz::before {
+  background-position: -1972px -168px;
+}
+
+.pkmn.magmar::before {
+  background-position: -2040px -168px;
+}
+
+.pkmn.pinsir::before {
+  background-position: -2108px -168px;
+}
+
+.pkmn.tauros::before {
+  background-position: 0 -224px;
+}
+
+.pkmn.magikarp::before {
+  background-position: -68px -224px;
+}
+
+.pkmn.gyarados::before {
+  background-position: -136px -224px;
+}
+
+.pkmn.lapras::before {
+  background-position: -204px -224px;
+}
+
+.pkmn.ditto::before {
+  background-position: -272px -224px;
+}
+
+.pkmn.eevee::before {
+  background-position: -340px -224px;
+}
+
+.pkmn.vaporeon::before {
+  background-position: -408px -224px;
+}
+
+.pkmn.jolteon::before {
+  background-position: -476px -224px;
+}
+
+.pkmn.flareon::before {
+  background-position: -544px -224px;
+}
+
+.pkmn.porygon::before {
+  background-position: -612px -224px;
+}
+
+.pkmn.omanyte::before {
+  background-position: -680px -224px;
+}
+
+.pkmn.omastar::before {
+  background-position: -748px -224px;
+}
+
+.pkmn.kabuto::before {
+  background-position: -816px -224px;
+}
+
+.pkmn.kabutops::before {
+  background-position: -884px -224px;
+}
+
+.pkmn.aerodactyl::before {
+  background-position: -952px -224px;
+}
+
+.pkmn.snorlax::before {
+  background-position: -1020px -224px;
+}
+
+.pkmn.articuno::before {
+  background-position: -1088px -224px;
+}
+
+.pkmn.zapdos::before {
+  background-position: -1156px -224px;
+}
+
+.pkmn.moltres::before {
+  background-position: -1224px -224px;
+}
+
+.pkmn.dratini::before {
+  background-position: -1292px -224px;
+}
+
+.pkmn.dragonair::before {
+  background-position: -1360px -224px;
+}
+
+.pkmn.dragonite::before {
+  background-position: -1428px -224px;
+}
+
+.pkmn.mewtwo::before {
+  background-position: -1496px -224px;
+}
+
+.pkmn.mew::before {
+  background-position: -1564px -224px;
+}
+
+.pkmn.chikorita::before {
+  background-position: -1632px -224px;
+}
+
+.pkmn.bayleef::before {
+  background-position: -1700px -224px;
+}
+
+.pkmn.meganium::before {
+  background-position: -1768px -224px;
+}
+
+.pkmn.cyndaquil::before {
+  background-position: -1836px -224px;
+}
+
+.pkmn.quilava::before {
+  background-position: -1904px -224px;
+}
+
+.pkmn.typhlosion::before {
+  background-position: -1972px -224px;
+}
+
+.pkmn.totodile::before {
+  background-position: -2040px -224px;
+}
+
+.pkmn.croconaw::before {
+  background-position: -2108px -224px;
+}
+
+.pkmn.feraligatr::before {
+  background-position: 0 -280px;
+}
+
+.pkmn.sentret::before {
+  background-position: -68px -280px;
+}
+
+.pkmn.furret::before {
+  background-position: -136px -280px;
+}
+
+.pkmn.hoothoot::before {
+  background-position: -204px -280px;
+}
+
+.pkmn.noctowl::before {
+  background-position: -272px -280px;
+}
+
+.pkmn.ledyba::before {
+  background-position: -340px -280px;
+}
+
+.pkmn.ledian::before {
+  background-position: -408px -280px;
+}
+
+.pkmn.spinarak::before {
+  background-position: -476px -280px;
+}
+
+.pkmn.ariados::before {
+  background-position: -544px -280px;
+}
+
+.pkmn.crobat::before {
+  background-position: -612px -280px;
+}
+
+.pkmn.chinchou::before {
+  background-position: -680px -280px;
+}
+
+.pkmn.lanturn::before {
+  background-position: -748px -280px;
+}
+
+.pkmn.pichu::before {
+  background-position: -816px -280px;
+}
+
+.pkmn.cleffa::before {
+  background-position: -884px -280px;
+}
+
+.pkmn.igglybuff::before {
+  background-position: -952px -280px;
+}
+
+.pkmn.togepi::before {
+  background-position: -1020px -280px;
+}
+
+.pkmn.togetic::before {
+  background-position: -1088px -280px;
+}
+
+.pkmn.natu::before {
+  background-position: -1156px -280px;
+}
+
+.pkmn.xatu::before {
+  background-position: -1224px -280px;
+}
+
+.pkmn.mareep::before {
+  background-position: -1292px -280px;
+}
+
+.pkmn.flaaffy::before {
+  background-position: -1360px -280px;
+}
+
+.pkmn.ampharos::before {
+  background-position: -1428px -280px;
+}
+
+.pkmn.bellossom::before {
+  background-position: -1496px -280px;
+}
+
+.pkmn.marill::before {
+  background-position: -1564px -280px;
+}
+
+.pkmn.azumarill::before {
+  background-position: -1632px -280px;
+}
+
+.pkmn.sudowoodo::before {
+  background-position: -1700px -280px;
+}
+
+.pkmn.politoed::before {
+  background-position: -1768px -280px;
+}
+
+.pkmn.hoppip::before {
+  background-position: -1836px -280px;
+}
+
+.pkmn.skiploom::before {
+  background-position: -1904px -280px;
+}
+
+.pkmn.jumpluff::before {
+  background-position: -1972px -280px;
+}
+
+.pkmn.aipom::before {
+  background-position: -2040px -280px;
+}
+
+.pkmn.sunkern::before {
+  background-position: -2108px -280px;
+}
+
+.pkmn.sunflora::before {
+  background-position: 0 -336px;
+}
+
+.pkmn.yanma::before {
+  background-position: -68px -336px;
+}
+
+.pkmn.wooper::before {
+  background-position: -136px -336px;
+}
+
+.pkmn.quagsire::before {
+  background-position: -204px -336px;
+}
+
+.pkmn.espeon::before {
+  background-position: -272px -336px;
+}
+
+.pkmn.umbreon::before {
+  background-position: -340px -336px;
+}
+
+.pkmn.murkrow::before {
+  background-position: -408px -336px;
+}
+
+.pkmn.slowking::before {
+  background-position: -476px -336px;
+}
+
+.pkmn.misdreavus::before {
+  background-position: -544px -336px;
+}
+
+.pkmn.unown::before {
+  background-position: -612px -336px;
+}
+
+.pkmn.wobbuffet::before {
+  background-position: -680px -336px;
+}
+
+.pkmn.girafarig::before {
+  background-position: -748px -336px;
+}
+
+.pkmn.pineco::before {
+  background-position: -816px -336px;
+}
+
+.pkmn.forretress::before {
+  background-position: -884px -336px;
+}
+
+.pkmn.dunsparce::before {
+  background-position: -952px -336px;
+}
+
+.pkmn.gligar::before {
+  background-position: -1020px -336px;
+}
+
+.pkmn.steelix::before {
+  background-position: -1088px -336px;
+}
+
+.pkmn.snubbull::before {
+  background-position: -1156px -336px;
+}
+
+.pkmn.granbull::before {
+  background-position: -1224px -336px;
+}
+
+.pkmn.qwilfish::before {
+  background-position: -1292px -336px;
+}
+
+.pkmn.scizor::before {
+  background-position: -1360px -336px;
+}
+
+.pkmn.shuckle::before {
+  background-position: -1428px -336px;
+}
+
+.pkmn.heracross::before {
+  background-position: -1496px -336px;
+}
+
+.pkmn.sneasel::before {
+  background-position: -1564px -336px;
+}
+
+.pkmn.teddiursa::before {
+  background-position: -1632px -336px;
+}
+
+.pkmn.ursaring::before {
+  background-position: -1700px -336px;
+}
+
+.pkmn.slugma::before {
+  background-position: -1768px -336px;
+}
+
+.pkmn.magcargo::before {
+  background-position: -1836px -336px;
+}
+
+.pkmn.swinub::before {
+  background-position: -1904px -336px;
+}
+
+.pkmn.piloswine::before {
+  background-position: -1972px -336px;
+}
+
+.pkmn.corsola::before {
+  background-position: -2040px -336px;
+}
+
+.pkmn.remoraid::before {
+  background-position: -2108px -336px;
+}
+
+.pkmn.octillery::before {
+  background-position: 0 -392px;
+}
+
+.pkmn.delibird::before {
+  background-position: -68px -392px;
+}
+
+.pkmn.mantine::before {
+  background-position: -136px -392px;
+}
+
+.pkmn.skarmory::before {
+  background-position: -204px -392px;
+}
+
+.pkmn.houndour::before {
+  background-position: -272px -392px;
+}
+
+.pkmn.houndoom::before {
+  background-position: -340px -392px;
+}
+
+.pkmn.kingdra::before {
+  background-position: -408px -392px;
+}
+
+.pkmn.phanpy::before {
+  background-position: -476px -392px;
+}
+
+.pkmn.donphan::before {
+  background-position: -544px -392px;
+}
+
+.pkmn.porygon2::before {
+  background-position: -612px -392px;
+}
+
+.pkmn.stantler::before {
+  background-position: -680px -392px;
+}
+
+.pkmn.smeargle::before {
+  background-position: -748px -392px;
+}
+
+.pkmn.tyrogue::before {
+  background-position: -816px -392px;
+}
+
+.pkmn.hitmontop::before {
+  background-position: -884px -392px;
+}
+
+.pkmn.smoochum::before {
+  background-position: -952px -392px;
+}
+
+.pkmn.elekid::before {
+  background-position: -1020px -392px;
+}
+
+.pkmn.magby::before {
+  background-position: -1088px -392px;
+}
+
+.pkmn.miltank::before {
+  background-position: -1156px -392px;
+}
+
+.pkmn.blissey::before {
+  background-position: -1224px -392px;
+}
+
+.pkmn.raikou::before {
+  background-position: -1292px -392px;
+}
+
+.pkmn.entei::before {
+  background-position: -1360px -392px;
+}
+
+.pkmn.suicune::before {
+  background-position: -1428px -392px;
+}
+
+.pkmn.larvitar::before {
+  background-position: -1496px -392px;
+}
+
+.pkmn.pupitar::before {
+  background-position: -1564px -392px;
+}
+
+.pkmn.tyranitar::before {
+  background-position: -1632px -392px;
+}
+
+.pkmn.lugia::before {
+  background-position: -1700px -392px;
+}
+
+.pkmn.ho-oh::before {
+  background-position: -1768px -392px;
+}
+
+.pkmn.celebi::before {
+  background-position: -1836px -392px;
+}
+
+.pkmn.treecko::before {
+  background-position: -1904px -392px;
+}
+
+.pkmn.grovyle::before {
+  background-position: -1972px -392px;
+}
+
+.pkmn.sceptile::before {
+  background-position: -2040px -392px;
+}
+
+.pkmn.torchic::before {
+  background-position: -2108px -392px;
+}
+
+.pkmn.combusken::before {
+  background-position: 0 -448px;
+}
+
+.pkmn.blaziken::before {
+  background-position: -68px -448px;
+}
+
+.pkmn.mudkip::before {
+  background-position: -136px -448px;
+}
+
+.pkmn.marshtomp::before {
+  background-position: -204px -448px;
+}
+
+.pkmn.swampert::before {
+  background-position: -272px -448px;
+}
+
+.pkmn.poochyena::before {
+  background-position: -340px -448px;
+}
+
+.pkmn.mightyena::before {
+  background-position: -408px -448px;
+}
+
+.pkmn.zigzagoon::before {
+  background-position: -476px -448px;
+}
+
+.pkmn.linoone::before {
+  background-position: -544px -448px;
+}
+
+.pkmn.wurmple::before {
+  background-position: -612px -448px;
+}
+
+.pkmn.silcoon::before {
+  background-position: -680px -448px;
+}
+
+.pkmn.beautifly::before {
+  background-position: -748px -448px;
+}
+
+.pkmn.cascoon::before {
+  background-position: -816px -448px;
+}
+
+.pkmn.dustox::before {
+  background-position: -884px -448px;
+}
+
+.pkmn.lotad::before {
+  background-position: -952px -448px;
+}
+
+.pkmn.lombre::before {
+  background-position: -1020px -448px;
+}
+
+.pkmn.ludicolo::before {
+  background-position: -1088px -448px;
+}
+
+.pkmn.seedot::before {
+  background-position: -1156px -448px;
+}
+
+.pkmn.nuzleaf::before {
+  background-position: -1224px -448px;
+}
+
+.pkmn.shiftry::before {
+  background-position: -1292px -448px;
+}
+
+.pkmn.taillow::before {
+  background-position: -1360px -448px;
+}
+
+.pkmn.swellow::before {
+  background-position: -1428px -448px;
+}
+
+.pkmn.wingull::before {
+  background-position: -1496px -448px;
+}
+
+.pkmn.pelipper::before {
+  background-position: -1564px -448px;
+}
+
+.pkmn.ralts::before {
+  background-position: -1632px -448px;
+}
+
+.pkmn.kirlia::before {
+  background-position: -1700px -448px;
+}
+
+.pkmn.gardevoir::before {
+  background-position: -1768px -448px;
+}
+
+.pkmn.surskit::before {
+  background-position: -1836px -448px;
+}
+
+.pkmn.masquerain::before {
+  background-position: -1904px -448px;
+}
+
+.pkmn.shroomish::before {
+  background-position: -1972px -448px;
+}
+
+.pkmn.breloom::before {
+  background-position: -2040px -448px;
+}
+
+.pkmn.slakoth::before {
+  background-position: -2108px -448px;
+}
+
+.pkmn.vigoroth::before {
+  background-position: 0 -504px;
+}
+
+.pkmn.slaking::before {
+  background-position: -68px -504px;
+}
+
+.pkmn.nincada::before {
+  background-position: -136px -504px;
+}
+
+.pkmn.ninjask::before {
+  background-position: -204px -504px;
+}
+
+.pkmn.shedinja::before {
+  background-position: -272px -504px;
+}
+
+.pkmn.whismur::before {
+  background-position: -340px -504px;
+}
+
+.pkmn.loudred::before {
+  background-position: -408px -504px;
+}
+
+.pkmn.exploud::before {
+  background-position: -476px -504px;
+}
+
+.pkmn.makuhita::before {
+  background-position: -544px -504px;
+}
+
+.pkmn.hariyama::before {
+  background-position: -612px -504px;
+}
+
+.pkmn.azurill::before {
+  background-position: -680px -504px;
+}
+
+.pkmn.nosepass::before {
+  background-position: -748px -504px;
+}
+
+.pkmn.skitty::before {
+  background-position: -816px -504px;
+}
+
+.pkmn.delcatty::before {
+  background-position: -884px -504px;
+}
+
+.pkmn.sableye::before {
+  background-position: -952px -504px;
+}
+
+.pkmn.mawile::before {
+  background-position: -1020px -504px;
+}
+
+.pkmn.aron::before {
+  background-position: -1088px -504px;
+}
+
+.pkmn.lairon::before {
+  background-position: -1156px -504px;
+}
+
+.pkmn.aggron::before {
+  background-position: -1224px -504px;
+}
+
+.pkmn.meditite::before {
+  background-position: -1292px -504px;
+}
+
+.pkmn.medicham::before {
+  background-position: -1360px -504px;
+}
+
+.pkmn.electrike::before {
+  background-position: -1428px -504px;
+}
+
+.pkmn.manectric::before {
+  background-position: -1496px -504px;
+}
+
+.pkmn.plusle::before {
+  background-position: -1564px -504px;
+}
+
+.pkmn.minun::before {
+  background-position: -1632px -504px;
+}
+
+.pkmn.volbeat::before {
+  background-position: -1700px -504px;
+}
+
+.pkmn.illumise::before {
+  background-position: -1768px -504px;
+}
+
+.pkmn.roselia::before {
+  background-position: -1836px -504px;
+}
+
+.pkmn.gulpin::before {
+  background-position: -1904px -504px;
+}
+
+.pkmn.swalot::before {
+  background-position: -1972px -504px;
+}
+
+.pkmn.carvanha::before {
+  background-position: -2040px -504px;
+}
+
+.pkmn.sharpedo::before {
+  background-position: -2108px -504px;
+}
+
+.pkmn.wailmer::before {
+  background-position: 0 -560px;
+}
+
+.pkmn.wailord::before {
+  background-position: -68px -560px;
+}
+
+.pkmn.numel::before {
+  background-position: -136px -560px;
+}
+
+.pkmn.camerupt::before {
+  background-position: -204px -560px;
+}
+
+.pkmn.torkoal::before {
+  background-position: -272px -560px;
+}
+
+.pkmn.spoink::before {
+  background-position: -340px -560px;
+}
+
+.pkmn.grumpig::before {
+  background-position: -408px -560px;
+}
+
+.pkmn.spinda::before {
+  background-position: -476px -560px;
+}
+
+.pkmn.trapinch::before {
+  background-position: -544px -560px;
+}
+
+.pkmn.vibrava::before {
+  background-position: -612px -560px;
+}
+
+.pkmn.flygon::before {
+  background-position: -680px -560px;
+}
+
+.pkmn.cacnea::before {
+  background-position: -748px -560px;
+}
+
+.pkmn.cacturne::before {
+  background-position: -816px -560px;
+}
+
+.pkmn.swablu::before {
+  background-position: -884px -560px;
+}
+
+.pkmn.altaria::before {
+  background-position: -952px -560px;
+}
+
+.pkmn.zangoose::before {
+  background-position: -1020px -560px;
+}
+
+.pkmn.seviper::before {
+  background-position: -1088px -560px;
+}
+
+.pkmn.lunatone::before {
+  background-position: -1156px -560px;
+}
+
+.pkmn.solrock::before {
+  background-position: -1224px -560px;
+}
+
+.pkmn.barboach::before {
+  background-position: -1292px -560px;
+}
+
+.pkmn.whiscash::before {
+  background-position: -1360px -560px;
+}
+
+.pkmn.corphish::before {
+  background-position: -1428px -560px;
+}
+
+.pkmn.crawdaunt::before {
+  background-position: -1496px -560px;
+}
+
+.pkmn.baltoy::before {
+  background-position: -1564px -560px;
+}
+
+.pkmn.claydol::before {
+  background-position: -1632px -560px;
+}
+
+.pkmn.lileep::before {
+  background-position: -1700px -560px;
+}
+
+.pkmn.cradily::before {
+  background-position: -1768px -560px;
+}
+
+.pkmn.anorith::before {
+  background-position: -1836px -560px;
+}
+
+.pkmn.armaldo::before {
+  background-position: -1904px -560px;
+}
+
+.pkmn.feebas::before {
+  background-position: -1972px -560px;
+}
+
+.pkmn.milotic::before {
+  background-position: -2040px -560px;
+}
+
+.pkmn.castform::before {
+  background-position: -2108px -560px;
+}
+
+.pkmn.kecleon::before {
+  background-position: 0 -616px;
+}
+
+.pkmn.shuppet::before {
+  background-position: -68px -616px;
+}
+
+.pkmn.banette::before {
+  background-position: -136px -616px;
+}
+
+.pkmn.duskull::before {
+  background-position: -204px -616px;
+}
+
+.pkmn.dusclops::before {
+  background-position: -272px -616px;
+}
+
+.pkmn.tropius::before {
+  background-position: -340px -616px;
+}
+
+.pkmn.chimecho::before {
+  background-position: -408px -616px;
+}
+
+.pkmn.absol::before {
+  background-position: -476px -616px;
+}
+
+.pkmn.wynaut::before {
+  background-position: -544px -616px;
+}
+
+.pkmn.snorunt::before {
+  background-position: -612px -616px;
+}
+
+.pkmn.glalie::before {
+  background-position: -680px -616px;
+}
+
+.pkmn.spheal::before {
+  background-position: -748px -616px;
+}
+
+.pkmn.sealeo::before {
+  background-position: -816px -616px;
+}
+
+.pkmn.walrein::before {
+  background-position: -884px -616px;
+}
+
+.pkmn.clamperl::before {
+  background-position: -952px -616px;
+}
+
+.pkmn.huntail::before {
+  background-position: -1020px -616px;
+}
+
+.pkmn.gorebyss::before {
+  background-position: -1088px -616px;
+}
+
+.pkmn.relicanth::before {
+  background-position: -1156px -616px;
+}
+
+.pkmn.luvdisc::before {
+  background-position: -1224px -616px;
+}
+
+.pkmn.bagon::before {
+  background-position: -1292px -616px;
+}
+
+.pkmn.shelgon::before {
+  background-position: -1360px -616px;
+}
+
+.pkmn.salamence::before {
+  background-position: -1428px -616px;
+}
+
+.pkmn.beldum::before {
+  background-position: -1496px -616px;
+}
+
+.pkmn.metang::before {
+  background-position: -1564px -616px;
+}
+
+.pkmn.metagross::before {
+  background-position: -1632px -616px;
+}
+
+.pkmn.regirock::before {
+  background-position: -1700px -616px;
+}
+
+.pkmn.regice::before {
+  background-position: -1768px -616px;
+}
+
+.pkmn.registeel::before {
+  background-position: -1836px -616px;
+}
+
+.pkmn.latias::before {
+  background-position: -1904px -616px;
+}
+
+.pkmn.latios::before {
+  background-position: -1972px -616px;
+}
+
+.pkmn.kyogre::before {
+  background-position: -2040px -616px;
+}
+
+.pkmn.groudon::before {
+  background-position: -2108px -616px;
+}
+
+.pkmn.rayquaza::before {
+  background-position: 0 -672px;
+}
+
+.pkmn.jirachi::before {
+  background-position: -68px -672px;
+}
+
+.pkmn.deoxys::before {
+  background-position: -136px -672px;
+}
+
+.pkmn.turtwig::before {
+  background-position: -204px -672px;
+}
+
+.pkmn.grotle::before {
+  background-position: -272px -672px;
+}
+
+.pkmn.torterra::before {
+  background-position: -340px -672px;
+}
+
+.pkmn.chimchar::before {
+  background-position: -408px -672px;
+}
+
+.pkmn.monferno::before {
+  background-position: -476px -672px;
+}
+
+.pkmn.infernape::before {
+  background-position: -544px -672px;
+}
+
+.pkmn.piplup::before {
+  background-position: -612px -672px;
+}
+
+.pkmn.prinplup::before {
+  background-position: -680px -672px;
+}
+
+.pkmn.empoleon::before {
+  background-position: -748px -672px;
+}
+
+.pkmn.starly::before {
+  background-position: -816px -672px;
+}
+
+.pkmn.staravia::before {
+  background-position: -884px -672px;
+}
+
+.pkmn.staraptor::before {
+  background-position: -952px -672px;
+}
+
+.pkmn.bidoof::before {
+  background-position: -1020px -672px;
+}
+
+.pkmn.bibarel::before {
+  background-position: -1088px -672px;
+}
+
+.pkmn.kricketot::before {
+  background-position: -1156px -672px;
+}
+
+.pkmn.kricketune::before {
+  background-position: -1224px -672px;
+}
+
+.pkmn.shinx::before {
+  background-position: -1292px -672px;
+}
+
+.pkmn.luxio::before {
+  background-position: -1360px -672px;
+}
+
+.pkmn.luxray::before {
+  background-position: -1428px -672px;
+}
+
+.pkmn.budew::before {
+  background-position: -1496px -672px;
+}
+
+.pkmn.roserade::before {
+  background-position: -1564px -672px;
+}
+
+.pkmn.cranidos::before {
+  background-position: -1632px -672px;
+}
+
+.pkmn.rampardos::before {
+  background-position: -1700px -672px;
+}
+
+.pkmn.shieldon::before {
+  background-position: -1768px -672px;
+}
+
+.pkmn.bastiodon::before {
+  background-position: -1836px -672px;
+}
+
+.pkmn.burmy::before {
+  background-position: -1904px -672px;
+}
+
+.pkmn.wormadam::before {
+  background-position: -1972px -672px;
+}
+
+.pkmn.mothim::before {
+  background-position: -2040px -672px;
+}
+
+.pkmn.combee::before {
+  background-position: -2108px -672px;
+}
+
+.pkmn.vespiquen::before {
+  background-position: 0 -728px;
+}
+
+.pkmn.pachirisu::before {
+  background-position: -68px -728px;
+}
+
+.pkmn.buizel::before {
+  background-position: -136px -728px;
+}
+
+.pkmn.floatzel::before {
+  background-position: -204px -728px;
+}
+
+.pkmn.cherubi::before {
+  background-position: -272px -728px;
+}
+
+.pkmn.cherrim::before {
+  background-position: -340px -728px;
+}
+
+.pkmn.shellos::before {
+  background-position: -408px -728px;
+}
+
+.pkmn.gastrodon::before {
+  background-position: -476px -728px;
+}
+
+.pkmn.ambipom::before {
+  background-position: -544px -728px;
+}
+
+.pkmn.drifloon::before {
+  background-position: -612px -728px;
+}
+
+.pkmn.drifblim::before {
+  background-position: -680px -728px;
+}
+
+.pkmn.buneary::before {
+  background-position: -748px -728px;
+}
+
+.pkmn.lopunny::before {
+  background-position: -816px -728px;
+}
+
+.pkmn.mismagius::before {
+  background-position: -884px -728px;
+}
+
+.pkmn.honchkrow::before {
+  background-position: -952px -728px;
+}
+
+.pkmn.glameow::before {
+  background-position: -1020px -728px;
+}
+
+.pkmn.purugly::before {
+  background-position: -1088px -728px;
+}
+
+.pkmn.chingling::before {
+  background-position: -1156px -728px;
+}
+
+.pkmn.stunky::before {
+  background-position: -1224px -728px;
+}
+
+.pkmn.skuntank::before {
+  background-position: -1292px -728px;
+}
+
+.pkmn.bronzor::before {
+  background-position: -1360px -728px;
+}
+
+.pkmn.bronzong::before {
+  background-position: -1428px -728px;
+}
+
+.pkmn.bonsly::before {
+  background-position: -1496px -728px;
+}
+
+.pkmn.mime-jr::before {
+  background-position: -1564px -728px;
+}
+
+.pkmn.happiny::before {
+  background-position: -1632px -728px;
+}
+
+.pkmn.chatot::before {
+  background-position: -1700px -728px;
+}
+
+.pkmn.spiritomb::before {
+  background-position: -1768px -728px;
+}
+
+.pkmn.gible::before {
+  background-position: -1836px -728px;
+}
+
+.pkmn.gabite::before {
+  background-position: -1904px -728px;
+}
+
+.pkmn.garchomp::before {
+  background-position: -1972px -728px;
+}
+
+.pkmn.munchlax::before {
+  background-position: -2040px -728px;
+}
+
+.pkmn.riolu::before {
+  background-position: -2108px -728px;
+}
+
+.pkmn.lucario::before {
+  background-position: 0 -784px;
+}
+
+.pkmn.hippopotas::before {
+  background-position: -68px -784px;
+}
+
+.pkmn.hippowdon::before {
+  background-position: -136px -784px;
+}
+
+.pkmn.skorupi::before {
+  background-position: -204px -784px;
+}
+
+.pkmn.drapion::before {
+  background-position: -272px -784px;
+}
+
+.pkmn.croagunk::before {
+  background-position: -340px -784px;
+}
+
+.pkmn.toxicroak::before {
+  background-position: -408px -784px;
+}
+
+.pkmn.carnivine::before {
+  background-position: -476px -784px;
+}
+
+.pkmn.finneon::before {
+  background-position: -544px -784px;
+}
+
+.pkmn.lumineon::before {
+  background-position: -612px -784px;
+}
+
+.pkmn.mantyke::before {
+  background-position: -680px -784px;
+}
+
+.pkmn.snover::before {
+  background-position: -748px -784px;
+}
+
+.pkmn.abomasnow::before {
+  background-position: -816px -784px;
+}
+
+.pkmn.weavile::before {
+  background-position: -884px -784px;
+}
+
+.pkmn.magnezone::before {
+  background-position: -952px -784px;
+}
+
+.pkmn.lickilicky::before {
+  background-position: -1020px -784px;
+}
+
+.pkmn.rhyperior::before {
+  background-position: -1088px -784px;
+}
+
+.pkmn.tangrowth::before {
+  background-position: -1156px -784px;
+}
+
+.pkmn.electivire::before {
+  background-position: -1224px -784px;
+}
+
+.pkmn.magmortar::before {
+  background-position: -1292px -784px;
+}
+
+.pkmn.togekiss::before {
+  background-position: -1360px -784px;
+}
+
+.pkmn.yanmega::before {
+  background-position: -1428px -784px;
+}
+
+.pkmn.leafeon::before {
+  background-position: -1496px -784px;
+}
+
+.pkmn.glaceon::before {
+  background-position: -1564px -784px;
+}
+
+.pkmn.gliscor::before {
+  background-position: -1632px -784px;
+}
+
+.pkmn.mamoswine::before {
+  background-position: -1700px -784px;
+}
+
+.pkmn.porygon-z::before {
+  background-position: -1768px -784px;
+}
+
+.pkmn.gallade::before {
+  background-position: -1836px -784px;
+}
+
+.pkmn.probopass::before {
+  background-position: -1904px -784px;
+}
+
+.pkmn.dusknoir::before {
+  background-position: -1972px -784px;
+}
+
+.pkmn.froslass::before {
+  background-position: -2040px -784px;
+}
+
+.pkmn.rotom::before {
+  background-position: -2108px -784px;
+}
+
+.pkmn.uxie::before {
+  background-position: 0 -840px;
+}
+
+.pkmn.mesprit::before {
+  background-position: -68px -840px;
+}
+
+.pkmn.azelf::before {
+  background-position: -136px -840px;
+}
+
+.pkmn.dialga::before {
+  background-position: -204px -840px;
+}
+
+.pkmn.palkia::before {
+  background-position: -272px -840px;
+}
+
+.pkmn.heatran::before {
+  background-position: -340px -840px;
+}
+
+.pkmn.regigigas::before {
+  background-position: -408px -840px;
+}
+
+.pkmn.giratina::before {
+  background-position: -476px -840px;
+}
+
+.pkmn.cresselia::before {
+  background-position: -544px -840px;
+}
+
+.pkmn.phione::before {
+  background-position: -612px -840px;
+}
+
+.pkmn.manaphy::before {
+  background-position: -680px -840px;
+}
+
+.pkmn.darkrai::before {
+  background-position: -748px -840px;
+}
+
+.pkmn.shaymin::before {
+  background-position: -816px -840px;
+}
+
+.pkmn.arceus::before {
+  background-position: -884px -840px;
+}
+
+.pkmn.victini::before {
+  background-position: -952px -840px;
+}
+
+.pkmn.snivy::before {
+  background-position: -1020px -840px;
+}
+
+.pkmn.servine::before {
+  background-position: -1088px -840px;
+}
+
+.pkmn.serperior::before {
+  background-position: -1156px -840px;
+}
+
+.pkmn.tepig::before {
+  background-position: -1224px -840px;
+}
+
+.pkmn.pignite::before {
+  background-position: -1292px -840px;
+}
+
+.pkmn.emboar::before {
+  background-position: -1360px -840px;
+}
+
+.pkmn.oshawott::before {
+  background-position: -1428px -840px;
+}
+
+.pkmn.dewott::before {
+  background-position: -1496px -840px;
+}
+
+.pkmn.samurott::before {
+  background-position: -1564px -840px;
+}
+
+.pkmn.patrat::before {
+  background-position: -1632px -840px;
+}
+
+.pkmn.watchog::before {
+  background-position: -1700px -840px;
+}
+
+.pkmn.lillipup::before {
+  background-position: -1768px -840px;
+}
+
+.pkmn.herdier::before {
+  background-position: -1836px -840px;
+}
+
+.pkmn.stoutland::before {
+  background-position: -1904px -840px;
+}
+
+.pkmn.purrloin::before {
+  background-position: -1972px -840px;
+}
+
+.pkmn.liepard::before {
+  background-position: -2040px -840px;
+}
+
+.pkmn.pansage::before {
+  background-position: -2108px -840px;
+}
+
+.pkmn.simisage::before {
+  background-position: 0 -896px;
+}
+
+.pkmn.pansear::before {
+  background-position: -68px -896px;
+}
+
+.pkmn.simisear::before {
+  background-position: -136px -896px;
+}
+
+.pkmn.panpour::before {
+  background-position: -204px -896px;
+}
+
+.pkmn.simipour::before {
+  background-position: -272px -896px;
+}
+
+.pkmn.munna::before {
+  background-position: -340px -896px;
+}
+
+.pkmn.musharna::before {
+  background-position: -408px -896px;
+}
+
+.pkmn.pidove::before {
+  background-position: -476px -896px;
+}
+
+.pkmn.tranquill::before {
+  background-position: -544px -896px;
+}
+
+.pkmn.unfezant::before {
+  background-position: -612px -896px;
+}
+
+.pkmn.blitzle::before {
+  background-position: -680px -896px;
+}
+
+.pkmn.zebstrika::before {
+  background-position: -748px -896px;
+}
+
+.pkmn.roggenrola::before {
+  background-position: -816px -896px;
+}
+
+.pkmn.boldore::before {
+  background-position: -884px -896px;
+}
+
+.pkmn.gigalith::before {
+  background-position: -952px -896px;
+}
+
+.pkmn.woobat::before {
+  background-position: -1020px -896px;
+}
+
+.pkmn.swoobat::before {
+  background-position: -1088px -896px;
+}
+
+.pkmn.drilbur::before {
+  background-position: -1156px -896px;
+}
+
+.pkmn.excadrill::before {
+  background-position: -1224px -896px;
+}
+
+.pkmn.audino::before {
+  background-position: -1292px -896px;
+}
+
+.pkmn.timburr::before {
+  background-position: -1360px -896px;
+}
+
+.pkmn.gurdurr::before {
+  background-position: -1428px -896px;
+}
+
+.pkmn.conkeldurr::before {
+  background-position: -1496px -896px;
+}
+
+.pkmn.tympole::before {
+  background-position: -1564px -896px;
+}
+
+.pkmn.palpitoad::before {
+  background-position: -1632px -896px;
+}
+
+.pkmn.seismitoad::before {
+  background-position: -1700px -896px;
+}
+
+.pkmn.throh::before {
+  background-position: -1768px -896px;
+}
+
+.pkmn.sawk::before {
+  background-position: -1836px -896px;
+}
+
+.pkmn.sewaddle::before {
+  background-position: -1904px -896px;
+}
+
+.pkmn.swadloon::before {
+  background-position: -1972px -896px;
+}
+
+.pkmn.leavanny::before {
+  background-position: -2040px -896px;
+}
+
+.pkmn.venipede::before {
+  background-position: -2108px -896px;
+}
+
+.pkmn.whirlipede::before {
+  background-position: 0 -952px;
+}
+
+.pkmn.scolipede::before {
+  background-position: -68px -952px;
+}
+
+.pkmn.cottonee::before {
+  background-position: -136px -952px;
+}
+
+.pkmn.whimsicott::before {
+  background-position: -204px -952px;
+}
+
+.pkmn.petilil::before {
+  background-position: -272px -952px;
+}
+
+.pkmn.lilligant::before {
+  background-position: -340px -952px;
+}
+
+.pkmn.basculin::before {
+  background-position: -408px -952px;
+}
+
+.pkmn.sandile::before {
+  background-position: -476px -952px;
+}
+
+.pkmn.krokorok::before {
+  background-position: -544px -952px;
+}
+
+.pkmn.krookodile::before {
+  background-position: -612px -952px;
+}
+
+.pkmn.darumaka::before {
+  background-position: -680px -952px;
+}
+
+.pkmn.darmanitan::before {
+  background-position: -748px -952px;
+}
+
+.pkmn.maractus::before {
+  background-position: -816px -952px;
+}
+
+.pkmn.dwebble::before {
+  background-position: -884px -952px;
+}
+
+.pkmn.crustle::before {
+  background-position: -952px -952px;
+}
+
+.pkmn.scraggy::before {
+  background-position: -1020px -952px;
+}
+
+.pkmn.scrafty::before {
+  background-position: -1088px -952px;
+}
+
+.pkmn.sigilyph::before {
+  background-position: -1156px -952px;
+}
+
+.pkmn.yamask::before {
+  background-position: -1224px -952px;
+}
+
+.pkmn.cofagrigus::before {
+  background-position: -1292px -952px;
+}
+
+.pkmn.tirtouga::before {
+  background-position: -1360px -952px;
+}
+
+.pkmn.carracosta::before {
+  background-position: -1428px -952px;
+}
+
+.pkmn.archen::before {
+  background-position: -1496px -952px;
+}
+
+.pkmn.archeops::before {
+  background-position: -1564px -952px;
+}
+
+.pkmn.trubbish::before {
+  background-position: -1632px -952px;
+}
+
+.pkmn.garbodor::before {
+  background-position: -1700px -952px;
+}
+
+.pkmn.zorua::before {
+  background-position: -1768px -952px;
+}
+
+.pkmn.zoroark::before {
+  background-position: -1836px -952px;
+}
+
+.pkmn.minccino::before {
+  background-position: -1904px -952px;
+}
+
+.pkmn.cinccino::before {
+  background-position: -1972px -952px;
+}
+
+.pkmn.gothita::before {
+  background-position: -2040px -952px;
+}
+
+.pkmn.gothorita::before {
+  background-position: -2108px -952px;
+}
+
+.pkmn.gothitelle::before {
+  background-position: 0 -1008px;
+}
+
+.pkmn.solosis::before {
+  background-position: -68px -1008px;
+}
+
+.pkmn.duosion::before {
+  background-position: -136px -1008px;
+}
+
+.pkmn.reuniclus::before {
+  background-position: -204px -1008px;
+}
+
+.pkmn.ducklett::before {
+  background-position: -272px -1008px;
+}
+
+.pkmn.swanna::before {
+  background-position: -340px -1008px;
+}
+
+.pkmn.vanillite::before {
+  background-position: -408px -1008px;
+}
+
+.pkmn.vanillish::before {
+  background-position: -476px -1008px;
+}
+
+.pkmn.vanilluxe::before {
+  background-position: -544px -1008px;
+}
+
+.pkmn.deerling::before {
+  background-position: -612px -1008px;
+}
+
+.pkmn.sawsbuck::before {
+  background-position: -680px -1008px;
+}
+
+.pkmn.emolga::before {
+  background-position: -748px -1008px;
+}
+
+.pkmn.karrablast::before {
+  background-position: -816px -1008px;
+}
+
+.pkmn.escavalier::before {
+  background-position: -884px -1008px;
+}
+
+.pkmn.foongus::before {
+  background-position: -952px -1008px;
+}
+
+.pkmn.amoonguss::before {
+  background-position: -1020px -1008px;
+}
+
+.pkmn.frillish::before {
+  background-position: -1088px -1008px;
+}
+
+.pkmn.jellicent::before {
+  background-position: -1156px -1008px;
+}
+
+.pkmn.alomomola::before {
+  background-position: -1224px -1008px;
+}
+
+.pkmn.joltik::before {
+  background-position: -1292px -1008px;
+}
+
+.pkmn.galvantula::before {
+  background-position: -1360px -1008px;
+}
+
+.pkmn.ferroseed::before {
+  background-position: -1428px -1008px;
+}
+
+.pkmn.ferrothorn::before {
+  background-position: -1496px -1008px;
+}
+
+.pkmn.klink::before {
+  background-position: -1564px -1008px;
+}
+
+.pkmn.klang::before {
+  background-position: -1632px -1008px;
+}
+
+.pkmn.klinklang::before {
+  background-position: -1700px -1008px;
+}
+
+.pkmn.tynamo::before {
+  background-position: -1768px -1008px;
+}
+
+.pkmn.eelektrik::before {
+  background-position: -1836px -1008px;
+}
+
+.pkmn.eelektross::before {
+  background-position: -1904px -1008px;
+}
+
+.pkmn.elgyem::before {
+  background-position: -1972px -1008px;
+}
+
+.pkmn.beheeyem::before {
+  background-position: -2040px -1008px;
+}
+
+.pkmn.litwick::before {
+  background-position: -2108px -1008px;
+}
+
+.pkmn.lampent::before {
+  background-position: 0 -1064px;
+}
+
+.pkmn.chandelure::before {
+  background-position: -68px -1064px;
+}
+
+.pkmn.axew::before {
+  background-position: -136px -1064px;
+}
+
+.pkmn.fraxure::before {
+  background-position: -204px -1064px;
+}
+
+.pkmn.haxorus::before {
+  background-position: -272px -1064px;
+}
+
+.pkmn.cubchoo::before {
+  background-position: -340px -1064px;
+}
+
+.pkmn.beartic::before {
+  background-position: -408px -1064px;
+}
+
+.pkmn.cryogonal::before {
+  background-position: -476px -1064px;
+}
+
+.pkmn.shelmet::before {
+  background-position: -544px -1064px;
+}
+
+.pkmn.accelgor::before {
+  background-position: -612px -1064px;
+}
+
+.pkmn.stunfisk::before {
+  background-position: -680px -1064px;
+}
+
+.pkmn.mienfoo::before {
+  background-position: -748px -1064px;
+}
+
+.pkmn.mienshao::before {
+  background-position: -816px -1064px;
+}
+
+.pkmn.druddigon::before {
+  background-position: -884px -1064px;
+}
+
+.pkmn.golett::before {
+  background-position: -952px -1064px;
+}
+
+.pkmn.golurk::before {
+  background-position: -1020px -1064px;
+}
+
+.pkmn.pawniard::before {
+  background-position: -1088px -1064px;
+}
+
+.pkmn.bisharp::before {
+  background-position: -1156px -1064px;
+}
+
+.pkmn.bouffalant::before {
+  background-position: -1224px -1064px;
+}
+
+.pkmn.rufflet::before {
+  background-position: -1292px -1064px;
+}
+
+.pkmn.braviary::before {
+  background-position: -1360px -1064px;
+}
+
+.pkmn.vullaby::before {
+  background-position: -1428px -1064px;
+}
+
+.pkmn.mandibuzz::before {
+  background-position: -1496px -1064px;
+}
+
+.pkmn.heatmor::before {
+  background-position: -1564px -1064px;
+}
+
+.pkmn.durant::before {
+  background-position: -1632px -1064px;
+}
+
+.pkmn.deino::before {
+  background-position: -1700px -1064px;
+}
+
+.pkmn.zweilous::before {
+  background-position: -1768px -1064px;
+}
+
+.pkmn.hydreigon::before {
+  background-position: -1836px -1064px;
+}
+
+.pkmn.larvesta::before {
+  background-position: -1904px -1064px;
+}
+
+.pkmn.volcarona::before {
+  background-position: -1972px -1064px;
+}
+
+.pkmn.cobalion::before {
+  background-position: -2040px -1064px;
+}
+
+.pkmn.terrakion::before {
+  background-position: -2108px -1064px;
+}
+
+.pkmn.virizion::before {
+  background-position: 0 -1120px;
+}
+
+.pkmn.tornadus::before {
+  background-position: -68px -1120px;
+}
+
+.pkmn.thundurus::before {
+  background-position: -136px -1120px;
+}
+
+.pkmn.reshiram::before {
+  background-position: -204px -1120px;
+}
+
+.pkmn.zekrom::before {
+  background-position: -272px -1120px;
+}
+
+.pkmn.landorus::before {
+  background-position: -340px -1120px;
+}
+
+.pkmn.kyurem::before {
+  background-position: -408px -1120px;
+}
+
+.pkmn.keldeo::before {
+  background-position: -476px -1120px;
+}
+
+.pkmn.meloetta::before {
+  background-position: -544px -1120px;
+}
+
+.pkmn.genesect::before {
+  background-position: -612px -1120px;
+}
+
+.pkmn.chespin::before {
+  background-position: -680px -1120px;
+}
+
+.pkmn.quilladin::before {
+  background-position: -748px -1120px;
+}
+
+.pkmn.chesnaught::before {
+  background-position: -816px -1120px;
+}
+
+.pkmn.fennekin::before {
+  background-position: -884px -1120px;
+}
+
+.pkmn.braixen::before {
+  background-position: -952px -1120px;
+}
+
+.pkmn.delphox::before {
+  background-position: -1020px -1120px;
+}
+
+.pkmn.froakie::before {
+  background-position: -1088px -1120px;
+}
+
+.pkmn.frogadier::before {
+  background-position: -1156px -1120px;
+}
+
+.pkmn.greninja::before {
+  background-position: -1224px -1120px;
+}
+
+.pkmn.bunnelby::before {
+  background-position: -1292px -1120px;
+}
+
+.pkmn.diggersby::before {
+  background-position: -1360px -1120px;
+}
+
+.pkmn.fletchling::before {
+  background-position: -1428px -1120px;
+}
+
+.pkmn.fletchinder::before {
+  background-position: -1496px -1120px;
+}
+
+.pkmn.talonflame::before {
+  background-position: -1564px -1120px;
+}
+
+.pkmn.scatterbug::before {
+  background-position: -1632px -1120px;
+}
+
+.pkmn.spewpa::before {
+  background-position: -1700px -1120px;
+}
+
+.pkmn.vivillon::before {
+  background-position: -1768px -1120px;
+}
+
+.pkmn.litleo::before {
+  background-position: -1836px -1120px;
+}
+
+.pkmn.pyroar::before {
+  background-position: -1904px -1120px;
+}
+
+.pkmn.flabebe::before {
+  background-position: -1972px -1120px;
+}
+
+.pkmn.floette::before {
+  background-position: -2040px -1120px;
+}
+
+.pkmn.florges::before {
+  background-position: -2108px -1120px;
+}
+
+.pkmn.skiddo::before {
+  background-position: 0 -1176px;
+}
+
+.pkmn.gogoat::before {
+  background-position: -68px -1176px;
+}
+
+.pkmn.pancham::before {
+  background-position: -136px -1176px;
+}
+
+.pkmn.pangoro::before {
+  background-position: -204px -1176px;
+}
+
+.pkmn.furfrou::before {
+  background-position: -272px -1176px;
+}
+
+.pkmn.espurr::before {
+  background-position: -340px -1176px;
+}
+
+.pkmn.meowstic::before {
+  background-position: -408px -1176px;
+}
+
+.pkmn.honedge::before {
+  background-position: -476px -1176px;
+}
+
+.pkmn.doublade::before {
+  background-position: -544px -1176px;
+}
+
+.pkmn.aegislash::before {
+  background-position: -612px -1176px;
+}
+
+.pkmn.spritzee::before {
+  background-position: -680px -1176px;
+}
+
+.pkmn.aromatisse::before {
+  background-position: -748px -1176px;
+}
+
+.pkmn.swirlix::before {
+  background-position: -816px -1176px;
+}
+
+.pkmn.slurpuff::before {
+  background-position: -884px -1176px;
+}
+
+.pkmn.inkay::before {
+  background-position: -952px -1176px;
+}
+
+.pkmn.malamar::before {
+  background-position: -1020px -1176px;
+}
+
+.pkmn.binacle::before {
+  background-position: -1088px -1176px;
+}
+
+.pkmn.barbaracle::before {
+  background-position: -1156px -1176px;
+}
+
+.pkmn.skrelp::before {
+  background-position: -1224px -1176px;
+}
+
+.pkmn.dragalge::before {
+  background-position: -1292px -1176px;
+}
+
+.pkmn.clauncher::before {
+  background-position: -1360px -1176px;
+}
+
+.pkmn.clawitzer::before {
+  background-position: -1428px -1176px;
+}
+
+.pkmn.helioptile::before {
+  background-position: -1496px -1176px;
+}
+
+.pkmn.heliolisk::before {
+  background-position: -1564px -1176px;
+}
+
+.pkmn.tyrunt::before {
+  background-position: -1632px -1176px;
+}
+
+.pkmn.tyrantrum::before {
+  background-position: -1700px -1176px;
+}
+
+.pkmn.amaura::before {
+  background-position: -1768px -1176px;
+}
+
+.pkmn.aurorus::before {
+  background-position: -1836px -1176px;
+}
+
+.pkmn.sylveon::before {
+  background-position: -1904px -1176px;
+}
+
+.pkmn.hawlucha::before {
+  background-position: -1972px -1176px;
+}
+
+.pkmn.dedenne::before {
+  background-position: -2040px -1176px;
+}
+
+.pkmn.carbink::before {
+  background-position: -2108px -1176px;
+}
+
+.pkmn.goomy::before {
+  background-position: 0 -1232px;
+}
+
+.pkmn.sliggoo::before {
+  background-position: -68px -1232px;
+}
+
+.pkmn.goodra::before {
+  background-position: -136px -1232px;
+}
+
+.pkmn.klefki::before {
+  background-position: -204px -1232px;
+}
+
+.pkmn.phantump::before {
+  background-position: -272px -1232px;
+}
+
+.pkmn.trevenant::before {
+  background-position: -340px -1232px;
+}
+
+.pkmn.pumpkaboo::before {
+  background-position: -408px -1232px;
+}
+
+.pkmn.gourgeist::before {
+  background-position: -476px -1232px;
+}
+
+.pkmn.bergmite::before {
+  background-position: -544px -1232px;
+}
+
+.pkmn.avalugg::before {
+  background-position: -612px -1232px;
+}
+
+.pkmn.noibat::before {
+  background-position: -680px -1232px;
+}
+
+.pkmn.noivern::before {
+  background-position: -748px -1232px;
+}
+
+.pkmn.xerneas::before {
+  background-position: -816px -1232px;
+}
+
+.pkmn.yveltal::before {
+  background-position: -884px -1232px;
+}
+
+.pkmn.zygarde::before {
+  background-position: -952px -1232px;
+}
+
+.pkmn.diancie::before {
+  background-position: -1020px -1232px;
+}
+
+.pkmn.hoopa::before {
+  background-position: -1088px -1232px;
+}
+
+.pkmn.volcanion::before {
+  background-position: -1156px -1232px;
+}
+
+.pkmn.rowlet::before {
+  background-position: -1224px -1232px;
+}
+
+.pkmn.dartrix::before {
+  background-position: -1292px -1232px;
+}
+
+.pkmn.decidueye::before {
+  background-position: -1360px -1232px;
+}
+
+.pkmn.litten::before {
+  background-position: -1428px -1232px;
+}
+
+.pkmn.torracat::before {
+  background-position: -1496px -1232px;
+}
+
+.pkmn.incineroar::before {
+  background-position: -1564px -1232px;
+}
+
+.pkmn.popplio::before {
+  background-position: -1632px -1232px;
+}
+
+.pkmn.brionne::before {
+  background-position: -1700px -1232px;
+}
+
+.pkmn.primarina::before {
+  background-position: -1768px -1232px;
+}
+
+.pkmn.pikipek::before {
+  background-position: -1836px -1232px;
+}
+
+.pkmn.trumbeak::before {
+  background-position: -1904px -1232px;
+}
+
+.pkmn.toucannon::before {
+  background-position: -1972px -1232px;
+}
+
+.pkmn.yungoos::before {
+  background-position: -2040px -1232px;
+}
+
+.pkmn.gumshoos::before {
+  background-position: -2108px -1232px;
+}
+
+.pkmn.grubbin::before {
+  background-position: 0 -1288px;
+}
+
+.pkmn.charjabug::before {
+  background-position: -68px -1288px;
+}
+
+.pkmn.vikavolt::before {
+  background-position: -136px -1288px;
+}
+
+.pkmn.crabrawler::before {
+  background-position: -204px -1288px;
+}
+
+.pkmn.crabominable::before {
+  background-position: -272px -1288px;
+}
+
+.pkmn.oricorio::before {
+  background-position: -340px -1288px;
+}
+
+.pkmn.cutiefly::before {
+  background-position: -408px -1288px;
+}
+
+.pkmn.ribombee::before {
+  background-position: -476px -1288px;
+}
+
+.pkmn.rockruff::before {
+  background-position: -544px -1288px;
+}
+
+.pkmn.lycanroc::before {
+  background-position: -612px -1288px;
+}
+
+.pkmn.wishiwashi::before {
+  background-position: -680px -1288px;
+}
+
+.pkmn.mareanie::before {
+  background-position: -748px -1288px;
+}
+
+.pkmn.toxapex::before {
+  background-position: -816px -1288px;
+}
+
+.pkmn.mudbray::before {
+  background-position: -884px -1288px;
+}
+
+.pkmn.mudsdale::before {
+  background-position: -952px -1288px;
+}
+
+.pkmn.dewpider::before {
+  background-position: -1020px -1288px;
+}
+
+.pkmn.araquanid::before {
+  background-position: -1088px -1288px;
+}
+
+.pkmn.fomantis::before {
+  background-position: -1156px -1288px;
+}
+
+.pkmn.lurantis::before {
+  background-position: -1224px -1288px;
+}
+
+.pkmn.morelull::before {
+  background-position: -1292px -1288px;
+}
+
+.pkmn.shiinotic::before {
+  background-position: -1360px -1288px;
+}
+
+.pkmn.salandit::before {
+  background-position: -1428px -1288px;
+}
+
+.pkmn.salazzle::before {
+  background-position: -1496px -1288px;
+}
+
+.pkmn.stufful::before {
+  background-position: -1564px -1288px;
+}
+
+.pkmn.bewear::before {
+  background-position: -1632px -1288px;
+}
+
+.pkmn.bounsweet::before {
+  background-position: -1700px -1288px;
+}
+
+.pkmn.steenee::before {
+  background-position: -1768px -1288px;
+}
+
+.pkmn.tsareena::before {
+  background-position: -1836px -1288px;
+}
+
+.pkmn.comfey::before {
+  background-position: -1904px -1288px;
+}
+
+.pkmn.oranguru::before {
+  background-position: -1972px -1288px;
+}
+
+.pkmn.passimian::before {
+  background-position: -2040px -1288px;
+}
+
+.pkmn.wimpod::before {
+  background-position: -2108px -1288px;
+}
+
+.pkmn.golisopod::before {
+  background-position: 0 -1344px;
+}
+
+.pkmn.sandygast::before {
+  background-position: -68px -1344px;
+}
+
+.pkmn.palossand::before {
+  background-position: -136px -1344px;
+}
+
+.pkmn.pyukumuku::before {
+  background-position: -204px -1344px;
+}
+
+.pkmn.type-null::before {
+  background-position: -272px -1344px;
+}
+
+.pkmn.silvally::before {
+  background-position: -340px -1344px;
+}
+
+.pkmn.minior::before {
+  background-position: -408px -1344px;
+}
+
+.pkmn.komala::before {
+  background-position: -476px -1344px;
+}
+
+.pkmn.turtonator::before {
+  background-position: -544px -1344px;
+}
+
+.pkmn.togedemaru::before {
+  background-position: -612px -1344px;
+}
+
+.pkmn.mimikyu::before {
+  background-position: -680px -1344px;
+}
+
+.pkmn.bruxish::before {
+  background-position: -748px -1344px;
+}
+
+.pkmn.drampa::before {
+  background-position: -816px -1344px;
+}
+
+.pkmn.dhelmise::before {
+  background-position: -884px -1344px;
+}
+
+.pkmn.jangmo-o::before {
+  background-position: -952px -1344px;
+}
+
+.pkmn.hakamo-o::before {
+  background-position: -1020px -1344px;
+}
+
+.pkmn.kommo-o::before {
+  background-position: -1088px -1344px;
+}
+
+.pkmn.tapu-koko::before {
+  background-position: -1156px -1344px;
+}
+
+.pkmn.tapu-lele::before {
+  background-position: -1224px -1344px;
+}
+
+.pkmn.tapu-bulu::before {
+  background-position: -1292px -1344px;
+}
+
+.pkmn.tapu-fini::before {
+  background-position: -1360px -1344px;
+}
+
+.pkmn.cosmog::before {
+  background-position: -1428px -1344px;
+}
+
+.pkmn.cosmoem::before {
+  background-position: -1496px -1344px;
+}
+
+.pkmn.solgaleo::before {
+  background-position: -1564px -1344px;
+}
+
+.pkmn.lunala::before {
+  background-position: -1632px -1344px;
+}
+
+.pkmn.nihilego::before {
+  background-position: -1700px -1344px;
+}
+
+.pkmn.buzzwole::before {
+  background-position: -1768px -1344px;
+}
+
+.pkmn.pheromosa::before {
+  background-position: -1836px -1344px;
+}
+
+.pkmn.xurkitree::before {
+  background-position: -1904px -1344px;
+}
+
+.pkmn.celesteela::before {
+  background-position: -1972px -1344px;
+}
+
+.pkmn.kartana::before {
+  background-position: -2040px -1344px;
+}
+
+.pkmn.guzzlord::before {
+  background-position: -2108px -1344px;
+}
+
+.pkmn.necrozma::before {
+  background-position: 0 -1400px;
+}
+
+.pkmn.magearna::before {
+  background-position: -68px -1400px;
+}
+
+.pkmn.marshadow::before {
+  background-position: -136px -1400px;
+}
+
+.pkmn.poipole::before {
+  background-position: -204px -1400px;
+}
+
+.pkmn.naganadel::before {
+  background-position: -272px -1400px;
+}
+
+.pkmn.stakataka::before {
+  background-position: -340px -1400px;
+}
+
+.pkmn.blacephalon::before {
+  background-position: -408px -1400px;
+}
+
+.pkmn.zeraora::before {
+  background-position: -476px -1400px;
+}
+
+.pkmn.meltan::before {
+  background-position: -544px -1400px;
+}
+
+.pkmn.melmetal::before {
+  background-position: -612px -1400px;
+}
+
+.pkmn.grookey::before {
+  background-position: -680px -1400px;
+}
+
+.pkmn.thwackey::before {
+  background-position: -748px -1400px;
+}
+
+.pkmn.rillaboom::before {
+  background-position: -816px -1400px;
+}
+
+.pkmn.scorbunny::before {
+  background-position: -884px -1400px;
+}
+
+.pkmn.raboot::before {
+  background-position: -952px -1400px;
+}
+
+.pkmn.cinderace::before {
+  background-position: -1020px -1400px;
+}
+
+.pkmn.sobble::before {
+  background-position: -1088px -1400px;
+}
+
+.pkmn.drizzile::before {
+  background-position: -1156px -1400px;
+}
+
+.pkmn.inteleon::before {
+  background-position: -1224px -1400px;
+}
+
+.pkmn.skwovet::before {
+  background-position: -1292px -1400px;
+}
+
+.pkmn.greedent::before {
+  background-position: -1360px -1400px;
+}
+
+.pkmn.rookidee::before {
+  background-position: -1428px -1400px;
+}
+
+.pkmn.corvisquire::before {
+  background-position: -1496px -1400px;
+}
+
+.pkmn.corviknight::before {
+  background-position: -1564px -1400px;
+}
+
+.pkmn.blipbug::before {
+  background-position: -1632px -1400px;
+}
+
+.pkmn.dottler::before {
+  background-position: -1700px -1400px;
+}
+
+.pkmn.orbeetle::before {
+  background-position: -1768px -1400px;
+}
+
+.pkmn.nickit::before {
+  background-position: -1836px -1400px;
+}
+
+.pkmn.thievul::before {
+  background-position: -1904px -1400px;
+}
+
+.pkmn.gossifleur::before {
+  background-position: -1972px -1400px;
+}
+
+.pkmn.eldegoss::before {
+  background-position: -2040px -1400px;
+}
+
+.pkmn.wooloo::before {
+  background-position: -2108px -1400px;
+}
+
+.pkmn.dubwool::before {
+  background-position: 0 -1456px;
+}
+
+.pkmn.chewtle::before {
+  background-position: -68px -1456px;
+}
+
+.pkmn.drednaw::before {
+  background-position: -136px -1456px;
+}
+
+.pkmn.yamper::before {
+  background-position: -204px -1456px;
+}
+
+.pkmn.boltund::before {
+  background-position: -272px -1456px;
+}
+
+.pkmn.rolycoly::before {
+  background-position: -340px -1456px;
+}
+
+.pkmn.carkol::before {
+  background-position: -408px -1456px;
+}
+
+.pkmn.coalossal::before {
+  background-position: -476px -1456px;
+}
+
+.pkmn.applin::before {
+  background-position: -544px -1456px;
+}
+
+.pkmn.flapple::before {
+  background-position: -612px -1456px;
+}
+
+.pkmn.appletun::before {
+  background-position: -680px -1456px;
+}
+
+.pkmn.silicobra::before {
+  background-position: -748px -1456px;
+}
+
+.pkmn.sandaconda::before {
+  background-position: -816px -1456px;
+}
+
+.pkmn.cramorant::before {
+  background-position: -884px -1456px;
+}
+
+.pkmn.arrokuda::before {
+  background-position: -952px -1456px;
+}
+
+.pkmn.barraskewda::before {
+  background-position: -1020px -1456px;
+}
+
+.pkmn.toxel::before {
+  background-position: -1088px -1456px;
+}
+
+.pkmn.toxtricity::before {
+  background-position: -1156px -1456px;
+}
+
+.pkmn.sizzlipede::before {
+  background-position: -1224px -1456px;
+}
+
+.pkmn.centiskorch::before {
+  background-position: -1292px -1456px;
+}
+
+.pkmn.clobbopus::before {
+  background-position: -1360px -1456px;
+}
+
+.pkmn.grapploct::before {
+  background-position: -1428px -1456px;
+}
+
+.pkmn.sinistea::before {
+  background-position: -1496px -1456px;
+}
+
+.pkmn.polteageist::before {
+  background-position: -1564px -1456px;
+}
+
+.pkmn.hatenna::before {
+  background-position: -1632px -1456px;
+}
+
+.pkmn.hattrem::before {
+  background-position: -1700px -1456px;
+}
+
+.pkmn.hatterene::before {
+  background-position: -1768px -1456px;
+}
+
+.pkmn.impidimp::before {
+  background-position: -1836px -1456px;
+}
+
+.pkmn.morgrem::before {
+  background-position: -1904px -1456px;
+}
+
+.pkmn.grimmsnarl::before {
+  background-position: -1972px -1456px;
+}
+
+.pkmn.obstagoon::before {
+  background-position: -2040px -1456px;
+}
+
+.pkmn.perrserker::before {
+  background-position: -2108px -1456px;
+}
+
+.pkmn.cursola::before {
+  background-position: 0 -1512px;
+}
+
+.pkmn.sirfetchd::before {
+  background-position: -68px -1512px;
+}
+
+.pkmn.mr-rime::before {
+  background-position: -136px -1512px;
+}
+
+.pkmn.runerigus::before {
+  background-position: -204px -1512px;
+}
+
+.pkmn.milcery::before {
+  background-position: -272px -1512px;
+}
+
+.pkmn.alcremie::before {
+  background-position: -340px -1512px;
+}
+
+.pkmn.falinks::before {
+  background-position: -408px -1512px;
+}
+
+.pkmn.pincurchin::before {
+  background-position: -476px -1512px;
+}
+
+.pkmn.snom::before {
+  background-position: -544px -1512px;
+}
+
+.pkmn.frosmoth::before {
+  background-position: -612px -1512px;
+}
+
+.pkmn.stonjourner::before {
+  background-position: -680px -1512px;
+}
+
+.pkmn.eiscue::before {
+  background-position: -748px -1512px;
+}
+
+.pkmn.indeedee::before {
+  background-position: -816px -1512px;
+}
+
+.pkmn.morpeko::before {
+  background-position: -884px -1512px;
+}
+
+.pkmn.cufant::before {
+  background-position: -952px -1512px;
+}
+
+.pkmn.copperajah::before {
+  background-position: -1020px -1512px;
+}
+
+.pkmn.dracozolt::before {
+  background-position: -1088px -1512px;
+}
+
+.pkmn.arctozolt::before {
+  background-position: -1156px -1512px;
+}
+
+.pkmn.dracovish::before {
+  background-position: -1224px -1512px;
+}
+
+.pkmn.arctovish::before {
+  background-position: -1292px -1512px;
+}
+
+.pkmn.duraludon::before {
+  background-position: -1360px -1512px;
+}
+
+.pkmn.dreepy::before {
+  background-position: -1428px -1512px;
+}
+
+.pkmn.drakloak::before {
+  background-position: -1496px -1512px;
+}
+
+.pkmn.dragapult::before {
+  background-position: -1564px -1512px;
+}
+
+.pkmn.zacian::before {
+  background-position: -1632px -1512px;
+}
+
+.pkmn.zamazenta::before {
+  background-position: -1700px -1512px;
+}
+
+.pkmn.eternatus::before {
+  background-position: -1768px -1512px;
+}
+
+.pkmn.kubfu::before {
+  background-position: -1836px -1512px;
+}
+
+.pkmn.urshifu::before {
+  background-position: -1904px -1512px;
+}
+
+.pkmn.zarude::before {
+  background-position: -1972px -1512px;
+}
+
+.pkmn.regieleki::before {
+  background-position: -2040px -1512px;
+}
+
+.pkmn.regidrago::before {
+  background-position: -2108px -1512px;
+}
+
+.pkmn.glastrier::before {
+  background-position: 0 -1568px;
+}
+
+.pkmn.spectrier::before {
+  background-position: -68px -1568px;
+}
+
+.pkmn.calyrex::before {
+  background-position: -136px -1568px;
+}
+
+.pkmn.wyrdeer::before {
+  background-position: -204px -1568px;
+}
+
+.pkmn.kleavor::before {
+  background-position: -272px -1568px;
+}
+
+.pkmn.ursaluna::before {
+  background-position: -340px -1568px;
+}
+
+.pkmn.basculegion::before {
+  background-position: -408px -1568px;
+}
+
+.pkmn.sneasler::before {
+  background-position: -476px -1568px;
+}
+
+.pkmn.overqwil::before {
+  background-position: -544px -1568px;
+}
+
+.pkmn.enamorus::before {
+  background-position: -612px -1568px;
+}
+
+.pkmn.sprigatito::before {
+  background-position: -680px -1568px;
+}
+
+.pkmn.floragato::before {
+  background-position: -748px -1568px;
+}
+
+.pkmn.meowscarada::before {
+  background-position: -816px -1568px;
+}
+
+.pkmn.fuecoco::before {
+  background-position: -884px -1568px;
+}
+
+.pkmn.crocalor::before {
+  background-position: -952px -1568px;
+}
+
+.pkmn.skeledirge::before {
+  background-position: -1020px -1568px;
+}
+
+.pkmn.quaxly::before {
+  background-position: -1088px -1568px;
+}
+
+.pkmn.quaxwell::before {
+  background-position: -1156px -1568px;
+}
+
+.pkmn.quaquaval::before {
+  background-position: -1224px -1568px;
+}
+
+.pkmn.lechonk::before {
+  background-position: -1292px -1568px;
+}
+
+.pkmn.oinkologne::before {
+  background-position: -1360px -1568px;
+}
+
+.pkmn.tarountula::before {
+  background-position: -1428px -1568px;
+}
+
+.pkmn.spidops::before {
+  background-position: -1496px -1568px;
+}
+
+.pkmn.nymble::before {
+  background-position: -1564px -1568px;
+}
+
+.pkmn.lokix::before {
+  background-position: -1632px -1568px;
+}
+
+.pkmn.pawmi::before {
+  background-position: -1700px -1568px;
+}
+
+.pkmn.pawmo::before {
+  background-position: -1768px -1568px;
+}
+
+.pkmn.pawmot::before {
+  background-position: -1836px -1568px;
+}
+
+.pkmn.tandemaus::before {
+  background-position: -1904px -1568px;
+}
+
+.pkmn.maushold::before {
+  background-position: -1972px -1568px;
+}
+
+.pkmn.fidough::before {
+  background-position: -2040px -1568px;
+}
+
+.pkmn.dachsbun::before {
+  background-position: -2108px -1568px;
+}
+
+.pkmn.smoliv::before {
+  background-position: 0 -1624px;
+}
+
+.pkmn.dolliv::before {
+  background-position: -68px -1624px;
+}
+
+.pkmn.arboliva::before {
+  background-position: -136px -1624px;
+}
+
+.pkmn.squawkabilly::before {
+  background-position: -204px -1624px;
+}
+
+.pkmn.nacli::before {
+  background-position: -272px -1624px;
+}
+
+.pkmn.naclstack::before {
+  background-position: -340px -1624px;
+}
+
+.pkmn.garganacl::before {
+  background-position: -408px -1624px;
+}
+
+.pkmn.charcadet::before {
+  background-position: -476px -1624px;
+}
+
+.pkmn.armarouge::before {
+  background-position: -544px -1624px;
+}
+
+.pkmn.ceruledge::before {
+  background-position: -612px -1624px;
+}
+
+.pkmn.tadbulb::before {
+  background-position: -680px -1624px;
+}
+
+.pkmn.bellibolt::before {
+  background-position: -748px -1624px;
+}
+
+.pkmn.wattrel::before {
+  background-position: -816px -1624px;
+}
+
+.pkmn.kilowattrel::before {
+  background-position: -884px -1624px;
+}
+
+.pkmn.maschiff::before {
+  background-position: -952px -1624px;
+}
+
+.pkmn.mabosstiff::before {
+  background-position: -1020px -1624px;
+}
+
+.pkmn.shroodle::before {
+  background-position: -1088px -1624px;
+}
+
+.pkmn.grafaiai::before {
+  background-position: -1156px -1624px;
+}
+
+.pkmn.bramblin::before {
+  background-position: -1224px -1624px;
+}
+
+.pkmn.brambleghast::before {
+  background-position: -1292px -1624px;
+}
+
+.pkmn.toedscool::before {
+  background-position: -1360px -1624px;
+}
+
+.pkmn.toedscruel::before {
+  background-position: -1428px -1624px;
+}
+
+.pkmn.klawf::before {
+  background-position: -1496px -1624px;
+}
+
+.pkmn.capsakid::before {
+  background-position: -1564px -1624px;
+}
+
+.pkmn.scovillain::before {
+  background-position: -1632px -1624px;
+}
+
+.pkmn.rellor::before {
+  background-position: -1700px -1624px;
+}
+
+.pkmn.rabsca::before {
+  background-position: -1768px -1624px;
+}
+
+.pkmn.flittle::before {
+  background-position: -1836px -1624px;
+}
+
+.pkmn.espathra::before {
+  background-position: -1904px -1624px;
+}
+
+.pkmn.tinkatink::before {
+  background-position: -1972px -1624px;
+}
+
+.pkmn.tinkatuff::before {
+  background-position: -2040px -1624px;
+}
+
+.pkmn.tinkaton::before {
+  background-position: -2108px -1624px;
+}
+
+.pkmn.wiglett::before {
+  background-position: 0 -1680px;
+}
+
+.pkmn.wugtrio::before {
+  background-position: -68px -1680px;
+}
+
+.pkmn.bombirdier::before {
+  background-position: -136px -1680px;
+}
+
+.pkmn.finizen::before {
+  background-position: -204px -1680px;
+}
+
+.pkmn.palafin::before {
+  background-position: -272px -1680px;
+}
+
+.pkmn.varoom::before {
+  background-position: -340px -1680px;
+}
+
+.pkmn.revavroom::before {
+  background-position: -408px -1680px;
+}
+
+.pkmn.cyclizar::before {
+  background-position: -476px -1680px;
+}
+
+.pkmn.orthworm::before {
+  background-position: -544px -1680px;
+}
+
+.pkmn.glimmet::before {
+  background-position: -612px -1680px;
+}
+
+.pkmn.glimmora::before {
+  background-position: -680px -1680px;
+}
+
+.pkmn.greavard::before {
+  background-position: -748px -1680px;
+}
+
+.pkmn.houndstone::before {
+  background-position: -816px -1680px;
+}
+
+.pkmn.flamigo::before {
+  background-position: -884px -1680px;
+}
+
+.pkmn.cetoddle::before {
+  background-position: -952px -1680px;
+}
+
+.pkmn.cetitan::before {
+  background-position: -1020px -1680px;
+}
+
+.pkmn.veluza::before {
+  background-position: -1088px -1680px;
+}
+
+.pkmn.dondozo::before {
+  background-position: -1156px -1680px;
+}
+
+.pkmn.tatsugiri::before {
+  background-position: -1224px -1680px;
+}
+
+.pkmn.annihilape::before {
+  background-position: -1292px -1680px;
+}
+
+.pkmn.clodsire::before {
+  background-position: -1360px -1680px;
+}
+
+.pkmn.farigiraf::before {
+  background-position: -1428px -1680px;
+}
+
+.pkmn.dudunsparce::before {
+  background-position: -1496px -1680px;
+}
+
+.pkmn.kingambit::before {
+  background-position: -1564px -1680px;
+}
+
+.pkmn.greattusk::before {
+  background-position: -1632px -1680px;
+}
+
+.pkmn.screamtail::before {
+  background-position: -1700px -1680px;
+}
+
+.pkmn.brutebonnet::before {
+  background-position: -1768px -1680px;
+}
+
+.pkmn.fluttermane::before {
+  background-position: -1836px -1680px;
+}
+
+.pkmn.slitherwing::before {
+  background-position: -1904px -1680px;
+}
+
+.pkmn.sandyshocks::before {
+  background-position: -1972px -1680px;
+}
+
+.pkmn.irontreads::before {
+  background-position: -2040px -1680px;
+}
+
+.pkmn.ironbundle::before {
+  background-position: -2108px -1680px;
+}
+
+.pkmn.ironhands::before {
+  background-position: 0 -1736px;
+}
+
+.pkmn.ironjugulis::before {
+  background-position: -68px -1736px;
+}
+
+.pkmn.ironmoth::before {
+  background-position: -136px -1736px;
+}
+
+.pkmn.ironthorns::before {
+  background-position: -204px -1736px;
+}
+
+.pkmn.frigibax::before {
+  background-position: -272px -1736px;
+}
+
+.pkmn.arctibax::before {
+  background-position: -340px -1736px;
+}
+
+.pkmn.baxcalibur::before {
+  background-position: -408px -1736px;
+}
+
+.pkmn.gimmighoul::before {
+  background-position: -476px -1736px;
+}
+
+.pkmn.gholdengo::before {
+  background-position: -544px -1736px;
+}
+
+.pkmn.wo-chien::before {
+  background-position: -612px -1736px;
+}
+
+.pkmn.chien-pao::before {
+  background-position: -680px -1736px;
+}
+
+.pkmn.ting-lu::before {
+  background-position: -748px -1736px;
+}
+
+.pkmn.chi-yu::before {
+  background-position: -816px -1736px;
+}
+
+.pkmn.roaringmoon::before {
+  background-position: -884px -1736px;
+}
+
+.pkmn.ironvaliant::before {
+  background-position: -952px -1736px;
+}
+
+.pkmn.koraidon::before {
+  background-position: -1020px -1736px;
+}
+
+.pkmn.miraidon::before {
+  background-position: -1088px -1736px;
+}

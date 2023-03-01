@@ -1,6 +1,6 @@
 import Clean from 'clean-css';
 
-import pokemon from 'pokemon-assets/assets/css/pokemon.css';
+import pokemon from './_pokemon.css';
 
 const clean = new Clean();
 const resourceMap = { pokemon };
