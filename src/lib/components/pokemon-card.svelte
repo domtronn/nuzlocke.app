@@ -1,6 +1,6 @@
 <script>
 
-  export let sprite, name, types, level = '', moves, maxStat, held = '', ability = '', stats, nature = undefined
+  export let sprite, fallback, name, types, level = '', moves, maxStat, held = '', ability = '', stats, nature = undefined
 
   import { capitalise } from '$lib/utils/string'
 
@@ -78,7 +78,14 @@
     <div class='absolute -right-8 h-0'>
       <slot name=img />
       {#if sprite}
-        <img width=96 height=96 style="--v-anim-dur: {animDur}s; --v-anim-delay: {animDelay}s" class='{anim} img__pkm  -translate-y-16 h-40 w-auto' src={sprite} alt={name} />
+        <img
+          width=96
+          height=96
+          style="--v-anim-dur: {animDur}s; --v-anim-delay: {animDelay}s"
+          class='{anim} img__pkm  -translate-y-16 h-40 w-auto'
+          src={sprite}
+          onerror="this.onerror=null;this.src='{fallback}'"
+          alt={name} />
       {:else}
         <img width=96 height=96
              src={UNOWN}
