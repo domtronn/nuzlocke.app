@@ -7,8 +7,8 @@ import { typeAdvantages } from '../../battle/advice.json/_types';
  * for suggestions of what types to catch
  */
 
-export async function POST({ body }) {
-  const { box } = body;
+export async function POST({ request }) {
+  const { box } = await request.json();
   const analysis = Object.entries(
     types.reduce((acc, it) => {
       const dmg = box.map(({ types }) => moveResistance(it, types));
