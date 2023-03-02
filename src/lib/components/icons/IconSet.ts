@@ -59,6 +59,8 @@ export { default as Save } from '@iconify-icons/ph/floppy-disk';
 export { default as QR } from '@iconify-icons/gg/qr';
 export { default as QRCode } from '@iconify-icons/ri/qr-code-fill';
 
+export { default as Dice } from '@iconify-icons/mdi/dice-multiple-outline'
+
 export { default as Game } from '@iconify-icons/gg/games';
 export { default as Hand } from '@iconify-icons/fa-solid/hand-holding';
 export { default as Heart } from '@iconify-icons/ph/heart-straight-fill';

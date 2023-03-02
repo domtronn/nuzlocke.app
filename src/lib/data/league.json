@@ -39046,6 +39046,7 @@
     "giacomo": {
       "name": "Giacomo",
       "speciality": "dark",
+      "img": "/leaders/sv-giacomo",
       "pokemon": [
         {
           "name": "pawniard",
@@ -39073,6 +39074,7 @@
     "mela": {
       "name": "Mela",
       "speciality": "fire",
+      "img": "/leaders/sv-mela",
       "pokemon": [
         {
           "name": "torkoal",
@@ -39099,6 +39101,7 @@
     "atticus": {
       "name": "Atticus",
       "speciality": "poison",
+      "img": "/leaders/sv-atticus",
       "pokemon": [
         {
           "name": "skuntank",
@@ -39146,6 +39149,7 @@
     "ortega": {
       "name": "Ortega",
       "speciality": "fairy",
+      "img": "/leaders/sv-ortega",
       "pokemon": [
         {
           "name": "azumarill",
@@ -39196,6 +39200,7 @@
     "eri": {
       "name": "Eri",
       "speciality": "fighting",
+      "img": "/leaders/sv-eri",
       "pokemon": [
         {
           "name": "toxicroak",
@@ -39254,6 +39259,11 @@
     "clive": {
       "name": "Clive",
       "speciality": "",
+      "img": {
+        "src": "/leaders/sv-clavell",
+        "author": "Kyledove",
+        "link": "https://www.deviantart.com/kyle-dove"
+      },
       "pokemon": [
         {
           "name": "oranguru",

@@ -12,8 +12,7 @@
   import SideNav from '$lib/components/navs/SideNav.svelte'
 
   import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
-  import { Arrow } from '$icons'
-  import { Hide } from '$icons'
+  import { Arrow, Hide } from '$icons'
 
   import Games from '$lib/data/games.json'
   import deferStyles from '$lib/utils/defer-styles'

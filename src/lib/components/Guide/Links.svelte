@@ -1,7 +1,7 @@
 <script>
   export let links
   import { SVGs } from './'
-  const order = ['romhack', 'I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII']
+  const order = ['romhack', 'I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX']
 </script>
 
 <nav>

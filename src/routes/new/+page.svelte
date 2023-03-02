@@ -8,7 +8,9 @@
 
   import { Button, Tabs, AutoComplete, Input, Picture, Tooltip } from '$lib/components/core'
 
-  import { File } from '$icons'
+  import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
+  import { File, Dice } from '$icons'
+
   import Games from '$lib/data/games.json'
 
   import { filterObj } from '$lib/utils/arr'
@@ -28,7 +30,7 @@
     if (!selectedGame.supported)
       return alert(`Sorry, ${selectedGame.title} is currently not supported`)
 
-    fetch(`/api/route/generate/${selected}.json`)
+    fetch(`/api/route/generate/${selectedGame.pid}.json`)
       .then(res => res.text())
       .then((res) => {
         savedGames.update(createGame(gameName, selected, res))
@@ -48,7 +50,7 @@
     { label: 'All', val: 'All' },
     { label: 'Rom Hacks', val: 'romhack' },
   ].concat(
-    ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII']
+    ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX']
       .map(l => ({ label: `Gen ${l}`, val: l }))
   )
 
@@ -96,9 +98,10 @@
       Create game
     </Button>
     <div>
-      <Tooltip>Generate a game with precalculated encounters, useful for games like Sword & Shield which don't have traditional encounters</Tooltip>
+      <Tooltip>Generate a game with pre-randomized encounters, designed for games like Scarlet & Violet with overworld only encounters</Tooltip>
       <Button rounded disabled={disabled} on:click={handleGenGame}>
-        Precalculate
+        Randomize
+        <Icon inline=true icon={Dice} class='inline' />
       </Button>
     </div>
 
