@@ -3,7 +3,7 @@ import Themes from '$lib/data/theme.json'
 
 export const prerender = true;
 
-export async function load ({ params, url, fetch,...rest }) {
+export async function load ({ params, url, fetch }) {
   const { game } = params
 
   const links = Object
@@ -105,8 +105,8 @@ export async function load ({ params, url, fetch,...rest }) {
           }}, {})
 
   return {
-           links, game: gameObj, path: url.pathname,
-           route: { routes, gyms, count: encounters.length, encounters: encounterdata, encounterMap },
-           data: { fire, water, grass }
-         }
+    links, game: gameObj, path: url.pathname,
+    route: { routes, gyms, count: encounters.length, encounters: encounterdata, encounterMap },
+    data: { fire, water, grass }
+  }
 }

@@ -1,7 +1,3 @@
-<script context="module">
-  export const prerender = true
-</script>
-
 <script>
   import { PixelatedContainer } from '$lib/components/containers'
   import { Picture } from '$lib/components/core'

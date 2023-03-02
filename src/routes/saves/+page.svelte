@@ -1,7 +1,3 @@
-<script context="module">
-  export const router = false
-</script>
-
 <script>
   import { browser } from '$app/environment'
   import { savedGames, parse } from '$lib/store'

@@ -1,7 +1,3 @@
-<script context='module'>
-  export const router = false
-</script>
-
 <script>
   export let id = 25
 

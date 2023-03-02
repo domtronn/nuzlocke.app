@@ -11,7 +11,8 @@ const nonnull = (o) =>
   Object.fromEntries(Object.entries(o).filter(([, v]) => !!v));
 const gen = Generations.get(8);
 
-export async function POST({ body }) {
+export async function POST({ request }) {
+  const body = await request.json()
   const { box, team } = body;
 
   const teamMoves = team.map(({ name, moves }) => ({
