@@ -3222,6 +3222,20 @@
     },
     {
       "type": "route",
+      "name": "Underground: Volcanic Cave",
+      "encounters": [
+        "geodude",
+        "onix",
+        "skorupi",
+        "ponyta",
+        "graveler",
+        "houndoom",
+        "houndoom",
+        "magby"
+      ]
+    },
+    {
+      "type": "route",
       "name": "Underground: Glacial Cavern",
       "encounters": [
         "magnemite",
@@ -4437,6 +4451,10 @@
     },
     {
       "type": "route",
+      "name": "Underground: Volcanic Cave"
+    },
+    {
+      "type": "route",
       "name": "Underground: Glacial Cavern"
     },
     {
@@ -5631,6 +5649,13 @@
         "foongus",
         "cubchoo"
       ]
+    },
+    {
+      "type": "gym",
+      "name": "Route 7",
+      "value": "c55",
+      "group": "rival",
+      "boss": "Cheren"
     },
     {
       "type": "gym",
@@ -8951,8 +8976,8 @@
     },
     {
       "type": "gym",
-      "name": "Rival",
-      "value": "r2",
+      "name": "Rival (optional)",
+      "value": "r3",
       "group": "rival",
       "boss": "Blue"
     },
@@ -14560,7 +14585,9 @@
       "type": "route",
       "name": "Rustboro City",
       "encounters": [
-        "seedot"
+        "seedot",
+        "lileep",
+        "anorith"
       ]
     },
     {
@@ -14581,6 +14608,11 @@
       "type": "route",
       "name": "Route 105",
       "encounters": [
+        "tentacool",
+        "magikarp",
+        "wingull",
+        "pelipper",
+        "wailmer",
         "regice"
       ]
     },
@@ -14637,6 +14669,7 @@
         "zubat",
         "abra",
         "geodude",
+        "makuhita",
         "nosepass",
         "sableye",
         "aron"
@@ -14785,6 +14818,7 @@
       "type": "route",
       "name": "Meteor Falls",
       "encounters": [
+        "zubat",
         "golbat",
         "goldeen",
         "magikarp",
@@ -14839,6 +14873,15 @@
       "type": "route",
       "name": "Route 111",
       "encounters": [
+        "sandshrew",
+        "geodude",
+        "goldeen",
+        "magikarp",
+        "marill",
+        "trapinch",
+        "cacnea",
+        "barboach",
+        "baltoy",
         "regirock"
       ]
     },
@@ -14889,7 +14932,19 @@
       "type": "route",
       "name": "Route 119",
       "encounters": [
-        "castform"
+        "oddish",
+        "tentacool",
+        "goldeen",
+        "magikarp",
+        "zigzagoon",
+        "linoone",
+        "wingull",
+        "pelipper",
+        "carvanha",
+        "feebas",
+        "castform",
+        "kecleon",
+        "tropius"
       ]
     },
     {
@@ -14918,6 +14973,16 @@
       "type": "route",
       "name": "Route 120",
       "encounters": [
+        "oddish",
+        "goldeen",
+        "magikarp",
+        "marill",
+        "poochyena",
+        "mightyena",
+        "seedot",
+        "barboach",
+        "kecleon",
+        "absol",
         "registeel"
       ]
     },
@@ -14953,13 +15018,40 @@
         "oddish",
         "gloom",
         "psyduck",
+        "golduck",
+        "geodude",
         "doduo",
+        "dodrio",
+        "rhyhorn",
         "goldeen",
         "seaking",
+        "pinsir",
         "magikarp",
+        "hoothoot",
+        "ledyba",
+        "spinarak",
         "natu",
+        "xatu",
+        "mareep",
+        "marill",
+        "aipom",
+        "sunkern",
+        "wooper",
+        "quagsire",
         "wobbuffet",
-        "girafarig"
+        "girafarig",
+        "pineco",
+        "gligar",
+        "snubbull",
+        "shuckle",
+        "heracross",
+        "teddiursa",
+        "remoraid",
+        "octillery",
+        "houndour",
+        "phanpy",
+        "stantler",
+        "miltank"
       ]
     },
     {
@@ -14978,6 +15070,8 @@
       "type": "route",
       "name": "Mt. Pyre",
       "encounters": [
+        "vulpix",
+        "wingull",
         "shuppet",
         "duskull",
         "chimecho"
@@ -15063,7 +15157,13 @@
       "type": "route",
       "name": "Route 124",
       "encounters": [
+        "tentacool",
+        "magikarp",
         "chinchou",
+        "wingull",
+        "pelipper",
+        "sharpedo",
+        "wailmer",
         "clamperl",
         "relicanth"
       ]
@@ -15072,6 +15172,12 @@
       "type": "route",
       "name": "Mossdeep City",
       "encounters": [
+        "tentacool",
+        "magikarp",
+        "wingull",
+        "pelipper",
+        "sharpedo",
+        "wailmer",
         "beldum"
       ]
     },
@@ -15107,6 +15213,9 @@
       "encounters": [
         "zubat",
         "golbat",
+        "tentacool",
+        "magikarp",
+        "wailmer",
         "snorunt",
         "spheal"
       ]
@@ -15165,7 +15274,13 @@
       "type": "route",
       "name": "Route 126",
       "encounters": [
+        "tentacool",
+        "magikarp",
         "chinchou",
+        "wingull",
+        "pelipper",
+        "sharpedo",
+        "wailmer",
         "clamperl",
         "relicanth"
       ]
@@ -15239,6 +15354,11 @@
       "type": "route",
       "name": "Sky Pillar",
       "encounters": [
+        "golbat",
+        "sableye",
+        "altaria",
+        "claydol",
+        "banette",
         "rayquaza"
       ]
     },
@@ -15349,11 +15469,19 @@
       "type": "route",
       "name": "Victory Road",
       "encounters": [
+        "zubat",
         "golbat",
+        "geodude",
+        "graveler",
         "goldeen",
         "magikarp",
+        "whismur",
+        "loudred",
+        "makuhita",
+        "hariyama",
         "sableye",
         "mawile",
+        "aron",
         "lairon",
         "barboach",
         "whiscash"
@@ -23848,6 +23976,20 @@
     },
     {
       "type": "route",
+      "name": "Route 109",
+      "encounters": [
+        "sandygast",
+        "frillish",
+        "mantyke",
+        "pyukumuku",
+        "corsola",
+        "mareanie",
+        "toxapex",
+        "bruxish"
+      ]
+    },
+    {
+      "type": "route",
       "name": "Slateport City",
       "encounters": [
         "tentacool",
@@ -24896,20 +25038,6 @@
         "skrelp",
         "dragalge",
         "dhelmise"
-      ]
-    },
-    {
-      "type": "route",
-      "name": "Route 109",
-      "encounters": [
-        "sandygast",
-        "frillish",
-        "mantyke",
-        "pyukumuku",
-        "corsola",
-        "mareanie",
-        "toxapex",
-        "bruxish"
       ]
     },
     {
@@ -30811,7 +30939,7 @@
     {
       "type": "gym",
       "name": "Victory Road",
-      "value": "b5",
+      "value": "b6",
       "group": "rival",
       "boss": "Barry"
     },
@@ -30913,6 +31041,9 @@
         "nidoranm",
         "growlithe",
         "doduo",
+        "turtwig",
+        "chimchar",
+        "piplup",
         "starly",
         "bidoof",
         "kricketot"
@@ -31009,7 +31140,14 @@
       "type": "route",
       "name": "Oreburgh City",
       "encounters": [
-        "abra"
+        "abra",
+        "omanyte",
+        "kabuto",
+        "aerodactyl",
+        "lileep",
+        "anorith",
+        "cranidos",
+        "shieldon"
       ]
     },
     {
@@ -31036,6 +31174,7 @@
         "machop",
         "geodude",
         "ponyta",
+        "munchlax",
         "aipom",
         "heracross",
         "phanpy",
@@ -31044,8 +31183,7 @@
         "kricketot",
         "burmy",
         "combee",
-        "cherubi",
-        "munchlax"
+        "cherubi"
       ]
     },
     {
@@ -31061,15 +31199,16 @@
         "seaking",
         "magikarp",
         "gyarados",
+        "sunkern",
         "pineco",
         "wurmple",
         "lotad",
         "seedot",
+        "budew",
         "starly",
         "bidoof",
         "kricketot",
-        "shinx",
-        "budew"
+        "shinx"
       ]
     },
     {
@@ -31103,16 +31242,30 @@
       "type": "route",
       "name": "Route 205",
       "encounters": [
+        "psyduck",
+        "golduck",
         "tentacool",
         "tentacruel",
+        "slowpoke",
         "shellder",
         "magikarp",
         "gyarados",
+        "munchlax",
+        "hoothoot",
         "hoppip",
         "aipom",
         "heracross",
         "wurmple",
+        "silcoon",
+        "beautifly",
+        "cascoon",
+        "dustox",
+        "lotad",
+        "budew",
+        "barboach",
+        "whiscash",
         "bidoof",
+        "kricketot",
         "burmy",
         "combee",
         "pachirisu",
@@ -31120,7 +31273,6 @@
         "cherubi",
         "shellos",
         "gastrodon",
-        "munchlax",
         "finneon",
         "lumineon"
       ]
@@ -31196,7 +31348,8 @@
       "name": "The Old Chateau",
       "encounters": [
         "gastly",
-        "gengar"
+        "gengar",
+        "rotom"
       ]
     },
     {
@@ -31264,7 +31417,36 @@
       "type": "route",
       "name": "Mt. Coronet",
       "encounters": [
-        "regice"
+        "cleffa",
+        "clefairy",
+        "zubat",
+        "golbat",
+        "machop",
+        "machoke",
+        "geodude",
+        "graveler",
+        "magikarp",
+        "gyarados",
+        "dratini",
+        "dragonair",
+        "noctowl",
+        "loudred",
+        "nosepass",
+        "meditite",
+        "medicham",
+        "lunatone",
+        "solrock",
+        "barboach",
+        "whiscash",
+        "feebas",
+        "chingling",
+        "chimecho",
+        "absol",
+        "regice",
+        "bronzor",
+        "bronzong",
+        "snover",
+        "abomasnow"
       ]
     },
     {
@@ -31367,11 +31549,18 @@
       "type": "route",
       "name": "Route 210",
       "encounters": [
+        "psyduck",
+        "golduck",
+        "machop",
+        "machoke",
         "geodude",
         "ponyta",
         "chansey",
         "scyther",
         "tauros",
+        "magikarp",
+        "gyarados",
+        "munchlax",
         "hoothoot",
         "noctowl",
         "aipom",
@@ -31381,12 +31570,19 @@
         "wurmple",
         "seedot",
         "nuzleaf",
+        "meditite",
         "roselia",
+        "swablu",
+        "zangoose",
+        "seviper",
+        "barboach",
+        "whiscash",
+        "bagon",
         "staravia",
+        "bibarel",
         "burmy",
         "combee",
-        "cherubi",
-        "munchlax"
+        "cherubi"
       ]
     },
     {
@@ -31493,14 +31689,28 @@
       "type": "route",
       "name": "Great Marsh",
       "encounters": [
+        "arbok",
         "paras",
         "exeggcute",
+        "tangela",
         "kangaskhan",
+        "magikarp",
+        "gyarados",
+        "hoothoot",
+        "noctowl",
+        "yanma",
+        "wooper",
+        "quagsire",
         "shroomish",
         "roselia",
         "gulpin",
+        "carvanha",
+        "barboach",
+        "whiscash",
         "kecleon",
+        "tropius",
         "staravia",
+        "bibarel",
         "skorupi",
         "drapion",
         "croagunk",
@@ -31527,26 +31737,35 @@
       "name": "Route 212",
       "encounters": [
         "ekans",
+        "psyduck",
+        "golduck",
         "tentacool",
         "tentacruel",
         "grimer",
+        "goldeen",
+        "seaking",
         "magikarp",
         "gyarados",
+        "munchlax",
+        "marill",
         "aipom",
         "quagsire",
         "heracross",
         "remoraid",
         "octillery",
+        "smeargle",
         "wurmple",
         "lotad",
         "lombre",
+        "kirlia",
+        "roselia",
+        "staravia",
         "burmy",
         "combee",
         "buizel",
         "cherubi",
         "shellos",
         "gastrodon",
-        "munchlax",
         "croagunk"
       ]
     },
@@ -31737,7 +31956,25 @@
       "type": "route",
       "name": "Iron Island",
       "encounters": [
-        "registeel"
+        "zubat",
+        "golbat",
+        "tentacool",
+        "tentacruel",
+        "geodude",
+        "graveler",
+        "onix",
+        "steelix",
+        "magikarp",
+        "gyarados",
+        "qwilfish",
+        "wingull",
+        "pelipper",
+        "sableye",
+        "mawile",
+        "registeel",
+        "riolu",
+        "finneon",
+        "lumineon"
       ]
     },
     {
@@ -31746,11 +31983,20 @@
       "encounters": [
         "zubat",
         "machop",
-        "noctowl",
+        "machoke",
+        "graveler",
         "tyrogue",
+        "munchlax",
+        "noctowl",
+        "aipom",
+        "heracross",
+        "wurmple",
         "meditite",
-        "bidoof",
         "chingling",
+        "bidoof",
+        "burmy",
+        "combee",
+        "cherubi",
         "bronzor"
       ]
     },
@@ -31809,6 +32055,19 @@
       "type": "route",
       "name": "Lake Acuity",
       "encounters": [
+        "psyduck",
+        "golduck",
+        "goldeen",
+        "seaking",
+        "magikarp",
+        "gyarados",
+        "sneasel",
+        "teddiursa",
+        "lunatone",
+        "solrock",
+        "snorunt",
+        "bibarel",
+        "snover",
         "uxie"
       ]
     },
@@ -31817,6 +32076,7 @@
       "name": "Snowpoint Temple",
       "encounters": [
         "golbat",
+        "smoochum",
         "jynx",
         "sneasel",
         "regigigas"
@@ -31921,20 +32181,21 @@
       ]
     },
     {
-      "type": "gym",
-      "name": "Victory Road",
-      "value": "b5",
-      "group": "rival",
-      "boss": "Barry"
-    },
-    {
       "type": "route",
       "name": "Victory Road",
       "encounters": [
         "golbat",
         "graveler",
+        "magneton",
+        "dewgong",
         "onix",
         "steelix",
+        "rhyhorn",
+        "rhydon",
+        "magikarp",
+        "gyarados",
+        "lapras",
+        "azumarill",
         "floatzel",
         "gabite"
       ]
@@ -34449,8 +34710,8 @@
     },
     {
       "type": "gym",
-      "name": "Rival",
-      "value": "r2",
+      "name": "Rival (optional)",
+      "value": "r3",
       "group": "rival",
       "boss": "Blue"
     },
@@ -34510,7 +34771,7 @@
     {
       "type": "gym",
       "name": "S.S. Anne",
-      "value": "r3",
+      "value": "r4",
       "group": "rival",
       "boss": "Blue"
     },
@@ -36177,7 +36438,7 @@
     {
       "type": "gym",
       "name": "Galactic HQ",
-      "value": "sat2",
+      "value": "sat3",
       "group": "evil-team",
       "boss": "Saturn"
     },
@@ -37383,6 +37644,13 @@
       "value": "e3",
       "group": "elite-four",
       "boss": "Glacia"
+    },
+    {
+      "type": "gym",
+      "name": "Pokémon League",
+      "value": "e4",
+      "group": "elite-four",
+      "boss": "Drake"
     },
     {
       "type": "gym",
@@ -40416,6 +40684,13 @@
       "value": "e3",
       "group": "elite-four",
       "boss": "Glacia"
+    },
+    {
+      "type": "gym",
+      "name": "Pokémon League",
+      "value": "e4",
+      "group": "elite-four",
+      "boss": "Drake"
     },
     {
       "type": "gym",
@@ -48243,6 +48518,20 @@
         "shelgon",
         "chingling",
         "bronzor"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Underground: Volcanic Cave",
+      "encounters": [
+        "geodude",
+        "onix",
+        "skorupi",
+        "ponyta",
+        "graveler",
+        "houndoom",
+        "houndoom",
+        "magby"
       ]
     },
     {
@@ -62989,6 +63278,13 @@
         "foongus",
         "cubchoo"
       ]
+    },
+    {
+      "type": "gym",
+      "name": "Route 7",
+      "value": "c55",
+      "group": "rival",
+      "boss": "Cheren"
     },
     {
       "type": "gym",

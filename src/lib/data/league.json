@@ -828,19 +828,6 @@
           "starter": "grass"
         },
         {
-          "name": "emboar",
-          "level": "41",
-          "moves": [
-            "take-down",
-            "assurance",
-            "heat-crash",
-            "rollout"
-          ],
-          "ability": "blaze",
-          "held": "charcoal",
-          "starter": "grass"
-        },
-        {
           "name": "simisage",
           "level": "39",
           "moves": [
@@ -851,19 +838,6 @@
           ],
           "ability": "gluttony",
           "held": "miracle-seed",
-          "starter": "fire"
-        },
-        {
-          "name": "dewott",
-          "level": "41",
-          "moves": [
-            "aqua-jet",
-            "encore",
-            "revenge",
-            "slash"
-          ],
-          "ability": "torrent",
-          "held": "mystic-water",
           "starter": "fire"
         },
         {
@@ -878,6 +852,32 @@
           "ability": "gluttony",
           "held": "charcoal",
           "starter": "water"
+        },
+        {
+          "name": "emboar",
+          "level": "41",
+          "moves": [
+            "take-down",
+            "assurance",
+            "heat-crash",
+            "rollout"
+          ],
+          "ability": "blaze",
+          "held": "charcoal",
+          "starter": "grass"
+        },
+        {
+          "name": "dewott",
+          "level": "41",
+          "moves": [
+            "aqua-jet",
+            "encore",
+            "revenge",
+            "slash"
+          ],
+          "ability": "torrent",
+          "held": "mystic-water",
+          "starter": "fire"
         },
         {
           "name": "servine",
@@ -1254,7 +1254,7 @@
             "quick-attack",
             "work-up",
             "leer",
-            "growl"
+            "tackle"
           ],
           "ability": "super-luck"
         },
@@ -1439,7 +1439,7 @@
     "4n": {
       "name": "Elesa",
       "speciality": "electric",
-      "img": "/leaders/blwh-elesa",
+      "img": "/leaders/blwh-elesa-2",
       "pokemon": [
         {
           "name": "emolga",
@@ -1478,7 +1478,7 @@
     "4c": {
       "name": "Elesa",
       "speciality": "electric",
-      "img": "/leaders/blwh-elesa",
+      "img": "/leaders/blwh-elesa-2",
       "pokemon": [
         {
           "name": "emolga",
@@ -1769,7 +1769,7 @@
           "moves": [
             "revenge",
             "crunch",
-            "slash",
+            "dragon-tail",
             "rock-slide"
           ],
           "ability": "sheer-force",
@@ -1869,17 +1869,6 @@
           "ability": "water-veil"
         },
         {
-          "name": "mantine",
-          "level": "53",
-          "moves": [
-            "air-slash",
-            "confuse-ray",
-            "ice-beam",
-            "scald"
-          ],
-          "ability": "swift-swim"
-        },
-        {
           "name": "carracosta",
           "level": "53",
           "moves": [
@@ -1890,6 +1879,17 @@
           ],
           "ability": "sturdy",
           "held": "sitrus-berry"
+        },
+        {
+          "name": "mantine",
+          "level": "53",
+          "moves": [
+            "air-slash",
+            "confuse-ray",
+            "ice-beam",
+            "scald"
+          ],
+          "ability": "swift-swim"
         },
         {
           "name": "jellicent",
@@ -5134,107 +5134,6 @@
       "img": "/leaders/blwh-bianca",
       "pokemon": [
         {
-          "name": "stoutland",
-          "level": "38",
-          "moves": [
-            "crunch",
-            "roar",
-            "retaliate",
-            "work-up"
-          ],
-          "ability": "intimidate"
-        },
-        {
-          "name": "simisear",
-          "level": "38",
-          "moves": [
-            "leer",
-            "fury-swipes",
-            "lick",
-            "flame-burst"
-          ],
-          "ability": "gluttony",
-          "starter": "grass"
-        },
-        {
-          "name": "simipour",
-          "level": "38",
-          "moves": [
-            "leer",
-            "fury-swipes",
-            "lick",
-            "scald"
-          ],
-          "ability": "gluttony",
-          "starter": "fire"
-        },
-        {
-          "name": "simisage",
-          "level": "38",
-          "moves": [
-            "leer",
-            "fury-swipes",
-            "lick",
-            "seed-bomb"
-          ],
-          "ability": "gluttony",
-          "starter": "water"
-        },
-        {
-          "name": "samurott",
-          "level": "40",
-          "moves": [
-            "aqua-jet",
-            "revenge",
-            "slash",
-            "encore"
-          ],
-          "ability": "torrent",
-          "starter": "grass"
-        },
-        {
-          "name": "serperior",
-          "level": "40",
-          "moves": [
-            "slam",
-            "coil",
-            "mega-drain",
-            "leaf-blade"
-          ],
-          "ability": "overgrow",
-          "starter": "fire"
-        },
-        {
-          "name": "emboar",
-          "level": "40",
-          "moves": [
-            "heat-crash",
-            "assurance",
-            "rollout",
-            "take-down"
-          ],
-          "ability": "blaze",
-          "starter": "water"
-        },
-        {
-          "name": "musharna",
-          "level": "38",
-          "moves": [
-            "defense-curl",
-            "lucky-chant",
-            "psybeam",
-            "hypnosis"
-          ],
-          "ability": "forewarn"
-        }
-      ]
-    },
-    "b5": {
-      "name": "Bianca",
-      "speciality": "",
-      "img": "/leaders/blwh-bianca",
-      "pokemon": [
-        {
           "name": "herdier",
           "level": "26",
           "moves": [
@@ -5320,6 +5219,107 @@
         {
           "name": "munna",
           "level": "26",
+          "moves": [
+            "defense-curl",
+            "lucky-chant",
+            "psybeam",
+            "hypnosis"
+          ],
+          "ability": "forewarn"
+        }
+      ]
+    },
+    "b5": {
+      "name": "Bianca",
+      "speciality": "",
+      "img": "/leaders/blwh-bianca",
+      "pokemon": [
+        {
+          "name": "stoutland",
+          "level": "38",
+          "moves": [
+            "crunch",
+            "roar",
+            "retaliate",
+            "work-up"
+          ],
+          "ability": "intimidate"
+        },
+        {
+          "name": "simisear",
+          "level": "38",
+          "moves": [
+            "leer",
+            "fury-swipes",
+            "lick",
+            "flame-burst"
+          ],
+          "ability": "gluttony",
+          "starter": "grass"
+        },
+        {
+          "name": "simipour",
+          "level": "38",
+          "moves": [
+            "leer",
+            "fury-swipes",
+            "lick",
+            "scald"
+          ],
+          "ability": "gluttony",
+          "starter": "fire"
+        },
+        {
+          "name": "simisage",
+          "level": "38",
+          "moves": [
+            "leer",
+            "fury-swipes",
+            "lick",
+            "seed-bomb"
+          ],
+          "ability": "gluttony",
+          "starter": "water"
+        },
+        {
+          "name": "samurott",
+          "level": "40",
+          "moves": [
+            "aqua-jet",
+            "revenge",
+            "slash",
+            "encore"
+          ],
+          "ability": "torrent",
+          "starter": "grass"
+        },
+        {
+          "name": "serperior",
+          "level": "40",
+          "moves": [
+            "slam",
+            "coil",
+            "mega-drain",
+            "leaf-blade"
+          ],
+          "ability": "overgrow",
+          "starter": "fire"
+        },
+        {
+          "name": "emboar",
+          "level": "40",
+          "moves": [
+            "heat-crash",
+            "assurance",
+            "rollout",
+            "take-down"
+          ],
+          "ability": "blaze",
+          "starter": "water"
+        },
+        {
+          "name": "musharna",
+          "level": "38",
           "moves": [
             "defense-curl",
             "lucky-chant",
@@ -5685,6 +5685,115 @@
             "roost"
           ],
           "ability": "super-luck"
+        }
+      ]
+    },
+    "c55": {
+      "name": "Cheren",
+      "speciality": "",
+      "img": "/leaders/blwh-cheren",
+      "pokemon": [
+        {
+          "name": "unfezant",
+          "level": "33",
+          "moves": [
+            "roost",
+            "detect",
+            "air-slash",
+            "taunt"
+          ],
+          "ability": "super-luck",
+          "held": "scope-lens"
+        },
+        {
+          "name": "liepard",
+          "level": "33",
+          "moves": [
+            "torment",
+            "fake-out",
+            "hone-claws",
+            "assurance"
+          ],
+          "ability": "unburden",
+          "held": "sitrus-berry"
+        },
+        {
+          "name": "simisage",
+          "level": "33",
+          "moves": [
+            "leer",
+            "lick",
+            "fury-swipes",
+            "seed-bomb"
+          ],
+          "ability": "gluttony",
+          "held": "miracle-seed",
+          "starter": "grass"
+        },
+        {
+          "name": "simisear",
+          "level": "33",
+          "moves": [
+            "leer",
+            "lick",
+            "fury-swipes",
+            "flame-burst"
+          ],
+          "ability": "gluttony",
+          "held": "charcoal",
+          "starter": "fire"
+        },
+        {
+          "name": "simipour",
+          "level": "33",
+          "moves": [
+            "leer",
+            "lick",
+            "fury-swipes",
+            "scald"
+          ],
+          "ability": "gluttony",
+          "held": "mystic-water",
+          "starter": "water"
+        },
+        {
+          "name": "dewott",
+          "level": "35",
+          "moves": [
+            "fury-cutter",
+            "water-pulse",
+            "revenge",
+            "aqua-jet"
+          ],
+          "ability": "torrent",
+          "held": "leftovers",
+          "starter": "fire"
+        },
+        {
+          "name": "servine",
+          "level": "35",
+          "moves": [
+            "leech-seed",
+            "mega-drain",
+            "slam",
+            "leaf-blade"
+          ],
+          "ability": "overgrow",
+          "held": "leftovers",
+          "starter": "water"
+        },
+        {
+          "name": "pignite",
+          "level": "35",
+          "moves": [
+            "smog",
+            "rollout",
+            "take-down",
+            "heat-crash"
+          ],
+          "ability": "blaze",
+          "held": "leftovers",
+          "starter": "grass"
         }
       ]
     },
@@ -9173,10 +9282,10 @@
           "starter": "grass"
         },
         {
-          "name": "slugma",
+          "name": "torkoal",
           "level": "13",
           "moves": [
-            "yawn",
+            "curse",
             "smog",
             "ember"
           ],
@@ -20332,7 +20441,7 @@
         },
         {
           "name": "banette",
-          "level": "41",
+          "level": "51",
           "moves": [
             "shadow-ball",
             "spite",
@@ -24833,7 +24942,7 @@
           "held": "assault-vest"
         },
         {
-          "name": "calyrex-ice-rider",
+          "name": "calyrex-ice",
           "level": "85",
           "moves": [
             "glacial-lance",
@@ -25477,7 +25586,7 @@
           "held": "power-herb"
         },
         {
-          "name": "darmanitan-standard-galar",
+          "name": "darmanitan-galar-standard",
           "level": "85",
           "moves": [
             "u-turn",
@@ -27769,75 +27878,64 @@
       "img": "/leaders/dp-saturn",
       "pokemon": [
         {
-          "name": "bronzong",
-          "level": "56",
+          "name": "alakazam",
+          "level": "52",
           "moves": [
-            "zen-headbutt",
-            "gyro-ball",
-            "reflect",
-            "light-screen"
+            "psychic",
+            "calm-mind",
+            "recover",
+            "focus-blast"
           ],
-          "ability": "levitate",
-          "held": "light-clay"
+          "ability": "magic-guard",
+          "held": "wise-glasses"
         },
         {
           "name": "octillery",
-          "level": "56",
+          "level": "52",
           "moves": [
             "hydro-pump",
-            "blizzard",
-            "fire-blast",
-            "energy-ball"
+            "seed-bomb",
+            "flamethrower",
+            "flash-cannon"
           ],
           "ability": "suction-cups",
           "held": "expert-belt"
         },
         {
-          "name": "alakazam",
-          "level": "56",
+          "name": "bronzong",
+          "level": "52",
           "moves": [
-            "psychic",
+            "iron-head",
+            "zen-headbutt",
             "shadow-ball",
-            "dazzling-gleam",
-            "focus-blast"
+            "explosion"
           ],
-          "ability": "magic-guard",
-          "held": "life-orb"
+          "ability": "levitate",
+          "held": "bright-powder"
         },
         {
-          "name": "rhyperior",
-          "level": "56",
+          "name": "rhydon",
+          "level": "52",
           "moves": [
             "stone-edge",
             "earthquake",
+            "hammer-arm",
             "megahorn"
           ],
-          "ability": "solid-rock",
-          "held": "choice-band"
-        },
-        {
-          "name": "magmortar",
-          "level": "56",
-          "moves": [
-            "fire-blast",
-            "thunderbolt",
-            "aura-sphere",
-            "psychic"
-          ],
-          "ability": "flame-body",
-          "held": "choice-specs"
+          "ability": "rock-head",
+          "held": "muscle-band"
         },
         {
           "name": "toxicroak",
-          "level": "57",
+          "level": "53",
           "moves": [
-            "cross-chop",
             "gunk-shot",
-            "ice-punch",
-            "fake-out"
+            "cross-chop",
+            "fake-out",
+            "sucker-punch"
           ],
           "ability": "dry-skin",
-          "held": "focus-sash"
+          "held": "life-orb"
         }
       ]
     },
@@ -27972,6 +28070,84 @@
           ],
           "ability": "technician",
           "held": "expert-belt"
+        }
+      ]
+    },
+    "sat3": {
+      "name": "Saturn",
+      "speciality": "",
+      "img": "/leaders/dp-saturn",
+      "pokemon": [
+        {
+          "name": "bronzong",
+          "level": "56",
+          "moves": [
+            "zen-headbutt",
+            "gyro-ball",
+            "reflect",
+            "light-screen"
+          ],
+          "ability": "levitate",
+          "held": "light-clay"
+        },
+        {
+          "name": "octillery",
+          "level": "56",
+          "moves": [
+            "hydro-pump",
+            "blizzard",
+            "fire-blast",
+            "energy-ball"
+          ],
+          "ability": "suction-cups",
+          "held": "expert-belt"
+        },
+        {
+          "name": "alakazam",
+          "level": "56",
+          "moves": [
+            "psychic",
+            "shadow-ball",
+            "dazzling-gleam",
+            "focus-blast"
+          ],
+          "ability": "magic-guard",
+          "held": "life-orb"
+        },
+        {
+          "name": "rhyperior",
+          "level": "56",
+          "moves": [
+            "stone-edge",
+            "earthquake",
+            "megahorn"
+          ],
+          "ability": "solid-rock",
+          "held": "choice-band"
+        },
+        {
+          "name": "magmortar",
+          "level": "56",
+          "moves": [
+            "fire-blast",
+            "thunderbolt",
+            "aura-sphere",
+            "psychic"
+          ],
+          "ability": "flame-body",
+          "held": "choice-specs"
+        },
+        {
+          "name": "toxicroak",
+          "level": "57",
+          "moves": [
+            "cross-chop",
+            "gunk-shot",
+            "ice-punch",
+            "fake-out"
+          ],
+          "ability": "dry-skin",
+          "held": "focus-sash"
         }
       ]
     },
@@ -33079,6 +33255,69 @@
             "sheer-cold"
           ],
           "ability": "thick-fat",
+          "held": "sitrus-berry"
+        }
+      ]
+    },
+    "e4": {
+      "name": "Drake",
+      "speciality": "ice",
+      "img": "/leaders/rs-drake",
+      "pokemon": [
+        {
+          "name": "shelgon",
+          "level": "52",
+          "moves": [
+            "dragon-claw",
+            "rock-tomb",
+            "protect",
+            "crunch"
+          ],
+          "ability": "rock-head"
+        },
+        {
+          "name": "altaria",
+          "level": "54",
+          "moves": [
+            "take-down",
+            "dragon-breath",
+            "dragon-dance",
+            "refresh"
+          ],
+          "ability": "natural-cure"
+        },
+        {
+          "name": "flygon",
+          "level": "53",
+          "moves": [
+            "flamethrower",
+            "dragon-breath",
+            "crunch",
+            "sand-attack"
+          ],
+          "ability": "levitate"
+        },
+        {
+          "name": "flygon",
+          "level": "53",
+          "moves": [
+            "fly",
+            "dragon-breath",
+            "dig",
+            "sandstorm"
+          ],
+          "ability": "levitate"
+        },
+        {
+          "name": "salamence",
+          "level": "53",
+          "moves": [
+            "flamethrower",
+            "dragon-claw",
+            "crunch",
+            "fly"
+          ],
+          "ability": "intimidate",
           "held": "sitrus-berry"
         }
       ]
@@ -44866,38 +45105,35 @@
       },
       "pokemon": [
         {
-          "name": "blissey",
-          "level": "53",
+          "name": "mawile",
+          "level": "51",
           "moves": [
-            "heal-pulse",
-            "light-screen",
-            "helping-hand",
-            "dazzling-gleam"
+            "iron-head",
+            "play-rough",
+            "sucker-punch"
           ],
-          "ability": "serene-grace"
+          "ability": "intimidate"
         },
         {
-          "name": "pelipper",
-          "level": "52",
+          "name": "granbull",
+          "level": "51",
           "moves": [
-            "stockpile",
-            "scald",
-            "spit-up",
-            "seed-bomb"
+            "stone-edge",
+            "play-rough",
+            "earthquake"
           ],
-          "ability": "drizzle"
+          "ability": "intimidate"
         },
         {
           "name": "ribombee",
-          "level": "55",
+          "level": "51",
           "moves": [
-            "bug-buzz",
-            "draining-kiss",
-            "quiver-dance",
-            "dazzling-gleam"
+            "pollen-puff",
+            "dazzling-gleam",
+            "psychic"
           ],
           "ability": "shield-dust",
-          "held": "occa-berry"
+          "held": "fairium-z--held"
         }
       ]
     },

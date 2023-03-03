@@ -74,7 +74,7 @@
       {#if img}
         <span class='relative -mx-5'>
           <Picture
-            src='https://img.nuzlocke.app{img.src}'
+            src='https://img.nuzlocke.app/{img.src}'
             alt={name}
             pixelated
             className='w-18 md:w-36'
@@ -152,7 +152,8 @@
       {#each pokemon as p, id (p.name + id)}
         <Pokemon
           {...p}
-          sprite={`${SPRITE}/${p.sprite}`}
+          sprite={`${SPRITE}/sprite/${p.sprite}.png`}
+          fallback={`${SPRITE}/sprite/${p.sprite}`}
           maxStat={maxStat}
         >
           <button

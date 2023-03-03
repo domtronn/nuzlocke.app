@@ -15,7 +15,7 @@
 </script>
 
 <aside class:show class=g-container>
-  <button class=head on:click={onshow}>
+  <button class='head w-full' on:click={onshow}>
     <h2>In this guide</h2>
 
     <Icon inline={true} icon={Chevron} class=fill-current height=2rem />
@@ -114,10 +114,9 @@
    @apply overflow-hidden;
  }
 
- .show .head h2 + :global(*) {
-   @apply rotate-180;
-   color: #4434ff;
- }
+
+ .head h2 + :global(*) { @apply rotate-90; }
+ .show .head h2 + :global(*) { @apply rotate-180; }
 
  .main, .head, .head h2 +:global(*)
  {
@@ -144,9 +143,9 @@
    }
  }
 
- .head { @apply col-span-3 flex items-center justify-between border-b cursor-pointer }
+ .head { @apply col-span-3 flex items-center justify-between cursor-pointer w-full ring-2 ring-transparent my-2; }
  .head:hover {
-   color: #4434ff;
+   @apply ring-yellow-500;
  }
 
  .encounters { @apply col-span-2 md:col-span-1 row-span-4 }
