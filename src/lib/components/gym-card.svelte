@@ -74,7 +74,7 @@
       {#if img}
         <span class='relative -mx-5'>
           <Picture
-            src={img.src}
+            src='https://img.nuzlocke.app{img.src}'
             alt={name}
             pixelated
             className='w-18 md:w-36'
