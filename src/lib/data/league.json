@@ -1769,7 +1769,7 @@
           "moves": [
             "revenge",
             "crunch",
-            "slash",
+            "dragon-tail",
             "rock-slide"
           ],
           "ability": "sheer-force",
@@ -1869,17 +1869,6 @@
           "ability": "water-veil"
         },
         {
-          "name": "mantine",
-          "level": "53",
-          "moves": [
-            "air-slash",
-            "confuse-ray",
-            "ice-beam",
-            "scald"
-          ],
-          "ability": "swift-swim"
-        },
-        {
           "name": "carracosta",
           "level": "53",
           "moves": [
@@ -1890,6 +1879,17 @@
           ],
           "ability": "sturdy",
           "held": "sitrus-berry"
+        },
+        {
+          "name": "mantine",
+          "level": "53",
+          "moves": [
+            "air-slash",
+            "confuse-ray",
+            "ice-beam",
+            "scald"
+          ],
+          "ability": "swift-swim"
         },
         {
           "name": "jellicent",
@@ -33079,6 +33079,69 @@
             "sheer-cold"
           ],
           "ability": "thick-fat",
+          "held": "sitrus-berry"
+        }
+      ]
+    },
+    "e4": {
+      "name": "Drake",
+      "speciality": "ice",
+      "img": "/leaders/rs-drake",
+      "pokemon": [
+        {
+          "name": "shelgon",
+          "level": "52",
+          "moves": [
+            "dragon-claw",
+            "rock-tomb",
+            "protect",
+            "crunch"
+          ],
+          "ability": "rock-head"
+        },
+        {
+          "name": "altaria",
+          "level": "54",
+          "moves": [
+            "take-down",
+            "dragon-breath",
+            "dragon-dance",
+            "refresh"
+          ],
+          "ability": "natural-cure"
+        },
+        {
+          "name": "flygon",
+          "level": "53",
+          "moves": [
+            "flamethrower",
+            "dragon-breath",
+            "crunch",
+            "sand-attack"
+          ],
+          "ability": "levitate"
+        },
+        {
+          "name": "flygon",
+          "level": "53",
+          "moves": [
+            "fly",
+            "dragon-breath",
+            "dig",
+            "sandstorm"
+          ],
+          "ability": "levitate"
+        },
+        {
+          "name": "salamence",
+          "level": "53",
+          "moves": [
+            "flamethrower",
+            "dragon-claw",
+            "crunch",
+            "fly"
+          ],
+          "ability": "intimidate",
           "held": "sitrus-berry"
         }
       ]
