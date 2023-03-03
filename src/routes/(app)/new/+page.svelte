@@ -79,7 +79,7 @@
       <div class='flex inline-flex gap-x-2 px-2 py-6 items-center h-auto w-full max-h-8' slot='item' let:item={i} let:label={label}>
         {#if Games[i].logo}
           <Picture
-            src={Games[i].logo}
+            src='https://img.nuzlocke.app{Games[i].logo}'
             alt={Games[i].title + ' logo'}
             className=w-12
             role=presentation
@@ -122,7 +122,7 @@
           class:text-yellow-500={selected === id}
         >
           <Picture
-            src={game.logo}
+            src='https://img.nuzlocke.app{game.logo}'
             aspect=192x96
             role=presentation
             alt={'Pokémon ' + game.title + ' logo'}
