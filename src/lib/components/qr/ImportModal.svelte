@@ -16,11 +16,6 @@
 
   import { Error } from '$icons'
 
-  const fixIcon = i => ({ ...i, c: i.c.replace(/fill="#000000"/g, '') })
-
-  const FloppyIcon = fixIcon(Floppy)
-  const MobileIcon = fixIcon(Mobile)
-
   const handlescan = e => {
     const url = e.detail.value
     console.log('url', url, e)
@@ -51,13 +46,13 @@
   </p>
 
   <div class='text-4xl inline-flex items-center transform scale-75 md:scale-100 -ml-4 md:my-4'>
-    <Icon inline={true} height=0.9em icon={MobileIcon} class=fill-current />
+    <Icon inline={true} height=0.9em icon={Mobile} class=fill-current />
     <Icon inline={true} height=0.6em icon={Transfer} class='fill-current mr-2 ml-1' />
     <Icon inline={true} icon={Desktop} class=fill-current />
   </div>
 
   <ol>
-    <li>Open your <a href='/saves'><mark>Save files <Icon inline={true} height=0.9em icon={FloppyIcon} class=fill-current /></mark></a> on your first device</li>
+    <li>Open your <a href='/saves'><mark>Save files <Icon inline={true} height=0.9em icon={Floppy} class=fill-current /></mark></a> on your first device</li>
     <li>Select the <mark>Share <Icon inline={true} icon={Share} class='fill-current' /></mark> icon on the save you want to transfer</li>
     <li>Open <a href='/transfer'><mark>this page</mark></a> on your second device</li>
     <li>Scan the <mark>QR code <Icon inline={true} icon={QRCode} class='fill-current' /></mark> with your camera</li>
