@@ -1,10 +1,17 @@
 import tiny from 'tinyurl'
 
-export async function POST ({ body, host }) {
+export async function POST ({ request }) {
+  const { host } = new URL(request.url)
+
+  const body = await request.json()
   const url = await tiny.shorten(body.url)
 
-  return {
+  return new Response(JSON.stringify({
+    url: url.replace('tinyurl.com', host + '/drop')
+  }), {
     status: 200,
-    body: { url: url.replace('tinyurl.com', host + '/drop') }
-  }
+    headers: {
+      'Content-Type': 'application/json'
+    }
+  })
 }

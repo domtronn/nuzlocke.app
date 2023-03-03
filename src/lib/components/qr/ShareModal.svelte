@@ -33,7 +33,7 @@
         fetch('/api/drop.json', {
           method: 'POST',
           body: JSON.stringify({
-            url: `${window.location.protocol}//${$page.host}/drop?payload=${encodeURIComponent(JSON.stringify(data))}`
+            url: `${window.location.protocol}//${$page.url.host}/drop?payload=${encodeURIComponent(JSON.stringify(data))}`
           }),
           headers: {
             'Content-Type': 'application/json'

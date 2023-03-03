@@ -6,7 +6,9 @@ const opts = {
   port: 443
 }
 
-export async function GET ({ params, host }) {
+export async function GET ({ request, params }) {
+  const { host } = new URL(request.url)
+  
   return new Promise(resolve => {
     const req = https.request(
       { ...opts, path: '/' + params.id },
@@ -20,12 +22,12 @@ export async function GET ({ params, host }) {
         if (!location) return resolve({ status: 404 })
         if (!location.includes(`://${host}`)) return resolve({ status: 400 })
 
-        return resolve({
+        return resolve(new Response('', {
           status: 301,
           headers: {
             Location: location
           }
-        })
+        }))
       }
     )
 

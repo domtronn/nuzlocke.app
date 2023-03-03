@@ -12,7 +12,7 @@
   import { savedGames, format, IDS } from '$lib/store'
   import { onMount } from 'svelte'
 
-  const payload = JSON.parse($page.query.get('payload'))
+  const payload = JSON.parse($page.url.searchParams.get('payload'))
   onMount(_ => {
     const save = payload.save
     const gamedata = JSON.stringify(payload.data)

@@ -1,1 +1,1 @@
-export const router = false
+export const csr = true
