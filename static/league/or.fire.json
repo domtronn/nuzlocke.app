@@ -36,7 +36,7 @@
           "name": "Sturdy",
           "effect": "Prevents being KOed from full HP, leaving 1 HP instead.  Protects against the one-hit KO moves regardless of HP."
         },
-        "sprite": "74.png",
+        "sprite": "74",
         "types": [
           "rock",
           "ground"
@@ -78,7 +78,7 @@
           "name": "Sturdy",
           "effect": "Prevents being KOed from full HP, leaving 1 HP instead.  Protects against the one-hit KO moves regardless of HP."
         },
-        "sprite": "299.png",
+        "sprite": "299",
         "types": [
           "rock"
         ],
@@ -136,7 +136,7 @@
           "name": "Guts",
           "effect": "Increases Attack to 1.5× with a major status ailment."
         },
-        "sprite": "66.png",
+        "sprite": "66",
         "types": [
           "fighting"
         ],
@@ -184,7 +184,7 @@
           "name": "Guts",
           "effect": "Increases Attack to 1.5× with a major status ailment."
         },
-        "sprite": "296.png",
+        "sprite": "296",
         "types": [
           "fighting"
         ],
@@ -236,7 +236,7 @@
           "name": "Sturdy",
           "effect": "Prevents being KOed from full HP, leaving 1 HP instead.  Protects against the one-hit KO moves regardless of HP."
         },
-        "sprite": "81.png",
+        "sprite": "81",
         "types": [
           "electric",
           "steel"
@@ -279,7 +279,7 @@
           "name": "Soundproof",
           "effect": "Protects against sound-based moves."
         },
-        "sprite": "100.png",
+        "sprite": "100",
         "types": [
           "electric"
         ],
@@ -321,7 +321,7 @@
           "name": "Magnet Pull",
           "effect": "Prevents steel opponents from fleeing or switching out."
         },
-        "sprite": "82.png",
+        "sprite": "82",
         "types": [
           "electric",
           "steel"
@@ -380,7 +380,7 @@
           "name": "Flame Body",
           "effect": "Has a 30% chance of burning attacking Pokémon on contact."
         },
-        "sprite": "218.png",
+        "sprite": "218",
         "types": [
           "fire"
         ],
@@ -428,7 +428,7 @@
           "name": "Simple",
           "effect": "Doubles the Pokémon's stat modifiers.  These doubled modifiers are still capped at -6 or 6 stages."
         },
-        "sprite": "322.png",
+        "sprite": "322",
         "types": [
           "fire",
           "ground"
@@ -477,7 +477,7 @@
           "name": "White Smoke",
           "effect": "Prevents stats from being lowered by other Pokémon."
         },
-        "sprite": "324.png",
+        "sprite": "324",
         "types": [
           "fire"
         ],
@@ -536,7 +536,7 @@
           "name": "Truant",
           "effect": "Skips every second turn."
         },
-        "sprite": "289.png",
+        "sprite": "289",
         "types": [
           "normal"
         ],
@@ -585,7 +585,7 @@
           "name": "Vital Spirit",
           "effect": "Prevents sleep."
         },
-        "sprite": "288.png",
+        "sprite": "288",
         "types": [
           "normal"
         ],
@@ -634,7 +634,7 @@
           "name": "Truant",
           "effect": "Skips every second turn."
         },
-        "sprite": "289.png",
+        "sprite": "289",
         "types": [
           "normal"
         ],
@@ -693,7 +693,7 @@
           "name": "Guts",
           "effect": "Increases Attack to 1.5× with a major status ailment."
         },
-        "sprite": "277.png",
+        "sprite": "277",
         "types": [
           "normal",
           "flying"
@@ -743,7 +743,7 @@
           "name": "Keen Eye",
           "effect": "Prevents accuracy from being lowered."
         },
-        "sprite": "279.png",
+        "sprite": "279",
         "types": [
           "water",
           "flying"
@@ -793,7 +793,7 @@
           "name": "Keen Eye",
           "effect": "Prevents accuracy from being lowered."
         },
-        "sprite": "227.png",
+        "sprite": "227",
         "types": [
           "steel",
           "flying"
@@ -842,7 +842,7 @@
           "name": "Natural Cure",
           "effect": "Cures any major status ailment upon switching out."
         },
-        "sprite": "334.png",
+        "sprite": "334",
         "types": [
           "dragon",
           "flying"
@@ -897,7 +897,7 @@
             "effect": "Puts the target to sleep."
           }
         ],
-        "sprite": "337.png",
+        "sprite": "337",
         "types": [
           "rock",
           "psychic"
@@ -943,7 +943,7 @@
             "effect": "Requires a turn to charge before attacking."
           }
         ],
-        "sprite": "338.png",
+        "sprite": "338",
         "types": [
           "rock",
           "psychic"
@@ -1003,7 +1003,7 @@
           "name": "Swift Swim",
           "effect": "Doubles Speed during rain."
         },
-        "sprite": "370.png",
+        "sprite": "370",
         "types": [
           "water"
         ],
@@ -1052,7 +1052,7 @@
           "name": "Oblivious",
           "effect": "Prevents infatuation and protects against captivate."
         },
-        "sprite": "340.png",
+        "sprite": "340",
         "types": [
           "water",
           "ground"
@@ -1102,7 +1102,7 @@
           "name": "Thick Fat",
           "effect": "Halves damage from fire and ice moves."
         },
-        "sprite": "364.png",
+        "sprite": "364",
         "types": [
           "ice",
           "water"
@@ -1150,7 +1150,7 @@
           "name": "Swift Swim",
           "effect": "Doubles Speed during rain."
         },
-        "sprite": "119.png",
+        "sprite": "119",
         "types": [
           "water"
         ],
@@ -1198,7 +1198,7 @@
           "name": "Marvel Scale",
           "effect": "Increases Defense to 1.5× with a major status ailment."
         },
-        "sprite": "350.png",
+        "sprite": "350",
         "types": [
           "water"
         ],
@@ -1238,7 +1238,7 @@
           "effect": "Strengthens water moves to inflict 1.5× damage at 1/3 max HP or less."
         },
         "starter": "fire",
-        "sprite": "258.png",
+        "sprite": "258",
         "types": [
           "water"
         ],
@@ -1298,7 +1298,7 @@
           "effect": "Has a 30% chance of inflcting either paralysis, poison, or sleep on attacking Pokémon on contact."
         },
         "starter": "fire",
-        "sprite": "285.png",
+        "sprite": "285",
         "types": [
           "grass"
         ],
@@ -1347,7 +1347,7 @@
           "effect": "Prevents freezing."
         },
         "starter": "fire",
-        "sprite": "218.png",
+        "sprite": "218",
         "types": [
           "fire"
         ],
@@ -1397,7 +1397,7 @@
           "effect": "Strengthens water moves to inflict 1.5× damage at 1/3 max HP or less."
         },
         "starter": "fire",
-        "sprite": "259.png",
+        "sprite": "259",
         "types": [
           "water",
           "ground"
@@ -1427,6 +1427,7 @@
         "level": "17",
         "moves": [
           {
+            "priority": -6,
             "type": "psychic",
             "damage_class": "status",
             "name": "Teleport",
@@ -1457,7 +1458,7 @@
           "name": "Synchronize",
           "effect": "Copies burns, paralysis, and poison received onto the Pokémon that inflicted them."
         },
-        "sprite": "280.png",
+        "sprite": "280",
         "types": [
           "psychic",
           "fairy"
@@ -1517,7 +1518,7 @@
           "name": "Intimidate",
           "effect": "Lowers opponents' Attack one stage upon entering battle."
         },
-        "sprite": "262.png",
+        "sprite": "262",
         "types": [
           "dark"
         ],
@@ -1565,7 +1566,7 @@
           "name": "Oblivious",
           "effect": "Prevents infatuation and protects against captivate."
         },
-        "sprite": "322.png",
+        "sprite": "322",
         "types": [
           "fire",
           "ground"
@@ -1616,7 +1617,7 @@
           "name": "Levitate",
           "effect": "Evades ground moves."
         },
-        "sprite": "109.png",
+        "sprite": "109",
         "types": [
           "poison"
         ],
@@ -1677,7 +1678,7 @@
           "name": "Levitate",
           "effect": "Evades ground moves."
         },
-        "sprite": "109.png",
+        "sprite": "109",
         "types": [
           "poison"
         ],
@@ -1725,7 +1726,7 @@
           "name": "Oblivious",
           "effect": "Prevents infatuation and protects against captivate."
         },
-        "sprite": "322.png",
+        "sprite": "322",
         "types": [
           "fire",
           "ground"
@@ -1786,7 +1787,7 @@
           "name": "Intimidate",
           "effect": "Lowers opponents' Attack one stage upon entering battle."
         },
-        "sprite": "262.png",
+        "sprite": "262",
         "types": [
           "dark"
         ],
@@ -1834,7 +1835,7 @@
           "name": "Inner Focus",
           "effect": "Prevents flinching."
         },
-        "sprite": "42.png",
+        "sprite": "42",
         "types": [
           "poison",
           "flying"
@@ -1884,7 +1885,7 @@
           "name": "Solid Rock",
           "effect": "Decreases damage taken from super-effective moves by 1/4."
         },
-        "sprite": "323.png",
+        "sprite": "323",
         "types": [
           "fire",
           "ground"
@@ -1945,7 +1946,7 @@
           "name": "Solid Rock",
           "effect": "Decreases damage taken from super-effective moves by 1/4."
         },
-        "sprite": "323.png",
+        "sprite": "323",
         "types": [
           "fire",
           "ground"
@@ -1994,7 +1995,7 @@
           "name": "Levitate",
           "effect": "Evades ground moves."
         },
-        "sprite": "109.png",
+        "sprite": "109",
         "types": [
           "poison"
         ],
@@ -2054,7 +2055,7 @@
           "name": "Solid Rock",
           "effect": "Decreases damage taken from super-effective moves by 1/4."
         },
-        "sprite": "323.png",
+        "sprite": "323",
         "types": [
           "fire",
           "ground"
@@ -2114,7 +2115,7 @@
           "effect": "Has a 30% chance of inflcting either paralysis, poison, or sleep on attacking Pokémon on contact."
         },
         "starter": "fire",
-        "sprite": "285.png",
+        "sprite": "285",
         "types": [
           "grass"
         ],
@@ -2165,7 +2166,7 @@
           "effect": "Prevents freezing."
         },
         "starter": "fire",
-        "sprite": "218.png",
+        "sprite": "218",
         "types": [
           "fire"
         ],
@@ -2216,7 +2217,7 @@
           "effect": "Strengthens water moves to inflict 1.5× damage at 1/3 max HP or less."
         },
         "starter": "fire",
-        "sprite": "259.png",
+        "sprite": "259",
         "types": [
           "water",
           "ground"
@@ -2278,7 +2279,7 @@
           "name": "Normal Gem",
           "effect": "Held: When the holder uses a damaging normal-type move, the move has 1.5× power and this item is consumed."
         },
-        "sprite": "330.png",
+        "sprite": "330",
         "types": [
           "ground",
           "dragon"
@@ -2339,7 +2340,7 @@
           "name": "Solid Rock",
           "effect": "Decreases damage taken from super-effective moves by 1/4."
         },
-        "sprite": "323.png",
+        "sprite": "323",
         "types": [
           "fire",
           "ground"
@@ -2399,7 +2400,7 @@
           "name": "Guts",
           "effect": "Increases Attack to 1.5× with a major status ailment."
         },
-        "sprite": "277.png",
+        "sprite": "277",
         "types": [
           "normal",
           "flying"
@@ -2450,7 +2451,7 @@
           "effect": "Has a 30% chance of inflcting either paralysis, poison, or sleep on attacking Pokémon on contact."
         },
         "starter": "fire",
-        "sprite": "286.png",
+        "sprite": "286",
         "types": [
           "grass",
           "fighting"
@@ -2501,7 +2502,7 @@
           "effect": "Prevents freezing."
         },
         "starter": "fire",
-        "sprite": "219.png",
+        "sprite": "219",
         "types": [
           "fire",
           "rock"
@@ -2553,7 +2554,7 @@
           "effect": "Strengthens water moves to inflict 1.5× damage at 1/3 max HP or less."
         },
         "starter": "fire",
-        "sprite": "260.png",
+        "sprite": "260",
         "types": [
           "water",
           "ground"
@@ -2613,7 +2614,7 @@
           "name": "Solid Rock",
           "effect": "Decreases damage taken from super-effective moves by 1/4."
         },
-        "sprite": "323.png",
+        "sprite": "323",
         "types": [
           "fire",
           "ground"
@@ -2672,7 +2673,7 @@
           "name": "Quick Feet",
           "effect": "Increases Speed to 1.5× with a major status ailment."
         },
-        "sprite": "262.png",
+        "sprite": "262",
         "types": [
           "dark"
         ],
@@ -2721,7 +2722,7 @@
           "name": "Levitate",
           "effect": "Evades ground moves."
         },
-        "sprite": "110.png",
+        "sprite": "110",
         "types": [
           "poison"
         ],
@@ -2769,7 +2770,7 @@
           "name": "Inner Focus",
           "effect": "Prevents flinching."
         },
-        "sprite": "169.png",
+        "sprite": "169",
         "types": [
           "poison",
           "flying"
@@ -2823,7 +2824,7 @@
           "name": "Cameruptite",
           "effect": "Held: Allows Camerupt to Mega Evolve into Mega Camerupt."
         },
-        "sprite": "323.png",
+        "sprite": "323",
         "types": [
           "fire",
           "ground"
@@ -2882,7 +2883,7 @@
           "name": "Natural Cure",
           "effect": "Cures any major status ailment upon switching out."
         },
-        "sprite": "334.png",
+        "sprite": "334",
         "types": [
           "dragon",
           "flying"
@@ -2931,7 +2932,7 @@
           "name": "Cute Charm",
           "effect": "Has a 30% chance of infatuating attacking Pokémon on contact."
         },
-        "sprite": "301.png",
+        "sprite": "301",
         "types": [
           "normal"
         ],
@@ -2977,7 +2978,7 @@
           "name": "Poison Point",
           "effect": "Has a 30% chance of poisoning attacking Pokémon on contact."
         },
-        "sprite": "315.png",
+        "sprite": "315",
         "types": [
           "grass",
           "poison"
@@ -3027,7 +3028,7 @@
           "name": "Sturdy",
           "effect": "Prevents being KOed from full HP, leaving 1 HP instead.  Protects against the one-hit KO moves regardless of HP."
         },
-        "sprite": "82.png",
+        "sprite": "82",
         "types": [
           "electric",
           "steel"
@@ -3082,7 +3083,7 @@
           "name": "Galladite",
           "effect": "Held: Allows Gallade to Mega Evolve into Mega Gallade."
         },
-        "sprite": "475.png",
+        "sprite": "475",
         "types": [
           "psychic",
           "fighting"
@@ -3144,7 +3145,7 @@
           "name": "Intimidate",
           "effect": "Lowers opponents' Attack one stage upon entering battle."
         },
-        "sprite": "262.png",
+        "sprite": "262",
         "types": [
           "dark"
         ],
@@ -3195,7 +3196,7 @@
           "name": "Chlorophyll",
           "effect": "Doubles Speed during strong sunlight."
         },
-        "sprite": "275.png",
+        "sprite": "275",
         "types": [
           "grass",
           "dark"
@@ -3245,7 +3246,7 @@
           "name": "Sand Veil",
           "effect": "Increases evasion to 1.25× during a sandstorm.  Protects against sandstorm damage."
         },
-        "sprite": "332.png",
+        "sprite": "332",
         "types": [
           "grass",
           "dark"
@@ -3296,7 +3297,7 @@
           "name": "Rough Skin",
           "effect": "Damages attacking Pokémon for 1/8 their max HP on contact."
         },
-        "sprite": "319.png",
+        "sprite": "319",
         "types": [
           "water",
           "dark"
@@ -3347,7 +3348,7 @@
           "name": "Super Luck",
           "effect": "Raises moves' critical hit rates one stage."
         },
-        "sprite": "359.png",
+        "sprite": "359",
         "types": [
           "dark"
         ],
@@ -3406,7 +3407,7 @@
           "name": "Pressure",
           "effect": "Increases the PP cost of moves targetting the Pokémon by one."
         },
-        "sprite": "356.png",
+        "sprite": "356",
         "types": [
           "ghost"
         ],
@@ -3421,7 +3422,7 @@
       },
       {
         "name": "banette",
-        "level": "41",
+        "level": "51",
         "moves": [
           {
             "power": 80,
@@ -3454,7 +3455,7 @@
           "name": "Insomnia",
           "effect": "Prevents sleep."
         },
-        "sprite": "354.png",
+        "sprite": "354",
         "types": [
           "ghost"
         ],
@@ -3504,7 +3505,7 @@
           "name": "Keen Eye",
           "effect": "Prevents accuracy from being lowered."
         },
-        "sprite": "302.png",
+        "sprite": "302",
         "types": [
           "dark",
           "ghost"
@@ -3553,7 +3554,7 @@
           "name": "Insomnia",
           "effect": "Prevents sleep."
         },
-        "sprite": "354.png",
+        "sprite": "354",
         "types": [
           "ghost"
         ],
@@ -3603,7 +3604,7 @@
           "name": "Pressure",
           "effect": "Increases the PP cost of moves targetting the Pokémon by one."
         },
-        "sprite": "477.png",
+        "sprite": "477",
         "types": [
           "ghost"
         ],
@@ -3662,7 +3663,7 @@
           "name": "Inner Focus",
           "effect": "Prevents flinching."
         },
-        "sprite": "362.png",
+        "sprite": "362",
         "types": [
           "ice"
         ],
@@ -3710,7 +3711,7 @@
           "name": "Snow Cloak",
           "effect": "Increases evasion to 1.25× during hail.  Protects against hail damage."
         },
-        "sprite": "478.png",
+        "sprite": "478",
         "types": [
           "ice",
           "ghost"
@@ -3760,7 +3761,7 @@
           "name": "Inner Focus",
           "effect": "Prevents flinching."
         },
-        "sprite": "362.png",
+        "sprite": "362",
         "types": [
           "ice"
         ],
@@ -3809,7 +3810,7 @@
           "name": "Snow Cloak",
           "effect": "Increases evasion to 1.25× during hail.  Protects against hail damage."
         },
-        "sprite": "478.png",
+        "sprite": "478",
         "types": [
           "ice",
           "ghost"
@@ -3859,7 +3860,7 @@
           "name": "Thick Fat",
           "effect": "Halves damage from fire and ice moves."
         },
-        "sprite": "365.png",
+        "sprite": "365",
         "types": [
           "ice",
           "water"
@@ -3919,7 +3920,7 @@
           "name": "Natural Cure",
           "effect": "Cures any major status ailment upon switching out."
         },
-        "sprite": "334.png",
+        "sprite": "334",
         "types": [
           "dragon",
           "flying"
@@ -3968,7 +3969,7 @@
           "name": "Levitate",
           "effect": "Evades ground moves."
         },
-        "sprite": "330.png",
+        "sprite": "330",
         "types": [
           "ground",
           "dragon"
@@ -4017,7 +4018,7 @@
           "name": "Sniper",
           "effect": "Strengthens critical hits to inflict 3× damage rather than 2×."
         },
-        "sprite": "230.png",
+        "sprite": "230",
         "types": [
           "water",
           "dragon"
@@ -4065,7 +4066,7 @@
           "name": "Levitate",
           "effect": "Evades ground moves."
         },
-        "sprite": "330.png",
+        "sprite": "330",
         "types": [
           "ground",
           "dragon"
@@ -4116,7 +4117,7 @@
           "name": "Intimidate",
           "effect": "Lowers opponents' Attack one stage upon entering battle."
         },
-        "sprite": "373.png",
+        "sprite": "373",
         "types": [
           "dragon",
           "flying"
@@ -4176,7 +4177,7 @@
           "name": "Sturdy",
           "effect": "Prevents being KOed from full HP, leaving 1 HP instead.  Protects against the one-hit KO moves regardless of HP."
         },
-        "sprite": "227.png",
+        "sprite": "227",
         "types": [
           "steel",
           "flying"
@@ -4225,7 +4226,7 @@
           "name": "Levitate",
           "effect": "Evades ground moves."
         },
-        "sprite": "344.png",
+        "sprite": "344",
         "types": [
           "ground",
           "psychic"
@@ -4275,7 +4276,7 @@
           "name": "Sturdy",
           "effect": "Prevents being KOed from full HP, leaving 1 HP instead.  Protects against the one-hit KO moves regardless of HP."
         },
-        "sprite": "306.png",
+        "sprite": "306",
         "types": [
           "steel",
           "rock"
@@ -4325,7 +4326,7 @@
           "name": "Suction Cups",
           "effect": "Prevents being forced out of battle by other Pokémon's moves."
         },
-        "sprite": "346.png",
+        "sprite": "346",
         "types": [
           "rock",
           "grass"
@@ -4375,7 +4376,7 @@
           "name": "Battle Armor",
           "effect": "Protects against critical hits."
         },
-        "sprite": "348.png",
+        "sprite": "348",
         "types": [
           "rock",
           "bug"
@@ -4431,7 +4432,7 @@
           "name": "Metagrossite",
           "effect": "Held: Allows Metagross to Mega Evolve into Mega Metagross."
         },
-        "sprite": "376.png",
+        "sprite": "376",
         "types": [
           "steel",
           "psychic"
