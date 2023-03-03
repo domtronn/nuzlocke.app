@@ -93,10 +93,11 @@ const toAbility = (ability, patches = {}) => {
 const toTypes = map(path(['type', 'name']));
 const toPokemon = (p, patches = {}) => {
   let patch = patches[p.name] || {};
+  const [, sprite] = /\/sprites\/pokemon\/([0-9]+)/.exec(p?.sprites?.front_default) || []
 
   return nonnull({
     name: p?.species?.name || p,
-    sprite: p?.sprites?.front_default,
+    sprite: sprite,
     types: patch.types || toTypes(p.types),
     stats: {
       ...(p?.stats || []).reduce(
