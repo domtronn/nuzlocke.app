@@ -2319,11 +2319,12 @@
             "effect": "Has a 20% chance to lower the target's Defense by one stage."
           },
           {
-            "power": 70,
-            "type": "normal",
+            "power": 60,
+            "priority": -6,
+            "type": "dragon",
             "damage_class": "physical",
-            "name": "Slash",
-            "effect": "Has an increased chance for a critical hit."
+            "name": "Dragon Tail",
+            "effect": "Ends wild battles.  Forces trainers to switch Pokémon."
           },
           {
             "power": 75,
@@ -2876,56 +2877,6 @@
         }
       },
       {
-        "name": "mantine",
-        "level": "53",
-        "moves": [
-          {
-            "power": 75,
-            "type": "flying",
-            "damage_class": "special",
-            "name": "Air Slash",
-            "effect": "Has a 30% chance to make the target flinch."
-          },
-          {
-            "type": "ghost",
-            "damage_class": "status",
-            "name": "Confuse Ray",
-            "effect": "Confuses the target."
-          },
-          {
-            "power": 90,
-            "type": "ice",
-            "damage_class": "special",
-            "name": "Ice Beam",
-            "effect": "Has a 10% chance to freeze the target."
-          },
-          {
-            "power": 80,
-            "type": "water",
-            "damage_class": "special",
-            "name": "Scald",
-            "effect": "Has a 30% chance to burn the target."
-          }
-        ],
-        "ability": {
-          "name": "Swift Swim",
-          "effect": "Doubles Speed during rain."
-        },
-        "sprite": "226",
-        "types": [
-          "water",
-          "flying"
-        ],
-        "stats": {
-          "hp": 85,
-          "atk": 40,
-          "def": 70,
-          "spa": 80,
-          "spd": 140,
-          "spe": 70
-        }
-      },
-      {
         "name": "carracosta",
         "level": "53",
         "moves": [
@@ -2978,6 +2929,56 @@
           "spa": 83,
           "spd": 65,
           "spe": 32
+        }
+      },
+      {
+        "name": "mantine",
+        "level": "53",
+        "moves": [
+          {
+            "power": 75,
+            "type": "flying",
+            "damage_class": "special",
+            "name": "Air Slash",
+            "effect": "Has a 30% chance to make the target flinch."
+          },
+          {
+            "type": "ghost",
+            "damage_class": "status",
+            "name": "Confuse Ray",
+            "effect": "Confuses the target."
+          },
+          {
+            "power": 90,
+            "type": "ice",
+            "damage_class": "special",
+            "name": "Ice Beam",
+            "effect": "Has a 10% chance to freeze the target."
+          },
+          {
+            "power": 80,
+            "type": "water",
+            "damage_class": "special",
+            "name": "Scald",
+            "effect": "Has a 30% chance to burn the target."
+          }
+        ],
+        "ability": {
+          "name": "Swift Swim",
+          "effect": "Doubles Speed during rain."
+        },
+        "sprite": "226",
+        "types": [
+          "water",
+          "flying"
+        ],
+        "stats": {
+          "hp": 85,
+          "atk": 40,
+          "def": 70,
+          "spa": 80,
+          "spd": 140,
+          "spe": 70
         }
       },
       {

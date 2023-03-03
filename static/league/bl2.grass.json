@@ -88,7 +88,47 @@
     "speciality": "normal",
     "img": "/leaders/blwh-cheren-boss",
     "pokemon": [
-      null,
+      {
+        "name": "patrat",
+        "level": "11",
+        "moves": [
+          {
+            "power": 40,
+            "type": "normal",
+            "damage_class": "physical",
+            "name": "Tackle"
+          },
+          {
+            "type": "normal",
+            "damage_class": "status",
+            "name": "Work Up",
+            "effect": "Raises the user's Attack and Special Attack by one stage each."
+          },
+          {
+            "power": 60,
+            "type": "dark",
+            "damage_class": "physical",
+            "name": "Bite",
+            "effect": "Has a 30% chance to make the target flinch."
+          }
+        ],
+        "ability": {
+          "name": "Keen Eye",
+          "effect": "Prevents accuracy from being lowered."
+        },
+        "sprite": "504",
+        "types": [
+          "normal"
+        ],
+        "stats": {
+          "hp": 45,
+          "atk": 55,
+          "def": 39,
+          "spa": 35,
+          "spd": 39,
+          "spe": 42
+        }
+      },
       {
         "name": "lillipup",
         "level": "13",
@@ -591,8 +631,92 @@
     "speciality": "electric",
     "img": "/leaders/blwh-elesa-2",
     "pokemon": [
-      null,
-      null,
+      {
+        "name": "emolga",
+        "level": "28",
+        "moves": [
+          {
+            "power": 40,
+            "priority": 1,
+            "type": "normal",
+            "damage_class": "physical",
+            "name": "Quick Attack"
+          },
+          {
+            "power": 40,
+            "type": "dark",
+            "damage_class": "physical",
+            "name": "Pursuit",
+            "effect": "Has double power against, and can hit, Pokémon attempting to switch out."
+          },
+          {
+            "power": 70,
+            "type": "electric",
+            "damage_class": "special",
+            "name": "Volt Switch",
+            "effect": "User must switch out after attacking."
+          }
+        ],
+        "ability": {
+          "name": "Static",
+          "effect": "Has a 30% chance of paralyzing attacking Pokémon on contact."
+        },
+        "sprite": "587",
+        "types": [
+          "electric",
+          "flying"
+        ],
+        "stats": {
+          "hp": 55,
+          "atk": 75,
+          "def": 60,
+          "spa": 75,
+          "spd": 60,
+          "spe": 103
+        }
+      },
+      {
+        "name": "flaaffy",
+        "level": "28",
+        "moves": [
+          {
+            "type": "electric",
+            "damage_class": "status",
+            "name": "Thunder Wave",
+            "effect": "Paralyzes the target."
+          },
+          {
+            "power": 70,
+            "type": "electric",
+            "damage_class": "special",
+            "name": "Volt Switch",
+            "effect": "User must switch out after attacking."
+          },
+          {
+            "power": 90,
+            "type": "normal",
+            "damage_class": "physical",
+            "name": "Take Down",
+            "effect": "User receives 1/4 the damage it inflicts in recoil."
+          }
+        ],
+        "ability": {
+          "name": "Static",
+          "effect": "Has a 30% chance of paralyzing attacking Pokémon on contact."
+        },
+        "sprite": "180",
+        "types": [
+          "electric"
+        ],
+        "stats": {
+          "hp": 70,
+          "atk": 55,
+          "def": 55,
+          "spa": 80,
+          "spd": 60,
+          "spe": 45
+        }
+      },
       {
         "name": "zebstrika",
         "level": "30",

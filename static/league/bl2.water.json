@@ -129,7 +129,47 @@
           "spe": 42
         }
       },
-      null
+      {
+        "name": "lillipup",
+        "level": "13",
+        "moves": [
+          {
+            "power": 40,
+            "type": "normal",
+            "damage_class": "physical",
+            "name": "Tackle"
+          },
+          {
+            "type": "normal",
+            "damage_class": "status",
+            "name": "Work Up",
+            "effect": "Raises the user's Attack and Special Attack by one stage each."
+          },
+          {
+            "power": 60,
+            "type": "dark",
+            "damage_class": "physical",
+            "name": "Bite",
+            "effect": "Has a 30% chance to make the target flinch."
+          }
+        ],
+        "ability": {
+          "name": "Vital Spirit",
+          "effect": "Prevents sleep."
+        },
+        "sprite": "506",
+        "types": [
+          "normal"
+        ],
+        "stats": {
+          "hp": 45,
+          "atk": 60,
+          "def": 45,
+          "spa": 25,
+          "spd": 45,
+          "spe": 55
+        }
+      }
     ]
   },
   "2n": {
@@ -677,7 +717,61 @@
           "spe": 45
         }
       },
-      null
+      {
+        "name": "zebstrika",
+        "level": "30",
+        "moves": [
+          {
+            "power": 70,
+            "type": "electric",
+            "damage_class": "special",
+            "name": "Volt Switch",
+            "effect": "User must switch out after attacking."
+          },
+          {
+            "power": 40,
+            "type": "dark",
+            "damage_class": "physical",
+            "name": "Pursuit",
+            "effect": "Has double power against, and can hit, Pokémon attempting to switch out."
+          },
+          {
+            "power": 50,
+            "type": "fire",
+            "damage_class": "physical",
+            "name": "Flame Charge",
+            "effect": "Inflicts regular damage.  Raises the user's Speed by one stage."
+          },
+          {
+            "power": 40,
+            "priority": 1,
+            "type": "normal",
+            "damage_class": "physical",
+            "name": "Quick Attack"
+          }
+        ],
+        "ability": {
+          "name": "Motor Drive",
+          "effect": "Absorbs electric moves, raising Speed one stage."
+        },
+        "held": {
+          "sprite": "sitrus-berry",
+          "name": "Sitrus Berry",
+          "effect": "Held: Consumed at 1/2 max HP to recover 1/4 max HP."
+        },
+        "sprite": "523",
+        "types": [
+          "electric"
+        ],
+        "stats": {
+          "hp": 75,
+          "atk": 100,
+          "def": 63,
+          "spa": 80,
+          "spd": 63,
+          "spe": 116
+        }
+      }
     ]
   },
   "5n": {
@@ -848,7 +942,55 @@
     "speciality": "",
     "img": "/leaders/blwh-hugh",
     "pokemon": [
-      null,
+      {
+        "name": "servine",
+        "level": "25",
+        "moves": [
+          {
+            "type": "grass",
+            "damage_class": "status",
+            "name": "Leech Seed",
+            "effect": "Seeds the target, stealing HP from it every turn."
+          },
+          {
+            "power": 90,
+            "type": "grass",
+            "damage_class": "physical",
+            "name": "Leaf Blade",
+            "effect": "Has an increased chance for a critical hit."
+          },
+          {
+            "power": 40,
+            "type": "grass",
+            "damage_class": "special",
+            "name": "Mega Drain",
+            "effect": "Drains half the damage inflicted to heal the user."
+          },
+          {
+            "power": 80,
+            "type": "normal",
+            "damage_class": "physical",
+            "name": "Slam"
+          }
+        ],
+        "ability": {
+          "name": "Overgrow",
+          "effect": "Strengthens grass moves to inflict 1.5× damage at 1/3 max HP or less."
+        },
+        "starter": "water",
+        "sprite": "496",
+        "types": [
+          "grass"
+        ],
+        "stats": {
+          "hp": 60,
+          "atk": 60,
+          "def": 75,
+          "spa": 60,
+          "spd": 75,
+          "spe": 83
+        }
+      },
       {
         "name": "simisear",
         "level": "25",
@@ -899,7 +1041,55 @@
           "spe": 101
         }
       },
-      null
+      {
+        "name": "tranquill",
+        "level": "25",
+        "moves": [
+          {
+            "power": 60,
+            "type": "flying",
+            "damage_class": "special",
+            "name": "Air Cutter",
+            "effect": "Has an increased chance for a critical hit."
+          },
+          {
+            "type": "flying",
+            "damage_class": "status",
+            "name": "Roost",
+            "effect": "Heals the user by half its max HP."
+          },
+          {
+            "type": "dark",
+            "damage_class": "status",
+            "name": "Taunt",
+            "effect": "For the next few turns, the target can only use damaging moves."
+          },
+          {
+            "priority": 4,
+            "type": "fighting",
+            "damage_class": "status",
+            "name": "Detect",
+            "effect": "Prevents any moves from hitting the user this turn."
+          }
+        ],
+        "ability": {
+          "name": "Super Luck",
+          "effect": "Raises moves' critical hit rates one stage."
+        },
+        "sprite": "520",
+        "types": [
+          "normal",
+          "flying"
+        ],
+        "stats": {
+          "hp": 62,
+          "atk": 77,
+          "def": 62,
+          "spa": 50,
+          "spd": 42,
+          "spe": 65
+        }
+      }
     ]
   },
   "ch": {
