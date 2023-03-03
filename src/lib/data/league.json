@@ -27878,75 +27878,64 @@
       "img": "/leaders/dp-saturn",
       "pokemon": [
         {
-          "name": "bronzong",
-          "level": "56",
+          "name": "alakazam",
+          "level": "52",
           "moves": [
-            "zen-headbutt",
-            "gyro-ball",
-            "reflect",
-            "light-screen"
+            "psychic",
+            "calm-mind",
+            "recover",
+            "focus-blast"
           ],
-          "ability": "levitate",
-          "held": "light-clay"
+          "ability": "magic-guard",
+          "held": "wise-glasses"
         },
         {
           "name": "octillery",
-          "level": "56",
+          "level": "52",
           "moves": [
             "hydro-pump",
-            "blizzard",
-            "fire-blast",
-            "energy-ball"
+            "seed-bomb",
+            "flamethrower",
+            "flash-cannon"
           ],
           "ability": "suction-cups",
           "held": "expert-belt"
         },
         {
-          "name": "alakazam",
-          "level": "56",
+          "name": "bronzong",
+          "level": "52",
           "moves": [
-            "psychic",
+            "iron-head",
+            "zen-headbutt",
             "shadow-ball",
-            "dazzling-gleam",
-            "focus-blast"
+            "explosion"
           ],
-          "ability": "magic-guard",
-          "held": "life-orb"
+          "ability": "levitate",
+          "held": "bright-powder"
         },
         {
-          "name": "rhyperior",
-          "level": "56",
+          "name": "rhydon",
+          "level": "52",
           "moves": [
             "stone-edge",
             "earthquake",
+            "hammer-arm",
             "megahorn"
           ],
-          "ability": "solid-rock",
-          "held": "choice-band"
-        },
-        {
-          "name": "magmortar",
-          "level": "56",
-          "moves": [
-            "fire-blast",
-            "thunderbolt",
-            "aura-sphere",
-            "psychic"
-          ],
-          "ability": "flame-body",
-          "held": "choice-specs"
+          "ability": "rock-head",
+          "held": "muscle-band"
         },
         {
           "name": "toxicroak",
-          "level": "57",
+          "level": "53",
           "moves": [
-            "cross-chop",
             "gunk-shot",
-            "ice-punch",
-            "fake-out"
+            "cross-chop",
+            "fake-out",
+            "sucker-punch"
           ],
           "ability": "dry-skin",
-          "held": "focus-sash"
+          "held": "life-orb"
         }
       ]
     },
@@ -28081,6 +28070,84 @@
           ],
           "ability": "technician",
           "held": "expert-belt"
+        }
+      ]
+    },
+    "sat3": {
+      "name": "Saturn",
+      "speciality": "",
+      "img": "/leaders/dp-saturn",
+      "pokemon": [
+        {
+          "name": "bronzong",
+          "level": "56",
+          "moves": [
+            "zen-headbutt",
+            "gyro-ball",
+            "reflect",
+            "light-screen"
+          ],
+          "ability": "levitate",
+          "held": "light-clay"
+        },
+        {
+          "name": "octillery",
+          "level": "56",
+          "moves": [
+            "hydro-pump",
+            "blizzard",
+            "fire-blast",
+            "energy-ball"
+          ],
+          "ability": "suction-cups",
+          "held": "expert-belt"
+        },
+        {
+          "name": "alakazam",
+          "level": "56",
+          "moves": [
+            "psychic",
+            "shadow-ball",
+            "dazzling-gleam",
+            "focus-blast"
+          ],
+          "ability": "magic-guard",
+          "held": "life-orb"
+        },
+        {
+          "name": "rhyperior",
+          "level": "56",
+          "moves": [
+            "stone-edge",
+            "earthquake",
+            "megahorn"
+          ],
+          "ability": "solid-rock",
+          "held": "choice-band"
+        },
+        {
+          "name": "magmortar",
+          "level": "56",
+          "moves": [
+            "fire-blast",
+            "thunderbolt",
+            "aura-sphere",
+            "psychic"
+          ],
+          "ability": "flame-body",
+          "held": "choice-specs"
+        },
+        {
+          "name": "toxicroak",
+          "level": "57",
+          "moves": [
+            "cross-chop",
+            "gunk-shot",
+            "ice-punch",
+            "fake-out"
+          ],
+          "ability": "dry-skin",
+          "held": "focus-sash"
         }
       ]
     },
