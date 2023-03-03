@@ -3222,6 +3222,20 @@
     },
     {
       "type": "route",
+      "name": "Underground: Volcanic Cave",
+      "encounters": [
+        "geodude",
+        "onix",
+        "skorupi",
+        "ponyta",
+        "graveler",
+        "houndoom",
+        "houndoom",
+        "magby"
+      ]
+    },
+    {
+      "type": "route",
       "name": "Underground: Glacial Cavern",
       "encounters": [
         "magnemite",
@@ -48504,6 +48518,20 @@
         "shelgon",
         "chingling",
         "bronzor"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Underground: Volcanic Cave",
+      "encounters": [
+        "geodude",
+        "onix",
+        "skorupi",
+        "ponyta",
+        "graveler",
+        "houndoom",
+        "houndoom",
+        "magby"
       ]
     },
     {

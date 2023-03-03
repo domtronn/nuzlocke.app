@@ -828,19 +828,6 @@
           "starter": "grass"
         },
         {
-          "name": "emboar",
-          "level": "41",
-          "moves": [
-            "take-down",
-            "assurance",
-            "heat-crash",
-            "rollout"
-          ],
-          "ability": "blaze",
-          "held": "charcoal",
-          "starter": "grass"
-        },
-        {
           "name": "simisage",
           "level": "39",
           "moves": [
@@ -851,19 +838,6 @@
           ],
           "ability": "gluttony",
           "held": "miracle-seed",
-          "starter": "fire"
-        },
-        {
-          "name": "dewott",
-          "level": "41",
-          "moves": [
-            "aqua-jet",
-            "encore",
-            "revenge",
-            "slash"
-          ],
-          "ability": "torrent",
-          "held": "mystic-water",
           "starter": "fire"
         },
         {
@@ -878,6 +852,32 @@
           "ability": "gluttony",
           "held": "charcoal",
           "starter": "water"
+        },
+        {
+          "name": "emboar",
+          "level": "41",
+          "moves": [
+            "take-down",
+            "assurance",
+            "heat-crash",
+            "rollout"
+          ],
+          "ability": "blaze",
+          "held": "charcoal",
+          "starter": "grass"
+        },
+        {
+          "name": "dewott",
+          "level": "41",
+          "moves": [
+            "aqua-jet",
+            "encore",
+            "revenge",
+            "slash"
+          ],
+          "ability": "torrent",
+          "held": "mystic-water",
+          "starter": "fire"
         },
         {
           "name": "servine",
@@ -1254,7 +1254,7 @@
             "quick-attack",
             "work-up",
             "leer",
-            "growl"
+            "tackle"
           ],
           "ability": "super-luck"
         },
