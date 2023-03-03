@@ -14564,7 +14564,9 @@
       "type": "route",
       "name": "Rustboro City",
       "encounters": [
-        "seedot"
+        "seedot",
+        "lileep",
+        "anorith"
       ]
     },
     {
@@ -14585,6 +14587,11 @@
       "type": "route",
       "name": "Route 105",
       "encounters": [
+        "tentacool",
+        "magikarp",
+        "wingull",
+        "pelipper",
+        "wailmer",
         "regice"
       ]
     },
@@ -14641,6 +14648,7 @@
         "zubat",
         "abra",
         "geodude",
+        "makuhita",
         "nosepass",
         "sableye",
         "aron"
@@ -14789,6 +14797,7 @@
       "type": "route",
       "name": "Meteor Falls",
       "encounters": [
+        "zubat",
         "golbat",
         "goldeen",
         "magikarp",
@@ -14843,6 +14852,15 @@
       "type": "route",
       "name": "Route 111",
       "encounters": [
+        "sandshrew",
+        "geodude",
+        "goldeen",
+        "magikarp",
+        "marill",
+        "trapinch",
+        "cacnea",
+        "barboach",
+        "baltoy",
         "regirock"
       ]
     },
@@ -14893,7 +14911,19 @@
       "type": "route",
       "name": "Route 119",
       "encounters": [
-        "castform"
+        "oddish",
+        "tentacool",
+        "goldeen",
+        "magikarp",
+        "zigzagoon",
+        "linoone",
+        "wingull",
+        "pelipper",
+        "carvanha",
+        "feebas",
+        "castform",
+        "kecleon",
+        "tropius"
       ]
     },
     {
@@ -14922,6 +14952,16 @@
       "type": "route",
       "name": "Route 120",
       "encounters": [
+        "oddish",
+        "goldeen",
+        "magikarp",
+        "marill",
+        "poochyena",
+        "mightyena",
+        "seedot",
+        "barboach",
+        "kecleon",
+        "absol",
         "registeel"
       ]
     },
@@ -14957,13 +14997,40 @@
         "oddish",
         "gloom",
         "psyduck",
+        "golduck",
+        "geodude",
         "doduo",
+        "dodrio",
+        "rhyhorn",
         "goldeen",
         "seaking",
+        "pinsir",
         "magikarp",
+        "hoothoot",
+        "ledyba",
+        "spinarak",
         "natu",
+        "xatu",
+        "mareep",
+        "marill",
+        "aipom",
+        "sunkern",
+        "wooper",
+        "quagsire",
         "wobbuffet",
-        "girafarig"
+        "girafarig",
+        "pineco",
+        "gligar",
+        "snubbull",
+        "shuckle",
+        "heracross",
+        "teddiursa",
+        "remoraid",
+        "octillery",
+        "houndour",
+        "phanpy",
+        "stantler",
+        "miltank"
       ]
     },
     {
@@ -14982,6 +15049,8 @@
       "type": "route",
       "name": "Mt. Pyre",
       "encounters": [
+        "vulpix",
+        "wingull",
         "shuppet",
         "duskull",
         "chimecho"
@@ -15067,7 +15136,13 @@
       "type": "route",
       "name": "Route 124",
       "encounters": [
+        "tentacool",
+        "magikarp",
         "chinchou",
+        "wingull",
+        "pelipper",
+        "sharpedo",
+        "wailmer",
         "clamperl",
         "relicanth"
       ]
@@ -15076,6 +15151,12 @@
       "type": "route",
       "name": "Mossdeep City",
       "encounters": [
+        "tentacool",
+        "magikarp",
+        "wingull",
+        "pelipper",
+        "sharpedo",
+        "wailmer",
         "beldum"
       ]
     },
@@ -15111,6 +15192,9 @@
       "encounters": [
         "zubat",
         "golbat",
+        "tentacool",
+        "magikarp",
+        "wailmer",
         "snorunt",
         "spheal"
       ]
@@ -15169,7 +15253,13 @@
       "type": "route",
       "name": "Route 126",
       "encounters": [
+        "tentacool",
+        "magikarp",
         "chinchou",
+        "wingull",
+        "pelipper",
+        "sharpedo",
+        "wailmer",
         "clamperl",
         "relicanth"
       ]
@@ -15243,6 +15333,11 @@
       "type": "route",
       "name": "Sky Pillar",
       "encounters": [
+        "golbat",
+        "sableye",
+        "altaria",
+        "claydol",
+        "banette",
         "rayquaza"
       ]
     },
@@ -15353,11 +15448,19 @@
       "type": "route",
       "name": "Victory Road",
       "encounters": [
+        "zubat",
         "golbat",
+        "geodude",
+        "graveler",
         "goldeen",
         "magikarp",
+        "whismur",
+        "loudred",
+        "makuhita",
+        "hariyama",
         "sableye",
         "mawile",
+        "aron",
         "lairon",
         "barboach",
         "whiscash"
