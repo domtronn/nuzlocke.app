@@ -31027,6 +31027,9 @@
         "nidoranm",
         "growlithe",
         "doduo",
+        "turtwig",
+        "chimchar",
+        "piplup",
         "starly",
         "bidoof",
         "kricketot"
@@ -31123,7 +31126,14 @@
       "type": "route",
       "name": "Oreburgh City",
       "encounters": [
-        "abra"
+        "abra",
+        "omanyte",
+        "kabuto",
+        "aerodactyl",
+        "lileep",
+        "anorith",
+        "cranidos",
+        "shieldon"
       ]
     },
     {
@@ -31150,6 +31160,7 @@
         "machop",
         "geodude",
         "ponyta",
+        "munchlax",
         "aipom",
         "heracross",
         "phanpy",
@@ -31158,8 +31169,7 @@
         "kricketot",
         "burmy",
         "combee",
-        "cherubi",
-        "munchlax"
+        "cherubi"
       ]
     },
     {
@@ -31175,15 +31185,16 @@
         "seaking",
         "magikarp",
         "gyarados",
+        "sunkern",
         "pineco",
         "wurmple",
         "lotad",
         "seedot",
+        "budew",
         "starly",
         "bidoof",
         "kricketot",
-        "shinx",
-        "budew"
+        "shinx"
       ]
     },
     {
@@ -31217,16 +31228,30 @@
       "type": "route",
       "name": "Route 205",
       "encounters": [
+        "psyduck",
+        "golduck",
         "tentacool",
         "tentacruel",
+        "slowpoke",
         "shellder",
         "magikarp",
         "gyarados",
+        "munchlax",
+        "hoothoot",
         "hoppip",
         "aipom",
         "heracross",
         "wurmple",
+        "silcoon",
+        "beautifly",
+        "cascoon",
+        "dustox",
+        "lotad",
+        "budew",
+        "barboach",
+        "whiscash",
         "bidoof",
+        "kricketot",
         "burmy",
         "combee",
         "pachirisu",
@@ -31234,7 +31259,6 @@
         "cherubi",
         "shellos",
         "gastrodon",
-        "munchlax",
         "finneon",
         "lumineon"
       ]
@@ -31310,7 +31334,8 @@
       "name": "The Old Chateau",
       "encounters": [
         "gastly",
-        "gengar"
+        "gengar",
+        "rotom"
       ]
     },
     {
@@ -31378,7 +31403,36 @@
       "type": "route",
       "name": "Mt. Coronet",
       "encounters": [
-        "regice"
+        "cleffa",
+        "clefairy",
+        "zubat",
+        "golbat",
+        "machop",
+        "machoke",
+        "geodude",
+        "graveler",
+        "magikarp",
+        "gyarados",
+        "dratini",
+        "dragonair",
+        "noctowl",
+        "loudred",
+        "nosepass",
+        "meditite",
+        "medicham",
+        "lunatone",
+        "solrock",
+        "barboach",
+        "whiscash",
+        "feebas",
+        "chingling",
+        "chimecho",
+        "absol",
+        "regice",
+        "bronzor",
+        "bronzong",
+        "snover",
+        "abomasnow"
       ]
     },
     {
@@ -31481,11 +31535,18 @@
       "type": "route",
       "name": "Route 210",
       "encounters": [
+        "psyduck",
+        "golduck",
+        "machop",
+        "machoke",
         "geodude",
         "ponyta",
         "chansey",
         "scyther",
         "tauros",
+        "magikarp",
+        "gyarados",
+        "munchlax",
         "hoothoot",
         "noctowl",
         "aipom",
@@ -31495,12 +31556,19 @@
         "wurmple",
         "seedot",
         "nuzleaf",
+        "meditite",
         "roselia",
+        "swablu",
+        "zangoose",
+        "seviper",
+        "barboach",
+        "whiscash",
+        "bagon",
         "staravia",
+        "bibarel",
         "burmy",
         "combee",
-        "cherubi",
-        "munchlax"
+        "cherubi"
       ]
     },
     {
@@ -31607,14 +31675,28 @@
       "type": "route",
       "name": "Great Marsh",
       "encounters": [
+        "arbok",
         "paras",
         "exeggcute",
+        "tangela",
         "kangaskhan",
+        "magikarp",
+        "gyarados",
+        "hoothoot",
+        "noctowl",
+        "yanma",
+        "wooper",
+        "quagsire",
         "shroomish",
         "roselia",
         "gulpin",
+        "carvanha",
+        "barboach",
+        "whiscash",
         "kecleon",
+        "tropius",
         "staravia",
+        "bibarel",
         "skorupi",
         "drapion",
         "croagunk",
@@ -31641,26 +31723,35 @@
       "name": "Route 212",
       "encounters": [
         "ekans",
+        "psyduck",
+        "golduck",
         "tentacool",
         "tentacruel",
         "grimer",
+        "goldeen",
+        "seaking",
         "magikarp",
         "gyarados",
+        "munchlax",
+        "marill",
         "aipom",
         "quagsire",
         "heracross",
         "remoraid",
         "octillery",
+        "smeargle",
         "wurmple",
         "lotad",
         "lombre",
+        "kirlia",
+        "roselia",
+        "staravia",
         "burmy",
         "combee",
         "buizel",
         "cherubi",
         "shellos",
         "gastrodon",
-        "munchlax",
         "croagunk"
       ]
     },
@@ -31851,7 +31942,25 @@
       "type": "route",
       "name": "Iron Island",
       "encounters": [
-        "registeel"
+        "zubat",
+        "golbat",
+        "tentacool",
+        "tentacruel",
+        "geodude",
+        "graveler",
+        "onix",
+        "steelix",
+        "magikarp",
+        "gyarados",
+        "qwilfish",
+        "wingull",
+        "pelipper",
+        "sableye",
+        "mawile",
+        "registeel",
+        "riolu",
+        "finneon",
+        "lumineon"
       ]
     },
     {
@@ -31860,11 +31969,20 @@
       "encounters": [
         "zubat",
         "machop",
-        "noctowl",
+        "machoke",
+        "graveler",
         "tyrogue",
+        "munchlax",
+        "noctowl",
+        "aipom",
+        "heracross",
+        "wurmple",
         "meditite",
-        "bidoof",
         "chingling",
+        "bidoof",
+        "burmy",
+        "combee",
+        "cherubi",
         "bronzor"
       ]
     },
@@ -31923,6 +32041,19 @@
       "type": "route",
       "name": "Lake Acuity",
       "encounters": [
+        "psyduck",
+        "golduck",
+        "goldeen",
+        "seaking",
+        "magikarp",
+        "gyarados",
+        "sneasel",
+        "teddiursa",
+        "lunatone",
+        "solrock",
+        "snorunt",
+        "bibarel",
+        "snover",
         "uxie"
       ]
     },
@@ -31931,6 +32062,7 @@
       "name": "Snowpoint Temple",
       "encounters": [
         "golbat",
+        "smoochum",
         "jynx",
         "sneasel",
         "regigigas"
@@ -32040,8 +32172,16 @@
       "encounters": [
         "golbat",
         "graveler",
+        "magneton",
+        "dewgong",
         "onix",
         "steelix",
+        "rhyhorn",
+        "rhydon",
+        "magikarp",
+        "gyarados",
+        "lapras",
+        "azumarill",
         "floatzel",
         "gabite"
       ]
