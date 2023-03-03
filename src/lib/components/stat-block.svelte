@@ -21,7 +21,7 @@
   {/each}
 </div>
 
-<style>
+<style lang="postcss">
   b {
     z-index: 5;
     position: relative;

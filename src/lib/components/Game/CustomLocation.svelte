@@ -3,8 +3,8 @@
   import { onMount } from 'svelte'
   import { readdata, patchlocation } from '$lib/store'
 
-  import Icon from 'svelte-icons-pack'
-  import Edit from 'svelte-icons-pack/ai/AiOutlineEdit'
+  import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
+  import { Edit } from '$icons'
 
   let value
   onMount(() => {
@@ -36,14 +36,15 @@
     {value}
   </span>
   <Icon
+    inline={true}
     size=1.4em
-    src={Edit}
+    icon={Edit}
     className='{!value ? 'absolute left-0 sm:right-0 sm:-translate-x-full top-0' : 'absolute -right-2 sm:right-initial translate-x-full sm:-translate-x-full sm:-left-8 dark:text-gray-500 text-gray-300 hover:text-black'} fill-current cursor-edit pointer-events-none transition'
     />
 
 </div>
 
-<style>
+<style lang="postcss">
   span:focus ~ :global(*) { opacity: 0; }
   @media (max-width:theme('screens.sm')) {
     span { min-width: 480px; user-select: text; }

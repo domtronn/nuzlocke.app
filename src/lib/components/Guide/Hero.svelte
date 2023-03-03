@@ -3,9 +3,9 @@
   import { Picture } from '$c/core'
   import { SVGs } from './'
   import ThemeToggle from '$c/theme-toggle.svelte'
-  import Icon from 'svelte-icons-pack'
-  import Home from 'svelte-icons-pack/ai/AiOutlineHome'
-  import Track from 'svelte-icons-pack/ri/RiMapFootprintFill'
+  import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
+  import { Home } from '$icons'
+  import { Track } from '$icons'
 
   import { savedGames, createGame } from '$store'
 
@@ -18,7 +18,7 @@
 <header style='--col1: {theme[0]}; --col2: {theme[1]}; --col3: {theme[2] || '#000'}'>
   <div class='g-container nav'>
     <a title='Home' href='/'>
-      <Icon size=1.4rem src={Home} className=fill-current />
+      <Icon inline={true} height=1.4rem icon={Home} class=fill-current />
     </a>
     <div>
       <ThemeToggle />
@@ -40,7 +40,7 @@
         <button on:click={onnew}>
           <span>
             Start tracking
-            <Icon src={Track} className='translate-y-1 ml-2 fill-current' size=1.4rem />
+            <Icon inline={true} icon={Track} class='translate-y-1 ml-2 fill-current' height=1.4rem />
           </span>
         </button>
       </div>
@@ -74,13 +74,13 @@
 
       <button class=inverted on:click={onnew}>
         Start Tracking
-        <Icon src={Track} className='translate-y-1 ml-2 fill-current' size=1.4rem />
+        <Icon inline={true} icon={Track} class='translate-y-1 ml-2 fill-current' height=1.4rem />
       </button>
     </p>
   </div>
 {/if}
 
-<style>
+<style lang="postcss">
   header {
     color: var(--col3);
     background: linear-gradient(150deg, var(--col1), var(--col2));

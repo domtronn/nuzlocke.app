@@ -1,10 +1,10 @@
 <script>
   export let type, className = ''
 
-  import Icon from 'svelte-icons-pack/Icon.svelte'
-  import Special from 'svelte-icons-pack/fi/FiTarget'
-  import Physical from 'svelte-icons-pack/fa/FaSolidFistRaised'
-  import Status from 'svelte-icons-pack/bi/BiSolidYinYang'
+  import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
+  import { Special } from '$icons'
+  import { Physical } from '$icons'
+  import { Status } from '$icons'
 
   import ColorMap from '$lib/data/colors.json'
   const IconMap = {
@@ -20,7 +20,7 @@
 
 {#if icon}
   <div style="--badge-color: {col[0]}; padding: 4px 5px;" class={className}>
-    <Icon src={icon} color={col[1]} />
+    <Icon inline={true} icon={icon} color={col[1]} />
   </div>
 {:else}
     {#if $$slots.content}
@@ -34,7 +34,7 @@
     {/if}
 {/if}
 
-<style>
+<style lang="postcss">
   :global(.dark) div { color: theme('colors.gray.900') }
 
   div {

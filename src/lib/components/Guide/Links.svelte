@@ -1,7 +1,7 @@
 <script>
   export let links
   import { SVGs } from './'
-  const order = ['romhack', 'I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII']
+  const order = ['romhack', 'I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX']
 </script>
 
 <nav>
@@ -10,12 +10,12 @@
   <div class=g-container>
     <h2>Other Nuzlocke Guides</h2>
 
-    <div class=grid>
+    <div class=g-grid>
       {#each order as id}
         <div>
           <h3>{id.startsWith('rom') ? 'Rom hacks' : `Gen ${id}`}</h3>
           {#each links[id] as { href, logo, title }}
-            <a {href} sveltekit:prefetch title='Pokémon {title} Nuzlocke Guide'>
+            <a {href} data-sveltekit-preload-data title='Pokémon {title} Nuzlocke Guide'>
               Pokémon {title}
             </a>
           {/each}
@@ -25,8 +25,8 @@
   </div>
 </nav>
 
-<style>
-  div.grid { @apply grid grid-cols-2 md:grid-cols-5 gap-x-2 gap-y-4 }
+<style lang="postcss">
+  div.g-grid { @apply grid grid-cols-2 md:grid-cols-5 gap-x-2 gap-y-4 }
 
   nav { @apply relative bg-gray-900 pb-40 mt-40 }
 

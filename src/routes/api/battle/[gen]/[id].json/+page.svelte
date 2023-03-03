@@ -1,0 +1,6 @@
+<script>
+  export let gen, id
+  import GymCard from '$lib/components/gym-card.svelte'
+</script>
+
+<GymCard starter=fire game={gen} id={id} />

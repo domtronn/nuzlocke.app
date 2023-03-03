@@ -5,8 +5,8 @@
 
   import { capitalise, toSlug, toId } from '$utils/string'
 
-  import Icon from 'svelte-icons-pack'
-  import Link from 'svelte-icons-pack/bi/BiLink'
+  import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
+  import { Link } from '$icons'
 
   const count = Object.values(gyms).flat().length
   const order = ['Gym Leader', 'Elite Four', 'Rival', 'Evil Team', 'Other'].filter(i => gyms[i])
@@ -22,8 +22,8 @@
 </script>
 
 <h2 id=boss-summary>
-  <a title='{game.title} Boss Battles' href='{path}#bosses'>
-    <Icon src={Link} size=1.8rem className=fill-current />
+  <a title='{game.title} Boss Battles' href='{path}#boss-summary'>
+    <Icon inline={true} icon={Link} height=1.8rem class=fill-current />
   </a>
   {game.title} Boss Battles
 </h2>
@@ -59,8 +59,10 @@
   <h3>Select your starter type</h3>
   <ul role=radiogroup class=flex>
     {#each ['grass', 'water', 'fire'] as type}
-      <li class={type} on:click={setstarter(type)} title='Select {type}' aria-checked={starter === type} role=radio>
-        <PIcon className='starter-icon' type=symbol name='type-{type}' />
+      <li class={type} aria-checked={starter === type} role=radio>
+        <button title='Select {type}' on:click={setstarter(type)}>
+          <PIcon className='starter-icon' type=symbol name='type-{type}' />
+        </button>
       </li>
     {/each}
   </ul>
@@ -77,7 +79,7 @@
   <section>
     <h3 id={toSlug(group)}>
       <a title='{group} fights' href='{path}#{toSlug(group)}'>
-        <Icon src={Link} size=1.8rem className=fill-current />
+        <Icon inline={true} icon={Link} height=1.8rem class=fill-current />
       </a>
 
       {group} fights
@@ -102,7 +104,7 @@
 {/each}
 
 
-<style>
+<style lang="postcss">
   .lvlcap { @apply absolute top-3 right-0 md:-right-16}
 
   h2, li, div { @apply relative }

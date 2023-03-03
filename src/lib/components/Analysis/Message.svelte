@@ -16,7 +16,7 @@
 {#if !gapTypes.length}
 
   <div in:fade style='max-width: fit-content' class='mx-auto mb-4 mt-3 overflow-hidden rounded-xl shadow-lg bg-yellow-50 flex items-center'>
-    <Icon color=yellow size=xs
+    <Icon inline={true} color=yellow height=xs
           icons={[ shardicons, sashicons ]}
           {scale}>
       🎉
@@ -47,7 +47,7 @@
 {:else}
 
   <div in:fade style='max-width: fit-content' class='overflow-hidden rounded-xl shadow-lg border dark:border-none flex items-center my-3 bg-red-200 mx-auto'>
-    <Icon color=red size=xs icons={[]}>
+    <Icon inline={true} color=red height=xs icons={[]}>
       😱
     </Icon>
 
@@ -74,7 +74,7 @@
   </p>
 {/if}
 
-<style>
+<style lang="postcss">
   p {
     @apply text-sm text-center max-w-xs mx-auto leading-5;
   }

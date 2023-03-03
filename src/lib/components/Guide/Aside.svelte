@@ -3,8 +3,8 @@
   import { toSlug, toId, capitalise } from '$utils/string'
 
   import { PIcon } from '$c/core'
-  import Icon from 'svelte-icons-pack'
-  import Chevron from 'svelte-icons-pack/cg/CgChevronDown'
+  import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
+  import { Chevron } from '$icons'
 
   const splitAt = (arr, i) => [arr.slice(0, i), arr.slice(i)]
 
@@ -15,11 +15,11 @@
 </script>
 
 <aside class:show class=g-container>
-  <div class=head on:click={onshow}>
+  <button class=head on:click={onshow}>
     <h2>In this guide</h2>
 
-    <Icon src={Chevron} className=fill-current size=2rem />
-  </div>
+    <Icon inline={true} icon={Chevron} class=fill-current height=2rem />
+  </button>
 
   <div class=main>
     <div class=encounters>
@@ -65,7 +65,7 @@
 
 </aside>
 
-<style>
+<style lang="postcss">
  h3 { @apply text-xl }
 
  ul { @apply divide-y }

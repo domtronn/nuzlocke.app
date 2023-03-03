@@ -1,4 +1,22 @@
 {
+  "vi": {
+    "pid": "vi",
+    "lid": "sv",
+    "logo": "/logos/violet-logo",
+    "title": "Violet",
+    "gen": "IX",
+    "supported": true,
+    "region": "paldea"
+  },
+  "sc": {
+    "pid": "sc",
+    "lid": "sv",
+    "logo": "/logos/scarlet-logo",
+    "title": "Scarlet",
+    "gen": "IX",
+    "supported": true,
+    "region": "paldea"
+  },
   "sw": {
     "pid": "sw",
     "lid": "swsh",
@@ -304,7 +322,7 @@
     "supported": true,
     "region": "johto"
   },
-  "fr":  {
+  "fr": {
     "pid": "fr",
     "lid": "frlg",
     "logo": "/logos/fire-red-logo",

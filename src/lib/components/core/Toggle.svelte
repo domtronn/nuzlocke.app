@@ -11,7 +11,7 @@
   <span />
 </label>
 
-<style>
+<style lang="postcss">
   :root {
     --bg-on: theme('colors.white');
     --fg-on: theme('colors.indigo.600');

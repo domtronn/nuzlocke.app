@@ -1,4 +1,4 @@
-import { browser } from '$app/env'
+import { browser } from '$app/environment'
 
 export const uuid = () => {
   if (!browser) return ''

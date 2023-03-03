@@ -1,7 +1,7 @@
 <script>
   import { onMount, getContext } from 'svelte'
   import { IconButton } from '$lib/components/core'
-  import Settings from 'svelte-icons-pack/vsc/VscSettings'
+  import { Settings } from '$icons'
 
   let SettingsModal
   onMount(() => {

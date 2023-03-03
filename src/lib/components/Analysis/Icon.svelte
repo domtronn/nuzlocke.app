@@ -30,7 +30,7 @@
   {/if}
 </div>
 
-<style>
+<style lang="postcss">
   div { @apply relative overflow-hidden; flex-shrink: 0}
   .base { @apply w-20 h-20 text-5xl }
   .sm { @apply w-16 h-16 text-4xl }

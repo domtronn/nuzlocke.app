@@ -1,12 +1,12 @@
 <script>
 
-  export let sprite, name, types, level = '', moves, maxStat, held = '', ability = '', stats, nature = undefined
+  export let sprite, fallback, name, types, level = '', moves, maxStat, held = '', ability = '', stats, nature = undefined
 
   import { capitalise } from '$lib/utils/string'
 
   import PIcon from '$lib/components/core/PokemonIcon.svelte'
-  import Icon from 'svelte-icons-pack'
-  import Hand from 'svelte-icons-pack/fa/FaSolidHandHolding'
+  import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
+  import { Hand } from '$icons'
 
   import ColorMap from '$lib/data/colors.json'
   import Tooltip from '$lib/components/core/Tooltip.svelte'
@@ -67,7 +67,7 @@
             <span>
               <PIcon type='item' name={held.sprite} />
             </span>
-            <Icon src={Hand} className='-mt-3.5 fill-current dark:text-white' />
+            <Icon inline={true} icon={Hand} class='-mt-3.5 fill-current dark:text-white' />
           </div>
         {/if}
 
@@ -78,11 +78,18 @@
     <div class='absolute -right-8 h-0'>
       <slot name=img />
       {#if sprite}
-        <img width=96 height=96 style="--v-anim-dur: {animDur}s; --v-anim-delay: {animDelay}s" class='{anim} img__pkm -translate-y-16 h-40 w-auto' src={sprite} alt={name} />
+        <img
+          width=96
+          height=96
+          style="--v-anim-dur: {animDur}s; --v-anim-delay: {animDelay}s"
+          class='{anim} img__pkm  -translate-y-16 h-40 w-auto'
+          src={sprite}
+          onerror="this.onerror=null;this.src='{fallback}'"
+          alt={name} />
       {:else}
         <img width=96 height=96
              src={UNOWN}
-             style="--v-anim-dur: {animDur}s; --v-anim-delay: {animDelay}s" class='{anim} img__pkm scale-75 -translate-y-16 -translate-x-6 h-40 w-auto'
+             style="--v-anim-dur: {animDur}s; --v-anim-delay: {animDelay}s" class='{anim} scale-75 -translate-y-16 -translate-x-6 h-40 w-auto'
              alt='Unknown sprite for {name}'
              />
       {/if}
@@ -119,7 +126,7 @@
   <slot name="footer" id={canonname} />
 </div>
 
-<style>
+<style lang="postcss">
   img {
     image-rendering: pixelated;
   }
@@ -157,11 +164,14 @@
   }
 
   img { animation-delay: var(--v-anim-delay); }
-  img.bob { animation: bob var(--v-anim-dur) ease infinite; }
+  img.bob {
+    -webkit-animation: bob var(--v-anim-dur) ease infinite;
+    animation: bob var(--v-anim-dur) ease infinite;
+  }
 
   @keyframes bob {
-    0%, 100% {transform: var(--tw-transform) scaleX(1) scaleY(1);}
-    25%, 75% { transform: var(--tw-transform) scaleX(1.02) scaleY(0.95); }
-    50% { transform: var(--tw-transform) scaleX(0.95) scaleY(1.03); }
+    0%, 100% {transform: translate(var(--tw-translate-x),var(--tw-translate-y)) scaleX(1) scaleY(1);}
+    25%, 75% { transform: translate(var(--tw-translate-x),var(--tw-translate-y)) scaleX(1.02) scaleY(0.95); }
+    50% { transform: translate(var(--tw-translate-x),var(--tw-translate-y)) scaleX(0.95) scaleY(1.03); }
   }
 </style>

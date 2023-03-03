@@ -2,7 +2,7 @@
   export let game, id, location = '', starter = '', type, forceLevelCap = false, reader = false
   let pokemon = [], name = '', speciality = '', img
 
-  import { browser } from '$app/env'
+  import { browser } from '$app/environment'
   import { onMount, getContext } from 'svelte'
 
   import Pokemon from '$lib/components/pokemon-card.svelte'
@@ -15,9 +15,8 @@
   import { Picture, PIcon, Accordion } from '$lib/components/core'
   import { Wrapper as SettingWrapper } from '$lib/components/Settings'
 
-  import Icon from 'svelte-icons-pack'
-  import Badge from 'svelte-icons-pack/fi/FiRefreshCcw'
-  import Ball from 'svelte-icons-pack/cg/CgPokemon'
+  import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
+  import { Loop as Badge, Ball } from '$icons'
 
   let CompareModal
   onMount(() => {
@@ -75,7 +74,7 @@
       {#if img}
         <span class='relative -mx-5'>
           <Picture
-            src={img.src}
+            src='https://img.nuzlocke.app{img.src}'
             alt={name}
             pixelated
             className='w-18 md:w-36'
@@ -94,7 +93,7 @@
               {#if img?.author}
                 <a href={img.link}
                    target=_blank
-                   rel=noopener
+                   rel=noreferrer
                    on:click|stopPropagation={function () {}}
                    class:mt-6={location}
                    class='absolute italic text-tiny text-gray-500 dark:text-gray-600 dark:hover:text-indigo-400 hover:text-indigo-300 hover:underline transition'>
@@ -163,9 +162,9 @@
             on:click={_ => open(CompareModal, { pokemon, id: p.name })}
           >
             <span class='absolute w-8 h-8 -mb-2 transform md:scale-75'>
-              <Icon className='absolute' size=1.4em src={Badge} />
-              <Icon className='absolute dark:bg-gray-800 bg-white rounded-full -top-0.5 right-1.5' size=0.8em src={Ball} />
-              <Icon className='absolute dark:bg-gray-800 bg-white rounded-full bottom-2 -left-0.5' size=0.8em src={Ball} />
+              <Icon inline={true} class='absolute' height=1.4em icon={Badge} />
+              <Icon inline={true} class='absolute dark:bg-gray-800 bg-white rounded-full -top-0.5 right-1.5' height=0.8em icon={Ball} />
+              <Icon inline={true} class='absolute dark:bg-gray-800 bg-white rounded-full bottom-2 -left-0.5' height=0.8em icon={Ball} />
             </span>
             <span class='ml-8 md:ml-6 md:text-xs'>
               Compare

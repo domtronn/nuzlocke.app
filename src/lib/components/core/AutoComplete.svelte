@@ -2,9 +2,9 @@
   import AutoComplete from 'simple-svelte-autocomplete'
 
   import PIcon from '$lib/components/core/PokemonIcon.svelte'
-  import Icon from 'svelte-icons-pack'
-  import Spinner from 'svelte-icons-pack/cg/CgSpinner'
-  import Chevron from 'svelte-icons-pack/bi/BiSolidChevronUp'
+  import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
+  import { Spinner } from '$icons'
+  import { Chevron } from '$icons'
 
   export let items = undefined, fetch = undefined
   export let placeholder, name, inset = false, color = '', label = 'label', className = '', dropdownClass = '', wide = false, rounded = false
@@ -28,9 +28,10 @@
   <slot iconClass='pointer-events-none absolute z-40 -left-2 top-1/2 -translate-y-1/2' {selected} name=icon />
 
   <Icon
+    inline={true}
     size=1em
-    src={Chevron}
-    className='z-10 absolute right-1 pointer-events-none top-1/2 -translate-y-1/2 fill-current text-gray-200 dark:text-gray-500 dark:border-gray-500 transform rotate-180 border-r w-6'
+    icon={Chevron}
+    class='z-10 absolute right-1 pointer-events-none top-1/2 -translate-y-1/2 fill-current text-gray-200 dark:text-gray-500 dark:border-gray-500 transform rotate-180 border-r w-6'
   />
 
   <label for={name}>{name}</label>
@@ -69,14 +70,14 @@
     </span>
 
     <span slot=loading let:loadingText={loadingText} class='inline-flex items-center h-6 text-sm text-gray-600'>
-      <Icon src={Spinner} className='fill-current animate-spin mr-2' />
+      <Icon inline={true} icon={Spinner} class='fill-current animate-spin mr-2' />
       {loadingText}
     </span>
 
   </AutoComplete>
 </div>
 
-<style>
+<style lang="postcss">
   :root {
     --auc-inset: theme('spacing.3');
 

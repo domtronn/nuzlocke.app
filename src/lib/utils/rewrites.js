@@ -1,5 +1,5 @@
-import { prerendering, dev } from '$app/env';
-const rewrite = !prerendering && !dev;
+import { building, dev } from '$app/environment';
+const rewrite = !building && !dev;
 
 // TODO: Remember to update `vercel.json` in root of project when
 // modifying these sources

@@ -5,13 +5,13 @@
   import { PIcon, Tooltip } from '$c/core'
   import TypeBadge from '$c/type-badge.svelte'
 
-  import Icon from 'svelte-icons-pack'
-  import Link from 'svelte-icons-pack/bi/BiLink'
+  import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
+  import { Link } from '$icons'
 </script>
 
 <h2 id=encounters>
   <a title='{game.title} Encounters' href='{path}#encounters'>
-    <Icon src={Link} size=1.8rem className=fill-current />
+    <Icon inline={true} icon={Link} height=1.8rem class=fill-current />
   </a>
   {game.title} Encounters
 </h2>
@@ -31,7 +31,7 @@
   encounters. <span aria-hidden>Hover over a Pokémon to see where to encounter it!</span>
 </p>
 
-<p class=sr-only>
+<p class='sr-only w-0 h-0 overflow-none'>
   {#each Object.entries(encounters).sort(([, a], [, b])=> a.length - b.length) as [type, encounters]}
     <h3>{encounters.length} {capitalise(type)} Pokémon encounters</h3>
     <ul>
@@ -47,10 +47,10 @@
 <div>
   {#each Object.entries(encounters).sort(([, a], [, b])=> a.length - b.length) as [type, encounters]}
     <section id={toId.encounter(type)}>
-      <h3 aria-hidden>
+      <h3>
         <span>
           <a title='{capitalise(type)} Pokémon' href='{path}#{toId.encounter(type)}'>
-            <Icon src={Link} size=1.8rem className=fill-current />
+            <Icon inline={true} icon={Link} height=1.8rem class=fill-current />
           </a>
           <span class=figure>{encounters.length}</span>{capitalise(type)} Pokémon
         </span>
@@ -59,7 +59,7 @@
 
       <ul>
         {#each encounters as { name, sprite, original }}
-          <li title={name}>
+          <li class='text-xs' title={name}>
             <PIcon name={sprite} />
             <Tooltip>
               Find {name} at {toList(encounterMap[sprite] || [], i => i, 'and')}
@@ -71,7 +71,7 @@
   {/each}
 </div>
 
-<style>
+<style lang="postcss">
   section { @apply my-6 }
 
   h2, h3 { @apply tracking-widest }

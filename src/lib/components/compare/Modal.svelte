@@ -1,7 +1,7 @@
 <script>
   export let pokemon = [], id = ''
 
-  import { browser } from '$app/env'
+  import { browser } from '$app/environment'
 
   import { getContext } from 'svelte'
   import { fade } from 'svelte/transition'
@@ -11,10 +11,10 @@
   import { NuzlockeGroups } from '$lib/data/states'
   import ColorMap from '$lib/data/colors.json'
 
-  import Icon from 'svelte-icons-pack'
-  import Arrow from 'svelte-icons-pack/bi/BiSolidRightArrow'
-  import Plus from 'svelte-icons-pack/bi/BiPlus'
-  import Minus from 'svelte-icons-pack/bi/BiMinus'
+  import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
+  import { Arrow } from '$icons'
+  import { Plus } from '$icons'
+  import { Minus } from '$icons'
 
   import { CompareStats, CompareCard, CompareControls, CompareInfo, CompareMoves } from './'
   import { Accordion, Tabs, PIcon } from '$lib/components/core'
@@ -110,9 +110,9 @@
             <strong slot=heading class=text-sm> Info </strong>
             <span slot=icon let:isOpen={isOpen} let:classes={className}>
               {#if isOpen}
-                <Icon size=0.8em src={Minus} className='{className} transform -rotate-90' />
+                <Icon inline={true} height=0.8em icon={Minus} class='{className} transform -rotate-90' />
               {:else}
-                <Icon size=0.8em src={Plus} {className} />
+                <Icon inline={true} height=0.8em icon={Plus} class={className} />
               {/if}
             </span>
 
@@ -137,7 +137,7 @@
   {/if}
 </section>
 
-<style>
+<style lang="postcss">
   section { min-width: 100%; }
 
   @media (min-width:theme('screens.sm')) {

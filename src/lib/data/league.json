@@ -18707,7 +18707,7 @@
           "held": "life-orb"
         },
         {
-          "name": "milotic",
+          "name": "milotic-mega",
           "level": "+3",
           "moves": [
             "scald",
@@ -38350,6 +38350,1580 @@
           ],
           "ability": "torrent",
           "held": "rindo-berry"
+        }
+      ]
+    }
+  },
+  "sv": {
+    "1": {
+      "name": "Katy",
+      "speciality": "bug",
+      "img": {
+        "src": "/leaders/sv-katy",
+        "author": "Kyledove",
+        "link": "https://www.deviantart.com/kyle-dove"
+      },
+      "pokemon": [
+        {
+          "name": "nymble",
+          "level": "14",
+          "moves": [
+            "struggle-bug",
+            "double-kick"
+          ],
+          "ability": "swarm"
+        },
+        {
+          "name": "tarountula",
+          "level": "14",
+          "moves": [
+            "bug-bite",
+            "assurance"
+          ],
+          "ability": "insomnia"
+        },
+        {
+          "name": "teddiursa",
+          "level": "15",
+          "moves": [
+            "fury-cutter",
+            "fury-swipes"
+          ],
+          "ability": "pickup"
+        }
+      ]
+    },
+    "2": {
+      "name": "Brassius",
+      "speciality": "grass",
+      "img": {
+        "src": "/leaders/sv-brassius",
+        "author": "Kyledove",
+        "link": "https://www.deviantart.com/kyle-dove"
+      },
+      "pokemon": [
+        {
+          "name": "petilil",
+          "level": "16",
+          "moves": [
+            "sleep-powder",
+            "mega-drain"
+          ],
+          "ability": "own-tempo"
+        },
+        {
+          "name": "smoliv",
+          "level": "16",
+          "moves": [
+            "tackle",
+            "razor-leaf"
+          ],
+          "ability": "early-bird"
+        },
+        {
+          "name": "sudowoodo",
+          "level": "17",
+          "moves": [
+            "trailblaze",
+            "rock-throw"
+          ],
+          "ability": "sturdy"
+        }
+      ]
+    },
+    "3": {
+      "name": "Iono",
+      "speciality": "electric",
+      "img": {
+        "src": "/leaders/sv-iono",
+        "author": "Kyledove",
+        "link": "https://www.deviantart.com/kyle-dove"
+      },
+      "pokemon": [
+        {
+          "name": "wattrel",
+          "level": "23",
+          "moves": [
+            "pluck",
+            "quick-attack",
+            "spark"
+          ],
+          "ability": "wind-power"
+        },
+        {
+          "name": "bellibolt",
+          "level": "23",
+          "moves": [
+            "water-gun",
+            "spark"
+          ],
+          "ability": "electromorphosis"
+        },
+        {
+          "name": "luxio",
+          "level": "23",
+          "moves": [
+            "spark",
+            "bite"
+          ],
+          "ability": "intimidate"
+        },
+        {
+          "name": "mismagius",
+          "level": "24",
+          "moves": [
+            "charge-beam",
+            "hex",
+            "confuse-ray"
+          ],
+          "ability": "levitate"
+        }
+      ]
+    },
+    "4": {
+      "name": "Kofu",
+      "speciality": "water",
+      "img": {
+        "src": "/leaders/sv-kofu",
+        "author": "Kyledove",
+        "link": "https://www.deviantart.com/kyle-dove"
+      },
+      "pokemon": [
+        {
+          "name": "veluza",
+          "level": "29",
+          "moves": [
+            "splash",
+            "pluck",
+            "aqua-cutter"
+          ],
+          "ability": "mold-breaker"
+        },
+        {
+          "name": "wugtrio",
+          "level": "29",
+          "moves": [
+            "mud-slap",
+            "water-pulse",
+            "headbutt"
+          ],
+          "ability": "gooey"
+        },
+        {
+          "name": "crabominable",
+          "level": "30",
+          "moves": [
+            "crabhammer",
+            "rock-smash",
+            "slam"
+          ],
+          "ability": "iron-fist"
+        }
+      ]
+    },
+    "5": {
+      "name": "Larry",
+      "speciality": "normal",
+      "img": {
+        "src": "/leaders/sv-larry",
+        "author": "Kyledove",
+        "link": "https://www.deviantart.com/kyle-dove"
+      },
+      "pokemon": [
+        {
+          "name": "komala",
+          "level": "35",
+          "moves": [
+            "yawn",
+            "sucker-punch",
+            "slam"
+          ],
+          "ability": "comatose"
+        },
+        {
+          "name": "dudunsparce",
+          "level": "35",
+          "moves": [
+            "hyper-drill",
+            "drill-run",
+            "glare"
+          ],
+          "ability": "serene-grace"
+        },
+        {
+          "name": "staraptor",
+          "level": "36",
+          "moves": [
+            "facade",
+            "aerial-ace"
+          ],
+          "ability": "intimidate"
+        }
+      ]
+    },
+    "6": {
+      "name": "Ryme",
+      "speciality": "ghost",
+      "img": {
+        "src": "/leaders/sv-ryme",
+        "author": "Kyledove",
+        "link": "https://www.deviantart.com/kyle-dove"
+      },
+      "pokemon": [
+        {
+          "name": "banette",
+          "level": "41",
+          "moves": [
+            "icy-wind",
+            "sucker-punch",
+            "shadow-sneak"
+          ],
+          "ability": "insomnia"
+        },
+        {
+          "name": "mimikyu-disguised",
+          "level": "41",
+          "moves": [
+            "light-screen",
+            "shadow-sneak",
+            "slash"
+          ],
+          "ability": "disguise"
+        },
+        {
+          "name": "houndstone",
+          "level": "41",
+          "moves": [
+            "play-rough",
+            "crunch",
+            "phantom-force"
+          ],
+          "ability": "sand-rush"
+        },
+        {
+          "name": "toxtricity-low-key",
+          "level": "42",
+          "moves": [
+            "discharge",
+            "hex",
+            "hyper-voice"
+          ],
+          "ability": "punk-rock"
+        }
+      ]
+    },
+    "7": {
+      "name": "Tulip",
+      "speciality": "psychic",
+      "img": {
+        "src": "/leaders/sv-tulip",
+        "author": "Kyledove",
+        "link": "https://www.deviantart.com/kyle-dove"
+      },
+      "pokemon": [
+        {
+          "name": "farigiraf",
+          "level": "44",
+          "moves": [
+            "crunch",
+            "zen-headbutt",
+            "reflect"
+          ],
+          "ability": "armor-tail"
+        },
+        {
+          "name": "gardevoir",
+          "level": "44",
+          "moves": [
+            "psychic",
+            "dazzling-gleam",
+            "energy-ball"
+          ],
+          "ability": "synchronize"
+        },
+        {
+          "name": "espathra",
+          "level": "44",
+          "moves": [
+            "psychic",
+            "quick-attack",
+            "shadow-ball"
+          ],
+          "ability": "opportunist"
+        },
+        {
+          "name": "florges",
+          "level": "45",
+          "moves": [
+            "psychic",
+            "moonblast",
+            "petal-blizzard"
+          ],
+          "ability": "flower-veil"
+        }
+      ]
+    },
+    "8": {
+      "name": "Grusha",
+      "speciality": "ice",
+      "img": {
+        "src": "/leaders/sv-grusha",
+        "author": "Kyledove",
+        "link": "https://www.deviantart.com/kyle-dove"
+      },
+      "pokemon": [
+        {
+          "name": "frosmoth",
+          "level": "47",
+          "moves": [
+            "blizzard",
+            "bug-buzz",
+            "tailwind"
+          ],
+          "ability": "shield-dust"
+        },
+        {
+          "name": "beartic",
+          "level": "47",
+          "moves": [
+            "aqua-jet",
+            "icicle-crash",
+            "earthquake"
+          ],
+          "ability": "snow-cloak"
+        },
+        {
+          "name": "cetitan",
+          "level": "47",
+          "moves": [
+            "ice-spinner",
+            "liquidation",
+            "ice-shard"
+          ],
+          "ability": "thick-fat"
+        },
+        {
+          "name": "altaria",
+          "level": "48",
+          "moves": [
+            "ice-beam",
+            "dragon-pulse",
+            "moonblast",
+            "hurricane"
+          ],
+          "ability": "natural-cure"
+        }
+      ]
+    },
+    "r1": {
+      "name": "Nemona",
+      "speciality": "",
+      "img": {
+        "src": "/leaders/sv-nemona",
+        "author": "Kyledove",
+        "link": "https://www.deviantart.com/kyle-dove"
+      },
+      "pokemon": [
+        {
+          "name": "rockruff",
+          "level": "21",
+          "moves": [
+            "double-team",
+            "rock-throw",
+            "howl",
+            "bite"
+          ],
+          "ability": "vital-spirit"
+        },
+        {
+          "name": "pawmi",
+          "level": "21",
+          "moves": [
+            "charge",
+            "nuzzle",
+            "dig",
+            "bite"
+          ],
+          "ability": "static"
+        },
+        {
+          "name": "floragato",
+          "level": "22",
+          "moves": [
+            "quick-attack",
+            "magical-leaf",
+            "hone-claws",
+            "bite"
+          ],
+          "ability": "overgrow",
+          "starter": "fire"
+        },
+        {
+          "name": "quaxwell",
+          "level": "22",
+          "moves": [
+            "double-hit",
+            "water-pulse",
+            "wing-attack",
+            "work-up"
+          ],
+          "ability": "torrent",
+          "starter": "grass"
+        },
+        {
+          "name": "crocalor",
+          "level": "22",
+          "moves": [
+            "incinerate",
+            "yawn",
+            "bite",
+            "round"
+          ],
+          "ability": "blaze",
+          "starter": "water"
+        }
+      ]
+    },
+    "r2": {
+      "name": "Nemona",
+      "speciality": "",
+      "img": {
+        "src": "/leaders/sv-nemona",
+        "author": "Kyledove",
+        "link": "https://www.deviantart.com/kyle-dove"
+      },
+      "pokemon": [
+        {
+          "name": "lycanroc-midday",
+          "level": "36",
+          "moves": [
+            "quick-attack",
+            "accelerock",
+            "bite"
+          ],
+          "ability": "sand-rush"
+        },
+        {
+          "name": "goomy",
+          "level": "36",
+          "moves": [
+            "dragon-pulse",
+            "water-pulse",
+            "flail"
+          ],
+          "ability": "sap-sipper"
+        },
+        {
+          "name": "pawmo",
+          "level": "36",
+          "moves": [
+            "arm-thrust",
+            "spark",
+            "thunder-wave",
+            "quick-attack"
+          ],
+          "ability": "volt-absorb"
+        },
+        {
+          "name": "meowscarada",
+          "level": "37",
+          "moves": [
+            "slash",
+            "flower-trick",
+            "quick-attack"
+          ],
+          "ability": "overgrow",
+          "starter": "fire"
+        },
+        {
+          "name": "quaquaval",
+          "level": "37",
+          "moves": [
+            "air-slash",
+            "aqua-step",
+            "aqua-jet"
+          ],
+          "ability": "torrent",
+          "starter": "grass"
+        },
+        {
+          "name": "skeledirge",
+          "level": "37",
+          "moves": [
+            "snarl",
+            "torch-song",
+            "lick"
+          ],
+          "ability": "blaze",
+          "starter": "water"
+        }
+      ]
+    },
+    "r3": {
+      "name": "Nemona",
+      "speciality": "",
+      "img": {
+        "src": "/leaders/sv-nemona",
+        "author": "Kyledove",
+        "link": "https://www.deviantart.com/kyle-dove"
+      },
+      "pokemon": [
+        {
+          "name": "lycanroc-midday",
+          "level": "42",
+          "moves": [
+            "accelerock",
+            "crunch",
+            "rock-slide",
+            "sand-attack"
+          ],
+          "ability": "sand-rush"
+        },
+        {
+          "name": "sliggoo",
+          "level": "42",
+          "moves": [
+            "dragon-pulse",
+            "water-pulse",
+            "flail"
+          ],
+          "ability": "sap-sipper"
+        },
+        {
+          "name": "pawmot",
+          "level": "42",
+          "moves": [
+            "arm-thrust",
+            "spark",
+            "thunder-wave",
+            "quick-attack"
+          ],
+          "ability": "volt-absorb"
+        },
+        {
+          "name": "meowscarada",
+          "level": "43",
+          "moves": [
+            "slash",
+            "flower-trick",
+            "quick-attack"
+          ],
+          "ability": "overgrow",
+          "starter": "fire"
+        },
+        {
+          "name": "quaquaval",
+          "level": "43",
+          "moves": [
+            "air-slash",
+            "aqua-step",
+            "aqua-jet"
+          ],
+          "ability": "torrent",
+          "starter": "grass"
+        },
+        {
+          "name": "skeledirge",
+          "level": "43",
+          "moves": [
+            "snarl",
+            "torch-song",
+            "lick"
+          ],
+          "ability": "blaze",
+          "starter": "water"
+        }
+      ]
+    },
+    "t1": {
+      "name": "Klawf",
+      "speciality": "",
+      "img": "/sprite/950",
+      "pokemon": [
+        {
+          "name": "klawf",
+          "level": "16",
+          "moves": [
+            "vice-grip",
+            "rock-smash",
+            "block",
+            "rock-tomb"
+          ],
+          "ability": "anger-shell"
+        }
+      ]
+    },
+    "t2": {
+      "name": "Bombirdier",
+      "speciality": "",
+      "img": "/sprite/962",
+      "pokemon": [
+        {
+          "name": "bombirdier",
+          "level": "20",
+          "moves": [
+            "rock-throw",
+            "wing-attack",
+            "pluck",
+            "torment"
+          ],
+          "ability": "rocky-payload"
+        }
+      ]
+    },
+    "t3": {
+      "name": "Orthworm",
+      "speciality": "",
+      "img": "/sprite/968",
+      "pokemon": [
+        {
+          "name": "orthworm",
+          "level": "29",
+          "moves": [
+            "iron-tail",
+            "headbutt",
+            "wrap",
+            "sandstorm"
+          ],
+          "ability": "earth-eater"
+        }
+      ]
+    },
+    "t4s": {
+      "name": "Great Tusk",
+      "speciality": "",
+      "img": "/sprite/984",
+      "pokemon": [
+        {
+          "name": "great-tusk",
+          "level": "45",
+          "moves": [
+            "rapid-spin",
+            "brick-break",
+            "knock-off",
+            "stomping-tantrum"
+          ],
+          "ability": "protosynthesis"
+        }
+      ]
+    },
+    "t4v": {
+      "name": "Iron Treads",
+      "speciality": "",
+      "img": "/sprite/990",
+      "pokemon": [
+        {
+          "name": "iron-treads",
+          "level": "45",
+          "moves": [
+            "rapid-spin",
+            "iron-head",
+            "knock-off",
+            "stomping-tantrum"
+          ],
+          "ability": "quark-drive"
+        }
+      ]
+    },
+    "t5": {
+      "name": "Tatsugiri",
+      "speciality": "",
+      "img": "/sprite/978",
+      "pokemon": [
+        {
+          "name": "tatsugiri",
+          "level": "57",
+          "moves": [
+            "muddy-water",
+            "icy-wind",
+            "taunt",
+            "dragon-pulse"
+          ],
+          "ability": "commander"
+        }
+      ]
+    },
+    "giacomo": {
+      "name": "Giacomo",
+      "speciality": "dark",
+      "img": "/leaders/sv-giacomo",
+      "pokemon": [
+        {
+          "name": "pawniard",
+          "level": "21",
+          "moves": [
+            "metal-claw",
+            "fury-cutter",
+            "aerial-ace",
+            "snarl"
+          ],
+          "ability": "defiant"
+        },
+        {
+          "name": "revavroom",
+          "level": "20",
+          "moves": [
+            "wicked-torque",
+            "swift",
+            "spin-out"
+          ],
+          "ability": "intimidate"
+        }
+      ]
+    },
+    "mela": {
+      "name": "Mela",
+      "speciality": "fire",
+      "img": "/leaders/sv-mela",
+      "pokemon": [
+        {
+          "name": "torkoal",
+          "level": "27",
+          "moves": [
+            "flame-wheel",
+            "clear-smog"
+          ],
+          "ability": "drought"
+        },
+        {
+          "name": "revavroom",
+          "level": "26",
+          "moves": [
+            "blazing-torque",
+            "spin-out",
+            "overheat",
+            "screech"
+          ],
+          "ability": "speed-boost"
+        }
+      ]
+    },
+    "atticus": {
+      "name": "Atticus",
+      "speciality": "poison",
+      "img": "/leaders/sv-atticus",
+      "pokemon": [
+        {
+          "name": "skuntank",
+          "level": "32",
+          "moves": [
+            "sucker-punch",
+            "toxic",
+            "venoshock"
+          ],
+          "ability": "stench"
+        },
+        {
+          "name": "muk",
+          "level": "32",
+          "moves": [
+            "sludge-wave",
+            "mud-slap"
+          ],
+          "ability": "stench"
+        },
+        {
+          "name": "revavroom",
+          "level": "33",
+          "moves": [
+            "iron-head",
+            "sludge",
+            "assurance",
+            "bulldoze"
+          ],
+          "ability": "overcoat"
+        },
+        {
+          "name": "revavroom",
+          "level": "32",
+          "moves": [
+            "noxious-torque",
+            "spin-out",
+            "smog",
+            "flame-charge"
+          ],
+          "ability": "toxic-debris"
+        }
+      ]
+    },
+    "ortega": {
+      "name": "Ortega",
+      "speciality": "fairy",
+      "img": "/leaders/sv-ortega",
+      "pokemon": [
+        {
+          "name": "azumarill",
+          "level": "50",
+          "moves": [
+            "aqua-tail",
+            "play-rough",
+            "bounce",
+            "charm"
+          ],
+          "ability": "huge-power"
+        },
+        {
+          "name": "wigglytuff",
+          "level": "50",
+          "moves": [
+            "body-slam",
+            "play-rough",
+            "gyro-ball",
+            "charm"
+          ],
+          "ability": "cute-charm"
+        },
+        {
+          "name": "dachsbun",
+          "level": "51",
+          "moves": [
+            "crunch",
+            "play-rough",
+            "baby-doll-eyes",
+            "mud-slap"
+          ],
+          "ability": "well-baked-body"
+        },
+        {
+          "name": "revavroom",
+          "level": "50",
+          "moves": [
+            "magical-torque",
+            "spin-out",
+            "steel-roller",
+            "confuse-ray"
+          ],
+          "ability": "misty-surge"
+        }
+      ]
+    },
+    "eri": {
+      "name": "Eri",
+      "speciality": "fighting",
+      "img": "/leaders/sv-eri",
+      "pokemon": [
+        {
+          "name": "toxicroak",
+          "level": "55",
+          "moves": [
+            "poison-jab",
+            "brick-break",
+            "sucker-punch"
+          ],
+          "ability": "anticipation"
+        },
+        {
+          "name": "passimian",
+          "level": "55",
+          "moves": [
+            "close-combat",
+            "rock-tomb",
+            "seed-bomb"
+          ],
+          "ability": "receiver"
+        },
+        {
+          "name": "lucario",
+          "level": "55",
+          "moves": [
+            "dragon-pulse",
+            "aura-sphere",
+            "dark-pulse"
+          ],
+          "ability": "steadfast"
+        },
+        {
+          "name": "annihilape",
+          "level": "56",
+          "moves": [
+            "rage-fist",
+            "close-combat",
+            "ice-punch",
+            "fire-punch"
+          ],
+          "ability": "vital-spirit"
+        },
+        {
+          "name": "revavroom",
+          "level": "56",
+          "moves": [
+            "combat-torque",
+            "spin-out",
+            "high-horsepower",
+            "shift-gear"
+          ],
+          "ability": "stamina"
+        }
+      ]
+    },
+    "clive": {
+      "name": "Clive",
+      "speciality": "",
+      "img": {
+        "src": "/leaders/sv-clavell",
+        "author": "Kyledove",
+        "link": "https://www.deviantart.com/kyle-dove"
+      },
+      "pokemon": [
+        {
+          "name": "oranguru",
+          "level": "60",
+          "moves": [
+            "yawn",
+            "dream-eater",
+            "reflect",
+            "foul-play"
+          ],
+          "ability": "inner-focus"
+        },
+        {
+          "name": "abomasnow",
+          "level": "60",
+          "moves": [
+            "aurora-veil",
+            "blizzard",
+            "wood-hammer",
+            "ice-shard"
+          ],
+          "ability": "snow-warning"
+        },
+        {
+          "name": "polteageist",
+          "level": "60",
+          "moves": [
+            "shell-smash",
+            "shadow-ball",
+            "sucker-punch",
+            "will-o-wisp"
+          ],
+          "ability": "weak-armor"
+        },
+        {
+          "name": "houndoom",
+          "level": "60",
+          "moves": [
+            "dark-pulse",
+            "fire-blast",
+            "sludge-bomb",
+            "thunder-fang"
+          ],
+          "ability": "flash-fire",
+          "starter": "water"
+        },
+        {
+          "name": "houndoom",
+          "level": "60",
+          "moves": [
+            "dark-pulse",
+            "fire-blast",
+            "sludge-bomb",
+            "thunder-fang"
+          ],
+          "ability": "flash-fire",
+          "starter": "fire"
+        },
+        {
+          "name": "amoonguss",
+          "level": "60",
+          "moves": [
+            "spore",
+            "toxic",
+            "giga-drain",
+            "hex"
+          ],
+          "ability": "effect-spore",
+          "starter": "grass"
+        },
+        {
+          "name": "amoonguss",
+          "level": "60",
+          "moves": [
+            "spore",
+            "toxic",
+            "giga-drain",
+            "hex"
+          ],
+          "ability": "effect-spore",
+          "starter": "fire"
+        },
+        {
+          "name": "gyarados",
+          "level": "60",
+          "moves": [
+            "aqua-tail",
+            "crunch",
+            "stone-edge",
+            "earthquake"
+          ],
+          "ability": "intimidate",
+          "starter": "water"
+        },
+        {
+          "name": "gyarados",
+          "level": "60",
+          "moves": [
+            "aqua-tail",
+            "crunch",
+            "stone-edge",
+            "earthquake"
+          ],
+          "ability": "intimidate",
+          "starter": "grass"
+        },
+        {
+          "name": "quaquaval",
+          "level": "61",
+          "moves": [
+            "brick-break",
+            "aqua-step",
+            "aerial-ace",
+            "ice-spinner"
+          ],
+          "ability": "torrent",
+          "starter": "fire"
+        },
+        {
+          "name": "skeledirge",
+          "level": "61",
+          "moves": [
+            "shadow-ball",
+            "torch-song",
+            "earth-power",
+            "snarl"
+          ],
+          "ability": "blaze",
+          "starter": "grass"
+        },
+        {
+          "name": "meowscarada",
+          "level": "61",
+          "moves": [
+            "shadow-claw",
+            "flower-trick",
+            "thunder-punch",
+            "play-rough"
+          ],
+          "ability": "overgrow",
+          "starter": "water"
+        }
+      ]
+    },
+    "penny": {
+      "name": "Penny",
+      "speciality": "",
+      "img": {
+        "src": "/leaders/sv-penny",
+        "author": "Kyledove",
+        "link": "https://www.deviantart.com/kyle-dove"
+      },
+      "pokemon": [
+        {
+          "name": "umbreon",
+          "level": "62",
+          "moves": [
+            "dark-pulse",
+            "quick-attack",
+            "baby-doll-eyes",
+            "psychic"
+          ],
+          "ability": "synchronize"
+        },
+        {
+          "name": "vaporeon",
+          "level": "62",
+          "moves": [
+            "hydro-pump",
+            "quick-attack",
+            "baby-doll-eyes",
+            "aurora-beam"
+          ],
+          "ability": "water-absorb"
+        },
+        {
+          "name": "jolteon",
+          "level": "62",
+          "moves": [
+            "thunder",
+            "quick-attack",
+            "baby-doll-eyes",
+            "pin-missile"
+          ],
+          "ability": "quick-feet"
+        },
+        {
+          "name": "flareon",
+          "level": "62",
+          "moves": [
+            "flare-blitz",
+            "quick-attack",
+            "baby-doll-eyes",
+            "fire-spin"
+          ],
+          "ability": "flash-fire"
+        },
+        {
+          "name": "leafeon",
+          "level": "62",
+          "moves": [
+            "leaf-blade",
+            "quick-attack",
+            "baby-doll-eyes",
+            "x-scissor"
+          ],
+          "ability": "leaf-guard"
+        },
+        {
+          "name": "sylveon",
+          "level": "63",
+          "moves": [
+            "moonblast",
+            "quick-attack",
+            "baby-doll-eyes",
+            "shadow-ball"
+          ],
+          "ability": "cute-charm"
+        }
+      ]
+    },
+    "e1": {
+      "name": "Rika",
+      "speciality": "ground",
+      "img": {
+        "src": "/leaders/sv-rika",
+        "author": "Kyledove",
+        "link": "https://www.deviantart.com/kyle-dove"
+      },
+      "pokemon": [
+        {
+          "name": "whiscash",
+          "level": "57",
+          "moves": [
+            "muddy-water",
+            "earth-power",
+            "blizzard",
+            "future-sight"
+          ],
+          "ability": "oblivious"
+        },
+        {
+          "name": "camerupt",
+          "level": "57",
+          "moves": [
+            "earth-power",
+            "fire-blast",
+            "flash-cannon",
+            "yawn"
+          ],
+          "ability": "magma-armor"
+        },
+        {
+          "name": "donphan",
+          "level": "57",
+          "moves": [
+            "earthquake",
+            "stone-edge",
+            "iron-head",
+            "poison-jab"
+          ],
+          "ability": "sturdy"
+        },
+        {
+          "name": "dugtrio",
+          "level": "57",
+          "moves": [
+            "earthquake",
+            "rock-slide",
+            "sucker-punch",
+            "sandstorm"
+          ],
+          "ability": "sand-veil"
+        },
+        {
+          "name": "clodsire",
+          "level": "58",
+          "moves": [
+            "earthquake",
+            "liquidation",
+            "toxic",
+            "protect"
+          ],
+          "ability": "water-absorb"
+        }
+      ]
+    },
+    "e2": {
+      "name": "Poppy",
+      "speciality": "steel",
+      "img": {
+        "src": "/leaders/sv-poppy",
+        "author": "Kyledove",
+        "link": "https://www.deviantart.com/kyle-dove"
+      },
+      "pokemon": [
+        {
+          "name": "copperajah",
+          "level": "58",
+          "moves": [
+            "high-horsepower",
+            "play-rough",
+            "heavy-slam",
+            "stealth-rock"
+          ],
+          "ability": "sheer-force"
+        },
+        {
+          "name": "magnezone",
+          "level": "58",
+          "moves": [
+            "discharge",
+            "flash-cannon",
+            "light-screen",
+            "tri-attack"
+          ],
+          "ability": "sturdy"
+        },
+        {
+          "name": "bronzong",
+          "level": "58",
+          "moves": [
+            "iron-head",
+            "zen-headbutt",
+            "rock-blast",
+            "earthquake"
+          ],
+          "ability": "levitate"
+        },
+        {
+          "name": "corviknight",
+          "level": "58",
+          "moves": [
+            "brave-bird",
+            "iron-head",
+            "body-press",
+            "iron-defense"
+          ],
+          "ability": "pressure"
+        },
+        {
+          "name": "tinkaton",
+          "level": "58",
+          "moves": [
+            "play-rough",
+            "gigaton-hammer",
+            "brick-break",
+            "stone-edge"
+          ],
+          "ability": "mold-breaker"
+        }
+      ]
+    },
+    "e3": {
+      "name": "Larry",
+      "speciality": "flying",
+      "img": {
+        "src": "/leaders/sv-larry",
+        "author": "Kyledove",
+        "link": "https://www.deviantart.com/kyle-dove"
+      },
+      "pokemon": [
+        {
+          "name": "tropius",
+          "level": "59",
+          "moves": [
+            "air-slash",
+            "solar-beam",
+            "dragon-pulse",
+            "sunny-day"
+          ],
+          "ability": "chlorophyll"
+        },
+        {
+          "name": "oricorio-pom-pom",
+          "level": "59",
+          "moves": [
+            "revelation-dance",
+            "air-slash",
+            "teeter-dance",
+            "icy-wind"
+          ],
+          "ability": "dancer"
+        },
+        {
+          "name": "altaria",
+          "level": "59",
+          "moves": [
+            "moonblast",
+            "flamethrower",
+            "ice-beam",
+            "dragon-pulse"
+          ],
+          "ability": "natural-cure"
+        },
+        {
+          "name": "staraptor",
+          "level": "59",
+          "moves": [
+            "facade",
+            "brave-bird",
+            "close-combat",
+            "thief"
+          ],
+          "ability": "intimidate"
+        },
+        {
+          "name": "flamigo",
+          "level": "60",
+          "moves": [
+            "brave-bird",
+            "close-combat",
+            "throat-chop",
+            "liquidation"
+          ],
+          "ability": "scrappy"
+        }
+      ]
+    },
+    "e4": {
+      "name": "Hassel",
+      "speciality": "dragon",
+      "img": {
+        "src": "/leaders/sv-hassel",
+        "author": "Kyledove",
+        "link": "https://www.deviantart.com/kyle-dove"
+      },
+      "pokemon": [
+        {
+          "name": "noivern",
+          "level": "60",
+          "moves": [
+            "air-slash",
+            "dragon-pulse",
+            "super-fang",
+            "hyper-voice"
+          ],
+          "ability": "infiltrator"
+        },
+        {
+          "name": "haxorus",
+          "level": "60",
+          "moves": [
+            "dragon-claw",
+            "crunch",
+            "iron-head",
+            "rock-tomb"
+          ],
+          "ability": "mold-breaker"
+        },
+        {
+          "name": "dragalge",
+          "level": "60",
+          "moves": [
+            "sludge-bomb",
+            "dragon-pulse",
+            "hydro-pump",
+            "thunderbolt"
+          ],
+          "ability": "poison-point"
+        },
+        {
+          "name": "flapple",
+          "level": "60",
+          "moves": [
+            "dragon-rush",
+            "seed-bomb",
+            "aerial-ace",
+            "leech-seed"
+          ],
+          "ability": "ripen"
+        },
+        {
+          "name": "baxcalibur",
+          "level": "61",
+          "moves": [
+            "icicle-crash",
+            "brick-break",
+            "glaive-rush"
+          ],
+          "ability": "thermal-exchange"
+        }
+      ]
+    },
+    "ec": {
+      "name": "Geeta",
+      "speciality": "",
+      "img": {
+        "src": "/leaders/sv-geeta",
+        "author": "Kyledove",
+        "link": "https://www.deviantart.com/kyle-dove"
+      },
+      "pokemon": [
+        {
+          "name": "espathra",
+          "level": "61",
+          "moves": [
+            "lumina-crash",
+            "dazzling-gleam",
+            "quick-attack",
+            "reflect"
+          ],
+          "ability": "opportunist"
+        },
+        {
+          "name": "gogoat",
+          "level": "61",
+          "moves": [
+            "horn-leech",
+            "zen-headbutt",
+            "play-rough",
+            "bulk-up"
+          ],
+          "ability": "sap-sipper"
+        },
+        {
+          "name": "veluza",
+          "level": "61",
+          "moves": [
+            "aqua-jet",
+            "liquidation",
+            "psycho-cut",
+            "ice-fang"
+          ],
+          "ability": "mold-breaker"
+        },
+        {
+          "name": "avalugg",
+          "level": "61",
+          "moves": [
+            "avalanche",
+            "crunch",
+            "earthquake",
+            "body-press"
+          ],
+          "ability": "own-tempo"
+        },
+        {
+          "name": "kingambit",
+          "level": "61",
+          "moves": [
+            "iron-head",
+            "kowtow-cleave",
+            "zen-headbutt",
+            "stone-edge"
+          ],
+          "ability": "supreme-overlord"
+        },
+        {
+          "name": "glimmora",
+          "level": "62",
+          "moves": [
+            "tera-blast",
+            "sludge-wave",
+            "earth-power",
+            "dazzling-gleam"
+          ],
+          "ability": "toxic-debris"
+        }
+      ]
+    },
+    "ec2": {
+      "name": "Nemona",
+      "speciality": "",
+      "img": {
+        "src": "/leaders/sv-nemona",
+        "author": "Kyledove",
+        "link": "https://www.deviantart.com/kyle-dove"
+      },
+      "pokemon": [
+        {
+          "name": "lycanroc-midday",
+          "level": "65",
+          "moves": [
+            "accelerock",
+            "drill-run",
+            "stealth-rock",
+            "stone-edge"
+          ],
+          "ability": "sand-rush"
+        },
+        {
+          "name": "goodra",
+          "level": "65",
+          "moves": [
+            "dragon-pulse",
+            "muddy-water",
+            "ice-beam",
+            "sludge-bomb"
+          ],
+          "ability": "sap-sipper"
+        },
+        {
+          "name": "dudunsparce",
+          "level": "65",
+          "moves": [
+            "hyper-drill",
+            "drill-run",
+            "dragon-rush",
+            "coil"
+          ],
+          "ability": "serene-grace"
+        },
+        {
+          "name": "orthworm",
+          "level": "65",
+          "moves": [
+            "iron-tail",
+            "body-press",
+            "earthquake",
+            "rock-blast"
+          ],
+          "ability": "earth-eater"
+        },
+        {
+          "name": "pawmot",
+          "level": "65",
+          "moves": [
+            "double-shock",
+            "close-combat",
+            "ice-punch",
+            "quick-attack"
+          ],
+          "ability": "volt-absorb"
+        },
+        {
+          "name": "meowscarada",
+          "level": "66",
+          "moves": [
+            "thunder-punch",
+            "flower-trick",
+            "shadow-claw",
+            "play-rough"
+          ],
+          "ability": "overgrow",
+          "starter": "fire"
+        },
+        {
+          "name": "quaquaval",
+          "level": "66",
+          "moves": [
+            "brick-break",
+            "aqua-step",
+            "aerial-ace",
+            "ice-spinner"
+          ],
+          "ability": "torrent",
+          "starter": "grass"
+        },
+        {
+          "name": "skeledirge",
+          "level": "66",
+          "moves": [
+            "torch-song",
+            "earth-power",
+            "shadow-ball",
+            "snarl"
+          ],
+          "ability": "blaze",
+          "starter": "water"
         }
       ]
     }

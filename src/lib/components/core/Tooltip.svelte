@@ -33,6 +33,6 @@
   <div use:init><slot /></div>
 {/if}
 
-<style>
+<style lang="postcss">
   div { display: none; }
 </style>

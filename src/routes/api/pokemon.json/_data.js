@@ -1,5 +1,5 @@
-import Pokemon from 'pokemon-assets/assets/data/pokemon.json';
-import { filterObj, mapObj } from '$lib/utils/arr';
+import Pokemon from './_pokemon.json';
+import { mapObj } from '$lib/utils/arr';
 import { pick } from 'ramda';
 
 const FormMap = {
@@ -81,27 +81,22 @@ const findEvoLine = (p) => {
     : res?.sprite;
 };
 
-export const format = ({ name, forme }) => {
-  if (forme === 'Galar') return `Galarian ${name.replace(/-Galar/g, '')}`;
-  if (forme === 'Alola') return `Alolan ${name.replace(/-Alola/g, '')}`;
+export const format = ({ name, alias }) => {
+  if (alias.endsWith('-galar')) return `Galarian ${name}`;
+  if (alias.endsWith('-alola')) return `Alolan ${name}`;
+  if (alias.endsWith('-hisui')) return `Hisuian ${name}`;
+  if (alias.endsWith('-paldea')) return `Paldean ${name}`;
   return name;
 };
 
 export const sumObj = (o) => Object.values(o).reduce((acc, it) => acc + it, 0);
 
-export default mapObj(
-  filterObj(
-    Pokemon,
-    (pkmn) => !pkmn.forme || ['Galar', 'Alola'].includes(pkmn.forme)
-  ),
+export default Pokemon.map(
   (pkmn) => ({
     ...pkmn,
-    imgId: FormMap[pkmn.alias] || pkmn.num,
-    total: sumObj(pkmn.baseStats),
-    evoline: findEvoLine(pkmn),
+    imgId: pkmn.imgId,
     label: format(pkmn)
-  })
-);
+  }))
 
 const props = [
   'evos',
@@ -116,6 +111,7 @@ const props = [
   'total',
   'num'
 ];
+
 export const filterdata = (o) =>
   Object.values(o).map((p) => ({
     ...pick(props, p),

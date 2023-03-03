@@ -3,8 +3,8 @@
   import { IconButton } from '$lib/components/core'
   import { Bubbles } from '$lib/utils/pattern'
 
-  import Icon from 'svelte-icons-pack'
-  import Analysis from 'svelte-icons-pack/ri/RiHealthTestTubeFill'
+  import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
+  import { Analysis } from '$icons'
 
   export let box
   let Modal
@@ -38,12 +38,12 @@
   <span style='--img-dark: url("{Bubbles('#fff')}"); --img: url("{Bubbles('#000')}")'
         class:disabled={!box || !box.length}
         class='px-3 py-1 gap-x-1 inline-flex items-center' slot=icon>
-    <Icon size=1.2em src={Analysis} className=fill-current />
+    <Icon inline={true} height=1.2em icon={Analysis} class=fill-current />
     Research team
   </span>
 </IconButton>
 
-<style>
+<style lang="postcss">
   span.disabled::before {
     background: none !important;
   }

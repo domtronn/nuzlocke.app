@@ -7,9 +7,9 @@
   import TypeMessage from './Message.svelte'
 
   import { IconButton } from '$lib/components/core'
-  import Icon from 'svelte-icons-pack'
-  import Analysis from 'svelte-icons-pack/ri/RiHealthTestTubeFill'
-  import Sort from 'svelte-icons-pack/bs/BsSortDownAlt'
+  import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
+  import { Analysis } from '$icons'
+  import { Sort } from '$icons'
 
   const weakest = analysis // Calculate the weakest ratio of resists to weaknesses
     .filter(([, { weak, resist }]) => {
@@ -35,7 +35,7 @@
     <h3 class='inline-flex gap-x-1 items-center text-sm'>
       <span class='ml-1 text-gray-500 '>Sorted: </span>
       <strong>{sortDescs[sort]}</strong>
-      <IconButton containerClassName=ml-1 rounded src={Sort} on:click={nextsort} />
+      <IconButton containerClassName='ml-1' rounded src={Sort} on:click={nextsort} />
     </h3>
   </div>
 

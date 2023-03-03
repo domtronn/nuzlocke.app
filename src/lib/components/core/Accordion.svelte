@@ -1,7 +1,7 @@
 <script>
   import { slide } from 'svelte/transition'
-  import Chevron from 'svelte-icons-pack/bi/BiSolidChevronRight'
-  import Icon from 'svelte-icons-pack'
+  import { Chevron } from '$icons'
+  import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
 
   let isOpen = false
   const toggle = () => isOpen = !isOpen
@@ -9,7 +9,7 @@
   export let iconClassName = '', className = ''
 </script>
 
-<style>
+<style lang="postcss">
  button span { transition: transform 0.2s ease; }
  [aria-expanded=true] span { transform: rotate(0.25turn); }
 </style>
@@ -24,7 +24,7 @@
     {#if $$slots.icon}
       <slot name='icon' {isOpen} classes='text-base fill-current md:text-xl {iconClassName}' />
     {:else}
-      <Icon src={Chevron} className='text-base fill-current md:text-xl {iconClassName}' />
+      <Icon inline={true} icon={Chevron} class='rotate-90 text-base fill-current md:text-xl {iconClassName}' />
     {/if}
   </span>
   <slot name='heading' />
