@@ -5134,107 +5134,6 @@
       "img": "/leaders/blwh-bianca",
       "pokemon": [
         {
-          "name": "stoutland",
-          "level": "38",
-          "moves": [
-            "crunch",
-            "roar",
-            "retaliate",
-            "work-up"
-          ],
-          "ability": "intimidate"
-        },
-        {
-          "name": "simisear",
-          "level": "38",
-          "moves": [
-            "leer",
-            "fury-swipes",
-            "lick",
-            "flame-burst"
-          ],
-          "ability": "gluttony",
-          "starter": "grass"
-        },
-        {
-          "name": "simipour",
-          "level": "38",
-          "moves": [
-            "leer",
-            "fury-swipes",
-            "lick",
-            "scald"
-          ],
-          "ability": "gluttony",
-          "starter": "fire"
-        },
-        {
-          "name": "simisage",
-          "level": "38",
-          "moves": [
-            "leer",
-            "fury-swipes",
-            "lick",
-            "seed-bomb"
-          ],
-          "ability": "gluttony",
-          "starter": "water"
-        },
-        {
-          "name": "samurott",
-          "level": "40",
-          "moves": [
-            "aqua-jet",
-            "revenge",
-            "slash",
-            "encore"
-          ],
-          "ability": "torrent",
-          "starter": "grass"
-        },
-        {
-          "name": "serperior",
-          "level": "40",
-          "moves": [
-            "slam",
-            "coil",
-            "mega-drain",
-            "leaf-blade"
-          ],
-          "ability": "overgrow",
-          "starter": "fire"
-        },
-        {
-          "name": "emboar",
-          "level": "40",
-          "moves": [
-            "heat-crash",
-            "assurance",
-            "rollout",
-            "take-down"
-          ],
-          "ability": "blaze",
-          "starter": "water"
-        },
-        {
-          "name": "musharna",
-          "level": "38",
-          "moves": [
-            "defense-curl",
-            "lucky-chant",
-            "psybeam",
-            "hypnosis"
-          ],
-          "ability": "forewarn"
-        }
-      ]
-    },
-    "b5": {
-      "name": "Bianca",
-      "speciality": "",
-      "img": "/leaders/blwh-bianca",
-      "pokemon": [
-        {
           "name": "herdier",
           "level": "26",
           "moves": [
@@ -5320,6 +5219,107 @@
         {
           "name": "munna",
           "level": "26",
+          "moves": [
+            "defense-curl",
+            "lucky-chant",
+            "psybeam",
+            "hypnosis"
+          ],
+          "ability": "forewarn"
+        }
+      ]
+    },
+    "b5": {
+      "name": "Bianca",
+      "speciality": "",
+      "img": "/leaders/blwh-bianca",
+      "pokemon": [
+        {
+          "name": "stoutland",
+          "level": "38",
+          "moves": [
+            "crunch",
+            "roar",
+            "retaliate",
+            "work-up"
+          ],
+          "ability": "intimidate"
+        },
+        {
+          "name": "simisear",
+          "level": "38",
+          "moves": [
+            "leer",
+            "fury-swipes",
+            "lick",
+            "flame-burst"
+          ],
+          "ability": "gluttony",
+          "starter": "grass"
+        },
+        {
+          "name": "simipour",
+          "level": "38",
+          "moves": [
+            "leer",
+            "fury-swipes",
+            "lick",
+            "scald"
+          ],
+          "ability": "gluttony",
+          "starter": "fire"
+        },
+        {
+          "name": "simisage",
+          "level": "38",
+          "moves": [
+            "leer",
+            "fury-swipes",
+            "lick",
+            "seed-bomb"
+          ],
+          "ability": "gluttony",
+          "starter": "water"
+        },
+        {
+          "name": "samurott",
+          "level": "40",
+          "moves": [
+            "aqua-jet",
+            "revenge",
+            "slash",
+            "encore"
+          ],
+          "ability": "torrent",
+          "starter": "grass"
+        },
+        {
+          "name": "serperior",
+          "level": "40",
+          "moves": [
+            "slam",
+            "coil",
+            "mega-drain",
+            "leaf-blade"
+          ],
+          "ability": "overgrow",
+          "starter": "fire"
+        },
+        {
+          "name": "emboar",
+          "level": "40",
+          "moves": [
+            "heat-crash",
+            "assurance",
+            "rollout",
+            "take-down"
+          ],
+          "ability": "blaze",
+          "starter": "water"
+        },
+        {
+          "name": "musharna",
+          "level": "38",
           "moves": [
             "defense-curl",
             "lucky-chant",
@@ -5685,6 +5685,115 @@
             "roost"
           ],
           "ability": "super-luck"
+        }
+      ]
+    },
+    "c55": {
+      "name": "Cheren",
+      "speciality": "",
+      "img": "/leaders/blwh-cheren",
+      "pokemon": [
+        {
+          "name": "unfezant",
+          "level": "33",
+          "moves": [
+            "roost",
+            "detect",
+            "air-slash",
+            "taunt"
+          ],
+          "ability": "super-luck",
+          "held": "scope-lens"
+        },
+        {
+          "name": "liepard",
+          "level": "33",
+          "moves": [
+            "torment",
+            "fake-out",
+            "hone-claws",
+            "assurance"
+          ],
+          "ability": "unburden",
+          "held": "sitrus-berry"
+        },
+        {
+          "name": "simisage",
+          "level": "33",
+          "moves": [
+            "leer",
+            "lick",
+            "fury-swipes",
+            "seed-bomb"
+          ],
+          "ability": "gluttony",
+          "held": "miracle-seed",
+          "starter": "grass"
+        },
+        {
+          "name": "simisear",
+          "level": "33",
+          "moves": [
+            "leer",
+            "lick",
+            "fury-swipes",
+            "flame-burst"
+          ],
+          "ability": "gluttony",
+          "held": "charcoal",
+          "starter": "fire"
+        },
+        {
+          "name": "simipour",
+          "level": "33",
+          "moves": [
+            "leer",
+            "lick",
+            "fury-swipes",
+            "scald"
+          ],
+          "ability": "gluttony",
+          "held": "mystic-water",
+          "starter": "water"
+        },
+        {
+          "name": "dewott",
+          "level": "35",
+          "moves": [
+            "fury-cutter",
+            "water-pulse",
+            "revenge",
+            "aqua-jet"
+          ],
+          "ability": "torrent",
+          "held": "leftovers",
+          "starter": "fire"
+        },
+        {
+          "name": "servine",
+          "level": "35",
+          "moves": [
+            "leech-seed",
+            "mega-drain",
+            "slam",
+            "leaf-blade"
+          ],
+          "ability": "overgrow",
+          "held": "leftovers",
+          "starter": "water"
+        },
+        {
+          "name": "pignite",
+          "level": "35",
+          "moves": [
+            "smog",
+            "rollout",
+            "take-down",
+            "heat-crash"
+          ],
+          "ability": "blaze",
+          "held": "leftovers",
+          "starter": "grass"
         }
       ]
     },

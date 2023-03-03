@@ -26,7 +26,7 @@
           "name": "Pickup",
           "effect": "Picks up other Pokémon's used and Flung held items.  May also pick up an item after battle."
         },
-        "sprite": "506.png",
+        "sprite": "506",
         "types": [
           "normal"
         ],
@@ -61,7 +61,7 @@
           "effect": "Makes the Pokémon eat any held Berry triggered by low HP below 1/2 its max HP."
         },
         "starter": "fire",
-        "sprite": "515.png",
+        "sprite": "515",
         "types": [
           "water"
         ],
@@ -117,7 +117,7 @@
           "name": "Intimidate",
           "effect": "Lowers opponents' Attack one stage upon entering battle."
         },
-        "sprite": "507.png",
+        "sprite": "507",
         "types": [
           "normal"
         ],
@@ -165,7 +165,7 @@
           "name": "Illuminate",
           "effect": "Doubles the wild encounter rate."
         },
-        "sprite": "505.png",
+        "sprite": "505",
         "types": [
           "normal"
         ],
@@ -221,7 +221,7 @@
           "name": "Swarm",
           "effect": "Strengthens bug moves to inflict 1.5× damage at 1/3 max HP or less."
         },
-        "sprite": "544.png",
+        "sprite": "544",
         "types": [
           "bug",
           "poison"
@@ -271,7 +271,7 @@
           "name": "Shell Armor",
           "effect": "Protects against critical hits."
         },
-        "sprite": "557.png",
+        "sprite": "557",
         "types": [
           "bug",
           "rock"
@@ -321,7 +321,7 @@
           "name": "Swarm",
           "effect": "Strengthens bug moves to inflict 1.5× damage at 1/3 max HP or less."
         },
-        "sprite": "542.png",
+        "sprite": "542",
         "types": [
           "bug",
           "grass"
@@ -379,7 +379,7 @@
           "name": "Static",
           "effect": "Has a 30% chance of paralyzing attacking Pokémon on contact."
         },
-        "sprite": "587.png",
+        "sprite": "587",
         "types": [
           "electric",
           "flying"
@@ -430,7 +430,7 @@
           "name": "Static",
           "effect": "Has a 30% chance of paralyzing attacking Pokémon on contact."
         },
-        "sprite": "587.png",
+        "sprite": "587",
         "types": [
           "electric",
           "flying"
@@ -481,7 +481,7 @@
           "name": "Lightning Rod",
           "effect": "Redirects single-target electric moves to this Pokémon where possible.  Absorbs Electric moves, raising Special Attack one stage."
         },
-        "sprite": "523.png",
+        "sprite": "523",
         "types": [
           "electric"
         ],
@@ -536,7 +536,7 @@
           "name": "Moxie",
           "effect": "Raises Attack one stage upon KOing a Pokémon."
         },
-        "sprite": "552.png",
+        "sprite": "552",
         "types": [
           "ground",
           "dark"
@@ -586,7 +586,7 @@
           "name": "Swift Swim",
           "effect": "Doubles Speed during rain."
         },
-        "sprite": "536.png",
+        "sprite": "536",
         "types": [
           "water",
           "ground"
@@ -636,7 +636,7 @@
           "name": "Sand Rush",
           "effect": "Doubles Speed during a sandstorm.  Protects against sandstorm damage."
         },
-        "sprite": "530.png",
+        "sprite": "530",
         "types": [
           "ground",
           "steel"
@@ -693,7 +693,7 @@
           "name": "Unaware",
           "effect": "Ignores other Pokémon's stat modifiers for damage and accuracy calculation."
         },
-        "sprite": "528.png",
+        "sprite": "528",
         "types": [
           "psychic",
           "flying"
@@ -743,7 +743,7 @@
           "name": "Big Pecks",
           "effect": "Protects against Defense drops."
         },
-        "sprite": "521.png",
+        "sprite": "521",
         "types": [
           "normal",
           "flying"
@@ -793,7 +793,7 @@
           "name": "Keen Eye",
           "effect": "Prevents accuracy from being lowered."
         },
-        "sprite": "581.png",
+        "sprite": "581",
         "types": [
           "water",
           "flying"
@@ -850,7 +850,7 @@
           "name": "Ice Body",
           "effect": "Heals for 1/16 max HP after each turn during hail.  Protects against hail damage."
         },
-        "sprite": "583.png",
+        "sprite": "583",
         "types": [
           "ice"
         ],
@@ -899,7 +899,7 @@
           "name": "Snow Cloak",
           "effect": "Increases evasion to 1.25× during hail.  Protects against hail damage."
         },
-        "sprite": "614.png",
+        "sprite": "614",
         "types": [
           "ice"
         ],
@@ -948,7 +948,7 @@
           "name": "Levitate",
           "effect": "Evades ground moves."
         },
-        "sprite": "615.png",
+        "sprite": "615",
         "types": [
           "ice"
         ],
@@ -990,7 +990,7 @@
           "effect": "Strengthens grass moves to inflict 1.5× damage at 1/3 max HP or less."
         },
         "starter": "fire",
-        "sprite": "495.png",
+        "sprite": "495",
         "types": [
           "grass"
         ],
@@ -1032,7 +1032,7 @@
           "effect": "Strengthens water moves to inflict 1.5× damage at 1/3 max HP or less."
         },
         "starter": "fire",
-        "sprite": "501.png",
+        "sprite": "501",
         "types": [
           "water"
         ],
@@ -1073,7 +1073,7 @@
           "name": "Unburden",
           "effect": "Doubles Speed upon using or losing a held item."
         },
-        "sprite": "509.png",
+        "sprite": "509",
         "types": [
           "dark"
         ],
@@ -1120,7 +1120,7 @@
           "name": "Vital Spirit",
           "effect": "Prevents sleep."
         },
-        "sprite": "506.png",
+        "sprite": "506",
         "types": [
           "normal"
         ],
@@ -1161,7 +1161,7 @@
           "effect": "Strengthens grass moves to inflict 1.5× damage at 1/3 max HP or less."
         },
         "starter": "fire",
-        "sprite": "495.png",
+        "sprite": "495",
         "types": [
           "grass"
         ],
@@ -1214,7 +1214,7 @@
           "effect": "Held: Consumed at 1/2 max HP to recover 10 HP."
         },
         "starter": "fire",
-        "sprite": "501.png",
+        "sprite": "501",
         "types": [
           "water"
         ],
@@ -1254,7 +1254,7 @@
           "name": "Limber",
           "effect": "Prevents paralysis."
         },
-        "sprite": "509.png",
+        "sprite": "509",
         "types": [
           "dark"
         ],
@@ -1313,7 +1313,7 @@
           "effect": "Held: Consumed at 1/2 max HP to recover 10 HP."
         },
         "starter": "fire",
-        "sprite": "501.png",
+        "sprite": "501",
         "types": [
           "water"
         ],
@@ -1360,7 +1360,7 @@
           "name": "Limber",
           "effect": "Prevents paralysis."
         },
-        "sprite": "509.png",
+        "sprite": "509",
         "types": [
           "dark"
         ],
@@ -1415,7 +1415,7 @@
           "name": "Super Luck",
           "effect": "Raises moves' critical hit rates one stage."
         },
-        "sprite": "519.png",
+        "sprite": "519",
         "types": [
           "normal",
           "flying"
@@ -1463,7 +1463,7 @@
           "name": "Guts",
           "effect": "Increases Attack to 1.5× with a major status ailment."
         },
-        "sprite": "532.png",
+        "sprite": "532",
         "types": [
           "fighting"
         ],
@@ -1511,7 +1511,7 @@
           "name": "Swift Swim",
           "effect": "Doubles Speed during rain."
         },
-        "sprite": "535.png",
+        "sprite": "535",
         "types": [
           "water"
         ],
@@ -1567,7 +1567,7 @@
           "name": "Intimidate",
           "effect": "Lowers opponents' Attack one stage upon entering battle."
         },
-        "sprite": "507.png",
+        "sprite": "507",
         "types": [
           "normal"
         ],
@@ -1616,7 +1616,7 @@
           "effect": "Makes the Pokémon eat any held Berry triggered by low HP below 1/2 its max HP."
         },
         "starter": "fire",
-        "sprite": "515.png",
+        "sprite": "515",
         "types": [
           "water"
         ],
@@ -1665,7 +1665,7 @@
           "effect": "Strengthens grass moves to inflict 1.5× damage at 1/3 max HP or less."
         },
         "starter": "fire",
-        "sprite": "496.png",
+        "sprite": "496",
         "types": [
           "grass"
         ],
@@ -1712,7 +1712,7 @@
           "name": "Forewarn",
           "effect": "Reveals the opponents' strongest move upon entering battle."
         },
-        "sprite": "517.png",
+        "sprite": "517",
         "types": [
           "psychic"
         ],
@@ -1767,7 +1767,7 @@
           "name": "Super Luck",
           "effect": "Raises moves' critical hit rates one stage."
         },
-        "sprite": "519.png",
+        "sprite": "519",
         "types": [
           "normal",
           "flying"
@@ -1818,7 +1818,7 @@
           "effect": "Makes the Pokémon eat any held Berry triggered by low HP below 1/2 its max HP."
         },
         "starter": "fire",
-        "sprite": "513.png",
+        "sprite": "513",
         "types": [
           "fire"
         ],
@@ -1872,7 +1872,7 @@
           "effect": "Held: Consumed at 1/2 max HP to recover 1/4 max HP."
         },
         "starter": "fire",
-        "sprite": "502.png",
+        "sprite": "502",
         "types": [
           "water"
         ],
@@ -1920,7 +1920,7 @@
           "name": "Unburden",
           "effect": "Doubles Speed upon using or losing a held item."
         },
-        "sprite": "510.png",
+        "sprite": "510",
         "types": [
           "dark"
         ],
@@ -1976,7 +1976,7 @@
           "name": "Moxie",
           "effect": "Raises Attack one stage upon KOing a Pokémon."
         },
-        "sprite": "551.png",
+        "sprite": "551",
         "types": [
           "ground",
           "dark"
@@ -2026,7 +2026,7 @@
           "name": "Shed Skin",
           "effect": "Has a 33% chance of curing any major status ailment after each turn."
         },
-        "sprite": "559.png",
+        "sprite": "559",
         "types": [
           "dark",
           "fighting"
@@ -2077,7 +2077,7 @@
           "name": "Hustle",
           "effect": "Strengthens physical moves to inflict 1.5× damage, but decreases their accuracy to 0.8×."
         },
-        "sprite": "554.png",
+        "sprite": "554",
         "types": [
           "fire"
         ],
@@ -2126,7 +2126,7 @@
           "name": "Magic Guard",
           "effect": "Protects against damage not directly caused by a move."
         },
-        "sprite": "561.png",
+        "sprite": "561",
         "types": [
           "psychic",
           "flying"
@@ -2184,7 +2184,7 @@
           "name": "Unburden",
           "effect": "Doubles Speed upon using or losing a held item."
         },
-        "sprite": "510.png",
+        "sprite": "510",
         "types": [
           "dark"
         ],
@@ -2239,7 +2239,7 @@
           "effect": "Held: Fire-Type moves from holder do 20% more damage."
         },
         "starter": "fire",
-        "sprite": "513.png",
+        "sprite": "513",
         "types": [
           "fire"
         ],
@@ -2294,7 +2294,7 @@
           "effect": "Held: Consumed at 1/2 max HP to recover 1/4 max HP."
         },
         "starter": "fire",
-        "sprite": "502.png",
+        "sprite": "502",
         "types": [
           "water"
         ],
@@ -2343,7 +2343,7 @@
           "name": "Super Luck",
           "effect": "Raises moves' critical hit rates one stage."
         },
-        "sprite": "520.png",
+        "sprite": "520",
         "types": [
           "normal",
           "flying"
@@ -2365,8 +2365,8 @@
     "img": "/leaders/blwh-bianca",
     "pokemon": [
       {
-        "name": "stoutland",
-        "level": "38",
+        "name": "herdier",
+        "level": "26",
         "moves": [
           {
             "power": 80,
@@ -2376,18 +2376,17 @@
             "effect": "Has a 20% chance to lower the target's Defense by one stage."
           },
           {
-            "priority": -6,
             "type": "normal",
             "damage_class": "status",
-            "name": "Roar",
-            "effect": "Immediately ends wild battles.  Forces trainers to switch Pokémon."
+            "name": "Odor Sleuth",
+            "effect": "Forces the target to have no Evade, and allows it to be hit by Normal and Fighting moves even if it's a Ghost."
           },
           {
-            "power": 70,
+            "power": 90,
             "type": "normal",
             "damage_class": "physical",
-            "name": "Retaliate",
-            "effect": "Has double power if a friendly Pokémon fainted last turn."
+            "name": "Take Down",
+            "effect": "User receives 1/4 the damage it inflicts in recoil."
           },
           {
             "type": "normal",
@@ -2400,42 +2399,35 @@
           "name": "Intimidate",
           "effect": "Lowers opponents' Attack one stage upon entering battle."
         },
-        "sprite": "508.png",
+        "sprite": "507",
         "types": [
           "normal"
         ],
         "stats": {
-          "hp": 85,
-          "atk": 110,
-          "def": 90,
-          "spa": 45,
-          "spd": 90,
-          "spe": 80
+          "hp": 65,
+          "atk": 80,
+          "def": 65,
+          "spa": 35,
+          "spd": 65,
+          "spe": 60
         }
       },
       {
-        "name": "simipour",
-        "level": "38",
+        "name": "panpour",
+        "level": "26",
         "moves": [
           {
-            "type": "normal",
+            "power": 60,
+            "type": "dark",
+            "damage_class": "physical",
+            "name": "Bite",
+            "effect": "Has a 30% chance to make the target flinch."
+          },
+          {
+            "type": "dark",
             "damage_class": "status",
-            "name": "Leer",
-            "effect": "Lowers the target's Defense by one stage."
-          },
-          {
-            "power": 18,
-            "type": "normal",
-            "damage_class": "physical",
-            "name": "Fury Swipes",
-            "effect": "Hits 2-5 times in one turn."
-          },
-          {
-            "power": 30,
-            "type": "ghost",
-            "damage_class": "physical",
-            "name": "Lick",
-            "effect": "Has a 30% chance to paralyze the target."
+            "name": "Taunt",
+            "effect": "For the next few turns, the target can only use damaging moves."
           },
           {
             "power": 80,
@@ -2443,6 +2435,12 @@
             "damage_class": "special",
             "name": "Scald",
             "effect": "Has a 30% chance to burn the target."
+          },
+          {
+            "type": "water",
+            "damage_class": "status",
+            "name": "Water Sport",
+            "effect": "Halves all Fire-type damage."
           }
         ],
         "ability": {
@@ -2450,34 +2448,28 @@
           "effect": "Makes the Pokémon eat any held Berry triggered by low HP below 1/2 its max HP."
         },
         "starter": "fire",
-        "sprite": "516.png",
+        "sprite": "515",
         "types": [
           "water"
         ],
         "stats": {
-          "hp": 75,
-          "atk": 98,
-          "def": 63,
-          "spa": 98,
-          "spd": 63,
-          "spe": 101
+          "hp": 50,
+          "atk": 53,
+          "def": 48,
+          "spa": 53,
+          "spd": 48,
+          "spe": 64
         }
       },
       {
-        "name": "serperior",
-        "level": "40",
+        "name": "servine",
+        "level": "28",
         "moves": [
           {
             "power": 80,
             "type": "normal",
             "damage_class": "physical",
             "name": "Slam"
-          },
-          {
-            "type": "poison",
-            "damage_class": "status",
-            "name": "Coil",
-            "effect": "Raises the user's Attack, Defense, and accuracy by one stage each."
           },
           {
             "power": 40,
@@ -2487,11 +2479,17 @@
             "effect": "Drains half the damage inflicted to heal the user."
           },
           {
-            "power": 90,
+            "power": 65,
             "type": "grass",
-            "damage_class": "physical",
-            "name": "Leaf Blade",
-            "effect": "Has an increased chance for a critical hit."
+            "damage_class": "special",
+            "name": "Leaf Tornado",
+            "effect": "Has a 50% chance to lower the target's accuracy by one stage."
+          },
+          {
+            "type": "grass",
+            "damage_class": "status",
+            "name": "Leech Seed",
+            "effect": "Seeds the target, stealing HP from it every turn."
           }
         ],
         "ability": {
@@ -2499,22 +2497,22 @@
           "effect": "Strengthens grass moves to inflict 1.5× damage at 1/3 max HP or less."
         },
         "starter": "fire",
-        "sprite": "497.png",
+        "sprite": "496",
         "types": [
           "grass"
         ],
         "stats": {
-          "hp": 75,
-          "atk": 75,
-          "def": 95,
-          "spa": 75,
-          "spd": 95,
-          "spe": 113
+          "hp": 60,
+          "atk": 60,
+          "def": 75,
+          "spa": 60,
+          "spd": 75,
+          "spe": 83
         }
       },
       {
-        "name": "musharna",
-        "level": "38",
+        "name": "munna",
+        "level": "26",
         "moves": [
           {
             "type": "normal",
@@ -2546,17 +2544,17 @@
           "name": "Forewarn",
           "effect": "Reveals the opponents' strongest move upon entering battle."
         },
-        "sprite": "518.png",
+        "sprite": "517",
         "types": [
           "psychic"
         ],
         "stats": {
-          "hp": 116,
-          "atk": 55,
-          "def": 85,
-          "spa": 107,
-          "spd": 95,
-          "spe": 29
+          "hp": 76,
+          "atk": 25,
+          "def": 45,
+          "spa": 67,
+          "spd": 55,
+          "spe": 24
         }
       }
     ]
@@ -2601,7 +2599,7 @@
           "name": "Sturdy",
           "effect": "Prevents being KOed from full HP, leaving 1 HP instead.  Protects against the one-hit KO moves regardless of HP."
         },
-        "sprite": "525.png",
+        "sprite": "525",
         "types": [
           "rock"
         ],
@@ -2649,7 +2647,7 @@
           "name": "Iron Barbs",
           "effect": "Damages attacking Pokémon for 1/8 their max HP on contact."
         },
-        "sprite": "597.png",
+        "sprite": "597",
         "types": [
           "grass",
           "steel"
@@ -2699,7 +2697,7 @@
           "name": "Unnerve",
           "effect": "Prevents opposing Pokémon from eating held Berries."
         },
-        "sprite": "595.png",
+        "sprite": "595",
         "types": [
           "bug",
           "electric"
@@ -2750,7 +2748,7 @@
           "name": "Plus",
           "effect": "Increases Special Attack to 1.5× when a friendly Pokémon has plus or minus."
         },
-        "sprite": "599.png",
+        "sprite": "599",
         "types": [
           "steel"
         ],
@@ -2765,14 +2763,241 @@
       }
     ]
   },
+  "c55": {
+    "name": "Cheren",
+    "speciality": "",
+    "img": "/leaders/blwh-cheren",
+    "pokemon": [
+      {
+        "name": "unfezant",
+        "level": "33",
+        "moves": [
+          {
+            "type": "flying",
+            "damage_class": "status",
+            "name": "Roost",
+            "effect": "Heals the user by half its max HP."
+          },
+          {
+            "priority": 4,
+            "type": "fighting",
+            "damage_class": "status",
+            "name": "Detect",
+            "effect": "Prevents any moves from hitting the user this turn."
+          },
+          {
+            "power": 75,
+            "type": "flying",
+            "damage_class": "special",
+            "name": "Air Slash",
+            "effect": "Has a 30% chance to make the target flinch."
+          },
+          {
+            "type": "dark",
+            "damage_class": "status",
+            "name": "Taunt",
+            "effect": "For the next few turns, the target can only use damaging moves."
+          }
+        ],
+        "ability": {
+          "name": "Super Luck",
+          "effect": "Raises moves' critical hit rates one stage."
+        },
+        "held": {
+          "sprite": "scope-lens",
+          "name": "Scope Lens",
+          "effect": "Held: Raises the holder's critical hit ratio by one stage."
+        },
+        "sprite": "521",
+        "types": [
+          "normal",
+          "flying"
+        ],
+        "stats": {
+          "hp": 80,
+          "atk": 115,
+          "def": 80,
+          "spa": 65,
+          "spd": 55,
+          "spe": 93
+        }
+      },
+      {
+        "name": "liepard",
+        "level": "33",
+        "moves": [
+          {
+            "type": "dark",
+            "damage_class": "status",
+            "name": "Torment",
+            "effect": "Prevents the target from using the same move twice in a row."
+          },
+          {
+            "power": 40,
+            "priority": 3,
+            "type": "normal",
+            "damage_class": "physical",
+            "name": "Fake Out",
+            "effect": "Can only be used as the first move after the user enters battle.  Causes the target to flinch."
+          },
+          {
+            "type": "dark",
+            "damage_class": "status",
+            "name": "Hone Claws",
+            "effect": "Raises the user's Attack and accuracy by one stage."
+          },
+          {
+            "power": 60,
+            "type": "dark",
+            "damage_class": "physical",
+            "name": "Assurance",
+            "effect": "Power is doubled if the target has already received damage this turn."
+          }
+        ],
+        "ability": {
+          "name": "Unburden",
+          "effect": "Doubles Speed upon using or losing a held item."
+        },
+        "held": {
+          "sprite": "sitrus-berry",
+          "name": "Sitrus Berry",
+          "effect": "Held: Consumed at 1/2 max HP to recover 1/4 max HP."
+        },
+        "sprite": "510",
+        "types": [
+          "dark"
+        ],
+        "stats": {
+          "hp": 64,
+          "atk": 88,
+          "def": 50,
+          "spa": 88,
+          "spd": 50,
+          "spe": 106
+        }
+      },
+      {
+        "name": "simisear",
+        "level": "33",
+        "moves": [
+          {
+            "type": "normal",
+            "damage_class": "status",
+            "name": "Leer",
+            "effect": "Lowers the target's Defense by one stage."
+          },
+          {
+            "power": 30,
+            "type": "ghost",
+            "damage_class": "physical",
+            "name": "Lick",
+            "effect": "Has a 30% chance to paralyze the target."
+          },
+          {
+            "power": 18,
+            "type": "normal",
+            "damage_class": "physical",
+            "name": "Fury Swipes",
+            "effect": "Hits 2-5 times in one turn."
+          },
+          {
+            "power": 70,
+            "type": "fire",
+            "damage_class": "special",
+            "name": "Flame Burst",
+            "effect": "Deals splash damage to Pokémon next to the target."
+          }
+        ],
+        "ability": {
+          "name": "Gluttony",
+          "effect": "Makes the Pokémon eat any held Berry triggered by low HP below 1/2 its max HP."
+        },
+        "held": {
+          "sprite": "charcoal",
+          "name": "Charcoal",
+          "effect": "Held: Fire-Type moves from holder do 20% more damage."
+        },
+        "starter": "fire",
+        "sprite": "514",
+        "types": [
+          "fire"
+        ],
+        "stats": {
+          "hp": 75,
+          "atk": 98,
+          "def": 63,
+          "spa": 98,
+          "spd": 63,
+          "spe": 101
+        }
+      },
+      {
+        "name": "dewott",
+        "level": "35",
+        "moves": [
+          {
+            "power": 40,
+            "type": "bug",
+            "damage_class": "physical",
+            "name": "Fury Cutter",
+            "effect": "Power doubles every turn this move is used in succession after the first, maxing out after five turns."
+          },
+          {
+            "power": 60,
+            "type": "water",
+            "damage_class": "special",
+            "name": "Water Pulse",
+            "effect": "Has a 20% chance to confuse the target."
+          },
+          {
+            "power": 60,
+            "priority": -4,
+            "type": "fighting",
+            "damage_class": "physical",
+            "name": "Revenge",
+            "effect": "Inflicts double damage if the user takes damage before attacking this turn."
+          },
+          {
+            "power": 40,
+            "priority": 1,
+            "type": "water",
+            "damage_class": "physical",
+            "name": "Aqua Jet"
+          }
+        ],
+        "ability": {
+          "name": "Torrent",
+          "effect": "Strengthens water moves to inflict 1.5× damage at 1/3 max HP or less."
+        },
+        "held": {
+          "sprite": "leftovers",
+          "name": "Leftovers",
+          "effect": "Held: Restores 1/16 (6.25%) holder's max HP at the end of each turn."
+        },
+        "starter": "fire",
+        "sprite": "502",
+        "types": [
+          "water"
+        ],
+        "stats": {
+          "hp": 75,
+          "atk": 75,
+          "def": 60,
+          "spa": 83,
+          "spd": 60,
+          "spe": 60
+        }
+      }
+    ]
+  },
   "b5": {
     "name": "Bianca",
     "speciality": "",
     "img": "/leaders/blwh-bianca",
     "pokemon": [
       {
-        "name": "herdier",
-        "level": "26",
+        "name": "stoutland",
+        "level": "38",
         "moves": [
           {
             "power": 80,
@@ -2782,17 +3007,18 @@
             "effect": "Has a 20% chance to lower the target's Defense by one stage."
           },
           {
+            "priority": -6,
             "type": "normal",
             "damage_class": "status",
-            "name": "Odor Sleuth",
-            "effect": "Forces the target to have no Evade, and allows it to be hit by Normal and Fighting moves even if it's a Ghost."
+            "name": "Roar",
+            "effect": "Immediately ends wild battles.  Forces trainers to switch Pokémon."
           },
           {
-            "power": 90,
+            "power": 70,
             "type": "normal",
             "damage_class": "physical",
-            "name": "Take Down",
-            "effect": "User receives 1/4 the damage it inflicts in recoil."
+            "name": "Retaliate",
+            "effect": "Has double power if a friendly Pokémon fainted last turn."
           },
           {
             "type": "normal",
@@ -2805,35 +3031,42 @@
           "name": "Intimidate",
           "effect": "Lowers opponents' Attack one stage upon entering battle."
         },
-        "sprite": "507.png",
+        "sprite": "508",
         "types": [
           "normal"
         ],
         "stats": {
-          "hp": 65,
-          "atk": 80,
-          "def": 65,
-          "spa": 35,
-          "spd": 65,
-          "spe": 60
+          "hp": 85,
+          "atk": 110,
+          "def": 90,
+          "spa": 45,
+          "spd": 90,
+          "spe": 80
         }
       },
       {
-        "name": "panpour",
-        "level": "26",
+        "name": "simipour",
+        "level": "38",
         "moves": [
           {
-            "power": 60,
-            "type": "dark",
-            "damage_class": "physical",
-            "name": "Bite",
-            "effect": "Has a 30% chance to make the target flinch."
+            "type": "normal",
+            "damage_class": "status",
+            "name": "Leer",
+            "effect": "Lowers the target's Defense by one stage."
           },
           {
-            "type": "dark",
-            "damage_class": "status",
-            "name": "Taunt",
-            "effect": "For the next few turns, the target can only use damaging moves."
+            "power": 18,
+            "type": "normal",
+            "damage_class": "physical",
+            "name": "Fury Swipes",
+            "effect": "Hits 2-5 times in one turn."
+          },
+          {
+            "power": 30,
+            "type": "ghost",
+            "damage_class": "physical",
+            "name": "Lick",
+            "effect": "Has a 30% chance to paralyze the target."
           },
           {
             "power": 80,
@@ -2841,12 +3074,6 @@
             "damage_class": "special",
             "name": "Scald",
             "effect": "Has a 30% chance to burn the target."
-          },
-          {
-            "type": "water",
-            "damage_class": "status",
-            "name": "Water Sport",
-            "effect": "Halves all Fire-type damage."
           }
         ],
         "ability": {
@@ -2854,28 +3081,34 @@
           "effect": "Makes the Pokémon eat any held Berry triggered by low HP below 1/2 its max HP."
         },
         "starter": "fire",
-        "sprite": "515.png",
+        "sprite": "516",
         "types": [
           "water"
         ],
         "stats": {
-          "hp": 50,
-          "atk": 53,
-          "def": 48,
-          "spa": 53,
-          "spd": 48,
-          "spe": 64
+          "hp": 75,
+          "atk": 98,
+          "def": 63,
+          "spa": 98,
+          "spd": 63,
+          "spe": 101
         }
       },
       {
-        "name": "servine",
-        "level": "28",
+        "name": "serperior",
+        "level": "40",
         "moves": [
           {
             "power": 80,
             "type": "normal",
             "damage_class": "physical",
             "name": "Slam"
+          },
+          {
+            "type": "poison",
+            "damage_class": "status",
+            "name": "Coil",
+            "effect": "Raises the user's Attack, Defense, and accuracy by one stage each."
           },
           {
             "power": 40,
@@ -2885,17 +3118,11 @@
             "effect": "Drains half the damage inflicted to heal the user."
           },
           {
-            "power": 65,
+            "power": 90,
             "type": "grass",
-            "damage_class": "special",
-            "name": "Leaf Tornado",
-            "effect": "Has a 50% chance to lower the target's accuracy by one stage."
-          },
-          {
-            "type": "grass",
-            "damage_class": "status",
-            "name": "Leech Seed",
-            "effect": "Seeds the target, stealing HP from it every turn."
+            "damage_class": "physical",
+            "name": "Leaf Blade",
+            "effect": "Has an increased chance for a critical hit."
           }
         ],
         "ability": {
@@ -2903,22 +3130,22 @@
           "effect": "Strengthens grass moves to inflict 1.5× damage at 1/3 max HP or less."
         },
         "starter": "fire",
-        "sprite": "496.png",
+        "sprite": "497",
         "types": [
           "grass"
         ],
         "stats": {
-          "hp": 60,
-          "atk": 60,
-          "def": 75,
-          "spa": 60,
-          "spd": 75,
-          "spe": 83
+          "hp": 75,
+          "atk": 75,
+          "def": 95,
+          "spa": 75,
+          "spd": 95,
+          "spe": 113
         }
       },
       {
-        "name": "munna",
-        "level": "26",
+        "name": "musharna",
+        "level": "38",
         "moves": [
           {
             "type": "normal",
@@ -2950,17 +3177,17 @@
           "name": "Forewarn",
           "effect": "Reveals the opponents' strongest move upon entering battle."
         },
-        "sprite": "517.png",
+        "sprite": "518",
         "types": [
           "psychic"
         ],
         "stats": {
-          "hp": 76,
-          "atk": 25,
-          "def": 45,
-          "spa": 67,
-          "spd": 55,
-          "spe": 24
+          "hp": 116,
+          "atk": 55,
+          "def": 85,
+          "spa": 107,
+          "spd": 95,
+          "spe": 29
         }
       }
     ]
@@ -3006,7 +3233,7 @@
           "name": "Rivalry",
           "effect": "Increases damage inflicted to 1.25× against Pokémon of the same gender, but decreases damage to 0.75× against the opposite gender."
         },
-        "sprite": "611.png",
+        "sprite": "611",
         "types": [
           "dragon"
         ],
@@ -3058,7 +3285,7 @@
           "name": "Rough Skin",
           "effect": "Damages attacking Pokémon for 1/8 their max HP on contact."
         },
-        "sprite": "621.png",
+        "sprite": "621",
         "types": [
           "dragon"
         ],
@@ -3108,7 +3335,7 @@
           "name": "Mold Breaker",
           "effect": "Bypasses targets' abilities if they could hinder or prevent a move."
         },
-        "sprite": "612.png",
+        "sprite": "612",
         "types": [
           "dragon"
         ],
@@ -3169,7 +3396,7 @@
           "name": "Scope Lens",
           "effect": "Held: Raises the holder's critical hit ratio by one stage."
         },
-        "sprite": "521.png",
+        "sprite": "521",
         "types": [
           "normal",
           "flying"
@@ -3225,7 +3452,7 @@
           "effect": "Held: Fire-Type moves from holder do 20% more damage."
         },
         "starter": "fire",
-        "sprite": "514.png",
+        "sprite": "514",
         "types": [
           "fire"
         ],
@@ -3279,7 +3506,7 @@
           "name": "Sitrus Berry",
           "effect": "Held: Consumed at 1/2 max HP to recover 1/4 max HP."
         },
-        "sprite": "510.png",
+        "sprite": "510",
         "types": [
           "dark"
         ],
@@ -3333,7 +3560,7 @@
           "effect": "Held: Restores 1/16 (6.25%) holder's max HP at the end of each turn."
         },
         "starter": "fire",
-        "sprite": "503.png",
+        "sprite": "503",
         "types": [
           "water"
         ],
@@ -3388,7 +3615,7 @@
           "name": "Mummy",
           "effect": "Changes attacking Pokémon's abilities to Mummy on contact."
         },
-        "sprite": "563.png",
+        "sprite": "563",
         "types": [
           "ghost"
         ],
@@ -3438,7 +3665,7 @@
           "name": "Cursed Body",
           "effect": "Has a 30% chance of Disabling any move that hits the Pokémon."
         },
-        "sprite": "593.png",
+        "sprite": "593",
         "types": [
           "water",
           "ghost"
@@ -3488,7 +3715,7 @@
           "name": "Iron Fist",
           "effect": "Strengthens punch-based moves to 1.2× their power."
         },
-        "sprite": "623.png",
+        "sprite": "623",
         "types": [
           "ground",
           "ghost"
@@ -3539,7 +3766,7 @@
           "name": "Flame Body",
           "effect": "Has a 30% chance of burning attacking Pokémon on contact."
         },
-        "sprite": "609.png",
+        "sprite": "609",
         "types": [
           "ghost",
           "fire"
@@ -3596,7 +3823,7 @@
           "name": "Moxie",
           "effect": "Raises Attack one stage upon KOing a Pokémon."
         },
-        "sprite": "560.png",
+        "sprite": "560",
         "types": [
           "dark",
           "fighting"
@@ -3646,7 +3873,7 @@
           "name": "Intimidate",
           "effect": "Lowers opponents' Attack one stage upon entering battle."
         },
-        "sprite": "553.png",
+        "sprite": "553",
         "types": [
           "ground",
           "dark"
@@ -3697,7 +3924,7 @@
           "name": "Limber",
           "effect": "Prevents paralysis."
         },
-        "sprite": "510.png",
+        "sprite": "510",
         "types": [
           "dark"
         ],
@@ -3746,7 +3973,7 @@
           "name": "Defiant",
           "effect": "Raises Attack two stages upon having any stat lowered."
         },
-        "sprite": "625.png",
+        "sprite": "625",
         "types": [
           "dark",
           "steel"
@@ -3804,7 +4031,7 @@
           "name": "Magic Guard",
           "effect": "Protects against damage not directly caused by a move."
         },
-        "sprite": "579.png",
+        "sprite": "579",
         "types": [
           "psychic"
         ],
@@ -3854,7 +4081,7 @@
           "name": "Wonder Skin",
           "effect": "Lowers incoming non-damaging moves' base accuracy to exactly 50%."
         },
-        "sprite": "561.png",
+        "sprite": "561",
         "types": [
           "psychic",
           "flying"
@@ -3904,7 +4131,7 @@
           "name": "Synchronize",
           "effect": "Copies burns, paralysis, and poison received onto the Pokémon that inflicted them."
         },
-        "sprite": "518.png",
+        "sprite": "518",
         "types": [
           "psychic"
         ],
@@ -3953,7 +4180,7 @@
           "name": "Frisk",
           "effect": "Reveals an opponent's held item upon entering battle."
         },
-        "sprite": "576.png",
+        "sprite": "576",
         "types": [
           "psychic"
         ],
@@ -4010,7 +4237,7 @@
           "name": "Guts",
           "effect": "Increases Attack to 1.5× with a major status ailment."
         },
-        "sprite": "538.png",
+        "sprite": "538",
         "types": [
           "fighting"
         ],
@@ -4059,7 +4286,7 @@
           "name": "Sturdy",
           "effect": "Prevents being KOed from full HP, leaving 1 HP instead.  Protects against the one-hit KO moves regardless of HP."
         },
-        "sprite": "539.png",
+        "sprite": "539",
         "types": [
           "fighting"
         ],
@@ -4108,7 +4335,7 @@
           "name": "Sheer Force",
           "effect": "Strengthens moves with extra effects to 1.3× their power, but prevents their extra effects."
         },
-        "sprite": "534.png",
+        "sprite": "534",
         "types": [
           "fighting"
         ],
@@ -4158,7 +4385,7 @@
           "name": "Inner Focus",
           "effect": "Prevents flinching."
         },
-        "sprite": "620.png",
+        "sprite": "620",
         "types": [
           "fighting"
         ],
@@ -4214,7 +4441,7 @@
           "name": "Turboblaze",
           "effect": "Bypasses targets' abilities if they could hinder or prevent moves."
         },
-        "sprite": "643.png",
+        "sprite": "643",
         "types": [
           "dragon",
           "fire"
@@ -4264,7 +4491,7 @@
           "name": "Plus",
           "effect": "Increases Special Attack to 1.5× when a friendly Pokémon has plus or minus."
         },
-        "sprite": "601.png",
+        "sprite": "601",
         "types": [
           "steel"
         ],
@@ -4314,7 +4541,7 @@
           "name": "Illusion",
           "effect": "Takes the appearance of the last conscious party Pokémon upon being sent out until hit by a damaging move."
         },
-        "sprite": "571.png",
+        "sprite": "571",
         "types": [
           "dark"
         ],
@@ -4364,7 +4591,7 @@
           "name": "Sturdy",
           "effect": "Prevents being KOed from full HP, leaving 1 HP instead.  Protects against the one-hit KO moves regardless of HP."
         },
-        "sprite": "565.png",
+        "sprite": "565",
         "types": [
           "water",
           "rock"
@@ -4414,7 +4641,7 @@
           "name": "Defeatist",
           "effect": "Halves Attack and Special Attack at 50% max HP or less."
         },
-        "sprite": "567.png",
+        "sprite": "567",
         "types": [
           "rock",
           "flying"
@@ -4464,7 +4691,7 @@
           "name": "Ice Body",
           "effect": "Heals for 1/16 max HP after each turn during hail.  Protects against hail damage."
         },
-        "sprite": "584.png",
+        "sprite": "584",
         "types": [
           "ice"
         ],
@@ -4520,7 +4747,7 @@
           "name": "Mummy",
           "effect": "Changes attacking Pokémon's abilities to Mummy on contact."
         },
-        "sprite": "563.png",
+        "sprite": "563",
         "types": [
           "ghost"
         ],
@@ -4570,7 +4797,7 @@
           "name": "Reckless",
           "effect": "Strengthens recoil moves to 1.2× their power."
         },
-        "sprite": "626.png",
+        "sprite": "626",
         "types": [
           "normal"
         ],
@@ -4619,7 +4846,7 @@
           "name": "Swift Swim",
           "effect": "Doubles Speed during rain."
         },
-        "sprite": "537.png",
+        "sprite": "537",
         "types": [
           "water",
           "ground"
@@ -4668,7 +4895,7 @@
           "name": "Defiant",
           "effect": "Raises Attack two stages upon having any stat lowered."
         },
-        "sprite": "625.png",
+        "sprite": "625",
         "types": [
           "dark",
           "steel"
@@ -4719,7 +4946,7 @@
           "name": "Levitate",
           "effect": "Evades ground moves."
         },
-        "sprite": "604.png",
+        "sprite": "604",
         "types": [
           "electric"
         ],
@@ -4768,7 +4995,7 @@
           "name": "Levitate",
           "effect": "Evades ground moves."
         },
-        "sprite": "635.png",
+        "sprite": "635",
         "types": [
           "dark",
           "dragon"
@@ -4832,7 +5059,7 @@
           "name": "Sitrus Berry",
           "effect": "Held: Consumed at 1/2 max HP to recover 1/4 max HP."
         },
-        "sprite": "510.png",
+        "sprite": "510",
         "types": [
           "dark"
         ],
@@ -4888,7 +5115,7 @@
           "effect": "Held: Fire-Type moves from holder do 20% more damage."
         },
         "starter": "fire",
-        "sprite": "514.png",
+        "sprite": "514",
         "types": [
           "fire"
         ],
@@ -4943,7 +5170,7 @@
           "name": "Scope Lens",
           "effect": "Held: Raises the holder's critical hit ratio by one stage."
         },
-        "sprite": "521.png",
+        "sprite": "521",
         "types": [
           "normal",
           "flying"
@@ -4998,7 +5225,7 @@
           "name": "Leftovers",
           "effect": "Held: Restores 1/16 (6.25%) holder's max HP at the end of each turn."
         },
-        "sprite": "526.png",
+        "sprite": "526",
         "types": [
           "rock"
         ],
@@ -5052,7 +5279,7 @@
           "name": "Dragon Gem",
           "effect": "Held: When the holder uses a damaging dragon-type move, the move has 1.5× power and this item is consumed."
         },
-        "sprite": "612.png",
+        "sprite": "612",
         "types": [
           "dragon"
         ],
@@ -5106,7 +5333,7 @@
           "effect": "Held: Holder survives any single-hit attack at 1 HP if at max HP, then the item is consumed."
         },
         "starter": "fire",
-        "sprite": "503.png",
+        "sprite": "503",
         "types": [
           "water"
         ],
@@ -5162,7 +5389,7 @@
           "name": "Mummy",
           "effect": "Changes attacking Pokémon's abilities to Mummy on contact."
         },
-        "sprite": "563.png",
+        "sprite": "563",
         "types": [
           "ghost"
         ],
@@ -5211,7 +5438,7 @@
           "name": "Cursed Body",
           "effect": "Has a 30% chance of Disabling any move that hits the Pokémon."
         },
-        "sprite": "593.png",
+        "sprite": "593",
         "types": [
           "water",
           "ghost"
@@ -5261,7 +5488,7 @@
           "name": "Iron Fist",
           "effect": "Strengthens punch-based moves to 1.2× their power."
         },
-        "sprite": "623.png",
+        "sprite": "623",
         "types": [
           "ground",
           "ghost"
@@ -5312,7 +5539,7 @@
           "name": "Snow Cloak",
           "effect": "Increases evasion to 1.25× during hail.  Protects against hail damage."
         },
-        "sprite": "478.png",
+        "sprite": "478",
         "types": [
           "ice",
           "ghost"
@@ -5363,7 +5590,7 @@
           "name": "Aftermath",
           "effect": "Damages the attacker for 1/4 its max HP when knocked out by a contact move."
         },
-        "sprite": "426.png",
+        "sprite": "426",
         "types": [
           "ghost",
           "flying"
@@ -5414,7 +5641,7 @@
           "name": "Flame Body",
           "effect": "Has a 30% chance of burning attacking Pokémon on contact."
         },
-        "sprite": "609.png",
+        "sprite": "609",
         "types": [
           "ghost",
           "fire"
@@ -5472,7 +5699,7 @@
           "name": "Rough Skin",
           "effect": "Damages attacking Pokémon for 1/8 their max HP on contact."
         },
-        "sprite": "319.png",
+        "sprite": "319",
         "types": [
           "water",
           "dark"
@@ -5523,7 +5750,7 @@
           "name": "Moxie",
           "effect": "Raises Attack one stage upon KOing a Pokémon."
         },
-        "sprite": "560.png",
+        "sprite": "560",
         "types": [
           "dark",
           "fighting"
@@ -5574,7 +5801,7 @@
           "name": "Intimidate",
           "effect": "Lowers opponents' Attack one stage upon entering battle."
         },
-        "sprite": "553.png",
+        "sprite": "553",
         "types": [
           "ground",
           "dark"
@@ -5626,7 +5853,7 @@
           "name": "Limber",
           "effect": "Prevents paralysis."
         },
-        "sprite": "510.png",
+        "sprite": "510",
         "types": [
           "dark"
         ],
@@ -5676,7 +5903,7 @@
           "name": "Battle Armor",
           "effect": "Protects against critical hits."
         },
-        "sprite": "452.png",
+        "sprite": "452",
         "types": [
           "poison",
           "dark"
@@ -5725,7 +5952,7 @@
           "name": "Defiant",
           "effect": "Raises Attack two stages upon having any stat lowered."
         },
-        "sprite": "625.png",
+        "sprite": "625",
         "types": [
           "dark",
           "steel"
@@ -5781,7 +6008,7 @@
           "name": "Synchronize",
           "effect": "Copies burns, paralysis, and poison received onto the Pokémon that inflicted them."
         },
-        "sprite": "518.png",
+        "sprite": "518",
         "types": [
           "psychic"
         ],
@@ -5831,7 +6058,7 @@
           "name": "Wonder Skin",
           "effect": "Lowers incoming non-damaging moves' base accuracy to exactly 50%."
         },
-        "sprite": "561.png",
+        "sprite": "561",
         "types": [
           "psychic",
           "flying"
@@ -5882,7 +6109,7 @@
           "name": "Magic Guard",
           "effect": "Protects against damage not directly caused by a move."
         },
-        "sprite": "579.png",
+        "sprite": "579",
         "types": [
           "psychic"
         ],
@@ -5931,7 +6158,7 @@
           "name": "Frisk",
           "effect": "Reveals an opponent's held item upon entering battle."
         },
-        "sprite": "576.png",
+        "sprite": "576",
         "types": [
           "psychic"
         ],
@@ -5981,7 +6208,7 @@
           "name": "Levitate",
           "effect": "Evades ground moves."
         },
-        "sprite": "437.png",
+        "sprite": "437",
         "types": [
           "steel",
           "psychic"
@@ -6032,7 +6259,7 @@
           "name": "Clear Body",
           "effect": "Prevents stats from being lowered by other Pokémon."
         },
-        "sprite": "376.png",
+        "sprite": "376",
         "types": [
           "steel",
           "psychic"
@@ -6088,7 +6315,7 @@
           "name": "Effect Spore",
           "effect": "Has a 30% chance of inflcting either paralysis, poison, or sleep on attacking Pokémon on contact."
         },
-        "sprite": "286.png",
+        "sprite": "286",
         "types": [
           "grass",
           "fighting"
@@ -6138,7 +6365,7 @@
           "name": "Guts",
           "effect": "Increases Attack to 1.5× with a major status ailment."
         },
-        "sprite": "538.png",
+        "sprite": "538",
         "types": [
           "fighting"
         ],
@@ -6188,7 +6415,7 @@
           "name": "Sturdy",
           "effect": "Prevents being KOed from full HP, leaving 1 HP instead.  Protects against the one-hit KO moves regardless of HP."
         },
-        "sprite": "539.png",
+        "sprite": "539",
         "types": [
           "fighting"
         ],
@@ -6237,7 +6464,7 @@
           "name": "Anticipation",
           "effect": "Notifies all trainers upon entering battle if an opponent has a super-effective move, self destruct, explosion, or a one-hit KO move."
         },
-        "sprite": "454.png",
+        "sprite": "454",
         "types": [
           "poison",
           "fighting"
@@ -6289,7 +6516,7 @@
           "name": "Inner Focus",
           "effect": "Prevents flinching."
         },
-        "sprite": "620.png",
+        "sprite": "620",
         "types": [
           "fighting"
         ],
@@ -6339,7 +6566,7 @@
           "name": "Sheer Force",
           "effect": "Strengthens moves with extra effects to 1.3× their power, but prevents their extra effects."
         },
-        "sprite": "534.png",
+        "sprite": "534",
         "types": [
           "fighting"
         ],
@@ -6395,7 +6622,7 @@
           "name": "Hydration",
           "effect": "Cures any major status ailment after each turn during rain."
         },
-        "sprite": "617.png",
+        "sprite": "617",
         "types": [
           "bug"
         ],
@@ -6444,7 +6671,7 @@
           "name": "Sap Sipper",
           "effect": "Absorbs grass moves, raising Attack one stage."
         },
-        "sprite": "626.png",
+        "sprite": "626",
         "types": [
           "normal"
         ],
@@ -6494,7 +6721,7 @@
           "name": "Rough Skin",
           "effect": "Damages attacking Pokémon for 1/8 their max HP on contact."
         },
-        "sprite": "621.png",
+        "sprite": "621",
         "types": [
           "dragon"
         ],
@@ -6542,7 +6769,7 @@
           "name": "Ice Body",
           "effect": "Heals for 1/16 max HP after each turn during hail.  Protects against hail damage."
         },
-        "sprite": "584.png",
+        "sprite": "584",
         "types": [
           "ice"
         ],
@@ -6591,7 +6818,7 @@
           "name": "Swarm",
           "effect": "Strengthens bug moves to inflict 1.5× damage at 1/3 max HP or less."
         },
-        "sprite": "589.png",
+        "sprite": "589",
         "types": [
           "bug",
           "steel"
@@ -6641,7 +6868,7 @@
           "name": "Flame Body",
           "effect": "Has a 30% chance of burning attacking Pokémon on contact."
         },
-        "sprite": "637.png",
+        "sprite": "637",
         "types": [
           "bug",
           "fire"
@@ -6698,7 +6925,7 @@
           "name": "Pressure",
           "effect": "Increases the PP cost of moves targetting the Pokémon by one."
         },
-        "sprite": "442.png",
+        "sprite": "442",
         "types": [
           "ghost",
           "dark"
@@ -6748,7 +6975,7 @@
           "name": "Levitate",
           "effect": "Evades ground moves."
         },
-        "sprite": "604.png",
+        "sprite": "604",
         "types": [
           "electric"
         ],
@@ -6798,7 +7025,7 @@
           "name": "Marvel Scale",
           "effect": "Increases Defense to 1.5× with a major status ailment."
         },
-        "sprite": "350.png",
+        "sprite": "350",
         "types": [
           "water"
         ],
@@ -6848,7 +7075,7 @@
           "name": "Sheer Force",
           "effect": "Strengthens moves with extra effects to 1.3× their power, but prevents their extra effects."
         },
-        "sprite": "628.png",
+        "sprite": "628",
         "types": [
           "normal",
           "flying"
@@ -6898,7 +7125,7 @@
           "name": "Steadfast",
           "effect": "Raises Speed one stage upon flinching."
         },
-        "sprite": "448.png",
+        "sprite": "448",
         "types": [
           "fighting",
           "steel"
@@ -6949,7 +7176,7 @@
           "name": "Sand Veil",
           "effect": "Increases evasion to 1.25× during a sandstorm.  Protects against sandstorm damage."
         },
-        "sprite": "445.png",
+        "sprite": "445",
         "types": [
           "dragon",
           "ground"
@@ -7006,7 +7233,7 @@
           "name": "Limber",
           "effect": "Prevents paralysis."
         },
-        "sprite": "510.png",
+        "sprite": "510",
         "types": [
           "dark"
         ],
@@ -7061,7 +7288,7 @@
           "name": "Petaya Berry",
           "effect": "Held: Consumed at 1/4 max HP to boost Special Attack."
         },
-        "sprite": "514.png",
+        "sprite": "514",
         "types": [
           "fire"
         ],
@@ -7116,7 +7343,7 @@
           "name": "Petaya Berry",
           "effect": "Held: Consumed at 1/4 max HP to boost Special Attack."
         },
-        "sprite": "516.png",
+        "sprite": "516",
         "types": [
           "water"
         ],
@@ -7171,7 +7398,7 @@
           "name": "Petaya Berry",
           "effect": "Held: Consumed at 1/4 max HP to boost Special Attack."
         },
-        "sprite": "512.png",
+        "sprite": "512",
         "types": [
           "grass"
         ],
@@ -7220,7 +7447,7 @@
           "name": "Unaware",
           "effect": "Ignores other Pokémon's stat modifiers for damage and accuracy calculation."
         },
-        "sprite": "528.png",
+        "sprite": "528",
         "types": [
           "psychic",
           "flying"
@@ -7271,7 +7498,7 @@
           "name": "Lightning Rod",
           "effect": "Redirects single-target electric moves to this Pokémon where possible.  Absorbs Electric moves, raising Special Attack one stage."
         },
-        "sprite": "523.png",
+        "sprite": "523",
         "types": [
           "electric"
         ],
