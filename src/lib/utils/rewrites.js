@@ -1,8 +1,6 @@
 import { building, dev } from '$app/environment';
 const rewrite = !building && !dev;
 
-console.log('REWRITE', rewrite);
-
 // TODO: Remember to update `vercel.json` in root of project when
 // modifying these sources
 

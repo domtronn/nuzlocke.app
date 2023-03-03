@@ -41,10 +41,10 @@
     activeId = id
     active = save
     summarise(data => summary = data)(data)
-
+    
     if (active) {
       links = [
-        { title: 'Continue', href: '/game', color: 'yellow' },
+        { title: 'Continue', href: '/game', color: 'yellow', aria: 'Continue game: ' + active.name },
         ...links
       ]
     }
@@ -72,12 +72,13 @@
 
       <div class='font-bold flex flex-col h-36 justify-center'>
 
-        {#each links as { title, href, color } (href)}
+        {#each links as { title, href, color, aria } (href)}
           <a animate:animflip in:fly={{ x: -50 }}
              class='group tracking-widest hover:drop-shadow-text {color}'
              on:mouseenter={toggleHover}
              on:mouseleave={toggleHover}
              {href}
+             aria-label={aria}
              data-sveltekit-preload-data
              rel=external
            >

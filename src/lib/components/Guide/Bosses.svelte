@@ -22,7 +22,7 @@
 </script>
 
 <h2 id=boss-summary>
-  <a title='{game.title} Boss Battles' href='{path}#bosses'>
+  <a title='{game.title} Boss Battles' href='{path}#boss-summary'>
     <Icon inline={true} icon={Link} height=1.8rem class=fill-current />
   </a>
   {game.title} Boss Battles
@@ -59,8 +59,10 @@
   <h3>Select your starter type</h3>
   <ul role=radiogroup class=flex>
     {#each ['grass', 'water', 'fire'] as type}
-      <li class={type} on:click={setstarter(type)} title='Select {type}' aria-checked={starter === type} role=radio>
-        <PIcon className='starter-icon' type=symbol name='type-{type}' />
+      <li class={type} aria-checked={starter === type} role=radio>
+        <button title='Select {type}' on:click={setstarter(type)}>
+          <PIcon className='starter-icon' type=symbol name='type-{type}' />
+        </button>
       </li>
     {/each}
   </ul>

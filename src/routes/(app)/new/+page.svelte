@@ -109,7 +109,7 @@
       class='grid items-center justify-center gap-x-4 gap-y-6 grid-cols-3 sm:grid-cols-4 hidden sm:grid'>
     {#each Object.entries(validGames) as [id, game]}
       {#if game.logo && (gen === 'All' || game.gen === gen) }
-        <li
+        <button
           role=radio
           aria-checked={selected === id}
 
@@ -129,7 +129,7 @@
             className='w-24 mb-2 mx-auto transition group-hover:grayscale-0 {(selected && selected !== id) || hoverActive ? 'grayscale' : ''} {selected === id ? 'drop-shadow-highlight grayscale-0' : ''} cursor-pointer'
             />
           <strong>{game.title}</strong>
-        </li>
+        </button>
       {/if}
     {/each}
   </ul>

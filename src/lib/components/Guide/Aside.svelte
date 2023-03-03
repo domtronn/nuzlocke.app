@@ -15,11 +15,11 @@
 </script>
 
 <aside class:show class=g-container>
-  <div class=head on:click={onshow}>
+  <button class=head on:click={onshow}>
     <h2>In this guide</h2>
 
     <Icon inline={true} icon={Chevron} class=fill-current height=2rem />
-  </div>
+  </button>
 
   <div class=main>
     <div class=encounters>

@@ -37,8 +37,8 @@
 </script>
 
 <div class='transition tracking-widest flex flex-row justify-between items-center'>
-  <div title='Load saved game {name}'
-          class='group flex flex-col flex-1 sm:flex-row gap-x-4 items-start md:items-center cursor-pointer md:pr-24'
+  <button title='Load saved game {name}'
+          class='group flex flex-col flex-1 sm:flex-row gap-x-4 flex-start items-start md:items-center cursor-pointer md:pr-24'
           out:fade on:click={onclick}>
     <Picture
       alt='{name} logo'
@@ -47,7 +47,7 @@
       aspect=192x96
     />
 
-    <div>
+    <div class='text-left'>
       <h2 class='font-bold transition text-xl leading-7'><mark class='bg-transparent dark:text-gray-50 dark:group-hover:text-gray-900 transition group-hover:bg-yellow-300'>{name}</mark></h2>
       <h3 class='text-sm transition'><mark class='bg-transparent dark:text-gray-50 dark:group-hover:text-gray-900 transition group-hover:bg-yellow-300'>{date}<mark></h3>
       <span class='font-sans inline-flex items-center'>
@@ -57,7 +57,7 @@
         <Icon inline={true} class='ml-1 fill-current' icon={NuzlockeStates[5].icon} />
       </span>
     </div>
-  </div>
+  </button>
 
   <div class='flex flex-col gap-y-2 md:flex-row md:gap-x-3 items-end md:items-center'>
     <IconButton

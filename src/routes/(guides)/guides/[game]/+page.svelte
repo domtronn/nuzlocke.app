@@ -2,13 +2,13 @@
   export let data
   const { route, game, links, path } = data
 
-  import '../../assets/[resource].css/_pokemon.css'
+  import '../../../assets/[resource].css/_pokemon.css'
   import 'pokemon-assets/assets/css/items.css'
   import 'pokemon-assets/assets/css/symbols.css'
   import { setContext } from 'svelte'
 
   import { Hero, Links, Summary, Bosses, Aside } from '$c/Guide'
-  // import { faq } from '$c/Guide/schemas'
+  import { faq } from '$c/Guide/schemas'
 
   setContext('game', {
     getLeague: (_, starter) => data.data[starter],
@@ -40,7 +40,7 @@
     "description": description
   }
   const articleSchema = `<script type="application/ld+json">${JSON.stringify(schema)}<\/script>`
-  // const faqSchema = `<script type="application/ld+json">${JSON.stringify(faq(game, data.data.fire, route))}<\/script>`
+  const faqSchema = `<script type="application/ld+json">${JSON.stringify(faq(game, data.data.fire, route))}<\/script>`
 
 </script>
 
@@ -71,7 +71,7 @@
 <Links {links} />
 
 {@html articleSchema}
-<!-- {@html faqSchema} -->
+{@html faqSchema}
 {/key}
 
 <style lang="postcss">

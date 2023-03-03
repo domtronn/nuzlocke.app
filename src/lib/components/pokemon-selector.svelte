@@ -180,6 +180,7 @@
           <span class='flex items-center h-8 px-4 py-5 md:py-6 '
                 class:hidden={setting === 2 && evolines.has(item?.evoline)}
                 class:dupe={setting === 1 && evolines.has(item?.evoline)}
+                aria-label={label}
                 slot=item let:item let:label>
             <PIcon name={item?.sprite} className='transform -mb-4 -ml-6 -mt-5 -mr-2' />
             {@html label}
@@ -243,10 +244,10 @@
           {/if}
         </svelte:fragment>
 
-        <div on:click={animateStatus(item)} class='flex inline-flex gap-x-2 px-3 py-2 md:py-3 items-center' slot=item let:item let:label>
+        <button on:click={animateStatus(item)} class='flex inline-flex gap-x-2 px-3 py-2 md:py-3 items-center' slot=item let:item let:label>
           <Icon inline={true} icon={item.icon} class='fill-current transform md:scale-125' />
           {@html label}
-        </div>
+        </button>
       </AutoComplete>
     </svelte:fragment>
   </SettingsWrapper>

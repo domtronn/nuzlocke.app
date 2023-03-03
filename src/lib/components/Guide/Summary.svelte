@@ -31,7 +31,7 @@
   encounters. <span aria-hidden>Hover over a Pokémon to see where to encounter it!</span>
 </p>
 
-<p class=sr-only>
+<p class='sr-only w-0 h-0 overflow-none'>
   {#each Object.entries(encounters).sort(([, a], [, b])=> a.length - b.length) as [type, encounters]}
     <h3>{encounters.length} {capitalise(type)} Pokémon encounters</h3>
     <ul>
@@ -47,7 +47,7 @@
 <div>
   {#each Object.entries(encounters).sort(([, a], [, b])=> a.length - b.length) as [type, encounters]}
     <section id={toId.encounter(type)}>
-      <h3 aria-hidden>
+      <h3>
         <span>
           <a title='{capitalise(type)} Pokémon' href='{path}#{toId.encounter(type)}'>
             <Icon inline={true} icon={Link} height=1.8rem class=fill-current />
@@ -59,7 +59,7 @@
 
       <ul>
         {#each encounters as { name, sprite, original }}
-          <li title={name}>
+          <li class='text-xs' title={name}>
             <PIcon name={sprite} />
             <Tooltip>
               Find {name} at {toList(encounterMap[sprite] || [], i => i, 'and')}

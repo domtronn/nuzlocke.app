@@ -49,7 +49,7 @@
 
     <br />
 
-    <span
+    <button
       on:click={_ => {
         document.getElementById('svelte').scrollIntoView({ behavior: 'smooth' })
         show = !show
@@ -58,7 +58,7 @@
     >
       <Icon inline={true} icon={ArrowToTop} height='1.3em' class='fill-current ml-1 -mr-.5' />
       Back to top
-    </span>
+    </button>
 
     <br />
 
@@ -68,8 +68,10 @@
       <h3 class='text-lg font-light text-gray-800 dark:text-gray-200 mt-4'>{capitalise(unslugify(group))}</h3>
       {#each grouped[group] as b}
         <ul>
-          <li class='text-xs underline hover:text-black dark:hover:text-gray-200 hover:scale-110 hover:cursor-pointer origin-left transition' on:click={onnav(b.oid)}>
-            {b.boss} at {b.name}
+          <li class='text-xs underline hover:text-black dark:hover:text-gray-200 hover:scale-110 hover:cursor-pointer origin-left transition'>
+            <button on:click={onnav(b.oid)}>
+              {b.boss} at {b.name}
+            </button>
           </li>
         </ul>
       {/each}

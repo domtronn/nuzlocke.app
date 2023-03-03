@@ -52,7 +52,7 @@
     class='grid -my-2 mx-auto overflow-hidden'
     style='grid-template-columns: repeat({pageSize}, minmax(0, 1fr));'>
     {#each pages[page] as p, i (p)}
-      <div
+      <button
         in:fade={{ duration: 300, delay: 50 }}
         class:opacity-50={value !== (page * pageSize) + i}
         class:grayscale={value !== (page * pageSize) + i}
@@ -60,7 +60,7 @@
         class='transform transition hover:grayscale-0 hover:opacity-100 hover:scale-150 origin-center cursor-pointer'
         on:click={e => value = (page * pageSize) + i}>
         <PIcon name={select(p)} />
-      </div>
+      </button>
     {/each}
   </div>
 

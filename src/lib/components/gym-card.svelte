@@ -93,7 +93,7 @@
               {#if img?.author}
                 <a href={img.link}
                    target=_blank
-                   rel=noopener
+                   rel=noreferrer
                    on:click|stopPropagation={function () {}}
                    class:mt-6={location}
                    class='absolute italic text-tiny text-gray-500 dark:text-gray-600 dark:hover:text-indigo-400 hover:text-indigo-300 hover:underline transition'>

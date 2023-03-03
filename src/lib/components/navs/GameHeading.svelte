@@ -67,15 +67,16 @@
               <li
                 class='px-4 py-2 text-gray-600 dark:text-gray-200 w-full text-sm cursor-pointer dark:hover:text-blue-500 hover:text-blue-400 inline-flex justify-between items-center transition'
                 title='Load game {game.name}'
-                on:click={load(game)}>
+                >
+                <button on:click={load(game)}>
                 {game.name}
-
-                <Picture
-                  alt='{game.name} logo'
-                  src=/assets/{game.game}
-                  className='ml-2 w-16'
-                  aspect=192x96
-                  />
+                  <Picture
+                    alt='{game.name} logo'
+                    src=/assets/{game.game}
+                    className='ml-2 w-16'
+                    aspect=192x96
+                    />
+                </button>
               </li>
             {/each}
           </ul>

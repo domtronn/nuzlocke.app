@@ -20,9 +20,6 @@ const config = {
   build: {
     sourcemap: true,
     target: ['es2020']
-  },
-  prerender: {
-    entries: ['/guides']
   }
 };
 

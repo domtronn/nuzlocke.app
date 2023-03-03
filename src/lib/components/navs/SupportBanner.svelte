@@ -46,7 +46,7 @@
         {/if}
       </span>
       <div class='flex flex-row-reverse sm:flex-row'>
-        <a href="https://www.buymeacoffee.com/nuzlocketracker" target="_blank">
+        <a href="https://www.buymeacoffee.com/nuzlocketracker" target="_blank" rel="noreferrer">
           <button
             title='Open support link'
             on:click={support.set.bind({}, SUPPORTED)}

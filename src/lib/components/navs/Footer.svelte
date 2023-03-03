@@ -39,7 +39,7 @@
   Pokémon images & names © 1995-2021 Nintendo/Creatures Inc./GAME FREAK inc. TM
 </footer>
 
-<style lang="postcss">
+<style>
   footer { @apply text-center w-full absolute bottom-0 my-4 sm:my-6 px-4 text-tiny md:text-xs text-gray-500 dark:text-gray-400 leading-3; }
   footer > p { @apply flex justify-center text-2xl gap-x-2; }
   footer a,

@@ -35,7 +35,7 @@
     <h3 class='inline-flex gap-x-1 items-center text-sm'>
       <span class='ml-1 text-gray-500 '>Sorted: </span>
       <strong>{sortDescs[sort]}</strong>
-      <IconButton containerClassName=ml-1 rounded icon={Sort} on:click={nextsort} />
+      <IconButton containerClassName='ml-1' rounded src={Sort} on:click={nextsort} />
     </h3>
   </div>
 

@@ -1,38 +1,8 @@
 <script>
   import "../app.postcss";
-  import "../app.postcss";
-  import { page } from '$app/stores'
-  let path = $page.url.pathname;
 
-  import "../app.postcss";
-  import { setContext } from 'svelte';
-  import { browser, dev } from '$app/environment';
-
-  import { fetchData, fetchLeague } from '$utils/fetchers';
-  import { GameHeading, NavHeading, CookieBanner, Footer } from '$c/navs';
+  import { CookieBanner, Footer } from '$c/navs';
   import Modal from 'svelte-simple-modal';
-
-  setContext('game', {
-    getLeague: fetchLeague,
-    getAllPkmn: fetchData,
-    getPkmn: (id) =>
-      fetchData().then((ps = []) =>
-        ps.find(
-          (p) => p.num == id || p.name == id || p.alias == id || p.sprite == id
-        )
-      ),
-    getPkmns: (ids = []) =>
-      fetchData().then((ps = []) =>
-        ps
-          .filter(
-            (p) =>
-              ids.includes(p.num) ||
-              ids.includes(p.name) ||
-              ids.includes(p.alias)
-          )
-          .reduce((acc, it) => ({ ...acc, [it.alias]: it }), {})
-      )
-  });
 
   const title = 'Nuzlocke Tracker';
   const subtitle = 'Track encounters, analyse your team, be prepared';
@@ -50,22 +20,7 @@
 
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="dns-prefetch" href="https://img.nuzlocke.app" crossorigin />
-
-  {#if !dev && browser}
-    <script
-      async
-      defer
-      data-website-id="dae73bab-b128-46a6-93e1-46ebc3da783c"
-      src="https://nuzlocke-analytics.vercel.app/umami.js">
-    </script>
-  {/if}
 </svelte:head>
-
-{#if ['/game', '/box'].includes(path)}
-  <GameHeading />
-{:else}
-  <NavHeading />
-{/if}
 
 <Modal
   closeButton={false}
@@ -77,7 +32,6 @@
 </Modal>
 
 <CookieBanner />
-
 <Footer />
 
 <style global lang="postcss">
