@@ -1,7 +1,8 @@
 import Routes from '$lib/data/routes.json';
 import Pokemon from '../../../pokemon.json/_data.js';
 
-const normalise = id => id.replace(/-/g, '')
+import { normalise } from '$lib/utils/string'
+
 const PokemonMap = Pokemon.reduce((acc, it) => ({
     ...acc,
     [normalise(it.alias)]: it

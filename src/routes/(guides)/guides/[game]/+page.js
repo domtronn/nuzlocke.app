@@ -1,6 +1,8 @@
 import Games from '$lib/data/games.json'
 import Themes from '$lib/data/theme.json'
 
+import { normalise } from '$lib/utils/string'
+
 export const prerender = true;
 
 export async function load ({ params, url, fetch }) {
@@ -30,7 +32,6 @@ export async function load ({ params, url, fetch }) {
     fetchJson(`/league/${game}.grass.json`),
   ])
 
-  const normalise = (id) => id.replace(/-/g, '')
   const findPokemon = id => pokemon.find(p =>
     normalise(p.alias) === normalise(id) ||
       normalise(p.sprite) === normalise(id)

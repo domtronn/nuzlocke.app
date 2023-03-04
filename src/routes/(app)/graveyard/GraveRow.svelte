@@ -1,0 +1,19 @@
+<script>
+  export let i, maxRows
+</script>
+
+<div
+  class=text-center
+  style='--scale: {Math.min(1.8, (Math.round((i * i) / 2) + 10) / 10)}; --translate: {(maxRows - i) * 10}px; --margin: {i}0px;'
+  >
+  <slot />
+</div>
+
+<style>
+  @media (min-width: theme('screens.sm')) {
+    div {
+      transform: scale(var(--scale)) translateY(var(--translate));
+      margin-top: var(--margin);
+    }
+  }
+</style>
