@@ -95,7 +95,7 @@
     </Button>
     <div>
       <Tooltip>Generate a game with pre-randomized encounters, designed for games like Scarlet & Violet with overworld only encounters</Tooltip>
-      <Button rounded disabled={disabled} on:click={handleGenGame}>
+      <Button className='w-full md:w-auto' rounded disabled={disabled} on:click={handleGenGame}>
         Randomize
         <Icon inline=true icon={Dice} class='inline' />
       </Button>
