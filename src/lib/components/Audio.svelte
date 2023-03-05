@@ -2,8 +2,15 @@
   export let src
 
   let audio
-  const play = _ => audio.play()
-  const oninteraction = _ => play()
+  let played = false
+
+  const oninteraction = async _ => {
+    if (played) return
+    try {
+      await audio.play()
+      played = true
+    } catch (e) {}
+  }
 </script>
 
 <svelte:window on:mousemove={oninteraction} />

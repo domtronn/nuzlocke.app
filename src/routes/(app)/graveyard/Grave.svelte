@@ -1,14 +1,14 @@
 <script>
-  export let pokemon, nickname = '', scale = 1
-  import { capitalise } from '$lib/utils/string'
+  export let pokemon, nickname = ''
 
-  console.log(pokemon)
+  import { capitalise } from '$lib/utils/string'
+  import { IMG } from '$utils/rewrites'
 
   const graveid = ((nickname || pokemon).length % 7) + 1
 </script>
 
 <div class='grave relative w-32 h-48 mt-16 md:-mt-10 mx-auto transform scale-150 md:scale-100'>
-  <img class='tombstone tombstone--{graveid}' src='/graves/grave{graveid}.webp' />
+  <img class='tombstone tombstone--{graveid}' src='{IMG}/graves/grave{graveid}.webp' />
   <img class=pkmn src='/assets/sprite/{pokemon}.png' />
   <span>
     {#if nickname}
