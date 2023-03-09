@@ -1,15 +1,27 @@
+import { error } from '@sveltejs/kit'
+import { toSlug } from '$lib/utils/string'
+
 import Games from '$lib/data/games.json'
 import Themes from '$lib/data/theme.json'
 
-export const prerender = true;
+export const csr = true;
 
 export async function load ({ params, url, fetch }) {
   const { game } = params
+  const gameCfg = Object
+        .values(Games)
+        .find(g => toSlug(g.title) === game)
+
+  if (!gameCfg) {
+    throw error(404, {
+      message: 'Not found'
+    })
+  }
 
   const links = Object
-        .entries(Games)
-        .filter(([id]) => id !== game)
-        .map(([id, g]) => ({ ...g, href: `/guides/${id}` }))
+        .values(Games)
+        .filter((cfg) => toSlug(cfg.title) !== game)
+        .map((g) => ({ ...g, href: `/guides/${toSlug(g.title)}` }))
         .reduce((acc, g) => ({
           ...acc,
           [g.gen]: (acc[g.gen] || []).concat(g)
@@ -24,10 +36,10 @@ export async function load ({ params, url, fetch }) {
   const fetchJson = uri => fetch(uri).then(res => res.json())
   const [pokemon, route, fire, water, grass] = await Promise.all([
     fetchJson(`/api/pokemon.json`),
-    fetchJson(`/api/route/${game}.json`),
-    fetchJson(`/league/${game}.fire.json`),
-    fetchJson(`/league/${game}.water.json`),
-    fetchJson(`/league/${game}.grass.json`),
+    fetchJson(`/api/route/${gameCfg.pid}.json`),
+    fetchJson(`/league/${gameCfg.pid}.fire.json`),
+    fetchJson(`/league/${gameCfg.pid}.water.json`),
+    fetchJson(`/league/${gameCfg.pid}.grass.json`),
   ])
 
   const normalise = (id) => id.replace(/-/g, '')
@@ -36,7 +48,7 @@ export async function load ({ params, url, fetch }) {
       normalise(p.sprite) === normalise(id)
   )
 
-  const gameObj = { ...Games[game], theme: Themes[game] }
+  const gameObj = { ...Games[gameCfg.pid], theme: Themes[gameCfg.pid] }
 
   const routes = route.filter(r => r.type === 'route')
   const encounterMap = routes

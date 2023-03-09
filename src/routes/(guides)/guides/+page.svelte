@@ -3,6 +3,8 @@
   import Themes from '$data/theme.json'
   import { Picture } from '$c/core'
   import { Hero } from '$c/Guide'
+
+  import { toSlug } from '$lib/utils/string'
   
   const title = `Nuzlocke Tracker | Pokémon Nuzlocke Guides`
   const description = `Find guides to Nuzlocking every Pokémon game from Generation 1 to 8 as well as some of the most popular Rom Hacks.`
@@ -31,7 +33,7 @@
     <a
       title='{title} Guide'
       style='--col1:{Themes[pid][0]};--col2:{Themes[pid][1]}'
-      href='/guides/{pid}' 
+      href='/guides/{toSlug(title)}' 
     >
       <div>
         <div>
