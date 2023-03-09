@@ -18,6 +18,173 @@
       "destination": "https://cdn.jsdelivr.net/gh/schmich/instascan-builds@master/instascan.min.js"
     }
   ],
+  "redirects": [
+    {
+      "source": "/guide/vi",
+      "destination": "/guide/violet",
+      "permanent": true
+    },
+    {
+      "source": "/guide/sc",
+      "destination": "/guide/scarlet",
+      "permanent": true
+    },
+    {
+      "source": "/guide/sw",
+      "destination": "/guide/sword",
+      "permanent": true
+    },
+    {
+      "source": "/guide/sh",
+      "destination": "/guide/shield",
+      "permanent": true
+    },
+    {
+      "source": "/guide/usun",
+      "destination": "/guide/ultra-sun",
+      "permanent": true
+    },
+    {
+      "source": "/guide/umoon",
+      "destination": "/guide/ultra-moon",
+      "permanent": true
+    },
+    {
+      "source": "/guide/bl2",
+      "destination": "/guide/black-2",
+      "permanent": true
+    },
+    {
+      "source": "/guide/wh2",
+      "destination": "/guide/white-2",
+      "permanent": true
+    },
+    {
+      "source": "/guide/bl2c",
+      "destination": "/guide/black-2-challenge",
+      "permanent": true
+    },
+    {
+      "source": "/guide/wh2c",
+      "destination": "/guide/white-2-challenge",
+      "permanent": true
+    },
+    {
+      "source": "/guide/bl",
+      "destination": "/guide/black",
+      "permanent": true
+    },
+    {
+      "source": "/guide/wh",
+      "destination": "/guide/white",
+      "permanent": true
+    },
+    {
+      "source": "/guide/bd",
+      "destination": "/guide/brilliant-diamond",
+      "permanent": true
+    },
+    {
+      "source": "/guide/sp",
+      "destination": "/guide/shining-pearl",
+      "permanent": true
+    },
+    {
+      "source": "/guide/radred",
+      "destination": "/guide/radical-red",
+      "permanent": true
+    },
+    {
+      "source": "/guide/renplat",
+      "destination": "/guide/renegade-platinum",
+      "permanent": true
+    },
+    {
+      "source": "/guide/pt",
+      "destination": "/guide/platinum",
+      "permanent": true
+    },
+    {
+      "source": "/guide/d",
+      "destination": "/guide/diamond",
+      "permanent": true
+    },
+    {
+      "source": "/guide/p",
+      "destination": "/guide/pearl",
+      "permanent": true
+    },
+    {
+      "source": "/guide/or",
+      "destination": "/guide/omega-ruby",
+      "permanent": true
+    },
+    {
+      "source": "/guide/as",
+      "destination": "/guide/alpha-sapphire",
+      "permanent": true
+    },
+    {
+      "source": "/guide/em",
+      "destination": "/guide/emerald",
+      "permanent": true
+    },
+    {
+      "source": "/guide/incem",
+      "destination": "/guide/inclement-emerald",
+      "permanent": true
+    },
+    {
+      "source": "/guide/saph",
+      "destination": "/guide/sapphire",
+      "permanent": true
+    },
+    {
+      "source": "/guide/stormsilv",
+      "destination": "/guide/storm-silver",
+      "permanent": true
+    },
+    {
+      "source": "/guide/sacredgold",
+      "destination": "/guide/sacred-gold",
+      "permanent": true
+    },
+    {
+      "source": "/guide/hg",
+      "destination": "/guide/heart-gold",
+      "permanent": true
+    },
+    {
+      "source": "/guide/ss",
+      "destination": "/guide/soul-silver",
+      "permanent": true
+    },
+    {
+      "source": "/guide/silv",
+      "destination": "/guide/silver",
+      "permanent": true
+    },
+    {
+      "source": "/guide/crys",
+      "destination": "/guide/crystal",
+      "permanent": true
+    },
+    {
+      "source": "/guide/fr",
+      "destination": "/guide/fire-red",
+      "permanent": true
+    },
+    {
+      "source": "/guide/lg",
+      "destination": "/guide/leaf-green",
+      "permanent": true
+    },
+    {
+      "source": "/guide/yel",
+      "destination": "/guide/yellow",
+      "permanent": true
+    }
+  ],
   "headers": [
     {
       "source": "/(.*)",
