@@ -63,6 +63,7 @@
     status = pkmn.status ? NuzlockeStates[pkmn.status] : null
     nature = pkmn.nature ? NaturesMap[pkmn.nature] : null
     hidden = pkmn.hidden
+    nickname = pkmn.nickname
     if (pkmn.pokemon)
       getPkmn(pkmn.pokemon)
       .then(p => {
