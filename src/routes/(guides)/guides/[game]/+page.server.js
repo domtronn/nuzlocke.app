@@ -1,7 +1,8 @@
+import { error } from '@sveltejs/kit'
+import { toSlug } from '$lib/utils/string'
+
 import Games from '$lib/data/games.json'
 import Themes from '$lib/data/theme.json'
-
-import { toSlug } from '$lib/utils/string'
 
 export const csr = true;
 
