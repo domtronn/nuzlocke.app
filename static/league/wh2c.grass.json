@@ -160,10 +160,10 @@
             "effect": "Lowers the target's Defense by one stage."
           },
           {
+            "power": 40,
             "type": "normal",
-            "damage_class": "status",
-            "name": "Growl",
-            "effect": "Lowers the target's Attack by one stage."
+            "damage_class": "physical",
+            "name": "Tackle"
           }
         ],
         "ability": {

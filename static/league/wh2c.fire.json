@@ -160,10 +160,10 @@
             "effect": "Lowers the target's Defense by one stage."
           },
           {
+            "power": 40,
             "type": "normal",
-            "damage_class": "status",
-            "name": "Growl",
-            "effect": "Lowers the target's Attack by one stage."
+            "damage_class": "physical",
+            "name": "Tackle"
           }
         ],
         "ability": {
@@ -2033,7 +2033,7 @@
         }
       },
       {
-        "name": "dewott",
+        "name": "samurott",
         "level": "41",
         "moves": [
           {
@@ -2075,17 +2075,17 @@
           "effect": "Held: Water-Type moves from holder do 20% more damage."
         },
         "starter": "fire",
-        "sprite": "502",
+        "sprite": "503",
         "types": [
           "water"
         ],
         "stats": {
-          "hp": 75,
-          "atk": 75,
-          "def": 60,
-          "spa": 83,
-          "spd": 60,
-          "spe": 60
+          "hp": 95,
+          "atk": 100,
+          "def": 85,
+          "spa": 108,
+          "spd": 70,
+          "spe": 70
         }
       }
     ]
