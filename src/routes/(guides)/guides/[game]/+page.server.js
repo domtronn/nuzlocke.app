@@ -11,6 +11,12 @@ export async function load ({ params, url, fetch }) {
         .values(Games)
         .find(g => toSlug(g.title) === game)
 
+  if (!gameCfg) {
+    throw error(404, {
+      message: 'Not found'
+    })
+  }
+
   const links = Object
         .values(Games)
         .filter((cfg) => toSlug(cfg.title) !== game)
