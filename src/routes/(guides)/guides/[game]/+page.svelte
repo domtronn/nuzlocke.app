@@ -33,7 +33,7 @@
     "author": "Nuzlocke Tracker",
     "genre": "Pokémon",
     "keywords": `pokemon nuzlocke ${game.title} encounters boss battles fights`,
-    "url": `https://nuzlocke.app/guides/${game.pid}`,
+    "url": `https://nuzlocke.app/${path}`,
     "datePublished": "2022-01-07",
     "dateCreated": "2022-01-07",
     "dateModified": "2022-01-07",
