@@ -1677,7 +1677,7 @@
         }
       },
       {
-        "name": "dewott",
+        "name": "samurott",
         "level": "41",
         "moves": [
           {
@@ -1719,17 +1719,17 @@
           "effect": "Held: Water-Type moves from holder do 20% more damage."
         },
         "starter": "fire",
-        "sprite": "502",
+        "sprite": "503",
         "types": [
           "water"
         ],
         "stats": {
-          "hp": 75,
-          "atk": 75,
-          "def": 60,
-          "spa": 83,
-          "spd": 60,
-          "spe": 60
+          "hp": 95,
+          "atk": 100,
+          "def": 85,
+          "spa": 108,
+          "spd": 70,
+          "spe": 70
         }
       }
     ]

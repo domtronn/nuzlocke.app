@@ -1362,7 +1362,56 @@
           "spe": 35
         }
       },
-      null
+      {
+        "name": "combusken",
+        "level": "20",
+        "moves": [
+          {
+            "type": "normal",
+            "damage_class": "status",
+            "name": "Focus Energy",
+            "effect": "Increases the user's chance to score a critical hit."
+          },
+          {
+            "power": 35,
+            "type": "flying",
+            "damage_class": "physical",
+            "name": "Peck"
+          },
+          {
+            "power": 30,
+            "type": "fighting",
+            "damage_class": "physical",
+            "name": "Double Kick",
+            "effect": "Hits twice in one turn."
+          },
+          {
+            "power": 40,
+            "type": "fire",
+            "damage_class": "special",
+            "name": "Ember",
+            "effect": "Has a 10% chance to burn the target."
+          }
+        ],
+        "ability": {
+          "name": "Blaze",
+          "effect": "Strengthens fire moves to inflict 1.5× damage at 1/3 max HP or less."
+        },
+        "starter": "grass",
+        "sprite": "256",
+        "types": [
+          "fire",
+          "fighting"
+        ],
+        "stats": {
+          "hp": 60,
+          "atk": 85,
+          "def": 60,
+          "spa": 85,
+          "spd": 60,
+          "spe": 55
+        }
+      }
     ]
   },
   "w1": {
@@ -1407,8 +1456,7 @@
         },
         "sprite": "280",
         "types": [
-          "psychic",
-          "fairy"
+          "psychic"
         ],
         "stats": {
           "hp": 28,
@@ -2831,8 +2879,7 @@
         },
         "sprite": "282",
         "types": [
-          "psychic",
-          "fairy"
+          "psychic"
         ],
         "stats": {
           "hp": 68,

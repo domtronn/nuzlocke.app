@@ -1,22 +1,23 @@
 import games from '$lib/data/games.json';
 import patches from '$lib/data/patches.json';
 
+import { LegacyTypeMap } from '$lib/data/types'
 import Pokemon, { filterdata, sumObj } from '../../pokemon.json/_data.js';
+
 const base = filterdata(Pokemon);
 
-export async function GET({ params }) {
-  const game = games[params.game];
-  const { pokemon } = patches[params.game] || {};
+const patchTypes = (pkmn, typeMap) => {
+  if (!typeMap) return pkmn
+  return pkmn.map((p) => {
+    const patch = typeMap[p.alias] || typeMap[p.sprite] || {}
+    const types = patch.types || p.types
+    return { ...p, types }
+  })
+}
 
-  if (!game) return { status: 404 };
-  if (!game.patched)
-    return new Response('', {
-      status: 301,
-      headers: { Location: '/api/pokemon.json' }
-    });
-
-  const items = base.map((p) => {
-    const patch = pokemon[p.alias] || pokemon[p.sprite] || {};
+const patchPokemon = (pkmn, patches) => {
+  return pkmn.map((p) => {
+    const patch = patches[p.alias] || patches[p.sprite] || {};
     const baseStats = {
       ...p.baseStats,
       ...(patch.stats || {})
@@ -31,6 +32,22 @@ export async function GET({ params }) {
       total
     };
   });
+}
+
+export async function GET({ params }) {
+  const game = games[params.game];
+  const { pokemon } = patches[params.game] || {};
+
+  if (!game) return new Response('', { status: 404 });
+  if (!game.patched && !game.filter)
+    return new Response('', {
+      status: 301,
+      headers: { Location: '/api/pokemon.json' }
+    });
+
+  let items = base
+  if (game.filter) items = patchTypes(items, LegacyTypeMap[game.filter])
+  if (game.patched) items = patchPokemon(items, pokemon)
 
   return new Response(JSON.stringify(items), {
     headers: {
