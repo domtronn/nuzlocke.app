@@ -1,6 +1,6 @@
 <script>
 
-  export let sprite, fallback, name, types, level = '', moves, maxStat, held = '', ability = '', stats, nature = undefined
+  export let sprite, fallback, name, types, tera, level = '', moves, maxStat, held = '', ability = '', stats, nature = undefined
 
   import { capitalise } from '$lib/utils/string'
 
@@ -99,6 +99,9 @@
       {#each types as t}
         <TypeBadge type={t} />
       {/each}
+      {#if tera}
+        <TypeBadge tera type={tera} />
+      {/if}
     </div>
   </div>
 
