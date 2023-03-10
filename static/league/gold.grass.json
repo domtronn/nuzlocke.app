@@ -22,7 +22,7 @@
             "effect": "Has a 100% chance to lower the target's accuracy by one stage."
           }
         ],
-        "sprite": "16.png",
+        "sprite": "16",
         "types": [
           "normal",
           "flying"
@@ -61,7 +61,7 @@
             "effect": "Inflicts regular damage and can hit Pokémon in the air."
           }
         ],
-        "sprite": "17.png",
+        "sprite": "17",
         "types": [
           "normal",
           "flying"
@@ -105,7 +105,7 @@
             "effect": "Raises the user's Defense by one stage."
           }
         ],
-        "sprite": "11.png",
+        "sprite": "11",
         "types": [
           "bug"
         ],
@@ -142,7 +142,7 @@
             "effect": "Raises the user's Defense by one stage."
           }
         ],
-        "sprite": "14.png",
+        "sprite": "14",
         "types": [
           "bug",
           "poison"
@@ -181,7 +181,7 @@
             "effect": "Lowers the target's Defense by one stage."
           }
         ],
-        "sprite": "123.png",
+        "sprite": "123",
         "types": [
           "bug",
           "flying"
@@ -232,7 +232,7 @@
             "effect": "Randomly selects and uses any move in the game."
           }
         ],
-        "sprite": "35.png",
+        "sprite": "35",
         "types": [
           "fairy"
         ],
@@ -276,7 +276,7 @@
             "effect": "Power doubles every turn this move is used in succession after the first, resetting after five turns."
           }
         ],
-        "sprite": "241.png",
+        "sprite": "241",
         "types": [
           "normal"
         ],
@@ -326,7 +326,7 @@
             "effect": "Ghosts pay half their max HP to hurt the target every turn.  Others decrease Speed but raise Attack and Defense."
           }
         ],
-        "sprite": "92.png",
+        "sprite": "92",
         "types": [
           "ghost",
           "poison"
@@ -369,7 +369,7 @@
             "effect": "Inflicts damage equal to the user's level."
           }
         ],
-        "sprite": "93.png",
+        "sprite": "93",
         "types": [
           "ghost",
           "poison"
@@ -412,7 +412,7 @@
             "effect": "Inflicts damage equal to the user's level."
           }
         ],
-        "sprite": "93.png",
+        "sprite": "93",
         "types": [
           "ghost",
           "poison"
@@ -457,7 +457,7 @@
             "effect": "Only works on sleeping Pokémon.  Drains half the damage inflicted to heal the user."
           }
         ],
-        "sprite": "94.png",
+        "sprite": "94",
         "types": [
           "ghost",
           "poison"
@@ -510,7 +510,7 @@
             "effect": "Hits 2-5 times in one turn."
           }
         ],
-        "sprite": "57.png",
+        "sprite": "57",
         "types": [
           "fighting"
         ],
@@ -554,7 +554,7 @@
             "effect": "Has a 100% chance to confuse the target."
           }
         ],
-        "sprite": "62.png",
+        "sprite": "62",
         "types": [
           "water",
           "fighting"
@@ -605,7 +605,7 @@
             "effect": "Paralyzes the target."
           }
         ],
-        "sprite": "81.png",
+        "sprite": "81",
         "types": [
           "electric",
           "steel"
@@ -649,7 +649,7 @@
             "effect": "Has a 30% chance to lower the target's Defense by one stage."
           }
         ],
-        "sprite": "208.png",
+        "sprite": "208",
         "types": [
           "steel",
           "ground"
@@ -693,7 +693,7 @@
             "effect": "Paralyzes the target."
           }
         ],
-        "sprite": "81.png",
+        "sprite": "81",
         "types": [
           "electric",
           "steel"
@@ -746,7 +746,7 @@
             "effect": "User sleeps for two turns, completely healing itself."
           }
         ],
-        "sprite": "86.png",
+        "sprite": "86",
         "types": [
           "water"
         ],
@@ -791,7 +791,7 @@
             "effect": "User sleeps for two turns, completely healing itself."
           }
         ],
-        "sprite": "87.png",
+        "sprite": "87",
         "types": [
           "water",
           "ice"
@@ -837,7 +837,7 @@
             "effect": "Has a 10% chance to freeze the target."
           }
         ],
-        "sprite": "221.png",
+        "sprite": "221",
         "types": [
           "ice",
           "ground"
@@ -889,7 +889,7 @@
             "effect": "Has a 30% chance to paralyze the target."
           }
         ],
-        "sprite": "148.png",
+        "sprite": "148",
         "types": [
           "dragon"
         ],
@@ -933,7 +933,7 @@
             "effect": "Has a 30% chance to paralyze the target."
           }
         ],
-        "sprite": "148.png",
+        "sprite": "148",
         "types": [
           "dragon"
         ],
@@ -977,7 +977,7 @@
             "effect": "Has a 30% chance to paralyze the target."
           }
         ],
-        "sprite": "148.png",
+        "sprite": "148",
         "types": [
           "dragon"
         ],
@@ -1022,7 +1022,7 @@
             "effect": "Lowers the target's accuracy by one stage."
           }
         ],
-        "sprite": "230.png",
+        "sprite": "230",
         "types": [
           "water",
           "dragon"
@@ -1061,7 +1061,7 @@
           }
         ],
         "starter": "grass",
-        "sprite": "155.png",
+        "sprite": "155",
         "types": [
           "fire"
         ],
@@ -1105,7 +1105,7 @@
             "effect": "Puts the target to sleep."
           }
         ],
-        "sprite": "92.png",
+        "sprite": "92",
         "types": [
           "ghost",
           "poison"
@@ -1144,7 +1144,7 @@
             "effect": "Has a 30% chance to make the target flinch."
           }
         ],
-        "sprite": "41.png",
+        "sprite": "41",
         "types": [
           "poison",
           "flying"
@@ -1189,7 +1189,7 @@
           }
         ],
         "starter": "grass",
-        "sprite": "156.png",
+        "sprite": "156",
         "types": [
           "fire"
         ],
@@ -1200,50 +1200,6 @@
           "spa": 80,
           "spd": 65,
           "spe": 80
-        }
-      },
-      {
-        "name": "bayleef",
-        "level": "16",
-        "moves": [
-          {
-            "type": "normal",
-            "damage_class": "status",
-            "name": "Growl",
-            "effect": "Lowers the target's Attack by one stage."
-          },
-          {
-            "type": "poison",
-            "damage_class": "status",
-            "name": "Poison Powder",
-            "effect": "Poisons the target."
-          },
-          {
-            "type": "psychic",
-            "damage_class": "status",
-            "name": "Reflect",
-            "effect": "Reduces damage from physical attacks by half."
-          },
-          {
-            "power": 55,
-            "type": "grass",
-            "damage_class": "physical",
-            "name": "Razor Leaf",
-            "effect": "Has an increased chance for a critical hit."
-          }
-        ],
-        "starter": "grass",
-        "sprite": "153.png",
-        "types": [
-          "grass"
-        ],
-        "stats": {
-          "hp": 60,
-          "atk": 62,
-          "def": 80,
-          "spa": 63,
-          "spd": 80,
-          "spe": 60
         }
       }
     ]
@@ -1283,7 +1239,7 @@
             "effect": "Ghosts pay half their max HP to hurt the target every turn.  Others decrease Speed but raise Attack and Defense."
           }
         ],
-        "sprite": "93.png",
+        "sprite": "93",
         "types": [
           "ghost",
           "poison"
@@ -1327,7 +1283,7 @@
             "name": "Tackle"
           }
         ],
-        "sprite": "81.png",
+        "sprite": "81",
         "types": [
           "electric",
           "steel"
@@ -1372,7 +1328,7 @@
             "effect": "Confuses the target."
           }
         ],
-        "sprite": "41.png",
+        "sprite": "41",
         "types": [
           "poison",
           "flying"
@@ -1417,7 +1373,7 @@
           }
         ],
         "starter": "grass",
-        "sprite": "156.png",
+        "sprite": "156",
         "types": [
           "fire"
         ],
@@ -1428,50 +1384,6 @@
           "spa": 80,
           "spd": 65,
           "spe": 80
-        }
-      },
-      {
-        "name": "bayleef",
-        "level": "22",
-        "moves": [
-          {
-            "type": "normal",
-            "damage_class": "status",
-            "name": "Growl",
-            "effect": "Lowers the target's Attack by one stage."
-          },
-          {
-            "type": "poison",
-            "damage_class": "status",
-            "name": "Poison Powder",
-            "effect": "Poisons the target."
-          },
-          {
-            "type": "psychic",
-            "damage_class": "status",
-            "name": "Reflect",
-            "effect": "Reduces damage from physical attacks by half."
-          },
-          {
-            "power": 55,
-            "type": "grass",
-            "damage_class": "physical",
-            "name": "Razor Leaf",
-            "effect": "Has an increased chance for a critical hit."
-          }
-        ],
-        "starter": "grass",
-        "sprite": "153.png",
-        "types": [
-          "grass"
-        ],
-        "stats": {
-          "hp": 60,
-          "atk": 62,
-          "def": 80,
-          "spa": 63,
-          "spd": 80,
-          "spe": 60
         }
       }
     ]
@@ -1512,7 +1424,7 @@
             "effect": "Only works on sleeping Pokémon.  Drains half the damage inflicted to heal the user."
           }
         ],
-        "sprite": "96.png",
+        "sprite": "96",
         "types": [
           "psychic"
         ],
@@ -1555,7 +1467,7 @@
             "effect": "Ghosts pay half their max HP to hurt the target every turn.  Others decrease Speed but raise Attack and Defense."
           }
         ],
-        "sprite": "93.png",
+        "sprite": "93",
         "types": [
           "ghost",
           "poison"
@@ -1600,7 +1512,7 @@
             "effect": "Has a 30% chance to paralyze the target."
           }
         ],
-        "sprite": "101.png",
+        "sprite": "101",
         "types": [
           "electric"
         ],
@@ -1651,7 +1563,7 @@
             "effect": "Confuses the target."
           }
         ],
-        "sprite": "41.png",
+        "sprite": "41",
         "types": [
           "poison",
           "flying"
@@ -1697,7 +1609,7 @@
             "effect": "User faints."
           }
         ],
-        "sprite": "109.png",
+        "sprite": "109",
         "types": [
           "poison"
         ],
@@ -1741,7 +1653,7 @@
             "effect": "Lowers the target's Defense by one stage."
           }
         ],
-        "sprite": "20.png",
+        "sprite": "20",
         "types": [
           "normal"
         ],
@@ -1793,7 +1705,7 @@
             "effect": "Has a 30% chance to make the target flinch."
           }
         ],
-        "sprite": "24.png",
+        "sprite": "24",
         "types": [
           "poison"
         ],
@@ -1837,7 +1749,7 @@
             "effect": "Puts the target to sleep."
           }
         ],
-        "sprite": "44.png",
+        "sprite": "44",
         "types": [
           "grass",
           "poison"
@@ -1875,7 +1787,7 @@
             "effect": "Has double power against, and can hit, Pokémon attempting to switch out."
           }
         ],
-        "sprite": "198.png",
+        "sprite": "198",
         "types": [
           "dark",
           "flying"
@@ -1927,7 +1839,7 @@
             "effect": "Drains half the damage inflicted to heal the user."
           }
         ],
-        "sprite": "42.png",
+        "sprite": "42",
         "types": [
           "poison",
           "flying"
@@ -1971,7 +1883,7 @@
             "effect": "Inflicts 20 points of damage."
           }
         ],
-        "sprite": "81.png",
+        "sprite": "81",
         "types": [
           "electric",
           "steel"
@@ -2016,7 +1928,7 @@
             "effect": "Prevents the target from leaving battle."
           }
         ],
-        "sprite": "93.png",
+        "sprite": "93",
         "types": [
           "ghost",
           "poison"
@@ -2061,7 +1973,7 @@
             "effect": "Lowers the target's Defense by two stages."
           }
         ],
-        "sprite": "215.png",
+        "sprite": "215",
         "types": [
           "dark",
           "ice"
@@ -2108,7 +2020,7 @@
           }
         ],
         "starter": "grass",
-        "sprite": "156.png",
+        "sprite": "156",
         "types": [
           "fire"
         ],
@@ -2118,51 +2030,6 @@
           "def": 58,
           "spa": 80,
           "spd": 65,
-          "spe": 80
-        }
-      },
-      {
-        "name": "meganium",
-        "level": "34",
-        "moves": [
-          {
-            "type": "psychic",
-            "damage_class": "status",
-            "name": "Reflect",
-            "effect": "Reduces damage from physical attacks by half."
-          },
-          {
-            "type": "poison",
-            "damage_class": "status",
-            "name": "Poison Powder",
-            "effect": "Poisons the target."
-          },
-          {
-            "power": 55,
-            "type": "grass",
-            "damage_class": "physical",
-            "name": "Razor Leaf",
-            "effect": "Has an increased chance for a critical hit."
-          },
-          {
-            "power": 85,
-            "type": "normal",
-            "damage_class": "physical",
-            "name": "Body Slam",
-            "effect": "Has a 30% chance to paralyze the target."
-          }
-        ],
-        "starter": "grass",
-        "sprite": "154.png",
-        "types": [
-          "grass"
-        ],
-        "stats": {
-          "hp": 80,
-          "atk": 82,
-          "def": 100,
-          "spa": 83,
-          "spd": 100,
           "spe": 80
         }
       }
@@ -2204,7 +2071,7 @@
             "name": "Tackle"
           }
         ],
-        "sprite": "109.png",
+        "sprite": "109",
         "types": [
           "poison"
         ],
@@ -2248,7 +2115,7 @@
             "name": "Tackle"
           }
         ],
-        "sprite": "109.png",
+        "sprite": "109",
         "types": [
           "poison"
         ],
@@ -2292,7 +2159,7 @@
             "name": "Tackle"
           }
         ],
-        "sprite": "109.png",
+        "sprite": "109",
         "types": [
           "poison"
         ],
@@ -2336,7 +2203,7 @@
             "name": "Tackle"
           }
         ],
-        "sprite": "109.png",
+        "sprite": "109",
         "types": [
           "poison"
         ],
@@ -2380,7 +2247,7 @@
             "name": "Tackle"
           }
         ],
-        "sprite": "109.png",
+        "sprite": "109",
         "types": [
           "poison"
         ],
@@ -2424,7 +2291,7 @@
             "effect": "User faints."
           }
         ],
-        "sprite": "110.png",
+        "sprite": "110",
         "types": [
           "poison"
         ],
@@ -2475,7 +2342,7 @@
             "effect": "Has a 30% chance to make the target flinch."
           }
         ],
-        "sprite": "42.png",
+        "sprite": "42",
         "types": [
           "poison",
           "flying"
@@ -2528,7 +2395,7 @@
             "effect": "Has a 30% chance to make the target flinch."
           }
         ],
-        "sprite": "24.png",
+        "sprite": "24",
         "types": [
           "poison"
         ],
@@ -2572,7 +2439,7 @@
             "effect": "Puts the target to sleep."
           }
         ],
-        "sprite": "44.png",
+        "sprite": "44",
         "types": [
           "grass",
           "poison"
@@ -2616,7 +2483,7 @@
             "effect": "Inflicts damage equal to the user's level."
           }
         ],
-        "sprite": "198.png",
+        "sprite": "198",
         "types": [
           "dark",
           "flying"
@@ -2670,7 +2537,7 @@
             "effect": "Immediately ends wild battles.  Forces trainers to switch Pokémon."
           }
         ],
-        "sprite": "228.png",
+        "sprite": "228",
         "types": [
           "dark",
           "fire"
@@ -2714,7 +2581,7 @@
             "effect": "Resets all Pokémon's stats, accuracy, and evasion."
           }
         ],
-        "sprite": "109.png",
+        "sprite": "109",
         "types": [
           "poison"
         ],
@@ -2760,7 +2627,7 @@
             "effect": "Has a 40% chance to poison the target."
           }
         ],
-        "sprite": "229.png",
+        "sprite": "229",
         "types": [
           "dark",
           "fire"
@@ -2813,7 +2680,7 @@
             "effect": "Power doubles every turn this move is used in succession after the first, maxing out after five turns."
           }
         ],
-        "sprite": "215.png",
+        "sprite": "215",
         "types": [
           "dark",
           "ice"
@@ -2858,7 +2725,7 @@
             "effect": "Drains half the damage inflicted to heal the user."
           }
         ],
-        "sprite": "42.png",
+        "sprite": "42",
         "types": [
           "poison",
           "flying"
@@ -2903,7 +2770,7 @@
             "effect": "Never misses."
           }
         ],
-        "sprite": "82.png",
+        "sprite": "82",
         "types": [
           "electric",
           "steel"
@@ -2947,7 +2814,7 @@
             "effect": "Ghosts pay half their max HP to hurt the target every turn.  Others decrease Speed but raise Attack and Defense."
           }
         ],
-        "sprite": "93.png",
+        "sprite": "93",
         "types": [
           "ghost",
           "poison"
@@ -2992,7 +2859,7 @@
             "effect": "Hits the target two turns later."
           }
         ],
-        "sprite": "64.png",
+        "sprite": "64",
         "types": [
           "psychic"
         ],
@@ -3038,7 +2905,7 @@
           }
         ],
         "starter": "grass",
-        "sprite": "157.png",
+        "sprite": "157",
         "types": [
           "fire"
         ],
@@ -3049,51 +2916,6 @@
           "spa": 109,
           "spd": 85,
           "spe": 100
-        }
-      },
-      {
-        "name": "meganium",
-        "level": "38",
-        "moves": [
-          {
-            "type": "psychic",
-            "damage_class": "status",
-            "name": "Reflect",
-            "effect": "Reduces damage from physical attacks by half."
-          },
-          {
-            "type": "poison",
-            "damage_class": "status",
-            "name": "Poison Powder",
-            "effect": "Poisons the target."
-          },
-          {
-            "power": 55,
-            "type": "grass",
-            "damage_class": "physical",
-            "name": "Razor Leaf",
-            "effect": "Has an increased chance for a critical hit."
-          },
-          {
-            "power": 85,
-            "type": "normal",
-            "damage_class": "physical",
-            "name": "Body Slam",
-            "effect": "Has a 30% chance to paralyze the target."
-          }
-        ],
-        "starter": "grass",
-        "sprite": "154.png",
-        "types": [
-          "grass"
-        ],
-        "stats": {
-          "hp": 80,
-          "atk": 82,
-          "def": 100,
-          "spa": 83,
-          "spd": 100,
-          "spe": 80
         }
       }
     ]
@@ -3135,7 +2957,7 @@
             "effect": "Confuses the target."
           }
         ],
-        "sprite": "178.png",
+        "sprite": "178",
         "types": [
           "psychic",
           "flying"
@@ -3179,7 +3001,7 @@
             "effect": "Seeds the target, stealing HP from it every turn."
           }
         ],
-        "sprite": "103.png",
+        "sprite": "103",
         "types": [
           "grass",
           "psychic"
@@ -3224,7 +3046,7 @@
             "effect": "Has a 30% chance to paralyze the target."
           }
         ],
-        "sprite": "80.png",
+        "sprite": "80",
         "types": [
           "water",
           "psychic"
@@ -3270,7 +3092,7 @@
             "effect": "Puts the target to sleep."
           }
         ],
-        "sprite": "124.png",
+        "sprite": "124",
         "types": [
           "ice",
           "psychic"
@@ -3316,7 +3138,7 @@
             "effect": "Confuses the target."
           }
         ],
-        "sprite": "178.png",
+        "sprite": "178",
         "types": [
           "psychic",
           "flying"
@@ -3367,7 +3189,7 @@
             "effect": "Drains half the damage inflicted to heal the user."
           }
         ],
-        "sprite": "168.png",
+        "sprite": "168",
         "types": [
           "bug",
           "poison"
@@ -3412,7 +3234,7 @@
             "effect": "Has a 10% chance to lower the target's Special Defense by one stage."
           }
         ],
-        "sprite": "49.png",
+        "sprite": "49",
         "types": [
           "bug",
           "poison"
@@ -3456,7 +3278,7 @@
             "effect": "Raises the user's Defense by two stages."
           }
         ],
-        "sprite": "89.png",
+        "sprite": "89",
         "types": [
           "poison"
         ],
@@ -3501,7 +3323,7 @@
             "effect": "User faints."
           }
         ],
-        "sprite": "205.png",
+        "sprite": "205",
         "types": [
           "bug",
           "steel"
@@ -3545,7 +3367,7 @@
             "effect": "Badly poisons the target, inflicting more damage every turn."
           }
         ],
-        "sprite": "169.png",
+        "sprite": "169",
         "types": [
           "poison",
           "flying"
@@ -3599,7 +3421,7 @@
             "effect": "Has double power against, and can hit, Pokémon attempting to switch out."
           }
         ],
-        "sprite": "237.png",
+        "sprite": "237",
         "types": [
           "fighting"
         ],
@@ -3645,7 +3467,7 @@
             "name": "Mach Punch"
           }
         ],
-        "sprite": "107.png",
+        "sprite": "107",
         "types": [
           "fighting"
         ],
@@ -3689,7 +3511,7 @@
             "effect": "Raises the target's Attack by two stages and confuses the target."
           }
         ],
-        "sprite": "106.png",
+        "sprite": "106",
         "types": [
           "fighting"
         ],
@@ -3734,7 +3556,7 @@
             "effect": "Prevents the target from fleeing and inflicts damage for 2-5 turns."
           }
         ],
-        "sprite": "95.png",
+        "sprite": "95",
         "types": [
           "rock",
           "ground"
@@ -3781,7 +3603,7 @@
             "effect": "Never misses."
           }
         ],
-        "sprite": "68.png",
+        "sprite": "68",
         "types": [
           "fighting"
         ],
@@ -3831,7 +3653,7 @@
             "effect": "Lowers the target's accuracy by one stage."
           }
         ],
-        "sprite": "197.png",
+        "sprite": "197",
         "types": [
           "dark"
         ],
@@ -3875,7 +3697,7 @@
             "effect": "Heals the user by half its max HP.  Affected by weather."
           }
         ],
-        "sprite": "45.png",
+        "sprite": "45",
         "types": [
           "grass",
           "poison"
@@ -3919,7 +3741,7 @@
             "effect": "If the user faints this turn, the target automatically will, too."
           }
         ],
-        "sprite": "94.png",
+        "sprite": "94",
         "types": [
           "ghost",
           "poison"
@@ -3966,7 +3788,7 @@
             "name": "Quick Attack"
           }
         ],
-        "sprite": "198.png",
+        "sprite": "198",
         "types": [
           "dark",
           "flying"
@@ -4013,7 +3835,7 @@
             "effect": "Has double power against, and can hit, Pokémon attempting to switch out."
           }
         ],
-        "sprite": "229.png",
+        "sprite": "229",
         "types": [
           "dark",
           "fire"
@@ -4066,7 +3888,7 @@
             "effect": "User foregoes its next turn to recharge."
           }
         ],
-        "sprite": "130.png",
+        "sprite": "130",
         "types": [
           "water",
           "flying"
@@ -4112,7 +3934,7 @@
             "effect": "User foregoes its next turn to recharge."
           }
         ],
-        "sprite": "149.png",
+        "sprite": "149",
         "types": [
           "dragon",
           "flying"
@@ -4158,7 +3980,7 @@
             "effect": "User foregoes its next turn to recharge."
           }
         ],
-        "sprite": "6.png",
+        "sprite": "6",
         "types": [
           "fire",
           "flying"
@@ -4204,7 +4026,7 @@
             "effect": "User foregoes its next turn to recharge."
           }
         ],
-        "sprite": "142.png",
+        "sprite": "142",
         "types": [
           "rock",
           "flying"
@@ -4250,7 +4072,7 @@
             "effect": "User foregoes its next turn to recharge."
           }
         ],
-        "sprite": "149.png",
+        "sprite": "149",
         "types": [
           "dragon",
           "flying"
@@ -4296,7 +4118,7 @@
             "effect": "User foregoes its next turn to recharge."
           }
         ],
-        "sprite": "149.png",
+        "sprite": "149",
         "types": [
           "dragon",
           "flying"
@@ -4349,7 +4171,7 @@
             "name": "Quick Attack"
           }
         ],
-        "sprite": "26.png",
+        "sprite": "26",
         "types": [
           "electric"
         ],
@@ -4393,7 +4215,7 @@
             "effect": "User faints."
           }
         ],
-        "sprite": "101.png",
+        "sprite": "101",
         "types": [
           "electric"
         ],
@@ -4437,7 +4259,7 @@
             "effect": "User faints."
           }
         ],
-        "sprite": "101.png",
+        "sprite": "101",
         "types": [
           "electric"
         ],
@@ -4481,7 +4303,7 @@
             "effect": "Never misses."
           }
         ],
-        "sprite": "82.png",
+        "sprite": "82",
         "types": [
           "electric",
           "steel"
@@ -4527,7 +4349,7 @@
             "name": "Quick Attack"
           }
         ],
-        "sprite": "125.png",
+        "sprite": "125",
         "types": [
           "electric"
         ],
@@ -4579,7 +4401,7 @@
             "effect": "Has a 10% chance to lower the target's Special Defense by one stage."
           }
         ],
-        "sprite": "196.png",
+        "sprite": "196",
         "types": [
           "psychic"
         ],
@@ -4622,7 +4444,7 @@
             "effect": "Has a 10% chance to lower the target's Special Defense by one stage."
           }
         ],
-        "sprite": "122.png",
+        "sprite": "122",
         "types": [
           "psychic",
           "fairy"
@@ -4667,7 +4489,7 @@
             "effect": "Reduces damage from physical attacks by half."
           }
         ],
-        "sprite": "65.png",
+        "sprite": "65",
         "types": [
           "psychic"
         ],
@@ -4718,7 +4540,7 @@
             "effect": "Puts the target to sleep."
           }
         ],
-        "sprite": "114.png",
+        "sprite": "114",
         "types": [
           "grass"
         ],
@@ -4762,7 +4584,7 @@
             "effect": "Has an increased chance for a critical hit."
           }
         ],
-        "sprite": "71.png",
+        "sprite": "71",
         "types": [
           "grass",
           "poison"
@@ -4807,7 +4629,7 @@
             "effect": "Drains half the damage inflicted to heal the user."
           }
         ],
-        "sprite": "189.png",
+        "sprite": "189",
         "types": [
           "grass",
           "flying"
@@ -4852,7 +4674,7 @@
             "effect": "Heals the user by half its max HP.  Affected by weather."
           }
         ],
-        "sprite": "182.png",
+        "sprite": "182",
         "types": [
           "grass"
         ],
@@ -4903,7 +4725,7 @@
             "effect": "Discards the user's stat changes and copies the target's."
           }
         ],
-        "sprite": "55.png",
+        "sprite": "55",
         "types": [
           "water"
         ],
@@ -4947,7 +4769,7 @@
             "effect": "Inflicts regular damage and can hit Dig users."
           }
         ],
-        "sprite": "195.png",
+        "sprite": "195",
         "types": [
           "water",
           "ground"
@@ -4992,7 +4814,7 @@
             "effect": "Has a 10% chance to freeze the target."
           }
         ],
-        "sprite": "131.png",
+        "sprite": "131",
         "types": [
           "water",
           "ice"
@@ -5037,7 +4859,7 @@
             "effect": "Heals the user by half its max HP."
           }
         ],
-        "sprite": "121.png",
+        "sprite": "121",
         "types": [
           "water",
           "psychic"
@@ -5087,7 +4909,7 @@
             "effect": "Lowers the target's Defense by two stages."
           }
         ],
-        "sprite": "169.png",
+        "sprite": "169",
         "types": [
           "poison",
           "flying"
@@ -5133,7 +4955,7 @@
             "effect": "User faints."
           }
         ],
-        "sprite": "110.png",
+        "sprite": "110",
         "types": [
           "poison"
         ],
@@ -5178,7 +5000,7 @@
             "effect": "User faints."
           }
         ],
-        "sprite": "110.png",
+        "sprite": "110",
         "types": [
           "poison"
         ],
@@ -5221,7 +5043,7 @@
             "effect": "Lowers the target's Speed by two stages."
           }
         ],
-        "sprite": "168.png",
+        "sprite": "168",
         "types": [
           "bug",
           "poison"
@@ -5265,7 +5087,7 @@
             "effect": "Confuses the target."
           }
         ],
-        "sprite": "49.png",
+        "sprite": "49",
         "types": [
           "bug",
           "poison"
@@ -5318,7 +5140,7 @@
             "effect": "Inflicts regular damage and can hit Dig users."
           }
         ],
-        "sprite": "75.png",
+        "sprite": "75",
         "types": [
           "rock",
           "ground"
@@ -5363,7 +5185,7 @@
             "effect": "Causes a one-hit KO."
           }
         ],
-        "sprite": "111.png",
+        "sprite": "111",
         "types": [
           "ground",
           "rock"
@@ -5410,7 +5232,7 @@
             "effect": "Hits 2-5 times in one turn."
           }
         ],
-        "sprite": "139.png",
+        "sprite": "139",
         "types": [
           "rock",
           "water"
@@ -5457,7 +5279,7 @@
             "effect": "Drains half the damage inflicted to heal the user."
           }
         ],
-        "sprite": "141.png",
+        "sprite": "141",
         "types": [
           "rock",
           "water"
@@ -5507,7 +5329,7 @@
           "name": "Rock Head",
           "effect": "Protects against recoil damage."
         },
-        "sprite": "95.png",
+        "sprite": "95",
         "types": [
           "rock",
           "ground"
@@ -5560,7 +5382,7 @@
             "effect": "Power doubles every turn this move is used in succession after the first, maxing out after five turns."
           }
         ],
-        "sprite": "215.png",
+        "sprite": "215",
         "types": [
           "dark",
           "ice"
@@ -5605,7 +5427,7 @@
             "effect": "Drains half the damage inflicted to heal the user."
           }
         ],
-        "sprite": "42.png",
+        "sprite": "42",
         "types": [
           "poison",
           "flying"
@@ -5650,7 +5472,7 @@
             "effect": "Inflicts 20 points of damage."
           }
         ],
-        "sprite": "82.png",
+        "sprite": "82",
         "types": [
           "electric",
           "steel"
@@ -5694,7 +5516,7 @@
             "effect": "Ghosts pay half their max HP to hurt the target every turn.  Others decrease Speed but raise Attack and Defense."
           }
         ],
-        "sprite": "94.png",
+        "sprite": "94",
         "types": [
           "ghost",
           "poison"
@@ -5739,7 +5561,7 @@
             "effect": "Disables the target's last used move for 1-8 turns."
           }
         ],
-        "sprite": "65.png",
+        "sprite": "65",
         "types": [
           "psychic"
         ],
@@ -5785,7 +5607,7 @@
           }
         ],
         "starter": "grass",
-        "sprite": "157.png",
+        "sprite": "157",
         "types": [
           "fire"
         ],
@@ -5796,51 +5618,6 @@
           "spa": 109,
           "spd": 85,
           "spe": 100
-        }
-      },
-      {
-        "name": "meganium",
-        "level": "45",
-        "moves": [
-          {
-            "type": "psychic",
-            "damage_class": "status",
-            "name": "Light Screen",
-            "effect": "Reduces damage from special attacks by 50% for five turns."
-          },
-          {
-            "type": "poison",
-            "damage_class": "status",
-            "name": "Poison Powder",
-            "effect": "Poisons the target."
-          },
-          {
-            "power": 55,
-            "type": "grass",
-            "damage_class": "physical",
-            "name": "Razor Leaf",
-            "effect": "Has an increased chance for a critical hit."
-          },
-          {
-            "power": 85,
-            "type": "normal",
-            "damage_class": "physical",
-            "name": "Body Slam",
-            "effect": "Has a 30% chance to paralyze the target."
-          }
-        ],
-        "starter": "grass",
-        "sprite": "154.png",
-        "types": [
-          "grass"
-        ],
-        "stats": {
-          "hp": 80,
-          "atk": 82,
-          "def": 100,
-          "spa": 83,
-          "spd": 100,
-          "spe": 80
         }
       }
     ]
@@ -5882,7 +5659,7 @@
             "effect": "Has a 30% chance to make the target flinch."
           }
         ],
-        "sprite": "219.png",
+        "sprite": "219",
         "types": [
           "fire",
           "rock"
@@ -5927,7 +5704,7 @@
             "effect": "Confuses the target."
           }
         ],
-        "sprite": "126.png",
+        "sprite": "126",
         "types": [
           "fire"
         ],
@@ -5973,7 +5750,7 @@
             "effect": "Prevents the target from fleeing and inflicts damage for 2-5 turns."
           }
         ],
-        "sprite": "78.png",
+        "sprite": "78",
         "types": [
           "fire"
         ],
@@ -6024,7 +5801,7 @@
             "effect": "Uses the target's last used move."
           }
         ],
-        "sprite": "18.png",
+        "sprite": "18",
         "types": [
           "normal",
           "flying"
@@ -6070,7 +5847,7 @@
             "effect": "Inflicts regular damage and can hit Dig users."
           }
         ],
-        "sprite": "112.png",
+        "sprite": "112",
         "types": [
           "ground",
           "rock"
@@ -6114,7 +5891,7 @@
             "effect": "Reduces damage from physical attacks by half."
           }
         ],
-        "sprite": "65.png",
+        "sprite": "65",
         "types": [
           "psychic"
         ],
@@ -6158,7 +5935,7 @@
             "effect": "User foregoes its next turn to recharge."
           }
         ],
-        "sprite": "130.png",
+        "sprite": "130",
         "types": [
           "water",
           "flying"
@@ -6202,7 +5979,7 @@
             "effect": "Requires a turn to charge before attacking."
           }
         ],
-        "sprite": "103.png",
+        "sprite": "103",
         "types": [
           "grass",
           "psychic"
@@ -6249,7 +6026,7 @@
             "name": "Extreme Speed"
           }
         ],
-        "sprite": "59.png",
+        "sprite": "59",
         "types": [
           "fire"
         ],
@@ -6301,7 +6078,7 @@
             "effect": "Has a 30% chance to paralyze the target."
           }
         ],
-        "sprite": "25.png",
+        "sprite": "25",
         "types": [
           "electric"
         ],
@@ -6346,7 +6123,7 @@
             "effect": "Has a 10% chance to lower the target's Special Defense by one stage."
           }
         ],
-        "sprite": "196.png",
+        "sprite": "196",
         "types": [
           "psychic"
         ],
@@ -6390,7 +6167,7 @@
             "effect": "Has a 30% chance to paralyze the target."
           }
         ],
-        "sprite": "143.png",
+        "sprite": "143",
         "types": [
           "normal"
         ],
@@ -6434,7 +6211,7 @@
             "effect": "Requires a turn to charge before attacking."
           }
         ],
-        "sprite": "3.png",
+        "sprite": "3",
         "types": [
           "grass",
           "poison"
@@ -6480,7 +6257,7 @@
             "effect": "Prevents the target from fleeing and inflicts damage for 2-5 turns."
           }
         ],
-        "sprite": "6.png",
+        "sprite": "6",
         "types": [
           "fire",
           "flying"
@@ -6526,7 +6303,7 @@
             "effect": "Prevents the target from leaving battle and inflicts 1/16 its max HP in damage for 2-5 turns."
           }
         ],
-        "sprite": "9.png",
+        "sprite": "9",
         "types": [
           "water"
         ],
