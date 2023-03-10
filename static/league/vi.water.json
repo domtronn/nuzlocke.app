@@ -103,6 +103,7 @@
           "name": "Pickup",
           "effect": "Picks up other Pokémon's used and Flung held items.  May also pick up an item after battle."
         },
+        "tera": "bug",
         "sprite": "216",
         "types": [
           "normal"
@@ -219,6 +220,7 @@
           "name": "Sturdy",
           "effect": "Prevents being KOed from full HP, leaving 1 HP instead.  Protects against the one-hit KO moves regardless of HP."
         },
+        "tera": "grass",
         "sprite": "185",
         "types": [
           "rock"
@@ -385,6 +387,7 @@
           "name": "Levitate",
           "effect": "Evades ground moves."
         },
+        "tera": "electric",
         "sprite": "429",
         "types": [
           "ghost"
@@ -523,6 +526,7 @@
           "name": "Iron Fist",
           "effect": "Strengthens punch-based moves to 1.2× their power."
         },
+        "tera": "water",
         "sprite": "740",
         "types": [
           "fighting",
@@ -654,6 +658,7 @@
           "name": "Intimidate",
           "effect": "Lowers opponents' Attack one stage upon entering battle."
         },
+        "tera": "normal",
         "sprite": "398",
         "types": [
           "normal",
@@ -837,6 +842,7 @@
         "ability": {
           "name": "Punk Rock"
         },
+        "tera": "ghost",
         "sprite": "10184",
         "types": [
           "electric",
@@ -1018,6 +1024,7 @@
           "name": "Flower Veil",
           "effect": "Protects friendly grass Pokémon from having their stats lowered by other Pokémon."
         },
+        "tera": "psychic",
         "sprite": "671",
         "types": [
           "fairy"
@@ -1206,6 +1213,7 @@
           "name": "Natural Cure",
           "effect": "Cures any major status ailment upon switching out."
         },
+        "tera": "ice",
         "sprite": "334",
         "types": [
           "dragon",
@@ -1218,6 +1226,149 @@
           "spa": 70,
           "spd": 105,
           "spe": 80
+        }
+      }
+    ]
+  },
+  "r0": {
+    "name": "Nemona",
+    "speciality": "",
+    "img": {
+      "src": "/leaders/sv-nemona",
+      "author": "Kyledove",
+      "link": "https://www.deviantart.com/kyle-dove"
+    },
+    "pokemon": [
+      {
+        "name": "fuecoco",
+        "level": "5",
+        "moves": [
+          {
+            "power": 40,
+            "type": "normal",
+            "damage_class": "physical",
+            "name": "Tackle"
+          },
+          {
+            "type": "normal",
+            "damage_class": "status",
+            "name": "Leer",
+            "effect": "Lowers the target's Defense by one stage."
+          },
+          {
+            "power": 40,
+            "type": "fire",
+            "damage_class": "special",
+            "name": "Ember",
+            "effect": "Has a 10% chance to burn the target."
+          }
+        ],
+        "ability": {
+          "name": "Blaze",
+          "effect": "Strengthens fire moves to inflict 1.5× damage at 1/3 max HP or less."
+        },
+        "starter": "water",
+        "sprite": "909",
+        "types": [
+          "fire"
+        ],
+        "stats": {
+          "hp": 67,
+          "atk": 45,
+          "def": 59,
+          "spa": 63,
+          "spd": 40,
+          "spe": 36
+        }
+      }
+    ]
+  },
+  "r00": {
+    "name": "Nemona",
+    "speciality": "",
+    "img": {
+      "src": "/leaders/sv-nemona",
+      "author": "Kyledove",
+      "link": "https://www.deviantart.com/kyle-dove"
+    },
+    "pokemon": [
+      {
+        "name": "fuecoco",
+        "level": "8",
+        "moves": [
+          {
+            "power": 40,
+            "type": "normal",
+            "damage_class": "physical",
+            "name": "Tackle"
+          },
+          {
+            "type": "normal",
+            "damage_class": "status",
+            "name": "Leer",
+            "effect": "Lowers the target's Defense by one stage."
+          },
+          {
+            "power": 40,
+            "type": "fire",
+            "damage_class": "special",
+            "name": "Ember",
+            "effect": "Has a 10% chance to burn the target."
+          },
+          {
+            "power": 60,
+            "type": "normal",
+            "damage_class": "special",
+            "name": "Round",
+            "effect": "Has double power if it's used more than once per turn."
+          }
+        ],
+        "ability": {
+          "name": "Blaze",
+          "effect": "Strengthens fire moves to inflict 1.5× damage at 1/3 max HP or less."
+        },
+        "starter": "water",
+        "sprite": "909",
+        "types": [
+          "fire"
+        ],
+        "stats": {
+          "hp": 67,
+          "atk": 45,
+          "def": 59,
+          "spa": 63,
+          "spd": 40,
+          "spe": 36
+        }
+      },
+      {
+        "name": "pawmi",
+        "level": "9",
+        "moves": [
+          {
+            "power": 40,
+            "type": "electric",
+            "damage_class": "special",
+            "name": "Thunder Shock",
+            "effect": "Has a 10% chance to paralyze the target."
+          }
+        ],
+        "ability": {
+          "name": "Static",
+          "effect": "Has a 30% chance of paralyzing attacking Pokémon on contact."
+        },
+        "tera": "electric",
+        "sprite": "921",
+        "types": [
+          "electric"
+        ],
+        "stats": {
+          "hp": 45,
+          "atk": 50,
+          "def": 20,
+          "spa": 40,
+          "spd": 25,
+          "spe": 60
         }
       }
     ]
@@ -1626,6 +1777,7 @@
           "name": "Blaze",
           "effect": "Strengthens fire moves to inflict 1.5× damage at 1/3 max HP or less."
         },
+        "tera": "fire",
         "starter": "water",
         "sprite": "910",
         "types": [
@@ -2148,6 +2300,7 @@
           "name": "Blaze",
           "effect": "Strengthens fire moves to inflict 1.5× damage at 1/3 max HP or less."
         },
+        "tera": "fire",
         "starter": "water",
         "sprite": "911",
         "types": [
@@ -2343,6 +2496,7 @@
           "name": "Blaze",
           "effect": "Strengthens fire moves to inflict 1.5× damage at 1/3 max HP or less."
         },
+        "tera": "fire",
         "starter": "water",
         "sprite": "911",
         "types": [
@@ -3096,6 +3250,7 @@
           "name": "Water Absorb",
           "effect": "Absorbs water moves, healing for 1/4 max HP."
         },
+        "tera": "ground",
         "sprite": "980",
         "types": [
           "poison",
@@ -3354,6 +3509,7 @@
           "name": "Mold Breaker",
           "effect": "Bypasses targets' abilities if they could hinder or prevent a move."
         },
+        "tera": "steel",
         "sprite": "959",
         "types": [
           "fairy",
@@ -3616,6 +3772,7 @@
           "name": "Scrappy",
           "effect": "Lets the Pokémon's normal and fighting moves hit ghost Pokémon."
         },
+        "tera": "flying",
         "sprite": "973",
         "types": [
           "flying",
@@ -3863,6 +4020,7 @@
         "ability": {
           "name": "Thermal Exchange"
         },
+        "tera": "dragon",
         "sprite": "998",
         "types": [
           "dragon",
@@ -4167,6 +4325,7 @@
         "ability": {
           "name": "Toxic Debris"
         },
+        "tera": "rock",
         "sprite": "970",
         "types": [
           "rock",
@@ -5094,6 +5253,7 @@
           "name": "Blaze",
           "effect": "Strengthens fire moves to inflict 1.5× damage at 1/3 max HP or less."
         },
+        "tera": "fire",
         "starter": "water",
         "sprite": "911",
         "types": [
