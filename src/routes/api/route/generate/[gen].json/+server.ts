@@ -85,7 +85,7 @@ export async function GET({ params }) {
   return new Response(JSON.stringify(generateGame(Routes[gen])), {
     headers: {
       'Content-Type': 'application/json',
-      'Cache-Control': 's-maxage=1, stale-while-revalidate'
+      'Cache-Control': 'no-store'
     }
   });
 }
