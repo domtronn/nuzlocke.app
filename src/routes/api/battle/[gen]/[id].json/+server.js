@@ -4,6 +4,7 @@ import leaders from '$lib/data/league.json';
 import patches from '$lib/data/patches.json';
 
 import { map, compose, prop, path, pick, evolve } from 'ramda';
+import { LegacyTypeMap } from '$lib/data/types'
 
 const titleCase = (str) =>
   str
@@ -93,6 +94,7 @@ const toAbility = (ability, patches = {}) => {
 const toTypes = map(path(['type', 'name']));
 const toPokemon = (p, patches = {}) => {
   let patch = patches[p.name] || {};
+
   const [, sprite] = /\/sprites\/pokemon\/([0-9]+)/.exec(p?.sprites?.front_default) || []
 
   return nonnull({
@@ -119,6 +121,8 @@ export async function GET({ params, url }) {
   if (!game) return { status: 404 };
 
   const patch = patches[gen] || {};
+  const typePatch = LegacyTypeMap[game.filter] || {}
+
   const starter = url.searchParams.get('starter');
   const leader = path([game.lid || game.pid, id], leaders);
 
@@ -151,7 +155,10 @@ export async function GET({ params, url }) {
 
             return nonnull({
               ...p,
-              ...toPokemon(data, patch.pokemon || {}),
+              ...toPokemon(data, {
+                ...(typePatch || {}),
+                ...(patch.pokemon || {})
+              }),
               moves: toMoves(moves, patch.move || {}),
               held: held ? toHeld(held, patch.item || {}) : null,
               ability: ability ? toAbility(ability, patch.ability || {}) : null
