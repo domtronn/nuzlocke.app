@@ -135,12 +135,11 @@ export async function GET({ params, url }) {
         .map(async (p) => {
           try {
             const data = await P.getPokemonByName(p.name).catch((_) => p.name);
-            const held = await maybe(P.getItemByName, p.held).catch(
-              (_) => p.held
-            );
-            const ability = await maybe(P.getAbilityByName, p.ability).catch(
-              (_) => p.ability
-            );
+            const held = await maybe(P.getItemByName, p.held).catch((_) => p.held);
+
+            const ability = await maybe(P.getAbilityByName, p.ability).catch((_) => p.ability);
+            const abilities = await Promise.all(p.abilities.map(a => maybe(P.getAbilityByName, a).catch(_ => p.ability)))
+
             const moves = await Promise.all(
               p.moves.map((m) =>
                 P.getMoveByName(m).catch((e) => {
@@ -159,12 +158,40 @@ export async function GET({ params, url }) {
                 ...(typePatch || {}),
                 ...(patch.pokemon || {})
               }),
+              icon: p.sprite,
               moves: toMoves(moves, patch.move || {}),
               held: held ? toHeld(held, patch.item || {}) : null,
-              ability: ability ? toAbility(ability, patch.ability || {}) : null
+              ability: ability ? toAbility(ability, patch.ability || {}) : null,
+              abilities: abilities.length ? abilities.map(a => toAbility(a, patch.ability)): null
             });
           } catch (e) {
-            console.error('Error fetching', p.name);
+            console.error(`[${url}] Error fetching ${p.name}`);
+            // Verify pokemon fetch works
+            await P.getPokemonByName(p.name).catch((_) => console.error('E_GET_POKEMON: ' + p.name));
+            // Verify ability fetch & patch works
+            await maybe(P.getAbilityByName, p.ability).catch((_) => {
+              if (patch.ability[p.ability]) return
+              if (patch.ability[p.ability.name]) return
+              console.error('E_GET_ABILITY: ' + p.ability)
+            })
+
+            // Verify item fetch & patch works
+            await maybe(P.getItemByName, p.held).catch((_) => {
+              if (patch.item[p.held]) return
+              if (patch.item[p.held.name]) return
+              console.error('E_GET_ITEM: ' + p.held)
+            });
+
+            // Verify move fetch & patch works
+            await Promise.all(
+              p.moves.map((m) =>
+                P.getMoveByName(m).catch((e) => {
+                  if (patch.move[m]) return
+                  if (patch.move[m.name]) return
+                  console.error('E_GET_MOVE: ' + m)
+                })
+              )
+            )
           }
         })
     );
