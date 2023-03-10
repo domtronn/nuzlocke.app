@@ -98,7 +98,8 @@
     "title": "Black 2",
     "gen": "V",
     "supported": true,
-    "region": "unova"
+    "region": "unova",
+    "filter": "pregen6"
   },
   "wh2": {
     "pid": "wh2",
@@ -107,7 +108,8 @@
     "title": "White 2",
     "gen": "V",
     "supported": true,
-    "region": "unova"
+    "region": "unova",
+    "filter": "pregen6"
   },
   "bl2c": {
     "pid": "bl2c",
@@ -117,7 +119,8 @@
     "gen": "V",
     "supported": true,
     "region": "unova",
-    "lastUpdated": "9th March 2023"
+    "lastUpdated": "9th March 2023",
+    "filter": "pregen6"
   },
   "wh2c": {
     "pid": "wh2c",
@@ -127,7 +130,8 @@
     "gen": "V",
     "supported": true,
     "region": "unova",
-    "lastUpdated": "9th March 2023"
+    "lastUpdated": "9th March 2023",
+    "filter": "pregen6"
   },
   "bl": {
     "pid": "bl",
@@ -136,7 +140,8 @@
     "title": "Black",
     "gen": "V",
     "supported": true,
-    "region": "unova"
+    "region": "unova",
+    "filter": "pregen6"
   },
   "wh": {
     "pid": "wh",
@@ -145,7 +150,8 @@
     "title": "White",
     "gen": "V",
     "supported": true,
-    "region": "unova"
+    "region": "unova",
+    "filter": "pregen6"
   },
   "bd": {
     "pid": "bd",
@@ -190,7 +196,8 @@
     "title": "Platinum",
     "gen": "IV",
     "supported": true,
-    "region": "sinnoh"
+    "region": "sinnoh",
+    "filter": "pregen6"
   },
   "d": {
     "pid": "d",
@@ -199,7 +206,8 @@
     "title": "Diamond",
     "gen": "IV",
     "supported": true,
-    "region": "sinnoh"
+    "region": "sinnoh",
+    "filter": "pregen6"
   },
   "p": {
     "pid": "p",
@@ -208,7 +216,8 @@
     "title": "Pearl",
     "gen": "IV",
     "supported": true,
-    "region": "sinnoh"
+    "region": "sinnoh",
+    "filter": "pregen6"
   },
   "or": {
     "pid": "or",
@@ -234,7 +243,8 @@
     "title": "Emerald",
     "gen": "III",
     "supported": true,
-    "region": "hoenn"
+    "region": "hoenn",
+    "filter": "pregen6"
   },
   "incem": {
     "pid": "incem",
@@ -252,7 +262,8 @@
     "title": "Ruby",
     "gen": "III",
     "supported": true,
-    "region": "hoenn"
+    "region": "hoenn",
+    "filter": "pregen6"
   },
   "saph": {
     "pid": "saph",
@@ -261,7 +272,8 @@
     "title": "Sapphire",
     "gen": "III",
     "supported": true,
-    "region": "hoenn"
+    "region": "hoenn",
+    "filter": "pregen6"
   },
   "stormsilv": {
     "pid": "stormsilv",
@@ -288,7 +300,8 @@
     "title": "Heart Gold",
     "gen": "II",
     "supported": true,
-    "region": "johto"
+    "region": "johto",
+    "filter": "pregen6"
   },
   "ss": {
     "pid": "ss",
@@ -297,7 +310,8 @@
     "title": "Soul Silver",
     "gen": "II",
     "supported": true,
-    "region": "johto"
+    "region": "johto",
+    "filter": "pregen6"
   },
   "gold": {
     "pid": "gold",
@@ -306,7 +320,8 @@
     "title": "Gold",
     "gen": "II",
     "supported": true,
-    "region": "johto"
+    "region": "johto",
+    "filter": "pregen6"
   },
   "silv": {
     "pid": "silv",
@@ -315,7 +330,8 @@
     "title": "Silver",
     "gen": "II",
     "supported": true,
-    "region": "johto"
+    "region": "johto",
+    "filter": "pregen6"
   },
   "crys": {
     "pid": "crys",
@@ -324,7 +340,8 @@
     "title": "Crystal",
     "gen": "II",
     "supported": true,
-    "region": "johto"
+    "region": "johto",
+    "filter": "pregen6"
   },
   "fr": {
     "pid": "fr",
@@ -333,7 +350,8 @@
     "title": "Fire Red",
     "gen": "I",
     "supported": true,
-    "region": "kanto"
+    "region": "kanto",
+    "filter": "pregen6"
   },
   "lg": {
     "pid": "lg",
@@ -342,7 +360,8 @@
     "title": "Leaf Green",
     "gen": "I",
     "supported": true,
-    "region": "kanto"
+    "region": "kanto",
+    "filter": "pregen6"
   },
   "yel": {
     "pid": "yel",
@@ -350,7 +369,8 @@
     "gen": "I",
     "supported": true,
     "logo": "/logos/yellow-logo",
-    "region": "kanto"
+    "region": "kanto",
+    "filter": "pregen2"
   },
   "red": {
     "pid": "red",
@@ -359,7 +379,8 @@
     "gen": "I",
     "supported": true,
     "logo": "/logos/red",
-    "region": "kanto"
+    "region": "kanto",
+    "filter": "pregen2"
   },
   "blue": {
     "pid": "blue",
@@ -368,6 +389,7 @@
     "gen": "I",
     "supported": true,
     "logo": "/logos/blue",
-    "region": "kanto"
+    "region": "kanto",
+    "filter": "pregen2"
   }
 }
