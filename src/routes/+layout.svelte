@@ -2,7 +2,6 @@
   import "../app.postcss";
 
   import { CookieBanner, Footer } from '$c/navs';
-  import Modal from 'svelte-simple-modal';
 
   const title = 'Nuzlocke Tracker';
   const subtitle = 'Track encounters, analyse your team, be prepared';
@@ -22,14 +21,7 @@
   <link rel="dns-prefetch" href="https://img.nuzlocke.app" crossorigin />
 </svelte:head>
 
-<Modal
-  closeButton={false}
-  styleBg={{ background: 'rgba(0, 0, 0, 0.8)', zIndex: 9999 }}
-  styleWindow={{ background: 'transparent !important' }}
-  styleContent={{ padding: '0 !important' }}
->
-  <slot />
-</Modal>
+<slot />
 
 <CookieBanner />
 <Footer />
