@@ -20,6 +20,11 @@
   ],
   "redirects": [
     {
+      "source": "/index.html",
+      "destination": "/",
+      "permanent": false
+    },
+    {
       "source": "/guides/vi",
       "destination": "/guides/violet",
       "permanent": true
