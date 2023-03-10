@@ -1676,7 +1676,7 @@
         }
       },
       {
-        "name": "servine",
+        "name": "serperior",
         "level": "41",
         "moves": [
           {
@@ -1716,17 +1716,17 @@
           "effect": "Held: Grass-Type moves from holder do 20% more damage."
         },
         "starter": "water",
-        "sprite": "496",
+        "sprite": "497",
         "types": [
           "grass"
         ],
         "stats": {
-          "hp": 60,
-          "atk": 60,
-          "def": 75,
-          "spa": 60,
-          "spd": 75,
-          "spe": 83
+          "hp": 75,
+          "atk": 75,
+          "def": 95,
+          "spa": 75,
+          "spd": 95,
+          "spe": 113
         }
       }
     ]

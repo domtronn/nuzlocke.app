@@ -25,7 +25,7 @@
           "name": "Rock Head",
           "effect": "Protects against recoil damage."
         },
-        "sprite": "74.png",
+        "sprite": "74",
         "types": [
           "rock",
           "ground"
@@ -74,7 +74,7 @@
           "name": "Rock Head",
           "effect": "Protects against recoil damage."
         },
-        "sprite": "95.png",
+        "sprite": "95",
         "types": [
           "rock",
           "ground"
@@ -129,7 +129,7 @@
           "name": "Natural Cure",
           "effect": "Cures any major status ailment upon switching out."
         },
-        "sprite": "120.png",
+        "sprite": "120",
         "types": [
           "water"
         ],
@@ -178,7 +178,7 @@
           "name": "Natural Cure",
           "effect": "Cures any major status ailment upon switching out."
         },
-        "sprite": "121.png",
+        "sprite": "121",
         "types": [
           "water",
           "psychic"
@@ -233,7 +233,7 @@
           "name": "Soundproof",
           "effect": "Protects against sound-based moves."
         },
-        "sprite": "100.png",
+        "sprite": "100",
         "types": [
           "electric"
         ],
@@ -281,7 +281,7 @@
           "name": "Static",
           "effect": "Has a 30% chance of paralyzing attacking Pokémon on contact."
         },
-        "sprite": "25.png",
+        "sprite": "25",
         "types": [
           "electric"
         ],
@@ -329,7 +329,7 @@
           "name": "Static",
           "effect": "Has a 30% chance of paralyzing attacking Pokémon on contact."
         },
-        "sprite": "26.png",
+        "sprite": "26",
         "types": [
           "electric"
         ],
@@ -384,7 +384,7 @@
           "name": "Chlorophyll",
           "effect": "Doubles Speed during strong sunlight."
         },
-        "sprite": "71.png",
+        "sprite": "71",
         "types": [
           "grass",
           "poison"
@@ -433,7 +433,7 @@
           "name": "Chlorophyll",
           "effect": "Doubles Speed during strong sunlight."
         },
-        "sprite": "114.png",
+        "sprite": "114",
         "types": [
           "grass"
         ],
@@ -481,7 +481,7 @@
           "name": "Chlorophyll",
           "effect": "Doubles Speed during strong sunlight."
         },
-        "sprite": "45.png",
+        "sprite": "45",
         "types": [
           "grass",
           "poison"
@@ -537,7 +537,7 @@
           "name": "Levitate",
           "effect": "Evades ground moves."
         },
-        "sprite": "109.png",
+        "sprite": "109",
         "types": [
           "poison"
         ],
@@ -585,7 +585,7 @@
           "name": "Levitate",
           "effect": "Evades ground moves."
         },
-        "sprite": "109.png",
+        "sprite": "109",
         "types": [
           "poison"
         ],
@@ -632,7 +632,7 @@
           "name": "Sticky Hold",
           "effect": "Prevents a held item from being removed by other Pokémon."
         },
-        "sprite": "89.png",
+        "sprite": "89",
         "types": [
           "poison"
         ],
@@ -679,7 +679,7 @@
           "name": "Levitate",
           "effect": "Evades ground moves."
         },
-        "sprite": "110.png",
+        "sprite": "110",
         "types": [
           "poison"
         ],
@@ -734,7 +734,7 @@
           "name": "Synchronize",
           "effect": "Copies burns, paralysis, and poison received onto the Pokémon that inflicted them."
         },
-        "sprite": "64.png",
+        "sprite": "64",
         "types": [
           "psychic"
         ],
@@ -781,10 +781,9 @@
           "name": "Synchronize",
           "effect": "Copies burns, paralysis, and poison received onto the Pokémon that inflicted them."
         },
-        "sprite": "122.png",
+        "sprite": "122",
         "types": [
-          "psychic",
-          "fairy"
+          "psychic"
         ],
         "stats": {
           "hp": 40,
@@ -831,7 +830,7 @@
           "name": "Synchronize",
           "effect": "Copies burns, paralysis, and poison received onto the Pokémon that inflicted them."
         },
-        "sprite": "49.png",
+        "sprite": "49",
         "types": [
           "bug",
           "poison"
@@ -880,7 +879,7 @@
           "name": "Synchronize",
           "effect": "Copies burns, paralysis, and poison received onto the Pokémon that inflicted them."
         },
-        "sprite": "65.png",
+        "sprite": "65",
         "types": [
           "psychic"
         ],
@@ -937,7 +936,7 @@
           "name": "Intimidate",
           "effect": "Lowers opponents' Attack one stage upon entering battle."
         },
-        "sprite": "58.png",
+        "sprite": "58",
         "types": [
           "fire"
         ],
@@ -987,7 +986,7 @@
           "name": "Flash Fire",
           "effect": "Protects against fire moves.  Once one has been blocked, the Pokémon's own Fire moves inflict 1.5× damage until it leaves battle."
         },
-        "sprite": "77.png",
+        "sprite": "77",
         "types": [
           "fire"
         ],
@@ -1037,7 +1036,7 @@
           "name": "Flash Fire",
           "effect": "Protects against fire moves.  Once one has been blocked, the Pokémon's own Fire moves inflict 1.5× damage until it leaves battle."
         },
-        "sprite": "78.png",
+        "sprite": "78",
         "types": [
           "fire"
         ],
@@ -1087,7 +1086,7 @@
           "name": "Intimidate",
           "effect": "Lowers opponents' Attack one stage upon entering battle."
         },
-        "sprite": "59.png",
+        "sprite": "59",
         "types": [
           "fire"
         ],
@@ -1143,7 +1142,7 @@
           "name": "Lightning Rod",
           "effect": "Redirects single-target electric moves to this Pokémon where possible.  Absorbs Electric moves, raising Special Attack one stage."
         },
-        "sprite": "111.png",
+        "sprite": "111",
         "types": [
           "ground",
           "rock"
@@ -1194,7 +1193,7 @@
           "name": "Sand Veil",
           "effect": "Increases evasion to 1.25× during a sandstorm.  Protects against sandstorm damage."
         },
-        "sprite": "51.png",
+        "sprite": "51",
         "types": [
           "ground"
         ],
@@ -1244,7 +1243,7 @@
           "name": "Poison Point",
           "effect": "Has a 30% chance of poisoning attacking Pokémon on contact."
         },
-        "sprite": "31.png",
+        "sprite": "31",
         "types": [
           "poison",
           "ground"
@@ -1295,7 +1294,7 @@
           "name": "Poison Point",
           "effect": "Has a 30% chance of poisoning attacking Pokémon on contact."
         },
-        "sprite": "34.png",
+        "sprite": "34",
         "types": [
           "poison",
           "ground"
@@ -1345,7 +1344,7 @@
           "name": "Lightning Rod",
           "effect": "Redirects single-target electric moves to this Pokémon where possible.  Absorbs Electric moves, raising Special Attack one stage."
         },
-        "sprite": "111.png",
+        "sprite": "111",
         "types": [
           "ground",
           "rock"
@@ -1388,7 +1387,7 @@
           "effect": "Strengthens fire moves to inflict 1.5× damage at 1/3 max HP or less."
         },
         "starter": "grass",
-        "sprite": "4.png",
+        "sprite": "4",
         "types": [
           "fire"
         ],
@@ -1436,7 +1435,7 @@
           "name": "Keen Eye",
           "effect": "Prevents accuracy from being lowered."
         },
-        "sprite": "16.png",
+        "sprite": "16",
         "types": [
           "normal",
           "flying"
@@ -1479,7 +1478,7 @@
           "effect": "Strengthens fire moves to inflict 1.5× damage at 1/3 max HP or less."
         },
         "starter": "grass",
-        "sprite": "4.png",
+        "sprite": "4",
         "types": [
           "fire"
         ],
@@ -1534,7 +1533,7 @@
           "name": "Keen Eye",
           "effect": "Prevents accuracy from being lowered."
         },
-        "sprite": "17.png",
+        "sprite": "17",
         "types": [
           "normal",
           "flying"
@@ -1553,6 +1552,7 @@
         "level": "15",
         "moves": [
           {
+            "priority": -6,
             "type": "psychic",
             "damage_class": "status",
             "name": "Teleport",
@@ -1563,7 +1563,7 @@
           "name": "Synchronize",
           "effect": "Copies burns, paralysis, and poison received onto the Pokémon that inflicted them."
         },
-        "sprite": "63.png",
+        "sprite": "63",
         "types": [
           "psychic"
         ],
@@ -1604,7 +1604,7 @@
           "name": "Guts",
           "effect": "Increases Attack to 1.5× with a major status ailment."
         },
-        "sprite": "19.png",
+        "sprite": "19",
         "types": [
           "normal"
         ],
@@ -1653,7 +1653,7 @@
           "effect": "Strengthens fire moves to inflict 1.5× damage at 1/3 max HP or less."
         },
         "starter": "grass",
-        "sprite": "4.png",
+        "sprite": "4",
         "types": [
           "fire"
         ],
@@ -1708,7 +1708,7 @@
           "name": "Keen Eye",
           "effect": "Prevents accuracy from being lowered."
         },
-        "sprite": "17.png",
+        "sprite": "17",
         "types": [
           "normal",
           "flying"
@@ -1727,6 +1727,7 @@
         "level": "18",
         "moves": [
           {
+            "priority": -6,
             "type": "psychic",
             "damage_class": "status",
             "name": "Teleport",
@@ -1756,7 +1757,7 @@
           "name": "Synchronize",
           "effect": "Copies burns, paralysis, and poison received onto the Pokémon that inflicted them."
         },
-        "sprite": "64.png",
+        "sprite": "64",
         "types": [
           "psychic"
         ],
@@ -1804,7 +1805,7 @@
           "name": "Guts",
           "effect": "Increases Attack to 1.5× with a major status ailment."
         },
-        "sprite": "20.png",
+        "sprite": "20",
         "types": [
           "normal"
         ],
@@ -1853,7 +1854,7 @@
           "effect": "Strengthens fire moves to inflict 1.5× damage at 1/3 max HP or less."
         },
         "starter": "grass",
-        "sprite": "5.png",
+        "sprite": "5",
         "types": [
           "fire"
         ],
@@ -1908,7 +1909,7 @@
           "name": "Rock Head",
           "effect": "Protects against recoil damage."
         },
-        "sprite": "95.png",
+        "sprite": "95",
         "types": [
           "rock",
           "ground"
@@ -1957,7 +1958,7 @@
           "name": "Rock Head",
           "effect": "Protects against recoil damage."
         },
-        "sprite": "111.png",
+        "sprite": "111",
         "types": [
           "ground",
           "rock"
@@ -2007,7 +2008,7 @@
           "name": "Early Bird",
           "effect": "Makes sleep pass twice as quickly."
         },
-        "sprite": "115.png",
+        "sprite": "115",
         "types": [
           "normal"
         ],
@@ -2063,7 +2064,7 @@
           "name": "Keen Eye",
           "effect": "Prevents accuracy from being lowered."
         },
-        "sprite": "17.png",
+        "sprite": "17",
         "types": [
           "normal",
           "flying"
@@ -2113,7 +2114,7 @@
           "effect": "Doubles Speed during strong sunlight."
         },
         "starter": "grass",
-        "sprite": "102.png",
+        "sprite": "102",
         "types": [
           "grass",
           "psychic"
@@ -2157,7 +2158,7 @@
           "effect": "Lowers opponents' Attack one stage upon entering battle."
         },
         "starter": "grass",
-        "sprite": "130.png",
+        "sprite": "130",
         "types": [
           "water",
           "flying"
@@ -2176,6 +2177,7 @@
         "level": "20",
         "moves": [
           {
+            "priority": -6,
             "type": "psychic",
             "damage_class": "status",
             "name": "Teleport",
@@ -2205,7 +2207,7 @@
           "name": "Synchronize",
           "effect": "Copies burns, paralysis, and poison received onto the Pokémon that inflicted them."
         },
-        "sprite": "64.png",
+        "sprite": "64",
         "types": [
           "psychic"
         ],
@@ -2254,7 +2256,7 @@
           "effect": "Strengthens fire moves to inflict 1.5× damage at 1/3 max HP or less."
         },
         "starter": "grass",
-        "sprite": "5.png",
+        "sprite": "5",
         "types": [
           "fire"
         ],
@@ -2309,7 +2311,7 @@
           "name": "Keen Eye",
           "effect": "Prevents accuracy from being lowered."
         },
-        "sprite": "18.png",
+        "sprite": "18",
         "types": [
           "normal",
           "flying"
@@ -2357,7 +2359,7 @@
           "effect": "Doubles Speed during strong sunlight."
         },
         "starter": "grass",
-        "sprite": "102.png",
+        "sprite": "102",
         "types": [
           "grass",
           "psychic"
@@ -2406,7 +2408,7 @@
           "effect": "Lowers opponents' Attack one stage upon entering battle."
         },
         "starter": "grass",
-        "sprite": "130.png",
+        "sprite": "130",
         "types": [
           "water",
           "flying"
@@ -2454,7 +2456,7 @@
           "name": "Synchronize",
           "effect": "Copies burns, paralysis, and poison received onto the Pokémon that inflicted them."
         },
-        "sprite": "65.png",
+        "sprite": "65",
         "types": [
           "psychic"
         ],
@@ -2502,7 +2504,7 @@
           "effect": "Strengthens fire moves to inflict 1.5× damage at 1/3 max HP or less."
         },
         "starter": "grass",
-        "sprite": "6.png",
+        "sprite": "6",
         "types": [
           "fire",
           "flying"
@@ -2559,7 +2561,7 @@
           "name": "Poison Point",
           "effect": "Has a 30% chance of poisoning attacking Pokémon on contact."
         },
-        "sprite": "33.png",
+        "sprite": "33",
         "types": [
           "poison"
         ],
@@ -2607,7 +2609,7 @@
           "name": "Rock Head",
           "effect": "Protects against recoil damage."
         },
-        "sprite": "111.png",
+        "sprite": "111",
         "types": [
           "ground",
           "rock"
@@ -2657,7 +2659,7 @@
           "name": "Early Bird",
           "effect": "Makes sleep pass twice as quickly."
         },
-        "sprite": "115.png",
+        "sprite": "115",
         "types": [
           "normal"
         ],
@@ -2706,7 +2708,7 @@
           "name": "Poison Point",
           "effect": "Has a 30% chance of poisoning attacking Pokémon on contact."
         },
-        "sprite": "31.png",
+        "sprite": "31",
         "types": [
           "poison",
           "ground"
@@ -2762,7 +2764,7 @@
           "name": "Keen Eye",
           "effect": "Prevents accuracy from being lowered."
         },
-        "sprite": "18.png",
+        "sprite": "18",
         "types": [
           "normal",
           "flying"
@@ -2812,7 +2814,7 @@
           "name": "Lightning Rod",
           "effect": "Redirects single-target electric moves to this Pokémon where possible.  Absorbs Electric moves, raising Special Attack one stage."
         },
-        "sprite": "111.png",
+        "sprite": "111",
         "types": [
           "ground",
           "rock"
@@ -2861,7 +2863,7 @@
           "effect": "Doubles Speed during strong sunlight."
         },
         "starter": "grass",
-        "sprite": "102.png",
+        "sprite": "102",
         "types": [
           "grass",
           "psychic"
@@ -2910,7 +2912,7 @@
           "effect": "Lowers opponents' Attack one stage upon entering battle."
         },
         "starter": "grass",
-        "sprite": "130.png",
+        "sprite": "130",
         "types": [
           "water",
           "flying"
@@ -2959,7 +2961,7 @@
           "name": "Synchronize",
           "effect": "Copies burns, paralysis, and poison received onto the Pokémon that inflicted them."
         },
-        "sprite": "65.png",
+        "sprite": "65",
         "types": [
           "psychic"
         ],
@@ -3008,7 +3010,7 @@
           "effect": "Strengthens fire moves to inflict 1.5× damage at 1/3 max HP or less."
         },
         "starter": "grass",
-        "sprite": "6.png",
+        "sprite": "6",
         "types": [
           "fire",
           "flying"
@@ -3064,7 +3066,7 @@
           "name": "Thick Fat",
           "effect": "Halves damage from fire and ice moves."
         },
-        "sprite": "87.png",
+        "sprite": "87",
         "types": [
           "water",
           "ice"
@@ -3113,7 +3115,7 @@
           "name": "Shell Armor",
           "effect": "Protects against critical hits."
         },
-        "sprite": "91.png",
+        "sprite": "91",
         "types": [
           "water",
           "ice"
@@ -3162,7 +3164,7 @@
           "name": "Oblivious",
           "effect": "Prevents infatuation and protects against captivate."
         },
-        "sprite": "80.png",
+        "sprite": "80",
         "types": [
           "water",
           "psychic"
@@ -3211,7 +3213,7 @@
           "name": "Oblivious",
           "effect": "Prevents infatuation and protects against captivate."
         },
-        "sprite": "124.png",
+        "sprite": "124",
         "types": [
           "ice",
           "psychic"
@@ -3266,7 +3268,7 @@
           "name": "Sitrus Berry",
           "effect": "Held: Consumed at 1/2 max HP to recover 1/4 max HP."
         },
-        "sprite": "131.png",
+        "sprite": "131",
         "types": [
           "water",
           "ice"
@@ -3324,7 +3326,7 @@
           "name": "Rock Head",
           "effect": "Protects against recoil damage."
         },
-        "sprite": "95.png",
+        "sprite": "95",
         "types": [
           "rock",
           "ground"
@@ -3375,7 +3377,7 @@
           "name": "Keen Eye",
           "effect": "Prevents accuracy from being lowered."
         },
-        "sprite": "107.png",
+        "sprite": "107",
         "types": [
           "fighting"
         ],
@@ -3423,7 +3425,7 @@
           "name": "Limber",
           "effect": "Prevents paralysis."
         },
-        "sprite": "106.png",
+        "sprite": "106",
         "types": [
           "fighting"
         ],
@@ -3473,7 +3475,7 @@
           "name": "Rock Head",
           "effect": "Protects against recoil damage."
         },
-        "sprite": "95.png",
+        "sprite": "95",
         "types": [
           "rock",
           "ground"
@@ -3527,7 +3529,7 @@
           "name": "Sitrus Berry",
           "effect": "Held: Consumed at 1/2 max HP to recover 1/4 max HP."
         },
-        "sprite": "68.png",
+        "sprite": "68",
         "types": [
           "fighting"
         ],
@@ -3581,7 +3583,7 @@
           "name": "Levitate",
           "effect": "Evades ground moves."
         },
-        "sprite": "94.png",
+        "sprite": "94",
         "types": [
           "ghost",
           "poison"
@@ -3631,7 +3633,7 @@
           "name": "Inner Focus",
           "effect": "Prevents flinching."
         },
-        "sprite": "42.png",
+        "sprite": "42",
         "types": [
           "poison",
           "flying"
@@ -3679,7 +3681,7 @@
           "name": "Levitate",
           "effect": "Evades ground moves."
         },
-        "sprite": "93.png",
+        "sprite": "93",
         "types": [
           "ghost",
           "poison"
@@ -3729,7 +3731,7 @@
           "name": "Intimidate",
           "effect": "Lowers opponents' Attack one stage upon entering battle."
         },
-        "sprite": "24.png",
+        "sprite": "24",
         "types": [
           "poison"
         ],
@@ -3782,7 +3784,7 @@
           "name": "Sitrus Berry",
           "effect": "Held: Consumed at 1/2 max HP to recover 1/4 max HP."
         },
-        "sprite": "94.png",
+        "sprite": "94",
         "types": [
           "ghost",
           "poison"
@@ -3839,7 +3841,7 @@
           "name": "Intimidate",
           "effect": "Lowers opponents' Attack one stage upon entering battle."
         },
-        "sprite": "130.png",
+        "sprite": "130",
         "types": [
           "water",
           "flying"
@@ -3888,7 +3890,7 @@
           "name": "Shed Skin",
           "effect": "Has a 33% chance of curing any major status ailment after each turn."
         },
-        "sprite": "148.png",
+        "sprite": "148",
         "types": [
           "dragon"
         ],
@@ -3936,7 +3938,7 @@
           "name": "Shed Skin",
           "effect": "Has a 33% chance of curing any major status ailment after each turn."
         },
-        "sprite": "148.png",
+        "sprite": "148",
         "types": [
           "dragon"
         ],
@@ -3984,7 +3986,7 @@
           "name": "Pressure",
           "effect": "Increases the PP cost of moves targetting the Pokémon by one."
         },
-        "sprite": "142.png",
+        "sprite": "142",
         "types": [
           "rock",
           "flying"
@@ -4038,7 +4040,7 @@
           "name": "Sitrus Berry",
           "effect": "Held: Consumed at 1/2 max HP to recover 1/4 max HP."
         },
-        "sprite": "149.png",
+        "sprite": "149",
         "types": [
           "dragon",
           "flying"
@@ -4094,7 +4096,7 @@
           "name": "Keen Eye",
           "effect": "Prevents accuracy from being lowered."
         },
-        "sprite": "18.png",
+        "sprite": "18",
         "types": [
           "normal",
           "flying"
@@ -4143,7 +4145,7 @@
           "name": "Synchronize",
           "effect": "Copies burns, paralysis, and poison received onto the Pokémon that inflicted them."
         },
-        "sprite": "65.png",
+        "sprite": "65",
         "types": [
           "psychic"
         ],
@@ -4192,7 +4194,7 @@
           "name": "Lightning Rod",
           "effect": "Redirects single-target electric moves to this Pokémon where possible.  Absorbs Electric moves, raising Special Attack one stage."
         },
-        "sprite": "112.png",
+        "sprite": "112",
         "types": [
           "ground",
           "rock"
@@ -4241,7 +4243,7 @@
           "effect": "Doubles Speed during strong sunlight."
         },
         "starter": "grass",
-        "sprite": "103.png",
+        "sprite": "103",
         "types": [
           "grass",
           "psychic"
@@ -4291,7 +4293,7 @@
           "effect": "Lowers opponents' Attack one stage upon entering battle."
         },
         "starter": "grass",
-        "sprite": "130.png",
+        "sprite": "130",
         "types": [
           "water",
           "flying"
@@ -4348,7 +4350,7 @@
           "effect": "Held: Consumed at 1/2 max HP to recover 1/4 max HP."
         },
         "starter": "grass",
-        "sprite": "6.png",
+        "sprite": "6",
         "types": [
           "fire",
           "flying"

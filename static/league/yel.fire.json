@@ -15,7 +15,7 @@
             "name": "Tackle"
           }
         ],
-        "sprite": "74.png",
+        "sprite": "74",
         "types": [
           "rock",
           "ground"
@@ -60,7 +60,7 @@
             "effect": "Prevents the target from fleeing and inflicts damage for 2-5 turns."
           }
         ],
-        "sprite": "95.png",
+        "sprite": "95",
         "types": [
           "rock",
           "ground"
@@ -98,7 +98,7 @@
             "name": "Water Gun"
           }
         ],
-        "sprite": "120.png",
+        "sprite": "120",
         "types": [
           "water"
         ],
@@ -141,7 +141,7 @@
             "effect": "Has a 10% chance to lower the target's Speed by one stage."
           }
         ],
-        "sprite": "121.png",
+        "sprite": "121",
         "types": [
           "water",
           "psychic"
@@ -192,7 +192,7 @@
             "effect": "Lowers the target's Attack by one stage."
           }
         ],
-        "sprite": "26.png",
+        "sprite": "26",
         "types": [
           "electric"
         ],
@@ -244,7 +244,7 @@
             "name": "Vine Whip"
           }
         ],
-        "sprite": "114.png",
+        "sprite": "114",
         "types": [
           "grass"
         ],
@@ -288,7 +288,7 @@
             "effect": "Has an increased chance for a critical hit."
           }
         ],
-        "sprite": "70.png",
+        "sprite": "70",
         "types": [
           "grass",
           "poison"
@@ -333,7 +333,7 @@
             "effect": "Puts the target to sleep."
           }
         ],
-        "sprite": "44.png",
+        "sprite": "44",
         "types": [
           "grass",
           "poison"
@@ -384,7 +384,7 @@
             "effect": "Puts the target to sleep."
           }
         ],
-        "sprite": "48.png",
+        "sprite": "48",
         "types": [
           "bug",
           "poison"
@@ -429,7 +429,7 @@
             "effect": "Confuses the target."
           }
         ],
-        "sprite": "48.png",
+        "sprite": "48",
         "types": [
           "bug",
           "poison"
@@ -474,7 +474,7 @@
             "effect": "User receives 1/3 the damage inflicted in recoil."
           }
         ],
-        "sprite": "48.png",
+        "sprite": "48",
         "types": [
           "bug",
           "poison"
@@ -519,7 +519,7 @@
             "effect": "Raises the user's evasion by one stage."
           }
         ],
-        "sprite": "49.png",
+        "sprite": "49",
         "types": [
           "bug",
           "poison"
@@ -551,7 +551,7 @@
             "effect": "Lowers the target's accuracy by one stage."
           }
         ],
-        "sprite": "63.png",
+        "sprite": "63",
         "types": [
           "psychic"
         ],
@@ -594,7 +594,7 @@
             "effect": "Inflicts damage between 50% and 150% of the user's level."
           }
         ],
-        "sprite": "64.png",
+        "sprite": "64",
         "types": [
           "psychic"
         ],
@@ -637,7 +637,7 @@
             "effect": "Inflicts damage between 50% and 150% of the user's level."
           }
         ],
-        "sprite": "65.png",
+        "sprite": "65",
         "types": [
           "psychic"
         ],
@@ -688,7 +688,7 @@
             "effect": "Has a 10% chance to burn the target."
           }
         ],
-        "sprite": "38.png",
+        "sprite": "38",
         "types": [
           "fire"
         ],
@@ -733,7 +733,7 @@
             "effect": "Prevents the target from fleeing and inflicts damage for 2-5 turns."
           }
         ],
-        "sprite": "78.png",
+        "sprite": "78",
         "types": [
           "fire"
         ],
@@ -778,7 +778,7 @@
             "effect": "Has a 10% chance to burn the target."
           }
         ],
-        "sprite": "59.png",
+        "sprite": "59",
         "types": [
           "fire"
         ],
@@ -829,7 +829,7 @@
             "effect": "Lowers the target's accuracy by one stage."
           }
         ],
-        "sprite": "51.png",
+        "sprite": "51",
         "types": [
           "ground"
         ],
@@ -873,7 +873,7 @@
             "effect": "Raises the user's evasion by one stage."
           }
         ],
-        "sprite": "53.png",
+        "sprite": "53",
         "types": [
           "normal"
         ],
@@ -918,7 +918,7 @@
             "effect": "Hits twice in one turn."
           }
         ],
-        "sprite": "31.png",
+        "sprite": "31",
         "types": [
           "poison",
           "ground"
@@ -964,7 +964,7 @@
             "effect": "Hits twice in one turn."
           }
         ],
-        "sprite": "34.png",
+        "sprite": "34",
         "types": [
           "poison",
           "ground"
@@ -1010,7 +1010,7 @@
             "effect": "Causes a one-hit KO."
           }
         ],
-        "sprite": "112.png",
+        "sprite": "112",
         "types": [
           "ground",
           "rock"
@@ -1048,7 +1048,7 @@
             "effect": "Lowers the target's Defense by one stage."
           }
         ],
-        "sprite": "133.png",
+        "sprite": "133",
         "types": [
           "normal"
         ],
@@ -1091,7 +1091,7 @@
             "effect": "Lowers the target's Defense by one stage."
           }
         ],
-        "sprite": "21.png",
+        "sprite": "21",
         "types": [
           "normal",
           "flying"
@@ -1128,7 +1128,7 @@
             "effect": "Lowers the target's accuracy by one stage."
           }
         ],
-        "sprite": "133.png",
+        "sprite": "133",
         "types": [
           "normal"
         ],
@@ -1177,7 +1177,7 @@
             "effect": "Has a 30% chance to poison the target."
           }
         ],
-        "sprite": "23.png",
+        "sprite": "23",
         "types": [
           "poison"
         ],
@@ -1214,7 +1214,7 @@
             "effect": "Has a 30% chance to make the target flinch."
           }
         ],
-        "sprite": "52.png",
+        "sprite": "52",
         "types": [
           "normal"
         ],
@@ -1245,7 +1245,7 @@
             "effect": "Has a 40% chance to poison the target."
           }
         ],
-        "sprite": "109.png",
+        "sprite": "109",
         "types": [
           "poison"
         ],
@@ -1295,7 +1295,7 @@
             "effect": "Hits 2-5 times in one turn."
           }
         ],
-        "sprite": "21.png",
+        "sprite": "21",
         "types": [
           "normal",
           "flying"
@@ -1326,7 +1326,7 @@
             "effect": "Lowers the target's accuracy by one stage."
           }
         ],
-        "sprite": "27.png",
+        "sprite": "27",
         "types": [
           "ground"
         ],
@@ -1370,7 +1370,7 @@
             "effect": "Has a 10% chance to make the target flinch."
           }
         ],
-        "sprite": "19.png",
+        "sprite": "19",
         "types": [
           "normal"
         ],
@@ -1406,7 +1406,7 @@
             "effect": "Lowers the target's accuracy by one stage."
           }
         ],
-        "sprite": "133.png",
+        "sprite": "133",
         "types": [
           "normal"
         ],
@@ -1456,7 +1456,7 @@
             "effect": "Hits 2-5 times in one turn."
           }
         ],
-        "sprite": "21.png",
+        "sprite": "21",
         "types": [
           "normal",
           "flying"
@@ -1501,7 +1501,7 @@
             "effect": "Has a 10% chance to make the target flinch."
           }
         ],
-        "sprite": "19.png",
+        "sprite": "19",
         "types": [
           "normal"
         ],
@@ -1538,7 +1538,7 @@
             "effect": "Has an increased chance for a critical hit."
           }
         ],
-        "sprite": "27.png",
+        "sprite": "27",
         "types": [
           "ground"
         ],
@@ -1580,7 +1580,7 @@
             "effect": "Lowers the target's Attack by one stage."
           }
         ],
-        "sprite": "133.png",
+        "sprite": "133",
         "types": [
           "normal"
         ],
@@ -1635,7 +1635,7 @@
             "effect": "Has a 30% chance to poison the target."
           }
         ],
-        "sprite": "23.png",
+        "sprite": "23",
         "types": [
           "poison"
         ],
@@ -1679,7 +1679,7 @@
             "effect": "Scatters money on the ground worth five times the user's level."
           }
         ],
-        "sprite": "52.png",
+        "sprite": "52",
         "types": [
           "normal"
         ],
@@ -1710,7 +1710,7 @@
             "effect": "Has a 40% chance to poison the target."
           }
         ],
-        "sprite": "109.png",
+        "sprite": "109",
         "types": [
           "poison"
         ],
@@ -1761,7 +1761,7 @@
             "name": "Rock Throw"
           }
         ],
-        "sprite": "95.png",
+        "sprite": "95",
         "types": [
           "rock",
           "ground"
@@ -1786,7 +1786,7 @@
             "name": "Horn Attack"
           }
         ],
-        "sprite": "111.png",
+        "sprite": "111",
         "types": [
           "ground",
           "rock"
@@ -1831,7 +1831,7 @@
             "effect": "Lowers the target's Attack by one stage."
           }
         ],
-        "sprite": "53.png",
+        "sprite": "53",
         "types": [
           "normal"
         ],
@@ -1886,7 +1886,7 @@
             "effect": "Has a 30% chance to poison the target."
           }
         ],
-        "sprite": "24.png",
+        "sprite": "24",
         "types": [
           "poison"
         ],
@@ -1930,7 +1930,7 @@
             "effect": "Scatters money on the ground worth five times the user's level."
           }
         ],
-        "sprite": "52.png",
+        "sprite": "52",
         "types": [
           "normal"
         ],
@@ -1968,7 +1968,7 @@
             "effect": "Has a 30% chance to poison the target."
           }
         ],
-        "sprite": "110.png",
+        "sprite": "110",
         "types": [
           "poison"
         ],
@@ -2018,7 +2018,7 @@
             "effect": "Hits 2-5 times in one turn."
           }
         ],
-        "sprite": "22.png",
+        "sprite": "22",
         "types": [
           "normal",
           "flying"
@@ -2050,10 +2050,9 @@
           }
         ],
         "starter": "fire",
-        "sprite": "81.png",
+        "sprite": "81",
         "types": [
-          "electric",
-          "steel"
+          "electric"
         ],
         "stats": {
           "hp": 25,
@@ -2095,7 +2094,7 @@
           }
         ],
         "starter": "fire",
-        "sprite": "90.png",
+        "sprite": "90",
         "types": [
           "water"
         ],
@@ -2132,7 +2131,7 @@
             "effect": "Has an increased chance for a critical hit."
           }
         ],
-        "sprite": "27.png",
+        "sprite": "27",
         "types": [
           "ground"
         ],
@@ -2175,7 +2174,7 @@
             "effect": "Lowers the target's Attack by one stage."
           }
         ],
-        "sprite": "133.png",
+        "sprite": "133",
         "types": [
           "normal"
         ],
@@ -2227,7 +2226,7 @@
             "effect": "Has a 30% chance to poison the target."
           }
         ],
-        "sprite": "28.png",
+        "sprite": "28",
         "types": [
           "ground"
         ],
@@ -2271,10 +2270,9 @@
           }
         ],
         "starter": "fire",
-        "sprite": "82.png",
+        "sprite": "82",
         "types": [
-          "electric",
-          "steel"
+          "electric"
         ],
         "stats": {
           "hp": 50,
@@ -2317,7 +2315,7 @@
           }
         ],
         "starter": "fire",
-        "sprite": "91.png",
+        "sprite": "91",
         "types": [
           "water",
           "ice"
@@ -2362,7 +2360,7 @@
             "effect": "Heals the user by half its max HP."
           }
         ],
-        "sprite": "64.png",
+        "sprite": "64",
         "types": [
           "psychic"
         ],
@@ -2409,7 +2407,7 @@
           }
         ],
         "starter": "fire",
-        "sprite": "136.png",
+        "sprite": "136",
         "types": [
           "fire"
         ],
@@ -2464,7 +2462,7 @@
             "effect": "Has a 30% chance to poison the target."
           }
         ],
-        "sprite": "24.png",
+        "sprite": "24",
         "types": [
           "poison"
         ],
@@ -2508,7 +2506,7 @@
             "effect": "Scatters money on the ground worth five times the user's level."
           }
         ],
-        "sprite": "52.png",
+        "sprite": "52",
         "types": [
           "normal"
         ],
@@ -2546,7 +2544,7 @@
             "effect": "Has a 30% chance to poison the target."
           }
         ],
-        "sprite": "110.png",
+        "sprite": "110",
         "types": [
           "poison"
         ],
@@ -2598,7 +2596,7 @@
             "effect": "Hits 2-5 times in one turn."
           }
         ],
-        "sprite": "33.png",
+        "sprite": "33",
         "types": [
           "poison"
         ],
@@ -2635,7 +2633,7 @@
             "effect": "Lowers the target's Defense by one stage."
           }
         ],
-        "sprite": "111.png",
+        "sprite": "111",
         "types": [
           "ground",
           "rock"
@@ -2680,7 +2678,7 @@
             "effect": "Scatters money on the ground worth five times the user's level."
           }
         ],
-        "sprite": "53.png",
+        "sprite": "53",
         "types": [
           "normal"
         ],
@@ -2725,7 +2723,7 @@
             "effect": "Has a 30% chance to poison the target."
           }
         ],
-        "sprite": "31.png",
+        "sprite": "31",
         "types": [
           "poison",
           "ground"
@@ -2779,7 +2777,7 @@
             "effect": "Has a 30% chance to poison the target."
           }
         ],
-        "sprite": "28.png",
+        "sprite": "28",
         "types": [
           "ground"
         ],
@@ -2822,7 +2820,7 @@
             "effect": "Poisons the target."
           }
         ],
-        "sprite": "102.png",
+        "sprite": "102",
         "types": [
           "grass",
           "psychic"
@@ -2867,10 +2865,9 @@
           }
         ],
         "starter": "fire",
-        "sprite": "82.png",
+        "sprite": "82",
         "types": [
-          "electric",
-          "steel"
+          "electric"
         ],
         "stats": {
           "hp": 50,
@@ -2913,7 +2910,7 @@
           }
         ],
         "starter": "fire",
-        "sprite": "91.png",
+        "sprite": "91",
         "types": [
           "water",
           "ice"
@@ -2958,7 +2955,7 @@
             "effect": "Heals the user by half its max HP."
           }
         ],
-        "sprite": "64.png",
+        "sprite": "64",
         "types": [
           "psychic"
         ],
@@ -3004,7 +3001,7 @@
           }
         ],
         "starter": "fire",
-        "sprite": "136.png",
+        "sprite": "136",
         "types": [
           "fire"
         ],
@@ -3056,7 +3053,7 @@
             "effect": "User receives 1/4 the damage it inflicts in recoil."
           }
         ],
-        "sprite": "87.png",
+        "sprite": "87",
         "types": [
           "water",
           "ice"
@@ -3102,7 +3099,7 @@
             "effect": "Hits 2-5 times in one turn."
           }
         ],
-        "sprite": "91.png",
+        "sprite": "91",
         "types": [
           "water",
           "ice"
@@ -3147,7 +3144,7 @@
             "effect": "Raises the user's Special Defense by two stages."
           }
         ],
-        "sprite": "80.png",
+        "sprite": "80",
         "types": [
           "water",
           "psychic"
@@ -3193,7 +3190,7 @@
             "effect": "Hits every turn for 2-3 turns, then confuses the user."
           }
         ],
-        "sprite": "124.png",
+        "sprite": "124",
         "types": [
           "ice",
           "psychic"
@@ -3238,7 +3235,7 @@
             "effect": "Has a 10% chance to freeze the target."
           }
         ],
-        "sprite": "131.png",
+        "sprite": "131",
         "types": [
           "water",
           "ice"
@@ -3290,7 +3287,7 @@
             "name": "Slam"
           }
         ],
-        "sprite": "95.png",
+        "sprite": "95",
         "types": [
           "rock",
           "ground"
@@ -3336,7 +3333,7 @@
             "effect": "Raises the user's evasion by one stage."
           }
         ],
-        "sprite": "107.png",
+        "sprite": "107",
         "types": [
           "fighting"
         ],
@@ -3380,7 +3377,7 @@
             "effect": "Raises the user's evasion by one stage."
           }
         ],
-        "sprite": "106.png",
+        "sprite": "106",
         "types": [
           "fighting"
         ],
@@ -3424,7 +3421,7 @@
             "name": "Slam"
           }
         ],
-        "sprite": "95.png",
+        "sprite": "95",
         "types": [
           "rock",
           "ground"
@@ -3469,7 +3466,7 @@
             "effect": "User receives 1/4 the damage it inflicts in recoil."
           }
         ],
-        "sprite": "68.png",
+        "sprite": "68",
         "types": [
           "fighting"
         ],
@@ -3520,7 +3517,7 @@
             "effect": "Drains half the damage inflicted to heal the user."
           }
         ],
-        "sprite": "94.png",
+        "sprite": "94",
         "types": [
           "ghost",
           "poison"
@@ -3564,7 +3561,7 @@
             "effect": "Badly poisons the target, inflicting more damage every turn."
           }
         ],
-        "sprite": "42.png",
+        "sprite": "42",
         "types": [
           "poison",
           "flying"
@@ -3609,7 +3606,7 @@
             "effect": "Only works on sleeping Pokémon.  Drains half the damage inflicted to heal the user."
           }
         ],
-        "sprite": "93.png",
+        "sprite": "93",
         "types": [
           "ghost",
           "poison"
@@ -3654,7 +3651,7 @@
             "effect": "Has a 10% chance to lower the target's Special Defense by one stage."
           }
         ],
-        "sprite": "24.png",
+        "sprite": "24",
         "types": [
           "poison"
         ],
@@ -3698,7 +3695,7 @@
             "effect": "Only works on sleeping Pokémon.  Drains half the damage inflicted to heal the user."
           }
         ],
-        "sprite": "94.png",
+        "sprite": "94",
         "types": [
           "ghost",
           "poison"
@@ -3749,7 +3746,7 @@
             "effect": "User foregoes its next turn to recharge."
           }
         ],
-        "sprite": "130.png",
+        "sprite": "130",
         "types": [
           "water",
           "flying"
@@ -3794,7 +3791,7 @@
             "effect": "User foregoes its next turn to recharge."
           }
         ],
-        "sprite": "148.png",
+        "sprite": "148",
         "types": [
           "dragon"
         ],
@@ -3840,7 +3837,7 @@
             "effect": "User foregoes its next turn to recharge."
           }
         ],
-        "sprite": "148.png",
+        "sprite": "148",
         "types": [
           "dragon"
         ],
@@ -3885,7 +3882,7 @@
             "effect": "User foregoes its next turn to recharge."
           }
         ],
-        "sprite": "142.png",
+        "sprite": "142",
         "types": [
           "rock",
           "flying"
@@ -3932,7 +3929,7 @@
             "effect": "User foregoes its next turn to recharge."
           }
         ],
-        "sprite": "149.png",
+        "sprite": "149",
         "types": [
           "dragon",
           "flying"
@@ -3986,7 +3983,7 @@
             "effect": "Has a 30% chance to poison the target."
           }
         ],
-        "sprite": "28.png",
+        "sprite": "28",
         "types": [
           "ground"
         ],
@@ -4030,7 +4027,7 @@
             "effect": "Heals the user by half its max HP."
           }
         ],
-        "sprite": "65.png",
+        "sprite": "65",
         "types": [
           "psychic"
         ],
@@ -4074,7 +4071,7 @@
             "effect": "Has a 30% chance to make the target flinch."
           }
         ],
-        "sprite": "103.png",
+        "sprite": "103",
         "types": [
           "grass",
           "psychic"
@@ -4120,10 +4117,9 @@
           }
         ],
         "starter": "fire",
-        "sprite": "82.png",
+        "sprite": "82",
         "types": [
-          "electric",
-          "steel"
+          "electric"
         ],
         "stats": {
           "hp": 50,
@@ -4168,7 +4164,7 @@
           }
         ],
         "starter": "fire",
-        "sprite": "91.png",
+        "sprite": "91",
         "types": [
           "water",
           "ice"
@@ -4215,7 +4211,7 @@
           }
         ],
         "starter": "fire",
-        "sprite": "136.png",
+        "sprite": "136",
         "types": [
           "fire"
         ],
