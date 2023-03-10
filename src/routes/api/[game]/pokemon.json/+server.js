@@ -9,7 +9,7 @@ const base = filterdata(Pokemon);
 const patchTypes = (pkmn, typeMap) => {
   if (!typeMap) return pkmn
   return pkmn.map((p) => {
-    const patch = typeMap[p.alias] || typeMap[p.sprite]
+    const patch = typeMap[p.alias] || typeMap[p.sprite] || {}
     const types = patch.types || p.types
     return { ...p, types }
   })
