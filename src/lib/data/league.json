@@ -38628,7 +38628,8 @@
             "fury-cutter",
             "fury-swipes"
           ],
-          "ability": "pickup"
+          "ability": "pickup",
+          "tera": "bug"
         }
       ]
     },
@@ -38666,7 +38667,8 @@
             "trailblaze",
             "rock-throw"
           ],
-          "ability": "sturdy"
+          "ability": "sturdy",
+          "tera": "grass"
         }
       ]
     },
@@ -38715,7 +38717,8 @@
             "hex",
             "confuse-ray"
           ],
-          "ability": "levitate"
+          "ability": "levitate",
+          "tera": "electric"
         }
       ]
     },
@@ -38756,7 +38759,8 @@
             "rock-smash",
             "slam"
           ],
-          "ability": "iron-fist"
+          "ability": "iron-fist",
+          "tera": "water"
         }
       ]
     },
@@ -38796,7 +38800,8 @@
             "facade",
             "aerial-ace"
           ],
-          "ability": "intimidate"
+          "ability": "intimidate",
+          "tera": "normal"
         }
       ]
     },
@@ -38847,7 +38852,8 @@
             "hex",
             "hyper-voice"
           ],
-          "ability": "punk-rock"
+          "ability": "punk-rock",
+          "tera": "ghost"
         }
       ]
     },
@@ -38898,7 +38904,8 @@
             "moonblast",
             "petal-blizzard"
           ],
-          "ability": "flower-veil"
+          "ability": "flower-veil",
+          "tera": "psychic"
         }
       ]
     },
@@ -38950,7 +38957,108 @@
             "moonblast",
             "hurricane"
           ],
-          "ability": "natural-cure"
+          "ability": "natural-cure",
+          "tera": "ice"
+        }
+      ]
+    },
+    "r0": {
+      "name": "Nemona",
+      "speciality": "",
+      "img": {
+        "src": "/leaders/sv-nemona",
+        "author": "Kyledove",
+        "link": "https://www.deviantart.com/kyle-dove"
+      },
+      "pokemon": [
+        {
+          "name": "sprigatito",
+          "level": "5",
+          "moves": [
+            "scratch",
+            "tail-whip",
+            "leafage"
+          ],
+          "ability": "overgrow",
+          "starter": "fire"
+        },
+        {
+          "name": "fuecoco",
+          "level": "5",
+          "moves": [
+            "tackle",
+            "leer",
+            "ember"
+          ],
+          "ability": "blaze",
+          "starter": "water"
+        },
+        {
+          "name": "quaxly",
+          "level": "5",
+          "moves": [
+            "pound",
+            "growl",
+            "water-gun"
+          ],
+          "ability": "torrent",
+          "starter": "grass"
+        }
+      ]
+    },
+    "r00": {
+      "name": "Nemona",
+      "speciality": "",
+      "img": {
+        "src": "/leaders/sv-nemona",
+        "author": "Kyledove",
+        "link": "https://www.deviantart.com/kyle-dove"
+      },
+      "pokemon": [
+        {
+          "name": "sprigatito",
+          "level": "8",
+          "moves": [
+            "scratch",
+            "tail-whip",
+            "leafage",
+            "bite"
+          ],
+          "ability": "overgrow",
+          "starter": "fire"
+        },
+        {
+          "name": "fuecoco",
+          "level": "8",
+          "moves": [
+            "tackle",
+            "leer",
+            "ember",
+            "round"
+          ],
+          "ability": "blaze",
+          "starter": "water"
+        },
+        {
+          "name": "quaxly",
+          "level": "8",
+          "moves": [
+            "pound",
+            "growl",
+            "water-gun",
+            "work-up"
+          ],
+          "ability": "torrent",
+          "starter": "grass"
+        },
+        {
+          "name": "pawmi",
+          "level": "9",
+          "moves": [
+            "thunder-shock"
+          ],
+          "ability": "static",
+          "tera": "electric"
         }
       ]
     },
@@ -38995,6 +39103,7 @@
             "bite"
           ],
           "ability": "overgrow",
+          "tera": "grass",
           "starter": "fire"
         },
         {
@@ -39007,6 +39116,7 @@
             "work-up"
           ],
           "ability": "torrent",
+          "tera": "water",
           "starter": "grass"
         },
         {
@@ -39019,6 +39129,7 @@
             "round"
           ],
           "ability": "blaze",
+          "tera": "fire",
           "starter": "water"
         }
       ]
@@ -39072,6 +39183,7 @@
             "quick-attack"
           ],
           "ability": "overgrow",
+          "tera": "grass",
           "starter": "fire"
         },
         {
@@ -39083,6 +39195,7 @@
             "aqua-jet"
           ],
           "ability": "torrent",
+          "tera": "water",
           "starter": "grass"
         },
         {
@@ -39094,6 +39207,7 @@
             "lick"
           ],
           "ability": "blaze",
+          "tera": "fire",
           "starter": "water"
         }
       ]
@@ -39148,6 +39262,7 @@
             "quick-attack"
           ],
           "ability": "overgrow",
+          "tera": "grass",
           "starter": "fire"
         },
         {
@@ -39159,6 +39274,7 @@
             "aqua-jet"
           ],
           "ability": "torrent",
+          "tera": "water",
           "starter": "grass"
         },
         {
@@ -39170,6 +39286,7 @@
             "lick"
           ],
           "ability": "blaze",
+          "tera": "fire",
           "starter": "water"
         }
       ]
@@ -39786,7 +39903,8 @@
             "toxic",
             "protect"
           ],
-          "ability": "water-absorb"
+          "ability": "water-absorb",
+          "tera": "ground"
         }
       ]
     },
@@ -39852,7 +39970,8 @@
             "brick-break",
             "stone-edge"
           ],
-          "ability": "mold-breaker"
+          "ability": "mold-breaker",
+          "tera": "steel"
         }
       ]
     },
@@ -39918,7 +40037,8 @@
             "throat-chop",
             "liquidation"
           ],
-          "ability": "scrappy"
+          "ability": "scrappy",
+          "tera": "flying"
         }
       ]
     },
@@ -39983,7 +40103,8 @@
             "brick-break",
             "glaive-rush"
           ],
-          "ability": "thermal-exchange"
+          "ability": "thermal-exchange",
+          "tera": "dragon"
         }
       ]
     },
@@ -40060,7 +40181,8 @@
             "earth-power",
             "dazzling-gleam"
           ],
-          "ability": "toxic-debris"
+          "ability": "toxic-debris",
+          "tera": "rock"
         }
       ]
     },
@@ -40138,6 +40260,7 @@
             "play-rough"
           ],
           "ability": "overgrow",
+          "tera": "grass",
           "starter": "fire"
         },
         {
@@ -40150,6 +40273,7 @@
             "ice-spinner"
           ],
           "ability": "torrent",
+          "tera": "water",
           "starter": "grass"
         },
         {
@@ -40162,6 +40286,7 @@
             "snarl"
           ],
           "ability": "blaze",
+          "tera": "fire",
           "starter": "water"
         }
       ]
