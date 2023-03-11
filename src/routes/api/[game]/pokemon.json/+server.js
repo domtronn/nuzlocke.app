@@ -15,7 +15,7 @@ const patchTypes = (pkmn, typeMap) => {
   })
 }
 
-const patchPokemon = (pkmn, patches) => {
+const patchPokemon = (pkmn, patches, fakemon) => {
   return pkmn.map((p) => {
     const patch = patches[p.alias] || patches[p.sprite] || {};
     const baseStats = {
@@ -31,12 +31,12 @@ const patchPokemon = (pkmn, patches) => {
       baseStats,
       total
     };
-  });
+  }).concat(Object.values(fakemon || {}));
 }
 
 export async function GET({ params }) {
   const game = games[params.game];
-  const { pokemon } = patches[params.game] || {};
+  const { pokemon, fakemon } = patches[params.game] || {};
 
   if (!game) return new Response('', { status: 404 });
   if (!game.patched && !game.filter)
@@ -47,7 +47,7 @@ export async function GET({ params }) {
 
   let items = base
   if (game.filter) items = patchTypes(items, LegacyTypeMap[game.filter])
-  if (game.patched) items = patchPokemon(items, pokemon)
+  if (game.patched) items = patchPokemon(items, pokemon, fakemon)
 
   return new Response(JSON.stringify(items), {
     headers: {
