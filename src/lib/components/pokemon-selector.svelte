@@ -115,7 +115,7 @@
     if (sid === 1) statusComplete = ['poke-ball', 'friend-ball', 'heavy-ball', 'master-ball']
     if (sid === 5) statusComplete = ['thick-club', 'quick-claw', 'rare-bone', 'dragon-fang', 'sharp-beak']
     if (sid === 6) statusComplete = ['health-av-candy', 'tapunium-z--held', 'revive', 'electric-gem', 'max-revive']
-    if (sid === 7) statusComplete = ['revival-herb', 'revival-herb', 'starf-berry']
+    if (sid === 100) statusComplete = ['revival-herb', 'revival-herb', 'starf-berry']
   }
 
   const { open } = getContext('simple-modal')
@@ -130,7 +130,7 @@
 
   const handleReveal = () => {
     hidden = false
-    _animateStatus(7)
+    _animateStatus(100)
   }
 
   $: gray = NuzlockeGroups.Unavailable.includes(status?.id)
