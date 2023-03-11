@@ -13038,6 +13038,1475 @@
       }
     ]
   },
+  "1r": {
+    "name": "Brock (Rematch)",
+    "speciality": "rock",
+    "img": "/leaders/frlg-brock",
+    "pokemon": [
+      {
+        "name": "gigalith",
+        "level": "-2",
+        "moves": [
+          {
+            "type": "rock",
+            "damage_class": "status",
+            "name": "Stealth Rock",
+            "effect": "Causes damage when opposing Pokémon switch in."
+          },
+          {
+            "power": 100,
+            "type": "rock",
+            "damage_class": "physical",
+            "name": "Stone Edge",
+            "effect": "Has an increased chance for a critical hit."
+          },
+          {
+            "power": 100,
+            "type": "ground",
+            "damage_class": "physical",
+            "name": "Earthquake",
+            "effect": "Inflicts regular damage and can hit Dig users."
+          },
+          {
+            "power": 250,
+            "type": "normal",
+            "damage_class": "physical",
+            "name": "Explosion",
+            "effect": "User faints."
+          }
+        ],
+        "ability": {
+          "name": "Sand Stream",
+          "effect": "Summons a sandstorm that lasts indefinitely upon entering battle."
+        },
+        "abilities": [
+          {
+            "name": "Sand Stream",
+            "effect": "Summons a sandstorm that lasts indefinitely upon entering battle."
+          }
+        ],
+        "held": {
+          "sprite": "smooth-rock",
+          "name": "Smooth Rock",
+          "effect": "Held: Sandstorm by the holder lasts 8 rounds instead of 5."
+        },
+        "sprite": "526",
+        "types": [
+          "rock"
+        ],
+        "stats": {
+          "hp": 85,
+          "atk": 135,
+          "def": 130,
+          "spa": 60,
+          "spd": 80,
+          "spe": 25
+        }
+      },
+      {
+        "name": "tyranitar",
+        "level": "-2",
+        "moves": [
+          {
+            "power": 100,
+            "type": "rock",
+            "damage_class": "physical",
+            "name": "Stone Edge",
+            "effect": "Has an increased chance for a critical hit."
+          },
+          {
+            "power": 75,
+            "type": "fire",
+            "damage_class": "physical",
+            "name": "Fire Punch",
+            "effect": "Has a 10% chance to burn the target."
+          },
+          {
+            "power": 80,
+            "type": "dark",
+            "damage_class": "physical",
+            "name": "Crunch",
+            "effect": "Has a 20% chance to lower the target's Defense by one stage."
+          },
+          {
+            "type": "dragon",
+            "damage_class": "status",
+            "name": "Dragon Dance",
+            "effect": "Raises the user's Attack and Speed by one stage."
+          }
+        ],
+        "ability": {
+          "name": "Sand Stream",
+          "effect": "Summons a sandstorm that lasts indefinitely upon entering battle."
+        },
+        "abilities": [
+          {
+            "name": "Sand Stream",
+            "effect": "Summons a sandstorm that lasts indefinitely upon entering battle."
+          }
+        ],
+        "held": {
+          "sprite": "weakness-policy",
+          "name": "Weakness Policy",
+          "effect": "Held: When the holder is hit by a super effective move, its Attack and Special Attack raise by two stages."
+        },
+        "sprite": "248",
+        "types": [
+          "rock",
+          "dark"
+        ],
+        "stats": {
+          "hp": 100,
+          "atk": 134,
+          "def": 110,
+          "spa": 95,
+          "spd": 100,
+          "spe": 61
+        }
+      },
+      {
+        "name": "lycanroc",
+        "level": "-2",
+        "moves": [
+          {
+            "power": 40,
+            "priority": 1,
+            "type": "rock",
+            "damage_class": "physical",
+            "name": "Accelerock"
+          },
+          {
+            "power": 100,
+            "type": "rock",
+            "damage_class": "physical",
+            "name": "Stone Edge",
+            "effect": "Has an increased chance for a critical hit."
+          },
+          {
+            "power": 120,
+            "type": "fighting",
+            "damage_class": "physical",
+            "name": "Close Combat",
+            "effect": "Lowers the user's Defense and Special Defense by one stage after inflicting damage."
+          },
+          {
+            "power": 80,
+            "type": "dark",
+            "damage_class": "physical",
+            "name": "Crunch",
+            "effect": "Has a 20% chance to lower the target's Defense by one stage."
+          }
+        ],
+        "ability": {
+          "name": "Tough Claws",
+          "effect": "Strengthens moves that make contact to 1.33× their power."
+        },
+        "abilities": [
+          {
+            "name": "Tough Claws",
+            "effect": "Strengthens moves that make contact to 1.33× their power."
+          }
+        ],
+        "held": {
+          "sprite": "life-orb",
+          "name": "Life Orb",
+          "effect": "Held: Holder's moves inflict 30% extra damage, but cost 10% max HP."
+        },
+        "sprite": "745",
+        "types": [
+          "rock"
+        ],
+        "stats": {
+          "hp": 75,
+          "atk": 115,
+          "def": 65,
+          "spa": 55,
+          "spd": 65,
+          "spe": 112
+        },
+        "icon": "lycanroc-midday"
+      },
+      {
+        "name": "omastar",
+        "level": "-2",
+        "moves": [
+          {
+            "type": "normal",
+            "damage_class": "status",
+            "name": "Shell Smash",
+            "effect": "Raises user's Attack, Special Attack, and Speed by two stages.  Lower user's Defense and Special Defense by one stage."
+          },
+          {
+            "power": 120,
+            "type": "rock",
+            "damage_class": "special",
+            "name": "Meteor Beam"
+          },
+          {
+            "power": 90,
+            "type": "ice",
+            "damage_class": "special",
+            "name": "Ice Beam",
+            "effect": "Has a 10% chance to freeze the target."
+          },
+          {
+            "power": 90,
+            "type": "water",
+            "damage_class": "special",
+            "name": "Surf",
+            "effect": "Inflicts regular damage and can hit Dive users."
+          }
+        ],
+        "ability": {
+          "name": "Battle Armor",
+          "effect": "Protects against critical hits."
+        },
+        "abilities": [
+          {
+            "name": "Battle Armor",
+            "effect": "Protects against critical hits."
+          }
+        ],
+        "held": {
+          "sprite": "power-herb",
+          "name": "Power Herb",
+          "effect": "Held: Both turns of a two-turn charge move happen at once. Consumed upon use."
+        },
+        "sprite": "139",
+        "types": [
+          "rock",
+          "water"
+        ],
+        "stats": {
+          "hp": 70,
+          "atk": 60,
+          "def": 125,
+          "spa": 115,
+          "spd": 70,
+          "spe": 55
+        }
+      },
+      {
+        "name": "sandslash",
+        "level": "-2",
+        "moves": [
+          {
+            "type": "normal",
+            "damage_class": "status",
+            "name": "Swords Dance",
+            "effect": "Raises the user's Attack by two stages."
+          },
+          {
+            "power": 100,
+            "type": "ground",
+            "damage_class": "physical",
+            "name": "Earthquake",
+            "effect": "Inflicts regular damage and can hit Dig users."
+          },
+          {
+            "power": 100,
+            "type": "rock",
+            "damage_class": "physical",
+            "name": "Stone Edge",
+            "effect": "Has an increased chance for a critical hit."
+          },
+          {
+            "power": 80,
+            "type": "bug",
+            "damage_class": "physical",
+            "name": "X-Scissor"
+          }
+        ],
+        "ability": {
+          "name": "Sand Rush",
+          "effect": "Doubles Speed during a sandstorm.  Protects against sandstorm damage."
+        },
+        "abilities": [
+          {
+            "name": "Sand Rush",
+            "effect": "Doubles Speed during a sandstorm.  Protects against sandstorm damage."
+          }
+        ],
+        "held": {
+          "sprite": "soft-sand",
+          "name": "Soft Sand",
+          "effect": "Held: Ground-Type moves from holder do 20% more damage."
+        },
+        "sprite": "28",
+        "types": [
+          "ground"
+        ],
+        "stats": {
+          "hp": 75,
+          "atk": 110,
+          "def": 120,
+          "spa": 25,
+          "spd": 65,
+          "spe": 65
+        }
+      },
+      {
+        "name": "aerodactyl",
+        "level": "-2",
+        "moves": [
+          {
+            "power": 100,
+            "type": "rock",
+            "damage_class": "physical",
+            "name": "Stone Edge",
+            "effect": "Has an increased chance for a critical hit."
+          },
+          {
+            "power": 100,
+            "type": "ground",
+            "damage_class": "physical",
+            "name": "Earthquake",
+            "effect": "Inflicts regular damage and can hit Dig users."
+          },
+          {
+            "power": 40,
+            "type": "flying",
+            "damage_class": "physical",
+            "name": "Dual Wingbeat"
+          },
+          {
+            "type": "dragon",
+            "damage_class": "status",
+            "name": "Dragon Dance",
+            "effect": "Raises the user's Attack and Speed by one stage."
+          }
+        ],
+        "ability": {
+          "name": "Tough Claws",
+          "effect": "Strengthens moves that make contact to 1.33× their power."
+        },
+        "abilities": [
+          {
+            "name": "Tough Claws",
+            "effect": "Strengthens moves that make contact to 1.33× their power."
+          }
+        ],
+        "held": {
+          "sprite": "aerodactylite",
+          "name": "Aerodactylite",
+          "effect": "Held: Allows Aerodactyl to Mega Evolve into Mega Aerodactyl."
+        },
+        "sprite": "142",
+        "types": [
+          "rock",
+          "flying"
+        ],
+        "stats": {
+          "hp": 80,
+          "atk": 105,
+          "def": 65,
+          "spa": 60,
+          "spd": 75,
+          "spe": 130
+        }
+      }
+    ]
+  },
+  "2r": {
+    "name": "Misty (Rematch)",
+    "speciality": "water",
+    "img": "/leaders/frlg-misty",
+    "pokemon": [
+      {
+        "name": "politoed",
+        "level": "-2",
+        "moves": [
+          {
+            "power": 80,
+            "type": "water",
+            "damage_class": "special",
+            "name": "Scald",
+            "effect": "Has a 30% chance to burn the target."
+          },
+          {
+            "power": 90,
+            "type": "ice",
+            "damage_class": "special",
+            "name": "Ice Beam",
+            "effect": "Has a 10% chance to freeze the target."
+          },
+          {
+            "type": "psychic",
+            "damage_class": "status",
+            "name": "Hypnosis",
+            "effect": "Puts the target to sleep."
+          },
+          {
+            "power": 60,
+            "type": "water",
+            "damage_class": "physical",
+            "name": "Flip Turn"
+          }
+        ],
+        "ability": {
+          "name": "Drizzle",
+          "effect": "Summons rain that lasts indefinitely upon entering battle."
+        },
+        "abilities": [
+          {
+            "name": "Drizzle",
+            "effect": "Summons rain that lasts indefinitely upon entering battle."
+          }
+        ],
+        "held": {
+          "sprite": "damp-rock",
+          "name": "Damp Rock",
+          "effect": "Held: Rain Dance by the holder lasts 8 rounds instead of 5."
+        },
+        "sprite": "186",
+        "types": [
+          "water"
+        ],
+        "stats": {
+          "hp": 90,
+          "atk": 75,
+          "def": 75,
+          "spa": 90,
+          "spd": 100,
+          "spe": 70
+        }
+      },
+      {
+        "name": "greninja",
+        "level": "-2",
+        "moves": [
+          {
+            "power": 80,
+            "type": "dark",
+            "damage_class": "special",
+            "name": "Dark Pulse",
+            "effect": "Has a 20% chance to make the target flinch."
+          },
+          {
+            "power": 15,
+            "priority": 1,
+            "type": "water",
+            "damage_class": "special",
+            "name": "Water Shuriken",
+            "effect": "Hits 2–5 times."
+          },
+          {
+            "power": 90,
+            "type": "ice",
+            "damage_class": "special",
+            "name": "Ice Beam",
+            "effect": "Has a 10% chance to freeze the target."
+          },
+          {
+            "type": "grass",
+            "damage_class": "special",
+            "name": "Grass Knot",
+            "effect": "Inflicts more damage to heavier targets, with a maximum of 120 power."
+          }
+        ],
+        "ability": {
+          "name": "Protean",
+          "effect": "Changes the bearer's type to match each move it uses."
+        },
+        "abilities": [
+          {
+            "name": "Protean",
+            "effect": "Changes the bearer's type to match each move it uses."
+          }
+        ],
+        "held": {
+          "sprite": "life-orb",
+          "name": "Life Orb",
+          "effect": "Held: Holder's moves inflict 30% extra damage, but cost 10% max HP."
+        },
+        "sprite": "658",
+        "types": [
+          "water",
+          "dark"
+        ],
+        "stats": {
+          "hp": 72,
+          "atk": 95,
+          "def": 67,
+          "spa": 103,
+          "spd": 71,
+          "spe": 122
+        }
+      },
+      {
+        "name": "gorebyss",
+        "level": "-2",
+        "moves": [
+          {
+            "type": "normal",
+            "damage_class": "status",
+            "name": "Shell Smash",
+            "effect": "Raises user's Attack, Special Attack, and Speed by two stages.  Lower user's Defense and Special Defense by one stage."
+          },
+          {
+            "power": 90,
+            "type": "water",
+            "damage_class": "special",
+            "name": "Surf",
+            "effect": "Inflicts regular damage and can hit Dive users."
+          },
+          {
+            "power": 95,
+            "type": "fairy",
+            "damage_class": "special",
+            "name": "Moonblast",
+            "effect": "Has a 30% chance to lower the target's Special Attack by one stage."
+          },
+          {
+            "power": 90,
+            "type": "ice",
+            "damage_class": "special",
+            "name": "Ice Beam",
+            "effect": "Has a 10% chance to freeze the target."
+          }
+        ],
+        "ability": {
+          "name": "Regenerator",
+          "effect": "Heals for 1/3 max HP upon switching out."
+        },
+        "abilities": [
+          {
+            "name": "Regenerator",
+            "effect": "Heals for 1/3 max HP upon switching out."
+          }
+        ],
+        "held": {
+          "sprite": "white-herb",
+          "name": "White Herb",
+          "effect": "Held: Resets all lowered stats to normal at end of turn. Consumed after use."
+        },
+        "sprite": "368",
+        "types": [
+          "water",
+          "fairy"
+        ],
+        "stats": {
+          "hp": 55,
+          "atk": 84,
+          "def": 105,
+          "spa": 104,
+          "spd": 75,
+          "spe": 52
+        }
+      },
+      {
+        "name": "kingdra",
+        "level": "-2",
+        "moves": [
+          {
+            "power": 85,
+            "type": "dragon",
+            "damage_class": "special",
+            "name": "Dragon Pulse"
+          },
+          {
+            "power": 90,
+            "type": "water",
+            "damage_class": "special",
+            "name": "Surf",
+            "effect": "Inflicts regular damage and can hit Dive users."
+          },
+          {
+            "power": 110,
+            "type": "flying",
+            "damage_class": "special",
+            "name": "Hurricane",
+            "effect": "Has a 30% chance to confuse the target."
+          },
+          {
+            "power": 90,
+            "type": "ice",
+            "damage_class": "special",
+            "name": "Ice Beam",
+            "effect": "Has a 10% chance to freeze the target."
+          }
+        ],
+        "ability": {
+          "name": "Swift Swim",
+          "effect": "Doubles Speed during rain."
+        },
+        "abilities": [
+          {
+            "name": "Swift Swim",
+            "effect": "Doubles Speed during rain."
+          }
+        ],
+        "held": {
+          "sprite": "life-orb",
+          "name": "Life Orb",
+          "effect": "Held: Holder's moves inflict 30% extra damage, but cost 10% max HP."
+        },
+        "sprite": "230",
+        "types": [
+          "water",
+          "dragon"
+        ],
+        "stats": {
+          "hp": 75,
+          "atk": 95,
+          "def": 95,
+          "spa": 95,
+          "spd": 95,
+          "spe": 85
+        }
+      },
+      {
+        "name": "inteleon",
+        "level": "-2",
+        "moves": [
+          {
+            "power": 80,
+            "type": "water",
+            "damage_class": "special",
+            "name": "Snipe Shot",
+            "effect": "Sets Reflect on the user's side of the field after inflicting damage."
+          },
+          {
+            "power": 80,
+            "type": "dark",
+            "damage_class": "special",
+            "name": "Dark Pulse",
+            "effect": "Has a 20% chance to make the target flinch."
+          },
+          {
+            "power": 90,
+            "type": "ice",
+            "damage_class": "special",
+            "name": "Ice Beam",
+            "effect": "Has a 10% chance to freeze the target."
+          },
+          {
+            "power": 75,
+            "type": "flying",
+            "damage_class": "special",
+            "name": "Air Slash",
+            "effect": "Has a 30% chance to make the target flinch."
+          }
+        ],
+        "ability": {
+          "name": "Sniper",
+          "effect": "Strengthens critical hits to inflict 3× damage rather than 2×."
+        },
+        "abilities": [
+          {
+            "name": "Sniper",
+            "effect": "Strengthens critical hits to inflict 3× damage rather than 2×."
+          }
+        ],
+        "held": {
+          "sprite": "scope-lens",
+          "name": "Scope Lens",
+          "effect": "Held: Raises the holder's critical hit ratio by one stage."
+        },
+        "sprite": "818",
+        "types": [
+          "water"
+        ],
+        "stats": {
+          "hp": 70,
+          "atk": 85,
+          "def": 65,
+          "spa": 125,
+          "spd": 65,
+          "spe": 120
+        }
+      },
+      {
+        "name": "gyarados",
+        "level": "-2",
+        "moves": [
+          {
+            "type": "dragon",
+            "damage_class": "status",
+            "name": "Dragon Dance",
+            "effect": "Raises the user's Attack and Speed by one stage."
+          },
+          {
+            "power": 80,
+            "type": "water",
+            "damage_class": "physical",
+            "name": "Waterfall",
+            "effect": "Has a 20% chance to make the target flinch."
+          },
+          {
+            "power": 80,
+            "type": "dark",
+            "damage_class": "physical",
+            "name": "Crunch",
+            "effect": "Has a 20% chance to lower the target's Defense by one stage."
+          },
+          {
+            "power": 100,
+            "type": "ground",
+            "damage_class": "physical",
+            "name": "Earthquake",
+            "effect": "Inflicts regular damage and can hit Dig users."
+          }
+        ],
+        "ability": {
+          "name": "Mold Breaker",
+          "effect": "Bypasses targets' abilities if they could hinder or prevent a move."
+        },
+        "abilities": [
+          {
+            "name": "Mold Breaker",
+            "effect": "Bypasses targets' abilities if they could hinder or prevent a move."
+          }
+        ],
+        "held": {
+          "sprite": "gyaradosite",
+          "name": "Gyaradosite",
+          "effect": "Held: Allows Gyarados to Mega Evolve into Mega Gyarados."
+        },
+        "sprite": "130",
+        "types": [
+          "water",
+          "flying"
+        ],
+        "stats": {
+          "hp": 95,
+          "atk": 125,
+          "def": 79,
+          "spa": 60,
+          "spd": 100,
+          "spe": 81
+        }
+      }
+    ]
+  },
+  "3r": {
+    "name": "Lt. Surge (Rematch)",
+    "speciality": "electric",
+    "img": "/leaders/frlg-surge",
+    "pokemon": [
+      {
+        "name": "pachirisu",
+        "level": "-2",
+        "moves": [
+          {
+            "type": "psychic",
+            "damage_class": "status",
+            "name": "Reflect",
+            "effect": "Reduces damage from physical attacks by half."
+          },
+          {
+            "type": "psychic",
+            "damage_class": "status",
+            "name": "Light Screen",
+            "effect": "Reduces damage from special attacks by 50% for five turns."
+          },
+          {
+            "power": 20,
+            "type": "electric",
+            "damage_class": "physical",
+            "name": "Nuzzle",
+            "effect": "Has a 100% chance to paralyze the target."
+          },
+          {
+            "power": 70,
+            "type": "bug",
+            "damage_class": "physical",
+            "name": "U-turn",
+            "effect": "User must switch out after attacking."
+          }
+        ],
+        "ability": {
+          "name": "Prankster",
+          "effect": "Raises non-damaging moves' priority by one stage."
+        },
+        "abilities": [
+          {
+            "name": "Prankster",
+            "effect": "Raises non-damaging moves' priority by one stage."
+          }
+        ],
+        "held": {
+          "sprite": "light-clay",
+          "name": "Light Clay",
+          "effect": "Held: Light Screen and Reflect used by the holder last 8 rounds instead of 5."
+        },
+        "sprite": "417",
+        "types": [
+          "electric"
+        ],
+        "stats": {
+          "hp": 75,
+          "atk": 45,
+          "def": 70,
+          "spa": 95,
+          "spd": 90,
+          "spe": 95
+        }
+      },
+      {
+        "name": "dracozolt",
+        "level": "-2",
+        "moves": [
+          {
+            "power": 85,
+            "type": "electric",
+            "damage_class": "physical",
+            "name": "Bolt Beak"
+          },
+          {
+            "power": 80,
+            "type": "dragon",
+            "damage_class": "physical",
+            "name": "Dragon Claw"
+          },
+          {
+            "power": 80,
+            "type": "dark",
+            "damage_class": "physical",
+            "name": "Crunch",
+            "effect": "Has a 20% chance to lower the target's Defense by one stage."
+          },
+          {
+            "power": 65,
+            "type": "fire",
+            "damage_class": "physical",
+            "name": "Fire Fang",
+            "effect": "Has a 10% chance to burn the target and a $effect_chance% chance to make the target flinch."
+          }
+        ],
+        "ability": {
+          "name": "Hustle",
+          "effect": "Strengthens physical moves to inflict 1.5× damage, but decreases their accuracy to 0.8×."
+        },
+        "abilities": [
+          {
+            "name": "Hustle",
+            "effect": "Strengthens physical moves to inflict 1.5× damage, but decreases their accuracy to 0.8×."
+          }
+        ],
+        "held": {
+          "sprite": "choice-scarf",
+          "name": "Choice Scarf",
+          "effect": "Held: Increases Speed by 50%, but restricts the holder to only one move."
+        },
+        "sprite": "880",
+        "types": [
+          "electric",
+          "dragon"
+        ],
+        "stats": {
+          "hp": 90,
+          "atk": 100,
+          "def": 90,
+          "spa": 80,
+          "spd": 70,
+          "spe": 75
+        }
+      },
+      {
+        "name": "dedenne",
+        "level": "-2",
+        "moves": [
+          {
+            "power": 70,
+            "type": "electric",
+            "damage_class": "special",
+            "name": "Rising Voltage"
+          },
+          {
+            "power": 70,
+            "type": "electric",
+            "damage_class": "special",
+            "name": "Volt Switch",
+            "effect": "User must switch out after attacking."
+          },
+          {
+            "power": 80,
+            "type": "fairy",
+            "damage_class": "special",
+            "name": "Dazzling Gleam"
+          },
+          {
+            "type": "grass",
+            "damage_class": "special",
+            "name": "Grass Knot",
+            "effect": "Inflicts more damage to heavier targets, with a maximum of 120 power."
+          }
+        ],
+        "ability": {
+          "name": "Electric Surge",
+          "effect": "When this Pokémon enters battle, it changes the terrain to Electric Terrain."
+        },
+        "abilities": [
+          {
+            "name": "Electric Surge",
+            "effect": "When this Pokémon enters battle, it changes the terrain to Electric Terrain."
+          }
+        ],
+        "held": {
+          "sprite": "terrain-extender",
+          "name": "Terrain Extender",
+          "effect": "Held: Extends the holder's Terrain effects to 8 turns."
+        },
+        "sprite": "702",
+        "types": [
+          "electric",
+          "fairy"
+        ],
+        "stats": {
+          "hp": 67,
+          "atk": 58,
+          "def": 57,
+          "spa": 91,
+          "spd": 67,
+          "spe": 101
+        }
+      },
+      {
+        "name": "rotom",
+        "level": "-2",
+        "moves": [
+          {
+            "type": "dark",
+            "damage_class": "status",
+            "name": "Nasty Plot",
+            "effect": "Raises the user's Special Attack by two stages."
+          },
+          {
+            "power": 70,
+            "type": "electric",
+            "damage_class": "special",
+            "name": "Rising Voltage"
+          },
+          {
+            "name": "Hidden Power",
+            "type": "grass",
+            "power": "60",
+            "damage_class": "special"
+          },
+          {
+            "power": 110,
+            "type": "water",
+            "damage_class": "special",
+            "name": "Hydro Pump"
+          }
+        ],
+        "ability": {
+          "name": "Levitate",
+          "effect": "Evades ground moves."
+        },
+        "abilities": [
+          {
+            "name": "Levitate",
+            "effect": "Evades ground moves."
+          }
+        ],
+        "held": {
+          "sprite": "life-orb",
+          "name": "Life Orb",
+          "effect": "Held: Holder's moves inflict 30% extra damage, but cost 10% max HP."
+        },
+        "sprite": "10009",
+        "types": [
+          "electric",
+          "water"
+        ],
+        "stats": {
+          "hp": 50,
+          "atk": 65,
+          "def": 107,
+          "spa": 105,
+          "spd": 107,
+          "spe": 86
+        },
+        "icon": "rotom-wash"
+      },
+      {
+        "name": "rotom",
+        "level": "-2",
+        "moves": [
+          {
+            "power": 90,
+            "type": "electric",
+            "damage_class": "special",
+            "name": "Thunderbolt",
+            "effect": "Has a 10% chance to paralyze the target."
+          },
+          {
+            "power": 130,
+            "type": "grass",
+            "damage_class": "special",
+            "name": "Leaf Storm",
+            "effect": "Lowers the user's Special Attack by two stages after inflicting damage."
+          },
+          {
+            "name": "Hidden Power",
+            "type": "ice",
+            "power": "60",
+            "damage_class": "special"
+          },
+          {
+            "type": "dark",
+            "damage_class": "status",
+            "name": "Nasty Plot",
+            "effect": "Raises the user's Special Attack by two stages."
+          }
+        ],
+        "ability": {
+          "name": "Levitate",
+          "effect": "Evades ground moves."
+        },
+        "abilities": [
+          {
+            "name": "Levitate",
+            "effect": "Evades ground moves."
+          }
+        ],
+        "held": {
+          "sprite": "life-orb",
+          "name": "Life Orb",
+          "effect": "Held: Holder's moves inflict 30% extra damage, but cost 10% max HP."
+        },
+        "sprite": "10012",
+        "types": [
+          "electric",
+          "grass"
+        ],
+        "stats": {
+          "hp": 50,
+          "atk": 65,
+          "def": 107,
+          "spa": 105,
+          "spd": 107,
+          "spe": 86
+        },
+        "icon": "rotom-mow"
+      },
+      {
+        "name": "manectric",
+        "level": "-2",
+        "moves": [
+          {
+            "power": 70,
+            "type": "electric",
+            "damage_class": "special",
+            "name": "Volt Switch",
+            "effect": "User must switch out after attacking."
+          },
+          {
+            "power": 70,
+            "type": "electric",
+            "damage_class": "special",
+            "name": "Rising Voltage"
+          },
+          {
+            "power": 90,
+            "type": "fire",
+            "damage_class": "special",
+            "name": "Flamethrower",
+            "effect": "Has a 10% chance to burn the target."
+          },
+          {
+            "name": "Hidden Power",
+            "type": "grass",
+            "power": "60",
+            "damage_class": "special"
+          }
+        ],
+        "ability": {
+          "name": "Intimidate",
+          "effect": "Lowers opponents' Attack one stage upon entering battle."
+        },
+        "abilities": [
+          {
+            "name": "Intimidate",
+            "effect": "Lowers opponents' Attack one stage upon entering battle."
+          }
+        ],
+        "held": {
+          "sprite": "manectite",
+          "name": "Manectite",
+          "effect": "Held: Allows Manectric to Mega Evolve into Mega Manectric."
+        },
+        "sprite": "310",
+        "types": [
+          "electric"
+        ],
+        "stats": {
+          "hp": 70,
+          "atk": 75,
+          "def": 60,
+          "spa": 105,
+          "spd": 60,
+          "spe": 105
+        }
+      }
+    ]
+  },
+  "4r": {
+    "name": "Erika (Rematch)",
+    "speciality": "grass",
+    "img": "/leaders/frlg-erika",
+    "pokemon": [
+      {
+        "name": "tsareena",
+        "level": "-2",
+        "moves": [
+          {
+            "power": 20,
+            "type": "ice",
+            "damage_class": "physical",
+            "name": "Triple Axel"
+          },
+          {
+            "power": 70,
+            "type": "grass",
+            "damage_class": "physical",
+            "name": "Trop Kick",
+            "effect": "Lowers the target's Attack by one stage after inflicting damage."
+          },
+          {
+            "power": 130,
+            "type": "fighting",
+            "damage_class": "physical",
+            "name": "High Jump Kick",
+            "effect": "If the user misses, it takes half the damage it would have inflicted in recoil."
+          },
+          {
+            "power": 50,
+            "type": "normal",
+            "damage_class": "physical",
+            "name": "Rapid Spin",
+            "effect": "Frees the user from binding moves, removes Leech Seed, and blows away Spikes."
+          }
+        ],
+        "ability": {
+          "name": "Queenly Majesty",
+          "effect": "Opposing Pokémon cannot use priority attacks."
+        },
+        "abilities": [
+          {
+            "name": "Queenly Majesty",
+            "effect": "Opposing Pokémon cannot use priority attacks."
+          }
+        ],
+        "held": {
+          "sprite": "focus-sash",
+          "name": "Focus Sash",
+          "effect": "Held: Holder survives any single-hit attack at 1 HP if at max HP, then the item is consumed."
+        },
+        "sprite": "763",
+        "types": [
+          "grass"
+        ],
+        "stats": {
+          "hp": 72,
+          "atk": 120,
+          "def": 98,
+          "spa": 50,
+          "spd": 98,
+          "spe": 72
+        }
+      },
+      {
+        "name": "hawlucha",
+        "level": "-2",
+        "moves": [
+          {
+            "type": "normal",
+            "damage_class": "status",
+            "name": "Swords Dance",
+            "effect": "Raises the user's Attack by two stages."
+          },
+          {
+            "power": 55,
+            "type": "flying",
+            "damage_class": "physical",
+            "name": "Acrobatics",
+            "effect": "Has double power if the user has no held item."
+          },
+          {
+            "power": 120,
+            "type": "fighting",
+            "damage_class": "physical",
+            "name": "Close Combat",
+            "effect": "Lowers the user's Defense and Special Defense by one stage after inflicting damage."
+          },
+          {
+            "type": "flying",
+            "damage_class": "status",
+            "name": "Roost",
+            "effect": "Heals the user by half its max HP."
+          }
+        ],
+        "ability": {
+          "name": "Unburden",
+          "effect": "Doubles Speed upon using or losing a held item."
+        },
+        "abilities": [
+          {
+            "name": "Unburden",
+            "effect": "Doubles Speed upon using or losing a held item."
+          }
+        ],
+        "held": {
+          "sprite": "grassy-seed",
+          "name": "Grassy Seed",
+          "effect": "Held: Consumed on Grassy Terrain and raises the holder's Defense by one stage."
+        },
+        "sprite": "701",
+        "types": [
+          "fighting",
+          "flying"
+        ],
+        "stats": {
+          "hp": 78,
+          "atk": 92,
+          "def": 75,
+          "spa": 74,
+          "spd": 63,
+          "spe": 118
+        }
+      },
+      {
+        "name": "bellossom",
+        "level": "-2",
+        "moves": [
+          {
+            "type": "grass",
+            "damage_class": "status",
+            "name": "Sleep Powder",
+            "effect": "Puts the target to sleep."
+          },
+          {
+            "type": "bug",
+            "damage_class": "status",
+            "name": "Quiver Dance",
+            "effect": "Raises the user's Special Attack, Special Defense, and Speed by one stage each."
+          },
+          {
+            "power": 75,
+            "type": "grass",
+            "damage_class": "special",
+            "name": "Giga Drain",
+            "effect": "Drains half the damage inflicted to heal the user."
+          },
+          {
+            "power": 80,
+            "type": "fire",
+            "damage_class": "special",
+            "name": "Fiery Dance",
+            "effect": "Has a 50% chance to raise the user's Special Attack by one stage."
+          }
+        ],
+        "ability": {
+          "name": "Chlorophyll",
+          "effect": "Doubles Speed during strong sunlight."
+        },
+        "abilities": [
+          {
+            "name": "Chlorophyll",
+            "effect": "Doubles Speed during strong sunlight."
+          }
+        ],
+        "held": {
+          "sprite": "leftovers",
+          "name": "Leftovers",
+          "effect": "Held: Restores 1/16 (6.25%) holder's max HP at the end of each turn."
+        },
+        "sprite": "182",
+        "types": [
+          "grass"
+        ],
+        "stats": {
+          "hp": 85,
+          "atk": 70,
+          "def": 95,
+          "spa": 90,
+          "spd": 100,
+          "spe": 50
+        }
+      },
+      {
+        "name": "rillaboom",
+        "level": "-2",
+        "moves": [
+          {
+            "type": "normal",
+            "damage_class": "status",
+            "name": "Swords Dance",
+            "effect": "Raises the user's Attack by two stages."
+          },
+          {
+            "power": 70,
+            "type": "grass",
+            "damage_class": "physical",
+            "name": "Grassy Glide"
+          },
+          {
+            "power": 55,
+            "type": "flying",
+            "damage_class": "physical",
+            "name": "Acrobatics",
+            "effect": "Has double power if the user has no held item."
+          },
+          {
+            "power": 95,
+            "type": "ground",
+            "damage_class": "physical",
+            "name": "High Horsepower"
+          }
+        ],
+        "ability": {
+          "name": "Grassy Surge",
+          "effect": "When this Pokémon enters battle, it changes the terrain to Grassy Terrain."
+        },
+        "abilities": [
+          {
+            "name": "Grassy Surge",
+            "effect": "When this Pokémon enters battle, it changes the terrain to Grassy Terrain."
+          }
+        ],
+        "held": {
+          "sprite": "grassy-seed",
+          "name": "Grassy Seed",
+          "effect": "Held: Consumed on Grassy Terrain and raises the holder's Defense by one stage."
+        },
+        "sprite": "812",
+        "types": [
+          "grass"
+        ],
+        "stats": {
+          "hp": 100,
+          "atk": 125,
+          "def": 90,
+          "spa": 60,
+          "spd": 70,
+          "spe": 85
+        }
+      },
+      {
+        "name": "serperior",
+        "level": "-2",
+        "moves": [
+          {
+            "power": 130,
+            "type": "grass",
+            "damage_class": "special",
+            "name": "Leaf Storm",
+            "effect": "Lowers the user's Special Attack by two stages after inflicting damage."
+          },
+          {
+            "power": 75,
+            "type": "grass",
+            "damage_class": "special",
+            "name": "Giga Drain",
+            "effect": "Drains half the damage inflicted to heal the user."
+          },
+          {
+            "power": 85,
+            "type": "dragon",
+            "damage_class": "special",
+            "name": "Dragon Pulse"
+          },
+          {
+            "type": "grass",
+            "damage_class": "status",
+            "name": "Leech Seed",
+            "effect": "Seeds the target, stealing HP from it every turn."
+          }
+        ],
+        "ability": {
+          "name": "Contrary",
+          "effect": "Inverts stat changes."
+        },
+        "abilities": [
+          {
+            "name": "Contrary",
+            "effect": "Inverts stat changes."
+          }
+        ],
+        "held": {
+          "sprite": "focus-sash",
+          "name": "Focus Sash",
+          "effect": "Held: Holder survives any single-hit attack at 1 HP if at max HP, then the item is consumed."
+        },
+        "sprite": "497",
+        "types": [
+          "grass"
+        ],
+        "stats": {
+          "hp": 75,
+          "atk": 75,
+          "def": 95,
+          "spa": 75,
+          "spd": 95,
+          "spe": 113
+        }
+      },
+      {
+        "name": "venusaur",
+        "level": "-2",
+        "moves": [
+          {
+            "power": 75,
+            "type": "grass",
+            "damage_class": "special",
+            "name": "Giga Drain",
+            "effect": "Drains half the damage inflicted to heal the user."
+          },
+          {
+            "power": 90,
+            "type": "poison",
+            "damage_class": "special",
+            "name": "Sludge Bomb",
+            "effect": "Has a 30% chance to poison the target."
+          },
+          {
+            "power": 90,
+            "type": "ground",
+            "damage_class": "special",
+            "name": "Earth Power",
+            "effect": "Has a 10% chance to lower the target's Special Defense by one stage."
+          },
+          {
+            "type": "grass",
+            "damage_class": "status",
+            "name": "Synthesis",
+            "effect": "Heals the user by half its max HP.  Affected by weather."
+          }
+        ],
+        "ability": {
+          "name": "Thick Fat",
+          "effect": "Halves damage from fire and ice moves."
+        },
+        "abilities": [
+          {
+            "name": "Thick Fat",
+            "effect": "Halves damage from fire and ice moves."
+          }
+        ],
+        "held": {
+          "sprite": "venusaurite",
+          "name": "Venusaurite",
+          "effect": "Held: Allows Venusaur to Mega Evolve into Mega Venusaur."
+        },
+        "sprite": "3",
+        "types": [
+          "grass",
+          "poison"
+        ],
+        "stats": {
+          "hp": 80,
+          "atk": 82,
+          "def": 83,
+          "spa": 100,
+          "spd": 100,
+          "spe": 80
+        }
+      }
+    ]
+  },
   "ev4": {
     "name": "Admin Archer",
     "speciality": "",

@@ -30808,6 +30808,397 @@
         }
       ]
     },
+    "1r": {
+      "name": "Brock (Rematch)",
+      "speciality": "rock",
+      "img": "/leaders/frlg-brock",
+      "pokemon": [
+        {
+          "name": "gigalith",
+          "level": "-2",
+          "moves": [
+            "stealth-rock",
+            "stone-edge",
+            "earthquake",
+            "explosion"
+          ],
+          "ability": "sand-stream",
+          "abilities": [
+            "sand-stream"
+          ],
+          "held": "smooth-rock"
+        },
+        {
+          "name": "tyranitar",
+          "level": "-2",
+          "moves": [
+            "stone-edge",
+            "fire-punch",
+            "crunch",
+            "dragon-dance"
+          ],
+          "ability": "sand-stream",
+          "abilities": [
+            "sand-stream"
+          ],
+          "held": "weakness-policy"
+        },
+        {
+          "name": "lycanroc-midday",
+          "level": "-2",
+          "moves": [
+            "accelerock",
+            "stone-edge",
+            "close-combat",
+            "crunch"
+          ],
+          "ability": "tough-claws",
+          "abilities": [
+            "tough-claws"
+          ],
+          "held": "life-orb",
+          "sprite": "lycanroc-midday"
+        },
+        {
+          "name": "omastar",
+          "level": "-2",
+          "moves": [
+            "shell-smash",
+            "meteor-beam",
+            "ice-beam",
+            "surf"
+          ],
+          "ability": "battle-armor",
+          "abilities": [
+            "battle-armor"
+          ],
+          "held": "power-herb"
+        },
+        {
+          "name": "sandslash",
+          "level": "-2",
+          "moves": [
+            "swords-dance",
+            "earthquake",
+            "stone-edge",
+            "x-scissor"
+          ],
+          "ability": "sand-rush",
+          "abilities": [
+            "sand-rush"
+          ],
+          "held": "soft-sand"
+        },
+        {
+          "name": "aerodactyl",
+          "level": "-2",
+          "moves": [
+            "stone-edge",
+            "earthquake",
+            "dual-wingbeat",
+            "dragon-dance"
+          ],
+          "ability": "tough-claws",
+          "abilities": [
+            "tough-claws"
+          ],
+          "held": "aerodactylite"
+        }
+      ]
+    },
+    "2r": {
+      "name": "Misty (Rematch)",
+      "speciality": "water",
+      "img": "/leaders/frlg-misty",
+      "pokemon": [
+        {
+          "name": "politoed",
+          "level": "-2",
+          "moves": [
+            "scald",
+            "ice-beam",
+            "hypnosis",
+            "flip-turn"
+          ],
+          "ability": "drizzle",
+          "abilities": [
+            "drizzle"
+          ],
+          "held": "damp-rock"
+        },
+        {
+          "name": "greninja",
+          "level": "-2",
+          "moves": [
+            "dark-pulse",
+            "water-shuriken",
+            "ice-beam",
+            "grass-knot"
+          ],
+          "ability": "protean",
+          "abilities": [
+            "protean"
+          ],
+          "held": "life-orb"
+        },
+        {
+          "name": "gorebyss",
+          "level": "-2",
+          "moves": [
+            "shell-smash",
+            "surf",
+            "moonblast",
+            "ice-beam"
+          ],
+          "ability": "regenerator",
+          "abilities": [
+            "regenerator"
+          ],
+          "held": "white-herb"
+        },
+        {
+          "name": "kingdra",
+          "level": "-2",
+          "moves": [
+            "dragon-pulse",
+            "surf",
+            "hurricane",
+            "ice-beam"
+          ],
+          "ability": "swift-swim",
+          "abilities": [
+            "swift-swim"
+          ],
+          "held": "life-orb"
+        },
+        {
+          "name": "inteleon",
+          "level": "-2",
+          "moves": [
+            "snipe-shot",
+            "dark-pulse",
+            "ice-beam",
+            "air-slash"
+          ],
+          "ability": "sniper",
+          "abilities": [
+            "sniper"
+          ],
+          "held": "scope-lens"
+        },
+        {
+          "name": "gyarados",
+          "level": "-2",
+          "moves": [
+            "dragon-dance",
+            "waterfall",
+            "crunch",
+            "earthquake"
+          ],
+          "ability": "mold-breaker",
+          "abilities": [
+            "mold-breaker"
+          ],
+          "held": "gyaradosite"
+        }
+      ]
+    },
+    "3r": {
+      "name": "Lt. Surge (Rematch)",
+      "speciality": "electric",
+      "img": "/leaders/frlg-surge",
+      "pokemon": [
+        {
+          "name": "pachirisu",
+          "level": "-2",
+          "moves": [
+            "reflect",
+            "light-screen",
+            "nuzzle",
+            "u-turn"
+          ],
+          "ability": "prankster",
+          "abilities": [
+            "prankster"
+          ],
+          "held": "light-clay"
+        },
+        {
+          "name": "dracozolt",
+          "level": "-2",
+          "moves": [
+            "bolt-beak",
+            "dragon-claw",
+            "crunch",
+            "fire-fang"
+          ],
+          "ability": "hustle",
+          "abilities": [
+            "hustle"
+          ],
+          "held": "choice-scarf"
+        },
+        {
+          "name": "dedenne",
+          "level": "-2",
+          "moves": [
+            "rising-voltage",
+            "volt-switch",
+            "dazzling-gleam",
+            "grass-knot"
+          ],
+          "ability": "electric-surge",
+          "abilities": [
+            "electric-surge"
+          ],
+          "held": "terrain-extender"
+        },
+        {
+          "name": "rotom-wash",
+          "level": "-2",
+          "moves": [
+            "nasty-plot",
+            "rising-voltage",
+            "hidden-power-grass",
+            "hydro-pump"
+          ],
+          "ability": "levitate",
+          "abilities": [
+            "levitate"
+          ],
+          "held": "life-orb",
+          "sprite": "rotom-wash"
+        },
+        {
+          "name": "rotom-mow",
+          "level": "-2",
+          "moves": [
+            "thunderbolt",
+            "leaf-storm",
+            "hidden-power-ice",
+            "nasty-plot"
+          ],
+          "ability": "levitate",
+          "abilities": [
+            "levitate"
+          ],
+          "held": "life-orb",
+          "sprite": "rotom-mow"
+        },
+        {
+          "name": "manectric",
+          "level": "-2",
+          "moves": [
+            "volt-switch",
+            "rising-voltage",
+            "flamethrower",
+            "hidden-power-grass"
+          ],
+          "ability": "intimidate",
+          "abilities": [
+            "intimidate"
+          ],
+          "held": "manectite"
+        }
+      ]
+    },
+    "4r": {
+      "name": "Erika (Rematch)",
+      "speciality": "grass",
+      "img": "/leaders/frlg-erika",
+      "pokemon": [
+        {
+          "name": "tsareena",
+          "level": "-2",
+          "moves": [
+            "triple-axel",
+            "trop-kick",
+            "high-jump-kick",
+            "rapid-spin"
+          ],
+          "ability": "queenly-majesty",
+          "abilities": [
+            "queenly-majesty"
+          ],
+          "held": "focus-sash"
+        },
+        {
+          "name": "hawlucha",
+          "level": "-2",
+          "moves": [
+            "swords-dance",
+            "acrobatics",
+            "close-combat",
+            "roost"
+          ],
+          "ability": "unburden",
+          "abilities": [
+            "unburden"
+          ],
+          "held": "grassy-seed"
+        },
+        {
+          "name": "bellossom",
+          "level": "-2",
+          "moves": [
+            "sleep-powder",
+            "quiver-dance",
+            "giga-drain",
+            "fiery-dance"
+          ],
+          "ability": "chlorophyll",
+          "abilities": [
+            "chlorophyll"
+          ],
+          "held": "leftovers"
+        },
+        {
+          "name": "rillaboom",
+          "level": "-2",
+          "moves": [
+            "swords-dance",
+            "grassy-glide",
+            "acrobatics",
+            "high-horsepower"
+          ],
+          "ability": "grassy-surge",
+          "abilities": [
+            "grassy-surge"
+          ],
+          "held": "grassy-seed"
+        },
+        {
+          "name": "serperior",
+          "level": "-2",
+          "moves": [
+            "leaf-storm",
+            "giga-drain",
+            "dragon-pulse",
+            "leech-seed"
+          ],
+          "ability": "contrary",
+          "abilities": [
+            "contrary"
+          ],
+          "held": "focus-sash"
+        },
+        {
+          "name": "venusaur",
+          "level": "-2",
+          "moves": [
+            "giga-drain",
+            "sludge-bomb",
+            "earth-power",
+            "synthesis"
+          ],
+          "ability": "thick-fat",
+          "abilities": [
+            "thick-fat"
+          ],
+          "held": "venusaurite"
+        }
+      ]
+    },
     "e1a": {
       "name": "Lorelei (Rain Team)",
       "speciality": "ice",

@@ -33887,6 +33887,34 @@
       ]
     },
     {
+      "type": "gym",
+      "name": "Pewter City Gym",
+      "value": "1r",
+      "group": "gym-leader",
+      "boss": "Brock Rematch"
+    },
+    {
+      "type": "gym",
+      "name": "Cerulean City Gym",
+      "value": "2r",
+      "group": "gym-leader",
+      "boss": "Misty Rematch"
+    },
+    {
+      "type": "gym",
+      "name": "Vermillion City Gym",
+      "value": "3r",
+      "group": "gym-leader",
+      "boss": "Lt. Surge Rematch"
+    },
+    {
+      "type": "gym",
+      "name": "Celadon City Gym",
+      "value": "4r",
+      "group": "gym-leader",
+      "boss": "Erika Rematch"
+    },
+    {
       "type": "route",
       "name": "Cerulean Cave",
       "encounters": [
