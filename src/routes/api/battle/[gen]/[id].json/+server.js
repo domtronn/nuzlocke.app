@@ -32,8 +32,6 @@ const statNameMap = {
   hp: 'hp'
 };
 
-let logged = false
-
 const toMoves = (moves, patches = {}, physicalSpecialSplit = false) => {
   return map(
     compose(
@@ -106,7 +104,7 @@ const toAbility = (ability, patches = {}) => {
 
 const toTypes = map(path(['type', 'name']));
 const toPokemon = (p, patches = {}) => {
-  let patch = patches[p.name] || {};
+  let patch = patches[p.name] || patches[p.alias] || patches[p] || {};
 
   const [, sprite] = /\/sprites\/pokemon\/([0-9]+)/.exec(p?.sprites?.front_default) || []
 
@@ -131,9 +129,9 @@ export async function GET({ params, url }) {
   const { gen, id } = params;
   const game = games[gen];
 
-  if (!game) return { status: 404 };
+  if (!game) return new Response('', { status: 404 });
 
-  const patch = patches[gen] || {};
+  const patch = patches[gen] || patches[game.lid] || {};
 
   const {
     types = {},
@@ -147,7 +145,7 @@ export async function GET({ params, url }) {
   const starter = url.searchParams.get('starter');
   const leader = path([game.lid || game.pid, id], leaders);
 
-  if (!leader) return;
+  if (!leader) return new Response('', { status: 404 });
 
   try {
     const pokemon = await Promise.all(
@@ -177,6 +175,7 @@ export async function GET({ params, url }) {
               ...p,
               ...toPokemon(data, {
                 ...(typePatch || {}),
+                ...(patch.fakemon || {}),
                 ...(patch.pokemon || {})
               }),
               moves: toMoves(moves, {
