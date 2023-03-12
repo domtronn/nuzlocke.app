@@ -173,7 +173,7 @@
           },
           {
             "type": "normal",
-            "damage_class": "special",
+            "damage_class": "physical",
             "name": "Sonic Boom",
             "effect": "Inflicts 20 points of damage."
           }
@@ -287,7 +287,7 @@
           {
             "power": 55,
             "type": "grass",
-            "damage_class": "physical",
+            "damage_class": "special",
             "name": "Razor Leaf",
             "effect": "Has an increased chance for a critical hit."
           },
@@ -428,14 +428,14 @@
           {
             "power": 30,
             "type": "poison",
-            "damage_class": "special",
+            "damage_class": "physical",
             "name": "Smog",
             "effect": "Has a 40% chance to poison the target."
           },
           {
             "power": 65,
             "type": "poison",
-            "damage_class": "special",
+            "damage_class": "physical",
             "name": "Sludge",
             "effect": "Has a 30% chance to poison the target."
           }
@@ -472,14 +472,14 @@
           {
             "power": 30,
             "type": "poison",
-            "damage_class": "special",
+            "damage_class": "physical",
             "name": "Smog",
             "effect": "Has a 40% chance to poison the target."
           },
           {
             "power": 65,
             "type": "poison",
-            "damage_class": "special",
+            "damage_class": "physical",
             "name": "Sludge",
             "effect": "Has a 30% chance to poison the target."
           }
@@ -522,7 +522,7 @@
           {
             "power": 65,
             "type": "poison",
-            "damage_class": "special",
+            "damage_class": "physical",
             "name": "Sludge",
             "effect": "Has a 30% chance to poison the target."
           }
@@ -547,14 +547,14 @@
           {
             "power": 30,
             "type": "poison",
-            "damage_class": "special",
+            "damage_class": "physical",
             "name": "Smog",
             "effect": "Has a 40% chance to poison the target."
           },
           {
             "power": 65,
             "type": "poison",
-            "damage_class": "special",
+            "damage_class": "physical",
             "name": "Sludge",
             "effect": "Has a 30% chance to poison the target."
           },
@@ -1016,7 +1016,7 @@
             "effect": "User digs underground, dodging all attacks, and hits next turn."
           },
           {
-            "type": "ground",
+            "type": "normal",
             "damage_class": "status",
             "name": "Sand Attack",
             "effect": "Lowers the target's accuracy by one stage."
@@ -1227,13 +1227,13 @@
         "moves": [
           {
             "power": 40,
-            "type": "flying",
-            "damage_class": "special",
+            "type": "normal",
+            "damage_class": "physical",
             "name": "Gust",
             "effect": "Inflicts regular damage and can hit Pokémon in the air."
           },
           {
-            "type": "ground",
+            "type": "normal",
             "damage_class": "status",
             "name": "Sand Attack",
             "effect": "Lowers the target's accuracy by one stage."
@@ -1297,13 +1297,13 @@
         "moves": [
           {
             "power": 40,
-            "type": "flying",
-            "damage_class": "special",
+            "type": "normal",
+            "damage_class": "physical",
             "name": "Gust",
             "effect": "Inflicts regular damage and can hit Pokémon in the air."
           },
           {
-            "type": "ground",
+            "type": "normal",
             "damage_class": "status",
             "name": "Sand Attack",
             "effect": "Lowers the target's accuracy by one stage."
@@ -1456,13 +1456,13 @@
         "moves": [
           {
             "power": 40,
-            "type": "flying",
-            "damage_class": "special",
+            "type": "normal",
+            "damage_class": "physical",
             "name": "Gust",
             "effect": "Inflicts regular damage and can hit Pokémon in the air."
           },
           {
-            "type": "ground",
+            "type": "normal",
             "damage_class": "status",
             "name": "Sand Attack",
             "effect": "Lowers the target's accuracy by one stage."
@@ -1712,7 +1712,7 @@
           },
           {
             "power": 60,
-            "type": "dark",
+            "type": "normal",
             "damage_class": "physical",
             "name": "Bite",
             "effect": "Has a 30% chance to make the target flinch."
@@ -1744,13 +1744,13 @@
         "moves": [
           {
             "power": 40,
-            "type": "flying",
-            "damage_class": "special",
+            "type": "normal",
+            "damage_class": "physical",
             "name": "Gust",
             "effect": "Inflicts regular damage and can hit Pokémon in the air."
           },
           {
-            "type": "ground",
+            "type": "normal",
             "damage_class": "status",
             "name": "Sand Attack",
             "effect": "Lowers the target's accuracy by one stage."
@@ -1829,7 +1829,7 @@
           },
           {
             "power": 60,
-            "type": "dark",
+            "type": "normal",
             "damage_class": "physical",
             "name": "Bite",
             "effect": "Has a 30% chance to make the target flinch."
@@ -1962,7 +1962,7 @@
             "name": "Wing Attack"
           },
           {
-            "type": "ground",
+            "type": "normal",
             "damage_class": "status",
             "name": "Sand Attack",
             "effect": "Lowers the target's accuracy by one stage."
@@ -2052,7 +2052,7 @@
           },
           {
             "power": 60,
-            "type": "dark",
+            "type": "normal",
             "damage_class": "physical",
             "name": "Bite",
             "effect": "Has a 30% chance to make the target flinch."
@@ -2247,7 +2247,7 @@
           },
           {
             "power": 60,
-            "type": "dark",
+            "type": "normal",
             "damage_class": "physical",
             "name": "Bite",
             "effect": "Has a 30% chance to make the target flinch."
@@ -2509,7 +2509,7 @@
           },
           {
             "power": 60,
-            "type": "dark",
+            "type": "normal",
             "damage_class": "physical",
             "name": "Bite",
             "effect": "Has a 30% chance to make the target flinch."
@@ -2698,7 +2698,7 @@
           {
             "power": 35,
             "type": "water",
-            "damage_class": "physical",
+            "damage_class": "special",
             "name": "Clamp",
             "effect": "Prevents the target from fleeing and inflicts damage for 2-5 turns."
           },
@@ -2782,7 +2782,7 @@
           {
             "power": 75,
             "type": "ice",
-            "damage_class": "physical",
+            "damage_class": "special",
             "name": "Ice Punch",
             "effect": "Has a 10% chance to freeze the target."
           },
@@ -2924,14 +2924,14 @@
           {
             "power": 75,
             "type": "ice",
-            "damage_class": "physical",
+            "damage_class": "special",
             "name": "Ice Punch",
             "effect": "Has a 10% chance to freeze the target."
           },
           {
             "power": 75,
             "type": "electric",
-            "damage_class": "physical",
+            "damage_class": "special",
             "name": "Thunder Punch",
             "effect": "Has a 10% chance to paralyze the target."
           },
@@ -3112,7 +3112,7 @@
           },
           {
             "type": "ghost",
-            "damage_class": "special",
+            "damage_class": "physical",
             "name": "Night Shade",
             "effect": "Inflicts damage equal to the user's level."
           },
@@ -3199,7 +3199,7 @@
           },
           {
             "type": "ghost",
-            "damage_class": "special",
+            "damage_class": "physical",
             "name": "Night Shade",
             "effect": "Inflicts damage equal to the user's level."
           },
@@ -3237,7 +3237,7 @@
         "moves": [
           {
             "power": 60,
-            "type": "dark",
+            "type": "normal",
             "damage_class": "physical",
             "name": "Bite",
             "effect": "Has a 30% chance to make the target flinch."
@@ -3257,7 +3257,7 @@
           {
             "power": 40,
             "type": "poison",
-            "damage_class": "special",
+            "damage_class": "physical",
             "name": "Acid",
             "effect": "Has a 10% chance to lower the target's Special Defense by one stage."
           }
@@ -3287,7 +3287,7 @@
           },
           {
             "type": "ghost",
-            "damage_class": "special",
+            "damage_class": "physical",
             "name": "Night Shade",
             "effect": "Inflicts damage equal to the user's level."
           },
@@ -3351,7 +3351,7 @@
           {
             "power": 150,
             "type": "normal",
-            "damage_class": "special",
+            "damage_class": "physical",
             "name": "Hyper Beam",
             "effect": "User foregoes its next turn to recharge."
           }
@@ -3395,7 +3395,7 @@
           {
             "power": 150,
             "type": "normal",
-            "damage_class": "special",
+            "damage_class": "physical",
             "name": "Hyper Beam",
             "effect": "User foregoes its next turn to recharge."
           }
@@ -3438,7 +3438,7 @@
           {
             "power": 150,
             "type": "normal",
-            "damage_class": "special",
+            "damage_class": "physical",
             "name": "Hyper Beam",
             "effect": "User foregoes its next turn to recharge."
           }
@@ -3468,7 +3468,7 @@
           },
           {
             "power": 60,
-            "type": "dark",
+            "type": "normal",
             "damage_class": "physical",
             "name": "Bite",
             "effect": "Has a 30% chance to make the target flinch."
@@ -3483,7 +3483,7 @@
           {
             "power": 150,
             "type": "normal",
-            "damage_class": "special",
+            "damage_class": "physical",
             "name": "Hyper Beam",
             "effect": "User foregoes its next turn to recharge."
           }
@@ -3527,7 +3527,7 @@
           {
             "power": 150,
             "type": "normal",
-            "damage_class": "special",
+            "damage_class": "physical",
             "name": "Hyper Beam",
             "effect": "User foregoes its next turn to recharge."
           }
@@ -3739,7 +3739,7 @@
           {
             "power": 150,
             "type": "normal",
-            "damage_class": "special",
+            "damage_class": "physical",
             "name": "Hyper Beam",
             "effect": "User foregoes its next turn to recharge."
           },

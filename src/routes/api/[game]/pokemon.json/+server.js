@@ -1,7 +1,7 @@
 import games from '$lib/data/games.json';
 import patches from '$lib/data/patches.json';
 
-import { LegacyTypeMap } from '$lib/data/types'
+import { LegacyTypeMap } from '$lib/data/legacy'
 import Pokemon, { filterdata, sumObj } from '../../pokemon.json/_data.js';
 
 const base = filterdata(Pokemon);
@@ -46,7 +46,7 @@ export async function GET({ params }) {
     });
 
   let items = base
-  if (game.filter) items = patchTypes(items, LegacyTypeMap[game.filter])
+  if (game.filter?.types) items = patchTypes(items, LegacyTypeMap[game.filter.types])
   if (game.patched) items = patchPokemon(items, pokemon, fakemon)
 
   return new Response(JSON.stringify(items), {

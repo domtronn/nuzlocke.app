@@ -166,7 +166,7 @@
           {
             "power": 65,
             "type": "dark",
-            "damage_class": "physical",
+            "damage_class": "special",
             "name": "Knock Off",
             "effect": "Target drops its held item."
           },
@@ -227,7 +227,7 @@
           },
           {
             "type": "normal",
-            "damage_class": "special",
+            "damage_class": "physical",
             "name": "Sonic Boom",
             "effect": "Inflicts 20 points of damage."
           },
@@ -270,13 +270,13 @@
           {
             "power": 65,
             "type": "electric",
-            "damage_class": "physical",
+            "damage_class": "special",
             "name": "Spark",
             "effect": "Has a 30% chance to paralyze the target."
           },
           {
             "type": "normal",
-            "damage_class": "special",
+            "damage_class": "physical",
             "name": "Sonic Boom",
             "effect": "Inflicts 20 points of damage."
           },
@@ -324,7 +324,7 @@
           },
           {
             "type": "normal",
-            "damage_class": "special",
+            "damage_class": "physical",
             "name": "Sonic Boom",
             "effect": "Inflicts 20 points of damage."
           },
@@ -374,7 +374,7 @@
           {
             "power": 30,
             "type": "poison",
-            "damage_class": "special",
+            "damage_class": "physical",
             "name": "Smog",
             "effect": "Has a 40% chance to poison the target."
           },
@@ -537,7 +537,7 @@
           {
             "power": 60,
             "type": "dark",
-            "damage_class": "physical",
+            "damage_class": "special",
             "name": "Feint Attack",
             "effect": "Never misses."
           }
@@ -573,7 +573,7 @@
           {
             "power": 60,
             "type": "dark",
-            "damage_class": "physical",
+            "damage_class": "special",
             "name": "Feint Attack",
             "effect": "Never misses."
           },
@@ -636,7 +636,7 @@
           {
             "power": 60,
             "type": "dark",
-            "damage_class": "physical",
+            "damage_class": "special",
             "name": "Feint Attack",
             "effect": "Never misses."
           }
@@ -992,7 +992,7 @@
             "effect": "Target falls in love if it has the opposite gender, and has a 50% chance to refuse attacking the user."
           },
           {
-            "type": "fairy",
+            "type": "normal",
             "damage_class": "status",
             "name": "Sweet Kiss",
             "effect": "Confuses the target."
@@ -1547,7 +1547,7 @@
           {
             "power": 60,
             "type": "dark",
-            "damage_class": "physical",
+            "damage_class": "special",
             "name": "Bite",
             "effect": "Has a 30% chance to make the target flinch."
           }
@@ -1637,7 +1637,7 @@
           {
             "power": 60,
             "type": "dark",
-            "damage_class": "physical",
+            "damage_class": "special",
             "name": "Bite",
             "effect": "Has a 30% chance to make the target flinch."
           },
@@ -1692,7 +1692,7 @@
           {
             "power": 60,
             "type": "dark",
-            "damage_class": "physical",
+            "damage_class": "special",
             "name": "Bite",
             "effect": "Has a 30% chance to make the target flinch."
           },
@@ -1831,7 +1831,7 @@
           {
             "power": 60,
             "type": "dark",
-            "damage_class": "physical",
+            "damage_class": "special",
             "name": "Bite",
             "effect": "Has a 30% chance to make the target flinch."
           },
@@ -2293,7 +2293,7 @@
           {
             "power": 60,
             "type": "dark",
-            "damage_class": "physical",
+            "damage_class": "special",
             "name": "Bite",
             "effect": "Has a 30% chance to make the target flinch."
           },
@@ -2549,7 +2549,7 @@
           {
             "power": 60,
             "type": "dark",
-            "damage_class": "physical",
+            "damage_class": "special",
             "name": "Bite",
             "effect": "Has a 30% chance to make the target flinch."
           },
@@ -2562,7 +2562,7 @@
           {
             "power": 60,
             "type": "flying",
-            "damage_class": "special",
+            "damage_class": "physical",
             "name": "Air Cutter",
             "effect": "Has an increased chance for a critical hit."
           },
@@ -2702,7 +2702,7 @@
         "level": "43",
         "moves": [
           {
-            "type": "fairy",
+            "type": "normal",
             "damage_class": "status",
             "name": "Charm",
             "effect": "Lowers the target's Attack by two stages."
@@ -2722,7 +2722,7 @@
           {
             "power": 60,
             "type": "dark",
-            "damage_class": "physical",
+            "damage_class": "special",
             "name": "Feint Attack",
             "effect": "Never misses."
           }
@@ -2806,7 +2806,7 @@
           {
             "power": 80,
             "type": "normal",
-            "damage_class": "special",
+            "damage_class": "physical",
             "name": "Tri Attack",
             "effect": "Has a 20% chance to burn, freeze, or paralyze the target."
           },
@@ -2904,7 +2904,7 @@
           {
             "power": 80,
             "type": "dark",
-            "damage_class": "physical",
+            "damage_class": "special",
             "name": "Crunch",
             "effect": "Has a 20% chance to lower the target's Defense by one stage."
           },
@@ -2953,14 +2953,14 @@
           {
             "power": 60,
             "type": "dark",
-            "damage_class": "physical",
+            "damage_class": "special",
             "name": "Feint Attack",
             "effect": "Never misses."
           },
           {
             "power": 60,
             "type": "grass",
-            "damage_class": "physical",
+            "damage_class": "special",
             "name": "Needle Arm",
             "effect": "Has a 30% chance to make the target flinch."
           },
@@ -3059,7 +3059,7 @@
           {
             "power": 80,
             "type": "dark",
-            "damage_class": "physical",
+            "damage_class": "special",
             "name": "Crunch",
             "effect": "Has a 20% chance to lower the target's Defense by one stage."
           },
@@ -3156,7 +3156,7 @@
         "level": "48",
         "moves": [
           {
-            "type": "ghost",
+            "type": "???",
             "damage_class": "status",
             "name": "Curse",
             "effect": "Ghosts pay half their max HP to hurt the target every turn.  Others decrease Speed but raise Attack and Defense."
@@ -3218,14 +3218,14 @@
           {
             "power": 80,
             "type": "ghost",
-            "damage_class": "special",
+            "damage_class": "physical",
             "name": "Shadow Ball",
             "effect": "Has a 20% chance to lower the target's Special Defense by one stage."
           },
           {
             "power": 60,
             "type": "dark",
-            "damage_class": "physical",
+            "damage_class": "special",
             "name": "Feint Attack",
             "effect": "Never misses."
           }
@@ -3266,7 +3266,7 @@
           {
             "power": 80,
             "type": "ghost",
-            "damage_class": "special",
+            "damage_class": "physical",
             "name": "Shadow Ball",
             "effect": "Has a 20% chance to lower the target's Special Defense by one stage."
           },
@@ -3302,14 +3302,14 @@
           {
             "power": 60,
             "type": "dark",
-            "damage_class": "physical",
+            "damage_class": "special",
             "name": "Feint Attack",
             "effect": "Never misses."
           },
           {
             "power": 80,
             "type": "ghost",
-            "damage_class": "special",
+            "damage_class": "physical",
             "name": "Shadow Ball",
             "effect": "Has a 20% chance to lower the target's Special Defense by one stage."
           },
@@ -3358,7 +3358,7 @@
           {
             "power": 80,
             "type": "ghost",
-            "damage_class": "special",
+            "damage_class": "physical",
             "name": "Shadow Ball",
             "effect": "Has a 20% chance to lower the target's Special Defense by one stage."
           },
@@ -3432,7 +3432,7 @@
           {
             "power": 80,
             "type": "dark",
-            "damage_class": "physical",
+            "damage_class": "special",
             "name": "Crunch",
             "effect": "Has a 20% chance to lower the target's Defense by one stage."
           }
@@ -3468,7 +3468,7 @@
           {
             "power": 30,
             "type": "ice",
-            "damage_class": "physical",
+            "damage_class": "special",
             "name": "Ice Ball",
             "effect": "Power doubles every turn this move is used in succession after the first, resetting after five turns."
           },
@@ -3524,7 +3524,7 @@
           {
             "power": 80,
             "type": "water",
-            "damage_class": "physical",
+            "damage_class": "special",
             "name": "Dive",
             "effect": "User dives underwater, dodging all attacks, and hits next turn."
           },
@@ -3573,14 +3573,14 @@
           {
             "power": 80,
             "type": "ghost",
-            "damage_class": "special",
+            "damage_class": "physical",
             "name": "Shadow Ball",
             "effect": "Has a 20% chance to lower the target's Special Defense by one stage."
           },
           {
             "power": 80,
             "type": "dark",
-            "damage_class": "physical",
+            "damage_class": "special",
             "name": "Crunch",
             "effect": "Has a 20% chance to lower the target's Defense by one stage."
           }
@@ -3671,7 +3671,7 @@
           {
             "power": 80,
             "type": "dragon",
-            "damage_class": "physical",
+            "damage_class": "special",
             "name": "Dragon Claw"
           },
           {
@@ -3691,7 +3691,7 @@
           {
             "power": 80,
             "type": "dark",
-            "damage_class": "physical",
+            "damage_class": "special",
             "name": "Crunch",
             "effect": "Has a 20% chance to lower the target's Defense by one stage."
           }
@@ -3783,7 +3783,7 @@
           {
             "power": 80,
             "type": "dark",
-            "damage_class": "physical",
+            "damage_class": "special",
             "name": "Crunch",
             "effect": "Has a 20% chance to lower the target's Defense by one stage."
           },
@@ -3876,13 +3876,13 @@
           {
             "power": 80,
             "type": "dragon",
-            "damage_class": "physical",
+            "damage_class": "special",
             "name": "Dragon Claw"
           },
           {
             "power": 80,
             "type": "dark",
-            "damage_class": "physical",
+            "damage_class": "special",
             "name": "Crunch",
             "effect": "Has a 20% chance to lower the target's Defense by one stage."
           },
@@ -3987,7 +3987,7 @@
           {
             "power": 60,
             "type": "rock",
-            "damage_class": "special",
+            "damage_class": "physical",
             "name": "Ancient Power",
             "effect": "Has a 10% chance to raise all of the user's stats by one stage."
           },
@@ -4036,7 +4036,7 @@
           {
             "power": 80,
             "type": "dragon",
-            "damage_class": "physical",
+            "damage_class": "special",
             "name": "Dragon Claw"
           },
           {
@@ -4079,7 +4079,7 @@
           {
             "power": 60,
             "type": "rock",
-            "damage_class": "special",
+            "damage_class": "physical",
             "name": "Ancient Power",
             "effect": "Has a 10% chance to raise all of the user's stats by one stage."
           },
@@ -4092,7 +4092,7 @@
           {
             "power": 90,
             "type": "poison",
-            "damage_class": "special",
+            "damage_class": "physical",
             "name": "Sludge Bomb",
             "effect": "Has a 30% chance to poison the target."
           },
@@ -4129,7 +4129,7 @@
           {
             "power": 60,
             "type": "rock",
-            "damage_class": "special",
+            "damage_class": "physical",
             "name": "Ancient Power",
             "effect": "Has a 10% chance to raise all of the user's stats by one stage."
           },
@@ -4201,7 +4201,7 @@
           {
             "power": 150,
             "type": "normal",
-            "damage_class": "special",
+            "damage_class": "physical",
             "name": "Hyper Beam",
             "effect": "User foregoes its next turn to recharge."
           }

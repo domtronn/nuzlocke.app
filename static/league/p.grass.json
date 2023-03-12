@@ -4232,7 +4232,7 @@
             "effect": "Inflicts regular damage and can hit Dig users."
           },
           {
-            "type": "ghost",
+            "type": "???",
             "damage_class": "status",
             "name": "Curse",
             "effect": "Ghosts pay half their max HP to hurt the target every turn.  Others decrease Speed but raise Attack and Defense."
@@ -4432,7 +4432,7 @@
         "level": "57",
         "moves": [
           {
-            "type": "fairy",
+            "type": "normal",
             "damage_class": "status",
             "name": "Charm",
             "effect": "Lowers the target's Attack by two stages."
