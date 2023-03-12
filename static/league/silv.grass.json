@@ -17,7 +17,7 @@
           {
             "power": 20,
             "type": "ground",
-            "damage_class": "special",
+            "damage_class": "physical",
             "name": "Mud-Slap",
             "effect": "Has a 100% chance to lower the target's accuracy by one stage."
           }
@@ -49,14 +49,14 @@
           {
             "power": 20,
             "type": "ground",
-            "damage_class": "special",
+            "damage_class": "physical",
             "name": "Mud-Slap",
             "effect": "Has a 100% chance to lower the target's accuracy by one stage."
           },
           {
             "power": 40,
             "type": "flying",
-            "damage_class": "special",
+            "damage_class": "physical",
             "name": "Gust",
             "effect": "Inflicts regular damage and can hit Pokémon in the air."
           }
@@ -94,13 +94,13 @@
           },
           {
             "type": "bug",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "String Shot",
             "effect": "Lowers the target's Speed by two stages."
           },
           {
             "type": "normal",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Harden",
             "effect": "Raises the user's Defense by one stage."
           }
@@ -131,13 +131,13 @@
           },
           {
             "type": "bug",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "String Shot",
             "effect": "Lowers the target's Speed by two stages."
           },
           {
             "type": "normal",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Harden",
             "effect": "Raises the user's Defense by one stage."
           }
@@ -176,7 +176,7 @@
           },
           {
             "type": "normal",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Leer",
             "effect": "Lowers the target's Defense by one stage."
           }
@@ -208,7 +208,7 @@
         "moves": [
           {
             "type": "normal",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Encore",
             "effect": "Forces the target to repeat its last used move every turn for 2 to 6 turns."
           },
@@ -221,13 +221,13 @@
           },
           {
             "type": "normal",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Mimic",
             "effect": "Copies the target's last used move."
           },
           {
             "type": "normal",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Metronome",
             "effect": "Randomly selects and uses any move in the game."
           }
@@ -258,13 +258,13 @@
           },
           {
             "type": "normal",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Attract",
             "effect": "Target falls in love if it has the opposite gender, and has a 50% chance to refuse attacking the user."
           },
           {
             "type": "normal",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Milk Drink",
             "effect": "Heals the user by half its max HP."
           },
@@ -309,18 +309,18 @@
           },
           {
             "type": "ghost",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Spite",
             "effect": "Lowers the PP of the target's last used move by 4."
           },
           {
             "type": "normal",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Mean Look",
             "effect": "Prevents the target from leaving battle."
           },
           {
-            "type": "ghost",
+            "type": "???",
             "damage_class": "status",
             "name": "Curse",
             "effect": "Ghosts pay half their max HP to hurt the target every turn.  Others decrease Speed but raise Attack and Defense."
@@ -346,25 +346,25 @@
         "moves": [
           {
             "type": "psychic",
-            "damage_class": "status",
+            "damage_class": "special",
             "name": "Hypnosis",
             "effect": "Puts the target to sleep."
           },
           {
-            "type": "ghost",
+            "type": "???",
             "damage_class": "status",
             "name": "Curse",
             "effect": "Ghosts pay half their max HP to hurt the target every turn.  Others decrease Speed but raise Attack and Defense."
           },
           {
             "type": "normal",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Mean Look",
             "effect": "Prevents the target from leaving battle."
           },
           {
             "type": "ghost",
-            "damage_class": "special",
+            "damage_class": "physical",
             "name": "Night Shade",
             "effect": "Inflicts damage equal to the user's level."
           }
@@ -389,25 +389,25 @@
         "moves": [
           {
             "type": "ghost",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Spite",
             "effect": "Lowers the PP of the target's last used move by 4."
           },
           {
             "type": "normal",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Mean Look",
             "effect": "Prevents the target from leaving battle."
           },
           {
             "type": "normal",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Mean Look",
             "effect": "Prevents the target from leaving battle."
           },
           {
             "type": "ghost",
-            "damage_class": "special",
+            "damage_class": "physical",
             "name": "Night Shade",
             "effect": "Inflicts damage equal to the user's level."
           }
@@ -432,20 +432,20 @@
         "moves": [
           {
             "type": "psychic",
-            "damage_class": "status",
+            "damage_class": "special",
             "name": "Hypnosis",
             "effect": "Puts the target to sleep."
           },
           {
             "type": "normal",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Mean Look",
             "effect": "Prevents the target from leaving battle."
           },
           {
             "power": 80,
             "type": "ghost",
-            "damage_class": "special",
+            "damage_class": "physical",
             "name": "Shadow Ball",
             "effect": "Has a 20% chance to lower the target's Special Defense by one stage."
           },
@@ -484,7 +484,7 @@
         "moves": [
           {
             "type": "normal",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Leer",
             "effect": "Lowers the target's Defense by one stage."
           },
@@ -529,13 +529,13 @@
         "moves": [
           {
             "type": "psychic",
-            "damage_class": "status",
+            "damage_class": "special",
             "name": "Hypnosis",
             "effect": "Puts the target to sleep."
           },
           {
             "type": "normal",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Mind Reader",
             "effect": "Ensures that the user's next move will hit the target."
           },
@@ -588,19 +588,19 @@
           },
           {
             "type": "normal",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Supersonic",
             "effect": "Confuses the target."
           },
           {
             "type": "normal",
-            "damage_class": "special",
+            "damage_class": "physical",
             "name": "Sonic Boom",
             "effect": "Inflicts 20 points of damage."
           },
           {
             "type": "electric",
-            "damage_class": "status",
+            "damage_class": "special",
             "name": "Thunder Wave",
             "effect": "Paralyzes the target."
           }
@@ -625,13 +625,13 @@
         "moves": [
           {
             "type": "normal",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Screech",
             "effect": "Lowers the target's Defense by two stages."
           },
           {
             "type": "fire",
-            "damage_class": "status",
+            "damage_class": "special",
             "name": "Sunny Day",
             "effect": "Changes the weather to sunny for five turns."
           },
@@ -676,19 +676,19 @@
           },
           {
             "type": "normal",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Supersonic",
             "effect": "Confuses the target."
           },
           {
             "type": "normal",
-            "damage_class": "special",
+            "damage_class": "physical",
             "name": "Sonic Boom",
             "effect": "Inflicts 20 points of damage."
           },
           {
             "type": "electric",
-            "damage_class": "status",
+            "damage_class": "special",
             "name": "Thunder Wave",
             "effect": "Paralyzes the target."
           }
@@ -741,7 +741,7 @@
           },
           {
             "type": "psychic",
-            "damage_class": "status",
+            "damage_class": "special",
             "name": "Rest",
             "effect": "User sleeps for two turns, completely healing itself."
           }
@@ -786,7 +786,7 @@
           },
           {
             "type": "psychic",
-            "damage_class": "status",
+            "damage_class": "special",
             "name": "Rest",
             "effect": "User sleeps for two turns, completely healing itself."
           }
@@ -825,7 +825,7 @@
           },
           {
             "type": "ice",
-            "damage_class": "status",
+            "damage_class": "special",
             "name": "Mist",
             "effect": "Protects the user's stats from being changed by enemy moves."
           },
@@ -864,7 +864,7 @@
         "moves": [
           {
             "type": "electric",
-            "damage_class": "status",
+            "damage_class": "special",
             "name": "Thunder Wave",
             "effect": "Paralyzes the target."
           },
@@ -908,7 +908,7 @@
         "moves": [
           {
             "type": "electric",
-            "damage_class": "status",
+            "damage_class": "special",
             "name": "Thunder Wave",
             "effect": "Paralyzes the target."
           },
@@ -952,7 +952,7 @@
         "moves": [
           {
             "type": "electric",
-            "damage_class": "status",
+            "damage_class": "special",
             "name": "Thunder Wave",
             "effect": "Paralyzes the target."
           },
@@ -1011,13 +1011,13 @@
           {
             "power": 150,
             "type": "normal",
-            "damage_class": "special",
+            "damage_class": "physical",
             "name": "Hyper Beam",
             "effect": "User foregoes its next turn to recharge."
           },
           {
             "type": "normal",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Smokescreen",
             "effect": "Lowers the target's accuracy by one stage."
           }
@@ -1055,7 +1055,7 @@
           },
           {
             "type": "normal",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Leer",
             "effect": "Lowers the target's Defense by one stage."
           }
@@ -1094,13 +1094,13 @@
           },
           {
             "type": "ghost",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Spite",
             "effect": "Lowers the PP of the target's last used move by 4."
           },
           {
             "type": "psychic",
-            "damage_class": "status",
+            "damage_class": "special",
             "name": "Hypnosis",
             "effect": "Puts the target to sleep."
           }
@@ -1132,14 +1132,14 @@
           },
           {
             "type": "normal",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Supersonic",
             "effect": "Confuses the target."
           },
           {
             "power": 60,
             "type": "dark",
-            "damage_class": "physical",
+            "damage_class": "special",
             "name": "Bite",
             "effect": "Has a 30% chance to make the target flinch."
           }
@@ -1170,13 +1170,13 @@
           },
           {
             "type": "normal",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Leer",
             "effect": "Lowers the target's Defense by one stage."
           },
           {
             "type": "normal",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Smokescreen",
             "effect": "Lowers the target's accuracy by one stage."
           },
@@ -1222,18 +1222,18 @@
           },
           {
             "type": "ghost",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Spite",
             "effect": "Lowers the PP of the target's last used move by 4."
           },
           {
             "type": "normal",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Mean Look",
             "effect": "Prevents the target from leaving battle."
           },
           {
-            "type": "ghost",
+            "type": "???",
             "damage_class": "status",
             "name": "Curse",
             "effect": "Ghosts pay half their max HP to hurt the target every turn.  Others decrease Speed but raise Attack and Defense."
@@ -1266,13 +1266,13 @@
           },
           {
             "type": "normal",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Supersonic",
             "effect": "Confuses the target."
           },
           {
             "type": "normal",
-            "damage_class": "special",
+            "damage_class": "physical",
             "name": "Sonic Boom",
             "effect": "Inflicts 20 points of damage."
           },
@@ -1310,20 +1310,20 @@
           },
           {
             "type": "normal",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Supersonic",
             "effect": "Confuses the target."
           },
           {
             "power": 60,
             "type": "dark",
-            "damage_class": "physical",
+            "damage_class": "special",
             "name": "Bite",
             "effect": "Has a 30% chance to make the target flinch."
           },
           {
             "type": "ghost",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Confuse Ray",
             "effect": "Confuses the target."
           }
@@ -1354,13 +1354,13 @@
           },
           {
             "type": "normal",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Leer",
             "effect": "Lowers the target's Defense by one stage."
           },
           {
             "type": "normal",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Smokescreen",
             "effect": "Lowers the target's accuracy by one stage."
           },
@@ -1399,13 +1399,13 @@
         "moves": [
           {
             "type": "psychic",
-            "damage_class": "status",
+            "damage_class": "special",
             "name": "Hypnosis",
             "effect": "Puts the target to sleep."
           },
           {
             "type": "normal",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Disable",
             "effect": "Disables the target's last used move for 1-8 turns."
           },
@@ -1443,7 +1443,7 @@
         "moves": [
           {
             "type": "psychic",
-            "damage_class": "status",
+            "damage_class": "special",
             "name": "Hypnosis",
             "effect": "Puts the target to sleep."
           },
@@ -1456,12 +1456,12 @@
           },
           {
             "type": "normal",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Mean Look",
             "effect": "Prevents the target from leaving battle."
           },
           {
-            "type": "ghost",
+            "type": "???",
             "damage_class": "status",
             "name": "Curse",
             "effect": "Ghosts pay half their max HP to hurt the target every turn.  Others decrease Speed but raise Attack and Defense."
@@ -1487,7 +1487,7 @@
         "moves": [
           {
             "type": "normal",
-            "damage_class": "special",
+            "damage_class": "physical",
             "name": "Sonic Boom",
             "effect": "Inflicts 20 points of damage."
           },
@@ -1500,7 +1500,7 @@
           },
           {
             "type": "normal",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Screech",
             "effect": "Lowers the target's Defense by two stages."
           },
@@ -1546,19 +1546,19 @@
           {
             "power": 60,
             "type": "dark",
-            "damage_class": "physical",
+            "damage_class": "special",
             "name": "Bite",
             "effect": "Has a 30% chance to make the target flinch."
           },
           {
             "type": "normal",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Supersonic",
             "effect": "Confuses the target."
           },
           {
             "type": "ghost",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Confuse Ray",
             "effect": "Confuses the target."
           }
@@ -1584,14 +1584,14 @@
           {
             "power": 30,
             "type": "poison",
-            "damage_class": "special",
+            "damage_class": "physical",
             "name": "Smog",
             "effect": "Has a 40% chance to poison the target."
           },
           {
             "power": 65,
             "type": "poison",
-            "damage_class": "special",
+            "damage_class": "physical",
             "name": "Sludge",
             "effect": "Has a 30% chance to poison the target."
           },
@@ -1642,13 +1642,13 @@
           },
           {
             "type": "normal",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Scary Face",
             "effect": "Lowers the target's Speed by two stages."
           },
           {
             "type": "normal",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Tail Whip",
             "effect": "Lowers the target's Defense by one stage."
           }
@@ -1679,7 +1679,7 @@
         "moves": [
           {
             "type": "normal",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Leer",
             "effect": "Lowers the target's Defense by one stage."
           },
@@ -1700,7 +1700,7 @@
           {
             "power": 60,
             "type": "dark",
-            "damage_class": "physical",
+            "damage_class": "special",
             "name": "Bite",
             "effect": "Has a 30% chance to make the target flinch."
           }
@@ -1724,7 +1724,7 @@
         "moves": [
           {
             "type": "normal",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Sweet Scent",
             "effect": "Lowers the target's evasion by one stage."
           },
@@ -1738,13 +1738,13 @@
           {
             "power": 40,
             "type": "poison",
-            "damage_class": "special",
+            "damage_class": "physical",
             "name": "Acid",
             "effect": "Has a 10% chance to lower the target's Special Defense by one stage."
           },
           {
             "type": "grass",
-            "damage_class": "status",
+            "damage_class": "special",
             "name": "Sleep Powder",
             "effect": "Puts the target to sleep."
           }
@@ -1775,14 +1775,14 @@
           },
           {
             "type": "ice",
-            "damage_class": "status",
+            "damage_class": "special",
             "name": "Haze",
             "effect": "Resets all Pokémon's stats, accuracy, and evasion."
           },
           {
             "power": 40,
             "type": "dark",
-            "damage_class": "physical",
+            "damage_class": "special",
             "name": "Pursuit",
             "effect": "Has double power against, and can hit, Pokémon attempting to switch out."
           }
@@ -1820,14 +1820,14 @@
           },
           {
             "type": "ghost",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Confuse Ray",
             "effect": "Confuses the target."
           },
           {
             "power": 60,
             "type": "dark",
-            "damage_class": "physical",
+            "damage_class": "special",
             "name": "Bite",
             "effect": "Has a 30% chance to make the target flinch."
           },
@@ -1859,7 +1859,7 @@
         "moves": [
           {
             "type": "electric",
-            "damage_class": "status",
+            "damage_class": "special",
             "name": "Thunder Wave",
             "effect": "Paralyzes the target."
           },
@@ -1878,7 +1878,7 @@
           },
           {
             "type": "normal",
-            "damage_class": "special",
+            "damage_class": "physical",
             "name": "Sonic Boom",
             "effect": "Inflicts 20 points of damage."
           }
@@ -1904,7 +1904,7 @@
           {
             "power": 80,
             "type": "ghost",
-            "damage_class": "special",
+            "damage_class": "physical",
             "name": "Shadow Ball",
             "effect": "Has a 20% chance to lower the target's Special Defense by one stage."
           },
@@ -1916,14 +1916,14 @@
             "effect": "Has a 30% chance to paralyze the target."
           },
           {
-            "type": "ghost",
+            "type": "???",
             "damage_class": "status",
             "name": "Curse",
             "effect": "Ghosts pay half their max HP to hurt the target every turn.  Others decrease Speed but raise Attack and Defense."
           },
           {
             "type": "normal",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Mean Look",
             "effect": "Prevents the target from leaving battle."
           }
@@ -1949,7 +1949,7 @@
           {
             "power": 60,
             "type": "dark",
-            "damage_class": "physical",
+            "damage_class": "special",
             "name": "Feint Attack",
             "effect": "Never misses."
           },
@@ -1962,13 +1962,13 @@
           },
           {
             "type": "normal",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Leer",
             "effect": "Lowers the target's Defense by one stage."
           },
           {
             "type": "normal",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Screech",
             "effect": "Lowers the target's Defense by two stages."
           }
@@ -1993,7 +1993,7 @@
         "moves": [
           {
             "type": "normal",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Smokescreen",
             "effect": "Lowers the target's accuracy by one stage."
           },
@@ -2014,7 +2014,7 @@
           {
             "power": 60,
             "type": "fire",
-            "damage_class": "physical",
+            "damage_class": "special",
             "name": "Flame Wheel",
             "effect": "Has a 10% chance to burn the target.  Lets frozen Pokémon thaw themselves."
           }
@@ -2047,13 +2047,13 @@
           {
             "power": 65,
             "type": "poison",
-            "damage_class": "special",
+            "damage_class": "physical",
             "name": "Sludge",
             "effect": "Has a 30% chance to poison the target."
           },
           {
             "type": "normal",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Smokescreen",
             "effect": "Lowers the target's accuracy by one stage."
           },
@@ -2091,13 +2091,13 @@
           {
             "power": 65,
             "type": "poison",
-            "damage_class": "special",
+            "damage_class": "physical",
             "name": "Sludge",
             "effect": "Has a 30% chance to poison the target."
           },
           {
             "type": "normal",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Smokescreen",
             "effect": "Lowers the target's accuracy by one stage."
           },
@@ -2135,13 +2135,13 @@
           {
             "power": 65,
             "type": "poison",
-            "damage_class": "special",
+            "damage_class": "physical",
             "name": "Sludge",
             "effect": "Has a 30% chance to poison the target."
           },
           {
             "type": "normal",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Smokescreen",
             "effect": "Lowers the target's accuracy by one stage."
           },
@@ -2179,13 +2179,13 @@
           {
             "power": 65,
             "type": "poison",
-            "damage_class": "special",
+            "damage_class": "physical",
             "name": "Sludge",
             "effect": "Has a 30% chance to poison the target."
           },
           {
             "type": "normal",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Smokescreen",
             "effect": "Lowers the target's accuracy by one stage."
           },
@@ -2223,13 +2223,13 @@
           {
             "power": 65,
             "type": "poison",
-            "damage_class": "special",
+            "damage_class": "physical",
             "name": "Sludge",
             "effect": "Has a 30% chance to poison the target."
           },
           {
             "type": "normal",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Smokescreen",
             "effect": "Lowers the target's accuracy by one stage."
           },
@@ -2273,13 +2273,13 @@
           {
             "power": 65,
             "type": "poison",
-            "damage_class": "special",
+            "damage_class": "physical",
             "name": "Sludge",
             "effect": "Has a 30% chance to poison the target."
           },
           {
             "type": "normal",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Smokescreen",
             "effect": "Lowers the target's accuracy by one stage."
           },
@@ -2323,7 +2323,7 @@
           },
           {
             "type": "ghost",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Confuse Ray",
             "effect": "Confuses the target."
           },
@@ -2337,7 +2337,7 @@
           {
             "power": 60,
             "type": "dark",
-            "damage_class": "physical",
+            "damage_class": "special",
             "name": "Bite",
             "effect": "Has a 30% chance to make the target flinch."
           }
@@ -2369,7 +2369,7 @@
         "moves": [
           {
             "type": "normal",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Glare",
             "effect": "Paralyzes the target."
           },
@@ -2390,7 +2390,7 @@
           {
             "power": 60,
             "type": "dark",
-            "damage_class": "physical",
+            "damage_class": "special",
             "name": "Bite",
             "effect": "Has a 30% chance to make the target flinch."
           }
@@ -2414,7 +2414,7 @@
         "moves": [
           {
             "type": "normal",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Sweet Scent",
             "effect": "Lowers the target's evasion by one stage."
           },
@@ -2428,13 +2428,13 @@
           {
             "power": 40,
             "type": "poison",
-            "damage_class": "special",
+            "damage_class": "physical",
             "name": "Acid",
             "effect": "Has a 10% chance to lower the target's Special Defense by one stage."
           },
           {
             "type": "grass",
-            "damage_class": "status",
+            "damage_class": "special",
             "name": "Sleep Powder",
             "effect": "Puts the target to sleep."
           }
@@ -2465,20 +2465,20 @@
           },
           {
             "type": "ice",
-            "damage_class": "status",
+            "damage_class": "special",
             "name": "Haze",
             "effect": "Resets all Pokémon's stats, accuracy, and evasion."
           },
           {
             "power": 40,
             "type": "dark",
-            "damage_class": "physical",
+            "damage_class": "special",
             "name": "Pursuit",
             "effect": "Has double power against, and can hit, Pokémon attempting to switch out."
           },
           {
             "type": "ghost",
-            "damage_class": "special",
+            "damage_class": "physical",
             "name": "Night Shade",
             "effect": "Inflicts damage equal to the user's level."
           }
@@ -2511,14 +2511,14 @@
           {
             "power": 60,
             "type": "dark",
-            "damage_class": "physical",
+            "damage_class": "special",
             "name": "Feint Attack",
             "effect": "Never misses."
           },
           {
             "power": 60,
             "type": "dark",
-            "damage_class": "physical",
+            "damage_class": "special",
             "name": "Bite",
             "effect": "Has a 30% chance to make the target flinch."
           },
@@ -2532,7 +2532,7 @@
           {
             "priority": -6,
             "type": "normal",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Roar",
             "effect": "Immediately ends wild battles.  Forces trainers to switch Pokémon."
           }
@@ -2558,13 +2558,13 @@
           {
             "power": 65,
             "type": "poison",
-            "damage_class": "special",
+            "damage_class": "physical",
             "name": "Sludge",
             "effect": "Has a 30% chance to poison the target."
           },
           {
             "type": "normal",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Smokescreen",
             "effect": "Lowers the target's accuracy by one stage."
           },
@@ -2576,7 +2576,7 @@
           },
           {
             "type": "ice",
-            "damage_class": "status",
+            "damage_class": "special",
             "name": "Haze",
             "effect": "Resets all Pokémon's stats, accuracy, and evasion."
           }
@@ -2601,14 +2601,14 @@
           {
             "power": 60,
             "type": "dark",
-            "damage_class": "physical",
+            "damage_class": "special",
             "name": "Feint Attack",
             "effect": "Never misses."
           },
           {
             "power": 60,
             "type": "dark",
-            "damage_class": "physical",
+            "damage_class": "special",
             "name": "Bite",
             "effect": "Has a 30% chance to make the target flinch."
           },
@@ -2622,7 +2622,7 @@
           {
             "power": 30,
             "type": "poison",
-            "damage_class": "special",
+            "damage_class": "physical",
             "name": "Smog",
             "effect": "Has a 40% chance to poison the target."
           }
@@ -2655,7 +2655,7 @@
           {
             "power": 60,
             "type": "dark",
-            "damage_class": "physical",
+            "damage_class": "special",
             "name": "Feint Attack",
             "effect": "Never misses."
           },
@@ -2668,7 +2668,7 @@
           },
           {
             "type": "normal",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Screech",
             "effect": "Lowers the target's Defense by two stages."
           },
@@ -2706,14 +2706,14 @@
           },
           {
             "type": "ghost",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Confuse Ray",
             "effect": "Confuses the target."
           },
           {
             "power": 60,
             "type": "dark",
-            "damage_class": "physical",
+            "damage_class": "special",
             "name": "Bite",
             "effect": "Has a 30% chance to make the target flinch."
           },
@@ -2745,7 +2745,7 @@
         "moves": [
           {
             "type": "electric",
-            "damage_class": "status",
+            "damage_class": "special",
             "name": "Thunder Wave",
             "effect": "Paralyzes the target."
           },
@@ -2758,14 +2758,14 @@
           },
           {
             "type": "normal",
-            "damage_class": "special",
+            "damage_class": "physical",
             "name": "Sonic Boom",
             "effect": "Inflicts 20 points of damage."
           },
           {
             "power": 60,
             "type": "normal",
-            "damage_class": "special",
+            "damage_class": "physical",
             "name": "Swift",
             "effect": "Never misses."
           }
@@ -2791,24 +2791,24 @@
           {
             "power": 80,
             "type": "ghost",
-            "damage_class": "special",
+            "damage_class": "physical",
             "name": "Shadow Ball",
             "effect": "Has a 20% chance to lower the target's Special Defense by one stage."
           },
           {
             "type": "ghost",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Confuse Ray",
             "effect": "Confuses the target."
           },
           {
             "type": "normal",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Mean Look",
             "effect": "Prevents the target from leaving battle."
           },
           {
-            "type": "ghost",
+            "type": "???",
             "damage_class": "status",
             "name": "Curse",
             "effect": "Ghosts pay half their max HP to hurt the target every turn.  Others decrease Speed but raise Attack and Defense."
@@ -2834,13 +2834,13 @@
         "moves": [
           {
             "type": "normal",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Recover",
             "effect": "Heals the user by half its max HP."
           },
           {
             "type": "normal",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Disable",
             "effect": "Disables the target's last used move for 1-8 turns."
           },
@@ -2886,13 +2886,13 @@
           {
             "power": 60,
             "type": "fire",
-            "damage_class": "physical",
+            "damage_class": "special",
             "name": "Flame Wheel",
             "effect": "Has a 10% chance to burn the target.  Lets frozen Pokémon thaw themselves."
           },
           {
             "type": "normal",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Smokescreen",
             "effect": "Lowers the target's accuracy by one stage."
           },
@@ -2952,7 +2952,7 @@
           },
           {
             "type": "ghost",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Confuse Ray",
             "effect": "Confuses the target."
           }
@@ -2977,7 +2977,7 @@
         "moves": [
           {
             "type": "psychic",
-            "damage_class": "status",
+            "damage_class": "special",
             "name": "Reflect",
             "effect": "Reduces damage from physical attacks by half."
           },
@@ -2996,7 +2996,7 @@
           },
           {
             "type": "grass",
-            "damage_class": "status",
+            "damage_class": "special",
             "name": "Leech Seed",
             "effect": "Seeds the target, stealing HP from it every turn."
           }
@@ -3021,12 +3021,12 @@
         "moves": [
           {
             "type": "psychic",
-            "damage_class": "status",
+            "damage_class": "special",
             "name": "Amnesia",
             "effect": "Raises the user's Special Defense by two stages."
           },
           {
-            "type": "ghost",
+            "type": "???",
             "damage_class": "status",
             "name": "Curse",
             "effect": "Ghosts pay half their max HP to hurt the target every turn.  Others decrease Speed but raise Attack and Defense."
@@ -3067,7 +3067,7 @@
           {
             "power": 75,
             "type": "ice",
-            "damage_class": "physical",
+            "damage_class": "special",
             "name": "Ice Punch",
             "effect": "Has a 10% chance to freeze the target."
           },
@@ -3087,7 +3087,7 @@
           },
           {
             "type": "normal",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Lovely Kiss",
             "effect": "Puts the target to sleep."
           }
@@ -3133,7 +3133,7 @@
           },
           {
             "type": "ghost",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Confuse Ray",
             "effect": "Confuses the target."
           }
@@ -3165,19 +3165,19 @@
         "moves": [
           {
             "type": "bug",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Spider Web",
             "effect": "Prevents the target from leaving battle."
           },
           {
             "type": "normal",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Double Team",
             "effect": "Raises the user's evasion by one stage."
           },
           {
             "type": "normal",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Baton Pass",
             "effect": "Allows the trainer to switch out the user and pass effects along to its replacement."
           },
@@ -3210,19 +3210,19 @@
           {
             "power": 40,
             "type": "flying",
-            "damage_class": "special",
+            "damage_class": "physical",
             "name": "Gust",
             "effect": "Inflicts regular damage and can hit Pokémon in the air."
           },
           {
             "type": "normal",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Supersonic",
             "effect": "Confuses the target."
           },
           {
             "type": "poison",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Toxic",
             "effect": "Badly poisons the target, inflicting more damage every turn."
           },
@@ -3255,25 +3255,25 @@
           {
             "power": 90,
             "type": "poison",
-            "damage_class": "special",
+            "damage_class": "physical",
             "name": "Sludge Bomb",
             "effect": "Has a 30% chance to poison the target."
           },
           {
             "type": "normal",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Minimize",
             "effect": "Raises the user's evasion by two stages."
           },
           {
             "type": "poison",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Toxic",
             "effect": "Badly poisons the target, inflicting more damage every turn."
           },
           {
             "type": "poison",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Acid Armor",
             "effect": "Raises the user's Defense by two stages."
           }
@@ -3297,21 +3297,21 @@
         "moves": [
           {
             "type": "ground",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Spikes",
             "effect": "Scatters Spikes, hurting opposing Pokémon that switch in."
           },
           {
             "power": 60,
             "type": "normal",
-            "damage_class": "special",
+            "damage_class": "physical",
             "name": "Swift",
             "effect": "Never misses."
           },
           {
             "priority": 4,
             "type": "normal",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Protect",
             "effect": "Prevents any moves from hitting the user this turn."
           },
@@ -3349,7 +3349,7 @@
           },
           {
             "type": "normal",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Double Team",
             "effect": "Raises the user's evasion by one stage."
           },
@@ -3362,7 +3362,7 @@
           },
           {
             "type": "poison",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Toxic",
             "effect": "Badly poisons the target, inflicting more damage every turn."
           }
@@ -3409,14 +3409,14 @@
           {
             "priority": 4,
             "type": "fighting",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Detect",
             "effect": "Prevents any moves from hitting the user this turn."
           },
           {
             "power": 40,
             "type": "dark",
-            "damage_class": "physical",
+            "damage_class": "special",
             "name": "Pursuit",
             "effect": "Has double power against, and can hit, Pokémon attempting to switch out."
           }
@@ -3441,21 +3441,21 @@
           {
             "power": 75,
             "type": "ice",
-            "damage_class": "physical",
+            "damage_class": "special",
             "name": "Ice Punch",
             "effect": "Has a 10% chance to freeze the target."
           },
           {
             "power": 75,
             "type": "fire",
-            "damage_class": "physical",
+            "damage_class": "special",
             "name": "Fire Punch",
             "effect": "Has a 10% chance to burn the target."
           },
           {
             "power": 75,
             "type": "ice",
-            "damage_class": "physical",
+            "damage_class": "special",
             "name": "Ice Punch",
             "effect": "Has a 10% chance to freeze the target."
           },
@@ -3493,7 +3493,7 @@
           },
           {
             "type": "normal",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Foresight",
             "effect": "Forces the target to have no Evade, and allows it to be hit by Normal and Fighting moves even if it's a Ghost."
           },
@@ -3506,7 +3506,7 @@
           },
           {
             "type": "normal",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Swagger",
             "effect": "Raises the target's Attack by two stages and confuses the target."
           }
@@ -3537,7 +3537,7 @@
           },
           {
             "type": "rock",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Sandstorm",
             "effect": "Changes the weather to a sandstorm for five turns."
           },
@@ -3583,7 +3583,7 @@
           },
           {
             "type": "normal",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Foresight",
             "effect": "Forces the target to have no Evade, and allows it to be hit by Normal and Fighting moves even if it's a Ghost."
           },
@@ -3630,25 +3630,25 @@
           {
             "power": 60,
             "type": "dark",
-            "damage_class": "physical",
+            "damage_class": "special",
             "name": "Feint Attack",
             "effect": "Never misses."
           },
           {
             "type": "ghost",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Confuse Ray",
             "effect": "Confuses the target."
           },
           {
             "type": "normal",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Mean Look",
             "effect": "Prevents the target from leaving battle."
           },
           {
             "type": "ground",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Sand Attack",
             "effect": "Lowers the target's accuracy by one stage."
           }
@@ -3672,14 +3672,14 @@
         "moves": [
           {
             "type": "grass",
-            "damage_class": "status",
+            "damage_class": "special",
             "name": "Stun Spore",
             "effect": "Paralyzes the target."
           },
           {
             "power": 40,
             "type": "poison",
-            "damage_class": "special",
+            "damage_class": "physical",
             "name": "Acid",
             "effect": "Has a 10% chance to lower the target's Special Defense by one stage."
           },
@@ -3691,8 +3691,8 @@
             "effect": "Hits every turn for 2-3 turns, then confuses the user."
           },
           {
-            "type": "fairy",
-            "damage_class": "status",
+            "type": "normal",
+            "damage_class": "physical",
             "name": "Moonlight",
             "effect": "Heals the user by half its max HP.  Affected by weather."
           }
@@ -3724,19 +3724,19 @@
           },
           {
             "type": "ghost",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Spite",
             "effect": "Lowers the PP of the target's last used move by 4."
           },
           {
-            "type": "ghost",
+            "type": "???",
             "damage_class": "status",
             "name": "Curse",
             "effect": "Ghosts pay half their max HP to hurt the target every turn.  Others decrease Speed but raise Attack and Defense."
           },
           {
             "type": "ghost",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Destiny Bond",
             "effect": "If the user faints this turn, the target automatically will, too."
           }
@@ -3762,21 +3762,21 @@
           {
             "power": 60,
             "type": "dark",
-            "damage_class": "physical",
+            "damage_class": "special",
             "name": "Feint Attack",
             "effect": "Never misses."
           },
           {
             "priority": -6,
             "type": "normal",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Whirlwind",
             "effect": "Immediately ends wild battles.  Forces trainers to switch Pokémon."
           },
           {
             "power": 40,
             "type": "dark",
-            "damage_class": "physical",
+            "damage_class": "special",
             "name": "Pursuit",
             "effect": "Has double power against, and can hit, Pokémon attempting to switch out."
           },
@@ -3809,7 +3809,7 @@
           {
             "power": 80,
             "type": "dark",
-            "damage_class": "physical",
+            "damage_class": "special",
             "name": "Crunch",
             "effect": "Has a 20% chance to lower the target's Defense by one stage."
           },
@@ -3823,14 +3823,14 @@
           {
             "priority": -6,
             "type": "normal",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Roar",
             "effect": "Immediately ends wild battles.  Forces trainers to switch Pokémon."
           },
           {
             "power": 40,
             "type": "dark",
-            "damage_class": "physical",
+            "damage_class": "special",
             "name": "Pursuit",
             "effect": "Has double power against, and can hit, Pokémon attempting to switch out."
           }
@@ -3862,7 +3862,7 @@
         "moves": [
           {
             "type": "water",
-            "damage_class": "status",
+            "damage_class": "special",
             "name": "Rain Dance",
             "effect": "Changes the weather to rain for five turns."
           },
@@ -3883,7 +3883,7 @@
           {
             "power": 150,
             "type": "normal",
-            "damage_class": "special",
+            "damage_class": "physical",
             "name": "Hyper Beam",
             "effect": "User foregoes its next turn to recharge."
           }
@@ -3915,7 +3915,7 @@
           },
           {
             "type": "electric",
-            "damage_class": "status",
+            "damage_class": "special",
             "name": "Thunder Wave",
             "effect": "Paralyzes the target."
           },
@@ -3929,7 +3929,7 @@
           {
             "power": 150,
             "type": "normal",
-            "damage_class": "special",
+            "damage_class": "physical",
             "name": "Hyper Beam",
             "effect": "User foregoes its next turn to recharge."
           }
@@ -3975,7 +3975,7 @@
           {
             "power": 150,
             "type": "normal",
-            "damage_class": "special",
+            "damage_class": "physical",
             "name": "Hyper Beam",
             "effect": "User foregoes its next turn to recharge."
           }
@@ -4008,7 +4008,7 @@
           {
             "power": 60,
             "type": "rock",
-            "damage_class": "special",
+            "damage_class": "physical",
             "name": "Ancient Power",
             "effect": "Has a 10% chance to raise all of the user's stats by one stage."
           },
@@ -4021,7 +4021,7 @@
           {
             "power": 150,
             "type": "normal",
-            "damage_class": "special",
+            "damage_class": "physical",
             "name": "Hyper Beam",
             "effect": "User foregoes its next turn to recharge."
           }
@@ -4053,7 +4053,7 @@
           },
           {
             "type": "electric",
-            "damage_class": "status",
+            "damage_class": "special",
             "name": "Thunder Wave",
             "effect": "Paralyzes the target."
           },
@@ -4067,7 +4067,7 @@
           {
             "power": 150,
             "type": "normal",
-            "damage_class": "special",
+            "damage_class": "physical",
             "name": "Hyper Beam",
             "effect": "User foregoes its next turn to recharge."
           }
@@ -4092,14 +4092,14 @@
         "moves": [
           {
             "type": "normal",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Safeguard",
             "effect": "Protects the user's field from major status ailments and confusion for five turns."
           },
           {
             "power": 120,
             "type": "dragon",
-            "damage_class": "physical",
+            "damage_class": "special",
             "name": "Outrage",
             "effect": "Hits every turn for 2-3 turns, then confuses the user."
           },
@@ -4113,7 +4113,7 @@
           {
             "power": 150,
             "type": "normal",
-            "damage_class": "special",
+            "damage_class": "physical",
             "name": "Hyper Beam",
             "effect": "User foregoes its next turn to recharge."
           }
@@ -4145,7 +4145,7 @@
         "moves": [
           {
             "type": "electric",
-            "damage_class": "status",
+            "damage_class": "special",
             "name": "Thunder Wave",
             "effect": "Paralyzes the target."
           },
@@ -4190,20 +4190,20 @@
         "moves": [
           {
             "type": "normal",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Screech",
             "effect": "Lowers the target's Defense by two stages."
           },
           {
             "type": "normal",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Double Team",
             "effect": "Raises the user's evasion by one stage."
           },
           {
             "power": 60,
             "type": "normal",
-            "damage_class": "special",
+            "damage_class": "physical",
             "name": "Swift",
             "effect": "Never misses."
           },
@@ -4234,20 +4234,20 @@
         "moves": [
           {
             "type": "normal",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Screech",
             "effect": "Lowers the target's Defense by two stages."
           },
           {
             "type": "normal",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Double Team",
             "effect": "Raises the user's evasion by one stage."
           },
           {
             "power": 60,
             "type": "normal",
-            "damage_class": "special",
+            "damage_class": "physical",
             "name": "Swift",
             "effect": "Never misses."
           },
@@ -4285,20 +4285,20 @@
           },
           {
             "type": "normal",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Lock-On",
             "effect": "Ensures that the user's next move will hit the target."
           },
           {
             "type": "normal",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Double Team",
             "effect": "Raises the user's evasion by one stage."
           },
           {
             "power": 60,
             "type": "normal",
-            "damage_class": "special",
+            "damage_class": "physical",
             "name": "Swift",
             "effect": "Never misses."
           }
@@ -4323,14 +4323,14 @@
         "moves": [
           {
             "type": "psychic",
-            "damage_class": "status",
+            "damage_class": "special",
             "name": "Light Screen",
             "effect": "Reduces damage from special attacks by 50% for five turns."
           },
           {
             "power": 75,
             "type": "electric",
-            "damage_class": "physical",
+            "damage_class": "special",
             "name": "Thunder Punch",
             "effect": "Has a 10% chance to paralyze the target."
           },
@@ -4375,7 +4375,7 @@
         "moves": [
           {
             "type": "ground",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Sand Attack",
             "effect": "Lowers the target's accuracy by one stage."
           },
@@ -4389,7 +4389,7 @@
           {
             "power": 60,
             "type": "normal",
-            "damage_class": "special",
+            "damage_class": "physical",
             "name": "Swift",
             "effect": "Never misses."
           },
@@ -4420,19 +4420,19 @@
         "moves": [
           {
             "type": "psychic",
-            "damage_class": "status",
+            "damage_class": "special",
             "name": "Barrier",
             "effect": "Raises the user's Defense by two stages."
           },
           {
             "type": "psychic",
-            "damage_class": "status",
+            "damage_class": "special",
             "name": "Reflect",
             "effect": "Reduces damage from physical attacks by half."
           },
           {
             "type": "normal",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Baton Pass",
             "effect": "Allows the trainer to switch out the user and pass effects along to its replacement."
           },
@@ -4463,7 +4463,7 @@
         "moves": [
           {
             "type": "normal",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Recover",
             "effect": "Heals the user by half its max HP."
           },
@@ -4483,7 +4483,7 @@
           },
           {
             "type": "psychic",
-            "damage_class": "status",
+            "damage_class": "special",
             "name": "Reflect",
             "effect": "Reduces damage from physical attacks by half."
           }
@@ -4515,13 +4515,13 @@
           {
             "power": 60,
             "type": "rock",
-            "damage_class": "special",
+            "damage_class": "physical",
             "name": "Ancient Power",
             "effect": "Has a 10% chance to raise all of the user's stats by one stage."
           },
           {
             "type": "normal",
-            "damage_class": "special",
+            "damage_class": "physical",
             "name": "Wring Out",
             "effect": "Power increases against targets with more HP remaining, up to a maximum of 121 power."
           },
@@ -4534,7 +4534,7 @@
           },
           {
             "type": "grass",
-            "damage_class": "status",
+            "damage_class": "special",
             "name": "Sleep Powder",
             "effect": "Puts the target to sleep."
           }
@@ -4558,27 +4558,27 @@
         "moves": [
           {
             "type": "fire",
-            "damage_class": "status",
+            "damage_class": "special",
             "name": "Sunny Day",
             "effect": "Changes the weather to sunny for five turns."
           },
           {
             "power": 40,
             "type": "poison",
-            "damage_class": "special",
+            "damage_class": "physical",
             "name": "Acid",
             "effect": "Has a 10% chance to lower the target's Special Defense by one stage."
           },
           {
             "type": "grass",
-            "damage_class": "status",
+            "damage_class": "special",
             "name": "Synthesis",
             "effect": "Heals the user by half its max HP.  Affected by weather."
           },
           {
             "power": 55,
             "type": "grass",
-            "damage_class": "physical",
+            "damage_class": "special",
             "name": "Razor Leaf",
             "effect": "Has an increased chance for a critical hit."
           }
@@ -4603,13 +4603,13 @@
         "moves": [
           {
             "type": "grass",
-            "damage_class": "status",
+            "damage_class": "special",
             "name": "Leech Seed",
             "effect": "Seeds the target, stealing HP from it every turn."
           },
           {
             "type": "grass",
-            "damage_class": "status",
+            "damage_class": "special",
             "name": "Cotton Spore",
             "effect": "Lowers the target's Speed by two stages."
           },
@@ -4648,7 +4648,7 @@
         "moves": [
           {
             "type": "fire",
-            "damage_class": "status",
+            "damage_class": "special",
             "name": "Sunny Day",
             "effect": "Changes the weather to sunny for five turns."
           },
@@ -4668,7 +4668,7 @@
           },
           {
             "type": "grass",
-            "damage_class": "status",
+            "damage_class": "special",
             "name": "Synthesis",
             "effect": "Heals the user by half its max HP.  Affected by weather."
           }
@@ -4706,7 +4706,7 @@
           },
           {
             "type": "normal",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Disable",
             "effect": "Disables the target's last used move for 1-8 turns."
           },
@@ -4719,7 +4719,7 @@
           },
           {
             "type": "normal",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Psych Up",
             "effect": "Discards the user's stat changes and copies the target's."
           }
@@ -4750,13 +4750,13 @@
           },
           {
             "type": "psychic",
-            "damage_class": "status",
+            "damage_class": "special",
             "name": "Amnesia",
             "effect": "Raises the user's Special Defense by two stages."
           },
           {
             "type": "water",
-            "damage_class": "status",
+            "damage_class": "special",
             "name": "Rain Dance",
             "effect": "Changes the weather to rain for five turns."
           },
@@ -4795,13 +4795,13 @@
           },
           {
             "type": "water",
-            "damage_class": "status",
+            "damage_class": "special",
             "name": "Rain Dance",
             "effect": "Changes the weather to rain for five turns."
           },
           {
             "type": "normal",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Perish Song",
             "effect": "User and target both faint after three turns."
           },
@@ -4840,7 +4840,7 @@
           },
           {
             "type": "ghost",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Confuse Ray",
             "effect": "Confuses the target."
           },
@@ -4853,7 +4853,7 @@
           },
           {
             "type": "normal",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Recover",
             "effect": "Heals the user by half its max HP."
           }
@@ -4885,7 +4885,7 @@
         "moves": [
           {
             "type": "ghost",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Confuse Ray",
             "effect": "Confuses the target."
           },
@@ -4897,13 +4897,13 @@
           },
           {
             "type": "normal",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Supersonic",
             "effect": "Confuses the target."
           },
           {
             "type": "normal",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Screech",
             "effect": "Lowers the target's Defense by two stages."
           }
@@ -4929,20 +4929,20 @@
           {
             "power": 90,
             "type": "poison",
-            "damage_class": "special",
+            "damage_class": "physical",
             "name": "Sludge Bomb",
             "effect": "Has a 30% chance to poison the target."
           },
           {
             "type": "poison",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Toxic",
             "effect": "Badly poisons the target, inflicting more damage every turn."
           },
           {
             "power": 30,
             "type": "poison",
-            "damage_class": "special",
+            "damage_class": "physical",
             "name": "Smog",
             "effect": "Has a 40% chance to poison the target."
           },
@@ -4974,20 +4974,20 @@
           {
             "power": 90,
             "type": "poison",
-            "damage_class": "special",
+            "damage_class": "physical",
             "name": "Sludge Bomb",
             "effect": "Has a 30% chance to poison the target."
           },
           {
             "type": "poison",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Toxic",
             "effect": "Badly poisons the target, inflicting more damage every turn."
           },
           {
             "power": 30,
             "type": "poison",
-            "damage_class": "special",
+            "damage_class": "physical",
             "name": "Smog",
             "effect": "Has a 40% chance to poison the target."
           },
@@ -5018,13 +5018,13 @@
         "moves": [
           {
             "type": "bug",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "String Shot",
             "effect": "Lowers the target's Speed by two stages."
           },
           {
             "type": "ghost",
-            "damage_class": "special",
+            "damage_class": "physical",
             "name": "Night Shade",
             "effect": "Inflicts damage equal to the user's level."
           },
@@ -5037,7 +5037,7 @@
           },
           {
             "type": "normal",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Scary Face",
             "effect": "Lowers the target's Speed by two stages."
           }
@@ -5062,7 +5062,7 @@
         "moves": [
           {
             "type": "poison",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Toxic",
             "effect": "Badly poisons the target, inflicting more damage every turn."
           },
@@ -5075,13 +5075,13 @@
           },
           {
             "type": "normal",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Double Team",
             "effect": "Raises the user's evasion by one stage."
           },
           {
             "type": "normal",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Supersonic",
             "effect": "Confuses the target."
           }
@@ -5113,7 +5113,7 @@
         "moves": [
           {
             "type": "normal",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Defense Curl",
             "effect": "Raises user's Defense by one stage."
           },
@@ -5166,7 +5166,7 @@
           },
           {
             "type": "normal",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Scary Face",
             "effect": "Lowers the target's Speed by two stages."
           },
@@ -5205,7 +5205,7 @@
           {
             "power": 60,
             "type": "dark",
-            "damage_class": "physical",
+            "damage_class": "special",
             "name": "Bite",
             "effect": "Has a 30% chance to make the target flinch."
           },
@@ -5219,7 +5219,7 @@
           {
             "priority": 4,
             "type": "normal",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Protect",
             "effect": "Prevents any moves from hitting the user this turn."
           },
@@ -5259,7 +5259,7 @@
           {
             "priority": 4,
             "type": "normal",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Endure",
             "effect": "Prevents the user's HP from lowering below 1 this turn."
           },
@@ -5319,7 +5319,7 @@
           },
           {
             "type": "rock",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Sandstorm",
             "effect": "Changes the weather to a sandstorm for five turns."
           }
@@ -5362,14 +5362,14 @@
           },
           {
             "type": "normal",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Screech",
             "effect": "Lowers the target's Defense by two stages."
           },
           {
             "power": 60,
             "type": "dark",
-            "damage_class": "physical",
+            "damage_class": "special",
             "name": "Feint Attack",
             "effect": "Never misses."
           },
@@ -5407,14 +5407,14 @@
           },
           {
             "type": "ghost",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Confuse Ray",
             "effect": "Confuses the target."
           },
           {
             "power": 60,
             "type": "dark",
-            "damage_class": "physical",
+            "damage_class": "special",
             "name": "Bite",
             "effect": "Has a 30% chance to make the target flinch."
           },
@@ -5453,20 +5453,20 @@
           },
           {
             "type": "electric",
-            "damage_class": "status",
+            "damage_class": "special",
             "name": "Thunder Wave",
             "effect": "Paralyzes the target."
           },
           {
             "power": 60,
             "type": "normal",
-            "damage_class": "special",
+            "damage_class": "physical",
             "name": "Swift",
             "effect": "Never misses."
           },
           {
             "type": "normal",
-            "damage_class": "special",
+            "damage_class": "physical",
             "name": "Sonic Boom",
             "effect": "Inflicts 20 points of damage."
           }
@@ -5492,24 +5492,24 @@
           {
             "power": 80,
             "type": "ghost",
-            "damage_class": "special",
+            "damage_class": "physical",
             "name": "Shadow Ball",
             "effect": "Has a 20% chance to lower the target's Special Defense by one stage."
           },
           {
             "type": "ghost",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Confuse Ray",
             "effect": "Confuses the target."
           },
           {
             "type": "normal",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Mean Look",
             "effect": "Prevents the target from leaving battle."
           },
           {
-            "type": "ghost",
+            "type": "???",
             "damage_class": "status",
             "name": "Curse",
             "effect": "Ghosts pay half their max HP to hurt the target every turn.  Others decrease Speed but raise Attack and Defense."
@@ -5549,13 +5549,13 @@
           },
           {
             "type": "normal",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Recover",
             "effect": "Heals the user by half its max HP."
           },
           {
             "type": "normal",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Disable",
             "effect": "Disables the target's last used move for 1-8 turns."
           }
@@ -5580,13 +5580,13 @@
           {
             "power": 60,
             "type": "normal",
-            "damage_class": "special",
+            "damage_class": "physical",
             "name": "Swift",
             "effect": "Never misses."
           },
           {
             "type": "normal",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Smokescreen",
             "effect": "Lowers the target's accuracy by one stage."
           },
@@ -5600,7 +5600,7 @@
           {
             "power": 60,
             "type": "fire",
-            "damage_class": "physical",
+            "damage_class": "special",
             "name": "Flame Wheel",
             "effect": "Has a 10% chance to burn the target.  Lets frozen Pokémon thaw themselves."
           }
@@ -5640,12 +5640,12 @@
           {
             "power": 30,
             "type": "poison",
-            "damage_class": "special",
+            "damage_class": "physical",
             "name": "Smog",
             "effect": "Has a 40% chance to poison the target."
           },
           {
-            "type": "ghost",
+            "type": "???",
             "damage_class": "status",
             "name": "Curse",
             "effect": "Ghosts pay half their max HP to hurt the target every turn.  Others decrease Speed but raise Attack and Defense."
@@ -5679,26 +5679,26 @@
           {
             "power": 75,
             "type": "electric",
-            "damage_class": "physical",
+            "damage_class": "special",
             "name": "Thunder Punch",
             "effect": "Has a 10% chance to paralyze the target."
           },
           {
             "power": 75,
             "type": "fire",
-            "damage_class": "physical",
+            "damage_class": "special",
             "name": "Fire Punch",
             "effect": "Has a 10% chance to burn the target."
           },
           {
             "type": "fire",
-            "damage_class": "status",
+            "damage_class": "special",
             "name": "Sunny Day",
             "effect": "Changes the weather to sunny for five turns."
           },
           {
             "type": "ghost",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Confuse Ray",
             "effect": "Confuses the target."
           }
@@ -5783,7 +5783,7 @@
           {
             "priority": -6,
             "type": "normal",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Whirlwind",
             "effect": "Immediately ends wild battles.  Forces trainers to switch Pokémon."
           },
@@ -5795,7 +5795,7 @@
           },
           {
             "type": "flying",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Mirror Move",
             "effect": "Uses the target's last used move."
           }
@@ -5827,7 +5827,7 @@
           },
           {
             "type": "rock",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Sandstorm",
             "effect": "Changes the weather to a sandstorm for five turns."
           },
@@ -5866,13 +5866,13 @@
         "moves": [
           {
             "type": "normal",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Disable",
             "effect": "Disables the target's last used move for 1-8 turns."
           },
           {
             "type": "normal",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Recover",
             "effect": "Heals the user by half its max HP."
           },
@@ -5885,7 +5885,7 @@
           },
           {
             "type": "psychic",
-            "damage_class": "status",
+            "damage_class": "special",
             "name": "Reflect",
             "effect": "Reduces damage from physical attacks by half."
           }
@@ -5922,14 +5922,14 @@
           },
           {
             "type": "water",
-            "damage_class": "status",
+            "damage_class": "special",
             "name": "Rain Dance",
             "effect": "Changes the weather to rain for five turns."
           },
           {
             "power": 150,
             "type": "normal",
-            "damage_class": "special",
+            "damage_class": "physical",
             "name": "Hyper Beam",
             "effect": "User foregoes its next turn to recharge."
           }
@@ -5954,13 +5954,13 @@
         "moves": [
           {
             "type": "fire",
-            "damage_class": "status",
+            "damage_class": "special",
             "name": "Sunny Day",
             "effect": "Changes the weather to sunny for five turns."
           },
           {
             "type": "grass",
-            "damage_class": "status",
+            "damage_class": "special",
             "name": "Leech Seed",
             "effect": "Seeds the target, stealing HP from it every turn."
           },
@@ -5999,14 +5999,14 @@
           {
             "priority": -6,
             "type": "normal",
-            "damage_class": "status",
+            "damage_class": "physical",
             "name": "Roar",
             "effect": "Immediately ends wild battles.  Forces trainers to switch Pokémon."
           },
           {
             "power": 60,
             "type": "normal",
-            "damage_class": "special",
+            "damage_class": "physical",
             "name": "Swift",
             "effect": "Never misses."
           },
@@ -6050,8 +6050,8 @@
         "level": "81",
         "moves": [
           {
-            "type": "fairy",
-            "damage_class": "status",
+            "type": "normal",
+            "damage_class": "physical",
             "name": "Charm",
             "effect": "Lowers the target's Attack by two stages."
           },
@@ -6097,20 +6097,20 @@
           {
             "power": 20,
             "type": "ground",
-            "damage_class": "special",
+            "damage_class": "physical",
             "name": "Mud-Slap",
             "effect": "Has a 100% chance to lower the target's accuracy by one stage."
           },
           {
             "power": 60,
             "type": "normal",
-            "damage_class": "special",
+            "damage_class": "physical",
             "name": "Swift",
             "effect": "Never misses."
           },
           {
             "type": "psychic",
-            "damage_class": "status",
+            "damage_class": "special",
             "name": "Reflect",
             "effect": "Reduces damage from physical attacks by half."
           },
@@ -6141,20 +6141,20 @@
         "moves": [
           {
             "type": "psychic",
-            "damage_class": "status",
+            "damage_class": "special",
             "name": "Amnesia",
             "effect": "Raises the user's Special Defense by two stages."
           },
           {
             "power": 50,
             "type": "normal",
-            "damage_class": "special",
+            "damage_class": "physical",
             "name": "Snore",
             "effect": "Has a 30% chance to make the target flinch.  Only works if the user is sleeping."
           },
           {
             "type": "psychic",
-            "damage_class": "status",
+            "damage_class": "special",
             "name": "Rest",
             "effect": "User sleeps for two turns, completely healing itself."
           },
@@ -6185,7 +6185,7 @@
         "moves": [
           {
             "type": "fire",
-            "damage_class": "status",
+            "damage_class": "special",
             "name": "Sunny Day",
             "effect": "Changes the weather to sunny for five turns."
           },
@@ -6198,7 +6198,7 @@
           },
           {
             "type": "grass",
-            "damage_class": "status",
+            "damage_class": "special",
             "name": "Synthesis",
             "effect": "Heals the user by half its max HP.  Affected by weather."
           },
@@ -6276,7 +6276,7 @@
         "moves": [
           {
             "type": "water",
-            "damage_class": "status",
+            "damage_class": "special",
             "name": "Rain Dance",
             "effect": "Changes the weather to rain for five turns."
           },
