@@ -104,6 +104,50 @@
       "moves": "pregen6"
     }
   },
+  "blaze2": {
+    "pid": "blaze2",
+    "lid": "blazevolt2",
+    "logo": "/logos/blaze-black-2-logo",
+    "title": "Blaze Black 2 Redux",
+    "gen": "romhack",
+    "patched": true,
+    "supported": true,
+    "region": "unova",
+    "lastUpdated": "12th March 2023"
+  },
+  "blaze2_c": {
+    "pid": "blaze2_c",
+    "lid": "blazevolt2",
+    "logo": "/logos/blaze-black-2-logo",
+    "title": "Blaze Black 2 Redux Challenge",
+    "gen": "romhack",
+    "patched": true,
+    "supported": true,
+    "region": "unova",
+    "lastUpdated": "12th March 2023"
+  },
+  "volt2": {
+    "pid": "volt2",
+    "lid": "blazevolt2",
+    "logo": "/logos/volt-white-2-logo",
+    "title": "Volt White 2 Redux",
+    "gen": "romhack",
+    "patched": true,
+    "supported": true,
+    "region": "unova",
+    "lastUpdated": "12th March 2023"
+  },
+  "volt2_c": {
+    "pid": "volt2_c",
+    "lid": "blazevolt2",
+    "logo": "/logos/volt-white-2-logo",
+    "title": "Volt White 2 Redux Challenge",
+    "gen": "romhack",
+    "patched": true,
+    "supported": true,
+    "region": "unova",
+    "lastUpdated": "12th March 2023"
+  },
   "wh2": {
     "pid": "wh2",
     "lid": "b2w2",
