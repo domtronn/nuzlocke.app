@@ -23,11 +23,11 @@
             "effect": "Has a 100% chance to lower the target's Speed by one stage."
           },
           {
-            "power": 200,
+            "power": "100",
             "type": "normal",
             "damage_class": "physical",
-            "name": "Self-Destruct",
-            "effect": "User faints."
+            "name": "Self Destruct",
+            "effect": "Target's Defense is halved during damage. User faints."
           },
           {
             "power": 60,
@@ -433,7 +433,7 @@
         "level": "25",
         "moves": [
           {
-            "power": 65,
+            "power": "75",
             "type": "electric",
             "damage_class": "special",
             "name": "Parabolic Charge",
@@ -749,7 +749,7 @@
             "type": "electric",
             "damage_class": "special",
             "name": "Charge Beam",
-            "effect": "Has a 70% chance to raise the user's Special Attack by one stage."
+            "effect": "Boosts the user's Special Attack by one stage"
           },
           {
             "power": 70,
@@ -1008,11 +1008,11 @@
             "damage_class": "special"
           },
           {
-            "power": 250,
+            "power": "100",
             "type": "normal",
             "damage_class": "physical",
             "name": "Explosion",
-            "effect": "User faints."
+            "effect": "Target's Defense is halved during damage. User faints."
           }
         ],
         "ability": {
@@ -1842,11 +1842,11 @@
             "effect": "Causes damage when opposing Pokémon switch in."
           },
           {
-            "power": 250,
+            "power": "100",
             "type": "normal",
             "damage_class": "physical",
             "name": "Explosion",
-            "effect": "User faints."
+            "effect": "Target's Defense is halved during damage. User faints."
           },
           {
             "power": 80,
@@ -2865,7 +2865,7 @@
             "effect": "Has an increased chance for a critical hit."
           },
           {
-            "power": 40,
+            "power": "60",
             "type": "fighting",
             "damage_class": "physical",
             "name": "Rock Smash",
@@ -2985,7 +2985,7 @@
             "effect": "Heals the user by half its max HP."
           },
           {
-            "power": 40,
+            "power": "60",
             "type": "fighting",
             "damage_class": "physical",
             "name": "Rock Smash",
@@ -3183,7 +3183,7 @@
             "effect": "Has a 10% chance to freeze the target and a $effect_chance% chance to make the target flinch."
           },
           {
-            "power": 50,
+            "power": "75",
             "type": "poison",
             "damage_class": "physical",
             "name": "Poison Fang",
@@ -3460,7 +3460,7 @@
             "effect": "If target has a berry, inflicts double damage and uses the berry."
           },
           {
-            "power": 50,
+            "power": "75",
             "type": "poison",
             "damage_class": "physical",
             "name": "Poison Fang",
@@ -4257,7 +4257,7 @@
             "effect": "Has a 10% chance to lower the target's Attack by one stage."
           },
           {
-            "power": 70,
+            "power": "80",
             "type": "ghost",
             "damage_class": "physical",
             "name": "Shadow Claw",
@@ -4686,7 +4686,8 @@
             "power": 80,
             "type": "flying",
             "damage_class": "physical",
-            "name": "Drill Peck"
+            "name": "Drill Peck",
+            "effect": "Has an increased chance for a critical hit."
           },
           {
             "power": 70,
@@ -5318,7 +5319,7 @@
             "name": "Shadow Sneak"
           },
           {
-            "power": 70,
+            "power": "80",
             "type": "ghost",
             "damage_class": "physical",
             "name": "Shadow Claw",
@@ -5626,7 +5627,7 @@
         "level": "-2",
         "moves": [
           {
-            "power": 10,
+            "power": "20",
             "type": "fighting",
             "damage_class": "physical",
             "name": "Triple Kick",
@@ -5999,11 +6000,11 @@
         "level": "61",
         "moves": [
           {
-            "power": 250,
+            "power": "100",
             "type": "normal",
             "damage_class": "physical",
             "name": "Explosion",
-            "effect": "User faints."
+            "effect": "Target's Defense is halved during damage. User faints."
           },
           {
             "power": 90,
@@ -6518,7 +6519,7 @@
             "type": "ice",
             "damage_class": "physical",
             "name": "Ice Hammer",
-            "effect": "Lowers user's Speed by one stage."
+            "effect": "No effect"
           }
         ],
         "ability": {
@@ -7878,11 +7879,11 @@
             "effect": "Causes damage when opposing Pokémon switch in."
           },
           {
-            "power": 250,
+            "power": "100",
             "type": "normal",
             "damage_class": "physical",
             "name": "Explosion",
-            "effect": "User faints."
+            "effect": "Target's Defense is halved during damage. User faints."
           }
         ],
         "ability": {
@@ -8236,11 +8237,11 @@
             "effect": "Causes damage when opposing Pokémon switch in."
           },
           {
-            "power": 250,
+            "power": "100",
             "type": "normal",
             "damage_class": "physical",
             "name": "Explosion",
-            "effect": "User faints."
+            "effect": "Target's Defense is halved during damage. User faints."
           },
           {
             "type": "ground",
@@ -8606,11 +8607,11 @@
         "level": "71",
         "moves": [
           {
-            "power": 250,
+            "power": "100",
             "type": "normal",
             "damage_class": "physical",
             "name": "Explosion",
-            "effect": "User faints."
+            "effect": "Target's Defense is halved during damage. User faints."
           },
           {
             "power": 100,
@@ -12174,11 +12175,11 @@
         "level": "85",
         "moves": [
           {
-            "power": 150,
+            "power": "80",
             "type": "dragon",
             "damage_class": "special",
-            "name": "Roar of Time",
-            "effect": "User foregoes its next turn to recharge."
+            "name": "Roar Of Time",
+            "effect": "Forces the target to switch to a random ally."
           },
           {
             "type": "psychic",
@@ -12546,11 +12547,11 @@
         "level": "85",
         "moves": [
           {
-            "power": 150,
+            "power": "80",
             "type": "dragon",
             "damage_class": "special",
-            "name": "Roar of Time",
-            "effect": "User foregoes its next turn to recharge."
+            "name": "Roar Of Time",
+            "effect": "Forces the target to switch to a random ally."
           },
           {
             "power": 90,
@@ -13049,11 +13050,11 @@
             "effect": "Inflicts regular damage and can hit Dig users."
           },
           {
-            "power": 250,
+            "power": "100",
             "type": "normal",
             "damage_class": "physical",
             "name": "Explosion",
-            "effect": "User faints."
+            "effect": "Target's Defense is halved during damage. User faints."
           }
         ],
         "ability": {
@@ -14619,7 +14620,7 @@
         "level": "79",
         "moves": [
           {
-            "power": 70,
+            "power": "80",
             "type": "ghost",
             "damage_class": "physical",
             "name": "Shadow Claw",
@@ -14874,7 +14875,8 @@
             "power": 80,
             "type": "flying",
             "damage_class": "physical",
-            "name": "Drill Peck"
+            "name": "Drill Peck",
+            "effect": "Has an increased chance for a critical hit."
           },
           {
             "power": 70,
