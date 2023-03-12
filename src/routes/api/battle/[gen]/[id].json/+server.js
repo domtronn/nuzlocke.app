@@ -3,8 +3,14 @@ import games from '$lib/data/games.json';
 import leaders from '$lib/data/league.json';
 import patches from '$lib/data/patches.json';
 
+import {
+  LegacyTypeMap,
+  LegacyMoveMap,
+  LegacyDamageClassMap,
+} from '$lib/data/legacy'
+
 import { map, compose, prop, path, pick, evolve } from 'ramda';
-import { LegacyTypeMap } from '$lib/data/types'
+import { slugify } from '$lib/utils/string'
 
 const titleCase = (str) =>
   str
@@ -26,19 +32,24 @@ const statNameMap = {
   hp: 'hp'
 };
 
-const toMoves = (moves, patches = {}) => {
+let logged = false
+
+const toMoves = (moves, patches = {}, physicalSpecialSplit = false) => {
   return map(
     compose(
       (d) => {
+        const patched = patches[d.name] || patches[slugify(d.name)]
         return nonnull({
           ...d,
-          name: patches[d.name]
-            ? titleCase(patches[d.name]?.locale || d.name)
+          name: patched
+            ? titleCase(patched?.locale || d.name)
             : d.name,
-          type: patches[d.name]?.type || d.type,
-          power: patches[d.name]?.power || d.power,
-          effect: patches[d.name]?.effect || d.effect,
-          damage_class: patches[d.name]?.category || d.damage_class
+          type: patched?.type || d.type,
+          power: patched?.power || d.power,
+          effect: patched?.effect || d.effect,
+          damage_class: physicalSpecialSplit
+            ? LegacyDamageClassMap[patched?.type || d.type] || patched?.category || d.damage_class
+            : patched?.category || d.damage_class
         });
       },
       ({ effect_chance, effect_entries, ...rest }) => ({
@@ -121,7 +132,15 @@ export async function GET({ params, url }) {
   if (!game) return { status: 404 };
 
   const patch = patches[gen] || {};
-  const typePatch = LegacyTypeMap[game.filter] || {}
+
+  const {
+    types = {},
+    moves = {},
+    physicalSpecialSplit = false
+  } = game.filter || {}
+
+  const typePatch = LegacyTypeMap[types] || {}
+  const movesPatch = LegacyMoveMap[moves] || {}
 
   const starter = url.searchParams.get('starter');
   const leader = path([game.lid || game.pid, id], leaders);
@@ -159,7 +178,10 @@ export async function GET({ params, url }) {
                 ...(typePatch || {}),
                 ...(patch.pokemon || {})
               }),
-              moves: toMoves(moves, patch.move || {}),
+              moves: toMoves(moves, {
+                ...(movesPatch || {}),
+                ...(patch.move || {})
+              }, physicalSpecialSplit),
               held: held ? toHeld(held, patch.item || {}) : null,
               ability: ability ? toAbility(ability, patch.ability || {}) : null
             });

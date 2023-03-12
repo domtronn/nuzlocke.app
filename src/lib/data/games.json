@@ -99,7 +99,10 @@
     "gen": "V",
     "supported": true,
     "region": "unova",
-    "filter": "pregen6"
+    "filter": {
+      "types": "pregen6",
+      "moves": "pregen6"
+    }
   },
   "wh2": {
     "pid": "wh2",
@@ -109,7 +112,10 @@
     "gen": "V",
     "supported": true,
     "region": "unova",
-    "filter": "pregen6"
+    "filter": {
+      "types": "pregen6",
+      "moves": "pregen6"
+    }
   },
   "bl2c": {
     "pid": "bl2c",
@@ -120,7 +126,10 @@
     "supported": true,
     "region": "unova",
     "lastUpdated": "9th March 2023",
-    "filter": "pregen6"
+    "filter": {
+      "types": "pregen6",
+      "moves": "pregen6"
+    }
   },
   "wh2c": {
     "pid": "wh2c",
@@ -131,7 +140,10 @@
     "supported": true,
     "region": "unova",
     "lastUpdated": "9th March 2023",
-    "filter": "pregen6"
+    "filter": {
+      "types": "pregen6",
+      "moves": "pregen6"
+    }
   },
   "bl": {
     "pid": "bl",
@@ -141,7 +153,10 @@
     "gen": "V",
     "supported": true,
     "region": "unova",
-    "filter": "pregen6"
+    "filter": {
+      "types": "pregen6",
+      "moves": "pregen6"
+    }
   },
   "wh": {
     "pid": "wh",
@@ -151,7 +166,10 @@
     "gen": "V",
     "supported": true,
     "region": "unova",
-    "filter": "pregen6"
+    "filter": {
+      "types": "pregen6",
+      "moves": "pregen6"
+    }
   },
   "bd": {
     "pid": "bd",
@@ -197,7 +215,10 @@
     "gen": "IV",
     "supported": true,
     "region": "sinnoh",
-    "filter": "pregen6"
+    "filter": {
+      "types": "pregen6",
+      "moves": "pregen5"
+    }
   },
   "d": {
     "pid": "d",
@@ -207,7 +228,10 @@
     "gen": "IV",
     "supported": true,
     "region": "sinnoh",
-    "filter": "pregen6"
+    "filter": {
+      "types": "pregen6",
+      "moves": "pregen5"
+    }
   },
   "p": {
     "pid": "p",
@@ -217,7 +241,10 @@
     "gen": "IV",
     "supported": true,
     "region": "sinnoh",
-    "filter": "pregen6"
+    "filter": {
+      "types": "pregen6",
+      "moves": "pregen5"
+    }
   },
   "or": {
     "pid": "or",
@@ -244,7 +271,11 @@
     "gen": "III",
     "supported": true,
     "region": "hoenn",
-    "filter": "pregen6"
+    "filter": {
+      "types": "pregen6",
+      "moves": "pregen5",
+      "physicalSpecialSplit": true
+    }
   },
   "incem": {
     "pid": "incem",
@@ -263,7 +294,11 @@
     "gen": "III",
     "supported": true,
     "region": "hoenn",
-    "filter": "pregen6"
+    "filter": {
+      "types": "pregen6",
+      "moves": "pregen5",
+      "physicalSpecialSplit": true
+    }
   },
   "saph": {
     "pid": "saph",
@@ -273,7 +308,11 @@
     "gen": "III",
     "supported": true,
     "region": "hoenn",
-    "filter": "pregen6"
+    "filter": {
+      "types": "pregen6",
+      "moves": "pregen5",
+      "physicalSpecialSplit": true
+    }
   },
   "stormsilv": {
     "pid": "stormsilv",
@@ -301,7 +340,10 @@
     "gen": "II",
     "supported": true,
     "region": "johto",
-    "filter": "pregen6"
+    "filter": {
+      "types": "pregen6",
+      "moves": "pregen5"
+    }
   },
   "ss": {
     "pid": "ss",
@@ -311,7 +353,10 @@
     "gen": "II",
     "supported": true,
     "region": "johto",
-    "filter": "pregen6"
+    "filter": {
+      "types": "pregen6",
+      "moves": "pregen5"
+    }
   },
   "gold": {
     "pid": "gold",
@@ -321,7 +366,11 @@
     "gen": "II",
     "supported": true,
     "region": "johto",
-    "filter": "pregen6"
+    "filter": {
+      "types": "pregen6",
+      "moves": "pregen5",
+      "physicalSpecialSplit": true
+    }
   },
   "silv": {
     "pid": "silv",
@@ -331,7 +380,11 @@
     "gen": "II",
     "supported": true,
     "region": "johto",
-    "filter": "pregen6"
+    "filter": {
+      "types": "pregen6",
+      "moves": "pregen5",
+      "physicalSpecialSplit": true
+    }
   },
   "crys": {
     "pid": "crys",
@@ -341,7 +394,11 @@
     "gen": "II",
     "supported": true,
     "region": "johto",
-    "filter": "pregen6"
+    "filter": {
+      "types": "pregen6",
+      "moves": "pregen5",
+      "physicalSpecialSplit": true
+    }
   },
   "fr": {
     "pid": "fr",
@@ -351,7 +408,11 @@
     "gen": "I",
     "supported": true,
     "region": "kanto",
-    "filter": "pregen6"
+    "filter": {
+      "types": "pregen6",
+      "moves": "pregen5",
+      "physicalSpecialSplit": true
+    }
   },
   "lg": {
     "pid": "lg",
@@ -361,7 +422,11 @@
     "gen": "I",
     "supported": true,
     "region": "kanto",
-    "filter": "pregen6"
+    "filter": {
+      "types": "pregen6",
+      "moves": "pregen5",
+      "physicalSpecialSplit": true
+    }
   },
   "yel": {
     "pid": "yel",
@@ -370,7 +435,11 @@
     "supported": true,
     "logo": "/logos/yellow-logo",
     "region": "kanto",
-    "filter": "pregen2"
+    "filter": {
+      "types": "pregen2",
+      "moves": "pregen2",
+      "physicalSpecialSplit": true
+    }
   },
   "red": {
     "pid": "red",
@@ -380,7 +449,11 @@
     "supported": true,
     "logo": "/logos/red",
     "region": "kanto",
-    "filter": "pregen2"
+    "filter": {
+      "types": "pregen2",
+      "moves": "pregen2",
+      "physicalSpecialSplit": true
+    }
   },
   "blue": {
     "pid": "blue",
@@ -390,6 +463,10 @@
     "supported": true,
     "logo": "/logos/blue",
     "region": "kanto",
-    "filter": "pregen2"
+    "filter": {
+      "types": "pregen2",
+      "moves": "pregen2",
+      "physicalSpecialSplit": true
+    }
   }
 }
