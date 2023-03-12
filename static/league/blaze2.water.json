@@ -4541,11 +4541,19 @@
           "name": "Chople Berry",
           "effect": "Held: Consumed when struck by a super-effective Fighting-type attack to halve the damage."
         },
+        "imgUrl": "/blazevolt/f00",
         "types": [
           "steel",
           "normal"
         ],
-        "stats": {}
+        "stats": {
+          "hp": 100,
+          "atk": 100,
+          "def": 100,
+          "spa": 100,
+          "spd": 100,
+          "spe": 100
+        }
       },
       {
         "name": "mt",
@@ -4595,10 +4603,18 @@
           "name": "Leftovers",
           "effect": "Held: Restores 1/16 (6.25%) holder's max HP at the end of each turn."
         },
+        "imgUrl": "/blazevolt/mt",
         "types": [
           "steel"
         ],
-        "stats": {}
+        "stats": {
+          "hp": 100,
+          "atk": 100,
+          "def": 100,
+          "spa": 100,
+          "spd": 100,
+          "spe": 100
+        }
       }
     ]
   },
@@ -5760,7 +5776,7 @@
   "benga_n": {
     "name": "Benga",
     "speciality": "",
-    "img": "TODO",
+    "img": "/leaders/blazevolt-benga",
     "pokemon": [
       {
         "name": "garchomp",

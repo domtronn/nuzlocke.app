@@ -5694,10 +5694,18 @@
           "name": "Red Card",
           "effect": "Held: When the holder takes damage from a move, the opponent switches out for another random party Pokémon. Consumed after use."
         },
+        "imgUrl": "/blazevolt/mt",
         "types": [
           "steel"
         ],
-        "stats": {}
+        "stats": {
+          "hp": 100,
+          "atk": 100,
+          "def": 100,
+          "spa": 100,
+          "spd": 100,
+          "spe": 100
+        }
       },
       {
         "name": "ufo",
@@ -5746,11 +5754,19 @@
           "name": "Leftovers",
           "effect": "Held: Restores 1/16 (6.25%) holder's max HP at the end of each turn."
         },
+        "imgUrl": "/blazevolt/ufo",
         "types": [
           "flying",
           "electric"
         ],
-        "stats": {}
+        "stats": {
+          "hp": 100,
+          "atk": 100,
+          "def": 100,
+          "spa": 100,
+          "spd": 100,
+          "spe": 100
+        }
       },
       {
         "name": "f00",
@@ -5799,11 +5815,19 @@
           "name": "Chople Berry",
           "effect": "Held: Consumed when struck by a super-effective Fighting-type attack to halve the damage."
         },
+        "imgUrl": "/blazevolt/f00",
         "types": [
           "steel",
           "normal"
         ],
-        "stats": {}
+        "stats": {
+          "hp": 100,
+          "atk": 100,
+          "def": 100,
+          "spa": 100,
+          "spd": 100,
+          "spe": 100
+        }
       },
       {
         "name": "mt2",
@@ -5852,11 +5876,19 @@
           "name": "Air Balloon",
           "effect": "Held: Grants immunity to Ground-type moves, Spikes, and Toxic Spikes. Consumed when the holder takes damage from a move."
         },
+        "imgUrl": "/blazevolt/mt2",
         "types": [
           "steel",
           "electric"
         ],
-        "stats": {}
+        "stats": {
+          "hp": 100,
+          "atk": 100,
+          "def": 100,
+          "spa": 100,
+          "spd": 100,
+          "spe": 100
+        }
       }
     ]
   },
@@ -7210,7 +7242,7 @@
   "benga_c": {
     "name": "Benga",
     "speciality": "",
-    "img": "TODO",
+    "img": "/leaders/blazevolt-benga",
     "pokemon": [
       {
         "name": "metagross",

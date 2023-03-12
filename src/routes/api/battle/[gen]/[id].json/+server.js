@@ -108,9 +108,10 @@ const toPokemon = (p, patches = {}) => {
 
   const [, sprite] = /\/sprites\/pokemon\/([0-9]+)/.exec(p?.sprites?.front_default) || []
 
-  return nonnull({
+  const result = nonnull({
     name: p?.species?.name || p,
     sprite: sprite,
+    imgUrl: patch?.imgUrl,
     types: patch.types || toTypes(p.types),
     stats: {
       ...(p?.stats || []).reduce(
@@ -120,9 +121,12 @@ const toPokemon = (p, patches = {}) => {
         }),
         {}
       ),
-      ...(patch?.stats || {})
+      ...(patch?.stats || patch?.baseStats || {})
     }
   });
+
+
+  return result
 };
 
 export async function GET({ params, url }) {
