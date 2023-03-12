@@ -5,6 +5,7 @@ const rewrite = !building && !dev;
 // modifying these sources
 
 export const SPRITE = 'https://img.nuzlocke.app/sprite';
+export const CUSTOM = 'https://img.nuzlocke.app/sprites';
 
 export const QRCODE = rewrite
   ? '/assets/js/qrcode.min.js'

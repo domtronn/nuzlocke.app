@@ -577,7 +577,8 @@
     "alias": "pikachu",
     "evoline": "pichu",
     "evos": [
-      "raichu"
+      "raichu",
+      "raichu-alola"
     ],
     "imgId": 25,
     "num": 35,
@@ -1954,9 +1955,7 @@
     "sprite": "farfetchd",
     "alias": "farfetchd",
     "evoline": "farfetchd",
-    "evos": [
-      "sirfetchd"
-    ],
+    "evos": [],
     "imgId": 83,
     "num": 135,
     "types": [
@@ -2404,7 +2403,8 @@
     "alias": "exeggcute",
     "evoline": "exeggcute",
     "evos": [
-      "exeggutor"
+      "exeggutor",
+      "exeggutor-alola"
     ],
     "imgId": 102,
     "num": 160,
@@ -3671,7 +3671,8 @@
     "alias": "quilava",
     "evoline": "cyndaquil",
     "evos": [
-      "typhlosion"
+      "typhlosion",
+      "typhlosion-hisui"
     ],
     "imgId": 156,
     "num": 253,
@@ -11776,7 +11777,8 @@
     "alias": "dewott",
     "evoline": "oshawott",
     "evos": [
-      "samurott"
+      "samurott",
+      "samurott-hisui"
     ],
     "imgId": 502,
     "num": 617,
@@ -12854,7 +12856,8 @@
     "alias": "petilil",
     "evoline": "petilil",
     "evos": [
-      "lilligant"
+      "lilligant",
+      "lilligant-hisui"
     ],
     "imgId": 548,
     "num": 664,
@@ -14729,7 +14732,8 @@
     "alias": "rufflet",
     "evoline": "rufflet",
     "evos": [
-      "braviary"
+      "braviary",
+      "braviary-hisui"
     ],
     "imgId": 627,
     "num": 750,
@@ -16539,7 +16543,8 @@
     "alias": "goomy",
     "evoline": "goomy",
     "evos": [
-      "sliggoo"
+      "sliggoo",
+      "sliggoo-hisui"
     ],
     "imgId": 704,
     "num": 838,
@@ -16726,7 +16731,8 @@
     "alias": "bergmite",
     "evoline": "bergmite",
     "evos": [
-      "avalugg"
+      "avalugg",
+      "avalugg-hisui"
     ],
     "imgId": 712,
     "num": 852,
@@ -16982,7 +16988,8 @@
     "alias": "dartrix",
     "evoline": "rowlet",
     "evos": [
-      "decidueye"
+      "decidueye",
+      "decidueye-hisui"
     ],
     "imgId": 723,
     "num": 869,
@@ -20705,7 +20712,7 @@
     "name": "Morpeko",
     "label": "Morpeko",
     "sprite": "morpeko",
-    "alias": "morpeko",
+    "alias": "morpeko-full-belly",
     "evoline": "morpeko",
     "evos": [],
     "imgId": 877,
@@ -23778,7 +23785,7 @@
     "sprite": "rattata-alola",
     "alias": "rattata-alola",
     "evoline": "rattata",
-    "evos": [],
+    "evos": ["raticate-alola"],
     "imgId": 10091,
     "num": 26,
     "types": [
@@ -23870,7 +23877,7 @@
     "sprite": "sandshrew-alola",
     "alias": "sandshrew-alola",
     "evoline": "sandshrew",
-    "evos": [],
+    "evos": ["sandslash-alola"],
     "imgId": 10101,
     "num": 54,
     "types": [
@@ -23916,7 +23923,7 @@
     "sprite": "vulpix-alola",
     "alias": "vulpix-alola",
     "evoline": "vulpix",
-    "evos": [],
+    "evos": ["ninetales-alola"],
     "imgId": 10103,
     "num": 67,
     "types": [
@@ -23961,7 +23968,7 @@
     "sprite": "diglett-alola",
     "alias": "diglett-alola",
     "evoline": "diglett",
-    "evos": [],
+    "evos": ["dugtrio-alola"],
     "imgId": 10105,
     "num": 85,
     "types": [
@@ -24007,7 +24014,7 @@
     "sprite": "meowth-alola",
     "alias": "meowth-alola",
     "evoline": "meowth",
-    "evos": [],
+    "evos": ["persian-alola"],
     "imgId": 10107,
     "num": 89,
     "types": [
@@ -24051,7 +24058,7 @@
     "sprite": "geodude-alola",
     "alias": "geodude-alola",
     "evoline": "geodude",
-    "evos": [],
+    "evos": ["graveler-alola"],
     "imgId": 10109,
     "num": 116,
     "types": [
@@ -24074,7 +24081,7 @@
     "sprite": "graveler-alola",
     "alias": "graveler-alola",
     "evoline": "geodude",
-    "evos": [],
+    "evos": ["golem-aloal"],
     "imgId": 10110,
     "num": 118,
     "types": [
@@ -24120,7 +24127,7 @@
     "sprite": "grimer-alola",
     "alias": "grimer-alola",
     "evoline": "grimer",
-    "evos": [],
+    "evos": ["muk-alola"],
     "imgId": 10112,
     "num": 142,
     "types": [
@@ -24212,7 +24219,7 @@
     "sprite": "meowth-galar",
     "alias": "meowth-galar",
     "evoline": "meowth",
-    "evos": [],
+    "evos": ["perrserker"],
     "imgId": 10161,
     "num": 90,
     "types": [
@@ -24234,7 +24241,7 @@
     "sprite": "ponyta-galar",
     "alias": "ponyta-galar",
     "evoline": "ponyta",
-    "evos": [],
+    "evos": ["rapidash-galar"],
     "imgId": 10162,
     "num": 122,
     "types": [
@@ -24279,7 +24286,7 @@
     "sprite": "slowpoke-galar",
     "alias": "slowpoke-galar",
     "evoline": "slowpoke",
-    "evos": [],
+    "evos": ["slowbrow-galar", "slowking-galar"],
     "imgId": 10164,
     "num": 126,
     "types": [
@@ -24324,7 +24331,7 @@
     "sprite": "farfetchd-galar",
     "alias": "farfetchd-galar",
     "evoline": "farfetchd",
-    "evos": [],
+    "evos": ["sirfetchd"],
     "imgId": 10166,
     "num": 136,
     "types": [
@@ -24369,7 +24376,7 @@
     "sprite": "mr-mime-galar",
     "alias": "mr-mime-galar",
     "evoline": "mime-jr",
-    "evos": [],
+    "evos": ["mr-rime"],
     "imgId": 10168,
     "num": 195,
     "types": [
@@ -24484,7 +24491,7 @@
     "sprite": "corsola-galar",
     "alias": "corsola-galar",
     "evoline": "corsola",
-    "evos": [],
+    "evos": ["cursola"],
     "imgId": 10173,
     "num": 322,
     "types": [
@@ -24506,7 +24513,7 @@
     "sprite": "zigzagoon-galar",
     "alias": "zigzagoon-galar",
     "evoline": "zigzagoon",
-    "evos": [],
+    "evos": ["linoone-galar"],
     "imgId": 10174,
     "num": 362,
     "types": [
@@ -24529,7 +24536,7 @@
     "sprite": "linoone-galar",
     "alias": "linoone-galar",
     "evoline": "zigzagoon",
-    "evos": [],
+    "evos": ["obstagoon"],
     "imgId": 10175,
     "num": 364,
     "types": [
@@ -24552,7 +24559,7 @@
     "sprite": "darumaka-galar",
     "alias": "darumaka-galar",
     "evoline": "darumaka",
-    "evos": [],
+    "evos": ["darmanitan-galar"],
     "imgId": 10176,
     "num": 672,
     "types": [
@@ -24574,7 +24581,7 @@
     "sprite": "yamask-galar",
     "alias": "yamask-galar",
     "evoline": "yamask",
-    "evos": [],
+    "evos": ["runerigus"],
     "imgId": 10179,
     "num": 684,
     "types": [
@@ -24620,7 +24627,7 @@
     "sprite": "growlithe-hisui",
     "alias": "growlithe-hisui",
     "evoline": "growlithe",
-    "evos": [],
+    "evos": ["arcanine-hisui"],
     "imgId": 10229,
     "num": -1,
     "types": [
@@ -24666,7 +24673,7 @@
     "sprite": "voltorb-hisui",
     "alias": "voltorb-hisui",
     "evoline": "voltorb",
-    "evos": [],
+    "evos": ["electrode-hisui"],
     "imgId": 10231,
     "num": -1,
     "types": [
@@ -24735,7 +24742,7 @@
     "sprite": "qwilfish-hisui",
     "alias": "qwilfish-hisui",
     "evoline": "qwilfish",
-    "evos": [],
+    "evos": ["overqwil"],
     "imgId": 10234,
     "num": -1,
     "types": [
@@ -24758,7 +24765,7 @@
     "sprite": "sneasel-hisui",
     "alias": "sneasel-hisui",
     "evoline": "sneasel",
-    "evos": [],
+    "evos": ["sneasler"],
     "imgId": 10235,
     "num": -1,
     "types": [
@@ -24827,7 +24834,7 @@
     "sprite": "zorua-hisui",
     "alias": "zorua-hisui",
     "evoline": "zorua",
-    "evos": [],
+    "evos": ["zoroark-hisui"],
     "imgId": 10238,
     "num": -1,
     "types": [
@@ -24896,7 +24903,7 @@
     "sprite": "sliggoo-hisui",
     "alias": "sliggoo-hisui",
     "evoline": "goomy",
-    "evos": [],
+    "evos": ["goodra-hisui"],
     "imgId": 10241,
     "num": -1,
     "types": [
@@ -24988,7 +24995,7 @@
     "sprite": "wooper-paldea",
     "alias": "wooper-paldea",
     "evoline": "wooper",
-    "evos": [],
+    "evos": ["clodsire"],
     "imgId": 10253,
     "num": -1,
     "types": [

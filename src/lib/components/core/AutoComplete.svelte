@@ -225,7 +225,8 @@
 
     :global(div.autocomplete-list-item.selected .dupe__span),
     :global(div.autocomplete-list-item.confirmed .dupe__span) {
-      display: none;
+      transform: translateX(-8px);
+      font-weight: bold;
     }
   }
 
