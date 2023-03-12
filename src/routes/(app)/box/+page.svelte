@@ -13,7 +13,7 @@
   import { types } from '$lib/data/types'
   import { stats, StatIconMap } from '$lib/data/stats'
 
-  import { SPRITE, CUSTOM } from '$utils/rewrites'
+  import { SPRITE, CUSTOM, createImgUrl } from '$utils/rewrites'
   import { toDb } from '$utils/link'
   import deferStyles from '$utils/defer-styles'
 
@@ -102,13 +102,6 @@
     ogbox = ogbox.filter(i => toid(i) !== toid(o))
     killPokemon(o)
   }
-
-  const createImgUrl = (p, { ext = 'webp', shiny = false } = {}) => {
-    if (p.imgUrl) return `${CUSTOM}${p.imgUrl}.${ext}`
-    if (shiny) return `${SPRITE}/shiny/${p.imgId}.${ext}`
-    return `${SPRITE}/${p.imgId}.${ext}`
-  }
-
 </script>
 {#if loading}
   <Loader />
