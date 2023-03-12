@@ -16,7 +16,7 @@
           },
           {
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Defense Curl",
             "effect": "Raises user's Defense by one stage."
           },
@@ -64,7 +64,7 @@
           },
           {
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Defense Curl",
             "effect": "Raises user's Defense by one stage."
           },
@@ -106,13 +106,13 @@
         "moves": [
           {
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Block",
             "effect": "Prevents the target from leaving battle."
           },
           {
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Harden",
             "effect": "Raises the user's Defense by one stage."
           },
@@ -179,7 +179,7 @@
           },
           {
             "type": "fighting",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Bulk Up",
             "effect": "Raises the user's Attack and Defense by one stage."
           }
@@ -215,19 +215,19 @@
           },
           {
             "type": "psychic",
-            "damage_class": "special",
+            "damage_class": "status",
             "name": "Light Screen",
             "effect": "Reduces damage from special attacks by 50% for five turns."
           },
           {
             "type": "psychic",
-            "damage_class": "special",
+            "damage_class": "status",
             "name": "Reflect",
             "effect": "Reduces damage from physical attacks by half."
           },
           {
             "type": "fighting",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Bulk Up",
             "effect": "Raises the user's Attack and Defense by one stage."
           }
@@ -277,7 +277,7 @@
           },
           {
             "type": "fighting",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Bulk Up",
             "effect": "Raises the user's Attack and Defense by one stage."
           }
@@ -374,7 +374,7 @@
           },
           {
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Leer",
             "effect": "Lowers the target's Defense by one stage."
           },
@@ -387,7 +387,7 @@
           },
           {
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Howl",
             "effect": "Raises the user's Attack by one stage."
           }
@@ -415,13 +415,13 @@
         "moves": [
           {
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Supersonic",
             "effect": "Confuses the target."
           },
           {
             "type": "electric",
-            "damage_class": "special",
+            "damage_class": "status",
             "name": "Thunder Wave",
             "effect": "Paralyzes the target."
           },
@@ -477,13 +477,13 @@
           },
           {
             "type": "electric",
-            "damage_class": "special",
+            "damage_class": "status",
             "name": "Thunder Wave",
             "effect": "Paralyzes the target."
           },
           {
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Howl",
             "effect": "Raises the user's Attack by one stage."
           }
@@ -543,7 +543,7 @@
           },
           {
             "type": "fire",
-            "damage_class": "special",
+            "damage_class": "status",
             "name": "Sunny Day",
             "effect": "Changes the weather to sunny for five turns."
           }
@@ -586,13 +586,13 @@
           },
           {
             "type": "psychic",
-            "damage_class": "special",
+            "damage_class": "status",
             "name": "Light Screen",
             "effect": "Reduces damage from special attacks by 50% for five turns."
           },
           {
             "type": "fire",
-            "damage_class": "special",
+            "damage_class": "status",
             "name": "Sunny Day",
             "effect": "Changes the weather to sunny for five turns."
           }
@@ -633,13 +633,13 @@
           },
           {
             "type": "fire",
-            "damage_class": "special",
+            "damage_class": "status",
             "name": "Sunny Day",
             "effect": "Changes the weather to sunny for five turns."
           },
           {
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Attract",
             "effect": "Target falls in love if it has the opposite gender, and has a 50% chance to refuse attacking the user."
           }
@@ -675,7 +675,7 @@
           },
           {
             "type": "fire",
-            "damage_class": "special",
+            "damage_class": "status",
             "name": "Sunny Day",
             "effect": "Changes the weather to sunny for five turns."
           },
@@ -688,7 +688,7 @@
           },
           {
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Attract",
             "effect": "Target falls in love if it has the opposite gender, and has a 50% chance to refuse attacking the user."
           }
@@ -728,7 +728,7 @@
         "moves": [
           {
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Teeter Dance",
             "effect": "Confuses the target."
           },
@@ -748,7 +748,7 @@
           },
           {
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Encore",
             "effect": "Forces the target to repeat its last used move every turn for 2 to 6 turns."
           }
@@ -790,7 +790,7 @@
           },
           {
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Encore",
             "effect": "Forces the target to repeat its last used move every turn for 2 to 6 turns."
           },
@@ -832,7 +832,7 @@
           },
           {
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Belly Drum",
             "effect": "User pays half its max HP to max out its Attack."
           },
@@ -881,7 +881,7 @@
           },
           {
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Yawn",
             "effect": "Target sleeps at the end of the next turn."
           },
@@ -935,19 +935,19 @@
         "moves": [
           {
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Perish Song",
             "effect": "User and target both faint after three turns."
           },
           {
             "type": "flying",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Mirror Move",
             "effect": "Uses the target's last used move."
           },
           {
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Safeguard",
             "effect": "Protects the user's field from major status ailments and confusion for five turns."
           },
@@ -983,7 +983,7 @@
         "moves": [
           {
             "type": "fire",
-            "damage_class": "special",
+            "damage_class": "status",
             "name": "Sunny Day",
             "effect": "Changes the weather to sunny for five turns."
           },
@@ -1003,7 +1003,7 @@
           },
           {
             "type": "grass",
-            "damage_class": "special",
+            "damage_class": "status",
             "name": "Synthesis",
             "effect": "Heals the user by half its max HP.  Affected by weather."
           }
@@ -1038,14 +1038,14 @@
           },
           {
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Supersonic",
             "effect": "Confuses the target."
           },
           {
             "priority": 4,
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Protect",
             "effect": "Prevents any moves from hitting the user this turn."
           },
@@ -1081,7 +1081,7 @@
         "moves": [
           {
             "type": "ground",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Sand Attack",
             "effect": "Lowers the target's accuracy by one stage."
           },
@@ -1145,7 +1145,7 @@
           },
           {
             "type": "dragon",
-            "damage_class": "special",
+            "damage_class": "status",
             "name": "Dragon Dance",
             "effect": "Raises the user's Attack and Speed by one stage."
           },
@@ -1214,7 +1214,7 @@
           },
           {
             "type": "psychic",
-            "damage_class": "special",
+            "damage_class": "status",
             "name": "Light Screen",
             "effect": "Reduces damage from special attacks by 50% for five turns."
           }
@@ -1250,19 +1250,19 @@
           },
           {
             "type": "fire",
-            "damage_class": "special",
+            "damage_class": "status",
             "name": "Sunny Day",
             "effect": "Changes the weather to sunny for five turns."
           },
           {
             "type": "ghost",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Confuse Ray",
             "effect": "Confuses the target."
           },
           {
             "type": "psychic",
-            "damage_class": "special",
+            "damage_class": "status",
             "name": "Calm Mind",
             "effect": "Raises the user's Special Attack and Special Defense by one stage."
           }
@@ -1291,7 +1291,7 @@
         "moves": [
           {
             "type": "psychic",
-            "damage_class": "special",
+            "damage_class": "status",
             "name": "Light Screen",
             "effect": "Reduces damage from special attacks by 50% for five turns."
           },
@@ -1304,13 +1304,13 @@
           },
           {
             "type": "psychic",
-            "damage_class": "special",
+            "damage_class": "status",
             "name": "Hypnosis",
             "effect": "Puts the target to sleep."
           },
           {
             "type": "psychic",
-            "damage_class": "special",
+            "damage_class": "status",
             "name": "Calm Mind",
             "effect": "Raises the user's Special Attack and Special Defense by one stage."
           }
@@ -1344,7 +1344,7 @@
         "moves": [
           {
             "type": "fire",
-            "damage_class": "special",
+            "damage_class": "status",
             "name": "Sunny Day",
             "effect": "Changes the weather to sunny for five turns."
           },
@@ -1413,13 +1413,13 @@
           },
           {
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Attract",
             "effect": "Target falls in love if it has the opposite gender, and has a 50% chance to refuse attacking the user."
           },
           {
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Sweet Kiss",
             "effect": "Confuses the target."
           },
@@ -1453,7 +1453,7 @@
         "moves": [
           {
             "type": "water",
-            "damage_class": "special",
+            "damage_class": "status",
             "name": "Rain Dance",
             "effect": "Changes the weather to rain for five turns."
           },
@@ -1466,7 +1466,7 @@
           },
           {
             "type": "psychic",
-            "damage_class": "special",
+            "damage_class": "status",
             "name": "Amnesia",
             "effect": "Raises the user's Special Defense by two stages."
           },
@@ -1502,7 +1502,7 @@
         "moves": [
           {
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Encore",
             "effect": "Forces the target to repeat its last used move every turn for 2 to 6 turns."
           },
@@ -1566,13 +1566,13 @@
           },
           {
             "type": "dark",
-            "damage_class": "special",
+            "damage_class": "status",
             "name": "Taunt",
             "effect": "For the next few turns, the target can only use damaging moves."
           },
           {
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Leer",
             "effect": "Lowers the target's Defense by one stage."
           }
@@ -1608,7 +1608,7 @@
           },
           {
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Double Team",
             "effect": "Raises the user's evasion by one stage."
           },
@@ -1621,7 +1621,7 @@
           },
           {
             "type": "psychic",
-            "damage_class": "special",
+            "damage_class": "status",
             "name": "Rest",
             "effect": "User sleeps for two turns, completely healing itself."
           }
@@ -1668,7 +1668,7 @@
           },
           {
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Growl",
             "effect": "Lowers the target's Attack by one stage."
           }
@@ -1747,7 +1747,7 @@
         "moves": [
           {
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Growl",
             "effect": "Lowers the target's Attack by one stage."
           },
@@ -1810,7 +1810,7 @@
           },
           {
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Growl",
             "effect": "Lowers the target's Attack by one stage."
           },
@@ -1823,7 +1823,7 @@
           },
           {
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Nature Power",
             "effect": "Uses a move which depends upon the terrain."
           }
@@ -1853,7 +1853,7 @@
         "moves": [
           {
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Yawn",
             "effect": "Target sleeps at the end of the next turn."
           },
@@ -1923,7 +1923,7 @@
           },
           {
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Foresight",
             "effect": "Forces the target to have no Evade, and allows it to be hit by Normal and Fighting moves even if it's a Ghost."
           }
@@ -1960,7 +1960,7 @@
         "moves": [
           {
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Growl",
             "effect": "Lowers the target's Attack by one stage."
           },
@@ -1973,14 +1973,14 @@
           },
           {
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Double Team",
             "effect": "Raises the user's evasion by one stage."
           },
           {
             "priority": -6,
             "type": "psychic",
-            "damage_class": "special",
+            "damage_class": "status",
             "name": "Teleport",
             "effect": "Immediately ends wild battles.  No effect otherwise."
           }
@@ -2015,7 +2015,7 @@
         "moves": [
           {
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Growl",
             "effect": "Lowers the target's Attack by one stage."
           },
@@ -2057,13 +2057,13 @@
         "moves": [
           {
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Howl",
             "effect": "Raises the user's Attack by one stage."
           },
           {
             "type": "ground",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Sand Attack",
             "effect": "Lowers the target's accuracy by one stage."
           },
@@ -2076,7 +2076,7 @@
           },
           {
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Odor Sleuth",
             "effect": "Forces the target to have no Evade, and allows it to be hit by Normal and Fighting moves even if it's a Ghost."
           }
@@ -2104,7 +2104,7 @@
         "moves": [
           {
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Growl",
             "effect": "Lowers the target's Attack by one stage."
           },
@@ -2152,7 +2152,7 @@
         "moves": [
           {
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Supersonic",
             "effect": "Confuses the target."
           },
@@ -2208,13 +2208,13 @@
         "moves": [
           {
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Focus Energy",
             "effect": "Increases the user's chance to score a critical hit."
           },
           {
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Scary Face",
             "effect": "Lowers the target's Speed by two stages."
           },
@@ -2227,7 +2227,7 @@
           },
           {
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Screech",
             "effect": "Lowers the target's Defense by two stages."
           }
@@ -2263,20 +2263,20 @@
           },
           {
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Odor Sleuth",
             "effect": "Forces the target to have no Evade, and allows it to be hit by Normal and Fighting moves even if it's a Ghost."
           },
           {
             "priority": -6,
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Roar",
             "effect": "Immediately ends wild battles.  Forces trainers to switch Pokémon."
           },
           {
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Swagger",
             "effect": "Raises the target's Attack by two stages and confuses the target."
           }
@@ -2326,7 +2326,7 @@
           },
           {
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Nature Power",
             "effect": "Uses a move which depends upon the terrain."
           },
@@ -2363,13 +2363,13 @@
         "moves": [
           {
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Harden",
             "effect": "Raises the user's Defense by one stage."
           },
           {
             "type": "psychic",
-            "damage_class": "special",
+            "damage_class": "status",
             "name": "Amnesia",
             "effect": "Raises the user's Special Defense by two stages."
           },
@@ -2418,13 +2418,13 @@
           },
           {
             "type": "ground",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Mud Sport",
             "effect": "Halves all Electric-type damage."
           },
           {
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Foresight",
             "effect": "Forces the target to have no Evade, and allows it to be hit by Normal and Fighting moves even if it's a Ghost."
           },
@@ -2487,7 +2487,7 @@
           },
           {
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Focus Energy",
             "effect": "Increases the user's chance to score a critical hit."
           }
@@ -2523,20 +2523,20 @@
           },
           {
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Odor Sleuth",
             "effect": "Forces the target to have no Evade, and allows it to be hit by Normal and Fighting moves even if it's a Ghost."
           },
           {
             "priority": -6,
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Roar",
             "effect": "Immediately ends wild battles.  Forces trainers to switch Pokémon."
           },
           {
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Swagger",
             "effect": "Raises the target's Attack by two stages and confuses the target."
           }
@@ -2564,7 +2564,7 @@
         "moves": [
           {
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Focus Energy",
             "effect": "Increases the user's chance to score a critical hit."
           },
@@ -2577,7 +2577,7 @@
           },
           {
             "type": "psychic",
-            "damage_class": "special",
+            "damage_class": "status",
             "name": "Amnesia",
             "effect": "Raises the user's Special Defense by two stages."
           },
@@ -2620,7 +2620,7 @@
           },
           {
             "type": "ghost",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Confuse Ray",
             "effect": "Confuses the target."
           },
@@ -2670,19 +2670,19 @@
           {
             "priority": -6,
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Roar",
             "effect": "Immediately ends wild battles.  Forces trainers to switch Pokémon."
           },
           {
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Swagger",
             "effect": "Raises the target's Attack by two stages and confuses the target."
           },
           {
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Scary Face",
             "effect": "Lowers the target's Speed by two stages."
           },
@@ -2724,7 +2724,7 @@
           },
           {
             "type": "ghost",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Confuse Ray",
             "effect": "Confuses the target."
           },
@@ -2773,7 +2773,7 @@
           },
           {
             "type": "psychic",
-            "damage_class": "special",
+            "damage_class": "status",
             "name": "Amnesia",
             "effect": "Raises the user's Special Defense by two stages."
           },
@@ -2830,14 +2830,14 @@
           },
           {
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Sweet Scent",
             "effect": "Lowers the target's evasion by one stage."
           },
           {
             "priority": -6,
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Whirlwind",
             "effect": "Immediately ends wild battles.  Forces trainers to switch Pokémon."
           },
@@ -2887,13 +2887,13 @@
           },
           {
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Growl",
             "effect": "Lowers the target's Attack by one stage."
           },
           {
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Nature Power",
             "effect": "Uses a move which depends upon the terrain."
           }
@@ -2923,13 +2923,13 @@
         "moves": [
           {
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Harden",
             "effect": "Raises the user's Defense by one stage."
           },
           {
             "type": "psychic",
-            "damage_class": "special",
+            "damage_class": "status",
             "name": "Amnesia",
             "effect": "Raises the user's Special Defense by two stages."
           },
@@ -2978,13 +2978,13 @@
           },
           {
             "type": "ground",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Mud Sport",
             "effect": "Halves all Electric-type damage."
           },
           {
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Foresight",
             "effect": "Forces the target to have no Evade, and allows it to be hit by Normal and Fighting moves even if it's a Ghost."
           },
@@ -3028,7 +3028,7 @@
         "moves": [
           {
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Scary Face",
             "effect": "Lowers the target's Speed by two stages."
           },
@@ -3041,7 +3041,7 @@
           },
           {
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Screech",
             "effect": "Lowers the target's Defense by two stages."
           },
@@ -3077,26 +3077,26 @@
         "moves": [
           {
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Odor Sleuth",
             "effect": "Forces the target to have no Evade, and allows it to be hit by Normal and Fighting moves even if it's a Ghost."
           },
           {
             "priority": -6,
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Roar",
             "effect": "Immediately ends wild battles.  Forces trainers to switch Pokémon."
           },
           {
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Swagger",
             "effect": "Raises the target's Attack by two stages and confuses the target."
           },
           {
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Scary Face",
             "effect": "Lowers the target's Speed by two stages."
           }
@@ -3131,7 +3131,7 @@
           },
           {
             "type": "ghost",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Confuse Ray",
             "effect": "Confuses the target."
           },
@@ -3181,7 +3181,7 @@
           {
             "priority": -6,
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Roar",
             "effect": "Immediately ends wild battles.  Forces trainers to switch Pokémon."
           },
@@ -3194,13 +3194,13 @@
           },
           {
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Scary Face",
             "effect": "Lowers the target's Speed by two stages."
           },
           {
             "type": "dark",
-            "damage_class": "special",
+            "damage_class": "status",
             "name": "Taunt",
             "effect": "For the next few turns, the target can only use damaging moves."
           }
@@ -3228,13 +3228,13 @@
         "moves": [
           {
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Mean Look",
             "effect": "Prevents the target from leaving battle."
           },
           {
             "type": "ghost",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Confuse Ray",
             "effect": "Confuses the target."
           },
@@ -3283,7 +3283,7 @@
           },
           {
             "type": "psychic",
-            "damage_class": "special",
+            "damage_class": "status",
             "name": "Amnesia",
             "effect": "Raises the user's Special Defense by two stages."
           },
@@ -3326,7 +3326,7 @@
         "moves": [
           {
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Focus Energy",
             "effect": "Increases the user's chance to score a critical hit."
           },
@@ -3339,7 +3339,7 @@
           },
           {
             "type": "psychic",
-            "damage_class": "special",
+            "damage_class": "status",
             "name": "Amnesia",
             "effect": "Raises the user's Special Defense by two stages."
           },
@@ -3376,7 +3376,7 @@
           {
             "priority": -6,
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Roar",
             "effect": "Immediately ends wild battles.  Forces trainers to switch Pokémon."
           },
@@ -3389,13 +3389,13 @@
           },
           {
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Scary Face",
             "effect": "Lowers the target's Speed by two stages."
           },
           {
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Swagger",
             "effect": "Raises the target's Attack by two stages and confuses the target."
           }
@@ -3430,7 +3430,7 @@
           },
           {
             "type": "ghost",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Confuse Ray",
             "effect": "Confuses the target."
           },
@@ -3479,7 +3479,7 @@
         "moves": [
           {
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Scary Face",
             "effect": "Lowers the target's Speed by two stages."
           },
@@ -3492,7 +3492,7 @@
           },
           {
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Screech",
             "effect": "Lowers the target's Defense by two stages."
           },
@@ -3535,20 +3535,20 @@
           },
           {
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Scary Face",
             "effect": "Lowers the target's Speed by two stages."
           },
           {
             "priority": -6,
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Roar",
             "effect": "Immediately ends wild battles.  Forces trainers to switch Pokémon."
           },
           {
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Swagger",
             "effect": "Raises the target's Attack by two stages and confuses the target."
           }
@@ -3591,19 +3591,19 @@
           {
             "priority": -6,
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Roar",
             "effect": "Immediately ends wild battles.  Forces trainers to switch Pokémon."
           },
           {
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Swagger",
             "effect": "Raises the target's Attack by two stages and confuses the target."
           },
           {
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Scary Face",
             "effect": "Lowers the target's Speed by two stages."
           }
@@ -3638,7 +3638,7 @@
           },
           {
             "type": "ghost",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Confuse Ray",
             "effect": "Confuses the target."
           },
@@ -3680,7 +3680,7 @@
         "moves": [
           {
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Screech",
             "effect": "Lowers the target's Defense by two stages."
           },
@@ -3693,13 +3693,13 @@
           },
           {
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Swagger",
             "effect": "Raises the target's Attack by two stages and confuses the target."
           },
           {
             "type": "dark",
-            "damage_class": "special",
+            "damage_class": "status",
             "name": "Taunt",
             "effect": "For the next few turns, the target can only use damaging moves."
           }
@@ -3742,7 +3742,7 @@
           },
           {
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Safeguard",
             "effect": "Protects the user's field from major status ailments and confusion for five turns."
           },
@@ -3755,7 +3755,7 @@
           },
           {
             "type": "dragon",
-            "damage_class": "special",
+            "damage_class": "status",
             "name": "Dragon Dance",
             "effect": "Raises the user's Attack and Speed by one stage."
           }
@@ -3784,19 +3784,19 @@
         "moves": [
           {
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Sing",
             "effect": "Puts the target to sleep."
           },
           {
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Assist",
             "effect": "Randomly selects and uses one of the trainer's other Pokémon's moves."
           },
           {
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Charm",
             "effect": "Lowers the target's Attack by two stages."
           },
@@ -3838,7 +3838,7 @@
           },
           {
             "type": "grass",
-            "damage_class": "special",
+            "damage_class": "status",
             "name": "Leech Seed",
             "effect": "Seeds the target, stealing HP from it every turn."
           },
@@ -3851,7 +3851,7 @@
           },
           {
             "type": "poison",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Toxic",
             "effect": "Badly poisons the target, inflicting more damage every turn."
           }
@@ -3880,7 +3880,7 @@
         "moves": [
           {
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Supersonic",
             "effect": "Confuses the target."
           },
@@ -3900,7 +3900,7 @@
           },
           {
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Screech",
             "effect": "Lowers the target's Defense by two stages."
           }
@@ -3929,13 +3929,13 @@
         "moves": [
           {
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Double Team",
             "effect": "Raises the user's evasion by one stage."
           },
           {
             "type": "psychic",
-            "damage_class": "special",
+            "damage_class": "status",
             "name": "Calm Mind",
             "effect": "Raises the user's Special Attack and Special Defense by one stage."
           },
@@ -3985,7 +3985,7 @@
           {
             "priority": -6,
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Roar",
             "effect": "Immediately ends wild battles.  Forces trainers to switch Pokémon."
           },
@@ -3998,7 +3998,7 @@
           },
           {
             "type": "ground",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Sand Attack",
             "effect": "Lowers the target's accuracy by one stage."
           },
@@ -4033,19 +4033,19 @@
         "moves": [
           {
             "type": "dark",
-            "damage_class": "special",
+            "damage_class": "status",
             "name": "Torment",
             "effect": "Prevents the target from using the same move twice in a row."
           },
           {
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Double Team",
             "effect": "Raises the user's evasion by one stage."
           },
           {
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Swagger",
             "effect": "Raises the target's Attack by two stages and confuses the target."
           },
@@ -4081,7 +4081,7 @@
         "moves": [
           {
             "type": "grass",
-            "damage_class": "special",
+            "damage_class": "status",
             "name": "Leech Seed",
             "effect": "Seeds the target, stealing HP from it every turn."
           },
@@ -4101,7 +4101,7 @@
           },
           {
             "type": "grass",
-            "damage_class": "special",
+            "damage_class": "status",
             "name": "Cotton Spore",
             "effect": "Lowers the target's Speed by two stages."
           }
@@ -4137,7 +4137,7 @@
           },
           {
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Swords Dance",
             "effect": "Raises the user's Attack by two stages."
           },
@@ -4193,7 +4193,7 @@
           },
           {
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Swords Dance",
             "effect": "Raises the user's Attack by two stages."
           },
@@ -4247,7 +4247,7 @@
           },
           {
             "type": "ghost",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Confuse Ray",
             "effect": "Confuses the target."
           },
@@ -4260,7 +4260,7 @@
           {
             "priority": 4,
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Protect",
             "effect": "Prevents any moves from hitting the user this turn."
           }
@@ -4295,13 +4295,13 @@
           },
           {
             "type": "ghost",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Grudge",
             "effect": "If the user faints this turn, the PP of the move that fainted it drops to 0."
           },
           {
             "type": "fire",
-            "damage_class": "special",
+            "damage_class": "status",
             "name": "Will-O-Wisp",
             "effect": "Burns the target."
           },
@@ -4343,7 +4343,7 @@
           },
           {
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Double Team",
             "effect": "Raises the user's evasion by one stage."
           },
@@ -4497,7 +4497,7 @@
         "moves": [
           {
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Encore",
             "effect": "Forces the target to repeat its last used move every turn for 2 to 6 turns."
           },
@@ -4510,7 +4510,7 @@
           },
           {
             "type": "ice",
-            "damage_class": "special",
+            "damage_class": "status",
             "name": "Hail",
             "effect": "Changes the weather to a hailstorm for five turns."
           },
@@ -4546,7 +4546,7 @@
         "moves": [
           {
             "type": "psychic",
-            "damage_class": "special",
+            "damage_class": "status",
             "name": "Light Screen",
             "effect": "Reduces damage from special attacks by 50% for five turns."
           },
@@ -4595,7 +4595,7 @@
         "moves": [
           {
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Attract",
             "effect": "Target falls in love if it has the opposite gender, and has a 50% chance to refuse attacking the user."
           },
@@ -4608,7 +4608,7 @@
           },
           {
             "type": "ice",
-            "damage_class": "special",
+            "damage_class": "status",
             "name": "Hail",
             "effect": "Changes the weather to a hailstorm for five turns."
           },
@@ -4654,7 +4654,7 @@
           },
           {
             "type": "ice",
-            "damage_class": "special",
+            "damage_class": "status",
             "name": "Hail",
             "effect": "Changes the weather to a hailstorm for five turns."
           },
@@ -4765,7 +4765,7 @@
           {
             "priority": 4,
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Protect",
             "effect": "Prevents any moves from hitting the user this turn."
           },
@@ -4814,7 +4814,7 @@
           },
           {
             "type": "dragon",
-            "damage_class": "special",
+            "damage_class": "status",
             "name": "Dragon Dance",
             "effect": "Raises the user's Attack and Speed by one stage."
           },
@@ -4850,13 +4850,13 @@
         "moves": [
           {
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Smokescreen",
             "effect": "Lowers the target's accuracy by one stage."
           },
           {
             "type": "dragon",
-            "damage_class": "special",
+            "damage_class": "status",
             "name": "Dragon Dance",
             "effect": "Raises the user's Attack and Speed by one stage."
           },
@@ -5012,7 +5012,7 @@
         "moves": [
           {
             "type": "water",
-            "damage_class": "special",
+            "damage_class": "status",
             "name": "Rain Dance",
             "effect": "Changes the weather to rain for five turns."
           },
@@ -5061,7 +5061,7 @@
         "moves": [
           {
             "type": "poison",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Toxic",
             "effect": "Badly poisons the target, inflicting more damage every turn."
           },
@@ -5124,13 +5124,13 @@
           },
           {
             "type": "grass",
-            "damage_class": "special",
+            "damage_class": "status",
             "name": "Leech Seed",
             "effect": "Seeds the target, stealing HP from it every turn."
           },
           {
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Double Team",
             "effect": "Raises the user's evasion by one stage."
           }
@@ -5173,7 +5173,7 @@
           },
           {
             "type": "psychic",
-            "damage_class": "special",
+            "damage_class": "status",
             "name": "Amnesia",
             "effect": "Raises the user's Special Defense by two stages."
           },
@@ -5209,7 +5209,7 @@
         "moves": [
           {
             "type": "dragon",
-            "damage_class": "special",
+            "damage_class": "status",
             "name": "Dragon Dance",
             "effect": "Raises the user's Attack and Speed by one stage."
           },
@@ -5259,7 +5259,7 @@
         "moves": [
           {
             "type": "normal",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Recover",
             "effect": "Heals the user by half its max HP."
           },
@@ -5279,7 +5279,7 @@
           },
           {
             "type": "poison",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Toxic",
             "effect": "Badly poisons the target, inflicting more damage every turn."
           }
@@ -5319,7 +5319,7 @@
         "moves": [
           {
             "type": "poison",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Toxic",
             "effect": "Badly poisons the target, inflicting more damage every turn."
           },
@@ -5332,7 +5332,7 @@
           },
           {
             "type": "ground",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Spikes",
             "effect": "Scatters Spikes, hurting opposing Pokémon that switch in."
           },
@@ -5368,13 +5368,13 @@
         "moves": [
           {
             "type": "psychic",
-            "damage_class": "special",
+            "damage_class": "status",
             "name": "Reflect",
             "effect": "Reduces damage from physical attacks by half."
           },
           {
             "type": "psychic",
-            "damage_class": "special",
+            "damage_class": "status",
             "name": "Light Screen",
             "effect": "Reduces damage from special attacks by 50% for five turns."
           },
@@ -5474,7 +5474,7 @@
           },
           {
             "type": "grass",
-            "damage_class": "special",
+            "damage_class": "status",
             "name": "Ingrain",
             "effect": "Prevents the user from leaving battle.  User regains 1/16 of its max HP every turn."
           },
@@ -5487,7 +5487,7 @@
           },
           {
             "type": "ghost",
-            "damage_class": "physical",
+            "damage_class": "status",
             "name": "Confuse Ray",
             "effect": "Confuses the target."
           }

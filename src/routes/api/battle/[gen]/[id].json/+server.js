@@ -39,6 +39,8 @@ const toMoves = (moves, patches = {}, physicalSpecialSplit = false) => {
     compose(
       (d) => {
         const patched = patches[d.name] || patches[slugify(d.name)]
+        const damageClass = patched?.category || d.damage_class
+
         return nonnull({
           ...d,
           name: patched
@@ -47,9 +49,9 @@ const toMoves = (moves, patches = {}, physicalSpecialSplit = false) => {
           type: patched?.type || d.type,
           power: patched?.power || d.power,
           effect: patched?.effect || d.effect,
-          damage_class: physicalSpecialSplit
-            ? LegacyDamageClassMap[patched?.type || d.type] || patched?.category || d.damage_class
-            : patched?.category || d.damage_class
+          damage_class: damageClass != 'status' && physicalSpecialSplit
+            ? LegacyDamageClassMap[patched?.type || d.type]
+            : damageClass
         });
       },
       ({ effect_chance, effect_entries, ...rest }) => ({
