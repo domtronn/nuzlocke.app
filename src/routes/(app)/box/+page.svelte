@@ -13,7 +13,7 @@
   import { types } from '$lib/data/types'
   import { stats, StatIconMap } from '$lib/data/stats'
 
-  import { SPRITE } from '$utils/rewrites'
+  import { SPRITE, CUSTOM } from '$utils/rewrites'
   import { toDb } from '$utils/link'
   import deferStyles from '$utils/defer-styles'
 
@@ -103,8 +103,13 @@
     killPokemon(o)
   }
 
-</script>
+  const createImgUrl = (p, { ext = 'webp', shiny = false } = {}) => {
+    if (p.imgUrl) return `${CUSTOM}${p.imgUrl}.${ext}`
+    if (shiny) return `${SPRITE}/shiny/${p.imgId}.${ext}`
+    return `${SPRITE}/${p.imgId}.${ext}`
+  }
 
+</script>
 {#if loading}
   <Loader />
 {:else}
@@ -176,8 +181,8 @@
             >
               {#key p}
               <PokemonCard
-                sprite={`${SPRITE}/${p.status === 6 ? 'shiny/' : ''}${Pokemon[p.pokemon].imgId}.png`}
-                fallback={`${SPRITE}/${Pokemon[p.pokemon].imgId}.png`}
+                sprite={createImgUrl(Pokemon[p.pokemon], { shiny: p.status === 6, ext: 'webp' })}
+                fallback={createImgUrl(Pokemon[p.pokemon], { shiny: p.status === 6, ext: 'png' })}
                 maxStat={Math.max(150, ...Object.values(Pokemon[p.pokemon].baseStats))}
                 moves={[]}
                 ability={p.nickname ? { name: p.nickname + ' the ' + (p.nature || '').toLowerCase() } : null}

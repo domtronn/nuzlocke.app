@@ -1821,10 +1821,10 @@
           "spa": 135
         }
       },
-      "undefined": {
+      "swoobat": {
+        "name": "swoobat",
         "stats": {
-          "def": 120,
-          "spd": 85
+          "spa": 97
         }
       },
       "audino": {
@@ -2184,16 +2184,19 @@
           "dark"
         ]
       },
-      "lycanroc-dusknoir,90": {
-        "name": "lycanroc-dusknoir,90",
+      "lycanroc-dusk": {
+        "name": "lycanroc-dusk",
         "stats": {
           "atk": 127,
           "def": 70,
           "spd": 70
-        },
-        "types": [
-          "araquanid"
-        ]
+        }
+      },
+      "araquanid": {
+        "name": "araquanid",
+        "stats": {
+          "atk": 90
+        }
       },
       "lurantis": {
         "name": "lurantis",
@@ -2223,6 +2226,13 @@
           "grass",
           "fighting"
         ]
+      },
+      "palossand": {
+        "name": "palossand",
+        "stats": {
+          "def": 120,
+          "spd": 85
+        }
       },
       "silvally": {
         "name": "silvally",
@@ -2395,6 +2405,22 @@
       "blademaster": {
         "name": "Blademaster",
         "effect": "This Pokemon's blade-based attacks have their power multiplied by 1.2× and get a +1 critical hit ratio."
+      },
+      "bad-company": {
+        "name": "Bad company",
+        "effect": "Prevents self-lowering stat drops and recoil."
+      },
+      "as-one": {
+        "name": "As one",
+        "effect": "This Pokemon's Attack is raised by 1 stage if it attacks and knocks out another Pokemon. While this Pokemon is active, it prevents opposing Pokemon from using their Berries. This Ability activates before hazards and other Abilities take effect."
+      },
+      "primal-armor": {
+        "name": "Primal armor",
+        "effect": "This Pokemon receives 1/2 damage from supereffective attacks."
+      },
+      "striker": {
+        "name": "Striker",
+        "effect": "This Pokemon's kick-based attacks have their power multiplied by 1.3."
       }
     },
     "pokemon": {
@@ -3758,6 +3784,405 @@
         "stats": {
           "hp": 85
         }
+      }
+    },
+    "fakemon": {
+      "blitzle-sevii": {
+        "name": "Seviian Blitzle",
+        "label": "Seviian Blitzle",
+        "alias": "blitzle-sevii",
+        "sprite": "blitzle-sevii",
+        "types": [
+          "ice",
+          "electric"
+        ],
+        "baseStats": {
+          "hp": 45,
+          "atk": 45,
+          "def": 32,
+          "spa": 65,
+          "spd": 32,
+          "spe": 76
+        },
+        "total": 295,
+        "evoline": "blitzle",
+        "imgUrl": "/radred/blitzle-sevii",
+        "evos": [
+          "zebstrika-sevii"
+        ]
+      },
+      "zebstrika-sevii": {
+        "name": "Seviian Zebstrika",
+        "label": "Seviian Zebstrika",
+        "alias": "zebstrika-sevii",
+        "sprite": "zebstrika-sevii",
+        "types": [
+          "ice",
+          "electric"
+        ],
+        "baseStats": {
+          "hp": 75,
+          "atk": 70,
+          "def": 63,
+          "spa": 110,
+          "spd": 63,
+          "spe": 116
+        },
+        "total": 497,
+        "evoline": "blitzle",
+        "imgUrl": "/radred/zebstrika-sevii"
+      },
+      "carnivine-sevii": {
+        "name": "Seviian Carnivine",
+        "label": "Seviian Carnivine",
+        "alias": "carnivine-sevii",
+        "sprite": "carnivine-sevii",
+        "types": [
+          "poison",
+          "steel"
+        ],
+        "baseStats": {
+          "hp": 94,
+          "atk": 100,
+          "def": 92,
+          "spa": 55,
+          "spd": 77,
+          "spe": 36
+        },
+        "total": 454,
+        "evoline": "carnivine",
+        "imgUrl": "/radred/carnivine-sevii"
+      },
+      "centiskorch-sevii": {
+        "name": "Seviian Centiskorch",
+        "label": "Seviian Centiskorch",
+        "alias": "centiskorch-sevii",
+        "sprite": "centiskorch-sevii",
+        "types": [
+          "ground",
+          "bug"
+        ],
+        "baseStats": {
+          "hp": 100,
+          "atk": 115,
+          "def": 65,
+          "spa": 65,
+          "spd": 90,
+          "spe": 90
+        },
+        "total": 525,
+        "evoline": "sizzlipede",
+        "imgUrl": "/radred/centiskorch-sevii"
+      },
+      "sizzlipede-sevii": {
+        "name": "Seviian Sizzlipede",
+        "label": "Seviian Sizzlipede",
+        "alias": "sizzlipede-sevii",
+        "sprite": "sizzlipede-sevii",
+        "types": [
+          "ground",
+          "bug"
+        ],
+        "baseStats": {
+          "hp": 50,
+          "atk": 65,
+          "def": 45,
+          "spa": 50,
+          "spd": 50,
+          "spe": 45
+        },
+        "total": 305,
+        "evoline": "sizzlipede",
+        "imgUrl": "/radred/sizzlipede-sevii",
+        "evos": [
+          "centiskorch-sevii"
+        ]
+      },
+      "clauncher-sevii": {
+        "name": "Seviian Clauncher",
+        "label": "Seviian Clauncher",
+        "alias": "clauncher-sevii",
+        "sprite": "clauncher-sevii",
+        "types": [
+          "bug",
+          "dark"
+        ],
+        "baseStats": {
+          "hp": 50,
+          "atk": 38,
+          "def": 62,
+          "spa": 58,
+          "spd": 63,
+          "spe": 59
+        },
+        "total": 330,
+        "evoline": "clauncher",
+        "imgUrl": "/radred/clauncher-sevii",
+        "evos": [
+          "clawitzer-sevii"
+        ]
+      },
+      "clawitzer-sevii": {
+        "name": "Seviian Clawitzer",
+        "label": "Seviian Clawitzer",
+        "alias": "clawitzer-sevii",
+        "sprite": "clawitzer-sevii",
+        "types": [
+          "bug",
+          "dark"
+        ],
+        "baseStats": {
+          "hp": 81,
+          "atk": 63,
+          "def": 83,
+          "spa": 110,
+          "spd": 79,
+          "spe": 97
+        },
+        "total": 513,
+        "evoline": "clauncher",
+        "imgUrl": "/radred/clawitzer-sevii"
+      },
+      "dhelmise-sevii": {
+        "name": "Seviian Dhelmise",
+        "label": "Seviian Dhelmise",
+        "alias": "dhelmise-sevii",
+        "sprite": "dhelmise-sevii",
+        "types": [
+          "water",
+          "grass"
+        ],
+        "baseStats": {
+          "hp": 90,
+          "atk": 81,
+          "def": 105,
+          "spa": 106,
+          "spd": 95,
+          "spe": 40
+        },
+        "total": 517,
+        "evoline": "dhelmise",
+        "imgUrl": "/radred/dhelmise-sevii"
+      },
+      "dodrio-sevii": {
+        "name": "Seviian Dodrio",
+        "label": "Seviian Dodrio",
+        "alias": "dodrio-sevii",
+        "sprite": "dodrio-sevii",
+        "types": [
+          "fire",
+          "ground"
+        ],
+        "baseStats": {
+          "hp": 65,
+          "atk": 125,
+          "def": 65,
+          "spa": 40,
+          "spd": 65,
+          "spe": 110
+        },
+        "total": 470,
+        "evoline": "doduo",
+        "imgUrl": "/radred/dodrio-sevii"
+      },
+      "doduo-sevii": {
+        "name": "Seviian Doduo",
+        "label": "Seviian Doduo",
+        "alias": "doduo-sevii",
+        "sprite": "doduo-sevii",
+        "types": [
+          "fire",
+          "ground"
+        ],
+        "baseStats": {
+          "hp": 40,
+          "atk": 80,
+          "def": 45,
+          "spa": 35,
+          "spd": 35,
+          "spe": 75
+        },
+        "total": 310,
+        "evoline": "doduo",
+        "imgUrl": "/radred/doduo-sevii",
+        "evos": [
+          "dodrio-sevii"
+        ]
+      },
+      "feebas-sevii": {
+        "name": "Seviian Feebas",
+        "label": "Seviian Feebas",
+        "alias": "feebas-sevii",
+        "sprite": "feebas-sevii",
+        "types": [
+          "water",
+          "ground"
+        ],
+        "baseStats": {
+          "hp": 20,
+          "atk": 15,
+          "def": 20,
+          "spa": 10,
+          "spd": 55,
+          "spe": 80
+        },
+        "total": 200,
+        "evoline": "feebas",
+        "imgUrl": "/radred/feebas-sevii",
+        "evos": [
+          "milotic-sevii"
+        ]
+      },
+      "milotic-sevii": {
+        "name": "Seviian Milotic",
+        "label": "Seviian Milotic",
+        "alias": "milotic-sevii",
+        "sprite": "milotic-sevii",
+        "types": [
+          "fairy",
+          "ground"
+        ],
+        "baseStats": {
+          "hp": 95,
+          "atk": 60,
+          "def": 84,
+          "spa": 105,
+          "spd": 125,
+          "spe": 81
+        },
+        "total": 550,
+        "evoline": "feebas",
+        "imgUrl": "/radred/milotic-sevii"
+      },
+      "mantine-sevii": {
+        "name": "Seviian Mantine",
+        "label": "Seviian Mantine",
+        "alias": "mantine-sevii",
+        "sprite": "mantine-sevii",
+        "types": [
+          "electric",
+          "poison"
+        ],
+        "baseStats": {
+          "hp": 80,
+          "atk": 30,
+          "def": 70,
+          "spa": 100,
+          "spd": 120,
+          "spe": 95
+        },
+        "total": 495,
+        "evoline": "mantyke",
+        "imgUrl": "/radred/mantine-sevii"
+      },
+      "mantyke-sevii": {
+        "name": "Seviian Mantyke",
+        "label": "Seviian Mantyke",
+        "alias": "mantyke-sevii",
+        "sprite": "mantyke-sevii",
+        "types": [
+          "electric",
+          "poison"
+        ],
+        "baseStats": {
+          "hp": 45,
+          "atk": 20,
+          "def": 55,
+          "spa": 70,
+          "spd": 85,
+          "spe": 70
+        },
+        "total": 345,
+        "evoline": "mantyke",
+        "imgUrl": "/radred/mantyke-sevii",
+        "evos": [
+          "mantine-sevii"
+        ]
+      },
+      "teddiursa-sevii": {
+        "name": "Seviian Teddiursa",
+        "label": "Seviian Teddiursa",
+        "alias": "teddiursa-sevii",
+        "sprite": "teddiursa-sevii",
+        "types": [
+          "ghost"
+        ],
+        "baseStats": {
+          "hp": 55,
+          "atk": 80,
+          "def": 50,
+          "spa": 45,
+          "spd": 50,
+          "spe": 50
+        },
+        "total": 330,
+        "evoline": "teddiursa",
+        "imgUrl": "/radred/teddiursa-sevii",
+        "evos": [
+          "ursaring-sevii"
+        ]
+      },
+      "ursaring-sevii": {
+        "name": "Seviian Ursaring",
+        "label": "Seviian Ursaring",
+        "alias": "ursaring-sevii",
+        "sprite": "ursaring-sevii",
+        "types": [
+          "ghost",
+          "fighting"
+        ],
+        "baseStats": {
+          "hp": 100,
+          "atk": 110,
+          "def": 90,
+          "spa": 55,
+          "spd": 90,
+          "spe": 55
+        },
+        "total": 500,
+        "evoline": "teddiursa",
+        "imgUrl": "/radred/ursaring-sevii"
+      },
+      "wishiwashi-sevii": {
+        "name": "Seviian Wishiwashi",
+        "label": "Seviian Wishiwashi",
+        "alias": "wishiwashi-sevii",
+        "sprite": "wishiwashi-sevii",
+        "types": [
+          "ghost"
+        ],
+        "baseStats": {
+          "hp": 60,
+          "atk": 20,
+          "def": 20,
+          "spa": 25,
+          "spd": 15,
+          "spe": 35
+        },
+        "total": 175,
+        "evoline": "wishwashi",
+        "imgUrl": "/radred/wishiwashi-sevii"
+      },
+      "wishiwashi-sevii-school": {
+        "name": "Seviian Wishiwashi",
+        "label": "Seviian Wishiwashi",
+        "alias": "wishiwashi-sevii-school",
+        "sprite": "wishiwashi-sevii-school",
+        "types": [
+          "ghost",
+          "dragon"
+        ],
+        "baseStats": {
+          "hp": 60,
+          "atk": 140,
+          "def": 130,
+          "spa": 140,
+          "spd": 135,
+          "spe": 25
+        },
+        "total": 630,
+        "evoline": "wishiwashi",
+        "imgUrl": "/radred/wishiwashi-sevii-school"
       }
     }
   },

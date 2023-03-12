@@ -124,7 +124,7 @@
         {:else}
           <span class='items-center gap-x-2 hidden lg:inline-flex'>
             {#each pokemon as p, i (p.name + i)}
-              <PIcon name={p.name} className='-m-4 z-10 relative' />
+              <PIcon name={p.icon || p.name} className='-m-4 z-10 relative' />
             {/each}
           </span>
 

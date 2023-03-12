@@ -36,6 +36,12 @@
           "name": "Strong Jaw",
           "effect": "Strengthens biting moves to 1.5× their power."
         },
+        "abilities": [
+          {
+            "name": "Strong Jaw",
+            "effect": "Strengthens biting moves to 1.5× their power."
+          }
+        ],
         "sprite": "734",
         "types": [
           "normal"
@@ -70,6 +76,12 @@
           "name": "Technician",
           "effect": "Strengthens moves of 60 base power or less to 1.5× their power."
         },
+        "abilities": [
+          {
+            "name": "Technician",
+            "effect": "Strengthens moves of 60 base power or less to 1.5× their power."
+          }
+        ],
         "starter": "fire",
         "sprite": "235",
         "types": [
@@ -125,6 +137,12 @@
           "name": "Guts",
           "effect": "Increases Attack to 1.5× with a major status ailment."
         },
+        "abilities": [
+          {
+            "name": "Guts",
+            "effect": "Increases Attack to 1.5× with a major status ailment."
+          }
+        ],
         "sprite": "66",
         "types": [
           "fighting"
@@ -168,6 +186,12 @@
           "name": "Thick Fat",
           "effect": "Halves damage from fire and ice moves."
         },
+        "abilities": [
+          {
+            "name": "Thick Fat",
+            "effect": "Halves damage from fire and ice moves."
+          }
+        ],
         "sprite": "296",
         "types": [
           "fighting"
@@ -210,6 +234,12 @@
           "name": "Iron Fist",
           "effect": "Strengthens punch-based moves to 1.2× their power."
         },
+        "abilities": [
+          {
+            "name": "Iron Fist",
+            "effect": "Strengthens punch-based moves to 1.2× their power."
+          }
+        ],
         "held": {
           "sprite": "fightinium-z--held",
           "name": "Fightinium Z",
@@ -276,6 +306,12 @@
           "name": "Water Bubble",
           "effect": "Halves damage from Fire moves, doubles damage of Water moves, and prevents burns."
         },
+        "abilities": [
+          {
+            "name": "Water Bubble",
+            "effect": "Halves damage from Fire moves, doubles damage of Water moves, and prevents burns."
+          }
+        ],
         "held": {
           "sprite": "wacan-berry",
           "name": "Wacan Berry",
@@ -329,6 +365,12 @@
           "name": "Intimidate",
           "effect": "Lowers opponents' Attack one stage upon entering battle."
         },
+        "abilities": [
+          {
+            "name": "Intimidate",
+            "effect": "Lowers opponents' Attack one stage upon entering battle."
+          }
+        ],
         "sprite": "284",
         "types": [
           "bug",
@@ -378,6 +420,12 @@
           "name": "Water Bubble",
           "effect": "Halves damage from Fire moves, doubles damage of Water moves, and prevents burns."
         },
+        "abilities": [
+          {
+            "name": "Water Bubble",
+            "effect": "Halves damage from Fire moves, doubles damage of Water moves, and prevents burns."
+          }
+        ],
         "sprite": "751",
         "types": [
           "water",
@@ -440,6 +488,12 @@
           "name": "Cursed Body",
           "effect": "Has a 30% chance of Disabling any move that hits the Pokémon."
         },
+        "abilities": [
+          {
+            "name": "Cursed Body",
+            "effect": "Has a 30% chance of Disabling any move that hits the Pokémon."
+          }
+        ],
         "held": {
           "sprite": "thick-club",
           "name": "Thick Club",
@@ -457,7 +511,8 @@
           "spa": 50,
           "spd": 80,
           "spe": 45
-        }
+        },
+        "icon": "marowak-alola"
       },
       {
         "name": "salazzle",
@@ -494,6 +549,12 @@
           "name": "Corrosion",
           "effect": "This Pokémon can inflict poison on Poison and Steel Pokémon."
         },
+        "abilities": [
+          {
+            "name": "Corrosion",
+            "effect": "This Pokémon can inflict poison on Poison and Steel Pokémon."
+          }
+        ],
         "sprite": "758",
         "types": [
           "poison",
@@ -554,6 +615,12 @@
           "name": "Leaf Guard",
           "effect": "Protects against major status ailments during strong sunlight."
         },
+        "abilities": [
+          {
+            "name": "Leaf Guard",
+            "effect": "Protects against major status ailments during strong sunlight."
+          }
+        ],
         "held": {
           "sprite": "power-herb",
           "name": "Power Herb",
@@ -606,6 +673,12 @@
           "name": "Flower Veil",
           "effect": "Protects friendly grass Pokémon from having their stats lowered by other Pokémon."
         },
+        "abilities": [
+          {
+            "name": "Flower Veil",
+            "effect": "Protects friendly grass Pokémon from having their stats lowered by other Pokémon."
+          }
+        ],
         "sprite": "764",
         "types": [
           "fairy"
@@ -654,6 +727,12 @@
           "name": "Color Change",
           "effect": "Changes type to match when hit by a damaging move."
         },
+        "abilities": [
+          {
+            "name": "Color Change",
+            "effect": "Changes type to match when hit by a damaging move."
+          }
+        ],
         "sprite": "352",
         "types": [
           "normal"
@@ -708,6 +787,12 @@
           "name": "Battle Armor",
           "effect": "Protects against critical hits."
         },
+        "abilities": [
+          {
+            "name": "Battle Armor",
+            "effect": "Protects against critical hits."
+          }
+        ],
         "sprite": "347",
         "types": [
           "rock",
@@ -752,6 +837,12 @@
           "name": "Suction Cups",
           "effect": "Prevents being forced out of battle by other Pokémon's moves."
         },
+        "abilities": [
+          {
+            "name": "Suction Cups",
+            "effect": "Prevents being forced out of battle by other Pokémon's moves."
+          }
+        ],
         "sprite": "345",
         "types": [
           "rock",
@@ -789,6 +880,12 @@
           "name": "Vital Spirit",
           "effect": "Prevents sleep."
         },
+        "abilities": [
+          {
+            "name": "Vital Spirit",
+            "effect": "Prevents sleep."
+          }
+        ],
         "held": {
           "sprite": "rockium-z--held",
           "name": "Rockium Z",
@@ -805,7 +902,8 @@
           "spa": 55,
           "spd": 75,
           "spe": 82
-        }
+        },
+        "icon": "lycanroc-midnight"
       }
     ]
   },
@@ -855,6 +953,12 @@
           "name": "Lightning Rod",
           "effect": "Redirects single-target electric moves to this Pokémon where possible.  Absorbs Electric moves, raising Special Attack one stage."
         },
+        "abilities": [
+          {
+            "name": "Lightning Rod",
+            "effect": "Redirects single-target electric moves to this Pokémon where possible.  Absorbs Electric moves, raising Special Attack one stage."
+          }
+        ],
         "held": {
           "sprite": "sitrus-berry",
           "name": "Sitrus Berry",
@@ -908,6 +1012,12 @@
           "name": "Sturdy",
           "effect": "Prevents being KOed from full HP, leaving 1 HP instead.  Protects against the one-hit KO moves regardless of HP."
         },
+        "abilities": [
+          {
+            "name": "Sturdy",
+            "effect": "Prevents being KOed from full HP, leaving 1 HP instead.  Protects against the one-hit KO moves regardless of HP."
+          }
+        ],
         "sprite": "227",
         "types": [
           "steel",
@@ -956,6 +1066,12 @@
           "name": "Pickup",
           "effect": "Picks up other Pokémon's used and Flung held items.  May also pick up an item after battle."
         },
+        "abilities": [
+          {
+            "name": "Pickup",
+            "effect": "Picks up other Pokémon's used and Flung held items.  May also pick up an item after battle."
+          }
+        ],
         "sprite": "702",
         "types": [
           "electric",
@@ -1018,6 +1134,12 @@
           "name": "Disguise",
           "effect": "Prevents the first instance of battle damage."
         },
+        "abilities": [
+          {
+            "name": "Disguise",
+            "effect": "Prevents the first instance of battle damage."
+          }
+        ],
         "held": {
           "sprite": "lum-berry",
           "name": "Lum Berry",
@@ -1035,7 +1157,8 @@
           "spa": 50,
           "spd": 105,
           "spe": 96
-        }
+        },
+        "icon": "mimikyu-disguised"
       },
       {
         "name": "banette",
@@ -1071,6 +1194,12 @@
           "name": "Insomnia",
           "effect": "Prevents sleep."
         },
+        "abilities": [
+          {
+            "name": "Insomnia",
+            "effect": "Prevents sleep."
+          }
+        ],
         "sprite": "354",
         "types": [
           "ghost"
@@ -1119,6 +1248,12 @@
           "name": "Cursed Body",
           "effect": "Has a 30% chance of Disabling any move that hits the Pokémon."
         },
+        "abilities": [
+          {
+            "name": "Cursed Body",
+            "effect": "Has a 30% chance of Disabling any move that hits the Pokémon."
+          }
+        ],
         "sprite": "593",
         "types": [
           "water",
@@ -1174,6 +1309,12 @@
           "name": "Keen Eye",
           "effect": "Prevents accuracy from being lowered."
         },
+        "abilities": [
+          {
+            "name": "Keen Eye",
+            "effect": "Prevents accuracy from being lowered."
+          }
+        ],
         "sprite": "302",
         "types": [
           "dark",
@@ -1224,6 +1365,12 @@
           "name": "Intimidate",
           "effect": "Lowers opponents' Attack one stage upon entering battle."
         },
+        "abilities": [
+          {
+            "name": "Intimidate",
+            "effect": "Lowers opponents' Attack one stage upon entering battle."
+          }
+        ],
         "sprite": "552",
         "types": [
           "ground",
@@ -1268,6 +1415,12 @@
           "name": "Fur Coat",
           "effect": "Halves damage from physical attacks."
         },
+        "abilities": [
+          {
+            "name": "Fur Coat",
+            "effect": "Halves damage from physical attacks."
+          }
+        ],
         "held": {
           "sprite": "darkinium-z--held",
           "name": "Darkinium Z",
@@ -1284,7 +1437,8 @@
           "spa": 75,
           "spd": 65,
           "spe": 115
-        }
+        },
+        "icon": "persian-alola"
       }
     ]
   },
@@ -1329,6 +1483,12 @@
           "name": "Soundproof",
           "effect": "Protects against sound-based moves."
         },
+        "abilities": [
+          {
+            "name": "Soundproof",
+            "effect": "Protects against sound-based moves."
+          }
+        ],
         "held": {
           "sprite": "roseli-berry",
           "name": "Roseli Berry",
@@ -1382,6 +1542,12 @@
           "name": "Infiltrator",
           "effect": "Bypasses light screen, reflect, and safeguard."
         },
+        "abilities": [
+          {
+            "name": "Infiltrator",
+            "effect": "Bypasses light screen, reflect, and safeguard."
+          }
+        ],
         "sprite": "715",
         "types": [
           "flying",
@@ -1431,6 +1597,12 @@
           "name": "Technician",
           "effect": "Strengthens moves of 60 base power or less to 1.5× their power."
         },
+        "abilities": [
+          {
+            "name": "Technician",
+            "effect": "Strengthens moves of 60 base power or less to 1.5× their power."
+          }
+        ],
         "sprite": "212",
         "types": [
           "bug",
@@ -1490,6 +1662,12 @@
           "name": "Serene Grace",
           "effect": "Doubles the chance of moves' extra effects occurring."
         },
+        "abilities": [
+          {
+            "name": "Serene Grace",
+            "effect": "Doubles the chance of moves' extra effects occurring."
+          }
+        ],
         "sprite": "242",
         "types": [
           "normal"
@@ -1537,6 +1715,12 @@
           "name": "Drizzle",
           "effect": "Summons rain that lasts indefinitely upon entering battle."
         },
+        "abilities": [
+          {
+            "name": "Drizzle",
+            "effect": "Summons rain that lasts indefinitely upon entering battle."
+          }
+        ],
         "sprite": "279",
         "types": [
           "water",
@@ -1586,6 +1770,12 @@
           "name": "Shield Dust",
           "effect": "Protects against incoming moves' extra effects."
         },
+        "abilities": [
+          {
+            "name": "Shield Dust",
+            "effect": "Protects against incoming moves' extra effects."
+          }
+        ],
         "held": {
           "sprite": "occa-berry",
           "name": "Occa Berry",
@@ -1652,6 +1842,12 @@
           "name": "No Guard",
           "effect": "Ensures all moves used by and against the Pokémon hit."
         },
+        "abilities": [
+          {
+            "name": "No Guard",
+            "effect": "Ensures all moves used by and against the Pokémon hit."
+          }
+        ],
         "sprite": "623",
         "types": [
           "ground",
@@ -1695,6 +1891,12 @@
           "name": "Sticky Hold",
           "effect": "Prevents a held item from being removed by other Pokémon."
         },
+        "abilities": [
+          {
+            "name": "Sticky Hold",
+            "effect": "Prevents a held item from being removed by other Pokémon."
+          }
+        ],
         "sprite": "423",
         "types": [
           "water",
@@ -1732,6 +1934,12 @@
           "name": "Levitate",
           "effect": "Evades ground moves."
         },
+        "abilities": [
+          {
+            "name": "Levitate",
+            "effect": "Evades ground moves."
+          }
+        ],
         "sprite": "330",
         "types": [
           "ground",
@@ -1782,6 +1990,12 @@
           "name": "Stamina",
           "effect": "Raises this Pokémon's Defense by one stage when it takes damage from a move."
         },
+        "abilities": [
+          {
+            "name": "Stamina",
+            "effect": "Raises this Pokémon's Defense by one stage when it takes damage from a move."
+          }
+        ],
         "held": {
           "sprite": "groundium-z--held",
           "name": "Groundium Z",
@@ -1838,6 +2052,12 @@
           "name": "Overgrow",
           "effect": "Strengthens grass moves to inflict 1.5× damage at 1/3 max HP or less."
         },
+        "abilities": [
+          {
+            "name": "Overgrow",
+            "effect": "Strengthens grass moves to inflict 1.5× damage at 1/3 max HP or less."
+          }
+        ],
         "starter": "fire",
         "sprite": "722",
         "types": [
@@ -1892,6 +2112,12 @@
           "name": "Static",
           "effect": "Has a 30% chance of paralyzing attacking Pokémon on contact."
         },
+        "abilities": [
+          {
+            "name": "Static",
+            "effect": "Has a 30% chance of paralyzing attacking Pokémon on contact."
+          }
+        ],
         "sprite": "172",
         "types": [
           "electric"
@@ -1932,6 +2158,12 @@
           "name": "Overgrow",
           "effect": "Strengthens grass moves to inflict 1.5× damage at 1/3 max HP or less."
         },
+        "abilities": [
+          {
+            "name": "Overgrow",
+            "effect": "Strengthens grass moves to inflict 1.5× damage at 1/3 max HP or less."
+          }
+        ],
         "starter": "fire",
         "sprite": "722",
         "types": [
@@ -1992,6 +2224,12 @@
           "name": "Adaptability",
           "effect": "Increases the same-type attack bonus from 1.5× to 2×."
         },
+        "abilities": [
+          {
+            "name": "Adaptability",
+            "effect": "Increases the same-type attack bonus from 1.5× to 2×."
+          }
+        ],
         "held": {
           "sprite": "pecha-berry",
           "name": "Pecha Berry",
@@ -2044,6 +2282,12 @@
           "name": "Stakeout",
           "effect": "This Pokémon's moves have double power against Pokémon that switched in this turn."
         },
+        "abilities": [
+          {
+            "name": "Stakeout",
+            "effect": "This Pokémon's moves have double power against Pokémon that switched in this turn."
+          }
+        ],
         "sprite": "734",
         "types": [
           "normal"
@@ -2097,6 +2341,12 @@
           "name": "Fur Coat",
           "effect": "Halves damage from physical attacks."
         },
+        "abilities": [
+          {
+            "name": "Fur Coat",
+            "effect": "Halves damage from physical attacks."
+          }
+        ],
         "sprite": "676",
         "types": [
           "normal"
@@ -2155,6 +2405,12 @@
           "name": "Overgrow",
           "effect": "Strengthens grass moves to inflict 1.5× damage at 1/3 max HP or less."
         },
+        "abilities": [
+          {
+            "name": "Overgrow",
+            "effect": "Strengthens grass moves to inflict 1.5× damage at 1/3 max HP or less."
+          }
+        ],
         "held": {
           "sprite": "sitrus-berry",
           "name": "Sitrus Berry",
@@ -2210,6 +2466,12 @@
           "name": "Infiltrator",
           "effect": "Bypasses light screen, reflect, and safeguard."
         },
+        "abilities": [
+          {
+            "name": "Infiltrator",
+            "effect": "Bypasses light screen, reflect, and safeguard."
+          }
+        ],
         "sprite": "714",
         "types": [
           "flying",
@@ -2259,6 +2521,12 @@
           "name": "Static",
           "effect": "Has a 30% chance of paralyzing attacking Pokémon on contact."
         },
+        "abilities": [
+          {
+            "name": "Static",
+            "effect": "Has a 30% chance of paralyzing attacking Pokémon on contact."
+          }
+        ],
         "sprite": "25",
         "types": [
           "electric"
@@ -2305,6 +2573,12 @@
           "name": "Filter",
           "effect": "Decreases damage taken from super-effective moves by 1/4."
         },
+        "abilities": [
+          {
+            "name": "Filter",
+            "effect": "Decreases damage taken from super-effective moves by 1/4."
+          }
+        ],
         "sprite": "439",
         "types": [
           "psychic",
@@ -2342,6 +2616,12 @@
           "name": "Synchronize",
           "effect": "Copies burns, paralysis, and poison received onto the Pokémon that inflicted them."
         },
+        "abilities": [
+          {
+            "name": "Synchronize",
+            "effect": "Copies burns, paralysis, and poison received onto the Pokémon that inflicted them."
+          }
+        ],
         "sprite": "196",
         "types": [
           "psychic"
@@ -2394,6 +2674,12 @@
           "name": "Overgrow",
           "effect": "Strengthens grass moves to inflict 1.5× damage at 1/3 max HP or less."
         },
+        "abilities": [
+          {
+            "name": "Overgrow",
+            "effect": "Strengthens grass moves to inflict 1.5× damage at 1/3 max HP or less."
+          }
+        ],
         "held": {
           "sprite": "normalium-z--held",
           "name": "Normalium Z",
@@ -2436,6 +2722,12 @@
           "name": "Static",
           "effect": "Has a 30% chance of paralyzing attacking Pokémon on contact."
         },
+        "abilities": [
+          {
+            "name": "Static",
+            "effect": "Has a 30% chance of paralyzing attacking Pokémon on contact."
+          }
+        ],
         "sprite": "25",
         "types": [
           "electric"
@@ -2471,6 +2763,12 @@
           "name": "Infiltrator",
           "effect": "Bypasses light screen, reflect, and safeguard."
         },
+        "abilities": [
+          {
+            "name": "Infiltrator",
+            "effect": "Bypasses light screen, reflect, and safeguard."
+          }
+        ],
         "sprite": "714",
         "types": [
           "flying",
@@ -2508,6 +2806,12 @@
           "name": "Adaptability",
           "effect": "Increases the same-type attack bonus from 1.5× to 2×."
         },
+        "abilities": [
+          {
+            "name": "Adaptability",
+            "effect": "Increases the same-type attack bonus from 1.5× to 2×."
+          }
+        ],
         "sprite": "133",
         "types": [
           "normal"
@@ -2554,6 +2858,12 @@
           "name": "Illusion",
           "effect": "Takes the appearance of the last conscious party Pokémon upon being sent out until hit by a damaging move."
         },
+        "abilities": [
+          {
+            "name": "Illusion",
+            "effect": "Takes the appearance of the last conscious party Pokémon upon being sent out until hit by a damaging move."
+          }
+        ],
         "sprite": "570",
         "types": [
           "dark"
@@ -2589,6 +2899,12 @@
           "name": "Battle Armor",
           "effect": "Protects against critical hits."
         },
+        "abilities": [
+          {
+            "name": "Battle Armor",
+            "effect": "Protects against critical hits."
+          }
+        ],
         "sprite": "772",
         "types": [
           "normal"
@@ -2624,6 +2940,12 @@
           "name": "Inner Focus",
           "effect": "Prevents flinching."
         },
+        "abilities": [
+          {
+            "name": "Inner Focus",
+            "effect": "Prevents flinching."
+          }
+        ],
         "sprite": "41",
         "types": [
           "poison",
@@ -2679,6 +3001,12 @@
           "name": "Beast Boost",
           "effect": "Raises this Pokémon's highest stat by one stage when it faints another Pokémon."
         },
+        "abilities": [
+          {
+            "name": "Beast Boost",
+            "effect": "Raises this Pokémon's highest stat by one stage when it faints another Pokémon."
+          }
+        ],
         "sprite": "803",
         "types": [
           "poison"
@@ -2731,6 +3059,12 @@
           "name": "Inner Focus",
           "effect": "Prevents flinching."
         },
+        "abilities": [
+          {
+            "name": "Inner Focus",
+            "effect": "Prevents flinching."
+          }
+        ],
         "sprite": "42",
         "types": [
           "poison",
@@ -2773,6 +3107,12 @@
           "name": "Corrosion",
           "effect": "This Pokémon can inflict poison on Poison and Steel Pokémon."
         },
+        "abilities": [
+          {
+            "name": "Corrosion",
+            "effect": "This Pokémon can inflict poison on Poison and Steel Pokémon."
+          }
+        ],
         "sprite": "757",
         "types": [
           "poison",
@@ -2820,6 +3160,12 @@
           "name": "Overgrow",
           "effect": "Strengthens grass moves to inflict 1.5× damage at 1/3 max HP or less."
         },
+        "abilities": [
+          {
+            "name": "Overgrow",
+            "effect": "Strengthens grass moves to inflict 1.5× damage at 1/3 max HP or less."
+          }
+        ],
         "held": {
           "sprite": "grassium-z--held",
           "name": "Grassium Z",
@@ -2863,6 +3209,12 @@
           "name": "Water Absorb",
           "effect": "Absorbs water moves, healing for 1/4 max HP."
         },
+        "abilities": [
+          {
+            "name": "Water Absorb",
+            "effect": "Absorbs water moves, healing for 1/4 max HP."
+          }
+        ],
         "starter": "fire",
         "sprite": "134",
         "types": [
@@ -2899,6 +3251,12 @@
           "name": "Infiltrator",
           "effect": "Bypasses light screen, reflect, and safeguard."
         },
+        "abilities": [
+          {
+            "name": "Infiltrator",
+            "effect": "Bypasses light screen, reflect, and safeguard."
+          }
+        ],
         "sprite": "714",
         "types": [
           "flying",
@@ -2935,6 +3293,12 @@
           "name": "Intimidate",
           "effect": "Lowers opponents' Attack one stage upon entering battle."
         },
+        "abilities": [
+          {
+            "name": "Intimidate",
+            "effect": "Lowers opponents' Attack one stage upon entering battle."
+          }
+        ],
         "sprite": "128",
         "types": [
           "normal"
@@ -2977,6 +3341,12 @@
           "name": "Surge Surfer",
           "effect": "Doubles this Pokémon's Speed on Electric Terrain."
         },
+        "abilities": [
+          {
+            "name": "Surge Surfer",
+            "effect": "Doubles this Pokémon's Speed on Electric Terrain."
+          }
+        ],
         "sprite": "10100",
         "types": [
           "electric",
@@ -2989,7 +3359,8 @@
           "spa": 95,
           "spd": 85,
           "spe": 110
-        }
+        },
+        "icon": "raichu-alola"
       }
     ]
   },
@@ -3032,6 +3403,12 @@
           "name": "Shell Armor",
           "effect": "Protects against critical hits."
         },
+        "abilities": [
+          {
+            "name": "Shell Armor",
+            "effect": "Protects against critical hits."
+          }
+        ],
         "sprite": "776",
         "types": [
           "fire",
@@ -3076,6 +3453,12 @@
           "name": "Sand Veil",
           "effect": "Increases evasion to 1.25× during a sandstorm.  Protects against sandstorm damage."
         },
+        "abilities": [
+          {
+            "name": "Sand Veil",
+            "effect": "Increases evasion to 1.25× during a sandstorm.  Protects against sandstorm damage."
+          }
+        ],
         "sprite": "444",
         "types": [
           "dragon",
@@ -3119,6 +3502,12 @@
           "name": "Berserk",
           "effect": "Raises this Pokémon's Special Attack by one stage every time its HP drops below half."
         },
+        "abilities": [
+          {
+            "name": "Berserk",
+            "effect": "Raises this Pokémon's Special Attack by one stage every time its HP drops below half."
+          }
+        ],
         "sprite": "780",
         "types": [
           "normal",
@@ -3176,6 +3565,12 @@
           "name": "Emergency Exit",
           "effect": "This Pokémon automatically switches out when its HP drops below half."
         },
+        "abilities": [
+          {
+            "name": "Emergency Exit",
+            "effect": "This Pokémon automatically switches out when its HP drops below half."
+          }
+        ],
         "sprite": "768",
         "types": [
           "bug",
@@ -3220,6 +3615,12 @@
           "name": "Intimidate",
           "effect": "Lowers opponents' Attack one stage upon entering battle."
         },
+        "abilities": [
+          {
+            "name": "Intimidate",
+            "effect": "Lowers opponents' Attack one stage upon entering battle."
+          }
+        ],
         "sprite": "284",
         "types": [
           "bug",
@@ -3267,6 +3668,12 @@
           "name": "Inner Focus",
           "effect": "Prevents flinching."
         },
+        "abilities": [
+          {
+            "name": "Inner Focus",
+            "effect": "Prevents flinching."
+          }
+        ],
         "sprite": "42",
         "types": [
           "poison",
@@ -3310,6 +3717,12 @@
           "name": "Corrosion",
           "effect": "This Pokémon can inflict poison on Poison and Steel Pokémon."
         },
+        "abilities": [
+          {
+            "name": "Corrosion",
+            "effect": "This Pokémon can inflict poison on Poison and Steel Pokémon."
+          }
+        ],
         "sprite": "758",
         "types": [
           "poison",
@@ -3367,6 +3780,12 @@
           "name": "Emergency Exit",
           "effect": "This Pokémon automatically switches out when its HP drops below half."
         },
+        "abilities": [
+          {
+            "name": "Emergency Exit",
+            "effect": "This Pokémon automatically switches out when its HP drops below half."
+          }
+        ],
         "sprite": "768",
         "types": [
           "bug",
@@ -3411,6 +3830,12 @@
           "name": "Intimidate",
           "effect": "Lowers opponents' Attack one stage upon entering battle."
         },
+        "abilities": [
+          {
+            "name": "Intimidate",
+            "effect": "Lowers opponents' Attack one stage upon entering battle."
+          }
+        ],
         "sprite": "284",
         "types": [
           "bug",
@@ -3454,6 +3879,12 @@
           "name": "Mold Breaker",
           "effect": "Bypasses targets' abilities if they could hinder or prevent a move."
         },
+        "abilities": [
+          {
+            "name": "Mold Breaker",
+            "effect": "Bypasses targets' abilities if they could hinder or prevent a move."
+          }
+        ],
         "sprite": "127",
         "types": [
           "bug"
@@ -3508,6 +3939,12 @@
           "name": "Inner Focus",
           "effect": "Prevents flinching."
         },
+        "abilities": [
+          {
+            "name": "Inner Focus",
+            "effect": "Prevents flinching."
+          }
+        ],
         "sprite": "42",
         "types": [
           "poison",
@@ -3544,6 +3981,12 @@
           "name": "Illusion",
           "effect": "Takes the appearance of the last conscious party Pokémon upon being sent out until hit by a damaging move."
         },
+        "abilities": [
+          {
+            "name": "Illusion",
+            "effect": "Takes the appearance of the last conscious party Pokémon upon being sent out until hit by a damaging move."
+          }
+        ],
         "sprite": "571",
         "types": [
           "dark"
@@ -3586,6 +4029,12 @@
           "name": "Battle Armor",
           "effect": "Protects against critical hits."
         },
+        "abilities": [
+          {
+            "name": "Battle Armor",
+            "effect": "Protects against critical hits."
+          }
+        ],
         "sprite": "772",
         "types": [
           "normal"
@@ -3644,6 +4093,12 @@
           "name": "Insomnia",
           "effect": "Prevents sleep."
         },
+        "abilities": [
+          {
+            "name": "Insomnia",
+            "effect": "Prevents sleep."
+          }
+        ],
         "sprite": "97",
         "types": [
           "psychic"
@@ -3704,6 +4159,12 @@
           "name": "Levitate",
           "effect": "Evades ground moves."
         },
+        "abilities": [
+          {
+            "name": "Levitate",
+            "effect": "Evades ground moves."
+          }
+        ],
         "sprite": "344",
         "types": [
           "ground",
@@ -3755,6 +4216,12 @@
           "name": "Strong Jaw",
           "effect": "Strengthens biting moves to 1.5× their power."
         },
+        "abilities": [
+          {
+            "name": "Strong Jaw",
+            "effect": "Strengthens biting moves to 1.5× their power."
+          }
+        ],
         "sprite": "779",
         "types": [
           "water",
@@ -3804,6 +4271,12 @@
           "name": "Insomnia",
           "effect": "Prevents sleep."
         },
+        "abilities": [
+          {
+            "name": "Insomnia",
+            "effect": "Prevents sleep."
+          }
+        ],
         "sprite": "97",
         "types": [
           "psychic"
@@ -3852,6 +4325,12 @@
           "name": "Swarm",
           "effect": "Strengthens bug moves to inflict 1.5× damage at 1/3 max HP or less."
         },
+        "abilities": [
+          {
+            "name": "Swarm",
+            "effect": "Strengthens bug moves to inflict 1.5× damage at 1/3 max HP or less."
+          }
+        ],
         "sprite": "166",
         "types": [
           "bug",
@@ -3882,6 +4361,12 @@
           "name": "Shed Skin",
           "effect": "Has a 33% chance of curing any major status ailment after each turn."
         },
+        "abilities": [
+          {
+            "name": "Shed Skin",
+            "effect": "Has a 33% chance of curing any major status ailment after each turn."
+          }
+        ],
         "sprite": "247",
         "types": [
           "rock",
@@ -3939,6 +4424,12 @@
           "name": "Emergency Exit",
           "effect": "This Pokémon automatically switches out when its HP drops below half."
         },
+        "abilities": [
+          {
+            "name": "Emergency Exit",
+            "effect": "This Pokémon automatically switches out when its HP drops below half."
+          }
+        ],
         "sprite": "768",
         "types": [
           "bug",
@@ -3983,6 +4474,12 @@
           "name": "Intimidate",
           "effect": "Lowers opponents' Attack one stage upon entering battle."
         },
+        "abilities": [
+          {
+            "name": "Intimidate",
+            "effect": "Lowers opponents' Attack one stage upon entering battle."
+          }
+        ],
         "sprite": "284",
         "types": [
           "bug",
@@ -4033,6 +4530,12 @@
           "name": "Mold Breaker",
           "effect": "Bypasses targets' abilities if they could hinder or prevent a move."
         },
+        "abilities": [
+          {
+            "name": "Mold Breaker",
+            "effect": "Bypasses targets' abilities if they could hinder or prevent a move."
+          }
+        ],
         "sprite": "127",
         "types": [
           "bug"
@@ -4077,6 +4580,16 @@
             "damage_class": "special",
             "name": "Energy Ball",
             "effect": "Has a 10% chance to lower the target's Special Defense by one stage."
+          }
+        ],
+        "ability": {
+          "name": "Levitate",
+          "effect": "Evades ground moves."
+        },
+        "abilities": [
+          {
+            "name": "Levitate",
+            "effect": "Evades ground moves."
           }
         ],
         "sprite": "738",
@@ -4133,6 +4646,12 @@
           "name": "Beast Boost",
           "effect": "Raises this Pokémon's highest stat by one stage when it faints another Pokémon."
         },
+        "abilities": [
+          {
+            "name": "Beast Boost",
+            "effect": "Raises this Pokémon's highest stat by one stage when it faints another Pokémon."
+          }
+        ],
         "sprite": "803",
         "types": [
           "poison"
@@ -4192,6 +4711,12 @@
           "name": "Magic Guard",
           "effect": "Protects against damage not directly caused by a move."
         },
+        "abilities": [
+          {
+            "name": "Magic Guard",
+            "effect": "Protects against damage not directly caused by a move."
+          }
+        ],
         "sprite": "36",
         "types": [
           "fairy"
@@ -4233,6 +4758,12 @@
           "name": "Own Tempo",
           "effect": "Prevents confusion."
         },
+        "abilities": [
+          {
+            "name": "Own Tempo",
+            "effect": "Prevents confusion."
+          }
+        ],
         "sprite": "549",
         "types": [
           "grass"
@@ -4283,6 +4814,12 @@
           "name": "Cute Charm",
           "effect": "Has a 30% chance of infatuating attacking Pokémon on contact."
         },
+        "abilities": [
+          {
+            "name": "Cute Charm",
+            "effect": "Has a 30% chance of infatuating attacking Pokémon on contact."
+          }
+        ],
         "sprite": "428",
         "types": [
           "normal"
@@ -4330,6 +4867,12 @@
           "name": "Marvel Scale",
           "effect": "Increases Defense to 1.5× with a major status ailment."
         },
+        "abilities": [
+          {
+            "name": "Marvel Scale",
+            "effect": "Increases Defense to 1.5× with a major status ailment."
+          }
+        ],
         "sprite": "350",
         "types": [
           "water"
@@ -4380,6 +4923,12 @@
           "name": "Fluffy",
           "effect": "Damage from contact moves is halved.  Damage from Fire moves is doubled."
         },
+        "abilities": [
+          {
+            "name": "Fluffy",
+            "effect": "Damage from contact moves is halved.  Damage from Fire moves is doubled."
+          }
+        ],
         "sprite": "760",
         "types": [
           "normal",
@@ -4434,6 +4983,12 @@
           "name": "Beast Boost",
           "effect": "Raises this Pokémon's highest stat by one stage when it faints another Pokémon."
         },
+        "abilities": [
+          {
+            "name": "Beast Boost",
+            "effect": "Raises this Pokémon's highest stat by one stage when it faints another Pokémon."
+          }
+        ],
         "sprite": "803",
         "types": [
           "poison"
@@ -4490,6 +5045,12 @@
           "name": "Prism Armor",
           "effect": "Reduces super-effective damage to 0.75×."
         },
+        "abilities": [
+          {
+            "name": "Prism Armor",
+            "effect": "Reduces super-effective damage to 0.75×."
+          }
+        ],
         "sprite": "10155",
         "types": [
           "psychic",
@@ -4502,7 +5063,8 @@
           "spa": 113,
           "spd": 109,
           "spe": 77
-        }
+        },
+        "icon": "necrozma-dusk-make"
       },
       {
         "name": "necrozma",
@@ -4538,6 +5100,12 @@
           "name": "Neuroforce",
           "effect": "Increases super-effective damage dealt to 1.25×."
         },
+        "abilities": [
+          {
+            "name": "Neuroforce",
+            "effect": "Increases super-effective damage dealt to 1.25×."
+          }
+        ],
         "sprite": "10157",
         "types": [
           "psychic",
@@ -4550,7 +5118,8 @@
           "spa": 167,
           "spd": 97,
           "spe": 129
-        }
+        },
+        "icon": "necrozma-ultra"
       }
     ]
   },
@@ -4594,6 +5163,12 @@
           "name": "Intimidate",
           "effect": "Lowers opponents' Attack one stage upon entering battle."
         },
+        "abilities": [
+          {
+            "name": "Intimidate",
+            "effect": "Lowers opponents' Attack one stage upon entering battle."
+          }
+        ],
         "sprite": "303",
         "types": [
           "steel",
@@ -4638,6 +5213,12 @@
           "name": "Intimidate",
           "effect": "Lowers opponents' Attack one stage upon entering battle."
         },
+        "abilities": [
+          {
+            "name": "Intimidate",
+            "effect": "Lowers opponents' Attack one stage upon entering battle."
+          }
+        ],
         "sprite": "210",
         "types": [
           "fairy"
@@ -4680,6 +5261,12 @@
           "name": "Shield Dust",
           "effect": "Protects against incoming moves' extra effects."
         },
+        "abilities": [
+          {
+            "name": "Shield Dust",
+            "effect": "Protects against incoming moves' extra effects."
+          }
+        ],
         "held": {
           "sprite": "fairium-z--held",
           "name": "Fairium Z",
@@ -4739,6 +5326,12 @@
           "name": "Stakeout",
           "effect": "This Pokémon's moves have double power against Pokémon that switched in this turn."
         },
+        "abilities": [
+          {
+            "name": "Stakeout",
+            "effect": "This Pokémon's moves have double power against Pokémon that switched in this turn."
+          }
+        ],
         "sprite": "735",
         "types": [
           "normal"
@@ -4789,6 +5382,12 @@
           "name": "Technician",
           "effect": "Strengthens moves of 60 base power or less to 1.5× their power."
         },
+        "abilities": [
+          {
+            "name": "Technician",
+            "effect": "Strengthens moves of 60 base power or less to 1.5× their power."
+          }
+        ],
         "sprite": "235",
         "types": [
           "normal"
@@ -4832,6 +5431,12 @@
           "name": "Comatose",
           "effect": "This Pokémon always  acts as though it were Asleep."
         },
+        "abilities": [
+          {
+            "name": "Comatose",
+            "effect": "This Pokémon always  acts as though it were Asleep."
+          }
+        ],
         "held": {
           "sprite": "normalium-z--held",
           "name": "Normalium Z",
@@ -4890,6 +5495,12 @@
           "name": "Natural Cure",
           "effect": "Cures any major status ailment upon switching out."
         },
+        "abilities": [
+          {
+            "name": "Natural Cure",
+            "effect": "Cures any major status ailment upon switching out."
+          }
+        ],
         "sprite": "709",
         "types": [
           "ghost",
@@ -4932,6 +5543,12 @@
           "name": "Effect Spore",
           "effect": "Has a 30% chance of inflcting either paralysis, poison, or sleep on attacking Pokémon on contact."
         },
+        "abilities": [
+          {
+            "name": "Effect Spore",
+            "effect": "Has a 30% chance of inflcting either paralysis, poison, or sleep on attacking Pokémon on contact."
+          }
+        ],
         "sprite": "756",
         "types": [
           "grass",
@@ -4976,6 +5593,12 @@
           "name": "Leaf Guard",
           "effect": "Protects against major status ailments during strong sunlight."
         },
+        "abilities": [
+          {
+            "name": "Leaf Guard",
+            "effect": "Protects against major status ailments during strong sunlight."
+          }
+        ],
         "held": {
           "sprite": "grassium-z--held",
           "name": "Grassium Z",
@@ -5035,6 +5658,12 @@
           "name": "Intimidate",
           "effect": "Lowers opponents' Attack one stage upon entering battle."
         },
+        "abilities": [
+          {
+            "name": "Intimidate",
+            "effect": "Lowers opponents' Attack one stage upon entering battle."
+          }
+        ],
         "sprite": "59",
         "types": [
           "fire"
@@ -5078,6 +5707,12 @@
           "name": "Flame Body",
           "effect": "Has a 30% chance of burning attacking Pokémon on contact."
         },
+        "abilities": [
+          {
+            "name": "Flame Body",
+            "effect": "Has a 30% chance of burning attacking Pokémon on contact."
+          }
+        ],
         "sprite": "663",
         "types": [
           "fire",
@@ -5122,14 +5757,21 @@
           "name": "Cursed Body",
           "effect": "Has a 30% chance of Disabling any move that hits the Pokémon."
         },
+        "abilities": [
+          {
+            "name": "Cursed Body",
+            "effect": "Has a 30% chance of Disabling any move that hits the Pokémon."
+          }
+        ],
         "held": {
           "sprite": "firium-z--held",
           "name": "Firium Z",
           "effect": "Held: Allows a Pokémon to use the Z-move equivalents of its Fire moves."
         },
-        "sprite": "105",
+        "sprite": "10115",
         "types": [
-          "ground"
+          "fire",
+          "ghost"
         ],
         "stats": {
           "hp": 60,
@@ -5138,7 +5780,8 @@
           "spa": 50,
           "spd": 80,
           "spe": 45
-        }
+        },
+        "icon": "marowak-alola"
       }
     ]
   },
@@ -5181,6 +5824,12 @@
           "name": "Iron Barbs",
           "effect": "Damages attacking Pokémon for 1/8 their max HP on contact."
         },
+        "abilities": [
+          {
+            "name": "Iron Barbs",
+            "effect": "Damages attacking Pokémon for 1/8 their max HP on contact."
+          }
+        ],
         "sprite": "777",
         "types": [
           "electric",
@@ -5225,6 +5874,12 @@
           "name": "Sturdy",
           "effect": "Prevents being KOed from full HP, leaving 1 HP instead.  Protects against the one-hit KO moves regardless of HP."
         },
+        "abilities": [
+          {
+            "name": "Sturdy",
+            "effect": "Prevents being KOed from full HP, leaving 1 HP instead.  Protects against the one-hit KO moves regardless of HP."
+          }
+        ],
         "sprite": "462",
         "types": [
           "electric",
@@ -5269,6 +5924,12 @@
           "name": "Sturdy",
           "effect": "Prevents being KOed from full HP, leaving 1 HP instead.  Protects against the one-hit KO moves regardless of HP."
         },
+        "abilities": [
+          {
+            "name": "Sturdy",
+            "effect": "Prevents being KOed from full HP, leaving 1 HP instead.  Protects against the one-hit KO moves regardless of HP."
+          }
+        ],
         "held": {
           "sprite": "electrium-z--held",
           "name": "Electrium Z",
@@ -5286,7 +5947,8 @@
           "spa": 55,
           "spd": 65,
           "spe": 45
-        }
+        },
+        "icon": "golem-alola"
       }
     ]
   },
@@ -5328,6 +5990,12 @@
           "name": "Keen Eye",
           "effect": "Prevents accuracy from being lowered."
         },
+        "abilities": [
+          {
+            "name": "Keen Eye",
+            "effect": "Prevents accuracy from being lowered."
+          }
+        ],
         "sprite": "302",
         "types": [
           "dark",
@@ -5373,6 +6041,12 @@
           "name": "Super Luck",
           "effect": "Raises moves' critical hit rates one stage."
         },
+        "abilities": [
+          {
+            "name": "Super Luck",
+            "effect": "Raises moves' critical hit rates one stage."
+          }
+        ],
         "sprite": "359",
         "types": [
           "dark"
@@ -5416,6 +6090,12 @@
           "name": "Fur Coat",
           "effect": "Halves damage from physical attacks."
         },
+        "abilities": [
+          {
+            "name": "Fur Coat",
+            "effect": "Halves damage from physical attacks."
+          }
+        ],
         "held": {
           "sprite": "darkinium-z--held",
           "name": "Darkinium Z",
@@ -5432,7 +6112,8 @@
           "spa": 75,
           "spd": 65,
           "spe": 115
-        }
+        },
+        "icon": "persian-alola"
       }
     ]
   },
@@ -5468,6 +6149,12 @@
           "name": "Inner Focus",
           "effect": "Prevents flinching."
         },
+        "abilities": [
+          {
+            "name": "Inner Focus",
+            "effect": "Prevents flinching."
+          }
+        ],
         "sprite": "169",
         "types": [
           "poison",
@@ -5504,6 +6191,12 @@
           "name": "Illusion",
           "effect": "Takes the appearance of the last conscious party Pokémon upon being sent out until hit by a damaging move."
         },
+        "abilities": [
+          {
+            "name": "Illusion",
+            "effect": "Takes the appearance of the last conscious party Pokémon upon being sent out until hit by a damaging move."
+          }
+        ],
         "held": {
           "sprite": "darkinium-z--held",
           "name": "Darkinium Z",
@@ -5558,6 +6251,12 @@
           "name": "RKS System",
           "effect": "Changes this Pokémon's type to match its held Memory."
         },
+        "abilities": [
+          {
+            "name": "RKS System",
+            "effect": "Changes this Pokémon's type to match its held Memory."
+          }
+        ],
         "held": {
           "sprite": "water-memory",
           "name": "Water Memory",
@@ -5607,6 +6306,12 @@
           "name": "Inner Focus",
           "effect": "Prevents flinching."
         },
+        "abilities": [
+          {
+            "name": "Inner Focus",
+            "effect": "Prevents flinching."
+          }
+        ],
         "sprite": "448",
         "types": [
           "fighting",
@@ -5666,6 +6371,12 @@
           "name": "Prankster",
           "effect": "Raises non-damaging moves' priority by one stage."
         },
+        "abilities": [
+          {
+            "name": "Prankster",
+            "effect": "Raises non-damaging moves' priority by one stage."
+          }
+        ],
         "sprite": "707",
         "types": [
           "steel",
@@ -5715,6 +6426,12 @@
           "name": "Defiant",
           "effect": "Raises Attack two stages upon having any stat lowered."
         },
+        "abilities": [
+          {
+            "name": "Defiant",
+            "effect": "Raises Attack two stages upon having any stat lowered."
+          }
+        ],
         "sprite": "625",
         "types": [
           "dark",
@@ -5765,6 +6482,12 @@
           "name": "Sturdy",
           "effect": "Prevents being KOed from full HP, leaving 1 HP instead.  Protects against the one-hit KO moves regardless of HP."
         },
+        "abilities": [
+          {
+            "name": "Sturdy",
+            "effect": "Prevents being KOed from full HP, leaving 1 HP instead.  Protects against the one-hit KO moves regardless of HP."
+          }
+        ],
         "sprite": "462",
         "types": [
           "electric",
@@ -5816,6 +6539,12 @@
           "name": "Clear Body",
           "effect": "Prevents stats from being lowered by other Pokémon."
         },
+        "abilities": [
+          {
+            "name": "Clear Body",
+            "effect": "Prevents stats from being lowered by other Pokémon."
+          }
+        ],
         "sprite": "376",
         "types": [
           "steel",
@@ -5867,6 +6596,12 @@
           "name": "Tangling Hair",
           "effect": "When this Pokémon takes regular damage from a contact move, the attacking Pokémon's Speed lowers by one stage."
         },
+        "abilities": [
+          {
+            "name": "Tangling Hair",
+            "effect": "When this Pokémon takes regular damage from a contact move, the attacking Pokémon's Speed lowers by one stage."
+          }
+        ],
         "held": {
           "sprite": "steelium-z--held",
           "name": "Steelium Z",
@@ -5884,7 +6619,8 @@
           "spa": 50,
           "spd": 70,
           "spe": 110
-        }
+        },
+        "icon": "dugtrio-alola"
       }
     ]
   },
@@ -5926,6 +6662,12 @@
           "name": "Battle Armor",
           "effect": "Protects against critical hits."
         },
+        "abilities": [
+          {
+            "name": "Battle Armor",
+            "effect": "Protects against critical hits."
+          }
+        ],
         "sprite": "348",
         "types": [
           "rock",
@@ -5969,6 +6711,12 @@
           "name": "Suction Cups",
           "effect": "Prevents being forced out of battle by other Pokémon's moves."
         },
+        "abilities": [
+          {
+            "name": "Suction Cups",
+            "effect": "Prevents being forced out of battle by other Pokémon's moves."
+          }
+        ],
         "sprite": "346",
         "types": [
           "rock",
@@ -6013,6 +6761,12 @@
           "name": "Sand Stream",
           "effect": "Summons a sandstorm that lasts indefinitely upon entering battle."
         },
+        "abilities": [
+          {
+            "name": "Sand Stream",
+            "effect": "Summons a sandstorm that lasts indefinitely upon entering battle."
+          }
+        ],
         "sprite": "526",
         "types": [
           "rock"
@@ -6060,6 +6814,12 @@
           "name": "Sturdy",
           "effect": "Prevents being KOed from full HP, leaving 1 HP instead.  Protects against the one-hit KO moves regardless of HP."
         },
+        "abilities": [
+          {
+            "name": "Sturdy",
+            "effect": "Prevents being KOed from full HP, leaving 1 HP instead.  Protects against the one-hit KO moves regardless of HP."
+          }
+        ],
         "sprite": "476",
         "types": [
           "rock",
@@ -6111,6 +6871,12 @@
           "name": "Keen Eye",
           "effect": "Prevents accuracy from being lowered."
         },
+        "abilities": [
+          {
+            "name": "Keen Eye",
+            "effect": "Prevents accuracy from being lowered."
+          }
+        ],
         "held": {
           "sprite": "rockium-z--held",
           "name": "Rockium Z",
@@ -6127,7 +6893,8 @@
           "spa": 55,
           "spd": 75,
           "spe": 82
-        }
+        },
+        "icon": "lycanroc-midnight"
       }
     ]
   },
@@ -6176,6 +6943,12 @@
           "name": "Keen Eye",
           "effect": "Prevents accuracy from being lowered."
         },
+        "abilities": [
+          {
+            "name": "Keen Eye",
+            "effect": "Prevents accuracy from being lowered."
+          }
+        ],
         "sprite": "354",
         "types": [
           "ghost"
@@ -6223,6 +6996,12 @@
           "name": "Aftermath",
           "effect": "Damages the attacker for 1/4 its max HP when knocked out by a contact move."
         },
+        "abilities": [
+          {
+            "name": "Aftermath",
+            "effect": "Damages the attacker for 1/4 its max HP when knocked out by a contact move."
+          }
+        ],
         "sprite": "426",
         "types": [
           "ghost",
@@ -6273,6 +7052,12 @@
           "name": "Steelworker",
           "effect": "This Pokémon's Steel moves have 1.5× power."
         },
+        "abilities": [
+          {
+            "name": "Steelworker",
+            "effect": "This Pokémon's Steel moves have 1.5× power."
+          }
+        ],
         "sprite": "781",
         "types": [
           "ghost",
@@ -6323,6 +7108,12 @@
           "name": "Snow Cloak",
           "effect": "Increases evasion to 1.25× during hail.  Protects against hail damage."
         },
+        "abilities": [
+          {
+            "name": "Snow Cloak",
+            "effect": "Increases evasion to 1.25× during hail.  Protects against hail damage."
+          }
+        ],
         "sprite": "478",
         "types": [
           "ice",
@@ -6373,6 +7164,12 @@
           "name": "Water Compaction",
           "effect": "Raises this Pokémon's Defense by two stages when it's hit by a Water move."
         },
+        "abilities": [
+          {
+            "name": "Water Compaction",
+            "effect": "Raises this Pokémon's Defense by two stages when it's hit by a Water move."
+          }
+        ],
         "held": {
           "sprite": "ghostium-z--held",
           "name": "Ghostium Z",
@@ -6439,6 +7236,12 @@
           "name": "Sheer Force",
           "effect": "Strengthens moves with extra effects to 1.3× their power, but prevents their extra effects."
         },
+        "abilities": [
+          {
+            "name": "Sheer Force",
+            "effect": "Strengthens moves with extra effects to 1.3× their power, but prevents their extra effects."
+          }
+        ],
         "sprite": "628",
         "types": [
           "normal",
@@ -6490,6 +7293,12 @@
           "name": "Mold Breaker",
           "effect": "Bypasses targets' abilities if they could hinder or prevent a move."
         },
+        "abilities": [
+          {
+            "name": "Mold Breaker",
+            "effect": "Bypasses targets' abilities if they could hinder or prevent a move."
+          }
+        ],
         "sprite": "701",
         "types": [
           "fighting",
@@ -6539,6 +7348,12 @@
           "name": "Dancer",
           "effect": "Whenever another Pokémon uses a dance move, this Pokémon will use the same move immediately afterwards."
         },
+        "abilities": [
+          {
+            "name": "Dancer",
+            "effect": "Whenever another Pokémon uses a dance move, this Pokémon will use the same move immediately afterwards."
+          }
+        ],
         "sprite": "741",
         "types": [
           "fire",
@@ -6588,6 +7403,12 @@
           "name": "Big Pecks",
           "effect": "Protects against Defense drops."
         },
+        "abilities": [
+          {
+            "name": "Big Pecks",
+            "effect": "Protects against Defense drops."
+          }
+        ],
         "sprite": "630",
         "types": [
           "dark",
@@ -6639,6 +7460,12 @@
           "name": "Skill Link",
           "effect": "Extends two-to-five-hit moves and triple kick to their full length every time."
         },
+        "abilities": [
+          {
+            "name": "Skill Link",
+            "effect": "Extends two-to-five-hit moves and triple kick to their full length every time."
+          }
+        ],
         "held": {
           "sprite": "flyinium-z--held",
           "name": "Flyinium Z",
@@ -6706,6 +7533,12 @@
           "name": "Surge Surfer",
           "effect": "Doubles this Pokémon's Speed on Electric Terrain."
         },
+        "abilities": [
+          {
+            "name": "Surge Surfer",
+            "effect": "Doubles this Pokémon's Speed on Electric Terrain."
+          }
+        ],
         "sprite": "10100",
         "types": [
           "electric",
@@ -6718,7 +7551,8 @@
           "spa": 95,
           "spd": 85,
           "spe": 110
-        }
+        },
+        "icon": "raichu-alola"
       },
       {
         "name": "vaporeon",
@@ -6755,6 +7589,12 @@
           "name": "Water Absorb",
           "effect": "Absorbs water moves, healing for 1/4 max HP."
         },
+        "abilities": [
+          {
+            "name": "Water Absorb",
+            "effect": "Absorbs water moves, healing for 1/4 max HP."
+          }
+        ],
         "starter": "fire",
         "sprite": "134",
         "types": [
@@ -6806,6 +7646,12 @@
           "name": "Intimidate",
           "effect": "Lowers opponents' Attack one stage upon entering battle."
         },
+        "abilities": [
+          {
+            "name": "Intimidate",
+            "effect": "Lowers opponents' Attack one stage upon entering battle."
+          }
+        ],
         "sprite": "128",
         "types": [
           "normal"
@@ -6854,6 +7700,12 @@
           "name": "Infiltrator",
           "effect": "Bypasses light screen, reflect, and safeguard."
         },
+        "abilities": [
+          {
+            "name": "Infiltrator",
+            "effect": "Bypasses light screen, reflect, and safeguard."
+          }
+        ],
         "sprite": "715",
         "types": [
           "flying",
@@ -6905,6 +7757,12 @@
           "name": "Iron Fist",
           "effect": "Strengthens punch-based moves to 1.2× their power."
         },
+        "abilities": [
+          {
+            "name": "Iron Fist",
+            "effect": "Strengthens punch-based moves to 1.2× their power."
+          }
+        ],
         "sprite": "740",
         "types": [
           "fighting",
@@ -6949,6 +7807,12 @@
           "name": "Overgrow",
           "effect": "Strengthens grass moves to inflict 1.5× damage at 1/3 max HP or less."
         },
+        "abilities": [
+          {
+            "name": "Overgrow",
+            "effect": "Strengthens grass moves to inflict 1.5× damage at 1/3 max HP or less."
+          }
+        ],
         "held": {
           "sprite": "grassium-z--held",
           "name": "Grassium Z",
@@ -7016,6 +7880,12 @@
           "name": "Insomnia",
           "effect": "Prevents sleep."
         },
+        "abilities": [
+          {
+            "name": "Insomnia",
+            "effect": "Prevents sleep."
+          }
+        ],
         "sprite": "97",
         "types": [
           "psychic"
@@ -7065,6 +7935,12 @@
           "name": "Levitate",
           "effect": "Evades ground moves."
         },
+        "abilities": [
+          {
+            "name": "Levitate",
+            "effect": "Evades ground moves."
+          }
+        ],
         "sprite": "344",
         "types": [
           "ground",
@@ -7116,6 +7992,12 @@
           "name": "Strong Jaw",
           "effect": "Strengthens biting moves to 1.5× their power."
         },
+        "abilities": [
+          {
+            "name": "Strong Jaw",
+            "effect": "Strengthens biting moves to 1.5× their power."
+          }
+        ],
         "sprite": "779",
         "types": [
           "water",
@@ -7146,6 +8028,12 @@
           "name": "Intimidate",
           "effect": "Lowers opponents' Attack one stage upon entering battle."
         },
+        "abilities": [
+          {
+            "name": "Intimidate",
+            "effect": "Lowers opponents' Attack one stage upon entering battle."
+          }
+        ],
         "sprite": "210",
         "types": [
           "fairy"
@@ -7175,6 +8063,12 @@
           "name": "Intimidate",
           "effect": "Lowers opponents' Attack one stage upon entering battle."
         },
+        "abilities": [
+          {
+            "name": "Intimidate",
+            "effect": "Lowers opponents' Attack one stage upon entering battle."
+          }
+        ],
         "sprite": "560",
         "types": [
           "dark",
@@ -7210,6 +8104,12 @@
           "name": "Effect Spore",
           "effect": "Has a 30% chance of inflcting either paralysis, poison, or sleep on attacking Pokémon on contact."
         },
+        "abilities": [
+          {
+            "name": "Effect Spore",
+            "effect": "Has a 30% chance of inflcting either paralysis, poison, or sleep on attacking Pokémon on contact."
+          }
+        ],
         "sprite": "756",
         "types": [
           "grass",
@@ -7272,6 +8172,12 @@
           "name": "Intimidate",
           "effect": "Lowers opponents' Attack one stage upon entering battle."
         },
+        "abilities": [
+          {
+            "name": "Intimidate",
+            "effect": "Lowers opponents' Attack one stage upon entering battle."
+          }
+        ],
         "sprite": "262",
         "types": [
           "dark"
@@ -7321,6 +8227,12 @@
           "name": "Inner Focus",
           "effect": "Prevents flinching."
         },
+        "abilities": [
+          {
+            "name": "Inner Focus",
+            "effect": "Prevents flinching."
+          }
+        ],
         "sprite": "169",
         "types": [
           "poison",
@@ -7371,6 +8283,12 @@
           "name": "Levitate",
           "effect": "Evades ground moves."
         },
+        "abilities": [
+          {
+            "name": "Levitate",
+            "effect": "Evades ground moves."
+          }
+        ],
         "sprite": "110",
         "types": [
           "poison"
@@ -7421,6 +8339,12 @@
           "name": "Magma Armor",
           "effect": "Prevents freezing."
         },
+        "abilities": [
+          {
+            "name": "Magma Armor",
+            "effect": "Prevents freezing."
+          }
+        ],
         "sprite": "323",
         "types": [
           "fire",
@@ -7472,6 +8396,12 @@
           "name": "Drought",
           "effect": "Summons strong sunlight that lasts indefinitely upon entering battle."
         },
+        "abilities": [
+          {
+            "name": "Drought",
+            "effect": "Summons strong sunlight that lasts indefinitely upon entering battle."
+          }
+        ],
         "sprite": "383",
         "types": [
           "ground"
@@ -7533,6 +8463,12 @@
           "name": "Intimidate",
           "effect": "Lowers opponents' Attack one stage upon entering battle."
         },
+        "abilities": [
+          {
+            "name": "Intimidate",
+            "effect": "Lowers opponents' Attack one stage upon entering battle."
+          }
+        ],
         "sprite": "262",
         "types": [
           "dark"
@@ -7582,6 +8518,12 @@
           "name": "Inner Focus",
           "effect": "Prevents flinching."
         },
+        "abilities": [
+          {
+            "name": "Inner Focus",
+            "effect": "Prevents flinching."
+          }
+        ],
         "sprite": "169",
         "types": [
           "poison",
@@ -7633,6 +8575,12 @@
           "name": "Poison Touch",
           "effect": "Has a 30% chance of poisoning target Pokémon upon contact."
         },
+        "abilities": [
+          {
+            "name": "Poison Touch",
+            "effect": "Has a 30% chance of poisoning target Pokémon upon contact."
+          }
+        ],
         "sprite": "89",
         "types": [
           "poison"
@@ -7683,6 +8631,12 @@
           "name": "Rough Skin",
           "effect": "Damages attacking Pokémon for 1/8 their max HP on contact."
         },
+        "abilities": [
+          {
+            "name": "Rough Skin",
+            "effect": "Damages attacking Pokémon for 1/8 their max HP on contact."
+          }
+        ],
         "sprite": "319",
         "types": [
           "water",
@@ -7733,6 +8687,12 @@
           "name": "Drizzle",
           "effect": "Summons rain that lasts indefinitely upon entering battle."
         },
+        "abilities": [
+          {
+            "name": "Drizzle",
+            "effect": "Summons rain that lasts indefinitely upon entering battle."
+          }
+        ],
         "sprite": "382",
         "types": [
           "water"
@@ -7790,6 +8750,12 @@
           "name": "Early Bird",
           "effect": "Makes sleep pass twice as quickly."
         },
+        "abilities": [
+          {
+            "name": "Early Bird",
+            "effect": "Makes sleep pass twice as quickly."
+          }
+        ],
         "sprite": "229",
         "types": [
           "dark",
@@ -7841,6 +8807,12 @@
           "name": "Insomnia",
           "effect": "Prevents sleep."
         },
+        "abilities": [
+          {
+            "name": "Insomnia",
+            "effect": "Prevents sleep."
+          }
+        ],
         "sprite": "430",
         "types": [
           "dark",
@@ -7890,6 +8862,12 @@
           "name": "Inner Focus",
           "effect": "Prevents flinching."
         },
+        "abilities": [
+          {
+            "name": "Inner Focus",
+            "effect": "Prevents flinching."
+          }
+        ],
         "sprite": "169",
         "types": [
           "poison",
@@ -7941,6 +8919,12 @@
           "name": "Pressure",
           "effect": "Increases the PP cost of moves targetting the Pokémon by one."
         },
+        "abilities": [
+          {
+            "name": "Pressure",
+            "effect": "Increases the PP cost of moves targetting the Pokémon by one."
+          }
+        ],
         "sprite": "461",
         "types": [
           "dark",
@@ -7992,6 +8976,12 @@
           "name": "Pressure",
           "effect": "Increases the PP cost of moves targetting the Pokémon by one."
         },
+        "abilities": [
+          {
+            "name": "Pressure",
+            "effect": "Increases the PP cost of moves targetting the Pokémon by one."
+          }
+        ],
         "sprite": "483",
         "types": [
           "steel",
@@ -8055,6 +9045,12 @@
           "name": "Inner Focus",
           "effect": "Prevents flinching."
         },
+        "abilities": [
+          {
+            "name": "Inner Focus",
+            "effect": "Prevents flinching."
+          }
+        ],
         "sprite": "620",
         "types": [
           "fighting"
@@ -8105,6 +9101,12 @@
           "name": "Insomnia",
           "effect": "Prevents sleep."
         },
+        "abilities": [
+          {
+            "name": "Insomnia",
+            "effect": "Prevents sleep."
+          }
+        ],
         "sprite": "430",
         "types": [
           "dark",
@@ -8154,6 +9156,12 @@
           "name": "Rivalry",
           "effect": "Increases damage inflicted to 1.25× against Pokémon of the same gender, but decreases damage to 0.75× against the opposite gender."
         },
+        "abilities": [
+          {
+            "name": "Rivalry",
+            "effect": "Increases damage inflicted to 1.25× against Pokémon of the same gender, but decreases damage to 0.75× against the opposite gender."
+          }
+        ],
         "sprite": "668",
         "types": [
           "fire",
@@ -8205,6 +9213,12 @@
           "name": "Intimidate",
           "effect": "Lowers opponents' Attack one stage upon entering battle."
         },
+        "abilities": [
+          {
+            "name": "Intimidate",
+            "effect": "Lowers opponents' Attack one stage upon entering battle."
+          }
+        ],
         "held": {
           "sprite": "gyaradosite",
           "name": "Gyaradosite",
@@ -8260,6 +9274,12 @@
           "name": "Fairy Aura",
           "effect": "Strengthens fairy moves to 1.33× their power for all friendly and opposing Pokémon."
         },
+        "abilities": [
+          {
+            "name": "Fairy Aura",
+            "effect": "Strengthens fairy moves to 1.33× their power for all friendly and opposing Pokémon."
+          }
+        ],
         "sprite": "716",
         "types": [
           "fairy"
@@ -8315,6 +9335,12 @@
           "name": "Mummy",
           "effect": "Changes attacking Pokémon's abilities to Mummy on contact."
         },
+        "abilities": [
+          {
+            "name": "Mummy",
+            "effect": "Changes attacking Pokémon's abilities to Mummy on contact."
+          }
+        ],
         "sprite": "563",
         "types": [
           "ghost"
@@ -8364,6 +9390,12 @@
           "name": "Reckless",
           "effect": "Strengthens recoil moves to 1.2× their power."
         },
+        "abilities": [
+          {
+            "name": "Reckless",
+            "effect": "Strengthens recoil moves to 1.2× their power."
+          }
+        ],
         "sprite": "626",
         "types": [
           "normal"
@@ -8413,6 +9445,12 @@
           "name": "Defiant",
           "effect": "Raises Attack two stages upon having any stat lowered."
         },
+        "abilities": [
+          {
+            "name": "Defiant",
+            "effect": "Raises Attack two stages upon having any stat lowered."
+          }
+        ],
         "sprite": "625",
         "types": [
           "dark",
@@ -8462,6 +9500,12 @@
           "name": "Levitate",
           "effect": "Evades ground moves."
         },
+        "abilities": [
+          {
+            "name": "Levitate",
+            "effect": "Evades ground moves."
+          }
+        ],
         "sprite": "635",
         "types": [
           "dark",
@@ -8511,6 +9555,12 @@
           "name": "Teravolt",
           "effect": "Bypasses targets' abilities if they could hinder or prevent moves."
         },
+        "abilities": [
+          {
+            "name": "Teravolt",
+            "effect": "Bypasses targets' abilities if they could hinder or prevent moves."
+          }
+        ],
         "sprite": "644",
         "types": [
           "dragon",
@@ -8572,6 +9622,12 @@
           "name": "Sand Veil",
           "effect": "Increases evasion to 1.25× during a sandstorm.  Protects against sandstorm damage."
         },
+        "abilities": [
+          {
+            "name": "Sand Veil",
+            "effect": "Increases evasion to 1.25× during a sandstorm.  Protects against sandstorm damage."
+          }
+        ],
         "held": {
           "sprite": "smooth-rock",
           "name": "Smooth Rock",
@@ -8626,6 +9682,12 @@
           "name": "Poison Point",
           "effect": "Has a 30% chance of poisoning attacking Pokémon on contact."
         },
+        "abilities": [
+          {
+            "name": "Poison Point",
+            "effect": "Has a 30% chance of poisoning attacking Pokémon on contact."
+          }
+        ],
         "sprite": "34",
         "types": [
           "poison",
@@ -8677,6 +9739,12 @@
           "name": "Poison Point",
           "effect": "Has a 30% chance of poisoning attacking Pokémon on contact."
         },
+        "abilities": [
+          {
+            "name": "Poison Point",
+            "effect": "Has a 30% chance of poisoning attacking Pokémon on contact."
+          }
+        ],
         "sprite": "31",
         "types": [
           "poison",
@@ -8727,6 +9795,12 @@
           "name": "Lightning Rod",
           "effect": "Redirects single-target electric moves to this Pokémon where possible.  Absorbs Electric moves, raising Special Attack one stage."
         },
+        "abilities": [
+          {
+            "name": "Lightning Rod",
+            "effect": "Redirects single-target electric moves to this Pokémon where possible.  Absorbs Electric moves, raising Special Attack one stage."
+          }
+        ],
         "sprite": "464",
         "types": [
           "ground",
@@ -8778,6 +9852,12 @@
           "name": "Pressure",
           "effect": "Increases the PP cost of moves targetting the Pokémon by one."
         },
+        "abilities": [
+          {
+            "name": "Pressure",
+            "effect": "Increases the PP cost of moves targetting the Pokémon by one."
+          }
+        ],
         "held": {
           "sprite": "mewtwonite-x",
           "name": "Mewtwonite X",
