@@ -53,7 +53,7 @@ interface IPatch {
     fakemon: IMon[]
 }
 
-const generateGame = (routes: Route[], patch?: IPatch): Record<string, Result | string[]> => {
+const generateGame = (routes: Route[], patch?: IPatch, gen?: string): Record<string, Result | string[]> => {
     let seen = new Set();
 
     // Patch fakemon into the list of encounters
@@ -69,13 +69,12 @@ const generateGame = (routes: Route[], patch?: IPatch): Record<string, Result | 
         .reduce((acc, it, id) => {
             const validEncounters = (it as IRoute).encounters?.filter((e) => {
                 if (!e) return
-                if (!PokemonMap[normalise(e)]) console.log(e)
 
                 try {
                     const evoline = PokemonMap[normalise(e)].evoline;
                     return !seen.has(evoline);
                 } catch (err) {
-                    console.log('"' + normalise(e) + '"')
+                    console.log(`[${gen}] ${normalise(e)}`)
                 }
             });
 
@@ -105,7 +104,7 @@ export async function GET({ params }) {
     const game = Games[gen]
     const patch = Patches[gen] || Patches[game?.patch]
 
-    return new Response(JSON.stringify(generateGame(Routes[gen], patch)), {
+    return new Response(JSON.stringify(generateGame(Routes[gen], patch, gen)), {
         headers: {
             'Content-Type': 'application/json',
             'Cache-Control': 'no-store'

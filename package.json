@@ -6,7 +6,8 @@
     "lint": "eslint src",
     "dev": "vite dev",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test:randomiser": "for i in `cat src/lib/data/games.json | jq 'keys[]' -r`; do curl -s http://localhost:5173/api/route/generate/$i.json; done"
   },
   "devDependencies": {
     "@iconify-icons/mdi": "^1.2.34",
