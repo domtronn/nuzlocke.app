@@ -189,7 +189,7 @@ export async function GET({ params, url }) {
               icon: p.sprite,
               held: held ? toHeld(held, patch.item || {}) : null,
               ability: ability ? toAbility(ability, patch.ability || {}) : null,
-              abilities: abilities.length ? abilities.map(a => toAbility(a, patch.ability)): null
+              abilities: abilities.length > 1 ? abilities.map(a => toAbility(a, patch.ability)): null
             });
           } catch (e) {
             console.error(`[${url}] Error fetching ${p.name}`);

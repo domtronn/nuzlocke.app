@@ -122,7 +122,18 @@
       "type": "route",
       "name": "Rustboro City",
       "encounters": [
-        "makuhita"
+        "omanyte",
+        "kabuto",
+        "aerodactyl",
+        "makuhita",
+        "lileep",
+        "anorith",
+        "cranidos",
+        "shieldon",
+        "tirtouga",
+        "archen",
+        "tyrunt",
+        "amaura"
       ]
     },
     {
@@ -136,8 +147,16 @@
       "type": "route",
       "name": "Route 105",
       "encounters": [
+        "tentacool",
+        "krabby",
+        "magikarp",
+        "wingull",
+        "pelipper",
+        "wailmer",
         "regice",
-        "regigigas"
+        "regigigas",
+        "frillish",
+        "clauncher"
       ]
     },
     {
@@ -202,6 +221,7 @@
         "abra",
         "geodude",
         "onix",
+        "makuhita",
         "nosepass",
         "sableye",
         "aron",
@@ -213,10 +233,18 @@
       "type": "route",
       "name": "Route 107",
       "encounters": [
+        "tentacool",
+        "krabby",
+        "magikarp",
         "chinchou",
         "lanturn",
+        "wingull",
+        "pelipper",
+        "wailmer",
         "clamperl",
-        "relicanth"
+        "relicanth",
+        "frillish",
+        "clauncher"
       ]
     },
     {
@@ -227,7 +255,12 @@
         "magikarp",
         "wingull",
         "pelipper",
-        "wailmer"
+        "wailmer",
+        "pikachu-libre",
+        "pikachu-belle",
+        "pikachu-phd",
+        "pikachu-rockstar",
+        "pikachu-pop-star"
       ]
     },
     {
@@ -305,9 +338,35 @@
     },
     {
       "type": "route",
+      "name": "Verdanturf Town",
+      "encounters": [
+        "pikachu-libre",
+        "pikachu-belle",
+        "pikachu-phd",
+        "pikachu-rockstar",
+        "pikachu-pop-star"
+      ]
+    },
+    {
+      "type": "route",
       "name": "Route 111",
       "encounters": [
-        "regirock"
+        "sandshrew",
+        "geodude",
+        "goldeen",
+        "magikarp",
+        "marill",
+        "azumarill",
+        "surskit",
+        "masquerain",
+        "trapinch",
+        "cacnea",
+        "barboach",
+        "baltoy",
+        "regirock",
+        "gible",
+        "sandile",
+        "dwebble"
       ]
     },
     {
@@ -328,9 +387,9 @@
         "diglett",
         "machop",
         "grimer",
+        "tyrogue",
         "koffing",
         "slugma",
-        "tyrogue",
         "numel",
         "torkoal",
         "roggenrola"
@@ -346,6 +405,17 @@
         "scraggy",
         "bouffalant",
         "klefki"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Fallarbor Town",
+      "encounters": [
+        "pikachu-libre",
+        "pikachu-belle",
+        "pikachu-phd",
+        "pikachu-rockstar",
+        "pikachu-pop-star"
       ]
     },
     {
@@ -496,7 +566,19 @@
       "type": "route",
       "name": "Route 119",
       "encounters": [
-        "castform"
+        "oddish",
+        "gloom",
+        "tentacool",
+        "magikarp",
+        "linoone",
+        "wingull",
+        "pelipper",
+        "carvanha",
+        "sharpedo",
+        "feebas",
+        "castform",
+        "kecleon",
+        "tropius"
       ]
     },
     {
@@ -538,6 +620,20 @@
       "type": "route",
       "name": "Route 120",
       "encounters": [
+        "oddish",
+        "gloom",
+        "tentacool",
+        "goldeen",
+        "magikarp",
+        "marill",
+        "azumarill",
+        "linoone",
+        "surskit",
+        "masquerain",
+        "barboach",
+        "kecleon",
+        "tropius",
+        "absol",
         "registeel"
       ]
     },
@@ -547,6 +643,9 @@
       "encounters": [
         "zubat",
         "golbat",
+        "goldeen",
+        "magikarp",
+        "barboach",
         "heatran"
       ]
     },
@@ -585,8 +684,10 @@
       "encounters": [
         "vulpix",
         "growlithe",
+        "wingull",
         "meditite",
         "shuppet",
+        "duskull",
         "chimecho",
         "bronzor",
         "elgyem"
@@ -630,10 +731,16 @@
         "gloom",
         "psyduck",
         "doduo",
+        "rhyhorn",
         "goldeen",
         "seaking",
+        "pinsir",
         "magikarp",
+        "xatu",
+        "wobbuffet",
         "girafarig",
+        "heracross",
+        "donphan",
         "buneary"
       ]
     },
@@ -679,17 +786,31 @@
       "type": "route",
       "name": "Route 124",
       "encounters": [
+        "tentacool",
+        "tentacruel",
+        "magikarp",
         "chinchou",
         "lanturn",
+        "pelipper",
+        "wailmer",
         "clamperl",
-        "relicanth"
+        "relicanth",
+        "finneon",
+        "frillish",
+        "alomomola"
       ]
     },
     {
       "type": "route",
       "name": "Mossdeep City",
       "encounters": [
-        "kecleon"
+        "tentacool",
+        "tentacruel",
+        "magikarp",
+        "pelipper",
+        "wailmer",
+        "kecleon",
+        "beldum"
       ]
     },
     {
@@ -719,9 +840,17 @@
       "encounters": [
         "zubat",
         "golbat",
+        "tentacool",
+        "tentacruel",
+        "graveler",
+        "dewgong",
+        "magikarp",
+        "delibird",
+        "wailmer",
         "snorunt",
         "spheal",
-        "sealeo"
+        "sealeo",
+        "cubchoo"
       ]
     },
     {
@@ -742,20 +871,31 @@
       "type": "route",
       "name": "Route 128",
       "encounters": [
+        "tentacool",
+        "tentacruel",
+        "magikarp",
         "chinchou",
         "lanturn",
         "corsola",
+        "pelipper",
+        "wailmer",
         "clamperl",
-        "relicanth"
+        "relicanth",
+        "luvdisc",
+        "finneon",
+        "frillish",
+        "alomomola"
       ]
     },
     {
       "type": "route",
       "name": "Seafloor Cavern",
       "encounters": [
+        "zubat",
         "golbat",
         "tentacool",
         "tentacruel",
+        "graveler",
         "magikarp",
         "wailmer"
       ]
@@ -771,10 +911,18 @@
       "type": "route",
       "name": "Route 126",
       "encounters": [
+        "tentacool",
+        "tentacruel",
+        "magikarp",
         "chinchou",
         "lanturn",
+        "pelipper",
+        "wailmer",
         "clamperl",
-        "relicanth"
+        "relicanth",
+        "finneon",
+        "frillish",
+        "alomomola"
       ]
     },
     {
@@ -824,20 +972,38 @@
       "type": "route",
       "name": "Route 129",
       "encounters": [
+        "tentacool",
+        "tentacruel",
+        "magikarp",
         "chinchou",
         "lanturn",
+        "pelipper",
+        "wailmer",
         "clamperl",
-        "relicanth"
+        "relicanth",
+        "finneon",
+        "frillish",
+        "alomomola"
       ]
     },
     {
       "type": "route",
       "name": "Route 130",
       "encounters": [
+        "tentacool",
+        "tentacruel",
+        "horsea",
+        "seadra",
+        "magikarp",
         "chinchou",
         "lanturn",
+        "pelipper",
+        "wailmer",
         "clamperl",
-        "relicanth"
+        "relicanth",
+        "finneon",
+        "frillish",
+        "alomomola"
       ]
     },
     {
@@ -31320,6 +31486,17 @@
     },
     {
       "type": "route",
+      "name": "Verdanturf Town",
+      "encounters": [
+        "pikachu-libre",
+        "pikachu-belle",
+        "pikachu-phd",
+        "pikachu-rockstar",
+        "pikachu-pop-star"
+      ]
+    },
+    {
+      "type": "route",
       "name": "Route 111",
       "encounters": [
         "sandshrew",
@@ -31376,6 +31553,17 @@
         "scraggy",
         "bouffalant",
         "klefki"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Fallarbor Town",
+      "encounters": [
+        "pikachu-libre",
+        "pikachu-belle",
+        "pikachu-phd",
+        "pikachu-rockstar",
+        "pikachu-pop-star"
       ]
     },
     {
@@ -31714,7 +31902,12 @@
         "magikarp",
         "wingull",
         "pelipper",
-        "wailmer"
+        "wailmer",
+        "pikachu-libre",
+        "pikachu-belle",
+        "pikachu-phd",
+        "pikachu-rockstar",
+        "pikachu-pop-star"
       ]
     },
     {

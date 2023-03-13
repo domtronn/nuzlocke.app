@@ -897,6 +897,10 @@
             "effect": "Puts the target to sleep."
           }
         ],
+        "ability": {
+          "name": "Levitate",
+          "effect": "Evades ground moves."
+        },
         "sprite": "337",
         "types": [
           "rock",
@@ -943,6 +947,10 @@
             "effect": "Requires a turn to charge before attacking."
           }
         ],
+        "ability": {
+          "name": "Levitate",
+          "effect": "Evades ground moves."
+        },
         "sprite": "338",
         "types": [
           "rock",
