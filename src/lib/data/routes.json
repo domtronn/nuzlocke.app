@@ -8836,7 +8836,9 @@
     {
       "type": "gym",
       "name": "Aspertia City",
-      "value": "r0_n"
+      "value": "r0_n",
+      "group": "rival",
+      "boss": "Hugh"
     },
     {
       "type": "route",
@@ -8961,7 +8963,7 @@
       "type": "gym",
       "name": "Aspertia City Trainer School",
       "value": "o1_n",
-      "group": "",
+      "group": "mini-boss",
       "boss": "Roxanne"
     },
     {
@@ -8995,7 +8997,7 @@
       "type": "gym",
       "name": "Virbank City",
       "value": "o2_n",
-      "group": "",
+      "group": "mini-boss",
       "boss": "Brawly"
     },
     {
@@ -9009,7 +9011,7 @@
       "type": "gym",
       "name": "Virbank City",
       "value": "3_n",
-      "group": "",
+      "group": "gym-leader",
       "boss": "Brycen"
     },
     {
@@ -9098,7 +9100,7 @@
       "type": "gym",
       "name": "Café Sonata",
       "value": "o3_n",
-      "group": "",
+      "group": "mini-boss",
       "boss": "Wattson"
     },
     {
@@ -9270,7 +9272,7 @@
       "type": "gym",
       "name": "Big Stadium",
       "value": "o4_n",
-      "group": "",
+      "group": "mini-boss",
       "boss": "Flannery"
     },
     {
@@ -9366,7 +9368,7 @@
       "type": "gym",
       "name": "Nimbasa City",
       "value": "charles",
-      "group": "gym-leader",
+      "group": "",
       "boss": "Charles"
     },
     {
@@ -9426,14 +9428,14 @@
       "type": "gym",
       "name": "Route 6",
       "value": "rood",
-      "group": "",
+      "group": "evil-team",
       "boss": "Rood"
     },
     {
       "type": "gym",
       "name": "Route 6",
       "value": "o5_n",
-      "group": "",
+      "group": "mini-boss",
       "boss": "Norman"
     },
     {
@@ -9603,7 +9605,7 @@
       "type": "gym",
       "name": "Reversal Mountain",
       "value": "bianca_n",
-      "group": "",
+      "group": "rival",
       "boss": "Bianca"
     },
     {
@@ -9895,7 +9897,7 @@
       "type": "gym",
       "name": "Opelucid City",
       "value": "o7_n",
-      "group": "",
+      "group": "mini-boss",
       "boss": "Winona"
     },
     {
@@ -9940,7 +9942,7 @@
       "type": "gym",
       "name": "Humilau City",
       "value": "o8_n",
-      "group": "",
+      "group": "mini-boss",
       "boss": "Tate & Liza"
     },
     {
@@ -10703,7 +10705,9 @@
     {
       "type": "gym",
       "name": "Aspertia City",
-      "value": "r0_c"
+      "value": "r0_c",
+      "group": "rival",
+      "boss": "Hugh"
     },
     {
       "type": "route",
@@ -10828,7 +10832,7 @@
       "type": "gym",
       "name": "Aspertia City Trainer School",
       "value": "o1_c",
-      "group": "",
+      "group": "mini-boss",
       "boss": "Roxanne"
     },
     {
@@ -10862,7 +10866,7 @@
       "type": "gym",
       "name": "Virbank City",
       "value": "o2_c",
-      "group": "",
+      "group": "mini-boss",
       "boss": "Brawly"
     },
     {
@@ -10876,7 +10880,7 @@
       "type": "gym",
       "name": "Virbank City",
       "value": "3_c",
-      "group": "",
+      "group": "gym-leader",
       "boss": "Brycen"
     },
     {
@@ -10965,7 +10969,7 @@
       "type": "gym",
       "name": "Café Sonata",
       "value": "o3_c",
-      "group": "",
+      "group": "mini-boss",
       "boss": "Wattson"
     },
     {
@@ -11137,7 +11141,7 @@
       "type": "gym",
       "name": "Big Stadium",
       "value": "o4_c",
-      "group": "",
+      "group": "mini-boss",
       "boss": "Flannery"
     },
     {
@@ -11233,7 +11237,7 @@
       "type": "gym",
       "name": "Nimbasa City",
       "value": "charles",
-      "group": "gym-leader",
+      "group": "",
       "boss": "Charles"
     },
     {
@@ -11293,14 +11297,14 @@
       "type": "gym",
       "name": "Route 6",
       "value": "rood",
-      "group": "",
+      "group": "evil-team",
       "boss": "Rood"
     },
     {
       "type": "gym",
       "name": "Route 6",
       "value": "o5_c",
-      "group": "",
+      "group": "mini-boss",
       "boss": "Norman"
     },
     {
@@ -11470,7 +11474,7 @@
       "type": "gym",
       "name": "Reversal Mountain",
       "value": "bianca_c",
-      "group": "",
+      "group": "rival",
       "boss": "Bianca"
     },
     {
@@ -11762,7 +11766,7 @@
       "type": "gym",
       "name": "Opelucid City",
       "value": "o7_c",
-      "group": "",
+      "group": "mini-boss",
       "boss": "Winona"
     },
     {
@@ -11807,7 +11811,7 @@
       "type": "gym",
       "name": "Humilau City",
       "value": "o8_c",
-      "group": "",
+      "group": "mini-boss",
       "boss": "Tate & Liza"
     },
     {
@@ -36193,7 +36197,7 @@
       "type": "gym",
       "name": "Pewter City Museum",
       "value": "mb1",
-      "group": "",
+      "group": "mini-boss",
       "boss": "Falkner"
     },
     {
@@ -36396,7 +36400,7 @@
       "type": "gym",
       "name": "Bill's House",
       "value": "mb2",
-      "group": "",
+      "group": "mini-boss",
       "boss": "Bugsy"
     },
     {
@@ -36570,7 +36574,7 @@
       "type": "gym",
       "name": "Route 11",
       "value": "mb3",
-      "group": "",
+      "group": "mini-boss",
       "boss": "Whitney"
     },
     {
@@ -36667,7 +36671,7 @@
       "type": "gym",
       "name": "Lavender Town",
       "value": "mb4",
-      "group": "",
+      "group": "mini-boss",
       "boss": "Morty"
     },
     {
@@ -36854,7 +36858,7 @@
       "type": "gym",
       "name": "Saffron City Dojo",
       "value": "mb5",
-      "group": "",
+      "group": "mini-boss",
       "boss": "Chuck"
     },
     {
@@ -37187,21 +37191,21 @@
       "type": "gym",
       "name": "Seafoam Islands",
       "value": "mb6a",
-      "group": "",
+      "group": "mini-boss",
       "boss": "Pryce (Team A)"
     },
     {
       "type": "gym",
       "name": "Seafoam Islands",
       "value": "mb6b",
-      "group": "",
+      "group": "mini-boss",
       "boss": "Pryce (Team B)"
     },
     {
       "type": "gym",
       "name": "Seafoam Islands",
       "value": "mb6c",
-      "group": "",
+      "group": "mini-boss",
       "boss": "Pryce (Team C)"
     },
     {
@@ -37229,21 +37233,21 @@
       "type": "gym",
       "name": "Cinnabar Island",
       "value": "mb7a",
-      "group": "",
+      "group": "mini-boss",
       "boss": "Jasmine (Team A)"
     },
     {
       "type": "gym",
       "name": "Cinnabar Island",
       "value": "mb7b",
-      "group": "",
+      "group": "mini-boss",
       "boss": "Jasmine (Team B)"
     },
     {
       "type": "gym",
       "name": "Cinnabar Island",
       "value": "mb7c",
-      "group": "",
+      "group": "mini-boss",
       "boss": "Jasmine (Team C)"
     },
     {

@@ -128,7 +128,7 @@
             alt={'Pokémon ' + game.title + ' logo'}
             className='w-24 mb-2 mx-auto transition group-hover:grayscale-0 {(selected && selected !== id) || hoverActive ? 'grayscale' : ''} {selected === id ? 'drop-shadow-highlight grayscale-0' : ''} cursor-pointer'
             />
-          <strong class='line-clamp-3 max-w-[13ch] mx-auto'>{game.title}</strong>
+          <strong class='line-clamp-2 max-w-[16ch] mx-auto'>{game.title}</strong>
         </button>
       {/if}
     {/each}
