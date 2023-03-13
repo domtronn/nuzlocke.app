@@ -8825,6 +8825,15 @@
   "blazevolt2": [
     {
       "type": "route",
+      "name": "Starter",
+      "encounters": [
+        "snivy",
+        "tepig",
+        "oshawott"
+      ]
+    },
+    {
+      "type": "route",
       "name": "Aspertia City",
       "encounters": [
         "ducklett",
@@ -31228,7 +31237,12 @@
         "magikarp",
         "wingull",
         "pelipper",
-        "wailmer"
+        "wailmer",
+        "pikachu-libre",
+        "pikachu-belle",
+        "pikachu-phd",
+        "pikachu-rockstar",
+        "pikachu-pop-star"
       ]
     },
     {
@@ -35998,7 +36012,7 @@
   "radred": [
     {
       "type": "route",
-      "name": "starter",
+      "name": "Starter",
       "encounters": [
         "bulbasaur",
         "squirtle",
@@ -36098,7 +36112,7 @@
         "wingull",
         "patrat",
         "cubchoo",
-        "deerling-summer",
+        "deerling",
         "sandile",
         "pikipek",
         "snover",
@@ -36106,7 +36120,7 @@
         "mareep",
         "poochyena",
         "spearow",
-        "deerling-autumn",
+        "deerling",
         "shuppet",
         "dwebble",
         "swinub",
@@ -36165,23 +36179,21 @@
         "caterpie",
         "weedle",
         "pikachu",
-        "burmy-sandy",
         "sewaddle",
         "scatterbug",
         "ledyba",
         "surskit",
-        "burmy",
         "shroomish",
         "combee",
         "joltik",
         "spinarak",
         "wurmple",
-        "burmy-trash",
+        "burmy",
         "nincada",
         "kricketot",
         "blipbug",
         "grubbin",
-        "pumpkaboo-super",
+        "pumpkaboo",
         "phantump",
         "snom"
       ]
@@ -36224,7 +36236,7 @@
         "axew",
         "bonsly",
         "grimer-alola",
-        "exeggcute-alola",
+        "exeggutor-alola",
         "espurr",
         "skiddo",
         "gastly"
@@ -36262,7 +36274,7 @@
         "buneary",
         "pumpkaboo",
         "flabebe",
-        "pumpkaboo-small",
+        "pumpkaboo",
         "yanma",
         "rookidee",
         "pidgey",
@@ -36270,7 +36282,7 @@
         "mareep",
         "stunky",
         "phantump",
-        "pumpkaboo-large",
+        "pumpkaboo",
         "magikarp"
       ]
     },
@@ -36377,7 +36389,7 @@
         "poliwag",
         "poliwhirl",
         "gyarados",
-        "psyduck ",
+        "psyduck",
         "swablu",
         "taillow",
         "pineco",
@@ -36590,7 +36602,6 @@
         "mime-jr",
         "tropius",
         "skorupi",
-        "exeggcute-alola",
         "salandit",
         "indeedee-f",
         "espurr"
@@ -36606,7 +36617,7 @@
         "solrock",
         "zubat",
         "carbink",
-        "minior-meteor",
+        "minior",
         "ferroseed",
         "stonjourner",
         "heatmor",
@@ -36661,7 +36672,7 @@
         "shellder",
         "corsola-galar",
         "whiscash",
-        "basculin-blue-striped",
+        "basculin",
         "seadra",
         "tentacool",
         "wingull"
@@ -36682,7 +36693,7 @@
         "cofagrigus",
         "dusclops",
         "mismagius",
-        "cubone-alola",
+        "cubone",
         "spiritomb",
         "sableye",
         "polteageist",
@@ -36756,7 +36767,7 @@
         "passimian",
         "mienfoo",
         "porygon",
-        "deerling-winter",
+        "deerling",
         "vullaby",
         "oranguru"
       ]
@@ -36791,11 +36802,9 @@
         "oshawott",
         "pikachu",
         "pikachu-belle",
-        "pikachu-flying",
         "pikachu-libre",
         "pikachu-phd",
         "pikachu-rockstar",
-        "pikachu-surfing",
         "piplup",
         "poliwag",
         "poliwhirl",
@@ -37123,7 +37132,7 @@
         "mantine",
         "lumineon",
         "jellicent",
-        "basculin-blue-striped",
+        "basculin",
         "clawitzer"
       ]
     },
@@ -37137,7 +37146,7 @@
         "clauncher",
         "corsola-galar",
         "seadra",
-        "basculin-blue-striped",
+        "basculin",
         "clawitzer",
         "bruxish",
         "tentacruel",
@@ -37332,7 +37341,7 @@
         "mantyke",
         "mareanie",
         "luvdisc",
-        "basculin-blue-striped",
+        "basculin",
         "wailord"
       ]
     },
@@ -37380,7 +37389,7 @@
         "steelix",
         "audino",
         "volcarona",
-        "aegislash",
+        "aegislash-shield",
         "marowak",
         "goodra-hisui",
         "marowak-alola",
@@ -37511,8 +37520,7 @@
         "basculin",
         "golisopod",
         "araquanid",
-        "basculegion",
-        "basculegion-f",
+        "basculegion-male",
         "mantine-sevii",
         "sirfetchd",
         "lilligant",
@@ -37604,7 +37612,7 @@
       "encounters": [
         "absol",
         "smeargle",
-        "alcremie-strawberry",
+        "alcremie",
         "centiskorch",
         "gardevoir",
         "seviper",
@@ -37678,7 +37686,7 @@
         "primeape",
         "audino",
         "alakazam",
-        "type:null",
+        "typenull",
         "pangoro",
         "reuniclus",
         "feebas",

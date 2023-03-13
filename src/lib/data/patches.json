@@ -5559,6 +5559,41 @@
         "stats": {
           "hp": 85
         }
+      },
+      "pikachu-belle": {
+        "name": "pikachu-belle",
+        "types": [
+          "electric",
+          "ice"
+        ]
+      },
+      "pikachu-phd": {
+        "name": "pikachu-phd",
+        "types": [
+          "electric",
+          "psychic"
+        ]
+      },
+      "pikachu-libre": {
+        "name": "pikachu-libre",
+        "types": [
+          "electric",
+          "fighting"
+        ]
+      },
+      "pikachu-rockstar": {
+        "name": "pikachu-rockstar",
+        "types": [
+          "electric",
+          "steel"
+        ]
+      },
+      "pikachu-pop-star": {
+        "name": "pikachu-pop-star",
+        "types": [
+          "electric",
+          "fairy"
+        ]
       }
     },
     "fakemon": {
@@ -5958,6 +5993,48 @@
         "total": 630,
         "evoline": "wishiwashi",
         "imgUrl": "/radred/wishiwashi-sevii-school"
+      },
+      "pikachu-flying": {
+        "name": "Flying Pikachu",
+        "label": "Flying Pikachu",
+        "alias": "pikachu-flying",
+        "sprite": "pikachu",
+        "types": [
+          "electric",
+          "flying"
+        ],
+        "baseStats": {
+          "hp": 35,
+          "atk": 55,
+          "def": 40,
+          "spa": 50,
+          "spd": 50,
+          "spe": 90
+        },
+        "total": 320,
+        "evoline": "pikachu",
+        "imgUrl": "/radred/pikachu-flying"
+      },
+      "pikachu-surfing": {
+        "name": "Surfing Pikachu",
+        "label": "Surfing Pikachu",
+        "alias": "pikachu-surfing",
+        "sprite": "pikachu",
+        "types": [
+          "electric",
+          "water"
+        ],
+        "baseStats": {
+          "hp": 35,
+          "atk": 55,
+          "def": 40,
+          "spa": 50,
+          "spd": 50,
+          "spe": 90
+        },
+        "total": 320,
+        "evoline": "pikachu",
+        "imgUrl": "/radred/pikachu-surfing"
       }
     }
   },
