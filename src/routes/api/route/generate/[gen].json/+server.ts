@@ -1,91 +1,114 @@
 import Routes from '$lib/data/routes.json';
+import Patches from '$lib/data/patches.json';
+import Games from '$lib/data/games.json';
 import Pokemon from '../../../pokemon.json/_data.js';
 
 const normalise = id => id.replace(/-/g, '')
-const PokemonMap = Pokemon.reduce((acc, it) => ({
-    ...acc,
-    [normalise(it.alias)]: it
-}), {})
 
 enum RouteType {
-  route = 'route',
-  gym = 'gym'
+    route = 'route',
+    gym = 'gym'
 }
 
 enum GymType {
-  rival = 'rival',
-  leader = 'gym-leader',
-  elite = 'elite-four',
-  evil = 'evil-team'
+    rival = 'rival',
+    leader = 'gym-leader',
+    elite = 'elite-four',
+    evil = 'evil-team',
+    miniboss = 'mini-boss'
 }
 
 interface IRoute {
-  name: string;
-  type: RouteType.route;
-  encounters: string[];
+    name: string;
+    type: RouteType.route;
+    encounters: string[];
 }
 
 interface IGym {
-  type: RouteType.gym;
-  name: string;
-  value: string;
-  boss: string;
-  group: GymType;
+    type: RouteType.gym;
+    name: string;
+    value: string;
+    boss: string;
+    group: GymType;
 }
 
 type Route = IGym | IRoute;
 
 interface Result {
-  id: number;
-  pokemon: string;
-  location: string;
+    id: number;
+    pokemon: string;
+    location: string;
 }
 
-const generateGame = (routes: Route[]): Record<string, Result | string[]> => {
-  let seen = new Set();
+interface IMon {
+    name: string,
+    label: string,
+    alias: string,
+    sprite: string,
+    types: [string, string] | [string],
+    evoline: string
+}
 
-  return routes
-    .filter((r) => r.type === RouteType.route)
-    .reduce((acc, it, id) => {
-        const validEncounters = (it as IRoute).encounters?.filter((e) => {
-            if (!e) return
-            if (!PokemonMap[normalise(e)]) console.log(e)
+interface IPatch {
+    fakemon: IMon[]
+}
 
-            try {
-                const evoline = PokemonMap[normalise(e)].evoline;
-                return !seen.has(evoline);
-            } catch (err) {
-                console.log('"' + normalise(e) + '"', err)
-            }
-      });
+const generateGame = (routes: Route[], patch?: IPatch): Record<string, Result | string[]> => {
+    let seen = new Set();
 
-      if (!validEncounters || !validEncounters.length) return acc;
+    // Patch fakemon into the list of encounters
+    const PokemonMap = Pokemon
+        .concat(Object.values(patch?.fakemon || {}))
+        .reduce((acc, it) => ({
+            ...acc,
+            [normalise(it.alias)]: it
+        }), {})
 
-      const encounter =
-        validEncounters[Math.floor(Math.random() * validEncounters.length)];
+    return routes
+        .filter((r) => r.type === RouteType.route)
+        .reduce((acc, it, id) => {
+            const validEncounters = (it as IRoute).encounters?.filter((e) => {
+                if (!e) return
+                if (!PokemonMap[normalise(e)]) console.log(e)
 
-        seen.add(PokemonMap[normalise(encounter)].evoline);
-      return {
-        ...acc,
-        [it.name]: {
-          id,
-          pokemon: PokemonMap[normalise(encounter)].alias,
-          location: it.name,
-          hidden: true
-        }
-      };
-    }, {});
+                try {
+                    const evoline = PokemonMap[normalise(e)].evoline;
+                    return !seen.has(evoline);
+                } catch (err) {
+                    console.log('"' + normalise(e) + '"')
+                }
+            });
+
+            if (!validEncounters || !validEncounters.length) return acc;
+
+            const encounter =
+                validEncounters[Math.floor(Math.random() * validEncounters.length)];
+
+            seen.add(PokemonMap[normalise(encounter)].evoline);
+            return {
+                ...acc,
+                [it.name]: {
+                    id,
+                    pokemon: PokemonMap[normalise(encounter)].alias,
+                    location: it.name,
+                    hidden: true
+                }
+            };
+        }, {});
 };
 
 export async function GET({ params }) {
-  const { gen } = params;
+    const { gen } = params;
 
-  if (!Routes[gen]) return new Response('', { status: 404 });
+    if (!Routes[gen]) return new Response('', { status: 404 });
 
-  return new Response(JSON.stringify(generateGame(Routes[gen])), {
-    headers: {
-      'Content-Type': 'application/json',
-      'Cache-Control': 'no-store'
-    }
-  });
+    const game = Games[gen]
+    const patch = Patches[gen] || Patches[game?.patch]
+
+    return new Response(JSON.stringify(generateGame(Routes[gen], patch)), {
+        headers: {
+            'Content-Type': 'application/json',
+            'Cache-Control': 'no-store'
+        }
+    });
 }

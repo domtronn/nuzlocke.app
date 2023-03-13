@@ -9,7 +9,7 @@
   import { Link } from '$icons'
 
   const count = Object.values(gyms).flat().length
-  const order = ['Gym Leader', 'Elite Four', 'Rival', 'Evil Team', 'Other'].filter(i => gyms[i])
+  const order = ['Gym Leader', 'Elite Four', 'Rival', 'Evil Team', 'Mini Boss', 'Other'].filter(i => gyms[i])
   const identity = i => i
 
   const rivalVal = gyms['Rival'][0].value
@@ -21,7 +21,7 @@
   const setstarter = type => _ => starter = type
 </script>
 
-<h2 id=boss-summary>
+<h2 id=boss-summary class=max-w-[36ch]>
   <a title='{game.title} Boss Battles' href='{path}#boss-summary'>
     <Icon inline={true} icon={Link} height=1.8rem class=fill-current />
   </a>

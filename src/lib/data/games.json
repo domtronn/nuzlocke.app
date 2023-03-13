@@ -91,6 +91,30 @@
     "supported": true,
     "region": "kalos"
   },
+  "blazevolt2": {
+    "pid": "blazevolt2",
+    "patchId": "blazevolt2",
+    "lid": "blazevolt2",
+    "logo": "/logos/blaze-black-volt-white-2-redux",
+    "title": "Blaze Black / Volt White 2 Redux",
+    "gen": "romhack",
+    "patched": true,
+    "supported": true,
+    "region": "unova",
+    "lastUpdated": "12th March 2023"
+  },
+  "blazevolt2_c": {
+    "pid": "blazevolt2_c",
+    "patchId": "blazevolt2",
+    "lid": "blazevolt2",
+    "logo": "/logos/blaze-black-volt-white-2-redux",
+    "title": "Blaze Black / Volt White 2 Redux Challenge",
+    "gen": "romhack",
+    "patched": true,
+    "supported": true,
+    "region": "unova",
+    "lastUpdated": "12th March 2023"
+  },
   "bl2": {
     "pid": "bl2",
     "lid": "b2w2",

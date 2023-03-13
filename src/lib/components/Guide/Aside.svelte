@@ -8,7 +8,7 @@
 
   const splitAt = (arr, i) => [arr.slice(0, i), arr.slice(i)]
 
-  const bossOrder = ['Gym Leader', 'Elite Four', 'Rival', 'Evil Team', 'Other'].filter(i => gyms[i])
+  const bossOrder = ['Gym Leader', 'Elite Four', 'Rival', 'Evil Team', 'Mini Boss', 'Other'].filter(i => gyms[i])
 
   let show = false
   const onshow = _ => show = !show

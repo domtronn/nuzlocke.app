@@ -9,7 +9,7 @@
   import TypeBadge from '$lib/components/type-badge.svelte'
   import Label from '$lib/components/label.svelte'
 
-  import { SPRITE } from '$utils/rewrites'
+  import { createImgUrl } from '$utils/rewrites'
   import { toList } from '$utils/string'
 
   import { Picture, PIcon, Accordion } from '$lib/components/core'
@@ -152,8 +152,7 @@
       {#each pokemon as p, id (p.name + id)}
         <Pokemon
           {...p}
-          sprite={`${SPRITE}/sprite/${p.sprite}.png`}
-          fallback={`${SPRITE}/sprite/${p.sprite}`}
+          sprite={createImgUrl(p, {ext: 'png'})}
           maxStat={maxStat}
         >
           <button
