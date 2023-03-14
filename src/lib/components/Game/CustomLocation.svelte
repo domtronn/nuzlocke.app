@@ -29,25 +29,32 @@
   <span
     contenteditable
     on:input={oninput}
-    class:hover:border-black={value}
-    class:dark:hover:border-gray-50={value}
-    class='flex select-text transition border-b border-transparent hover:border-gray-500 focus:border-black dark:focus:border-gray-50 dark:focus:text-gray-50 focus:text-black md:w-auto focus:w-auto text-left sm:text-right outline-none flex-row sm:flex-row-reverse items-center gap-x-2 lg:-ml-6 -mr-1'
+    class:focus:border-yellow-500={true}
+    class='flex select-text transition border-2 border-transparent px-1 md:px-2 -ml-1 md:-ml-2 md:-mr-3 focus:text-black dark:focus:text-white focus:w-auto text-left outline-none flex-row sm:flex-row-reverse items-center gap-x-2 lg:-ml-6 -mr-1'
   >
     {value}
   </span>
+  {#if !value}
+  <span class='block sm:hidden absolute left-0 pointer-events-none'>Edit location name</span>
+  {/if}
   <Icon
     inline={true}
     size=1.4em
     icon={Edit}
-    className='{!value ? 'absolute left-0 sm:right-0 sm:-translate-x-full top-0' : 'absolute -right-2 sm:right-initial translate-x-full sm:-translate-x-full sm:-left-8 dark:text-gray-500 text-gray-300 hover:text-black'} fill-current cursor-edit pointer-events-none transition'
+    class='{!value
+               ? 'absolute left-0 sm:right-0 sm:-translate-x-full top-1'
+               : 'absolute -left-6 top-1 sm:right-initial translate-x-full sm:-translate-x-full dark:text-gray-500 text-gray-300 hover:text-black'}
+               fill-current cursor-edit pointer-events-none transition hidden sm:block'
     />
 
 </div>
 
 <style lang="postcss">
   span:focus ~ :global(*) { opacity: 0; }
+  span { min-width: 1ch; }
+
   @media (max-width:theme('screens.sm')) {
-    span { min-width: 480px; user-select: text; }
+    span { min-width: 14ch; user-select: text; }
     span:focus { min-width: 0; }
   }
 </style>
