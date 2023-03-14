@@ -10,7 +10,7 @@
   import { Modal as AnalysisModal } from '$lib/components/Analysis'
 
   import { getBox, updatePokemon, killPokemon } from '$lib/store'
-  import { types } from '$lib/data/types'
+  import { canonTypes as types } from '$lib/data/types'
   import { stats, StatIconMap } from '$lib/data/stats'
 
   import { SPRITE, CUSTOM, createImgUrl } from '$utils/rewrites'
