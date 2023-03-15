@@ -17,7 +17,8 @@
   import Games from '$lib/data/games.json'
   import deferStyles from '$lib/utils/defer-styles'
   import debounce from '$lib/utils/debounce'
-  import { getGame, read, readdata } from '$lib/store'
+  import { getGame, read, readdata,
+           savedGames, activeGame, updateGame, parse} from '$lib/store'
 
   let gameStore, gameKey, gameData
   let routeEl
@@ -25,6 +26,7 @@
   let search = ''
 
   $: filter, routeEl && routeEl.resetlimit()
+
   let filter = 'nuzlocke'
   const filters = [
     { label: 'Nuzlocke', val: 'nuzlocke' },
@@ -59,6 +61,16 @@
   }
 
   onMount(async () => deferStyles('/assets/pokemon.css'))
+  onMount(() => {
+    parse(saves => {
+      if (!browser) return
+      let game = saves[$activeGame]
+      savedGames.update(updateGame({
+        ...game,
+        updated: +new Date()
+      }))
+    })($savedGames)
+  })
 
   const setup = () => new Promise((resolve) => {
     const [, key, id] = readdata()

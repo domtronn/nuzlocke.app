@@ -1,5 +1,6 @@
 <script>
   import { page } from '$app/stores'
+  import { createUser } from '$lib/store'
   let path = $page.url.pathname;
 
   import { setContext } from 'svelte';
@@ -30,6 +31,8 @@
           .reduce((acc, it) => ({ ...acc, [it.alias]: it }), {})
       )
   });
+
+  $: createUser()
 </script>
 
 {#if ['/game', '/box'].includes(path)}
