@@ -1,10 +1,12 @@
 import { z } from 'zod'
-import { ISave, IGames } from './types'
+import { ISaves, IGames } from './types'
+
+import { processSave, processGame } from './bigquery'
 
 // @ts-ignore
 type IGames = z.infer<typeof IGames>
 // @ts-ignore
-type ISave = z.infer<typeof ISave>
+type ISaves = z.infer<typeof ISaves>
 
 enum EDocType {
   game = 'game',
@@ -39,21 +41,24 @@ const process = async (
   data: IGames | ISave,
   docType: EDocType
 ): Promise<void> => {
-  if (docType === EDocType.game) console.log('processing game')
-  if (docType === EDocType.save) console.log('processing save')
+  if (docType === EDocType.game) processGame(data)
+  if (docType === EDocType.save) processSave(data)
 } 
 
-export async function PUT ({ request, params }) {
+export async function POST ({ request, params }) {
   const { doc } = params
+
+  console.log(request.headers)
   
   if (doc !== EDocType.game && doc !== EDocType.save)
-  return new Response('', { status: 404 })
+  return new Response('No content', { status: 204 })
 
-  let success: Boolean, data: IGames | ISave
+  let success: Boolean, data: IGames | ISaves
   if (doc === EDocType.game) [success, data] = await verify(request, IGames)
-  if (doc === EDocType.save) [success, data] = await verify(request, ISave)
+  if (doc === EDocType.save) [success, data] = await verify(request, ISaves)
 
   if (success) process(data, doc)
+  else console.log(data)
   
   return new Response('Accepted', {
     status: 202

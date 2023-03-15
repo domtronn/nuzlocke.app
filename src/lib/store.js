@@ -249,3 +249,57 @@ export const summarise =
       )
     });
   };
+
+// ---- Temporary BiqQuery syncing track call
+export const trackData = () => {
+  if (!browser) return
+  const userId = window.localStorage.getItem(IDS.user)
+  const games = _parse(window.localStorage.getItem(IDS.saves))
+
+  const gamesData = {
+    user_id: userId,
+    data: Object
+      .values(games)
+      .map(({ created, updated, ...data }) => ({
+        ...data,
+        ...(updated ? { updated_at: updated } : {}),
+        created_at: created,
+      }))
+  }
+
+  const savesData = Object
+    .keys(games)
+    .reduce((acc, id) => {
+      try {
+        const data = Object
+          .values(JSON.parse(window.localStorage.getItem(IDS.game(id))))
+          .filter(d => typeof d === 'object'
+            && !d?.hidden
+            && Object.keys(d).length > 1
+          )
+
+        if (!Array.isArray(data) || !data.length) return acc
+        return [
+          ...acc,
+          {
+            user_id: userId,
+            game_id: id,
+            data
+          }
+        ]
+      } catch (e) {
+        return acc
+      }
+    }, [])
+
+
+  document.addEventListener("visibilitychange", function logData() {
+
+    if (document.visibilityState === "hidden") {
+      const createBlob = json => new Blob([JSON.stringify(json)], { type: 'application/json' })
+      navigator.sendBeacon('/api/store/game', createBlob(gamesData))
+      savesData.forEach(save => navigator.sendBeacon('/api/store/save', createBlob(save)))
+    }
+  })
+}
+// --------

@@ -5,7 +5,6 @@ const EGame = z.enum(['vi', 'sc', 'sw', 'sh', 'usun', 'umoon', 'sun', 'moon', 'x
 const IGame = z.object({
   game: EGame,
   id: z.string().uuid(),
-  user_id: z.string().uuid(),
   name: z.string(),
   settings: z.string().regex(/[01]{6}/),
   created_at: z.coerce.number(),
@@ -14,14 +13,22 @@ const IGame = z.object({
 })
 
 const ILocation = z.object({
-    id: z.coerce.number(),
-    pokemon: z.string(),
-    nickname: z.optional(z.string()),
-    status: z.enum(['1', '2', '3', '4', '5', '6', '7'])
+  id: z.coerce.number(),
+  location: z.string(),
+  pokemon: z.string(),
+  nature: z.optional(z.string().nullish()),
+  nickname: z.optional(z.string().nullish()),
+  status: z.optional(z.number().min(1).max(7)),
+  hidden: z.optional(z.boolean())
 })
 
-export const IGames = z.array(IGame)
-export const ISave = z.object({
-  id: z.string().uuid(),
-  data: z.record(z.string(), ILocation)
+export const IGames = z.object({
+  user_id: z.string().uuid(),
+  data: z.array(IGame)
+})
+
+export const ISaves = z.object({
+  game_id: z.string().uuid(),
+  user_id: z.string().uuid(),
+  data: z.array(ILocation)
 })

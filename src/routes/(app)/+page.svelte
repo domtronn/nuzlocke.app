@@ -7,7 +7,7 @@
   import { fly } from 'svelte/transition'
   import { onMount } from 'svelte'
 
-  import { readdata, activeGame, savedGames, parse, getGame, read, summarise } from '$lib/store'
+  import { readdata, activeGame, savedGames, parse, getGame, read, summarise, trackData } from '$lib/store'
   import { PixelatedContainer } from '$lib/components/containers'
 
   import { Picture, PIcon } from '$lib/components/core'
@@ -41,13 +41,15 @@
     activeId = id
     active = save
     summarise(data => summary = data)(data)
-    
+
     if (active) {
       links = [
         { title: 'Continue', href: '/game', color: 'yellow', aria: 'Continue game: ' + active.name },
         ...links
       ]
     }
+
+    trackData()
   })
 
   $: duration = Math.min(interval / 3, 1000)
