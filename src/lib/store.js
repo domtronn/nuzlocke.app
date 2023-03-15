@@ -200,10 +200,13 @@ const _parse = (gameData) =>
     .filter((i) => i.length)
     .map((i) => i.split('|'))
     .reduce(
-      (acc, [id, created, name, game, settings]) => ({
-        ...acc,
-        [id]: { id, created, name, game, settings }
-      }),
+      (acc, [id, time, name, game, settings]) => {
+        const [created, updated] = time.split('>')
+        return {
+          ...acc,
+          [id]: { id, created, ...(updated ? { updated } : {}), name, game, settings }
+        }
+      },
       {}
     );
 
@@ -215,7 +218,9 @@ export const parse =
 export const format = (saveData) =>
   [
     saveData.id,
-    saveData.created,
+    saveData.updated
+      ? saveData.created + '>' + saveData.updated
+      : saveData.created,
     saveData.name,
     saveData.game,
     saveData.settings
