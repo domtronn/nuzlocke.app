@@ -47,8 +47,6 @@ const process = async (
 
 export async function POST ({ request, params }) {
   const { doc } = params
-
-  console.log(request.headers)
   
   if (doc !== EDocType.game && doc !== EDocType.save)
   return new Response('No content', { status: 204 })
