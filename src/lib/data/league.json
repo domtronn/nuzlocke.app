@@ -44537,9 +44537,9 @@
             "tackle",
             "growl"
           ],
-          "ability": "keen-eye",
+          "ability": "reckless",
           "abilities": [
-            "keen-eye"
+            "reckless"
           ]
         },
         {
@@ -44547,8 +44547,9 @@
           "level": "10",
           "moves": [
             "tackle",
-            "rock-tomb",
-            "amnesia"
+            "metronome",
+            "amnesia",
+            "rock-tomb"
           ],
           "ability": "thick-fat",
           "abilities": [
@@ -44560,13 +44561,12 @@
           "level": "11",
           "moves": [
             "ember",
-            "scratch",
             "fury-swipes",
-            "leer"
+            "taunt"
           ],
-          "ability": "blaze",
+          "ability": "iron-fist",
           "abilities": [
-            "blaze"
+            "iron-fist"
           ],
           "held": "oran-berry",
           "starter": "grass"
@@ -44575,10 +44575,9 @@
           "name": "piplup",
           "level": "11",
           "moves": [
-            "bubble",
+            "water-pulse",
             "pound",
-            "peck",
-            "growl"
+            "peck"
           ],
           "ability": "torrent",
           "abilities": [
@@ -44593,8 +44592,7 @@
           "moves": [
             "razor-leaf",
             "tackle",
-            "curse",
-            "withdraw"
+            "curse"
           ],
           "ability": "overgrow",
           "abilities": [
