@@ -1,4 +1,12 @@
 Sitemap: https://nuzlocke.app/sitemap.xml
 
+User-agent: Googlebot
+Disallow: /game
+Disallow: /box
+Disallow: /(app)
+Disallow: /(guides)
+Disallow: /leaders
+
 User-agent: *
 Allow: /
+

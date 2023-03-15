@@ -1,216 +1,258 @@
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-  <!--  created with Free Online Sitemap Generator www.xml-sitemaps.com  -->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+                        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
   <url>
     <loc>https://nuzlocke.app/</loc>
-    <lastmod>2021-12-02T06:39:25+00:00</lastmod>
+    <lastmod>2023-03-15T08:34:49+00:00</lastmod>
     <priority>1.00</priority>
   </url>
   <url>
     <loc>https://nuzlocke.app/new</loc>
-    <lastmod>2022-05-01T23:30:25+00:00</lastmod>
-    <priority>1.00</priority>
+    <lastmod>2023-03-15T08:34:49+00:00</lastmod>
+    <priority>0.80</priority>
   </url>
   <url>
     <loc>https://nuzlocke.app/saves</loc>
-    <lastmod>2021-12-02T06:39:25+00:00</lastmod>
+    <lastmod>2023-03-15T08:34:49+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://nuzlocke.app/guides</loc>
+    <lastmod>2023-03-15T08:34:49+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://nuzlocke.app/privacy-policy</loc>
-    <lastmod>2021-12-02T06:39:25+00:00</lastmod>
+    <lastmod>2023-03-15T08:34:49+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://nuzlocke.app/credit</loc>
-    <lastmod>2021-12-26T06:39:25+00:00</lastmod>
+    <lastmod>2023-03-15T08:34:49+00:00</lastmod>
     <priority>0.80</priority>
   </url>
-
   <url>
-    <loc>https://nuzlocke.app/guides</loc>
-    <lastmod>2022-01-09T17:22:00+00:00</lastmod>
-    <priority>1.00</priority>
-  </url>
-  
-  <url>
-    <loc>https://nuzlocke.app/guides/sw</loc>
-    <lastmod>2022-01-07T17:22:00+00:00</lastmod>
-    <priority>0.90</priority>
+    <loc>https://nuzlocke.app/guides/violet</loc>
+    <lastmod>2023-03-15T08:34:49+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://nuzlocke.app/guides/sh</loc>
-    <lastmod>2022-01-07T17:22:00+00:00</lastmod>
-    <priority>0.90</priority>
+    <loc>https://nuzlocke.app/guides/scarlet</loc>
+    <lastmod>2023-03-15T08:34:49+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://nuzlocke.app/guides/usun</loc>
-    <lastmod>2022-01-07T17:22:00+00:00</lastmod>
-    <priority>0.90</priority>
+    <loc>https://nuzlocke.app/guides/sword</loc>
+    <lastmod>2023-03-15T08:34:49+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://nuzlocke.app/guides/umoon</loc>
-    <lastmod>2022-01-07T17:22:00+00:00</lastmod>
-    <priority>0.90</priority>
+    <loc>https://nuzlocke.app/guides/shield</loc>
+    <lastmod>2023-03-15T08:34:49+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://nuzlocke.app/guides/ultra-sun</loc>
+    <lastmod>2023-03-15T08:34:49+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://nuzlocke.app/guides/ultra-moon</loc>
+    <lastmod>2023-03-15T08:34:49+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
     <loc>https://nuzlocke.app/guides/sun</loc>
-    <lastmod>2022-01-07T17:22:00+00:00</lastmod>
-    <priority>0.90</priority>
+    <lastmod>2023-03-15T08:34:49+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
     <loc>https://nuzlocke.app/guides/moon</loc>
-    <lastmod>2022-01-07T17:22:00+00:00</lastmod>
-    <priority>0.90</priority>
+    <lastmod>2023-03-15T08:34:49+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
     <loc>https://nuzlocke.app/guides/x</loc>
-    <lastmod>2022-01-07T17:22:00+00:00</lastmod>
-    <priority>0.90</priority>
+    <lastmod>2023-03-15T08:34:49+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
     <loc>https://nuzlocke.app/guides/y</loc>
-    <lastmod>2022-01-07T17:22:00+00:00</lastmod>
-    <priority>0.90</priority>
+    <lastmod>2023-03-15T08:34:49+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://nuzlocke.app/guides/bl2</loc>
-    <lastmod>2022-01-07T17:22:00+00:00</lastmod>
-    <priority>0.90</priority>
+    <loc>https://nuzlocke.app/guides/blaze-black-volt-white-2-redux</loc>
+    <lastmod>2023-03-15T08:34:49+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://nuzlocke.app/guides/wh2</loc>
-    <lastmod>2022-01-07T17:22:00+00:00</lastmod>
-    <priority>0.90</priority>
+    <loc>https://nuzlocke.app/guides/blaze-black-volt-white-2-redux-challenge</loc>
+    <lastmod>2023-03-15T08:34:49+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://nuzlocke.app/guides/bl2c</loc>
-    <lastmod>2022-01-07T17:22:00+00:00</lastmod>
-    <priority>0.90</priority>
+    <loc>https://nuzlocke.app/guides/black-2</loc>
+    <lastmod>2023-03-15T08:34:49+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://nuzlocke.app/guides/wh2c</loc>
-    <lastmod>2022-01-07T17:22:00+00:00</lastmod>
-    <priority>0.90</priority>
+    <loc>https://nuzlocke.app/guides/white-2</loc>
+    <lastmod>2023-03-15T08:34:49+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://nuzlocke.app/guides/bl</loc>
-    <lastmod>2022-01-07T17:22:00+00:00</lastmod>
-    <priority>0.90</priority>
+    <loc>https://nuzlocke.app/guides/black-2-challenge</loc>
+    <lastmod>2023-03-15T08:34:49+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://nuzlocke.app/guides/wh</loc>
-    <lastmod>2022-01-07T17:22:00+00:00</lastmod>
-    <priority>0.90</priority>
+    <loc>https://nuzlocke.app/guides/white-2-challenge</loc>
+    <lastmod>2023-03-15T08:34:49+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://nuzlocke.app/guides/bd</loc>
-    <lastmod>2022-01-07T17:22:00+00:00</lastmod>
-    <priority>0.90</priority>
+    <loc>https://nuzlocke.app/guides/black</loc>
+    <lastmod>2023-03-15T08:34:49+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://nuzlocke.app/guides/sp</loc>
-    <lastmod>2022-01-07T17:22:00+00:00</lastmod>
-    <priority>0.90</priority>
+    <loc>https://nuzlocke.app/guides/white</loc>
+    <lastmod>2023-03-15T08:34:49+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://nuzlocke.app/guides/radred</loc>
-    <lastmod>2022-01-07T17:22:00+00:00</lastmod>
-    <priority>0.90</priority>
+    <loc>https://nuzlocke.app/guides/brilliant-diamond</loc>
+    <lastmod>2023-03-15T08:34:49+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://nuzlocke.app/guides/renplat</loc>
-    <lastmod>2022-01-07T17:22:00+00:00</lastmod>
-    <priority>0.90</priority>
+    <loc>https://nuzlocke.app/guides/shining-pearl</loc>
+    <lastmod>2023-03-15T08:34:49+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://nuzlocke.app/guides/pt</loc>
-    <lastmod>2022-01-07T17:22:00+00:00</lastmod>
-    <priority>0.90</priority>
+    <loc>https://nuzlocke.app/guides/radical-red</loc>
+    <lastmod>2023-03-15T08:34:49+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://nuzlocke.app/guides/d</loc>
-    <lastmod>2022-01-07T17:22:00+00:00</lastmod>
-    <priority>0.90</priority>
+    <loc>https://nuzlocke.app/guides/renegade-platinum</loc>
+    <lastmod>2023-03-15T08:34:49+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://nuzlocke.app/guides/p</loc>
-    <lastmod>2022-01-07T17:22:00+00:00</lastmod>
-    <priority>0.90</priority>
+    <loc>https://nuzlocke.app/guides/platinum</loc>
+    <lastmod>2023-03-15T08:34:49+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://nuzlocke.app/guides/or</loc>
-    <lastmod>2022-01-07T17:22:00+00:00</lastmod>
-    <priority>0.90</priority>
+    <loc>https://nuzlocke.app/guides/diamond</loc>
+    <lastmod>2023-03-15T08:34:49+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://nuzlocke.app/guides/as</loc>
-    <lastmod>2022-01-07T17:22:00+00:00</lastmod>
-    <priority>0.90</priority>
+    <loc>https://nuzlocke.app/guides/pearl</loc>
+    <lastmod>2023-03-15T08:34:49+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://nuzlocke.app/guides/em</loc>
-    <lastmod>2022-01-07T17:22:00+00:00</lastmod>
-    <priority>0.90</priority>
+    <loc>https://nuzlocke.app/guides/omega-ruby</loc>
+    <lastmod>2023-03-15T08:34:49+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://nuzlocke.app/guides/incem</loc>
-    <lastmod>2022-01-07T17:22:00+00:00</lastmod>
-    <priority>0.90</priority>
+    <loc>https://nuzlocke.app/guides/alpha-sapphire</loc>
+    <lastmod>2023-03-15T08:34:49+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://nuzlocke.app/guides/emerald</loc>
+    <lastmod>2023-03-15T08:34:49+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://nuzlocke.app/guides/inclement-emerald</loc>
+    <lastmod>2023-03-15T08:34:49+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
     <loc>https://nuzlocke.app/guides/ruby</loc>
-    <lastmod>2022-01-07T17:22:00+00:00</lastmod>
-    <priority>0.90</priority>
+    <lastmod>2023-03-15T08:34:49+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://nuzlocke.app/guides/saph</loc>
-    <lastmod>2022-01-07T17:22:00+00:00</lastmod>
-    <priority>0.90</priority>
+    <loc>https://nuzlocke.app/guides/sapphire</loc>
+    <lastmod>2023-03-15T08:34:49+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://nuzlocke.app/guides/hg</loc>
-    <lastmod>2022-01-07T17:22:00+00:00</lastmod>
-    <priority>0.90</priority>
+    <loc>https://nuzlocke.app/guides/storm-silver</loc>
+    <lastmod>2023-03-15T08:34:49+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://nuzlocke.app/guides/ss</loc>
-    <lastmod>2022-01-07T17:22:00+00:00</lastmod>
-    <priority>0.90</priority>
+    <loc>https://nuzlocke.app/guides/sacred-gold</loc>
+    <lastmod>2023-03-15T08:34:49+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://nuzlocke.app/guides/heart-gold</loc>
+    <lastmod>2023-03-15T08:34:49+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://nuzlocke.app/guides/soul-silver</loc>
+    <lastmod>2023-03-15T08:34:49+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
     <loc>https://nuzlocke.app/guides/gold</loc>
-    <lastmod>2022-01-07T17:22:00+00:00</lastmod>
-    <priority>0.90</priority>
+    <lastmod>2023-03-15T08:34:49+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://nuzlocke.app/guides/silv</loc>
-    <lastmod>2022-01-07T17:22:00+00:00</lastmod>
-    <priority>0.90</priority>
+    <loc>https://nuzlocke.app/guides/silver</loc>
+    <lastmod>2023-03-15T08:34:49+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://nuzlocke.app/guides/crys</loc>
-    <lastmod>2022-01-07T17:22:00+00:00</lastmod>
-    <priority>0.90</priority>
+    <loc>https://nuzlocke.app/guides/crystal</loc>
+    <lastmod>2023-03-15T08:34:49+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://nuzlocke.app/guides/lg</loc>
-    <lastmod>2022-01-07T17:22:00+00:00</lastmod>
-    <priority>0.90</priority>
+    <loc>https://nuzlocke.app/guides/fire-red</loc>
+    <lastmod>2023-03-15T08:34:49+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://nuzlocke.app/guides/yel</loc>
-    <lastmod>2022-01-07T17:22:00+00:00</lastmod>
-    <priority>0.90</priority>
+    <loc>https://nuzlocke.app/guides/leaf-green</loc>
+    <lastmod>2023-03-15T08:34:49+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://nuzlocke.app/guides/yellow</loc>
+    <lastmod>2023-03-15T08:34:49+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
     <loc>https://nuzlocke.app/guides/red</loc>
-    <lastmod>2022-01-07T17:22:00+00:00</lastmod>
-    <priority>0.90</priority>
+    <lastmod>2023-03-15T08:34:49+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
     <loc>https://nuzlocke.app/guides/blue</loc>
-    <lastmod>2022-01-07T17:22:00+00:00</lastmod>
-    <priority>0.90</priority>
+    <lastmod>2023-03-15T08:34:49+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
+
 
 </urlset>
