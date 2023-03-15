@@ -22,6 +22,11 @@ export const UNOWN = rewrite
 
 export const createImgUrl = (p, { ext = 'webp', shiny = false } = {}) => {
   if (p.imgUrl) return `${CUSTOM}${p.imgUrl}.${ext}`
-  if (shiny) return `${SPRITE}/shiny/${p.imgId || p.sprite}.${ext}`
-  return `${SPRITE}/${p.imgId || p.sprite}.${ext}`
+
+  const normalId = ('' + (p.imgId || p.sprite))
+    .replace('.png', '')
+    .replace('.webp', '')
+
+  if (shiny) return `${SPRITE}/shiny/${normalId}.${ext}`
+  return `${SPRITE}/${normalId}.${ext}`
 }
