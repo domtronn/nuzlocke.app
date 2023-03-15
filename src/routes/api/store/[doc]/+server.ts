@@ -41,8 +41,8 @@ const process = async (
   data: IGames | ISave,
   docType: EDocType
 ): Promise<void> => {
-  if (docType === EDocType.game) processGame(data)
-  if (docType === EDocType.save) processSave(data)
+  if (docType === EDocType.game) await processGame(data)
+  if (docType === EDocType.save) await processSave(data)
 } 
 
 export async function POST ({ request, params }) {
