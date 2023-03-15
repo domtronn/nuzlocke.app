@@ -69,7 +69,6 @@
         ...game,
         updated: +new Date()
       }))
-      console.log(game)
     })($savedGames)
   })
 

@@ -17,6 +17,7 @@ export const readdata = (_) => {
 };
 
 export const IDS = {
+  user: 'nuzlocke.user',
   theme: 'nuzlocke.theme',
   active: 'nuzlocke',
   saves: 'nuzlocke.saves',
@@ -59,6 +60,15 @@ export const deleteGame = (id) => {
       .join(',');
   });
 };
+
+export const createUser =
+  () => {
+    if (!browser) return;
+    localStorage.setItem(
+      IDS.user,
+      localStorage.getItem(IDS.user) || uuid()
+    )
+  }
 
 export const createGame =
   (name, game, initData = '{}') =>
