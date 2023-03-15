@@ -39,6 +39,7 @@
     "@smogon/calc": "^0.6.0",
     "clean-css": "^5.2.2",
     "dayjs": "^1.10.7",
+    "firebase": "^9.17.2",
     "pokedex-promise-v2": "^3.3.2",
     "pokemon-assets": "^0.6.0",
     "prettier": "^2.3.2",
@@ -50,7 +51,8 @@
     "svelte-portal": "^2.1.2",
     "svelte-simple-modal": "^1.1.1",
     "tinyurl": "^1.1.7",
-    "tippy.js": "^6.3.7"
+    "tippy.js": "^6.3.7",
+    "zod": "^3.21.4"
   },
   "prettier": {
     "arrowParens": "always",
