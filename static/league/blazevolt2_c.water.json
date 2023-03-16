@@ -25,12 +25,6 @@
           "name": "Contrary",
           "effect": "Inverts stat changes."
         },
-        "abilities": [
-          {
-            "name": "Contrary",
-            "effect": "Inverts stat changes."
-          }
-        ],
         "starter": "water",
         "sprite": "495",
         "types": [
@@ -86,12 +80,6 @@
           "name": "Early Bird",
           "effect": "Makes sleep pass twice as quickly."
         },
-        "abilities": [
-          {
-            "name": "Early Bird",
-            "effect": "Makes sleep pass twice as quickly."
-          }
-        ],
         "sprite": "276",
         "types": [
           "normal",
@@ -141,12 +129,6 @@
           "name": "Contrary",
           "effect": "Inverts stat changes."
         },
-        "abilities": [
-          {
-            "name": "Contrary",
-            "effect": "Inverts stat changes."
-          }
-        ],
         "held": {
           "sprite": "oran-berry",
           "name": "Oran Berry",
@@ -200,12 +182,6 @@
           "name": "Torrent",
           "effect": "Strengthens water moves to inflict 1.5× damage at 1/3 max HP or less."
         },
-        "abilities": [
-          {
-            "name": "Torrent",
-            "effect": "Strengthens water moves to inflict 1.5× damage at 1/3 max HP or less."
-          }
-        ],
         "starter": "water",
         "sprite": "515",
         "types": [
@@ -264,12 +240,6 @@
           "name": "Battle Armor",
           "effect": "Protects against critical hits."
         },
-        "abilities": [
-          {
-            "name": "Battle Armor",
-            "effect": "Protects against critical hits."
-          }
-        ],
         "held": {
           "sprite": "metronome",
           "name": "Metronome",
@@ -324,12 +294,6 @@
           "name": "Suction Cups",
           "effect": "Prevents being forced out of battle by other Pokémon's moves."
         },
-        "abilities": [
-          {
-            "name": "Suction Cups",
-            "effect": "Prevents being forced out of battle by other Pokémon's moves."
-          }
-        ],
         "held": {
           "sprite": "absorb-bulb",
           "name": "Absorb Bulb",
@@ -385,12 +349,6 @@
           "name": "Magnet Pull",
           "effect": "Prevents steel opponents from fleeing or switching out."
         },
-        "abilities": [
-          {
-            "name": "Magnet Pull",
-            "effect": "Prevents steel opponents from fleeing or switching out."
-          }
-        ],
         "held": {
           "sprite": "chesto-berry",
           "name": "Chesto Berry",
@@ -445,12 +403,6 @@
           "name": "Defeatist",
           "effect": "Halves Attack and Special Attack at 50% max HP or less."
         },
-        "abilities": [
-          {
-            "name": "Defeatist",
-            "effect": "Halves Attack and Special Attack at 50% max HP or less."
-          }
-        ],
         "held": {
           "sprite": "cell-battery",
           "name": "Cell Battery",
@@ -513,12 +465,6 @@
           "name": "Trace",
           "effect": "Copies an opponent's ability upon entering battle."
         },
-        "abilities": [
-          {
-            "name": "Trace",
-            "effect": "Copies an opponent's ability upon entering battle."
-          }
-        ],
         "held": {
           "sprite": "enigma-berry",
           "name": "Enigma Berry",
@@ -573,12 +519,6 @@
           "name": "Vital Spirit",
           "effect": "Prevents sleep."
         },
-        "abilities": [
-          {
-            "name": "Vital Spirit",
-            "effect": "Prevents sleep."
-          }
-        ],
         "held": {
           "sprite": "muscle-band",
           "name": "Muscle Band",
@@ -633,12 +573,6 @@
           "name": "Early Bird",
           "effect": "Makes sleep pass twice as quickly."
         },
-        "abilities": [
-          {
-            "name": "Early Bird",
-            "effect": "Makes sleep pass twice as quickly."
-          }
-        ],
         "held": {
           "sprite": "silk-scarf",
           "name": "Silk Scarf",
@@ -695,12 +629,6 @@
           "name": "Skill Link",
           "effect": "Extends two-to-five-hit moves and triple kick to their full length every time."
         },
-        "abilities": [
-          {
-            "name": "Skill Link",
-            "effect": "Extends two-to-five-hit moves and triple kick to their full length every time."
-          }
-        ],
         "held": {
           "sprite": "water-gem",
           "name": "Water Gem",
@@ -754,12 +682,6 @@
           "name": "Sap Sipper",
           "effect": "Absorbs grass moves, raising Attack one stage."
         },
-        "abilities": [
-          {
-            "name": "Sap Sipper",
-            "effect": "Absorbs grass moves, raising Attack one stage."
-          }
-        ],
         "held": {
           "sprite": "occa-berry",
           "name": "Occa Berry",
@@ -814,12 +736,6 @@
           "name": "Thick Fat",
           "effect": "Halves damage from fire and ice moves."
         },
-        "abilities": [
-          {
-            "name": "Thick Fat",
-            "effect": "Halves damage from fire and ice moves."
-          }
-        ],
         "held": {
           "sprite": "oran-berry",
           "name": "Oran Berry",
@@ -881,12 +797,6 @@
           "name": "Blaze",
           "effect": "Strengthens fire moves to inflict 1.5× damage at 1/3 max HP or less."
         },
-        "abilities": [
-          {
-            "name": "Blaze",
-            "effect": "Strengthens fire moves to inflict 1.5× damage at 1/3 max HP or less."
-          }
-        ],
         "held": {
           "sprite": "focus-sash",
           "name": "Focus Sash",
@@ -943,12 +853,6 @@
           "name": "Pure Power",
           "effect": "Doubles Attack in battle."
         },
-        "abilities": [
-          {
-            "name": "Pure Power",
-            "effect": "Doubles Attack in battle."
-          }
-        ],
         "held": {
           "sprite": "coba-berry",
           "name": "Coba Berry",
@@ -1004,12 +908,6 @@
           "name": "No Guard",
           "effect": "Ensures all moves used by and against the Pokémon hit."
         },
-        "abilities": [
-          {
-            "name": "No Guard",
-            "effect": "Ensures all moves used by and against the Pokémon hit."
-          }
-        ],
         "held": {
           "sprite": "cheri-berry",
           "name": "Cheri Berry",
@@ -1064,12 +962,6 @@
           "name": "Sturdy",
           "effect": "Prevents being KOed from full HP, leaving 1 HP instead.  Protects against the one-hit KO moves regardless of HP."
         },
-        "abilities": [
-          {
-            "name": "Sturdy",
-            "effect": "Prevents being KOed from full HP, leaving 1 HP instead.  Protects against the one-hit KO moves regardless of HP."
-          }
-        ],
         "held": {
           "sprite": "salac-berry",
           "name": "Salac Berry",
@@ -1125,12 +1017,6 @@
           "name": "Sheer Force",
           "effect": "Strengthens moves with extra effects to 1.3× their power, but prevents their extra effects."
         },
-        "abilities": [
-          {
-            "name": "Sheer Force",
-            "effect": "Strengthens moves with extra effects to 1.3× their power, but prevents their extra effects."
-          }
-        ],
         "held": {
           "sprite": "berry-juice",
           "name": "Berry Juice",
@@ -1192,12 +1078,6 @@
           "name": "Aftermath",
           "effect": "Damages the attacker for 1/4 its max HP when knocked out by a contact move."
         },
-        "abilities": [
-          {
-            "name": "Aftermath",
-            "effect": "Damages the attacker for 1/4 its max HP when knocked out by a contact move."
-          }
-        ],
         "held": {
           "sprite": "focus-sash",
           "name": "Focus Sash",
@@ -1252,12 +1132,6 @@
           "name": "Levitate",
           "effect": "Evades ground moves."
         },
-        "abilities": [
-          {
-            "name": "Levitate",
-            "effect": "Evades ground moves."
-          }
-        ],
         "held": {
           "sprite": "eviolite",
           "name": "Eviolite",
@@ -1312,12 +1186,6 @@
           "name": "Solar Power",
           "effect": "Increases Special Attack to 1.5× but costs 1/8 max HP after each turn during strong sunlight."
         },
-        "abilities": [
-          {
-            "name": "Solar Power",
-            "effect": "Increases Special Attack to 1.5× but costs 1/8 max HP after each turn during strong sunlight."
-          }
-        ],
         "held": {
           "sprite": "black-sludge",
           "name": "Black Sludge",
@@ -1373,12 +1241,6 @@
           "name": "Intimidate",
           "effect": "Lowers opponents' Attack one stage upon entering battle."
         },
-        "abilities": [
-          {
-            "name": "Intimidate",
-            "effect": "Lowers opponents' Attack one stage upon entering battle."
-          }
-        ],
         "held": {
           "sprite": "muscle-band",
           "name": "Muscle Band",
@@ -1435,12 +1297,6 @@
           "name": "Levitate",
           "effect": "Evades ground moves."
         },
-        "abilities": [
-          {
-            "name": "Levitate",
-            "effect": "Evades ground moves."
-          }
-        ],
         "held": {
           "sprite": "life-orb",
           "name": "Life Orb",
@@ -1496,12 +1352,6 @@
           "name": "Speed Boost",
           "effect": "Raises Speed one stage after each turn."
         },
-        "abilities": [
-          {
-            "name": "Speed Boost",
-            "effect": "Raises Speed one stage after each turn."
-          }
-        ],
         "held": {
           "sprite": "eviolite",
           "name": "Eviolite",
@@ -1565,12 +1415,6 @@
           "name": "Snow Warning",
           "effect": "Summons hail that lasts indefinitely upon entering battle."
         },
-        "abilities": [
-          {
-            "name": "Snow Warning",
-            "effect": "Summons hail that lasts indefinitely upon entering battle."
-          }
-        ],
         "held": {
           "sprite": "occa-berry",
           "name": "Occa Berry",
@@ -1627,12 +1471,6 @@
           "name": "Insomnia",
           "effect": "Prevents sleep."
         },
-        "abilities": [
-          {
-            "name": "Insomnia",
-            "effect": "Prevents sleep."
-          }
-        ],
         "held": {
           "sprite": "charti-berry",
           "name": "Charti Berry",
@@ -1687,12 +1525,6 @@
           "name": "Dry Skin",
           "effect": "Causes 1/8 max HP in damage each turn during strong sunlight, but heals for 1/8 max HP during rain.  Increases damage from fire moves to 1.25×, but absorbs water moves, healing for 1/4 max HP."
         },
-        "abilities": [
-          {
-            "name": "Dry Skin",
-            "effect": "Causes 1/8 max HP in damage each turn during strong sunlight, but heals for 1/8 max HP during rain.  Increases damage from fire moves to 1.25×, but absorbs water moves, healing for 1/4 max HP."
-          }
-        ],
         "held": {
           "sprite": "focus-sash",
           "name": "Focus Sash",
@@ -1748,12 +1580,6 @@
           "name": "Skill Link",
           "effect": "Extends two-to-five-hit moves and triple kick to their full length every time."
         },
-        "abilities": [
-          {
-            "name": "Skill Link",
-            "effect": "Extends two-to-five-hit moves and triple kick to their full length every time."
-          }
-        ],
         "held": {
           "sprite": "mystic-water",
           "name": "Mystic Water",
@@ -1816,12 +1642,6 @@
           "name": "Volt Absorb",
           "effect": "Absorbs electric moves, healing for 1/4 max HP."
         },
-        "abilities": [
-          {
-            "name": "Volt Absorb",
-            "effect": "Absorbs electric moves, healing for 1/4 max HP."
-          }
-        ],
         "held": {
           "sprite": "shuca-berry",
           "name": "Shuca Berry",
@@ -1876,12 +1696,6 @@
           "name": "Levitate",
           "effect": "Evades ground moves."
         },
-        "abilities": [
-          {
-            "name": "Levitate",
-            "effect": "Evades ground moves."
-          }
-        ],
         "held": {
           "sprite": "lagging-tail",
           "name": "Lagging Tail",
@@ -1939,12 +1753,6 @@
           "name": "Sturdy",
           "effect": "Prevents being KOed from full HP, leaving 1 HP instead.  Protects against the one-hit KO moves regardless of HP."
         },
-        "abilities": [
-          {
-            "name": "Sturdy",
-            "effect": "Prevents being KOed from full HP, leaving 1 HP instead.  Protects against the one-hit KO moves regardless of HP."
-          }
-        ],
         "held": {
           "sprite": "eviolite",
           "name": "Eviolite",
@@ -2001,12 +1809,6 @@
           "name": "Static",
           "effect": "Has a 30% chance of paralyzing attacking Pokémon on contact."
         },
-        "abilities": [
-          {
-            "name": "Static",
-            "effect": "Has a 30% chance of paralyzing attacking Pokémon on contact."
-          }
-        ],
         "held": {
           "sprite": "life-orb",
           "name": "Life Orb",
@@ -2062,12 +1864,6 @@
           "name": "Intimidate",
           "effect": "Lowers opponents' Attack one stage upon entering battle."
         },
-        "abilities": [
-          {
-            "name": "Intimidate",
-            "effect": "Lowers opponents' Attack one stage upon entering battle."
-          }
-        ],
         "held": {
           "sprite": "air-balloon",
           "name": "Air Balloon",
@@ -2123,12 +1919,6 @@
           "name": "Tinted Lens",
           "effect": "Doubles damage inflicted with not-very-effective moves."
         },
-        "abilities": [
-          {
-            "name": "Tinted Lens",
-            "effect": "Doubles damage inflicted with not-very-effective moves."
-          }
-        ],
         "held": {
           "sprite": "charti-berry",
           "name": "Charti Berry",
@@ -2192,12 +1982,6 @@
           "name": "Tinted Lens",
           "effect": "Doubles damage inflicted with not-very-effective moves."
         },
-        "abilities": [
-          {
-            "name": "Tinted Lens",
-            "effect": "Doubles damage inflicted with not-very-effective moves."
-          }
-        ],
         "held": {
           "sprite": "bug-gem",
           "name": "Bug Gem",
@@ -2254,12 +2038,6 @@
           "name": "Intimidate",
           "effect": "Lowers opponents' Attack one stage upon entering battle."
         },
-        "abilities": [
-          {
-            "name": "Intimidate",
-            "effect": "Lowers opponents' Attack one stage upon entering battle."
-          }
-        ],
         "held": {
           "sprite": "absorb-bulb",
           "name": "Absorb Bulb",
@@ -2315,12 +2093,6 @@
           "name": "Technician",
           "effect": "Strengthens moves of 60 base power or less to 1.5× their power."
         },
-        "abilities": [
-          {
-            "name": "Technician",
-            "effect": "Strengthens moves of 60 base power or less to 1.5× their power."
-          }
-        ],
         "held": {
           "sprite": "lum-berry",
           "name": "Lum Berry",
@@ -2378,12 +2150,6 @@
           "name": "Intimidate",
           "effect": "Lowers opponents' Attack one stage upon entering battle."
         },
-        "abilities": [
-          {
-            "name": "Intimidate",
-            "effect": "Lowers opponents' Attack one stage upon entering battle."
-          }
-        ],
         "held": {
           "sprite": "wacan-berry",
           "name": "Wacan Berry",
@@ -2440,12 +2206,6 @@
           "name": "Heatproof",
           "effect": "Halves damage from fire moves and burns."
         },
-        "abilities": [
-          {
-            "name": "Heatproof",
-            "effect": "Halves damage from fire moves and burns."
-          }
-        ],
         "held": {
           "sprite": "muscle-band",
           "name": "Muscle Band",
@@ -2501,12 +2261,6 @@
           "name": "Swarm",
           "effect": "Strengthens bug moves to inflict 1.5× damage at 1/3 max HP or less."
         },
-        "abilities": [
-          {
-            "name": "Swarm",
-            "effect": "Strengthens bug moves to inflict 1.5× damage at 1/3 max HP or less."
-          }
-        ],
         "held": {
           "sprite": "focus-sash",
           "name": "Focus Sash",
@@ -2569,12 +2323,6 @@
           "name": "Sturdy",
           "effect": "Prevents being KOed from full HP, leaving 1 HP instead.  Protects against the one-hit KO moves regardless of HP."
         },
-        "abilities": [
-          {
-            "name": "Sturdy",
-            "effect": "Prevents being KOed from full HP, leaving 1 HP instead.  Protects against the one-hit KO moves regardless of HP."
-          }
-        ],
         "held": {
           "sprite": "air-balloon",
           "name": "Air Balloon",
@@ -2631,12 +2379,6 @@
           "name": "Motor Drive",
           "effect": "Absorbs electric moves, raising Speed one stage."
         },
-        "abilities": [
-          {
-            "name": "Motor Drive",
-            "effect": "Absorbs electric moves, raising Speed one stage."
-          }
-        ],
         "held": {
           "sprite": "wise-glasses",
           "name": "Wise Glasses",
@@ -2693,12 +2435,6 @@
           "name": "Levitate",
           "effect": "Evades ground moves."
         },
-        "abilities": [
-          {
-            "name": "Levitate",
-            "effect": "Evades ground moves."
-          }
-        ],
         "held": {
           "sprite": "life-orb",
           "name": "Life Orb",
@@ -2754,12 +2490,6 @@
           "name": "Clear Body",
           "effect": "Prevents stats from being lowered by other Pokémon."
         },
-        "abilities": [
-          {
-            "name": "Clear Body",
-            "effect": "Prevents stats from being lowered by other Pokémon."
-          }
-        ],
         "held": {
           "sprite": "occa-berry",
           "name": "Occa Berry",
@@ -2815,12 +2545,6 @@
           "name": "Trace",
           "effect": "Copies an opponent's ability upon entering battle."
         },
-        "abilities": [
-          {
-            "name": "Trace",
-            "effect": "Copies an opponent's ability upon entering battle."
-          }
-        ],
         "held": {
           "sprite": "eviolite",
           "name": "Eviolite",
@@ -2880,12 +2604,6 @@
           "name": "Sand Stream",
           "effect": "Summons a sandstorm that lasts indefinitely upon entering battle."
         },
-        "abilities": [
-          {
-            "name": "Sand Stream",
-            "effect": "Summons a sandstorm that lasts indefinitely upon entering battle."
-          }
-        ],
         "held": {
           "sprite": "wide-lens",
           "name": "Wide Lens",
@@ -2940,12 +2658,6 @@
           "name": "Sand Rush",
           "effect": "Doubles Speed during a sandstorm.  Protects against sandstorm damage."
         },
-        "abilities": [
-          {
-            "name": "Sand Rush",
-            "effect": "Doubles Speed during a sandstorm.  Protects against sandstorm damage."
-          }
-        ],
         "held": {
           "sprite": "leftovers",
           "name": "Leftovers",
@@ -3001,12 +2713,6 @@
           "name": "No Guard",
           "effect": "Ensures all moves used by and against the Pokémon hit."
         },
-        "abilities": [
-          {
-            "name": "No Guard",
-            "effect": "Ensures all moves used by and against the Pokémon hit."
-          }
-        ],
         "held": {
           "sprite": "sitrus-berry",
           "name": "Sitrus Berry",
@@ -3060,12 +2766,6 @@
           "name": "Unaware",
           "effect": "Ignores other Pokémon's stat modifiers for damage and accuracy calculation."
         },
-        "abilities": [
-          {
-            "name": "Unaware",
-            "effect": "Ignores other Pokémon's stat modifiers for damage and accuracy calculation."
-          }
-        ],
         "held": {
           "sprite": "normal-gem",
           "name": "Normal Gem",
@@ -3128,12 +2828,6 @@
           "name": "Levitate",
           "effect": "Evades ground moves."
         },
-        "abilities": [
-          {
-            "name": "Levitate",
-            "effect": "Evades ground moves."
-          }
-        ],
         "held": {
           "sprite": "magnet",
           "name": "Magnet",
@@ -3188,12 +2882,6 @@
           "name": "Flash Fire",
           "effect": "Protects against fire moves.  Once one has been blocked, the Pokémon's own Fire moves inflict 1.5× damage until it leaves battle."
         },
-        "abilities": [
-          {
-            "name": "Flash Fire",
-            "effect": "Protects against fire moves.  Once one has been blocked, the Pokémon's own Fire moves inflict 1.5× damage until it leaves battle."
-          }
-        ],
         "held": {
           "sprite": "charcoal",
           "name": "Charcoal",
@@ -3249,12 +2937,6 @@
           "name": "Synchronize",
           "effect": "Copies burns, paralysis, and poison received onto the Pokémon that inflicted them."
         },
-        "abilities": [
-          {
-            "name": "Synchronize",
-            "effect": "Copies burns, paralysis, and poison received onto the Pokémon that inflicted them."
-          }
-        ],
         "held": {
           "sprite": "leftovers",
           "name": "Leftovers",
@@ -3309,12 +2991,6 @@
           "name": "Magic Bounce",
           "effect": "Reflects most non-damaging moves back at their user."
         },
-        "abilities": [
-          {
-            "name": "Magic Bounce",
-            "effect": "Reflects most non-damaging moves back at their user."
-          }
-        ],
         "held": {
           "sprite": "psychic-gem",
           "name": "Psychic Gem",
@@ -3375,12 +3051,6 @@
           "name": "Sheer Force",
           "effect": "Strengthens moves with extra effects to 1.3× their power, but prevents their extra effects."
         },
-        "abilities": [
-          {
-            "name": "Sheer Force",
-            "effect": "Strengthens moves with extra effects to 1.3× their power, but prevents their extra effects."
-          }
-        ],
         "held": {
           "sprite": "sitrus-berry",
           "name": "Sitrus Berry",
@@ -3436,12 +3106,6 @@
           "name": "Gluttony",
           "effect": "Makes the Pokémon eat any held Berry triggered by low HP below 1/2 its max HP."
         },
-        "abilities": [
-          {
-            "name": "Gluttony",
-            "effect": "Makes the Pokémon eat any held Berry triggered by low HP below 1/2 its max HP."
-          }
-        ],
         "held": {
           "sprite": "sitrus-berry",
           "name": "Sitrus Berry",
@@ -3507,12 +3171,6 @@
           "name": "Drought",
           "effect": "Summons strong sunlight that lasts indefinitely upon entering battle."
         },
-        "abilities": [
-          {
-            "name": "Drought",
-            "effect": "Summons strong sunlight that lasts indefinitely upon entering battle."
-          }
-        ],
         "held": {
           "sprite": "white-herb",
           "name": "White Herb",
@@ -3567,12 +3225,6 @@
           "name": "Flame Body",
           "effect": "Has a 30% chance of burning attacking Pokémon on contact."
         },
-        "abilities": [
-          {
-            "name": "Flame Body",
-            "effect": "Has a 30% chance of burning attacking Pokémon on contact."
-          }
-        ],
         "held": {
           "sprite": "white-herb",
           "name": "White Herb",
@@ -3628,12 +3280,6 @@
           "name": "Intimidate",
           "effect": "Lowers opponents' Attack one stage upon entering battle."
         },
-        "abilities": [
-          {
-            "name": "Intimidate",
-            "effect": "Lowers opponents' Attack one stage upon entering battle."
-          }
-        ],
         "held": {
           "sprite": "white-herb",
           "name": "White Herb",
@@ -3689,12 +3335,6 @@
           "name": "Levitate",
           "effect": "Evades ground moves."
         },
-        "abilities": [
-          {
-            "name": "Levitate",
-            "effect": "Evades ground moves."
-          }
-        ],
         "held": {
           "sprite": "white-herb",
           "name": "White Herb",
@@ -3751,12 +3391,6 @@
           "name": "Simple",
           "effect": "Doubles the Pokémon's stat modifiers.  These doubled modifiers are still capped at -6 or 6 stages."
         },
-        "abilities": [
-          {
-            "name": "Simple",
-            "effect": "Doubles the Pokémon's stat modifiers.  These doubled modifiers are still capped at -6 or 6 stages."
-          }
-        ],
         "held": {
           "sprite": "white-herb",
           "name": "White Herb",
@@ -3813,12 +3447,6 @@
           "name": "Solid Rock",
           "effect": "Decreases damage taken from super-effective moves by 1/4."
         },
-        "abilities": [
-          {
-            "name": "Solid Rock",
-            "effect": "Decreases damage taken from super-effective moves by 1/4."
-          }
-        ],
         "held": {
           "sprite": "white-herb",
           "name": "White Herb",
@@ -3881,12 +3509,6 @@
           "name": "Motor Drive",
           "effect": "Absorbs electric moves, raising Speed one stage."
         },
-        "abilities": [
-          {
-            "name": "Motor Drive",
-            "effect": "Absorbs electric moves, raising Speed one stage."
-          }
-        ],
         "held": {
           "sprite": "focus-sash",
           "name": "Focus Sash",
@@ -3942,12 +3564,6 @@
           "name": "Volt Absorb",
           "effect": "Absorbs electric moves, healing for 1/4 max HP."
         },
-        "abilities": [
-          {
-            "name": "Volt Absorb",
-            "effect": "Absorbs electric moves, healing for 1/4 max HP."
-          }
-        ],
         "held": {
           "sprite": "rindo-berry",
           "name": "Rindo Berry",
@@ -4004,12 +3620,6 @@
           "name": "Motor Drive",
           "effect": "Absorbs electric moves, raising Speed one stage."
         },
-        "abilities": [
-          {
-            "name": "Motor Drive",
-            "effect": "Absorbs electric moves, raising Speed one stage."
-          }
-        ],
         "held": {
           "sprite": "shuca-berry",
           "name": "Shuca Berry",
@@ -4065,12 +3675,6 @@
           "name": "Lightning Rod",
           "effect": "Redirects single-target electric moves to this Pokémon where possible.  Absorbs Electric moves, raising Special Attack one stage."
         },
-        "abilities": [
-          {
-            "name": "Lightning Rod",
-            "effect": "Redirects single-target electric moves to this Pokémon where possible.  Absorbs Electric moves, raising Special Attack one stage."
-          }
-        ],
         "held": {
           "sprite": "air-balloon",
           "name": "Air Balloon",
@@ -4126,12 +3730,6 @@
           "name": "Lightning Rod",
           "effect": "Redirects single-target electric moves to this Pokémon where possible.  Absorbs Electric moves, raising Special Attack one stage."
         },
-        "abilities": [
-          {
-            "name": "Lightning Rod",
-            "effect": "Redirects single-target electric moves to this Pokémon where possible.  Absorbs Electric moves, raising Special Attack one stage."
-          }
-        ],
         "held": {
           "sprite": "sitrus-berry",
           "name": "Sitrus Berry",
@@ -4187,12 +3785,6 @@
           "name": "Motor Drive",
           "effect": "Absorbs electric moves, raising Speed one stage."
         },
-        "abilities": [
-          {
-            "name": "Motor Drive",
-            "effect": "Absorbs electric moves, raising Speed one stage."
-          }
-        ],
         "held": {
           "sprite": "life-orb",
           "name": "Life Orb",
@@ -4254,12 +3846,6 @@
           "name": "Infiltrator",
           "effect": "Bypasses light screen, reflect, and safeguard."
         },
-        "abilities": [
-          {
-            "name": "Infiltrator",
-            "effect": "Bypasses light screen, reflect, and safeguard."
-          }
-        ],
         "held": {
           "sprite": "charti-berry",
           "name": "Charti Berry",
@@ -4314,12 +3900,6 @@
           "name": "Tinted Lens",
           "effect": "Doubles damage inflicted with not-very-effective moves."
         },
-        "abilities": [
-          {
-            "name": "Tinted Lens",
-            "effect": "Doubles damage inflicted with not-very-effective moves."
-          }
-        ],
         "held": {
           "sprite": "twisted-spoon",
           "name": "Twisted Spoon",
@@ -4375,12 +3955,6 @@
           "name": "Intimidate",
           "effect": "Lowers opponents' Attack one stage upon entering battle."
         },
-        "abilities": [
-          {
-            "name": "Intimidate",
-            "effect": "Lowers opponents' Attack one stage upon entering battle."
-          }
-        ],
         "held": {
           "sprite": "rocky-helmet",
           "name": "Rocky Helmet",
@@ -4436,12 +4010,6 @@
           "name": "Sheer Force",
           "effect": "Strengthens moves with extra effects to 1.3× their power, but prevents their extra effects."
         },
-        "abilities": [
-          {
-            "name": "Sheer Force",
-            "effect": "Strengthens moves with extra effects to 1.3× their power, but prevents their extra effects."
-          }
-        ],
         "held": {
           "sprite": "life-orb",
           "name": "Life Orb",
@@ -4495,12 +4063,6 @@
           "name": "Reckless",
           "effect": "Strengthens recoil moves to 1.2× their power."
         },
-        "abilities": [
-          {
-            "name": "Reckless",
-            "effect": "Strengthens recoil moves to 1.2× their power."
-          }
-        ],
         "held": {
           "sprite": "sitrus-berry",
           "name": "Sitrus Berry",
@@ -4555,12 +4117,6 @@
           "name": "Sturdy",
           "effect": "Prevents being KOed from full HP, leaving 1 HP instead.  Protects against the one-hit KO moves regardless of HP."
         },
-        "abilities": [
-          {
-            "name": "Sturdy",
-            "effect": "Prevents being KOed from full HP, leaving 1 HP instead.  Protects against the one-hit KO moves regardless of HP."
-          }
-        ],
         "held": {
           "sprite": "custap-berry",
           "name": "Custap Berry",
@@ -4624,12 +4180,6 @@
           "name": "Reckless",
           "effect": "Strengthens recoil moves to 1.2× their power."
         },
-        "abilities": [
-          {
-            "name": "Reckless",
-            "effect": "Strengthens recoil moves to 1.2× their power."
-          }
-        ],
         "held": {
           "sprite": "chople-berry",
           "name": "Chople Berry",
@@ -4685,12 +4235,6 @@
           "name": "Illusion",
           "effect": "Takes the appearance of the last conscious party Pokémon upon being sent out until hit by a damaging move."
         },
-        "abilities": [
-          {
-            "name": "Illusion",
-            "effect": "Takes the appearance of the last conscious party Pokémon upon being sent out until hit by a damaging move."
-          }
-        ],
         "held": {
           "sprite": "focus-sash",
           "name": "Focus Sash",
@@ -4745,12 +4289,6 @@
           "name": "Simple",
           "effect": "Doubles the Pokémon's stat modifiers.  These doubled modifiers are still capped at -6 or 6 stages."
         },
-        "abilities": [
-          {
-            "name": "Simple",
-            "effect": "Doubles the Pokémon's stat modifiers.  These doubled modifiers are still capped at -6 or 6 stages."
-          }
-        ],
         "held": {
           "sprite": "sitrus-berry",
           "name": "Sitrus Berry",
@@ -4806,12 +4344,6 @@
           "name": "Intimidate",
           "effect": "Lowers opponents' Attack one stage upon entering battle."
         },
-        "abilities": [
-          {
-            "name": "Intimidate",
-            "effect": "Lowers opponents' Attack one stage upon entering battle."
-          }
-        ],
         "held": {
           "sprite": "life-orb",
           "name": "Life Orb",
@@ -4867,12 +4399,6 @@
           "name": "Flash Fire",
           "effect": "Protects against fire moves.  Once one has been blocked, the Pokémon's own Fire moves inflict 1.5× damage until it leaves battle."
         },
-        "abilities": [
-          {
-            "name": "Flash Fire",
-            "effect": "Protects against fire moves.  Once one has been blocked, the Pokémon's own Fire moves inflict 1.5× damage until it leaves battle."
-          }
-        ],
         "held": {
           "sprite": "passho-berry",
           "name": "Passho Berry",
@@ -4939,12 +4465,6 @@
           "name": "Scrappy",
           "effect": "Lets the Pokémon's normal and fighting moves hit ghost Pokémon."
         },
-        "abilities": [
-          {
-            "name": "Scrappy",
-            "effect": "Lets the Pokémon's normal and fighting moves hit ghost Pokémon."
-          }
-        ],
         "held": {
           "sprite": "chople-berry",
           "name": "Chople Berry",
@@ -4999,12 +4519,6 @@
           "name": "Sheer Force",
           "effect": "Strengthens moves with extra effects to 1.3× their power, but prevents their extra effects."
         },
-        "abilities": [
-          {
-            "name": "Sheer Force",
-            "effect": "Strengthens moves with extra effects to 1.3× their power, but prevents their extra effects."
-          }
-        ],
         "held": {
           "sprite": "life-orb",
           "name": "Life Orb",
@@ -5060,12 +4574,6 @@
           "name": "Cursed Body",
           "effect": "Has a 30% chance of Disabling any move that hits the Pokémon."
         },
-        "abilities": [
-          {
-            "name": "Cursed Body",
-            "effect": "Has a 30% chance of Disabling any move that hits the Pokémon."
-          }
-        ],
         "held": {
           "sprite": "colbur-berry",
           "name": "Colbur Berry",
@@ -5122,12 +4630,6 @@
           "name": "Toxic Boost",
           "effect": "Increases Attack to 1.5× when poisoned."
         },
-        "abilities": [
-          {
-            "name": "Toxic Boost",
-            "effect": "Increases Attack to 1.5× when poisoned."
-          }
-        ],
         "held": {
           "sprite": "toxic-orb",
           "name": "Toxic Orb",
@@ -5183,12 +4685,6 @@
           "name": "Truant",
           "effect": "Skips every second turn."
         },
-        "abilities": [
-          {
-            "name": "Truant",
-            "effect": "Skips every second turn."
-          }
-        ],
         "held": {
           "sprite": "normal-gem",
           "name": "Normal Gem",
@@ -5242,12 +4738,6 @@
           "name": "Gluttony",
           "effect": "Makes the Pokémon eat any held Berry triggered by low HP below 1/2 its max HP."
         },
-        "abilities": [
-          {
-            "name": "Gluttony",
-            "effect": "Makes the Pokémon eat any held Berry triggered by low HP below 1/2 its max HP."
-          }
-        ],
         "held": {
           "sprite": "sitrus-berry",
           "name": "Sitrus Berry",
@@ -5308,12 +4798,6 @@
           "name": "Water Absorb",
           "effect": "Absorbs water moves, healing for 1/4 max HP."
         },
-        "abilities": [
-          {
-            "name": "Water Absorb",
-            "effect": "Absorbs water moves, healing for 1/4 max HP."
-          }
-        ],
         "held": {
           "sprite": "rindo-berry",
           "name": "Rindo Berry",
@@ -5369,12 +4853,6 @@
           "name": "Thick Fat",
           "effect": "Halves damage from fire and ice moves."
         },
-        "abilities": [
-          {
-            "name": "Thick Fat",
-            "effect": "Halves damage from fire and ice moves."
-          }
-        ],
         "held": {
           "sprite": "passho-berry",
           "name": "Passho Berry",
@@ -5430,12 +4908,6 @@
           "name": "Rock Head",
           "effect": "Protects against recoil damage."
         },
-        "abilities": [
-          {
-            "name": "Rock Head",
-            "effect": "Protects against recoil damage."
-          }
-        ],
         "held": {
           "sprite": "white-herb",
           "name": "White Herb",
@@ -5492,12 +4964,6 @@
           "name": "Rough Skin",
           "effect": "Damages attacking Pokémon for 1/8 their max HP on contact."
         },
-        "abilities": [
-          {
-            "name": "Rough Skin",
-            "effect": "Damages attacking Pokémon for 1/8 their max HP on contact."
-          }
-        ],
         "held": {
           "sprite": "yache-berry",
           "name": "Yache Berry",
@@ -5554,12 +5020,6 @@
           "name": "Sheer Force",
           "effect": "Strengthens moves with extra effects to 1.3× their power, but prevents their extra effects."
         },
-        "abilities": [
-          {
-            "name": "Sheer Force",
-            "effect": "Strengthens moves with extra effects to 1.3× their power, but prevents their extra effects."
-          }
-        ],
         "held": {
           "sprite": "life-orb",
           "name": "Life Orb",
@@ -5615,12 +5075,6 @@
           "name": "Sand Rush",
           "effect": "Doubles Speed during a sandstorm.  Protects against sandstorm damage."
         },
-        "abilities": [
-          {
-            "name": "Sand Rush",
-            "effect": "Doubles Speed during a sandstorm.  Protects against sandstorm damage."
-          }
-        ],
         "held": {
           "sprite": "air-balloon",
           "name": "Air Balloon",
@@ -5682,12 +5136,6 @@
           "name": "Analytic",
           "effect": "Strengthens moves to 1.3× their power when moving last."
         },
-        "abilities": [
-          {
-            "name": "Analytic",
-            "effect": "Strengthens moves to 1.3× their power when moving last."
-          }
-        ],
         "held": {
           "sprite": "red-card",
           "name": "Red Card",
@@ -5742,12 +5190,6 @@
           "name": "Magic Bounce",
           "effect": "Reflects most non-damaging moves back at their user."
         },
-        "abilities": [
-          {
-            "name": "Magic Bounce",
-            "effect": "Reflects most non-damaging moves back at their user."
-          }
-        ],
         "held": {
           "sprite": "leftovers",
           "name": "Leftovers",
@@ -5803,12 +5245,6 @@
           "name": "Volt Absorb",
           "effect": "Absorbs electric moves, healing for 1/4 max HP."
         },
-        "abilities": [
-          {
-            "name": "Volt Absorb",
-            "effect": "Absorbs electric moves, healing for 1/4 max HP."
-          }
-        ],
         "held": {
           "sprite": "chople-berry",
           "name": "Chople Berry",
@@ -5864,12 +5300,6 @@
           "name": "Flash Fire",
           "effect": "Protects against fire moves.  Once one has been blocked, the Pokémon's own Fire moves inflict 1.5× damage until it leaves battle."
         },
-        "abilities": [
-          {
-            "name": "Flash Fire",
-            "effect": "Protects against fire moves.  Once one has been blocked, the Pokémon's own Fire moves inflict 1.5× damage until it leaves battle."
-          }
-        ],
         "held": {
           "sprite": "air-balloon",
           "name": "Air Balloon",
@@ -5932,12 +5362,6 @@
           "name": "Scrappy",
           "effect": "Lets the Pokémon's normal and fighting moves hit ghost Pokémon."
         },
-        "abilities": [
-          {
-            "name": "Scrappy",
-            "effect": "Lets the Pokémon's normal and fighting moves hit ghost Pokémon."
-          }
-        ],
         "held": {
           "sprite": "metronome",
           "name": "Metronome",
@@ -5993,12 +5417,6 @@
           "name": "Levitate",
           "effect": "Evades ground moves."
         },
-        "abilities": [
-          {
-            "name": "Levitate",
-            "effect": "Evades ground moves."
-          }
-        ],
         "held": {
           "sprite": "leftovers",
           "name": "Leftovers",
@@ -6052,12 +5470,6 @@
           "name": "Levitate",
           "effect": "Evades ground moves."
         },
-        "abilities": [
-          {
-            "name": "Levitate",
-            "effect": "Evades ground moves."
-          }
-        ],
         "held": {
           "sprite": "life-orb",
           "name": "Life Orb",
@@ -6113,12 +5525,6 @@
           "name": "Simple",
           "effect": "Doubles the Pokémon's stat modifiers.  These doubled modifiers are still capped at -6 or 6 stages."
         },
-        "abilities": [
-          {
-            "name": "Simple",
-            "effect": "Doubles the Pokémon's stat modifiers.  These doubled modifiers are still capped at -6 or 6 stages."
-          }
-        ],
         "held": {
           "sprite": "passho-berry",
           "name": "Passho Berry",
@@ -6173,12 +5579,6 @@
           "name": "Contrary",
           "effect": "Inverts stat changes."
         },
-        "abilities": [
-          {
-            "name": "Contrary",
-            "effect": "Inverts stat changes."
-          }
-        ],
         "held": {
           "sprite": "leftovers",
           "name": "Leftovers",
@@ -6244,12 +5644,6 @@
           "name": "Regenerator",
           "effect": "Heals for 1/3 max HP upon switching out."
         },
-        "abilities": [
-          {
-            "name": "Regenerator",
-            "effect": "Heals for 1/3 max HP upon switching out."
-          }
-        ],
         "held": {
           "sprite": "focus-sash",
           "name": "Focus Sash",
@@ -6302,12 +5696,6 @@
           "name": "Synchronize",
           "effect": "Copies burns, paralysis, and poison received onto the Pokémon that inflicted them."
         },
-        "abilities": [
-          {
-            "name": "Synchronize",
-            "effect": "Copies burns, paralysis, and poison received onto the Pokémon that inflicted them."
-          }
-        ],
         "held": {
           "sprite": "light-clay",
           "name": "Light Clay",
@@ -6363,12 +5751,6 @@
           "name": "Mold Breaker",
           "effect": "Bypasses targets' abilities if they could hinder or prevent a move."
         },
-        "abilities": [
-          {
-            "name": "Mold Breaker",
-            "effect": "Bypasses targets' abilities if they could hinder or prevent a move."
-          }
-        ],
         "held": {
           "sprite": "dragon-gem",
           "name": "Dragon Gem",
@@ -6421,12 +5803,6 @@
           "name": "Contrary",
           "effect": "Inverts stat changes."
         },
-        "abilities": [
-          {
-            "name": "Contrary",
-            "effect": "Inverts stat changes."
-          }
-        ],
         "held": {
           "sprite": "sitrus-berry",
           "name": "Sitrus Berry",
@@ -6481,12 +5857,6 @@
           "name": "Shell Armor",
           "effect": "Protects against critical hits."
         },
-        "abilities": [
-          {
-            "name": "Shell Armor",
-            "effect": "Protects against critical hits."
-          }
-        ],
         "held": {
           "sprite": "life-orb",
           "name": "Life Orb",
@@ -6542,12 +5912,6 @@
           "name": "Mold Breaker",
           "effect": "Bypasses targets' abilities if they could hinder or prevent a move."
         },
-        "abilities": [
-          {
-            "name": "Mold Breaker",
-            "effect": "Bypasses targets' abilities if they could hinder or prevent a move."
-          }
-        ],
         "held": {
           "sprite": "fire-gem",
           "name": "Fire Gem",
@@ -6610,12 +5974,6 @@
           "name": "Scrappy",
           "effect": "Lets the Pokémon's normal and fighting moves hit ghost Pokémon."
         },
-        "abilities": [
-          {
-            "name": "Scrappy",
-            "effect": "Lets the Pokémon's normal and fighting moves hit ghost Pokémon."
-          }
-        ],
         "held": {
           "sprite": "normal-gem",
           "name": "Normal Gem",
@@ -6670,12 +6028,6 @@
           "name": "Levitate",
           "effect": "Evades ground moves."
         },
-        "abilities": [
-          {
-            "name": "Levitate",
-            "effect": "Evades ground moves."
-          }
-        ],
         "held": {
           "sprite": "leftovers",
           "name": "Leftovers",
@@ -6730,12 +6082,6 @@
           "name": "Levitate",
           "effect": "Evades ground moves."
         },
-        "abilities": [
-          {
-            "name": "Levitate",
-            "effect": "Evades ground moves."
-          }
-        ],
         "held": {
           "sprite": "life-orb",
           "name": "Life Orb",
@@ -6791,12 +6137,6 @@
           "name": "Simple",
           "effect": "Doubles the Pokémon's stat modifiers.  These doubled modifiers are still capped at -6 or 6 stages."
         },
-        "abilities": [
-          {
-            "name": "Simple",
-            "effect": "Doubles the Pokémon's stat modifiers.  These doubled modifiers are still capped at -6 or 6 stages."
-          }
-        ],
         "held": {
           "sprite": "passho-berry",
           "name": "Passho Berry",
@@ -6851,12 +6191,6 @@
           "name": "Contrary",
           "effect": "Inverts stat changes."
         },
-        "abilities": [
-          {
-            "name": "Contrary",
-            "effect": "Inverts stat changes."
-          }
-        ],
         "held": {
           "sprite": "leftovers",
           "name": "Leftovers",
@@ -6914,12 +6248,6 @@
           "name": "Regenerator",
           "effect": "Heals for 1/3 max HP upon switching out."
         },
-        "abilities": [
-          {
-            "name": "Regenerator",
-            "effect": "Heals for 1/3 max HP upon switching out."
-          }
-        ],
         "held": {
           "sprite": "red-card",
           "name": "Red Card",
@@ -6982,12 +6310,6 @@
           "name": "Levitate",
           "effect": "Evades ground moves."
         },
-        "abilities": [
-          {
-            "name": "Levitate",
-            "effect": "Evades ground moves."
-          }
-        ],
         "held": {
           "sprite": "focus-sash",
           "name": "Focus Sash",
@@ -7040,12 +6362,6 @@
           "name": "Liquid Ooze",
           "effect": "Damages opponents using leeching moves for as much as they would heal."
         },
-        "abilities": [
-          {
-            "name": "Liquid Ooze",
-            "effect": "Damages opponents using leeching moves for as much as they would heal."
-          }
-        ],
         "sprite": "317",
         "types": [
           "poison"
@@ -7094,12 +6410,6 @@
           "name": "Ice Body",
           "effect": "Heals for 1/16 max HP after each turn during hail.  Protects against hail damage."
         },
-        "abilities": [
-          {
-            "name": "Ice Body",
-            "effect": "Heals for 1/16 max HP after each turn during hail.  Protects against hail damage."
-          }
-        ],
         "held": {
           "sprite": "leftovers",
           "name": "Leftovers",
@@ -7155,12 +6465,6 @@
           "name": "Technician",
           "effect": "Strengthens moves of 60 base power or less to 1.5× their power."
         },
-        "abilities": [
-          {
-            "name": "Technician",
-            "effect": "Strengthens moves of 60 base power or less to 1.5× their power."
-          }
-        ],
         "sprite": "225",
         "types": [
           "ice",
@@ -7212,12 +6516,6 @@
           "name": "Pressure",
           "effect": "Increases the PP cost of moves targetting the Pokémon by one."
         },
-        "abilities": [
-          {
-            "name": "Pressure",
-            "effect": "Increases the PP cost of moves targetting the Pokémon by one."
-          }
-        ],
         "held": {
           "sprite": "life-orb",
           "name": "Life Orb",
@@ -7280,12 +6578,6 @@
           "name": "Iron Fist",
           "effect": "Strengthens punch-based moves to 1.2× their power."
         },
-        "abilities": [
-          {
-            "name": "Iron Fist",
-            "effect": "Strengthens punch-based moves to 1.2× their power."
-          }
-        ],
         "held": {
           "sprite": "focus-sash",
           "name": "Focus Sash",
@@ -7341,12 +6633,6 @@
           "name": "Rough Skin",
           "effect": "Damages attacking Pokémon for 1/8 their max HP on contact."
         },
-        "abilities": [
-          {
-            "name": "Rough Skin",
-            "effect": "Damages attacking Pokémon for 1/8 their max HP on contact."
-          }
-        ],
         "held": {
           "sprite": "wide-lens",
           "name": "Wide Lens",
@@ -7404,12 +6690,6 @@
           "name": "Mold Breaker",
           "effect": "Bypasses targets' abilities if they could hinder or prevent a move."
         },
-        "abilities": [
-          {
-            "name": "Mold Breaker",
-            "effect": "Bypasses targets' abilities if they could hinder or prevent a move."
-          }
-        ],
         "held": {
           "sprite": "passho-berry",
           "name": "Passho Berry",
@@ -7464,12 +6744,6 @@
           "name": "Moxie",
           "effect": "Raises Attack one stage upon KOing a Pokémon."
         },
-        "abilities": [
-          {
-            "name": "Moxie",
-            "effect": "Raises Attack one stage upon KOing a Pokémon."
-          }
-        ],
         "held": {
           "sprite": "wacan-berry",
           "name": "Wacan Berry",
@@ -7526,12 +6800,6 @@
           "name": "Guts",
           "effect": "Increases Attack to 1.5× with a major status ailment."
         },
-        "abilities": [
-          {
-            "name": "Guts",
-            "effect": "Increases Attack to 1.5× with a major status ailment."
-          }
-        ],
         "held": {
           "sprite": "flame-orb",
           "name": "Flame Orb",
@@ -7586,12 +6854,6 @@
           "name": "Flame Body",
           "effect": "Has a 30% chance of burning attacking Pokémon on contact."
         },
-        "abilities": [
-          {
-            "name": "Flame Body",
-            "effect": "Has a 30% chance of burning attacking Pokémon on contact."
-          }
-        ],
         "held": {
           "sprite": "lum-berry",
           "name": "Lum Berry",
@@ -7655,12 +6917,6 @@
           "name": "Multiscale",
           "effect": "Halves damage taken from full HP."
         },
-        "abilities": [
-          {
-            "name": "Multiscale",
-            "effect": "Halves damage taken from full HP."
-          }
-        ],
         "held": {
           "sprite": "flying-gem",
           "name": "Flying Gem",
@@ -7714,12 +6970,6 @@
           "name": "Swift Swim",
           "effect": "Doubles Speed during rain."
         },
-        "abilities": [
-          {
-            "name": "Swift Swim",
-            "effect": "Doubles Speed during rain."
-          }
-        ],
         "held": {
           "sprite": "wacan-berry",
           "name": "Wacan Berry",
@@ -7775,12 +7025,6 @@
           "name": "Motor Drive",
           "effect": "Absorbs electric moves, raising Speed one stage."
         },
-        "abilities": [
-          {
-            "name": "Motor Drive",
-            "effect": "Absorbs electric moves, raising Speed one stage."
-          }
-        ],
         "held": {
           "sprite": "electric-gem",
           "name": "Electric Gem",
@@ -7836,12 +7080,6 @@
           "name": "Drizzle",
           "effect": "Summons rain that lasts indefinitely upon entering battle."
         },
-        "abilities": [
-          {
-            "name": "Drizzle",
-            "effect": "Summons rain that lasts indefinitely upon entering battle."
-          }
-        ],
         "held": {
           "sprite": "sitrus-berry",
           "name": "Sitrus Berry",
@@ -7897,12 +7135,6 @@
           "name": "Natural Cure",
           "effect": "Cures any major status ailment upon switching out."
         },
-        "abilities": [
-          {
-            "name": "Natural Cure",
-            "effect": "Cures any major status ailment upon switching out."
-          }
-        ],
         "held": {
           "sprite": "life-orb",
           "name": "Life Orb",
@@ -7959,12 +7191,6 @@
           "name": "Flare Boost",
           "effect": "Increases Special Attack to 1.5× when burned."
         },
-        "abilities": [
-          {
-            "name": "Flare Boost",
-            "effect": "Increases Special Attack to 1.5× when burned."
-          }
-        ],
         "held": {
           "sprite": "flame-orb",
           "name": "Flame Orb",
@@ -8028,12 +7254,6 @@
           "name": "Defiant",
           "effect": "Raises Attack two stages upon having any stat lowered."
         },
-        "abilities": [
-          {
-            "name": "Defiant",
-            "effect": "Raises Attack two stages upon having any stat lowered."
-          }
-        ],
         "held": {
           "sprite": "sitrus-berry",
           "name": "Sitrus Berry",
@@ -8088,12 +7308,6 @@
           "name": "Levitate",
           "effect": "Evades ground moves."
         },
-        "abilities": [
-          {
-            "name": "Levitate",
-            "effect": "Evades ground moves."
-          }
-        ],
         "held": {
           "sprite": "lum-berry",
           "name": "Lum Berry",
@@ -8149,12 +7363,6 @@
           "name": "Mold Breaker",
           "effect": "Bypasses targets' abilities if they could hinder or prevent a move."
         },
-        "abilities": [
-          {
-            "name": "Mold Breaker",
-            "effect": "Bypasses targets' abilities if they could hinder or prevent a move."
-          }
-        ],
         "held": {
           "sprite": "haban-berry",
           "name": "Haban Berry",
@@ -8207,12 +7415,6 @@
           "name": "Levitate",
           "effect": "Evades ground moves."
         },
-        "abilities": [
-          {
-            "name": "Levitate",
-            "effect": "Evades ground moves."
-          }
-        ],
         "held": {
           "sprite": "life-orb",
           "name": "Life Orb",
@@ -8267,12 +7469,6 @@
           "name": "Intimidate",
           "effect": "Lowers opponents' Attack one stage upon entering battle."
         },
-        "abilities": [
-          {
-            "name": "Intimidate",
-            "effect": "Lowers opponents' Attack one stage upon entering battle."
-          }
-        ],
         "held": {
           "sprite": "yache-berry",
           "name": "Yache Berry",
@@ -8329,12 +7525,6 @@
           "name": "Unburden",
           "effect": "Doubles Speed upon using or losing a held item."
         },
-        "abilities": [
-          {
-            "name": "Unburden",
-            "effect": "Doubles Speed upon using or losing a held item."
-          }
-        ],
         "held": {
           "sprite": "focus-sash",
           "name": "Focus Sash",
@@ -8398,12 +7588,6 @@
           "name": "Snow Warning",
           "effect": "Summons hail that lasts indefinitely upon entering battle."
         },
-        "abilities": [
-          {
-            "name": "Snow Warning",
-            "effect": "Summons hail that lasts indefinitely upon entering battle."
-          }
-        ],
         "held": {
           "sprite": "life-orb",
           "name": "Life Orb",
@@ -8458,12 +7642,6 @@
           "name": "Levitate",
           "effect": "Evades ground moves."
         },
-        "abilities": [
-          {
-            "name": "Levitate",
-            "effect": "Evades ground moves."
-          }
-        ],
         "held": {
           "sprite": "light-clay",
           "name": "Light Clay",
@@ -8517,12 +7695,6 @@
           "name": "Ice Body",
           "effect": "Heals for 1/16 max HP after each turn during hail.  Protects against hail damage."
         },
-        "abilities": [
-          {
-            "name": "Ice Body",
-            "effect": "Heals for 1/16 max HP after each turn during hail.  Protects against hail damage."
-          }
-        ],
         "held": {
           "sprite": "leftovers",
           "name": "Leftovers",
@@ -8580,12 +7752,6 @@
           "name": "Pressure",
           "effect": "Increases the PP cost of moves targetting the Pokémon by one."
         },
-        "abilities": [
-          {
-            "name": "Pressure",
-            "effect": "Increases the PP cost of moves targetting the Pokémon by one."
-          }
-        ],
         "held": {
           "sprite": "focus-sash",
           "name": "Focus Sash",
@@ -8641,12 +7807,6 @@
           "name": "Unburden",
           "effect": "Doubles Speed upon using or losing a held item."
         },
-        "abilities": [
-          {
-            "name": "Unburden",
-            "effect": "Doubles Speed upon using or losing a held item."
-          }
-        ],
         "held": {
           "sprite": "flying-gem",
           "name": "Flying Gem",
@@ -8708,12 +7868,6 @@
           "name": "Filter",
           "effect": "Decreases damage taken from super-effective moves by 1/4."
         },
-        "abilities": [
-          {
-            "name": "Filter",
-            "effect": "Decreases damage taken from super-effective moves by 1/4."
-          }
-        ],
         "held": {
           "sprite": "lum-berry",
           "name": "Lum Berry",
@@ -8769,12 +7923,6 @@
           "name": "Levitate",
           "effect": "Evades ground moves."
         },
-        "abilities": [
-          {
-            "name": "Levitate",
-            "effect": "Evades ground moves."
-          }
-        ],
         "held": {
           "sprite": "kasib-berry",
           "name": "Kasib Berry",
@@ -8831,12 +7979,6 @@
           "name": "Levitate",
           "effect": "Evades ground moves."
         },
-        "abilities": [
-          {
-            "name": "Levitate",
-            "effect": "Evades ground moves."
-          }
-        ],
         "held": {
           "sprite": "rock-gem",
           "name": "Rock Gem",
@@ -8893,12 +8035,6 @@
           "name": "Levitate",
           "effect": "Evades ground moves."
         },
-        "abilities": [
-          {
-            "name": "Levitate",
-            "effect": "Evades ground moves."
-          }
-        ],
         "held": {
           "sprite": "flying-gem",
           "name": "Flying Gem",
@@ -8954,12 +8090,6 @@
           "name": "Harvest",
           "effect": "Has a 50% chance of restoring a used Berry after each turn if the Pokémon has held no items in the meantime."
         },
-        "abilities": [
-          {
-            "name": "Harvest",
-            "effect": "Has a 50% chance of restoring a used Berry after each turn if the Pokémon has held no items in the meantime."
-          }
-        ],
         "held": {
           "sprite": "sitrus-berry",
           "name": "Sitrus Berry",
@@ -9016,12 +8146,6 @@
           "name": "Pure Power",
           "effect": "Doubles Attack in battle."
         },
-        "abilities": [
-          {
-            "name": "Pure Power",
-            "effect": "Doubles Attack in battle."
-          }
-        ],
         "held": {
           "sprite": "life-orb",
           "name": "Life Orb",
@@ -9078,12 +8202,6 @@
           "name": "Trace",
           "effect": "Copies an opponent's ability upon entering battle."
         },
-        "abilities": [
-          {
-            "name": "Trace",
-            "effect": "Copies an opponent's ability upon entering battle."
-          }
-        ],
         "held": {
           "sprite": "focus-sash",
           "name": "Focus Sash",
@@ -9140,12 +8258,6 @@
           "name": "Analytic",
           "effect": "Strengthens moves to 1.3× their power when moving last."
         },
-        "abilities": [
-          {
-            "name": "Analytic",
-            "effect": "Strengthens moves to 1.3× their power when moving last."
-          }
-        ],
         "held": {
           "sprite": "colbur-berry",
           "name": "Colbur Berry",
@@ -9206,12 +8318,6 @@
           "name": "Swift Swim",
           "effect": "Doubles Speed during rain."
         },
-        "abilities": [
-          {
-            "name": "Swift Swim",
-            "effect": "Doubles Speed during rain."
-          }
-        ],
         "held": {
           "sprite": "cell-battery",
           "name": "Cell Battery",
@@ -9267,12 +8373,6 @@
           "name": "Swift Swim",
           "effect": "Doubles Speed during rain."
         },
-        "abilities": [
-          {
-            "name": "Swift Swim",
-            "effect": "Doubles Speed during rain."
-          }
-        ],
         "held": {
           "sprite": "life-orb",
           "name": "Life Orb",
@@ -9329,12 +8429,6 @@
           "name": "Swift Swim",
           "effect": "Doubles Speed during rain."
         },
-        "abilities": [
-          {
-            "name": "Swift Swim",
-            "effect": "Doubles Speed during rain."
-          }
-        ],
         "held": {
           "sprite": "focus-sash",
           "name": "Focus Sash",
@@ -9391,12 +8485,6 @@
           "name": "Drizzle",
           "effect": "Summons rain that lasts indefinitely upon entering battle."
         },
-        "abilities": [
-          {
-            "name": "Drizzle",
-            "effect": "Summons rain that lasts indefinitely upon entering battle."
-          }
-        ],
         "held": {
           "sprite": "wacan-berry",
           "name": "Wacan Berry",
@@ -9452,12 +8540,6 @@
           "name": "Analytic",
           "effect": "Strengthens moves to 1.3× their power when moving last."
         },
-        "abilities": [
-          {
-            "name": "Analytic",
-            "effect": "Strengthens moves to 1.3× their power when moving last."
-          }
-        ],
         "held": {
           "sprite": "rindo-berry",
           "name": "Rindo Berry",
@@ -9513,12 +8595,6 @@
           "name": "Swift Swim",
           "effect": "Doubles Speed during rain."
         },
-        "abilities": [
-          {
-            "name": "Swift Swim",
-            "effect": "Doubles Speed during rain."
-          }
-        ],
         "held": {
           "sprite": "water-gem",
           "name": "Water Gem",
@@ -9580,12 +8656,6 @@
           "name": "Ice Body",
           "effect": "Heals for 1/16 max HP after each turn during hail.  Protects against hail damage."
         },
-        "abilities": [
-          {
-            "name": "Ice Body",
-            "effect": "Heals for 1/16 max HP after each turn during hail.  Protects against hail damage."
-          }
-        ],
         "held": {
           "sprite": "leftovers",
           "name": "Leftovers",
@@ -9640,12 +8710,6 @@
           "name": "Intimidate",
           "effect": "Lowers opponents' Attack one stage upon entering battle."
         },
-        "abilities": [
-          {
-            "name": "Intimidate",
-            "effect": "Lowers opponents' Attack one stage upon entering battle."
-          }
-        ],
         "held": {
           "sprite": "icy-rock",
           "name": "Icy Rock",
@@ -9701,12 +8765,6 @@
           "name": "Unburden",
           "effect": "Doubles Speed upon using or losing a held item."
         },
-        "abilities": [
-          {
-            "name": "Unburden",
-            "effect": "Doubles Speed upon using or losing a held item."
-          }
-        ],
         "held": {
           "sprite": "flying-gem",
           "name": "Flying Gem",
@@ -9763,12 +8821,6 @@
           "name": "Sturdy",
           "effect": "Prevents being KOed from full HP, leaving 1 HP instead.  Protects against the one-hit KO moves regardless of HP."
         },
-        "abilities": [
-          {
-            "name": "Sturdy",
-            "effect": "Prevents being KOed from full HP, leaving 1 HP instead.  Protects against the one-hit KO moves regardless of HP."
-          }
-        ],
         "held": {
           "sprite": "rock-gem",
           "name": "Rock Gem",
@@ -9824,12 +8876,6 @@
           "name": "Pressure",
           "effect": "Increases the PP cost of moves targetting the Pokémon by one."
         },
-        "abilities": [
-          {
-            "name": "Pressure",
-            "effect": "Increases the PP cost of moves targetting the Pokémon by one."
-          }
-        ],
         "held": {
           "sprite": "life-orb",
           "name": "Life Orb",
@@ -9884,12 +8930,6 @@
           "name": "Levitate",
           "effect": "Evades ground moves."
         },
-        "abilities": [
-          {
-            "name": "Levitate",
-            "effect": "Evades ground moves."
-          }
-        ],
         "held": {
           "sprite": "focus-sash",
           "name": "Focus Sash",
@@ -9951,12 +8991,6 @@
           "name": "Snow Warning",
           "effect": "Summons hail that lasts indefinitely upon entering battle."
         },
-        "abilities": [
-          {
-            "name": "Snow Warning",
-            "effect": "Summons hail that lasts indefinitely upon entering battle."
-          }
-        ],
         "held": {
           "sprite": "focus-sash",
           "name": "Focus Sash",
@@ -10010,12 +9044,6 @@
           "name": "Levitate",
           "effect": "Evades ground moves."
         },
-        "abilities": [
-          {
-            "name": "Levitate",
-            "effect": "Evades ground moves."
-          }
-        ],
         "held": {
           "sprite": "light-clay",
           "name": "Light Clay",
@@ -10069,12 +9097,6 @@
           "name": "Snow Cloak",
           "effect": "Increases evasion to 1.25× during hail.  Protects against hail damage."
         },
-        "abilities": [
-          {
-            "name": "Snow Cloak",
-            "effect": "Increases evasion to 1.25× during hail.  Protects against hail damage."
-          }
-        ],
         "held": {
           "sprite": "ice-gem",
           "name": "Ice Gem",
@@ -10130,12 +9152,6 @@
           "name": "Snow Cloak",
           "effect": "Increases evasion to 1.25× during hail.  Protects against hail damage."
         },
-        "abilities": [
-          {
-            "name": "Snow Cloak",
-            "effect": "Increases evasion to 1.25× during hail.  Protects against hail damage."
-          }
-        ],
         "held": {
           "sprite": "zoom-lens",
           "name": "Zoom Lens",
@@ -10190,12 +9206,6 @@
           "name": "Ice Body",
           "effect": "Heals for 1/16 max HP after each turn during hail.  Protects against hail damage."
         },
-        "abilities": [
-          {
-            "name": "Ice Body",
-            "effect": "Heals for 1/16 max HP after each turn during hail.  Protects against hail damage."
-          }
-        ],
         "held": {
           "sprite": "leftovers",
           "name": "Leftovers",
@@ -10251,12 +9261,6 @@
           "name": "Pressure",
           "effect": "Increases the PP cost of moves targetting the Pokémon by one."
         },
-        "abilities": [
-          {
-            "name": "Pressure",
-            "effect": "Increases the PP cost of moves targetting the Pokémon by one."
-          }
-        ],
         "held": {
           "sprite": "life-orb",
           "name": "Life Orb",
@@ -10319,12 +9323,6 @@
           "name": "Analytic",
           "effect": "Strengthens moves to 1.3× their power when moving last."
         },
-        "abilities": [
-          {
-            "name": "Analytic",
-            "effect": "Strengthens moves to 1.3× their power when moving last."
-          }
-        ],
         "held": {
           "sprite": "colbur-berry",
           "name": "Colbur Berry",
@@ -10378,12 +9376,6 @@
           "name": "Levitate",
           "effect": "Evades ground moves."
         },
-        "abilities": [
-          {
-            "name": "Levitate",
-            "effect": "Evades ground moves."
-          }
-        ],
         "held": {
           "sprite": "focus-sash",
           "name": "Focus Sash",
@@ -10441,12 +9433,6 @@
           "name": "Sturdy",
           "effect": "Prevents being KOed from full HP, leaving 1 HP instead.  Protects against the one-hit KO moves regardless of HP."
         },
-        "abilities": [
-          {
-            "name": "Sturdy",
-            "effect": "Prevents being KOed from full HP, leaving 1 HP instead.  Protects against the one-hit KO moves regardless of HP."
-          }
-        ],
         "held": {
           "sprite": "air-balloon",
           "name": "Air Balloon",
@@ -10502,12 +9488,6 @@
           "name": "Iron Fist",
           "effect": "Strengthens punch-based moves to 1.2× their power."
         },
-        "abilities": [
-          {
-            "name": "Iron Fist",
-            "effect": "Strengthens punch-based moves to 1.2× their power."
-          }
-        ],
         "held": {
           "sprite": "occa-berry",
           "name": "Occa Berry",
@@ -10563,12 +9543,6 @@
           "name": "Adaptability",
           "effect": "Increases the same-type attack bonus from 1.5× to 2×."
         },
-        "abilities": [
-          {
-            "name": "Adaptability",
-            "effect": "Increases the same-type attack bonus from 1.5× to 2×."
-          }
-        ],
         "held": {
           "sprite": "custap-berry",
           "name": "Custap Berry",
@@ -10622,12 +9596,6 @@
           "name": "Levitate",
           "effect": "Evades ground moves."
         },
-        "abilities": [
-          {
-            "name": "Levitate",
-            "effect": "Evades ground moves."
-          }
-        ],
         "held": {
           "sprite": "life-orb",
           "name": "Life Orb",
@@ -10689,12 +9657,6 @@
           "name": "Mummy",
           "effect": "Changes attacking Pokémon's abilities to Mummy on contact."
         },
-        "abilities": [
-          {
-            "name": "Mummy",
-            "effect": "Changes attacking Pokémon's abilities to Mummy on contact."
-          }
-        ],
         "held": {
           "sprite": "leftovers",
           "name": "Leftovers",
@@ -10748,12 +9710,6 @@
           "name": "Levitate",
           "effect": "Evades ground moves."
         },
-        "abilities": [
-          {
-            "name": "Levitate",
-            "effect": "Evades ground moves."
-          }
-        ],
         "held": {
           "sprite": "leftovers",
           "name": "Leftovers",
@@ -10808,12 +9764,6 @@
           "name": "Moxie",
           "effect": "Raises Attack one stage upon KOing a Pokémon."
         },
-        "abilities": [
-          {
-            "name": "Moxie",
-            "effect": "Raises Attack one stage upon KOing a Pokémon."
-          }
-        ],
         "held": {
           "sprite": "lum-berry",
           "name": "Lum Berry",
@@ -10870,12 +9820,6 @@
           "name": "No Guard",
           "effect": "Ensures all moves used by and against the Pokémon hit."
         },
-        "abilities": [
-          {
-            "name": "No Guard",
-            "effect": "Ensures all moves used by and against the Pokémon hit."
-          }
-        ],
         "held": {
           "sprite": "coba-berry",
           "name": "Coba Berry",
@@ -10931,12 +9875,6 @@
           "name": "Download",
           "effect": "Raises the attack stat corresponding to the opponents' weaker defense one stage upon entering battle."
         },
-        "abilities": [
-          {
-            "name": "Download",
-            "effect": "Raises the attack stat corresponding to the opponents' weaker defense one stage upon entering battle."
-          }
-        ],
         "held": {
           "sprite": "focus-sash",
           "name": "Focus Sash",
@@ -10991,12 +9929,6 @@
           "name": "Levitate",
           "effect": "Evades ground moves."
         },
-        "abilities": [
-          {
-            "name": "Levitate",
-            "effect": "Evades ground moves."
-          }
-        ],
         "held": {
           "sprite": "life-orb",
           "name": "Life Orb",
@@ -11060,12 +9992,6 @@
           "name": "Snow Warning",
           "effect": "Summons hail that lasts indefinitely upon entering battle."
         },
-        "abilities": [
-          {
-            "name": "Snow Warning",
-            "effect": "Summons hail that lasts indefinitely upon entering battle."
-          }
-        ],
         "held": {
           "sprite": "occa-berry",
           "name": "Occa Berry",
@@ -11122,12 +10048,6 @@
           "name": "Magic Guard",
           "effect": "Protects against damage not directly caused by a move."
         },
-        "abilities": [
-          {
-            "name": "Magic Guard",
-            "effect": "Protects against damage not directly caused by a move."
-          }
-        ],
         "held": {
           "sprite": "leftovers",
           "name": "Leftovers",
@@ -11183,12 +10103,6 @@
           "name": "Pressure",
           "effect": "Increases the PP cost of moves targetting the Pokémon by one."
         },
-        "abilities": [
-          {
-            "name": "Pressure",
-            "effect": "Increases the PP cost of moves targetting the Pokémon by one."
-          }
-        ],
         "held": {
           "sprite": "focus-sash",
           "name": "Focus Sash",
@@ -11244,12 +10158,6 @@
           "name": "Snow Warning",
           "effect": "Summons hail that lasts indefinitely upon entering battle."
         },
-        "abilities": [
-          {
-            "name": "Snow Warning",
-            "effect": "Summons hail that lasts indefinitely upon entering battle."
-          }
-        ],
         "held": {
           "sprite": "life-orb",
           "name": "Life Orb",
@@ -11304,12 +10212,6 @@
           "name": "Skill Link",
           "effect": "Extends two-to-five-hit moves and triple kick to their full length every time."
         },
-        "abilities": [
-          {
-            "name": "Skill Link",
-            "effect": "Extends two-to-five-hit moves and triple kick to their full length every time."
-          }
-        ],
         "held": {
           "sprite": "white-herb",
           "name": "White Herb",
@@ -11365,12 +10267,6 @@
           "name": "Trace",
           "effect": "Copies an opponent's ability upon entering battle."
         },
-        "abilities": [
-          {
-            "name": "Trace",
-            "effect": "Copies an opponent's ability upon entering battle."
-          }
-        ],
         "held": {
           "sprite": "ice-gem",
           "name": "Ice Gem",
@@ -11432,12 +10328,6 @@
           "name": "Drought",
           "effect": "Summons strong sunlight that lasts indefinitely upon entering battle."
         },
-        "abilities": [
-          {
-            "name": "Drought",
-            "effect": "Summons strong sunlight that lasts indefinitely upon entering battle."
-          }
-        ],
         "held": {
           "sprite": "red-card",
           "name": "Red Card",
@@ -11493,12 +10383,6 @@
           "name": "Sheer Force",
           "effect": "Strengthens moves with extra effects to 1.3× their power, but prevents their extra effects."
         },
-        "abilities": [
-          {
-            "name": "Sheer Force",
-            "effect": "Strengthens moves with extra effects to 1.3× their power, but prevents their extra effects."
-          }
-        ],
         "held": {
           "sprite": "fire-gem",
           "name": "Fire Gem",
@@ -11553,12 +10437,6 @@
           "name": "Chlorophyll",
           "effect": "Doubles Speed during strong sunlight."
         },
-        "abilities": [
-          {
-            "name": "Chlorophyll",
-            "effect": "Doubles Speed during strong sunlight."
-          }
-        ],
         "held": {
           "sprite": "life-orb",
           "name": "Life Orb",
@@ -11615,12 +10493,6 @@
           "name": "Drought",
           "effect": "Summons strong sunlight that lasts indefinitely upon entering battle."
         },
-        "abilities": [
-          {
-            "name": "Drought",
-            "effect": "Summons strong sunlight that lasts indefinitely upon entering battle."
-          }
-        ],
         "held": {
           "sprite": "eject-button",
           "name": "Eject Button",
@@ -11676,12 +10548,6 @@
           "name": "Flame Body",
           "effect": "Has a 30% chance of burning attacking Pokémon on contact."
         },
-        "abilities": [
-          {
-            "name": "Flame Body",
-            "effect": "Has a 30% chance of burning attacking Pokémon on contact."
-          }
-        ],
         "held": {
           "sprite": "focus-sash",
           "name": "Focus Sash",
@@ -11737,12 +10603,6 @@
           "name": "Chlorophyll",
           "effect": "Doubles Speed during strong sunlight."
         },
-        "abilities": [
-          {
-            "name": "Chlorophyll",
-            "effect": "Doubles Speed during strong sunlight."
-          }
-        ],
         "held": {
           "sprite": "occa-berry",
           "name": "Occa Berry",
@@ -11806,12 +10666,6 @@
           "name": "Drizzle",
           "effect": "Summons rain that lasts indefinitely upon entering battle."
         },
-        "abilities": [
-          {
-            "name": "Drizzle",
-            "effect": "Summons rain that lasts indefinitely upon entering battle."
-          }
-        ],
         "held": {
           "sprite": "wacan-berry",
           "name": "Wacan Berry",
@@ -11868,12 +10722,6 @@
           "name": "Swift Swim",
           "effect": "Doubles Speed during rain."
         },
-        "abilities": [
-          {
-            "name": "Swift Swim",
-            "effect": "Doubles Speed during rain."
-          }
-        ],
         "held": {
           "sprite": "rindo-berry",
           "name": "Rindo Berry",
@@ -11930,12 +10778,6 @@
           "name": "Aftermath",
           "effect": "Damages the attacker for 1/4 its max HP when knocked out by a contact move."
         },
-        "abilities": [
-          {
-            "name": "Aftermath",
-            "effect": "Damages the attacker for 1/4 its max HP when knocked out by a contact move."
-          }
-        ],
         "held": {
           "sprite": "air-balloon",
           "name": "Air Balloon",
@@ -11989,12 +10831,6 @@
           "name": "Drizzle",
           "effect": "Summons rain that lasts indefinitely upon entering battle."
         },
-        "abilities": [
-          {
-            "name": "Drizzle",
-            "effect": "Summons rain that lasts indefinitely upon entering battle."
-          }
-        ],
         "held": {
           "sprite": "zoom-lens",
           "name": "Zoom Lens",
@@ -12050,12 +10886,6 @@
           "name": "Technician",
           "effect": "Strengthens moves of 60 base power or less to 1.5× their power."
         },
-        "abilities": [
-          {
-            "name": "Technician",
-            "effect": "Strengthens moves of 60 base power or less to 1.5× their power."
-          }
-        ],
         "held": {
           "sprite": "leftovers",
           "name": "Leftovers",
@@ -12110,12 +10940,6 @@
           "name": "Swift Swim",
           "effect": "Doubles Speed during rain."
         },
-        "abilities": [
-          {
-            "name": "Swift Swim",
-            "effect": "Doubles Speed during rain."
-          }
-        ],
         "held": {
           "sprite": "life-orb",
           "name": "Life Orb",
@@ -12178,12 +11002,6 @@
           "name": "Sand Stream",
           "effect": "Summons a sandstorm that lasts indefinitely upon entering battle."
         },
-        "abilities": [
-          {
-            "name": "Sand Stream",
-            "effect": "Summons a sandstorm that lasts indefinitely upon entering battle."
-          }
-        ],
         "held": {
           "sprite": "passho-berry",
           "name": "Passho Berry",
@@ -12239,12 +11057,6 @@
           "name": "Rough Skin",
           "effect": "Damages attacking Pokémon for 1/8 their max HP on contact."
         },
-        "abilities": [
-          {
-            "name": "Rough Skin",
-            "effect": "Damages attacking Pokémon for 1/8 their max HP on contact."
-          }
-        ],
         "held": {
           "sprite": "yache-berry",
           "name": "Yache Berry",
@@ -12300,12 +11112,6 @@
           "name": "Sand Rush",
           "effect": "Doubles Speed during a sandstorm.  Protects against sandstorm damage."
         },
-        "abilities": [
-          {
-            "name": "Sand Rush",
-            "effect": "Doubles Speed during a sandstorm.  Protects against sandstorm damage."
-          }
-        ],
         "held": {
           "sprite": "air-balloon",
           "name": "Air Balloon",
@@ -12361,12 +11167,6 @@
           "name": "Sand Stream",
           "effect": "Summons a sandstorm that lasts indefinitely upon entering battle."
         },
-        "abilities": [
-          {
-            "name": "Sand Stream",
-            "effect": "Summons a sandstorm that lasts indefinitely upon entering battle."
-          }
-        ],
         "held": {
           "sprite": "chople-berry",
           "name": "Chople Berry",
@@ -12422,12 +11222,6 @@
           "name": "Magic Guard",
           "effect": "Protects against damage not directly caused by a move."
         },
-        "abilities": [
-          {
-            "name": "Magic Guard",
-            "effect": "Protects against damage not directly caused by a move."
-          }
-        ],
         "held": {
           "sprite": "leftovers",
           "name": "Leftovers",
@@ -12483,12 +11277,6 @@
           "name": "Sheer Force",
           "effect": "Strengthens moves with extra effects to 1.3× their power, but prevents their extra effects."
         },
-        "abilities": [
-          {
-            "name": "Sheer Force",
-            "effect": "Strengthens moves with extra effects to 1.3× their power, but prevents their extra effects."
-          }
-        ],
         "held": {
           "sprite": "life-orb",
           "name": "Life Orb",
@@ -12551,12 +11339,6 @@
           "name": "Scrappy",
           "effect": "Lets the Pokémon's normal and fighting moves hit ghost Pokémon."
         },
-        "abilities": [
-          {
-            "name": "Scrappy",
-            "effect": "Lets the Pokémon's normal and fighting moves hit ghost Pokémon."
-          }
-        ],
         "held": {
           "sprite": "normal-gem",
           "name": "Normal Gem",
@@ -12611,12 +11393,6 @@
           "name": "Levitate",
           "effect": "Evades ground moves."
         },
-        "abilities": [
-          {
-            "name": "Levitate",
-            "effect": "Evades ground moves."
-          }
-        ],
         "held": {
           "sprite": "leftovers",
           "name": "Leftovers",
@@ -12670,12 +11446,6 @@
           "name": "Levitate",
           "effect": "Evades ground moves."
         },
-        "abilities": [
-          {
-            "name": "Levitate",
-            "effect": "Evades ground moves."
-          }
-        ],
         "held": {
           "sprite": "focus-sash",
           "name": "Focus Sash",
@@ -12731,12 +11501,6 @@
           "name": "Simple",
           "effect": "Doubles the Pokémon's stat modifiers.  These doubled modifiers are still capped at -6 or 6 stages."
         },
-        "abilities": [
-          {
-            "name": "Simple",
-            "effect": "Doubles the Pokémon's stat modifiers.  These doubled modifiers are still capped at -6 or 6 stages."
-          }
-        ],
         "held": {
           "sprite": "passho-berry",
           "name": "Passho Berry",
@@ -12791,12 +11555,6 @@
           "name": "Contrary",
           "effect": "Inverts stat changes."
         },
-        "abilities": [
-          {
-            "name": "Contrary",
-            "effect": "Inverts stat changes."
-          }
-        ],
         "held": {
           "sprite": "leftovers",
           "name": "Leftovers",
@@ -12854,12 +11612,6 @@
           "name": "Regenerator",
           "effect": "Heals for 1/3 max HP upon switching out."
         },
-        "abilities": [
-          {
-            "name": "Regenerator",
-            "effect": "Heals for 1/3 max HP upon switching out."
-          }
-        ],
         "held": {
           "sprite": "red-card",
           "name": "Red Card",
@@ -12921,12 +11673,6 @@
           "name": "Prankster",
           "effect": "Raises non-damaging moves' priority by one stage."
         },
-        "abilities": [
-          {
-            "name": "Prankster",
-            "effect": "Raises non-damaging moves' priority by one stage."
-          }
-        ],
         "held": {
           "sprite": "lagging-tail",
           "name": "Lagging Tail",
@@ -12983,12 +11729,6 @@
           "name": "Levitate",
           "effect": "Evades ground moves."
         },
-        "abilities": [
-          {
-            "name": "Levitate",
-            "effect": "Evades ground moves."
-          }
-        ],
         "held": {
           "sprite": "life-orb",
           "name": "Life Orb",
@@ -13043,12 +11783,6 @@
           "name": "Levitate",
           "effect": "Evades ground moves."
         },
-        "abilities": [
-          {
-            "name": "Levitate",
-            "effect": "Evades ground moves."
-          }
-        ],
         "held": {
           "sprite": "focus-sash",
           "name": "Focus Sash",
@@ -13104,12 +11838,6 @@
           "name": "Iron Fist",
           "effect": "Strengthens punch-based moves to 1.2× their power."
         },
-        "abilities": [
-          {
-            "name": "Iron Fist",
-            "effect": "Strengthens punch-based moves to 1.2× their power."
-          }
-        ],
         "held": {
           "sprite": "rindo-berry",
           "name": "Rindo Berry",
@@ -13165,12 +11893,6 @@
           "name": "Water Absorb",
           "effect": "Absorbs water moves, healing for 1/4 max HP."
         },
-        "abilities": [
-          {
-            "name": "Water Absorb",
-            "effect": "Absorbs water moves, healing for 1/4 max HP."
-          }
-        ],
         "held": {
           "sprite": "leftovers",
           "name": "Leftovers",
@@ -13226,12 +11948,6 @@
           "name": "Shadow Tag",
           "effect": "Prevents opponents from fleeing or switching out."
         },
-        "abilities": [
-          {
-            "name": "Shadow Tag",
-            "effect": "Prevents opponents from fleeing or switching out."
-          }
-        ],
         "held": {
           "sprite": "air-balloon",
           "name": "Air Balloon",
@@ -13294,12 +12010,6 @@
           "name": "Intimidate",
           "effect": "Lowers opponents' Attack one stage upon entering battle."
         },
-        "abilities": [
-          {
-            "name": "Intimidate",
-            "effect": "Lowers opponents' Attack one stage upon entering battle."
-          }
-        ],
         "held": {
           "sprite": "leftovers",
           "name": "Leftovers",
@@ -13355,12 +12065,6 @@
           "name": "Battle Armor",
           "effect": "Protects against critical hits."
         },
-        "abilities": [
-          {
-            "name": "Battle Armor",
-            "effect": "Protects against critical hits."
-          }
-        ],
         "held": {
           "sprite": "chople-berry",
           "name": "Chople Berry",
@@ -13417,12 +12121,6 @@
           "name": "Moxie",
           "effect": "Raises Attack one stage upon KOing a Pokémon."
         },
-        "abilities": [
-          {
-            "name": "Moxie",
-            "effect": "Raises Attack one stage upon KOing a Pokémon."
-          }
-        ],
         "held": {
           "sprite": "custap-berry",
           "name": "Custap Berry",
@@ -13479,12 +12177,6 @@
           "name": "Speed Boost",
           "effect": "Raises Speed one stage after each turn."
         },
-        "abilities": [
-          {
-            "name": "Speed Boost",
-            "effect": "Raises Speed one stage after each turn."
-          }
-        ],
         "held": {
           "sprite": "focus-sash",
           "name": "Focus Sash",
@@ -13540,12 +12232,6 @@
           "name": "Illusion",
           "effect": "Takes the appearance of the last conscious party Pokémon upon being sent out until hit by a damaging move."
         },
-        "abilities": [
-          {
-            "name": "Illusion",
-            "effect": "Takes the appearance of the last conscious party Pokémon upon being sent out until hit by a damaging move."
-          }
-        ],
         "held": {
           "sprite": "life-orb",
           "name": "Life Orb",
@@ -13600,12 +12286,6 @@
           "name": "Sniper",
           "effect": "Strengthens critical hits to inflict 3× damage rather than 2×."
         },
-        "abilities": [
-          {
-            "name": "Sniper",
-            "effect": "Strengthens critical hits to inflict 3× damage rather than 2×."
-          }
-        ],
         "held": {
           "sprite": "scope-lens",
           "name": "Scope Lens",
@@ -13668,12 +12348,6 @@
           "name": "Synchronize",
           "effect": "Copies burns, paralysis, and poison received onto the Pokémon that inflicted them."
         },
-        "abilities": [
-          {
-            "name": "Synchronize",
-            "effect": "Copies burns, paralysis, and poison received onto the Pokémon that inflicted them."
-          }
-        ],
         "held": {
           "sprite": "leftovers",
           "name": "Leftovers",
@@ -13730,12 +12404,6 @@
           "name": "Regenerator",
           "effect": "Heals for 1/3 max HP upon switching out."
         },
-        "abilities": [
-          {
-            "name": "Regenerator",
-            "effect": "Heals for 1/3 max HP upon switching out."
-          }
-        ],
         "held": {
           "sprite": "eject-button",
           "name": "Eject Button",
@@ -13792,12 +12460,6 @@
           "name": "Justified",
           "effect": "Raises Attack one stage upon taking damage from a dark move."
         },
-        "abilities": [
-          {
-            "name": "Justified",
-            "effect": "Raises Attack one stage upon taking damage from a dark move."
-          }
-        ],
         "held": {
           "sprite": "life-orb",
           "name": "Life Orb",
@@ -13853,12 +12515,6 @@
           "name": "Sheer Force",
           "effect": "Strengthens moves with extra effects to 1.3× their power, but prevents their extra effects."
         },
-        "abilities": [
-          {
-            "name": "Sheer Force",
-            "effect": "Strengthens moves with extra effects to 1.3× their power, but prevents their extra effects."
-          }
-        ],
         "held": {
           "sprite": "life-orb",
           "name": "Life Orb",
@@ -13915,12 +12571,6 @@
           "name": "Magic Bounce",
           "effect": "Reflects most non-damaging moves back at their user."
         },
-        "abilities": [
-          {
-            "name": "Magic Bounce",
-            "effect": "Reflects most non-damaging moves back at their user."
-          }
-        ],
         "held": {
           "sprite": "focus-sash",
           "name": "Focus Sash",
@@ -13977,12 +12627,6 @@
           "name": "Iron Fist",
           "effect": "Strengthens punch-based moves to 1.2× their power."
         },
-        "abilities": [
-          {
-            "name": "Iron Fist",
-            "effect": "Strengthens punch-based moves to 1.2× their power."
-          }
-        ],
         "held": {
           "sprite": "air-balloon",
           "name": "Air Balloon",
@@ -14047,12 +12691,6 @@
           "name": "Intimidate",
           "effect": "Lowers opponents' Attack one stage upon entering battle."
         },
-        "abilities": [
-          {
-            "name": "Intimidate",
-            "effect": "Lowers opponents' Attack one stage upon entering battle."
-          }
-        ],
         "held": {
           "sprite": "sitrus-berry",
           "name": "Sitrus Berry",
@@ -14108,12 +12746,6 @@
           "name": "Blaze",
           "effect": "Strengthens fire moves to inflict 1.5× damage at 1/3 max HP or less."
         },
-        "abilities": [
-          {
-            "name": "Blaze",
-            "effect": "Strengthens fire moves to inflict 1.5× damage at 1/3 max HP or less."
-          }
-        ],
         "held": {
           "sprite": "focus-sash",
           "name": "Focus Sash",
@@ -14169,12 +12801,6 @@
           "name": "Technician",
           "effect": "Strengthens moves of 60 base power or less to 1.5× their power."
         },
-        "abilities": [
-          {
-            "name": "Technician",
-            "effect": "Strengthens moves of 60 base power or less to 1.5× their power."
-          }
-        ],
         "held": {
           "sprite": "coba-berry",
           "name": "Coba Berry",
@@ -14231,12 +12857,6 @@
           "name": "Poison Touch",
           "effect": "Has a 30% chance of poisoning target Pokémon upon contact."
         },
-        "abilities": [
-          {
-            "name": "Poison Touch",
-            "effect": "Has a 30% chance of poisoning target Pokémon upon contact."
-          }
-        ],
         "held": {
           "sprite": "salac-berry",
           "name": "Salac Berry",
@@ -14293,12 +12913,6 @@
           "name": "Justified",
           "effect": "Raises Attack one stage upon taking damage from a dark move."
         },
-        "abilities": [
-          {
-            "name": "Justified",
-            "effect": "Raises Attack one stage upon taking damage from a dark move."
-          }
-        ],
         "held": {
           "sprite": "air-balloon",
           "name": "Air Balloon",
@@ -14355,12 +12969,6 @@
           "name": "Guts",
           "effect": "Increases Attack to 1.5× with a major status ailment."
         },
-        "abilities": [
-          {
-            "name": "Guts",
-            "effect": "Increases Attack to 1.5× with a major status ailment."
-          }
-        ],
         "held": {
           "sprite": "flame-orb",
           "name": "Flame Orb",
@@ -14421,12 +13029,6 @@
           "name": "Contrary",
           "effect": "Inverts stat changes."
         },
-        "abilities": [
-          {
-            "name": "Contrary",
-            "effect": "Inverts stat changes."
-          }
-        ],
         "held": {
           "sprite": "yache-berry",
           "name": "Yache Berry",
@@ -14481,12 +13083,6 @@
           "name": "Multiscale",
           "effect": "Halves damage taken from full HP."
         },
-        "abilities": [
-          {
-            "name": "Multiscale",
-            "effect": "Halves damage taken from full HP."
-          }
-        ],
         "held": {
           "sprite": "leftovers",
           "name": "Leftovers",
@@ -14541,12 +13137,6 @@
           "name": "Torrent",
           "effect": "Strengthens water moves to inflict 1.5× damage at 1/3 max HP or less."
         },
-        "abilities": [
-          {
-            "name": "Torrent",
-            "effect": "Strengthens water moves to inflict 1.5× damage at 1/3 max HP or less."
-          }
-        ],
         "held": {
           "sprite": "shuca-berry",
           "name": "Shuca Berry",
@@ -14602,12 +13192,6 @@
           "name": "Magic Guard",
           "effect": "Protects against damage not directly caused by a move."
         },
-        "abilities": [
-          {
-            "name": "Magic Guard",
-            "effect": "Protects against damage not directly caused by a move."
-          }
-        ],
         "held": {
           "sprite": "focus-sash",
           "name": "Focus Sash",
@@ -14662,12 +13246,6 @@
           "name": "Serene Grace",
           "effect": "Doubles the chance of moves' extra effects occurring."
         },
-        "abilities": [
-          {
-            "name": "Serene Grace",
-            "effect": "Doubles the chance of moves' extra effects occurring."
-          }
-        ],
         "held": {
           "sprite": "sitrus-berry",
           "name": "Sitrus Berry",
@@ -14722,12 +13300,6 @@
           "name": "Levitate",
           "effect": "Evades ground moves."
         },
-        "abilities": [
-          {
-            "name": "Levitate",
-            "effect": "Evades ground moves."
-          }
-        ],
         "held": {
           "sprite": "life-orb",
           "name": "Life Orb",

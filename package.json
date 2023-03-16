@@ -7,7 +7,9 @@
     "dev": "vite dev",
     "build": "vite build",
     "preview": "vite preview",
-    "test:randomiser": "for i in `cat src/lib/data/games.json | jq 'keys[]' -r`; do curl -s http://localhost:5173/api/route/generate/$i.json; done"
+    "test:randomiser": "for i in `cat src/lib/data/games.json | jq 'keys[]' -r`; do curl -s http://localhost:5173/api/route/generate/$i.json; done",
+    "test:pokemon": "for i in `cat src/lib/data/games.json | jq 'keys[]' -r`; do curl -s http://localhost:5173/api/$i/pokemon.json; done",
+    "test:league": "deno run --allow-read ./static/league/validate.ts"
   },
   "devDependencies": {
     "@iconify-icons/mdi": "^1.2.34",

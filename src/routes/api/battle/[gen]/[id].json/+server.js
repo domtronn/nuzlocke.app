@@ -88,6 +88,7 @@ const toHeld = (held, patch) => {
     sprite: held.name,
     name: held.names.find((l) => l.language.name === LANG).name,
     effect: held.effect_entries[0]?.short_effect
+      || held.flavor_text_entries.find(l => l.language.name === LANG)?.text
   });
 };
 
