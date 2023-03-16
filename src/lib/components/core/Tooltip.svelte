@@ -16,7 +16,8 @@
     const instance = tippy(node.parentNode, Object.assign({
       content: node.innerHTML,
       onCreate() {
-        node.parentNode.removeChild(node);
+        if (node.parentNode && typeof node.parentNode.removeChild == 'function')
+          node.parentNode.removeChild(node);
       }
     }, options));
 
@@ -32,6 +33,6 @@
   <div use:init><slot /></div>
 {/if}
 
-<style>
+<style lang="postcss">
   div { display: none; }
 </style>

@@ -7,14 +7,14 @@
 
 <div class='flex flex-row gap-x-4 sm:w-initial overflow-x-scroll {className}'>
   {#each tabs as tab, i}
-    <label class:active={active === i} class='text-base cursor-pointer transition-colors umami--click--{name}-{i}'>
+    <label class:active={active === i} class='text-base cursor-pointer transition-colors'>
       <input type=radio bind:group={active} name={name} value={i} />
       <span>{typeof tab === 'string' ? tab : tab.label}</span>
     </label>
   {/each}
 </div>
 
-<style>
+<style lang="postcss">
   div { width: calc(100vw - theme('spacing.8')); }
   @media (min-width: theme('screens.sm')) {
     div { width: auto; }

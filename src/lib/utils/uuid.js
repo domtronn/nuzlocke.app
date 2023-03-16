@@ -1,4 +1,4 @@
-import { browser } from '$app/env'
+import { browser } from '$app/environment'
 
 export const uuid = () => {
   if (!browser) return ''
@@ -9,3 +9,5 @@ export const uuid = () => {
     ).toString(16)
   )
 }
+
+export const shortuuid = () => uuid().split('-')[0]

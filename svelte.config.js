@@ -1,31 +1,14 @@
-import tailwind from 'tailwindcss'
-import autoprefixer from 'autoprefixer'
-
-import preprocess from 'svelte-preprocess'
-import vercel from '@sveltejs/adapter-vercel'
-
-import { visualizer } from 'rollup-plugin-visualizer'
+import preprocess from 'svelte-preprocess';
+import vercel from '@sveltejs/adapter-vercel';
 
 export default {
   kit: {
-    adapter: vercel(),
-    target: '#svelte',
-    vite: {
-      plugins: [
-        visualizer()
-      ],
-      build: {
-        target: ['es2020']
-      }
-    }
+    adapter: vercel()
   },
 
-  preprocess: preprocess({
-    postcss: {
-      plugins: [
-        tailwind,
-        autoprefixer
-      ]
-    }
-  })
+  preprocess: [
+    preprocess({
+      postcss: true
+    })
+  ]
 };

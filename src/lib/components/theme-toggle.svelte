@@ -1,11 +1,10 @@
 <script>
   import { theme } from '$lib/store'
-  import { fly, fade } from 'svelte/transition'
   import { sineInOut } from 'svelte/easing';
 
-  import Icon from 'svelte-icons-pack'
-  import DarkMode from 'svelte-icons-pack/io/IoMoon'
-  import LightMode from 'svelte-icons-pack/io/IoSunny'
+  import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
+  import { DarkMode } from '$icons'
+  import { LightMode } from '$icons'
 
   export let className = ''
 
@@ -39,14 +38,14 @@
 
 </script>
 
-<button class='{className} relative w-10 sm:w-16 h-full umami--click--toggle-{$theme}' aria-label={$theme === 'dark' ? 'Light mode' : 'Dark mode'} on:click={toggleTheme}>
+<button class='{className} relative w-10 sm:w-16 h-full' aria-label={$theme === 'dark' ? 'Light mode' : 'Dark mode'} on:click={toggleTheme}>
   {#if $theme == 'light'}
     <div in:fadefly={{ duration, delay, y: -y }} out:fadefly={{ duration, y: -y }} >
-      <Icon size='1.2em' className='-mt-2 absolute left-1/2 -translate-x-1/2 transition fill-current' src={DarkMode} />
+      <Icon inline={true} height='1.2em' class='-mt-2 absolute left-1/2 -translate-x-1/2 transition fill-current' icon={DarkMode} />
     </div>
   {:else if $theme == 'dark'}
     <div in:fadefly={{ duration, delay, y }} out:fadefly={{ duration, y }}>
-      <Icon size='1.2em' className='-mt-2 absolute left-1/2 -translate-x-1/2 transition fill-current' src={LightMode} />
+      <Icon inline={true} height='1.2em' class='-mt-2 absolute left-1/2 -translate-x-1/2 transition fill-current' icon={LightMode} />
     </div>
   {/if}
 </button>

@@ -1,22 +1,27 @@
 <script>
   export let className = ''
   import { activeGame, savedGames, parse } from '$lib/store'
-  import { fade } from 'svelte/transition'
+  import { fade, fly } from 'svelte/transition'
   import { page } from '$app/stores'
 
-  let game = {}
+  let game = {}, games
   activeGame.subscribe(id => {
-    savedGames.subscribe(parse(games => {
-      game = games[id]
+    savedGames.subscribe(parse(g => {
+      game = g[id]
+      games = Object.values(g).filter(i => i.id !== id)
     }))
   })
 
-  import ThemeToggle from '$lib/components/theme-toggle.svelte'
-  import { Picture } from '$lib/components/core'
+  const load = game => {
+    $activeGame = game.id
+    window.location.reload()
+  }
 
-  import Icon from 'svelte-icons-pack'
-  import Box from 'svelte-icons-pack/bi/BiPackage'
-  import Game from 'svelte-icons-pack/cg/CgGames'
+  import ThemeToggle from '$lib/components/theme-toggle.svelte'
+  import { Picture, Popover } from '$lib/components/core'
+
+  import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
+  import { Box, Save, Game, Caret, CaretRight } from '$icons'
 
   const pages = [
     { name: 'Game', link: '/game', icon: Game },
@@ -30,22 +35,55 @@
 
 <nav>
   <div class=p-container>
-    <a
+    <div class='inline-flex items-center'>
+      <a
       href="/"
       rel="external"
       class='{className} home group'>
       {#if game?.game}
         <Picture
           src=/assets/{game?.game}
-          className='hidden md:block md:mr-4 w-20'
+          className='h-7 w-auto my-1 md:mr-4 md:w-20 md:h-auto'
           alt='{game?.game} logo'
           aspect=192x96
         />
-        <h1 in:fade class='group-hover:border-black dark:group-hover:border-white'>
+        <h1 in:fade class='hidden md:block group-hover:border-black dark:group-hover:border-white'>
           {game?.name || ''}
         </h1>
       {/if}
     </a>
+
+      {#if games.length}
+        <Popover className='mt-1 sm:mt-4' title='Load saves' position={window?.innerWidth < 700 ? 'bottom' : 'right'}>
+          <span class='inline-flex'>
+            <Icon inline={true} class='transition fill-current ml-2' icon={Save} />
+            <Icon inline={true} class='hidden sm:block transition fill-current -ml-0.5' icon={CaretRight} />
+            <Icon inline={true} class='block sm:hidden transition fill-current -ml-0.5' icon={Caret} />
+          </span>
+
+          <ul in:fly={{ duration: 250, y: 50 }} out:fade={{ duration: 100 }} class='popover bg-white dark:bg-gray-900 rounded-xl shadow-lg w-60 mt-6 ml-4 sm:mt-4 sm:ml-2 flex flex-col divide-y dark:divide-gray-700' slot=popover>
+            <strong class='bg-black sm:bg-gray-800 text-white dark:bg-black rounded-t-xl -mb-px z-50 py-3 px-4'>Load Game</strong>
+            {#each games as game}
+              <li
+                class='px-4 py-2 text-gray-600 dark:text-gray-200 w-full text-sm cursor-pointer dark:hover:text-blue-500 hover:text-blue-400 inline-flex justify-between items-center transition'
+                title='Load game {game.name}'
+                >
+                <button on:click={load(game)}>
+                {game.name}
+                  <Picture
+                    alt='{game.name} logo'
+                    src=/assets/{game.game}
+                    className='ml-2 w-16'
+                    aspect=192x96
+                    />
+                </button>
+              </li>
+            {/each}
+          </ul>
+        </Popover>
+      {/if}
+
+  </div>
 
     <span class='inline-flex relative'>
       <ThemeToggle />
@@ -53,10 +91,10 @@
       {#each pages as p}
         <a
           class=link
-          class:active={p.link == $page.path}
+          class:active={p.link == $page.url.pathname}
           href={p.link}
           >
-          <Icon src={p.icon} className='fill-current' />
+          <Icon inline={true} icon={p.icon} class='fill-current' />
           {p.name}
         </a>
       {/each}
@@ -69,7 +107,7 @@
 
 <div class=fauxnav />
 
-<style>
+<style lang="postcss">
   .fauxnav { @apply h-12; }
 
   nav {
@@ -78,13 +116,27 @@
     @apply container mx-auto mb-8 md:mb-2 bg-black sm:bg-white text-white sm:text-black;
   }
 
+  nav :global(.p-container) {
+    @apply px-0;
+  }
+
   :global(.dark) nav {
     @apply sm:bg-gray-800
   }
 
   @media (min-width:theme('screens.sm')) {
     .fauxnav { @apply h-16; }
-    nav {transform: translateX(32px);}
+    nav {
+      width: 100%;
+      left: 0;
+      right: 0;
+    }
+    nav::after {
+      content: '';
+      background: linear-gradient(white 50%, transparent);
+      @apply absolute w-full -bottom-6 h-6;
+    }
+
     nav::after {
       content: '';
       background: linear-gradient(white 50%, transparent);
@@ -112,6 +164,6 @@
   :global(.dark) a.link.active { @apply hover:text-gray-100 text-gray-50 bg-gray-900 border-b-gray-200; }
 
   #sidenav_button {
-    @apply z-50 md:z-10 bottom-4 right-4 fixed md:absolute md:right-0 md:bottom-auto md:top-1/2 md:-translate-y-1/2 md:translate-x-full flex items-center justify-center;
+    @apply z-50 md:z-10 bottom-6 right-4 fixed md:absolute md:right-0 md:bottom-auto md:top-1/2 md:-translate-y-1/2 md:translate-x-full flex items-center justify-center;
   }
 </style>

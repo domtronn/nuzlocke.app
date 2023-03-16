@@ -2,10 +2,10 @@
   export let value, list, pageSize = 5, select = i => i, className = '', title = '', controls = true
 
   import { PIcon } from '$lib/components/core'
-  import Icon from 'svelte-icons-pack'
-  import Arrow from 'svelte-icons-pack/bi/BiSolidRightArrow'
+  import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
+  import { Arrow } from '$icons'
 
-  import Pip from 'svelte-icons-pack/bs/BsCircleFill'
+  import { Pip } from '$icons'
 
   import { fade } from 'svelte/transition'
   import { chunk } from '$lib/utils/arr'
@@ -31,7 +31,7 @@
             title='Page {i + 1}'
             on:click={set(i)}
           >
-            <Icon size=0.5rem src={Pip} className='fill-current transform transition {page === i ? 'scale-150' : 'scale-100 opacity-50'}' />
+            <Icon inline={true} height=0.5rem icon={Pip} class='fill-current transform transition {page === i ? 'scale-150' : 'scale-100 opacity-50'}' />
           </button>
         {/each}
       </div>
@@ -45,14 +45,14 @@
   class:justify-between={page < max && page > 0}
 >
   <button title='Previous page' class:hidden={!controls} disabled={page === 0} class='page disabled:opacity-25 block' on:click={dec}>
-    <Icon className='fill-current transform rotate-180' src={Arrow} />
+    <Icon inline={true} class='fill-current transform rotate-180' icon={Arrow} />
   </button>
 
   <div
-    class='grid -my-2 gap-x-2'
+    class='grid -my-2 mx-auto overflow-hidden'
     style='grid-template-columns: repeat({pageSize}, minmax(0, 1fr));'>
     {#each pages[page] as p, i (p)}
-      <div
+      <button
         in:fade={{ duration: 300, delay: 50 }}
         class:opacity-50={value !== (page * pageSize) + i}
         class:grayscale={value !== (page * pageSize) + i}
@@ -60,17 +60,17 @@
         class='transform transition hover:grayscale-0 hover:opacity-100 hover:scale-150 origin-center cursor-pointer'
         on:click={e => value = (page * pageSize) + i}>
         <PIcon name={select(p)} />
-      </div>
+      </button>
     {/each}
   </div>
 
   <button title='Next page' class:hidden={!controls} disabled={page === max} class='page disabled:opacity-25' on:click={inc}>
-    <Icon className=fill-current src={Arrow} />
+    <Icon inline={true} class=fill-current icon={Arrow} />
   </button>
 </div>
 {/if}
 
-<style>
+<style lang="postcss">
   button.page {
     @apply z-50 p-3 text-gray-600 hover:text-orange-600 disabled:hover:text-gray-600 disabled:cursor-default transition
   }

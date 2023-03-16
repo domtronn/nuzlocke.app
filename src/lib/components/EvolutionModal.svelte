@@ -4,8 +4,8 @@
   import { capitalise } from '$lib/utils/string'
 
   import Picon from '$lib/components/core/PokemonIcon.svelte'
-  import Icon from 'svelte-icons-pack'
-  import Bubbles from 'svelte-icons-pack/ri/RiBusinessBubbleChartFill'
+  import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
+  import { Bubbles } from '$icons'
 
   import { getContext } from 'svelte'
   const { close } = getContext('simple-modal')
@@ -16,13 +16,13 @@
 
 </script>
 
-<section class='flex flex-col items-center dark:bg-gray-900 bg-gray-50 rounded-lg p-8 pb-12 mx-auto shadow-lg border dark:text-gray-200 dark:border-gray-600'>
+<section class='flex flex-col items-center dark:bg-gray-900 bg-gray-50 rounded-lg p-8 pb-12 mx-auto shadow-lg  dark:text-gray-200'>
   <span><strong>{capitalise(base)}</strong> is evolving!</span>
 
   <span class='relative text-base mb-8 mt-2'>
-    <Icon src={Bubbles} size='4rem' className='animate-spin-slow-2 text-orange-200 dark:text-gray-800 fill-current absolute top-0 left-0' />
+    <Icon inline={true} icon={Bubbles} height='4rem' class='animate-spin-slow-2 text-orange-200 dark:text-gray-800 fill-current absolute top-0 left-0' />
     <span class='animate-spin-slow absolute -top-2 -left-2'>
-      <Icon src={Bubbles} size='5rem' className='rotate-45 text-yellow-200 dark:text-gray-700 fill-current' />
+      <Icon inline={true} icon={Bubbles} height='5rem' class='rotate-45 text-yellow-200 dark:text-gray-700 fill-current' />
     </span>
     <span>
       <Picon name={base} className='absolute inset-0 transform scale-250' />
@@ -39,7 +39,7 @@
   </div>
 </section>
 
-<style>
+<style lang="postcss">
   @keyframes shake {
     0%, 50% { transform: scale(2.2) rotate(0);}
     5%, 45% { transform: scale(2.2) rotate(-2deg);}

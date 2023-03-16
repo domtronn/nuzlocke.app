@@ -8,7 +8,7 @@
   export let theta, v, decay = 0.975, g = 3, scale = 1, className = ''
 
   const random = (Math.random() * 600) + 200
-  let x = 0, y = 0, tiltTheta = 0
+  export let x = 0, y = 0, tiltTheta = 0
 
   onMount(() => {
     let frame

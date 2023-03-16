@@ -17,7 +17,7 @@
   <slot />
 </button>
 
-<style>
+<style lang="postcss">
   :root {
     --b-fg: theme('colors.gray.700');
     --b-bg: theme('colors.gray.100');

@@ -1,6 +1,6 @@
 <script>
   export let name, value = null, color = '', className = '', placeholder = '', icon, rounded = false
-  import Icon from 'svelte-icons-pack'
+  import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
   name = name || placeholder
 </script>
 
@@ -18,14 +18,12 @@
   />
 {#if icon}
   <span>
-    <Icon src={icon} className='fill-current absolute left-0 top-1/2 -translate-y-1/2 ml-3' />
+    <Icon inline={true} icon={icon} class='fill-current absolute left-0 top-1/2 -translate-y-1/2 ml-3' />
   </span>
 {/if}
 <slot />
 
-<style>
-  div { position: relative; width: 100%; }
-
+<style lang="postcss">
   :root {
     --inp-focus: theme('colors.black');
     --inp-focus-2: theme('colors.gray.500');
@@ -46,17 +44,30 @@
     border-color: theme('colors.gray.200');
   }
 
-  :global(.dark) input {
+  :global(.dark) input
+  {
     @apply text-gray-100 placeholder-gray-500;
     border-color: theme('colors.gray.600');
   }
 
   :global(.dark) span { @apply text-gray-500 transition }
-  :global(.dark) input:hover + span, :global(.dark) input:focus + span { @apply text-gray-100 }
-  span { @apply text-gray-400 transition }
-  input:hover + span, input:focus + span { @apply text-gray-800 }
 
-  input:hover { border-color: var(--inp-focus-2); }
+  span { @apply text-gray-400 transition }
+
+  input:focus + span {
+    @apply text-gray-800
+  }
+
+  :global(.dark) input:focus + span {
+    @apply text-gray-100
+  }
+
+  @media (hover: hover) {
+    input:focus + span { @apply text-gray-800 }
+    :global(.dark) input:hover + span { @apply text-gray-100 }
+    input:hover { border-color: var(--inp-focus-2); }
+  }
+
   input:focus {
     border-color: var(--inp-focus);
     --tw-ring-color: var(--inp-focus-2);
@@ -74,4 +85,27 @@
     width: 1px;
   }
 
+  input.important\:pr {
+    padding-right: 32px !important;
+  }
+
+  @media (max-width: theme('screens.sm')) {
+    input.sm\:inverted:hover + span,
+    input.sm\:inverted:focus + span {
+      @apply text-gray-100;
+    }
+
+    :global(.dark) input.sm\:inverted:hover + span,
+    :global(.dark) input.sm\:inverted:focus + span {
+      @apply text-gray-800;
+    }
+
+    input.sm\:inverted {
+      @apply bg-black text-white;
+    }
+
+    :global(.dark) input.sm\:inverted {
+      @apply bg-gray-50 text-black;
+    }
+  }
 </style>

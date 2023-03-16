@@ -3,12 +3,16 @@
 
   import { fade } from 'svelte/transition'
 
-  import Icon from 'svelte-icons-pack'
-  import Badge from 'svelte-icons-pack/fi/FiRefreshCcw'
-  import Ball from 'svelte-icons-pack/cg/CgPokemon'
+  import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
+  import { Hand } from '$icons'
+  import { Loop as Badge } from '$icons'
+  import { Ball } from '$icons'
 
+  import { Tooltip, PIcon } from '$lib/components/core'
   import ColorMap from '$lib/data/colors.json'
-  import { Stars as Pattern } from '$lib/utils/pattern'
+
+  import { SPRITE } from '$utils/rewrites'
+  import { Stars as Pattern } from '$utils/pattern'
 
   $: atk = pokemon[0]
   $: atkCols = atk.types.map(t => ColorMap[t.toLowerCase()])
@@ -18,7 +22,7 @@
   $: defCols = def.types.map(t => ColorMap[t.toLowerCase()])
   $: defBgImg = Pattern(defCols[1] || defCols[0])
 
-  const sprite = (id, status) => `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${status === 6 ? 'shiny/' : ''}${id}.png`
+  const sprite = id => `${SPRITE}/${status === 6 ? 'shiny/' : ''}${id}.png`
 </script>
 
 <div class='shadow-lg dark:text-gray-50 relative {className}'>
@@ -47,12 +51,26 @@
       <img alt={def.name} in:fade={{ duration: 500 }} class='z-20 flex -mx-6 h-32 w-32' src={sprite(def.imgId)} />
     {/key}
 
+      {#if def?.original?.held}
+        {#key def.original.held.name}
+          <div style='transform: translate(var(--tw-translate-x),var(--tw-translate-y)) scaleX(-1)' class='absolute right-0 top-1/2 -translate-y-3 -translate-x-5 z-20 p-1 mb-1 flex flex-col cursor-help items-center'>
+            <Tooltip>
+              {def.original.held.name}: {def.original.held.effect.replace(/^Held: +/g, '')}
+            </Tooltip>
+            <span>
+              <PIcon type='item' name={def.original.held.sprite} />
+            </span>
+            <Icon inline={true} icon={Hand} class='-mt-3.5 fill-current dark:text-white' />
+          </div>
+        {/key}
+      {/if}
+
     <!-- VS Icon -->
     <div class='absolute left-1/2 -translate-x-1/2 bottom-1 w-8 h-8'>
       <span class='flex'>
-        <Icon className='absolute' size=1.4em src={Badge} />
-        <Icon className='absolute dark:bg-gray-800 bg-white rounded-full -top-0.5 right-2' size=0.8em src={Ball} />
-        <Icon className='absolute dark:bg-gray-800 bg-white rounded-full bottom-2 -left-0.5' size=0.8em src={Ball} />
+        <Icon inline={true} class='absolute' height=1.4em icon={Badge} />
+        <Icon inline={true} class='absolute dark:bg-gray-800 bg-white rounded-full -top-0.5 right-2' height=0.8em icon={Ball} />
+        <Icon inline={true} class='absolute dark:bg-gray-800 bg-white rounded-full bottom-2 -left-0.5' height=0.8em icon={Ball} />
       </span>
       <p class='text-2xl font-mono left-0.5 absolute bottom-7'>vs</p>
     </div>
@@ -67,7 +85,7 @@
 
 </div>
 
-<style>
+<style lang="postcss">
   img.flip { animation: bob-left 4.5s ease 0.3s infinite; }
   img {
     animation: bob 5.5s ease 0.3s infinite;
@@ -75,15 +93,15 @@
   }
 
   @keyframes bob {
-    0%, 100% {transform: var(--tw-transform) scaleX(1) scaleY(1);}
-    25%, 75% { transform: var(--tw-transform) scaleX(1.03) scaleY(0.97); }
-    50% { transform: var(--tw-transform) scaleX(0.99) scaleY(1.03); }
+    0%, 100% {transform: translate(var(--tw-translate-x),var(--tw-translate-y)) scaleX(1) scaleY(1);}
+    25%, 75% { transform: translate(var(--tw-translate-x),var(--tw-translate-y)) scaleX(1.03) scaleY(0.97); }
+    50% { transform: translate(var(--tw-translate-x),var(--tw-translate-y)) scaleX(0.99) scaleY(1.03); }
   }
 
   @keyframes bob-left {
-    0%, 100% {transform: var(--tw-transform) scaleX(-1) scaleY(1);}
-    25%, 75% { transform: var(--tw-transform) scaleX(-1.02) scaleY(0.97); }
-    50% { transform: var(--tw-transform) scaleX(-0.96) scaleY(1.01); }
+    0%, 100% {transform: translate(var(--tw-translate-x),var(--tw-translate-y)) scaleX(-1) scaleY(1);}
+    25%, 75% { transform: translate(var(--tw-translate-x),var(--tw-translate-y)) scaleX(-1.02) scaleY(0.97); }
+    50% { transform: translate(var(--tw-translate-x),var(--tw-translate-y)) scaleX(-0.96) scaleY(1.01); }
   }
 
   .separator { height: theme('borderWidth.2'); }

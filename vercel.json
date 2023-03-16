@@ -1,0 +1,220 @@
+{
+  "trailingSlash": false,
+  "rewrites": [
+    {
+      "source": "/sprites/unown-qm",
+      "destination": "https://img.pokemondb.net/sprites/home/normal/unown-qm.png"
+    },
+    {
+      "source": "/sprites/:id*",
+      "destination": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/:id*"
+    },
+    {
+      "source": "/assets/js/qrcode.min.js",
+      "destination": "https://cdn.jsdelivr.net/gh/davidshimjs/qrcodejs@gh-pages/qrcode.min.js"
+    },
+    {
+      "source": "/assets/js/instascan.min.js",
+      "destination": "https://cdn.jsdelivr.net/gh/schmich/instascan-builds@master/instascan.min.js"
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/index.html",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/guides/vi",
+      "destination": "/guides/violet",
+      "permanent": true
+    },
+    {
+      "source": "/guides/sc",
+      "destination": "/guides/scarlet",
+      "permanent": true
+    },
+    {
+      "source": "/guides/sw",
+      "destination": "/guides/sword",
+      "permanent": true
+    },
+    {
+      "source": "/guides/sh",
+      "destination": "/guides/shield",
+      "permanent": true
+    },
+    {
+      "source": "/guides/usun",
+      "destination": "/guides/ultra-sun",
+      "permanent": true
+    },
+    {
+      "source": "/guides/umoon",
+      "destination": "/guides/ultra-moon",
+      "permanent": true
+    },
+    {
+      "source": "/guides/bl2",
+      "destination": "/guides/black-2",
+      "permanent": true
+    },
+    {
+      "source": "/guides/wh2",
+      "destination": "/guides/white-2",
+      "permanent": true
+    },
+    {
+      "source": "/guides/bl2c",
+      "destination": "/guides/black-2-challenge",
+      "permanent": true
+    },
+    {
+      "source": "/guides/wh2c",
+      "destination": "/guides/white-2-challenge",
+      "permanent": true
+    },
+    {
+      "source": "/guides/bl",
+      "destination": "/guides/black",
+      "permanent": true
+    },
+    {
+      "source": "/guides/wh",
+      "destination": "/guides/white",
+      "permanent": true
+    },
+    {
+      "source": "/guides/bd",
+      "destination": "/guides/brilliant-diamond",
+      "permanent": true
+    },
+    {
+      "source": "/guides/sp",
+      "destination": "/guides/shining-pearl",
+      "permanent": true
+    },
+    {
+      "source": "/guides/radred",
+      "destination": "/guides/radical-red",
+      "permanent": true
+    },
+    {
+      "source": "/guides/renplat",
+      "destination": "/guides/renegade-platinum",
+      "permanent": true
+    },
+    {
+      "source": "/guides/pt",
+      "destination": "/guides/platinum",
+      "permanent": true
+    },
+    {
+      "source": "/guides/d",
+      "destination": "/guides/diamond",
+      "permanent": true
+    },
+    {
+      "source": "/guides/p",
+      "destination": "/guides/pearl",
+      "permanent": true
+    },
+    {
+      "source": "/guides/or",
+      "destination": "/guides/omega-ruby",
+      "permanent": true
+    },
+    {
+      "source": "/guides/as",
+      "destination": "/guides/alpha-sapphire",
+      "permanent": true
+    },
+    {
+      "source": "/guides/em",
+      "destination": "/guides/emerald",
+      "permanent": true
+    },
+    {
+      "source": "/guides/incem",
+      "destination": "/guides/inclement-emerald",
+      "permanent": true
+    },
+    {
+      "source": "/guides/saph",
+      "destination": "/guides/sapphire",
+      "permanent": true
+    },
+    {
+      "source": "/guides/stormsilv",
+      "destination": "/guides/storm-silver",
+      "permanent": true
+    },
+    {
+      "source": "/guides/sacredgold",
+      "destination": "/guides/sacred-gold",
+      "permanent": true
+    },
+    {
+      "source": "/guides/hg",
+      "destination": "/guides/heart-gold",
+      "permanent": true
+    },
+    {
+      "source": "/guides/ss",
+      "destination": "/guides/soul-silver",
+      "permanent": true
+    },
+    {
+      "source": "/guides/silv",
+      "destination": "/guides/silver",
+      "permanent": true
+    },
+    {
+      "source": "/guides/crys",
+      "destination": "/guides/crystal",
+      "permanent": true
+    },
+    {
+      "source": "/guides/fr",
+      "destination": "/guides/fire-red",
+      "permanent": true
+    },
+    {
+      "source": "/guides/lg",
+      "destination": "/guides/leaf-green",
+      "permanent": true
+    },
+    {
+      "source": "/guides/yel",
+      "destination": "/guides/yellow",
+      "permanent": true
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "X-XSS-Protection",
+          "value": "1; mode=block"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin"
+        },
+        {
+          "key": "Content-Security-Policy",
+          "value": "default-src 'self'; img-src * cdn.statically.io img.nuzlocke.app data:; frame-src nuzlocke.vercel.app; font-src 'self' fonts.gstatic.com; style-src 'self' 'unsafe-inline'; connect-src 'self' *.googletagmanager.com *.google-analytics.com *.nuzlocke.app cdn.statically.io c.bin.com fonts.gstatic.com raw.githubusercontent.com nuzlocke-analytics.vercel.app; script-src 'unsafe-inline' 'self'  *.googletagmanager.com *.google-analytics.com nuzlocke-analytics.vercel.app;"
+        }
+      ]
+    }
+  ]
+}

@@ -2,9 +2,9 @@
   import AutoComplete from 'simple-svelte-autocomplete'
 
   import PIcon from '$lib/components/core/PokemonIcon.svelte'
-  import Icon from 'svelte-icons-pack'
-  import Spinner from 'svelte-icons-pack/cg/CgSpinner'
-  import Chevron from 'svelte-icons-pack/bi/BiSolidChevronUp'
+  import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
+  import { Spinner } from '$icons'
+  import { Chevron } from '$icons'
 
   export let items = undefined, fetch = undefined
   export let placeholder, name, inset = false, color = '', label = 'label', className = '', dropdownClass = '', wide = false, rounded = false
@@ -19,6 +19,8 @@
     ...(typeof label === 'function' ? { labelFunction: label }: {})
   }
 
+  export let search
+
   $: style = inset ? `--auc-inset: ${typeof inset === 'string' ? inset : '3.2rem'}` : ''
 </script>
 
@@ -26,9 +28,10 @@
   <slot iconClass='pointer-events-none absolute z-40 -left-2 top-1/2 -translate-y-1/2' {selected} name=icon />
 
   <Icon
+    inline={true}
     size=1em
-    src={Chevron}
-    className='z-10 absolute right-1 pointer-events-none top-1/2 -translate-y-1/2 fill-current text-gray-200 dark:text-gray-500 dark:border-gray-500 transform rotate-180 border-r w-6'
+    icon={Chevron}
+    class='z-10 absolute right-1 pointer-events-none top-1/2 -translate-y-1/2 fill-current text-gray-200 dark:text-gray-500 dark:border-gray-500 transform rotate-180 border-r w-6'
   />
 
   <label for={name}>{name}</label>
@@ -37,12 +40,14 @@
     hideArrow
 
     inputId={name}
+    bind:text={search}
     bind:selectedItem={selected}
 
     {items}
     {placeholder}
     {...labelProps}
 
+    html5autocomplete={false}
     delay={fetch ? 75 : 0}
     searchFunction={fetch}
 
@@ -65,14 +70,14 @@
     </span>
 
     <span slot=loading let:loadingText={loadingText} class='inline-flex items-center h-6 text-sm text-gray-600'>
-      <Icon src={Spinner} className='fill-current animate-spin mr-2' />
+      <Icon inline={true} icon={Spinner} class='fill-current animate-spin mr-2' />
       {loadingText}
     </span>
 
   </AutoComplete>
 </div>
 
-<style>
+<style lang="postcss">
   :root {
     --auc-inset: theme('spacing.3');
 
@@ -139,21 +144,6 @@
     width: calc(100vw - theme('spacing.8')) !important;
   }
 
-  @media (min-width: theme('screens.sm')) {
-    :global(input.autocomplete-input),
-    :global(input.autocomplete)
-    {
-      font-size: theme('fontSize.xs') !important;
-      height: theme('spacing.10') !important;
-    }
-
-    :global(div.autocomplete-list),
-    :global(.wide div.autocomplete-list)
-    {
-      width: auto !important;
-    }
-  }
-
   :global(.dark input.autocomplete-input) {
     border-color: theme('colors.gray.600');
   }
@@ -166,7 +156,7 @@
 
   /* Autocomplete list */
   :global(div.autocomplete-list) {
-    padding: 0 !important;
+    padding: theme('spacing.2') 0 !important;
     margin-top: theme('spacing.2');
     border-width: theme('borderWidth.2') !important;
     border-color: theme('colors.gray.200') !important;
@@ -178,6 +168,7 @@
   }
 
   :global(div.autocomplete-list-item) {
+    padding: 0 !important;
     color: var(--auc-fg) !important;
   }
 
@@ -187,12 +178,58 @@
     color: var(--auc-focus-fg) !important;
   }
 
-  :global(div.autocomplete-list-item:hover),
-  :global(div.autocomplete-list-item.selected)
-  {
+  :global(div.autocomplete-list-item.confirmed),
+  :global(div.autocomplete-list-item.selected.confirmed) {
+    background-color: var(--auc-focus) !important;
     color: var(--auc-focus-fg) !important;
-    background-color: var(--auc-focus-2) !important;
   }
+
+  @media (hover: hover) {
+    :global(div.autocomplete-list-item:hover),
+    :global(div.autocomplete-list-item.selected)
+    {
+      color: var(--auc-focus-fg) !important;
+      background-color: var(--auc-focus-2) !important;
+    }
+  }
+
+  @media (hover: none) {
+    :global(div.autocomplete-list-item:hover),
+    :global(div.autocomplete-list-item.selected)
+    {
+      color: var(--auc-fg) !important;
+      background-color: var(--auc-bg) !important;
+    }
+  }
+
+  @media (min-width: theme('screens.sm')) {
+    :global(input.autocomplete-input),
+    :global(input.autocomplete)
+    {
+      font-size: theme('fontSize.xs') !important;
+      height: theme('spacing.10') !important;
+    }
+
+    :global(div.autocomplete-list),
+    :global(.wide div.autocomplete-list)
+    {
+      padding: 0 !important;
+      width: auto !important;
+    }
+
+    :global(div.autocomplete-list-item.selected .dupe),
+    :global(div.autocomplete-list-item.confirmed .dupe) {
+      opacity: 100% !important;
+      filter: none;
+    }
+
+    :global(div.autocomplete-list-item.selected .dupe__span),
+    :global(div.autocomplete-list-item.confirmed .dupe__span) {
+      transform: translateX(-8px);
+      font-weight: bold;
+    }
+  }
+
 
   label {
     border: 0;

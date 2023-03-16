@@ -4,25 +4,42 @@
   "type": "module",
   "scripts": {
     "lint": "eslint src",
-    "dev": "svelte-kit dev",
-    "build": "svelte-kit build --verbose",
-    "preview": "svelte-kit preview"
+    "dev": "vite dev",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test:randomiser": "for i in `cat src/lib/data/games.json | jq 'keys[]' -r`; do curl -s http://localhost:5173/api/route/generate/$i.json; done",
+    "test:pokemon": "for i in `cat src/lib/data/games.json | jq 'keys[]' -r`; do curl -s http://localhost:5173/api/$i/pokemon.json; done",
+    "test:league": "deno run --allow-read ./static/league/validate.ts"
   },
   "devDependencies": {
+    "@iconify-icons/mdi": "^1.2.34",
     "@sveltejs/adapter-vercel": "next",
     "@sveltejs/kit": "next",
-    "autoprefixer": "^10.3.7",
+    "@tailwindcss/line-clamp": "^0.4.2",
+    "autoprefixer": "^10.4.7",
     "cssnano": "^5.0.8",
     "eslint": "^8.2.0",
     "eslint-plugin-svelte3": "^3.2.1",
-    "postcss": "^8.3.9",
-    "postcss-load-config": "^3.1.0",
-    "rollup-plugin-visualizer": "^5.5.2",
+    "postcss": "^8.4.14",
+    "postcss-load-config": "^4.0.1",
+    "rollup-plugin-visualizer": "^5.5.4",
     "svelte": "^3.38.3",
-    "svelte-preprocess": "^4.9.8",
-    "tailwindcss": "^2.2.16"
+    "svelte-preprocess": "^4.10.7",
+    "tailwindcss": "^3.2.4",
+    "vite": "^3.2.4"
   },
   "dependencies": {
+    "@google-cloud/bigquery": "^6.1.0",
+    "@iconify-icons/emojione-monotone": "^1.2.4",
+    "@iconify-icons/fa-solid": "^1.2.4",
+    "@iconify-icons/fe": "^1.2.3",
+    "@iconify-icons/gg": "^1.2.3",
+    "@iconify-icons/ph": "^1.2.3",
+    "@iconify-icons/ri": "^1.2.4",
+    "@iconify-icons/simple-icons": "^1.2.37",
+    "@iconify-icons/wi": "^1.2.3",
+    "@iconify/svelte": "^3.0.1",
+    "@smogon/calc": "^0.6.0",
     "clean-css": "^5.2.2",
     "dayjs": "^1.10.7",
     "pokedex-promise-v2": "^3.3.2",
@@ -32,19 +49,25 @@
     "ramda": "^0.27.1",
     "simple-svelte-autocomplete": "^2.2.3",
     "simplex-noise": "^3.0.0",
-    "svelte-icons-pack": "^1.4.6",
     "svelte-intersection-observer": "^0.9.1",
     "svelte-portal": "^2.1.2",
     "svelte-simple-modal": "^1.1.1",
+    "tinyurl": "^1.1.7",
     "tippy.js": "^6.3.7",
-    "workbox-expiration": "^6.4.1",
-    "workbox-routing": "^6.4.1",
-    "workbox-strategies": "^6.4.1"
+    "zod": "^3.21.4"
   },
   "prettier": {
     "arrowParens": "always",
     "singleQuote": true,
     "tabWidth": 2,
     "trailingComma": "none"
-  }
+  },
+  "resolutions": {
+    "dotenv": ">= 15.0.0"
+  },
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/domtronn/dc-nuzlocke",
+  "author": "domtronn <dgc336@gmail.com>",
+  "license": "MIT"
 }
