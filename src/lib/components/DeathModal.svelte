@@ -5,8 +5,8 @@
   import { Input, Button } from '$lib/components/core'
 
   import Picon from '$lib/components/core/PokemonIcon.svelte'
-  import Icon from 'svelte-icons-pack'
-  import Bubbles from 'svelte-icons-pack/ri/RiBusinessBubbleChartFill'
+  import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
+  import { Bubbles } from '$icons'
 
   import { getContext } from 'svelte'
   const { close } = getContext('simple-modal')
@@ -14,6 +14,21 @@
     select(d)
     close()
   }
+
+
+
+  const TokenisedLossSentiments = [
+    `After foolishly sending in a <POKEMON TYPE>-type <POKEMON NAME> to battle against an <OPPONENT TYPE>-type, the trainer was shocked when their opponent's <OPPONENT POKEMON> easily defeated them.`,
+    `Despite their best efforts, the trainer's <POKEMON NAME> was no match for the opponent's <OPPONENT NAME>, who easily took down the <POKEMON TYPE>-type with a powerful <OPPONENT ATTACK> attack.`,
+    `The trainer's overconfidence led them to underestimate their opponent's <OPPONENT NAME>, resulting in the humiliating death of their own <POKEMON NAME>.`,
+    `In a moment of panic, the trainer accidentally commanded <POKEMON NAME> to use a <POKEMON ATTACK TYPE>-type move against a <OPPONENT>-type opponent, resulting in a their untimely demise.`,
+
+    `In their battle against the <OPPONENT SPECIALITY><OPPONENT GROUP><OPPONENT NAME>, the trainer's <POKEMON NAME> was quickly defeated by a well-placed <OPPONENT ATTACK> attack.`,
+
+    ``
+
+  ]
+
 
 </script>
 
