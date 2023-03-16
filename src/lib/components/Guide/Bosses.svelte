@@ -8,8 +8,10 @@
   import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
   import { Link } from '$icons'
 
+  import { GuideBossOrder } from '$lib/data/groups'
+
   const count = Object.values(gyms).flat().length
-  const order = ['Gym Leader', 'Elite Four', 'Rival', 'Evil Team', 'Mini Boss', 'Other'].filter(i => gyms[i])
+  const order = GuideBossOrder.filter(i => gyms[i])
   const identity = i => i
 
   const rivalVal = gyms['Rival'][0].value

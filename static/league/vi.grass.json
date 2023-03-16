@@ -1578,61 +1578,6 @@
       }
     ]
   },
-  "t3": {
-    "name": "Orthworm",
-    "speciality": "",
-    "img": "/sprite/968",
-    "pokemon": [
-      {
-        "name": "orthworm",
-        "level": "29",
-        "moves": [
-          {
-            "power": 100,
-            "type": "steel",
-            "damage_class": "physical",
-            "name": "Iron Tail",
-            "effect": "Has a 30% chance to lower the target's Defense by one stage."
-          },
-          {
-            "power": 70,
-            "type": "normal",
-            "damage_class": "physical",
-            "name": "Headbutt",
-            "effect": "Has a 30% chance to make the target flinch."
-          },
-          {
-            "power": 15,
-            "type": "normal",
-            "damage_class": "physical",
-            "name": "Wrap",
-            "effect": "Prevents the target from fleeing and inflicts damage for 2-5 turns."
-          },
-          {
-            "type": "rock",
-            "damage_class": "status",
-            "name": "Sandstorm",
-            "effect": "Changes the weather to a sandstorm for five turns."
-          }
-        ],
-        "ability": {
-          "name": "Earth Eater"
-        },
-        "sprite": "968",
-        "types": [
-          "steel"
-        ],
-        "stats": {
-          "hp": 70,
-          "atk": 85,
-          "def": 145,
-          "spa": 60,
-          "spd": 55,
-          "spe": 65
-        }
-      }
-    ]
-  },
   "r1": {
     "name": "Nemona",
     "speciality": "",
@@ -1881,59 +1826,57 @@
       }
     ]
   },
-  "t4v": {
-    "name": "Iron Treads",
+  "t3": {
+    "name": "Orthworm",
     "speciality": "",
-    "img": "/sprite/990",
+    "img": "/sprite/968",
     "pokemon": [
       {
-        "name": "iron-treads",
-        "level": "45",
+        "name": "orthworm",
+        "level": "29",
         "moves": [
           {
-            "power": 50,
-            "type": "normal",
-            "damage_class": "physical",
-            "name": "Rapid Spin",
-            "effect": "Frees the user from binding moves, removes Leech Seed, and blows away Spikes."
-          },
-          {
-            "power": 80,
+            "power": 100,
             "type": "steel",
             "damage_class": "physical",
-            "name": "Iron Head",
+            "name": "Iron Tail",
+            "effect": "Has a 30% chance to lower the target's Defense by one stage."
+          },
+          {
+            "power": 70,
+            "type": "normal",
+            "damage_class": "physical",
+            "name": "Headbutt",
             "effect": "Has a 30% chance to make the target flinch."
           },
           {
-            "power": 65,
-            "type": "dark",
+            "power": 15,
+            "type": "normal",
             "damage_class": "physical",
-            "name": "Knock Off",
-            "effect": "Target drops its held item."
+            "name": "Wrap",
+            "effect": "Prevents the target from fleeing and inflicts damage for 2-5 turns."
           },
           {
-            "power": 75,
-            "type": "ground",
-            "damage_class": "physical",
-            "name": "Stomping Tantrum",
-            "effect": "Has double power if the user's last move failed."
+            "type": "rock",
+            "damage_class": "status",
+            "name": "Sandstorm",
+            "effect": "Changes the weather to a sandstorm for five turns."
           }
         ],
         "ability": {
-          "name": "Quark Drive"
+          "name": "Earth Eater"
         },
-        "sprite": "990",
+        "sprite": "968",
         "types": [
-          "ground",
           "steel"
         ],
         "stats": {
-          "hp": 90,
-          "atk": 112,
-          "def": 120,
-          "spa": 72,
-          "spd": 70,
-          "spe": 106
+          "hp": 70,
+          "atk": 85,
+          "def": 145,
+          "spa": 60,
+          "spd": 55,
+          "spe": 65
         }
       }
     ]
@@ -2310,6 +2253,63 @@
           "spa": 85,
           "spd": 75,
           "spe": 85
+        }
+      }
+    ]
+  },
+  "t4v": {
+    "name": "Iron Treads",
+    "speciality": "",
+    "img": "/sprite/990",
+    "pokemon": [
+      {
+        "name": "iron-treads",
+        "level": "45",
+        "moves": [
+          {
+            "power": 50,
+            "type": "normal",
+            "damage_class": "physical",
+            "name": "Rapid Spin",
+            "effect": "Frees the user from binding moves, removes Leech Seed, and blows away Spikes."
+          },
+          {
+            "power": 80,
+            "type": "steel",
+            "damage_class": "physical",
+            "name": "Iron Head",
+            "effect": "Has a 30% chance to make the target flinch."
+          },
+          {
+            "power": 65,
+            "type": "dark",
+            "damage_class": "physical",
+            "name": "Knock Off",
+            "effect": "Target drops its held item."
+          },
+          {
+            "power": 75,
+            "type": "ground",
+            "damage_class": "physical",
+            "name": "Stomping Tantrum",
+            "effect": "Has double power if the user's last move failed."
+          }
+        ],
+        "ability": {
+          "name": "Quark Drive"
+        },
+        "sprite": "990",
+        "types": [
+          "ground",
+          "steel"
+        ],
+        "stats": {
+          "hp": 90,
+          "atk": 112,
+          "def": 120,
+          "spa": 72,
+          "spd": 70,
+          "spe": 106
         }
       }
     ]
@@ -4334,6 +4334,309 @@
           "spa": 130,
           "spd": 81,
           "spe": 86
+        }
+      }
+    ]
+  },
+  "arv": {
+    "name": "Arven",
+    "speciality": "",
+    "pokemon": [
+      {
+        "name": "greedent",
+        "level": "58",
+        "moves": [
+          {
+            "power": 25,
+            "type": "grass",
+            "damage_class": "physical",
+            "name": "Bullet Seed",
+            "effect": "Hits 2-5 times in one turn."
+          },
+          {
+            "power": 85,
+            "type": "normal",
+            "damage_class": "physical",
+            "name": "Body Slam",
+            "effect": "Has a 30% chance to paralyze the target."
+          },
+          {
+            "power": 85,
+            "type": "psychic",
+            "damage_class": "physical",
+            "name": "Psychic Fangs",
+            "effect": "Destroys Reflect and Light Screen."
+          },
+          {
+            "power": 100,
+            "type": "ground",
+            "damage_class": "physical",
+            "name": "Earthquake",
+            "effect": "Inflicts regular damage and can hit Dig users."
+          }
+        ],
+        "ability": {
+          "name": "Cheek Pouch",
+          "effect": "Restores HP upon eating a Berry, in addition to the Berry's effect."
+        },
+        "sprite": "820",
+        "types": [
+          "normal"
+        ],
+        "stats": {
+          "hp": 120,
+          "atk": 95,
+          "def": 95,
+          "spa": 55,
+          "spd": 75,
+          "spe": 20
+        }
+      },
+      {
+        "name": "cloyster",
+        "level": "59",
+        "moves": [
+          {
+            "power": 25,
+            "type": "rock",
+            "damage_class": "physical",
+            "name": "Rock Blast",
+            "effect": "Hits 2-5 times in one turn."
+          },
+          {
+            "power": 25,
+            "type": "ice",
+            "damage_class": "physical",
+            "name": "Icicle Spear",
+            "effect": "Hits 2-5 times in one turn."
+          },
+          {
+            "power": 85,
+            "type": "water",
+            "damage_class": "physical",
+            "name": "Liquidation",
+            "effect": "Has a 20% chance to lower the target's Defense by one stage."
+          },
+          {
+            "type": "psychic",
+            "damage_class": "status",
+            "name": "Light Screen",
+            "effect": "Reduces damage from special attacks by 50% for five turns."
+          }
+        ],
+        "ability": {
+          "name": "Skill Link",
+          "effect": "Extends two-to-five-hit moves and triple kick to their full length every time."
+        },
+        "sprite": "91",
+        "types": [
+          "water",
+          "ice"
+        ],
+        "stats": {
+          "hp": 50,
+          "atk": 95,
+          "def": 180,
+          "spa": 85,
+          "spd": 45,
+          "spe": 70
+        }
+      },
+      {
+        "name": "scovillain",
+        "level": "60",
+        "moves": [
+          {
+            "power": 110,
+            "type": "fire",
+            "damage_class": "special",
+            "name": "Fire Blast",
+            "effect": "Has a 10% chance to burn the target."
+          },
+          {
+            "power": 90,
+            "type": "grass",
+            "damage_class": "special",
+            "name": "Energy Ball",
+            "effect": "Has a 10% chance to lower the target's Special Defense by one stage."
+          },
+          {
+            "power": 80,
+            "type": "psychic",
+            "damage_class": "physical",
+            "name": "Zen Headbutt",
+            "effect": "Has a 20% chance to make the target flinch."
+          },
+          {
+            "power": 80,
+            "type": "dark",
+            "damage_class": "physical",
+            "name": "Crunch",
+            "effect": "Has a 20% chance to lower the target's Defense by one stage."
+          }
+        ],
+        "ability": {
+          "name": "Chlorophyll",
+          "effect": "Doubles Speed during strong sunlight."
+        },
+        "sprite": "952",
+        "types": [
+          "grass",
+          "fire"
+        ],
+        "stats": {
+          "hp": 65,
+          "atk": 108,
+          "def": 65,
+          "spa": 108,
+          "spd": 65,
+          "spe": 75
+        }
+      },
+      {
+        "name": "toedscruel",
+        "level": "61",
+        "moves": [
+          {
+            "power": 120,
+            "type": "grass",
+            "damage_class": "physical",
+            "name": "Power Whip"
+          },
+          {
+            "power": 90,
+            "type": "ground",
+            "damage_class": "special",
+            "name": "Earth Power",
+            "effect": "Has a 10% chance to lower the target's Special Defense by one stage."
+          },
+          {
+            "type": "grass",
+            "damage_class": "status",
+            "name": "Spore",
+            "effect": "Puts the target to sleep."
+          },
+          {
+            "power": 90,
+            "type": "poison",
+            "damage_class": "special",
+            "name": "Sludge Bomb",
+            "effect": "Has a 30% chance to poison the target."
+          }
+        ],
+        "ability": {
+          "name": "Mycelium Might"
+        },
+        "sprite": "949",
+        "types": [
+          "ground",
+          "grass"
+        ],
+        "stats": {
+          "hp": 80,
+          "atk": 70,
+          "def": 65,
+          "spa": 80,
+          "spd": 120,
+          "spe": 100
+        }
+      },
+      {
+        "name": "garganacl",
+        "level": "62",
+        "moves": [
+          {
+            "power": 100,
+            "type": "rock",
+            "damage_class": "physical",
+            "name": "Stone Edge",
+            "effect": "Has an increased chance for a critical hit."
+          },
+          {
+            "power": 100,
+            "type": "ground",
+            "damage_class": "physical",
+            "name": "Earthquake",
+            "effect": "Inflicts regular damage and can hit Dig users."
+          },
+          {
+            "power": 80,
+            "type": "fighting",
+            "damage_class": "physical",
+            "name": "Body Press"
+          },
+          {
+            "type": "rock",
+            "damage_class": "status",
+            "name": "Stealth Rock",
+            "effect": "Causes damage when opposing Pokémon switch in."
+          }
+        ],
+        "ability": {
+          "name": "Purifying Salt"
+        },
+        "sprite": "934",
+        "types": [
+          "rock"
+        ],
+        "stats": {
+          "hp": 100,
+          "atk": 100,
+          "def": 130,
+          "spa": 45,
+          "spd": 90,
+          "spe": 35
+        }
+      },
+      {
+        "name": "mabosstiff",
+        "level": "63",
+        "moves": [
+          {
+            "power": 80,
+            "type": "dark",
+            "damage_class": "physical",
+            "name": "Crunch",
+            "effect": "Has a 20% chance to lower the target's Defense by one stage."
+          },
+          {
+            "power": 85,
+            "type": "psychic",
+            "damage_class": "physical",
+            "name": "Psychic Fangs",
+            "effect": "Destroys Reflect and Light Screen."
+          },
+          {
+            "power": 65,
+            "type": "fire",
+            "damage_class": "physical",
+            "name": "Fire Fang",
+            "effect": "Has a 10% chance to burn the target and a $effect_chance% chance to make the target flinch."
+          },
+          {
+            "power": 90,
+            "type": "fairy",
+            "damage_class": "physical",
+            "name": "Play Rough",
+            "effect": "Has a 10% chance to lower the target's Attack by one stage."
+          }
+        ],
+        "ability": {
+          "name": "Intimidate",
+          "effect": "Lowers opponents' Attack one stage upon entering battle."
+        },
+        "tera": "dark",
+        "sprite": "943",
+        "types": [
+          "dark"
+        ],
+        "stats": {
+          "hp": 80,
+          "atk": 120,
+          "def": 90,
+          "spa": 60,
+          "spd": 70,
+          "spe": 85
         }
       }
     ]

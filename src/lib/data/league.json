@@ -59730,6 +59730,97 @@
         }
       ]
     },
+    "arv": {
+      "name": "Arven",
+      "speciality": "",
+      "pokemon": [
+        {
+          "name": "greedent",
+          "level": "58",
+          "moves": [
+            "bullet-seed",
+            "body-slam",
+            "psychic-fangs",
+            "earthquake"
+          ],
+          "ability": "cheek-pouch",
+          "abilities": [
+            "cheek-pouch"
+          ]
+        },
+        {
+          "name": "cloyster",
+          "level": "59",
+          "moves": [
+            "rock-blast",
+            "icicle-spear",
+            "liquidation",
+            "light-screen"
+          ],
+          "ability": "skill-link",
+          "abilities": [
+            "skill-link"
+          ]
+        },
+        {
+          "name": "scovillain",
+          "level": "60",
+          "moves": [
+            "fire-blast",
+            "energy-ball",
+            "zen-headbutt",
+            "crunch"
+          ],
+          "ability": "chlorophyll",
+          "abilities": [
+            "chlorophyll"
+          ]
+        },
+        {
+          "name": "toedscruel",
+          "level": "61",
+          "moves": [
+            "power-whip",
+            "earth-power",
+            "spore",
+            "sludge-bomb"
+          ],
+          "ability": "mycelium-might",
+          "abilities": [
+            "mycelium-might"
+          ]
+        },
+        {
+          "name": "garganacl",
+          "level": "62",
+          "moves": [
+            "stone-edge",
+            "earthquake",
+            "body-press",
+            "stealth-rock"
+          ],
+          "ability": "purifying-salt",
+          "abilities": [
+            "purifying-salt"
+          ]
+        },
+        {
+          "name": "mabosstiff",
+          "level": "63",
+          "moves": [
+            "crunch",
+            "psychic-fangs",
+            "fire-fang",
+            "play-rough"
+          ],
+          "ability": "intimidate",
+          "abilities": [
+            "intimidate"
+          ],
+          "tera": "dark"
+        }
+      ]
+    },
     "t1": {
       "name": "Klawf",
       "speciality": "",
