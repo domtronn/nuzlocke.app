@@ -3,6 +3,7 @@
   export let sprite, fallback, name, types, tera, level = '', moves, maxStat, held = '', ability = '', stats, nature = undefined
 
   import { capitalise } from '$lib/utils/string'
+  import { isEmpty } from '$lib/utils/obj'
 
   import PIcon from '$lib/components/core/PokemonIcon.svelte'
   import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
@@ -111,7 +112,7 @@
 
     {#if moves && moves.length}
       <div class='grid grid-cols-1 xl:grid-cols-2 xl:grid-rows-2 w-3/5 sm:w-2/3 my-3 ml-4 gap-y-0 lg:gap-y-3'>
-        {#each moves as m}
+        {#each moves.filter(m => !isEmpty(m)) as m}
           <MoveCard {...m} stab={types.includes(m.type)} />
         {/each}
       </div>

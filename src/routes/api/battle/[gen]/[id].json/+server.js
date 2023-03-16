@@ -164,7 +164,7 @@ export async function GET({ params, url }) {
             const abilities = await Promise.all(p.abilities.map(a => maybe(P.getAbilityByName, a).catch(_ => p.ability)))
 
             const moves = await Promise.all(
-              p.moves.map((m) =>
+              p.moves.filter(i => i).map((m) =>
                 P.getMoveByName(m).catch((e) => {
                   if (!patch.move[m]) throw new Error(e);
                   return {
