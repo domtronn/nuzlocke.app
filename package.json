@@ -7,7 +7,9 @@
     "dev": "vite dev",
     "build": "vite build",
     "preview": "vite preview",
-    "test:randomiser": "for i in `cat src/lib/data/games.json | jq 'keys[]' -r`; do curl -s http://localhost:5173/api/route/generate/$i.json; done"
+    "test:randomiser": "for i in `cat src/lib/data/games.json | jq 'keys[]' -r`; do curl -s http://localhost:5173/api/route/generate/$i.json; done",
+    "test:pokemon": "for i in `cat src/lib/data/games.json | jq 'keys[]' -r`; do curl -s http://localhost:5173/api/$i/pokemon.json; done",
+    "test:league": "deno run --allow-read ./static/league/validate.ts"
   },
   "devDependencies": {
     "@iconify-icons/mdi": "^1.2.34",
@@ -27,6 +29,7 @@
     "vite": "^3.2.4"
   },
   "dependencies": {
+    "@google-cloud/bigquery": "^6.1.0",
     "@iconify-icons/emojione-monotone": "^1.2.4",
     "@iconify-icons/fa-solid": "^1.2.4",
     "@iconify-icons/fe": "^1.2.3",
@@ -50,13 +53,17 @@
     "svelte-portal": "^2.1.2",
     "svelte-simple-modal": "^1.1.1",
     "tinyurl": "^1.1.7",
-    "tippy.js": "^6.3.7"
+    "tippy.js": "^6.3.7",
+    "zod": "^3.21.4"
   },
   "prettier": {
     "arrowParens": "always",
     "singleQuote": true,
     "tabWidth": 2,
     "trailingComma": "none"
+  },
+  "resolutions": {
+    "dotenv": ">= 15.0.0"
   },
   "version": "1.0.0",
   "main": "index.js",

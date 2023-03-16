@@ -41,12 +41,6 @@
           "name": "Sturdy",
           "effect": "Prevents being KOed from full HP, leaving 1 HP instead.  Protects against the one-hit KO moves regardless of HP."
         },
-        "abilities": [
-          {
-            "name": "Sturdy",
-            "effect": "Prevents being KOed from full HP, leaving 1 HP instead.  Protects against the one-hit KO moves regardless of HP."
-          }
-        ],
         "held": {
           "sprite": "custap-berry",
           "name": "Custap Berry",
@@ -102,12 +96,6 @@
           "name": "Flash Fire",
           "effect": "Protects against fire moves.  Once one has been blocked, the Pokémon's own Fire moves inflict 1.5× damage until it leaves battle."
         },
-        "abilities": [
-          {
-            "name": "Flash Fire",
-            "effect": "Protects against fire moves.  Once one has been blocked, the Pokémon's own Fire moves inflict 1.5× damage until it leaves battle."
-          }
-        ],
         "held": {
           "sprite": "oran-berry",
           "name": "Oran Berry",
@@ -162,12 +150,6 @@
           "name": "Defeatist",
           "effect": "While this Pokemon has ⅓ or less of its maximum HP, its Attack and Special Attack are halved."
         },
-        "abilities": [
-          {
-            "name": "Defeatist",
-            "effect": "While this Pokemon has ⅓ or less of its maximum HP, its Attack and Special Attack are halved."
-          }
-        ],
         "held": {
           "sprite": "oran-berry",
           "name": "Oran Berry",
@@ -210,19 +192,12 @@
             "damage_class": "status",
             "name": "Sleep Talk",
             "effect": "Randomly uses one of the user's other three moves.  Only works if the user is sleeping."
-          },
-          {}
+          }
         ],
         "ability": {
           "name": "Sturdy",
           "effect": "Prevents being KOed from full HP, leaving 1 HP instead.  Protects against the one-hit KO moves regardless of HP."
         },
-        "abilities": [
-          {
-            "name": "Sturdy",
-            "effect": "Prevents being KOed from full HP, leaving 1 HP instead.  Protects against the one-hit KO moves regardless of HP."
-          }
-        ],
         "held": {
           "sprite": "berry-juice",
           "name": "Berry Juice",
@@ -284,12 +259,6 @@
           "name": "Protean",
           "effect": "Changes the bearer's type to match each move it uses."
         },
-        "abilities": [
-          {
-            "name": "Protean",
-            "effect": "Changes the bearer's type to match each move it uses."
-          }
-        ],
         "held": {
           "sprite": "eviolite",
           "name": "Eviolite",
@@ -343,12 +312,6 @@
           "name": "Technician",
           "effect": "Strengthens moves of 60 base power or less to 1.5× their power."
         },
-        "abilities": [
-          {
-            "name": "Technician",
-            "effect": "Strengthens moves of 60 base power or less to 1.5× their power."
-          }
-        ],
         "held": {
           "sprite": "mystic-water",
           "name": "Mystic Water",
@@ -403,12 +366,6 @@
           "name": "Analytic",
           "effect": "Strengthens moves to 1.3× their power when moving last."
         },
-        "abilities": [
-          {
-            "name": "Analytic",
-            "effect": "Strengthens moves to 1.3× their power when moving last."
-          }
-        ],
         "held": {
           "sprite": "sitrus-berry",
           "name": "Sitrus Berry",
@@ -464,12 +421,6 @@
           "name": "Volt Absorb",
           "effect": "Absorbs electric moves, healing for 1/4 max HP."
         },
-        "abilities": [
-          {
-            "name": "Volt Absorb",
-            "effect": "Absorbs electric moves, healing for 1/4 max HP."
-          }
-        ],
         "held": {
           "sprite": "iapapa-berry",
           "name": "Iapapa Berry",
@@ -532,12 +483,6 @@
           "name": "Electric Surge",
           "effect": "When this Pokémon enters battle, it changes the terrain to Electric Terrain."
         },
-        "abilities": [
-          {
-            "name": "Electric Surge",
-            "effect": "When this Pokémon enters battle, it changes the terrain to Electric Terrain."
-          }
-        ],
         "held": {
           "sprite": "electric-seed",
           "name": "Electric Seed",
@@ -592,12 +537,6 @@
           "name": "Surge Surfer",
           "effect": "Doubles this Pokémon's Speed on Electric Terrain."
         },
-        "abilities": [
-          {
-            "name": "Surge Surfer",
-            "effect": "Doubles this Pokémon's Speed on Electric Terrain."
-          }
-        ],
         "held": {
           "sprite": "twisted-spoon",
           "name": "Twisted Spoon",
@@ -654,12 +593,6 @@
           "name": "Levitate",
           "effect": "Evades ground moves."
         },
-        "abilities": [
-          {
-            "name": "Levitate",
-            "effect": "Evades ground moves."
-          }
-        ],
         "held": {
           "sprite": "occa-berry",
           "name": "Occa Berry",
@@ -716,12 +649,6 @@
           "name": "Strong Jaw",
           "effect": "Strengthens biting moves to 1.5× their power."
         },
-        "abilities": [
-          {
-            "name": "Strong Jaw",
-            "effect": "Strengthens biting moves to 1.5× their power."
-          }
-        ],
         "held": {
           "sprite": "expert-belt",
           "name": "Expert Belt",
@@ -776,12 +703,6 @@
           "name": "Intimidate",
           "effect": "Lowers opponents' Attack one stage upon entering battle."
         },
-        "abilities": [
-          {
-            "name": "Intimidate",
-            "effect": "Lowers opponents' Attack one stage upon entering battle."
-          }
-        ],
         "held": {
           "sprite": "manectite",
           "name": "Manectite",
@@ -842,12 +763,6 @@
           "name": "Grassy Surge",
           "effect": "When this Pokémon enters battle, it changes the terrain to Grassy Terrain."
         },
-        "abilities": [
-          {
-            "name": "Grassy Surge",
-            "effect": "When this Pokémon enters battle, it changes the terrain to Grassy Terrain."
-          }
-        ],
         "held": {
           "sprite": "terrain-extender",
           "name": "Terrain Extender",
@@ -901,12 +816,6 @@
           "name": "Triage",
           "effect": "This Pokémon's healing moves have their priority increased by 3."
         },
-        "abilities": [
-          {
-            "name": "Triage",
-            "effect": "This Pokémon's healing moves have their priority increased by 3."
-          }
-        ],
         "held": {
           "sprite": "grassy-seed",
           "name": "Grassy Seed",
@@ -960,12 +869,6 @@
           "name": "Contrary",
           "effect": "Inverts stat changes."
         },
-        "abilities": [
-          {
-            "name": "Contrary",
-            "effect": "Inverts stat changes."
-          }
-        ],
         "held": {
           "sprite": "focus-sash",
           "name": "Focus Sash",
@@ -1019,12 +922,6 @@
           "name": "Reckless",
           "effect": "Strengthens recoil moves to 1.2× their power."
         },
-        "abilities": [
-          {
-            "name": "Reckless",
-            "effect": "Strengthens recoil moves to 1.2× their power."
-          }
-        ],
         "held": {
           "sprite": "life-orb",
           "name": "Life Orb",
@@ -1081,12 +978,6 @@
           "name": "Thick Fat",
           "effect": "Halves damage from fire and ice moves."
         },
-        "abilities": [
-          {
-            "name": "Thick Fat",
-            "effect": "Halves damage from fire and ice moves."
-          }
-        ],
         "held": {
           "sprite": "venusaurite",
           "name": "Venusaurite",
@@ -1149,12 +1040,6 @@
           "name": "Magic Bounce",
           "effect": "Reflects most non-damaging moves back at their user."
         },
-        "abilities": [
-          {
-            "name": "Magic Bounce",
-            "effect": "Reflects most non-damaging moves back at their user."
-          }
-        ],
         "held": {
           "sprite": "psychic-seed",
           "name": "Psychic Seed",
@@ -1209,12 +1094,6 @@
           "name": "Psychic Surge",
           "effect": "When this Pokémon enters battle, it changes the terrain to Psychic Terrain."
         },
-        "abilities": [
-          {
-            "name": "Psychic Surge",
-            "effect": "When this Pokémon enters battle, it changes the terrain to Psychic Terrain."
-          }
-        ],
         "held": {
           "sprite": "terrain-extender",
           "name": "Terrain Extender",
@@ -1271,12 +1150,6 @@
           "name": "Adaptability",
           "effect": "Increases the same-type attack bonus from 1.5× to 2×."
         },
-        "abilities": [
-          {
-            "name": "Adaptability",
-            "effect": "Increases the same-type attack bonus from 1.5× to 2×."
-          }
-        ],
         "held": {
           "sprite": "focus-sash",
           "name": "Focus Sash",
@@ -1332,12 +1205,6 @@
           "name": "Guts",
           "effect": "Increases Attack to 1.5× with a major status ailment."
         },
-        "abilities": [
-          {
-            "name": "Guts",
-            "effect": "Increases Attack to 1.5× with a major status ailment."
-          }
-        ],
         "held": {
           "sprite": "flame-orb",
           "name": "Flame Orb",
@@ -1394,12 +1261,6 @@
           "name": "Trace",
           "effect": "Copies an opponent's ability upon entering battle."
         },
-        "abilities": [
-          {
-            "name": "Trace",
-            "effect": "Copies an opponent's ability upon entering battle."
-          }
-        ],
         "held": {
           "sprite": "eviolite",
           "name": "Eviolite",
@@ -1453,12 +1314,6 @@
           "name": "Pixilate",
           "effect": "Turns the bearer's normal moves into fairy moves and strengthens them to 1.3× their power."
         },
-        "abilities": [
-          {
-            "name": "Pixilate",
-            "effect": "Turns the bearer's normal moves into fairy moves and strengthens them to 1.3× their power."
-          }
-        ],
         "held": {
           "sprite": "gardevoirite",
           "name": "Gardevoirite",
@@ -1507,12 +1362,6 @@
           "name": "Aerilate",
           "effect": "Turns the bearer's normal moves into flying moves and strengthens them to 1.3× their power."
         },
-        "abilities": [
-          {
-            "name": "Aerilate",
-            "effect": "Turns the bearer's normal moves into flying moves and strengthens them to 1.3× their power."
-          }
-        ],
         "held": {
           "sprite": "choice-specs",
           "name": "Choice Specs",
@@ -1569,12 +1418,6 @@
           "name": "Sheer Force",
           "effect": "Strengthens moves with extra effects to 1.3× their power, but prevents their extra effects."
         },
-        "abilities": [
-          {
-            "name": "Sheer Force",
-            "effect": "Strengthens moves with extra effects to 1.3× their power, but prevents their extra effects."
-          }
-        ],
         "held": {
           "sprite": "life-orb",
           "name": "Life Orb",
@@ -1609,20 +1452,12 @@
             "damage_class": "physical",
             "name": "Cross Poison",
             "effect": "Has an increased chance for a critical hit and a 10% chance to poison the target."
-          },
-          {},
-          {}
+          }
         ],
         "ability": {
           "name": "Sniper",
           "effect": "Strengthens critical hits to inflict 3× damage rather than 2×."
         },
-        "abilities": [
-          {
-            "name": "Sniper",
-            "effect": "Strengthens critical hits to inflict 3× damage rather than 2×."
-          }
-        ],
         "held": {
           "sprite": "choice-scarf",
           "name": "Choice Scarf",
@@ -1680,12 +1515,6 @@
           "name": "Battle Bond",
           "effect": "Transforms this Pokémon into Ash-Greninja after fainting an opponent.  Water Shuriken's power is 20 and always hits three times."
         },
-        "abilities": [
-          {
-            "name": "Battle Bond",
-            "effect": "Transforms this Pokémon into Ash-Greninja after fainting an opponent.  Water Shuriken's power is 20 and always hits three times."
-          }
-        ],
         "held": {
           "sprite": "life-orb",
           "name": "Life Orb",
@@ -1741,12 +1570,6 @@
           "name": "Infiltrator",
           "effect": "Bypasses light screen, reflect, and safeguard."
         },
-        "abilities": [
-          {
-            "name": "Infiltrator",
-            "effect": "Bypasses light screen, reflect, and safeguard."
-          }
-        ],
         "held": {
           "sprite": "life-orb",
           "name": "Life Orb",
@@ -1800,11 +1623,6 @@
         "ability": {
           "name": "Punk Rock"
         },
-        "abilities": [
-          {
-            "name": "Punk Rock"
-          }
-        ],
         "held": {
           "name": "Toxtricitite",
           "sprite": "mawilite",
@@ -1867,12 +1685,6 @@
           "name": "Drought",
           "effect": "Summons strong sunlight that lasts indefinitely upon entering battle."
         },
-        "abilities": [
-          {
-            "name": "Drought",
-            "effect": "Summons strong sunlight that lasts indefinitely upon entering battle."
-          }
-        ],
         "held": {
           "sprite": "heat-rock",
           "name": "Heat Rock",
@@ -1927,12 +1739,6 @@
           "name": "Chlorophyll",
           "effect": "Doubles Speed during strong sunlight."
         },
-        "abilities": [
-          {
-            "name": "Chlorophyll",
-            "effect": "Doubles Speed during strong sunlight."
-          }
-        ],
         "held": {
           "sprite": "life-orb",
           "name": "Life Orb",
@@ -1990,12 +1796,6 @@
           "name": "Protean",
           "effect": "Changes the bearer's type to match each move it uses."
         },
-        "abilities": [
-          {
-            "name": "Protean",
-            "effect": "Changes the bearer's type to match each move it uses."
-          }
-        ],
         "held": {
           "sprite": "life-orb",
           "name": "Life Orb",
@@ -2050,12 +1850,6 @@
           "name": "Blazing soul",
           "effect": "If this Pokemon is at full HP, its Fire-type moves have their priority increased by 1."
         },
-        "abilities": [
-          {
-            "name": "Blazing soul",
-            "effect": "If this Pokemon is at full HP, its Fire-type moves have their priority increased by 1."
-          }
-        ],
         "held": {
           "name": "Heavy duty boots",
           "sprite": "heavy-duty-boots",
@@ -2110,12 +1904,6 @@
           "name": "Harvest",
           "effect": "Has a 50% chance of restoring a used Berry after each turn if the Pokémon has held no items in the meantime."
         },
-        "abilities": [
-          {
-            "name": "Harvest",
-            "effect": "Has a 50% chance of restoring a used Berry after each turn if the Pokémon has held no items in the meantime."
-          }
-        ],
         "held": {
           "sprite": "focus-sash",
           "name": "Focus Sash",
@@ -2171,12 +1959,6 @@
           "name": "Drought",
           "effect": "Summons strong sunlight that lasts indefinitely upon entering battle."
         },
-        "abilities": [
-          {
-            "name": "Drought",
-            "effect": "Summons strong sunlight that lasts indefinitely upon entering battle."
-          }
-        ],
         "held": {
           "sprite": "charizardite-y",
           "name": "Charizardite Y",
@@ -2238,12 +2020,6 @@
           "name": "Pressure",
           "effect": "Increases the PP cost of moves targetting the Pokémon by one."
         },
-        "abilities": [
-          {
-            "name": "Pressure",
-            "effect": "Increases the PP cost of moves targetting the Pokémon by one."
-          }
-        ],
         "held": {
           "sprite": "focus-sash",
           "name": "Focus Sash",
@@ -2299,12 +2075,6 @@
           "name": "Soul-Heart",
           "effect": "This Pokémon's Special Attack rises by one stage every time any Pokémon faints."
         },
-        "abilities": [
-          {
-            "name": "Soul-Heart",
-            "effect": "This Pokémon's Special Attack rises by one stage every time any Pokémon faints."
-          }
-        ],
         "held": {
           "sprite": "leftovers",
           "name": "Leftovers",
@@ -2360,12 +2130,6 @@
           "name": "Strong Jaw",
           "effect": "Strengthens biting moves to 1.5× their power."
         },
-        "abilities": [
-          {
-            "name": "Strong Jaw",
-            "effect": "Strengthens biting moves to 1.5× their power."
-          }
-        ],
         "held": {
           "sprite": "choice-scarf",
           "name": "Choice Scarf",
@@ -2420,12 +2184,6 @@
           "name": "Multiscale",
           "effect": "Halves damage taken from full HP."
         },
-        "abilities": [
-          {
-            "name": "Multiscale",
-            "effect": "Halves damage taken from full HP."
-          }
-        ],
         "held": {
           "sprite": "weakness-policy",
           "name": "Weakness Policy",
@@ -2481,12 +2239,6 @@
           "name": "Beast Boost",
           "effect": "Raises this Pokémon's highest stat by one stage when it faints another Pokémon."
         },
-        "abilities": [
-          {
-            "name": "Beast Boost",
-            "effect": "Raises this Pokémon's highest stat by one stage when it faints another Pokémon."
-          }
-        ],
         "held": {
           "sprite": "life-orb",
           "name": "Life Orb",
@@ -2543,12 +2295,6 @@
           "name": "Bad company",
           "effect": "Prevents self-lowering stat drops and recoil."
         },
-        "abilities": [
-          {
-            "name": "Bad company",
-            "effect": "Prevents self-lowering stat drops and recoil."
-          }
-        ],
         "held": {
           "name": "Duraludite",
           "sprite": "aggronite",
@@ -2596,12 +2342,6 @@
           "name": "Blaze",
           "effect": "Strengthens fire moves to inflict 1.5× damage at 1/3 max HP or less."
         },
-        "abilities": [
-          {
-            "name": "Blaze",
-            "effect": "Strengthens fire moves to inflict 1.5× damage at 1/3 max HP or less."
-          }
-        ],
         "starter": "grass",
         "sprite": "4",
         "types": [
@@ -2657,12 +2397,6 @@
           "name": "Frisk",
           "effect": "Reveals an opponent's held item upon entering battle."
         },
-        "abilities": [
-          {
-            "name": "Frisk",
-            "effect": "Reveals an opponent's held item upon entering battle."
-          }
-        ],
         "sprite": "396",
         "types": [
           "normal",
@@ -2712,12 +2446,6 @@
           "name": "Blaze",
           "effect": "Strengthens fire moves to inflict 1.5× damage at 1/3 max HP or less."
         },
-        "abilities": [
-          {
-            "name": "Blaze",
-            "effect": "Strengthens fire moves to inflict 1.5× damage at 1/3 max HP or less."
-          }
-        ],
         "starter": "grass",
         "sprite": "4",
         "types": [
@@ -2773,12 +2501,6 @@
           "name": "Battle Armor",
           "effect": "Protects against critical hits."
         },
-        "abilities": [
-          {
-            "name": "Battle Armor",
-            "effect": "Protects against critical hits."
-          }
-        ],
         "sprite": "341",
         "types": [
           "water"
@@ -2820,12 +2542,6 @@
           "name": "Overgrow",
           "effect": "Strengthens grass moves to inflict 1.5× damage at 1/3 max HP or less."
         },
-        "abilities": [
-          {
-            "name": "Overgrow",
-            "effect": "Strengthens grass moves to inflict 1.5× damage at 1/3 max HP or less."
-          }
-        ],
         "sprite": "252",
         "types": [
           "grass"
@@ -2882,12 +2598,6 @@
           "name": "Hustle",
           "effect": "Strengthens physical moves to inflict 1.5× damage, but decreases their accuracy to 0.8×."
         },
-        "abilities": [
-          {
-            "name": "Hustle",
-            "effect": "Strengthens physical moves to inflict 1.5× damage, but decreases their accuracy to 0.8×."
-          }
-        ],
         "held": {
           "sprite": "berry-juice",
           "name": "Berry Juice",
@@ -2942,12 +2652,6 @@
           "name": "Lightning Rod",
           "effect": "Redirects single-target electric moves to this Pokémon where possible.  Absorbs Electric moves, raising Special Attack one stage."
         },
-        "abilities": [
-          {
-            "name": "Lightning Rod",
-            "effect": "Redirects single-target electric moves to this Pokémon where possible.  Absorbs Electric moves, raising Special Attack one stage."
-          }
-        ],
         "held": {
           "sprite": "berry-juice",
           "name": "Berry Juice",
@@ -3002,12 +2706,6 @@
           "name": "Unnerve",
           "effect": "Prevents opposing Pokémon from eating held Berries."
         },
-        "abilities": [
-          {
-            "name": "Unnerve",
-            "effect": "Prevents opposing Pokémon from eating held Berries."
-          }
-        ],
         "held": {
           "sprite": "berry-juice",
           "name": "Berry Juice",
@@ -3201,12 +2899,6 @@
           "name": "Strong Jaw",
           "effect": "Strengthens biting moves to 1.5× their power."
         },
-        "abilities": [
-          {
-            "name": "Strong Jaw",
-            "effect": "Strengthens biting moves to 1.5× their power."
-          }
-        ],
         "held": {
           "sprite": "berry-juice",
           "name": "Berry Juice",
@@ -3308,12 +3000,6 @@
           "name": "Intimidate",
           "effect": "Lowers opponents' Attack one stage upon entering battle."
         },
-        "abilities": [
-          {
-            "name": "Intimidate",
-            "effect": "Lowers opponents' Attack one stage upon entering battle."
-          }
-        ],
         "sprite": "397",
         "types": [
           "normal",
@@ -3402,12 +3088,6 @@
           "name": "Blaze",
           "effect": "Strengthens fire moves to inflict 1.5× damage at 1/3 max HP or less."
         },
-        "abilities": [
-          {
-            "name": "Blaze",
-            "effect": "Strengthens fire moves to inflict 1.5× damage at 1/3 max HP or less."
-          }
-        ],
         "held": {
           "sprite": "sitrus-berry",
           "name": "Sitrus Berry",
@@ -3471,12 +3151,6 @@
           "name": "Swarm",
           "effect": "Strengthens bug moves to inflict 1.5× damage at 1/3 max HP or less."
         },
-        "abilities": [
-          {
-            "name": "Swarm",
-            "effect": "Strengthens bug moves to inflict 1.5× damage at 1/3 max HP or less."
-          }
-        ],
         "held": {
           "sprite": "poison-barb",
           "name": "Poison Barb",
@@ -3532,12 +3206,6 @@
           "name": "Technician",
           "effect": "Strengthens moves of 60 base power or less to 1.5× their power."
         },
-        "abilities": [
-          {
-            "name": "Technician",
-            "effect": "Strengthens moves of 60 base power or less to 1.5× their power."
-          }
-        ],
         "held": {
           "sprite": "charti-berry",
           "name": "Charti Berry",
@@ -3594,12 +3262,6 @@
           "name": "Iron fist",
           "effect": "This Pokemon's punch-based attacks have their power multiplied by 1.3×."
         },
-        "abilities": [
-          {
-            "name": "Iron fist",
-            "effect": "This Pokemon's punch-based attacks have their power multiplied by 1.3×."
-          }
-        ],
         "held": {
           "sprite": "focus-sash",
           "name": "Focus Sash",
@@ -3655,12 +3317,6 @@
           "name": "Technician",
           "effect": "Strengthens moves of 60 base power or less to 1.5× their power."
         },
-        "abilities": [
-          {
-            "name": "Technician",
-            "effect": "Strengthens moves of 60 base power or less to 1.5× their power."
-          }
-        ],
         "held": {
           "sprite": "sitrus-berry",
           "name": "Sitrus Berry",
@@ -3722,11 +3378,6 @@
         "ability": {
           "name": "Punk Rock"
         },
-        "abilities": [
-          {
-            "name": "Punk Rock"
-          }
-        ],
         "held": {
           "sprite": "chople-berry",
           "name": "Chople Berry",
@@ -3779,12 +3430,6 @@
           "name": "Levitate",
           "effect": "Evades ground moves."
         },
-        "abilities": [
-          {
-            "name": "Levitate",
-            "effect": "Evades ground moves."
-          }
-        ],
         "held": {
           "sprite": "colbur-berry",
           "name": "Colbur Berry",
@@ -3840,12 +3485,6 @@
           "name": "Adaptability",
           "effect": "Increases the same-type attack bonus from 1.5× to 2×."
         },
-        "abilities": [
-          {
-            "name": "Adaptability",
-            "effect": "Increases the same-type attack bonus from 1.5× to 2×."
-          }
-        ],
         "held": {
           "sprite": "focus-sash",
           "name": "Focus Sash",
@@ -3902,12 +3541,6 @@
           "name": "Overgrow",
           "effect": "Strengthens grass moves to inflict 1.5× damage at 1/3 max HP or less."
         },
-        "abilities": [
-          {
-            "name": "Overgrow",
-            "effect": "Strengthens grass moves to inflict 1.5× damage at 1/3 max HP or less."
-          }
-        ],
         "held": {
           "sprite": "sitrus-berry",
           "name": "Sitrus Berry",
@@ -3969,12 +3602,6 @@
           "name": "Sheer Force",
           "effect": "Strengthens moves with extra effects to 1.3× their power, but prevents their extra effects."
         },
-        "abilities": [
-          {
-            "name": "Sheer Force",
-            "effect": "Strengthens moves with extra effects to 1.3× their power, but prevents their extra effects."
-          }
-        ],
         "held": {
           "sprite": "sitrus-berry",
           "name": "Sitrus Berry",
@@ -4029,12 +3656,6 @@
           "name": "Thick Fat",
           "effect": "Halves damage from fire and ice moves."
         },
-        "abilities": [
-          {
-            "name": "Thick Fat",
-            "effect": "Halves damage from fire and ice moves."
-          }
-        ],
         "held": {
           "sprite": "leftovers",
           "name": "Leftovers",
@@ -4088,12 +3709,6 @@
           "name": "Vital Spirit",
           "effect": "Prevents sleep."
         },
-        "abilities": [
-          {
-            "name": "Vital Spirit",
-            "effect": "Prevents sleep."
-          }
-        ],
         "held": {
           "sprite": "eviolite",
           "name": "Eviolite",
@@ -4148,12 +3763,6 @@
           "name": "Psychic Surge",
           "effect": "When this Pokémon enters battle, it changes the terrain to Psychic Terrain."
         },
-        "abilities": [
-          {
-            "name": "Psychic Surge",
-            "effect": "When this Pokémon enters battle, it changes the terrain to Psychic Terrain."
-          }
-        ],
         "held": {
           "sprite": "twisted-spoon",
           "name": "Twisted Spoon",
@@ -4281,12 +3890,6 @@
           "name": "Disguise",
           "effect": "Prevents the first instance of battle damage."
         },
-        "abilities": [
-          {
-            "name": "Disguise",
-            "effect": "Prevents the first instance of battle damage."
-          }
-        ],
         "held": {
           "sprite": "lum-berry",
           "name": "Lum Berry",
@@ -4341,12 +3944,6 @@
           "name": "Illusion",
           "effect": "Appears as last Pokemon in party until damaged. Moves have their power multiplied by 1.3× whilst disguised."
         },
-        "abilities": [
-          {
-            "name": "Illusion",
-            "effect": "Appears as last Pokemon in party until damaged. Moves have their power multiplied by 1.3× whilst disguised."
-          }
-        ],
         "held": {
           "sprite": "colbur-berry",
           "name": "Colbur Berry",
@@ -4403,12 +4000,6 @@
           "name": "Hustle",
           "effect": "Strengthens physical moves to inflict 1.5× damage, but decreases their accuracy to 0.8×."
         },
-        "abilities": [
-          {
-            "name": "Hustle",
-            "effect": "Strengthens physical moves to inflict 1.5× damage, but decreases their accuracy to 0.8×."
-          }
-        ],
         "held": {
           "sprite": "reaper-cloth",
           "name": "Reaper Cloth",
@@ -4463,12 +4054,6 @@
           "name": "Shadow Tag",
           "effect": "Prevents opponents from fleeing or switching out."
         },
-        "abilities": [
-          {
-            "name": "Shadow Tag",
-            "effect": "Prevents opponents from fleeing or switching out."
-          }
-        ],
         "held": {
           "sprite": "gengarite",
           "name": "Gengarite",
@@ -4523,12 +4108,6 @@
           "name": "Infiltrator",
           "effect": "Bypasses light screen, reflect, and safeguard."
         },
-        "abilities": [
-          {
-            "name": "Infiltrator",
-            "effect": "Bypasses light screen, reflect, and safeguard."
-          }
-        ],
         "held": {
           "sprite": "focus-sash",
           "name": "Focus Sash",
@@ -4583,12 +4162,6 @@
           "name": "Flash Fire",
           "effect": "Protects against fire moves.  Once one has been blocked, the Pokémon's own Fire moves inflict 1.5× damage until it leaves battle."
         },
-        "abilities": [
-          {
-            "name": "Flash Fire",
-            "effect": "Protects against fire moves.  Once one has been blocked, the Pokémon's own Fire moves inflict 1.5× damage until it leaves battle."
-          }
-        ],
         "held": {
           "sprite": "charcoal",
           "name": "Charcoal",
@@ -4653,12 +4226,6 @@
           "name": "Sheer Force",
           "effect": "Strengthens moves with extra effects to 1.3× their power, but prevents their extra effects."
         },
-        "abilities": [
-          {
-            "name": "Sheer Force",
-            "effect": "Strengthens moves with extra effects to 1.3× their power, but prevents their extra effects."
-          }
-        ],
         "held": {
           "sprite": "life-orb",
           "name": "Life Orb",
@@ -4716,12 +4283,6 @@
           "name": "Super Luck",
           "effect": "Raises moves' critical hit rates one stage."
         },
-        "abilities": [
-          {
-            "name": "Super Luck",
-            "effect": "Raises moves' critical hit rates one stage."
-          }
-        ],
         "held": {
           "sprite": "scope-lens",
           "name": "Scope Lens",
@@ -4777,12 +4338,6 @@
           "name": "Blaze",
           "effect": "Strengthens fire moves to inflict 1.5× damage at 1/3 max HP or less."
         },
-        "abilities": [
-          {
-            "name": "Blaze",
-            "effect": "Strengthens fire moves to inflict 1.5× damage at 1/3 max HP or less."
-          }
-        ],
         "held": {
           "sprite": "focus-sash",
           "name": "Focus Sash",
@@ -4838,12 +4393,6 @@
           "name": "Levitate",
           "effect": "Evades ground moves."
         },
-        "abilities": [
-          {
-            "name": "Levitate",
-            "effect": "Evades ground moves."
-          }
-        ],
         "held": {
           "sprite": "sitrus-berry",
           "name": "Sitrus Berry",
@@ -4901,12 +4450,6 @@
           "name": "Inner Focus",
           "effect": "Prevents flinching."
         },
-        "abilities": [
-          {
-            "name": "Inner Focus",
-            "effect": "Prevents flinching."
-          }
-        ],
         "held": {
           "sprite": "kangaskhanite",
           "name": "Kangaskhanite",
@@ -4969,12 +4512,6 @@
           "name": "Intimidate",
           "effect": "Lowers opponents' Attack one stage upon entering battle."
         },
-        "abilities": [
-          {
-            "name": "Intimidate",
-            "effect": "Lowers opponents' Attack one stage upon entering battle."
-          }
-        ],
         "held": {
           "sprite": "sharp-beak",
           "name": "Sharp Beak",
@@ -5030,12 +4567,6 @@
           "name": "Iron fist",
           "effect": "This Pokemon's punch-based attacks have their power multiplied by 1.3×."
         },
-        "abilities": [
-          {
-            "name": "Iron fist",
-            "effect": "This Pokemon's punch-based attacks have their power multiplied by 1.3×."
-          }
-        ],
         "held": {
           "sprite": "expert-belt",
           "name": "Expert Belt",
@@ -5089,12 +4620,6 @@
           "name": "Aerilate",
           "effect": "Turns the bearer's normal moves into flying moves and strengthens them to 1.3× their power."
         },
-        "abilities": [
-          {
-            "name": "Aerilate",
-            "effect": "Turns the bearer's normal moves into flying moves and strengthens them to 1.3× their power."
-          }
-        ],
         "held": {
           "sprite": "sharp-beak",
           "name": "Sharp Beak",
@@ -5152,12 +4677,6 @@
           "name": "Huge Power",
           "effect": "Doubles Attack in battle."
         },
-        "abilities": [
-          {
-            "name": "Huge Power",
-            "effect": "Doubles Attack in battle."
-          }
-        ],
         "held": {
           "sprite": "mystic-water",
           "name": "Mystic Water",
@@ -5214,12 +4733,6 @@
           "name": "Blaze",
           "effect": "Strengthens fire moves to inflict 1.5× damage at 1/3 max HP or less."
         },
-        "abilities": [
-          {
-            "name": "Blaze",
-            "effect": "Strengthens fire moves to inflict 1.5× damage at 1/3 max HP or less."
-          }
-        ],
         "held": {
           "sprite": "charizardite-y",
           "name": "Charizardite Y",
@@ -5283,12 +4796,6 @@
           "name": "Competitive",
           "effect": "Raises Special Attack by two stages upon having any stat lowered."
         },
-        "abilities": [
-          {
-            "name": "Competitive",
-            "effect": "Raises Special Attack by two stages upon having any stat lowered."
-          }
-        ],
         "held": {
           "sprite": "colbur-berry",
           "name": "Colbur Berry",
@@ -5344,12 +4851,6 @@
           "name": "Stance Change",
           "effect": "Changes aegislash to Blade Forme before using a damaging move, or Shield Forme before using kings shield."
         },
-        "abilities": [
-          {
-            "name": "Stance Change",
-            "effect": "Changes aegislash to Blade Forme before using a damaging move, or Shield Forme before using kings shield."
-          }
-        ],
         "held": {
           "sprite": "leftovers",
           "name": "Leftovers",
@@ -5406,12 +4907,6 @@
           "name": "Unnerve",
           "effect": "Prevents opposing Pokémon from eating held Berries."
         },
-        "abilities": [
-          {
-            "name": "Unnerve",
-            "effect": "Prevents opposing Pokémon from eating held Berries."
-          }
-        ],
         "held": {
           "sprite": "houndoominite",
           "name": "Houndoominite",
@@ -5468,12 +4963,6 @@
           "name": "Intimidate",
           "effect": "Lowers opponents' Attack one stage upon entering battle."
         },
-        "abilities": [
-          {
-            "name": "Intimidate",
-            "effect": "Lowers opponents' Attack one stage upon entering battle."
-          }
-        ],
         "held": {
           "sprite": "sitrus-berry",
           "name": "Sitrus Berry",
@@ -5528,15 +5017,10 @@
           "name": "Liquid voice",
           "effect": "This Pokemon's sound-based moves become Water-type moves and have their power multiplied by 1.2×."
         },
-        "abilities": [
-          {
-            "name": "Liquid voice",
-            "effect": "This Pokemon's sound-based moves become Water-type moves and have their power multiplied by 1.2×."
-          }
-        ],
         "held": {
           "sprite": "throat-spray",
-          "name": "Throat Spray"
+          "name": "Throat Spray",
+          "effect": "Raises Sp. Atk when a Pokémon uses a sound-based\nmove."
         },
         "sprite": "730",
         "types": [
@@ -5590,12 +5074,6 @@
           "name": "Intimidate",
           "effect": "Lowers opponents' Attack one stage upon entering battle."
         },
-        "abilities": [
-          {
-            "name": "Intimidate",
-            "effect": "Lowers opponents' Attack one stage upon entering battle."
-          }
-        ],
         "held": {
           "sprite": "mawilite",
           "name": "Mawilite",
@@ -5658,12 +5136,6 @@
           "name": "Technician",
           "effect": "Strengthens moves of 60 base power or less to 1.5× their power."
         },
-        "abilities": [
-          {
-            "name": "Technician",
-            "effect": "Strengthens moves of 60 base power or less to 1.5× their power."
-          }
-        ],
         "held": {
           "sprite": "focus-sash",
           "name": "Focus Sash",
@@ -5718,12 +5190,6 @@
           "name": "Water Absorb",
           "effect": "Absorbs water moves, healing for 1/4 max HP."
         },
-        "abilities": [
-          {
-            "name": "Water Absorb",
-            "effect": "Absorbs water moves, healing for 1/4 max HP."
-          }
-        ],
         "held": {
           "sprite": "mystic-water",
           "name": "Mystic Water",
@@ -5779,12 +5245,6 @@
           "name": "Poison Heal",
           "effect": "Heals for 1/8 max HP after each turn when poisoned in place of damage."
         },
-        "abilities": [
-          {
-            "name": "Poison Heal",
-            "effect": "Heals for 1/8 max HP after each turn when poisoned in place of damage."
-          }
-        ],
         "held": {
           "sprite": "toxic-orb",
           "name": "Toxic Orb",
@@ -5840,12 +5300,6 @@
           "name": "Inner Focus",
           "effect": "Prevents flinching."
         },
-        "abilities": [
-          {
-            "name": "Inner Focus",
-            "effect": "Prevents flinching."
-          }
-        ],
         "held": {
           "sprite": "shuca-berry",
           "name": "Shuca Berry",
@@ -5901,12 +5355,6 @@
           "name": "Inner Focus",
           "effect": "Prevents flinching."
         },
-        "abilities": [
-          {
-            "name": "Inner Focus",
-            "effect": "Prevents flinching."
-          }
-        ],
         "held": {
           "sprite": "galladite",
           "name": "Galladite",
@@ -5963,12 +5411,6 @@
           "name": "Poison Touch",
           "effect": "Has a 30% chance of poisoning target Pokémon upon contact."
         },
-        "abilities": [
-          {
-            "name": "Poison Touch",
-            "effect": "Has a 30% chance of poisoning target Pokémon upon contact."
-          }
-        ],
         "held": {
           "sprite": "focus-sash",
           "name": "Focus Sash",
@@ -6031,12 +5473,6 @@
           "name": "Clear Body",
           "effect": "Prevents stats from being lowered by other Pokémon."
         },
-        "abilities": [
-          {
-            "name": "Clear Body",
-            "effect": "Prevents stats from being lowered by other Pokémon."
-          }
-        ],
         "held": {
           "sprite": "air-balloon",
           "name": "Air Balloon",
@@ -6093,12 +5529,6 @@
           "name": "Huge Power",
           "effect": "Doubles Attack in battle."
         },
-        "abilities": [
-          {
-            "name": "Huge Power",
-            "effect": "Doubles Attack in battle."
-          }
-        ],
         "held": {
           "sprite": "choice-scarf",
           "name": "Choice Scarf",
@@ -6155,12 +5585,6 @@
           "name": "Adaptability",
           "effect": "Increases the same-type attack bonus from 1.5× to 2×."
         },
-        "abilities": [
-          {
-            "name": "Adaptability",
-            "effect": "Increases the same-type attack bonus from 1.5× to 2×."
-          }
-        ],
         "held": {
           "sprite": "choice-band",
           "name": "Choice Band",
@@ -6215,11 +5639,6 @@
         "ability": {
           "name": "Punk Rock"
         },
-        "abilities": [
-          {
-            "name": "Punk Rock"
-          }
-        ],
         "held": {
           "sprite": "silk-scarf",
           "name": "Silk Scarf",
@@ -6275,12 +5694,6 @@
           "name": "Trace",
           "effect": "Copies an opponent's ability upon entering battle."
         },
-        "abilities": [
-          {
-            "name": "Trace",
-            "effect": "Copies an opponent's ability upon entering battle."
-          }
-        ],
         "held": {
           "sprite": "pixie-plate",
           "name": "Pixie Plate",
@@ -6336,12 +5749,6 @@
           "name": "Overgrow",
           "effect": "Strengthens grass moves to inflict 1.5× damage at 1/3 max HP or less."
         },
-        "abilities": [
-          {
-            "name": "Overgrow",
-            "effect": "Strengthens grass moves to inflict 1.5× damage at 1/3 max HP or less."
-          }
-        ],
         "held": {
           "sprite": "sceptilite",
           "name": "Sceptilite",
@@ -6405,12 +5812,6 @@
           "name": "Snow Warning",
           "effect": "Summons hail that lasts indefinitely upon entering battle."
         },
-        "abilities": [
-          {
-            "name": "Snow Warning",
-            "effect": "Summons hail that lasts indefinitely upon entering battle."
-          }
-        ],
         "held": {
           "sprite": "light-clay",
           "name": "Light Clay",
@@ -6464,12 +5865,6 @@
           "name": "Pressure",
           "effect": "Increases the PP cost of moves targetting the Pokémon by one."
         },
-        "abilities": [
-          {
-            "name": "Pressure",
-            "effect": "Increases the PP cost of moves targetting the Pokémon by one."
-          }
-        ],
         "held": {
           "sprite": "choice-band",
           "name": "Choice Band",
@@ -6526,12 +5921,6 @@
           "name": "Iron fist",
           "effect": "This Pokemon's punch-based attacks have their power multiplied by 1.3×."
         },
-        "abilities": [
-          {
-            "name": "Iron fist",
-            "effect": "This Pokemon's punch-based attacks have their power multiplied by 1.3×."
-          }
-        ],
         "held": {
           "sprite": "assault-vest",
           "name": "Assault Vest",
@@ -6584,11 +5973,6 @@
         "ability": {
           "name": "Ice Scales"
         },
-        "abilities": [
-          {
-            "name": "Ice Scales"
-          }
-        ],
         "held": {
           "sprite": "leftovers",
           "name": "Leftovers",
@@ -6644,12 +6028,6 @@
           "name": "Slush Rush",
           "effect": "During Hail, this Pokémon has double Speed."
         },
-        "abilities": [
-          {
-            "name": "Slush Rush",
-            "effect": "During Hail, this Pokémon has double Speed."
-          }
-        ],
         "held": {
           "sprite": "choice-band",
           "name": "Choice Band",
@@ -6706,12 +6084,6 @@
           "name": "Refrigerate",
           "effect": "Turns the bearer's normal moves into ice moves and strengthens them to 1.3× their power."
         },
-        "abilities": [
-          {
-            "name": "Refrigerate",
-            "effect": "Turns the bearer's normal moves into ice moves and strengthens them to 1.3× their power."
-          }
-        ],
         "held": {
           "sprite": "glalitite",
           "name": "Glalitite",
@@ -6837,11 +6209,6 @@
         "ability": {
           "name": "Screen Cleaner"
         },
-        "abilities": [
-          {
-            "name": "Screen Cleaner"
-          }
-        ],
         "held": {
           "sprite": "choice-specs",
           "name": "Choice Specs",
@@ -6898,12 +6265,6 @@
           "name": "Thick Fat",
           "effect": "Halves damage from fire and ice moves."
         },
-        "abilities": [
-          {
-            "name": "Thick Fat",
-            "effect": "Halves damage from fire and ice moves."
-          }
-        ],
         "held": {
           "sprite": "life-orb",
           "name": "Life Orb",
@@ -6957,12 +6318,6 @@
           "name": "Fur Coat",
           "effect": "Halves damage from physical attacks."
         },
-        "abilities": [
-          {
-            "name": "Fur Coat",
-            "effect": "Halves damage from physical attacks."
-          }
-        ],
         "held": {
           "sprite": "leftovers",
           "name": "Leftovers",
@@ -7018,12 +6373,6 @@
           "name": "Water Absorb",
           "effect": "Absorbs water moves, healing for 1/4 max HP."
         },
-        "abilities": [
-          {
-            "name": "Water Absorb",
-            "effect": "Absorbs water moves, healing for 1/4 max HP."
-          }
-        ],
         "held": {
           "sprite": "choice-scarf",
           "name": "Choice Scarf",
@@ -7080,12 +6429,6 @@
           "name": "Refrigerate",
           "effect": "Turns the bearer's normal moves into ice moves and strengthens them to 1.3× their power."
         },
-        "abilities": [
-          {
-            "name": "Refrigerate",
-            "effect": "Turns the bearer's normal moves into ice moves and strengthens them to 1.3× their power."
-          }
-        ],
         "held": {
           "sprite": "glalitite",
           "name": "Glalitite",
@@ -7147,12 +6490,6 @@
           "name": "Snow Warning",
           "effect": "Summons hail that lasts indefinitely upon entering battle."
         },
-        "abilities": [
-          {
-            "name": "Snow Warning",
-            "effect": "Summons hail that lasts indefinitely upon entering battle."
-          }
-        ],
         "held": {
           "sprite": "icy-rock",
           "name": "Icy Rock",
@@ -7209,11 +6546,6 @@
         "ability": {
           "name": "Ice Scales"
         },
-        "abilities": [
-          {
-            "name": "Ice Scales"
-          }
-        ],
         "held": {
           "sprite": "assault-vest",
           "name": "Assault Vest",
@@ -7269,12 +6601,6 @@
           "name": "Slush Rush",
           "effect": "During Hail, this Pokémon has double Speed."
         },
-        "abilities": [
-          {
-            "name": "Slush Rush",
-            "effect": "During Hail, this Pokémon has double Speed."
-          }
-        ],
         "held": {
           "sprite": "focus-sash",
           "name": "Focus Sash",
@@ -7330,12 +6656,6 @@
           "name": "Slush Rush",
           "effect": "During Hail, this Pokémon has double Speed."
         },
-        "abilities": [
-          {
-            "name": "Slush Rush",
-            "effect": "During Hail, this Pokémon has double Speed."
-          }
-        ],
         "held": {
           "sprite": "choice-band",
           "name": "Choice Band",
@@ -7390,11 +6710,6 @@
         "ability": {
           "name": "Ice Scales"
         },
-        "abilities": [
-          {
-            "name": "Ice Scales"
-          }
-        ],
         "held": {
           "sprite": "leftovers",
           "name": "Leftovers",
@@ -7451,12 +6766,6 @@
           "name": "Refrigerate",
           "effect": "Turns the bearer's normal moves into ice moves and strengthens them to 1.3× their power."
         },
-        "abilities": [
-          {
-            "name": "Refrigerate",
-            "effect": "Turns the bearer's normal moves into ice moves and strengthens them to 1.3× their power."
-          }
-        ],
         "held": {
           "sprite": "glalitite",
           "name": "Glalitite",
@@ -7518,12 +6827,6 @@
           "name": "Sturdy",
           "effect": "Prevents being KOed from full HP, leaving 1 HP instead.  Protects against the one-hit KO moves regardless of HP."
         },
-        "abilities": [
-          {
-            "name": "Sturdy",
-            "effect": "Prevents being KOed from full HP, leaving 1 HP instead.  Protects against the one-hit KO moves regardless of HP."
-          }
-        ],
         "held": {
           "sprite": "chople-berry",
           "name": "Chople Berry",
@@ -7580,12 +6883,6 @@
           "name": "Clear Body",
           "effect": "Prevents stats from being lowered by other Pokémon."
         },
-        "abilities": [
-          {
-            "name": "Clear Body",
-            "effect": "Prevents stats from being lowered by other Pokémon."
-          }
-        ],
         "held": {
           "sprite": "choice-band",
           "name": "Choice Band",
@@ -7641,12 +6938,6 @@
           "name": "Stance Change",
           "effect": "Changes aegislash to Blade Forme before using a damaging move, or Shield Forme before using kings shield."
         },
-        "abilities": [
-          {
-            "name": "Stance Change",
-            "effect": "Changes aegislash to Blade Forme before using a damaging move, or Shield Forme before using kings shield."
-          }
-        ],
         "held": {
           "sprite": "leftovers",
           "name": "Leftovers",
@@ -7701,12 +6992,6 @@
           "name": "Hustle",
           "effect": "Strengthens physical moves to inflict 1.5× damage, but decreases their accuracy to 0.8×."
         },
-        "abilities": [
-          {
-            "name": "Hustle",
-            "effect": "Strengthens physical moves to inflict 1.5× damage, but decreases their accuracy to 0.8×."
-          }
-        ],
         "held": {
           "sprite": "life-orb",
           "name": "Life Orb",
@@ -7762,12 +7047,6 @@
           "name": "Light Metal",
           "effect": "Halves the Pokémon's weight."
         },
-        "abilities": [
-          {
-            "name": "Light Metal",
-            "effect": "Halves the Pokémon's weight."
-          }
-        ],
         "held": {
           "sprite": "assault-vest",
           "name": "Assault Vest",
@@ -7822,12 +7101,6 @@
           "name": "Filter",
           "effect": "Decreases damage taken from super-effective moves by 1/4."
         },
-        "abilities": [
-          {
-            "name": "Filter",
-            "effect": "Decreases damage taken from super-effective moves by 1/4."
-          }
-        ],
         "held": {
           "sprite": "aggronite",
           "name": "Aggronite",
@@ -7890,12 +7163,6 @@
           "name": "Levitate",
           "effect": "Evades ground moves."
         },
-        "abilities": [
-          {
-            "name": "Levitate",
-            "effect": "Evades ground moves."
-          }
-        ],
         "held": {
           "sprite": "leftovers",
           "name": "Leftovers",
@@ -7952,12 +7219,6 @@
           "name": "Clear Body",
           "effect": "Prevents stats from being lowered by other Pokémon."
         },
-        "abilities": [
-          {
-            "name": "Clear Body",
-            "effect": "Prevents stats from being lowered by other Pokémon."
-          }
-        ],
         "held": {
           "sprite": "choice-band",
           "name": "Choice Band",
@@ -8012,12 +7273,6 @@
           "name": "Sand Force",
           "effect": "Strengthens rock, ground, and steel moves to 1.3× their power during a sandstorm.  Protects against sandstorm damage."
         },
-        "abilities": [
-          {
-            "name": "Sand Force",
-            "effect": "Strengthens rock, ground, and steel moves to 1.3× their power during a sandstorm.  Protects against sandstorm damage."
-          }
-        ],
         "held": {
           "sprite": "air-balloon",
           "name": "Air Balloon",
@@ -8073,12 +7328,6 @@
           "name": "Magnet Pull",
           "effect": "Prevents steel opponents from fleeing or switching out."
         },
-        "abilities": [
-          {
-            "name": "Magnet Pull",
-            "effect": "Prevents steel opponents from fleeing or switching out."
-          }
-        ],
         "held": {
           "sprite": "magnet",
           "name": "Magnet",
@@ -8134,12 +7383,6 @@
           "name": "Technician",
           "effect": "Strengthens moves of 60 base power or less to 1.5× their power."
         },
-        "abilities": [
-          {
-            "name": "Technician",
-            "effect": "Strengthens moves of 60 base power or less to 1.5× their power."
-          }
-        ],
         "held": {
           "sprite": "choice-band",
           "name": "Choice Band",
@@ -8194,12 +7437,6 @@
           "name": "Filter",
           "effect": "Decreases damage taken from super-effective moves by 1/4."
         },
-        "abilities": [
-          {
-            "name": "Filter",
-            "effect": "Decreases damage taken from super-effective moves by 1/4."
-          }
-        ],
         "held": {
           "sprite": "aggronite",
           "name": "Aggronite",
@@ -8261,12 +7498,6 @@
           "name": "Sturdy",
           "effect": "Prevents being KOed from full HP, leaving 1 HP instead.  Protects against the one-hit KO moves regardless of HP."
         },
-        "abilities": [
-          {
-            "name": "Sturdy",
-            "effect": "Prevents being KOed from full HP, leaving 1 HP instead.  Protects against the one-hit KO moves regardless of HP."
-          }
-        ],
         "held": {
           "sprite": "leftovers",
           "name": "Leftovers",
@@ -8323,12 +7554,6 @@
           "name": "Clear Body",
           "effect": "Prevents stats from being lowered by other Pokémon."
         },
-        "abilities": [
-          {
-            "name": "Clear Body",
-            "effect": "Prevents stats from being lowered by other Pokémon."
-          }
-        ],
         "held": {
           "sprite": "choice-band",
           "name": "Choice Band",
@@ -8383,12 +7608,6 @@
           "name": "Magnet Pull",
           "effect": "Prevents steel opponents from fleeing or switching out."
         },
-        "abilities": [
-          {
-            "name": "Magnet Pull",
-            "effect": "Prevents steel opponents from fleeing or switching out."
-          }
-        ],
         "held": {
           "sprite": "magnet",
           "name": "Magnet",
@@ -8445,12 +7664,6 @@
           "name": "Clear Body",
           "effect": "Prevents stats from being lowered by other Pokémon."
         },
-        "abilities": [
-          {
-            "name": "Clear Body",
-            "effect": "Prevents stats from being lowered by other Pokémon."
-          }
-        ],
         "held": {
           "sprite": "air-balloon",
           "name": "Air Balloon",
@@ -8506,12 +7719,6 @@
           "name": "Inner Focus",
           "effect": "Prevents flinching."
         },
-        "abilities": [
-          {
-            "name": "Inner Focus",
-            "effect": "Prevents flinching."
-          }
-        ],
         "held": {
           "sprite": "life-orb",
           "name": "Life Orb",
@@ -8566,12 +7773,6 @@
           "name": "Filter",
           "effect": "Decreases damage taken from super-effective moves by 1/4."
         },
-        "abilities": [
-          {
-            "name": "Filter",
-            "effect": "Decreases damage taken from super-effective moves by 1/4."
-          }
-        ],
         "held": {
           "sprite": "aggronite",
           "name": "Aggronite",
@@ -8637,12 +7838,6 @@
           "name": "Levitate",
           "effect": "Evades ground moves."
         },
-        "abilities": [
-          {
-            "name": "Levitate",
-            "effect": "Evades ground moves."
-          }
-        ],
         "held": {
           "sprite": "focus-sash",
           "name": "Focus Sash",
@@ -8698,12 +7893,6 @@
           "name": "Poison Heal",
           "effect": "Heals for 1/8 max HP after each turn when poisoned in place of damage."
         },
-        "abilities": [
-          {
-            "name": "Poison Heal",
-            "effect": "Heals for 1/8 max HP after each turn when poisoned in place of damage."
-          }
-        ],
         "held": {
           "sprite": "toxic-orb",
           "name": "Toxic Orb",
@@ -8759,12 +7948,6 @@
           "name": "Lightning Rod",
           "effect": "Redirects single-target electric moves to this Pokémon where possible.  Absorbs Electric moves, raising Special Attack one stage."
         },
-        "abilities": [
-          {
-            "name": "Lightning Rod",
-            "effect": "Redirects single-target electric moves to this Pokémon where possible.  Absorbs Electric moves, raising Special Attack one stage."
-          }
-        ],
         "held": {
           "sprite": "choice-specs",
           "name": "Choice Specs",
@@ -8820,12 +8003,6 @@
           "name": "Rock Head",
           "effect": "Protects against recoil damage."
         },
-        "abilities": [
-          {
-            "name": "Rock Head",
-            "effect": "Protects against recoil damage."
-          }
-        ],
         "held": {
           "sprite": "choice-band",
           "name": "Choice Band",
@@ -8882,12 +8059,6 @@
           "name": "Tinted Lens",
           "effect": "Doubles damage inflicted with not-very-effective moves."
         },
-        "abilities": [
-          {
-            "name": "Tinted Lens",
-            "effect": "Doubles damage inflicted with not-very-effective moves."
-          }
-        ],
         "held": {
           "sprite": "life-orb",
           "name": "Life Orb",
@@ -8943,12 +8114,6 @@
           "name": "Speed Boost",
           "effect": "Raises Speed one stage after each turn."
         },
-        "abilities": [
-          {
-            "name": "Speed Boost",
-            "effect": "Raises Speed one stage after each turn."
-          }
-        ],
         "held": {
           "sprite": "blazikenite",
           "name": "Blazikenite",
@@ -9012,12 +8177,6 @@
           "name": "Intimidate",
           "effect": "Lowers opponents' Attack one stage upon entering battle."
         },
-        "abilities": [
-          {
-            "name": "Intimidate",
-            "effect": "Lowers opponents' Attack one stage upon entering battle."
-          }
-        ],
         "held": {
           "sprite": "choice-band",
           "name": "Choice Band",
@@ -9073,12 +8232,6 @@
           "name": "Iron fist",
           "effect": "This Pokemon's punch-based attacks have their power multiplied by 1.3×."
         },
-        "abilities": [
-          {
-            "name": "Iron fist",
-            "effect": "This Pokemon's punch-based attacks have their power multiplied by 1.3×."
-          }
-        ],
         "held": {
           "sprite": "expert-belt",
           "name": "Expert Belt",
@@ -9133,12 +8286,6 @@
           "name": "Tough Claws",
           "effect": "Strengthens moves that make contact to 1.33× their power."
         },
-        "abilities": [
-          {
-            "name": "Tough Claws",
-            "effect": "Strengthens moves that make contact to 1.33× their power."
-          }
-        ],
         "held": {
           "sprite": "white-herb",
           "name": "White Herb",
@@ -9195,12 +8342,6 @@
           "name": "Magic Bounce",
           "effect": "Reflects most non-damaging moves back at their user."
         },
-        "abilities": [
-          {
-            "name": "Magic Bounce",
-            "effect": "Reflects most non-damaging moves back at their user."
-          }
-        ],
         "held": {
           "sprite": "leftovers",
           "name": "Leftovers",
@@ -9257,12 +8398,6 @@
           "name": "Beast Boost",
           "effect": "Raises this Pokémon's highest stat by one stage when it faints another Pokémon."
         },
-        "abilities": [
-          {
-            "name": "Beast Boost",
-            "effect": "Raises this Pokémon's highest stat by one stage when it faints another Pokémon."
-          }
-        ],
         "held": {
           "sprite": "choice-scarf",
           "name": "Choice Scarf",
@@ -9317,12 +8452,6 @@
           "name": "Blaze",
           "effect": "Strengthens fire moves to inflict 1.5× damage at 1/3 max HP or less."
         },
-        "abilities": [
-          {
-            "name": "Blaze",
-            "effect": "Strengthens fire moves to inflict 1.5× damage at 1/3 max HP or less."
-          }
-        ],
         "held": {
           "sprite": "charizardite-x",
           "name": "Charizardite X",
@@ -9387,12 +8516,6 @@
           "name": "Pressure",
           "effect": "Increases the PP cost of moves targetting the Pokémon by one."
         },
-        "abilities": [
-          {
-            "name": "Pressure",
-            "effect": "Increases the PP cost of moves targetting the Pokémon by one."
-          }
-        ],
         "held": {
           "sprite": "focus-sash",
           "name": "Focus Sash",
@@ -9449,12 +8572,6 @@
           "name": "Serene Grace",
           "effect": "Doubles the chance of moves' extra effects occurring."
         },
-        "abilities": [
-          {
-            "name": "Serene Grace",
-            "effect": "Doubles the chance of moves' extra effects occurring."
-          }
-        ],
         "held": {
           "sprite": "choice-scarf",
           "name": "Choice Scarf",
@@ -9511,12 +8628,6 @@
           "name": "Sand Force",
           "effect": "Strengthens rock, ground, and steel moves to 1.3× their power during a sandstorm.  Protects against sandstorm damage."
         },
-        "abilities": [
-          {
-            "name": "Sand Force",
-            "effect": "Strengthens rock, ground, and steel moves to 1.3× their power during a sandstorm.  Protects against sandstorm damage."
-          }
-        ],
         "held": {
           "sprite": "life-orb",
           "name": "Life Orb",
@@ -9574,12 +8685,6 @@
           "name": "Defiant",
           "effect": "Raises Attack two stages upon having any stat lowered."
         },
-        "abilities": [
-          {
-            "name": "Defiant",
-            "effect": "Raises Attack two stages upon having any stat lowered."
-          }
-        ],
         "held": {
           "sprite": "choice-band",
           "name": "Choice Band",
@@ -9635,12 +8740,6 @@
           "name": "Intimidate",
           "effect": "Lowers opponents' Attack one stage upon entering battle."
         },
-        "abilities": [
-          {
-            "name": "Intimidate",
-            "effect": "Lowers opponents' Attack one stage upon entering battle."
-          }
-        ],
         "held": {
           "sprite": "white-herb",
           "name": "White Herb",
@@ -9695,12 +8794,6 @@
           "name": "Overgrow",
           "effect": "Strengthens grass moves to inflict 1.5× damage at 1/3 max HP or less."
         },
-        "abilities": [
-          {
-            "name": "Overgrow",
-            "effect": "Strengthens grass moves to inflict 1.5× damage at 1/3 max HP or less."
-          }
-        ],
         "held": {
           "sprite": "sceptilite",
           "name": "Sceptilite",
@@ -9762,12 +8855,6 @@
           "name": "Water Absorb",
           "effect": "Absorbs water moves, healing for 1/4 max HP."
         },
-        "abilities": [
-          {
-            "name": "Water Absorb",
-            "effect": "Absorbs water moves, healing for 1/4 max HP."
-          }
-        ],
         "held": {
           "sprite": "focus-sash",
           "name": "Focus Sash",
@@ -9821,12 +8908,6 @@
           "name": "Drizzle",
           "effect": "Summons rain that lasts indefinitely upon entering battle."
         },
-        "abilities": [
-          {
-            "name": "Drizzle",
-            "effect": "Summons rain that lasts indefinitely upon entering battle."
-          }
-        ],
         "held": {
           "sprite": "damp-rock",
           "name": "Damp Rock",
@@ -9882,12 +8963,6 @@
           "name": "Swift Swim",
           "effect": "Doubles Speed during rain."
         },
-        "abilities": [
-          {
-            "name": "Swift Swim",
-            "effect": "Doubles Speed during rain."
-          }
-        ],
         "held": {
           "sprite": "swampertite",
           "name": "Swampertite",
@@ -9943,12 +9018,6 @@
           "name": "Swift Swim",
           "effect": "Doubles Speed during rain."
         },
-        "abilities": [
-          {
-            "name": "Swift Swim",
-            "effect": "Doubles Speed during rain."
-          }
-        ],
         "held": {
           "sprite": "life-orb",
           "name": "Life Orb",
@@ -10003,12 +9072,6 @@
           "name": "Primordial Sea",
           "effect": "Creates heavy rain, which has all the properties of Rain Dance, cannot be replaced, and causes damaging Fire moves to fail."
         },
-        "abilities": [
-          {
-            "name": "Primordial Sea",
-            "effect": "Creates heavy rain, which has all the properties of Rain Dance, cannot be replaced, and causes damaging Fire moves to fail."
-          }
-        ],
         "held": {
           "sprite": "blue-orb",
           "name": "Blue Orb",
@@ -10064,12 +9127,6 @@
           "name": "Strong Jaw",
           "effect": "Strengthens biting moves to 1.5× their power."
         },
-        "abilities": [
-          {
-            "name": "Strong Jaw",
-            "effect": "Strengthens biting moves to 1.5× their power."
-          }
-        ],
         "held": {
           "sprite": "choice-scarf",
           "name": "Choice Scarf",
@@ -10131,12 +9188,6 @@
           "name": "Snow Warning",
           "effect": "Summons hail that lasts indefinitely upon entering battle."
         },
-        "abilities": [
-          {
-            "name": "Snow Warning",
-            "effect": "Summons hail that lasts indefinitely upon entering battle."
-          }
-        ],
         "held": {
           "sprite": "light-clay",
           "name": "Light Clay",
@@ -10193,12 +9244,6 @@
           "name": "Slush Rush",
           "effect": "During Hail, this Pokémon has double Speed."
         },
-        "abilities": [
-          {
-            "name": "Slush Rush",
-            "effect": "During Hail, this Pokémon has double Speed."
-          }
-        ],
         "held": {
           "sprite": "choice-specs",
           "name": "Choice Specs",
@@ -10251,12 +9296,6 @@
           "name": "As one",
           "effect": "This Pokemon's Attack is raised by 1 stage if it attacks and knocks out another Pokemon. While this Pokemon is active, it prevents opposing Pokemon from using their Berries. This Ability activates before hazards and other Abilities take effect."
         },
-        "abilities": [
-          {
-            "name": "As one",
-            "effect": "This Pokemon's Attack is raised by 1 stage if it attacks and knocks out another Pokemon. While this Pokemon is active, it prevents opposing Pokemon from using their Berries. This Ability activates before hazards and other Abilities take effect."
-          }
-        ],
         "held": {
           "sprite": "choice-band",
           "name": "Choice Band",
@@ -10311,12 +9350,6 @@
           "name": "Levitate",
           "effect": "Evades ground moves."
         },
-        "abilities": [
-          {
-            "name": "Levitate",
-            "effect": "Evades ground moves."
-          }
-        ],
         "held": {
           "sprite": "wiki-berry",
           "name": "Wiki Berry",
@@ -10373,12 +9406,6 @@
           "name": "Huge Power",
           "effect": "Doubles Attack in battle."
         },
-        "abilities": [
-          {
-            "name": "Huge Power",
-            "effect": "Doubles Attack in battle."
-          }
-        ],
         "held": {
           "sprite": "assault-vest",
           "name": "Assault Vest",
@@ -10434,12 +9461,6 @@
           "name": "Slush Rush",
           "effect": "During Hail, this Pokémon has double Speed."
         },
-        "abilities": [
-          {
-            "name": "Slush Rush",
-            "effect": "During Hail, this Pokémon has double Speed."
-          }
-        ],
         "held": {
           "sprite": "abomasite",
           "name": "Abomasite",
@@ -10501,12 +9522,6 @@
           "name": "Blaze",
           "effect": "Strengthens fire moves to inflict 1.5× damage at 1/3 max HP or less."
         },
-        "abilities": [
-          {
-            "name": "Blaze",
-            "effect": "Strengthens fire moves to inflict 1.5× damage at 1/3 max HP or less."
-          }
-        ],
         "held": {
           "sprite": "focus-sash",
           "name": "Focus Sash",
@@ -10563,12 +9578,6 @@
           "name": "Iron fist",
           "effect": "This Pokemon's punch-based attacks have their power multiplied by 1.3×."
         },
-        "abilities": [
-          {
-            "name": "Iron fist",
-            "effect": "This Pokemon's punch-based attacks have their power multiplied by 1.3×."
-          }
-        ],
         "held": {
           "sprite": "assault-vest",
           "name": "Assault Vest",
@@ -10622,11 +9631,6 @@
         "ability": {
           "name": "Unseen Fist"
         },
-        "abilities": [
-          {
-            "name": "Unseen Fist"
-          }
-        ],
         "held": {
           "sprite": "choice-scarf",
           "name": "Choice Scarf",
@@ -10680,14 +9684,10 @@
         "ability": {
           "name": "Intrepid Sword"
         },
-        "abilities": [
-          {
-            "name": "Intrepid Sword"
-          }
-        ],
         "held": {
           "sprite": "rusted-sword",
-          "name": "Rusted Sword"
+          "name": "Rusted Sword",
+          "effect": "It is said that a hero used this sword to halt a terrible\ndisaster in ancient times. But it’s grown rusty and worn."
         },
         "sprite": "10188",
         "types": [
@@ -10738,15 +9738,10 @@
           "name": "Overcoat",
           "effect": "Protects against damage from weather."
         },
-        "abilities": [
-          {
-            "name": "Overcoat",
-            "effect": "Protects against damage from weather."
-          }
-        ],
         "held": {
           "sprite": "throat-spray",
-          "name": "Throat Spray"
+          "name": "Throat Spray",
+          "effect": "Raises Sp. Atk when a Pokémon uses a sound-based\nmove."
         },
         "sprite": "784",
         "types": [
@@ -10798,12 +9793,6 @@
           "name": "Adaptability",
           "effect": "Increases the same-type attack bonus from 1.5× to 2×."
         },
-        "abilities": [
-          {
-            "name": "Adaptability",
-            "effect": "Increases the same-type attack bonus from 1.5× to 2×."
-          }
-        ],
         "held": {
           "sprite": "lucarionite",
           "name": "Lucarionite",
@@ -10865,11 +9854,6 @@
         "ability": {
           "name": "Unseen Fist"
         },
-        "abilities": [
-          {
-            "name": "Unseen Fist"
-          }
-        ],
         "held": {
           "sprite": "focus-sash",
           "name": "Focus Sash",
@@ -10925,12 +9909,6 @@
           "name": "Technician",
           "effect": "Strengthens moves of 60 base power or less to 1.5× their power."
         },
-        "abilities": [
-          {
-            "name": "Technician",
-            "effect": "Strengthens moves of 60 base power or less to 1.5× their power."
-          }
-        ],
         "held": {
           "sprite": "life-orb",
           "name": "Life Orb",
@@ -10986,12 +9964,6 @@
           "name": "Justified",
           "effect": "Raises Attack one stage upon taking damage from a dark move."
         },
-        "abilities": [
-          {
-            "name": "Justified",
-            "effect": "Raises Attack one stage upon taking damage from a dark move."
-          }
-        ],
         "held": {
           "sprite": "choice-scarf",
           "name": "Choice Scarf",
@@ -11045,14 +10017,10 @@
         "ability": {
           "name": "Intrepid Sword"
         },
-        "abilities": [
-          {
-            "name": "Intrepid Sword"
-          }
-        ],
         "held": {
           "sprite": "rusted-sword",
-          "name": "Rusted Sword"
+          "name": "Rusted Sword",
+          "effect": "It is said that a hero used this sword to halt a terrible\ndisaster in ancient times. But it’s grown rusty and worn."
         },
         "sprite": "10188",
         "types": [
@@ -11105,12 +10073,6 @@
           "name": "Iron fist",
           "effect": "This Pokemon's punch-based attacks have their power multiplied by 1.3×."
         },
-        "abilities": [
-          {
-            "name": "Iron fist",
-            "effect": "This Pokemon's punch-based attacks have their power multiplied by 1.3×."
-          }
-        ],
         "held": {
           "sprite": "assault-vest",
           "name": "Assault Vest",
@@ -11165,12 +10127,6 @@
           "name": "Adaptability",
           "effect": "Increases the same-type attack bonus from 1.5× to 2×."
         },
-        "abilities": [
-          {
-            "name": "Adaptability",
-            "effect": "Increases the same-type attack bonus from 1.5× to 2×."
-          }
-        ],
         "held": {
           "sprite": "lucarionite",
           "name": "Lucarionite",
@@ -11233,12 +10189,6 @@
           "name": "Illusion",
           "effect": "Appears as last Pokemon in party until damaged. Moves have their power multiplied by 1.3× whilst disguised."
         },
-        "abilities": [
-          {
-            "name": "Illusion",
-            "effect": "Appears as last Pokemon in party until damaged. Moves have their power multiplied by 1.3× whilst disguised."
-          }
-        ],
         "held": {
           "sprite": "focus-sash",
           "name": "Focus Sash",
@@ -11291,11 +10241,6 @@
         "ability": {
           "name": "Grim Neigh"
         },
-        "abilities": [
-          {
-            "name": "Grim Neigh"
-          }
-        ],
         "held": {
           "sprite": "choice-scarf",
           "name": "Choice Scarf",
@@ -11350,12 +10295,6 @@
           "name": "Technician",
           "effect": "Strengthens moves of 60 base power or less to 1.5× their power."
         },
-        "abilities": [
-          {
-            "name": "Technician",
-            "effect": "Strengthens moves of 60 base power or less to 1.5× their power."
-          }
-        ],
         "held": {
           "sprite": "focus-sash",
           "name": "Focus Sash",
@@ -11410,12 +10349,6 @@
           "name": "Battle Armor",
           "effect": "Protects against critical hits."
         },
-        "abilities": [
-          {
-            "name": "Battle Armor",
-            "effect": "Protects against critical hits."
-          }
-        ],
         "held": {
           "sprite": "leftovers",
           "name": "Leftovers",
@@ -11470,12 +10403,6 @@
           "name": "Stance Change",
           "effect": "Changes aegislash to Blade Forme before using a damaging move, or Shield Forme before using kings shield."
         },
-        "abilities": [
-          {
-            "name": "Stance Change",
-            "effect": "Changes aegislash to Blade Forme before using a damaging move, or Shield Forme before using kings shield."
-          }
-        ],
         "held": {
           "sprite": "leftovers",
           "name": "Leftovers",
@@ -11531,12 +10458,6 @@
           "name": "Shadow Tag",
           "effect": "Prevents opponents from fleeing or switching out."
         },
-        "abilities": [
-          {
-            "name": "Shadow Tag",
-            "effect": "Prevents opponents from fleeing or switching out."
-          }
-        ],
         "held": {
           "sprite": "gengarite",
           "name": "Gengarite",
@@ -11597,12 +10518,6 @@
           "name": "Prankster",
           "effect": "Raises non-damaging moves' priority by one stage."
         },
-        "abilities": [
-          {
-            "name": "Prankster",
-            "effect": "Raises non-damaging moves' priority by one stage."
-          }
-        ],
         "held": {
           "sprite": "light-clay",
           "name": "Light Clay",
@@ -11656,11 +10571,6 @@
         "ability": {
           "name": "Grim Neigh"
         },
-        "abilities": [
-          {
-            "name": "Grim Neigh"
-          }
-        ],
         "held": {
           "sprite": "choice-scarf",
           "name": "Choice Scarf",
@@ -11715,12 +10625,6 @@
           "name": "Technician",
           "effect": "Strengthens moves of 60 base power or less to 1.5× their power."
         },
-        "abilities": [
-          {
-            "name": "Technician",
-            "effect": "Strengthens moves of 60 base power or less to 1.5× their power."
-          }
-        ],
         "held": {
           "sprite": "focus-sash",
           "name": "Focus Sash",
@@ -11775,12 +10679,6 @@
           "name": "Cursed Body",
           "effect": "Has a 30% chance of Disabling any move that hits the Pokémon."
         },
-        "abilities": [
-          {
-            "name": "Cursed Body",
-            "effect": "Has a 30% chance of Disabling any move that hits the Pokémon."
-          }
-        ],
         "held": {
           "sprite": "life-orb",
           "name": "Life Orb",
@@ -11835,12 +10733,6 @@
           "name": "Levitate",
           "effect": "Evades ground moves."
         },
-        "abilities": [
-          {
-            "name": "Levitate",
-            "effect": "Evades ground moves."
-          }
-        ],
         "held": {
           "sprite": "leftovers",
           "name": "Leftovers",
@@ -11896,12 +10788,6 @@
           "name": "Shadow Tag",
           "effect": "Prevents opponents from fleeing or switching out."
         },
-        "abilities": [
-          {
-            "name": "Shadow Tag",
-            "effect": "Prevents opponents from fleeing or switching out."
-          }
-        ],
         "held": {
           "sprite": "gengarite",
           "name": "Gengarite",
@@ -11964,12 +10850,6 @@
           "name": "Rough Skin",
           "effect": "Damages attacking Pokémon for 1/8 their max HP on contact."
         },
-        "abilities": [
-          {
-            "name": "Rough Skin",
-            "effect": "Damages attacking Pokémon for 1/8 their max HP on contact."
-          }
-        ],
         "held": {
           "sprite": "focus-sash",
           "name": "Focus Sash",
@@ -12024,12 +10904,6 @@
           "name": "Multiscale",
           "effect": "Halves damage taken from full HP."
         },
-        "abilities": [
-          {
-            "name": "Multiscale",
-            "effect": "Halves damage taken from full HP."
-          }
-        ],
         "held": {
           "sprite": "lum-berry",
           "name": "Lum Berry",
@@ -12084,12 +10958,6 @@
           "name": "Hustle",
           "effect": "Strengthens physical moves to inflict 1.5× damage, but decreases their accuracy to 0.8×."
         },
-        "abilities": [
-          {
-            "name": "Hustle",
-            "effect": "Strengthens physical moves to inflict 1.5× damage, but decreases their accuracy to 0.8×."
-          }
-        ],
         "held": {
           "sprite": "choice-scarf",
           "name": "Choice Scarf",
@@ -12146,12 +11014,6 @@
           "name": "Iron fist",
           "effect": "This Pokemon's punch-based attacks have their power multiplied by 1.3×."
         },
-        "abilities": [
-          {
-            "name": "Iron fist",
-            "effect": "This Pokemon's punch-based attacks have their power multiplied by 1.3×."
-          }
-        ],
         "held": {
           "sprite": "assault-vest",
           "name": "Assault Vest",
@@ -12205,12 +11067,6 @@
           "name": "Primal armor",
           "effect": "This Pokemon receives 1/2 damage from supereffective attacks."
         },
-        "abilities": [
-          {
-            "name": "Primal armor",
-            "effect": "This Pokemon receives 1/2 damage from supereffective attacks."
-          }
-        ],
         "held": {
           "sprite": "adamant-orb",
           "name": "Adamant Orb",
@@ -12267,12 +11123,6 @@
           "name": "Aerilate",
           "effect": "Turns the bearer's normal moves into flying moves and strengthens them to 1.3× their power."
         },
-        "abilities": [
-          {
-            "name": "Aerilate",
-            "effect": "Turns the bearer's normal moves into flying moves and strengthens them to 1.3× their power."
-          }
-        ],
         "held": {
           "sprite": "salamencite",
           "name": "Salamencite",
@@ -12334,12 +11184,6 @@
           "name": "Rock Head",
           "effect": "Protects against recoil damage."
         },
-        "abilities": [
-          {
-            "name": "Rock Head",
-            "effect": "Protects against recoil damage."
-          }
-        ],
         "held": {
           "sprite": "focus-sash",
           "name": "Focus Sash",
@@ -12395,12 +11239,6 @@
           "name": "Strong Jaw",
           "effect": "Strengthens biting moves to 1.5× their power."
         },
-        "abilities": [
-          {
-            "name": "Strong Jaw",
-            "effect": "Strengthens biting moves to 1.5× their power."
-          }
-        ],
         "held": {
           "sprite": "choice-scarf",
           "name": "Choice Scarf",
@@ -12456,12 +11294,6 @@
           "name": "Multiscale",
           "effect": "Halves damage taken from full HP."
         },
-        "abilities": [
-          {
-            "name": "Multiscale",
-            "effect": "Halves damage taken from full HP."
-          }
-        ],
         "held": {
           "sprite": "choice-band",
           "name": "Choice Band",
@@ -12518,12 +11350,6 @@
           "name": "Clear Body",
           "effect": "Prevents stats from being lowered by other Pokémon."
         },
-        "abilities": [
-          {
-            "name": "Clear Body",
-            "effect": "Prevents stats from being lowered by other Pokémon."
-          }
-        ],
         "held": {
           "sprite": "assault-vest",
           "name": "Assault Vest",
@@ -12577,12 +11403,6 @@
           "name": "Primal armor",
           "effect": "This Pokemon receives 1/2 damage from supereffective attacks."
         },
-        "abilities": [
-          {
-            "name": "Primal armor",
-            "effect": "This Pokemon receives 1/2 damage from supereffective attacks."
-          }
-        ],
         "held": {
           "sprite": "adamant-orb",
           "name": "Adamant Orb",
@@ -12639,12 +11459,6 @@
           "name": "Aerilate",
           "effect": "Turns the bearer's normal moves into flying moves and strengthens them to 1.3× their power."
         },
-        "abilities": [
-          {
-            "name": "Aerilate",
-            "effect": "Turns the bearer's normal moves into flying moves and strengthens them to 1.3× their power."
-          }
-        ],
         "held": {
           "sprite": "salamencite",
           "name": "Salamencite",
@@ -12707,12 +11521,6 @@
           "name": "Beast Boost",
           "effect": "Raises this Pokémon's highest stat by one stage when it faints another Pokémon."
         },
-        "abilities": [
-          {
-            "name": "Beast Boost",
-            "effect": "Raises this Pokémon's highest stat by one stage when it faints another Pokémon."
-          }
-        ],
         "held": {
           "sprite": "focus-sash",
           "name": "Focus Sash",
@@ -12769,12 +11577,6 @@
           "name": "Clear Body",
           "effect": "Prevents stats from being lowered by other Pokémon."
         },
-        "abilities": [
-          {
-            "name": "Clear Body",
-            "effect": "Prevents stats from being lowered by other Pokémon."
-          }
-        ],
         "held": {
           "sprite": "metagrossite",
           "name": "Metagrossite",
@@ -12829,12 +11631,6 @@
           "name": "Drought",
           "effect": "Summons strong sunlight that lasts indefinitely upon entering battle."
         },
-        "abilities": [
-          {
-            "name": "Drought",
-            "effect": "Summons strong sunlight that lasts indefinitely upon entering battle."
-          }
-        ],
         "held": {
           "sprite": "red-orb",
           "name": "Red Orb",
@@ -12893,12 +11689,6 @@
           "name": "Dark Aura",
           "effect": "Strengthens dark moves to 1.33× their power for all friendly and opposing Pokémon."
         },
-        "abilities": [
-          {
-            "name": "Dark Aura",
-            "effect": "Strengthens dark moves to 1.33× their power for all friendly and opposing Pokémon."
-          }
-        ],
         "held": {
           "sprite": "assault-vest",
           "name": "Assault Vest",
@@ -12954,12 +11744,6 @@
           "name": "Pressure",
           "effect": "Increases the PP cost of moves targetting the Pokémon by one."
         },
-        "abilities": [
-          {
-            "name": "Pressure",
-            "effect": "Increases the PP cost of moves targetting the Pokémon by one."
-          }
-        ],
         "held": {
           "sprite": "power-herb",
           "name": "Power Herb",
@@ -12994,12 +11778,6 @@
           "name": "Imposter",
           "effect": "Transforms upon entering battle."
         },
-        "abilities": [
-          {
-            "name": "Imposter",
-            "effect": "Transforms upon entering battle."
-          }
-        ],
         "held": {
           "sprite": "choice-scarf",
           "name": "Choice Scarf",
@@ -13061,12 +11839,6 @@
           "name": "Sand Stream",
           "effect": "Summons a sandstorm that lasts indefinitely upon entering battle."
         },
-        "abilities": [
-          {
-            "name": "Sand Stream",
-            "effect": "Summons a sandstorm that lasts indefinitely upon entering battle."
-          }
-        ],
         "held": {
           "sprite": "smooth-rock",
           "name": "Smooth Rock",
@@ -13121,12 +11893,6 @@
           "name": "Sand Stream",
           "effect": "Summons a sandstorm that lasts indefinitely upon entering battle."
         },
-        "abilities": [
-          {
-            "name": "Sand Stream",
-            "effect": "Summons a sandstorm that lasts indefinitely upon entering battle."
-          }
-        ],
         "held": {
           "sprite": "weakness-policy",
           "name": "Weakness Policy",
@@ -13183,12 +11949,6 @@
           "name": "Tough Claws",
           "effect": "Strengthens moves that make contact to 1.33× their power."
         },
-        "abilities": [
-          {
-            "name": "Tough Claws",
-            "effect": "Strengthens moves that make contact to 1.33× their power."
-          }
-        ],
         "held": {
           "sprite": "life-orb",
           "name": "Life Orb",
@@ -13243,12 +12003,6 @@
           "name": "Battle Armor",
           "effect": "Protects against critical hits."
         },
-        "abilities": [
-          {
-            "name": "Battle Armor",
-            "effect": "Protects against critical hits."
-          }
-        ],
         "held": {
           "sprite": "power-herb",
           "name": "Power Herb",
@@ -13303,12 +12057,6 @@
           "name": "Sand Rush",
           "effect": "Doubles Speed during a sandstorm.  Protects against sandstorm damage."
         },
-        "abilities": [
-          {
-            "name": "Sand Rush",
-            "effect": "Doubles Speed during a sandstorm.  Protects against sandstorm damage."
-          }
-        ],
         "held": {
           "sprite": "soft-sand",
           "name": "Soft Sand",
@@ -13362,12 +12110,6 @@
           "name": "Tough Claws",
           "effect": "Strengthens moves that make contact to 1.33× their power."
         },
-        "abilities": [
-          {
-            "name": "Tough Claws",
-            "effect": "Strengthens moves that make contact to 1.33× their power."
-          }
-        ],
         "held": {
           "sprite": "aerodactylite",
           "name": "Aerodactylite",
@@ -13429,12 +12171,6 @@
           "name": "Drizzle",
           "effect": "Summons rain that lasts indefinitely upon entering battle."
         },
-        "abilities": [
-          {
-            "name": "Drizzle",
-            "effect": "Summons rain that lasts indefinitely upon entering battle."
-          }
-        ],
         "held": {
           "sprite": "damp-rock",
           "name": "Damp Rock",
@@ -13490,12 +12226,6 @@
           "name": "Protean",
           "effect": "Changes the bearer's type to match each move it uses."
         },
-        "abilities": [
-          {
-            "name": "Protean",
-            "effect": "Changes the bearer's type to match each move it uses."
-          }
-        ],
         "held": {
           "sprite": "life-orb",
           "name": "Life Orb",
@@ -13551,12 +12281,6 @@
           "name": "Regenerator",
           "effect": "Heals for 1/3 max HP upon switching out."
         },
-        "abilities": [
-          {
-            "name": "Regenerator",
-            "effect": "Heals for 1/3 max HP upon switching out."
-          }
-        ],
         "held": {
           "sprite": "white-herb",
           "name": "White Herb",
@@ -13612,12 +12336,6 @@
           "name": "Swift Swim",
           "effect": "Doubles Speed during rain."
         },
-        "abilities": [
-          {
-            "name": "Swift Swim",
-            "effect": "Doubles Speed during rain."
-          }
-        ],
         "held": {
           "sprite": "life-orb",
           "name": "Life Orb",
@@ -13674,12 +12392,6 @@
           "name": "Sniper",
           "effect": "Strengthens critical hits to inflict 3× damage rather than 2×."
         },
-        "abilities": [
-          {
-            "name": "Sniper",
-            "effect": "Strengthens critical hits to inflict 3× damage rather than 2×."
-          }
-        ],
         "held": {
           "sprite": "scope-lens",
           "name": "Scope Lens",
@@ -13734,12 +12446,6 @@
           "name": "Mold Breaker",
           "effect": "Bypasses targets' abilities if they could hinder or prevent a move."
         },
-        "abilities": [
-          {
-            "name": "Mold Breaker",
-            "effect": "Bypasses targets' abilities if they could hinder or prevent a move."
-          }
-        ],
         "held": {
           "sprite": "gyaradosite",
           "name": "Gyaradosite",
@@ -13801,12 +12507,6 @@
           "name": "Prankster",
           "effect": "Raises non-damaging moves' priority by one stage."
         },
-        "abilities": [
-          {
-            "name": "Prankster",
-            "effect": "Raises non-damaging moves' priority by one stage."
-          }
-        ],
         "held": {
           "sprite": "light-clay",
           "name": "Light Clay",
@@ -13860,12 +12560,6 @@
           "name": "Hustle",
           "effect": "Strengthens physical moves to inflict 1.5× damage, but decreases their accuracy to 0.8×."
         },
-        "abilities": [
-          {
-            "name": "Hustle",
-            "effect": "Strengthens physical moves to inflict 1.5× damage, but decreases their accuracy to 0.8×."
-          }
-        ],
         "held": {
           "sprite": "choice-scarf",
           "name": "Choice Scarf",
@@ -13919,12 +12613,6 @@
           "name": "Electric Surge",
           "effect": "When this Pokémon enters battle, it changes the terrain to Electric Terrain."
         },
-        "abilities": [
-          {
-            "name": "Electric Surge",
-            "effect": "When this Pokémon enters battle, it changes the terrain to Electric Terrain."
-          }
-        ],
         "held": {
           "sprite": "terrain-extender",
           "name": "Terrain Extender",
@@ -13977,12 +12665,6 @@
           "name": "Levitate",
           "effect": "Evades ground moves."
         },
-        "abilities": [
-          {
-            "name": "Levitate",
-            "effect": "Evades ground moves."
-          }
-        ],
         "held": {
           "sprite": "life-orb",
           "name": "Life Orb",
@@ -14038,12 +12720,6 @@
           "name": "Levitate",
           "effect": "Evades ground moves."
         },
-        "abilities": [
-          {
-            "name": "Levitate",
-            "effect": "Evades ground moves."
-          }
-        ],
         "held": {
           "sprite": "life-orb",
           "name": "Life Orb",
@@ -14099,12 +12775,6 @@
           "name": "Intimidate",
           "effect": "Lowers opponents' Attack one stage upon entering battle."
         },
-        "abilities": [
-          {
-            "name": "Intimidate",
-            "effect": "Lowers opponents' Attack one stage upon entering battle."
-          }
-        ],
         "held": {
           "sprite": "manectite",
           "name": "Manectite",
@@ -14166,12 +12836,6 @@
           "name": "Striker",
           "effect": "This Pokemon's kick-based attacks have their power multiplied by 1.3."
         },
-        "abilities": [
-          {
-            "name": "Striker",
-            "effect": "This Pokemon's kick-based attacks have their power multiplied by 1.3."
-          }
-        ],
         "held": {
           "sprite": "focus-sash",
           "name": "Focus Sash",
@@ -14225,12 +12889,6 @@
           "name": "Unburden",
           "effect": "Doubles Speed upon using or losing a held item."
         },
-        "abilities": [
-          {
-            "name": "Unburden",
-            "effect": "Doubles Speed upon using or losing a held item."
-          }
-        ],
         "held": {
           "sprite": "grassy-seed",
           "name": "Grassy Seed",
@@ -14285,12 +12943,6 @@
           "name": "Chlorophyll",
           "effect": "Doubles Speed during strong sunlight."
         },
-        "abilities": [
-          {
-            "name": "Chlorophyll",
-            "effect": "Doubles Speed during strong sunlight."
-          }
-        ],
         "held": {
           "sprite": "leftovers",
           "name": "Leftovers",
@@ -14343,12 +12995,6 @@
           "name": "Grassy Surge",
           "effect": "When this Pokémon enters battle, it changes the terrain to Grassy Terrain."
         },
-        "abilities": [
-          {
-            "name": "Grassy Surge",
-            "effect": "When this Pokémon enters battle, it changes the terrain to Grassy Terrain."
-          }
-        ],
         "held": {
           "sprite": "grassy-seed",
           "name": "Grassy Seed",
@@ -14402,12 +13048,6 @@
           "name": "Contrary",
           "effect": "Inverts stat changes."
         },
-        "abilities": [
-          {
-            "name": "Contrary",
-            "effect": "Inverts stat changes."
-          }
-        ],
         "held": {
           "sprite": "focus-sash",
           "name": "Focus Sash",
@@ -14462,12 +13102,6 @@
           "name": "Thick Fat",
           "effect": "Halves damage from fire and ice moves."
         },
-        "abilities": [
-          {
-            "name": "Thick Fat",
-            "effect": "Halves damage from fire and ice moves."
-          }
-        ],
         "held": {
           "sprite": "venusaurite",
           "name": "Venusaurite",
@@ -14530,12 +13164,6 @@
           "name": "Thick Fat",
           "effect": "Halves damage from fire and ice moves."
         },
-        "abilities": [
-          {
-            "name": "Thick Fat",
-            "effect": "Halves damage from fire and ice moves."
-          }
-        ],
         "held": {
           "sprite": "focus-sash",
           "name": "Focus Sash",
@@ -14590,12 +13218,6 @@
           "name": "Hustle",
           "effect": "Strengthens physical moves to inflict 1.5× damage, but decreases their accuracy to 0.8×."
         },
-        "abilities": [
-          {
-            "name": "Hustle",
-            "effect": "Strengthens physical moves to inflict 1.5× damage, but decreases their accuracy to 0.8×."
-          }
-        ],
         "held": {
           "sprite": "life-orb",
           "name": "Life Orb",
@@ -14651,12 +13273,6 @@
           "name": "Disguise",
           "effect": "Prevents the first instance of battle damage."
         },
-        "abilities": [
-          {
-            "name": "Disguise",
-            "effect": "Prevents the first instance of battle damage."
-          }
-        ],
         "held": {
           "sprite": "lum-berry",
           "name": "Lum Berry",
@@ -14713,12 +13329,6 @@
           "name": "Unnerve",
           "effect": "Prevents opposing Pokémon from eating held Berries."
         },
-        "abilities": [
-          {
-            "name": "Unnerve",
-            "effect": "Prevents opposing Pokémon from eating held Berries."
-          }
-        ],
         "held": {
           "sprite": "houndoominite",
           "name": "Houndoominite",
@@ -14781,12 +13391,6 @@
           "name": "Magic Bounce",
           "effect": "Reflects most non-damaging moves back at their user."
         },
-        "abilities": [
-          {
-            "name": "Magic Bounce",
-            "effect": "Reflects most non-damaging moves back at their user."
-          }
-        ],
         "held": {
           "sprite": "sitrus-berry",
           "name": "Sitrus Berry",
@@ -14842,12 +13446,6 @@
           "name": "Solid Rock",
           "effect": "Decreases damage taken from super-effective moves by 1/4."
         },
-        "abilities": [
-          {
-            "name": "Solid Rock",
-            "effect": "Decreases damage taken from super-effective moves by 1/4."
-          }
-        ],
         "held": {
           "sprite": "weakness-policy",
           "name": "Weakness Policy",
@@ -14905,12 +13503,6 @@
           "name": "Super Luck",
           "effect": "Raises moves' critical hit rates one stage."
         },
-        "abilities": [
-          {
-            "name": "Super Luck",
-            "effect": "Raises moves' critical hit rates one stage."
-          }
-        ],
         "held": {
           "sprite": "scope-lens",
           "name": "Scope Lens",
@@ -14967,12 +13559,6 @@
           "name": "Intimidate",
           "effect": "Lowers opponents' Attack one stage upon entering battle."
         },
-        "abilities": [
-          {
-            "name": "Intimidate",
-            "effect": "Lowers opponents' Attack one stage upon entering battle."
-          }
-        ],
         "held": {
           "sprite": "mawilite",
           "name": "Mawilite",
@@ -15036,12 +13622,6 @@
           "name": "Moxie",
           "effect": "Raises Attack one stage upon KOing a Pokémon."
         },
-        "abilities": [
-          {
-            "name": "Moxie",
-            "effect": "Raises Attack one stage upon KOing a Pokémon."
-          }
-        ],
         "held": {
           "sprite": "psychic-seed",
           "name": "Psychic Seed",
@@ -15098,12 +13678,6 @@
           "name": "Psychic Surge",
           "effect": "When this Pokémon enters battle, it changes the terrain to Psychic Terrain."
         },
-        "abilities": [
-          {
-            "name": "Psychic Surge",
-            "effect": "When this Pokémon enters battle, it changes the terrain to Psychic Terrain."
-          }
-        ],
         "held": {
           "sprite": "terrain-extender",
           "name": "Terrain Extender",
@@ -15158,12 +13732,6 @@
           "name": "Sand Rush",
           "effect": "Doubles Speed during a sandstorm.  Protects against sandstorm damage."
         },
-        "abilities": [
-          {
-            "name": "Sand Rush",
-            "effect": "Doubles Speed during a sandstorm.  Protects against sandstorm damage."
-          }
-        ],
         "held": {
           "sprite": "focus-sash",
           "name": "Focus Sash",
@@ -15219,12 +13787,6 @@
           "name": "Sand Stream",
           "effect": "Summons a sandstorm that lasts indefinitely upon entering battle."
         },
-        "abilities": [
-          {
-            "name": "Sand Stream",
-            "effect": "Summons a sandstorm that lasts indefinitely upon entering battle."
-          }
-        ],
         "held": {
           "sprite": "assault-vest",
           "name": "Assault Vest",
@@ -15279,12 +13841,6 @@
           "name": "Beast Boost",
           "effect": "Raises this Pokémon's highest stat by one stage when it faints another Pokémon."
         },
-        "abilities": [
-          {
-            "name": "Beast Boost",
-            "effect": "Raises this Pokémon's highest stat by one stage when it faints another Pokémon."
-          }
-        ],
         "held": {
           "sprite": "power-herb",
           "name": "Power Herb",
@@ -15340,12 +13896,6 @@
           "name": "Pressure",
           "effect": "Increases the PP cost of moves targetting the Pokémon by one."
         },
-        "abilities": [
-          {
-            "name": "Pressure",
-            "effect": "Increases the PP cost of moves targetting the Pokémon by one."
-          }
-        ],
         "sprite": "150",
         "types": [
           "psychic"
@@ -15395,12 +13945,6 @@
           "name": "Pressure",
           "effect": "Increases the PP cost of moves targetting the Pokémon by one."
         },
-        "abilities": [
-          {
-            "name": "Pressure",
-            "effect": "Increases the PP cost of moves targetting the Pokémon by one."
-          }
-        ],
         "sprite": "10044",
         "types": [
           "psychic"

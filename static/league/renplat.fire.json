@@ -612,7 +612,7 @@
             "effect": "Never misses."
           },
           {
-            "power": 65,
+            "power": "75",
             "type": "poison",
             "damage_class": "special",
             "name": "Sludge",
@@ -721,7 +721,7 @@
         "level": "32",
         "moves": [
           {
-            "power": 60,
+            "power": "80",
             "type": "ghost",
             "damage_class": "physical",
             "name": "Shadow Punch",
@@ -774,7 +774,7 @@
         "level": "32",
         "moves": [
           {
-            "power": 70,
+            "power": "80",
             "type": "ghost",
             "damage_class": "physical",
             "name": "Shadow Claw",
@@ -2556,7 +2556,7 @@
         "level": "61",
         "moves": [
           {
-            "power": 90,
+            "power": "100",
             "type": "electric",
             "damage_class": "physical",
             "name": "Wild Charge",
@@ -2611,7 +2611,7 @@
         "level": "62",
         "moves": [
           {
-            "power": 90,
+            "power": "100",
             "type": "electric",
             "damage_class": "physical",
             "name": "Wild Charge",
@@ -2734,8 +2734,8 @@
           }
         ],
         "ability": {
-          "name": "Keen Eye",
-          "effect": "Prevents accuracy from being lowered."
+          "name": "Reckless",
+          "effect": "Strengthens recoil moves to 1.2× their power."
         },
         "sprite": "396",
         "types": [
@@ -2762,17 +2762,23 @@
             "name": "Tackle"
           },
           {
-            "power": 60,
-            "type": "rock",
-            "damage_class": "physical",
-            "name": "Rock Tomb",
-            "effect": "Has a 100% chance to lower the target's Speed by one stage."
+            "type": "normal",
+            "damage_class": "status",
+            "name": "Metronome",
+            "effect": "Randomly selects and uses any move in the game."
           },
           {
             "type": "psychic",
             "damage_class": "status",
             "name": "Amnesia",
             "effect": "Raises the user's Special Defense by two stages."
+          },
+          {
+            "power": 60,
+            "type": "rock",
+            "damage_class": "physical",
+            "name": "Rock Tomb",
+            "effect": "Has a 100% chance to lower the target's Speed by one stage."
           }
         ],
         "ability": {
@@ -2797,11 +2803,11 @@
         "level": "11",
         "moves": [
           {
-            "power": 40,
+            "power": 60,
             "type": "water",
             "damage_class": "special",
-            "name": "Bubble",
-            "effect": "Has a 10% chance to lower the target's Speed by one stage."
+            "name": "Water Pulse",
+            "effect": "Has a 20% chance to confuse the target."
           },
           {
             "power": 40,
@@ -2814,12 +2820,6 @@
             "type": "flying",
             "damage_class": "physical",
             "name": "Peck"
-          },
-          {
-            "type": "normal",
-            "damage_class": "status",
-            "name": "Growl",
-            "effect": "Lowers the target's Attack by one stage."
           }
         ],
         "ability": {
@@ -2857,7 +2857,7 @@
         "level": "18",
         "moves": [
           {
-            "power": 50,
+            "power": "65",
             "type": "poison",
             "damage_class": "physical",
             "name": "Poison Fang",
@@ -3343,7 +3343,7 @@
             "effect": "Can only be used as the first move after the user enters battle.  Causes the target to flinch."
           },
           {
-            "power": 70,
+            "power": "80",
             "type": "ghost",
             "damage_class": "physical",
             "name": "Shadow Claw",
@@ -4392,7 +4392,7 @@
         "level": "32",
         "moves": [
           {
-            "power": 70,
+            "power": "90",
             "type": "poison",
             "damage_class": "physical",
             "name": "Cross Poison",
@@ -4620,7 +4620,7 @@
             "type": "water",
             "damage_class": "special",
             "name": "Scald",
-            "effect": "Has a 30% chance to burn the target."
+            "effect": "Has a 30% chance to burn the opponent. Will remove user's Frozen status condition."
           },
           {
             "power": 55,
@@ -5175,10 +5175,11 @@
         "level": "44",
         "moves": [
           {
-            "power": 80,
+            "power": "100",
             "type": "normal",
             "damage_class": "physical",
-            "name": "Strength"
+            "name": "Strength",
+            "effect": "May raise user's Attack by one stage"
           },
           {
             "power": 100,
@@ -6984,10 +6985,11 @@
         "level": "49",
         "moves": [
           {
-            "power": 80,
+            "power": "100",
             "type": "normal",
             "damage_class": "physical",
-            "name": "Strength"
+            "name": "Strength",
+            "effect": "May raise user's Attack by one stage"
           },
           {
             "power": 120,
@@ -7100,7 +7102,7 @@
             "effect": "Has a 20% chance to make the target flinch."
           },
           {
-            "power": 90,
+            "power": "100",
             "type": "flying",
             "damage_class": "physical",
             "name": "Fly",
@@ -7216,7 +7218,7 @@
             "effect": "Has a 20% chance to raise the user's Attack by one stage."
           },
           {
-            "power": 85,
+            "power": "90",
             "type": "fire",
             "damage_class": "physical",
             "name": "Blaze Kick",
@@ -7843,7 +7845,7 @@
             "effect": "User must switch out after attacking."
           },
           {
-            "power": 70,
+            "power": "90",
             "type": "poison",
             "damage_class": "physical",
             "name": "Cross Poison",
@@ -8506,7 +8508,7 @@
             "type": "flying",
             "damage_class": "special",
             "name": "Hurricane",
-            "effect": "Has a 30% chance to confuse the target."
+            "effect": "No effect"
           },
           {
             "power": 80,
@@ -8825,7 +8827,7 @@
         "level": "57",
         "moves": [
           {
-            "power": 70,
+            "power": "80",
             "type": "ghost",
             "damage_class": "physical",
             "name": "Shadow Claw",
@@ -9230,7 +9232,7 @@
             "effect": "User must switch out after attacking."
           },
           {
-            "power": 70,
+            "power": "90",
             "type": "poison",
             "damage_class": "physical",
             "name": "Cross Poison",
@@ -9574,7 +9576,7 @@
             "effect": "If the user misses, it takes half the damage it would have inflicted in recoil."
           },
           {
-            "power": 85,
+            "power": "90",
             "type": "fire",
             "damage_class": "physical",
             "name": "Blaze Kick",
@@ -9609,7 +9611,7 @@
         "level": "63",
         "moves": [
           {
-            "power": 60,
+            "power": "80",
             "type": "ghost",
             "damage_class": "physical",
             "name": "Shadow Punch",
@@ -9724,7 +9726,7 @@
             "type": "flying",
             "damage_class": "special",
             "name": "Hurricane",
-            "effect": "Has a 30% chance to confuse the target."
+            "effect": "No effect"
           },
           {
             "power": 95,
@@ -10556,6 +10558,345 @@
       }
     ]
   },
+  "b6": {
+    "name": "Barry",
+    "speciality": "",
+    "img": "/leaders/dp-barry",
+    "pokemon": [
+      {
+        "name": "staraptor",
+        "level": "70",
+        "moves": [
+          {
+            "power": 120,
+            "type": "normal",
+            "damage_class": "physical",
+            "name": "Double-Edge",
+            "effect": "User receives 1/3 the damage inflicted in recoil."
+          },
+          {
+            "power": 120,
+            "type": "flying",
+            "damage_class": "physical",
+            "name": "Brave Bird",
+            "effect": "User receives 1/3 the damage inflicted in recoil."
+          },
+          {
+            "power": 120,
+            "type": "fighting",
+            "damage_class": "physical",
+            "name": "Close Combat",
+            "effect": "Lowers the user's Defense and Special Defense by one stage after inflicting damage."
+          },
+          {
+            "power": 70,
+            "type": "bug",
+            "damage_class": "physical",
+            "name": "U-turn",
+            "effect": "User must switch out after attacking."
+          }
+        ],
+        "ability": {
+          "name": "Intimidate",
+          "effect": "Lowers opponents' Attack one stage upon entering battle."
+        },
+        "held": {
+          "sprite": "choice-scarf",
+          "name": "Choice Scarf",
+          "effect": "Held: Increases Speed by 50%, but restricts the holder to only one move."
+        },
+        "sprite": "398",
+        "types": [
+          "normal",
+          "flying"
+        ],
+        "stats": {
+          "hp": 85,
+          "atk": 120,
+          "def": 70,
+          "spa": 50,
+          "spd": 60,
+          "spe": 100
+        }
+      },
+      {
+        "name": "heracross",
+        "level": "70",
+        "moves": [
+          {
+            "power": 120,
+            "type": "bug",
+            "damage_class": "physical",
+            "name": "Megahorn"
+          },
+          {
+            "power": 120,
+            "type": "fighting",
+            "damage_class": "physical",
+            "name": "Close Combat",
+            "effect": "Lowers the user's Defense and Special Defense by one stage after inflicting damage."
+          },
+          {
+            "power": 100,
+            "type": "rock",
+            "damage_class": "physical",
+            "name": "Stone Edge",
+            "effect": "Has an increased chance for a critical hit."
+          },
+          {
+            "priority": 4,
+            "type": "normal",
+            "damage_class": "status",
+            "name": "Protect",
+            "effect": "Prevents any moves from hitting the user this turn."
+          }
+        ],
+        "ability": {
+          "name": "Guts",
+          "effect": "Increases Attack to 1.5× with a major status ailment."
+        },
+        "held": {
+          "sprite": "toxic-orb",
+          "name": "Toxic Orb",
+          "effect": "Held: Inflicts Toxic on the holder at the end of the turn. Activates after Poison damage would occur."
+        },
+        "sprite": "214",
+        "types": [
+          "bug",
+          "fighting"
+        ],
+        "stats": {
+          "hp": 80,
+          "atk": 125,
+          "def": 75,
+          "spa": 40,
+          "spd": 95,
+          "spe": 85
+        }
+      },
+      {
+        "name": "snorlax",
+        "level": "70",
+        "moves": [
+          {
+            "power": 85,
+            "type": "normal",
+            "damage_class": "physical",
+            "name": "Body Slam",
+            "effect": "Has a 30% chance to paralyze the target."
+          },
+          {
+            "power": 100,
+            "type": "ground",
+            "damage_class": "physical",
+            "name": "Earthquake",
+            "effect": "Inflicts regular damage and can hit Dig users."
+          },
+          {
+            "type": "ghost",
+            "damage_class": "status",
+            "name": "Curse",
+            "effect": "Ghosts pay half their max HP to hurt the target every turn.  Others decrease Speed but raise Attack and Defense."
+          },
+          {
+            "type": "normal",
+            "damage_class": "status",
+            "name": "Slack Off",
+            "effect": "Heals the user by half its max HP."
+          }
+        ],
+        "ability": {
+          "name": "Thick Fat",
+          "effect": "Halves damage from fire and ice moves."
+        },
+        "held": {
+          "sprite": "leftovers",
+          "name": "Leftovers",
+          "effect": "Held: Restores 1/16 (6.25%) holder's max HP at the end of each turn."
+        },
+        "sprite": "143",
+        "types": [
+          "normal"
+        ],
+        "stats": {
+          "hp": 160,
+          "atk": 110,
+          "def": 65,
+          "spa": 65,
+          "spd": 110,
+          "spe": 30
+        }
+      },
+      {
+        "name": "arcanine",
+        "level": "70",
+        "moves": [
+          {
+            "power": 120,
+            "type": "fire",
+            "damage_class": "physical",
+            "name": "Flare Blitz",
+            "effect": "User takes 1/3 the damage inflicted in recoil.  Has a 10% chance to burn the target."
+          },
+          {
+            "power": 120,
+            "type": "fighting",
+            "damage_class": "physical",
+            "name": "Close Combat",
+            "effect": "Lowers the user's Defense and Special Defense by one stage after inflicting damage."
+          },
+          {
+            "power": "100",
+            "type": "electric",
+            "damage_class": "physical",
+            "name": "Wild Charge",
+            "effect": "User receives 1/4 the damage it inflicts in recoil."
+          },
+          {
+            "power": 80,
+            "type": "dark",
+            "damage_class": "physical",
+            "name": "Crunch",
+            "effect": "Has a 20% chance to lower the target's Defense by one stage."
+          }
+        ],
+        "ability": {
+          "name": "Intimidate",
+          "effect": "Lowers opponents' Attack one stage upon entering battle."
+        },
+        "held": {
+          "sprite": "life-orb",
+          "name": "Life Orb",
+          "effect": "Held: Holder's moves inflict 30% extra damage, but cost 10% max HP."
+        },
+        "starter": "fire",
+        "sprite": "59",
+        "types": [
+          "fire"
+        ],
+        "stats": {
+          "hp": 90,
+          "atk": 110,
+          "def": 80,
+          "spa": 100,
+          "spd": 80,
+          "spe": 95
+        }
+      },
+      {
+        "name": "breloom",
+        "level": "70",
+        "moves": [
+          {
+            "power": 25,
+            "type": "grass",
+            "damage_class": "physical",
+            "name": "Bullet Seed",
+            "effect": "Hits 2-5 times in one turn."
+          },
+          {
+            "power": 60,
+            "type": "fighting",
+            "damage_class": "physical",
+            "name": "Force Palm",
+            "effect": "Has a 30% chance to paralyze the target."
+          },
+          {
+            "power": 100,
+            "type": "rock",
+            "damage_class": "physical",
+            "name": "Stone Edge",
+            "effect": "Has an increased chance for a critical hit."
+          },
+          {
+            "type": "grass",
+            "damage_class": "status",
+            "name": "Spore",
+            "effect": "Puts the target to sleep."
+          }
+        ],
+        "ability": {
+          "name": "Technician",
+          "effect": "Strengthens moves of 60 base power or less to 1.5× their power."
+        },
+        "held": {
+          "sprite": "life-orb",
+          "name": "Life Orb",
+          "effect": "Held: Holder's moves inflict 30% extra damage, but cost 10% max HP."
+        },
+        "starter": "fire",
+        "sprite": "286",
+        "types": [
+          "grass",
+          "fighting"
+        ],
+        "stats": {
+          "hp": 60,
+          "atk": 130,
+          "def": 80,
+          "spa": 60,
+          "spd": 60,
+          "spe": 70
+        }
+      },
+      {
+        "name": "infernape",
+        "level": "71",
+        "moves": [
+          {
+            "power": 120,
+            "type": "fire",
+            "damage_class": "physical",
+            "name": "Flare Blitz",
+            "effect": "User takes 1/3 the damage inflicted in recoil.  Has a 10% chance to burn the target."
+          },
+          {
+            "power": 120,
+            "type": "fighting",
+            "damage_class": "physical",
+            "name": "Close Combat",
+            "effect": "Lowers the user's Defense and Special Defense by one stage after inflicting damage."
+          },
+          {
+            "power": 100,
+            "type": "rock",
+            "damage_class": "physical",
+            "name": "Stone Edge",
+            "effect": "Has an increased chance for a critical hit."
+          },
+          {
+            "type": "grass",
+            "damage_class": "special",
+            "name": "Grass Knot",
+            "effect": "Inflicts more damage to heavier targets, with a maximum of 120 power."
+          }
+        ],
+        "ability": {
+          "name": "Iron Fist",
+          "effect": "Strengthens punch-based moves to 1.2× their power."
+        },
+        "held": {
+          "sprite": "sitrus-berry",
+          "name": "Sitrus Berry",
+          "effect": "Held: Consumed at 1/2 max HP to recover 1/4 max HP."
+        },
+        "starter": "fire",
+        "sprite": "392",
+        "types": [
+          "fire",
+          "fighting"
+        ],
+        "stats": {
+          "hp": 76,
+          "atk": 104,
+          "def": 71,
+          "spa": 104,
+          "spd": 71,
+          "spe": 109
+        }
+      }
+    ]
+  },
   "e1a": {
     "name": "Aaron (Team A)",
     "speciality": "bug",
@@ -10577,7 +10918,7 @@
             "type": "flying",
             "damage_class": "special",
             "name": "Hurricane",
-            "effect": "Has a 30% chance to confuse the target."
+            "effect": "No effect"
           },
           {
             "power": 75,
@@ -10756,7 +11097,7 @@
             "type": "flying",
             "damage_class": "special",
             "name": "Hurricane",
-            "effect": "Has a 30% chance to confuse the target."
+            "effect": "No effect"
           }
         ],
         "ability": {
@@ -10841,7 +11182,7 @@
         "level": "72",
         "moves": [
           {
-            "power": 70,
+            "power": "90",
             "type": "poison",
             "damage_class": "physical",
             "name": "Cross Poison",
@@ -11176,7 +11517,7 @@
         "level": "72",
         "moves": [
           {
-            "power": 70,
+            "power": "90",
             "type": "poison",
             "damage_class": "physical",
             "name": "Cross Poison",
@@ -11255,7 +11596,7 @@
             "type": "flying",
             "damage_class": "special",
             "name": "Hurricane",
-            "effect": "Has a 30% chance to confuse the target."
+            "effect": "No effect"
           },
           {
             "power": 110,
@@ -11304,7 +11645,7 @@
             "type": "flying",
             "damage_class": "special",
             "name": "Hurricane",
-            "effect": "Has a 30% chance to confuse the target."
+            "effect": "No effect"
           },
           {
             "power": 90,
@@ -11514,7 +11855,7 @@
         "level": "72",
         "moves": [
           {
-            "power": 70,
+            "power": "90",
             "type": "poison",
             "damage_class": "physical",
             "name": "Cross Poison",
@@ -11643,7 +11984,7 @@
             "type": "flying",
             "damage_class": "special",
             "name": "Hurricane",
-            "effect": "Has a 30% chance to confuse the target."
+            "effect": "No effect"
           },
           {
             "power": 90,
@@ -11854,7 +12195,7 @@
         "level": "72",
         "moves": [
           {
-            "power": 70,
+            "power": "90",
             "type": "poison",
             "damage_class": "physical",
             "name": "Cross Poison",
@@ -13383,7 +13724,7 @@
             "effect": "Has a 10% chance to lower the target's Attack by one stage."
           },
           {
-            "power": 90,
+            "power": "100",
             "type": "electric",
             "damage_class": "physical",
             "name": "Wild Charge",
@@ -13431,7 +13772,7 @@
             "effect": "User takes 1/3 the damage inflicted in recoil.  Has a 10% chance to burn the target."
           },
           {
-            "power": 90,
+            "power": "100",
             "type": "electric",
             "damage_class": "physical",
             "name": "Wild Charge",
@@ -13602,7 +13943,7 @@
             "effect": "User takes 1/3 the damage inflicted in recoil.  Has a 10% chance to burn the target."
           },
           {
-            "power": 90,
+            "power": "100",
             "type": "electric",
             "damage_class": "physical",
             "name": "Wild Charge",
@@ -13661,7 +14002,7 @@
             "name": "Mega Kick"
           },
           {
-            "power": 85,
+            "power": "90",
             "type": "fire",
             "damage_class": "physical",
             "name": "Blaze Kick",
@@ -13713,7 +14054,7 @@
             "type": "flying",
             "damage_class": "special",
             "name": "Hurricane",
-            "effect": "Has a 30% chance to confuse the target."
+            "effect": "No effect"
           },
           {
             "power": 90,
@@ -13993,7 +14334,7 @@
             "effect": "User takes 1/3 the damage inflicted in recoil.  Has a 10% chance to burn the target."
           },
           {
-            "power": 90,
+            "power": "100",
             "type": "electric",
             "damage_class": "physical",
             "name": "Wild Charge",
@@ -14109,7 +14450,7 @@
             "name": "Mega Kick"
           },
           {
-            "power": 85,
+            "power": "90",
             "type": "fire",
             "damage_class": "physical",
             "name": "Blaze Kick",
@@ -14169,7 +14510,7 @@
             "type": "flying",
             "damage_class": "special",
             "name": "Hurricane",
-            "effect": "Has a 30% chance to confuse the target."
+            "effect": "No effect"
           },
           {
             "power": 120,
@@ -14386,7 +14727,7 @@
             "effect": "User takes 1/3 the damage inflicted in recoil.  Has a 10% chance to burn the target."
           },
           {
-            "power": 90,
+            "power": "100",
             "type": "electric",
             "damage_class": "physical",
             "name": "Wild Charge",
@@ -14445,7 +14786,7 @@
             "type": "flying",
             "damage_class": "special",
             "name": "Hurricane",
-            "effect": "Has a 30% chance to confuse the target."
+            "effect": "No effect"
           },
           {
             "power": 90,
@@ -15339,7 +15680,7 @@
             "type": "water",
             "damage_class": "special",
             "name": "Scald",
-            "effect": "Has a 30% chance to burn the target."
+            "effect": "Has a 30% chance to burn the opponent. Will remove user's Frozen status condition."
           },
           {
             "power": 90,
@@ -16288,7 +16629,7 @@
             "type": "water",
             "damage_class": "special",
             "name": "Scald",
-            "effect": "Has a 30% chance to burn the target."
+            "effect": "Has a 30% chance to burn the opponent. Will remove user's Frozen status condition."
           },
           {
             "power": 90,
@@ -16677,7 +17018,7 @@
             "type": "water",
             "damage_class": "special",
             "name": "Scald",
-            "effect": "Has a 30% chance to burn the target."
+            "effect": "Has a 30% chance to burn the opponent. Will remove user's Frozen status condition."
           },
           {
             "power": 90,
