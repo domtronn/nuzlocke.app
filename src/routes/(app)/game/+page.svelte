@@ -18,7 +18,9 @@
   import deferStyles from '$lib/utils/defer-styles'
   import debounce from '$lib/utils/debounce'
   import { getGame, read, readdata,
-           savedGames, activeGame, updateGame, parse} from '$lib/store'
+           savedGames, activeGame, updateGame, parse,
+           routedata
+         } from '$lib/store'
 
   let gameStore, gameKey, gameData
   let routeEl
@@ -57,6 +59,7 @@
     if (route) return route
     const res = await fetch(`/api/route/${gen}.json`)
     route = await res.json()
+    routedata.set(route)
     return route
   }
 

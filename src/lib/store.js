@@ -6,6 +6,7 @@ import { uuid } from '$lib/utils/uuid';
 import { NuzlockeGroups } from '$lib/data/states';
 
 export const popover = writable(null);
+export const routedata = writable()
 
 export const readdata = (_) => {
   const active = window.localStorage.getItem(IDS.active);

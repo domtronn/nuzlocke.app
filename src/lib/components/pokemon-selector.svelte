@@ -129,7 +129,7 @@
 
   const handleEvolution = (base, evos) => async () => handleSplitEvolution(base, evos)
 
-  const handleDeath = () => open(DeathModal)
+  const handleDeath = () => open(DeathModal, { pokemon: selected, nickname })
 
   const handleReveal = () => {
     hidden = false
