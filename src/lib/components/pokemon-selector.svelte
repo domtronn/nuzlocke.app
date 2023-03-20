@@ -40,7 +40,7 @@
       .then(e => encounterItems = (encounters || []).map(id => e[id]).filter(i => i))
     import('$lib/components/particles').then(m => Particles = m.default)
     import('$lib/components/EvolutionModal.svelte').then(m => EvoModal = m.default)
-    import('$lib/components/DeathModal.svelte').then(m => DeathModal = m.default)
+    import('$lib/components/DeathModal/index.svelte').then(m => DeathModal = m.default)
     prevstatus = null
   })
 
