@@ -27,7 +27,7 @@
 
 </script>
 
-<section class='md:w-[50ch] text-center items-center dark:bg-gray-900 bg-white rounded-lg p-4 md:p-8 mx-auto shadow-lg dark:text-gray-200'>
+<section class='md:w-[50ch] text-center items-center dark:bg-gray-900 bg-white rounded-lg px-3 py-4 md:p-8 mx-auto shadow-lg dark:text-gray-200'>
   <IconButton
     rounded borderless color=orange
     src={X} on:click={close}
@@ -46,7 +46,7 @@
     </svelte:fragment>
   </Prose>
 
-  <div class='h-px my-4 w-full dark:bg-gray-700 bg-gray-200' />
+  <div class='hidden md:block h-px md:my-4 w-full dark:bg-gray-700 bg-gray-200' />
 
   <Form
     pokemon={pokemon?.name}

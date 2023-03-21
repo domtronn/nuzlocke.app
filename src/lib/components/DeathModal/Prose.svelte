@@ -37,15 +37,15 @@
 
 </script>
 
-<h2 class='text-2xl mb-4 px-4'>
+<h2 class='text-base md:text-2xl -mb-3 md:mt-0 text-center md:mb-4 px-4'>
     <Icon icon={Grave} class='inline mb-1 -ml-4 ' />
     {(nickname ? (nickname + ' the ') : '') + pokemon.name}
 </h2>
 
 
-<div class='text-base md:text-xl bg-gray-100 dark:bg-gray-800 px-2 py-3 md:px-4 md:pt-8 md:pb-4 rounded-lg w-full text-center relative mt-6'>
+<div class='text-base md:text-xl bg-gray-100 dark:bg-gray-800 px-2 py-3 md:px-4 md:pt-10 md:pb-4 rounded-lg w-full text-center relative mt-6'>
   <PIcon
-    className='grayscale absolute top-0 transform scale-200 -translate-y-1/2 left-1/2 -translate-x-1/2 pointer-events-none'
+    className='grayscale absolute top-0 transform md:scale-200 -translate-y-8 md:-translate-y-1/2 right-8 md:left-1/2 md:-translate-x-1/2 pointer-events-none'
     name={pokemon.alias}
   />
 
@@ -74,13 +74,13 @@
 
   <Tabs
     bind:selected={category}
-    className='!gap-x-2 mt-4 -mb-4 flex justify-center'
-    labelClassName='text-xs pb-1'
+    className='!gap-x-2 mt-4 -mb-3 !w-full md:-mb-4 w-full flex justify-center'
+    labelClassName='text-xs md:pb-1'
     {tabs}
   />
 
 </div>
 
-<small class=' italic text-xs text-gray-400 dark:text-gray-600'>
+<small class='hidden md:inline italic text-xs text-gray-400 dark:text-gray-600'>
   <slot name='subtitle' />
 </small>

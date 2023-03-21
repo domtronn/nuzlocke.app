@@ -10,7 +10,7 @@
 
 <slot name=label />
 
-<div class='flex flex-col md:flex-row gap-2'>
+<div class='flex flex-row gap-2'>
   <Input
     className='flex-1'
     bind:value={from}
