@@ -87,7 +87,7 @@ export const processSave = async ({ data, user_id, game_id }: ISave) => {
     await bq
       .dataset(VITE_BQ_SAVES_DATASET_ID)
       .table(VITE_BQ_SAVES_TABLE_ID)
-      .insert(toSync)
+      .insert(rows)
     
     console.log(`Added ${data.length} rows of save data`)
   } catch (e) {
