@@ -20,6 +20,7 @@
         if (!cameras || !cameras.length) dispatch('error', { value: 'No cameras' })
 
         camera = cameras.find(c => c.name.toLowerCase().includes('back')) || cameras[0]
+        console.log('Using camera', camera)
         scanner.start(camera)
         dispatch('start')
       })
