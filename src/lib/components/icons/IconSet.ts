@@ -61,6 +61,21 @@ export { default as QRCode } from '@iconify-icons/ri/qr-code-fill';
 
 export { default as Dice } from '@iconify-icons/mdi/dice-multiple-outline'
 
+// UI Icons - Route types
+// Forest,Town/City,Ruins/Tunnel,Mountain,Route
+export { default as Ruins } from '@iconify-icons/tabler/tower' // Castle / Ruins
+export { default as Stadium } from '@iconify-icons/tabler/building-stadium' // League
+export { default as Tunnel } from '@iconify-icons/tabler/building-tunnel' // Tunnel / Cave
+export { default as Shrine } from '@iconify-icons/tabler/building-pavilion' // Shrine
+export { default as City } from '@iconify-icons/tabler/building-community' // Shrine
+export { default as Town } from '@iconify-icons/tabler/home' // Shrine
+
+export { default as Forest } from '@iconify-icons/tabler/trees' // Forest
+export { default as Mountain } from '@iconify-icons/tabler/mountain' // Mt. / Mountain
+export { default as Route } from '@iconify-icons/tabler/sign-left' // Route
+export { default as Trophy } from '@iconify-icons/tabler/trophy' // Route
+
+
 export { default as Game } from '@iconify-icons/gg/games';
 export { default as Hand } from '@iconify-icons/fa-solid/hand-holding';
 export { default as Heart } from '@iconify-icons/ph/heart-straight-fill';

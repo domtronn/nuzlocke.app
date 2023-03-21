@@ -106,8 +106,13 @@
 
   let statusComplete = false
   const handleStatus = (sid) => () => {
-    status = NuzlockeStates[sid]
-    _animateStatus(sid)
+    const cb = () => {
+      status = NuzlockeStates[sid]
+      _animateStatus(sid)
+    }
+
+    if (sid === 5) return handleDeath(cb)
+    else cb()
   }
 
   const animateStatus = item => _ => _animateStatus(item.id)
@@ -128,8 +133,7 @@
   })
 
   const handleEvolution = (base, evos) => async () => handleSplitEvolution(base, evos)
-
-  const handleDeath = () => open(DeathModal, { pokemon: selected, nickname })
+  const handleDeath = (submit) => open(DeathModal, { submit, pokemon: selected, nickname })
 
   const handleReveal = () => {
     hidden = false
@@ -248,7 +252,7 @@
           {/if}
         </svelte:fragment>
 
-        <button on:click={animateStatus(item)} class='flex inline-flex gap-x-2 px-3 py-2 md:py-3 items-center' slot=item let:item let:label>
+        <button on:click={handleStatus(item.id)} class='flex inline-flex gap-x-2 px-3 py-2 md:py-3 items-center' slot=item let:item let:label>
           <Icon inline={true} icon={item.icon} class='fill-current transform md:scale-125' />
           {@html label}
         </button>
@@ -291,7 +295,7 @@
         src={Deceased}
         title='Kill {selected.name}'
         track=kill
-        on:click={handleDeath}
+        on:click={handleStatus(5)}
         containerClassName={!selected || hidden ? 'hidden sm:block' : ''}
       />
     {/if}
@@ -404,5 +408,5 @@
   .popover li, .popover li :global(*) { @apply inline-flex items-center; }
 
   :global(.dark) ul.popover { @apply text-gray-50; }
-  :global(.dark) .popover li:hover { @apply bg-indigo-500 text-white; }
+  :global(.dark) .popover li:hover { @apply bg-orange-500 text-white; }
 </style>

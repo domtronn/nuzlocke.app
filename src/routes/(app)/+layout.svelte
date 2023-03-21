@@ -44,8 +44,9 @@
 <Modal
   closeButton={false}
   styleBg={{ background: 'rgba(0, 0, 0, 0.8)', zIndex: 9999 }}
-  styleWindow={{ background: 'transparent !important' }}
-  styleContent={{ padding: '0 !important' }}
+  classWindowWrap='!m-4'
+  classWindow='!bg-transparent'
+  classContent='!p-0 !overflow-visible'
 >
   <slot />
 </Modal>

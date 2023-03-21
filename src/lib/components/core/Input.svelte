@@ -1,11 +1,26 @@
 <script>
-  export let name, value = null, color = '', className = '', placeholder = '', icon, rounded = false
+  export let name, value = null, color = '', className = '', placeholder = '', icon, type = 'text', min, max, rounded = false
   import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
   name = name || placeholder
 </script>
 
 <label for={name}>{name}</label>
+
+{#if type === 'number'}
 <input
+  id={name}
+  {placeholder}
+  {min}
+  {max}
+  type=number
+  bind:value={value}
+  class:rounded-lg={rounded}
+  class:pl-8={!!icon}
+  class:pl-3={!icon}
+  class='{color} {className}'
+  />
+{:else}
+  <input
   id={name}
   {placeholder}
   type=text
@@ -16,11 +31,14 @@
   class='{color} {className}'
   autocomplete=off
   />
+{/if}
+
 {#if icon}
   <span>
     <Icon inline={true} icon={icon} class='fill-current absolute left-0 top-1/2 -translate-y-1/2 ml-3' />
   </span>
 {/if}
+
 <slot />
 
 <style lang="postcss">
