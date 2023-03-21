@@ -63,7 +63,7 @@
     {/if}
 
     <div class='mt-2 w-full text-center flex flex-col md:flex-row md:inline-flex gap-2 md:gap-2'>
-      <Button tabIndex=-1 rounded className='flex-1'>
+      <Button tabIndex=2 rounded className='flex-1'>
         {EButton.Skip}
       </Button>
       <Button tabIndex=1 rounded solid className='flex-1'>

@@ -18,7 +18,7 @@
 
   import { createEventDispatcher, onMount, getContext } from 'svelte'
 
-  let selected, nickname, status, nature, hidden
+  let selected, nickname, status, nature, hidden, death
   let prevstatus = 'loading'
 
   // Search text bindings for ACs
@@ -84,6 +84,7 @@
          hidden: hidden || false,
          location: locationName || location,
          nickname,
+         ...(status?.id === 5 && death ? { death } : {})
        }
    }))
   }
@@ -99,14 +100,16 @@
   }
 
   function handleClear () {
-    status = nickname = selected = null
+    status = nickname = selected = death = null
     search = statusSearch = natureSearch = null
     store.update(patch({ [location]: {} }))
   }
 
   let statusComplete = false
   const handleStatus = (sid) => () => {
-    const cb = () => {
+    const cb = (data) => {
+      if (sid === 5) (death = data) // Handle death context from modal
+
       status = NuzlockeStates[sid]
       _animateStatus(sid)
     }

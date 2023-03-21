@@ -3,7 +3,7 @@
   import { IconButton, PIcon } from '$c/core'
   import { Dice } from '$icons'
 
-  export let pokemon, nickname, ctx
+  export let pokemon, nickname, ctx, text
   let base = randomTemplate()
 
   const onrandom = () => base = randomTemplate()
@@ -34,7 +34,7 @@
     tabIndex=-1
     on:click={onrandom}
     containerClassName='absolute bottom-0 right-0'
-    title='Transfer save'
+    title='Generate random epitaph'
     />
 </div>
 
