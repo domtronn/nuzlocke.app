@@ -1,22 +1,47 @@
 <script>
-  import { Tokens, format, randomTemplate } from './prose'
-  import { IconButton, PIcon } from '$c/core'
-  import { Dice } from '$icons'
+  import { Tokens, format, randomTemplate, ELossType } from './prose'
+  import { IconButton, Tabs, PIcon } from '$c/core'
+  import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
+
+  import { Grave, Dice } from '$icons'
 
   export let pokemon, nickname, ctx, custom = false
-  let base = randomTemplate()
+  export let base = randomTemplate(ELossType.Dramatic)
   let textContent
 
   const onkeydown = (e) => custom = true
   const onrandom = () => {
     custom = false
-    base = randomTemplate()
+    base = randomTemplate(category)
   }
 
-  export let content
-  $: content = custom ? textContent : base
+  const tabs = [
+    { label: 'Dramatic', val: ELossType.Dramatic },
+    { label: 'Sacrifice', val: ELossType.Sacrifice },
+    { label: 'Mistake', val: ELossType.Mistake  },
+    { label: 'Bad Luck', val: ELossType.Luck },
+  ]
+
+  export let content, editor, category, text
+
   $: text = format(base, { ...ctx, nickname, pokemon })
+
+  let prevCategory
+  $: {
+    if (prevCategory !== category) {
+      base = randomTemplate(category)
+      text = format(base, { ...ctx, nickname, pokemon })
+      prevCategory = category
+    }
+  }
+
 </script>
+
+<h2 class='text-2xl mb-4 px-4'>
+    <Icon icon={Grave} class='inline mb-1 -ml-4 ' />
+    {(nickname ? (nickname + ' the ') : '') + pokemon.name}
+</h2>
+
 
 <div class='text-base md:text-xl bg-gray-100 dark:bg-gray-800 px-2 py-3 md:px-4 md:pt-8 md:pb-4 rounded-lg w-full text-center relative mt-6'>
   <PIcon
@@ -29,7 +54,7 @@
     tabIndex='0'
     spellcheck=false
     contenteditable
-    bind:textContent={textContent}
+    bind:this={content}
     on:keydown={onkeydown}
   >
     {text}
@@ -45,20 +70,17 @@
     containerClassName='absolute bottom-0 right-0'
     title='Generate random epitaph'
     />
+
+
+  <Tabs
+    bind:selected={category}
+    className='!gap-x-2 mt-4 -mb-4 flex justify-center'
+    labelClassName='text-xs pb-1'
+    {tabs}
+  />
+
 </div>
 
 <small class=' italic text-xs text-gray-400 dark:text-gray-600'>
   <slot name='subtitle' />
 </small>
-
-<style>
-  button {
-    @apply text-xs rounded-full px-2 py-1
-    hover:bg-gray-400 bg-gray-200 text-gray-800;
-  }
-
-  :global(.dark) button {
-    @apply hover:text-gray-200 hover:bg-gray-900 bg-gray-700 text-black
-  }
-
-</style>
