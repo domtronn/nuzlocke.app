@@ -36,14 +36,9 @@
 
 </script>
 
-<pre class='bg-black p-2 fixed bottom-0 left-0'>
-  {JSON.stringify({...ctx, ...result}, null, 2)}
-</pre>
-
 <form class='flex flex-col gap-2 mt-4 w-full text-left' on:submit={onsubmit}>
   <Label>Set the encounter type</Label>
-
-  <Tabs labelClassName='text-xs' name='mech' bind:selected={ctx.tab} {tabs} />
+  <Tabs labelClassName='text-sm' name='mech' bind:selected={ctx.tab} {tabs} />
 
   <div class='hpx bg-gray-500 w-full' />
     <Common
@@ -67,11 +62,11 @@
       </BossForm>
     {/if}
 
-    <div class='mt-2 w-full text-center flex flex-col md:flex-row md:inline-flex gap-2 md:gap-4'>
-      <Button tabIndex=-1 rounded className='flex-auto'>
+    <div class='mt-2 w-full text-center flex flex-col md:flex-row md:inline-flex gap-2 md:gap-2'>
+      <Button tabIndex=-1 rounded className='flex-1'>
         {EButton.Skip}
       </Button>
-      <Button tabIndex=1 rounded solid className='flex-auto'>
+      <Button tabIndex=1 rounded solid className='flex-1'>
         {EButton.Submit}
       </Button>
     </div>

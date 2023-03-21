@@ -12,6 +12,7 @@
 
 <div class='flex flex-col md:flex-row gap-2'>
   <Input
+    className='flex-1'
     bind:value={from}
     rounded
     min=1 max=100
@@ -21,6 +22,7 @@
   />
 
   <Input
+    className='flex-1'
     bind:value={to}
     min=1 max=100
     type=number

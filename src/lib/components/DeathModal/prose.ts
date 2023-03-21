@@ -64,7 +64,7 @@ export const format = (
     if (ctx?.opponent?.types) otype =ctx?.opponent?.types[0] + ' type'
 
     return text
-        .replace(Tokens.TPoke, (ctx?.nickname ? `${ctx?.nickname} the ` : '') + ctx?.pokemon.name)
+        .replace(Tokens.TPoke, (ctx?.nickname ? `${ctx?.nickname} the ` : '') + ctx?.pokemon?.name)
         .replaceAll(Tokens.TPoke, ctx?.nickname || ctx?.pokemon.name)
         .replaceAll(Tokens.OName, ctx?.trainer?.name || 'their opponent')
         .replaceAll(Tokens.OPoke, ctx?.opponent?.name || 'pokemon')

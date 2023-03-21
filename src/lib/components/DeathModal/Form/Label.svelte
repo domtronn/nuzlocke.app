@@ -2,7 +2,7 @@
   export let optional
 </script>
 
-<p class='text-xs text-gray-700 dark:text-gray-300'>
+<p class='text-sm text-gray-700 dark:text-gray-300'>
   <slot />
   {#if optional}
     <i class='dark:text-gray-600 text-gray-400'>- Optional</i>
