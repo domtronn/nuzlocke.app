@@ -3,11 +3,18 @@
   import { IconButton, PIcon } from '$c/core'
   import { Dice } from '$icons'
 
-  export let pokemon, nickname, ctx, text
+  export let pokemon, nickname, ctx, custom = false
   let base = randomTemplate()
+  let textContent
 
-  const onrandom = () => base = randomTemplate()
+  const onkeydown = (e) => custom = true
+  const onrandom = () => {
+    custom = false
+    base = randomTemplate()
+  }
 
+  export let content
+  $: content = custom ? textContent : base
   $: text = format(base, { ...ctx, nickname, pokemon })
 </script>
 
@@ -22,6 +29,8 @@
     tabIndex='0'
     spellcheck=false
     contenteditable
+    bind:textContent={textContent}
+    on:keydown={onkeydown}
   >
     {text}
   </span>

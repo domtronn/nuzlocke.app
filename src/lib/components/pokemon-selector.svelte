@@ -65,6 +65,7 @@
     nature = pkmn.nature ? NaturesMap[pkmn.nature] : null
     hidden = pkmn.hidden
     nickname = pkmn.nickname
+    death = pkmn.death
     if (pkmn.pokemon)
       getPkmn(pkmn.pokemon)
       .then(p => {
