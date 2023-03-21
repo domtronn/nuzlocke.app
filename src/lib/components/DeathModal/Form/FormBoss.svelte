@@ -6,7 +6,7 @@
   import { AutoComplete, Picture, PIcon } from '$c/core'
   import TypeBadge from '$c/type-badge.svelte'
   
-  export let bossPlaceholder = 'Opponent you were battling'
+  export let bossPlaceholder = 'Opponent Trainer'
   export let pokePlaceholder = 'Opponent Pokémon'
   export let movePlaceholder = 'Moved used to defeat your Pokémon'
   
