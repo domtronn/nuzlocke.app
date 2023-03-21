@@ -9,7 +9,9 @@
 
   export let items = undefined, fetch = undefined
   export let placeholder, name, inset = false, color = '', label = 'label', className = '', dropdownClass = '', wide = false, rounded = false, readonly = false
-  export let selected = null, style = '', disabled = false
+  export let selected = null, style = ''
+
+  export let disabled = false, optional = false
 
   name = name || placeholder
 

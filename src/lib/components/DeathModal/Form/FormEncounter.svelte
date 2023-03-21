@@ -9,8 +9,6 @@
   export let result = {}
   let ctx = {}
 
-  $: ctx && console.log('encounter ctx', ctx)
-
   const resetencounter = () => {
     delete ctx.search
     delete ctx.pokemon
@@ -19,6 +17,7 @@
   $: result = {
     pokemon: {
       name: ctx?.pokemon?.name,
+      types: ctx?.pokemon?.types,
       id: ctx?.pokemon?.alias,
     },
     location: {
@@ -37,13 +36,9 @@
   bind:selected={ctx.location}
 />
 
-{#if ctx?.location}
-  <div in:slide>
-    <SharedPokemon
-      encounters={ctx.location.encounters}
-      bind:search={ctx.search}
-      bind:selected={ctx.pokemon}
-      placeholder={pokePlaceholder}
-    />
-  </div>
-{/if}
+<SharedPokemon
+  encounters={ctx?.location?.encounters}
+  bind:search={ctx.search}
+  bind:selected={ctx.pokemon}
+  placeholder={pokePlaceholder}
+/>

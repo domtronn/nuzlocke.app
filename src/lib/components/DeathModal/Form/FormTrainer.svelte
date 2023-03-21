@@ -1,6 +1,8 @@
 <script>
   import { Input, AutoComplete } from '$c/core'
+  import { readdata } from '$lib/store'
   import { fetchTrainers } from '$utils/fetchers'
+
   import { slide } from 'svelte/transition'
 
   export let result = {}
@@ -10,13 +12,12 @@
 
   let ctx = {}
 
-  // TODO: Fix fetch trainers
-
   import SharedPokemon from './SharedPokemon.svelte'
 
   $: result = {
     pokemon: {
       name: ctx?.pokemon?.name,
+      types: ctx?.pokemon?.types,
       id: ctx?.pokemon?.alias,
     },
     trainer: {
@@ -25,6 +26,9 @@
     }
   }
 
+  let trainers = []
+  const [, key] = readdata()
+  $: key && fetchTrainers(key).then(t => trainers = t)
 </script>
 
 <slot name=label />
@@ -33,9 +37,8 @@
   <AutoComplete
     bind:selected={ctx.type}
     className='flex-2'
-    name={classPlaceholder}
-    placeholder={classPlaceholder}
-    fetch={fetchTrainers.bind({}, 'sw')}
+    name={classPlaceholder} placeholder={classPlaceholder}
+    items={trainers}
     rounded
     label
   >

@@ -28,7 +28,7 @@
   $: formData = nonnull({
     type: ctx?.tab,
     ...(toSpreadable({ from: ctx?.fromlvl, to: ctx?.tolvl }, 'lvl')),
-    ...(toSpreadable(result?.pokemon, 'pokemon')),
+    ...(toSpreadable(result?.pokemon, 'opponent')),
     ...(toSpreadable(result?.location, 'location')),
     ...(toSpreadable(result?.trainer, 'trainer')),
     ...(toSpreadable(result?.attack, 'attack')),

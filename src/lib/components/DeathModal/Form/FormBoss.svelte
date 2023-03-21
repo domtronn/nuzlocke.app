@@ -66,6 +66,7 @@
     },
     pokemon: {
       name: ctx?.opponent?.name,
+      types: ctx?.opponent?.types,
       id: ctx?.opponent?.alias,
     }
   }

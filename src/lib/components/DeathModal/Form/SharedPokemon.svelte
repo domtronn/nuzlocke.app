@@ -14,10 +14,7 @@
   })
   
   let items
-  onMount(() => {
-    if (!encounters) return
-    getPkmns(encounters).then(res => items = Object.values(res))
-  })
+  $: encounters && encounters.length > 1 && getPkmns(encounters).then(res => items = Object.values(res))
 </script>
 
 <AutoComplete

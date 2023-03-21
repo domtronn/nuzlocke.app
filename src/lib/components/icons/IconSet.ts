@@ -63,6 +63,8 @@ export { default as Dice } from '@iconify-icons/mdi/dice-multiple-outline'
 
 // UI Icons - Route types
 // Forest,Town/City,Ruins/Tunnel,Mountain,Route
+export { default as Grave } from '@iconify-icons/tabler/grave-2'
+
 export { default as Ruins } from '@iconify-icons/tabler/tower' // Castle / Ruins
 export { default as Stadium } from '@iconify-icons/tabler/building-stadium' // League
 export { default as Tunnel } from '@iconify-icons/tabler/building-tunnel' // Tunnel / Cave
