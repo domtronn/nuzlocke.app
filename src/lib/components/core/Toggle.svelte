@@ -14,14 +14,14 @@
 <style lang="postcss">
   :root {
     --bg-on: theme('colors.white');
-    --fg-on: theme('colors.indigo.600');
+    --fg-on: theme('colors.orange.600');
     --bg-off: theme('colors.white');
     --fg-off: theme('colors.gray.500');
   }
 
   :global(.dark) {
     --bg-on: theme('colors.gray.800');
-    --fg-on: theme('colors.indigo.500');
+    --fg-on: theme('colors.orange.500');
     --bg-off: theme('colors.gray.800');
     --fg-off: theme('colors.gray.500');
   }
