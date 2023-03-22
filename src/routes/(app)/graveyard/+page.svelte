@@ -11,7 +11,7 @@
   import { capitalise } from '$lib/utils/string'
 
   import { activeGame, getGame, read, savedGames, parse } from '$lib/store'
-  import { Loader } from '$c/core'
+  import { Loader, Toggle } from '$c/core'
 
   let ready
   onMount(() => ready = true)
@@ -34,6 +34,8 @@
     graveyard,
     chunkSize // Force 2 rows minimum
   )
+
+  let showFog = true, showAudio = true
 </script>
 
 <svelte:head>
@@ -51,11 +53,22 @@
       <span class='h-96 flex items-center justify-center col-span-4 dark:text-gray-600 text-xl'>
         You have no Pokémon in the graveyard.<br />Congratulations!
       </span>
-    {/if}
+    {:else}
 
-    {#if graveyard.length}
-      <Audio src=/audio/lavender.mp3 />
-      <Fog />
+      <div class='w-full md:w-64 my-6 mx-auto relative md:fixed md:bottom-0 md:right-6'>
+      <div class='flex items-center gap-x-2 my-2 mx-auto justify-between'>
+        <h2 class='text-base dark:text-gray-50 text-gray-900 font-medium'> {#if showFog}Disable{:else}Enable{/if} fog animation </h2>
+        <Toggle id=fog bind:state={showFog} />
+      </div>
+
+      <div class='flex items-center gap-x-2 my-2 mx-auto justify-between'>
+        <h2 class='text-base dark:text-gray-50 text-gray-900 font-medium'> {#if showAudio}Disable{:else}Enable{/if} audio</h2>
+        <Toggle id=audio bind:state={showAudio} />
+      </div>
+      </div>
+
+      {#if showAudio}<Audio src=/audio/lavender.mp3 />{/if}
+      {#if showFog}<Fog />{/if}
     {/if}
   </div>
 
