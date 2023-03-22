@@ -95,8 +95,11 @@
           class:active={p.link == $page.url.pathname}
           href={p.link}
           >
-          <Icon inline={true} icon={p.icon} class='fill-current' />
-          {p.name}
+          <Icon inline={true} icon={p.icon} class='fill-current transform max-sm:scale-150' />
+          <span
+            class:max-sm:hidden={p.link != $page.url.pathname}
+            class:max-sm:ml-2={p.link == $page.url.pathname}
+          >{p.name}</span>
         </a>
       {/each}
 
