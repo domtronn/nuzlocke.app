@@ -2,7 +2,7 @@
   import { fade } from 'svelte/transition'
 </script>
 
-<div class='pointer-events-none fixed overflow-hidden inset-0 z-50'>
+<div class='pointer-events-none fixed md:overflow-hidden inset-0 fog'>
   <div class='relative w-full h-full opacity-50'>
     <span in:fade={{ duration: 1800, delay: 550 }}>
       <div class='absolute top-0 bottom-0 animate flex overflow-hidden'>
@@ -32,6 +32,8 @@
     0% { transform: translateX(0%); }
     100% { transform: translateX(-50%); }
   }
+
+  .fog { z-index: 99999; }
 
   .animate-slow { animation: anim-slow 70s linear infinite; }
   .animate { animation: anim 40s linear infinite; }

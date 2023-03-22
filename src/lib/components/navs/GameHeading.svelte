@@ -21,11 +21,12 @@
   import { Picture, Popover } from '$lib/components/core'
 
   import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
-  import { Box, Save, Game, Caret, CaretRight } from '$icons'
+  import { Box, Save, Game, Grave, Caret, CaretRight } from '$icons'
 
   const pages = [
     { name: 'Game', link: '/game', icon: Game },
     { name: 'Box', link: '/box', icon: Box },
+    { name: 'Grave', link: '/graveyard', icon: Grave },
   ]
 </script>
 

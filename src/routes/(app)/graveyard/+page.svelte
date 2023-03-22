@@ -26,26 +26,29 @@
 
   const graveyard = Object.values(box)
         .filter(i => i.pokemon)
-        // .filter(i => NuzlockeGroups.Dead.includes(i.status))
+        .filter(i => NuzlockeGroups.Dead.includes(i.status))
 
   const chunkSize = 6
   const chunked = chunk(
-    graveyard.concat(graveyard).concat(graveyard),
+    graveyard,
     chunkSize // Force 2 rows minimum
   )
 </script>
 
+<svelte:head>
+  <title>Nuzlocke Tracker | Graveyard</title>
+</svelte:head>
+
+
 {#if ready}
-  <div in:fade={{ duration: 500, delay: 200}}>
+  <div class='px-4 sm:px-8' in:fade={{ duration: 500, delay: 200}}>
     {#if name}
-      <h1 class='mt-16 md:mt-4 mb-4 text-center'>{capitalise(name)} Graveyard</h1>
+      <h1 class='mb-4 text-left md:hidden'>{capitalise(name)} Graveyard</h1>
     {/if}
 
     {#if graveyard.length}
       <Audio src=/audio/lavender.mp3 />
     {/if}
-
-    <!-- TODO: Add some copy to summarise the deaths -->
 
   </div>
 
@@ -55,7 +58,7 @@
     {#each chunked as row, i}
       <GraveRow {i} maxRows={chunked.length}>
         {#each row as p, j}
-          <div class='md:inline-block'
+          <div class='flex {j % 2 ? 'flex-row-reverse' : 'flex-row'} items-center justify-between max-sm:px-6 max-sm:mt-10 md:inline-block'
                in:fade={{ duration: 800, delay: (300 * ((i * chunkSize) + j)) + 1000 }}
                >
             <Grave {...p} i={(i * chunkSize) + j} className='row--{i}' />

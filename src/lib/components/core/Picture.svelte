@@ -8,12 +8,12 @@
 {#if fadeIn}
 <picture in:fade>
   <source onError="this.onerror = null; this.style.display = 'none'" srcset='{src}.webp' type='image/webp' />
-  <img class={className} class:pixelated={pixelated} src='{src}.png' {width} {height} {alt} {role} onerror='this.onerror = null; this.parentNode.children[0].srcset = this.parentNode.children[1].srcset = this.src'/>
+  <img class='{className} {$$restProps.class || ''}' class:pixelated={pixelated} src='{src}.png' {width} {height} {alt} {role} onerror='this.onerror = null; this.parentNode.children[0].srcset = this.parentNode.children[1].srcset = this.src'/>
 </picture>
 {:else}
 <picture>
   <source onError="this.onerror = null; this.style.display = 'none'" srcset='{src}.webp' type='image/webp' />
-  <img class={className} class:pixelated={pixelated} src='{src}.png' {width} {height} {alt} {role} onerror='this.onerror = null; this.parentNode.children[0].srcset = this.parentNode.children[1].srcset = this.src'/>
+  <img class='{className} {$$restProps.class || ''}' class:pixelated={pixelated} src='{src}.png' {width} {height} {alt} {role} onerror='this.onerror = null; this.parentNode.children[0].srcset = this.parentNode.children[1].srcset = this.src'/>
 </picture>
 {/if}
 

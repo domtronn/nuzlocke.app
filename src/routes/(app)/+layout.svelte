@@ -35,7 +35,7 @@
   $: createUser()
 </script>
 
-{#if ['/game', '/box'].includes(path)}
+{#if ['/game', '/box', '/graveyard'].includes(path)}
   <GameHeading />
 {:else}
   <NavHeading />
