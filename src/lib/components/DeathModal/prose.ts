@@ -1,3 +1,5 @@
+import { capitalise } from '$utils/string'
+
 export enum Tokens {
     TPoke = '<TRAINER POKEMON>',
     TType = '<TRAINER POKEMON TYPE>',
@@ -9,6 +11,7 @@ export enum Tokens {
 }
 
 export enum ELossType {
+    Random = 'random',
     Sacrifice = 'sacrifice',
     Mistake = 'mistake',
     OffGuard = 'offguard',
@@ -88,7 +91,10 @@ interface ICtx {
 
 
 export const randomTemplate = (category = ELossType.Dramatic): string => {
-  const TCat = Templates[category]
+    const TCat = category === ELossType.Random
+        ? Object.values(Templates).flat()
+        : Templates[category]
+
   return TCat[Math.floor(Math.random() * TCat.length)]
 }
 
@@ -104,7 +110,7 @@ export const format = (
     if (ctx.type === EType.Wild) defaultOName = 'the wild'
     else defaultOName = 'their opponent'
 
-    return text
+    const res = text
         .replace(Tokens.TPoke, (ctx?.nickname ? `${ctx?.nickname} the ` : '') + ctx?.pokemon?.name)
         .replaceAll(Tokens.TPoke, ctx?.nickname || ctx?.pokemon.name)
         .replaceAll(Tokens.OName, ctx.type === EType.Trainer
@@ -116,4 +122,6 @@ export const format = (
         .replace(/ +/g, ' ')
         .replace(/the wild's (\w+)/g, 'the wild $1')
         .replace(/to use attack/g, 'to use a surprise attack')
+
+    return capitalise(res)
 }
