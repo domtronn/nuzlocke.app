@@ -1,12 +1,19 @@
 <script>
   export let pokemon, nickname = '', death, i
 
+  import { getContext } from 'svelte'
+
   import { Tooltip, Picture } from '$c/core'
   import { capitalise } from '$lib/utils/string'
 
   import { format } from '$c/DeathModal/prose'
 
-  import { IMG } from '$utils/rewrites'
+  import { IMG, createImgUrl } from '$utils/rewrites'
+
+  const { getPkmn } = getContext('game')
+
+  let Pokemon
+  $: getPkmn(pokemon).then(data => Pokemon = data)
 
   const gravehash = death?.epitaph?.length || nickname?.length || pokemon?.length
   const graveid = (gravehash % 12) + 1
@@ -27,7 +34,11 @@
   src='https://img.nuzlocke.app/graves/grave-{graveid}'
   aspect=192x256
   />
-  <img class=pkmn alt="{nickname} the {pokemon}" src='/assets/sprite/{pokemon}.png' />
+
+
+{#if Pokemon}
+  <img class=pkmn alt="{nickname} the {pokemon}" src={createImgUrl(Pokemon, { ext: 'png'})} />
+  {/if}
 
   <span>
     {#if nickname}
@@ -59,13 +70,11 @@
 
   span { @apply w-full leading-3 tracking-tighter font-mono text-base text-center text-gray-300 drop-shadow-grave bottom-1/3 translate-y-4; }
 
-  .pkmn { @apply top-0 translate-y-1/2 -mt-3 z-20 grayscale; }
-
   .grave {
     @apply transition-all;
   }
 
-  :global(.dark) .grave {  }
+  .pkmn { @apply top-0 translate-y-6 -mt-3 z-20 grayscale; }
   :global(.tombstone) { @apply w-full; filter: grayscale(0.8) contrast(0.7) brightness(0.8); }
 
   :global(.tombstone.tombstone--1) {@apply mt-8 ml-1 -skew-x-3; }
