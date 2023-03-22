@@ -1,8 +1,11 @@
 <script>
   import { slide } from 'svelte/transition'
   import { onMount, getContext } from 'svelte'
-  import { routedata, readdata } from '$lib/store'
 
+  import { fetchRoute } from '$utils/fetchers'
+  import { readdata } from '$lib/store'
+
+  import Games from '$lib/data/games.json'
   import { AutoComplete, Picture, PIcon } from '$c/core'
   import TypeBadge from '$c/type-badge.svelte'
   
@@ -15,13 +18,12 @@
 
   const { getLeague, getPkmns } = getContext('game')
   
-  let gyms = []
-  routedata.subscribe((data = []) => gyms = data.filter(g => g.type === 'gym'))
-  
-  let league
+  let league, gyms = []
   onMount(() => {
     const [, key] = readdata()
     getLeague(key).then(l => league = l)
+    fetchRoute(Games[key].pid)
+      .then((data = []) => gyms = data.filter(g => g.type === 'gym'))
   }) 
 
   let leaderMons = [], leaderRef = {}, opponents

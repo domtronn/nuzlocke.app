@@ -19,7 +19,6 @@
   import debounce from '$lib/utils/debounce'
   import { getGame, read, readdata,
            savedGames, activeGame, updateGame, parse,
-           routedata
          } from '$lib/store'
 
   let gameStore, gameKey, gameData
@@ -59,7 +58,6 @@
     if (route) return route
     const res = await fetch(`/api/route/${gen}.json`)
     route = await res.json()
-    routedata.set(route)
     return route
   }
 

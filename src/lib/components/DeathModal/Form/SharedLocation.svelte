@@ -1,8 +1,11 @@
 <script>
-  import { createEventDispatcher } from 'svelte'
-  import { routedata } from '$lib/store'
+  import { onMount, createEventDispatcher } from 'svelte'
   import { AutoComplete } from '$c/core'
 
+  import { fetchRoute } from '$utils/fetchers'
+  import { readdata } from '$lib/store'
+  import Games from '$lib/data/games.json'
+  
   const dispatch = createEventDispatcher()
   const onchange = () => dispatch('change', selected)
 
@@ -24,7 +27,11 @@
   
   export let selected
   let routes = []
-  routedata.subscribe((value = []) => routes = value.filter(g => g.type !== 'gym'))
+  onMount(() => {
+    const [, key] = readdata()
+    fetchRoute(Games[key].pid)
+      .then((data = []) => routes = data.filter(g => g.type === 'gym'))
+  }) 
 </script>
 
 <AutoComplete
