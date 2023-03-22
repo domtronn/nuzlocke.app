@@ -12,7 +12,9 @@
   const onkeydown = (e) => custom = true
   const onrandom = () => {
     custom = false
-    base = randomTemplate(category)
+    const rand = randomTemplate(category)
+    if (rand === base) onrandom()
+    else (base = rand)
   }
 
   const onedit = () => {
@@ -105,7 +107,7 @@
 
   <Tabs
     bind:selected={category}
-    className='!gap-x-2 mt-4 -mb-3 !w-full md:-mb-4 w-full justify-center hidden md:flex'
+    className='!gap-x-2 mt-4 -mb-3 !w-full md:-mb-5 w-full justify-center hidden md:flex'
     labelClassName='text-xs md:pb-1'
     {tabs}
   />
