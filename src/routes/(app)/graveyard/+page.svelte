@@ -11,6 +11,7 @@
   import { capitalise } from '$lib/utils/string'
 
   import { activeGame, getGame, read, savedGames, parse } from '$lib/store'
+  import { Loader } from '$c/core'
 
   let ready
   onMount(() => ready = true)
@@ -46,27 +47,35 @@
       <h1 class='mb-4 text-center md:hidden'>{capitalise(name)} Graveyard</h1>
     {/if}
 
-    {#if graveyard.length}
-      <Audio src=/audio/lavender.mp3 />
+    {#if !graveyard.length}
+      <span class='h-96 flex items-center justify-center col-span-4 dark:text-gray-600 text-xl'>
+        You have no Pokémon in the graveyard.<br />Congratulations!
+      </span>
     {/if}
 
+    {#if graveyard.length}
+      <Audio src=/audio/lavender.mp3 />
+      <Fog />
+    {/if}
   </div>
 
-  <Fog />
-
-  <div class='pb-48 sm:pb-64 mt-8'>
-    {#each chunked as row, i}
-      <GraveRow {i} maxRows={chunked.length}>
-        {#each row as p, j}
-          <div class='flex {j % 2 ? 'flex-row-reverse' : 'flex-row'} items-center justify-between max-sm:px-6 max-sm:mt-10 md:inline-block'
-               in:fade={{ duration: 800, delay: (300 * ((i * chunkSize) + j)) + 1000 }}
-               >
-            <Grave {...p} i={(i * chunkSize) + j} className='row--{i}' />
-          </div>
-        {/each}
-      </GraveRow>
-    {/each}
-  </div>
+  {#if graveyard.length}
+    <div class='pb-48 sm:pb-64 mt-8'>
+      {#each chunked as row, i}
+        <GraveRow {i} maxRows={chunked.length}>
+          {#each row as p, j}
+            <div class='flex {j % 2 ? 'flex-row-reverse' : 'flex-row'} items-center justify-between max-sm:px-6 max-sm:mt-10 md:inline-block'
+                 in:fade={{ duration: 800, delay: (300 * ((i * chunkSize) + j)) + 1000 }}
+                 >
+              <Grave {...p} i={(i * chunkSize) + j} className='row--{i}' />
+            </div>
+          {/each}
+        </GraveRow>
+      {/each}
+    </div>
+  {/if}
+{:else}
+  <Loader />
 {/if}
 
 <style>
