@@ -45,15 +45,14 @@
 
 {#if ready}
   <div class='px-4 sm:px-8' in:fade={{ duration: 500, delay: 200}}>
-    {#if name}
-      <h1 class='mb-4 text-center md:hidden'>{capitalise(name)} Graveyard</h1>
-    {/if}
-
     {#if !graveyard.length}
-      <span class='h-96 flex items-center justify-center col-span-4 dark:text-gray-600 text-xl'>
+      <span class='h-96 flex items-center justify-center text-center col-span-4 dark:text-gray-600 text-xl'>
         You have no Pokémon in the graveyard.<br />Congratulations!
       </span>
     {:else}
+      {#if name}
+        <h1 class='mb-4 text-center md:hidden'>{capitalise(name)} Graveyard</h1>
+      {/if}
 
       <div class='w-full md:w-64 my-6 mx-auto relative md:fixed md:bottom-0 md:right-6'>
       <div class='flex items-center gap-x-2 my-2 mx-auto justify-between'>
