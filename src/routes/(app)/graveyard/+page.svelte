@@ -57,12 +57,12 @@
 
       <div class='w-full md:w-64 my-6 mx-auto relative md:fixed md:bottom-0 md:right-6'>
       <div class='flex items-center gap-x-2 my-2 mx-auto justify-between'>
-        <h2 class='text-base dark:text-gray-50 text-gray-900 font-medium'> {#if showFog}Disable{:else}Enable{/if} fog animation </h2>
+        <h2 class='text-base dark:text-gray-50 text-gray-900 font-medium'>Fog animation </h2>
         <Toggle id=fog bind:state={showFog} />
       </div>
 
       <div class='flex items-center gap-x-2 my-2 mx-auto justify-between'>
-        <h2 class='text-base dark:text-gray-50 text-gray-900 font-medium'> {#if showAudio}Disable{:else}Enable{/if} audio</h2>
+        <h2 class='text-base dark:text-gray-50 text-gray-900 font-medium'>Audio</h2>
         <Toggle id=audio bind:state={showAudio} />
       </div>
       </div>
