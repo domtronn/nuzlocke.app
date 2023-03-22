@@ -3,7 +3,7 @@ import Patches from '$lib/data/patches.json';
 import Games from '$lib/data/games.json';
 import Pokemon from '../../../pokemon.json/_data.js';
 
-const normalise = id => id.replace(/-/g, '')
+import { normalise } from '$lib/utils/string'
 
 enum RouteType {
     route = 'route',
