@@ -43,7 +43,7 @@
 {#if ready}
   <div class='px-4 sm:px-8' in:fade={{ duration: 500, delay: 200}}>
     {#if name}
-      <h1 class='mb-4 text-left md:hidden'>{capitalise(name)} Graveyard</h1>
+      <h1 class='mb-4 text-center md:hidden'>{capitalise(name)} Graveyard</h1>
     {/if}
 
     {#if graveyard.length}

@@ -11,7 +11,7 @@
   export let placeholder, name, inset = false, color = '', label = 'label', className = '', dropdownClass = '', wide = false, rounded = false, readonly = false
   export let selected = null, style = ''
 
-  export let disabled = false, optional = false
+  export let disabled = false
 
   name = name || placeholder
 
@@ -39,7 +39,6 @@
     icon={Chevron}
     class='z-10 absolute right-1 pointer-events-none top-1/2 -translate-y-1/2 fill-current text-gray-200 dark:text-gray-500 dark:border-gray-500 transform rotate-180 border-r w-6'
   />
-
   <label for={name}>{name}</label>
 
   <AutoComplete

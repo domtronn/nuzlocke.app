@@ -73,9 +73,3 @@
     </div>
 
   </form>
-
-<style>
-  mark {
-    @apply px-2 py-1 rounded-full text-gray-200 bg-gray-700;
-  }
-</style>

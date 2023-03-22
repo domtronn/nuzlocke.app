@@ -14,7 +14,7 @@
     e.stopPropagation()
     e.preventDefault()
 
-    submit({ ...data, epitaph: data.custom ? epitaphEl.textContent : epitaphBase})
+    submit({ ...data, epitaph: data?.custom ? epitaphEl.textContent : epitaphBase})
     close()
   }
 
