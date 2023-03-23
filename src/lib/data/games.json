@@ -302,6 +302,19 @@
       "physicalSpecialSplit": true
     }
   },
+  "emkaizo": {
+    "pid": "emkaizo",
+    "logo": "/logos/emerald-kaizo-logo",
+    "title": "Emerald Kaizo",
+    "gen": "romhack",
+    "supported": true,
+    "region": "hoenn",
+    "filter": {
+      "types": "pregen6",
+      "moves": "pregen5",
+      "physicalSpecialSplit": true
+    }
+  },
   "incem": {
     "pid": "incem",
     "logo": "/logos/inclement-emerald-logo",

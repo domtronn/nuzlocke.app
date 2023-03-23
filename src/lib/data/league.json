@@ -19917,6 +19917,4173 @@
       ]
     }
   },
+  "emkaizo": {
+    "1": {
+      "name": "Roxanne",
+      "speciality": "rock",
+      "img": "/leaders/rs-roxanne",
+      "pokemon": [
+        {
+          "name": "nosepass",
+          "level": "15",
+          "moves": [
+            "self-destruct",
+            "attract",
+            "seismic-toss",
+            "thunder-wave"
+          ],
+          "ability": "battle-armor",
+          "abilities": [
+            "battle-armor"
+          ],
+          "held": "sitrus-berry"
+        },
+        {
+          "name": "lileep",
+          "level": "14",
+          "moves": [
+            "sludge-bomb",
+            "giga-drain",
+            "recover",
+            "ancient-power"
+          ],
+          "ability": "suction-cups",
+          "abilities": [
+            "suction-cups"
+          ],
+          "held": "sitrus-berry"
+        },
+        {
+          "name": "anorith",
+          "level": "14",
+          "moves": [
+            "aerial-ace",
+            "brick-break",
+            "x-scissor",
+            "rock-slide"
+          ],
+          "ability": "battle-armor",
+          "abilities": [
+            "battle-armor"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "relicanth",
+          "level": "14",
+          "moves": [
+            "rock-throw",
+            "secret-power",
+            "yawn",
+            "water-pulse"
+          ],
+          "ability": "rock-head",
+          "abilities": [
+            "rock-head"
+          ],
+          "held": "sitrus-berry"
+        },
+        {
+          "name": "shuckle",
+          "level": "14",
+          "moves": [
+            "toxic",
+            "curse",
+            "rollout",
+            "sunny-day"
+          ],
+          "ability": "shell-armor",
+          "abilities": [
+            "shell-armor"
+          ],
+          "held": "sitrus-berry"
+        },
+        {
+          "name": "lunatone",
+          "level": "15",
+          "moves": [
+            "hypnosis",
+            "moonlight",
+            "confusion",
+            "rock-slide"
+          ],
+          "ability": "levitate",
+          "abilities": [
+            "levitate"
+          ],
+          "held": "lum-berry"
+        }
+      ]
+    },
+    "2": {
+      "name": "Brawly",
+      "speciality": "fighting",
+      "img": "/leaders/rs-brawly",
+      "pokemon": [
+        {
+          "name": "hitmontop",
+          "level": "17",
+          "moves": [
+            "fake-out",
+            "mach-punch",
+            "rock-slide",
+            "secret-power"
+          ],
+          "ability": "intimidate",
+          "abilities": [
+            "intimidate"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "hitmonlee",
+          "level": "17",
+          "moves": [
+            "sleep-talk",
+            "rolling-kick",
+            "rock-slide",
+            "secret-power"
+          ],
+          "ability": "limber",
+          "abilities": [
+            "limber"
+          ],
+          "held": "sitrus-berry"
+        },
+        {
+          "name": "hitmonchan",
+          "level": "17",
+          "moves": [
+            "shadow-punch",
+            "mach-punch",
+            "rock-slide",
+            "facade"
+          ],
+          "ability": "guts",
+          "abilities": [
+            "guts"
+          ],
+          "held": "chesto-berry"
+        },
+        {
+          "name": "meditite",
+          "level": "19",
+          "moves": [
+            "brick-break",
+            "shadow-ball",
+            "rock-slide",
+            "fake-out"
+          ],
+          "ability": "pure-power",
+          "abilities": [
+            "pure-power"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "poliwrath",
+          "level": "17",
+          "moves": [
+            "hypnosis",
+            "surf",
+            "ice-punch",
+            "brick-break"
+          ],
+          "ability": "swift-swim",
+          "abilities": [
+            "swift-swim"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "hariyama",
+          "level": "19",
+          "moves": [
+            "force-palm",
+            "shadow-punch",
+            "rock-slide",
+            "fake-out"
+          ],
+          "ability": "thick-fat",
+          "abilities": [
+            "thick-fat"
+          ],
+          "held": "lum-berry"
+        }
+      ]
+    },
+    "3": {
+      "name": "Wattson",
+      "speciality": "electric",
+      "img": "/leaders/rs-wattson",
+      "pokemon": [
+        {
+          "name": "jolteon",
+          "level": "28",
+          "moves": [
+            "thunder-wave",
+            "thunderbolt",
+            "hp-grass",
+            "bite"
+          ],
+          "ability": "static",
+          "abilities": [
+            "static"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "lanturn",
+          "level": "28",
+          "moves": [
+            "thunder-wave",
+            "thunderbolt",
+            "ice-beam",
+            "surf"
+          ],
+          "ability": "volt-absorb",
+          "abilities": [
+            "volt-absorb"
+          ],
+          "held": "leftovers"
+        },
+        {
+          "name": "ampharos",
+          "level": "29",
+          "moves": [
+            "thunder-wave",
+            "thunderbolt",
+            "hp-grass",
+            "fire-punch"
+          ],
+          "ability": "static",
+          "abilities": [
+            "static"
+          ],
+          "held": "leftovers"
+        },
+        {
+          "name": "raichu",
+          "level": "28",
+          "moves": [
+            "thunder-wave",
+            "thunderbolt",
+            "body-slam",
+            "body-slam"
+          ],
+          "ability": "static",
+          "abilities": [
+            "static"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "electabuzz",
+          "level": "28",
+          "moves": [
+            "psychic",
+            "thunderbolt",
+            "ice-punch",
+            "fire-punch"
+          ],
+          "ability": "static",
+          "abilities": [
+            "static"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "manectric",
+          "level": "29",
+          "moves": [
+            "thunder-wave",
+            "thunderbolt",
+            "crunch",
+            "flamethrower"
+          ],
+          "ability": "intimidate",
+          "abilities": [
+            "intimidate"
+          ],
+          "held": "lum-berry"
+        }
+      ]
+    },
+    "4": {
+      "name": "Flannery",
+      "speciality": "fire",
+      "img": "/leaders/rs-flannery",
+      "pokemon": [
+        {
+          "name": "ninetales",
+          "level": "41",
+          "moves": [
+            "hp-electric",
+            "overheat",
+            "solar-beam",
+            "hypnosis"
+          ],
+          "ability": "pressure",
+          "abilities": [
+            "pressure"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "charizard",
+          "level": "42",
+          "moves": [
+            "heat-wave",
+            "earthquake",
+            "solar-beam",
+            "dragon-claw"
+          ],
+          "ability": "blaze",
+          "abilities": [
+            "blaze"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "blaziken",
+          "level": "42",
+          "moves": [
+            "blaze-kick",
+            "sky-uppercut",
+            "solar-beam",
+            "thunder-punch"
+          ],
+          "ability": "blaze",
+          "abilities": [
+            "blaze"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "arcanine",
+          "level": "41",
+          "moves": [
+            "wild-charge",
+            "heat-wave",
+            "solar-beam",
+            "extreme-speed"
+          ],
+          "ability": "intimidate",
+          "abilities": [
+            "intimidate"
+          ],
+          "held": "leftovers"
+        },
+        {
+          "name": "typhlosion",
+          "level": "42",
+          "moves": [
+            "heat-wave",
+            "earthquake",
+            "solar-beam",
+            "wild-charge"
+          ],
+          "ability": "blaze",
+          "abilities": [
+            "blaze"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "castform",
+          "level": "42",
+          "moves": [
+            "flamethrower",
+            "ice-beam",
+            "solar-beam",
+            "thunderbolt"
+          ],
+          "ability": "forecast",
+          "abilities": [
+            "forecast"
+          ],
+          "held": "lum-berry"
+        }
+      ]
+    },
+    "5": {
+      "name": "Norman",
+      "speciality": "normal",
+      "img": "/leaders/rs-norman",
+      "pokemon": [
+        {
+          "name": "slaking",
+          "level": "48",
+          "moves": [
+            "hyper-beam",
+            "crush-claw",
+            "shadow-ball",
+            "superpower"
+          ],
+          "ability": "truant",
+          "abilities": [
+            "truant"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "espeon",
+          "level": "48",
+          "moves": [
+            "psychic",
+            "light-screen",
+            "skill-swap",
+            "sing"
+          ],
+          "ability": "synchronize",
+          "abilities": [
+            "synchronize"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "kangaskhan",
+          "level": "48",
+          "moves": [
+            "fake-out",
+            "crush-claw",
+            "shadow-ball",
+            "superpower"
+          ],
+          "ability": "early-bird",
+          "abilities": [
+            "early-bird"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "swellow",
+          "level": "48",
+          "moves": [
+            "double-edge",
+            "sky-attack",
+            "steel-wing",
+            "hp-ground"
+          ],
+          "ability": "guts",
+          "abilities": [
+            "guts"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "tauros",
+          "level": "48",
+          "moves": [
+            "body-slam",
+            "iron-tail",
+            "quick-attack",
+            "earth-power"
+          ],
+          "ability": "intimidate",
+          "abilities": [
+            "intimidate"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "snorlax",
+          "level": "48",
+          "moves": [
+            "curse",
+            "snore",
+            "rest",
+            "stockpile"
+          ],
+          "ability": "guts",
+          "abilities": [
+            "guts"
+          ],
+          "held": "leftovers"
+        }
+      ]
+    },
+    "6": {
+      "name": "Winona",
+      "speciality": "flying",
+      "img": "/leaders/rs-winona",
+      "pokemon": [
+        {
+          "name": "aerodactyl",
+          "level": "54",
+          "moves": [
+            "hp-flying",
+            "ancient-power",
+            "double-edge",
+            "earthquake"
+          ],
+          "ability": "rock-head",
+          "abilities": [
+            "rock-head"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "zapdos",
+          "level": "55",
+          "moves": [
+            "sky-attack",
+            "thunderbolt",
+            "hp-ice",
+            "return"
+          ],
+          "ability": "pressure",
+          "abilities": [
+            "pressure"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "crobat",
+          "level": "54",
+          "moves": [
+            "sky-attack",
+            "poison-fang",
+            "giga-drain",
+            "hp-ground"
+          ],
+          "ability": "inner-focus",
+          "abilities": [
+            "inner-focus"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "articuno",
+          "level": "55",
+          "moves": [
+            "sky-attack",
+            "ice-beam",
+            "hp-grass",
+            "ice-shard"
+          ],
+          "ability": "pressure",
+          "abilities": [
+            "pressure"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "flygon",
+          "level": "55",
+          "moves": [
+            "dragon-claw",
+            "flamethrower",
+            "earthquake",
+            "giga-drain"
+          ],
+          "ability": "levitate",
+          "abilities": [
+            "levitate"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "moltres",
+          "level": "55",
+          "moves": [
+            "sky-attack",
+            "overheat",
+            "hp-grass",
+            "steel-wing"
+          ],
+          "ability": "pressure",
+          "abilities": [
+            "pressure"
+          ],
+          "held": "lum-berry"
+        }
+      ]
+    },
+    "7": {
+      "name": "Tate & Liza",
+      "speciality": "psychic",
+      "img": "/leaders/rs-tate-liza",
+      "pokemon": [
+        {
+          "name": "latias",
+          "level": "70",
+          "moves": [
+            "dragon-claw",
+            "mist-ball",
+            "hp-fire",
+            "waterfall"
+          ],
+          "ability": "levitate",
+          "abilities": [
+            "levitate"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "latios",
+          "level": "70",
+          "moves": [
+            "dragon-claw",
+            "luster-purge",
+            "hp-fire",
+            "thunderbolt"
+          ],
+          "ability": "levitate",
+          "abilities": [
+            "levitate"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "gardevoir",
+          "level": "70",
+          "moves": [
+            "psychic",
+            "fire-punch",
+            "hp-grass",
+            "thunderbolt"
+          ],
+          "ability": "synchronize",
+          "abilities": [
+            "synchronize"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "medicham",
+          "level": "70",
+          "moves": [
+            "fake-out",
+            "brick-break",
+            "hp-psychic",
+            "shadow-ball"
+          ],
+          "ability": "pure-power",
+          "abilities": [
+            "pure-power"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "starmie",
+          "level": "70",
+          "moves": [
+            "psychic",
+            "hydro-pump",
+            "hydro-pump",
+            "thunderbolt"
+          ],
+          "ability": "natural-cure",
+          "abilities": [
+            "natural-cure"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "jirachi",
+          "level": "70",
+          "moves": [
+            "meteor-mash",
+            "signal-beam",
+            "fire-punch",
+            "ancient-power"
+          ],
+          "ability": "serene-grace",
+          "abilities": [
+            "serene-grace"
+          ],
+          "held": "lum-berry"
+        }
+      ]
+    },
+    "red1": {
+      "name": "Red",
+      "speciality": "",
+      "img": "/leaders/gs-red",
+      "pokemon": [
+        {
+          "name": "eevee",
+          "level": "9",
+          "moves": [
+            "quick-attack",
+            "rest",
+            "snore",
+            "curse"
+          ],
+          "ability": "run-away",
+          "abilities": [
+            "run-away"
+          ],
+          "held": "sitrus-berry"
+        },
+        {
+          "name": "bulbasaur",
+          "level": "9",
+          "moves": [
+            "sleep-powder",
+            "mega-drain",
+            "cut",
+            "light-screen"
+          ],
+          "ability": "overgrow",
+          "abilities": [
+            "overgrow"
+          ],
+          "held": "berry-juice"
+        },
+        {
+          "name": "charmander",
+          "level": "9",
+          "moves": [
+            "flame-wheel",
+            "quick-attack",
+            "bite",
+            "will-o-wisp"
+          ],
+          "ability": "blaze",
+          "abilities": [
+            "blaze"
+          ],
+          "held": "berry-juice"
+        },
+        {
+          "name": "squirtle",
+          "level": "9",
+          "moves": [
+            "fake-out",
+            "water-pulse",
+            "yawn",
+            "bite"
+          ],
+          "ability": "torrent",
+          "abilities": [
+            "torrent"
+          ],
+          "held": "berry-juice"
+        },
+        {
+          "name": "pikachu",
+          "level": "9",
+          "moves": [
+            "shock-wave",
+            "quick-attack",
+            "surf",
+            "thunder-wave"
+          ],
+          "ability": "static",
+          "abilities": [
+            "static"
+          ],
+          "held": "sitrus-berry"
+        }
+      ]
+    },
+    "red2": {
+      "name": "Red",
+      "speciality": "",
+      "img": "/leaders/gs-red",
+      "pokemon": [
+        {
+          "name": "pikachu",
+          "level": "37",
+          "moves": [
+            "volt-tackle",
+            "surf",
+            "hp-ice",
+            "sing"
+          ],
+          "ability": "static",
+          "abilities": [
+            "static"
+          ],
+          "held": "light-ball"
+        },
+        {
+          "name": "espeon",
+          "level": "36",
+          "moves": [
+            "reflect",
+            "psychic",
+            "bite",
+            "signal-beam"
+          ],
+          "ability": "synchronize",
+          "abilities": [
+            "synchronize"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "snorlax",
+          "level": "36",
+          "moves": [
+            "curse",
+            "snore",
+            "earthquake",
+            "rest"
+          ],
+          "ability": "guts",
+          "abilities": [
+            "guts"
+          ],
+          "held": "leftovers"
+        },
+        {
+          "name": "blastoise",
+          "level": "36",
+          "moves": [
+            "surf",
+            "yawn",
+            "ice-beam",
+            "mirror-coat"
+          ],
+          "ability": "torrent",
+          "abilities": [
+            "torrent"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "venusaur",
+          "level": "36",
+          "moves": [
+            "sleep-powder",
+            "giga-drain",
+            "sludge-bomb",
+            "synthesis"
+          ],
+          "ability": "chlorophyll",
+          "abilities": [
+            "chlorophyll"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "charizard",
+          "level": "36",
+          "moves": [
+            "flamethrower",
+            "aerial-ace",
+            "dragon-claw",
+            "earthquake"
+          ],
+          "ability": "blaze",
+          "abilities": [
+            "blaze"
+          ],
+          "held": "lum-berry"
+        }
+      ]
+    },
+    "mt1": {
+      "name": "Tabitha",
+      "speciality": "",
+      "img": "/leaders/rs-tabitha",
+      "pokemon": [
+        {
+          "name": "dodrio",
+          "level": "37",
+          "moves": [
+            "double-edge",
+            "hp-ground",
+            "quick-attack",
+            "drill-peck"
+          ],
+          "ability": "early-bird",
+          "abilities": [
+            "early-bird"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "manectric",
+          "level": "37",
+          "moves": [
+            "crunch",
+            "overheat",
+            "hp-water",
+            "thunderbolt"
+          ],
+          "ability": "intimidate",
+          "abilities": [
+            "intimidate"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "weezing",
+          "level": "37",
+          "moves": [
+            "explosion",
+            "gunk-shot",
+            "flamethrower",
+            "hp-grass"
+          ],
+          "ability": "levitate",
+          "abilities": [
+            "levitate"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "aggron",
+          "level": "38",
+          "moves": [
+            "head-smash",
+            "superpower",
+            "earthquake",
+            "flash-cannon"
+          ],
+          "ability": "rock-head",
+          "abilities": [
+            "rock-head"
+          ],
+          "held": "quick-claw"
+        },
+        {
+          "name": "flygon",
+          "level": "37",
+          "moves": [
+            "earthquake",
+            "giga-drain",
+            "signal-beam",
+            "rock-slide"
+          ],
+          "ability": "levitate",
+          "abilities": [
+            "levitate"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "arcanine",
+          "level": "38",
+          "moves": [
+            "overheat",
+            "extreme-speed",
+            "hp-grass",
+            "wild-charge"
+          ],
+          "ability": "intimidate",
+          "abilities": [
+            "intimidate"
+          ],
+          "held": "lum-berry"
+        }
+      ]
+    },
+    "mtmax1": {
+      "name": "Maxie",
+      "speciality": "",
+      "img": "/leaders/rs-maxie",
+      "pokemon": [
+        {
+          "name": "registeel",
+          "level": "38",
+          "moves": [
+            "explosion",
+            "thunder-wave",
+            "ancient-power",
+            "earthquake"
+          ],
+          "ability": "clear-body",
+          "abilities": [
+            "clear-body"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "crobat",
+          "level": "39",
+          "moves": [
+            "giga-drain",
+            "poison-fang",
+            "heat-wave",
+            "air-slash"
+          ],
+          "ability": "inner-focus",
+          "abilities": [
+            "inner-focus"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "claydol",
+          "level": "39",
+          "moves": [
+            "explosion",
+            "psychic",
+            "signal-beam",
+            "earthquake"
+          ],
+          "ability": "levitate",
+          "abilities": [
+            "levitate"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "alakazam",
+          "level": "38",
+          "moves": [
+            "fire-punch",
+            "psychic",
+            "thunder-punch",
+            "ice-punch"
+          ],
+          "ability": "synchronize",
+          "abilities": [
+            "synchronize"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "dusclops",
+          "level": "38",
+          "moves": [
+            "will-o-wisp",
+            "shadow-ball",
+            "seismic-toss",
+            "rest"
+          ],
+          "ability": "pressure",
+          "abilities": [
+            "pressure"
+          ],
+          "held": "leftovers"
+        },
+        {
+          "name": "houndoom",
+          "level": "39",
+          "moves": [
+            "overheat",
+            "crunch",
+            "hp-grass",
+            "poison-fang"
+          ],
+          "ability": "intimidate",
+          "abilities": [
+            "intimidate"
+          ],
+          "held": "lum-berry"
+        }
+      ]
+    },
+    "mtmax2": {
+      "name": "Maxie",
+      "speciality": "",
+      "img": "/leaders/rs-maxie",
+      "pokemon": [
+        {
+          "name": "tyranitar",
+          "level": "66",
+          "moves": [
+            "solar-beam",
+            "fire-blast",
+            "ancient-power",
+            "earthquake"
+          ],
+          "ability": "intimidate",
+          "abilities": [
+            "intimidate"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "flygon",
+          "level": "66",
+          "moves": [
+            "solar-beam",
+            "draco-meteor",
+            "heat-wave",
+            "earthquake"
+          ],
+          "ability": "levitate",
+          "abilities": [
+            "levitate"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "gengar",
+          "level": "66",
+          "moves": [
+            "ice-punch",
+            "thunderbolt",
+            "psychic",
+            "fire-punch"
+          ],
+          "ability": "levitate",
+          "abilities": [
+            "levitate"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "arcanine",
+          "level": "66",
+          "moves": [
+            "solar-beam",
+            "heat-wave",
+            "extreme-speed",
+            "hp-ice"
+          ],
+          "ability": "intimidate",
+          "abilities": [
+            "intimidate"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "exeggutor",
+          "level": "66",
+          "moves": [
+            "solar-beam",
+            "psychic",
+            "ancient-power",
+            "hp-fire"
+          ],
+          "ability": "chlorophyll",
+          "abilities": [
+            "chlorophyll"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "entei",
+          "level": "66",
+          "moves": [
+            "solar-beam",
+            "sacred-fire",
+            "extreme-speed",
+            "ancient-power"
+          ],
+          "ability": "inner-focus",
+          "abilities": [
+            "inner-focus"
+          ],
+          "held": "lum-berry"
+        }
+      ]
+    },
+    "mtmax3": {
+      "name": "Maxie & Tabitha",
+      "speciality": "",
+      "img": "/leaders/rs-maxie-tabitha",
+      "pokemon": [
+        {
+          "name": "gengar",
+          "level": "70",
+          "moves": [
+            "giga-drain",
+            "thunderbolt",
+            "fire-punch",
+            "ice-punch"
+          ],
+          "ability": "levitate",
+          "abilities": [
+            "levitate"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "tauros",
+          "level": "71",
+          "moves": [
+            "earthquake",
+            "double-edge",
+            "hp-ghost",
+            "iron-tail"
+          ],
+          "ability": "intimidate",
+          "abilities": [
+            "intimidate"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "salamence",
+          "level": "70",
+          "moves": [
+            "draco-meteor",
+            "air-slash",
+            "flamethrower",
+            "hp-grass"
+          ],
+          "ability": "intimidate",
+          "abilities": [
+            "intimidate"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "flygon",
+          "level": "71",
+          "moves": [
+            "earthquake",
+            "flamethrower",
+            "signal-beam",
+            "ancient-power"
+          ],
+          "ability": "levitate",
+          "abilities": [
+            "levitate"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "charizard",
+          "level": "71",
+          "moves": [
+            "overheat",
+            "thunder-punch",
+            "dragon-claw",
+            "hp-ice"
+          ],
+          "ability": "blaze",
+          "abilities": [
+            "blaze"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "metagross",
+          "level": "72",
+          "moves": [
+            "earthquake",
+            "meteor-mash",
+            "shadow-ball",
+            "hp-grass"
+          ],
+          "ability": "clear-body",
+          "abilities": [
+            "clear-body"
+          ],
+          "held": "lum-berry"
+        }
+      ]
+    },
+    "mc1": {
+      "name": "Courtney",
+      "speciality": "",
+      "img": "/leaders/rs-courtney",
+      "pokemon": [
+        {
+          "name": "charizard",
+          "level": "64",
+          "moves": [
+            "overheat",
+            "dragon-claw",
+            "solar-beam",
+            "earthquake"
+          ],
+          "ability": "blaze",
+          "abilities": [
+            "blaze"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "regirock",
+          "level": "65",
+          "moves": [
+            "counter",
+            "explosion",
+            "ancient-power",
+            "earthquake"
+          ],
+          "ability": "clear-body",
+          "abilities": [
+            "clear-body"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "salamence",
+          "level": "64",
+          "moves": [
+            "draco-meteor",
+            "air-slash",
+            "flamethrower",
+            "earthquake"
+          ],
+          "ability": "intimidate",
+          "abilities": [
+            "intimidate"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "kangaskhan",
+          "level": "63",
+          "moves": [
+            "fake-out",
+            "crush-claw",
+            "shadow-ball",
+            "earthquake"
+          ],
+          "ability": "early-bird",
+          "abilities": [
+            "early-bird"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "venusaur",
+          "level": "65",
+          "moves": [
+            "sleep-powder",
+            "weather-ball",
+            "solar-beam",
+            "ancient-power"
+          ],
+          "ability": "chlorophyll",
+          "abilities": [
+            "chlorophyll"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "castform",
+          "level": "64",
+          "moves": [
+            "weather-ball",
+            "ice-beam",
+            "solar-beam",
+            "thunderbolt"
+          ],
+          "ability": "forecast",
+          "abilities": [
+            "forecast"
+          ],
+          "held": "lum-berry"
+        }
+      ]
+    },
+    "mc2": {
+      "name": "Courtney",
+      "speciality": "",
+      "img": "/leaders/rs-courtney",
+      "pokemon": [
+        {
+          "name": "crobat",
+          "level": "70",
+          "moves": [
+            "heat-wave",
+            "sky-attack",
+            "hp-ground",
+            "giga-drain"
+          ],
+          "ability": "inner-focus",
+          "abilities": [
+            "inner-focus"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "regirock",
+          "level": "70",
+          "moves": [
+            "thunder-wave",
+            "explosion",
+            "ancient-power",
+            "earthquake"
+          ],
+          "ability": "clear-body",
+          "abilities": [
+            "clear-body"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "gardevoir",
+          "level": "70",
+          "moves": [
+            "calm-mind",
+            "psychic",
+            "thunderbolt",
+            "fire-punch"
+          ],
+          "ability": "synchronize",
+          "abilities": [
+            "synchronize"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "arcanine",
+          "level": "70",
+          "moves": [
+            "overheat",
+            "extreme-speed",
+            "wild-charge",
+            "hp-grass"
+          ],
+          "ability": "intimidate",
+          "abilities": [
+            "intimidate"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "meganium",
+          "level": "70",
+          "moves": [
+            "grass-whistle",
+            "giga-drain",
+            "earthquake",
+            "ancient-power"
+          ],
+          "ability": "thick-fat",
+          "abilities": [
+            "thick-fat"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "dusclops",
+          "level": "70",
+          "moves": [
+            "will-o-wisp",
+            "rest",
+            "shadow-ball",
+            "earthquake"
+          ],
+          "ability": "pressure",
+          "abilities": [
+            "pressure"
+          ],
+          "held": "leftovers"
+        }
+      ]
+    },
+    "am1": {
+      "name": "Matt",
+      "speciality": "",
+      "img": "/leaders/rs-matt",
+      "pokemon": [
+        {
+          "name": "wailord",
+          "level": "57",
+          "moves": [
+            "self-destruct",
+            "water-spout",
+            "earthquake",
+            "ice-beam"
+          ],
+          "ability": "pressure",
+          "abilities": [
+            "pressure"
+          ],
+          "held": "quick-claw"
+        },
+        {
+          "name": "machamp",
+          "level": "56",
+          "moves": [
+            "superpower",
+            "rock-slide",
+            "earthquake",
+            "hp-ghost"
+          ],
+          "ability": "guts",
+          "abilities": [
+            "guts"
+          ],
+          "held": "chesto-berry"
+        },
+        {
+          "name": "slaking",
+          "level": "56",
+          "moves": [
+            "hyper-beam",
+            "surf",
+            "earthquake",
+            "shadow-ball"
+          ],
+          "ability": "truant",
+          "abilities": [
+            "truant"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "exeggutor",
+          "level": "56",
+          "moves": [
+            "explosion",
+            "egg-bomb",
+            "psychic",
+            "ancient-power"
+          ],
+          "ability": "chlorophyll",
+          "abilities": [
+            "chlorophyll"
+          ],
+          "held": "quick-claw"
+        },
+        {
+          "name": "gyarados",
+          "level": "58",
+          "moves": [
+            "hp-flying",
+            "dragon-dance",
+            "earthquake",
+            "frustration"
+          ],
+          "ability": "intimidate",
+          "abilities": [
+            "intimidate"
+          ],
+          "held": "bright-powder"
+        },
+        {
+          "name": "dragonite",
+          "level": "57",
+          "moves": [
+            "superpower",
+            "rock-slide",
+            "earthquake",
+            "extreme-speed"
+          ],
+          "ability": "thick-fat",
+          "abilities": [
+            "thick-fat"
+          ],
+          "held": "lum-berry"
+        }
+      ]
+    },
+    "am2": {
+      "name": "Matt",
+      "speciality": "",
+      "img": "/leaders/rs-matt",
+      "pokemon": [
+        {
+          "name": "glalie",
+          "level": "66",
+          "moves": [
+            "explosion",
+            "ice-shard",
+            "ice-beam",
+            "earthquake"
+          ],
+          "ability": "intimidate",
+          "abilities": [
+            "intimidate"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "kingdra",
+          "level": "66",
+          "moves": [
+            "rain-dance",
+            "octazooka",
+            "draco-meteor",
+            "ice-beam"
+          ],
+          "ability": "swift-swim",
+          "abilities": [
+            "swift-swim"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "machamp",
+          "level": "67",
+          "moves": [
+            "superpower",
+            "earthquake",
+            "rock-slide",
+            "hp-ghost"
+          ],
+          "ability": "guts",
+          "abilities": [
+            "guts"
+          ],
+          "held": "quick-claw"
+        },
+        {
+          "name": "tauros",
+          "level": "66",
+          "moves": [
+            "double-edge",
+            "earthquake",
+            "iron-tail",
+            ""
+          ],
+          "ability": "intimidate",
+          "abilities": [
+            "intimidate"
+          ],
+          "held": "choice-band"
+        },
+        {
+          "name": "dragonite",
+          "level": "66",
+          "moves": [
+            "dragon-dance",
+            "hp-flying",
+            "earthquake",
+            "superpower"
+          ],
+          "ability": "thick-fat",
+          "abilities": [
+            "thick-fat"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "wailord",
+          "level": "67",
+          "moves": [
+            "amnesia",
+            "earthquake",
+            "ice-beam",
+            "rest"
+          ],
+          "ability": "pressure",
+          "abilities": [
+            "pressure"
+          ],
+          "held": "leftovers"
+        }
+      ]
+    },
+    "as1": {
+      "name": "Shelly",
+      "speciality": "",
+      "img": "/leaders/rs-shelly",
+      "pokemon": [
+        {
+          "name": "milotic",
+          "level": "48",
+          "moves": [
+            "mirror-coat",
+            "ice-beam",
+            "surf",
+            "recover"
+          ],
+          "ability": "swift-swim",
+          "abilities": [
+            "swift-swim"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "hypno",
+          "level": "47",
+          "moves": [
+            "hypnosis",
+            "psychic",
+            "signal-beam",
+            "fire-punch"
+          ],
+          "ability": "insomnia",
+          "abilities": [
+            "insomnia"
+          ],
+          "held": "leftovers"
+        },
+        {
+          "name": "shuckle",
+          "level": "47",
+          "moves": [
+            "toxic",
+            "double-team",
+            "rest",
+            "protect"
+          ],
+          "ability": "shell-armor",
+          "abilities": [
+            "shell-armor"
+          ],
+          "held": "leftovers"
+        },
+        {
+          "name": "medicham",
+          "level": "47",
+          "moves": [
+            "fake-out",
+            "brick-break",
+            "shadow-ball",
+            "rock-slide"
+          ],
+          "ability": "pure-power",
+          "abilities": [
+            "pure-power"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "dragonite",
+          "level": "48",
+          "moves": [
+            "thunder-wave",
+            "surf",
+            "dragon-claw",
+            "return"
+          ],
+          "ability": "thick-fat",
+          "abilities": [
+            "thick-fat"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "lapras",
+          "level": "49",
+          "moves": [
+            "surf",
+            "ice-beam",
+            "thunderbolt",
+            "drill-run"
+          ],
+          "ability": "shell-armor",
+          "abilities": [
+            "shell-armor"
+          ],
+          "held": "leftovers"
+        }
+      ]
+    },
+    "as2": {
+      "name": "Shelly",
+      "speciality": "",
+      "img": "/leaders/rs-shelly",
+      "pokemon": [
+        {
+          "name": "lapras",
+          "level": "72",
+          "moves": [
+            "drill-run",
+            "hydro-pump",
+            "ice-beam",
+            "thunder"
+          ],
+          "ability": "shell-armor",
+          "abilities": [
+            "shell-armor"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "ludicolo",
+          "level": "72",
+          "moves": [
+            "leech-seed",
+            "waterfall",
+            "ice-beam",
+            "protect"
+          ],
+          "ability": "swift-swim",
+          "abilities": [
+            "swift-swim"
+          ],
+          "held": "leftovers"
+        },
+        {
+          "name": "starmie",
+          "level": "72",
+          "moves": [
+            "hydro-pump",
+            "psychic",
+            "ice-beam",
+            "thunder"
+          ],
+          "ability": "natural-cure",
+          "abilities": [
+            "natural-cure"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "raichu",
+          "level": "72",
+          "moves": [
+            "surf",
+            "extreme-speed",
+            "sing",
+            "thunder"
+          ],
+          "ability": "static",
+          "abilities": [
+            "static"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "dragonite",
+          "level": "72",
+          "moves": [
+            "earthquake",
+            "extreme-speed",
+            "hp-flying",
+            "thunder"
+          ],
+          "ability": "thick-fat",
+          "abilities": [
+            "thick-fat"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "vaporeon",
+          "level": "73",
+          "moves": [
+            "sing",
+            "muddy-water",
+            "ice-beam",
+            "hp-grass"
+          ],
+          "ability": "swift-swim",
+          "abilities": [
+            "swift-swim"
+          ],
+          "held": "leftovers"
+        }
+      ]
+    },
+    "aqarc": {
+      "name": "Archie",
+      "speciality": "",
+      "img": "/leaders/rs-archie",
+      "pokemon": [
+        {
+          "name": "raikou",
+          "level": "75",
+          "moves": [
+            "thunder",
+            "hp-grass",
+            "weather-ball",
+            "calm-mind"
+          ],
+          "ability": "pressure",
+          "abilities": [
+            "pressure"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "suicune",
+          "level": "75",
+          "moves": [
+            "ice-beam",
+            "hp-grass",
+            "hydro-pump",
+            "calm-mind"
+          ],
+          "ability": "battle-armor",
+          "abilities": [
+            "battle-armor"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "metagross",
+          "level": "75",
+          "moves": [
+            "meteor-mash",
+            "earth-power",
+            "sludge-bomb",
+            "protect"
+          ],
+          "ability": "clear-body",
+          "abilities": [
+            "clear-body"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "dragonite",
+          "level": "75",
+          "moves": [
+            "thunder",
+            "draco-meteor",
+            "hydro-pump",
+            "extreme-speed"
+          ],
+          "ability": "thick-fat",
+          "abilities": [
+            "thick-fat"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "qwilfish",
+          "level": "75",
+          "moves": [
+            "destiny-bond",
+            "gunk-shot",
+            "hydro-pump",
+            "swords-dance"
+          ],
+          "ability": "swift-swim",
+          "abilities": [
+            "swift-swim"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "kingdra",
+          "level": "75",
+          "moves": [
+            "octazooka",
+            "draco-meteor",
+            "signal-beam",
+            "yawn"
+          ],
+          "ability": "swift-swim",
+          "abilities": [
+            "swift-swim"
+          ],
+          "held": "lum-berry"
+        }
+      ]
+    },
+    "w1": {
+      "name": "Wally",
+      "speciality": "",
+      "img": "/leaders/rs-wally",
+      "pokemon": [
+        {
+          "name": "ralts",
+          "level": "70",
+          "moves": [
+            "pain-split",
+            "teleport",
+            "encore",
+            "will-o-wisp"
+          ],
+          "ability": "synchronize",
+          "abilities": [
+            "synchronize"
+          ],
+          "held": "oran-berry"
+        }
+      ]
+    },
+    "w2": {
+      "name": "Wally",
+      "speciality": "",
+      "img": "/leaders/rs-wally",
+      "pokemon": [
+        {
+          "name": "meganium",
+          "level": "85",
+          "moves": [
+            "synthesis",
+            "giga-drain",
+            "earthquake",
+            "ancient-power"
+          ],
+          "ability": "thick-fat",
+          "abilities": [
+            "thick-fat"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "raichu",
+          "level": "85",
+          "moves": [
+            "volt-tackle",
+            "extreme-speed",
+            "surf",
+            "hp-ice"
+          ],
+          "ability": "static",
+          "abilities": [
+            "static"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "hitmontop",
+          "level": "85",
+          "moves": [
+            "mach-punch",
+            "brick-break",
+            "rock-slide",
+            "hp-ghost"
+          ],
+          "ability": "intimidate",
+          "abilities": [
+            "intimidate"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "vaporeon",
+          "level": "85",
+          "moves": [
+            "muddy-water",
+            "ice-beam",
+            "quick-attack",
+            "hp-grass"
+          ],
+          "ability": "swift-swim",
+          "abilities": [
+            "swift-swim"
+          ],
+          "held": "leftovers"
+        },
+        {
+          "name": "blissey",
+          "level": "85",
+          "moves": [
+            "counter",
+            "soft-boiled",
+            "seismic-toss",
+            "psywave"
+          ],
+          "ability": "natural-cure",
+          "abilities": [
+            "natural-cure"
+          ],
+          "held": "leftovers"
+        },
+        {
+          "name": "gardevoir",
+          "level": "88",
+          "moves": [
+            "calm-mind",
+            "psychic",
+            "fire-punch",
+            "thunderbolt"
+          ],
+          "ability": "synchronize",
+          "abilities": [
+            "synchronize"
+          ],
+          "held": "lum-berry"
+        }
+      ]
+    },
+    "b0": {
+      "name": "Brendan",
+      "speciality": "",
+      "img": "/leaders/rs-brendan",
+      "pokemon": [
+        {
+          "name": "farfetchd",
+          "level": "14",
+          "moves": [
+            "quick-attack",
+            "aerial-ace",
+            "mud-slap",
+            "cut"
+          ],
+          "ability": "keen-eye",
+          "abilities": [
+            "keen-eye"
+          ],
+          "held": "stick"
+        },
+        {
+          "name": "plusle",
+          "level": "14",
+          "moves": [
+            "thunder-wave",
+            "thunder-shock",
+            "quick-attack",
+            "seismic-toss"
+          ],
+          "ability": "plus",
+          "abilities": [
+            "plus"
+          ],
+          "held": "magnet"
+        },
+        {
+          "name": "nidorino",
+          "level": "16",
+          "moves": [
+            "toxic",
+            "secret-power",
+            "drill-run",
+            "protect"
+          ],
+          "ability": "poison-point",
+          "abilities": [
+            "poison-point"
+          ],
+          "held": "silk-scarf"
+        },
+        {
+          "name": "chikorita",
+          "level": "15",
+          "moves": [
+            "light-screen",
+            "reflect",
+            "mega-drain",
+            "secret-power"
+          ],
+          "ability": "overgrow",
+          "abilities": [
+            "overgrow"
+          ],
+          "held": "sitrus-berry",
+          "starter": "grass"
+        },
+        {
+          "name": "squirtle",
+          "level": "15",
+          "moves": [
+            "water-gun",
+            "attract",
+            "secret-power",
+            "icy-wind"
+          ],
+          "ability": "torrent",
+          "abilities": [
+            "torrent"
+          ],
+          "held": "mystic-water",
+          "starter": "grass"
+        },
+        {
+          "name": "combusken",
+          "level": "16",
+          "moves": [
+            "ember",
+            "double-kick",
+            "rock-tomb",
+            "quick-attack"
+          ],
+          "ability": "blaze",
+          "abilities": [
+            "blaze"
+          ],
+          "held": "charcoal",
+          "starter": "grass"
+        },
+        {
+          "name": "totodile",
+          "level": "15",
+          "moves": [
+            "water-gun",
+            "bite",
+            "cut",
+            "aerial-ace"
+          ],
+          "ability": "torrent",
+          "abilities": [
+            "torrent"
+          ],
+          "held": "mystic-water",
+          "starter": "water"
+        },
+        {
+          "name": "charmander",
+          "level": "15",
+          "moves": [
+            "ember",
+            "quick-attack",
+            "bite",
+            "rock-tomb"
+          ],
+          "ability": "blaze",
+          "abilities": [
+            "blaze"
+          ],
+          "held": "charcoal",
+          "starter": "water"
+        },
+        {
+          "name": "grovyle",
+          "level": "16",
+          "moves": [
+            "mega-drain",
+            "pursuit",
+            "rock-tomb",
+            "quick-attack"
+          ],
+          "ability": "overgrow",
+          "abilities": [
+            "overgrow"
+          ],
+          "held": "miracle-seed",
+          "starter": "water"
+        },
+        {
+          "name": "bulbasaur",
+          "level": "15",
+          "moves": [
+            "mega-drain",
+            "secret-power",
+            "toxic",
+            "attract"
+          ],
+          "ability": "overgrow",
+          "abilities": [
+            "overgrow"
+          ],
+          "held": "sitrus-berry",
+          "starter": "fire"
+        },
+        {
+          "name": "quilava",
+          "level": "15",
+          "moves": [
+            "ember",
+            "quick-attack",
+            "attract",
+            "secret-power"
+          ],
+          "ability": "blaze",
+          "abilities": [
+            "blaze"
+          ],
+          "held": "charcoal",
+          "starter": "fire"
+        },
+        {
+          "name": "marshtomp",
+          "level": "16",
+          "moves": [
+            "mud-shot",
+            "water-gun",
+            "rock-tomb",
+            "secret-power"
+          ],
+          "ability": "torrent",
+          "abilities": [
+            "torrent"
+          ],
+          "held": "mystic-water",
+          "starter": "fire"
+        }
+      ]
+    },
+    "r0": {
+      "name": "May",
+      "speciality": "",
+      "img": "/leaders/rs-may",
+      "pokemon": [
+        {
+          "name": "farfetchd",
+          "level": "14",
+          "moves": [
+            "quick-attack",
+            "aerial-ace",
+            "mud-slap",
+            "cut"
+          ],
+          "ability": "keen-eye",
+          "abilities": [
+            "keen-eye"
+          ],
+          "held": "stick"
+        },
+        {
+          "name": "minun",
+          "level": "14",
+          "moves": [
+            "thunder-wave",
+            "thunder-shock",
+            "quick-attack",
+            "seismic-toss"
+          ],
+          "ability": "minus",
+          "abilities": [
+            "minus"
+          ],
+          "held": "berry-juice"
+        },
+        {
+          "name": "nidorina",
+          "level": "16",
+          "moves": [
+            "toxic",
+            "secret-power",
+            "drill-run",
+            "protect"
+          ],
+          "ability": "poison-point",
+          "abilities": [
+            "poison-point"
+          ],
+          "held": "silk-scarf"
+        },
+        {
+          "name": "chikorita",
+          "level": "15",
+          "moves": [
+            "light-screen",
+            "reflect",
+            "mega-drain",
+            "secret-power"
+          ],
+          "ability": "overgrow",
+          "abilities": [
+            "overgrow"
+          ],
+          "held": "sitrus-berry",
+          "starter": "grass"
+        },
+        {
+          "name": "squirtle",
+          "level": "15",
+          "moves": [
+            "water-gun",
+            "attract",
+            "secret-power",
+            "icy-wind"
+          ],
+          "ability": "torrent",
+          "abilities": [
+            "torrent"
+          ],
+          "held": "mystic-water",
+          "starter": "grass"
+        },
+        {
+          "name": "combusken",
+          "level": "16",
+          "moves": [
+            "ember",
+            "double-kick",
+            "rock-tomb",
+            "quick-attack"
+          ],
+          "ability": "blaze",
+          "abilities": [
+            "blaze"
+          ],
+          "held": "charcoal",
+          "starter": "grass"
+        },
+        {
+          "name": "totodile",
+          "level": "15",
+          "moves": [
+            "water-gun",
+            "bite",
+            "cut",
+            "aerial-ace"
+          ],
+          "ability": "torrent",
+          "abilities": [
+            "torrent"
+          ],
+          "held": "mystic-water",
+          "starter": "water"
+        },
+        {
+          "name": "charmander",
+          "level": "15",
+          "moves": [
+            "ember",
+            "quick-attack",
+            "bite",
+            "rock-tomb"
+          ],
+          "ability": "blaze",
+          "abilities": [
+            "blaze"
+          ],
+          "held": "charcoal",
+          "starter": "water"
+        },
+        {
+          "name": "grovyle",
+          "level": "16",
+          "moves": [
+            "mega-drain",
+            "pursuit",
+            "rock-tomb",
+            "quick-attack"
+          ],
+          "ability": "overgrow",
+          "abilities": [
+            "overgrow"
+          ],
+          "held": "miracle-seed",
+          "starter": "water"
+        },
+        {
+          "name": "bulbasaur",
+          "level": "15",
+          "moves": [
+            "mega-drain",
+            "secret-power",
+            "toxic",
+            "attract"
+          ],
+          "ability": "overgrow",
+          "abilities": [
+            "overgrow"
+          ],
+          "held": "sitrus-berry",
+          "starter": "fire"
+        },
+        {
+          "name": "quilava",
+          "level": "15",
+          "moves": [
+            "ember",
+            "quick-attack",
+            "attract",
+            "secret-power"
+          ],
+          "ability": "blaze",
+          "abilities": [
+            "blaze"
+          ],
+          "held": "charcoal",
+          "starter": "fire"
+        },
+        {
+          "name": "marshtomp",
+          "level": "16",
+          "moves": [
+            "mud-shot",
+            "water-gun",
+            "rock-tomb",
+            "secret-power"
+          ],
+          "ability": "torrent",
+          "abilities": [
+            "torrent"
+          ],
+          "held": "mystic-water",
+          "starter": "fire"
+        }
+      ]
+    },
+    "b1": {
+      "name": "Brendan",
+      "speciality": "",
+      "img": "/leaders/rs-brendan",
+      "pokemon": [
+        {
+          "name": "plusle",
+          "level": "22",
+          "moves": [
+            "headbutt",
+            "thunder-wave",
+            "wild-charge",
+            "signal-beam"
+          ],
+          "ability": "plus",
+          "abilities": [
+            "plus"
+          ]
+        },
+        {
+          "name": "pidgeotto",
+          "level": "24",
+          "moves": [
+            "steel-wing",
+            "quick-attack",
+            "secret-power",
+            "aerial-ace"
+          ],
+          "ability": "keen-eye",
+          "abilities": [
+            "keen-eye"
+          ]
+        },
+        {
+          "name": "nidorino",
+          "level": "24",
+          "moves": [
+            "body-slam",
+            "sludge-bomb",
+            "drill-run",
+            "water-pulse"
+          ],
+          "ability": "poison-point",
+          "abilities": [
+            "poison-point"
+          ]
+        },
+        {
+          "name": "bayleef",
+          "level": "24",
+          "moves": [
+            "body-slam",
+            "grass-whistle",
+            "giga-drain",
+            "synthesis"
+          ],
+          "ability": "overgrow",
+          "abilities": [
+            "overgrow"
+          ],
+          "starter": "grass"
+        },
+        {
+          "name": "wartortle",
+          "level": "25",
+          "moves": [
+            "body-slam",
+            "fake-out",
+            "water-pulse",
+            "ice-punch"
+          ],
+          "ability": "torrent",
+          "abilities": [
+            "torrent"
+          ],
+          "starter": "grass"
+        },
+        {
+          "name": "combusken",
+          "level": "26",
+          "moves": [
+            "bulk-up",
+            "fire-punch",
+            "rock-slide",
+            "brick-break"
+          ],
+          "ability": "blaze",
+          "abilities": [
+            "blaze"
+          ],
+          "starter": "grass"
+        },
+        {
+          "name": "quilava",
+          "level": "24",
+          "moves": [
+            "iron-tail",
+            "attract",
+            "flame-wheel",
+            "body-slam"
+          ],
+          "ability": "blaze",
+          "abilities": [
+            "blaze"
+          ],
+          "starter": "fire"
+        },
+        {
+          "name": "ivysaur",
+          "level": "25",
+          "moves": [
+            "body-slam",
+            "attract",
+            "sludge-bomb",
+            "giga-drain"
+          ],
+          "ability": "overgrow",
+          "abilities": [
+            "overgrow"
+          ],
+          "starter": "fire"
+        },
+        {
+          "name": "marshtomp",
+          "level": "26",
+          "moves": [
+            "body-slam",
+            "attract",
+            "mud-shot",
+            "water-pulse"
+          ],
+          "ability": "torrent",
+          "abilities": [
+            "torrent"
+          ],
+          "starter": "fire"
+        },
+        {
+          "name": "croconaw",
+          "level": "24",
+          "moves": [
+            "body-slam",
+            "attract",
+            "waterfall",
+            "aerial-ace"
+          ],
+          "ability": "torrent",
+          "abilities": [
+            "torrent"
+          ],
+          "starter": "water"
+        },
+        {
+          "name": "charmeleon",
+          "level": "25",
+          "moves": [
+            "quick-attack",
+            "fire-punch",
+            "dragon-claw",
+            "brick-break"
+          ],
+          "ability": "blaze",
+          "abilities": [
+            "blaze"
+          ],
+          "starter": "water"
+        },
+        {
+          "name": "grovyle",
+          "level": "26",
+          "moves": [
+            "headbutt",
+            "giga-drain",
+            "quick-attack",
+            "pursuit"
+          ],
+          "ability": "overgrow",
+          "abilities": [
+            "overgrow"
+          ],
+          "starter": "water"
+        }
+      ]
+    },
+    "r1": {
+      "name": "May",
+      "speciality": "",
+      "img": "/leaders/rs-may",
+      "pokemon": [
+        {
+          "name": "minun",
+          "level": "22",
+          "moves": [
+            "signal-beam",
+            "attract",
+            "thunder-wave",
+            "thunderbolt"
+          ],
+          "ability": "minus",
+          "abilities": [
+            "minus"
+          ]
+        },
+        {
+          "name": "pidgeotto",
+          "level": "24",
+          "moves": [
+            "aerial-ace",
+            "quick-attack",
+            "secret-power",
+            "steel-wing"
+          ],
+          "ability": "keen-eye",
+          "abilities": [
+            "keen-eye"
+          ]
+        },
+        {
+          "name": "nidorina",
+          "level": "24",
+          "moves": [
+            "body-slam",
+            "drill-run",
+            "sludge-bomb",
+            "shadow-ball"
+          ],
+          "ability": "poison-point",
+          "abilities": [
+            "poison-point"
+          ]
+        },
+        {
+          "name": "bayleef",
+          "level": "24",
+          "moves": [
+            "body-slam",
+            "grass-whistle",
+            "giga-drain",
+            "synthesis"
+          ],
+          "ability": "overgrow",
+          "abilities": [
+            "overgrow"
+          ],
+          "starter": "grass"
+        },
+        {
+          "name": "wartortle",
+          "level": "25",
+          "moves": [
+            "body-slam",
+            "fake-out",
+            "water-pulse",
+            "ice-punch"
+          ],
+          "ability": "torrent",
+          "abilities": [
+            "torrent"
+          ],
+          "starter": "grass"
+        },
+        {
+          "name": "combusken",
+          "level": "26",
+          "moves": [
+            "bulk-up",
+            "fire-punch",
+            "rock-slide",
+            "brick-break"
+          ],
+          "ability": "blaze",
+          "abilities": [
+            "blaze"
+          ],
+          "starter": "grass"
+        },
+        {
+          "name": "quilava",
+          "level": "24",
+          "moves": [
+            "iron-tail",
+            "attract",
+            "flame-wheel",
+            "body-slam"
+          ],
+          "ability": "blaze",
+          "abilities": [
+            "blaze"
+          ],
+          "starter": "fire"
+        },
+        {
+          "name": "ivysaur",
+          "level": "25",
+          "moves": [
+            "body-slam",
+            "attract",
+            "sludge-bomb",
+            "giga-drain"
+          ],
+          "ability": "overgrow",
+          "abilities": [
+            "overgrow"
+          ],
+          "starter": "fire"
+        },
+        {
+          "name": "marshtomp",
+          "level": "26",
+          "moves": [
+            "body-slam",
+            "attract",
+            "mud-shot",
+            "water-pulse"
+          ],
+          "ability": "torrent",
+          "abilities": [
+            "torrent"
+          ],
+          "starter": "fire"
+        },
+        {
+          "name": "croconaw",
+          "level": "24",
+          "moves": [
+            "body-slam",
+            "attract",
+            "waterfall",
+            "aerial-ace"
+          ],
+          "ability": "torrent",
+          "abilities": [
+            "torrent"
+          ],
+          "starter": "water"
+        },
+        {
+          "name": "charmeleon",
+          "level": "25",
+          "moves": [
+            "quick-attack",
+            "fire-punch",
+            "dragon-claw",
+            "brick-break"
+          ],
+          "ability": "blaze",
+          "abilities": [
+            "blaze"
+          ],
+          "starter": "water"
+        },
+        {
+          "name": "grovyle",
+          "level": "26",
+          "moves": [
+            "headbutt",
+            "giga-drain",
+            "quick-attack",
+            "pursuit"
+          ],
+          "ability": "overgrow",
+          "abilities": [
+            "overgrow"
+          ],
+          "starter": "water"
+        }
+      ]
+    },
+    "r2": {
+      "name": "May",
+      "speciality": "",
+      "img": "/leaders/rs-may",
+      "pokemon": [
+        {
+          "name": "raichu",
+          "level": "50",
+          "moves": [
+            "thunder",
+            "surf",
+            "signal-beam",
+            "rain-dance"
+          ],
+          "ability": "static",
+          "abilities": [
+            "static"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "clefable",
+          "level": "50",
+          "moves": [
+            "thunder",
+            "hp-water",
+            "body-slam",
+            "ice-beam"
+          ],
+          "ability": "cute-charm",
+          "abilities": [
+            "cute-charm"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "nidoqueen",
+          "level": "50",
+          "moves": [
+            "earthquake",
+            "poison-tail",
+            "thunder",
+            "surf"
+          ],
+          "ability": "poison-point",
+          "abilities": [
+            "poison-point"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "meganium",
+          "level": "50",
+          "moves": [
+            "giga-drain",
+            "earthquake",
+            "ancient-power",
+            "synthesis"
+          ],
+          "ability": "overgrow",
+          "abilities": [
+            "overgrow"
+          ],
+          "held": "lum-berry",
+          "starter": "grass"
+        },
+        {
+          "name": "blastoise",
+          "level": "50",
+          "moves": [
+            "water-spout",
+            "mirror-coat",
+            "ice-beam",
+            "hp-electric"
+          ],
+          "ability": "torrent",
+          "abilities": [
+            "torrent"
+          ],
+          "held": "lum-berry",
+          "starter": "grass"
+        },
+        {
+          "name": "swampert",
+          "level": "50",
+          "moves": [
+            "muddy-water",
+            "earthquake",
+            "ice-beam",
+            "attract"
+          ],
+          "ability": "swift-swim",
+          "abilities": [
+            "swift-swim"
+          ],
+          "held": "lum-berry",
+          "starter": "fire"
+        },
+        {
+          "name": "venusaur",
+          "level": "50",
+          "moves": [
+            "sleep-powder",
+            "giga-drain",
+            "earthquake",
+            "ancient-power"
+          ],
+          "ability": "chlorophyll",
+          "abilities": [
+            "chlorophyll"
+          ],
+          "held": "lum-berry",
+          "starter": "fire"
+        },
+        {
+          "name": "feraligatr",
+          "level": "50",
+          "moves": [
+            "hydro-pump",
+            "ice-beam",
+            "earthquake",
+            "hp-electric"
+          ],
+          "ability": "torrent",
+          "abilities": [
+            "torrent"
+          ],
+          "held": "lum-berry",
+          "starter": "water"
+        },
+        {
+          "name": "sceptile",
+          "level": "50",
+          "moves": [
+            "leaf-blade",
+            "hp-water",
+            "thunder-punch",
+            "dragon-claw"
+          ],
+          "ability": "overgrow",
+          "abilities": [
+            "overgrow"
+          ],
+          "held": "lum-berry",
+          "starter": "water"
+        }
+      ]
+    },
+    "b2": {
+      "name": "Brendan",
+      "speciality": "",
+      "img": "/leaders/rs-brendan",
+      "pokemon": [
+        {
+          "name": "raichu",
+          "level": "50",
+          "moves": [
+            "thunder",
+            "surf",
+            "signal-beam",
+            "rain-dance"
+          ],
+          "ability": "static",
+          "abilities": [
+            "static"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "porygon2",
+          "level": "50",
+          "moves": [
+            "tri-attack",
+            "thunder",
+            "hp-water",
+            "recover"
+          ],
+          "ability": "download",
+          "abilities": [
+            "download"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "nidoking",
+          "level": "50",
+          "moves": [
+            "thunder",
+            "surf",
+            "earthquake",
+            "poison-tail"
+          ],
+          "ability": "poison-point",
+          "abilities": [
+            "poison-point"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "meganium",
+          "level": "50",
+          "moves": [
+            "giga-drain",
+            "earthquake",
+            "ancient-power",
+            "synthesis"
+          ],
+          "ability": "overgrow",
+          "abilities": [
+            "overgrow"
+          ],
+          "held": "lum-berry",
+          "starter": "grass"
+        },
+        {
+          "name": "blastoise",
+          "level": "50",
+          "moves": [
+            "water-spout",
+            "mirror-coat",
+            "ice-beam",
+            "hp-electric"
+          ],
+          "ability": "torrent",
+          "abilities": [
+            "torrent"
+          ],
+          "held": "lum-berry",
+          "starter": "grass"
+        },
+        {
+          "name": "swampert",
+          "level": "50",
+          "moves": [
+            "muddy-water",
+            "earthquake",
+            "ice-beam",
+            "attract"
+          ],
+          "ability": "swift-swim",
+          "abilities": [
+            "swift-swim"
+          ],
+          "held": "lum-berry",
+          "starter": "fire"
+        },
+        {
+          "name": "venusaur",
+          "level": "50",
+          "moves": [
+            "sleep-powder",
+            "giga-drain",
+            "earthquake",
+            "ancient-power"
+          ],
+          "ability": "chlorophyll",
+          "abilities": [
+            "chlorophyll"
+          ],
+          "held": "lum-berry",
+          "starter": "fire"
+        },
+        {
+          "name": "feraligatr",
+          "level": "50",
+          "moves": [
+            "hydro-pump",
+            "ice-beam",
+            "earthquake",
+            "hp-electric"
+          ],
+          "ability": "torrent",
+          "abilities": [
+            "torrent"
+          ],
+          "held": "lum-berry",
+          "starter": "water"
+        },
+        {
+          "name": "sceptile",
+          "level": "50",
+          "moves": [
+            "leaf-blade",
+            "hp-water",
+            "thunder-punch",
+            "dragon-claw"
+          ],
+          "ability": "overgrow",
+          "abilities": [
+            "overgrow"
+          ],
+          "held": "lum-berry",
+          "starter": "water"
+        }
+      ]
+    },
+    "r3": {
+      "name": "May",
+      "speciality": "",
+      "img": "/leaders/rs-may",
+      "pokemon": [
+        {
+          "name": "miltank",
+          "level": "59",
+          "moves": [
+            "earthquake",
+            "milk-drink",
+            "shadow-ball",
+            "body-slam"
+          ],
+          "ability": "thick-fat",
+          "abilities": [
+            "thick-fat"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "ampharos",
+          "level": "59",
+          "moves": [
+            "thunder-wave",
+            "thunderbolt",
+            "fire-punch",
+            "hp-water"
+          ],
+          "ability": "static",
+          "abilities": [
+            "static"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "nidoqueen",
+          "level": "59",
+          "moves": [
+            "earthquake",
+            "shadow-ball",
+            "superpower",
+            "poison-fang"
+          ],
+          "ability": "poison-point",
+          "abilities": [
+            "poison-point"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "typhlosion",
+          "level": "59",
+          "moves": [
+            "earthquake",
+            "overheat",
+            "hp-grass",
+            "thunder-punch"
+          ],
+          "ability": "blaze",
+          "abilities": [
+            "blaze"
+          ],
+          "held": "lum-berry",
+          "starter": "fire"
+        },
+        {
+          "name": "venusaur",
+          "level": "59",
+          "moves": [
+            "earthquake",
+            "giga-drain",
+            "sleep-powder",
+            "ancient-power"
+          ],
+          "ability": "chlorophyll",
+          "abilities": [
+            "chlorophyll"
+          ],
+          "held": "lum-berry",
+          "starter": "fire"
+        },
+        {
+          "name": "swampert",
+          "level": "60",
+          "moves": [
+            "earthquake",
+            "muddy-water",
+            "ice-beam",
+            "sludge-bomb"
+          ],
+          "ability": "swift-swim",
+          "abilities": [
+            "swift-swim"
+          ],
+          "held": "lum-berry",
+          "starter": "fire"
+        },
+        {
+          "name": "meganium",
+          "level": "59",
+          "moves": [
+            "grass-whistle",
+            "earthquake",
+            "ancient-power",
+            "giga-drain"
+          ],
+          "ability": "overgrow",
+          "abilities": [
+            "overgrow"
+          ],
+          "held": "lum-berry",
+          "starter": "grass"
+        },
+        {
+          "name": "blastoise",
+          "level": "59",
+          "moves": [
+            "water-spout",
+            "hp-electric",
+            "ice-beam",
+            "mirror-coat"
+          ],
+          "ability": "torrent",
+          "abilities": [
+            "torrent"
+          ],
+          "held": "lum-berry",
+          "starter": "grass"
+        },
+        {
+          "name": "blaziken",
+          "level": "60",
+          "moves": [
+            "overheat",
+            "superpower",
+            "thunder-punch",
+            "rock-slide"
+          ],
+          "ability": "blaze",
+          "abilities": [
+            "blaze"
+          ],
+          "held": "lum-berry",
+          "starter": "grass"
+        },
+        {
+          "name": "feraligatr",
+          "level": "59",
+          "moves": [
+            "earthquake",
+            "hydro-pump",
+            "hp-flying",
+            "ancient-power"
+          ],
+          "abilities": [
+            ""
+          ],
+          "held": "lum-berry",
+          "starter": "water"
+        },
+        {
+          "name": "charizard",
+          "level": "59",
+          "moves": [
+            "heat-wave",
+            "dragon-dance",
+            "earthquake",
+            "air-slash"
+          ],
+          "abilities": [
+            ""
+          ],
+          "held": "lum-berry",
+          "starter": "water"
+        },
+        {
+          "name": "sceptile",
+          "level": "60",
+          "moves": [
+            "giga-drain",
+            "thunder-punch",
+            "earthquake",
+            "dragon-claw"
+          ],
+          "abilities": [
+            ""
+          ],
+          "held": "lum-berry",
+          "starter": "water"
+        }
+      ]
+    },
+    "b3": {
+      "name": "Brendan",
+      "speciality": "",
+      "img": "/leaders/rs-brendan",
+      "pokemon": [
+        {
+          "name": "tauros",
+          "level": "59",
+          "moves": [
+            "double-edge",
+            "earthquake",
+            "hp-ghost",
+            "iron-tail"
+          ],
+          "ability": "intimidate",
+          "abilities": [
+            "intimidate"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "ampharos",
+          "level": "59",
+          "moves": [
+            "thunder-wave",
+            "thunderbolt",
+            "fire-punch",
+            "hp-ice"
+          ],
+          "ability": "static",
+          "abilities": [
+            "static"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "nidoking",
+          "level": "59",
+          "moves": [
+            "earthquake",
+            "shadow-ball",
+            "poison-tail",
+            "ice-beam"
+          ],
+          "ability": "poison-point",
+          "abilities": [
+            "poison-point"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "typhlosion",
+          "level": "59",
+          "moves": [
+            "earthquake",
+            "overheat",
+            "hp-grass",
+            "thunder-punch"
+          ],
+          "ability": "blaze",
+          "abilities": [
+            "blaze"
+          ],
+          "held": "lum-berry",
+          "starter": "fire"
+        },
+        {
+          "name": "venusaur",
+          "level": "59",
+          "moves": [
+            "earthquake",
+            "giga-drain",
+            "sleep-powder",
+            "ancient-power"
+          ],
+          "ability": "chlorophyll",
+          "abilities": [
+            "chlorophyll"
+          ],
+          "held": "lum-berry",
+          "starter": "fire"
+        },
+        {
+          "name": "swampert",
+          "level": "60",
+          "moves": [
+            "earthquake",
+            "muddy-water",
+            "ice-beam",
+            "sludge-bomb"
+          ],
+          "ability": "swift-swim",
+          "abilities": [
+            "swift-swim"
+          ],
+          "held": "lum-berry",
+          "starter": "fire"
+        },
+        {
+          "name": "meganium",
+          "level": "59",
+          "moves": [
+            "grass-whistle",
+            "earthquake",
+            "ancient-power",
+            "giga-drain"
+          ],
+          "ability": "overgrow",
+          "abilities": [
+            "overgrow"
+          ],
+          "held": "lum-berry",
+          "starter": "grass"
+        },
+        {
+          "name": "blastoise",
+          "level": "59",
+          "moves": [
+            "water-spout",
+            "hp-electric",
+            "ice-beam",
+            "mirror-coat"
+          ],
+          "ability": "torrent",
+          "abilities": [
+            "torrent"
+          ],
+          "held": "lum-berry",
+          "starter": "grass"
+        },
+        {
+          "name": "blaziken",
+          "level": "60",
+          "moves": [
+            "overheat",
+            "superpower",
+            "thunder-punch",
+            "rock-slide"
+          ],
+          "ability": "blaze",
+          "abilities": [
+            "blaze"
+          ],
+          "held": "lum-berry",
+          "starter": "grass"
+        },
+        {
+          "name": "feraligatr",
+          "level": "59",
+          "moves": [
+            "earthquake",
+            "hydro-pump",
+            "hp-flying",
+            "ancient-power"
+          ],
+          "abilities": [
+            ""
+          ],
+          "held": "lum-berry",
+          "starter": "water"
+        },
+        {
+          "name": "charizard",
+          "level": "59",
+          "moves": [
+            "heat-wave",
+            "dragon-dance",
+            "earthquake",
+            "air-slash"
+          ],
+          "abilities": [
+            ""
+          ],
+          "held": "lum-berry",
+          "starter": "water"
+        },
+        {
+          "name": "sceptile",
+          "level": "60",
+          "moves": [
+            "giga-drain",
+            "thunder-punch",
+            "earthquake",
+            "dragon-claw"
+          ],
+          "abilities": [
+            ""
+          ],
+          "held": "lum-berry",
+          "starter": "water"
+        }
+      ]
+    },
+    "8a": {
+      "name": "Wallace",
+      "speciality": "water",
+      "img": "/leaders/rs-wallace",
+      "pokemon": [
+        {
+          "name": "kingdra",
+          "level": "76",
+          "moves": [
+            "octazooka",
+            "ice-beam",
+            "draco-meteor",
+            "hp-ground"
+          ],
+          "ability": "swift-swim",
+          "abilities": [
+            "swift-swim"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "castform",
+          "level": "76",
+          "moves": [
+            "thunder",
+            "ice-beam",
+            "weather-ball",
+            "hp-grass"
+          ],
+          "ability": "forecast",
+          "abilities": [
+            "forecast"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "ludicolo",
+          "level": "76",
+          "moves": [
+            "surf",
+            "ice-beam",
+            "grass-whistle",
+            "giga-drain"
+          ],
+          "ability": "swift-swim",
+          "abilities": [
+            "swift-swim"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "swampert",
+          "level": "77",
+          "moves": [
+            "yawn",
+            "earthquake",
+            "ancient-power",
+            "muddy-water"
+          ],
+          "ability": "swift-swim",
+          "abilities": [
+            "swift-swim"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "lapras",
+          "level": "76",
+          "moves": [
+            "thunder",
+            "ice-beam",
+            "surf",
+            "hp-bug"
+          ],
+          "ability": "shell-armor",
+          "abilities": [
+            "shell-armor"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "milotic",
+          "level": "77",
+          "moves": [
+            "hypnosis",
+            "ice-beam",
+            "surf",
+            "recover"
+          ],
+          "ability": "swift-swim",
+          "abilities": [
+            "swift-swim"
+          ],
+          "held": "lum-berry"
+        }
+      ]
+    },
+    "8b": {
+      "name": "Juan",
+      "speciality": "water",
+      "img": "/leaders/rs-juan",
+      "pokemon": [
+        {
+          "name": "kingdra",
+          "level": "77",
+          "moves": [
+            "octazooka",
+            "ice-beam",
+            "draco-meteor",
+            "hp-ground"
+          ],
+          "ability": "swift-swim",
+          "abilities": [
+            "swift-swim"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "lapras",
+          "level": "76",
+          "moves": [
+            "hydro-pump",
+            "ice-beam",
+            "thunder",
+            "hp-grass"
+          ],
+          "ability": "shell-armor",
+          "abilities": [
+            "shell-armor"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "castform",
+          "level": "76",
+          "moves": [
+            "weather-ball",
+            "ice-beam",
+            "thunder",
+            "hp-grass"
+          ],
+          "ability": "forecast",
+          "abilities": [
+            "forecast"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "lanturn",
+          "level": "77",
+          "moves": [
+            "hydro-pump",
+            "ice-beam",
+            "thunder",
+            "hp-grass"
+          ],
+          "ability": "volt-absorb",
+          "abilities": [
+            "volt-absorb"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "ludicolo",
+          "level": "76",
+          "moves": [
+            "hydro-pump",
+            "ice-beam",
+            "thunder-punch",
+            "giga-drain"
+          ],
+          "ability": "swift-swim",
+          "abilities": [
+            "swift-swim"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "vaporeon",
+          "level": "77",
+          "moves": [
+            "hydro-pump",
+            "ice-beam",
+            "sing",
+            "hp-grass"
+          ],
+          "ability": "swift-swim",
+          "abilities": [
+            "swift-swim"
+          ],
+          "held": "lum-berry"
+        }
+      ]
+    },
+    "e1": {
+      "name": "Sidney",
+      "speciality": "dark",
+      "img": "/leaders/rs-sidney",
+      "pokemon": [
+        {
+          "name": "sableye",
+          "level": "100",
+          "moves": [
+            "shadow-sneak",
+            "shadow-ball",
+            "brick-break",
+            "hp-rock"
+          ],
+          "ability": "pressure",
+          "abilities": [
+            "pressure"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "jolteon",
+          "level": "100",
+          "moves": [
+            "thunderbolt",
+            "bite",
+            "hp-grass",
+            "signal-beam"
+          ],
+          "ability": "static",
+          "abilities": [
+            "static"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "tauros",
+          "level": "100",
+          "moves": [
+            "double-edge",
+            "earthquake",
+            "hp-ghost",
+            "quick-attack"
+          ],
+          "ability": "intimidate",
+          "abilities": [
+            "intimidate"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "alakazam",
+          "level": "100",
+          "moves": [
+            "psychic",
+            "fire-punch",
+            "hp-water",
+            "thunder-punch"
+          ],
+          "ability": "synchronize",
+          "abilities": [
+            "synchronize"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "machamp",
+          "level": "100",
+          "moves": [
+            "superpower",
+            "earthquake",
+            "hp-ghost",
+            "rock-slide"
+          ],
+          "ability": "guts",
+          "abilities": [
+            "guts"
+          ],
+          "held": "chesto-berry"
+        },
+        {
+          "name": "houndoom",
+          "level": "100",
+          "moves": [
+            "heat-wave",
+            "crunch",
+            "hp-grass",
+            "pursuit"
+          ],
+          "ability": "intimidate",
+          "abilities": [
+            "intimidate"
+          ],
+          "held": "lum-berry"
+        }
+      ]
+    },
+    "e2": {
+      "name": "Phoebe",
+      "speciality": "ghost",
+      "img": "/leaders/rs-phoebe",
+      "pokemon": [
+        {
+          "name": "gengar",
+          "level": "100",
+          "moves": [
+            "hypnosis",
+            "destiny-bond",
+            "thunderbolt",
+            "ice-punch"
+          ],
+          "ability": "levitate",
+          "abilities": [
+            "levitate"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "ludicolo",
+          "level": "100",
+          "moves": [
+            "grass-whistle",
+            "giga-drain",
+            "ice-beam",
+            "surf"
+          ],
+          "ability": "swift-swim",
+          "abilities": [
+            "swift-swim"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "crobat",
+          "level": "100",
+          "moves": [
+            "hypnosis",
+            "air-slash",
+            "heat-wave",
+            "hp-ground"
+          ],
+          "ability": "inner-focus",
+          "abilities": [
+            "inner-focus"
+          ],
+          "held": "leftovers"
+        },
+        {
+          "name": "gardevoir",
+          "level": "100",
+          "moves": [
+            "thunder-wave",
+            "psychic",
+            "thunderbolt",
+            "fire-punch"
+          ],
+          "ability": "synchronize",
+          "abilities": [
+            "synchronize"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "sableye",
+          "level": "100",
+          "moves": [
+            "double-team",
+            "recover",
+            "shadow-ball",
+            "brick-break"
+          ],
+          "ability": "pressure",
+          "abilities": [
+            "pressure"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "dusclops",
+          "level": "100",
+          "moves": [
+            "double-team",
+            "rest",
+            "shadow-ball",
+            "brick-break"
+          ],
+          "ability": "pressure",
+          "abilities": [
+            "pressure"
+          ],
+          "held": "lum-berry"
+        }
+      ]
+    },
+    "e3": {
+      "name": "Glacia",
+      "speciality": "ice",
+      "img": "/leaders/rs-glacia",
+      "pokemon": [
+        {
+          "name": "glalie",
+          "level": "100",
+          "moves": [
+            "weather-ball",
+            "ice-beam",
+            "spikes",
+            "explosion"
+          ],
+          "ability": "intimidate",
+          "abilities": [
+            "intimidate"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "wailord",
+          "level": "100",
+          "moves": [
+            "hyper-voice",
+            "water-spout",
+            "amnesia",
+            "self-destruct"
+          ],
+          "ability": "pressure",
+          "abilities": [
+            "pressure"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "regice",
+          "level": "100",
+          "moves": [
+            "counter",
+            "ice-beam",
+            "thunder",
+            "explosion"
+          ],
+          "ability": "clear-body",
+          "abilities": [
+            "clear-body"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "dewgong",
+          "level": "100",
+          "moves": [
+            "drill-run",
+            "ice-beam",
+            "hp-grass",
+            "surf"
+          ],
+          "ability": "swift-swim",
+          "abilities": [
+            "swift-swim"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "swampert",
+          "level": "100",
+          "moves": [
+            "yawn",
+            "ancient-power",
+            "muddy-water",
+            "earthquake"
+          ],
+          "ability": "swift-swim",
+          "abilities": [
+            "swift-swim"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "lapras",
+          "level": "100",
+          "moves": [
+            "ice-shard",
+            "ice-beam",
+            "thunder",
+            "hydro-pump"
+          ],
+          "ability": "shell-armor",
+          "abilities": [
+            "shell-armor"
+          ],
+          "held": "lum-berry"
+        }
+      ]
+    },
+    "e4": {
+      "name": "Drake",
+      "speciality": "dragon",
+      "img": "/leaders/rs-drake",
+      "pokemon": [
+        {
+          "name": "latios",
+          "level": "100",
+          "moves": [
+            "draco-meteor",
+            "luster-purge",
+            "hp-fire",
+            "recover"
+          ],
+          "ability": "levitate",
+          "abilities": [
+            "levitate"
+          ],
+          "held": "soul-dew"
+        },
+        {
+          "name": "tyranitar",
+          "level": "100",
+          "moves": [
+            "dragon-dance",
+            "ancient-power",
+            "earthquake",
+            "hp-bug"
+          ],
+          "ability": "intimidate",
+          "abilities": [
+            "intimidate"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "salamence",
+          "level": "100",
+          "moves": [
+            "draco-meteor",
+            "air-slash",
+            "earthquake",
+            "flamethrower"
+          ],
+          "ability": "intimidate",
+          "abilities": [
+            "intimidate"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "kingdra",
+          "level": "100",
+          "moves": [
+            "draco-meteor",
+            "octazooka",
+            "ice-beam",
+            "hp-fighting"
+          ],
+          "ability": "swift-swim",
+          "abilities": [
+            "swift-swim"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "dragonite",
+          "level": "100",
+          "moves": [
+            "dragon-dance",
+            "extreme-speed",
+            "earthquake",
+            "rock-slide"
+          ],
+          "ability": "thick-fat",
+          "abilities": [
+            "thick-fat"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "latias",
+          "level": "100",
+          "moves": [
+            "calm-mind",
+            "dragon-claw",
+            "recover",
+            "hp-fire"
+          ],
+          "ability": "levitate",
+          "abilities": [
+            "levitate"
+          ],
+          "held": "soul-dew"
+        }
+      ]
+    },
+    "c": {
+      "name": "Steven",
+      "speciality": "rock",
+      "img": "/leaders/rs-steven",
+      "pokemon": [
+        {
+          "name": "metagross",
+          "level": "100",
+          "moves": [
+            "agility",
+            "meteor-mash",
+            "earthquake",
+            "explosion"
+          ],
+          "ability": "clear-body",
+          "abilities": [
+            "clear-body"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "starmie",
+          "level": "100",
+          "moves": [
+            "psychic",
+            "hydro-pump",
+            "thunderbolt",
+            "ice-beam"
+          ],
+          "ability": "natural-cure",
+          "abilities": [
+            "natural-cure"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "jirachi",
+          "level": "100",
+          "moves": [
+            "meteor-mash",
+            "extrasensory",
+            "thunderbolt",
+            "fire-punch"
+          ],
+          "ability": "serene-grace",
+          "abilities": [
+            "serene-grace"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "mewtwo",
+          "level": "100",
+          "moves": [
+            "psychic",
+            "shadow-ball",
+            "brick-break",
+            "flamethrower"
+          ],
+          "ability": "pressure",
+          "abilities": [
+            "pressure"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "aerodactyl",
+          "level": "100",
+          "moves": [
+            "sky-attack",
+            "ancient-power",
+            "earthquake",
+            "flamethrower"
+          ],
+          "ability": "rock-head",
+          "abilities": [
+            "rock-head"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "deoxys-attack",
+          "level": "100",
+          "moves": [
+            "psycho-boost",
+            "superpower",
+            "shadow-ball",
+            "fire-punch"
+          ],
+          "ability": "pressure",
+          "abilities": [
+            "pressure"
+          ],
+          "held": "lum-berry"
+        }
+      ]
+    }
+  },
   "frlg": {
     "1": {
       "name": "Brock",

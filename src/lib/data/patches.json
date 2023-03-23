@@ -1873,7 +1873,7 @@
       "extreme-speed": {
         "power": "100"
       },
-      "ancientpower": {
+      "ancient-power": {
         "power": "80"
       },
       "spit-up": {
@@ -1939,7 +1939,79 @@
       },
       "psycho-boost": {
         "power": "140",
-        "effect": "Deals ⅓ damage as recoil to the user"
+        "effect": "Deals ¼ damage as recoil to the user"
+      },
+      "hp-bug": {
+        "power": "60",
+        "type": "bug",
+        "category": "special",
+        "locale": "Hidden Power"
+      },
+      "hp-electric": {
+        "power": "60",
+        "type": "electric",
+        "category": "special",
+        "locale": "Hidden Power"
+      },
+      "hp-fighting": {
+        "power": "60",
+        "type": "fighting",
+        "category": "special",
+        "locale": "Hidden Power"
+      },
+      "hp-fire": {
+        "power": "60",
+        "type": "fire",
+        "category": "special",
+        "locale": "Hidden Power"
+      },
+      "hp-flying": {
+        "power": "60",
+        "type": "flying",
+        "category": "special",
+        "locale": "Hidden Power"
+      },
+      "hp-ghost": {
+        "power": "60",
+        "type": "ghost",
+        "category": "special",
+        "locale": "Hidden Power"
+      },
+      "hp-grass": {
+        "power": "60",
+        "type": "grass",
+        "category": "special",
+        "locale": "Hidden Power"
+      },
+      "hp-ground": {
+        "power": "60",
+        "type": "ground",
+        "category": "special",
+        "locale": "Hidden Power"
+      },
+      "hp-ice": {
+        "power": "60",
+        "type": "ice",
+        "category": "special",
+        "locale": "Hidden Power"
+      },
+      "hp-psychic": {
+        "power": "60",
+        "type": "psychic",
+        "category": "special",
+        "locale": "Hidden Power"
+      },
+      "hp-rock": {
+        "power": "60",
+        "type": "rock",
+        "category": "special",
+        "locale": "Hidden Power"
+      },
+      "hp-water": {
+        "power": "60",
+        "type": "water",
+        "category": "special",
+        "locale": "Hidden Power"
       }
     }
   },
