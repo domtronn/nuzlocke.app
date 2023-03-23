@@ -13,6 +13,8 @@
   import { activeGame, getGame, read, savedGames, parse } from '$lib/store'
   import { Loader, Toggle } from '$c/core'
 
+  import { IMG } from '$utils/rewrites'
+
   let ready
   onMount(() => ready = true)
 
@@ -66,7 +68,7 @@
       </div>
       </div>
 
-      {#if showAudio}<Audio src=/audio/lavender.mp3 />{/if}
+      {#if showAudio}<Audio src="{IMG}/audio/lavender.mp3" />{/if}
       {#if showFog}<Fog />{/if}
     {/if}
   </div>
