@@ -15,6 +15,7 @@ const IGame = z.object({
 
 const IDeath = z.object({
     type: EDeath,
+    time: z.optional(z.number()),
     custom: z.optional(z.boolean()),
     epitaph: z.string(),
     lvl: z.optional(z.object({
