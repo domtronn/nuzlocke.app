@@ -75,7 +75,7 @@
         <GraveRow {i} maxRows={chunked.length}>
           {#each row as p, j}
             <div class='flex {j % 2 ? 'flex-row-reverse' : 'flex-row'} items-center justify-between max-sm:px-6 max-sm:mt-10 md:inline-block'
-                 in:fade={{ duration: 800, delay: (300 * ((i * chunkSize) + j)) + 1000 }}
+                 in:fade={{ duration: 800, delay: (3000 / graveyard.length) * ((i * chunkSize) + j) + 1000 }}
                  >
               <Grave {...p} i={(i * chunkSize) + j} className='row--{i}' />
             </div>
