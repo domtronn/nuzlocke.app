@@ -33,7 +33,6 @@
     content.focus()
   }
 
-
   const tabs = [
     { label: 'Random', val: ELossType.Random },
     { label: 'Dramatic', val: ELossType.Dramatic },
@@ -44,7 +43,9 @@
 
   export let content, editor, category, text
 
-  $: text = format(base, { ...ctx, nickname, pokemon })
+
+
+  $: if (!custom) text = format(base, { ...ctx, nickname, pokemon })
 
   let prevCategory
   $: {

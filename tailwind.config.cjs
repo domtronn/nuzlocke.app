@@ -26,7 +26,7 @@ const config = {
       },
       dropShadow: {
         text: '2px 2px 0 rgba(0, 0, 0, 0.9)',
-        grave: '1px 1px 0 rgba(0, 0, 0, 0.2)',
+        grave: '1px 1px 0 rgba(0, 0, 0, 0.5)',
       },
       scale: {
         200: '2',
