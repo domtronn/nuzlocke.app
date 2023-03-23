@@ -1,15 +1,16 @@
 <script>
   export let pokemon, nickname = '', death, i, graveid
 
-  import { getContext } from 'svelte'
-
-  import { Tooltip, Picture } from '$c/core'
   import { capitalise } from '$lib/utils/string'
-
-  import { format } from '$c/DeathModal/prose'
-
   import { IMG, createImgUrl } from '$utils/rewrites'
 
+  import { format } from '$c/DeathModal/prose'
+  import { Tooltip, Picture } from '$c/core'
+
+  import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
+  import { Quote } from '$icons'
+
+  import { getContext } from 'svelte'
   const { getPkmn } = getContext('game')
 
   let Pokemon
@@ -59,7 +60,9 @@
 </div>
 
 {#if death?.epitaph}
-  <p class='sm:hidden w-[20ch]'>
+  <p class='sm:hidden w-[20ch] p-3 bg-gray-200 dark:bg-gray-700 rounded-lg leading-5 relative'>
+    <Icon size={48} class='absolute -top-1 -left-1 scale-200' inline={true} icon={Quote} />
+    <Icon size={48} class='absolute scale-150 rotate-180 -bottom-1 -right-1' inline={true} icon={Quote} />
     {format(death.epitaph, { pokemon:{name:capitalise(pokemon)}, nickname, ...death })}
   </p>
 {/if}
@@ -77,7 +80,7 @@
     @apply transition-all;
   }
 
-  .pkmn { @apply top-0 translate-y-1/2 md:translate-y-6 -mt-3 z-20 grayscale; }
+  .pkmn { @apply top-0 translate-y-6 -mt-3 z-20 grayscale; }
   :global(.tombstone) { @apply w-full absolute left-0; filter: grayscale(0.8) contrast(0.7) brightness(0.8); }
 
   :global(.tombstone.tombstone--1) {@apply mt-8 ml-1 -skew-x-3; }

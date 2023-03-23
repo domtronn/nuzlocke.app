@@ -59,6 +59,8 @@ export { default as Save } from '@iconify-icons/ph/floppy-disk';
 export { default as QR } from '@iconify-icons/gg/qr';
 export { default as QRCode } from '@iconify-icons/ri/qr-code-fill';
 
+export { default as Quote } from '@iconify-icons/ri/double-quotes-l'
+
 export { default as Dice } from '@iconify-icons/mdi/dice-multiple-outline'
 
 // UI Icons - Route types

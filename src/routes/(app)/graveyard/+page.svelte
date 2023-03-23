@@ -52,11 +52,7 @@
         You have no Pokémon in the graveyard.<br />Congratulations!
       </span>
     {:else}
-      {#if name}
-        <h1 class='mb-4 text-center md:hidden'>{capitalise(name)} Graveyard</h1>
-      {/if}
-
-      <div class='w-full md:w-64 my-6 mx-auto relative md:fixed md:bottom-0 md:right-6'>
+      <div class='w-full md:w-64 mb-6 mx-auto relative md:fixed md:bottom-0 md:right-6'>
       <div class='flex items-center gap-x-2 my-2 mx-auto justify-between'>
         <h2 class='text-base dark:text-gray-50 text-gray-900 font-medium'>Fog animation </h2>
         <Toggle id=fog bind:state={showFog} />
@@ -68,7 +64,7 @@
       </div>
       </div>
 
-      {#if showAudio}<Audio src="{IMG}/audio/lavender.mp3" />{/if}
+      {#if showAudio}<Audio class="lg:fixed bottom-8 left-0" src="{IMG}/audio/lavender.mp3" />{/if}
       {#if showFog}<Fog />{/if}
     {/if}
   </div>
