@@ -71,7 +71,7 @@
         {#if death?.lvl}
         <br />
           {#if death?.lvl?.from && death?.lvl?.to}
-            Lv{death?.lvl?.from}-Lv{death?.lvl?.to}
+            Lv{death?.lvl?.from} - Lv{death?.lvl?.to}
           {:else if death?.lvl?.to}
             Died Lv{death?.lvl?.to}
           {/if}
@@ -93,7 +93,7 @@
     @apply transition-all;
   }
 
-  .pkmn { @apply top-0 translate-y-6 -mt-3 z-20 grayscale; }
+  .pkmn { @apply top-0 translate-y-6 -mt-3 z-20 grayscale}
   :global(.tombstone) { @apply w-full absolute left-0; filter: grayscale(0.8) contrast(0.7) brightness(0.8); }
 
   :global(.tombstone.tombstone--1) {@apply mt-8 ml-1 -skew-x-3; }

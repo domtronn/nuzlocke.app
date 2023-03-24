@@ -96,10 +96,7 @@
           href={p.link}
           >
           <Icon inline={true} icon={p.icon} />
-          <span
-            class:max-sm:hidden={p.link != $page.url.pathname}
-            class:max-sm:ml-2={p.link == $page.url.pathname}
-          >{p.name}</span>
+          {p.name}
         </a>
       {/each}
 
