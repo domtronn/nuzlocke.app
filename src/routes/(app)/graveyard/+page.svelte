@@ -46,7 +46,7 @@
 
 
 {#if ready}
-  <div class='px-4 sm:px-8' in:fade={{ duration: 500, delay: 200}}>
+  <div class='md:pt-8 px-4 sm:px-8' in:fade={{ duration: 500, delay: 200}}>
     {#if !graveyard.length}
       <span class='h-96 flex items-center justify-center text-center col-span-4 dark:text-gray-600 text-xl'>
         You have no Pokémon in the graveyard.<br />Congratulations!
@@ -75,7 +75,7 @@
         <GraveRow {i} maxRows={chunked.length}>
           {#each row as p, j}
             <div class='flex {j % 2 ? 'flex-row-reverse' : 'flex-row'} items-center justify-between max-sm:px-6 max-sm:mt-10 md:inline-block'
-                 in:fade={{ duration: 800, delay: (3000 / graveyard.length) * ((i * chunkSize) + j) + 1000 }}
+                 in:fade={{ duration: 800, delay: Math.min(3000 / graveyard.length, 500) * ((i * chunkSize) + j) + 1000 }}
                  >
               <Grave {...p} i={(i * chunkSize) + j} className='row--{i}' />
             </div>

@@ -17,6 +17,12 @@ export const toKebabCase = str =>
     .map(x => x.toLowerCase())
     .join('-');
 
+export const regionise = str => str
+  .replace(/(.*)-galar/, 'Galarian $1')
+  .replace(/(.*)-alola/, 'Alolan $1')
+  .replace(/(.*)-paldea/, 'Paldean $1')
+  .replace(/(.*)-hisui/, 'Hisuin $1')
+
 export const toSlug = (str = '') =>
   str
     .toLowerCase()
