@@ -41,9 +41,7 @@
     { label: 'Bad Luck', val: ELossType.Luck },
   ]
 
-  export let content, editor, category, text
-
-
+  export let content, category, text
 
   $: if (!custom) text = format(base, { ...ctx, nickname, pokemon })
 

@@ -89,9 +89,6 @@
 {/if}
 
 <style>
-  h1 { @apply text-2xl text-gray-800 }
-  :global(.dark) h1 { @apply text-gray-200 }
-
   :global(.row--0 div:nth-child(3n) .tombstone),
   :global(.row--1 div:nth-child(5n - 1) .tombstone),
   :global(.row--2 div:nth-child(4n + 2) .tombstone),
