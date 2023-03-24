@@ -1,4 +1,4 @@
-import Games from '$lib/data/games.json';
+import { Expanded as Games } from '$lib/data/games.js'
 
 export async function GET({ params }) {
   const { logo } = params;

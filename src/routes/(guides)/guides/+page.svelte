@@ -1,6 +1,6 @@
 <script>
-  import Games from '$data/games.json'
   import Themes from '$data/theme.json'
+  import { Expanded as Games } from '$data/games.js'
   import { Picture } from '$c/core'
   import { Hero } from '$c/Guide'
 
