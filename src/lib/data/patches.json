@@ -1774,175 +1774,6 @@
       }
     }
   },
-  "emkaizo": {
-    "move": {
-      "rock-smash": {
-        "power": "40",
-        "effect": " "
-      },
-      "drill-run": {
-        "power": "80",
-        "effect": "Has an increased chance for a critical hit"
-      },
-      "pin-missile": {
-        "power": "15"
-      },
-      "petal-dance": {
-        "power": "95",
-        "effect": "Has a 10% Chance to lower opponents Sp. Def"
-      },
-      "earth-power": {
-        "power": "90",
-        "effect": "Has a 30% Chance to lower opponents Def"
-      },
-      "egg-bomb": {
-        "power": "120",
-        "type": "grass",
-        "effect": "Deals ⅓ damage as recoil to the user"
-      },
-      "head-smash": {
-        "power": "150",
-        "effect": "Deals ⅓ damage as recoil to the user"
-      },
-      "sky-attack": {
-        "power": "120",
-        "effect": "Deals ⅓ damage as recoil to the user"
-      },
-      "superpower": {
-        "power": "120",
-        "effect": "Deals ⅓ damage as recoil to the user"
-      },
-      "overheat": {
-        "power": "120",
-        "effect": "Deals ⅓ damage as recoil to the user"
-      },
-      "dizzy-punch": {
-        "power": "90"
-      },
-      "crabhammer": {
-        "power": "120",
-        "effect": "Has an increased chance for a critical hit"
-      },
-      "super-fang": {
-        "type": "dark"
-      },
-      "aeroblast": {
-        "power": "120"
-      },
-      "octazooka": {
-        "power": "95"
-      },
-      "bone-rush": {
-        "power": "100",
-        "effect": "No effect"
-      },
-      "giga-drain": {
-        "power": "75"
-      },
-      "wild-charge": {
-        "effect": "Deals ⅓ damage as recoil to the user"
-      },
-      "fury-cutter": {
-        "effect": "Has an increased chance for a critical hit"
-      },
-      "steel-wing": {
-        "power": "80"
-      },
-      "return": {
-        "power": "103"
-      },
-      "frustration": {
-        "power": "103"
-      },
-      "sacred fire": {
-        "power": "120",
-        "effect": "Has a 50% chance to inflict burn. Will also thaw the user from Frozen."
-      },
-      "morning-sun": {
-        "effect": "Heals the user for ½ of their Max HP"
-      },
-      "moonlight": {
-        "effect": "Heals the user for ½ of their Max HP"
-      },
-      "synthesis": {
-        "effect": "Heals the user for ½ of their Max HP"
-      },
-      "swallo": {
-        "effect": "Heals the user for ½ of their Max HP"
-      },
-      "extreme-speed": {
-        "power": "100"
-      },
-      "ancientpower": {
-        "power": "80"
-      },
-      "spit-up": {
-        "power": "100",
-        "effect": "No effect"
-      },
-      "heat-wave": {
-        "power": "100 "
-      },
-      "draco-meteor": {
-        "power": "120",
-        "effect": "Deals ⅓ damage as recoil to the user"
-      },
-      "mist-ball": {
-        "power": "90"
-      },
-      "luster-purge": {
-        "power": "90"
-      },
-      "blaze-kick": {
-        "power": "100"
-      },
-      "needle-arm": {
-        "power": "95"
-      },
-      "hyper-voice": {
-        "power": "120",
-        "effect": "Has a 20% chance to lower the opponents Def a stage"
-      },
-      "poison-fang": {
-        "power": "90"
-      },
-      "crush-claw": {
-        "power": "100",
-        "effect": "Has a 50% chance to lower the opponents Def a stage"
-      },
-      "air-slash": {
-        "power": "80"
-      },
-      "flash-cannon": {
-        "power": "90"
-      },
-      "shadow-punch": {
-        "power": "70"
-      },
-      "sky-uppercut": {
-        "power": "90"
-      },
-      "poison-tail": {
-        "power": "120",
-        "effect": "Has an increased chance for a critical hit and may also cause Poison"
-      },
-      "bullet-seed": {
-        "power": "25",
-        "effect": "Hits the opponent 2 times"
-      },
-      "leaf-blade": {
-        "power": "90"
-      },
-      "water-spout": {
-        "power": "150",
-        "effect": "Deals ⅓ damage as recoil to the user"
-      },
-      "psycho-boost": {
-        "power": "140",
-        "effect": "Deals ⅓ damage as recoil to the user"
-      }
-    }
-  },
   "incem": {
     "item": {
       "miloticite": {
@@ -3881,6 +3712,13 @@
       },
       "gourgeist": {
         "name": "gourgeist",
+        "stats": {
+          "atk": 58,
+          "spa": 90
+        }
+      },
+      "gourgeist-large": {
+        "name": "gourgeist-large",
         "stats": {
           "atk": 58,
           "spa": 90
@@ -8075,6 +7913,95 @@
           "spd": 85,
           "spe": 85
         }
+      }
+    }
+  },
+  "unbound": {
+    "move": {
+      "hidden-power-bug": {
+        "power": "60",
+        "type": "bug",
+        "category": "special",
+        "locale": "Hidden Power"
+      },
+      "hidden-power-electric": {
+        "power": "60",
+        "type": "electric",
+        "category": "special",
+        "locale": "Hidden Power"
+      },
+      "hidden-power-fighting": {
+        "power": "60",
+        "type": "fighting",
+        "category": "special",
+        "locale": "Hidden Power"
+      },
+      "hidden-power-fire": {
+        "power": "60",
+        "type": "fire",
+        "category": "special",
+        "locale": "Hidden Power"
+      },
+      "hidden-power-flying": {
+        "power": "60",
+        "type": "flying",
+        "category": "special",
+        "locale": "Hidden Power"
+      },
+      "hidden-power-ghost": {
+        "power": "60",
+        "type": "ghost",
+        "category": "special",
+        "locale": "Hidden Power"
+      },
+      "hidden-power-grass": {
+        "power": "60",
+        "type": "grass",
+        "category": "special",
+        "locale": "Hidden Power"
+      },
+      "hidden-power-ground": {
+        "power": "60",
+        "type": "ground",
+        "category": "special",
+        "locale": "Hidden Power"
+      },
+      "hidden-power-ice": {
+        "power": "60",
+        "type": "ice",
+        "category": "special",
+        "locale": "Hidden Power"
+      },
+      "hidden-power-psychic": {
+        "power": "60",
+        "type": "psychic",
+        "category": "special",
+        "locale": "Hidden Power"
+      },
+      "hidden-power-rock": {
+        "power": "60",
+        "type": "rock",
+        "category": "special",
+        "locale": "Hidden Power"
+      },
+      "hidden-power-water": {
+        "power": "60",
+        "type": "water",
+        "category": "special",
+        "locale": "Hidden Power"
+      },
+      "leech-fang": {
+        "power": "70",
+        "type": "poison",
+        "effect": "The user gains half the HP the target lost from this attack",
+        "category": "physical",
+        "locale": "Leech Fang"
+      },
+      "metal-bash": {
+        "power": "60",
+        "type": "steel",
+        "category": "physical",
+        "locale": "Metal Bash"
       }
     }
   }
