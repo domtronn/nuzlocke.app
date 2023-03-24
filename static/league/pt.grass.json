@@ -1884,7 +1884,7 @@
     "img": "/leaders/dp-barry",
     "pokemon": [
       {
-        "name": "starly",
+        "name": "staravia",
         "level": "34",
         "moves": [
           {
@@ -1917,18 +1917,18 @@
           "name": "Intimidate",
           "effect": "Lowers opponents' Attack one stage upon entering battle."
         },
-        "sprite": "396",
+        "sprite": "397",
         "types": [
           "normal",
           "flying"
         ],
         "stats": {
-          "hp": 40,
-          "atk": 55,
-          "def": 30,
-          "spa": 30,
-          "spd": 30,
-          "spe": 60
+          "hp": 55,
+          "atk": 75,
+          "def": 50,
+          "spa": 40,
+          "spd": 40,
+          "spe": 80
         }
       },
       {
