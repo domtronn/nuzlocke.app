@@ -35,7 +35,7 @@
   }
 </script>
 
-<section class='max-w-sm mx-auto bg-gray-50 dark:bg-gray-900 p-8 rounded-2xl pb-2'>
+<section class='max-w-sm mx-auto bg-gray-50 dark:bg-gray-900 p-6 md:p-8 rounded-2xl pb-2'>
   <h2 class='text-lg dark:text-gray-50 text-gray-900 font-bold flex justify-between'>
     Game settings
     <Icon inline={true} height=1.6em icon={Settings} class='fill-current inline-block' />

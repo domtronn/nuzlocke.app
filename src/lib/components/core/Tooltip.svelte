@@ -14,6 +14,7 @@
 
   const init = (node, options) => {
     const instance = tippy(node.parentNode, Object.assign({
+      touch: 'hold',
       content: node.innerHTML,
       onCreate() {
         if (node.parentNode && typeof node.parentNode.removeChild == 'function')

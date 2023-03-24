@@ -1,5 +1,5 @@
 <script>
-  export let title, src = false, name = false, disabled = false, containerClassName = '', className = '', color = 'gray', rounded = false
+  export let title, src = false, name = false, disabled = false, containerClassName = '', className = '', color = 'gray', rounded = false, tabIndex = 1
   export let borderless = false
 
   import { createEventDispatcher } from 'svelte'
@@ -11,6 +11,7 @@
 </script>
 
 <button
+  {tabIndex}
   disabled={disabled}
   aria-label={title}
   title={title}

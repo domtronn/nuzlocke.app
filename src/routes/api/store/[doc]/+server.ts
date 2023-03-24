@@ -32,7 +32,7 @@ const verify = async (
   const body = await req.json()
   const { success, error } = T.safeParse(body)
 
-  if (!success) return [false, error]
+    if (!success) return [false, {error, body}]
 
   return [true, body]
 }
@@ -56,7 +56,7 @@ export async function POST ({ request, params }) {
   if (doc === EDocType.save) [success, data] = await verify(request, ISaves)
 
   if (success) process(data, doc)
-  else console.log(data)
+  else console.log(JSON.stringify(data, null, 2))
   
   return new Response('Accepted', {
     status: 202
