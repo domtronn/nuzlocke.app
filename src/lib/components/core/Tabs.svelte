@@ -1,5 +1,5 @@
-<script>
-  export let name, selected, tabs = [], className = '', select = i => i.val
+<script >
+  export let name, selected, tabs = [], className = '', labelClassName = '', select = i => i.val
 
   $: active = 0
   $: selected = select(tabs[active]) || active
@@ -7,7 +7,7 @@
 
 <div class='flex flex-row gap-x-4 sm:w-initial overflow-x-scroll {className}'>
   {#each tabs as tab, i}
-    <label class:active={active === i} class='text-base cursor-pointer transition-colors'>
+    <label class:active={active === i} class='text-base cursor-pointer transition-colors {labelClassName}'>
       <input type=radio bind:group={active} name={name} value={i} />
       <span>{typeof tab === 'string' ? tab : tab.label}</span>
     </label>

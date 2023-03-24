@@ -30,7 +30,7 @@ export const fetchLeague = async (game, starter = 'fire') => {
 }
 
 const route = {}
-export const fetchRoute = async (game, fetch) => {
+export const fetchRoute = async (game) => {
   if (!browser) return
 
   const uri = `/api/route/${game}.json`
@@ -40,4 +40,17 @@ export const fetchRoute = async (game, fetch) => {
 
   route[game] = await route[uri]
   return route[game]
+}
+
+const trainers = {}
+export const fetchTrainers = async (game) => {
+  if (!browser) return
+
+  const uri = `/api/${game}/trainers.json`
+  if (trainers[game]) return trainers[game]
+  if (!trainers[uri]) trainers[uri] = fetch(uri)
+    .then(res => res.json())
+
+  trainers[game] = await trainers[uri]
+  return trainers[game]
 }

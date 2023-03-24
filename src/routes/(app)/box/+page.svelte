@@ -26,11 +26,12 @@
   const { getPkmns, getPkmn } = getContext('game')
   const { open } = getContext('simple-modal')
 
-  let Particles, EvoModal
+  let Particles, EvoModal, DeathModal
   onMount(() => {
     deferStyles('/assets/pokemon.css')
     import('$lib/components/particles').then(m => Particles = m.default)
     import('$lib/components/EvolutionModal.svelte').then(m => EvoModal = m.default)
+    import('$lib/components/DeathModal/index.svelte').then(m => DeathModal = m.default)
 
     // FIXME: Awkward hack to allow page transition cleanup
     ;['game_el', 'sidenav_el'].forEach(id =>{
@@ -98,9 +99,17 @@
         })
     })
 
-  const handleKill = o => _ => {
+  const handleKill = (o) => () => {
+    open(DeathModal, {
+      submit: handleDeath(o),
+      pokemon: Pokemon[o.pokemon],
+      nickname: o.nickname
+    })
+  }
+
+  const handleDeath = o => death => {
     ogbox = ogbox.filter(i => toid(i) !== toid(o))
-    killPokemon(o)
+    killPokemon({ ...o, death })
   }
 </script>
 {#if loading}
