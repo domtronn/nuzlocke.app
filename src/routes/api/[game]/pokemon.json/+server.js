@@ -1,4 +1,4 @@
-import games from '$lib/data/games.json';
+import { Expanded as games } from '$lib/data/games.js';
 import patches from '$lib/data/patches.json';
 
 import { LegacyTypeMap } from '$lib/data/legacy'

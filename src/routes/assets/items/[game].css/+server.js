@@ -1,6 +1,6 @@
 import minifiedItems from '../_data.js';
 
-import games from '$lib/data/games.json';
+import { Expanded as games} from '$lib/data/games.js';
 import leagues from '$lib/data/league.json';
 import patches from '$lib/data/patches.json';
 
@@ -22,7 +22,7 @@ export async function GET({ params }) {
   const { game } = params;
 
   const gameData = games[game];
-  const patchData = patches[game];
+  const patchData = patches[gameData?.patchId] || patches[game];
   if (!gameData) return new Response({ status: 404 });
 
   const league = leagues[gameData.lid] || leagues[gameData.pid];
