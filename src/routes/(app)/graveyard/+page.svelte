@@ -46,6 +46,7 @@
 
 
 {#if ready}
+  <section class='w-screen overflow-hidden md:overflow-auto md:w-auto'>
   <div class='md:pt-8 px-4 sm:px-8' in:fade={{ duration: 500, delay: 200}}>
     {#if !graveyard.length}
       <span class='h-96 flex items-center justify-center text-center col-span-4 dark:text-gray-600 text-xl'>
@@ -84,6 +85,7 @@
       {/each}
     </div>
   {/if}
+  </section>
 {:else}
   <Loader />
 {/if}

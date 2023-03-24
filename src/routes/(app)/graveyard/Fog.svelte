@@ -1,4 +1,4 @@
-vt<script>
+<script>
   import { fade } from 'svelte/transition'
   import { IMG } from '$utils/rewrites'
 </script>
