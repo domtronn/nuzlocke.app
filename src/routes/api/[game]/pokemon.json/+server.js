@@ -15,7 +15,7 @@ const patchTypes = (pkmn, typeMap) => {
   })
 }
 
-const patchPokemon = (pkmn, patches, fakemon) => {
+const patchPokemon = (pkmn, patches = {}, fakemon = {}) => {
   return pkmn.map((p) => {
     const patch = patches[p.alias] || patches[p.sprite] || {};
     const baseStats = {
