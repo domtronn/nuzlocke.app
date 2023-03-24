@@ -10,3 +10,4 @@ export { default as Loader } from './Loader'
 
 export { default as PIcon } from './PokemonIcon.svelte'
 export { default as Picture } from './Picture.svelte'
+export { default as Logo } from './Logo.svelte'

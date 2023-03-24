@@ -13,7 +13,7 @@
   import { canonTypes as types } from '$lib/data/types'
   import { stats, StatIconMap } from '$lib/data/stats'
 
-  import { SPRITE, CUSTOM, createImgUrl } from '$utils/rewrites'
+  import { CUSTOM, createImgUrl } from '$utils/rewrites'
   import { toDb } from '$utils/link'
   import deferStyles from '$utils/defer-styles'
 

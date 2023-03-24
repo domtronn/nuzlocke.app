@@ -1,7 +1,7 @@
 <script>
   import Games from '$data/games.json'
   import Themes from '$data/theme.json'
-  import { Picture } from '$c/core'
+  import { Logo as Picture } from '$c/core'
   import { Hero } from '$c/Guide'
 
   import { toSlug } from '$lib/utils/string'
@@ -38,11 +38,11 @@
       <div>
         <div>
           <Picture
-            src='https://img.nuzlocke.app{logo}'
+            src='{logo}'
             alt='{title} Logo'
             role=presentation
             aspect=180x90
-            className=drop-shadow-mark
+            class=drop-shadow-mark
           />
         </div>
         <div>

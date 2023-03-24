@@ -4,8 +4,7 @@ const rewrite = !building && !dev;
 // TODO: Remember to update `vercel.json` in root of project when
 // modifying these sources
 
-
-export const SPRITE = 'https://img.nuzlocke.app/sprite';
+export const SPRITE = 'https://img.nuzlocke.app/sprites';
 export const CUSTOM = 'https://img.nuzlocke.app/sprites';
 
 export const QRCODE = rewrite
@@ -27,6 +26,6 @@ export const createImgUrl = (p, { ext = 'webp', shiny = false } = {}) => {
     .replace('.png', '')
     .replace('.webp', '')
 
-  if (shiny) return `${SPRITE}/shiny/${normalId}.${ext}`
-  return `${SPRITE}/${normalId}.${ext}`
+  if (shiny) return `${SPRITE}/shiny/${normalId}.${ext}?bypass=true`
+  return `${SPRITE}/base/${normalId}.${ext}?bypass=true`
 }

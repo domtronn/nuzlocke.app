@@ -17,8 +17,9 @@
     window.location.reload()
   }
 
+  import Games from '$lib/data/games.json'
   import ThemeToggle from '$lib/components/theme-toggle.svelte'
-  import { Picture, Popover } from '$lib/components/core'
+  import { Logo as Picture, Popover } from '$lib/components/core'
 
   import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
   import { Box, Save, Game, Caret, CaretRight } from '$icons'
@@ -42,8 +43,8 @@
       class='{className} home group'>
       {#if game?.game}
         <Picture
-          src=/assets/{game?.game}
-          className='h-7 w-auto my-1 md:mr-4 md:w-20 md:h-auto'
+          src={Games[game?.game].logo}
+          class='h-7 w-auto my-1 md:mr-4 md:w-20 md:h-auto'
           alt='{game?.game} logo'
           aspect=192x96
         />
@@ -72,8 +73,8 @@
                 {game.name}
                   <Picture
                     alt='{game.name} logo'
-                    src=/assets/{game.game}
-                    className='ml-2 w-16'
+                    src={Games[game.game].logo}
+                    class='ml-2 w-16'
                     aspect=192x96
                     />
                 </button>

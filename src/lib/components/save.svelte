@@ -7,7 +7,9 @@
   import day from '$lib/utils/date'
 
   import { NuzlockeStates } from '$lib/data/states'
-  import { PIcon, IconButton, Picture } from '$lib/components/core'
+  import { PIcon, IconButton, Logo as Picture } from '$lib/components/core'
+
+  import Games from '$lib/data/games.json';
 
   import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
   import { Bin } from '$icons'
@@ -42,8 +44,8 @@
           out:fade on:click={onclick}>
     <Picture
       alt='{name} logo'
-      src=/assets/{game}
-      className='hidden sm:block w-32'
+      src={Games[game]?.logo}
+      class='hidden sm:block h-16 w-32'
       aspect=192x96
     />
 
