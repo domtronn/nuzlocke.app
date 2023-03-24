@@ -65185,10 +65185,10 @@
           "name": "swinub",
           "level": "18",
           "moves": [
-            "default-moveset",
-            "",
-            "",
-            ""
+            "icy-wind",
+            "flail",
+            "powder-snow",
+            "mud-slap"
           ],
           "ability": "oblivious",
           "abilities": [
@@ -65739,7 +65739,7 @@
           "level": "21",
           "moves": [
             "acid",
-            "drain",
+            "mega-drain",
             "ingrain",
             "sleep-powder"
           ],
@@ -65859,7 +65859,7 @@
       },
       "pokemon": [
         {
-          "name": "minior",
+          "name": "minior-red",
           "level": "31",
           "moves": [
             "ancient-power",
@@ -66044,7 +66044,7 @@
           "held": "mental-herb"
         },
         {
-          "name": "alolan-golem",
+          "name": "golem-alola",
           "level": "45",
           "moves": [
             "return",
@@ -66940,7 +66940,7 @@
       },
       "pokemon": [
         {
-          "name": "mimikyu",
+          "name": "mimikyu-disguised",
           "level": "74",
           "moves": [
             "shadow-claw",
@@ -66954,13 +66954,13 @@
           ]
         },
         {
-          "name": "aegislash",
+          "name": "aegislash-blade",
           "level": "75",
           "moves": [
             "shadow-ball",
             "toxic",
             "substitute",
-            "king's-shield"
+            "kings-shield"
           ],
           "ability": "stance-change",
           "abilities": [
@@ -67119,7 +67119,7 @@
           "moves": [
             "moonblast",
             "surf",
-            "nature's-madness",
+            "natures-madness",
             "taunt"
           ],
           "ability": "misty-surge",
@@ -68137,7 +68137,7 @@
       "name": "Ruin Leader Aklove",
       "pokemon": [
         {
-          "name": "meloetta",
+          "name": "meloetta-aria",
           "level": "72",
           "moves": [
             "expanding-force",
@@ -68713,7 +68713,7 @@
           ]
         },
         {
-          "name": "sableye-[grunt's-lead]",
+          "name": "sableye",
           "level": "25",
           "moves": [
             "night-shade",
@@ -68816,7 +68816,7 @@
       "name": "Shadow Admin Ivory & Grunt",
       "pokemon": [
         {
-          "name": "incineroar-[ivory's-lead]",
+          "name": "incineroar",
           "level": "38",
           "moves": [
             "fire-punch",
@@ -68859,7 +68859,7 @@
           ]
         },
         {
-          "name": "meowstic-m-[grunt's-lead]",
+          "name": "meowstic-male",
           "level": "37",
           "moves": [
             "psyshock",
@@ -69279,7 +69279,7 @@
           ]
         },
         {
-          "name": "alolan-ninetales",
+          "name": "ninetales-alola",
           "level": "40",
           "moves": [
             "ice-beam",

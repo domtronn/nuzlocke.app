@@ -8003,94 +8003,23 @@
         "category": "physical",
         "locale": "Metal Bash"
       }
-    }
-  },
-  "unbound_exp": {
-    "move": {
-      "hidden-power-bug": {
-        "power": "60",
-        "type": "bug",
-        "category": "special",
-        "locale": "Hidden Power"
+    },
+    "ability": {
+      "portal-power": {
+        "name": "Portal power",
+        "effect": "Reduces power of non-contact moves by 25%."
       },
-      "hidden-power-electric": {
-        "power": "60",
-        "type": "electric",
-        "category": "special",
-        "locale": "Hidden Power"
+      "royal-roar": {
+        "name": "Royal roar",
+        "effect": "The users Special-Attack increases one stage for every Pokémon it defeats."
       },
-      "hidden-power-fighting": {
-        "power": "60",
-        "type": "fighting",
-        "category": "special",
-        "locale": "Hidden Power"
+      "cotton-cloud": {
+        "name": "Cotton cloud",
+        "effect": "When a Pokémon with this Ability is hit by a damaging move, the Speed of all other Pokémon is decreased by one stage."
       },
-      "hidden-power-fire": {
-        "power": "60",
-        "type": "fire",
-        "category": "special",
-        "locale": "Hidden Power"
-      },
-      "hidden-power-flying": {
-        "power": "60",
-        "type": "flying",
-        "category": "special",
-        "locale": "Hidden Power"
-      },
-      "hidden-power-ghost": {
-        "power": "60",
-        "type": "ghost",
-        "category": "special",
-        "locale": "Hidden Power"
-      },
-      "hidden-power-grass": {
-        "power": "60",
-        "type": "grass",
-        "category": "special",
-        "locale": "Hidden Power"
-      },
-      "hidden-power-ground": {
-        "power": "60",
-        "type": "ground",
-        "category": "special",
-        "locale": "Hidden Power"
-      },
-      "hidden-power-ice": {
-        "power": "60",
-        "type": "ice",
-        "category": "special",
-        "locale": "Hidden Power"
-      },
-      "hidden-power-psychic": {
-        "power": "60",
-        "type": "psychic",
-        "category": "special",
-        "locale": "Hidden Power"
-      },
-      "hidden-power-rock": {
-        "power": "60",
-        "type": "rock",
-        "category": "special",
-        "locale": "Hidden Power"
-      },
-      "hidden-power-water": {
-        "power": "60",
-        "type": "water",
-        "category": "special",
-        "locale": "Hidden Power"
-      },
-      "leech-fang": {
-        "power": "70",
-        "type": "poison",
-        "effect": "The user gains half the HP the target lost from this attack",
-        "category": "physical",
-        "locale": "Leech Fang"
-      },
-      "metal-bash": {
-        "power": "60",
-        "type": "steel",
-        "category": "physical",
-        "locale": "Metal Bash"
+      "bellow": {
+        "name": "Bellow",
+        "effect": "Bellow boosts the power of the Pokémon's sound-based moves by 30%. A Pokémon with Bellow also takes half damage from damaging sound-based moves."
       }
     }
   }
