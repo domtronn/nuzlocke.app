@@ -2,7 +2,7 @@
   import { savedGames, createGame } from '$lib/store'
   import { ScreenContainer } from '$lib/components/containers'
 
-  import { Button, Tabs, AutoComplete, Input, Logo as Picture, Tooltip } from '$lib/components/core'
+  import { Button, Tabs, AutoComplete, Input, Logo, Tooltip } from '$lib/components/core'
 
   import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
   import { File, Dice } from '$icons'
@@ -78,10 +78,10 @@
 
       <div class='flex inline-flex gap-x-2 px-2 py-6 items-center h-auto w-full max-h-8' slot='item' let:item={i} let:label={label}>
         {#if Games[i].logo}
-          <Picture
+          <Logo
             src='{Games[i].logo}'
             alt={Games[i].title + ' logo'}
-            className=w-12
+            class=w-12
             role=presentation
             aspect=192x96
           />
@@ -121,12 +121,12 @@
           class:dark:text-yellow-300={selected === id}
           class:text-yellow-500={selected === id}
         >
-          <Picture
+          <Logo
             src='{game.logo}'
             aspect=192x96
             role=presentation
             alt={'Pokémon ' + game.title + ' logo'}
-            className='w-24 mb-2 mx-auto transition group-hover:grayscale-0 {(selected && selected !== id) || hoverActive ? 'grayscale' : ''} {selected === id ? 'drop-shadow-highlight grayscale-0' : ''} cursor-pointer'
+            class='w-24 mb-2 mx-auto transition group-hover:grayscale-0 {(selected && selected !== id) || hoverActive ? 'grayscale' : ''} {selected === id ? 'drop-shadow-highlight grayscale-0' : ''} cursor-pointer'
             />
           <strong class='line-clamp-2 max-w-[16ch] mx-auto'>{game.title}</strong>
         </button>
