@@ -8,7 +8,8 @@
 
   const splitAt = (arr, i) => [arr.slice(0, i), arr.slice(i)]
 
-  const bossOrder = ['Gym Leader', 'Elite Four', 'Rival', 'Evil Team', 'Mini Boss', 'Other'].filter(i => gyms[i])
+  import { GuideBossOrder } from '$lib/data/groups'
+  const bossOrder = GuideBossOrder.filter(i => gyms[i])
 
   let show = false
   const onshow = _ => show = !show

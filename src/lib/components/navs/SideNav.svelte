@@ -1,6 +1,6 @@
 <script>
   import { groupBy } from '$lib/utils/arr'
-  import { capitalise, unslugify } from '$lib/utils/string'
+  import { capitalise, slugify } from '$lib/utils/string'
 
   import { createEventDispatcher } from 'svelte'
   import { fly, fade } from 'svelte/transition'
@@ -10,9 +10,9 @@
   import Portal from 'svelte-portal/src/Portal.svelte'
   import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
 
-  import { X } from '$icons'
-  import { Menu } from '$icons'
-  import { ArrowToTop } from '$icons'
+  import { X, Menu, ArrowToTop } from '$icons'
+
+  import { GuideBossOrder as groups } from '$lib/data/groups'
 
   export let route = [], className = ''
   export let show = false
@@ -24,7 +24,6 @@
     dispatch('nav', { value })
   }
 
-  const groups = ['gym-leader', 'elite-four', 'rival', 'evil-team']
 </script>
 
 <Portal target='#sidenav_button' hidden>
@@ -65,16 +64,18 @@
     <slot name='continue' />
 
     {#each groups as group}
-      <h3 class='text-lg font-light text-gray-800 dark:text-gray-200 mt-4'>{capitalise(unslugify(group))}</h3>
-      {#each grouped[group] as b}
-        <ul>
-          <li class='text-xs underline hover:text-black dark:hover:text-gray-200 hover:scale-110 hover:cursor-pointer origin-left transition'>
-            <button on:click={onnav(b.oid)}>
-              {b.boss} at {b.name}
-            </button>
-          </li>
-        </ul>
-      {/each}
+      {#if Object.hasOwnProperty.call(grouped, slugify(group))}
+        <h3 class='text-lg font-light text-gray-800 dark:text-gray-200 mt-4'>{group}</h3>
+        {#each grouped[slugify(group)] as b}
+          <ul>
+            <li class='text-xs underline hover:text-black dark:hover:text-gray-200 hover:scale-110 hover:cursor-pointer origin-left transition'>
+              <button on:click={onnav(b.oid)}>
+                {b.boss} at {b.name}
+              </button>
+            </li>
+          </ul>
+        {/each}
+      {/if}
     {/each}
   </section>
 {/if}

@@ -52,18 +52,19 @@
     a new device
   </p>
   
-  <span style='min-height: 340px;'>
+  <span style='min-height: 320px;'>
     {#await fetchurl({ data, save }) then drop}
       <button on:click={handlecopy(normalise(drop.url))} transition:fade>
         <mark class='text-xs md:text-base tracking-wide font-bold'>
           {normalise(drop.url).replace(/drop.*/, 'drop')}
         </mark>
+        <br />
         <mark class='text-4xl md:text-6xl'>
           {drop.url.replace(/.*\/drop/i, '')}
         </mark>
       </button>
       
-      <div transition:fade class='p-2 bg-white'>
+      <div transition:fade class='p-2 mt-4 bg-white'>
         <QRCode value={normalise(drop.url)} />
       </div>
     {/await}
