@@ -41,12 +41,18 @@
   const handleEdit = (p) => async (o) => {
     await deferStyles('/assets/pokemon.css')
     const pokemon = await getPkmn(o.detail.pokemon)
+
+    const mode =
+          o.detail?.death?.opponent ||
+          o.detail?.death?.trainer ? 'edit' : 'new'
+
     const submit = (death) => {
-      gameStore.update(patch({ [p.location]: { ...p, death } }))
-      console.log({ ...p, death })
+      mode === 'new'
+        ? gameStore.update(patch({ [p.location]: { ...p, death } }))
+        : gameStore.update(patch({ [p.location]: { ...p, death: { ...p.death, ...death }} }))
     }
 
-    open(DeathModal, { ...o.detail, submit, pokemon })
+    open(DeathModal, { ...o.detail, submit, pokemon, mode })
   }
 
   const chunkSize = 6

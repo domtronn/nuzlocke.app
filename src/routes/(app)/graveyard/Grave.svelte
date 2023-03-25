@@ -8,7 +8,7 @@
   import { Tooltip, Picture } from '$c/core'
 
   import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
-  import { Quote } from '$icons'
+  import { Quote, Edit, Plus } from '$icons'
 
   import { getContext, createEventDispatcher } from 'svelte'
   const { getPkmn } = getContext('game')
@@ -18,7 +18,6 @@
   $: getPkmn(pokemon).then(data => Pokemon = data)
 
   const onclick = () => dispatch('click', { pokemon, nickname, death })
-  const onkeydown = () => {}
 
   let gravehash = 0
   $: gravehash = death?.epitaph?.length || nickname?.length || pokemon?.length
@@ -30,8 +29,7 @@
 
 <div
   on:click={onclick}
-  on:keydown={onkeydown}
-  class='grave w-32 h-48 md:-mt-10 mx-auto transform scale-150 md:scale-100 z-20'>
+  class='grave group cursor-pointer w-32 h-48 md:-mt-10 mx-auto transform scale-150 md:scale-100 z-20'>
 
   {#if tooltip}
     {#key tooltip}
@@ -39,59 +37,90 @@
     {/key}
   {/if}
 
-{#key gravehash}
-  <Picture
-    pixelated
-    class='tombstone tombstone--{graveid}'
-    alt="Tombstone for {nickname} the {pokemon}"
-    src='https://img.nuzlocke.app/graves/grave-{graveid}'
-    aspect=192x256
-  />
-{/key}
+  {#key gravehash}
+    <Picture
+      pixelated
+      class='tombstone tombstone--{graveid}'
+      alt="Tombstone for {nickname} the {pokemon}"
+      src='https://img.nuzlocke.app/graves/grave-{graveid}'
+      aspect=192x256
+    />
+  {/key}
 
+  <div
+    class:opacity-0={death?.epitaph}
+    class:opacity-100={!death?.epitaph}
+    class='w-full text-center absolute bottom-2 group-hover:opacity-100 transition-all right-0'>
+    <span
+      class:border-b={!death?.epitaph}
+      class:text-[10px]={!death?.epitaph}
+      class='inline-flex items-center gap-x-1 text-xs dark:text-gray-500 text-gray-400 dark:border-gray-500 border-gray-400'
+    >
+      {#if tooltip}
+        <Icon inline icon={Edit} />
+        Click to edit
+      {:else}
+        <Icon inline icon={Plus} />
+        Add epitaph
+      {/if}
+    </span>
+  </div>
 
 {#if Pokemon}
   <img class='pkmn z-10' alt="{nickname} the {pokemon}" src={createImgUrl(Pokemon, { ext: 'png'})} />
 {/if}
 
 {#if death?.lvl}
-      <p class='z-20 top-2 lvl !text-lg max-md:hidden'>
-      {#if death?.lvl?.from && death?.lvl?.to}
-        <small>Lv</small>{death?.lvl?.from}-<small>Lv</small>{death?.lvl?.to}
-      {:else if death?.lvl?.to}
-        Died <small>Lv</small>{death?.lvl?.to}
-      {/if}
-      </p>
+  <p class='z-20 top-2 lvl !text-lg max-md:hidden'>
+    {#if death?.lvl?.from && death?.lvl?.to}
+      <small>Lv</small>{death?.lvl?.from}-<small>Lv</small>{death?.lvl?.to}
+    {:else if death?.lvl?.to}
+      Died <small>Lv</small>{death?.lvl?.to}
     {/if}
+  </p>
+{/if}
 
-    <p class='pt-4 z-20'>
-      {#if nickname}
-        {capitalise(nickname)} <br /> the {regionise(capitalise(pokemon))}
-      {:else}
-        An unknown <br /> {regionise(capitalise(pokemon))}
-      {/if}
-    </p>
-    <br />
+<p class='pt-4 z-20'>
+  {#if nickname}
+    {capitalise(nickname)} <br /> the {regionise(capitalise(pokemon))}
+  {:else}
+    An unknown <br /> {regionise(capitalise(pokemon))}
+  {/if}
+</p>
+
 </div>
 
 {#if death?.epitaph}
-  <p class='epitaph flex flex-col sm:hidden w-[20ch] p-3 bg-gray-200 dark:bg-gray-700 rounded-lg leading-5 relative z-0'>
+  <p
+    class:p-3={death?.epitaph}
+    class:w-[20ch]={death?.epitaph}
+    class='epitaph flex flex-col sm:hidden bg-gray-200 dark:bg-gray-700 rounded-lg leading-5 -mt-8 relative z-0'>
     <Icon size={48} class='absolute -top-1 -left-1 scale-200' inline={true} icon={Quote} />
     <Icon size={48} class='absolute scale-150 rotate-180 -bottom-1 -right-1' inline={true} icon={Quote} />
     {format(death.epitaph, { pokemon:{name:capitalise(pokemon)}, nickname, ...death })}
     <br />
     <small class='text-gray-400 -mt-4'>
-        {#if death?.lvl}
+      {#if death?.lvl}
         <br />
-          {#if death?.lvl?.from && death?.lvl?.to}
-            Lv{death?.lvl?.from} - Lv{death?.lvl?.to}
-          {:else if death?.lvl?.to}
-            Died Lv{death?.lvl?.to}
-          {/if}
+        {#if death?.lvl?.from && death?.lvl?.to}
+          Lv{death?.lvl?.from} - Lv{death?.lvl?.to}
+        {:else if death?.lvl?.to}
+          Died Lv{death?.lvl?.to}
+        {/if}
       {/if}
     </small>
+
+    <button
+      class='sm:hidden w-full text-center absolute -bottom-1 translate-y-full left-0'
+      on:click={onclick}>
+      <span class='inline-flex items-center gap-x-1 pr-1 text-sm dark:text-gray-500 text-gray-400 border-b  dark:border-gray-500 border-gray-400'>
+          <Icon inline icon={Edit} /> Edit
+      </span>
+    </button>
   </p>
 {/if}
+
+
 
 <style>
 

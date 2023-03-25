@@ -99,9 +99,11 @@ export const randomTemplate = (category = ELossType.Dramatic): string => {
 }
 
 export const format = (
-    text: string,
+    text: string | undefined,
     ctx: ICtx
 ): string  => {
+    if (!text) return
+
     let otype: string = ''
     if (ctx?.trainer?.speciality) otype = ctx?.trainer?.speciality + ' type'
     if (ctx?.opponent?.types) otype =ctx?.opponent?.types[0] + ' type'

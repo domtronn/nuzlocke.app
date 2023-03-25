@@ -10,8 +10,7 @@
     { label: 'Trainer Fight', val: 'trainer' },
   ]
 
-  export let ctx = { tab: tabs[0].val }
-  let result = {}
+  let ctx = { tab: tabs[0].val }, result = {}
 
   const EButton = { Skip: 'Skip', Submit: 'Submit' }
 
@@ -37,16 +36,16 @@
   $: tabid = tabs.findIndex(tab => tab.val === ctx.tab)
 </script>
 
-<form class='flex flex-col gap-2 mt-8 md:mt-4 w-full text-left' on:submit={onsubmit}>
+<form class='flex flex-col gap-2 mt-8 md:mt-4 w-full text-left {$$restProps.class || ''}' on:submit={onsubmit}>
   <Label class='hidden md:block'>Set the encounter type</Label>
-  <Tabs className='-my-2 md:my-0' labelClassName='text-sm' name='mech' bind:selected={ctx.tab} bind:active={tabid} {tabs} />
+  <Tabs className='-my-2 md:my-0' labelClassName='text-sm' name='mech' bind:selected={ctx.tab} {tabs} />
 
   <div class='hpx bg-gray-500 w-full' />
 
-  <Common
-    bind:from={ctx.fromlvl}
-    bind:to={ctx.tolvl}
-  >
+    <Common
+      bind:from={ctx.fromlvl}
+      bind:to={ctx.tolvl}
+    >
       <Label slot=label optional>Capture and defeat <span class='hidden md:inline'> level of <b>{pokemon}</b></span></Label>
     </Common>
 
@@ -64,7 +63,7 @@
       </BossForm>
     {/if}
 
-    <div class='mt-2 w-full text-center flex flex-row md:inline-flex gap-2 md:gap-2'>
+    <div class='buttons mt-2 w-full text-center flex flex-row md:inline-flex gap-2 md:gap-2'>
       <Button tabIndex=2 rounded className='flex-1'>
         {EButton.Skip}
       </Button>
@@ -74,3 +73,14 @@
     </div>
 
   </form>
+
+<style>
+  form:global(.edit-mode > *) {
+    display: none;
+  }
+
+  form:global(.edit-mode > .buttons) {
+    display: flex;
+    @apply w-full -mt-4;
+  }
+</style>
