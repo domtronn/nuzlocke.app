@@ -28,7 +28,7 @@ const IDeath = z.object({
     opponent: z.optional(z.object({
         name: z.optional(z.string()),
         id: z.optional(z.string()),
-        types: z.optional(z.array(z.string()).length(2)),
+        types: z.optional(z.array(z.string()).min(1).max(2)),
     })),
     trainer: z.optional(z.object({
         id: z.optional(z.string()),
