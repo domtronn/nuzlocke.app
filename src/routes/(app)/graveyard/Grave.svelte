@@ -24,7 +24,7 @@
   $: graveid = ((gravehash % 12) + 1)
 
   let tooltip
-  $: tooltip = format(death.epitaph, { pokemon:{name: regionise(capitalise(pokemon))}, nickname, ...death })
+  $: tooltip = format(death?.epitaph, { pokemon:{name: regionise(capitalise(pokemon))}, nickname, ...death })
 </script>
 
 <div

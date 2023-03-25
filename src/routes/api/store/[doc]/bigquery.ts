@@ -71,6 +71,7 @@ export const processSave = async ({ data, user_id, game_id }: ISave) => {
             death_time: death.time,
             death_epitaph: death.epitaph,
             death_epitaph_custom: death?.custom,
+            death_epitaph_category: death?.category,
             death_lvl_start: death?.lvl?.from,
             death_lvl_end: death?.lvl?.to,
             death_location_name: death?.location?.name,
