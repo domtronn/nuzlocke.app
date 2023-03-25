@@ -11,7 +11,7 @@
   import { capitalise } from '$lib/utils/string'
   import deferStyles from '$lib/utils/defer-styles'
 
-  import { activeGame, getGame, read, savedGames, parse } from '$lib/store'
+  import { activeGame, getGame, read, patch } from '$lib/store'
   import { Loader, Toggle } from '$c/core'
 
   import { IMG } from '$utils/rewrites'
@@ -26,33 +26,37 @@
   // TODO: Bind all the death data to the fields in the form :vomit:
   // TODO: Dispatch the poemon upate/patch event
 
-  let box = {}, name = ''
+  let box = {}, gameStore
   activeGame.subscribe(gameId => {
     if (browser && !gameId) return
-    getGame(gameId).subscribe(read(data => box = data))
-    savedGames.subscribe(parse(games => {
-      name = games[gameId]?.name
+    gameStore = getGame(gameId)
+    gameStore.subscribe(read(data => {
+      box = data
     }))
   })
 
   const { open } = getContext('simple-modal')
   const { getPkmn } = getContext('game')
-  const handleKill = async (o) => {
-    const pokemon = await getPkmn(o.detail.pokemon)
+
+  const handleEdit = (p) => async (o) => {
     await deferStyles('/assets/pokemon.css')
-    open(DeathModal, {
-      ...o.detail,
-      submit: (data) => { debugger },
-      pokemon,
-    })
+    const pokemon = await getPkmn(o.detail.pokemon)
+    const submit = (death) => {
+      gameStore.update(patch({ [p.location]: { ...p, death } }))
+      console.log({ ...p, death })
+    }
+
+    open(DeathModal, { ...o.detail, submit, pokemon })
   }
 
-  const graveyard = Object.values(box)
+  const chunkSize = 6
+  let graveyard = []
+  $: graveyard = Object.values(box)
         .filter(i => i.pokemon)
         .filter(i => NuzlockeGroups.Dead.includes(i.status))
 
-  const chunkSize = 6
-  const chunked = chunk(
+  let chunked = []
+  $: chunked = chunk(
     graveyard,
     chunkSize // Force 2 rows minimum
   )
@@ -97,10 +101,12 @@
           {#each row as p, j}
             <div class='flex {j % 2 ? 'flex-row-reverse' : 'flex-row'} items-center justify-between max-sm:px-6 max-sm:mt-10 md:inline-block'
                  in:fade={{ duration: 800, delay: Math.min(3000 / graveyard.length, 500) * ((i * chunkSize) + j) + 1000 }}>
-              <Grave {...p} i={(i * chunkSize) + j}
-                     on:click={handleKill}
-                     className='row--{i}'
-                     />
+              <Grave
+                pokemon={p.pokemon}
+                nickname={p.nickname}
+                death={p?.death}
+                on:click={handleEdit(p)}
+              />
             </div>
           {/each}
         </GraveRow>

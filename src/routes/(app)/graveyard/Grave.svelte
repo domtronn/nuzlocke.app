@@ -1,5 +1,5 @@
 <script>
-  export let pokemon, nickname = '', death, graveid
+  export let pokemon, nickname = '', death = {}, graveid
 
   import { capitalise, regionise } from '$lib/utils/string'
   import { IMG, createImgUrl } from '$utils/rewrites'
@@ -22,6 +22,9 @@
 
   const gravehash = death?.epitaph?.length || nickname?.length || pokemon?.length
   $: graveid = graveid || ((gravehash % 12) + 1)
+
+  let tooltip
+  $: tooltip = format(death.epitaph, { pokemon:{name: regionise(capitalise(pokemon))}, nickname, ...death })
 </script>
 
 <div
@@ -29,10 +32,10 @@
   on:keydown={onkeydown}
   class='grave w-32 h-48 md:-mt-10 mx-auto transform scale-150 md:scale-100'>
 
-  {#if death?.epitaph}
-    <Tooltip>
-      {format(death.epitaph, { pokemon:{name: regionise(capitalise(pokemon))}, nickname, ...death })}
-    </Tooltip>
+  {#if tooltip}
+    {#key tooltip}
+      <Tooltip>{tooltip}</Tooltip>
+    {/key}
   {/if}
 
 <Picture
