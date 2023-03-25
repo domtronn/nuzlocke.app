@@ -43,7 +43,7 @@
     title='Close modal'
   />
 
-  <Prose {nickname} {pokemon} ctx={formData} epitaph={death?.epitaph}
+  <Prose {nickname} {pokemon} ctx={{...death, ...formData}} epitaph={death?.epitaph}
          bind:category={category}
          bind:content={epitaphEl}
          bind:base={epitaphBase}
