@@ -31,7 +31,7 @@
 <div
   on:click={onclick}
   on:keydown={onkeydown}
-  class='grave w-32 h-48 md:-mt-10 mx-auto transform scale-150 md:scale-100'>
+  class='grave w-32 h-48 md:-mt-10 mx-auto transform scale-150 md:scale-100 z-20'>
 
   {#if tooltip}
     {#key tooltip}
@@ -75,7 +75,7 @@
 </div>
 
 {#if death?.epitaph}
-  <p class='epitaph flex flex-col sm:hidden w-[20ch] p-3 bg-gray-200 dark:bg-gray-700 rounded-lg leading-5 relative'>
+  <p class='epitaph flex flex-col sm:hidden w-[20ch] p-3 bg-gray-200 dark:bg-gray-700 rounded-lg leading-5 relative z-0'>
     <Icon size={48} class='absolute -top-1 -left-1 scale-200' inline={true} icon={Quote} />
     <Icon size={48} class='absolute scale-150 rotate-180 -bottom-1 -right-1' inline={true} icon={Quote} />
     {format(death.epitaph, { pokemon:{name:capitalise(pokemon)}, nickname, ...death })}
