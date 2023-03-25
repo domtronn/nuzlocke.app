@@ -2,6 +2,7 @@ import z from "zod"
 
 const EGame = z.enum(['vi', 'sc', 'sw', 'sh', 'usun', 'umoon', 'sun', 'moon', 'x', 'y', 'blazevolt2', 'blazevolt2_c', 'bl2', 'wh2', 'bl2c', 'wh2c', 'bl', 'wh', 'bd', 'sp', 'radred', 'renplat', 'pt', 'd', 'p', 'or', 'as', 'em', 'incem', 'ruby', 'saph', 'stormsilv', 'sacredgold', 'hg', 'ss', 'gold', 'silv', 'crys', 'fr', 'lg', 'yel', 'red', 'blue'])
 const EDeath = z.enum(['boss', 'encounter', 'trainer'])
+const ECategory = z.enum(['random', 'mistake', 'sacrifice', 'drama', 'luck'])
 
 const IGame = z.object({
   game: EGame,
@@ -15,6 +16,7 @@ const IGame = z.object({
 
 const IDeath = z.object({
     type: EDeath,
+    category: z.optional(ECategory),
     time: z.optional(z.number()),
     custom: z.optional(z.boolean()),
     epitaph: z.string(),
