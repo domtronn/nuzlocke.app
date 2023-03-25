@@ -1,6 +1,6 @@
 <script>
   import { browser } from '$app/environment'
-  import { onMount } from 'svelte'
+  import { onMount, getContext } from 'svelte'
   import { fade } from 'svelte/transition'
 
   import { Grave, GraveRow, Fog } from './'
@@ -9,30 +9,60 @@
 
   import { chunk } from '$lib/utils/arr'
   import { capitalise } from '$lib/utils/string'
+  import deferStyles from '$lib/utils/defer-styles'
 
-  import { activeGame, getGame, read, savedGames, parse } from '$lib/store'
+  import { activeGame, getGame, read, patch } from '$lib/store'
   import { Loader, Toggle } from '$c/core'
 
   import { IMG } from '$utils/rewrites'
 
-  let ready
-  onMount(() => ready = true)
+  let ready, DeathModal
 
-  let box = {}, name = ''
+  onMount(() => {
+    ready = true
+    import('$lib/components/DeathModal/index.svelte').then(m => DeathModal = m.default)
+  })
+
+  // TODO: Bind all the death data to the fields in the form :vomit:
+  // TODO: Dispatch the poemon upate/patch event
+
+  let box = {}, gameStore
   activeGame.subscribe(gameId => {
     if (browser && !gameId) return
-    getGame(gameId).subscribe(read(data => box = data))
-    savedGames.subscribe(parse(games => {
-      name = games[gameId]?.name
+    gameStore = getGame(gameId)
+    gameStore.subscribe(read(data => {
+      box = data
     }))
   })
 
-  const graveyard = Object.values(box)
+  const { open } = getContext('simple-modal')
+  const { getPkmn } = getContext('game')
+
+  const handleEdit = (p) => async (o) => {
+    await deferStyles('/assets/pokemon.css')
+    const pokemon = await getPkmn(o.detail.pokemon)
+
+    const mode =
+          o.detail?.death?.opponent ||
+          o.detail?.death?.trainer ? 'edit' : 'new'
+
+    const submit = (death) => {
+      mode === 'new'
+        ? gameStore.update(patch({ [p.location]: { ...p, death } }))
+        : gameStore.update(patch({ [p.location]: { ...p, death: { ...p.death, ...death }} }))
+    }
+
+    open(DeathModal, { ...o.detail, submit, pokemon, mode })
+  }
+
+  const chunkSize = 6
+  let graveyard = []
+  $: graveyard = Object.values(box)
         .filter(i => i.pokemon)
         .filter(i => NuzlockeGroups.Dead.includes(i.status))
 
-  const chunkSize = 6
-  const chunked = chunk(
+  let chunked = []
+  $: chunked = chunk(
     graveyard,
     chunkSize // Force 2 rows minimum
   )
@@ -76,9 +106,13 @@
         <GraveRow {i} maxRows={chunked.length}>
           {#each row as p, j}
             <div class='flex {j % 2 ? 'flex-row-reverse' : 'flex-row'} items-center justify-between max-sm:px-6 max-sm:mt-10 md:inline-block'
-                 in:fade={{ duration: 800, delay: Math.min(3000 / graveyard.length, 500) * ((i * chunkSize) + j) + 1000 }}
-                 >
-              <Grave {...p} i={(i * chunkSize) + j} className='row--{i}' />
+                 in:fade={{ duration: 800, delay: Math.min(3000 / graveyard.length, 500) * ((i * chunkSize) + j) + 1000 }}>
+              <Grave
+                pokemon={p.pokemon}
+                nickname={p.nickname}
+                death={p?.death}
+                on:click={handleEdit(p)}
+              />
             </div>
           {/each}
         </GraveRow>

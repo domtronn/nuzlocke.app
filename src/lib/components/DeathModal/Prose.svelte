@@ -5,8 +5,8 @@
 
   import { Grave, Dice, Edit } from '$icons'
 
-  export let pokemon, nickname, ctx, custom = false
-  export let base = randomTemplate(ELossType.Random)
+  export let pokemon, nickname, ctx, epitaph = null, custom = false
+  export let base = epitaph || randomTemplate(ELossType.Random)
   let textContent
 
   const onkeydown = (e) => custom = true
@@ -48,7 +48,7 @@
   let prevCategory
   $: {
     if (prevCategory !== category) {
-      base = randomTemplate(category)
+      base = epitaph || randomTemplate(category)
       text = format(base, { ...ctx, nickname, pokemon })
       prevCategory = category
     }
