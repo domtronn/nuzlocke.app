@@ -20,8 +20,9 @@
   const onclick = () => dispatch('click', { pokemon, nickname, death })
   const onkeydown = () => {}
 
-  const gravehash = death?.epitaph?.length || nickname?.length || pokemon?.length
-  $: graveid = graveid || ((gravehash % 12) + 1)
+  let gravehash = 0
+  $: gravehash = death?.epitaph?.length || nickname?.length || pokemon?.length
+  $: graveid = ((gravehash % 12) + 1)
 
   let tooltip
   $: tooltip = format(death.epitaph, { pokemon:{name: regionise(capitalise(pokemon))}, nickname, ...death })
@@ -38,13 +39,15 @@
     {/key}
   {/if}
 
-<Picture
-  pixelated
-  class='tombstone tombstone--{graveid}'
-  alt="tombstone for {nickname} the {pokemon}"
-  src='https://img.nuzlocke.app/graves/grave-{graveid}'
-  aspect=192x256
+{#key gravehash}
+  <Picture
+    pixelated
+    class='tombstone tombstone--{graveid}'
+    alt="Tombstone for {nickname} the {pokemon}"
+    src='https://img.nuzlocke.app/graves/grave-{graveid}'
+    aspect=192x256
   />
+{/key}
 
 
 {#if Pokemon}
