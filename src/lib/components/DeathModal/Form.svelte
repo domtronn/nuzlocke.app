@@ -10,7 +10,8 @@
     { label: 'Trainer Fight', val: 'trainer' },
   ]
 
-  let ctx = { tab: tabs[0].val }, result = {}
+  export let ctx = { tab: tabs[0].val }
+  let result = {}
 
   const EButton = { Skip: 'Skip', Submit: 'Submit' }
 
@@ -20,8 +21,7 @@
     if (e.submitter.textContent == EButton.Submit) dispatch('submit', ctx)
   }
 
-  export let pokemon = 'Snivy'
-  export let formData
+  export let pokemon, formData
 
   const toSpreadable = (o, key) => isEmpty(nonnull(o)) ? {} : { [key]: nonnull(o) }
 
@@ -34,18 +34,19 @@
     ...(toSpreadable(result?.attack, 'attack')),
   })
 
+  $: tabid = tabs.findIndex(tab => tab.val === ctx.tab)
 </script>
 
 <form class='flex flex-col gap-2 mt-8 md:mt-4 w-full text-left' on:submit={onsubmit}>
   <Label class='hidden md:block'>Set the encounter type</Label>
-  <Tabs className='-my-2 md:my-0' labelClassName='text-sm' name='mech' bind:selected={ctx.tab} {tabs} />
+  <Tabs className='-my-2 md:my-0' labelClassName='text-sm' name='mech' bind:selected={ctx.tab} bind:active={tabid} {tabs} />
 
   <div class='hpx bg-gray-500 w-full' />
 
   <Common
-      bind:from={ctx.fromlvl}
-      bind:to={ctx.tolvl}
-    >
+    bind:from={ctx.fromlvl}
+    bind:to={ctx.tolvl}
+  >
       <Label slot=label optional>Capture and defeat <span class='hidden md:inline'> level of <b>{pokemon}</b></span></Label>
     </Common>
 

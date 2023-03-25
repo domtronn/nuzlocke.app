@@ -33,6 +33,13 @@
     ...(custom ? { custom: true } : { custom: false, category }),
   }
 
+  // Used for "downward" binding to prepopulate the form with data
+  let propCtx = {
+    tab: death.type,
+    fromlvl: death.lvl.from,
+    tolvl: death.lvl.to
+  }
+
 </script>
 
 <section class='md:w-[50ch] text-center items-center dark:bg-gray-900 bg-white rounded-lg px-6 pt-4 pb-6 md:p-8 mx-auto shadow-lg dark:text-gray-200'>
@@ -60,6 +67,7 @@
     pokemon={pokemon?.name}
     on:skip={onsubmit()}
     on:submit={onsubmit(result)}
+    bind:ctx={propCtx}
     bind:formData
   />
 
