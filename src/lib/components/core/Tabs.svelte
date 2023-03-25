@@ -1,7 +1,6 @@
 <script >
-  export let name, selected, tabs = [], className = '', labelClassName = '', select = i => i.val
+  export let name, selected, tabs = [], className = '', labelClassName = '', select = i => i.val, active = 0
 
-  $: active = 0
   $: selected = select(tabs[active]) || active
 </script>
 

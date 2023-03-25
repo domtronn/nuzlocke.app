@@ -1,5 +1,5 @@
 <script>
-  export let submit = _ => _, pokemon, nickname
+  export let submit = _ => _, pokemon, nickname, death = {}, mode = 'new'
 
   import Form from './Form.svelte'
   import Prose from './Prose.svelte'
@@ -32,7 +32,6 @@
     ...formData,
     ...(custom ? { custom: true } : { custom: false, category }),
   }
-
 </script>
 
 <section class='md:w-[50ch] text-center items-center dark:bg-gray-900 bg-white rounded-lg px-6 pt-4 pb-6 md:p-8 mx-auto shadow-lg dark:text-gray-200'>
@@ -44,7 +43,7 @@
     title='Close modal'
   />
 
-  <Prose {nickname} {pokemon} ctx={formData}
+  <Prose {nickname} {pokemon} ctx={{...death, ...formData}} epitaph={death?.epitaph}
          bind:category={category}
          bind:content={epitaphEl}
          bind:base={epitaphBase}
@@ -58,6 +57,7 @@
 
   <Form
     pokemon={pokemon?.name}
+    class='{mode}-mode'
     on:skip={onsubmit()}
     on:submit={onsubmit(result)}
     bind:formData
