@@ -1,5 +1,5 @@
 <script>
-  export let submit = _ => _, pokemon, nickname
+  export let submit = _ => _, pokemon, nickname, death = {}
 
   import Form from './Form.svelte'
   import Prose from './Prose.svelte'

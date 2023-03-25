@@ -1,5 +1,5 @@
 <script>
-  export let pokemon, nickname = '', death, i, graveid
+  export let pokemon, nickname = '', death, graveid
 
   import { capitalise, regionise } from '$lib/utils/string'
   import { IMG, createImgUrl } from '$utils/rewrites'
@@ -10,17 +10,24 @@
   import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
   import { Quote } from '$icons'
 
-  import { getContext } from 'svelte'
+  import { getContext, createEventDispatcher } from 'svelte'
   const { getPkmn } = getContext('game')
+  const dispatch = createEventDispatcher()
 
   let Pokemon
   $: getPkmn(pokemon).then(data => Pokemon = data)
+
+  const onclick = () => dispatch('click', { pokemon, nickname, death })
+  const onkeydown = () => {}
 
   const gravehash = death?.epitaph?.length || nickname?.length || pokemon?.length
   $: graveid = graveid || ((gravehash % 12) + 1)
 </script>
 
-<div class='grave w-32 h-48 md:-mt-10 mx-auto transform scale-150 md:scale-100'>
+<div
+  on:click={onclick}
+  on:keydown={onkeydown}
+  class='grave w-32 h-48 md:-mt-10 mx-auto transform scale-150 md:scale-100'>
 
   {#if death?.epitaph}
     <Tooltip>
@@ -39,7 +46,7 @@
 
 {#if Pokemon}
   <img class='pkmn z-10' alt="{nickname} the {pokemon}" src={createImgUrl(Pokemon, { ext: 'png'})} />
-  {/if}
+{/if}
 
 {#if death?.lvl}
       <p class='z-20 top-2 lvl !text-lg max-md:hidden'>
@@ -153,7 +160,7 @@
       @apply transform scale-110  ;
     }
 
-    .grave:hover .pkmn, .grave:hover span {
+    .grave:hover .pkmn {
       filter: none;
     }
   }

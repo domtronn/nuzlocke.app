@@ -1,6 +1,6 @@
 <script>
   import { browser } from '$app/environment'
-  import { onMount } from 'svelte'
+  import { onMount, getContext } from 'svelte'
   import { fade } from 'svelte/transition'
 
   import { Grave, GraveRow, Fog } from './'
@@ -9,14 +9,22 @@
 
   import { chunk } from '$lib/utils/arr'
   import { capitalise } from '$lib/utils/string'
+  import deferStyles from '$lib/utils/defer-styles'
 
   import { activeGame, getGame, read, savedGames, parse } from '$lib/store'
   import { Loader, Toggle } from '$c/core'
 
   import { IMG } from '$utils/rewrites'
 
-  let ready
-  onMount(() => ready = true)
+  let ready, DeathModal
+
+  onMount(() => {
+    ready = true
+    import('$lib/components/DeathModal/index.svelte').then(m => DeathModal = m.default)
+  })
+
+  // TODO: Bind all the death data to the fields in the form :vomit:
+  // TODO: Dispatch the poemon upate/patch event
 
   let box = {}, name = ''
   activeGame.subscribe(gameId => {
@@ -26,6 +34,18 @@
       name = games[gameId]?.name
     }))
   })
+
+  const { open } = getContext('simple-modal')
+  const { getPkmn } = getContext('game')
+  const handleKill = async (o) => {
+    const pokemon = await getPkmn(o.detail.pokemon)
+    await deferStyles('/assets/pokemon.css')
+    open(DeathModal, {
+      ...o.detail,
+      submit: (data) => { debugger },
+      pokemon,
+    })
+  }
 
   const graveyard = Object.values(box)
         .filter(i => i.pokemon)
@@ -76,9 +96,11 @@
         <GraveRow {i} maxRows={chunked.length}>
           {#each row as p, j}
             <div class='flex {j % 2 ? 'flex-row-reverse' : 'flex-row'} items-center justify-between max-sm:px-6 max-sm:mt-10 md:inline-block'
-                 in:fade={{ duration: 800, delay: Math.min(3000 / graveyard.length, 500) * ((i * chunkSize) + j) + 1000 }}
-                 >
-              <Grave {...p} i={(i * chunkSize) + j} className='row--{i}' />
+                 in:fade={{ duration: 800, delay: Math.min(3000 / graveyard.length, 500) * ((i * chunkSize) + j) + 1000 }}>
+              <Grave {...p} i={(i * chunkSize) + j}
+                     on:click={handleKill}
+                     className='row--{i}'
+                     />
             </div>
           {/each}
         </GraveRow>
