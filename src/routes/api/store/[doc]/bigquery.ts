@@ -68,7 +68,7 @@ export const processSave = async ({ data, user_id, game_id }: ISave) => {
         uploaded_at: +new Date() / 1000,
         ...(d.status === 5 && !isEmpty(death) ? nonnull({
             death_type: death.type,
-            death_time: death.time,
+            death_time: death.time / 1000,
             death_epitaph: death.epitaph,
             death_epitaph_custom: death?.custom,
             death_epitaph_category: death?.category,
