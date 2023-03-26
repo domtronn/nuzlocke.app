@@ -1,6 +1,11 @@
 <script>
   export let game, id, location = '', starter = '', type, forceLevelCap = false, reader = false
+
+  // Core leaader data
   let pokemon = [], name = '', speciality = '', img
+
+  // Extra leader data
+  let doubleBattle = false, effect
 
   import { browser } from '$app/environment'
   import { onMount, getContext } from 'svelte'
@@ -17,6 +22,8 @@
 
   import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
   import { Loop as Badge, Ball } from '$icons'
+
+  import Weather from '$lib/components/Weather.svelte'
 
   let CompareModal
   onMount(() => {
@@ -42,6 +49,9 @@
       pokemon = data.pokemon
       name = data.name
       speciality = data.speciality
+
+      doubleBattle = data.doubleBattle
+      effect = data.effect
       loading = false
     } catch (e) {
       console.error(e)
@@ -70,6 +80,10 @@
       class:md:-ml-2={!!img}
       class='text-left inline-flex gap-x-2 h-16 items-center -mt-4'
     >
+
+      {#if doubleBattle}
+        <b>DOUBLE BATTLE!!!!</b>
+      {/if}
 
       {#if img}
         <span class='relative -mx-5'>
@@ -106,6 +120,15 @@
           {#if speciality}
             <div><TypeBadge type={speciality} /></div>
           {/if}
+
+          {#if effect}
+            <Weather class='text-4xl rounded-full w-6 h-6 flex items-center justify-center translate-y-px' weather={effect}>
+              <svelte:fragment slot=tooltip>
+                Permanent Rain
+              </svelte:fragment>
+            </Weather>
+          {/if}
+
         </span>
 
         {#if loading}

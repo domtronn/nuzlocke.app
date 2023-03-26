@@ -15,6 +15,9 @@ const config = {
       fontSize: {
         tiny: '12px',
         xxs: '16px'
+        },
+      rotate: {
+        30: '30deg'
       },
       animation: {
         'ping-slow': 'ping 3s ease infinite',
