@@ -8,6 +8,7 @@ export const Expanded = Object.fromEntries(
       return acc.concat(
         game.difficulty.map((d) => {
           const [name, idmod] = d.split(':')
+
           return [key + idmod, {
             ...game,
             pid: game.pid + idmod,
