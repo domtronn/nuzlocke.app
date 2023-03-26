@@ -117,11 +117,11 @@
           {/if}
 
           {#if effect}
-            <Effect {effect} class='text-4xl w-6 h-6' />
+            <Effect {effect} class='text-4xl h-fit -mt-1' />
           {/if}
 
           {#if doubleBattle}
-            <Effect effect='double-battle' class='text-3xl' />
+            <Effect effect=double-battle class=text-3xl />
           {/if}
 
         </span>

@@ -61,18 +61,17 @@
 {/if}
 
 {#if effect === Effect.Sunlight}
-  <span use:switcher class={$$restProps.class || ''}>
+  <span use:switcher data-interval=750 class={$$restProps.class || ''}>
     <Tooltip>
       Permanent Harsh Sunlight
     </Tooltip>
-    <span use:switcher data-interval=750>
     <Icon class='transform scale-90' inline icon={Sun} />
     <Icon class='hidden transform scale-110 origin-center' inline icon={Sun} />
   </span>
 {/if}
 
 {#if effect === Effect.Sandstorm}
-  <span use:switcher data-interval=1000>
+  <span use:switcher data-interval=1000 class={$$restProps.class || ''}>
     <Tooltip>
       Permanent Sandstorm
     </Tooltip>
