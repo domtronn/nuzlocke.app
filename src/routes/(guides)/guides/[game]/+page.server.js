@@ -1,5 +1,5 @@
 import { error } from '@sveltejs/kit'
-import { toSlug } from '$lib/utils/string'
+import { toSlug, normalise } from '$lib/utils/string'
 
 import { Expanded as Games } from '$lib/data/games.js'
 import Themes from '$lib/data/theme.json'
@@ -44,7 +44,6 @@ export async function load ({ params, url, fetch }) {
     fetchJson(`/league/${gameCfg.pid}.grass.json`),
   ])
 
-  const normalise = (id) => id.replace(/-/g, '')
   const findPokemon = id => pokemon.find(p =>
     normalise(p.alias) === normalise(id) ||
       normalise(p.sprite) === normalise(id)

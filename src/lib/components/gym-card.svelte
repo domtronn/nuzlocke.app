@@ -157,7 +157,7 @@
         >
           <button
             class:mt-0={p.moves.length < 3}
-            class='compare opacity-25 hover:opacity-75 transition mx-8 -mt-4 mb-2 z-50'
+            class='compare opacity-25 hover:opacity-75 transition mx-8 mb-2 z-50'
             slot=footer
             on:click={_ => open(CompareModal, { pokemon, id: p.name })}
           >
