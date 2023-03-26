@@ -17,13 +17,12 @@
   import { createImgUrl } from '$utils/rewrites'
   import { toList } from '$utils/string'
 
-  import { Picture, PIcon, Accordion } from '$lib/components/core'
+  import { Picture, Icon, PIcon, Accordion, Tooltip } from '$c/core'
   import { Wrapper as SettingWrapper } from '$lib/components/Settings'
 
-  import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
-  import { Loop as Badge, Ball } from '$icons'
+  import { Loop as Badge, Ball, Double } from '$icons'
 
-  import Weather from '$lib/components/Weather.svelte'
+  import Effect from '$lib/components/Effect.svelte'
 
   let CompareModal
   onMount(() => {
@@ -81,10 +80,6 @@
       class='text-left inline-flex gap-x-2 h-16 items-center -mt-4'
     >
 
-      {#if doubleBattle}
-        <b>DOUBLE BATTLE!!!!</b>
-      {/if}
-
       {#if img}
         <span class='relative -mx-5'>
           <Picture
@@ -122,12 +117,21 @@
           {/if}
 
           {#if effect}
-            <Weather class='text-4xl rounded-full w-6 h-6 flex items-center justify-center translate-y-px' weather={effect}>
+            <Effect {effect} class='text-4xl w-6 h-6'>
               <svelte:fragment slot=tooltip>
                 Permanent Rain
               </svelte:fragment>
-            </Weather>
+            </Effect>
           {/if}
+
+          {#if doubleBattle}
+            <Effect effect='double-battle' class='text-3xl'>
+              <svelte:fragment slot=tooltip>
+                Double battle
+              </svelte:fragment>
+            </Effect>
+          {/if}
+
 
         </span>
 
