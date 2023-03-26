@@ -117,21 +117,12 @@
           {/if}
 
           {#if effect}
-            <Effect {effect} class='text-4xl w-6 h-6'>
-              <svelte:fragment slot=tooltip>
-                Permanent Rain
-              </svelte:fragment>
-            </Effect>
+            <Effect {effect} class='text-4xl w-6 h-6' />
           {/if}
 
           {#if doubleBattle}
-            <Effect effect='double-battle' class='text-3xl'>
-              <svelte:fragment slot=tooltip>
-                Double battle
-              </svelte:fragment>
-            </Effect>
+            <Effect effect='double-battle' class='text-3xl' />
           {/if}
-
 
         </span>
 
