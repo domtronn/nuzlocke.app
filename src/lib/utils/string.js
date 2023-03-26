@@ -8,12 +8,20 @@ export const capitalise = (str, lowerRest = false) => {
 export const unslugify = (s = '') => s.replace(/-/g, ' ')
 export const slugify = (s = '') => s.toLowerCase().replace(/ +/g, '-')
 
+export const normalise = (s = '') => s.replace(/[-\.]/g, '')
+
 export const toKebabCase = str =>
   str &&
   str
     .match(/[A-Z]{2,}(?=[A-Z][a-z]+[0-9]*|\b)|[A-Z]?[a-z]+[0-9]*|[A-Z]|[0-9]+/g)
     .map(x => x.toLowerCase())
     .join('-');
+
+export const regionise = str => str
+  .replace(/(.*)-galar/, 'Galarian $1')
+  .replace(/(.*)-alola/, 'Alolan $1')
+  .replace(/(.*)-paldea/, 'Paldean $1')
+  .replace(/(.*)-hisui/, 'Hisuin $1')
 
 export const toSlug = (str = '') =>
   str

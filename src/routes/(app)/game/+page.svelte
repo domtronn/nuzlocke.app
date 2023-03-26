@@ -18,7 +18,8 @@
   import deferStyles from '$lib/utils/defer-styles'
   import debounce from '$lib/utils/debounce'
   import { getGame, read, readdata,
-           savedGames, activeGame, updateGame, parse} from '$lib/store'
+           savedGames, activeGame, updateGame, parse,
+         } from '$lib/store'
 
   let gameStore, gameKey, gameData
   let routeEl

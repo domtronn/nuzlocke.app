@@ -48,7 +48,7 @@
     />
 
     <div class='text-left'>
-      <h2 class='font-bold transition text-xl leading-7'><mark class='bg-transparent dark:text-gray-50 dark:group-hover:text-gray-900 transition group-hover:bg-yellow-300'>{name}</mark></h2>
+      <h2 class='font-bold transition text-xl leading-7 max-w-[26ch]'><mark class='bg-transparent dark:text-gray-50 dark:group-hover:text-gray-900 transition group-hover:bg-yellow-300'>{name}</mark></h2>
       <h3 class='text-sm transition'><mark class='bg-transparent dark:text-gray-50 dark:group-hover:text-gray-900 transition group-hover:bg-yellow-300'>{date}<mark></h3>
       <span class='font-sans inline-flex items-center'>
         {(available || []).length}
