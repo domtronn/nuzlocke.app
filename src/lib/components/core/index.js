@@ -12,3 +12,4 @@ export { default as Toggle } from './Toggle.svelte'
 
 export { default as PIcon } from './PokemonIcon.svelte'
 export { default as Picture } from './Picture.svelte'
+export { default as Logo } from './Logo.svelte'

@@ -1,6 +1,6 @@
 <script>
   export let logo, title, theme, pid
-  import { Picture } from '$c/core'
+  import { Logo as Picture } from '$c/core'
   import { SVGs } from './'
   import ThemeToggle from '$c/theme-toggle.svelte'
   import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
@@ -48,12 +48,13 @@
 
       <div>
         <Picture
-          src='https://img.nuzlocke.app{logo}'
+          src='{logo}'
           alt='{title} Logo'
           role=presentation
-          aspect=192x96
-          className=drop-shadow-mark
-          />
+          loading=eager
+          aspect=382x192
+          class=drop-shadow-mark
+        />
       </div>
     {/if}
   </div>

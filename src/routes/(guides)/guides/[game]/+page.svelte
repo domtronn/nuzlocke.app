@@ -29,7 +29,7 @@
     "@type": "Article",
     "headline": `A Nuzlocke guide for Pokémon ${game.title}`,
     "alternativeHeadline": `A guide and overview to Nuzlocking Pokémon ${game.title}`,
-    "image": `https://nuzlocke.app${game.logo}.png`,
+    "image": `https://img.nuzlocke.app${game.logo}@2.png`,
     "author": "Nuzlocke Tracker",
     "genre": "Pokémon",
     "keywords": `pokemon nuzlocke ${game.title} encounters boss battles fights`,

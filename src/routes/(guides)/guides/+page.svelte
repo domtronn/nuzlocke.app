@@ -1,10 +1,11 @@
 <script>
   import Themes from '$data/theme.json'
   import { Expanded as Games } from '$data/games.js'
-  import { Picture } from '$c/core'
+  import { Logo as Picture } from '$c/core'
   import { Hero } from '$c/Guide'
 
   import { toSlug } from '$lib/utils/string'
+  import { IMG } from '$lib/utils/rewrites'
   
   const title = `Nuzlocke Tracker | Pokémon Nuzlocke Guides`
   const description = `Find guides to Nuzlocking every Pokémon game from Generation 1 to 8 as well as some of the most popular Rom Hacks.`
@@ -38,11 +39,11 @@
       <div>
         <div>
           <Picture
-            src='https://img.nuzlocke.app{logo}'
+            src='{IMG}{logo}'
             alt='{title} Logo'
             role=presentation
             aspect=180x90
-            className=drop-shadow-mark
+            class=drop-shadow-mark
           />
         </div>
         <div>
