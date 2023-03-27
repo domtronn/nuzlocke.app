@@ -2,7 +2,7 @@
 
   export let sprite, fallback, name, types, tera, level = '', moves, maxStat, held = '', ability = '', stats, nature = undefined, minimal = false
 
-  import { capitalise } from '$lib/utils/string'
+  import { capitalise, regionise } from '$lib/utils/string'
   import { isEmpty } from '$lib/utils/obj'
 
   import PIcon from '$lib/components/core/PokemonIcon.svelte'
@@ -18,7 +18,7 @@
   import { UNOWN } from '$utils/rewrites'
   import { Stars as Pattern } from '$utils/pattern'
 
-  const canonname = name.replace(/-(Alola|Galar)/, '')
+  const canonname = regionise(name)
 
   const cols = types.map(t => ColorMap[t])
   const bgImg = Pattern(cols[1] || cols[0])

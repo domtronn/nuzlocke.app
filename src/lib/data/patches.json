@@ -3896,6 +3896,4672 @@
       }
     }
   },
+  "insurgence": {
+    "move": {
+      "drakon-voice": {
+        "power": "105",
+        "type": "dragon",
+        "effect": "No effect",
+        "category": "special"
+      },
+      "ancient-roar": {
+        "power": "80",
+        "type": "rock",
+        "effect": "No effect",
+        "category": "special"
+      },
+      "livewire": {
+        "type": "electric",
+        "effect": "Causes Pokemon that are switched in to be immediately Paralyzed.",
+        "category": "status"
+      },
+      "dark-matter": {
+        "power": "150",
+        "type": "dark",
+        "effect": "The unknown forces of the world are unleashed. The user must recharge next turn.",
+        "category": "special"
+      },
+      "wildfire": {
+        "type": "fire",
+        "effect": "Burns the foe. If it is a Grass-type Pokemon, burns all Pokemon in their party weak to fire.",
+        "category": "status"
+      },
+      "lunar-cannon": {
+        "power": "105",
+        "type": "dark",
+        "effect": "A two-turn attack. The user gathers darkness, then blasts a bundled beam on the second turn.",
+        "category": "special"
+      },
+      "crystal-rush": {
+        "power": "45",
+        "type": "crystal",
+        "effect": "The user turns to solid crystal, hitting first.",
+        "category": "physical"
+      },
+      "new-moon": {
+        "type": "dark",
+        "effect": "The sky darkens to night, increasing the power of Dark- and Ghost-type moves.",
+        "category": "status"
+      },
+      "draco-jet": {
+        "power": "40",
+        "type": "dragon",
+        "effect": "A draconic fury in which the user always attacks first.",
+        "category": "physical"
+      }
+    },
+    "ability": {
+      "noctem": {
+        "name": "Noctem",
+        "effect": "The Pokémon summons darkness and blots out the sky as it enters the battle."
+      },
+      "intoxicate": {
+        "name": "Intoxicate",
+        "effect": "Intoxicate causes all Normal-type moves used by the Pokémon to become Poison-type and receive a 30% power boost."
+      },
+      "ice-cleats": {
+        "name": "Ice cleats",
+        "effect": "During hail the Speed stat of Pokémon with this Ability is doubled. A Pokémon with this Ability will take no damage from hail if it otherwise would."
+      },
+      "spirit-call": {
+        "name": "Spirit call",
+        "effect": "When a Pokémon with Spirit Call uses a Ghost-type move, the power will increase by 1.5× if the user has less than or equal to ⅓ of its maximum HP remaining."
+      },
+      "shadow-call": {
+        "name": "Shadow call",
+        "effect": "When a Pokémon with Shadow Call uses a Dark-type move, the power will increase by 1.5× if the user has less than or equal to ⅓ of its maximum HP remaining."
+      },
+      "psycho-call": {
+        "name": "Psycho call",
+        "effect": "When a Pokémon with Psycho Call uses a Psychic-type move, the power will increase by 1.5× if the user has less than or equal to ⅓ of its maximum HP remaining."
+      },
+      "shadow-dance": {
+        "name": "Shadow dance",
+        "effect": "During intense darkness, the Speed stat of Pokémon with this Ability is doubled."
+      },
+      "absolution": {
+        "name": "Absolution",
+        "effect": "During intense darkness, Absolution increases the Pokémon's Special Attack by 50 percent, but the Pokémon loses 1/8 of its maximum HP at the end of each turn."
+      }
+    },
+    "item": {
+      "dragon-fang": {
+        "name": "Dragon fang",
+        "sprite": "",
+        "effect": "Doubles Delta Clamperl's Attack  "
+      },
+      "dragon-scale": {
+        "name": "Dragon scale",
+        "sprite": "",
+        "effect": "Doubles Delta Clamperl's Defense"
+      },
+      "metal-powder": {
+        "name": "Metal powder",
+        "sprite": "",
+        "effect": "Doubles Detla Ditto's Defense"
+      },
+      "quick-powder": {
+        "name": "Quick powder",
+        "sprite": "",
+        "effect": "Doubles Detla Ditto's Speed"
+      },
+      "dark-rock": {
+        "name": "Dark rock",
+        "sprite": "heat-rock",
+        "effect": "Lengthens duration of New Moon and Noctem from 5 turns to 8 turns when used by the holder."
+      },
+      "d-volcarona-armor": {
+        "name": "D volcarona armor",
+        "sprite": "assault-vest",
+        "effect": "Increases Delta Volcarona's base Defense stat from 65 to 85 and base Special Defense stat from 105 to 137 when held."
+      },
+      "zekrom-armor": {
+        "name": "Zekrom armor",
+        "sprite": "assault-vest",
+        "effect": "Increases Zekrom's base Defense stat from 120 to 156 and base Special Defense stat from 100 to 130 when held."
+      },
+      "tyranitar-armor": {
+        "name": "Tyranitar armor",
+        "sprite": "assault-vest",
+        "effect": "Increases Tyranitar's base Defense stat from 110 to 143 and base Special Defense stat from 100 to 130 when held."
+      },
+      "crystal-fragment": {
+        "name": "Crystal fragment",
+        "sprite": "adamant-orb",
+        "effect": "Allows Delta Metagross (Ruin) to Crystallize into Crystal Delta Metagross (Ruin) when held during battle."
+      },
+      "cacturnite": {
+        "name": "Cacturnite",
+        "sprite": "sceptilite",
+        "effect": "Allows Cacturne to Mega Evolve into Mega Cacturne."
+      },
+      "crawdite": {
+        "name": "Crawdite",
+        "sprite": "salamencite",
+        "effect": "Allows Crawdaunt to Mega Evolve into Mega Crawdaunt."
+      },
+      "cryogonite": {
+        "name": "Cryogonite",
+        "sprite": "steelixite",
+        "effect": "Allows Cryogonal to Mega Evolve into Mega Cryogonal."
+      },
+      "delta-blastoisinite": {
+        "name": "Delta blastoisinite",
+        "sprite": "scizorite",
+        "effect": "Allows Delta Blastoise to Mega Evolve into Mega Delta Blastoise."
+      },
+      "delta-charizardite": {
+        "name": "Delta charizardite",
+        "sprite": "mewtwonite-y",
+        "effect": "Allows Delta Charizard to Mega Evolve into Mega Delta Charizard."
+      },
+      "delta-venusaurite": {
+        "name": "Delta venusaurite",
+        "sprite": "venasaurite",
+        "effect": "Allows Delta Venusaur to Mega Evolve into Mega Delta Venusaur."
+      },
+      "eevite": {
+        "name": "Eevite",
+        "sprite": "gyaradosite",
+        "effect": "Allows Eevee to Mega Evolve into Mega Eevee."
+      },
+      "flygonite": {
+        "name": "Flygonite",
+        "sprite": "sceptilite",
+        "effect": "Allows Flygon to Mega Evolve into Mega Flygon."
+      },
+      "gothitite": {
+        "name": "Gothitite",
+        "sprite": "aerodactylite",
+        "effect": "Allows Gothitelle to Mega Evolve into Mega Gothitelle."
+      },
+      "hydreigonite": {
+        "name": "Hydreigonite",
+        "sprite": "gengarite",
+        "effect": "Allows Hydreigon to Mega Evolve into Mega Hydreigon."
+      },
+      "magcargonite": {
+        "name": "Magcargonite",
+        "sprite": "lucarionite",
+        "effect": "Allows Magcargo to Mega Evolve into Mega Magcargo."
+      },
+      "miltankite": {
+        "name": "Miltankite",
+        "sprite": "kangaskhanite",
+        "effect": "Allows Miltank to Mega Evolve into Mega Miltank."
+      },
+      "politoedite": {
+        "name": "Politoedite",
+        "sprite": "abomasite",
+        "effect": "Allows Politoed to Mega Evolve into Mega Politoed."
+      },
+      "poliwrathite": {
+        "name": "Poliwrathite",
+        "sprite": "absolite",
+        "effect": "Allows Poliwrath to Mega Evolve into Mega Poliwrath."
+      },
+      "reuniclite": {
+        "name": "Reuniclite",
+        "sprite": "galladite",
+        "effect": "Allows Reuniculus to Mega Evolve into Mega Reuniculus."
+      },
+      "spiritombite": {
+        "name": "Spiritombite",
+        "sprite": "mewtwonite-x",
+        "effect": "Allows Spiritomb to Mega Evolve into Mega Spiritomb."
+      },
+      "stunfiskite": {
+        "name": "Stunfiskite",
+        "sprite": "pinsirite",
+        "effect": "Allows Stunfisk to Mega Evolve into Mega Stunfisk."
+      },
+      "sunflorite": {
+        "name": "Sunflorite",
+        "sprite": "sablenite",
+        "effect": "Allows Sunflora to Mega Evolve into Mega Sunflora."
+      },
+      "typhlosionite": {
+        "name": "Typhlosionite",
+        "sprite": "lopunnite",
+        "effect": "Allows Typhlosion to Mega Evolve into Mega Typhlosion."
+      },
+      "zebstrikite": {
+        "name": "Zebstrikite",
+        "sprite": "gardevoirite",
+        "effect": "Allows Zebstrika to Mega Evolve into Mega Zebstrika."
+      },
+      "zoronite": {
+        "name": "Zoronite",
+        "sprite": "scizorite",
+        "effect": "Allows Zoroark to Mega Evolve into Mega Zoroark."
+      }
+    },
+    "fakemon": {
+      "delta-bulbasaur": {
+        "name": "Delta Bulbasaur",
+        "label": "Delta Bulbasaur",
+        "alias": "delta-bulbasaur",
+        "sprite": "delta-bulbasaur",
+        "types": [
+          "fairy",
+          "psychic"
+        ],
+        "baseStats": {
+          "hp": 45,
+          "atk": 49,
+          "def": 49,
+          "spa": 65,
+          "spd": 65,
+          "spe": 45
+        },
+        "total": 318,
+        "evoline": "delta-bulbasaur",
+        "imgUrl": "/insurgence/delta-bulbasaur",
+        "evos": [
+          "delta-ivysaur                                      "
+        ]
+      },
+      "delta-ivysaur": {
+        "name": "Delta Ivysaur",
+        "label": "Delta Ivysaur",
+        "alias": "delta-ivysaur",
+        "sprite": "delta-ivysaur",
+        "types": [
+          "fairy",
+          "psychic"
+        ],
+        "baseStats": {
+          "hp": 60,
+          "atk": 62,
+          "def": 63,
+          "spa": 80,
+          "spd": 80,
+          "spe": 60
+        },
+        "total": 405,
+        "evoline": "delta-bulbasaur",
+        "imgUrl": "/insurgence/delta-ivysaur",
+        "evos": [
+          "delta-venusaur                                     "
+        ]
+      },
+      "delta-venusaur": {
+        "name": "Delta Venusaur",
+        "label": "Delta Venusaur",
+        "alias": "delta-venusaur",
+        "sprite": "delta-venusaur",
+        "types": [
+          "fairy",
+          "psychic"
+        ],
+        "baseStats": {
+          "hp": 80,
+          "atk": 82,
+          "def": 83,
+          "spa": 100,
+          "spd": 100,
+          "spe": 80
+        },
+        "total": 525,
+        "evoline": "delta-bulbasaur                                                    ",
+        "imgUrl": "/insurgence/delta-venusaur"
+      },
+      "delta-charmander": {
+        "name": "Delta Charmander",
+        "label": "Delta Charmander",
+        "alias": "delta-charmander",
+        "sprite": "delta-charmander",
+        "types": [
+          "ghost",
+          "dragon"
+        ],
+        "baseStats": {
+          "hp": 39,
+          "atk": 52,
+          "def": 43,
+          "spa": 60,
+          "spd": 50,
+          "spe": 65
+        },
+        "total": 309,
+        "evoline": "delta-charmander",
+        "imgUrl": "/insurgence/delta-charmander",
+        "evos": [
+          "delta-charmeleon                                    "
+        ]
+      },
+      "delta-charmeleon": {
+        "name": "Delta Charmeleon",
+        "label": "Delta Charmeleon",
+        "alias": "delta-charmeleon",
+        "sprite": "delta-charmeleon",
+        "types": [
+          "ghost",
+          "dragon"
+        ],
+        "baseStats": {
+          "hp": 58,
+          "atk": 64,
+          "def": 58,
+          "spa": 80,
+          "spd": 65,
+          "spe": 80
+        },
+        "total": 405,
+        "evoline": "delta-charmander",
+        "imgUrl": "/insurgence/delta-charmeleon",
+        "evos": [
+          "delta-charizard                                     "
+        ]
+      },
+      "delta-charizard": {
+        "name": "Delta Charizard",
+        "label": "Delta Charizard",
+        "alias": "delta-charizard",
+        "sprite": "delta-charizard",
+        "types": [
+          "ghost",
+          "dragon"
+        ],
+        "baseStats": {
+          "hp": 78,
+          "atk": 84,
+          "def": 78,
+          "spa": 109,
+          "spd": 85,
+          "spe": 100
+        },
+        "total": 534,
+        "evoline": "delta-charmander                                                    ",
+        "imgUrl": "/insurgence/delta-charizard"
+      },
+      "delta-squirtle": {
+        "name": "Delta Squirtle",
+        "label": "Delta Squirtle",
+        "alias": "delta-squirtle",
+        "sprite": "delta-squirtle",
+        "types": [
+          "dark",
+          "fighting"
+        ],
+        "baseStats": {
+          "hp": 44,
+          "atk": 48,
+          "def": 65,
+          "spa": 50,
+          "spd": 64,
+          "spe": 43
+        },
+        "total": 314,
+        "evoline": "delta-squirtle",
+        "imgUrl": "/insurgence/delta-squirtle",
+        "evos": [
+          "delta-wartortle                                     "
+        ]
+      },
+      "delta-wartortle": {
+        "name": "Delta Wartortle",
+        "label": "Delta Wartortle",
+        "alias": "delta-wartortle",
+        "sprite": "delta-wartortle",
+        "types": [
+          "dark",
+          "fighting"
+        ],
+        "baseStats": {
+          "hp": 59,
+          "atk": 63,
+          "def": 80,
+          "spa": 65,
+          "spd": 80,
+          "spe": 58
+        },
+        "total": 405,
+        "evoline": "delta-squirtle",
+        "imgUrl": "/insurgence/delta-wartortle",
+        "evos": [
+          "delta-blastoise                                     "
+        ]
+      },
+      "delta-blastoise": {
+        "name": "Delta Blastoise",
+        "label": "Delta Blastoise",
+        "alias": "delta-blastoise",
+        "sprite": "delta-blastoise",
+        "types": [
+          "dark",
+          "fighting"
+        ],
+        "baseStats": {
+          "hp": 79,
+          "atk": 83,
+          "def": 100,
+          "spa": 85,
+          "spd": 105,
+          "spe": 78
+        },
+        "total": 530,
+        "evoline": "delta-squirtle                                                       ",
+        "imgUrl": "/insurgence/delta-blastoise"
+      },
+      "delta-pawniard": {
+        "name": "Delta Pawniard",
+        "label": "Delta Pawniard",
+        "alias": "delta-pawniard",
+        "sprite": "delta-pawniard",
+        "types": [
+          "flying",
+          "fighting"
+        ],
+        "baseStats": {
+          "hp": 45,
+          "atk": 85,
+          "def": 70,
+          "spa": 40,
+          "spd": 40,
+          "spe": 60
+        },
+        "total": 340,
+        "evoline": "delta-pawniard",
+        "imgUrl": "/insurgence/delta-pawniard",
+        "evos": [
+          "delta-bisharp                                       "
+        ]
+      },
+      "delta-bisharp": {
+        "name": "Delta Bisharp",
+        "label": "Delta Bisharp",
+        "alias": "delta-bisharp",
+        "sprite": "delta-bisharp",
+        "types": [
+          "flying",
+          "fighting"
+        ],
+        "baseStats": {
+          "hp": 65,
+          "atk": 125,
+          "def": 100,
+          "spa": 60,
+          "spd": 70,
+          "spe": 70
+        },
+        "total": 490,
+        "evoline": "delta-pawniard                                                     ",
+        "imgUrl": "/insurgence/delta-bisharp"
+      },
+      "delta-ralts": {
+        "name": "Delta Ralts",
+        "label": "Delta Ralts",
+        "alias": "delta-ralts",
+        "sprite": "delta-ralts",
+        "types": [
+          "electric",
+          "ice"
+        ],
+        "baseStats": {
+          "hp": 28,
+          "atk": 25,
+          "def": 25,
+          "spa": 45,
+          "spd": 35,
+          "spe": 40
+        },
+        "total": 198,
+        "evoline": "delta-ralts",
+        "imgUrl": "/insurgence/delta-ralts",
+        "evos": [
+          "delta-kirlia                                           "
+        ]
+      },
+      "delta-kirlia": {
+        "name": "Delta Kirlia",
+        "label": "Delta Kirlia",
+        "alias": "delta-kirlia",
+        "sprite": "delta-kirlia",
+        "types": [
+          "electric",
+          "ice"
+        ],
+        "baseStats": {
+          "hp": 38,
+          "atk": 35,
+          "def": 35,
+          "spa": 65,
+          "spd": 55,
+          "spe": 50
+        },
+        "total": 278,
+        "evoline": "delta-ralts",
+        "imgUrl": "/insurgence/delta-kirlia",
+        "evos": [
+          "delta-gardevoir",
+          "delta-gallade                          "
+        ]
+      },
+      "delta-gardevoir": {
+        "name": "Delta Gardevoir",
+        "label": "Delta Gardevoir",
+        "alias": "delta-gardevoir",
+        "sprite": "delta-gardevoir",
+        "types": [
+          "electric",
+          "ice"
+        ],
+        "baseStats": {
+          "hp": 68,
+          "atk": 65,
+          "def": 65,
+          "spa": 125,
+          "spd": 115,
+          "spe": 80
+        },
+        "total": 518,
+        "evoline": "delta-ralts                                                         ",
+        "imgUrl": "/insurgence/delta-gardevoir"
+      },
+      "delta-gallade": {
+        "name": "Delta Gallade",
+        "label": "Delta Gallade",
+        "alias": "delta-gallade",
+        "sprite": "delta-gallade",
+        "types": [
+          "electric",
+          "ice"
+        ],
+        "baseStats": {
+          "hp": 68,
+          "atk": 125,
+          "def": 65,
+          "spa": 65,
+          "spd": 115,
+          "spe": 80
+        },
+        "total": 518,
+        "evoline": "delta-ralts                                                        ",
+        "imgUrl": "/insurgence/delta-gallade"
+      },
+      "delta-sunkern": {
+        "name": "Delta Sunkern",
+        "label": "Delta Sunkern",
+        "alias": "delta-sunkern",
+        "sprite": "delta-sunkern",
+        "types": [
+          "fire",
+          "poison"
+        ],
+        "baseStats": {
+          "hp": 30,
+          "atk": 30,
+          "def": 30,
+          "spa": 30,
+          "spd": 30,
+          "spe": 30
+        },
+        "total": 180,
+        "evoline": "delta-sunkern",
+        "imgUrl": "/insurgence/delta-sunkern",
+        "evos": [
+          "delta-sunflora                                       "
+        ]
+      },
+      "delta-sunflora": {
+        "name": "Delta Sunflora",
+        "label": "Delta Sunflora",
+        "alias": "delta-sunflora",
+        "sprite": "delta-sunflora",
+        "types": [
+          "fire",
+          "poison"
+        ],
+        "baseStats": {
+          "hp": 75,
+          "atk": 75,
+          "def": 55,
+          "spa": 105,
+          "spd": 85,
+          "spe": 30
+        },
+        "total": 425,
+        "evoline": "delta-sunkern                                                      ",
+        "imgUrl": "/insurgence/delta-sunflora"
+      },
+      "delta-bergmite": {
+        "name": "Delta Bergmite",
+        "label": "Delta Bergmite",
+        "alias": "delta-bergmite",
+        "sprite": "delta-bergmite",
+        "types": [
+          "rock"
+        ],
+        "baseStats": {
+          "hp": 55,
+          "atk": 69,
+          "def": 85,
+          "spa": 32,
+          "spd": 35,
+          "spe": 28
+        },
+        "total": 304,
+        "evoline": "delta-bergmite",
+        "imgUrl": "/insurgence/delta-bergmite",
+        "evos": [
+          "delta-avalugg                                       "
+        ]
+      },
+      "delta-avalugg": {
+        "name": "Delta Avalugg",
+        "label": "Delta Avalugg",
+        "alias": "delta-avalugg",
+        "sprite": "delta-avalugg",
+        "types": [
+          "rock",
+          "dragon"
+        ],
+        "baseStats": {
+          "hp": 95,
+          "atk": 117,
+          "def": 184,
+          "spa": 44,
+          "spd": 46,
+          "spe": 28
+        },
+        "total": 514,
+        "evoline": "delta-bergmite                                                     ",
+        "imgUrl": "/insurgence/delta-avalugg"
+      },
+      "delta-scyther": {
+        "name": "Delta Scyther",
+        "label": "Delta Scyther",
+        "alias": "delta-scyther",
+        "sprite": "delta-scyther",
+        "types": [
+          "ice",
+          "fighting"
+        ],
+        "baseStats": {
+          "hp": 70,
+          "atk": 110,
+          "def": 80,
+          "spa": 55,
+          "spd": 80,
+          "spe": 105
+        },
+        "total": 500,
+        "evoline": "delta-scyther",
+        "imgUrl": "/insurgence/delta-scyther",
+        "evos": [
+          "delta-scizor                                         "
+        ]
+      },
+      "delta-scizor": {
+        "name": "Delta Scizor",
+        "label": "Delta Scizor",
+        "alias": "delta-scizor",
+        "sprite": "delta-scizor",
+        "types": [
+          "ice",
+          "fighting"
+        ],
+        "baseStats": {
+          "hp": 70,
+          "atk": 130,
+          "def": 100,
+          "spa": 55,
+          "spd": 80,
+          "spe": 65
+        },
+        "total": 500,
+        "evoline": "delta-scyther                                                      ",
+        "imgUrl": "/insurgence/delta-scizor"
+      },
+      "delta-scraggy": {
+        "name": "Delta Scraggy",
+        "label": "Delta Scraggy",
+        "alias": "delta-scraggy",
+        "sprite": "delta-scraggy",
+        "types": [
+          "grass"
+        ],
+        "baseStats": {
+          "hp": 50,
+          "atk": 75,
+          "def": 70,
+          "spa": 35,
+          "spd": 70,
+          "spe": 48
+        },
+        "total": 348,
+        "evoline": "delta-scraggy",
+        "imgUrl": "/insurgence/delta-scraggy",
+        "evos": [
+          "delta-scrafty                                        "
+        ]
+      },
+      "delta-scrafty": {
+        "name": "Delta Scrafty",
+        "label": "Delta Scrafty",
+        "alias": "delta-scrafty",
+        "sprite": "delta-scrafty",
+        "types": [
+          "grass"
+        ],
+        "baseStats": {
+          "hp": 65,
+          "atk": 90,
+          "def": 115,
+          "spa": 45,
+          "spd": 115,
+          "spe": 58
+        },
+        "total": 488,
+        "evoline": "delta-scraggy                                                      ",
+        "imgUrl": "/insurgence/delta-scrafty"
+      },
+      "delta-combee": {
+        "name": "Delta Combee",
+        "label": "Delta Combee",
+        "alias": "delta-combee",
+        "sprite": "delta-combee",
+        "types": [
+          "steel",
+          "fire"
+        ],
+        "baseStats": {
+          "hp": 30,
+          "atk": 30,
+          "def": 42,
+          "spa": 30,
+          "spd": 42,
+          "spe": 70
+        },
+        "total": 244,
+        "evoline": "delta-combee",
+        "imgUrl": "/insurgence/delta-combee",
+        "evos": [
+          "delta-vespiquen                                       "
+        ]
+      },
+      "delta-vespiquen": {
+        "name": "Delta Vespiquen",
+        "label": "Delta Vespiquen",
+        "alias": "delta-vespiquen",
+        "sprite": "delta-vespiquen",
+        "types": [
+          "steel",
+          "fire"
+        ],
+        "baseStats": {
+          "hp": 70,
+          "atk": 80,
+          "def": 102,
+          "spa": 80,
+          "spd": 102,
+          "spe": 40
+        },
+        "total": 474,
+        "evoline": "delta-combee                                                       ",
+        "imgUrl": "/insurgence/delta-vespiquen"
+      },
+      "delta-koffing": {
+        "name": "Delta Koffing",
+        "label": "Delta Koffing",
+        "alias": "delta-koffing",
+        "sprite": "delta-koffing",
+        "types": [
+          "electric",
+          "flying"
+        ],
+        "baseStats": {
+          "hp": 40,
+          "atk": 65,
+          "def": 95,
+          "spa": 60,
+          "spd": 45,
+          "spe": 35
+        },
+        "total": 340,
+        "evoline": "delta-koffing",
+        "imgUrl": "/insurgence/delta-koffing",
+        "evos": [
+          "delta-weezing                                        "
+        ]
+      },
+      "delta-weezing": {
+        "name": "Delta Weezing",
+        "label": "Delta Weezing",
+        "alias": "delta-weezing",
+        "sprite": "delta-weezing",
+        "types": [
+          "electric",
+          "flying"
+        ],
+        "baseStats": {
+          "hp": 65,
+          "atk": 90,
+          "def": 120,
+          "spa": 85,
+          "spd": 70,
+          "spe": 60
+        },
+        "total": 490,
+        "evoline": "delta-koffing                                                      ",
+        "imgUrl": "/insurgence/delta-weezing"
+      },
+      "delta-purrloin": {
+        "name": "Delta Purrloin",
+        "label": "Delta Purrloin",
+        "alias": "delta-purrloin",
+        "sprite": "delta-purrloin",
+        "types": [
+          "ghost",
+          "fairy"
+        ],
+        "baseStats": {
+          "hp": 41,
+          "atk": 50,
+          "def": 37,
+          "spa": 50,
+          "spd": 37,
+          "spe": 66
+        },
+        "total": 281,
+        "evoline": "delta-purrloin",
+        "imgUrl": "/insurgence/delta-purrloin",
+        "evos": [
+          "delta-liepar                                        "
+        ]
+      },
+      "delta-liepard": {
+        "name": "Delta Liepard",
+        "label": "Delta Liepard",
+        "alias": "delta-liepard",
+        "sprite": "delta-liepard",
+        "types": [
+          "ghost",
+          "fairy"
+        ],
+        "baseStats": {
+          "hp": 64,
+          "atk": 88,
+          "def": 50,
+          "spa": 88,
+          "spd": 50,
+          "spe": 106
+        },
+        "total": 446,
+        "evoline": "delta-purrloin                                                     ",
+        "imgUrl": "/insurgence/delta-liepard"
+      },
+      "delta-phantump": {
+        "name": "Delta Phantump",
+        "label": "Delta Phantump",
+        "alias": "delta-phantump",
+        "sprite": "delta-phantump",
+        "types": [
+          "fairy"
+        ],
+        "baseStats": {
+          "hp": 43,
+          "atk": 70,
+          "def": 48,
+          "spa": 50,
+          "spd": 60,
+          "spe": 38
+        },
+        "total": 309,
+        "evoline": "delta-phantump",
+        "imgUrl": "/insurgence/delta-phantump",
+        "evos": [
+          "delta-trevenant                                     "
+        ]
+      },
+      "delta-trevenant": {
+        "name": "Delta Trevenant",
+        "label": "Delta Trevenant",
+        "alias": "delta-trevenant",
+        "sprite": "delta-trevenant",
+        "types": [
+          "fairy",
+          "fighting"
+        ],
+        "baseStats": {
+          "hp": 85,
+          "atk": 110,
+          "def": 76,
+          "spa": 65,
+          "spd": 82,
+          "spe": 56
+        },
+        "total": 474,
+        "evoline": "delta-phantump                                                       ",
+        "imgUrl": "/insurgence/delta-trevenant"
+      },
+      "delta-snorunt": {
+        "name": "Delta Snorunt",
+        "label": "Delta Snorunt",
+        "alias": "delta-snorunt",
+        "sprite": "delta-snorunt",
+        "types": [
+          "fire"
+        ],
+        "baseStats": {
+          "hp": 50,
+          "atk": 50,
+          "def": 50,
+          "spa": 50,
+          "spd": 50,
+          "spe": 50
+        },
+        "total": 300,
+        "evoline": "delta-snorunt",
+        "imgUrl": "/insurgence/delta-snorunt",
+        "evos": [
+          "delta-glalie",
+          "delta-froslass                          "
+        ]
+      },
+      "delta-glalie": {
+        "name": "Delta Glalie",
+        "label": "Delta Glalie",
+        "alias": "delta-glalie",
+        "sprite": "delta-glalie",
+        "types": [
+          "fire",
+          "rock"
+        ],
+        "baseStats": {
+          "hp": 80,
+          "atk": 80,
+          "def": 80,
+          "spa": 80,
+          "spd": 80,
+          "spe": 80
+        },
+        "total": 480,
+        "evoline": "delta-snorunt                                                      ",
+        "imgUrl": "/insurgence/delta-glalie"
+      },
+      "delta-froslass": {
+        "name": "Delta Froslass",
+        "label": "Delta Froslass",
+        "alias": "delta-froslass",
+        "sprite": "delta-froslass",
+        "types": [
+          "fire"
+        ],
+        "baseStats": {
+          "hp": 70,
+          "atk": 80,
+          "def": 70,
+          "spa": 80,
+          "spd": 70,
+          "spe": 110
+        },
+        "total": 480,
+        "evoline": "delta-snorunt                                                      ",
+        "imgUrl": "/insurgence/delta-froslass"
+      },
+      "delta-shinx": {
+        "name": "Delta Shinx",
+        "label": "Delta Shinx",
+        "alias": "delta-shinx",
+        "sprite": "delta-shinx",
+        "types": [
+          "steel",
+          "poison"
+        ],
+        "baseStats": {
+          "hp": 45,
+          "atk": 65,
+          "def": 34,
+          "spa": 40,
+          "spd": 34,
+          "spe": 45
+        },
+        "total": 263,
+        "evoline": "delta-shinx",
+        "imgUrl": "/insurgence/delta-shinx",
+        "evos": [
+          "delta-luxio                                            "
+        ]
+      },
+      "delta-luxio": {
+        "name": "Delta Luxio",
+        "label": "Delta Luxio",
+        "alias": "delta-luxio",
+        "sprite": "delta-luxio",
+        "types": [
+          "steel",
+          "poison"
+        ],
+        "baseStats": {
+          "hp": 60,
+          "atk": 85,
+          "def": 49,
+          "spa": 60,
+          "spd": 49,
+          "spe": 60
+        },
+        "total": 363,
+        "evoline": "delta-shinx",
+        "imgUrl": "/insurgence/delta-luxio",
+        "evos": [
+          "delta-luxray                                           "
+        ]
+      },
+      "delta-luxray": {
+        "name": "Delta Luxray",
+        "label": "Delta Luxray",
+        "alias": "delta-luxray",
+        "sprite": "delta-luxray",
+        "types": [
+          "steel",
+          "poison"
+        ],
+        "baseStats": {
+          "hp": 80,
+          "atk": 120,
+          "def": 79,
+          "spa": 95,
+          "spd": 79,
+          "spe": 70
+        },
+        "total": 523,
+        "evoline": "delta-shinx                                                        ",
+        "imgUrl": "/insurgence/delta-luxray"
+      },
+      "delta-noibat": {
+        "name": "Delta Noibat",
+        "label": "Delta Noibat",
+        "alias": "delta-noibat",
+        "sprite": "delta-noibat",
+        "types": [
+          "grass",
+          "steel"
+        ],
+        "baseStats": {
+          "hp": 40,
+          "atk": 30,
+          "def": 35,
+          "spa": 45,
+          "spd": 40,
+          "spe": 55
+        },
+        "total": 245,
+        "evoline": "delta-noibat",
+        "imgUrl": "/insurgence/delta-noibat",
+        "evos": [
+          "delta-noivern                                         "
+        ]
+      },
+      "delta-noivern": {
+        "name": "Delta Noivern",
+        "label": "Delta Noivern",
+        "alias": "delta-noivern",
+        "sprite": "delta-noivern",
+        "types": [
+          "grass",
+          "steel"
+        ],
+        "baseStats": {
+          "hp": 85,
+          "atk": 70,
+          "def": 80,
+          "spa": 97,
+          "spd": 80,
+          "spe": 123
+        },
+        "total": 535,
+        "evoline": "delta-noibat                                                       ",
+        "imgUrl": "/insurgence/delta-noivern"
+      },
+      "delta-budew": {
+        "name": "Delta Budew",
+        "label": "Delta Budew",
+        "alias": "delta-budew",
+        "sprite": "delta-budew",
+        "types": [
+          "dark",
+          "fairy"
+        ],
+        "baseStats": {
+          "hp": 40,
+          "atk": 30,
+          "def": 35,
+          "spa": 50,
+          "spd": 70,
+          "spe": 55
+        },
+        "total": 280,
+        "evoline": "delta-budew",
+        "imgUrl": "/insurgence/delta-budew",
+        "evos": [
+          "delta-roselia                                          "
+        ]
+      },
+      "delta-roselia": {
+        "name": "Delta Roselia",
+        "label": "Delta Roselia",
+        "alias": "delta-roselia",
+        "sprite": "delta-roselia",
+        "types": [
+          "dark",
+          "fairy"
+        ],
+        "baseStats": {
+          "hp": 50,
+          "atk": 60,
+          "def": 45,
+          "spa": 100,
+          "spd": 80,
+          "spe": 65
+        },
+        "total": 400,
+        "evoline": "delta-budew",
+        "imgUrl": "/insurgence/delta-roselia",
+        "evos": [
+          "delta-roserade                                         "
+        ]
+      },
+      "delta-roserade": {
+        "name": "Delta Roserade",
+        "label": "Delta Roserade",
+        "alias": "delta-roserade",
+        "sprite": "delta-roserade",
+        "types": [
+          "dark",
+          "fairy"
+        ],
+        "baseStats": {
+          "hp": 60,
+          "atk": 70,
+          "def": 65,
+          "spa": 125,
+          "spd": 105,
+          "spe": 90
+        },
+        "total": 515,
+        "evoline": "delta-budew                                                        ",
+        "imgUrl": "/insurgence/delta-roserade"
+      },
+      "delta-drifloon": {
+        "name": "Delta Drifloon",
+        "label": "Delta Drifloon",
+        "alias": "delta-drifloon",
+        "sprite": "delta-drifloon",
+        "types": [
+          "fire",
+          "flying"
+        ],
+        "baseStats": {
+          "hp": 90,
+          "atk": 50,
+          "def": 34,
+          "spa": 60,
+          "spd": 44,
+          "spe": 70
+        },
+        "total": 348,
+        "evoline": "delta-drifloon",
+        "imgUrl": "/insurgence/delta-drifloon",
+        "evos": [
+          "delta-drifblim                                      "
+        ]
+      },
+      "delta-drifblim": {
+        "name": "Delta Drifblim",
+        "label": "Delta Drifblim",
+        "alias": "delta-drifblim",
+        "sprite": "delta-drifblim",
+        "types": [
+          "fire",
+          "flying"
+        ],
+        "baseStats": {
+          "hp": 150,
+          "atk": 80,
+          "def": 44,
+          "spa": 90,
+          "spd": 54,
+          "spe": 80
+        },
+        "total": 498,
+        "evoline": "delta-drifloon                                                     ",
+        "imgUrl": "/insurgence/delta-drifblim"
+      },
+      "delta-grimer": {
+        "name": "Delta Grimer",
+        "label": "Delta Grimer",
+        "alias": "delta-grimer",
+        "sprite": "delta-grimer",
+        "types": [
+          "ground"
+        ],
+        "baseStats": {
+          "hp": 80,
+          "atk": 80,
+          "def": 50,
+          "spa": 40,
+          "spd": 50,
+          "spe": 25
+        },
+        "total": 325,
+        "evoline": "delta-grimer",
+        "imgUrl": "/insurgence/delta-grimer",
+        "evos": [
+          "delta-muk                                             "
+        ]
+      },
+      "delta-muk": {
+        "name": "Delta Muk",
+        "label": "Delta Muk",
+        "alias": "delta-muk",
+        "sprite": "delta-muk",
+        "types": [
+          "ground"
+        ],
+        "baseStats": {
+          "hp": 105,
+          "atk": 105,
+          "def": 75,
+          "spa": 65,
+          "spd": 100,
+          "spe": 50
+        },
+        "total": 500,
+        "evoline": "delta-grimer                                                       ",
+        "imgUrl": "/insurgence/delta-muk"
+      },
+      "delta-wooper": {
+        "name": "Delta Wooper",
+        "label": "Delta Wooper",
+        "alias": "delta-wooper",
+        "sprite": "delta-wooper",
+        "types": [
+          "grass",
+          "fire"
+        ],
+        "baseStats": {
+          "hp": 55,
+          "atk": 45,
+          "def": 45,
+          "spa": 25,
+          "spd": 25,
+          "spe": 15
+        },
+        "total": 210,
+        "evoline": "delta-wooper",
+        "imgUrl": "/insurgence/delta-wooper",
+        "evos": [
+          "delta-quagsire                                        "
+        ]
+      },
+      "delta-quagsire": {
+        "name": "Delta Quagsire",
+        "label": "Delta Quagsire",
+        "alias": "delta-quagsire",
+        "sprite": "delta-quagsire",
+        "types": [
+          "grass",
+          "fire"
+        ],
+        "baseStats": {
+          "hp": 95,
+          "atk": 85,
+          "def": 85,
+          "spa": 65,
+          "spd": 65,
+          "spe": 35
+        },
+        "total": 430,
+        "evoline": "delta-wooper                                                       ",
+        "imgUrl": "/insurgence/delta-quagsire"
+      },
+      "delta-munchlax": {
+        "name": "Delta Munchlax",
+        "label": "Delta Munchlax",
+        "alias": "delta-munchlax",
+        "sprite": "delta-munchlax",
+        "types": [
+          "grass"
+        ],
+        "baseStats": {
+          "hp": 135,
+          "atk": 85,
+          "def": 40,
+          "spa": 40,
+          "spd": 85,
+          "spe": 5
+        },
+        "total": 390,
+        "evoline": "delta-munchlax",
+        "imgUrl": "/insurgence/delta-munchlax",
+        "evos": [
+          "delta-snorlax                                       "
+        ]
+      },
+      "delta-snorlax": {
+        "name": "Delta Snorlax",
+        "label": "Delta Snorlax",
+        "alias": "delta-snorlax",
+        "sprite": "delta-snorlax",
+        "types": [
+          "grass"
+        ],
+        "baseStats": {
+          "hp": 160,
+          "atk": 110,
+          "def": 65,
+          "spa": 65,
+          "spd": 110,
+          "spe": 30
+        },
+        "total": 540,
+        "evoline": "delta-munchlax                                                     ",
+        "imgUrl": "/insurgence/delta-snorlax"
+      },
+      "delta-misdreavus": {
+        "name": "Delta Misdreavus",
+        "label": "Delta Misdreavus",
+        "alias": "delta-misdreavus",
+        "sprite": "delta-misdreavus",
+        "types": [
+          "ice",
+          "fairy"
+        ],
+        "baseStats": {
+          "hp": 60,
+          "atk": 60,
+          "def": 60,
+          "spa": 85,
+          "spd": 85,
+          "spe": 85
+        },
+        "total": 435,
+        "evoline": "delta-misdreavus",
+        "imgUrl": "/insurgence/delta-misdreavus",
+        "evos": [
+          "delta-mismagius                                   "
+        ]
+      },
+      "delta-mismagius": {
+        "name": "Delta Mismagius",
+        "label": "Delta Mismagius",
+        "alias": "delta-mismagius",
+        "sprite": "delta-mismagius",
+        "types": [
+          "ice",
+          "fairy"
+        ],
+        "baseStats": {
+          "hp": 60,
+          "atk": 60,
+          "def": 60,
+          "spa": 105,
+          "spd": 105,
+          "spe": 105
+        },
+        "total": 495,
+        "evoline": "delta-misdreavus                                                   ",
+        "imgUrl": "/insurgence/delta-mismagius"
+      },
+      "delta-cyndaquil": {
+        "name": "Delta Cyndaquil",
+        "label": "Delta Cyndaquil",
+        "alias": "delta-cyndaquil",
+        "sprite": "delta-cyndaquil",
+        "types": [
+          "electric"
+        ],
+        "baseStats": {
+          "hp": 39,
+          "atk": 52,
+          "def": 43,
+          "spa": 60,
+          "spd": 50,
+          "spe": 65
+        },
+        "total": 309,
+        "evoline": "delta-cyndaquil",
+        "imgUrl": "/insurgence/delta-cyndaquil",
+        "evos": [
+          "delta-quilava                                         "
+        ]
+      },
+      "delta-quilava": {
+        "name": "Delta Quilava",
+        "label": "Delta Quilava",
+        "alias": "delta-quilava",
+        "sprite": "delta-quilava",
+        "types": [
+          "electric",
+          "steel"
+        ],
+        "baseStats": {
+          "hp": 58,
+          "atk": 64,
+          "def": 58,
+          "spa": 80,
+          "spd": 65,
+          "spe": 80
+        },
+        "total": 405,
+        "evoline": "delta-cyndaquil",
+        "imgUrl": "/insurgence/delta-quilava",
+        "evos": [
+          "delta-typhlosion                                   "
+        ]
+      },
+      "delta-typhlosion": {
+        "name": "Delta Typhlosion",
+        "label": "Delta Typhlosion",
+        "alias": "delta-typhlosion",
+        "sprite": "delta-typhlosion",
+        "types": [
+          "electric",
+          "steel"
+        ],
+        "baseStats": {
+          "hp": 78,
+          "atk": 84,
+          "def": 78,
+          "spa": 109,
+          "spd": 85,
+          "spe": 100
+        },
+        "total": 534,
+        "evoline": "delta-cyndaquil                                                          ",
+        "imgUrl": "/insurgence/delta-typhlosion"
+      },
+      "delta-treecko": {
+        "name": "Delta Treecko",
+        "label": "Delta Treecko",
+        "alias": "delta-treecko",
+        "sprite": "delta-treecko",
+        "types": [
+          "normal",
+          "fighting"
+        ],
+        "baseStats": {
+          "hp": 40,
+          "atk": 45,
+          "def": 35,
+          "spa": 65,
+          "spd": 55,
+          "spe": 70
+        },
+        "total": 310,
+        "evoline": "delta-treecko",
+        "imgUrl": "/insurgence/delta-treecko",
+        "evos": [
+          "delta-grovyle                                        "
+        ]
+      },
+      "delta-grovyle": {
+        "name": "Delta Grovyle",
+        "label": "Delta Grovyle",
+        "alias": "delta-grovyle",
+        "sprite": "delta-grovyle",
+        "types": [
+          "normal",
+          "fighting"
+        ],
+        "baseStats": {
+          "hp": 50,
+          "atk": 65,
+          "def": 45,
+          "spa": 85,
+          "spd": 65,
+          "spe": 95
+        },
+        "total": 405,
+        "evoline": "delta-treecko",
+        "imgUrl": "/insurgence/delta-grovyle",
+        "evos": [
+          "delta-sceptile                                       "
+        ]
+      },
+      "delta-sceptile": {
+        "name": "Delta Sceptile",
+        "label": "Delta Sceptile",
+        "alias": "delta-sceptile",
+        "sprite": "delta-sceptile",
+        "types": [
+          "dragon",
+          "fighting"
+        ],
+        "baseStats": {
+          "hp": 70,
+          "atk": 85,
+          "def": 65,
+          "spa": 105,
+          "spd": 85,
+          "spe": 120
+        },
+        "total": 530,
+        "evoline": "delta-treecko                                                       ",
+        "imgUrl": "/insurgence/delta-sceptile"
+      },
+      "delta-torchic": {
+        "name": "Delta Torchic",
+        "label": "Delta Torchic",
+        "alias": "delta-torchic",
+        "sprite": "delta-torchic",
+        "types": [
+          "psychic"
+        ],
+        "baseStats": {
+          "hp": 45,
+          "atk": 60,
+          "def": 40,
+          "spa": 70,
+          "spd": 50,
+          "spe": 45
+        },
+        "total": 310,
+        "evoline": "delta-torchic",
+        "imgUrl": "/insurgence/delta-torchic",
+        "evos": [
+          "delta-combusken                                      "
+        ]
+      },
+      "delta-combusken": {
+        "name": "Delta Combusken",
+        "label": "Delta Combusken",
+        "alias": "delta-combusken",
+        "sprite": "delta-combusken",
+        "types": [
+          "psychic"
+        ],
+        "baseStats": {
+          "hp": 60,
+          "atk": 85,
+          "def": 60,
+          "spa": 85,
+          "spd": 60,
+          "spe": 55
+        },
+        "total": 405,
+        "evoline": "delta-torchic",
+        "imgUrl": "/insurgence/delta-combusken",
+        "evos": [
+          "delta-blaziken                                         "
+        ]
+      },
+      "delta-blaziken": {
+        "name": "Delta Blaziken",
+        "label": "Delta Blaziken",
+        "alias": "delta-blaziken",
+        "sprite": "delta-blaziken",
+        "types": [
+          "psychic",
+          "flying"
+        ],
+        "baseStats": {
+          "hp": 80,
+          "atk": 120,
+          "def": 70,
+          "spa": 110,
+          "spd": 70,
+          "spe": 80
+        },
+        "total": 530,
+        "evoline": "delta-torchic                                                      ",
+        "imgUrl": "/insurgence/delta-blaziken"
+      },
+      "delta-turtwig": {
+        "name": "Delta Turtwig",
+        "label": "Delta Turtwig",
+        "alias": "delta-turtwig",
+        "sprite": "delta-turtwig",
+        "types": [
+          "water",
+          "ground"
+        ],
+        "baseStats": {
+          "hp": 55,
+          "atk": 68,
+          "def": 64,
+          "spa": 45,
+          "spd": 55,
+          "spe": 31
+        },
+        "total": 318,
+        "evoline": "delta-turtwig",
+        "imgUrl": "/insurgence/delta-turtwig",
+        "evos": [
+          "delta-grotle                                         "
+        ]
+      },
+      "delta-grotle": {
+        "name": "Delta Grotle",
+        "label": "Delta Grotle",
+        "alias": "delta-grotle",
+        "sprite": "delta-grotle",
+        "types": [
+          "water",
+          "ground"
+        ],
+        "baseStats": {
+          "hp": 75,
+          "atk": 89,
+          "def": 85,
+          "spa": 55,
+          "spd": 65,
+          "spe": 36
+        },
+        "total": 405,
+        "evoline": "delta-turtwig",
+        "imgUrl": "/insurgence/delta-grotle",
+        "evos": [
+          "delta-torterra                                       "
+        ]
+      },
+      "delta-torterra": {
+        "name": "Delta Torterra",
+        "label": "Delta Torterra",
+        "alias": "delta-torterra",
+        "sprite": "delta-torterra",
+        "types": [
+          "water",
+          "ground"
+        ],
+        "baseStats": {
+          "hp": 95,
+          "atk": 109,
+          "def": 105,
+          "spa": 75,
+          "spd": 85,
+          "spe": 56
+        },
+        "total": 525,
+        "evoline": "delta-turtwig                                                      ",
+        "imgUrl": "/insurgence/delta-torterra"
+      },
+      "delta-snivy": {
+        "name": "Delta Snivy",
+        "label": "Delta Snivy",
+        "alias": "delta-snivy",
+        "sprite": "delta-snivy",
+        "types": [
+          "water"
+        ],
+        "baseStats": {
+          "hp": 45,
+          "atk": 45,
+          "def": 55,
+          "spa": 45,
+          "spd": 55,
+          "spe": 63
+        },
+        "total": 308,
+        "evoline": "delta-snivy",
+        "imgUrl": "/insurgence/delta-snivy",
+        "evos": [
+          "delta-servine                                          "
+        ]
+      },
+      "delta-servine": {
+        "name": "Delta Servine",
+        "label": "Delta Servine",
+        "alias": "delta-servine",
+        "sprite": "delta-servine",
+        "types": [
+          "water"
+        ],
+        "baseStats": {
+          "hp": 60,
+          "atk": 60,
+          "def": 75,
+          "spa": 60,
+          "spd": 75,
+          "spe": 83
+        },
+        "total": 413,
+        "evoline": "delta-snivy",
+        "imgUrl": "/insurgence/delta-servine",
+        "evos": [
+          "delta-serperior                                        "
+        ]
+      },
+      "delta-serperior": {
+        "name": "Delta Serperior",
+        "label": "Delta Serperior",
+        "alias": "delta-serperior",
+        "sprite": "delta-serperior",
+        "types": [
+          "water",
+          "dragon"
+        ],
+        "baseStats": {
+          "hp": 75,
+          "atk": 75,
+          "def": 95,
+          "spa": 75,
+          "spd": 95,
+          "spe": 113
+        },
+        "total": 528,
+        "evoline": "delta-snivy                                                        ",
+        "imgUrl": "/insurgence/delta-serperior"
+      },
+      "delta-froakie": {
+        "name": "Delta Froakie",
+        "label": "Delta Froakie",
+        "alias": "delta-froakie",
+        "sprite": "delta-froakie",
+        "types": [
+          "grass"
+        ],
+        "baseStats": {
+          "hp": 41,
+          "atk": 56,
+          "def": 40,
+          "spa": 62,
+          "spd": 44,
+          "spe": 71
+        },
+        "total": 314,
+        "evoline": "delta-froakie",
+        "imgUrl": "/insurgence/delta-froakie",
+        "evos": [
+          "delta-frogadier                                      "
+        ]
+      },
+      "delta-frogadier": {
+        "name": "Delta Frogadier",
+        "label": "Delta Frogadier",
+        "alias": "delta-frogadier",
+        "sprite": "delta-frogadier",
+        "types": [
+          "grass"
+        ],
+        "baseStats": {
+          "hp": 54,
+          "atk": 63,
+          "def": 52,
+          "spa": 83,
+          "spd": 56,
+          "spe": 97
+        },
+        "total": 405,
+        "evoline": "delta-froakie",
+        "imgUrl": "/insurgence/delta-frogadier",
+        "evos": [
+          "delta-greninja                                       "
+        ]
+      },
+      "delta-greninja": {
+        "name": "Delta Greninja",
+        "label": "Delta Greninja",
+        "alias": "delta-greninja",
+        "sprite": "delta-greninja",
+        "types": [
+          "grass",
+          "fire"
+        ],
+        "baseStats": {
+          "hp": 72,
+          "atk": 95,
+          "def": 67,
+          "spa": 103,
+          "spd": 71,
+          "spe": 122
+        },
+        "total": 530,
+        "evoline": "delta-froakie                                                      ",
+        "imgUrl": "/insurgence/delta-greninja"
+      },
+      "delta-pidgey": {
+        "name": "Delta Pidgey",
+        "label": "Delta Pidgey",
+        "alias": "delta-pidgey",
+        "sprite": "delta-pidgey",
+        "types": [
+          "dark",
+          "dragon"
+        ],
+        "baseStats": {
+          "hp": 40,
+          "atk": 45,
+          "def": 40,
+          "spa": 35,
+          "spd": 35,
+          "spe": 56
+        },
+        "total": 251,
+        "evoline": "delta-pidgey",
+        "imgUrl": "/insurgence/delta-pidgey",
+        "evos": [
+          "delta-pidgeotto                                       "
+        ]
+      },
+      "delta-pidgeotto": {
+        "name": "Delta Pidgeotto",
+        "label": "Delta Pidgeotto",
+        "alias": "delta-pidgeotto",
+        "sprite": "delta-pidgeotto",
+        "types": [
+          "dark",
+          "dragon"
+        ],
+        "baseStats": {
+          "hp": 63,
+          "atk": 60,
+          "def": 55,
+          "spa": 50,
+          "spd": 50,
+          "spe": 71
+        },
+        "total": 349,
+        "evoline": "delta-pidgey",
+        "imgUrl": "/insurgence/delta-pidgeotto",
+        "evos": [
+          "delta-pidgeot                                         "
+        ]
+      },
+      "delta-pidgeot": {
+        "name": "Delta Pidgeot",
+        "label": "Delta Pidgeot",
+        "alias": "delta-pidgeot",
+        "sprite": "delta-pidgeot",
+        "types": [
+          "dark",
+          "dragon"
+        ],
+        "baseStats": {
+          "hp": 83,
+          "atk": 80,
+          "def": 75,
+          "spa": 70,
+          "spd": 70,
+          "spe": 101
+        },
+        "total": 479,
+        "evoline": "delta-pidgey                                                       ",
+        "imgUrl": "/insurgence/delta-pidgeot"
+      },
+      "delta-diglett": {
+        "name": "Delta Diglett",
+        "label": "Delta Diglett",
+        "alias": "delta-diglett",
+        "sprite": "delta-diglett",
+        "types": [
+          "ice",
+          "normal"
+        ],
+        "baseStats": {
+          "hp": 10,
+          "atk": 55,
+          "def": 25,
+          "spa": 35,
+          "spd": 45,
+          "spe": 95
+        },
+        "total": 265,
+        "evoline": "delta-diglett",
+        "imgUrl": "/insurgence/delta-diglett",
+        "evos": [
+          "delta-dugtrio                                        "
+        ]
+      },
+      "delta-dugtrio": {
+        "name": "Delta Dugtrio",
+        "label": "Delta Dugtrio",
+        "alias": "delta-dugtrio",
+        "sprite": "delta-dugtrio",
+        "types": [
+          "ice",
+          "normal"
+        ],
+        "baseStats": {
+          "hp": 35,
+          "atk": 80,
+          "def": 50,
+          "spa": 50,
+          "spd": 70,
+          "spe": 120
+        },
+        "total": 405,
+        "evoline": "delta-diglett                                                      ",
+        "imgUrl": "/insurgence/delta-dugtrio"
+      },
+      "delta-growlithe": {
+        "name": "Delta Growlithe",
+        "label": "Delta Growlithe",
+        "alias": "delta-growlithe",
+        "sprite": "delta-growlithe",
+        "types": [
+          "normal",
+          "dragon"
+        ],
+        "baseStats": {
+          "hp": 55,
+          "atk": 70,
+          "def": 45,
+          "spa": 70,
+          "spd": 50,
+          "spe": 60
+        },
+        "total": 350,
+        "evoline": "delta-growlithe",
+        "imgUrl": "/insurgence/delta-growlithe",
+        "evos": [
+          "delta-arcanine                                     "
+        ]
+      },
+      "delta-arcanine": {
+        "name": "Delta Arcanine",
+        "label": "Delta Arcanine",
+        "alias": "delta-arcanine",
+        "sprite": "delta-arcanine",
+        "types": [
+          "normal",
+          "dragon"
+        ],
+        "baseStats": {
+          "hp": 90,
+          "atk": 110,
+          "def": 80,
+          "spa": 100,
+          "spd": 80,
+          "spe": 95
+        },
+        "total": 555,
+        "evoline": "delta-growlithe                                                    ",
+        "imgUrl": "/insurgence/delta-arcanine"
+      },
+      "delta-geodude": {
+        "name": "Delta Geodude",
+        "label": "Delta Geodude",
+        "alias": "delta-geodude",
+        "sprite": "delta-geodude",
+        "types": [
+          "psychic",
+          "rock"
+        ],
+        "baseStats": {
+          "hp": 40,
+          "atk": 80,
+          "def": 100,
+          "spa": 30,
+          "spd": 30,
+          "spe": 20
+        },
+        "total": 300,
+        "evoline": "delta-geodude",
+        "imgUrl": "/insurgence/delta-geodude",
+        "evos": [
+          "delta-graveler                                       "
+        ]
+      },
+      "delta-graveler": {
+        "name": "Delta Graveler",
+        "label": "Delta Graveler",
+        "alias": "delta-graveler",
+        "sprite": "delta-graveler",
+        "types": [
+          "psychic",
+          "rock"
+        ],
+        "baseStats": {
+          "hp": 55,
+          "atk": 95,
+          "def": 115,
+          "spa": 45,
+          "spd": 45,
+          "spe": 35
+        },
+        "total": 390,
+        "evoline": "delta-geodude",
+        "imgUrl": "/insurgence/delta-graveler",
+        "evos": [
+          "delta-golem                                          "
+        ]
+      },
+      "delta-golem": {
+        "name": "Delta Golem",
+        "label": "Delta Golem",
+        "alias": "delta-golem",
+        "sprite": "delta-golem",
+        "types": [
+          "psychic",
+          "rock"
+        ],
+        "baseStats": {
+          "hp": 80,
+          "atk": 120,
+          "def": 130,
+          "spa": 55,
+          "spd": 65,
+          "spe": 45
+        },
+        "total": 495,
+        "evoline": "delta-geodude                                                      ",
+        "imgUrl": "/insurgence/delta-golem"
+      },
+      "delta-tentacool": {
+        "name": "Delta Tentacool",
+        "label": "Delta Tentacool",
+        "alias": "delta-tentacool",
+        "sprite": "delta-tentacool",
+        "types": [
+          "grass",
+          "poison"
+        ],
+        "baseStats": {
+          "hp": 40,
+          "atk": 40,
+          "def": 35,
+          "spa": 50,
+          "spd": 100,
+          "spe": 70
+        },
+        "total": 335,
+        "evoline": "delta-tentacool",
+        "imgUrl": "/insurgence/delta-tentacool",
+        "evos": [
+          "delta-tentacruel                                   "
+        ]
+      },
+      "delta-tentacruel": {
+        "name": "Delta Tentacruel",
+        "label": "Delta Tentacruel",
+        "alias": "delta-tentacruel",
+        "sprite": "delta-tentacruel",
+        "types": [
+          "grass",
+          "poison"
+        ],
+        "baseStats": {
+          "hp": 80,
+          "atk": 70,
+          "def": 65,
+          "spa": 80,
+          "spd": 120,
+          "spe": 100
+        },
+        "total": 515,
+        "evoline": "delta-tentacool                                                        ",
+        "imgUrl": "/insurgence/delta-tentacruel"
+      },
+      "delta-doduo": {
+        "name": "Delta Doduo",
+        "label": "Delta Doduo",
+        "alias": "delta-doduo",
+        "sprite": "delta-doduo",
+        "types": [
+          "psychic"
+        ],
+        "baseStats": {
+          "hp": 35,
+          "atk": 85,
+          "def": 45,
+          "spa": 35,
+          "spd": 35,
+          "spe": 75
+        },
+        "total": 310,
+        "evoline": "delta-doduo",
+        "imgUrl": "/insurgence/delta-doduo",
+        "evos": [
+          "delta-dodrio                                           "
+        ]
+      },
+      "delta-dodrio": {
+        "name": "Delta Dodrio",
+        "label": "Delta Dodrio",
+        "alias": "delta-dodrio",
+        "sprite": "delta-dodrio",
+        "types": [
+          "psychic"
+        ],
+        "baseStats": {
+          "hp": 60,
+          "atk": 110,
+          "def": 70,
+          "spa": 60,
+          "spd": 60,
+          "spe": 100
+        },
+        "total": 460,
+        "evoline": "delta-doduo                                                        ",
+        "imgUrl": "/insurgence/delta-dodrio"
+      },
+      "delta-tangela": {
+        "name": "Delta Tangela",
+        "label": "Delta Tangela",
+        "alias": "delta-tangela",
+        "sprite": "delta-tangela",
+        "types": [
+          "ground"
+        ],
+        "baseStats": {
+          "hp": 65,
+          "atk": 55,
+          "def": 115,
+          "spa": 100,
+          "spd": 40,
+          "spe": 60
+        },
+        "total": 435,
+        "evoline": "delta-tangela",
+        "imgUrl": "/insurgence/delta-tangela",
+        "evos": [
+          "delta-tangrowth                                      "
+        ]
+      },
+      "delta-tangrowth": {
+        "name": "Delta Tangrowth",
+        "label": "Delta Tangrowth",
+        "alias": "delta-tangrowth",
+        "sprite": "delta-tangrowth",
+        "types": [
+          "ground",
+          "fighting"
+        ],
+        "baseStats": {
+          "hp": 100,
+          "atk": 100,
+          "def": 125,
+          "spa": 110,
+          "spd": 50,
+          "spe": 50
+        },
+        "total": 535,
+        "evoline": "delta-tangela                                                            ",
+        "imgUrl": "/insurgence/delta-tangrowth"
+      },
+      "delta-ditto": {
+        "name": "Delta Ditto",
+        "label": "Delta Ditto",
+        "alias": "delta-ditto",
+        "sprite": "delta-ditto",
+        "types": [
+          "water"
+        ],
+        "baseStats": {
+          "hp": 48,
+          "atk": 48,
+          "def": 48,
+          "spa": 48,
+          "spd": 48,
+          "spe": 48
+        },
+        "total": 288,
+        "evoline": "delta-ditto                                                        ",
+        "imgUrl": "/insurgence/delta-ditto"
+      },
+      "delta-kabuto": {
+        "name": "Delta Kabuto",
+        "label": "Delta Kabuto",
+        "alias": "delta-kabuto",
+        "sprite": "delta-kabuto",
+        "types": [
+          "bug",
+          "dark"
+        ],
+        "baseStats": {
+          "hp": 30,
+          "atk": 80,
+          "def": 95,
+          "spa": 55,
+          "spd": 45,
+          "spe": 55
+        },
+        "total": 360,
+        "evoline": "delta-kabuto",
+        "imgUrl": "/insurgence/delta-kabuto",
+        "evos": [
+          "delta-kabutops                                        "
+        ]
+      },
+      "delta-kabutops": {
+        "name": "Delta Kabutops",
+        "label": "Delta Kabutops",
+        "alias": "delta-kabutops",
+        "sprite": "delta-kabutops",
+        "types": [
+          "bug",
+          "dark"
+        ],
+        "baseStats": {
+          "hp": 60,
+          "atk": 115,
+          "def": 105,
+          "spa": 65,
+          "spd": 70,
+          "spe": 80
+        },
+        "total": 495,
+        "evoline": "delta-kabuto                                                       ",
+        "imgUrl": "/insurgence/delta-kabutops"
+      },
+      "delta-dratini": {
+        "name": "Delta Dratini",
+        "label": "Delta Dratini",
+        "alias": "delta-dratini",
+        "sprite": "delta-dratini",
+        "types": [
+          "water",
+          "electric"
+        ],
+        "baseStats": {
+          "hp": 41,
+          "atk": 64,
+          "def": 45,
+          "spa": 50,
+          "spd": 50,
+          "spe": 50
+        },
+        "total": 300,
+        "evoline": "delta-dratini",
+        "imgUrl": "/insurgence/delta-dratini",
+        "evos": [
+          "delta-dragonair                                      "
+        ]
+      },
+      "delta-dragonair": {
+        "name": "Delta Dragonair",
+        "label": "Delta Dragonair",
+        "alias": "delta-dragonair",
+        "sprite": "delta-dragonair",
+        "types": [
+          "water",
+          "electric"
+        ],
+        "baseStats": {
+          "hp": 61,
+          "atk": 84,
+          "def": 65,
+          "spa": 70,
+          "spd": 70,
+          "spe": 70
+        },
+        "total": 420,
+        "evoline": "delta-dratini",
+        "imgUrl": "/insurgence/delta-dragonair",
+        "evos": [
+          "delta-dragonite                                       "
+        ]
+      },
+      "delta-dragonite": {
+        "name": "Delta Dragonite",
+        "label": "Delta Dragonite",
+        "alias": "delta-dragonite",
+        "sprite": "delta-dragonite",
+        "types": [
+          "water",
+          "electric"
+        ],
+        "baseStats": {
+          "hp": 91,
+          "atk": 134,
+          "def": 95,
+          "spa": 100,
+          "spd": 100,
+          "spe": 80
+        },
+        "total": 600,
+        "evoline": "delta-dratini                                                          ",
+        "imgUrl": "/insurgence/delta-dragonite"
+      },
+      "delta-hoothoot": {
+        "name": "Delta Hoothoot",
+        "label": "Delta Hoothoot",
+        "alias": "delta-hoothoot",
+        "sprite": "delta-hoothoot",
+        "types": [
+          "ice",
+          "flying"
+        ],
+        "baseStats": {
+          "hp": 60,
+          "atk": 30,
+          "def": 30,
+          "spa": 36,
+          "spd": 56,
+          "spe": 50
+        },
+        "total": 262,
+        "evoline": "delta-hoothoot",
+        "imgUrl": "/insurgence/delta-hoothoot",
+        "evos": [
+          "delta-noctowl                                       "
+        ]
+      },
+      "delta-noctowl": {
+        "name": "Delta Noctowl",
+        "label": "Delta Noctowl",
+        "alias": "delta-noctowl",
+        "sprite": "delta-noctowl",
+        "types": [
+          "ice",
+          "flying"
+        ],
+        "baseStats": {
+          "hp": 100,
+          "atk": 50,
+          "def": 50,
+          "spa": 76,
+          "spd": 96,
+          "spe": 70
+        },
+        "total": 442,
+        "evoline": "delta-hoothoot                                                     ",
+        "imgUrl": "/insurgence/delta-noctowl"
+      },
+      "delta-chinchou": {
+        "name": "Delta Chinchou",
+        "label": "Delta Chinchou",
+        "alias": "delta-chinchou",
+        "sprite": "delta-chinchou",
+        "types": [
+          "ghost",
+          "fire"
+        ],
+        "baseStats": {
+          "hp": 75,
+          "atk": 38,
+          "def": 38,
+          "spa": 56,
+          "spd": 56,
+          "spe": 67
+        },
+        "total": 330,
+        "evoline": "delta-chinchou",
+        "imgUrl": "/insurgence/delta-chinchou",
+        "evos": [
+          "delta-lanturn                                       "
+        ]
+      },
+      "delta-lanturn": {
+        "name": "Delta Lanturn",
+        "label": "Delta Lanturn",
+        "alias": "delta-lanturn",
+        "sprite": "delta-lanturn",
+        "types": [
+          "ghost",
+          "fire"
+        ],
+        "baseStats": {
+          "hp": 125,
+          "atk": 58,
+          "def": 58,
+          "spa": 76,
+          "spd": 76,
+          "spe": 67
+        },
+        "total": 460,
+        "evoline": "delta-chinchou                                                     ",
+        "imgUrl": "/insurgence/delta-lanturn"
+      },
+      "delta-pichu": {
+        "name": "Delta Pichu",
+        "label": "Delta Pichu",
+        "alias": "delta-pichu",
+        "sprite": "delta-pichu",
+        "types": [
+          "flying",
+          "fairy"
+        ],
+        "baseStats": {
+          "hp": 20,
+          "atk": 40,
+          "def": 15,
+          "spa": 35,
+          "spd": 35,
+          "spe": 60
+        },
+        "total": 205,
+        "evoline": "create-account",
+        "imgUrl": "/insurgence/delta-pichu",
+        "evos": [
+          "delta-pikachu                                       "
+        ]
+      },
+      "delta-pikachu": {
+        "name": "Delta Pikachu",
+        "label": "Delta Pikachu",
+        "alias": "delta-pikachu",
+        "sprite": "delta-pikachu",
+        "types": [
+          "flying",
+          "fairy"
+        ],
+        "baseStats": {
+          "hp": 35,
+          "atk": 55,
+          "def": 40,
+          "spa": 50,
+          "spd": 50,
+          "spe": 90
+        },
+        "total": 320,
+        "evoline": "create-account",
+        "imgUrl": "/insurgence/delta-pikachu",
+        "evos": [
+          "delta-raichu                                        "
+        ]
+      },
+      "delta-raichu": {
+        "name": "Delta Raichu",
+        "label": "Delta Raichu",
+        "alias": "delta-raichu",
+        "sprite": "delta-raichu",
+        "types": [
+          "flying",
+          "fairy"
+        ],
+        "baseStats": {
+          "hp": 60,
+          "atk": 90,
+          "def": 55,
+          "spa": 90,
+          "spd": 80,
+          "spe": 110
+        },
+        "total": 485,
+        "evoline": "create-account                                                     ",
+        "imgUrl": "/insurgence/delta-raichu"
+      },
+      "delta-aipom": {
+        "name": "Delta Aipom",
+        "label": "Delta Aipom",
+        "alias": "delta-aipom",
+        "sprite": "delta-aipom",
+        "types": [
+          "ghost",
+          "normal"
+        ],
+        "baseStats": {
+          "hp": 55,
+          "atk": 70,
+          "def": 55,
+          "spa": 40,
+          "spd": 55,
+          "spe": 85
+        },
+        "total": 360,
+        "evoline": "delta-aipom",
+        "imgUrl": "/insurgence/delta-aipom",
+        "evos": [
+          "delta-ambipom                                          "
+        ]
+      },
+      "delta-ambipom": {
+        "name": "Delta Ambipom",
+        "label": "Delta Ambipom",
+        "alias": "delta-ambipom",
+        "sprite": "delta-ambipom",
+        "types": [
+          "ghost",
+          "normal"
+        ],
+        "baseStats": {
+          "hp": 75,
+          "atk": 100,
+          "def": 66,
+          "spa": 60,
+          "spd": 66,
+          "spe": 115
+        },
+        "total": 482,
+        "evoline": "delta-aipom                                                        ",
+        "imgUrl": "/insurgence/delta-ambipom"
+      },
+      "delta-yanma": {
+        "name": "Delta Yanma",
+        "label": "Delta Yanma",
+        "alias": "delta-yanma",
+        "sprite": "delta-yanma",
+        "types": [
+          "grass",
+          "flying"
+        ],
+        "baseStats": {
+          "hp": 65,
+          "atk": 65,
+          "def": 45,
+          "spa": 75,
+          "spd": 45,
+          "spe": 95
+        },
+        "total": 390,
+        "evoline": "delta-yanma",
+        "imgUrl": "/insurgence/delta-yanma",
+        "evos": [
+          "delta-yanmega                                          "
+        ]
+      },
+      "delta-yanmega": {
+        "name": "Delta Yanmega",
+        "label": "Delta Yanmega",
+        "alias": "delta-yanmega",
+        "sprite": "delta-yanmega",
+        "types": [
+          "grass",
+          "flying"
+        ],
+        "baseStats": {
+          "hp": 86,
+          "atk": 76,
+          "def": 86,
+          "spa": 116,
+          "spd": 56,
+          "spe": 95
+        },
+        "total": 515,
+        "evoline": "delta-yanma                                                        ",
+        "imgUrl": "/insurgence/delta-yanmega"
+      },
+      "delta-girafarig": {
+        "name": "Delta Girafarig",
+        "label": "Delta Girafarig",
+        "alias": "delta-girafarig",
+        "sprite": "delta-girafarig",
+        "types": [
+          "steel",
+          "poison"
+        ],
+        "baseStats": {
+          "hp": 70,
+          "atk": 80,
+          "def": 65,
+          "spa": 90,
+          "spd": 65,
+          "spe": 85
+        },
+        "total": 455,
+        "evoline": "delta-girafarig                                                    ",
+        "imgUrl": "/insurgence/delta-girafarig"
+      },
+      "delta-dunsparce": {
+        "name": "Delta Dunsparce",
+        "label": "Delta Dunsparce",
+        "alias": "delta-dunsparce",
+        "sprite": "delta-dunsparce",
+        "types": [
+          "bug",
+          "water"
+        ],
+        "baseStats": {
+          "hp": 100,
+          "atk": 70,
+          "def": 70,
+          "spa": 65,
+          "spd": 65,
+          "spe": 45
+        },
+        "total": 415,
+        "evoline": "delta-dunsparce                                                    ",
+        "imgUrl": "/insurgence/delta-dunsparce"
+      },
+      "delta-shuckle": {
+        "name": "Delta Shuckle",
+        "label": "Delta Shuckle",
+        "alias": "delta-shuckle",
+        "sprite": "delta-shuckle",
+        "types": [
+          "fighting",
+          "steel"
+        ],
+        "baseStats": {
+          "hp": 20,
+          "atk": 10,
+          "def": 230,
+          "spa": 10,
+          "spd": 230,
+          "spe": 5
+        },
+        "total": 505,
+        "evoline": "delta-shuckle                                                      ",
+        "imgUrl": "/insurgence/delta-shuckle"
+      },
+      "delta-remoraid": {
+        "name": "Delta Remoraid",
+        "label": "Delta Remoraid",
+        "alias": "delta-remoraid",
+        "sprite": "delta-remoraid",
+        "types": [
+          "fire"
+        ],
+        "baseStats": {
+          "hp": 35,
+          "atk": 65,
+          "def": 35,
+          "spa": 65,
+          "spd": 35,
+          "spe": 65
+        },
+        "total": 300,
+        "evoline": "delta-remoraid",
+        "imgUrl": "/insurgence/delta-remoraid",
+        "evos": [
+          "delta-octillery                                     "
+        ]
+      },
+      "delta-octillery": {
+        "name": "Delta Octillery",
+        "label": "Delta Octillery",
+        "alias": "delta-octillery",
+        "sprite": "delta-octillery",
+        "types": [
+          "fire"
+        ],
+        "baseStats": {
+          "hp": 75,
+          "atk": 105,
+          "def": 75,
+          "spa": 105,
+          "spd": 75,
+          "spe": 45
+        },
+        "total": 480,
+        "evoline": "delta-remoraid                                                      ",
+        "imgUrl": "/insurgence/delta-octillery"
+      },
+      "delta-elekid": {
+        "name": "Delta Elekid",
+        "label": "Delta Elekid",
+        "alias": "delta-elekid",
+        "sprite": "delta-elekid",
+        "types": [
+          "rock"
+        ],
+        "baseStats": {
+          "hp": 45,
+          "atk": 63,
+          "def": 37,
+          "spa": 65,
+          "spd": 55,
+          "spe": 95
+        },
+        "total": 360,
+        "evoline": "delta-elekid",
+        "imgUrl": "/insurgence/delta-elekid",
+        "evos": [
+          "delta-electabuzz                                      "
+        ]
+      },
+      "delta-electabuzz": {
+        "name": "Delta Electabuzz",
+        "label": "Delta Electabuzz",
+        "alias": "delta-electabuzz",
+        "sprite": "delta-electabuzz",
+        "types": [
+          "rock"
+        ],
+        "baseStats": {
+          "hp": 65,
+          "atk": 83,
+          "def": 57,
+          "spa": 95,
+          "spd": 85,
+          "spe": 105
+        },
+        "total": 490,
+        "evoline": "delta-elekid",
+        "imgUrl": "/insurgence/delta-electabuzz",
+        "evos": [
+          "delta-electivire                                         "
+        ]
+      },
+      "delta-electivire": {
+        "name": "Delta Electivire",
+        "label": "Delta Electivire",
+        "alias": "delta-electivire",
+        "sprite": "delta-electivire",
+        "types": [
+          "rock",
+          "dragon"
+        ],
+        "baseStats": {
+          "hp": 75,
+          "atk": 123,
+          "def": 67,
+          "spa": 95,
+          "spd": 85,
+          "spe": 95
+        },
+        "total": 540,
+        "evoline": "delta-elekid                                                         ",
+        "imgUrl": "/insurgence/delta-electivire"
+      },
+      "delta-magby": {
+        "name": "Delta Magby",
+        "label": "Delta Magby",
+        "alias": "delta-magby",
+        "sprite": "delta-magby",
+        "types": [
+          "water"
+        ],
+        "baseStats": {
+          "hp": 45,
+          "atk": 75,
+          "def": 37,
+          "spa": 70,
+          "spd": 55,
+          "spe": 83
+        },
+        "total": 365,
+        "evoline": "delta-magby",
+        "imgUrl": "/insurgence/delta-magby",
+        "evos": [
+          "delta-magmar                                           "
+        ]
+      },
+      "delta-magmar": {
+        "name": "Delta Magmar",
+        "label": "Delta Magmar",
+        "alias": "delta-magmar",
+        "sprite": "delta-magmar",
+        "types": [
+          "water"
+        ],
+        "baseStats": {
+          "hp": 65,
+          "atk": 95,
+          "def": 57,
+          "spa": 100,
+          "spd": 85,
+          "spe": 93
+        },
+        "total": 495,
+        "evoline": "delta-magby",
+        "imgUrl": "/insurgence/delta-magmar",
+        "evos": [
+          "delta-magmortar                                        "
+        ]
+      },
+      "delta-magmortar": {
+        "name": "Delta Magmortar",
+        "label": "Delta Magmortar",
+        "alias": "delta-magmortar",
+        "sprite": "delta-magmortar",
+        "types": [
+          "water",
+          "steel"
+        ],
+        "baseStats": {
+          "hp": 75,
+          "atk": 95,
+          "def": 67,
+          "spa": 125,
+          "spd": 95,
+          "spe": 83
+        },
+        "total": 540,
+        "evoline": "delta-magby                                                        ",
+        "imgUrl": "/insurgence/delta-magmortar"
+      },
+      "delta-lotad": {
+        "name": "Delta Lotad",
+        "label": "Delta Lotad",
+        "alias": "delta-lotad",
+        "sprite": "delta-lotad",
+        "types": [
+          "psychic",
+          "water"
+        ],
+        "baseStats": {
+          "hp": 40,
+          "atk": 30,
+          "def": 30,
+          "spa": 40,
+          "spd": 50,
+          "spe": 30
+        },
+        "total": 220,
+        "evoline": "delta-lotad",
+        "imgUrl": "/insurgence/delta-lotad",
+        "evos": [
+          "delta-lombre                                           "
+        ]
+      },
+      "delta-lombre": {
+        "name": "Delta Lombre",
+        "label": "Delta Lombre",
+        "alias": "delta-lombre",
+        "sprite": "delta-lombre",
+        "types": [
+          "psychic",
+          "water"
+        ],
+        "baseStats": {
+          "hp": 60,
+          "atk": 50,
+          "def": 50,
+          "spa": 60,
+          "spd": 70,
+          "spe": 50
+        },
+        "total": 340,
+        "evoline": "delta-lotad",
+        "imgUrl": "/insurgence/delta-lombre",
+        "evos": [
+          "delta-ludicolo                                         "
+        ]
+      },
+      "delta-ludicolo": {
+        "name": "Delta Ludicolo",
+        "label": "Delta Ludicolo",
+        "alias": "delta-ludicolo",
+        "sprite": "delta-ludicolo",
+        "types": [
+          "psychic",
+          "water"
+        ],
+        "baseStats": {
+          "hp": 80,
+          "atk": 70,
+          "def": 70,
+          "spa": 90,
+          "spd": 100,
+          "spe": 70
+        },
+        "total": 480,
+        "evoline": "delta-lotad                                                        ",
+        "imgUrl": "/insurgence/delta-ludicolo"
+      },
+      "delta-seedot": {
+        "name": "Delta Seedot",
+        "label": "Delta Seedot",
+        "alias": "delta-seedot",
+        "sprite": "delta-seedot",
+        "types": [
+          "electric"
+        ],
+        "baseStats": {
+          "hp": 40,
+          "atk": 40,
+          "def": 50,
+          "spa": 30,
+          "spd": 30,
+          "spe": 30
+        },
+        "total": 220,
+        "evoline": "delta-seedot",
+        "imgUrl": "/insurgence/delta-seedot",
+        "evos": [
+          "delta-nuzleaf                                         "
+        ]
+      },
+      "delta-nuzleaf": {
+        "name": "Delta Nuzleaf",
+        "label": "Delta Nuzleaf",
+        "alias": "delta-nuzleaf",
+        "sprite": "delta-nuzleaf",
+        "types": [
+          "electric"
+        ],
+        "baseStats": {
+          "hp": 70,
+          "atk": 70,
+          "def": 40,
+          "spa": 60,
+          "spd": 40,
+          "spe": 60
+        },
+        "total": 340,
+        "evoline": "delta-seedot",
+        "imgUrl": "/insurgence/delta-nuzleaf",
+        "evos": [
+          "delta-shiftry                                         "
+        ]
+      },
+      "delta-shiftry": {
+        "name": "Delta Shiftry",
+        "label": "Delta Shiftry",
+        "alias": "delta-shiftry",
+        "sprite": "delta-shiftry",
+        "types": [
+          "electric"
+        ],
+        "baseStats": {
+          "hp": 90,
+          "atk": 100,
+          "def": 60,
+          "spa": 90,
+          "spd": 60,
+          "spe": 80
+        },
+        "total": 480,
+        "evoline": "delta-seedot                                                       ",
+        "imgUrl": "/insurgence/delta-shiftry"
+      },
+      "delta-sableye": {
+        "name": "Delta Sableye",
+        "label": "Delta Sableye",
+        "alias": "delta-sableye",
+        "sprite": "delta-sableye",
+        "types": [
+          "fire",
+          "rock"
+        ],
+        "baseStats": {
+          "hp": 50,
+          "atk": 75,
+          "def": 75,
+          "spa": 65,
+          "spd": 65,
+          "spe": 50
+        },
+        "total": 380,
+        "evoline": "delta-sableye                                                      ",
+        "imgUrl": "/insurgence/delta-sableye"
+      },
+      "delta-mawile": {
+        "name": "Delta Mawile",
+        "label": "Delta Mawile",
+        "alias": "delta-mawile",
+        "sprite": "delta-mawile",
+        "types": [
+          "grass",
+          "dark"
+        ],
+        "baseStats": {
+          "hp": 50,
+          "atk": 85,
+          "def": 85,
+          "spa": 55,
+          "spd": 55,
+          "spe": 50
+        },
+        "total": 380,
+        "evoline": "delta-mawile                                                       ",
+        "imgUrl": "/insurgence/delta-mawile"
+      },
+      "delta-aron": {
+        "name": "Delta Aron",
+        "label": "Delta Aron",
+        "alias": "delta-aron",
+        "sprite": "delta-aron",
+        "types": [
+          "fire",
+          "steel"
+        ],
+        "baseStats": {
+          "hp": 50,
+          "atk": 70,
+          "def": 100,
+          "spa": 40,
+          "spd": 40,
+          "spe": 30
+        },
+        "total": 330,
+        "evoline": "delta-aron",
+        "imgUrl": "/insurgence/delta-aron",
+        "evos": [
+          "delta-lairon                                            "
+        ]
+      },
+      "delta-lairon": {
+        "name": "Delta Lairon",
+        "label": "Delta Lairon",
+        "alias": "delta-lairon",
+        "sprite": "delta-lairon",
+        "types": [
+          "fire",
+          "steel"
+        ],
+        "baseStats": {
+          "hp": 60,
+          "atk": 90,
+          "def": 140,
+          "spa": 50,
+          "spd": 50,
+          "spe": 40
+        },
+        "total": 430,
+        "evoline": "delta-aron",
+        "imgUrl": "/insurgence/delta-lairon",
+        "evos": [
+          "delta-aggron                                            "
+        ]
+      },
+      "delta-aggron": {
+        "name": "Delta Aggron",
+        "label": "Delta Aggron",
+        "alias": "delta-aggron",
+        "sprite": "delta-aggron",
+        "types": [
+          "fire",
+          "steel"
+        ],
+        "baseStats": {
+          "hp": 70,
+          "atk": 110,
+          "def": 180,
+          "spa": 60,
+          "spd": 60,
+          "spe": 50
+        },
+        "total": 530,
+        "evoline": "delta-aron                                                         ",
+        "imgUrl": "/insurgence/delta-aggron"
+      },
+      "delta-meditite": {
+        "name": "Delta Meditite",
+        "label": "Delta Meditite",
+        "alias": "delta-meditite",
+        "sprite": "delta-meditite",
+        "types": [
+          "fairy"
+        ],
+        "baseStats": {
+          "hp": 30,
+          "atk": 40,
+          "def": 55,
+          "spa": 40,
+          "spd": 55,
+          "spe": 60
+        },
+        "total": 280,
+        "evoline": "delta-meditite",
+        "imgUrl": "/insurgence/delta-meditite",
+        "evos": [
+          "delta-medicham                                      "
+        ]
+      },
+      "delta-medicham": {
+        "name": "Delta Medicham",
+        "label": "Delta Medicham",
+        "alias": "delta-medicham",
+        "sprite": "delta-medicham",
+        "types": [
+          "fairy",
+          "ground"
+        ],
+        "baseStats": {
+          "hp": 60,
+          "atk": 60,
+          "def": 75,
+          "spa": 60,
+          "spd": 75,
+          "spe": 80
+        },
+        "total": 410,
+        "evoline": "delta-meditite                                                     ",
+        "imgUrl": "/insurgence/delta-medicham"
+      },
+      "delta-numel": {
+        "name": "Delta Numel",
+        "label": "Delta Numel",
+        "alias": "delta-numel",
+        "sprite": "delta-numel",
+        "types": [
+          "poison"
+        ],
+        "baseStats": {
+          "hp": 60,
+          "atk": 60,
+          "def": 40,
+          "spa": 65,
+          "spd": 45,
+          "spe": 35
+        },
+        "total": 305,
+        "evoline": "delta-numel",
+        "imgUrl": "/insurgence/delta-numel",
+        "evos": [
+          "delta-camerupt                                         "
+        ]
+      },
+      "delta-camerupt": {
+        "name": "Delta Camerupt",
+        "label": "Delta Camerupt",
+        "alias": "delta-camerupt",
+        "sprite": "delta-camerupt",
+        "types": [
+          "poison"
+        ],
+        "baseStats": {
+          "hp": 70,
+          "atk": 100,
+          "def": 70,
+          "spa": 105,
+          "spd": 75,
+          "spe": 40
+        },
+        "total": 460,
+        "evoline": "delta-numel                                                        ",
+        "imgUrl": "/insurgence/delta-camerupt"
+      },
+      "delta-plusle": {
+        "name": "Delta Plusle",
+        "label": "Delta Plusle",
+        "alias": "delta-plusle",
+        "sprite": "delta-plusle",
+        "types": [
+          "fire",
+          "fairy"
+        ],
+        "baseStats": {
+          "hp": 60,
+          "atk": 50,
+          "def": 40,
+          "spa": 85,
+          "spd": 75,
+          "spe": 95
+        },
+        "total": 405,
+        "evoline": "delta-plusle                                                       ",
+        "imgUrl": "/insurgence/delta-plusle"
+      },
+      "delta-minun": {
+        "name": "Delta Minun",
+        "label": "Delta Minun",
+        "alias": "delta-minun",
+        "sprite": "delta-minun",
+        "types": [
+          "ice",
+          "fairy"
+        ],
+        "baseStats": {
+          "hp": 60,
+          "atk": 40,
+          "def": 50,
+          "spa": 75,
+          "spd": 85,
+          "spe": 95
+        },
+        "total": 405,
+        "evoline": "delta-minun                                                        ",
+        "imgUrl": "/insurgence/delta-minun"
+      },
+      "delta-wailmer": {
+        "name": "Delta Wailmer",
+        "label": "Delta Wailmer",
+        "alias": "delta-wailmer",
+        "sprite": "delta-wailmer",
+        "types": [
+          "ice",
+          "flying"
+        ],
+        "baseStats": {
+          "hp": 130,
+          "atk": 70,
+          "def": 35,
+          "spa": 70,
+          "spd": 35,
+          "spe": 60
+        },
+        "total": 400,
+        "evoline": "delta-wailmer",
+        "imgUrl": "/insurgence/delta-wailmer",
+        "evos": [
+          "delta-wailord                                        "
+        ]
+      },
+      "delta-wailord": {
+        "name": "Delta Wailord",
+        "label": "Delta Wailord",
+        "alias": "delta-wailord",
+        "sprite": "delta-wailord",
+        "types": [
+          "ice",
+          "flying"
+        ],
+        "baseStats": {
+          "hp": 170,
+          "atk": 90,
+          "def": 45,
+          "spa": 90,
+          "spd": 45,
+          "spe": 60
+        },
+        "total": 500,
+        "evoline": "delta-wailmer                                                      ",
+        "imgUrl": "/insurgence/delta-wailord"
+      },
+      "delta-feebas": {
+        "name": "Delta Feebas",
+        "label": "Delta Feebas",
+        "alias": "delta-feebas",
+        "sprite": "delta-feebas",
+        "types": [
+          "ghost"
+        ],
+        "baseStats": {
+          "hp": 20,
+          "atk": 15,
+          "def": 20,
+          "spa": 10,
+          "spd": 55,
+          "spe": 80
+        },
+        "total": 200,
+        "evoline": "delta-feebas",
+        "imgUrl": "/insurgence/delta-feebas",
+        "evos": [
+          "delta-milotic                                         "
+        ]
+      },
+      "delta-milotic": {
+        "name": "Delta Milotic",
+        "label": "Delta Milotic",
+        "alias": "delta-milotic",
+        "sprite": "delta-milotic",
+        "types": [
+          "ghost"
+        ],
+        "baseStats": {
+          "hp": 95,
+          "atk": 60,
+          "def": 79,
+          "spa": 100,
+          "spd": 125,
+          "spe": 81
+        },
+        "total": 540,
+        "evoline": "delta-feebas                                                       ",
+        "imgUrl": "/insurgence/delta-milotic"
+      },
+      "delta-clamperl": {
+        "name": "Delta Clamperl",
+        "label": "Delta Clamperl",
+        "alias": "delta-clamperl",
+        "sprite": "delta-clamperl",
+        "types": [
+          "dragon"
+        ],
+        "baseStats": {
+          "hp": 35,
+          "atk": 65,
+          "def": 85,
+          "spa": 74,
+          "spd": 55,
+          "spe": 32
+        },
+        "total": 346,
+        "evoline": "delta-clamperl",
+        "imgUrl": "/insurgence/delta-clamperl",
+        "evos": [
+          "delta-huntail",
+          "delta-gorebyss                        "
+        ]
+      },
+      "delta-huntail": {
+        "name": "Delta Huntail",
+        "label": "Delta Huntail",
+        "alias": "delta-huntail",
+        "sprite": "delta-huntail",
+        "types": [
+          "dragon",
+          "dark"
+        ],
+        "baseStats": {
+          "hp": 55,
+          "atk": 104,
+          "def": 105,
+          "spa": 94,
+          "spd": 75,
+          "spe": 52
+        },
+        "total": 485,
+        "evoline": "delta-clamperl                                                     ",
+        "imgUrl": "/insurgence/delta-huntail"
+      },
+      "delta-gorebyss": {
+        "name": "Delta Gorebyss",
+        "label": "Delta Gorebyss",
+        "alias": "delta-gorebyss",
+        "sprite": "delta-gorebyss",
+        "types": [
+          "dragon",
+          "fairy"
+        ],
+        "baseStats": {
+          "hp": 55,
+          "atk": 84,
+          "def": 105,
+          "spa": 114,
+          "spd": 75,
+          "spe": 52
+        },
+        "total": 485,
+        "evoline": "delta-clamperl                                                     ",
+        "imgUrl": "/insurgence/delta-gorebyss"
+      },
+      "delta-beldum-spider": {
+        "name": "Delta Beldum (Spider)",
+        "label": "Delta Beldum (Spider)",
+        "alias": "delta-beldum-spider",
+        "sprite": "delta-beldum-spider",
+        "types": [
+          "ground",
+          "bug"
+        ],
+        "baseStats": {
+          "hp": 40,
+          "atk": 55,
+          "def": 80,
+          "spa": 35,
+          "spd": 60,
+          "spe": 30
+        },
+        "total": 300,
+        "evoline": "delta-beldum-spider",
+        "imgUrl": "/insurgence/delta-beldum-spider",
+        "evos": [
+          "delta-metang-spider                                       "
+        ]
+      },
+      "delta-metang-spider": {
+        "name": "Delta Metang (Spider)",
+        "label": "Delta Metang (Spider)",
+        "alias": "delta-metang-spider",
+        "sprite": "delta-metang-spider",
+        "types": [
+          "ground",
+          "bug"
+        ],
+        "baseStats": {
+          "hp": 60,
+          "atk": 75,
+          "def": 100,
+          "spa": 55,
+          "spd": 80,
+          "spe": 50
+        },
+        "total": 420,
+        "evoline": "delta-beldum-spider",
+        "imgUrl": "/insurgence/delta-metang-spider",
+        "evos": [
+          "delta-metagross-spider                                     "
+        ]
+      },
+      "delta-metagross-spider": {
+        "name": "Delta Metagross (Spider)",
+        "label": "Delta Metagross (Spider)",
+        "alias": "delta-metagross-spider",
+        "sprite": "delta-metagross-spider",
+        "types": [
+          "ground",
+          "bug"
+        ],
+        "baseStats": {
+          "hp": 80,
+          "atk": 135,
+          "def": 130,
+          "spa": 95,
+          "spd": 90,
+          "spe": 70
+        },
+        "total": 600,
+        "evoline": "delta-beldum-spider                                                                      ",
+        "imgUrl": "/insurgence/delta-metagross-spider"
+      },
+      "delta-beldum-ruin": {
+        "name": "Delta Beldum (Ruin)",
+        "label": "Delta Beldum (Ruin)",
+        "alias": "delta-beldum-ruin",
+        "sprite": "delta-beldum-ruin",
+        "types": [
+          "grass",
+          "rock"
+        ],
+        "baseStats": {
+          "hp": 40,
+          "atk": 55,
+          "def": 80,
+          "spa": 35,
+          "spd": 60,
+          "spe": 30
+        },
+        "total": 300,
+        "evoline": "delta-beldum-ruin",
+        "imgUrl": "/insurgence/delta-beldum-ruin",
+        "evos": [
+          "delta-metang-ruin                                     "
+        ]
+      },
+      "delta-metang-ruin": {
+        "name": "Delta Metang (Ruin)",
+        "label": "Delta Metang (Ruin)",
+        "alias": "delta-metang-ruin",
+        "sprite": "delta-metang-ruin",
+        "types": [
+          "grass",
+          "rock"
+        ],
+        "baseStats": {
+          "hp": 60,
+          "atk": 75,
+          "def": 100,
+          "spa": 55,
+          "spd": 80,
+          "spe": 50
+        },
+        "total": 420,
+        "evoline": "delta-beldum-ruin",
+        "imgUrl": "/insurgence/delta-metang-ruin",
+        "evos": [
+          "delta-metagross-ruin                                   "
+        ]
+      },
+      "delta-metagross-ruin": {
+        "name": "Delta Metagross (Ruin)",
+        "label": "Delta Metagross (Ruin)",
+        "alias": "delta-metagross-ruin",
+        "sprite": "delta-metagross-ruin",
+        "types": [
+          "grass",
+          "rock"
+        ],
+        "baseStats": {
+          "hp": 80,
+          "atk": 135,
+          "def": 130,
+          "spa": 95,
+          "spd": 90,
+          "spe": 70
+        },
+        "total": 600,
+        "evoline": "delta-beldum-ruin                                                                  ",
+        "imgUrl": "/insurgence/delta-metagross-ruin"
+      },
+      "delta-buneary": {
+        "name": "Delta Buneary",
+        "label": "Delta Buneary",
+        "alias": "delta-buneary",
+        "sprite": "delta-buneary",
+        "types": [
+          "fighting"
+        ],
+        "baseStats": {
+          "hp": 55,
+          "atk": 66,
+          "def": 44,
+          "spa": 44,
+          "spd": 56,
+          "spe": 85
+        },
+        "total": 350,
+        "evoline": "delta-buneary",
+        "imgUrl": "/insurgence/delta-buneary",
+        "evos": [
+          "delta-lopunny                                        "
+        ]
+      },
+      "delta-lopunny": {
+        "name": "Delta Lopunny",
+        "label": "Delta Lopunny",
+        "alias": "delta-lopunny",
+        "sprite": "delta-lopunny",
+        "types": [
+          "fighting"
+        ],
+        "baseStats": {
+          "hp": 65,
+          "atk": 76,
+          "def": 84,
+          "spa": 54,
+          "spd": 96,
+          "spe": 105
+        },
+        "total": 480,
+        "evoline": "delta-buneary                                                      ",
+        "imgUrl": "/insurgence/delta-lopunny"
+      },
+      "delta-riolu": {
+        "name": "Delta Riolu",
+        "label": "Delta Riolu",
+        "alias": "delta-riolu",
+        "sprite": "delta-riolu",
+        "types": [
+          "dark"
+        ],
+        "baseStats": {
+          "hp": 40,
+          "atk": 70,
+          "def": 40,
+          "spa": 35,
+          "spd": 40,
+          "spe": 60
+        },
+        "total": 285,
+        "evoline": "delta-riolu",
+        "imgUrl": "/insurgence/delta-riolu",
+        "evos": [
+          "delta-lucario                                          "
+        ]
+      },
+      "delta-lucario": {
+        "name": "Delta Lucario",
+        "label": "Delta Lucario",
+        "alias": "delta-lucario",
+        "sprite": "delta-lucario",
+        "types": [
+          "dark",
+          "ground"
+        ],
+        "baseStats": {
+          "hp": 70,
+          "atk": 110,
+          "def": 70,
+          "spa": 115,
+          "spd": 70,
+          "spe": 90
+        },
+        "total": 525,
+        "evoline": "delta-riolu                                                        ",
+        "imgUrl": "/insurgence/delta-lucario"
+      },
+      "delta-croagunk": {
+        "name": "Delta Croagunk",
+        "label": "Delta Croagunk",
+        "alias": "delta-croagunk",
+        "sprite": "delta-croagunk",
+        "types": [
+          "fire"
+        ],
+        "baseStats": {
+          "hp": 48,
+          "atk": 61,
+          "def": 40,
+          "spa": 61,
+          "spd": 40,
+          "spe": 50
+        },
+        "total": 300,
+        "evoline": "delta-croagunk",
+        "imgUrl": "/insurgence/delta-croagunk",
+        "evos": [
+          "delta-toxicroak                                     "
+        ]
+      },
+      "delta-toxicroak": {
+        "name": "Delta Toxicroak",
+        "label": "Delta Toxicroak",
+        "alias": "delta-toxicroak",
+        "sprite": "delta-toxicroak",
+        "types": [
+          "fire"
+        ],
+        "baseStats": {
+          "hp": 83,
+          "atk": 106,
+          "def": 65,
+          "spa": 86,
+          "spd": 65,
+          "spe": 85
+        },
+        "total": 490,
+        "evoline": "delta-croagunk                                                     ",
+        "imgUrl": "/insurgence/delta-toxicroak"
+      },
+      "delta-venipede": {
+        "name": "Delta Venipede",
+        "label": "Delta Venipede",
+        "alias": "delta-venipede",
+        "sprite": "delta-venipede",
+        "types": [
+          "rock",
+          "fire"
+        ],
+        "baseStats": {
+          "hp": 30,
+          "atk": 45,
+          "def": 59,
+          "spa": 30,
+          "spd": 39,
+          "spe": 57
+        },
+        "total": 260,
+        "evoline": "delta-venipede",
+        "imgUrl": "/insurgence/delta-venipede",
+        "evos": [
+          "delta-whirlipede                                    "
+        ]
+      },
+      "delta-whirlipede": {
+        "name": "Delta Whirlipede",
+        "label": "Delta Whirlipede",
+        "alias": "delta-whirlipede",
+        "sprite": "delta-whirlipede",
+        "types": [
+          "rock",
+          "fire"
+        ],
+        "baseStats": {
+          "hp": 40,
+          "atk": 55,
+          "def": 99,
+          "spa": 40,
+          "spd": 79,
+          "spe": 47
+        },
+        "total": 360,
+        "evoline": "delta-venipede",
+        "imgUrl": "/insurgence/delta-whirlipede",
+        "evos": [
+          "delta-scolipede                                     "
+        ]
+      },
+      "delta-scolipede": {
+        "name": "Delta Scolipede",
+        "label": "Delta Scolipede",
+        "alias": "delta-scolipede",
+        "sprite": "delta-scolipede",
+        "types": [
+          "rock",
+          "fire"
+        ],
+        "baseStats": {
+          "hp": 60,
+          "atk": 100,
+          "def": 89,
+          "spa": 55,
+          "spd": 69,
+          "spe": 112
+        },
+        "total": 485,
+        "evoline": "delta-venipede                                                     ",
+        "imgUrl": "/insurgence/delta-scolipede"
+      },
+      "delta-petilil-water": {
+        "name": "Delta Petilil (Water)",
+        "label": "Delta Petilil (Water)",
+        "alias": "delta-petilil-water",
+        "sprite": "delta-petilil-water",
+        "types": [
+          "water",
+          "fire"
+        ],
+        "baseStats": {
+          "hp": 45,
+          "atk": 35,
+          "def": 50,
+          "spa": 70,
+          "spd": 50,
+          "spe": 30
+        },
+        "total": 280,
+        "evoline": "delta-petilil-water",
+        "imgUrl": "/insurgence/delta-petilil-water",
+        "evos": [
+          "delta-petilil-water                                       "
+        ]
+      },
+      "delta-lilligant-water": {
+        "name": "Delta Lilligant (Water)",
+        "label": "Delta Lilligant (Water)",
+        "alias": "delta-lilligant-water",
+        "sprite": "delta-lilligant-water",
+        "types": [
+          "water",
+          "fire"
+        ],
+        "baseStats": {
+          "hp": 70,
+          "atk": 60,
+          "def": 75,
+          "spa": 110,
+          "spd": 75,
+          "spe": 90
+        },
+        "total": 480,
+        "evoline": "delta-petilil-water                                                                  ",
+        "imgUrl": "/insurgence/delta-lilligant-water"
+      },
+      "delta-petilil-fairy": {
+        "name": "Delta Petilil (Fairy)",
+        "label": "Delta Petilil (Fairy)",
+        "alias": "delta-petilil-fairy",
+        "sprite": "delta-petilil-fairy",
+        "types": [
+          "fairy",
+          "flying"
+        ],
+        "baseStats": {
+          "hp": 45,
+          "atk": 35,
+          "def": 50,
+          "spa": 70,
+          "spd": 50,
+          "spe": 30
+        },
+        "total": 280,
+        "evoline": "delta-petilil-fairy",
+        "imgUrl": "/insurgence/delta-petilil-fairy",
+        "evos": [
+          "delta-petilil-fairy                                         "
+        ]
+      },
+      "delta-lilligant-fairy": {
+        "name": "Delta Lilligant (Fairy)",
+        "label": "Delta Lilligant (Fairy)",
+        "alias": "delta-lilligant-fairy",
+        "sprite": "delta-lilligant-fairy",
+        "types": [
+          "fairy",
+          "flying"
+        ],
+        "baseStats": {
+          "hp": 70,
+          "atk": 60,
+          "def": 75,
+          "spa": 110,
+          "spd": 75,
+          "spe": 90
+        },
+        "total": 480,
+        "evoline": "delta-petilil-fairy                                                                    ",
+        "imgUrl": "/insurgence/delta-lilligant-fairy"
+      },
+      "delta-solosis": {
+        "name": "Delta Solosis",
+        "label": "Delta Solosis",
+        "alias": "delta-solosis",
+        "sprite": "delta-solosis",
+        "types": [
+          "ghost",
+          "rock"
+        ],
+        "baseStats": {
+          "hp": 45,
+          "atk": 30,
+          "def": 40,
+          "spa": 105,
+          "spd": 50,
+          "spe": 20
+        },
+        "total": 290,
+        "evoline": "delta-solosis",
+        "imgUrl": "/insurgence/delta-solosis",
+        "evos": [
+          "delta-duosion                                        "
+        ]
+      },
+      "delta-duosion": {
+        "name": "Delta Duosion",
+        "label": "Delta Duosion",
+        "alias": "delta-duosion",
+        "sprite": "delta-duosion",
+        "types": [
+          "ghost",
+          "rock"
+        ],
+        "baseStats": {
+          "hp": 65,
+          "atk": 40,
+          "def": 50,
+          "spa": 125,
+          "spd": 60,
+          "spe": 30
+        },
+        "total": 370,
+        "evoline": "delta-solosis",
+        "imgUrl": "/insurgence/delta-duosion",
+        "evos": [
+          "delta-reuniclus                                      "
+        ]
+      },
+      "delta-reuniclus": {
+        "name": "Delta Reuniclus",
+        "label": "Delta Reuniclus",
+        "alias": "delta-reuniclus",
+        "sprite": "delta-reuniclus",
+        "types": [
+          "ghost",
+          "rock"
+        ],
+        "baseStats": {
+          "hp": 110,
+          "atk": 65,
+          "def": 75,
+          "spa": 125,
+          "spd": 85,
+          "spe": 30
+        },
+        "total": 490,
+        "evoline": "delta-solosis                                                      ",
+        "imgUrl": "/insurgence/delta-reuniclus"
+      },
+      "delta-darumaka": {
+        "name": "Delta Darumaka",
+        "label": "Delta Darumaka",
+        "alias": "delta-darumaka",
+        "sprite": "delta-darumaka",
+        "types": [
+          "dark",
+          "ghost"
+        ],
+        "baseStats": {
+          "hp": 70,
+          "atk": 90,
+          "def": 45,
+          "spa": 15,
+          "spd": 45,
+          "spe": 50
+        },
+        "total": 315,
+        "evoline": "delta-darumaka",
+        "imgUrl": "/insurgence/delta-darumaka",
+        "evos": [
+          "delta-darmanitan                                    "
+        ]
+      },
+      "delta-darmanitan": {
+        "name": "Delta Darmanitan",
+        "label": "Delta Darmanitan",
+        "alias": "delta-darmanitan",
+        "sprite": "delta-darmanitan",
+        "types": [
+          "dark",
+          "ghost"
+        ],
+        "baseStats": {
+          "hp": 105,
+          "atk": 140,
+          "def": 55,
+          "spa": 30,
+          "spd": 55,
+          "spe": 95
+        },
+        "total": 480,
+        "evoline": "delta-darumaka                                                       ",
+        "imgUrl": "/insurgence/delta-darmanitan"
+      },
+      "delta-maractus": {
+        "name": "Delta Maractus",
+        "label": "Delta Maractus",
+        "alias": "delta-maractus",
+        "sprite": "delta-maractus",
+        "types": [
+          "steel"
+        ],
+        "baseStats": {
+          "hp": 75,
+          "atk": 86,
+          "def": 67,
+          "spa": 106,
+          "spd": 67,
+          "spe": 60
+        },
+        "total": 461,
+        "evoline": "delta-maractus                                                     ",
+        "imgUrl": "/insurgence/delta-maractus"
+      },
+      "delta-dwebble-berry": {
+        "name": "Delta Dwebble (Berry)",
+        "label": "Delta Dwebble (Berry)",
+        "alias": "delta-dwebble-berry",
+        "sprite": "delta-dwebble-berry",
+        "types": [
+          "grass",
+          "poison"
+        ],
+        "baseStats": {
+          "hp": 50,
+          "atk": 65,
+          "def": 85,
+          "spa": 35,
+          "spd": 35,
+          "spe": 55
+        },
+        "total": 325,
+        "evoline": "delta-dwebble-berry",
+        "imgUrl": "/insurgence/delta-dwebble-berry",
+        "evos": [
+          "delta-crustle-berry                                         "
+        ]
+      },
+      "delta-crustle-berry": {
+        "name": "Delta Crustle (Berry)",
+        "label": "Delta Crustle (Berry)",
+        "alias": "delta-crustle-berry",
+        "sprite": "delta-crustle-berry",
+        "types": [
+          "grass",
+          "poison"
+        ],
+        "baseStats": {
+          "hp": 70,
+          "atk": 95,
+          "def": 125,
+          "spa": 65,
+          "spd": 75,
+          "spe": 45
+        },
+        "total": 475,
+        "evoline": "delta-dwebble-berry                                                              ",
+        "imgUrl": "/insurgence/delta-crustle-berry"
+      },
+      "delta-dwebble-cake": {
+        "name": "Delta Dwebble (Cake)",
+        "label": "Delta Dwebble (Cake)",
+        "alias": "delta-dwebble-cake",
+        "sprite": "delta-dwebble-cake",
+        "types": [
+          "fairy",
+          "normal"
+        ],
+        "baseStats": {
+          "hp": 50,
+          "atk": 65,
+          "def": 85,
+          "spa": 35,
+          "spd": 35,
+          "spe": 55
+        },
+        "total": 325,
+        "evoline": "delta-dwebble-cake",
+        "imgUrl": "/insurgence/delta-dwebble-cake",
+        "evos": [
+          "delta-crustle-cake                                        "
+        ]
+      },
+      "delta-crustle-cake": {
+        "name": "Delta Crustle (Cake)",
+        "label": "Delta Crustle (Cake)",
+        "alias": "delta-crustle-cake",
+        "sprite": "delta-crustle-cake",
+        "types": [
+          "fairy",
+          "normal"
+        ],
+        "baseStats": {
+          "hp": 70,
+          "atk": 95,
+          "def": 125,
+          "spa": 65,
+          "spd": 75,
+          "spe": 45
+        },
+        "total": 475,
+        "evoline": "delta-dwebble-cake                                                            ",
+        "imgUrl": "/insurgence/delta-crustle-cake"
+      },
+      "delta-yamask": {
+        "name": "Delta Yamask",
+        "label": "Delta Yamask",
+        "alias": "delta-yamask",
+        "sprite": "delta-yamask",
+        "types": [
+          "steel",
+          "poison"
+        ],
+        "baseStats": {
+          "hp": 38,
+          "atk": 30,
+          "def": 85,
+          "spa": 55,
+          "spd": 65,
+          "spe": 30
+        },
+        "total": 303,
+        "evoline": "delta-yamask",
+        "imgUrl": "/insurgence/delta-yamask",
+        "evos": [
+          "delta-cofagrigus                                      "
+        ]
+      },
+      "delta-cofagrigus": {
+        "name": "Delta Cofagrigus",
+        "label": "Delta Cofagrigus",
+        "alias": "delta-cofagrigus",
+        "sprite": "delta-cofagrigus",
+        "types": [
+          "steel",
+          "poison"
+        ],
+        "baseStats": {
+          "hp": 78,
+          "atk": 50,
+          "def": 145,
+          "spa": 95,
+          "spd": 105,
+          "spe": 30
+        },
+        "total": 503,
+        "evoline": "delta-yamask                                                           ",
+        "imgUrl": "/insurgence/delta-cofagrigus"
+      },
+      "delta-emolga": {
+        "name": "Delta Emolga",
+        "label": "Delta Emolga",
+        "alias": "delta-emolga",
+        "sprite": "delta-emolga",
+        "types": [
+          "fire",
+          "dark"
+        ],
+        "baseStats": {
+          "hp": 55,
+          "atk": 75,
+          "def": 60,
+          "spa": 75,
+          "spd": 60,
+          "spe": 103
+        },
+        "total": 428,
+        "evoline": "delta-emolga                                                       ",
+        "imgUrl": "/insurgence/delta-emolga"
+      },
+      "delta-karrablast": {
+        "name": "Delta Karrablast",
+        "label": "Delta Karrablast",
+        "alias": "delta-karrablast",
+        "sprite": "delta-karrablast",
+        "types": [
+          "fairy"
+        ],
+        "baseStats": {
+          "hp": 50,
+          "atk": 75,
+          "def": 45,
+          "spa": 40,
+          "spd": 45,
+          "spe": 60
+        },
+        "total": 315,
+        "evoline": "delta-karrablast",
+        "imgUrl": "/insurgence/delta-karrablast",
+        "evos": [
+          "delta-escavalier                                     "
+        ]
+      },
+      "delta-escavalier": {
+        "name": "Delta Escavalier",
+        "label": "Delta Escavalier",
+        "alias": "delta-escavalier",
+        "sprite": "delta-escavalier",
+        "types": [
+          "fairy"
+        ],
+        "baseStats": {
+          "hp": 70,
+          "atk": 135,
+          "def": 105,
+          "spa": 60,
+          "spd": 105,
+          "spe": 20
+        },
+        "total": 495,
+        "evoline": "delta-karrablast                                                         ",
+        "imgUrl": "/insurgence/delta-escavalier"
+      },
+      "delta-foongus": {
+        "name": "Delta Foongus",
+        "label": "Delta Foongus",
+        "alias": "delta-foongus",
+        "sprite": "delta-foongus",
+        "types": [
+          "ghost",
+          "dark"
+        ],
+        "baseStats": {
+          "hp": 69,
+          "atk": 55,
+          "def": 45,
+          "spa": 55,
+          "spd": 55,
+          "spe": 15
+        },
+        "total": 294,
+        "evoline": "delta-foongus",
+        "imgUrl": "/insurgence/delta-foongus",
+        "evos": [
+          "delta-amoonguss                                      "
+        ]
+      },
+      "delta-amoonguss": {
+        "name": "Delta Amoonguss",
+        "label": "Delta Amoonguss",
+        "alias": "delta-amoonguss",
+        "sprite": "delta-amoonguss",
+        "types": [
+          "ghost",
+          "dark"
+        ],
+        "baseStats": {
+          "hp": 114,
+          "atk": 85,
+          "def": 70,
+          "spa": 85,
+          "spd": 80,
+          "spe": 30
+        },
+        "total": 464,
+        "evoline": "delta-foongus                                                      ",
+        "imgUrl": "/insurgence/delta-amoonguss"
+      },
+      "delta-litwick": {
+        "name": "Delta Litwick",
+        "label": "Delta Litwick",
+        "alias": "delta-litwick",
+        "sprite": "delta-litwick",
+        "types": [
+          "fairy",
+          "fire"
+        ],
+        "baseStats": {
+          "hp": 50,
+          "atk": 30,
+          "def": 55,
+          "spa": 65,
+          "spd": 55,
+          "spe": 20
+        },
+        "total": 275,
+        "evoline": "delta-litwick",
+        "imgUrl": "/insurgence/delta-litwick",
+        "evos": [
+          "delta-lampent                                        "
+        ]
+      },
+      "delta-lampent": {
+        "name": "Delta Lampent",
+        "label": "Delta Lampent",
+        "alias": "delta-lampent",
+        "sprite": "delta-lampent",
+        "types": [
+          "fairy",
+          "fire"
+        ],
+        "baseStats": {
+          "hp": 60,
+          "atk": 40,
+          "def": 60,
+          "spa": 95,
+          "spd": 60,
+          "spe": 55
+        },
+        "total": 370,
+        "evoline": "delta-litwick",
+        "imgUrl": "/insurgence/delta-lampent",
+        "evos": [
+          "delta-chandelure                                     "
+        ]
+      },
+      "delta-chandelure": {
+        "name": "Delta Chandelure",
+        "label": "Delta Chandelure",
+        "alias": "delta-chandelure",
+        "sprite": "delta-chandelure",
+        "types": [
+          "fairy",
+          "fire"
+        ],
+        "baseStats": {
+          "hp": 60,
+          "atk": 55,
+          "def": 90,
+          "spa": 145,
+          "spd": 90,
+          "spe": 80
+        },
+        "total": 520,
+        "evoline": "delta-litwick                                                       ",
+        "imgUrl": "/insurgence/delta-chandelure"
+      },
+      "delta-axew": {
+        "name": "Delta Axew",
+        "label": "Delta Axew",
+        "alias": "delta-axew",
+        "sprite": "delta-axew",
+        "types": [
+          "water"
+        ],
+        "baseStats": {
+          "hp": 46,
+          "atk": 87,
+          "def": 60,
+          "spa": 30,
+          "spd": 40,
+          "spe": 57
+        },
+        "total": 320,
+        "evoline": "delta-axew",
+        "imgUrl": "/insurgence/delta-axew",
+        "evos": [
+          "delta-fraxure                                           "
+        ]
+      },
+      "delta-fraxure": {
+        "name": "Delta Fraxure",
+        "label": "Delta Fraxure",
+        "alias": "delta-fraxure",
+        "sprite": "delta-fraxure",
+        "types": [
+          "water"
+        ],
+        "baseStats": {
+          "hp": 66,
+          "atk": 117,
+          "def": 70,
+          "spa": 40,
+          "spd": 50,
+          "spe": 67
+        },
+        "total": 410,
+        "evoline": "delta-axew",
+        "imgUrl": "/insurgence/delta-fraxure",
+        "evos": [
+          "delta-haxorus                                           "
+        ]
+      },
+      "delta-haxorus": {
+        "name": "Delta Haxorus",
+        "label": "Delta Haxorus",
+        "alias": "delta-haxorus",
+        "sprite": "delta-haxorus",
+        "types": [
+          "water",
+          "steel"
+        ],
+        "baseStats": {
+          "hp": 76,
+          "atk": 147,
+          "def": 90,
+          "spa": 60,
+          "spd": 70,
+          "spe": 97
+        },
+        "total": 540,
+        "evoline": "delta-axew                                                         ",
+        "imgUrl": "/insurgence/delta-haxorus"
+      },
+      "delta-golett": {
+        "name": "Delta Golett",
+        "label": "Delta Golett",
+        "alias": "delta-golett",
+        "sprite": "delta-golett",
+        "types": [
+          "fighting",
+          "steel"
+        ],
+        "baseStats": {
+          "hp": 59,
+          "atk": 74,
+          "def": 50,
+          "spa": 35,
+          "spd": 50,
+          "spe": 35
+        },
+        "total": 303,
+        "evoline": "delta-golett",
+        "imgUrl": "/insurgence/delta-golett",
+        "evos": [
+          "delta-golurk                                          "
+        ]
+      },
+      "delta-golurk": {
+        "name": "Delta Golurk",
+        "label": "Delta Golurk",
+        "alias": "delta-golurk",
+        "sprite": "delta-golurk",
+        "types": [
+          "fighting",
+          "steel"
+        ],
+        "baseStats": {
+          "hp": 89,
+          "atk": 124,
+          "def": 80,
+          "spa": 55,
+          "spd": 80,
+          "spe": 55
+        },
+        "total": 483,
+        "evoline": "delta-golett                                                       ",
+        "imgUrl": "/insurgence/delta-golurk"
+      },
+      "delta-heatmor": {
+        "name": "Delta Heatmor",
+        "label": "Delta Heatmor",
+        "alias": "delta-heatmor",
+        "sprite": "delta-heatmor",
+        "types": [
+          "poison",
+          "steel"
+        ],
+        "baseStats": {
+          "hp": 85,
+          "atk": 97,
+          "def": 66,
+          "spa": 105,
+          "spd": 66,
+          "spe": 65
+        },
+        "total": 484,
+        "evoline": "delta-heatmor                                                      ",
+        "imgUrl": "/insurgence/delta-heatmor"
+      },
+      "delta-deino": {
+        "name": "Delta Deino",
+        "label": "Delta Deino",
+        "alias": "delta-deino",
+        "sprite": "delta-deino",
+        "types": [
+          "ground",
+          "poison"
+        ],
+        "baseStats": {
+          "hp": 52,
+          "atk": 65,
+          "def": 50,
+          "spa": 45,
+          "spd": 50,
+          "spe": 38
+        },
+        "total": 300,
+        "evoline": "delta-deino",
+        "imgUrl": "/insurgence/delta-deino",
+        "evos": [
+          "delta-zweilous                                         "
+        ]
+      },
+      "delta-zweilous": {
+        "name": "Delta Zweilous",
+        "label": "Delta Zweilous",
+        "alias": "delta-zweilous",
+        "sprite": "delta-zweilous",
+        "types": [
+          "ground",
+          "poison"
+        ],
+        "baseStats": {
+          "hp": 72,
+          "atk": 85,
+          "def": 70,
+          "spa": 65,
+          "spd": 70,
+          "spe": 58
+        },
+        "total": 420,
+        "evoline": "delta-deino",
+        "imgUrl": "/insurgence/delta-zweilous",
+        "evos": [
+          "delta-hydreigon                                        "
+        ]
+      },
+      "delta-hydreigon": {
+        "name": "Delta Hydreigon",
+        "label": "Delta Hydreigon",
+        "alias": "delta-hydreigon",
+        "sprite": "delta-hydreigon",
+        "types": [
+          "ground",
+          "poison"
+        ],
+        "baseStats": {
+          "hp": 92,
+          "atk": 105,
+          "def": 90,
+          "spa": 125,
+          "spd": 90,
+          "spe": 98
+        },
+        "total": 600,
+        "evoline": "delta-deino                                                          ",
+        "imgUrl": "/insurgence/delta-hydreigon"
+      },
+      "delta-larvesta": {
+        "name": "Delta Larvesta",
+        "label": "Delta Larvesta",
+        "alias": "delta-larvesta",
+        "sprite": "delta-larvesta",
+        "types": [
+          "dark",
+          "poison"
+        ],
+        "baseStats": {
+          "hp": 55,
+          "atk": 85,
+          "def": 55,
+          "spa": 50,
+          "spd": 55,
+          "spe": 60
+        },
+        "total": 360,
+        "evoline": "delta-larvesta",
+        "imgUrl": "/insurgence/delta-larvesta",
+        "evos": [
+          "delta-volcarona                                     "
+        ]
+      },
+      "delta-volcarona": {
+        "name": "Delta Volcarona",
+        "label": "Delta Volcarona",
+        "alias": "delta-volcarona",
+        "sprite": "delta-volcarona",
+        "types": [
+          "dark",
+          "poison"
+        ],
+        "baseStats": {
+          "hp": 85,
+          "atk": 60,
+          "def": 65,
+          "spa": 135,
+          "spd": 105,
+          "spe": 100
+        },
+        "total": 550,
+        "evoline": "delta-larvesta                                                      ",
+        "imgUrl": "/insurgence/delta-volcarona"
+      },
+      "delta-amaura": {
+        "name": "Delta Amaura",
+        "label": "Delta Amaura",
+        "alias": "delta-amaura",
+        "sprite": "delta-amaura",
+        "types": [
+          "grass",
+          "water"
+        ],
+        "baseStats": {
+          "hp": 77,
+          "atk": 59,
+          "def": 50,
+          "spa": 67,
+          "spd": 63,
+          "spe": 46
+        },
+        "total": 362,
+        "evoline": "delta-amaura",
+        "imgUrl": "/insurgence/delta-amaura",
+        "evos": [
+          "delta-aurorus                                         "
+        ]
+      },
+      "delta-aurorus": {
+        "name": "Delta Aurorus",
+        "label": "Delta Aurorus",
+        "alias": "delta-aurorus",
+        "sprite": "delta-aurorus",
+        "types": [
+          "grass",
+          "water"
+        ],
+        "baseStats": {
+          "hp": 123,
+          "atk": 77,
+          "def": 72,
+          "spa": 99,
+          "spd": 92,
+          "spe": 58
+        },
+        "total": 521,
+        "evoline": "delta-amaura                                                       ",
+        "imgUrl": "/insurgence/delta-aurorus"
+      },
+      "delta-goomy": {
+        "name": "Delta Goomy",
+        "label": "Delta Goomy",
+        "alias": "delta-goomy",
+        "sprite": "delta-goomy",
+        "types": [
+          "ground",
+          "water"
+        ],
+        "baseStats": {
+          "hp": 45,
+          "atk": 50,
+          "def": 35,
+          "spa": 55,
+          "spd": 75,
+          "spe": 40
+        },
+        "total": 300,
+        "evoline": "delta-goomy",
+        "imgUrl": "/insurgence/delta-goomy",
+        "evos": [
+          "delta-sliggoo                                          "
+        ]
+      },
+      "delta-sliggoo": {
+        "name": "Delta Sliggoo",
+        "label": "Delta Sliggoo",
+        "alias": "delta-sliggoo",
+        "sprite": "delta-sliggoo",
+        "types": [
+          "ground",
+          "water"
+        ],
+        "baseStats": {
+          "hp": 68,
+          "atk": 75,
+          "def": 53,
+          "spa": 83,
+          "spd": 113,
+          "spe": 60
+        },
+        "total": 452,
+        "evoline": "delta-goomy",
+        "imgUrl": "/insurgence/delta-sliggoo",
+        "evos": [
+          "delta-goodra                                           "
+        ]
+      },
+      "delta-goodra": {
+        "name": "Delta Goodra",
+        "label": "Delta Goodra",
+        "alias": "delta-goodra",
+        "sprite": "delta-goodra",
+        "types": [
+          "ground",
+          "water"
+        ],
+        "baseStats": {
+          "hp": 90,
+          "atk": 100,
+          "def": 70,
+          "spa": 110,
+          "spd": 150,
+          "spe": 80
+        },
+        "total": 600,
+        "evoline": "delta-goomy                                                        ",
+        "imgUrl": "/insurgence/delta-goodra"
+      },
+      "delta-regirock": {
+        "name": "Delta Regirock",
+        "label": "Delta Regirock",
+        "alias": "delta-regirock",
+        "sprite": "delta-regirock",
+        "types": [
+          "ground"
+        ],
+        "baseStats": {
+          "hp": 80,
+          "atk": 100,
+          "def": 200,
+          "spa": 50,
+          "spd": 100,
+          "spe": 50
+        },
+        "total": 580,
+        "evoline": "delta-regirock                                                      ",
+        "imgUrl": "/insurgence/delta-regirock"
+      },
+      "delta-regice": {
+        "name": "Delta Regice",
+        "label": "Delta Regice",
+        "alias": "delta-regice",
+        "sprite": "delta-regice",
+        "types": [
+          "water"
+        ],
+        "baseStats": {
+          "hp": 80,
+          "atk": 50,
+          "def": 100,
+          "spa": 100,
+          "spd": 200,
+          "spe": 50
+        },
+        "total": 580,
+        "evoline": "delta-regice                                                       ",
+        "imgUrl": "/insurgence/delta-regice"
+      },
+      "delta-registeel": {
+        "name": "Delta Registeel",
+        "label": "Delta Registeel",
+        "alias": "delta-registeel",
+        "sprite": "delta-registeel",
+        "types": [
+          "fire"
+        ],
+        "baseStats": {
+          "hp": 80,
+          "atk": 75,
+          "def": 150,
+          "spa": 75,
+          "spd": 150,
+          "spe": 50
+        },
+        "total": 580,
+        "evoline": "delta-registeel                                                     ",
+        "imgUrl": "/insurgence/delta-registeel"
+      },
+      "delta-meloetta": {
+        "name": "Delta Meloetta",
+        "label": "Delta Meloetta",
+        "alias": "delta-meloetta",
+        "sprite": "delta-meloetta",
+        "types": [
+          "dark",
+          "fairy"
+        ],
+        "baseStats": {
+          "hp": 100,
+          "atk": 128,
+          "def": 90,
+          "spa": 77,
+          "spd": 77,
+          "spe": 128
+        },
+        "total": 600,
+        "evoline": "delta-meloetta                                                     ",
+        "imgUrl": "/insurgence/delta-meloetta"
+      },
+      "delta-hoopa": {
+        "name": "Delta Hoopa",
+        "label": "Delta Hoopa",
+        "alias": "delta-hoopa",
+        "sprite": "delta-hoopa",
+        "types": [
+          "flying"
+        ],
+        "baseStats": {
+          "hp": 80,
+          "atk": 110,
+          "def": 60,
+          "spa": 150,
+          "spd": 130,
+          "spe": 70
+        },
+        "total": 600,
+        "evoline": "delta-hoopa                                                        ",
+        "imgUrl": "/insurgence/delta-hoopa"
+      }
+    }
+  },
   "radred": {
     "item": {
       "toxtricitite": {
