@@ -2,7 +2,7 @@
 ---
 
 Pokémon Radical Red is a fan-made ROM hack of Pokémon FireRed and
-LeafGree. It introduces new
+LeafGreen. It introduces new
 features, gameplay mechanics and challenges that make it stand out as
 a unique and challenging nuzlocking experience.
 
