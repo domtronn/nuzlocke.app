@@ -11,7 +11,7 @@
   import { Tooltip, PIcon } from '$lib/components/core'
   import ColorMap from '$lib/data/colors.json'
 
-  import { SPRITE } from '$utils/rewrites'
+  import { createImgUrl } from '$utils/rewrites'
   import { Stars as Pattern } from '$utils/pattern'
 
   $: atk = pokemon[0]
@@ -22,7 +22,7 @@
   $: defCols = def.types.map(t => ColorMap[t.toLowerCase()])
   $: defBgImg = Pattern(defCols[1] || defCols[0])
 
-  const sprite = id => `${SPRITE}/${status === 6 ? 'shiny/' : ''}${id}.png`
+  const sprite = id => createImgUrl(id, { ext: 'png', shiny: status === 6})
 </script>
 
 <div class='shadow-lg dark:text-gray-50 relative {className}'>

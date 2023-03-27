@@ -27,6 +27,6 @@ export const createImgUrl = (p, { ext = 'webp', shiny = false } = {}) => {
     .replace('.png', '')
     .replace('.webp', '')
 
-  if (shiny) return `${SPRITE}/shiny/${normalId}.${ext}`
-  return `${SPRITE}/${normalId}.${ext}`
+  if (shiny) return `${SPRITE}/shiny/${normalId}.${ext}?bypass=true`
+  return `${SPRITE}/base/${normalId}.${ext}?bypass=true`
 }
