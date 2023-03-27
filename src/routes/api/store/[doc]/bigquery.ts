@@ -2,6 +2,7 @@ import { BigQuery } from '@google-cloud/bigquery'
 
 import { z  } from 'zod'
 import { IGames, ISave } from './types'
+import { isEmpty, nonnull } from '$utils/obj'
 
 // @ts-ignore
 type IGames = z.infer<typeof IGames>
@@ -57,18 +58,38 @@ export const processGame = async ({ data, user_id }: IGames) => {
 }
 
 export const processSave = async ({ data, user_id, game_id }: ISave) => {
-  try {
-    await bq
-      .dataset(VITE_BQ_SAVES_DATASET_ID)
-      .table(VITE_BQ_SAVES_TABLE_ID)
-      .insert(data.map(({ id, hidden, location, ...d }) => ({
+    try {
+      const rows = data.map(({ id, hidden, location, death, ...d }) => ({
         ...d,
         user_id,
         game_id,
         location_name: location,
         location_id: id,
         uploaded_at: +new Date() / 1000,
-      })))
+        ...(d.status === 5 && !isEmpty(death) ? nonnull({
+            death_type: death.type,
+            death_time: death.time / 1000,
+            death_epitaph: death.epitaph,
+            death_epitaph_custom: death?.custom,
+            death_epitaph_category: death?.category,
+            death_lvl_start: death?.lvl?.from,
+            death_lvl_end: death?.lvl?.to,
+            death_location_name: death?.location?.name,
+            death_pokemon_name: death?.opponent?.name,
+            death_pokemon_id: death?.opponent?.id,
+            death_trainer_name: death?.trainer?.name,
+            death_trainer_id: death?.trainer?.id,
+            death_trainer_type: death?.trainer?.type,
+            death_trainer_speciality: death?.trainer?.speciality,
+            death_attack_name: death?.attack?.name,
+            death_attack_type: death?.attack?.type,
+        }): {})
+      }))
+        
+    await bq
+      .dataset(VITE_BQ_SAVES_DATASET_ID)
+      .table(VITE_BQ_SAVES_TABLE_ID)
+      .insert(rows)
     
     console.log(`Added ${data.length} rows of save data`)
   } catch (e) {

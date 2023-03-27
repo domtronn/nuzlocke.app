@@ -23,6 +23,11 @@
   image-rendering: pixelated;
 }
 
+img {
+  max-inline-size: 100%;
+  block-size: auto;
+}
+
 .pkm-wrapper {
   width: 67px;
   height: 56px;
@@ -226,4 +231,14 @@ svg g {
 }
 svg.waves g.fill {
   fill: theme('colors.white');
+}
+
+.modal-positioning {
+  justify-content: flex-start !important;
+}
+
+@media (min-width:640px) {
+  .modal-positioning {
+    justify-content: center !important;
+  }
 }

@@ -1,4 +1,4 @@
-import games from '$lib/data/games.json';
+import { Expanded as games } from '$lib/data/games.js';
 import patches from '$lib/data/patches.json';
 
 import { LegacyTypeMap } from '$lib/data/legacy'
@@ -15,7 +15,7 @@ const patchTypes = (pkmn, typeMap) => {
   })
 }
 
-const patchPokemon = (pkmn, patches, fakemon) => {
+const patchPokemon = (pkmn, patches = {}, fakemon = {}) => {
   return pkmn.map((p) => {
     const patch = patches[p.alias] || patches[p.sprite] || {};
     const baseStats = {

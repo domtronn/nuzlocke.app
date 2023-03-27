@@ -33,10 +33,10 @@
 
 <p>
   {#each Object.entries(encounters).sort(([, a], [, b])=> a.length - b.length) as [type, encounters]}
-    <h3 class='sr-only'>{encounters.length} {capitalise(type)} Pokémon encounters</h3>
-    <ul class='sr-only'>
+    <h3 class=sr-only>{encounters.length} {capitalise(type)} Pokémon encounters</h3>
+    <ul class=sr-only>
       {#each encounters as { name, sprite }}
-        <li class='sr-only'>
+        <li class=sr-only>
           {capitalise(name)} - {toList(encounterMap[sprite] || [], i => i, 'and')}
         </li>
       {/each}

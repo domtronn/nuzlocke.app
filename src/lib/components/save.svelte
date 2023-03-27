@@ -7,7 +7,7 @@
   import day from '$lib/utils/date'
 
   import { NuzlockeStates } from '$lib/data/states'
-  import { PIcon, IconButton, Picture } from '$lib/components/core'
+  import { PIcon, IconButton, Logo as Picture } from '$lib/components/core'
 
   import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
   import { Bin } from '$icons'
@@ -43,12 +43,12 @@
     <Picture
       alt='{name} logo'
       src=/assets/{game}
-      className='hidden sm:block w-32'
+      class='hidden sm:block h-16 w-32'
       aspect=192x96
     />
 
     <div class='text-left'>
-      <h2 class='font-bold transition text-xl leading-7'><mark class='bg-transparent dark:text-gray-50 dark:group-hover:text-gray-900 transition group-hover:bg-yellow-300'>{name}</mark></h2>
+      <h2 class='font-bold transition text-xl leading-7 max-w-[26ch]'><mark class='bg-transparent dark:text-gray-50 dark:group-hover:text-gray-900 transition group-hover:bg-yellow-300'>{name}</mark></h2>
       <h3 class='text-sm transition'><mark class='bg-transparent dark:text-gray-50 dark:group-hover:text-gray-900 transition group-hover:bg-yellow-300'>{date}<mark></h3>
       <span class='font-sans inline-flex items-center'>
         {(available || []).length}

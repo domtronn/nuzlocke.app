@@ -39,7 +39,7 @@
           "name": "Early Bird",
           "effect": "Makes sleep pass twice as quickly."
         },
-        "sprite": "84.png",
+        "sprite": "84",
         "types": [
           "normal",
           "flying"
@@ -89,18 +89,18 @@
           "name": "Inner Focus",
           "effect": "Prevents flinching."
         },
-        "sprite": "83.png",
+        "sprite": "83",
         "types": [
           "normal",
           "flying"
         ],
         "stats": {
-          "hp": 52,
-          "atk": 90,
+          "hp": 55,
+          "atk": 110,
           "def": 55,
-          "spa": 58,
-          "spd": 62,
-          "spe": 60
+          "spa": 60,
+          "spd": 65,
+          "spe": 105
         }
       },
       {
@@ -138,7 +138,7 @@
           "name": "Tangled Feet",
           "effect": "Doubles evasion when confused."
         },
-        "sprite": "441.png",
+        "sprite": "441",
         "types": [
           "normal",
           "flying"
@@ -147,9 +147,9 @@
           "hp": 76,
           "atk": 65,
           "def": 45,
-          "spa": 92,
+          "spa": 112,
           "spd": 42,
-          "spe": 91
+          "spe": 111
         }
       },
       {
@@ -192,7 +192,7 @@
           "name": "Oran Berry",
           "effect": "Held: Consumed at 1/2 max HP to recover 10 HP."
         },
-        "sprite": "198.png",
+        "sprite": "198",
         "types": [
           "dark",
           "flying"
@@ -246,7 +246,7 @@
           "name": "Power Herb",
           "effect": "Held: Both turns of a two-turn charge move happen at once. Consumed upon use."
         },
-        "sprite": "333.png",
+        "sprite": "333",
         "types": [
           "normal",
           "flying"
@@ -300,7 +300,7 @@
           "name": "Oran Berry",
           "effect": "Held: Consumed at 1/2 max HP to recover 10 HP."
         },
-        "sprite": "17.png",
+        "sprite": "17",
         "types": [
           "normal",
           "flying"
@@ -362,18 +362,18 @@
           "name": "Damp Rock",
           "effect": "Held: Rain Dance by the holder lasts 8 rounds instead of 5."
         },
-        "sprite": "12.png",
+        "sprite": "12",
         "types": [
           "bug",
           "flying"
         ],
         "stats": {
           "hp": 60,
-          "atk": 45,
+          "atk": 100,
           "def": 50,
           "spa": 90,
-          "spd": 80,
-          "spe": 70
+          "spd": 100,
+          "spe": 80
         }
       },
       {
@@ -413,7 +413,7 @@
           "name": "Compound Eyes",
           "effect": "Increases moves' accuracy to 1.3×."
         },
-        "sprite": "193.png",
+        "sprite": "193",
         "types": [
           "bug",
           "flying"
@@ -463,18 +463,18 @@
           "name": "Swarm",
           "effect": "Strengthens bug moves to inflict 1.5× damage at 1/3 max HP or less."
         },
-        "sprite": "15.png",
+        "sprite": "15",
         "types": [
           "bug",
           "poison"
         ],
         "stats": {
           "hp": 65,
-          "atk": 90,
+          "atk": 100,
           "def": 40,
           "spa": 45,
-          "spd": 80,
-          "spe": 75
+          "spd": 90,
+          "spe": 95
         }
       },
       {
@@ -518,7 +518,7 @@
           "name": "Damp Rock",
           "effect": "Held: Rain Dance by the holder lasts 8 rounds instead of 5."
         },
-        "sprite": "214.png",
+        "sprite": "214",
         "types": [
           "bug",
           "fighting"
@@ -570,7 +570,7 @@
           "name": "Mold Breaker",
           "effect": "Bypasses targets' abilities if they could hinder or prevent a move."
         },
-        "sprite": "127.png",
+        "sprite": "127",
         "types": [
           "bug"
         ],
@@ -623,7 +623,7 @@
           "name": "Sitrus Berry",
           "effect": "Held: Consumed at 1/2 max HP to recover 1/4 max HP."
         },
-        "sprite": "123.png",
+        "sprite": "123",
         "types": [
           "bug",
           "flying"
@@ -678,7 +678,7 @@
           "name": "Own Tempo",
           "effect": "Prevents confusion."
         },
-        "sprite": "108.png",
+        "sprite": "108",
         "types": [
           "normal"
         ],
@@ -726,7 +726,7 @@
           "name": "Limber",
           "effect": "Prevents paralysis."
         },
-        "sprite": "428.png",
+        "sprite": "428",
         "types": [
           "normal"
         ],
@@ -774,7 +774,7 @@
           "name": "Intimidate",
           "effect": "Lowers opponents' Attack one stage upon entering battle."
         },
-        "sprite": "234.png",
+        "sprite": "234",
         "types": [
           "normal"
         ],
@@ -822,17 +822,17 @@
           "name": "Cute Charm",
           "effect": "Has a 30% chance of infatuating attacking Pokémon on contact."
         },
-        "sprite": "40.png",
+        "sprite": "40",
         "types": [
           "normal",
           "fairy"
         ],
         "stats": {
-          "hp": 140,
+          "hp": 148,
           "atk": 70,
-          "def": 45,
+          "def": 55,
           "spa": 85,
-          "spd": 50,
+          "spd": 65,
           "spe": 45
         }
       },
@@ -876,7 +876,7 @@
           "name": "Sitrus Berry",
           "effect": "Held: Consumed at 1/2 max HP to recover 1/4 max HP."
         },
-        "sprite": "36.png",
+        "sprite": "36",
         "types": [
           "fairy"
         ],
@@ -891,7 +891,7 @@
       },
       {
         "name": "miltank",
-        "level": "22",
+        "level": "24",
         "moves": [
           {
             "type": "normal",
@@ -929,7 +929,7 @@
           "name": "Lum Berry",
           "effect": "Held: Consumed to cure any status condition or confusion."
         },
-        "sprite": "241.png",
+        "sprite": "241",
         "types": [
           "normal"
         ],
@@ -984,7 +984,7 @@
           "name": "Levitate",
           "effect": "Evades ground moves."
         },
-        "sprite": "355.png",
+        "sprite": "355",
         "types": [
           "ghost"
         ],
@@ -1032,7 +1032,7 @@
           "name": "Insomnia",
           "effect": "Prevents sleep."
         },
-        "sprite": "353.png",
+        "sprite": "353",
         "types": [
           "ghost"
         ],
@@ -1040,7 +1040,7 @@
           "hp": 44,
           "atk": 75,
           "def": 35,
-          "spa": 63,
+          "spa": 73,
           "spd": 33,
           "spe": 45
         }
@@ -1080,7 +1080,7 @@
           "name": "Levitate",
           "effect": "Evades ground moves."
         },
-        "sprite": "93.png",
+        "sprite": "93",
         "types": [
           "ghost",
           "poison"
@@ -1128,7 +1128,7 @@
           "name": "Levitate",
           "effect": "Evades ground moves."
         },
-        "sprite": "200.png",
+        "sprite": "200",
         "types": [
           "ghost"
         ],
@@ -1176,7 +1176,7 @@
           "name": "Steadfast",
           "effect": "Raises Speed one stage upon flinching."
         },
-        "sprite": "302.png",
+        "sprite": "302",
         "types": [
           "dark",
           "ghost"
@@ -1231,7 +1231,7 @@
           "name": "Sitrus Berry",
           "effect": "Held: Consumed at 1/2 max HP to recover 1/4 max HP."
         },
-        "sprite": "94.png",
+        "sprite": "94",
         "types": [
           "ghost",
           "poison"
@@ -1289,7 +1289,7 @@
           "name": "Anger Point",
           "effect": "Raises Attack to the maximum of six stages upon receiving a critical hit."
         },
-        "sprite": "57.png",
+        "sprite": "57",
         "types": [
           "fighting"
         ],
@@ -1339,7 +1339,7 @@
           "name": "Poison Heal",
           "effect": "Heals for 1/8 max HP after each turn when poisoned in place of damage."
         },
-        "sprite": "286.png",
+        "sprite": "286",
         "types": [
           "grass",
           "fighting"
@@ -1391,7 +1391,7 @@
           "name": "Thick Fat",
           "effect": "Halves damage from fire and ice moves."
         },
-        "sprite": "297.png",
+        "sprite": "297",
         "types": [
           "fighting"
         ],
@@ -1442,7 +1442,7 @@
           "name": "Reckless",
           "effect": "Strengthens recoil moves to 1.2× their power."
         },
-        "sprite": "106.png",
+        "sprite": "106",
         "types": [
           "fighting"
         ],
@@ -1492,7 +1492,7 @@
           "name": "Iron Fist",
           "effect": "Strengthens punch-based moves to 1.2× their power."
         },
-        "sprite": "107.png",
+        "sprite": "107",
         "types": [
           "fighting"
         ],
@@ -1547,7 +1547,7 @@
           "name": "Sitrus Berry",
           "effect": "Held: Consumed at 1/2 max HP to recover 1/4 max HP."
         },
-        "sprite": "62.png",
+        "sprite": "62",
         "types": [
           "water",
           "fighting"
@@ -1555,7 +1555,7 @@
         "stats": {
           "hp": 90,
           "atk": 95,
-          "def": 95,
+          "def": 100,
           "spa": 70,
           "spd": 90,
           "spe": 70
@@ -1605,7 +1605,7 @@
           "name": "Clear Body",
           "effect": "Prevents stats from being lowered by other Pokémon."
         },
-        "sprite": "375.png",
+        "sprite": "375",
         "types": [
           "steel",
           "psychic"
@@ -1655,7 +1655,7 @@
           "name": "Sturdy",
           "effect": "Prevents being KOed from full HP, leaving 1 HP instead.  Protects against the one-hit KO moves regardless of HP."
         },
-        "sprite": "205.png",
+        "sprite": "205",
         "types": [
           "bug",
           "steel"
@@ -1708,7 +1708,7 @@
           "name": "Damp Rock",
           "effect": "Held: Rain Dance by the holder lasts 8 rounds instead of 5."
         },
-        "sprite": "437.png",
+        "sprite": "437",
         "types": [
           "steel",
           "psychic"
@@ -1757,7 +1757,7 @@
           "name": "Magnet Pull",
           "effect": "Prevents steel opponents from fleeing or switching out."
         },
-        "sprite": "82.png",
+        "sprite": "82",
         "types": [
           "electric",
           "steel"
@@ -1807,7 +1807,7 @@
           "name": "Rock Head",
           "effect": "Protects against recoil damage."
         },
-        "sprite": "227.png",
+        "sprite": "227",
         "types": [
           "steel",
           "flying"
@@ -1862,14 +1862,14 @@
           "name": "Sitrus Berry",
           "effect": "Held: Consumed at 1/2 max HP to recover 1/4 max HP."
         },
-        "sprite": "208.png",
+        "sprite": "208",
         "types": [
           "steel",
           "ground"
         ],
         "stats": {
           "hp": 75,
-          "atk": 85,
+          "atk": 90,
           "def": 200,
           "spa": 55,
           "spd": 65,
@@ -1919,7 +1919,7 @@
           "name": "Snow Warning",
           "effect": "Summons hail that lasts indefinitely upon entering battle."
         },
-        "sprite": "460.png",
+        "sprite": "460",
         "types": [
           "grass",
           "ice"
@@ -1970,7 +1970,7 @@
           "name": "Levitate",
           "effect": "Evades ground moves."
         },
-        "sprite": "478.png",
+        "sprite": "478",
         "types": [
           "ice",
           "ghost"
@@ -1979,7 +1979,7 @@
           "hp": 70,
           "atk": 80,
           "def": 70,
-          "spa": 80,
+          "spa": 100,
           "spd": 70,
           "spe": 110
         }
@@ -2020,17 +2020,18 @@
           "name": "Levitate",
           "effect": "Evades ground moves."
         },
-        "sprite": "362.png",
+        "sprite": "362",
         "types": [
-          "ice"
+          "ice",
+          "rock"
         ],
         "stats": {
           "hp": 80,
-          "atk": 80,
-          "def": 80,
+          "atk": 100,
+          "def": 120,
           "spa": 80,
-          "spd": 80,
-          "spe": 80
+          "spd": 60,
+          "spe": 60
         }
       },
       {
@@ -2073,14 +2074,14 @@
           "name": "Chesto Berry",
           "effect": "Held: Consumed when asleep to cure sleep."
         },
-        "sprite": "87.png",
+        "sprite": "87",
         "types": [
           "water",
           "ice"
         ],
         "stats": {
           "hp": 90,
-          "atk": 70,
+          "atk": 80,
           "def": 80,
           "spa": 70,
           "spd": 95,
@@ -2128,7 +2129,7 @@
           "name": "Sitrus Berry",
           "effect": "Held: Consumed at 1/2 max HP to recover 1/4 max HP."
         },
-        "sprite": "131.png",
+        "sprite": "131",
         "types": [
           "water",
           "ice"
@@ -2184,7 +2185,7 @@
           "name": "White Herb",
           "effect": "Held: Resets all lowered stats to normal at end of turn. Consumed after use."
         },
-        "sprite": "473.png",
+        "sprite": "473",
         "types": [
           "ice",
           "ground"
@@ -2240,7 +2241,7 @@
           "name": "Shed Skin",
           "effect": "Has a 33% chance of curing any major status ailment after each turn."
         },
-        "sprite": "148.png",
+        "sprite": "148",
         "types": [
           "dragon"
         ],
@@ -2288,7 +2289,7 @@
           "name": "Shed Skin",
           "effect": "Has a 33% chance of curing any major status ailment after each turn."
         },
-        "sprite": "148.png",
+        "sprite": "148",
         "types": [
           "dragon"
         ],
@@ -2337,7 +2338,7 @@
           "name": "Intimidate",
           "effect": "Lowers opponents' Attack one stage upon entering battle."
         },
-        "sprite": "130.png",
+        "sprite": "130",
         "types": [
           "water",
           "flying"
@@ -2386,7 +2387,7 @@
           "name": "Natural Cure",
           "effect": "Cures any major status ailment upon switching out."
         },
-        "sprite": "334.png",
+        "sprite": "334",
         "types": [
           "dragon",
           "flying"
@@ -2440,7 +2441,7 @@
           "name": "White Herb",
           "effect": "Held: Resets all lowered stats to normal at end of turn. Consumed after use."
         },
-        "sprite": "373.png",
+        "sprite": "373",
         "types": [
           "dragon",
           "flying"
@@ -2493,7 +2494,7 @@
           "name": "Sitrus Berry",
           "effect": "Held: Consumed at 1/2 max HP to recover 1/4 max HP."
         },
-        "sprite": "230.png",
+        "sprite": "230",
         "types": [
           "water",
           "dragon"
@@ -2549,7 +2550,7 @@
           "name": "Aftermath",
           "effect": "Damages the attacker for 1/4 its max HP when knocked out by a contact move."
         },
-        "sprite": "100.png",
+        "sprite": "100",
         "types": [
           "electric"
         ],
@@ -2598,7 +2599,7 @@
           "name": "Sand Veil",
           "effect": "Increases evasion to 1.25× during a sandstorm.  Protects against sandstorm damage."
         },
-        "sprite": "331.png",
+        "sprite": "331",
         "types": [
           "grass"
         ],
@@ -2645,7 +2646,7 @@
           "name": "Inner Focus",
           "effect": "Prevents flinching."
         },
-        "sprite": "41.png",
+        "sprite": "41",
         "types": [
           "poison",
           "flying"
@@ -2695,7 +2696,7 @@
           "name": "Levitate",
           "effect": "Evades ground moves."
         },
-        "sprite": "109.png",
+        "sprite": "109",
         "types": [
           "poison"
         ],
@@ -2749,7 +2750,7 @@
           "name": "Insomnia",
           "effect": "Prevents sleep."
         },
-        "sprite": "430.png",
+        "sprite": "430",
         "types": [
           "dark",
           "flying"
@@ -2800,7 +2801,7 @@
           "effect": "Has a 30% chance of poisoning attacking Pokémon on contact."
         },
         "starter": "grass",
-        "sprite": "117.png",
+        "sprite": "117",
         "types": [
           "water"
         ],
@@ -2850,7 +2851,7 @@
           "effect": "Has a 30% chance of paralyzing attacking Pokémon on contact."
         },
         "starter": "grass",
-        "sprite": "125.png",
+        "sprite": "125",
         "types": [
           "electric"
         ],
@@ -2899,7 +2900,7 @@
           "name": "Levitate",
           "effect": "Evades ground moves."
         },
-        "sprite": "94.png",
+        "sprite": "94",
         "types": [
           "ghost",
           "poison"
@@ -2949,7 +2950,7 @@
           "name": "Synchronize",
           "effect": "Copies burns, paralysis, and poison received onto the Pokémon that inflicted them."
         },
-        "sprite": "65.png",
+        "sprite": "65",
         "types": [
           "psychic"
         ],
@@ -3000,7 +3001,7 @@
           "effect": "Strengthens fire moves to inflict 1.5× damage at 1/3 max HP or less."
         },
         "starter": "grass",
-        "sprite": "157.png",
+        "sprite": "157",
         "types": [
           "fire"
         ],
@@ -3054,7 +3055,7 @@
           "name": "Synchronize",
           "effect": "Copies burns, paralysis, and poison received onto the Pokémon that inflicted them."
         },
-        "sprite": "197.png",
+        "sprite": "197",
         "types": [
           "dark"
         ],
@@ -3102,7 +3103,7 @@
           "name": "Synchronize",
           "effect": "Copies burns, paralysis, and poison received onto the Pokémon that inflicted them."
         },
-        "sprite": "196.png",
+        "sprite": "196",
         "types": [
           "psychic"
         ],
@@ -3149,7 +3150,7 @@
           "name": "Leaf Guard",
           "effect": "Protects against major status ailments during strong sunlight."
         },
-        "sprite": "470.png",
+        "sprite": "470",
         "types": [
           "grass"
         ],
@@ -3199,7 +3200,7 @@
           "name": "Snow Cloak",
           "effect": "Increases evasion to 1.25× during hail.  Protects against hail damage."
         },
-        "sprite": "471.png",
+        "sprite": "471",
         "types": [
           "ice"
         ],
@@ -3248,17 +3249,17 @@
           "name": "Flash Fire",
           "effect": "Protects against fire moves.  Once one has been blocked, the Pokémon's own Fire moves inflict 1.5× damage until it leaves battle."
         },
-        "sprite": "136.png",
+        "sprite": "136",
         "types": [
           "fire"
         ],
         "stats": {
-          "hp": 65,
+          "hp": 110,
           "atk": 130,
-          "def": 60,
-          "spa": 95,
-          "spd": 110,
-          "spe": 65
+          "def": 65,
+          "spa": 60,
+          "spd": 65,
+          "spe": 95
         }
       },
       {
@@ -3296,7 +3297,7 @@
           "name": "Volt Absorb",
           "effect": "Absorbs electric moves, healing for 1/4 max HP."
         },
-        "sprite": "135.png",
+        "sprite": "135",
         "types": [
           "electric"
         ],
@@ -3344,7 +3345,7 @@
           "name": "Water Absorb",
           "effect": "Absorbs water moves, healing for 1/4 max HP."
         },
-        "sprite": "134.png",
+        "sprite": "134",
         "types": [
           "water"
         ],
@@ -3399,7 +3400,7 @@
           "name": "Insomnia",
           "effect": "Prevents sleep."
         },
-        "sprite": "97.png",
+        "sprite": "97",
         "types": [
           "psychic"
         ],
@@ -3447,7 +3448,7 @@
           "name": "Levitate",
           "effect": "Evades ground moves."
         },
-        "sprite": "479.png",
+        "sprite": "479",
         "types": [
           "electric",
           "ghost"
@@ -3456,9 +3457,9 @@
           "hp": 50,
           "atk": 50,
           "def": 77,
-          "spa": 95,
+          "spa": 105,
           "spd": 77,
-          "spe": 91
+          "spe": 101
         }
       },
       {
@@ -3496,7 +3497,7 @@
           "name": "Aftermath",
           "effect": "Damages the attacker for 1/4 its max HP when knocked out by a contact move."
         },
-        "sprite": "101.png",
+        "sprite": "101",
         "types": [
           "electric"
         ],
@@ -3543,7 +3544,7 @@
           "name": "Chlorophyll",
           "effect": "Doubles Speed during strong sunlight."
         },
-        "sprite": "189.png",
+        "sprite": "189",
         "types": [
           "grass",
           "flying"
@@ -3600,7 +3601,7 @@
           "name": "Intimidate",
           "effect": "Lowers opponents' Attack one stage upon entering battle."
         },
-        "sprite": "24.png",
+        "sprite": "24",
         "types": [
           "poison"
         ],
@@ -3648,7 +3649,7 @@
           "name": "Dry Skin",
           "effect": "Causes 1/8 max HP in damage each turn during strong sunlight, but heals for 1/8 max HP during rain.  Increases damage from fire moves to 1.25×, but absorbs water moves, healing for 1/4 max HP."
         },
-        "sprite": "124.png",
+        "sprite": "124",
         "types": [
           "ice",
           "psychic"
@@ -3657,7 +3658,7 @@
           "hp": 65,
           "atk": 50,
           "def": 35,
-          "spa": 115,
+          "spa": 120,
           "spd": 95,
           "spe": 95
         }
@@ -3698,7 +3699,7 @@
           "name": "Chlorophyll",
           "effect": "Doubles Speed during strong sunlight."
         },
-        "sprite": "45.png",
+        "sprite": "45",
         "types": [
           "grass",
           "poison"
@@ -3748,7 +3749,7 @@
           "name": "Insomnia",
           "effect": "Prevents sleep."
         },
-        "sprite": "430.png",
+        "sprite": "430",
         "types": [
           "dark",
           "flying"
@@ -3805,17 +3806,17 @@
           "name": "Hustle",
           "effect": "Strengthens physical moves to inflict 1.5× damage, but decreases their accuracy to 0.8×."
         },
-        "sprite": "20.png",
+        "sprite": "20",
         "types": [
           "normal"
         ],
         "stats": {
-          "hp": 55,
-          "atk": 81,
+          "hp": 65,
+          "atk": 91,
           "def": 60,
           "spa": 50,
           "spd": 70,
-          "spe": 97
+          "spe": 107
         }
       },
       {
@@ -3855,7 +3856,7 @@
           "name": "Stench",
           "effect": "Has a 10% chance of making target Pokémon flinch with each hit."
         },
-        "sprite": "435.png",
+        "sprite": "435",
         "types": [
           "poison",
           "dark"
@@ -3903,7 +3904,7 @@
           "name": "Inner Focus",
           "effect": "Prevents flinching."
         },
-        "sprite": "42.png",
+        "sprite": "42",
         "types": [
           "poison",
           "flying"
@@ -3953,7 +3954,7 @@
           "name": "Levitate",
           "effect": "Evades ground moves."
         },
-        "sprite": "110.png",
+        "sprite": "110",
         "types": [
           "poison"
         ],
@@ -4009,7 +4010,7 @@
           "name": "Immunity",
           "effect": "Prevents poison."
         },
-        "sprite": "335.png",
+        "sprite": "335",
         "types": [
           "normal"
         ],
@@ -4058,7 +4059,7 @@
           "name": "Intimidate",
           "effect": "Lowers opponents' Attack one stage upon entering battle."
         },
-        "sprite": "130.png",
+        "sprite": "130",
         "types": [
           "water",
           "flying"
@@ -4108,7 +4109,7 @@
           "name": "Intimidate",
           "effect": "Lowers opponents' Attack one stage upon entering battle."
         },
-        "sprite": "229.png",
+        "sprite": "229",
         "types": [
           "dark",
           "fire"
@@ -4166,7 +4167,7 @@
           "name": "Stench",
           "effect": "Has a 10% chance of making target Pokémon flinch with each hit."
         },
-        "sprite": "435.png",
+        "sprite": "435",
         "types": [
           "poison",
           "dark"
@@ -4216,17 +4217,17 @@
           "name": "Hustle",
           "effect": "Strengthens physical moves to inflict 1.5× damage, but decreases their accuracy to 0.8×."
         },
-        "sprite": "20.png",
+        "sprite": "20",
         "types": [
           "normal"
         ],
         "stats": {
-          "hp": 55,
-          "atk": 81,
+          "hp": 65,
+          "atk": 91,
           "def": 60,
           "spa": 50,
           "spd": 70,
-          "spe": 97
+          "spe": 107
         }
       },
       {
@@ -4266,7 +4267,7 @@
           "name": "Anticipation",
           "effect": "Notifies all trainers upon entering battle if an opponent has a super-effective move, self destruct, explosion, or a one-hit KO move."
         },
-        "sprite": "454.png",
+        "sprite": "454",
         "types": [
           "poison",
           "fighting"
@@ -4316,7 +4317,7 @@
           "name": "Inner Focus",
           "effect": "Prevents flinching."
         },
-        "sprite": "169.png",
+        "sprite": "169",
         "types": [
           "poison",
           "flying"
@@ -4367,7 +4368,7 @@
           "name": "Levitate",
           "effect": "Evades ground moves."
         },
-        "sprite": "110.png",
+        "sprite": "110",
         "types": [
           "poison"
         ],
@@ -4424,7 +4425,7 @@
           "name": "Intimidate",
           "effect": "Lowers opponents' Attack one stage upon entering battle."
         },
-        "sprite": "24.png",
+        "sprite": "24",
         "types": [
           "poison"
         ],
@@ -4472,7 +4473,7 @@
           "name": "Chlorophyll",
           "effect": "Doubles Speed during strong sunlight."
         },
-        "sprite": "45.png",
+        "sprite": "45",
         "types": [
           "grass",
           "poison"
@@ -4521,7 +4522,7 @@
           "name": "Insomnia",
           "effect": "Prevents sleep."
         },
-        "sprite": "430.png",
+        "sprite": "430",
         "types": [
           "dark",
           "flying"
@@ -4576,7 +4577,7 @@
           "name": "Poison Point",
           "effect": "Has a 30% chance of poisoning attacking Pokémon on contact."
         },
-        "sprite": "33.png",
+        "sprite": "33",
         "types": [
           "poison"
         ],
@@ -4626,7 +4627,7 @@
           "name": "Thick Fat",
           "effect": "Halves damage from fire and ice moves."
         },
-        "sprite": "183.png",
+        "sprite": "183",
         "types": [
           "water",
           "fairy"
@@ -4635,7 +4636,7 @@
           "hp": 70,
           "atk": 20,
           "def": 50,
-          "spa": 20,
+          "spa": 50,
           "spd": 50,
           "spe": 40
         }
@@ -4674,7 +4675,7 @@
           "name": "Chlorophyll",
           "effect": "Doubles Speed during strong sunlight."
         },
-        "sprite": "114.png",
+        "sprite": "114",
         "types": [
           "grass"
         ],
@@ -4729,7 +4730,7 @@
           "name": "Sitrus Berry",
           "effect": "Held: Consumed at 1/2 max HP to recover 1/4 max HP."
         },
-        "sprite": "59.png",
+        "sprite": "59",
         "types": [
           "fire"
         ],
@@ -4784,7 +4785,7 @@
           "name": "Poison Point",
           "effect": "Has a 30% chance of poisoning attacking Pokémon on contact."
         },
-        "sprite": "30.png",
+        "sprite": "30",
         "types": [
           "poison"
         ],
@@ -4834,7 +4835,7 @@
           "name": "Thick Fat",
           "effect": "Halves damage from fire and ice moves."
         },
-        "sprite": "183.png",
+        "sprite": "183",
         "types": [
           "water",
           "fairy"
@@ -4843,7 +4844,7 @@
           "hp": 70,
           "atk": 20,
           "def": 50,
-          "spa": 20,
+          "spa": 50,
           "spd": 50,
           "spe": 40
         }
@@ -4882,7 +4883,7 @@
           "name": "Natural Cure",
           "effect": "Cures any major status ailment upon switching out."
         },
-        "sprite": "315.png",
+        "sprite": "315",
         "types": [
           "grass",
           "poison"
@@ -4936,7 +4937,7 @@
           "name": "Sitrus Berry",
           "effect": "Held: Consumed at 1/2 max HP to recover 1/4 max HP."
         },
-        "sprite": "38.png",
+        "sprite": "38",
         "types": [
           "fire"
         ],
@@ -4992,17 +4993,17 @@
           "name": "Hustle",
           "effect": "Strengthens physical moves to inflict 1.5× damage, but decreases their accuracy to 0.8×."
         },
-        "sprite": "20.png",
+        "sprite": "20",
         "types": [
           "normal"
         ],
         "stats": {
-          "hp": 55,
-          "atk": 81,
+          "hp": 65,
+          "atk": 91,
           "def": 60,
           "spa": 50,
           "spd": 70,
-          "spe": 97
+          "spe": 107
         }
       },
       {
@@ -5041,7 +5042,7 @@
           "name": "Stench",
           "effect": "Has a 10% chance of making target Pokémon flinch with each hit."
         },
-        "sprite": "435.png",
+        "sprite": "435",
         "types": [
           "poison",
           "dark"
@@ -5090,7 +5091,7 @@
           "name": "Chlorophyll",
           "effect": "Doubles Speed during strong sunlight."
         },
-        "sprite": "465.png",
+        "sprite": "465",
         "types": [
           "grass"
         ],
@@ -5139,7 +5140,7 @@
           "name": "Anticipation",
           "effect": "Notifies all trainers upon entering battle if an opponent has a super-effective move, self destruct, explosion, or a one-hit KO move."
         },
-        "sprite": "454.png",
+        "sprite": "454",
         "types": [
           "poison",
           "fighting"
@@ -5188,7 +5189,7 @@
           "name": "Insomnia",
           "effect": "Prevents sleep."
         },
-        "sprite": "97.png",
+        "sprite": "97",
         "types": [
           "psychic"
         ],
@@ -5241,7 +5242,7 @@
           "name": "Sitrus Berry",
           "effect": "Held: Consumed at 1/2 max HP to recover 1/4 max HP."
         },
-        "sprite": "110.png",
+        "sprite": "110",
         "types": [
           "poison"
         ],
@@ -5297,7 +5298,7 @@
           "name": "Aftermath",
           "effect": "Damages the attacker for 1/4 its max HP when knocked out by a contact move."
         },
-        "sprite": "101.png",
+        "sprite": "101",
         "types": [
           "electric"
         ],
@@ -5346,7 +5347,7 @@
           "name": "Levitate",
           "effect": "Evades ground moves."
         },
-        "sprite": "110.png",
+        "sprite": "110",
         "types": [
           "poison"
         ],
@@ -5397,7 +5398,7 @@
           "name": "Sand Veil",
           "effect": "Increases evasion to 1.25× during a sandstorm.  Protects against sandstorm damage."
         },
-        "sprite": "332.png",
+        "sprite": "332",
         "types": [
           "grass",
           "dark"
@@ -5448,7 +5449,7 @@
           "name": "Intimidate",
           "effect": "Lowers opponents' Attack one stage upon entering battle."
         },
-        "sprite": "128.png",
+        "sprite": "128",
         "types": [
           "normal"
         ],
@@ -5498,7 +5499,7 @@
           "name": "Anger Point",
           "effect": "Raises Attack to the maximum of six stages upon receiving a critical hit."
         },
-        "sprite": "323.png",
+        "sprite": "323",
         "types": [
           "fire",
           "ground"
@@ -5553,7 +5554,7 @@
           "name": "Sitrus Berry",
           "effect": "Held: Consumed at 1/2 max HP to recover 1/4 max HP."
         },
-        "sprite": "169.png",
+        "sprite": "169",
         "types": [
           "poison",
           "flying"
@@ -5610,7 +5611,7 @@
           "name": "Dry Skin",
           "effect": "Causes 1/8 max HP in damage each turn during strong sunlight, but heals for 1/8 max HP during rain.  Increases damage from fire moves to 1.25×, but absorbs water moves, healing for 1/4 max HP."
         },
-        "sprite": "124.png",
+        "sprite": "124",
         "types": [
           "ice",
           "psychic"
@@ -5619,7 +5620,7 @@
           "hp": 65,
           "atk": 50,
           "def": 35,
-          "spa": 115,
+          "spa": 120,
           "spd": 95,
           "spe": 95
         }
@@ -5661,7 +5662,7 @@
           "name": "Intimidate",
           "effect": "Lowers opponents' Attack one stage upon entering battle."
         },
-        "sprite": "24.png",
+        "sprite": "24",
         "types": [
           "poison"
         ],
@@ -5710,7 +5711,7 @@
           "name": "Thick Fat",
           "effect": "Halves damage from fire and ice moves."
         },
-        "sprite": "432.png",
+        "sprite": "432",
         "types": [
           "normal"
         ],
@@ -5764,7 +5765,7 @@
           "name": "Big Root",
           "effect": "Held: Increases HP recovered from draining moves, Ingrain, and Aqua Ring by 3/10 (30%)."
         },
-        "sprite": "45.png",
+        "sprite": "45",
         "types": [
           "grass",
           "poison"
@@ -5812,7 +5813,7 @@
           "name": "Marvel Scale",
           "effect": "Increases Defense to 1.5× with a major status ailment."
         },
-        "sprite": "350.png",
+        "sprite": "350",
         "types": [
           "water"
         ],
@@ -5866,7 +5867,7 @@
           "name": "Sitrus Berry",
           "effect": "Held: Consumed at 1/2 max HP to recover 1/4 max HP."
         },
-        "sprite": "430.png",
+        "sprite": "430",
         "types": [
           "dark",
           "flying"
@@ -5923,7 +5924,7 @@
           "name": "Immunity",
           "effect": "Prevents poison."
         },
-        "sprite": "335.png",
+        "sprite": "335",
         "types": [
           "normal"
         ],
@@ -5977,7 +5978,7 @@
           "name": "Sitrus Berry",
           "effect": "Held: Consumed at 1/2 max HP to recover 1/4 max HP."
         },
-        "sprite": "452.png",
+        "sprite": "452",
         "types": [
           "poison",
           "dark"
@@ -6026,7 +6027,7 @@
           "name": "Swarm",
           "effect": "Strengthens bug moves to inflict 1.5× damage at 1/3 max HP or less."
         },
-        "sprite": "212.png",
+        "sprite": "212",
         "types": [
           "bug",
           "steel"
@@ -6077,7 +6078,7 @@
           "name": "Guts",
           "effect": "Increases Attack to 1.5× with a major status ailment."
         },
-        "sprite": "68.png",
+        "sprite": "68",
         "types": [
           "fighting"
         ],
@@ -6127,7 +6128,7 @@
           "name": "Intimidate",
           "effect": "Lowers opponents' Attack one stage upon entering battle."
         },
-        "sprite": "130.png",
+        "sprite": "130",
         "types": [
           "water",
           "flying"
@@ -6182,7 +6183,7 @@
           "name": "Focus Sash",
           "effect": "Held: Holder survives any single-hit attack at 1 HP if at max HP, then the item is consumed."
         },
-        "sprite": "229.png",
+        "sprite": "229",
         "types": [
           "dark",
           "fire"
@@ -6240,7 +6241,7 @@
           "name": "Limber",
           "effect": "Prevents paralysis."
         },
-        "sprite": "53.png",
+        "sprite": "53",
         "types": [
           "normal"
         ],
@@ -6290,7 +6291,7 @@
           "name": "Early Bird",
           "effect": "Makes sleep pass twice as quickly."
         },
-        "sprite": "115.png",
+        "sprite": "115",
         "types": [
           "normal"
         ],
@@ -6340,7 +6341,7 @@
           "name": "Intimidate",
           "effect": "Lowers opponents' Attack one stage upon entering battle."
         },
-        "sprite": "128.png",
+        "sprite": "128",
         "types": [
           "normal"
         ],
@@ -6389,13 +6390,13 @@
           "name": "Poison Point",
           "effect": "Has a 30% chance of poisoning attacking Pokémon on contact."
         },
-        "sprite": "31.png",
+        "sprite": "31",
         "types": [
           "poison",
           "ground"
         ],
         "stats": {
-          "hp": 90,
+          "hp": 100,
           "atk": 92,
           "def": 87,
           "spa": 75,
@@ -6440,16 +6441,16 @@
           "name": "Poison Point",
           "effect": "Has a 30% chance of poisoning attacking Pokémon on contact."
         },
-        "sprite": "34.png",
+        "sprite": "34",
         "types": [
           "poison",
           "ground"
         ],
         "stats": {
           "hp": 81,
-          "atk": 102,
+          "atk": 97,
           "def": 77,
-          "spa": 85,
+          "spa": 90,
           "spd": 75,
           "spe": 85
         }
@@ -6495,7 +6496,7 @@
           "name": "Sitrus Berry",
           "effect": "Held: Consumed at 1/2 max HP to recover 1/4 max HP."
         },
-        "sprite": "464.png",
+        "sprite": "464",
         "types": [
           "ground",
           "rock"
@@ -6551,7 +6552,7 @@
           "name": "Insomnia",
           "effect": "Prevents sleep."
         },
-        "sprite": "430.png",
+        "sprite": "430",
         "types": [
           "dark",
           "flying"
@@ -6601,7 +6602,7 @@
           "name": "Levitate",
           "effect": "Evades ground moves."
         },
-        "sprite": "94.png",
+        "sprite": "94",
         "types": [
           "ghost",
           "poison"
@@ -6651,7 +6652,7 @@
           "name": "Synchronize",
           "effect": "Copies burns, paralysis, and poison received onto the Pokémon that inflicted them."
         },
-        "sprite": "65.png",
+        "sprite": "65",
         "types": [
           "psychic"
         ],
@@ -6699,7 +6700,7 @@
           "effect": "Doubles Speed during rain."
         },
         "starter": "grass",
-        "sprite": "230.png",
+        "sprite": "230",
         "types": [
           "water",
           "dragon"
@@ -6750,9 +6751,10 @@
           "effect": "Absorbs electric moves, raising Speed one stage."
         },
         "starter": "grass",
-        "sprite": "466.png",
+        "sprite": "466",
         "types": [
-          "electric"
+          "electric",
+          "fighting"
         ],
         "stats": {
           "hp": 75,
@@ -6800,7 +6802,7 @@
           "effect": "Strengthens fire moves to inflict 1.5× damage at 1/3 max HP or less."
         },
         "starter": "grass",
-        "sprite": "157.png",
+        "sprite": "157",
         "types": [
           "fire"
         ],
@@ -6856,7 +6858,7 @@
           "name": "Dry Skin",
           "effect": "Causes 1/8 max HP in damage each turn during strong sunlight, but heals for 1/8 max HP during rain.  Increases damage from fire moves to 1.25×, but absorbs water moves, healing for 1/4 max HP."
         },
-        "sprite": "124.png",
+        "sprite": "124",
         "types": [
           "ice",
           "psychic"
@@ -6865,7 +6867,7 @@
           "hp": 65,
           "atk": 50,
           "def": 35,
-          "spa": 115,
+          "spa": 120,
           "spd": 95,
           "spe": 95
         }
@@ -6907,7 +6909,7 @@
           "name": "Levitate",
           "effect": "Evades ground moves."
         },
-        "sprite": "337.png",
+        "sprite": "337",
         "types": [
           "rock",
           "psychic"
@@ -6916,7 +6918,7 @@
           "hp": 90,
           "atk": 55,
           "def": 65,
-          "spa": 95,
+          "spa": 115,
           "spd": 85,
           "spe": 70
         }
@@ -6957,14 +6959,14 @@
           "name": "Levitate",
           "effect": "Evades ground moves."
         },
-        "sprite": "338.png",
+        "sprite": "338",
         "types": [
           "rock",
           "psychic"
         ],
         "stats": {
           "hp": 90,
-          "atk": 95,
+          "atk": 115,
           "def": 85,
           "spa": 55,
           "spd": 65,
@@ -7007,7 +7009,7 @@
           "name": "Oblivious",
           "effect": "Prevents infatuation and protects against captivate."
         },
-        "sprite": "80.png",
+        "sprite": "80",
         "types": [
           "water",
           "psychic"
@@ -7056,7 +7058,7 @@
           "name": "Synchronize",
           "effect": "Copies burns, paralysis, and poison received onto the Pokémon that inflicted them."
         },
-        "sprite": "282.png",
+        "sprite": "282",
         "types": [
           "psychic",
           "fairy"
@@ -7111,7 +7113,7 @@
           "name": "Sitrus Berry",
           "effect": "Held: Consumed at 1/2 max HP to recover 1/4 max HP."
         },
-        "sprite": "178.png",
+        "sprite": "178",
         "types": [
           "psychic",
           "flying"
@@ -7120,9 +7122,9 @@
           "hp": 65,
           "atk": 75,
           "def": 70,
-          "spa": 95,
+          "spa": 100,
           "spd": 70,
-          "spe": 95
+          "spe": 100
         }
       }
     ]
@@ -7168,16 +7170,16 @@
           "name": "Poison Heal",
           "effect": "Heals for 1/8 max HP after each turn when poisoned in place of damage."
         },
-        "sprite": "49.png",
+        "sprite": "49",
         "types": [
           "bug",
-          "poison"
+          "psychic"
         ],
         "stats": {
           "hp": 70,
           "atk": 65,
           "def": 60,
-          "spa": 90,
+          "spa": 115,
           "spd": 75,
           "spe": 90
         }
@@ -7218,7 +7220,7 @@
           "name": "Levitate",
           "effect": "Evades ground moves."
         },
-        "sprite": "110.png",
+        "sprite": "110",
         "types": [
           "poison"
         ],
@@ -7269,7 +7271,7 @@
           "name": "Anticipation",
           "effect": "Notifies all trainers upon entering battle if an opponent has a super-effective move, self destruct, explosion, or a one-hit KO move."
         },
-        "sprite": "454.png",
+        "sprite": "454",
         "types": [
           "poison",
           "fighting"
@@ -7319,7 +7321,7 @@
           "name": "Clear Body",
           "effect": "Prevents stats from being lowered by other Pokémon."
         },
-        "sprite": "73.png",
+        "sprite": "73",
         "types": [
           "water",
           "poison"
@@ -7370,7 +7372,7 @@
           "name": "Stench",
           "effect": "Has a 10% chance of making target Pokémon flinch with each hit."
         },
-        "sprite": "89.png",
+        "sprite": "89",
         "types": [
           "poison"
         ],
@@ -7423,7 +7425,7 @@
           "name": "Sitrus Berry",
           "effect": "Held: Consumed at 1/2 max HP to recover 1/4 max HP."
         },
-        "sprite": "169.png",
+        "sprite": "169",
         "types": [
           "poison",
           "flying"
@@ -7483,7 +7485,7 @@
           "name": "Intimidate",
           "effect": "Lowers opponents' Attack one stage upon entering battle."
         },
-        "sprite": "237.png",
+        "sprite": "237",
         "types": [
           "fighting"
         ],
@@ -7533,7 +7535,7 @@
           "name": "Limber",
           "effect": "Prevents paralysis."
         },
-        "sprite": "106.png",
+        "sprite": "106",
         "types": [
           "fighting"
         ],
@@ -7583,7 +7585,7 @@
           "name": "Keen Eye",
           "effect": "Prevents accuracy from being lowered."
         },
-        "sprite": "107.png",
+        "sprite": "107",
         "types": [
           "fighting"
         ],
@@ -7633,7 +7635,7 @@
           "name": "Steadfast",
           "effect": "Raises Speed one stage upon flinching."
         },
-        "sprite": "448.png",
+        "sprite": "448",
         "types": [
           "fighting",
           "steel"
@@ -7684,7 +7686,7 @@
           "name": "Thick Fat",
           "effect": "Halves damage from fire and ice moves."
         },
-        "sprite": "297.png",
+        "sprite": "297",
         "types": [
           "fighting"
         ],
@@ -7739,7 +7741,7 @@
           "name": "Sitrus Berry",
           "effect": "Held: Consumed at 1/2 max HP to recover 1/4 max HP."
         },
-        "sprite": "68.png",
+        "sprite": "68",
         "types": [
           "fighting"
         ],
@@ -7795,17 +7797,17 @@
           "name": "Intimidate",
           "effect": "Lowers opponents' Attack one stage upon entering battle."
         },
-        "sprite": "262.png",
+        "sprite": "262",
         "types": [
           "dark"
         ],
         "stats": {
           "hp": 70,
-          "atk": 90,
+          "atk": 105,
           "def": 70,
           "spa": 60,
           "spd": 60,
-          "spe": 70
+          "spe": 80
         }
       },
       {
@@ -7843,7 +7845,7 @@
           "name": "Pressure",
           "effect": "Increases the PP cost of moves targetting the Pokémon by one."
         },
-        "sprite": "442.png",
+        "sprite": "442",
         "types": [
           "ghost",
           "dark"
@@ -7893,7 +7895,7 @@
           "name": "Pressure",
           "effect": "Increases the PP cost of moves targetting the Pokémon by one."
         },
-        "sprite": "359.png",
+        "sprite": "359",
         "types": [
           "dark"
         ],
@@ -7941,7 +7943,7 @@
           "name": "Synchronize",
           "effect": "Copies burns, paralysis, and poison received onto the Pokémon that inflicted them."
         },
-        "sprite": "197.png",
+        "sprite": "197",
         "types": [
           "dark"
         ],
@@ -7990,7 +7992,7 @@
           "name": "Insomnia",
           "effect": "Prevents sleep."
         },
-        "sprite": "430.png",
+        "sprite": "430",
         "types": [
           "dark",
           "flying"
@@ -8044,7 +8046,7 @@
           "name": "Sitrus Berry",
           "effect": "Held: Consumed at 1/2 max HP to recover 1/4 max HP."
         },
-        "sprite": "229.png",
+        "sprite": "229",
         "types": [
           "dark",
           "fire"
@@ -8101,7 +8103,7 @@
           "name": "Intimidate",
           "effect": "Lowers opponents' Attack one stage upon entering battle."
         },
-        "sprite": "130.png",
+        "sprite": "130",
         "types": [
           "water",
           "flying"
@@ -8151,7 +8153,7 @@
           "name": "Sand Veil",
           "effect": "Increases evasion to 1.25× during a sandstorm.  Protects against sandstorm damage."
         },
-        "sprite": "445.png",
+        "sprite": "445",
         "types": [
           "dragon",
           "ground"
@@ -8200,7 +8202,7 @@
           "name": "Rock Head",
           "effect": "Protects against recoil damage."
         },
-        "sprite": "142.png",
+        "sprite": "142",
         "types": [
           "rock",
           "flying"
@@ -8251,7 +8253,7 @@
           "name": "Inner Focus",
           "effect": "Prevents flinching."
         },
-        "sprite": "149.png",
+        "sprite": "149",
         "types": [
           "dragon",
           "flying"
@@ -8301,7 +8303,7 @@
           "name": "Blaze",
           "effect": "Strengthens fire moves to inflict 1.5× damage at 1/3 max HP or less."
         },
-        "sprite": "6.png",
+        "sprite": "6",
         "types": [
           "fire",
           "flying"
@@ -8355,7 +8357,7 @@
           "name": "Sitrus Berry",
           "effect": "Held: Consumed at 1/2 max HP to recover 1/4 max HP."
         },
-        "sprite": "149.png",
+        "sprite": "149",
         "types": [
           "dragon",
           "flying"
@@ -8413,7 +8415,7 @@
           "name": "Magnet Pull",
           "effect": "Prevents steel opponents from fleeing or switching out."
         },
-        "sprite": "462.png",
+        "sprite": "462",
         "types": [
           "electric",
           "steel"
@@ -8464,7 +8466,7 @@
           "name": "Static",
           "effect": "Has a 30% chance of paralyzing attacking Pokémon on contact."
         },
-        "sprite": "181.png",
+        "sprite": "181",
         "types": [
           "electric"
         ],
@@ -8512,7 +8514,7 @@
           "name": "Quick Feet",
           "effect": "Increases Speed to 1.5× with a major status ailment."
         },
-        "sprite": "135.png",
+        "sprite": "135",
         "types": [
           "electric"
         ],
@@ -8560,7 +8562,7 @@
           "name": "Static",
           "effect": "Has a 30% chance of paralyzing attacking Pokémon on contact."
         },
-        "sprite": "101.png",
+        "sprite": "101",
         "types": [
           "electric"
         ],
@@ -8610,9 +8612,10 @@
           "name": "Vital Spirit",
           "effect": "Prevents sleep."
         },
-        "sprite": "466.png",
+        "sprite": "466",
         "types": [
-          "electric"
+          "electric",
+          "fighting"
         ],
         "stats": {
           "hp": 75,
@@ -8664,7 +8667,7 @@
           "name": "Sitrus Berry",
           "effect": "Held: Consumed at 1/2 max HP to recover 1/4 max HP."
         },
-        "sprite": "26.png",
+        "sprite": "26",
         "types": [
           "electric"
         ],
@@ -8720,7 +8723,7 @@
           "name": "Steadfast",
           "effect": "Raises Speed one stage upon flinching."
         },
-        "sprite": "475.png",
+        "sprite": "475",
         "types": [
           "psychic",
           "fighting"
@@ -8768,7 +8771,7 @@
           "name": "Insomnia",
           "effect": "Prevents sleep."
         },
-        "sprite": "97.png",
+        "sprite": "97",
         "types": [
           "psychic"
         ],
@@ -8819,7 +8822,7 @@
           "name": "Pure Power",
           "effect": "Doubles Attack in battle."
         },
-        "sprite": "308.png",
+        "sprite": "308",
         "types": [
           "fighting",
           "psychic"
@@ -8869,7 +8872,7 @@
           "name": "Filter",
           "effect": "Decreases damage taken from super-effective moves by 1/4."
         },
-        "sprite": "122.png",
+        "sprite": "122",
         "types": [
           "psychic",
           "fairy"
@@ -8918,7 +8921,7 @@
           "name": "Shadow Tag",
           "effect": "Prevents opponents from fleeing or switching out."
         },
-        "sprite": "202.png",
+        "sprite": "202",
         "types": [
           "psychic"
         ],
@@ -8972,7 +8975,7 @@
           "name": "Sitrus Berry",
           "effect": "Held: Consumed at 1/2 max HP to recover 1/4 max HP."
         },
-        "sprite": "65.png",
+        "sprite": "65",
         "types": [
           "psychic"
         ],
@@ -9032,7 +9035,7 @@
           "name": "Heat Rock",
           "effect": "Held: Sunny Day by the holder lasts 8 rounds instead of 5."
         },
-        "sprite": "189.png",
+        "sprite": "189",
         "types": [
           "grass",
           "flying"
@@ -9085,7 +9088,7 @@
           "name": "Power Herb",
           "effect": "Held: Both turns of a two-turn charge move happen at once. Consumed upon use."
         },
-        "sprite": "154.png",
+        "sprite": "154",
         "types": [
           "grass"
         ],
@@ -9132,7 +9135,7 @@
           "name": "Leaf Guard",
           "effect": "Protects against major status ailments during strong sunlight."
         },
-        "sprite": "470.png",
+        "sprite": "470",
         "types": [
           "grass"
         ],
@@ -9181,7 +9184,7 @@
           "name": "Chlorophyll",
           "effect": "Doubles Speed during strong sunlight."
         },
-        "sprite": "71.png",
+        "sprite": "71",
         "types": [
           "grass",
           "poison"
@@ -9234,7 +9237,7 @@
           "name": "Sitrus Berry",
           "effect": "Held: Consumed at 1/2 max HP to recover 1/4 max HP."
         },
-        "sprite": "182.png",
+        "sprite": "182",
         "types": [
           "grass"
         ],
@@ -9282,7 +9285,7 @@
           "name": "Chlorophyll",
           "effect": "Doubles Speed during strong sunlight."
         },
-        "sprite": "465.png",
+        "sprite": "465",
         "types": [
           "grass"
         ],
@@ -9336,7 +9339,7 @@
           "name": "Sniper",
           "effect": "Strengthens critical hits to inflict 3× damage rather than 2×."
         },
-        "sprite": "168.png",
+        "sprite": "168",
         "types": [
           "bug",
           "poison"
@@ -9347,7 +9350,7 @@
           "def": 70,
           "spa": 60,
           "spd": 70,
-          "spe": 40
+          "spe": 80
         }
       },
       {
@@ -9388,7 +9391,7 @@
           "name": "Dry Skin",
           "effect": "Causes 1/8 max HP in damage each turn during strong sunlight, but heals for 1/8 max HP during rain.  Increases damage from fire moves to 1.25×, but absorbs water moves, healing for 1/4 max HP."
         },
-        "sprite": "454.png",
+        "sprite": "454",
         "types": [
           "poison",
           "fighting"
@@ -9443,7 +9446,7 @@
           "name": "Sitrus Berry",
           "effect": "Held: Consumed at 1/2 max HP to recover 1/4 max HP."
         },
-        "sprite": "452.png",
+        "sprite": "452",
         "types": [
           "poison",
           "dark"
@@ -9492,7 +9495,7 @@
           "name": "Levitate",
           "effect": "Evades ground moves."
         },
-        "sprite": "110.png",
+        "sprite": "110",
         "types": [
           "poison"
         ],
@@ -9541,7 +9544,7 @@
           "name": "Intimidate",
           "effect": "Lowers opponents' Attack one stage upon entering battle."
         },
-        "sprite": "211.png",
+        "sprite": "211",
         "types": [
           "water",
           "poison"
@@ -9596,16 +9599,16 @@
           "name": "Sitrus Berry",
           "effect": "Held: Consumed at 1/2 max HP to recover 1/4 max HP."
         },
-        "sprite": "49.png",
+        "sprite": "49",
         "types": [
           "bug",
-          "poison"
+          "psychic"
         ],
         "stats": {
           "hp": 70,
           "atk": 65,
           "def": 60,
-          "spa": 90,
+          "spa": 115,
           "spd": 75,
           "spe": 90
         }
@@ -9651,7 +9654,7 @@
           "name": "Drizzle",
           "effect": "Summons rain that lasts indefinitely upon entering battle."
         },
-        "sprite": "186.png",
+        "sprite": "186",
         "types": [
           "water"
         ],
@@ -9699,7 +9702,7 @@
           "name": "Shell Armor",
           "effect": "Protects against critical hits."
         },
-        "sprite": "131.png",
+        "sprite": "131",
         "types": [
           "water",
           "ice"
@@ -9749,7 +9752,7 @@
           "name": "Volt Absorb",
           "effect": "Absorbs electric moves, healing for 1/4 max HP."
         },
-        "sprite": "171.png",
+        "sprite": "171",
         "types": [
           "water",
           "electric"
@@ -9758,8 +9761,8 @@
           "hp": 125,
           "atk": 58,
           "def": 58,
-          "spa": 76,
-          "spd": 76,
+          "spa": 86,
+          "spd": 86,
           "spe": 67
         }
       },
@@ -9797,7 +9800,7 @@
           "name": "Water Absorb",
           "effect": "Absorbs water moves, healing for 1/4 max HP."
         },
-        "sprite": "134.png",
+        "sprite": "134",
         "types": [
           "water"
         ],
@@ -9846,7 +9849,7 @@
           "name": "Damp",
           "effect": "Prevents self destruct, explosion, and aftermath from working while the Pokémon is in battle."
         },
-        "sprite": "55.png",
+        "sprite": "55",
         "types": [
           "water"
         ],
@@ -9900,7 +9903,7 @@
           "name": "Sitrus Berry",
           "effect": "Held: Consumed at 1/2 max HP to recover 1/4 max HP."
         },
-        "sprite": "121.png",
+        "sprite": "121",
         "types": [
           "water",
           "psychic"
@@ -9957,7 +9960,7 @@
           "name": "Shell Armor",
           "effect": "Protects against critical hits."
         },
-        "sprite": "139.png",
+        "sprite": "139",
         "types": [
           "rock",
           "water"
@@ -10007,7 +10010,7 @@
           "name": "Rock Head",
           "effect": "Protects against recoil damage."
         },
-        "sprite": "369.png",
+        "sprite": "369",
         "types": [
           "water",
           "rock"
@@ -10056,7 +10059,7 @@
           "name": "Battle Armor",
           "effect": "Protects against critical hits."
         },
-        "sprite": "141.png",
+        "sprite": "141",
         "types": [
           "rock",
           "water"
@@ -10113,7 +10116,7 @@
           "name": "Sitrus Berry",
           "effect": "Held: Consumed at 1/2 max HP to recover 1/4 max HP."
         },
-        "sprite": "76.png",
+        "sprite": "76",
         "types": [
           "rock",
           "ground"
@@ -10163,7 +10166,7 @@
           "name": "Rock Head",
           "effect": "Protects against recoil damage."
         },
-        "sprite": "185.png",
+        "sprite": "185",
         "types": [
           "rock"
         ],
@@ -10217,7 +10220,7 @@
           "name": "Focus Sash",
           "effect": "Held: Holder survives any single-hit attack at 1 HP if at max HP, then the item is consumed."
         },
-        "sprite": "95.png",
+        "sprite": "95",
         "types": [
           "rock",
           "ground"
@@ -10273,7 +10276,7 @@
           "name": "Insomnia",
           "effect": "Prevents sleep."
         },
-        "sprite": "430.png",
+        "sprite": "430",
         "types": [
           "dark",
           "flying"
@@ -10324,7 +10327,7 @@
           "name": "Levitate",
           "effect": "Evades ground moves."
         },
-        "sprite": "94.png",
+        "sprite": "94",
         "types": [
           "ghost",
           "poison"
@@ -10375,7 +10378,7 @@
           "name": "Synchronize",
           "effect": "Copies burns, paralysis, and poison received onto the Pokémon that inflicted them."
         },
-        "sprite": "65.png",
+        "sprite": "65",
         "types": [
           "psychic"
         ],
@@ -10424,7 +10427,7 @@
           "effect": "Doubles Speed during rain."
         },
         "starter": "grass",
-        "sprite": "230.png",
+        "sprite": "230",
         "types": [
           "water",
           "dragon"
@@ -10476,9 +10479,10 @@
           "effect": "Absorbs electric moves, raising Speed one stage."
         },
         "starter": "grass",
-        "sprite": "466.png",
+        "sprite": "466",
         "types": [
-          "electric"
+          "electric",
+          "fighting"
         ],
         "stats": {
           "hp": 75,
@@ -10527,7 +10531,7 @@
           "effect": "Strengthens fire moves to inflict 1.5× damage at 1/3 max HP or less."
         },
         "starter": "grass",
-        "sprite": "157.png",
+        "sprite": "157",
         "types": [
           "fire"
         ],
@@ -10587,7 +10591,7 @@
           "name": "White Herb",
           "effect": "Held: Resets all lowered stats to normal at end of turn. Consumed after use."
         },
-        "sprite": "78.png",
+        "sprite": "78",
         "types": [
           "fire"
         ],
@@ -10641,7 +10645,7 @@
           "name": "White Herb",
           "effect": "Held: Resets all lowered stats to normal at end of turn. Consumed after use."
         },
-        "sprite": "38.png",
+        "sprite": "38",
         "types": [
           "fire"
         ],
@@ -10696,7 +10700,7 @@
           "name": "White Herb",
           "effect": "Held: Resets all lowered stats to normal at end of turn. Consumed after use."
         },
-        "sprite": "323.png",
+        "sprite": "323",
         "types": [
           "fire",
           "ground"
@@ -10751,7 +10755,7 @@
           "name": "White Herb",
           "effect": "Held: Resets all lowered stats to normal at end of turn. Consumed after use."
         },
-        "sprite": "219.png",
+        "sprite": "219",
         "types": [
           "fire",
           "rock"
@@ -10807,7 +10811,7 @@
           "name": "White Herb",
           "effect": "Held: Resets all lowered stats to normal at end of turn. Consumed after use."
         },
-        "sprite": "59.png",
+        "sprite": "59",
         "types": [
           "fire"
         ],
@@ -10862,7 +10866,7 @@
           "name": "White Herb",
           "effect": "Held: Resets all lowered stats to normal at end of turn. Consumed after use."
         },
-        "sprite": "467.png",
+        "sprite": "467",
         "types": [
           "fire"
         ],
@@ -10918,13 +10922,13 @@
           "name": "Poison Point",
           "effect": "Has a 30% chance of poisoning attacking Pokémon on contact."
         },
-        "sprite": "31.png",
+        "sprite": "31",
         "types": [
           "poison",
           "ground"
         ],
         "stats": {
-          "hp": 90,
+          "hp": 100,
           "atk": 92,
           "def": 87,
           "spa": 75,
@@ -10967,7 +10971,7 @@
           "name": "Intimidate",
           "effect": "Lowers opponents' Attack one stage upon entering battle."
         },
-        "sprite": "130.png",
+        "sprite": "130",
         "types": [
           "water",
           "flying"
@@ -11017,7 +11021,7 @@
           "name": "Chlorophyll",
           "effect": "Doubles Speed during strong sunlight."
         },
-        "sprite": "103.png",
+        "sprite": "103",
         "types": [
           "grass",
           "psychic"
@@ -11067,7 +11071,7 @@
           "name": "Solid Rock",
           "effect": "Decreases damage taken from super-effective moves by 1/4."
         },
-        "sprite": "464.png",
+        "sprite": "464",
         "types": [
           "ground",
           "rock"
@@ -11118,7 +11122,7 @@
           "name": "No Guard",
           "effect": "Ensures all moves used by and against the Pokémon hit."
         },
-        "sprite": "68.png",
+        "sprite": "68",
         "types": [
           "fighting"
         ],
@@ -11173,7 +11177,7 @@
           "name": "Sitrus Berry",
           "effect": "Held: Consumed at 1/2 max HP to recover 1/4 max HP."
         },
-        "sprite": "248.png",
+        "sprite": "248",
         "types": [
           "rock",
           "dark"
@@ -11234,7 +11238,7 @@
           "name": "Light Ball",
           "effect": "Doubles Pikachu's Attack and Special Attack. Breed on Pikachu or Raichu: Pichu Egg will have Volt Tackle."
         },
-        "sprite": "25.png",
+        "sprite": "25",
         "types": [
           "electric"
         ],
@@ -11287,7 +11291,7 @@
           "name": "Light Clay",
           "effect": "Held: Light Screen and Reflect used by the holder last 8 rounds instead of 5."
         },
-        "sprite": "196.png",
+        "sprite": "196",
         "types": [
           "psychic"
         ],
@@ -11340,7 +11344,7 @@
           "name": "Chesto Berry",
           "effect": "Held: Consumed when asleep to cure sleep."
         },
-        "sprite": "143.png",
+        "sprite": "143",
         "types": [
           "normal"
         ],
@@ -11392,7 +11396,7 @@
           "name": "Occa Berry",
           "effect": "Held: Consumed when struck by a super-effective Fire-type attack to halve the damage."
         },
-        "sprite": "3.png",
+        "sprite": "3",
         "types": [
           "grass",
           "poison"
@@ -11447,7 +11451,7 @@
           "name": "Passho Berry",
           "effect": "Held: Consumed when struck by a super-effective Water-type attack to halve the damage."
         },
-        "sprite": "6.png",
+        "sprite": "6",
         "types": [
           "fire",
           "flying"
@@ -11503,7 +11507,7 @@
           "name": "Rindo Berry",
           "effect": "Held: Consumed when struck by a super-effective Grass-type attack to halve the damage."
         },
-        "sprite": "9.png",
+        "sprite": "9",
         "types": [
           "water"
         ],

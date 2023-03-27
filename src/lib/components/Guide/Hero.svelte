@@ -1,6 +1,6 @@
 <script>
   export let logo, title, theme, pid
-  import { Picture } from '$c/core'
+  import { Logo as Picture } from '$c/core'
   import { SVGs } from './'
   import ThemeToggle from '$c/theme-toggle.svelte'
   import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
@@ -15,7 +15,7 @@
   }
 </script>
 
-<header style='--col1: {theme[0]}; --col2: {theme[1]}; --col3: {theme[2] || '#000'}'>
+<header style='--col1: {theme?.[0]}; --col2: {theme?.[1]}; --col3: {theme?.[2] || '#000'}'>
   <div class='g-container nav'>
     <a title='Home' href='/'>
       <Icon inline={true} height=1.4rem icon={Home} class=fill-current />
@@ -48,12 +48,13 @@
 
       <div>
         <Picture
-          src='https://img.nuzlocke.app{logo}'
+          src='{logo}'
           alt='{title} Logo'
           role=presentation
-          aspect=192x96
-          className=drop-shadow-mark
-          />
+          loading=eager
+          aspect=382x192
+          class=drop-shadow-mark
+        />
       </div>
     {/if}
   </div>
@@ -64,7 +65,7 @@
 <slot />
 
 {#if !$$slots.hero}
-  <div class='end g-container' style='--col1: {theme[0]}; --col2: {theme[1]}; --col3: {theme[2] || '#000'}'>
+  <div class='end g-container' style='--col1: {theme?.[0]}; --col2: {theme?.[1]}; --col3: {theme?.[2] || '#000'}'>
     <p>
       Now that you're ready to take on the <b>Pokémon {title} Nuzlocke
         Challenge</b>, why not keep track of all your encounters with the

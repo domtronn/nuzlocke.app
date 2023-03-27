@@ -275,6 +275,7 @@ export const trackData = () => {
           .values(JSON.parse(window.localStorage.getItem(IDS.game(id))))
           .filter(d => typeof d === 'object'
             && !d?.hidden
+            && (d?.status || d?.pokemon)
             && Object.keys(d).length > 1
           )
 

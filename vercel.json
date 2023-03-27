@@ -15,7 +15,7 @@
     },
     {
       "source": "/assets/js/instascan.min.js",
-      "destination": "https://cdn.jsdelivr.net/gh/schmich/instascan-builds@master/instascan.min.js"
+      "destination": "https://rawgit.com/schmich/instascan-builds/master/instascan.min.js"
     }
   ],
   "redirects": [
@@ -212,7 +212,7 @@
         },
         {
           "key": "Content-Security-Policy",
-          "value": "default-src 'self'; img-src * cdn.statically.io img.nuzlocke.app data:; frame-src nuzlocke.vercel.app; font-src 'self' fonts.gstatic.com; style-src 'self' 'unsafe-inline'; connect-src 'self' *.googletagmanager.com *.google-analytics.com *.nuzlocke.app cdn.statically.io c.bin.com fonts.gstatic.com raw.githubusercontent.com nuzlocke-analytics.vercel.app; script-src 'unsafe-inline' 'self'  *.googletagmanager.com *.google-analytics.com nuzlocke-analytics.vercel.app;"
+          "value": "default-src 'self'; media-src * img.nuzlocke.app; img-src * cdn.statically.io img.nuzlocke.app data:; frame-src nuzlocke.vercel.app; font-src 'self' fonts.gstatic.com; style-src 'self' 'unsafe-inline'; connect-src 'self' *.googletagmanager.com *.google-analytics.com *.nuzlocke.app cdn.statically.io c.bin.com fonts.gstatic.com raw.githubusercontent.com; script-src 'unsafe-eval' 'self' 'unsafe-inline' 'self'  *.googletagmanager.com *.google-analytics.com;"
         }
       ]
     }

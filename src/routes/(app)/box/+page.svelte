@@ -13,7 +13,7 @@
   import { canonTypes as types } from '$lib/data/types'
   import { stats, StatIconMap } from '$lib/data/stats'
 
-  import { SPRITE, CUSTOM, createImgUrl } from '$utils/rewrites'
+  import { CUSTOM, createImgUrl } from '$utils/rewrites'
   import { toDb } from '$utils/link'
   import deferStyles from '$utils/defer-styles'
 
@@ -26,11 +26,12 @@
   const { getPkmns, getPkmn } = getContext('game')
   const { open } = getContext('simple-modal')
 
-  let Particles, EvoModal
+  let Particles, EvoModal, DeathModal
   onMount(() => {
     deferStyles('/assets/pokemon.css')
     import('$lib/components/particles').then(m => Particles = m.default)
     import('$lib/components/EvolutionModal.svelte').then(m => EvoModal = m.default)
+    import('$lib/components/DeathModal/index.svelte').then(m => DeathModal = m.default)
 
     // FIXME: Awkward hack to allow page transition cleanup
     ;['game_el', 'sidenav_el'].forEach(id =>{
@@ -98,9 +99,17 @@
         })
     })
 
-  const handleKill = o => _ => {
+  const handleKill = (o) => () => {
+    open(DeathModal, {
+      submit: handleDeath(o),
+      pokemon: Pokemon[o.pokemon],
+      nickname: o.nickname
+    })
+  }
+
+  const handleDeath = o => death => {
     ogbox = ogbox.filter(i => toid(i) !== toid(o))
-    killPokemon(o)
+    killPokemon({ ...o, death })
   }
 </script>
 {#if loading}
@@ -174,8 +183,7 @@
             >
               {#key p}
               <PokemonCard
-                sprite={createImgUrl(Pokemon[p.pokemon], { shiny: p.status === 6, ext: 'webp' })}
-                fallback={createImgUrl(Pokemon[p.pokemon], { shiny: p.status === 6, ext: 'png' })}
+                sprite={createImgUrl(Pokemon[p.pokemon], { shiny: p.status === 6, ext: 'png' })}
                 maxStat={Math.max(150, ...Object.values(Pokemon[p.pokemon].baseStats))}
                 moves={[]}
                 ability={p.nickname ? { name: p.nickname + ' the ' + (p.nature || '').toLowerCase() } : null}

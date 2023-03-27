@@ -59,7 +59,26 @@ export { default as Save } from '@iconify-icons/ph/floppy-disk';
 export { default as QR } from '@iconify-icons/gg/qr';
 export { default as QRCode } from '@iconify-icons/ri/qr-code-fill';
 
+export { default as Quote } from '@iconify-icons/ri/double-quotes-l'
+
 export { default as Dice } from '@iconify-icons/mdi/dice-multiple-outline'
+
+// UI Icons - Route types
+// Forest,Town/City,Ruins/Tunnel,Mountain,Route
+export { default as Grave } from '@iconify-icons/tabler/grave-2'
+
+export { default as Ruins } from '@iconify-icons/tabler/tower' // Castle / Ruins
+export { default as Stadium } from '@iconify-icons/tabler/building-stadium' // League
+export { default as Tunnel } from '@iconify-icons/tabler/building-tunnel' // Tunnel / Cave
+export { default as Shrine } from '@iconify-icons/tabler/building-pavilion' // Shrine
+export { default as City } from '@iconify-icons/tabler/building-community' // Shrine
+export { default as Town } from '@iconify-icons/tabler/home' // Shrine
+
+export { default as Forest } from '@iconify-icons/tabler/trees' // Forest
+export { default as Mountain } from '@iconify-icons/tabler/mountain' // Mt. / Mountain
+export { default as Route } from '@iconify-icons/tabler/sign-left' // Route
+export { default as Trophy } from '@iconify-icons/tabler/trophy' // Route
+
 
 export { default as Game } from '@iconify-icons/gg/games';
 export { default as Hand } from '@iconify-icons/fa-solid/hand-holding';
@@ -96,6 +115,9 @@ export { default as Sword } from '@iconify-icons/ri/sword-line';
 
 export { default as Shiny } from '@iconify-icons/wi/stars';
 export { default as Status } from '@iconify-icons/ph/yin-yang-fill';
+
+// Weather effects & Battle status
+export { default as Double } from '@iconify-icons/tabler/multiplier-2x'
 
 // Light & Dark mode
 export { default as DarkMode } from '@iconify-icons/ph/moon-fill';

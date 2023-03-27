@@ -14,11 +14,12 @@
   import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
   import { Arrow, Hide } from '$icons'
 
-  import Games from '$lib/data/games.json'
   import deferStyles from '$lib/utils/defer-styles'
   import debounce from '$lib/utils/debounce'
+  import { Expanded as Games } from '$lib/data/games.js'
   import { getGame, read, readdata,
-           savedGames, activeGame, updateGame, parse} from '$lib/store'
+           savedGames, activeGame, updateGame, parse,
+         } from '$lib/store'
 
   let gameStore, gameKey, gameData
   let routeEl

@@ -18,7 +18,7 @@
 
   import { createEventDispatcher, onMount, getContext } from 'svelte'
 
-  let selected, nickname, status, nature, hidden
+  let selected, nickname, status, nature, hidden, death
   let prevstatus = 'loading'
 
   // Search text bindings for ACs
@@ -27,7 +27,7 @@
   export let encounters = []
   let encounterItems = []
 
-  let Particles, EvoModal
+  let Particles, EvoModal, DeathModal
   onMount(() => {
     const [data] = readdata()
     const loc = data[location]
@@ -40,6 +40,7 @@
       .then(e => encounterItems = (encounters || []).map(id => e[id]).filter(i => i))
     import('$lib/components/particles').then(m => Particles = m.default)
     import('$lib/components/EvolutionModal.svelte').then(m => EvoModal = m.default)
+    import('$lib/components/DeathModal/index.svelte').then(m => DeathModal = m.default)
     prevstatus = null
   })
 
@@ -64,6 +65,7 @@
     nature = pkmn.nature ? NaturesMap[pkmn.nature] : null
     hidden = pkmn.hidden
     nickname = pkmn.nickname
+    death = pkmn.death
     if (pkmn.pokemon)
       getPkmn(pkmn.pokemon)
       .then(p => {
@@ -83,6 +85,7 @@
          hidden: hidden || false,
          location: locationName || location,
          nickname,
+         ...(status?.id === 5 && death ? { death } : {})
        }
    }))
   }
@@ -98,15 +101,22 @@
   }
 
   function handleClear () {
-    status = nickname = selected = null
+    status = nickname = selected = death = null
     search = statusSearch = natureSearch = null
     store.update(patch({ [location]: {} }))
   }
 
   let statusComplete = false
   const handleStatus = (sid) => () => {
-    status = NuzlockeStates[sid]
-    _animateStatus(sid)
+    const cb = (data) => {
+      if (sid === 5) (death = data) // Handle death context from modal
+
+      status = NuzlockeStates[sid]
+      _animateStatus(sid)
+    }
+
+    if (sid === 5) return handleDeath(cb)
+    else cb()
   }
 
   const animateStatus = item => _ => _animateStatus(item.id)
@@ -127,6 +137,7 @@
   })
 
   const handleEvolution = (base, evos) => async () => handleSplitEvolution(base, evos)
+  const handleDeath = (submit) => open(DeathModal, { submit, pokemon: selected, nickname })
 
   const handleReveal = () => {
     hidden = false
@@ -245,7 +256,7 @@
           {/if}
         </svelte:fragment>
 
-        <button on:click={animateStatus(item)} class='flex inline-flex gap-x-2 px-3 py-2 md:py-3 items-center' slot=item let:item let:label>
+        <button on:click={handleStatus(item.id)} class='flex inline-flex gap-x-2 px-3 py-2 md:py-3 items-center' slot=item let:item let:label>
           <Icon inline={true} icon={item.icon} class='fill-current transform md:scale-125' />
           {@html label}
         </button>
@@ -287,8 +298,9 @@
         rounded
         src={Deceased}
         title='Kill {selected.name}'
-        containerClassName={!selected || hidden ? 'hidden sm:block' : ''}
+        track=kill
         on:click={handleStatus(5)}
+        containerClassName={!selected || hidden ? 'hidden sm:block' : ''}
       />
     {/if}
 
@@ -400,5 +412,5 @@
   .popover li, .popover li :global(*) { @apply inline-flex items-center; }
 
   :global(.dark) ul.popover { @apply text-gray-50; }
-  :global(.dark) .popover li:hover { @apply bg-indigo-500 text-white; }
+  :global(.dark) .popover li:hover { @apply bg-orange-500 text-white; }
 </style>

@@ -1,7 +1,7 @@
 import { error } from '@sveltejs/kit'
-import { toSlug } from '$lib/utils/string'
+import { toSlug, normalise } from '$lib/utils/string'
 
-import Games from '$lib/data/games.json'
+import { Expanded as Games } from '$lib/data/games.js'
 import Themes from '$lib/data/theme.json'
 
 export const csr = true;
@@ -11,6 +11,8 @@ export async function load ({ params, url, fetch }) {
   const gameCfg = Object
         .values(Games)
         .find(g => toSlug(g.title) === game)
+
+  console.log(gameCfg)
 
   if (!gameCfg) {
     throw error(404, {
@@ -42,7 +44,6 @@ export async function load ({ params, url, fetch }) {
     fetchJson(`/league/${gameCfg.pid}.grass.json`),
   ])
 
-  const normalise = (id) => id.replace(/-/g, '')
   const findPokemon = id => pokemon.find(p =>
     normalise(p.alias) === normalise(id) ||
       normalise(p.sprite) === normalise(id)

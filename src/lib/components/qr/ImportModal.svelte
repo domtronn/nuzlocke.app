@@ -20,8 +20,9 @@
     const url = e.detail.value
     console.log('url', url, e)
 
-    if (!url.startsWith(`${window.location.protocol}//${$page.host}/`))
-      return handleerror(`Invalid QR code link - Only accept links to //${$page.host}/drop/...`)
+    let host = $page.url.host;
+    if (!url.startsWith(`${window.location.protocol}//${host}/`))
+      return handleerror(`Invalid QR code link - Only accept links to //${host}/drop/...`)
 
     window.location = e.detail.value
   }
@@ -54,7 +55,7 @@
   <ol>
     <li>Open your <a href='/saves'><mark>Save files <Icon inline={true} height=0.9em icon={Floppy} class=fill-current /></mark></a> on your first device</li>
     <li>Select the <mark>Share <Icon inline={true} icon={Share} class='fill-current' /></mark> icon on the save you want to transfer</li>
-    <li>Open <a href='/transfer'><mark>this page</mark></a> on your second device</li>
+    <li>Open <mark>this page</mark> on your second device</li>
     <li>Scan the <mark>QR code <Icon inline={true} icon={QRCode} class='fill-current' /></mark> with your camera</li>
   </ol>
 

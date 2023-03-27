@@ -35,7 +35,7 @@
   $: createUser()
 </script>
 
-{#if ['/game', '/box'].includes(path)}
+{#if ['/game', '/box', '/graveyard'].includes(path)}
   <GameHeading />
 {:else}
   <NavHeading />
@@ -44,8 +44,10 @@
 <Modal
   closeButton={false}
   styleBg={{ background: 'rgba(0, 0, 0, 0.8)', zIndex: 9999 }}
-  styleWindow={{ background: 'transparent !important' }}
-  styleContent={{ padding: '0 !important' }}
+  classBg='modal-positioning overflow-y-scroll'
+  classWindowWrap='!m-4'
+  classWindow='!bg-transparent'
+  classContent='!p-0 !overflow-visible'
 >
   <slot />
 </Modal>

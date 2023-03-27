@@ -153,6 +153,13 @@
   dependencies:
     "@iconify/types" "*"
 
+"@iconify-icons/tabler@^1.2.68":
+  version "1.2.68"
+  resolved "https://registry.yarnpkg.com/@iconify-icons/tabler/-/tabler-1.2.68.tgz#00c0f743b8f261060432131485fad9fee94b5dab"
+  integrity sha512-FLMJTg4Ez7n2ROfZNwdPyQfEZsGffiNWB12enu7NcJWDuitCohJ210Wb2p9LM+SleXlELGYipeqWzX9ZoH7h6Q==
+  dependencies:
+    "@iconify/types" "*"
+
 "@iconify-icons/wi@^1.2.3":
   version "1.2.3"
   resolved "https://registry.yarnpkg.com/@iconify-icons/wi/-/wi-1.2.3.tgz#c75280d953f7e48448d6e559dc34ab763ac8fdc3"
@@ -2686,9 +2693,9 @@ svelte-preprocess@^4.10.7:
     strip-indent "^3.0.0"
 
 svelte-simple-modal@^1.1.1:
-  version "1.4.5"
-  resolved "https://registry.yarnpkg.com/svelte-simple-modal/-/svelte-simple-modal-1.4.5.tgz#a99373e923e5e6a93c86af22b82b4a4d45b2b14d"
-  integrity sha512-KJMQaU6GD/WnIfURIKwS4R4aB6s2DDG6NiYRJkUFRVbKPRvqcohb7Z5KFLyA5UsqdPvkEdFZ0UxqjNw7Lfqgtg==
+  version "1.5.2"
+  resolved "https://registry.yarnpkg.com/svelte-simple-modal/-/svelte-simple-modal-1.5.2.tgz#2a41e9985bc19dcd43d31d65bd0ffced59830c80"
+  integrity sha512-kQ+9/bonxMMJe6dGTCPXBkYQQ4zF8rqqPp+PvTWOJB8QtB+Z0S/h7ZJRDZOAnkXTUClwd+Qmb2HHTIXVkjlSvA==
 
 svelte@^3.38.3:
   version "3.53.1"
