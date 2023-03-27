@@ -1,6 +1,6 @@
 <script>
 
-  export let sprite, fallback, name, types, tera, level = '', moves, maxStat, held = '', ability = '', stats, nature = undefined
+  export let sprite, fallback, name, types, tera, level = '', moves, maxStat, held = '', ability = '', stats, nature = undefined, minimal = false
 
   import { capitalise } from '$lib/utils/string'
   import { isEmpty } from '$lib/utils/obj'
@@ -31,6 +31,8 @@
 <div class='card relative flex flex-col border dark:border-gray-900 bg-white dark:bg-gray-900 dark:shadow-lg rounded-lg'>
   <div
     style='--t-col: {cols[0]}; background-image: url("{bgImg}");'
+    class:rounded-b-lg={minimal}
+    class:minimal={minimal}
     class='card__header flex justify-between pl-4 pt-4 pb-3 relative z-0 rounded-t-lg'
     >
     <div class='flex flex-row items-end gap-x-2'>
@@ -106,28 +108,29 @@
     </div>
   </div>
 
-  <div
-    style='border-color: {cols[0]}'
-    class='relative inline-flex bg-white dark:bg-gray-900  border-t-2 sm:items-center rounded-b-lg z-10'>
-
-    {#if moves && moves.length}
-      <div class='grid grid-cols-1 xl:grid-cols-2 xl:grid-rows-2 w-3/5 sm:w-2/3 my-3 ml-4 gap-y-0 lg:gap-y-3'>
-        {#each moves.filter(m => !isEmpty(m)) as m}
-          <MoveCard {...m} stab={types.includes(m.type)} />
-        {/each}
-      </div>
-    {/if}
-
-    <div class={moves && moves.length ? 'w-2/5 sm:w-1/3 mr-4 sm:mt-0 mt-5' : 'w-full m-4'}>
-      {#if $$slots.stats}
-        <slot name='stats' />
-      {:else}
-        <StatBlock col={cols[0]} nature={nature} max={maxStat} {...stats} />
+  {#if !minimal}
+    <div
+      style='border-color: {cols[0]}'
+      class='relative inline-flex bg-white dark:bg-gray-900 border-t-2 sm:items-center rounded-b-lg z-10'>
+      {#if moves && moves.length}
+        <div class='grid grid-cols-1 xl:grid-cols-2 xl:grid-rows-2 w-3/5 sm:w-2/3 my-3 ml-4 gap-y-0 lg:gap-y-3'>
+          {#each moves.filter(m => !isEmpty(m)) as m}
+            <MoveCard {...m} stab={types.includes(m.type)} />
+          {/each}
+        </div>
       {/if}
-    </div>
-  </div>
 
-  <slot name="footer" id={canonname} />
+      <div class={moves && moves.length ? 'w-2/5 sm:w-1/3 mr-4 sm:mt-0 mt-5' : 'w-full m-4'}>
+        {#if $$slots.stats}
+          <slot name='stats' />
+        {:else}
+          <StatBlock col={cols[0]} nature={nature} max={maxStat} {...stats} />
+        {/if}
+      </div>
+    </div>
+
+    <slot name="footer" id={canonname} />
+  {/if}
 </div>
 
 <style lang="postcss">
@@ -147,6 +150,16 @@
     bottom: 0;
     right: 0;
     border-radius: 8px 8px 0 0;
+  }
+
+  .card__header.minimal::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 8px;
   }
 
   .card__header {
