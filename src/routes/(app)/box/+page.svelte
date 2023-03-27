@@ -211,8 +211,9 @@
                 <span class='text-xs text-center p-2 -mt-4 text-gray-500 z-40' slot="footer" let:id>
                   {#if p.location === 'Starter'}
                     Met in a fateful encounter
+                  {:else if !p.location}
+                    Met in an unknown place
                   {:else if p.type !== 'custom'}
-                    <!-- FIXME: Allow custom location data -->
                     Met {p.location.startsWith('Route') ? 'on' : 'in'} {p.location}
                   {/if}
 
