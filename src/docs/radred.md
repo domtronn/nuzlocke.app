@@ -12,16 +12,20 @@ Radical Red features multiple difficultis to really tailor the
 experince to your play style. When starting a new game you be prompted
 to pick from one of the following settings;
 
-- **☠️ Hardcore Mode:** This is the most challenging mode in Radical
+
+#### **☠️ Hardcore Mode**
+This is the most challenging mode in Radical
 Red. Players will face tough team compositions and unfair
 obstacles. This mode is designed for players who want an extreme
 challenge.
 
-- **❤️ Easy Mode:** While still being more difficult than FireRed, Easy Mode is
+#### **❤️ Easy Mode** 
+While still being more difficult than FireRed, Easy Mode is
 the most accessible way to play Radical Red. It provides a challenge
 but is designed for players who want a less intense experience.
 
-- **🔨 Min Grinding Mode:** Normally, Radical Red requires a lot of grinding to
+#### **🔨 Min Grinding Mode**
+Normally, Radical Red requires a lot of grinding to
 progress, but this mode eliminates the need for excessive
 grinding. Players can combine this mode with Easy or Restrict Mode to
 make the game more manageable.
@@ -38,10 +42,12 @@ you beat this difficult challenge.
 Radical red also features new areas and events that did
 not exist in the original games, including
 
-- **🏝 Sevii Islands** The Sevii Islands from FireRed and LeafGreen have been
+#### **🏝 Sevii Islands**
+The Sevii Islands from FireRed and LeafGreen have been
 expanded with new areas to explore.
 
-- **⛩ Johto** The entire region of Johto
+#### **⛩ Johto** 
+The entire region of Johto
 has been added to the game as a post-game area, complete with gym
 leaders and Elite Four.
 
