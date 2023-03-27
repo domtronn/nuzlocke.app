@@ -5197,11 +5197,12 @@
   height: 30px;
   background-position: -467px -997px;
 }
-.pkm-aegislash {
+.pkm-aegislash, .pkm-aegislash-shield {
   width: 30px;
   height: 35px;
   background-position: -501px -997px;
 }
+
 .pkm-appletun {
   width: 34px;
   height: 31px;
@@ -7229,7 +7230,8 @@
   width: 18px;
   height: 22px;
 }
-.pkm-basculegion {
+.pkm-basculegion,
+.pkm-basculegion-male {
   background-position: -878px -480px;
   width: 30px;
   height: 23px;
@@ -7331,97 +7333,97 @@
 }
 
 /* Radical Red sevii pokemon */
-.pkm-blitzle-sevii {
+.pkm-sevii.pkm-blitzle-sevii {
   background-position: -885px -643px;
   width: 18px;
   height: 23px;
 }
-.pkm-zebstrika-sevii {
+.pkm-sevii.pkm-zebstrika-sevii {
   background-position: -920px -642px;
   width: 28px;
   height: 24px;
 }
-.pkm-doduo-sevii {
+.pkm-sevii.pkm-doduo-sevii {
   background-position: -962px -643px;
   width: 24px;
   height: 23px;
 }
-.pkm-dodrio-sevii {
+.pkm-sevii.pkm-dodrio-sevii {
   background-position: -998px -639px;
   width: 32px;
   height: 27px;
 }
-.pkm-teddiursa-sevii {
+.pkm-sevii.pkm-teddiursa-sevii {
   background-position: -1037px -645px;
   width: 26px;
   height: 21px;
 }
-.pkm-ursaring-sevii {
+.pkm-sevii.pkm-ursaring-sevii {
   background-position: -1082px -642px;
   width: 22px;
   height: 24px;
 }
-.pkm-carnivine-sevii {
+.pkm-sevii.pkm-carnivine-sevii {
   background-position: -1119px -642px;
   width: 28px;
   height: 24px;
 }
-.pkm-clawitzer-sevii {
+.pkm-sevii.pkm-clawitzer-sevii {
   background-position: -878px -674px;
   width: 30px;
   height: 24px;
 }
-.pkm-sizzlipede-sevii {
+.pkm-sevii.pkm-sizzlipede-sevii {
   background-position: -922px -674px;
   width: 25px;
   height: 14px;
 }
-.pkm-centiskorch-sevii {
+.pkm-sevii.pkm-centiskorch-sevii {
   background-position: -957px -668px;
   width: 32px;
   height: 30px;
 }
-.pkm-centiskorch-sevii-mega {
+.pkm-sevii.pkm-centiskorch-sevii-mega {
   background-position: -998px -668px;
   width: 31px;
   height: 29px;
 }
-.pkm-wishiwashi-sevii {
+.pkm-sevii.pkm-wishiwashi-sevii {
   background-position: -1043px -676px;
   width: 25px;
   height: 19px;
 }
-.pkm-dhelmise-sevii {
+.pkm-sevii.pkm-dhelmise-sevii {
   background-position: -1121px -670px;
   width: 26px;
   height: 26px;
 }
-.pkm-wishiwashi-sevii-school {
+.pkm-sevii.pkm-wishiwashi-sevii-school {
   background-position: -1079px -677px;
   width: 30px;
   height: 17px;
 }
-.pkm-mantyke-sevii {
+.pkm-sevii.pkm-mantyke-sevii {
   background-position: -881px -707px;
   width: 22px;
   height: 18px;
 }
-.pkm-mantine-sevii {
+.pkm-sevii.pkm-mantine-sevii {
   background-position: -916px -702px;
   width: 31px;
   height: 24px;
 }
-.pkm-feebas-sevii {
+.pkm-sevii.pkm-feebas-sevii {
   background-position: -964px -707px;
   width: 17px;
   height: 21px;
 }
-.pkm-milotic-sevii {
+.pkm-sevii.pkm-milotic-sevii {
   background-position: -1000px -703px;
   width: 28px;
   height: 24px;
 }
-.pkm-clauncher-sevii {
+.pkm-sevii.pkm-clauncher-sevii {
   background-position: -1039px -708px;
   width: 25px;
   height: 18px;

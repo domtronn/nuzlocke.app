@@ -3,6 +3,7 @@
   const { route, game, links, path, html } = data
 
   import '../../../assets/[resource].css/_pokemon.css'
+  import '../../../assets/[resource].css/_insurgence.css'
   import 'pokemon-assets/assets/css/items.css'
   import 'pokemon-assets/assets/css/symbols.css'
   import { setContext } from 'svelte'
