@@ -1,6 +1,6 @@
 <script>
   export let data
-  const { route, game, links, path } = data
+  const { route, game, links, path, html } = data
 
   import '../../../assets/[resource].css/_pokemon.css'
   import 'pokemon-assets/assets/css/items.css'
@@ -60,6 +60,12 @@
 
   <article class=g-container>
 
+    {#if html}
+      <section class=doc>
+        {@html html}
+      </section>
+    {/if}
+
     <Summary {path} {game} {...route} />
 
     <Bosses {path} data={data.data} {game} {...route} />
@@ -76,9 +82,57 @@
 
 <style lang="postcss">
 
+  :global(body) { overflow-x: hidden; }
   :global(button.compare) { display: none; }
   :global(svg.lines) {
     z-index: -10;
     @apply absolute top-px w-full -translate-y-full
   }
+
+  section.doc {
+    @apply max-w-prose  my-6;
+  }
+
+  section.doc :global(*) {
+    @apply leading-6 tracking-wide;
+  }
+
+  section.doc :global(p) {
+    @apply pb-4;
+  }
+
+  section.doc :global(hr) {
+    @apply my-6 opacity-50;
+  }
+
+  section.doc :global(li) {
+    @apply mx-8 ;
+  }
+
+
+  section.doc :global(img) {
+    @apply inline-flex justify-center items-center;
+  }
+
+  section.doc :global(p:has(img)) {
+    @apply inline-flex justify-center w-full;
+  }
+
+  section.doc :global(a) {
+    @apply underline underline-offset-4;
+  }
+
+  section.doc :global(a:hover) {
+    @apply text-orange-500;
+  }
+
+
+  section.doc :global(h2), section.doc :global(h3), section.doc :global(h3) {
+    @apply pb-4 pt-6;
+  }
+
+  section.doc :global(h2) { @apply font-bold text-2xl; }
+  section.doc :global(h3) { @apply font-bold text-2xl; }
+  section.doc :global(h4) { @apply font-bold text-2xl; }
+
 </style>

@@ -107,7 +107,7 @@
    @apply my-4 font-bold flex
  }
 
- * { @apply tracking-widest }
+ * { @apply tracking-wide }
 
  .main { @apply grid gap-x-10 md:grid-cols-3 }
  .main {

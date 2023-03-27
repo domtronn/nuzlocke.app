@@ -1,6 +1,7 @@
 <script>
   export let logo, title, theme, pid
   import { Logo as Picture } from '$c/core'
+  import { IMG } from '$lib/utils/rewrites'
   import { SVGs } from './'
   import ThemeToggle from '$c/theme-toggle.svelte'
   import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
@@ -48,12 +49,12 @@
 
       <div>
         <Picture
-          src='{logo}'
+          src='{IMG}{logo}'
           alt='{title} Logo'
           role=presentation
           loading=eager
-          aspect=382x192
-          class=drop-shadow-mark
+          aspect=384x192
+          class='h-32 md:h-auto md:-mt-16 w-auto drop-shadow-mark'
         />
       </div>
     {/if}
@@ -93,7 +94,7 @@
   }
 
   p {
-    @apply text-sm leading-loose tracking-widest
+    @apply text-sm leading-6 tracking-wide
   }
 
   h1 {

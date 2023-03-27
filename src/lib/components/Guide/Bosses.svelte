@@ -131,7 +131,7 @@
   }
 
   .copy div + div span {
-    @apply text-sm tracking-widest
+    @apply text-sm tracking-wide
   }
 
   p { @apply transition }
@@ -197,7 +197,7 @@
     opacity: 1;
   }
 
-  p { @apply leading-loose }
-  .figure { @apply inline text-xl md:text-2xl font-bold }
+  p { @apply leading-6 }
+  .figure { @apply inline text-xl md:text-xl h-2 font-bold }
 
 </style>
