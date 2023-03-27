@@ -140,7 +140,7 @@
 
  @media (min-width:theme('screens.sm')) {
    .show .main {
-     max-height: 1000px;
+     max-height: 3000px;
    }
  }
 

@@ -133,6 +133,6 @@
 
   section.doc :global(h2) { @apply font-bold text-2xl; }
   section.doc :global(h3) { @apply font-bold text-2xl; }
-  section.doc :global(h4) { @apply font-bold text-2xl; }
+  section.doc :global(h4) { @apply text-lg; }
 
 </style>
