@@ -31,12 +31,12 @@
   encounters. <span aria-hidden>Hover over a Pokémon to see where to encounter it!</span>
 </p>
 
-<p class='sr-only w-0 h-0 overflow-none'>
+<p>
   {#each Object.entries(encounters).sort(([, a], [, b])=> a.length - b.length) as [type, encounters]}
-    <h3>{encounters.length} {capitalise(type)} Pokémon encounters</h3>
-    <ul>
+    <h3 class=sr-only>{encounters.length} {capitalise(type)} Pokémon encounters</h3>
+    <ul class=sr-only>
       {#each encounters as { name, sprite }}
-        <li>
+        <li class=sr-only>
           {capitalise(name)} - {toList(encounterMap[sprite] || [], i => i, 'and')}
         </li>
       {/each}
