@@ -183,8 +183,7 @@
             >
               {#key p}
               <PokemonCard
-                sprite={createImgUrl(Pokemon[p.pokemon], { shiny: p.status === 6, ext: 'webp' })}
-                fallback={createImgUrl(Pokemon[p.pokemon], { shiny: p.status === 6, ext: 'png' })}
+                sprite={createImgUrl(Pokemon[p.pokemon], { shiny: p.status === 6, ext: 'png' })}
                 maxStat={Math.max(150, ...Object.values(Pokemon[p.pokemon].baseStats))}
                 moves={[]}
                 ability={p.nickname ? { name: p.nickname + ' the ' + (p.nature || '').toLowerCase() } : null}

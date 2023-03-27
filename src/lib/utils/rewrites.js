@@ -4,7 +4,7 @@ const rewrite = !building && !dev;
 // TODO: Remember to update `vercel.json` in root of project when
 // modifying these sources
 
-export const SPRITE = 'https://img.nuzlocke.app/sprite'
+export const SPRITE = 'https://img.nuzlocke.app/sprites'
 export const CUSTOM = 'https://img.nuzlocke.app/sprites'
 export const IMG = 'https://img.nuzlocke.app'
 
