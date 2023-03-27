@@ -4,7 +4,8 @@ import { toSlug, normalise } from '$lib/utils/string'
 import { Expanded as Games } from '$lib/data/games.js'
 import Themes from '$lib/data/theme.json'
 
-export const csr = true;
+export const csr = true
+export const prerender = true
 
 export async function load ({ params, url, fetch }) {
   const { game } = params
@@ -12,12 +13,18 @@ export async function load ({ params, url, fetch }) {
         .values(Games)
         .find(g => toSlug(g.title) === game)
 
-  console.log(gameCfg)
-
   if (!gameCfg) {
     throw error(404, {
       message: 'Not found'
     })
+  }
+
+  let html
+  try {
+    const post = await import(`../../../../docs/${gameCfg.pid}.md`)
+    html = post.html
+  } catch (e) {
+    html = ''
   }
 
   const links = Object
@@ -118,6 +125,7 @@ export async function load ({ params, url, fetch }) {
           }}, {})
 
   return {
+    html,
     links, game: gameObj, path: url.pathname,
     route: { routes, gyms, count: encounters.length, encounters: encounterdata, encounterMap },
     data: { fire, water, grass }
