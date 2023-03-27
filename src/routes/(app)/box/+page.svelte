@@ -75,6 +75,15 @@
         - sum(Object.values(Pokemon[a.pokemon]?.baseStats))
     }
 
+    if (stat === 'type') {
+      const val = Pokemon[b.pokemon].types.join('/')
+            .localeCompare(Pokemon[a.pokemon].types.join('/'))
+
+      if (val !== 0) return val
+      return sum(Object.values(Pokemon[b.pokemon]?.baseStats))
+        - sum(Object.values(Pokemon[a.pokemon]?.baseStats))
+    }
+
     return stat
       ? Pokemon[b.pokemon]?.baseStats[stat] - Pokemon[a.pokemon]?.baseStats[stat]
       : a.id - b.id
@@ -142,7 +151,7 @@
               <Tooltip>Clear all filters</Tooltip>
               </IconButton>
 
-            {#each ['total'].concat(stats) as s}
+            {#each stats as s}
               <label
                 class='transition items-center shadow-sm cursor-pointer inline-flex text-center row-span-1 text-xs px-2 py-1 w-full text-gray-500 dark:text-gray-400 border-gray-400 font-medium border shadow-sm rounded-lg justify-center md:justify-between'
                 class:border-gray-600={stat === s}
