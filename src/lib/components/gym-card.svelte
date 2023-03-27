@@ -1,6 +1,11 @@
 <script>
   export let game, id, location = '', starter = '', type, forceLevelCap = false, reader = false
+
+  // Core leaader data
   let pokemon = [], name = '', speciality = '', img
+
+  // Extra leader data
+  let doubleBattle = false, effect
 
   import { browser } from '$app/environment'
   import { onMount, getContext } from 'svelte'
@@ -12,11 +17,12 @@
   import { createImgUrl } from '$utils/rewrites'
   import { toList } from '$utils/string'
 
-  import { Picture, PIcon, Accordion } from '$lib/components/core'
+  import { Picture, Icon, PIcon, Accordion, Tooltip } from '$c/core'
   import { Wrapper as SettingWrapper } from '$lib/components/Settings'
 
-  import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
-  import { Loop as Badge, Ball } from '$icons'
+  import { Loop as Badge, Ball, Double } from '$icons'
+
+  import Effect from '$lib/components/Effect.svelte'
 
   let CompareModal
   onMount(() => {
@@ -42,6 +48,9 @@
       pokemon = data.pokemon
       name = data.name
       speciality = data.speciality
+
+      doubleBattle = data.doubleBattle
+      effect = data.effect
       loading = false
     } catch (e) {
       console.error(e)
@@ -106,6 +115,15 @@
           {#if speciality}
             <div><TypeBadge type={speciality} /></div>
           {/if}
+
+          {#if effect}
+            <Effect {effect} class='text-4xl h-fit -mt-1' />
+          {/if}
+
+          {#if doubleBattle}
+            <Effect effect=double-battle class=text-3xl />
+          {/if}
+
         </span>
 
         {#if loading}

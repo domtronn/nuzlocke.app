@@ -116,6 +116,9 @@ export { default as Sword } from '@iconify-icons/ri/sword-line';
 export { default as Shiny } from '@iconify-icons/wi/stars';
 export { default as Status } from '@iconify-icons/ph/yin-yang-fill';
 
+// Weather effects & Battle status
+export { default as Double } from '@iconify-icons/tabler/multiplier-2x'
+
 // Light & Dark mode
 export { default as DarkMode } from '@iconify-icons/ph/moon-fill';
 export { default as LightMode } from '@iconify-icons/ph/sun-fill';
