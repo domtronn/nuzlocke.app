@@ -1,7 +1,7 @@
 <script>
   export let id = 25
 
-  import { createImgUrl } from '$utils/rewrites'
+  import { createImgUrl, IMG } from '$utils/rewrites'
 
   import { flip as animflip } from 'svelte/animate'
   import { fly } from 'svelte/transition'
@@ -90,7 +90,7 @@
             {#if title === 'Continue'}
               <div class='flex flex-row group-hover:grayscale-0 md:grayscale items-center transition h-8 -mt-1 font-sans text-sm font-normal'>
                 <Logo
-                  src={Games[active.game].logo}
+                  src='{IMG}{Games[active.game].logo}'
                   alt='{active.game} logo'
                   class=mr-2
                   aspect=32xauto

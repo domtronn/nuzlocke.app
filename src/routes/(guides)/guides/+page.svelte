@@ -5,6 +5,7 @@
   import { Hero } from '$c/Guide'
 
   import { toSlug } from '$lib/utils/string'
+  import { IMG } from '$lib/utils/rewrites'
   
   const title = `Nuzlocke Tracker | Pokémon Nuzlocke Guides`
   const description = `Find guides to Nuzlocking every Pokémon game from Generation 1 to 8 as well as some of the most popular Rom Hacks.`
@@ -38,7 +39,7 @@
       <div>
         <div>
           <Picture
-            src='{logo}'
+            src='{IMG}{logo}'
             alt='{title} Logo'
             role=presentation
             aspect=180x90
