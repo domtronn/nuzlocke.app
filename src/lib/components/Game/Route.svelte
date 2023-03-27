@@ -96,7 +96,7 @@
           on:new={onnewlocation}
           >
           <div slot=location class='flex flex-row-reverse lg:flex-row items-center gap-x-2 lg:-ml-6 -mr-1'>
-            <StarterType on:select={setstarter} bind:starter />
+            <StarterType {key} on:select={setstarter} bind:starter />
             <p>Starter* <Tooltip>Selecting a starter type modifies Rival encounters.</Tooltip></p>
           </div>
         </PokemonSelector>

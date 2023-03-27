@@ -18,7 +18,7 @@
   }
 
   import ThemeToggle from '$lib/components/theme-toggle.svelte'
-  import { Picture, Popover } from '$lib/components/core'
+  import { Logo, Popover } from '$lib/components/core'
 
   import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
   import { Box, Save, Game, Grave, Caret, CaretRight } from '$icons'
@@ -42,9 +42,9 @@
       rel="external"
       class='{className} home group'>
       {#if game?.game}
-        <Picture
+        <Logo
           src=/assets/{game?.game}
-          className='h-7 w-auto my-1 md:mr-4 md:w-20 md:h-auto'
+          class='h-7 w-auto my-1 md:mr-4 md:w-20 md:h-auto'
           alt='{game?.game} logo'
           aspect=192x96
         />
@@ -71,12 +71,12 @@
                   title='Load game {game.name}'
                   >
                   {game.name}
-                  <Picture
+                  <Logo
                     alt='{game.name} logo'
                     src=/assets/{game.game}
-                    className='ml-2 w-16'
+                    class='ml-2 w-16'
                     aspect=192x96
-                    />
+                  />
                 </li>
                 </button>
             {/each}
