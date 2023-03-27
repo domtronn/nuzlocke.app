@@ -1,5 +1,5 @@
 import P from '$lib/api/pokeapi';
-import games from '$lib/data/games.json';
+import { Expanded as games } from '$lib/data/games.js'
 import leaders from '$lib/data/league.json';
 import patches from '$lib/data/patches.json';
 
@@ -136,7 +136,7 @@ export async function GET({ params, url }) {
 
   if (!game) return new Response('', { status: 404 });
 
-  const patch = patches[gen] || patches[game.lid] || {};
+  const patch = patches[game?.patchId] || patches[gen] || patches[game.lid] || {};
 
   const {
     types = {},

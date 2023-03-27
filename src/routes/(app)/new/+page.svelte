@@ -2,7 +2,7 @@
   import { savedGames, createGame } from '$lib/store'
   import { ScreenContainer } from '$lib/components/containers'
 
-  import { Button, Tabs, AutoComplete, Input, Logo, Tooltip } from '$lib/components/core'
+  import { Radio, Button, Tabs, AutoComplete, Input, Logo, Tooltip } from '$lib/components/core'
 
   import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
   import { File, Dice } from '$icons'
@@ -19,7 +19,10 @@
     if (!selectedGame.supported)
       return alert(`Sorry, ${selectedGame.title} is currently not supported`)
 
-    savedGames.update(createGame(gameName, selected))
+    let createid = selected
+    if (selectedGame.difficulty) createid += difficultyOptions?.[difficulty]?.id || ''
+
+    savedGames.update(createGame(gameName, createid))
     window.location = '/game'
   }
 
@@ -30,7 +33,10 @@
     fetch(`/api/route/generate/${selectedGame.pid}.json`)
       .then(res => res.text())
       .then((res) => {
-        savedGames.update(createGame(gameName, selected, res))
+        let createid = selected
+        if (selectedGame.difficulty) createid += difficultyOptions?.[difficulty]?.id || ''
+
+        savedGames.update(createGame(gameName, createid, res))
         window.location = '/game'
       })
 
@@ -42,6 +48,8 @@
   let selected
   const handleSelect = id => () => selected === id ? selected = null : selected = id
 
+  let difficulty = 0, difficultyOptions = []
+
   let gen = 'All'
   const gens = [
     { label: 'All', val: 'All' },
@@ -51,6 +59,8 @@
       .map(l => ({ label: `Gen ${l}`, val: l }))
   )
 
+
+  $: difficultyOptions = selectedGame?.difficulty?.map(d => ({ id: d.split(':')[1], name: d.split(':')[0] || 'Normal'}))
   $: selectedGame = validGames[selected]
   $: disabled = !gameName.length || !selected
 </script>
@@ -59,7 +69,8 @@
   <title>Nuzlocke Tracker | Create new game</title>
 </svelte:head>
 
-<ScreenContainer title='Select a New Nuzlocke' icon={File} className=mb-20 >
+<ScreenContainer title='Select a New Nuzlocke' icon={File} className='mb-20 relative' >
+
   <div class='flex flex-col sm:flex-row sm:flex-wrap sm:gap-y-4 gap-2'>
     <Input
       rounded
@@ -90,6 +101,18 @@
         {@html label}
       </div>
     </AutoComplete>
+
+    {#if selectedGame?.difficulty}
+      <div class='flex flex-col my-3 md:my-2 md:flex-row md:inline-flex gap-2 flex-auto md:order-2 basis-full -mr-32'>
+        <label><b>Difficulty</b><br/><small class='sm:hidden'>This game offers multiple difficulty choices</small></label>
+        <Radio
+          name=difficulty
+          options={difficultyOptions.map(d=>d.name)}
+          className='!flex-row gap-x-1'
+          bind:selected={difficulty}
+          />
+      </div>
+    {/if}
 
     <Button rounded disabled={disabled} on:click={handleNewGame}>
       Create game

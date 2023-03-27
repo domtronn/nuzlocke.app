@@ -1,6 +1,6 @@
 <script>
-  import Games from '$data/games.json'
   import Themes from '$data/theme.json'
+  import { Expanded as Games } from '$data/games.js'
   import { Logo as Picture } from '$c/core'
   import { Hero } from '$c/Guide'
 
@@ -33,7 +33,7 @@
   {#each Object.values(Games) as { logo, region, title, gen, pid, lastUpdated = '9th Jan 2022'}}
     <a
       title='{title} Guide'
-      style='--col1:{Themes[pid][0]};--col2:{Themes[pid][1]}'
+      style='--col1:{Themes?.[pid]?.[0]};--col2:{Themes?.[pid]?.[1]}'
       href='/guides/{toSlug(title)}' 
     >
       <div>

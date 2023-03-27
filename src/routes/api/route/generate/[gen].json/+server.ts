@@ -1,6 +1,6 @@
+import { Expanded as Games } from '$lib/data/games.js';
 import Routes from '$lib/data/routes.json';
 import Patches from '$lib/data/patches.json';
-import Games from '$lib/data/games.json';
 import Pokemon from '../../../pokemon.json/_data.js';
 
 import { normalise } from '$lib/utils/string'
@@ -102,7 +102,7 @@ export async function GET({ params }) {
     if (!Routes[gen]) return new Response('', { status: 404 });
 
     const game = Games[gen]
-    const patch = Patches[gen] || Patches[game?.patch]
+    const patch = Patches[game?.patchId] || Patches[gen]
 
     return new Response(JSON.stringify(generateGame(Routes[gen], patch, gen)), {
         headers: {

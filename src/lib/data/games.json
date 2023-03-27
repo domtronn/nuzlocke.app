@@ -101,19 +101,8 @@
     "patched": true,
     "supported": true,
     "region": "unova",
-    "lastUpdated": "12th March 2023"
-  },
-  "blazevolt2_c": {
-    "pid": "blazevolt2_c",
-    "patchId": "blazevolt2",
-    "lid": "blazevolt2",
-    "logo": "/logos/blaze-black-volt-white-2-redux",
-    "title": "Blaze Black / Volt White 2 Redux Challenge",
-    "gen": "romhack",
-    "patched": true,
-    "supported": true,
-    "region": "unova",
-    "lastUpdated": "12th March 2023"
+    "lastUpdated": "12th March 2023",
+    "difficulty": [":", "Challenge:_c"]
   },
   "bl2": {
     "pid": "bl2",
@@ -123,6 +112,7 @@
     "gen": "V",
     "supported": true,
     "region": "unova",
+    "difficulty": [":", "Challenge:c"],
     "filter": {
       "types": "pregen6",
       "moves": "pregen6"
@@ -136,34 +126,7 @@
     "gen": "V",
     "supported": true,
     "region": "unova",
-    "filter": {
-      "types": "pregen6",
-      "moves": "pregen6"
-    }
-  },
-  "bl2c": {
-    "pid": "bl2c",
-    "lid": "b2w2",
-    "logo": "/logos/black-2-logo",
-    "title": "Black 2 Challenge",
-    "gen": "V",
-    "supported": true,
-    "region": "unova",
-    "lastUpdated": "9th March 2023",
-    "filter": {
-      "types": "pregen6",
-      "moves": "pregen6"
-    }
-  },
-  "wh2c": {
-    "pid": "wh2c",
-    "lid": "b2w2",
-    "logo": "/logos/white-2-logo",
-    "title": "White 2 Challenge",
-    "gen": "V",
-    "supported": true,
-    "region": "unova",
-    "lastUpdated": "9th March 2023",
+    "difficulty": [":", "Challenge:c"],
     "filter": {
       "types": "pregen6",
       "moves": "pregen6"
