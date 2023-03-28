@@ -153,3 +153,13 @@
     {/if}
   {/each}
 </ul>
+
+<style>
+  ul {
+    @apply snap-always snap-y max-md:overflow-y-scroll max-md:h-screen
+  }
+  li {
+    scroll-margin-top: -20px;
+    @apply snap-start
+  }
+</style>
