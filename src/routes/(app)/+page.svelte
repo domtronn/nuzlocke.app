@@ -50,7 +50,7 @@
       ]
     }
 
-    // trackData()
+    trackData()
   })
 
   let src
