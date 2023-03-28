@@ -6561,7 +6561,8 @@
           ],
           "held": "fire-gem"
         }
-      ]
+      ],
+      "doubleBattle": true
     },
     "emin": {
       "name": "Emmet & Ingo",
@@ -7643,7 +7644,9 @@
           ],
           "held": "sitrus-berry"
         }
-      ]
+      ],
+      "effect": "rain",
+      "doubleBattle": true
     },
     "o7_n": {
       "name": "Winona",
@@ -7838,7 +7841,9 @@
           ],
           "held": "flame-orb"
         }
-      ]
+      ],
+      "effect": "rain",
+      "doubleBattle": true
     },
     "o8_n": {
       "name": "Tate & Liza",
@@ -7903,7 +7908,8 @@
           ],
           "held": "sitrus-berry"
         }
-      ]
+      ],
+      "doubleBattle": true
     },
     "o8_c": {
       "name": "Tate & Liza",
@@ -8030,7 +8036,8 @@
           ],
           "held": "colbur-berry"
         }
-      ]
+      ],
+      "doubleBattle": true
     },
     "o9_hail": {
       "name": "Hail Trainer Caroll",
@@ -9153,7 +9160,8 @@
           ],
           "held": "focus-sash"
         }
-      ]
+      ],
+      "doubleBattle": true
     },
     "5_n": {
       "name": "Lenora",
@@ -9272,7 +9280,8 @@
           ],
           "held": "normal-gem"
         }
-      ]
+      ],
+      "doubleBattle": true
     },
     "6_n": {
       "name": "Elesa",
@@ -9645,7 +9654,8 @@
           ],
           "held": "air-balloon"
         }
-      ]
+      ],
+      "effect": "sandstorm"
     },
     "8_n": {
       "name": "Skyla",
@@ -10033,7 +10043,8 @@
           ],
           "held": "focus-sash"
         }
-      ]
+      ],
+      "doubleBattle": true
     },
     "10_n": {
       "name": "Marlon",
@@ -10227,7 +10238,9 @@
           ],
           "held": "water-gem"
         }
-      ]
+      ],
+      "effect": "rain",
+      "doubleBattle": true
     },
     "col1": {
       "name": "Colress",
@@ -10966,7 +10979,8 @@
           ],
           "held": "life-orb"
         }
-      ]
+      ],
+      "doubleBattle": true
     },
     "zinz2": {
       "name": "Zinzolin & Grunt",
@@ -11048,7 +11062,8 @@
           ],
           "held": "flying-gem"
         }
-      ]
+      ],
+      "doubleBattle": true
     },
     "zinz3_n": {
       "name": "Zinzolin",
@@ -11339,7 +11354,8 @@
           ],
           "held": "life-orb"
         }
-      ]
+      ],
+      "doubleBattle": true
     },
     "zinz4_c": {
       "name": "Zinzolin",
@@ -12279,7 +12295,8 @@
           ],
           "held": "air-balloon"
         }
-      ]
+      ],
+      "doubleBattle": true
     },
     "e4_n": {
       "name": "Marshal",
@@ -12473,7 +12490,8 @@
           ],
           "held": "flame-orb"
         }
-      ]
+      ],
+      "doubleBattle": true
     },
     "champ_n": {
       "name": "Iris",
@@ -18228,7 +18246,8 @@
           ],
           "held": "sitrus-berry"
         }
-      ]
+      ],
+      "doubleBattle": true
     },
     "8": {
       "name": "Juan",
@@ -26980,7 +26999,8 @@
           ],
           "held": "altarianite"
         }
-      ]
+      ],
+      "doubleBattle": true
     },
     "7": {
       "name": "Tate & Liza",
@@ -27077,7 +27097,8 @@
           ],
           "held": "weakness-policy"
         }
-      ]
+      ],
+      "doubleBattle": true
     },
     "8": {
       "name": "Juan",
@@ -27432,7 +27453,8 @@
           ],
           "held": "heat-rock"
         }
-      ]
+      ],
+      "doubleBattle": true
     },
     "mt1": {
       "name": "Tabitha",
@@ -27872,7 +27894,8 @@
           ],
           "held": "houndoominite"
         }
-      ]
+      ],
+      "doubleBattle": true
     },
     "mtm": {
       "name": "Maxie",
@@ -28260,7 +28283,8 @@
           ],
           "held": "houndoominite"
         }
-      ]
+      ],
+      "doubleBattle": true
     },
     "as2": {
       "name": "Shelly",
@@ -36224,7 +36248,8 @@
           ],
           "sprite": "mewtwo-mega-y"
         }
-      ]
+      ],
+      "doubleBattle": true
     },
     "r1": {
       "name": "Gary",
@@ -38803,7 +38828,8 @@
           ],
           "held": "choice-scarf"
         }
-      ]
+      ],
+      "doubleBattle": true
     },
     "e1b": {
       "name": "Lorelei (Hail Team)",
@@ -38902,7 +38928,8 @@
           ],
           "held": "abomasite"
         }
-      ]
+      ],
+      "doubleBattle": true
     },
     "e2a": {
       "name": "Bruno (Team A)",
@@ -41776,7 +41803,8 @@
           ],
           "held": "life-orb"
         }
-      ]
+      ],
+      "effect": "rain"
     },
     "6": {
       "name": "Byron",
@@ -47431,7 +47459,7 @@
           "abilities": [
             "sheer-force"
           ],
-          "held": "sitrus-berry                       "
+          "held": "sitrus-berry"
         }
       ]
     },
@@ -50874,7 +50902,8 @@
             "levitate"
           ]
         }
-      ]
+      ],
+      "doubleBattle": true
     },
     "8": {
       "name": "Wallace",

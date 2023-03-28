@@ -17,8 +17,8 @@ export const INSTASCAN = rewrite
   : 'https://cdn.jsdelivr.net/gh/schmich/instascan-builds@master/instascan.min.js';
 
 export const UNOWN = rewrite
-  ? '/sprites/unown-qm'
-  : 'https://img.pokemondb.net/sprites/home/normal/unown-qm.png';
+  ? '/assets/unown.png?v=1'
+  : 'https://img.nuzlocke.app/assets/unown.png?v=1';
 
 export const createImgUrl = (p, { ext = 'webp', shiny = false } = {}) => {
   if (p.imgUrl) return `${CUSTOM}${p.imgUrl}.${ext}`
