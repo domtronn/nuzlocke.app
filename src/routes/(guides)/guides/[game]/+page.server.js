@@ -42,9 +42,14 @@ export async function load ({ params, url, fetch }) {
         .map(x => x.charAt(0).toUpperCase() + x.slice(1))
         .join(' ')
 
-  const fetchJson = uri => fetch(uri).then(res => res.json())
+
+  const fetchJson = uri => fetch(uri, { redirect: 'follow' })
+    .then(res => {
+      if (res.status === 301) return fetchJson(res.headers.get('location'))
+      else return res.json()
+    })
   const [pokemon, route, fire, water, grass] = await Promise.all([
-    fetchJson(`/api/pokemon.json`),
+    fetchJson(`/api/${gameCfg.pid}/pokemon.json`),
     fetchJson(`/api/route/${gameCfg.pid}.json`),
     fetchJson(`/league/${gameCfg.pid}.fire.json`),
     fetchJson(`/league/${gameCfg.pid}.water.json`),
@@ -52,7 +57,7 @@ export async function load ({ params, url, fetch }) {
   ])
 
   const findPokemon = id => pokemon.find(p =>
-    normalise(p.alias) === normalise(id) ||
+      normalise(p.alias) === normalise(id) ||
       normalise(p.sprite) === normalise(id)
   )
 
