@@ -3,6 +3,8 @@
 </script>
 
 <span class='pk{type}-wrapper {$$restProps.class || ''} {className}'>
-  <i class='pk{type} pk{type}-{name}' />
+  <i
+    class:pkm-sevii={name.includes('sevii')}
+    class='pk{type} pk{type}-{name}' />
   <slot />
 </span>
