@@ -76,7 +76,7 @@
 
 
 {#if ready}
-<section class='w-screen overflow-hidden md:overflow-auto md:w-auto snap-always pb-32 snap-y max-md:overflow-y-scroll max-md:h-screen'>
+<section class='w-screen overflow-hidden md:overflow-auto md:w-auto snap-always snap-y max-md:overflow-y-scroll max-md:h-screen'>
   <div class='snap-start scroll-mt-4 md:pt-8 px-4 sm:px-8' in:fade={{ duration: 500, delay: 200}}>
     {#if !graveyard.length}
       <span class='h-96 flex items-center justify-center text-center col-span-4 dark:text-gray-600 text-xl'>
