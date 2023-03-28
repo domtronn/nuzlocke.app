@@ -28,7 +28,7 @@
   const animDelay = Math.floor(Math.random() * 10) / 10
 </script>
 
-<div class='card relative flex flex-col border dark:border-gray-900 bg-white dark:bg-gray-900 dark:shadow-lg rounded-lg'>
+<div class='card relative flex flex-col border dark:border-gray-900 bg-white dark:bg-gray-900 dark:shadow-lg rounded-lg {$$restProps.class || ''}'>
   <div
     style='--t-col: {cols[0]}; background-image: url("{bgImg}");'
     class:rounded-b-lg={minimal}
