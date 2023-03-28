@@ -103,7 +103,7 @@
       </li>
 
     {:else if showRoute(p, filters, hideRoute)}
-      <li id='route-{p.name}' in:fade>
+      <li class=location id='route-{p.name}' in:fade>
         <PokemonSelector
           {id}
           {store}
@@ -115,7 +115,7 @@
       </li>
 
     {:else if showCustom(p, filters, hideRoute)}
-      <li class='flex items-center gap-x-2' id='custom-{p.index}' in:fade>
+      <li class='location flex items-center gap-x-2' id='custom-{p.index}' in:fade>
         <PokemonSelector
           type=custom
           locationName={p.name}
@@ -135,7 +135,7 @@
       </li>
 
     {:else if showGym(p, filters, hideRoute)}
-      <li class='-mb-4 md:my-2' id='boss-{id}' in:fade>
+      <li class='-mb-4 md:my-2 boss' id='boss-{id}' in:fade>
         <GymCard
           {starter}
           game={key}
@@ -155,11 +155,10 @@
 </ul>
 
 <style>
-  ul {
-    @apply snap-always snap-y max-md:overflow-y-scroll max-md:h-screen
+  li.location {
+    scroll-margin-top: -12px;
   }
   li {
-    scroll-margin-top: -20px;
     @apply snap-start
   }
 </style>

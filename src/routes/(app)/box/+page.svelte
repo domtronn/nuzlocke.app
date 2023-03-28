@@ -127,9 +127,9 @@
 {:else}
   <div out:fade|local={{ duration: 250 }} in:fade|local={{ duration: 250, delay: 300 }} class='container mx-auto'>
     <div class='flex flex-col mx-auto items-center justify-center'>
-      <main class='w-full xl:w-3/4 flex flex-col gap-y-4 py-6 pb-32 px-4 md:px-8 overflow-hidden'>
+      <main class='w-full xl:w-3/4 flex flex-col gap-y-4 py-6 pb-48 px-4 md:px-8 overflow-hidden max-md:h-screen max-md:overflow-y-scroll snap-y scroll-pt-5'>
 
-        <div class='flex flex-col md:flex-row items-end md:items-center gap-x-2 relative -mt-6 sm:-my-2'>
+        <div class='flex flex-col md:flex-row items-end md:items-center gap-x-2 relative md:mt-0 sm:-my-2 snap-start'>
           <AnalysisModal box={Object.values(Pokemon)} />
           <div class='mt-1 flex md:flex-row-reverse gap-x-2'>
             <Toggle id=minimal bind:state={minimal}>
@@ -206,6 +206,7 @@
           {/if}
           {#each box.filter(filter) as p (p)}
             <span
+              class='snap-start'
               animate:flip={{ duration: d => 10 * Math.sqrt(d) }}
               out:fade={{ duration: 150 }}
             >

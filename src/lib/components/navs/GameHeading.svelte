@@ -109,7 +109,7 @@
 <div class=fauxnav />
 
 <style lang="postcss">
-  .fauxnav { @apply h-12; }
+  .fauxnav { @apply h-9; }
 
   nav {
     position: fixed;

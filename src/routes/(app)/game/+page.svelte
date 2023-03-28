@@ -125,8 +125,8 @@
   <Loader />
 {:then route}
   <div id='game_el' out:fade|local={{ duration: 250 }} in:fade|local={{ duration: 250, delay: 300 }} class="container mx-auto pb-24 overflow-hidden">
-    <div class="flex flex-row flex-wrap pb-16 justify-center">
-        <main id='main' class="p-container md:py-6 flex flex-col gap-y-4 relative">
+    <div class="flex flex-row flex-wrap pb-16 justify-center snap-start max-md:pt-4 bg-white dark:bg-gray-800">
+        <main id='main' class="p-container md:py-6 flex flex-col gap-y-4 relative ">
           <SideNav
             bind:show={show}
             on:nav={routeEl.setnav}
@@ -142,7 +142,7 @@
             </button>
           </SideNav>
 
-          <div class='flex flex-col gap-y-4 lg:gap-y-0 md:flex-row justify-between items-start mb-6'>
+          <div class='flex flex-col gap-y-4 lg:gap-y-0 md:flex-row justify-between items-start md:mb-6'>
             <div class='flex flex-col gap-y-2'>
               {#if filter === 'nuzlocke'}
                 <button
@@ -202,5 +202,12 @@
 {/await}
 
 <style lang="postcss">
-  .container { min-height: 90vh; }
+  :global(html, body) {
+    @apply max-md:overflow-hidden;
+  }
+  .container {
+    min-height: 90vh;
+    @apply snap-always snap-y max-md:overflow-y-scroll max-md:h-screen;
+    @apply max-md:pt-4;
+  }
 </style>

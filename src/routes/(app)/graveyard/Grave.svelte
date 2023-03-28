@@ -29,7 +29,7 @@
 
 <div
   on:click={onclick}
-  class='grave group cursor-pointer w-32 h-48 md:-mt-10 mx-auto transform scale-150 md:scale-100 z-20'>
+  class='grave group cursor-pointer w-32 h-48 mt-10 md:-mt-10 mx-auto transform scale-150 md:scale-100 z-20'>
 
   {#if tooltip}
     {#key tooltip}
@@ -94,12 +94,14 @@
   <p
     class:p-3={death?.epitaph}
     class:w-[20ch]={death?.epitaph}
-    class='epitaph flex flex-col sm:hidden bg-gray-200 dark:bg-gray-700 rounded-lg leading-5 -mt-8 relative z-0'>
+    class='epitaph flex flex-col sm:hidden bg-gray-200 dark:bg-gray-700 rounded-lg leading-5 mt-4 relative z-0'>
     <Icon size={48} class='absolute -top-1 -left-1 scale-200' inline={true} icon={Quote} />
     <Icon size={48} class='absolute scale-150 rotate-180 -bottom-1 -right-1' inline={true} icon={Quote} />
     {format(death.epitaph, { pokemon:{name:capitalise(pokemon)}, nickname, ...death })}
     <br />
-    <small class='text-gray-400 -mt-4'>
+    <small
+      class:-mt-4={death?.lvl}
+      class=text-gray-400>
       {#if death?.lvl}
         <br />
         {#if death?.lvl?.from && death?.lvl?.to}

@@ -166,10 +166,11 @@
       </div>
     </span>
 
-    <div slot='item' class='grid lg:grid-cols-2 md:grid-cols-2 mt-8 md:gap-x-2 lg:gap-x-6 gap-y-10'>
+    <div slot='item' class='grid lg:grid-cols-2 md:grid-cols-2 mt-8 md:gap-x-2 lg:gap-x-6 gap-y-10 '>
       {#each pokemon as p, id (p.name + id)}
         <Pokemon
           {...p}
+          class='snap-start scroll-mt-6'
           sprite={createImgUrl(p, {ext: 'png'})}
           maxStat={maxStat}
         >
