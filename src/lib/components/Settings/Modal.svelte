@@ -23,17 +23,17 @@
     parse(saves => {
       if (!browser) return
       game = saves[$activeGame]
-      const s = (game.settings || settingsDefault).split('')
+      const s = (game.settings || '').split('')
+      const sd = settingsDefault.split('')
 
       settings = [...settingsData]
-        .map(setting => ({ ...setting, state: +s[setting.index] }))
+        .map(setting => ({ ...setting, state: +(s?.[setting.index] || sd ?.[setting.index]) }))
     })($savedGames)
   })
 
   $: settingHash = [...settings]
       .sort((a, b) => a.index - b.index)
       .map(i => +i.state).join('')
-
 
   $: themeId = settingHash.split('')[getSetting('theme')]
   $: Theme = Object.fromEntries(

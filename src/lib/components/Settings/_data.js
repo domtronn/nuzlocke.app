@@ -6,7 +6,6 @@ import { Themes } from '$lib/data/colors.ts'
  */
 export const settingsDefault = '01110100'
 
-
 export const settingsData = [
   { index: 1, name: 'Encounter suggestions', help: 'Show a prefiltered list of possible encounters - You should turn this off for randomized runs' },
   { index: 5, name: 'Nickname Clause', help: 'Enable Nicknames for every encounter' },
