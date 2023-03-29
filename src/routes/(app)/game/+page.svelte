@@ -205,9 +205,16 @@
   :global(html, body) {
     @apply max-md:overflow-hidden;
   }
+
+  @media (max-width: theme('screens.md')) {
+    .container {
+      height: calc(100vh - 38px);
+      overflow-y: scroll;
+    }
+  }
+
   .container {
     min-height: 90vh;
-    @apply snap-always snap-y max-md:overflow-y-scroll max-md:h-screen;
-    @apply max-md:pt-4;
+    @apply snap-always snap-y;
   }
 </style>

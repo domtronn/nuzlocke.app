@@ -76,7 +76,7 @@
 
 
 {#if ready}
-<section class='w-screen overflow-hidden md:overflow-auto md:w-auto snap-always snap-y max-md:overflow-y-scroll max-md:h-screen'>
+<main class='w-screen overflow-hidden md:overflow-auto md:w-auto snap-always snap-y max-md:overflow-y-scroll max-md:h-screen'>
   <div class='snap-start scroll-mt-4 md:pt-8 px-4 sm:px-8' in:fade={{ duration: 500, delay: 200}}>
     {#if !graveyard.length}
       <span class='h-96 flex items-center justify-center text-center col-span-4 dark:text-gray-600 text-xl'>
@@ -119,7 +119,7 @@
       {/each}
     </div>
   {/if}
-  </section>
+  </main>
 {:else}
   <Loader />
 {/if}
@@ -139,6 +139,13 @@
                skewY(var(--tw-skew-y))
                scaleX(-1)
                scaleY(var(--tw-scale-y)) !important;
+  }
+
+  @media (max-width: theme('screens.md')) {
+    main {
+      height: calc(100vh - 38px);
+      overflow-y: scroll;
+    }
   }
 
 </style>

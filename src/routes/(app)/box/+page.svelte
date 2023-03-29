@@ -127,7 +127,7 @@
 {:else}
   <div out:fade|local={{ duration: 250 }} in:fade|local={{ duration: 250, delay: 300 }} class='container mx-auto'>
     <div class='flex flex-col mx-auto items-center justify-center'>
-      <main class='w-full xl:w-3/4 flex flex-col gap-y-4 py-6 pb-48 px-4 md:px-8 overflow-hidden max-md:h-screen max-md:overflow-y-scroll snap-y scroll-pt-5'>
+      <main class='w-full xl:w-3/4 flex flex-col gap-y-4 py-6 pb-48 px-4 md:px-8 overflow-hidden snap-y scroll-pt-5'>
 
         <div class='flex flex-col md:flex-row items-end md:items-center gap-x-2 relative md:mt-0 sm:-my-2 snap-start'>
           <AnalysisModal box={Object.values(Pokemon)} />
@@ -309,4 +309,12 @@
     z-index: -10;
     height: calc(50% + 1px);
   }
+
+  @media (max-width: theme('screens.md')) {
+    main {
+      height: calc(100vh - 38px);
+      overflow-y: scroll;
+    }
+  }
+
 </style>
