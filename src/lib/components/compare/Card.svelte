@@ -22,7 +22,7 @@
   $: defCols = def.types.map(t => ColorMap[t.toLowerCase()])
   $: defBgImg = Pattern(defCols[1] || defCols[0])
 
-  const sprite = id => createImgUrl(id, { ext: 'png', shiny: status === 6})
+  const sprite = imgId => createImgUrl({ imgId }, { ext: 'png', shiny: status === 6})
 </script>
 
 <div class='shadow-lg dark:text-gray-50 relative {className}'>
