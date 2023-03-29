@@ -50,9 +50,6 @@
   let loading = true
   let dupelines = new Set(), misslines = new Set()
 
-  $: misslines && console.log('misses', misslines)
-  $: dupelines && console.log('dupes', dupelines)
-
   store && store.subscribe(read(data => {
     const getStateMons = (data, stateGroup) => {
       return Object.values(data)
