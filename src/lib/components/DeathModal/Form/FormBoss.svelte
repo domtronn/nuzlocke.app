@@ -5,7 +5,7 @@
   import { fetchRoute } from '$utils/fetchers'
   import { readdata } from '$lib/store'
 
-  import Games from '$lib/data/games.json'
+  import { Expanded as Games } from '$lib/data/games.js'
   import { AutoComplete, Picture, PIcon } from '$c/core'
   import TypeBadge from '$c/type-badge.svelte'
   

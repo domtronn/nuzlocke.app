@@ -1,5 +1,5 @@
 import tclasses from '$lib/data/trainers.json'
-import games from '$lib/data/games.json';
+import { Expanded as games } from '$lib/data/games.js';
 
 const ALL = 'all'
 

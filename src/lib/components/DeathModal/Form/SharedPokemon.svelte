@@ -6,7 +6,7 @@
 
   import { fetchRoute } from '$utils/fetchers'
   import { readdata } from '$lib/store'
-  import Games from '$lib/data/games.json'
+  import { Expanded as Games } from '$lib/data/games.js'
 
   export let placeholder = 'The Pokémon you were facing'
   export let selected, search, encounters

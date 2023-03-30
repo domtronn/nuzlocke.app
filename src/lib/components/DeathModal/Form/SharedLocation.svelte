@@ -4,7 +4,7 @@
 
   import { fetchRoute } from '$utils/fetchers'
   import { readdata } from '$lib/store'
-  import Games from '$lib/data/games.json'
+  import { Expanded as Games } from '$lib/data/games.js'
   
   const dispatch = createEventDispatcher()
   const onchange = () => dispatch('change', selected)

@@ -1,10 +1,9 @@
-import Games from '$lib/data/games.json';
+import { Expanded as Games } from '$lib/data/games.js'
 
 export async function GET({ params }) {
   const { logo, ext } = params;
 
   if (!['png', 'webp'].includes(ext)) return new Response('', { stauts: 404 })
-
 
   const [id, res] = logo.split('@')
   const logoPath = Games[id].logo;
