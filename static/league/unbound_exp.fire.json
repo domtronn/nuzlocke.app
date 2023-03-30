@@ -2,11 +2,6 @@
   "r1_exp": {
     "name": "Rival",
     "speciality": "",
-    "img": {
-      "src": "/leaders/unbound-axelrod",
-      "author": "Skeli",
-      "link": "https://www.pokecommunity.com/showthread.php?t=382178"
-    },
     "pokemon": [
       {
         "name": "larvitar",
@@ -63,11 +58,6 @@
   "r2_exp": {
     "name": "Rival",
     "speciality": "",
-    "img": {
-      "src": "/leaders/unbound-axelrod",
-      "author": "Skeli",
-      "link": "https://www.pokecommunity.com/showthread.php?t=382178"
-    },
     "pokemon": [
       {
         "name": "swinub",
@@ -174,11 +164,6 @@
   "1_exp": {
     "name": "Mirskle",
     "speciality": "grass",
-    "img": {
-      "src": "/leaders/unbound-mirskle",
-      "author": "Skeli",
-      "link": "https://www.pokecommunity.com/showthread.php?t=382178"
-    },
     "pokemon": [
       {
         "name": "floette",
@@ -403,7 +388,8 @@
           "spe": 100
         }
       }
-    ]
+    ],
+    "doubleBattle": true
   },
   "sh1_exp": {
     "name": "Shadow Admin Marlon & Grunt",
@@ -668,11 +654,6 @@
   "2_exp": {
     "name": "Vega",
     "speciality": "dark",
-    "img": {
-      "src": "/leaders/unbound-vega",
-      "author": "Skeli",
-      "link": "https://www.pokecommunity.com/showthread.php?t=382178"
-    },
     "pokemon": [
       {
         "name": "liepard",
@@ -884,7 +865,8 @@
           "spe": 71
         }
       }
-    ]
+    ],
+    "info": "<p><b>Negative Energy</b><br/>A negative energy fills the battlefield and makes every non-Dark, non-Ghost and non-Psychic type Pokémon take 6.25% damage at the end of every turn.</p>"
   },
   "sh2_exp": {
     "name": "Shadow Admin Ivory",
@@ -1125,11 +1107,6 @@
   "r3_exp": {
     "name": "Rival",
     "speciality": "",
-    "img": {
-      "src": "/leaders/unbound-axelrod",
-      "author": "Skeli",
-      "link": "https://www.pokecommunity.com/showthread.php?t=382178"
-    },
     "pokemon": [
       {
         "name": "toucannon",
@@ -1286,11 +1263,6 @@
   "3_exp": {
     "name": "Alice",
     "speciality": "flying",
-    "img": {
-      "src": "/leaders/unbound-alice",
-      "author": "Skeli",
-      "link": "https://www.pokecommunity.com/showthread.php?t=382178"
-    },
     "pokemon": [
       {
         "name": "minior",
@@ -1568,16 +1540,12 @@
           "spe": 130
         }
       }
-    ]
+    ],
+    "info": "<p><b>Tailwind</b><br />A permanent tailwind effect for Flying-Types</p>"
   },
   "4_exp": {
     "name": "Mel",
     "speciality": "normal",
-    "img": {
-      "src": "/leaders/unbound-mel",
-      "author": "Skeli",
-      "link": "https://www.pokecommunity.com/showthread.php?t=382178"
-    },
     "pokemon": [
       {
         "name": "bewear",
@@ -1853,7 +1821,8 @@
           "spe": 109
         }
       }
-    ]
+    ],
+    "info": "<p><b>Inverse Battle</b><br />Type matchups are reversed and no type is immune to any other type.</p>"
   },
   "sh4_exp": {
     "name": "Shadow Admin Ivory & Grunt",
@@ -2122,11 +2091,6 @@
   "mb1_exp": {
     "name": "Successor Maxima",
     "speciality": "fairy",
-    "img": {
-      "src": "/leaders/unbound-maxima",
-      "author": "Skeli",
-      "link": "https://www.pokecommunity.com/showthread.php?t=382178"
-    },
     "pokemon": [
       {
         "name": "wigglytuff",
@@ -2681,11 +2645,6 @@
   "r4_exp": {
     "name": "Rival",
     "speciality": "",
-    "img": {
-      "src": "/leaders/unbound-axelrod",
-      "author": "Skeli",
-      "link": "https://www.pokecommunity.com/showthread.php?t=382178"
-    },
     "pokemon": [
       {
         "name": "mamoswine",
@@ -2958,11 +2917,6 @@
   "5_exp": {
     "name": "Galavan",
     "speciality": "electric",
-    "img": {
-      "src": "/leaders/unbound-galavan",
-      "author": "Skeli",
-      "link": "https://www.pokecommunity.com/showthread.php?t=382178"
-    },
     "pokemon": [
       {
         "name": "bronzong",
@@ -3241,7 +3195,9 @@
           "spe": 20
         }
       }
-    ]
+    ],
+    "info": "<p><b>Magnet Rise</b><br />Permanent Magnet Rise effect for Steel-Type & Electric-Types making them immune to Ground type attacks.</p>",
+    "doubleBattle": true
   },
   "lr1_exp": {
     "name": "Ruin Agent Vega & Grunt",
@@ -4209,11 +4165,6 @@
   "6_exp": {
     "name": "Big Mo",
     "speciality": "fighting",
-    "img": {
-      "src": "/leaders/unbound-big-mo",
-      "author": "Skeli",
-      "link": "https://www.pokecommunity.com/showthread.php?t=382178-mo"
-    },
     "pokemon": [
       {
         "name": "mudsdale",
@@ -4486,16 +4437,12 @@
           "spe": 60
         }
       }
-    ]
+    ],
+    "info": "<p><b>Inverse Gravity</b><br />Permanent Trick Room effect for weight, heavier Pokémon go first.</p>"
   },
   "7_exp": {
     "name": "Tessy",
     "speciality": "water",
-    "img": {
-      "src": "/leaders/unbound-tessy",
-      "author": "Skeli",
-      "link": "https://www.pokecommunity.com/showthread.php?t=382178"
-    },
     "pokemon": [
       {
         "name": "toxapex",
@@ -4830,16 +4777,13 @@
           "spe": 68
         }
       }
-    ]
+    ],
+    "info": "<p><b>Camo-mons</b><br />The Pokémon's types are that of the types of their first two attacks.</p>",
+    "effect": "rain"
   },
   "r5_exp": {
     "name": "Rival",
     "speciality": "",
-    "img": {
-      "src": "/leaders/unbound-axelrod",
-      "author": "Skeli",
-      "link": "https://www.pokecommunity.com/showthread.php?t=382178"
-    },
     "pokemon": [
       {
         "name": "mamoswine",
@@ -6180,11 +6124,6 @@
   "8_exp": {
     "name": "Benjamin",
     "speciality": "bug",
-    "img": {
-      "src": "/leaders/unbound-benjamin",
-      "author": "Skeli",
-      "link": "https://www.pokecommunity.com/showthread.php?t=382178"
-    },
     "pokemon": [
       {
         "name": "araquanid",
@@ -6514,16 +6453,12 @@
           "spe": 100
         }
       }
-    ]
+    ],
+    "info": "<p><b>Benjamin Butterfree</b><br />When a Pokémon is knocked out, instead of fainting it devolves to a previous evolution. The Pokémon finally faints when it can’t devolve anymore.</p>"
   },
   "e1_exp": {
     "name": "Moleman",
     "speciality": "ground",
-    "img": {
-      "src": "/leaders/unbound-moleman",
-      "author": "Skeli",
-      "link": "https://www.pokecommunity.com/showthread.php?t=382178"
-    },
     "pokemon": [
       {
         "name": "excadrill",
@@ -6846,16 +6781,14 @@
           "spe": 91
         }
       }
-    ]
+    ],
+    "info": "<p><b>Vicious Sandstorm</b><br />Vicious sand causes Pokémon to lose ⅛ of max HP at the end of every turn</p>",
+    "effect": "sandstorm",
+    "doubleBattle": true
   },
   "e2_exp": {
     "name": "Elias",
     "speciality": "ghost",
-    "img": {
-      "src": "/leaders/unbound-elias",
-      "author": "Skeli",
-      "link": "https://www.pokecommunity.com/showthread.php?t=382178"
-    },
     "pokemon": [
       {
         "name": "mimikyu",
@@ -7178,16 +7111,12 @@
           "spe": 107
         }
       }
-    ]
+    ],
+    "info": "<p><b>Shadowy Veil</b><br />Every Ghost-type Pokémon take half damage on full HP. Ghost-types are immune to entry hazards at full HP. Other Types cannot use Safeguard or Substitute.</p>"
   },
   "e3_exp": {
     "name": "Arabella",
     "speciality": "fairy",
-    "img": {
-      "src": "/leaders/unbound-arrabella",
-      "author": "Skeli",
-      "link": "https://www.pokecommunity.com/showthread.php?t=382178"
-    },
     "pokemon": [
       {
         "name": "ribombee",
@@ -7515,16 +7444,13 @@
           "spe": 85
         }
       }
-    ]
+    ],
+    "info": "<p><b>Fairy ring</b><br />All Fairy-Type Pokémon get a +1 boost to their lowest Defense stat on switch in.</p>",
+    "effect": "misty-terrain"
   },
   "e4_exp": {
     "name": "Penny",
     "speciality": "dragon",
-    "img": {
-      "src": "/leaders/unbound-penny",
-      "author": "Skeli",
-      "link": "https://www.pokecommunity.com/showthread.php?t=382178"
-    },
     "pokemon": [
       {
         "name": "goodra",
@@ -7855,16 +7781,13 @@
           "spe": 110
         }
       }
-    ]
+    ],
+    "info": "<p><b>Rainbow Battle</b><br />All Dragon-type Pokémon on the field have their moves' secondary effect chance doubled. This stacks Serene Grace with the exception of flinching moves.</p>",
+    "doubleBattle": true
   },
   "c_exp": {
     "name": "Jax",
     "speciality": "",
-    "img": {
-      "src": "/leaders/unbound-jax",
-      "author": "Skeli",
-      "link": "https://www.pokecommunity.com/showthread.php?t=382178"
-    },
     "pokemon": [
       {
         "name": "salamence",
@@ -8207,7 +8130,8 @@
           "spe": 106
         }
       }
-    ]
+    ],
+    "doubleBattle": true
   },
   "lr5_exp": {
     "name": "Ruin Leader Aklove",

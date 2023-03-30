@@ -2,11 +2,6 @@
   "1": {
     "name": "Mirskle",
     "speciality": "grass",
-    "img": {
-      "src": "/leaders/unbound-mirskle",
-      "author": "Skeli",
-      "link": "https://www.pokecommunity.com/showthread.php?t=382178"
-    },
     "pokemon": [
       {
         "name": "floette",
@@ -160,16 +155,12 @@
           "spe": 50
         }
       }
-    ]
+    ],
+    "doubleBattle": true
   },
   "2": {
     "name": "Vega",
     "speciality": "dark",
-    "img": {
-      "src": "/leaders/unbound-vega",
-      "author": "Skeli",
-      "link": "https://www.pokecommunity.com/showthread.php?t=382178"
-    },
     "pokemon": [
       {
         "name": "liepard",
@@ -330,16 +321,12 @@
           "spe": 115
         }
       }
-    ]
+    ],
+    "info": "<p><b>Negative Energy</b><br/>A negative energy fills the battlefield and makes every non-Dark, non-Ghost and non-Psychic type Pokémon take 6.25% damage at the end of every turn.</p>"
   },
   "3": {
     "name": "Alice",
     "speciality": "flying",
-    "img": {
-      "src": "/leaders/unbound-alice",
-      "author": "Skeli",
-      "link": "https://www.pokecommunity.com/showthread.php?t=382178"
-    },
     "pokemon": [
       {
         "name": "dodrio",
@@ -548,16 +535,12 @@
           "spe": 85
         }
       }
-    ]
+    ],
+    "info": "<p><b>Tailwind</b><br />A permanent tailwind effect for Flying-Types</p>"
   },
   "4": {
     "name": "Mel",
     "speciality": "normal",
-    "img": {
-      "src": "/leaders/unbound-mel",
-      "author": "Skeli",
-      "link": "https://www.pokecommunity.com/showthread.php?t=382178"
-    },
     "pokemon": [
       {
         "name": "bewear",
@@ -763,16 +746,12 @@
           "spe": 105
         }
       }
-    ]
+    ],
+    "info": "<p><b>Inverse Battle</b><br />Type matchups are reversed and no type is immune to any other type.</p>"
   },
   "5": {
     "name": "Galavan",
     "speciality": "electric",
-    "img": {
-      "src": "/leaders/unbound-galavan",
-      "author": "Skeli",
-      "link": "https://www.pokecommunity.com/showthread.php?t=382178"
-    },
     "pokemon": [
       {
         "name": "golem",
@@ -1050,16 +1029,13 @@
           "spe": 67
         }
       }
-    ]
+    ],
+    "info": "<p><b>Magnet Rise</b><br />Permanent Magnet Rise effect for Steel-Type & Electric-Types making them immune to Ground type attacks.</p>",
+    "doubleBattle": true
   },
   "6": {
     "name": "Big Mo",
     "speciality": "fighting",
-    "img": {
-      "src": "/leaders/unbound-big-mo",
-      "author": "Skeli",
-      "link": "https://www.pokecommunity.com/showthread.php?t=382178-mo"
-    },
     "pokemon": [
       {
         "name": "conkeldurr",
@@ -1337,16 +1313,12 @@
           "spe": 90
         }
       }
-    ]
+    ],
+    "info": "<p><b>Inverse Gravity</b><br />Permanent Trick Room effect for weight, heavier Pokémon go first.</p>"
   },
   "7": {
     "name": "Tessy",
     "speciality": "water",
-    "img": {
-      "src": "/leaders/unbound-tessy",
-      "author": "Skeli",
-      "link": "https://www.pokecommunity.com/showthread.php?t=382178"
-    },
     "pokemon": [
       {
         "name": "toxapex",
@@ -1619,16 +1591,13 @@
           "spe": 81
         }
       }
-    ]
+    ],
+    "info": "<p><b>Camo-mons</b><br />The Pokémon's types are that of the types of their first two attacks.</p>",
+    "effect": "rain"
   },
   "8": {
     "name": "Benjamin",
     "speciality": "bug",
-    "img": {
-      "src": "/leaders/unbound-benjamin",
-      "author": "Skeli",
-      "link": "https://www.pokecommunity.com/showthread.php?t=382178"
-    },
     "pokemon": [
       {
         "name": "araquanid",
@@ -1891,16 +1860,12 @@
           "spe": 65
         }
       }
-    ]
+    ],
+    "info": "<p><b>Benjamin Butterfree</b><br />When a Pokémon is knocked out, instead of fainting it devolves to a previous evolution. The Pokémon finally faints when it can’t devolve anymore.</p>"
   },
   "r1": {
     "name": "Rival",
     "speciality": "",
-    "img": {
-      "src": "/leaders/unbound-axelrod",
-      "author": "Skeli",
-      "link": "https://www.pokecommunity.com/showthread.php?t=382178"
-    },
     "pokemon": [
       {
         "name": "beldum",
@@ -1950,11 +1915,6 @@
   "r2": {
     "name": "Rival",
     "speciality": "",
-    "img": {
-      "src": "/leaders/unbound-axelrod",
-      "author": "Skeli",
-      "link": "https://www.pokecommunity.com/showthread.php?t=382178"
-    },
     "pokemon": [
       {
         "name": "swinub",
@@ -2475,11 +2435,6 @@
   "r3": {
     "name": "Rival",
     "speciality": "",
-    "img": {
-      "src": "/leaders/unbound-axelrod",
-      "author": "Skeli",
-      "link": "https://www.pokecommunity.com/showthread.php?t=382178"
-    },
     "pokemon": [
       {
         "name": "toucannon",
@@ -2887,11 +2842,6 @@
   "mb1": {
     "name": "Successor Maxima",
     "speciality": "fairy",
-    "img": {
-      "src": "/leaders/unbound-maxima",
-      "author": "Skeli",
-      "link": "https://www.pokecommunity.com/showthread.php?t=382178"
-    },
     "pokemon": [
       {
         "name": "wigglytuff",
@@ -3420,16 +3370,12 @@
           "spe": 92
         }
       }
-    ]
+    ],
+    "effect": "rain"
   },
   "r4": {
     "name": "Rival",
     "speciality": "",
-    "img": {
-      "src": "/leaders/unbound-axelrod",
-      "author": "Skeli",
-      "link": "https://www.pokecommunity.com/showthread.php?t=382178"
-    },
     "pokemon": [
       {
         "name": "toucannon",
@@ -4539,11 +4485,6 @@
   "r5": {
     "name": "Rival",
     "speciality": "",
-    "img": {
-      "src": "/leaders/unbound-axelrod",
-      "author": "Skeli",
-      "link": "https://www.pokecommunity.com/showthread.php?t=382178"
-    },
     "pokemon": [
       {
         "name": "toucannon",
@@ -5647,11 +5588,6 @@
   "e1": {
     "name": "Moleman",
     "speciality": "ground",
-    "img": {
-      "src": "/leaders/unbound-moleman",
-      "author": "Skeli",
-      "link": "https://www.pokecommunity.com/showthread.php?t=382178"
-    },
     "pokemon": [
       {
         "name": "excadrill",
@@ -5912,16 +5848,14 @@
           "spe": 95
         }
       }
-    ]
+    ],
+    "info": "<p><b>Vicious Sandstorm</b><br />Vicious sand causes Pokémon to lose ⅛ of max HP at the end of every turn</p>",
+    "effect": "sandstorm",
+    "doubleBattle": true
   },
   "e2": {
     "name": "Elias",
     "speciality": "ghost",
-    "img": {
-      "src": "/leaders/unbound-elias",
-      "author": "Skeli",
-      "link": "https://www.pokecommunity.com/showthread.php?t=382178"
-    },
     "pokemon": [
       {
         "name": "mimikyu",
@@ -6193,16 +6127,12 @@
           "spe": 65
         }
       }
-    ]
+    ],
+    "info": "<p><b>Shadowy Veil</b><br />Every Ghost-type Pokémon take half damage on full HP. Ghost-types are immune to entry hazards at full HP. Other Types cannot use Safeguard or Substitute.</p>"
   },
   "e3": {
     "name": "Arabella",
     "speciality": "fairy",
-    "img": {
-      "src": "/leaders/unbound-arrabella",
-      "author": "Skeli",
-      "link": "https://www.pokecommunity.com/showthread.php?t=382178"
-    },
     "pokemon": [
       {
         "name": "ribombee",
@@ -6472,16 +6402,13 @@
           "spe": 50
         }
       }
-    ]
+    ],
+    "info": "<p><b>Fairy ring</b><br />All Fairy-Type Pokémon get a +1 boost to their lowest Defense stat on switch in.</p>",
+    "effect": "misty-terrain"
   },
   "e4": {
     "name": "Penny",
     "speciality": "dragon",
-    "img": {
-      "src": "/leaders/unbound-penny",
-      "author": "Skeli",
-      "link": "https://www.pokecommunity.com/showthread.php?t=382178"
-    },
     "pokemon": [
       {
         "name": "goodra",
@@ -6752,16 +6679,13 @@
           "spe": 120
         }
       }
-    ]
+    ],
+    "info": "<p><b>Rainbow Battle</b><br />All Dragon-type Pokémon on the field have their moves' secondary effect chance doubled. This stacks Serene Grace with the exception of flinching moves.</p>",
+    "doubleBattle": true
   },
   "c": {
     "name": "Jax",
     "speciality": "",
-    "img": {
-      "src": "/leaders/unbound-jax",
-      "author": "Skeli",
-      "link": "https://www.pokecommunity.com/showthread.php?t=382178"
-    },
     "pokemon": [
       {
         "name": "salamence",
@@ -7105,7 +7029,8 @@
           "spe": 100
         }
       }
-    ]
+    ],
+    "doubleBattle": true
   },
   "lr5": {
     "name": "Ruin Leader Aklove",
