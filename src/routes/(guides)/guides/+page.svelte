@@ -62,7 +62,7 @@
         {#if difficulty}
           <span>
 
-            <small class='px-3 py-1 absolute top-2 left-2 z-40 dark:bg-gray-900 text-white rounded-xl'>
+            <small class='px-3 py-1 absolute top-2 left-2 z-40 text-gray-900 bg-gray-50 dark:bg-gray-900 dark:text-white rounded-xl'>
               {difficulty}
             </small>
             </span>
