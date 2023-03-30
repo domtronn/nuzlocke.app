@@ -27,4 +27,4 @@ This guide covers the **Difficulty mode** and there's a guide for **Expert mode*
 
 _Insane and Easy guides coming soon!_
 
-So gear up, trainer, and get ready to embark on an epic journey through the Borrius region in Pokémon Unbound!
+So gear up, trainer, and get ready to embark on an epic Nuzlocke journey through the Borrius region in Pokémon Unbound in this brilliant Fan Game!
