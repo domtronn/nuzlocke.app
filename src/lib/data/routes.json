@@ -10874,6 +10874,15 @@
   "blazevolt2_c": [
     {
       "type": "route",
+      "name": "Starter",
+      "encounters": [
+        "snivy",
+        "tepig",
+        "oshawott"
+      ]
+    },
+    {
+      "type": "route",
       "name": "Aspertia City",
       "encounters": [
         "ducklett",
@@ -35987,32 +35996,23 @@
     },
     {
       "type": "route",
-      "name": "Route 206",
+      "name": "Route 211",
       "encounters": [
         "zubat",
         "machop",
         "geodude",
         "ponyta",
-        "gligar",
-        "larvitar",
-        "nosepass",
-        "baltoy",
-        "kricketot",
-        "kricketune",
-        "stunky",
-        "bronzor"
-      ]
-    },
-    {
-      "type": "route",
-      "name": "Wayward Cave",
-      "encounters": [
-        "zubat",
-        "geodude",
-        "onix",
+        "hoothoot",
+        "teddiursa",
+        "tyrogue",
+        "meditite",
+        "bidoof",
+        "chingling",
         "bronzor",
-        "gible",
-        "sandshrew"
+        "machoke",
+        "graveler",
+        "noctowl",
+        "swablu"
       ]
     },
     {
@@ -36046,6 +36046,36 @@
         "dratini",
         "dragonair",
         "feebas"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Route 206",
+      "encounters": [
+        "zubat",
+        "machop",
+        "geodude",
+        "ponyta",
+        "gligar",
+        "larvitar",
+        "nosepass",
+        "baltoy",
+        "kricketot",
+        "kricketune",
+        "stunky",
+        "bronzor"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Wayward Cave",
+      "encounters": [
+        "zubat",
+        "geodude",
+        "onix",
+        "bronzor",
+        "gible",
+        "sandshrew"
       ]
     },
     {
@@ -36270,6 +36300,28 @@
       "name": "Great Marsh"
     },
     {
+      "type": "route",
+      "name": "Route 213",
+      "encounters": [
+        "tentacool",
+        "tentacruel",
+        "magikarp",
+        "gyarados",
+        "remoraid",
+        "octillery",
+        "swellow",
+        "wingull",
+        "pelipper",
+        "sharpedo",
+        "absol",
+        "buizel",
+        "floatzel",
+        "shellos",
+        "gastrodon",
+        "chatot"
+      ]
+    },
+    {
       "type": "gym",
       "name": "Pastoria City",
       "value": "b4",
@@ -36319,28 +36371,6 @@
         "shellos",
         "gastrodon",
         "croagunk"
-      ]
-    },
-    {
-      "type": "route",
-      "name": "Route 213",
-      "encounters": [
-        "tentacool",
-        "tentacruel",
-        "magikarp",
-        "gyarados",
-        "remoraid",
-        "octillery",
-        "swellow",
-        "wingull",
-        "pelipper",
-        "sharpedo",
-        "absol",
-        "buizel",
-        "floatzel",
-        "shellos",
-        "gastrodon",
-        "chatot"
       ]
     },
     {
@@ -36522,27 +36552,6 @@
         "mawile",
         "steelix",
         "riolu"
-      ]
-    },
-    {
-      "type": "route",
-      "name": "Route 211",
-      "encounters": [
-        "zubat",
-        "machop",
-        "geodude",
-        "ponyta",
-        "hoothoot",
-        "teddiursa",
-        "tyrogue",
-        "meditite",
-        "bidoof",
-        "chingling",
-        "bronzor",
-        "machoke",
-        "graveler",
-        "noctowl",
-        "swablu"
       ]
     },
     {

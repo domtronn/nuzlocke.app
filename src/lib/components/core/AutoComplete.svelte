@@ -1,4 +1,5 @@
 <script>
+  import { createEventDispatcher } from 'svelte'
   import AutoComplete from 'simple-svelte-autocomplete'
 
   import PIcon from '$lib/components/core/PokemonIcon.svelte'
@@ -7,8 +8,10 @@
   import { Chevron } from '$icons'
 
   export let items = undefined, fetch = undefined
-  export let placeholder, name, inset = false, color = '', label = 'label', className = '', dropdownClass = '', wide = false, rounded = false
+  export let placeholder, name, inset = false, color = '', label = 'label', className = '', dropdownClass = '', wide = false, rounded = false, readonly = false
   export let selected = null, style = ''
+
+  export let disabled = false
 
   name = name || placeholder
 
@@ -20,6 +23,9 @@
   }
 
   export let search
+
+  const dispatch = createEventDispatcher()
+  const onChange = (target) => dispatch('change', target)
 
   $: style = inset ? `--auc-inset: ${typeof inset === 'string' ? inset : '3.2rem'}` : ''
 </script>
@@ -33,7 +39,6 @@
     icon={Chevron}
     class='z-10 absolute right-1 pointer-events-none top-1/2 -translate-y-1/2 fill-current text-gray-200 dark:text-gray-500 dark:border-gray-500 transform rotate-180 border-r w-6'
   />
-
   <label for={name}>{name}</label>
 
   <AutoComplete
@@ -45,7 +50,11 @@
 
     {items}
     {placeholder}
+    {readonly}
     {...labelProps}
+
+    {disabled}
+    {onChange}
 
     html5autocomplete={false}
     delay={fetch ? 75 : 0}
@@ -148,7 +157,16 @@
     border-color: theme('colors.gray.600');
   }
 
-  :global(input.autocomplete-input:hover) { border-color: var(--auc-focus-2); }
+  :global(input.autocomplete-input:disabled),
+  :global(input.autocomplete-input:disabled *) {
+    opacity: 0.2;
+    cursor: not-allowed;
+  }
+
+  :global(input.autocomplete-input:hover:not(:disabled)) {
+    border-color: var(--auc-focus-2);
+  }
+
   :global(input.autocomplete-input:focus) {
     border-color: var(--auc-focus);
     --tw-ring-color: var(--auc-focus-2);

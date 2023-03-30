@@ -16,7 +16,9 @@
   let loading = true
   savedGames.subscribe(parse(g => {
     loading = !browser
-    games = Object.values(g)
+    games = Object
+      .values(g)
+      .sort((a, b) => (b.updated || b.created) - (a.updated || a.created))
   }))
 </script>
 

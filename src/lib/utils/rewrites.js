@@ -4,9 +4,9 @@ const rewrite = !building && !dev;
 // TODO: Remember to update `vercel.json` in root of project when
 // modifying these sources
 
-
-export const SPRITE = 'https://img.nuzlocke.app/sprite';
-export const CUSTOM = 'https://img.nuzlocke.app/sprites';
+export const SPRITE = 'https://img.nuzlocke.app/sprites'
+export const CUSTOM = 'https://img.nuzlocke.app/sprites'
+export const IMG = 'https://img.nuzlocke.app'
 
 export const QRCODE = rewrite
   ? '/assets/js/qrcode.min.js'
@@ -17,8 +17,8 @@ export const INSTASCAN = rewrite
   : 'https://cdn.jsdelivr.net/gh/schmich/instascan-builds@master/instascan.min.js';
 
 export const UNOWN = rewrite
-  ? '/sprites/unown-qm'
-  : 'https://img.pokemondb.net/sprites/home/normal/unown-qm.png';
+  ? '/assets/unown.png?v=1'
+  : 'https://img.nuzlocke.app/assets/unown.png?v=1';
 
 export const createImgUrl = (p, { ext = 'webp', shiny = false } = {}) => {
   if (p.imgUrl) return `${CUSTOM}${p.imgUrl}.${ext}`
@@ -27,6 +27,6 @@ export const createImgUrl = (p, { ext = 'webp', shiny = false } = {}) => {
     .replace('.png', '')
     .replace('.webp', '')
 
-  if (shiny) return `${SPRITE}/shiny/${normalId}.${ext}`
-  return `${SPRITE}/${normalId}.${ext}`
+  if (shiny) return `${SPRITE}/shiny/${normalId}.${ext}?bypass=true`
+  return `${SPRITE}/base/${normalId}.${ext}?bypass=true`
 }

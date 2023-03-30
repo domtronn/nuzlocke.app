@@ -1,10 +1,11 @@
 import { error } from '@sveltejs/kit'
-import { toSlug } from '$lib/utils/string'
+import { toSlug, normalise } from '$lib/utils/string'
 
-import Games from '$lib/data/games.json'
+import { Expanded as Games } from '$lib/data/games.js'
 import Themes from '$lib/data/theme.json'
 
-export const csr = true;
+export const csr = true
+export const prerender = true
 
 export async function load ({ params, url, fetch }) {
   const { game } = params
@@ -16,6 +17,14 @@ export async function load ({ params, url, fetch }) {
     throw error(404, {
       message: 'Not found'
     })
+  }
+
+  let html
+  try {
+    const post = await import(`../../../../docs/${gameCfg.pid}.md`)
+    html = post.html
+  } catch (e) {
+    html = ''
   }
 
   const links = Object
@@ -33,18 +42,22 @@ export async function load ({ params, url, fetch }) {
         .map(x => x.charAt(0).toUpperCase() + x.slice(1))
         .join(' ')
 
-  const fetchJson = uri => fetch(uri).then(res => res.json())
+
+  const fetchJson = uri => fetch(uri, { redirect: 'follow' })
+    .then(res => {
+      if (res.status === 301) return fetchJson(res.headers.get('location'))
+      else return res.json()
+    })
   const [pokemon, route, fire, water, grass] = await Promise.all([
-    fetchJson(`/api/pokemon.json`),
+    fetchJson(`/api/${gameCfg.pid}/pokemon.json`),
     fetchJson(`/api/route/${gameCfg.pid}.json`),
     fetchJson(`/league/${gameCfg.pid}.fire.json`),
     fetchJson(`/league/${gameCfg.pid}.water.json`),
     fetchJson(`/league/${gameCfg.pid}.grass.json`),
   ])
 
-  const normalise = (id) => id.replace(/-/g, '')
   const findPokemon = id => pokemon.find(p =>
-    normalise(p.alias) === normalise(id) ||
+      normalise(p.alias) === normalise(id) ||
       normalise(p.sprite) === normalise(id)
   )
 
@@ -117,6 +130,7 @@ export async function load ({ params, url, fetch }) {
           }}, {})
 
   return {
+    html,
     links, game: gameObj, path: url.pathname,
     route: { routes, gyms, count: encounters.length, encounters: encounterdata, encounterMap },
     data: { fire, water, grass }

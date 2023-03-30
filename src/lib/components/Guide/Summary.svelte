@@ -31,12 +31,12 @@
   encounters. <span aria-hidden>Hover over a Pokémon to see where to encounter it!</span>
 </p>
 
-<p class='sr-only w-0 h-0 overflow-none'>
+<p>
   {#each Object.entries(encounters).sort(([, a], [, b])=> a.length - b.length) as [type, encounters]}
-    <h3>{encounters.length} {capitalise(type)} Pokémon encounters</h3>
-    <ul>
+    <h3 class=sr-only>{encounters.length} {capitalise(type)} Pokémon encounters</h3>
+    <ul class=sr-only>
       {#each encounters as { name, sprite }}
-        <li>
+        <li class=sr-only>
           {capitalise(name)} - {toList(encounterMap[sprite] || [], i => i, 'and')}
         </li>
       {/each}
@@ -74,13 +74,13 @@
 <style lang="postcss">
   section { @apply my-6 }
 
-  h2, h3 { @apply tracking-widest }
+  h2, h3 { @apply tracking-wide }
   h2 { @apply text-2xl font-bold mb-6 mt-12 }
   h3 { @apply flex justify-between w-full items-center mb-2 text-base }
   h3 span { @apply inline-flex items-center gap-x-2  }
   div { @apply grid md:grid-cols-2 gap-x-12 }
 
-  p { @apply max-w-2xl mb-10 tracking-widest leading-loose }
+  p { @apply max-w-2xl mb-10 tracking-wide leading-6 }
   .figure { @apply inline text-xl md:text-2xl font-bold }
 
   ul {

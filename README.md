@@ -84,3 +84,5 @@ them out and thank their creators.
 - [Sentry](https://sentry.io/organizations/nuzlocke-tracker/issues/?project=6109144) - Sentry error tracking
 - [Analytics](https://nuzlocke-analytics.vercel.app/) - Page views and click trackingc
 - [Updates & Support](https://www.buymeacoffee.com/dashboard) - Follow feature updates and support me
+- [PixelIt](https://giventofly.github.io/pixelit/#tryit) - A Pixelator for making custom assets
+- [Usprited](https://github.com/linuxenko/usprited) - A sprite sheet editor & CSS generator

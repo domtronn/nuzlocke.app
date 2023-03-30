@@ -96,14 +96,14 @@
           on:new={onnewlocation}
           >
           <div slot=location class='flex flex-row-reverse lg:flex-row items-center gap-x-2 lg:-ml-6 -mr-1'>
-            <StarterType on:select={setstarter} bind:starter />
+            <StarterType {key} on:select={setstarter} bind:starter />
             <p>Starter* <Tooltip>Selecting a starter type modifies Rival encounters.</Tooltip></p>
           </div>
         </PokemonSelector>
       </li>
 
     {:else if showRoute(p, filters, hideRoute)}
-      <li id='route-{p.name}' in:fade>
+      <li class=location id='route-{p.name}' in:fade>
         <PokemonSelector
           {id}
           {store}
@@ -115,7 +115,7 @@
       </li>
 
     {:else if showCustom(p, filters, hideRoute)}
-      <li class='flex items-center gap-x-2' id='custom-{p.index}' in:fade>
+      <li class='location flex items-center gap-x-2' id='custom-{p.index}' in:fade>
         <PokemonSelector
           type=custom
           locationName={p.name}
@@ -135,7 +135,7 @@
       </li>
 
     {:else if showGym(p, filters, hideRoute)}
-      <li class='-mb-4 md:my-2' id='boss-{id}' in:fade>
+      <li class='-mb-4 md:my-2 boss' id='boss-{id}' in:fade>
         <GymCard
           {starter}
           game={key}
@@ -153,3 +153,12 @@
     {/if}
   {/each}
 </ul>
+
+<style>
+  li.location {
+    scroll-margin-top: -12px;
+  }
+  li {
+    @apply snap-start
+  }
+</style>

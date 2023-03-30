@@ -1,7 +1,7 @@
 <script>
   export let id = 25
 
-  import { SPRITE } from '$utils/rewrites'
+  import { createImgUrl, IMG } from '$utils/rewrites'
 
   import { flip as animflip } from 'svelte/animate'
   import { fly } from 'svelte/transition'
@@ -10,7 +10,8 @@
   import { readdata, activeGame, savedGames, parse, getGame, read, summarise, trackData } from '$lib/store'
   import { PixelatedContainer } from '$lib/components/containers'
 
-  import { Picture, PIcon } from '$lib/components/core'
+  import Games from '$lib/data/games'
+  import { Logo, Picture, PIcon } from '$lib/components/core'
 
   import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
   import { Deceased } from '$icons'
@@ -52,8 +53,9 @@
     trackData()
   })
 
+  let src
   $: duration = Math.min(interval / 3, 1000)
-  $: src = `${SPRITE}/${id}.png`
+  $: src = createImgUrl({ imgId: id }, { ext: 'png' })
 </script>
 
 <main>
@@ -87,10 +89,10 @@
             {title}
             {#if title === 'Continue'}
               <div class='flex flex-row group-hover:grayscale-0 md:grayscale items-center transition h-8 -mt-1 font-sans text-sm font-normal'>
-                <Picture
-                  src=/assets/{active.game}
+                <Logo
+                  src='{IMG}{Games[active.game].logo}'
                   alt='{active.game} logo'
-                  className=mr-2
+                  class=mr-2
                   aspect=32xauto
                   />
 

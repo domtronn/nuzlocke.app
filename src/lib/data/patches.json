@@ -388,6 +388,13 @@
           "spe": 95
         }
       },
+      "bayleef": {
+        "name": "bayleef",
+        "types": [
+          "grass",
+          "fairy"
+        ]
+      },
       "meganium": {
         "name": "meganium",
         "stats": {
@@ -3958,6 +3965,13 @@
           "spa": 90
         }
       },
+      "gourgeist-large": {
+        "name": "gourgeist-large",
+        "stats": {
+          "atk": 58,
+          "spa": 90
+        }
+      },
       "decidueye": {
         "name": "decidueye",
         "stats": {
@@ -5688,7 +5702,7 @@
         },
         "total": 295,
         "evoline": "blitzle",
-        "imgUrl": "/radred/blitzle-sevii",
+        "imgUrl": "/unown",
         "evos": [
           "zebstrika-sevii"
         ]
@@ -5712,7 +5726,7 @@
         },
         "total": 497,
         "evoline": "blitzle",
-        "imgUrl": "/radred/zebstrika-sevii"
+        "imgUrl": "/unown"
       },
       "carnivine-sevii": {
         "name": "Seviian Carnivine",
@@ -5733,7 +5747,7 @@
         },
         "total": 454,
         "evoline": "carnivine",
-        "imgUrl": "/radred/carnivine-sevii"
+        "imgUrl": "/unown"
       },
       "centiskorch-sevii": {
         "name": "Seviian Centiskorch",
@@ -5754,7 +5768,7 @@
         },
         "total": 525,
         "evoline": "sizzlipede",
-        "imgUrl": "/radred/centiskorch-sevii"
+        "imgUrl": "/unown"
       },
       "sizzlipede-sevii": {
         "name": "Seviian Sizzlipede",
@@ -5775,7 +5789,7 @@
         },
         "total": 305,
         "evoline": "sizzlipede",
-        "imgUrl": "/radred/sizzlipede-sevii",
+        "imgUrl": "/unown",
         "evos": [
           "centiskorch-sevii"
         ]
@@ -5799,7 +5813,7 @@
         },
         "total": 330,
         "evoline": "clauncher",
-        "imgUrl": "/radred/clauncher-sevii",
+        "imgUrl": "/unown",
         "evos": [
           "clawitzer-sevii"
         ]
@@ -5823,7 +5837,7 @@
         },
         "total": 513,
         "evoline": "clauncher",
-        "imgUrl": "/radred/clawitzer-sevii"
+        "imgUrl": "/unown"
       },
       "dhelmise-sevii": {
         "name": "Seviian Dhelmise",
@@ -5844,7 +5858,7 @@
         },
         "total": 517,
         "evoline": "dhelmise",
-        "imgUrl": "/radred/dhelmise-sevii"
+        "imgUrl": "/unown"
       },
       "dodrio-sevii": {
         "name": "Seviian Dodrio",
@@ -5865,7 +5879,7 @@
         },
         "total": 470,
         "evoline": "doduo",
-        "imgUrl": "/radred/dodrio-sevii"
+        "imgUrl": "/unown"
       },
       "doduo-sevii": {
         "name": "Seviian Doduo",
@@ -5886,7 +5900,7 @@
         },
         "total": 310,
         "evoline": "doduo",
-        "imgUrl": "/radred/doduo-sevii",
+        "imgUrl": "/unown",
         "evos": [
           "dodrio-sevii"
         ]
@@ -5910,7 +5924,7 @@
         },
         "total": 200,
         "evoline": "feebas",
-        "imgUrl": "/radred/feebas-sevii",
+        "imgUrl": "/unown",
         "evos": [
           "milotic-sevii"
         ]
@@ -5934,7 +5948,7 @@
         },
         "total": 550,
         "evoline": "feebas",
-        "imgUrl": "/radred/milotic-sevii"
+        "imgUrl": "/unown"
       },
       "mantine-sevii": {
         "name": "Seviian Mantine",
@@ -5955,7 +5969,7 @@
         },
         "total": 495,
         "evoline": "mantyke",
-        "imgUrl": "/radred/mantine-sevii"
+        "imgUrl": "/unown"
       },
       "mantyke-sevii": {
         "name": "Seviian Mantyke",
@@ -5976,7 +5990,7 @@
         },
         "total": 345,
         "evoline": "mantyke",
-        "imgUrl": "/radred/mantyke-sevii",
+        "imgUrl": "/unown",
         "evos": [
           "mantine-sevii"
         ]
@@ -5999,7 +6013,7 @@
         },
         "total": 330,
         "evoline": "teddiursa",
-        "imgUrl": "/radred/teddiursa-sevii",
+        "imgUrl": "/unown",
         "evos": [
           "ursaring-sevii"
         ]
@@ -6023,7 +6037,7 @@
         },
         "total": 500,
         "evoline": "teddiursa",
-        "imgUrl": "/radred/ursaring-sevii"
+        "imgUrl": "/unown"
       },
       "wishiwashi-sevii": {
         "name": "Seviian Wishiwashi",
@@ -6043,7 +6057,7 @@
         },
         "total": 175,
         "evoline": "wishwashi",
-        "imgUrl": "/radred/wishiwashi-sevii"
+        "imgUrl": "/unown"
       },
       "wishiwashi-sevii-school": {
         "name": "Seviian Wishiwashi",
@@ -6063,8 +6077,8 @@
           "spe": 25
         },
         "total": 630,
-        "evoline": "wishiwashi",
-        "imgUrl": "/radred/wishiwashi-sevii-school"
+        "evoline": "wishiwashi# /radred/wishiwashi-sevii-school",
+        "imgUrl": "/unown"
       },
       "pikachu-flying": {
         "name": "Flying Pikachu",

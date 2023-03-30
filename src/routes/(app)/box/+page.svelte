@@ -5,7 +5,7 @@
 
   import PokemonCard from '$lib/components/pokemon-card.svelte'
 
-  import { Loader, IconButton } from '$lib/components/core'
+  import { Loader, IconButton, Tooltip, Toggle } from '$c/core'
   import TypeBadge from '$lib/components/type-badge.svelte'
   import { Modal as AnalysisModal } from '$lib/components/Analysis'
 
@@ -13,7 +13,7 @@
   import { canonTypes as types } from '$lib/data/types'
   import { stats, StatIconMap } from '$lib/data/stats'
 
-  import { SPRITE, CUSTOM, createImgUrl } from '$utils/rewrites'
+  import { CUSTOM, UNOWN, createImgUrl } from '$utils/rewrites'
   import { toDb } from '$utils/link'
   import deferStyles from '$utils/defer-styles'
 
@@ -26,11 +26,13 @@
   const { getPkmns, getPkmn } = getContext('game')
   const { open } = getContext('simple-modal')
 
-  let Particles, EvoModal
+  let minimal = false
+  let Particles, EvoModal, DeathModal
   onMount(() => {
     deferStyles('/assets/pokemon.css')
     import('$lib/components/particles').then(m => Particles = m.default)
     import('$lib/components/EvolutionModal.svelte').then(m => EvoModal = m.default)
+    import('$lib/components/DeathModal/index.svelte').then(m => DeathModal = m.default)
 
     // FIXME: Awkward hack to allow page transition cleanup
     ;['game_el', 'sidenav_el'].forEach(id =>{
@@ -73,6 +75,15 @@
         - sum(Object.values(Pokemon[a.pokemon]?.baseStats))
     }
 
+    if (stat === 'type') {
+      const val = Pokemon[b.pokemon].types.join('/')
+            .localeCompare(Pokemon[a.pokemon].types.join('/'))
+
+      if (val !== 0) return val
+      return sum(Object.values(Pokemon[b.pokemon]?.baseStats))
+        - sum(Object.values(Pokemon[a.pokemon]?.baseStats))
+    }
+
     return stat
       ? Pokemon[b.pokemon]?.baseStats[stat] - Pokemon[a.pokemon]?.baseStats[stat]
       : a.id - b.id
@@ -98,9 +109,17 @@
         })
     })
 
-  const handleKill = o => _ => {
+  const handleKill = (o) => () => {
+    open(DeathModal, {
+      submit: handleDeath(o),
+      pokemon: Pokemon[o.pokemon],
+      nickname: o.nickname
+    })
+  }
+
+  const handleDeath = o => death => {
     ogbox = ogbox.filter(i => toid(i) !== toid(o))
-    killPokemon(o)
+    killPokemon({ ...o, death })
   }
 </script>
 {#if loading}
@@ -108,10 +127,15 @@
 {:else}
   <div out:fade|local={{ duration: 250 }} in:fade|local={{ duration: 250, delay: 300 }} class='container mx-auto'>
     <div class='flex flex-col mx-auto items-center justify-center'>
-      <main class='w-full sm:w-3/4 flex flex-col gap-y-4 py-6 pb-32 px-4 md:px-8 overflow-hidden'>
+      <main class='w-full xl:w-3/4 flex flex-col gap-y-4 py-6 pb-48 px-4 md:px-8 overflow-hidden snap-y scroll-pt-5'>
 
-        <div class='relative mb-6 -mt-6 sm:-my-2'>
+        <div class='flex flex-col md:flex-row items-end md:items-center gap-x-2 relative md:mt-0 sm:-my-2 snap-start'>
           <AnalysisModal box={Object.values(Pokemon)} />
+          <div class='mt-1 flex md:flex-row-reverse gap-x-2'>
+            <Toggle id=minimal bind:state={minimal}>
+              <small>Hide stats</small>
+            </Toggle>
+          </div>
         </div>
 
         <div class='inline-flex flex-wrap sm:flex-row gap-y-2 gap-x-4 sm:items-start z-50 mt-2'>
@@ -120,12 +144,14 @@
               rounded
               src={X}
               title='Clear filters'
-              containerClassName='flex flex-col order-last sm:row-span-2 sm:order-none items-center justify-center'
+              containerClassName='flex flex-col order-last sm:row-span-2 sm:order-none items-center justify-center relative'
               disabled={!enabled}
               on:click={clear}
-            />
+              >
+              <Tooltip>Clear all filters</Tooltip>
+              </IconButton>
 
-            {#each ['total'].concat(stats) as s}
+            {#each stats as s}
               <label
                 class='transition items-center shadow-sm cursor-pointer inline-flex text-center row-span-1 text-xs px-2 py-1 w-full text-gray-500 dark:text-gray-400 border-gray-400 font-medium border shadow-sm rounded-lg justify-center md:justify-between'
                 class:border-gray-600={stat === s}
@@ -163,19 +189,32 @@
           </div>
         </div>
 
-        <div class='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-4 gap-y-8 mt-6'>
+        <div
+          class:grid-cols-1={!minimal}
+          class:grid-cols-2={minimal}
+          class:sm:grid-cols-2={!minimal}
+          class:sm:grid-cols-3={minimal}
+          class:md:grid-cols-4={minimal}
+          class:lg:grid-cols-3={!minimal}
+          class:lg:grid-cols-5={minimal}
+          class:xl:grid-cols-4={!minimal}
+          class:xl:grid-cols-5={minimal}
+          class='grid gap-x-4 gap-y-8 mt-6'
+        >
           {#if box.length === 0}
             <span class='h-96 flex items-center justify-center col-span-4 dark:text-gray-600 text-xl'>You have no Pokémon in your box</span>
           {/if}
           {#each box.filter(filter) as p (p)}
             <span
+              class='snap-start'
               animate:flip={{ duration: d => 10 * Math.sqrt(d) }}
               out:fade={{ duration: 150 }}
             >
               {#key p}
               <PokemonCard
-                sprite={createImgUrl(Pokemon[p.pokemon], { shiny: p.status === 6, ext: 'webp' })}
-                fallback={createImgUrl(Pokemon[p.pokemon], { shiny: p.status === 6, ext: 'png' })}
+                {minimal}
+                sprite={createImgUrl(Pokemon[p.pokemon], { shiny: p.status === 6, ext: 'png' })}
+                fallback={UNOWN}
                 maxStat={Math.max(150, ...Object.values(Pokemon[p.pokemon].baseStats))}
                 moves={[]}
                 ability={p.nickname ? { name: p.nickname + ' the ' + (p.nature || '').toLowerCase() } : null}
@@ -200,11 +239,12 @@
                   {/if}
                 </span>
 
-                <span class='text-xs text-center p-2 -mt-4 text-gray-500 z-40' slot="footer" let:id>
+                <span class='text-xs text-center p-2 text-gray-500 z-40' slot="footer" let:id>
                   {#if p.location === 'Starter'}
                     Met in a fateful encounter
+                  {:else if !p.location}
+                    Met in an unknown place
                   {:else if p.type !== 'custom'}
-                    <!-- FIXME: Allow custom location data -->
                     Met {p.location.startsWith('Route') ? 'on' : 'in'} {p.location}
                   {/if}
 
@@ -218,7 +258,7 @@
                     <Icon inline={true} icon={External} class='fill-current inline -mt-0.5' />
                   </a>
 
-                  <div class='card-controls absolute -bottom-4 flex left-1/2 -translate-x-1/2 border border-gray-200 bg-red-200 rounded-lg shadow-md'>
+                  <div class:hidden={minimal} class='card-controls absolute -bottom-4 flex left-1/2 -translate-x-1/2 border border-gray-200 bg-red-200 rounded-lg shadow-md'>
                     {#if Pokemon[p.pokemon].evos?.length}
                       <IconButton
                         className='translate-y-1 -mb-px transform scale-75'
@@ -269,4 +309,12 @@
     z-index: -10;
     height: calc(50% + 1px);
   }
+
+  @media (max-width: theme('screens.md')) {
+    main {
+      height: calc(100vh - 38px);
+      overflow-y: scroll;
+    }
+  }
+
 </style>

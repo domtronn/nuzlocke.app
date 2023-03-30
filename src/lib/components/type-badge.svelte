@@ -3,12 +3,11 @@
 
   if (tera) className = (className + ' tera').trim()
 
-  import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
-  import { Special } from '$icons'
-  import { Physical } from '$icons'
-  import { Status } from '$icons'
+  import { Icon } from '$c/core'
+  import { Special, Physical, Status } from '$icons'
 
-  import ColorMap from '$lib/data/colors.json'
+  import { Wrapper as SettingWrapper } from '$lib/components/Settings'
+  import { color } from '$lib/data/colors.ts'
   const IconMap = {
     status: Status,
     physical: Physical,
@@ -16,26 +15,27 @@
   }
 
   const content = type.toUpperCase()
-  const col = ColorMap[type.toLowerCase()]
   const icon = IconMap[type.toLowerCase()]
 </script>
 
-{#if icon}
-  <div style="--badge-color: {col[0]}; padding: 4px 5px;" class={className}>
-    <Icon inline={true} icon={icon} color={col[1]} />
-  </div>
-{:else}
+<SettingWrapper id=theme let:setting={themeId}>
+  {#if icon}
+    <div style="--badge-color: {color(type, themeId)[0]}; padding: 4px 5px;" class={className}>
+      <Icon inline={true} icon={icon} color={color(type, themeId)[1]} />
+    </div>
+  {:else}
     {#if $$slots.content}
-      <div style="--badge-color: {col};" class={className}>
+      <div style="--badge-color: {color(type, themeId)};" class={className}>
         <slot name=content />
       </div>
     {:else}
-      <div style="--badge-color: {col}; --badge-content: '{content}'" class={className}>
-        {#if tera} <span /> <span /> <span /> <span /> <span /> <span /> {/if}
-        {content}
+      <div style="--badge-color: {color(type, themeId)}; --badge-content: '{content}'" class={className}>
+    {#if tera} <span /> <span /> <span /> <span /> <span /> <span /> {/if}
+      {content}
       </div>
     {/if}
-{/if}
+  {/if}
+</SettingWrapper>
 
 <style lang="postcss">
   :global(.dark) div { color: theme('colors.gray.900') }

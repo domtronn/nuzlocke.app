@@ -157,10 +157,17 @@ export const getBox = (cb = () => {}) =>
 
     getGame(gameId).subscribe(
       read((data) => {
+        const customMap = Object.fromEntries(
+          (data.__custom || []).map(m => [m.id, m])
+        )
         cb(
           Object.values(data)
             .filter((i) => i.pokemon)
             .filter(({ status }) => NuzlockeGroups.Available.includes(status))
+            .map(p => {
+              if (customMap?.[p.location]) return { ...p, location: customMap?.[p.location]?.name }
+              else return p
+            })
         );
       })
     );
@@ -275,6 +282,7 @@ export const trackData = () => {
           .values(JSON.parse(window.localStorage.getItem(IDS.game(id))))
           .filter(d => typeof d === 'object'
             && !d?.hidden
+            && (d?.status || d?.pokemon)
             && Object.keys(d).length > 1
           )
 

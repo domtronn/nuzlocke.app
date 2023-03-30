@@ -14,11 +14,12 @@
   import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
   import { Arrow, Hide } from '$icons'
 
-  import Games from '$lib/data/games.json'
   import deferStyles from '$lib/utils/defer-styles'
   import debounce from '$lib/utils/debounce'
+  import { Expanded as Games } from '$lib/data/games.js'
   import { getGame, read, readdata,
-           savedGames, activeGame, updateGame, parse} from '$lib/store'
+           savedGames, activeGame, updateGame, parse,
+         } from '$lib/store'
 
   let gameStore, gameKey, gameData
   let routeEl
@@ -124,8 +125,8 @@
   <Loader />
 {:then route}
   <div id='game_el' out:fade|local={{ duration: 250 }} in:fade|local={{ duration: 250, delay: 300 }} class="container mx-auto pb-24 overflow-hidden">
-    <div class="flex flex-row flex-wrap pb-16 justify-center">
-        <main id='main' class="p-container md:py-6 flex flex-col gap-y-4 relative">
+    <div class="flex flex-row flex-wrap pb-16 justify-center snap-start max-md:pt-4 bg-white dark:bg-gray-800">
+        <main id='main' class="p-container md:py-6 flex flex-col gap-y-4 relative ">
           <SideNav
             bind:show={show}
             on:nav={routeEl.setnav}
@@ -141,7 +142,7 @@
             </button>
           </SideNav>
 
-          <div class='flex flex-col gap-y-4 lg:gap-y-0 md:flex-row justify-between items-start mb-6'>
+          <div class='flex flex-col gap-y-4 lg:gap-y-0 md:flex-row justify-between items-start md:mb-6'>
             <div class='flex flex-col gap-y-2'>
               {#if filter === 'nuzlocke'}
                 <button
@@ -201,5 +202,19 @@
 {/await}
 
 <style lang="postcss">
-  .container { min-height: 90vh; }
+  :global(html, body) {
+    @apply max-md:overflow-hidden;
+  }
+
+  @media (max-width: theme('screens.md')) {
+    .container {
+      height: calc(100vh - 38px);
+      overflow-y: scroll;
+    }
+  }
+
+  .container {
+    min-height: 90vh;
+    @apply snap-always snap-y;
+  }
 </style>

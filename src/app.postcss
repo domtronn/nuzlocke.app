@@ -8,19 +8,24 @@
 /* } */
 
 .pkm {
-  background-image: url(https://img.nuzlocke.app/assets/pokemon-v6.webp) !important;
+  background-image: url(https://img.nuzlocke.app/assets/pokemon-v6.png) !important;
 }
 .pksymbol {
-  background-image: url(https://img.nuzlocke.app/assets/symbols.webp) !important;
+  background-image: url(https://img.nuzlocke.app/assets/symbols.png) !important;
 }
 .pkitem {
-  background-image: url(https://img.nuzlocke.app/assets/items.webp) !important;
+  background-image: url(https://img.nuzlocke.app/assets/items.png) !important;
 }
 .pkb {
-  background-image: url('https://img.nuzlocke.app/assets/badges.webp') !important;
+  background-image: url('https://img.nuzlocke.app/assets/badges.png') !important;
   display: inline-block;
   vertical-align: middle;
   image-rendering: pixelated;
+}
+
+img {
+  max-inline-size: 100%;
+  block-size: auto;
 }
 
 .pkm-wrapper {
@@ -34,7 +39,7 @@
 }
 
 .pkm {
-  filter: saturate(1.6);
+  filter: saturate(1.2);
   display: inline-block;
   vertical-align: middle;
   image-rendering: crisp-edges;
@@ -217,13 +222,115 @@ body {
   }
 }
 
+.pksymbol {
+display: inline-block;
+}
+
+.pksymbol-type-electric-32px {
+  width: 15px;
+  height: 20px;
+  background-position: -53px 0px;
+}
+.pksymbol-type-fighting-32px {
+  width: 20px;
+  height: 16px;
+  background-position: -70px 0px;
+}
+.pksymbol-type-psychic-32px {
+  width: 18px;
+  height: 19px;
+  background-position: -92px 0px;
+}
+.pksymbol-type-water-32px {
+  width: 16px;
+  height: 21px;
+  background-position: -112px 0px;
+}
+.pksymbol-type-ground-32px {
+  width: 24px;
+  height: 15px;
+  background-position: -130px 0px;
+}
+.pksymbol-type-dark-32px {
+  width: 20px;
+  height: 20px;
+  background-position: -156px 0px;
+}
+.pksymbol-type-fire-32px {
+  width: 18px;
+  height: 23px;
+  background-position: -178px 0px;
+}
+.pksymbol-type-flying-32px {
+  width: 21px;
+  height: 19px;
+  background-position: -198px 0px;
+}
+.pksymbol-type-grass-32px {
+  width: 20px;
+  height: 20px;
+  background-position: -221px 0px;
+}
+.pksymbol-type-normal-32px {
+  width: 20px;
+  height: 20px;
+  background-position: -243px 0px;
+}
+.pksymbol-type-poison-32px {
+  width: 20px;
+  height: 20px;
+  background-position: -265px 0px;
+}
+.pksymbol-type-rock-32px {
+  width: 22px;
+  height: 18px;
+  background-position: -287px 0px;
+}
+.pksymbol-type-bug-32px {
+  width: 20px;
+  height: 22px;
+  background-position: -311px 0px;
+}
+.pksymbol-type-dragon-32px {
+  width: 20px;
+  height: 23px;
+  background-position: -333px 0px;
+}
+.pksymbol-type-ghost-32px {
+  width: 21px;
+  height: 21px;
+  background-position: -355px 0px;
+}
+.pksymbol-type-steel-32px {
+  width: 22px;
+  height: 20px;
+  background-position: -378px 0px;
+}
+.pksymbol-type-fairy-32px {
+  width: 22px;
+  height: 23px;
+  background-position: -496px 0px;
+}
+.pksymbol-type-ice-32px {
+  width: 24px;
+  height: 22px;
+  background-position: -546px 0px;
+}
+
 .dark svg.waves g.fill {
   fill: theme('colors.gray.800');
 }
 
-svg g {
-  @apply transition;
-}
 svg.waves g.fill {
   fill: theme('colors.white');
+}
+
+.modal-positioning {
+  justify-content: flex-start !important;
+}
+
+@media (min-width:640px) {
+  .modal-positioning {
+    justify-content: center !important;
+  }
 }

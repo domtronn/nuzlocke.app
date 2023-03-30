@@ -18,7 +18,7 @@
 
   import { createEventDispatcher, onMount, getContext } from 'svelte'
 
-  let selected, nickname, status, nature, hidden
+  let selected, nickname, status, nature, hidden, death
   let prevstatus = 'loading'
 
   // Search text bindings for ACs
@@ -27,7 +27,7 @@
   export let encounters = []
   let encounterItems = []
 
-  let Particles, EvoModal
+  let Particles, EvoModal, DeathModal
   onMount(() => {
     const [data] = readdata()
     const loc = data[location]
@@ -40,6 +40,7 @@
       .then(e => encounterItems = (encounters || []).map(id => e[id]).filter(i => i))
     import('$lib/components/particles').then(m => Particles = m.default)
     import('$lib/components/EvolutionModal.svelte').then(m => EvoModal = m.default)
+    import('$lib/components/DeathModal/index.svelte').then(m => DeathModal = m.default)
     prevstatus = null
   })
 
@@ -47,15 +48,18 @@
   const dispatch = createEventDispatcher()
 
   let loading = true
-  let evolines = new Set()
+  let dupelines = new Set(), misslines = new Set()
+
   store && store.subscribe(read(data => {
-    getPkmns(
-      Object
-        .values(data)
-        .filter(p => p && (!p.status || NuzlockeGroups.Dupes.includes(p?.status)))
+    const getStateMons = (data, stateGroup) => {
+      return Object.values(data)
+        .filter(p => p && (!p.status || stateGroup.includes(p?.status)))
         .map(p => p.pokemon)
         .filter(i => i)
-    ).then(p => evolines = new Set(Object.values(p).map(p => p?.evoline)))
+    }
+
+    getPkmns(getStateMons(data, NuzlockeGroups.Dupes)).then(p => dupelines = new Set(Object.values(p).map(p => p?.evoline)))
+    getPkmns(getStateMons(data, NuzlockeGroups.MissDupes)).then(p => misslines = new Set(Object.values(p).map(p => p?.evoline)))
 
     const pkmn = data[location]
     if (!pkmn) return
@@ -64,6 +68,7 @@
     nature = pkmn.nature ? NaturesMap[pkmn.nature] : null
     hidden = pkmn.hidden
     nickname = pkmn.nickname
+    death = pkmn.death
     if (pkmn.pokemon)
       getPkmn(pkmn.pokemon)
       .then(p => {
@@ -83,6 +88,7 @@
          hidden: hidden || false,
          location: locationName || location,
          nickname,
+         ...(status?.id === 5 && death ? { death } : {})
        }
    }))
   }
@@ -98,15 +104,22 @@
   }
 
   function handleClear () {
-    status = nickname = selected = null
+    status = nickname = selected = death = null
     search = statusSearch = natureSearch = null
     store.update(patch({ [location]: {} }))
   }
 
   let statusComplete = false
   const handleStatus = (sid) => () => {
-    status = NuzlockeStates[sid]
-    _animateStatus(sid)
+    const cb = (data) => {
+      if (sid === 5) (death = data) // Handle death context from modal
+
+      status = NuzlockeStates[sid]
+      _animateStatus(sid)
+    }
+
+    if (sid === 5) return handleDeath(cb)
+    else cb()
   }
 
   const animateStatus = item => _ => _animateStatus(item.id)
@@ -127,6 +140,7 @@
   })
 
   const handleEvolution = (base, evos) => async () => handleSplitEvolution(base, evos)
+  const handleDeath = (submit) => open(DeathModal, { submit, pokemon: selected, nickname })
 
   const handleReveal = () => {
     hidden = false
@@ -150,7 +164,8 @@
   </span>
 
   <SettingsWrapper id=encounter-suggestions let:setting={suggest}>
-    <SettingsWrapper id=dupe-clause let:setting>
+    <SettingsWrapper id=dupe-clause let:setting={dupes}>
+    <SettingsWrapper id=missed-dupes let:setting={missdupes}>
       {#if selected && (selected.hidden || hidden)}
         <button
           class='group overflow-hidden relative dark:bg-transparent transition-colors w-11/12 sm:w-full sm:text-xs pr-3 m-0 border-2 rounded-lg hover:border-lime-500 dark:border-gray-600 dark:hover:border-lime-400 dark:hover:bg-gray-700/25 inline-flex justify-between items-center col-span-2'
@@ -179,13 +194,13 @@
           >
 
           <span class='flex items-center h-8 px-4 py-5 md:py-6 '
-                class:hidden={setting === 2 && evolines.has(item?.evoline)}
-                class:dupe={setting === 1 && evolines.has(item?.evoline)}
+                class:hidden={dupes === 2 && (missdupes ? misslines : dupelines).has(item?.evoline)}
+                class:dupe={dupes === 1 && (missdupes ? misslines : dupelines).has(item?.evoline)}
                 aria-label={label}
                 slot=item let:item let:label>
             <PIcon name={item?.sprite} className='transform -mb-4 -ml-6 -mt-5 -mr-2' />
             {@html label}
-            {#if setting === 1 && evolines.has(item?.evoline)}
+            {#if dupes === 1 && (missdupes ? misslines : dupelines).has(item?.evoline)}
               <span class='dupe__span absolute text-tiny right-4'>dupe</span>
             {/if}
           </span>
@@ -207,6 +222,7 @@
           </svelte:fragment>
         </AutoComplete>
       {/if}
+    </SettingsWrapper>
     </SettingsWrapper>
   </SettingsWrapper>
 
@@ -245,7 +261,7 @@
           {/if}
         </svelte:fragment>
 
-        <button on:click={animateStatus(item)} class='flex inline-flex gap-x-2 px-3 py-2 md:py-3 items-center' slot=item let:item let:label>
+        <button on:click={handleStatus(item.id)} class='flex inline-flex gap-x-2 px-3 py-2 md:py-3 items-center' slot=item let:item let:label>
           <Icon inline={true} icon={item.icon} class='fill-current transform md:scale-125' />
           {@html label}
         </button>
@@ -287,8 +303,9 @@
         rounded
         src={Deceased}
         title='Kill {selected.name}'
-        containerClassName={!selected || hidden ? 'hidden sm:block' : ''}
+        track=kill
         on:click={handleStatus(5)}
+        containerClassName={!selected || hidden ? 'hidden sm:block' : ''}
       />
     {/if}
 
@@ -400,5 +417,5 @@
   .popover li, .popover li :global(*) { @apply inline-flex items-center; }
 
   :global(.dark) ul.popover { @apply text-gray-50; }
-  :global(.dark) .popover li:hover { @apply bg-indigo-500 text-white; }
+  :global(.dark) .popover li:hover { @apply bg-orange-500 text-white; }
 </style>

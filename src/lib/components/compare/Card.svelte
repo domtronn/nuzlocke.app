@@ -3,42 +3,36 @@
 
   import { fade } from 'svelte/transition'
 
-  import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
-  import { Hand } from '$icons'
-  import { Loop as Badge } from '$icons'
-  import { Ball } from '$icons'
+  import { Icon, PIcon, Tooltip } from '$c/core'
+  import { Hand, Ball, Loop as Badge } from '$icons'
 
-  import { Tooltip, PIcon } from '$lib/components/core'
-  import ColorMap from '$lib/data/colors.json'
+  import { Wrapper as SettingWrapper } from '$lib/components/Settings'
+  import { color } from '$lib/data/colors.ts'
 
-  import { SPRITE } from '$utils/rewrites'
+  import { createImgUrl } from '$utils/rewrites'
   import { Stars as Pattern } from '$utils/pattern'
 
   $: atk = pokemon[0]
-  $: atkCols = atk.types.map(t => ColorMap[t.toLowerCase()])
-  $: atkBgImg = Pattern(atkCols[1] || atkCols[0])
-
   $: def = pokemon[1]
-  $: defCols = def.types.map(t => ColorMap[t.toLowerCase()])
-  $: defBgImg = Pattern(defCols[1] || defCols[0])
 
-  const sprite = id => `${SPRITE}/${status === 6 ? 'shiny/' : ''}${id}.png`
+  const sprite = imgId => createImgUrl({ imgId }, { ext: 'png', shiny: status === 6})
 </script>
 
+<SettingWrapper id=theme let:setting={themeId}>
 <div class='shadow-lg dark:text-gray-50 relative {className}'>
 
   <!-- Pokemon face off -->
   <div class='relative flex flex-row justify-around h-24 overflow-hidden -mt-8'>
     <!-- Colouring for types -->
     {#key `atk__${atk.name}`}
-      <div in:fade={{ duration: 400, delay: 100 }} class='absolute bottom-0 top-0 left-0 mt-8 rounded-tl-lg overflow-hidden' style='width: 50%; background: {atkCols[0]};'>
-        <div class='absolute inset-0' style='background-image: url("{atkBgImg}");' />
+      <div in:fade={{ duration: 400, delay: 100 }} class='absolute bottom-0 top-0 left-0 mt-8 rounded-tl-lg overflow-hidden' style='width: 50%; background: {color(atk.types, themeId)};'>
+        <div class='absolute inset-0' style='background-image: url("{Pattern(atk.types[1] || atk.types[0], themeId)}");' />
       </div>
     {/key}
 
     {#key `def__${def.name}`}
-      <div in:fade={{ duration: 400, delay: 100 }} class='absolute bottom-0 top-0 left-1/2 mt-8 rounded-tr-lg overflow-hidden' style='width: 50%; background: {defCols[0]};'>
-        <div class='absolute inset-0' style='background-image: url("{defBgImg}");' />
+      <div in:fade={{ duration: 400, delay: 100 }} class='absolute bottom-0 top-0 left-1/2 mt-8 rounded-tr-lg overflow-hidden' style='width: 50%; background: {color(def.types, themeId)};'>
+        <div class='absolute inset-0' style='background-image: url("{Pattern(color(def.types[1] || def.types[0], themeId))}");' />
       </div>
     {/key}
     <div class='divider absolute rounded-t-lg bottom-0 top-0 left-0 mt-8' style='width: 100%;' />
@@ -78,12 +72,13 @@
 
   <div
     class='separator w-full'
-    style='background: linear-gradient(90deg, {atkCols[0]} 35%, {defCols[0]} 65%, {defCols[0]});'
+    style='background: linear-gradient(90deg, {color(atk.types, themeId)} 35%, {color(def.types, themeId)} 65%, {color(def.types, themeId)});'
   />
 
   <slot />
 
 </div>
+</SettingWrapper>
 
 <style lang="postcss">
   img.flip { animation: bob-left 4.5s ease 0.3s infinite; }

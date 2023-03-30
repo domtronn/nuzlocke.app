@@ -1,5 +1,5 @@
 <script>
-  export let id, created, name, game
+  export let id, created, updated = -1, name, game
 
   import { onMount, getContext } from 'svelte'
   import { activeGame, deleteGame, getGame, read, summarise } from '$lib/store'
@@ -7,7 +7,7 @@
   import day from '$lib/utils/date'
 
   import { NuzlockeStates } from '$lib/data/states'
-  import { PIcon, IconButton, Picture } from '$lib/components/core'
+  import { PIcon, IconButton, Logo as Picture } from '$lib/components/core'
 
   import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
   import { Bin } from '$icons'
@@ -34,6 +34,7 @@
   const onshare = _ => open(ShareModal, { id })
 
   $: date = day(+created).format('Do of MMM, YYYY')
+  $: last = updated > created ? day(+updated).format('Do of MMM, YYYY') : null
 </script>
 
 <div class='transition tracking-widest flex flex-row justify-between items-center'>
@@ -43,13 +44,21 @@
     <Picture
       alt='{name} logo'
       src=/assets/{game}
-      className='hidden sm:block w-32'
+      class='hidden sm:block h-16 w-32'
       aspect=192x96
     />
 
     <div class='text-left'>
-      <h2 class='font-bold transition text-xl leading-7'><mark class='bg-transparent dark:text-gray-50 dark:group-hover:text-gray-900 transition group-hover:bg-yellow-300'>{name}</mark></h2>
-      <h3 class='text-sm transition'><mark class='bg-transparent dark:text-gray-50 dark:group-hover:text-gray-900 transition group-hover:bg-yellow-300'>{date}<mark></h3>
+      <h2 class='font-bold transition text-xl leading-7 max-w-[26ch]'><mark class='bg-transparent dark:text-gray-50 dark:group-hover:text-gray-900 transition group-hover:bg-yellow-300'>{name}</mark></h2>
+
+      <h3 class='text-sm transition'>
+        <mark class='bg-transparent dark:text-gray-50 dark:group-hover:text-gray-900 transition group-hover:bg-yellow-300'>{date}</mark>
+        {#if last}
+          <span> - </span>
+          <mark class='bg-transparent dark:text-gray-50 dark:group-hover:text-gray-900 transition group-hover:bg-yellow-300'>{last}</mark>
+        {/if}
+      </h3>
+
       <span class='font-sans inline-flex items-center'>
         {(available || []).length}
         <PIcon className='transition group-hover:grayscale-0 grayscale mr-2 -mt-1' type='item' name='poke-ball' />
