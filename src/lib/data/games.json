@@ -9,8 +9,22 @@
     "patched": true,
     "patchId": "unbound",
     "region": "borrius",
-    "lastUpdated": "24th March 2023",
+    "lastUpdated": "30th March 2023",
     "difficulty": [":", "Expert:_exp"]
+  },
+  "emkaizo": {
+    "pid": "emkaizo",
+    "logo": "/logos/emerald-kaizo-logo",
+    "title": "Emerald Kaizo",
+    "gen": "romhack",
+    "supported": true,
+    "region": "hoenn",
+    "lastUpdated": "30th March 2023",
+    "filter": {
+      "types": "pregen6",
+      "moves": "pregen5",
+      "physicalSpecialSplit": true
+    }
   },
   "vi": {
     "pid": "vi",
@@ -281,19 +295,7 @@
       "physicalSpecialSplit": true
     }
   },
-  "emkaizo": {
-    "pid": "emkaizo",
-    "logo": "/logos/emerald-kaizo-logo",
-    "title": "Emerald Kaizo",
-    "gen": "romhack",
-    "supported": true,
-    "region": "hoenn",
-    "filter": {
-      "types": "pregen6",
-      "moves": "pregen5",
-      "physicalSpecialSplit": true
-    }
-  },
+
   "incem": {
     "pid": "incem",
     "logo": "/logos/inclement-emerald-logo",
