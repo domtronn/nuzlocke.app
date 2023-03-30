@@ -10874,6 +10874,15 @@
   "blazevolt2_c": [
     {
       "type": "route",
+      "name": "Starter",
+      "encounters": [
+        "snivy",
+        "tepig",
+        "oshawott"
+      ]
+    },
+    {
+      "type": "route",
       "name": "Aspertia City",
       "encounters": [
         "ducklett",
