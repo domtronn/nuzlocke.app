@@ -1,6 +1,6 @@
 <script>
   export let data
-  const { route, game, links, path, html } = data
+  const { route, game, links, path, html, attributes } = data
 
   import '../../../assets/[resource].css/_pokemon.css'
   import 'pokemon-assets/assets/css/items.css'
@@ -54,7 +54,7 @@
 </svelte:head>
 
 {#key game.pid}
-<Hero {...game}>
+<Hero {...game} {...(attributes || {})}>
 
   <Aside {path} {...route} />
 

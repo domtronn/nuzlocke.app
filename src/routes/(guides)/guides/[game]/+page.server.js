@@ -19,9 +19,10 @@ export async function load ({ params, url, fetch }) {
     })
   }
 
-  let html
+  let html, attributes = {}
   try {
     const post = await import(`../../../../docs/${gameCfg.pid}.md`)
+    attributes = post.attributes
     html = post.html
   } catch (e) {
     html = ''
@@ -131,6 +132,7 @@ export async function load ({ params, url, fetch }) {
 
   return {
     html,
+    attributes,
     links, game: gameObj, path: url.pathname,
     route: { routes, gyms, count: encounters.length, encounters: encounterdata, encounterMap },
     data: { fire, water, grass }

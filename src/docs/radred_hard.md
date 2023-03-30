@@ -1,13 +1,12 @@
 ---
-description: This guide covers the <b> Normal mode</b> of the ROM Hack <b>Radical Red</b> Nuzlockes. It details some of the game's unique features, lists available Pokémon, the number of encounters, and detailed overviews of all Boss battles.
+description: This guide contains useful information the <b>Hardcore mode</b> of the ROM Hack <b>Radical Red</b> Nuzlockes. It details some of the game's unique features, lists available Pokémon, the number of encounters, and detailed overviews of all Boss battles.
 ---
 
+Pokémon Radical Red is a fan-made ROM hack of Pokémon FireRed and LeafGreen that introduces new features, gameplay mechanics, and challenges to provide a unique and exciting nuzlocking experience. This guide focuses on the game's **Hardcode mode**, which is designed for players who want an _extreme_ challenge. It features additional restrictions and limitations on the player, as well as tougher opponents to battle against.
 
-Pokémon Radical Red is a fan-made ROM hack of Pokémon FireRed and LeafGreen that introduces new features, gameplay mechanics, and challenges to provide a unique and exciting nuzlocking experience. This guide focuses on the game's **Normal mode**, which offers a unique challenge and rewarding way to play the FireRed & LeafGreen games.
+Whether you're a Pokémon fan looking for a new challenge or a nuzlocke enthusiast seeking a unique experience, **Radical Red's Hardcode mode** will push your Pokémon skills & knowledge to the extreme and prove you absolutely can be the very best
 
-Whether you're a Pokémon fan looking for a new challenge or a nuzlocke enthusiast seeking a unique experience, **Radical Red's Hardcode mode** is designed to be fair and accessible for players of all levels, so you can experience the thrill of the nuzlocke challenge without feeling overwhelmed. 
-
-Want the pinacle of Nuzlocke challenge? A guide for the extreme Hardcode mode can be found [here](https://nuzlocke.app/guides/radical-rad-hardcore).
+A guide for the more accessible Easy mode can be found [here](https://nuzlocke.app/guides/radical-rad).
 
 ### Difficulty & Bosses
 
@@ -20,11 +19,11 @@ You can find a guide for all of the boss fights
 
 This is the most challenging mode in Radical Red for players who want an _extreme_ challenge. This guide details the Boss teams for [**Hardcode Mode**]() so that you don't get caught off guard.
 
-You can check out the insane teams of **Hardcore mode** over at the [Radical Red Hardcore guide](https://nuzlocke.app/guides/radical-red-hardcore) page.
-
 #### **❤️ Easy Mode**
 
 While still being more difficult than FireRed, Easy Mode is the most accessible way to play Radical Red. It provides a challenge but is designed for players who want a less intense experience.
+
+You can see an equivalent of this guide over at the ["Easy Mode" Radical Red guide](https://nuzlocke.app/guides/radical-red) page.
 
 ### New Boss Mechanics
 
