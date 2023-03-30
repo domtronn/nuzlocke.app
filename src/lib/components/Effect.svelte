@@ -1,5 +1,5 @@
 <script>
-  export let effect
+  export let effect, info
   const Effect = {
     Fog: 'fog',
     Rain: 'rain',
@@ -19,10 +19,9 @@
   // Rain
   import { Icon, Tooltip } from '$c/core'
 
-  import { default as HailA } from '@iconify-icons/wi/snow'
-  import { default as HailB } from '@iconify-icons/wi/snow-wind'
   import { default as RainA } from '@iconify-icons/wi/showers'
   import { default as RainB } from '@iconify-icons/wi/rain-mix'
+  import { default as Snow } from '@iconify-icons/tabler/snowflake'
   import { default as Sun } from '@iconify-icons/wi/day-sunny'
   import { default as Sandstorm } from '@iconify-icons/wi/sandstorm'
 
@@ -51,12 +50,12 @@
 {/if}
 
 {#if effect === Effect.Hail}
-  <span use:switcher class={$$restProps.class || ''}>
+  <span use:switcher data-interval=750 class='text-base {$$restProps.class || ''}'>
     <Tooltip>
       Permanent Hail
     </Tooltip>
-    <Icon inline icon={RainA} />
-    <Icon class='hidden' inline icon={RainB} />
+    <Icon class='transform scale-75' inline icon={Snow} />
+    <Icon class='hidden transform scale-75 -rotate-30 origin-center' inline icon={Snow} />
   </span>
 {/if}
 
@@ -65,7 +64,7 @@
     <Tooltip>
       Permanent Harsh Sunlight
     </Tooltip>
-    <Icon class='transform scale-90' inline icon={Sun} />
+    <Icon class='transform scale-25' inline icon={Sun} />
     <Icon class='hidden transform scale-110 origin-center' inline icon={Sun} />
   </span>
 {/if}

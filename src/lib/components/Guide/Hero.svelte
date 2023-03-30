@@ -1,5 +1,5 @@
 <script>
-  export let logo, title, theme, pid
+  export let logo, title, theme, pid, description
   import { Logo as Picture } from '$c/core'
   import { IMG } from '$lib/utils/rewrites'
   import { SVGs } from './'
@@ -33,9 +33,14 @@
       <div>
         <small>Nuzlocke Tracker</small>
         <h1> Pokémon {title} Nuzlocke Guide </h1>
+
         <p>
-          This guide contains useful information for a <strong>{title} Nuzlocke</strong>.
-          Lists of all of the available Pokémon, the number of encounters, and detailed overviews of all <strong>Boss battles</strong>.
+          {#if description}
+            {@html description}
+          {:else}
+            This guide contains useful information for a <strong>{title} Nuzlocke</strong>.
+            Lists of all of the available Pokémon, the number of encounters, and detailed overviews of all <strong>Boss battles</strong>.
+          {/if}
         </p>
 
         <button on:click={onnew}>

@@ -1626,7 +1626,7 @@
         "held": {
           "name": "Toxtricitite",
           "sprite": "mawilite",
-          "effect": "Allows Toxtricity to Mega Evolve into Mega Toxtricity"
+          "effect": "Allows Toxtricity to Mega Evolve into Mega Toxtricity."
         },
         "sprite": "10184",
         "types": [
@@ -2298,7 +2298,7 @@
         "held": {
           "name": "Duraludite",
           "sprite": "aggronite",
-          "effect": "Allows Duraludon to Mega Evolve into Mega Duraludon"
+          "effect": "Allows Duraludon to Mega Evolve into Mega Duraludon."
         },
         "sprite": "884",
         "types": [
@@ -8551,8 +8551,7 @@
           "spa": 180,
           "spd": 20,
           "spe": 150
-        },
-        "icon": "deoxys"
+        }
       },
       {
         "name": "jirachi",
@@ -8665,7 +8664,7 @@
           "spd": 80,
           "spe": 91
         },
-        "icon": "landorus"
+        "icon": "landorus-therian"
       },
       {
         "name": "zapdos",
@@ -11987,7 +11986,7 @@
           "spd": 65,
           "spe": 112
         },
-        "icon": "lycanroc-midday"
+        "icon": "lycanroc"
       },
       {
         "name": "omastar",

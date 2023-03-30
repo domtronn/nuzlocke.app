@@ -41347,8 +41347,7 @@
           "abilities": [
             "pressure"
           ],
-          "held": "focus-sash",
-          "sprite": "deoxys"
+          "held": "focus-sash"
         },
         {
           "name": "jirachi",
@@ -41379,7 +41378,7 @@
             "sand-force"
           ],
           "held": "life-orb",
-          "sprite": "landorus"
+          "sprite": "landorus-therian"
         },
         {
           "name": "zapdos",
@@ -42557,7 +42556,7 @@
             "tough-claws"
           ],
           "held": "life-orb",
-          "sprite": "lycanroc-midday"
+          "sprite": "lycanroc"
         },
         {
           "name": "omastar",
@@ -43063,7 +43062,8 @@
           "abilities": [
             "levitate"
           ],
-          "held": "wiki-berry"
+          "held": "wiki-berry",
+          "sprite": "rotom-wash"
         },
         {
           "name": "azumarill",
@@ -43774,6 +43774,5023 @@
             "imposter"
           ],
           "held": "choice-scarf"
+        }
+      ]
+    },
+    "1_hard": {
+      "name": "Brock",
+      "speciality": "rock",
+      "img": "/leaders/frlg-brock",
+      "pokemon": [
+        {
+          "name": "hippopotas",
+          "level": "13",
+          "moves": [
+            "bulldoze",
+            "rock-tomb",
+            "slack-off",
+            "toxic"
+          ],
+          "ability": "sand-stream",
+          "abilities": [
+            "sand-stream"
+          ],
+          "held": "berry-juice"
+        },
+        {
+          "name": "cacnea",
+          "level": "15",
+          "moves": [
+            "power-up-punch",
+            "bullet-seed",
+            "thunder-punch",
+            "pin-missile"
+          ],
+          "ability": "sand-rush",
+          "abilities": [
+            "sand-rush"
+          ],
+          "held": "eviolite"
+        },
+        {
+          "name": "lunatone",
+          "level": "14",
+          "moves": [
+            "ancient-power",
+            "psybeam",
+            "hidden-power-ground",
+            "icy-wind"
+          ],
+          "ability": "levitate",
+          "abilities": [
+            "levitate"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "lileep",
+          "level": "16",
+          "moves": [
+            "stockpile",
+            "recover",
+            "hidden-power-rock",
+            "mega-drain"
+          ],
+          "ability": "storm-drain",
+          "abilities": [
+            "storm-drain"
+          ],
+          "held": "oran-berry"
+        },
+        {
+          "name": "archen",
+          "level": "14",
+          "moves": [
+            "wing-attack",
+            "rock-tomb",
+            "bulldoze",
+            "facade"
+          ],
+          "ability": "defeatist",
+          "abilities": [
+            "defeatist"
+          ],
+          "held": "iapapa-berry"
+        },
+        {
+          "name": "sandshrew",
+          "level": "14",
+          "moves": [
+            "bulldoze",
+            "rock-tomb",
+            "aerial-ace",
+            "sleep-talk"
+          ],
+          "ability": "sand-rush",
+          "abilities": [
+            "sand-rush"
+          ],
+          "held": "soft-sand"
+        }
+      ],
+      "effect": "sandstorm"
+    },
+    "2_hard": {
+      "name": "Misty",
+      "speciality": "water",
+      "img": "/leaders/frlg-misty",
+      "pokemon": [
+        {
+          "name": "politoed",
+          "level": "27",
+          "moves": [
+            "flip-turn",
+            "scald",
+            "earthquake",
+            "toxic"
+          ],
+          "ability": "drizzle",
+          "abilities": [
+            "drizzle"
+          ],
+          "held": "iapapa-berry"
+        },
+        {
+          "name": "ludicolo",
+          "level": "28",
+          "moves": [
+            "giga-drain",
+            "scald",
+            "aurora-beam",
+            "thunder-punch"
+          ],
+          "ability": "swift-swim",
+          "abilities": [
+            "swift-swim"
+          ],
+          "held": "sitrus-berry"
+        },
+        {
+          "name": "mantine",
+          "level": "27",
+          "moves": [
+            "scald",
+            "hurricane",
+            "roost",
+            "hidden-power-grass"
+          ],
+          "ability": "swift-swim",
+          "abilities": [
+            "swift-swim"
+          ],
+          "held": "wacan-berry"
+        },
+        {
+          "name": "ferroseed",
+          "level": "27",
+          "moves": [
+            "bullet-seed",
+            "gyro-ball",
+            "leech-seed",
+            "toxic"
+          ],
+          "ability": "iron-barbs",
+          "abilities": [
+            "iron-barbs"
+          ],
+          "held": "eviolite"
+        },
+        {
+          "name": "starmie",
+          "level": "28",
+          "moves": [
+            "scald",
+            "thunderbolt",
+            "psyshock",
+            "aurora-beam"
+          ],
+          "ability": "analytic",
+          "abilities": [
+            "analytic"
+          ],
+          "held": "mystic-water"
+        },
+        {
+          "name": "toxicroak",
+          "level": "27",
+          "moves": [
+            "swords-dance",
+            "drain-punch",
+            "poison-jab",
+            "sucker-punch"
+          ],
+          "ability": "dry-skin",
+          "abilities": [
+            "dry-skin"
+          ],
+          "held": "life-orb"
+        }
+      ],
+      "effect": "rain"
+    },
+    "3_hard": {
+      "name": "Lt. Surge",
+      "speciality": "electric",
+      "img": "/leaders/frlg-surge",
+      "pokemon": [
+        {
+          "name": "rotom-frost",
+          "level": "35",
+          "moves": [
+            "thunderbolt",
+            "blizzard",
+            "freeze-dry",
+            "nasty-plot"
+          ],
+          "ability": "levitate",
+          "abilities": [
+            "levitate"
+          ],
+          "held": "icium-z--held",
+          "sprite": "rotom-frost"
+        },
+        {
+          "name": "electrode-hisui",
+          "level": "36",
+          "moves": [
+            "chloroblast",
+            "volt-switch",
+            "hidden-power-ice",
+            "explosion"
+          ],
+          "ability": "reckless",
+          "abilities": [
+            "reckless"
+          ],
+          "held": "life-orb",
+          "sprite": "electrode-hisui"
+        },
+        {
+          "name": "raichu-alola",
+          "level": "36",
+          "moves": [
+            "rising-voltage",
+            "psyshock",
+            "nasty-plot",
+            "surf"
+          ],
+          "ability": "surge-surfer",
+          "abilities": [
+            "surge-surfer"
+          ],
+          "held": "focus-sash",
+          "sprite": "raichu-alola"
+        },
+        {
+          "name": "hitmonlee",
+          "level": "36",
+          "moves": [
+            "knock-off",
+            "close-combat",
+            "rock-slide",
+            "bulk-up"
+          ],
+          "ability": "unburden",
+          "abilities": [
+            "unburden"
+          ],
+          "held": "electric-seed"
+        },
+        {
+          "name": "electivire",
+          "level": "36",
+          "moves": [
+            "plasma-fists",
+            "mach-punch",
+            "ice-punch",
+            "close-combat"
+          ],
+          "ability": "iron-fist",
+          "abilities": [
+            "iron-fist"
+          ],
+          "held": "black-belt"
+        },
+        {
+          "name": "ampharos-mega",
+          "level": "36",
+          "moves": [
+            "rising-voltage",
+            "dragon-pulse",
+            "focus-blast",
+            "hidden-power-grass"
+          ],
+          "ability": "plus",
+          "abilities": [
+            "plus",
+            "mold-breaker"
+          ],
+          "held": "ampharosite",
+          "sprite": "ampharos-mega"
+        }
+      ],
+      "effect": "electric-terrain"
+    },
+    "4_hard": {
+      "name": "Erika",
+      "speciality": "grass",
+      "img": "/leaders/frlg-erika",
+      "pokemon": [
+        {
+          "name": "cradily",
+          "level": "44",
+          "moves": [
+            "stealth-rock",
+            "toxic",
+            "power-whip",
+            "earth-power"
+          ],
+          "ability": "storm-drain",
+          "abilities": [
+            "storm-drain"
+          ],
+          "held": "grassy-seed"
+        },
+        {
+          "name": "hawlucha",
+          "level": "44",
+          "moves": [
+            "swords-dance",
+            "acrobatics",
+            "close-combat",
+            "stone-edge"
+          ],
+          "ability": "unburden",
+          "abilities": [
+            "unburden"
+          ],
+          "held": "grassy-seed"
+        },
+        {
+          "name": "sceptile-mega",
+          "level": "44",
+          "moves": [
+            "swords-dance",
+            "bullet-seed",
+            "draco-barrage",
+            "high-horsepower"
+          ],
+          "ability": "overgrow",
+          "abilities": [
+            "overgrow",
+            "technician"
+          ],
+          "held": "sceptilite",
+          "sprite": "sceptile-mega"
+        },
+        {
+          "name": "toxtricity-amped",
+          "level": "44",
+          "moves": [
+            "boomburst",
+            "volt-switch",
+            "overdrive",
+            "hidden-power-grass"
+          ],
+          "ability": "punk-rock",
+          "abilities": [
+            "punk-rock"
+          ],
+          "held": "life-orb"
+        },
+        {
+          "name": "slowbro-galar",
+          "level": "44",
+          "moves": [
+            "thunder-wave",
+            "sludge-bomb",
+            "flamethrower",
+            "teleport"
+          ],
+          "ability": "regenerator",
+          "abilities": [
+            "regenerator"
+          ],
+          "held": "black-sludge",
+          "sprite": "slowbro-galar"
+        },
+        {
+          "name": "kartana",
+          "level": "44",
+          "moves": [
+            "swords-dance",
+            "grassy-glide",
+            "cut",
+            "sacred-sword"
+          ],
+          "ability": "beast-boost",
+          "abilities": [
+            "beast-boost"
+          ],
+          "held": "life-orb"
+        }
+      ],
+      "effect": "grassy-terrain"
+    },
+    "5_hard": {
+      "name": "Sabrina",
+      "speciality": "psychic",
+      "img": "/leaders/frlg-sabrina",
+      "pokemon": [
+        {
+          "name": "tapu-fini",
+          "level": "59",
+          "moves": [
+            "misty-explosion",
+            "muddy-water",
+            "moonblast",
+            "flip-turn"
+          ],
+          "ability": "misty-surge",
+          "abilities": [
+            "misty-surge"
+          ],
+          "held": "focus-sash"
+        },
+        {
+          "name": "camerupt-mega",
+          "level": "59",
+          "moves": [
+            "flamethrower",
+            "earth-power",
+            "steam-eruption",
+            "slack-off"
+          ],
+          "ability": "solid-rock",
+          "abilities": [
+            "solid-rock",
+            "sheer-force"
+          ],
+          "held": "cameruptite",
+          "sprite": "camerupt-mega"
+        },
+        {
+          "name": "glastrier",
+          "level": "59",
+          "moves": [
+            "swords-dance",
+            "ice-hammer",
+            "close-combat",
+            "high-horsepower"
+          ],
+          "ability": "chilling-neigh",
+          "abilities": [
+            "chilling-neigh"
+          ],
+          "held": "iapapa-berry"
+        },
+        {
+          "name": "magearna",
+          "level": "59",
+          "moves": [
+            "moonblast",
+            "flash-cannon",
+            "focus-blast",
+            "thunderbolt"
+          ],
+          "ability": "soul-heart",
+          "abilities": [
+            "soul-heart"
+          ],
+          "held": "fightinium-z--held"
+        },
+        {
+          "name": "melmetal",
+          "level": "59",
+          "moves": [
+            "double-iron-bash",
+            "high-horsepower",
+            "thunder-punch",
+            "brick-break"
+          ],
+          "ability": "iron-fist",
+          "abilities": [
+            "iron-fist"
+          ],
+          "held": "assault-vest"
+        },
+        {
+          "name": "jellicent",
+          "level": "59",
+          "moves": [
+            "water-spout",
+            "shadow-ball",
+            "strength-sap",
+            "hydro-pump"
+          ],
+          "ability": "water-bubble",
+          "abilities": [
+            "water-bubble"
+          ],
+          "held": "water-gem"
+        }
+      ],
+      "effect": "trick-room",
+      "doubleBattle": true
+    },
+    "6_hard": {
+      "name": "Koga",
+      "speciality": "poison",
+      "img": "/leaders/frlg-koga",
+      "pokemon": [
+        {
+          "name": "tapu-lele",
+          "level": "68",
+          "moves": [
+            "psyshock",
+            "moonblast",
+            "focus-blast",
+            "hidden-power-fire"
+          ],
+          "ability": "psychic-surge",
+          "abilities": [
+            "psychic-surge"
+          ],
+          "held": "twisted-spoon"
+        },
+        {
+          "name": "hoopa-unbound",
+          "level": "68",
+          "moves": [
+            "dark-pulse",
+            "expanding-force",
+            "thunderbolt",
+            "focus-blast"
+          ],
+          "ability": "magician",
+          "abilities": [
+            "magician"
+          ],
+          "held": "darkinium-z--held",
+          "sprite": "hoopa-unbound"
+        },
+        {
+          "name": "krookodile",
+          "level": "68",
+          "moves": [
+            "wicked-blow",
+            "earthquake",
+            "close-combat",
+            "stone-edge"
+          ],
+          "ability": "moxie",
+          "abilities": [
+            "moxie"
+          ],
+          "held": "black-glasses"
+        },
+        {
+          "name": "kyurem-white",
+          "level": "68",
+          "moves": [
+            "freeze-dry",
+            "fusion-flare",
+            "earth-power",
+            "dynamax-cannon"
+          ],
+          "ability": "turboblaze",
+          "abilities": [
+            "turboblaze"
+          ],
+          "held": "dragon-fang"
+        },
+        {
+          "name": "nidoking",
+          "level": "68",
+          "moves": [
+            "earth-power",
+            "poison-jab",
+            "ice-beam",
+            "thunderbolt"
+          ],
+          "ability": "sheer-force",
+          "abilities": [
+            "sheer-force"
+          ],
+          "held": "life-orb"
+        },
+        {
+          "name": "toxtricity-mega",
+          "level": "68",
+          "moves": [
+            "boomburst",
+            "overdrive",
+            "drain-punch",
+            "hidden-power-grass"
+          ],
+          "ability": "punk-rock",
+          "abilities": [
+            "punk-rock"
+          ],
+          "held": "toxtricitite",
+          "sprite": "toxtricity-gmax"
+        }
+      ],
+      "effect": "tailwind"
+    },
+    "7_hard": {
+      "name": "Blaine",
+      "speciality": "fire",
+      "img": "/leaders/frlg-blaine",
+      "pokemon": [
+        {
+          "name": "heliolisk",
+          "level": "76",
+          "moves": [
+            "boomburst",
+            "weather-ball",
+            "thunderbolt",
+            "solar-beam"
+          ],
+          "ability": "solar-power",
+          "abilities": [
+            "solar-power"
+          ],
+          "held": "focus-sash"
+        },
+        {
+          "name": "groudon-primal",
+          "level": "76",
+          "moves": [
+            "precipice-blades",
+            "fire-blast",
+            "stone-edge",
+            "solar-beam"
+          ],
+          "ability": "desolate-land",
+          "abilities": [
+            "desolate-land"
+          ],
+          "held": "red-orb",
+          "sprite": "groudon-primal"
+        },
+        {
+          "name": "darmanitan-galar-standard",
+          "level": "76",
+          "moves": [
+            "mountain-gale",
+            "flare-blitz",
+            "u-turn",
+            "rock-slide"
+          ],
+          "ability": "zen-mode",
+          "abilities": [
+            "zen-mode"
+          ],
+          "held": "ice-gem",
+          "sprite": "darmanitan-galar"
+        },
+        {
+          "name": "venusaur",
+          "level": "76",
+          "moves": [
+            "growth",
+            "solar-beam",
+            "sludge-bomb",
+            "weather-ball"
+          ],
+          "ability": "chlorophyll",
+          "abilities": [
+            "chlorophyll"
+          ],
+          "held": "focus-sash"
+        },
+        {
+          "name": "ho-oh",
+          "level": "76",
+          "moves": [
+            "sacred-fire",
+            "brave-bird",
+            "earthquake",
+            "solar-beam"
+          ],
+          "ability": "phoenix-down",
+          "abilities": [
+            "phoenix-down"
+          ],
+          "held": "flyinium-z--held"
+        },
+        {
+          "name": "charizard-mega-x",
+          "level": "76",
+          "moves": [
+            "dragon-dance",
+            "flare-blitz",
+            "dragon-claw",
+            "earthquake"
+          ],
+          "ability": "solar-power",
+          "abilities": [
+            "solar-power",
+            "tough-claws"
+          ],
+          "held": "charizardite-x",
+          "sprite": "charizard-mega-x"
+        }
+      ],
+      "effect": "sunglight"
+    },
+    "8_hard": {
+      "name": "Clair",
+      "speciality": "dragon",
+      "img": "/leaders/gs-clair",
+      "pokemon": [
+        {
+          "name": "shuckle",
+          "level": "81",
+          "moves": [
+            "stealth-rock",
+            "sticky-web",
+            "knock-off",
+            "toxic"
+          ],
+          "ability": "solid-rock",
+          "abilities": [
+            "solid-rock"
+          ],
+          "held": "focus-sash"
+        },
+        {
+          "name": "giratina-origin",
+          "level": "81",
+          "moves": [
+            "dragon-hammer",
+            "spirit-shackle",
+            "shadow-sneak",
+            "thunder-wave"
+          ],
+          "ability": "levitate",
+          "abilities": [
+            "levitate"
+          ],
+          "held": "griseous-orb"
+        },
+        {
+          "name": "magearna",
+          "level": "81",
+          "moves": [
+            "shift-gear",
+            "moonblast",
+            "thunderbolt",
+            "aura-sphere"
+          ],
+          "ability": "soul-heart",
+          "abilities": [
+            "soul-heart"
+          ],
+          "held": "weakness-policy"
+        },
+        {
+          "name": "necrozma-dusk",
+          "level": "81",
+          "moves": [
+            "dragon-dance",
+            "photon-geyser",
+            "earthquake",
+            "dragon-hammer"
+          ],
+          "ability": "prism-armor",
+          "abilities": [
+            "prism-armor",
+            "neuroforce"
+          ],
+          "held": "ultranecrozium-z--held",
+          "sprite": "necrozma-dusk-mane"
+        },
+        {
+          "name": "eternatus",
+          "level": "81",
+          "moves": [
+            "dynamax-cannon",
+            "meteor-beam",
+            "flamethrower",
+            "recover"
+          ],
+          "ability": "pressure",
+          "abilities": [
+            "pressure"
+          ],
+          "held": "power-herb"
+        },
+        {
+          "name": "duraludon",
+          "level": "81",
+          "moves": [
+            "draco-meteor",
+            "steel-beam",
+            "thunderbolt",
+            "body-press"
+          ],
+          "ability": "stalwart",
+          "abilities": [
+            "stalwart",
+            "bad-company"
+          ],
+          "held": "duraludite"
+        }
+      ],
+      "info": "<p><b>Purist</b> Unable to bring fairy types into the Fight<br /><b>Sticky terrain</b><br /> You can't remove hazards from the field</p>"
+    },
+    "1r_hard": {
+      "name": "Brock",
+      "speciality": "rock",
+      "img": "/leaders/frlg-brock",
+      "pokemon": [
+        {
+          "name": "terrakion",
+          "level": "+0",
+          "moves": [
+            "stealth-rock",
+            "close-combat",
+            "stone-edge",
+            "x-scissor"
+          ],
+          "ability": "blademaster",
+          "abilities": [
+            "blademaster"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "landorus-incarnate",
+          "level": "+0",
+          "moves": [
+            "u-turn",
+            "earthquake",
+            "stone-edge",
+            "grass-knot"
+          ],
+          "ability": "sand-force",
+          "abilities": [
+            "sand-force"
+          ],
+          "held": "life-orb",
+          "sprite": "landorus"
+        },
+        {
+          "name": "zygarde-50",
+          "level": "+0",
+          "moves": [
+            "coil",
+            "thousand-arrows",
+            "rest",
+            "sleep-talk"
+          ],
+          "ability": "power-construct",
+          "abilities": [
+            "power-construct"
+          ],
+          "held": "leftovers"
+        },
+        {
+          "name": "sandslash",
+          "level": "+0",
+          "moves": [
+            "swords-dance",
+            "earthquake",
+            "stone-edge",
+            "knock-off"
+          ],
+          "ability": "sand-rush",
+          "abilities": [
+            "sand-rush"
+          ],
+          "held": "groundium-z--held"
+        },
+        {
+          "name": "empoleon",
+          "level": "+0",
+          "moves": [
+            "toxic",
+            "roost",
+            "ice-beam",
+            "scald"
+          ],
+          "ability": "competitive",
+          "abilities": [
+            "competitive"
+          ],
+          "held": "leftovers"
+        },
+        {
+          "name": "aerodactyl-mega",
+          "level": "+0",
+          "moves": [
+            "dragon-dance",
+            "stone-edge",
+            "earthquake",
+            "dual-wingbeat"
+          ],
+          "ability": "pressure",
+          "abilities": [
+            "pressure",
+            "tough-claws"
+          ],
+          "held": "aerodactylite",
+          "sprite": "aerodactyl-mega"
+        }
+      ],
+      "info": "<p/<b>Cushioning</b><br /> Super Effective moves deal ⅓ less damage to Brock's Pokémon</p>",
+      "effect": "sandstorm"
+    },
+    "2r_hard": {
+      "name": "Misty",
+      "speciality": "water",
+      "img": "/leaders/frlg-misty",
+      "pokemon": [
+        {
+          "name": "greninja",
+          "level": "+0",
+          "moves": [
+            "u-turn",
+            "surf",
+            "ice-beam",
+            "dark-pulse"
+          ],
+          "ability": "protean",
+          "abilities": [
+            "protean"
+          ],
+          "held": "focus-sash"
+        },
+        {
+          "name": "kingdra",
+          "level": "+0",
+          "moves": [
+            "hydro-pump",
+            "draco-barrage",
+            "hurricane",
+            "flip-turn"
+          ],
+          "ability": "swift-swim",
+          "abilities": [
+            "swift-swim"
+          ],
+          "held": "life-orb"
+        },
+        {
+          "name": "seismitoad",
+          "level": "+0",
+          "moves": [
+            "weather-ball",
+            "earth-power",
+            "focus-blast",
+            "power-whip"
+          ],
+          "ability": "swift-swim",
+          "abilities": [
+            "swift-swim"
+          ],
+          "held": "life-orb"
+        },
+        {
+          "name": "jirachi",
+          "level": "+0",
+          "moves": [
+            "calm-mind",
+            "thunder",
+            "psyshock",
+            "water-pulse"
+          ],
+          "ability": "serene-grace",
+          "abilities": [
+            "serene-grace"
+          ],
+          "held": "leftovers"
+        },
+        {
+          "name": "thundurus-therian",
+          "level": "+0",
+          "moves": [
+            "nasty-plot",
+            "thunder",
+            "weather-ball",
+            "focus-blast"
+          ],
+          "ability": "volt-absorb",
+          "abilities": [
+            "volt-absorb"
+          ],
+          "held": "fightinium-z--held",
+          "sprite": "thundurus-therian"
+        },
+        {
+          "name": "gyarados-mega",
+          "level": "+0",
+          "moves": [
+            "dragon-dance",
+            "waterfall",
+            "crunch",
+            "earthquake"
+          ],
+          "ability": "intimidate",
+          "abilities": [
+            "intimidate",
+            "mold-breaker"
+          ],
+          "held": "gyaradosite",
+          "sprite": "gyarados-mega"
+        }
+      ],
+      "effect": "rain"
+    },
+    "3r_hard": {
+      "name": "Lt. Surge",
+      "speciality": "electric",
+      "img": "/leaders/frlg-surge",
+      "pokemon": [
+        {
+          "name": "electivire",
+          "level": "+0",
+          "moves": [
+            "plasma-fists",
+            "close-combat",
+            "mach-punch",
+            "ice-punch"
+          ],
+          "ability": "iron-fist",
+          "abilities": [
+            "iron-fist"
+          ],
+          "held": "focus-sash"
+        },
+        {
+          "name": "raichu-alola",
+          "level": "+0",
+          "moves": [
+            "rising-voltage",
+            "surf",
+            "psyshock",
+            "focus-blast"
+          ],
+          "ability": "surge-surfer",
+          "abilities": [
+            "surge-surfer"
+          ],
+          "held": "colbur-berry",
+          "sprite": "raichu-alola"
+        },
+        {
+          "name": "magnezone",
+          "level": "+0",
+          "moves": [
+            "rising-voltage",
+            "flash-cannon",
+            "hidden-power-grass",
+            "body-press"
+          ],
+          "ability": "sturdy",
+          "abilities": [
+            "sturdy"
+          ],
+          "held": "assault-vest"
+        },
+        {
+          "name": "zekrom",
+          "level": "+0",
+          "moves": [
+            "hone-claws",
+            "bolt-strike",
+            "dragon-rush",
+            "roost"
+          ],
+          "ability": "teravolt",
+          "abilities": [
+            "teravolt"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "raikou",
+          "level": "+0",
+          "moves": [
+            "calm-mind",
+            "rising-voltage",
+            "aura-sphere",
+            "hidden-power-ice"
+          ],
+          "ability": "inner-focus",
+          "abilities": [
+            "inner-focus"
+          ],
+          "held": "fightinium-z--held"
+        },
+        {
+          "name": "manectric-mega",
+          "level": "+0",
+          "moves": [
+            "rising-voltage",
+            "hidden-power-grass",
+            "flamethrower",
+            "volt-switch"
+          ],
+          "ability": "intimidate",
+          "abilities": [
+            "intimidate"
+          ],
+          "held": "manectite",
+          "sprite": "manectric-mega"
+        }
+      ],
+      "effect": "electric-terrain,info"
+    },
+    "4r_hard": {
+      "name": "Erika",
+      "speciality": "grass",
+      "img": "/leaders/frlg-erika",
+      "pokemon": [
+        {
+          "name": "tsareena",
+          "level": "+0",
+          "moves": [
+            "grassy-glide",
+            "triple-axel",
+            "high-jump-kick",
+            "u-turn"
+          ],
+          "ability": "striker",
+          "abilities": [
+            "striker"
+          ],
+          "held": "life-orb"
+        },
+        {
+          "name": "serperior",
+          "level": "+0",
+          "moves": [
+            "leaf-storm",
+            "hidden-power-fire",
+            "dragon-pulse",
+            "knock-off"
+          ],
+          "ability": "contrary",
+          "abilities": [
+            "contrary"
+          ],
+          "held": "focus-sash"
+        },
+        {
+          "name": "hawlucha",
+          "level": "+0",
+          "moves": [
+            "swords-dance",
+            "close-combat",
+            "acrobatics",
+            "stone-edge"
+          ],
+          "ability": "unburden",
+          "abilities": [
+            "unburden"
+          ],
+          "held": "grassy-seed"
+        },
+        {
+          "name": "kartana",
+          "level": "+0",
+          "moves": [
+            "swords-dance",
+            "grassy-glide",
+            "cut",
+            "sacred-sword"
+          ],
+          "ability": "beast-boost",
+          "abilities": [
+            "beast-boost"
+          ],
+          "held": "life-orb"
+        },
+        {
+          "name": "magearna",
+          "level": "+0",
+          "moves": [
+            "calm-mind",
+            "draining-kiss",
+            "stored-power",
+            "aura-sphere"
+          ],
+          "ability": "soul-heart",
+          "abilities": [
+            "soul-heart"
+          ],
+          "held": "grassy-seed"
+        },
+        {
+          "name": "ampharos-mega",
+          "level": "+0",
+          "moves": [
+            "volt-switch",
+            "draco-barrage",
+            "signal-beam",
+            "focus-blast"
+          ],
+          "ability": "static",
+          "abilities": [
+            "static",
+            "thick-fat"
+          ],
+          "held": "ampharosite",
+          "sprite": "ampharos-mega"
+        }
+      ],
+      "effect": "grassy-terrain"
+    },
+    "mb1_hard": {
+      "name": "Falkner",
+      "speciality": "flying",
+      "img": "/leaders/gs-falkner",
+      "pokemon": [
+        {
+          "name": "trumbeak",
+          "level": "-2",
+          "moves": [
+            "flame-charge",
+            "pluck",
+            "bullet-seed",
+            "sleep-talk"
+          ],
+          "ability": "skill-link",
+          "abilities": [
+            "skill-link"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "emolga",
+          "level": "-2",
+          "moves": [
+            "shock-wave",
+            "air-cutter",
+            "hidden-power-ground",
+            "sleep-talk"
+          ],
+          "ability": "lightning-rod",
+          "abilities": [
+            "lightning-rod"
+          ],
+          "held": "oran-berry"
+        },
+        {
+          "name": "yanma",
+          "level": "-3",
+          "moves": [
+            "mega-drain",
+            "ancient-power",
+            "hidden-power-bug",
+            "air-cutter"
+          ],
+          "ability": "speed-boost",
+          "abilities": [
+            "speed-boost"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "rufflet",
+          "level": "-2",
+          "moves": [
+            "aerial-ace",
+            "slash",
+            "rock-smash",
+            "roost"
+          ],
+          "ability": "hustle",
+          "abilities": [
+            "hustle"
+          ],
+          "held": "sharp-beak"
+        },
+        {
+          "name": "farfetchd-galar",
+          "level": "-2",
+          "moves": [
+            "rock-smash",
+            "slam",
+            "brutal-swing",
+            "roost"
+          ],
+          "ability": "scrappy",
+          "abilities": [
+            "scrappy"
+          ],
+          "held": "large-leek",
+          "sprite": "farfetchd-galar"
+        }
+      ]
+    },
+    "mb2_hard": {
+      "name": "Bugsy",
+      "speciality": "bug",
+      "img": "/leaders/gs-bugsy",
+      "pokemon": [
+        {
+          "name": "kleavor",
+          "level": "+0",
+          "moves": [
+            "stealth-rock",
+            "rock-blast",
+            "u-turn",
+            "bulldoze"
+          ],
+          "ability": "technician",
+          "abilities": [
+            "technician"
+          ],
+          "held": "focus-sash"
+        },
+        {
+          "name": "scizor",
+          "level": "+0",
+          "moves": [
+            "bullet-punch",
+            "dual-wingbeat",
+            "u-turn",
+            "rock-smash"
+          ],
+          "ability": "technician",
+          "abilities": [
+            "technician"
+          ],
+          "held": "scizorite"
+        },
+        {
+          "name": "scyther",
+          "level": "+0",
+          "moves": [
+            "swords-dance",
+            "dual-wingbeat",
+            "bug-bite",
+            "rock-smash"
+          ],
+          "ability": "technician",
+          "abilities": [
+            "technician"
+          ],
+          "held": "eviolite"
+        },
+        {
+          "name": "heracross",
+          "level": "+0",
+          "moves": [
+            "megahorn",
+            "close-combat",
+            "stone-edge",
+            "bullet-seed"
+          ],
+          "ability": "moxie",
+          "abilities": [
+            "moxie"
+          ],
+          "held": "coba-berry"
+        },
+        {
+          "name": "araquanid",
+          "level": "+0",
+          "moves": [
+            "x-scissor",
+            "liquidation",
+            "protect",
+            "toxic"
+          ],
+          "ability": "water-bubble",
+          "abilities": [
+            "water-bubble"
+          ],
+          "held": "leftovers"
+        },
+        {
+          "name": "vikavolt",
+          "level": "+0",
+          "moves": [
+            "thunder",
+            "bug-buzz",
+            "volt-switch",
+            "energy-ball"
+          ],
+          "ability": "levitate",
+          "abilities": [
+            "levitate"
+          ],
+          "held": "magnet"
+        }
+      ],
+      "effect": "rain"
+    },
+    "mb3_hard": {
+      "name": "Whitney",
+      "speciality": "normal",
+      "img": "/leaders/gs-whitney",
+      "pokemon": [
+        {
+          "name": "pyroar",
+          "level": "+0",
+          "moves": [
+            "flamethrower",
+            "hyper-voice",
+            "hidden-power-grass",
+            "sleep-talk"
+          ],
+          "ability": "adaptability",
+          "abilities": [
+            "adaptability"
+          ],
+          "held": "focus-sash"
+        },
+        {
+          "name": "wyrdeer",
+          "level": "+0",
+          "moves": [
+            "psychic",
+            "hyper-voice",
+            "mystical-fire",
+            "calm-mind"
+          ],
+          "ability": "fur-coat",
+          "abilities": [
+            "fur-coat"
+          ],
+          "held": "normal-gem"
+        },
+        {
+          "name": "luvdisc",
+          "level": "+0",
+          "moves": [
+            "lovely-kiss",
+            "surf",
+            "moonblast",
+            "ice-beam"
+          ],
+          "ability": "soul-heart",
+          "abilities": [
+            "soul-heart"
+          ],
+          "held": "mystic-water"
+        },
+        {
+          "name": "ursaring",
+          "level": "+0",
+          "moves": [
+            "body-slam",
+            "earthquake",
+            "slack-off",
+            "sucker-punch"
+          ],
+          "ability": "guts",
+          "abilities": [
+            "guts"
+          ],
+          "held": "eviolite"
+        },
+        {
+          "name": "togekiss",
+          "level": "+0",
+          "moves": [
+            "roost",
+            "air-slash",
+            "thunder-wave",
+            "mystical-fire"
+          ],
+          "ability": "serene-grace",
+          "abilities": [
+            "serene-grace"
+          ],
+          "held": "leftovers"
+        },
+        {
+          "name": "altaria",
+          "level": "+0",
+          "moves": [
+            "calm-mind",
+            "hyper-voice",
+            "flamethrower",
+            "roost"
+          ],
+          "ability": "natural-cure",
+          "abilities": [
+            "natural-cure",
+            "pixilate"
+          ],
+          "held": "altarianite"
+        }
+      ]
+    },
+    "mb4_hard": {
+      "name": "Morty",
+      "speciality": "ghost",
+      "img": "/leaders/gs-morty",
+      "pokemon": [
+        {
+          "name": "krookodile",
+          "level": "+0",
+          "moves": [
+            "stealth-rock",
+            "wicked-blow",
+            "earthquake",
+            "stone-edge"
+          ],
+          "ability": "intimidate",
+          "abilities": [
+            "intimidate"
+          ],
+          "held": "focus-sash"
+        },
+        {
+          "name": "dusknoir",
+          "level": "+0",
+          "moves": [
+            "shadow-punch",
+            "shadow-sneak",
+            "dynamic-punch",
+            "will-o-wisp"
+          ],
+          "ability": "hustle",
+          "abilities": [
+            "hustle"
+          ],
+          "held": "reaper-cloth"
+        },
+        {
+          "name": "mismagius",
+          "level": "+0",
+          "moves": [
+            "nasty-plot",
+            "shadow-ball",
+            "moonblast",
+            "thunderbolt"
+          ],
+          "ability": "levitate",
+          "abilities": [
+            "levitate"
+          ],
+          "held": "spell-tag"
+        },
+        {
+          "name": "delphox",
+          "level": "+0",
+          "moves": [
+            "mind-blown",
+            "psychic",
+            "grass-knot",
+            "dazzling-gleam"
+          ],
+          "ability": "magic-guard",
+          "abilities": [
+            "magic-guard"
+          ],
+          "held": "choice-scarf"
+        },
+        {
+          "name": "weavile",
+          "level": "+0",
+          "moves": [
+            "swords-dance",
+            "triple-axel",
+            "knock-off",
+            "low-kick"
+          ],
+          "ability": "infiltrator",
+          "abilities": [
+            "infiltrator"
+          ],
+          "held": "life-orb"
+        },
+        {
+          "name": "gengar",
+          "level": "+0",
+          "moves": [
+            "sludge-wave",
+            "shadow-ball",
+            "focus-blast",
+            "nasty-plot"
+          ],
+          "ability": "levitate",
+          "abilities": [
+            "levitate",
+            "shadow-tag"
+          ],
+          "held": "gengarite"
+        }
+      ]
+    },
+    "mb5_hard": {
+      "name": "Chuck",
+      "speciality": "fighting",
+      "img": "/leaders/gs-chuck",
+      "pokemon": [
+        {
+          "name": "cobalion",
+          "level": "+0",
+          "moves": [
+            "stealth-rock",
+            "sacred-sword",
+            "cut",
+            "volt-switch"
+          ],
+          "ability": "blademaster",
+          "abilities": [
+            "blademaster"
+          ],
+          "held": "rocky-helmet"
+        },
+        {
+          "name": "sneasler",
+          "level": "+0",
+          "moves": [
+            "close-combat",
+            "poison-jab",
+            "knock-off",
+            "earthquake"
+          ],
+          "ability": "poison-touch",
+          "abilities": [
+            "poison-touch"
+          ],
+          "held": "liechi-berry"
+        },
+        {
+          "name": "kommo-o",
+          "level": "+0",
+          "moves": [
+            "clanging-scales",
+            "close-combat",
+            "poison-jab",
+            "flamethrower"
+          ],
+          "ability": "overcoat",
+          "abilities": [
+            "overcoat"
+          ],
+          "held": "kommonium-z--held"
+        },
+        {
+          "name": "blaziken",
+          "level": "+0",
+          "moves": [
+            "blaze-kick",
+            "knock-off",
+            "thunder-punch",
+            "close-combat"
+          ],
+          "ability": "speed-boost",
+          "abilities": [
+            "speed-boost"
+          ],
+          "held": "liechi-berry"
+        },
+        {
+          "name": "zamazenta-crowned",
+          "level": "+0",
+          "moves": [
+            "bulk-up",
+            "behemoth-bash",
+            "body-press",
+            "wild-charge"
+          ],
+          "ability": "dauntless-shield",
+          "abilities": [
+            "dauntless-shield"
+          ],
+          "held": "rusted-shield"
+        },
+        {
+          "name": "gallade",
+          "level": "+0",
+          "moves": [
+            "bulk-up",
+            "drain-punch",
+            "psycho-cut",
+            "night-slash"
+          ],
+          "ability": "justified",
+          "abilities": [
+            "justified",
+            "inner-focus"
+          ],
+          "held": "galladite"
+        }
+      ],
+      "info": "<p><b>Fighting Spirit</b><br /> Chuck's Pokémon will Endure a hit if above 75% of max HP</p>"
+    },
+    "mb6a_hard": {
+      "name": "Pryce (Team A)",
+      "speciality": "ice",
+      "img": "/leaders/gs-pryce",
+      "pokemon": [
+        {
+          "name": "cloyster",
+          "level": "+0",
+          "moves": [
+            "shell-smash",
+            "icicle-spear",
+            "hydro-pump",
+            "rock-blast"
+          ],
+          "ability": "skill-link",
+          "abilities": [
+            "skill-link"
+          ],
+          "held": "focus-sash"
+        },
+        {
+          "name": "suicune",
+          "level": "+0",
+          "moves": [
+            "scald",
+            "calm-mind",
+            "rest",
+            "sleep-talk"
+          ],
+          "ability": "pressure",
+          "abilities": [
+            "pressure"
+          ],
+          "held": "leftovers"
+        },
+        {
+          "name": "clefable",
+          "level": "+0",
+          "moves": [
+            "thunder-wave",
+            "teleport",
+            "light-of-ruin",
+            "flamethrower"
+          ],
+          "ability": "magic-guard",
+          "abilities": [
+            "magic-guard"
+          ],
+          "held": "life-orb"
+        },
+        {
+          "name": "kyurem-black",
+          "level": "+0",
+          "moves": [
+            "dragon-dance",
+            "icicle-crash",
+            "fusion-bolt",
+            "roost"
+          ],
+          "ability": "teravolt",
+          "abilities": [
+            "teravolt"
+          ],
+          "held": "icium-z--held"
+        },
+        {
+          "name": "arctozolt",
+          "level": "+0",
+          "moves": [
+            "bolt-beak",
+            "icicle-crash",
+            "freeze-dry",
+            "low-kick"
+          ],
+          "ability": "slush-rush",
+          "abilities": [
+            "slush-rush"
+          ],
+          "held": "life-orb"
+        },
+        {
+          "name": "glalie",
+          "level": "+0",
+          "moves": [
+            "fake-out",
+            "quick-attack",
+            "earthquake",
+            "double-edge"
+          ],
+          "ability": "ice-body",
+          "abilities": [
+            "ice-body",
+            "refrigerate"
+          ],
+          "held": "glalitite"
+        }
+      ],
+      "info": "<p><b>Hard ice</b><br />All Pryce's Pokémon have a +50% Defense boost</p>",
+      "effect": "hail"
+    },
+    "mb6b_hard": {
+      "name": "Pryce (Team B)",
+      "speciality": "ice",
+      "img": "/leaders/gs-pryce",
+      "pokemon": [
+        {
+          "name": "sandslash-alola",
+          "level": "+0",
+          "moves": [
+            "stealth-rock",
+            "earthquake",
+            "icicle-spear",
+            "iron-head"
+          ],
+          "ability": "slush-rush",
+          "abilities": [
+            "slush-rush"
+          ],
+          "held": "focus-sash",
+          "sprite": "sandslash-alola"
+        },
+        {
+          "name": "reuniclus",
+          "level": "+0",
+          "moves": [
+            "calm-mind",
+            "recover",
+            "psychic",
+            "focus-blast"
+          ],
+          "ability": "regenerator",
+          "abilities": [
+            "regenerator"
+          ],
+          "held": "leftovers"
+        },
+        {
+          "name": "clefable",
+          "level": "+0",
+          "moves": [
+            "thunder-wave",
+            "teleport",
+            "light-of-ruin",
+            "flamethrower"
+          ],
+          "ability": "magic-guard",
+          "abilities": [
+            "magic-guard"
+          ],
+          "held": "life-orb"
+        },
+        {
+          "name": "kyurem-black",
+          "level": "+0",
+          "moves": [
+            "dragon-dance",
+            "icicle-crash",
+            "fusion-bolt",
+            "roost"
+          ],
+          "ability": "teravolt",
+          "abilities": [
+            "teravolt"
+          ],
+          "held": "icium-z--held"
+        },
+        {
+          "name": "arctovish",
+          "level": "+0",
+          "moves": [
+            "fishious-rend",
+            "icicle-crash",
+            "stone-edge",
+            "psychic-fangs"
+          ],
+          "ability": "slush-rush",
+          "abilities": [
+            "slush-rush"
+          ],
+          "held": "life-orb"
+        },
+        {
+          "name": "glalie",
+          "level": "+0",
+          "moves": [
+            "fake-out",
+            "quick-attack",
+            "earthquake",
+            "double-edge"
+          ],
+          "ability": "ice-body",
+          "abilities": [
+            "ice-body",
+            "refrigerate"
+          ],
+          "held": "glalitite"
+        }
+      ],
+      "info": "<p><b>Hard ice</b><br />All Pryce's Pokémon have a +50% Defense boost</p>",
+      "effect": "hail"
+    },
+    "mb6c_hard": {
+      "name": "Pryce (Team C)",
+      "speciality": "ice",
+      "img": "/leaders/gs-pryce",
+      "pokemon": [
+        {
+          "name": "cloyster",
+          "level": "+0",
+          "moves": [
+            "shell-smash",
+            "icicle-spear",
+            "hydro-pump",
+            "rock-blast"
+          ],
+          "ability": "skill-link",
+          "abilities": [
+            "skill-link"
+          ],
+          "held": "focus-sash"
+        },
+        {
+          "name": "suicune",
+          "level": "+0",
+          "moves": [
+            "scald",
+            "calm-mind",
+            "rest",
+            "sleep-talk"
+          ],
+          "ability": "pressure",
+          "abilities": [
+            "pressure"
+          ],
+          "held": "leftovers"
+        },
+        {
+          "name": "clefable",
+          "level": "+0",
+          "moves": [
+            "soft-boiled",
+            "teleport",
+            "light-of-ruin",
+            "flamethrower"
+          ],
+          "ability": "magic-guard",
+          "abilities": [
+            "magic-guard"
+          ],
+          "held": "life-orb"
+        },
+        {
+          "name": "kyurem-black",
+          "level": "+0",
+          "moves": [
+            "dragon-dance",
+            "icicle-crash",
+            "fusion-bolt",
+            "roost"
+          ],
+          "ability": "teravolt",
+          "abilities": [
+            "teravolt"
+          ],
+          "held": "icium-z--held"
+        },
+        {
+          "name": "arctozolt",
+          "level": "+0",
+          "moves": [
+            "bolt-beak",
+            "icicle-crash",
+            "freeze-dry",
+            "low-kick"
+          ],
+          "ability": "slush-rush",
+          "abilities": [
+            "slush-rush"
+          ],
+          "held": "life-orb"
+        },
+        {
+          "name": "glalie",
+          "level": "+0",
+          "moves": [
+            "fake-out",
+            "quick-attack",
+            "earthquake",
+            "double-edge"
+          ],
+          "ability": "ice-body",
+          "abilities": [
+            "ice-body",
+            "refrigerate"
+          ],
+          "held": "glalitite"
+        }
+      ],
+      "info": "<p><b>Hard ice</b><br />All Pryce's Pokémon have a +50% Defense boost</p>",
+      "effect": "hail"
+    },
+    "mb7_hard": {
+      "name": "Jasmine",
+      "speciality": "steel",
+      "img": "/leaders/gs-jasmine",
+      "pokemon": [
+        {
+          "name": "gliscor",
+          "level": "+0",
+          "moves": [
+            "stealth-rock",
+            "high-horsepower",
+            "protect",
+            "toxic"
+          ],
+          "ability": "poison-heal",
+          "abilities": [
+            "poison-heal"
+          ],
+          "held": "toxic-orb"
+        },
+        {
+          "name": "tapu-bulu",
+          "level": "+0",
+          "moves": [
+            "grassy-glide",
+            "play-rough",
+            "close-combat",
+            "swords-dance"
+          ],
+          "ability": "grassy-surge",
+          "abilities": [
+            "grassy-surge"
+          ],
+          "held": "life-orb"
+        },
+        {
+          "name": "necrozma-dusk",
+          "level": "+0",
+          "moves": [
+            "dragon-dance",
+            "sunsteel-strike",
+            "stone-edge",
+            "high-horsepower"
+          ],
+          "ability": "prism-armor",
+          "abilities": [
+            "prism-armor"
+          ],
+          "held": "weakness-policy",
+          "sprite": "necrozma-dusk-mane"
+        },
+        {
+          "name": "genesect",
+          "level": "+0",
+          "moves": [
+            "extreme-speed",
+            "u-turn",
+            "flamethrower",
+            "thunderbolt"
+          ],
+          "ability": "download",
+          "abilities": [
+            "download"
+          ],
+          "held": "life-orb"
+        },
+        {
+          "name": "magnezone",
+          "level": "+0",
+          "moves": [
+            "thunderbolt",
+            "flash-cannon",
+            "hidden-power-grass",
+            "body-press"
+          ],
+          "ability": "sturdy",
+          "abilities": [
+            "sturdy"
+          ],
+          "held": "assault-vest"
+        },
+        {
+          "name": "aggron",
+          "level": "+0",
+          "moves": [
+            "curse",
+            "heavy-slam",
+            "rest",
+            "sleep-talk"
+          ],
+          "ability": "sturdy",
+          "abilities": [
+            "sturdy",
+            "filter"
+          ],
+          "held": "aggronite"
+        }
+      ],
+      "info": "<p><b>Tempered steel</b><br />Jasmine's Pokémon are immune to Fire type attacks</p>"
+    },
+    "e1a_hard": {
+      "name": "Lorelei (Rain Team)",
+      "speciality": "ice",
+      "img": "/leaders/frlg-lorelei",
+      "pokemon": [
+        {
+          "name": "ludicolo",
+          "level": "+0",
+          "moves": [
+            "fake-out",
+            "hydro-pump",
+            "energy-ball",
+            "ice-beam"
+          ],
+          "ability": "swift-swim",
+          "abilities": [
+            "swift-swim"
+          ],
+          "held": "focus-sash"
+        },
+        {
+          "name": "kingdra",
+          "level": "+0",
+          "moves": [
+            "hydro-pump",
+            "draco-barrage",
+            "hurricane",
+            "waterfall"
+          ],
+          "ability": "swift-swim",
+          "abilities": [
+            "swift-swim"
+          ],
+          "held": "mystic-water"
+        },
+        {
+          "name": "genesect",
+          "level": "+0",
+          "moves": [
+            "u-turn",
+            "iron-head",
+            "thunder",
+            "ice-beam"
+          ],
+          "ability": "download",
+          "abilities": [
+            "download"
+          ],
+          "held": "assault-vest"
+        },
+        {
+          "name": "dragonite",
+          "level": "+0",
+          "moves": [
+            "hurricane",
+            "thunder",
+            "aqua-tail",
+            "extreme-speed"
+          ],
+          "ability": "multiscale",
+          "abilities": [
+            "multiscale"
+          ],
+          "held": "flyinium-z--held"
+        },
+        {
+          "name": "palkia",
+          "level": "+0",
+          "moves": [
+            "draco-barrage",
+            "hydro-pump",
+            "thunder",
+            "aura-sphere"
+          ],
+          "ability": "pressure",
+          "abilities": [
+            "pressure"
+          ],
+          "held": "lustrous-orb"
+        },
+        {
+          "name": "swampert-mega",
+          "level": "+0",
+          "moves": [
+            "waterfall",
+            "earthquake",
+            "ice-punch",
+            "brick-break"
+          ],
+          "ability": "damp",
+          "abilities": [
+            "damp",
+            "swift-swim"
+          ],
+          "held": "swampertite",
+          "sprite": "swampert-mega"
+        }
+      ],
+      "info": "<p/<b>Heavy rain</b><br />Lorelei's Pokémon are immune to Fire type attacks</p>",
+      "effect": "rain",
+      "doubleBattle": true
+    },
+    "e1b_hard": {
+      "name": "Lorelei (Hail Team)",
+      "speciality": "ice",
+      "img": "/leaders/frlg-lorelei",
+      "pokemon": [
+        {
+          "name": "glaceon",
+          "level": "+0",
+          "moves": [
+            "blizzard",
+            "earth-power",
+            "freeze-dry",
+            "hidden-power-fire"
+          ],
+          "ability": "slush-rush",
+          "abilities": [
+            "slush-rush"
+          ],
+          "held": "choice-specs"
+        },
+        {
+          "name": "landorus-therian",
+          "level": "+0",
+          "moves": [
+            "high-horsepower",
+            "stone-edge",
+            "u-turn",
+            "knock-off"
+          ],
+          "ability": "intimidate",
+          "abilities": [
+            "intimidate"
+          ],
+          "held": "assault-vest",
+          "sprite": "landorus-therian"
+        },
+        {
+          "name": "beartic",
+          "level": "+0",
+          "moves": [
+            "ice-hammer",
+            "liquidation",
+            "close-combat",
+            "brick-break"
+          ],
+          "ability": "slush-rush",
+          "abilities": [
+            "slush-rush"
+          ],
+          "held": "focus-sash"
+        },
+        {
+          "name": "tapu-fini",
+          "level": "+0",
+          "moves": [
+            "calm-mind",
+            "muddy-water",
+            "moonblast",
+            "blizzard"
+          ],
+          "ability": "misty-surge",
+          "abilities": [
+            "misty-surge"
+          ],
+          "held": "leftovers"
+        },
+        {
+          "name": "kyurem-white",
+          "level": "+0",
+          "moves": [
+            "blizzard",
+            "fusion-flare",
+            "draco-barrage",
+            "freeze-dry"
+          ],
+          "ability": "turboblaze",
+          "abilities": [
+            "turboblaze"
+          ],
+          "held": "dragonium-z--held",
+          "sprite": "kyurem-white"
+        },
+        {
+          "name": "abomasnow-mega",
+          "level": "+0",
+          "moves": [
+            "giga-drain",
+            "blizzard",
+            "earthquake",
+            "hidden-power-fire"
+          ],
+          "ability": "snow-warning",
+          "abilities": [
+            "snow-warning",
+            "slush-rush"
+          ],
+          "held": "abomasite",
+          "sprite": "abomasnow-mega"
+        }
+      ],
+      "effect": "hail",
+      "doubleBattle": true
+    },
+    "e2a_hard": {
+      "name": "Bruno (Team A)",
+      "speciality": "fighting",
+      "img": "/leaders/frlg-bruno",
+      "pokemon": [
+        {
+          "name": "infernape",
+          "level": "+0",
+          "moves": [
+            "stealth-rock",
+            "pyro-ball",
+            "close-combat",
+            "thunder-punch"
+          ],
+          "ability": "blaze",
+          "abilities": [
+            "blaze"
+          ],
+          "held": "focus-sash"
+        },
+        {
+          "name": "zeraora",
+          "level": "+0",
+          "moves": [
+            "bulk-up",
+            "drain-punch",
+            "plasma-fists",
+            "knock-off"
+          ],
+          "ability": "volt-absorb",
+          "abilities": [
+            "volt-absorb"
+          ],
+          "held": "misty-seed"
+        },
+        {
+          "name": "zamazenta-crowned",
+          "level": "+0",
+          "moves": [
+            "bulk-up",
+            "body-press",
+            "behemoth-bash",
+            "wild-charge"
+          ],
+          "ability": "dauntless-shield",
+          "abilities": [
+            "dauntless-shield"
+          ],
+          "held": "rusted-shield"
+        },
+        {
+          "name": "necrozma-dusk",
+          "level": "+0",
+          "moves": [
+            "dragon-dance",
+            "sunsteel-strike",
+            "earthquake",
+            "stone-edge"
+          ],
+          "ability": "prism-armor",
+          "abilities": [
+            "prism-armor"
+          ],
+          "held": "weakness-policy",
+          "sprite": "necrozma-dusk-mane"
+        },
+        {
+          "name": "zacian-crowned",
+          "level": "+0",
+          "moves": [
+            "swords-dance",
+            "behemoth-bash",
+            "close-combat",
+            "wild-charge"
+          ],
+          "ability": "intrepid-sword",
+          "abilities": [
+            "intrepid-sword"
+          ],
+          "held": "rusted-sword"
+        },
+        {
+          "name": "lucario-mega",
+          "level": "+0",
+          "moves": [
+            "swords-dance",
+            "close-combat",
+            "bullet-punch",
+            "meteor-mash"
+          ],
+          "ability": "inner-focus",
+          "abilities": [
+            "inner-focus",
+            "adaptability"
+          ],
+          "held": "lucarionite",
+          "sprite": "lucario-mega"
+        }
+      ],
+      "effect": "misty-terrain"
+    },
+    "e2b_hard": {
+      "name": "Bruno (Team B)",
+      "speciality": "fighting",
+      "img": "/leaders/frlg-bruno",
+      "pokemon": [
+        {
+          "name": "urshifu-single-strike",
+          "level": "+0",
+          "moves": [
+            "wicked-blow",
+            "close-combat",
+            "u-turn",
+            "poison-jab"
+          ],
+          "ability": "unseen-fist",
+          "abilities": [
+            "unseen-fist"
+          ],
+          "held": "focus-sash"
+        },
+        {
+          "name": "hawlucha",
+          "level": "+0",
+          "moves": [
+            "swords-dance",
+            "acrobatics",
+            "close-combat",
+            "roost"
+          ],
+          "ability": "unburden",
+          "abilities": [
+            "unburden"
+          ],
+          "held": "misty-seed"
+        },
+        {
+          "name": "zamazenta-crowned",
+          "level": "+0",
+          "moves": [
+            "bulk-up",
+            "body-press",
+            "behemoth-bash",
+            "wild-charge"
+          ],
+          "ability": "dauntless-shield",
+          "abilities": [
+            "dauntless-shield"
+          ],
+          "held": "rusted-shield"
+        },
+        {
+          "name": "necrozma-dusk",
+          "level": "+0",
+          "moves": [
+            "dragon-dance",
+            "sunsteel-strike",
+            "earthquake",
+            "stone-edge"
+          ],
+          "ability": "prism-armor",
+          "abilities": [
+            "prism-armor"
+          ],
+          "held": "weakness-policy",
+          "sprite": "necrozma-dusk-mane"
+        },
+        {
+          "name": "zacian-crowned",
+          "level": "+0",
+          "moves": [
+            "swords-dance",
+            "behemoth-bash",
+            "close-combat",
+            "wild-charge"
+          ],
+          "ability": "intrepid-sword",
+          "abilities": [
+            "intrepid-sword"
+          ],
+          "held": "rusted-sword"
+        },
+        {
+          "name": "medicham-mega",
+          "level": "+0",
+          "moves": [
+            "fake-out",
+            "close-combat",
+            "zen-headbutt",
+            "thunder-punch"
+          ],
+          "ability": "pure-power",
+          "abilities": [
+            "pure-power"
+          ],
+          "held": "medichamite",
+          "sprite": "medichan-mega"
+        }
+      ]
+    },
+    "e3_hard": {
+      "name": "Agatha",
+      "speciality": "ghost",
+      "img": "/leaders/frlg-agatha",
+      "pokemon": [
+        {
+          "name": "krookodile",
+          "level": "+0",
+          "moves": [
+            "stealth-rock",
+            "earthquake",
+            "knock-off",
+            "stone-edge"
+          ],
+          "ability": "intimidate",
+          "abilities": [
+            "intimidate"
+          ],
+          "held": "focus-sash"
+        },
+        {
+          "name": "mewtwo-mega-x",
+          "level": "+0",
+          "moves": [
+            "drain-punch",
+            "expanding-force",
+            "stone-edge",
+            "bulk-up"
+          ],
+          "ability": "pressure",
+          "abilities": [
+            "pressure",
+            "steadfast"
+          ],
+          "held": "mewtwonite-x",
+          "sprite": "mewtwo-mega-x"
+        },
+        {
+          "name": "yveltal",
+          "level": "+0",
+          "moves": [
+            "oblivion-wing",
+            "dark-hole",
+            "heat-wave",
+            "u-turn"
+          ],
+          "ability": "dark-aura",
+          "abilities": [
+            "dark-aura"
+          ],
+          "held": "assault-vest"
+        },
+        {
+          "name": "zarude",
+          "level": "+0",
+          "moves": [
+            "bulk-up",
+            "drain-punch",
+            "knock-off",
+            "power-whip"
+          ],
+          "ability": "leaf-guard",
+          "abilities": [
+            "leaf-guard"
+          ],
+          "held": "psychic-seed"
+        },
+        {
+          "name": "victini",
+          "level": "+0",
+          "moves": [
+            "celebrate",
+            "expanding-force",
+            "pyro-ball",
+            "focus-blast"
+          ],
+          "ability": "victory-star",
+          "abilities": [
+            "victory-star"
+          ],
+          "held": "normalium-z--held"
+        },
+        {
+          "name": "calyrex-shadow",
+          "level": "+0",
+          "moves": [
+            "draining-kiss",
+            "expanding-force",
+            "astral-barrage",
+            "nasty-plot"
+          ],
+          "ability": "as-one",
+          "abilities": [
+            "as-one"
+          ],
+          "held": "colbur-berry",
+          "sprite": "calyrex-shadow"
+        }
+      ],
+      "effect": "psychic-terrain"
+    },
+    "e4a_hard": {
+      "name": "Lance",
+      "speciality": "dragon",
+      "img": "/leaders/frlg-lance",
+      "pokemon": [
+        {
+          "name": "deoxys-speed",
+          "level": "+0",
+          "moves": [
+            "stealth-rock",
+            "spikes",
+            "psychic",
+            "knock-off"
+          ],
+          "ability": "pressure",
+          "abilities": [
+            "pressure"
+          ],
+          "held": "focus-sash",
+          "sprite": "deoxys-speed"
+        },
+        {
+          "name": "melmetal",
+          "level": "+0",
+          "moves": [
+            "double-iron-bash",
+            "ice-punch",
+            "earthquake",
+            "thunder-punch"
+          ],
+          "ability": "iron-fist",
+          "abilities": [
+            "iron-fist"
+          ],
+          "held": "assault-vest"
+        },
+        {
+          "name": "arceus-fairy",
+          "level": "+0",
+          "moves": [
+            "calm-mind",
+            "judgment",
+            "flamethrower",
+            "recover"
+          ],
+          "ability": "multitype",
+          "abilities": [
+            "multitype"
+          ],
+          "held": "pixie-plate",
+          "sprite": "arceus-fairy"
+        },
+        {
+          "name": "dragonite",
+          "level": "+0",
+          "moves": [
+            "dragon-dance",
+            "dual-wingbeat",
+            "earthquake",
+            "extreme-speed"
+          ],
+          "ability": "multiscale",
+          "abilities": [
+            "multiscale"
+          ],
+          "held": "flyinium-z--held"
+        },
+        {
+          "name": "dialga-origin",
+          "level": "+0",
+          "moves": [
+            "roar-of-time",
+            "flamethrower",
+            "rest",
+            "sleep-talk"
+          ],
+          "ability": "primal-armor",
+          "abilities": [
+            "primal-armor"
+          ],
+          "held": "adamant-orb",
+          "sprite": "dialga-origin"
+        },
+        {
+          "name": "rayquaza-mega",
+          "level": "+0",
+          "moves": [
+            "extreme-speed",
+            "flamethrower",
+            "earthquake",
+            "dragon-ascent"
+          ],
+          "ability": "delta-stream",
+          "abilities": [
+            "delta-stream"
+          ],
+          "held": "sharp-beak",
+          "sprite": "rayquaza-mega"
+        }
+      ],
+      "info": "<p><b>Sticky terrain</b><br /> You can't remove hazards from the field</p>"
+    },
+    "e4b_hard": {
+      "name": "Lance",
+      "speciality": "dragon",
+      "img": "/leaders/frlg-lance",
+      "pokemon": [
+        {
+          "name": "deoxys-speed",
+          "level": "+0",
+          "moves": [
+            "stealth-rock",
+            "spikes",
+            "psychic",
+            "knock-off"
+          ],
+          "ability": "pressure",
+          "abilities": [
+            "pressure"
+          ],
+          "held": "focus-sash",
+          "sprite": "deoxys-speed"
+        },
+        {
+          "name": "melmetal",
+          "level": "+0",
+          "moves": [
+            "double-iron-bash",
+            "ice-punch",
+            "earthquake",
+            "thunder-punch"
+          ],
+          "ability": "iron-fist",
+          "abilities": [
+            "iron-fist"
+          ],
+          "held": "assault-vest"
+        },
+        {
+          "name": "arceus-fairy",
+          "level": "+0",
+          "moves": [
+            "calm-mind",
+            "judgment",
+            "flamethrower",
+            "recover"
+          ],
+          "ability": "multitype",
+          "abilities": [
+            "multitype"
+          ],
+          "held": "pixie-plate",
+          "sprite": "arceus-fairy"
+        },
+        {
+          "name": "dragonite",
+          "level": "+0",
+          "moves": [
+            "dragon-dance",
+            "dual-wingbeat",
+            "earthquake",
+            "extreme-speed"
+          ],
+          "ability": "multiscale",
+          "abilities": [
+            "multiscale"
+          ],
+          "held": "flyinium-z--held"
+        },
+        {
+          "name": "dialga-origin",
+          "level": "+0",
+          "moves": [
+            "roar-of-time",
+            "flamethrower",
+            "rest",
+            "sleep-talk"
+          ],
+          "ability": "primal-armor",
+          "abilities": [
+            "primal-armor"
+          ],
+          "held": "adamant-orb",
+          "sprite": "dialga-origin"
+        },
+        {
+          "name": "rayquaza-mega",
+          "level": "+0",
+          "moves": [
+            "extreme-speed",
+            "flamethrower",
+            "earthquake",
+            "dragon-ascent"
+          ],
+          "ability": "delta-stream",
+          "abilities": [
+            "delta-stream"
+          ],
+          "held": "sharp-beak",
+          "sprite": "rayquaza-mega"
+        }
+      ],
+      "info": "<p><b>Sticky terrain</b><br /> You can't remove hazards from the field</p>"
+    },
+    "ec_hard": {
+      "name": "Champion Gary",
+      "speciality": "",
+      "img": "/leaders/frlg-blue-3",
+      "pokemon": [
+        {
+          "name": "kyogre-primal",
+          "level": "+0",
+          "moves": [
+            "origin-pulse",
+            "ice-beam",
+            "thunder",
+            "liquidation"
+          ],
+          "ability": "primordial-sea",
+          "abilities": [
+            "primordial-sea"
+          ],
+          "held": "blue-orb",
+          "sprite": "kyogre-primal",
+          "starter": "fire"
+        },
+        {
+          "name": "swampert-mega",
+          "level": "+0",
+          "moves": [
+            "waterfall",
+            "earthquake",
+            "ice-punch",
+            "stone-edge"
+          ],
+          "ability": "damp",
+          "abilities": [
+            "damp",
+            "swift-swim"
+          ],
+          "held": "swampertite",
+          "sprite": "swampert-mega",
+          "starter": "fire"
+        },
+        {
+          "name": "necrozma-dawn",
+          "level": "+0",
+          "moves": [
+            "dragon-dance",
+            "photon-geyser",
+            "earthquake",
+            "stone-edge"
+          ],
+          "ability": "prism-armor",
+          "abilities": [
+            "prism-armor",
+            "neuroforce"
+          ],
+          "held": "ultranecrozium-z--held",
+          "sprite": "necrozma-dawn-wings",
+          "starter": "fire"
+        },
+        {
+          "name": "arceus",
+          "level": "+0",
+          "moves": [
+            "swords-dance",
+            "extreme-speed",
+            "shadow-claw",
+            "recover"
+          ],
+          "ability": "multitype",
+          "abilities": [
+            "multitype"
+          ],
+          "held": "normalium-z--held",
+          "starter": "fire"
+        },
+        {
+          "name": "metagross-mega",
+          "level": "+0",
+          "moves": [
+            "meteor-mash",
+            "ice-punch",
+            "thunder-punch",
+            "bullet-punch"
+          ],
+          "ability": "clear-body",
+          "abilities": [
+            "clear-body",
+            "tough-claws"
+          ],
+          "held": "metagrossite",
+          "sprite": "metagross-mega",
+          "starter": "fire"
+        },
+        {
+          "name": "eternatus-eternamax",
+          "level": "+0",
+          "moves": [
+            "draco-barrage",
+            "sludge-wave",
+            "thunder",
+            "recover"
+          ],
+          "ability": "levitate",
+          "abilities": [
+            "levitate"
+          ],
+          "held": "eternamax-orb",
+          "sprite": "eternatus-eternamax",
+          "starter": "fire"
+        },
+        {
+          "name": "kyogre-primal",
+          "level": "+0",
+          "moves": [
+            "origin-pulse",
+            "ice-beam",
+            "thunder",
+            "liquidation"
+          ],
+          "ability": "primordial-sea",
+          "abilities": [
+            "primordial-sea"
+          ],
+          "held": "blue-orb",
+          "sprite": "kyogre-primal",
+          "starter": "water"
+        },
+        {
+          "name": "swampert",
+          "level": "+0",
+          "moves": [
+            "waterfall",
+            "earthquake",
+            "ice-punch",
+            "stone-edge"
+          ],
+          "ability": "damp",
+          "abilities": [
+            "damp",
+            "swift-swim"
+          ],
+          "held": "swampertite",
+          "starter": "water"
+        },
+        {
+          "name": "xerneas",
+          "level": "+0",
+          "moves": [
+            "geomancy",
+            "moonblast",
+            "thunder",
+            "focus-blast"
+          ],
+          "ability": "fairy-aura",
+          "abilities": [
+            "fairy-aura"
+          ],
+          "held": "power-herb",
+          "starter": "water"
+        },
+        {
+          "name": "necrozma-dawn",
+          "level": "+0",
+          "moves": [
+            "dragon-dance",
+            "photon-geyser",
+            "earthquake",
+            "stone-edge"
+          ],
+          "ability": "prism-armor",
+          "abilities": [
+            "prism-armor",
+            "neuroforce"
+          ],
+          "held": "ultranecrozium-z--held",
+          "sprite": "necrozma-dawn-wings",
+          "starter": "water"
+        },
+        {
+          "name": "arceus-steel",
+          "level": "+0",
+          "moves": [
+            "swords-dance",
+            "iron-head",
+            "earthquake",
+            "stone-edge"
+          ],
+          "ability": "multitype",
+          "abilities": [
+            "multitype"
+          ],
+          "held": "steelium-z--held",
+          "sprite": "arceus-steel",
+          "starter": "water"
+        },
+        {
+          "name": "eternatus-eternamax",
+          "level": "+0",
+          "moves": [
+            "draco-barrage",
+            "sludge-wave",
+            "thunder",
+            "recover"
+          ],
+          "ability": "levitate",
+          "abilities": [
+            "levitate"
+          ],
+          "held": "eternamax-orb",
+          "sprite": "eternatus-eternamax",
+          "starter": "water"
+        },
+        {
+          "name": "groudon-primal",
+          "level": "+0",
+          "moves": [
+            "stealth-rock",
+            "precipice-blades",
+            "heat-crash",
+            "rock-tomb"
+          ],
+          "ability": "desolate-land",
+          "abilities": [
+            "desolate-land"
+          ],
+          "held": "red-orb",
+          "sprite": "groudon-primal",
+          "starter": "grass"
+        },
+        {
+          "name": "houndoom-mega",
+          "level": "+0",
+          "moves": [
+            "flamethrower",
+            "solar-beam",
+            "dark-hole",
+            "sludge-bomb"
+          ],
+          "ability": "flash-fire",
+          "abilities": [
+            "flash-fire",
+            "solar-power"
+          ],
+          "held": "houndoominite",
+          "sprite": "houndoom-mega",
+          "starter": "grass"
+        },
+        {
+          "name": "ho-oh",
+          "level": "+0",
+          "moves": [
+            "sacred-fire",
+            "brave-bird",
+            "solar-beam",
+            "roost"
+          ],
+          "ability": "regenerator",
+          "abilities": [
+            "regenerator"
+          ],
+          "held": "charti-berry",
+          "starter": "grass"
+        },
+        {
+          "name": "arceus-ground",
+          "level": "+0",
+          "moves": [
+            "calm-mind",
+            "earth-power",
+            "ice-beam",
+            "recover"
+          ],
+          "ability": "multitype",
+          "abilities": [
+            "multitype"
+          ],
+          "held": "groundium-z--held",
+          "sprite": "arceus-ground",
+          "starter": "grass"
+        },
+        {
+          "name": "xerneas",
+          "level": "+0",
+          "moves": [
+            "geomancy",
+            "moonblast",
+            "thunderbolt",
+            "focus-blast"
+          ],
+          "ability": "fairy-aura",
+          "abilities": [
+            "fairy-aura"
+          ],
+          "held": "power-herb",
+          "starter": "grass"
+        },
+        {
+          "name": "eternatus-eternamax",
+          "level": "+0",
+          "moves": [
+            "draco-barrage",
+            "sludge-wave",
+            "flamethrower",
+            "recover"
+          ],
+          "ability": "levitate",
+          "abilities": [
+            "levitate"
+          ],
+          "held": "eternamax-orb",
+          "sprite": "eternatus-eternamax",
+          "starter": "grass"
+        }
+      ]
+    },
+    "ev1_hard": {
+      "name": "Admin Archer",
+      "speciality": "",
+      "img": "/leaders/gs-archer",
+      "pokemon": [
+        {
+          "name": "solrock",
+          "level": "-3",
+          "moves": [
+            "stealth-rock",
+            "rock-tomb",
+            "zen-headbutt",
+            "self-destruct"
+          ],
+          "ability": "levitate",
+          "abilities": [
+            "levitate"
+          ],
+          "held": "hard-stone"
+        },
+        {
+          "name": "seviper",
+          "level": "-2",
+          "moves": [
+            "mega-drain",
+            "poison-fang",
+            "bulldoze",
+            "hypnosis"
+          ],
+          "ability": "fatal-precision",
+          "abilities": [
+            "fatal-precision"
+          ],
+          "held": "shuca-berry"
+        },
+        {
+          "name": "houndour",
+          "level": "+0",
+          "moves": [
+            "nasty-plot",
+            "incinerate",
+            "snarl",
+            "hidden-power-electric"
+          ],
+          "ability": "flash-fire",
+          "abilities": [
+            "flash-fire"
+          ],
+          "held": "focus-sash"
+        },
+        {
+          "name": "mightyena",
+          "level": "-2",
+          "moves": [
+            "bite",
+            "ice-fang",
+            "poison-fang",
+            "howl"
+          ],
+          "ability": "strong-jaw",
+          "abilities": [
+            "strong-jaw"
+          ],
+          "held": "berry-juice"
+        },
+        {
+          "name": "fearow",
+          "level": "-3",
+          "moves": [
+            "pursuit",
+            "pluck",
+            "drill-run",
+            "double-hit"
+          ],
+          "ability": "technician",
+          "abilities": [
+            "technician"
+          ],
+          "held": "muscle-band"
+        }
+      ]
+    },
+    "ev2_hard": {
+      "name": "Giovanni",
+      "speciality": "",
+      "img": "/leaders/frlg-giovanni",
+      "pokemon": [
+        {
+          "name": "infernape",
+          "level": "47",
+          "moves": [
+            "pyro-ball",
+            "close-combat",
+            "thunder-punch",
+            "stealth-rock"
+          ],
+          "ability": "blaze",
+          "abilities": [
+            "blaze"
+          ],
+          "held": "focus-sash"
+        },
+        {
+          "name": "nidoking",
+          "level": "47",
+          "moves": [
+            "earth-power",
+            "sludge-wave",
+            "fire-blast",
+            "thunderbolt"
+          ],
+          "ability": "sheer-force",
+          "abilities": [
+            "sheer-force"
+          ],
+          "held": "life-orb"
+        },
+        {
+          "name": "torterra",
+          "level": "47",
+          "moves": [
+            "shell-smash",
+            "earthquake",
+            "wood-hammer",
+            "head-smash"
+          ],
+          "ability": "rock-head",
+          "abilities": [
+            "rock-head"
+          ],
+          "held": "white-herb"
+        },
+        {
+          "name": "silvally-ghost",
+          "level": "47",
+          "moves": [
+            "multi-attack",
+            "parting-shot",
+            "thunder-wave",
+            "explosion"
+          ],
+          "ability": "battle-armor",
+          "abilities": [
+            "battle-armor"
+          ],
+          "held": "ghost-gem"
+        },
+        {
+          "name": "gyarados",
+          "level": "47",
+          "moves": [
+            "dragon-dance",
+            "waterfall",
+            "earthquake",
+            "bounce"
+          ],
+          "ability": "intimidate",
+          "abilities": [
+            "intimidate"
+          ],
+          "held": "flyinium-z--held"
+        },
+        {
+          "name": "kangaskhan",
+          "level": "47",
+          "moves": [
+            "power-up-punch",
+            "body-slam",
+            "crunch",
+            "rock-tomb"
+          ],
+          "ability": "inner-focus",
+          "abilities": [
+            "inner-focus",
+            "parental-bond"
+          ],
+          "held": "kangaskhanite"
+        }
+      ]
+    },
+    "ev3_hard": {
+      "name": "Archer & Ariana",
+      "speciality": "",
+      "img": "/leaders/gs-archer",
+      "pokemon": [
+        {
+          "name": "incineroar",
+          "level": "55",
+          "moves": [
+            "fake-out",
+            "knock-off",
+            "will-o-wisp",
+            "flare-blitz"
+          ],
+          "ability": "intimidate",
+          "abilities": [
+            "intimidate"
+          ],
+          "held": "sitrus-berry"
+        },
+        {
+          "name": "articuno-galar",
+          "level": "55",
+          "moves": [
+            "psychic",
+            "focus-blast",
+            "roost",
+            "air-slash"
+          ],
+          "ability": "competitive",
+          "abilities": [
+            "competitive"
+          ],
+          "held": "colbur-berry",
+          "sprite": "articuno-galar"
+        },
+        {
+          "name": "primarina",
+          "level": "55",
+          "moves": [
+            "hyper-voice",
+            "scald",
+            "psychic",
+            "energy-ball"
+          ],
+          "ability": "liquid-voice",
+          "abilities": [
+            "liquid-voice"
+          ],
+          "held": "throat-spray"
+        },
+        {
+          "name": "aegislash-shield",
+          "level": "55",
+          "moves": [
+            "shadow-ball",
+            "flash-cannon",
+            "shadow-sneak",
+            "kings-shield"
+          ],
+          "ability": "stance-change",
+          "abilities": [
+            "stance-change"
+          ],
+          "held": "ghostium-z--held"
+        },
+        {
+          "name": "mawile",
+          "level": "55",
+          "moves": [
+            "play-rough",
+            "sucker-punch",
+            "iron-head",
+            "thunder-punch"
+          ],
+          "ability": "intimidate",
+          "abilities": [
+            "intimidate",
+            "huge-power"
+          ],
+          "held": "mawilite"
+        },
+        {
+          "name": "houndoom",
+          "level": "55",
+          "moves": [
+            "pursuit",
+            "fiery-wrath",
+            "heat-wave",
+            "scorching-sands"
+          ],
+          "ability": "early-bird",
+          "abilities": [
+            "early-bird",
+            "dark-aura"
+          ],
+          "held": "houndoominite"
+        }
+      ]
+    },
+    "ev4_hard": {
+      "name": "Giovanni",
+      "speciality": "",
+      "img": "/leaders/frlg-giovanni",
+      "pokemon": [
+        {
+          "name": "mamoswine",
+          "level": "57",
+          "moves": [
+            "stone-edge",
+            "ice-shard",
+            "headlong-rush",
+            "icicle-crash"
+          ],
+          "ability": "thick-fat",
+          "abilities": [
+            "thick-fat"
+          ],
+          "held": "focus-sash"
+        },
+        {
+          "name": "dracovish",
+          "level": "57",
+          "moves": [
+            "fishious-rend",
+            "psychic-fangs",
+            "crunch",
+            "dragon-claw"
+          ],
+          "ability": "sand-rush",
+          "abilities": [
+            "sand-rush"
+          ],
+          "held": "water-gem"
+        },
+        {
+          "name": "gyarados",
+          "level": "57",
+          "moves": [
+            "dragon-dance",
+            "waterfall",
+            "earthquake",
+            "bounce"
+          ],
+          "ability": "moxie",
+          "abilities": [
+            "moxie"
+          ],
+          "held": "flyinium-z--held"
+        },
+        {
+          "name": "regirock",
+          "level": "57",
+          "moves": [
+            "curse",
+            "drain-punch",
+            "rock-slide",
+            "earthquake"
+          ],
+          "ability": "solid-rock",
+          "abilities": [
+            "solid-rock"
+          ],
+          "held": "leftovers"
+        },
+        {
+          "name": "excadrill",
+          "level": "57",
+          "moves": [
+            "swords-dance",
+            "earthquake",
+            "iron-head",
+            "rock-slide"
+          ],
+          "ability": "sand-rush",
+          "abilities": [
+            "sand-rush"
+          ],
+          "held": "focus-sash"
+        },
+        {
+          "name": "garchomp",
+          "level": "57",
+          "moves": [
+            "swords-dance",
+            "earthquake",
+            "scale-shot",
+            "stone-edge"
+          ],
+          "ability": "sand-veil",
+          "abilities": [
+            "sand-veil",
+            "sand-force"
+          ],
+          "held": "garchompite"
+        }
+      ]
+    },
+    "ev5_hard": {
+      "name": "Admin Archer",
+      "speciality": "",
+      "img": "/leaders/gs-archer",
+      "pokemon": [
+        {
+          "name": "ninetales",
+          "level": "+0",
+          "moves": [
+            "weather-ball",
+            "solar-beam",
+            "scorching-sands",
+            "hypnosis"
+          ],
+          "ability": "drought",
+          "abilities": [
+            "drought"
+          ],
+          "held": "charcoal"
+        },
+        {
+          "name": "exeggutor",
+          "level": "+0",
+          "moves": [
+            "solar-beam",
+            "psyshock",
+            "weather-ball",
+            "earth-power"
+          ],
+          "ability": "chlorophyll",
+          "abilities": [
+            "chlorophyll"
+          ],
+          "held": "life-orb"
+        },
+        {
+          "name": "landorus-therian",
+          "level": "+0",
+          "moves": [
+            "earthquake",
+            "fly",
+            "stone-edge",
+            "swords-dance"
+          ],
+          "ability": "intimidate",
+          "abilities": [
+            "intimidate"
+          ],
+          "held": "flyinium-z--held",
+          "sprite": "landorus-therian"
+        },
+        {
+          "name": "houndoom",
+          "level": "+0",
+          "moves": [
+            "dark-hole",
+            "flamethrower",
+            "sucker-punch",
+            "solar-beam"
+          ],
+          "ability": "flash-fire",
+          "abilities": [
+            "flash-fire",
+            "solar-power"
+          ],
+          "held": "houndoominite"
+        },
+        {
+          "name": "sunflora",
+          "level": "+0",
+          "moves": [
+            "growth",
+            "solar-beam",
+            "weather-ball",
+            "hidden-power-rock"
+          ],
+          "ability": "chlorophyll",
+          "abilities": [
+            "chlorophyll"
+          ],
+          "held": "focus-sash"
+        }
+      ]
+    },
+    "ev6_hard": {
+      "name": "Admin Ariana",
+      "speciality": "",
+      "img": "/leaders/gs-ariana",
+      "pokemon": [
+        {
+          "name": "wailord",
+          "level": "+0",
+          "moves": [
+            "bouncy-bubble",
+            "ice-beam",
+            "hidden-power-grass",
+            ""
+          ],
+          "ability": "blubber-defense",
+          "abilities": [
+            "blubber-defense"
+          ],
+          "held": "mystic-water"
+        },
+        {
+          "name": "espeon",
+          "level": "+0",
+          "moves": [
+            "last-resort",
+            "psychic",
+            "mystical-fire",
+            "shadow-ball"
+          ],
+          "ability": "magic-bounce",
+          "abilities": [
+            "magic-bounce"
+          ],
+          "held": "eevium-z--held"
+        },
+        {
+          "name": "buzzwole",
+          "level": "+0",
+          "moves": [
+            "victory-dance",
+            "drain-punch",
+            "leech-life",
+            "ice-punch"
+          ],
+          "ability": "beast-boost",
+          "abilities": [
+            "beast-boost"
+          ],
+          "held": "coba-berry"
+        },
+        {
+          "name": "mawile",
+          "level": "+0",
+          "moves": [
+            "sucker-punch",
+            "double-iron-bash",
+            "play-rough",
+            "fire-fang"
+          ],
+          "ability": "intimidate",
+          "abilities": [
+            "intimidate",
+            "pure-power"
+          ],
+          "held": "mawilite"
+        }
+      ]
+    },
+    "ev7_hard": {
+      "name": "Giovanni",
+      "speciality": "",
+      "img": "/leaders/frlg-giovanni",
+      "pokemon": [
+        {
+          "name": "spiritomb",
+          "level": "80",
+          "moves": [
+            "will-o-wisp",
+            "parting-shot",
+            "shadow-ball",
+            "sucker-punch"
+          ],
+          "ability": "intimidate",
+          "abilities": [
+            "intimidate"
+          ],
+          "held": "figy-berry"
+        },
+        {
+          "name": "delphox",
+          "level": "80",
+          "moves": [
+            "heat-wave",
+            "expanding-force",
+            "grass-knot",
+            "shadow-ball"
+          ],
+          "ability": "magic-guard",
+          "abilities": [
+            "magic-guard"
+          ],
+          "held": "focus-sash"
+        },
+        {
+          "name": "silvally-fairy",
+          "level": "80",
+          "moves": [
+            "multi-attack",
+            "flamethrower",
+            "parting-shot",
+            "thunder-wave"
+          ],
+          "ability": "battle-armor",
+          "abilities": [
+            "battle-armor"
+          ],
+          "held": "leftovers"
+        },
+        {
+          "name": "moltres-galar",
+          "level": "80",
+          "moves": [
+            "nasty-plot",
+            "fiery-wrath",
+            "hurricane",
+            "roost"
+          ],
+          "ability": "berserk",
+          "abilities": [
+            "berserk"
+          ],
+          "held": "flyinium-z--held",
+          "sprite": "moltres-galar"
+        },
+        {
+          "name": "genesect",
+          "level": "80",
+          "moves": [
+            "u-turn",
+            "iron-head",
+            "ice-beam",
+            "flamethrower"
+          ],
+          "ability": "download",
+          "abilities": [
+            "download"
+          ],
+          "held": "assault-vest"
+        },
+        {
+          "name": "mewtwo-y",
+          "level": "80",
+          "moves": [
+            "expanding-force",
+            "soul-robbery",
+            "flamethrower",
+            "aura-sphere"
+          ],
+          "ability": "unnerve",
+          "abilities": [
+            "unnerve",
+            "insomnia"
+          ]
+        }
+      ],
+      "doubleBattle": true
+    },
+    "r2_hard": {
+      "name": "Gary",
+      "speciality": "",
+      "img": "/leaders/frlg-blue-1",
+      "pokemon": [
+        {
+          "name": "snubbull",
+          "level": "-1",
+          "moves": [
+            "power-up-punch",
+            "covet",
+            "thunder-wave",
+            "fire-fang"
+          ],
+          "ability": "intimidate",
+          "abilities": [
+            "intimidate"
+          ],
+          "held": "muscle-band"
+        },
+        {
+          "name": "litleo",
+          "level": "-1",
+          "moves": [
+            "incinerate",
+            "round",
+            "hidden-power-grass",
+            "sleep-talk"
+          ],
+          "ability": "rivalry",
+          "abilities": [
+            "rivalry"
+          ],
+          "held": "wise-glasses",
+          "starter": "fire"
+        },
+        {
+          "name": "slowpoke",
+          "level": "-1",
+          "moves": [
+            "thunder-wave",
+            "water-pulse",
+            "psybeam",
+            "teleport"
+          ],
+          "ability": "regenerator",
+          "abilities": [
+            "regenerator"
+          ],
+          "held": "leftovers",
+          "starter": "water"
+        },
+        {
+          "name": "slowpoke",
+          "level": "-1",
+          "moves": [
+            "thunder-wave",
+            "water-pulse",
+            "psybeam",
+            "teleport"
+          ],
+          "ability": "regenerator",
+          "abilities": [
+            "regenerator"
+          ],
+          "held": "leftovers",
+          "starter": "temp"
+        },
+        {
+          "name": "squirtle",
+          "level": "+0",
+          "moves": [
+            "power-up-punch",
+            "aqua-jet",
+            "rock-tomb",
+            "curse"
+          ],
+          "ability": "torrent",
+          "abilities": [
+            "torrent"
+          ],
+          "held": "oran-berry",
+          "starter": "fire"
+        },
+        {
+          "name": "bulbasaur",
+          "level": "+0",
+          "moves": [
+            "sleep-powder",
+            "mega-drain",
+            "sludge",
+            "growth"
+          ],
+          "ability": "overgrow",
+          "abilities": [
+            "overgrow"
+          ],
+          "held": "oran-berry",
+          "starter": "water"
+        },
+        {
+          "name": "charmander",
+          "level": "+0",
+          "moves": [
+            "power-up-punch",
+            "fire-fang",
+            "thunder-punch",
+            "slash"
+          ],
+          "ability": "solar-power",
+          "abilities": [
+            "solar-power"
+          ],
+          "held": "muscle-band",
+          "starter": "grass"
+        }
+      ]
+    },
+    "r3_hard": {
+      "name": "Gary",
+      "speciality": "",
+      "img": "/leaders/frlg-blue-2",
+      "pokemon": [
+        {
+          "name": "hitmonlee",
+          "level": "-1",
+          "moves": [
+            "bullet-punch",
+            "knock-off",
+            "fake-out",
+            "low-sweep"
+          ],
+          "ability": "striker",
+          "abilities": [
+            "striker"
+          ],
+          "held": "black-belt",
+          "starter": "fire"
+        },
+        {
+          "name": "hitmonchan",
+          "level": "-1",
+          "moves": [
+            "drain-punch",
+            "ice-punch",
+            "mach-punch",
+            "sucker-punch"
+          ],
+          "ability": "iron-fist",
+          "abilities": [
+            "iron-fist"
+          ],
+          "held": "black-belt",
+          "starter": "water"
+        },
+        {
+          "name": "hitmontop",
+          "level": "-1",
+          "moves": [
+            "fake-out",
+            "bullet-punch",
+            "rock-smash",
+            "thief"
+          ],
+          "ability": "technician",
+          "abilities": [
+            "technician"
+          ],
+          "held": "black-belt",
+          "starter": "grass"
+        },
+        {
+          "name": "eevee",
+          "level": "-2",
+          "moves": [
+            "last-resort",
+            "round",
+            "double-kick",
+            "bite"
+          ],
+          "ability": "adaptability",
+          "abilities": [
+            "adaptability"
+          ],
+          "held": "eevium-z--held"
+        },
+        {
+          "name": "clefable",
+          "level": "-1",
+          "moves": [
+            "charge-beam",
+            "draining-kiss",
+            "icy-wind",
+            "mystical-fire"
+          ],
+          "ability": "magic-guard",
+          "abilities": [
+            "magic-guard"
+          ],
+          "held": "life-orb"
+        },
+        {
+          "name": "simipour",
+          "level": "-1",
+          "moves": [
+            "water-pulse",
+            "icy-wind",
+            "hidden-power-electric",
+            "grass-knot"
+          ],
+          "ability": "sage-power",
+          "abilities": [
+            "sage-power"
+          ],
+          "held": "mystic-water",
+          "starter": "water"
+        },
+        {
+          "name": "simisage",
+          "level": "-1",
+          "moves": [
+            "mega-drain",
+            "hidden-power-fire",
+            "power-gem",
+            "sleep-talk"
+          ],
+          "ability": "sage-power",
+          "abilities": [
+            "sage-power"
+          ],
+          "held": "miracle-seed",
+          "starter": "grass"
+        },
+        {
+          "name": "simisear",
+          "level": "-1",
+          "moves": [
+            "incinerate",
+            "grass-knot",
+            "hidden-power-rock",
+            "sleep-talk"
+          ],
+          "ability": "sage-power",
+          "abilities": [
+            "sage-power"
+          ],
+          "held": "charcoal",
+          "starter": "fire"
+        },
+        {
+          "name": "arbok",
+          "level": "+0",
+          "moves": [
+            "poison-jab",
+            "sucker-punch",
+            "crunch",
+            "thunder-fang"
+          ],
+          "ability": "intimidate",
+          "abilities": [
+            "intimidate"
+          ],
+          "held": "poison-barb"
+        },
+        {
+          "name": "wartortle",
+          "level": "+0",
+          "moves": [
+            "shell-smash",
+            "water-pulse",
+            "icy-wind",
+            "hidden-power-electric"
+          ],
+          "ability": "torrent",
+          "abilities": [
+            "torrent"
+          ],
+          "held": "eviolite",
+          "starter": "fire"
+        },
+        {
+          "name": "ivysaur",
+          "level": "+0",
+          "moves": [
+            "leech-seed",
+            "protect",
+            "sludge",
+            "giga-drain"
+          ],
+          "ability": "overgrow",
+          "abilities": [
+            "overgrow"
+          ],
+          "held": "eviolite",
+          "starter": "water"
+        },
+        {
+          "name": "charmeleon",
+          "level": "+0",
+          "moves": [
+            "dragon-dance",
+            "fire-punch",
+            "thunder-punch",
+            "brick-break"
+          ],
+          "ability": "blaze",
+          "abilities": [
+            "blaze"
+          ],
+          "held": "eviolite",
+          "starter": "grass"
+        }
+      ]
+    },
+    "r4_hard": {
+      "name": "Gary",
+      "speciality": "",
+      "img": "/leaders/frlg-blue-2",
+      "pokemon": [
+        {
+          "name": "azelf",
+          "level": "+0",
+          "moves": [
+            "stealth-rock",
+            "explosion",
+            "flamethrower",
+            "psychic"
+          ],
+          "ability": "levitate",
+          "abilities": [
+            "levitate"
+          ],
+          "held": "focus-sash"
+        },
+        {
+          "name": "celesteela",
+          "level": "+0",
+          "moves": [
+            "autotomize",
+            "air-slash",
+            "flamethrower",
+            "giga-drain"
+          ],
+          "ability": "beast-boost",
+          "abilities": [
+            "beast-boost"
+          ],
+          "held": "weakness-policy"
+        },
+        {
+          "name": "jumpluff",
+          "level": "+0",
+          "moves": [
+            "spore",
+            "double-edge",
+            "leaf-blade",
+            "swords-dance"
+          ],
+          "ability": "aerilate",
+          "abilities": [
+            "aerilate"
+          ],
+          "held": "sharp-beak",
+          "starter": "grass"
+        },
+        {
+          "name": "jumpluff",
+          "level": "+0",
+          "moves": [
+            "spore",
+            "double-edge",
+            "leaf-blade",
+            "swords-dance"
+          ],
+          "ability": "aerilate",
+          "abilities": [
+            "aerilate"
+          ],
+          "held": "sharp-beak",
+          "starter": "fire"
+        },
+        {
+          "name": "gorebyss",
+          "level": "+0",
+          "moves": [
+            "shell-smash",
+            "surf",
+            "moonblast",
+            "psychic"
+          ],
+          "ability": "dazzling",
+          "abilities": [
+            "dazzling"
+          ],
+          "held": "white-herb",
+          "starter": "water"
+        },
+        {
+          "name": "gorebyss",
+          "level": "+0",
+          "moves": [
+            "shell-smash",
+            "surf",
+            "moonblast",
+            "psychic"
+          ],
+          "ability": "dazzling",
+          "abilities": [
+            "dazzling"
+          ],
+          "held": "white-herb",
+          "starter": "grass"
+        },
+        {
+          "name": "darmanitan-standard",
+          "level": "+0",
+          "moves": [
+            "flare-blitz",
+            "rock-slide",
+            "u-turn",
+            "earthquake"
+          ],
+          "ability": "sheer-force",
+          "abilities": [
+            "sheer-force"
+          ],
+          "held": "life-orb",
+          "starter": "fire"
+        },
+        {
+          "name": "darmanitan-standard",
+          "level": "+0",
+          "moves": [
+            "flare-blitz",
+            "rock-slide",
+            "u-turn",
+            "earthquake"
+          ],
+          "ability": "sheer-force",
+          "abilities": [
+            "sheer-force"
+          ],
+          "held": "life-orb",
+          "starter": "water"
+        },
+        {
+          "name": "electivire",
+          "level": "+0",
+          "moves": [
+            "mach-punch",
+            "plasma-fists",
+            "close-combat",
+            "ice-punch"
+          ],
+          "ability": "iron-fist",
+          "abilities": [
+            "iron-fist"
+          ],
+          "held": "fighting-gem"
+        },
+        {
+          "name": "blastoise-mega",
+          "level": "+0",
+          "moves": [
+            "shell-smash",
+            "water-pulse",
+            "dark-pulse",
+            "aura-sphere"
+          ],
+          "ability": "torrent",
+          "abilities": [
+            "torrent",
+            "mega-launcher"
+          ],
+          "held": "blastoisinite",
+          "sprite": "blastoise-mega",
+          "starter": "fire"
+        },
+        {
+          "name": "venusaur-mega",
+          "level": "+0",
+          "moves": [
+            "sleep-powder",
+            "giga-drain",
+            "sludge-bomb",
+            "earth-power"
+          ],
+          "ability": "overgrow",
+          "abilities": [
+            "overgrow",
+            "thick-fat"
+          ],
+          "held": "venusaurite",
+          "sprite": "venusaur-mega",
+          "starter": "water"
+        },
+        {
+          "name": "charizard-mega-x",
+          "level": "+0",
+          "moves": [
+            "dragon-dance",
+            "dragon-claw",
+            "flare-blitz",
+            "earthquake"
+          ],
+          "ability": "solar-power",
+          "abilities": [
+            "solar-power",
+            "tough-claws"
+          ],
+          "held": "charizardite-x",
+          "sprite": "charizard-mega-x",
+          "starter": "grass"
+        }
+      ]
+    },
+    "r5_hard": {
+      "name": "Gary",
+      "speciality": "",
+      "img": "/leaders/frlg-blue-2",
+      "pokemon": [
+        {
+          "name": "zapdos",
+          "level": "+0",
+          "moves": [
+            "hurricane",
+            "thunder",
+            "weather-ball",
+            "roost"
+          ],
+          "ability": "static",
+          "abilities": [
+            "static"
+          ],
+          "held": "flyinium-z--held",
+          "starter": "fire"
+        },
+        {
+          "name": "ferrothorn",
+          "level": "+0",
+          "moves": [
+            "leech-seed",
+            "power-whip",
+            "gyro-ball",
+            "thunder"
+          ],
+          "ability": "iron-barbs",
+          "abilities": [
+            "iron-barbs"
+          ],
+          "held": "rocky-helmet",
+          "starter": "fire"
+        },
+        {
+          "name": "celesteela",
+          "level": "+0",
+          "moves": [
+            "autotomize",
+            "iron-head",
+            "air-slash",
+            "giga-drain"
+          ],
+          "ability": "beast-boost",
+          "abilities": [
+            "beast-boost"
+          ],
+          "held": "weakness-policy",
+          "starter": "fire"
+        },
+        {
+          "name": "barraskewda",
+          "level": "+0",
+          "moves": [
+            "waterfall",
+            "close-combat",
+            "flip-turn",
+            "psychic-fangs"
+          ],
+          "ability": "swift-swim",
+          "abilities": [
+            "swift-swim"
+          ],
+          "held": "mystic-water",
+          "starter": "fire"
+        },
+        {
+          "name": "goodra",
+          "level": "+0",
+          "moves": [
+            "thunder",
+            "hydro-pump",
+            "ice-beam",
+            "rest"
+          ],
+          "ability": "hydration",
+          "abilities": [
+            "hydration"
+          ],
+          "held": "leftovers",
+          "starter": "fire"
+        },
+        {
+          "name": "blastoise-mega",
+          "level": "+0",
+          "moves": [
+            "shell-smash",
+            "dark-pulse",
+            "hydro-pump",
+            "ice-beam"
+          ],
+          "ability": "rain-dish",
+          "abilities": [
+            "rain-dish",
+            "mega-launcher"
+          ],
+          "held": "blastoisinite",
+          "sprite": "blastoise-mega",
+          "starter": "fire"
+        },
+        {
+          "name": "conkeldurr",
+          "level": "+0",
+          "moves": [
+            "drain-punch",
+            "mach-punch",
+            "knock-off",
+            "poison-jab"
+          ],
+          "ability": "iron-fist",
+          "abilities": [
+            "iron-fist"
+          ],
+          "held": "assault-vest",
+          "starter": "water"
+        },
+        {
+          "name": "bisharp",
+          "level": "+0",
+          "moves": [
+            "swords-dance",
+            "iron-head",
+            "knock-off",
+            "brick-break"
+          ],
+          "ability": "defiant",
+          "abilities": [
+            "defiant"
+          ],
+          "held": "focus-sash",
+          "starter": "water"
+        },
+        {
+          "name": "primarina",
+          "level": "+0",
+          "moves": [
+            "calm-mind",
+            "draining-kiss",
+            "hyper-voice",
+            "ice-beam"
+          ],
+          "ability": "liquid-voice",
+          "abilities": [
+            "liquid-voice"
+          ],
+          "held": "leftovers",
+          "starter": "water"
+        },
+        {
+          "name": "chandelure",
+          "level": "+0",
+          "moves": [
+            "flamethrower",
+            "shadow-ball",
+            "energy-ball",
+            "calm-mind"
+          ],
+          "ability": "shadow-tag",
+          "abilities": [
+            "shadow-tag"
+          ],
+          "held": "life-orb",
+          "starter": "water"
+        },
+        {
+          "name": "hydreigon",
+          "level": "+0",
+          "moves": [
+            "nasty-plot",
+            "dark-pulse",
+            "flash-cannon",
+            "flamethrower"
+          ],
+          "ability": "levitate",
+          "abilities": [
+            "levitate"
+          ],
+          "held": "darkinium-z--held",
+          "starter": "water"
+        },
+        {
+          "name": "venusaur-mega",
+          "level": "+0",
+          "moves": [
+            "chloroblast",
+            "sludge-bomb",
+            "earth-power",
+            "sleep-powder"
+          ],
+          "ability": "overgrow",
+          "abilities": [
+            "overgrow",
+            "thick-fat"
+          ],
+          "held": "venusaurite",
+          "sprite": "venusaur-mega",
+          "starter": "water"
+        },
+        {
+          "name": "charizard-mega-y",
+          "level": "+0",
+          "moves": [
+            "weather-ball",
+            "solar-beam",
+            "focus-blast",
+            "protect"
+          ],
+          "ability": "blaze",
+          "abilities": [
+            "blaze",
+            "drought"
+          ],
+          "held": "charizardite-y",
+          "sprite": "charizard-mega-y",
+          "starter": "grass"
+        },
+        {
+          "name": "garchomp",
+          "level": "+0",
+          "moves": [
+            "swords-dance",
+            "scale-shot",
+            "earthquake",
+            "stone-edge"
+          ],
+          "ability": "rough-skin",
+          "abilities": [
+            "rough-skin"
+          ],
+          "held": "yache-berry",
+          "starter": "grass"
+        },
+        {
+          "name": "sunflora",
+          "level": "+0",
+          "moves": [
+            "growth",
+            "solar-beam",
+            "fiery-dance",
+            "hidden-power-rock"
+          ],
+          "ability": "chlorophyll",
+          "abilities": [
+            "chlorophyll"
+          ],
+          "held": "focus-sash",
+          "starter": "grass"
+        },
+        {
+          "name": "zamazenta-crowned",
+          "level": "+0",
+          "moves": [
+            "body-press",
+            "bulk-up",
+            "wild-charge",
+            "behemoth-bash"
+          ],
+          "ability": "dauntless-shield",
+          "abilities": [
+            "dauntless-shield"
+          ],
+          "held": "rusted-shield",
+          "starter": "grass"
+        },
+        {
+          "name": "gliscor",
+          "level": "+0",
+          "moves": [
+            "swords-dance",
+            "protect",
+            "earthquake",
+            "facade"
+          ],
+          "ability": "poison-heal",
+          "abilities": [
+            "poison-heal"
+          ],
+          "held": "toxic-orb",
+          "starter": "grass"
+        },
+        {
+          "name": "latias",
+          "level": "+0",
+          "moves": [
+            "calm-mind",
+            "roost",
+            "mist-ball",
+            "mystical-fire"
+          ],
+          "ability": "levitate",
+          "abilities": [
+            "levitate"
+          ],
+          "held": "leftovers",
+          "starter": "grass"
+        }
+      ]
+    },
+    "b1_hard": {
+      "name": "Brendan",
+      "speciality": "",
+      "img": "/leaders/rs-brendan",
+      "pokemon": [
+        {
+          "name": "meditite",
+          "level": "-2",
+          "moves": [
+            "fake-out",
+            "rock-smash",
+            "bullet-punch",
+            "rock-tomb"
+          ],
+          "ability": "pure-power",
+          "abilities": [
+            "pure-power"
+          ],
+          "held": "muscle-band"
+        },
+        {
+          "name": "corphish",
+          "level": "-1",
+          "moves": [
+            "aqua-jet",
+            "aerial-ace",
+            "rock-tomb",
+            "knock-off"
+          ],
+          "ability": "adaptability",
+          "abilities": [
+            "adaptability"
+          ],
+          "held": "mystic-water"
+        },
+        {
+          "name": "numel",
+          "level": "-1",
+          "moves": [
+            "ancient-power",
+            "flame-charge",
+            "rock-tomb",
+            "bulldoze"
+          ],
+          "ability": "simple",
+          "abilities": [
+            "simple"
+          ],
+          "held": "passho-berry"
+        },
+        {
+          "name": "treecko",
+          "level": "+0",
+          "moves": [
+            "power-up-punch",
+            "bullet-seed",
+            "drain-punch",
+            "rock-tomb"
+          ],
+          "ability": "unburden",
+          "abilities": [
+            "unburden"
+          ],
+          "held": "oran-berry"
+        }
+      ]
+    },
+    "b2_hard": {
+      "name": "Brendan",
+      "speciality": "",
+      "img": "/leaders/rs-brendan",
+      "pokemon": [
+        {
+          "name": "crawdaunt",
+          "level": "+0",
+          "moves": [
+            "aqua-jet",
+            "liquidation",
+            "knock-off",
+            "x-scissor"
+          ],
+          "ability": "adaptability",
+          "abilities": [
+            "adaptability"
+          ],
+          "held": "focus-sash"
+        },
+        {
+          "name": "slaking",
+          "level": "+0",
+          "moves": [
+            "body-slam",
+            "knock-off",
+            "brick-break",
+            "slack-off"
+          ],
+          "ability": "truant",
+          "abilities": [
+            "truant"
+          ],
+          "held": "leftovers"
+        },
+        {
+          "name": "plusle",
+          "level": "+0",
+          "moves": [
+            "volt-switch",
+            "grass-knot",
+            "surf",
+            "hidden-power-ice"
+          ],
+          "ability": "transistor",
+          "abilities": [
+            "transistor"
+          ],
+          "held": "magnet"
+        },
+        {
+          "name": "gardevoir",
+          "level": "+0",
+          "moves": [
+            "psychic",
+            "calm-mind",
+            "moonblast",
+            "mystical-fire"
+          ],
+          "ability": "trace",
+          "abilities": [
+            "trace"
+          ],
+          "held": "leftovers"
+        },
+        {
+          "name": "sceptile",
+          "level": "+0",
+          "moves": [
+            "swords-dance",
+            "leaf-blade",
+            "drain-punch",
+            "rock-slide"
+          ],
+          "ability": "overgrow",
+          "abilities": [
+            "overgrow"
+          ],
+          "held": "life-orb"
+        },
+        {
+          "name": "hariyama",
+          "level": "+0",
+          "moves": [
+            "drain-punch",
+            "bullet-punch",
+            "knock-off",
+            "fake-out"
+          ],
+          "ability": "guts",
+          "abilities": [
+            "guts"
+          ],
+          "held": "flame-orb"
+        }
+      ]
+    },
+    "b3_hard": {
+      "name": "Brendan",
+      "speciality": "",
+      "img": "/leaders/rs-brendan",
+      "pokemon": [
+        {
+          "name": "gengar",
+          "level": "+0",
+          "moves": [
+            "shadow-ball",
+            "sludge-wave",
+            "focus-blast",
+            "giga-drain"
+          ],
+          "ability": "levitate",
+          "abilities": [
+            "levitate"
+          ],
+          "held": "focus-sash"
+        },
+        {
+          "name": "nihilego",
+          "level": "+0",
+          "moves": [
+            "meteor-beam",
+            "sludge-wave",
+            "thunderbolt",
+            "grass-knot"
+          ],
+          "ability": "beast-boost",
+          "abilities": [
+            "beast-boost"
+          ],
+          "held": "power-herb"
+        },
+        {
+          "name": "tapu-koko",
+          "level": "+0",
+          "moves": [
+            "wild-charge",
+            "play-rough",
+            "rising-voltage",
+            "grass-knot"
+          ],
+          "ability": "electric-surge",
+          "abilities": [
+            "electric-surge"
+          ],
+          "held": "leftovers"
+        },
+        {
+          "name": "urshifu-rapid-strike",
+          "level": "+0",
+          "moves": [
+            "surging-strikes",
+            "close-combat",
+            "aqua-jet",
+            "u-turn"
+          ],
+          "ability": "unseen-fist",
+          "abilities": [
+            "unseen-fist"
+          ],
+          "held": "mystic-water"
+        },
+        {
+          "name": "deoxys-attack",
+          "level": "+0",
+          "moves": [
+            "psychic",
+            "ice-beam",
+            "extreme-speed",
+            "fire-punch"
+          ],
+          "ability": "pressure",
+          "abilities": [
+            "pressure"
+          ],
+          "held": "life-orb",
+          "sprite": "deoxys-attack"
+        },
+        {
+          "name": "sceptile-mega",
+          "level": "+0",
+          "moves": [
+            "dragon-dance",
+            "dual-chop",
+            "bullet-seed",
+            "earthquake"
+          ],
+          "ability": "overgrow",
+          "abilities": [
+            "overgrow",
+            "technician"
+          ],
+          "held": "sceptilite",
+          "sprite": "sceptile-mega"
+        }
+      ]
+    },
+    "b4_hard": {
+      "name": "Brendan",
+      "speciality": "",
+      "img": "/leaders/rs-brendan",
+      "pokemon": [
+        {
+          "name": "tyrantrum",
+          "level": "+0",
+          "moves": [
+            "dragon-claw",
+            "head-smash",
+            "earthquake",
+            "close-combat"
+          ],
+          "ability": "rock-head",
+          "abilities": [
+            "rock-head"
+          ],
+          "held": "focus-sash"
+        },
+        {
+          "name": "marowak-alola",
+          "level": "+0",
+          "moves": [
+            "shadow-bone",
+            "fire-punch",
+            "bonemerang",
+            "swords-dance"
+          ],
+          "ability": "bone-zone",
+          "abilities": [
+            "bone-zone"
+          ],
+          "held": "thick-club",
+          "sprite": "marowak-alola"
+        },
+        {
+          "name": "empoleon",
+          "level": "+0",
+          "moves": [
+            "calm-mind",
+            "roost",
+            "scald",
+            "ice-beam"
+          ],
+          "ability": "competitive",
+          "abilities": [
+            "competitive"
+          ],
+          "held": "leftovers"
+        },
+        {
+          "name": "landorus-incarnate",
+          "level": "+0",
+          "moves": [
+            "earth-power",
+            "rock-slide",
+            "psychic",
+            "hidden-power-ice"
+          ],
+          "ability": "sheer-force",
+          "abilities": [
+            "sheer-force"
+          ],
+          "held": "life-orb",
+          "sprite": "landorus"
+        },
+        {
+          "name": "exploud",
+          "level": "+0",
+          "moves": [
+            "boomburst",
+            "surf",
+            "flamethrower",
+            "ice-beam"
+          ],
+          "ability": "punk-rock",
+          "abilities": [
+            "punk-rock"
+          ],
+          "held": "silk-scarf"
+        },
+        {
+          "name": "sceptile-mega",
+          "level": "+0",
+          "moves": [
+            "swords-dance",
+            "dual-chop",
+            "bullet-seed",
+            "earthquake"
+          ],
+          "ability": "overgrow",
+          "abilities": [
+            "overgrow",
+            "technician"
+          ],
+          "held": "sceptilite",
+          "sprite": "sceptile-mega"
+        }
+      ]
+    },
+    "m1_hard": {
+      "name": "May",
+      "speciality": "",
+      "img": "/leaders/rs-may",
+      "pokemon": [
+        {
+          "name": "aggron",
+          "level": "73",
+          "moves": [
+            "stone-edge",
+            "heavy-slam",
+            "heat-crash",
+            "endeavor"
+          ],
+          "ability": "sturdy",
+          "abilities": [
+            "sturdy"
+          ],
+          "held": "custap-berry"
+        },
+        {
+          "name": "jumpluff",
+          "level": "73",
+          "moves": [
+            "double-edge",
+            "u-turn",
+            "spore",
+            "synthesis"
+          ],
+          "ability": "aerilate",
+          "abilities": [
+            "aerilate"
+          ],
+          "held": "flying-gem"
+        },
+        {
+          "name": "regieleki",
+          "level": "73",
+          "moves": [
+            "thunderbolt",
+            "electro-ball",
+            "volt-switch",
+            "explosion"
+          ],
+          "ability": "transistor",
+          "abilities": [
+            "transistor"
+          ],
+          "held": "life-orb"
+        },
+        {
+          "name": "slowbro",
+          "level": "73",
+          "moves": [
+            "scald",
+            "body-press",
+            "teleport",
+            "slack-off"
+          ],
+          "ability": "regenerator",
+          "abilities": [
+            "regenerator"
+          ],
+          "held": "leftovers"
+        },
+        {
+          "name": "snorlax",
+          "level": "73",
+          "moves": [
+            "body-slam",
+            "darkest-lariat",
+            "curse",
+            "rest"
+          ],
+          "ability": "thick-fat",
+          "abilities": [
+            "thick-fat"
+          ],
+          "held": "leftovers"
+        },
+        {
+          "name": "blaziken-mega",
+          "level": "73",
+          "moves": [
+            "swords-dance",
+            "flare-blitz",
+            "close-combat",
+            "thunder-punch"
+          ],
+          "ability": "speed-boost",
+          "abilities": [
+            "speed-boost"
+          ],
+          "held": "blazikenite",
+          "sprite": "blaziken-mega"
         }
       ]
     }

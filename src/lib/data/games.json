@@ -191,13 +191,16 @@
   },
   "radred": {
     "pid": "radred",
+    "lid": "radred",
     "logo": "/logos/radical-red-logo",
     "title": "Radical Red",
     "gen": "romhack",
     "supported": true,
     "patched": true,
+    "patchId": "radred",
     "region": "kanto",
-    "lastUpdated": "11th March 2023"
+    "lastUpdated": "11th March 2023",
+    "difficulty": [":", "Hardcore:_hard"]
   },
   "renplat": {
     "pid": "renplat",
