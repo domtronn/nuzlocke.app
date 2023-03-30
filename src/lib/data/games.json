@@ -1,4 +1,17 @@
 {
+  "unbound": {
+    "pid": "unbound",
+    "lid": "unbound",
+    "logo": "/logos/unbound-logo",
+    "title": "Unbound",
+    "gen": "romhack",
+    "supported": true,
+    "patched": true,
+    "patchId": "unbound",
+    "region": "borrius",
+    "lastUpdated": "24th March 2023",
+    "difficulty": [":", "Expert:_exp"]
+  },
   "vi": {
     "pid": "vi",
     "lid": "sv",
