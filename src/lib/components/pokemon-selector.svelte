@@ -48,15 +48,18 @@
   const dispatch = createEventDispatcher()
 
   let loading = true
-  let evolines = new Set()
+  let dupelines = new Set(), misslines = new Set()
+
   store && store.subscribe(read(data => {
-    getPkmns(
-      Object
-        .values(data)
-        .filter(p => p && (!p.status || NuzlockeGroups.Dupes.includes(p?.status)))
+    const getStateMons = (data, stateGroup) => {
+      return Object.values(data)
+        .filter(p => p && (!p.status || stateGroup.includes(p?.status)))
         .map(p => p.pokemon)
         .filter(i => i)
-    ).then(p => evolines = new Set(Object.values(p).map(p => p?.evoline)))
+    }
+
+    getPkmns(getStateMons(data, NuzlockeGroups.Dupes)).then(p => dupelines = new Set(Object.values(p).map(p => p?.evoline)))
+    getPkmns(getStateMons(data, NuzlockeGroups.MissDupes)).then(p => misslines = new Set(Object.values(p).map(p => p?.evoline)))
 
     const pkmn = data[location]
     if (!pkmn) return
@@ -161,7 +164,8 @@
   </span>
 
   <SettingsWrapper id=encounter-suggestions let:setting={suggest}>
-    <SettingsWrapper id=dupe-clause let:setting>
+    <SettingsWrapper id=dupe-clause let:setting={dupes}>
+    <SettingsWrapper id=missed-dupes let:setting={missdupes}>
       {#if selected && (selected.hidden || hidden)}
         <button
           class='group overflow-hidden relative dark:bg-transparent transition-colors w-11/12 sm:w-full sm:text-xs pr-3 m-0 border-2 rounded-lg hover:border-lime-500 dark:border-gray-600 dark:hover:border-lime-400 dark:hover:bg-gray-700/25 inline-flex justify-between items-center col-span-2'
@@ -190,13 +194,13 @@
           >
 
           <span class='flex items-center h-8 px-4 py-5 md:py-6 '
-                class:hidden={setting === 2 && evolines.has(item?.evoline)}
-                class:dupe={setting === 1 && evolines.has(item?.evoline)}
+                class:hidden={dupes === 2 && (missdupes ? misslines : dupelines).has(item?.evoline)}
+                class:dupe={dupes === 1 && (missdupes ? misslines : dupelines).has(item?.evoline)}
                 aria-label={label}
                 slot=item let:item let:label>
             <PIcon name={item?.sprite} className='transform -mb-4 -ml-6 -mt-5 -mr-2' />
             {@html label}
-            {#if setting === 1 && evolines.has(item?.evoline)}
+            {#if dupes === 1 && (missdupes ? misslines : dupelines).has(item?.evoline)}
               <span class='dupe__span absolute text-tiny right-4'>dupe</span>
             {/if}
           </span>
@@ -218,6 +222,7 @@
           </svelte:fragment>
         </AutoComplete>
       {/if}
+    </SettingsWrapper>
     </SettingsWrapper>
   </SettingsWrapper>
 

@@ -3,12 +3,14 @@
 
   import TypeBadge from '$lib/components/type-badge.svelte'
   import StatBlock from '$lib/components/stat-block.svelte'
-  import ColorMap from '$lib/data/colors.json'
+
+  import { Wrapper as SettingWrapper } from '$lib/components/Settings'
+  import { color } from '$lib/data/colors.ts'
 
   const [atk, def] = pokemon
-  const col = ColorMap[atk.types[0].toLowerCase()]
 </script>
 
+<SettingWrapper id=theme let:setting={themeId}>
 <div class=flex-1>
   <span class='flex gap-x-2 mb-2 -ml-2 justify-{side === 'left' ? 'start' : 'end'} transform scale-75'>
     {#each atk.types as type}
@@ -21,7 +23,8 @@
     {...atk.baseStats}
     compare={def.baseStats}
     max={250}
-    {col}
+    col={color(atk.types[0])}
     {side}
   />
 </div>
+</SettingWrapper>

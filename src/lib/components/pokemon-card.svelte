@@ -2,15 +2,16 @@
 
   export let sprite, fallback, name, types, tera, level = '', moves, maxStat, held = '', ability = '', stats, nature = undefined, minimal = false
 
-  import { capitalise } from '$lib/utils/string'
+  import { capitalise, regionise } from '$lib/utils/string'
   import { isEmpty } from '$lib/utils/obj'
 
-  import PIcon from '$lib/components/core/PokemonIcon.svelte'
-  import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
+  import { PIcon, Icon, Tooltip } from '$c/core'
+
   import { Hand } from '$icons'
 
-  import ColorMap from '$lib/data/colors.json'
-  import Tooltip from '$lib/components/core/Tooltip.svelte'
+  import { color } from '$lib/data/colors.ts'
+  import { Wrapper as SettingWrapper } from '$lib/components/Settings'
+
   import TypeBadge from '$lib/components/type-badge.svelte'
   import MoveCard from '$lib/components/move-card.svelte'
   import StatBlock from '$lib/components/stat-block.svelte'
@@ -20,17 +21,15 @@
 
   const canonname = name.replace(/-(Alola|Galar)/, '')
 
-  const cols = types.map(t => ColorMap[t])
-  const bgImg = Pattern(cols[1] || cols[0])
-
   const anim = ['bob'][Math.floor(Math.random() * 1)]
   const animDur = Math.floor(Math.random() * 4) + 4
   const animDelay = Math.floor(Math.random() * 10) / 10
 </script>
 
+<SettingWrapper id=theme let:setting={themeId}>
 <div class='card relative flex flex-col border dark:border-gray-900 bg-white dark:bg-gray-900 dark:shadow-lg rounded-lg {$$restProps.class || ''}'>
   <div
-    style='--t-col: {cols[0]}; background-image: url("{bgImg}");'
+    style='--t-col: {color(types[0], themeId)}; background-image: url("{Pattern(color(types[1], themeId) || color(types[0], themeId))}");'
     class:rounded-b-lg={minimal}
     class:minimal={minimal}
     class='card__header flex justify-between pl-4 pt-4 pb-3 relative z-0 rounded-t-lg'
@@ -60,7 +59,7 @@
           {/if}
         </p>
 
-        {capitalise(canonname)}
+        {capitalise(regionise(name))}
 
         {#if held}
           <div class='absolute right-0 -bottom-0.5 translate-x-full z-20 p-1 mb-1 flex flex-col cursor-help items-center'>
@@ -110,7 +109,7 @@
 
   {#if !minimal}
     <div
-      style='border-color: {cols[0]}'
+      style='border-color: {color(types[0], themeId)}'
       class='relative inline-flex bg-white dark:bg-gray-900 border-t-2 sm:items-center rounded-b-lg z-10'>
       {#if moves && moves.length}
         <div class='grid grid-cols-1 xl:grid-cols-2 xl:grid-rows-2 w-3/5 sm:w-2/3 my-3 ml-4 gap-y-0 lg:gap-y-3'>
@@ -124,7 +123,7 @@
         {#if $$slots.stats}
           <slot name='stats' />
         {:else}
-          <StatBlock col={cols[0]} nature={nature} max={maxStat} {...stats} />
+          <StatBlock col={color(types[0], themeId)} nature={nature} max={maxStat} {...stats} />
         {/if}
       </div>
     </div>
@@ -132,6 +131,7 @@
     <slot name="footer" id={canonname} />
   {/if}
 </div>
+</SettingWrapper>
 
 <style lang="postcss">
   img {

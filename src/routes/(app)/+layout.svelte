@@ -1,10 +1,12 @@
 <script>
   import { page } from '$app/stores'
-  import { createUser } from '$lib/store'
+  import { createUser, savedGames, activeGame, parse } from '$lib/store'
   let path = $page.url.pathname;
 
   import { setContext } from 'svelte';
   import { browser, dev } from '$app/environment';
+
+  import { getSetting } from '$c/Settings/_data'
 
   import { fetchData, fetchLeague } from '$utils/fetchers';
   import { GameHeading, NavHeading, CookieBanner, Footer } from '$c/navs';

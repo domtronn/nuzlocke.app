@@ -9,7 +9,6 @@
   import { capitalise } from '$lib/utils/string'
   import { activeGame, getGame, read } from '$lib/store'
   import { NuzlockeGroups } from '$lib/data/states'
-  import ColorMap from '$lib/data/colors.json'
 
   import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
   import { Arrow } from '$icons'
