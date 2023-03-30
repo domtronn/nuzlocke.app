@@ -5,7 +5,7 @@
   let pokemon = [], name = '', speciality = '', img
 
   // Extra leader data
-  let doubleBattle = false, effect
+  let doubleBattle = false, effect, info
 
   import { browser } from '$app/environment'
   import { onMount, getContext } from 'svelte'
@@ -20,7 +20,7 @@
   import { Picture, Icon, PIcon, Accordion, Tooltip } from '$c/core'
   import { Wrapper as SettingWrapper } from '$lib/components/Settings'
 
-  import { Loop as Badge, Ball, Double } from '$icons'
+  import { Loop as Badge, Ball, Double, Info } from '$icons'
 
   import Effect from '$lib/components/Effect.svelte'
 
@@ -51,6 +51,7 @@
 
       doubleBattle = data.doubleBattle
       effect = data.effect
+      info = data.info
       loading = false
     } catch (e) {
       console.error(e)
@@ -114,6 +115,16 @@
 
           {#if speciality}
             <div><TypeBadge type={speciality} /></div>
+          {/if}
+
+          {#if info}
+            <span class='ml-1 text-xl' >
+              <Tooltip>
+
+                {@html info}
+              </Tooltip>
+              <Icon class='mt-1' inline icon={Info} />
+            </span>
           {/if}
 
           {#if effect}

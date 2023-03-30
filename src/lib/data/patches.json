@@ -3901,17 +3901,22 @@
       "toxtricitite": {
         "name": "Toxtricitite",
         "sprite": "mawilite",
-        "effect": "Allows Toxtricity to Mega Evolve into Mega Toxtricity"
+        "effect": "Allows Toxtricity to Mega Evolve into Mega Toxtricity."
       },
       "duraludite": {
         "name": "Duraludite",
         "sprite": "aggronite",
-        "effect": "Allows Duraludon to Mega Evolve into Mega Duraludon"
+        "effect": "Allows Duraludon to Mega Evolve into Mega Duraludon."
       },
       "heavy-duty-boots": {
         "name": "Heavy duty boots",
         "sprite": "heavy-duty-boots",
         "effect": "When switching in, the holder is unaffected by hazards on its side of the field."
+      },
+      "eternamax-orb": {
+        "name": "Eternamax orb",
+        "sprite": "toxic-orb",
+        "effect": "If held by an Eternatus, this item triggers its Primal Reversion in battle."
       }
     },
     "move": {
@@ -3966,9 +3971,39 @@
         "effect": "This move has a 40% chance to inflict sleep on the target, it also bypasses substitute.",
         "category": "special"
       },
+      "draco-barrage": {
+        "power": "100",
+        "type": "dragon",
+        "effect": "This move becomes a physical attack if the user's Attack is greater than its Special Attack. If the target lost HP, the user takes recoil damage equal to 33% the HP. This move can hit Fairy-type Pokemon.",
+        "category": "special"
+      },
       "hidden-power-grass": {
         "power": "60",
         "type": "grass",
+        "category": "special",
+        "locale": "Hidden Power"
+      },
+      "hidden-power-ground": {
+        "power": "60",
+        "type": "ground",
+        "category": "special",
+        "locale": "Hidden Power"
+      },
+      "hidden-power-rock": {
+        "power": "60",
+        "type": "rock",
+        "category": "special",
+        "locale": "Hidden Power"
+      },
+      "hidden-power-bug": {
+        "power": "60",
+        "type": "bug",
+        "category": "special",
+        "locale": "Hidden Power"
+      },
+      "hidden-power-electric": {
+        "power": "60",
+        "type": "electric",
         "category": "special",
         "locale": "Hidden Power"
       },
@@ -4018,6 +4053,10 @@
         "name": "Liquid voice",
         "effect": "This Pokemon's sound-based moves become Water-type moves and have their power multiplied by 1.2×."
       },
+      "fatal-precision": {
+        "name": "Fatal precision",
+        "effect": "Super Effective Moves from this Pokemon can’t miss and receive a 20% damage boost."
+      },
       "blazing-soul": {
         "name": "Blazing soul",
         "effect": "If this Pokemon is at full HP, its Fire-type moves have their priority increased by 1."
@@ -4041,6 +4080,26 @@
       "striker": {
         "name": "Striker",
         "effect": "This Pokemon's kick-based attacks have their power multiplied by 1.3."
+      },
+      "stalwart": {
+        "name": "Stalwart",
+        "effect": "This Pokemon's moves cannot be redirected to a different target by any effect."
+      },
+      "blubber-defense": {
+        "name": "Blubber defense",
+        "effect": "If this Pokemon is at full HP, damage taken from attacks is halved."
+      },
+      "bone-zone": {
+        "name": "Bone zone",
+        "effect": "Bone moves ignore immunities and deal double damage on not very effective."
+      },
+      "phoenix-down": {
+        "name": "Phoenix down",
+        "effect": "Once per battle, this Pokemon restores 1/2 of its maximum HP, has its non-volatile status condition cured, and has its stat stages reset to 0 instead of fainting."
+      },
+      "sage-power": {
+        "name": "Sage power",
+        "effect": "This Pokemon's Sp. Atk is 1.5x, but it can only select the first move it executes."
       }
     },
     "pokemon": {
@@ -5880,6 +5939,107 @@
         "total": 320,
         "evoline": "pikachu",
         "imgUrl": "/radred/pikachu-surfing"
+      },
+      "arceus-ground": {
+        "name": "Arceus",
+        "label": "Arceus",
+        "alias": "arceus-ground",
+        "sprite": "arceus-ground",
+        "types": [
+          "ground"
+        ],
+        "baseStats": {
+          "hp": 120,
+          "atk": 120,
+          "def": 120,
+          "spa": 120,
+          "spd": 120,
+          "spe": 120
+        },
+        "total": 720,
+        "evoline": "arceus",
+        "imgUrl": "/radred/arceus-ground"
+      },
+      "arceus-steel": {
+        "name": "Arceus",
+        "label": "Arceus",
+        "alias": "arceus-steel",
+        "sprite": "arceus-steel",
+        "types": [
+          "steel"
+        ],
+        "baseStats": {
+          "hp": 120,
+          "atk": 120,
+          "def": 120,
+          "spa": 120,
+          "spd": 120,
+          "spe": 120
+        },
+        "total": 720,
+        "evoline": "arceus",
+        "imgUrl": "/radred/arceus-steel"
+      },
+      "arceus-fairy": {
+        "name": "Arceus",
+        "label": "Arceus",
+        "alias": "arceus-fairy",
+        "sprite": "arceus-fairy",
+        "types": [
+          "fairy"
+        ],
+        "baseStats": {
+          "hp": 120,
+          "atk": 120,
+          "def": 120,
+          "spa": 120,
+          "spd": 120,
+          "spe": 120
+        },
+        "total": 720,
+        "evoline": "arceus",
+        "imgUrl": "/radred/arceus-fairy"
+      },
+      "silvally-ghost": {
+        "name": "Silvally",
+        "label": "Silvally",
+        "alias": "silvally-ghost",
+        "sprite": "silvally-ghost",
+        "types": [
+          "ghost"
+        ],
+        "baseStats": {
+          "hp": 100,
+          "atk": 100,
+          "def": 100,
+          "spa": 100,
+          "spd": 100,
+          "spe": 100
+        },
+        "total": 600,
+        "evoline": "type-null",
+        "imgUrl": "/radred/silvally-ghost"
+      },
+      "toxtricity-mega": {
+        "name": "Mega Toxtricity",
+        "label": "Mega Toxtricity",
+        "alias": "toxtricity-mega",
+        "sprite": "toxtricity-mega",
+        "types": [
+          "electric",
+          "poison"
+        ],
+        "baseStats": {
+          "hp": 75,
+          "atk": 120,
+          "def": 80,
+          "spa": 155,
+          "spd": 80,
+          "spe": 111
+        },
+        "total": 621,
+        "evoline": "toxel",
+        "imgUrl": "/radred/toxtricity-mega"
       }
     }
   },

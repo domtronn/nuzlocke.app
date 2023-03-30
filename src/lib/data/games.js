@@ -11,6 +11,7 @@ export const Expanded = Object.fromEntries(
 
           return [key + idmod, {
             ...game,
+            difficulty: name,
             pid: game.pid + idmod,
             title: game.title + ' ' + name
           }]
