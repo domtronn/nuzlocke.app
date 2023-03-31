@@ -9,7 +9,7 @@
   const total = Object.values(stats).reduce((acc, it) => acc + it, 0)
 </script>
 
-<div style='--t-col: {col}' class='grid grid-cols-11 sm:grid-cols-7 gap-x-2 gap-y-1 items-center'>
+<div style='--t-col: {col}' class='grid grid-cols-20 sm:grid-cols-7 gap-x-2 gap-y-1 items-center {$$restProps.class || ''}'>
   <span class='z-40 absolute top-0 -translate-y-1/2 {side === 'right' ? '-' : ''}translate-x-1/2 {side}-2'>
     <b class='py-1 -ml-2 pl-2 pr-2.5'>{total}</b>
   </span>

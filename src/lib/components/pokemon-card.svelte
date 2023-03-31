@@ -110,22 +110,26 @@
   {#if !minimal}
     <div
       style='border-color: {color(types[0], themeId)}'
-      class='relative inline-flex bg-white dark:bg-gray-900 border-t-2 sm:items-center rounded-b-lg z-10'>
+      class='relative flex flex-col-reverse md:flex-row md:inline-flex bg-white dark:bg-gray-900 border-t-2 sm:items-center rounded-b-lg z-10'>
       {#if moves && moves.length}
-        <div class='grid grid-cols-1 xl:grid-cols-2 xl:grid-rows-2 w-3/5 sm:w-2/3 my-3 ml-4 gap-y-0 lg:gap-y-3'>
+        <div class='grid grid-cols-2 my-3 ml-4 gap-x-4 gap-y-0 lg:gap-y-3'>
           {#each moves.filter(m => !isEmpty(m)) as m}
             <MoveCard {...m} stab={types.includes(m.type)} />
           {/each}
         </div>
       {/if}
 
-      <div class={moves && moves.length ? 'w-2/5 sm:w-1/3 mr-4 sm:mt-0 mt-5' : 'w-full m-4'}>
         {#if $$slots.stats}
           <slot name='stats' />
         {:else}
-          <StatBlock col={color(types[0], themeId)} nature={nature} max={maxStat} {...stats} />
+          <StatBlock
+            class='grid-cols-20 mt-4 w-auto grow mx-4 md:mt-0'
+            col={color(types[0], themeId)}
+            nature={nature}
+            max={maxStat}
+            {...stats}
+          />
         {/if}
-      </div>
     </div>
 
     <slot name="footer" id={canonname} />
