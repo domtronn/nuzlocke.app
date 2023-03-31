@@ -10,12 +10,8 @@ export function drag (node, { data, id, effect, hideImg = false }) {
 
     if (window.navigator) window.navigator.vibrate(200)
 
-    let position = [5,5]
-    const { matches } = window.matchMedia("(max-width: 700px)")
-    if (matches) position = [-20, -20]
-
     evt.dataTransfer.effectAllowed = effect
-    evt.dataTransfer.setDragImage(imgEl, ...position)
+    evt.dataTransfer.setDragImage(imgEl, 50, 40)
     evt.dataTransfer.setData('data', JSON.stringify(data))
     if (id) evt.dataTransfer.setData('srcId', id)
   })
