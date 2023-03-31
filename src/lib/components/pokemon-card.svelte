@@ -123,7 +123,7 @@
           <slot name='stats' />
         {:else}
           <StatBlock
-            class='grid-cols-20 mt-4 w-auto grow mx-4 md:mt-0'
+            class='grid-cols-20 mt-4 md:mt-3 w-auto grow mx-4'
             col={color(types[0], themeId)}
             nature={nature}
             max={maxStat}

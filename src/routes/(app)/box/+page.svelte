@@ -260,7 +260,7 @@
           {/if}
           {#each box.filter(filter) as p (p)}
             <span
-              use:drag={{ data: p, effect: 'copy', hideImg: true }}
+              use:drag={{ data: p, effect: 'add', hideImg: true }}
               class='snap-start'
               animate:flip={{ duration: d => 10 * Math.sqrt(d) }}
               out:fade={{ duration: 150 }}
