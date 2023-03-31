@@ -151,7 +151,7 @@
   }
 
   $: mons = team.map(t => ogbox.find(o => t.id == o.id))
-
+  $: mons && console.log("mons", mons)
 </script>
 {#if loading}
   <Loader />
