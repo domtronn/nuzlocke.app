@@ -400,7 +400,6 @@
     main {
       height: calc(100vh - 38px);
       overflow-y: scroll;
-      @apply pb-24;
     }
   }
 
