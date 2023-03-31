@@ -172,7 +172,7 @@
           </div>
         </div>
 
-        <div class='inline-flex flex-nowrap sm:flex-row gap-y-2 gap-x-4 sm:items-start z-50 mt-2'>
+        <div class='inline-flex flex-wrap md:flex-nowrap sm:flex-row gap-y-2 gap-x-4 sm:items-start z-50 mt-2'>
           <div class='grid sm:grid-rows-2 grid-cols-8 w-full sm:w-auto sm:grid-cols-5 gap-1 sm:gap-2 col-span-2'>
             <IconButton
               rounded
@@ -223,9 +223,9 @@
           </div>
 
 
-          <div class='text-right -translate-y-12'>
-            <h2 class='font-bold -mb-1 text-gray-800'>Your team</h2>
-            <p class='font-italic text-gray-600'>
+          <div class='max-md:fixed max-md:py-4 max-md:border-t-2 dark:border-gray-900 border-gray-200 w-full md:w-auto mx-auto bottom-0 left-0 backdrop-blur-xl text-center md:text-right md:-translate-y-12'>
+            <h2 class='max-md:hidden font-bold -mb-1 text-gray-800 dark:text-gray-200'>Your team</h2>
+            <p class='max-md:hidden font-italic text-gray-600 dark:text-gray-400'>
               <small>Drag pokemon from your box to the slots</small>
             </p>
             <MiniTeam
@@ -331,7 +331,7 @@
       borderless
       />
 
-    {#if team.length < 6}
+    {#if team.length < 6 || team.find(t => t.id == p.id)}
       <IconButton
         className='transform scale-75'
         borderless
