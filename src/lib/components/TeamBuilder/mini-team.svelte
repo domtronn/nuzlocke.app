@@ -57,6 +57,7 @@
     evt.stopPropagation()
     const data = JSON.parse(evt.dataTransfer.getData('data'))
     const srcId = +evt.dataTransfer.getData('srcId')
+    console.log(' --- ', evt.dataTransfer)
     const act = evt.dataTransfer.effectAllowed === 'move' ? 'swap' : action
 
     if (!over) return dragLeave()
