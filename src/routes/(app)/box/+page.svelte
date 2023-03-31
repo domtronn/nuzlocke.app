@@ -135,6 +135,13 @@
   }
 
   function teamreplace (evt) {
+    if (team.map(t => t.id).includes(evt.detail.data.id))
+      return teamswap({ detail: {
+        data: evt.detail.data,
+        targetId: evt.detail.targetId,
+        srcId: team.findIndex(t => t.id === evt.detail.data.id)
+      }})
+
     team = team.map((it, i) => i === evt.detail.targetId ? evt.detail.data : it)
   }
   function teamremove (mon, id) { team = team.filter((it, i) => it.id !== mon.detail.data.id)}
