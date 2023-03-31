@@ -39,7 +39,7 @@
         class:disabled={!box || !box.length}
         class='px-3 py-1 gap-x-1 inline-flex items-center' slot=icon>
     <Icon inline={true} height=1.2em icon={Analysis} class=fill-current />
-    Research team
+    <slot />
   </span>
 </IconButton>
 

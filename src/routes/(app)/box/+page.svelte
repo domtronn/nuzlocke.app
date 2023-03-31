@@ -21,10 +21,7 @@
   import deferStyles from '$utils/defer-styles'
 
   import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
-  import { Shiny } from '$icons'
-  import { X } from '$icons'
-  import { Deceased } from '$icons'
-  import { External } from '$icons'
+  import { Plus, Shiny, X, Deceased, External } from '$icons'
 
   const { getPkmns, getPkmn } = getContext('game')
   const { open } = getContext('simple-modal')
@@ -66,10 +63,10 @@
   $: filter = (p) => !type || (Pokemon[p.pokemon]?.types || []).map(i => i.toLowerCase()).includes(type)
 
   $: typeCounts = types
-    .reduce((acc, it) => ({
-      ...acc,
-      [it]: ogbox.filter(p => (Pokemon[p.pokemon]?.types || []).map(i => i.toLowerCase()).includes(it)).length
-    }), {})
+  .reduce((acc, it) => ({
+    ...acc,
+    [it]: ogbox.filter(p => (Pokemon[p.pokemon]?.types || []).map(i => i.toLowerCase()).includes(it)).length
+  }), {})
 
   $: box = [...ogbox]
   .sort((a, b) => {
@@ -90,7 +87,7 @@
     return stat
       ? Pokemon[b.pokemon]?.baseStats[stat] - Pokemon[a.pokemon]?.baseStats[stat]
       : a.id - b.id
-    })
+  })
 
   $: enabled = box.length && (stat || type)
 
@@ -99,18 +96,18 @@
   let evoComplete = false
   const handleEvo = ({ evos, alias }, original) => open(EvoModal, { evolutions: evos, base: alias, select: handleEvoComplete(original) })
   const handleEvoComplete = o => async id => getPkmn(id)
-    .then(p => {
-      getPkmns(box.map(i => i.pokemon).concat(p.alias))
-        .then(data => {
-          Pokemon = data
-          ogbox = ogbox.map(i => {
-            return toid(i) == toid(o) ? { ...i, pokemon: p.alias } : i
-          })
+        .then(p => {
+          getPkmns(box.map(i => i.pokemon).concat(p.alias))
+            .then(data => {
+              Pokemon = data
+              ogbox = ogbox.map(i => {
+                return toid(i) == toid(o) ? { ...i, pokemon: p.alias } : i
+              })
 
-          updatePokemon({ ...o, pokemon: p.alias })
-          evoComplete = toid(o)
+              updatePokemon({ ...o, pokemon: p.alias })
+              evoComplete = toid(o)
+            })
         })
-    })
 
   const handleKill = (o) => () => {
     open(DeathModal, {
@@ -126,6 +123,10 @@
   }
 
   let team = [], mons
+  function teamhas (mon) {
+    return !!team.find(t => t.id === mon.id)
+  }
+
   function teamadd (evt) {
     if (team.map(t => t.id).includes(evt.detail.data.id)) return
     team = team.concat(evt.detail.data)
@@ -134,10 +135,10 @@
   function teamreplace (evt) {
     team = team.map((it, i) => i === evt.detail.targetId ? evt.detail.data : it)
   }
-  function teamremove (mon, id) { team = team.filter((it, i) => it.id !== mon.detail.id)}
+  function teamremove (mon, id) { team = team.filter((it, i) => it.id !== mon.detail.data.id)}
 
   function teamswap (evt) {
-    const targetId = evt.detail.targetId
+    const targetId = Math.min(evt.detail.targetId, team.length - 1)
     const srcId = evt.detail.srcId
 
     team = team.map((it, i, arr) => {
@@ -157,18 +158,13 @@
     <div class='flex flex-col mx-auto items-center justify-center'>
       <main class='w-full xl:w-3/4 flex flex-col gap-y-4 py-6 pb-48 px-4 md:px-8 overflow-hidden snap-y scroll-pt-5'>
 
-        <MiniTeam
-          {mons}
-          iconKey=pokemon
-
-          on:add={teamadd}
-          on:remove={teamremove}
-          on:replace={teamreplace}
-          on:swap={teamswap}
-          />
-
         <div class='flex flex-col md:flex-row items-end md:items-center gap-x-2 relative md:mt-0 sm:-my-2 snap-start'>
-          <AnalysisModal box={Object.values(Pokemon)} />
+          <AnalysisModal box={Object.values(Pokemon)}>
+            Box
+          </AnalysisModal>
+          <AnalysisModal box={team.map(p => Pokemon[p.pokemon])}>
+            Team
+          </AnalysisModal>
           <div class='mt-1 flex md:flex-row-reverse gap-x-2'>
             <Toggle id=minimal bind:state={minimal}>
               <small>Hide stats</small>
@@ -176,7 +172,7 @@
           </div>
         </div>
 
-        <div class='inline-flex flex-wrap sm:flex-row gap-y-2 gap-x-4 sm:items-start z-50 mt-2'>
+        <div class='inline-flex flex-nowrap sm:flex-row gap-y-2 gap-x-4 sm:items-start z-50 mt-2'>
           <div class='grid sm:grid-rows-2 grid-cols-8 w-full sm:w-auto sm:grid-cols-5 gap-1 sm:gap-2 col-span-2'>
             <IconButton
               rounded
@@ -187,7 +183,7 @@
               on:click={clear}
               >
               <Tooltip>Clear all filters</Tooltip>
-              </IconButton>
+            </IconButton>
 
             {#each stats as s}
               <label
@@ -210,7 +206,7 @@
             {/each}
           </div>
 
-          <div class='w-full sm:w-auto grid grid-cols-5 md:grid-cols-9 gap-x-2 gap-y-2 col-span-3'>
+          <div class='sm:w-auto grid grid-cols-6 md:grid-cols-6 gap-x-2 gap-y-2 col-span-3'>
             {#each types as t}
               {#if typeCounts[t] > 0}
                 <label
@@ -218,12 +214,30 @@
                   class:grayscale={(type && type !== t) || !typeCounts[t]}
                   class:opacity-50={(type && type !== t) || !typeCounts[t]}
                   class:grayscale-0={type && type === t}
-                >
+                  >
                   <input disabled={!typeCounts[t]} type=radio bind:group={type} name='filter' value={t} />
                   <TypeBadge type={t} className='w-full justify-center' />
                 </label>
               {/if}
             {/each}
+          </div>
+
+
+          <div class='text-right -translate-y-12'>
+            <h2 class='font-bold -mb-1 text-gray-800'>Your team</h2>
+            <p class='font-italic text-gray-600'>
+              <small>Drag pokemon from your box to the slots</small>
+            </p>
+            <MiniTeam
+              {mons}
+              class='-mr-2.5'
+              iconKey=pokemon
+
+              on:add={teamadd}
+              on:remove={teamremove}
+              on:replace={teamreplace}
+              on:swap={teamswap}
+              />
           </div>
         </div>
 
@@ -238,19 +252,20 @@
           class:xl:grid-cols-4={!minimal}
           class:xl:grid-cols-5={minimal}
           class='grid gap-x-4 gap-y-8 mt-6'
-        >
+          >
           {#if box.length === 0}
             <span class='h-96 flex items-center justify-center col-span-4 dark:text-gray-600 text-xl'>You have no Pokémon in your box</span>
           {/if}
           {#each box.filter(filter) as p (p)}
             <span
-              use:drag={{ data: p, effect: 'copy' }}
+              use:drag={{ data: p, effect: 'copy', hideImg: true }}
               class='snap-start'
               animate:flip={{ duration: d => 10 * Math.sqrt(d) }}
               out:fade={{ duration: 150 }}
               >
-              <PIcon class='absolute -z-20 -left-20 -bottom-20 data-drag-img' name={p.pokemon} />
-              {#key p}
+
+              <PIcon class='absolute invisible -z-20 -left-20 -bottom-20 data-drag-img' name={p.pokemon} />
+
               <PokemonCard
                 {minimal}
                 sprite={createImgUrl(Pokemon[p.pokemon], { shiny: p.status === 6, ext: 'png' })}
@@ -262,7 +277,7 @@
                 stats={Pokemon[p.pokemon].baseStats}
                 nature={p.nature}
                 types={(Pokemon[p.pokemon].types || []).map(t => t.toLowerCase())}
-              >
+                >
 
                 <span slot=img>
                   {#if evoComplete === toid(p)}
@@ -290,36 +305,52 @@
                     Met {p.location.startsWith('Route') ? 'on' : 'in'} {p.location}
                   {/if}
 
-                  <span class=mx-1>ǀ</span>
+<span class=mx-1>ǀ</span>
 
-                  <a class='hover:text-black dark:hover:text-gray-50 transition border-b border-transparent hover:border-black inline'
-                     href={toDb(id)}
-                     title='Pokémon DB Link for {id}'
-                     rel=noreferrer target=_blank >
-                    Info
-                    <Icon inline={true} icon={External} class='fill-current inline -mt-0.5' />
-                  </a>
+<a class='hover:text-black dark:hover:text-gray-50 transition border-b border-transparent hover:border-black inline'
+   href={toDb(id)}
+   title='Pokémon DB Link for {id}'
+   rel=noreferrer target=_blank >
+  Info
+  <Icon inline={true} icon={External} class='fill-current inline -mt-0.5' />
+</a>
 
-                  <div class:hidden={minimal} class='card-controls absolute -bottom-4 flex left-1/2 -translate-x-1/2 border border-gray-200 bg-red-200 rounded-lg shadow-md'>
-                    {#if Pokemon[p.pokemon].evos?.length}
-                      <IconButton
-                        className='translate-y-1 -mb-px transform scale-75'
-                        borderless
-                        name=dawn-stone
-                        on:click={handleEvo(Pokemon[p.pokemon], p)}
-                      />
-                    {/if}
-                    <IconButton
-                      on:click={handleKill(p)}
-                      className=translate-y-1
-                      src={Deceased}
-                      borderless
-                      />
-                  </div>
+<div class:hidden={minimal} class='card-controls absolute -bottom-4 flex left-1/2 -translate-x-1/2 border border-gray-200 bg-red-200 rounded-lg shadow-md'>
+  {#if Pokemon[p.pokemon].evos?.length}
+    <IconButton
+      className='translate-y-1 -mb-px transform scale-75'
+      borderless
+      name=dawn-stone
+      on:click={handleEvo(Pokemon[p.pokemon], p)}
+      />
+    {/if}
+    <IconButton
+      on:click={handleKill(p)}
+      className=translate-y-1
+      src={Deceased}
+      borderless
+      />
+
+    {#if team.length < 6}
+      <IconButton
+        className='transform scale-75'
+        borderless
+        on:click={(team.find(t=>t.id === p.id) ? teamremove : teamadd).bind({}, { detail: { data: p }})}
+        >
+        <span class='absolute transition right-5 top-[10px] dark:text-gray-500 dark:group-hover:text-gray-400'>
+          {#if team.find(t=>t.id === p.id)}
+            -
+          {:else}
+            +
+          {/if}
+        </span>
+        <PIcon class='-ml-4 -mr-5 -mt-4 -mb-6 opacity-30 transition dark:contrast-0 dark:opacity-80 group-hover:opacity-100 transform scale-50' name=unknown-pokemon2 />
+      </IconButton>
+    {/if}
+  </div>
 
                 </span>
               </PokemonCard>
-              {/key}
             </span>
           {/each}
         </div>

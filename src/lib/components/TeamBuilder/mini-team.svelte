@@ -1,7 +1,6 @@
 <script>
   import { PIcon, Icon } from '$c/core'
   import { X } from '$icons'
-
   import { scale } from 'svelte/transition'
   import { drag } from '$utils/drag'
 
@@ -9,9 +8,8 @@
   const dispatch = createEventDispatcher()
 
   export let mons = [], iconKey
+  export let debug = false
 
-  // Data types
-  let source, id
   //  Action types
   let action, over
 
@@ -24,11 +22,13 @@
   function dragAdd (evt) {
     dragOver(evt)
     action = getAttr(evt.target, 'data-drag-action')
+    console.log('add', action)
   }
 
   function dragReplace (evt) {
     dragOver(evt)
     action = getAttr(evt.target, 'data-drag-action')
+    console.log('replace', action)
   }
 
   function dragSwap (evt) {
@@ -72,35 +72,38 @@
       targetId: getAttr(evt.target, 'data-drag-id')
     })
   }
-
 </script>
 
+{#if debug}
 <div>
   mons: {mons.map(m => m[iconKey])}<br />
   action: {action} <br />
   over: {over}
 </div>
+{/if}
 
-<div
-  on:dragenter={dragAdd}
-  on:drop={onDrop}
-  ondragover="return false"
-
-  class='inline-flex gap-x-3 items-center'>
+<div class='inline-flex gap-x-4 items-center {$$restProps.class || ''}'>
 
   {#each mons as p, i}
     <p
       use:drag={{ data: p, id: i, effect: 'move' }}
       on:click={onRemove(p)}
+
       on:dragenter={dragReplace}
+      on:dragleave={dragLeave}
       on:drop={onDrop}
 
       data-drag-id={i}
       data-drag-action=replace
 
+      class:opacity-50={over && +over === i}
       ondragover="return false"
-      class='relative w-10 h-10 group cursor-pointer'>
-      <span in:scale={{ duration: 500 }}>
+      class='relative w-10 h-10 group transition'
+    >
+
+      <span
+        class=pointer-events-none
+        in:scale={{ duration: 500 }}>
       <PIcon
         class='data-drag-img pointer-events-none transform scale-150 absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2'
         name={p?.[iconKey]}
@@ -108,7 +111,7 @@
       </span>
 
       <Icon
-        class='absolute opacity-0 left-1/2 -translate-x-1/2 -bottom-4 transition group-hover:opacity-100'
+        class='absolute opacity-0 left-1/2 -translate-x-1/2 -bottom-4 pointer-events-none transition group-hover:opacity-100'
         inline icon={X} />
 
       <PIcon
@@ -119,16 +122,21 @@
   {/each}
 
 {#each Array(6 - mons.length).fill() as _, i}
-    <p
-      class:bg-red-50={over === (i + mons.length)}
+  <p
+    on:dragenter={dragAdd}
+    on:dragleave={dragLeave}
+    on:drop={onDrop}
+
+      class:opacity-40={over && +over === (i + mons.length)}
 
       data-drag-id={i + mons.length}
       data-drag-action=add
 
-      class='relative w-10 h-10 rounded-full'
+      ondragover="return false"
+      class='relative w-10 h-10 transition'
       >
-      <PIcon
-        class='dark:contrast-0 opacity-40 absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 pointer-events-none -mt-[2px]'
+    <PIcon
+      class='dark:contrast-0 opacity-40 contrast-200 absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 pointer-events-none brightness-200 -mt-[2px]'
         name=unknown-pokemon2
       />
     </p>
