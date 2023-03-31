@@ -2,12 +2,11 @@ export function drag (node, { data, id, effect, hideImg = false }) {
   node.setAttribute('draggable', true)
 
   const startListener = node.addEventListener('dragstart', (evt) => {
-    const imgEl = evt.target.querySelector('[data-drag-img] i')
-      || evt.target.querySelector('.data-drag-img i')
+    const imgEl = evt.target.querySelector('[data-drag-img]')
+      || evt.target.querySelector('.data-drag-img')
       || evt.target
 
     if (hideImg) imgEl.classList.remove('invisible')
-    console.log('dragstart', evt.target, imgEl, effect)
 
     let position = [50,40]
     const { matches } = window.matchMedia("(max-width: 700px)")
@@ -22,8 +21,8 @@ export function drag (node, { data, id, effect, hideImg = false }) {
 
   const endListener = node.addEventListener('dragend', (evt) => {
     if (!hideImg) return
-    const imgEl = evt.target.querySelector('[data-drag-img] > i')
-      || evt.target.querySelector('.data-drag-img > i')
+    const imgEl = evt.target.querySelector('[data-drag-img]')
+      || evt.target.querySelector('.data-drag-img')
       || evt.target
 
     if (hideImg) imgEl.classList.add('invisible')
