@@ -1,5 +1,5 @@
 <script>
-  export let name, className = '', type = 'm'
+  export let name = 'unknown-pokemon2', className = '', type = 'm'
 </script>
 
 <span class='pk{type}-wrapper {$$restProps.class || ''} {className}'>

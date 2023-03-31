@@ -34,7 +34,7 @@
     class:minimal={minimal}
     class='card__header flex justify-between pl-4 pt-4 pb-3 relative z-0 rounded-t-lg'
     >
-    <div class='flex flex-row items-end gap-x-2'>
+    <div class='flex flex-row items-end gap-x-2 pointer-events-none'>
       {#if level}
         <div class='flex flex-col items-center'>
           <span class='text-xs -mb-2'>Level</span>
@@ -72,7 +72,6 @@
             <Icon inline={true} icon={Hand} class='-mt-3.5 fill-current dark:text-white' />
           </div>
         {/if}
-
       </span>
 
     </div>
@@ -84,14 +83,15 @@
           width=96
           height=96
           style="--v-anim-dur: {animDur}s; --v-anim-delay: {animDelay}s"
-          class='{anim} img__pkm  -translate-y-16 h-40 w-auto'
+          class='{anim} img__pkm  -translate-y-16 h-40 w-auto pointer-events-none'
           src={sprite}
           onerror="this.onerror=null;this.src='{fallback}'"
           alt={name} />
       {:else}
         <img width=96 height=96
              src={UNOWN}
-             style="--v-anim-dur: {animDur}s; --v-anim-delay: {animDelay}s" class='{anim} scale-75 -translate-y-16 -translate-x-6 h-40 w-auto'
+             style="--v-anim-dur: {animDur}s; --v-anim-delay: {animDelay}s"
+             class='{anim} scale-75 -translate-y-16 -translate-x-6 h-40 w-auto pointer-events-none'
              alt='Unknown sprite for {name}'
              />
       {/if}

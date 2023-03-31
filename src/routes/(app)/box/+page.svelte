@@ -4,10 +4,13 @@
   import { flip } from 'svelte/animate'
 
   import PokemonCard from '$lib/components/pokemon-card.svelte'
+  import { MiniTeam } from '$lib/components/TeamBuilder'
 
-  import { Loader, IconButton, Tooltip, Toggle } from '$c/core'
+  import { Loader, PIcon, IconButton, Tooltip, Toggle } from '$c/core'
   import TypeBadge from '$lib/components/type-badge.svelte'
   import { Modal as AnalysisModal } from '$lib/components/Analysis'
+
+  import { drag } from '$utils/drag'
 
   import { getBox, updatePokemon, killPokemon } from '$lib/store'
   import { canonTypes as types } from '$lib/data/types'
@@ -121,6 +124,31 @@
     ogbox = ogbox.filter(i => toid(i) !== toid(o))
     killPokemon({ ...o, death })
   }
+
+  let team = [], mons
+  function teamadd (evt) {
+    if (team.map(t => t.id).includes(evt.detail.data.id)) return
+    team = team.concat(evt.detail.data)
+  }
+
+  function teamreplace (evt) {
+    team = team.map((it, i) => i === evt.detail.targetId ? evt.detail.data : it)
+  }
+  function teamremove (mon, id) { team = team.filter((it, i) => it.id !== mon.detail.id)}
+
+  function teamswap (evt) {
+    const targetId = evt.detail.targetId
+    const srcId = evt.detail.srcId
+
+    team = team.map((it, i, arr) => {
+      if (i === targetId) return arr[srcId]
+      if (i === srcId) return arr[targetId]
+      return it
+    })
+  }
+
+  $: mons = team.map(t => ogbox.find(o => t.id == o.id))
+
 </script>
 {#if loading}
   <Loader />
@@ -128,6 +156,16 @@
   <div out:fade|local={{ duration: 250 }} in:fade|local={{ duration: 250, delay: 300 }} class='container mx-auto'>
     <div class='flex flex-col mx-auto items-center justify-center'>
       <main class='w-full xl:w-3/4 flex flex-col gap-y-4 py-6 pb-48 px-4 md:px-8 overflow-hidden snap-y scroll-pt-5'>
+
+        <MiniTeam
+          {mons}
+          iconKey=pokemon
+
+          on:add={teamadd}
+          on:remove={teamremove}
+          on:replace={teamreplace}
+          on:swap={teamswap}
+          />
 
         <div class='flex flex-col md:flex-row items-end md:items-center gap-x-2 relative md:mt-0 sm:-my-2 snap-start'>
           <AnalysisModal box={Object.values(Pokemon)} />
@@ -206,10 +244,12 @@
           {/if}
           {#each box.filter(filter) as p (p)}
             <span
+              use:drag={{ data: p, effect: 'copy' }}
               class='snap-start'
               animate:flip={{ duration: d => 10 * Math.sqrt(d) }}
               out:fade={{ duration: 150 }}
-            >
+              >
+              <PIcon class='absolute -z-20 -left-20 -bottom-20 data-drag-img' name={p.pokemon} />
               {#key p}
               <PokemonCard
                 {minimal}
@@ -223,6 +263,7 @@
                 nature={p.nature}
                 types={(Pokemon[p.pokemon].types || []).map(t => t.toLowerCase())}
               >
+
                 <span slot=img>
                   {#if evoComplete === toid(p)}
                     <span style='z-index: 999999' class='absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2'>
@@ -239,7 +280,8 @@
                   {/if}
                 </span>
 
-                <span class='text-xs text-center p-2 text-gray-500 z-40' slot="footer" let:id>
+
+                <span class='text-xs text-center p-2 text-gray-500 z-40' slot=footer let:id>
                   {#if p.location === 'Starter'}
                     Met in a fateful encounter
                   {:else if !p.location}
