@@ -337,7 +337,8 @@
         borderless
         on:click={(team.find(t=>t.id === p.id) ? teamremove : teamadd).bind({}, { detail: { data: p }})}
         >
-        <span class='absolute transition right-5 top-[10px] dark:text-gray-500 dark:group-hover:text-gray-400'>
+        <!-- FIXME: What the fuck...  -->
+        <span class='absolute transition-none dark:transition right-5 top-[10px] dark:text-gray-500 dark:group-hover:text-gray-400'>
           {#if team.find(t=>t.id === p.id)}
             -
           {:else}
