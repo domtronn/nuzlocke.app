@@ -8,8 +8,12 @@ export function drag (node, { data, id, effect, hideImg = false }) {
 
     if (hideImg) imgEl.classList.remove('invisible')
 
+    let position = [50,40]
+    const { matches } = window.matchMedia("(max-width: 700px)")
+    if (matches) position = [75, 65]
+
     evt.dataTransfer.effectAllowed = effect
-    evt.dataTransfer.setDragImage(imgEl, 50, 40)
+    evt.dataTransfer.setDragImage(imgEl, ...position)
     evt.dataTransfer.setData('data', JSON.stringify(data))
     if (id) evt.dataTransfer.setData('srcId', id)
   })
