@@ -7,6 +7,7 @@ export function drag (node, { data, id, effect, hideImg = false }) {
       || evt.target
 
     if (hideImg) imgEl.classList.remove('invisible')
+    console.log('dragstart', evt.target, imgEl)
 
     let position = [50,40]
     const { matches } = window.matchMedia("(max-width: 700px)")
