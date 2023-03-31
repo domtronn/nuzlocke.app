@@ -3,6 +3,8 @@
   import { fade } from 'svelte/transition'
   import { flip } from 'svelte/animate'
 
+  import { Footer } from '$c/navs'
+
   import PokemonCard from '$lib/components/pokemon-card.svelte'
   import { MiniTeam } from '$lib/components/TeamBuilder'
 
@@ -355,7 +357,10 @@
             </span>
           {/each}
         </div>
+
+        <Footer class='!relative !mt-6 md:hidden' />
       </main>
+
     </div>
   </div>
 {/if}
@@ -385,9 +390,17 @@
   }
 
   @media (max-width: theme('screens.md')) {
+    .container + :global(footer) {
+      @apply hidden;
+    }
+
+    :global(body) {
+      overflow: hidden;
+    }
     main {
       height: calc(100vh - 38px);
       overflow-y: scroll;
+      @apply pb-24;
     }
   }
 

@@ -1,12 +1,9 @@
 <script>
-  import Icon from '@iconify/svelte/dist/OfflineIcon.svelte';
-  import { Coffee } from '$icons'
-  import { GitHub } from '$icons'
-  import { Discord } from '$icons'
-  import { Heart } from '$icons'
+  import { Icon } from '$c/core'
+  import { Coffee, GitHub, Discord, Heart } from '$icons'
 </script>
 
-<footer>
+<footer class={$$restProps.class || ''}>
   <p>
     <a href="https://www.buymeacoffee.com/nuzlocketracker"
        rel=noreferrer target=_blank>
