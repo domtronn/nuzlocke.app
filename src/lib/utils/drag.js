@@ -8,6 +8,8 @@ export function drag (node, { data, id, effect, hideImg = false }) {
 
     if (hideImg) imgEl.classList.remove('invisible')
 
+    if (window.navigator) window.navigator.vibrate(200)
+
     evt.dataTransfer.effectAllowed = effect
     evt.dataTransfer.setDragImage(imgEl, 5, 5)
     evt.dataTransfer.setData('data', JSON.stringify(data))
