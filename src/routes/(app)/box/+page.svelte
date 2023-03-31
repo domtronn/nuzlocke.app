@@ -167,14 +167,15 @@
     <div class='flex flex-col mx-auto items-center justify-center'>
       <main class='w-full xl:w-3/4 flex flex-col gap-y-4 py-6 pb-48 px-4 md:px-8 overflow-hidden snap-y scroll-pt-5'>
 
-        <div class='flex flex-col md:flex-row items-end md:items-center gap-x-2 relative md:mt-0 sm:-my-2 snap-start'>
+        <div class='flex flex-row items-center gap-x-2 relative md:mt-0 -my-2 snap-start'>
           <AnalysisModal box={Object.values(Pokemon)}>
             Box
           </AnalysisModal>
           <AnalysisModal box={team.map(p => Pokemon[p.pokemon])}>
             Team
           </AnalysisModal>
-          <div class='mt-1 flex md:flex-row-reverse gap-x-2'>
+
+          <div class='flex mt-0 max-md:justify-end max-md:flex-grow md:flex-row-reverse gap-x-2'>
             <Toggle id=minimal bind:state={minimal}>
               <small>Hide stats</small>
             </Toggle>

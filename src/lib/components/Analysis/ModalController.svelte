@@ -32,7 +32,7 @@
   rounded
   disabled={!box || !box.length}
   title='Open Analysis'
-  containerClassName='absolute left-0 w-1/2 sm:w-auto md:relative'
+  containerClassName='w-auto md:relative'
   on:click={onopen}
 >
   <span style='--img-dark: url("{Bubbles('#fff')}"); --img: url("{Bubbles('#000')}")'
@@ -48,30 +48,33 @@
     background: none !important;
   }
 
-  span::before {
-    content: '';
-    @apply transition duration-200 absolute inset-0;
-    animation: animatedBackground 480s linear infinite forwards;
-    background-image: var(--img);
-    opacity: 0.075;
-  }
-
-  :global(.dark) span::before {
-    background-image: var(--img-dark);
-  }
-
-  span:hover::before {
-    animation: animatedBackground 120s linear infinite forwards;
-    @apply duration-500;
-    opacity: 0.4;
-  }
-
-  @keyframes animatedBackground {
-    from {
-      background-position: 0 0;
+  @media (min-width: theme('screens.md')) {
+    span::before {
+      content: '';
+      @apply transition duration-200 absolute inset-0;
+      animation: animatedBackground 480s linear infinite forwards;
+      background-image: var(--img);
+      opacity: 0.075;
     }
-    to {
-      background-position: 0 6000%;
+
+    :global(.dark) span::before {
+      background-image: var(--img-dark);
+    }
+
+    span:hover::before {
+      animation: animatedBackground 120s linear infinite forwards;
+      @apply duration-500;
+      opacity: 0.4;
+    }
+
+    @keyframes animatedBackground {
+      from {
+        background-position: 0 0;
+      }
+      to {
+        background-position: 0 6000%;
+      }
     }
   }
+
 </style>
