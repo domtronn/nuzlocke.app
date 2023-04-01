@@ -169,10 +169,10 @@
 
         <div class='flex flex-row items-center gap-x-2 relative md:mt-0 -my-2 snap-start'>
           <AnalysisModal box={Object.values(Pokemon)}>
-            Box
+            <small>Box</small>
           </AnalysisModal>
           <AnalysisModal box={team.map(p => Pokemon[p.pokemon])}>
-            Team
+            <small>Team</small>
           </AnalysisModal>
 
           <div class='flex mt-0 max-md:justify-end max-md:flex-grow md:flex-row-reverse gap-x-2'>

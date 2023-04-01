@@ -4,6 +4,8 @@
   import { scale } from 'svelte/transition'
   import { drag } from '$utils/drag'
 
+  import { ModalController } from './'
+
   import { createEventDispatcher } from 'svelte'
   const dispatch = createEventDispatcher()
 
@@ -67,6 +69,13 @@
     dragLeave()
   }
 
+  function onSubmit (evt) {
+    evt.detail.forEach((data, targetId) => {
+      console.log('Adding', { data, targetId })
+      dispatch('add', { data, targetId })
+    })
+  }
+
   const onRemove = (p) => (evt) => {
     dispatch('remove', {
       data: p,
@@ -123,10 +132,14 @@
   {/each}
 
 {#each Array(6 - mons.length).fill() as _, i}
-  <p
-    on:dragenter={dragAdd}
-    on:dragleave={dragLeave}
-    on:drop={onDrop}
+  <ModalController
+    on:submit={onSubmit}
+    {mons}
+  >
+    <p
+      on:dragenter={dragAdd}
+      on:dragleave={dragLeave}
+      on:drop={onDrop}
 
       class:opacity-40={over && +over === (i + mons.length)}
 
@@ -136,10 +149,11 @@
       ondragover="return false"
       class='relative w-10 h-10 transition'
       >
-    <PIcon
-      class='dark:contrast-0 opacity-40 contrast-200 absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 pointer-events-none brightness-200 -mt-[2px]'
+      <PIcon
+        class='dark:contrast-0 opacity-40 contrast-200 absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 pointer-events-none brightness-200 -mt-[2px]'
         name=unknown-pokemon2
-      />
+        />
     </p>
+  </ModalController>
   {/each}
 </div>
