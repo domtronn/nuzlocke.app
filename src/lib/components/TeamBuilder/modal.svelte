@@ -69,7 +69,7 @@
     </p>
   {/if}
   
-  <div class='flex flex-row-reverse gap-x-4'>
+  <div class='flex flex-col md:flex-row-reverse gap-x-4'>
     <Button className='flex-1' wide rounded disabled={ids.length === 0} on:click={onsubmit}>
       <small>Add to your team</small>
     </Button>
@@ -94,13 +94,22 @@
   }
   
   button.selected::before {
-    @apply dark:bg-gray-900 bg-gray-400;
+    @apply bg-gray-400;
   }
 
   button:not(.selected):hover::before {
-    @apply dark:bg-gray-800 bg-gray-300;
+    @apply bg-gray-300;
   }
 
+  :global(.dark) button.selected::before {
+    @apply bg-gray-600;
+  }
+
+  :global(.dark) button:not(.selected):hover::before {
+    @apply bg-gray-700;
+  }
+
+  
   button.selected :global(.pkm) {
     animation: bob 3s ease infinite;
   }
