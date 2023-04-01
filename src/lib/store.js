@@ -5,6 +5,13 @@ import { writable } from 'svelte/store';
 import { uuid } from '$lib/utils/uuid';
 import { NuzlockeGroups } from '$lib/data/states';
 
+import { settingsDefault } from '$lib/components/Settings/_data'
+
+/** TODO: Team state
+    __teams: { [bossKey]: [id,id,id] }
+    __team: [id,id,id]
+*/
+
 export const popover = writable(null);
 
 export const readdata = (_) => {
@@ -86,7 +93,7 @@ export const createGame =
       created: +new Date(),
       name,
       game,
-      settings: '011101'
+      settings: settingsDefault
     });
 
     localStorage.setItem(IDS.game(id), initData);
@@ -199,6 +206,31 @@ export const patchlocation = (payload) => (data) =>
     )
   });
 
+/** Team handlers */
+export const getTeams = (cb = () => {}) =>
+  activeGame.subscribe((gameId) => {
+    getGame(gameId).subscribe(
+      read((data) => {
+        console.log(data)
+        cb({
+          team: data.__team || [],
+          teams: data.__teams || [],
+        })
+      })
+    );
+  });
+
+export const setTeam = (team) => {
+  activeGame.subscribe((gameId) => {
+    getGame(gameId).update(
+      patch({
+        __team: team
+      })
+    );
+    console.log('Udpated team', team)
+  });
+}
+
 const _read = (payload) => {
   if (!payload) return;
   try {
@@ -245,7 +277,7 @@ export const format = (saveData) =>
 
 export const summarise =
   (cb = (_) => {}) =>
-  ({ __starter, __custom, ...data }) => {
+  ({ __starter, __custom, __team, __teams, ...data }) => {
     const pkmn = Object.values(data);
     cb({
       available: pkmn.filter(
@@ -311,3 +343,20 @@ export const trackData = () => {
   })
 }
 // --------
+
+if (typeof window !== 'undefined') {
+  window.nuzlocke = {
+    starter: () => window.nuzlocke.parsesave('__starter'),
+    custom: () => window.nuzlocke.parsesave('__custom'),
+    team: () => window.nuzlocke.parsesave('__team'),
+    teams: () => window.nuzlocke.parsesave('__teams'),
+    parsesave: (id) => {
+      const data = JSON.parse(
+        window.localStorage[`nuzlocke.${window.localStorage['nuzlocke']}`]
+      )
+
+      if (id) return data[id]
+      else return data
+    }
+  }
+}

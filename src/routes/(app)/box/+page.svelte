@@ -14,7 +14,8 @@
 
   import { drag } from '$utils/drag'
 
-  import { getBox, updatePokemon, killPokemon } from '$lib/store'
+  import { getBox, getTeams, updatePokemon, killPokemon, setTeam } from '$lib/store'
+
   import { canonTypes as types } from '$lib/data/types'
   import { stats, StatIconMap } from '$lib/data/stats'
 
@@ -125,6 +126,8 @@
   }
 
   let team = [], mons
+  getTeams(t => team = t.team.map(id => ({ id })))
+
   function teamhas (mon) {
     return !!team.find(t => t.id === mon.id)
   }
@@ -132,6 +135,7 @@
   function teamadd (evt) {
     if (team.map(t => t.id).includes(evt.detail.data.id)) return
     team = team.concat(evt.detail.data)
+    setTeam(team.map(t => t.id))
   }
 
   function teamreplace (evt) {
@@ -143,8 +147,12 @@
       }})
 
     team = team.map((it, i) => i === evt.detail.targetId ? evt.detail.data : it)
+    setTeam(team.map(t => t.id))
   }
-  function teamremove (mon, id) { team = team.filter((it, i) => it.id !== mon.detail.data.id)}
+  function teamremove (mon, id) {
+    team = team.filter((it, i) => it.id !== mon.detail.data.id)
+    setTeam(team.map(t => t.id))
+  }
 
   function teamswap (evt) {
     const targetId = Math.min(evt.detail.targetId, team.length - 1)
@@ -155,10 +163,12 @@
       if (i === srcId) return arr[targetId]
       return it
     })
+    setTeam(team.map(t => t.id))
   }
 
-  $: mons = team.map(t => ogbox.find(o => t.id == o.id))
-  $: mons && console.log("mons", mons)
+  $: mons = team
+    .map(t => ogbox.find(o => t.id == o.id))
+    .filter(i => i)
 </script>
 {#if loading}
   <Loader />
