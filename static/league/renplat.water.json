@@ -972,7 +972,8 @@
         },
         "sprite": "429",
         "types": [
-          "ghost"
+          "ghost",
+          "fairy"
         ],
         "stats": {
           "hp": 60,
@@ -1660,7 +1661,8 @@
           "spe": 115
         }
       }
-    ]
+    ],
+    "effect": "rain"
   },
   "6": {
     "name": "Byron",
@@ -2595,7 +2597,8 @@
         },
         "sprite": "405",
         "types": [
-          "electric"
+          "electric",
+          "dark"
         ],
         "stats": {
           "hp": 80,
@@ -2650,7 +2653,8 @@
         },
         "sprite": "466",
         "types": [
-          "electric"
+          "electric",
+          "fighting"
         ],
         "stats": {
           "hp": 75,
@@ -8650,7 +8654,8 @@
         },
         "sprite": "466",
         "types": [
-          "electric"
+          "electric",
+          "fighting"
         ],
         "stats": {
           "hp": 75,
@@ -16552,7 +16557,8 @@
         },
         "sprite": "350",
         "types": [
-          "water"
+          "water",
+          "fairy"
         ],
         "stats": {
           "hp": 95,
@@ -16667,7 +16673,8 @@
         },
         "sprite": "350",
         "types": [
-          "water"
+          "water",
+          "fairy"
         ],
         "stats": {
           "hp": 95,
@@ -16776,7 +16783,8 @@
         },
         "sprite": "181",
         "types": [
-          "electric"
+          "electric",
+          "dragon"
         ],
         "stats": {
           "hp": 90,
@@ -17057,7 +17065,8 @@
         },
         "sprite": "350",
         "types": [
-          "water"
+          "water",
+          "fairy"
         ],
         "stats": {
           "hp": 95,
@@ -17444,7 +17453,8 @@
         },
         "sprite": "429",
         "types": [
-          "ghost"
+          "ghost",
+          "fairy"
         ],
         "stats": {
           "hp": 60,
@@ -17552,7 +17562,8 @@
         },
         "sprite": "350",
         "types": [
-          "water"
+          "water",
+          "fairy"
         ],
         "stats": {
           "hp": 95,
