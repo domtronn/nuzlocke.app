@@ -108,7 +108,7 @@
 
       class:opacity-50={over && +over === i}
       ondragover="return false"
-      class='relative w-10 h-10 group transition'
+      class='relative w-10 h-10 group transition cursor-pointer'
     >
 
       <span
@@ -147,7 +147,7 @@
       data-drag-action=add
 
       ondragover="return false"
-      class='relative w-10 h-10 transition'
+      class='relative w-10 h-10 transition cursor-pointer'
       >
       <PIcon
         class='dark:contrast-0 opacity-40 contrast-200 absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 pointer-events-none brightness-200 -mt-[2px]'
