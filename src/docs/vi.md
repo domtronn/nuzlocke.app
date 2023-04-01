@@ -1,4 +1,6 @@
 ---
+created: 2023-03-03
+updated: 2023-04-01
 ---
 
 Nuzlocking is a fun and challenging way to play Pokemon games, and Pokemon Scarlet and Violet is no exception. However, with the game's open-world design and overworld encounters, the traditional method of random encounters can be difficult to implement. Fortunately, there's where Nuzlocke.app can help!

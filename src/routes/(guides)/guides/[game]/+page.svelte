@@ -34,9 +34,9 @@
     "genre": "Pokémon",
     "keywords": `pokemon nuzlocke ${game.title} encounters boss battles fights`,
     "url": `https://nuzlocke.app/${path}`,
-    "datePublished": "2022-01-07",
-    "dateCreated": "2022-01-07",
-    "dateModified": "2022-01-07",
+    "datePublished": attributes.created || "2022-01-07",
+    "dateCreated": attributes.created || "2022-01-07",
+    "dateModified": attributes.updated || attributes.created || "2022-01-07",
     "description": description
   }
   const articleSchema = `<script type="application/ld+json">${JSON.stringify(schema)}<\/script>`
