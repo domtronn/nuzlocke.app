@@ -17,6 +17,9 @@
   })
 </script>
 
-<button on:click|preventDefault={onopen}>
+<button
+  on:click|preventDefault={onopen}
+  aria-label="Add Pokemon to your team"
+>
   <slot />
 </button>

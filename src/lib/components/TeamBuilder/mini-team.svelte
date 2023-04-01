@@ -1,6 +1,6 @@
 <script>
   import { PIcon, Icon } from '$c/core'
-  import { X } from '$icons'
+  import { X, Plus } from '$icons'
   import { scale } from 'svelte/transition'
   import { drag } from '$utils/drag'
 
@@ -147,12 +147,17 @@
       data-drag-action=add
 
       ondragover="return false"
-      class='relative w-10 h-10 transition cursor-pointer'
+      class='relative w-10 h-10 transition cursor-pointer group'
       >
       <PIcon
-        class='dark:contrast-0 opacity-40 contrast-200 absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 pointer-events-none brightness-200 -mt-[2px]'
+        class='dark:contrast-0 opacity-40 contrast-200 absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 pointer-events-none brightness-200 group-hover:opacity-100 transition -mt-[2px]'
         name=unknown-pokemon2
         />
+
+      <Icon
+        class='absolute opacity-0 left-1/2 -translate-x-1/2 -bottom-2 pointer-events-none transition group-hover:opacity-100 dark:text-gray-400'
+        inline icon={Plus} />
+
     </p>
   </ModalController>
   {/each}
