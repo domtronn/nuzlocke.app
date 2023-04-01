@@ -37,6 +37,7 @@
 </script>
 
 <section class='bg-white px-6 py-8 rounded-xl text-xl dark:bg-gray-900 dark:text-gray-50 shadow-lg'>
+  {#if availableMons.length > 0}
   <IconButton
     rounded borderless color=orange containerClassName='absolute top-2 right-2'
     src={X} on:click={close}
@@ -69,7 +70,7 @@
     </p>
   {/if}
   
-  <div class='flex flex-col md:flex-row-reverse gap-x-4'>
+  <div class='flex flex-col md:flex-row-reverse gap-4'>
     <Button className='flex-1' wide rounded disabled={ids.length === 0} on:click={onsubmit}>
       <small>Add to your team</small>
     </Button>
@@ -78,6 +79,14 @@
       <small>Cancel</small>
     </Button>
   </div>
+{:else}
+  <p class='max-w-[30ch] text-center mb-4'>
+    Your team is full, go out and catch some more Pokémon!
+  </p>
+    <Button className=w-full solid wide rounded on:click={close}>
+      <small>Go back</small>
+    </Button>
+{/if}
   
 </section>
 

@@ -123,6 +123,7 @@
   const handleDeath = o => death => {
     ogbox = ogbox.filter(i => toid(i) !== toid(o))
     killPokemon({ ...o, death })
+    teamremove({ detail: { data: { id: toid(o) }}})
   }
 
   let team = [], mons
@@ -135,7 +136,6 @@
   function teamadd (evt) {
     if (team.map(t => t.id).includes(evt.detail.data.id)) return
     team = team.concat(evt.detail.data)
-    setTeam(team.map(t => t.id))
   }
 
   function teamreplace (evt) {
@@ -147,11 +147,9 @@
       }})
 
     team = team.map((it, i) => i === evt.detail.targetId ? evt.detail.data : it)
-    setTeam(team.map(t => t.id))
   }
-  function teamremove (mon, id) {
+  function teamremove (mon) {
     team = team.filter((it, i) => it.id !== mon.detail.data.id)
-    setTeam(team.map(t => t.id))
   }
 
   function teamswap (evt) {
@@ -163,12 +161,16 @@
       if (i === srcId) return arr[targetId]
       return it
     })
-    setTeam(team.map(t => t.id))
   }
 
-  $: mons = team
-    .map(t => ogbox.find(o => t.id == o.id))
-    .filter(i => i)
+  $: {
+    mons = team
+      .map(t => ogbox.find(o => t.id == o.id))
+      .filter(i => i)
+
+    setTeam(mons.map(m => m.id))
+  }
+
 </script>
 {#if loading}
   <Loader />

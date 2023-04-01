@@ -221,6 +221,8 @@ export const getTeams = (cb = () => {}) =>
   });
 
 export const setTeam = (team) => {
+  if (!browser) return
+
   activeGame.subscribe((gameId) => {
     getGame(gameId).update(
       patch({
