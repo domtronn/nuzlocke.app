@@ -134,8 +134,8 @@
   }
 
   function teamadd (evt) {
-    if (team.map(t => t.id).includes(evt.detail.data.id)) return
-    team = team.concat(evt.detail.data)
+    if (team.map(t => t.id).includes(evt.detail.data.id)) team = team.filter(t => t.id !== evt.detail.data.id).concat(evt.detail.data)
+    else team = team.concat(evt.detail.data)
   }
 
   function teamreplace (evt) {
