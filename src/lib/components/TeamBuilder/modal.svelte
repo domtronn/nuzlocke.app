@@ -47,7 +47,7 @@
   <h2>Search for a Pokemon to add to your team</h2>
   <p class='text-gray-400 text-base' >Select up to {max} Pokemon to add to your team.</p>
   
-  <div class='grid grid-cols-6 bg-gray-200 dark:bg-gray-800 px-6 py-4 mx4 mt-6 mb-4 h-fit overflow-hidden rounded-lg'>
+  <div class='grid grid-cols-4 md:grid-cols-6 bg-gray-200 dark:bg-gray-800 px-6 py-4 mx4 mt-6 mb-4 h-fit overflow-hidden rounded-lg'>
     {#each availableMons as mon (mon.id)}
       <button
         class=relative
@@ -94,11 +94,11 @@
   }
   
   button.selected::before {
-    @apply bg-gray-400;
+    @apply dark:bg-gray-900 bg-gray-400;
   }
 
   button:not(.selected):hover::before {
-    @apply bg-gray-300;
+    @apply dark:bg-gray-800 bg-gray-300;
   }
 
   button.selected :global(.pkm) {
