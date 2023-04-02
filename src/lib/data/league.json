@@ -37507,20 +37507,6 @@
       "img": "/leaders/dp-cyrus",
       "pokemon": [
         {
-          "name": "golbat",
-          "level": "34",
-          "moves": [
-            "air-cutter",
-            "poison-fang",
-            "supersonic",
-            "bite"
-          ],
-          "ability": "inner-focus",
-          "abilities": [
-            "inner-focus"
-          ]
-        },
-        {
           "name": "sneasel",
           "level": "34",
           "moves": [
@@ -37528,6 +37514,20 @@
             "slash",
             "quick-attack",
             "screech"
+          ],
+          "ability": "inner-focus",
+          "abilities": [
+            "inner-focus"
+          ]
+        },
+        {
+          "name": "golbat",
+          "level": "34",
+          "moves": [
+            "air-cutter",
+            "poison-fang",
+            "supersonic",
+            "bite"
           ],
           "ability": "inner-focus",
           "abilities": [

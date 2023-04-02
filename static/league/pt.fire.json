@@ -2085,56 +2085,6 @@
     "img": "/leaders/dp-cyrus",
     "pokemon": [
       {
-        "name": "golbat",
-        "level": "34",
-        "moves": [
-          {
-            "power": 60,
-            "type": "flying",
-            "damage_class": "special",
-            "name": "Air Cutter",
-            "effect": "Has an increased chance for a critical hit."
-          },
-          {
-            "power": 50,
-            "type": "poison",
-            "damage_class": "physical",
-            "name": "Poison Fang",
-            "effect": "Has a 50% chance to badly poison the target."
-          },
-          {
-            "type": "normal",
-            "damage_class": "status",
-            "name": "Supersonic",
-            "effect": "Confuses the target."
-          },
-          {
-            "power": 60,
-            "type": "dark",
-            "damage_class": "physical",
-            "name": "Bite",
-            "effect": "Has a 30% chance to make the target flinch."
-          }
-        ],
-        "ability": {
-          "name": "Inner Focus",
-          "effect": "Prevents flinching."
-        },
-        "sprite": "42",
-        "types": [
-          "poison",
-          "flying"
-        ],
-        "stats": {
-          "hp": 75,
-          "atk": 80,
-          "def": 70,
-          "spa": 65,
-          "spd": 75,
-          "spe": 90
-        }
-      },
-      {
         "name": "sneasel",
         "level": "34",
         "moves": [
@@ -2182,6 +2132,56 @@
           "spa": 35,
           "spd": 75,
           "spe": 115
+        }
+      },
+      {
+        "name": "golbat",
+        "level": "34",
+        "moves": [
+          {
+            "power": 60,
+            "type": "flying",
+            "damage_class": "special",
+            "name": "Air Cutter",
+            "effect": "Has an increased chance for a critical hit."
+          },
+          {
+            "power": 50,
+            "type": "poison",
+            "damage_class": "physical",
+            "name": "Poison Fang",
+            "effect": "Has a 50% chance to badly poison the target."
+          },
+          {
+            "type": "normal",
+            "damage_class": "status",
+            "name": "Supersonic",
+            "effect": "Confuses the target."
+          },
+          {
+            "power": 60,
+            "type": "dark",
+            "damage_class": "physical",
+            "name": "Bite",
+            "effect": "Has a 30% chance to make the target flinch."
+          }
+        ],
+        "ability": {
+          "name": "Inner Focus",
+          "effect": "Prevents flinching."
+        },
+        "sprite": "42",
+        "types": [
+          "poison",
+          "flying"
+        ],
+        "stats": {
+          "hp": 75,
+          "atk": 80,
+          "def": 70,
+          "spa": 65,
+          "spd": 75,
+          "spe": 90
         }
       },
       {

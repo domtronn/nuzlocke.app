@@ -37893,17 +37893,6 @@
       ]
     },
     {
-      "type": "route",
-      "name": "Snowpoint Temple",
-      "encounters": [
-        "golbat",
-        "smoochum",
-        "jynx",
-        "sneasel",
-        "regigigas"
-      ]
-    },
-    {
       "type": "gym",
       "name": "Snowpoint Gym",
       "value": "7",
@@ -37937,6 +37926,13 @@
       "value": "cyr3",
       "group": "evil-team",
       "boss": "Cyrus"
+    },
+    {
+      "type": "route",
+      "name": "Distortion World",
+      "encounters": [
+        "giratina-origin"
+      ]
     },
     {
       "type": "route",
@@ -38076,6 +38072,17 @@
       "value": "c",
       "group": "elite-four",
       "boss": "Cynthia"
+    },
+    {
+      "type": "route",
+      "name": "Snowpoint Temple",
+      "encounters": [
+        "golbat",
+        "smoochum",
+        "jynx",
+        "sneasel",
+        "regigigas"
+      ]
     }
   ],
   "radred": [
