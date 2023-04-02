@@ -44281,7 +44281,7 @@
           "held": "water-gem"
         }
       ],
-      "effect": "trick-room",
+      "info": "<p><b>Trick Room<b><br />There is a permanent Trick Room effect on the field</p>",
       "doubleBattle": true
     },
     "6_hard": {
@@ -44382,7 +44382,7 @@
           "sprite": "toxtricity-gmax"
         }
       ],
-      "effect": "tailwind"
+      "info": "<p><b>Tailwind</b><br />There is a permanent tailwind effect on Koga's side of the field</p>"
     },
     "7_hard": {
       "name": "Blaine",
@@ -44585,7 +44585,7 @@
           "held": "duraludite"
         }
       ],
-      "info": "<p><b>Purist</b> Unable to bring fairy types into the Fight<br /><b>Sticky terrain</b><br /> You can't remove hazards from the field</p>"
+      "info": "<p><b>Purist</b><br/> Unable to bring fairy types into the Fight<br /><b>Sticky terrain</b><br /> You can't remove hazards from the field</p>"
     },
     "1r_hard": {
       "name": "Brock",
@@ -44686,7 +44686,7 @@
           "sprite": "aerodactyl-mega"
         }
       ],
-      "info": "<p/<b>Cushioning</b><br /> Super Effective moves deal ⅓ less damage to Brock's Pokémon</p>",
+      "info": "<p><b>Cushioning</b><br /> Super Effective moves deal ⅓ less damage to Brock's Pokémon</p>",
       "effect": "sandstorm"
     },
     "2r_hard": {
@@ -44888,7 +44888,8 @@
           "sprite": "manectric-mega"
         }
       ],
-      "effect": "electric-terrain,info"
+      "info": "<p><b>Magnet Rise</b><br /> Lt. Surge's Pokémon are immune to Ground type attacks</p>",
+      "effect": "electric-terrain"
     },
     "4r_hard": {
       "name": "Erika",
@@ -45965,7 +45966,7 @@
           "sprite": "swampert-mega"
         }
       ],
-      "info": "<p/<b>Heavy rain</b><br />Lorelei's Pokémon are immune to Fire type attacks</p>",
+      "info": "<p><b>Heavy rain</b><br />Lorelei's Pokémon are immune to Fire type attacks</p>",
       "effect": "rain",
       "doubleBattle": true
     },
