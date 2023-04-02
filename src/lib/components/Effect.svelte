@@ -1,6 +1,6 @@
 <script>
   import { capitalise } from '$utils/string'
-  export let effect, info = null
+  export let effect
   const Effect = {
     Fog: 'fog',
     Rain: 'rain',
