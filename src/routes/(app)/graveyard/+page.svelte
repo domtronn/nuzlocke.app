@@ -58,6 +58,7 @@
   let graveyard = []
   $: graveyard = Object.values(box)
         .filter(i => i.pokemon)
+        .filter(i => NuzlockeGroups.Dead.includes(i.status))
 
   let chunked = []
   $: chunked = chunk(
