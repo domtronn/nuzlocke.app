@@ -56519,7 +56519,7 @@
           "abilities": [
             "battle-armor"
           ],
-          "held": "silverpowder"
+          "held": "silver-powder"
         },
         {
           "name": "lileep",
@@ -57005,11 +57005,11 @@
             "dazzling-gleam",
             "ice-beam"
           ],
-          "ability": "life-orb",
+          "ability": "magic-guard",
           "abilities": [
-            "life-orb"
+            "magic-guard"
           ],
-          "held": "magic-guard"
+          "held": "life-orb"
         },
         {
           "name": "gyarados",
@@ -57300,7 +57300,7 @@
           "held": "wise-glasses"
         },
         {
-          "name": "darmanitan",
+          "name": "darmanitan-standard",
           "level": "35",
           "moves": [
             "flare-blitz",
@@ -57427,7 +57427,7 @@
           "held": "sitrus-berry"
         },
         {
-          "name": "darmanitan",
+          "name": "darmanitan-standard",
           "level": "35",
           "moves": [
             "flare-blitz",
@@ -57883,7 +57883,7 @@
           "held": "focus-sash"
         },
         {
-          "name": "darmanitan",
+          "name": "darmanitan-standard",
           "level": "48",
           "moves": [
             "flare-blitz",
@@ -58205,9 +58205,9 @@
             "stone-edge",
             "body-slam"
           ],
-          "ability": "focus-sash",
+          "ability": "solid-rock",
           "abilities": [
-            "focus-sash"
+            "solid-rock"
           ],
           "held": "focus-sash"
         },
@@ -58321,9 +58321,9 @@
             "blizzard",
             "earth-power"
           ],
-          "ability": "life-orb",
+          "ability": "rivalry",
           "abilities": [
-            "life-orb"
+            "rivalry"
           ],
           "held": "life-orb"
         },
@@ -58543,6 +58543,53 @@
             "speed-boost"
           ],
           "held": "sharpedonite"
+        }
+      ]
+    },
+    "r1": {
+      "name": "Rival",
+      "speciality": "",
+      "img": {
+        "src": "/leaders/rs-may-oras",
+        "author": "Hyo",
+        "link": "https://www.deviantart.com/hyo-oppa"
+      },
+      "pokemon": [
+        {
+          "name": "torchic",
+          "level": "5",
+          "moves": [
+            "scratch"
+          ],
+          "ability": "blaze",
+          "abilities": [
+            "blaze"
+          ],
+          "starter": "grass"
+        },
+        {
+          "name": "mudkip",
+          "level": "5",
+          "moves": [
+            "tackle"
+          ],
+          "ability": "torrent",
+          "abilities": [
+            "torrent"
+          ],
+          "starter": "fire"
+        },
+        {
+          "name": "treecko",
+          "level": "5",
+          "moves": [
+            "pound"
+          ],
+          "ability": "overgrow",
+          "abilities": [
+            "overgrow"
+          ],
+          "starter": "water"
         }
       ]
     },
@@ -59235,9 +59282,9 @@
             "signal-beam",
             "thunder-wave"
           ],
-          "ability": "air-balloon",
+          "ability": "sturdy",
           "abilities": [
-            "air-balloon"
+            "sturdy"
           ],
           "held": "air-balloon"
         },
@@ -59414,7 +59461,7 @@
           "held": "expert-belt"
         },
         {
-          "name": "gourgeist",
+          "name": "gourgeist-large",
           "level": "71",
           "moves": [
             "petal-blizzard",
