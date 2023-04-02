@@ -29,8 +29,11 @@
   <span
     contenteditable
     on:input={oninput}
+    class:sm:hover:border-gray-300={true}
+    class:sm:dark:hover:border-gray-600={true}
     class:focus:border-yellow-500={true}
-    class='flex select-text transition border-2 border-transparent px-1 md:px-2 -ml-1 md:-ml-2 md:-mr-3 focus:text-black dark:focus:text-white focus:w-auto text-left outline-none flex-row sm:flex-row-reverse items-center gap-x-2 lg:-ml-6 -mr-1'
+    class:dark:focus:border-yellow-500={true}
+    class='flex select-text transition border-2 border-transparent  px-1 md:px-2 -ml-1 md:-ml-2 md:-mr-3 focus:text-black dark:focus:text-white focus:w-auto text-left outline-none flex-row sm:flex-row-reverse items-center gap-x-2 lg:-ml-6 -mr-1'
   >
     {value}
   </span>
@@ -42,16 +45,18 @@
     size=1.4em
     icon={Edit}
     class='{!value
-               ? 'absolute left-0 sm:right-0 sm:-translate-x-full top-1'
-               : 'absolute -left-6 top-1 sm:right-initial translate-x-full sm:-translate-x-full dark:text-gray-500 text-gray-300 hover:text-black'}
-               fill-current cursor-edit pointer-events-none transition hidden sm:block'
+               ? 'absolute -right-1 top-1 hidden sm:block'
+               : 'absolute sm:-left-1 -right-0 top-2 sm:top-1/2 sm:-translate-y-1/2 sm:right-initial translate-x-full sm:-translate-x-full dark:text-gray-500 text-gray-300 hover:text-black'}
+               fill-current cursor-edit pointer-events-none transition'
     />
 
 </div>
 
 <style lang="postcss">
   span:focus ~ :global(*) { opacity: 0; }
-  span { min-width: 1ch; }
+  @media (min-width:theme('screens.sm')) {
+    span { min-width: 1ch; padding-left: 20px; text-align: right; width: fit-content; }
+  }
 
   @media (max-width:theme('screens.sm')) {
     span { min-width: 14ch; user-select: text; }
