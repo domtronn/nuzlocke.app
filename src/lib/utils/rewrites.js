@@ -8,7 +8,9 @@ export const SPRITE = 'https://img.nuzlocke.app/sprites'
 export const CUSTOM = 'https://img.nuzlocke.app/sprites'
 export const IMG = 'https://img.nuzlocke.app'
 
-export const DATA = 'https://img.nuzlocke.app/data'
+export const DATA = rewrite
+  ? 'https://img.nuzlocke.app/data'
+  : '' // Load locally for development
 
 export const QRCODE = rewrite
   ? '/assets/js/qrcode.min.js'
