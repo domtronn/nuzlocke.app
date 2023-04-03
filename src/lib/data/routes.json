@@ -18772,6 +18772,15 @@
     },
     {
       "type": "route",
+      "name": "Jagged Pass",
+      "encounters": [
+        "machop",
+        "numel",
+        "spoink"
+      ]
+    },
+    {
+      "type": "route",
       "name": "Lavaridge Town",
       "encounters": [
         "wynaut"
@@ -19019,15 +19028,6 @@
         "wailmer",
         "kecleon",
         "shuppet"
-      ]
-    },
-    {
-      "type": "route",
-      "name": "Jagged Pass",
-      "encounters": [
-        "machop",
-        "numel",
-        "spoink"
       ]
     },
     {
