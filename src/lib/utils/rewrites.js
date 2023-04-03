@@ -10,7 +10,7 @@ export const IMG = 'https://img.nuzlocke.app'
 
 export const DATA = rewrite
   ? 'https://img.nuzlocke.app/data'
-  : '' // Load locally for development
+  : '/api' // Load locally for development
 
 export const QRCODE = rewrite
   ? '/assets/js/qrcode.min.js'
