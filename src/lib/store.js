@@ -340,7 +340,7 @@ const fixDupes = () => {
         const temp = { ...data }
         dupeKeys.forEach((keys) =>{
           keys.forEach((key) => {
-            if (data.__custom.find(c => c.id === key)) {
+            if ((data.__custom || []).find(c => c.id === key)) {
               console.log(`----------\tSubstituing`, key, 'with', data[keys[keys.length - 1]], 'from', keys[keys.length - 1])
               temp[key] = data[keys[keys.length - 1]]
             } else {
