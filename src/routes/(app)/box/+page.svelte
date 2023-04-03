@@ -244,7 +244,9 @@
                     Met in a fateful encounter
                   {:else if !p.location}
                     Met in an unknown place
-                  {:else if p.type !== 'custom'}
+                  {:else if p.custom}
+                    Met {p.custom.startsWith('Route') ? 'on' : 'in'} {p.custom}
+                  {:else}
                     Met {p.location.startsWith('Route') ? 'on' : 'in'} {p.location}
                   {/if}
 
