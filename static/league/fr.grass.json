@@ -1451,7 +1451,7 @@
       },
       {
         "name": "charmander",
-        "level": "8",
+        "level": "9",
         "moves": [
           {
             "power": 40,
@@ -1619,7 +1619,7 @@
       },
       {
         "name": "charmander",
-        "level": "17",
+        "level": "18",
         "moves": [
           {
             "power": 40,
@@ -2336,10 +2336,11 @@
             "effect": "Reduces damage from physical attacks by half."
           },
           {
+            "power": 50,
             "type": "psychic",
-            "damage_class": "status",
-            "name": "Hypnosis",
-            "effect": "Puts the target to sleep."
+            "damage_class": "special",
+            "name": "Confusion",
+            "effect": "Has a 10% chance to confuse the target."
           },
           {
             "type": "grass",
