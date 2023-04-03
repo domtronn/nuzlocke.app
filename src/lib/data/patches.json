@@ -7855,6 +7855,966 @@
       }
     }
   },
+  "rrss": {
+    "move": {
+      "ancient-power": {
+        "power": "80"
+      },
+      "chatter": {
+        "power": "90"
+      },
+      "cut": {
+        "power": "70",
+        "type": "grass",
+        "effect": "Has an increased chance for a critical hit."
+      },
+      "disarming-voice": {
+        "power": "60"
+      },
+      "draining-kiss": {
+        "power": "75"
+      },
+      "fairy-wind": {
+        "power": "50"
+      },
+      "fire pledge": {
+        "power": "75"
+      },
+      "fly": {
+        "power": "100"
+      },
+      "grass-pledge": {
+        "power": "85"
+      },
+      "mystical-fire": {
+        "power": "80"
+      },
+      "needle-arm": {
+        "power": "80"
+      },
+      "night-daze": {
+        "power": "90"
+      },
+      "pound": {
+        "power": "50"
+      },
+      "power-gem": {
+        "power": "90"
+      },
+      "relic-song": {
+        "power": "90"
+      },
+      "rock-smash": {
+        "power": "65"
+      },
+      "scratch": {
+        "power": "50"
+      },
+      "steamroller": {
+        "power": "85"
+      },
+      "strength": {
+        "power": "100"
+      },
+      "water-pledge": {
+        "power": "85"
+      }
+    },
+    "pokemon": {
+      "butterfree": {
+        "name": "butterfree",
+        "stats": {
+          "atk": 25,
+          "def": 105,
+          "spa": 115,
+          "spd": 105,
+          "spe": 95
+        }
+      },
+      "beedrill": {
+        "name": "beedrill",
+        "stats": {
+          "atk": 115,
+          "def": 105,
+          "spa": 25,
+          "spd": 105,
+          "spe": 100
+        }
+      },
+      "raticate": {
+        "name": "raticate",
+        "stats": {
+          "hp": 60,
+          "atk": 100,
+          "spa": 35,
+          "spe": 115
+        }
+      },
+      "fearow": {
+        "name": "fearow",
+        "stats": {
+          "atk": 100,
+          "def": 60,
+          "spa": 60,
+          "spd": 60
+        }
+      },
+      "arbok": {
+        "name": "arbok",
+        "stats": {
+          "atk": 95,
+          "def": 70,
+          "spa": 55,
+          "spd": 85,
+          "spe": 85
+        }
+      },
+      "raichu": {
+        "name": "raichu",
+        "stats": {
+          "atk": 100,
+          "spa": 100
+        }
+      },
+      "jigglypuff": {
+        "name": "jigglypuff",
+        "stats": {
+          "atk": 60,
+          "def": 40,
+          "spa": 60,
+          "spd": 40
+        }
+      },
+      "wigglytuff": {
+        "name": "wigglytuff",
+        "stats": {
+          "hp": 150,
+          "atk": 80,
+          "def": 55,
+          "spa": 95,
+          "spd": 60
+        }
+      },
+      "paras": {
+        "name": "paras",
+        "stats": {
+          "atk": 80
+        }
+      },
+      "parasect": {
+        "name": "parasect",
+        "stats": {
+          "hp": 80,
+          "atk": 115,
+          "def": 90,
+          "spa": 45,
+          "spd": 90
+        }
+      },
+      "venomoth": {
+        "name": "venomoth",
+        "stats": {
+          "atk": 55,
+          "spa": 100,
+          "spe": 100
+        }
+      },
+      "dugtrio": {
+        "name": "dugtrio",
+        "stats": {
+          "hp": 45,
+          "atk": 100,
+          "def": 60,
+          "spd": 80
+        }
+      },
+      "persian": {
+        "name": "persian",
+        "stats": {
+          "atk": 85,
+          "spa": 75
+        }
+      },
+      "farfetchd": {
+        "name": "farfetchd",
+        "stats": {
+          "hp": 65,
+          "atk": 130,
+          "def": 65,
+          "spa": 30,
+          "spd": 65,
+          "spe": 120
+        },
+        "types": [
+          "fighting",
+          "flying"
+        ]
+      },
+      "dewgong": {
+        "name": "dewgong",
+        "stats": {
+          "atk": 80,
+          "spa": 80,
+          "spe": 60
+        }
+      },
+      "onix": {
+        "name": "onix",
+        "stats": {
+          "hp": 65,
+          "atk": 75,
+          "spe": 100
+        }
+      },
+      "marowak": {
+        "name": "marowak",
+        "stats": {
+          "hp": 70,
+          "spe": 60
+        }
+      },
+      "seaking": {
+        "name": "seaking",
+        "stats": {
+          "atk": 100,
+          "def": 80,
+          "spa": 40,
+          "spe": 80
+        }
+      },
+      "flareon": {
+        "name": "flareon",
+        "stats": {
+          "atk": 65,
+          "spa": 65,
+          "spe": 95
+        }
+      },
+      "furret": {
+        "name": "furret",
+        "stats": {
+          "hp": 95,
+          "atk": 85,
+          "def": 65,
+          "spa": 40,
+          "spe": 100
+        }
+      },
+      "hoothoot": {
+        "name": "hoothoot",
+        "stats": {
+          "atk": 25,
+          "def": 25,
+          "spa": 45,
+          "spd": 65
+        }
+      },
+      "noctowl": {
+        "name": "noctowl",
+        "stats": {
+          "atk": 30,
+          "def": 60,
+          "spa": 90,
+          "spd": 110,
+          "spe": 75
+        },
+        "types": [
+          "psychic",
+          "flying"
+        ]
+      },
+      "ledyba": {
+        "name": "ledyba",
+        "stats": {
+          "atk": 50,
+          "spa": 20
+        }
+      },
+      "ledian": {
+        "name": "ledian",
+        "stats": {
+          "atk": 110,
+          "spa": 40
+        }
+      },
+      "spinarak": {
+        "name": "spinarak",
+        "stats": {
+          "atk": 70,
+          "spe": 40
+        }
+      },
+      "ariados": {
+        "name": "ariados",
+        "stats": {
+          "atk": 120,
+          "spa": 50,
+          "spe": 80
+        }
+      },
+      "azumarill": {
+        "name": "azumarill",
+        "stats": {
+          "atk": 80,
+          "spa": 80
+        }
+      },
+      "sudowoodo": {
+        "name": "sudowoodo",
+        "stats": {
+          "hp": 80,
+          "atk": 110,
+          "def": 125,
+          "spa": 40,
+          "spd": 75
+        }
+      },
+      "hoppip": {
+        "name": "hoppip",
+        "stats": {
+          "atk": 50,
+          "def": 60,
+          "spa": 50,
+          "spd": 60,
+          "spe": 55
+        }
+      },
+      "skiploom": {
+        "name": "skiploom",
+        "stats": {
+          "atk": 65,
+          "def": 75,
+          "spa": 65,
+          "spd": 75
+        }
+      },
+      "jumpluff": {
+        "name": "jumpluff",
+        "stats": {
+          "atk": 75,
+          "spa": 75
+        }
+      },
+      "sunflora": {
+        "name": "sunflora",
+        "stats": {
+          "hp": 95,
+          "atk": 55,
+          "def": 95,
+          "spa": 125,
+          "spd": 105
+        }
+      },
+      "wooper": {
+        "name": "wooper",
+        "stats": {
+          "atk": 55,
+          "def": 55
+        }
+      },
+      "quagsire": {
+        "name": "quagsire",
+        "stats": {
+          "atk": 95,
+          "def": 95
+        }
+      },
+      "misdreavus": {
+        "name": "misdreavus",
+        "types": [
+          "ghost",
+          "fairy"
+        ]
+      },
+      "unown": {
+        "name": "unown",
+        "stats": {
+          "hp": 50,
+          "atk": 150,
+          "def": 50,
+          "spa": 150,
+          "spd": 50,
+          "spe": 50
+        }
+      },
+      "wobbuffet": {
+        "name": "wobbuffet",
+        "stats": {
+          "hp": 240,
+          "atk": 30,
+          "def": 60,
+          "spa": 30,
+          "spd": 60,
+          "spe": 30
+        }
+      },
+      "dunsparce": {
+        "name": "dunsparce",
+        "stats": {
+          "hp": 110,
+          "atk": 80,
+          "def": 80,
+          "spe": 55
+        },
+        "types": [
+          "normal",
+          "fairy"
+        ]
+      },
+      "qwilfish": {
+        "name": "qwilfish",
+        "stats": {
+          "atk": 100,
+          "spe": 90
+        }
+      },
+      "slugma": {
+        "name": "slugma",
+        "stats": {
+          "hp": 50,
+          "atk": 50,
+          "def": 50,
+          "spa": 80,
+          "spd": 50
+        }
+      },
+      "magcargo": {
+        "name": "magcargo",
+        "stats": {
+          "hp": 80,
+          "atk": 115,
+          "def": 110,
+          "spa": 115,
+          "spd": 110
+        }
+      },
+      "corsola": {
+        "name": "corsola",
+        "stats": {
+          "hp": 75,
+          "atk": 85,
+          "def": 105,
+          "spa": 85,
+          "spd": 105
+        }
+      },
+      "delibird": {
+        "name": "delibird",
+        "stats": {
+          "hp": 65,
+          "atk": 80,
+          "def": 65,
+          "spa": 110,
+          "spd": 65,
+          "spe": 120
+        }
+      },
+      "mightyena": {
+        "name": "mightyena",
+        "stats": {
+          "atk": 110,
+          "spe": 80
+        }
+      },
+      "zigzagoon": {
+        "name": "zigzagoon",
+        "stats": {
+          "atk": 40,
+          "spa": 20
+        }
+      },
+      "linoone": {
+        "name": "linoone",
+        "stats": {
+          "hp": 80,
+          "atk": 90,
+          "def": 60,
+          "spa": 40,
+          "spd": 60,
+          "spe": 110
+        }
+      },
+      "beautifly": {
+        "name": "beautifly",
+        "stats": {
+          "hp": 65,
+          "atk": 120,
+          "def": 55,
+          "spa": 120,
+          "spd": 55,
+          "spe": 85
+        }
+      },
+      "dustox": {
+        "name": "dustox",
+        "stats": {
+          "atk": 85,
+          "def": 120,
+          "spa": 85,
+          "spd": 120
+        }
+      },
+      "swellow": {
+        "name": "swellow",
+        "stats": {
+          "atk": 95,
+          "def": 60,
+          "spd": 60
+        }
+      },
+      "pelipper": {
+        "name": "pelipper",
+        "stats": {
+          "hp": 80
+        }
+      },
+      "ralts": {
+        "name": "ralts",
+        "stats": {
+          "atk": 65,
+          "def": 55,
+          "spa": 65,
+          "spd": 55
+        }
+      },
+      "kirlia": {
+        "name": "kirlia",
+        "stats": {
+          "atk": 85,
+          "def": 75,
+          "spa": 85,
+          "spd": 75
+        }
+      },
+      "surskit": {
+        "name": "surskit",
+        "stats": {
+          "atk": 60,
+          "spa": 62
+        }
+      },
+      "masquerain": {
+        "name": "masquerain",
+        "stats": {
+          "atk": 50,
+          "def": 65,
+          "spa": 105,
+          "spd": 105,
+          "spe": 85
+        },
+        "types": [
+          "bug",
+          "water"
+        ]
+      },
+      "skitty": {
+        "name": "skitty",
+        "stats": {
+          "atk": 45,
+          "def": 45,
+          "spa": 45,
+          "spd": 45
+        }
+      },
+      "delcatty": {
+        "name": "delcatty",
+        "stats": {
+          "hp": 80,
+          "atk": 100,
+          "def": 65,
+          "spa": 100,
+          "spd": 65,
+          "spe": 80
+        }
+      },
+      "sableye": {
+        "name": "sableye",
+        "stats": {
+          "hp": 55,
+          "atk": 80,
+          "def": 80,
+          "spa": 70,
+          "spd": 70,
+          "spe": 55
+        }
+      },
+      "mawile": {
+        "name": "mawile",
+        "stats": {
+          "hp": 55,
+          "atk": 90,
+          "def": 90,
+          "spa": 60,
+          "spd": 60,
+          "spe": 55
+        }
+      },
+      "plusle": {
+        "name": "plusle",
+        "stats": {
+          "hp": 70,
+          "atk": 60,
+          "def": 50,
+          "spa": 95,
+          "spd": 85,
+          "spe": 105
+        }
+      },
+      "minun": {
+        "name": "minun",
+        "stats": {
+          "hp": 70,
+          "atk": 50,
+          "def": 60,
+          "spa": 85,
+          "spd": 95,
+          "spe": 105
+        }
+      },
+      "volbeat": {
+        "name": "volbeat",
+        "stats": {
+          "atk": 105,
+          "def": 60,
+          "spa": 45,
+          "spd": 80,
+          "spe": 95
+        },
+        "types": [
+          "bug",
+          "fairy"
+        ]
+      },
+      "illumise": {
+        "name": "illumise",
+        "stats": {
+          "atk": 45,
+          "def": 60,
+          "spa": 105,
+          "spd": 80,
+          "spe": 95
+        },
+        "types": [
+          "bug",
+          "fairy"
+        ]
+      },
+      "spinda": {
+        "name": "spinda",
+        "stats": {
+          "hp": 80,
+          "atk": 80,
+          "def": 80,
+          "spa": 80,
+          "spd": 80,
+          "spe": 80
+        }
+      },
+      "flygon": {
+        "name": "flygon",
+        "stats": {
+          "atk": 110,
+          "spa": 90,
+          "spe": 110
+        }
+      },
+      "lunatone": {
+        "name": "lunatone",
+        "stats": {
+          "hp": 80,
+          "atk": 110,
+          "def": 80,
+          "spa": 110,
+          "spd": 100
+        }
+      },
+      "solrock": {
+        "name": "solrock",
+        "stats": {
+          "hp": 80,
+          "atk": 110,
+          "def": 100,
+          "spd": 80
+        }
+      },
+      "castform": {
+        "name": "castform",
+        "stats": {
+          "hp": 60,
+          "atk": 60,
+          "def": 60,
+          "spa": 100,
+          "spd": 100,
+          "spe": 100
+        }
+      },
+      "kecleon": {
+        "name": "kecleon",
+        "stats": {
+          "hp": 80,
+          "atk": 100,
+          "def": 80
+        }
+      },
+      "tropius": {
+        "name": "tropius",
+        "stats": {
+          "hp": 105,
+          "atk": 75,
+          "def": 105,
+          "spa": 85,
+          "spd": 105,
+          "spe": 60
+        }
+      },
+      "chimecho": {
+        "name": "chimecho",
+        "stats": {
+          "hp": 80,
+          "atk": 35,
+          "def": 85,
+          "spe": 80
+        }
+      },
+      "luvdisc": {
+        "name": "luvdisc",
+        "stats": {
+          "hp": 45,
+          "atk": 100,
+          "def": 90,
+          "spa": 100,
+          "spd": 90,
+          "spe": 145
+        },
+        "types": [
+          "water",
+          "fairy"
+        ]
+      },
+      "bibarel": {
+        "name": "bibarel",
+        "stats": {
+          "hp": 90,
+          "atk": 95,
+          "def": 65,
+          "spe": 75
+        }
+      },
+      "kricketune": {
+        "name": "kricketune",
+        "stats": {
+          "hp": 80,
+          "atk": 110,
+          "def": 65,
+          "spd": 65
+        }
+      },
+      "luxray": {
+        "name": "luxray",
+        "types": [
+          "electric",
+          "dark"
+        ]
+      },
+      "wormadam": {
+        "name": "wormadam",
+        "stats": {
+          "hp": 80,
+          "atk": 50,
+          "def": 100,
+          "spa": 90,
+          "spd": 110,
+          "spe": 30
+        }
+      },
+      "mothim": {
+        "name": "mothim",
+        "stats": {
+          "hp": 80,
+          "atk": 100,
+          "spa": 100,
+          "spe": 80
+        }
+      },
+      "pachirisu": {
+        "name": "pachirisu",
+        "stats": {
+          "hp": 70,
+          "atk": 60,
+          "def": 90,
+          "spa": 60
+        }
+      },
+      "cherrim": {
+        "name": "cherrim",
+        "stats": {
+          "atk": 90,
+          "def": 80,
+          "spa": 90,
+          "spd": 80,
+          "spe": 115
+        }
+      },
+      "mismagius": {
+        "name": "mismagius",
+        "types": [
+          "ghost",
+          "fairy"
+        ]
+      },
+      "chatot": {
+        "name": "chatot",
+        "stats": {
+          "hp": 80,
+          "atk": 110,
+          "def": 55,
+          "spa": 110,
+          "spd": 55,
+          "spe": 110
+        }
+      },
+      "lumineon": {
+        "name": "lumineon",
+        "stats": {
+          "hp": 75,
+          "atk": 80,
+          "def": 85,
+          "spa": 80,
+          "spd": 90,
+          "spe": 95
+        }
+      },
+      "electivire": {
+        "name": "electivire",
+        "types": [
+          "electric",
+          "fighting"
+        ]
+      },
+      "uxie": {
+        "name": "uxie",
+        "types": [
+          "psychic",
+          "fairy"
+        ]
+      },
+      "mesprit": {
+        "name": "mesprit",
+        "types": [
+          "psychic",
+          "fairy"
+        ]
+      },
+      "azelf": {
+        "name": "azelf",
+        "types": [
+          "psychic",
+          "fairy"
+        ]
+      },
+      "serperior": {
+        "name": "serperior",
+        "stats": {
+          "atk": 80,
+          "spa": 80
+        },
+        "types": [
+          "grass",
+          "dragon"
+        ]
+      },
+      "emboar": {
+        "name": "emboar",
+        "stats": {
+          "atk": 128
+        }
+      },
+      "dewott": {
+        "name": "dewott",
+        "types": [
+          "water",
+          "fighting"
+        ]
+      },
+      "samurott": {
+        "name": "samurott",
+        "stats": {
+          "atk": 113,
+          "spa": 113
+        },
+        "types": [
+          "water",
+          "fighting"
+        ]
+      },
+      "watchog": {
+        "name": "watchog",
+        "stats": {
+          "hp": 65,
+          "atk": 95,
+          "def": 70,
+          "spd": 70,
+          "spe": 80
+        }
+      },
+      "liepard": {
+        "name": "liepard",
+        "stats": {
+          "hp": 65,
+          "atk": 90,
+          "spa": 90,
+          "spe": 115
+        }
+      },
+      "swoobat": {
+        "name": "swoobat",
+        "stats": {
+          "hp": 75,
+          "atk": 60,
+          "def": 60,
+          "spa": 95,
+          "spd": 60,
+          "spe": 115
+        }
+      },
+      "emolga": {
+        "name": "emolga",
+        "stats": {
+          "hp": 60,
+          "atk": 85,
+          "def": 65,
+          "spa": 85,
+          "spd": 65,
+          "spe": 105
+        }
+      },
+      "beartic": {
+        "name": "beartic",
+        "types": [
+          "ice",
+          "fighting"
+        ]
+      },
+      "diggersby": {
+        "name": "diggersby",
+        "stats": {
+          "hp": 96,
+          "def": 80,
+          "spd": 80
+        }
+      },
+      "vivillon": {
+        "name": "vivillon",
+        "stats": {
+          "atk": 50,
+          "def": 55,
+          "spa": 115,
+          "spd": 55,
+          "spe": 100
+        }
+      }
+    }
+  },
   "sssg": {
     "pokemon": {
       "butterfree": {
