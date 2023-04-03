@@ -1,12 +1,14 @@
 import { browser } from '$app/environment'
 import { getGen } from '$store'
 
+import { DATA } from '$utils/rewrites'
+
 const data = {}
 export const fetchData = async () => {
   if (!browser) return
 
   const gen = await getGen()
-  const uri = `/api/${gen}/pokemon.json`
+  const uri = `${DATA}/pokemon/${gen}.json`
   if (data[gen]) return data[gen]        // Return the raw data if it exists
   if (!data[uri]) data[uri] = fetch(uri) // "Cache" the promise rather than make a new fetch each time
     .then(res => res.json())
@@ -20,7 +22,7 @@ export const fetchLeague = async (game, starter = 'fire') => {
   if (!browser) return
 
   const id = `${game}@${starter}`
-  const uri = `/league/${game}.${starter}.json`
+  const uri = `${DATA}/league/${game}.${starter}.json`
   if (league[id]) return league[id]
   if (!league[uri]) league[uri] = fetch(uri)
     .then(res => res.json())
