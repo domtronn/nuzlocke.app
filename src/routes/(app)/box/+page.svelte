@@ -244,21 +244,23 @@
                     Met in a fateful encounter
                   {:else if !p.location}
                     Met in an unknown place
-                  {:else if p.custom}
-                    Met {p.custom.startsWith('Route') ? 'on' : 'in'} {p.custom}
+                  {:else if p.customName}
+                    Met {p.customName.startsWith('Route') ? 'on' : 'in'} {p.customName}
                   {:else}
                     Met {p.location.startsWith('Route') ? 'on' : 'in'} {p.location}
                   {/if}
 
-                  <span class=mx-1>ǀ</span>
+                  {#if !p.customName}
+                    <span class=mx-1>ǀ</span>
 
-                  <a class='hover:text-black dark:hover:text-gray-50 transition border-b border-transparent hover:border-black inline'
-                     href={toDb(id)}
-                     title='Pokémon DB Link for {id}'
-                     rel=noreferrer target=_blank >
-                    Info
-                    <Icon inline={true} icon={External} class='fill-current inline -mt-0.5' />
-                  </a>
+                    <a class='hover:text-black dark:hover:text-gray-50 transition border-b border-transparent hover:border-black inline'
+                       href={toDb(id)}
+                       title='Pokémon DB Link for {id}'
+                       rel=noreferrer target=_blank >
+                      Info
+                      <Icon inline={true} icon={External} class='fill-current inline -mt-0.5' />
+                    </a>
+                  {/if}
 
                   <div class:hidden={minimal} class='card-controls absolute -bottom-4 flex left-1/2 -translate-x-1/2 border border-gray-200 bg-red-200 rounded-lg shadow-md'>
                     {#if Pokemon[p.pokemon].evos?.length}

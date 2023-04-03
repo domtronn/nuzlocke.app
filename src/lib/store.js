@@ -3,7 +3,9 @@ import { browser } from '$app/environment';
 import { writable } from 'svelte/store';
 
 import { uuid } from '$lib/utils/uuid';
+import { toObj } from '$lib/utils/obj'
 import { NuzlockeGroups } from '$lib/data/states';
+
 
 export const popover = writable(null);
 
@@ -109,21 +111,21 @@ export const updateGame = (game) => (payload) => {
   return Object.values(games).map(format).join(',');
 };
 
-export const updatePokemon = (p) => {
+export const updatePokemon = ({ customId, customName, ...p } = {}) => {
   activeGame.subscribe((gameId) => {
     getGame(gameId).update(
       patch({
-        [p.location]: p
+        [customId || p.location]: p
       })
     );
   });
 };
 
-export const killPokemon = (p) => {
+export const killPokemon = ({ customId, customName, ...p }) => {
   activeGame.subscribe((gameId) => {
     getGame(gameId).update(
       patch({
-        [p.location]: { ...p, status: 5 }
+        [customId || p.location]: { ...p, status: 5 }
       })
     );
   });
@@ -157,19 +159,20 @@ export const getBox = (cb = () => {}) =>
 
     getGame(gameId).subscribe(
       read((data) => {
-        const customMap = Object.fromEntries(
-          (data.__custom || []).map(m => [m.id, m])
-        )
+        const customIdMap = toObj(data.__custom, 'id')
+        const customLocMap = toObj(data.__custom, 'name')
+
         cb(
           Object.values(data)
             .filter((i) => i.pokemon)
             .filter(({ status }) => NuzlockeGroups.Available.includes(status))
             .map(p => {
-              if (customMap?.[p.location]) return {
-                ...p,
-                custom: customMap?.[p.location]?.name,
-              }
-              else return p
+              // Read custom location data from data.__custom
+              let custom
+              if (customIdMap?.[p.location]) custom = customIdMap?.[p.location]
+              else if (customLocMap?.[p.location]) custom = customLocMap?.[p.location]
+
+              return custom ? { ...p, customId: custom.id, customName: custom.name } : p
             })
         );
       })
