@@ -47510,6 +47510,13 @@
       "boss": "Bugsy"
     },
     {
+      "type": "gym",
+      "name": "Azalea Town",
+      "value": "rn1",
+      "group": "rival",
+      "boss": "Silver"
+    },
+    {
       "type": "route",
       "name": "Ilex Forest",
       "encounters": [
@@ -47711,7 +47718,7 @@
     {
       "type": "gym",
       "name": "Burned Tower",
-      "value": "r1",
+      "value": "rn2",
       "group": "rival",
       "boss": "Silver"
     },
@@ -48165,6 +48172,13 @@
       "value": "evg",
       "group": "evil-team",
       "boss": "Rocket Boss Giovanni"
+    },
+    {
+      "type": "gym",
+      "name": "Goldenrod Underground",
+      "value": "r1",
+      "group": "rival",
+      "boss": "Silver"
     },
     {
       "type": "route",
@@ -61025,6 +61039,13 @@
       "boss": "Bugsy"
     },
     {
+      "type": "gym",
+      "name": "Azalea Town",
+      "value": "rn1",
+      "group": "rival",
+      "boss": "Silver"
+    },
+    {
       "type": "route",
       "name": "Ilex Forest",
       "encounters": [
@@ -61226,7 +61247,7 @@
     {
       "type": "gym",
       "name": "Burned Tower",
-      "value": "r1",
+      "value": "rn2",
       "group": "rival",
       "boss": "Silver"
     },
@@ -61680,6 +61701,12 @@
       "value": "evg",
       "group": "evil-team",
       "boss": "Rocket Boss Giovanni"
+    },
+    {
+      "type": "gym",
+      "name": "Goldenrod Underground",
+      "value": "r1",
+      "group": "Silver"
     },
     {
       "type": "route",

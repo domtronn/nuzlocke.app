@@ -2711,275 +2711,165 @@
       }
     ]
   },
-  "r1": {
+  "rn1": {
     "name": "Silver",
     "speciality": "",
     "img": "/leaders/gs-silver",
     "pokemon": [
       {
-        "name": "honchkrow",
-        "level": "45",
+        "name": "murkrow",
+        "level": "19",
         "moves": [
           {
-            "power": 80,
+            "power": 60,
             "type": "flying",
             "damage_class": "physical",
-            "name": "Drill Peck"
+            "name": "Wing Attack"
           },
           {
-            "type": "poison",
-            "damage_class": "status",
-            "name": "Toxic",
-            "effect": "Badly poisons the target, inflicting more damage every turn."
+            "power": 30,
+            "type": "ghost",
+            "damage_class": "physical",
+            "name": "Astonish",
+            "effect": "Has a 30% chance to make the target flinch."
           },
           {
-            "priority": 4,
-            "type": "normal",
+            "type": "ice",
             "damage_class": "status",
-            "name": "Protect",
-            "effect": "Prevents any moves from hitting the user this turn."
+            "name": "Haze",
+            "effect": "Resets all Pokémon's stats, accuracy, and evasion."
           },
           {
-            "type": "flying",
-            "damage_class": "status",
-            "name": "Roost",
-            "effect": "Heals the user by half its max HP."
+            "power": 40,
+            "type": "dark",
+            "damage_class": "physical",
+            "name": "Pursuit",
+            "effect": "Has double power against, and can hit, Pokémon attempting to switch out."
           }
         ],
         "ability": {
           "name": "Insomnia",
           "effect": "Prevents sleep."
         },
-        "sprite": "430",
+        "sprite": "198",
         "types": [
           "dark",
           "flying"
         ],
         "stats": {
-          "hp": 100,
-          "atk": 125,
-          "def": 52,
-          "spa": 105,
-          "spd": 52,
-          "spe": 71
+          "hp": 60,
+          "atk": 85,
+          "def": 42,
+          "spa": 85,
+          "spd": 42,
+          "spe": 91
         }
       },
       {
-        "name": "magmar",
-        "level": "44",
+        "name": "gastly",
+        "level": "18",
         "moves": [
           {
-            "power": 90,
-            "type": "fire",
-            "damage_class": "special",
-            "name": "Flamethrower",
-            "effect": "Has a 10% chance to burn the target."
-          },
-          {
-            "type": "fire",
-            "damage_class": "status",
-            "name": "Will-O-Wisp",
-            "effect": "Burns the target."
-          },
-          {
-            "power": 120,
-            "type": "fighting",
-            "damage_class": "special",
-            "name": "Focus Blast",
-            "effect": "Has a 10% chance to lower the target's Special Defense by one stage."
-          },
-          {
-            "power": 90,
-            "type": "psychic",
-            "damage_class": "special",
-            "name": "Psychic",
-            "effect": "Has a 10% chance to lower the target's Special Defense by one stage."
-          }
-        ],
-        "ability": {
-          "name": "Flame Body",
-          "effect": "Has a 30% chance of burning attacking Pokémon on contact."
-        },
-        "starter": "fire",
-        "sprite": "126",
-        "types": [
-          "fire"
-        ],
-        "stats": {
-          "hp": 65,
-          "atk": 95,
-          "def": 57,
-          "spa": 100,
-          "spd": 85,
-          "spe": 93
-        }
-      },
-      {
-        "name": "electabuzz",
-        "level": "44",
-        "moves": [
-          {
-            "power": 90,
-            "type": "electric",
-            "damage_class": "special",
-            "name": "Thunderbolt",
-            "effect": "Has a 10% chance to paralyze the target."
-          },
-          {
-            "type": "electric",
-            "damage_class": "status",
-            "name": "Thunder Wave",
-            "effect": "Paralyzes the target."
-          },
-          {
-            "power": 90,
-            "type": "psychic",
-            "damage_class": "special",
-            "name": "Psychic",
-            "effect": "Has a 10% chance to lower the target's Special Defense by one stage."
-          },
-          {
-            "power": 120,
-            "type": "fighting",
-            "damage_class": "special",
-            "name": "Focus Blast",
-            "effect": "Has a 10% chance to lower the target's Special Defense by one stage."
-          }
-        ],
-        "ability": {
-          "name": "Static",
-          "effect": "Has a 30% chance of paralyzing attacking Pokémon on contact."
-        },
-        "starter": "fire",
-        "sprite": "125",
-        "types": [
-          "electric"
-        ],
-        "stats": {
-          "hp": 65,
-          "atk": 83,
-          "def": 57,
-          "spa": 95,
-          "spd": 85,
-          "spe": 105
-        }
-      },
-      {
-        "name": "gengar",
-        "level": "45",
-        "moves": [
-          {
-            "power": 80,
+            "power": 30,
             "type": "ghost",
-            "damage_class": "special",
-            "name": "Shadow Ball",
-            "effect": "Has a 20% chance to lower the target's Special Defense by one stage."
-          },
-          {
-            "power": 75,
-            "type": "grass",
-            "damage_class": "special",
-            "name": "Giga Drain",
-            "effect": "Drains half the damage inflicted to heal the user."
-          },
-          {
-            "power": 110,
-            "type": "electric",
-            "damage_class": "special",
-            "name": "Thunder",
+            "damage_class": "physical",
+            "name": "Lick",
             "effect": "Has a 30% chance to paralyze the target."
           },
           {
-            "type": "psychic",
+            "type": "ghost",
             "damage_class": "status",
-            "name": "Hypnosis",
-            "effect": "Puts the target to sleep."
+            "name": "Curse",
+            "effect": "Ghosts pay half their max HP to hurt the target every turn.  Others decrease Speed but raise Attack and Defense."
+          },
+          {
+            "type": "ghost",
+            "damage_class": "status",
+            "name": "Spite",
+            "effect": "Lowers the PP of the target's last used move by 4."
+          },
+          {
+            "type": "normal",
+            "damage_class": "status",
+            "name": "Mean Look",
+            "effect": "Prevents the target from leaving battle."
           }
         ],
         "ability": {
           "name": "Levitate",
           "effect": "Evades ground moves."
         },
-        "sprite": "94",
+        "sprite": "92",
         "types": [
           "ghost",
           "poison"
         ],
         "stats": {
-          "hp": 60,
-          "atk": 65,
-          "def": 60,
-          "spa": 130,
-          "spd": 75,
-          "spe": 110
+          "hp": 30,
+          "atk": 35,
+          "def": 30,
+          "spa": 100,
+          "spd": 35,
+          "spe": 80
         }
       },
       {
-        "name": "alakazam",
-        "level": "45",
+        "name": "kadabra",
+        "level": "19",
         "moves": [
           {
-            "power": 90,
+            "type": "psychic",
+            "damage_class": "status",
+            "name": "Kinesis",
+            "effect": "Lowers the target's accuracy by one stage."
+          },
+          {
+            "type": "normal",
+            "damage_class": "status",
+            "name": "Disable",
+            "effect": "Disables the target's last used move for 1-8 turns."
+          },
+          {
+            "power": 50,
             "type": "psychic",
             "damage_class": "special",
-            "name": "Psychic",
-            "effect": "Has a 10% chance to lower the target's Special Defense by one stage."
+            "name": "Confusion",
+            "effect": "Has a 10% chance to confuse the target."
           },
           {
-            "power": 60,
-            "type": "electric",
-            "damage_class": "special",
-            "name": "Shock Wave",
-            "effect": "Never misses."
-          },
-          {
-            "power": 90,
-            "type": "grass",
-            "damage_class": "special",
-            "name": "Energy Ball",
-            "effect": "Has a 10% chance to lower the target's Special Defense by one stage."
-          },
-          {
-            "type": "electric",
+            "priority": -6,
+            "type": "psychic",
             "damage_class": "status",
-            "name": "Thunder Wave",
-            "effect": "Paralyzes the target."
+            "name": "Teleport",
+            "effect": "Immediately ends wild battles.  No effect otherwise."
           }
         ],
         "ability": {
           "name": "Synchronize",
           "effect": "Copies burns, paralysis, and poison received onto the Pokémon that inflicted them."
         },
-        "sprite": "65",
+        "sprite": "64",
         "types": [
           "psychic"
         ],
         "stats": {
-          "hp": 55,
-          "atk": 50,
-          "def": 45,
-          "spa": 135,
-          "spd": 95,
-          "spe": 120
+          "hp": 40,
+          "atk": 35,
+          "def": 30,
+          "spa": 120,
+          "spd": 70,
+          "spe": 105
         }
       },
       {
-        "name": "feraligatr",
-        "level": "46",
+        "name": "croconaw",
+        "level": "21",
         "moves": [
           {
-            "power": 80,
-            "type": "water",
-            "damage_class": "physical",
-            "name": "Waterfall",
-            "effect": "Has a 20% chance to make the target flinch."
-          },
-          {
-            "power": 80,
-            "type": "dark",
-            "damage_class": "physical",
-            "name": "Crunch",
-            "effect": "Has a 20% chance to lower the target's Defense by one stage."
+            "type": "normal",
+            "damage_class": "status",
+            "name": "Scary Face",
+            "effect": "Lowers the target's Speed by two stages."
           },
           {
             "power": 65,
@@ -2987,12 +2877,6 @@
             "damage_class": "physical",
             "name": "Ice Fang",
             "effect": "Has a 10% chance to freeze the target and a $effect_chance% chance to make the target flinch."
-          },
-          {
-            "type": "normal",
-            "damage_class": "status",
-            "name": "Swords Dance",
-            "effect": "Raises the user's Attack by two stages."
           }
         ],
         "ability": {
@@ -3000,17 +2884,269 @@
           "effect": "Strengthens water moves to inflict 1.5× damage at 1/3 max HP or less."
         },
         "starter": "fire",
-        "sprite": "160",
+        "sprite": "159",
         "types": [
           "water"
         ],
         "stats": {
-          "hp": 85,
-          "atk": 105,
-          "def": 100,
-          "spa": 79,
-          "spd": 83,
-          "spe": 78
+          "hp": 65,
+          "atk": 80,
+          "def": 80,
+          "spa": 59,
+          "spd": 63,
+          "spe": 58
+        }
+      }
+    ]
+  },
+  "rn2": {
+    "name": "Silver",
+    "speciality": "",
+    "img": "/leaders/gs-silver",
+    "pokemon": [
+      {
+        "name": "murkrow",
+        "level": "25",
+        "moves": [
+          {
+            "type": "ghost",
+            "damage_class": "special",
+            "name": "Night Shade",
+            "effect": "Inflicts damage equal to the user's level."
+          },
+          {
+            "type": "ice",
+            "damage_class": "status",
+            "name": "Haze",
+            "effect": "Resets all Pokémon's stats, accuracy, and evasion."
+          },
+          {
+            "power": 60,
+            "type": "flying",
+            "damage_class": "physical",
+            "name": "Wing Attack"
+          },
+          {
+            "power": 60,
+            "type": "dark",
+            "damage_class": "physical",
+            "name": "Assurance",
+            "effect": "Power is doubled if the target has already received damage this turn."
+          }
+        ],
+        "ability": {
+          "name": "Insomnia",
+          "effect": "Prevents sleep."
+        },
+        "sprite": "198",
+        "types": [
+          "dark",
+          "flying"
+        ],
+        "stats": {
+          "hp": 60,
+          "atk": 85,
+          "def": 42,
+          "spa": 85,
+          "spd": 42,
+          "spe": 91
+        }
+      },
+      {
+        "name": "kadabra",
+        "level": "26",
+        "moves": [
+          {
+            "power": 65,
+            "type": "psychic",
+            "damage_class": "special",
+            "name": "Psybeam",
+            "effect": "Has a 10% chance to confuse the target."
+          },
+          {
+            "type": "psychic",
+            "damage_class": "status",
+            "name": "Miracle Eye",
+            "effect": "Forces the target to have no evasion, and allows it to be hit by Psychic moves even if it's Dark."
+          },
+          {
+            "type": "normal",
+            "damage_class": "status",
+            "name": "Disable",
+            "effect": "Disables the target's last used move for 1-8 turns."
+          },
+          {
+            "power": 50,
+            "type": "psychic",
+            "damage_class": "special",
+            "name": "Confusion",
+            "effect": "Has a 10% chance to confuse the target."
+          }
+        ],
+        "ability": {
+          "name": "Synchronize",
+          "effect": "Copies burns, paralysis, and poison received onto the Pokémon that inflicted them."
+        },
+        "sprite": "64",
+        "types": [
+          "psychic"
+        ],
+        "stats": {
+          "hp": 40,
+          "atk": 35,
+          "def": 30,
+          "spa": 120,
+          "spd": 70,
+          "spe": 105
+        }
+      },
+      {
+        "name": "haunter",
+        "level": "25",
+        "moves": [
+          {
+            "power": 60,
+            "type": "ghost",
+            "damage_class": "special",
+            "name": "Ominous Wind",
+            "effect": "Has a 10% chance to raise all of the user's stats by one stage."
+          },
+          {
+            "type": "ghost",
+            "damage_class": "status",
+            "name": "Confuse Ray",
+            "effect": "Confuses the target."
+          },
+          {
+            "power": 60,
+            "type": "ghost",
+            "damage_class": "physical",
+            "name": "Shadow Punch",
+            "effect": "Never misses."
+          },
+          {
+            "power": 70,
+            "priority": 1,
+            "type": "dark",
+            "damage_class": "physical",
+            "name": "Sucker Punch",
+            "effect": "Only works if the target is about to use a damaging move."
+          }
+        ],
+        "ability": {
+          "name": "Levitate",
+          "effect": "Evades ground moves."
+        },
+        "sprite": "93",
+        "types": [
+          "ghost",
+          "poison"
+        ],
+        "stats": {
+          "hp": 45,
+          "atk": 50,
+          "def": 45,
+          "spa": 115,
+          "spd": 55,
+          "spe": 95
+        }
+      },
+      {
+        "name": "elekid",
+        "level": "24",
+        "moves": [
+          {
+            "power": 40,
+            "type": "fire",
+            "damage_class": "special",
+            "name": "Ember",
+            "effect": "Has a 10% chance to burn the target."
+          },
+          {
+            "power": 60,
+            "type": "dark",
+            "damage_class": "physical",
+            "name": "Feint Attack",
+            "effect": "Never misses."
+          },
+          {
+            "type": "normal",
+            "damage_class": "status",
+            "name": "Smokescreen",
+            "effect": "Lowers the target's accuracy by one stage."
+          },
+          {
+            "power": 35,
+            "type": "fire",
+            "damage_class": "special",
+            "name": "Fire Spin",
+            "effect": "Prevents the target from fleeing and inflicts damage for 2-5 turns."
+          }
+        ],
+        "ability": {
+          "name": "Static",
+          "effect": "Has a 30% chance of paralyzing attacking Pokémon on contact."
+        },
+        "starter": "fire",
+        "sprite": "239",
+        "types": [
+          "electric"
+        ],
+        "stats": {
+          "hp": 45,
+          "atk": 63,
+          "def": 37,
+          "spa": 65,
+          "spd": 55,
+          "spe": 95
+        }
+      },
+      {
+        "name": "croconaw",
+        "level": "27",
+        "moves": [
+          {
+            "type": "psychic",
+            "damage_class": "status",
+            "name": "Reflect",
+            "effect": "Reduces damage from physical attacks by half."
+          },
+          {
+            "power": 60,
+            "type": "grass",
+            "damage_class": "special",
+            "name": "Magical Leaf",
+            "effect": "Never misses."
+          },
+          {
+            "type": "normal",
+            "damage_class": "status",
+            "name": "Nature Power",
+            "effect": "Uses a move which depends upon the terrain."
+          },
+          {
+            "type": "normal",
+            "damage_class": "physical",
+            "name": "Natural Gift",
+            "effect": "Power and type depend on the held berry."
+          }
+        ],
+        "ability": {
+          "name": "Torrent",
+          "effect": "Strengthens water moves to inflict 1.5× damage at 1/3 max HP or less."
+        },
+        "starter": "fire",
+        "sprite": "159",
+        "types": [
+          "water"
+        ],
+        "stats": {
+          "hp": 65,
+          "atk": 80,
+          "def": 80,
+          "spa": 59,
+          "spd": 63,
+          "spe": 58
         }
       }
     ]
@@ -6507,6 +6643,310 @@
           "spa": 55,
           "spd": 55,
           "spe": 40
+        }
+      }
+    ]
+  },
+  "r1": {
+    "name": "Silver",
+    "speciality": "",
+    "img": "/leaders/gs-silver",
+    "pokemon": [
+      {
+        "name": "honchkrow",
+        "level": "45",
+        "moves": [
+          {
+            "power": 80,
+            "type": "flying",
+            "damage_class": "physical",
+            "name": "Drill Peck"
+          },
+          {
+            "type": "poison",
+            "damage_class": "status",
+            "name": "Toxic",
+            "effect": "Badly poisons the target, inflicting more damage every turn."
+          },
+          {
+            "priority": 4,
+            "type": "normal",
+            "damage_class": "status",
+            "name": "Protect",
+            "effect": "Prevents any moves from hitting the user this turn."
+          },
+          {
+            "type": "flying",
+            "damage_class": "status",
+            "name": "Roost",
+            "effect": "Heals the user by half its max HP."
+          }
+        ],
+        "ability": {
+          "name": "Insomnia",
+          "effect": "Prevents sleep."
+        },
+        "sprite": "430",
+        "types": [
+          "dark",
+          "flying"
+        ],
+        "stats": {
+          "hp": 100,
+          "atk": 125,
+          "def": 52,
+          "spa": 105,
+          "spd": 52,
+          "spe": 71
+        }
+      },
+      {
+        "name": "magmar",
+        "level": "44",
+        "moves": [
+          {
+            "power": 90,
+            "type": "fire",
+            "damage_class": "special",
+            "name": "Flamethrower",
+            "effect": "Has a 10% chance to burn the target."
+          },
+          {
+            "type": "fire",
+            "damage_class": "status",
+            "name": "Will-O-Wisp",
+            "effect": "Burns the target."
+          },
+          {
+            "power": 120,
+            "type": "fighting",
+            "damage_class": "special",
+            "name": "Focus Blast",
+            "effect": "Has a 10% chance to lower the target's Special Defense by one stage."
+          },
+          {
+            "power": 90,
+            "type": "psychic",
+            "damage_class": "special",
+            "name": "Psychic",
+            "effect": "Has a 10% chance to lower the target's Special Defense by one stage."
+          }
+        ],
+        "ability": {
+          "name": "Flame Body",
+          "effect": "Has a 30% chance of burning attacking Pokémon on contact."
+        },
+        "starter": "fire",
+        "sprite": "126",
+        "types": [
+          "fire"
+        ],
+        "stats": {
+          "hp": 65,
+          "atk": 95,
+          "def": 57,
+          "spa": 100,
+          "spd": 85,
+          "spe": 93
+        }
+      },
+      {
+        "name": "electabuzz",
+        "level": "44",
+        "moves": [
+          {
+            "power": 90,
+            "type": "electric",
+            "damage_class": "special",
+            "name": "Thunderbolt",
+            "effect": "Has a 10% chance to paralyze the target."
+          },
+          {
+            "type": "electric",
+            "damage_class": "status",
+            "name": "Thunder Wave",
+            "effect": "Paralyzes the target."
+          },
+          {
+            "power": 90,
+            "type": "psychic",
+            "damage_class": "special",
+            "name": "Psychic",
+            "effect": "Has a 10% chance to lower the target's Special Defense by one stage."
+          },
+          {
+            "power": 120,
+            "type": "fighting",
+            "damage_class": "special",
+            "name": "Focus Blast",
+            "effect": "Has a 10% chance to lower the target's Special Defense by one stage."
+          }
+        ],
+        "ability": {
+          "name": "Static",
+          "effect": "Has a 30% chance of paralyzing attacking Pokémon on contact."
+        },
+        "starter": "fire",
+        "sprite": "125",
+        "types": [
+          "electric"
+        ],
+        "stats": {
+          "hp": 65,
+          "atk": 83,
+          "def": 57,
+          "spa": 95,
+          "spd": 85,
+          "spe": 105
+        }
+      },
+      {
+        "name": "gengar",
+        "level": "45",
+        "moves": [
+          {
+            "power": 80,
+            "type": "ghost",
+            "damage_class": "special",
+            "name": "Shadow Ball",
+            "effect": "Has a 20% chance to lower the target's Special Defense by one stage."
+          },
+          {
+            "power": 75,
+            "type": "grass",
+            "damage_class": "special",
+            "name": "Giga Drain",
+            "effect": "Drains half the damage inflicted to heal the user."
+          },
+          {
+            "power": 110,
+            "type": "electric",
+            "damage_class": "special",
+            "name": "Thunder",
+            "effect": "Has a 30% chance to paralyze the target."
+          },
+          {
+            "type": "psychic",
+            "damage_class": "status",
+            "name": "Hypnosis",
+            "effect": "Puts the target to sleep."
+          }
+        ],
+        "ability": {
+          "name": "Levitate",
+          "effect": "Evades ground moves."
+        },
+        "sprite": "94",
+        "types": [
+          "ghost",
+          "poison"
+        ],
+        "stats": {
+          "hp": 60,
+          "atk": 65,
+          "def": 60,
+          "spa": 130,
+          "spd": 75,
+          "spe": 110
+        }
+      },
+      {
+        "name": "alakazam",
+        "level": "45",
+        "moves": [
+          {
+            "power": 90,
+            "type": "psychic",
+            "damage_class": "special",
+            "name": "Psychic",
+            "effect": "Has a 10% chance to lower the target's Special Defense by one stage."
+          },
+          {
+            "power": 60,
+            "type": "electric",
+            "damage_class": "special",
+            "name": "Shock Wave",
+            "effect": "Never misses."
+          },
+          {
+            "power": 90,
+            "type": "grass",
+            "damage_class": "special",
+            "name": "Energy Ball",
+            "effect": "Has a 10% chance to lower the target's Special Defense by one stage."
+          },
+          {
+            "type": "electric",
+            "damage_class": "status",
+            "name": "Thunder Wave",
+            "effect": "Paralyzes the target."
+          }
+        ],
+        "ability": {
+          "name": "Synchronize",
+          "effect": "Copies burns, paralysis, and poison received onto the Pokémon that inflicted them."
+        },
+        "sprite": "65",
+        "types": [
+          "psychic"
+        ],
+        "stats": {
+          "hp": 55,
+          "atk": 50,
+          "def": 45,
+          "spa": 135,
+          "spd": 95,
+          "spe": 120
+        }
+      },
+      {
+        "name": "feraligatr",
+        "level": "46",
+        "moves": [
+          {
+            "power": 80,
+            "type": "water",
+            "damage_class": "physical",
+            "name": "Waterfall",
+            "effect": "Has a 20% chance to make the target flinch."
+          },
+          {
+            "power": 80,
+            "type": "dark",
+            "damage_class": "physical",
+            "name": "Crunch",
+            "effect": "Has a 20% chance to lower the target's Defense by one stage."
+          },
+          {
+            "power": 65,
+            "type": "ice",
+            "damage_class": "physical",
+            "name": "Ice Fang",
+            "effect": "Has a 10% chance to freeze the target and a $effect_chance% chance to make the target flinch."
+          },
+          {
+            "type": "normal",
+            "damage_class": "status",
+            "name": "Swords Dance",
+            "effect": "Raises the user's Attack by two stages."
+          }
+        ],
+        "ability": {
+          "name": "Torrent",
+          "effect": "Strengthens water moves to inflict 1.5× damage at 1/3 max HP or less."
+        },
+        "starter": "fire",
+        "sprite": "160",
+        "types": [
+          "water"
+        ],
+        "stats": {
+          "hp": 85,
+          "atk": 105,
+          "def": 100,
+          "spa": 79,
+          "spd": 83,
+          "spe": 78
         }
       }
     ]
