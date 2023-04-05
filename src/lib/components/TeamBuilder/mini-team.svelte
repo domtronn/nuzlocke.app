@@ -95,7 +95,7 @@
 <div class='inline-flex gap-x-4 md:transform md:scale-110 md:mt-0.5 items-center {$$restProps.class || ''}'>
 
   {#each mons as p, i}
-    <p
+    <button
       use:drag={{ data: p, id: i, effect: 'move' }}
       on:click={onRemove(p)}
 
@@ -130,7 +130,7 @@
         class='absolute opacity-0 left-1/2 -translate-x-1/2 -bottom-4 pointer-events-none transition group-hover:opacity-100'
         inline icon={X} />
 
-    </p>
+    </button>
   {/each}
 
 {#each Array(6 - mons.length).fill() as _, i}
