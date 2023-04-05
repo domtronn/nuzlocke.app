@@ -1,6 +1,6 @@
 <script>
   export let name, value = null, color = '', className = '', placeholder = '', icon, type = 'text', min, max, rounded = false
-  import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
+  import { Icon } from '$c/core'
   name = name || placeholder
 </script>
 
@@ -17,7 +17,7 @@
   class:rounded-lg={rounded}
   class:pl-8={!!icon}
   class:pl-3={!icon}
-  class='{color} {className}'
+  class='{color} {className} {$$restProps.class || ''}'
   />
 {:else}
   <input
@@ -28,7 +28,7 @@
   class:rounded-lg={rounded}
   class:pl-8={!!icon}
   class:pl-3={!icon}
-  class='{color} {className}'
+  class='{color} {className} {$$restProps.class || ''}'
   autocomplete=off
   />
 {/if}

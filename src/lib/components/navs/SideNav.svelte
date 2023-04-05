@@ -32,7 +32,7 @@
     on:click={_ => show = !show}
     id='sidenav_el'
     aria-label={show ? 'Close menu' : 'Open menu'}
-    class='h-full transition text-white sm:text-gray-600 dark:text-black md:dark:text-gray-400 md:dark:hover:text-gray-100 w-11 h-11 flex items-center justify-center rounded-full bg-gray-900 shadow-lg sm:shadow-none dark:bg-white sm:bg-transparent dark:sm:bg-transparent text-center {className}'
+    class='h-full transition text-white sm:text-gray-600 dark:text-black md:dark:text-gray-400 md:dark:hover:text-gray-100 w-11 h-11 flex items-center justify-center rounded-full bg-gray-900 shadow-lg sm:shadow-none dark:bg-white sm:bg-transparent dark:sm:bg-transparent text-center {className} {$$restProps.class || ''}'
   >
     <Icon inline={true} height='1.2rem' icon={show ? X : Menu} class='fill-current transform scale-150 sm:transform-none' />
   </button>

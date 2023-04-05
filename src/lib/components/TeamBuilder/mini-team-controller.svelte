@@ -52,17 +52,17 @@
   $: mons = (teamData || []).map(t => boxData[t])
 </script>
 
-{#await setup()}
-  {:then}
-    <span in:fade>
-      <MiniTeam
-        class={$$restProps.class || ''}
-        iconKey=pokemon
-        on:add={onteamadd}
-        on:swap={onteamswap}
-        on:remove={onteamremove}
-        on:replace={onteamreplace}
-        {mons}
+{#await setup() then}
+  <div in:fade
+       class='max-md:fixed max-md:bottom-0 max-md:w-full w-auto text-left max-md:pb-2 max-md:pt-4 mt-2.5 max-md:border-t-2 bg-white/50 dark:bg-gray-800/80 backdrop-blur-sm dark:border-gray-900 border-gray-200'>
+    <MiniTeam
+      class='max-md:ml-4 {$$restProps.class || ''}'
+      iconKey=pokemon
+      on:add={onteamadd}
+      on:swap={onteamswap}
+      on:remove={onteamremove}
+      on:replace={onteamreplace}
+      {mons}
       />
-  </span>
+  </div>
 {/await}
