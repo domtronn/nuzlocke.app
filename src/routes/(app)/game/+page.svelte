@@ -20,9 +20,8 @@
   import debounce from '$lib/utils/debounce'
 
   import { Expanded as Games } from '$lib/data/games.js'
-  import { getGame, read, readdata,
-           getTeams, getBox,
-           savedGames, activeGame, updateGame, parse,
+  import { getGame, read, readdata, readBox,
+           savedGames, activeGame, updateGame, parse, patch
          } from '$lib/store'
 
   let gameStore, gameKey, gameData, teamData = []
@@ -77,8 +76,7 @@
     })($savedGames)
   })
 
-
-  let boxMap
+  let boxData = {}
   const setup = () => new Promise((resolve) => {
     const [, key, id] = readdata()
     if (browser && !id) return window.location = '/'
@@ -86,18 +84,18 @@
     gameStore = getGame(id)
     gameKey = key
 
-    getBox(b => boxMap = toObj(b))
-
     deferStyles(`/assets/items/${key}.css`)
     fetchRoute(Games[key].pid).then(r => resolve(r))
 
     gameStore.subscribe(read(game => {
+      console.log('Reading gamestore data')
       gameData = game
+      boxData = toObj(readBox(game))
       teamData = game.__team
     }))
   })
 
-  $: mons = (teamData || []).map(t => boxMap[t])
+  $: mons = (teamData || []).map(t => boxData[t])
 
   const _onsearch = (e) => search = e.detail.search
   const onsearch = debounce(_onsearch, 350)
@@ -128,6 +126,13 @@
 
   let show = false
 
+  const onteamremove = (evt) => {
+    console.log('Updating gamestore data')
+    gameStore.update(patch({
+      __team: teamData.filter(i => i !== evt.detail.data.id)
+    }))
+  }
+
 </script>
 
 <SupportBanner />
@@ -142,6 +147,7 @@
         <MiniTeam
           class='md:flex md:flex-col md:fixed md:right-0 md:top-1/2 md:-translate-y-1/2'
           iconKey=pokemon
+          on:remove={onteamremove}
           {mons}
           />
 

@@ -115,19 +115,17 @@
     dispatch('delete', { id: location })
   }
 
-  function handleTeamAdd () {
-    console.log('Adding', id, 'to', team)
-    team = (team || []).concat(id)
-  }
-  function handleTeamRemove () {
-    console.log('Removing', id, 'from', team)
-    team = (team || []).filter(i => i !== id)
-  }
+  /** Team management */
+  function handleTeamAdd () { team = (team || []).concat(id) }
+  function handleTeamRemove () { team = (team || []).filter(i => i !== id) }
 
   function handleClear () {
     status = nickname = selected = death = null
     search = statusSearch = natureSearch = null
-    store.update(patch({ [location]: {} }))
+    store.update(patch({
+      [location]: {},
+      __team: (team || []).filter(i => i !== id)
+    }))
   }
 
   let statusComplete = false
@@ -167,8 +165,6 @@
     hidden = false
     _animateStatus(100)
   }
-
-
 
   $: gray = NuzlockeGroups.Unavailable.includes(status?.id)
 </script>
