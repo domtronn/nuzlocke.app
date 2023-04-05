@@ -5,6 +5,7 @@
 
   import { Loader, Tabs } from '$lib/components/core'
 
+  import { MiniTeam } from '$lib/components/TeamBuilder'
   import { SupportBanner } from '$lib/components/navs'
   import { GameRoute, Search } from '$lib/components/Game'
   import { Settings } from '$lib/components/Settings'
@@ -14,14 +15,17 @@
   import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
   import { Arrow, Hide } from '$icons'
 
+  import { toObj } from '$lib/utils/obj'
   import deferStyles from '$lib/utils/defer-styles'
   import debounce from '$lib/utils/debounce'
+
   import { Expanded as Games } from '$lib/data/games.js'
   import { getGame, read, readdata,
+           getTeams, getBox,
            savedGames, activeGame, updateGame, parse,
          } from '$lib/store'
 
-  let gameStore, gameKey, gameData
+  let gameStore, gameKey, gameData, teamData = []
   let routeEl
 
   let search = ''
@@ -73,6 +77,8 @@
     })($savedGames)
   })
 
+
+  let boxMap
   const setup = () => new Promise((resolve) => {
     const [, key, id] = readdata()
     if (browser && !id) return window.location = '/'
@@ -80,13 +86,18 @@
     gameStore = getGame(id)
     gameKey = key
 
+    getBox(b => boxMap = toObj(b))
+
     deferStyles(`/assets/items/${key}.css`)
     fetchRoute(Games[key].pid).then(r => resolve(r))
 
     gameStore.subscribe(read(game => {
       gameData = game
+      teamData = game.__team
     }))
   })
+
+  $: mons = teamData.map(t => boxMap[t])
 
   const _onsearch = (e) => search = e.detail.search
   const onsearch = debounce(_onsearch, 350)
@@ -126,7 +137,14 @@
 {:then route}
   <div id='game_el' out:fade|local={{ duration: 250 }} in:fade|local={{ duration: 250, delay: 300 }} class="container mx-auto pb-24 overflow-hidden">
     <div class="flex flex-row flex-wrap pb-16 justify-center snap-start max-md:pt-4 bg-white dark:bg-gray-800">
-        <main id='main' class="p-container md:py-6 flex flex-col gap-y-4 relative ">
+      <main id='main' class="p-container md:py-6 flex flex-col gap-y-4 relative ">
+
+        <MiniTeam
+          class='flex flex-col fixed right-0 top-1/2 -translate-y-1/2'
+          iconKey=pokemon
+          {mons}
+          />
+
           <SideNav
             bind:show={show}
             on:nav={routeEl.setnav}

@@ -220,7 +220,7 @@ export const getTeams = (cb = () => {}) =>
     );
   });
 
-export const setTeam = (team) => {
+export const setTeam = (team, cb) => {
   if (!browser) return
 
   activeGame.subscribe((gameId) => {
@@ -229,7 +229,6 @@ export const setTeam = (team) => {
         __team: team
       })
     );
-    console.log('Udpated team', team)
   });
 }
 

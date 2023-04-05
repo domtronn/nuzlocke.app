@@ -1,7 +1,7 @@
 <script>
   export let id, store, location, locationName = '', type = '', infolink = ''
 
-  import { read, readdata, patch } from '$lib/store'
+  import { read, readdata, patch, getTeams, setTeam } from '$lib/store'
   import { capitalise } from '$lib/utils/string'
 
   import { fly } from 'svelte/transition'
@@ -12,9 +12,8 @@
 
   import Popover from '$lib/components/core/Popover.svelte'
 
-  import PIcon from '$lib/components/core/PokemonIcon.svelte'
-  import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
-  import { Chevron, Add, Delete, Deceased, External, Bin, Dots, Map, Search, LongGrass } from '$icons'
+  import { PIcon, Icon } from '$c/core'
+  import { Chevron, Add, Ball, Plus, Minus, Delete, Deceased, External, Bin, Dots, Map, Search, LongGrass } from '$icons'
 
   import { createEventDispatcher, onMount, getContext } from 'svelte'
 
@@ -50,6 +49,8 @@
   let loading = true
   let dupelines = new Set(), misslines = new Set()
 
+  let team, inteam
+
   store && store.subscribe(read(data => {
     const getStateMons = (data, stateGroup) => {
       return Object.values(data)
@@ -60,6 +61,8 @@
 
     getPkmns(getStateMons(data, NuzlockeGroups.Dupes)).then(p => dupelines = new Set(Object.values(p).map(p => p?.evoline)))
     getPkmns(getStateMons(data, NuzlockeGroups.MissDupes)).then(p => misslines = new Set(Object.values(p).map(p => p?.evoline)))
+
+    team = data.__team
 
     const pkmn = data[location]
     if (!pkmn) return
@@ -74,8 +77,14 @@
       .then(p => {
           selected = p
           loading = false
-        })
+      })
+
   }))
+
+  $: {
+    store.update(patch({ __team: team }))
+    inteam = team.includes(id)
+  }
 
   $: {
     if (selected)
@@ -101,6 +110,14 @@
 
     handleClear()
     dispatch('delete', { id: location })
+  }
+
+  function handleTeamAdd () {
+    console.log('Adding', id, 'to', team)
+    team = setTeam(team.concat(id)) }
+  function handleTeamRemove () {
+    console.log('Removing', id, 'from', team)
+    team = setTeam(team.filter(i => i !== id))
   }
 
   function handleClear () {
@@ -146,6 +163,8 @@
     hidden = false
     _animateStatus(100)
   }
+
+
 
   $: gray = NuzlockeGroups.Unavailable.includes(status?.id)
 </script>
@@ -331,6 +350,24 @@
         title='Evolve {selected.name}'
         on:click={handleEvolution(selected.sprite, selected.evos)}
       />
+    {/if}
+
+    {#if selected && !hidden && (status && NuzlockeGroups.Available.includes(status.id))}
+      <IconButton
+        rounded
+        src={Ball}
+        className='transform scale-125'
+        containerClassName='relative'
+        color=sky
+        title='{inteam ? `Remove` : `Add`} {selected.name} {inteam ? `from` : `to`} your team'
+        on:click={inteam ? handleTeamRemove : handleTeamAdd}
+        >
+        {#if team.includes(id)}
+          <Icon class='absolute transform scale-75 right-0.5 top-0.5 bg-gray-800 rounded-full' inline icon={Minus} />
+        {:else}
+          <Icon class='absolute transform scale-75 right-0.5 top-0.5 bg-gray-800 rounded-full' inline icon={Plus} />
+        {/if}
+      </IconButton>
     {/if}
 
       <Popover title='Open contextul menu' className='absolute top-16 mt-0.5 right-1 sm:top-0 sm:relative '>

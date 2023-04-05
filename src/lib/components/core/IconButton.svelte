@@ -78,6 +78,17 @@
     --icb-bg: theme('colors.green.700');
   }
 
+  .sky {
+    --icb-hover: theme('colors.sky.400');
+    --icb-active: theme('colors.sky.400');
+    --icb-bg: theme('colors.sky.200');
+  }
+
+  :global(.dark) .sky {
+    --icb-active: theme('colors.sky.300');
+    --icb-bg: theme('colors.sky.700');
+  }
+
   :global(.dark) button,
   :global(.dark) button.disabled
   {

@@ -15,7 +15,6 @@
   getBox(b => {
     box = b.reduce((acc, it) => ({ ...acc, [it.id]: it }), {})
     availableMons = b.filter(p => !mons.find(m => p.id == m.id))
-    console.log(mons, availableMons)
   })
   
   let selected = new Set([]), selectedMons = [], ids = []
@@ -81,7 +80,7 @@
   </div>
 {:else}
   <p class='max-w-[30ch] text-center mb-4'>
-    Your team is full, go out and catch some more Pokémon!
+    Your have no Pokémon in your box to add to your team, go out and catch some more!
   </p>
     <Button className=w-full solid wide rounded on:click={close}>
       <small>Go back</small>
