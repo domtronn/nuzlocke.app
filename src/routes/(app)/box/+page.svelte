@@ -162,7 +162,7 @@
           <AnalysisModal box={Object.values(Pokemon)}>
             <small>Box</small>
           </AnalysisModal>
-          <AnalysisModal box={team.map(p => Pokemon[p.pokemon])}>
+          <AnalysisModal box={mons.map(p=>Pokemon[p.pokemon])}>
             <small>Team</small>
           </AnalysisModal>
 
@@ -196,7 +196,7 @@
               </label>
             {/each}
 
-<IconButton
+            <IconButton
               rounded
               src={X}
               title='Clear filters'
