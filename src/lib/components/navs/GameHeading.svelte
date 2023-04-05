@@ -1,5 +1,4 @@
 <script>
-  export let className = ''
   import { activeGame, savedGames, parse } from '$lib/store'
   import { fade, fly } from 'svelte/transition'
   import { page } from '$app/stores'
@@ -42,7 +41,7 @@
       <a
         href="/"
         rel="external"
-        class='{className} home group'>
+        class='{$$restProps.class || ''} home group'>
         {#if game?.game}
           <Logo
             src=/assets/{game?.game}
@@ -87,7 +86,7 @@
       {/if}
     </div>
 
-    <MiniTeamController />
+    {#if $page.url.pathname !== '/graveyard'}<MiniTeamController />{/if}
 
     <span class='inline-flex relative'>
       <ThemeToggle />
