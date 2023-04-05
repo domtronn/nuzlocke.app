@@ -31,7 +31,7 @@
 <div
   in:fade
   class:bg-gray-800={open}
-  class='block md:hidden transition fixed bottom-0 left-0 duration-500 right-0 p-4 text-left'>
+  class='block md:hidden transition safe-bottom fixed bottom-0 left-0 duration-500 right-0 p-4 text-left'>
   {#if open}
     <div
       class='absolute w-3/4'

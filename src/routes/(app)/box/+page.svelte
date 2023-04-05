@@ -242,14 +242,6 @@
               {/if}
             {/each}
           </div>
-
-
-          <div class='max-md:fixed max-md:pb-2 max-md:pt-4 max-md:border-t-2 dark:border-gray-900 border-gray-200 w-full md:w-auto ml-auto bottom-0 left-0 backdrop-blur-xl text-center md:text-right md:-translate-y-12'>
-            <h2 class='max-md:hidden font-bold -mb-1 text-gray-800 dark:text-gray-200'>Your team</h2>
-            <p class='max-md:hidden font-italic text-gray-600 dark:text-gray-400'>
-              <small>Drag pokemon from your box to the slots</small>
-            </p>
-          </div>
         </div>
 
         <div

@@ -3,7 +3,7 @@
   import { toObj } from '$utils/obj'
   import { fade } from 'svelte/transition'
   import { getTeams, setTeam, getBox, readdata, readBox, read, patch } from '$lib/store'
-  let teamData = [], boxData = {}, gameStore
+  let teamData = [], boxData = [], gameStore
 
   async function setup() {
     const [,, id] = readdata()
@@ -53,11 +53,9 @@
 </script>
 
 {#await setup() then}
-  <div transition:fade
-
-       class='max-md:fixed max-md:bottom-0 max-md:w-full w-auto text-left max-md:pb-2 max-md:pt-4 mt-2.5 max-md:border-t-2 bg-white/50 dark:bg-gray-800/80 backdrop-blur-sm dark:border-gray-900 border-gray-200'>
+  <div transition:fade class=safe-bottom>
     <MiniTeam
-      class='max-md:ml-4 {$$restProps.class || ''}'
+      class='ml-4 {$$restProps.class || ''}'
       iconKey=pokemon
       on:add={onteamadd}
       on:swap={onteamswap}
@@ -67,3 +65,22 @@
       />
   </div>
 {/await}
+
+
+<style>
+  div {
+    z-index: 9999;
+    @apply w-auto relative flex items-center;
+  }
+
+  @media (max-width: theme('screens.md')) {
+    div {
+      @apply fixed w-full bottom-0 text-left py-3 pb-3.5 border-t-2 bg-white/50 backdrop-blur-sm border-gray-200
+    }
+
+    :global(.dark) div {
+      @apply bg-gray-800/80 border-gray-900;
+    }
+  }
+
+</style>

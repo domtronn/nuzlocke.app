@@ -92,7 +92,7 @@
 </div>
 {/if}
 
-<div class='inline-flex gap-x-4 items-center {$$restProps.class || ''}'>
+<div class='inline-flex gap-x-4 md:transform md:scale-110 md:mt-0.5 items-center {$$restProps.class || ''}'>
 
   {#each mons as p, i}
     <p
