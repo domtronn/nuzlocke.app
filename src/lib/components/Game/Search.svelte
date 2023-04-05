@@ -31,6 +31,7 @@
   in:fade
   class:bg-gray-800={open}
   class:pl-4={open}
+  class:left-0={open}
   class='block md:hidden transition safe-bottom fixed bottom-1 duration-500 right-0 pb-4 pt-2 pr-4 text-left'>
   {#if open}
     <div
