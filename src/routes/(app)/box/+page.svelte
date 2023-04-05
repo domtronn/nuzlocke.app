@@ -86,6 +86,8 @@
         - sum(Object.values(Pokemon[a.pokemon]?.baseStats))
     }
 
+
+
     return stat
       ? Pokemon[b.pokemon]?.baseStats[stat] - Pokemon[a.pokemon]?.baseStats[stat]
       : a.id - b.id
@@ -136,30 +138,8 @@
     if (team.map(t => t.id).includes(evt.detail.data.id)) team = team.filter(t => t.id !== evt.detail.data.id).concat(evt.detail.data)
     else team = team.concat(evt.detail.data)
   }
-
-  function teamreplace (evt) {
-    if (team.map(t => t.id).includes(evt.detail.data.id))
-      return teamswap({ detail: {
-        data: evt.detail.data,
-        targetId: evt.detail.targetId,
-        srcId: team.findIndex(t => t.id === evt.detail.data.id)
-      }})
-
-    team = team.map((it, i) => i === evt.detail.targetId ? evt.detail.data : it)
-  }
   function teamremove (mon) {
     team = team.filter((it, i) => it.id !== mon.detail.data.id)
-  }
-
-  function teamswap (evt) {
-    const targetId = Math.min(evt.detail.targetId, team.length - 1)
-    const srcId = evt.detail.srcId
-
-    team = team.map((it, i, arr) => {
-      if (i === targetId) return arr[srcId]
-      if (i === srcId) return arr[targetId]
-      return it
-    })
   }
 
   $: {
@@ -259,7 +239,7 @@
           {#if box.length === 0}
             <span class='h-96 flex items-center justify-center col-span-4 dark:text-gray-600 text-xl'>You have no Pokémon in your box</span>
           {/if}
-          {#each box.filter(filter) as p (p)}
+          {#each stat === 'team' ? mons : box.filter(filter) as p (p)}
             <span
               use:drag={{ data: p, effect: 'add', hideImg: true }}
               class='snap-start'
