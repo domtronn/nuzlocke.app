@@ -55,7 +55,7 @@
 {#await setup() then}
   <div transition:fade class=safe-bottom>
     <MiniTeam
-      class='ml-4 {$$restProps.class || ''}'
+      class={$$restProps.class || ''}
       iconKey=pokemon
       on:add={onteamadd}
       on:swap={onteamswap}
@@ -70,12 +70,12 @@
 <style>
   div {
     z-index: 9999;
-    @apply w-auto relative flex items-center;
+    @apply w-auto relative flex items-center text-center mx-auto;
   }
 
   @media (max-width: theme('screens.md')) {
     div {
-      @apply fixed w-full bottom-0 text-left py-3 pb-3.5 border-t-2 bg-white/50 backdrop-blur-sm border-gray-200
+      @apply fixed w-full bottom-0 py-3 pb-3.5 border-t-2 bg-white/50 backdrop-blur-sm border-gray-200
     }
 
     :global(.dark) div {

@@ -13,11 +13,6 @@
   let open = false, inputRef
   function handleOpen () { open = !open }
 
-  $: {
-    const input = inputRef?.querySelector('input')
-    input?.focus()
-    input?.scrollIntoView()
-  }
   $: term, dispatch('search', { search: term })
 </script>
 
@@ -36,12 +31,12 @@
   in:fade
   class:bg-gray-800={open}
   class:left-4={open}
-  class='block md:hidden transition safe-bottom fixed bottom-0 duration-500 right-0 pb-4 pt-3 pr-4 text-left'>
+  class='block md:hidden transition safe-bottom fixed bottom-1 duration-500 right-0 pb-4 pt-3 pr-4 text-left'>
   {#if open}
     <div
-      class='absolute w-3/4'
+      class='absolute w-4/5'
       bind:this={inputRef}
-      transition:fly={{ x: -450, duration: 350 }}
+      in:fly={{ x: -450, duration: 350 }}
     >
       <SearchBar bind:term />
     </div>
@@ -51,14 +46,14 @@
   <IconButton
     on:click={handleOpen}
     title='Close search bar'
-    containerClassName='float-right rounded-full'
+    containerClassName='float-right rounded-full !border-gray-900 transform -translate-y-8'
     src={X}
     />
   {:else}
     <IconButton
       on:click={handleOpen}
       title='Open search bar'
-      containerClassName='float-right rounded-full'
+      containerClassName='float-right rounded-full !border-gray-900 transform -translate-y-8'
       src={Search}
       />
     {/if}
