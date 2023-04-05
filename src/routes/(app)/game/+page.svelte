@@ -97,7 +97,7 @@
     }))
   })
 
-  $: mons = teamData.map(t => boxMap[t])
+  $: mons = (teamData || []).map(t => boxMap[t])
 
   const _onsearch = (e) => search = e.detail.search
   const onsearch = debounce(_onsearch, 350)
@@ -140,7 +140,7 @@
       <main id='main' class="p-container md:py-6 flex flex-col gap-y-4 relative ">
 
         <MiniTeam
-          class='flex flex-col fixed right-0 top-1/2 -translate-y-1/2'
+          class='md:flex md:flex-col md:fixed md:right-0 md:top-1/2 md:-translate-y-1/2'
           iconKey=pokemon
           {mons}
           />

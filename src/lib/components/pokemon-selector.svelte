@@ -82,8 +82,11 @@
   }))
 
   $: {
-    store.update(patch({ __team: team }))
-    inteam = team.includes(id)
+    if (team) {
+      console.log('patching')
+      store.update(patch({ __team: team }))
+      inteam = (team || []).includes(id)
+    }
   }
 
   $: {
@@ -114,10 +117,11 @@
 
   function handleTeamAdd () {
     console.log('Adding', id, 'to', team)
-    team = setTeam(team.concat(id)) }
+    team = (team || []).concat(id)
+  }
   function handleTeamRemove () {
     console.log('Removing', id, 'from', team)
-    team = setTeam(team.filter(i => i !== id))
+    team = (team || []).filter(i => i !== id)
   }
 
   function handleClear () {
@@ -362,7 +366,7 @@
         title='{inteam ? `Remove` : `Add`} {selected.name} {inteam ? `from` : `to`} your team'
         on:click={inteam ? handleTeamRemove : handleTeamAdd}
         >
-        {#if team.includes(id)}
+        {#if inteam}
           <Icon class='absolute transform scale-75 right-0.5 top-0.5 bg-gray-800 rounded-full' inline icon={Minus} />
         {:else}
           <Icon class='absolute transform scale-75 right-0.5 top-0.5 bg-gray-800 rounded-full' inline icon={Plus} />
