@@ -127,9 +127,21 @@
   let show = false
 
   const onteamremove = (evt) => {
-    console.log('Updating gamestore data')
     gameStore.update(patch({
       __team: teamData.filter(i => i !== evt.detail.data.id)
+    }))
+  }
+
+  const onteamswap = (evt) => {
+    const targetId = Math.min(evt.detail.targetId, teamData.length - 1)
+    const srcId = evt.detail.srcId
+
+    gameStore.update(patch({
+      __team: teamData.map((it, i, arr) => {
+        if (i === targetId) return arr[srcId]
+        if (i === srcId) return arr[targetId]
+        return it
+      })
     }))
   }
 
@@ -141,15 +153,16 @@
   <Loader />
 {:then route}
   <div id='game_el' out:fade|local={{ duration: 250 }} in:fade|local={{ duration: 250, delay: 300 }} class="container mx-auto pb-24 overflow-hidden">
-    <div class="flex flex-row flex-wrap pb-16 justify-center snap-start max-md:pt-4 bg-white dark:bg-gray-800">
-      <main id='main' class="p-container md:py-6 flex flex-col gap-y-4 relative ">
-
-        <MiniTeam
-          class='md:flex md:flex-col md:fixed md:right-0 md:top-1/2 md:-translate-y-1/2'
+          <MiniTeam
+          class='md:flex md:fixed md:top-2.5 md:left-1/2 md:-translate-x-1/2 z=[50001]'
           iconKey=pokemon
-          on:remove={onteamremove}
+            on:remove={onteamremove}
+            on:swap={onteamswap}
           {mons}
           />
+
+    <div class="flex flex-row flex-wrap pb-16 justify-center snap-start max-md:pt-4 bg-white dark:bg-gray-800">
+      <main id='main' class="p-container md:py-6 flex flex-col gap-y-4 relative ">
 
           <SideNav
             bind:show={show}

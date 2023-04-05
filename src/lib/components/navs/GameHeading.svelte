@@ -55,7 +55,7 @@
     </a>
 
       {#if games.length}
-        <Popover className='mt-1 sm:mt-4' title='Load saves' position={window?.innerWidth < 700 ? 'bottom' : 'right'}>
+        <Popover title='Load saves' position={window?.innerWidth < 700 ? 'bottom' : 'right'}>
           <span class='inline-flex'>
             <Icon inline={true} class='transition fill-current ml-2' icon={Save} />
             <Icon inline={true} class='hidden sm:block transition fill-current -ml-0.5' icon={CaretRight} />
@@ -155,7 +155,7 @@
 
   h1 { @apply text-base sm:text-xl border-transparent border-b-2 transition -mb-1.5 sm:mb-0; }
 
-  a.home { @apply inline-flex items-center pt-4 ml-4 -mt-4 md:mt-0 md:-ml-2 h-12; }
+  a.home { @apply inline-flex items-center ml-4 -mt-4 md:mt-0 md:-ml-2 h-12; }
   a.link { @apply inline-flex items-center gap-x-1 border-black transition p-2 px-3 md:p-4 text-sm md:text-base; }
 
   a.link.active { @apply border-b-2 bg-gray-50 text-black cursor-default; }
