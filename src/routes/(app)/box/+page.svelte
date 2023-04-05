@@ -175,16 +175,6 @@
 
         <div class='inline-flex flex-wrap md:flex-nowrap sm:flex-row gap-y-2 gap-x-4 sm:items-start z-50 mt-2'>
           <div class='grid sm:grid-rows-2 grid-cols-8 w-full sm:w-auto sm:grid-cols-5 gap-1 sm:gap-2 col-span-2'>
-            <IconButton
-              rounded
-              src={X}
-              title='Clear filters'
-              containerClassName='flex flex-col order-last sm:row-span-2 sm:order-none items-center justify-center relative'
-              disabled={!enabled}
-              on:click={clear}
-              >
-              <Tooltip>Clear all filters</Tooltip>
-            </IconButton>
 
             {#each stats as s}
               <label
@@ -205,6 +195,18 @@
                 {s}
               </label>
             {/each}
+
+<IconButton
+              rounded
+              src={X}
+              title='Clear filters'
+              containerClassName='flex flex-col order-last sm:order-none items-center justify-center relative'
+              disabled={!enabled}
+              on:click={clear}
+              >
+              <Tooltip>Clear all filters</Tooltip>
+            </IconButton>
+
           </div>
 
           <div class='sm:w-auto grid grid-cols-6 md:grid-cols-6 gap-x-2 gap-y-2 col-span-3'>
@@ -239,7 +241,7 @@
           {#if box.length === 0}
             <span class='h-96 flex items-center justify-center col-span-4 dark:text-gray-600 text-xl'>You have no Pokémon in your box</span>
           {/if}
-          {#each stat === 'team' ? mons : box.filter(filter) as p (p)}
+          {#each (stat === 'team' ? mons : box).filter(filter) as p (p)}
             <span
               use:drag={{ data: p, effect: 'add', hideImg: true }}
               class='snap-start'
