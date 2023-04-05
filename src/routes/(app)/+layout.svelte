@@ -37,12 +37,6 @@
   $: createUser()
 </script>
 
-{#if ['/game', '/box', '/graveyard'].includes(path)}
-  <GameHeading />
-{:else}
-  <NavHeading />
-{/if}
-
 <Modal
   closeButton={false}
   styleBg={{ background: 'rgba(0, 0, 0, 0.8)', zIndex: 9999 }}
@@ -51,5 +45,10 @@
   classWindow='!bg-transparent'
   classContent='!p-0 !overflow-visible'
 >
+  {#if ['/game', '/box', '/graveyard'].includes(path)}
+    <GameHeading />
+  {:else}
+    <NavHeading />
+  {/if}
   <slot />
 </Modal>

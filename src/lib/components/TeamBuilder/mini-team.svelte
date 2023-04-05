@@ -92,11 +92,10 @@
 </div>
 {/if}
 
-<div class='z-[5001] inline-flex gap-x-4 items-center {$$restProps.class || ''}'>
+<div class='inline-flex gap-x-4 items-center {$$restProps.class || ''}'>
 
   {#each mons as p, i}
     <p
-
       use:drag={{ data: p, id: i, effect: 'move' }}
       on:click={onRemove(p)}
 
@@ -114,9 +113,10 @@
 
       <span
         class='pointer-events-none'
-        in:scale={{ duration: 500 }}>
+        in:scale={{ duration: 500 }}
+      >
         <PIcon
-          class='pointer-events-none opacity-80 dark:contrast-50 absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 -mt-0.5'
+          class='pointer-events-none opacity-30 dark:opacity-80 dark:contrast-50 absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 -mt-0.5'
           name=unknown-pokemon2
         />
 

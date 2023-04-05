@@ -4,6 +4,8 @@
   import { fade, fly } from 'svelte/transition'
   import { page } from '$app/stores'
 
+ import { MiniTeamController } from '$c/TeamBuilder'
+
   let game = {}, games
   activeGame.subscribe(id => {
     savedGames.subscribe(parse(g => {
@@ -38,21 +40,21 @@
   <div class=p-container>
     <div class='inline-flex items-center'>
       <a
-      href="/"
-      rel="external"
-      class='{className} home group'>
-      {#if game?.game}
-        <Logo
-          src=/assets/{game?.game}
-          class='h-7 w-auto my-1 md:mr-4 md:w-20 md:h-auto'
-          alt='{game?.game} logo'
-          aspect=192x96
-        />
-        <h1 in:fade class='hidden md:block group-hover:border-black dark:group-hover:border-white'>
-          {game?.name || ''}
-        </h1>
-      {/if}
-    </a>
+        href="/"
+        rel="external"
+        class='{className} home group'>
+        {#if game?.game}
+          <Logo
+            src=/assets/{game?.game}
+            class='h-10 w-auto pt-2 md:mr-4 md:w-20 md:h-auto'
+            alt='{game?.game} logo'
+            aspect=192x96
+            />
+          <h1 in:fade class='hidden md:block group-hover:border-black dark:group-hover:border-white'>
+            {game?.name || ''}
+          </h1>
+        {/if}
+      </a>
 
       {#if games.length}
         <Popover title='Load saves' position={window?.innerWidth < 700 ? 'bottom' : 'right'}>
@@ -83,8 +85,11 @@
           </ul>
         </Popover>
       {/if}
+    </div>
 
-  </div>
+    <div class='max-md:fixed max-md:bottom-0 max-md:w-full w-auto text-center z-[1000] max-md:pb-2 max-md:pt-4 mt-2.5 max-md:border-t-2 bg-white/50 dark:bg-gray-800/80 backdrop-blur-sm dark:border-gray-900 border-gray-200'>
+      <MiniTeamController />
+    </div>
 
     <span class='inline-flex relative'>
       <ThemeToggle />

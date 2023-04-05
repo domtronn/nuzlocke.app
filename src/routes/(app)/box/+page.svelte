@@ -6,7 +6,6 @@
   import { Footer } from '$c/navs'
 
   import PokemonCard from '$lib/components/pokemon-card.svelte'
-  import { MiniTeam } from '$lib/components/TeamBuilder'
 
   import { Loader, PIcon, IconButton, Tooltip, Toggle } from '$c/core'
   import TypeBadge from '$lib/components/type-badge.svelte'
@@ -250,16 +249,6 @@
             <p class='max-md:hidden font-italic text-gray-600 dark:text-gray-400'>
               <small>Drag pokemon from your box to the slots</small>
             </p>
-            <MiniTeam
-              {mons}
-              class='-mr-2.5'
-              iconKey=pokemon
-
-              on:add={teamadd}
-              on:remove={teamremove}
-              on:replace={teamreplace}
-              on:swap={teamswap}
-              />
           </div>
         </div>
 

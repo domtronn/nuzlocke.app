@@ -5,7 +5,6 @@
 
   import { Loader, Tabs } from '$lib/components/core'
 
-  import { MiniTeam } from '$lib/components/TeamBuilder'
   import { SupportBanner } from '$lib/components/navs'
   import { GameRoute, Search } from '$lib/components/Game'
   import { Settings } from '$lib/components/Settings'
@@ -20,11 +19,11 @@
   import debounce from '$lib/utils/debounce'
 
   import { Expanded as Games } from '$lib/data/games.js'
-  import { getGame, read, readdata, readBox,
+  import { getGameStore, read, readdata, readBox,
            savedGames, activeGame, updateGame, parse, patch
          } from '$lib/store'
 
-  let gameStore, gameKey, gameData, teamData = []
+  let gameStore, gameKey, gameData
   let routeEl
 
   let search = ''
@@ -81,21 +80,16 @@
     const [, key, id] = readdata()
     if (browser && !id) return window.location = '/'
 
-    gameStore = getGame(id)
+    gameStore = getGameStore(id)
     gameKey = key
 
     deferStyles(`/assets/items/${key}.css`)
     fetchRoute(Games[key].pid).then(r => resolve(r))
 
     gameStore.subscribe(read(game => {
-      console.log('Reading gamestore data')
       gameData = game
-      boxData = toObj(readBox(game))
-      teamData = game.__team
     }))
   })
-
-  $: mons = (teamData || []).map(t => boxData[t])
 
   const _onsearch = (e) => search = e.detail.search
   const onsearch = debounce(_onsearch, 350)
@@ -125,26 +119,6 @@
   }
 
   let show = false
-
-  const onteamremove = (evt) => {
-    gameStore.update(patch({
-      __team: teamData.filter(i => i !== evt.detail.data.id)
-    }))
-  }
-
-  const onteamswap = (evt) => {
-    const targetId = Math.min(evt.detail.targetId, teamData.length - 1)
-    const srcId = evt.detail.srcId
-
-    gameStore.update(patch({
-      __team: teamData.map((it, i, arr) => {
-        if (i === targetId) return arr[srcId]
-        if (i === srcId) return arr[targetId]
-        return it
-      })
-    }))
-  }
-
 </script>
 
 <SupportBanner />
@@ -153,13 +127,6 @@
   <Loader />
 {:then route}
   <div id='game_el' out:fade|local={{ duration: 250 }} in:fade|local={{ duration: 250, delay: 300 }} class="container mx-auto pb-24 overflow-hidden">
-          <MiniTeam
-          class='md:flex md:fixed md:top-2.5 md:left-1/2 md:-translate-x-1/2 z=[50001]'
-          iconKey=pokemon
-            on:remove={onteamremove}
-            on:swap={onteamswap}
-          {mons}
-          />
 
     <div class="flex flex-row flex-wrap pb-16 justify-center snap-start max-md:pt-4 bg-white dark:bg-gray-800">
       <main id='main' class="p-container md:py-6 flex flex-col gap-y-4 relative ">

@@ -77,6 +77,13 @@ export const createUser =
     )
   }
 
+let gameStoreCache = {}
+export const getGameStore = (id) => {
+  if (gameStoreCache[id]) return gameStoreCache[id]
+  gameStoreCache[id] = getGame(id)
+  return gameStoreCache[id]
+}
+
 export const createGame =
   (name, game, initData = '{}') =>
   (payload) => {
@@ -118,7 +125,7 @@ export const updateGame = (game) => (payload) => {
 
 export const updatePokemon = (p) => {
   activeGame.subscribe((gameId) => {
-    getGame(gameId).update(
+    getGameStore(gameId).update(
       patch({
         [p.location]: p
       })
@@ -128,7 +135,7 @@ export const updatePokemon = (p) => {
 
 export const killPokemon = (p) => {
   activeGame.subscribe((gameId) => {
-    getGame(gameId).update(
+    getGameStore(gameId).update(
       patch({
         [p.location]: { ...p, status: 5 }
       })
@@ -176,7 +183,7 @@ export const getBox = (cb = () => {}) =>
   activeGame.subscribe((gameId) => {
     if (browser && !gameId) return (window.location = '/');
 
-    getGame(gameId).subscribe(
+    getGameStore(gameId).subscribe(
       read((data) => cb(readBox(data)))
     );
   });
@@ -210,9 +217,8 @@ export const patchlocation = (payload) => (data) =>
 /** Team handlers */
 export const getTeams = (cb = () => {}) =>
   activeGame.subscribe((gameId) => {
-    getGame(gameId).subscribe(
+    getGameStore(gameId).subscribe(
       read((data) => {
-        console.log(data)
         cb({
           team: data.__team || [],
           teams: data.__teams || [],
@@ -221,11 +227,10 @@ export const getTeams = (cb = () => {}) =>
     );
   });
 
-export const setTeam = (team, cb) => {
+export const setTeam = (team) => {
   if (!browser) return
-
   activeGame.subscribe((gameId) => {
-    getGame(gameId).update(
+    getGameStore(gameId).update(
       patch({
         __team: team
       })

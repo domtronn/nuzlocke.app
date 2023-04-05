@@ -51,6 +51,8 @@
 
   let team, inteam
 
+  getTeams(t => team = t.team)
+
   store && store.subscribe(read(data => {
     const getStateMons = (data, stateGroup) => {
       return Object.values(data)
@@ -61,8 +63,6 @@
 
     getPkmns(getStateMons(data, NuzlockeGroups.Dupes)).then(p => dupelines = new Set(Object.values(p).map(p => p?.evoline)))
     getPkmns(getStateMons(data, NuzlockeGroups.MissDupes)).then(p => misslines = new Set(Object.values(p).map(p => p?.evoline)))
-
-    team = data.__team
 
     const pkmn = data[location]
     if (!pkmn) return
@@ -82,16 +82,11 @@
   }))
 
   $: {
-    if (team) {
-      console.log('patching')
-      store.update(patch({ __team: team }))
-      inteam = (team || []).includes(id)
-    }
-  }
-
-  $: {
     if (selected)
-     store.update(patch({
+      store.update(patch({
+        __team: (status && status.id === 5)
+          ? team.filter(i => i !== id)
+          : team,
        [location]: {
          id,
          pokemon: selected?.alias,
@@ -102,7 +97,13 @@
          nickname,
          ...(status?.id === 5 && death ? { death } : {})
        }
-   }))
+      }))
+
+    if (team) {
+      setTeam(team)
+      inteam = (team || []).includes(id)
+    }
+
   }
 
   const onnew = () => dispatch('new', { id })
@@ -116,22 +117,22 @@
   }
 
   /** Team management */
-  function handleTeamAdd () { team = (team || []).concat(id) }
-  function handleTeamRemove () { team = (team || []).filter(i => i !== id) }
+  function handleTeamAdd () { setTeam((team || []).filter(i => i !== id).concat(id)) }
+  function handleTeamRemove () { setTeam((team || []).filter(i => i !== id)) }
 
   function handleClear () {
     status = nickname = selected = death = null
     search = statusSearch = natureSearch = null
-    store.update(patch({
-      [location]: {},
-      __team: (team || []).filter(i => i !== id)
-    }))
+    store.update(patch({ [location]: {}, __team: team.filter(i => i !== id) }))
   }
 
   let statusComplete = false
   const handleStatus = (sid) => () => {
     const cb = (data) => {
-      if (sid === 5) (death = data) // Handle death context from modal
+      if (sid === 5) {
+        // Handle death context from modal
+        death = data
+      }
 
       status = NuzlockeStates[sid]
       _animateStatus(sid)
@@ -148,6 +149,7 @@
     if (sid === 5) statusComplete = ['thick-club', 'quick-claw', 'rare-bone', 'dragon-fang', 'sharp-beak']
     if (sid === 6) statusComplete = ['health-av-candy', 'tapunium-z--held', 'revive', 'electric-gem', 'max-revive']
     if (sid === 100) statusComplete = ['revival-herb', 'revival-herb', 'starf-berry']
+    if (sid === 200) statusComplete = ['thunder-stone', 'fire-stone', 'water-stone']
   }
 
   const { open } = getContext('simple-modal')
@@ -156,6 +158,7 @@
   const handleSingleEvolution = async (id) => getPkmn(id).then(p => {
     selected = p
     evoComplete = true
+    _animateStatus(200)
   })
 
   const handleEvolution = (base, evos) => async () => handleSplitEvolution(base, evos)
@@ -363,9 +366,9 @@
         on:click={inteam ? handleTeamRemove : handleTeamAdd}
         >
         {#if inteam}
-          <Icon class='absolute transform scale-75 right-0.5 top-0.5 bg-gray-800 rounded-full' inline icon={Minus} />
+          <Icon class='absolute transform scale-75 right-0.5 top-0.5 bg-white dark:bg-gray-800 rounded-full' inline icon={Minus} />
         {:else}
-          <Icon class='absolute transform scale-75 right-0.5 top-0.5 bg-gray-800 rounded-full' inline icon={Plus} />
+          <Icon class='absolute transform scale-75 right-0.5 top-0.5 bg-white dark:bg-gray-800 rounded-full' inline icon={Plus} />
         {/if}
       </IconButton>
     {/if}
