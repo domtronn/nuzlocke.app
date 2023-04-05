@@ -13,7 +13,11 @@
   let open = false, inputRef
   function handleOpen () { open = !open }
 
-  $: inputRef?.querySelector('input')?.focus()
+  $: {
+    const input = inputRef?.querySelector('input')
+    input?.focus()
+    input?.scrollIntoView()
+  }
   $: term, dispatch('search', { search: term })
 </script>
 
@@ -31,7 +35,8 @@
 <div
   in:fade
   class:bg-gray-800={open}
-  class='block md:hidden transition safe-bottom fixed bottom-0 left-0 duration-500 right-0 p-4 text-left'>
+  class:left-4={open}
+  class='block md:hidden transition safe-bottom fixed bottom-0 duration-500 right-0 py-4 pr-4 text-left'>
   {#if open}
     <div
       class='absolute w-3/4'
