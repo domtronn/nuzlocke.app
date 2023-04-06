@@ -1,6 +1,8 @@
 <script>
   import { PixelatedContainer } from '$lib/components/containers'
-  import { Picture } from '$lib/components/core'
+  import { Picture, Icon} from '$lib/components/core'
+  import { Heart } from '$icons'
+
   const credit = [
     { name: 'Beliot419', href: 'https://www.deviantart.com/beliot419', img: 'https://img.nuzlocke.app/leaders/sm-hala' },
     { name: 'Brumirage', href: 'https://www.instagram.com/brumirage', img: 'https://img.nuzlocke.app/leaders/rs-phoebe-oras' },
@@ -13,11 +15,9 @@
     { name: 'Poffin Case', href: 'https://pokengine.org/trainers/Courtney', img: 'https://img.nuzlocke.app/leaders/rs-tabitha-oras' },
     { name: 'Sugar and Spice', href: 'https://chipsncookies.tumblr.com/', img: 'https://img.nuzlocke.app/leaders/xy-lysandre' },
     { name: 'TintjeMadelintje101', href: 'https://www.deviantart.com/tintjemadelintje101', img: 'https://img.nuzlocke.app/leaders/xy-serena' },
-    { name: 'tebited15', href: 'https://www.deviantart.com/tebited15', img: 'https://img.nuzlocke.app/leaders/xy-olympia' }
+    { name: 'tebited15', href: 'https://www.deviantart.com/tebited15', img: 'https://img.nuzlocke.app/leaders/xy-olympia' },
+    { name: 'The Unbound Team', href: 'https://www.pokecommunity.com/showthread.php?t=382178', img: 'https://img.nuzlocke.app/leaders/unbound-mirskle' },
   ]
-
-  import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
-  import { Heart } from '$icons'
 
 </script>
 

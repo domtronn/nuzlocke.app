@@ -47597,6 +47597,20 @@
       "boss": "Whitney"
     },
     {
+      "type": "gym",
+      "name": "Goldenrod Tunnel",
+      "value": "ethan",
+      "group": "rival",
+      "boss": "Ethan"
+    },
+    {
+      "type": "gym",
+      "name": "Goldenrod Tunnel",
+      "value": "lyra",
+      "group": "rival",
+      "boss": "Lyra"
+    },
+    {
       "type": "route",
       "name": "Route 35",
       "encounters": [
@@ -47749,13 +47763,6 @@
         "lunatone",
         "gengar"
       ]
-    },
-    {
-      "type": "gym",
-      "name": "Ecruteak City Dance Hall",
-      "value": "kimono",
-      "group": "",
-      "boss": "Kimono Girls"
     },
     {
       "type": "gym",
@@ -48078,16 +48085,16 @@
     {
       "type": "gym",
       "name": "Rocket Hideout",
-      "value": "petrel2",
+      "value": "ariana2",
       "group": "evil-team",
-      "boss": "Executive Petrel"
+      "boss": "Executive Ariana"
     },
     {
       "type": "gym",
       "name": "Rocket Hideout",
-      "value": "ariana2",
+      "value": "petrel2",
       "group": "evil-team",
-      "boss": "Executive Ariana"
+      "boss": "Executive Petrel"
     },
     {
       "type": "route",
@@ -48123,20 +48130,6 @@
       "value": "7",
       "group": "gym-leader",
       "boss": "Pryce"
-    },
-    {
-      "type": "gym",
-      "name": "Goldenrod Tunnel",
-      "value": "ethan",
-      "group": "rival",
-      "boss": "Ethan"
-    },
-    {
-      "type": "gym",
-      "name": "Goldenrod Tunnel",
-      "value": "lyra",
-      "group": "rival",
-      "boss": "Lyra"
     },
     {
       "type": "gym",
@@ -48323,6 +48316,13 @@
         "lanturn",
         "tentacruel"
       ]
+    },
+    {
+      "type": "gym",
+      "name": "Ecruteak City Dance Hall",
+      "value": "kimono",
+      "group": "",
+      "boss": "Kimono Girls"
     },
     {
       "type": "route",
@@ -61120,6 +61120,20 @@
     },
     {
       "type": "gym",
+      "name": "Goldenrod Tunnel",
+      "value": "ethan",
+      "group": "rival",
+      "boss": "Ethan"
+    },
+    {
+      "type": "gym",
+      "name": "Goldenrod Tunnel",
+      "value": "lyra",
+      "group": "rival",
+      "boss": "Lyra"
+    },
+    {
+      "type": "gym",
       "name": "Goldenrod City Gym",
       "value": "3",
       "group": "gym-leader",
@@ -61652,20 +61666,6 @@
       "value": "7",
       "group": "gym-leader",
       "boss": "Pryce"
-    },
-    {
-      "type": "gym",
-      "name": "Goldenrod Tunnel",
-      "value": "ethan",
-      "group": "rival",
-      "boss": "Ethan"
-    },
-    {
-      "type": "gym",
-      "name": "Goldenrod Tunnel",
-      "value": "lyra",
-      "group": "rival",
-      "boss": "Lyra"
     },
     {
       "type": "gym",
