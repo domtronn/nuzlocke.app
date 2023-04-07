@@ -165,6 +165,10 @@ export const getGame = (id) =>
     {}
   );
 
+export const readTeam = (data) => {
+  return data.__team
+}
+
 export const readBox = (data) => {
   const customMap = Object.fromEntries(
     (data.__custom || []).map(m => [m.id, m])
@@ -226,17 +230,6 @@ export const getTeams = (cb = () => {}) =>
       })
     );
   });
-
-export const setTeam = (team) => {
-  if (!browser) return
-  activeGame.subscribe((gameId) => {
-    getGameStore(gameId).update(
-      patch({
-        __team: team
-      })
-    );
-  });
-}
 
 const _read = (payload) => {
   if (!payload) return;

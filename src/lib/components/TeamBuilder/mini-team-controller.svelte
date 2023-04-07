@@ -2,14 +2,21 @@
   import { MiniTeam } from './'
   import { toObj } from '$utils/obj'
   import { fade } from 'svelte/transition'
-  import { getTeams, setTeam, getBox, readdata, readBox, read, patch } from '$lib/store'
-  let teamData = [], boxData = [], gameStore
+  import { getGameStore,
+           readdata, readBox, readTeam, read,
+           patch } from '$lib/store'
+  let teamData = [], boxData = [], setTeam = _ => _, gameStore
 
   async function setup() {
     const [,, id] = readdata()
 
-    getTeams(t => teamData = t.team)
-    getBox(b => boxData = toObj(b))
+    gameStore = getGameStore(id)
+    gameStore.subscribe(read(data => {
+      teamData = readTeam(data)
+      boxData = toObj(readBox(data))
+    }))
+
+    setTeam = (data) => gameStore.update(patch({ __team: data }))
   }
 
   const onteamadd = (evt) => {

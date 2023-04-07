@@ -1,7 +1,7 @@
 <script>
   export let id, store, location, locationName = '', type = '', infolink = ''
 
-  import { read, readdata, patch, getTeams, setTeam } from '$lib/store'
+  import { read, readdata, patch, getTeams } from '$lib/store'
   import { capitalise } from '$lib/utils/string'
 
   import { fly } from 'svelte/transition'
@@ -84,9 +84,6 @@
   $: {
     if (selected)
       store.update(patch({
-        __team: (status && status.id === 5)
-          ? team.filter(i => i !== id)
-          : team,
        [location]: {
          id,
          pokemon: selected?.alias,
@@ -99,11 +96,9 @@
        }
       }))
 
-    if (team) {
-      setTeam(team)
-      inteam = (team || []).includes(id)
-    }
+    // TODO: Handle death state team clearin
 
+    inteam = (team || []).includes(id)
   }
 
   const onnew = () => dispatch('new', { id })
@@ -117,8 +112,13 @@
   }
 
   /** Team management */
-  function handleTeamAdd () { setTeam((team || []).filter(i => i !== id).concat(id)) }
-  function handleTeamRemove () { setTeam((team || []).filter(i => i !== id)) }
+  function handleTeamAdd () {
+    store.update(patch({ __team: (team || []).filter(i => i !== id).concat(id) }))
+  }
+
+  function handleTeamRemove () {
+    store.update(patch({ __team: (team || []).filter(i => i !== id) }))
+  }
 
   function handleClear () {
     status = nickname = selected = death = null
