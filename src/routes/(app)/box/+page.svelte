@@ -137,18 +137,19 @@
   }
 
   /** Team management */
+  const locid = p => p?.locationId || p?.location
   function handleTeamAdd (p) {
-    gameStore.update(patch({ __team: (teamData || []).filter(i => i !== p.location).concat(p.location) }))
+    gameStore.update(patch({ __team: (teamData || []).filter(i => i !== locid(p)).concat(locid(p)) }))
   }
 
   function handleTeamRemove (p) {
-    gameStore.update(patch({ __team: (teamData || []).filter(i => i !== p.location) }))
+    gameStore.update(patch({ __team: (teamData || []).filter(i => i !== locid(p)) }))
   }
 
   let mons = []
   $: {
     mons = (teamData || [])
-      .map(t => ogbox.find(o => t === o.location || t === o.locationId))
+      .map(t => ogbox.find(o => t === locid(o)))
       .filter(i => i)
   }
 
@@ -244,7 +245,7 @@
           {#if box.length === 0}
             <span class='h-96 flex items-center justify-center col-span-4 dark:text-gray-600 text-xl'>You have no Pokémon in your box</span>
           {/if}
-          {#each (stat === 'team' ? mons : box).filter(filter) as p (p.locationId || p.location)}
+          {#each (stat === 'team' ? mons : box).filter(filter) as p (locid(p))}
             <span
               use:drag={{ data: p, effect: 'add', hideImg: true }}
               class='snap-start'
@@ -323,11 +324,11 @@
       <IconButton
         className='transform scale-75'
         borderless
-        on:click={(teamData.includes(p.location) ? handleTeamRemove : handleTeamAdd).bind({}, p)}
+        on:click={(teamData.includes(locid(p)) ? handleTeamRemove : handleTeamAdd).bind({}, p)}
         >
         <!-- FIXME: What the fuck...  -->
         <span class='absolute transition-none dark:transition right-5 top-[10px] dark:text-gray-500 dark:group-hover:text-gray-400'>
-          {#if teamData.includes(p.location)}
+          {#if teamData.includes(locid(p))}
             -
           {:else}
             +
