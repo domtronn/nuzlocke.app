@@ -1,4 +1,7 @@
 <script>
+  import { IconButton, Icon } from '$c/core'
+  import { X } from '$icons'
+
   import { MiniTeam } from './'
   import { toObj } from '$utils/obj'
   import { fade } from 'svelte/transition'
@@ -13,33 +16,35 @@
     gameStore = getGameStore(id)
     gameStore.subscribe(read(data => {
       teamData = readTeam(data)
-      boxData = toObj(readBox(data))
+      boxData = data
     }))
 
     setTeam = (data) => gameStore.update(patch({ __team: data }))
   }
 
+  const locid = (evt) => evt.detail.data.locationId || evt.detail.data.location
+
   const onteamadd = (evt) => {
     setTeam(
       teamData
-        .filter(i => i !== evt.detail.data.id)
-        .concat(evt.detail.data.id)
+        .filter(i => i !== locid(evt))
+        .concat(locid(evt))
     )
   }
 
   const onteamremove = (evt) => {
-    setTeam(teamData.filter(i => i !== evt.detail.data.id))
+    setTeam(teamData.filter(i => i !== locid(evt)))
   }
 
   const onteamreplace = (evt) => {
-    if (teamData.includes(evt.detail.data.id))
+    if (teamData.includes(locid(evt)))
       return onteamswap({ detail: {
         ...evt.detail,
-        srcId: teamData.findIndex(id => id === evt.detail.data.id)
+        srcId: teamData.findIndex(id => id === locid(evt))
       }})
 
     setTeam(
-      teamData.map((id, i) => i === +evt.detail.targetId ? evt.detail.data.id : id)
+      teamData.map((id, i) => id === +evt.detail.targetId ? locid(evt) : id)
     )
   }
 
@@ -56,11 +61,19 @@
     )
   }
 
+  const onteamclear = () => setTeam([])
+
   $: mons = (teamData || []).map(t => boxData[t])
 </script>
 
 {#await setup() then}
-  <div transition:fade class=safe-bottom>
+  <div transition:fade|local={{ delay: 500 }} class=safe-bottom>
+    <IconButton
+      on:click={onteamclear}
+      title='Clear your team'
+      containerClassName='float-right rounded-full !border-gray-900 -translate-x-full'
+      src={X}
+    />
     <MiniTeam
       class={$$restProps.class || ''}
       iconKey=pokemon
@@ -76,7 +89,6 @@
 
 <style>
   div {
-    z-index: 9999;
     @apply w-auto relative flex items-center text-center mx-auto;
   }
 

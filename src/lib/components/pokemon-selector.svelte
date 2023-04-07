@@ -97,8 +97,7 @@
       }))
 
     // TODO: Handle death state team clearin
-
-    inteam = (team || []).includes(id)
+    inteam = (team || []).includes(location)
   }
 
   const onnew = () => dispatch('new', { id })
@@ -113,17 +112,17 @@
 
   /** Team management */
   function handleTeamAdd () {
-    store.update(patch({ __team: (team || []).filter(i => i !== id).concat(id) }))
+    store.update(patch({ __team: (team || []).filter(i => i !== location).concat(location) }))
   }
 
   function handleTeamRemove () {
-    store.update(patch({ __team: (team || []).filter(i => i !== id) }))
+    store.update(patch({ __team: (team || []).filter(i => i !== location) }))
   }
 
   function handleClear () {
     status = nickname = selected = death = null
     search = statusSearch = natureSearch = null
-    store.update(patch({ [location]: {}, __team: team.filter(i => i !== id) }))
+    store.update(patch({ [location]: {}, __team: team.filter(i => i !== location) }))
   }
 
   let statusComplete = false

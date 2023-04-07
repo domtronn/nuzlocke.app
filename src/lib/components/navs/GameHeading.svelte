@@ -15,6 +15,7 @@
 
   const load = game => {
     $activeGame = game.id
+    document.body.style = 'opacity: 0; transition: opacity: 0.2s'
     window.location.reload()
   }
 
@@ -134,19 +135,14 @@
       left: 0;
       right: 0;
     }
-    nav::after {
+
+    nav::before {
       content: '';
       background: linear-gradient(white 50%, transparent);
       @apply absolute w-full -bottom-6 h-6;
     }
 
-    nav::after {
-      content: '';
-      background: linear-gradient(white 50%, transparent);
-      @apply absolute w-full -bottom-6 h-6;
-    }
-
-    :global(.dark) nav::after {
+    :global(.dark) nav::before {
       background: linear-gradient(theme('colors.gray.800') 50%, transparent);
     }
   }

@@ -13,7 +13,7 @@
 
   import { drag } from '$utils/drag'
 
-  import { getBox, getTeams, updatePokemon, killPokemon, setTeam } from '$lib/store'
+  import { getGameStore, getBox, readdata, read, readTeam, readBox, parse, patch, updatePokemon, killPokemon } from '$lib/store'
 
   import { canonTypes as types } from '$lib/data/types'
   import { stats, StatIconMap } from '$lib/data/stats'
@@ -30,11 +30,20 @@
 
   let minimal = false
   let Particles, EvoModal, DeathModal
+  let gameStore, teamData, setTeam = _ => _
   onMount(() => {
     deferStyles('/assets/pokemon.css')
     import('$lib/components/particles').then(m => Particles = m.default)
     import('$lib/components/EvolutionModal.svelte').then(m => EvoModal = m.default)
     import('$lib/components/DeathModal/index.svelte').then(m => DeathModal = m.default)
+
+    const [,, gameId] = readdata()
+    gameStore = getGameStore(gameId)
+    gameStore.subscribe(read(data => {
+      teamData = readTeam(data)
+    }))
+
+    setTeam = (data) => gameStore.update(patch({ __team: data }))
 
     // FIXME: Awkward hack to allow page transition cleanup
     ;['game_el', 'sidenav_el'].forEach(id =>{
@@ -124,30 +133,23 @@
   const handleDeath = o => death => {
     ogbox = ogbox.filter(i => toid(i) !== toid(o))
     killPokemon({ ...o, death })
-    teamremove({ detail: { data: { id: toid(o) }}})
+    handleTeamRemove(o)
   }
 
-  let team = [], mons
-  getTeams(t => team = t.team.map(id => ({ id })))
-
-  function teamhas (mon) {
-    return !!team.find(t => t.id === mon.id)
+  /** Team management */
+  function handleTeamAdd (p) {
+    gameStore.update(patch({ __team: (teamData || []).filter(i => i !== p.location).concat(p.location) }))
   }
 
-  function teamadd (evt) {
-    if (team.map(t => t.id).includes(evt.detail.data.id)) team = team.filter(t => t.id !== evt.detail.data.id).concat(evt.detail.data)
-    else team = team.concat(evt.detail.data)
-  }
-  function teamremove (mon) {
-    team = team.filter((it, i) => it.id !== mon.detail.data.id)
+  function handleTeamRemove (p) {
+    gameStore.update(patch({ __team: (teamData || []).filter(i => i !== p.location) }))
   }
 
+  let mons = []
   $: {
-    mons = team
-      .map(t => ogbox.find(o => t.id == o.id))
+    mons = (teamData || [])
+      .map(t => ogbox.find(o => t === o.location || t === o.locationId))
       .filter(i => i)
-
-    setTeam(mons.map(m => m.id))
   }
 
 </script>
@@ -162,7 +164,7 @@
           <AnalysisModal box={Object.values(Pokemon)}>
             <small>Box</small>
           </AnalysisModal>
-          <AnalysisModal box={mons.map(p=>Pokemon[p.pokemon])}>
+          <AnalysisModal box={mons.map(p => Pokemon[p.pokemon])}>
             <small>Team</small>
           </AnalysisModal>
 
@@ -236,12 +238,13 @@
           class:lg:grid-cols-5={minimal}
           class:xl:grid-cols-4={!minimal}
           class:xl:grid-cols-5={minimal}
+          class:xl:grid-cols-3={stat==='team'}
           class='grid gap-x-4 gap-y-8 mt-6'
           >
           {#if box.length === 0}
             <span class='h-96 flex items-center justify-center col-span-4 dark:text-gray-600 text-xl'>You have no Pokémon in your box</span>
           {/if}
-          {#each (stat === 'team' ? mons : box).filter(filter) as p (p)}
+          {#each (stat === 'team' ? mons : box).filter(filter) as p (p.locationId || p.location)}
             <span
               use:drag={{ data: p, effect: 'add', hideImg: true }}
               class='snap-start'
@@ -316,15 +319,15 @@
       borderless
       />
 
-    {#if team.length < 6 || team.find(t => t.id == p.id)}
+    {#if teamData.length < 6 || teamData.includes(p.location)}
       <IconButton
         className='transform scale-75'
         borderless
-        on:click={(team.find(t=>t.id === p.id) ? teamremove : teamadd).bind({}, { detail: { data: p }})}
+        on:click={(teamData.includes(p.location) ? handleTeamRemove : handleTeamAdd).bind({}, p)}
         >
         <!-- FIXME: What the fuck...  -->
         <span class='absolute transition-none dark:transition right-5 top-[10px] dark:text-gray-500 dark:group-hover:text-gray-400'>
-          {#if team.find(t=>t.id === p.id)}
+          {#if teamData.includes(p.location)}
             -
           {:else}
             +

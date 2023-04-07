@@ -178,7 +178,7 @@ export const readBox = (data) => {
     .filter((i) => i.pokemon)
     .filter(({ status }) => NuzlockeGroups.Available.includes(status))
     .map(p => {
-      if (customMap?.[p.location]) return { ...p, location: customMap?.[p.location]?.name }
+      if (customMap?.[p.location]) return { ...p, location: customMap?.[p.location]?.name, locationId: p.location }
       else return p
     })
 }
@@ -219,6 +219,7 @@ export const patchlocation = (payload) => (data) =>
   });
 
 /** Team handlers */
+// FIXME: Teams a list of box indexes rather than pokemon indexs
 export const getTeams = (cb = () => {}) =>
   activeGame.subscribe((gameId) => {
     getGameStore(gameId).subscribe(

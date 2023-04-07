@@ -184,7 +184,7 @@
             <div class=inline-flex>
               <Settings />
 
-              <div class='fixed md:relative bottom-6 md:bottom-0 z-[8888]'>
+              <div class='fixed md:relative bottom-6 md:bottom-0 max-md:z-[8888]'>
                 <Search on:search={onsearch} />
               </div>
             </div>

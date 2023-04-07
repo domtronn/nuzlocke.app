@@ -16,7 +16,7 @@ export function drag (node, { data, id, effect, hideImg = false }) {
     evt.dataTransfer.setDragImage(imgEl, ...position)
     evt.dataTransfer.setData('data', JSON.stringify(data))
     evt.dataTransfer.setData('effect', effect)
-    if (id) evt.dataTransfer.setData('srcId', id)
+    if (typeof id === 'number') evt.dataTransfer.setData('srcId', id)
   })
 
   const endListener = node.addEventListener('dragend', (evt) => {
