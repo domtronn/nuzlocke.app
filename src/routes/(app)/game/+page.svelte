@@ -212,6 +212,8 @@
 
   @media (max-width: theme('screens.md')) {
     .container {
+      position: fixed;
+      top: 0;
       height: calc(100vh - 38px);
       overflow-y: scroll;
     }
