@@ -32,7 +32,7 @@
   class:bg-gray-800={open}
   class:pl-4={open}
   class:left-0={open}
-  class='block md:hidden transition safe-bottom fixed -bottom-2 duration-500 right-0 pb-4 pt-2 pr-4 text-left pointer-events-none'>
+  class='block md:hidden transition safe-bottom fixed -bottom-2 duration-500 right-0 pb-5 pt-1 pr-4 text-left pointer-events-none'>
   {#if open}
     <div
       class='absolute w-4/5 pointer-events-auto'
