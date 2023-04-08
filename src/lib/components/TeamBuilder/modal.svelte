@@ -45,9 +45,11 @@
     />
   
   <h2>Search for a Pokemon to add to your team</h2>
-  <p class='text-gray-400 text-base' >Select up to {max} Pokemon to add to your team.</p>
+  <p class='text-gray-400 text-base' >
+    <b>{selectedMons.length} / {max}</b> Pokémon selected to add to your team. 
+  </p>
   
-  <div class='grid grid-cols-4 md:grid-cols-6 bg-gray-200 dark:bg-gray-800 px-6 py-4 mx4 mt-6 mb-4 h-fit overflow-hidden rounded-lg'>
+  <div class='grid grid-cols-4 md:grid-cols-6 bg-gray-200 dark:bg-gray-800 px-6 py-4 mx4 my-6 h-fit overflow-hidden rounded-lg'>
     {#each availableMons as mon (mon.id)}
       <button
         class=relative
@@ -60,14 +62,18 @@
     {/each}
   </div>
 
+  <p class='text-gray-400 text-base mb-4'>
   {#if selectedMons.length}
-    <p class='text-gray-400 text-base mb-4'>
       Add {selectedMons
       .map(m => capitalise(regionise(m.pokemon)))
       .join(', ')
-      .replace(/^(.*), /, '$1 and ')} to your team
+  .replace(/^(.*), /, '$1 and ')} to your team
+{:else}
+  <p class='h-6' />
+    {/if}
     </p>
-  {/if}
+  
+  
   
   <div class='flex flex-col md:flex-row-reverse gap-4'>
     <Button className='flex-1' wide rounded disabled={ids.length === 0} on:click={onsubmit}>
@@ -90,7 +96,7 @@
 </section>
 
 <style>
-  button:not(.selected):hover :global(.pkm){
+  button:enabled:not(.selected):hover :global(.pkm){
     animation: shake 3.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) infinite;
   }
 
@@ -105,7 +111,7 @@
     @apply bg-gray-400;
   }
 
-  button:not(.selected):hover::before {
+  button:not(.selected):enabled:hover::before {
     @apply bg-gray-300;
   }
 
@@ -113,7 +119,7 @@
     @apply bg-gray-600;
   }
 
-  :global(.dark) button:not(.selected):hover::before {
+  :global(.dark) button:not(.selected):enabled:hover::before {
     @apply bg-gray-700;
   }
 
