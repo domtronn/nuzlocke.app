@@ -100,7 +100,12 @@
 </div>
 
 {#if death?.epitaph}
-  <GraveEpitaph {death} {pokemon} {nickname} />
+  <GraveEpitaph
+    {death}
+    {pokemon}
+    {nickname}
+    on:edit={onclick}
+    />
 {/if}
 
 

@@ -1,10 +1,14 @@
 <script>
+  import { createEventDispatcher } from 'svelte'
   import { capitalise, regionise } from '$lib/utils/string'
   import { format } from '$c/DeathModal/prose'
   export let pokemon, nickname, death
 
   import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
   import { Quote, Edit } from '$icons'
+
+  const dispatch = createEventDispatcher()
+  const onclick = _ => dispatch('edit')
 
 </script>
 
