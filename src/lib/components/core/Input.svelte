@@ -1,10 +1,11 @@
 <script>
   export let name, value = null, color = '', className = '', placeholder = '', icon, type = 'text', min, max, rounded = false
-  import { createEventDispatcher } from 'svelte'
   import { Icon } from '$c/core'
 
-  const dispatch = createEventDispatcher()
-  const onblur = e => dispatch('blur', e)
+  const onblur = e => {
+    const { matches } = window.matchMedia("(max-width: 700px)")
+    if (matches) window.scrollTo(0, 0)
+  }
 
   name = name || placeholder
 </script>

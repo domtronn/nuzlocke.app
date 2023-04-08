@@ -6,10 +6,6 @@
 
   export let term
   const clearterm = _ => term = ''
-  const resetscroll = _ => {
-    console.log('resetting sroll')
-    window.scrollTo(0, 0)
-  }
 </script>
 
 <Input
@@ -17,7 +13,6 @@
   name=search
   class={$$restProps.class || ''}
   placeholder=Search...
-  on:blur={resetscroll}
   bind:value={term}
   icon={Search}
 >
