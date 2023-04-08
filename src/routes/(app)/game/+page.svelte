@@ -146,7 +146,7 @@
             </button>
           </SideNav>
 
-          <div class='flex flex-col gap-y-4 lg:gap-y-0 md:flex-row justify-between items-start md:mb-6'>
+          <div class='flex flex-col gap-y-4 lg:gap-y-0 md:flex-row justify-between items-start md:mb-6 snap-y snap-start snap-always'>
             <div class='flex flex-col gap-y-2'>
               {#if filter === 'nuzlocke'}
                 <button
