@@ -75,7 +75,7 @@
   
   
   
-  <div class='flex flex-row-reverse gap-4'>
+  <div class='flex flex-row-reverse gap-2 md:gap-4'>
     <Button className='flex-1' wide rounded disabled={ids.length === 0} on:click={onsubmit}>
       <small>Add to team</small>
     </Button>
