@@ -32,10 +32,10 @@
   class:bg-gray-800={open}
   class:pl-4={open}
   class:left-0={open}
-  class='block md:hidden transition safe-bottom fixed bottom-1 duration-500 right-0 pb-4 pt-2 pr-4 text-left'>
+  class='block md:hidden transition safe-bottom fixed bottom-1 duration-500 right-0 pb-4 pt-2 pr-4 text-left pointer-events-none'>
   {#if open}
     <div
-      class='absolute w-4/5'
+      class='absolute w-4/5 pointer-events-auto'
       bind:this={inputRef}
       in:fly={{ x: -450, duration: 350 }}
     >
@@ -47,15 +47,15 @@
   <IconButton
     on:click={handleOpen}
     title='Close search bar'
-    containerClassName='float-right rounded-full !border-gray-900 transform -translate-y-8'
+    containerClassName='float-right rounded-full !border-gray-900 transform -translate-y-8 pointer-events-auto'
     src={X}
     />
-  {:else}
+{:else}
     <IconButton
       on:click={handleOpen}
       title='Open search bar'
-      containerClassName='float-right rounded-full !border-gray-900 transform -translate-y-8'
+      containerClassName='float-right rounded-full !border-gray-900 transform -translate-y-8 pointer-events-auto'
       src={Search}
       />
-    {/if}
+ {/if}
 </div>

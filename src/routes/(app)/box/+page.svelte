@@ -30,7 +30,7 @@
 
   let minimal = false
   let Particles, EvoModal, DeathModal
-  let gameStore, teamData, setTeam = _ => _
+  let gameStore, teamData = [], setTeam = _ => _
   onMount(() => {
     deferStyles('/assets/pokemon.css')
     import('$lib/components/particles').then(m => Particles = m.default)
@@ -177,11 +177,11 @@
         </div>
 
         <div class='inline-flex flex-wrap md:flex-nowrap sm:flex-row gap-y-2 gap-x-4 sm:items-start z-50 mt-2'>
-          <div class='grid sm:grid-rows-2 grid-cols-8 w-full sm:w-auto sm:grid-cols-5 gap-1 sm:gap-2 col-span-2'>
+          <div class='grid grid-rows-2 grid-cols-5 w-full sm:w-auto gap-2 sm:gap-2 col-span-2'>
 
             {#each stats as s}
               <label
-                class='transition items-center shadow-sm cursor-pointer inline-flex text-center row-span-1 text-xs px-2 py-1 w-full text-gray-500 dark:text-gray-400 border-gray-400 font-medium border shadow-sm rounded-lg justify-center md:justify-between'
+                class='transition items-center shadow-sm cursor-pointer inline-flex text-center row-span-1 text-xs px-2 w-full text-gray-500 dark:text-gray-400 border-gray-400 font-medium border shadow-sm rounded-lg justify-center max-md:h-7 h-8'
                 class:border-gray-600={stat === s}
                 class:text-gray-50={stat === s}
                 class:bg-gray-600={stat === s}
@@ -191,7 +191,7 @@
                 >
                 <input type=radio bind:group={stat} name='sortable' value={s} />
                 {#if StatIconMap[s]}
-                  <Icon inline={true} class='hidden md:block text-tiny {s !== 'spa' ? 'fill-current' : ''} translate-y-1/2 -mt-2.5 mr-1'  icon={StatIconMap[s]} />
+                  <Icon inline={true} class='text-tiny  {s !== 'spa' ? 'fill-current' : ''} translate-y-1/2 -mt-2.5 mr-2'  icon={StatIconMap[s]} />
                 {:else}
                   <span />
                 {/if}
@@ -203,7 +203,8 @@
               rounded
               src={X}
               title='Clear filters'
-              containerClassName='flex flex-col order-last sm:order-none items-center justify-center relative'
+              className='!m-0'
+              containerClassName='flex flex-col order-last sm:order-none items-center justify-center relative max-md:h-7 h-8 my-0'
               disabled={!enabled}
               on:click={clear}
               >
@@ -320,7 +321,7 @@
       borderless
       />
 
-    {#if teamData.length < 6 || teamData.includes(p.location)}
+    {#if teamData?.length < 6 || teamData?.includes(p.location)}
       <IconButton
         className='transform scale-75'
         borderless

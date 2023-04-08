@@ -26,34 +26,34 @@
 
   const onteamadd = (evt) => {
     setTeam(
-      teamData
+      [].concat(teamData)
         .filter(i => i !== locid(evt))
         .concat(locid(evt))
     )
   }
 
   const onteamremove = (evt) => {
-    setTeam(teamData.filter(i => i !== locid(evt)))
+    setTeam([].concat(teamData).filter(i => i !== locid(evt)))
   }
 
   const onteamreplace = (evt) => {
-    if (teamData.includes(locid(evt)))
+    if ([].concat(teamData).includes(locid(evt)))
       return onteamswap({ detail: {
         ...evt.detail,
-        srcId: teamData.findIndex(id => id === locid(evt))
+        srcId: [].concat(teamData).findIndex(id => id === locid(evt))
       }})
 
     setTeam(
-      teamData.map((id, i) => id === +evt.detail.targetId ? locid(evt) : id)
+      [].concat(teamData).map((id, i) => id === +evt.detail.targetId ? locid(evt) : id)
     )
   }
 
   const onteamswap = (evt) => {
-    const targetId = Math.min(evt.detail.targetId, teamData.length - 1)
+    const targetId = Math.min(evt.detail.targetId, [].concat(teamData).length - 1)
     const srcId = evt.detail.srcId
 
     setTeam(
-      teamData.map((it, i, arr) => {
+      [].concat(teamData).map((it, i, arr) => {
         if (i === targetId) return arr[srcId]
         if (i === srcId) return arr[targetId]
         return it
@@ -68,12 +68,6 @@
 
 {#await setup() then}
   <div transition:fade|local={{ delay: 500 }} class=safe-bottom>
-    <IconButton
-      on:click={onteamclear}
-      title='Clear your team'
-      containerClassName='float-right rounded-full !border-gray-900 -translate-x-full'
-      src={X}
-    />
     <MiniTeam
       class={$$restProps.class || ''}
       iconKey=pokemon
@@ -83,6 +77,14 @@
       on:replace={onteamreplace}
       {mons}
       />
+    <IconButton
+      on:click={onteamclear}
+      title='Clear your team'
+      disabled={!mons?.length}
+      borderless
+      containerClassName='float-right rounded-full !border-gray-900 z-50 -translate-x-1/2 md:translate-x-1/2 mt-1'
+      src={X}
+    />
   </div>
 {/await}
 
