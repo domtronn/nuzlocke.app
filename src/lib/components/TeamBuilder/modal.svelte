@@ -35,7 +35,7 @@
   
 </script>
 
-<section class='bg-white px-6 py-8 rounded-xl text-xl dark:bg-gray-900 dark:text-gray-50 shadow-lg'>
+<section class='bg-white px-4 py-6 md:px-6 md:py-8 rounded-xl text-xl dark:bg-gray-900 dark:text-gray-50 shadow-lg'>
   {#if availableMons.length > 0}
   <IconButton
     rounded borderless color=orange containerClassName='absolute top-2 right-2'
@@ -49,7 +49,7 @@
     <b>{selectedMons.length} / {max}</b> Pokémon selected to add to your team. 
   </p>
   
-  <div class='grid grid-cols-4 md:grid-cols-6 bg-gray-200 dark:bg-gray-800 px-6 py-4 mx4 my-6 h-fit overflow-hidden rounded-lg'>
+  <div class='grid grid-cols-4 md:grid-cols-6 bg-gray-200 dark:bg-gray-800 px-2 md:px-6 py-4 mx4 my-2 md:my-6 h-fit overflow-hidden rounded-lg'>
     {#each availableMons as mon (mon.id)}
       <button
         class=relative
@@ -75,9 +75,9 @@
   
   
   
-  <div class='flex flex-col md:flex-row-reverse gap-4'>
+  <div class='flex flex-row-reverse gap-4'>
     <Button className='flex-1' wide rounded disabled={ids.length === 0} on:click={onsubmit}>
-      <small>Add to your team</small>
+      <small>Add to team</small>
     </Button>
     
     <Button className='flex-1' solid wide rounded on:click={close}>

@@ -69,7 +69,7 @@
 {#await setup() then}
   <div transition:fade|local={{ delay: 500 }} class=safe-bottom>
     <MiniTeam
-      class={$$restProps.class || ''}
+      class='transform max-md:scale-75 {$$restProps.class || ''}'
       iconKey=pokemon
       on:add={onteamadd}
       on:swap={onteamswap}
@@ -96,7 +96,7 @@
 
   @media (max-width: theme('screens.md')) {
     div {
-      @apply fixed w-full bottom-0 py-3 pb-3.5 border-t-2 bg-white/50 backdrop-blur-sm border-gray-200
+      @apply fixed w-full bottom-0 py-2 pb-2 border-t-2 bg-white/50 backdrop-blur-sm border-gray-200
     }
 
     :global(.dark) div {
