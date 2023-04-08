@@ -109,11 +109,7 @@
   </div>
 </nav>
 
-<div class=fauxnav />
-
 <style lang="postcss">
-  .fauxnav { @apply h-9; }
-
   nav {
     position: fixed;
     z-index: 5000;
@@ -129,7 +125,6 @@
   }
 
   @media (min-width:theme('screens.sm')) {
-    .fauxnav { @apply h-16; }
     nav {
       width: 100%;
       left: 0;
