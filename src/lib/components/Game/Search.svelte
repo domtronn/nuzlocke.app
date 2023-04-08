@@ -11,7 +11,10 @@
   const dispatch = createEventDispatcher()
 
   let open = false, inputRef
-  function handleOpen () { open = !open }
+  function handleOpen () {
+    if (open) term = ''
+    open = !open
+  }
 
   $: term, dispatch('search', { search: term })
 </script>
@@ -29,7 +32,8 @@
 
 <div
   in:fade
-  class:bg-gray-800={open}
+  class:bg-gray-50={open}
+  class:dark:bg-gray-800={open}
   class:pl-4={open}
   class:left-0={open}
   class='block md:hidden transition safe-bottom fixed -bottom-2 duration-500 right-0 pb-5 pt-1 pr-4 text-left pointer-events-none'>
@@ -47,15 +51,26 @@
   <IconButton
     on:click={handleOpen}
     title='Close search bar'
-    containerClassName='float-right rounded-full !border-gray-900 transform -translate-y-8 pointer-events-auto'
+    containerClassName='float-right rounded-full searchbutton transform -translate-y-7 pointer-events-auto'
     src={X}
     />
 {:else}
     <IconButton
       on:click={handleOpen}
       title='Open search bar'
-      containerClassName='float-right rounded-full !border-gray-900 transform -translate-y-8 pointer-events-auto'
+      containerClassName='float-right rounded-full searchbutton transform -translate-y-7 pointer-events-auto'
       src={Search}
       />
  {/if}
 </div>
+
+<style>
+  :global(.dark .searchbutton) {
+    @apply !border-gray-900;
+
+  }
+  :global(.searchbutton) {
+    @apply !border-gray-200;
+  }
+
+</style>
