@@ -1,6 +1,11 @@
 <script>
   export let name, value = null, color = '', className = '', placeholder = '', icon, type = 'text', min, max, rounded = false
+  import { createEventDispatcher } from 'svelte'
   import { Icon } from '$c/core'
+
+  const dispatch = createEventDispatcher()
+  const onblur = e => dispatch('blur', e)
+
   name = name || placeholder
 </script>
 
@@ -21,15 +26,16 @@
   />
 {:else}
   <input
-  id={name}
-  {placeholder}
-  type=text
-  bind:value={value}
-  class:rounded-lg={rounded}
-  class:pl-8={!!icon}
-  class:pl-3={!icon}
-  class='{color} {className} {$$restProps.class || ''}'
-  autocomplete=off
+    id={name}
+    {placeholder}
+    type=text
+    bind:value={value}
+    class:rounded-lg={rounded}
+    class:pl-8={!!icon}
+    class:pl-3={!icon}
+    on:blur={onblur}
+    class='{color} {className} {$$restProps.class || ''}'
+    autocomplete=off
   />
 {/if}
 
