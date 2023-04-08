@@ -97,7 +97,12 @@
       {/if}
     </div>
 
-    <div class='flex gap-x-1 absolute top-0 transform -translate-y-1/2'>
+    <div
+      class:gap-1={minimal}
+      class:scale-75={minimal}
+      class:origin-left={minimal}
+      class='flex gap-x-1 absolute top-0 transform -translate-y-1/2'
+      >
       {#each types as t}
         <TypeBadge type={t} />
       {/each}

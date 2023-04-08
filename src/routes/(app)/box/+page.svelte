@@ -240,8 +240,12 @@
           class:lg:grid-cols-5={minimal}
           class:xl:grid-cols-4={!minimal}
           class:xl:grid-cols-5={minimal}
+          class:gap-y-5={minimal}
+          class:gap-x-3={minimal}
+          class:gap-x-4={!minimal}
+          class:gap-y-8={!minimal}
           class:xl:grid-cols-3={stat==='team'}
-          class='grid gap-x-4 gap-y-8 mt-6'
+          class='grid mt-6'
           >
           {#if box.length === 0}
             <span class='h-96 flex items-center justify-center col-span-4 dark:text-gray-600 text-xl'>You have no Pokémon in your box</span>

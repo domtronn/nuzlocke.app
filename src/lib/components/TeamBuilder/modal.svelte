@@ -44,7 +44,7 @@
     title='Close modal'
     />
   
-  <h2>Search for a Pokemon to add to your team</h2>
+  <h2>Add to team</h2>
   <p class='text-gray-400 text-base' >
     <b>{selectedMons.length} / {max}</b> Pokémon selected to add to your team. 
   </p>

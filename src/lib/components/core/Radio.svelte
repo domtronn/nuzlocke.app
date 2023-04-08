@@ -1,9 +1,8 @@
 <script>
   export let options, selected, name, className
 
-  import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
-  import { On } from '$icons'
-  import { Off } from '$icons'
+  import { Icon } from '$c/core'
+  import { On, Off } from '$icons'
 </script>
 
 {#each options as o, i}
