@@ -25,6 +25,10 @@
       : refs[Math.min(i + 1, 7)].focus()
   }
 
+  const handlekey = i => e => {
+    if (e.key === 'Backspace') refs[Math.max(i - 1, 0)].focus()
+  }
+
 </script>
 
 <div class='inline-flex gap-x-1 md:gap-x-2'>
@@ -33,6 +37,7 @@
       class='w-8 h-10 md:w-12 md:h-16 text-2xl md:text-4xl !p-0 font-bold text-center uppercase rounded-lg bg-gray-200 dark:bg-gray-900 text-black dark:text-white !p-0'
       maxlength=1
       on:paste={onpaste}
+      on:keydown={handlekey(i)}
       on:input={nextref(i)}
       bind:this={refs[i]}
       bind:value={vals[i]}
