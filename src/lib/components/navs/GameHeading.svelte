@@ -1,8 +1,9 @@
 <script>
-  export let className = ''
   import { activeGame, savedGames, parse } from '$lib/store'
   import { fade, fly } from 'svelte/transition'
   import { page } from '$app/stores'
+
+ import { MiniTeamController } from '$c/TeamBuilder'
 
   let game = {}, games
   activeGame.subscribe(id => {
@@ -14,6 +15,7 @@
 
   const load = game => {
     $activeGame = game.id
+    document.body.style = 'opacity: 0; transition: opacity: 0.2s'
     window.location.reload()
   }
 
@@ -38,24 +40,24 @@
   <div class=p-container>
     <div class='inline-flex items-center'>
       <a
-      href="/"
-      rel="external"
-      class='{className} home group'>
-      {#if game?.game}
-        <Logo
-          src=/assets/{game?.game}
-          class='h-7 w-auto my-1 md:mr-4 md:w-20 md:h-auto'
-          alt='{game?.game} logo'
-          aspect=192x96
-        />
-        <h1 in:fade class='hidden md:block group-hover:border-black dark:group-hover:border-white'>
-          {game?.name || ''}
-        </h1>
-      {/if}
-    </a>
+        href="/"
+        rel="external"
+        class='{$$restProps.class || ''} home group'>
+        {#if game?.game}
+          <Logo
+            src=/assets/{game?.game}
+            class='h-10 w-auto pt-2 md:mr-4 md:w-20 md:h-auto'
+            alt='{game?.game} logo'
+            aspect=192x96
+            />
+          <h1 in:fade class='hidden md:block group-hover:border-black dark:group-hover:border-white'>
+            {game?.name || ''}
+          </h1>
+        {/if}
+      </a>
 
       {#if games.length}
-        <Popover className='mt-1 sm:mt-4' title='Load saves' position={window?.innerWidth < 700 ? 'bottom' : 'right'}>
+        <Popover title='Load saves' position={window?.innerWidth < 700 ? 'bottom' : 'right'}>
           <span class='inline-flex'>
             <Icon inline={true} class='transition fill-current ml-2' icon={Save} />
             <Icon inline={true} class='hidden sm:block transition fill-current -ml-0.5' icon={CaretRight} />
@@ -83,8 +85,9 @@
           </ul>
         </Popover>
       {/if}
+    </div>
 
-  </div>
+    {#if $page.url.pathname !== '/graveyard'}<MiniTeamController />{/if}
 
     <span class='inline-flex relative'>
       <ThemeToggle />
@@ -106,11 +109,7 @@
   </div>
 </nav>
 
-<div class=fauxnav />
-
 <style lang="postcss">
-  .fauxnav { @apply h-9; }
-
   nav {
     position: fixed;
     z-index: 5000;
@@ -126,25 +125,19 @@
   }
 
   @media (min-width:theme('screens.sm')) {
-    .fauxnav { @apply h-16; }
     nav {
       width: 100%;
       left: 0;
       right: 0;
     }
-    nav::after {
+
+    nav::before {
       content: '';
       background: linear-gradient(white 50%, transparent);
       @apply absolute w-full -bottom-6 h-6;
     }
 
-    nav::after {
-      content: '';
-      background: linear-gradient(white 50%, transparent);
-      @apply absolute w-full -bottom-6 h-6;
-    }
-
-    :global(.dark) nav::after {
+    :global(.dark) nav::before {
       background: linear-gradient(theme('colors.gray.800') 50%, transparent);
     }
   }
@@ -166,7 +159,7 @@
 
   h1 { @apply text-base sm:text-xl border-transparent border-b-2 transition -mb-1.5 sm:mb-0; }
 
-  a.home { @apply inline-flex items-center pt-4 ml-4 -mt-4 md:mt-0 md:-ml-2 h-12; }
+  a.home { @apply inline-flex items-center ml-4 -mt-4 md:mt-0 md:-ml-2 h-12; }
   a.link { @apply inline-flex items-center gap-x-1 border-black transition p-2 px-3 md:p-4 text-sm md:text-base; }
 
   a.link.active { @apply border-b-2 bg-gray-50 text-black cursor-default; }
@@ -176,6 +169,6 @@
   :global(.dark) a.link.active { @apply hover:text-gray-100 text-gray-50 bg-gray-900 border-b-gray-200; }
 
   #sidenav_button {
-    @apply z-50 md:z-10 bottom-6 right-4 fixed md:absolute md:right-0 md:bottom-auto md:top-1/2 md:-translate-y-1/2 md:translate-x-full flex items-center justify-center;
+    @apply z-50 md:z-10 bottom-6 right-4 fixed md:absolute md:right-0 md:bottom-auto md:top-1/2 md:-translate-y-1/2 md:translate-x-full flex items-center justify-center hidden;
   }
 </style>

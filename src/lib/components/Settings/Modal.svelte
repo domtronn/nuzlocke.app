@@ -51,7 +51,8 @@
   }
 </script>
 
-<section class='max-w-sm md:max-w-4xl mx-auto bg-gray-50 dark:bg-gray-900 p-6 md:p-8 rounded-2xl pb-2'>
+
+<section class='max-w-sm md:max-w-4xl mx-auto bg-gray-50 dark:bg-gray-900 p-6 md:p-8 rounded-2xl'>
   <h2 class='text-lg dark:text-gray-50 text-gray-900 font-bold flex justify-between'>
     <span>
       <Icon inline={true} icon={Settings} class='fill-current inline-block' />
@@ -112,6 +113,7 @@
     {/each}
   </ul>
 </section>
+<div class='block md:hidden h-48' />
 
 <style>
   .setting {

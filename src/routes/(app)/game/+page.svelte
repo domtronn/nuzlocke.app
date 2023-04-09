@@ -14,11 +14,13 @@
   import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
   import { Arrow, Hide } from '$icons'
 
+  import { toObj } from '$lib/utils/obj'
   import deferStyles from '$lib/utils/defer-styles'
   import debounce from '$lib/utils/debounce'
+
   import { Expanded as Games } from '$lib/data/games.js'
-  import { getGame, read, readdata,
-           savedGames, activeGame, updateGame, parse,
+  import { getGameStore, read, readdata, readBox,
+           savedGames, activeGame, updateGame, parse, patch
          } from '$lib/store'
 
   let gameStore, gameKey, gameData
@@ -73,11 +75,12 @@
     })($savedGames)
   })
 
+  let boxData = {}
   const setup = () => new Promise((resolve) => {
     const [, key, id] = readdata()
     if (browser && !id) return window.location = '/'
 
-    gameStore = getGame(id)
+    gameStore = getGameStore(id)
     gameKey = key
 
     deferStyles(`/assets/items/${key}.css`)
@@ -116,7 +119,6 @@
   }
 
   let show = false
-
 </script>
 
 <SupportBanner />
@@ -125,8 +127,10 @@
   <Loader />
 {:then route}
   <div id='game_el' out:fade|local={{ duration: 250 }} in:fade|local={{ duration: 250, delay: 300 }} class="container mx-auto pb-24 overflow-hidden">
-    <div class="flex flex-row flex-wrap pb-16 justify-center snap-start max-md:pt-4 bg-white dark:bg-gray-800">
-        <main id='main' class="p-container md:py-6 flex flex-col gap-y-4 relative ">
+
+    <div class="flex flex-row flex-wrap pb-16 justify-center snap-start bg-white dark:bg-gray-800">
+      <main id='main' class="p-container md:py-6 flex flex-col gap-y-4 relative ">
+
           <SideNav
             bind:show={show}
             on:nav={routeEl.setnav}
@@ -142,7 +146,7 @@
             </button>
           </SideNav>
 
-          <div class='flex flex-col gap-y-4 lg:gap-y-0 md:flex-row justify-between items-start md:mb-6'>
+          <div class='flex flex-col gap-y-4 lg:gap-y-0 md:flex-row justify-between items-start md:mb-6 pt-14 md:pt-14 snap-y snap-start snap-always'>
             <div class='flex flex-col gap-y-2'>
               {#if filter === 'nuzlocke'}
                 <button
@@ -180,7 +184,7 @@
             <div class=inline-flex>
               <Settings />
 
-              <div class='fixed md:relative bottom-6 md:bottom-0 md:shadow-none shadow-lg' style='z-index: 4444;'>
+              <div class='fixed md:relative bottom-6 md:bottom-0 max-md:z-[8888]'>
                 <Search on:search={onsearch} />
               </div>
             </div>
@@ -208,13 +212,13 @@
 
   @media (max-width: theme('screens.md')) {
     .container {
-      height: calc(100vh - 38px);
+      height: 100vh;
       overflow-y: scroll;
     }
   }
 
   .container {
-    min-height: 90vh;
+    min-height: 100%;
     @apply snap-always snap-y;
   }
 </style>

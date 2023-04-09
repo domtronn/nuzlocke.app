@@ -26,7 +26,7 @@
     <!-- Colouring for types -->
     {#key `atk__${atk.name}`}
       <div in:fade={{ duration: 400, delay: 100 }} class='absolute bottom-0 top-0 left-0 mt-8 rounded-tl-lg overflow-hidden' style='width: 50%; background: {color(atk.types, themeId)};'>
-        <div class='absolute inset-0' style='background-image: url("{Pattern(atk.types[1] || atk.types[0], themeId)}");' />
+        <div class='absolute inset-0' style='background-image: url("{Pattern(color(atk.types[1] || atk.types[0], themeId))}");' />
       </div>
     {/key}
 

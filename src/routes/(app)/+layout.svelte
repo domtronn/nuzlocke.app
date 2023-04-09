@@ -34,14 +34,12 @@
       )
   });
 
+  const onresize = () => document.body.height = window.innerHeight
+
   $: createUser()
 </script>
 
-{#if ['/game', '/box', '/graveyard'].includes(path)}
-  <GameHeading />
-{:else}
-  <NavHeading />
-{/if}
+<svelte:window on:resize={onresize} />
 
 <Modal
   closeButton={false}
@@ -51,5 +49,10 @@
   classWindow='!bg-transparent'
   classContent='!p-0 !overflow-visible'
 >
+  {#if ['/game', '/box', '/graveyard'].includes(path)}
+    <GameHeading />
+  {:else}
+    <NavHeading />
+  {/if}
   <slot />
 </Modal>

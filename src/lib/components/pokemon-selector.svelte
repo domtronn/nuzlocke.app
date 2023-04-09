@@ -1,7 +1,7 @@
 <script>
   export let id, store, location, locationName = '', type = '', infolink = ''
 
-  import { read, readdata, patch } from '$lib/store'
+  import { read, readdata, patch, getTeams } from '$lib/store'
   import { capitalise } from '$lib/utils/string'
 
   import { fly } from 'svelte/transition'
@@ -12,9 +12,8 @@
 
   import Popover from '$lib/components/core/Popover.svelte'
 
-  import PIcon from '$lib/components/core/PokemonIcon.svelte'
-  import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
-  import { Chevron, Add, Delete, Deceased, External, Bin, Dots, Map, Search, LongGrass } from '$icons'
+  import { PIcon, Icon } from '$c/core'
+  import { Chevron, Add, Ball, Plus, Minus, Delete, Deceased, External, Bin, Dots, Map, Search, LongGrass } from '$icons'
 
   import { createEventDispatcher, onMount, getContext } from 'svelte'
 
@@ -50,6 +49,10 @@
   let loading = true
   let dupelines = new Set(), misslines = new Set()
 
+  let team, inteam
+
+  getTeams(t => team = t.team)
+
   store && store.subscribe(read(data => {
     const getStateMons = (data, stateGroup) => {
       return Object.values(data)
@@ -74,12 +77,13 @@
       .then(p => {
           selected = p
           loading = false
-        })
+      })
+
   }))
 
   $: {
     if (selected)
-     store.update(patch({
+      store.update(patch({
        [location]: {
          id,
          pokemon: selected?.alias,
@@ -90,7 +94,10 @@
          nickname,
          ...(status?.id === 5 && death ? { death } : {})
        }
-   }))
+      }))
+
+    // TODO: Handle death state team clearin
+    inteam = (team || []).includes(location)
   }
 
   const onnew = () => dispatch('new', { id })
@@ -103,16 +110,28 @@
     dispatch('delete', { id: location })
   }
 
+  /** Team management */
+  function handleTeamAdd () {
+    store.update(patch({ __team: (team || []).filter(i => i !== location).concat(location) }))
+  }
+
+  function handleTeamRemove () {
+    store.update(patch({ __team: (team || []).filter(i => i !== location) }))
+  }
+
   function handleClear () {
     status = nickname = selected = death = null
     search = statusSearch = natureSearch = null
-    store.update(patch({ [location]: {} }))
+    store.update(patch({ [location]: {}, __team: team.filter(i => i !== location) }))
   }
 
   let statusComplete = false
   const handleStatus = (sid) => () => {
     const cb = (data) => {
-      if (sid === 5) (death = data) // Handle death context from modal
+      if (sid === 5) {
+        // Handle death context from modal
+        death = data
+      }
 
       status = NuzlockeStates[sid]
       _animateStatus(sid)
@@ -129,6 +148,7 @@
     if (sid === 5) statusComplete = ['thick-club', 'quick-claw', 'rare-bone', 'dragon-fang', 'sharp-beak']
     if (sid === 6) statusComplete = ['health-av-candy', 'tapunium-z--held', 'revive', 'electric-gem', 'max-revive']
     if (sid === 100) statusComplete = ['revival-herb', 'revival-herb', 'starf-berry']
+    if (sid === 200) statusComplete = ['thunder-stone', 'fire-stone', 'water-stone']
   }
 
   const { open } = getContext('simple-modal')
@@ -137,6 +157,7 @@
   const handleSingleEvolution = async (id) => getPkmn(id).then(p => {
     selected = p
     evoComplete = true
+    _animateStatus(200)
   })
 
   const handleEvolution = (base, evos) => async () => handleSplitEvolution(base, evos)
@@ -333,6 +354,20 @@
       />
     {/if}
 
+    {#if selected && !hidden && (inteam || team.length < 6) && (status && NuzlockeGroups.Available.includes(status.id))}
+      <IconButton
+        rounded
+        src={Ball}
+        className='transform scale-125'
+        containerClassName='relative'
+        color=sky
+        title='{inteam ? `Remove` : `Add`} {selected.name} {inteam ? `from` : `to`} your team'
+        on:click={inteam ? handleTeamRemove : handleTeamAdd}
+        >
+        <Icon class='absolute transform scale-75 right-0.5 top-0.5 bg-white dark:bg-gray-800 rounded-full' inline icon={inteam ? Minus : Plus} />
+      </IconButton>
+    {/if}
+
       <Popover title='Open contextul menu' className='absolute top-16 mt-0.5 right-1 sm:top-0 sm:relative '>
         <Icon inline={true} height=1.4em icon={Dots} class=fill-current />
 
@@ -385,6 +420,22 @@
             </li>
           {/if}
 
+          {#if selected && !hidden && (inteam || team.length < 6) && (status && NuzlockeGroups.Available.includes(status.id))}
+            <li>
+              <button
+                class=inline-flex
+                title='{inteam ? `Remove` : `Add`} {selected.name} {inteam ? `from` : `to`} your team'
+                on:click={inteam ? handleTeamRemove : handleTeamAdd}
+                >
+                <span class='relative mr-2'>
+                  <Icon inline icon={Ball} class='transform scale-125' />
+                  <Icon class='group-bg absolute transform scale-75 -right-1.5 -top-1 bg-white dark:bg-gray-900 rounded-full' inline icon={inteam ? Minus : Plus} />
+                </span>
+                {inteam ? `Remove from Team` : `Add to Team`}
+              </button>
+            </li>
+            {/if}
+
           {#if infolink}
             <li>
               <a href={infolink}
@@ -418,4 +469,5 @@
 
   :global(.dark) ul.popover { @apply text-gray-50; }
   :global(.dark) .popover li:hover { @apply bg-orange-500 text-white; }
+  :global(.dark) .popover li:hover :global(.group-bg) { @apply bg-orange-500 text-white; }
 </style>

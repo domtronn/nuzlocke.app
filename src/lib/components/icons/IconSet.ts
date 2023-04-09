@@ -119,6 +119,7 @@ export { default as Shiny } from '@iconify-icons/wi/stars';
 export { default as Status } from '@iconify-icons/ph/yin-yang-fill';
 
 export { default as BarChart } from '@iconify-icons/ri/bar-chart-2-fill'
+export { default as Team } from '@iconify-icons/ri/team-fill'
 
 // Weather effects & Battle status
 export { default as Double } from '@iconify-icons/tabler/multiplier-2x'

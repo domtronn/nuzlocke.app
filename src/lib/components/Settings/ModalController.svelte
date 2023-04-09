@@ -18,6 +18,6 @@
   src={Settings}
   title='Open game settings'
   className='m-1 md:m-2'
-  containerClassName='absolute top-0 right-2 md:relative'
+  containerClassName={$$restProps.class || 'absolute top-14 md:top-0 right-4 md:relative'}
   on:click={onopen}
 />

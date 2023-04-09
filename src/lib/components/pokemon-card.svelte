@@ -34,7 +34,7 @@
     class:minimal={minimal}
     class='card__header flex justify-between pl-4 pt-4 pb-3 relative z-0 rounded-t-lg'
     >
-    <div class='flex flex-row items-end gap-x-2'>
+    <div class='flex flex-row items-end gap-x-2 pointer-events-none'>
       {#if level}
         <div class='flex flex-col items-center'>
           <span class='text-xs -mb-2'>Level</span>
@@ -62,7 +62,7 @@
         {capitalise(regionise(name))}
 
         {#if held}
-          <div class='absolute right-0 -bottom-0.5 translate-x-full z-20 p-1 mb-1 flex flex-col cursor-help items-center'>
+          <div class='absolute right-0 -bottom-0.5 translate-x-full z-20 p-1 mb-1 flex flex-col cursor-help items-center pointer-events-auto'>
             <Tooltip>
               {held.name}: {held.effect?.replace(/^Held: +/g, '')}
             </Tooltip>
@@ -72,7 +72,6 @@
             <Icon inline={true} icon={Hand} class='-mt-3.5 fill-current dark:text-white' />
           </div>
         {/if}
-
       </span>
 
     </div>
@@ -84,20 +83,26 @@
           width=96
           height=96
           style="--v-anim-dur: {animDur}s; --v-anim-delay: {animDelay}s"
-          class='{anim} img__pkm  -translate-y-16 h-40 w-auto'
+          class='{anim} img__pkm  -translate-y-16 h-40 w-auto pointer-events-none'
           src={sprite}
           onerror="this.onerror=null;this.src='{fallback}'"
           alt={name} />
       {:else}
         <img width=96 height=96
              src={UNOWN}
-             style="--v-anim-dur: {animDur}s; --v-anim-delay: {animDelay}s" class='{anim} scale-75 -translate-y-16 -translate-x-6 h-40 w-auto'
+             style="--v-anim-dur: {animDur}s; --v-anim-delay: {animDelay}s"
+             class='{anim} scale-75 -translate-y-16 -translate-x-6 h-40 w-auto pointer-events-none'
              alt='Unknown sprite for {name}'
              />
       {/if}
     </div>
 
-    <div class='flex gap-x-1 absolute top-0 transform -translate-y-1/2'>
+    <div
+      class:gap-1={minimal}
+      class:scale-75={minimal}
+      class:origin-left={minimal}
+      class='flex gap-x-1 absolute top-0 transform -translate-y-1/2'
+      >
       {#each types as t}
         <TypeBadge type={t} />
       {/each}
@@ -110,22 +115,26 @@
   {#if !minimal}
     <div
       style='border-color: {color(types[0], themeId)}'
-      class='relative inline-flex bg-white dark:bg-gray-900 border-t-2 sm:items-center rounded-b-lg z-10'>
+      class='relative flex flex-col-reverse md:flex-row md:inline-flex bg-white dark:bg-gray-900 border-t-2 sm:items-center rounded-b-lg z-10'>
       {#if moves && moves.length}
-        <div class='grid grid-cols-1 xl:grid-cols-2 xl:grid-rows-2 w-3/5 sm:w-2/3 my-3 ml-4 gap-y-0 lg:gap-y-3'>
+        <div class='flex-2 grid grid-cols-2 my-3 ml-4 gap-x-4 gap-y-0 lg:gap-y-3'>
           {#each moves.filter(m => !isEmpty(m)) as m}
             <MoveCard {...m} stab={types.includes(m.type)} />
           {/each}
         </div>
       {/if}
 
-      <div class={moves && moves.length ? 'w-2/5 sm:w-1/3 mr-4 sm:mt-0 mt-5' : 'w-full m-4'}>
         {#if $$slots.stats}
           <slot name='stats' />
         {:else}
-          <StatBlock col={color(types[0], themeId)} nature={nature} max={maxStat} {...stats} />
+          <StatBlock
+            class='grid-cols-20 flex-1 mt-4 md:mt-3 w-auto grow mx-4'
+            col={color(types[0], themeId)}
+            nature={nature}
+            max={maxStat}
+            {...stats}
+          />
         {/if}
-      </div>
     </div>
 
     <slot name="footer" id={canonname} />

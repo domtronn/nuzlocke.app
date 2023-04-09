@@ -3,13 +3,19 @@
   import { fade } from 'svelte/transition'
   import { flip } from 'svelte/animate'
 
+  import { Footer } from '$c/navs'
+
   import PokemonCard from '$lib/components/pokemon-card.svelte'
 
-  import { Loader, IconButton, Tooltip, Toggle } from '$c/core'
+  import { Settings } from '$lib/components/Settings'
+  import { Loader, PIcon, IconButton, Tooltip, Toggle } from '$c/core'
   import TypeBadge from '$lib/components/type-badge.svelte'
   import { Modal as AnalysisModal } from '$lib/components/Analysis'
 
-  import { getBox, updatePokemon, killPokemon } from '$lib/store'
+  import { drag } from '$utils/drag'
+
+  import { getGameStore, getBox, readdata, read, readTeam, readBox, parse, patch, updatePokemon, killPokemon } from '$lib/store'
+
   import { canonTypes as types } from '$lib/data/types'
   import { stats, StatIconMap } from '$lib/data/stats'
 
@@ -18,21 +24,27 @@
   import deferStyles from '$utils/defer-styles'
 
   import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
-  import { Shiny } from '$icons'
-  import { X } from '$icons'
-  import { Deceased } from '$icons'
-  import { External } from '$icons'
+  import { Ball, Plus, Minus, Shiny, X, Deceased, External } from '$icons'
 
   const { getPkmns, getPkmn } = getContext('game')
   const { open } = getContext('simple-modal')
 
   let minimal = false
   let Particles, EvoModal, DeathModal
+  let gameStore, teamData = [], setTeam = _ => _
   onMount(() => {
     deferStyles('/assets/pokemon.css')
     import('$lib/components/particles').then(m => Particles = m.default)
     import('$lib/components/EvolutionModal.svelte').then(m => EvoModal = m.default)
     import('$lib/components/DeathModal/index.svelte').then(m => DeathModal = m.default)
+
+    const [,, gameId] = readdata()
+    gameStore = getGameStore(gameId)
+    gameStore.subscribe(read(data => {
+      teamData = readTeam(data)
+    }))
+
+    setTeam = (data) => gameStore.update(patch({ __team: data }))
 
     // FIXME: Awkward hack to allow page transition cleanup
     ;['game_el', 'sidenav_el'].forEach(id =>{
@@ -63,10 +75,10 @@
   $: filter = (p) => !type || (Pokemon[p.pokemon]?.types || []).map(i => i.toLowerCase()).includes(type)
 
   $: typeCounts = types
-    .reduce((acc, it) => ({
-      ...acc,
-      [it]: ogbox.filter(p => (Pokemon[p.pokemon]?.types || []).map(i => i.toLowerCase()).includes(it)).length
-    }), {})
+  .reduce((acc, it) => ({
+    ...acc,
+    [it]: ogbox.filter(p => (Pokemon[p.pokemon]?.types || []).map(i => i.toLowerCase()).includes(it)).length
+  }), {})
 
   $: box = [...ogbox]
   .sort((a, b) => {
@@ -84,10 +96,12 @@
         - sum(Object.values(Pokemon[a.pokemon]?.baseStats))
     }
 
+
+
     return stat
       ? Pokemon[b.pokemon]?.baseStats[stat] - Pokemon[a.pokemon]?.baseStats[stat]
       : a.id - b.id
-    })
+  })
 
   $: enabled = box.length && (stat || type)
 
@@ -96,18 +110,18 @@
   let evoComplete = false
   const handleEvo = ({ evos, alias }, original) => open(EvoModal, { evolutions: evos, base: alias, select: handleEvoComplete(original) })
   const handleEvoComplete = o => async id => getPkmn(id)
-    .then(p => {
-      getPkmns(box.map(i => i.pokemon).concat(p.alias))
-        .then(data => {
-          Pokemon = data
-          ogbox = ogbox.map(i => {
-            return toid(i) == toid(o) ? { ...i, pokemon: p.alias } : i
-          })
+        .then(p => {
+          getPkmns(box.map(i => i.pokemon).concat(p.alias))
+            .then(data => {
+              Pokemon = data
+              ogbox = ogbox.map(i => {
+                return toid(i) == toid(o) ? { ...i, pokemon: p.alias } : i
+              })
 
-          updatePokemon({ ...o, pokemon: p.alias })
-          evoComplete = toid(o)
+              updatePokemon({ ...o, pokemon: p.alias })
+              evoComplete = toid(o)
+            })
         })
-    })
 
   const handleKill = (o) => () => {
     open(DeathModal, {
@@ -120,40 +134,60 @@
   const handleDeath = o => death => {
     ogbox = ogbox.filter(i => toid(i) !== toid(o))
     killPokemon({ ...o, death })
+    handleTeamRemove(o)
   }
+
+  /** Team management */
+  const locid = p => p?.customId || p?.location
+  function handleTeamAdd (p) {
+    gameStore.update(patch({ __team: (teamData || []).filter(i => i !== locid(p)).concat(locid(p)) }))
+  }
+
+  function handleTeamRemove (p) {
+    gameStore.update(patch({ __team: (teamData || []).filter(i => i !== locid(p)) }))
+  }
+
+  let mons = []
+  $: {
+    mons = (teamData || [])
+      .map(t => ogbox.find(o => t === locid(o)))
+      .filter(i => i)
+  }
+
 </script>
 {#if loading}
   <Loader />
 {:else}
   <div out:fade|local={{ duration: 250 }} in:fade|local={{ duration: 250, delay: 300 }} class='container mx-auto'>
     <div class='flex flex-col mx-auto items-center justify-center'>
-      <main class='w-full xl:w-3/4 flex flex-col gap-y-4 py-6 pb-48 px-4 md:px-8 overflow-hidden snap-y scroll-pt-5'>
+      <main class='w-full xl:w-3/4 flex flex-col gap-y-4 pt-14 md:pt-20 pb-32 md:pb-48 px-4 md:px-8 overflow-hidden snap-y scroll-pt-14'>
 
-        <div class='flex flex-col md:flex-row items-end md:items-center gap-x-2 relative md:mt-0 sm:-my-2 snap-start'>
-          <AnalysisModal box={Object.values(Pokemon)} />
-          <div class='mt-1 flex md:flex-row-reverse gap-x-2'>
+        <div class='flex flex-row items-center gap-x-2 relative md:mt-0 -my-2 snap-start'>
+          <AnalysisModal box={Object.values(Pokemon)}>
+            <small>Box</small>
+          </AnalysisModal>
+          <AnalysisModal box={mons.map(p => Pokemon[p.pokemon])}>
+            <small>Team</small>
+          </AnalysisModal>
+
+          <Settings
+            class='absolute right-0'
+            />
+
+          <div class='flex mt-0 mr-8 max-md:justify-end max-md:flex-grow md:flex-row-reverse gap-x-2'>
             <Toggle id=minimal bind:state={minimal}>
               <small>Hide stats</small>
             </Toggle>
           </div>
+
         </div>
 
-        <div class='inline-flex flex-wrap sm:flex-row gap-y-2 gap-x-4 sm:items-start z-50 mt-2'>
-          <div class='grid sm:grid-rows-2 grid-cols-8 w-full sm:w-auto sm:grid-cols-5 gap-1 sm:gap-2 col-span-2'>
-            <IconButton
-              rounded
-              src={X}
-              title='Clear filters'
-              containerClassName='flex flex-col order-last sm:row-span-2 sm:order-none items-center justify-center relative'
-              disabled={!enabled}
-              on:click={clear}
-              >
-              <Tooltip>Clear all filters</Tooltip>
-              </IconButton>
+        <div class='inline-flex flex-wrap md:flex-nowrap sm:flex-row gap-y-2 gap-x-4 sm:items-start z-50 mt-2'>
+          <div class='grid grid-rows-2 grid-cols-5 w-full sm:w-auto gap-2 sm:gap-2 col-span-2'>
 
             {#each stats as s}
               <label
-                class='transition items-center shadow-sm cursor-pointer inline-flex text-center row-span-1 text-xs px-2 py-1 w-full text-gray-500 dark:text-gray-400 border-gray-400 font-medium border shadow-sm rounded-lg justify-center md:justify-between'
+                class='transition items-center shadow-sm cursor-pointer inline-flex text-center row-span-1 text-xs px-2 w-full text-gray-500 dark:text-gray-400 border-gray-400 font-medium border shadow-sm rounded-lg justify-center h-7'
                 class:border-gray-600={stat === s}
                 class:text-gray-50={stat === s}
                 class:bg-gray-600={stat === s}
@@ -163,16 +197,29 @@
                 >
                 <input type=radio bind:group={stat} name='sortable' value={s} />
                 {#if StatIconMap[s]}
-                  <Icon inline={true} class='hidden md:block text-tiny {s !== 'spa' ? 'fill-current' : ''} translate-y-1/2 -mt-2.5 mr-1'  icon={StatIconMap[s]} />
+                  <Icon inline={true} class='text-tiny  {s !== 'spa' ? 'fill-current' : ''} translate-y-1/2 -mt-2.5 mr-2'  icon={StatIconMap[s]} />
                 {:else}
                   <span />
                 {/if}
                 {s}
               </label>
             {/each}
+
+            <IconButton
+              rounded
+              src={X}
+              title='Clear filters'
+              className='!m-0'
+              containerClassName='flex flex-col order-last sm:order-none items-center justify-center relative h-7 my-0'
+              disabled={!enabled}
+              on:click={clear}
+              >
+              <Tooltip>Clear all filters</Tooltip>
+            </IconButton>
+
           </div>
 
-          <div class='w-full sm:w-auto grid grid-cols-5 md:grid-cols-9 gap-x-2 gap-y-2 col-span-3'>
+          <div class='sm:w-auto grid grid-cols-6 md:grid-cols-6 gap-x-2 gap-y-2 col-span-3'>
             {#each types as t}
               {#if typeCounts[t] > 0}
                 <label
@@ -180,7 +227,7 @@
                   class:grayscale={(type && type !== t) || !typeCounts[t]}
                   class:opacity-50={(type && type !== t) || !typeCounts[t]}
                   class:grayscale-0={type && type === t}
-                >
+                  >
                   <input disabled={!typeCounts[t]} type=radio bind:group={type} name='filter' value={t} />
                   <TypeBadge type={t} className='w-full justify-center' />
                 </label>
@@ -199,18 +246,26 @@
           class:lg:grid-cols-5={minimal}
           class:xl:grid-cols-4={!minimal}
           class:xl:grid-cols-5={minimal}
-          class='grid gap-x-4 gap-y-8 mt-6'
-        >
+          class:gap-y-5={minimal}
+          class:gap-x-3={minimal}
+          class:gap-x-4={!minimal}
+          class:gap-y-8={!minimal}
+          class:xl:grid-cols-3={stat==='team'}
+          class='grid mt-6'
+          >
           {#if box.length === 0}
             <span class='h-96 flex items-center justify-center col-span-4 dark:text-gray-600 text-xl'>You have no Pokémon in your box</span>
           {/if}
-          {#each box.filter(filter) as p (p)}
+          {#each (stat === 'team' ? mons : box).filter(filter) as p (locid(p))}
             <span
+              use:drag={{ data: p, effect: 'add', hideImg: true }}
               class='snap-start'
               animate:flip={{ duration: d => 10 * Math.sqrt(d) }}
               out:fade={{ duration: 150 }}
-            >
-              {#key p}
+              >
+
+              <PIcon class='absolute invisible -z-20 -left-20 -bottom-20 data-drag-img' name={p.pokemon} />
+
               <PokemonCard
                 {minimal}
                 sprite={createImgUrl(Pokemon[p.pokemon], { shiny: p.status === 6, ext: 'png' })}
@@ -222,7 +277,8 @@
                 stats={Pokemon[p.pokemon].baseStats}
                 nature={p.nature}
                 types={(Pokemon[p.pokemon].types || []).map(t => t.toLowerCase())}
-              >
+                >
+
                 <span slot=img>
                   {#if evoComplete === toid(p)}
                     <span style='z-index: 999999' class='absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2'>
@@ -239,7 +295,8 @@
                   {/if}
                 </span>
 
-                <span class='text-xs text-center p-2 text-gray-500 z-40' slot="footer" let:id>
+
+                <span class='text-xs text-center p-2 text-gray-500 z-40' slot=footer let:id>
                   {#if p.location === 'Starter'}
                     Met in a fateful encounter
                   {:else if !p.location}
@@ -277,15 +334,31 @@
                       src={Deceased}
                       borderless
                       />
+                    {#if !teamData || teamData?.length < 6 || teamData?.includes(p.location)}
+                      <IconButton
+                        className='translate-y-1 transform scale-125'
+                        borderless
+                        src={Ball}
+                        title='{teamData?.includes(locid(p)) ? `Remove` : `Add`} {p.pokemon} {teamData?.includes(locid(p)) ? `from` : `to`} your team'
+                        on:click={(teamData?.includes(locid(p)) ? handleTeamRemove : handleTeamAdd).bind({}, p)}
+                        >
+                        {#if teamData?.includes(locid(p))}
+                          <Icon class='absolute transform scale-75 right-0.5 top-2 bg-white dark:bg-gray-900 rounded-full' inline icon={Minus} />
+                        {:else}
+                          <Icon class='absolute transform scale-75 right-0.5 top-2 bg-white dark:bg-gray-900 rounded-full' inline icon={Plus} />
+                        {/if}
+                      </IconButton>
+                    {/if}
                   </div>
-
                 </span>
               </PokemonCard>
-              {/key}
             </span>
           {/each}
         </div>
+
+        <Footer class='!relative !mt-6 md:hidden' />
       </main>
+
     </div>
   </div>
 {/if}
@@ -315,6 +388,13 @@
   }
 
   @media (max-width: theme('screens.md')) {
+    .container + :global(footer) {
+      @apply hidden;
+    }
+
+    :global(body) {
+      overflow: hidden;
+    }
     main {
       height: calc(100vh - 38px);
       overflow-y: scroll;

@@ -155,10 +155,15 @@
 </ul>
 
 <style>
-  li.location {
-    scroll-margin-top: -12px;
-  }
   li {
+    scroll-margin-top: 28px;
     @apply snap-start
   }
+
+  @media (min-width: theme('screens.md')) {
+    li.location {
+      scroll-margin-top: 32px;
+    }
+  }
+
 </style>

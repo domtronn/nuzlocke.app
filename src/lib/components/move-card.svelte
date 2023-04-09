@@ -43,7 +43,7 @@
           {#if stab}
             <Tooltip>Base power {power}</Tooltip>
             <Icon inline icon={Boost} class='absolute left-1/2 -translate-x-1/2 -translate-y-1/2 fill-current' />
-            <span class='font-bold'>
+            <span class='font-bold cursor-help'>
               {Math.round(power * 1.5)}
             </span>
           {:else}

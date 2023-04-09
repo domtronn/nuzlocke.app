@@ -6,6 +6,12 @@ import { uuid } from '$lib/utils/uuid';
 import { toObj } from '$lib/utils/obj'
 import { NuzlockeGroups } from '$lib/data/states';
 
+import { settingsDefault } from '$lib/components/Settings/_data'
+
+/** TODO: Team state
+    __teams: { [bossKey]: [id,id,id] }
+    __team: [id,id,id]
+*/
 
 export const popover = writable(null);
 
@@ -72,6 +78,13 @@ export const createUser =
     )
   }
 
+let gameStoreCache = {}
+export const getGameStore = (id) => {
+  if (gameStoreCache[id]) return gameStoreCache[id]
+  gameStoreCache[id] = getGame(id)
+  return gameStoreCache[id]
+}
+
 export const createGame =
   (name, game, initData = '{}') =>
   (payload) => {
@@ -88,7 +101,7 @@ export const createGame =
       created: +new Date(),
       name,
       game,
-      settings: '011101'
+      settings: settingsDefault
     });
 
     localStorage.setItem(IDS.game(id), initData);
@@ -113,7 +126,7 @@ export const updateGame = (game) => (payload) => {
 
 export const updatePokemon = ({ customId, customName, ...p } = {}) => {
   activeGame.subscribe((gameId) => {
-    getGame(gameId).update(
+    getGameStore(gameId).update(
       patch({
         [customId || p.location]: p
       })
@@ -123,7 +136,7 @@ export const updatePokemon = ({ customId, customName, ...p } = {}) => {
 
 export const killPokemon = ({ customId, customName, ...p }) => {
   activeGame.subscribe((gameId) => {
-    getGame(gameId).update(
+    getGameStore(gameId).update(
       patch({
         [customId || p.location]: { ...p, status: 5 }
       })
@@ -153,29 +166,33 @@ export const getGame = (id) =>
     {}
   );
 
+export const readTeam = (data) => {
+  return data.__team
+}
+
+export const readBox = (data) => {
+  const customIdMap = toObj(data.__custom, 'id')
+  const customLocMap = toObj(data.__custom, 'name')
+
+  return Object.values(data)
+    .filter((i) => i.pokemon)
+    .filter(({ status }) => NuzlockeGroups.Available.includes(status))
+    .map(p => {
+       // Read custom location data from data.__custom
+       let custom
+       if (customIdMap?.[p.location]) custom = customIdMap?.[p.location]
+       else if (customLocMap?.[p.location]) custom = customLocMap?.[p.location]
+
+       return custom ? { ...p, customId: custom.id, customName: custom.name } : p
+    })
+}
+
 export const getBox = (cb = () => {}) =>
   activeGame.subscribe((gameId) => {
     if (browser && !gameId) return (window.location = '/');
 
-    getGame(gameId).subscribe(
-      read((data) => {
-        const customIdMap = toObj(data.__custom, 'id')
-        const customLocMap = toObj(data.__custom, 'name')
-
-        cb(
-          Object.values(data)
-            .filter((i) => i.pokemon)
-            .filter(({ status }) => NuzlockeGroups.Available.includes(status))
-            .map(p => {
-              // Read custom location data from data.__custom
-              let custom
-              if (customIdMap?.[p.location]) custom = customIdMap?.[p.location]
-              else if (customLocMap?.[p.location]) custom = customLocMap?.[p.location]
-
-              return custom ? { ...p, customId: custom.id, customName: custom.name } : p
-            })
-        );
-      })
+    getGameStore(gameId).subscribe(
+      read((data) => cb(readBox(data)))
     );
   });
 
@@ -203,6 +220,20 @@ export const patchlocation = (payload) => (data) =>
     __custom: JSON.parse(data).__custom.map((c) =>
       c.id === payload.id ? { ...c, ...payload } : c
     )
+  });
+
+/** Team handlers */
+// FIXME: Teams a list of box indexes rather than pokemon indexs
+export const getTeams = (cb = () => {}) =>
+  activeGame.subscribe((gameId) => {
+    getGameStore(gameId).subscribe(
+      read((data) => {
+        cb({
+          team: data.__team || [],
+          teams: data.__teams || [],
+        })
+      })
+    );
   });
 
 const _read = (payload) => {
@@ -251,7 +282,7 @@ export const format = (saveData) =>
 
 export const summarise =
   (cb = (_) => {}) =>
-  ({ __starter, __custom, ...data }) => {
+  ({ __starter, __custom, __team, __teams, ...data }) => {
     const pkmn = Object.values(data);
     cb({
       available: pkmn.filter(
@@ -306,6 +337,40 @@ export const trackData = () => {
       }
     }, [])
 
+  const teamsData = Object
+        .keys(games)
+        .reduce((acc, id) => {
+          try {
+            const data = JSON.parse(window.localStorage.getItem(IDS.game(id)))
+            const team = data?.__team || []
+
+            if (!Array.isArray(team) || !team.length) return acc
+
+            const result = team.map((locId, i) => {
+              const poke = data[locId]
+              if (!poke) return
+              return {
+                position: i + 1,
+                pokemon: poke.pokemon,
+                location: locId
+              }
+            }).filter(i => i)
+
+            if (!result.length) return acc
+
+            return [
+              ...acc,
+              {
+                user_id: userId,
+                game_id: id,
+                data: result
+              }
+            ]
+          } catch (e) {
+            console.error(e)
+            return acc
+          }
+        }, [])
 
   document.addEventListener("visibilitychange", function logData() {
 
@@ -313,6 +378,7 @@ export const trackData = () => {
       const createBlob = json => new Blob([JSON.stringify(json)], { type: 'application/json' })
       navigator.sendBeacon('/api/store/game', createBlob(gamesData))
       savesData.forEach(save => navigator.sendBeacon('/api/store/save', createBlob(save)))
+      teamsData.forEach(save => navigator.sendBeacon('/api/store/team', createBlob(save)))
     }
   })
 }
