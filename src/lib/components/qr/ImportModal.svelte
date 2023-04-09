@@ -1,6 +1,5 @@
 <script>
-  import QRScanner from './QRScanner.svelte'
-
+  import TextCode from './TextCode.svelte'
   import { page } from '$app/stores'
   import { fly } from 'svelte/transition'
 
@@ -16,24 +15,9 @@
 
   import { Error } from '$icons'
 
-  const handlescan = e => {
-    const url = e.detail.value
-    console.log('url', url, e)
-
-    let host = $page.url.host;
-    if (!url.startsWith(`${window.location.protocol}//${host}/`))
-      return handleerror(`Invalid QR code link - Only accept links to //${host}/drop/...`)
-
-    window.location = e.detail.value
-  }
+  const handlescan = e => window.location = `/drop/${e.detail.code}`
 
   let err, errtimeout
-  const handleerror = e => {
-    err = e
-    clearTimeout(errtimeout)
-    setTimeout(() => err = false, 1500)
-  }
-
 </script>
 
 <section>
@@ -43,28 +27,25 @@
   </h1>
 
   <p>
-    Scan a QR code on your Mobile device using your camera to transfer the save data.
+    Enter the ShareScreen code or scan the QR code on your Mobile device to transfer the save data .
   </p>
 
-  <div class='text-4xl inline-flex items-center transform scale-75 md:scale-100 -ml-4 md:my-4'>
+  <div class='text-4xl inline-flex items-center transform scale-75 md:scale-100 -ml-4 md:my-0'>
     <Icon inline={true} height=0.9em icon={Mobile} class=fill-current />
     <Icon inline={true} height=0.6em icon={Transfer} class='fill-current mr-2 ml-1' />
     <Icon inline={true} icon={Desktop} class=fill-current />
   </div>
 
+  <TextCode
+    on:code={handlescan}
+  />
+
   <ol>
     <li>Open your <a href='/saves'><mark>Save files <Icon inline={true} height=0.9em icon={Floppy} class=fill-current /></mark></a> on your first device</li>
     <li>Select the <mark>Share <Icon inline={true} icon={Share} class='fill-current' /></mark> icon on the save you want to transfer</li>
     <li>Open <mark>this page</mark> on your second device</li>
-    <li>Scan the <mark>QR code <Icon inline={true} icon={QRCode} class='fill-current' /></mark> with your camera</li>
+    <li>Enter the <mark>Code</mark> or scan the <mark>QR code <Icon inline={true} icon={QRCode} class='fill-current' /></mark> with your camera</li>
   </ol>
-
-  <div class='rounded-xl overflow-hidden max-w-sm'>
-    <QRScanner
-      on:scan={handlescan}
-      on:error={handleerror}
-      />
-  </div>
 
   <i class='text-xs text-gray-500 leading-3 max-w-xs text-center'>
     This will open a tinyurl link and redirect you back to the site.
@@ -73,25 +54,9 @@
 
 </section>
 
-
-{#if err}
-  <div
-    transition:fly={{ y: 50 }}
-    class='fixed bottom-0 left-0 md:left-1/2 md:-translate-x-1/2 px-4 w-full md:w-auto z-50' >
-    <div class='flex flex-col items-center text-center z-50 max-w-base px-6 justify-center text-red-600 bg-red-100 rounded-t-lg py-2 w-full text-sm'>
-      <span class='inline-flex items-center'>
-        <Icon inline={true} icon={Error} height=1.8em class='mr-2 fill-current' />
-        <b>Something went wrong</b>
-      </span>
-      {err}
-    </div>
-  </div>
-{/if}
-
-
 <style lang="postcss">
   h1 { @apply text-2xl md:text-4xl font-bold inline-flex items-center -mb-2 }
-  p{ @apply text-center leading-5 text-sm max-w-xs }
+  p{ @apply text-center leading-5 text-sm max-w-md }
   ol { @apply text-sm leading-4 list-outside list-decimal }
   li { @apply mb-2 md:mb-1 md:pl-2 md:-ml-2 }
   mark { @apply inline-flex items-center transition gap-x-1 bg-yellow-200 leading-5 font-bold px-1 mx-px }

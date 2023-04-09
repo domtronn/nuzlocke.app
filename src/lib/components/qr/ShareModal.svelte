@@ -48,7 +48,7 @@
   </h1>
 
   <p>
-    Scan the QR code or go to the link below to transfer your save to
+    Enter the code below or scan the QR code to transfer your save to
     a new device
   </p>
   
@@ -56,11 +56,11 @@
     {#await fetchurl({ data, save }) then drop}
       <button on:click={handlecopy(normalise(drop.url))} transition:fade>
         <mark class='text-xs md:text-base tracking-wide font-bold'>
-          {normalise(drop.url).replace(/drop.*/, 'drop')}
+          {normalise(drop.url).replace(/drop\/.*/, 'drop/')}
         </mark>
         <br />
         <mark class='text-4xl md:text-6xl'>
-          {drop.url.replace(/.*\/drop/i, '')}
+          {drop.url.replace(/.*\/drop\//i, '')}
         </mark>
       </button>
       
