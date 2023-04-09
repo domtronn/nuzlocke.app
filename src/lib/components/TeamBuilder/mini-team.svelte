@@ -160,7 +160,7 @@
         />
 
       <Icon
-        class='absolute opacity-0 right-0.5 top-1 dark:bg-gray-800 rounded-full pointer-events-none transition group-hover:opacity-100 dark:text-gray-400'
+        class='absolute opacity-0 right-0.5 top-1 bg-white dark:bg-gray-800 rounded-full pointer-events-none transition group-hover:opacity-100 dark:text-gray-400'
         inline icon={Plus} />
 
     </p>
