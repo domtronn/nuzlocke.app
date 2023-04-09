@@ -417,10 +417,11 @@
         "level": "29",
         "moves": [
           {
+            "power": 70,
             "type": "normal",
-            "damage_class": "status",
-            "name": "Splash",
-            "effect": "Does nothing."
+            "damage_class": "physical",
+            "name": "Slash",
+            "effect": "Has an increased chance for a critical hit."
           },
           {
             "power": 60,
