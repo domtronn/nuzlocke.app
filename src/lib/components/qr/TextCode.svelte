@@ -18,10 +18,10 @@
 
 </script>
 
-<div class='inline-flex gap-x-2'>
+<div class='inline-flex gap-x-1 md:gap-x-2'>
   {#each Array(8).fill() as _, i}
     <input
-      class='w-12 h-16 text-4xl !p-0 font-bold text-center uppercase rounded-lg dark:bg-gray-900 text-white !p-0'
+      class='w-8 h-10 md:w-12 md:h-16 text-2xl md:text-4xl !p-0 font-bold text-center uppercase rounded-lg dark:bg-gray-900 text-white !p-0'
       maxlength=1
       on:input={nextref(i)}
       bind:this={refs[i]}
