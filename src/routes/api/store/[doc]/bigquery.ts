@@ -18,6 +18,8 @@ const {
   VITE_BQ_SAVES_TABLE_ID,
   VITE_BQ_GAMES_DATASET_ID,
   VITE_BQ_GAMES_TABLE_ID,
+  VITE_BQ_TEAMS_DATASET_ID,
+  VITE_BQ_TEAMS_TABLE_ID,
   VITE_BQ_PRIVATE_KEY_ID,
   VITE_BQ_PRIVATE_KEY,
   VITE_BQ_CLIENT_ID,
@@ -71,8 +73,8 @@ export const processTeam = async({ data, user_id, game_id }: ITeams) => {
         }))
 
         await bq
-            .dataset(VITE_BQ_SAVES_DATASET_ID)
-            .table(VITE_BQ_SAVES_TABLE_ID)
+            .dataset(VITE_BQ_TEAMS_DATASET_ID)
+            .table(VITE_BQ_TEAMS_TABLE_ID)
             .insert(rows)
         
         console.log(`Added ${data.length} rows of team data`)
