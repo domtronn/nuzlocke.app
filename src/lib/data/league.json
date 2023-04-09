@@ -37374,20 +37374,6 @@
       "img": "/leaders/dp-volkner",
       "pokemon": [
         {
-          "name": "raichu",
-          "level": "46",
-          "moves": [
-            "charge-beam",
-            "signal-beam",
-            "quick-attack",
-            "focus-blast"
-          ],
-          "ability": "static",
-          "abilities": [
-            "static"
-          ]
-        },
-        {
           "name": "jolteon",
           "level": "46",
           "moves": [
@@ -37399,6 +37385,20 @@
           "ability": "volt-absorb",
           "abilities": [
             "volt-absorb"
+          ]
+        },
+        {
+          "name": "raichu",
+          "level": "46",
+          "moves": [
+            "charge-beam",
+            "signal-beam",
+            "quick-attack",
+            "focus-blast"
+          ],
+          "ability": "static",
+          "abilities": [
+            "static"
           ]
         },
         {
@@ -68314,7 +68314,7 @@
           "name": "veluza",
           "level": "29",
           "moves": [
-            "splash",
+            "slash",
             "pluck",
             "aqua-cutter"
           ],

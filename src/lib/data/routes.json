@@ -5963,6 +5963,13 @@
       ]
     },
     {
+      "type": "gym",
+      "name": "Route 8",
+      "value": "b5",
+      "group": "rival",
+      "boss": "Bianca"
+    },
+    {
       "type": "route",
       "name": "Moor of Icirrus",
       "encounters": [
@@ -5973,13 +5980,6 @@
         "shelmet",
         "stunfisk"
       ]
-    },
-    {
-      "type": "gym",
-      "name": "Moor of Icirrus",
-      "value": "b5",
-      "group": "rival",
-      "boss": "Bianca"
     },
     {
       "type": "route",
@@ -19480,6 +19480,15 @@
     }
   ],
   "emkaizo": [
+    {
+      "type": "route",
+      "name": "Starter",
+      "encounters": [
+        "treecko",
+        "mudkip",
+        "torchic"
+      ]
+    },
     {
       "type": "route",
       "name": "Littleroot Town",
@@ -76092,6 +76101,13 @@
       ]
     },
     {
+      "type": "gym",
+      "name": "Route 8",
+      "value": "b5",
+      "group": "rival",
+      "boss": "Bianca"
+    },
+    {
       "type": "route",
       "name": "Moor of Icirrus",
       "encounters": [
@@ -76102,13 +76118,6 @@
         "shelmet",
         "stunfisk"
       ]
-    },
-    {
-      "type": "gym",
-      "name": "Moor of Icirrus",
-      "value": "b5",
-      "group": "rival",
-      "boss": "Bianca"
     },
     {
       "type": "route",

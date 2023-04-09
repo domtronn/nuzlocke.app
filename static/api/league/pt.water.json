@@ -1147,6 +1147,55 @@
     "img": "/leaders/dp-volkner",
     "pokemon": [
       {
+        "name": "jolteon",
+        "level": "46",
+        "moves": [
+          {
+            "power": 50,
+            "type": "electric",
+            "damage_class": "special",
+            "name": "Charge Beam",
+            "effect": "Has a 70% chance to raise the user's Special Attack by one stage."
+          },
+          {
+            "type": "electric",
+            "damage_class": "status",
+            "name": "Thunder Wave",
+            "effect": "Paralyzes the target."
+          },
+          {
+            "power": 100,
+            "type": "steel",
+            "damage_class": "physical",
+            "name": "Iron Tail",
+            "effect": "Has a 30% chance to lower the target's Defense by one stage."
+          },
+          {
+            "power": 40,
+            "priority": 1,
+            "type": "normal",
+            "damage_class": "physical",
+            "name": "Quick Attack"
+          }
+        ],
+        "ability": {
+          "name": "Volt Absorb",
+          "effect": "Absorbs electric moves, healing for 1/4 max HP."
+        },
+        "sprite": "135",
+        "types": [
+          "electric"
+        ],
+        "stats": {
+          "hp": 65,
+          "atk": 65,
+          "def": 60,
+          "spa": 110,
+          "spd": 95,
+          "spe": 130
+        }
+      },
+      {
         "name": "raichu",
         "level": "46",
         "moves": [
@@ -1194,55 +1243,6 @@
           "spa": 90,
           "spd": 80,
           "spe": 110
-        }
-      },
-      {
-        "name": "jolteon",
-        "level": "46",
-        "moves": [
-          {
-            "power": 50,
-            "type": "electric",
-            "damage_class": "special",
-            "name": "Charge Beam",
-            "effect": "Has a 70% chance to raise the user's Special Attack by one stage."
-          },
-          {
-            "type": "electric",
-            "damage_class": "status",
-            "name": "Thunder Wave",
-            "effect": "Paralyzes the target."
-          },
-          {
-            "power": 100,
-            "type": "steel",
-            "damage_class": "physical",
-            "name": "Iron Tail",
-            "effect": "Has a 30% chance to lower the target's Defense by one stage."
-          },
-          {
-            "power": 40,
-            "priority": 1,
-            "type": "normal",
-            "damage_class": "physical",
-            "name": "Quick Attack"
-          }
-        ],
-        "ability": {
-          "name": "Volt Absorb",
-          "effect": "Absorbs electric moves, healing for 1/4 max HP."
-        },
-        "sprite": "135",
-        "types": [
-          "electric"
-        ],
-        "stats": {
-          "hp": 65,
-          "atk": 65,
-          "def": 60,
-          "spa": 110,
-          "spd": 95,
-          "spe": 130
         }
       },
       {
