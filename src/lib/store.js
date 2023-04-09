@@ -348,12 +348,15 @@ export const trackData = () => {
 
             const result = team.map((locId, i) => {
               const poke = data[locId]
+              if (!poke) return
               return {
                 position: i + 1,
                 pokemon: poke.pokemon,
                 location: locId
               }
-            })
+            }).filter(i => i)
+
+            if (!result.length) return acc
 
             return [
               ...acc,
@@ -364,6 +367,7 @@ export const trackData = () => {
               }
             ]
           } catch (e) {
+            console.error(e)
             return acc
           }
         }, [])
