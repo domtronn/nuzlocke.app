@@ -212,13 +212,13 @@
 
   @media (max-width: theme('screens.md')) {
     .container {
-      height: calc(100vh - 38px);
+      height: 100vh;
       overflow-y: scroll;
     }
   }
 
   .container {
-    min-height: 90vh;
+    min-height: 100%;
     @apply snap-always snap-y;
   }
 </style>

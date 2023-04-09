@@ -36,7 +36,8 @@
   class:dark:bg-gray-800={open}
   class:pl-4={open}
   class:left-0={open}
-  class='block md:hidden transition safe-bottom fixed -bottom-2 duration-500 right-0 pb-5 pt-1 pr-4 text-left pointer-events-none'>
+  class:transition={open}
+  class='block md:hidden safe-bottom fixed -bottom-2 duration-500 right-0 pb-8 pt-2 pr-4 text-left pointer-events-none'>
   {#if open}
     <div
       class='absolute w-4/5 pointer-events-auto'
@@ -47,21 +48,12 @@
     </div>
   {/if}
 
-{#if open}
-  <IconButton
-    on:click={handleOpen}
-    title='Close search bar'
-    containerClassName='float-right rounded-full searchbutton transform -translate-y-7 pointer-events-auto'
-    src={X}
-    />
-{:else}
-    <IconButton
-      on:click={handleOpen}
-      title='Open search bar'
-      containerClassName='float-right rounded-full searchbutton transform -translate-y-7 pointer-events-auto'
-      src={Search}
-      />
- {/if}
+<IconButton
+  on:click={handleOpen}
+  title='{open ? 'Close' : 'Open'} search bar'
+  containerClassName='float-right rounded-full searchbutton transform -translate-y-8 -translate-x-1 pointer-events-auto'
+  src={open ? X : Search}
+  />
 </div>
 
 <style>

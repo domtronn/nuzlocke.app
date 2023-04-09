@@ -115,7 +115,7 @@
 
   @media (max-width: theme('screens.md')) {
     div {
-      @apply fixed w-full pl-6 bottom-0 py-2 pb-2 border-t-2 bg-white/50 backdrop-blur-sm border-gray-200
+      @apply fixed w-full pl-6 bottom-0 pt-3 pb-5 border-t-2 bg-white/50 backdrop-blur-sm border-gray-200
     }
 
     :global(.dark) div {
