@@ -337,6 +337,37 @@ export const trackData = () => {
       }
     }, [])
 
+  const teamsData = Object
+        .keys(games)
+        .reduce((acc, id) => {
+          try {
+            const data = JSON.parse(window.localStorage.getItem(IDS.game(id)))
+            const team = data?.__team || []
+
+            if (!Array.isArray(team) || !team.length) return acc
+
+            const result = team.map((locId, i) => {
+              const poke = data[locId]
+              return {
+                position: i + 1,
+                pokemon: poke.pokemon,
+                location: locID
+              }
+            })
+
+            return [
+              ...acc,
+              {
+                user_id: userId,
+                game_id: id,
+                data: result
+              }
+            ]
+          } catch (e) {
+            return acc
+          }
+        }, [])
+
 
   document.addEventListener("visibilitychange", function logData() {
 
@@ -344,6 +375,7 @@ export const trackData = () => {
       const createBlob = json => new Blob([JSON.stringify(json)], { type: 'application/json' })
       navigator.sendBeacon('/api/store/game', createBlob(gamesData))
       savesData.forEach(save => navigator.sendBeacon('/api/store/save', createBlob(save)))
+      teamsData.forEach(save => navigator.sendBeacon('/api/store/team', createBlob(save)))
     }
   })
 }

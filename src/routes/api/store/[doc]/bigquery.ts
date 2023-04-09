@@ -1,14 +1,17 @@
 import { BigQuery } from '@google-cloud/bigquery'
 
 import { z  } from 'zod'
-import { IGames, ISave } from './types'
+import { IGames, ISaves, ITeams } from './types'
 import { isEmpty, nonnull } from '$utils/obj'
 
 // @ts-ignore
 type IGames = z.infer<typeof IGames>
 // @ts-ignore
-type ISave = z.infer<typeof ISave>
+type ISaves = z.infer<typeof ISaves>
+// @ts-ignore
+type ITeams = z.infer<typeof ITeams>
 
+    
 const {
   VITE_BQ_PROJECT_ID,
   VITE_BQ_SAVES_DATASET_ID,
@@ -57,7 +60,29 @@ export const processGame = async ({ data, user_id }: IGames) => {
   }
 }
 
-export const processSave = async ({ data, user_id, game_id }: ISave) => {
+export const processTeam = async({ data, user_id, game_id }: ITeams) => {
+    try {
+        const rows = data.map(({ location, ...r }) => ({
+            ...r,
+            user_id,
+            game_id,
+            location_name: location,
+            uploaded_at: +new Date() / 1000,
+        }))
+
+        await bq
+            .dataset(VITE_BQ_SAVES_DATASET_ID)
+            .table(VITE_BQ_SAVES_TABLE_ID)
+            .insert(rows)
+        
+        console.log(`Added ${data.length} rows of team data`)
+    } catch (e) {
+        if (!e.errors) console.error(e)
+        console.error(JSON.stringify(e.errors, null, 2))
+    }
+}
+
+export const processSave = async ({ data, user_id, game_id }: ISaves) => {
     try {
       const rows = data.map(({ id, hidden, location, death, ...d }) => ({
         ...d,
