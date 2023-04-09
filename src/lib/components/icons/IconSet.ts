@@ -16,6 +16,8 @@ export { default as Search } from '@iconify-icons/gg/search';
 export { default as Bin } from '@iconify-icons/gg/trash';
 export { default as Trash } from '@iconify-icons/gg/trash';
 
+export { default as Boost } from '@iconify-icons/ri/arrow-up-s-fill';
+
 export { default as Delete } from '@iconify-icons/ri/delete-back-2-line';
 export { default as Dots } from '@iconify-icons/ph/dots-three-vertical-bold';
 export { default as Caret } from '@iconify-icons/ph/caret-down-fill'; // Previous DownArr
