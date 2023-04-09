@@ -7,6 +7,7 @@
 
   import PokemonCard from '$lib/components/pokemon-card.svelte'
 
+  import { Settings } from '$lib/components/Settings'
   import { Loader, PIcon, IconButton, Tooltip, Toggle } from '$c/core'
   import TypeBadge from '$lib/components/type-badge.svelte'
   import { Modal as AnalysisModal } from '$lib/components/Analysis'
@@ -169,11 +170,16 @@
             <small>Team</small>
           </AnalysisModal>
 
-          <div class='flex mt-0 max-md:justify-end max-md:flex-grow md:flex-row-reverse gap-x-2'>
+          <Settings
+            class='absolute right-0'
+            />
+
+          <div class='flex mt-0 mr-8 max-md:justify-end max-md:flex-grow md:flex-row-reverse gap-x-2'>
             <Toggle id=minimal bind:state={minimal}>
               <small>Hide stats</small>
             </Toggle>
           </div>
+
         </div>
 
         <div class='inline-flex flex-wrap md:flex-nowrap sm:flex-row gap-y-2 gap-x-4 sm:items-start z-50 mt-2'>
@@ -342,7 +348,7 @@
                           <Icon class='absolute transform scale-75 right-0.5 top-2 bg-white dark:bg-gray-900 rounded-full' inline icon={Plus} />
                         {/if}
                       </IconButton>
-                    {/if}  
+                    {/if}
                   </div>
                 </span>
               </PokemonCard>
