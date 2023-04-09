@@ -34,8 +34,12 @@
       )
   });
 
+  const onresize = () => document.body.height = window.innerHeight
+
   $: createUser()
 </script>
+
+<svelte:window on:resize={onresize} />
 
 <Modal
   closeButton={false}

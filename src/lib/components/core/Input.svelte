@@ -2,11 +2,6 @@
   export let name, value = null, color = '', className = '', placeholder = '', icon, type = 'text', min, max, rounded = false
   import { Icon } from '$c/core'
 
-  const onblur = e => {
-    const { matches } = window.matchMedia("(max-width: 700px)")
-    if (matches) window.scrollTo(0, 0)
-  }
-
   name = name || placeholder
 </script>
 
@@ -34,7 +29,6 @@
     class:rounded-lg={rounded}
     class:pl-8={!!icon}
     class:pl-3={!icon}
-    on:blur={onblur}
     class='{color} {className} {$$restProps.class || ''}'
     autocomplete=off
   />
