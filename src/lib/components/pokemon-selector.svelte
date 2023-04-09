@@ -354,7 +354,7 @@
       />
     {/if}
 
-    {#if selected && !hidden && team.length < 6 && (status && NuzlockeGroups.Available.includes(status.id))}
+    {#if selected && !hidden && (inteam || team.length < 6) && (status && NuzlockeGroups.Available.includes(status.id))}
       <IconButton
         rounded
         src={Ball}
