@@ -31,7 +31,7 @@
           "name": "Swarm",
           "effect": "Strengthens bug moves to inflict 1.5× damage at 1/3 max HP or less."
         },
-        "sprite": "920",
+        "sprite": "919",
         "types": [
           "bug"
         ],
@@ -67,7 +67,7 @@
           "name": "Insomnia",
           "effect": "Prevents sleep."
         },
-        "sprite": "918",
+        "sprite": "917",
         "types": [
           "bug"
         ],
@@ -185,7 +185,7 @@
           "name": "Early Bird",
           "effect": "Makes sleep pass twice as quickly."
         },
-        "sprite": "935",
+        "sprite": "928",
         "types": [
           "grass",
           "normal"
@@ -274,7 +274,7 @@
         "ability": {
           "name": "Wind Power"
         },
-        "sprite": "957",
+        "sprite": "940",
         "types": [
           "electric",
           "flying"
@@ -309,7 +309,7 @@
         "ability": {
           "name": "Electromorphosis"
         },
-        "sprite": "941",
+        "sprite": "939",
         "types": [
           "electric"
         ],
@@ -417,11 +417,10 @@
         "level": "29",
         "moves": [
           {
-            "power": 70,
             "type": "normal",
-            "damage_class": "physical",
-            "name": "Slash",
-            "effect": "Has an increased chance for a critical hit."
+            "damage_class": "status",
+            "name": "Splash",
+            "effect": "Does nothing."
           },
           {
             "power": 60,
@@ -441,7 +440,7 @@
           "name": "Mold Breaker",
           "effect": "Bypasses targets' abilities if they could hinder or prevent a move."
         },
-        "sprite": "932",
+        "sprite": "976",
         "types": [
           "water",
           "psychic"
@@ -485,7 +484,7 @@
           "name": "Gooey",
           "effect": "Lowers attacking Pokémon's Speed by one stage on contact."
         },
-        "sprite": "930",
+        "sprite": "961",
         "types": [
           "water"
         ],
@@ -623,7 +622,7 @@
           "name": "Serene Grace",
           "effect": "Doubles the chance of moves' extra effects occurring."
         },
-        "sprite": "917",
+        "sprite": "982",
         "types": [
           "normal"
         ],
@@ -802,7 +801,7 @@
           "name": "Sand Rush",
           "effect": "Doubles Speed during a sandstorm.  Protects against sandstorm damage."
         },
-        "sprite": "925",
+        "sprite": "972",
         "types": [
           "ghost"
         ],
@@ -897,7 +896,7 @@
         "ability": {
           "name": "Armor Tail"
         },
-        "sprite": "928",
+        "sprite": "981",
         "types": [
           "normal",
           "psychic"
@@ -983,7 +982,7 @@
         "ability": {
           "name": "Opportunist"
         },
-        "sprite": "927",
+        "sprite": "956",
         "types": [
           "psychic"
         ],
@@ -1165,7 +1164,7 @@
           "name": "Thick Fat",
           "effect": "Halves damage from fire and ice moves."
         },
-        "sprite": "948",
+        "sprite": "975",
         "types": [
           "ice"
         ],
@@ -1356,7 +1355,7 @@
           "effect": "Has a 30% chance of paralyzing attacking Pokémon on contact."
         },
         "tera": "electric",
-        "sprite": "954",
+        "sprite": "921",
         "types": [
           "electric"
         ],
@@ -1410,7 +1409,7 @@
         "ability": {
           "name": "Anger Shell"
         },
-        "sprite": "962",
+        "sprite": "950",
         "types": [
           "rock"
         ],
@@ -1463,7 +1462,7 @@
         "ability": {
           "name": "Rocky Payload"
         },
-        "sprite": "959",
+        "sprite": "962",
         "types": [
           "flying",
           "dark"
@@ -1563,7 +1562,7 @@
           "name": "Intimidate",
           "effect": "Lowers opponents' Attack one stage upon entering battle."
         },
-        "sprite": "943",
+        "sprite": "966",
         "types": [
           "steel",
           "poison"
@@ -1671,7 +1670,7 @@
           "name": "Static",
           "effect": "Has a 30% chance of paralyzing attacking Pokémon on contact."
         },
-        "sprite": "954",
+        "sprite": "921",
         "types": [
           "electric"
         ],
@@ -1811,7 +1810,7 @@
           "name": "Speed Boost",
           "effect": "Raises Speed one stage after each turn."
         },
-        "sprite": "943",
+        "sprite": "966",
         "types": [
           "steel",
           "poison"
@@ -1867,7 +1866,7 @@
         "ability": {
           "name": "Earth Eater"
         },
-        "sprite": "944",
+        "sprite": "968",
         "types": [
           "steel"
         ],
@@ -2004,7 +2003,7 @@
           "name": "Overcoat",
           "effect": "Protects against damage from weather."
         },
-        "sprite": "943",
+        "sprite": "966",
         "types": [
           "steel",
           "poison"
@@ -2052,7 +2051,7 @@
         "ability": {
           "name": "Toxic Debris"
         },
-        "sprite": "943",
+        "sprite": "966",
         "types": [
           "steel",
           "poison"
@@ -2197,7 +2196,7 @@
           "name": "Volt Absorb",
           "effect": "Absorbs electric moves, healing for 1/4 max HP."
         },
-        "sprite": "955",
+        "sprite": "922",
         "types": [
           "electric",
           "fighting"
@@ -2299,7 +2298,7 @@
         "ability": {
           "name": "Protosynthesis"
         },
-        "sprite": "978",
+        "sprite": "984",
         "types": [
           "ground",
           "fighting"
@@ -2450,7 +2449,7 @@
           "name": "Volt Absorb",
           "effect": "Absorbs electric moves, healing for 1/4 max HP."
         },
-        "sprite": "956",
+        "sprite": "923",
         "types": [
           "electric",
           "fighting"
@@ -2650,7 +2649,7 @@
         "ability": {
           "name": "Well-Baked Body"
         },
-        "sprite": "971",
+        "sprite": "927",
         "types": [
           "fairy"
         ],
@@ -2696,7 +2695,7 @@
           "name": "Misty Surge",
           "effect": "When this Pokémon enters battle, it changes the terrain to Misty Terrain."
         },
-        "sprite": "943",
+        "sprite": "966",
         "types": [
           "steel",
           "poison"
@@ -2751,7 +2750,7 @@
         "ability": {
           "name": "Commander"
         },
-        "sprite": "952",
+        "sprite": "978",
         "types": [
           "dragon",
           "water"
@@ -2938,6 +2937,7 @@
           "name": "Vital Spirit",
           "effect": "Prevents sleep."
         },
+        "sprite": "979",
         "types": [
           "fighting",
           "ghost"
@@ -2984,7 +2984,7 @@
           "name": "Stamina",
           "effect": "Raises this Pokémon's Defense by one stage when it takes damage from a move."
         },
-        "sprite": "943",
+        "sprite": "966",
         "types": [
           "steel",
           "poison"
@@ -3247,6 +3247,7 @@
           "effect": "Absorbs water moves, healing for 1/4 max HP."
         },
         "tera": "ground",
+        "sprite": "980",
         "types": [
           "poison",
           "ground"
@@ -3505,7 +3506,7 @@
           "effect": "Bypasses targets' abilities if they could hinder or prevent a move."
         },
         "tera": "steel",
-        "sprite": "1002",
+        "sprite": "959",
         "types": [
           "fairy",
           "steel"
@@ -3768,7 +3769,7 @@
           "effect": "Lets the Pokémon's normal and fighting moves hit ghost Pokémon."
         },
         "tera": "flying",
-        "sprite": "961",
+        "sprite": "973",
         "types": [
           "flying",
           "fighting"
@@ -4016,7 +4017,7 @@
           "name": "Thermal Exchange"
         },
         "tera": "dragon",
-        "sprite": "951",
+        "sprite": "998",
         "types": [
           "dragon",
           "ice"
@@ -4074,7 +4075,7 @@
         "ability": {
           "name": "Opportunist"
         },
-        "sprite": "927",
+        "sprite": "956",
         "types": [
           "psychic"
         ],
@@ -4173,7 +4174,7 @@
           "name": "Mold Breaker",
           "effect": "Bypasses targets' abilities if they could hinder or prevent a move."
         },
-        "sprite": "932",
+        "sprite": "976",
         "types": [
           "water",
           "psychic"
@@ -4272,7 +4273,7 @@
         "ability": {
           "name": "Supreme Overlord"
         },
-        "sprite": "1008",
+        "sprite": "983",
         "types": [
           "dark",
           "steel"
@@ -4321,7 +4322,7 @@
           "name": "Toxic Debris"
         },
         "tera": "rock",
-        "sprite": "967",
+        "sprite": "970",
         "types": [
           "rock",
           "poison"
@@ -4478,7 +4479,7 @@
           "name": "Chlorophyll",
           "effect": "Doubles Speed during strong sunlight."
         },
-        "sprite": "939",
+        "sprite": "952",
         "types": [
           "grass",
           "fire"
@@ -4526,7 +4527,7 @@
         "ability": {
           "name": "Mycelium Might"
         },
-        "sprite": "1007",
+        "sprite": "949",
         "types": [
           "ground",
           "grass"
@@ -4574,7 +4575,7 @@
         "ability": {
           "name": "Purifying Salt"
         },
-        "sprite": "965",
+        "sprite": "934",
         "types": [
           "rock"
         ],
@@ -4625,7 +4626,7 @@
           "effect": "Lowers opponents' Attack one stage upon entering battle."
         },
         "tera": "dark",
-        "sprite": "973",
+        "sprite": "943",
         "types": [
           "dark"
         ],
@@ -5402,7 +5403,7 @@
           "name": "Serene Grace",
           "effect": "Doubles the chance of moves' extra effects occurring."
         },
-        "sprite": "917",
+        "sprite": "982",
         "types": [
           "normal"
         ],
@@ -5450,7 +5451,7 @@
         "ability": {
           "name": "Earth Eater"
         },
-        "sprite": "944",
+        "sprite": "968",
         "types": [
           "steel"
         ],
@@ -5499,7 +5500,7 @@
           "name": "Volt Absorb",
           "effect": "Absorbs electric moves, healing for 1/4 max HP."
         },
-        "sprite": "956",
+        "sprite": "923",
         "types": [
           "electric",
           "fighting"
