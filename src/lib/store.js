@@ -351,7 +351,7 @@ export const trackData = () => {
               return {
                 position: i + 1,
                 pokemon: poke.pokemon,
-                location: locID
+                location: locId
               }
             })
 
@@ -367,7 +367,6 @@ export const trackData = () => {
             return acc
           }
         }, [])
-
 
   document.addEventListener("visibilitychange", function logData() {
 
