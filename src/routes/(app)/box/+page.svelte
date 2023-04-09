@@ -23,7 +23,7 @@
   import deferStyles from '$utils/defer-styles'
 
   import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
-  import { Plus, Shiny, X, Deceased, External } from '$icons'
+  import { Ball, Plus, Minus, Shiny, X, Deceased, External } from '$icons'
 
   const { getPkmns, getPkmn } = getContext('game')
   const { open } = getContext('simple-modal')
@@ -181,7 +181,7 @@
 
             {#each stats as s}
               <label
-                class='transition items-center shadow-sm cursor-pointer inline-flex text-center row-span-1 text-xs px-2 w-full text-gray-500 dark:text-gray-400 border-gray-400 font-medium border shadow-sm rounded-lg justify-center max-md:h-7 h-8'
+                class='transition items-center shadow-sm cursor-pointer inline-flex text-center row-span-1 text-xs px-2 w-full text-gray-500 dark:text-gray-400 border-gray-400 font-medium border shadow-sm rounded-lg justify-center h-7'
                 class:border-gray-600={stat === s}
                 class:text-gray-50={stat === s}
                 class:bg-gray-600={stat === s}
@@ -204,7 +204,7 @@
               src={X}
               title='Clear filters'
               className='!m-0'
-              containerClassName='flex flex-col order-last sm:order-none items-center justify-center relative max-md:h-7 h-8 my-0'
+              containerClassName='flex flex-col order-last sm:order-none items-center justify-center relative h-7 my-0'
               disabled={!enabled}
               on:click={clear}
               >
@@ -325,21 +325,19 @@
       borderless
       />
 
-    {#if teamData?.length < 6 || teamData?.includes(p.location)}
+    {#if !teamData || teamData?.length < 6 || teamData?.includes(p.location)}
       <IconButton
-        className='transform scale-75'
+        className='translate-y-1 transform scale-125'
         borderless
-        on:click={(teamData.includes(locid(p)) ? handleTeamRemove : handleTeamAdd).bind({}, p)}
+        src={Ball}
+        title='{teamData?.includes(locid(p)) ? `Remove` : `Add`} {p.pokemon} {teamData?.includes(locid(p)) ? `from` : `to`} your team'
+        on:click={(teamData?.includes(locid(p)) ? handleTeamRemove : handleTeamAdd).bind({}, p)}
         >
-        <!-- FIXME: What the fuck...  -->
-        <span class='absolute transition-none dark:transition right-5 top-[10px] dark:text-gray-500 dark:group-hover:text-gray-400'>
-          {#if teamData.includes(locid(p))}
-            -
-          {:else}
-            +
-          {/if}
-        </span>
-        <PIcon class='-ml-4 -mr-5 -mt-4 -mb-6 opacity-30 transition dark:contrast-0 dark:opacity-80 group-hover:opacity-100 transform scale-50' name=unknown-pokemon2 />
+        {#if teamData?.includes(locid(p))}
+          <Icon class='absolute transform scale-75 right-0.5 top-2 bg-white dark:bg-gray-900 rounded-full' inline icon={Minus} />
+        {:else}
+          <Icon class='absolute transform scale-75 right-0.5 top-2 bg-white dark:bg-gray-900 rounded-full' inline icon={Plus} />
+        {/if}
       </IconButton>
     {/if}
   </div>

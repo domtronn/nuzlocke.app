@@ -99,6 +99,9 @@
       use:drag={{ data: p, id: i, effect: 'move' }}
       on:click={onRemove(p)}
 
+      title='Remove {p.pokemon} from your team'
+      aria-label='Remove {p.pokemon} from your team'
+
       on:dragenter={dragReplace}
       on:dragleave={dragLeave}
       on:drop={onDrop}
@@ -157,7 +160,7 @@
         />
 
       <Icon
-        class='absolute opacity-0 left-1/2 -translate-x-1/2 -bottom-2 pointer-events-none transition group-hover:opacity-100 dark:text-gray-400'
+        class='absolute opacity-0 right-0.5 top-1 dark:bg-gray-800 rounded-full pointer-events-none transition group-hover:opacity-100 dark:text-gray-400'
         inline icon={Plus} />
 
     </p>

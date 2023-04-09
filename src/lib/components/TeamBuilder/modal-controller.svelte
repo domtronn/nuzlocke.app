@@ -19,7 +19,8 @@
 
 <button
   on:click|preventDefault={onopen}
-  aria-label="Add Pokemon to your team"
+  title="Add Pokémon to your team"
+  aria-label="Add Pokémon to your team"
 >
   <slot />
 </button>
