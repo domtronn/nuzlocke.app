@@ -52,8 +52,9 @@
   <div class='grid grid-cols-4 md:grid-cols-6 bg-gray-200 dark:bg-gray-800 px-2 md:px-6 py-4 mx4 my-2 md:my-6 h-fit overflow-hidden rounded-lg'>
     {#each availableMons as mon (mon.id)}
       <button
-        class=relative
+        class='transition relative'
         disabled={ids.length >= max && !ids.includes(mon.id)}
+        class:grayscale={ids.length >= max && !ids.includes(mon.id)}
         class:selected={ids.includes(mon.id)}
         on:click={select(mon.id)}
         >
