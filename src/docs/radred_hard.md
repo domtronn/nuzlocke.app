@@ -1,4 +1,6 @@
 ---
+created: 2023-03-29
+updated: 2023-03-30
 description: This guide contains useful information the <b>Hardcore mode</b> of the ROM Hack <b>Radical Red</b> Nuzlockes. It details some of the game's unique features, lists available Pokémon, the number of encounters, and detailed overviews of all Boss battles.
 ---
 

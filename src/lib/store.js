@@ -3,6 +3,7 @@ import { browser } from '$app/environment';
 import { writable } from 'svelte/store';
 
 import { uuid } from '$lib/utils/uuid';
+import { toObj } from '$lib/utils/obj'
 import { NuzlockeGroups } from '$lib/data/states';
 
 import { settingsDefault } from '$lib/components/Settings/_data'
@@ -123,21 +124,21 @@ export const updateGame = (game) => (payload) => {
   return Object.values(games).map(format).join(',');
 };
 
-export const updatePokemon = (p) => {
+export const updatePokemon = ({ customId, customName, ...p } = {}) => {
   activeGame.subscribe((gameId) => {
     getGameStore(gameId).update(
       patch({
-        [p.location]: p
+        [customId || p.location]: p
       })
     );
   });
 };
 
-export const killPokemon = (p) => {
+export const killPokemon = ({ customId, customName, ...p }) => {
   activeGame.subscribe((gameId) => {
     getGameStore(gameId).update(
       patch({
-        [p.location]: { ...p, status: 5 }
+        [customId || p.location]: { ...p, status: 5 }
       })
     );
   });
@@ -178,8 +179,12 @@ export const readBox = (data) => {
     .filter((i) => i.pokemon)
     .filter(({ status }) => NuzlockeGroups.Available.includes(status))
     .map(p => {
-      if (customMap?.[p.location]) return { ...p, location: customMap?.[p.location]?.name, locationId: p.location }
-      else return p
+       // Read custom location data from data.__custom
+       let custom
+       if (customIdMap?.[p.location]) custom = customIdMap?.[p.location]
+       else if (customLocMap?.[p.location]) custom = customLocMap?.[p.location]
+
+       return custom ? { ...p, customId: custom.id, customName: custom.name } : p
     })
 }
 
@@ -345,19 +350,69 @@ export const trackData = () => {
 }
 // --------
 
-if (typeof window !== 'undefined') {
-  window.nuzlocke = {
-    starter: () => window.nuzlocke.parsesave('__starter'),
-    custom: () => window.nuzlocke.parsesave('__custom'),
-    team: () => window.nuzlocke.parsesave('__team'),
-    teams: () => window.nuzlocke.parsesave('__teams'),
-    parsesave: (id) => {
-      const data = JSON.parse(
-        window.localStorage[`nuzlocke.${window.localStorage['nuzlocke']}`]
-      )
+const fixDupes = () => {
+  console.log('--------------------\tFixing Dupes')
+  activeGame.subscribe((gameId) => {
+    getGame(gameId).subscribe(
+      read((data) => {
+        console.log('--------------------\tLoaded game data')
+        const dupeKeys = Object.values(
+          Object
+            .entries(data)
+            .filter(([key]) => !key.startsWith('__'))
+            .reduce((acc, [key,val]) => ({ ...acc, [val.id]: [].concat(acc[val.id] || []).concat(key) }), {})
+        ).filter(i => i.length > 1)
 
-      if (id) return data[id]
-      else return data
+        if (!dupeKeys.length) {
+          console.log(`--------------------\tDone! Nothing to fix`)
+          return
+        }
+
+        console.log(`--------------------\tFound ${dupeKeys.length} items to patch`)
+        const temp = { ...data }
+        dupeKeys.forEach((keys) =>{
+          keys.forEach((key) => {
+            if ((data.__custom || []).find(c => c.id === key)) {
+              console.log(`----------\tSubstituing`, key, 'with', data[keys[keys.length - 1]], 'from', keys[keys.length - 1])
+              temp[key] = data[keys[keys.length - 1]]
+            } else {
+              console.log(`----------\tDeleting`, key)
+              delete temp[key]
+            }
+          })
+        })
+
+        console.log(`--------------------\tProposed new state`)
+        console.log(temp)
+        getGame(gameId).set(JSON.stringify(temp))
+      })
+    )
+  })
+}
+
+fixDupes()
+
+
+if (typeof window !== 'undefined')
+  window.nz = {
+    getGame: function (id) {
+      const data = JSON.parse(window.localStorage[`nuzlocke.${window.localStorage['nuzlocke']}`])
+      return id ? data[id] : data
+    },
+    getCustom: function () {
+      const data = nz.getGame()
+      const custom = data.__custom || []
+      return [
+        custom,
+        custom.map(it => data[it.id])
+      ]
+    },
+    getCaught: function () {
+      const data = nz.getGame()
+      return Object.values(data).filter(i => i.status === 1)
+    },
+    getDead: function () {
+      const data = nz.getGame()
+      return Object.values(data).filter(i => i.status === 5)
     }
   }
-}

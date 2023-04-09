@@ -83,7 +83,7 @@
   })
 </script>
 
-<ul class='flex flex-col gap-y-4 lg:gap-y-2 {className}'>
+<ul class='flex flex-col gap-y-0 lg:gap-y-2 {className}'>
   {#each filtered.slice(0, limit) as p, id (p)}
 
     {#if showStarterRoute(p, filters, hideRoute)}

@@ -1,12 +1,11 @@
 <script>
   export let name, priority, power, type, damage_class, effect, stab
   import { capitalise } from '$lib/utils/string'
+
+  import { Tooltip, Icon } from '$c/core/'
   import TypeBadge from '$lib/components/type-badge.svelte'
-  import Tooltip from '$lib/components/core/Tooltip.svelte'
 
-  import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
-
-  import { Sword } from '$icons'
+  import { Sword, Boost } from '$icons'
   import { Asterisk as Info } from '$icons'
   import { Chevron as Priority, DoubleChevron as HighPriority } from '$icons'
 
@@ -33,18 +32,20 @@
     </span>
 
     {#if power}
-      <span class='font-bold text-sm inline-flex items-center'>
+      <span class='font-bold text-sm inline-flex relative items-center'>
         <!-- Icon -->
         <span class='relative'>
-          <Icon src={Sword} class='text-xs fill-current' />
+          <Icon inline icon={Sword} class='text-xs fill-current' />
         </span>
 
         <!-- Desktop power -->
         <span class='w-0 invisible sm:w-auto sm:visible relative'>
           {#if stab}
             <Tooltip>Base power {power}</Tooltip>
-            <Icon src={Priority} class='absolute left-1/2 -translate-x-1/2 -translate-y-1/2 fill-current ' />
-            <span class='font-bold cursor-help'>{Math.round(power * 1.5)}</span>
+            <Icon inline icon={Boost} class='absolute left-1/2 -translate-x-1/2 -translate-y-1/2 fill-current' />
+            <span class='font-bold cursor-help'>
+              {Math.round(power * 1.5)}
+            </span>
           {:else}
             {power}
           {/if}
@@ -69,15 +70,15 @@
     {#if priority > 0}
       <span class='flex flex-row dark:text-gray-200'>
         {#if priority > 3}
-          <Icon src={HighPriority} class='fill-current -mr-1.5' />
-          <Icon src={HighPriority} class='fill-current' />
+          <Icon inline icon={HighPriority} class='fill-current -mr-1.5' />
+          <Icon inline icon={HighPriority} class='fill-current' />
         {:else if priority > 2}
-          <Icon src={HighPriority} class='-mr-1.5 fill-current' />
-          <Icon src={Priority} class='fill-current' />
+          <Icon inline icon={HighPriority} class='-mr-1.5 fill-current' />
+          <Icon inline icon={Priority} class='fill-current' />
         {:else if priority > 1}
-          <Icon src={HighPriority} class='fill-current' />
+          <Icon inline icon={HighPriority} class='fill-current' />
         {:else}
-          <Icon src={Priority} class='fill-current' />
+          <Icon inline icon={Priority} class='fill-current' />
         {/if}
       </span>
     {/if}

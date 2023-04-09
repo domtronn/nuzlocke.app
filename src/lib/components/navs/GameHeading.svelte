@@ -36,7 +36,7 @@
   <title> Nuzlocke | {game?.name || ''} </title>
 </svelte:head>
 
-<nav>
+<nav class={$page.url.pathname.replace('/', '')}>
   <div class=p-container>
     <div class='inline-flex items-center'>
       <a
@@ -144,6 +144,17 @@
 
   :global(.dark) nav {
     @apply sm:text-gray-200;
+  }
+
+  :global(.dark) nav.graveyard,
+  nav.graveyard
+  {
+    @apply sm:bg-transparent;
+  }
+
+  :global(.dark) nav.graveyard::after,
+  nav.graveyard::after {
+    @apply sm:hidden;
   }
 
   h1 { @apply text-base sm:text-xl border-transparent border-b-2 transition -mb-1.5 sm:mb-0; }

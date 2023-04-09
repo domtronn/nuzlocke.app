@@ -1,4 +1,5 @@
 ---
+created: 2023-03-29
 description: This guide contains useful information the Fan Game <b>Unbound</b> Nuzlockes. It describes the story, some of the game's unique features, lists available Pokémon, the number of encounters, and detailed overviews of all Boss battles.
 ---
 

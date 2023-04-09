@@ -20420,7 +20420,8 @@
           ],
           "held": "leftovers"
         }
-      ]
+      ],
+      "doubleBattle": true
     },
     "6": {
       "name": "Winona",
@@ -20517,7 +20518,8 @@
           ],
           "held": "lum-berry"
         }
-      ]
+      ],
+      "doubleBattle": true
     },
     "7": {
       "name": "Tate & Liza",
@@ -20614,7 +20616,8 @@
           ],
           "held": "lum-berry"
         }
-      ]
+      ],
+      "doubleBattle": true
     },
     "red1": {
       "name": "Red",
@@ -21181,7 +21184,8 @@
           ],
           "held": "lum-berry"
         }
-      ]
+      ],
+      "tagBattle": true
     },
     "mc1": {
       "name": "Courtney",
@@ -21860,7 +21864,8 @@
           ],
           "held": "lum-berry"
         }
-      ]
+      ],
+      "doubleBattle": true
     },
     "w1": {
       "name": "Wally",
@@ -23615,7 +23620,8 @@
           ],
           "held": "lum-berry"
         }
-      ]
+      ],
+      "doubleBattle": true
     },
     "e1": {
       "name": "Sidney",
@@ -24602,7 +24608,7 @@
         },
         {
           "name": "bulbasaur",
-          "level": "8",
+          "level": "9",
           "moves": [
             "leech-seed",
             "tackle",
@@ -24616,7 +24622,7 @@
         },
         {
           "name": "charmander",
-          "level": "8",
+          "level": "9",
           "moves": [
             "ember",
             "scratch",
@@ -24630,7 +24636,7 @@
         },
         {
           "name": "squirtle",
-          "level": "8",
+          "level": "9",
           "moves": [
             "bubble",
             "tackle",
@@ -24689,7 +24695,7 @@
         },
         {
           "name": "bulbasaur",
-          "level": "17",
+          "level": "18",
           "moves": [
             "leech-seed",
             "vine-whip",
@@ -24704,7 +24710,7 @@
         },
         {
           "name": "charmander",
-          "level": "17",
+          "level": "18",
           "moves": [
             "ember",
             "scratch",
@@ -24719,7 +24725,7 @@
         },
         {
           "name": "squirtle",
-          "level": "17",
+          "level": "18",
           "moves": [
             "bubble",
             "water-gun",
@@ -25020,7 +25026,7 @@
           "level": "38",
           "moves": [
             "reflect",
-            "hypnosis",
+            "confusion",
             "leech-seed",
             "stun-spore"
           ],
@@ -25035,7 +25041,7 @@
           "level": "35",
           "moves": [
             "reflect",
-            "hypnosis",
+            "confusion",
             "leech-seed",
             "stun-spore"
           ],
@@ -37368,20 +37374,6 @@
       "img": "/leaders/dp-volkner",
       "pokemon": [
         {
-          "name": "raichu",
-          "level": "46",
-          "moves": [
-            "charge-beam",
-            "signal-beam",
-            "quick-attack",
-            "focus-blast"
-          ],
-          "ability": "static",
-          "abilities": [
-            "static"
-          ]
-        },
-        {
           "name": "jolteon",
           "level": "46",
           "moves": [
@@ -37393,6 +37385,20 @@
           "ability": "volt-absorb",
           "abilities": [
             "volt-absorb"
+          ]
+        },
+        {
+          "name": "raichu",
+          "level": "46",
+          "moves": [
+            "charge-beam",
+            "signal-beam",
+            "quick-attack",
+            "focus-blast"
+          ],
+          "ability": "static",
+          "abilities": [
+            "static"
           ]
         },
         {
@@ -37501,20 +37507,6 @@
       "img": "/leaders/dp-cyrus",
       "pokemon": [
         {
-          "name": "golbat",
-          "level": "34",
-          "moves": [
-            "air-cutter",
-            "poison-fang",
-            "supersonic",
-            "bite"
-          ],
-          "ability": "inner-focus",
-          "abilities": [
-            "inner-focus"
-          ]
-        },
-        {
           "name": "sneasel",
           "level": "34",
           "moves": [
@@ -37522,6 +37514,20 @@
             "slash",
             "quick-attack",
             "screech"
+          ],
+          "ability": "inner-focus",
+          "abilities": [
+            "inner-focus"
+          ]
+        },
+        {
+          "name": "golbat",
+          "level": "34",
+          "moves": [
+            "air-cutter",
+            "poison-fang",
+            "supersonic",
+            "bite"
           ],
           "ability": "inner-focus",
           "abilities": [
@@ -39091,7 +39097,6 @@
       ]
     }
   },
-  "pspm": {},
   "radred": {
     "1": {
       "name": "Brock",
@@ -44275,7 +44280,7 @@
           "held": "water-gem"
         }
       ],
-      "effect": "trick-room",
+      "info": "<p><b>Trick Room<b><br />There is a permanent Trick Room effect on the field</p>",
       "doubleBattle": true
     },
     "6_hard": {
@@ -44376,7 +44381,7 @@
           "sprite": "toxtricity-gmax"
         }
       ],
-      "effect": "tailwind"
+      "info": "<p><b>Tailwind</b><br />There is a permanent tailwind effect on Koga's side of the field</p>"
     },
     "7_hard": {
       "name": "Blaine",
@@ -44579,7 +44584,7 @@
           "held": "duraludite"
         }
       ],
-      "info": "<p><b>Purist</b> Unable to bring fairy types into the Fight<br /><b>Sticky terrain</b><br /> You can't remove hazards from the field</p>"
+      "info": "<p><b>Purist</b><br/> Unable to bring fairy types into the Fight<br /><b>Sticky terrain</b><br /> You can't remove hazards from the field</p>"
     },
     "1r_hard": {
       "name": "Brock",
@@ -44680,7 +44685,7 @@
           "sprite": "aerodactyl-mega"
         }
       ],
-      "info": "<p/<b>Cushioning</b><br /> Super Effective moves deal ⅓ less damage to Brock's Pokémon</p>",
+      "info": "<p><b>Cushioning</b><br /> Super Effective moves deal ⅓ less damage to Brock's Pokémon</p>",
       "effect": "sandstorm"
     },
     "2r_hard": {
@@ -44882,7 +44887,8 @@
           "sprite": "manectric-mega"
         }
       ],
-      "effect": "electric-terrain,info"
+      "info": "<p><b>Magnet Rise</b><br /> Lt. Surge's Pokémon are immune to Ground type attacks</p>",
+      "effect": "electric-terrain"
     },
     "4r_hard": {
       "name": "Erika",
@@ -45959,7 +45965,7 @@
           "sprite": "swampert-mega"
         }
       ],
-      "info": "<p/<b>Heavy rain</b><br />Lorelei's Pokémon are immune to Fire type attacks</p>",
+      "info": "<p><b>Heavy rain</b><br />Lorelei's Pokémon are immune to Fire type attacks</p>",
       "effect": "rain",
       "doubleBattle": true
     },
@@ -56512,7 +56518,7 @@
           "abilities": [
             "battle-armor"
           ],
-          "held": "silverpowder"
+          "held": "silver-powder"
         },
         {
           "name": "lileep",
@@ -56998,11 +57004,11 @@
             "dazzling-gleam",
             "ice-beam"
           ],
-          "ability": "life-orb",
+          "ability": "magic-guard",
           "abilities": [
-            "life-orb"
+            "magic-guard"
           ],
-          "held": "magic-guard"
+          "held": "life-orb"
         },
         {
           "name": "gyarados",
@@ -57293,7 +57299,7 @@
           "held": "wise-glasses"
         },
         {
-          "name": "darmanitan",
+          "name": "darmanitan-standard",
           "level": "35",
           "moves": [
             "flare-blitz",
@@ -57420,7 +57426,7 @@
           "held": "sitrus-berry"
         },
         {
-          "name": "darmanitan",
+          "name": "darmanitan-standard",
           "level": "35",
           "moves": [
             "flare-blitz",
@@ -57876,7 +57882,7 @@
           "held": "focus-sash"
         },
         {
-          "name": "darmanitan",
+          "name": "darmanitan-standard",
           "level": "48",
           "moves": [
             "flare-blitz",
@@ -58198,9 +58204,9 @@
             "stone-edge",
             "body-slam"
           ],
-          "ability": "focus-sash",
+          "ability": "solid-rock",
           "abilities": [
-            "focus-sash"
+            "solid-rock"
           ],
           "held": "focus-sash"
         },
@@ -58314,9 +58320,9 @@
             "blizzard",
             "earth-power"
           ],
-          "ability": "life-orb",
+          "ability": "rivalry",
           "abilities": [
-            "life-orb"
+            "rivalry"
           ],
           "held": "life-orb"
         },
@@ -58536,6 +58542,53 @@
             "speed-boost"
           ],
           "held": "sharpedonite"
+        }
+      ]
+    },
+    "r1": {
+      "name": "Rival",
+      "speciality": "",
+      "img": {
+        "src": "/leaders/rs-may-oras",
+        "author": "Hyo",
+        "link": "https://www.deviantart.com/hyo-oppa"
+      },
+      "pokemon": [
+        {
+          "name": "torchic",
+          "level": "5",
+          "moves": [
+            "scratch"
+          ],
+          "ability": "blaze",
+          "abilities": [
+            "blaze"
+          ],
+          "starter": "grass"
+        },
+        {
+          "name": "mudkip",
+          "level": "5",
+          "moves": [
+            "tackle"
+          ],
+          "ability": "torrent",
+          "abilities": [
+            "torrent"
+          ],
+          "starter": "fire"
+        },
+        {
+          "name": "treecko",
+          "level": "5",
+          "moves": [
+            "pound"
+          ],
+          "ability": "overgrow",
+          "abilities": [
+            "overgrow"
+          ],
+          "starter": "water"
         }
       ]
     },
@@ -59228,9 +59281,9 @@
             "signal-beam",
             "thunder-wave"
           ],
-          "ability": "air-balloon",
+          "ability": "sturdy",
           "abilities": [
-            "air-balloon"
+            "sturdy"
           ],
           "held": "air-balloon"
         },
@@ -59407,7 +59460,7 @@
           "held": "expert-belt"
         },
         {
-          "name": "gourgeist",
+          "name": "gourgeist-large",
           "level": "71",
           "moves": [
             "petal-blizzard",
@@ -65288,7 +65341,7 @@
       ]
     },
     "ariana1": {
-      "name": "Executive Ariana & Grunt",
+      "name": "Executive Ariana",
       "speciality": "",
       "img": "/leaders/gs-ariana",
       "pokemon": [
@@ -68261,7 +68314,7 @@
           "name": "veluza",
           "level": "29",
           "moves": [
-            "splash",
+            "slash",
             "pluck",
             "aqua-cutter"
           ],
@@ -73247,6 +73300,11 @@
     "1": {
       "name": "Mirskle",
       "speciality": "grass",
+      "img": {
+        "src": "/leaders/unbound-mirskle",
+        "author": "Ubound Team",
+        "link": "https://www.pokecommunity.com/showthread.php?t=382178"
+      },
       "pokemon": [
         {
           "name": "floette",
@@ -73298,6 +73356,11 @@
     "2": {
       "name": "Vega",
       "speciality": "dark",
+      "img": {
+        "src": "/leaders/unbound-vega",
+        "author": "Ubound Team",
+        "link": "https://www.pokecommunity.com/showthread.php?t=382178"
+      },
       "pokemon": [
         {
           "name": "liepard",
@@ -73348,6 +73411,11 @@
     "3": {
       "name": "Alice",
       "speciality": "flying",
+      "img": {
+        "src": "/leaders/unbound-alice",
+        "author": "Ubound Team",
+        "link": "https://www.pokecommunity.com/showthread.php?t=382178"
+      },
       "pokemon": [
         {
           "name": "dodrio",
@@ -73412,6 +73480,11 @@
     "4": {
       "name": "Mel",
       "speciality": "normal",
+      "img": {
+        "src": "/leaders/unbound-mel",
+        "author": "Ubound Team",
+        "link": "https://www.pokecommunity.com/showthread.php?t=382178"
+      },
       "pokemon": [
         {
           "name": "bewear",
@@ -73476,6 +73549,11 @@
     "5": {
       "name": "Galavan",
       "speciality": "electric",
+      "img": {
+        "src": "/leaders/unbound-galavan",
+        "author": "Ubound Team",
+        "link": "https://www.pokecommunity.com/showthread.php?t=382178"
+      },
       "pokemon": [
         {
           "name": "golem-alola",
@@ -73558,6 +73636,11 @@
     "6": {
       "name": "Big Mo",
       "speciality": "fighting",
+      "img": {
+        "src": "/leaders/unbound-big-mo",
+        "author": "Ubound Team",
+        "link": "https://www.pokecommunity.com/showthread.php?t=382178-mo"
+      },
       "pokemon": [
         {
           "name": "conkeldurr",
@@ -73639,6 +73722,11 @@
     "7": {
       "name": "Tessy",
       "speciality": "water",
+      "img": {
+        "src": "/leaders/unbound-tessy",
+        "author": "Ubound Team",
+        "link": "https://www.pokecommunity.com/showthread.php?t=382178"
+      },
       "pokemon": [
         {
           "name": "toxapex",
@@ -73721,6 +73809,11 @@
     "8": {
       "name": "Benjamin",
       "speciality": "bug",
+      "img": {
+        "src": "/leaders/unbound-benjamin",
+        "author": "Ubound Team",
+        "link": "https://www.pokecommunity.com/showthread.php?t=382178"
+      },
       "pokemon": [
         {
           "name": "araquanid",
@@ -73801,6 +73894,11 @@
     "r1": {
       "name": "Rival",
       "speciality": "",
+      "img": {
+        "src": "/leaders/unbound-axelrod",
+        "author": "Ubound Team",
+        "link": "https://www.pokecommunity.com/showthread.php?t=382178"
+      },
       "pokemon": [
         {
           "name": "larvitar",
@@ -73850,6 +73948,11 @@
     "r2": {
       "name": "Rival",
       "speciality": "",
+      "img": {
+        "src": "/leaders/unbound-axelrod",
+        "author": "Ubound Team",
+        "link": "https://www.pokecommunity.com/showthread.php?t=382178"
+      },
       "pokemon": [
         {
           "name": "swinub",
@@ -73914,6 +74017,11 @@
     "r3": {
       "name": "Rival",
       "speciality": "",
+      "img": {
+        "src": "/leaders/unbound-axelrod",
+        "author": "Ubound Team",
+        "link": "https://www.pokecommunity.com/showthread.php?t=382178"
+      },
       "pokemon": [
         {
           "name": "toucannon",
@@ -73993,6 +74101,11 @@
     "r4": {
       "name": "Rival",
       "speciality": "",
+      "img": {
+        "src": "/leaders/unbound-axelrod",
+        "author": "Ubound Team",
+        "link": "https://www.pokecommunity.com/showthread.php?t=382178"
+      },
       "pokemon": [
         {
           "name": "toucannon",
@@ -74134,6 +74247,11 @@
     "r5": {
       "name": "Rival",
       "speciality": "",
+      "img": {
+        "src": "/leaders/unbound-axelrod",
+        "author": "Ubound Team",
+        "link": "https://www.pokecommunity.com/showthread.php?t=382178"
+      },
       "pokemon": [
         {
           "name": "toucannon",
@@ -74278,6 +74396,11 @@
     "r1_exp": {
       "name": "Rival",
       "speciality": "",
+      "img": {
+        "src": "/leaders/unbound-axelrod",
+        "author": "Ubound Team",
+        "link": "https://www.pokecommunity.com/showthread.php?t=382178"
+      },
       "pokemon": [
         {
           "name": "larvitar",
@@ -74329,6 +74452,11 @@
     "r2_exp": {
       "name": "Rival",
       "speciality": "",
+      "img": {
+        "src": "/leaders/unbound-axelrod",
+        "author": "Ubound Team",
+        "link": "https://www.pokecommunity.com/showthread.php?t=382178"
+      },
       "pokemon": [
         {
           "name": "swinub",
@@ -74394,6 +74522,11 @@
     "r3_exp": {
       "name": "Rival",
       "speciality": "",
+      "img": {
+        "src": "/leaders/unbound-axelrod",
+        "author": "Ubound Team",
+        "link": "https://www.pokecommunity.com/showthread.php?t=382178"
+      },
       "pokemon": [
         {
           "name": "toucannon",
@@ -74473,6 +74606,11 @@
     "r4_exp": {
       "name": "Rival",
       "speciality": "",
+      "img": {
+        "src": "/leaders/unbound-axelrod",
+        "author": "Ubound Team",
+        "link": "https://www.pokecommunity.com/showthread.php?t=382178"
+      },
       "pokemon": [
         {
           "name": "mamoswine",
@@ -74616,6 +74754,11 @@
     "r5_exp": {
       "name": "Rival",
       "speciality": "",
+      "img": {
+        "src": "/leaders/unbound-axelrod",
+        "author": "Ubound Team",
+        "link": "https://www.pokecommunity.com/showthread.php?t=382178"
+      },
       "pokemon": [
         {
           "name": "mamoswine",
@@ -74846,6 +74989,11 @@
     "1_exp": {
       "name": "Mirskle",
       "speciality": "grass",
+      "img": {
+        "src": "/leaders/unbound-mirskle",
+        "author": "Ubound Team",
+        "link": "https://www.pokecommunity.com/showthread.php?t=382178"
+      },
       "pokemon": [
         {
           "name": "floette",
@@ -74914,6 +75062,11 @@
     "2_exp": {
       "name": "Vega",
       "speciality": "dark",
+      "img": {
+        "src": "/leaders/unbound-vega",
+        "author": "Ubound Team",
+        "link": "https://www.pokecommunity.com/showthread.php?t=382178"
+      },
       "pokemon": [
         {
           "name": "liepard",
@@ -74979,6 +75132,11 @@
     "3_exp": {
       "name": "Alice",
       "speciality": "flying",
+      "img": {
+        "src": "/leaders/unbound-alice",
+        "author": "Ubound Team",
+        "link": "https://www.pokecommunity.com/showthread.php?t=382178"
+      },
       "pokemon": [
         {
           "name": "minior-red",
@@ -75060,6 +75218,11 @@
     "4_exp": {
       "name": "Mel",
       "speciality": "normal",
+      "img": {
+        "src": "/leaders/unbound-mel",
+        "author": "Ubound Team",
+        "link": "https://www.pokecommunity.com/showthread.php?t=382178"
+      },
       "pokemon": [
         {
           "name": "bewear",
@@ -75141,6 +75304,11 @@
     "5_exp": {
       "name": "Galavan",
       "speciality": "electric",
+      "img": {
+        "src": "/leaders/unbound-galavan",
+        "author": "Ubound Team",
+        "link": "https://www.pokecommunity.com/showthread.php?t=382178"
+      },
       "pokemon": [
         {
           "name": "bronzong",
@@ -75224,6 +75392,11 @@
     "6_exp": {
       "name": "Big Mo",
       "speciality": "fighting",
+      "img": {
+        "src": "/leaders/unbound-big-mo",
+        "author": "Ubound Team",
+        "link": "https://www.pokecommunity.com/showthread.php?t=382178-mo"
+      },
       "pokemon": [
         {
           "name": "mudsdale",
@@ -75306,6 +75479,11 @@
     "7_exp": {
       "name": "Tessy",
       "speciality": "water",
+      "img": {
+        "src": "/leaders/unbound-tessy",
+        "author": "Ubound Team",
+        "link": "https://www.pokecommunity.com/showthread.php?t=382178"
+      },
       "pokemon": [
         {
           "name": "toxapex",
@@ -75404,6 +75582,11 @@
     "8_exp": {
       "name": "Benjamin",
       "speciality": "bug",
+      "img": {
+        "src": "/leaders/unbound-benjamin",
+        "author": "Ubound Team",
+        "link": "https://www.pokecommunity.com/showthread.php?t=382178"
+      },
       "pokemon": [
         {
           "name": "araquanid",
@@ -75501,6 +75684,11 @@
     "e1": {
       "name": "Moleman",
       "speciality": "ground",
+      "img": {
+        "src": "/leaders/unbound-moleman",
+        "author": "Ubound Team",
+        "link": "https://www.pokecommunity.com/showthread.php?t=382178"
+      },
       "pokemon": [
         {
           "name": "excadrill",
@@ -75582,6 +75770,11 @@
     "e2": {
       "name": "Elias",
       "speciality": "ghost",
+      "img": {
+        "src": "/leaders/unbound-elias",
+        "author": "Ubound Team",
+        "link": "https://www.pokecommunity.com/showthread.php?t=382178"
+      },
       "pokemon": [
         {
           "name": "mimikyu-disguised",
@@ -75663,6 +75856,11 @@
     "e3": {
       "name": "Arabella",
       "speciality": "fairy",
+      "img": {
+        "src": "/leaders/unbound-arrabella",
+        "author": "Ubound Team",
+        "link": "https://www.pokecommunity.com/showthread.php?t=382178"
+      },
       "pokemon": [
         {
           "name": "ribombee",
@@ -75744,6 +75942,11 @@
     "e4": {
       "name": "Penny",
       "speciality": "dragon",
+      "img": {
+        "src": "/leaders/unbound-penny",
+        "author": "Ubound Team",
+        "link": "https://www.pokecommunity.com/showthread.php?t=382178"
+      },
       "pokemon": [
         {
           "name": "goodra",
@@ -75825,6 +76028,11 @@
     "c": {
       "name": "Jax",
       "speciality": "",
+      "img": {
+        "src": "/leaders/unbound-jax",
+        "author": "Ubound Team",
+        "link": "https://www.pokecommunity.com/showthread.php?t=382178"
+      },
       "pokemon": [
         {
           "name": "salamence",
@@ -75923,6 +76131,11 @@
     "e1_exp": {
       "name": "Moleman",
       "speciality": "ground",
+      "img": {
+        "src": "/leaders/unbound-moleman",
+        "author": "Ubound Team",
+        "link": "https://www.pokecommunity.com/showthread.php?t=382178"
+      },
       "pokemon": [
         {
           "name": "excadrill",
@@ -76020,6 +76233,11 @@
     "e2_exp": {
       "name": "Elias",
       "speciality": "ghost",
+      "img": {
+        "src": "/leaders/unbound-elias",
+        "author": "Ubound Team",
+        "link": "https://www.pokecommunity.com/showthread.php?t=382178"
+      },
       "pokemon": [
         {
           "name": "mimikyu-disguised",
@@ -76116,6 +76334,11 @@
     "e3_exp": {
       "name": "Arabella",
       "speciality": "fairy",
+      "img": {
+        "src": "/leaders/unbound-arrabella",
+        "author": "Ubound Team",
+        "link": "https://www.pokecommunity.com/showthread.php?t=382178"
+      },
       "pokemon": [
         {
           "name": "ribombee",
@@ -76213,6 +76436,11 @@
     "e4_exp": {
       "name": "Penny",
       "speciality": "dragon",
+      "img": {
+        "src": "/leaders/unbound-penny",
+        "author": "Ubound Team",
+        "link": "https://www.pokecommunity.com/showthread.php?t=382178"
+      },
       "pokemon": [
         {
           "name": "goodra",
@@ -76310,6 +76538,11 @@
     "c_exp": {
       "name": "Jax",
       "speciality": "",
+      "img": {
+        "src": "/leaders/unbound-jax",
+        "author": "Ubound Team",
+        "link": "https://www.pokecommunity.com/showthread.php?t=382178"
+      },
       "pokemon": [
         {
           "name": "salamence",
@@ -76407,6 +76640,12 @@
     },
     "lr1": {
       "name": "Ruin Agent Vega & Grunt",
+      "speciality": "",
+      "img": {
+        "src": "/leaders/unbound-vega-grunt",
+        "author": "Ubound Team",
+        "link": "https://www.pokecommunity.com/showthread.php?t=382178"
+      },
       "pokemon": [
         {
           "name": "liepard",
@@ -76500,6 +76739,12 @@
     },
     "lr2": {
       "name": "Ruin Leader Aklove",
+      "speciality": "",
+      "img": {
+        "src": "/leaders/unbound-aklove",
+        "author": "Ubound Team",
+        "link": "https://www.pokecommunity.com/showthread.php?t=382178"
+      },
       "pokemon": [
         {
           "name": "klefki",
@@ -76578,6 +76823,12 @@
     },
     "lr3": {
       "name": "Ruin Admin Ivory",
+      "speciality": "",
+      "img": {
+        "src": "/leaders/unbound-ivory",
+        "author": "Ubound Team",
+        "link": "https://www.pokecommunity.com/showthread.php?t=382178"
+      },
       "pokemon": [
         {
           "name": "toxicroak",
@@ -76656,6 +76907,12 @@
     },
     "lr4": {
       "name": "Ruin Leader Aklove",
+      "speciality": "",
+      "img": {
+        "src": "/leaders/unbound-aklove",
+        "author": "Ubound Team",
+        "link": "https://www.pokecommunity.com/showthread.php?t=382178"
+      },
       "pokemon": [
         {
           "name": "klefki",
@@ -76735,6 +76992,12 @@
     },
     "lr5": {
       "name": "Ruin Leader Aklove",
+      "speciality": "",
+      "img": {
+        "src": "/leaders/unbound-aklove",
+        "author": "Ubound Team",
+        "link": "https://www.pokecommunity.com/showthread.php?t=382178"
+      },
       "pokemon": [
         {
           "name": "klefki",
@@ -76831,6 +77094,12 @@
     },
     "lr1_exp": {
       "name": "Ruin Agent Vega & Grunt",
+      "speciality": "",
+      "img": {
+        "src": "/leaders/unbound-vega-grunt",
+        "author": "Ubound Team",
+        "link": "https://www.pokecommunity.com/showthread.php?t=382178"
+      },
       "pokemon": [
         {
           "name": "liepard",
@@ -76927,6 +77196,12 @@
     },
     "lr2_exp": {
       "name": "Ruin Leader Aklove",
+      "speciality": "",
+      "img": {
+        "src": "/leaders/unbound-aklove",
+        "author": "Ubound Team",
+        "link": "https://www.pokecommunity.com/showthread.php?t=382178"
+      },
       "pokemon": [
         {
           "name": "klefki",
@@ -77022,6 +77297,12 @@
     },
     "lr3_exp": {
       "name": "Ruin Admin Ivory",
+      "speciality": "",
+      "img": {
+        "src": "/leaders/unbound-ivory",
+        "author": "Ubound Team",
+        "link": "https://www.pokecommunity.com/showthread.php?t=382178"
+      },
       "pokemon": [
         {
           "name": "toxicroak",
@@ -77117,6 +77398,12 @@
     },
     "lr4_exp": {
       "name": "Ruin Leader Aklove",
+      "speciality": "",
+      "img": {
+        "src": "/leaders/unbound-aklove",
+        "author": "Ubound Team",
+        "link": "https://www.pokecommunity.com/showthread.php?t=382178"
+      },
       "pokemon": [
         {
           "name": "togedemaru",
@@ -77211,6 +77498,12 @@
     },
     "lr5_exp": {
       "name": "Ruin Leader Aklove",
+      "speciality": "",
+      "img": {
+        "src": "/leaders/unbound-aklove",
+        "author": "Ubound Team",
+        "link": "https://www.pokecommunity.com/showthread.php?t=382178"
+      },
       "pokemon": [
         {
           "name": "meloetta-aria",
@@ -77307,6 +77600,12 @@
     },
     "sh1": {
       "name": "Shadow Admin Marlon & Grunt",
+      "speciality": "",
+      "img": {
+        "src": "/leaders/unbound-marlong-grunt",
+        "author": "Ubound Team",
+        "link": "https://www.pokecommunity.com/showthread.php?t=382178"
+      },
       "pokemon": [
         {
           "name": "duskull",
@@ -77369,6 +77668,12 @@
     },
     "sh2": {
       "name": "Shadow Admin Ivory",
+      "speciality": "",
+      "img": {
+        "src": "/leaders/unbound-ivory",
+        "author": "Ubound Team",
+        "link": "https://www.pokecommunity.com/showthread.php?t=382178"
+      },
       "pokemon": [
         {
           "name": "misdreavus",
@@ -77416,6 +77721,12 @@
     },
     "sh3": {
       "name": "Shadow Boss Zeph",
+      "speciality": "",
+      "img": {
+        "src": "/leaders/unbound-zeph",
+        "author": "Ubound Team",
+        "link": "https://www.pokecommunity.com/showthread.php?t=382178"
+      },
       "pokemon": [
         {
           "name": "houndoom",
@@ -77437,6 +77748,12 @@
     },
     "sh4": {
       "name": "Shadow Admin Ivory & Grunt",
+      "speciality": "",
+      "img": {
+        "src": "/leaders/unbound-ivory-grunt",
+        "author": "Ubound Team",
+        "link": "https://www.pokecommunity.com/showthread.php?t=382178"
+      },
       "pokemon": [
         {
           "name": "incineroar",
@@ -77513,6 +77830,12 @@
     },
     "sh5": {
       "name": "Shadow Admin Marlon",
+      "speciality": "",
+      "img": {
+        "src": "/leaders/unbound-marlon",
+        "author": "Ubound Team",
+        "link": "https://www.pokecommunity.com/showthread.php?t=382178"
+      },
       "pokemon": [
         {
           "name": "zapdos",
@@ -77591,6 +77914,12 @@
     },
     "sh6": {
       "name": "Shadow Boss Zeph",
+      "speciality": "",
+      "img": {
+        "src": "/leaders/unbound-ivory-zeph",
+        "author": "Ubound Team",
+        "link": "https://www.pokecommunity.com/showthread.php?t=382178"
+      },
       "pokemon": [
         {
           "name": "mightyena",
@@ -77668,6 +77997,12 @@
     },
     "sh7": {
       "name": "Ex-Shadow Admin Marlon",
+      "speciality": "",
+      "img": {
+        "src": "/leaders/unbound-marlon",
+        "author": "Ubound Team",
+        "link": "https://www.pokecommunity.com/showthread.php?t=382178"
+      },
       "pokemon": [
         {
           "name": "krookodile",
@@ -77748,6 +78083,12 @@
     },
     "sh1_exp": {
       "name": "Shadow Admin Marlon & Grunt",
+      "speciality": "",
+      "img": {
+        "src": "/leaders/unbound-marlong-grunt",
+        "author": "Ubound Team",
+        "link": "https://www.pokecommunity.com/showthread.php?t=382178"
+      },
       "pokemon": [
         {
           "name": "duskull",
@@ -77825,6 +78166,12 @@
     },
     "sh2_exp": {
       "name": "Shadow Admin Ivory",
+      "speciality": "",
+      "img": {
+        "src": "/leaders/unbound-ivory",
+        "author": "Ubound Team",
+        "link": "https://www.pokecommunity.com/showthread.php?t=382178"
+      },
       "pokemon": [
         {
           "name": "misdreavus",
@@ -77874,6 +78221,12 @@
     },
     "sh3_exp": {
       "name": "Shadow Boss Zeph",
+      "speciality": "",
+      "img": {
+        "src": "/leaders/unbound-zeph",
+        "author": "Ubound Team",
+        "link": "https://www.pokecommunity.com/showthread.php?t=382178"
+      },
       "pokemon": [
         {
           "name": "houndoom",
@@ -77895,6 +78248,12 @@
     },
     "sh4_exp": {
       "name": "Shadow Admin Ivory & Grunt",
+      "speciality": "",
+      "img": {
+        "src": "/leaders/unbound-ivory-grunt",
+        "author": "Ubound Team",
+        "link": "https://www.pokecommunity.com/showthread.php?t=382178"
+      },
       "pokemon": [
         {
           "name": "incineroar",
@@ -77973,6 +78332,12 @@
     },
     "sh5_exp": {
       "name": "Shadow Admin Marlon",
+      "speciality": "",
+      "img": {
+        "src": "/leaders/unbound-marlon",
+        "author": "Ubound Team",
+        "link": "https://www.pokecommunity.com/showthread.php?t=382178"
+      },
       "pokemon": [
         {
           "name": "zapdos",
@@ -78052,6 +78417,12 @@
     },
     "sh6_exp": {
       "name": "Shadow Boss Zeph",
+      "speciality": "",
+      "img": {
+        "src": "/leaders/unbound-zeph",
+        "author": "Ubound Team",
+        "link": "https://www.pokecommunity.com/showthread.php?t=382178"
+      },
       "pokemon": [
         {
           "name": "mightyena",
@@ -78131,6 +78502,12 @@
     },
     "sh7_exp": {
       "name": "Ex-Shadow Admin Marlon",
+      "speciality": "",
+      "img": {
+        "src": "/leaders/unbound-marlon",
+        "author": "Ubound Team",
+        "link": "https://www.pokecommunity.com/showthread.php?t=382178"
+      },
       "pokemon": [
         {
           "name": "sableye",
@@ -78227,6 +78604,11 @@
     "mb1": {
       "name": "Successor Maxima",
       "speciality": "fairy",
+      "img": {
+        "src": "/leaders/unbound-maxima",
+        "author": "Ubound Team",
+        "link": "https://www.pokecommunity.com/showthread.php?t=382178"
+      },
       "pokemon": [
         {
           "name": "wigglytuff",
@@ -78305,6 +78687,11 @@
     "mb1_exp": {
       "name": "Successor Maxima",
       "speciality": "fairy",
+      "img": {
+        "src": "/leaders/unbound-maxima",
+        "author": "Ubound Team",
+        "link": "https://www.pokecommunity.com/showthread.php?t=382178"
+      },
       "pokemon": [
         {
           "name": "wigglytuff",

@@ -1,4 +1,5 @@
 ---
+created: 2023-03-29
 ---
 
 Emerald Kaizo is a popular rom hack of the original Pokémon Emerald game. It is known for being much more difficult than the base game, with tougher trainers, stronger wild Pokémon, and modified gym leaders. 

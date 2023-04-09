@@ -50,11 +50,11 @@ export async function load ({ params, url, fetch }) {
       else return res.json()
     })
   const [pokemon, route, fire, water, grass] = await Promise.all([
-    fetchJson(`/api/${gameCfg.pid}/pokemon.json`),
+    fetchJson(`/api/pokemon/${gameCfg.pid}.json`),
     fetchJson(`/api/route/${gameCfg.pid}.json`),
-    fetchJson(`/league/${gameCfg.pid}.fire.json`),
-    fetchJson(`/league/${gameCfg.pid}.water.json`),
-    fetchJson(`/league/${gameCfg.pid}.grass.json`),
+    fetchJson(`/api/league/${gameCfg.pid}.fire.json`),
+    fetchJson(`/api/league/${gameCfg.pid}.water.json`),
+    fetchJson(`/api/league/${gameCfg.pid}.grass.json`),
   ])
 
   const findPokemon = id => pokemon.find(p =>

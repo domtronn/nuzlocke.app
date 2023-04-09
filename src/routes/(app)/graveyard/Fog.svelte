@@ -70,7 +70,7 @@
     100% { transform: translateX(-50%); }
   }
 
-  .fog { z-index: 99999; }
+  .fog { z-index: -1000; }
 
   .animate-slow { animation: anim-slow 70s linear infinite; }
   .animate { animation: anim 40s linear infinite; }

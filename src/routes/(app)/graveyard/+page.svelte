@@ -24,7 +24,6 @@
   })
 
   // TODO: Bind all the death data to the fields in the form :vomit:
-  // TODO: Dispatch the poemon upate/patch event
 
   let box = {}, gameStore
   activeGame.subscribe(gameId => {
@@ -125,22 +124,6 @@
 {/if}
 
 <style>
-  :global(.row--0 div:nth-child(3n) .tombstone),
-  :global(.row--1 div:nth-child(5n - 1) .tombstone),
-  :global(.row--2 div:nth-child(4n + 2) .tombstone),
-  :global(.row--3 div:nth-child(2n + 3) .tombstone),
-  :global(.row--4 div:nth-child(2n - 1) .tombstone),
-  :global(.row--5 div:nth-child(5n - 4) .tombstone)
-  {
-    @apply !-ml-1;
-    transform: translate(var(--tw-translate-x),var(--tw-translate-y))
-               rotate(2deg)
-               skewX(var(--tw-skew-x))
-               skewY(var(--tw-skew-y))
-               scaleX(-1)
-               scaleY(var(--tw-scale-y)) !important;
-  }
-
   @media (max-width: theme('screens.md')) {
     main {
       height: calc(100vh - 38px);
