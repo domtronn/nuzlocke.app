@@ -43,8 +43,8 @@
         <span class='w-0 invisible sm:w-auto sm:visible relative'>
           {#if stab}
             <Tooltip>Base power {power}</Tooltip>
-            <Icon src={Priority} class='absolute left-1/2 -translate-x-1/2 -translate-y-1/2 fill-current' />
-            <span class='font-bold'>{Math.round(power * 1.5)}</span>
+            <Icon src={Priority} class='absolute left-1/2 -translate-x-1/2 -translate-y-1/2 fill-current ' />
+            <span class='font-bold cursor-help'>{Math.round(power * 1.5)}</span>
           {:else}
             {power}
           {/if}

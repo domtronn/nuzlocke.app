@@ -62,7 +62,7 @@
         {capitalise(regionise(name))}
 
         {#if held}
-          <div class='absolute right-0 -bottom-0.5 translate-x-full z-20 p-1 mb-1 flex flex-col cursor-help items-center'>
+          <div class='absolute right-0 -bottom-0.5 translate-x-full z-20 p-1 mb-1 flex flex-col cursor-help items-center pointer-events-auto'>
             <Tooltip>
               {held.name}: {held.effect?.replace(/^Held: +/g, '')}
             </Tooltip>
@@ -117,7 +117,7 @@
       style='border-color: {color(types[0], themeId)}'
       class='relative flex flex-col-reverse md:flex-row md:inline-flex bg-white dark:bg-gray-900 border-t-2 sm:items-center rounded-b-lg z-10'>
       {#if moves && moves.length}
-        <div class='grid grid-cols-2 my-3 ml-4 gap-x-4 gap-y-0 lg:gap-y-3'>
+        <div class='flex-2 grid grid-cols-2 my-3 ml-4 gap-x-4 gap-y-0 lg:gap-y-3'>
           {#each moves.filter(m => !isEmpty(m)) as m}
             <MoveCard {...m} stab={types.includes(m.type)} />
           {/each}
@@ -128,7 +128,7 @@
           <slot name='stats' />
         {:else}
           <StatBlock
-            class='grid-cols-20 mt-4 md:mt-3 w-auto grow mx-4'
+            class='grid-cols-20 flex-1 mt-4 md:mt-3 w-auto grow mx-4'
             col={color(types[0], themeId)}
             nature={nature}
             max={maxStat}
