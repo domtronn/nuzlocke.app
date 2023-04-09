@@ -24,7 +24,7 @@
     setTeam = (data) => gameStore.update(patch({ __team: data }))
   }
 
-  const locid = (evt) => evt.detail.data.locationId || evt.detail.data.location
+  const locid = (evt) => evt.detail.data.customId || evt.detail.data.location
   const toarray = (data) => teamData ? [].concat(teamData) : []
 
   const onteamadd = (evt) => {

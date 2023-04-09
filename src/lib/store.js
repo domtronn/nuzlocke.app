@@ -171,9 +171,8 @@ export const readTeam = (data) => {
 }
 
 export const readBox = (data) => {
-  const customMap = Object.fromEntries(
-    (data.__custom || []).map(m => [m.id, m])
-  )
+  const customIdMap = toObj(data.__custom, 'id')
+  const customLocMap = toObj(data.__custom, 'name')
 
   return Object.values(data)
     .filter((i) => i.pokemon)

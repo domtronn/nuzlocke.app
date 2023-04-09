@@ -137,7 +137,7 @@
   }
 
   /** Team management */
-  const locid = p => p?.locationId || p?.location
+  const locid = p => p?.customId || p?.location
   function handleTeamAdd (p) {
     gameStore.update(patch({ __team: (teamData || []).filter(i => i !== locid(p)).concat(locid(p)) }))
   }
@@ -328,23 +328,22 @@
                       src={Deceased}
                       borderless
                       />
+                    {#if !teamData || teamData?.length < 6 || teamData?.includes(p.location)}
+                      <IconButton
+                        className='translate-y-1 transform scale-125'
+                        borderless
+                        src={Ball}
+                        title='{teamData?.includes(locid(p)) ? `Remove` : `Add`} {p.pokemon} {teamData?.includes(locid(p)) ? `from` : `to`} your team'
+                        on:click={(teamData?.includes(locid(p)) ? handleTeamRemove : handleTeamAdd).bind({}, p)}
+                        >
+                        {#if teamData?.includes(locid(p))}
+                          <Icon class='absolute transform scale-75 right-0.5 top-2 bg-white dark:bg-gray-900 rounded-full' inline icon={Minus} />
+                        {:else}
+                          <Icon class='absolute transform scale-75 right-0.5 top-2 bg-white dark:bg-gray-900 rounded-full' inline icon={Plus} />
+                        {/if}
+                      </IconButton>
+                    {/if}  
                   </div>
-                  {#if !teamData || teamData?.length < 6 || teamData?.includes(p.location)}
-      <IconButton
-        className='translate-y-1 transform scale-125'
-        borderless
-        src={Ball}
-        title='{teamData?.includes(locid(p)) ? `Remove` : `Add`} {p.pokemon} {teamData?.includes(locid(p)) ? `from` : `to`} your team'
-        on:click={(teamData?.includes(locid(p)) ? handleTeamRemove : handleTeamAdd).bind({}, p)}
-        >
-        {#if teamData?.includes(locid(p))}
-          <Icon class='absolute transform scale-75 right-0.5 top-2 bg-white dark:bg-gray-900 rounded-full' inline icon={Minus} />
-        {:else}
-          <Icon class='absolute transform scale-75 right-0.5 top-2 bg-white dark:bg-gray-900 rounded-full' inline icon={Plus} />
-        {/if}
-      </IconButton>
-    {/if}  
-
                 </span>
               </PokemonCard>
             </span>
