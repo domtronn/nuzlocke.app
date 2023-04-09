@@ -15,7 +15,7 @@
     if (!e.clipboardData.types.includes('text/plain')) return
 
     const text = e.clipboardData.getData('text/plain')
-    vals = text.slice(0, 8)
+    vals = text.slice(0, 8).split('')
     refs[Math.min(text.length - 1, 7)]?.focus()
   }
 
