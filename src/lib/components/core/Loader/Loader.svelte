@@ -2,7 +2,7 @@
   import { PIcon } from '$lib/components/core'
 </script>
 
-<div class='absolute flex items-center justify-center -translate-y-full top-1/2 left-1/2 -translate-x-1/2 transform scale-150'>
+<div class='absolute flex items-center justify-center -translate-y-full top-1/2 left-1/2 -translate-x-1/2 transform scale-150 {$$restProps.class || ''}'>
 
   <div class=spin>
     <PIcon className='absolute -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2' type=item name=poke-ball />
