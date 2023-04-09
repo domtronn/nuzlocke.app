@@ -9,8 +9,6 @@
   import { GameRoute, Search } from '$lib/components/Game'
   import { Settings } from '$lib/components/Settings'
 
-  import SideNav from '$lib/components/navs/SideNav.svelte'
-
   import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
   import { Arrow, Hide } from '$icons'
 
@@ -130,21 +128,6 @@
 
     <div class="flex flex-row flex-wrap pb-16 justify-center snap-start bg-white dark:bg-gray-800">
       <main id='main' class="p-container md:py-6 flex flex-col gap-y-4 relative ">
-
-          <SideNav
-            bind:show={show}
-            on:nav={routeEl.setnav}
-            route={route}
-          >
-            <button
-              slot='continue'
-              class='text-sm underline inline-flex items-center -ml-6 transition-colors dark:hover:text-gray-200 hover:text-black'
-              on:click={oncontinue(route, gameData)}
-            >
-              <Icon inline={true} height='1.2rem' class='fill-current mr-1' icon={Arrow} />
-              Continue at {latestnav(route, gameData).name}
-            </button>
-          </SideNav>
 
           <div class='flex flex-col gap-y-4 lg:gap-y-0 md:flex-row justify-between items-start md:mb-6 pt-14 md:pt-14 snap-y snap-start snap-always'>
             <div class='flex flex-col gap-y-2'>

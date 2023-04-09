@@ -102,9 +102,6 @@
           {p.name}
         </a>
       {/each}
-
-      <span id='sidenav_button' />
-
     </span>
   </div>
 </nav>
@@ -167,8 +164,4 @@
 
   :global(.dark) a.link:not(.active) { @apply hover:text-gray-100 text-gray-400; }
   :global(.dark) a.link.active { @apply hover:text-gray-100 text-gray-50 bg-gray-900 border-b-gray-200; }
-
-  #sidenav_button {
-    @apply z-50 md:z-10 bottom-6 right-4 fixed md:absolute md:right-0 md:bottom-auto md:top-1/2 md:-translate-y-1/2 md:translate-x-full flex items-center justify-center hidden;
-  }
 </style>

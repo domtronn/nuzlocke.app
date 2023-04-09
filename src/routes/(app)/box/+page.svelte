@@ -47,7 +47,7 @@
     setTeam = (data) => gameStore.update(patch({ __team: data }))
 
     // FIXME: Awkward hack to allow page transition cleanup
-    ;['game_el', 'sidenav_el'].forEach(id =>{
+    ;['game_el'].forEach(id =>{
       const el = document.getElementById(id)
       if (el) {
         el.style = 'opacity: 0';
