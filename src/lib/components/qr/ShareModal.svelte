@@ -55,7 +55,7 @@
   <span style='min-height: 320px;'>
     {#await fetchurl({ data, save }) then drop}
       <button on:click={handlecopy(normalise(drop.url.replace(/.*\/drop\//i, '')))} transition:fade>
-        <mark class='text-4xl md:text-6xl uppercase tracking-wide'>
+        <mark class='text-4xl md:text-6xl font-bold uppercase tracking-wide'>
           {drop.url.replace(/.*\/drop\//i, '')}
         </mark>
       </button>
@@ -72,7 +72,7 @@
     transition:fly={{ y: 50 }}
     class='fixed z-50 bottom-0 left-0 md:left-1/2 md:-translate-x-1/2 px-4 w-full md:w-auto' >
     <div class='inline-flex max-w-sm px-6 justify-center text-green-600 bg-green-100 rounded-t-lg py-2 w-full font-bold'>
-      Copied share link!
+      Copied Code
       <Icon inline={true} icon={Check} height=1.4em class='ml-2 fill-current' />
     </div>
   </div>
