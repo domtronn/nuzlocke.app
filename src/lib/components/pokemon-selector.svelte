@@ -364,11 +364,7 @@
         title='{inteam ? `Remove` : `Add`} {selected.name} {inteam ? `from` : `to`} your team'
         on:click={inteam ? handleTeamRemove : handleTeamAdd}
         >
-        {#if inteam}
-          <Icon class='absolute transform scale-75 right-0.5 top-0.5 bg-white dark:bg-gray-800 rounded-full' inline icon={Minus} />
-        {:else}
-          <Icon class='absolute transform scale-75 right-0.5 top-0.5 bg-white dark:bg-gray-800 rounded-full' inline icon={Plus} />
-        {/if}
+        <Icon class='absolute transform scale-75 right-0.5 top-0.5 bg-white dark:bg-gray-800 rounded-full' inline icon={inteam ? Minus : Plus} />
       </IconButton>
     {/if}
 
@@ -424,6 +420,22 @@
             </li>
           {/if}
 
+          {#if selected && !hidden && (inteam || team.length < 6) && (status && NuzlockeGroups.Available.includes(status.id))}
+            <li>
+              <button
+                class=inline-flex
+                title='{inteam ? `Remove` : `Add`} {selected.name} {inteam ? `from` : `to`} your team'
+                on:click={inteam ? handleTeamRemove : handleTeamAdd}
+                >
+                <span class='relative mr-2'>
+                  <Icon inline icon={Ball} class='transform scale-125' />
+                  <Icon class='group-bg absolute transform scale-75 -right-1.5 -top-1 bg-white dark:bg-gray-900 rounded-full' inline icon={inteam ? Minus : Plus} />
+                </span>
+                {inteam ? `Remove from Team` : `Add to Team`}
+              </button>
+            </li>
+            {/if}
+
           {#if infolink}
             <li>
               <a href={infolink}
@@ -457,4 +469,5 @@
 
   :global(.dark) ul.popover { @apply text-gray-50; }
   :global(.dark) .popover li:hover { @apply bg-orange-500 text-white; }
+  :global(.dark) .popover li:hover :global(.group-bg) { @apply bg-orange-500 text-white; }
 </style>
