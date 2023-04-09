@@ -54,12 +54,8 @@
   
   <span style='min-height: 320px;'>
     {#await fetchurl({ data, save }) then drop}
-      <button on:click={handlecopy(normalise(drop.url))} transition:fade>
-        <mark class='text-xs md:text-base tracking-wide font-bold'>
-          {normalise(drop.url).replace(/drop\/.*/, 'drop/')}
-        </mark>
-        <br />
-        <mark class='text-4xl md:text-6xl'>
+      <button on:click={handlecopy(normalise(drop.url.replace(/.*\/drop\//i, '')))} transition:fade>
+        <mark class='text-4xl md:text-6xl uppercase tracking-wide'>
           {drop.url.replace(/.*\/drop\//i, '')}
         </mark>
       </button>
