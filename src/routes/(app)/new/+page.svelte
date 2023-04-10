@@ -76,6 +76,7 @@
       rounded
       placeholder=Name
       className=sm:flex-1
+      maxlength={26}
       bind:value={gameName}
     />
 

@@ -1,5 +1,9 @@
 <script>
-  export let name, value = null, color = '', className = '', placeholder = '', icon, type = 'text', min, max, rounded = false
+  export let name
+  export let rounded = false, color = '', className = '', placeholder = '', maxlength = 16
+  export let min = -Infinity, max = Infinity, type = 'text'
+  export let value = null, icon = null
+
   import { Icon } from '$c/core'
 
   name = name || placeholder
@@ -25,6 +29,7 @@
     id={name}
     {placeholder}
     type=text
+    {maxlength}
     bind:value={value}
     class:rounded-lg={rounded}
     class:pl-8={!!icon}

@@ -1,6 +1,8 @@
 <script>
-  import { activeGame, savedGames, parse } from '$lib/store'
+  import { activeGame, savedGames, updateGame, parse, readdata, getGameStore } from '$lib/store'
   import { fade, fly } from 'svelte/transition'
+
+  import { browser } from '$app/environment'
   import { page } from '$app/stores'
 
  import { MiniTeamController } from '$c/TeamBuilder'
@@ -19,11 +21,22 @@
     window.location.reload()
   }
 
-  import ThemeToggle from '$lib/components/theme-toggle.svelte'
-  import { Logo, Popover } from '$lib/components/core'
+  const reset = _ => {
+    if (!window.confirm('This will reset all data for this run, including your encounters, team & box. You cannot recover this data when it\'s reset. Are you sure?')) return
 
-  import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
-  import { Box, Save, Game, Grave, Caret, CaretRight } from '$icons'
+    const [,, id] = readdata()
+    const gameStore = getGameStore(id)
+
+    savedGames.update(updateGame({
+      ...game,
+      attempts: (+game.attempts || 1) + 1
+    }))
+    gameStore.set('{}')
+  }
+
+  import ThemeToggle from '$lib/components/theme-toggle.svelte'
+  import { Icon, Logo, Button, Popover } from '$lib/components/core'
+  import { Box, Save, Game, Grave, Caret, CaretRight, Dots } from '$icons'
 
   const pages = [
     { name: 'Game', link: '/game', icon: Game },
@@ -50,14 +63,15 @@
             alt='{game?.game} logo'
             aspect=192x96
             />
+
           <h1 in:fade class='hidden md:block group-hover:border-black dark:group-hover:border-white'>
             {game?.name || ''}
           </h1>
         {/if}
       </a>
 
-      {#if games.length}
-        <Popover title='Load saves' position={window?.innerWidth < 700 ? 'bottom' : 'right'}>
+      {#if browser}
+        <Popover title='Load & manage game saves' position={window?.innerWidth < 700 ? 'bottom' : 'right'}>
           <span class='inline-flex'>
             <Icon inline={true} class='transition fill-current ml-2' icon={Save} />
             <Icon inline={true} class='hidden sm:block transition fill-current -ml-0.5' icon={CaretRight} />
@@ -65,7 +79,8 @@
           </span>
 
           <ul in:fly={{ duration: 250, y: 50 }} out:fade={{ duration: 100 }} class='popover bg-white dark:bg-gray-900 rounded-xl shadow-lg w-60 mt-6 ml-4 sm:mt-4 sm:ml-2 flex flex-col divide-y dark:divide-gray-700 max-h-[80vh] overflow-scroll' slot=popover>
-            <strong class='bg-black sm:bg-gray-800 text-white dark:bg-black rounded-t-xl -mb-px z-50 py-3 px-4'>Load Game</strong>
+            <strong class='bg-black sm:bg-gray-800 text-white dark:bg-black rounded-t-xl -mb-px z-50 py-3 px-4'>Games</strong>
+
             {#each games as game}
               <button on:click={load(game)}>
                 <li
@@ -81,7 +96,12 @@
                   />
                 </li>
                 </button>
-            {/each}
+              {/each}
+
+            <li class='px-4 py-3 text-center'>
+              <Button on:click={reset} rounded solid class='text-sm w-full'>New Attempt</Button>
+              <p class='italic text-xs pt-2 opacity-50 leading-4'>Abandon your <b>{game.name}</b> run, reset all encounters and start attempt {+game.attempts + 1}</p>
+            </li>
           </ul>
         </Popover>
       {/if}
