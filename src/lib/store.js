@@ -254,11 +254,11 @@ const _parse = (gameData) =>
     .filter((i) => i.length)
     .map((i) => i.split('|'))
     .reduce(
-      (acc, [id, time, name, game, settings]) => {
+      (acc, [id, time, name, game, settings, attempts = 1]) => {
         const [created, updated] = time.split('>')
         return {
           ...acc,
-          [id]: { id, created, ...(updated ? { updated } : {}), name, game, settings }
+          [id]: { id, created, ...(updated ? { updated } : {}), name, game, settings, attempts }
         }
       },
       {}
@@ -277,7 +277,8 @@ export const format = (saveData) =>
       : saveData.created,
     saveData.name,
     saveData.game,
-    saveData.settings
+    saveData.settings,
+    +saveData.attempts || 1
   ].join('|');
 
 export const summarise =
@@ -429,6 +430,12 @@ fixDupes()
 
 if (typeof window !== 'undefined')
   window.nz = {
+    saves: function () {
+      return [
+        window.localStorage.getItem(IDS.saves),
+        _parse(window.localStorage.getItem(IDS.saves)),
+        ]
+    },
     getGame: function (id) {
       const data = JSON.parse(window.localStorage[`nuzlocke.${window.localStorage['nuzlocke']}`])
       return id ? data[id] : data

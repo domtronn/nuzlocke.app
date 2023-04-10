@@ -1,5 +1,5 @@
 <script>
-  import { activeGame, savedGames, parse, readdata, getGameStore } from '$lib/store'
+  import { activeGame, savedGames, updateGame, parse, readdata, getGameStore } from '$lib/store'
   import { fade, fly } from 'svelte/transition'
 
   import { browser } from '$app/environment'
@@ -21,11 +21,16 @@
     window.location.reload()
   }
 
-  const reset = game => {
+  const reset = _ => {
     if (!window.confirm('This will reset all data for this run, including your encounters, team & box. You cannot recover this data when it\'s reset. Are you sure?')) return
 
     const [,, id] = readdata()
     const gameStore = getGameStore(id)
+
+    savedGames.update(updateGame({
+      ...game,
+      attempts: (+game.attempts || 1) + 1
+    }))
     gameStore.set('{}')
   }
 
