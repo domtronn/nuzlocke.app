@@ -95,7 +95,7 @@
 
             <li class='px-4 py-3 text-center'>
               <Button on:click={reset} rounded solid class='text-sm w-full'>New Attempt</Button>
-              <small class='italic text-xs pt-2 opacity-50 '>Abandon your <b>{game.name}</b> run and reset encounters</small>
+              <p class='italic text-xs pt-2 opacity-50 leading-4'>Abandon your <b>{game.name}</b> run and reset all encounters</p>
             </li>
           </ul>
         </Popover>
