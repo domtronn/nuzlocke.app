@@ -17,9 +17,6 @@
   const interval = 5000
   const distance = 300
 
-  let hovering = false
-  const toggleHover = () => hovering = !hovering
-
   const dur = d => 10 * Math.sqrt(d)
 
   let flip = 0
@@ -64,7 +61,7 @@
       aspect=324x62
       pixelated
       alt='Nuzlocke logo'
-      className='transition h-auto md:h-16 mt-2 mx-auto {hovering ? '' : 'md:grayscale'}'
+      className='transition h-auto md:h-16 mt-2 mx-auto'
     />
     tracker
   </h1>
@@ -135,7 +132,6 @@
         {#if !flip}
           <img {src} rel=external alt='Pokemon #{id}'
                class='absolute transition right-0 w-full -my-2 md:-my-12 -ml-12'
-               class:md:grayscale={!hovering}
                out:fly={{ y: distance, duration }}
                in:fly={{ y: -distance, duration }}
              />
@@ -143,7 +139,6 @@
         {#if flip}
           <img {src} rel=external alt='Pokemon #{id}'
                class='absolute transition right-0 w-full -my-2 md:-my-12 -ml-12'
-               class:md:grayscale={!hovering}
                out:fly={{ y: distance, duration }}
                in:fly={{ y: -distance, duration }}
              />
