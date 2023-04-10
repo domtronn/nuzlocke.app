@@ -193,6 +193,10 @@
   }
 
   @media (max-width: theme('screens.md')) {
+    .container ~ :global(footer) {
+      display: none;
+    }
+
     .container {
       height: 100vh;
       overflow-y: scroll;

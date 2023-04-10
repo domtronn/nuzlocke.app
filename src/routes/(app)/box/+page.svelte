@@ -262,7 +262,7 @@
               out:fade={{ duration: 150 }}
               >
 
-              <PIcon class='absolute invisible -z-20 -left-20 -bottom-20 data-drag-img' name={p.pokemon} />
+              <PIcon class='absolute invisible -z-20 -left-20 -top-20 data-drag-img' name={p.pokemon} />
 
               <PokemonCard
                 {minimal}
@@ -354,7 +354,7 @@
           {/each}
         </div>
 
-        <Footer class='!relative !mt-6 md:hidden' />
+        <Footer class='!relative !mt-6 !-mb-20 md:hidden' />
       </main>
 
     </div>
@@ -384,6 +384,8 @@
     z-index: -10;
     height: calc(50% + 1px);
   }
+
+
 
   @media (max-width: theme('screens.md')) {
     .container + :global(footer) {
