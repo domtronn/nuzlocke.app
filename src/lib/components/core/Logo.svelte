@@ -1,11 +1,11 @@
 <script>
-  export let src, alt = '', aspect = '4x4', pixelated = false, role = '', loading = 'lazy'
+  export let src, alt = '', aspect = '4x4', pixelated = false, role = '', loading = 'lazy', pictureClass = ''
   import { fade } from 'svelte/transition'
 
   const [width, height] = aspect.split('x')
 </script>
 
-<picture in:fade>
+<picture in:fade class={pictureClass || ''}>
   <source media="(min-width: 800px)" srcset='{src}@2.webp 1x' type='image/webp' />
   {#if loading === 'eager'}
     <source srcset='{src}@2.webp x2' type='image/webp' />

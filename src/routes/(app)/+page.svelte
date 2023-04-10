@@ -102,7 +102,8 @@
                 <Logo
                   src='{IMG}{Games[active.game].logo}'
                   alt='{active.game} logo'
-                  class='inline ml-2 game--{active.game}'
+                  pictureClass='game--{active.game}'
+                  class='inline ml-2'
                   aspect=48xauto
                   />
 
@@ -218,7 +219,7 @@
   .green { @apply hover:text-green-400 }
   .yellow { @apply hover:text-yellow-400 }
 
-    :global(.game--emkaizo), :global(.game--fr), :global(.game--sp), :global(.game--bd), { @apply -translate-x-1; }
-    :global(.game--sw), :global(.game--sh), { @apply -translate-x-3 -mr-4; }
+    :global(.game--emkaizo), :global(.game--fr), :global(.game--sp), :global(.game--bd), { @apply -translate-x-1 -mr-2; }
+    :global(.game--sw), :global(.game--sh), { @apply -translate-x-3 -mr-5; }
 
 </style>

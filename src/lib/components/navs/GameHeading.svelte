@@ -59,6 +59,7 @@
         {#if game?.game}
           <Logo
             src=/assets/{game?.game}
+            pictureClass='game--{game?.game}'
             class='h-10 w-auto max-md:pt-2 md:mr-4 md:w-20 md:h-auto'
             alt='{game?.game} logo'
             aspect=192x96
@@ -184,4 +185,16 @@
 
   :global(.dark) a.link:not(.active) { @apply hover:text-gray-100 text-gray-400; }
   :global(.dark) a.link.active { @apply hover:text-gray-100 text-gray-50 bg-gray-900 border-b-gray-200; }
+
+  :global(.game--sw),
+  :global(.game--sh), { @apply -mr-4 -ml-4 }
+
+  :global(.game--emkaizo) { @apply -mr-2 -ml-2; }
+
+  @media (min-width: theme('screens.md')) {
+    :global(.game--sw),
+    :global(.game--sh), { @apply -mr-6 ml-0; }
+
+    :global(.game--emkaizo) { @apply -mr-2 ml-0; }
+  }
 </style>
