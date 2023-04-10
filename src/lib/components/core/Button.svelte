@@ -14,7 +14,7 @@
   class:disabled={disabled}
   class:rounded-lg={rounded}
   class:solid={solid}
-  class='border-2 ring-2 ring-transparent px-4 transition-colors h-10 {className}'
+  class='border-2 ring-2 ring-transparent px-4 transition-colors h-10 {className} {$$restProps.class || ''}'
 >
   <slot />
 </button>

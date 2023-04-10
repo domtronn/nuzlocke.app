@@ -53,6 +53,7 @@
 
   getTeams(t => team = t.team)
 
+  let resetd
   store && store.subscribe(read(data => {
     const getStateMons = (data, stateGroup) => {
       return Object.values(data)
@@ -64,8 +65,15 @@
     getPkmns(getStateMons(data, NuzlockeGroups.Dupes)).then(p => dupelines = new Set(Object.values(p).map(p => p?.evoline)))
     getPkmns(getStateMons(data, NuzlockeGroups.MissDupes)).then(p => misslines = new Set(Object.values(p).map(p => p?.evoline)))
 
+    if (!!resetd && !data[location]) {
+      handleClear()
+      return
+    }
+
     const pkmn = data[location]
     if (!pkmn) return
+
+    resetd = pkmn
 
     status = pkmn.status ? NuzlockeStates[pkmn.status] : null
     nature = pkmn.nature ? NaturesMap[pkmn.nature] : null
@@ -120,7 +128,7 @@
   }
 
   function handleClear () {
-    status = nickname = selected = death = null
+    status = nickname = selected = death = resetd = null
     search = statusSearch = natureSearch = null
     store.update(patch({ [location]: {}, __team: team.filter(i => i !== location) }))
   }
@@ -368,7 +376,7 @@
       </IconButton>
     {/if}
 
-      <Popover title='Open contextul menu' className='absolute top-16 mt-0.5 right-1 sm:top-0 sm:relative '>
+      <Popover title='Open contextual menu' className='absolute top-16 mt-0.5 right-1 sm:top-0 sm:relative '>
         <Icon inline={true} height=1.4em icon={Dots} class=fill-current />
 
         <ul in:fly={{ duration: 250, x: 50 }} class='popover bg-white dark:bg-gray-900 rounded-xl shadow-lg w-44 pt-2 flex flex-col divide-y dark:divide-gray-600' slot=popover>
