@@ -212,7 +212,7 @@
   .green { @apply hover:text-green-400 }
   .yellow { @apply hover:text-yellow-400 }
 
-    :global(.game--emkaizo), :global(.game--fr), :global(.game--sp), :global(.game--bd), { @apply -translate-x-1 -mr-2; }
-    :global(.game--sw), :global(.game--sh), { @apply -translate-x-3 -mr-5; }
+  :global(.game--emkaizo), :global(.game--fr), :global(.game--sp), :global(.game--bd), { @apply -translate-x-1 -mr-2; }
+  :global(.game--sw), :global(.game--sh), { @apply -mr-2 md:-translate-x-3 md:-mr-5; }
 
 </style>
