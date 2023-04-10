@@ -292,7 +292,7 @@ export const summarise =
       deceased: pkmn.filter(
         (i) => i?.pokemon && NuzlockeGroups.Dead.includes(i?.status)
       ),
-      team: __team.map(id => data?.[id]?.pokemon)
+      team: __team.map(id => data?.[id]?.pokemon).filter(i => i)
     });
   };
 
