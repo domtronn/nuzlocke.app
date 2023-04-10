@@ -29,10 +29,10 @@
 
 <style lang="postcss">
 
-  .pos { color: theme('colors.blue.400'); }
-  .neg { color: theme('colors.orange.600'); }
-  :global(.dark) .pos { color: theme('colors.blue.300'); }
-  :global(.dark) .neg { color: theme('colors.orange.300'); }
+  .neg { color: theme('colors.blue.400'); }
+  .pos { color: theme('colors.orange.600'); }
+  :global(.dark) .neg { color: theme('colors.blue.300'); }
+  :global(.dark) .pos { color: theme('colors.orange.300'); }
 
   .poor { --stat-col: theme('colors.red.300'); --stat-col-ring: theme('colors.red.100'); }
   .meh { --stat-col: theme('colors.orange.300'); --stat-col-ring: theme('colors.orange.100'); }

@@ -15,7 +15,7 @@
   $: atk = pokemon[0]
   $: def = pokemon[1]
 
-  const sprite = imgId => createImgUrl({ imgId }, { ext: 'png', shiny: status === 6})
+  const sprite = (imgId, status) => createImgUrl({ imgId }, { ext: 'png', shiny: status === 6})
 </script>
 
 <SettingWrapper id=theme let:setting={themeId}>
