@@ -59,7 +59,7 @@
         {#if game?.game}
           <Logo
             src=/assets/{game?.game}
-            class='h-10 w-auto pt-2 md:mr-4 md:w-20 md:h-auto'
+            class='h-10 w-auto max-md:pt-2 md:mr-4 md:w-20 md:h-auto'
             alt='{game?.game} logo'
             aspect=192x96
             />
