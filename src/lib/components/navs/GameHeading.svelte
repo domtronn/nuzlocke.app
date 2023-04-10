@@ -1,6 +1,8 @@
 <script>
   import { activeGame, savedGames, parse, readdata, getGameStore } from '$lib/store'
   import { fade, fly } from 'svelte/transition'
+
+  import { browser } from '$app/environment'
   import { page } from '$app/stores'
 
  import { MiniTeamController } from '$c/TeamBuilder'
@@ -63,7 +65,7 @@
         {/if}
       </a>
 
-      {#if games.length}
+      {#if browser}
         <Popover title='Load & manage game saves' position={window?.innerWidth < 700 ? 'bottom' : 'right'}>
           <span class='inline-flex'>
             <Icon inline={true} class='transition fill-current ml-2' icon={Save} />
@@ -93,7 +95,7 @@
 
             <li class='px-4 py-3 text-center'>
               <Button on:click={reset} rounded solid class='text-sm w-full'>New Attempt</Button>
-              <small class='italic text-xs pt-2 opacity-50'>Abandon run and reset encounters</small>
+              <small class='italic text-xs pt-2 opacity-50 '>Abandon your <b>{game.name}</b> run and reset encounters</small>
             </li>
           </ul>
         </Popover>
