@@ -158,7 +158,7 @@
 {:else}
   <div out:fade|local={{ duration: 250 }} in:fade|local={{ duration: 250, delay: 300 }} class='container mx-auto'>
     <div class='flex flex-col mx-auto items-center justify-center'>
-      <main class='w-full xl:w-3/4 flex flex-col gap-y-4 pt-14 md:pt-20 pb-32 md:pb-48 px-4 md:px-8 overflow-hidden snap-y scroll-pt-14'>
+      <main class='w-full xl:w-3/4 flex flex-col gap-y-4 pt-14 md:pt-20 px-4 md:px-8 overflow-hidden snap-y scroll-pt-14'>
 
         <div class='flex flex-row items-center gap-x-2 relative md:mt-0 -my-2 snap-start'>
           <AnalysisModal box={Object.values(Pokemon)}>
@@ -352,9 +352,10 @@
               </PokemonCard>
             </span>
           {/each}
-        </div>
 
-        <Footer class='!relative !mt-6 md:hidden' />
+          <Footer class='!relative !mt-6 pb-10 md:hidden' />
+
+        </div>
       </main>
 
     </div>
@@ -387,7 +388,7 @@
 
   @media (max-width: theme('screens.md')) {
     .container + :global(footer) {
-      @apply hidden;
+      @apply pb-20;
     }
 
     :global(body) {
@@ -396,6 +397,10 @@
     main {
       height: calc(100vh - 38px);
       overflow-y: scroll;
+    }
+
+    .container ~ :global(footer) {
+      visibility: hidden;
     }
   }
 

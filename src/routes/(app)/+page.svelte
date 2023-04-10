@@ -74,8 +74,6 @@
         {#each links as { title, href, color, aria } (href)}
           <a animate:animflip in:fly={{ x: -50 }}
              class='group tracking-widest hover:drop-shadow-text {color}'
-             on:mouseenter={toggleHover}
-             on:mouseleave={toggleHover}
              {href}
              aria-label={aria}
              data-sveltekit-preload-data

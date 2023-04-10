@@ -5,7 +5,7 @@
 
   import { Loader, Tabs } from '$lib/components/core'
 
-  import { SupportBanner } from '$lib/components/navs'
+  import { SupportBanner, Footer } from '$lib/components/navs'
   import { GameRoute, Search } from '$lib/components/Game'
   import { Settings } from '$lib/components/Settings'
 
@@ -182,6 +182,8 @@
             progress={latestnav(route, gameData).id}
           />
 
+          <Footer class='!relative !mt-6 !pt-10 !-mb-10' />
+
         </main>
     </div>
   </div>
@@ -197,6 +199,11 @@
       height: 100vh;
       overflow-y: scroll;
     }
+
+  }
+
+  .container ~ :global(footer) {
+    visibility: hidden;
   }
 
   .container {
