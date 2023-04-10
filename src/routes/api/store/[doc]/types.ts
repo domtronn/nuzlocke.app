@@ -17,10 +17,10 @@ const IGame = z.object({
   game: EGame,
   id: z.string().uuid(),
   name: z.string(),
-  settings: z.string().regex(/[01]{6}/),
+  settings: z.string().regex(/[01]+/),
+  attempts: z.optional(z.coerce.number()),
   created_at: z.coerce.number(),
   updated_at: z.optional(z.coerce.number()),
-
 })
 
 const ITeamMember = z.object({
