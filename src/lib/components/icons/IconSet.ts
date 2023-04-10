@@ -34,7 +34,7 @@ export { default as Link } from '@iconify-icons/ph/link';
 export { default as Off } from '@iconify-icons/gg/radio-check';
 export { default as On } from '@iconify-icons/gg/radio-checked';
 
-export { default as Settings } from '@iconify-icons/ph/sliders-fill';
+export { default as Settings } from '@iconify-icons/ri/settings-4-line';
 export { default as Share } from '@iconify-icons/ri/share-forward-line';
 export { default as Spinner } from '@iconify-icons/gg/spinner';
 
