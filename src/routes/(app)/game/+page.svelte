@@ -61,7 +61,6 @@
     return route
   }
 
-  onMount(async () => deferStyles('/assets/pokemon.css'))
   onMount(() => {
     parse(saves => {
       if (!browser) return

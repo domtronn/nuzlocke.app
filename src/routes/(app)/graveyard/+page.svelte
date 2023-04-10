@@ -9,7 +9,6 @@
 
   import { chunk } from '$lib/utils/arr'
   import { capitalise } from '$lib/utils/string'
-  import deferStyles from '$lib/utils/defer-styles'
 
   import { activeGame, getGame, read, patch } from '$lib/store'
   import { Loader, Toggle } from '$c/core'
@@ -38,7 +37,6 @@
   const { getPkmn } = getContext('game')
 
   const handleEdit = (p) => async (o) => {
-    await deferStyles('/assets/pokemon.css')
     const pokemon = await getPkmn(o.detail.pokemon)
 
     const mode =

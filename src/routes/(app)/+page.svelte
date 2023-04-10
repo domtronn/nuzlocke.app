@@ -10,7 +10,6 @@
   import { readdata, activeGame, savedGames, parse, getGame, read, summarise, trackData } from '$lib/store'
   import { PixelatedContainer } from '$lib/components/containers'
 
-  import deferStyles from '$lib/utils/defer-styles'
   import Games from '$lib/data/games'
   import { Logo, Picture, PIcon, Icon } from '$lib/components/core'
   import { Deceased } from '$icons'
@@ -49,7 +48,6 @@
       ]
     }
 
-    deferStyles('/assets/pokemon.css')
     trackData()
   })
 

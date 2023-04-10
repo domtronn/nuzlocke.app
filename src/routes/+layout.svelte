@@ -1,7 +1,11 @@
 <script>
   import "../app.postcss";
 
+  import { onMount } from 'svelte'
   import { CookieBanner, Footer } from '$c/navs';
+
+  import deferStyles from '$lib/utils/defer-styles'
+  onMount(async () => deferStyles('/assets/pokemon.css'))
 
   const title = 'Nuzlocke Tracker';
   const subtitle = 'Track encounters, analyse your team, be prepared';
