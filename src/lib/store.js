@@ -283,7 +283,7 @@ export const format = (saveData) =>
 
 export const summarise =
   (cb = (_) => {}) =>
-  ({ __starter, __custom, __team, __teams, ...data }) => {
+  ({ __starter, __custom, __team = [], __teams, ...data }) => {
     const pkmn = Object.values(data);
     cb({
       available: pkmn.filter(
@@ -291,7 +291,8 @@ export const summarise =
       ),
       deceased: pkmn.filter(
         (i) => i?.pokemon && NuzlockeGroups.Dead.includes(i?.status)
-      )
+      ),
+      team: __team.map(id => data[id].pokemon)
     });
   };
 

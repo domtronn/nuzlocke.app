@@ -33,17 +33,6 @@
   styleContent={{ padding: '0 !important', overflow: 'hidden' }}
 >
   <ScreenContainer containerClassName='pb-48 mb-0 sm:mb-0 md:mb-0' title='Load game' icon={Floppy}>
-    <div class='flex flex-row gap-x-2 text-xs w-full'>
-      <Import className='flex-1 p-1'>
-        Import saved game
-      </Import>
-
-      <a data-sveltekit-preload-data href="/new" class='text-center flex flex-1'>
-        <Button rounded className='w-full p-1'>
-          Create game
-        </Button>
-      </a>
-    </div>
 
     <div class='flex flex-col gap-y-8 md:gap-y-4' transition:slide={{ duration: 300 }}>
       {#if loading}
@@ -69,14 +58,20 @@
         {#each games as game (game.id)}
           <Save {...game} />
         {/each}
-      {:else if !loading && !games.length}
-        <span class='text-center'>You currently have no saved games</span>
-        <a data-sveltekit-preload-data href="/new" class='text-center'>
-          <Button rounded className='w-full'>
-            Create game
-          </Button>
-        </a>
       {/if}
     </div>
+
+      <div class='flex flex-row gap-x-2 text-xs mx-auto'>
+      <Import className='p-1'>
+        Import saved game
+      </Import>
+
+      <a data-sveltekit-preload-data href="/new" class='text-center'>
+        <Button rounded className='w-full p-1'>
+          Create game
+        </Button>
+      </a>
+    </div>
+
   </ScreenContainer>
 </Modal>

@@ -1,5 +1,5 @@
 <script>
-  export let id, created, updated = -1, name, game
+  export let id, created, updated = -1, name, game, attempts = -1
 
   import { onMount, getContext } from 'svelte'
   import { activeGame, deleteGame, getGame, read, summarise } from '$lib/store'
@@ -18,8 +18,9 @@
     import('$lib/components/qr/ShareModal.svelte').then(mod => ShareModal = mod.default)
   })
 
-  let available, deceased
+  let team, available, deceased
   getGame(id).subscribe(read(summarise(data => {
+    team = data.team || []
     available = data.available || []
     deceased = data.deceased || []
   })))
@@ -49,7 +50,16 @@
     />
 
     <div class='text-left'>
-      <h2 class='font-bold transition text-xl leading-7 max-w-[26ch]'><mark class='bg-transparent dark:text-gray-50 dark:group-hover:text-gray-900 transition group-hover:bg-yellow-300'>{name}</mark></h2>
+      <h2 class='font-bold transition text-xl leading-7 max-w-[26ch]'>
+        <mark class='bg-transparent dark:text-gray-50 dark:group-hover:text-gray-900 transition group-hover:bg-yellow-300'>
+          {name}
+          {#if attempts > 1}
+            <div class='opacity-50 italic font-normal text-xs -translate-y-0.5 inline-block'>
+              (Attempt {attempts})
+            </div>
+            {/if}
+        </mark>
+      </h2>
 
       <h3 class='text-sm transition'>
         <mark class='bg-transparent dark:text-gray-50 dark:group-hover:text-gray-900 transition group-hover:bg-yellow-300'>{date}</mark>
@@ -59,11 +69,20 @@
         {/if}
       </h3>
 
-      <span class='font-sans inline-flex items-center'>
+      <span class='transition group-hover:grayscale-0 grayscale font-sans inline-flex items-center'>
+
+        <PIcon className=' -mt-0.5 -ml-1' type='item' name='poke-ball' />
         {(available || []).length}
-        <PIcon className='transition group-hover:grayscale-0 grayscale mr-2 -mt-1' type='item' name='poke-ball' />
+        <Icon inline={true} class='ml-3 mr-2 fill-current' icon={NuzlockeStates[5].icon} />
         {(deceased || []).length}
-        <Icon inline={true} class='ml-1 fill-current' icon={NuzlockeStates[5].icon} />
+
+        <span class='mr-4' />
+
+        {#each team as icon}
+          <div class='w-8 h-8 relative'>
+            <PIcon class='absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2' name={icon} />
+          </div>
+        {/each}
       </span>
     </div>
   </button>

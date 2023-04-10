@@ -21,7 +21,6 @@
 
   import { CUSTOM, UNOWN, createImgUrl } from '$utils/rewrites'
   import { toDb } from '$utils/link'
-  import deferStyles from '$utils/defer-styles'
 
   import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
   import { Ball, Plus, Minus, Shiny, X, Deceased, External } from '$icons'
@@ -33,7 +32,6 @@
   let Particles, EvoModal, DeathModal
   let gameStore, teamData = [], setTeam = _ => _
   onMount(() => {
-    deferStyles('/assets/pokemon.css')
     import('$lib/components/particles').then(m => Particles = m.default)
     import('$lib/components/EvolutionModal.svelte').then(m => EvoModal = m.default)
     import('$lib/components/DeathModal/index.svelte').then(m => DeathModal = m.default)

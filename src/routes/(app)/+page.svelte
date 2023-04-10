@@ -11,9 +11,7 @@
   import { PixelatedContainer } from '$lib/components/containers'
 
   import Games from '$lib/data/games'
-  import { Logo, Picture, PIcon } from '$lib/components/core'
-
-  import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
+  import { Logo, Picture, PIcon, Icon } from '$lib/components/core'
   import { Deceased } from '$icons'
 
   const interval = 5000
@@ -85,23 +83,41 @@
              aria-label={aria}
              data-sveltekit-preload-data
              rel=external
-           >
-            {title}
+             >
+
             {#if title === 'Continue'}
-              <div class='flex flex-row group-hover:grayscale-0 md:grayscale items-center transition h-8 -mt-1 font-sans text-sm font-normal'>
+                {title}
+                {#if summary.team.length}
+                  <div class='group-hover:grayscale-0 md:grayscale absolute ml-2 inline-grid w-24 grid-cols-3 transition transform scale-90 origin-left'>
+                    {#each summary.team as icon}
+                      <span class='relative w-8 h-8'>
+                        <PIcon class='left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 absolute' name={icon} />
+                      </span>
+                    {/each}
+                  </div>
+                {/if}
+
+              <div class='flex flex-row group-hover:grayscale-0 md:grayscale items-center transition h-8 -ml-2 font-sans text-sm font-normal'>
+
                 <Logo
                   src='{IMG}{Games[active.game].logo}'
                   alt='{active.game} logo'
-                  class=mr-2
-                  aspect=32xauto
+                  class='inline'
+                  aspect=48xauto
                   />
 
+                <PIcon className='transform scale-75 -mr-1 -mt-0.5' type='item' name='poke-ball' />
                 <span>{summary.available.length}</span>
-                <PIcon className='transform scale-75 -ml-1' type='item' name='poke-ball' />
+                <Icon inline={true} class='mx-1 w-3 h-3 fill-current' icon={Deceased} />
                 <span>{summary.deceased.length}</span>
-                <Icon inline={true} class='ml-1 w-3 h-3 fill-current' icon={Deceased} />
+
+
               </div>
+
+            {:else}
+              {title}
             {/if}
+
           </a>
         {/each}
 
@@ -172,7 +188,7 @@
   }
 
   :global(.container__index) {
-    @apply font-mono relative max-h-48 max-w-md mx-auto flex sm:flex-row justify-evenly items-center gap-y-2 text-3xl py-8 h-full w-auto;
+    @apply font-mono relative max-h-56 max-w-md mx-auto flex sm:flex-row justify-evenly items-center gap-y-2 text-3xl py-8 h-full w-auto;
   }
 
   @media (max-width:640px) {
