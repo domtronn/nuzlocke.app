@@ -123,10 +123,6 @@
 
 <style>
   @media (max-width: theme('screens.md')) {
-    :global(footer) {
-      @apply pb-0;
-    }
-
     main {
       height: calc(100vh - 38px);
       overflow-y: scroll;
