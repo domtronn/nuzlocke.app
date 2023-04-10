@@ -59,6 +59,12 @@
       .map(l => ({ label: `Gen ${l}`, val: l }))
   )
 
+  let customName
+  $: {
+    if (selectedGame && !gameName || (customName === gameName)) {
+      customName = gameName = `${selectedGame.title} Nuzlocke`
+    }
+  }
 
   $: difficultyOptions = selectedGame?.difficulty?.map(d => ({ id: d.split(':')[1], name: d.split(':')[0] || 'Normal'}))
   $: selectedGame = validGames[selected]
