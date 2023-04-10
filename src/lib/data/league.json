@@ -66044,15 +66044,43 @@
       "img": "/leaders/gs-silver",
       "pokemon": [
         {
+          "name": "cyndaquil",
+          "level": "5",
+          "moves": [
+            "leer",
+            "tackle"
+          ],
+          "ability": "blaze",
+          "abilities": [
+            "blaze"
+          ],
+          "starter": "grass"
+        },
+        {
+          "name": "chikorita",
+          "level": "5",
+          "moves": [
+            "growl",
+            "tackle"
+          ],
+          "ability": "overgrow",
+          "abilities": [
+            "overgrow"
+          ],
+          "starter": "water"
+        },
+        {
           "name": "totodile",
           "level": "5",
           "moves": [
-            "leers",
+            "leer",
             "scratch"
           ],
+          "ability": "torrent",
           "abilities": [
-            ""
-          ]
+            "torrent"
+          ],
+          "starter": "fire"
         }
       ]
     },
@@ -66122,10 +66150,10 @@
           "name": "quilava",
           "level": "21",
           "moves": [
-            "synthesis",
-            "reflect",
-            "nature-power",
-            "grass-whistle"
+            "flame-wheel",
+            "quick-attack",
+            "ember",
+            "smokescreen"
           ],
           "ability": "blaze",
           "abilities": [
@@ -66137,6 +66165,8 @@
           "name": "croconaw",
           "level": "21",
           "moves": [
+            "rage",
+            "bite",
             "scary-face",
             "ice-fang"
           ],
@@ -66214,10 +66244,10 @@
           "name": "elekid",
           "level": "24",
           "moves": [
-            "ember",
-            "feint-attack",
-            "smokescreen",
-            "fire-spin"
+            "light-screen",
+            "shock-wave",
+            "swift",
+            "low-kick"
           ],
           "ability": "static",
           "abilities": [
@@ -66229,10 +66259,10 @@
           "name": "elekid",
           "level": "24",
           "moves": [
-            "ember",
-            "feint-attack",
-            "smokescreen",
-            "fire-spin"
+            "light-screen",
+            "shock-wave",
+            "swift",
+            "low-kick"
           ],
           "ability": "static",
           "abilities": [
@@ -66259,10 +66289,10 @@
           "name": "quilava",
           "level": "27",
           "moves": [
-            "reflect",
-            "magical-leaf",
-            "nature-power",
-            "natural-gift"
+            "defense-curl",
+            "flame-wheel",
+            "quick-attack",
+            "ember"
           ],
           "ability": "blaze",
           "abilities": [
@@ -66274,10 +66304,10 @@
           "name": "croconaw",
           "level": "27",
           "moves": [
-            "reflect",
-            "magical-leaf",
-            "nature-power",
-            "natural-gift"
+            "flail",
+            "ice-fang",
+            "scary-face",
+            "bite"
           ],
           "ability": "torrent",
           "abilities": [

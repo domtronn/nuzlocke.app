@@ -2866,6 +2866,20 @@
         "level": "21",
         "moves": [
           {
+            "power": 20,
+            "type": "normal",
+            "damage_class": "physical",
+            "name": "Rage",
+            "effect": "If the user is hit after using this move, its Attack rises by one stage."
+          },
+          {
+            "power": 60,
+            "type": "dark",
+            "damage_class": "physical",
+            "name": "Bite",
+            "effect": "Has a 30% chance to make the target flinch."
+          },
+          {
             "type": "normal",
             "damage_class": "status",
             "name": "Scary Face",
@@ -2895,6 +2909,420 @@
           "spa": 59,
           "spd": 63,
           "spe": 58
+        }
+      }
+    ]
+  },
+  "ethan": {
+    "name": "Ethan",
+    "pokemon": [
+      {
+        "name": "nidorino",
+        "level": "21",
+        "moves": [
+          {
+            "power": 30,
+            "type": "fighting",
+            "damage_class": "physical",
+            "name": "Double Kick",
+            "effect": "Hits twice in one turn."
+          },
+          {
+            "power": 110,
+            "type": "ice",
+            "damage_class": "special",
+            "name": "Blizzard",
+            "effect": "Has a 10% chance to freeze the target."
+          },
+          {
+            "power": 35,
+            "type": "flying",
+            "damage_class": "physical",
+            "name": "Peck"
+          },
+          {
+            "power": 110,
+            "type": "electric",
+            "damage_class": "special",
+            "name": "Thunder",
+            "effect": "Has a 30% chance to paralyze the target."
+          }
+        ],
+        "ability": {
+          "name": "Poison Point",
+          "effect": "Has a 30% chance of poisoning attacking Pokémon on contact."
+        },
+        "sprite": "33",
+        "types": [
+          "poison"
+        ],
+        "stats": {
+          "hp": 61,
+          "atk": 72,
+          "def": 57,
+          "spa": 55,
+          "spd": 55,
+          "spe": 65
+        }
+      },
+      {
+        "name": "marill",
+        "level": "21",
+        "moves": [
+          {
+            "power": 65,
+            "type": "water",
+            "damage_class": "special",
+            "name": "Bubble Beam",
+            "effect": "Has a 10% chance to lower the target's Speed by one stage."
+          },
+          {
+            "type": "normal",
+            "damage_class": "status",
+            "name": "Double Team",
+            "effect": "Raises the user's evasion by one stage."
+          },
+          {
+            "power": 110,
+            "type": "ice",
+            "damage_class": "special",
+            "name": "Blizzard",
+            "effect": "Has a 10% chance to freeze the target."
+          },
+          {
+            "power": 150,
+            "priority": -3,
+            "type": "fighting",
+            "damage_class": "physical",
+            "name": "Focus Punch",
+            "effect": "If the user takes damage before attacking, the attack is canceled."
+          }
+        ],
+        "ability": {
+          "name": "Thick Fat",
+          "effect": "Halves damage from fire and ice moves."
+        },
+        "sprite": "183",
+        "types": [
+          "water",
+          "fairy"
+        ],
+        "stats": {
+          "hp": 70,
+          "atk": 20,
+          "def": 50,
+          "spa": 50,
+          "spd": 50,
+          "spe": 40
+        }
+      },
+      {
+        "name": "tangela",
+        "level": "21",
+        "moves": [
+          {
+            "type": "grass",
+            "damage_class": "status",
+            "name": "Sleep Powder",
+            "effect": "Puts the target to sleep."
+          },
+          {
+            "type": "normal",
+            "damage_class": "status",
+            "name": "Growth",
+            "effect": "Raises the user's Attack and Special Attack by one stage."
+          },
+          {
+            "type": "grass",
+            "damage_class": "special",
+            "name": "Grass Knot",
+            "effect": "Inflicts more damage to heavier targets, with a maximum of 120 power."
+          },
+          {
+            "power": 120,
+            "type": "grass",
+            "damage_class": "special",
+            "name": "Solar Beam",
+            "effect": "Requires a turn to charge before attacking."
+          }
+        ],
+        "ability": {
+          "name": "Chlorophyll",
+          "effect": "Doubles Speed during strong sunlight."
+        },
+        "sprite": "114",
+        "types": [
+          "grass"
+        ],
+        "stats": {
+          "hp": 65,
+          "atk": 55,
+          "def": 115,
+          "spa": 100,
+          "spd": 40,
+          "spe": 60
+        }
+      },
+      {
+        "name": "arcanine",
+        "level": "23",
+        "moves": [
+          {
+            "power": 95,
+            "type": "fire",
+            "damage_class": "special",
+            "name": "Heat Wave",
+            "effect": "Has a 10% chance to burn the target."
+          },
+          {
+            "power": 40,
+            "type": "fighting",
+            "damage_class": "physical",
+            "name": "Rock Smash",
+            "effect": "Has a 50% chance to lower the target's Defense by one stage."
+          },
+          {
+            "priority": -6,
+            "type": "normal",
+            "damage_class": "status",
+            "name": "Roar",
+            "effect": "Immediately ends wild battles.  Forces trainers to switch Pokémon."
+          },
+          {
+            "power": 80,
+            "type": "steel",
+            "damage_class": "physical",
+            "name": "Iron Head",
+            "effect": "Has a 30% chance to make the target flinch."
+          }
+        ],
+        "ability": {
+          "name": "Intimidate",
+          "effect": "Lowers opponents' Attack one stage upon entering battle."
+        },
+        "held": {
+          "sprite": "sitrus-berry",
+          "name": "Sitrus Berry",
+          "effect": "Held: Consumed at 1/2 max HP to recover 1/4 max HP."
+        },
+        "sprite": "59",
+        "types": [
+          "fire"
+        ],
+        "stats": {
+          "hp": 90,
+          "atk": 110,
+          "def": 80,
+          "spa": 100,
+          "spd": 80,
+          "spe": 95
+        }
+      }
+    ]
+  },
+  "lyra": {
+    "name": "Lyra",
+    "pokemon": [
+      {
+        "name": "nidorina",
+        "level": "21",
+        "moves": [
+          {
+            "power": 30,
+            "type": "fighting",
+            "damage_class": "physical",
+            "name": "Double Kick",
+            "effect": "Hits twice in one turn."
+          },
+          {
+            "power": 110,
+            "type": "ice",
+            "damage_class": "special",
+            "name": "Blizzard",
+            "effect": "Has a 10% chance to freeze the target."
+          },
+          {
+            "power": 60,
+            "type": "flying",
+            "damage_class": "physical",
+            "name": "Aerial Ace",
+            "effect": "Never misses."
+          },
+          {
+            "power": 110,
+            "type": "electric",
+            "damage_class": "special",
+            "name": "Thunder",
+            "effect": "Has a 30% chance to paralyze the target."
+          }
+        ],
+        "ability": {
+          "name": "Poison Point",
+          "effect": "Has a 30% chance of poisoning attacking Pokémon on contact."
+        },
+        "sprite": "30",
+        "types": [
+          "poison"
+        ],
+        "stats": {
+          "hp": 70,
+          "atk": 62,
+          "def": 67,
+          "spa": 55,
+          "spd": 55,
+          "spe": 56
+        }
+      },
+      {
+        "name": "marill",
+        "level": "21",
+        "moves": [
+          {
+            "power": 65,
+            "type": "water",
+            "damage_class": "special",
+            "name": "Bubble Beam",
+            "effect": "Has a 10% chance to lower the target's Speed by one stage."
+          },
+          {
+            "type": "normal",
+            "damage_class": "status",
+            "name": "Double Team",
+            "effect": "Raises the user's evasion by one stage."
+          },
+          {
+            "power": 110,
+            "type": "ice",
+            "damage_class": "special",
+            "name": "Blizzard",
+            "effect": "Has a 10% chance to freeze the target."
+          },
+          {
+            "power": 150,
+            "priority": -3,
+            "type": "fighting",
+            "damage_class": "physical",
+            "name": "Focus Punch",
+            "effect": "If the user takes damage before attacking, the attack is canceled."
+          }
+        ],
+        "ability": {
+          "name": "Thick Fat",
+          "effect": "Halves damage from fire and ice moves."
+        },
+        "sprite": "183",
+        "types": [
+          "water",
+          "fairy"
+        ],
+        "stats": {
+          "hp": 70,
+          "atk": 20,
+          "def": 50,
+          "spa": 50,
+          "spd": 50,
+          "spe": 40
+        }
+      },
+      {
+        "name": "roselia",
+        "level": "21",
+        "moves": [
+          {
+            "power": 60,
+            "type": "grass",
+            "damage_class": "special",
+            "name": "Magical Leaf",
+            "effect": "Never misses."
+          },
+          {
+            "type": "grass",
+            "damage_class": "status",
+            "name": "Leech Seed",
+            "effect": "Seeds the target, stealing HP from it every turn."
+          },
+          {
+            "type": "grass",
+            "damage_class": "special",
+            "name": "Grass Knot",
+            "effect": "Inflicts more damage to heavier targets, with a maximum of 120 power."
+          },
+          {
+            "type": "grass",
+            "damage_class": "status",
+            "name": "Stun Spore",
+            "effect": "Paralyzes the target."
+          }
+        ],
+        "ability": {
+          "name": "Natural Cure",
+          "effect": "Cures any major status ailment upon switching out."
+        },
+        "sprite": "315",
+        "types": [
+          "grass",
+          "poison"
+        ],
+        "stats": {
+          "hp": 50,
+          "atk": 60,
+          "def": 45,
+          "spa": 100,
+          "spd": 80,
+          "spe": 65
+        }
+      },
+      {
+        "name": "ninetales",
+        "level": "23",
+        "moves": [
+          {
+            "power": 90,
+            "type": "fire",
+            "damage_class": "special",
+            "name": "Flamethrower",
+            "effect": "Has a 10% chance to burn the target."
+          },
+          {
+            "type": "normal",
+            "damage_class": "status",
+            "name": "Safeguard",
+            "effect": "Protects the user's field from major status ailments and confusion for five turns."
+          },
+          {
+            "type": "ghost",
+            "damage_class": "status",
+            "name": "Confuse Ray",
+            "effect": "Confuses the target."
+          },
+          {
+            "power": 60,
+            "type": "ghost",
+            "damage_class": "special",
+            "name": "Ominous Wind",
+            "effect": "Has a 10% chance to raise all of the user's stats by one stage."
+          }
+        ],
+        "ability": {
+          "name": "Flash Fire",
+          "effect": "Protects against fire moves.  Once one has been blocked, the Pokémon's own Fire moves inflict 1.5× damage until it leaves battle."
+        },
+        "held": {
+          "sprite": "sitrus-berry",
+          "name": "Sitrus Berry",
+          "effect": "Held: Consumed at 1/2 max HP to recover 1/4 max HP."
+        },
+        "sprite": "38",
+        "types": [
+          "fire"
+        ],
+        "stats": {
+          "hp": 73,
+          "atk": 76,
+          "def": 75,
+          "spa": 81,
+          "spd": 100,
+          "spe": 100
         }
       }
     ]
@@ -3056,31 +3484,30 @@
         "level": "24",
         "moves": [
           {
-            "power": 40,
-            "type": "fire",
-            "damage_class": "special",
-            "name": "Ember",
-            "effect": "Has a 10% chance to burn the target."
+            "type": "psychic",
+            "damage_class": "status",
+            "name": "Light Screen",
+            "effect": "Reduces damage from special attacks by 50% for five turns."
           },
           {
             "power": 60,
-            "type": "dark",
-            "damage_class": "physical",
-            "name": "Feint Attack",
+            "type": "electric",
+            "damage_class": "special",
+            "name": "Shock Wave",
             "effect": "Never misses."
           },
           {
+            "power": 60,
             "type": "normal",
-            "damage_class": "status",
-            "name": "Smokescreen",
-            "effect": "Lowers the target's accuracy by one stage."
+            "damage_class": "special",
+            "name": "Swift",
+            "effect": "Never misses."
           },
           {
-            "power": 35,
-            "type": "fire",
-            "damage_class": "special",
-            "name": "Fire Spin",
-            "effect": "Prevents the target from fleeing and inflicts damage for 2-5 turns."
+            "type": "fighting",
+            "damage_class": "physical",
+            "name": "Low Kick",
+            "effect": "Inflicts more damage to heavier targets, with a maximum of 120 power."
           }
         ],
         "ability": {
@@ -3106,29 +3533,30 @@
         "level": "27",
         "moves": [
           {
-            "type": "psychic",
+            "type": "normal",
+            "damage_class": "physical",
+            "name": "Flail",
+            "effect": "Inflicts more damage when the user has less HP remaining, with a maximum of 200 power."
+          },
+          {
+            "power": 65,
+            "type": "ice",
+            "damage_class": "physical",
+            "name": "Ice Fang",
+            "effect": "Has a 10% chance to freeze the target and a $effect_chance% chance to make the target flinch."
+          },
+          {
+            "type": "normal",
             "damage_class": "status",
-            "name": "Reflect",
-            "effect": "Reduces damage from physical attacks by half."
+            "name": "Scary Face",
+            "effect": "Lowers the target's Speed by two stages."
           },
           {
             "power": 60,
-            "type": "grass",
-            "damage_class": "special",
-            "name": "Magical Leaf",
-            "effect": "Never misses."
-          },
-          {
-            "type": "normal",
-            "damage_class": "status",
-            "name": "Nature Power",
-            "effect": "Uses a move which depends upon the terrain."
-          },
-          {
-            "type": "normal",
+            "type": "dark",
             "damage_class": "physical",
-            "name": "Natural Gift",
-            "effect": "Power and type depend on the held berry."
+            "name": "Bite",
+            "effect": "Has a 30% chance to make the target flinch."
           }
         ],
         "ability": {
@@ -3696,7 +4124,7 @@
     ]
   },
   "ariana1": {
-    "name": "Executive Ariana & Grunt",
+    "name": "Executive Ariana",
     "speciality": "",
     "img": "/leaders/gs-ariana",
     "pokemon": [
@@ -4669,420 +5097,6 @@
           "spa": 105,
           "spd": 52,
           "spe": 71
-        }
-      }
-    ]
-  },
-  "ethan": {
-    "name": "Ethan",
-    "pokemon": [
-      {
-        "name": "nidorino",
-        "level": "21",
-        "moves": [
-          {
-            "power": 30,
-            "type": "fighting",
-            "damage_class": "physical",
-            "name": "Double Kick",
-            "effect": "Hits twice in one turn."
-          },
-          {
-            "power": 110,
-            "type": "ice",
-            "damage_class": "special",
-            "name": "Blizzard",
-            "effect": "Has a 10% chance to freeze the target."
-          },
-          {
-            "power": 35,
-            "type": "flying",
-            "damage_class": "physical",
-            "name": "Peck"
-          },
-          {
-            "power": 110,
-            "type": "electric",
-            "damage_class": "special",
-            "name": "Thunder",
-            "effect": "Has a 30% chance to paralyze the target."
-          }
-        ],
-        "ability": {
-          "name": "Poison Point",
-          "effect": "Has a 30% chance of poisoning attacking Pokémon on contact."
-        },
-        "sprite": "33",
-        "types": [
-          "poison"
-        ],
-        "stats": {
-          "hp": 61,
-          "atk": 72,
-          "def": 57,
-          "spa": 55,
-          "spd": 55,
-          "spe": 65
-        }
-      },
-      {
-        "name": "marill",
-        "level": "21",
-        "moves": [
-          {
-            "power": 65,
-            "type": "water",
-            "damage_class": "special",
-            "name": "Bubble Beam",
-            "effect": "Has a 10% chance to lower the target's Speed by one stage."
-          },
-          {
-            "type": "normal",
-            "damage_class": "status",
-            "name": "Double Team",
-            "effect": "Raises the user's evasion by one stage."
-          },
-          {
-            "power": 110,
-            "type": "ice",
-            "damage_class": "special",
-            "name": "Blizzard",
-            "effect": "Has a 10% chance to freeze the target."
-          },
-          {
-            "power": 150,
-            "priority": -3,
-            "type": "fighting",
-            "damage_class": "physical",
-            "name": "Focus Punch",
-            "effect": "If the user takes damage before attacking, the attack is canceled."
-          }
-        ],
-        "ability": {
-          "name": "Thick Fat",
-          "effect": "Halves damage from fire and ice moves."
-        },
-        "sprite": "183",
-        "types": [
-          "water",
-          "fairy"
-        ],
-        "stats": {
-          "hp": 70,
-          "atk": 20,
-          "def": 50,
-          "spa": 50,
-          "spd": 50,
-          "spe": 40
-        }
-      },
-      {
-        "name": "tangela",
-        "level": "21",
-        "moves": [
-          {
-            "type": "grass",
-            "damage_class": "status",
-            "name": "Sleep Powder",
-            "effect": "Puts the target to sleep."
-          },
-          {
-            "type": "normal",
-            "damage_class": "status",
-            "name": "Growth",
-            "effect": "Raises the user's Attack and Special Attack by one stage."
-          },
-          {
-            "type": "grass",
-            "damage_class": "special",
-            "name": "Grass Knot",
-            "effect": "Inflicts more damage to heavier targets, with a maximum of 120 power."
-          },
-          {
-            "power": 120,
-            "type": "grass",
-            "damage_class": "special",
-            "name": "Solar Beam",
-            "effect": "Requires a turn to charge before attacking."
-          }
-        ],
-        "ability": {
-          "name": "Chlorophyll",
-          "effect": "Doubles Speed during strong sunlight."
-        },
-        "sprite": "114",
-        "types": [
-          "grass"
-        ],
-        "stats": {
-          "hp": 65,
-          "atk": 55,
-          "def": 115,
-          "spa": 100,
-          "spd": 40,
-          "spe": 60
-        }
-      },
-      {
-        "name": "arcanine",
-        "level": "23",
-        "moves": [
-          {
-            "power": 95,
-            "type": "fire",
-            "damage_class": "special",
-            "name": "Heat Wave",
-            "effect": "Has a 10% chance to burn the target."
-          },
-          {
-            "power": 40,
-            "type": "fighting",
-            "damage_class": "physical",
-            "name": "Rock Smash",
-            "effect": "Has a 50% chance to lower the target's Defense by one stage."
-          },
-          {
-            "priority": -6,
-            "type": "normal",
-            "damage_class": "status",
-            "name": "Roar",
-            "effect": "Immediately ends wild battles.  Forces trainers to switch Pokémon."
-          },
-          {
-            "power": 80,
-            "type": "steel",
-            "damage_class": "physical",
-            "name": "Iron Head",
-            "effect": "Has a 30% chance to make the target flinch."
-          }
-        ],
-        "ability": {
-          "name": "Intimidate",
-          "effect": "Lowers opponents' Attack one stage upon entering battle."
-        },
-        "held": {
-          "sprite": "sitrus-berry",
-          "name": "Sitrus Berry",
-          "effect": "Held: Consumed at 1/2 max HP to recover 1/4 max HP."
-        },
-        "sprite": "59",
-        "types": [
-          "fire"
-        ],
-        "stats": {
-          "hp": 90,
-          "atk": 110,
-          "def": 80,
-          "spa": 100,
-          "spd": 80,
-          "spe": 95
-        }
-      }
-    ]
-  },
-  "lyra": {
-    "name": "Lyra",
-    "pokemon": [
-      {
-        "name": "nidorina",
-        "level": "21",
-        "moves": [
-          {
-            "power": 30,
-            "type": "fighting",
-            "damage_class": "physical",
-            "name": "Double Kick",
-            "effect": "Hits twice in one turn."
-          },
-          {
-            "power": 110,
-            "type": "ice",
-            "damage_class": "special",
-            "name": "Blizzard",
-            "effect": "Has a 10% chance to freeze the target."
-          },
-          {
-            "power": 60,
-            "type": "flying",
-            "damage_class": "physical",
-            "name": "Aerial Ace",
-            "effect": "Never misses."
-          },
-          {
-            "power": 110,
-            "type": "electric",
-            "damage_class": "special",
-            "name": "Thunder",
-            "effect": "Has a 30% chance to paralyze the target."
-          }
-        ],
-        "ability": {
-          "name": "Poison Point",
-          "effect": "Has a 30% chance of poisoning attacking Pokémon on contact."
-        },
-        "sprite": "30",
-        "types": [
-          "poison"
-        ],
-        "stats": {
-          "hp": 70,
-          "atk": 62,
-          "def": 67,
-          "spa": 55,
-          "spd": 55,
-          "spe": 56
-        }
-      },
-      {
-        "name": "marill",
-        "level": "21",
-        "moves": [
-          {
-            "power": 65,
-            "type": "water",
-            "damage_class": "special",
-            "name": "Bubble Beam",
-            "effect": "Has a 10% chance to lower the target's Speed by one stage."
-          },
-          {
-            "type": "normal",
-            "damage_class": "status",
-            "name": "Double Team",
-            "effect": "Raises the user's evasion by one stage."
-          },
-          {
-            "power": 110,
-            "type": "ice",
-            "damage_class": "special",
-            "name": "Blizzard",
-            "effect": "Has a 10% chance to freeze the target."
-          },
-          {
-            "power": 150,
-            "priority": -3,
-            "type": "fighting",
-            "damage_class": "physical",
-            "name": "Focus Punch",
-            "effect": "If the user takes damage before attacking, the attack is canceled."
-          }
-        ],
-        "ability": {
-          "name": "Thick Fat",
-          "effect": "Halves damage from fire and ice moves."
-        },
-        "sprite": "183",
-        "types": [
-          "water",
-          "fairy"
-        ],
-        "stats": {
-          "hp": 70,
-          "atk": 20,
-          "def": 50,
-          "spa": 50,
-          "spd": 50,
-          "spe": 40
-        }
-      },
-      {
-        "name": "roselia",
-        "level": "21",
-        "moves": [
-          {
-            "power": 60,
-            "type": "grass",
-            "damage_class": "special",
-            "name": "Magical Leaf",
-            "effect": "Never misses."
-          },
-          {
-            "type": "grass",
-            "damage_class": "status",
-            "name": "Leech Seed",
-            "effect": "Seeds the target, stealing HP from it every turn."
-          },
-          {
-            "type": "grass",
-            "damage_class": "special",
-            "name": "Grass Knot",
-            "effect": "Inflicts more damage to heavier targets, with a maximum of 120 power."
-          },
-          {
-            "type": "grass",
-            "damage_class": "status",
-            "name": "Stun Spore",
-            "effect": "Paralyzes the target."
-          }
-        ],
-        "ability": {
-          "name": "Natural Cure",
-          "effect": "Cures any major status ailment upon switching out."
-        },
-        "sprite": "315",
-        "types": [
-          "grass",
-          "poison"
-        ],
-        "stats": {
-          "hp": 50,
-          "atk": 60,
-          "def": 45,
-          "spa": 100,
-          "spd": 80,
-          "spe": 65
-        }
-      },
-      {
-        "name": "ninetales",
-        "level": "23",
-        "moves": [
-          {
-            "power": 90,
-            "type": "fire",
-            "damage_class": "special",
-            "name": "Flamethrower",
-            "effect": "Has a 10% chance to burn the target."
-          },
-          {
-            "type": "normal",
-            "damage_class": "status",
-            "name": "Safeguard",
-            "effect": "Protects the user's field from major status ailments and confusion for five turns."
-          },
-          {
-            "type": "ghost",
-            "damage_class": "status",
-            "name": "Confuse Ray",
-            "effect": "Confuses the target."
-          },
-          {
-            "power": 60,
-            "type": "ghost",
-            "damage_class": "special",
-            "name": "Ominous Wind",
-            "effect": "Has a 10% chance to raise all of the user's stats by one stage."
-          }
-        ],
-        "ability": {
-          "name": "Flash Fire",
-          "effect": "Protects against fire moves.  Once one has been blocked, the Pokémon's own Fire moves inflict 1.5× damage until it leaves battle."
-        },
-        "held": {
-          "sprite": "sitrus-berry",
-          "name": "Sitrus Berry",
-          "effect": "Held: Consumed at 1/2 max HP to recover 1/4 max HP."
-        },
-        "sprite": "38",
-        "types": [
-          "fire"
-        ],
-        "stats": {
-          "hp": 73,
-          "atk": 76,
-          "def": 75,
-          "spa": 81,
-          "spd": 100,
-          "spe": 100
         }
       }
     ]
