@@ -219,6 +219,6 @@
   .yellow { @apply hover:text-yellow-400 }
 
     :global(.game--emkaizo), :global(.game--fr), :global(.game--sp), :global(.game--bd), { @apply -translate-x-1; }
-  :global(.game--sw), :global(.game--sh), { @apply -translate-x-3; }
+    :global(.game--sw), :global(.game--sh), { @apply -translate-x-3 -mr-4; }
 
 </style>
