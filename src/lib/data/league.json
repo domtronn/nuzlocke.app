@@ -40093,7 +40093,8 @@
           ],
           "held": "mawilite"
         }
-      ]
+      ],
+      "tagBattle": true
     },
     "ev4": {
       "name": "Admin Archer",
@@ -47169,7 +47170,8 @@
           ],
           "held": "houndoominite"
         }
-      ]
+      ],
+      "tagBattle": true
     },
     "ev4_hard": {
       "name": "Giovanni",
@@ -47503,7 +47505,7 @@
           "held": "assault-vest"
         },
         {
-          "name": "mewtwo-y",
+          "name": "mewtwo-mega-y",
           "level": "80",
           "moves": [
             "expanding-force",
@@ -47515,7 +47517,8 @@
           "abilities": [
             "unnerve",
             "insomnia"
-          ]
+          ],
+          "sprite": "mewtwo-mega-y"
         }
       ],
       "doubleBattle": true
@@ -69661,6 +69664,7 @@
           "abilities": [
             "torrent"
           ],
+          "tera": "water",
           "starter": "fire"
         },
         {
@@ -69676,6 +69680,7 @@
           "abilities": [
             "blaze"
           ],
+          "tera": "fire",
           "starter": "grass"
         },
         {
@@ -69691,6 +69696,7 @@
           "abilities": [
             "overgrow"
           ],
+          "tera": "grass",
           "starter": "water"
         }
       ]

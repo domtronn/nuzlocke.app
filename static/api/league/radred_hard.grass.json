@@ -5049,6 +5049,352 @@
           "spe": 95
         }
       }
+    ],
+    "tagBattle": true
+  },
+  "ev4_hard": {
+    "name": "Giovanni",
+    "speciality": "",
+    "img": "/leaders/frlg-giovanni",
+    "pokemon": [
+      {
+        "name": "mamoswine",
+        "level": "57",
+        "moves": [
+          {
+            "power": 100,
+            "type": "rock",
+            "damage_class": "physical",
+            "name": "Stone Edge",
+            "effect": "Has an increased chance for a critical hit."
+          },
+          {
+            "power": 40,
+            "priority": 1,
+            "type": "ice",
+            "damage_class": "physical",
+            "name": "Ice Shard"
+          },
+          {
+            "power": 120,
+            "type": "ground",
+            "damage_class": "physical",
+            "name": "Headlong Rush"
+          },
+          {
+            "power": 85,
+            "type": "ice",
+            "damage_class": "physical",
+            "name": "Icicle Crash",
+            "effect": "Has a 30% chance to make the target flinch."
+          }
+        ],
+        "ability": {
+          "name": "Thick Fat",
+          "effect": "Halves damage from fire and ice moves."
+        },
+        "held": {
+          "sprite": "focus-sash",
+          "name": "Focus Sash",
+          "effect": "Held: Holder survives any single-hit attack at 1 HP if at max HP, then the item is consumed."
+        },
+        "sprite": "473",
+        "types": [
+          "ice",
+          "ground"
+        ],
+        "stats": {
+          "hp": 110,
+          "atk": 130,
+          "def": 80,
+          "spa": 70,
+          "spd": 60,
+          "spe": 80
+        }
+      },
+      {
+        "name": "dracovish",
+        "level": "57",
+        "moves": [
+          {
+            "power": 85,
+            "type": "water",
+            "damage_class": "physical",
+            "name": "Fishious Rend"
+          },
+          {
+            "power": 85,
+            "type": "psychic",
+            "damage_class": "physical",
+            "name": "Psychic Fangs",
+            "effect": "Destroys Reflect and Light Screen."
+          },
+          {
+            "power": 80,
+            "type": "dark",
+            "damage_class": "physical",
+            "name": "Crunch",
+            "effect": "Has a 20% chance to lower the target's Defense by one stage."
+          },
+          {
+            "power": 80,
+            "type": "dragon",
+            "damage_class": "physical",
+            "name": "Dragon Claw"
+          }
+        ],
+        "ability": {
+          "name": "Sand Rush",
+          "effect": "Doubles Speed during a sandstorm.  Protects against sandstorm damage."
+        },
+        "held": {
+          "sprite": "water-gem",
+          "name": "Water Gem",
+          "effect": "Held: When the holder uses a damaging water-type move, the move has 1.5× power and this item is consumed."
+        },
+        "sprite": "882",
+        "types": [
+          "water",
+          "dragon"
+        ],
+        "stats": {
+          "hp": 90,
+          "atk": 90,
+          "def": 100,
+          "spa": 70,
+          "spd": 80,
+          "spe": 75
+        }
+      },
+      {
+        "name": "gyarados",
+        "level": "57",
+        "moves": [
+          {
+            "type": "dragon",
+            "damage_class": "status",
+            "name": "Dragon Dance",
+            "effect": "Raises the user's Attack and Speed by one stage."
+          },
+          {
+            "power": 80,
+            "type": "water",
+            "damage_class": "physical",
+            "name": "Waterfall",
+            "effect": "Has a 20% chance to make the target flinch."
+          },
+          {
+            "power": 100,
+            "type": "ground",
+            "damage_class": "physical",
+            "name": "Earthquake",
+            "effect": "Inflicts regular damage and can hit Dig users."
+          },
+          {
+            "power": 85,
+            "type": "flying",
+            "damage_class": "physical",
+            "name": "Bounce",
+            "effect": "User bounces high into the air, dodging all attacks, and hits next turn."
+          }
+        ],
+        "ability": {
+          "name": "Moxie",
+          "effect": "Raises Attack one stage upon KOing a Pokémon."
+        },
+        "held": {
+          "sprite": "flyinium-z--held",
+          "name": "Flyinium Z",
+          "effect": "Held: Allows a Pokémon to use the Z-move equivalents of its Flying moves."
+        },
+        "sprite": "130",
+        "types": [
+          "water",
+          "flying"
+        ],
+        "stats": {
+          "hp": 95,
+          "atk": 125,
+          "def": 79,
+          "spa": 60,
+          "spd": 100,
+          "spe": 81
+        }
+      },
+      {
+        "name": "regirock",
+        "level": "57",
+        "moves": [
+          {
+            "type": "ghost",
+            "damage_class": "status",
+            "name": "Curse",
+            "effect": "Ghosts pay half their max HP to hurt the target every turn.  Others decrease Speed but raise Attack and Defense."
+          },
+          {
+            "power": 75,
+            "type": "fighting",
+            "damage_class": "physical",
+            "name": "Drain Punch",
+            "effect": "Drains half the damage inflicted to heal the user."
+          },
+          {
+            "power": 75,
+            "type": "rock",
+            "damage_class": "physical",
+            "name": "Rock Slide",
+            "effect": "Has a 30% chance to make the target flinch."
+          },
+          {
+            "power": 100,
+            "type": "ground",
+            "damage_class": "physical",
+            "name": "Earthquake",
+            "effect": "Inflicts regular damage and can hit Dig users."
+          }
+        ],
+        "ability": {
+          "name": "Solid Rock",
+          "effect": "Decreases damage taken from super-effective moves by 1/4."
+        },
+        "held": {
+          "sprite": "leftovers",
+          "name": "Leftovers",
+          "effect": "Held: Restores 1/16 (6.25%) holder's max HP at the end of each turn."
+        },
+        "sprite": "377",
+        "types": [
+          "rock"
+        ],
+        "stats": {
+          "hp": 80,
+          "atk": 100,
+          "def": 200,
+          "spa": 50,
+          "spd": 100,
+          "spe": 50
+        }
+      },
+      {
+        "name": "excadrill",
+        "level": "57",
+        "moves": [
+          {
+            "type": "normal",
+            "damage_class": "status",
+            "name": "Swords Dance",
+            "effect": "Raises the user's Attack by two stages."
+          },
+          {
+            "power": 100,
+            "type": "ground",
+            "damage_class": "physical",
+            "name": "Earthquake",
+            "effect": "Inflicts regular damage and can hit Dig users."
+          },
+          {
+            "power": 80,
+            "type": "steel",
+            "damage_class": "physical",
+            "name": "Iron Head",
+            "effect": "Has a 30% chance to make the target flinch."
+          },
+          {
+            "power": 75,
+            "type": "rock",
+            "damage_class": "physical",
+            "name": "Rock Slide",
+            "effect": "Has a 30% chance to make the target flinch."
+          }
+        ],
+        "ability": {
+          "name": "Sand Rush",
+          "effect": "Doubles Speed during a sandstorm.  Protects against sandstorm damage."
+        },
+        "held": {
+          "sprite": "focus-sash",
+          "name": "Focus Sash",
+          "effect": "Held: Holder survives any single-hit attack at 1 HP if at max HP, then the item is consumed."
+        },
+        "sprite": "530",
+        "types": [
+          "ground",
+          "steel"
+        ],
+        "stats": {
+          "hp": 110,
+          "atk": 135,
+          "def": 60,
+          "spa": 50,
+          "spd": 65,
+          "spe": 88
+        }
+      },
+      {
+        "name": "garchomp",
+        "level": "57",
+        "moves": [
+          {
+            "type": "normal",
+            "damage_class": "status",
+            "name": "Swords Dance",
+            "effect": "Raises the user's Attack by two stages."
+          },
+          {
+            "power": 100,
+            "type": "ground",
+            "damage_class": "physical",
+            "name": "Earthquake",
+            "effect": "Inflicts regular damage and can hit Dig users."
+          },
+          {
+            "power": 25,
+            "type": "dragon",
+            "damage_class": "physical",
+            "name": "Scale Shot",
+            "effect": "Boosts the user's Speed and lowers their Defense by one stage after inflicting damage two to five times in a row."
+          },
+          {
+            "power": 100,
+            "type": "rock",
+            "damage_class": "physical",
+            "name": "Stone Edge",
+            "effect": "Has an increased chance for a critical hit."
+          }
+        ],
+        "ability": {
+          "name": "Sand Veil",
+          "effect": "Increases evasion to 1.25× during a sandstorm.  Protects against sandstorm damage."
+        },
+        "abilities": [
+          {
+            "name": "Sand Veil",
+            "effect": "Increases evasion to 1.25× during a sandstorm.  Protects against sandstorm damage."
+          },
+          {
+            "name": "Sand Force",
+            "effect": "Strengthens rock, ground, and steel moves to 1.3× their power during a sandstorm.  Protects against sandstorm damage."
+          }
+        ],
+        "held": {
+          "sprite": "garchompite",
+          "name": "Garchompite",
+          "effect": "Held: Allows Garchomp to Mega Evolve into Mega Garchomp."
+        },
+        "sprite": "445",
+        "types": [
+          "dragon",
+          "ground"
+        ],
+        "stats": {
+          "hp": 108,
+          "atk": 130,
+          "def": 95,
+          "spa": 80,
+          "spd": 85,
+          "spe": 102
+        }
+      }
     ]
   },
   "mb5_hard": {
@@ -13666,351 +14012,6 @@
     ],
     "effect": "grassy-terrain"
   },
-  "ev4_hard": {
-    "name": "Giovanni",
-    "speciality": "",
-    "img": "/leaders/frlg-giovanni",
-    "pokemon": [
-      {
-        "name": "mamoswine",
-        "level": "57",
-        "moves": [
-          {
-            "power": 100,
-            "type": "rock",
-            "damage_class": "physical",
-            "name": "Stone Edge",
-            "effect": "Has an increased chance for a critical hit."
-          },
-          {
-            "power": 40,
-            "priority": 1,
-            "type": "ice",
-            "damage_class": "physical",
-            "name": "Ice Shard"
-          },
-          {
-            "power": 120,
-            "type": "ground",
-            "damage_class": "physical",
-            "name": "Headlong Rush"
-          },
-          {
-            "power": 85,
-            "type": "ice",
-            "damage_class": "physical",
-            "name": "Icicle Crash",
-            "effect": "Has a 30% chance to make the target flinch."
-          }
-        ],
-        "ability": {
-          "name": "Thick Fat",
-          "effect": "Halves damage from fire and ice moves."
-        },
-        "held": {
-          "sprite": "focus-sash",
-          "name": "Focus Sash",
-          "effect": "Held: Holder survives any single-hit attack at 1 HP if at max HP, then the item is consumed."
-        },
-        "sprite": "473",
-        "types": [
-          "ice",
-          "ground"
-        ],
-        "stats": {
-          "hp": 110,
-          "atk": 130,
-          "def": 80,
-          "spa": 70,
-          "spd": 60,
-          "spe": 80
-        }
-      },
-      {
-        "name": "dracovish",
-        "level": "57",
-        "moves": [
-          {
-            "power": 85,
-            "type": "water",
-            "damage_class": "physical",
-            "name": "Fishious Rend"
-          },
-          {
-            "power": 85,
-            "type": "psychic",
-            "damage_class": "physical",
-            "name": "Psychic Fangs",
-            "effect": "Destroys Reflect and Light Screen."
-          },
-          {
-            "power": 80,
-            "type": "dark",
-            "damage_class": "physical",
-            "name": "Crunch",
-            "effect": "Has a 20% chance to lower the target's Defense by one stage."
-          },
-          {
-            "power": 80,
-            "type": "dragon",
-            "damage_class": "physical",
-            "name": "Dragon Claw"
-          }
-        ],
-        "ability": {
-          "name": "Sand Rush",
-          "effect": "Doubles Speed during a sandstorm.  Protects against sandstorm damage."
-        },
-        "held": {
-          "sprite": "water-gem",
-          "name": "Water Gem",
-          "effect": "Held: When the holder uses a damaging water-type move, the move has 1.5× power and this item is consumed."
-        },
-        "sprite": "882",
-        "types": [
-          "water",
-          "dragon"
-        ],
-        "stats": {
-          "hp": 90,
-          "atk": 90,
-          "def": 100,
-          "spa": 70,
-          "spd": 80,
-          "spe": 75
-        }
-      },
-      {
-        "name": "gyarados",
-        "level": "57",
-        "moves": [
-          {
-            "type": "dragon",
-            "damage_class": "status",
-            "name": "Dragon Dance",
-            "effect": "Raises the user's Attack and Speed by one stage."
-          },
-          {
-            "power": 80,
-            "type": "water",
-            "damage_class": "physical",
-            "name": "Waterfall",
-            "effect": "Has a 20% chance to make the target flinch."
-          },
-          {
-            "power": 100,
-            "type": "ground",
-            "damage_class": "physical",
-            "name": "Earthquake",
-            "effect": "Inflicts regular damage and can hit Dig users."
-          },
-          {
-            "power": 85,
-            "type": "flying",
-            "damage_class": "physical",
-            "name": "Bounce",
-            "effect": "User bounces high into the air, dodging all attacks, and hits next turn."
-          }
-        ],
-        "ability": {
-          "name": "Moxie",
-          "effect": "Raises Attack one stage upon KOing a Pokémon."
-        },
-        "held": {
-          "sprite": "flyinium-z--held",
-          "name": "Flyinium Z",
-          "effect": "Held: Allows a Pokémon to use the Z-move equivalents of its Flying moves."
-        },
-        "sprite": "130",
-        "types": [
-          "water",
-          "flying"
-        ],
-        "stats": {
-          "hp": 95,
-          "atk": 125,
-          "def": 79,
-          "spa": 60,
-          "spd": 100,
-          "spe": 81
-        }
-      },
-      {
-        "name": "regirock",
-        "level": "57",
-        "moves": [
-          {
-            "type": "ghost",
-            "damage_class": "status",
-            "name": "Curse",
-            "effect": "Ghosts pay half their max HP to hurt the target every turn.  Others decrease Speed but raise Attack and Defense."
-          },
-          {
-            "power": 75,
-            "type": "fighting",
-            "damage_class": "physical",
-            "name": "Drain Punch",
-            "effect": "Drains half the damage inflicted to heal the user."
-          },
-          {
-            "power": 75,
-            "type": "rock",
-            "damage_class": "physical",
-            "name": "Rock Slide",
-            "effect": "Has a 30% chance to make the target flinch."
-          },
-          {
-            "power": 100,
-            "type": "ground",
-            "damage_class": "physical",
-            "name": "Earthquake",
-            "effect": "Inflicts regular damage and can hit Dig users."
-          }
-        ],
-        "ability": {
-          "name": "Solid Rock",
-          "effect": "Decreases damage taken from super-effective moves by 1/4."
-        },
-        "held": {
-          "sprite": "leftovers",
-          "name": "Leftovers",
-          "effect": "Held: Restores 1/16 (6.25%) holder's max HP at the end of each turn."
-        },
-        "sprite": "377",
-        "types": [
-          "rock"
-        ],
-        "stats": {
-          "hp": 80,
-          "atk": 100,
-          "def": 200,
-          "spa": 50,
-          "spd": 100,
-          "spe": 50
-        }
-      },
-      {
-        "name": "excadrill",
-        "level": "57",
-        "moves": [
-          {
-            "type": "normal",
-            "damage_class": "status",
-            "name": "Swords Dance",
-            "effect": "Raises the user's Attack by two stages."
-          },
-          {
-            "power": 100,
-            "type": "ground",
-            "damage_class": "physical",
-            "name": "Earthquake",
-            "effect": "Inflicts regular damage and can hit Dig users."
-          },
-          {
-            "power": 80,
-            "type": "steel",
-            "damage_class": "physical",
-            "name": "Iron Head",
-            "effect": "Has a 30% chance to make the target flinch."
-          },
-          {
-            "power": 75,
-            "type": "rock",
-            "damage_class": "physical",
-            "name": "Rock Slide",
-            "effect": "Has a 30% chance to make the target flinch."
-          }
-        ],
-        "ability": {
-          "name": "Sand Rush",
-          "effect": "Doubles Speed during a sandstorm.  Protects against sandstorm damage."
-        },
-        "held": {
-          "sprite": "focus-sash",
-          "name": "Focus Sash",
-          "effect": "Held: Holder survives any single-hit attack at 1 HP if at max HP, then the item is consumed."
-        },
-        "sprite": "530",
-        "types": [
-          "ground",
-          "steel"
-        ],
-        "stats": {
-          "hp": 110,
-          "atk": 135,
-          "def": 60,
-          "spa": 50,
-          "spd": 65,
-          "spe": 88
-        }
-      },
-      {
-        "name": "garchomp",
-        "level": "57",
-        "moves": [
-          {
-            "type": "normal",
-            "damage_class": "status",
-            "name": "Swords Dance",
-            "effect": "Raises the user's Attack by two stages."
-          },
-          {
-            "power": 100,
-            "type": "ground",
-            "damage_class": "physical",
-            "name": "Earthquake",
-            "effect": "Inflicts regular damage and can hit Dig users."
-          },
-          {
-            "power": 25,
-            "type": "dragon",
-            "damage_class": "physical",
-            "name": "Scale Shot",
-            "effect": "Boosts the user's Speed and lowers their Defense by one stage after inflicting damage two to five times in a row."
-          },
-          {
-            "power": 100,
-            "type": "rock",
-            "damage_class": "physical",
-            "name": "Stone Edge",
-            "effect": "Has an increased chance for a critical hit."
-          }
-        ],
-        "ability": {
-          "name": "Sand Veil",
-          "effect": "Increases evasion to 1.25× during a sandstorm.  Protects against sandstorm damage."
-        },
-        "abilities": [
-          {
-            "name": "Sand Veil",
-            "effect": "Increases evasion to 1.25× during a sandstorm.  Protects against sandstorm damage."
-          },
-          {
-            "name": "Sand Force",
-            "effect": "Strengthens rock, ground, and steel moves to 1.3× their power during a sandstorm.  Protects against sandstorm damage."
-          }
-        ],
-        "held": {
-          "sprite": "garchompite",
-          "name": "Garchompite",
-          "effect": "Held: Allows Garchomp to Mega Evolve into Mega Garchomp."
-        },
-        "sprite": "445",
-        "types": [
-          "dragon",
-          "ground"
-        ],
-        "stats": {
-          "hp": 108,
-          "atk": 130,
-          "def": 95,
-          "spa": 80,
-          "spd": 85,
-          "spe": 102
-        }
-      }
-    ]
-  },
   "ev5_hard": {
     "name": "Admin Archer",
     "speciality": "",
@@ -14532,5 +14533,345 @@
         }
       }
     ]
+  },
+  "ev7_hard": {
+    "name": "Giovanni",
+    "speciality": "",
+    "img": "/leaders/frlg-giovanni",
+    "pokemon": [
+      {
+        "name": "spiritomb",
+        "level": "80",
+        "moves": [
+          {
+            "type": "fire",
+            "damage_class": "status",
+            "name": "Will-O-Wisp",
+            "effect": "Burns the target."
+          },
+          {
+            "type": "dark",
+            "damage_class": "status",
+            "name": "Parting Shot",
+            "effect": "Lowers all targets' Attack and Special Attack by one stage.  Makes the user switch out."
+          },
+          {
+            "power": 80,
+            "type": "ghost",
+            "damage_class": "special",
+            "name": "Shadow Ball",
+            "effect": "Has a 20% chance to lower the target's Special Defense by one stage."
+          },
+          {
+            "power": 70,
+            "priority": 1,
+            "type": "dark",
+            "damage_class": "physical",
+            "name": "Sucker Punch",
+            "effect": "Only works if the target is about to use a damaging move."
+          }
+        ],
+        "ability": {
+          "name": "Intimidate",
+          "effect": "Lowers opponents' Attack one stage upon entering battle."
+        },
+        "held": {
+          "sprite": "figy-berry",
+          "name": "Figy Berry",
+          "effect": "Held: Consumed at 1/2 max HP to restore 1/8 max HP. Confuses Pokémon that dislike spicy flavor."
+        },
+        "sprite": "442",
+        "types": [
+          "ghost",
+          "dark"
+        ],
+        "stats": {
+          "hp": 50,
+          "atk": 92,
+          "def": 108,
+          "spa": 92,
+          "spd": 108,
+          "spe": 35
+        }
+      },
+      {
+        "name": "delphox",
+        "level": "80",
+        "moves": [
+          {
+            "power": 95,
+            "type": "fire",
+            "damage_class": "special",
+            "name": "Heat Wave",
+            "effect": "Has a 10% chance to burn the target."
+          },
+          {
+            "power": 80,
+            "type": "psychic",
+            "damage_class": "special",
+            "name": "Expanding Force"
+          },
+          {
+            "type": "grass",
+            "damage_class": "special",
+            "name": "Grass Knot",
+            "effect": "Inflicts more damage to heavier targets, with a maximum of 120 power."
+          },
+          {
+            "power": 80,
+            "type": "ghost",
+            "damage_class": "special",
+            "name": "Shadow Ball",
+            "effect": "Has a 20% chance to lower the target's Special Defense by one stage."
+          }
+        ],
+        "ability": {
+          "name": "Magic Guard",
+          "effect": "Protects against damage not directly caused by a move."
+        },
+        "held": {
+          "sprite": "focus-sash",
+          "name": "Focus Sash",
+          "effect": "Held: Holder survives any single-hit attack at 1 HP if at max HP, then the item is consumed."
+        },
+        "sprite": "655",
+        "types": [
+          "fire",
+          "psychic"
+        ],
+        "stats": {
+          "hp": 75,
+          "atk": 69,
+          "def": 72,
+          "spa": 114,
+          "spd": 100,
+          "spe": 104
+        }
+      },
+      {
+        "name": "silvally-fairy",
+        "level": "80",
+        "moves": [
+          {
+            "power": 120,
+            "type": "normal",
+            "damage_class": "physical",
+            "name": "Multi-Attack",
+            "effect": "If the user is holding a appropriate plate or drive, the damage inflicted will match it."
+          },
+          {
+            "power": 90,
+            "type": "fire",
+            "damage_class": "special",
+            "name": "Flamethrower",
+            "effect": "Has a 10% chance to burn the target."
+          },
+          {
+            "type": "dark",
+            "damage_class": "status",
+            "name": "Parting Shot",
+            "effect": "Lowers all targets' Attack and Special Attack by one stage.  Makes the user switch out."
+          },
+          {
+            "type": "electric",
+            "damage_class": "status",
+            "name": "Thunder Wave",
+            "effect": "Paralyzes the target."
+          }
+        ],
+        "ability": {
+          "name": "Battle Armor",
+          "effect": "Protects against critical hits."
+        },
+        "held": {
+          "sprite": "leftovers",
+          "name": "Leftovers",
+          "effect": "Held: Restores 1/16 (6.25%) holder's max HP at the end of each turn."
+        },
+        "imgUrl": "/radred/silvally-fairy",
+        "types": [
+          "fairy"
+        ],
+        "stats": {
+          "hp": 100,
+          "atk": 100,
+          "def": 100,
+          "spa": 100,
+          "spd": 100,
+          "spe": 100
+        }
+      },
+      {
+        "name": "moltres",
+        "level": "80",
+        "moves": [
+          {
+            "type": "dark",
+            "damage_class": "status",
+            "name": "Nasty Plot",
+            "effect": "Raises the user's Special Attack by two stages."
+          },
+          {
+            "power": 90,
+            "type": "dark",
+            "damage_class": "special",
+            "name": "Fiery Wrath"
+          },
+          {
+            "power": 110,
+            "type": "flying",
+            "damage_class": "special",
+            "name": "Hurricane",
+            "effect": "Has a 30% chance to confuse the target."
+          },
+          {
+            "type": "flying",
+            "damage_class": "status",
+            "name": "Roost",
+            "effect": "Heals the user by half its max HP."
+          }
+        ],
+        "ability": {
+          "name": "Berserk",
+          "effect": "Raises this Pokémon's Special Attack by one stage every time its HP drops below half."
+        },
+        "held": {
+          "sprite": "flyinium-z--held",
+          "name": "Flyinium Z",
+          "effect": "Held: Allows a Pokémon to use the Z-move equivalents of its Flying moves."
+        },
+        "sprite": "10171",
+        "types": [
+          "dark",
+          "flying"
+        ],
+        "stats": {
+          "hp": 90,
+          "atk": 85,
+          "def": 90,
+          "spa": 100,
+          "spd": 125,
+          "spe": 90
+        },
+        "icon": "moltres-galar"
+      },
+      {
+        "name": "genesect",
+        "level": "80",
+        "moves": [
+          {
+            "power": 70,
+            "type": "bug",
+            "damage_class": "physical",
+            "name": "U-turn",
+            "effect": "User must switch out after attacking."
+          },
+          {
+            "power": 80,
+            "type": "steel",
+            "damage_class": "physical",
+            "name": "Iron Head",
+            "effect": "Has a 30% chance to make the target flinch."
+          },
+          {
+            "power": 90,
+            "type": "ice",
+            "damage_class": "special",
+            "name": "Ice Beam",
+            "effect": "Has a 10% chance to freeze the target."
+          },
+          {
+            "power": 90,
+            "type": "fire",
+            "damage_class": "special",
+            "name": "Flamethrower",
+            "effect": "Has a 10% chance to burn the target."
+          }
+        ],
+        "ability": {
+          "name": "Download",
+          "effect": "Raises the attack stat corresponding to the opponents' weaker defense one stage upon entering battle."
+        },
+        "held": {
+          "sprite": "assault-vest",
+          "name": "Assault Vest",
+          "effect": "Raises the holder's Special Defense to 1.5×.  Prevents the holder from selecting a status move."
+        },
+        "sprite": "649",
+        "types": [
+          "bug",
+          "steel"
+        ],
+        "stats": {
+          "hp": 71,
+          "atk": 120,
+          "def": 95,
+          "spa": 120,
+          "spd": 95,
+          "spe": 99
+        }
+      },
+      {
+        "name": "mewtwo",
+        "level": "80",
+        "moves": [
+          {
+            "power": 80,
+            "type": "psychic",
+            "damage_class": "special",
+            "name": "Expanding Force"
+          },
+          {
+            "name": "Soul Robbery",
+            "effect": "The target's stat increases are stolen from it and applied to the user before dealing damage.",
+            "type": "psychic",
+            "power": "100",
+            "damage_class": "special"
+          },
+          {
+            "power": 90,
+            "type": "fire",
+            "damage_class": "special",
+            "name": "Flamethrower",
+            "effect": "Has a 10% chance to burn the target."
+          },
+          {
+            "power": 80,
+            "type": "fighting",
+            "damage_class": "special",
+            "name": "Aura Sphere",
+            "effect": "Never misses."
+          }
+        ],
+        "ability": {
+          "name": "Unnerve",
+          "effect": "Prevents opposing Pokémon from eating held Berries."
+        },
+        "abilities": [
+          {
+            "name": "Unnerve",
+            "effect": "Prevents opposing Pokémon from eating held Berries."
+          },
+          {
+            "name": "Insomnia",
+            "effect": "Prevents sleep."
+          }
+        ],
+        "sprite": "10044",
+        "types": [
+          "psychic"
+        ],
+        "stats": {
+          "hp": 106,
+          "atk": 150,
+          "def": 70,
+          "spa": 194,
+          "spd": 120,
+          "spe": 140
+        },
+        "icon": "mewtwo-mega-y"
+      }
+    ],
+    "doubleBattle": true
   }
 }

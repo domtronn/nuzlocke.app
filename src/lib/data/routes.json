@@ -38634,7 +38634,7 @@
     },
     {
       "type": "gym",
-      "name": "Diglett's Cave",
+      "name": "S.S. Anne",
       "value": "b2",
       "group": "rival",
       "boss": "Brendan"
@@ -38947,6 +38947,13 @@
       "value": "ev3",
       "group": "evil-team",
       "boss": "Archer & Ariana"
+    },
+    {
+      "type": "gym",
+      "name": "Silph Co.",
+      "value": "evg2",
+      "group": "evil-team",
+      "boss": "Giovanni"
     },
     {
       "type": "gym",
@@ -40354,7 +40361,7 @@
     },
     {
       "type": "gym",
-      "name": "Diglett's Cave",
+      "name": "S.S. Anne",
       "value": "b2_hard",
       "group": "rival",
       "boss": "Brendan"
@@ -40667,6 +40674,13 @@
       "value": "ev3_hard",
       "group": "evil-team",
       "boss": "Archer & Ariana"
+    },
+    {
+      "type": "gym",
+      "name": "Silph Co.",
+      "value": "ev4_hard",
+      "group": "evil-team",
+      "boss": "Giovanni"
     },
     {
       "type": "gym",
@@ -41494,21 +41508,21 @@
     {
       "type": "gym",
       "name": "Cerulean Cave",
-      "value": "ev4_hard",
+      "value": "ev5_hard",
       "group": "evil-team",
       "boss": "Admin Archer"
     },
     {
       "type": "gym",
       "name": "Cerulean Cave",
-      "value": "ev5_hard",
+      "value": "ev6_hard",
       "group": "evil-team",
       "boss": "Admin Ariana"
     },
     {
       "type": "gym",
       "name": "Cerulean Cave",
-      "value": "ev6_hard",
+      "value": "ev7_hard",
       "group": "evil-team",
       "boss": "Giovanni"
     }

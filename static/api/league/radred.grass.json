@@ -5093,6 +5093,288 @@
           "spe": 50
         }
       }
+    ],
+    "tagBattle": true
+  },
+  "evg2": {
+    "name": "Giovanni",
+    "speciality": "",
+    "img": "/leaders/frlg-giovanni",
+    "pokemon": [
+      {
+        "name": "hippowdon",
+        "level": "54",
+        "moves": [
+          {
+            "type": "rock",
+            "damage_class": "status",
+            "name": "Stealth Rock",
+            "effect": "Causes damage when opposing Pokémon switch in."
+          },
+          {
+            "power": 75,
+            "type": "rock",
+            "damage_class": "physical",
+            "name": "Rock Slide",
+            "effect": "Has a 30% chance to make the target flinch."
+          },
+          {
+            "priority": -6,
+            "type": "normal",
+            "damage_class": "status",
+            "name": "Roar",
+            "effect": "Immediately ends wild battles.  Forces trainers to switch Pokémon."
+          },
+          {
+            "power": 100,
+            "type": "ground",
+            "damage_class": "physical",
+            "name": "Earthquake",
+            "effect": "Inflicts regular damage and can hit Dig users."
+          }
+        ],
+        "ability": {
+          "name": "Sand Stream",
+          "effect": "Summons a sandstorm that lasts indefinitely upon entering battle."
+        },
+        "held": {
+          "sprite": "smooth-rock",
+          "name": "Smooth Rock",
+          "effect": "Held: Sandstorm by the holder lasts 8 rounds instead of 5."
+        },
+        "sprite": "450",
+        "types": [
+          "ground"
+        ],
+        "stats": {
+          "hp": 108,
+          "atk": 112,
+          "def": 118,
+          "spa": 68,
+          "spd": 72,
+          "spe": 47
+        }
+      },
+      {
+        "name": "excadrill",
+        "level": "55",
+        "moves": [
+          {
+            "power": 75,
+            "type": "rock",
+            "damage_class": "physical",
+            "name": "Rock Slide",
+            "effect": "Has a 30% chance to make the target flinch."
+          },
+          {
+            "power": 80,
+            "type": "steel",
+            "damage_class": "physical",
+            "name": "Iron Head",
+            "effect": "Has a 30% chance to make the target flinch."
+          },
+          {
+            "type": "normal",
+            "damage_class": "status",
+            "name": "Swords Dance",
+            "effect": "Raises the user's Attack by two stages."
+          },
+          {
+            "power": 100,
+            "type": "ground",
+            "damage_class": "physical",
+            "name": "Earthquake",
+            "effect": "Inflicts regular damage and can hit Dig users."
+          }
+        ],
+        "ability": {
+          "name": "Sand Rush",
+          "effect": "Doubles Speed during a sandstorm.  Protects against sandstorm damage."
+        },
+        "held": {
+          "sprite": "focus-sash",
+          "name": "Focus Sash",
+          "effect": "Held: Holder survives any single-hit attack at 1 HP if at max HP, then the item is consumed."
+        },
+        "sprite": "530",
+        "types": [
+          "ground",
+          "steel"
+        ],
+        "stats": {
+          "hp": 110,
+          "atk": 135,
+          "def": 60,
+          "spa": 50,
+          "spd": 65,
+          "spe": 88
+        }
+      },
+      {
+        "name": "kangaskhan",
+        "level": "56",
+        "moves": [
+          {
+            "power": 80,
+            "type": "dark",
+            "damage_class": "physical",
+            "name": "Crunch",
+            "effect": "Has a 20% chance to lower the target's Defense by one stage."
+          },
+          {
+            "power": 85,
+            "type": "normal",
+            "damage_class": "physical",
+            "name": "Body Slam",
+            "effect": "Has a 30% chance to paralyze the target."
+          },
+          {
+            "power": 40,
+            "priority": 3,
+            "type": "normal",
+            "damage_class": "physical",
+            "name": "Fake Out",
+            "effect": "Can only be used as the first move after the user enters battle.  Causes the target to flinch."
+          },
+          {
+            "power": 40,
+            "type": "fighting",
+            "damage_class": "physical",
+            "name": "Power-Up Punch",
+            "effect": "Raises the user's Attack by one stage after inflicting damage."
+          }
+        ],
+        "ability": {
+          "name": "Inner Focus",
+          "effect": "Prevents flinching."
+        },
+        "held": {
+          "sprite": "kangaskhanite",
+          "name": "Kangaskhanite",
+          "effect": "Held: Allows Kangaskhan to Mega Evolve into Mega Kangaskhan."
+        },
+        "sprite": "115",
+        "types": [
+          "normal"
+        ],
+        "stats": {
+          "hp": 105,
+          "atk": 95,
+          "def": 80,
+          "spa": 40,
+          "spd": 80,
+          "spe": 90
+        }
+      },
+      {
+        "name": "garchomp",
+        "level": "56",
+        "moves": [
+          {
+            "power": 75,
+            "type": "rock",
+            "damage_class": "physical",
+            "name": "Rock Slide",
+            "effect": "Has a 30% chance to make the target flinch."
+          },
+          {
+            "power": 25,
+            "type": "dragon",
+            "damage_class": "physical",
+            "name": "Scale Shot",
+            "effect": "Boosts the user's Speed and lowers their Defense by one stage after inflicting damage two to five times in a row."
+          },
+          {
+            "type": "normal",
+            "damage_class": "status",
+            "name": "Swords Dance",
+            "effect": "Raises the user's Attack by two stages."
+          },
+          {
+            "power": 100,
+            "type": "ground",
+            "damage_class": "physical",
+            "name": "Earthquake",
+            "effect": "Inflicts regular damage and can hit Dig users."
+          }
+        ],
+        "ability": {
+          "name": "Sand Veil",
+          "effect": "Increases evasion to 1.25× during a sandstorm.  Protects against sandstorm damage."
+        },
+        "held": {
+          "sprite": "yache-berry",
+          "name": "Yache Berry",
+          "effect": "Held: Consumed when struck by a super-effective Ice-type attack to halve the damage."
+        },
+        "sprite": "445",
+        "types": [
+          "dragon",
+          "ground"
+        ],
+        "stats": {
+          "hp": 108,
+          "atk": 130,
+          "def": 95,
+          "spa": 80,
+          "spd": 85,
+          "spe": 102
+        }
+      },
+      {
+        "name": "polteageist",
+        "level": "55",
+        "moves": [
+          {
+            "power": 75,
+            "type": "grass",
+            "damage_class": "special",
+            "name": "Giga Drain",
+            "effect": "Drains half the damage inflicted to heal the user."
+          },
+          {
+            "power": 80,
+            "type": "ghost",
+            "damage_class": "special",
+            "name": "Shadow Ball",
+            "effect": "Has a 20% chance to lower the target's Special Defense by one stage."
+          },
+          {
+            "power": 20,
+            "type": "psychic",
+            "damage_class": "special",
+            "name": "Stored Power",
+            "effect": "Power is higher the more the user's stats have been raised, to a maximum of 31×."
+          },
+          {
+            "type": "normal",
+            "damage_class": "status",
+            "name": "Shell Smash",
+            "effect": "Raises user's Attack, Special Attack, and Speed by two stages.  Lower user's Defense and Special Defense by one stage."
+          }
+        ],
+        "ability": {
+          "name": "Weak Armor",
+          "effect": "Raises Speed and lowers Defense by one stage each upon being hit by a physical move."
+        },
+        "held": {
+          "sprite": "white-herb",
+          "name": "White Herb",
+          "effect": "Held: Resets all lowered stats to normal at end of turn. Consumed after use."
+        },
+        "sprite": "855",
+        "types": [
+          "ghost"
+        ],
+        "stats": {
+          "hp": 60,
+          "atk": 65,
+          "def": 65,
+          "spa": 134,
+          "spd": 114,
+          "spe": 70
+        }
+      }
     ]
   },
   "mb5": {
@@ -9367,7 +9649,8 @@
           "spa": 105,
           "spd": 107,
           "spe": 86
-        }
+        },
+        "icon": "rotom-wash"
       },
       {
         "name": "azumarill",

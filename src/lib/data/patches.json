@@ -6261,6 +6261,26 @@
         "evoline": "type-null",
         "imgUrl": "/radred/silvally-ghost"
       },
+      "silvally-fairy": {
+        "name": "Silvally",
+        "label": "Silvally",
+        "alias": "silvally-fairy",
+        "sprite": "silvally-fairy",
+        "types": [
+          "fairy"
+        ],
+        "baseStats": {
+          "hp": 100,
+          "atk": 100,
+          "def": 100,
+          "spa": 100,
+          "spd": 100,
+          "spe": 100
+        },
+        "total": 600,
+        "evoline": "type-null",
+        "imgUrl": "/radred/silvally-fairy"
+      },
       "toxtricity-mega": {
         "name": "Mega Toxtricity",
         "label": "Mega Toxtricity",
