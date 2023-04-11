@@ -9821,7 +9821,7 @@
   },
   {
     "name": "Burmy",
-    "label": "Burmy",
+    "label": "Burmy Plant Cloak",
     "sprite": "burmy",
     "alias": "burmy",
     "evoline": "burmy",
@@ -9845,8 +9845,58 @@
     }
   },
   {
+    "name": "Burmy",
+    "label": "Burmy Sandy Cloak",
+    "sprite": "burmy-sandy",
+    "alias": "burmy-sandy",
+    "evoline": "burmy",
+    "evos": [
+      "wormadam-sandy",
+      "mothim"
+    ],
+    "imgId": "412-sandy",
+    "num": 541,
+    "types": [
+      "bug"
+    ],
+    "total": 224,
+    "baseStats": {
+      "hp": 40,
+      "atk": 29,
+      "def": 45,
+      "spa": 29,
+      "spd": 45,
+      "spe": 36
+    }
+  },
+  {
+    "name": "Burmy",
+    "label": "Burmy Trash Cloak",
+    "sprite": "burmy-trash",
+    "alias": "burmy-trash",
+    "evoline": "burmy",
+    "evos": [
+      "wormadam-trash",
+      "mothim"
+    ],
+    "imgId": "412-trash",
+    "num": 541,
+    "types": [
+      "bug"
+    ],
+    "total": 224,
+    "baseStats": {
+      "hp": 40,
+      "atk": 29,
+      "def": 45,
+      "spa": 29,
+      "spd": 45,
+      "spe": 36
+    }
+  },
+  {
     "name": "Wormadam",
-    "label": "Wormadam",
+    "label": "Wormadam Plant Cloak",
     "sprite": "wormadam",
     "alias": "wormadam",
     "evoline": "burmy",
@@ -9864,6 +9914,52 @@
       "def": 85,
       "spa": 79,
       "spd": 105,
+      "spe": 36
+    }
+  },
+  {
+    "name": "Wormadam",
+    "label": "Wormadam Sandy Clock",
+    "sprite": "wormadam-sandy",
+    "alias": "wormadam-sandy",
+    "evoline": "burmy",
+    "evos": [],
+    "imgId": 10004,
+    "num": 542,
+    "types": [
+      "bug",
+      "ground"
+    ],
+    "total": 424,
+    "baseStats": {
+      "hp": 60,
+      "atk": 79,
+      "def": 105,
+      "spa": 59,
+      "spd": 85,
+      "spe": 36
+    }
+  },
+  {
+    "name": "Wormadam",
+    "label": "Wormadam Trash Cloak",
+    "sprite": "wormadam-trash",
+    "alias": "wormadam-trash",
+    "evoline": "burmy",
+    "evos": [],
+    "imgId": 10005,
+    "num": 542,
+    "types": [
+      "bug",
+      "steel"
+    ],
+    "total": 424,
+    "baseStats": {
+      "hp": 60,
+      "atk": 69,
+      "def": 95,
+      "spa": 69,
+      "spd": 95,
       "spe": 36
     }
   },
