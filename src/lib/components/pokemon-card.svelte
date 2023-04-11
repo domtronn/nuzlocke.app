@@ -164,11 +164,11 @@
     @apply bg-gray-900 -z-10 absolute top-1/2 ;
   }
 
-  .badge-grid > :global(*) { @apply w-4; }
+  .badge-grid > :global(*) { @apply w-6 scale-125; }
   .badge-grid > :global(*:first-child) { @apply ml-1; }
   .badge-grid > :global(*:last-child) { @apply !mr-1; }
 
-  .badge-grid > :global(*:nth-child(2n)) { @apply translate-y-1 -mx-1; }
+  .badge-grid > :global(*:nth-child(2n)) { @apply translate-y-1 -mx-2; }
   .badge-grid > :global(*:nth-child(2n + 1)) { @apply -translate-y-1; }
 
 
