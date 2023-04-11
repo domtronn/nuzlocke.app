@@ -26,22 +26,22 @@ const Templates = {
         `Sacrificing ${Tokens.TPoke} was a calculated decision to take out ${Tokens.OName}'s ${Tokens.OPoke} and secure the win.`,
         `${Tokens.TPoke} sacrificed themselves so that they could switch in a teammate with a type advantage and gain the upper hand.`,
         `Despite losing ${Tokens.TPoke}, they knew their sacrifice was the best move to make in the long run.`,
-        `Even though ${Tokens.TPoke} was not very effective agasint ${Tokens.OName}'s ${Tokens.OPoke}, neither were their teammates.`,
+        `Even though ${Tokens.TPoke} was not very effective against ${Tokens.OName}'s ${Tokens.OPoke}, neither were their teammates.`,
         `The team were facing a tough ${Tokens.OPoke}. In order to secure the win, ${Tokens.TPoke} had to be sacrificed instead...`,
     ],
     [ELossType.Mistake]: [
         `${Tokens.OName}'s ${Tokens.OPoke} had a unique ability that completely caught ${Tokens.TPoke} off guard before it was knocked out.`,
         `${Tokens.OName}'s ${Tokens.OPoke} was holding a special item that gave an advantage against ${Tokens.TPoke}, who couldn't find a way to counter it.`,
         `${Tokens.TPoke} thought they could easily defeat a measly ${Tokens.OType} ${Tokens.OPoke}. But their attacks just didn't do enough damage.`,
-        `Despite their careful preparations, ${Tokens.TPoke} was no match for ${Tokens.OName} and their powerful ${Tokens.OType} Pokemon.`,
+        `Despite their careful preparations, ${Tokens.TPoke} was no match for ${Tokens.OName} and their powerful ${Tokens.OType} Pokémon.`,
         `Relying on ${Tokens.TPoke} proved to be a mistake, as they were unable to beat the diverse team of ${Tokens.OName}.`,
         `Underestimation of ${Tokens.OName}'s unconventional team ended up costing the life of ${Tokens.TPoke} in their battle against ${Tokens.OName}.`,
-        `${Tokens.TPoke} was not prepared for ${Tokens.OName}'s ${Tokens.OPoke} to use ${Tokens.OAtk}`,
-        `In a moment of desperation, ${Tokens.TPoke} used the wrong move against ${Tokens.OName}'s ${Tokens.OType} Pokemon, resulting in a devastating kill.`,
+        `${Tokens.TPoke} was not prepared for ${Tokens.OName}'s ${Tokens.OPoke} to use ${Tokens.OAtk}.`,
+        `In a moment of desperation, ${Tokens.TPoke} used the wrong move against ${Tokens.OName}'s ${Tokens.OType} Pokémon, resulting in a devastating kill.`,
     ],
     [ELossType.Luck]: [
         `${Tokens.TPoke} was paralyzed by ${Tokens.OName}'s ${Tokens.OPoke}'s ${Tokens.OAtk} and couldn't move for several turns, allowing the enemy to defeat them with ease.`,
-        `${Tokens.TPoke} was facing a ${Tokens.OName}'s final Pokemon, ${Tokens.OPoke}, but they just kept landing critical hits.`,
+        `${Tokens.TPoke} was facing a ${Tokens.OName}'s final Pokémon, ${Tokens.OPoke}, but they just kept landing critical hits.`,
         `${Tokens.TPoke} was doing well in the battle until ${Tokens.OName}'s ${Tokens.OPoke} landed a critical hit, which knocked them out in one blow.`,
         `Despite having a type advantage, ${Tokens.TPoke} kept missing their attack, allowing ${Tokens.OName}'s ${Tokens.OPoke} to easily retaliate.`,
         `In a tense battle, ${Tokens.TPoke} died to ${Tokens.OName}'s ${Tokens.OPoke} who landed critical hit after critcal hit.`,
@@ -72,17 +72,17 @@ const Templates = {
 
 enum EType { Boss = 'boss', Wild = 'encounter', Trainer = 'trainer' }
 interface ILvl { from?: number, to?: number }
-interface IPokemon { name?: string, types?: [string, string] | [string] }
+interface IPokémon { name?: string, types?: [string, string] | [string] }
 interface IBoss { name?: string, speciality?: string, type?: string }
 interface IAttack { name?: string, type?: string }
 interface ILocation { name?: string }
 
 interface ICtx {
     nickname?: string,
-    pokemon?: IPokemon,
+    Pokémon?: IPokémon,
     type: EType,
     lvl?: ILvl
-    opponent?: IPokemon,
+    opponent?: IPokémon,
     trainer?: IBoss,
     attack?: IAttack,
     location?: ILocation
@@ -113,12 +113,12 @@ export const format = (
     else defaultOName = 'their opponent'
 
     const res = text
-        .replace(Tokens.TPoke, (ctx?.nickname ? `${ctx?.nickname} the ` : '') + ctx?.pokemon?.name)
-        .replaceAll(Tokens.TPoke, ctx?.nickname || ctx?.pokemon.name)
+        .replace(Tokens.TPoke, (ctx?.nickname ? `${ctx?.nickname} the ` : '') + ctx?.Pokémon?.name)
+        .replaceAll(Tokens.TPoke, ctx?.nickname || ctx?.Pokémon.name)
         .replaceAll(Tokens.OName, ctx.type === EType.Trainer
             ? (((ctx?.trainer?.type || '') + ' ' + (ctx?.trainer?.name || '')).trim() || defaultOName)
             : (ctx?.trainer?.name || defaultOName))
-        .replaceAll(Tokens.OPoke, ctx?.opponent?.name || 'pokemon')
+        .replaceAll(Tokens.OPoke, ctx?.opponent?.name || 'Pokémon')
         .replaceAll(Tokens.OAtk, ctx?.attack?.name || 'attack')
         .replaceAll(Tokens.OType, otype)
         .replace(/ +/g, ' ')

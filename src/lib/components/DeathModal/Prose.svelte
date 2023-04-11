@@ -1,7 +1,6 @@
 <script>
   import { Tokens, format, randomTemplate, ELossType } from './prose'
-  import { IconButton, Tabs, PIcon } from '$c/core'
-  import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
+  import { Icon, IconButton, Tabs, PIcon } from '$c/core'
 
   import { Grave, Dice, Edit } from '$icons'
 

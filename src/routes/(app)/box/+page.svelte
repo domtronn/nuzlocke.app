@@ -297,6 +297,10 @@
                 <span class='text-xs text-center p-2 text-gray-500 z-40' slot=footer let:id>
                   {#if p.location === 'Starter'}
                     Met in a fateful encounter
+                  {:else if p.status === 2}
+                    Obtained from {p.location || p.customName}
+                  {:else if p.status === 3}
+                    Received in a trade {(p.customName || p.location).startsWith('Route') ? 'on' : 'in'} {p.customName || p.location}
                   {:else if !p.location}
                     Met in an unknown place
                   {:else if p.customName}
