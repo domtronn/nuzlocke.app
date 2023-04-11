@@ -116,6 +116,15 @@
     <div
       style='border-color: {color(types[0], themeId)}'
       class='relative flex flex-col-reverse md:flex-row md:inline-flex bg-white dark:bg-gray-900 border-t-2 sm:items-center rounded-b-lg z-10'>
+
+      {#if $$slots.badges}
+        <div
+          style='border-color: {color(types[0], themeId)}'
+          class='badge-grid border-2 absolute top-0 -translate-y-1/2 left-4 bg-gray-900 rounded-lg'>
+          <slot name='badges' />
+        </div>
+      {/if}
+
       {#if moves && moves.length}
         <div class='flex-2 grid grid-cols-2 my-3 ml-4 gap-x-4 gap-y-0 lg:gap-y-3'>
           {#each moves.filter(m => !isEmpty(m)) as m}
@@ -146,6 +155,22 @@
   img {
     image-rendering: pixelated;
   }
+
+  .badge-grid::before {
+    content: '';
+    width: calc(100% + 4px);
+    height: calc(50% + 4px);
+    left: -2px;
+    @apply bg-gray-900 -z-10 absolute top-1/2 ;
+  }
+
+  .badge-grid > :global(*) { @apply w-4; }
+  .badge-grid > :global(*:first-child) { @apply ml-1; }
+  .badge-grid > :global(*:last-child) { @apply !mr-1; }
+
+  .badge-grid > :global(*:nth-child(2n)) { @apply translate-y-1 -mx-1; }
+  .badge-grid > :global(*:nth-child(2n + 1)) { @apply -translate-y-1; }
+
 
   .card {
     box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
