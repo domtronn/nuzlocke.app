@@ -313,11 +313,11 @@
       <span>{@html label}</span>
       {#if item.value.length}
         <span class='flex sm:flex-col items-end -my-4 -mr-3 gap-x-2 sm:gap-x-0 text-tiny sm:gap-y-1'>
-          <span class='inline-flex justify-end items-center dark:text-blue-300 text-blue-400'>
+          <span class='inline-flex justify-end items-center dark:text-orange-300 text-orange-400'>
             {item.value[0]}
             <Icon inline={true} icon={Chevron} class='fill-current' />
           </span>
-          <span class='inline-flex items-center dark:text-orange-300 text-orange-600'>
+          <span class='inline-flex items-center dark:text-blue-300 text-blue-600'>
             {item.value[1]}
             <Icon inline={true} icon={Chevron} class='fill-current transform rotate-180' />
           </span>
