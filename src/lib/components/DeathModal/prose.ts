@@ -113,8 +113,8 @@ export const format = (
     else defaultOName = 'their opponent'
 
     const res = text
-        .replace(Tokens.TPoke, (ctx?.nickname ? `${ctx?.nickname} the ` : '') + ctx?.Pokémon?.name)
-        .replaceAll(Tokens.TPoke, ctx?.nickname || ctx?.Pokémon.name)
+        .replace(Tokens.TPoke, (ctx?.nickname ? `${ctx?.nickname} the ` : '') + ctx?.pokemon?.name)
+        .replaceAll(Tokens.TPoke, ctx?.nickname || ctx?.pokemon?.name)
         .replaceAll(Tokens.OName, ctx.type === EType.Trainer
             ? (((ctx?.trainer?.type || '') + ' ' + (ctx?.trainer?.name || '')).trim() || defaultOName)
             : (ctx?.trainer?.name || defaultOName))
