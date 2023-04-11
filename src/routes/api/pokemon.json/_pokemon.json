@@ -20176,7 +20176,8 @@
     "alias": "toxel",
     "evoline": "toxel",
     "evos": [
-      "toxtricity"
+      "toxtricity",
+      "toxtricity-low-key"
     ],
     "imgId": 848,
     "num": 1031,
@@ -20199,6 +20200,29 @@
     "label": "Toxtricity",
     "sprite": "toxtricity",
     "alias": "toxtricity",
+    "evoline": "toxel",
+    "evos": [],
+    "imgId": 849,
+    "num": 1032,
+    "types": [
+      "electric",
+      "poison"
+    ],
+    "total": 502,
+    "baseStats": {
+      "hp": 75,
+      "atk": 98,
+      "def": 70,
+      "spa": 114,
+      "spd": 70,
+      "spe": 75
+    }
+  },
+  {
+    "name": "Toxtricity",
+    "label": "Toxtricity",
+    "sprite": "toxtricity-low-key",
+    "alias": "toxtricity-low-key",
     "evoline": "toxel",
     "evos": [],
     "imgId": 849,
