@@ -16155,7 +16155,7 @@
   {
     "name": "Aegislash",
     "label": "Aegislash",
-    "sprite": "aegislash-shield",
+    "sprite": "aegislash",
     "alias": "aegislash-shield",
     "evoline": "honedge",
     "evos": [],
@@ -21195,7 +21195,8 @@
     "alias": "kubfu",
     "evoline": "kubfu",
     "evos": [
-      "urshifu"
+      "urshifu-gmax",
+      "urshifu-rapid-strike-gmax"
     ],
     "imgId": 891,
     "num": 1081,
@@ -21215,7 +21216,7 @@
   {
     "name": "Urshifu",
     "label": "Urshifu",
-    "sprite": "urshifu-single-strike",
+    "sprite": "urshifu-gmax",
     "alias": "urshifu-single-strike",
     "evoline": "kubfu",
     "evos": [],
@@ -21224,6 +21225,29 @@
     "types": [
       "fighting",
       "dark"
+    ],
+    "total": 550,
+    "baseStats": {
+      "hp": 100,
+      "atk": 130,
+      "def": 100,
+      "spa": 63,
+      "spd": 60,
+      "spe": 97
+    }
+  },
+  {
+    "name": "Urshifu",
+    "label": "Urshifu",
+    "sprite": "urshifu-rapid-strike-gmax",
+    "alias": "urshifu-rapid-strike",
+    "evoline": "kubfu",
+    "evos": [],
+    "imgId": 10191,
+    "num": 1082,
+    "types": [
+      "fighting",
+      "water"
     ],
     "total": 550,
     "baseStats": {
@@ -24250,7 +24274,7 @@
     "alias": "graveler-alola",
     "evoline": "geodude",
     "evos": [
-      "golem-aloal"
+      "golem-alola"
     ],
     "imgId": 10110,
     "num": 118,
@@ -24463,7 +24487,7 @@
     "alias": "slowpoke-galar",
     "evoline": "slowpoke",
     "evos": [
-      "slowbrow-galar",
+      "slowbro-galar",
       "slowking-galar"
     ],
     "imgId": 10164,
