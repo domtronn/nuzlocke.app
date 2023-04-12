@@ -3,7 +3,7 @@
   import { page } from '$app/stores'
   import { dev } from '$app/environment'
 
-  import { createUser } from '$lib/store'
+  import { createUser, readdata } from '$lib/store'
   let path = $page.url.pathname;
 
   import { setContext } from 'svelte';
@@ -14,13 +14,24 @@
   import Modal from 'svelte-simple-modal';
 
   onMount(() => {
+    const [,,,game] = readdata()
     import("@sentry/svelte").then(Sentry => {
       Sentry.init({
         dsn: "https://c785c122f32c47d68a777aea5af577b1@o1091749.ingest.sentry.io/6109144",
-        integrations: [new Sentry.BrowserTracing()],
+        integrations: [
+          new Sentry.BrowserTracing(),
+          new Sentry.Replay({
+            maskAllText: false,
+            blockAllMedia: true,
+          }),
+        ],
         tracesSampleRate: 1.0,
+        replaysSessionSampleRate: 0,
+        replaysOnErrorSampleRate: 1.0,
       })
+      Sentry.setContext('game', game)
     });
+
   })
 
   setContext('game', {
