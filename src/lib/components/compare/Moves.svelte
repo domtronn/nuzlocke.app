@@ -3,7 +3,7 @@
   const [team, opp] = pokemon
 
   $: teamId = team.sprite
-  $: oppId = `${opp.sprite}-${opp.id}`
+  $: oppId = `${opp.alias}-${opp.id}`
 
   import TypeBadge from '$lib/components/type-badge.svelte'
   import { Tooltip } from '$lib/components/core'
@@ -14,6 +14,7 @@
 
   const moves = (opp?.original?.moves || []).reduce((acc, it) => ({ ...acc, [it.name]: it }), {})
   const lvl = opp?.original?.level
+
 </script>
 
 <ul class='relative grid grid-cols-4 w-full md:mt-2 text-sm md:text-xs'>
@@ -38,7 +39,7 @@
   </div>
 
 
-  {#each calc[teamId][oppId] as move (move)}
+  {#each (calc?.[teamId]?.[oppId] || []) as move (move)}
     <li class='my-2 flex col-span-2 md:col-span-1 flex-col leading-4 lg:leading-3 lg:w-24 -mt-1'>
       <div
         style='line-height:1.2em; min-height:2.4em;'
