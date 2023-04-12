@@ -3243,7 +3243,9 @@
   height: 23px;
   background-position: -316px -549px;
 }
-.pkm.pkm-basculin-red-striped {
+.pkm.pkm-basculin-red-striped,
+.pkm.pkm-basculin
+{
   width: 28px;
   height: 23px;
   background-position: -345px -549px;
@@ -7236,7 +7238,8 @@
   width: 18px;
   height: 22px;
 }
-.pkm.pkm-basculegion {
+.pkm.pkm-basculegion,
+.pkm.pkm-basculegion-male {
   background-position: -878px -480px;
   width: 30px;
   height: 23px;
