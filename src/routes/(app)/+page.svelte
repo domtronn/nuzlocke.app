@@ -7,17 +7,15 @@
   import { fly } from 'svelte/transition'
   import { onMount } from 'svelte'
 
-  import { readdata, activeGame, savedGames, parse, getGame, read, summarise, trackData } from '$lib/store'
+  import { readdata, summarise, trackData } from '$lib/store'
   import { PixelatedContainer } from '$lib/components/containers'
 
-  import Games from '$lib/data/games'
+  import { Expanded as Games } from '$lib/data/games'
   import { Logo, Picture, PIcon, Icon } from '$lib/components/core'
   import { Deceased } from '$icons'
 
   const interval = 5000
   const distance = 300
-
-  const dur = d => 10 * Math.sqrt(d)
 
   let flip = 0
   setInterval(() => {
