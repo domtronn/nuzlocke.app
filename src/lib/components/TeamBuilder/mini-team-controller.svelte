@@ -17,7 +17,7 @@
     gameStore.subscribe(read(data => {
       seenTeam = Object.hasOwnProperty.call(data, '__team')
       teamData = readTeam(data)
-      boxData = data
+      boxData = readBox(data).reduce((acc, it) => ({ ...acc, [locid({detail: {data: it}})]: it }), {})
       boxLength = readBox(data).length
     }))
 
