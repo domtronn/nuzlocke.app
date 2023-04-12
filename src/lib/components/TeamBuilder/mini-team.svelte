@@ -10,7 +10,6 @@
   const dispatch = createEventDispatcher()
 
   export let mons = [], iconKey
-  export let debug = false
 
   //  Action types
   let action, over
@@ -82,15 +81,10 @@
       targetId: getAttr(evt.target, 'data-drag-id')
     })
   }
+
+
 </script>
 
-{#if debug}
-<div>
-  mons: {mons.map(m => m[iconKey])}<br />
-  action: {action} <br />
-  over: {over}
-</div>
-{/if}
 
 <div class='inline-flex gap-x-4 md:transform md:scale-110 mx-auto md:mt-0.5 items-center {$$restProps.class || ''}'>
 

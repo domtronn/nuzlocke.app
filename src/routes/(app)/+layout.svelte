@@ -1,16 +1,29 @@
 <script>
+  import { onMount } from 'svelte'
   import { page } from '$app/stores'
-  import { createUser, savedGames, activeGame, parse } from '$lib/store'
+  import { dev } from '$app/environment'
+
+  import { createUser } from '$lib/store'
   let path = $page.url.pathname;
 
   import { setContext } from 'svelte';
-  import { browser, dev } from '$app/environment';
-
-  import { getSetting } from '$c/Settings/_data'
 
   import { fetchData, fetchLeague } from '$utils/fetchers';
-  import { GameHeading, NavHeading, CookieBanner, Footer } from '$c/navs';
+  import { GameHeading, NavHeading } from '$c/navs';
+
   import Modal from 'svelte-simple-modal';
+
+  onMount(() => {
+    import("@sentry/svelte").then(Sentry => {
+      console.log('sentry initialising')
+      Sentry.init({
+        dsn: "https://c785c122f32c47d68a777aea5af577b1@o1091749.ingest.sentry.io/6109144",
+        integrations: [new Sentry.BrowserTracing()],
+        tracesSampleRate: dev ? 1.0 : 0.5,
+      })
+      console.log('sentry setup')
+    });
+  })
 
   setContext('game', {
     getLeague: fetchLeague,

@@ -66,7 +66,7 @@
 
   const onteamclear = () => setTeam([])
 
-  $: mons = (teamData || []).map(t => boxData[t])
+  $: mons = (teamData || []).map(t => boxData[t]).filter(i => i)
 </script>
 
 {#await setup() then}
