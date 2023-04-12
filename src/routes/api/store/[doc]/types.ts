@@ -36,11 +36,11 @@ export const ITeams = z.object({
 })
 
 const IDeath = z.object({
-    type: EDeath,
+    type: z.optional(EDeath),
     category: z.optional(ECategory),
     time: z.optional(z.number()),
     custom: z.optional(z.boolean()),
-    epitaph: z.string(),
+    epitaph: z.optional(z.string()),
     lvl: z.optional(z.object({
         from: z.optional(z.number().min(1).max(100)),
         to: z.optional(z.number().min(1).max(100))
