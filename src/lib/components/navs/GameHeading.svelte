@@ -29,7 +29,7 @@
 
     savedGames.update(updateGame({
       ...game,
-      attempts: (+game.attempts || 1) + 1
+      attempts: +(game?.attempts || 1) + 1
     }))
     gameStore.set('{}')
   }
