@@ -10,7 +10,7 @@
   import { Tooltip } from '$lib/components/core'
 
   const toGroups = (name) => Object
-        .entries(weakness[name])
+        .entries(weakness[name] || {})
         .sort(([amod], [bmod]) => bmod - amod)
 
   const toFraction = s => {
