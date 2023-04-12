@@ -15,13 +15,11 @@
 
   onMount(() => {
     import("@sentry/svelte").then(Sentry => {
-      console.log('sentry initialising')
       Sentry.init({
         dsn: "https://c785c122f32c47d68a777aea5af577b1@o1091749.ingest.sentry.io/6109144",
         integrations: [new Sentry.BrowserTracing()],
-        tracesSampleRate: dev ? 1.0 : 0.5,
+        tracesSampleRate: 1.0,
       })
-      console.log('sentry setup')
     });
   })
 
