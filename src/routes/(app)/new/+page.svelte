@@ -16,25 +16,25 @@
 
   let gameName = ''
   const handleNewGame = () => {
-    if (!selectedGame.supported)
-      return alert(`Sorry, ${selectedGame.title} is currently not supported`)
+    if (!selectedGame?.supported)
+      return alert(`Sorry, ${selectedGame?.title} is currently not supported`)
 
     let createid = selected
-    if (selectedGame.difficulty) createid += difficultyOptions?.[difficulty]?.id || ''
+    if (selectedGame?.difficulty) createid += difficultyOptions?.[difficulty]?.id || ''
 
     savedGames.update(createGame(gameName, createid))
     window.location = '/game'
   }
 
   const handleGenGame = () => {
-    if (!selectedGame.supported)
-      return alert(`Sorry, ${selectedGame.title} is currently not supported`)
+    if (!selectedGame?.supported)
+      return alert(`Sorry, ${selectedGame?.title} is currently not supported`)
 
-    fetch(`/api/route/generate/${selectedGame.pid}.json`)
+    fetch(`/api/route/generate/${selectedGame?.pid}.json`)
       .then(res => res.text())
       .then((res) => {
         let createid = selected
-        if (selectedGame.difficulty) createid += difficultyOptions?.[difficulty]?.id || ''
+        if (selectedGame?.difficulty) createid += difficultyOptions?.[difficulty]?.id || ''
 
         savedGames.update(createGame(gameName, createid, res))
         window.location = '/game'
@@ -62,7 +62,7 @@
   let customName
   $: {
     if (selectedGame && !gameName || (customName === gameName)) {
-      customName = gameName = `${selectedGame.title} Nuzlocke`
+      customName = gameName = selectedGame ? `${selectedGame?.title} Nuzlocke`: ''
     }
   }
 

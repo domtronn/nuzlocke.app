@@ -14,12 +14,12 @@
 
   import { drag } from '$utils/drag'
 
-  import { getGameStore, getBox, readdata, read, readTeam, readBox, parse, patch, updatePokemon, killPokemon } from '$lib/store'
+  import { getGameStore, getBox, readdata, read, readTeam, patch, updatePokemon, killPokemon } from '$lib/store'
 
   import { canonTypes as types } from '$lib/data/types'
   import { stats, StatIconMap } from '$lib/data/stats'
 
-  import { CUSTOM, UNOWN, createImgUrl } from '$utils/rewrites'
+  import { UNOWN, createImgUrl } from '$utils/rewrites'
   import { toDb } from '$utils/link'
 
   import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
