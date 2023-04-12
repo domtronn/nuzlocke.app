@@ -167,19 +167,19 @@
     <meta name="twitter:site" content="@vercel" />
     <meta name="twitter:image" content="/twitter.png" />
 
-    <script>
-      // On page load or when changing themes, best to add inline in `head` to avoid FOUC
-      const lsid = 'nuzlocke.theme';
-      const mdark =
-        !(lsid in localStorage) &&
-        window.matchMedia('(prefers-color-scheme: dark)').matches;
+    <script data-cfasync="false">
+     // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+     const lsid = 'nuzlocke.theme';
+     const mdark =
+       !(lsid in localStorage) &&
+       window.matchMedia('(prefers-color-scheme: dark)').matches;
 
-      if (mdark) localStorage.setItem(lsid, 'dark');
-      if (localStorage[lsid] === 'dark') {
-        document.documentElement.classList.add('dark');
-      } else {
-        document.documentElement.classList.remove('dark');
-      }
+     if (mdark) localStorage.setItem(lsid, 'dark');
+     if (localStorage[lsid] === 'dark') {
+       document.documentElement.classList.add('dark');
+     } else {
+       document.documentElement.classList.remove('dark');
+     }
     </script>
 
     %sveltekit.head%
