@@ -8,7 +8,7 @@ Pokémon Radical Red is a fan-made ROM hack of Pokémon FireRed and LeafGreen th
 
 Whether you're a Pokémon fan looking for a new challenge or a nuzlocke enthusiast seeking a unique experience, **Radical Red's Hardcode mode** is designed to be fair and accessible for players of all levels, so you can experience the thrill of the nuzlocke challenge without feeling overwhelmed. 
 
-Want the pinacle of Nuzlocke challenge? A guide for the extreme Hardcode mode can be found [here](https://nuzlocke.app/guides/radical-rad-hardcore).
+Want the pinacle of Nuzlocke challenge? A guide for the extreme Hardcode mode can be found [here](https://nuzlocke.app/guides/radical-red-hardcore).
 
 ### Difficulty & Bosses
 
