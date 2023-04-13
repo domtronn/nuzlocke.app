@@ -6,7 +6,7 @@ export async function GET({ params }) {
   if (!['png', 'webp'].includes(ext)) return new Response('', { stauts: 404 })
 
   const [id, res] = logo.split('@')
-  const logoPath = Games[id].logo;
+  const logoPath = Games?.[id]?.logo;
   if (!logoPath) return new Response('', { status: 404 });
 
   const location = res
