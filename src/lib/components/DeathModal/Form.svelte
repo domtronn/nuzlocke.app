@@ -21,6 +21,7 @@
 
     if (subText == EButton.Skip) dispatch('skip', ctx)
     if (subText == EButton.Submit) dispatch('submit', ctx)
+    else dispatch('submit', ctx)
   }
 
   export let pokemon, formData
