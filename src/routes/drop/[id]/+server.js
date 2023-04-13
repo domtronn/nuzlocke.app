@@ -19,8 +19,8 @@ export async function GET ({ request, params }) {
           location = location.replace(/.*?\/drop/, `http://${host}/drop`)
         }
 
-        if (!location) return resolve(new Response({ status: 404 }))
-        if (!location.includes(`://${host}`)) return resolve(Response({ status: 400 }))
+        if (!location) return resolve(new Response('', { status: 404 }))
+        if (!location.includes(`://${host}`)) return resolve(Response('', { status: 400 }))
 
         return resolve(new Response('', {
           status: 301,
