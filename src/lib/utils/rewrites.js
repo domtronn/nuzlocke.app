@@ -9,7 +9,7 @@ export const CUSTOM = 'https://img.nuzlocke.app/sprites'
 export const IMG = 'https://img.nuzlocke.app'
 
 export const DATA = rewrite
-  ? 'https://img.nuzlocke.app/data'
+  ? 'https://nuzlocke.app/api'
   : '/api' // Load locally for development
 
 export const QRCODE = rewrite
