@@ -1671,7 +1671,8 @@
           "spa": 50,
           "spd": 80,
           "spe": 45
-        }
+        },
+        "icon": "marowak-alola"
       }
     ],
     "doubleBattle": true
@@ -3618,7 +3619,8 @@
           "spa": 100,
           "spd": 70,
           "spe": 30
-        }
+        },
+        "icon": "slowbro-galar"
       },
       {
         "name": "delcatty",
@@ -5214,8 +5216,8 @@
           "name": "Focus Sash",
           "effect": "Held: Holder survives any single-hit attack at 1 HP if at max HP, then the item is consumed."
         },
-        "starter": "water",
         "sprite": "10100",
+        "starter": "water",
         "types": [
           "electric",
           "psychic"
@@ -5227,7 +5229,8 @@
           "spa": 95,
           "spd": 85,
           "spe": 110
-        }
+        },
+        "icon": "raichu-alola"
       },
       {
         "name": "lucario",
@@ -5606,8 +5609,8 @@
           "name": "Iapapa Berry",
           "effect": "Held: Consumed at 1/2 max HP to restore 1/8 max HP. Confuses Pokémon that dislike sour flavor."
         },
-        "starter": "water",
         "sprite": "10171",
+        "starter": "water",
         "types": [
           "dark",
           "flying"
@@ -5619,7 +5622,8 @@
           "spa": 100,
           "spd": 125,
           "spe": 90
-        }
+        },
+        "icon": "moltres-galar"
       },
       {
         "name": "sceptile",
@@ -7948,7 +7952,8 @@
           "spa": 125,
           "spd": 100,
           "spe": 95
-        }
+        },
+        "icon": "articuno-galar"
       },
       {
         "name": "overqwil",
@@ -8281,7 +8286,8 @@
           "spa": 125,
           "spd": 60,
           "spe": 110
-        }
+        },
+        "icon": "zoroark-hisui"
       },
       {
         "name": "gothitelle",
@@ -8561,7 +8567,8 @@
           "spa": 95,
           "spd": 95,
           "spe": 60
-        }
+        },
+        "icon": "decidueye-hisui"
       },
       {
         "name": "chandelure",
@@ -10325,7 +10332,8 @@
           "spa": 110,
           "spd": 150,
           "spe": 60
-        }
+        },
+        "icon": "goodra-hisui"
       },
       {
         "name": "palkia",

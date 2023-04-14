@@ -1671,7 +1671,8 @@
           "spa": 50,
           "spd": 80,
           "spe": 45
-        }
+        },
+        "icon": "marowak-alola"
       }
     ],
     "doubleBattle": true
@@ -3618,7 +3619,8 @@
           "spa": 100,
           "spd": 70,
           "spe": 30
-        }
+        },
+        "icon": "slowbro-galar"
       },
       {
         "name": "delcatty",
@@ -5606,8 +5608,8 @@
           "name": "Lum Berry",
           "effect": "Held: Consumed to cure any status condition or confusion."
         },
-        "starter": "grass",
         "sprite": "10169",
+        "starter": "grass",
         "types": [
           "psychic",
           "flying"
@@ -5619,7 +5621,8 @@
           "spa": 125,
           "spd": 100,
           "spe": 95
-        }
+        },
+        "icon": "articuno-galar"
       },
       {
         "name": "blaziken",
@@ -7950,7 +7953,8 @@
           "spa": 125,
           "spd": 100,
           "spe": 95
-        }
+        },
+        "icon": "articuno-galar"
       },
       {
         "name": "overqwil",
@@ -8283,7 +8287,8 @@
           "spa": 125,
           "spd": 60,
           "spe": 110
-        }
+        },
+        "icon": "zoroark-hisui"
       },
       {
         "name": "gothitelle",
@@ -8563,7 +8568,8 @@
           "spa": 95,
           "spd": 95,
           "spe": 60
-        }
+        },
+        "icon": "decidueye-hisui"
       },
       {
         "name": "chandelure",
@@ -10327,7 +10333,8 @@
           "spa": 110,
           "spd": 150,
           "spe": 60
-        }
+        },
+        "icon": "goodra-hisui"
       },
       {
         "name": "palkia",
