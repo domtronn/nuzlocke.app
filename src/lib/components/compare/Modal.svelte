@@ -1,69 +1,75 @@
 <script>
-  export let pokemon = [], id = ''
+ export let pokemon = [], id = ''
 
-  import { browser } from '$app/environment'
+ import { browser } from '$app/environment'
 
-  import { getContext } from 'svelte'
-  import { fade } from 'svelte/transition'
+ import { getContext } from 'svelte'
 
-  import { capitalise } from '$lib/utils/string'
-  import { activeGame, getGame, read } from '$lib/store'
-  import { NuzlockeGroups } from '$lib/data/states'
+ import { activeGame, getGame, read, readBox, readTeam } from '$lib/store'
+ import { NuzlockeGroups } from '$lib/data/states'
 
-  import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
-  import { Arrow } from '$icons'
-  import { Plus } from '$icons'
-  import { Minus } from '$icons'
+ import { Plus, Minus} from '$icons'
 
-  import { CompareStats, CompareCard, CompareControls, CompareInfo, CompareMoves } from './'
-  import { Accordion, Tabs, PIcon } from '$lib/components/core'
+ import { CompareStats, CompareCard, CompareControls, CompareInfo, CompareMoves } from './'
+ import { Accordion, Tabs, Icon } from '$lib/components/core'
 
-  const { getPkmn, getPkmns } = getContext('game')
+ const { getPkmn, getPkmns } = getContext('game')
 
-  $: box = []
-  $: gym = []
-  $: loading = true
+ $: team = []
+ $: box = []
+ $: gym = []
+ $: loading = true
 
-  const fetchadvice = (team, box) =>
-    fetch('/api/battle/advice.json', {
-      method: 'POST',
-      body: JSON.stringify({ team, box }),
-      headers: {
-        'Content-Type': 'application/json',
-      }
-    }).then(res => res.json())
+ const fetchadvice = (team, box) =>
+   fetch('/api/battle/advice.json', {
+     method: 'POST',
+     body: JSON.stringify({ team, box }),
+     headers: {
+       'Content-Type': 'application/json',
+     }
+   }).then(res => res.json())
 
-  activeGame.subscribe(gameId => {
-    if (browser && !gameId) return
+ let team = [], boxData = {}
 
-    getGame(gameId).subscribe(read(data => {
-      // Fetch all gym pokemon from cache
-      getPkmns(pokemon.map(p => p.name))
-        .then(d => {
-          gym = pokemon.map((it) => ({ original: it, ...d[it.name] }))
-          j = Math.max(gym.findIndex(i => i.alias === id), 0)
-        })
+ activeGame.subscribe(gameId => {
+   if (browser && !gameId) return
 
-      // Fetch all box pokemon from cache
-      Promise.all(
-        Object
-          .values(data)
-          .filter(i => i.pokemon && NuzlockeGroups.Available.includes(i.status))
-          .map(p => getPkmn(p.pokemon).then(d => ({ ...p, ...d })))
-      ).then(d => {
-        box = d.sort((a, b) => b.total - a.total)
-        loading = false
-      })
-    }))
-  })
+   getGame(gameId).subscribe(read(data => {
+     let ogTeam = readTeam(data).map(id => data[id])
+     getPkmns(ogTeam.map(p=>p.pokemon))
+                                .then(d => {
+                                  team = ogTeam.map((it) => ({ ...it, ...d[it.pokemon] }))
+                                })
 
-  let i = 0, j = 0
-  $: i = 0, j = 0
-  $: compare = [{ ...box[i], id: i }, { ...gym[j], id: j }]
+     // Fetch all gym pokemon from cache
+     getPkmns(pokemon.map(p => p.name))
+                                .then(d => {
+                                  gym = pokemon.map((it) => ({ original: it, ...d[it.name] }))
+                                  j = Math.max(gym.findIndex(i => i.alias === id), 0)
+                                })
 
-  let tab = 0
-  $: tab = 0
-  const select = p => p?.sprite
+     // Fetch all box pokemon from cache
+     const teamLocs = readTeam(data)
+     Promise.all(
+       readBox(data)
+         .filter(i => !teamLocs.includes(i.customId || i.location))
+         .map(p => getPkmn(p.pokemon).then(d => ({ ...p, ...d })))
+     ).then(d => {
+       box = d.sort((a, b) => b.total - a.total)
+
+       loading = false
+     })
+   }))
+ })
+
+ let i = -1, j = 0, k = 0, active = 'team'
+ $: compare = active === 'team'
+            ? [{ ...team[k], id: k }, { ...gym[j], id: j }]
+            : [{ ...box[i], id: i }, { ...gym[j], id: j }]
+
+ let tab = 0
+ $: tab = 0
+ const select = p => p?.sprite
 </script>
 
 <section class=pb-4>
@@ -74,7 +80,7 @@
 
     </div>
   {:else if box.length && gym.length}
-    {#await fetchadvice(pokemon, box) then advice}
+    {#await fetchadvice(pokemon, box.concat(team)) then advice}
       <CompareCard className=mt-12 pokemon={compare}>
 
         <!-- Mobile display compare stats & info in tabs -->
@@ -129,8 +135,9 @@
       </CompareCard>
 
       <div class='flex rounded-xl py-2 flex-col gap-y-4 sm:gap-y-0 sm:gap-x-2 mt-2 sm:mt-0'>
-        <CompareControls title='Your team' className=flex-1 bind:value={i} list={box} {select} />
         <CompareControls title='Gym team' pageSize={6} controls={false} className=flex-1 bind:value={j} list={gym} {select} />
+        <CompareControls title='Your Team' on:select={_ => {active = 'team'; i = -1}} pageSize={6} controls={false} className=flex-1 bind:value={k} list={team} {select} />
+        <CompareControls title='Your box' on:select={_ => {active = 'box'; k = -1 }} className=flex-1 bind:value={i} list={box} {select} />
       </div>
     {/await}
   {/if}

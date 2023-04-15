@@ -1,14 +1,14 @@
 <script>
   export let value, list, pageSize = 5, select = i => i, className = '', title = '', controls = true
 
-  import { PIcon } from '$lib/components/core'
-  import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
-  import { Arrow } from '$icons'
-
-  import { Pip } from '$icons'
+  import { createEventDispatcher } from 'svelte'
+  import { PIcon, Icon } from '$c/core'
+  import { Pip, Arrow } from '$icons'
 
   import { fade } from 'svelte/transition'
   import { chunk } from '$lib/utils/arr'
+
+  const dispatch  = createEventDispatcher()
 
   let page = 0
   $: page = 0
@@ -58,7 +58,10 @@
         class:grayscale={value !== (page * pageSize) + i}
         class:scale-150={value === (page * pageSize) + i}
         class='transform transition hover:grayscale-0 hover:opacity-100 hover:scale-150 origin-center cursor-pointer'
-        on:click={e => value = (page * pageSize) + i}>
+        on:click={e => {
+          value = (page * pageSize) + i
+          dispatch('select')
+        }}>
         <PIcon name={select(p)} />
       </button>
     {/each}
