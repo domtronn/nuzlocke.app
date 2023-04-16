@@ -65,6 +65,7 @@
     "arrowParens": "always",
     "singleQuote": true,
     "trailingComma": "none",
+    "semi": false,
     "plugins": [
       "prettier-plugin-svelte",
       "prettier-plugin-organize-imports",

@@ -1,0 +1,8 @@
+// export { default } from './index.svelte'
+export { default as Body } from './Body.svelte'
+export { default as BoxTeam } from './BoxTeam.svelte'
+export { default as CardContent } from './CardContent.svelte'
+export { default as Heading } from './Heading.svelte'
+export { default as Recommendation } from './Recommendation.svelte'
+export { default as Team } from './Team.svelte'
+export { default as Vs } from './Vs.svelte'

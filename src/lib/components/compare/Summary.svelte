@@ -3,7 +3,7 @@
   export let pokemon
 </script>
 
-<span class='text-tiny flex gap-x-1'>
+<span class="flex gap-x-1 text-tiny">
   Lvl
 
   <strong>{pokemon.level}</strong>
@@ -12,7 +12,7 @@
     <strong class:cursor-help={pokemon.ability?.effect}>
       {pokemon.ability.name}
       {#if pokemon.ability.effect}
-        <span class=-ml-1>*</span>
+        <span class="-ml-1">*</span>
         <Tooltip>
           {pokemon.ability.effect}
         </Tooltip>
