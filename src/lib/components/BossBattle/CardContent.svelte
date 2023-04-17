@@ -23,18 +23,15 @@
   function sumStats(pokes) {
     return pokes.reduce((acc, it) => acc + it.total, 0)
   }
-
-  $: width = Math.max(gym.length, team.length, 4) > 4 ? 240 : 240
-  $: width, console.log('width', width, Math.max(gym.length, team.length, 4))
 </script>
 
-<section style="--w: {width}px" class="shadow-lg">
+<section style="--w: 240px" class="shadow-lg">
   <Heading atkStats={sumStats(team)} defStats={sumStats(gym)} {boss} />
 
   <div class="inline-flex w-full items-end justify-between">
-    <Team {width} type="attack" {team} />
+    <Team width={240} type="attack" {team} />
     <Vs />
-    <Team {width} type="defend" team={gym} />
+    <Team width={240} type="defend" team={gym} />
   </div>
 
   <Body

@@ -14,7 +14,7 @@
 <SettingWrapper id="theme" let:setting={themeId}>
   <div class="w-1/2 flex-1 flex-grow">
     <span
-      class="mb-2 ml-2 mr-2 flex gap-x-2 justify-{side === 'left'
+      class="mb-2 -mt-2 ml-3 mr-3 flex gap-x-2 justify-{side === 'left'
         ? 'start'
         : 'end'}"
     >

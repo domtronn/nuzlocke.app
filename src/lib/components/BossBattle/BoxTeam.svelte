@@ -23,8 +23,8 @@
   let page = 0,
     pages,
     max
-  $: (pages = chunk(boxList, 8 * 3)), (max = pages.length - 1)
 
+  $: (pages = chunk(boxList, 8 * 3)), (max = pages.length - 1)
   $: if (page > max) page = max
 
   const inc = (_) => (page = Math.min(max, page + 1))

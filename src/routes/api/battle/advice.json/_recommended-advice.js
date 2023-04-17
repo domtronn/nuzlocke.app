@@ -5,7 +5,7 @@ const debug = []
 
 export default (box, boss) => {
   const bossMoves = boss
-    .map((poke) => poke.moves)
+    .map((poke) => poke.original.moves)
     .flat()
     .filter((move) => move.damage_class !== 'status')
 
@@ -99,8 +99,8 @@ export default (box, boss) => {
        based on their defensive stat advantage
     */
       const offStatAdvantageScore = boss.reduce((acc, mon) => {
-        if (mon.stats.spd < mon.stats.def) return acc + stats.spa
-        if (mon.stats.def < mon.stats.spd) return acc + stats.atk
+        if (mon.baseStats.spd < mon.baseStats) return acc + stats.spa
+        if (mon.baseStats.def < mon.baseStats) return acc + stats.atk
         return acc + Math.max(stats.spa, stats.atk)
       }, 0)
 
