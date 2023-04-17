@@ -24,7 +24,7 @@
 
 <style lang="postcss">
   div {
-    width: calc(100vw - theme('spacing.8'));
+    width: calc(100% - theme('spacing.8'));
   }
   @media (min-width: theme('screens.sm')) {
     div {

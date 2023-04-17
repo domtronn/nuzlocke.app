@@ -26,19 +26,21 @@
 </script>
 
 <section class="shadow-lg">
-  <Heading atkStats={sumStats(team)} defStats={sumStats(gym)} {boss} />
+  <div class="relative w-full">
+    <Heading atkStats={sumStats(team)} defStats={sumStats(gym)} {boss} />
 
-  <div
-    class="absolute top-8 z-20 flex h-20 w-full items-center justify-between md:top-9"
-  >
-    <div class="flex-1">
-      <Team type="attack" {team} />
-    </div>
+    <div
+      class="absolute top-6 z-20 flex h-20 w-full items-center justify-between md:top-9"
+    >
+      <div class="flex-1">
+        <Team type="attack" {team} />
+      </div>
 
-    <Vs class="-mt-6" />
+      <Vs />
 
-    <div class="flex-1">
-      <Team type="defend" team={gym} />
+      <div class="flex-1">
+        <Team type="defend" team={gym} />
+      </div>
     </div>
   </div>
 

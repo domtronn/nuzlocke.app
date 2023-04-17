@@ -28,80 +28,34 @@
 </script>
 
 {#if list.length > 1}
-  <div class="flex items-center justify-between px-2 text-white">
-    <h2 class="-mb-5 text-base font-medium md:mb-0">{title}</h2>
-    {#if pages.length > 1}
-      <div class="flex translate-y-2.5 items-center sm:translate-y-0.5">
-        {#each Array(pages.length).fill('foo') as p, i}
-          <button title="Page {i + 1}" on:click={set(i)}>
-            <Icon
-              inline={true}
-              height="0.5rem"
-              icon={Pip}
-              class="transform fill-current transition {page === i
-                ? 'scale-150'
-                : 'scale-100 opacity-50'}"
-            />
-          </button>
-        {/each}
-      </div>
-    {/if}
+  <div class="title mx-auto -mb-5 w-fit px-2 text-white">
+    <h2 class="text-base font-medium md:mb-0">{title}</h2>
   </div>
 
   <div
-    class="my-2 flex rounded-xl bg-white dark:bg-gray-900 {className} {$$restProps.class ||
+    class="team mx-auto mt-2 -mb-2 w-fit justify-center rounded-xl bg-white dark:bg-gray-900 {className} {$$restProps.class ||
       ''}"
     class:justify-end={page === 0}
     class:justify-start={page === max}
     class:justify-between={page < max && page > 0}
   >
-    {#if controls}
+    {#each pages[page] as p, i (p)}
+      {@const selected = value === page * pageSize + i}
       <button
-        title="Previous page"
-        disabled={page === 0}
-        class="page block disabled:opacity-25"
-        on:click={dec}
+        in:fade={{ duration: 300, delay: 50 }}
+        class:opacity-50={!selected}
+        class:grayscale={!selected}
+        class:scale-125={selected}
+        class:selected
+        class="-mx-2 -my-2 origin-center transform cursor-pointer transition hover:scale-125 hover:opacity-100 hover:grayscale-0"
+        on:click={(e) => {
+          value = page * pageSize + i
+          dispatch('select')
+        }}
       >
-        <Icon
-          inline={true}
-          class="rotate-180 transform fill-current"
-          icon={Arrow}
-        />
+        <PIcon name={select(p)} />
       </button>
-    {/if}
-
-    <div
-      class="-my-2 mx-auto grid overflow-hidden"
-      style="grid-template-columns: repeat({pageSize}, minmax(0, 1fr));"
-    >
-      {#each pages[page] as p, i (p)}
-        <button
-          in:fade={{ duration: 300, delay: 50 }}
-          class:opacity-50={value !== page * pageSize + i}
-          class:grayscale={value !== page * pageSize + i}
-          class:scale-125={value === page * pageSize + i}
-          class="-mx-2 origin-center transform cursor-pointer transition hover:scale-125 hover:opacity-100 hover:grayscale-0"
-          on:click={(e) => {
-            value = page * pageSize + i
-            dispatch('select')
-          }}
-        >
-          <PIcon name={select(p)} />
-        </button>
-      {/each}
-    </div>
-
-    {#if controls}
-      <button
-        title="Next page"
-        class:hidden={!controls}
-        disabled={page === max}
-        class="page disabled:opacity-25"
-        on:click={inc}
-      >
-        <Icon inline={true} class="fill-current" icon={Arrow} />
-      </button>
-    {/if}
+    {/each}
   </div>
 {/if}
 
@@ -112,5 +66,25 @@
 
   :global(.dark) button.page {
     @apply text-gray-200 hover:text-orange-500 disabled:hover:text-gray-200;
+  }
+
+  .title {
+    @apply block md:hidden;
+  }
+
+  @media (min-width: theme('screens.md')) {
+    button {
+      @apply -rotate-90 transform;
+    }
+
+    button.selected::before {
+      content: '';
+      position: absolute;
+      @apply top-1/2 left-1/2 h-8 w-8 -translate-x-1/2 -translate-y-1/2 rounded-full bg-white shadow-lg;
+    }
+
+    :global(.dark) button.selected::before {
+      @apply bg-gray-900;
+    }
   }
 </style>

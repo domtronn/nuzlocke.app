@@ -40,7 +40,9 @@
   <div>
     <h2 class="max-md:inline md:w-full">Team</h2>
 
-    <ul class="mt-3 mb-4 grid grid-cols-6 gap-y-2 md:w-fit md:grid-cols-3">
+    <ul
+      class="my-1 grid grid-cols-6 gap-y-2 md:mt-3 md:mb-4 md:w-fit md:grid-cols-3"
+    >
       {#each team as poke (locid(poke.original))}
         {@const og = poke.original}
         <button

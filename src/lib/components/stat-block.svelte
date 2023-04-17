@@ -10,19 +10,11 @@
     nature = [],
     compare,
     side = 'right',
-    shorthand = true
+    shorthand = true,
+    showbars = true
 
   import StatBar from '$lib/components/stat-bar.svelte'
   import NaturesMap from '$lib/data/natures'
-
-  const compareMap = {
-    hp: 'hp',
-    atk: 'def',
-    def: 'atk',
-    spa: 'spd',
-    spd: 'spa',
-    spe: 'spe'
-  }
 
   const statMap = {
     hp: 'HP',
@@ -51,15 +43,17 @@
     <b class="-ml-2 py-1 pl-2 pr-2.5">{total}</b>
   </span>
 
-  {#each Object.entries(stats) as [s, sval]}
-    <StatBar
-      className={compare && sval <= compare[s] ? 'grayscale opacity-25' : ''}
-      mod={s === pos ? 1.1 : s === neg ? 0.9 : 1}
-      stat={shorthand ? s : statMap[s]}
-      val={sval}
-      {max}
-    />
-  {/each}
+  {#if showbars}
+    {#each Object.entries(stats) as [s, sval]}
+      <StatBar
+        className={compare && sval <= compare[s] ? 'grayscale opacity-25' : ''}
+        mod={s === pos ? 1.1 : s === neg ? 0.9 : 1}
+        stat={shorthand ? s : statMap[s]}
+        val={sval}
+        {max}
+      />
+    {/each}
+  {/if}
 </div>
 
 <style lang="postcss">

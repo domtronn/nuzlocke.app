@@ -3,8 +3,8 @@
   import { Loop, Ball } from '$icons'
 </script>
 
-<div class="relative z-50 -mb-4 inline-block h-8 w-8 {$$restProps.class || ''}">
-  <span class="hidden pl-1 md:flex">
+<div class="relative z-50 inline-block h-8 w-8 {$$restProps.class || ''}">
+  <span class="flex pl-1">
     <Icon
       inline
       class="absolute rounded-full bg-white dark:bg-gray-900"
@@ -24,9 +24,5 @@
       icon={Ball}
     />
   </span>
-  <p
-    class="absolute left-1.5 bottom-1 font-mono text-2xl drop-shadow-text md:bottom-7"
-  >
-    vs
-  </p>
+  <p class="absolute left-1.5 bottom-7 font-mono text-2xl">vs</p>
 </div>

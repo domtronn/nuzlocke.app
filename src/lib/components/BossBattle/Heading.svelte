@@ -60,7 +60,7 @@
   />
 
   <div
-    class="desk-only absolute left-0 top-24 right-0 z-50 h-[2px] -translate-y-2.5 md:top-28"
+    class="desk-only absolute left-0 top-24 right-0 z-50 h-[2px] -translate-y-4 md:top-28"
     style="background: linear-gradient(90deg, {lCol(themeId)}, {rCol(
       themeId
     )});"
@@ -93,7 +93,7 @@
 
   .bst {
     border-color: var(--b-col);
-    @apply absolute top-20 z-50 translate-y-2.5 scale-75 rounded-lg border-2 px-2 md:left-2 md:left-5;
+    @apply absolute top-20 left-2 z-50 translate-y-1 scale-90 rounded-lg border-2 px-2 md:left-5;
   }
 
   .bst b {

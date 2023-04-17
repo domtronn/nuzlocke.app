@@ -1,6 +1,7 @@
 <script>
   export let pokemon = [],
-    side
+    side,
+    hide = false
 
   import TypeBadge from '$lib/components/type-badge.svelte'
   import StatBlock from '$lib/components/stat-block.svelte'
@@ -24,6 +25,7 @@
     </span>
 
     <StatBlock
+      showbars={!hide}
       class="grid-cols-11"
       nature={atk.nature}
       {...atk.baseStats}
@@ -43,5 +45,14 @@
   .sright {
     right: 72px;
     @apply origin-right justify-end;
+  }
+
+  @media (min-width: theme('screens.md')) {
+    .sleft {
+      left: 72px;
+    }
+    .sright {
+      right: 72px;
+    }
   }
 </style>

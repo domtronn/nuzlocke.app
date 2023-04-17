@@ -11,9 +11,11 @@
 </script>
 
 <div
-  class="rec-card relative z-20 mx-auto mt-2 h-auto translate-y-20 rounded-b-lg bg-white px-4 py-2 dark:bg-gray-900 md:translate-y-24 md:py-4 md:px-8"
+  class="rec-card relative z-20 mx-auto h-auto translate-y-20 rounded-b-lg bg-white px-4 py-2 dark:bg-gray-900 md:translate-y-24 md:py-4 md:px-8"
 >
-  <div class="mx-auto flex w-full flex-wrap items-start md:w-[48ch]">
+  <div
+    class="mx-auto flex w-auto flex-wrap items-start pt-2 md:w-[48ch] md:pt-0"
+  >
     <slot name="tabs" />
 
     <hr class="-mb-2 !opacity-0" />
@@ -44,7 +46,7 @@
         {@const dclass = advice.dmgclass[0]}
         {@const defclass =
           dclass === 'physical' ? 'Defense' : 'Special Defense'}
-        <p class="mt-2 w-full text-center text-xs italic max-md:mb-2">
+        <p class="mt-2 w-auto text-center text-xs italic max-md:mb-2">
           {name}'s team only uses <b>{dclass}</b> moves.
           <br class="hidden md:block" />
           You should use Pokemon with a high <b>{defclass}</b> stat.
