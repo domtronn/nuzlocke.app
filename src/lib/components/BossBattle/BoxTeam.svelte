@@ -86,11 +86,7 @@
 
   <div class="relative">
     <h2>Box</h2>
-    <div class="flex flex-col items-start md:flex-row md:items-center">
-      <p class="max-w-1/2 flex-1">
-        Pick from your boxes to face {boss.name}
-      </p>
-    </div>
+    <div class="flex flex-col items-start md:flex-row md:items-center" />
 
     <ul
       class="mt-2 grid w-full grid-cols-6 rounded-lg bg-gray-200 px-4 py-2 dark:bg-gray-800 md:w-fit md:grid-cols-8"
@@ -117,7 +113,7 @@
 
     {#if pages.length > 1}
       <div
-        class="max-md:w-full max-md:text-center md:absolute md:right-0 md:top-3"
+        class="max-md:w-full max-md:text-center md:absolute md:right-0 md:top-0"
       >
         {#each Array(pages.length) as p, i}
           <button
