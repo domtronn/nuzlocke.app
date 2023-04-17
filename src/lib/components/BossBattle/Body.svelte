@@ -46,7 +46,9 @@
         {@const dclass = advice.dmgclass[0]}
         {@const defclass =
           dclass === 'physical' ? 'Defense' : 'Special Defense'}
-        <p class="mt-2 w-auto text-center text-xs italic max-md:mb-2">
+        <p
+          class="mt-2 w-auto text-center text-xs italic max-md:mb-2 md:text-left"
+        >
           {name}'s team only uses <b>{dclass}</b> moves.
           <br class="hidden md:block" />
           You should use Pokemon with a high <b>{defclass}</b> stat.
@@ -72,8 +74,6 @@
         {name}'s team have immunities to:
       </Advice>
     </div>
-
-    <hr class="order-3 mt-2 md:mt-4" />
 
     <slot />
   </div>

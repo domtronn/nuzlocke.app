@@ -1,5 +1,7 @@
 <script>
+  import { fade } from 'svelte/transition'
   import { createEventDispatcher } from 'svelte'
+
   import { Heading, Body, Team, Vs } from './'
   import { Button, PIcon } from '$c/core'
   import { toList, regionise, capitalise } from '$lib/utils/string'
@@ -14,18 +16,15 @@
   export let boss = {},
     summary = {}
 
-  function format(poke) {
-    return (
-      poke.original.nickname || regionise(capitalise(poke.original.pokemon))
-    )
-  }
-
   function sumStats(pokes) {
     return pokes.reduce((acc, it) => acc + it.total, 0)
   }
 </script>
 
-<section class="shadow-lg">
+<section
+  in:fade
+  class="mt-6 pb-32 text-gray-800 shadow-lg dark:text-gray-50 md:-mt-20"
+>
   <div class="relative w-full">
     <Heading atkStats={sumStats(team)} defStats={sumStats(gym)} {boss} />
 
@@ -62,22 +61,6 @@
     <!-- TODO: Verify team vs saved team and offer to update -->
     <!-- TODO: Heading gradient builder from team members and types -->
 
-    <div class="order-3 md:w-full">
-      <p class=" my-2 text-center text-xs italic opacity-50 md:text-right">
-        Claim the badge from <b>{boss.name}</b> to mark this boss as
-        <b>complete</b><br class="hidden md:block" />
-        with your team of {toList(team.map(format))}
-      </p>
-
-      <div class="mt-4 mb-4 flex justify-center gap-x-2 md:justify-end">
-        <Button class="text-xs md:text-base" on:click={compare} rounded
-          >Compare team</Button
-        >
-        <Button class="claim text-xs md:text-base" solid rounded>
-          Claim badge
-          <PIcon class="coin -mt-3 md:ml-2" type="b" name="stone" />
-        </Button>
-      </div>
-    </div>
+    <slot name="actions" />
   </Body>
 </section>

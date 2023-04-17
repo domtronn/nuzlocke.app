@@ -49,10 +49,7 @@
     <li
       class="col-span-2 my-2 -mt-1 flex flex-col leading-4 md:col-span-1 lg:w-24 lg:leading-3"
     >
-      <div
-        style="line-height:1.2em; min-height:2.4em;"
-        class="flex items-end tracking-tighter"
-      >
+      <div style="line-height:1.2em; min-height:2.4em;" class="flex items-end">
         <span class="relative" class:cursor-help={moves[move.name]?.effect}>
           {move.name}
           {#if moves[move.name]?.effect}

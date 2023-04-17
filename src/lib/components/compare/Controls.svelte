@@ -77,14 +77,21 @@
       @apply -rotate-90 transform;
     }
 
-    button.selected::before {
+    button::before {
       content: '';
       position: absolute;
-      @apply top-1/2 left-1/2 h-8 w-8 -translate-x-1/2 -translate-y-1/2 rounded-full bg-white shadow-lg;
+      @apply top-1/2 left-1/2 h-8 w-8 -translate-x-1/2 -translate-y-1/2 rounded-full bg-white opacity-50 shadow-lg;
+    }
+
+    button.selected::before {
+      @apply opacity-100;
     }
 
     :global(.dark) button.selected::before {
-      @apply bg-gray-900;
+      @apply bg-gray-500;
+    }
+    :global(.dark) button::before {
+      @apply bg-gray-600;
     }
   }
 </style>

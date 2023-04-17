@@ -14,7 +14,6 @@
   import { Tooltip } from '$lib/components/core'
 
   const toGroups = (name) => {
-    if (name.startsWith('urshifu')) debugger
     return Object.entries(weakness[name]).sort(([amod], [bmod]) => bmod - amod)
   }
 
