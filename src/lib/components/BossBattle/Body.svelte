@@ -11,7 +11,7 @@
 </script>
 
 <div
-  class="rec-card relative z-20 mx-auto h-auto translate-y-20 rounded-b-lg bg-white px-4 py-2 dark:bg-gray-900 md:translate-y-24 md:py-4 md:px-8"
+  class="rec-card relative z-20 mx-auto h-auto translate-y-20 rounded-b-lg bg-white px-4 py-2 dark:bg-gray-900 md:translate-y-24 md:py-4 md:px-8 md:pb-2"
 >
   <div
     class="mx-auto flex w-auto flex-wrap items-start pt-2 md:w-[48ch] md:pt-0"

@@ -33,16 +33,11 @@
   </p>
 
   <div class="my-4 flex justify-center gap-x-2 md:justify-end">
-    <Button on:click={ontoggle} class="text-xs md:text-base" rounded>
+    <Button on:click={ontoggle} class="!py-1 text-xs" rounded>
       <slot name="switch-text" />
     </Button>
 
-    <Button
-      on:click={oncomplete}
-      class="claim text-xs md:text-base"
-      solid
-      rounded
-    >
+    <Button on:click={oncomplete} class="claim !py-1 text-xs" solid rounded>
       {#if badge}
         Claim badge
         <PIcon class="coin -mt-3 md:ml-2" type="b" name={badge} />
