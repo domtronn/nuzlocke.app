@@ -1,23 +1,64 @@
 <script>
-  export let max, atk, def, spd, spa, spe, hp, col = '', nature = [], compare, side = 'right'
+  export let max,
+    atk,
+    def,
+    spd,
+    spa,
+    spe,
+    hp,
+    col = '',
+    nature = [],
+    compare,
+    side = 'right',
+    shorthand = true
 
   import StatBar from '$lib/components/stat-bar.svelte'
   import NaturesMap from '$lib/data/natures'
+
+  const compareMap = {
+    hp: 'hp',
+    atk: 'def',
+    def: 'atk',
+    spa: 'spd',
+    spd: 'spa',
+    spe: 'spe'
+  }
+
+  const statMap = {
+    hp: 'HP',
+    atk: 'Attack',
+    def: 'Defense',
+    spa: 'Sp. Attack',
+    spd: 'Sp. Defense',
+    spe: 'Speed'
+  }
 
   const [pos, neg] = NaturesMap[nature] || []
   const stats = { hp, atk, def, spa, spd, spe }
   const total = Object.values(stats).reduce((acc, it) => acc + it, 0)
 </script>
 
-<div style='--t-col: {col}' class='grid grid-cols-20 sm:grid-cols-7 gap-x-2 gap-y-1 items-center {$$restProps.class || ''}'>
-  <span class='z-40 absolute top-0 -translate-y-1/2 {side === 'right' ? '-' : ''}translate-x-1/2 {side}-2'>
-    <b class='py-1 -ml-2 pl-2 pr-2.5'>{total}</b>
+<div
+  style="--t-col: {col}"
+  class="grid grid-cols-20 items-center gap-x-2 gap-y-1 sm:grid-cols-7 {$$restProps.class ||
+    ''}"
+>
+  <span
+    class="absolute top-0 z-40 -translate-y-1/2 {side === 'right'
+      ? '-'
+      : ''}translate-x-1/2 {side}-2"
+  >
+    <b class="-ml-2 py-1 pl-2 pr-2.5">{total}</b>
   </span>
 
   {#each Object.entries(stats) as [s, sval]}
     <StatBar
       className={compare && sval <= compare[s] ? 'grayscale opacity-25' : ''}
-      mod={s === pos ? 1.1 : s === neg ? 0.9 : 1} stat={s} val={sval} max={max} />
+      mod={s === pos ? 1.1 : s === neg ? 0.9 : 1}
+      stat={shorthand ? s : statMap[s]}
+      val={sval}
+      {max}
+    />
   {/each}
 </div>
 
@@ -32,7 +73,7 @@
   }
 
   :global(.dark) b::before {
-    background-color: theme('colors.gray.900')
+    background-color: theme('colors.gray.900');
   }
 
   b::after {
@@ -60,5 +101,4 @@
     height: calc(50% + 2px);
     z-index: -2;
   }
-
 </style>

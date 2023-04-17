@@ -41,7 +41,7 @@
   </div>
 
   <div
-    class="anim-bg bbheading"
+    class="anim-bg bbheading bbanim"
     style="background: linear-gradient(180deg, transparent 0%, white 48%, white 52%, transparent 100%);"
   />
 
@@ -53,7 +53,7 @@
   />
 
   <div
-    class="absolute left-0 top-28 right-0 z-50 h-[2px] -translate-y-3"
+    class="absolute left-0 top-28 right-0 z-50 h-[2px] -translate-y-2.5"
     style="background: linear-gradient(90deg, {lCol(themeId)}, {rCol(
       themeId
     )});"
@@ -61,6 +61,10 @@
 </SettingWrapper>
 
 <style>
+  img {
+    image-rendering: pixelated;
+  }
+
   :root {
     --bbbgcol: white;
   }

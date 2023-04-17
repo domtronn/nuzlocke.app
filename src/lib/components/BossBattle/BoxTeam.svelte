@@ -10,61 +10,90 @@
   const locid = (a) => a.customId || a.location
 
   export let team = [],
-    box = []
+    box = [],
+    boss = {}
+
+  console.log(boss)
 
   $: teamList = team.map((t) => locid(t.original))
   $: boxList = box.filter((i) => !teamList.includes(locid(i.original)))
 
-  const add = (poke) => () => {
-    dispatch('add', poke)
-  }
-  const remove = (poke) => () => {
-    dispatch('remove', poke)
-  }
-  const select = (poke) => () => {
-    dispatch('select', poke)
-  }
+  const select = (poke) => () => dispatch('select', poke)
+  const clear = () => dispatch('clear')
+  const reset = () => dispatch('reset')
 </script>
 
-<h2>Your selected team</h2>
+<div class="mt-4 flex gap-x-4">
+  <div>
+    <h2>Team</h2>
+    <span class="flex justify-start gap-x-4 text-right"
+      ><button
+        disabled={team.length == 0}
+        on:click={clear}
+        class="clear float-right text-xs italic underline underline-offset-2 opacity-50 hover:opacity-100"
+      >
+        Clear team
+      </button>
+      <button
+        on:click={reset}
+        class="clear float-right text-xs italic underline underline-offset-2 opacity-50 hover:opacity-100"
+      >
+        Reset
+      </button>
+    </span>
 
-<ul class="mt-3 mb-4 grid w-fit grid-cols-6">
-  {#each team as poke (locid(poke.original))}
-    {@const og = poke.original}
-    <button
-      title="Remove {poke.pokemon} from team"
-      class="selected relative mx-auto h-10 w-10"
-      on:click={select(og)}
-      animate:flip={{ duration: 200 }}
-      in:receive={{ key: locid(og) }}
-      out:send={{ key: locid(og) }}
+    <ul class="mt-3 mb-4 grid w-fit grid-cols-3 gap-y-2">
+      {#each team as poke (locid(poke.original))}
+        {@const og = poke.original}
+        <button
+          title="Remove {og.pokemon} from team"
+          class="selected relative mx-auto h-10 w-10"
+          on:click={select(og)}
+          animate:flip={{ duration: 200 }}
+          in:receive={{ key: locid(og) }}
+          out:send={{ key: locid(og) }}
+        >
+          <PIcon class="picon" name={og.pokemon} />
+        </button>
+      {/each}
+      {#each Array(6 - team.length) as _}
+        <div class="relative h-10 w-10">
+          <PIcon
+            class="picon opacity-30 dark:opacity-80 dark:contrast-50"
+            name="unknown-pokemon2"
+          />
+        </div>
+      {/each}
+    </ul>
+  </div>
+
+  <div>
+    <h2>Box</h2>
+    <p>
+      Select pokemon to build a team against {name}
+    </p>
+    <ul
+      class="mt-2 grid w-fit grid-cols-8 rounded-lg bg-gray-200 px-4 py-2 dark:bg-gray-800"
     >
-      <PIcon class="picon" name={og.pokemon} />
-    </button>
-  {/each}
-</ul>
-
-<h2>Your box</h2>
-<p>
-  Select pokemon to build a team against {name}
-</p>
-
-<ul class="mt-2 grid w-fit grid-cols-12 rounded-lg bg-gray-800 px-4 py-2">
-  {#each boxList as poke (locid(poke.original))}
-    {@const og = poke.original}
-    <button
-      title="Add {poke.pokemon} to your team"
-      class="relative mx-auto h-10 w-10"
-      disabled={team.length === 6}
-      on:click={select(og)}
-      animate:flip={{ duration: 200 }}
-      in:receive={{ key: locid(og) }}
-      out:send={{ key: locid(og) }}
-    >
-      <PIcon class="picon" name={og.pokemon} />
-    </button>
-  {/each}
-</ul>
+      {#each boxList as poke (locid(poke.original))}
+        {@const og = poke.original}
+        <button
+          title={team.length === 6
+            ? 'Your team is full!'
+            : `Add ${og.pokemon} to your team`}
+          class="relative mx-auto h-10 w-10"
+          disabled={team.length === 6}
+          on:click={select(og)}
+          animate:flip={{ duration: 200 }}
+          in:receive={{ key: locid(og) }}
+          out:send={{ key: locid(og) }}
+        >
+          <PIcon class="picon" name={og.pokemon} />
+        </button>
+      {/each}
+    </ul>
+  </div>
+</div>
 
 <style>
   h2 {
@@ -87,27 +116,31 @@
     @apply grayscale;
   }
 
+  button.clear::before {
+    content: none;
+  }
+
   button:before {
     content: '';
     position: absolute;
     border-radius: 100%;
-    @apply left-1/2 -bottom-2 h-4 w-8 -translate-x-1/2 bg-transparent transition;
+    @apply left-1/2 -bottom-0 h-4 w-8 -translate-x-1/2 opacity-0 transition-opacity;
+  }
+
+  button::before {
+    @apply bg-black;
+  }
+
+  :global(.dark) button::before {
+    @apply bg-white;
   }
 
   button.selected::before {
-    @apply bg-gray-400;
+    @apply opacity-10;
   }
 
   button:not(.selected):enabled:hover::before {
-    @apply bg-gray-300;
-  }
-
-  :global(.dark) button.selected::before {
-    @apply bg-gray-600;
-  }
-
-  :global(.dark) button:not(.selected):enabled:hover::before {
-    @apply bg-gray-700;
+    @apply opacity-20;
   }
 
   button.selected :global(.pkm) {

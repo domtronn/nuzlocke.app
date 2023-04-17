@@ -3,19 +3,27 @@
   import { capitalise, regionise } from '$utils/string'
 
   export let name, i
-  export let weakPct = null, immunePct = null, resistPct
+  export let weakPct = null,
+    immunePct = null,
+    resistPct
 
   const IconMap = ['dire-hit-1', 'x-sp-def-2', 'x-attack-3']
-  function fmtPct (n) { return  Math.floor(n * 100) + '%' }
+  function fmtPct(n) {
+    return Math.floor(n * 100) + '%'
+  }
 </script>
 
-<li class='relative flex flex-col items-center text-xs justify-center'>
-  <p class='flex flex-col-reverse'>
-    <PIcon {name} class='!w-8 !h-16 mr-2 scale-125' />
-    <PIcon type=item name='wonder-launcher-{IconMap[i]}' class='-mb-4 -mt-2' />
+<li class="relative flex flex-col items-center justify-start text-xs">
+  <p class="flex flex-col-reverse">
+    <PIcon {name} class="mr-2 !h-16 !w-8 scale-125" />
+    <PIcon
+      type="item"
+      name="wonder-launcher-{IconMap[i]}"
+      class="-mb-4 -mt-2"
+    />
   </p>
 
-  <p class='h-full justify-start -mt-4 flex flex-col'>
+  <p class="-mt-4 flex h-full flex-col justify-start">
     <b>{capitalise(regionise(name))}</b>
 
     <!-- <span><b>Resists:</b> <i>{fmtPct(resistPct)}</i></span> -->

@@ -1,33 +1,52 @@
-<script >
-  export let name, selected, tabs = [], className = '', labelClassName = '', select = i => i.val, active = 0
+<script>
+  export let name,
+    selected,
+    tabs = [],
+    className = '',
+    labelClassName = '',
+    select = (i) => i.val,
+    active = 0
 
   $: selected = select(tabs[active]) || active
 </script>
 
-<div class='flex flex-row gap-x-4 sm:w-initial overflow-x-scroll {className}'>
+<div class="sm:w-initial flex flex-row gap-x-4 overflow-x-scroll {className}">
   {#each tabs as tab, i}
-    <label class:active={active === i} class='text-base cursor-pointer transition-colors {labelClassName}'>
-      <input type=radio bind:group={active} name={name} value={i} />
+    <label
+      class:active={active === i}
+      class="cursor-pointer text-base transition-colors {labelClassName}"
+    >
+      <input type="radio" bind:group={active} {name} value={i} />
       <span>{typeof tab === 'string' ? tab : tab.label}</span>
     </label>
   {/each}
 </div>
 
 <style lang="postcss">
-  div { width: calc(100vw - theme('spacing.8')); }
+  div {
+    width: calc(100vw - theme('spacing.8'));
+  }
   @media (min-width: theme('screens.sm')) {
-    div { width: auto; }
+    div {
+      width: auto;
+    }
   }
 
-  input { display: none; }
-  span { white-space: pre; }
+  input {
+    display: none;
+  }
+  span {
+    white-space: pre;
+  }
 
   label {
     color: theme('colors.gray.500');
     border-bottom: 2px solid transparent;
   }
 
-  label:hover { border-bottom-color: theme('colors.gray.500'); }
+  label:hover {
+    border-bottom-color: theme('colors.gray.500');
+  }
 
   label.active {
     color: theme('colors.gray.900');

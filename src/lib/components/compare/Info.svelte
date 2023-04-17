@@ -9,6 +9,7 @@
   import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
   import { Shield } from '$icons'
 
+  import TypeLogo from '$lib/components/type-logo.svelte'
   import TypeBadge from '$lib/components/type-badge.svelte'
   import { Tooltip } from '$lib/components/core'
 
@@ -44,7 +45,7 @@
 </div>
 
 <!-- Phys vs Spec distribution -->
-<div class="w-1/2 text-tiny font-medium tracking-tighter md:w-auto">
+<div class="-mt-px w-1/2 text-tiny font-medium tracking-tighter md:w-auto">
   <span class="text-tiny font-normal">Dmg types</span>
   <div class="my-1 flex items-center gap-x-1">
     <TypeBadge type="physical" />
@@ -57,18 +58,17 @@
 </div>
 
 <!-- Type weaknesses of attacking pokemon -->
-<div class="mt-4 flex flex-col tracking-tighter md:ml-4 md:mt-0">
-  <span class="text-tiny font-normal">
+<div class="mt-4.5 flex w-72 flex-wrap items-start md:ml-4 md:mt-px">
+  <span class="w-full text-xs font-normal">
     {opp.name}'s weaknesses
   </span>
+
   {#each toGroups(opp.alias) as [mod, types], i}
-    <div class="flex items-center font-mono text-xl leading-5 tracking-normal">
+    <div class="flex items-center font-mono text-xl leading-5">
       <span>{toFraction(mod)}x</span>
-      <div
-        class="ml-1 flex origin-left scale-75 transform flex-wrap gap-1 lg:w-60"
-      >
+      <div class="ml-1 flex flex-wrap">
         {#each types as type}
-          <TypeBadge {type} />
+          <TypeLogo class="origin-left scale-75" {type} />
         {/each}
       </div>
     </div>

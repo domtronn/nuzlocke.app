@@ -31,7 +31,7 @@
   <div class="flex items-center justify-between px-2 text-white">
     <h2 class="-mb-5 text-base font-medium md:mb-0">{title}</h2>
     {#if pages.length > 1}
-      <div class="flex translate-y-2.5 items-center gap-x-2 sm:translate-y-0.5">
+      <div class="flex translate-y-2.5 items-center sm:translate-y-0.5">
         {#each Array(pages.length).fill('foo') as p, i}
           <button title="Page {i + 1}" on:click={set(i)}>
             <Icon
@@ -79,8 +79,8 @@
           in:fade={{ duration: 300, delay: 50 }}
           class:opacity-50={value !== page * pageSize + i}
           class:grayscale={value !== page * pageSize + i}
-          class:scale-150={value === page * pageSize + i}
-          class="origin-center transform cursor-pointer transition hover:scale-150 hover:opacity-100 hover:grayscale-0"
+          class:scale-125={value === page * pageSize + i}
+          class="-mx-2 origin-center transform cursor-pointer transition hover:scale-125 hover:opacity-100 hover:grayscale-0"
           on:click={(e) => {
             value = page * pageSize + i
             dispatch('select')

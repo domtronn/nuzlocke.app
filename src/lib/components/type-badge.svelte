@@ -1,5 +1,7 @@
 <script>
-  export let type, tera, className = ''
+  export let type,
+    tera,
+    className = ''
 
   if (tera) className = (className + ' tera').trim()
 
@@ -18,27 +20,39 @@
   const icon = IconMap[type.toLowerCase()]
 </script>
 
-<SettingWrapper id=theme let:setting={themeId}>
+<SettingWrapper id="theme" let:setting={themeId}>
   {#if icon}
-    <div style="--badge-color: {color(type, themeId)[0]}; padding: 4px 5px;" class={className}>
-      <Icon inline={true} icon={icon} color={color(type, themeId)[1]} />
+    <div
+      style="--badge-color: {color(type, themeId)[0]}; padding: 4px {type ===
+      'physical'
+        ? 6.5
+        : 5}px;"
+      class={className}
+    >
+      <Icon inline={true} {icon} color={color(type, themeId)[1]} />
+    </div>
+  {:else if $$slots.content}
+    <div style="--badge-color: {color(type, themeId)};" class={className}>
+      <slot name="content" />
     </div>
   {:else}
-    {#if $$slots.content}
-      <div style="--badge-color: {color(type, themeId)};" class={className}>
-        <slot name=content />
-      </div>
-    {:else}
-      <div style="--badge-color: {color(type, themeId)}; --badge-content: '{content}'" class={className}>
-    {#if tera} <span /> <span /> <span /> <span /> <span /> <span /> {/if}
+    <div
+      style="--badge-color: {color(
+        type,
+        themeId
+      )}; --badge-content: '{content}'"
+      class={className}
+    >
+      {#if tera} <span /> <span /> <span /> <span /> <span /> <span /> {/if}
       {content}
-      </div>
-    {/if}
+    </div>
   {/if}
 </SettingWrapper>
 
 <style lang="postcss">
-  :global(.dark) div { color: theme('colors.gray.900') }
+  :global(.dark) div {
+    color: theme('colors.gray.900');
+  }
 
   span {
     z-index: -1;
@@ -60,12 +74,36 @@
     border-bottom-color: var(--badge-color);
   }
 
-  span:nth-child(1) {top: -2px; left: -3px; transform: rotate(-40deg);}
-  span:nth-child(2) {left: -10px; top: 50%; transform: rotate(-90deg) translateX(2px);}
-  span:nth-child(3) {bottom: -2px; left: -3px; transform: rotate(-140deg);}
-  span:nth-child(4) {top: -2px; right: -3px; transform: rotate(40deg);}
-  span:nth-child(5) {right: -10px; top: 50%; transform: rotate(90deg) translateX(-2px);}
-  span:nth-child(6) {bottom: -2px; right: -3px; transform: rotate(140deg);}
+  span:nth-child(1) {
+    top: -2px;
+    left: -3px;
+    transform: rotate(-40deg);
+  }
+  span:nth-child(2) {
+    left: -10px;
+    top: 50%;
+    transform: rotate(-90deg) translateX(2px);
+  }
+  span:nth-child(3) {
+    bottom: -2px;
+    left: -3px;
+    transform: rotate(-140deg);
+  }
+  span:nth-child(4) {
+    top: -2px;
+    right: -3px;
+    transform: rotate(40deg);
+  }
+  span:nth-child(5) {
+    right: -10px;
+    top: 50%;
+    transform: rotate(90deg) translateX(-2px);
+  }
+  span:nth-child(6) {
+    bottom: -2px;
+    right: -3px;
+    transform: rotate(140deg);
+  }
 
   div.tera {
     text-align: center;
@@ -79,7 +117,8 @@
     background-size: cover;
     background-position: center;
     background-blend-mode: luminosity;
-    box-shadow: rgba(255, 255, 255, 0.08) 0px 1px 3px, rgba(255, 255, 255, 0.16) 0px 1px 2px;
+    box-shadow: rgba(255, 255, 255, 0.08) 0px 1px 3px,
+      rgba(255, 255, 255, 0.16) 0px 1px 2px;
   }
 
   div.tera::before {
@@ -106,8 +145,8 @@
 
   div::before {
     position: absolute;
-    filter: blur(.5px);
-    margin: .5px 0 0 1px;
+    filter: blur(0.5px);
+    margin: 0.5px 0 0 1px;
     color: rgba(0, 0, 0, 0.3);
     content: var(--badge-content);
     z-index: -1;
