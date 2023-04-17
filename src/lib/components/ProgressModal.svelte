@@ -7,7 +7,8 @@
   import deferStyles from '$lib/utils/defer-styles'
   import { onMount, getContext } from 'svelte'
 
-  import { Tabs } from '$c/core'
+  import { X } from '$icons'
+  import { Tabs, IconButton } from '$c/core'
   import { TeamBuildCard, CompareCard, Actions } from '$c/BossBattle'
   import { getGameStore, read, readdata, readTeam, readBox } from '$lib/store'
 
@@ -28,8 +29,28 @@
   const makeTeam = (mons, location) =>
     mons.find((m) => locid(m.original) === location)
 
+  const settab = (i) => () => (tab = i)
+  const handlesubmit = (team) => () => {
+    const teamLocs = team.map((o) => locid(o.original))
+    const same = teamLocs.every((it, i) => ogTeam[i] === it)
+
+    if (!same) alert('Team has changed!')
+  }
+
+  const resetTeam = () => (teamLocs = readTeam(rawData))
+  const clearTeam = () => (teamLocs = [])
+  const toggleMon = (e) => {
+    const mon = e.detail
+    if (teamLocs.includes(locid(mon))) {
+      teamLocs = teamLocs.filter((i) => i !== locid(mon))
+    } else {
+      if (teamLocs.length === 6) return
+      teamLocs = teamLocs.concat(locid(mon))
+    }
+  }
+
   // Data and setup functions
-  let gameStore, rawData, boxData, teamLocs
+  let gameStore, rawData, boxData, teamLocs, ogTeam
   async function setup() {
     const [, , id] = readdata()
 
@@ -38,7 +59,7 @@
       read((data) => {
         rawData = data
         boxData = readBox(data)
-        teamLocs = readTeam(data)
+        ogTeam = teamLocs = readTeam(data)
       })
     )
   }
@@ -78,22 +99,48 @@
   {#key (boss.id, tab)}
     {#await fetchAnalysis(boss.pokemon) then { summary, box, mons, gym, ...advice }}
       {@const team = teamLocs.map(makeTeam.bind({}, mons))}
+
+      <IconButton
+        borderless
+        rounded
+        src={X}
+        on:click={close}
+        containerClassName="fixed top-4 right-4 z-[100]"
+      />
+
       {#if tab === 1}
         <CompareCard {id} {team} {box} {gym} {advice}>
           <Tabs class="flex-1" slot="tabs" bind:active={tab} {tabs} />
           <Actions
+            slot="actions"
+            on:toggle={settab(0)}
+            on:complete={handlesubmit(team)}
             class="justify-center rounded-b-lg bg-white px-6 pt-1 pb-2 dark:bg-gray-900"
             {...boss}
             {team}
-            slot="actions"
           >
             <span slot="switch-text">Build team</span>
           </Actions>
         </CompareCard>
       {:else}
-        <TeamBuildCard {team} {box} {gym} {boss} {summary}>
+        <TeamBuildCard
+          on:select={toggleMon}
+          on:clear={clearTeam}
+          on:reset={resetTeam}
+          {team}
+          {box}
+          {gym}
+          {boss}
+          {summary}
+        >
           <Tabs slot="tabs" bind:active={tab} {tabs} />
-          <Actions {...boss} {team} slot="actions">
+          <Actions
+            slot="actions"
+            on:toggle={settab(1)}
+            on:complete={handlesubmit(team)}
+            {...boss}
+            {team}
+          >
             <span slot="switch-text">Compare team</span>
           </Actions>
         </TeamBuildCard>

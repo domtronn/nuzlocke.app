@@ -3,7 +3,7 @@
   export let borderless = false
 
   import { createEventDispatcher } from 'svelte'
-  import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
+  import Icon sr from '@iconify/svelte/dist/OfflineIcon.svelte'
   import PIcon from '$lib/components/core/PokemonIcon.svelte'
 
   const dispatch = createEventDispatcher()
@@ -12,22 +12,30 @@
 
 <button
   {tabIndex}
-  disabled={disabled}
+  {disabled}
   aria-label={title}
-  title={title}
+  {title}
   on:click|stopPropagation={onclick}
   class:borderless={borderless === true}
   class:sm:borderless={borderless === 'sm'}
-  class:disabled={disabled}
+  class:disabled
   class:rounded-lg={rounded}
-  class='group {color} {containerClassName} '
+  class="group {color} {containerClassName} "
 >
   {#if $$slots.icon}
-    <slot name=icon />
+    <slot name="icon" />
   {:else if src}
-    <Icon inline={true} class='fill-current m-2 grayscale group-hover:grayscale-0 {className}' icon={src} />
+    <Icon
+      inline={true}
+      class="m-2 fill-current grayscale group-hover:grayscale-0 {className}"
+      icon={src}
+    />
   {:else if name}
-    <PIcon className='transition grayscale group-hover:grayscale-0 opacity-50 group-hover:opacity-100 {className}' name={name} type='item' />
+    <PIcon
+      className="transition grayscale group-hover:grayscale-0 opacity-50 group-hover:opacity-100 {className}"
+      {name}
+      type="item"
+    />
   {/if}
   <slot />
 </button>
@@ -90,14 +98,13 @@
   }
 
   :global(.dark) button,
-  :global(.dark) button.disabled
-  {
+  :global(.dark) button.disabled {
     border-color: theme('colors.gray.600');
   }
 
   button,
   button.disabled {
-    @apply flex items-center border-2 ring-2 ring-transparent transition shadow-sm;
+    @apply flex items-center border-2 shadow-sm ring-2 ring-transparent transition;
     background-color: var(--input-bg);
     border-color: theme('colors.gray.200');
     color: theme('colors.gray.400');
@@ -110,7 +117,7 @@
 
   button.sm\:borderless,
   button.disabled.sm\:borderless {
-    @apply border-0 outline-none bg-transparent shadow-none;
+    @apply border-0 bg-transparent shadow-none outline-none;
   }
 
   @media (min-width: theme('screens.sm')) {
