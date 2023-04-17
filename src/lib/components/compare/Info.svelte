@@ -22,6 +22,15 @@
     if (s == 0.5) return '½'
     return s
   }
+
+  const dmgModMap = {
+    1: 'neutral',
+    2: 'Super Effective',
+    4: '4x Super Effective',
+    0.5: '½ not very effective',
+    0.25: '¼ not very effective',
+    0: 'no'
+  }
 </script>
 
 <!-- Maximum Dmg modifier for defending pokemon -->
@@ -39,7 +48,10 @@
   <span
     class="absolute top-8 -mt-2 -translate-x-1/2 cursor-help font-mono text-2xl"
   >
-    <Tooltip>Based on {opp.name}'s moveset</Tooltip>
+    <Tooltip
+      >Based on {opp.name}'s moveset, the maximum damage they could could do to {team.name}
+      is {dmgModMap[dmg[team.alias][opp.alias] || 1]} damage.
+    </Tooltip>
 
     {toFraction(dmg[team.alias][opp.alias] || 1)}x
   </span>

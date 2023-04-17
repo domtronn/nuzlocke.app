@@ -86,7 +86,7 @@
       </div>
 
       <div
-        class="relative z-30 flex w-full flex-wrap border-gray-300 bg-white py-4 pl-8 pr-8 pb-4 text-gray-600 dark:border-gray-800 dark:bg-gray-900 dark:text-gray-200 max-md:rounded-b-lg md:border-t md:py-3 md:pl-8 md:pr-4"
+        class="relative z-30 flex w-full flex-wrap border-gray-300 bg-white px-5 py-2 text-gray-600 dark:border-gray-800 dark:bg-gray-900 dark:text-gray-200 max-md:rounded-b-lg md:border-t md:py-3 md:pl-8 md:pr-4"
         class:hidden={tab !== 2}
       >
         <CompareMoves calc={advice.calc} pokemon={compare} />
