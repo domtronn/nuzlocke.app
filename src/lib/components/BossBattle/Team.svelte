@@ -22,15 +22,18 @@
   class:flex-row-reverse={type === 'attack'}
   class:md:translate-y-3={team.length > 1}
   class:team-max={team.length === 6}
-  class="team-grid flex h-10 -translate-y-5 justify-end md:h-auto md:justify-center"
+  class="team-grid flex h-10 -translate-y-5 justify-evenly md:h-auto md:justify-center"
 >
   {#each team as p, i (p?.original?.customId || p?.original?.location || i)}
-    <span class:last={islast(type, i, team)} animate:flip>
+    <span
+      class="z-20 -mx-2 flex h-14 w-14 md:h-24 md:w-24"
+      class:last={islast(type, i, team)}
+      animate:flip
+    >
       <img
         in:fade={{ duration: 200 }}
         alt={p.name}
         style="--bob-delay: {(2 * i) / 10}s"
-        class="z-20 -mx-2 flex h-16 w-16 md:h-24 md:w-24"
         src={sprite(p)}
       />
     </span>
@@ -106,14 +109,14 @@
   }
 
   .team-grid {
-    @apply ml-8 mr-5;
+    @apply mx-8;
   }
 
   .team-grid.flip > *:first-child {
-    @apply -mr-2;
+    @apply -mr-8;
   }
   .team-grid:not(.flip) > *:first-child {
-    @apply -ml-2;
+    @apply -ml-8;
   }
 
   @media (min-width: theme('screens.md')) {
@@ -129,10 +132,10 @@
     }
 
     .team-grid.flip > *:first-child {
-      @apply -mr-16;
+      @apply -mr-12;
     }
     .team-grid:not(.flip) > *:first-child {
-      @apply -ml-12;
+      @apply -ml-10;
     }
 
     /* .team-grid.team-max.flip > *:first-child { */

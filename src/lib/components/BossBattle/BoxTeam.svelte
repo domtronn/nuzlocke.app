@@ -39,22 +39,6 @@
 <div class="mt-4 flex w-full flex-col gap-x-4 md:flex-row">
   <div>
     <h2 class="max-md:inline md:w-full">Team</h2>
-    <span
-      class="float-right mt-1 inline-flex justify-end gap-x-4 text-right md:float-none md:-mt-1 md:justify-start"
-      ><button
-        disabled={team.length == 0}
-        on:click={clear}
-        class="clear float-right text-xs italic underline underline-offset-2 opacity-50 hover:opacity-100"
-      >
-        Clear team
-      </button>
-      <button
-        on:click={reset}
-        class="clear float-right text-xs italic underline underline-offset-2 opacity-50 hover:opacity-100"
-      >
-        Reset
-      </button>
-    </span>
 
     <ul class="mt-3 mb-4 grid grid-cols-6 gap-y-2 md:w-fit md:grid-cols-3">
       {#each team as poke (locid(poke.original))}
@@ -79,6 +63,23 @@
         </div>
       {/each}
     </ul>
+
+    <span
+      class="float-right mt-1 inline-flex justify-end gap-x-4 text-right md:float-none md:-mt-1 md:justify-start"
+      ><button
+        disabled={team.length == 0}
+        on:click={clear}
+        class="clear float-right text-xs italic underline underline-offset-2 opacity-50 hover:opacity-100"
+      >
+        Clear team
+      </button>
+      <button
+        on:click={reset}
+        class="clear float-right text-xs italic underline underline-offset-2 opacity-50 hover:opacity-100"
+      >
+        Reset
+      </button>
+    </span>
   </div>
 
   <div class="relative">

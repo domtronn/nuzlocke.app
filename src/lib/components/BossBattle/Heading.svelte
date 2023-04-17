@@ -28,7 +28,7 @@
 {#if boss?.img}
   <!-- <img class="absolute -top-8 left-8 -z-10 scale-y-150 -scale-x-150" src="/leaders/masters/trainer/red.png" /> -->
   <img
-    class="absolute -top-0 right-4 z-10 scale-125 md:right-8 md:-top-7 md:-z-10 md:scale-200"
+    class="absolute right-4 -top-5 -z-10 scale-150 md:-top-7 md:right-8 md:scale-200"
     src="{IMG}{src}.png"
   />
 {/if}
@@ -66,42 +66,6 @@
     )});"
   />
 
-  <!-- Mobile gradients stacked -->
-  <div
-    class="bbheading bbheading-ltr mob-only transition"
-    style="background: linear-gradient(50deg, {lCol(
-      themeId
-    )}, var(--bbbgcol) 70%"
-  >
-    <div
-      class="absolute inset-0 opacity-30 mix-blend-overlay"
-      style={`background-image: url("${Pattern('white')}")`}
-    />
-  </div>
-
-  <div
-    class="bbheading bbheading-rtl mob-only transition"
-    style="background: linear-gradient(130deg, var(--bbbgcol) 0%, var(--bbbgcol) 30%, {rCol(
-      themeId
-    )} ;"
-  >
-    <div
-      class="absolute inset-0 opacity-30 mix-blend-overlay"
-      style={`background-image: url("${Pattern('white')}")`}
-    />
-  </div>
-
-  <!-- Mobile dividers -->
-  <div
-    class="mob-only absolute left-0 top-24 right-0 z-30 h-[2px] -translate-y-2.5"
-    style="background: linear-gradient(90deg, var(--bbbgcol), {rCol(themeId)});"
-  />
-
-  <div
-    class="mob-only absolute left-0 top-12 right-0 z-10 h-[2px] -translate-y-0.5"
-    style="background: linear-gradient(90deg, {lCol(themeId)}, var(--bbbgcol))"
-  />
-
   <!-- Base stat totals -->
 
   <div style="--b-col: {lCol(themeId)}" class="bst"><b>{atkStats}</b></div>
@@ -113,12 +77,8 @@
     image-rendering: pixelated;
   }
 
-  .mob-only {
-    @apply md:hidden;
-  }
-
   .desk-only {
-    @apply hidden md:block;
+    @apply flex;
   }
 
   .bst,
@@ -151,10 +111,6 @@
   }
 
   .bst {
-    @apply max-md:top-6;
-  }
-
-  .bst ~ .bst {
     @apply max-md:top-16;
   }
 
@@ -171,7 +127,7 @@
   }
 
   .bbheading {
-    @apply inset-0 top-6 h-10 w-full translate-y-2 overflow-hidden rounded-t-lg md:absolute;
+    @apply absolute inset-0 top-6 h-20 w-full translate-y-2 overflow-hidden rounded-t-lg;
   }
 
   .bbheading-ltr {

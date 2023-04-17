@@ -29,17 +29,15 @@
   <Heading atkStats={sumStats(team)} defStats={sumStats(gym)} {boss} />
 
   <div
-    class="absolute top-2 z-20 h-20 w-full items-center justify-between md:top-6 md:inline-flex"
+    class="absolute top-8 z-20 flex h-20 w-full items-center justify-between md:top-9"
   >
-    <div class="h-1/2 w-full flex-1 md:h-full md:w-auto">
+    <div class="flex-1">
       <Team type="attack" {team} />
     </div>
 
-    <Vs
-      class="max-md:absolute max-md:top-1/4 max-md:right-1/4 max-md:-translate-x-1/2 max-md:-translate-y-1/2"
-    />
+    <Vs class="-mt-6" />
 
-    <div class="h-1/2 w-full flex-1 md:h-full md:w-auto">
+    <div class="flex-1">
       <Team type="defend" team={gym} />
     </div>
   </div>

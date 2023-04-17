@@ -48,7 +48,7 @@
 </script>
 
 {#if team.length === 0}{:else}
-  <CompareCard className="mt-8 min-w-[50ch]" pokemon={compare}>
+  <CompareCard className="mt-8 w-full md:min-w-[50ch]" pokemon={compare}>
     <!-- Mobile display compare stats & info in tabs -->
 
     {#key compare}
@@ -90,7 +90,7 @@
 
     <!-- Accordion info Desktop display -->
     <div
-      class="rounded-b-lg border-gray-200 bg-white pl-4 pr-2 pb-4 text-gray-600 dark:border-gray-800 dark:bg-gray-900 dark:text-gray-200 md:border-t md:py-3 md:pl-8 md:pr-4"
+      class="hidden rounded-b-lg border-gray-200 bg-white pl-4 pr-2 pb-4 text-gray-600 dark:border-gray-800 dark:bg-gray-900 dark:text-gray-200 md:flex md:border-t md:py-3 md:pl-8 md:pr-4"
     >
       <strong class="text-sm"> Info </strong>
       <div class="text-gray-800 dark:text-gray-200">
@@ -108,7 +108,7 @@
     class="mt-2 flex flex-col gap-y-4 rounded-xl py-2 sm:mt-0 sm:gap-y-0 sm:gap-x-2"
   >
     <CompareControls
-      class="cc-right absolute top-0.5 -right-8 origin-left translate-x-full rotate-90 transform !bg-transparent"
+      class="origin-left transform md:absolute md:top-0.5 md:-right-8 md:translate-x-full md:rotate-90 md:!bg-transparent"
       pageSize={6}
       controls={false}
       className="flex-1"
@@ -119,7 +119,7 @@
 
     {#key team}
       <CompareControls
-        class="cc-right absolute top-0.5 -left-8 origin-left rotate-90 transform !bg-transparent"
+        class="origin-left transform md:absolute md:top-0.5 md:-left-8 md:rotate-90 md:!bg-transparent"
         on:select={set(Active.Team)}
         pageSize={6}
         controls={false}

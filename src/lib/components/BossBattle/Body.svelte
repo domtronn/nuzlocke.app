@@ -11,7 +11,7 @@
 </script>
 
 <div
-  class="rec-card relative z-20 mx-auto mt-2 h-auto rounded-b-lg bg-white px-4 py-2 dark:bg-gray-900 md:translate-y-24 md:py-4 md:px-8"
+  class="rec-card relative z-20 mx-auto mt-2 h-auto translate-y-20 rounded-b-lg bg-white px-4 py-2 dark:bg-gray-900 md:translate-y-24 md:py-4 md:px-8"
 >
   <div class="mx-auto flex w-full flex-wrap items-start md:w-[48ch]">
     <slot name="tabs" />
