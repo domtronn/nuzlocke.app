@@ -73,9 +73,19 @@
     image-rendering: pixelated;
   }
 
+  .bst,
+  .bst b::before {
+    @apply bg-white;
+  }
+
+  :global(.dark) .bst,
+  :global(.dark) .bst b::before {
+    @apply bg-gray-900;
+  }
+
   .bst {
     border-color: var(--b-col);
-    @apply absolute top-20 left-8 z-50 translate-y-2.5 rounded-lg border-2 bg-gray-900 px-2;
+    @apply absolute top-20 left-5 z-50 translate-y-2.5 scale-75 rounded-lg border-2 px-2;
   }
 
   .bst b {
@@ -89,11 +99,11 @@
     left: -2px;
     bottom: -2px;
     height: 14px;
-    @apply absolute bg-gray-900;
+    @apply absolute;
   }
 
   .bst ~ .bst {
-    @apply left-auto right-8;
+    @apply left-auto right-5;
   }
 
   :root {

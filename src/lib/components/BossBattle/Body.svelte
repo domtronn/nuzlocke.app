@@ -81,8 +81,13 @@
 <style>
   hr {
     height: 1px;
-    @apply w-full bg-white opacity-10;
+    @apply w-full bg-gray-900 opacity-90;
   }
+
+  :global(.dark) hr {
+    @apply bg-white opacity-10;
+  }
+
   p {
     @apply text-xs italic text-gray-500;
   }
