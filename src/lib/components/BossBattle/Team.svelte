@@ -6,16 +6,16 @@
   import { fade } from 'svelte/transition'
   import { flip } from 'svelte/animate'
 
-  import { getContext } from 'svelte'
   import { createImgUrl } from '$utils/rewrites'
 
-  const { getPkmn } = getContext('game')
-  const sprite = (p, status) =>
-    createImgUrl(p, { ext: 'png', shiny: status === 6 })
+  const sprite = (p, status) => {
+    return createImgUrl(
+      { imgId: p?.original?.sprite || p?.imgId },
+      { ext: 'png', shiny: status === 6 }
+    )
+  }
 
-  const islast = (type, i, team) => i === 5
-  const ispenum = (type, i, team) =>
-    type == 'attack' ? (team.length === 6 ? i === 1 : i === 0) : i === 4
+  const islast = (type, i) => i === 5
 </script>
 
 <div
@@ -33,7 +33,7 @@
         alt={p.name}
         style="--bob-delay: {(2 * i) / 10}s"
         class="z-20 -mx-2 flex h-24 w-24"
-        src={sprite({ ...p.original, ...p })}
+        src={sprite(p)}
       />
     </span>
   {/each}
@@ -45,7 +45,7 @@
   }
 
   img {
-    image-rendering: pixelated;
+    images-rendering: pixelated;
     animation: bob 5.5s ease var(--bob-delay) infinite;
   }
 

@@ -53,10 +53,10 @@
         style="line-height:1.2em; min-height:2.4em;"
         class="flex items-end tracking-tighter"
       >
-        <span class:cursor-help={moves[move.name]?.effect}>
+        <span class="relative" class:cursor-help={moves[move.name]?.effect}>
           {move.name}
           {#if moves[move.name]?.effect}
-            *
+            <sup class="absolute top-1 -right-1">*</sup>
             <Tooltip>{moves[move.name]?.effect}</Tooltip>
           {/if}
         </span>

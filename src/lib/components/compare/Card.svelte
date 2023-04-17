@@ -16,8 +16,11 @@
   $: atk = pokemon[0]
   $: def = pokemon[1]
 
-  const sprite = (imgId, status) =>
-    createImgUrl({ imgId }, { ext: 'png', shiny: status === 6 })
+  const sprite = (p, status) =>
+    createImgUrl(
+      { imgId: p?.original?.sprite ?? p.imgId },
+      { ext: 'png', shiny: status === 6 }
+    )
 </script>
 
 <SettingWrapper id="theme" let:setting={themeId}>
@@ -68,7 +71,7 @@
           in:fade={{ duration: 500 }}
           class="flip z-20 -mx-6 flex h-32 w-32"
           style="transform: scaleX(-1); "
-          src={sprite(atk.imgId, atk.status)}
+          src={sprite(atk, atk.status)}
         />
       {/key}
       {#key `def__${def.name}`}
@@ -76,7 +79,7 @@
           alt={def.name}
           in:fade={{ duration: 500 }}
           class="z-20 -mx-6 flex h-32 w-32"
-          src={sprite(def.imgId)}
+          src={sprite(def)}
         />
       {/key}
 

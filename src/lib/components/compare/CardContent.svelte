@@ -15,7 +15,7 @@
     Box: 2
   }
 
-  const select = (p) => p?.sprite
+  const select = (p) => p?.original?.icon || p?.sprite
   const set = (id) => () => {
     id == Active.Box ? (teamId = -1) : (boxId = -1)
     active = id
