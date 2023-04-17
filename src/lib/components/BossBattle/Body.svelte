@@ -18,7 +18,7 @@
 
     <hr class="-mb-2 !opacity-0" />
 
-    <BoxTeam on:clear on:reset on:select {team} {box} />
+    <BoxTeam on:clear on:reset on:select {team} {box} boss={{ name }} />
 
     <hr class="mt-4 mb-4" />
 
@@ -36,11 +36,13 @@
 
     <div class="min-w-1/2 flex flex-1 flex-col justify-start">
       <Advice types={advice.weak}>
-        <p>{name}'s team are <b>all</b> weak to:</p>
+        <p>{name}'s team are <b class="dark:text-gray-400">all</b> weak to:</p>
       </Advice>
 
       <Advice types={advice.resist}>
-        <p>{name}'s team are <b>all</b> resistant to:</p>
+        <p>
+          {name}'s team are <b class="dark:text-gray-400">all</b> resistant to:
+        </p>
       </Advice>
 
       <Advice types={advice.immunity}>
@@ -63,7 +65,7 @@
         {@const dclass = advice.dmgclass[0]}
         {@const defclass =
           dclass === 'physical' ? 'Defense' : 'Special Defense'}
-        <p class="mt-2 w-full text-left text-xs italic opacity-50">
+        <p class="mt-2 w-full text-center text-xs italic">
           {name}'s team only uses <b>{dclass}</b> moves. <br />
           You should use Pokemon with a high <b>{defclass}</b> stat.
         </p>
@@ -82,7 +84,7 @@
     @apply w-full bg-white opacity-10;
   }
   p {
-    @apply text-xs italic opacity-50;
+    @apply text-xs italic text-gray-500;
   }
   h2 {
     @apply text-sm font-bold;

@@ -13,10 +13,10 @@
     box = [],
     boss = {}
 
-  console.log(boss)
-
   $: teamList = team.map((t) => locid(t.original))
   $: boxList = box.filter((i) => !teamList.includes(locid(i.original)))
+
+  //  TODO: Paginate the box
 
   const select = (poke) => () => dispatch('select', poke)
   const clear = () => dispatch('clear')
@@ -70,7 +70,7 @@
   <div>
     <h2>Box</h2>
     <p>
-      Select pokemon to build a team against {name}
+      Select pokemon to build a team against {boss.name}
     </p>
     <ul
       class="mt-2 grid w-fit grid-cols-8 rounded-lg bg-gray-200 px-4 py-2 dark:bg-gray-800"

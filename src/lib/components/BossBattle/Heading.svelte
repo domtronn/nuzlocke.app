@@ -9,6 +9,9 @@
     defType = null,
     boss = null
 
+  export let atkStats
+  export let defStats
+
   const rColDefault = '#cd4184',
     lColDefault = '#2f78df'
 
@@ -58,11 +61,39 @@
       themeId
     )});"
   />
+
+  <!-- Base stat totals -->
+
+  <div style="--b-col: {lCol(themeId)}" class="bst"><b>{atkStats}</b></div>
+  <div style="--b-col: {rCol(themeId)}" class="bst"><b>{defStats}</b></div>
 </SettingWrapper>
 
 <style>
   img {
     image-rendering: pixelated;
+  }
+
+  .bst {
+    border-color: var(--b-col);
+    @apply absolute top-20 left-8 z-50 translate-y-2.5 rounded-lg border-2 bg-gray-900 px-2;
+  }
+
+  .bst b {
+    @apply z-50;
+  }
+
+  .bst b::before {
+    content: '';
+    z-index: -10;
+    width: calc(100% + 4px);
+    left: -2px;
+    bottom: -2px;
+    height: 14px;
+    @apply absolute bg-gray-900;
+  }
+
+  .bst ~ .bst {
+    @apply left-auto right-8;
   }
 
   :root {
