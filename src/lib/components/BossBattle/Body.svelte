@@ -11,16 +11,16 @@
 </script>
 
 <div
-  class="rec-card relative mx-auto h-auto rounded-b-lg bg-white px-8 py-4 dark:bg-gray-900"
+  class="rec-card relative z-20 mx-auto mt-2 h-auto rounded-b-lg bg-white px-4 py-2 dark:bg-gray-900 md:translate-y-24 md:py-4 md:px-8"
 >
-  <div class="mx-auto flex w-[48ch] flex-wrap items-start">
+  <div class="mx-auto flex w-full flex-wrap items-start md:w-[48ch]">
     <slot name="tabs" />
 
     <hr class="-mb-2 !opacity-0" />
 
     <BoxTeam on:clear on:reset on:select {team} {box} boss={{ name }} />
 
-    <hr class="mt-4 mb-4" />
+    <hr class="my-2 md:my-4" />
 
     <h2 class="inline-flex w-full">
       Recommendations
@@ -34,29 +34,8 @@
       </span>
     </h2>
 
-    <div class="min-w-1/2 flex flex-1 flex-col justify-start">
-      <Advice types={advice.weak}>
-        <p>{name}'s team are <b class="dark:text-gray-400">all</b> weak to:</p>
-      </Advice>
-
-      <Advice types={advice.resist}>
-        <p>
-          {name}'s team are <b class="dark:text-gray-400">all</b> resistant to:
-        </p>
-      </Advice>
-
-      <Advice types={advice.immunity}>
-        <p>{name}'s team have immunities to:</p>
-      </Advice>
-    </div>
-
-    <div class="min-w-1/2 flex-1">
-      <ul
-        class:-mt-5={advice.weak?.length ||
-          advice.resist?.length ||
-          advice.immunity?.length}
-        class="my-2 flex justify-start gap-x-6"
-      >
+    <div class="md:min-w-1/2 w-full md:flex-1">
+      <ul class="my-2 flex justify-around gap-x-6 md:justify-start">
         {#each recommendations.slice(0, 3) as poke, i}
           <Recommendation {...poke} {i} />
         {/each}
@@ -65,14 +44,34 @@
         {@const dclass = advice.dmgclass[0]}
         {@const defclass =
           dclass === 'physical' ? 'Defense' : 'Special Defense'}
-        <p class="mt-2 w-full text-center text-xs italic">
-          {name}'s team only uses <b>{dclass}</b> moves. <br />
+        <p class="mt-2 w-full text-center text-xs italic max-md:mb-2">
+          {name}'s team only uses <b>{dclass}</b> moves.
+          <br class="hidden md:block" />
           You should use Pokemon with a high <b>{defclass}</b> stat.
         </p>
       {/if}
     </div>
 
-    <hr class="mt-4" />
+    <div
+      class:md:-mt-5={advice.weak?.length ||
+        advice.resist?.length ||
+        advice.immunity?.length}
+      class="md:min-w-1/2 flex w-full flex-col justify-start md:flex-1"
+    >
+      <Advice types={advice.weak}>
+        {name}'s team are <b class="dark:text-gray-400">all</b> weak to:
+      </Advice>
+
+      <Advice types={advice.resist}>
+        {name}'s team are <b class="dark:text-gray-400">all</b> resistant to:
+      </Advice>
+
+      <Advice types={advice.immunity}>
+        {name}'s team have immunities to:
+      </Advice>
+    </div>
+
+    <hr class="order-3 mt-2 md:mt-4" />
 
     <slot />
   </div>
@@ -81,15 +80,15 @@
 <style>
   hr {
     height: 1px;
-    @apply w-full bg-gray-900 opacity-90;
+    @apply w-full bg-gray-900 opacity-0 md:opacity-90;
   }
 
   :global(.dark) hr {
-    @apply bg-white opacity-10;
+    @apply bg-white opacity-0 md:opacity-10;
   }
 
   p {
-    @apply text-xs italic text-gray-500;
+    @apply text-xs italic text-gray-500 max-md:text-center;
   }
   h2 {
     @apply text-sm font-bold;

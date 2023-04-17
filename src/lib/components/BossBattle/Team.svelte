@@ -1,5 +1,4 @@
 <script>
-  export let width
   export let type = 'attack',
     team = []
 
@@ -19,12 +18,11 @@
 </script>
 
 <div
-  style="min-width: var(--w);"
   class:flip={type === 'attack'}
   class:flex-row-reverse={type === 'attack'}
-  class:translate-y-3={team.length > 1}
+  class:md:translate-y-3={team.length > 1}
   class:team-max={team.length === 6}
-  class="team-grid flex justify-center"
+  class="team-grid flex h-10 -translate-y-5 justify-end md:h-auto md:justify-center"
 >
   {#each team as p, i (p?.original?.customId || p?.original?.location || i)}
     <span class:last={islast(type, i, team)} animate:flip>
@@ -32,7 +30,7 @@
         in:fade={{ duration: 200 }}
         alt={p.name}
         style="--bob-delay: {(2 * i) / 10}s"
-        class="z-20 -mx-2 flex h-24 w-24"
+        class="z-20 -mx-2 flex h-16 w-16 md:h-24 md:w-24"
         src={sprite(p)}
       />
     </span>
@@ -45,8 +43,8 @@
   }
 
   img {
-    images-rendering: pixelated;
-    animation: bob 5.5s ease var(--bob-delay) infinite;
+    image-rendering: pixelated;
+    /* animation: bob 5.5s ease var(--bob-delay) infinite; */
   }
 
   @keyframes bob {
@@ -85,46 +83,70 @@
 
   .flip img,
   img.flip {
-    animation: bob-left 4.5s ease var(--bob-delay) infinite;
+    /* animation: bob-left 4.5s ease var(--bob-delay) infinite; */
     @apply -scale-x-100;
+  }
+
+  .team-grid > *:nth-child(odd) {
+    @apply z-10 translate-y-2 md:translate-y-4;
+  }
+  .team-grid > *:nth-child(even) {
+    @apply z-0 -translate-y-2 md:-translate-y-4;
   }
 
   .team-grid > * {
     transition: margin 0.2s ease;
   }
 
-  .team-grid > *:nth-child(odd) {
-    @apply z-10 translate-y-4;
-  }
-  .team-grid > *:nth-child(even) {
-    @apply z-0 -translate-y-4;
-  }
-
   .team-grid.flip > * {
-    @apply -ml-12;
+    @apply -ml-6;
   }
   .team-grid:not(.flip) > * {
-    @apply -mr-12;
+    @apply -mr-6;
+  }
+
+  .team-grid {
+    @apply ml-8 mr-5;
   }
 
   .team-grid.flip > *:first-child {
-    @apply -mr-16;
+    @apply -mr-2;
   }
   .team-grid:not(.flip) > *:first-child {
-    @apply -ml-12;
+    @apply -ml-2;
   }
 
-  .team-grid.team-max.flip > *:first-child {
-    @apply -mr-24;
-  }
-  .team-grid.team-max:not(.flip) > *:first-child {
-    @apply -ml-20;
-  }
+  @media (min-width: theme('screens.md')) {
+    .team-grid {
+      @apply -translate-y-4;
+    }
 
-  .team-grid.flip .last {
-    @apply absolute top-0 left-12;
-  }
-  .team-grid:not(.flip) .last {
-    @apply absolute top-0 right-12;
+    .team-grid.flip > * {
+      @apply -ml-12;
+    }
+    .team-grid:not(.flip) > * {
+      @apply -mr-12;
+    }
+
+    .team-grid.flip > *:first-child {
+      @apply -mr-16;
+    }
+    .team-grid:not(.flip) > *:first-child {
+      @apply -ml-12;
+    }
+
+    /* .team-grid.team-max.flip > *:first-child { */
+    /*   @apply -mr-24; */
+    /* } */
+    /* .team-grid.team-max:not(.flip) > *:first-child { */
+    /*   @apply -ml-20; */
+    /* } */
+
+    /* .team-grid.flip .last { */
+    /*   @apply absolute top-0 left-12; */
+    /* } */
+    /* .team-grid:not(.flip) .last { */
+    /*   @apply absolute top-0 right-12; */
+    /* } */
   }
 </style>

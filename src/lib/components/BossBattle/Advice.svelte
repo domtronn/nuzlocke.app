@@ -6,10 +6,12 @@
 </script>
 
 {#if types && types.length > 0}
-  <slot />
+  <p>
+    <slot />
+  </p>
   <div>
     {#each types as type}
-      <TypeLogo class="scale-75" {type} />
+      <TypeLogo class="scale-65 md:scale-75" {type} />
     {/each}
   </div>
 {/if}
@@ -17,6 +19,10 @@
 <style>
   div {
     direction: ltr;
-    @apply mt-1 mr-8 grid grid-cols-6;
+    @apply mx-auto mt-1 flex grid-cols-6 justify-center md:mr-8 md:ml-2 md:grid;
+  }
+
+  p {
+    @apply pr-4 text-center text-xs italic text-gray-500 md:ml-2 md:text-left;
   }
 </style>

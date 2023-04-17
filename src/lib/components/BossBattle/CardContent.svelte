@@ -25,13 +25,23 @@
   }
 </script>
 
-<section style="--w: 240px" class="shadow-lg">
+<section class="shadow-lg">
   <Heading atkStats={sumStats(team)} defStats={sumStats(gym)} {boss} />
 
-  <div class="inline-flex w-full items-end justify-between">
-    <Team width={240} type="attack" {team} />
-    <Vs />
-    <Team width={240} type="defend" team={gym} />
+  <div
+    class="absolute top-2 z-20 h-20 w-full items-center justify-between md:top-6 md:inline-flex"
+  >
+    <div class="h-1/2 w-full flex-1 md:h-full md:w-auto">
+      <Team type="attack" {team} />
+    </div>
+
+    <Vs
+      class="max-md:absolute max-md:top-1/4 max-md:right-1/4 max-md:-translate-x-1/2 max-md:-translate-y-1/2"
+    />
+
+    <div class="h-1/2 w-full flex-1 md:h-full md:w-auto">
+      <Team type="defend" team={gym} />
+    </div>
   </div>
 
   <Body
@@ -52,18 +62,20 @@
     <!-- TODO: Verify team vs saved team and offer to update -->
     <!-- TODO: Heading gradient builder from team members and types -->
 
-    <div class="w-full">
-      <p class="my-2 text-right text-xs italic opacity-50">
+    <div class="order-3 md:w-full">
+      <p class=" my-2 text-center text-xs italic opacity-50 md:text-right">
         Claim the badge from <b>{boss.name}</b> to mark this boss as
-        <b>complete</b><br />
+        <b>complete</b><br class="hidden md:block" />
         with your team of {toList(team.map(format))}
       </p>
 
-      <div class="mt-4 mb-4 flex justify-end gap-x-2">
-        <Button on:click={compare} rounded>Compare team</Button>
-        <Button class="claim" solid rounded>
+      <div class="mt-4 mb-4 flex justify-center gap-x-2 md:justify-end">
+        <Button class="text-xs md:text-base" on:click={compare} rounded
+          >Compare team</Button
+        >
+        <Button class="claim text-xs md:text-base" solid rounded>
           Claim badge
-          <PIcon class="coin -mt-3 ml-2" type="b" name="stone" />
+          <PIcon class="coin -mt-3 md:ml-2" type="b" name="stone" />
         </Button>
       </div>
     </div>

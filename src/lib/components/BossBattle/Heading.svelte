@@ -27,39 +27,79 @@
 
 {#if boss?.img}
   <!-- <img class="absolute -top-8 left-8 -z-10 scale-y-150 -scale-x-150" src="/leaders/masters/trainer/red.png" /> -->
-  <img class="absolute -top-7 right-8 -z-10 scale-200" src="{IMG}{src}.png" />
+  <img
+    class="absolute -top-0 right-4 z-10 scale-125 md:right-8 md:-top-7 md:-z-10 md:scale-200"
+    src="{IMG}{src}.png"
+  />
 {/if}
 
 <SettingWrapper id="theme" let:setting={themeId}>
+  <!-- Desktop gradients inlined -->
   <div
-    class="bbheading transition"
+    class="bbheading desk-only transition"
     style="background: linear-gradient(90deg, {lCol(themeId)} 0%, {lCol(
       themeId
     )} {center - 1}%, {rCol(themeId)} {center + 1}%, {rCol(themeId)});"
   >
     <div
       class="absolute inset-0 opacity-30 mix-blend-overlay"
-      style="background-image: url('{Pattern('black')}')"
+      style={`background-image: url("${Pattern('white')}")`}
     />
   </div>
 
   <div
-    class="anim-bg bbheading bbanim"
+    class="anim-bg bbheading bbanim desk-only"
     style="background: linear-gradient(180deg, transparent 0%, white 48%, white 52%, transparent 100%);"
   />
 
   <div
-    class="bbheading"
+    class="bbheading desk-only"
     style="background: linear-gradient(60deg, transparent 25%, var(--bbbgcol) {center -
       2}%, var(--bbbgcol) {center}%, var(--bbbgcol) {center +
       2}%, transparent 75%);"
   />
 
   <div
-    class="absolute left-0 top-28 right-0 z-50 h-[2px] -translate-y-2.5"
+    class="desk-only absolute left-0 top-24 right-0 z-50 h-[2px] -translate-y-2.5 md:top-28"
     style="background: linear-gradient(90deg, {lCol(themeId)}, {rCol(
       themeId
     )});"
+  />
+
+  <!-- Mobile gradients stacked -->
+  <div
+    class="bbheading bbheading-ltr mob-only transition"
+    style="background: linear-gradient(50deg, {lCol(
+      themeId
+    )}, var(--bbbgcol) 70%"
+  >
+    <div
+      class="absolute inset-0 opacity-30 mix-blend-overlay"
+      style={`background-image: url("${Pattern('white')}")`}
+    />
+  </div>
+
+  <div
+    class="bbheading bbheading-rtl mob-only transition"
+    style="background: linear-gradient(130deg, var(--bbbgcol) 0%, var(--bbbgcol) 30%, {rCol(
+      themeId
+    )} ;"
+  >
+    <div
+      class="absolute inset-0 opacity-30 mix-blend-overlay"
+      style={`background-image: url("${Pattern('white')}")`}
+    />
+  </div>
+
+  <!-- Mobile dividers -->
+  <div
+    class="mob-only absolute left-0 top-24 right-0 z-30 h-[2px] -translate-y-2.5"
+    style="background: linear-gradient(90deg, var(--bbbgcol), {rCol(themeId)});"
+  />
+
+  <div
+    class="mob-only absolute left-0 top-12 right-0 z-10 h-[2px] -translate-y-0.5"
+    style="background: linear-gradient(90deg, {lCol(themeId)}, var(--bbbgcol))"
   />
 
   <!-- Base stat totals -->
@@ -73,9 +113,17 @@
     image-rendering: pixelated;
   }
 
+  .mob-only {
+    @apply md:hidden;
+  }
+
+  .desk-only {
+    @apply hidden md:block;
+  }
+
   .bst,
   .bst b::before {
-    @apply bg-white;
+    @apply z-50 bg-white;
   }
 
   :global(.dark) .bst,
@@ -85,7 +133,7 @@
 
   .bst {
     border-color: var(--b-col);
-    @apply absolute top-20 left-5 z-50 translate-y-2.5 scale-75 rounded-lg border-2 px-2;
+    @apply absolute top-20 z-50 translate-y-2.5 scale-75 rounded-lg border-2 px-2 md:left-2 md:left-5;
   }
 
   .bst b {
@@ -102,8 +150,16 @@
     @apply absolute;
   }
 
+  .bst {
+    @apply max-md:top-6;
+  }
+
   .bst ~ .bst {
-    @apply left-auto right-5;
+    @apply max-md:top-16;
+  }
+
+  .bst ~ .bst {
+    @apply left-auto right-2 md:right-5;
   }
 
   :root {
@@ -115,7 +171,39 @@
   }
 
   .bbheading {
-    @apply absolute inset-0 top-6 h-20 w-full translate-y-2 rounded-t-lg;
+    @apply inset-0 top-6 h-10 w-full translate-y-2 overflow-hidden rounded-t-lg md:absolute;
+  }
+
+  .bbheading-ltr {
+    @apply bottom-0;
+  }
+
+  .bbheading-ltr::after,
+  .bbheading-rtl::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    @apply h-10;
+  }
+
+  .bbheading-ltr::after {
+    right: 0;
+    background: linear-gradient(60deg, transparent, var(--bbbgcol) 75%);
+  }
+
+  .bbheading-rtl::after {
+    right: 0;
+    background: linear-gradient(60deg, var(--bbbgcol) 20%, transparent);
+  }
+
+  .bbheading-rtl {
+    @apply -bottom-8 rounded-none;
+  }
+
+  @media (min-width: theme('screens.md')) {
+    .bbheading {
+      @apply inset-0 top-6 h-20;
+    }
   }
 
   .bbanim {

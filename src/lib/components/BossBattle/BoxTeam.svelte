@@ -36,10 +36,11 @@
   const reset = () => dispatch('reset')
 </script>
 
-<div class="mt-4 flex gap-x-4">
+<div class="mt-4 flex w-full flex-col gap-x-4 md:flex-row">
   <div>
-    <h2>Team</h2>
-    <span class="flex justify-start gap-x-4 text-right"
+    <h2 class="max-md:inline md:w-full">Team</h2>
+    <span
+      class="float-right mt-1 inline-flex justify-end gap-x-4 text-right md:float-none md:-mt-1 md:justify-start"
       ><button
         disabled={team.length == 0}
         on:click={clear}
@@ -55,7 +56,7 @@
       </button>
     </span>
 
-    <ul class="mt-3 mb-4 grid w-fit grid-cols-3 gap-y-2">
+    <ul class="mt-3 mb-4 grid grid-cols-6 gap-y-2 md:w-fit md:grid-cols-3">
       {#each team as poke (locid(poke.original))}
         {@const og = poke.original}
         <button
@@ -80,24 +81,16 @@
     </ul>
   </div>
 
-  <div>
+  <div class="relative">
     <h2>Box</h2>
-    <div class="flex items-center">
-      <p class="flex-1">Pick Pokemon from your boxes to face {boss.name}</p>
-
-      {#each Array(pages.length) as p, i}
-        <button
-          disabled={page === i}
-          class="pip"
-          title="Box {i + 1}"
-          on:click={set(i)}
-        >
-          <Icon inline="true" height="0.5rem" icon={Pip} />
-        </button>
-      {/each}
+    <div class="flex flex-col items-start md:flex-row md:items-center">
+      <p class="max-w-1/2 flex-1">
+        Pick from your boxes to face {boss.name}
+      </p>
     </div>
+
     <ul
-      class="mt-2 grid w-fit grid-cols-8 rounded-lg bg-gray-200 px-4 py-2 dark:bg-gray-800"
+      class="mt-2 grid w-full grid-cols-6 rounded-lg bg-gray-200 px-4 py-2 dark:bg-gray-800 md:w-fit md:grid-cols-8"
     >
       {#key page}
         {#each pages[page] as poke (locid(poke.original))}
@@ -118,6 +111,23 @@
         {/each}
       {/key}
     </ul>
+
+    {#if pages.length > 1}
+      <div
+        class="max-md:w-full max-md:text-center md:absolute md:right-0 md:top-3"
+      >
+        {#each Array(pages.length) as p, i}
+          <button
+            disabled={page === i}
+            class="pip"
+            title="Box {i + 1}"
+            on:click={set(i)}
+          >
+            <Icon inline="true" height="0.5rem" icon={Pip} />
+          </button>
+        {/each}
+      </div>
+    {/if}
   </div>
 </div>
 
