@@ -115,7 +115,7 @@
             slot="actions"
             on:toggle={settab(0)}
             on:complete={handlesubmit(team)}
-            class="justify-center rounded-b-lg bg-white px-6 pt-1 pb-2 dark:bg-gray-900"
+            class="justify-center rounded-b-lg bg-white px-6 pt-1 pb-2 dark:bg-gray-900 md:-mt-8"
             {...boss}
             {team}
           >
