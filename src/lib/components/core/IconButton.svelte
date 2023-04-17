@@ -1,13 +1,21 @@
 <script>
-  export let title, src = false, name = false, disabled = false, containerClassName = '', className = '', color = 'gray', rounded = false, tabIndex = 1
+  export let title,
+    src = false,
+    name = false,
+    disabled = false,
+    containerClassName = '',
+    className = '',
+    color = 'gray',
+    rounded = false,
+    tabIndex = 1
   export let borderless = false
 
   import { createEventDispatcher } from 'svelte'
-  import Icon sr from '@iconify/svelte/dist/OfflineIcon.svelte'
+  import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
   import PIcon from '$lib/components/core/PokemonIcon.svelte'
 
   const dispatch = createEventDispatcher()
-  const onclick = e => dispatch('click', e)
+  const onclick = (e) => dispatch('click', e)
 </script>
 
 <button
