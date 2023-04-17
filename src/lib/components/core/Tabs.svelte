@@ -10,7 +10,9 @@
   $: selected = select(tabs[active]) || active
 </script>
 
-<div class="sm:w-initial flex flex-row gap-x-4 overflow-x-scroll {className}">
+<div
+  class="sm:w-initial flex w-full flex-row gap-x-4 overflow-x-scroll {className}"
+>
   {#each tabs as tab, i}
     <label
       class:active={active === i}
