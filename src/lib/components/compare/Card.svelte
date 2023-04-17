@@ -38,9 +38,9 @@
         >
           <div
             class="absolute inset-0"
-            style="background-image: url('{Pattern(
+            style={`background-image: url("${Pattern(
               color(atk.types[1] || atk.types[0], themeId)
-            )}');"
+            )}");`}
           />
         </div>
       {/key}
@@ -53,9 +53,9 @@
         >
           <div
             class="absolute inset-0"
-            style="background-image: url('{Pattern(
+            style={`background-image: url("${Pattern(
               color(def.types[1] || def.types[0], themeId)
-            )}');"
+            )}");`}
           />
         </div>
       {/key}
