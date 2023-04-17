@@ -14,9 +14,9 @@
 <SettingWrapper id="theme" let:setting={themeId}>
   <div class="w-1/2 flex-1 flex-grow">
     <span
-      class="mb-2 -mt-2 ml-3 mr-3 flex gap-x-2 justify-{side === 'left'
-        ? 'start'
-        : 'end'}"
+      class:sleft={side === 'left'}
+      class:sright={side !== 'left'}
+      class="absolute -top-1 z-50 mb-2 -mt-2 ml-3 mr-3 flex scale-75 gap-x-2"
     >
       {#each atk.types as type}
         <TypeBadge type={type.toLowerCase()} />
@@ -34,3 +34,14 @@
     />
   </div>
 </SettingWrapper>
+
+<style>
+  .sleft {
+    left: 72px;
+    @apply origin-left justify-start;
+  }
+  .sright {
+    right: 72px;
+    @apply origin-right justify-end;
+  }
+</style>
