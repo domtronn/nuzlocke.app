@@ -130,8 +130,9 @@
   />
 
   <CompareCard
-    {id}
+    on:select={toggleMon}
     {team}
+    {id}
     class={tab === 1 ? '' : 'hidden'}
     box={analysisResult.box}
     gym={analysisResult.gym}
@@ -149,6 +150,7 @@
       <span slot="switch-text">Build team</span>
     </Actions>
   </CompareCard>
+
   <TeamBuildCard
     on:select={toggleMon}
     on:clear={clearTeam}

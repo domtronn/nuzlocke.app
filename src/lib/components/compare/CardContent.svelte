@@ -132,30 +132,6 @@
       </Accordion>
     </div>
 
-    {#key compare[0]}
-      <button
-        class="max-md absolute -bottom-24 right-0 z-[100] inline-flex h-6 w-6 items-center rounded-full bg-gray-900 text-xs text-gray-400 transition hover:text-gray-50 max-md:-translate-x-1/2 md:-left-3 md:top-4 md:right-auto md:bottom-auto"
-        on:click={onadd}
-        transition:fade
-      >
-        {#if active === Active.Box && teamList.length < 6}
-          <Tooltip>Add {compare[0].name} to team</Tooltip>
-          <Icon
-            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
-            inline
-            icon={Plus}
-          />
-        {:else if teamList.length > 1}
-          <Tooltip>Remove {compare[0].name} from team</Tooltip>
-          <Icon
-            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
-            inline
-            icon={Minus}
-          />
-        {/if}
-      </button>
-    {/key}
-
     <slot name="actions" />
   </CompareCard>
 
@@ -173,7 +149,24 @@
         pageSize={6}
         list={boxList}
         {select}
-      />
+      >
+        {#key compare[0]}
+          <button
+            class="max-md right-0 z-[100] inline-flex items-center gap-x-1 border-b border-gray-400 bg-gray-900 text-xs text-gray-400 underline-offset-4 transition hover:border-gray-50 hover:text-gray-50"
+            on:click={onadd}
+          >
+            {#if active === Active.Box && teamList.length < 6}
+              <Tooltip>Add {compare[0].name} to team</Tooltip>
+              <Icon inline icon={Plus} />
+              Add to team
+            {:else if teamList.length > 1}
+              <Tooltip>Remove {compare[0].name} from team</Tooltip>
+              <Icon inline icon={Minus} />
+              Remove from team
+            {/if}
+          </button>
+        {/key}
+      </CompareControls>
     </div>
   {/key}
 
@@ -183,7 +176,7 @@
   >
     <div class="flex-1">
       <CompareControls
-        class="mt-6 origin-left max-md:grid max-md:grid-cols-3 md:absolute md:top-0.5 md:-right-8 md:mt-0 md:translate-x-full md:rotate-90 md:transform md:!bg-transparent"
+        class="mt-2 origin-left max-md:grid max-md:grid-cols-3 md:absolute md:top-0.5 md:-right-8 md:mt-0 md:translate-x-full md:rotate-90 md:transform md:!bg-transparent"
         pageSize={6}
         showcontrols={false}
         bind:value={gymId}
@@ -196,7 +189,7 @@
     <div class="flex-1">
       {#key team}
         <CompareControls
-          class="mt-6 origin-left max-md:grid max-md:grid-cols-3 md:absolute md:top-0.5 md:-left-8 md:mt-0 md:rotate-90 md:transform md:!bg-transparent"
+          class="mt-2 origin-left max-md:grid max-md:grid-cols-3 md:absolute md:top-0.5 md:-left-8 md:mt-0 md:rotate-90 md:transform md:!bg-transparent"
           bind:value={teamId}
           on:select={set(Active.Team)}
           pageSize={6}

@@ -29,11 +29,15 @@
 </script>
 
 {#if list.length > 1}
+  {@debug $$slots}
   <div
     class:md:hidden={!showtitle}
-    class=" mx-auto -mb-5 w-fit px-2 text-white"
+    class:justify-between={$$slots.default}
+    class:justify-center={!$$slots.default}
+    class=" mx-auto -mb-5 inline-flex w-full px-2 text-white md:px-16"
   >
     <h2 class="text-base font-medium md:mb-0">{title}</h2>
+    <slot />
   </div>
 
   <div
