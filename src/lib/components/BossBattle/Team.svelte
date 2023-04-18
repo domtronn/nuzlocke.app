@@ -20,9 +20,7 @@
 <div
   class:flip={type === 'attack'}
   class:flex-row-reverse={type === 'attack'}
-  class:md:translate-y-3={team.length > 1}
-  class:team-max={team.length === 6}
-  class="team-grid flex h-10 -translate-y-5 justify-evenly md:h-auto md:justify-center"
+  class="team-grid team-grid__{team.length} flex h-10 justify-evenly md:h-auto md:justify-center"
 >
   {#each team as p, i (p?.original?.customId || p?.original?.location || i)}
     <span
@@ -40,7 +38,7 @@
   {/each}
 </div>
 
-<style>
+<style lang="postcss">
   :root {
     --bob-delay: 0.2s;
   }
@@ -84,72 +82,83 @@
     }
   }
 
-  .flip img,
-  img.flip {
+  .flip img {
     /* animation: bob-left 4.5s ease var(--bob-delay) infinite; */
     @apply -scale-x-100;
   }
 
-  .team-grid > *:nth-child(odd) {
-    @apply z-10 translate-y-2 md:translate-y-4;
-  }
-  .team-grid > *:nth-child(even) {
-    @apply z-0 -translate-y-2 md:-translate-y-4;
-  }
 
-  .team-grid > * {
-    transition: margin 0.2s ease;
-  }
-
-  .team-grid.flip > * {
-    @apply -ml-6;
-  }
-  .team-grid:not(.flip) > * {
-    @apply -mr-6;
-  }
-
+  /* -------------- Team Grid styles --------------- */
+  /* .team-grid, .team-grid span, .team-grid img { @apply transition; } */
   .team-grid {
-    @apply mx-8;
+    @apply flex-1;
+  }
+  .team-grid > span {
+    @apply -mx-6 scale-125;
   }
 
-  .team-grid.flip > *:first-child {
-    @apply -mr-8;
+  .team-grid > span:nth-child(even) {
+    @apply -translate-y-8 z-10;
   }
-  .team-grid:not(.flip) > *:first-child {
-    @apply -ml-8;
+
+  .team-grid > span:nth-child(odd) {
+    @apply -translate-y-2 z-20;
+  }
+
+  .team-grid__1.flip img { @apply scale-y-[1.75] -scale-x-[1.75] -translate-y-4; }
+  .team-grid__2.flip img { @apply scale-y-[1.25] -scale-x-[1.25] -translate-y-0; }
+  .team-grid__3.flip img { @apply scale-y-[1.2] -scale-x-[1.2] -translate-y-1; }
+  .team-grid__4.flip img { @apply scale-y-[1.1] -scale-x-[1.1] -translate-y-0; }
+
+  .team-grid__1:not(.flip) img { @apply scale-y-[1.75] scale-x-[1.75] -translate-y-4; }
+  .team-grid__2:not(.flip) img { @apply scale-y-[1.25] scale-x-[1.25] -translate-y-0; }
+  .team-grid__3:not(.flip) img { @apply scale-y-[1.2] scale-x-[1.2] -translate-y-1; }
+  .team-grid__4:not(.flip) img { @apply scale-y-[1.1] scale-x-[1.1] -translate-y-0; }
+
+  @media (min-width: 350px) {
+    .team-grid {
+      @apply -translate-y-2;
+    }
+
+    .team-grid > span {
+      @apply -mx-8 scale-125;
+    }
+
+    .team-grid > span:nth-child(even) {
+      @apply -translate-y-8 z-10;
+    }
   }
 
   @media (min-width: theme('screens.md')) {
     .team-grid {
-      @apply -translate-y-4;
+
     }
 
-    .team-grid.flip > * {
-      @apply -ml-12;
-    }
-    .team-grid:not(.flip) > * {
-      @apply -mr-12;
+    .team-grid > span {
+      @apply -mx-6;
     }
 
-    .team-grid.flip > *:first-child {
-      @apply -mr-12;
-    }
-    .team-grid:not(.flip) > *:first-child {
-      @apply -ml-10;
+    .team-grid__6 > span {
+      @apply -mx-7;
     }
 
-    /* .team-grid.team-max.flip > *:first-child { */
-    /*   @apply -mr-24; */
-    /* } */
-    /* .team-grid.team-max:not(.flip) > *:first-child { */
-    /*   @apply -ml-20; */
-    /* } */
+    .team-grid > span:nth-child(even) {
+      @apply -translate-y-8 z-10;
+    }
 
-    /* .team-grid.flip .last { */
-    /*   @apply absolute top-0 left-12; */
-    /* } */
-    /* .team-grid:not(.flip) .last { */
-    /*   @apply absolute top-0 right-12; */
-    /* } */
+    .team-grid > span:nth-child(odd) {
+      @apply translate-y-2 z-20;
+    }
+
+    .team-grid__1:not(.flip) img,
+    .team-grid__2:not(.flip) img,
+    .team-grid__3:not(.flip) img,
+    .team-grid__4:not(.flip) img { @apply scale-100 translate-y-0; }
+
+    .team-grid__1.flip img,
+    .team-grid__2.flip img,
+    .team-grid__3.flip img,
+    .team-grid__4.flip img { @apply scale-100 -scale-x-100 translate-y-0; }
+
   }
 </style>
