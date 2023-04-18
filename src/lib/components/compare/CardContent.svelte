@@ -152,7 +152,7 @@
       >
         {#key compare[0]}
           <button
-            class="max-md right-0 z-[100] inline-flex items-center gap-x-1 border-b border-gray-400 bg-gray-900 text-xs text-gray-400 underline-offset-4 transition hover:border-gray-50 hover:text-gray-50"
+            class="max-md right-0 z-[100] inline-flex items-center gap-x-1 border-b border-gray-400 text-xs text-gray-400 underline-offset-4 transition hover:border-gray-50 hover:text-gray-50"
             on:click={onadd}
           >
             {#if active === Active.Box && teamList.length < 6}
