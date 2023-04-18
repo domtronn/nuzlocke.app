@@ -12,8 +12,7 @@
   const locid = (a) => a.customId || a.location
 
   export let team = [],
-    box = [],
-    boss = {}
+    box = []
 
   $: teamList = team.map((t) => locid(t.original))
   $: boxList = box
@@ -135,10 +134,6 @@
     @apply text-sm font-bold;
   }
 
-  p {
-    @apply text-xs italic opacity-50;
-  }
-
   :global(.picon) {
     @apply pointer-events-none absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2;
   }
@@ -152,7 +147,6 @@
   }
 
   button.clear::before,
-  button.page::before,
   button.pip::before {
     content: none;
   }
@@ -197,14 +191,6 @@
 
   button {
     @apply transition;
-  }
-
-  button.page {
-    @apply z-50 text-gray-600 transition hover:text-orange-600 disabled:cursor-default disabled:hover:text-gray-600;
-  }
-
-  :global(.dark) button.page {
-    @apply text-gray-200 hover:text-orange-500 disabled:hover:text-gray-200;
   }
 
   .pip:disabled {

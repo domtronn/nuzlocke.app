@@ -3,11 +3,12 @@
   import { capitalise, regionise } from '$utils/string'
 
   export let name, i
-  export let weakPct = null,
-    immunePct = null,
-    resistPct
+  // export const weakPct = null
+  // export const immunePct = null,
+  // export const resistPct
 
   const IconMap = ['dire-hit-1', 'x-sp-def-2', 'x-attack-3']
+
   function fmtPct(n) {
     return Math.floor(n * 100) + '%'
   }

@@ -20,7 +20,7 @@
 
     <BoxTeam on:clear on:reset on:select {team} {box} boss={{ name }} />
 
-    <Accordion className="-ml-4 -mb-2">
+    <Accordion className="md:-ml-4 -mb-2">
       <h2 slot="heading" class="my-4 inline-flex w-full">
         Recommendations
         <span class="ml-2 cursor-help">
@@ -75,15 +75,6 @@
 </div>
 
 <style>
-  hr {
-    height: 1px;
-    @apply w-full bg-gray-900 opacity-0 md:opacity-90;
-  }
-
-  :global(.dark) hr {
-    @apply bg-white opacity-0 md:opacity-10;
-  }
-
   p {
     @apply text-xs italic text-gray-500 max-md:text-center;
   }

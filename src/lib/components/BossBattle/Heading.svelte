@@ -6,7 +6,6 @@
   import { IMG } from '$lib/utils/rewrites'
 
   export let atkType = null,
-    defType = null,
     boss = null
 
   export let atkStats
@@ -28,6 +27,7 @@
 {#if boss?.img}
   <!-- <img class="absolute -top-8 left-8 -z-10 scale-y-150 -scale-x-150" src="/leaders/masters/trainer/red.png" /> -->
   <img
+    alt='Boss image for {boss.name}'
     class="absolute right-4 -top-5 -z-10 scale-150 md:-top-7 md:right-8 md:scale-200"
     src="{IMG}{src}.png"
   />
@@ -128,32 +128,6 @@
 
   .bbheading {
     @apply absolute inset-0 top-6 h-20 w-full translate-y-2 overflow-hidden rounded-t-lg;
-  }
-
-  .bbheading-ltr {
-    @apply bottom-0;
-  }
-
-  .bbheading-ltr::after,
-  .bbheading-rtl::after {
-    position: absolute;
-    content: '';
-    width: 100%;
-    @apply h-10;
-  }
-
-  .bbheading-ltr::after {
-    right: 0;
-    background: linear-gradient(60deg, transparent, var(--bbbgcol) 75%);
-  }
-
-  .bbheading-rtl::after {
-    right: 0;
-    background: linear-gradient(60deg, var(--bbbgcol) 20%, transparent);
-  }
-
-  .bbheading-rtl {
-    @apply -bottom-8 rounded-none;
   }
 
   @media (min-width: theme('screens.md')) {

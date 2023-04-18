@@ -47,7 +47,6 @@
   const resetTeam = () => (teamLocs = readTeam(rawData))
   const clearTeam = () => (teamLocs = [])
   const toggleMon = (e) => {
-    debugger
     const mon = e.detail
     if (teamLocs.includes(locid(mon))) {
       teamLocs = teamLocs.filter((i) => i !== locid(mon))

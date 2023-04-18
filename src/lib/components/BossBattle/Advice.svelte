@@ -1,6 +1,5 @@
 <script>
-  export let title,
-    types = []
+  export let types = []
 
   import TypeLogo from '$c/type-logo.svelte'
 </script>

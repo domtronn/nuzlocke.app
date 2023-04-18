@@ -2,7 +2,7 @@
   export let badge, name, team
 
   import { onMount, createEventDispatcher } from 'svelte'
-  import { Button } from '$c/core'
+  import { Button, PIcon } from '$c/core'
   import { toList, regionise, capitalise } from '$lib/utils/string'
   import deferStyles from '$lib/utils/defer-styles'
 

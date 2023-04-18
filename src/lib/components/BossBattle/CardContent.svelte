@@ -59,7 +59,6 @@
     </svelte:fragment>
 
     <!-- TODO: Fix separation of badge/victory -->
-    <!-- TODO: Verify team vs saved team and offer to update -->
     <!-- TODO: Heading gradient builder from team members and types -->
 
     <slot name="actions" />
