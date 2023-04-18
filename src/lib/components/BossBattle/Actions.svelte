@@ -21,8 +21,8 @@
   const oncomplete = (_) => dispatch('complete')
 </script>
 
-<div class="order-3 w-full {$$restProps.class || ''}">
-  <p class="my-2 text-center text-xs italic opacity-50 md:text-right">
+<div class="order-3 w-full text-right {$$restProps.class || ''} md:flex md:flex-col items-end">
+  <p class="text-center text-xs italic opacity-50 md:text-right md:w-2/3">
     {#if badge}
       Mark <b>{name}</b> as <b>defeated</b> and claim their badge
     {:else}

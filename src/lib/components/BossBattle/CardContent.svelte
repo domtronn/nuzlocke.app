@@ -58,7 +58,6 @@
       <slot name="tabs" />
     </svelte:fragment>
 
-    <!-- TODO: Fix separation of badge/victory -->
     <!-- TODO: Heading gradient builder from team members and types -->
 
     <slot name="actions" />

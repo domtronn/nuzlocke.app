@@ -15,7 +15,7 @@
   const { close } = getContext('simple-modal')
 
   let tab = mode === MODES.build ? 0 : 1,
-    tabs = ['Team builder', 'Compare']
+    tabs = ['Team', 'Compare']
 
   // Util Functions
   const locid = (a) => a.customId || a.location

@@ -117,7 +117,7 @@
 
   @media (min-width: 350px) {
     .team-grid {
-      @apply -translate-y-2;
+      @apply translate-y-1;
     }
 
     .team-grid > span {
@@ -131,8 +131,9 @@
 
   @media (min-width: theme('screens.md')) {
     .team-grid {
-
+      @apply -translate-y-2;
     }
+
 
     .team-grid > span {
       @apply -mx-6;
@@ -150,7 +151,7 @@
       @apply translate-y-2 z-20;
     }
 
-    .team-grid__1 { @apply -translate-y-4; }
+    .team-grid.team-grid__1 { @apply -translate-y-5; }
 
 
     .team-grid__1:not(.flip) img,

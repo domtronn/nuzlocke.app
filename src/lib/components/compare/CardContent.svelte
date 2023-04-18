@@ -84,7 +84,7 @@
       class:-mb-8={tab !== 0}
       class="relative z-20 bg-white p-4 dark:bg-gray-900"
     >
-      <div class="mb-4 w-full">
+      <div class="ml-3 mb-4 w-full">
         <slot name="tabs" />
       </div>
 
