@@ -18,6 +18,8 @@
     )
   })
 
+  // TODO: Load data once
+
   const { getPkmn } = getContext('game')
   const { close } = getContext('simple-modal')
 
@@ -124,13 +126,13 @@
       />
 
       {#if tab === 1}
-        <CompareCard on:select={toggleMon} {id} {team} {box} {gym} {advice}>
+        <CompareCard {id} {team} {box} {gym} {advice}>
           <Tabs class="flex-1" slot="tabs" bind:active={tab} {tabs} />
           <Actions
             slot="actions"
             on:toggle={settab(0)}
             on:complete={handlesubmit(team)}
-            class="justify-center rounded-b-lg bg-white px-6 pt-1 pb-2 dark:bg-gray-900 md:-mt-8"
+            class="justify-center rounded-b-lg bg-white px-6 pt-1 pb-2 dark:bg-gray-900 md:-mt-4"
             {...boss}
             {team}
           >

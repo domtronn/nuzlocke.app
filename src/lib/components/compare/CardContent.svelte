@@ -1,5 +1,5 @@
 <script>
-  import { Tabs, Icon, Tooltip } from '$lib/components/core'
+  import { Tabs, Icon, Tooltip, Accordion } from '$lib/components/core'
   import { Plus, Minus } from '$icons'
 
   import { fade } from 'svelte/transition'
@@ -115,16 +115,20 @@
 
     <!-- Accordion info Desktop display -->
     <div
-      class="hidden border-gray-200 bg-white pl-4 pr-2 pb-4 text-gray-600 dark:border-gray-800 dark:bg-gray-900 dark:text-gray-200 max-md:rounded-b-lg md:flex md:border-t md:py-3 md:pl-8 md:pr-4"
+      class="flex hidden flex-col border-gray-200 bg-white pl-4 pr-2 pb-4 text-gray-600 dark:border-gray-800 dark:bg-gray-900 dark:text-gray-200 max-md:rounded-b-lg md:flex md:border-t md:py-3 md:pl-8 md:pr-4"
     >
-      <div class="text-gray-800 dark:text-gray-200">
-        {#key compare}
-          <div class="inline-flex">
-            <CompareInfo {...advice} pokemon={compare} />
-          </div>
-          <CompareMoves {...advice} pokemon={compare} />
-        {/key}
-      </div>
+      <Accordion className="hidden md:flex flex-row-reverse justify-between">
+        <strong slot="heading" class="text-sm"> Info </strong>
+
+        <div slot="item" class="text-gray-800 dark:text-gray-200">
+          {#key compare}
+            <div class="inline-flex">
+              <CompareInfo {...advice} pokemon={compare} />
+            </div>
+            <CompareMoves {...advice} pokemon={compare} />
+          {/key}
+        </div>
+      </Accordion>
     </div>
 
     {#key compare[0]}
