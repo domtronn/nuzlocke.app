@@ -1,6 +1,7 @@
 import z from "zod"
 
 const EGame = z.enum([
+    "rrss",
     "emrunbun",
     'unbound', 'unbound_exp',
     'radred_hard',
