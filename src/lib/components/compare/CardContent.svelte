@@ -118,7 +118,7 @@
     <div
       class="flex hidden flex-col border-gray-200 bg-white pl-4 pr-2 pb-4 text-gray-600 dark:border-gray-800 dark:bg-gray-900 dark:text-gray-200 max-md:rounded-b-lg md:flex md:border-t md:py-3 md:pl-8 md:pr-4"
     >
-      <Accordion className="hidden md:flex flex-row-reverse justify-between">
+      <Accordion className="hidden md:flex -ml-4">
         <strong slot="heading" class="inline-flex text-sm"> Info </strong>
 
         <div slot="item" class="text-gray-800 dark:text-gray-200">

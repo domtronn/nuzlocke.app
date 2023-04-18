@@ -20,7 +20,7 @@
 
     <BoxTeam on:clear on:reset on:select {team} {box} boss={{ name }} />
 
-    <Accordion className="flex flex-row-reverse justify-between -mb-2">
+    <Accordion className="-ml-4 -mb-2">
       <h2 slot="heading" class="my-4 inline-flex w-full">
         Recommendations
         <span class="ml-2 cursor-help">
