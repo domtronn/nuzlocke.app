@@ -118,7 +118,7 @@
       class="flex hidden flex-col border-gray-200 bg-white pl-4 pr-2 pb-4 text-gray-600 dark:border-gray-800 dark:bg-gray-900 dark:text-gray-200 max-md:rounded-b-lg md:flex md:border-t md:py-3 md:pl-8 md:pr-4"
     >
       <Accordion className="hidden md:flex flex-row-reverse justify-between">
-        <strong slot="heading" class="text-sm"> Info </strong>
+        <strong slot="heading" class="inline-flex text-sm"> Info </strong>
 
         <div slot="item" class="text-gray-800 dark:text-gray-200">
           {#key compare}
@@ -179,7 +179,7 @@
   >
     <div class="flex-1">
       <CompareControls
-        class="mt-6 origin-left max-md:grid max-md:grid-cols-3 md:absolute md:top-0.5 md:-right-8 md:translate-x-full md:rotate-90 md:transform md:!bg-transparent"
+        class="mt-6 origin-left max-md:grid max-md:grid-cols-3 md:absolute md:top-0.5 md:-right-8 md:mt-0 md:translate-x-full md:rotate-90 md:transform md:!bg-transparent"
         pageSize={6}
         showcontrols={false}
         bind:value={gymId}

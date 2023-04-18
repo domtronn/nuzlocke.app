@@ -12,12 +12,6 @@
   import { TeamBuildCard, CompareCard, Actions } from '$c/BossBattle'
   import { getGameStore, read, readdata, readTeam, readBox } from '$lib/store'
 
-  onMount(async () => {
-    deferStyles(
-      '/assets/items.css?i=wonder-launcher-x-sp-def-2,wonder-launcher-dire-hit-1,wonder-launcher-x-attack-3'
-    )
-  })
-
   // TODO: Load data once
 
   const { getPkmn } = getContext('game')
@@ -68,7 +62,7 @@
 
   // Data and setup functions
   let gameStore, rawData, boxData, teamLocs, ogTeam
-  async function setup() {
+  async function setup(cb) {
     const [, , id] = readdata()
 
     gameStore = getGameStore(id)
@@ -77,6 +71,7 @@
         rawData = data
         boxData = readBox(data)
         ogTeam = teamLocs = readTeam(data)
+        cb(rawData, boxData, teamLocs)
       })
     )
   }
@@ -87,8 +82,8 @@
     )
   }
 
-  async function fetchAnalysis(team) {
-    const boxMons = await fetchPkmnSet(boxData)
+  async function fetchAnalysis(team, box) {
+    const boxMons = await fetchPkmnSet(box)
     const gymMons = await fetchPkmnSet(team, 'name')
 
     const res = await fetch('/api/battle/advice.json', {
@@ -110,58 +105,73 @@
       mons: boxMons.concat(gymMons)
     }
   }
+
+  let loading = true
+  let analysisResult
+  onMount(async () => {
+    setup(async (rawData, boxData, teamLocs) => {
+      analysisResult = await fetchAnalysis(boss.pokemon, boxData)
+      loading = false
+    })
+  })
 </script>
 
-{#await setup() then}
+{#if loading}
+  Loading
+{:else}
   {#key (boss.id, tab)}
-    {#await fetchAnalysis(boss.pokemon) then { summary, box, mons, gym, ...advice }}
-      {@const team = teamLocs.map(makeTeam.bind({}, mons))}
+    <IconButton
+      borderless
+      rounded
+      src={X}
+      on:click={close}
+      containerClassName="fixed top-4 right-4 z-[100]"
+    />
 
-      <IconButton
-        borderless
-        rounded
-        src={X}
-        on:click={close}
-        containerClassName="fixed top-4 right-4 z-[100]"
-      />
-
-      {#if tab === 1}
-        <CompareCard {id} {team} {box} {gym} {advice}>
-          <Tabs class="flex-1" slot="tabs" bind:active={tab} {tabs} />
-          <Actions
-            slot="actions"
-            on:toggle={settab(0)}
-            on:complete={handlesubmit(team)}
-            class="justify-center rounded-b-lg bg-white px-6 pt-1 pb-2 dark:bg-gray-900 md:-mt-4"
-            {...boss}
-            {team}
-          >
-            <span slot="switch-text">Build team</span>
-          </Actions>
-        </CompareCard>
-      {:else}
-        <TeamBuildCard
-          on:select={toggleMon}
-          on:clear={clearTeam}
-          on:reset={resetTeam}
+    {#if tab === 1}
+      {@const team = teamLocs.map(makeTeam.bind({}, analysisResult.mons))}
+      <CompareCard
+        {id}
+        {team}
+        box={analysisResult.box}
+        gym={analysisResult.gym}
+        advice={analysisResult}
+      >
+        <Tabs class="flex-1" slot="tabs" bind:active={tab} {tabs} />
+        <Actions
+          slot="actions"
+          on:toggle={settab(0)}
+          on:complete={handlesubmit(team)}
+          class="justify-center rounded-b-lg bg-white px-6 pt-1 pb-2 dark:bg-gray-900 md:-mt-4"
+          {...boss}
           {team}
-          {box}
-          {gym}
-          {boss}
-          {summary}
         >
-          <Tabs slot="tabs" bind:active={tab} {tabs} />
-          <Actions
-            slot="actions"
-            on:toggle={settab(1)}
-            on:complete={handlesubmit(team)}
-            {...boss}
-            {team}
-          >
-            <span slot="switch-text">Compare team</span>
-          </Actions>
-        </TeamBuildCard>
-      {/if}
-    {/await}
+          <span slot="switch-text">Build team</span>
+        </Actions>
+      </CompareCard>
+    {:else}
+      {@const team = teamLocs.map(makeTeam.bind({}, analysisResult.mons))}
+      <TeamBuildCard
+        on:select={toggleMon}
+        on:clear={clearTeam}
+        on:reset={resetTeam}
+        {team}
+        {boss}
+        box={analysisResult.box}
+        gym={analysisResult.gym}
+        summary={analysisResult.summary}
+      >
+        <Tabs slot="tabs" bind:active={tab} {tabs} />
+        <Actions
+          slot="actions"
+          on:toggle={settab(1)}
+          on:complete={handlesubmit(team)}
+          {...boss}
+          {team}
+        >
+          <span slot="switch-text">Compare team</span>
+        </Actions>
+      </TeamBuildCard>
+    {/if}
   {/key}
-{/await}
+{/if}
