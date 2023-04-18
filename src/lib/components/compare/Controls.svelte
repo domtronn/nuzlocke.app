@@ -29,7 +29,6 @@
 </script>
 
 {#if list.length > 1}
-  {@debug $$slots}
   <div
     class:md:hidden={!showtitle}
     class:justify-between={$$slots.default}
