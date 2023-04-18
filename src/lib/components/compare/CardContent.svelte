@@ -67,7 +67,7 @@
     teamId = -1,
     gymId = id ?? 0
 
-  if (active === active.Team) {
+  if (active === Active.Team) {
     teamId = 0
   } else {
     boxId = 0
