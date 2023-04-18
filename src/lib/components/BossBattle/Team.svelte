@@ -150,6 +150,9 @@
       @apply translate-y-2 z-20;
     }
 
+    .team-grid__1 { @apply -translate-y-4; }
+
+
     .team-grid__1:not(.flip) img,
     .team-grid__2:not(.flip) img,
     .team-grid__3:not(.flip) img,
