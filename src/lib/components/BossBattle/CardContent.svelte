@@ -22,8 +22,9 @@
 </script>
 
 <section
-  in:fade
-  class="mt-6 pb-32 text-gray-800 shadow-lg dark:text-gray-50 md:-mt-4"
+  in:fade|local
+  class="mt-6 pb-32 text-gray-800 shadow-lg dark:text-gray-50 md:-mt-4 {$$restProps.class ||
+    ''}"
 >
   <div class="relative w-full">
     <Heading atkStats={sumStats(team)} defStats={sumStats(gym)} {boss} />

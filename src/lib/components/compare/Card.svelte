@@ -24,7 +24,10 @@
 </script>
 
 <SettingWrapper id="theme" let:setting={themeId}>
-  <section class="relative shadow-lg dark:text-gray-50 {className}">
+  <section
+    in:fade|local
+    class="relative shadow-lg dark:text-gray-50 {className}"
+  >
     <!-- Pokemon face off -->
     <div
       class="relative -mt-8 flex h-24 flex-row justify-around overflow-hidden"

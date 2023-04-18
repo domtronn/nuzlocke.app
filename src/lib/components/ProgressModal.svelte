@@ -119,59 +119,56 @@
 {#if loading}
   Loading
 {:else}
-  {#key (boss.id, tab)}
-    <IconButton
-      borderless
-      rounded
-      src={X}
-      on:click={close}
-      containerClassName="fixed top-4 right-4 z-[100]"
-    />
+  {@const team = teamLocs.map(makeTeam.bind({}, analysisResult.mons))}
 
-    {#if tab === 1}
-      {@const team = teamLocs.map(makeTeam.bind({}, analysisResult.mons))}
-      <CompareCard
-        {id}
-        {team}
-        box={analysisResult.box}
-        gym={analysisResult.gym}
-        advice={analysisResult}
-      >
-        <Tabs class="flex-1" slot="tabs" bind:active={tab} {tabs} />
-        <Actions
-          slot="actions"
-          on:toggle={settab(0)}
-          on:complete={handlesubmit(team)}
-          class="justify-center rounded-b-lg bg-white px-6 pt-1 pb-2 dark:bg-gray-900 md:-mt-4"
-          {...boss}
-          {team}
-        >
-          <span slot="switch-text">Build team</span>
-        </Actions>
-      </CompareCard>
-    {:else}
-      {@const team = teamLocs.map(makeTeam.bind({}, analysisResult.mons))}
-      <TeamBuildCard
-        on:select={toggleMon}
-        on:clear={clearTeam}
-        on:reset={resetTeam}
-        {team}
-        {boss}
-        box={analysisResult.box}
-        gym={analysisResult.gym}
-        summary={analysisResult.summary}
-      >
-        <Tabs slot="tabs" bind:active={tab} {tabs} />
-        <Actions
-          slot="actions"
-          on:toggle={settab(1)}
-          on:complete={handlesubmit(team)}
-          {...boss}
-          {team}
-        >
-          <span slot="switch-text">Compare team</span>
-        </Actions>
-      </TeamBuildCard>
-    {/if}
-  {/key}
+  <IconButton
+    borderless
+    rounded
+    src={X}
+    on:click={close}
+    containerClassName="fixed top-4 right-4 z-[100]"
+  />
+
+  <CompareCard
+    {id}
+    {team}
+    class={tab === 1 ? '' : 'hidden'}
+    box={analysisResult.box}
+    gym={analysisResult.gym}
+    advice={analysisResult}
+  >
+    <Tabs class="flex-1" slot="tabs" bind:active={tab} {tabs} />
+    <Actions
+      slot="actions"
+      on:toggle={settab(0)}
+      on:complete={handlesubmit(team)}
+      class="justify-center rounded-b-lg bg-white px-6 pt-1 pb-2 dark:bg-gray-900 md:-mt-4"
+      {...boss}
+      {team}
+    >
+      <span slot="switch-text">Build team</span>
+    </Actions>
+  </CompareCard>
+  <TeamBuildCard
+    on:select={toggleMon}
+    on:clear={clearTeam}
+    on:reset={resetTeam}
+    {team}
+    {boss}
+    class={tab === 0 ? '' : 'hidden'}
+    box={analysisResult.box}
+    gym={analysisResult.gym}
+    summary={analysisResult.summary}
+  >
+    <Tabs slot="tabs" bind:active={tab} {tabs} />
+    <Actions
+      slot="actions"
+      on:toggle={settab(1)}
+      on:complete={handlesubmit(team)}
+      {...boss}
+      {team}
+    >
+      <span slot="switch-text">Compare team</span>
+    </Actions>
+  </TeamBuildCard>
 {/if}

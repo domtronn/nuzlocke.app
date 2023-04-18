@@ -69,7 +69,8 @@
 
 {#if team.length === 0}{:else}
   <CompareCard
-    className="mt-8 relative w-full md:min-w-[50ch] rounded-b-lg"
+    className="mt-8 relative w-full md:min-w-[50ch] rounded-b-lg {$$restProps.class ||
+      ''}"
     pokemon={compare}
   >
     {#key compare}
@@ -159,7 +160,9 @@
   </CompareCard>
 
   {#key boxList}
-    <div class="mt-1 flex w-full flex-col justify-center">
+    <div
+      class="mt-1 flex w-full flex-col justify-center {$$restProps.class || ''}"
+    >
       <CompareControls
         class="nohighlight !mt-6 !mb-2"
         title="Your box"
@@ -175,7 +178,8 @@
   {/key}
 
   <div
-    class="flex flex-row gap-y-4 rounded-xl py-2 sm:mt-0 sm:gap-y-0 sm:gap-x-2"
+    class="flex flex-row gap-y-4 rounded-xl py-2 sm:mt-0 sm:gap-y-0 sm:gap-x-2 {$$restProps.class ||
+      ''}"
   >
     <div class="flex-1">
       <CompareControls
