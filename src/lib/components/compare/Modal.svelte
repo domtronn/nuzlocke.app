@@ -77,8 +77,10 @@
 
   let i = -1,
     j = 0,
-    k = 0,
-    active = 'team'
+    k = -1,
+    active = 'box'
+
+  $: if ((team.length === 0) & (i < 1)) i = 0
   $: compare =
     active === 'team'
       ? [

@@ -28,7 +28,7 @@
   const set = (i) => (_) => (page = i)
 </script>
 
-{#if list.length > 1}
+{#if list.length > 0}
   <div
     class:md:hidden={!showtitle}
     class:justify-between={$$slots.default}

@@ -118,6 +118,17 @@
 
 {#if loading}
   Loading
+{:else if !analysisResult.box.length}
+  <div
+    class="rounded-xl bg-white px-6 py-8 text-center text-xl shadow-lg dark:bg-gray-900 dark:text-gray-50"
+  >
+    <p class="mb-4">
+      How do you expect to beat <b>{boss.name}</b> with no Pokémon?
+    </p>
+    <p>Go back out there and Catch 'em All!</p>
+
+    <Button solid rounded on:click={close}>Gotta Catch 'em All</Button>
+  </div>
 {:else}
   {@const team = teamLocs.map(makeTeam.bind({}, analysisResult.mons))}
 
