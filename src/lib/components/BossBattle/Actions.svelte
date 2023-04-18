@@ -24,9 +24,9 @@
 <div class="order-3 w-full {$$restProps.class || ''}">
   <p class=" my-2 text-center text-xs italic opacity-50 md:text-right">
     {#if badge}
-      Claim the badge from <b>{name}</b> to mark this boss as <b>defeated</b>
+      Mark <b>{name}</b> as <b>defeated</b> and claim their badge
     {:else}
-      Mark victory against <b>{name}</b> to mark this boss as <b>defeated</b>
+      Mark <b>{name}</b> as <b>defeated</b>
     {/if}
     <br class="hidden md:block" />
     with your team of {toList(team.map(format))}

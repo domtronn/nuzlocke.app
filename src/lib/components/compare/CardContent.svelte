@@ -1,5 +1,9 @@
 <script>
-  import { Tabs } from '$lib/components/core'
+  import { Tabs, Icon, Tooltip } from '$lib/components/core'
+  import { Plus, Minus } from '$icons'
+
+  import { fade } from 'svelte/transition'
+  import { createEventDispatcher } from 'svelte'
 
   import {
     CompareStats,
@@ -16,12 +20,28 @@
   }
 
   const select = (p) => p?.original?.icon || p?.sprite
+  const set = (id) => () => {
+    id == Active.Box ? (teamId = -1) : (boxId = -1)
+    active = id
+  }
 
   export let id = null,
     gym,
     team,
     box,
     advice
+
+  const locid = (a) => a.customId || a.location
+  const dispatch = createEventDispatcher()
+
+  const onadd = (_) => {
+    dispatch('select', compare[0].original)
+  }
+
+  $: teamList = team.map((t) => locid(t.original))
+  $: boxList = box
+    .filter((i) => !teamList.includes(locid(i.original)))
+    .sort((a, b) => b.total - a.total)
 
   $: compare =
     active === Active.Team
@@ -33,7 +53,7 @@
           { ...gym?.[gymId], id: gymId }
         ]
       : [
-          { ...box?.[boxId], id: boxId },
+          { ...boxList?.[boxId], id: boxId },
           { ...gym?.[gymId], id: gymId }
         ]
 
@@ -107,32 +127,77 @@
       </div>
     </div>
 
+    {#key compare[0]}
+      <button
+        class="max-md absolute -bottom-24 right-0 z-[100] inline-flex h-6 w-6 items-center rounded-full bg-gray-900 text-xs text-gray-400 transition hover:text-gray-50 max-md:-translate-x-1/2 md:-left-3 md:top-4 md:right-auto md:bottom-auto"
+        on:click={onadd}
+        transition:fade
+      >
+        {#if active === Active.Box && teamList.length < 6}
+          <Tooltip>Add {compare[0].name} to team</Tooltip>
+          <Icon
+            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+            inline
+            icon={Plus}
+          />
+        {:else if teamList.length > 1}
+          <Tooltip>Remove {compare[0].name} from team</Tooltip>
+          <Icon
+            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+            inline
+            icon={Minus}
+          />
+        {/if}
+      </button>
+    {/key}
+
     <slot name="actions" />
   </CompareCard>
 
-  <div
-    class="mt-2 flex flex-col gap-y-4 rounded-xl py-2 sm:mt-0 sm:gap-y-0 sm:gap-x-2"
-  >
-    <CompareControls
-      class="origin-left md:absolute md:top-0.5 md:-right-6 md:translate-x-full md:rotate-90 md:transform md:!bg-transparent"
-      pageSize={6}
-      controls={false}
-      bind:value={gymId}
-      title="Gym team"
-      list={gym}
-      {select}
-    />
-
-    {#key team}
+  {#key boxList}
+    <div class="mt-1 flex w-full flex-col justify-center">
       <CompareControls
-        class="origin-left md:absolute md:top-0.5 md:-left-6 md:rotate-90 md:transform md:!bg-transparent"
-        bind:value={teamId}
+        class="nohighlight !mt-6 !mb-2"
+        title="Your box"
+        on:select={set(Active.Box)}
+        bind:value={boxId}
+        showcontrols
+        showtitle
         pageSize={6}
-        controls={false}
-        list={team}
-        title="Your team"
+        list={boxList}
         {select}
       />
-    {/key}
+    </div>
+  {/key}
+
+  <div
+    class="flex flex-row gap-y-4 rounded-xl py-2 sm:mt-0 sm:gap-y-0 sm:gap-x-2"
+  >
+    <div class="flex-1">
+      <CompareControls
+        class="mt-6 origin-left max-md:grid max-md:grid-cols-3 md:absolute md:top-0.5 md:-right-8 md:translate-x-full md:rotate-90 md:transform md:!bg-transparent"
+        pageSize={6}
+        showcontrols={false}
+        bind:value={gymId}
+        title="Gym team"
+        list={gym}
+        {select}
+      />
+    </div>
+
+    <div class="flex-1">
+      {#key team}
+        <CompareControls
+          class="mt-6 origin-left max-md:grid max-md:grid-cols-3 md:absolute md:top-0.5 md:-left-8 md:mt-0 md:rotate-90 md:transform md:!bg-transparent"
+          bind:value={teamId}
+          on:select={set(Active.Team)}
+          pageSize={6}
+          showcontrols={false}
+          list={team}
+          title="Your team"
+          {select}
+        />
+      {/key}
+    </div>
   </div>
 {/if}

@@ -32,14 +32,29 @@
   const settab = (i) => () => (tab = i)
   const handlesubmit = (team) => () => {
     const teamLocs = team.map((o) => locid(o.original))
-    const same = teamLocs.every((it, i) => ogTeam[i] === it)
+    const same =
+      teamLocs.every((it, i) => ogTeam[i] === it) &&
+      teamLocs.length === ogTeam.length
 
-    if (!same) alert('Team has changed!')
+    if (
+      !same &&
+      window.confirm(
+        'Your team is different, would you like to make {YOUR TEAM HERE} your active team?'
+      )
+    ) {
+      console.log('Setting team to', teamLocs)
+    }
+
+    console.log('Setting victory to', {
+      id: boss.id,
+      team: team.map((i) => ({ pokemon: i.alias, id: locid(i.original) }))
+    })
   }
 
   const resetTeam = () => (teamLocs = readTeam(rawData))
   const clearTeam = () => (teamLocs = [])
   const toggleMon = (e) => {
+    debugger
     const mon = e.detail
     if (teamLocs.includes(locid(mon))) {
       teamLocs = teamLocs.filter((i) => i !== locid(mon))
@@ -109,7 +124,7 @@
       />
 
       {#if tab === 1}
-        <CompareCard {id} {team} {box} {gym} {advice}>
+        <CompareCard on:select={toggleMon} {id} {team} {box} {gym} {advice}>
           <Tabs class="flex-1" slot="tabs" bind:active={tab} {tabs} />
           <Actions
             slot="actions"
