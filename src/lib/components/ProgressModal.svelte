@@ -4,15 +4,12 @@
     mode = MODES.build
   export let boss
 
-  import deferStyles from '$lib/utils/defer-styles'
   import { onMount, getContext } from 'svelte'
 
   import { X } from '$icons'
-  import { Tabs, IconButton } from '$c/core'
+  import { Tabs, Button, IconButton } from '$c/core'
   import { TeamBuildCard, CompareCard, Actions } from '$c/BossBattle'
   import { getGameStore, read, readdata, readTeam, readBox } from '$lib/store'
-
-  // TODO: Load data once
 
   const { getPkmn } = getContext('game')
   const { close } = getContext('simple-modal')
@@ -120,14 +117,22 @@
   Loading
 {:else if !analysisResult.box.length}
   <div
-    class="rounded-xl bg-white px-6 py-8 text-center text-xl shadow-lg dark:bg-gray-900 dark:text-gray-50"
+    class="rounded-xl bg-white px-6 py-8 text-center text-lg shadow-lg dark:bg-gray-900 dark:text-gray-50"
   >
-    <p class="mb-4">
+    <p class="mb-2">
       How do you expect to beat <b>{boss.name}</b> with no Pokémon?
     </p>
-    <p>Go back out there and Catch 'em All!</p>
+    <p class="mb-4">Go back out there and Catch 'em All!</p>
 
-    <Button solid rounded on:click={close}>Gotta Catch 'em All</Button>
+    <IconButton
+      borderless
+      rounded
+      src={X}
+      on:click={close}
+      containerClassName="fixed top-4 right-4 z-[100]"
+    />
+
+    <Button solid rounded on:click={close}>Close</Button>
   </div>
 {:else}
   {@const team = teamLocs.map(makeTeam.bind({}, analysisResult.mons))}
