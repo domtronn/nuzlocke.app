@@ -23,7 +23,7 @@
 
 <section
   in:fade|local
-  class="mt-6 pb-32 text-gray-800 shadow-lg dark:text-gray-50 md:-mt-4 {$$restProps.class ||
+  class="mt-6 pb-32 text-gray-800 shadow-lg dark:text-gray-50 md:-mt-12 {$$restProps.class ||
     ''}"
 >
   <div class="relative w-full">
