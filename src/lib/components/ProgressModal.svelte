@@ -11,6 +11,8 @@
   import { TeamBuildCard, CompareCard, Actions } from '$c/BossBattle'
   import { getGameStore, read, readdata, readTeam, readBox } from '$lib/store'
 
+  import { toList, regionise, capitalise } from '$lib/utils/string'
+
   const { getPkmn } = getContext('game')
   const { close } = getContext('simple-modal')
 
@@ -29,10 +31,12 @@
       teamLocs.every((it, i) => ogTeam[i] === it) &&
       teamLocs.length === ogTeam.length
 
+    const teamList = toList(team.map((t) => regionise(capitalise(t.name))))
+
     if (
       !same &&
       window.confirm(
-        'Your team is different, would you like to make {YOUR TEAM HERE} your active team?'
+        `This team is different to your active one, would you like to make ${teamList} your active team?`
       )
     ) {
       console.log('Setting team to', teamLocs)
@@ -40,7 +44,8 @@
 
     console.log('Setting victory to', {
       id: boss.id,
-      team: team.map((i) => ({ pokemon: i.alias, id: locid(i.original) }))
+      type: boss,
+      team: team.map((i) => ({ sprite: i.alias, id: locid(i.original) }))
     })
   }
 

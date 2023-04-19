@@ -13,7 +13,7 @@
     speciality = '',
     img
 
-  $: boss = { pokemon, name, speciality, id, img }
+  $: boss = { pokemon, name, speciality, id, img, type }
 
   // Extra leader data
   let doubleBattle = false,
@@ -200,6 +200,7 @@
 
           <IconButton
             on:click={openBuilder}
+            title="Load team builder against the {boss.name} boss fight"
             class="h-9 translate-y-2"
             rounded
             borderless

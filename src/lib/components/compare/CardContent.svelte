@@ -43,21 +43,21 @@
     .filter((i) => !teamList.includes(locid(i.original)))
     .sort((a, b) => b.total - a.total)
 
-  $: compare =
-    active === Active.Team
-      ? [
-          {
-            ...team?.[normalisedTid],
-            id: normalisedTid
-          },
-          { ...gym?.[gymId], id: gymId }
-        ]
-      : [
-          { ...boxList?.[boxId], id: boxId },
-          { ...gym?.[gymId], id: gymId }
-        ]
-
-  $: normalisedTid = Math.min(teamId, team.length - 1)
+  let compare
+  $: {
+    let nTid = Math.min(teamId, team.length - 1)
+    let nBid = Math.max(boxId, 0)
+    compare =
+      active === Active.Team && team.length > 0
+        ? [
+            { ...team?.[nTid], id: nTid },
+            { ...gym?.[gymId], id: gymId }
+          ]
+        : [
+            { ...boxList?.[nBid], id: nBid },
+            { ...gym?.[gymId], id: gymId }
+          ]
+  }
 
   const hasTeam = team.length > 0
   let tab = 0,

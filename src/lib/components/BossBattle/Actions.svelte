@@ -12,8 +12,11 @@
   })
 
   function format(poke) {
+    const nickname = poke.original.nickname
+
     return (
-      poke.original.nickname || regionise(capitalise(poke.original.pokemon))
+      (nickname ? nickname + ' the ' : '') +
+      regionise(capitalise(poke.original.pokemon))
     )
   }
 
@@ -21,8 +24,11 @@
   const oncomplete = (_) => dispatch('complete')
 </script>
 
-<div class="order-3 w-full text-right {$$restProps.class || ''} md:flex md:flex-col items-end">
-  <p class="text-center text-xs italic opacity-50 md:text-right md:w-2/3">
+<div
+  class="order-3 w-full text-right {$$restProps.class ||
+    ''} items-end md:flex md:flex-col"
+>
+  <p class="text-center text-xs italic opacity-50 md:w-2/3 md:text-right">
     {#if badge}
       Mark <b>{name}</b> as <b>defeated</b> and claim their badge
     {:else}
@@ -36,7 +42,13 @@
       <slot name="switch-text" />
     </Button>
 
-    <Button on:click={oncomplete} class="claim !py-1 text-xs" solid rounded>
+    <Button
+      disabled={!team.length}
+      on:click={oncomplete}
+      class="claim !py-1 text-xs"
+      solid
+      rounded
+    >
       {#if badge}
         Claim badge
         <PIcon class="coin -mt-3 md:ml-2" type="b" name={badge} />
