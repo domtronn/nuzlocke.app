@@ -28,7 +28,10 @@
   class="order-3 w-full text-right {$$restProps.class ||
     ''} items-end md:flex md:flex-col"
 >
-  <p class="text-center text-xs italic opacity-50 md:w-2/3 md:text-right">
+  <p
+    class:hidden={!team.length}
+    class="text-center text-xs italic opacity-50 md:w-2/3 md:text-right"
+  >
     {#if badge}
       Mark <b>{name}</b> as <b>defeated</b> and claim their badge
     {:else}
