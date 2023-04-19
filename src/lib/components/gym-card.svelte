@@ -21,7 +21,7 @@
     info
 
   import { browser } from '$app/environment'
-  import { onMount, getContext } from 'svelte'
+  import { getContext } from 'svelte'
 
   import Pokemon from '$lib/components/pokemon-card.svelte'
   import TypeBadge from '$lib/components/type-badge.svelte'
@@ -30,22 +30,29 @@
   import { createImgUrl } from '$utils/rewrites'
   import { toList } from '$utils/string'
 
-  import { Picture, Icon, PIcon, Accordion, Tooltip } from '$c/core'
+  import { Picture, Icon, PIcon, IconButton, Accordion, Tooltip } from '$c/core'
   import { Wrapper as SettingWrapper } from '$lib/components/Settings'
 
   import { Loop as Badge, Ball, Info } from '$icons'
+  import { Vs } from '$lib/components/BossBattle'
 
   import Effect from '$lib/components/Effect.svelte'
 
-  let CompareModal
-  onMount(() => {
-    import('$lib/components/ProgressModal.svelte').then(
-      (m) => (CompareModal = m.default)
-    )
-  })
-
   const { getLeague } = getContext('game')
   const { open } = getContext('simple-modal')
+
+  let CompareModal
+  const loadmodal = async () => {
+    if (CompareModal) return CompareModal
+    return import('$lib/components/ProgressModal.svelte').then((m) => {
+      CompareModal = m.default
+      return CompareModal
+    })
+  }
+  const openCompare = (id) => () =>
+    loadmodal().then((modal) => open(modal, { boss, mode: 'compare', id }))
+  const openBuilder = () =>
+    loadmodal().then((modal) => open(modal, { boss, mode: 'build' }))
 
   export let loading = true
 
@@ -191,6 +198,18 @@
             />
           </SettingWrapper>
 
+          <IconButton
+            on:click={openBuilder}
+            class="h-9 translate-y-2"
+            rounded
+            borderless
+          >
+            <Vs
+              containerClass="translate-y-3 scale-90"
+              class="bg-white dark:bg-gray-800"
+            />
+          </IconButton>
+
           {#if levelCap}
             <SettingWrapper let:setting id="level-caps">
               {#if (setting === 1 && (type === 'gym-leader' || type === 'elite-four')) || (setting === 2 && (type === 'gym-leader' || type === 'elite-four' || type === 'rival')) || setting === 3 || forceLevelCap}
@@ -217,7 +236,7 @@
             class:mt-0={p.moves.length < 3}
             class="compare z-50 mx-8 mb-2 opacity-25 transition hover:opacity-75"
             slot="footer"
-            on:click={(_) => open(CompareModal, { boss, mode: 'compare', id })}
+            on:click={openCompare(id)}
           >
             <span class="absolute -mb-2 h-8 w-8 transform md:scale-75">
               <Icon

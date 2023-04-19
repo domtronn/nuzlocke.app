@@ -7,12 +7,11 @@
     className = '',
     color = 'gray',
     rounded = false,
-    tabIndex = 1
-  export let borderless = false
+    tabIndex = 1,
+    borderless = false
 
   import { createEventDispatcher } from 'svelte'
-  import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
-  import PIcon from '$lib/components/core/PokemonIcon.svelte'
+  import { Icon, PIcon } from '$c/core'
 
   const dispatch = createEventDispatcher()
   const onclick = (e) => dispatch('click', e)
@@ -28,7 +27,7 @@
   class:sm:borderless={borderless === 'sm'}
   class:disabled
   class:rounded-lg={rounded}
-  class="group {color} {containerClassName} "
+  class="group {color} {containerClassName} {$$restProps.class || ''} "
 >
   {#if $$slots.icon}
     <slot name="icon" />
