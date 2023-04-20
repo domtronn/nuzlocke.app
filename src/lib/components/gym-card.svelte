@@ -5,7 +5,8 @@
     starter = '',
     type,
     forceLevelCap = false,
-    reader = false
+  defeated = false,
+  reader = false
 
   // Core leaader data
   let pokemon = [],
@@ -48,7 +49,7 @@
       CompareModal = m.default
       return CompareModal
     })
-  }
+graysca  }
   const openCompare = (id) => () =>
     loadmodal().then((modal) => open(modal, { boss, mode: 'compare', id }))
   const openBuilder = () =>
@@ -110,9 +111,19 @@
       slot="heading"
       class:md:-ml-2={!!img}
       class="-mt-4 inline-flex h-16 items-center gap-x-2 text-left"
-    >
+      >
+
+      {#if defeated}
+        <div>
+          <span class='top-4 left-9 z-50 -rotate-30 absolute font-bold border-2 text-base leading-4 pl-2 pr-1.5 border-red-500 uppercase grayscale-1 bg-red-300 font-mono tracking-widest text-red-500'>defeated</span>
+        </div>
+      {/if}
+
       {#if img}
-        <span class="relative -mx-5">
+        <span
+          class="relative -mx-5"
+          class:grayscale={defeated}
+          >
           <Picture
             src="https://img.nuzlocke.app/{img.src}"
             alt={name}
@@ -130,6 +141,7 @@
               class="-ml-9 w-20 animate-pulse rounded-md bg-gray-400 md:ml-0 md:w-24"
             />
           {:else}
+
             <div>
               <h4 class="text-xl font-medium">{name}</h4>
               {#if img?.author}
@@ -148,7 +160,9 @@
           {/if}
 
           {#if speciality}
-            <div><TypeBadge type={speciality} /></div>
+            <div
+              class:grayscale={defeated}
+              ><TypeBadge type={speciality} /></div>
           {/if}
 
           {#if info}
@@ -184,7 +198,9 @@
         {#if loading}
           <div class="-mt-2 h-14 w-14 animate-pulse rounded-md bg-gray-400" />
         {:else}
-          <span class="hidden items-center gap-x-2 lg:inline-flex">
+          <span
+            class:grayscale={defeated}
+            class="hidden items-center gap-x-2 lg:inline-flex">
             {#each pokemon as p, i (p.name + i)}
               <PIcon name={p.icon || p.name} className="-m-4 z-10 relative" />
             {/each}
@@ -209,7 +225,7 @@
           <IconButton
             on:click={openBuilder}
             title="Load team builder against the {boss.name} boss fight"
-            class="h-12 mt-1"
+            class="h-12 mt-1 pl-0.5"
             rounded
             >
             <Vs

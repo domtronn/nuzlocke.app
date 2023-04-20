@@ -9,7 +9,8 @@
   import { X } from '$icons'
   import { Tabs, Button, IconButton } from '$c/core'
   import { TeamBuildCard, CompareCard, Actions } from '$c/BossBattle'
-  import { getGameStore, read, patch, readdata, readTeam, readBox } from '$lib/store'
+  import { getGameStore, read, patch,
+           readdata, readTeam, readTeams, readBox } from '$lib/store'
 
   import { toList, regionise, capitalise } from '$lib/utils/string'
   import { nonnull } from '$lib/utils/obj'
@@ -43,13 +44,20 @@
       gameStore.update(patch({ __team: teamLocs }))
     }
 
-    console.log('Setting victory to', boss, nonnull({
+    const teamData = nonnull({
       id: boss.id,
       name: boss.name,
       group: boss.type,
       speciality: boss.speciality,
       team: team.map((i) => ({ sprite: i.alias, id: locid(i.original) }))
+    })
+
+    gameStore.update(patch({
+      __teams: bossTeams
+        .filter(t => t.id !== boss.id)
+        .concat(teamData)
     }))
+
     close()
   }
 
@@ -66,7 +74,7 @@
   }
 
   // Data and setup functions
-  let gameStore, rawData, boxData, teamLocs, ogTeam
+  let gameStore, rawData, boxData, teamLocs, ogTeam, bossTeams
   async function setup(cb) {
     const [, , id] = readdata()
 
@@ -76,6 +84,7 @@
         rawData = data
         boxData = readBox(data)
         ogTeam = teamLocs = readTeam(data)
+        bossTeams = readTeams(data)
         cb(rawData, boxData, teamLocs)
       })
     )

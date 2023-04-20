@@ -24,9 +24,10 @@
   let element
 
   /** Custom route handlers & Empty routes */
-  let custom = [], hideRoute = _ => false
+  let custom = [], bossTeamIds = [], hideRoute = _ => false
   store.subscribe(read(d => {
     if (!custom.length && d.__custom?.length) custom = d.__custom
+    bossTeamIds = (d.__teams || []).map(i => i.id)
     hideRoute = hideRouteF(d)
   }))
 
@@ -140,6 +141,7 @@
           {starter}
           game={key}
           id={p.value}
+          defeated={bossTeamIds.includes(p.value)}
           location={p.name}
           type={p.group}
         />
