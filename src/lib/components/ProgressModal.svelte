@@ -44,7 +44,7 @@
 
     console.log('Setting victory to', {
       id: boss.id,
-      type: boss,
+      type: boss.type,
       team: team.map((i) => ({ sprite: i.alias, id: locid(i.original) }))
     })
   }

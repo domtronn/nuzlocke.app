@@ -60,12 +60,12 @@
           <Logo
             src=/assets/{game?.game}
             pictureClass='game--{game?.game}'
-            class='h-10 w-auto max-md:pt-2 md:mr-4 md:w-20 md:h-auto'
+            class='h-10 w-auto max-md:pt-2 md:mr-4 sm:w-20 md:h-auto'
             alt='{game?.game} logo'
             aspect=192x96
             />
 
-          <h1 in:fade class='hidden md:block group-hover:border-black dark:group-hover:border-white'>
+          <h1 in:fade class='hidden lg:block group-hover:border-black dark:group-hover:border-white'>
             {game?.name || ''}
           </h1>
         {/if}
