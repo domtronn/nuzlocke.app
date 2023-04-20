@@ -9,9 +9,10 @@
   import { X } from '$icons'
   import { Tabs, Button, IconButton } from '$c/core'
   import { TeamBuildCard, CompareCard, Actions } from '$c/BossBattle'
-  import { getGameStore, read, readdata, readTeam, readBox } from '$lib/store'
+  import { getGameStore, read, patch, readdata, readTeam, readBox } from '$lib/store'
 
   import { toList, regionise, capitalise } from '$lib/utils/string'
+  import { nonnull } from '$lib/utils/obj'
 
   const { getPkmn } = getContext('game')
   const { close } = getContext('simple-modal')
@@ -39,14 +40,17 @@
         `This team is different to your active one, would you like to make ${teamList} your active team?`
       )
     ) {
-      console.log('Setting team to', teamLocs)
+      gameStore.update(patch({ __team: teamLocs }))
     }
 
-    console.log('Setting victory to', {
+    console.log('Setting victory to', boss, nonnull({
       id: boss.id,
-      type: boss.type,
+      name: boss.name,
+      group: boss.type,
+      speciality: boss.speciality,
       team: team.map((i) => ({ sprite: i.alias, id: locid(i.original) }))
-    })
+    }))
+    close()
   }
 
   const resetTeam = () => (teamLocs = readTeam(rawData))

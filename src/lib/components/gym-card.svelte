@@ -198,19 +198,6 @@
             />
           </SettingWrapper>
 
-          <IconButton
-            on:click={openBuilder}
-            title="Load team builder against the {boss.name} boss fight"
-            class="h-9 translate-y-2"
-            rounded
-            borderless
-          >
-            <Vs
-              containerClass="translate-y-3 scale-90"
-              class="bg-white dark:bg-gray-800"
-            />
-          </IconButton>
-
           {#if levelCap}
             <SettingWrapper let:setting id="level-caps">
               {#if (setting === 1 && (type === 'gym-leader' || type === 'elite-four')) || (setting === 2 && (type === 'gym-leader' || type === 'elite-four' || type === 'rival')) || setting === 3 || forceLevelCap}
@@ -218,6 +205,19 @@
               {/if}
             </SettingWrapper>
           {/if}
+
+          <IconButton
+            on:click={openBuilder}
+            title="Load team builder against the {boss.name} boss fight"
+            class="h-12 mt-1"
+            rounded
+            >
+            <Vs
+              containerClass="translate-y-3 scale-90"
+              class="bg-white dark:bg-gray-800"
+              />
+          </IconButton>
+
         {/if}
       </div>
     </span>
