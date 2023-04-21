@@ -82,6 +82,7 @@
 
   // Data and setup functions
   let gameStore, rawData, boxData, teamLocs, ogTeam, bossTeams
+
   async function setup(cb) {
     const [, , id] = readdata()
 
@@ -93,8 +94,9 @@
 
         boxData = readBox(data)
         ogTeam = teamLocs =
-          bossTeams.find((i) => i.id === boss.id)?.team?.map((i) => i.id) ??
-          readTeam(data)
+          bossTeams.find((i) => i.id === boss.id)?.team?.map((i) => i.id) ||
+          readTeam(data) ||
+          []
 
         cb(rawData, boxData, teamLocs)
       })
