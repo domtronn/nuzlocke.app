@@ -28,17 +28,18 @@
   const set = (i) => (_) => (page = i)
 </script>
 
-{#if list.length > 0}
-  <div
-    class:md:hidden={!showtitle}
-    class:justify-between={$$slots.default}
-    class:justify-center={!$$slots.default}
-    class=" mx-auto -mb-5 inline-flex w-full px-2 text-white md:px-16"
-  >
-    <h2 class="text-base font-medium md:mb-0">{title}</h2>
-    <slot />
-  </div>
+<div
+  class:md:hidden={!showtitle}
+  class:justify-between={$$slots.default}
+  class:justify-center={!$$slots.default}
+  class:-mb-5={list.length > 0}
+  class=" mx-auto inline-flex w-full px-2 text-white md:px-16"
+>
+  <h2 class="text-base font-medium md:mb-0">{title}</h2>
+  <slot />
+</div>
 
+{#if list.length > 0}
   <div
     class="team mx-auto mt-2 -mb-2 inline-flex w-fit justify-center rounded-xl bg-white dark:bg-gray-900 {className} {$$restProps.class ||
       ''}"
@@ -90,23 +91,23 @@
       </button>
     {/if}
   </div>
+{/if}
 
-  {#if pages.length > 1}
-    <div class="mt-1 flex justify-center gap-x-4 text-gray-900 dark:text-white">
-      {#each Array(pages.length) as p, i}
-        <button title="Page {i + 1}" on:click={set(i)}>
-          <Icon
-            inline={true}
-            height="0.5rem"
-            icon={Pip}
-            class="transform fill-current transition {page === i
-              ? 'scale-150'
-              : 'scale-100 opacity-50'}"
-          />
-        </button>
-      {/each}
-    </div>
-  {/if}
+{#if pages.length > 1}
+  <div class="mt-1 flex justify-center gap-x-4 text-gray-900 dark:text-white">
+    {#each Array(pages.length) as p, i}
+      <button title="Page {i + 1}" on:click={set(i)}>
+        <Icon
+          inline={true}
+          height="0.5rem"
+          icon={Pip}
+          class="transform fill-current transition {page === i
+            ? 'scale-150'
+            : 'scale-100 opacity-50'}"
+        />
+      </button>
+    {/each}
+  </div>
 {/if}
 
 <style lang="postcss">

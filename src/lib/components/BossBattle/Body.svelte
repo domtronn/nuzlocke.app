@@ -1,7 +1,12 @@
 <script>
   import { Recommendation, BoxTeam, Advice } from './'
+
+  import TypeLogo from '$c/type-logo.svelte'
   import { Icon, Tooltip, Accordion } from '$c/core'
   import { Info } from '$icons'
+
+  import { summarise } from '$utils/types'
+  import { capitalise } from '$utils/string'
 
   export let name,
     team = [],
@@ -19,6 +24,49 @@
     <slot name="tabs" />
 
     <BoxTeam on:clear on:reset on:select {team} {box} boss={{ name }} />
+
+    <Accordion className="md:-ml-4 -mb-2 py-2">
+      <h2 slot="heading">Team analysis</h2>
+      <div
+        slot="item"
+        class="mt-4 mb-2 flex flex-wrap items-center justify-center gap-1 gap-y-4"
+      >
+        {#key team}
+          {#await summarise(team) then result}
+            {#if result.result}
+              {#each result.result as [type, { resist = 0, weak = 0 }]}
+                <div class="grid-rows-13 grid gap-1">
+                  {#each Array(result.max - resist).fill() as _}
+                    <span class="h-1 w-8 rounded-sm bg-gray-700" />
+                  {/each}
+                  {#each Array(resist).fill() as _}
+                    <span class="h-1 w-8 rounded-sm bg-green-500" />
+                  {/each}
+                  <TypeLogo class="scale-75" {type}>
+                    <p class="py-2 px-1 text-center">
+                      <b>{resist || 'None'}</b>
+                      of your Team resist{resist === 1 ? 's' : ''}
+                      <b>{capitalise(type)}</b>
+                      <br />
+                      <b>{weak || 'None'}</b> of your Team {weak === 1
+                        ? 'is'
+                        : 'are'} weak to
+                      <b>{capitalise(type)}</b>
+                    </p>
+                  </TypeLogo>
+                  {#each Array(weak).fill() as _}
+                    <span class="h-1 w-8 rounded-sm bg-red-500" />
+                  {/each}
+                  {#each Array(result.max - weak).fill() as _}
+                    <span class="h-1 w-8 rounded-sm bg-gray-700" />
+                  {/each}
+                </div>
+              {/each}
+            {/if}
+          {/await}
+        {/key}
+      </div>
+    </Accordion>
 
     <Accordion className="md:-ml-4 -mb-2">
       <h2 slot="heading" class="my-4 inline-flex w-full">

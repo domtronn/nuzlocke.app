@@ -14,7 +14,11 @@
     class="{$$restProps.class || ''} relative h-[32px] w-[32px] rounded-full"
   >
     <Tooltip>
-      {capitalise(type)}
+      {#if $$slots.default}
+        <slot />
+      {:else}
+        {capitalise(type)}
+      {/if}
     </Tooltip>
     <PIcon class="ticon" type="symbol" name="type-{type}-32px" />
   </div>
