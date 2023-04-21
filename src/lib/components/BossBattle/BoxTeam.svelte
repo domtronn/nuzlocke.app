@@ -89,7 +89,7 @@
     <ul
       class="mt-2 grid w-full grid-cols-6 rounded-lg bg-gray-200 px-4 py-2 dark:bg-gray-800 max-md:min-h-[56px] md:w-fit md:grid-cols-8"
     >
-      {#key pages[page]}
+      {#key page}
         {#each pages[page] || [] as poke (locid(poke.original))}
           {@const og = poke.original}
           <button
