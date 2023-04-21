@@ -1,4 +1,5 @@
 <script>
+  import { browser } from '$app/environment'
   import { page } from '$app/stores'
   import { createUser, readdata } from '$lib/store'
   let path = $page.url.pathname
@@ -10,7 +11,7 @@
   import { GameHeading, NavHeading } from '$c/navs'
   import Modal from 'svelte-simple-modal'
 
-  const [, gameKey] = readdata()
+  const [, gameKey] = browser ? readdata() : []
 
   setContext('region', RegionMap[gameKey] ?? 'unknown')
   setContext('game', {
@@ -59,5 +60,5 @@
   {:else}
     <NavHeading />
   {/if}
-  <slot class={region} />
+  <slot />
 </Modal>
