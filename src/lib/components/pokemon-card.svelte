@@ -282,7 +282,7 @@
   }
 
   .badges {
-    @apply ml-2 -mt-1 h-4 scale-110;
+    @apply ml-3 -mt-1 h-4 scale-150 md:ml-2 md:scale-110;
   }
 
   :global(.box) .type-badges {
