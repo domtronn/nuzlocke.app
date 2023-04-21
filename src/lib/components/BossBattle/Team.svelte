@@ -45,7 +45,12 @@
 
   img {
     image-rendering: pixelated;
-    /* animation: bob 5.5s ease var(--bob-delay) infinite; */
+    animation: bob 5.5s ease var(--bob-delay) infinite;
+  }
+
+  .flip img {
+    image-rendering: pixelated;
+    animation: bob-left 5.5s ease var(--bob-delay) infinite;
   }
 
   @keyframes bob {
@@ -87,7 +92,6 @@
     @apply -scale-x-100;
   }
 
-
   /* -------------- Team Grid styles --------------- */
   /* .team-grid, .team-grid span, .team-grid img { @apply transition; } */
   .team-grid {
@@ -98,22 +102,38 @@
   }
 
   .team-grid > span:nth-child(even) {
-    @apply -translate-y-8 z-10;
+    @apply z-10 -translate-y-8;
   }
 
   .team-grid > span:nth-child(odd) {
-    @apply -translate-y-2 z-20;
+    @apply z-20 -translate-y-2;
   }
 
-  .team-grid__1.flip img { @apply scale-y-[1.75] -scale-x-[1.75] -translate-y-4; }
-  .team-grid__2.flip img { @apply scale-y-[1.25] -scale-x-[1.25] -translate-y-0; }
-  .team-grid__3.flip img { @apply scale-y-[1.2] -scale-x-[1.2] -translate-y-1; }
-  .team-grid__4.flip img { @apply scale-y-[1.1] -scale-x-[1.1] -translate-y-0; }
+  .team-grid__1.flip img {
+    @apply -translate-y-4 scale-y-[1.75] -scale-x-[1.75];
+  }
+  .team-grid__2.flip img {
+    @apply -translate-y-0 scale-y-[1.25] -scale-x-[1.25];
+  }
+  .team-grid__3.flip img {
+    @apply -translate-y-1 scale-y-[1.2] -scale-x-[1.2];
+  }
+  .team-grid__4.flip img {
+    @apply -translate-y-0 scale-y-[1.1] -scale-x-[1.1];
+  }
 
-  .team-grid__1:not(.flip) img { @apply scale-y-[1.75] scale-x-[1.75] -translate-y-4; }
-  .team-grid__2:not(.flip) img { @apply scale-y-[1.25] scale-x-[1.25] -translate-y-0; }
-  .team-grid__3:not(.flip) img { @apply scale-y-[1.2] scale-x-[1.2] -translate-y-1; }
-  .team-grid__4:not(.flip) img { @apply scale-y-[1.1] scale-x-[1.1] -translate-y-0; }
+  .team-grid__1:not(.flip) img {
+    @apply -translate-y-4 scale-y-[1.75] scale-x-[1.75];
+  }
+  .team-grid__2:not(.flip) img {
+    @apply -translate-y-0 scale-y-[1.25] scale-x-[1.25];
+  }
+  .team-grid__3:not(.flip) img {
+    @apply -translate-y-1 scale-y-[1.2] scale-x-[1.2];
+  }
+  .team-grid__4:not(.flip) img {
+    @apply -translate-y-0 scale-y-[1.1] scale-x-[1.1];
+  }
 
   @media (min-width: 350px) {
     .team-grid {
@@ -125,7 +145,7 @@
     }
 
     .team-grid > span:nth-child(even) {
-      @apply -translate-y-8 z-10;
+      @apply z-10 -translate-y-8;
     }
   }
 
@@ -133,7 +153,6 @@
     .team-grid {
       @apply -translate-y-2;
     }
-
 
     .team-grid > span {
       @apply -mx-6;
@@ -144,25 +163,29 @@
     }
 
     .team-grid > span:nth-child(even) {
-      @apply -translate-y-8 z-10;
+      @apply z-10 -translate-y-8;
     }
 
     .team-grid > span:nth-child(odd) {
-      @apply translate-y-2 z-20;
+      @apply z-20 translate-y-2;
     }
 
-    .team-grid.team-grid__1 { @apply -translate-y-5; }
-
+    .team-grid.team-grid__1 {
+      @apply -translate-y-5;
+    }
 
     .team-grid__1:not(.flip) img,
     .team-grid__2:not(.flip) img,
     .team-grid__3:not(.flip) img,
-    .team-grid__4:not(.flip) img { @apply scale-100 translate-y-0; }
+    .team-grid__4:not(.flip) img {
+      @apply translate-y-0 scale-100;
+    }
 
     .team-grid__1.flip img,
     .team-grid__2.flip img,
     .team-grid__3.flip img,
-    .team-grid__4.flip img { @apply scale-100 -scale-x-100 translate-y-0; }
-
+    .team-grid__4.flip img {
+      @apply translate-y-0 scale-100 -scale-x-100;
+    }
   }
 </style>
