@@ -30,8 +30,6 @@ export const summarise = (team) => {
       .flat()
   )
 
-  console.log(Object.entries(result).sort(sortFn))
-
   return {
     result: Object.entries(result).sort(sortFn),
     max
