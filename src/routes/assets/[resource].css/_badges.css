@@ -60,6 +60,8 @@
 .pkb-gold-fairy, .pkb-fairy { width: 17px; height: 16px; background-position: -29px -197px; }
 .pkb-gold-dark, .pkb-dark { width: 15px; height: 15px; background-position: -4px -292px; }
 .pkb-gold-bug, .pkb-bug { width: 15px; height: 17px; background-position: -291px -197px; }
+.pkb-gold-dragon, .pkb-dragon { background-position: -138px -289px; width: 19px; height: 21px; }
+
 
 /* SILVER BADGES */
 .pkb-silv-water { width: 13px; height: 19px; background-position: -196px -90px; }
@@ -107,7 +109,7 @@
 .johto .pkb-fighting, .pkb-johto-storm-2 { width: 16px; height: 16px; background-position: -196px -245px; }
 .johto .pkb-steel, .pkb-johto-glacier-2 { width: 16px; height: 16px; background-position: -148px -245px; }
 .johto .pkb-ice, .pkb-johto-mineral-2 { width: 16px; height: 16px; background-position: -172px -245px; }
-.johto .pkb-dragon, .pkb-johto-rising-2 { width: 16px; height: 16px; background-position: -124px -245px; }
+.kanto .pkb-dragon, .johto .pkb-dragon, .pkb-johto-rising-2 { width: 16px; height: 16px; background-position: -124px -245px; }
 .pkb-johto-zephyr { width: 16px; height: 16px; background-position: -267px -28px; }
 .pkb-johto-hive { width: 16px; height: 16px; background-position: -267px -4px; }
 .pkb-johto-plain { width: 16px; height: 16px; background-position: -220px -221px; }
@@ -142,7 +144,7 @@
 .sinnoh .pkb-fighting, .pkb-sinnoh-cobble-2 { width: 16px; height: 16px; background-position: -267px -148px; }
 .sinnoh .pkb-water, .pkb-sinnoh-fen-2 { width: 16px; height: 14px; background-position: -125px -269px; }
 .sinnoh .pkb-ghost, .pkb-sinnoh-relic-2 { width: 16px; height: 16px; background-position: -267px -124px; }
-.sinnoh .pkb-stel, .pkb-sinnoh-mine-2 { width: 18px; height: 16px; background-position: -181px -171px; }
+.sinnoh .pkb-steel, .pkb-sinnoh-mine-2 { width: 18px; height: 16px; background-position: -181px -171px; }
 .sinnoh .pkb-ice, .pkb-sinnoh-icicle-2 { width: 18px; height: 14px; background-position: -40px -148px; }
 .sinnoh .pkb-electric, .pkb-sinnoh-beacon-2 { width: 15px; height: 16px; background-position: -244px -221px; }
 
