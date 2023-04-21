@@ -14,6 +14,7 @@ const EGame = z.enum([
 ])
 const EDeath = z.enum(['boss', 'encounter', 'trainer'])
 const ECategory = z.enum(['random', 'mistake', 'sacrifice', 'drama', 'luck'])
+const EBossType = z.enum(['gym-leader', 'elite-four', 'evil-team', 'rival', 'mini-boss'])
 
 const IGame = z.object({
   game: EGame,
@@ -35,6 +36,20 @@ export const ITeams = z.object({
     game_id: z.string().uuid(),
     user_id: z.string().uuid(),
     data: z.array(ITeamMember)
+})
+
+export const IFight = z.object({
+    boss_id: z.string(),
+    boss_name: z.string(),
+    boss_speciality: z.string(),
+    boss_type: EBossType,
+    team: z.array(ITeamMember)
+})
+
+export const IFights = z.object({
+    game_id: z.string().uuid(),
+    user_id: z.string().uuid(),
+    data: z.array(IFight)
 })
 
 const IDeath = z.object({

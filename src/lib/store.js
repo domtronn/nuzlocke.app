@@ -340,6 +340,41 @@ export const trackData = () => {
     }
   }, [])
 
+  const bossData = Object.keys(games).reduce((acc, id) => {
+    try {
+      const data = JSON.parse(window.localStorage.getItem(IDS.game(id)))
+      const bossTeams = data?.__teams || []
+
+      const result = bossTeams.map((bossFight) => {
+        return {
+          boss_id: bossFight.id,
+          boss_name: bossFight.name,
+          boss_speciality: bossFight.type,
+          boss_type: bossFight.group,
+          team: bossFight.team.map((poke, i) => {
+            return {
+              position: i + 1,
+              pokemon: poke.sprite,
+              location: poke.id
+            }
+          })
+        }
+      })
+
+      return [
+        ...acc,
+        {
+          user_id: userId,
+          game_id: id,
+          data: result
+        }
+      ]
+    } catch (e) {
+      console.error(e)
+      return acc
+    }
+  }, [])
+
   const teamsData = Object.keys(games).reduce((acc, id) => {
     try {
       const data = JSON.parse(window.localStorage.getItem(IDS.game(id)))
@@ -386,6 +421,9 @@ export const trackData = () => {
       teamsData.forEach((save) =>
         navigator.sendBeacon('/api/store/team', createBlob(save))
       )
+      bossData.forEach((save) => {
+        navigator.sendBeacon('/api/store/boss', createBlob(save))
+      })
     }
   })
 }
