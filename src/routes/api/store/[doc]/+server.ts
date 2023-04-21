@@ -1,7 +1,7 @@
 import { z } from 'zod'
 import { ISaves, IGames, ITeams, IFights } from './types'
 
-import { processSave, processGame, processTeam } from './bigquery'
+import { processSave, processGame, processTeam, processBoss } from './bigquery'
 
 // @ts-ignore
 type IGames = z.infer<typeof IGames>
