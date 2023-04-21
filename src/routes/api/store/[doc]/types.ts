@@ -41,7 +41,7 @@ export const ITeams = z.object({
 export const IFight = z.object({
     boss_id: z.string(),
     boss_name: z.string(),
-    boss_speciality: z.string(),
+    boss_speciality: z.optional(z.string()),
     boss_type: EBossType,
     team: z.array(ITeamMember)
 })
