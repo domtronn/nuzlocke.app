@@ -56,7 +56,7 @@ const process = async (
 export async function POST ({ request, params }) {
   const { doc } = params
   
-  if (doc !== EDocType.game && doc !== EDocType.save && doc !== EDocType.team)
+  if (doc !== EDocType.game && doc !== EDocType.save && doc !== EDocType.team && doc !== EDocType.boss)
   return new Response('No content', { status: 204 })
 
   let success: Boolean, data: IGames | ISaves | ITeams
