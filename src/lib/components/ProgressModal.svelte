@@ -9,8 +9,15 @@
   import { X } from '$icons'
   import { Tabs, Button, IconButton } from '$c/core'
   import { TeamBuildCard, CompareCard, Actions } from '$c/BossBattle'
-  import { getGameStore, read, patch,
-           readdata, readTeam, readTeams, readBox } from '$lib/store'
+  import {
+    getGameStore,
+    read,
+    patch,
+    readdata,
+    readTeam,
+    readTeams,
+    readBox
+  } from '$lib/store'
 
   import { toList, regionise, capitalise } from '$lib/utils/string'
   import { nonnull } from '$lib/utils/obj'
@@ -52,11 +59,11 @@
       team: team.map((i) => ({ sprite: i.alias, id: locid(i.original) }))
     })
 
-    gameStore.update(patch({
-      __teams: bossTeams
-        .filter(t => t.id !== boss.id)
-        .concat(teamData)
-    }))
+    gameStore.update(
+      patch({
+        __teams: bossTeams.filter((t) => t.id !== boss.id).concat(teamData)
+      })
+    )
 
     close()
   }
@@ -82,9 +89,13 @@
     gameStore.subscribe(
       read((data) => {
         rawData = data
-        boxData = readBox(data)
-        ogTeam = teamLocs = readTeam(data)
         bossTeams = readTeams(data)
+
+        boxData = readBox(data)
+        ogTeam = teamLocs =
+          bossTeams.find((i) => i.id === boss.id)?.team?.map((i) => i.id) ??
+          readTeam(data)
+
         cb(rawData, boxData, teamLocs)
       })
     )
