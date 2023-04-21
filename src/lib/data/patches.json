@@ -2022,6 +2022,52 @@
       }
     }
   },
+  "emrunbun": {
+    "move": {
+      "absorb": {
+        "power": "40"
+      },
+      "astonish": {
+        "power": "40"
+      },
+      "covet": {
+        "type": "fairy"
+      },
+      "lick": {
+        "power": "40"
+      },
+      "octazooka": {
+        "power": "80"
+      },
+      "super-fang": {
+        "type": "dark"
+      },
+      "hidden-power-fire": {
+        "power": "60",
+        "type": "fire",
+        "category": "special",
+        "locale": "Hidden Power"
+      },
+      "hidden-power-grass": {
+        "power": "60",
+        "type": "grass",
+        "category": "special",
+        "locale": "Hidden Power"
+      },
+      "hidden-power-ice": {
+        "power": "60",
+        "type": "ice",
+        "category": "special",
+        "locale": "Hidden Power"
+      }
+    },
+    "ability": {
+      "as-one": {
+        "name": "As one",
+        "effect": "This Pokemon's Attack is raised by 1 stage if it attacks and knocks out another Pokemon. While this Pokemon is active, it prevents opposing Pokemon from using their Berries. This Ability activates before hazards and other Abilities take effect."
+      }
+    }
+  },
   "incem": {
     "item": {
       "miloticite": {

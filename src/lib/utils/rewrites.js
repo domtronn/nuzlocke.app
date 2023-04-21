@@ -9,7 +9,7 @@ export const CUSTOM = 'https://img.nuzlocke.app/sprites'
 export const IMG = 'https://img.nuzlocke.app'
 
 export const DATA = rewrite
-  ? 'https://img.nuzlocke.app/data'
+  ? 'https://nuzlocke.app/api'
   : '/api' // Load locally for development
 
 export const QRCODE = rewrite
@@ -25,12 +25,13 @@ export const UNOWN = rewrite
   : 'https://img.nuzlocke.app/assets/unown.png?v=1';
 
 export const createImgUrl = (p, { ext = 'webp', shiny = false } = {}) => {
+  if (!p) return UNOWN
   if (p.imgUrl) return `${CUSTOM}${p.imgUrl}.${ext}`
 
   const normalId = ('' + (p.imgId || p.sprite))
     .replace('.png', '')
     .replace('.webp', '')
 
-  if (shiny) return `${SPRITE}/shiny/${normalId}.${ext}?bypass=true`
-  return `${SPRITE}/base/${normalId}.${ext}?bypass=true`
+  if (shiny) return `${SPRITE}/shiny/${normalId}.${ext}`
+  return `${SPRITE}/base/${normalId}.${ext}`
 }

@@ -29,7 +29,7 @@
 
     savedGames.update(updateGame({
       ...game,
-      attempts: (+game.attempts || 1) + 1
+      attempts: +(game?.attempts || 1) + 1
     }))
     gameStore.set('{}')
   }
@@ -101,7 +101,7 @@
 
             <li class='px-4 py-3 text-center'>
               <Button on:click={reset} rounded solid class='text-sm w-full'>New Attempt</Button>
-              <p class='italic text-xs pt-2 opacity-50 leading-4'>Abandon your <b>{game.name}</b> run, reset all encounters and start attempt {+game.attempts + 1}</p>
+              <p class='italic text-xs pt-2 opacity-50 leading-4'>Abandon your <b>{game?.name || ''}</b> run, reset all encounters and start attempt {+(game?.attempts || 1) + 1}</p>
             </li>
           </ul>
         </Popover>

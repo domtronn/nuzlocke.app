@@ -11,7 +11,6 @@
 
   export let mons = [],
     iconKey
-  export let debug = false
 
   //  Action types
   let action, over
@@ -74,15 +73,9 @@
       targetId: getAttr(evt.target, 'data-drag-id')
     })
   }
-</script>
 
-{#if debug}
-  <div>
-    mons: {mons.map((m) => m[iconKey])}<br />
-    action: {action} <br />
-    over: {over}
-  </div>
-{/if}
+
+</script>
 
 <div
   class="mx-auto inline-flex items-center gap-x-4 md:mt-0.5 md:scale-110 md:transform {$$restProps.class ||

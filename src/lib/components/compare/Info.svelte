@@ -13,9 +13,9 @@
   import TypeBadge from '$lib/components/type-badge.svelte'
   import { Tooltip } from '$lib/components/core'
 
-  const toGroups = (name) => {
-    return Object.entries(weakness[name]).sort(([amod], [bmod]) => bmod - amod)
-  }
+  const toGroups = (name) => Object
+        .entries(weakness[name] || {})
+        .sort(([amod], [bmod]) => bmod - amod)
 
   const toFraction = (s) => {
     if (s == 0.25) return '¼'

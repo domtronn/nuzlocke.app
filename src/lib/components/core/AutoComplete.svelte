@@ -8,7 +8,7 @@
   import { Chevron } from '$icons'
 
   export let items = undefined, fetch = undefined
-  export let placeholder, name, inset = false, color = '', label = 'label', className = '', dropdownClass = '', wide = false, rounded = false, readonly = false
+  export let placeholder, name, inset = false, color = '', label = 'label', className = '', dropdownClass = '', wide = false, rounded = false, readonly = false, max = 20
   export let selected = null, style = ''
 
   export let disabled = false
@@ -55,6 +55,8 @@
 
     {disabled}
     {onChange}
+
+    maxItemsToShowInList={max}
 
     html5autocomplete={false}
     delay={fetch ? 75 : 0}

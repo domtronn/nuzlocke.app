@@ -618,7 +618,9 @@
   height: 18px;
   background-position: -517px -67px;
 }
-.pkm.pkm-meloetta {
+.pkm.pkm-meloetta,
+.pkm.pkm-meloetta-aria
+{
   width: 14px;
   height: 21px;
   background-position: -535px -67px;
@@ -753,7 +755,8 @@
   height: 21px;
   background-position: -464px -91px;
 }
-.pkm.pkm-shaymin {
+.pkm.pkm-shaymin,
+.pkm.pkm-shaymin-land {
   width: 18px;
   height: 16px;
   background-position: -480px -91px;
@@ -2883,7 +2886,8 @@
   height: 20px;
   background-position: -26px -489px;
 }
-.pkm.pkm-raticate-alola {
+.pkm.pkm-raticate-alola,
+.pkm.pkm-raticate-totem-alola {
   width: 25px;
   height: 22px;
   background-position: -54px -489px;
@@ -3243,7 +3247,9 @@
   height: 23px;
   background-position: -316px -549px;
 }
-.pkm.pkm-basculin-red-striped {
+.pkm.pkm-basculin-red-striped,
+.pkm.pkm-basculin
+{
   width: 28px;
   height: 23px;
   background-position: -345px -549px;
@@ -5203,7 +5209,8 @@
   height: 30px;
   background-position: -467px -997px;
 }
-.pkm.pkm-aegislash {
+.pkm.pkm-aegislash,
+.pkm.pkm-aegislash-shield {
   width: 30px;
   height: 35px;
   background-position: -501px -997px;
@@ -5784,7 +5791,9 @@
   height: 34px;
   background-position: -385px -1164px;
 }
-.pkm.pkm-keldeo {
+.pkm.pkm-keldeo,
+.pkm.pkm-keldeo-ordinary
+{
   width: 35px;
   height: 35px;
   background-position: -423px -1164px;
@@ -7094,6 +7103,7 @@
   width: 30px;
   height: 21px;
 }
+.pkm.pkm-tandemaus,
 .pkm.pkm-tandemous {
   background-position: -992px -79px;
   width: 30px;
@@ -7236,7 +7246,8 @@
   width: 18px;
   height: 22px;
 }
-.pkm.pkm-basculegion {
+.pkm.pkm-basculegion,
+.pkm.pkm-basculegion-male {
   background-position: -878px -480px;
   width: 30px;
   height: 23px;
@@ -7321,6 +7332,7 @@
   width: 25px;
   height: 32px;
 }
+.pkm.pkm-enamorus-incarnate,
 .pkm.pkm-enamorous-incarnate {
   background-position: -916px -606px;
   width: 28px;

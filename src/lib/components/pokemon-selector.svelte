@@ -215,6 +215,7 @@
           rounded
           fetch={search || !suggest ? getAllPkmn : null}
           items={search || !suggest ? [] : encounterItems}
+          max={search || !suggest ? 16 : encounterItems.length}
           bind:search
           bind:selected
           name='{location} Encounter'
@@ -306,6 +307,7 @@
     bind:selected={nature}
     name='{location} Nature'
     placeholder=Nature
+    max={Natures.length}
     className='col-span-1 {!selected || status?.id === 4 || hidden ? 'hidden sm:block' : ''}'
     dropdownClass='-translate-x-1/2 -ml-1 sm:translate-x-0 sm:ml-0'
   >

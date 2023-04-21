@@ -16,7 +16,7 @@
 {#if !gapTypes.length}
 
   <div in:fade style='max-width: fit-content' class='mx-auto mb-4 mt-3 overflow-hidden rounded-xl shadow-lg bg-yellow-50 flex items-center'>
-    <Icon inline={true} color=yellow height=xs
+    <Icon color=yellow size=xs
           icons={[ shardicons, sashicons ]}
           {scale}>
       🎉

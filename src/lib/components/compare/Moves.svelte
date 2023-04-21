@@ -18,6 +18,7 @@
     {}
   )
   const lvl = opp?.original?.level
+
 </script>
 
 <ul class="relative grid w-full grid-cols-4 text-sm md:mt-2 md:text-xs">
@@ -45,7 +46,7 @@
     <CompareSummary pokemon={opp.original} />
   </div>
 
-  {#each calc[teamId][oppId] as move (move)}
+  {#each (calc?.[teamId]?.[oppId] || []) as move (move)}
     <li
       class="col-span-2 my-2 -mt-1 flex flex-col leading-4 md:col-span-1 lg:w-24 lg:leading-3"
     >

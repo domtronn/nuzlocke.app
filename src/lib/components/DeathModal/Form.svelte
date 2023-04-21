@@ -16,8 +16,12 @@
 
   const dispatch = createEventDispatcher()
   const onsubmit = (e) => {
-    if (e.submitter.textContent == EButton.Skip) dispatch('skip', ctx)
-    if (e.submitter.textContent == EButton.Submit) dispatch('submit', ctx)
+    const subText = e?.submitter?.textContent
+      || document?.activeElement?.textContent
+
+    if (subText == EButton.Skip) dispatch('skip', ctx)
+    if (subText == EButton.Submit) dispatch('submit', ctx)
+    else dispatch('submit', ctx)
   }
 
   export let pokemon, formData

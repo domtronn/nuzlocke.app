@@ -114,7 +114,7 @@ export const format = (
 
     const res = text
         .replace(Tokens.TPoke, (ctx?.nickname ? `${ctx?.nickname} the ` : '') + ctx?.pokemon?.name)
-        .replaceAll(Tokens.TPoke, ctx?.nickname || ctx?.pokemon.name)
+        .replaceAll(Tokens.TPoke, ctx?.nickname || ctx?.pokemon?.name)
         .replaceAll(Tokens.OName, ctx.type === EType.Trainer
             ? (((ctx?.trainer?.type || '') + ' ' + (ctx?.trainer?.name || '')).trim() || defaultOName)
             : (ctx?.trainer?.name || defaultOName))

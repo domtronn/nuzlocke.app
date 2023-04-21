@@ -67,6 +67,8 @@ Pokemon stats are a **comma** `,` separated list, but you should only
 include the modifications, e.g. `,,100` will modify the defense to
 `100`
 
+You can find extensive examples of these in the [Nuzlocke.data](https://github.com/domtronn/nuzlocke.data) project.
+
 
 ### Alternatives
 

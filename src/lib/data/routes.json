@@ -21345,6 +21345,1682 @@
       "boss": "Steven"
     }
   ],
+  "emrunbun": [
+    {
+      "type": "route",
+      "name": "Starter",
+      "encounters": [
+        "turtwig",
+        "chimchar",
+        "piplup"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Littleroot Town",
+      "encounters": [
+        "surskit",
+        "lotad",
+        "finneon",
+        "tympole",
+        "squirtle",
+        "totodile",
+        "oshawott",
+        "sobble"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Route 101",
+      "encounters": [
+        "lillipup",
+        "bunnelby",
+        "buneary",
+        "skitty",
+        "zigzagoon-galar",
+        "poochyena",
+        "starly",
+        "pidgey",
+        "litleo",
+        "deerling"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Oldale Town",
+      "encounters": [
+        "ponyta",
+        "growlithe",
+        "houndour",
+        "fletchling",
+        "sizzlipede",
+        "salandit",
+        "litleo"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Route 103",
+      "encounters": [
+        "gossifleur",
+        "bounsweet",
+        "exeggcute",
+        "budew",
+        "seedot",
+        "lotad",
+        "deerling",
+        "tentacool",
+        "skrelp",
+        "chinchou",
+        "tentacruel",
+        "dragalge",
+        "lanturn",
+        "ludicolo"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Route 102",
+      "encounters": [
+        "starly",
+        "pidgey",
+        "rookidee",
+        "fletchling",
+        "natu",
+        "abra",
+        "ralts",
+        "surskit",
+        "psyduck",
+        "remoraid",
+        "carvanha",
+        "golduck",
+        "octillery",
+        "floatzel"
+      ]
+    },
+    {
+      "type": "gym",
+      "name": "Route 103",
+      "value": "r0",
+      "group": "rival",
+      "boss": "May"
+    },
+    {
+      "type": "route",
+      "name": "Route 104",
+      "encounters": [
+        "paras",
+        "weedle",
+        "scatterbug",
+        "blipbug",
+        "sizzlipede",
+        "ekans",
+        "salandit",
+        "venipede",
+        "combee",
+        "yanma",
+        "ledyba",
+        "horsea",
+        "remoraid",
+        "buizel",
+        "krabby",
+        "clauncher",
+        "gyarados",
+        "starmie",
+        "sharpedo",
+        "kingdra"
+      ]
+    },
+    {
+      "type": "gym",
+      "name": "Route 104",
+      "value": "aq1",
+      "group": "evil-team",
+      "boss": "Aqua Grunt"
+    },
+    {
+      "type": "route",
+      "name": "Route 106",
+      "encounters": [
+        "spheal",
+        "chewtle",
+        "shellder",
+        "staryu",
+        "sealeo",
+        "walrein",
+        "drednaw",
+        "starmie",
+        "wailord"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Granite Cave",
+      "encounters": [
+        "phanpy",
+        "cufant",
+        "rhyhorn",
+        "onix",
+        "aron",
+        "togedemaru",
+        "sandile",
+        "geodude-alola",
+        "dwebble",
+        "nosepass",
+        "amaura",
+        "sandshrew-alola",
+        "sneasel",
+        "snover",
+        "spheal",
+        "snorunt",
+        "swinub",
+        "bergmite"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Steven's Room",
+      "encounters": [
+        "abra",
+        "hatenna",
+        "gligar",
+        "nosepass",
+        "magnemite",
+        "baltoy",
+        "dottler",
+        "meditite",
+        "drowzee"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Route 109",
+      "encounters": [
+        "chewtle",
+        "tirtouga",
+        "krabby",
+        "corphish",
+        "clauncher",
+        "tentacool",
+        "tynamo",
+        "wailord",
+        "drednaw",
+        "carracosta"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Slateport City",
+      "encounters": [
+        "horsea",
+        "remoraid",
+        "buizel",
+        "qwilfish",
+        "anorith",
+        "lileep",
+        "slowpoke",
+        "slowbro",
+        "slowking"
+      ]
+    },
+    {
+      "type": "gym",
+      "name": "Slatport Museum",
+      "value": "aq2",
+      "group": "evil-team",
+      "boss": "Aqua Grunt"
+    },
+    {
+      "type": "gym",
+      "name": "Slatport Museum",
+      "value": "aq3",
+      "group": "evil-team",
+      "boss": "Aqua Grunt"
+    },
+    {
+      "type": "route",
+      "name": "Dewford Town",
+      "encounters": [
+        "tyrogue",
+        "timburr",
+        "makuhita",
+        "farfetchd-galar",
+        "mienfoo",
+        "pancham",
+        "meditite",
+        "stufful",
+        "croagunk",
+        "remoraid",
+        "horsea",
+        "carvanha",
+        "spheal",
+        "chewtle",
+        "shellder",
+        "staryu",
+        "starmie",
+        "sharpedo",
+        "cloyster",
+        "wailord"
+      ]
+    },
+    {
+      "type": "gym",
+      "name": "Dewford Gym",
+      "value": "1",
+      "group": "gym-leader",
+      "boss": "Brawly"
+    },
+    {
+      "type": "route",
+      "name": "Petalburg Woods",
+      "encounters": [
+        "carnivine",
+        "shroomish",
+        "steenee",
+        "chikorita",
+        "bellsprout",
+        "gossifleur",
+        "paras",
+        "weepinbell",
+        "deerling"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Petalburg City",
+      "encounters": [
+        "croagunk",
+        "shellos",
+        "surskit",
+        "tympole",
+        "lotad",
+        "froakie",
+        "popplio"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Route 116",
+      "encounters": [
+        "makuhita",
+        "tyrogue",
+        "munna",
+        "hatenna",
+        "zigzagoon-galar",
+        "yanma",
+        "nidoran-f",
+        "nidoran-m"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Rustboro City",
+      "encounters": [
+        "rockruff",
+        "mudbray",
+        "houndour",
+        "phanpy",
+        "meowth-galar",
+        "bonsly",
+        "lillipup",
+        "steenee",
+        "stantler"
+      ]
+    },
+    {
+      "type": "gym",
+      "name": "Rustboro Gym",
+      "value": "2",
+      "group": "gym-leader",
+      "boss": "Roxanne"
+    },
+    {
+      "type": "route",
+      "name": "Rusturf Tunnel",
+      "encounters": [
+        "teddiursa",
+        "trapinch",
+        "gligar",
+        "swinub",
+        "sandile",
+        "rockruff",
+        "geodude-alola",
+        "roggenrola"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Route 117",
+      "encounters": [
+        "pikachu",
+        "electrike",
+        "joltik",
+        "magnemite",
+        "togedemaru",
+        "toxel",
+        "meowth-galar",
+        "yamper",
+        "luxio",
+        "flaaffy",
+        "tynamo",
+        "eelektrik",
+        "chinchou",
+        "stunfisk",
+        "palpitoad",
+        "grimer-alola",
+        "muk-alola",
+        "lanturn"
+      ]
+    },
+    {
+      "type": "gym",
+      "name": "Route 117",
+      "value": "mb1",
+      "group": "mini-boss",
+      "boss": "Chelle"
+    },
+    {
+      "type": "route",
+      "name": "Route 110",
+      "encounters": [
+        "shinx",
+        "mareep",
+        "tynamo",
+        "yamper",
+        "electrike",
+        "eelektrik",
+        "chinchou",
+        "tentacool",
+        "skrelp",
+        "seadra",
+        "lanturn",
+        "eelektross"
+      ]
+    },
+    {
+      "type": "gym",
+      "name": "Mauville City Gym",
+      "value": "3",
+      "group": "gym-leader",
+      "boss": "Wattson"
+    },
+    {
+      "type": "gym",
+      "name": "Route 110",
+      "value": "r1",
+      "group": "rival",
+      "boss": "May"
+    },
+    {
+      "type": "gym",
+      "name": "Petalburg City Gym",
+      "value": "4",
+      "group": "gym-leader",
+      "boss": "Norman"
+    },
+    {
+      "type": "route",
+      "name": "Route 111",
+      "encounters": [
+        "vibrava",
+        "donphan",
+        "drilbur",
+        "onix",
+        "boldore",
+        "dwebble",
+        "maractus",
+        "trapinch",
+        "krokorok",
+        "excadrill",
+        "krookodile",
+        "shellos",
+        "tympole",
+        "palpitoad",
+        "stunfisk",
+        "croagunk",
+        "chinchou",
+        "seismitoad",
+        "gastrodon",
+        "toxicroak",
+        "roggenrola",
+        "geodude-alola"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Route 113",
+      "encounters": [
+        "murkrow",
+        "stunky",
+        "skorupi",
+        "zoroark",
+        "koffing",
+        "houndoom",
+        "salazzle",
+        "skuntank",
+        "drapion",
+        "yanmega",
+        "toxel",
+        "toxtricity"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Fallarbor Town",
+      "encounters": [
+        "perrserker",
+        "copperajah",
+        "karrablast",
+        "snubbull",
+        "lairon",
+        "clefairy",
+        "granbull",
+        "azumarill",
+        "scyther"
+      ]
+    },
+    {
+      "type": "gym",
+      "name": "Fallarbor",
+      "value": "mb2",
+      "group": "mini-boss",
+      "boss": "Winstrate Vito"
+    },
+    {
+      "type": "route",
+      "name": "Desert Underpass",
+      "encounters": [
+        "crustle",
+        "scolipede",
+        "nidoqueen",
+        "nidoking",
+        "drapion",
+        "skuntank",
+        "druddigon"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Route 114",
+      "encounters": [
+        "cutiefly",
+        "ribombee",
+        "vespiquen",
+        "ledian",
+        "yanmega",
+        "staraptor",
+        "talonflame",
+        "corviknight",
+        "roserade",
+        "mudsdale",
+        "sirfetchd",
+        "azumarill",
+        "araquanid",
+        "bruxish",
+        "magikarp",
+        "gyarados",
+        "slowpoke",
+        "marill",
+        "azurill",
+        "slowbro",
+        "slowking",
+        "clawitzer",
+        "kingler",
+        "geodude-alola",
+        "graveler-alola"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Route 115",
+      "encounters": [
+        "gallade",
+        "gardevoir",
+        "lopunny",
+        "alakazam",
+        "altaria",
+        "gengar",
+        "greninja",
+        "clamperl",
+        "krabby",
+        "corphish",
+        "shellder",
+        "clauncher",
+        "remoraid",
+        "qwilfish",
+        "basculin",
+        "frillish",
+        "bruxish",
+        "jellicent",
+        "tentacruel",
+        "gyarados"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Route 112",
+      "encounters": [
+        "arcanine",
+        "pyroar",
+        "rapidash",
+        "centiskorch",
+        "houndoom",
+        "salazzle",
+        "camerupt",
+        "koffing",
+        "weezing"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Fiery Path",
+      "encounters": [
+        "camerupt",
+        "torkoal",
+        "turtonator",
+        "weezing",
+        "magby",
+        "magmar",
+        "magmortar"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Mt. Chimney",
+      "encounters": [
+        "lucario",
+        "lycanroc",
+        "lycanroc-dusk",
+        "lycanroc-midnight",
+        "hariyama",
+        "conkeldurr",
+        "ampharos",
+        "altaria",
+        "druddigon",
+        "turtonator",
+        "jangmo-o",
+        "hakamo-o"
+      ]
+    },
+    {
+      "type": "gym",
+      "name": "Mt. Chimney",
+      "value": "mg1",
+      "group": "evil-team",
+      "boss": "Magma Leader Maxie"
+    },
+    {
+      "type": "route",
+      "name": "Jagged Pass",
+      "encounters": [
+        "turtonator",
+        "druddigon",
+        "magmortar",
+        "ursaring",
+        "wyrdeer",
+        "lycanroc",
+        "lycanroc-dusk",
+        "lycanroc-midnight",
+        "gible",
+        "gabite"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Lavaridge Town",
+      "encounters": [
+        "wynaut"
+      ]
+    },
+    {
+      "type": "gym",
+      "name": "Lavaridge Gym",
+      "value": "5",
+      "group": "gym-leader",
+      "boss": "Flannery"
+    },
+    {
+      "type": "route",
+      "name": "Route 134",
+      "encounters": [
+        "sharpedo",
+        "barraskewda",
+        "lanturn",
+        "seadra",
+        "kingdra",
+        "qwilfish-hisui",
+        "skrelp",
+        "dragalge",
+        "overqwil"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "New Mauville",
+      "encounters": [
+        "magneton",
+        "magnezone",
+        "ampharos",
+        "golem-alola",
+        "probopass",
+        "raichu",
+        "raichu-alola",
+        "elekid",
+        "electabuzz",
+        "electivire",
+        "voltorb-hisui",
+        "electrode-hisui",
+        "togedemaru",
+        "manectric",
+        "galvantula",
+        "boltund",
+        "porygon2",
+        "beldum",
+        "metang"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Route 105",
+      "encounters": [
+        "corviknight",
+        "ribombee",
+        "stufful",
+        "breloom",
+        "hawlucha",
+        "comfey",
+        "bewear",
+        "aipom",
+        "ambipom",
+        "exeggutor-alola",
+        "barraskewda",
+        "lumineon",
+        "bruxish",
+        "clawitzer",
+        "crawdaunt",
+        "wailmer",
+        "wailord",
+        "arrokuda",
+        "dratini"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Route 107",
+      "encounters": [
+        "remoraid",
+        "horsea",
+        "carvanha",
+        "seadra",
+        "kingdra",
+        "octillery",
+        "cloyster",
+        "wailord"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Route 108",
+      "encounters": [
+        "dhelmise",
+        "basculin",
+        "tentacruel",
+        "barraskewda",
+        "jellicent",
+        "lanturn",
+        "dratini",
+        "dragonair",
+        "arrokuda",
+        "basculegion-male"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Abandoned Ship",
+      "encounters": [
+        "dhelmise",
+        "lanturn",
+        "grimer-alola",
+        "muk-alola",
+        "basculin",
+        "eelektross",
+        "basculegion-male"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Route 118",
+      "encounters": [
+        "swablu",
+        "altaria",
+        "kangaskhan",
+        "beedrill",
+        "absol",
+        "araquanid",
+        "galvantula",
+        "carnivine",
+        "tentacool",
+        "magikarp",
+        "dewpider",
+        "bruxish",
+        "qwilfish",
+        "gyarados",
+        "tentacruel"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Altering Cave",
+      "encounters": [
+        "riolu",
+        "timburr",
+        "sandshrew-alola",
+        "magnemite",
+        "bergmite",
+        "numel",
+        "porygon",
+        "gurdurr",
+        "sandslash-alola",
+        "magneton",
+        "torkoal"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Mirage Tower",
+      "encounters": [
+        "drilbur",
+        "baltoy",
+        "lairon",
+        "skorupi",
+        "krokorok",
+        "excadrill",
+        "claydol",
+        "krookodile",
+        "solosis",
+        "duosion",
+        "munna",
+        "musharna",
+        "mawile",
+        "nosepass",
+        "sigilyph",
+        "hattrem",
+        "hatterene",
+        "orbeetle",
+        "zubat",
+        "golbat",
+        "karrablast",
+        "shelmet",
+        "gliscor",
+        "galvantula",
+        "noibat",
+        "noivern",
+        "zorua",
+        "zoroark",
+        "xatu",
+        "absol",
+        "hypno",
+        "drapion",
+        "kirlia"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Route 119",
+      "encounters": [
+        "escavalier",
+        "accelgor",
+        "toxicroak",
+        "seismitoad",
+        "gastrodon",
+        "araquanid",
+        "galvantula",
+        "pinsir",
+        "heracross",
+        "scyther",
+        "goomy",
+        "sliggoo",
+        "magikarp",
+        "feebas",
+        "skrelp",
+        "frillish",
+        "dragalge",
+        "milotic",
+        "gyarados",
+        "jellicent",
+        "castform"
+      ]
+    },
+    {
+      "type": "gym",
+      "name": "Weather Institute",
+      "value": "aq4",
+      "group": "evil-team",
+      "boss": "Aqua Admin Shelly"
+    },
+    {
+      "type": "gym",
+      "name": "Route 119",
+      "value": "r2",
+      "group": "rival",
+      "boss": "May"
+    },
+    {
+      "type": "route",
+      "name": "Route 120",
+      "encounters": [
+        "hawlucha",
+        "gligar",
+        "gliscor",
+        "sneasel-hisui",
+        "sneasler",
+        "mienshao",
+        "bewear",
+        "altaria",
+        "noivern",
+        "tsareena",
+        "larvesta",
+        "volcarona",
+        "slowbro",
+        "slowking",
+        "golisopod",
+        "gyarados",
+        "jellicent",
+        "qwilfish-hisui",
+        "grimer-alola",
+        "muk-alola",
+        "overqwil",
+        "wimpod",
+        "slowpoke",
+        "kecleon"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Fortree City",
+      "encounters": [
+        "kecleon"
+      ]
+    },
+    {
+      "type": "gym",
+      "name": "Fortree City Gym",
+      "value": "6",
+      "group": "gym-leader",
+      "boss": "Winona"
+    },
+    {
+      "type": "route",
+      "name": "Route 121",
+      "encounters": [
+        "pidgeot",
+        "kirlia",
+        "kadabra",
+        "lopunny",
+        "medicham",
+        "mienshao",
+        "weavile",
+        "gardevoir",
+        "gallade",
+        "alakazam",
+        "scizor",
+        "kleavor"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Safari Zone",
+      "encounters": [
+        "donphan",
+        "mudsdale",
+        "vibrava",
+        "flygon",
+        "larvitar",
+        "pupitar",
+        "diggersby",
+        "maractus",
+        "herdier",
+        "stoutland",
+        "crustle",
+        "golem-alola",
+        "glalie",
+        "amoonguss",
+        "morelull",
+        "shiinotic",
+        "parasect",
+        "snivy",
+        "rowlet",
+        "chespin",
+        "grookey",
+        "chikorita",
+        "bayleef",
+        "wartortle",
+        "blastoise",
+        "carracosta",
+        "drednaw",
+        "grimer-alola",
+        "froakie",
+        "nuzleaf",
+        "sawsbuck",
+        "shiftry",
+        "bulbasaur",
+        "ivysaur",
+        "venusaur",
+        "vivillon",
+        "golduck",
+        "octillery",
+        "floatzel",
+        "gorebyss",
+        "huntail",
+        "araquanid"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Lilycove City",
+      "encounters": [
+        "manectric",
+        "toxtricity",
+        "toxtricity-low-key",
+        "eelektross",
+        "carracosta",
+        "drednaw",
+        "luxio",
+        "luxray",
+        "ampharos",
+        "beldum",
+        "metang",
+        "muk-alola",
+        "lanturn",
+        "dragonair",
+        "eelektrik",
+        "dragonite"
+      ]
+    },
+    {
+      "type": "gym",
+      "name": "Lilycove City",
+      "value": "r3",
+      "group": "rival",
+      "boss": "May"
+    },
+    {
+      "type": "route",
+      "name": "Route 122",
+      "encounters": [
+        "slowbro",
+        "slowking",
+        "jellicent",
+        "basculegion-male",
+        "bruxish",
+        "sharpedo",
+        "crobat",
+        "noivern",
+        "honchkrow",
+        "gastly",
+        "dreepy"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Mt. Pyre",
+      "encounters": [
+        "phantump",
+        "drifloon",
+        "drifblim",
+        "deino",
+        "zweilous",
+        "dreepy",
+        "honchkrow",
+        "drakloak",
+        "pumpkaboo",
+        "froslass",
+        "absol",
+        "weavile",
+        "sableye",
+        "spiritomb",
+        "zoroark",
+        "gengar",
+        "chandelure",
+        "litwick",
+        "gastly",
+        "shuppet",
+        "kadabra",
+        "kirlia",
+        "lampent",
+        "haunter",
+        "banette",
+        "alakazam",
+        "gardevoir",
+        "gallade",
+        "pangoro",
+        "obstagoon",
+        "kangaskhan"
+      ]
+    },
+    {
+      "type": "gym",
+      "name": "Mt. Pyre",
+      "value": "aq5",
+      "group": "evil-team",
+      "boss": "Aqua Leader Archie"
+    },
+    {
+      "type": "route",
+      "name": "Team Magma Hideout",
+      "encounters": [
+        "granbull",
+        "ursaring",
+        "ursaluna",
+        "salazzle",
+        "centiskorch",
+        "weezing",
+        "exeggutor",
+        "shiftry",
+        "victreebel",
+        "torchic",
+        "combusken",
+        "lilligant",
+        "lilligant-hisui",
+        "arcanine",
+        "houndoom",
+        "volcarona",
+        "charmander",
+        "charmeleon",
+        "hydreigon",
+        "excadrill",
+        "garchomp",
+        "flygon",
+        "tyranitar",
+        "camerupt",
+        "charizard",
+        "bagon",
+        "shelgon",
+        "aggron",
+        "steelix",
+        "torkoal",
+        "turtonator",
+        "cyndaquil",
+        "quilava"
+      ]
+    },
+    {
+      "type": "gym",
+      "name": "Team Magma Hideout",
+      "value": "mg2",
+      "group": "evil-team",
+      "boss": "Magma Leader Maxie"
+    },
+    {
+      "type": "route",
+      "name": "Team Aqua Hideout",
+      "encounters": [
+        "electrode-hisui"
+      ]
+    },
+    {
+      "type": "gym",
+      "name": "Team Aqua Hideout",
+      "value": "aq6",
+      "group": "evil-team",
+      "boss": "Aqua Admin Matt"
+    },
+    {
+      "type": "route",
+      "name": "Route 124",
+      "encounters": [
+        "overqwil",
+        "dragalge",
+        "basculegion-male",
+        "barraskewda",
+        "bruxish",
+        "tentacruel",
+        "slowking",
+        "slowbro",
+        "armaldo"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Route 125",
+      "encounters": [
+        "bergmite",
+        "walrein",
+        "avalugg",
+        "milotic",
+        "cloyster",
+        "slowbro",
+        "slowking",
+        "starmie"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Mossdeep City",
+      "encounters": [
+        "eelektross",
+        "lanturn",
+        "jellicent",
+        "drednaw",
+        "cloyster",
+        "golduck",
+        "carracosta",
+        "kubfu"
+      ]
+    },
+    {
+      "type": "gym",
+      "name": "Mossdeep City Gym",
+      "value": "7",
+      "group": "gym-leader",
+      "boss": "Tate & Liza"
+    },
+    {
+      "type": "gym",
+      "name": "Mossdeep Space Center",
+      "value": "mg3",
+      "group": "evil-team",
+      "boss": "Magma Leader Maxie"
+    },
+    {
+      "type": "route",
+      "name": "Shoal Cave",
+      "encounters": [
+        "sneasler",
+        "starmie",
+        "audino",
+        "avalugg-hisui",
+        "duraludon",
+        "goodra",
+        "hatterene",
+        "musharna",
+        "reuniclus",
+        "mudkip",
+        "marshtomp",
+        "cloyster",
+        "golduck",
+        "walrein",
+        "abomasnow",
+        "glalie",
+        "cryogonal",
+        "avalugg",
+        "mamoswine",
+        "weavile",
+        "smoochum",
+        "jynx",
+        "sliggoo-hisui",
+        "goodra-hisui",
+        "sandslash-alola",
+        "impidimp",
+        "morgrem",
+        "grimmsnarl"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Route 126",
+      "encounters": [
+        "sharpedo",
+        "gyarados",
+        "kingdra",
+        "starmie",
+        "cradily",
+        "aerodactyl",
+        "archeops",
+        "corviknight"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Route 127",
+      "encounters": [
+        "ludicolo",
+        "heracross",
+        "pidgeot",
+        "pinsir",
+        "scyther",
+        "staraptor",
+        "talonflame",
+        "togepi",
+        "togetic",
+        "volcarona",
+        "scorbunny",
+        "raboot",
+        "barraskewda",
+        "dhelmise",
+        "sharpedo",
+        "bruxish",
+        "gyarados",
+        "milotic",
+        "kabutops"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Route 128",
+      "encounters": [
+        "barraskewda",
+        "golduck",
+        "kingdra",
+        "gorebyss",
+        "huntail",
+        "relicanth",
+        "omastar"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Ever Grande City",
+      "encounters": [
+        "togekiss",
+        "florges",
+        "ferrothorn",
+        "mudkip",
+        "treecko",
+        "torchic",
+        "mawile",
+        "slowbro",
+        "slowking",
+        "cloyster",
+        "drednaw",
+        "ludicolo",
+        "seismitoad"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Seafloor Cavern",
+      "encounters": [
+        "primarina",
+        "samurott-hisui",
+        "swampert",
+        "overqwil",
+        "cloyster",
+        "jellicent",
+        "walrein",
+        "starmie",
+        "muk-alola",
+        "tentacruel",
+        "absol",
+        "weavile",
+        "grimmsnarl",
+        "zoroark-hisui",
+        "avalugg-hisui",
+        "goodra-hisui",
+        "sneasler",
+        "zoroark",
+        "aggron",
+        "slowbro",
+        "slowking",
+        "gigalith",
+        "glalie",
+        "audino",
+        "avalugg",
+        "goodra",
+        "froslass",
+        "dhelmise",
+        "basculegion-male",
+        "dragonair",
+        "eelektross",
+        "milotic",
+        "bruxish",
+        "dragonite"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Cave of Origin Entrance",
+      "encounters": [
+        "grimmsnarl",
+        "ursaluna",
+        "wyrdeer",
+        "audino",
+        "clefable",
+        "mawile",
+        "sableye",
+        "obstagoon",
+        "dragapult",
+        "kyogre",
+        "groudon"
+      ]
+    },
+    {
+      "type": "gym",
+      "name": "Cave of Origin",
+      "value": "aq7",
+      "group": "evil-team",
+      "boss": "Aqua Leader Archie"
+    },
+    {
+      "type": "route",
+      "name": "Route 129",
+      "encounters": [
+        "dhelmise",
+        "barraskewda",
+        "gyarados",
+        "stunfisk",
+        "overqwil",
+        "starmie",
+        "pidgeot"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Route 130",
+      "encounters": [
+        "zorua",
+        "zorua-hisui",
+        "zoroark",
+        "zoroark-hisui",
+        "clawitzer",
+        "crawdaunt",
+        "dragalge",
+        "gyarados",
+        "milotic",
+        "dratini",
+        "dragonair",
+        "pidgeot",
+        "altaria"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Route 131",
+      "encounters": [
+        "gyarados",
+        "overqwil",
+        "stunfisk",
+        "bruxish",
+        "eelektross",
+        "octillery",
+        "sharpedo",
+        "dratini",
+        "dragonair",
+        "aerodactyl",
+        "salamence"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Sootopolis City",
+      "encounters": [
+        "petilil",
+        "flabebe",
+        "beedrill",
+        "riolu",
+        "durant",
+        "ferroseed",
+        "treecko",
+        "grovyle",
+        "feebas",
+        "magikarp"
+      ]
+    },
+    {
+      "type": "gym",
+      "name": "Sootopolis Gym",
+      "value": "8",
+      "group": "gym-leader",
+      "boss": "Juan"
+    },
+    {
+      "type": "route",
+      "name": "Pacifidlog Town",
+      "encounters": [
+        "reuniclus",
+        "gastly",
+        "gengar",
+        "shuppet",
+        "banette",
+        "sableye",
+        "froslass",
+        "dreepy"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Route 132",
+      "encounters": [
+        "basculegion-male",
+        "reuniclus",
+        "froslass",
+        "banette",
+        "gengar",
+        "jellicent"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Route 133",
+      "encounters": [
+        "basculegion-male",
+        "sharpedo",
+        "lanturn",
+        "eelektross",
+        "kingdra",
+        "overqwil",
+        "dragalge"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Sky Pillar",
+      "encounters": [
+        "togekiss",
+        "corviknight",
+        "aerodactyl",
+        "banette",
+        "dragapult",
+        "gengar",
+        "kleavor",
+        "sableye",
+        "scizor",
+        "zorua-hisui",
+        "zoroark-hisui",
+        "altaria",
+        "dragonite",
+        "salamence",
+        "flygon",
+        "hydreigon",
+        "archen",
+        "archeops"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Victory Road",
+      "encounters": [
+        "weavile",
+        "glalie",
+        "mamoswine",
+        "alakazam",
+        "gengar",
+        "greninja",
+        "mawile",
+        "metagross",
+        "froslass",
+        "avalugg-hisui",
+        "blastoise",
+        "charizard",
+        "venusaur",
+        "tyranitar",
+        "salamence",
+        "dragapult",
+        "chandelure",
+        "grimmsnarl",
+        "kommo-o",
+        "incineroar",
+        "garchomp",
+        "hydreigon",
+        "sharpedo",
+        "gyarados",
+        "slowbro",
+        "cloyster",
+        "walrein",
+        "slowking",
+        "samurott-hisui",
+        "starmie",
+        "primarina",
+        "aggron",
+        "steelix"
+      ]
+    },
+    {
+      "type": "gym",
+      "name": "Victory Road",
+      "value": "w1",
+      "group": "rival",
+      "boss": "Wally"
+    },
+    {
+      "type": "gym",
+      "name": "Victory Road",
+      "value": "mb2",
+      "group": "mini-boss",
+      "boss": "Winstrate Vito"
+    },
+    {
+      "type": "route",
+      "name": "Route 123",
+      "encounters": [
+        "weavile",
+        "blastoise",
+        "primarina",
+        "samurott-hisui",
+        "absol",
+        "goodra-hisui",
+        "lopunny",
+        "mawile",
+        "froakie",
+        "azumarill",
+        "frogadier",
+        "slowbro",
+        "slowking",
+        "magikarp",
+        "feebas",
+        "greninja",
+        "sharpedo",
+        "gyarados",
+        "milotic"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Meteor Falls",
+      "encounters": [
+        "rhydon",
+        "aggron",
+        "donphan",
+        "excadrill",
+        "gigalith",
+        "mamoswine",
+        "steelix",
+        "aurorus",
+        "clefable",
+        "ursaring",
+        "larvitar",
+        "pupitar",
+        "relicanth",
+        "anorith",
+        "lileep",
+        "kabuto",
+        "omanyte",
+        "armaldo",
+        "cradily",
+        "ursaluna",
+        "mawile",
+        "swampert",
+        "rhyperior",
+        "metagross",
+        "tirtouga",
+        "feebas",
+        "magikarp",
+        "gastrodon",
+        "seismitoad",
+        "goodra-hisui",
+        "garchomp",
+        "altaria",
+        "ampharos",
+        "kommo-o",
+        "tyranitar",
+        "gyarados",
+        "milotic",
+        "dragonair",
+        "kabutops",
+        "omastar",
+        "noivern",
+        "crobat",
+        "hydreigon",
+        "dragonite",
+        "dragapult",
+        "goodra",
+        "salamence"
+      ]
+    },
+    {
+      "type": "gym",
+      "name": "Pokémon League",
+      "value": "e1",
+      "group": "elite-four",
+      "boss": "Sidney"
+    },
+    {
+      "type": "gym",
+      "name": "Pokémon League",
+      "value": "ed1",
+      "group": "elite-four",
+      "boss": "Sidney"
+    },
+    {
+      "type": "gym",
+      "name": "Pokémon League",
+      "value": "e2",
+      "group": "elite-four",
+      "boss": "Phoebe"
+    },
+    {
+      "type": "gym",
+      "name": "Pokémon League",
+      "value": "ed2",
+      "group": "elite-four",
+      "boss": "Phoebe"
+    },
+    {
+      "type": "gym",
+      "name": "Pokémon League",
+      "value": "e3",
+      "group": "elite-four",
+      "boss": "Glacia"
+    },
+    {
+      "type": "gym",
+      "name": "Pokémon League",
+      "value": "ed3",
+      "group": "elite-four",
+      "boss": "Glacia"
+    },
+    {
+      "type": "gym",
+      "name": "Pokémon League",
+      "value": "e4",
+      "group": "elite-four",
+      "boss": "Drake"
+    },
+    {
+      "type": "gym",
+      "name": "Pokémon League",
+      "value": "ed4",
+      "group": "elite-four",
+      "boss": "Drake"
+    },
+    {
+      "type": "gym",
+      "name": "Pokémon League Champion",
+      "value": "ec",
+      "group": "elite-four",
+      "boss": "Wallace"
+    }
+  ],
   "fr": [
     {
       "type": "route",
