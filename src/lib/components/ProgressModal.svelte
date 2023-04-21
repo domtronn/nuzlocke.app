@@ -134,7 +134,7 @@
   let loading = true
   let analysisResult
   onMount(async () => {
-    setup(async (rawData, boxData, teamLocs) => {
+    setup(async (rawData, boxData) => {
       analysisResult = await fetchAnalysis(boss.pokemon, boxData)
       loading = false
     })

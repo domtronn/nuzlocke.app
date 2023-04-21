@@ -41,10 +41,8 @@
 {/if}
 
 <style lang="postcss">
-  button span {
-    transition: transform 0.2s ease;
-  }
   [aria-expanded='true'] span {
+    transition: transform 0.2s ease;
     transform: rotate(0.25turn);
   }
 </style>
