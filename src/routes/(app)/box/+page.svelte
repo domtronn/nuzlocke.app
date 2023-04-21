@@ -219,7 +219,7 @@
   >
     <div class="mx-auto flex flex-col items-center justify-center">
       <main
-        class="flex w-full snap-y scroll-pt-14 flex-col gap-y-4 overflow-hidden px-4 pt-14 pb-32 md:px-8 md:pt-20 md:pb-48 xl:w-3/4 {region}"
+        class="box flex w-full snap-y scroll-pt-14 flex-col gap-y-4 overflow-hidden px-4 pt-14 pb-32 md:px-8 md:pt-20 md:pb-48 xl:w-3/4 {region}"
       >
         <div
           class="relative -my-2 flex snap-start flex-row items-center gap-x-2 md:mt-0"
