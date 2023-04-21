@@ -23,7 +23,7 @@
     pages,
     max
 
-  $: (pages = chunk(boxList, 8 * 3)), (max = pages.length - 1)
+  $: (pages = chunk(boxList, 8 * 3)), (max = Math.max(pages.length - 1, 0))
   $: if (page > max) page = max
 
   const inc = (_) => (page = Math.min(max, page + 1))
@@ -90,8 +90,8 @@
     <ul
       class="mt-2 grid w-full grid-cols-6 rounded-lg bg-gray-200 px-4 py-2 dark:bg-gray-800 md:w-fit md:grid-cols-8"
     >
-      {#key page}
-        {#each pages[page] as poke (locid(poke.original))}
+      {#key pages[page]}
+        {#each pages[page] || [] as poke (locid(poke.original))}
           {@const og = poke.original}
           <button
             title={team.length === 6

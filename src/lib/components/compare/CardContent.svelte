@@ -45,10 +45,11 @@
 
   let compare
   $: {
-    let nTid = Math.min(teamId, team.length - 1)
-    let nBid = Math.max(boxId, 0)
+    let nTid = Math.max(Math.min(teamId, team.length - 1), 0)
+    let nBid = Math.max(Math.min(boxId, boxList.length - 1), 0)
+
     compare =
-      active === Active.Team && team.length > 0
+      (active === Active.Team && team.length > 0) || boxList.length === 0
         ? [
             { ...team?.[nTid], id: nTid },
             { ...gym?.[gymId], id: gymId }
