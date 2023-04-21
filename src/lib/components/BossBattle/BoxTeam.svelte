@@ -87,7 +87,7 @@
     <div class="flex flex-col items-start md:flex-row md:items-center" />
 
     <ul
-      class="mt-2 grid min-h-[56px] w-full grid-cols-6 rounded-lg bg-gray-200 px-4 py-2 dark:bg-gray-800 md:w-fit md:grid-cols-8"
+      class="mt-2 grid w-full grid-cols-6 rounded-lg bg-gray-200 px-4 py-2 dark:bg-gray-800 max-md:min-h-[56px] md:w-fit md:grid-cols-8"
     >
       {#key pages[page]}
         {#each pages[page] || [] as poke (locid(poke.original))}

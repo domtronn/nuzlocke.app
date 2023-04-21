@@ -81,14 +81,15 @@
 .pkb-silv-dark { width: 15px; height: 15px; background-position: -27px -292px; }
 
 /* GEN 1 -- Badges in order */
-.kanto .pkb-1, .pkb-kanto-boulder-2 { width: 16px; height: 16px; background-position: -291px -148px; }
-.kanto .pkb-2, .pkb-kanto-cascade-2 { width: 14px; height: 16px; background-position: -315px -150px; }
-.kanto .pkb-3, .pkb-kanto-thunder-2 { width: 16px; height: 16px; background-position: -291px -124px; }
-.kanto .pkb-4, .pkb-kanto-rainbow-2 { width: 16px; height: 16px; background-position: -291px -100px; }
-.kanto .pkb-5, .pkb-kanto-soul-2 { width: 16px; height: 15px; background-position: -28px -269px; }
-.kanto .pkb-6, .pkb-kanto-marsh-2 { width: 16px; height: 16px; background-position: -291px -76px; }
-.kanto .pkb-7, .pkb-kanto-volcano-2 { width: 16px; height: 16px; background-position: -291px -52px; }
-.kanto .pkb-8, .pkb-kanto-earth-2 { width: 16px; height: 16px; background-position: -291px -28px; }
+.johto .pkb-rock, .kanto .pkb-rock, .pkb-kanto-boulder-2 { width: 16px; height: 16px; background-position: -291px -148px; }
+.johto .pkb-water, .kanto .pkb-water, .pkb-kanto-cascade-2 { width: 14px; height: 16px; background-position: -315px -150px; }
+.johto .pkb-electric, .kanto .pkb-electric, .pkb-kanto-thunder-2 { width: 16px; height: 16px; background-position: -291px -124px; }
+.johto .pkb-grass, .kanto .pkb-grass, .pkb-kanto-rainbow-2 { width: 16px; height: 16px; background-position: -291px -100px; }
+.johto .pkb-poison, .kanto .pkb-poison, .pkb-kanto-soul-2 { width: 16px; height: 15px; background-position: -28px -269px; }
+.johto .pkb-psychic, .kanto .pkb-psychic, .pkb-kanto-marsh-2 { width: 16px; height: 16px; background-position: -291px -76px; }
+.johto .pkb-fire, .kanto .pkb-fire, .pkb-kanto-volcano-2 { width: 16px; height: 16px; background-position: -291px -52px; }
+.johto .pkb-ground, .kanto .pkb-ground, .pkb-kanto-earth-2 { width: 16px; height: 16px; background-position: -291px -28px; }
+
 .pkb-kanto-boulder { width: 14px; height: 14px; background-position: -116px -292px; }
 .pkb-kanto-cascade { width: 11px; height: 14px; background-position: -337px -241px; }
 .pkb-kanto-thunder { width: 16px; height: 16px; background-position: -267px -100px; }
@@ -99,14 +100,14 @@
 .pkb-kanto-earth { width: 16px; height: 16px; background-position: -267px -52px; }
 
 /* GEN 2 -- Badges in order */
-.johto .pkb-1, .pkb-johto-zephyr-2 { width: 16px; height: 16px; background-position: -291px -4px; }
-.johto .pkb-2, .pkb-johto-hive-2 { width: 16px; height: 16px; background-position: -244px -245px; }
-.johto .pkb-3, .pkb-johto-plain-2 { width: 15px; height: 16px; background-position: -268px -245px; }
-.johto .pkb-4, .pkb-johto-fog-2 { width: 16px; height: 16px; background-position: -220px -245px; }
-.johto .pkb-5, .pkb-johto-storm-2 { width: 16px; height: 16px; background-position: -196px -245px; }
-.johto .pkb-6, .pkb-johto-glacier-2 { width: 16px; height: 16px; background-position: -148px -245px; }
-.johto .pkb-7, .pkb-johto-mineral-2 { width: 16px; height: 16px; background-position: -172px -245px; }
-.johto .pkb-8, .pkb-johto-rising-2 { width: 16px; height: 16px; background-position: -124px -245px; }
+.johto .pkb-flying, .pkb-johto-zephyr-2 { width: 16px; height: 16px; background-position: -291px -4px; }
+.johto .pkb-bug, .pkb-johto-hive-2 { width: 16px; height: 16px; background-position: -244px -245px; }
+.johto .pkb-normal, .pkb-johto-plain-2 { width: 15px; height: 16px; background-position: -268px -245px; }
+.johto .pkb-ghost, .pkb-johto-fog-2 { width: 16px; height: 16px; background-position: -220px -245px; }
+.johto .pkb-fighting, .pkb-johto-storm-2 { width: 16px; height: 16px; background-position: -196px -245px; }
+.johto .pkb-steel, .pkb-johto-glacier-2 { width: 16px; height: 16px; background-position: -148px -245px; }
+.johto .pkb-ice, .pkb-johto-mineral-2 { width: 16px; height: 16px; background-position: -172px -245px; }
+.johto .pkb-dragon, .pkb-johto-rising-2 { width: 16px; height: 16px; background-position: -124px -245px; }
 .pkb-johto-zephyr { width: 16px; height: 16px; background-position: -267px -28px; }
 .pkb-johto-hive { width: 16px; height: 16px; background-position: -267px -4px; }
 .pkb-johto-plain { width: 16px; height: 16px; background-position: -220px -221px; }
@@ -117,14 +118,15 @@
 .pkb-johto-rising { width: 16px; height: 16px; background-position: -100px -221px; }
 
 /* GEN 3 -- Badges in order */
-.hoenn .pkb-1, .pkb-hoenn-stone-2 { width: 16px; height: 14px; background-position: -149px -269px; }
-.hoenn .pkb-2, .pkb-hoenn-knuckle-2 { width: 16px; height: 16px; background-position: -100px -245px; }
-.hoenn .pkb-3, .pkb-hoenn-dynamo-2 { width: 16px; height: 16px; background-position: -76px -245px; }
-.hoenn .pkb-4, .pkb-hoenn-heat-2 { width: 16px; height: 16px; background-position: -52px -245px; }
-.hoenn .pkb-5, .pkb-hoenn-balance-2 { width: 16px; height: 16px; background-position: -28px -245px; }
-.hoenn .pkb-6, .pkb-hoenn-feather-2 { width: 16px; height: 16px; background-position: -4px -245px; }
-.hoenn .pkb-7, .pkb-hoenn-mind-2 { width: 16px; height: 15px; background-position: -4px -269px; }
-.hoenn .pkb-8, .pkb-hoenn-rain-2 { width: 16px; height: 16px; background-position: -267px -220px; }
+.hoenn .pkb-rock, .pkb-hoenn-stone-2 { width: 16px; height: 14px; background-position: -149px -269px; }
+.hoenn .pkb-fighting, .pkb-hoenn-knuckle-2 { width: 16px; height: 16px; background-position: -100px -245px; }
+.hoenn .pkb-electric, .pkb-hoenn-dynamo-2 { width: 16px; height: 16px; background-position: -76px -245px; }
+.hoenn .pkb-fire, .pkb-hoenn-heat-2 { width: 16px; height: 16px; background-position: -52px -245px; }
+.hoenn .pkb-normal, .pkb-hoenn-balance-2 { width: 16px; height: 16px; background-position: -28px -245px; }
+.hoenn .pkb-flying, .pkb-hoenn-feather-2 { width: 16px; height: 16px; background-position: -4px -245px; }
+.hoenn .pkb-psychic, .pkb-hoenn-mind-2 { width: 16px; height: 15px; background-position: -4px -269px; }
+.hoenn .pkb-water, .pkb-hoenn-rain-2 { width: 16px; height: 16px; background-position: -267px -220px; }
+
 .pkb-hoenn-stone { width: 16px; height: 14px; background-position: -101px -269px; }
 .pkb-hoenn-knuckle { width: 14px; height: 12px; background-position: -173px -127px; }
 .pkb-hoenn-dynamo { width: 14px; height: 14px; background-position: -50px -292px; }
@@ -135,14 +137,15 @@
 .pkb-hoenn-rain { width: 16px; height: 16px; background-position: -52px -221px; }
 
 /* GEN 4 -- Badges in order */
-.sinnoh .pkb-1, .pkb-sinnoh-coal-2 { width: 16px; height: 16px; background-position: -267px -196px; }
-.sinnoh .pkb-2, .pkb-sinnoh-forest-2 { width: 16px; height: 16px; background-position: -267px -172px; }
-.sinnoh .pkb-3, .pkb-sinnoh-cobble-2 { width: 16px; height: 16px; background-position: -267px -148px; }
-.sinnoh .pkb-4, .pkb-sinnoh-fen-2 { width: 16px; height: 14px; background-position: -125px -269px; }
-.sinnoh .pkb-5, .pkb-sinnoh-relic-2 { width: 16px; height: 16px; background-position: -267px -124px; }
-.sinnoh .pkb-6, .pkb-sinnoh-mine-2 { width: 18px; height: 16px; background-position: -181px -171px; }
-.sinnoh .pkb-7, .pkb-sinnoh-icicle-2 { width: 18px; height: 14px; background-position: -40px -148px; }
-.sinnoh .pkb-8, .pkb-sinnoh-beacon-2 { width: 15px; height: 16px; background-position: -244px -221px; }
+.sinnoh .pkb-rock, .pkb-sinnoh-coal-2 { width: 16px; height: 16px; background-position: -267px -196px; }
+.sinnoh .pkb-grass, .pkb-sinnoh-forest-2 { width: 16px; height: 16px; background-position: -267px -172px; }
+.sinnoh .pkb-fighting, .pkb-sinnoh-cobble-2 { width: 16px; height: 16px; background-position: -267px -148px; }
+.sinnoh .pkb-water, .pkb-sinnoh-fen-2 { width: 16px; height: 14px; background-position: -125px -269px; }
+.sinnoh .pkb-ghost, .pkb-sinnoh-relic-2 { width: 16px; height: 16px; background-position: -267px -124px; }
+.sinnoh .pkb-stel, .pkb-sinnoh-mine-2 { width: 18px; height: 16px; background-position: -181px -171px; }
+.sinnoh .pkb-ice, .pkb-sinnoh-icicle-2 { width: 18px; height: 14px; background-position: -40px -148px; }
+.sinnoh .pkb-electric, .pkb-sinnoh-beacon-2 { width: 15px; height: 16px; background-position: -244px -221px; }
+
 .pkb-sinnoh-coal { width: 16px; height: 16px; background-position: -28px -221px; }
 .pkb-sinnoh-forest { width: 16px; height: 16px; background-position: -4px -221px; }
 .pkb-sinnoh-cobble { width: 16px; height: 16px; background-position: -243px -196px; }
@@ -154,13 +157,13 @@
 
 /* GEN 5 -- Badges in order */
 .unova .pkb-1, .pkb-unova-trio-2 { width: 7px; height: 16px; background-position: -337px -287px; }
-.unova .pkb-2, .pkb-unova-basic-2 { width: 6px; height: 16px; background-position: -179px -100px; }
-.unova .pkb-3, .pkb-unova-insect-2 { width: 10px; height: 16px; background-position: -337px -193px; }
-.unova .pkb-4, .pkb-unova-bolt-2 { width: 10px; height: 16px; background-position: -337px -217px; }
-.unova .pkb-5, .pkb-unova-quake-2 { width: 8px; height: 16px; background-position: -337px -263px; }
-.unova .pkb-6, .pkb-unova-jet-2 { width: 10px; height: 16px; background-position: -337px -169px; }
-.unova .pkb-7, .pkb-unova-freeze-2 { width: 13px; height: 16px; background-position: -337px -4px; }
-.unova .pkb-8, .pkb-unova-legend-2 { width: 14px; height: 16px; background-position: -315px -126px; }
+.unova .pkb-normal, .pkb-unova-basic-2 { width: 6px; height: 16px; background-position: -179px -100px; }
+.unova .pkb-bug, .pkb-unova-insect-2 { width: 10px; height: 16px; background-position: -337px -193px; }
+.unova .pkb-electric, .pkb-unova-bolt-2 { width: 10px; height: 16px; background-position: -337px -217px; }
+.unova .pkb-ground, .pkb-unova-quake-2 { width: 8px; height: 16px; background-position: -337px -263px; }
+.unova .pkb-flying, .pkb-unova-jet-2 { width: 10px; height: 16px; background-position: -337px -169px; }
+.unova .pkb-ice, .pkb-unova-freeze-2 { width: 13px; height: 16px; background-position: -337px -4px; }
+.unova .pkb-dragon, .pkb-unova-legend-2 { width: 14px; height: 16px; background-position: -315px -126px; }
 
 .pkb-unova-trio { width: 16px; height: 16px; background-position: -243px -4px; }
 .pkb-unova-basic { width: 16px; height: 16px; background-position: -200px -197px; }
@@ -171,36 +174,37 @@
 .pkb-unova-freeze { width: 16px; height: 16px; background-position: -104px -197px; }
 .pkb-unova-legend { width: 16px; height: 16px; background-position: -219px -163px; }
 
-.pkb-unova-toxic { width: 16px; height: 16px; background-position: -243px -28px; }
-.pkb-unova-wave { width: 16px; height: 16px; background-position: -243px -124px; }
+.unova .pkb-poison, .pkb-unova-toxic { width: 16px; height: 16px; background-position: -243px -28px; }
+.unova .pkb-water, .pkb-unova-wave { width: 16px; height: 16px; background-position: -243px -124px; }
 
 /** GEN 6 -- Badges in ordder */
-.kalos .pkb-1, .pkb-kalos-bug { width: 14px; height: 16px; background-position: -315px -78px; }
-.kalos .pkb-2, .pkb-kalos-cliff { width: 13px; height: 16px; background-position: -315px -256px; }
-.kalos .pkb-3, .pkb-kalos-rumble { width: 16px; height: 12px; background-position: -198px -269px; }
-.kalos .pkb-4, .pkb-kalos-plant { width: 15px; height: 16px; background-position: -196px -141px; }
-.kalos .pkb-5, .pkb-kalos-voltage { width: 16px; height: 16px; background-position: -219px -139px; }
-.kalos .pkb-6, .pkb-kalos-fairy { width: 16px; height: 7px; background-position: -222px -269px; }
-.kalos .pkb-7, .pkb-kalos-psychic { width: 15px; height: 16px; background-position: -196px -117px; }
-.kalos .pkb-8, .pkb-kalos-iceberg { width: 14px; height: 16px; background-position: -315px -54px; }
+.kalos .pkb-bug, .pkb-kalos-bug { width: 14px; height: 16px; background-position: -315px -78px; }
+.kalos .pkb-rock, .pkb-kalos-cliff { width: 13px; height: 16px; background-position: -315px -256px; }
+.kalos .pkb-fighting, .pkb-kalos-rumble { width: 16px; height: 12px; background-position: -198px -269px; }
+.kalos .pkb-grass, .pkb-kalos-plant { width: 15px; height: 16px; background-position: -196px -141px; }
+.kalos .pkb-electric, .pkb-kalos-voltage { width: 16px; height: 16px; background-position: -219px -139px; }
+.kalos .pkb-fairy, .pkb-kalos-fairy { width: 16px; height: 7px; background-position: -222px -269px; }
+.kalos .pkb-psychic, .pkb-kalos-psychic { width: 15px; height: 16px; background-position: -196px -117px; }
+.kalos .pkb-ice, .pkb-kalos-iceberg { width: 14px; height: 16px; background-position: -315px -54px; }
 
 /** GEN 7 -- Badges in order */
-.alola .pkb-1, .pkb-alola-normal { width: 18px; height: 18px; background-position: -18px -311px; }
-.alola .pkb-2, .pkb-alola-water { width: 18px; height: 18px; background-position: -0 -311px;}
-.alola .pkb-3, .pkb-alola-grass { width: 18px; height: 18px; background-position: -36px -311px; }
-.alola .pkb-4, .pkb-alola-fire { width: 18px; height: 18px; background-position: -72px -311px; }
-.alola .pkb-5, .pkb-alola-electric { width: 18px; height: 18px; background-position: -108px -311px; }
-.alola .pkb-6, .pkb-alola-ghost { width: 18px; height: 18px; background-position: -54px -311px; }
-.alola .pkb-7, .pkb-alola-fairy { width: 18px; height: 18px; background-position: -90px -311px; }
+
+.alola .pkb-normal, .pkb-alola-normal { width: 18px; height: 18px; background-position: -18px -311px; }
+.alola .pkb-water, .pkb-alola-water { width: 18px; height: 18px; background-position: -0 -311px;}
+.alola .pkb-grass, .pkb-alola-grass { width: 18px; height: 18px; background-position: -36px -311px; }
+.alola .pkb-fire, .pkb-alola-fire { width: 18px; height: 18px; background-position: -72px -311px; }
+.alola .pkb-electric, .pkb-alola-electric { width: 18px; height: 18px; background-position: -108px -311px; }
+.alola .pkb-ghost, .pkb-alola-ghost { width: 18px; height: 18px; background-position: -54px -311px; }
+.alola .pkb-fairy, .pkb-alola-fairy { width: 18px; height: 18px; background-position: -90px -311px; }
 
 /** GEN 8 -- Badges in ordder */
-.galar .pkb-1, .pkb-galar-grass { width: 23px; height: 19px; background-position: -148px -100px; }
-.galar .pkb-2, .pkb-galar-water { width: 12px; height: 14px; background-position: -337px -147px; }
-.galar .pkb-3, .pkb-galar-fire { width: 15px; height: 26px; background-position: -196px -4px; }
-.galar .pkb-4a, .pkb-galar-fighting { width: 16px; height: 20px; background-position: -219px -32px; }
-.galar .pkb-4b, .pkb-galar-ghost { width: 16px; height: 20px; background-position: -219px -4px; }
-.galar .pkb-5, .pkb-galar-fairy { width: 13px; height: 21px; background-position: -219px -60px; }
-.galar .pkb-6a, .pkb-galar-rock { width: 17px; height: 12px; background-position: -148px -127px; }
-.galar .pkb-6b, .pkb-galar-ice { width: 17px; height: 12px; background-position: -173px -269px; }
-.galar .pkb-7, .pkb-galar-dark { width: 12px; height: 18px; background-position: -315px -174px; }
-.galar .pkb-8, .pkb-galar-dragon { width: 28px; height: 15px; background-position: -4px -148px; }
+.galar .pkb-grass, .pkb-galar-grass { width: 23px; height: 19px; background-position: -148px -100px; }
+.galar .pkb-water, .pkb-galar-water { width: 12px; height: 14px; background-position: -337px -147px; }
+.galar .pkb-fire, .pkb-galar-fire { width: 15px; height: 26px; background-position: -196px -4px; }
+.galar .pkb-fighting, .pkb-galar-fighting { width: 16px; height: 20px; background-position: -219px -32px; }
+.galar .pkb-ghost, .pkb-galar-ghost { width: 16px; height: 20px; background-position: -219px -4px; }
+.galar .pkb-fairy, .pkb-galar-fairy { width: 13px; height: 21px; background-position: -219px -60px; }
+.galar .pkb-rock, .pkb-galar-rock { width: 17px; height: 12px; background-position: -148px -127px; }
+.galar .pkb-ice, .pkb-galar-ice { width: 17px; height: 12px; background-position: -173px -269px; }
+.galar .pkb-dark, .pkb-galar-dark { width: 12px; height: 18px; background-position: -315px -174px; }
+.galar .pkb-dragon, .pkb-galar-dragon { width: 28px; height: 15px; background-position: -4px -148px; }
