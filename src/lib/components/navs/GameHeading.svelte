@@ -155,6 +155,10 @@
       @apply absolute w-full -bottom-6 h-6;
     }
 
+    nav.graveyard::before {
+      display: none;
+    }
+
     :global(.dark) nav::before {
       background: linear-gradient(theme('colors.gray.800') 50%, transparent);
     }

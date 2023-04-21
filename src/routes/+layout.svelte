@@ -1,16 +1,19 @@
 <script>
-  import "../app.postcss";
+  import '../app.postcss'
 
   import { onMount } from 'svelte'
-  import { CookieBanner, Footer } from '$c/navs';
+  import { CookieBanner, Footer } from '$c/navs'
 
   import deferStyles from '$lib/utils/defer-styles'
-  onMount(async () => deferStyles('/assets/pokemon.css'))
+  onMount(async () => {
+    deferStyles('/assets/pokemon.css')
+    deferStyles('/assets/badges.css')
+  })
 
-  const title = 'Nuzlocke Tracker';
-  const subtitle = 'Track encounters, analyse your team, be prepared';
+  const title = 'Nuzlocke Tracker'
+  const subtitle = 'Track encounters, analyse your team, be prepared'
   const description =
-    'Best application to track Pokémon encounters and prepare for every boss battle with details on stats, movesets, & abilities - never lose a Nuzlocke run again.';
+    'Best application to track Pokémon encounters and prepare for every boss battle with details on stats, movesets, & abilities - never lose a Nuzlocke run again.'
 </script>
 
 <svelte:head>
