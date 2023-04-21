@@ -141,7 +141,7 @@
           <TypeBadge tera type={tera} />
         {/if}
 
-        <div class="badges">
+        <div class="badges cursor-help">
           <slot name="badges" />
         </div>
       </div>
