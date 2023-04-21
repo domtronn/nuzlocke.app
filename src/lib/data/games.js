@@ -20,5 +20,11 @@ export const Expanded = Object.fromEntries(
     }, [])
 )
 
+export const RegionMap = Object.fromEntries(
+  Object
+    .entries(games)
+    .map(([key, data]) => [key, data.region])
+)
+
 export const Base = games
 export default Base

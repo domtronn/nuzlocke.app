@@ -99,9 +99,9 @@
 
     <div
       class:gap-1={minimal}
-      class:scale-75={minimal}
-      class:origin-left={minimal}
-      class='flex gap-x-1 absolute top-0 transform -translate-y-1/2'
+      class:scale-75={true}
+      class:origin-left={true}
+      class='flex gap-x-1 absolute top-0 transform -translate-y-1/2 -translate-x-1'
       >
       {#each types as t}
         <TypeBadge type={t} />
@@ -109,6 +109,11 @@
       {#if tera}
         <TypeBadge tera type={tera} />
       {/if}
+
+      <div class='badges'>
+        <slot name='badges' />
+      </div>
+
     </div>
   </div>
 
@@ -116,14 +121,6 @@
     <div
       style='border-color: {color(types[0], themeId)}'
       class='relative flex flex-col-reverse md:flex-row md:inline-flex bg-white dark:bg-gray-900 border-t-2 sm:items-center rounded-b-lg z-10'>
-
-      {#if $$slots.badges}
-        <div
-          style='border-color: {color(types[0], themeId)}'
-          class='badge-grid border-2 absolute top-0 -translate-y-1/2 left-4 bg-gray-900 rounded-lg'>
-          <slot name='badges' />
-        </div>
-      {/if}
 
       {#if moves && moves.length}
         <div class='flex-2 grid grid-cols-2 my-3 ml-4 gap-x-4 gap-y-0 lg:gap-y-3'>
@@ -225,4 +222,12 @@
     25%, 75% { transform: translate(var(--tw-translate-x),var(--tw-translate-y)) scaleX(1.02) scaleY(0.95); }
     50% { transform: translate(var(--tw-translate-x),var(--tw-translate-y)) scaleX(0.95) scaleY(1.03); }
   }
+
+  .badges {
+    @apply h-4 ml-4 -mt-1 scale-125;
+  }
+
+  .badges > :global(*:nth-child(even) i) { @apply translate-y-1.5 -mx-1 z-50; }
+  .badges > :global(*:nth-child(odd) i) { @apply -translate-y-1 -mx-1 z-10; }
+
 </style>

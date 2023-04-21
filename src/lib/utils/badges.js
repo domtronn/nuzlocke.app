@@ -43,34 +43,34 @@ const summaryText = (pokemon, GymFights = [], Other = {}) => {
 
 const summaryIcons = (GymFights = [], Other = {}) => {
   return [...new Set([
-    ...(Other?.[Groups.EliteFour] > 4 ? [Icons.EliteFour] : []),
-    ...(
-      Other?.[Groups.Rival] > 3
-        ? [Icons.Rival4] : Other?.[Groups.Rival] > 2
-        ? [Icons.Rival3] : Other?.[Groups.Rival] > 1
-        ? [Icons.Rival2] : Other?.[Groups.Rival] > 0
-        ? [Icons.Rival1] : []
-    ),
-    ...(
-      Other?.[Groups.EvilTeam] > 6
-        ? [Icons.EvilTeam4] : Other?.[Groups.EvilTeam] > 4
-        ? [Icons.EvilTeam3] : Other?.[Groups.EvilTeam] > 2
-        ? [Icons.EvilTeam2] : Other?.[Groups.EvilTeam] > 0
-        ? [Icons.EvilTeam1] : []
-    ),
+    // ...(Other?.[Groups.EliteFour] > 4 ? [Icons.EliteFour] : []),
+    // ...(
+    //   Other?.[Groups.Rival] > 3
+    //     ? [Icons.Rival4] : Other?.[Groups.Rival] > 2
+    //     ? [Icons.Rival3] : Other?.[Groups.Rival] > 1
+    //     ? [Icons.Rival2] : Other?.[Groups.Rival] > 0
+    //     ? [Icons.Rival1] : []
+    // ),
+    // ...(
+    //   Other?.[Groups.EvilTeam] > 6
+    //     ? [Icons.EvilTeam4] : Other?.[Groups.EvilTeam] > 4
+    //     ? [Icons.EvilTeam3] : Other?.[Groups.EvilTeam] > 2
+    //     ? [Icons.EvilTeam2] : Other?.[Groups.EvilTeam] > 0
+    //     ? [Icons.EvilTeam1] : []
+    // ),
     ...GymFights.map(g => g.icon)
   ])]
 }
 
 export const summarise = (pokemon, teams = []) => {
   const bossEncounters = teams
-        .filter(team => team.team.includes(locid(pokemon)))
+        .filter(team => team.team.some(i => i.id === locid(pokemon)))
 
   const [ GymFights, Other ] = bossEncounters.reduce(([gFights, other], it) => {
     if (it.group === Groups.GymLeader) {
       const item = {
         name: it.name,
-        icon: `${it.id} pkb-${it.type || 'unknown'}`
+        icon: `${it.id} pkb-${it.type || it.speciality || 'unknown'}`
       }
 
       return [gFights.concat(item), other]

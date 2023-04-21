@@ -7,17 +7,17 @@
 }
 
 /* General awards and medals for rival fights, mini bosses etc */
-.pkb-award {width: 40px; height: 40px; background-position: -4px -4px; }
-.pkb-special { width: 40px; height: 40px; background-position: -148px -4px; }
-.pkb-elite-four { width: 40px; height: 40px; background-position: -52px -4px; }
-.pkb-evil-000 { width: 40px; height: 40px; background-position: -4px -52px; }
-.pkb-evil-025 { width: 40px; height: 40px; background-position: -52px -52px; }
-.pkb-evil-050 { width: 40px; height: 40px; background-position: -148px -52px; }
-.pkb-evil-100 { width: 40px; height: 40px; background-position: -100px -4px; }
-.pkb-rival-025 { width: 40px; height: 40px; background-position: -100px -52px; }
-.pkb-rival-000 { width: 40px; height: 40px; background-position: -4px -100px; }
-.pkb-rival-050 { width: 40px; height: 40px; background-position: -52px -100px; }
-.pkb-rival-100 { width: 40px; height: 40px; background-position: -100px -100px; }
+.pkb-rival-000 {background-position: -15px -107px; width: 19px; height: 26px;}
+.pkb-rival-075 {background-position: -58px -107px; width: 29px; height: 28px;}
+.pkb-rival-025 {background-position: -110px -59px; width: 21px; height: 28px;}
+.pkb-rival-100 {background-position: -106px -105px; width: 29px; height: 31px;}
+.pkb-evil-025 {background-position: -62px -57px; width: 21px; height: 31px;}
+.pkb-evil-000 {background-position: -14px -57px; width: 21px; height: 31px;}
+.pkb-award {background-position: -14px -4px; width: 21px; height: 39px;}
+.pkb-elite-four {background-position: -52px -4px; width: 41px; height: 41px;}
+.pkb-evil-100 {background-position: -110px -9px; width: 21px; height: 30px;}
+.pkb-special {background-position: -154px -10px; width: 29px; height: 29px;}
+.pkb-evil-075 {background-position: -158px -57px; width: 21px; height: 30px;}
 
 .pkb-award, 
 .pkb-special, 
@@ -29,30 +29,37 @@
 .pkb-rival-025, 
 .pkb-rival-000, 
 .pkb-rival-050, 
-.pkb-rival-100 { transform: scale(0.75); margin: -4px -10px; }
+.pkb-rival-100 { transform: translate(var(--tw-translate-x),var(--tw-translate-y)) scale(0.75);}
+
+.pkb-rival-100, 
+.pkb-rival-075,
+.pkb-evil-000, 
+.pkb-evil-025 { margin-top: 0.5rem; margin-left: -0.5rem !important; margin-right: -0.5rem !important; }
+
+.pkb-elite-four { margin: 0.2rem -1rem -1rem 0 !important;}
 
 
 /* General badges for type specialities used a fallback when there
    isnt a specific gym badge */
 
 /* GOLD BADGES */
-.pkb-gold-water { width: 13px; height: 19px; background-position: -196px -63px; }
-.pkb-gold-steel { width: 17px; height: 16px; background-position: -4px -197px; }
-.pkb-gold-rock { width: 17px; height: 14px; background-position: -66px -148px; }
-.pkb-gold-psychic { width: 17px; height: 14px; background-position: -91px -148px; }
-.pkb-gold-poison { width: 11px; height: 17px; background-position: -337px -97px; }
-.pkb-gold-normal { width: 17px; height: 17px; background-position: -106px -171px; }
-.pkb-gold-ice { width: 17px; height: 18px; background-position: -56px -171px; }
-.pkb-gold-ground { width: 17px; height: 14px; background-position: -116px -148px; }
-.pkb-gold-ghost { width: 15px; height: 17px; background-position: -291px -172px; }
-.pkb-gold-flying { width: 10px; height: 20px; background-position: -315px -200px; }
-.pkb-gold-fighting { width: 13px; height: 15px; background-position: -337px -28px; }
-.pkb-gold-grass { width: 14px; height: 17px; background-position: -315px -4px; }
-.pkb-gold-electric { width: 16px; height: 17px; background-position: -219px -89px; }
-.pkb-gold-fire { width: 18px; height: 18px; background-position: -4px -171px; }
-.pkb-gold-fairy { width: 17px; height: 16px; background-position: -29px -197px; }
-.pkb-gold-dark { width: 15px; height: 15px; background-position: -4px -292px; }
-.pkb-gold-bug { width: 15px; height: 17px; background-position: -291px -197px; }
+.pkb-gold-water, .pkb-water { width: 13px; height: 19px; background-position: -196px -63px; }
+.pkb-gold-steel, .pkb-steel { width: 17px; height: 16px; background-position: -4px -197px; }
+.pkb-gold-rock, .pkb-rock { width: 17px; height: 14px; background-position: -66px -148px; }
+.pkb-gold-psychic, .pkb-psychic { width: 17px; height: 14px; background-position: -91px -148px; }
+.pkb-gold-poison, .pkb-poison { width: 11px; height: 17px; background-position: -337px -97px; }
+.pkb-gold-normal, .pkb-normal { width: 17px; height: 17px; background-position: -106px -171px; }
+.pkb-gold-ice, .pkb-ice { width: 17px; height: 18px; background-position: -56px -171px; }
+.pkb-gold-ground, .pkb-ground { width: 17px; height: 14px; background-position: -116px -148px; }
+.pkb-gold-ghost, .pkb-ghost { width: 15px; height: 17px; background-position: -291px -172px; }
+.pkb-gold-flying, .pkb-flying { width: 10px; height: 20px; background-position: -315px -200px; }
+.pkb-gold-fighting, .pkb-fighting { width: 13px; height: 15px; background-position: -337px -28px; }
+.pkb-gold-grass, .pkb-grass { width: 14px; height: 17px; background-position: -315px -4px; }
+.pkb-gold-electric, .pkb-electric { width: 16px; height: 17px; background-position: -219px -89px; }
+.pkb-gold-fire, .pkb-fire { width: 18px; height: 18px; background-position: -4px -171px; }
+.pkb-gold-fairy, .pkb-fairy { width: 17px; height: 16px; background-position: -29px -197px; }
+.pkb-gold-dark, .pkb-dark { width: 15px; height: 15px; background-position: -4px -292px; }
+.pkb-gold-bug, .pkb-bug { width: 15px; height: 17px; background-position: -291px -197px; }
 
 /* SILVER BADGES */
 .pkb-silv-water { width: 13px; height: 19px; background-position: -196px -90px; }

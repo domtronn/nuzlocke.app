@@ -48,7 +48,7 @@
       id: boss.id,
       name: boss.name,
       group: boss.type,
-      speciality: boss.speciality,
+      type: boss.speciality,
       team: team.map((i) => ({ sprite: i.alias, id: locid(i.original) }))
     })
 

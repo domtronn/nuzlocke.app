@@ -23,6 +23,7 @@
 
   import { browser } from '$app/environment'
   import { getContext } from 'svelte'
+  import { fade } from 'svelte/transition'
 
   import Pokemon from '$lib/components/pokemon-card.svelte'
   import TypeBadge from '$lib/components/type-badge.svelte'
@@ -113,9 +114,9 @@ graysca  }
       class="-mt-4 inline-flex h-16 items-center gap-x-2 text-left"
       >
 
-      {#if defeated}
-        <div>
-          <span class='top-4 left-9 z-50 -rotate-30 absolute font-bold border-2 text-base leading-4 pl-2 pr-1.5 border-red-500 uppercase grayscale-1 bg-red-300 font-mono tracking-widest text-red-500'>defeated</span>
+      {#if defeated && !loading}
+        <div in:fade>
+          <span class='top-4 -ml-2 left-9 z-50 -rotate-30 absolute font-bold border-2 text-base leading-4 pl-2 pr-1.5 border-red-600 uppercase grayscale-1 bg-red-300 font-mono tracking-widest text-red-700'>defeated</span>
         </div>
       {/if}
 

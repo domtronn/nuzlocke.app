@@ -1,6 +1,8 @@
 <script>
   export let submit = _ => _, pokemon, nickname, death = {}, mode = 'new'
 
+  console.log(pokemon, nickname, death, mode)
+
   import Form from './Form.svelte'
   import Prose from './Prose.svelte'
 

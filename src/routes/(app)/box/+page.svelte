@@ -3,43 +3,49 @@
   import { fade } from 'svelte/transition'
   import { flip } from 'svelte/animate'
 
+  import { RegionMap } from '$lib/data/games'
   import { Footer } from '$c/navs'
 
   import PokemonCard from '$lib/components/pokemon-card.svelte'
 
   import { Settings } from '$lib/components/Settings'
-  import { Loader, PIcon, IconButton, Tooltip, Toggle } from '$c/core'
+  import { Loader, PIcon, IconButton, Tooltip, Toggle, Icon } from '$c/core'
+  import { Ball, Plus, Minus, Shiny, X, Deceased, External } from '$icons'
+
   import TypeBadge from '$lib/components/type-badge.svelte'
   import { Modal as AnalysisModal } from '$lib/components/Analysis'
 
   import { drag } from '$utils/drag'
 
-  import { getGameStore, getBox, readdata, read, readTeam, readBox, parse, patch, updatePokemon, killPokemon } from '$lib/store'
+  import { getGameStore, getBox, readdata, read, readTeam, readTeams, readBox, parse, patch, updatePokemon, killPokemon } from '$lib/store'
 
   import { canonTypes as types } from '$lib/data/types'
   import { stats, StatIconMap } from '$lib/data/stats'
 
+  import deferStyles from '$utils/defer-styles'
+
   import { CUSTOM, UNOWN, createImgUrl } from '$utils/rewrites'
   import { toDb } from '$utils/link'
+  import { summarise } from '$utils/badges'
 
-  import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
-  import { Ball, Plus, Minus, Shiny, X, Deceased, External } from '$icons'
 
   const { getPkmns, getPkmn } = getContext('game')
   const { open } = getContext('simple-modal')
 
   let minimal = false
-  let Particles, EvoModal, DeathModal
-  let gameStore, teamData = [], setTeam = _ => _
+  let Particles
+  let gameStore, teamData = [], winData, setTeam = _ => _, region = 'unknown'
   onMount(() => {
+    deferStyles('/assets/badges.css')
     import('$lib/components/particles').then(m => Particles = m.default)
-    import('$lib/components/EvolutionModal.svelte').then(m => EvoModal = m.default)
-    import('$lib/components/DeathModal/index.svelte').then(m => DeathModal = m.default)
 
-    const [,, gameId] = readdata()
+    const [,gameKey, gameId] = readdata()
+
+    region = RegionMap[gameKey] ?? 'unknown'
     gameStore = getGameStore(gameId)
     gameStore.subscribe(read(data => {
       teamData = readTeam(data)
+      winData = readTeams(data)
     }))
 
     setTeam = (data) => gameStore.update(patch({ __team: data }))
@@ -105,8 +111,28 @@
 
   const toid = p => `${p.id}@${p.location}`
 
+  let DeathModal
+  const openDeathModal = async (args) => {
+    if (DeathModal) open(DeathModal, args)
+    import('$lib/components/DeathModal/index.svelte')
+      .then(m => {
+        DeathModal = m.default
+        open(DeathModal, args)
+      })
+  }
+
+  let EvoModal
+  const openEvoModal = async (args) => {
+    if (EvoModal) open(EvoModal, args)
+    import('$lib/components/EvolutionModal.svelte')
+      .then(m => {
+        EvoModal = m.default
+        open(EvoModal, args)
+      })
+  }
+
   let evoComplete = false
-  const handleEvo = ({ evos, alias }, original) => open(EvoModal, { evolutions: evos, base: alias, select: handleEvoComplete(original) })
+  const handleEvo = ({ evos, alias }, original) => openEvoModal({ evolutions: evos, base: alias, select: handleEvoComplete(original) })
   const handleEvoComplete = o => async id => getPkmn(id)
         .then(p => {
           getPkmns(box.map(i => i.pokemon).concat(p.alias))
@@ -122,7 +148,7 @@
         })
 
   const handleKill = (o) => () => {
-    open(DeathModal, {
+    openDeathModal({
       submit: handleDeath(o),
       pokemon: Pokemon[o.pokemon],
       nickname: o.nickname
@@ -158,7 +184,9 @@
 {:else}
   <div out:fade|local={{ duration: 250 }} in:fade|local={{ duration: 250, delay: 300 }} class='container mx-auto'>
     <div class='flex flex-col mx-auto items-center justify-center'>
-      <main class='w-full xl:w-3/4 flex flex-col gap-y-4 pt-14 md:pt-20 pb-32 md:pb-48 px-4 md:px-8 overflow-hidden snap-y scroll-pt-14'>
+      <main
+        class='w-full xl:w-3/4 flex flex-col gap-y-4 pt-14 md:pt-20 pb-32 md:pb-48 px-4 md:px-8 overflow-hidden snap-y scroll-pt-14 {region}'
+        >
 
         <div class='flex flex-row items-center gap-x-2 relative md:mt-0 -my-2 snap-start'>
           <AnalysisModal box={Object.values(Pokemon)}>
@@ -255,6 +283,8 @@
             <span class='h-96 flex items-center justify-center col-span-4 dark:text-gray-600 text-xl'>You have no Pokémon in your box</span>
           {/if}
           {#each (stat === 'team' ? mons : box).filter(filter) as p (locid(p))}
+            {@const badgeSummary = summarise(p, winData)}
+
             <span
               use:drag={{ data: p, effect: 'add', hideImg: true }}
               class='snap-start'
@@ -276,6 +306,19 @@
                 nature={p.nature}
                 types={(Pokemon[p.pokemon].types || []).map(t => t.toLowerCase())}
                 >
+
+                <svelte:fragment slot=badges>
+                  {#if badgeSummary}
+                    {@const { summary, icons } = badgeSummary}
+                  <Tooltip>
+                    {summary}
+                  </Tooltip>
+                  {#each icons as icon}
+                    <PIcon name={icon} type=b />
+                  {/each}
+                {/if}
+                </svelte:fragment>
+
 
                 <span slot=img>
                   {#if evoComplete === toid(p)}
