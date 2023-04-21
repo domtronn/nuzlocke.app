@@ -76,7 +76,7 @@
 </script>
 
 <CompareCard
-  className="mt-8 relative w-full md:min-w-[50ch] rounded-b-lg {$$restProps.class ||
+  className="mt-14 md:mt-8 relative w-full md:min-w-[50ch] rounded-b-lg {$$restProps.class ||
     ''}"
   pokemon={compare}
 >
@@ -85,7 +85,7 @@
       class:-mb-8={tab !== 0}
       class="relative z-20 bg-white p-4 dark:bg-gray-900"
     >
-      <div class="ml-3 mb-4 w-full">
+      <div class="mb-4 w-full md:ml-3">
         <slot name="tabs" />
       </div>
 
