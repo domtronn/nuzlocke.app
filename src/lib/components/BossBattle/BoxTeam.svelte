@@ -103,7 +103,7 @@
             in:receive={{ key: locid(og) }}
             out:send={{ key: locid(og) }}
           >
-            <PIcon class="picon" name={og.pokemon} />
+            <PIcon class="picon -scale-x-100" name={og.pokemon} />
           </button>
         {/each}
       {/key}
@@ -176,15 +176,16 @@
   button.selected :global(.pkm) {
     animation: bob 3s ease infinite;
   }
+
   @keyframes bob {
-    0% {
-      transform: translateY(-8px);
+    0%,
+    100% {
+      transform: scale(-1, var(--tw-scale-y))
+        translate(var(--tw-translate-x), -8px);
     }
     50% {
-      transform: translateY(-4px);
-    }
-    100% {
-      transform: translateY(-8px);
+      transform: scale(-1, var(--tw-scale-y))
+        translate(var(--tw-translate-x), -4px);
     }
   }
 
