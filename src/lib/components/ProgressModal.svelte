@@ -7,7 +7,7 @@
   import { onMount, getContext } from 'svelte'
 
   import { X } from '$icons'
-  import { Tabs, Button, IconButton } from '$c/core'
+  import { Tabs, Button, IconButton, Loader } from '$c/core'
   import { TeamBuildCard, CompareCard, Actions } from '$c/BossBattle'
   import {
     getGameStore,
@@ -19,8 +19,9 @@
     readBox
   } from '$lib/store'
 
-  import { toList, regionise, capitalise } from '$lib/utils/string'
-  import { nonnull } from '$lib/utils/obj'
+  import { toList, regionise, capitalise } from '$utils/string'
+  import { locid } from '$utils/pokemon'
+  import { nonnull } from '$utils/obj'
 
   const { getPkmn } = getContext('game')
   const { close } = getContext('simple-modal')
@@ -29,8 +30,10 @@
     tabs = ['Team', 'Compare']
 
   // Util Functions
-  const locid = (a) => a.customId || a.location
-  const makeTeam = (mons, location) =>
+  const makeTeam = (locs, result) =>
+    locs.map(makeTeammate.bind({}, result)).filter((i) => i)
+
+  const makeTeammate = (mons, location) =>
     mons.find((m) => locid(m.original) === location)
 
   const settab = (i) => () => (tab = i)
@@ -144,8 +147,8 @@
 </script>
 
 {#if loading}
-  Loading
-{:else if !analysisResult.box.length}
+  <Loader />
+{:else if !makeTeam(teamLocs, analysisResult.box).length}
   <div
     class="rounded-xl bg-white px-6 py-8 text-center text-lg shadow-lg dark:bg-gray-900 dark:text-gray-50"
   >
@@ -165,7 +168,7 @@
     <Button solid rounded on:click={close}>Close</Button>
   </div>
 {:else}
-  {@const team = teamLocs.map(makeTeam.bind({}, analysisResult.mons))}
+  {@const team = makeTeam(teamLocs, analysisResult.mons)}
 
   <IconButton
     borderless

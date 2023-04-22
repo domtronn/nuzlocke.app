@@ -30,8 +30,8 @@
     >
       <img
         in:fade={{ duration: 200 }}
-        alt={p.name}
         style="--bob-delay: {(2 * i) / 10}s"
+        alt={p.name}
         src={sprite(p)}
       />
     </span>

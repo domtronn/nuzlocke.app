@@ -18,17 +18,17 @@ export const INSTASCAN = rewrite
   ? '/assets/js/instascan.min.js'
   : 'https://cdn.jsdelivr.net/gh/schmich/instascan-builds@master/instascan.min.js'
 
-export const UNOWN = rewrite
-  ? '/assets/unown.png?v=1'
-  : 'https://img.nuzlocke.app/assets/unown.png?v=1'
+export const UNOWN = 'https://img.nuzlocke.app/sprites/unown.png?v=1'
 
 export const createImgUrl = (p, { ext = 'webp', shiny = false } = {}) => {
   if (!p) return UNOWN
   if (p.imgUrl) return `${CUSTOM}${p.imgUrl}.${ext}`
 
-  const normalId = ('' + (p.imgId || p.sprite))
+  const normalId = ('' + (p.imgId || p.sprite || ''))
     .replace('.png', '')
     .replace('.webp', '')
+
+  if (!normalId) return UNOWN
 
   if (shiny) return `${SPRITE}/shiny/${normalId}.${ext}`
   return `${SPRITE}/base/${normalId}.${ext}`

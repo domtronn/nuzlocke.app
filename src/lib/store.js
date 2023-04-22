@@ -163,7 +163,7 @@ export const getGame = (id) =>
   )
 
 export const readTeam = (data) => {
-  return data.__team
+  return (data.__team || []).filter((i) => i)
 }
 
 export const readTeams = (data) => {

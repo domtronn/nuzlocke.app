@@ -21,13 +21,13 @@ export const moveResistance = (atkType, pkmnTypes) => {
  * @param {string[]} pkmnTypes - List of defending types
  */
 export const coverageResistance = (atkTypes, pkmnTypes) =>
-  Math.max(...atkTypes.map(atkType => moveResistance(atkType, pkmnTypes)))
+  Math.max(...atkTypes.map((atkType) => moveResistance(atkType, pkmnTypes)))
 
 export default (defTeam, atkTeam) => {
   // Loop through each defending pokemon and determine how well it
   // resists individual attacking mons and team
-  return defTeam.map(({ sprite: defName, types: defTypes }) => {
-    const coverageAll = atkTeam.map(({ name: atkName, types: atkTypes }) => {
+  return defTeam.map(({ alias: defName, types: defTypes }) => {
+    const coverageAll = atkTeam.map(({ alias: atkName, types: atkTypes }) => {
       const maxDmgMod = coverageResistance(atkTypes, defTypes)
 
       return { atkName, maxDmgMod }
@@ -35,7 +35,10 @@ export default (defTeam, atkTeam) => {
 
     return [
       defName,
-      coverageAll.reduce((acc, { atkName, maxDmgMod }) => ({ ...acc, [atkName]: maxDmgMod }), {}),
+      coverageAll.reduce(
+        (acc, { atkName, maxDmgMod }) => ({ ...acc, [atkName]: maxDmgMod }),
+        {}
+      )
     ]
   })
 }

@@ -2,7 +2,7 @@
   import { Tabs, Icon, Tooltip, Accordion } from '$lib/components/core'
   import { Plus, Minus } from '$icons'
 
-  import { fade } from 'svelte/transition'
+  import { locid } from '$utils/pokemon'
   import { createEventDispatcher } from 'svelte'
 
   import {
@@ -31,16 +31,15 @@
     box,
     advice
 
-  const locid = (a) => a.customId || a.location
   const dispatch = createEventDispatcher()
 
   const onadd = (_) => {
     dispatch('select', compare[0].original)
   }
 
-  $: teamList = team.map((t) => locid(t.original))
+  $: teamList = team.map((t) => locid(t?.original))
   $: boxList = box
-    .filter((i) => !teamList.includes(locid(i.original)))
+    .filter((i) => !teamList.includes(locid(i?.original)))
     .sort((a, b) => b.total - a.total)
 
   let compare

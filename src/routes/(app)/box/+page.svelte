@@ -15,6 +15,7 @@
   import { Modal as AnalysisModal } from '$lib/components/Analysis'
 
   import { drag } from '$utils/drag'
+  import { locid } from '$utils/pokemon'
 
   import {
     getGameStore,
@@ -186,7 +187,6 @@
   }
 
   /** Team management */
-  const locid = (p) => p?.customId || p?.location
   function handleTeamAdd(p) {
     gameStore.update(
       patch({

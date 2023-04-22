@@ -1,5 +1,5 @@
-import { capitalise, regionise, toList } from './string'
-const locid = (mon) => mon.location
+import { locid } from '$utils/pokemon'
+import { capitalise, regionise, toList } from '$utils/string'
 
 const Groups = {
   GymLeader: 'gym-leader',

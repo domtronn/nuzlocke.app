@@ -7,17 +7,17 @@
 
   import { Pip } from '$icons'
   import { chunk } from '$utils/arr'
+  import { locid } from '$utils/pokemon'
 
   const [send, receive] = crossfade({ duration: 200 })
   const dispatch = createEventDispatcher()
-  const locid = (a) => a.customId || a.location
 
   export let team = [],
     box = []
 
-  $: teamList = team.map((t) => locid(t.original))
+  $: teamList = team.map((t) => locid(t?.original))
   $: boxList = box
-    .filter((i) => !teamList.includes(locid(i.original)))
+    .filter((i) => !teamList.includes(locid(i?.original)))
     .sort((a, b) => b.total - a.total)
 
   let page = 0,
