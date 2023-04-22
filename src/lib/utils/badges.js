@@ -22,28 +22,27 @@ const Icons = {
 }
 
 const summaryText = (pokemon, GymFights = [], Other = {}) => {
+  const isChamp = Other?.[Groups.EliteFour] > 4
+  const beatGym = GymFights.length > 0
+  const beatRival = Other?.[Groups.Rival] > 0
+  const beatEvil = Other?.[Groups.EvilTeam] > 0
+
   return [
     `${pokemon.nickname ? pokemon.nickname + ' the ' : ''}${capitalise(
       regionise(pokemon.pokemon)
     )}`,
-    Other?.[Groups.EliteFour] > 4
-      ? `is a league Champion`
-      : `was a vital teamate`,
-    GymFights.length > 0
-      ? `, helping defeat ${toList(GymFights.map((g) => g.name))}`
+    isChamp ? `is a league Champion` : `was a vital teammate`,
+    beatGym
+      ? `, helping to defeat ${toList(GymFights.map((g) => g.name))}`
       : '',
-    Other?.[Groups.EliteFour] > 4
-      ? GymFights.length > 0
-        ? `and`
-        : 'helping defeat'
+    isChamp ? (beatGym ? `and` : 'helping to defeat') : '',
+    isChamp > 4 ? `the Pokémon league!` : `.`,
+    beatRival > 0
+      ? `${isChamp || beatGym ? 'They also' : 'They'} helped beat your rival ${
+          Other[Groups.Rival]
+        } time${Other[Groups.Rival] > 1 ? 's' : ''}.`
       : '',
-    Other?.[Groups.EliteFour] > 4 ? `the Pokémon league!` : `.`,
-    Other?.[Groups.Rival] > 0
-      ? `They helped beat your rival ${Other[Groups.Rival]} time${
-          Other[Groups.Rival] > 1 ? 's' : ''
-        }.`
-      : '',
-    Other?.[Groups.EvilTeam] > 0
+    beatEvil > 0
       ? `They stopped evil doers ${Other[Groups.EvilTeam]} time${
           Other[Groups.EvilTeam] > 1 ? 's' : ''
         }.`
