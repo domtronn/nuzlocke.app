@@ -22,10 +22,14 @@
     "eslint-plugin-svelte3": "^3.2.1",
     "postcss": "^8.4.14",
     "postcss-load-config": "^4.0.1",
+    "prettier-html": "^0.0.2",
+    "prettier-plugin-organize-imports": "^3.2.2",
+    "prettier-plugin-tailwindcss": "^0.2.7",
     "rollup-plugin-visualizer": "^5.5.4",
-    "svelte": "^3.38.3",
+    "svelte": "^3.58.0",
     "svelte-preprocess": "^4.10.7",
     "tailwindcss": "^3.2.4",
+    "typescript": "^5.0.4",
     "vite": "^3.2.4"
   },
   "dependencies": {
@@ -46,8 +50,8 @@
     "dayjs": "^1.10.7",
     "pokedex-promise-v2": "^3.3.2",
     "pokemon-assets": "^0.6.0",
-    "prettier": "^2.3.2",
-    "prettier-plugin-svelte": "^2.3.1",
+    "prettier": "^2.8.7",
+    "prettier-plugin-svelte": "^2.10.0",
     "ramda": "^0.27.1",
     "simple-svelte-autocomplete": "^2.2.3",
     "simplex-noise": "^3.0.0",
@@ -62,8 +66,13 @@
   "prettier": {
     "arrowParens": "always",
     "singleQuote": true,
-    "tabWidth": 2,
-    "trailingComma": "none"
+    "trailingComma": "none",
+    "semi": false,
+    "plugins": [
+      "prettier-plugin-svelte",
+      "prettier-plugin-organize-imports",
+      "prettier-plugin-tailwindcss"
+    ]
   },
   "resolutions": {
     "dotenv": ">= 15.0.0"

@@ -1,18 +1,23 @@
 <script>
-  import { onMount } from 'svelte'
+  import { browser, dev } from '$app/environment'
   import { page } from '$app/stores'
-  import { dev } from '$app/environment'
-
+  import { onMount, getContext } from 'svelte'
+  
   import { createUser, readdata } from '$lib/store'
-  let path = $page.url.pathname;
+ 
+ 
+  import { setContext } from 'svelte'
 
-  import { setContext } from 'svelte';
+  import { RegionMap } from '$lib/data/games'
+  import { fetchData, fetchLeague } from '$utils/fetchers'
+  import { GameHeading, NavHeading } from '$c/navs'
+  import Modal from 'svelte-simple-modal'
 
-  import { fetchData, fetchLeague } from '$utils/fetchers';
-  import { GameHeading, NavHeading } from '$c/navs';
-
-  import Modal from 'svelte-simple-modal';
-
+  let path = $page.url.pathname
+ 
+  const [, gameKey] = browser ? readdata() : []
+  setContext('region', RegionMap[gameKey] ?? 'unknown')
+   
   onMount(() => {
     const [,,,game] = readdata()
     import("@sentry/svelte").then(Sentry => {
@@ -31,7 +36,6 @@
       })
       Sentry.setContext('game', game)
     });
-
   })
 
   setContext('game', {
@@ -40,7 +44,11 @@
     getPkmn: (id) =>
       fetchData().then((ps = []) =>
         ps.find(
-          (p) => p.num == id || p.name.toLowerCase() == id || p.alias == id || p.sprite == id
+          (p) =>
+            p.num == id ||
+            p.name.toLowerCase() == id ||
+            p.alias == id ||
+            p.sprite == id
         )
       ),
     getPkmns: (ids = []) =>
@@ -54,9 +62,9 @@
           )
           .reduce((acc, it) => ({ ...acc, [it.alias]: it }), {})
       )
-  });
+  })
 
-  const onresize = () => document.body.height = window.innerHeight
+  const onresize = () => (document.body.height = window.innerHeight)
 
   $: createUser()
 </script>
@@ -66,10 +74,10 @@
 <Modal
   closeButton={false}
   styleBg={{ background: 'rgba(0, 0, 0, 0.8)', zIndex: 9999 }}
-  classBg='modal-positioning overflow-y-scroll'
-  classWindowWrap='!m-4'
-  classWindow='!bg-transparent'
-  classContent='!p-0 !overflow-visible'
+  classBg="modal-positioning overflow-y-scroll"
+  classWindowWrap="!m-4"
+  classWindow="!bg-transparent"
+  classContent="!p-0 !overflow-visible"
 >
   {#if ['/game', '/box', '/graveyard'].includes(path)}
     <GameHeading />

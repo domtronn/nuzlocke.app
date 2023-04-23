@@ -3,7 +3,7 @@ import Clean from 'clean-css';
 import pokemon from './_pokemon.css';
 import badges from './_badges.css';
 
-const clean = new Clean();
+const clean = new Clean({ level: 2 });
 const resourceMap = { pokemon, badges };
 
 export async function GET({ params }) {

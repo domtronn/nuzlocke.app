@@ -39,7 +39,7 @@ const weakness = (type) => {
     .reduce((acc, [t, dmgMod]) => ({ ...acc, [t]: dmgMod }), {})
 }
 
-const weaknesses = (t1, t2) => {
+export const weaknesses = (t1, t2) => {
   if (!t2) return weakness(t1)
 
   const w1 = weakness(t1)

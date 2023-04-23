@@ -115,13 +115,6 @@
           </a>
         {/each}
 
-        <!-- <span> -->
-        <!--   <button class='tracking-widest hover:drop-shadow-text hover:text-orange-400' on:mouseenter={toggleHover} on:mouseleave={toggleHover}> -->
-        <!--     Settings -->
-        <!--   </button> -->
-        <!--   <\!-- TODO: Rules -\-> -->
-        <!-- </span> -->
-
       </div>
 
       <div class='img__container h-full -mx-12 relative'>

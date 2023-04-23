@@ -17,9 +17,17 @@
   import debounce from '$lib/utils/debounce'
 
   import { Expanded as Games } from '$lib/data/games.js'
-  import { getGameStore, read, readdata, readBox,
-           savedGames, activeGame, updateGame, parse, patch
-         } from '$lib/store'
+  import {
+    getGameStore,
+    read,
+    readdata,
+    readBox,
+    savedGames,
+    activeGame,
+    updateGame,
+    parse,
+    patch
+  } from '$lib/store'
 
   let gameStore, gameKey, gameData
   let routeEl
@@ -33,7 +41,7 @@
     { label: 'Nuzlocke', val: 'nuzlocke' },
     { label: 'Routes', val: 'route' },
     { label: 'Bosses', val: 'bosses' },
-    { label: 'Upcoming', val: 'upcoming' },
+    { label: 'Upcoming', val: 'upcoming' }
   ]
 
   let routeFilter = 'all'
@@ -41,7 +49,7 @@
     { label: 'All', val: 'all' },
     { label: 'Upcoming', val: 'upcoming' },
     { label: 'Planned', val: 'planned' },
-    { label: 'Missed', val: 'missed' },
+    { label: 'Missed', val: 'missed' }
   ]
 
   let bossFilter = 'all'
@@ -62,46 +70,56 @@
   }
 
   onMount(() => {
-    parse(saves => {
+    parse((saves) => {
       if (!browser) return
       let game = saves[$activeGame]
-      savedGames.update(updateGame({
-        ...game,
-        updated: +new Date()
-      }))
+      savedGames.update(
+        updateGame({
+          ...game,
+          updated: +new Date()
+        })
+      )
     })($savedGames)
   })
 
   let boxData = {}
-  const setup = () => new Promise((resolve) => {
-    const [, key, id] = readdata()
-    if (browser && !id) return window.location = '/'
+  const setup = () =>
+    new Promise((resolve) => {
+      const [, key, id] = readdata()
+      if (browser && !id) return (window.location = '/')
 
-    gameStore = getGameStore(id)
-    gameKey = key
+      gameStore = getGameStore(id)
+      gameKey = key
 
-    deferStyles(`/assets/items/${key}.css`)
-    fetchRoute(Games[key].pid).then(r => resolve(r))
+      deferStyles(`/assets/items/${key}.css`)
+      fetchRoute(Games[key].pid).then((r) => resolve(r))
 
-    gameStore.subscribe(read(game => {
-      gameData = game
-    }))
-  })
+      gameStore.subscribe(
+        read((game) => {
+          gameData = game
+        })
+      )
+    })
 
-  const _onsearch = (e) => search = e.detail.search
+  const _onsearch = (e) => (search = e.detail.search)
   const onsearch = debounce(_onsearch, 350)
 
   const latestnav = (routes, game) => {
-    const custom = (game?.__custom || []).reduce((acc, c) => ({ ...acc, [c.id]: true }), {})
+    const custom = (game?.__custom || []).reduce(
+      (acc, c) => ({ ...acc, [c.id]: true }),
+      {}
+    )
     const locations = new Set(
-      Object
-        .entries(game)
+      Object.entries(game)
         .filter(([id, loc]) => loc.pokemon && !!loc.status && !custom[id])
         .map(([, i]) => i.location)
     )
 
     let i = 0
-    while (i < routes.length && (locations.size || routes[i].type !== 'route')) {
+    while (
+      i < routes.length &&
+      (locations.size || routes[i].type !== 'route')
+    ) {
       locations.delete(routes[i]?.name)
       i++
     }
@@ -110,7 +128,7 @@
     return { ...r, id: i }
   }
 
-  const oncontinue = (route, gameData) => _ => {
+  const oncontinue = (route, gameData) => (_) => {
     show = !show
     routeEl.setroute(latestnav(route, gameData))()
   }
@@ -123,66 +141,90 @@
 {#await setup()}
   <Loader />
 {:then route}
-  <div id='game_el' out:fade|local={{ duration: 250 }} in:fade|local={{ duration: 250, delay: 300 }} class="container mx-auto pb-24 overflow-hidden">
+  <div
+    id="game_el"
+    out:fade|local={{ duration: 250 }}
+    in:fade|local={{ duration: 250, delay: 300 }}
+    class="container mx-auto overflow-hidden pb-24"
+  >
+    <div
+      class="flex snap-start flex-row flex-wrap justify-center bg-white pb-16 dark:bg-gray-800"
+    >
+      <main
+        id="main"
+        class="p-container relative flex flex-col gap-y-4 md:py-6"
+      >
+        <div
+          class="flex snap-y snap-start snap-always flex-col items-start justify-between gap-y-4 pt-14 md:mb-6 md:flex-row md:pt-14 lg:gap-y-0"
+        >
+          <div class="flex w-full flex-col gap-y-2">
+            {#if filter === 'nuzlocke'}
+              <button
+                transition:slide={{ duration: 250 }}
+                class="inline-flex items-center text-sm"
+                on:click={routeEl.setroute(latestnav(route, gameData))}
+              >
+                Continue at {latestnav(route, gameData).name}
+                <Icon inline={true} class="ml-1 fill-current" icon={Arrow} />
+              </button>
+            {/if}
 
-    <div class="flex flex-row flex-wrap pb-16 justify-center snap-start bg-white dark:bg-gray-800">
-      <main id='main' class="p-container md:py-6 flex flex-col gap-y-4 relative ">
+            <Tabs name="filter" tabs={filters} bind:selected={filter} />
 
-          <div class='flex flex-col gap-y-4 lg:gap-y-0 md:flex-row justify-between items-start md:mb-6 pt-14 md:pt-14 snap-y snap-start snap-always'>
-            <div class='flex flex-col gap-y-2'>
-              {#if filter === 'nuzlocke'}
-                <button
-                  transition:slide={{ duration: 250 }}
-                  class='text-sm inline-flex items-center'
-                  on:click={routeEl.setroute(latestnav(route, gameData))}
-                >
-                  Continue at {latestnav(route, gameData).name}
-                  <Icon inline={true} class='ml-1 fill-current' icon={Arrow} />
-                </button>
-              {/if}
+            {#if filter === 'bosses'}
+              <span transition:slide={{ duration: 250 }}>
+                <Tabs
+                  name="bosses"
+                  tabs={bossFilters}
+                  bind:selected={bossFilter}
+                />
+              </span>
+            {/if}
 
-              <Tabs name=filter tabs={filters} bind:selected={filter} />
+            {#if filter === 'route'}
+              <span transition:slide={{ duration: 250 }}>
+                <Tabs
+                  name="route"
+                  tabs={routeFilters}
+                  bind:selected={routeFilter}
+                />
+              </span>
+            {/if}
 
-              {#if filter === 'bosses'}
-                <span transition:slide={{ duration: 250 }}>
-                  <Tabs name=bosses tabs={bossFilters} bind:selected={bossFilter} />
-                </span>
-              {/if}
-
-              {#if filter === 'route'}
-                <span transition:slide={{ duration: 250 }}>
-                  <Tabs name=route tabs={routeFilters} bind:selected={routeFilter} />
-                </span>
-              {/if}
-
-              {#if filter === 'upcoming'}
-                <span transition:slide={{ duration: 250 }} class='leading-5 inline-block tracking-tight dark:text-gray-400 text-sm -mb-4'>
-                  <Icon inline={true} height=1.2em icon={Hide} class='inline-block -mt-1 mr-1 fill-current'/><b>{latestnav(route, gameData).id}</b> items hidden
-                </span>
-              {/if}
-
-            </div>
-
-            <div class=inline-flex>
-              <Settings />
-
-              <div class='fixed md:relative bottom-6 md:bottom-0 max-md:z-[8888]'>
-                <Search on:search={onsearch} />
-              </div>
-            </div>
+            {#if filter === 'upcoming'}
+              <span
+                transition:slide={{ duration: 250 }}
+                class="-mb-4 inline-block text-sm leading-5 tracking-tight dark:text-gray-400"
+              >
+                <Icon
+                  inline={true}
+                  height="1.2em"
+                  icon={Hide}
+                  class="-mt-1 mr-1 inline-block fill-current"
+                /><b>{latestnav(route, gameData).id}</b> items hidden
+              </span>
+            {/if}
           </div>
 
-          <GameRoute
-            {route}
-            {search}
-            filters={{ main: filter, boss: bossFilter, route: routeFilter }}
-            bind:this={routeEl}
-            className='-mt-8 sm:mt-0'
-            game={{ data: gameData, store: gameStore, key: gameKey }}
-            progress={latestnav(route, gameData).id}
-          />
+          <div class="inline-flex">
+            <Settings />
 
-        </main>
+            <div class="fixed bottom-6 max-md:z-[8888] md:relative md:bottom-0">
+              <Search on:search={onsearch} />
+            </div>
+          </div>
+        </div>
+
+        <GameRoute
+          {route}
+          {search}
+          filters={{ main: filter, boss: bossFilter, route: routeFilter }}
+          bind:this={routeEl}
+          className="-mt-8 sm:mt-0"
+          game={{ data: gameData, store: gameStore, key: gameKey }}
+          progress={latestnav(route, gameData).id}
+        />
+      </main>
     </div>
   </div>
 {/await}
@@ -205,6 +247,6 @@
 
   .container {
     min-height: 100%;
-    @apply snap-always snap-y;
+    @apply snap-y snap-always;
   }
 </style>
