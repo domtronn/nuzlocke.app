@@ -66,7 +66,7 @@
 
     setTeam(
       toarray(teamData).map((id, i) =>
-        id === +evt.detail.targetId ? locid(evt) : id
+        i === +evt.detail.targetId ? locid(evt) : id
       )
     )
   }
