@@ -148,7 +148,7 @@
 
 {#if loading}
   <Loader />
-{:else if !makeTeam(teamLocs, analysisResult.box).length}
+{:else if !analysisResult.box.length}
   <div
     class="rounded-xl bg-white px-6 py-8 text-center text-lg shadow-lg dark:bg-gray-900 dark:text-gray-50"
   >

@@ -334,3 +334,44 @@ svg.waves g.fill {
     justify-content: center !important;
   }
 }
+
+.error-modal {
+@apply bg-gray-100 text-gray-900 p-8 rounded-lg fixed top-1/2 left-1/2 pointer-events-auto;
+width: 340px;
+transform: translate(-50%, -50%);
+}
+
+.dark .error-modal {
+@apply bg-gray-800 text-gray-50;
+}
+
+.error-modal h2 {
+@apply font-bold text-3xl leading-8 pb-3;
+}
+
+.error-modal img {
+@apply -mt-20 scale-200 pb-3 mx-auto;
+}
+
+.error-modal button {
+@apply transition w-full mt-5 py-2 border-2 font-bold border-gray-900 rounded-lg;
+}
+
+.dark .error-modal button {
+  @apply border-gray-50 bg-gray-900;
+}
+
+.error-modal button:hover {
+  @apply ring-2 ring-blue-400 border-blue-400 text-blue-600 bg-blue-100;
+}
+
+.dark .error-modal button:hover {
+  @apply ring-2 ring-blue-600 border-blue-600 text-blue-500 bg-gray-900;
+}
+
+.error-modal-container {
+@apply fixed inset-0 pointer-events-none;
+z-index: 99999999;
+background: rgba(0,0,0,0.5);
+backdrop-filter: blur(3px);
+}
