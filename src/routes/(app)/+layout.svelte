@@ -2,10 +2,9 @@
   import { browser, dev } from '$app/environment'
   import { page } from '$app/stores'
   import { onMount, getContext } from 'svelte'
-  
+
   import { createUser, readdata } from '$lib/store'
- 
- 
+
   import { setContext } from 'svelte'
 
   import { RegionMap } from '$lib/data/games'
@@ -14,28 +13,29 @@
   import Modal from 'svelte-simple-modal'
 
   let path = $page.url.pathname
- 
+
   const [, gameKey] = browser ? readdata() : []
   setContext('region', RegionMap[gameKey] ?? 'unknown')
-   
+
   onMount(() => {
-    const [,,,game] = readdata()
-    import("@sentry/svelte").then(Sentry => {
-      Sentry.init({
-        dsn: "https://c785c122f32c47d68a777aea5af577b1@o1091749.ingest.sentry.io/6109144",
-        integrations: [
-          new Sentry.BrowserTracing(),
-          new Sentry.Replay({
-            maskAllText: false,
-            blockAllMedia: true,
-          }),
-        ],
-        tracesSampleRate: 0.1,
-        replaysSessionSampleRate: 0,
-        replaysOnErrorSampleRate: 1.0,
+    const [, , , game] = readdata()
+    if (!dev)
+      import('@sentry/svelte').then((Sentry) => {
+        Sentry.init({
+          dsn: 'https://c785c122f32c47d68a777aea5af577b1@o1091749.ingest.sentry.io/6109144',
+          integrations: [
+            new Sentry.BrowserTracing(),
+            new Sentry.Replay({
+              maskAllText: false,
+              blockAllMedia: true
+            })
+          ],
+          tracesSampleRate: 0.1,
+          replaysSessionSampleRate: 0,
+          replaysOnErrorSampleRate: 1.0
+        })
+        Sentry.setContext('game', game)
       })
-      Sentry.setContext('game', game)
-    });
   })
 
   setContext('game', {
