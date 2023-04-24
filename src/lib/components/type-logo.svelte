@@ -1,5 +1,6 @@
 <script>
-  export let type
+  export let type,
+    tooltip = true
 
   import { PIcon, Tooltip } from '$c/core'
   import { Wrapper as SettingWrapper } from '$lib/components/Settings'
@@ -13,13 +14,15 @@
     style="background-color: {color(type, themeId)}"
     class="{$$restProps.class || ''} relative h-[32px] w-[32px] rounded-full"
   >
-    <Tooltip>
-      {#if $$slots.default}
-        <slot />
-      {:else}
-        {capitalise(type)}
-      {/if}
-    </Tooltip>
+    {#if tooltip}
+      <Tooltip>
+        {#if $$slots.default}
+          <slot />
+        {:else}
+          {capitalise(type)}
+        {/if}
+      </Tooltip>
+    {/if}
     <PIcon class="ticon" type="symbol" name="type-{type}-32px" />
   </div>
 </SettingWrapper>

@@ -11,9 +11,10 @@
   import { Loader, PIcon, IconButton, Tooltip, Toggle, Icon } from '$c/core'
   import { Ball, Plus, Minus, Shiny, X, Deceased, External } from '$icons'
 
-  import TypeBadge from '$lib/components/type-badge.svelte'
+  import TypeLogo from '$lib/components/type-logo.svelte'
   import { Modal as AnalysisModal } from '$lib/components/Analysis'
 
+  import { capitalise } from '$utils/string'
   import { drag } from '$utils/drag'
   import { locid } from '$utils/pokemon'
 
@@ -88,9 +89,21 @@
 
   const clear = () => (stat = type = '')
   const sum = (l) => l.reduce((acc, it) => acc + it, 0)
-  $: filter = (p) =>
-    !type ||
-    (Pokemon[p.pokemon]?.types || []).map((i) => i.toLowerCase()).includes(type)
+  $: filter = (p) => {
+    const [fType, fVal] = type.split(':')
+
+    if (fType == 'type')
+      return (Pokemon[p.pokemon]?.types || [])
+        .map((i) => i.toLowerCase())
+        .includes(fVal)
+
+    if (fType == 'badge')
+      return winData
+        .find((w) => w.id === fVal)
+        ?.team?.find((d) => d.id === locid(p))
+
+    return true
+  }
 
   $: typeCounts = types.reduce(
     (acc, it) => ({
@@ -121,6 +134,15 @@
       return (
         sum(Object.values(Pokemon[b.pokemon]?.baseStats)) -
         sum(Object.values(Pokemon[a.pokemon]?.baseStats))
+      )
+    }
+
+    if (type.startsWith('badge')) {
+      const [, fVal] = type.split(':')
+      const winTeam = winData.find((w) => w.id === fVal)?.team || []
+      return (
+        winTeam.findIndex((p) => p.id === locid(b)) -
+        winTeam.findIndex((p) => p.id === locid(a))
       )
     }
 
@@ -248,6 +270,17 @@
           <div
             class="col-span-2 grid w-full grid-cols-5 grid-rows-2 gap-2 sm:w-auto sm:gap-2"
           >
+            <IconButton
+              rounded
+              title="Clear filters"
+              disabled={!enabled}
+              on:click={clear}
+            >
+              <Icon class="pl-1" height="1.2em" inline icon={X} />
+              <span class="pl-0.5 pr-2 text-sm">Clear</span>
+              <Tooltip>Clear all filters</Tooltip>
+            </IconButton>
+
             {#each stats as s}
               <label
                 class="row-span-1 inline-flex h-7 w-full cursor-pointer items-center justify-center rounded-lg border border-gray-400 px-2 text-center text-xs font-medium text-gray-500 shadow-sm shadow-sm transition dark:text-gray-400"
@@ -275,44 +308,59 @@
                 {:else}
                   <span />
                 {/if}
-                {s}
+                {capitalise(s)}
               </label>
             {/each}
-
-            <IconButton
-              rounded
-              src={X}
-              title="Clear filters"
-              className="!m-0"
-              containerClassName="flex flex-col order-last sm:order-none items-center justify-center relative h-7 my-0"
-              disabled={!enabled}
-              on:click={clear}
-            >
-              <Tooltip>Clear all filters</Tooltip>
-            </IconButton>
           </div>
 
           <div
-            class="col-span-3 grid grid-cols-6 gap-x-2 gap-y-2 sm:w-auto md:grid-cols-6"
+            class="col-span-3 my-1.5 grid grid-cols-6 gap-x-2 gap-y-2 sm:w-auto md:my-0 md:grid-cols-6"
           >
             {#each types as t}
               {#if typeCounts[t] > 0}
                 <label
-                  class="h-6 cursor-pointer transition"
-                  class:grayscale={(type && type !== t) || !typeCounts[t]}
-                  class:opacity-50={(type && type !== t) || !typeCounts[t]}
-                  class:grayscale-0={type && type === t}
+                  class="h-6 scale-75 cursor-pointer transition"
+                  class:grayscale={(type && !type.endsWith(t)) ||
+                    !typeCounts[t]}
+                  class:opacity-50={(type && !type.endsWith(t)) ||
+                    !typeCounts[t]}
+                  class:grayscale-0={type && type.endsWith(t)}
                 >
                   <input
                     disabled={!typeCounts[t]}
-                    type="radio"
                     bind:group={type}
+                    value="type:{t}"
+                    type="radio"
                     name="filter"
-                    value={t}
                   />
-                  <TypeBadge type={t} className="w-full justify-center" />
+                  <TypeLogo
+                    tooltip={false}
+                    type={t}
+                    className="w-full justify-center"
+                  />
                 </label>
               {/if}
+            {/each}
+          </div>
+
+          <div
+            class="my-2 grid origin-left scale-125 grid-cols-4 gap-x-1 border-gray-200 pl-2 dark:border-gray-500 max-md:border-l md:my-0 xl:scale-150 xl:grid-cols-8"
+          >
+            {#each winData.filter((d) => d.group === 'gym-leader') as d}
+              <label
+                class="cursor-pointer px-1 text-center transition"
+                class:grayscale={type && !type.endsWith(d.id)}
+                class:grayscale-0={type && type.endsWith(d.id)}
+                class:opacity-50={type && !type.endsWith(d.id)}
+              >
+                <PIcon type="b" name={d.type || d.speciality || d.id} />
+                <input
+                  bind:group={type}
+                  type="radio"
+                  value="badge:{d.id}"
+                  name="badge"
+                />
+              </label>
             {/each}
           </div>
         </div>
@@ -331,7 +379,10 @@
           class:gap-x-3={minimal}
           class:gap-x-4={!minimal}
           class:gap-y-8={!minimal}
-          class:xl:grid-cols-3={stat === 'team'}
+          class:xl:grid-cols-3={!minimal &&
+            (stat === 'team' || type.startsWith('badge:'))}
+          class:xl:grid-cols-6={minimal &&
+            (stat === 'team' || type.startsWith('badge:'))}
           class="mt-6 grid"
         >
           {#if box.length === 0}
