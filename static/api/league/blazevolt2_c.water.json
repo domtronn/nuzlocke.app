@@ -2280,7 +2280,8 @@
           "spe": 92
         }
       }
-    ]
+    ],
+    "doubleBattle": true
   },
   "col1": {
     "name": "Colress",
@@ -2785,7 +2786,8 @@
           "spe": 93
         }
       }
-    ]
+    ],
+    "doubleBattle": true
   },
   "emin": {
     "name": "Emmet & Ingo",
@@ -5094,6 +5096,685 @@
           "spe": 88
         }
       }
+    ],
+    "effect": "sandstorm"
+  },
+  "o6_c": {
+    "name": "Juan",
+    "speciality": "water",
+    "img": "/leaders/blazevolt-juan",
+    "pokemon": [
+      {
+        "name": "swampert",
+        "level": "53",
+        "moves": [
+          {
+            "power": 100,
+            "type": "fighting",
+            "damage_class": "physical",
+            "name": "Hammer Arm",
+            "effect": "Lowers user's Speed by one stage."
+          },
+          {
+            "power": 75,
+            "type": "rock",
+            "damage_class": "physical",
+            "name": "Rock Slide",
+            "effect": "Has a 30% chance to make the target flinch."
+          },
+          {
+            "power": 80,
+            "type": "water",
+            "damage_class": "physical",
+            "name": "Waterfall",
+            "effect": "Has a 20% chance to make the target flinch."
+          },
+          {
+            "power": 95,
+            "type": "ground",
+            "damage_class": "physical",
+            "name": "High Horsepower"
+          }
+        ],
+        "ability": {
+          "name": "Torrent",
+          "effect": "Strengthens water moves to inflict 1.5× damage at 1/3 max HP or less."
+        },
+        "held": {
+          "sprite": "rindo-berry",
+          "name": "Rindo Berry",
+          "effect": "Held: Consumed when struck by a super-effective Grass-type attack to halve the damage."
+        },
+        "sprite": "260",
+        "types": [
+          "water",
+          "ground"
+        ],
+        "stats": {
+          "hp": 100,
+          "atk": 110,
+          "def": 90,
+          "spa": 85,
+          "spd": 90,
+          "spe": 60
+        }
+      },
+      {
+        "name": "slowking",
+        "level": "53",
+        "moves": [
+          {
+            "power": "95",
+            "type": "ice",
+            "damage_class": "special",
+            "name": "Ice Beam",
+            "effect": "Has a 10% chance to freeze the target."
+          },
+          {
+            "power": "95",
+            "type": "water",
+            "damage_class": "special",
+            "name": "Muddy Water",
+            "effect": "Has a 30% chance to lower the target's accuracy by one stage."
+          },
+          {
+            "power": 90,
+            "type": "psychic",
+            "damage_class": "special",
+            "name": "Psychic",
+            "effect": "Has a 10% chance to lower the target's Special Defense by one stage."
+          },
+          {
+            "priority": -7,
+            "type": "psychic",
+            "damage_class": "status",
+            "name": "Trick Room",
+            "effect": "For five turns, slower Pokémon will act before faster Pokémon."
+          }
+        ],
+        "ability": {
+          "name": "Regenerator",
+          "effect": "Heals for 1/3 max HP upon switching out."
+        },
+        "held": {
+          "sprite": "lum-berry",
+          "name": "Lum Berry",
+          "effect": "Held: Consumed to cure any status condition or confusion."
+        },
+        "sprite": "199",
+        "types": [
+          "water",
+          "psychic"
+        ],
+        "stats": {
+          "hp": 95,
+          "atk": 75,
+          "def": 80,
+          "spa": 100,
+          "spd": 110,
+          "spe": 30
+        }
+      },
+      {
+        "name": "pelipper",
+        "level": "53",
+        "moves": [
+          {
+            "power": "120",
+            "type": "flying",
+            "damage_class": "special",
+            "name": "Hurricane",
+            "effect": "Has a 30% chance to confuse the target."
+          },
+          {
+            "power": "120",
+            "type": "water",
+            "damage_class": "special",
+            "name": "Hydro Pump"
+          },
+          {
+            "power": "95",
+            "type": "ice",
+            "damage_class": "special",
+            "name": "Ice Beam",
+            "effect": "Has a 10% chance to freeze the target."
+          },
+          {
+            "power": 70,
+            "type": "bug",
+            "damage_class": "physical",
+            "name": "U-turn",
+            "effect": "User must switch out after attacking."
+          }
+        ],
+        "ability": {
+          "name": "Drizzle",
+          "effect": "Summons rain that lasts indefinitely upon entering battle."
+        },
+        "held": {
+          "sprite": "flying-gem",
+          "name": "Flying Gem",
+          "effect": "Held: When the holder uses a damaging flying-type move, the move has 1.5× power and this item is consumed."
+        },
+        "sprite": "279",
+        "types": [
+          "water",
+          "flying"
+        ],
+        "stats": {
+          "hp": 60,
+          "atk": 50,
+          "def": 110,
+          "spa": 95,
+          "spd": 80,
+          "spe": 65
+        }
+      },
+      {
+        "name": "starmie",
+        "level": "53",
+        "moves": [
+          {
+            "power": "120",
+            "type": "water",
+            "damage_class": "special",
+            "name": "Hydro Pump"
+          },
+          {
+            "power": "95",
+            "type": "ice",
+            "damage_class": "special",
+            "name": "Ice Beam",
+            "effect": "Has a 10% chance to freeze the target."
+          },
+          {
+            "power": "120",
+            "type": "electric",
+            "damage_class": "special",
+            "name": "Thunder",
+            "effect": "Has a 30% chance to paralyze the target."
+          },
+          {
+            "priority": -7,
+            "type": "psychic",
+            "damage_class": "status",
+            "name": "Trick Room",
+            "effect": "For five turns, slower Pokémon will act before faster Pokémon."
+          }
+        ],
+        "ability": {
+          "name": "Analytic",
+          "effect": "Strengthens moves to 1.3× their power when moving last."
+        },
+        "held": {
+          "sprite": "wacan-berry",
+          "name": "Wacan Berry",
+          "effect": "Held: Consumed when struck by a super-effective Electric-type attack to halve the damage."
+        },
+        "sprite": "121",
+        "types": [
+          "water",
+          "psychic"
+        ],
+        "stats": {
+          "hp": 60,
+          "atk": 75,
+          "def": 85,
+          "spa": 100,
+          "spd": 85,
+          "spe": 115
+        }
+      },
+      {
+        "name": "crawdaunt",
+        "level": "54",
+        "moves": [
+          {
+            "power": 40,
+            "priority": 1,
+            "type": "water",
+            "damage_class": "physical",
+            "name": "Aqua Jet"
+          },
+          {
+            "power": 80,
+            "type": "dark",
+            "damage_class": "physical",
+            "name": "Crunch",
+            "effect": "Has a 20% chance to lower the target's Defense by one stage."
+          },
+          {
+            "power": 100,
+            "type": "water",
+            "damage_class": "physical",
+            "name": "Crabhammer",
+            "effect": "This move has a chance of lowering the target's Defense by 1 stage"
+          },
+          {
+            "power": 120,
+            "type": "fighting",
+            "damage_class": "physical",
+            "name": "Close Combat",
+            "effect": "Lowers the user's Defense and Special Defense by one stage after inflicting damage."
+          }
+        ],
+        "ability": {
+          "name": "Adaptability",
+          "effect": "Increases the same-type attack bonus from 1.5× to 2×."
+        },
+        "held": {
+          "sprite": "life-orb",
+          "name": "Life Orb",
+          "effect": "Held: Holder's moves inflict 30% extra damage, but cost 10% max HP."
+        },
+        "sprite": "342",
+        "types": [
+          "water",
+          "dark"
+        ],
+        "stats": {
+          "hp": 63,
+          "atk": 120,
+          "def": 85,
+          "spa": 90,
+          "spd": 55,
+          "spe": 55
+        }
+      },
+      {
+        "name": "azumarill",
+        "level": "53",
+        "moves": [
+          {
+            "power": 40,
+            "priority": 1,
+            "type": "water",
+            "damage_class": "physical",
+            "name": "Aqua Jet"
+          },
+          {
+            "power": 75,
+            "type": "ice",
+            "damage_class": "physical",
+            "name": "Ice Punch",
+            "effect": "Has a 10% chance to freeze the target."
+          },
+          {
+            "type": "normal",
+            "damage_class": "status",
+            "name": "Belly Drum",
+            "effect": "User pays half its max HP to max out its Attack."
+          },
+          {
+            "power": 90,
+            "type": "fairy",
+            "damage_class": "physical",
+            "name": "Play Rough",
+            "effect": "Has a 10% chance to lower the target's Attack by one stage."
+          }
+        ],
+        "ability": {
+          "name": "Huge Power",
+          "effect": "Doubles Attack in battle."
+        },
+        "held": {
+          "sprite": "sitrus-berry",
+          "name": "Sitrus Berry",
+          "effect": "Held: Consumed at 1/2 max HP to recover 1/4 max HP."
+        },
+        "sprite": "184",
+        "types": [
+          "water",
+          "fairy"
+        ],
+        "stats": {
+          "hp": 100,
+          "atk": 50,
+          "def": 80,
+          "spa": 80,
+          "spd": 80,
+          "spe": 50
+        }
+      }
+    ],
+    "effect": "rain",
+    "doubleBattle": true
+  },
+  "8_c": {
+    "name": "Skyla",
+    "speciality": "flying",
+    "img": "/leaders/blwh-skyla",
+    "pokemon": [
+      {
+        "name": "jumpluff",
+        "level": "54",
+        "moves": [
+          {
+            "power": "120",
+            "type": "flying",
+            "damage_class": "special",
+            "name": "Hurricane",
+            "effect": "Has a 30% chance to confuse the target."
+          },
+          {
+            "type": "grass",
+            "damage_class": "status",
+            "name": "Sleep Powder",
+            "effect": "Puts the target to sleep."
+          },
+          {
+            "type": "flying",
+            "damage_class": "status",
+            "name": "Tailwind",
+            "effect": "For three turns, friendly Pokémon have doubled Speed."
+          },
+          {
+            "power": "75",
+            "type": "grass",
+            "damage_class": "special",
+            "name": "Giga Drain",
+            "effect": "Drains half the damage inflicted to heal the user."
+          }
+        ],
+        "ability": {
+          "name": "Prankster",
+          "effect": "Raises non-damaging moves' priority by one stage."
+        },
+        "held": {
+          "sprite": "flying-gem",
+          "name": "Flying Gem",
+          "effect": "Held: When the holder uses a damaging flying-type move, the move has 1.5× power and this item is consumed."
+        },
+        "sprite": "189",
+        "types": [
+          "grass",
+          "flying"
+        ],
+        "stats": {
+          "hp": 75,
+          "atk": 55,
+          "def": 70,
+          "spa": 75,
+          "spd": 95,
+          "spe": 110
+        }
+      },
+      {
+        "name": "gliscor",
+        "level": "54",
+        "moves": [
+          {
+            "power": 100,
+            "type": "ground",
+            "damage_class": "physical",
+            "name": "Earthquake",
+            "effect": "Inflicts regular damage and can hit Dig users."
+          },
+          {
+            "power": 75,
+            "type": "rock",
+            "damage_class": "physical",
+            "name": "Rock Slide",
+            "effect": "Has a 30% chance to make the target flinch."
+          },
+          {
+            "power": 65,
+            "type": "ice",
+            "damage_class": "physical",
+            "name": "Ice Fang",
+            "effect": "Has a 10% chance to freeze the target and a $effect_chance% chance to make the target flinch."
+          },
+          {
+            "power": 65,
+            "type": "electric",
+            "damage_class": "physical",
+            "name": "Thunder Fang",
+            "effect": "Has a 10% chance to paralyze the target and a $effect_chance% chance to make the target flinch."
+          }
+        ],
+        "ability": {
+          "name": "Poison Heal",
+          "effect": "Heals for 1/8 max HP after each turn when poisoned in place of damage."
+        },
+        "held": {
+          "sprite": "toxic-orb",
+          "name": "Toxic Orb",
+          "effect": "Held: Inflicts Toxic on the holder at the end of the turn. Activates after Poison damage would occur."
+        },
+        "sprite": "472",
+        "types": [
+          "ground",
+          "flying"
+        ],
+        "stats": {
+          "hp": 75,
+          "atk": 95,
+          "def": 125,
+          "spa": 45,
+          "spd": 75,
+          "spe": 95
+        }
+      },
+      {
+        "name": "pidgeot",
+        "level": "54",
+        "moves": [
+          {
+            "power": 90,
+            "type": "normal",
+            "damage_class": "special",
+            "name": "Hyper Voice"
+          },
+          {
+            "power": "95",
+            "type": "fire",
+            "damage_class": "special",
+            "name": "Heat Wave",
+            "effect": "Has a 10% chance to burn the target."
+          },
+          {
+            "power": "120",
+            "type": "flying",
+            "damage_class": "special",
+            "name": "Hurricane",
+            "effect": "Has a 30% chance to confuse the target."
+          },
+          {
+            "priority": 4,
+            "type": "normal",
+            "damage_class": "status",
+            "name": "Protect",
+            "effect": "Prevents any moves from hitting the user this turn."
+          }
+        ],
+        "ability": {
+          "name": "No Guard",
+          "effect": "Ensures all moves used by and against the Pokémon hit."
+        },
+        "held": {
+          "sprite": "normal-gem",
+          "name": "Normal Gem",
+          "effect": "Held: When the holder uses a damaging normal-type move, the move has 1.5× power and this item is consumed."
+        },
+        "sprite": "18",
+        "types": [
+          "normal",
+          "flying"
+        ],
+        "stats": {
+          "hp": 83,
+          "atk": 60,
+          "def": 70,
+          "spa": 115,
+          "spd": 70,
+          "spe": 101
+        }
+      },
+      {
+        "name": "aerodactyl",
+        "level": "54",
+        "moves": [
+          {
+            "power": 150,
+            "type": "rock",
+            "damage_class": "physical",
+            "name": "Head Smash",
+            "effect": "User receives 1/2 the damage inflicted in recoil."
+          },
+          {
+            "power": 120,
+            "type": "flying",
+            "damage_class": "physical",
+            "name": "Brave Bird",
+            "effect": "User receives 1/3 the damage inflicted in recoil."
+          },
+          {
+            "power": 100,
+            "type": "ground",
+            "damage_class": "physical",
+            "name": "Earthquake",
+            "effect": "Inflicts regular damage and can hit Dig users."
+          },
+          {
+            "type": "flying",
+            "damage_class": "status",
+            "name": "Tailwind",
+            "effect": "For three turns, friendly Pokémon have doubled Speed."
+          }
+        ],
+        "ability": {
+          "name": "Rock Head",
+          "effect": "Protects against recoil damage."
+        },
+        "held": {
+          "sprite": "focus-sash",
+          "name": "Focus Sash",
+          "effect": "Held: Holder survives any single-hit attack at 1 HP if at max HP, then the item is consumed."
+        },
+        "sprite": "142",
+        "types": [
+          "rock",
+          "flying"
+        ],
+        "stats": {
+          "hp": 80,
+          "atk": 105,
+          "def": 65,
+          "spa": 60,
+          "spd": 75,
+          "spe": 130
+        }
+      },
+      {
+        "name": "togekiss",
+        "level": "54",
+        "moves": [
+          {
+            "power": "95",
+            "type": "fire",
+            "damage_class": "special",
+            "name": "Heat Wave",
+            "effect": "Has a 10% chance to burn the target."
+          },
+          {
+            "power": 80,
+            "type": "fairy",
+            "damage_class": "special",
+            "name": "Dazzling Gleam"
+          },
+          {
+            "power": "120",
+            "type": "flying",
+            "damage_class": "special",
+            "name": "Hurricane",
+            "effect": "Has a 30% chance to confuse the target."
+          },
+          {
+            "priority": 4,
+            "type": "normal",
+            "damage_class": "status",
+            "name": "Protect",
+            "effect": "Prevents any moves from hitting the user this turn."
+          }
+        ],
+        "ability": {
+          "name": "Serene Grace",
+          "effect": "Doubles the chance of moves' extra effects occurring."
+        },
+        "held": {
+          "sprite": "wacan-berry",
+          "name": "Wacan Berry",
+          "effect": "Held: Consumed when struck by a super-effective Electric-type attack to halve the damage."
+        },
+        "sprite": "468",
+        "types": [
+          "fairy",
+          "flying"
+        ],
+        "stats": {
+          "hp": 85,
+          "atk": 50,
+          "def": 95,
+          "spa": 120,
+          "spd": 115,
+          "spe": 80
+        }
+      },
+      {
+        "name": "swanna",
+        "level": "55",
+        "moves": [
+          {
+            "power": "120",
+            "type": "flying",
+            "damage_class": "special",
+            "name": "Hurricane",
+            "effect": "Has a 30% chance to confuse the target."
+          },
+          {
+            "power": "120",
+            "type": "water",
+            "damage_class": "special",
+            "name": "Hydro Pump"
+          },
+          {
+            "power": 55,
+            "type": "ice",
+            "damage_class": "special",
+            "name": "Icy Wind",
+            "effect": "Has a 100% chance to lower the target's Speed by one stage."
+          },
+          {
+            "priority": 4,
+            "type": "normal",
+            "damage_class": "status",
+            "name": "Protect",
+            "effect": "Prevents any moves from hitting the user this turn."
+          }
+        ],
+        "ability": {
+          "name": "Friend Guard",
+          "effect": "Decreases all direct damage taken by friendly Pokémon to 0.75×."
+        },
+        "held": {
+          "sprite": "life-orb",
+          "name": "Life Orb",
+          "effect": "Held: Holder's moves inflict 30% extra damage, but cost 10% max HP."
+        },
+        "sprite": "581",
+        "types": [
+          "water",
+          "flying"
+        ],
+        "stats": {
+          "hp": 75,
+          "atk": 87,
+          "def": 63,
+          "spa": 87,
+          "spd": 63,
+          "spe": 98
+        }
+      }
     ]
   },
   "col2_c": {
@@ -5931,7 +6612,8 @@
           "spe": 65
         }
       }
-    ]
+    ],
+    "doubleBattle": true
   },
   "r3_c": {
     "name": "Hugh",
@@ -6535,7 +7217,8 @@
           "spe": 125
         }
       }
-    ]
+    ],
+    "doubleBattle": true
   },
   "benga_c": {
     "name": "Benga",
@@ -7210,7 +7893,9 @@
           "spe": 80
         }
       }
-    ]
+    ],
+    "effect": "rain",
+    "doubleBattle": true
   },
   "9_c": {
     "name": "Drayden",
@@ -7544,7 +8229,8 @@
           "spe": 120
         }
       }
-    ]
+    ],
+    "doubleBattle": true
   },
   "zinz2": {
     "name": "Zinzolin & Grunt",
@@ -7826,7 +8512,8 @@
           "spe": 80
         }
       }
-    ]
+    ],
+    "doubleBattle": true
   },
   "o8_c": {
     "name": "Tate & Liza",
@@ -8276,7 +8963,8 @@
           "spe": 40
         }
       }
-    ]
+    ],
+    "doubleBattle": true
   },
   "10_c": {
     "name": "Marlon",
@@ -8614,7 +9302,9 @@
           "spe": 85
         }
       }
-    ]
+    ],
+    "effect": "rain",
+    "doubleBattle": true
   },
   "zinz3_c": {
     "name": "Zinzolin",
@@ -12646,7 +13336,8 @@
           "spe": 70
         }
       }
-    ]
+    ],
+    "doubleBattle": true
   },
   "e4_c": {
     "name": "Marshal",
@@ -12987,7 +13678,8 @@
           "spe": 45
         }
       }
-    ]
+    ],
+    "doubleBattle": true
   },
   "champ_c": {
     "name": "Iris",

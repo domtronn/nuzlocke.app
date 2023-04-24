@@ -11305,6 +11305,20 @@
       ]
     },
     {
+      "type": "gym",
+      "name": "Mistralton City",
+      "value": "o6_n",
+      "group": "mini-boss",
+      "boss": "Juan"
+    },
+    {
+      "type": "gym",
+      "name": "Mistralton City Gym",
+      "value": "8_n",
+      "group": "gym-leader",
+      "boss": "Skyla"
+    },
+    {
       "type": "route",
       "name": "Chargestone Cave",
       "encounters": [
@@ -13181,6 +13195,20 @@
         "shelgon",
         "pupitar"
       ]
+    },
+    {
+      "type": "gym",
+      "name": "Mistralton City",
+      "value": "o6_c",
+      "group": "mini-boss",
+      "boss": "Juan"
+    },
+    {
+      "type": "gym",
+      "name": "Mistralton City Gym",
+      "value": "8_c",
+      "group": "gym-leader",
+      "boss": "Skyla"
     },
     {
       "type": "route",
