@@ -5,6 +5,7 @@
     starter = '',
     type,
     forceLevelCap = false,
+    forceVs = false,
     defeated = false,
     reader = false
 
@@ -224,17 +225,19 @@
             </SettingWrapper>
           {/if}
 
-          <IconButton
-            on:click={openBuilder}
-            title="Load team builder against the {boss.name} boss fight"
-            class="h-12 pl-0.5 md:mt-1"
-            rounded
-          >
-            <Vs
-              containerClass="translate-y-3 scale-90"
-              class="bg-white dark:bg-gray-800"
-            />
-          </IconButton>
+          {#if forceVs}
+            <IconButton
+              on:click={openBuilder}
+              title="Load team builder against the {boss.name} boss fight"
+              class="h-12 pl-0.5 md:mt-1"
+              rounded
+            >
+              <Vs
+                containerClass="translate-y-3 scale-90"
+                class="bg-white dark:bg-gray-800"
+              />
+            </IconButton>
+          {/if}
         {/if}
       </div>
     </span>

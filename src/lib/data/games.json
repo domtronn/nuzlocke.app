@@ -183,6 +183,30 @@
       "moves": "pregen6"
     }
   },
+  "blaze": {
+    "pid": "blaze",
+    "patchId": "blazevolt",
+    "lid": "blazevolt",
+    "logo": "/logos/blaze-black-logo",
+    "title": "Blaze Black",
+    "gen": "romhack",
+    "patched": true,
+    "supported": true,
+    "region": "unova",
+    "lastUpdated": "24th April 2023"
+  },
+  "volt": {
+    "pid": "volt",
+    "patchId": "blazevolt",
+    "lid": "blazevolt",
+    "logo": "/logos/volt-white-logo",
+    "title": "Volt White",
+    "gen": "romhack",
+    "patched": true,
+    "supported": true,
+    "region": "unova",
+    "lastUpdated": "24th April 2023"
+  },
   "bl": {
     "pid": "bl",
     "lid": "bw",
