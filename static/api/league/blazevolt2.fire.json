@@ -3713,6 +3713,286 @@
       }
     ]
   },
+  "r2": {
+    "name": "Hugh",
+    "speciality": "",
+    "img": "/leaders/blwh-hugh",
+    "pokemon": [
+      {
+        "name": "swellow",
+        "level": "46",
+        "moves": [
+          {
+            "power": 140,
+            "type": "normal",
+            "damage_class": "special",
+            "name": "Boomburst"
+          },
+          {
+            "power": 40,
+            "priority": 1,
+            "type": "normal",
+            "damage_class": "physical",
+            "name": "Quick Attack"
+          },
+          {
+            "power": "120",
+            "type": "flying",
+            "damage_class": "special",
+            "name": "Hurricane",
+            "effect": "Has a 30% chance to confuse the target."
+          },
+          {
+            "power": 70,
+            "type": "bug",
+            "damage_class": "physical",
+            "name": "U-turn",
+            "effect": "User must switch out after attacking."
+          }
+        ],
+        "ability": {
+          "name": "Scrappy",
+          "effect": "Lets the Pokémon's normal and fighting moves hit ghost Pokémon."
+        },
+        "held": {
+          "sprite": "metronome",
+          "name": "Metronome",
+          "effect": "Held: Consectutive uses of the same attack have a cumulative damage boost of 10%. Maximum 100% boost."
+        },
+        "sprite": "277",
+        "types": [
+          "normal",
+          "flying"
+        ],
+        "stats": {
+          "hp": 60,
+          "atk": 85,
+          "def": 60,
+          "spa": 85,
+          "spd": 50,
+          "spe": 125
+        }
+      },
+      {
+        "name": "eelektrik",
+        "level": "46",
+        "moves": [
+          {
+            "power": 90,
+            "type": "electric",
+            "damage_class": "physical",
+            "name": "Wild Charge",
+            "effect": "User receives 1/4 the damage it inflicts in recoil."
+          },
+          {
+            "power": "90",
+            "type": "water",
+            "damage_class": "physical",
+            "name": "Aqua Tail"
+          },
+          {
+            "power": "75",
+            "type": "grass",
+            "damage_class": "special",
+            "name": "Giga Drain",
+            "effect": "Drains half the damage inflicted to heal the user."
+          },
+          {
+            "power": 75,
+            "type": "fighting",
+            "damage_class": "physical",
+            "name": "Drain Punch",
+            "effect": "Drains half the damage inflicted to heal the user."
+          }
+        ],
+        "ability": {
+          "name": "Levitate",
+          "effect": "Evades ground moves."
+        },
+        "held": {
+          "sprite": "leftovers",
+          "name": "Leftovers",
+          "effect": "Held: Restores 1/16 (6.25%) holder's max HP at the end of each turn."
+        },
+        "sprite": "603",
+        "types": [
+          "electric"
+        ],
+        "stats": {
+          "hp": 65,
+          "atk": 85,
+          "def": 70,
+          "spa": 75,
+          "spd": 70,
+          "spe": 40
+        }
+      },
+      {
+        "name": "flygon",
+        "level": "47",
+        "moves": [
+          {
+            "power": 70,
+            "type": "ground",
+            "damage_class": "special",
+            "name": "Scorching Sands"
+          },
+          {
+            "power": "80",
+            "type": "dragon",
+            "damage_class": "physical",
+            "name": "Dragon Claw",
+            "effect": "This move has a heightened chance of landing a critical hit."
+          },
+          {
+            "power": 80,
+            "type": "bug",
+            "damage_class": "physical",
+            "name": "Lunge",
+            "effect": "Lowers the target's Attack by one stage after inflicting damage."
+          },
+          {
+            "type": "dragon",
+            "damage_class": "status",
+            "name": "Dragon Dance",
+            "effect": "Raises the user's Attack and Speed by one stage."
+          }
+        ],
+        "ability": {
+          "name": "Levitate",
+          "effect": "Evades ground moves."
+        },
+        "held": {
+          "sprite": "life-orb",
+          "name": "Life Orb",
+          "effect": "Held: Holder's moves inflict 30% extra damage, but cost 10% max HP."
+        },
+        "sprite": "330",
+        "types": [
+          "bug",
+          "dragon"
+        ],
+        "stats": {
+          "hp": 90,
+          "atk": 110,
+          "def": 85,
+          "spa": 130,
+          "spd": 85,
+          "spe": 100
+        }
+      },
+      {
+        "name": "lilligant",
+        "level": "46",
+        "moves": [
+          {
+            "power": 120,
+            "type": "grass",
+            "damage_class": "special",
+            "name": "Petal Dance",
+            "effect": "Hits every turn for 2-3 turns, then confuses the user."
+          },
+          {
+            "power": 80,
+            "type": "psychic",
+            "damage_class": "special",
+            "name": "Extrasensory",
+            "effect": "Has a 10% chance to make the target flinch."
+          },
+          {
+            "type": "grass",
+            "damage_class": "status",
+            "name": "Sleep Powder",
+            "effect": "Puts the target to sleep."
+          },
+          {
+            "type": "bug",
+            "damage_class": "status",
+            "name": "Quiver Dance",
+            "effect": "Raises the user's Special Attack, Special Defense, and Speed by one stage each."
+          }
+        ],
+        "ability": {
+          "name": "Own Tempo",
+          "effect": "Prevents confusion."
+        },
+        "held": {
+          "sprite": "focus-sash",
+          "name": "Focus Sash",
+          "effect": "Held: Holder survives any single-hit attack at 1 HP if at max HP, then the item is consumed."
+        },
+        "starter": "fire",
+        "sprite": "549",
+        "types": [
+          "grass"
+        ],
+        "stats": {
+          "hp": 70,
+          "atk": 60,
+          "def": 75,
+          "spa": 110,
+          "spd": 75,
+          "spe": 90
+        }
+      },
+      {
+        "name": "samurott",
+        "level": "47",
+        "moves": [
+          {
+            "power": 75,
+            "type": "flying",
+            "damage_class": "special",
+            "name": "Air Slash",
+            "effect": "Has a 30% chance to make the target flinch."
+          },
+          {
+            "power": 80,
+            "type": "water",
+            "damage_class": "physical",
+            "name": "Waterfall",
+            "effect": "Has a 20% chance to make the target flinch."
+          },
+          {
+            "power": 120,
+            "type": "bug",
+            "damage_class": "physical",
+            "name": "Megahorn"
+          },
+          {
+            "power": 120,
+            "type": "fighting",
+            "damage_class": "physical",
+            "name": "Close Combat",
+            "effect": "Lowers the user's Defense and Special Defense by one stage after inflicting damage."
+          }
+        ],
+        "ability": {
+          "name": "Shell Armor",
+          "effect": "Protects against critical hits."
+        },
+        "held": {
+          "sprite": "leftovers",
+          "name": "Leftovers",
+          "effect": "Held: Restores 1/16 (6.25%) holder's max HP at the end of each turn."
+        },
+        "starter": "fire",
+        "sprite": "503",
+        "types": [
+          "water",
+          "fighting"
+        ],
+        "stats": {
+          "hp": 95,
+          "atk": 100,
+          "def": 85,
+          "spa": 108,
+          "spd": 70,
+          "spe": 70
+        }
+      }
+    ]
+  },
   "7_n": {
     "name": "Clay",
     "speciality": "ground",
@@ -4043,6 +4323,122 @@
           "spa": 65,
           "spd": 70,
           "spe": 92
+        }
+      }
+    ]
+  },
+  "col2_n": {
+    "name": "Colress",
+    "speciality": "",
+    "img": "/leaders/blwh-colress",
+    "pokemon": [
+      {
+        "name": "f00",
+        "level": "52",
+        "moves": [
+          {
+            "power": "80",
+            "type": "normal",
+            "damage_class": "physical",
+            "name": "Strength"
+          },
+          {
+            "power": 80,
+            "type": "steel",
+            "damage_class": "physical",
+            "name": "Iron Head",
+            "effect": "Has a 30% chance to make the target flinch."
+          },
+          {
+            "power": "95",
+            "type": "electric",
+            "damage_class": "special",
+            "name": "Thunderbolt",
+            "effect": "Has a 10% chance to paralyze the target."
+          },
+          {
+            "type": "psychic",
+            "damage_class": "status",
+            "name": "Agility",
+            "effect": "Raises the user's Speed by two stages."
+          }
+        ],
+        "ability": {
+          "name": "Volt Absorb",
+          "effect": "Absorbs electric moves, healing for 1/4 max HP."
+        },
+        "held": {
+          "sprite": "chople-berry",
+          "name": "Chople Berry",
+          "effect": "Held: Consumed when struck by a super-effective Fighting-type attack to halve the damage."
+        },
+        "imgUrl": "/blazevolt/f00",
+        "types": [
+          "steel",
+          "normal"
+        ],
+        "stats": {
+          "hp": 100,
+          "atk": 100,
+          "def": 100,
+          "spa": 100,
+          "spd": 100,
+          "spe": 100
+        }
+      },
+      {
+        "name": "mt",
+        "level": "52",
+        "moves": [
+          {
+            "power": 100,
+            "type": "steel",
+            "damage_class": "physical",
+            "name": "Iron Tail",
+            "effect": "Has a 30% chance to lower the target's Defense by one stage."
+          },
+          {
+            "power": 100,
+            "type": "rock",
+            "damage_class": "physical",
+            "name": "Stone Edge",
+            "effect": "Has an increased chance for a critical hit."
+          },
+          {
+            "power": 80,
+            "type": "dark",
+            "damage_class": "physical",
+            "name": "Crunch",
+            "effect": "Has a 20% chance to lower the target's Defense by one stage."
+          },
+          {
+            "power": 75,
+            "type": "ice",
+            "damage_class": "physical",
+            "name": "Ice Punch",
+            "effect": "Has a 10% chance to freeze the target."
+          }
+        ],
+        "ability": {
+          "name": "Analytic",
+          "effect": "Strengthens moves to 1.3× their power when moving last."
+        },
+        "held": {
+          "sprite": "leftovers",
+          "name": "Leftovers",
+          "effect": "Held: Restores 1/16 (6.25%) holder's max HP at the end of each turn."
+        },
+        "imgUrl": "/blazevolt/mt",
+        "types": [
+          "steel"
+        ],
+        "stats": {
+          "hp": 100,
+          "atk": 100,
+          "def": 100,
+          "spa": 100,
+          "spd": 100,
+          "spe": 100
         }
       }
     ]
@@ -4644,402 +5040,6 @@
           "spa": 112,
           "spd": 65,
           "spe": 110
-        }
-      }
-    ]
-  },
-  "col2_n": {
-    "name": "Colress",
-    "speciality": "",
-    "img": "/leaders/blwh-colress",
-    "pokemon": [
-      {
-        "name": "f00",
-        "level": "52",
-        "moves": [
-          {
-            "power": "80",
-            "type": "normal",
-            "damage_class": "physical",
-            "name": "Strength"
-          },
-          {
-            "power": 80,
-            "type": "steel",
-            "damage_class": "physical",
-            "name": "Iron Head",
-            "effect": "Has a 30% chance to make the target flinch."
-          },
-          {
-            "power": "95",
-            "type": "electric",
-            "damage_class": "special",
-            "name": "Thunderbolt",
-            "effect": "Has a 10% chance to paralyze the target."
-          },
-          {
-            "type": "psychic",
-            "damage_class": "status",
-            "name": "Agility",
-            "effect": "Raises the user's Speed by two stages."
-          }
-        ],
-        "ability": {
-          "name": "Volt Absorb",
-          "effect": "Absorbs electric moves, healing for 1/4 max HP."
-        },
-        "held": {
-          "sprite": "chople-berry",
-          "name": "Chople Berry",
-          "effect": "Held: Consumed when struck by a super-effective Fighting-type attack to halve the damage."
-        },
-        "imgUrl": "/blazevolt/f00",
-        "types": [
-          "steel",
-          "normal"
-        ],
-        "stats": {
-          "hp": 100,
-          "atk": 100,
-          "def": 100,
-          "spa": 100,
-          "spd": 100,
-          "spe": 100
-        }
-      },
-      {
-        "name": "mt",
-        "level": "52",
-        "moves": [
-          {
-            "power": 100,
-            "type": "steel",
-            "damage_class": "physical",
-            "name": "Iron Tail",
-            "effect": "Has a 30% chance to lower the target's Defense by one stage."
-          },
-          {
-            "power": 100,
-            "type": "rock",
-            "damage_class": "physical",
-            "name": "Stone Edge",
-            "effect": "Has an increased chance for a critical hit."
-          },
-          {
-            "power": 80,
-            "type": "dark",
-            "damage_class": "physical",
-            "name": "Crunch",
-            "effect": "Has a 20% chance to lower the target's Defense by one stage."
-          },
-          {
-            "power": 75,
-            "type": "ice",
-            "damage_class": "physical",
-            "name": "Ice Punch",
-            "effect": "Has a 10% chance to freeze the target."
-          }
-        ],
-        "ability": {
-          "name": "Analytic",
-          "effect": "Strengthens moves to 1.3× their power when moving last."
-        },
-        "held": {
-          "sprite": "leftovers",
-          "name": "Leftovers",
-          "effect": "Held: Restores 1/16 (6.25%) holder's max HP at the end of each turn."
-        },
-        "imgUrl": "/blazevolt/mt",
-        "types": [
-          "steel"
-        ],
-        "stats": {
-          "hp": 100,
-          "atk": 100,
-          "def": 100,
-          "spa": 100,
-          "spd": 100,
-          "spe": 100
-        }
-      }
-    ]
-  },
-  "r2": {
-    "name": "Hugh",
-    "speciality": "",
-    "img": "/leaders/blwh-hugh",
-    "pokemon": [
-      {
-        "name": "swellow",
-        "level": "46",
-        "moves": [
-          {
-            "power": 140,
-            "type": "normal",
-            "damage_class": "special",
-            "name": "Boomburst"
-          },
-          {
-            "power": 40,
-            "priority": 1,
-            "type": "normal",
-            "damage_class": "physical",
-            "name": "Quick Attack"
-          },
-          {
-            "power": "120",
-            "type": "flying",
-            "damage_class": "special",
-            "name": "Hurricane",
-            "effect": "Has a 30% chance to confuse the target."
-          },
-          {
-            "power": 70,
-            "type": "bug",
-            "damage_class": "physical",
-            "name": "U-turn",
-            "effect": "User must switch out after attacking."
-          }
-        ],
-        "ability": {
-          "name": "Scrappy",
-          "effect": "Lets the Pokémon's normal and fighting moves hit ghost Pokémon."
-        },
-        "held": {
-          "sprite": "metronome",
-          "name": "Metronome",
-          "effect": "Held: Consectutive uses of the same attack have a cumulative damage boost of 10%. Maximum 100% boost."
-        },
-        "sprite": "277",
-        "types": [
-          "normal",
-          "flying"
-        ],
-        "stats": {
-          "hp": 60,
-          "atk": 85,
-          "def": 60,
-          "spa": 85,
-          "spd": 50,
-          "spe": 125
-        }
-      },
-      {
-        "name": "eelektrik",
-        "level": "46",
-        "moves": [
-          {
-            "power": 90,
-            "type": "electric",
-            "damage_class": "physical",
-            "name": "Wild Charge",
-            "effect": "User receives 1/4 the damage it inflicts in recoil."
-          },
-          {
-            "power": "90",
-            "type": "water",
-            "damage_class": "physical",
-            "name": "Aqua Tail"
-          },
-          {
-            "power": "75",
-            "type": "grass",
-            "damage_class": "special",
-            "name": "Giga Drain",
-            "effect": "Drains half the damage inflicted to heal the user."
-          },
-          {
-            "power": 75,
-            "type": "fighting",
-            "damage_class": "physical",
-            "name": "Drain Punch",
-            "effect": "Drains half the damage inflicted to heal the user."
-          }
-        ],
-        "ability": {
-          "name": "Levitate",
-          "effect": "Evades ground moves."
-        },
-        "held": {
-          "sprite": "leftovers",
-          "name": "Leftovers",
-          "effect": "Held: Restores 1/16 (6.25%) holder's max HP at the end of each turn."
-        },
-        "sprite": "603",
-        "types": [
-          "electric"
-        ],
-        "stats": {
-          "hp": 65,
-          "atk": 85,
-          "def": 70,
-          "spa": 75,
-          "spd": 70,
-          "spe": 40
-        }
-      },
-      {
-        "name": "flygon",
-        "level": "47",
-        "moves": [
-          {
-            "power": 70,
-            "type": "ground",
-            "damage_class": "special",
-            "name": "Scorching Sands"
-          },
-          {
-            "power": "80",
-            "type": "dragon",
-            "damage_class": "physical",
-            "name": "Dragon Claw",
-            "effect": "This move has a heightened chance of landing a critical hit."
-          },
-          {
-            "power": 80,
-            "type": "bug",
-            "damage_class": "physical",
-            "name": "Lunge",
-            "effect": "Lowers the target's Attack by one stage after inflicting damage."
-          },
-          {
-            "type": "dragon",
-            "damage_class": "status",
-            "name": "Dragon Dance",
-            "effect": "Raises the user's Attack and Speed by one stage."
-          }
-        ],
-        "ability": {
-          "name": "Levitate",
-          "effect": "Evades ground moves."
-        },
-        "held": {
-          "sprite": "life-orb",
-          "name": "Life Orb",
-          "effect": "Held: Holder's moves inflict 30% extra damage, but cost 10% max HP."
-        },
-        "sprite": "330",
-        "types": [
-          "bug",
-          "dragon"
-        ],
-        "stats": {
-          "hp": 90,
-          "atk": 110,
-          "def": 85,
-          "spa": 130,
-          "spd": 85,
-          "spe": 100
-        }
-      },
-      {
-        "name": "lilligant",
-        "level": "46",
-        "moves": [
-          {
-            "power": 120,
-            "type": "grass",
-            "damage_class": "special",
-            "name": "Petal Dance",
-            "effect": "Hits every turn for 2-3 turns, then confuses the user."
-          },
-          {
-            "power": 80,
-            "type": "psychic",
-            "damage_class": "special",
-            "name": "Extrasensory",
-            "effect": "Has a 10% chance to make the target flinch."
-          },
-          {
-            "type": "grass",
-            "damage_class": "status",
-            "name": "Sleep Powder",
-            "effect": "Puts the target to sleep."
-          },
-          {
-            "type": "bug",
-            "damage_class": "status",
-            "name": "Quiver Dance",
-            "effect": "Raises the user's Special Attack, Special Defense, and Speed by one stage each."
-          }
-        ],
-        "ability": {
-          "name": "Own Tempo",
-          "effect": "Prevents confusion."
-        },
-        "held": {
-          "sprite": "focus-sash",
-          "name": "Focus Sash",
-          "effect": "Held: Holder survives any single-hit attack at 1 HP if at max HP, then the item is consumed."
-        },
-        "starter": "fire",
-        "sprite": "549",
-        "types": [
-          "grass"
-        ],
-        "stats": {
-          "hp": 70,
-          "atk": 60,
-          "def": 75,
-          "spa": 110,
-          "spd": 75,
-          "spe": 90
-        }
-      },
-      {
-        "name": "samurott",
-        "level": "47",
-        "moves": [
-          {
-            "power": 75,
-            "type": "flying",
-            "damage_class": "special",
-            "name": "Air Slash",
-            "effect": "Has a 30% chance to make the target flinch."
-          },
-          {
-            "power": 80,
-            "type": "water",
-            "damage_class": "physical",
-            "name": "Waterfall",
-            "effect": "Has a 20% chance to make the target flinch."
-          },
-          {
-            "power": 120,
-            "type": "bug",
-            "damage_class": "physical",
-            "name": "Megahorn"
-          },
-          {
-            "power": 120,
-            "type": "fighting",
-            "damage_class": "physical",
-            "name": "Close Combat",
-            "effect": "Lowers the user's Defense and Special Defense by one stage after inflicting damage."
-          }
-        ],
-        "ability": {
-          "name": "Shell Armor",
-          "effect": "Protects against critical hits."
-        },
-        "held": {
-          "sprite": "leftovers",
-          "name": "Leftovers",
-          "effect": "Held: Restores 1/16 (6.25%) holder's max HP at the end of each turn."
-        },
-        "starter": "fire",
-        "sprite": "503",
-        "types": [
-          "water",
-          "fighting"
-        ],
-        "stats": {
-          "hp": 95,
-          "atk": 100,
-          "def": 85,
-          "spa": 108,
-          "spd": 70,
-          "spe": 70
         }
       }
     ]

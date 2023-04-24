@@ -11259,10 +11259,10 @@
     },
     {
       "type": "gym",
-      "name": "Driftveil City Gym",
-      "value": "7_n",
-      "group": "gym-leader",
-      "boss": "Clay"
+      "name": "Route 6",
+      "value": "r2",
+      "group": "",
+      "boss": "Hugh"
     },
     {
       "type": "route",
@@ -11285,6 +11285,13 @@
       ]
     },
     {
+      "type": "gym",
+      "name": "Driftveil City Gym",
+      "value": "7_n",
+      "group": "gym-leader",
+      "boss": "Clay"
+    },
+    {
       "type": "route",
       "name": "Mistralton Cave",
       "encounters": [
@@ -11303,20 +11310,6 @@
         "shelgon",
         "pupitar"
       ]
-    },
-    {
-      "type": "gym",
-      "name": "Mistralton City",
-      "value": "o6_n",
-      "group": "mini-boss",
-      "boss": "Juan"
-    },
-    {
-      "type": "gym",
-      "name": "Mistralton City Gym",
-      "value": "8_n",
-      "group": "gym-leader",
-      "boss": "Skyla"
     },
     {
       "type": "route",
@@ -11366,20 +11359,6 @@
       ]
     },
     {
-      "type": "gym",
-      "name": "Twist Mountain",
-      "value": "col2_n",
-      "group": "evil-team",
-      "boss": "Colress"
-    },
-    {
-      "type": "gym",
-      "name": "Route 6",
-      "value": "r2",
-      "group": "",
-      "boss": "Hugh"
-    },
-    {
       "type": "route",
       "name": "Celestial Tower",
       "encounters": [
@@ -11405,8 +11384,29 @@
       ]
     },
     {
+      "type": "gym",
+      "name": "Twist Mountain",
+      "value": "col2_n",
+      "group": "evil-team",
+      "boss": "Colress"
+    },
+    {
+      "type": "gym",
+      "name": "Mistralton City",
+      "value": "o6_n",
+      "group": "mini-boss",
+      "boss": "Juan"
+    },
+    {
+      "type": "gym",
+      "name": "Mistralton City Gym",
+      "value": "8_n",
+      "group": "gym-leader",
+      "boss": "Skyla"
+    },
+    {
       "type": "route",
-      "name": "Reversal Mountain - Outside",
+      "name": "Reversal Mountain",
       "encounters": [
         "spoink",
         "grumpig",
@@ -13151,10 +13151,10 @@
     },
     {
       "type": "gym",
-      "name": "Driftveil City Gym",
-      "value": "7_c",
-      "group": "gym-leader",
-      "boss": "Clay"
+      "name": "Route 6",
+      "value": "r2",
+      "group": "",
+      "boss": "Hugh"
     },
     {
       "type": "route",
@@ -13177,6 +13177,13 @@
       ]
     },
     {
+      "type": "gym",
+      "name": "Driftveil City Gym",
+      "value": "7_c",
+      "group": "gym-leader",
+      "boss": "Clay"
+    },
+    {
       "type": "route",
       "name": "Mistralton Cave",
       "encounters": [
@@ -13195,20 +13202,6 @@
         "shelgon",
         "pupitar"
       ]
-    },
-    {
-      "type": "gym",
-      "name": "Mistralton City",
-      "value": "o6_c",
-      "group": "mini-boss",
-      "boss": "Juan"
-    },
-    {
-      "type": "gym",
-      "name": "Mistralton City Gym",
-      "value": "8_c",
-      "group": "gym-leader",
-      "boss": "Skyla"
     },
     {
       "type": "route",
@@ -13258,20 +13251,6 @@
       ]
     },
     {
-      "type": "gym",
-      "name": "Twist Mountain",
-      "value": "col2_c",
-      "group": "evil-team",
-      "boss": "Colress"
-    },
-    {
-      "type": "gym",
-      "name": "Route 6",
-      "value": "r2",
-      "group": "",
-      "boss": "Hugh"
-    },
-    {
       "type": "route",
       "name": "Celestial Tower",
       "encounters": [
@@ -13297,8 +13276,29 @@
       ]
     },
     {
+      "type": "gym",
+      "name": "Twist Mountain",
+      "value": "col2_c",
+      "group": "evil-team",
+      "boss": "Colress"
+    },
+    {
+      "type": "gym",
+      "name": "Mistralton City",
+      "value": "o6_c",
+      "group": "mini-boss",
+      "boss": "Juan"
+    },
+    {
+      "type": "gym",
+      "name": "Mistralton City Gym",
+      "value": "8_c",
+      "group": "gym-leader",
+      "boss": "Skyla"
+    },
+    {
       "type": "route",
-      "name": "Reversal Mountain - Outside",
+      "name": "Reversal Mountain",
       "encounters": [
         "spoink",
         "grumpig",

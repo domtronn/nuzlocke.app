@@ -4760,6 +4760,286 @@
       }
     ]
   },
+  "r2": {
+    "name": "Hugh",
+    "speciality": "",
+    "img": "/leaders/blwh-hugh",
+    "pokemon": [
+      {
+        "name": "swellow",
+        "level": "46",
+        "moves": [
+          {
+            "power": 140,
+            "type": "normal",
+            "damage_class": "special",
+            "name": "Boomburst"
+          },
+          {
+            "power": 40,
+            "priority": 1,
+            "type": "normal",
+            "damage_class": "physical",
+            "name": "Quick Attack"
+          },
+          {
+            "power": "120",
+            "type": "flying",
+            "damage_class": "special",
+            "name": "Hurricane",
+            "effect": "Has a 30% chance to confuse the target."
+          },
+          {
+            "power": 70,
+            "type": "bug",
+            "damage_class": "physical",
+            "name": "U-turn",
+            "effect": "User must switch out after attacking."
+          }
+        ],
+        "ability": {
+          "name": "Scrappy",
+          "effect": "Lets the Pokémon's normal and fighting moves hit ghost Pokémon."
+        },
+        "held": {
+          "sprite": "metronome",
+          "name": "Metronome",
+          "effect": "Held: Consectutive uses of the same attack have a cumulative damage boost of 10%. Maximum 100% boost."
+        },
+        "sprite": "277",
+        "types": [
+          "normal",
+          "flying"
+        ],
+        "stats": {
+          "hp": 60,
+          "atk": 85,
+          "def": 60,
+          "spa": 85,
+          "spd": 50,
+          "spe": 125
+        }
+      },
+      {
+        "name": "eelektrik",
+        "level": "46",
+        "moves": [
+          {
+            "power": 90,
+            "type": "electric",
+            "damage_class": "physical",
+            "name": "Wild Charge",
+            "effect": "User receives 1/4 the damage it inflicts in recoil."
+          },
+          {
+            "power": "90",
+            "type": "water",
+            "damage_class": "physical",
+            "name": "Aqua Tail"
+          },
+          {
+            "power": "75",
+            "type": "grass",
+            "damage_class": "special",
+            "name": "Giga Drain",
+            "effect": "Drains half the damage inflicted to heal the user."
+          },
+          {
+            "power": 75,
+            "type": "fighting",
+            "damage_class": "physical",
+            "name": "Drain Punch",
+            "effect": "Drains half the damage inflicted to heal the user."
+          }
+        ],
+        "ability": {
+          "name": "Levitate",
+          "effect": "Evades ground moves."
+        },
+        "held": {
+          "sprite": "leftovers",
+          "name": "Leftovers",
+          "effect": "Held: Restores 1/16 (6.25%) holder's max HP at the end of each turn."
+        },
+        "sprite": "603",
+        "types": [
+          "electric"
+        ],
+        "stats": {
+          "hp": 65,
+          "atk": 85,
+          "def": 70,
+          "spa": 75,
+          "spd": 70,
+          "spe": 40
+        }
+      },
+      {
+        "name": "flygon",
+        "level": "47",
+        "moves": [
+          {
+            "power": 70,
+            "type": "ground",
+            "damage_class": "special",
+            "name": "Scorching Sands"
+          },
+          {
+            "power": "80",
+            "type": "dragon",
+            "damage_class": "physical",
+            "name": "Dragon Claw",
+            "effect": "This move has a heightened chance of landing a critical hit."
+          },
+          {
+            "power": 80,
+            "type": "bug",
+            "damage_class": "physical",
+            "name": "Lunge",
+            "effect": "Lowers the target's Attack by one stage after inflicting damage."
+          },
+          {
+            "type": "dragon",
+            "damage_class": "status",
+            "name": "Dragon Dance",
+            "effect": "Raises the user's Attack and Speed by one stage."
+          }
+        ],
+        "ability": {
+          "name": "Levitate",
+          "effect": "Evades ground moves."
+        },
+        "held": {
+          "sprite": "life-orb",
+          "name": "Life Orb",
+          "effect": "Held: Holder's moves inflict 30% extra damage, but cost 10% max HP."
+        },
+        "sprite": "330",
+        "types": [
+          "bug",
+          "dragon"
+        ],
+        "stats": {
+          "hp": 90,
+          "atk": 110,
+          "def": 85,
+          "spa": 130,
+          "spd": 85,
+          "spe": 100
+        }
+      },
+      {
+        "name": "camerupt",
+        "level": "46",
+        "moves": [
+          {
+            "power": 90,
+            "type": "fire",
+            "damage_class": "special",
+            "name": "Flamethrower",
+            "effect": "Has a 10% chance to burn the target."
+          },
+          {
+            "power": "90",
+            "type": "rock",
+            "damage_class": "physical",
+            "name": "Rock Climb",
+            "effect": "Has a 20% chance to confuse the target."
+          },
+          {
+            "power": 100,
+            "type": "ground",
+            "damage_class": "physical",
+            "name": "Earthquake",
+            "effect": "Inflicts regular damage and can hit Dig users."
+          },
+          {
+            "type": "rock",
+            "damage_class": "status",
+            "name": "Rock Polish",
+            "effect": "Raises the user's Speed by two stages."
+          }
+        ],
+        "ability": {
+          "name": "Simple",
+          "effect": "Doubles the Pokémon's stat modifiers.  These doubled modifiers are still capped at -6 or 6 stages."
+        },
+        "held": {
+          "sprite": "passho-berry",
+          "name": "Passho Berry",
+          "effect": "Held: Consumed when struck by a super-effective Water-type attack to halve the damage."
+        },
+        "starter": "water",
+        "sprite": "323",
+        "types": [
+          "fire",
+          "ground"
+        ],
+        "stats": {
+          "hp": 90,
+          "atk": 110,
+          "def": 70,
+          "spa": 105,
+          "spd": 75,
+          "spe": 40
+        }
+      },
+      {
+        "name": "serperior",
+        "level": "47",
+        "moves": [
+          {
+            "type": "normal",
+            "damage_class": "status",
+            "name": "Glare",
+            "effect": "Paralyzes the target."
+          },
+          {
+            "power": 90,
+            "type": "grass",
+            "damage_class": "physical",
+            "name": "Leaf Blade",
+            "effect": "Has an increased chance for a critical hit."
+          },
+          {
+            "power": "85",
+            "type": "dragon",
+            "damage_class": "special",
+            "name": "Dragon Pulse"
+          },
+          {
+            "power": "90",
+            "type": "water",
+            "damage_class": "physical",
+            "name": "Aqua Tail"
+          }
+        ],
+        "ability": {
+          "name": "Contrary",
+          "effect": "Inverts stat changes."
+        },
+        "held": {
+          "sprite": "leftovers",
+          "name": "Leftovers",
+          "effect": "Held: Restores 1/16 (6.25%) holder's max HP at the end of each turn."
+        },
+        "starter": "water",
+        "sprite": "497",
+        "types": [
+          "grass",
+          "dragon"
+        ],
+        "stats": {
+          "hp": 75,
+          "atk": 75,
+          "def": 95,
+          "spa": 75,
+          "spd": 95,
+          "spe": 113
+        }
+      }
+    ]
+  },
   "7_c": {
     "name": "Clay",
     "speciality": "ground",
@@ -5098,6 +5378,231 @@
       }
     ],
     "effect": "sandstorm"
+  },
+  "col2_c": {
+    "name": "Colress",
+    "speciality": "",
+    "img": "/leaders/blwh-colress",
+    "pokemon": [
+      {
+        "name": "mt",
+        "level": "53",
+        "moves": [
+          {
+            "power": 80,
+            "type": "steel",
+            "damage_class": "physical",
+            "name": "Iron Head",
+            "effect": "Has a 30% chance to make the target flinch."
+          },
+          {
+            "type": "rock",
+            "damage_class": "status",
+            "name": "Stealth Rock",
+            "effect": "Causes damage when opposing Pokémon switch in."
+          },
+          {
+            "priority": -6,
+            "type": "normal",
+            "damage_class": "status",
+            "name": "Whirlwind",
+            "effect": "Immediately ends wild battles.  Forces trainers to switch Pokémon."
+          },
+          {
+            "power": "90",
+            "type": "water",
+            "damage_class": "physical",
+            "name": "Aqua Tail"
+          }
+        ],
+        "ability": {
+          "name": "Analytic",
+          "effect": "Strengthens moves to 1.3× their power when moving last."
+        },
+        "held": {
+          "sprite": "red-card",
+          "name": "Red Card",
+          "effect": "Held: When the holder takes damage from a move, the opponent switches out for another random party Pokémon. Consumed after use."
+        },
+        "imgUrl": "/blazevolt/mt",
+        "types": [
+          "steel"
+        ],
+        "stats": {
+          "hp": 100,
+          "atk": 100,
+          "def": 100,
+          "spa": 100,
+          "spd": 100,
+          "spe": 100
+        }
+      },
+      {
+        "name": "ufo",
+        "level": "53",
+        "moves": [
+          {
+            "power": 70,
+            "type": "electric",
+            "damage_class": "special",
+            "name": "Volt Switch",
+            "effect": "User must switch out after attacking."
+          },
+          {
+            "power": 90,
+            "type": "psychic",
+            "damage_class": "special",
+            "name": "Psychic",
+            "effect": "Has a 10% chance to lower the target's Special Defense by one stage."
+          },
+          {
+            "power": 100,
+            "type": "flying",
+            "damage_class": "special",
+            "name": "Aeroblast",
+            "effect": "Has an increased chance for a critical hit."
+          },
+          {
+            "type": "normal",
+            "damage_class": "status",
+            "name": "Recover",
+            "effect": "Heals the user by half its max HP."
+          }
+        ],
+        "ability": {
+          "name": "Magic Bounce",
+          "effect": "Reflects most non-damaging moves back at their user."
+        },
+        "held": {
+          "sprite": "leftovers",
+          "name": "Leftovers",
+          "effect": "Held: Restores 1/16 (6.25%) holder's max HP at the end of each turn."
+        },
+        "imgUrl": "/blazevolt/ufo",
+        "types": [
+          "flying",
+          "electric"
+        ],
+        "stats": {
+          "hp": 100,
+          "atk": 100,
+          "def": 100,
+          "spa": 100,
+          "spd": 100,
+          "spe": 100
+        }
+      },
+      {
+        "name": "f00",
+        "level": "53",
+        "moves": [
+          {
+            "power": 70,
+            "type": "bug",
+            "damage_class": "physical",
+            "name": "U-turn",
+            "effect": "User must switch out after attacking."
+          },
+          {
+            "power": 80,
+            "priority": 2,
+            "type": "normal",
+            "damage_class": "physical",
+            "name": "Extreme Speed"
+          },
+          {
+            "type": "electric",
+            "damage_class": "status",
+            "name": "Thunder Wave",
+            "effect": "Paralyzes the target."
+          },
+          {
+            "power": "60",
+            "type": "grass",
+            "damage_class": "physical",
+            "name": "Needle Arm",
+            "effect": "Has a 30% chance to make the target flinch."
+          }
+        ],
+        "ability": {
+          "name": "Volt Absorb",
+          "effect": "Absorbs electric moves, healing for 1/4 max HP."
+        },
+        "held": {
+          "sprite": "chople-berry",
+          "name": "Chople Berry",
+          "effect": "Held: Consumed when struck by a super-effective Fighting-type attack to halve the damage."
+        },
+        "imgUrl": "/blazevolt/f00",
+        "types": [
+          "steel",
+          "normal"
+        ],
+        "stats": {
+          "hp": 100,
+          "atk": 100,
+          "def": 100,
+          "spa": 100,
+          "spd": 100,
+          "spe": 100
+        }
+      },
+      {
+        "name": "mt2",
+        "level": "53",
+        "moves": [
+          {
+            "type": "steel",
+            "damage_class": "status",
+            "name": "Shift Gear",
+            "effect": "Raises the user's Attack by one stage and its Speed by two stages."
+          },
+          {
+            "power": "90",
+            "type": "steel",
+            "damage_class": "physical",
+            "name": "Meteor Mash",
+            "effect": "Has a 20% chance to raise the user's Attack by one stage."
+          },
+          {
+            "power": 100,
+            "type": "ground",
+            "damage_class": "physical",
+            "name": "Earthquake",
+            "effect": "Inflicts regular damage and can hit Dig users."
+          },
+          {
+            "power": 90,
+            "type": "electric",
+            "damage_class": "physical",
+            "name": "Wild Charge",
+            "effect": "User receives 1/4 the damage it inflicts in recoil."
+          }
+        ],
+        "ability": {
+          "name": "Flash Fire",
+          "effect": "Protects against fire moves.  Once one has been blocked, the Pokémon's own Fire moves inflict 1.5× damage until it leaves battle."
+        },
+        "held": {
+          "sprite": "air-balloon",
+          "name": "Air Balloon",
+          "effect": "Held: Grants immunity to Ground-type moves, Spikes, and Toxic Spikes. Consumed when the holder takes damage from a move."
+        },
+        "imgUrl": "/blazevolt/mt2",
+        "types": [
+          "steel",
+          "electric"
+        ],
+        "stats": {
+          "hp": 100,
+          "atk": 100,
+          "def": 100,
+          "spa": 100,
+          "spd": 100,
+          "spe": 100
+        }
+      }
+    ]
   },
   "o6_c": {
     "name": "Juan",
@@ -5773,511 +6278,6 @@
           "spa": 87,
           "spd": 63,
           "spe": 98
-        }
-      }
-    ]
-  },
-  "col2_c": {
-    "name": "Colress",
-    "speciality": "",
-    "img": "/leaders/blwh-colress",
-    "pokemon": [
-      {
-        "name": "mt",
-        "level": "53",
-        "moves": [
-          {
-            "power": 80,
-            "type": "steel",
-            "damage_class": "physical",
-            "name": "Iron Head",
-            "effect": "Has a 30% chance to make the target flinch."
-          },
-          {
-            "type": "rock",
-            "damage_class": "status",
-            "name": "Stealth Rock",
-            "effect": "Causes damage when opposing Pokémon switch in."
-          },
-          {
-            "priority": -6,
-            "type": "normal",
-            "damage_class": "status",
-            "name": "Whirlwind",
-            "effect": "Immediately ends wild battles.  Forces trainers to switch Pokémon."
-          },
-          {
-            "power": "90",
-            "type": "water",
-            "damage_class": "physical",
-            "name": "Aqua Tail"
-          }
-        ],
-        "ability": {
-          "name": "Analytic",
-          "effect": "Strengthens moves to 1.3× their power when moving last."
-        },
-        "held": {
-          "sprite": "red-card",
-          "name": "Red Card",
-          "effect": "Held: When the holder takes damage from a move, the opponent switches out for another random party Pokémon. Consumed after use."
-        },
-        "imgUrl": "/blazevolt/mt",
-        "types": [
-          "steel"
-        ],
-        "stats": {
-          "hp": 100,
-          "atk": 100,
-          "def": 100,
-          "spa": 100,
-          "spd": 100,
-          "spe": 100
-        }
-      },
-      {
-        "name": "ufo",
-        "level": "53",
-        "moves": [
-          {
-            "power": 70,
-            "type": "electric",
-            "damage_class": "special",
-            "name": "Volt Switch",
-            "effect": "User must switch out after attacking."
-          },
-          {
-            "power": 90,
-            "type": "psychic",
-            "damage_class": "special",
-            "name": "Psychic",
-            "effect": "Has a 10% chance to lower the target's Special Defense by one stage."
-          },
-          {
-            "power": 100,
-            "type": "flying",
-            "damage_class": "special",
-            "name": "Aeroblast",
-            "effect": "Has an increased chance for a critical hit."
-          },
-          {
-            "type": "normal",
-            "damage_class": "status",
-            "name": "Recover",
-            "effect": "Heals the user by half its max HP."
-          }
-        ],
-        "ability": {
-          "name": "Magic Bounce",
-          "effect": "Reflects most non-damaging moves back at their user."
-        },
-        "held": {
-          "sprite": "leftovers",
-          "name": "Leftovers",
-          "effect": "Held: Restores 1/16 (6.25%) holder's max HP at the end of each turn."
-        },
-        "imgUrl": "/blazevolt/ufo",
-        "types": [
-          "flying",
-          "electric"
-        ],
-        "stats": {
-          "hp": 100,
-          "atk": 100,
-          "def": 100,
-          "spa": 100,
-          "spd": 100,
-          "spe": 100
-        }
-      },
-      {
-        "name": "f00",
-        "level": "53",
-        "moves": [
-          {
-            "power": 70,
-            "type": "bug",
-            "damage_class": "physical",
-            "name": "U-turn",
-            "effect": "User must switch out after attacking."
-          },
-          {
-            "power": 80,
-            "priority": 2,
-            "type": "normal",
-            "damage_class": "physical",
-            "name": "Extreme Speed"
-          },
-          {
-            "type": "electric",
-            "damage_class": "status",
-            "name": "Thunder Wave",
-            "effect": "Paralyzes the target."
-          },
-          {
-            "power": "60",
-            "type": "grass",
-            "damage_class": "physical",
-            "name": "Needle Arm",
-            "effect": "Has a 30% chance to make the target flinch."
-          }
-        ],
-        "ability": {
-          "name": "Volt Absorb",
-          "effect": "Absorbs electric moves, healing for 1/4 max HP."
-        },
-        "held": {
-          "sprite": "chople-berry",
-          "name": "Chople Berry",
-          "effect": "Held: Consumed when struck by a super-effective Fighting-type attack to halve the damage."
-        },
-        "imgUrl": "/blazevolt/f00",
-        "types": [
-          "steel",
-          "normal"
-        ],
-        "stats": {
-          "hp": 100,
-          "atk": 100,
-          "def": 100,
-          "spa": 100,
-          "spd": 100,
-          "spe": 100
-        }
-      },
-      {
-        "name": "mt2",
-        "level": "53",
-        "moves": [
-          {
-            "type": "steel",
-            "damage_class": "status",
-            "name": "Shift Gear",
-            "effect": "Raises the user's Attack by one stage and its Speed by two stages."
-          },
-          {
-            "power": "90",
-            "type": "steel",
-            "damage_class": "physical",
-            "name": "Meteor Mash",
-            "effect": "Has a 20% chance to raise the user's Attack by one stage."
-          },
-          {
-            "power": 100,
-            "type": "ground",
-            "damage_class": "physical",
-            "name": "Earthquake",
-            "effect": "Inflicts regular damage and can hit Dig users."
-          },
-          {
-            "power": 90,
-            "type": "electric",
-            "damage_class": "physical",
-            "name": "Wild Charge",
-            "effect": "User receives 1/4 the damage it inflicts in recoil."
-          }
-        ],
-        "ability": {
-          "name": "Flash Fire",
-          "effect": "Protects against fire moves.  Once one has been blocked, the Pokémon's own Fire moves inflict 1.5× damage until it leaves battle."
-        },
-        "held": {
-          "sprite": "air-balloon",
-          "name": "Air Balloon",
-          "effect": "Held: Grants immunity to Ground-type moves, Spikes, and Toxic Spikes. Consumed when the holder takes damage from a move."
-        },
-        "imgUrl": "/blazevolt/mt2",
-        "types": [
-          "steel",
-          "electric"
-        ],
-        "stats": {
-          "hp": 100,
-          "atk": 100,
-          "def": 100,
-          "spa": 100,
-          "spd": 100,
-          "spe": 100
-        }
-      }
-    ]
-  },
-  "r2": {
-    "name": "Hugh",
-    "speciality": "",
-    "img": "/leaders/blwh-hugh",
-    "pokemon": [
-      {
-        "name": "swellow",
-        "level": "46",
-        "moves": [
-          {
-            "power": 140,
-            "type": "normal",
-            "damage_class": "special",
-            "name": "Boomburst"
-          },
-          {
-            "power": 40,
-            "priority": 1,
-            "type": "normal",
-            "damage_class": "physical",
-            "name": "Quick Attack"
-          },
-          {
-            "power": "120",
-            "type": "flying",
-            "damage_class": "special",
-            "name": "Hurricane",
-            "effect": "Has a 30% chance to confuse the target."
-          },
-          {
-            "power": 70,
-            "type": "bug",
-            "damage_class": "physical",
-            "name": "U-turn",
-            "effect": "User must switch out after attacking."
-          }
-        ],
-        "ability": {
-          "name": "Scrappy",
-          "effect": "Lets the Pokémon's normal and fighting moves hit ghost Pokémon."
-        },
-        "held": {
-          "sprite": "metronome",
-          "name": "Metronome",
-          "effect": "Held: Consectutive uses of the same attack have a cumulative damage boost of 10%. Maximum 100% boost."
-        },
-        "sprite": "277",
-        "types": [
-          "normal",
-          "flying"
-        ],
-        "stats": {
-          "hp": 60,
-          "atk": 85,
-          "def": 60,
-          "spa": 85,
-          "spd": 50,
-          "spe": 125
-        }
-      },
-      {
-        "name": "eelektrik",
-        "level": "46",
-        "moves": [
-          {
-            "power": 90,
-            "type": "electric",
-            "damage_class": "physical",
-            "name": "Wild Charge",
-            "effect": "User receives 1/4 the damage it inflicts in recoil."
-          },
-          {
-            "power": "90",
-            "type": "water",
-            "damage_class": "physical",
-            "name": "Aqua Tail"
-          },
-          {
-            "power": "75",
-            "type": "grass",
-            "damage_class": "special",
-            "name": "Giga Drain",
-            "effect": "Drains half the damage inflicted to heal the user."
-          },
-          {
-            "power": 75,
-            "type": "fighting",
-            "damage_class": "physical",
-            "name": "Drain Punch",
-            "effect": "Drains half the damage inflicted to heal the user."
-          }
-        ],
-        "ability": {
-          "name": "Levitate",
-          "effect": "Evades ground moves."
-        },
-        "held": {
-          "sprite": "leftovers",
-          "name": "Leftovers",
-          "effect": "Held: Restores 1/16 (6.25%) holder's max HP at the end of each turn."
-        },
-        "sprite": "603",
-        "types": [
-          "electric"
-        ],
-        "stats": {
-          "hp": 65,
-          "atk": 85,
-          "def": 70,
-          "spa": 75,
-          "spd": 70,
-          "spe": 40
-        }
-      },
-      {
-        "name": "flygon",
-        "level": "47",
-        "moves": [
-          {
-            "power": 70,
-            "type": "ground",
-            "damage_class": "special",
-            "name": "Scorching Sands"
-          },
-          {
-            "power": "80",
-            "type": "dragon",
-            "damage_class": "physical",
-            "name": "Dragon Claw",
-            "effect": "This move has a heightened chance of landing a critical hit."
-          },
-          {
-            "power": 80,
-            "type": "bug",
-            "damage_class": "physical",
-            "name": "Lunge",
-            "effect": "Lowers the target's Attack by one stage after inflicting damage."
-          },
-          {
-            "type": "dragon",
-            "damage_class": "status",
-            "name": "Dragon Dance",
-            "effect": "Raises the user's Attack and Speed by one stage."
-          }
-        ],
-        "ability": {
-          "name": "Levitate",
-          "effect": "Evades ground moves."
-        },
-        "held": {
-          "sprite": "life-orb",
-          "name": "Life Orb",
-          "effect": "Held: Holder's moves inflict 30% extra damage, but cost 10% max HP."
-        },
-        "sprite": "330",
-        "types": [
-          "bug",
-          "dragon"
-        ],
-        "stats": {
-          "hp": 90,
-          "atk": 110,
-          "def": 85,
-          "spa": 130,
-          "spd": 85,
-          "spe": 100
-        }
-      },
-      {
-        "name": "camerupt",
-        "level": "46",
-        "moves": [
-          {
-            "power": 90,
-            "type": "fire",
-            "damage_class": "special",
-            "name": "Flamethrower",
-            "effect": "Has a 10% chance to burn the target."
-          },
-          {
-            "power": "90",
-            "type": "rock",
-            "damage_class": "physical",
-            "name": "Rock Climb",
-            "effect": "Has a 20% chance to confuse the target."
-          },
-          {
-            "power": 100,
-            "type": "ground",
-            "damage_class": "physical",
-            "name": "Earthquake",
-            "effect": "Inflicts regular damage and can hit Dig users."
-          },
-          {
-            "type": "rock",
-            "damage_class": "status",
-            "name": "Rock Polish",
-            "effect": "Raises the user's Speed by two stages."
-          }
-        ],
-        "ability": {
-          "name": "Simple",
-          "effect": "Doubles the Pokémon's stat modifiers.  These doubled modifiers are still capped at -6 or 6 stages."
-        },
-        "held": {
-          "sprite": "passho-berry",
-          "name": "Passho Berry",
-          "effect": "Held: Consumed when struck by a super-effective Water-type attack to halve the damage."
-        },
-        "starter": "water",
-        "sprite": "323",
-        "types": [
-          "fire",
-          "ground"
-        ],
-        "stats": {
-          "hp": 90,
-          "atk": 110,
-          "def": 70,
-          "spa": 105,
-          "spd": 75,
-          "spe": 40
-        }
-      },
-      {
-        "name": "serperior",
-        "level": "47",
-        "moves": [
-          {
-            "type": "normal",
-            "damage_class": "status",
-            "name": "Glare",
-            "effect": "Paralyzes the target."
-          },
-          {
-            "power": 90,
-            "type": "grass",
-            "damage_class": "physical",
-            "name": "Leaf Blade",
-            "effect": "Has an increased chance for a critical hit."
-          },
-          {
-            "power": "85",
-            "type": "dragon",
-            "damage_class": "special",
-            "name": "Dragon Pulse"
-          },
-          {
-            "power": "90",
-            "type": "water",
-            "damage_class": "physical",
-            "name": "Aqua Tail"
-          }
-        ],
-        "ability": {
-          "name": "Contrary",
-          "effect": "Inverts stat changes."
-        },
-        "held": {
-          "sprite": "leftovers",
-          "name": "Leftovers",
-          "effect": "Held: Restores 1/16 (6.25%) holder's max HP at the end of each turn."
-        },
-        "starter": "water",
-        "sprite": "497",
-        "types": [
-          "grass",
-          "dragon"
-        ],
-        "stats": {
-          "hp": 75,
-          "atk": 75,
-          "def": 95,
-          "spa": 75,
-          "spd": 95,
-          "spe": 113
         }
       }
     ]
