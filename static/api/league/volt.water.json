@@ -7983,330 +7983,333 @@
       }
     ]
   },
-  "ch2": {
-    "name": "Alder",
+  "ch1": {
+    "name": "Cynthia",
     "speciality": "",
-    "img": "/leaders/blwh-alder",
+    "img": "/leaders/dp-cynthia",
     "pokemon": [
       {
-        "name": "bouffalant",
+        "name": "spiritomb",
         "level": "95",
         "moves": [
           {
-            "power": 120,
-            "type": "normal",
-            "damage_class": "physical",
-            "name": "Head Charge",
-            "effect": "User receives 1/4 the damage it inflicts in recoil."
-          },
-          {
-            "power": 100,
-            "type": "ground",
-            "damage_class": "physical",
-            "name": "Earthquake",
-            "effect": "Inflicts regular damage and can hit Dig users."
-          },
-          {
-            "power": 50,
             "type": "dark",
-            "damage_class": "physical",
-            "name": "Payback",
-            "effect": "Power is doubled if the target has already moved this turn."
-          }
-        ],
-        "ability": {
-          "name": "Reckless",
-          "effect": "Strengthens recoil moves to 1.2× their power."
-        },
-        "held": {
-          "sprite": "choice-band",
-          "name": "Choice Band",
-          "effect": "Held: Increases Attack by 50%, but restricts the holder to only one move."
-        },
-        "sprite": "626",
-        "types": [
-          "normal"
-        ],
-        "stats": {
-          "hp": 95,
-          "atk": 110,
-          "def": 95,
-          "spa": 40,
-          "spd": 95,
-          "spe": 55
-        }
-      },
-      {
-        "name": "braviary",
-        "level": "95",
-        "moves": [
-          {
-            "power": 120,
-            "type": "flying",
-            "damage_class": "physical",
-            "name": "Brave Bird",
-            "effect": "User receives 1/3 the damage inflicted in recoil."
-          },
-          {
-            "power": "80",
-            "type": "rock",
-            "damage_class": "physical",
-            "name": "Rock Slide",
-            "effect": "Has a 30% chance to make the target flinch."
-          },
-          {
-            "power": 120,
-            "type": "fighting",
-            "damage_class": "physical",
-            "name": "Superpower",
-            "effect": "Lowers the user's Attack and Defense by one stage after inflicting damage."
-          },
-          {
-            "type": "normal",
-            "damage_class": "physical",
-            "name": "Return",
-            "effect": "Power increases with happiness, up to a maximum of 102."
-          }
-        ],
-        "ability": {
-          "name": "Defiant",
-          "effect": "Raises Attack two stages upon having any stat lowered."
-        },
-        "held": {
-          "sprite": "flying-gem",
-          "name": "Flying Gem",
-          "effect": "Held: When the holder uses a damaging flying-type move, the move has 1.5× power and this item is consumed."
-        },
-        "sprite": "628",
-        "types": [
-          "normal",
-          "flying"
-        ],
-        "stats": {
-          "hp": 100,
-          "atk": 123,
-          "def": 75,
-          "spa": 57,
-          "spd": 75,
-          "spe": 80
-        }
-      },
-      {
-        "name": "espeon",
-        "level": "95",
-        "moves": [
-          {
-            "type": "normal",
             "damage_class": "status",
-            "name": "Morning Sun",
-            "effect": "Heals the user by half its max HP.  Affected by weather."
-          },
-          {
-            "power": 80,
-            "type": "psychic",
-            "damage_class": "special",
-            "name": "Psyshock",
-            "effect": "Inflicts damage based on the target's Defense, not Special Defense."
-          },
-          {
-            "type": "grass",
-            "damage_class": "special",
-            "name": "Grass Knot",
-            "effect": "Inflicts more damage to heavier targets, with a maximum of 120 power."
+            "name": "Nasty Plot",
+            "effect": "Raises the user's Special Attack by two stages."
           },
           {
             "power": "90",
-            "type": "ghost",
+            "type": "dark",
             "damage_class": "special",
-            "name": "Shadow Ball",
-            "effect": "Has a 20% chance to lower the target's Special Defense by one stage."
-          }
-        ],
-        "ability": {
-          "name": "Magic Bounce",
-          "effect": "Reflects most non-damaging moves back at their user."
-        },
-        "held": {
-          "sprite": "focus-sash",
-          "name": "Focus Sash",
-          "effect": "Held: Holder survives any single-hit attack at 1 HP if at max HP, then the item is consumed."
-        },
-        "sprite": "196",
-        "types": [
-          "psychic"
-        ],
-        "stats": {
-          "hp": 65,
-          "atk": 65,
-          "def": 60,
-          "spa": 130,
-          "spd": 95,
-          "spe": 110
-        }
-      },
-      {
-        "name": "flygon",
-        "level": "95",
-        "moves": [
-          {
-            "power": 130,
-            "type": "dragon",
-            "damage_class": "special",
-            "name": "Draco Meteor",
-            "effect": "Lowers the user's Special Attack by two stages after inflicting damage."
+            "name": "Dark Pulse",
+            "effect": "Has a 20% chance to make the target flinch."
           },
           {
-            "power": 100,
-            "type": "ground",
-            "damage_class": "physical",
-            "name": "Earthquake",
-            "effect": "Inflicts regular damage and can hit Dig users."
-          },
-          {
-            "power": 80,
-            "type": "dragon",
-            "damage_class": "physical",
-            "name": "Dragon Claw"
-          },
-          {
-            "power": "80",
             "type": "fire",
-            "damage_class": "physical",
-            "name": "Fire Punch",
-            "effect": "Has a 10% chance to burn the target."
-          }
-        ],
-        "ability": {
-          "name": "Levitate",
-          "effect": "Evades ground moves."
-        },
-        "held": {
-          "sprite": "yache-berry",
-          "name": "Yache Berry",
-          "effect": "Held: Consumed when struck by a super-effective Ice-type attack to halve the damage."
-        },
-        "sprite": "330",
-        "types": [
-          "ground",
-          "dragon"
-        ],
-        "stats": {
-          "hp": 80,
-          "atk": 110,
-          "def": 75,
-          "spa": 110,
-          "spd": 75,
-          "spe": 100
-        }
-      },
-      {
-        "name": "vanilluxe",
-        "level": "95",
-        "moves": [
-          {
-            "power": 60,
-            "type": "ice",
-            "damage_class": "special",
-            "name": "Frost Breath",
-            "effect": "Always scores a critical hit."
+            "damage_class": "status",
+            "name": "Will-O-Wisp",
+            "effect": "Burns the target."
           },
           {
-            "power": 50,
             "type": "normal",
-            "damage_class": "special",
-            "name": "Weather Ball",
-            "effect": "If there be weather, this move has doubled power and the weather's type."
-          },
-          {
-            "power": 40,
-            "priority": 1,
-            "type": "ice",
-            "damage_class": "physical",
-            "name": "Ice Shard"
-          },
-          {
-            "power": 80,
-            "type": "steel",
-            "damage_class": "special",
-            "name": "Flash Cannon",
-            "effect": "Has a 10% chance to lower the target's Special Defense by one stage."
+            "damage_class": "status",
+            "name": "Pain Split",
+            "effect": "Sets the user's and targets's HP to the average of their current HP."
           }
         ],
         "ability": {
-          "name": "Weak Armor",
-          "effect": "Raises Speed and lowers Defense by one stage each upon being hit by a physical move."
+          "name": "Pressure",
+          "effect": "Increases the PP cost of moves targetting the Pokémon by one."
         },
         "held": {
-          "sprite": "red-card",
-          "name": "Red Card",
-          "effect": "Held: When the holder takes damage from a move, the opponent switches out for another random party Pokémon. Consumed after use."
+          "sprite": "lax-incense",
+          "name": "Lax Incense",
+          "effect": "Held: Holder's evasion is increased by 5%. Breeding: Wobbuffet begets a Wynaut Egg."
         },
-        "sprite": "584",
+        "sprite": "442",
         "types": [
-          "ice"
+          "ghost",
+          "dark"
         ],
         "stats": {
-          "hp": 70,
-          "atk": 70,
-          "def": 80,
-          "spa": 145,
-          "spd": 90,
-          "spe": 80
+          "hp": 50,
+          "atk": 92,
+          "def": 108,
+          "spa": 92,
+          "spd": 108,
+          "spe": 35
         }
       },
       {
-        "name": "volcarona",
-        "level": "100",
+        "name": "roserade",
+        "level": "95",
         "moves": [
           {
-            "power": 80,
-            "type": "fire",
-            "damage_class": "special",
-            "name": "Fiery Dance",
-            "effect": "Has a 50% chance to raise the user's Special Attack by one stage."
+            "type": "grass",
+            "damage_class": "status",
+            "name": "Sleep Powder",
+            "effect": "Puts the target to sleep."
           },
           {
             "power": 90,
-            "type": "bug",
+            "type": "poison",
             "damage_class": "special",
-            "name": "Bug Buzz",
-            "effect": "Has a 10% chance to lower the target's Special Defense by one stage."
+            "name": "Sludge Bomb",
+            "effect": "Has a 30% chance to poison the target."
+          },
+          {
+            "power": 60,
+            "type": "grass",
+            "damage_class": "special",
+            "name": "Magical Leaf",
+            "effect": "Never misses."
           },
           {
             "type": "bug",
             "damage_class": "status",
             "name": "Quiver Dance",
             "effect": "Raises the user's Special Attack, Special Defense, and Speed by one stage each."
-          },
-          {
-            "power": 90,
-            "type": "psychic",
-            "damage_class": "special",
-            "name": "Psychic",
-            "effect": "Has a 10% chance to lower the target's Special Defense by one stage."
           }
         ],
         "ability": {
-          "name": "Drought",
-          "effect": "Summons strong sunlight that lasts indefinitely upon entering battle."
+          "name": "Technician",
+          "effect": "Strengthens moves of 60 base power or less to 1.5× their power."
+        },
+        "held": {
+          "sprite": "rose-incense",
+          "name": "Rose Incense",
+          "effect": "Held: Grass-Type moves from holder do 20% more damage. Breeding: Roselia or Roserade beget a Budew Egg."
+        },
+        "sprite": "407",
+        "types": [
+          "grass",
+          "poison"
+        ],
+        "stats": {
+          "hp": 60,
+          "atk": 70,
+          "def": 65,
+          "spa": 125,
+          "spd": 105,
+          "spe": 100
+        }
+      },
+      {
+        "name": "milotic",
+        "level": "95",
+        "moves": [
+          {
+            "power": 110,
+            "type": "water",
+            "damage_class": "special",
+            "name": "Hydro Pump"
+          },
+          {
+            "power": 110,
+            "type": "ice",
+            "damage_class": "special",
+            "name": "Blizzard",
+            "effect": "Has a 10% chance to freeze the target."
+          },
+          {
+            "type": "normal",
+            "damage_class": "status",
+            "name": "Recover",
+            "effect": "Heals the user by half its max HP."
+          },
+          {
+            "type": "poison",
+            "damage_class": "status",
+            "name": "Toxic",
+            "effect": "Badly poisons the target, inflicting more damage every turn."
+          }
+        ],
+        "ability": {
+          "name": "Multiscale",
+          "effect": "Halves damage taken from full HP."
+        },
+        "held": {
+          "sprite": "sea-incense",
+          "name": "Sea Incense",
+          "effect": "Held: Water-Type moves from holder do 20% more damage. Breeding: Marill or Azumarill beget an Azurill Egg."
+        },
+        "sprite": "350",
+        "types": [
+          "water"
+        ],
+        "stats": {
+          "hp": 95,
+          "atk": 60,
+          "def": 79,
+          "spa": 100,
+          "spd": 125,
+          "spe": 81
+        }
+      },
+      {
+        "name": "togekiss",
+        "level": "95",
+        "moves": [
+          {
+            "type": "electric",
+            "damage_class": "status",
+            "name": "Thunder Wave",
+            "effect": "Paralyzes the target."
+          },
+          {
+            "power": 75,
+            "type": "flying",
+            "damage_class": "special",
+            "name": "Air Slash",
+            "effect": "Has a 30% chance to make the target flinch."
+          },
+          {
+            "power": 80,
+            "type": "normal",
+            "damage_class": "special",
+            "name": "Tri Attack",
+            "effect": "Has a 20% chance to burn, freeze, or paralyze the target."
+          },
+          {
+            "power": 80,
+            "type": "fighting",
+            "damage_class": "special",
+            "name": "Aura Sphere",
+            "effect": "Never misses."
+          }
+        ],
+        "ability": {
+          "name": "Serene Grace",
+          "effect": "Doubles the chance of moves' extra effects occurring."
+        },
+        "held": {
+          "sprite": "scope-lens",
+          "name": "Scope Lens",
+          "effect": "Held: Raises the holder's critical hit ratio by one stage."
+        },
+        "sprite": "468",
+        "types": [
+          "fairy",
+          "flying"
+        ],
+        "stats": {
+          "hp": 85,
+          "atk": 50,
+          "def": 95,
+          "spa": 120,
+          "spd": 115,
+          "spe": 80
+        }
+      },
+      {
+        "name": "lucario",
+        "level": "95",
+        "moves": [
+          {
+            "type": "dark",
+            "damage_class": "status",
+            "name": "Nasty Plot",
+            "effect": "Raises the user's Special Attack by two stages."
+          },
+          {
+            "power": 80,
+            "type": "fighting",
+            "damage_class": "special",
+            "name": "Aura Sphere",
+            "effect": "Never misses."
+          },
+          {
+            "power": 85,
+            "type": "dragon",
+            "damage_class": "special",
+            "name": "Dragon Pulse"
+          },
+          {
+            "power": "80",
+            "type": "ice",
+            "damage_class": "physical",
+            "name": "Ice Punch",
+            "effect": "Has a 10% chance to freeze the target."
+          }
+        ],
+        "ability": {
+          "name": "Justified",
+          "effect": "Raises Attack one stage upon taking damage from a dark move."
         },
         "held": {
           "sprite": "life-orb",
           "name": "Life Orb",
           "effect": "Held: Holder's moves inflict 30% extra damage, but cost 10% max HP."
         },
-        "sprite": "637",
+        "sprite": "448",
         "types": [
-          "bug",
-          "fire"
+          "fighting",
+          "steel"
         ],
         "stats": {
-          "hp": 85,
-          "atk": 60,
-          "def": 65,
-          "spa": 135,
-          "spd": 105,
-          "spe": 100
+          "hp": 70,
+          "atk": 110,
+          "def": 70,
+          "spa": 115,
+          "spd": 70,
+          "spe": 90
+        }
+      },
+      {
+        "name": "garchomp",
+        "level": "100",
+        "moves": [
+          {
+            "power": 120,
+            "type": "dragon",
+            "damage_class": "physical",
+            "name": "Outrage",
+            "effect": "Hits every turn for 2-3 turns, then confuses the user."
+          },
+          {
+            "power": 100,
+            "type": "ground",
+            "damage_class": "physical",
+            "name": "Earthquake",
+            "effect": "Inflicts regular damage and can hit Dig users."
+          },
+          {
+            "power": 100,
+            "type": "rock",
+            "damage_class": "physical",
+            "name": "Stone Edge",
+            "effect": "Has an increased chance for a critical hit."
+          },
+          {
+            "power": 80,
+            "priority": 2,
+            "type": "normal",
+            "damage_class": "physical",
+            "name": "Extreme Speed"
+          }
+        ],
+        "ability": {
+          "name": "Rough Skin",
+          "effect": "Damages attacking Pokémon for 1/8 their max HP on contact."
+        },
+        "held": {
+          "sprite": "life-orb",
+          "name": "Life Orb",
+          "effect": "Held: Holder's moves inflict 30% extra damage, but cost 10% max HP."
+        },
+        "sprite": "445",
+        "types": [
+          "dragon",
+          "ground"
+        ],
+        "stats": {
+          "hp": 108,
+          "atk": 130,
+          "def": 95,
+          "spa": 80,
+          "spd": 85,
+          "spe": 102
         }
       }
     ]
@@ -9599,289 +9602,21 @@
       }
     ]
   },
-  "ch1": {
-    "name": "Cynthia",
+  "ch2": {
+    "name": "Alder",
     "speciality": "",
-    "img": "/leaders/dp-cynthia",
+    "img": "/leaders/blwh-alder",
     "pokemon": [
       {
-        "name": "spiritomb",
+        "name": "bouffalant",
         "level": "95",
-        "moves": [
-          {
-            "type": "dark",
-            "damage_class": "status",
-            "name": "Nasty Plot",
-            "effect": "Raises the user's Special Attack by two stages."
-          },
-          {
-            "power": "90",
-            "type": "dark",
-            "damage_class": "special",
-            "name": "Dark Pulse",
-            "effect": "Has a 20% chance to make the target flinch."
-          },
-          {
-            "type": "fire",
-            "damage_class": "status",
-            "name": "Will-O-Wisp",
-            "effect": "Burns the target."
-          },
-          {
-            "type": "normal",
-            "damage_class": "status",
-            "name": "Pain Split",
-            "effect": "Sets the user's and targets's HP to the average of their current HP."
-          }
-        ],
-        "ability": {
-          "name": "Pressure",
-          "effect": "Increases the PP cost of moves targetting the Pokémon by one."
-        },
-        "held": {
-          "sprite": "lax-incense",
-          "name": "Lax Incense",
-          "effect": "Held: Holder's evasion is increased by 5%. Breeding: Wobbuffet begets a Wynaut Egg."
-        },
-        "sprite": "442",
-        "types": [
-          "ghost",
-          "dark"
-        ],
-        "stats": {
-          "hp": 50,
-          "atk": 92,
-          "def": 108,
-          "spa": 92,
-          "spd": 108,
-          "spe": 35
-        }
-      },
-      {
-        "name": "roserade",
-        "level": "95",
-        "moves": [
-          {
-            "type": "grass",
-            "damage_class": "status",
-            "name": "Sleep Powder",
-            "effect": "Puts the target to sleep."
-          },
-          {
-            "power": 90,
-            "type": "poison",
-            "damage_class": "special",
-            "name": "Sludge Bomb",
-            "effect": "Has a 30% chance to poison the target."
-          },
-          {
-            "power": 60,
-            "type": "grass",
-            "damage_class": "special",
-            "name": "Magical Leaf",
-            "effect": "Never misses."
-          },
-          {
-            "type": "bug",
-            "damage_class": "status",
-            "name": "Quiver Dance",
-            "effect": "Raises the user's Special Attack, Special Defense, and Speed by one stage each."
-          }
-        ],
-        "ability": {
-          "name": "Technician",
-          "effect": "Strengthens moves of 60 base power or less to 1.5× their power."
-        },
-        "held": {
-          "sprite": "rose-incense",
-          "name": "Rose Incense",
-          "effect": "Held: Grass-Type moves from holder do 20% more damage. Breeding: Roselia or Roserade beget a Budew Egg."
-        },
-        "sprite": "407",
-        "types": [
-          "grass",
-          "poison"
-        ],
-        "stats": {
-          "hp": 60,
-          "atk": 70,
-          "def": 65,
-          "spa": 125,
-          "spd": 105,
-          "spe": 100
-        }
-      },
-      {
-        "name": "milotic",
-        "level": "95",
-        "moves": [
-          {
-            "power": 110,
-            "type": "water",
-            "damage_class": "special",
-            "name": "Hydro Pump"
-          },
-          {
-            "power": 110,
-            "type": "ice",
-            "damage_class": "special",
-            "name": "Blizzard",
-            "effect": "Has a 10% chance to freeze the target."
-          },
-          {
-            "type": "normal",
-            "damage_class": "status",
-            "name": "Recover",
-            "effect": "Heals the user by half its max HP."
-          },
-          {
-            "type": "poison",
-            "damage_class": "status",
-            "name": "Toxic",
-            "effect": "Badly poisons the target, inflicting more damage every turn."
-          }
-        ],
-        "ability": {
-          "name": "Multiscale",
-          "effect": "Halves damage taken from full HP."
-        },
-        "held": {
-          "sprite": "sea-incense",
-          "name": "Sea Incense",
-          "effect": "Held: Water-Type moves from holder do 20% more damage. Breeding: Marill or Azumarill beget an Azurill Egg."
-        },
-        "sprite": "350",
-        "types": [
-          "water"
-        ],
-        "stats": {
-          "hp": 95,
-          "atk": 60,
-          "def": 79,
-          "spa": 100,
-          "spd": 125,
-          "spe": 81
-        }
-      },
-      {
-        "name": "togekiss",
-        "level": "95",
-        "moves": [
-          {
-            "type": "electric",
-            "damage_class": "status",
-            "name": "Thunder Wave",
-            "effect": "Paralyzes the target."
-          },
-          {
-            "power": 75,
-            "type": "flying",
-            "damage_class": "special",
-            "name": "Air Slash",
-            "effect": "Has a 30% chance to make the target flinch."
-          },
-          {
-            "power": 80,
-            "type": "normal",
-            "damage_class": "special",
-            "name": "Tri Attack",
-            "effect": "Has a 20% chance to burn, freeze, or paralyze the target."
-          },
-          {
-            "power": 80,
-            "type": "fighting",
-            "damage_class": "special",
-            "name": "Aura Sphere",
-            "effect": "Never misses."
-          }
-        ],
-        "ability": {
-          "name": "Serene Grace",
-          "effect": "Doubles the chance of moves' extra effects occurring."
-        },
-        "held": {
-          "sprite": "scope-lens",
-          "name": "Scope Lens",
-          "effect": "Held: Raises the holder's critical hit ratio by one stage."
-        },
-        "sprite": "468",
-        "types": [
-          "fairy",
-          "flying"
-        ],
-        "stats": {
-          "hp": 85,
-          "atk": 50,
-          "def": 95,
-          "spa": 120,
-          "spd": 115,
-          "spe": 80
-        }
-      },
-      {
-        "name": "lucario",
-        "level": "95",
-        "moves": [
-          {
-            "type": "dark",
-            "damage_class": "status",
-            "name": "Nasty Plot",
-            "effect": "Raises the user's Special Attack by two stages."
-          },
-          {
-            "power": 80,
-            "type": "fighting",
-            "damage_class": "special",
-            "name": "Aura Sphere",
-            "effect": "Never misses."
-          },
-          {
-            "power": 85,
-            "type": "dragon",
-            "damage_class": "special",
-            "name": "Dragon Pulse"
-          },
-          {
-            "power": "80",
-            "type": "ice",
-            "damage_class": "physical",
-            "name": "Ice Punch",
-            "effect": "Has a 10% chance to freeze the target."
-          }
-        ],
-        "ability": {
-          "name": "Justified",
-          "effect": "Raises Attack one stage upon taking damage from a dark move."
-        },
-        "held": {
-          "sprite": "life-orb",
-          "name": "Life Orb",
-          "effect": "Held: Holder's moves inflict 30% extra damage, but cost 10% max HP."
-        },
-        "sprite": "448",
-        "types": [
-          "fighting",
-          "steel"
-        ],
-        "stats": {
-          "hp": 70,
-          "atk": 110,
-          "def": 70,
-          "spa": 115,
-          "spd": 70,
-          "spe": 90
-        }
-      },
-      {
-        "name": "garchomp",
-        "level": "100",
         "moves": [
           {
             "power": 120,
-            "type": "dragon",
+            "type": "normal",
             "damage_class": "physical",
-            "name": "Outrage",
-            "effect": "Hits every turn for 2-3 turns, then confuses the user."
+            "name": "Head Charge",
+            "effect": "User receives 1/4 the damage it inflicts in recoil."
           },
           {
             "power": 100,
@@ -9891,41 +9626,306 @@
             "effect": "Inflicts regular damage and can hit Dig users."
           },
           {
-            "power": 100,
-            "type": "rock",
+            "power": 50,
+            "type": "dark",
             "damage_class": "physical",
-            "name": "Stone Edge",
-            "effect": "Has an increased chance for a critical hit."
-          },
-          {
-            "power": 80,
-            "priority": 2,
-            "type": "normal",
-            "damage_class": "physical",
-            "name": "Extreme Speed"
+            "name": "Payback",
+            "effect": "Power is doubled if the target has already moved this turn."
           }
         ],
         "ability": {
-          "name": "Rough Skin",
-          "effect": "Damages attacking Pokémon for 1/8 their max HP on contact."
+          "name": "Reckless",
+          "effect": "Strengthens recoil moves to 1.2× their power."
+        },
+        "held": {
+          "sprite": "choice-band",
+          "name": "Choice Band",
+          "effect": "Held: Increases Attack by 50%, but restricts the holder to only one move."
+        },
+        "sprite": "626",
+        "types": [
+          "normal"
+        ],
+        "stats": {
+          "hp": 95,
+          "atk": 110,
+          "def": 95,
+          "spa": 40,
+          "spd": 95,
+          "spe": 55
+        }
+      },
+      {
+        "name": "braviary",
+        "level": "95",
+        "moves": [
+          {
+            "power": 120,
+            "type": "flying",
+            "damage_class": "physical",
+            "name": "Brave Bird",
+            "effect": "User receives 1/3 the damage inflicted in recoil."
+          },
+          {
+            "power": "80",
+            "type": "rock",
+            "damage_class": "physical",
+            "name": "Rock Slide",
+            "effect": "Has a 30% chance to make the target flinch."
+          },
+          {
+            "power": 120,
+            "type": "fighting",
+            "damage_class": "physical",
+            "name": "Superpower",
+            "effect": "Lowers the user's Attack and Defense by one stage after inflicting damage."
+          },
+          {
+            "type": "normal",
+            "damage_class": "physical",
+            "name": "Return",
+            "effect": "Power increases with happiness, up to a maximum of 102."
+          }
+        ],
+        "ability": {
+          "name": "Defiant",
+          "effect": "Raises Attack two stages upon having any stat lowered."
+        },
+        "held": {
+          "sprite": "flying-gem",
+          "name": "Flying Gem",
+          "effect": "Held: When the holder uses a damaging flying-type move, the move has 1.5× power and this item is consumed."
+        },
+        "sprite": "628",
+        "types": [
+          "normal",
+          "flying"
+        ],
+        "stats": {
+          "hp": 100,
+          "atk": 123,
+          "def": 75,
+          "spa": 57,
+          "spd": 75,
+          "spe": 80
+        }
+      },
+      {
+        "name": "espeon",
+        "level": "95",
+        "moves": [
+          {
+            "type": "normal",
+            "damage_class": "status",
+            "name": "Morning Sun",
+            "effect": "Heals the user by half its max HP.  Affected by weather."
+          },
+          {
+            "power": 80,
+            "type": "psychic",
+            "damage_class": "special",
+            "name": "Psyshock",
+            "effect": "Inflicts damage based on the target's Defense, not Special Defense."
+          },
+          {
+            "type": "grass",
+            "damage_class": "special",
+            "name": "Grass Knot",
+            "effect": "Inflicts more damage to heavier targets, with a maximum of 120 power."
+          },
+          {
+            "power": "90",
+            "type": "ghost",
+            "damage_class": "special",
+            "name": "Shadow Ball",
+            "effect": "Has a 20% chance to lower the target's Special Defense by one stage."
+          }
+        ],
+        "ability": {
+          "name": "Magic Bounce",
+          "effect": "Reflects most non-damaging moves back at their user."
+        },
+        "held": {
+          "sprite": "focus-sash",
+          "name": "Focus Sash",
+          "effect": "Held: Holder survives any single-hit attack at 1 HP if at max HP, then the item is consumed."
+        },
+        "sprite": "196",
+        "types": [
+          "psychic"
+        ],
+        "stats": {
+          "hp": 65,
+          "atk": 65,
+          "def": 60,
+          "spa": 130,
+          "spd": 95,
+          "spe": 110
+        }
+      },
+      {
+        "name": "flygon",
+        "level": "95",
+        "moves": [
+          {
+            "power": 130,
+            "type": "dragon",
+            "damage_class": "special",
+            "name": "Draco Meteor",
+            "effect": "Lowers the user's Special Attack by two stages after inflicting damage."
+          },
+          {
+            "power": 100,
+            "type": "ground",
+            "damage_class": "physical",
+            "name": "Earthquake",
+            "effect": "Inflicts regular damage and can hit Dig users."
+          },
+          {
+            "power": 80,
+            "type": "dragon",
+            "damage_class": "physical",
+            "name": "Dragon Claw"
+          },
+          {
+            "power": "80",
+            "type": "fire",
+            "damage_class": "physical",
+            "name": "Fire Punch",
+            "effect": "Has a 10% chance to burn the target."
+          }
+        ],
+        "ability": {
+          "name": "Levitate",
+          "effect": "Evades ground moves."
+        },
+        "held": {
+          "sprite": "yache-berry",
+          "name": "Yache Berry",
+          "effect": "Held: Consumed when struck by a super-effective Ice-type attack to halve the damage."
+        },
+        "sprite": "330",
+        "types": [
+          "ground",
+          "dragon"
+        ],
+        "stats": {
+          "hp": 80,
+          "atk": 110,
+          "def": 75,
+          "spa": 110,
+          "spd": 75,
+          "spe": 100
+        }
+      },
+      {
+        "name": "vanilluxe",
+        "level": "95",
+        "moves": [
+          {
+            "power": 60,
+            "type": "ice",
+            "damage_class": "special",
+            "name": "Frost Breath",
+            "effect": "Always scores a critical hit."
+          },
+          {
+            "power": 50,
+            "type": "normal",
+            "damage_class": "special",
+            "name": "Weather Ball",
+            "effect": "If there be weather, this move has doubled power and the weather's type."
+          },
+          {
+            "power": 40,
+            "priority": 1,
+            "type": "ice",
+            "damage_class": "physical",
+            "name": "Ice Shard"
+          },
+          {
+            "power": 80,
+            "type": "steel",
+            "damage_class": "special",
+            "name": "Flash Cannon",
+            "effect": "Has a 10% chance to lower the target's Special Defense by one stage."
+          }
+        ],
+        "ability": {
+          "name": "Weak Armor",
+          "effect": "Raises Speed and lowers Defense by one stage each upon being hit by a physical move."
+        },
+        "held": {
+          "sprite": "red-card",
+          "name": "Red Card",
+          "effect": "Held: When the holder takes damage from a move, the opponent switches out for another random party Pokémon. Consumed after use."
+        },
+        "sprite": "584",
+        "types": [
+          "ice"
+        ],
+        "stats": {
+          "hp": 70,
+          "atk": 70,
+          "def": 80,
+          "spa": 145,
+          "spd": 90,
+          "spe": 80
+        }
+      },
+      {
+        "name": "volcarona",
+        "level": "100",
+        "moves": [
+          {
+            "power": 80,
+            "type": "fire",
+            "damage_class": "special",
+            "name": "Fiery Dance",
+            "effect": "Has a 50% chance to raise the user's Special Attack by one stage."
+          },
+          {
+            "power": 90,
+            "type": "bug",
+            "damage_class": "special",
+            "name": "Bug Buzz",
+            "effect": "Has a 10% chance to lower the target's Special Defense by one stage."
+          },
+          {
+            "type": "bug",
+            "damage_class": "status",
+            "name": "Quiver Dance",
+            "effect": "Raises the user's Special Attack, Special Defense, and Speed by one stage each."
+          },
+          {
+            "power": 90,
+            "type": "psychic",
+            "damage_class": "special",
+            "name": "Psychic",
+            "effect": "Has a 10% chance to lower the target's Special Defense by one stage."
+          }
+        ],
+        "ability": {
+          "name": "Drought",
+          "effect": "Summons strong sunlight that lasts indefinitely upon entering battle."
         },
         "held": {
           "sprite": "life-orb",
           "name": "Life Orb",
           "effect": "Held: Holder's moves inflict 30% extra damage, but cost 10% max HP."
         },
-        "sprite": "445",
+        "sprite": "637",
         "types": [
-          "dragon",
-          "ground"
+          "bug",
+          "fire"
         ],
         "stats": {
-          "hp": 108,
-          "atk": 130,
-          "def": 95,
-          "spa": 80,
-          "spd": 85,
-          "spe": 102
+          "hp": 85,
+          "atk": 60,
+          "def": 65,
+          "spa": 135,
+          "spd": 105,
+          "spe": 100
         }
       }
     ]
