@@ -11187,7 +11187,7 @@
       "type": "gym",
       "name": "Nimbasa City",
       "value": "charles",
-      "group": "",
+      "group": "mini-boss",
       "boss": "Charles"
     },
     {
@@ -11258,13 +11258,6 @@
       "boss": "Norman"
     },
     {
-      "type": "gym",
-      "name": "Route 6",
-      "value": "r2",
-      "group": "",
-      "boss": "Hugh"
-    },
-    {
       "type": "route",
       "name": "Clay Tunnel",
       "encounters": [
@@ -11290,6 +11283,13 @@
       "value": "7_n",
       "group": "gym-leader",
       "boss": "Clay"
+    },
+    {
+      "type": "gym",
+      "name": "Route 6",
+      "value": "r2",
+      "group": "rival",
+      "boss": "Hugh"
     },
     {
       "type": "route",
@@ -11643,7 +11643,7 @@
       "type": "gym",
       "name": "Route 12",
       "value": "benga_n",
-      "group": "",
+      "group": "mini-boss",
       "boss": "Benga"
     },
     {
@@ -13079,7 +13079,7 @@
       "type": "gym",
       "name": "Nimbasa City",
       "value": "charles",
-      "group": "",
+      "group": "mini-boss",
       "boss": "Charles"
     },
     {
@@ -13150,13 +13150,6 @@
       "boss": "Norman"
     },
     {
-      "type": "gym",
-      "name": "Route 6",
-      "value": "r2",
-      "group": "",
-      "boss": "Hugh"
-    },
-    {
       "type": "route",
       "name": "Clay Tunnel",
       "encounters": [
@@ -13182,6 +13175,13 @@
       "value": "7_c",
       "group": "gym-leader",
       "boss": "Clay"
+    },
+    {
+      "type": "gym",
+      "name": "Route 6",
+      "value": "r2",
+      "group": "rival",
+      "boss": "Hugh"
     },
     {
       "type": "route",
@@ -13535,7 +13535,7 @@
       "type": "gym",
       "name": "Route 12",
       "value": "benga_c",
-      "group": "",
+      "group": "mini-boss",
       "boss": "Benga"
     },
     {
