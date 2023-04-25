@@ -1,7 +1,7 @@
 <script>
   import { browser, dev } from '$app/environment'
   import { page } from '$app/stores'
-  import { onMount, getContext } from 'svelte'
+  import { onMount } from 'svelte'
 
   import { createUser, readdata } from '$lib/store'
 

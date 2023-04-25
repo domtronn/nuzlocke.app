@@ -3,11 +3,14 @@
 
   import { onMount } from 'svelte'
   import { CookieBanner, Footer } from '$c/navs'
+  import { readdata } from '$lib/store'
 
   import createErrorModal from '$utils/error-handler'
 
   import deferStyles from '$lib/utils/defer-styles'
   onMount(async () => {
+    const [, id] = readdata()
+    if (id === 'blazingem') deferStyles('/assets/pokemon-blazingem.css')
     deferStyles('/assets/pokemon.css')
     deferStyles('/assets/badges.css')
     window.onunhandledrejection = createErrorModal
