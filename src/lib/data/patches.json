@@ -1290,8 +1290,8 @@
           "spe": 100
         },
         "total": 600,
-        "evoline": "mt",
-        "imgUrl": "/blazevolt/mt"
+        "imgUrl": "/blazevolt/mt",
+        "evoline": "mt"
       },
       "mt2": {
         "name": "MT2",
@@ -1311,8 +1311,8 @@
           "spe": 100
         },
         "total": 600,
-        "evoline": "mt",
-        "imgUrl": "/blazevolt/mt2"
+        "imgUrl": "/blazevolt/mt2",
+        "evoline": "mt"
       },
       "f00": {
         "name": "F-00",
@@ -1332,8 +1332,8 @@
           "spe": 100
         },
         "total": 600,
-        "evoline": "f00",
-        "imgUrl": "/blazevolt/f00"
+        "imgUrl": "/blazevolt/f00",
+        "evoline": "f00"
       },
       "ufo": {
         "name": "UFO",
@@ -1353,8 +1353,8 @@
           "spe": 100
         },
         "total": 600,
-        "evoline": "ufo",
-        "imgUrl": "/blazevolt/ufo"
+        "imgUrl": "/blazevolt/ufo",
+        "evoline": "ufo"
       }
     },
     "pokemon": {
@@ -3635,14 +3635,18 @@
     "pokemon": {
       "eevee": {
         "name": "eevee",
-        "stats": {
-          "hp": 60,
-          "atk": 60,
-          "def": 60,
-          "spa": 60,
-          "spd": 60,
-          "spe": 60
-        }
+        "evoline": "eevee",
+        "evos": [
+          "sylveon",
+          "jolteon",
+          "flareon",
+          "vaporeon",
+          "leafeon",
+          "glaceon",
+          "espeon",
+          "umbreon",
+          "oreon"
+        ]
       },
       "vaporeon": {
         "name": "vaporeon",
@@ -4982,6 +4986,51 @@
           "hp": 90,
           "spd": 75
         }
+      },
+      "kakuna": {
+        "name": "kakuna",
+        "evoline": "weedle",
+        "evos": [
+          "beedrill",
+          "drilladin"
+        ]
+      },
+      "doduo": {
+        "name": "doduo",
+        "evoline": "doduo",
+        "evos": [
+          "dodrio",
+          "dodrio-hoenn"
+        ]
+      },
+      "farfetchd": {
+        "name": "farfetchd",
+        "evoline": "farfetchd",
+        "evos": [
+          "mallarki"
+        ]
+      },
+      "seviper": {
+        "name": "seviper",
+        "evoline": "seviper",
+        "evos": [
+          "silviper"
+        ]
+      },
+      "zangoose": {
+        "name": "zangoose",
+        "evoline": "zangoose",
+        "evos": [
+          "zangoro"
+        ]
+      },
+      "remoraid": {
+        "name": "remoraid",
+        "evoline": "remoraid",
+        "evos": [
+          "octillery",
+          "slingray"
+        ]
       }
     },
     "fakemon": {
@@ -5002,8 +5051,8 @@
           "spe": 60
         },
         "total": 500,
-        "evoline": "eevee",
-        "imgUrl": "/blazingem/oreon"
+        "imgUrl": "/blazingem/oreon",
+        "evoline": "eevee"
       },
       "venonat-hoenn": {
         "name": "Hoennian Venonat",
@@ -5023,8 +5072,8 @@
           "spe": 65
         },
         "total": 305,
-        "evoline": "venonant",
         "imgUrl": "/blazingem/h-venonant",
+        "evoline": "venonant",
         "evos": [
           "muramoth",
           "lucemoth"
@@ -5048,8 +5097,8 @@
           "spe": 55
         },
         "total": 485,
-        "evoline": "venonat",
-        "imgUrl": "/blazingem/muramoth"
+        "imgUrl": "/blazingem/muramoth",
+        "evoline": "venonat"
       },
       "lucemoth": {
         "name": "Lucemoth",
@@ -5069,8 +5118,8 @@
           "spe": 105
         },
         "total": 485,
-        "evoline": "venonat",
-        "imgUrl": "/blazingem/lucemoth"
+        "imgUrl": "/blazingem/lucemoth",
+        "evoline": "venonat"
       },
       "drilladin": {
         "name": "Drilladin",
@@ -5090,8 +5139,8 @@
           "spe": 50
         },
         "total": 535,
-        "evoline": "weedle",
-        "imgUrl": "/blazingem/drilladin"
+        "imgUrl": "/blazingem/drilladin",
+        "evoline": "weedle"
       },
       "dunsparce-hoenn": {
         "name": "Hoennian Dunsparce",
@@ -5111,8 +5160,8 @@
           "spe": 65
         },
         "total": 415,
-        "evoline": "dunsparce",
         "imgUrl": "/blazingem/h-dunsparce",
+        "evoline": "dunsparce",
         "evos": [
           "drasparath"
         ]
@@ -5135,8 +5184,8 @@
           "spe": 142
         },
         "total": 522,
-        "evoline": "dunsparce",
-        "imgUrl": "/blazingem/drasparath"
+        "imgUrl": "/blazingem/drasparath",
+        "evoline": "dunsparce"
       },
       "mareanie-hoenn": {
         "name": "Hoennian Mareanie",
@@ -5156,8 +5205,8 @@
           "spe": 35
         },
         "total": 315,
-        "evoline": "mareanie",
         "imgUrl": "/blazingem/h-mareanie",
+        "evoline": "mareanie",
         "evos": [
           "toxapex-hoenn"
         ]
@@ -5180,8 +5229,8 @@
           "spe": 25
         },
         "total": 495,
-        "evoline": "mareanie",
-        "imgUrl": "/blazingem/h-toxapex"
+        "imgUrl": "/blazingem/h-toxapex",
+        "evoline": "mareanie"
       },
       "mallarki": {
         "name": "Mallar'ki",
@@ -5201,8 +5250,8 @@
           "spe": 110
         },
         "total": 473,
-        "evoline": "farfetchd",
-        "imgUrl": "/blazingem/mallarki"
+        "imgUrl": "/blazingem/mallarki",
+        "evoline": "farfetchd"
       },
       "pinsir-hoenn": {
         "name": "Hoennian Pinsir",
@@ -5222,8 +5271,8 @@
           "spe": 50
         },
         "total": 405,
-        "evoline": "pinsir",
-        "imgUrl": "/blazingem/h-pinsir"
+        "imgUrl": "/blazingem/h-pinsir",
+        "evoline": "pinsir"
       },
       "teddiursa-hoenn": {
         "name": "Hoennian Teddiursa",
@@ -5243,8 +5292,8 @@
           "spe": 80
         },
         "total": 335,
-        "evoline": "teddiursa",
         "imgUrl": "/blazingem/h-teddiursa",
+        "evoline": "teddiursa",
         "evos": [
           "ursaring-hoenn"
         ]
@@ -5267,8 +5316,8 @@
           "spe": 80
         },
         "total": 500,
-        "evoline": "teddiursa",
-        "imgUrl": "/blazingem/h-ursaring"
+        "imgUrl": "/blazingem/h-ursaring",
+        "evoline": "teddiursa"
       },
       "dodrio-hoenn": {
         "name": "Hoennian Dodrio",
@@ -5288,8 +5337,8 @@
           "spe": 100
         },
         "total": 493,
-        "evoline": "doduo",
-        "imgUrl": "/blazingem/h-dodrio"
+        "imgUrl": "/blazingem/h-dodrio",
+        "evoline": "doduo"
       },
       "skarmory-hoenn": {
         "name": "Hoennian Skarmory",
@@ -5309,8 +5358,8 @@
           "spe": 90
         },
         "total": 500,
-        "evoline": "skarmory",
-        "imgUrl": "/blazingem/h-skarmory"
+        "imgUrl": "/blazingem/h-skarmory",
+        "evoline": "skarmory"
       },
       "tynamo-hoenn": {
         "name": "Hoennian Tynamo",
@@ -5330,8 +5379,8 @@
           "spe": 70
         },
         "total": 260,
-        "evoline": "tynamo",
         "imgUrl": "/blazingem/h-tynamo",
+        "evoline": "tynamo",
         "evos": [
           "eelektrik-hoenn"
         ]
@@ -5354,8 +5403,8 @@
           "spe": 80
         },
         "total": 380,
-        "evoline": "tynamo",
         "imgUrl": "/blazingem/h-eelektrik",
+        "evoline": "tynamo",
         "evos": [
           "eelektross-hoenn"
         ]
@@ -5378,8 +5427,8 @@
           "spe": 65
         },
         "total": 540,
-        "evoline": "tynamo",
-        "imgUrl": "/blazingem/h-eelektross"
+        "imgUrl": "/blazingem/h-eelektross",
+        "evoline": "tynamo"
       },
       "maractus-hoenn": {
         "name": "Hoennian Maractus",
@@ -5399,8 +5448,8 @@
           "spe": 93
         },
         "total": 489,
-        "evoline": "maractus",
-        "imgUrl": "/blazingem/h-maractus"
+        "imgUrl": "/blazingem/h-maractus",
+        "evoline": "maractus"
       },
       "silviper": {
         "name": "Silviper",
@@ -5420,8 +5469,8 @@
           "spe": 55
         },
         "total": 550,
-        "evoline": "seviper",
-        "imgUrl": "/blazingem/silviper"
+        "imgUrl": "/blazingem/silviper",
+        "evoline": "seviper"
       },
       "zangaro": {
         "name": "Zangaro",
@@ -5441,8 +5490,8 @@
           "spe": 100
         },
         "total": 550,
-        "evoline": "zangoose",
-        "imgUrl": "/blazingem/zangaro"
+        "imgUrl": "/blazingem/zangaro",
+        "evoline": "zangoose"
       },
       "tangela-hoenn": {
         "name": "Hoennian Tangela",
@@ -5461,8 +5510,8 @@
           "spe": 45
         },
         "total": 405,
-        "evoline": "tangela",
         "imgUrl": "/blazingem/h-tangela",
+        "evoline": "tangela",
         "evos": [
           "tangrowth-hoenn"
         ]
@@ -5485,8 +5534,8 @@
           "spe": 80
         },
         "total": 535,
-        "evoline": "tangela",
-        "imgUrl": "/blazingem/h-tangrowth"
+        "imgUrl": "/blazingem/h-tangrowth",
+        "evoline": "tangela"
       },
       "pawniard-hoenn": {
         "name": "Hoennian Pawniard",
@@ -5506,8 +5555,8 @@
           "spe": 50
         },
         "total": 340,
-        "evoline": "pawniard",
         "imgUrl": "/blazingem/h-pawniard",
+        "evoline": "pawniard",
         "evos": [
           "bisharp-hoenn"
         ]
@@ -5530,8 +5579,8 @@
           "spe": 75
         },
         "total": 490,
-        "evoline": "pawniard",
-        "imgUrl": "/blazingem/h-bisharp"
+        "imgUrl": "/blazingem/h-bisharp",
+        "evoline": "pawniard"
       },
       "solosis-hoenn": {
         "name": "Hoennian Solosis",
@@ -5551,8 +5600,8 @@
           "spe": 20
         },
         "total": 295,
-        "evoline": "solosis",
         "imgUrl": "/blazingem/h-solosis",
+        "evoline": "solosis",
         "evos": [
           "duosion-hoenn"
         ]
@@ -5575,8 +5624,8 @@
           "spe": 30
         },
         "total": 380,
-        "evoline": "solosis",
         "imgUrl": "/blazingem/h-duosion",
+        "evoline": "solosis",
         "evos": [
           "reuniclus-hoenn"
         ]
@@ -5599,8 +5648,8 @@
           "spe": 45
         },
         "total": 490,
-        "evoline": "solosis",
-        "imgUrl": "/blazingem/h-reuniclus"
+        "imgUrl": "/blazingem/h-reuniclus",
+        "evoline": "solosis"
       },
       "goomy-hoenn": {
         "name": "Hoennian Goomy",
@@ -5619,8 +5668,8 @@
           "spe": 65
         },
         "total": 450,
-        "evoline": "goomy",
         "imgUrl": "/blazingem/h-goomy",
+        "evoline": "goomy",
         "evos": [
           "goolossal"
         ]
@@ -5642,8 +5691,8 @@
           "spe": 35
         },
         "total": 600,
-        "evoline": "goomy",
-        "imgUrl": "/blazingem/goolossal"
+        "imgUrl": "/blazingem/goolossal",
+        "evoline": "goomy"
       },
       "shuckle-hoenn": {
         "name": "Hoennian Shuckle",
@@ -5663,8 +5712,8 @@
           "spe": 5
         },
         "total": 505,
-        "evoline": "shuckle",
-        "imgUrl": "/blazingem/h-shuckle"
+        "imgUrl": "/blazingem/h-shuckle",
+        "evoline": "shuckle"
       },
       "emolga-hoenn": {
         "name": "Hoennian Emolga",
@@ -5684,8 +5733,8 @@
           "spe": 123
         },
         "total": 493,
-        "evoline": "emolga",
-        "imgUrl": "/blazingem/h-emolga"
+        "imgUrl": "/blazingem/h-emolga",
+        "evoline": "emolga"
       },
       "onix-hoenn": {
         "name": "Hoennian Onix",
@@ -5705,8 +5754,8 @@
           "spe": 60
         },
         "total": 425,
-        "evoline": "onix",
         "imgUrl": "/blazingem/h-onix",
+        "evoline": "onix",
         "evos": [
           "chrysalix"
         ]
@@ -5729,8 +5778,8 @@
           "spe": 60
         },
         "total": 550,
-        "evoline": "onix",
-        "imgUrl": "/blazingem/chrysalix"
+        "imgUrl": "/blazingem/chrysalix",
+        "evoline": "onix"
       },
       "tentacool-hoenn": {
         "name": "Hoennian Tentacool",
@@ -5750,8 +5799,8 @@
           "spe": 70
         },
         "total": 335,
-        "evoline": "tentacool",
         "imgUrl": "/blazingem/h-tentacool",
+        "evoline": "tentacool",
         "evos": [
           "tentacruel-hoenn"
         ]
@@ -5774,8 +5823,8 @@
           "spe": 102
         },
         "total": 515,
-        "evoline": "tentacool",
-        "imgUrl": "/blazingem/h-tentacruel"
+        "imgUrl": "/blazingem/h-tentacruel",
+        "evoline": "tentacool"
       },
       "seel-hoenn": {
         "name": "Hoennian Seel",
@@ -5795,8 +5844,8 @@
           "spe": 45
         },
         "total": 395,
-        "evoline": "seel",
         "imgUrl": "/blazingem/h-seel",
+        "evoline": "seel",
         "evos": [
           "dewgong-hoenn"
         ]
@@ -5819,8 +5868,8 @@
           "spe": 65
         },
         "total": 515,
-        "evoline": "seel",
-        "imgUrl": "/blazingem/h-dewgong"
+        "imgUrl": "/blazingem/h-dewgong",
+        "evoline": "seel"
       },
       "chinchou-hoenn": {
         "name": "Hoennian Chinchou",
@@ -5840,8 +5889,8 @@
           "spe": 57
         },
         "total": 354,
-        "evoline": "chinchou",
         "imgUrl": "/blazingem/h-chinchou",
+        "evoline": "chinchou",
         "evos": [
           "lanturn-hoenn"
         ]
@@ -5864,8 +5913,8 @@
           "spe": 67
         },
         "total": 480,
-        "evoline": "chinchou",
-        "imgUrl": "/blazingem/h-lanturn"
+        "imgUrl": "/blazingem/h-lanturn",
+        "evoline": "chinchou"
       },
       "qwilfish-hoenn": {
         "name": "Hoennian Qwilfish",
@@ -5885,8 +5934,8 @@
           "spe": 5
         },
         "total": 455,
-        "evoline": "qwilfish",
-        "imgUrl": "/blazingem/h-qwilfish"
+        "imgUrl": "/blazingem/h-qwilfish",
+        "evoline": "qwilfish"
       },
       "slingray": {
         "name": "Slingray",
@@ -5906,8 +5955,8 @@
           "spe": 134
         },
         "total": 495,
-        "evoline": "remoraid",
-        "imgUrl": "/blazingem/slingray"
+        "imgUrl": "/blazingem/slingray",
+        "evoline": "remoraid"
       },
       "bawlfrog": {
         "name": "Bawlfrog",
@@ -5927,8 +5976,8 @@
           "spe": 43
         },
         "total": 520,
-        "evoline": "bawlfrog",
-        "imgUrl": "/blazingem/bawlfrog"
+        "imgUrl": "/blazingem/bawlfrog",
+        "evoline": "bawlfrog"
       },
       "dreepy-hoenn": {
         "name": "Hoennian Dreepy",
@@ -5948,8 +5997,8 @@
           "spe": 58
         },
         "total": 270,
-        "evoline": "dreepy",
         "imgUrl": "/blazingem/h-dreepy",
+        "evoline": "dreepy",
         "evos": [
           "drakloak-hoenn"
         ]
@@ -5972,8 +6021,8 @@
           "spe": 82
         },
         "total": 410,
-        "evoline": "dreepy",
         "imgUrl": "/blazingem/h-drakloak",
+        "evoline": "dreepy",
         "evos": [
           "dragapult-hoenn"
         ]
@@ -5996,8 +6045,8 @@
           "spe": 112
         },
         "total": 600,
-        "evoline": "dreepy",
-        "imgUrl": "/blazingem/h-dragapult"
+        "imgUrl": "/blazingem/h-dragapult",
+        "evoline": "dreepy"
       },
       "crawb": {
         "name": "Crawb",
@@ -6017,8 +6066,8 @@
           "spe": 80
         },
         "total": 600,
-        "evoline": "crawb",
-        "imgUrl": "/blazingem/crawb"
+        "imgUrl": "/blazingem/crawb",
+        "evoline": "crawb"
       },
       "armored-mewtwo": {
         "name": "Armored-mewtwo",
@@ -6038,8 +6087,8 @@
           "spe": 105
         },
         "total": 680,
-        "evoline": "mewtwo",
-        "imgUrl": "/blazingem/armored-mewtwo"
+        "imgUrl": "/blazingem/armored-mewtwo",
+        "evoline": "mewtwo"
       },
       "vitellion": {
         "name": "Vitellion",
@@ -6058,8 +6107,8 @@
           "spe": 10
         },
         "total": 540,
-        "evoline": "vitellion",
-        "imgUrl": "/blazingem/vitellion"
+        "imgUrl": "/blazingem/vitellion",
+        "evoline": "vitellion"
       },
       "metunn": {
         "name": "Metunn",
@@ -6078,8 +6127,8 @@
           "spd": 180
         },
         "total": 800,
-        "evoline": "metunn",
-        "imgUrl": "/blazingem/metunn"
+        "imgUrl": "/blazingem/metunn",
+        "evoline": "metunn"
       },
       "shadow-lugia": {
         "name": "Shadow Lugia",
@@ -6099,8 +6148,8 @@
           "spe": 110
         },
         "total": 680,
-        "evoline": "lugia",
-        "imgUrl": "/blazingem/shadow-lugia"
+        "imgUrl": "/blazingem/shadow-lugia",
+        "evoline": "lugia"
       }
     }
   },
@@ -10129,8 +10178,8 @@
           "spe": 76
         },
         "total": 295,
-        "evoline": "blitzle",
         "imgUrl": "/unown",
+        "evoline": "blitzle",
         "evos": [
           "zebstrika-sevii"
         ]
@@ -10153,8 +10202,8 @@
           "spe": 116
         },
         "total": 497,
-        "evoline": "blitzle",
-        "imgUrl": "/unown"
+        "imgUrl": "/unown",
+        "evoline": "blitzle"
       },
       "carnivine-sevii": {
         "name": "Seviian Carnivine",
@@ -10174,8 +10223,8 @@
           "spe": 36
         },
         "total": 454,
-        "evoline": "carnivine",
-        "imgUrl": "/unown"
+        "imgUrl": "/unown",
+        "evoline": "carnivine"
       },
       "centiskorch-sevii": {
         "name": "Seviian Centiskorch",
@@ -10195,8 +10244,8 @@
           "spe": 90
         },
         "total": 525,
-        "evoline": "sizzlipede",
-        "imgUrl": "/unown"
+        "imgUrl": "/unown",
+        "evoline": "sizzlipede"
       },
       "sizzlipede-sevii": {
         "name": "Seviian Sizzlipede",
@@ -10216,8 +10265,8 @@
           "spe": 45
         },
         "total": 305,
-        "evoline": "sizzlipede",
         "imgUrl": "/unown",
+        "evoline": "sizzlipede",
         "evos": [
           "centiskorch-sevii"
         ]
@@ -10240,8 +10289,8 @@
           "spe": 59
         },
         "total": 330,
-        "evoline": "clauncher",
         "imgUrl": "/unown",
+        "evoline": "clauncher",
         "evos": [
           "clawitzer-sevii"
         ]
@@ -10264,8 +10313,8 @@
           "spe": 97
         },
         "total": 513,
-        "evoline": "clauncher",
-        "imgUrl": "/unown"
+        "imgUrl": "/unown",
+        "evoline": "clauncher"
       },
       "dhelmise-sevii": {
         "name": "Seviian Dhelmise",
@@ -10285,8 +10334,8 @@
           "spe": 40
         },
         "total": 517,
-        "evoline": "dhelmise",
-        "imgUrl": "/unown"
+        "imgUrl": "/unown",
+        "evoline": "dhelmise"
       },
       "dodrio-sevii": {
         "name": "Seviian Dodrio",
@@ -10306,8 +10355,8 @@
           "spe": 110
         },
         "total": 470,
-        "evoline": "doduo",
-        "imgUrl": "/unown"
+        "imgUrl": "/unown",
+        "evoline": "doduo"
       },
       "doduo-sevii": {
         "name": "Seviian Doduo",
@@ -10327,8 +10376,8 @@
           "spe": 75
         },
         "total": 310,
-        "evoline": "doduo",
         "imgUrl": "/unown",
+        "evoline": "doduo",
         "evos": [
           "dodrio-sevii"
         ]
@@ -10351,8 +10400,8 @@
           "spe": 80
         },
         "total": 200,
-        "evoline": "feebas",
         "imgUrl": "/unown",
+        "evoline": "feebas",
         "evos": [
           "milotic-sevii"
         ]
@@ -10375,8 +10424,8 @@
           "spe": 81
         },
         "total": 550,
-        "evoline": "feebas",
-        "imgUrl": "/unown"
+        "imgUrl": "/unown",
+        "evoline": "feebas"
       },
       "mantine-sevii": {
         "name": "Seviian Mantine",
@@ -10396,8 +10445,8 @@
           "spe": 95
         },
         "total": 495,
-        "evoline": "mantyke",
-        "imgUrl": "/unown"
+        "imgUrl": "/unown",
+        "evoline": "mantyke"
       },
       "mantyke-sevii": {
         "name": "Seviian Mantyke",
@@ -10417,8 +10466,8 @@
           "spe": 70
         },
         "total": 345,
-        "evoline": "mantyke",
         "imgUrl": "/unown",
+        "evoline": "mantyke",
         "evos": [
           "mantine-sevii"
         ]
@@ -10440,8 +10489,8 @@
           "spe": 50
         },
         "total": 330,
-        "evoline": "teddiursa",
         "imgUrl": "/unown",
+        "evoline": "teddiursa",
         "evos": [
           "ursaring-sevii"
         ]
@@ -10464,8 +10513,8 @@
           "spe": 55
         },
         "total": 500,
-        "evoline": "teddiursa",
-        "imgUrl": "/unown"
+        "imgUrl": "/unown",
+        "evoline": "teddiursa"
       },
       "wishiwashi-sevii": {
         "name": "Seviian Wishiwashi",
@@ -10484,8 +10533,8 @@
           "spe": 35
         },
         "total": 175,
-        "evoline": "wishwashi",
-        "imgUrl": "/unown"
+        "imgUrl": "/unown",
+        "evoline": "wishwashi"
       },
       "wishiwashi-sevii-school": {
         "name": "Seviian Wishiwashi",
@@ -10505,8 +10554,8 @@
           "spe": 25
         },
         "total": 630,
-        "evoline": "wishiwashi# /radred/wishiwashi-sevii-school",
-        "imgUrl": "/unown"
+        "imgUrl": "/unown",
+        "evoline": "wishiwashi# /radred/wishiwashi-sevii-school"
       },
       "pikachu-flying": {
         "name": "Flying Pikachu",
@@ -10526,8 +10575,8 @@
           "spe": 90
         },
         "total": 320,
-        "evoline": "pikachu",
-        "imgUrl": "/radred/pikachu-flying"
+        "imgUrl": "/radred/pikachu-flying",
+        "evoline": "pikachu"
       },
       "pikachu-surfing": {
         "name": "Surfing Pikachu",
@@ -10547,8 +10596,8 @@
           "spe": 90
         },
         "total": 320,
-        "evoline": "pikachu",
-        "imgUrl": "/radred/pikachu-surfing"
+        "imgUrl": "/radred/pikachu-surfing",
+        "evoline": "pikachu"
       },
       "arceus-ground": {
         "name": "Arceus",
@@ -10567,8 +10616,8 @@
           "spe": 120
         },
         "total": 720,
-        "evoline": "arceus",
-        "imgUrl": "/radred/arceus-ground"
+        "imgUrl": "/radred/arceus-ground",
+        "evoline": "arceus"
       },
       "arceus-steel": {
         "name": "Arceus",
@@ -10587,8 +10636,8 @@
           "spe": 120
         },
         "total": 720,
-        "evoline": "arceus",
-        "imgUrl": "/radred/arceus-steel"
+        "imgUrl": "/radred/arceus-steel",
+        "evoline": "arceus"
       },
       "arceus-fairy": {
         "name": "Arceus",
@@ -10607,8 +10656,8 @@
           "spe": 120
         },
         "total": 720,
-        "evoline": "arceus",
-        "imgUrl": "/radred/arceus-fairy"
+        "imgUrl": "/radred/arceus-fairy",
+        "evoline": "arceus"
       },
       "silvally-ghost": {
         "name": "Silvally",
@@ -10627,8 +10676,8 @@
           "spe": 100
         },
         "total": 600,
-        "evoline": "type-null",
-        "imgUrl": "/radred/silvally-ghost"
+        "imgUrl": "/radred/silvally-ghost",
+        "evoline": "type-null"
       },
       "silvally-fairy": {
         "name": "Silvally",
@@ -10647,8 +10696,8 @@
           "spe": 100
         },
         "total": 600,
-        "evoline": "type-null",
-        "imgUrl": "/radred/silvally-fairy"
+        "imgUrl": "/radred/silvally-fairy",
+        "evoline": "type-null"
       },
       "toxtricity-mega": {
         "name": "Mega Toxtricity",
@@ -10668,8 +10717,8 @@
           "spe": 111
         },
         "total": 621,
-        "evoline": "toxel",
-        "imgUrl": "/radred/toxtricity-mega"
+        "imgUrl": "/radred/toxtricity-mega",
+        "evoline": "toxel"
       }
     }
   },
