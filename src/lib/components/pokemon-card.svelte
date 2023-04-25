@@ -55,7 +55,7 @@
     >
       <div class="pointer-events-none flex flex-row items-end gap-x-2">
         {#if level}
-          <div class="flex flex-col items-center">
+          <div class="pointer-events-auto flex flex-col items-center">
             <span class="-mb-2 text-xs">Level</span>
             <span class="text-3xl font-bold">{level}</span>
             {#if level.startsWith('+') || level.startsWith('-')}
@@ -69,7 +69,7 @@
           class="mb-0.25 relative z-40 pr-2 text-xl sm:bg-transparent dark:sm:bg-transparent"
         >
           <p
-            class="relative z-40 -mb-1 h-4 w-auto text-xs sm:bg-transparent dark:sm:bg-transparent"
+            class="pointer-events-auto relative z-40 -mb-1 h-4 w-auto text-xs sm:bg-transparent dark:sm:bg-transparent"
           >
             {#if ability}
               <span class:cursor-help={!!ability.effect}>
