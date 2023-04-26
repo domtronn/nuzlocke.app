@@ -1,6 +1,7 @@
 import z from 'zod'
 
 const EGame = z.enum([
+    'glazed',
     'blaze', 'volt', 'rrss', 'emrunbun', 'unbound',
     'unbound_exp', 'radred_hard', 'emkaizo', 'vi', 'sc', 'sw', 'sh',
     'usun', 'umoon', 'sun', 'moon', 'x', 'y', 'blazevolt2',
