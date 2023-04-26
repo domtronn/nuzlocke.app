@@ -3340,6 +3340,45 @@
       }
     }
   },
+  "glazed": {
+    "item": {
+      "jelly-donut": {
+        "name": "Jelly donut",
+        "sprite": "big-malasada",
+        "effect": "Raises the user's Speed stat by 2 Levels"
+      },
+      "sugar-donut": {
+        "name": "Sugar donut",
+        "sprite": "big-malasada",
+        "effect": "Raises the user's Sp. Attack stat by 2 Levels"
+      },
+      "glazed-donut": {
+        "name": "Glazed donut",
+        "sprite": "big-malasada",
+        "effect": "Raises the user's Attack stat by 2 Levels"
+      }
+    },
+    "move": {
+      "hidden-power-electric": {
+        "power": "60",
+        "type": "electric",
+        "category": "special",
+        "locale": "Hidden Power"
+      },
+      "hidden-power-fighting": {
+        "power": "60",
+        "type": "fighting",
+        "category": "special",
+        "locale": "Hidden Power"
+      },
+      "hidden-power-dark": {
+        "power": "60",
+        "type": "dark",
+        "category": "special",
+        "locale": "Hidden Power"
+      }
+    }
+  },
   "incem": {
     "item": {
       "miloticite": {
@@ -4220,14 +4259,14 @@
           "spd": 100
         }
       },
-      "manetric": {
-        "name": "manetric",
+      "manectric": {
+        "name": "manectric",
         "stats": {
           "spa": 125
         }
       },
-      "manetric-mega": {
-        "name": "manetric-mega",
+      "manectric-mega": {
+        "name": "manectric-mega",
         "stats": {
           "def": 90,
           "spd": 90
