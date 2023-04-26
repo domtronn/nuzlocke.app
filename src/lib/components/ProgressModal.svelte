@@ -19,6 +19,7 @@
     readBox
   } from '$lib/store'
 
+  import calcAdvice from '$utils/advice'
   import { toList, regionise, capitalise } from '$utils/string'
   import { locid } from '$utils/pokemon'
   import { nonnull } from '$utils/obj'
@@ -112,35 +113,21 @@
     )
   }
 
-  async function fetchAnalysis(team, box) {
-    const boxMons = await fetchPkmnSet(box)
-    const gymMons = await fetchPkmnSet(team, 'name')
-
-    const res = await fetch('/api/battle/advice.json', {
-      method: 'POST',
-      body: JSON.stringify({
-        box: boxMons,
-        team: gymMons
-      }),
-      headers: {
-        'Content-Type': 'application/json'
-      }
-    })
-
-    const advice = await res.json()
-    return {
-      ...advice,
-      box: boxMons,
-      gym: gymMons,
-      mons: boxMons.concat(gymMons)
-    }
-  }
-
   let loading = true
   let analysisResult
   onMount(async () => {
-    setup(async (rawData, boxData) => {
-      analysisResult = await fetchAnalysis(boss.pokemon, boxData)
+    setup(async (_, boxData) => {
+      const boxMons = await fetchPkmnSet(boxData)
+      const gymMons = await fetchPkmnSet(boss.pokemon, 'name')
+
+      const advice = calcAdvice(boxMons, gymMons)
+      analysisResult = {
+        ...advice,
+        box: boxMons,
+        gym: gymMons,
+        mons: boxMons.concat(gymMons)
+      }
+
       loading = false
     })
   })
