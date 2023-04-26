@@ -1,5 +1,5 @@
-import { moveResistance } from './_type-advice.js'
-import { weaknesses } from './_types'
+import { moveResistance } from './advisor-types'
+import { weaknesses } from './types'
 
 const debug = []
 
@@ -42,7 +42,11 @@ export default (box, boss) => {
   const bossTeamImmunity = calcAdvMap((mod) => mod === 0, bossTeamDmgMods)
 
   const recommendedMons = box
-    .map(({ alias: defName, baseStats: stats, types: defTypes }) => {
+    .map((mon) => {
+      const defName = mon.alias
+      const defTypes = mon.types
+      const stats = mon?.original?.stats || mon.baseStats
+
       /**
        Map over each of the box pokemon types as STAB bonuses
        and calculate an "offensive" score based on usage of STAB moves
@@ -99,8 +103,9 @@ export default (box, boss) => {
        based on their defensive stat advantage
     */
       const offStatAdvantageScore = boss.reduce((acc, mon) => {
-        if (mon.baseStats.spd < mon.baseStats) return acc + stats.spa
-        if (mon.baseStats.def < mon.baseStats) return acc + stats.atk
+        const defstats = mon?.original?.stats || mon.baseStats
+        if (defstats.spd < stats.spa) return acc + stats.spa
+        if (defstats.def < stats.spa) return acc + stats.atk
         return acc + Math.max(stats.spa, stats.atk)
       }, 0)
 

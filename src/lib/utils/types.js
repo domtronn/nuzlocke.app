@@ -1,6 +1,6 @@
 import { canonTypes as types } from '$lib/data/types'
+import { moveResistance } from '$utils/advice/advisor-types'
 import { isEmpty } from '$utils/obj'
-import { moveResistance } from '../../routes/api/battle/advice.json/_type-advice'
 
 function sortFn(a, b) {
   return (

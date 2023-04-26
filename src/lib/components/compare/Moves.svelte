@@ -18,7 +18,6 @@
     {}
   )
   const lvl = opp?.original?.level
-
 </script>
 
 <ul class="relative grid w-full grid-cols-4 text-sm md:mt-2 md:text-xs">
@@ -27,13 +26,13 @@
   >
     <Icon inline={true} icon={Info} class="fill-current" />
     <Tooltip>
-      Damage calculations are estimates
+      Damage calculations are estimates of maximum
       {#if lvl.startsWith('+') || lvl.startsWith('-')}
         with the team and relative levels being at Level 50
       {:else}
         with the team being at the Level Cap.
       {/if}
-      with 0EVs and max IVs.
+      with 0EVs and max IVs. It does not take into account items, abilities, or weather.
     </Tooltip>
   </div>
 
@@ -46,7 +45,7 @@
     <CompareSummary pokemon={opp.original} />
   </div>
 
-  {#each (calc?.[teamId]?.[oppId] || []) as move (move)}
+  {#each calc?.[teamId]?.[oppId] || [] as move (move)}
     <li
       class="col-span-2 my-2 -mt-1 flex flex-col leading-4 md:col-span-1 lg:w-24 lg:leading-3"
     >
@@ -65,12 +64,20 @@
         <TypeBadge type={move.type} className="ml-1" />
       </p>
 
-      {#if move.desc}
-        <p class="text-gray-500">
-          <strong class="sm:-ml-2">~{Math.ceil(move.range[1] / 5) * 5}</strong>
+      {#if move.range}
+        {@const dmg = Math.ceil(move.range[1] / 5) * 5}
+        {@const pct = parseInt(move.desc[1])}
+        <p
+          class="text-gray-500"
+          class:dark:text-orange-500={pct >= 50}
+          class:dark:text-red-500={pct >= 100}
+          class:text-orange-400={pct >= 50}
+          class:text-red-600={pct >= 100}
+        >
+          <strong class="sm:-ml-2">~{dmg}</strong>
           <span>dmg</span>
           <br class="hidden sm:block" />
-          <small>({parseInt(move.desc.split(' - ')[1])}%)</small>
+          <small>({pct}%)</small>
         </p>
       {/if}
     </li>

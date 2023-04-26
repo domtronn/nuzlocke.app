@@ -1,13 +1,15 @@
-import { typeAdvMap } from './_types'
+import { typeAdvMap } from './types'
+
+interface IPokemon {
+  alias: string
+  types: string[]
+}
 
 /**
  * Calculates the damage modifier for an attack given a list of defensive types
- * @param {string} atkType - The attacking move type
- * @param {string[]} defType - The defensive types being hit
- * @returns {int} The damage mod of the attack against the types
  */
-export const moveResistance = (atkType, pkmnTypes) => {
-  const res = pkmnTypes.reduce((acc, defType) => {
+export const moveResistance = (atkType: string, defTypes: string[]): number => {
+  const res = defTypes.reduce((acc, defType) => {
     const mod = typeAdvMap[atkType][defType]
     return acc * (typeof mod === 'undefined' ? 1 : mod)
   }, 1)
@@ -17,13 +19,11 @@ export const moveResistance = (atkType, pkmnTypes) => {
 
 /**
  * Calculates the maximum damage mod for a pokemon vs an attacking moveset
- * @param {string[]} atkTypes - List of attacking move types
- * @param {string[]} pkmnTypes - List of defending types
  */
-export const coverageResistance = (atkTypes, pkmnTypes) =>
+export const coverageResistance = (atkTypes: string[], pkmnTypes: string[]) =>
   Math.max(...atkTypes.map((atkType) => moveResistance(atkType, pkmnTypes)))
 
-export default (defTeam, atkTeam) => {
+export default (defTeam: IPokemon[], atkTeam: IPokemon[]) => {
   // Loop through each defending pokemon and determine how well it
   // resists individual attacking mons and team
   return defTeam.map(({ alias: defName, types: defTypes }) => {
