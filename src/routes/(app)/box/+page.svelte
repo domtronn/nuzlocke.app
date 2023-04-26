@@ -314,7 +314,7 @@
           </div>
 
           <div
-            class="col-span-3 my-1.5 grid grid-cols-6 gap-x-2 gap-y-2 sm:w-auto md:my-0 md:grid-cols-6"
+            class="col-span-3 my-1.5 grid grid-cols-6 gap-x-2 gap-y-2 sm:w-auto md:my-0 md:grid-cols-6 xl:grid-cols-9"
           >
             {#each types as t}
               {#if typeCounts[t] > 0}
