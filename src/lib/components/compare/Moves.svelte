@@ -65,11 +65,19 @@
       </p>
 
       {#if move.range}
-        <p class="text-gray-500">
-          <strong class="sm:-ml-2">~{Math.ceil(move.range[1] / 5) * 5}</strong>
+        {@const dmg = Math.ceil(move.range[1] / 5) * 5}
+        {@const pct = parseInt(move.desc[1])}
+        <p
+          class="text-gray-500"
+          class:dark:text-orange-500={pct >= 50}
+          class:dark:text-red-500={pct >= 100}
+          class:text-orange-400={pct >= 50}
+          class:text-red-600={pct >= 100}
+        >
+          <strong class="sm:-ml-2">~{dmg}</strong>
           <span>dmg</span>
           <br class="hidden sm:block" />
-          <small>({parseInt(move.desc[1])}%)</small>
+          <small>({pct}%)</small>
         </p>
       {/if}
     </li>
