@@ -10,6 +10,8 @@
   import { color } from '$lib/data/colors.ts'
 
   const [atk, def] = pokemon
+  const atkStats = atk?.original?.stats || atk.baseStats
+  const defStats = def?.original?.stats || def.baseStats
 </script>
 
 <SettingWrapper id="theme" let:setting={themeId}>
@@ -28,8 +30,8 @@
       showbars={!hide}
       class="grid-cols-11"
       nature={atk.nature}
-      {...atk.baseStats}
-      compare={def.baseStats}
+      {...atkStats}
+      compare={defStats}
       max={250}
       col={color(atk.types[0], themeId)}
       {side}

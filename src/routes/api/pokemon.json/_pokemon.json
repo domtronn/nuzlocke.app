@@ -11475,12 +11475,163 @@
     }
   },
   {
+    "name": "Rotom Heat",
+    "label": "Rotom Heat",
+    "sprite": "rotom-heat",
+    "alias": "rotom-heat",
+    "evoline": "rotom",
+    "evos": [
+      "rotom",
+      "rotom-wash",
+      "rotom-mow",
+      "rotom-frost",
+      "rotom-fan"
+    ],
+    "imgId": 10008,
+    "num": 587,
+    "types": [
+      "electric",
+      "fire"
+    ],
+    "total": 520,
+    "baseStats": {
+      "hp": 50,
+      "atk": 65,
+      "def": 107,
+      "spa": 105,
+      "spd": 107,
+      "spe": 86
+    }
+  },
+  {
+    "name": "Rotom Wash",
+    "label": "Rotom Wash",
+    "sprite": "rotom-wash",
+    "alias": "rotom-wash",
+    "evoline": "rotom",
+    "evos": [
+      "rotom",
+      "rotom-heat",
+      "rotom-mow",
+      "rotom-frost",
+      "rotom-fan"
+    ],
+    "imgId": 10009,
+    "num": 587,
+    "types": [
+      "electric",
+      "water"
+    ],
+    "total": 520,
+    "baseStats": {
+      "hp": 50,
+      "atk": 65,
+      "def": 107,
+      "spa": 105,
+      "spd": 107,
+      "spe": 86
+    }
+  },
+  {
+    "name": "Rotom Fan",
+    "label": "Rotom Fan",
+    "sprite": "rotom-fan",
+    "alias": "rotom-fan",
+    "evoline": "rotom",
+    "evos": [
+      "rotom",
+      "rotom-heat",
+      "rotom-mow",
+      "rotom-frost",
+      "rotom-wash"
+    ],
+    "imgId": 10011,
+    "num": 587,
+    "types": [
+      "electric",
+      "flying"
+    ],
+    "total": 520,
+    "baseStats": {
+      "hp": 50,
+      "atk": 65,
+      "def": 107,
+      "spa": 105,
+      "spd": 107,
+      "spe": 86
+    }
+  },
+  {
+    "name": "Rotom Frost",
+    "label": "Rotom Frost",
+    "sprite": "rotom-frost",
+    "alias": "rotom-frost",
+    "evoline": "rotom",
+    "evos": [
+      "rotom",
+      "rotom-heat",
+      "rotom-mow",
+      "rotom-fan",
+      "rotom-wash"
+    ],
+    "imgId": 10010,
+    "num": 587,
+    "types": [
+      "electric",
+      "ice"
+    ],
+    "total": 520,
+    "baseStats": {
+      "hp": 50,
+      "atk": 65,
+      "def": 107,
+      "spa": 105,
+      "spd": 107,
+      "spe": 86
+    }
+  },
+  {
+    "name": "Rotom Mow",
+    "label": "Rotom Mow",
+    "sprite": "rotom-mow",
+    "alias": "rotom-mow",
+    "evoline": "rotom",
+    "evos": [
+      "rotom",
+      "rotom-heat",
+      "rotom-frost",
+      "rotom-fan",
+      "rotom-wash"
+    ],
+    "imgId": 10012,
+    "num": 587,
+    "types": [
+      "electric",
+      "grass"
+    ],
+    "total": 520,
+    "baseStats": {
+      "hp": 50,
+      "atk": 65,
+      "def": 107,
+      "spa": 105,
+      "spd": 107,
+      "spe": 86
+    }
+  },
+  {
     "name": "Rotom",
     "label": "Rotom",
     "sprite": "rotom",
     "alias": "rotom",
     "evoline": "rotom",
-    "evos": [],
+    "evos": [
+      "rotom-wash",
+      "rotom-heat",
+      "rotom-mow",
+      "rotom-frost",
+      "rotom-fan"
+    ],
     "imgId": 479,
     "num": 587,
     "types": [

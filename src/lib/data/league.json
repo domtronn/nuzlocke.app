@@ -47707,7 +47707,7 @@
           "held": "focus-sash"
         },
         {
-          "name": "rotom",
+          "name": "rotom-frost",
           "level": "45",
           "moves": [
             "frost-breath",
@@ -47719,7 +47719,8 @@
           "abilities": [
             "levitate"
           ],
-          "held": "sitrus-berry"
+          "held": "sitrus-berry",
+          "sprite": "rotom-frost"
         },
         {
           "name": "kangaskhan",
@@ -59046,7 +59047,7 @@
           "held": "expert-belt"
         },
         {
-          "name": "rotom",
+          "name": "rotom-wash",
           "level": "61",
           "moves": [
             "thunderbolt",
@@ -59058,10 +59059,11 @@
           "abilities": [
             "levitate"
           ],
-          "held": "sitrus-berry"
+          "held": "sitrus-berry",
+          "sprite": "rotom-wash"
         },
         {
-          "name": "rotom",
+          "name": "rotom-heat",
           "level": "61",
           "moves": [
             "thunderbolt",
@@ -59073,7 +59075,8 @@
           "abilities": [
             "levitate"
           ],
-          "held": "white-herb"
+          "held": "white-herb",
+          "sprite": "rotom-heat"
         },
         {
           "name": "luxray",
