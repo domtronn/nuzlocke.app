@@ -37,7 +37,7 @@
       })
     )
 
-    setTeam = (data) => gameStore.update(patch({ __team: data }))
+    setTeam = (data) => gameStore.update(patch({ __team: data.slice(0, 6) }))
   }
 
   const locid = (evt) => pokeLocId(evt.detail.data)

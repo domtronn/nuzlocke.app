@@ -52,7 +52,7 @@
         `This team is different to your active one, would you like to make ${teamList} your active team?`
       )
     ) {
-      gameStore.update(patch({ __team: teamLocs }))
+      gameStore.update(patch({ __team: teamLocs.slice(0, 6) }))
     }
 
     const teamData = nonnull({

@@ -429,6 +429,29 @@ export const trackData = () => {
 }
 // --------
 
+const fixTeams = () => {
+  console.log('--------------------\tFixing broken teams')
+  activeGame.subscribe((gameId) => {
+    getGame(gameId).subscribe(
+      read((data) => {
+        const team = data.__team || []
+        if (team.length < 7) {
+          console.log(`--------------------\tDone! Nothing to fix`)
+          return
+        }
+
+        const temp = {
+          ...data,
+          __team: team.slice(0, 6)
+        }
+        console.log(`--------------------\tProposed new state`)
+        console.log(temp)
+        getGame(gameId).set(JSON.stringify(temp))
+      })
+    )
+  })
+}
+
 const fixDupes = () => {
   console.log('--------------------\tFixing Dupes')
   activeGame.subscribe((gameId) => {
@@ -484,6 +507,7 @@ const fixDupes = () => {
 }
 
 fixDupes()
+fixTeams()
 
 if (typeof window !== 'undefined')
   window.nz = {

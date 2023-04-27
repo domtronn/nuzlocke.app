@@ -60,7 +60,7 @@
       })
     )
 
-    setTeam = (data) => gameStore.update(patch({ __team: data }))
+    setTeam = (data) => gameStore.update(patch({ __team: data.slice(0, 6) }))
 
     // FIXME: Awkward hack to allow page transition cleanup
     ;['game_el'].forEach((id) => {
@@ -210,17 +210,11 @@
 
   /** Team management */
   function handleTeamAdd(p) {
-    gameStore.update(
-      patch({
-        __team: (teamData || []).filter((i) => i !== locid(p)).concat(locid(p))
-      })
-    )
+    setTeam((teamData || []).filter((i) => i !== locid(p)).concat(locid(p)))
   }
 
   function handleTeamRemove(p) {
-    gameStore.update(
-      patch({ __team: (teamData || []).filter((i) => i !== locid(p)) })
-    )
+    setTeam((teamData || []).filter((i) => i !== locid(p)))
   }
 
   let mons = []
@@ -228,6 +222,7 @@
     mons = (teamData || [])
       .map((t) => ogbox.find((o) => t === locid(o)))
       .filter((i) => i)
+      .slice(0, 6)
   }
 </script>
 
