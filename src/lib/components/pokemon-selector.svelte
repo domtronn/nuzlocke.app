@@ -190,8 +190,8 @@
   const handleStatus = (sid) => () => {
     const cb = (data) => {
       if (sid === 5) {
-        // Handle death context from modal
         death = data
+        handleTeamRemove()
       }
 
       status = NuzlockeStates[sid]
@@ -202,7 +202,6 @@
     else cb()
   }
 
-  const animateStatus = (item) => (_) => _animateStatus(item.id)
   const _animateStatus = (sid) => {
     if (sid === 2 || sid === 3) statusComplete = ['parcel', 'profs-letter']
     if (sid === 1)
