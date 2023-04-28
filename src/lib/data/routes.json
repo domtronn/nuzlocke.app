@@ -27161,9 +27161,9 @@
       "type": "route",
       "name": "Safari Zone",
       "encounters": [
-        "nidoran♀",
+        "nidoran-f",
         "nidorina",
-        "nidoran♂",
+        "nidoran-m",
         "nidorino",
         "parasect",
         "venonat",
@@ -27507,13 +27507,6 @@
       ]
     },
     {
-      "type": "gym",
-      "name": "Forest Pass",
-      "value": "rp_1",
-      "group": "rival",
-      "boss": "Percy"
-    },
-    {
       "type": "route",
       "name": "Chocco Town",
       "encounters": [
@@ -27688,7 +27681,7 @@
     {
       "type": "gym",
       "name": "Geminite Village",
-      "value": "rp_2",
+      "value": "rp_1",
       "group": "rival",
       "boss": "Percy"
     },
@@ -27777,7 +27770,7 @@
     {
       "type": "gym",
       "name": "Northcoast Town Gym",
-      "value": "rp_3",
+      "value": "rp_2",
       "group": "rival",
       "boss": "Percy"
     },
@@ -28026,7 +28019,7 @@
     {
       "type": "gym",
       "name": "Darkwood Town",
-      "value": "rp_4",
+      "value": "rp_3",
       "group": "rival",
       "boss": "Percy"
     },
@@ -46314,6 +46307,14 @@
       ]
     },
     {
+      "type": "route",
+      "name": "S.S. Anne",
+      "encounters": [
+        "wimpod",
+        "finneon"
+      ]
+    },
+    {
       "type": "gym",
       "name": "S.S. Anne",
       "value": "b2",
@@ -55021,6 +55022,9 @@
       "type": "route",
       "name": "Violet City",
       "encounters": [
+        "charmander",
+        "squirtle",
+        "bulbasaur",
         "poliwag",
         "poliwhirl",
         "magikarp",
@@ -68550,13 +68554,17 @@
       "type": "route",
       "name": "Violet City",
       "encounters": [
+        "charmander",
+        "squirtle",
+        "bulbasaur",
         "poliwag",
         "poliwhirl",
         "magikarp",
         "staryu",
         "whiscash",
         "chinchou",
-        "lanturn"
+        "lanturn",
+        ""
       ]
     },
     {
@@ -68824,6 +68832,13 @@
     },
     {
       "type": "gym",
+      "name": "Goldenrod City Gym",
+      "value": "3",
+      "group": "gym-leader",
+      "boss": "Whitney"
+    },
+    {
+      "type": "gym",
       "name": "Goldenrod Tunnel",
       "value": "ethan",
       "group": "rival",
@@ -68835,13 +68850,6 @@
       "value": "lyra",
       "group": "rival",
       "boss": "Lyra"
-    },
-    {
-      "type": "gym",
-      "name": "Goldenrod City Gym",
-      "value": "3",
-      "group": "gym-leader",
-      "boss": "Whitney"
     },
     {
       "type": "route",
@@ -68996,13 +69004,6 @@
         "lunatone",
         "gengar"
       ]
-    },
-    {
-      "type": "gym",
-      "name": "Ecruteak City Dance Hall",
-      "value": "kimono",
-      "group": "",
-      "boss": "Kimono Girls"
     },
     {
       "type": "gym",
@@ -69325,16 +69326,16 @@
     {
       "type": "gym",
       "name": "Rocket Hideout",
-      "value": "petrel2",
+      "value": "ariana2",
       "group": "evil-team",
-      "boss": "Executive Petrel"
+      "boss": "Executive Ariana"
     },
     {
       "type": "gym",
       "name": "Rocket Hideout",
-      "value": "ariana2",
+      "value": "petrel2",
       "group": "evil-team",
-      "boss": "Executive Ariana"
+      "boss": "Executive Petrel"
     },
     {
       "type": "route",
@@ -69410,7 +69411,8 @@
       "type": "gym",
       "name": "Goldenrod Underground",
       "value": "r1",
-      "group": "Silver"
+      "group": "rival",
+      "boss": "Silver"
     },
     {
       "type": "route",
@@ -69555,6 +69557,13 @@
         "lanturn",
         "tentacruel"
       ]
+    },
+    {
+      "type": "gym",
+      "name": "Ecruteak City Dance Hall",
+      "value": "kimono",
+      "group": "",
+      "boss": "Kimono Girls"
     },
     {
       "type": "route",

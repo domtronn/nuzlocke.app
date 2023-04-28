@@ -10,7 +10,9 @@
   import { RegionMap } from '$lib/data/games'
   import { fetchData, fetchLeague } from '$utils/fetchers'
   import { GameHeading, NavHeading } from '$c/navs'
+
   import Modal from 'svelte-simple-modal'
+  import deferStyles from '$lib/utils/defer-styles'
 
   let path = $page.url.pathname
 
@@ -18,7 +20,10 @@
   setContext('region', RegionMap[gameKey] ?? 'unknown')
 
   onMount(() => {
-    const [, , , game] = readdata()
+    const [, id, , game] = readdata()
+    if (id === 'blazingem') deferStyles('/assets/pokemon-blazingem.css')
+    if (id?.includes('radred')) deferStyles('/assets/pokemon-radicalred.css')
+
     if (!dev)
       import('@sentry/svelte').then((Sentry) => {
         Sentry.init({

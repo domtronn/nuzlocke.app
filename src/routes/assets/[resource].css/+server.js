@@ -2,11 +2,13 @@ import Clean from 'clean-css'
 
 import badges from './_badges.css'
 import blazingem from './_pokemon-blazingem.css'
+import radicalred from './_pokemon-radicalred.css'
 import pokemon from './_pokemon.css'
 
 const clean = new Clean({ level: 2 })
 const resourceMap = {
   'pokemon-blazingem': blazingem,
+  'pokemon-radicalred': radicalred,
   pokemon,
   badges
 }
