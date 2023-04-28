@@ -14444,6 +14444,7 @@
         "zigzagoon",
         "wingull",
         "shinx",
+        "tentacool-hoenn",
         "tentacool",
         "pelipper",
         "magikarp",
@@ -14491,6 +14492,7 @@
         "snubbull",
         "wingull",
         "poochyena",
+        "tentacool-hoenn",
         "tentacool",
         "buizel",
         "pelipper",
@@ -14504,6 +14506,7 @@
       "encounters": [
         "ledyba",
         "caterpie",
+        "venonat-hoenn",
         "venonat",
         "wurmple",
         "shroomish",
@@ -14543,6 +14546,7 @@
       "type": "route",
       "name": "Route 105",
       "encounters": [
+        "tentacool-hoenn",
         "tentacool",
         "wingull",
         "pelipper",
@@ -14555,6 +14559,7 @@
       "type": "route",
       "name": "Route 106",
       "encounters": [
+        "tentacool-hoenn",
         "tentacool",
         "wingull",
         "pelipper",
@@ -14567,6 +14572,7 @@
       "type": "route",
       "name": "Dewford Town",
       "encounters": [
+        "tentacool-hoenn",
         "tentacool",
         "wingull",
         "pelipper",
@@ -14601,6 +14607,8 @@
       "type": "route",
       "name": "Granite Cave",
       "encounters": [
+        "dunsparce-hoenn",
+        "mareanie-hoenn",
         "machop",
         "zubat",
         "abra",
@@ -14616,6 +14624,7 @@
       "type": "route",
       "name": "Route 107",
       "encounters": [
+        "tentacool-hoenn",
         "tentacool",
         "wingull",
         "pelipper",
@@ -14629,6 +14638,7 @@
       "type": "route",
       "name": "Route 108",
       "encounters": [
+        "tentacool-hoenn",
         "tentacool",
         "wingull",
         "pelipper",
@@ -14640,6 +14650,7 @@
       "type": "route",
       "name": "Route 109",
       "encounters": [
+        "tentacool-hoenn",
         "tentacool",
         "buizel",
         "wingull",
@@ -14653,6 +14664,7 @@
       "type": "route",
       "name": "Slateport City",
       "encounters": [
+        "tentacool-hoenn",
         "tentacool",
         "wingull",
         "pelipper",
@@ -14669,6 +14681,7 @@
         "farfetchd",
         "ponyta",
         "krabby",
+        "tentacool-hoenn",
         "tentacool",
         "kingler",
         "magikarp",
@@ -14717,6 +14730,7 @@
         "geodude",
         "magmar",
         "magby",
+        "dreepy-hoenn",
         "dreepy"
       ]
     },
@@ -14739,12 +14753,15 @@
       "type": "route",
       "name": "Route 111",
       "encounters": [
+        "teddiursa-hoenn",
+        "pinsir-hoenn",
+        "teddiursa",
+        "pinsir",
         "sandshrew",
         "trapinch",
         "cacnea",
         "gligar",
         "cubone",
-        "pinsir",
         "geodude",
         "marill",
         "slowpoke",
@@ -14768,6 +14785,7 @@
       "encounters": [
         "doduo",
         "numel",
+        "teddiursa-hoenn",
         "teddiursa",
         "growlithe",
         "larvesta"
@@ -14787,16 +14805,19 @@
       "type": "route",
       "name": "Route 113",
       "encounters": [
+        "skarmory-hoenn",
+        "skarmory",
         "spinda",
         "growlithe",
-        "houndour",
-        "skarmory"
+        "houndour"
       ]
     },
     {
       "type": "route",
       "name": "Fallarbor Mines",
       "encounters": [
+        "mareanie-hoenn",
+        "tynamo-hoenn",
         "whismur",
         "zubat",
         "tynamo",
@@ -14814,6 +14835,7 @@
         "wooper",
         "seviper",
         "zangoose",
+        "tangela-hoenn",
         "tangela",
         "marill",
         "barboach",
@@ -14848,6 +14870,7 @@
         "zigzagoon",
         "linoone",
         "togepi",
+        "tentacool-hoenn",
         "tentacool",
         "buizel",
         "wingull",
@@ -14867,6 +14890,8 @@
       "type": "route",
       "name": "Jagged Pass",
       "encounters": [
+        "maractus",
+        "maractus-hoenn",
         "numel",
         "spoink",
         "gligar",
@@ -14901,6 +14926,7 @@
       "type": "route",
       "name": "Abandoned Ship",
       "encounters": [
+        "tentacool-hoenn",
         "tentacool",
         "tentacruel",
         "magikarp",
@@ -14918,6 +14944,7 @@
         "haunter",
         "mawile",
         "graveler",
+        "tentacool-hoenn",
         "tentacool",
         "horsea",
         "seadra"
@@ -14964,6 +14991,7 @@
         "doduo",
         "wingull",
         "kecleon",
+        "tentacool-hoenn",
         "tentacool",
         "pelipper",
         "wartortle",
@@ -14975,14 +15003,17 @@
       "type": "route",
       "name": "Route 119",
       "encounters": [
+        "goomy-hoenn",
         "sentret",
         "furret",
         "gloom",
+        "duosion-hoenn",
         "duosion",
         "linoone",
         "ariados",
         "tropius",
         "goomy",
+        "tentacool-hoenn",
         "tentacool",
         "wingull",
         "pelipper",
@@ -15012,9 +15043,11 @@
       "type": "route",
       "name": "Route 120",
       "encounters": [
+        "shuckle-hoenn",
         "shuckle",
         "sentret",
         "furret",
+        "duosion-hoenn",
         "duosion",
         "heracross",
         "absol",
@@ -15031,6 +15064,9 @@
       "type": "route",
       "name": "Desert Underpass",
       "encounters": [
+        "tynamo-hoenn",
+        "eelektrik-hoenn",
+        "eelektross-hoenn",
         "golbat",
         "graveler",
         "tynamo",
@@ -15050,6 +15086,7 @@
         "gloom",
         "wingull",
         "honchkrow",
+        "tentacool-hoenn",
         "tentacool",
         "pelipper",
         "magikarp",
@@ -15086,6 +15123,7 @@
         "pikachu",
         "clefairy",
         "eevee",
+        "shuckle-hoenn",
         "shuckle",
         "spinarak",
         "ariados",
@@ -15100,6 +15138,7 @@
       "type": "route",
       "name": "Route 122",
       "encounters": [
+        "tentacool-hoenn",
         "tentacool",
         "wingull",
         "pelipper",
@@ -15112,6 +15151,8 @@
       "type": "route",
       "name": "Mt. Pyre",
       "encounters": [
+        "emolga",
+        "emolga-hoenn",
         "shuppet",
         "gastly",
         "yamask",
@@ -15119,20 +15160,21 @@
         "duskull",
         "vulpix",
         "chimecho",
-        "wingull",
-        "emolga"
+        "wingull"
       ]
     },
     {
       "type": "route",
       "name": "Route 123",
       "encounters": [
+        "pawniard-hoenn",
+        "pawniard",
         "snubbull",
         "shuppet",
         "gloom",
         "granbull",
-        "pawniard",
         "oddish",
+        "tentacool-hoenn",
         "tentacool",
         "wingull",
         "pelipper",
@@ -15144,6 +15186,7 @@
       "type": "route",
       "name": "Lilycove City",
       "encounters": [
+        "tentacool-hoenn",
         "tentacool",
         "buizel",
         "wingull",
@@ -15157,10 +15200,13 @@
       "type": "route",
       "name": "Route 124",
       "encounters": [
+        "tentacool-hoenn",
         "tentacool",
+        "seel",
+        "seel-hoenn",
         "wingull",
         "dewgong",
-        "seel",
+        "dewgong-hoenn",
         "magikarp",
         "wailmer",
         "sharpedo"
@@ -15171,6 +15217,7 @@
       "name": "All Dive Areas",
       "encounters": [
         "clamperl",
+        "chinchou-hoenn",
         "chinchou",
         "shellder",
         "relicanth"
@@ -15180,6 +15227,7 @@
       "type": "route",
       "name": "Mossdeep City",
       "encounters": [
+        "tentacool-hoenn",
         "tentacool",
         "wingull",
         "pelipper",
@@ -15207,10 +15255,12 @@
       "type": "route",
       "name": "Route 125",
       "encounters": [
+        "tentacool-hoenn",
         "tentacool",
+        "seel-hoenn",
         "wingull",
         "dewgong",
-        "seel",
+        "dewgong-hoenn",
         "magikarp",
         "wailmer",
         "sharpedo"
@@ -15220,22 +15270,25 @@
       "type": "route",
       "name": "Shoal Cave",
       "encounters": [
+        "onix-hoenn",
+        "onix",
         "spheal",
         "zubat",
         "sneasel",
         "golbat",
+        "tentacool-hoenn",
         "tentacool",
         "magikarp",
         "wailmer",
         "swinub",
-        "snorunt",
-        "onix"
+        "snorunt"
       ]
     },
     {
       "type": "route",
       "name": "Route 126",
       "encounters": [
+        "tentacool-hoenn",
         "tentacool",
         "wingull",
         "lapras",
@@ -15243,6 +15296,7 @@
         "wailmer",
         "sharpedo",
         "clamperl",
+        "chinchou-hoenn",
         "chinchou",
         "shellder",
         "relicanth"
@@ -15254,6 +15308,7 @@
       "encounters": [
         "magikarp",
         "buizel",
+        "tentacool-hoenn",
         "tentacool",
         "gyarados"
       ]
@@ -15278,6 +15333,7 @@
       "type": "route",
       "name": "Route 127",
       "encounters": [
+        "tentacool-hoenn",
         "tentacool",
         "wingull",
         "lapras",
@@ -15292,6 +15348,7 @@
       "encounters": [
         "zubat",
         "golbat",
+        "tentacool-hoenn",
         "tentacool",
         "magikarp",
         "wailmer"
@@ -15301,6 +15358,7 @@
       "type": "route",
       "name": "Route 128",
       "encounters": [
+        "tentacool-hoenn",
         "tentacool",
         "wingull",
         "lapras",
@@ -15314,6 +15372,7 @@
       "type": "route",
       "name": "Route 129",
       "encounters": [
+        "tentacool-hoenn",
         "tentacool",
         "wingull",
         "pelipper",
@@ -15327,6 +15386,7 @@
       "type": "route",
       "name": "Briny Trench",
       "encounters": [
+        "mareanie-hoenn",
         "rhyhorn",
         "golbat",
         "graveler",
@@ -15348,6 +15408,7 @@
       "type": "route",
       "name": "Route 130",
       "encounters": [
+        "tentacool-hoenn",
         "tentacool",
         "wingull",
         "pelipper",
@@ -15373,6 +15434,7 @@
       "type": "route",
       "name": "Route 131",
       "encounters": [
+        "tentacool-hoenn",
         "tentacool",
         "wingull",
         "pelipper",
@@ -15387,6 +15449,8 @@
       "type": "route",
       "name": "Pacifidlog Town",
       "encounters": [
+        "solosis-hoenn",
+        "tentacool-hoenn",
         "tentacool",
         "wingull",
         "pelipper",
@@ -15399,11 +15463,13 @@
       "type": "route",
       "name": "Route 132",
       "encounters": [
+        "tentacool-hoenn",
         "tentacool",
         "wingull",
         "pelipper",
         "mantine",
         "magikarp",
+        "qwilfish-hoenn",
         "qwilfish",
         "wailmer",
         "sharpedo"
@@ -15413,11 +15479,13 @@
       "type": "route",
       "name": "Route 133",
       "encounters": [
+        "tentacool-hoenn",
         "tentacool",
         "wingull",
         "pelipper",
         "mantine",
         "magikarp",
+        "qwilfish-hoenn",
         "qwilfish",
         "wailmer",
         "sharpedo"
@@ -15427,11 +15495,13 @@
       "type": "route",
       "name": "Route 134",
       "encounters": [
+        "tentacool-hoenn",
         "tentacool",
         "wingull",
         "pelipper",
         "mantine",
         "magikarp",
+        "qwilfish-hoenn",
         "qwilfish",
         "wailmer",
         "sharpedo"
@@ -15441,6 +15511,7 @@
       "type": "route",
       "name": "Ever Grande City",
       "encounters": [
+        "tentacool-hoenn",
         "tentacool",
         "wingull",
         "pelipper",
