@@ -21,36 +21,59 @@
     starters = [
       { col: 'dragon', name: 'fire', picon: 'gible' },
       { col: 'steel', name: 'water', picon: 'beldum' },
-      { col: 'ground', name: 'grass', picon: 'larvitar' },
+      { col: 'ground', name: 'grass', picon: 'larvitar' }
+    ]
+  }
+
+  if (key.startsWith('blazingem')) {
+    starters = [
+      { col: 'fairy', name: 'fire', picon: 'clefairy' },
+      { col: 'normal', name: 'water', picon: 'eevee' },
+      { col: 'electric', name: 'grass', picon: 'pikachu' }
     ]
   }
 
   const dispatch = createEventDispatcher()
-  const setstarter = (value) => _ => dispatch('select', { value })
+  const setstarter = (value) => (_) => dispatch('select', { value })
 </script>
 
-<SettingWrapper id=theme let:setting={themeId}>
-{#each starters as s, i}
-  <label
-    class='flex w-6 h-6 p-1 items-center justify-center rounded-full cursor-pointer transition border-2'
-    class:opacity-50={starter !== s.name}
-    class:hover:opacity-75={starter !== s.name}
-    class:opacity-100={starter === s.name}
-    class:border-gray-700={minimal}
-    class:bg-gray-700={minimal}
-    style='{starter === s.name ? 'background-color: ' + color(s.col || s.name, themeId) : ''}; {!minimal || starter === s.name ? 'border-color: ' + color(s.col || s.name, themeId) : ''}'
-  >
-    <input type='radio' on:click={setstarter(s.name)} name='starter' value={s.name} />
-    {#if s.icon}
-      <Icon inline={true} icon={s.icon} color={starter === s.name ? 'white' : color(s.col || s.name, themeId)} />
-    {/if}
-    {#if s.picon}
-      <PIcon class='mix-blend-luminosity w-8 h-8' name={s.picon} />
-    {/if}
-  </label>
-{/each}
+<SettingWrapper id="theme" let:setting={themeId}>
+  {#each starters as s, i}
+    <label
+      class="flex h-6 w-6 cursor-pointer items-center justify-center rounded-full border-2 p-1 transition"
+      class:opacity-50={starter !== s.name}
+      class:hover:opacity-75={starter !== s.name}
+      class:opacity-100={starter === s.name}
+      class:border-gray-700={minimal}
+      class:bg-gray-700={minimal}
+      style="{starter === s.name
+        ? 'background-color: ' + color(s.col || s.name, themeId)
+        : ''}; {!minimal || starter === s.name
+        ? 'border-color: ' + color(s.col || s.name, themeId)
+        : ''}"
+    >
+      <input
+        type="radio"
+        on:click={setstarter(s.name)}
+        name="starter"
+        value={s.name}
+      />
+      {#if s.icon}
+        <Icon
+          inline={true}
+          icon={s.icon}
+          color={starter === s.name ? 'white' : color(s.col || s.name, themeId)}
+        />
+      {/if}
+      {#if s.picon}
+        <PIcon class="h-8 w-8 mix-blend-luminosity" name={s.picon} />
+      {/if}
+    </label>
+  {/each}
 </SettingWrapper>
 
 <style lang="postcss">
-  input { display: none; }
+  input {
+    display: none;
+  }
 </style>
