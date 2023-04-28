@@ -25,6 +25,14 @@
     ]
   }
 
+  if (key.startsWith('newgen')) {
+    starters = [
+      { col: 'dragon', name: 'grass', picon: 'rattata' },
+      { col: 'rock', name: 'fire', picon: 'sentret' },
+      { col: 'dark', name: 'water', picon: 'zigzagoon' }
+    ]
+  }
+
   const dispatch = createEventDispatcher()
   const setstarter = (value) => _ => dispatch('select', { value })
 </script>
