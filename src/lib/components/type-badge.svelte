@@ -16,6 +16,8 @@
     special: Special
   }
 
+  if (!type) debugger
+
   const content = type.toUpperCase()
   const icon = IconMap[type.toLowerCase()]
 </script>

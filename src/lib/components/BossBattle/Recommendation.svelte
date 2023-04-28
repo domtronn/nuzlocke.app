@@ -25,7 +25,7 @@
   </p>
 
   <p class="-mt-4 flex h-full flex-col justify-start">
-    <b>{capitalise(regionise(name))}</b>
+    <b>{regionise(capitalise(name))}</b>
 
     <!-- <span><b>Resists:</b> <i>{fmtPct(resistPct)}</i></span> -->
     <!-- {#if weakPct > 0}<span><b>Weak:</b> <i>{fmtPct(weakPct)}</i></span>{/if} -->

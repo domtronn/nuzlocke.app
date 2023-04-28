@@ -1,0 +1,258 @@
+/* Blazing Emerald pokemon */
+.pkm.pkm-mallarki,
+.pkm.pkm-muramoth,
+.pkm.pkm-zangaro,
+.pkm.pkm-slingray,
+.pkm.pkm-silviper,
+.pkm.pkm-regigigas,
+.pkm.pkm-oreon,
+.pkm.pkm-lucemoth,
+.pkm.pkm-goolossal,
+.pkm.pkm-drilladin,
+.pkm.pkm-drasparath,
+.pkm.pkm-chrysalix,
+.pkm.pkm-crawb,
+.pkm.pkm-brawlfrog,
+.pkm.pkm-armored-mewtwo,
+.pkm.pkm-hoennian {
+  filter: contrast(1.5);
+  transform: translateY(-5px);
+  background-image: url(https://img.nuzlocke.app/assets/pokemon-blazingem-v1.png) !important;
+}
+
+.pkm.pkm-mallarki {
+  width: 32px;
+  height: 32px;
+  background-position: -64px -128px;
+}
+.pkm.pkm-muramoth {
+  width: 32px;
+  height: 32px;
+  background-position: -96px -128px;
+}
+.pkm.pkm-zangaro {
+  width: 32px;
+  height: 32px;
+  background-position: -32px -0;
+}
+.pkm.pkm-slingray {
+  width: 32px;
+  height: 32px;
+  background-position: -96px -0;
+}
+.pkm.pkm-silviper {
+  width: 32px;
+  height: 32px;
+  background-position: -32px -96px;
+}
+.pkm.pkm-regigigas {
+  width: 32px;
+  height: 32px;
+  background-position: -0 -128px;
+}
+.pkm.pkm-oreon {
+  width: 32px;
+  height: 32px;
+  background-position: -32px -128px;
+}
+.pkm.pkm-lucemoth {
+  width: 32px;
+  height: 32px;
+  background-position: -160px -32px;
+}
+.pkm.pkm-goolossal {
+  width: 32px;
+  height: 32px;
+  background-position: -160px -64px;
+}
+.pkm.pkm-drilladin {
+  width: 32px;
+  height: 32px;
+  background-position: -128px -160px;
+}
+.pkm.pkm-drasparath {
+  width: 32px;
+  height: 32px;
+  background-position: -192px -64px;
+}
+.pkm.pkm-chrysalix {
+  width: 32px;
+  height: 32px;
+  background-position: -192px -160px;
+}
+.pkm.pkm-crawb {
+  width: 32px;
+  height: 32px;
+  background-position: -0 -192px;
+}
+.pkm.pkm-brawlfrog {
+  width: 32px;
+  height: 32px;
+  background-position: -64px -192px;
+}
+.pkm.pkm-armored-mewtwo {
+  width: 32px;
+  height: 32px;
+  background-position: -128px -192px;
+}
+
+.pkm.pkm-venonat-hoenn {
+  width: 32px;
+  height: 32px;
+  background-position: -0 -0;
+}
+.pkm.pkm-ursaring-hoenn {
+  width: 32px;
+  height: 32px;
+  background-position: -0 -32px;
+}
+.pkm.pkm-tynamo-hoenn {
+  width: 32px;
+  height: 32px;
+  background-position: -32px -32px;
+}
+.pkm.pkm-toxapex-hoenn {
+  width: 32px;
+  height: 32px;
+  background-position: -64px -0;
+}
+.pkm.pkm-tentacruel-hoenn {
+  width: 32px;
+  height: 32px;
+  background-position: -64px -32px;
+}
+.pkm.pkm-tentacool-hoenn {
+  width: 32px;
+  height: 32px;
+  background-position: -0 -64px;
+}
+.pkm.pkm-teddiursa-hoenn {
+  width: 32px;
+  height: 32px;
+  background-position: -32px -64px;
+}
+.pkm.pkm-tangrowth-hoenn {
+  width: 32px;
+  height: 32px;
+  background-position: -64px -64px;
+}
+.pkm.pkm-tangela-hoenn {
+  width: 32px;
+  height: 32px;
+  background-position: -96px -32px;
+}
+.pkm.pkm-solosis-hoenn {
+  width: 32px;
+  height: 32px;
+  background-position: -96px -64px;
+}
+.pkm.pkm-skarmory-hoenn {
+  width: 32px;
+  height: 32px;
+  background-position: -0 -96px;
+}
+.pkm.pkm-shuckle-hoenn {
+  width: 32px;
+  height: 32px;
+  background-position: -64px -96px;
+}
+.pkm.pkm-onix-hoenn {
+  width: 32px;
+  height: 32px;
+  background-position: -96px -96px;
+}
+.pkm.pkm-reuniclus-hoenn {
+  width: 32px;
+  height: 32px;
+  background-position: -128px -0;
+}
+.pkm.pkm-pawniard-hoenn {
+  width: 32px;
+  height: 32px;
+  background-position: -128px -32px;
+}
+.pkm.pkm-seel-hoenn {
+  width: 32px;
+  height: 32px;
+  background-position: -128px -64px;
+}
+.pkm.pkm-pinsir-hoenn {
+  width: 32px;
+  height: 32px;
+  background-position: -128px -96px;
+}
+.pkm.pkm-mareanie-hoenn {
+  width: 32px;
+  height: 32px;
+  background-position: -128px -128px;
+}
+.pkm.pkm-maractus-hoenn {
+  width: 32px;
+  height: 32px;
+  background-position: -160px -0;
+}
+.pkm.pkm-emolga-hoenn {
+  width: 32px;
+  height: 32px;
+  background-position: -160px -96px;
+}
+.pkm.pkm-lanturn-hoenn {
+  width: 32px;
+  height: 32px;
+  background-position: -160px -128px;
+}
+.pkm.pkm-eelektrik-hoenn {
+  width: 32px;
+  height: 32px;
+  background-position: -0 -160px;
+}
+.pkm.pkm-duosion-hoenn {
+  width: 32px;
+  height: 32px;
+  background-position: -32px -160px;
+}
+.pkm.pkm-eelektross-hoenn {
+  width: 32px;
+  height: 32px;
+  background-position: -64px -160px;
+}
+.pkm.pkm-dunsparce-hoenn {
+  width: 32px;
+  height: 32px;
+  background-position: -96px -160px;
+}
+.pkm.pkm-dreepy-hoenn {
+  width: 32px;
+  height: 32px;
+  background-position: -160px -160px;
+}
+.pkm.pkm-dragapult-hoenn {
+  width: 32px;
+  height: 32px;
+  background-position: -192px -0;
+}
+.pkm.pkm-drakloak-hoenn {
+  width: 32px;
+  height: 32px;
+  background-position: -192px -32px;
+}
+.pkm.pkm-dewgong-hoenn {
+  width: 32px;
+  height: 32px;
+  background-position: -192px -96px;
+}
+.pkm.pkm-dodrio-hoenn {
+  width: 32px;
+  height: 32px;
+  background-position: -192px -128px;
+}
+.pkm.pkm-chinchou-hoenn {
+  width: 32px;
+  height: 32px;
+  background-position: -32px -192px;
+}
+.pkm.pkm-bisharp-hoenn {
+  width: 32px;
+  height: 32px;
+  background-position: -96px -192px;
+}

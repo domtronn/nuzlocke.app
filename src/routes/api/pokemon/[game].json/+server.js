@@ -1,10 +1,10 @@
-import { Expanded as games } from '$lib/data/games.js';
-import patches from '$lib/data/patches.json';
+import { Expanded as games } from '$lib/data/games.js'
+import patches from '$lib/data/patches.json'
 
 import { LegacyTypeMap } from '$lib/data/legacy'
-import Pokemon, { filterdata, sumObj } from '../../pokemon.json/_data.js';
+import Pokemon, { filterdata, sumObj } from '../../pokemon.json/_data.js'
 
-const base = filterdata(Pokemon);
+const base = filterdata(Pokemon)
 
 const patchTypes = (pkmn, typeMap) => {
   if (!typeMap) return pkmn
@@ -16,37 +16,43 @@ const patchTypes = (pkmn, typeMap) => {
 }
 
 const patchPokemon = (pkmn, patches = {}, fakemon = {}) => {
-  return pkmn.map((p) => {
-    const patch = patches[p.alias] || patches[p.sprite] || {};
-    const baseStats = {
-      ...p.baseStats,
-      ...(patch.stats || {})
-    };
+  return pkmn
+    .map((p) => {
+      const patch = patches[p.alias] || patches[p.sprite] || {}
+      const baseStats = {
+        ...p.baseStats,
+        ...(patch.stats || {})
+      }
 
-    const total = sumObj(baseStats);
+      const total = sumObj(baseStats)
 
-    return {
-      ...p,
-      types: patch.types || p.types,
-      baseStats,
-      total
-    };
-  }).concat(Object.values(fakemon || {}));
+      return {
+        ...p,
+        types: patch.types || p.types,
+        evos: patch?.evos || p.evos,
+        evoline: patch?.evoline || p.evoline,
+        baseStats,
+        total
+      }
+    })
+    .concat(Object.values(fakemon || {}))
 }
 
 export async function GET({ params }) {
-  const game = games[params.game];
-  const { pokemon, fakemon } = patches[game?.patchId] || patches[params.game] || {};
+  const game = games[params.game]
+  const { pokemon, fakemon } =
+    patches[game?.patchId] || patches[params.game] || {}
 
-  if (!game) return new Response('', { status: 404 });
+  if (!game) return new Response('', { status: 404 })
   if (!game.patched && !game.filter)
     return new Response('', {
       status: 301,
       headers: { Location: '/api/pokemon.json' }
-    });
+    })
 
   let items = base
-  if (game.filter?.types) items = patchTypes(items, LegacyTypeMap[game.filter.types])
+  if (game.filter?.types)
+    items = patchTypes(items, LegacyTypeMap[game.filter.types])
   if (game.patched) items = patchPokemon(items, pokemon, fakemon)
 
   return new Response(JSON.stringify(items), {
@@ -54,5 +60,5 @@ export async function GET({ params }) {
       'Cache-Control': 's-maxage=1, stale-while-revalidate',
       'Content-Type': 'application/json'
     }
-  });
+  })
 }
