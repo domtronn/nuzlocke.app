@@ -14416,6 +14416,1203 @@
       ]
     }
   ],
+  "blazingem": [
+    {
+      "type": "route",
+      "name": "Starter",
+      "encounters": [
+        "clefairy",
+        "eevee",
+        "pikachu"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Route 101",
+      "encounters": [
+        "wurmple",
+        "zigzagoon",
+        "poochyena",
+        "shinx"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Route 103",
+      "encounters": [
+        "poochyena",
+        "zigzagoon",
+        "wingull",
+        "shinx",
+        "tentacool-hoenn",
+        "tentacool",
+        "pelipper",
+        "magikarp",
+        "omanyte",
+        "staryu",
+        "starmie"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Route 102",
+      "encounters": [
+        "zigzagoon",
+        "wurmple",
+        "poliwag",
+        "poochyena",
+        "shinx",
+        "ralts",
+        "lotad",
+        "marill",
+        "slowpoke",
+        "magikarp",
+        "goldeen",
+        "corphish"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Petalburg City",
+      "encounters": [
+        "marill",
+        "slowpoke",
+        "magikarp",
+        "goldeen",
+        "corphish"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Route 104",
+      "encounters": [
+        "zigzagoon",
+        "wurmple",
+        "hoppip",
+        "snubbull",
+        "wingull",
+        "poochyena",
+        "tentacool-hoenn",
+        "tentacool",
+        "buizel",
+        "pelipper",
+        "floatzel",
+        "magikarp"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Petalburg Woods",
+      "encounters": [
+        "ledyba",
+        "caterpie",
+        "venonat-hoenn",
+        "venonat",
+        "wurmple",
+        "shroomish",
+        "slakoth",
+        "hoppip",
+        "ferroseed"
+      ]
+    },
+    {
+      "type": "gym",
+      "name": "Rustboro City Gym",
+      "value": "1",
+      "group": "gym-leader",
+      "boss": "Roxanne"
+    },
+    {
+      "type": "route",
+      "name": "Route 116",
+      "encounters": [
+        "poochyena",
+        "whismur",
+        "nincada",
+        "abra",
+        "mareep",
+        "skitty"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Rusturf Tunnel",
+      "encounters": [
+        "whismur",
+        "tyrogue"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Route 105",
+      "encounters": [
+        "tentacool-hoenn",
+        "tentacool",
+        "wingull",
+        "pelipper",
+        "wartortle",
+        "magikarp",
+        "wailmer"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Route 106",
+      "encounters": [
+        "tentacool-hoenn",
+        "tentacool",
+        "wingull",
+        "pelipper",
+        "wartortle",
+        "magikarp",
+        "wailmer"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Dewford Town",
+      "encounters": [
+        "tentacool-hoenn",
+        "tentacool",
+        "wingull",
+        "pelipper",
+        "magikarp",
+        "carvanha",
+        "wailmer",
+        "sharpedo"
+      ]
+    },
+    {
+      "type": "gym",
+      "name": "Dewford Town Gym",
+      "value": "2",
+      "group": "gym-leader",
+      "boss": "Blake"
+    },
+    {
+      "type": "route",
+      "name": "Dewshine Beach",
+      "encounters": [
+        "wingull",
+        "weedle",
+        "paras",
+        "swablu",
+        "kakuna",
+        "azurill",
+        "krabby",
+        "skorupi"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Granite Cave",
+      "encounters": [
+        "dunsparce-hoenn",
+        "mareanie-hoenn",
+        "machop",
+        "zubat",
+        "abra",
+        "geodude",
+        "riolu",
+        "aron",
+        "sableye",
+        "dunsparce",
+        "mareanie"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Route 107",
+      "encounters": [
+        "tentacool-hoenn",
+        "tentacool",
+        "wingull",
+        "pelipper",
+        "magikarp",
+        "carvanha",
+        "wailmer",
+        "sharpedo"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Route 108",
+      "encounters": [
+        "tentacool-hoenn",
+        "tentacool",
+        "wingull",
+        "pelipper",
+        "magikarp",
+        "wailmer"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Route 109",
+      "encounters": [
+        "tentacool-hoenn",
+        "tentacool",
+        "buizel",
+        "wingull",
+        "pelipper",
+        "floatzel",
+        "magikarp",
+        "wailmer"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Slateport City",
+      "encounters": [
+        "tentacool-hoenn",
+        "tentacool",
+        "wingull",
+        "pelipper",
+        "magikarp",
+        "wailmer"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Route 110",
+      "encounters": [
+        "poochyena",
+        "wingull",
+        "farfetchd",
+        "ponyta",
+        "krabby",
+        "tentacool-hoenn",
+        "tentacool",
+        "kingler",
+        "magikarp",
+        "wailmer"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Secret Tunnel",
+      "encounters": [
+        "whismur",
+        "diglett",
+        "dugtrio"
+      ]
+    },
+    {
+      "type": "gym",
+      "name": "Mauville City Gym",
+      "value": "3",
+      "group": "gym-leader",
+      "boss": "Wattson"
+    },
+    {
+      "type": "route",
+      "name": "Route 117",
+      "encounters": [
+        "roselia",
+        "butterfree",
+        "ditto",
+        "poliwag",
+        "beautifly",
+        "ivysaur",
+        "marill",
+        "slowpoke",
+        "magikarp",
+        "goldeen",
+        "corphish"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Burning Grotto",
+      "encounters": [
+        "numel",
+        "zubat",
+        "geodude",
+        "magmar",
+        "magby",
+        "dreepy-hoenn",
+        "dreepy"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Hidden Grove",
+      "encounters": [
+        "metapod",
+        "caterpie",
+        "butterfree",
+        "wurmple",
+        "dustox",
+        "treecko",
+        "mudkip",
+        "beautifly",
+        "torchic"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Route 111",
+      "encounters": [
+        "teddiursa-hoenn",
+        "pinsir-hoenn",
+        "teddiursa",
+        "pinsir",
+        "sandshrew",
+        "trapinch",
+        "cacnea",
+        "gligar",
+        "cubone",
+        "geodude",
+        "marill",
+        "slowpoke",
+        "goldeen",
+        "magikarp",
+        "kabuto",
+        "barboach"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Mirage Tower",
+      "encounters": [
+        "sandshrew",
+        "trapinch"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Route 112",
+      "encounters": [
+        "doduo",
+        "numel",
+        "teddiursa-hoenn",
+        "teddiursa",
+        "growlithe",
+        "larvesta"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Fiery Path",
+      "encounters": [
+        "numel",
+        "koffing",
+        "magby",
+        "charmeleon"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Route 113",
+      "encounters": [
+        "skarmory-hoenn",
+        "skarmory",
+        "spinda",
+        "growlithe",
+        "houndour"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Fallarbor Mines",
+      "encounters": [
+        "mareanie-hoenn",
+        "tynamo-hoenn",
+        "whismur",
+        "zubat",
+        "tynamo",
+        "geodude",
+        "graveler",
+        "mareanie"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Route 114",
+      "encounters": [
+        "swablu",
+        "lombre",
+        "wooper",
+        "seviper",
+        "zangoose",
+        "tangela-hoenn",
+        "tangela",
+        "marill",
+        "barboach",
+        "goldeen",
+        "whiscash",
+        "magikarp"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Meteor Falls",
+      "encounters": [
+        "zubat",
+        "wooper",
+        "solrock",
+        "lunatone",
+        "quagsire",
+        "magikarp",
+        "goldeen",
+        "barboach",
+        "golbat",
+        "whiscash",
+        "bagon",
+        "crobat"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Route 115",
+      "encounters": [
+        "jigglypuff",
+        "zigzagoon",
+        "linoone",
+        "togepi",
+        "tentacool-hoenn",
+        "tentacool",
+        "buizel",
+        "wingull",
+        "floatzel",
+        "magikarp",
+        "wailmer"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Ancient Alcove",
+      "encounters": [
+        "unown"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Jagged Pass",
+      "encounters": [
+        "maractus",
+        "maractus-hoenn",
+        "numel",
+        "spoink",
+        "gligar",
+        "maractus",
+        "machop"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Lavaridge Town",
+      "encounters": [
+        "sunkern",
+        "horsea",
+        "swinub",
+        "phanpy",
+        "azurill",
+        "tyrogue",
+        "igglybuff",
+        "togepi",
+        "elekid",
+        "magby"
+      ]
+    },
+    {
+      "type": "gym",
+      "name": "Lavaridge Town Gym",
+      "value": "4",
+      "group": "gym-leader",
+      "boss": "Flannery"
+    },
+    {
+      "type": "route",
+      "name": "Abandoned Ship",
+      "encounters": [
+        "tentacool-hoenn",
+        "tentacool",
+        "tentacruel",
+        "magikarp",
+        "dhelmise"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Seaspring Ruins",
+      "encounters": [
+        "zubat",
+        "geodude",
+        "gastly",
+        "golbat",
+        "haunter",
+        "mawile",
+        "graveler",
+        "tentacool-hoenn",
+        "tentacool",
+        "horsea",
+        "seadra"
+      ]
+    },
+    {
+      "type": "gym",
+      "name": "Petalburg City Gym",
+      "value": "5",
+      "group": "gym-leader",
+      "boss": "Norman"
+    },
+    {
+      "type": "route",
+      "name": "New Mauville",
+      "encounters": [
+        "voltorb",
+        "magnemite",
+        "porygon",
+        "elekid",
+        "electabuzz",
+        "electrode",
+        "magneton"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Specialty Tower",
+      "encounters": [
+        "wigglytuff",
+        "hitmontop",
+        "weezing",
+        "aerodactyl",
+        "golduck",
+        "hypno"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Route 118",
+      "encounters": [
+        "sentret",
+        "zigzagoon",
+        "doduo",
+        "wingull",
+        "kecleon",
+        "tentacool-hoenn",
+        "tentacool",
+        "pelipper",
+        "wartortle",
+        "magikarp",
+        "remoraid"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Route 119",
+      "encounters": [
+        "goomy-hoenn",
+        "sentret",
+        "furret",
+        "gloom",
+        "duosion-hoenn",
+        "duosion",
+        "linoone",
+        "ariados",
+        "tropius",
+        "goomy",
+        "tentacool-hoenn",
+        "tentacool",
+        "wingull",
+        "pelipper",
+        "wartortle",
+        "magikarp",
+        "remoraid",
+        "feebas"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Fortree City",
+      "encounters": [
+        "sentret",
+        "spinarak",
+        "zigzagoon"
+      ]
+    },
+    {
+      "type": "gym",
+      "name": "Fortree City Gym",
+      "value": "6",
+      "group": "gym-leader",
+      "boss": "Winona"
+    },
+    {
+      "type": "route",
+      "name": "Route 120",
+      "encounters": [
+        "shuckle-hoenn",
+        "shuckle",
+        "sentret",
+        "furret",
+        "duosion-hoenn",
+        "duosion",
+        "heracross",
+        "absol",
+        "kecleon",
+        "marill",
+        "slowpoke",
+        "slowbro",
+        "magikarp",
+        "goldeen",
+        "barboach"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Desert Underpass",
+      "encounters": [
+        "tynamo-hoenn",
+        "eelektrik-hoenn",
+        "eelektross-hoenn",
+        "golbat",
+        "graveler",
+        "tynamo",
+        "eelektrik",
+        "eelektross"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Route 121",
+      "encounters": [
+        "shuppet",
+        "poochyena",
+        "mightyena",
+        "gastly",
+        "murkrow",
+        "gloom",
+        "wingull",
+        "honchkrow",
+        "tentacool-hoenn",
+        "tentacool",
+        "pelipper",
+        "magikarp",
+        "wailmer"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Safari Zone",
+      "encounters": [
+        "girafarig",
+        "ponyta",
+        "natu",
+        "sunkern",
+        "scyther",
+        "luxio",
+        "chansey",
+        "psyduck",
+        "buizel",
+        "magikarp",
+        "goldeen",
+        "seaking",
+        "dratini",
+        "rhyhorn",
+        "drowzee",
+        "sunflora",
+        "floatzel",
+        "golduck",
+        "phanpy",
+        "xatu",
+        "heracross",
+        "geodude",
+        "pineco",
+        "pikachu",
+        "clefairy",
+        "eevee",
+        "shuckle-hoenn",
+        "shuckle",
+        "spinarak",
+        "ariados",
+        "wooper",
+        "marill",
+        "quagsire",
+        "remoraid",
+        "octillery"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Route 122",
+      "encounters": [
+        "tentacool-hoenn",
+        "tentacool",
+        "wingull",
+        "pelipper",
+        "magikarp",
+        "wailmer",
+        "sharpedo"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Mt. Pyre",
+      "encounters": [
+        "emolga",
+        "emolga-hoenn",
+        "shuppet",
+        "gastly",
+        "yamask",
+        "haunter",
+        "duskull",
+        "vulpix",
+        "chimecho",
+        "wingull"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Route 123",
+      "encounters": [
+        "pawniard-hoenn",
+        "pawniard",
+        "snubbull",
+        "shuppet",
+        "gloom",
+        "granbull",
+        "oddish",
+        "tentacool-hoenn",
+        "tentacool",
+        "wingull",
+        "pelipper",
+        "magikarp",
+        "wailmer"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Lilycove City",
+      "encounters": [
+        "tentacool-hoenn",
+        "tentacool",
+        "buizel",
+        "wingull",
+        "pelipper",
+        "magikarp",
+        "wailmer",
+        "staryu"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Route 124",
+      "encounters": [
+        "tentacool-hoenn",
+        "tentacool",
+        "seel",
+        "seel-hoenn",
+        "wingull",
+        "dewgong",
+        "dewgong-hoenn",
+        "magikarp",
+        "wailmer",
+        "sharpedo"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "All Dive Areas",
+      "encounters": [
+        "clamperl",
+        "chinchou-hoenn",
+        "chinchou",
+        "shellder",
+        "relicanth"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Mossdeep City",
+      "encounters": [
+        "tentacool-hoenn",
+        "tentacool",
+        "wingull",
+        "pelipper",
+        "magikarp",
+        "wailmer",
+        "sharpedo"
+      ]
+    },
+    {
+      "type": "gym",
+      "name": "Mossdeep City Gym",
+      "value": "7",
+      "group": "gym-leader",
+      "boss": "Tate & Liza"
+    },
+    {
+      "type": "route",
+      "name": "The Moon",
+      "encounters": [
+        "lunatone",
+        "metang"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Route 125",
+      "encounters": [
+        "tentacool-hoenn",
+        "tentacool",
+        "seel-hoenn",
+        "wingull",
+        "dewgong",
+        "dewgong-hoenn",
+        "magikarp",
+        "wailmer",
+        "sharpedo"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Shoal Cave",
+      "encounters": [
+        "onix-hoenn",
+        "onix",
+        "spheal",
+        "zubat",
+        "sneasel",
+        "golbat",
+        "tentacool-hoenn",
+        "tentacool",
+        "magikarp",
+        "wailmer",
+        "swinub",
+        "snorunt"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Route 126",
+      "encounters": [
+        "tentacool-hoenn",
+        "tentacool",
+        "wingull",
+        "lapras",
+        "magikarp",
+        "wailmer",
+        "sharpedo",
+        "clamperl",
+        "chinchou-hoenn",
+        "chinchou",
+        "shellder",
+        "relicanth"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Sootopolis City",
+      "encounters": [
+        "magikarp",
+        "buizel",
+        "tentacool-hoenn",
+        "tentacool",
+        "gyarados"
+      ]
+    },
+    {
+      "type": "gym",
+      "name": "Sootopolis Gym",
+      "value": "8",
+      "group": "gym-leader",
+      "boss": "Juan"
+    },
+    {
+      "type": "route",
+      "name": "Cave of Origin Corridor",
+      "encounters": [
+        "zubat",
+        "golbat",
+        "sableye"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Route 127",
+      "encounters": [
+        "tentacool-hoenn",
+        "tentacool",
+        "wingull",
+        "lapras",
+        "magikarp",
+        "wailmer",
+        "sharpedo"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Seafloor Cavern",
+      "encounters": [
+        "zubat",
+        "golbat",
+        "tentacool-hoenn",
+        "tentacool",
+        "magikarp",
+        "wailmer"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Route 128",
+      "encounters": [
+        "tentacool-hoenn",
+        "tentacool",
+        "wingull",
+        "lapras",
+        "magikarp",
+        "carvanha",
+        "wailmer",
+        "wailord"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Route 129",
+      "encounters": [
+        "tentacool-hoenn",
+        "tentacool",
+        "wingull",
+        "pelipper",
+        "mantine",
+        "magikarp",
+        "wailmer",
+        "carvanha"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Briny Trench",
+      "encounters": [
+        "mareanie-hoenn",
+        "rhyhorn",
+        "golbat",
+        "graveler",
+        "rhydon",
+        "mareanie"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Verdant Enclave",
+      "encounters": [
+        "skiploom",
+        "sunflora",
+        "bellossom",
+        "jumpluff"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Route 130",
+      "encounters": [
+        "tentacool-hoenn",
+        "tentacool",
+        "wingull",
+        "pelipper",
+        "mantine",
+        "magikarp",
+        "wailmer",
+        "carvanha",
+        "wailord"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Sky Pillar",
+      "encounters": [
+        "sableye",
+        "golbat",
+        "aerodactyl",
+        "banette",
+        "altaria"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Route 131",
+      "encounters": [
+        "tentacool-hoenn",
+        "tentacool",
+        "wingull",
+        "pelipper",
+        "mantine",
+        "magikarp",
+        "wailmer",
+        "sharpedo",
+        "wailord"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Pacifidlog Town",
+      "encounters": [
+        "solosis-hoenn",
+        "tentacool-hoenn",
+        "tentacool",
+        "wingull",
+        "pelipper",
+        "magikarp",
+        "wailmer",
+        "sharpedo"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Route 132",
+      "encounters": [
+        "tentacool-hoenn",
+        "tentacool",
+        "wingull",
+        "pelipper",
+        "mantine",
+        "magikarp",
+        "qwilfish-hoenn",
+        "qwilfish",
+        "wailmer",
+        "sharpedo"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Route 133",
+      "encounters": [
+        "tentacool-hoenn",
+        "tentacool",
+        "wingull",
+        "pelipper",
+        "mantine",
+        "magikarp",
+        "qwilfish-hoenn",
+        "qwilfish",
+        "wailmer",
+        "sharpedo"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Route 134",
+      "encounters": [
+        "tentacool-hoenn",
+        "tentacool",
+        "wingull",
+        "pelipper",
+        "mantine",
+        "magikarp",
+        "qwilfish-hoenn",
+        "qwilfish",
+        "wailmer",
+        "sharpedo"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Ever Grande City",
+      "encounters": [
+        "tentacool-hoenn",
+        "tentacool",
+        "wingull",
+        "pelipper",
+        "magikarp",
+        "wailmer"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Victory Road",
+      "encounters": [
+        "golbat",
+        "machoke",
+        "rhyhorn",
+        "zubat",
+        "lairon",
+        "aron",
+        "lucario",
+        "mawile",
+        "graveler",
+        "geodude",
+        "sableye",
+        "magikarp",
+        "goldeen",
+        "barboach",
+        "whiscash"
+      ]
+    },
+    {
+      "type": "gym",
+      "name": "Pokémon League",
+      "value": "e1",
+      "group": "elite-four",
+      "boss": "Sidney"
+    },
+    {
+      "type": "gym",
+      "name": "Pokémon League",
+      "value": "e2",
+      "group": "elite-four",
+      "boss": "Serena"
+    },
+    {
+      "type": "gym",
+      "name": "Pokémon League",
+      "value": "e3",
+      "group": "elite-four",
+      "boss": "Bede"
+    },
+    {
+      "type": "gym",
+      "name": "Pokémon League",
+      "value": "e4",
+      "group": "elite-four",
+      "boss": "Drake"
+    },
+    {
+      "type": "gym",
+      "name": "Pokémon League Champion",
+      "value": "ch",
+      "group": "elite-four",
+      "boss": "Wallace"
+    },
+    {
+      "type": "route",
+      "name": "Rocklight Cave",
+      "encounters": [
+        "golbat",
+        "sableye",
+        "mawile",
+        "snorlax"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Rocky Hollow",
+      "encounters": [
+        "diglett",
+        "totodile",
+        "zubat",
+        "dugtrio",
+        "whismur",
+        "chikorita",
+        "cyndaquil"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Mirage Island",
+      "encounters": [
+        "blissey"
+      ]
+    },
+    {
+      "type": "gym",
+      "name": "Meteor Falls Champion",
+      "value": "ch2",
+      "group": "rival",
+      "boss": "Steven"
+    }
+  ],
   "blue": [
     {
       "type": "route",

@@ -38,24 +38,23 @@
 </script>
 
 <SettingWrapper id="theme" let:setting={themeId}>
+  {@const color1 = color(types[0], themeId)}
+  {@const color2 = color(types[1] || types[0], themeId)}
+  {@const pattern = Pattern(color2)}
+  {@debug color1, color2, pattern}
   <div
     class="card relative flex flex-col rounded-lg border bg-white dark:border-gray-900 dark:bg-gray-900 dark:shadow-lg {$$restProps.class ||
       ''}"
   >
     <div
-      style="--t-col: {color(
-        types[0],
-        themeId
-      )}; background-image: url('{Pattern(
-        color(types[1], themeId) || color(types[0], themeId)
-      )}');"
+      style={`--t-col: ${color1}; background-image: url("${pattern}");`}
       class:rounded-b-lg={minimal}
       class:minimal
       class="card__header relative z-0 flex justify-between rounded-t-lg pl-4 pt-4 pb-3"
     >
       <div class="pointer-events-none flex flex-row items-end gap-x-2">
         {#if level}
-          <div class="flex flex-col items-center">
+          <div class="pointer-events-auto flex flex-col items-center">
             <span class="-mb-2 text-xs">Level</span>
             <span class="text-3xl font-bold">{level}</span>
             {#if level.startsWith('+') || level.startsWith('-')}
@@ -69,7 +68,7 @@
           class="mb-0.25 relative z-40 pr-2 text-xl sm:bg-transparent dark:sm:bg-transparent"
         >
           <p
-            class="relative z-40 -mb-1 h-4 w-auto text-xs sm:bg-transparent dark:sm:bg-transparent"
+            class="pointer-events-auto relative z-40 -mb-1 h-4 w-auto text-xs sm:bg-transparent dark:sm:bg-transparent"
           >
             {#if ability}
               <span class:cursor-help={!!ability.effect}>
@@ -82,7 +81,7 @@
             {/if}
           </p>
 
-          {capitalise(regionise(name))}
+          {regionise(capitalise(name))}
 
           {#if held}
             <div

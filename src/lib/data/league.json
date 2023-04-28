@@ -16833,6 +16833,1136 @@
       ]
     }
   },
+  "blazingem": {
+    "1": {
+      "name": "Roxanne",
+      "speciality": "rock",
+      "pokemon": [
+        {
+          "name": "aron",
+          "level": "13",
+          "moves": [
+            "rock-tomb",
+            "metal-claw",
+            "tackle"
+          ],
+          "ability": "sturdy",
+          "abilities": [
+            "sturdy"
+          ]
+        },
+        {
+          "name": "geodude",
+          "level": "14",
+          "moves": [
+            "rock-tomb",
+            "magnitude",
+            "tackle"
+          ],
+          "ability": "rock-head",
+          "abilities": [
+            "rock-head"
+          ]
+        },
+        {
+          "name": "mareanie-hoenn",
+          "level": "15",
+          "moves": [
+            "rock-tomb",
+            "poison-sting",
+            "spike-cannon"
+          ],
+          "ability": "poison-point",
+          "abilities": [
+            "poison-point"
+          ],
+          "held": "oran-berry"
+        }
+      ]
+    },
+    "2": {
+      "name": "Blake",
+      "speciality": "dark",
+      "pokemon": [
+        {
+          "name": "murkrow",
+          "level": "20",
+          "moves": [
+            "pursuit",
+            "wing-attack",
+            "ominous-wind",
+            "taunt"
+          ],
+          "ability": "hustle",
+          "abilities": [
+            "hustle"
+          ]
+        },
+        {
+          "name": "sneasel",
+          "level": "21",
+          "moves": [
+            "pursuit",
+            "icy-wind",
+            "fury-swipes",
+            "quick-attack"
+          ],
+          "ability": "inner-focus",
+          "abilities": [
+            "inner-focus"
+          ]
+        },
+        {
+          "name": "houndour",
+          "level": "22",
+          "moves": [
+            "pursuit",
+            "flame-wheel",
+            "glare",
+            "howl"
+          ],
+          "ability": "unburden",
+          "abilities": [
+            "unburden"
+          ],
+          "held": "oran-berry"
+        }
+      ]
+    },
+    "3": {
+      "name": "Wattson",
+      "speciality": "electric",
+      "pokemon": [
+        {
+          "name": "dunsparce-hoenn",
+          "level": "30",
+          "moves": [
+            "shock-wave",
+            "body-slam",
+            "spark",
+            "dig"
+          ],
+          "ability": "lightning-rod",
+          "abilities": [
+            "lightning-rod"
+          ]
+        },
+        {
+          "name": "luxio",
+          "level": "30",
+          "moves": [
+            "shock-wave",
+            "thunder-clap",
+            "bite",
+            "thunder-wave"
+          ],
+          "ability": "intimidate",
+          "abilities": [
+            "intimidate"
+          ]
+        },
+        {
+          "name": "electrode",
+          "level": "30",
+          "moves": [
+            "shock-wave",
+            "rollout",
+            "self-destruct",
+            "thunder-wave"
+          ],
+          "ability": "soundproof",
+          "abilities": [
+            "soundproof"
+          ]
+        },
+        {
+          "name": "magnezone",
+          "level": "32",
+          "moves": [
+            "shock-wave",
+            "overcharge",
+            "tri-attack",
+            "supersonic"
+          ],
+          "ability": "magnet-pull",
+          "abilities": [
+            "magnet-pull"
+          ],
+          "held": "sitrus-berry"
+        }
+      ]
+    },
+    "4": {
+      "name": "Flannery",
+      "speciality": "fire",
+      "pokemon": [
+        {
+          "name": "larvesta",
+          "level": "35",
+          "moves": [
+            "overheat",
+            "signal-beam",
+            "light-screen",
+            "sunny-day"
+          ],
+          "ability": "flame-body",
+          "abilities": [
+            "flame-body"
+          ]
+        },
+        {
+          "name": "camerupt",
+          "level": "35",
+          "moves": [
+            "overheat",
+            "eruption",
+            "body-slam",
+            "attract"
+          ],
+          "ability": "magma-armor",
+          "abilities": [
+            "magma-armor"
+          ]
+        },
+        {
+          "name": "rapidash",
+          "level": "35",
+          "moves": [
+            "overheat",
+            "flame-wheel",
+            "double-edge",
+            "bounce"
+          ],
+          "ability": "flame-body",
+          "abilities": [
+            "flame-body"
+          ]
+        },
+        {
+          "name": "skarmory-hoenn",
+          "level": "37",
+          "moves": [
+            "overheat",
+            "iron-head",
+            "flare-blitz",
+            "roost"
+          ],
+          "ability": "magma-armor",
+          "abilities": [
+            "magma-armor"
+          ],
+          "held": "white-herb"
+        }
+      ]
+    },
+    "5": {
+      "name": "Norman",
+      "speciality": "normal",
+      "pokemon": [
+        {
+          "name": "linoone",
+          "level": "40",
+          "moves": [
+            "facade",
+            "extreme-speed",
+            "body-slam",
+            "encore"
+          ],
+          "ability": "pickup",
+          "abilities": [
+            "pickup"
+          ]
+        },
+        {
+          "name": "blissey",
+          "level": "40",
+          "moves": [
+            "facade",
+            "seismic-toss",
+            "soft-boiled",
+            "toxic"
+          ],
+          "ability": "natural-cure",
+          "abilities": [
+            "natural-cure"
+          ]
+        },
+        {
+          "name": "exploud",
+          "level": "41",
+          "moves": [
+            "facade",
+            "hyper-voice",
+            "shadow-ball",
+            "flamethrower"
+          ],
+          "ability": "soundproof",
+          "abilities": [
+            "soundproof"
+          ]
+        },
+        {
+          "name": "ursaring",
+          "level": "42",
+          "moves": [
+            "facade",
+            "crush-claw",
+            "wild-roar",
+            "thunder-punch"
+          ],
+          "ability": "guts",
+          "abilities": [
+            "guts"
+          ]
+        },
+        {
+          "name": "slaking",
+          "level": "43",
+          "moves": [
+            "facade",
+            "giga-impact",
+            "night-slash",
+            "earthquake"
+          ],
+          "ability": "truant",
+          "abilities": [
+            "truant"
+          ],
+          "held": "sitrus-berry"
+        }
+      ]
+    },
+    "6": {
+      "name": "Winona",
+      "speciality": "flying",
+      "pokemon": [
+        {
+          "name": "pelipper",
+          "level": "45",
+          "moves": [
+            "brave-bird",
+            "hurricane",
+            "whirlpool",
+            "icy-wind"
+          ],
+          "ability": "keen-eye",
+          "abilities": [
+            "keen-eye"
+          ]
+        },
+        {
+          "name": "tropius",
+          "level": "45",
+          "moves": [
+            "brave-bird",
+            "energy-ball",
+            "grass-whistle",
+            "synthesis"
+          ],
+          "ability": "chlorophyll",
+          "abilities": [
+            "chlorophyll"
+          ]
+        },
+        {
+          "name": "aerodactyl",
+          "level": "47",
+          "moves": [
+            "brave-bird",
+            "stone-surge",
+            "earthquake",
+            "crunch"
+          ],
+          "ability": "rock-head",
+          "abilities": [
+            "rock-head"
+          ]
+        },
+        {
+          "name": "mallarki",
+          "level": "48",
+          "moves": [
+            "brave-bird",
+            "sky-uppercut",
+            "leaf-blade",
+            "fake-out"
+          ],
+          "ability": "hyper-cutter",
+          "abilities": [
+            "hyper-cutter"
+          ]
+        },
+        {
+          "name": "dodrio-hoenn",
+          "level": "50",
+          "moves": [
+            "brave-bird",
+            "bone-rush",
+            "rubble-rush",
+            "high-jump-kick"
+          ],
+          "ability": "intimidate",
+          "abilities": [
+            "intimidate"
+          ],
+          "held": "sitrus-berry"
+        }
+      ]
+    },
+    "7": {
+      "name": "Tate & Liza",
+      "speciality": "psychic",
+      "pokemon": [
+        {
+          "name": "grumpig",
+          "level": "50",
+          "moves": [
+            "extrasensory",
+            "bounce",
+            "magic-coat",
+            "light-screen"
+          ],
+          "ability": "thick-fat",
+          "abilities": [
+            "thick-fat"
+          ]
+        },
+        {
+          "name": "hypno",
+          "level": "50",
+          "moves": [
+            "psychic",
+            "shade-trance",
+            "confuse-ray",
+            "calm-mind"
+          ],
+          "ability": "foul-shroud",
+          "abilities": [
+            "foul-shroud"
+          ]
+        },
+        {
+          "name": "reuniclus-hoenn",
+          "level": "52",
+          "moves": [
+            "psychic",
+            "energy-ball",
+            "thunderbolt",
+            "calm-mind"
+          ],
+          "ability": "fruition",
+          "abilities": [
+            "fruition"
+          ]
+        },
+        {
+          "name": "alakazam",
+          "level": "52",
+          "moves": [
+            "psylight",
+            "shadow-ball",
+            "future-sight",
+            "calm-mind"
+          ],
+          "ability": "synchronize",
+          "abilities": [
+            "synchronize"
+          ]
+        },
+        {
+          "name": "solrock",
+          "level": "54",
+          "moves": [
+            "psychic",
+            "ancient-power",
+            "fire-blast",
+            "calm-mind"
+          ],
+          "ability": "drought",
+          "abilities": [
+            "drought"
+          ],
+          "held": "sitrus-berry"
+        },
+        {
+          "name": "lunatone",
+          "level": "54",
+          "moves": [
+            "psychic",
+            "ancient-power",
+            "raging-waves",
+            "calm-mind"
+          ],
+          "ability": "sky-scourge",
+          "abilities": [
+            "sky-scourge"
+          ],
+          "held": "sitrus-berry"
+        }
+      ]
+    },
+    "8": {
+      "name": "Juan",
+      "speciality": "ice",
+      "pokemon": [
+        {
+          "name": "glalie",
+          "level": "55",
+          "moves": [
+            "freeze-dry",
+            "frostbite",
+            "crunch",
+            "explosion"
+          ],
+          "ability": "glacialize",
+          "abilities": [
+            "glacialize"
+          ]
+        },
+        {
+          "name": "walrein",
+          "level": "55",
+          "moves": [
+            "freeze-dry",
+            "waterfall",
+            "ice-ball",
+            "roar"
+          ],
+          "ability": "thick-fat",
+          "abilities": [
+            "thick-fat"
+          ]
+        },
+        {
+          "name": "froslass",
+          "level": "56",
+          "moves": [
+            "freeze-dry",
+            "shadow-ball",
+            "blizzard",
+            "drain-kiss"
+          ],
+          "ability": "insatiable",
+          "abilities": [
+            "insatiable"
+          ]
+        },
+        {
+          "name": "mamoswine",
+          "level": "57",
+          "moves": [
+            "freeze-dry",
+            "earthquake",
+            "stone-surge",
+            "double-edge"
+          ],
+          "ability": "thick-fat",
+          "abilities": [
+            "thick-fat"
+          ]
+        },
+        {
+          "name": "weavile",
+          "level": "58",
+          "moves": [
+            "freeze-dry",
+            "night-slash",
+            "x-scissor",
+            "slash"
+          ],
+          "ability": "glacialize",
+          "abilities": [
+            "glacialize"
+          ]
+        },
+        {
+          "name": "chrysalix",
+          "level": "60",
+          "moves": [
+            "freeze-dry",
+            "crystalize",
+            "ice-beam",
+            "rest"
+          ],
+          "ability": "crystal-case",
+          "abilities": [
+            "crystal-case"
+          ],
+          "held": "sitrus-berry"
+        }
+      ]
+    },
+    "e1": {
+      "name": "Phoebe",
+      "speciality": "ghost",
+      "pokemon": [
+        {
+          "name": "emolga-hoenn",
+          "level": "63",
+          "moves": [
+            "spectral-sap",
+            "brave-bird",
+            "night-slash",
+            "destiny-bond"
+          ],
+          "ability": "sky-scourge",
+          "abilities": [
+            "sky-scourge"
+          ],
+          "held": "chesto-berry"
+        },
+        {
+          "name": "lanturn-hoenn",
+          "level": "63",
+          "moves": [
+            "abyssal-lure",
+            "hydro-pump",
+            "ice-beam",
+            "dark-pulse"
+          ],
+          "ability": "clear-body",
+          "abilities": [
+            "clear-body"
+          ],
+          "held": "persim-berry"
+        },
+        {
+          "name": "banette",
+          "level": "64",
+          "moves": [
+            "blackout",
+            "knock-off",
+            "will-o-wisp",
+            "destiny-bond"
+          ],
+          "ability": "ambush",
+          "abilities": [
+            "ambush"
+          ],
+          "held": "mental-herb"
+        },
+        {
+          "name": "cofagrigus",
+          "level": "64",
+          "moves": [
+            "shadow-ball",
+            "shadow-punch",
+            "shade-trance",
+            "dream-eater"
+          ],
+          "ability": "shadow-tag",
+          "abilities": [
+            "shadow-tag"
+          ],
+          "held": "sitrus-berry"
+        },
+        {
+          "name": "gengar",
+          "level": "65",
+          "moves": [
+            "thunderbolt",
+            "ice-beam",
+            "giga-drain",
+            "destiny-bond"
+          ],
+          "ability": "levitate",
+          "abilities": [
+            "levitate"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "dusknoir",
+          "level": "68",
+          "moves": [
+            "blackout",
+            "sleep-talk",
+            "rest",
+            "ice-punch"
+          ],
+          "ability": "foul-shroud",
+          "abilities": [
+            "foul-shroud"
+          ],
+          "held": "spell-tag"
+        }
+      ]
+    },
+    "e2": {
+      "name": "Serena",
+      "speciality": "grass",
+      "pokemon": [
+        {
+          "name": "sunflora",
+          "level": "63",
+          "moves": [
+            "wish",
+            "solar-beam",
+            "fire-blast",
+            "grass-whistle"
+          ],
+          "ability": "drought",
+          "abilities": [
+            "drought"
+          ],
+          "held": "chesto-berry"
+        },
+        {
+          "name": "vileplume",
+          "level": "65",
+          "moves": [
+            "solar-beam",
+            "sunny-day",
+            "sludge-bomb",
+            "synthesis"
+          ],
+          "ability": "chlorophyll",
+          "abilities": [
+            "chlorophyll"
+          ],
+          "held": "persim-berry"
+        },
+        {
+          "name": "shuckle-hoenn",
+          "level": "66",
+          "moves": [
+            "ingrain",
+            "leech-seed",
+            "toxic",
+            "rest"
+          ],
+          "ability": "effect-spore",
+          "abilities": [
+            "effect-spore"
+          ],
+          "held": "mental-herb"
+        },
+        {
+          "name": "meganium",
+          "level": "66",
+          "moves": [
+            "petal-dance",
+            "frenzy-plant",
+            "synthesis",
+            "grass-whistle"
+          ],
+          "ability": "chlorophyll",
+          "abilities": [
+            "chlorophyll"
+          ],
+          "held": "sitrus-berry"
+        },
+        {
+          "name": "ferrothorn",
+          "level": "67",
+          "moves": [
+            "iron-head",
+            "seed-bomb",
+            "thunder-wave",
+            "leech-seed"
+          ],
+          "ability": "iron-barbs",
+          "abilities": [
+            "iron-barbs"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "reuniclus-hoenn",
+          "level": "68",
+          "moves": [
+            "ripen",
+            "psychic",
+            "energy-ball",
+            "synthesis"
+          ],
+          "ability": "fruition",
+          "abilities": [
+            "fruition"
+          ],
+          "held": "spell-tag"
+        }
+      ]
+    },
+    "e3": {
+      "name": "Bede",
+      "speciality": "fairy",
+      "pokemon": [
+        {
+          "name": "wigglytuff",
+          "level": "65",
+          "moves": [
+            "shadow-ball",
+            "thunderbolt",
+            "ice-beam",
+            "sweet-kiss"
+          ],
+          "ability": "cute-charm",
+          "abilities": [
+            "cute-charm"
+          ],
+          "held": "chesto-berry"
+        },
+        {
+          "name": "azumarill",
+          "level": "66",
+          "moves": [
+            "belly-drum",
+            "aqua-jet",
+            "play-rough",
+            "double-edge"
+          ],
+          "ability": "huge-power",
+          "abilities": [
+            "huge-power"
+          ],
+          "held": "persim-berry"
+        },
+        {
+          "name": "sylveon",
+          "level": "66",
+          "moves": [
+            "hyper-voice",
+            "dazzle-dust",
+            "drain-kiss",
+            "fake-out"
+          ],
+          "ability": "regalia",
+          "abilities": [
+            "regalia"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "togekiss",
+          "level": "68",
+          "moves": [
+            "moonrazer",
+            "air-slash",
+            "thunder-wave",
+            "encore"
+          ],
+          "ability": "serene-grace",
+          "abilities": [
+            "serene-grace"
+          ],
+          "held": "cheri-berry"
+        },
+        {
+          "name": "bisharp-hoenn",
+          "level": "69",
+          "moves": [
+            "knight's-vow",
+            "iron-head",
+            "play-rough",
+            "night-slash"
+          ],
+          "ability": "battle-armor",
+          "abilities": [
+            "battle-armor"
+          ],
+          "held": "sitrus-berry"
+        },
+        {
+          "name": "goolossal",
+          "level": "70",
+          "moves": [
+            "mire-surge",
+            "hydro-pump",
+            "dazzle-dust",
+            "moonrazer"
+          ],
+          "ability": "regalia",
+          "abilities": [
+            "regalia"
+          ],
+          "held": "soothe-bell"
+        }
+      ]
+    },
+    "e4": {
+      "name": "Drake",
+      "speciality": "dragon",
+      "pokemon": [
+        {
+          "name": "dragonite",
+          "level": "67",
+          "moves": [
+            "fly",
+            "dragon-claw",
+            "dragon-dance",
+            "earthquake"
+          ],
+          "ability": "multiscale",
+          "abilities": [
+            "multiscale"
+          ],
+          "held": "lum-berry"
+        },
+        {
+          "name": "flygon",
+          "level": "67",
+          "moves": [
+            "earthquake",
+            "fire-blast",
+            "stone-surge",
+            "draco-meteor"
+          ],
+          "ability": "levitate",
+          "abilities": [
+            "levitate"
+          ],
+          "held": "pecha-berry"
+        },
+        {
+          "name": "garchomp",
+          "level": "68",
+          "moves": [
+            "fire-blast",
+            "crunch",
+            "dragon-claw",
+            "earthquake"
+          ],
+          "ability": "rough-skin",
+          "abilities": [
+            "rough-skin"
+          ],
+          "held": "rawst-berry"
+        },
+        {
+          "name": "salamence",
+          "level": "69",
+          "moves": [
+            "outrage",
+            "wish",
+            "toxic",
+            "protect"
+          ],
+          "ability": "intimidate",
+          "abilities": [
+            "intimidate"
+          ],
+          "held": "persim-berry"
+        },
+        {
+          "name": "drasparath",
+          "level": "70",
+          "moves": [
+            "thunder",
+            "ancient-power",
+            "cloudburst",
+            "dragon-pulse"
+          ],
+          "ability": "air-control",
+          "abilities": [
+            "air-control"
+          ],
+          "held": "pecha-berry"
+        },
+        {
+          "name": "dragapult-hoenn",
+          "level": "71",
+          "moves": [
+            "devil-darts",
+            "shadow-ball",
+            "will-o-wisp",
+            "dragon-pulse"
+          ],
+          "ability": "levitate",
+          "abilities": [
+            "levitate"
+          ],
+          "held": "dragon-fang"
+        }
+      ]
+    },
+    "ch": {
+      "name": "Wallace",
+      "speciality": "water",
+      "pokemon": [
+        {
+          "name": "whiscash",
+          "level": "71",
+          "moves": [
+            "hydro-pump",
+            "earth-power",
+            "ice-beam",
+            "future-sight"
+          ],
+          "ability": "drizzle",
+          "abilities": [
+            "drizzle"
+          ],
+          "held": "ganlon-berry"
+        },
+        {
+          "name": "tentacruel-hoenn",
+          "level": "72",
+          "moves": [
+            "overcharge",
+            "liquidation",
+            "thunder-clap",
+            "poison-jab"
+          ],
+          "ability": "levin-skin",
+          "abilities": [
+            "levin-skin"
+          ],
+          "held": "liechi-berry"
+        },
+        {
+          "name": "crawdaunt",
+          "level": "72",
+          "moves": [
+            "crabhammer",
+            "aqua-jet",
+            "knock-off",
+            "dragon-dance"
+          ],
+          "ability": "adaptability",
+          "abilities": [
+            "adaptability"
+          ],
+          "held": "apicot-berry"
+        },
+        {
+          "name": "ludicolo",
+          "level": "73",
+          "moves": [
+            "energy-ball",
+            "surf",
+            "ice-beam",
+            "leech-seed"
+          ],
+          "ability": "swift-swim",
+          "abilities": [
+            "swift-swim"
+          ],
+          "held": "petaya-berry"
+        },
+        {
+          "name": "lapras",
+          "level": "73",
+          "moves": [
+            "blizzard",
+            "water-spout",
+            "thunderbolt",
+            "perish-song"
+          ],
+          "ability": "multiscale",
+          "abilities": [
+            "multiscale"
+          ],
+          "held": "salac-berry"
+        },
+        {
+          "name": "milotic",
+          "level": "75",
+          "moves": [
+            "raging-waves",
+            "ice-beam",
+            "recover",
+            "toxic"
+          ],
+          "ability": "marvel-scale",
+          "abilities": [
+            "marvel-scale"
+          ],
+          "held": "mystic-water"
+        }
+      ]
+    },
+    "ch2": {
+      "name": "Steven",
+      "speciality": "steel",
+      "pokemon": [
+        {
+          "name": "skarmory-hoenn",
+          "level": "73",
+          "moves": [
+            "sizzle-beak",
+            "steel-wing",
+            "brave-bird",
+            "spikes"
+          ],
+          "ability": "flash-fire",
+          "abilities": [
+            "flash-fire"
+          ]
+        },
+        {
+          "name": "lucario",
+          "level": "73",
+          "moves": [
+            "aura-sphere",
+            "dark-pulse",
+            "earth-power",
+            "shadow-ball"
+          ],
+          "ability": "resolute",
+          "abilities": [
+            "resolute"
+          ]
+        },
+        {
+          "name": "cradily",
+          "level": "74",
+          "moves": [
+            "giga-drain",
+            "ancient-power",
+            "ingrain",
+            "confuse-ray"
+          ],
+          "ability": "suction-cups",
+          "abilities": [
+            "suction-cups"
+          ]
+        },
+        {
+          "name": "armaldo",
+          "level": "74",
+          "moves": [
+            "x-scissor",
+            "accelerock",
+            "superpower",
+            "night-slash"
+          ],
+          "ability": "tough-claws",
+          "abilities": [
+            "tough-claws"
+          ]
+        },
+        {
+          "name": "aggron",
+          "level": "74",
+          "moves": [
+            "stone-surge",
+            "dragon-claw",
+            "earthquake",
+            "thunder"
+          ],
+          "ability": "sand-stream",
+          "abilities": [
+            "sand-stream"
+          ]
+        },
+        {
+          "name": "metagross",
+          "level": "76",
+          "moves": [
+            "meteor-mash",
+            "psycho-cut",
+            "brick-break",
+            "earthquake"
+          ],
+          "ability": "clear-body",
+          "abilities": [
+            "clear-body"
+          ]
+        }
+      ]
+    }
+  },
   "bw": {
     "1": {
       "name": "Chili, Cress or Cilan",
