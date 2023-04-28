@@ -36370,6 +36370,1189 @@
       ]
     }
   ],
+  "newgen": [
+    {
+      "type": "route",
+      "name": "Starter",
+      "encounters": [
+        "rattata",
+        "sentret",
+        "zigzagoon"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Route 1",
+      "encounters": [
+        "rattata",
+        "sentret",
+        "zigzagoon",
+        "wurmple",
+        "poochyena"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Viridian City",
+      "encounters": [
+        "seel",
+        "wingull",
+        "wooper",
+        "marill",
+        "totodile",
+        "mudkip",
+        "squirtle",
+        "slowpoke"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Viridan Forest",
+      "encounters": [
+        "wurmple",
+        "caterpie",
+        "weedle",
+        "spinarak",
+        "ledyba",
+        "illumise",
+        "volbeat",
+        "pinsir",
+        "heracross"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Route 22",
+      "encounters": [
+        "bellsprout",
+        "oddish",
+        "girafarig",
+        "hoppip",
+        "lotad",
+        "treecko",
+        "chikorita",
+        "seedot",
+        "bulbasaur"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Route 2",
+      "encounters": [
+        "taillow",
+        "hoothoot",
+        "pidgey",
+        "yanma",
+        "natu",
+        "swablu",
+        "doduo",
+        "farfetchd",
+        "skarmory"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Pewter City",
+      "encounters": [
+        "houndour",
+        "growlithe",
+        "slugma",
+        "solrock",
+        "ponyta",
+        "numel",
+        "charmander",
+        "cyndaquil",
+        "torchic",
+        "vulpix"
+      ]
+    },
+    {
+      "type": "gym",
+      "name": "Pewter City Gym",
+      "value": "1_a",
+      "group": "mini-boss",
+      "boss": "Brock"
+    },
+    {
+      "type": "gym",
+      "name": "Pewter City Gym",
+      "value": "1_b",
+      "group": "mini-boss",
+      "boss": "Roxanne"
+    },
+    {
+      "type": "gym",
+      "name": "Pewter City Gym",
+      "value": "1_c",
+      "group": "gym-leader",
+      "boss": "Gym Laeder Joey"
+    },
+    {
+      "type": "route",
+      "name": "Route 3",
+      "encounters": [
+        "igglybuff",
+        "cleffa",
+        "elekid",
+        "magby",
+        "azurill",
+        "togepi",
+        "pichu",
+        "wynaut",
+        "tyrogue",
+        "smoochum"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Mt. Moon",
+      "encounters": [
+        "geodude",
+        "shuckle",
+        "solrock",
+        "aron",
+        "lunatone",
+        "nosepass",
+        "onix",
+        "pineco",
+        "larvitar",
+        "corsola",
+        "clefairy",
+        "zubat",
+        "paras"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Route 4",
+      "encounters": [
+        "phanpy",
+        "diglett",
+        "sandshrew",
+        "cacnea",
+        "rhyhorn",
+        "geodude",
+        "cubone",
+        "miltank",
+        "baltoy",
+        "nincada"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Cerulean City",
+      "encounters": [
+        "snorunt",
+        "whismur",
+        "sneasel",
+        "swinub",
+        "delibird",
+        "seel",
+        "smoochum",
+        "spheal",
+        "makuhita"
+      ]
+    },
+    {
+      "type": "gym",
+      "name": "Cerulean City Gym",
+      "value": "2_a",
+      "group": "mini-boss",
+      "boss": "Misty"
+    },
+    {
+      "type": "gym",
+      "name": "Cerulean City Gym",
+      "value": "2_b",
+      "group": "mini-boss",
+      "boss": "Brawly"
+    },
+    {
+      "type": "gym",
+      "name": "Cerulean City Gym",
+      "value": "2_c",
+      "group": "gym-leader",
+      "boss": "Gym Leaders Duff & Eda"
+    },
+    {
+      "type": "route",
+      "name": "Route 24",
+      "encounters": [
+        "ekans",
+        "spinarak",
+        "grimer",
+        "nidoran-f",
+        "nidoran-m",
+        "seviper",
+        "gligar",
+        "gulpin",
+        "roselia",
+        "tentacool",
+        "wailmer",
+        "wingull",
+        "feebas",
+        "magikarp",
+        "staryu",
+        "wooper",
+        "golduck",
+        "clamperl",
+        "barboach",
+        "relicanth",
+        "mantine"
+      ]
+    },
+    {
+      "type": "gym",
+      "name": "Route 24",
+      "value": "r2",
+      "group": "rival",
+      "boss": "Rival"
+    },
+    {
+      "type": "route",
+      "name": "Route 25",
+      "encounters": [
+        "lickitung",
+        "teddiursa",
+        "smeargle",
+        "spinda",
+        "kecleon",
+        "zigzagoon",
+        "meowth",
+        "chansey",
+        "eevee"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Route 5",
+      "encounters": [
+        "plusle",
+        "minun",
+        "mareep",
+        "electrike",
+        "voltorb",
+        "magnemite",
+        "porygon"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Route 6",
+      "encounters": [
+        "cacnea",
+        "trapinch",
+        "skitty",
+        "solrock",
+        "lunatone",
+        "pidgey",
+        "scyther",
+        "porygon",
+        "gulpin",
+        "torkoal",
+        "slowpoke",
+        "golduck",
+        "staryu",
+        "seel",
+        "dratini",
+        "magikarp",
+        "feebas",
+        "clamperl",
+        "marill",
+        "wailmer",
+        "luvdisc",
+        "poliwag",
+        "carvanha"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Vermilion City",
+      "encounters": [
+        "paras",
+        "nincada",
+        "wurmple",
+        "anorith",
+        "surskit",
+        "scyther",
+        "trapinch",
+        "venonat",
+        "heracross",
+        "pinsir",
+        "golduck",
+        "staryu",
+        "clamperl",
+        "gyarados",
+        "magikarp",
+        "feebas",
+        "slowpoke",
+        "goldeen",
+        "barboach",
+        "krabby",
+        "shellder",
+        "wooper",
+        "mantine"
+      ]
+    },
+    {
+      "type": "gym",
+      "name": "S.S. Anne",
+      "value": "r3",
+      "group": "rival",
+      "boss": "Rival"
+    },
+    {
+      "type": "gym",
+      "name": "Vermillion City Gym",
+      "value": "3_a",
+      "group": "mini-boss",
+      "boss": "Lt. Surge"
+    },
+    {
+      "type": "gym",
+      "name": "Vermillion City Gym",
+      "value": "3_b",
+      "group": "mini-boss",
+      "boss": "Wattson"
+    },
+    {
+      "type": "gym",
+      "name": "Vermillion City Gym",
+      "value": "3_c",
+      "group": "gym-leader",
+      "boss": "Gym Leader Franklin"
+    },
+    {
+      "type": "route",
+      "name": "Long Cave",
+      "encounters": [
+        "mankey",
+        "bellsprout",
+        "hoppip",
+        "chinchou",
+        "trapinch",
+        "kecleon",
+        "phanpy",
+        "aipom"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Route 11",
+      "encounters": [
+        "meditite",
+        "farfetchd",
+        "mankey",
+        "machop",
+        "phanpy",
+        "taillow",
+        "aipom",
+        "shroomish",
+        "absol",
+        "makuhita"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Route 9",
+      "encounters": [
+        "unown",
+        "meditite",
+        "abra",
+        "drowzee",
+        "spoink",
+        "exeggcute",
+        "mr-mime",
+        "chimecho",
+        "ralts",
+        "girafarig",
+        "beldum"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Route 10",
+      "encounters": [
+        "ditto",
+        "sunkern",
+        "gastly",
+        "seedot",
+        "lotad",
+        "koffing",
+        "shuppet",
+        "duskull",
+        "sableye",
+        "murkrow",
+        "wingull",
+        "spearow",
+        "barboach",
+        "horsea",
+        "seel",
+        "clamperl",
+        "wooper",
+        "tentacool",
+        "staryu",
+        "chinchou",
+        "goldeen",
+        "wailmer",
+        "mantine"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Power Plant",
+      "encounters": [
+        "rattata",
+        "pineco",
+        "voltorb",
+        "meowth",
+        "shroomish",
+        "sableye",
+        "corphish",
+        "duskull",
+        "bagon",
+        "seviper"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Rock Tunnel",
+      "encounters": [
+        "omanyte",
+        "kabuto",
+        "lileep",
+        "anorith",
+        "sudowoodo",
+        "onix",
+        "aerodactyl",
+        "aron",
+        "nosepass",
+        "larvitar",
+        "zubat",
+        "mankey",
+        "machop",
+        "geodude"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Lavender Town",
+      "encounters": [
+        "mr-mime",
+        "diglett",
+        "cacnea",
+        "scyther",
+        "corsola",
+        "zubat",
+        "venonat",
+        "snorunt",
+        "snorlax",
+        "tropius"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Gift House",
+      "encounters": [
+        "bulbasaur",
+        "charmander",
+        "squirtle",
+        "chikorita",
+        "cyndaquil",
+        "totodile",
+        "treecko",
+        "torchic",
+        "mudkip"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Route 8",
+      "encounters": [
+        "nidoran-f",
+        "nidoran-m",
+        "rattata",
+        "pineco",
+        "eevee",
+        "meowth",
+        "sentret",
+        "dunsparce",
+        "beldum"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Route 7",
+      "encounters": [
+        "ponyta",
+        "slugma",
+        "oddish",
+        "sunkern",
+        "torkoal",
+        "numel",
+        "gulpin",
+        "taillow",
+        "wobbuffet",
+        "magmar"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Celadon City",
+      "encounters": [
+        "stantler",
+        "mawile",
+        "snubbull",
+        "ralts",
+        "clefairy",
+        "jigglypuff",
+        "spoink",
+        "misdreavus",
+        "skitty",
+        "swablu",
+        "mantine",
+        "chinchou",
+        "wailmer",
+        "horsea",
+        "poliwag",
+        "luvdisc",
+        "golduck",
+        "tentacruel",
+        "corphish",
+        "relicanth",
+        "staryu",
+        "gyarados",
+        "lapras"
+      ]
+    },
+    {
+      "type": "gym",
+      "name": "Celadon City Gym",
+      "value": "4_a",
+      "group": "mini-boss",
+      "boss": "Erika"
+    },
+    {
+      "type": "gym",
+      "name": "Celadon City Gym",
+      "value": "4_b",
+      "group": "mini-boss",
+      "boss": "Flannery"
+    },
+    {
+      "type": "gym",
+      "name": "Celadon City Gym",
+      "value": "4_c",
+      "group": "gym-leader",
+      "boss": "Gym Leader Charles"
+    },
+    {
+      "type": "route",
+      "name": "Pokémon Tower",
+      "encounters": [
+        "gastly",
+        "shuppet",
+        "cubone",
+        "skitty",
+        "wynaut",
+        "corsola",
+        "misdreavus",
+        "shuckle",
+        "banette",
+        "duskull"
+      ]
+    },
+    {
+      "type": "gym",
+      "name": "Pokémon Tower",
+      "value": "r4",
+      "group": "rival",
+      "boss": "Rival"
+    },
+    {
+      "type": "route",
+      "name": "Route 12",
+      "encounters": [
+        "oddish",
+        "bellsprout",
+        "paras",
+        "sneasel",
+        "tangela",
+        "exeggcute",
+        "jynx",
+        "makuhita",
+        "whismur",
+        "spinda"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Route 13",
+      "encounters": [
+        "slugma",
+        "seedot",
+        "skarmory",
+        "shuppet",
+        "kecleon",
+        "pikachu",
+        "machop",
+        "teddiursa",
+        "sudowoodo",
+        "taillow"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Route 14",
+      "encounters": [
+        "roselia",
+        "houndour",
+        "tangela",
+        "mareep",
+        "sentret",
+        "weedle",
+        "mankey",
+        "absol",
+        "bagon",
+        "beldum",
+        "larvitar"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Route 15",
+      "encounters": [
+        "electrike",
+        "whismur",
+        "growlithe",
+        "venonat",
+        "pineco",
+        "poochyena",
+        "eevee",
+        "doduo",
+        "dunsparce",
+        "tauros"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Fuchsia City",
+      "encounters": [
+        "zubat",
+        "whismur",
+        "solrock",
+        "lunatone",
+        "clefairy",
+        "jigglypuff",
+        "snubbull",
+        "swablu",
+        "beldum",
+        "larvitar"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Safari zone",
+      "encounters": [
+        "larvitar",
+        "beldum",
+        "dratini",
+        "bagon",
+        "slakoth",
+        "zubat",
+        "growlithe",
+        "swablu",
+        "nidoran-f",
+        "nidorina",
+        "nidoran-m",
+        "nidorino",
+        "parasect",
+        "venonat",
+        "psyduck",
+        "poliwag",
+        "slowpoke",
+        "exeggcute",
+        "rhyhorn",
+        "chansey",
+        "goldeen",
+        "seaking",
+        "scyther",
+        "pinsir",
+        "magikarp",
+        "dragonair"
+      ]
+    },
+    {
+      "type": "gym",
+      "name": "Fuschia City Gym",
+      "value": "5_a",
+      "group": "mini-boss",
+      "boss": "Koga"
+    },
+    {
+      "type": "gym",
+      "name": "Fuschia City Gym",
+      "value": "5_b",
+      "group": "mini-boss",
+      "boss": "Norman"
+    },
+    {
+      "type": "gym",
+      "name": "Fuschia City Gym",
+      "value": "5_c",
+      "group": "gym-leader",
+      "boss": "Gym Leader AAAAAAAHHH"
+    },
+    {
+      "type": "gym",
+      "name": "Silph Co",
+      "value": "r5",
+      "group": "rival",
+      "boss": "Rival"
+    },
+    {
+      "type": "route",
+      "name": "Saffron City",
+      "encounters": [
+        "oddish",
+        "seedot",
+        "mankey",
+        "machop",
+        "cacnea",
+        "electrike",
+        "tropius",
+        "dunsparce",
+        "whismur",
+        "nincada"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Route 16",
+      "encounters": [
+        "mawile",
+        "cubone",
+        "sandshrew",
+        "onix",
+        "slugma",
+        "gligar",
+        "abra",
+        "numel",
+        "skarmory",
+        "zigzagoon"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Route 17",
+      "encounters": [
+        "stantler",
+        "snubbull",
+        "onix",
+        "geodude",
+        "heracross",
+        "nincada",
+        "delibird",
+        "doduo",
+        "hoothoot",
+        "pinsir"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Route 18",
+      "encounters": [
+        "unown",
+        "sunkern",
+        "ledyba",
+        "mareep",
+        "hoppip",
+        "sandshrew",
+        "tauros",
+        "doduo",
+        "pidgey",
+        "lotad"
+      ]
+    },
+    {
+      "type": "gym",
+      "name": "Saffron City Gym",
+      "value": "6_a",
+      "group": "mini-boss",
+      "boss": "Sabrina"
+    },
+    {
+      "type": "gym",
+      "name": "Saffron City Gym",
+      "value": "6_b",
+      "group": "mini-boss",
+      "boss": "Winona"
+    },
+    {
+      "type": "gym",
+      "name": "Saffron City Gym",
+      "value": "6_c",
+      "group": "gym-leader",
+      "boss": "Gym Leader Bob"
+    },
+    {
+      "type": "route",
+      "name": "Route 19",
+      "encounters": [
+        "seaking",
+        "starmie",
+        "seadra",
+        "magikarp",
+        "wooper",
+        "barboach",
+        "clamperl",
+        "chinchou",
+        "goldeen",
+        "tentacool",
+        "staryu",
+        "dratini"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Route 20",
+      "encounters": [
+        "corphish",
+        "krabby",
+        "seadra",
+        "lapras",
+        "goldeen"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Route 21",
+      "encounters": [
+        "voltorb",
+        "spinda",
+        "swinub",
+        "spinarak",
+        "hoppip",
+        "lotad",
+        "natu",
+        "sunkern",
+        "duskull",
+        "baltoy",
+        "seaking",
+        "remoraid",
+        "qwilfish",
+        "chinchou",
+        "lapras"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Seafom Islands",
+      "encounters": [
+        "magnemite",
+        "aipom",
+        "dunsparce",
+        "zangoose",
+        "tauros",
+        "onix",
+        "bagon",
+        "larvitar",
+        "dratini",
+        "snorlax",
+        "shuckle"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Pokémon Mansion",
+      "encounters": [
+        "torkoal",
+        "slugma",
+        "octillery",
+        "koffing",
+        "vulpix",
+        "rhyhorn",
+        "zubat",
+        "miltank",
+        "slakoth",
+        "kangaskhan"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Cinnabar Island",
+      "encounters": [
+        "murkrow",
+        "drowzee",
+        "seviper",
+        "zangoose",
+        "electabuzz",
+        "magmar",
+        "tropius",
+        "dunsparce",
+        "snorlax",
+        "slakoth",
+        "staryu",
+        "marill",
+        "lapras",
+        "dratini"
+      ]
+    },
+    {
+      "type": "gym",
+      "name": "Cinnabar City Gym",
+      "value": "7_a",
+      "group": "mini-boss",
+      "boss": "Blaine"
+    },
+    {
+      "type": "gym",
+      "name": "Cinnabar City Gym",
+      "value": "7_b",
+      "group": "mini-boss",
+      "boss": "Tate & Liza"
+    },
+    {
+      "type": "gym",
+      "name": "Cinnabar City Gym",
+      "value": "7_c",
+      "group": "gym-leader",
+      "boss": "Gym Leader Deidara"
+    },
+    {
+      "type": "gym",
+      "name": "Viridian City Gym",
+      "value": "8_a",
+      "group": "mini-boss",
+      "boss": "Giovanni"
+    },
+    {
+      "type": "gym",
+      "name": "Viridian City Gym",
+      "value": "8_b",
+      "group": "mini-boss",
+      "boss": "Wallace"
+    },
+    {
+      "type": "gym",
+      "name": "Viridian City Gym",
+      "value": "8_c",
+      "group": "gym-leader",
+      "boss": "Gym Leader Eevolove"
+    },
+    {
+      "type": "gym",
+      "name": "Viridian City Gym",
+      "value": "r6",
+      "group": "rival",
+      "boss": "Rival"
+    },
+    {
+      "type": "route",
+      "name": "Route 23",
+      "encounters": [
+        "krabby",
+        "poochyena",
+        "zigzagoon",
+        "skitty",
+        "trapinch",
+        "spinarak",
+        "porygon",
+        "cubone",
+        "grimer",
+        "paras"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Victory Road",
+      "encounters": [
+        "aron",
+        "onix",
+        "snorlax",
+        "dunsparce",
+        "slakoth",
+        "pineco",
+        "bagon",
+        "larvitar",
+        "dratini",
+        "beldum",
+        "arbok",
+        "sandslash",
+        "zubat",
+        "golbat",
+        "primeape",
+        "machop",
+        "machoke",
+        "geodude",
+        "marowak",
+        "moltres"
+      ]
+    },
+    {
+      "type": "gym",
+      "name": "Victory Road (left)",
+      "value": "mb_1",
+      "group": "mini-boss",
+      "boss": "Brock"
+    },
+    {
+      "type": "gym",
+      "name": "Victory Road (left)",
+      "value": "mb_2",
+      "group": "mini-boss",
+      "boss": "Misty"
+    },
+    {
+      "type": "gym",
+      "name": "Victory Road (left)",
+      "value": "mb_3",
+      "group": "mini-boss",
+      "boss": "Lt. Surge"
+    },
+    {
+      "type": "gym",
+      "name": "Victory Road (left)",
+      "value": "mb_4",
+      "group": "mini-boss",
+      "boss": "Erika"
+    },
+    {
+      "type": "gym",
+      "name": "Victory Road (left)",
+      "value": "mb_5",
+      "group": "mini-boss",
+      "boss": "Koga"
+    },
+    {
+      "type": "gym",
+      "name": "Victory Road (left)",
+      "value": "mb_6",
+      "group": "mini-boss",
+      "boss": "Sabrina"
+    },
+    {
+      "type": "gym",
+      "name": "Victory Road (left)",
+      "value": "mb_7",
+      "group": "mini-boss",
+      "boss": "Blaine"
+    },
+    {
+      "type": "gym",
+      "name": "Victory Road (left)",
+      "value": "mb_8",
+      "group": "mini-boss",
+      "boss": "Giovanni"
+    },
+    {
+      "type": "gym",
+      "name": "Victory Road (right)",
+      "value": "mb_9",
+      "group": "mini-boss",
+      "boss": "Roxanne"
+    },
+    {
+      "type": "gym",
+      "name": "Victory Road (right)",
+      "value": "mb_10",
+      "group": "mini-boss",
+      "boss": "Brawly"
+    },
+    {
+      "type": "gym",
+      "name": "Victory Road (right)",
+      "value": "mb_11",
+      "group": "mini-boss",
+      "boss": "Wattson"
+    },
+    {
+      "type": "gym",
+      "name": "Victory Road (right)",
+      "value": "mb_12",
+      "group": "mini-boss",
+      "boss": "Flannery"
+    },
+    {
+      "type": "gym",
+      "name": "Victory Road (right)",
+      "value": "mb_13",
+      "group": "mini-boss",
+      "boss": "Norman"
+    },
+    {
+      "type": "gym",
+      "name": "Victory Road (right)",
+      "value": "mb_14",
+      "group": "mini-boss",
+      "boss": "Winona"
+    },
+    {
+      "type": "gym",
+      "name": "Victory Road (right)",
+      "value": "mb_15",
+      "group": "mini-boss",
+      "boss": "Tate & Liza"
+    },
+    {
+      "type": "gym",
+      "name": "Victory Road (right)",
+      "value": "mb_16",
+      "group": "mini-boss",
+      "boss": "Wallace"
+    },
+    {
+      "type": "route",
+      "name": "Indigo Plateau",
+      "encounters": [
+        "houndour",
+        "numel",
+        "vulpix",
+        "growlithe",
+        "slugma",
+        "magmar",
+        "torchic",
+        "cyndaquil",
+        "charmander",
+        "torkoal"
+      ]
+    },
+    {
+      "type": "gym",
+      "name": "Indigo Plateau",
+      "value": "e1",
+      "group": "elite-four",
+      "boss": "Lorelei"
+    },
+    {
+      "type": "gym",
+      "name": "Indigo Plateau",
+      "value": "e2",
+      "group": "elite-four",
+      "boss": "Bruno"
+    },
+    {
+      "type": "gym",
+      "name": "Indigo Plateau",
+      "value": "e3",
+      "group": "elite-four",
+      "boss": "Agatha"
+    },
+    {
+      "type": "gym",
+      "name": "Indigo Plateau",
+      "value": "e4",
+      "group": "elite-four",
+      "boss": "Lance"
+    },
+    {
+      "type": "gym",
+      "name": "Champion",
+      "value": "ec",
+      "group": "elite-four",
+      "boss": "Rival"
+    }
+  ],
   "or": [
     {
       "type": "route",
