@@ -27,6 +27,7 @@ export const regionise = (str) =>
     .replace(/(.*)-hisui/, 'Hisuin $1')
     .replace(/(.*)-hoenn/, 'Hoennian $1')
     .replace(/(.*)-sevii/, 'Seviian $1')
+    .replace(/(.*)-mega/, 'Mega $1')
     .replace(/(.*)-f$/, '$1 ♀')
     .replace(/(.*)-m$/, '$1 ♂')
 

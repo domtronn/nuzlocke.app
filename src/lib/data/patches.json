@@ -6477,6 +6477,224 @@
         "category": "special",
         "locale": "Hidden Power"
       }
+    },
+    "pokemon": {
+      "charizard": {
+        "name": "charizard",
+        "evoline": "charmander",
+        "evos": [
+          "charizard-mega-x",
+          "charizard-mega-y"
+        ]
+      },
+      "venusaur": {
+        "name": "venusaur",
+        "evoline": "bulbasaur",
+        "evos": [
+          "venusaur-mega"
+        ]
+      },
+      "blastoise": {
+        "name": "blastoise",
+        "evoline": "squirtle",
+        "evos": [
+          "blastoise-mega"
+        ]
+      },
+      "lucario": {
+        "name": "lucario",
+        "evoline": "riolu",
+        "evos": [
+          "lucario-mega"
+        ]
+      },
+      "salamence": {
+        "name": "salamence",
+        "types": [
+          "bagon>salamence-mega"
+        ]
+      },
+      "absol": {
+        "name": "absol",
+        "evoline": "absol",
+        "evos": [
+          "absol-mega"
+        ]
+      },
+      "manectric": {
+        "name": "manectric",
+        "evoline": "electrike",
+        "evos": [
+          "manectric-mega"
+        ]
+      }
+    },
+    "fakemon": {
+      "charizard-mega-x": {
+        "name": "Mega Charizard X",
+        "label": "Mega Charizard X",
+        "alias": "charizard-mega-x",
+        "sprite": "charizard-mega-x",
+        "types": [
+          "fire",
+          "dragon"
+        ],
+        "baseStats": {
+          "hp": 78,
+          "atk": 130,
+          "def": 111,
+          "spa": 130,
+          "spd": 85,
+          "spe": 100
+        },
+        "total": 634,
+        "imgUrl": "/base/10034",
+        "evoline": "charmander"
+      },
+      "charizard-mega-y": {
+        "name": "Mega Charizard Y",
+        "label": "Mega Charizard Y",
+        "alias": "charizard-mega-y",
+        "sprite": "charizard-mega-y",
+        "types": [
+          "fire",
+          "flying"
+        ],
+        "baseStats": {
+          "hp": 78,
+          "atk": 104,
+          "def": 78,
+          "spa": 159,
+          "spd": 115,
+          "spe": 100
+        },
+        "total": 634,
+        "imgUrl": "/base/10035",
+        "evoline": "charmander"
+      },
+      "venusaur-mega": {
+        "name": "Mega Venusaur",
+        "label": "Mega Venusaur",
+        "alias": "venusaur-mega",
+        "sprite": "venusaur-mega",
+        "types": [
+          "grass",
+          "poison"
+        ],
+        "baseStats": {
+          "hp": 80,
+          "atk": 100,
+          "def": 123,
+          "spa": 122,
+          "spd": 120,
+          "spe": 80
+        },
+        "total": 625,
+        "imgUrl": "/base/10033",
+        "evoline": "bulbasaur"
+      },
+      "blastoise-mega": {
+        "name": "Mega Blastoise",
+        "label": "Mega Blastoise",
+        "alias": "blastoise-mega",
+        "sprite": "blastoise-mega",
+        "types": [
+          "water"
+        ],
+        "baseStats": {
+          "hp": 79,
+          "atk": 103,
+          "def": 120,
+          "spa": 135,
+          "spd": 115,
+          "spe": 78
+        },
+        "total": 630,
+        "imgUrl": "/base/10036",
+        "evoline": "squirtle"
+      },
+      "lucario-mega": {
+        "name": "Mega Lucario",
+        "label": "Mega Lucario",
+        "alias": "lucario-mega",
+        "sprite": "lucario-mega",
+        "types": [
+          "fighting",
+          "steel"
+        ],
+        "baseStats": {
+          "hp": 70,
+          "atk": 145,
+          "def": 88,
+          "spa": 140,
+          "spd": 70,
+          "spe": 112
+        },
+        "total": 625,
+        "imgUrl": "/base/10059",
+        "evoline": "riolu"
+      },
+      "manectric-mega": {
+        "name": "Mega Manectric",
+        "label": "Mega Manectric",
+        "alias": "manectric-mega",
+        "sprite": "manectric-mega",
+        "types": [
+          "electric"
+        ],
+        "baseStats": {
+          "hp": 70,
+          "atk": 75,
+          "def": 80,
+          "spa": 135,
+          "spd": 80,
+          "spe": 135
+        },
+        "total": 575,
+        "imgUrl": "/base/10055",
+        "evoline": "electrike"
+      },
+      "absol-mega": {
+        "name": "Mega Absol",
+        "label": "Mega Absol",
+        "alias": "absol-mega",
+        "sprite": "absol-mega",
+        "types": [
+          "dark"
+        ],
+        "baseStats": {
+          "hp": 65,
+          "atk": 150,
+          "def": 60,
+          "spa": 115,
+          "spd": 60,
+          "spe": 115
+        },
+        "total": 565,
+        "imgUrl": "/base/10057",
+        "evoline": "absol"
+      },
+      "salamence-mega": {
+        "name": "Mega Salamence",
+        "label": "Mega Salamence",
+        "alias": "salamence-mega",
+        "sprite": "salamence-mega",
+        "types": [
+          "dragon",
+          "flying"
+        ],
+        "baseStats": {
+          "hp": 95,
+          "atk": 145,
+          "def": 130,
+          "spa": 120,
+          "spd": 90,
+          "spe": 120
+        },
+        "total": 700,
+        "imgUrl": "/base/10089",
+        "evoline": "bagon"
+      }
     }
   },
   "incem": {
