@@ -170,6 +170,8 @@ export const readTeams = (data) => {
   return data.__teams || []
 }
 
+export const readStarter = (data) => data.__starter || 'fire'
+
 export const readBox = (data) => {
   const customIdMap = toObj(data.__custom, 'id')
   const customLocMap = toObj(data.__custom, 'name')
