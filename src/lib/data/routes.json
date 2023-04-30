@@ -74057,6 +74057,7 @@
       "name": "Hau'oli Outskirts",
       "encounters": [
         "raticatealola",
+        "slowpoke",
         "magikarp",
         "gyarados",
         "chinchou",
@@ -74069,6 +74070,16 @@
         "gumshoos",
         "wishiwashi",
         "stufful"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Trainer's School",
+      "encounters": [
+        "mewothalola",
+        "zorua",
+        "magnemtic",
+        "grimeralola"
       ]
     },
     {
@@ -74151,6 +74162,13 @@
       ]
     },
     {
+      "type": "gym",
+      "name": "Totem trial",
+      "value": "1b",
+      "group": "gym-leader",
+      "boss": "Ilima's Trial"
+    },
+    {
       "type": "route",
       "name": "Verdant Cavern",
       "encounters": [
@@ -74159,13 +74177,6 @@
         "diglettalola",
         "noibat"
       ]
-    },
-    {
-      "type": "gym",
-      "name": "Totem trial",
-      "value": "1b",
-      "group": "gym-leader",
-      "boss": "Ilima's Trial"
     },
     {
       "type": "route",
@@ -78656,6 +78667,7 @@
       "name": "Hau'oli Outskirts",
       "encounters": [
         "raticatealola",
+        "slowpoke",
         "magikarp",
         "gyarados",
         "chinchou",
@@ -78668,6 +78680,16 @@
         "gumshoos",
         "wishiwashi",
         "stufful"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Trainer's School",
+      "encounters": [
+        "mewothalola",
+        "zorua",
+        "magnemtic",
+        "grimeralola"
       ]
     },
     {
@@ -78750,6 +78772,13 @@
       ]
     },
     {
+      "type": "gym",
+      "name": "Totem trial",
+      "value": "1a",
+      "group": "gym-leader",
+      "boss": "Ilima's Trial"
+    },
+    {
       "type": "route",
       "name": "Verdant Cavern",
       "encounters": [
@@ -78758,13 +78787,6 @@
         "noibat",
         "yungoos"
       ]
-    },
-    {
-      "type": "gym",
-      "name": "Totem trial",
-      "value": "1a",
-      "group": "gym-leader",
-      "boss": "Ilima's Trial"
     },
     {
       "type": "route",
