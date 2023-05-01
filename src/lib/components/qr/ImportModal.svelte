@@ -40,7 +40,9 @@
           JSON.stringify(gameData)
         )
         savedGames.update(updateGame(__meta))
-        window.location = '/saves'
+
+        loading = false
+        close()
       } catch (e) {
         error = true
         loading = false
