@@ -136,9 +136,9 @@
             pokemon: selected?.alias,
             status: status?.id,
             nature: nature?.id,
-            hidden: hidden || false,
             location: locationName || location,
-            nickname,
+            ...(nickname ? { nickname } : {}),
+            ...(hidden ? { hidden: true } : {}),
             ...(status?.id === 5 && death ? { death } : {})
           }
         })
