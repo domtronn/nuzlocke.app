@@ -41,7 +41,6 @@
   {@const color1 = color(types[0], themeId)}
   {@const color2 = color(types[1] || types[0], themeId)}
   {@const pattern = Pattern(color2)}
-  {@debug color1, color2, pattern}
   <div
     class="card relative flex flex-col rounded-lg border bg-white dark:border-gray-900 dark:bg-gray-900 dark:shadow-lg {$$restProps.class ||
       ''}"

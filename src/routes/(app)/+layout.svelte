@@ -8,8 +8,10 @@
   import { setContext } from 'svelte'
 
   import { RegionMap } from '$lib/data/games'
-  import { fetchData, fetchLeague } from '$utils/fetchers'
   import { GameHeading, NavHeading } from '$c/navs'
+
+  import { fetchData, fetchLeague } from '$utils/fetchers'
+  import { normalise } from '$utils/string'
 
   import Modal from 'svelte-simple-modal'
   import deferStyles from '$lib/utils/defer-styles'
@@ -45,27 +47,26 @@
 
   setContext('game', {
     getLeague: fetchLeague,
-    getAllPkmn: fetchData,
+    getAllPkmn: () => fetchData().then(res => Object.values(res.idMap)),
     getPkmn: (id) =>
-      fetchData().then((ps = []) =>
-        ps.find(
-          (p) =>
-            p.num == id ||
-            p.name.toLowerCase() == id ||
-            p.alias == id ||
-            p.sprite == id
-        )
-      ),
+    fetchData().then((p = {}) => {
+      const nid = normalise(id)
+      return p.idMap[nid] || p.nameMap[nid] || p.aliasMap[nid]
+    }),
     getPkmns: (ids = []) =>
-      fetchData().then((ps = []) =>
-        ps
-          .filter(
-            (p) =>
-              ids.includes(p.num) ||
-              ids.includes(p.name.toLowerCase()) ||
-              ids.includes(p.alias)
-          )
-          .reduce((acc, it) => ({ ...acc, [it.alias]: it }), {})
+    fetchData().then((p = {}) =>
+      ids
+        .reduce((acc, it) => {
+          const nid = normalise(it)
+          const res = p.idMap[nid] || p.nameMap[nid] || p.aliasMap[nid]
+
+          if (!res) {
+            console.error('Error reading ', nid)
+            return acc
+          }
+
+          return { ...acc, [res.alias]: res }
+        }, {})
       )
   })
 

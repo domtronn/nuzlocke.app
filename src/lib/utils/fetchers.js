@@ -2,6 +2,7 @@ import { browser } from '$app/environment'
 import { getGen } from '$store'
 
 import { DATA } from '$utils/rewrites'
+import { normalise } from '$utils/string'
 
 const data = {}
 export const fetchData = async () => {
@@ -12,7 +13,16 @@ export const fetchData = async () => {
   if (data[gen]) return data[gen] // Return the raw data if it exists
   if (!data[uri])
     data[uri] = fetch(uri) // "Cache" the promise rather than make a new fetch each time
-      .then((res) => res.json())
+    .then((res) => res.json())
+    .then((data) => data.reduce((acc, it) => ({
+      idMap: { ...acc.idMap, [it.num]: it },
+      aliasMap: { ...acc.aliasMap, [normalise(it.alias)]: it },
+      nameMap: { ...acc.nameMap, [normalise(it.name.toLowerCase())]: it },
+    }), {
+      idMap: {},
+      aliasMap: {},
+      nameMap: {},
+    }))
 
   data[gen] = await data[uri]
   return data[gen]
