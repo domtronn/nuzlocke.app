@@ -51,14 +51,14 @@
     getPkmn: (id) =>
     fetchData().then((p = {}) => {
       const nid = normalise(id)
-      return p.idMap[nid] || p.nameMap[nid] || p.aliasMap[nid]
+      return p.idMap[nid] || p.aliasMap[nid] || p.nameMap[nid]
     }),
     getPkmns: (ids = []) =>
     fetchData().then((p = {}) =>
       ids
         .reduce((acc, it) => {
           const nid = normalise(it)
-          const res = p.idMap[nid] || p.nameMap[nid] || p.aliasMap[nid]
+          const res = p.idMap[nid] || p.aliasMap[nid] || p.nameMap[nid]
 
           if (!res) {
             console.error('Error reading ', nid)
