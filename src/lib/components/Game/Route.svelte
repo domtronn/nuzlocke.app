@@ -12,7 +12,6 @@
   import StarterType from '$lib/components/starter-type.svelte'
   import GymCard from '$lib/components/gym-card.svelte'
   import PokemonSelector from '$lib/components/pokemon-selector.svelte'
-  import IntersectionObserver from 'svelte-intersection-observer'
 
   import {
     hideRouteF,
@@ -103,7 +102,7 @@
 </script>
 
 <ul class="flex flex-col gap-y-0 lg:gap-y-2 {className}">
-  {#each filtered.slice(0, limit) as p, id (p)}
+  {#each filtered as p, id (p)}
     {#if showStarterRoute(p, filters, hideRoute)}
       <li class="flex items-center gap-x-2" id="route-{p.name}" in:fade>
         <PokemonSelector
@@ -170,12 +169,6 @@
           type={p.group}
         />
       </li>
-    {/if}
-
-    {#if id === limit - 5}
-      <IntersectionObserver {element} on:intersect={inclimit}>
-        <li bind:this={element} />
-      </IntersectionObserver>
     {/if}
   {/each}
 </ul>
