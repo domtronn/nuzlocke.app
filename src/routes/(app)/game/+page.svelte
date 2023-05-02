@@ -73,6 +73,7 @@
     parse((saves) => {
       if (!browser) return
       let game = saves[$activeGame]
+      if (!game.id) return
       savedGames.update(
         updateGame({
           ...game,
@@ -83,23 +84,21 @@
   })
 
   let boxData = {}
-  const setup = () =>
-    new Promise((resolve) => {
-      const [, key, id] = readdata()
-      if (browser && !id) return (window.location = '/')
+  const setup = () => new Promise((resolve) => {
+    const [, key, id] = readdata()
+    if (browser && !id) return (window.location = '/')
 
-      gameStore = getGameStore(id)
-      gameKey = key
+    gameStore = getGameStore(id)
+    gameKey = key
 
-      deferStyles(`/assets/items/${key}.css`)
-      fetchRoute(Games[key].pid).then((r) => resolve(r))
+    deferStyles(`/assets/items/${key}.css`)
+    fetchRoute(Games[key].pid).then((r) => resolve(r))
 
-      gameStore.subscribe(
-        read((game) => {
-          gameData = game
-        })
-      )
-    })
+    gameStore.subscribe(
+      read((game) => { gameData = game })
+    )
+  })
+
 
   const _onsearch = (e) => (search = e.detail.search)
   const onsearch = debounce(_onsearch, 350)
