@@ -3,44 +3,46 @@
   const dispatch = createEventDispatcher()
 
   export let code
-  let vals = [], refs = []
+  let vals = [],
+    refs = []
 
-  $: code = vals.filter(i => i).join('')
-  $: if (code.length === 8) {
+  const codeLength = 6
+
+  $: code = vals.filter((i) => i).join('')
+  $: if (code.length === codeLength) {
     dispatch('code', { code })
   }
 
-  const onpaste = e => {
+  const onpaste = (e) => {
     if (e.type !== 'paste') return
     if (!e.clipboardData.types.includes('text/plain')) return
 
     const text = e.clipboardData.getData('text/plain')
-    vals = text.slice(0, 8).split('')
-    refs[Math.min(text.length - 1, 7)]?.focus()
+    vals = text.slice(0, codeLength).split('')
+    refs[Math.min(text.length - 1, codeLength - 1)]?.focus()
   }
 
-  const nextref = i => e => {
+  const nextref = (i) => (e) => {
     e.data === null
       ? refs[Math.max(i - 1, 0)].focus()
-      : refs[Math.min(i + 1, 7)].focus()
+      : refs[Math.min(i + 1, codeLength - 1)].focus()
   }
 
-  const handlekey = i => e => {
+  const handlekey = (i) => (e) => {
     if (e.key === 'Backspace') refs[Math.max(i - 1, 0)].focus()
   }
-
 </script>
 
-<div class='inline-flex gap-x-1 md:gap-x-2'>
-  {#each Array(8).fill() as _, i}
+<div class="inline-flex gap-x-1 md:gap-x-2">
+  {#each Array(codeLength).fill() as _, i}
     <input
-      class='w-8 h-10 md:w-12 md:h-16 text-2xl md:text-4xl !p-0 font-bold text-center uppercase rounded-lg bg-gray-200 dark:bg-gray-900 text-black dark:text-white !p-0'
-      maxlength=1
+      class="h-10 w-8 rounded-lg bg-gray-200 !p-0 !p-0 text-center text-2xl font-bold uppercase text-black dark:bg-gray-900 dark:text-white md:h-16 md:w-12 md:text-4xl"
+      maxlength="1"
       on:paste={onpaste}
       on:keydown={handlekey(i)}
       on:input={nextref(i)}
       bind:this={refs[i]}
       bind:value={vals[i]}
-      />
-    {/each}
+    />
+  {/each}
 </div>

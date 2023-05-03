@@ -7,6 +7,7 @@ const rewrite = !building && !dev
 export const SPRITE = 'https://img.nuzlocke.app/sprites'
 export const CUSTOM = 'https://img.nuzlocke.app/sprites'
 export const IMG = 'https://img.nuzlocke.app'
+export const SHARE = 'https://share.nuzlocke.app'
 
 export const DATA = rewrite ? '/api' : '/api' // Load locally for development
 
