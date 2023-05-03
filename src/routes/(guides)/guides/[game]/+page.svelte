@@ -11,7 +11,7 @@
   import { faq } from '$c/Guide/schemas'
 
   setContext('game', {
-    getLeague: (_, starter) => data.data[starter],
+    getLeague: (_, starter) => data.data[starter]
   })
   setContext('simple-modal', {
     open: false
@@ -25,72 +25,96 @@
   const description = `This guide shows you all ${encounterCount} Pokémon available across ${routeCount} route encounters in Pokémon ${game.title}, as well as detailed information on all ${gymCount} boss battles!`
 
   const schema = {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": `A Nuzlocke guide for Pokémon ${game.title}`,
-    "alternativeHeadline": `A guide and overview to Nuzlocking Pokémon ${game.title}`,
-    "image": `https://img.nuzlocke.app${game.logo}@2.png`,
-    "author": "Nuzlocke Tracker",
-    "genre": "Pokémon",
-    "keywords": `pokemon nuzlocke ${game.title} encounters boss battles fights`,
-    "url": `https://nuzlocke.app/${path}`,
-    "datePublished": attributes.created || "2022-01-07",
-    "dateCreated": attributes.created || "2022-01-07",
-    "dateModified": attributes.updated || attributes.created || "2022-01-07",
-    "description": description
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: `A Nuzlocke guide for Pokémon ${game.title}`,
+    alternativeHeadline: `A guide and overview to Nuzlocking Pokémon ${game.title}`,
+    image: `https://img.nuzlocke.app${game.logo}@2.png`,
+    author: 'Nuzlocke Tracker',
+    genre: 'Pokémon',
+    keywords: `pokemon nuzlocke ${game.title} encounters boss battles fights`,
+    url: `https://nuzlocke.app/${path}`,
+    datePublished: attributes.created || '2022-01-07',
+    dateCreated: attributes.created || '2022-01-07',
+    dateModified: attributes.updated || attributes.created || '2022-01-07',
+    description: description
   }
-  const articleSchema = `<script type="application/ld+json">${JSON.stringify(schema)}<\/script>`
-  const faqSchema = `<script type="application/ld+json">${JSON.stringify(faq(game, data.data.fire, route))}<\/script>`
-
+  const articleSchema = `<script type="application/ld+json">${JSON.stringify(
+    schema
+  )}<\/script>`
+  const faqSchema = `<script type="application/ld+json">${JSON.stringify(
+    faq(game, data.data.fire, route)
+  )}<\/script>`
 </script>
 
 <svelte:head>
   <title>{title}</title>
-  <meta property=og:title content={title} />
-  <meta name=twitter:title content={title} />
+  <meta property="og:title" content={title} />
+  <meta name="twitter:title" content={title} />
 
-  <meta content={description} name=description />
-  <meta content={description} name=twitter:description  />
+  <meta content={description} name="description" />
+  <meta content={description} name="twitter:description" />
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var lazyBackground = document.querySelector('.pkm')
+
+      if ('IntersectionObserver' in window) {
+        let lazyBackgroundObserver = new IntersectionObserver(function (
+          entries,
+          observer
+        ) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              document.body.classList.add('lazy-pkm')
+              lazyBackgroundObserver.unobserve(entry.target)
+            }
+          })
+        })
+
+        lazyBackgroundObserver.observe(lazyBackground)
+      }
+    })
+  </script>
 </svelte:head>
 
 {#key game.pid}
-<Hero {...game} {...(attributes || {})}>
+  <Hero {...game} {...attributes || {}}>
+    <Aside {path} {...route} />
 
-  <Aside {path} {...route} />
+    <article class="g-container">
+      {#if html}
+        <section class="doc">
+          {@html html}
+        </section>
+      {/if}
 
-  <article class=g-container>
+      <Summary {path} {game} {...route} />
 
-    {#if html}
-      <section class=doc>
-        {@html html}
-      </section>
-    {/if}
+      <Bosses {path} data={data.data} {game} {...route} />
+    </article>
+  </Hero>
 
-    <Summary {path} {game} {...route} />
+  <Links {links} />
 
-    <Bosses {path} data={data.data} {game} {...route} />
-
-  </article>
-
-</Hero>
-
-<Links {links} />
-
-{@html articleSchema}
-{@html faqSchema}
+  {@html articleSchema}
+  {@html faqSchema}
 {/key}
 
 <style lang="postcss">
-
-  :global(body) { overflow-x: hidden; }
-  :global(button.compare) { display: none; }
+  :global(body) {
+    overflow-x: hidden;
+  }
+  :global(button.compare) {
+    display: none;
+  }
   :global(svg.lines) {
     z-index: -10;
-    @apply absolute top-px w-full -translate-y-full
+    @apply absolute top-px w-full -translate-y-full;
   }
 
   section.doc {
-    @apply max-w-prose  my-6;
+    @apply my-6  max-w-prose;
   }
 
   section.doc :global(*) {
@@ -106,16 +130,15 @@
   }
 
   section.doc :global(li) {
-    @apply mx-8 ;
+    @apply mx-8;
   }
 
-
   section.doc :global(img) {
-    @apply inline-flex justify-center items-center;
+    @apply inline-flex items-center justify-center;
   }
 
   section.doc :global(p:has(img)) {
-    @apply inline-flex justify-center w-full;
+    @apply inline-flex w-full justify-center;
   }
 
   section.doc :global(a) {
@@ -126,13 +149,19 @@
     @apply text-orange-500;
   }
 
-
-  section.doc :global(h2), section.doc :global(h3), section.doc :global(h3) {
+  section.doc :global(h2),
+  section.doc :global(h3),
+  section.doc :global(h3) {
     @apply pb-4 pt-6;
   }
 
-  section.doc :global(h2) { @apply font-bold text-2xl; }
-  section.doc :global(h3) { @apply font-bold text-2xl; }
-  section.doc :global(h4) { @apply text-lg; }
-
+  section.doc :global(h2) {
+    @apply text-2xl font-bold;
+  }
+  section.doc :global(h3) {
+    @apply text-2xl font-bold;
+  }
+  section.doc :global(h4) {
+    @apply text-lg;
+  }
 </style>

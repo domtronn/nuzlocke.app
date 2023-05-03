@@ -1,21 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      nonce="nuzl0ck3"
-      src="https://www.googletagmanager.com/gtag/js?id=G-9H79BXLQL8"
-    ></script>
-    <script nonce="nuzl0ck3">
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag('js', new Date());
-      gtag('config', 'G-9H79BXLQL8');
-    </script>
-
     <meta charset="utf-8" />
     <link rel="icon" href="/favicon.png" />
     <link rel="apple-touch-icon" href="/icons/apple-icon-180.png" />
@@ -168,22 +153,37 @@
     <meta name="twitter:image" content="/twitter.png" />
 
     <script data-cfasync="false">
-     // On page load or when changing themes, best to add inline in `head` to avoid FOUC
-     const lsid = 'nuzlocke.theme';
-     const mdark =
-       !(lsid in localStorage) &&
-       window.matchMedia('(prefers-color-scheme: dark)').matches;
+      // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+      const lsid = 'nuzlocke.theme'
+      const mdark =
+        !(lsid in localStorage) &&
+        window.matchMedia('(prefers-color-scheme: dark)').matches
 
-     if (mdark) localStorage.setItem(lsid, 'dark');
-     if (localStorage[lsid] === 'dark') {
-       document.documentElement.classList.add('dark');
-     } else {
-       document.documentElement.classList.remove('dark');
-     }
+      if (mdark) localStorage.setItem(lsid, 'dark')
+      if (localStorage[lsid] === 'dark') {
+        document.documentElement.classList.add('dark')
+      } else {
+        document.documentElement.classList.remove('dark')
+      }
     </script>
 
     %sveltekit.head%
   </head>
 
-  <div style="display: contents">%sveltekit.body%</div>
+  %sveltekit.body%
+
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    nonce="nuzl0ck3"
+    src="https://www.googletagmanager.com/gtag/js?id=G-9H79BXLQL8"
+  ></script>
+  <script nonce="nuzl0ck3">
+    window.dataLayer = window.dataLayer || []
+    function gtag() {
+      dataLayer.push(arguments)
+    }
+    gtag('js', new Date())
+    gtag('config', 'G-9H79BXLQL8')
+  </script>
 </html>

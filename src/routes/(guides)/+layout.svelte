@@ -1,11 +1,11 @@
 <script>
   import { Footer, CookieBanner } from '$c/navs'
-  import { onMount } from 'svelte'
+  import { afterUpdate } from 'svelte'
   import { page } from '$app/stores'
 
   import deferStyles from '$lib/utils/defer-styles'
 
-  onMount(() => {
+  afterUpdate(() => {
     const path = $page.url.pathname
 
     if (path.includes('blazing-emerald'))

@@ -1,5 +1,5 @@
 <script>
-  import { onMount } from 'svelte'
+  import { onMount, afterUpdate } from 'svelte'
   import { browser } from '$app/environment'
   import { fade, slide } from 'svelte/transition'
 
@@ -80,6 +80,10 @@
     })($savedGames)
   })
 
+  afterUpdate(() => {
+    deferStyles(`/assets/items/${gameKey}.css`)
+  })
+
   const setup = () =>
     new Promise((resolve) => {
       console.time('setup')
@@ -89,7 +93,6 @@
       gameStore = getGameStore(id)
       gameKey = key
 
-      deferStyles(`/assets/items/${key}.css`)
       fetchRoute(Games[key].pid).then((r) => {
         console.timeEnd('setup')
         resolve(r)
