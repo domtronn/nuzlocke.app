@@ -11,17 +11,20 @@ export const fetchData = async () => {
   const gen = await getGen()
   const uri = `${DATA}/pokemon/${gen}.json`
 
+  console.time(`data:${gen}`)
   if (data[gen]) return data[gen] // Return the raw data if it exists
   if (!data[uri])
     data[uri] = fetch(uri) // "Cache" the promise rather than make a new fetch each time
       .then((res) => res.json())
       .then((data) => {
+        console.timeLog(`data:${gen}`)
         let result = { idMap: {}, aliasMap: {}, nameMap: {} }
         for (const d of data) {
           result.idMap[d.num] = d
           result.aliasMap[normalise(d.alias)] = d
           result.nameMap[normalise(d.name.toLowerCase())] = d
         }
+        console.timeEnd(`data:${gen}`)
         return result
       })
 
@@ -35,10 +38,13 @@ export const fetchLeague = async (game, starter = 'fire') => {
 
   const id = `${game}@${starter}`
   const uri = `${DATA}/league/${game}.${starter}.json`
+
   if (league[id]) return league[id]
   if (!league[uri]) league[uri] = fetch(uri).then((res) => res.json())
 
+  console.time(`league:${id}`)
   league[id] = await league[uri]
+  console.timeEnd(`league:${id}`)
   return league[id]
 }
 
@@ -50,7 +56,9 @@ export const fetchRoute = async (game) => {
   if (route[game]) return route[game]
   if (!route[uri]) route[uri] = fetch(uri).then((res) => res.json())
 
+  console.time(`route:${game}`)
   route[game] = await route[uri]
+  console.timeEnd(`route:${game}`)
   return route[game]
 }
 
@@ -62,6 +70,8 @@ export const fetchTrainers = async (game) => {
   if (trainers[game]) return trainers[game]
   if (!trainers[uri]) trainers[uri] = fetch(uri).then((res) => res.json())
 
+  console.time(`trainres:${game}`)
   trainers[game] = await trainers[uri]
+  console.time(`trainres:${game}`)
   return trainers[game]
 }

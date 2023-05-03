@@ -12,7 +12,6 @@
   import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
   import { Arrow, Hide } from '$icons'
 
-  import { toObj } from '$lib/utils/obj'
   import deferStyles from '$lib/utils/defer-styles'
   import debounce from '$lib/utils/debounce'
 
@@ -21,12 +20,10 @@
     getGameStore,
     read,
     readdata,
-    readBox,
     savedGames,
     activeGame,
     updateGame,
-    parse,
-    patch
+    parse
   } from '$lib/store'
 
   let gameStore, gameKey, gameData
@@ -83,22 +80,28 @@
     })($savedGames)
   })
 
-  let boxData = {}
-  const setup = () => new Promise((resolve) => {
-    const [, key, id] = readdata()
-    if (browser && !id) return (window.location = '/')
+  const setup = () =>
+    new Promise((resolve) => {
+      console.time('setup')
+      const [, key, id] = readdata()
+      if (browser && !id) return (window.location = '/')
 
-    gameStore = getGameStore(id)
-    gameKey = key
+      gameStore = getGameStore(id)
+      gameKey = key
 
-    deferStyles(`/assets/items/${key}.css`)
-    fetchRoute(Games[key].pid).then((r) => resolve(r))
+      deferStyles(`/assets/items/${key}.css`)
+      fetchRoute(Games[key].pid).then((r) => {
+        console.timeEnd('setup')
+        resolve(r)
+      })
 
-    gameStore.subscribe(
-      read((game) => { gameData = game })
-    )
-  })
-
+      gameStore.subscribe(
+        read((game) => {
+          console.timeLog('setup')
+          gameData = game
+        })
+      )
+    })
 
   const _onsearch = (e) => (search = e.detail.search)
   const onsearch = debounce(_onsearch, 350)
@@ -126,13 +129,6 @@
     const r = routes[Math.min(i, routes.length - 1)]
     return { ...r, id: i }
   }
-
-  const oncontinue = (route, gameData) => (_) => {
-    show = !show
-    routeEl.setroute(latestnav(route, gameData))()
-  }
-
-  let show = false
 </script>
 
 <SupportBanner />

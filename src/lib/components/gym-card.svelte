@@ -23,7 +23,7 @@
     info
 
   import { browser } from '$app/environment'
-  import { getContext } from 'svelte'
+  import { onMount, getContext } from 'svelte'
   import { fade } from 'svelte/transition'
 
   import Pokemon from '$lib/components/pokemon-card.svelte'
@@ -81,7 +81,8 @@
     }
   }
 
-  $: (async () => await fetchData(starter))()
+  onMount(() => fetchData(starter))
+
   $: levelCap = pokemon.every(
     (it) => it.level.startsWith('+') || it.level.startsWith('-')
   )
