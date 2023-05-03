@@ -9,6 +9,8 @@ export default function createErrorHandlerModal() {
 
   cHeading.innerHTML = "Oh no! Something's gone wrong"
   cImage.src = 'https://img.nuzlocke.app/sprite/202.png'
+  cImage.width = 92
+  cImage.height = 92
   cCopy.innerHTML =
     'An unexpected error has occured, to prevent any data loss for your run you should <b>Reload the page</b> immediately.<br /><br /> Would you like to reload now?'
 

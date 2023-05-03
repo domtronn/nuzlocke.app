@@ -12,12 +12,21 @@ export const slugify = (s = '') => s.toLowerCase().replace(/ +/g, '-')
 
 export const normalise = (s = '') => s.replace(/[-\.]/g, '')
 
-export const toKebabCase = (str) =>
-  str &&
-  str
-    .match(/[A-Z]{2,}(?=[A-Z][a-z]+[0-9]*|\b)|[A-Z]?[a-z]+[0-9]*|[A-Z]|[0-9]+/g)
-    .map((x) => x.toLowerCase())
-    .join('-')
+export const toKebabCase = (str) => {
+  try {
+    return (
+      str &&
+      str
+        .match(
+          /[A-Z]{2,}(?=[A-Z][a-z]+[0-9]*|\b)|[A-Z]?[a-z]+[0-9]*|[A-Z]|[0-9]+/g
+        )
+        .map((x) => x.toLowerCase())
+        .join('-')
+    )
+  } catch (e) {
+    return str
+  }
+}
 
 export const regionise = (str) =>
   str

@@ -6,6 +6,7 @@
 
   import { updateGame, savedGames, IDS } from '$lib/store'
 
+  import { SHARE } from '$utils/rewrites'
   import { Icon, IconButton, Loader } from '$c/core'
   import {
     X,
@@ -19,9 +20,27 @@
     Desktop
   } from '$icons'
 
+  const importsave = (save, data) => {
+    window.localStorage.setItem(IDS.game(save.id), JSON.stringify(data))
+    savedGames.update(updateGame(save))
+    close()
+    loading = false
+  }
+
+  const flasherror = () => {
+    error = true
+    loading = false
+    setTimeout(() => (error = false), 3500)
+  }
+
   const handlescan = (e) => {
     loading = true
-    window.location = `/drop/${e.detail.code}`
+    fetch(SHARE + '/' + e.detail.code)
+      .then((res) => res.json())
+      .then(({ data, save }) => {
+        importsave(save, data)
+      })
+      .catch(flasherror)
   }
 
   const { close } = getContext('simple-modal')
@@ -34,19 +53,9 @@
     reader.onload = function (e) {
       try {
         const { __meta, ...gameData } = JSON.parse(e.currentTarget.result)
-
-        window.localStorage.setItem(
-          IDS.game(__meta.id),
-          JSON.stringify(gameData)
-        )
-        savedGames.update(updateGame(__meta))
-
-        loading = false
-        close()
+        importsave(__meta, gameData)
       } catch (e) {
-        error = true
-        loading = false
-        setTimeout(() => (error = false), 3500)
+        flasherror()
       }
     }
     reader.readAsText(files[0])
@@ -72,8 +81,8 @@
 
   {#if !loading}
     <p>
-      Enter the ShareScreen code, scan the QR code on your Mobile device or
-      upload a <mark>.nzsav</mark> file to transfer the save data.
+      Enter the <b>Share</b> code, scan the, <b>QR code</b> or upload a
+      <b>.nzsav</b> file to transfer save data.
     </p>
 
     <div
@@ -105,11 +114,10 @@
         > on your first device
       </li>
       <li>
-        Select the <mark
+        Select <mark
           >Share <Icon inline={true} icon={Share} class="fill-current" /></mark
-        > icon on the save you want to transfer
+        > on the save to transfer
       </li>
-      <li>Open <mark>this page</mark> on your second device</li>
       <li>
         Enter the <mark>Code</mark> or scan the
         <mark
@@ -118,7 +126,7 @@
             icon={QRCode}
             class="fill-current"
           /></mark
-        > with your camera
+        >
       </li>
     </ol>
 
@@ -168,10 +176,10 @@
     @apply -mb-2 inline-flex items-center text-2xl font-bold md:text-4xl;
   }
   p {
-    @apply max-w-md text-center text-sm leading-5;
+    @apply w-full text-center text-sm leading-5;
   }
   ol {
-    @apply list-outside list-decimal text-sm leading-4;
+    @apply ml-2 mr-2 list-outside list-decimal text-sm leading-4;
   }
   li {
     @apply mb-2 md:mb-1 md:-ml-2 md:pl-2;
@@ -184,7 +192,7 @@
   }
 
   section {
-    @apply mx-auto flex flex-col items-center gap-y-4 overflow-hidden rounded-xl bg-gray-50 py-10 px-6 text-gray-800 md:px-12;
+    @apply mx-auto flex max-w-md flex-col items-center gap-y-4 overflow-hidden rounded-xl bg-gray-50 py-10 px-6 text-gray-800 md:px-12;
   }
 
   :global(.dark) section {
