@@ -25,24 +25,6 @@
     if (id === 'blazingem') deferStyles('/assets/pokemon-blazingem.css')
     if (id?.includes('radred')) deferStyles('/assets/pokemon-radicalred.css')
     if (browser) setTimeout(() => document.body.classList.add('lazy-pkm'), 0)
-
-    if (!dev)
-      import('@sentry/svelte').then((Sentry) => {
-        Sentry.init({
-          dsn: 'https://c785c122f32c47d68a777aea5af577b1@o1091749.ingest.sentry.io/6109144',
-          integrations: [
-            new Sentry.BrowserTracing(),
-            new Sentry.Replay({
-              maskAllText: false,
-              blockAllMedia: true
-            })
-          ],
-          tracesSampleRate: 0.1,
-          replaysSessionSampleRate: 0,
-          replaysOnErrorSampleRate: 1.0
-        })
-        Sentry.setContext('game', game)
-      })
   })
 
   setContext('game', {
