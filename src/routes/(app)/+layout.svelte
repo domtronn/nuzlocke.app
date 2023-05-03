@@ -54,20 +54,16 @@
       return p.idMap[nid] || p.aliasMap[nid] || p.nameMap[nid]
     }),
     getPkmns: (ids = []) =>
-    fetchData().then((p = {}) =>
-      ids
-        .reduce((acc, it) => {
-          const nid = normalise(it)
-          const res = p.idMap[nid] || p.aliasMap[nid] || p.nameMap[nid]
+    fetchData().then((p = {}) => {
+      let result = {}
+      for (const id of ids) {
+        const nid = normalise(id)
+        const res = p.idMap[nid] || p.aliasMap[nid] || p.nameMap[nid]
 
-          if (!res) {
-            console.error('Error reading ', nid)
-            return acc
-          }
-
-          return { ...acc, [res.alias]: res }
-        }, {})
-      )
+        result[res.alias] = res
+      }
+      return result
+    })
   })
 
   const onresize = () => (document.body.height = window.innerHeight)
