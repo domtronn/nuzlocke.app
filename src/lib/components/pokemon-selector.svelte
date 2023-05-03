@@ -87,10 +87,12 @@
 
   getTeams((t) => (team = t.team))
 
-  let resetd
+  let resetd, hiddenLength
   store &&
     store.subscribe(
       read((data) => {
+        hiddenLength = data?.__hidden?.length
+
         const getStateMons = (data, stateGroup) => {
           return Object.values(data)
             .filter((p) => p && (!p.status || stateGroup.includes(p?.status)))
@@ -149,7 +151,19 @@
     inteam = (team || []).includes(location)
   }
 
-  const onhide = () => dispatch('hide', { id: location })
+  const onhide = () => {
+    if (
+      !hiddenLength &&
+      !window.confirm(
+        `Hiding a location will delete all encounter data for this location and prevent it from appearing in this run.\n\nYou can reset hidden locations from "Settings".\n\nAre you sure you want to hide ${location}?`
+      )
+    )
+      return
+
+    handleClear()
+    dispatch('hide', { id: location })
+  }
+
   const onnew = () => dispatch('new', { id })
   const ondelete = () => {
     if (

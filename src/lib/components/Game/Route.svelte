@@ -69,14 +69,7 @@
 
   const onhidelocation = (e) => {
     const id = e.detail.id
-
-    if (
-      hidden.length > 0 ||
-      window.confirm(
-        `Hiding a location will delete all encounter data for this location and prevent it from appearing in this run.\n\nYou can reset hidden locations from "Settings".\n\nAre you sure you want to hide ${id}?`
-      )
-    )
-      store.update(hidelocation(id))
+    store.update(hidelocation(id))
   }
 
   $: filtered = insertList(route, custom).filter(

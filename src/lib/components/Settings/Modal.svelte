@@ -66,14 +66,20 @@
     const gameStore = getGameStore(id)
     const resetCopy =
       "This will reset all data for this run, including your encounters, team & box. You cannot recover this data when it's reset. Are you sure?"
-    if (window.confirm(resetCopy)) gameStore.set('{}')
+    if (!window.confirm(resetCopy)) return
+
+    gameStore.set('{}')
+    close()
   }
 
   const resethidden = () => {
     const [, , id] = readdata()
     const gameStore = getGameStore(id)
     const resetCopy = 'This will redisplay all hidden locations. Are you sure?'
-    if (window.confirm(resetCopy)) gameStore.update(patch({ __hidden: [] }))
+    if (!window.confirm(resetCopy)) return
+
+    gameStore.update(patch({ __hidden: [] }))
+    close()
   }
 </script>
 
