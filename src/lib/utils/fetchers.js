@@ -10,19 +10,20 @@ export const fetchData = async () => {
 
   const gen = await getGen()
   const uri = `${DATA}/pokemon/${gen}.json`
+
   if (data[gen]) return data[gen] // Return the raw data if it exists
   if (!data[uri])
     data[uri] = fetch(uri) // "Cache" the promise rather than make a new fetch each time
-    .then((res) => res.json())
-    .then((data) => data.reduce((acc, it) => ({
-      idMap: { ...acc.idMap, [it.num]: it },
-      aliasMap: { ...acc.aliasMap, [normalise(it.alias)]: it },
-      nameMap: { ...acc.nameMap, [normalise(it.name.toLowerCase())]: it },
-    }), {
-      idMap: {},
-      aliasMap: {},
-      nameMap: {},
-    }))
+      .then((res) => res.json())
+      .then((data) => {
+        let result = { idMap: {}, aliasMap: {}, nameMap: {} }
+        for (const d of data) {
+          result.idMap[d.num] = d
+          result.aliasMap[normalise(d.alias)] = d
+          result.nameMap[normalise(d.name.toLowerCase())] = d
+        }
+        return result
+      })
 
   data[gen] = await data[uri]
   return data[gen]
