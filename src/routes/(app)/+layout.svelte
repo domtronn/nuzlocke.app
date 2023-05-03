@@ -47,18 +47,24 @@
 
   setContext('game', {
     getLeague: fetchLeague,
-    getAllPkmn: () => fetchData().then(res => Object.values(res.idMap)),
+    getAllPkmn: () => fetchData().then((res) => Object.values(res.idMap)),
     getPkmn: (id) =>
-    fetchData().then((p = {}) => {
-      const nid = normalise(id)
-      return p.idMap[nid] || p.aliasMap[nid] || p.nameMap[nid]
-    }),
+      fetchData().then((p = {}) => {
+        const nid = normalise(id)
+        return p.idMap[nid] || p.aliasMap[nid] || p.nameMap[nid]
+      }),
     getPkmns: (ids = []) =>
     fetchData().then((p = {}) => {
       let result = {}
       for (const id of ids) {
-        const nid = normalise(id)
+        const nid = normalise(id).trim()
         const res = p.idMap[nid] || p.aliasMap[nid] || p.nameMap[nid]
+
+        if (!nid) continue
+        if (!res) {
+          console.error('Error reading ', nid)
+          continue
+        }
 
         result[res.alias] = res
       }

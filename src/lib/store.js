@@ -214,6 +214,13 @@ export const removelocation = (id) => (data) =>
     __custom: (JSON.parse(data).__custom || []).filter((i) => i.id !== id)
   })
 
+export const hidelocation = (id) => (data) =>
+  JSON.stringify({
+    ...JSON.parse(data),
+    [id]: {},
+    __hidden: (JSON.parse(data).__hidden || []).concat(id)
+  })
+
 export const patchlocation = (payload) => (data) =>
   JSON.stringify({
     ...JSON.parse(data),

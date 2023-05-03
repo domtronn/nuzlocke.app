@@ -1,7 +1,13 @@
 <script>
   import { afterUpdate } from 'svelte'
   import { fade } from 'svelte/transition'
-  import { patch, addlocation, removelocation, read } from '$lib/store'
+  import {
+    patch,
+    addlocation,
+    removelocation,
+    hidelocation,
+    read
+  } from '$lib/store'
 
   import { toDbLocation } from '$lib/utils/link'
   import { insertList } from '$lib/utils/arr'
@@ -35,11 +41,14 @@
 
   /** Custom route handlers & Empty routes */
   let custom = [],
+    hidden = [],
     bossTeamIds = [],
     hideRoute = (_) => false
   store.subscribe(
     read((d) => {
       if (!custom.length && d.__custom?.length) custom = d.__custom
+      if (!hidden.length && d.__hidden?.length) hidden = d.__hidden
+
       bossTeamIds = (d.__teams || []).map((i) => i.id)
       hideRoute = hideRouteF(d)
     })
@@ -56,6 +65,11 @@
     const id = e.detail.id
     custom = custom.filter((i) => i.id !== id)
     store.update(removelocation(id))
+  }
+
+  const onhidelocation = (e) => {
+    const id = e.detail.id
+    store.update(hidelocation(id))
   }
 
   $: filtered = insertList(route, custom).filter(
@@ -104,11 +118,17 @@
 <ul class="flex flex-col gap-y-0 lg:gap-y-2 {className}">
   {#each filtered as p, id (p)}
     {#if showStarterRoute(p, filters, hideRoute)}
-      <li class="flex items-center gap-x-2" id="route-{p.name}" in:fade>
+      <li
+        class="flex items-center gap-x-2"
+        id="route-{p.name}"
+        in:fade
+        out:fade={{ duration: 100 }}
+      >
         <PokemonSelector
           {id}
           {store}
           encounters={p.encounters}
+          type="starter"
           location="Starter"
           locationName="Starter"
           on:new={onnewlocation}
@@ -127,13 +147,19 @@
         </PokemonSelector>
       </li>
     {:else if showRoute(p, filters, hideRoute)}
-      <li class="location" id="route-{p.name}" in:fade>
+      <li
+        class="location"
+        id="route-{p.name}"
+        in:fade
+        out:fade={{ duration: 100 }}
+      >
         <PokemonSelector
           {id}
           {store}
           infolink={toDbLocation(key, p.name)}
           location={p.name}
           encounters={p.encounters}
+          on:hide={onhidelocation}
           on:new={onnewlocation}
         />
       </li>
@@ -142,6 +168,7 @@
         class="location flex items-center gap-x-2"
         id="custom-{p.index}"
         in:fade
+        out:fade={{ duration: 100 }}
       >
         <PokemonSelector
           type="custom"
@@ -158,7 +185,12 @@
         </PokemonSelector>
       </li>
     {:else if showGym(p, filters, hideRoute)}
-      <li class="boss -mb-4 md:my-2" id="boss-{id}" in:fade>
+      <li
+        class="boss -mb-4 md:my-2"
+        id="boss-{id}"
+        in:fade
+        out:fade={{ duration: 100 }}
+      >
         <GymCard
           forceVs
           {starter}
