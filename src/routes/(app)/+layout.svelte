@@ -63,7 +63,7 @@
         if (!nid) continue
         if (!res) {
           console.error('Error reading ', nid)
-          return continue
+          continue
         }
 
         result[res.alias] = res
