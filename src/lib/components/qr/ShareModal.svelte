@@ -5,6 +5,7 @@
 
   import { fade, fly } from 'svelte/transition'
   import { getGame, savedGames, read, parse } from '$lib/store'
+  import { page } from '$app/stores'
 
   import { SHARE } from '$utils/rewrites'
   import { Icon } from '$c/core'
@@ -55,7 +56,7 @@
       </button>
 
       <div transition:fade class="mt-4 bg-white p-2">
-        <QRCode value="/drop/{code}" />
+        <QRCode value="{$page.url.origin}/drop/{code}" />
       </div>
     {/await}
   </span>
