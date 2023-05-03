@@ -181,21 +181,9 @@
     ''}"
 >
   <div class="flex-1">
-    <CompareControls
-      class="mt-2 origin-left max-md:grid max-md:grid-cols-3 md:absolute md:top-0.5 md:-right-8 md:mt-0 md:translate-x-full md:rotate-90 md:transform md:!bg-transparent"
-      pageSize={6}
-      showcontrols={false}
-      bind:value={gymId}
-      title="Gym team"
-      list={gym}
-      {select}
-    />
-  </div>
-
-  <div class="flex-1">
     {#key team}
       <CompareControls
-        class="mt-2 origin-left max-md:grid max-md:grid-cols-3 md:absolute md:top-0.5 md:-left-8 md:mt-0 md:rotate-90 md:transform md:!bg-transparent"
+        class="mt-2 max-md:grid max-md:-scale-x-100 max-md:grid-cols-3 md:absolute md:top-0.5 md:-left-8 md:mt-0 md:origin-left md:-rotate-90 md:-scale-x-100 md:transform md:!bg-transparent"
         bind:value={teamId}
         on:select={set(Active.Team)}
         pageSize={6}
@@ -205,5 +193,17 @@
         {select}
       />
     {/key}
+  </div>
+
+  <div class="flex-1">
+    <CompareControls
+      class="mt-2 origin-left max-md:grid max-md:grid-cols-3 md:absolute md:top-0.5 md:-right-8 md:mt-0 md:translate-x-full md:rotate-90 md:transform md:!bg-transparent"
+      pageSize={6}
+      showcontrols={false}
+      bind:value={gymId}
+      title="Gym team"
+      list={gym}
+      {select}
+    />
   </div>
 </div>
