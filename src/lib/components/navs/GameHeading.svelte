@@ -81,7 +81,7 @@
 
           <h1
             in:fade
-            class="hidden line-clamp-1 group-hover:border-black dark:group-hover:border-white lg:block"
+            class="hidden group-hover:border-black dark:group-hover:border-white lg:block lg:line-clamp-1"
             class:sm:text-xl={game?.name?.length <= 20}
             class:sm:text-lg={game?.name?.length > 20}
           >
