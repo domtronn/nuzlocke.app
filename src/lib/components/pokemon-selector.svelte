@@ -28,6 +28,7 @@
     Deceased,
     External,
     Bin,
+    Hide,
     Dots,
     Map,
     Search,
@@ -148,6 +149,7 @@
     inteam = (team || []).includes(location)
   }
 
+  const onhide = () => dispatch('hide', { id: location })
   const onnew = () => dispatch('new', { id })
   const ondelete = () => {
     if (
@@ -582,6 +584,15 @@
               <button on:click={ondelete}>
                 <Icon inline={true} icon={Bin} class="mr-2 fill-current" />
                 Delete Location
+              </button>
+            </li>
+          {/if}
+
+          {#if type !== 'custom' && type !== 'starter'}
+            <li>
+              <button on:click={onhide}>
+                <Icon inline={true} icon={Hide} class="mr-2 fill-current" />
+                Hide Location
               </button>
             </li>
           {/if}
