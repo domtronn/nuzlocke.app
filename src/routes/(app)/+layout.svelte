@@ -1,11 +1,9 @@
 <script>
   import { browser, dev } from '$app/environment'
+  import { setContext, afterUpdate } from 'svelte'
+
   import { page } from '$app/stores'
-  import { onMount } from 'svelte'
-
   import { createUser, readdata } from '$lib/store'
-
-  import { setContext } from 'svelte'
 
   import { RegionMap } from '$lib/data/games'
   import { GameHeading, NavHeading } from '$c/navs'
@@ -21,10 +19,12 @@
   const [, gameKey] = browser ? readdata() : []
   setContext('region', RegionMap[gameKey] ?? 'unknown')
 
-  onMount(() => {
+  afterUpdate(() => {
     const [, id, , game] = readdata()
+
     if (id === 'blazingem') deferStyles('/assets/pokemon-blazingem.css')
     if (id?.includes('radred')) deferStyles('/assets/pokemon-radicalred.css')
+    if (browser) setTimeout(() => document.body.classList.add('lazy-pkm'), 0)
 
     if (!dev)
       import('@sentry/svelte').then((Sentry) => {
@@ -54,22 +54,22 @@
         return p.idMap[nid] || p.aliasMap[nid] || p.nameMap[nid]
       }),
     getPkmns: (ids = []) =>
-    fetchData().then((p = {}) => {
-      let result = {}
-      for (const id of ids) {
-        const nid = normalise(id).trim()
-        const res = p.idMap[nid] || p.aliasMap[nid] || p.nameMap[nid]
+      fetchData().then((p = {}) => {
+        let result = {}
+        for (const id of ids) {
+          const nid = normalise(id).trim()
+          const res = p.idMap[nid] || p.aliasMap[nid] || p.nameMap[nid]
 
-        if (!nid) continue
-        if (!res) {
-          console.error('Error reading ', nid)
-          continue
+          if (!nid) continue
+          if (!res) {
+            console.error('Error reading ', nid)
+            continue
+          }
+
+          result[res.alias] = res
         }
-
-        result[res.alias] = res
-      }
-      return result
-    })
+        return result
+      })
   })
 
   const onresize = () => (document.body.height = window.innerHeight)

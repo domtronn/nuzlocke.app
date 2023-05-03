@@ -1,13 +1,13 @@
 <script>
   import '../app.postcss'
 
-  import { onMount } from 'svelte'
+  import { afterUpdate } from 'svelte'
   import { CookieBanner, Footer } from '$c/navs'
 
   import createErrorModal from '$utils/error-handler'
   import deferStyles from '$lib/utils/defer-styles'
 
-  onMount(async () => {
+  afterUpdate(async () => {
     deferStyles('/assets/pokemon.css')
     deferStyles('/assets/badges.css')
     window.onunhandledrejection = createErrorModal
