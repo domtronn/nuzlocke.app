@@ -75,16 +75,16 @@
   const { open } = getContext('simple-modal')
   const onshare = (_) => open(ShareModal, { id })
 
-  $: date = day(+created).format('Do of MMM, YYYY')
-  $: last = updated > created ? day(+updated).format('Do of MMM, YYYY') : null
+  $: date = day(+created).format('Do of MMMM')
+  $: last = updated > created ? day(+updated).format('Do of MMMM') : null
 </script>
 
 <div
-  class="flex flex-row items-center justify-between tracking-widest transition"
+  class="flex flex-col items-start justify-between tracking-widest transition md:flex-row md:items-center"
 >
   <button
     title="Load saved game {name}"
-    class="flex-start group flex flex-1 cursor-pointer flex-col items-start gap-x-4 sm:flex-row md:items-center md:pr-24"
+    class="flex-start group relative flex flex-1 cursor-pointer flex-col items-start gap-x-4 sm:flex-row md:items-center md:pr-24"
     out:fade
     on:click={onclick}
   >
@@ -126,7 +126,7 @@
       </h3>
 
       <span
-        class="inline-flex items-center font-sans grayscale transition group-hover:grayscale-0"
+        class="inline-flex items-center font-sans transition group-hover:grayscale-0 md:grayscale"
       >
         <PIcon className=" -mt-0.5 -ml-1" type="item" name="poke-ball" />
         {(available || []).length}
@@ -151,9 +151,7 @@
     </div>
   </button>
 
-  <div
-    class="flex flex-col items-end gap-y-2 md:flex-row md:items-center md:gap-x-3"
-  >
+  <div class="flex flex-row items-end gap-3 max-md:mt-2 md:items-center">
     <IconButton
       rounded
       color="yellow"
