@@ -84,7 +84,7 @@
 >
   <button
     title="Load saved game {name}"
-    class="flex-start group relative flex flex-1 cursor-pointer flex-col items-start gap-x-4 sm:flex-row md:items-center md:pr-24"
+    class="flex-start group relative flex w-full flex-1 cursor-pointer flex-col items-start gap-x-4 sm:flex-row md:w-auto md:items-center md:pr-24"
     out:fade
     on:click={onclick}
   >
