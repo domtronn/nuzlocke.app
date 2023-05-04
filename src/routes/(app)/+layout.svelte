@@ -29,7 +29,7 @@
 
   setContext('game', {
     getLeague: fetchLeague,
-    getAllPkmn: () => fetchData().then((res) => Object.values(res.idMap)),
+    getAllPkmn: () => fetchData().then((res) => Object.values(res.aliasMap)),
     getPkmn: (id) =>
       fetchData().then((p = {}) => {
         const nid = normalise(id)
