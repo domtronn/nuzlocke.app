@@ -192,17 +192,12 @@
   ],
   "headers": [
     {
-    "source": "/(game|box|)",
-    "headers": [
+      "source": "/(.*)",
+      "headers": [
         {
           "key": "Link",
           "value": "<img.nuzlocke.app/assets/pokemon-v6.png>; rel=preload; as=image;"
-        }
-      ]
-    },
-    {
-      "source": "/(.*)",
-      "headers": [
+        },
         {
           "key": "X-Content-Type-Options",
           "value": "nosniff"
