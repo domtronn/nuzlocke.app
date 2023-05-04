@@ -62,6 +62,10 @@
   $: src = createImgUrl({ imgId: id }, { ext: 'png' })
 </script>
 
+<svelte:head>
+  <link rel="preload" as="image" href="https://img.nuzlocke.app/assets/pokemon-v6.png" />
+</svelte:head>
+
 <main>
   <h1 aria-level="1" class="mx-auto text-center font-mono text-4xl">
     Pokémon
