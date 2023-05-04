@@ -102,6 +102,7 @@
                 class="-ml-2 flex h-8 flex-row items-center font-sans text-sm font-normal transition group-hover:grayscale-0 md:grayscale"
               >
                 <Logo
+                  loading="eager"
                   src="{IMG}{Games[active.game].logo}"
                   alt="{active.game} logo"
                   pictureClass="game--{active.game}"
