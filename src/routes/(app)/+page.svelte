@@ -64,6 +64,8 @@
 
 <svelte:head>
   <link rel="preload" as="image" href="https://img.nuzlocke.app/assets/pokemon-v6.png" />
+  <link rel="preload" as="image" href="/logo.webp" />
+  <link rel="preload" as="image" href="/logo.png" />
 </svelte:head>
 
 <main>
@@ -71,6 +73,7 @@
     Pokémon
     <Picture
       src="/logo"
+      loading="eager"
       aspect="324x62"
       pixelated
       alt="Nuzlocke logo"
