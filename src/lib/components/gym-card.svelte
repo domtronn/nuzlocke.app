@@ -107,6 +107,7 @@
 
 <div class="relative my-6">
   <Accordion
+    jsenabled={!reader}
     iconClassName="transition duration-1000 {loading
       ? 'opacity-0'
       : 'opacity-100'}"

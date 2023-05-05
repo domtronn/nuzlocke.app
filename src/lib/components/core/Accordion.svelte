@@ -6,7 +6,8 @@
   let isOpen = false
   const toggle = () => (isOpen = !isOpen)
 
-  export let iconClassName = '',
+  export let jsenabled = true,
+    iconClassName = '',
     className = ''
 </script>
 
@@ -34,8 +35,11 @@
   <slot name="heading" />
 </button>
 
-{#if isOpen}
-  <div in:slide={{ duration: 300 }}>
+{#if !jsenabled || isOpen}
+  <div
+    class:hidden={!isOpen}
+    in:slide={{ duration: 300 }}
+    >
     <slot name="item" />
   </div>
 {/if}
