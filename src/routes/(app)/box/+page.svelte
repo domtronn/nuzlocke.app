@@ -1,7 +1,6 @@
 <script>
   import { onMount, getContext } from 'svelte'
   import { fade } from 'svelte/transition'
-  import { flip } from 'svelte/animate'
 
   import { Footer } from '$c/navs'
 
@@ -392,7 +391,6 @@
             <span
               use:drag={{ data: p, effect: 'add', hideImg: true }}
               class="snap-start"
-              animate:flip={{ duration: (d) => 10 * Math.sqrt(d) }}
               out:fade={{ duration: 150 }}
             >
               <PIcon
