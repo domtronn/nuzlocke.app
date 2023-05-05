@@ -1,6 +1,7 @@
 <script>
   import { onMount, getContext } from 'svelte'
   import { fade } from 'svelte/transition'
+  import { flip } from 'svelte/animate'
 
   import { Footer } from '$c/navs'
 
@@ -385,12 +386,14 @@
               >You have no Pokémon in your box</span
             >
           {/if}
-          {#each (stat === 'team' ? mons : box).filter(filter) as p}
+          {#each (stat === 'team' ? mons : box).filter(filter) as p (locid(p))}
             {@const badgeSummary = summarise(p, winData)}
 
             <span
               use:drag={{ data: p, effect: 'add', hideImg: true }}
               class="snap-start"
+              animate:flip={{ duration: (d) => 10 * Math.sqrt(d) }}
+              out:fade={{ duration: 150 }}
             >
               <PIcon
                 class="data-drag-img invisible absolute -left-20 -top-20 -z-20"
