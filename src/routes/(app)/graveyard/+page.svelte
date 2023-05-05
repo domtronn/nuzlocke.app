@@ -97,7 +97,7 @@
       </span>
     {:else}
       <div
-        class="relative mx-auto mb-6 w-full md:fixed md:bottom-0 md:right-6 md:w-64"
+        class="relative mx-auto mb-6 w-full md:fixed md:bottom-0 md:right-6 md:w-64 z-[999999]"
       >
         <div class="my-2 mx-auto flex items-center justify-between gap-x-2">
           <h2 class="text-base font-medium text-gray-900 dark:text-gray-50">
@@ -115,7 +115,7 @@
       </div>
 
       {#if showAudio}<Audio
-          class="bottom-8 left-0 lg:fixed"
+          class="bottom-8 left-0 lg:fixed z-[999999]"
           src="{IMG}/audio/lavender.mp3"
         />{/if}
       {#if showFog}<Fog />{/if}
