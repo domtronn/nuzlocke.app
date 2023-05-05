@@ -391,7 +391,6 @@
             <span
               use:drag={{ data: p, effect: 'add', hideImg: true }}
               class="snap-start"
-              out:fade={{ duration: 150 }}
             >
               <PIcon
                 class="data-drag-img invisible absolute -left-20 -top-20 -z-20"
