@@ -81,7 +81,7 @@
     }
   }
 
-  onMount(() => fetchData(starter))
+  $: (async () => await fetchData(starter))()
 
   $: levelCap = pokemon.every(
     (it) => it.level.startsWith('+') || it.level.startsWith('-')

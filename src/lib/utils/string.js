@@ -33,7 +33,7 @@ export const regionise = (str) =>
     .replace(/(.*)-galar/, 'Galarian $1')
     .replace(/(.*)-alola/, 'Alolan $1')
     .replace(/(.*)-paldea/, 'Paldean $1')
-    .replace(/(.*)-hisui/, 'Hisuin $1')
+    .replace(/(.*)-hisui/, 'Hisuian $1')
     .replace(/(.*)-hoenn/, 'Hoennian $1')
     .replace(/(.*)-sevii/, 'Seviian $1')
     .replace(/(.*)-mega/, 'Mega $1')
