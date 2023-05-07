@@ -16,50 +16,59 @@
   }
 </script>
 
-<header style='--col1: {theme?.[0]}; --col2: {theme?.[1]}; --col3: {theme?.[2] || '#000'}'>
-  <div class='g-container nav'>
-    <a title='Home' href='/'>
-      <Icon inline={true} height=1.4rem icon={Home} class=fill-current />
+<header
+  style="--col1: {theme?.[0]}; --col2: {theme?.[1]}; --col3: {theme?.[2] ||
+    '#000'}"
+>
+  <div class="g-container nav">
+    <a title="Home" href="/" rel="external">
+      <Icon inline={true} height="1.4rem" icon={Home} class="fill-current" />
     </a>
     <div>
       <ThemeToggle />
     </div>
   </div>
 
-  <div class='g-container hero'>
+  <div class="g-container hero">
     {#if $$slots.hero}
-      <slot name=hero />
+      <slot name="hero" />
     {:else}
       <div>
         <small>Nuzlocke Tracker</small>
-        <h1> Pokémon {title} Nuzlocke Guide </h1>
+        <h1>Pokémon {title} Nuzlocke Guide</h1>
 
         <p>
           {#if description}
             {@html description}
           {:else}
-            This guide contains useful information for a <strong>{title} Nuzlocke</strong>.
-            Lists of all of the available Pokémon, the number of encounters, and detailed overviews of all <strong>Boss battles</strong>.
+            This guide contains useful information for a <strong
+              >{title} Nuzlocke</strong
+            >. Lists of all of the available Pokémon, the number of encounters,
+            and detailed overviews of all <strong>Boss battles</strong>.
           {/if}
         </p>
 
         <button on:click={onnew}>
           <span>
             Start tracking
-            <Icon inline={true} icon={Track} class='translate-y-1 ml-2 fill-current' height=1.4rem />
+            <Icon
+              inline={true}
+              icon={Track}
+              class="ml-2 translate-y-1 fill-current"
+              height="1.4rem"
+            />
           </span>
         </button>
       </div>
 
-
       <div>
         <Picture
-          src='{IMG}{logo}'
-          alt='{title} Logo'
-          role=presentation
-          loading=eager
-          aspect=384x192
-          class='h-32 md:h-auto md:-mt-16 w-auto drop-shadow-mark'
+          src="{IMG}{logo}"
+          alt="{title} Logo"
+          role="presentation"
+          loading="eager"
+          aspect="384x192"
+          class="drop-shadow-mark h-32 w-auto md:-mt-16 md:h-auto"
         />
       </div>
     {/if}
@@ -71,17 +80,27 @@
 <slot />
 
 {#if !$$slots.hero}
-  <div class='end g-container' style='--col1: {theme?.[0]}; --col2: {theme?.[1]}; --col3: {theme?.[2] || '#000'}'>
+  <div
+    class="end g-container"
+    style="--col1: {theme?.[0]}; --col2: {theme?.[1]}; --col3: {theme?.[2] ||
+      '#000'}"
+  >
     <p>
-      Now that you're ready to take on the <b>Pokémon {title} Nuzlocke
-        Challenge</b>, why not keep track of all your encounters with the
+      Now that you're ready to take on the <b
+        >Pokémon {title} Nuzlocke Challenge</b
+      >, why not keep track of all your encounters with the
       <b>Nuzlocke Tracker</b>?
 
       <br />
 
-      <button class=inverted on:click={onnew}>
+      <button class="inverted" on:click={onnew}>
         Start Tracking
-        <Icon inline={true} icon={Track} class='translate-y-1 ml-2 fill-current' height=1.4rem />
+        <Icon
+          inline={true}
+          icon={Track}
+          class="ml-2 translate-y-1 fill-current"
+          height="1.4rem"
+        />
       </button>
     </p>
   </div>
@@ -93,40 +112,46 @@
     background: linear-gradient(150deg, var(--col1), var(--col2));
   }
 
-
   small {
-    @apply uppercase text-sm leading-relaxed tracking-widest font-bold
+    @apply text-sm font-bold uppercase leading-relaxed tracking-widest;
   }
 
   p {
-    @apply text-sm leading-6 tracking-wide
+    @apply text-sm leading-6 tracking-wide;
   }
 
   h1 {
-    @apply text-4xl md:text-6xl font-bold my-4 tracking-wide
-
+    @apply my-4 text-4xl font-bold tracking-wide md:text-6xl;
   }
 
   .g-container {
-    @apply flex flex-col-reverse md:flex-row items-start md:justify-between
+    @apply flex flex-col-reverse items-start md:flex-row md:justify-between;
   }
-  .g-container h1 { @apply max-w-3xl }
-  .g-container p { @apply max-w-xl }
-  .g-container > div { @apply relative }
+  .g-container h1 {
+    @apply max-w-3xl;
+  }
+  .g-container p {
+    @apply max-w-xl;
+  }
+  .g-container > div {
+    @apply relative;
+  }
 
-  :global(svg.waves) { @apply relative lg:-mt-24}
+  :global(svg.waves) {
+    @apply relative lg:-mt-24;
+  }
   :global(.drop-shadow-mark) {
-    @apply -translate-y-1/4 md:translate-y-1/2
+    @apply -translate-y-1/4 md:translate-y-1/2;
   }
 
   button {
-    @apply p-1 rounded-full z-50 my-6 font-medium px-6 py-4 text-xl tracking-widest transition cursor-pointer opacity-100;
+    @apply z-50 my-6 cursor-pointer rounded-full p-1 px-6 py-4 text-xl font-medium tracking-widest opacity-100 transition;
     background-color: var(--col3);
     cursor: pointer;
   }
 
   button.inverted {
-    @apply flex text-white mx-auto;
+    @apply mx-auto flex text-white;
     background: linear-gradient(130deg, var(--col1), var(--col2));
   }
 
@@ -144,14 +169,23 @@
     position: relative;
   }
 
-  .hero { @apply pt-20 }
-  .nav { @apply py-4 flex flex-row justify-between }
-  .nav div { @apply -mt-2 }
-  .end { @apply text-center mt-12 -mb-6 }
-  .end p { @apply mx-auto text-base leading-loose }
+  .hero {
+    @apply pt-20;
+  }
+  .nav {
+    @apply flex flex-row justify-between py-4;
+  }
+  .nav div {
+    @apply -mt-2;
+  }
+  .end {
+    @apply mt-12 -mb-6 text-center;
+  }
+  .end p {
+    @apply mx-auto text-base leading-loose;
+  }
 
   header :global(svg) {
     @apply translate-y-px;
   }
-
 </style>
