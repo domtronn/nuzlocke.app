@@ -7,6 +7,7 @@
   import { NuzlockeGroups } from '$lib/data/states'
   import Audio from '$lib/components/Audio.svelte'
 
+  import { locid } from '$utils/pokemon'
   import { chunk } from '$utils/arr'
   import { capitalise } from '$utils/string'
   import { summarise } from '$utils/badges'
@@ -97,7 +98,7 @@
       </span>
     {:else}
       <div
-        class="relative mx-auto mb-6 w-full md:fixed md:bottom-0 md:right-6 md:w-64 z-[999999]"
+        class="relative z-[999999] mx-auto mb-6 w-full md:fixed md:bottom-0 md:right-6 md:w-64"
       >
         <div class="my-2 mx-auto flex items-center justify-between gap-x-2">
           <h2 class="text-base font-medium text-gray-900 dark:text-gray-50">
@@ -115,7 +116,7 @@
       </div>
 
       {#if showAudio}<Audio
-          class="bottom-8 left-0 lg:fixed z-[999999]"
+          class="bottom-8 left-0 z-[999999] lg:fixed"
           src="{IMG}/audio/lavender.mp3"
         />{/if}
       {#if showFog}<Fog />{/if}
@@ -126,7 +127,7 @@
     <div class="mt-8 pb-48 sm:pb-64">
       {#each chunked as row, i}
         <GraveRow {i} maxRows={chunked.length}>
-          {#each row as p, j}
+          {#each row as p, j (locid(p))}
             {@const result = summarise(p, bossData)}
 
             <div
