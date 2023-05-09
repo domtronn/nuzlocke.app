@@ -102,7 +102,8 @@
 {/key}
 
 <style lang="postcss">
-  :global(body) {
+  :global(body),
+  :global(html) {
     overflow-x: hidden;
   }
   :global(button.compare) {

@@ -17,9 +17,6 @@
 
 <slot />
 
-<CookieBanner />
-<Footer />
-
 <style global lang="postcss">
   :global(:root) {
     --input-bg: theme('colors.white');
