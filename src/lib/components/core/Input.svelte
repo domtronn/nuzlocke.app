@@ -1,8 +1,15 @@
 <script>
   export let name
-  export let rounded = false, color = '', className = '', placeholder = '', maxlength = 16
-  export let min = -Infinity, max = Infinity, type = 'text'
-  export let value = null, icon = null
+  export let rounded = false,
+    color = '',
+    className = '',
+    placeholder = '',
+    maxlength = 16
+  export let min = -Infinity,
+    max = Infinity,
+    type = 'text'
+  export let value = null,
+    icon = null
 
   import { Icon } from '$c/core'
 
@@ -12,36 +19,42 @@
 <label for={name}>{name}</label>
 
 {#if type === 'number'}
-<input
-  id={name}
-  {placeholder}
-  {min}
-  {max}
-  type=number
-  bind:value={value}
-  class:rounded-lg={rounded}
-  class:pl-8={!!icon}
-  class:pl-3={!icon}
-  class='{color} {className} {$$restProps.class || ''}'
+  <input
+    id={name}
+    {placeholder}
+    {min}
+    {max}
+    type="number"
+    on:input
+    bind:value
+    class:rounded-lg={rounded}
+    class:pl-8={!!icon}
+    class:pl-3={!icon}
+    class="{color} {className} {$$restProps.class || ''}"
   />
 {:else}
   <input
     id={name}
     {placeholder}
-    type=text
+    type="text"
     {maxlength}
-    bind:value={value}
+    on:input
+    bind:value
     class:rounded-lg={rounded}
     class:pl-8={!!icon}
     class:pl-3={!icon}
-    class='{color} {className} {$$restProps.class || ''}'
-    autocomplete=off
+    class="{color} {className} {$$restProps.class || ''}"
+    autocomplete="off"
   />
 {/if}
 
 {#if icon}
   <span>
-    <Icon inline={true} icon={icon} class='fill-current absolute left-0 top-1/2 -translate-y-1/2 ml-3' />
+    <Icon
+      inline={true}
+      {icon}
+      class="absolute left-0 top-1/2 ml-3 -translate-y-1/2 fill-current"
+    />
   </span>
 {/if}
 
@@ -58,38 +71,53 @@
     --inp-focus-2: theme('colors.gray.200');
   }
 
-  .green { --inp-focus: theme('colors.green.400'); --inp-focus-2: theme('colors.green.200'); }
-  .orange { --inp-focus: theme('colors.orange.400'); --inp-focus-2: theme('colors.orange.200'); }
+  .green {
+    --inp-focus: theme('colors.green.400');
+    --inp-focus-2: theme('colors.green.200');
+  }
+  .orange {
+    --inp-focus: theme('colors.orange.400');
+    --inp-focus-2: theme('colors.orange.200');
+  }
 
   input {
     /* @apply  sm:text-xs */
-    @apply text-xxs sm:text-xs w-full transition-colors border-2 ring-2 ring-transparent text-gray-800 placeholder-gray-400 shadow-sm focus:outline-none pr-3 h-10;
+    @apply h-10 w-full border-2 pr-3 text-xxs text-gray-800 placeholder-gray-400 shadow-sm ring-2 ring-transparent transition-colors focus:outline-none sm:text-xs;
     background-color: var(--input-bg);
     border-color: theme('colors.gray.200');
   }
 
-  :global(.dark) input
-  {
+  :global(.dark) input {
     @apply text-gray-100 placeholder-gray-500;
     border-color: theme('colors.gray.600');
   }
 
-  :global(.dark) span { @apply text-gray-500 transition }
+  :global(.dark) span {
+    @apply text-gray-500 transition;
+  }
 
-  span { @apply text-gray-400 transition }
+  span {
+    @apply text-gray-400 transition;
+  }
 
   input:focus + span {
-    @apply text-gray-800
+    @apply text-gray-800;
   }
 
   :global(.dark) input:focus + span {
-    @apply text-gray-100
+    @apply text-gray-100;
   }
 
   @media (hover: hover) {
-    input:focus + span { @apply text-gray-800 }
-    :global(.dark) input:hover + span { @apply text-gray-100 }
-    input:hover { border-color: var(--inp-focus-2); }
+    input:focus + span {
+      @apply text-gray-800;
+    }
+    :global(.dark) input:hover + span {
+      @apply text-gray-100;
+    }
+    input:hover {
+      border-color: var(--inp-focus-2);
+    }
   }
 
   input:focus {

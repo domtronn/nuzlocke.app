@@ -1,16 +1,11 @@
 <script>
-  export let id,
-    store,
-    location,
+  export let location,
     locationName = '',
     type = '',
     infolink = ''
 
-  import { read, readdata, patch, getTeams } from '$lib/store'
-  import { capitalise } from '$lib/utils/string'
-
   import { fly } from 'svelte/transition'
-  import { Natures, NaturesMap } from '$lib/data/natures'
+  import { Natures } from '$lib/data/natures'
   import { NuzlockeStates, NuzlockeGroups } from '$lib/data/states'
   import { IconButton, AutoComplete, Input } from '$lib/components/core'
   import { Wrapper as SettingsWrapper } from '$lib/components/Settings'
@@ -35,10 +30,9 @@
     LongGrass
   } from '$icons'
 
-  import { createEventDispatcher, onMount, getContext } from 'svelte'
+  import { onMount, getContext } from 'svelte'
 
-  let selected, nickname, status, nature, hidden, death
-  let prevstatus = 'loading'
+  let selected, nickname, status, nature, hidden
 
   // Search text bindings for ACs
   let search, statusSearch, natureSearch
@@ -48,24 +42,13 @@
 
   let Particles, EvoModal, DeathModal
   onMount(() => {
-    const [data] = readdata()
-    const loc = data[location]
-    if (typeof loc?.pokemon !== 'undefined') {
-      const o = {
-        ...loc,
-        alias: loc.pokemon,
-        sprite: loc.pokemon,
-        label: capitalise(loc.pokemon)
-      }
-      selected = o
-    }
-
     getPkmns(encounters).then(
       (e) =>
         (encounterItems = (encounters || [])
           .map((id) => e[id])
           .filter((i) => i))
     )
+
     import('$lib/components/particles').then((m) => (Particles = m.default))
     import('$lib/components/EvolutionModal.svelte').then(
       (m) => (EvoModal = m.default)
@@ -73,197 +56,16 @@
     import('$lib/components/DeathModal/index.svelte').then(
       (m) => (DeathModal = m.default)
     )
-    prevstatus = null
   })
 
-  const { getAllPkmn, getPkmn, getPkmns } = getContext('game')
-  const dispatch = createEventDispatcher()
+  const { getAllPkmn, getPkmns } = getContext('game')
 
-  let loading = true
   let dupelines = new Set(),
     misslines = new Set()
 
-  let team, inteam
-
-  getTeams((t) => (team = t.team))
-
-  let resetd, hiddenLength
-  store &&
-    store.subscribe(
-      read((data) => {
-        hiddenLength = data?.__hidden?.length
-
-        const getStateMons = (data, stateGroup) => {
-          return Object.values(data)
-            .filter((p) => p && (!p.status || stateGroup.includes(p?.status)))
-            .map((p) => p.pokemon)
-            .filter((i) => i)
-        }
-
-        getPkmns(getStateMons(data, NuzlockeGroups.Dupes)).then(
-          (p) => (dupelines = new Set(Object.values(p).map((p) => p?.evoline)))
-        )
-        getPkmns(getStateMons(data, NuzlockeGroups.MissDupes)).then(
-          (p) => (misslines = new Set(Object.values(p).map((p) => p?.evoline)))
-        )
-
-        if (!!resetd && !data[location]) {
-          handleClear()
-          return
-        }
-
-        const pkmn = data[location]
-        if (!pkmn) return
-
-        resetd = pkmn
-
-        status = pkmn.status ? NuzlockeStates[pkmn.status] : null
-        nature = pkmn.nature ? NaturesMap[pkmn.nature] : null
-        hidden = pkmn.hidden
-        nickname = pkmn.nickname
-        death = pkmn.death
-        if (pkmn.pokemon)
-          getPkmn(pkmn.pokemon).then((p) => {
-            selected = p
-            loading = false
-          })
-      })
-    )
-
-  $: {
-    if (selected)
-      store.update(
-        patch({
-          [location]: {
-            id,
-            pokemon: selected?.alias,
-            status: status?.id,
-            nature: nature?.id,
-            location: locationName || location,
-            ...(nickname ? { nickname } : {}),
-            ...(hidden ? { hidden: true } : {}),
-            ...(status?.id === 5 && death ? { death } : {})
-          }
-        })
-      )
-
-    // TODO: Handle death state team clearin
-    inteam = (team || []).includes(location)
-  }
-
-  const onhide = () => {
-    if (
-      !hiddenLength &&
-      !window.confirm(
-        `Hiding a location will delete all encounter data for this location and prevent it from appearing in this run.\n\nYou can reset hidden locations from "Settings".\n\nAre you sure you want to hide ${location}?`
-      )
-    )
-      return
-
-    handleClear()
-    dispatch('hide', { id: location })
-  }
-
-  const onnew = () => dispatch('new', { id })
-  const ondelete = () => {
-    if (
-      selected &&
-      !confirm(
-        `You are about to delete a custom location - this will also delete your Pokémon, ${selected.name}. Are you sure you wish to continue?`
-      )
-    )
-      return
-
-    handleClear()
-    dispatch('delete', { id: location })
-  }
-
-  function setTeam(team) {
-    store.update(patch({ __team: team.slice(0, 6) }))
-  }
-
-  /** Team management */
-  function handleTeamAdd() {
-    setTeam((team || []).filter((i) => i !== location).concat(location))
-  }
-
-  function handleTeamRemove() {
-    setTeam((team || []).filter((i) => i !== location))
-  }
-
-  function handleClear() {
-    status = nickname = selected = death = resetd = null
-    search = statusSearch = natureSearch = null
-    store.update(
-      patch({
-        [location]: {},
-        __team: team.filter((i) => i !== location).slice(0, 6)
-      })
-    )
-  }
-
-  let statusComplete = false
-  const handleStatus = (sid) => () => {
-    const cb = (data) => {
-      if (sid === 5) {
-        handleTeamRemove()
-        death = data
-      }
-
-      status = NuzlockeStates[sid]
-      _animateStatus(sid)
-    }
-
-    if (sid === 5) return handleDeath(cb)
-    else cb()
-  }
-
-  const _animateStatus = (sid) => {
-    if (sid === 2 || sid === 3) statusComplete = ['parcel', 'profs-letter']
-    if (sid === 1)
-      statusComplete = ['poke-ball', 'friend-ball', 'heavy-ball', 'master-ball']
-    if (sid === 5)
-      statusComplete = [
-        'thick-club',
-        'quick-claw',
-        'rare-bone',
-        'dragon-fang',
-        'sharp-beak'
-      ]
-    if (sid === 6)
-      statusComplete = [
-        'health-av-candy',
-        'tapunium-z--held',
-        'revive',
-        'electric-gem',
-        'max-revive'
-      ]
-    if (sid === 100)
-      statusComplete = ['revival-herb', 'revival-herb', 'starf-berry']
-    if (sid === 200)
-      statusComplete = ['thunder-stone', 'fire-stone', 'water-stone']
-  }
-
-  const { open } = getContext('simple-modal')
-  let evoComplete = false
-  const handleSplitEvolution = (base, evolutions) =>
-    open(EvoModal, { evolutions, base, select: handleSingleEvolution })
-  const handleSingleEvolution = async (id) =>
-    getPkmn(id).then((p) => {
-      selected = p
-      evoComplete = true
-      _animateStatus(200)
-    })
-
-  const handleEvolution = (base, evos) => async () =>
-    handleSplitEvolution(base, evos)
-  const handleDeath = (submit) =>
-    open(DeathModal, { submit, pokemon: selected, nickname })
-
-  const handleReveal = () => {
-    hidden = false
-    _animateStatus(100)
-  }
+  let team,
+    inteam,
+    statusComplete = false
 
   $: gray = NuzlockeGroups.Unavailable.includes(status?.id)
 </script>
@@ -288,7 +90,6 @@
           {#if selected && (selected.hidden || hidden)}
             <button
               class="group relative col-span-2 m-0 inline-flex w-11/12 items-center justify-between overflow-hidden rounded-lg border-2 pr-3 transition-colors hover:border-lime-500 dark:border-gray-600 dark:bg-transparent dark:hover:border-lime-400 dark:hover:bg-gray-700/25 sm:w-full sm:text-xs"
-              on:click={handleReveal}
             >
               <div
                 class="inline-flex items-center opacity-50 blur grayscale dark:opacity-100"
@@ -440,7 +241,6 @@
           </svelte:fragment>
 
           <button
-            on:click={handleStatus(item.id)}
             class="flex inline-flex items-center gap-x-2 px-3 py-2 md:py-3"
             slot="item"
             let:item
@@ -510,7 +310,6 @@
           src={Deceased}
           title="Kill {selected.name}"
           track="kill"
-          on:click={handleStatus(5)}
           containerClassName={!selected || hidden ? 'hidden sm:block' : ''}
         />
       {/if}
@@ -522,7 +321,6 @@
           color="orange"
           className="-translate-y-0.5"
           containerClassName={!selected ? 'hidden sm:block' : ''}
-          on:click={handleStatus(1)}
           title="Capture {selected.name}"
         />
       {/if}
@@ -535,7 +333,6 @@
           containerClassName={!selected ? 'hidden sm:block' : ''}
           color="green"
           title="Evolve {selected.name}"
-          on:click={handleEvolution(selected.sprite, selected.evos)}
         />
       {/if}
 
@@ -549,7 +346,6 @@
           title="{inteam ? `Remove` : `Add`} {selected.name} {inteam
             ? `from`
             : `to`} your team"
-          on:click={inteam ? handleTeamRemove : handleTeamAdd}
         >
           <Icon
             class="absolute right-0.5 top-0.5 scale-75 transform rounded-full bg-white dark:bg-gray-800"
@@ -578,7 +374,7 @@
           </strong>
 
           <li>
-            <button on:click={onnew}>
+            <button>
               <Icon inline={true} icon={Add} class="mr-2 fill-current" />
               Add Location
             </button>
@@ -586,7 +382,7 @@
 
           <SettingsWrapper id="permadeath" on="1" condition={status?.id === 5}>
             <li slot="else">
-              <button on:click={handleClear}>
+              <button>
                 <Icon inline={true} icon={Delete} class="mr-2 fill-current" />
                 Clear Encounter
               </button>
@@ -595,7 +391,7 @@
 
           {#if type === 'custom'}
             <li>
-              <button on:click={ondelete}>
+              <button>
                 <Icon inline={true} icon={Bin} class="mr-2 fill-current" />
                 Delete Location
               </button>
@@ -604,7 +400,7 @@
 
           {#if type !== 'custom' && type !== 'starter'}
             <li>
-              <button on:click={onhide}>
+              <button>
                 <Icon inline={true} icon={Hide} class="mr-2 fill-current" />
                 Hide Location
               </button>
@@ -613,10 +409,7 @@
 
           {#if selected && !hidden && selected?.evos?.length && (!status || NuzlockeGroups.Available.includes(status.id))}
             <li>
-              <button
-                class="inline-flex"
-                on:click={handleEvolution(selected.sprite, selected.evos)}
-              >
+              <button class="inline-flex">
                 <PIcon
                   className="transform scale-75 -mr-2 -ml-1.5 -my-1 grayscale"
                   type="item"
@@ -629,7 +422,7 @@
 
           {#if selected && !hidden && !status}
             <li>
-              <button class="inline-flex" on:click={handleStatus(1)}>
+              <button class="inline-flex">
                 <PIcon
                   className="transform scale-75 -mr-2 -ml-1.5 -my-1 grayscale"
                   type="item"
@@ -647,7 +440,6 @@
                 title="{inteam ? `Remove` : `Add`} {selected.name} {inteam
                   ? `from`
                   : `to`} your team"
-                on:click={inteam ? handleTeamRemove : handleTeamAdd}
               >
                 <span class="relative mr-2">
                   <Icon inline icon={Ball} class="scale-125 transform" />

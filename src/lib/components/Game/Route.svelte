@@ -9,9 +9,10 @@
     read
   } from '$lib/store'
 
-  import { toDbLocation } from '$lib/utils/link'
-  import { insertList } from '$lib/utils/arr'
-  import { shortuuid } from '$lib/utils/uuid'
+  import { toDbLocation } from '$utils/link'
+  import { insertList } from '$utils/arr'
+  import { shortuuid } from '$utils/uuid'
+  import { slugify } from '$utils/string'
 
   import { Tooltip } from '$lib/components/core'
   import CustomLocation from './CustomLocation.svelte'
@@ -109,6 +110,8 @@
     document.getElementById(id) ? scrollToItem(id) : (scroll = id)
   }
 
+  const locid = (p, i) => slugify(`${p.type}-${p.name}-${i}`)
+
   afterUpdate(() => {
     if (!scroll) return
     setTimeout(scrollToItem.bind({}, scroll))
@@ -117,7 +120,7 @@
 </script>
 
 <ul class="flex flex-col gap-y-0 lg:gap-y-2 {className}">
-  {#each filtered.slice(0, limit) as p, id (p)}
+  {#each filtered.slice(0, limit) as p, id (locid(p, id))}
     {#if showStarterRoute(p, filters, hideRoute)}
       <li
         class="flex items-center gap-x-2"
