@@ -60,8 +60,8 @@
   }
 
   const hasTeam = team.length > 0
-  let tab = 0,
-    active = hasTeam ? Active.Team : Active.Box
+  let active = hasTeam ? Active.Team : Active.Box
+  let tab = 0
 
   let boxId = -1,
     teamId = -1,
@@ -89,7 +89,7 @@
       </div>
 
       <Tabs
-        bind:selected={tab}
+        bind:active={tab}
         className="scale-90 z-50 origin-left md:hidden w-fit justify-start -mt-3 mb-4 "
         name="page"
         tabs={['Stats', 'Info', 'Moves']}
