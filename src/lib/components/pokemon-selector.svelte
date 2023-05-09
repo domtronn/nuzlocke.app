@@ -206,8 +206,8 @@
   const handleStatus = (sid) => () => {
     const cb = (data) => {
       if (sid === 5) {
-        death = data
         handleTeamRemove()
+        death = data
       }
 
       status = NuzlockeStates[sid]
