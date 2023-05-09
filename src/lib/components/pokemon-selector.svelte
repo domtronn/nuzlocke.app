@@ -320,12 +320,15 @@
               />
             </button>
           {:else}
+            {@const fetchSearch = (search && search !== selected) || !suggest}
+
             <AutoComplete
               inset={selected ? true : '2.4em'}
               rounded
-              fetch={search || !suggest ? getAllPkmn : null}
-              items={search || !suggest ? [] : encounterItems}
-              max={search || !suggest ? 16 : encounterItems.length}
+              fetch={fetchSearch ? getAllPkmn : null}
+              items={fetchSearch ? [] : encounterItems}
+              max={fetchSearch ? 16 : encounterItems.length}
+              on:change={(_) => (search = null)}
               bind:search
               bind:selected
               name="{location} Encounter"
