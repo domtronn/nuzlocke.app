@@ -308,12 +308,12 @@
           </div>
 
           <div
-            class="col-span-3 my-1.5 grid grid-cols-6 gap-x-2 gap-y-2 max-md:-ml-2 sm:w-auto md:my-0 md:grid-cols-6 xl:grid-cols-9"
+            class="col-span-3 my-1.5 grid grid-cols-6 gap-x-2 gap-y-2 sm:w-auto md:my-0 md:grid-cols-6 xl:grid-cols-9"
           >
             {#each types as t}
               {#if typeCounts[t] > 0}
                 <label
-                  class="h-6 scale-75 cursor-pointer transition"
+                  class="h-6 scale-75 cursor-pointer transition max-md:-mx-1"
                   class:grayscale={(type && !type.endsWith(t)) ||
                     !typeCounts[t]}
                   class:opacity-50={(type && !type.endsWith(t)) ||
@@ -337,26 +337,31 @@
             {/each}
           </div>
 
-          <div
-            class="col-span-2 my-2 grid origin-left scale-125 grid-cols-4 gap-x-1 border-gray-200 dark:border-gray-500 md:my-0 xl:scale-150 xl:grid-cols-8"
-          >
-            {#each winData.filter((d) => d.group === 'gym-leader') as d}
-              <label
-                class="cursor-pointer px-1 text-center transition"
-                class:grayscale={type && !type.endsWith(d.id)}
-                class:grayscale-0={type && type.endsWith(d.id)}
-                class:opacity-50={type && !type.endsWith(d.id)}
-              >
-                <PIcon type="b" name={d.type || d.speciality || d.id} />
-                <input
-                  bind:group={type}
-                  type="radio"
-                  value="badge:{d.id}"
-                  name="badge"
-                />
-              </label>
-            {/each}
-          </div>
+          {#if true}
+            {@const gymData = winData.filter((d) => d.group === 'gym-leader')}
+            <div
+              class:pl-2={gymData.length}
+              class:border-l={gymData.length}
+              class="col-span-2 my-2 grid origin-left scale-125 grid-cols-4 gap-x-1 border-gray-200 dark:border-gray-500 md:my-0 xl:scale-[1.4] xl:grid-cols-8"
+            >
+              {#each gymData as d}
+                <label
+                  class="cursor-pointer self-end px-1 text-center transition max-md:-mx-0.5"
+                  class:grayscale={type && !type.endsWith(d.id)}
+                  class:grayscale-0={type && type.endsWith(d.id)}
+                  class:opacity-50={type && !type.endsWith(d.id)}
+                >
+                  <PIcon type="b" name={d.type || d.speciality || d.id} />
+                  <input
+                    bind:group={type}
+                    type="radio"
+                    value="badge:{d.id}"
+                    name="badge"
+                  />
+                </label>
+              {/each}
+            </div>
+          {/if}
         </div>
 
         <div
@@ -369,7 +374,7 @@
           class:lg:grid-cols-5={minimal}
           class:xl:grid-cols-4={!minimal}
           class:xl:grid-cols-5={minimal}
-          class:gap-y-5={minimal}
+          class:gap-y-6={minimal}
           class:gap-x-3={minimal}
           class:gap-x-4={!minimal}
           class:gap-y-8={!minimal}

@@ -102,7 +102,10 @@
         </span>
       </div>
 
-      <div class="absolute -right-8 h-0">
+      <div
+        class="absolute -right-8 h-0 origin-bottom-right"
+        class:scale-75={minimal}
+      >
         <slot name="img" />
         {#if sprite}
           <img
@@ -139,7 +142,7 @@
           <TypeBadge tera type={tera} />
         {/if}
 
-        <div class="badges cursor-help">
+        <div class="badges cursor-help" class:bottom-0={minimal}>
           <slot name="badges" />
         </div>
       </div>
@@ -288,7 +291,7 @@
   }
 
   .minimal .badges {
-    @apply hidden;
+    @apply absolute -bottom-16 origin-left translate-y-2 scale-100 max-md:-left-2;
   }
 
   .badges > :global(*:nth-child(even) i) {
