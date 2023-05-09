@@ -308,7 +308,7 @@
           </div>
 
           <div
-            class="col-span-3 my-1.5 grid grid-cols-6 gap-x-2 gap-y-2 sm:w-auto md:my-0 md:grid-cols-6 xl:grid-cols-9"
+            class="col-span-3 my-1.5 grid grid-cols-6 gap-x-2 gap-y-2 max-md:-ml-2 sm:w-auto md:my-0 md:grid-cols-6 xl:grid-cols-9"
           >
             {#each types as t}
               {#if typeCounts[t] > 0}
@@ -338,7 +338,7 @@
           </div>
 
           <div
-            class="my-2 grid origin-left scale-125 grid-cols-4 gap-x-1 border-gray-200 pl-2 dark:border-gray-500 max-md:border-l md:my-0 xl:scale-150 xl:grid-cols-8"
+            class="col-span-2 my-2 grid origin-left scale-125 grid-cols-4 gap-x-1 border-gray-200 dark:border-gray-500 md:my-0 xl:scale-150 xl:grid-cols-8"
           >
             {#each winData.filter((d) => d.group === 'gym-leader') as d}
               <label
