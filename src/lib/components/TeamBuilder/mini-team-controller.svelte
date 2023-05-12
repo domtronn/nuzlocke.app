@@ -30,7 +30,7 @@
         seenTeam = Object.hasOwnProperty.call(data, '__team')
         teamData = readTeam(data)
         boxData = readBox(data).reduce(
-          (acc, it) => ({ ...acc, [locid({ detail: { data: it } })]: it }),
+          (acc, it) => ({ ...acc, [pokeLocId(it)]: it }),
           {}
         )
         boxLength = readBox(data).length

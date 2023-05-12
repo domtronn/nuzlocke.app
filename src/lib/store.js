@@ -174,16 +174,14 @@ export const readStarter = (data) => data.__starter || 'fire'
 
 export const readBox = (data) => {
   const customIdMap = toObj(data.__custom, 'id')
-  const customLocMap = toObj(data.__custom, 'name')
 
-  return Object.values(data)
-    .filter((i) => i.pokemon)
-    .filter(({ status }) => NuzlockeGroups.Available.includes(status))
-    .map((p) => {
+  return Object.entries(data)
+    .filter(([, i]) => i.pokemon)
+    .filter(([, { status }]) => NuzlockeGroups.Available.includes(status))
+    .map(([id, p]) => {
       // Read custom location data from data.__custom
       let custom
-      if (customIdMap?.[p.location]) custom = customIdMap?.[p.location]
-      else if (customLocMap?.[p.location]) custom = customLocMap?.[p.location]
+      if (customIdMap?.[id]) custom = customIdMap?.[id]
 
       return custom ? { ...p, customId: custom.id, customName: custom.name } : p
     })
