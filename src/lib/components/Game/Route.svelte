@@ -18,7 +18,6 @@
   import StarterType from '$lib/components/starter-type.svelte'
   import GymCard from '$lib/components/gym-card.svelte'
   import PokemonSelector from '$lib/components/pokemon-selector.svelte'
-  import IntersectionObserver from 'svelte-intersection-observer'
 
   import {
     hideRouteF,
@@ -83,10 +82,6 @@
     game.store.update(patch({ __starter: starter }))
   }
 
-  let limit = 10
-  const inclimit = (_) => (limit = limit + 5)
-  export const resetlimit = (_) => (limit = 10)
-
   export const setnav = (e) =>
     setloc(`boss-${e.detail.value}`, e.detail.value + 20)
   export const setroute =
@@ -105,7 +100,6 @@
   }
 
   const setloc = (id, i) => {
-    limit = Math.max(limit, i + 20)
     document.getElementById(id) ? scrollToItem(id) : (scroll = id)
   }
 
@@ -117,7 +111,7 @@
 </script>
 
 <ul class="flex flex-col gap-y-0 lg:gap-y-2 {className}">
-  {#each filtered.slice(0, limit) as p, id (p)}
+  {#each filtered as p, id (p)}
     {#if showStarterRoute(p, filters, hideRoute)}
       <li
         class="flex items-center gap-x-2"
@@ -202,12 +196,6 @@
           type={p.group}
         />
       </li>
-    {/if}
-
-    {#if id === limit - 5}
-      <IntersectionObserver {element} on:intersect={inclimit}>
-        <li bind:this={element} />
-      </IntersectionObserver>
     {/if}
   {/each}
 </ul>

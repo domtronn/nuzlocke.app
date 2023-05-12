@@ -31,8 +31,6 @@
 
   let search = ''
 
-  $: filter, routeEl && routeEl.resetlimit()
-
   let filter = 'nuzlocke'
   const filters = [
     { label: 'Nuzlocke', val: 'nuzlocke' },
