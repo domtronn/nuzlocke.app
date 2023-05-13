@@ -16,7 +16,7 @@ export default function createErrorHandlerModal() {
 
   cConfirm.innerText = 'Reload app'
   cConfirm.addEventListener('click', function () {
-    window.location = window.location.pathname
+    window.location = window.location.pathname + '?force-pass=' + +new Date()
   })
 
   mModal.appendChild(cImage)
