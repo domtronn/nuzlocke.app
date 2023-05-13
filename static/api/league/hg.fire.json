@@ -5025,6 +5025,376 @@
       }
     ]
   },
+  "kimono": {
+    "name": "Kimono Girls",
+    "speciality": "",
+    "img": "/leaders/gs-kimono",
+    "pokemon": [
+      {
+        "name": "umbreon",
+        "level": "38",
+        "moves": [
+          {
+            "power": 80,
+            "type": "dark",
+            "damage_class": "special",
+            "name": "Dark Pulse",
+            "effect": "Has a 20% chance to make the target flinch."
+          },
+          {
+            "power": 80,
+            "type": "ghost",
+            "damage_class": "special",
+            "name": "Shadow Ball",
+            "effect": "Has a 20% chance to lower the target's Special Defense by one stage."
+          },
+          {
+            "type": "ghost",
+            "damage_class": "status",
+            "name": "Confuse Ray",
+            "effect": "Confuses the target."
+          },
+          {
+            "power": 140,
+            "type": "normal",
+            "damage_class": "physical",
+            "name": "Last Resort",
+            "effect": "Can only be used after all of the user's other moves have been used."
+          }
+        ],
+        "ability": {
+          "name": "Synchronize",
+          "effect": "Copies burns, paralysis, and poison received onto the Pokémon that inflicted them."
+        },
+        "sprite": "197",
+        "types": [
+          "dark"
+        ],
+        "stats": {
+          "hp": 95,
+          "atk": 65,
+          "def": 110,
+          "spa": 60,
+          "spd": 130,
+          "spe": 65
+        }
+      },
+      {
+        "name": "espeon",
+        "level": "38",
+        "moves": [
+          {
+            "power": 90,
+            "type": "psychic",
+            "damage_class": "special",
+            "name": "Psychic",
+            "effect": "Has a 10% chance to lower the target's Special Defense by one stage."
+          },
+          {
+            "power": 60,
+            "type": "normal",
+            "damage_class": "special",
+            "name": "Swift",
+            "effect": "Never misses."
+          },
+          {
+            "type": "normal",
+            "damage_class": "status",
+            "name": "Psych Up",
+            "effect": "Discards the user's stat changes and copies the target's."
+          },
+          {
+            "power": 140,
+            "type": "normal",
+            "damage_class": "physical",
+            "name": "Last Resort",
+            "effect": "Can only be used after all of the user's other moves have been used."
+          }
+        ],
+        "ability": {
+          "name": "Synchronize",
+          "effect": "Copies burns, paralysis, and poison received onto the Pokémon that inflicted them."
+        },
+        "sprite": "196",
+        "types": [
+          "psychic"
+        ],
+        "stats": {
+          "hp": 65,
+          "atk": 65,
+          "def": 60,
+          "spa": 130,
+          "spd": 95,
+          "spe": 110
+        }
+      },
+      {
+        "name": "flareon",
+        "level": "38",
+        "moves": [
+          {
+            "power": 110,
+            "type": "fire",
+            "damage_class": "special",
+            "name": "Fire Blast",
+            "effect": "Has a 10% chance to burn the target."
+          },
+          {
+            "type": "fire",
+            "damage_class": "status",
+            "name": "Will-O-Wisp",
+            "effect": "Burns the target."
+          },
+          {
+            "power": 40,
+            "priority": 1,
+            "type": "normal",
+            "damage_class": "physical",
+            "name": "Quick Attack"
+          },
+          {
+            "power": 140,
+            "type": "normal",
+            "damage_class": "physical",
+            "name": "Last Resort",
+            "effect": "Can only be used after all of the user's other moves have been used."
+          }
+        ],
+        "ability": {
+          "name": "Flash Fire",
+          "effect": "Protects against fire moves.  Once one has been blocked, the Pokémon's own Fire moves inflict 1.5× damage until it leaves battle."
+        },
+        "sprite": "136",
+        "types": [
+          "fire"
+        ],
+        "stats": {
+          "hp": 65,
+          "atk": 130,
+          "def": 60,
+          "spa": 95,
+          "spd": 110,
+          "spe": 65
+        }
+      },
+      {
+        "name": "jolteon",
+        "level": "38",
+        "moves": [
+          {
+            "power": 90,
+            "type": "electric",
+            "damage_class": "special",
+            "name": "Thunderbolt",
+            "effect": "Has a 10% chance to paralyze the target."
+          },
+          {
+            "type": "electric",
+            "damage_class": "status",
+            "name": "Thunder Wave",
+            "effect": "Paralyzes the target."
+          },
+          {
+            "type": "normal",
+            "damage_class": "status",
+            "name": "Double Team",
+            "effect": "Raises the user's evasion by one stage."
+          },
+          {
+            "power": 140,
+            "type": "normal",
+            "damage_class": "physical",
+            "name": "Last Resort",
+            "effect": "Can only be used after all of the user's other moves have been used."
+          }
+        ],
+        "ability": {
+          "name": "Volt Absorb",
+          "effect": "Absorbs electric moves, healing for 1/4 max HP."
+        },
+        "sprite": "135",
+        "types": [
+          "electric"
+        ],
+        "stats": {
+          "hp": 65,
+          "atk": 65,
+          "def": 60,
+          "spa": 110,
+          "spd": 95,
+          "spe": 130
+        }
+      },
+      {
+        "name": "vaporeon",
+        "level": "38",
+        "moves": [
+          {
+            "power": 90,
+            "type": "water",
+            "damage_class": "special",
+            "name": "Surf",
+            "effect": "Inflicts regular damage and can hit Dive users."
+          },
+          {
+            "power": 65,
+            "type": "ice",
+            "damage_class": "special",
+            "name": "Aurora Beam",
+            "effect": "Has a 10% chance to lower the target's Attack by one stage."
+          },
+          {
+            "power": 40,
+            "priority": 1,
+            "type": "normal",
+            "damage_class": "physical",
+            "name": "Quick Attack"
+          },
+          {
+            "power": 140,
+            "type": "normal",
+            "damage_class": "physical",
+            "name": "Last Resort",
+            "effect": "Can only be used after all of the user's other moves have been used."
+          }
+        ],
+        "ability": {
+          "name": "Water Absorb",
+          "effect": "Absorbs water moves, healing for 1/4 max HP."
+        },
+        "sprite": "134",
+        "types": [
+          "water"
+        ],
+        "stats": {
+          "hp": 130,
+          "atk": 65,
+          "def": 60,
+          "spa": 110,
+          "spd": 95,
+          "spe": 65
+        }
+      }
+    ]
+  },
+  "li": {
+    "name": "Elder Li",
+    "speciality": "",
+    "img": "/leaders/gs-elderli",
+    "pokemon": [
+      {
+        "name": "bellsprout",
+        "level": "7",
+        "moves": [
+          {
+            "power": 45,
+            "type": "grass",
+            "damage_class": "physical",
+            "name": "Vine Whip"
+          },
+          {
+            "type": "normal",
+            "damage_class": "status",
+            "name": "Growth",
+            "effect": "Raises the user's Attack and Special Attack by one stage."
+          }
+        ],
+        "ability": {
+          "name": "Chlorophyll",
+          "effect": "Doubles Speed during strong sunlight."
+        },
+        "sprite": "69",
+        "types": [
+          "grass",
+          "poison"
+        ],
+        "stats": {
+          "hp": 50,
+          "atk": 75,
+          "def": 35,
+          "spa": 70,
+          "spd": 30,
+          "spe": 40
+        }
+      },
+      {
+        "name": "bellsprout",
+        "level": "7",
+        "moves": [
+          {
+            "power": 45,
+            "type": "grass",
+            "damage_class": "physical",
+            "name": "Vine Whip"
+          },
+          {
+            "type": "normal",
+            "damage_class": "status",
+            "name": "Growth",
+            "effect": "Raises the user's Attack and Special Attack by one stage."
+          }
+        ],
+        "ability": {
+          "name": "Chlorophyll",
+          "effect": "Doubles Speed during strong sunlight."
+        },
+        "sprite": "69",
+        "types": [
+          "grass",
+          "poison"
+        ],
+        "stats": {
+          "hp": 50,
+          "atk": 75,
+          "def": 35,
+          "spa": 70,
+          "spd": 30,
+          "spe": 40
+        }
+      },
+      {
+        "name": "hoothoot",
+        "level": "10",
+        "moves": [
+          {
+            "type": "normal",
+            "damage_class": "status",
+            "name": "Growl",
+            "effect": "Lowers the target's Attack by one stage."
+          },
+          {
+            "type": "psychic",
+            "damage_class": "status",
+            "name": "Hypnosis",
+            "effect": "Puts the target to sleep."
+          },
+          {
+            "power": 35,
+            "type": "flying",
+            "damage_class": "physical",
+            "name": "Peck"
+          }
+        ],
+        "ability": {
+          "name": "Insomnia",
+          "effect": "Prevents sleep."
+        },
+        "sprite": "163",
+        "types": [
+          "normal",
+          "flying"
+        ],
+        "stats": {
+          "hp": 60,
+          "atk": 30,
+          "def": 30,
+          "spa": 36,
+          "spd": 56,
+          "spe": 50
+        }
+      }
+    ]
+  },
   "petrel1": {
     "name": "Executive Petrel",
     "speciality": "",

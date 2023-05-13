@@ -32638,6 +32638,13 @@
       ]
     },
     {
+      "type": "gym",
+      "name": "Sprout Tower",
+      "value": "li",
+      "group": "mini-boss",
+      "boss": "Elder Li"
+    },
+    {
       "type": "route",
       "name": "Route 32",
       "encounters": [
@@ -33056,7 +33063,7 @@
       "type": "gym",
       "name": "Suicune Encounter",
       "value": "eusine",
-      "group": "rival",
+      "group": "mini-boss",
       "boss": "Eusine"
     },
     {
@@ -33452,6 +33459,13 @@
         "bidoof",
         "buizel"
       ]
+    },
+    {
+      "type": "gym",
+      "name": "Ecruteak City Dance Hall",
+      "value": "kimono",
+      "group": "mini-boss",
+      "boss": "Kimono Girls"
     },
     {
       "type": "route",
@@ -70409,6 +70423,13 @@
       ]
     },
     {
+      "type": "gym",
+      "name": "Sprout Tower",
+      "value": "li",
+      "group": "mini-boss",
+      "boss": "Elder Li"
+    },
+    {
       "type": "route",
       "name": "Route 32",
       "encounters": [
@@ -70827,7 +70848,7 @@
       "type": "gym",
       "name": "Suicune Encounter",
       "value": "eusine",
-      "group": "rival",
+      "group": "mini-boss",
       "boss": "Eusine"
     },
     {
@@ -71224,6 +71245,13 @@
         "bidoof",
         "buizel"
       ]
+    },
+    {
+      "type": "gym",
+      "name": "Ecruteak City Dance Hall",
+      "value": "kimono",
+      "group": "mini-boss",
+      "boss": "Kimono Girls"
     },
     {
       "type": "route",
