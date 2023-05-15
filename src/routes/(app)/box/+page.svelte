@@ -30,7 +30,7 @@
   } from '$lib/store'
 
   import { canonTypes as types } from '$lib/data/types'
-  import { stats, StatIconMap } from '$lib/data/stats'
+  import { stats, StatIconMap, StatLongMap } from '$lib/data/stats'
 
   import { UNOWN, createImgUrl } from '$utils/rewrites'
   import { toDb } from '$utils/link'
@@ -272,7 +272,6 @@
             >
               <Icon class="pl-1" height="1.2em" inline icon={X} />
               <span class="pl-0.5 pr-2 text-sm">Clear</span>
-              <Tooltip>Clear all filters</Tooltip>
             </IconButton>
 
             {#each stats as s}
@@ -291,6 +290,13 @@
                   name="sortable"
                   value={s}
                 />
+                {#if StatLongMap[s]}
+                  <Tooltip delay="1000"
+                    >Sort by highest {StatLongMap[s]}</Tooltip
+                  >
+                {:else}
+                  <Tooltip delay="1000">Sort by {s}</Tooltip>
+                {/if}
                 {#if StatIconMap[s]}
                   <Icon
                     inline={true}
@@ -327,6 +333,7 @@
                     type="radio"
                     name="filter"
                   />
+                  <Tooltip delay="1000">Filter to {t} types</Tooltip>
                   <TypeLogo
                     tooltip={false}
                     type={t}
@@ -352,6 +359,7 @@
                   class:opacity-50={type && !type.endsWith(d.id)}
                 >
                   <PIcon type="b" name={d.type || d.speciality || d.id} />
+                  <Tooltip delay="1000">Filter to team for {d.name}</Tooltip>
                   <input
                     bind:group={type}
                     type="radio"

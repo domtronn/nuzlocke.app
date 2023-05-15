@@ -1,5 +1,4 @@
-import { HP, Atk, Spa, Def, Spd, Spe } from '$icons';
-import { BarChart, Team, Fire } from '$icons'
+import { Atk, BarChart, Def, Fire, HP, Spa, Spd, Spe, Team } from '$icons'
 
 export const StatIconMap = {
   team: Team,
@@ -10,7 +9,17 @@ export const StatIconMap = {
   spa: Spa,
   def: Def,
   spd: Spd,
-  spe: Spe,
-};
+  spe: Spe
+}
 
-export const stats = Object.keys(StatIconMap);
+export const StatLongMap = {
+  total: 'Base Stat Total',
+  hp: 'HP',
+  atk: 'Attack',
+  spa: 'Special Attack',
+  spd: 'Special Defense',
+  def: 'Defense',
+  spe: 'Speed'
+}
+
+export const stats = Object.keys(StatIconMap)

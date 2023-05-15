@@ -1,5 +1,6 @@
 <script>
   import { onMount } from 'svelte'
+  export let delay = 50
 
   let loaded = false
   let tippy
@@ -17,6 +18,7 @@
       node.parentNode,
       Object.assign(
         {
+          delay: [delay, 0],
           allowHTML: true,
           content: node.innerHTML,
           onCreate() {
