@@ -20,21 +20,11 @@
   import { fly } from 'svelte/transition'
   import { createEventDispatcher } from 'svelte'
 
+  import { Events } from './events.ts'
+
   export const Types = {
     Custom: 'custom',
     Starter: 'starter'
-  }
-
-  export const Events = {
-    New: 'loc-new',
-    Hide: 'loc-hide',
-    Delete: 'loc-delete',
-    Kill: 'mon-kill',
-    Clear: 'clear',
-    Evolve: 'mon-evolve',
-    Capture: 'mon-capture',
-    AddTeam: 'team-add',
-    RemoveTeam: 'team-rem'
   }
 
   const dispatch = createEventDispatcher()
@@ -48,6 +38,7 @@
     inteam = false
 
   // Predicates
+
   const available = (id) => NuzlockeGroups.Available.includes(id)
   const showCapture = !pokemon?.hidden && !pokemon?.status
   const showKill = !pokemon?.hidden && available(pokemon?.status)

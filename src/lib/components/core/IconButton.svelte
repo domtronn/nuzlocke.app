@@ -33,7 +33,6 @@
     <slot name="icon" />
   {:else if src}
     <Icon
-      inline={true}
       class="m-2 fill-current grayscale group-hover:grayscale-0 {className}"
       icon={src}
     />

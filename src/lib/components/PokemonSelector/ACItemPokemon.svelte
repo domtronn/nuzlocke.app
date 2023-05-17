@@ -10,7 +10,7 @@
   const isdupe = dupelines.has(item?.evoline)
 </script>
 
-{#if slot === 'item'}
+{#if slot === 'option'}
   <span
     class="flex h-8 items-center px-4 py-5 md:py-6"
     class:hidden={dupes === 2 && isdupe}

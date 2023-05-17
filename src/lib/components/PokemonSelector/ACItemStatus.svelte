@@ -1,13 +1,13 @@
 <script>
   import { Icon } from '$c/core'
-  export let item, slot, iconClass, selected
+  export let option, slot, iconClass, selected
 </script>
 
-{#if slot === 'item'}
-  <button class="flex inline-flex items-center gap-x-2 px-3 py-2 md:py-3">
-    <Icon inline icon={item.icon} class="fill-current md:scale-125" />
+{#if slot === 'option'}
+  <div class="flex inline-flex items-center gap-x-2 px-3 py-2 md:py-3">
+    <Icon inline icon={option.icon} class="fill-current md:scale-125" />
     <slot />
-  </button>
+  </div>
 {:else if slot === 'icon' && selected}
   <Icon
     inline

@@ -2,8 +2,8 @@
   import { Icon } from '$c/core'
   import { Chevron } from '$icons'
 
-  export let item = {}
-  const [pos, neg] = item?.value || []
+  export let option = {}
+  const [pos, neg] = option?.value || []
 </script>
 
 <div
