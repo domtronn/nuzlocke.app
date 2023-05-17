@@ -120,7 +120,7 @@
 </script>
 
 <ul class="flex flex-col gap-y-0 lg:gap-y-2 {className}">
-  {#each filtered.slice(0, limit) as p, id (locid(p, id))}
+  {#each filtered as p, id (locid(p, id))}
     {#if showStarterRoute(p, filters, hideRoute)}
       <li
         class="flex items-center gap-x-2"
@@ -205,12 +205,6 @@
           type={p.group}
         />
       </li>
-    {/if}
-
-    {#if id === limit - 5}
-      <IntersectionObserver {element} on:intersect={inclimit}>
-        <li bind:this={element} />
-      </IntersectionObserver>
     {/if}
   {/each}
 </ul>
