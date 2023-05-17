@@ -204,10 +204,8 @@
   let statusComplete = false
   const handleStatus = (sid) => () => {
     const cb = (data) => {
-      if (sid === 5) {
-        handleTeamRemove()
-        death = data
-      }
+      if (NuzlockeGroups.Unavailable.includes(status?.id)) handleTeamRemove()
+      if (NuzlockeGroups.Dead.includes(status?.id)) death = data
 
       status = NuzlockeStates[sid]
       _animateStatus(sid)
@@ -321,10 +319,12 @@
           {:else}
             {@const fetchSearch = (search && search !== selected) || !suggest}
 
+
             <AutoCompleteV2
               inset={selected ? true : '2.4em'}
               itemF={(_) => (fetchSearch ? getAllPkmn() : encounterF())}
               max={fetchSearch ? 16 : (encounters || []).length}
+              on:change={(_) => (search = null)}
               bind:search
               bind:selected
               name="{location} Encounter"

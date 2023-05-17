@@ -19,7 +19,6 @@
   import StarterType from '$lib/components/starter-type.svelte'
   import GymCard from '$lib/components/gym-card.svelte'
   import PokemonSelector from '$lib/components/pokemon-selector.svelte'
-  import IntersectionObserver from 'svelte-intersection-observer'
 
   import {
     hideRouteF,
@@ -84,9 +83,8 @@
     game.store.update(patch({ __starter: starter }))
   }
 
-  let limit = 10
-  const inclimit = (_) => (limit = limit + 5)
-  export const resetlimit = (_) => (limit = 10)
+  export const setnav = (e) =>
+    setloc(`boss-${e.detail.value}`, e.detail.value + 20)
 
   export const setroute =
     ({ name, id }) =>

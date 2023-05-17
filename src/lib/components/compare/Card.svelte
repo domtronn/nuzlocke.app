@@ -18,7 +18,7 @@
 
   const sprite = (p, status) =>
     createImgUrl(
-      { imgId: p?.original?.sprite ?? p.imgId },
+      { imgId: p?.original?.sprite ?? p.imgId, imgUrl: p.imgUrl },
       { ext: 'png', shiny: status === 6 }
     )
 </script>

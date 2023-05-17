@@ -18,19 +18,18 @@
     pokemon: {
       name: ctx?.pokemon?.name,
       types: ctx?.pokemon?.types,
-      id: ctx?.pokemon?.alias,
+      id: ctx?.pokemon?.alias
     },
     location: {
       name: ctx?.location?.name
     }
   }
-
-
 </script>
 
-<slot name=label />
+<slot name="label" />
 
 <SharedLocation
+  route="route"
   placeholder={locPlaceholder}
   on:change={resetencounter}
   bind:selected={ctx.location}

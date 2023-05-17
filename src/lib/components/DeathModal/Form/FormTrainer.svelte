@@ -1,4 +1,6 @@
 <script>
+  import SharedLocation from './SharedLocation.svelte'
+
   import { Input, AutoComplete } from '$c/core'
   import { readdata } from '$lib/store'
   import { fetchTrainers } from '$utils/fetchers'
@@ -6,6 +8,7 @@
   import { slide } from 'svelte/transition'
 
   export let result = {}
+  export let locPlaceholder = 'Encounter location'
   export let classPlaceholder = 'Trainer type'
   export let namePlaceholder = 'Trainer name'
   export let pokePlaceholder = 'Opponent Pokémon'
@@ -20,6 +23,9 @@
       types: ctx?.pokemon?.types,
       id: ctx?.pokemon?.alias
     },
+    location: {
+      name: ctx?.location?.name
+    },
     trainer: {
       name: ctx?.name,
       type: ctx?.type
@@ -33,14 +39,20 @@
 
 <slot name="label" />
 
+<SharedLocation
+  route="any"
+  placeholder={locPlaceholder}
+  bind:selected={ctx.location}
+/>
+
 <div class="flex w-full gap-x-2">
   <AutoComplete
     bind:selected={ctx.type}
     class="flex-2"
     name={classPlaceholder}
     placeholder={classPlaceholder}
-    itemF={(_) => trainers}
-  >
+    itemF={(_) => trainers}>
+
     <span
       slot="item"
       let:label

@@ -174,16 +174,14 @@ export const readStarter = (data) => data.__starter || 'fire'
 
 export const readBox = (data) => {
   const customIdMap = toObj(data.__custom, 'id')
-  const customLocMap = toObj(data.__custom, 'name')
 
-  return Object.values(data)
-    .filter((i) => i.pokemon)
-    .filter(({ status }) => NuzlockeGroups.Available.includes(status))
-    .map((p) => {
+  return Object.entries(data)
+    .filter(([, i]) => i.pokemon)
+    .filter(([, { status }]) => NuzlockeGroups.Available.includes(status))
+    .map(([id, p]) => {
       // Read custom location data from data.__custom
       let custom
-      if (customIdMap?.[p.location]) custom = customIdMap?.[p.location]
-      else if (customLocMap?.[p.location]) custom = customLocMap?.[p.location]
+      if (customIdMap?.[id]) custom = customIdMap?.[id]
 
       return custom ? { ...p, customId: custom.id, customName: custom.name } : p
     })
@@ -437,86 +435,6 @@ export const trackData = () => {
   })
 }
 // --------
-
-const fixTeams = () => {
-  console.log('--------------------\tFixing broken teams')
-  activeGame.subscribe((gameId) => {
-    getGame(gameId).subscribe(
-      read((data) => {
-        const team = data.__team || []
-        if (team.length < 7) {
-          console.log(`--------------------\tDone! Nothing to fix`)
-          return
-        }
-
-        const temp = {
-          ...data,
-          __team: team.slice(0, 6)
-        }
-        console.log(`--------------------\tProposed new state`)
-        console.log(temp)
-        getGame(gameId).set(JSON.stringify(temp))
-      })
-    )
-  })
-}
-
-const fixDupes = () => {
-  console.log('--------------------\tFixing Dupes')
-  activeGame.subscribe((gameId) => {
-    getGame(gameId).subscribe(
-      read((data) => {
-        console.log('--------------------\tLoaded game data')
-        const dupeKeys = Object.values(
-          Object.entries(data)
-            .filter(([key]) => !key.startsWith('__'))
-            .reduce(
-              (acc, [key, val]) => ({
-                ...acc,
-                [val.id]: [].concat(acc[val.id] || []).concat(key)
-              }),
-              {}
-            )
-        ).filter((i) => i.length > 1)
-
-        if (!dupeKeys.length) {
-          console.log(`--------------------\tDone! Nothing to fix`)
-          return
-        }
-
-        console.log(
-          `--------------------\tFound ${dupeKeys.length} items to patch`
-        )
-        const temp = { ...data }
-        dupeKeys.forEach((keys) => {
-          keys.forEach((key) => {
-            if ((data.__custom || []).find((c) => c.id === key)) {
-              console.log(
-                `----------\tSubstituing`,
-                key,
-                'with',
-                data[keys[keys.length - 1]],
-                'from',
-                keys[keys.length - 1]
-              )
-              temp[key] = data[keys[keys.length - 1]]
-            } else {
-              console.log(`----------\tDeleting`, key)
-              delete temp[key]
-            }
-          })
-        })
-
-        console.log(`--------------------\tProposed new state`)
-        console.log(temp)
-        getGame(gameId).set(JSON.stringify(temp))
-      })
-    )
-  })
-}
-
-fixDupes()
-fixTeams()
 
 if (typeof window !== 'undefined')
   window.nz = {

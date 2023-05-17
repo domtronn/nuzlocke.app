@@ -23,15 +23,26 @@
   } from '$icons'
   import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
 
-  export let placeholder = 'Encounter location'
-
+  export let placeholder = 'Encounter location',
+    route = 'gym'
+  
   export let selected
   let routes = []
   onMount(() => {
     const [, key] = readdata()
-    fetchRoute(Games[key].pid).then(
-      (data = []) => (routes = data.filter((g) => g.type === 'gym'))
-    )
+
+    fetchRoute(Games[key].pid).then((data = []) => {
+      let seen = new Set()
+      return (routes = data.filter((g) => {
+        if (g.name === 'Starter') return false
+
+        if (seen.has(g.name)) return false
+        seen.add(g.name)
+
+        if (route === 'any') return true
+        else return g.type === route
+      }))
+    })
   })
 </script>
 
