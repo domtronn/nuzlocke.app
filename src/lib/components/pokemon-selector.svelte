@@ -324,7 +324,7 @@
             <AutoCompleteV2
               inset={selected ? true : '2.4em'}
               itemF={(_) => (fetchSearch ? getAllPkmn() : encounterF())}
-              max={fetchSearch ? 16 : encounters.length}
+              max={fetchSearch ? 16 : (encounters || []).length}
               bind:search
               bind:selected
               name="{location} Encounter"
