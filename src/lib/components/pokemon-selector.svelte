@@ -435,7 +435,7 @@
 
           <div
             on:click={handleStatus(option.id)}
-            class="flex inline-flex items-center gap-x-2 px-3 py-2 md:py-3"
+            class="inline-flex items-center py-2 pr-3 pl-1 md:py-3"
             slot="option"
             let:option
             let:label
@@ -443,7 +443,7 @@
             <Icon
               inline={true}
               icon={option.icon}
-              class="transform fill-current md:scale-125"
+              class="mr-2 transform fill-current md:scale-125"
             />
             {@html label}
           </div>
@@ -463,7 +463,7 @@
         : ''}"
     >
       <div
-        class="-mx-1 flex inline-flex w-full items-center justify-between px-5 py-2 md:px-3 md:py-3"
+        class="group -mx-1 flex inline-flex w-full items-center justify-between py-2 px-1 md:py-3"
         slot="option"
         let:option
         let:label
@@ -471,16 +471,16 @@
         <span>{@html label}</span>
         {#if option.value.length}
           <span
-            class="-my-4 -mr-3 flex items-end gap-x-2 text-tiny sm:flex-col sm:gap-x-0 sm:gap-y-1"
+            class="-my-4 -mr-3 flex items-end gap-x-2 text-tiny text-xs sm:flex-col sm:gap-x-0"
           >
             <span
-              class="inline-flex items-center justify-end text-orange-400 dark:text-orange-300"
+              class="inline-flex items-center justify-end text-orange-400 dark:group-hover:text-orange-800"
             >
               {option.value[0]}
               <Icon inline={true} icon={Chevron} class="fill-current" />
             </span>
             <span
-              class="inline-flex items-center text-blue-600 dark:text-blue-300"
+              class="inline-flex items-center text-blue-300 dark:group-hover:text-blue-600"
             >
               {option.value[1]}
               <Icon

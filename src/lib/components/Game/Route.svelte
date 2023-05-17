@@ -88,25 +88,20 @@
   const inclimit = (_) => (limit = limit + 5)
   export const resetlimit = (_) => (limit = 10)
 
-  export const setnav = (e) =>
-    setloc(`boss-${e.detail.value}`, e.detail.value + 20)
   export const setroute =
     ({ name, id }) =>
     () =>
       setloc(`route-${name}`, id + 10)
 
-  let scroll
+  let scroll, ulRef
   const scrollToItem = (id) => {
-    const offset = window.innerWidth < 700 ? 38 : 76
-    const y =
-      document.getElementById(id).getBoundingClientRect().top +
-      window.pageYOffset
-
-    window.scrollTo({ top: y - offset, behavior: 'smooth' })
+    document.getElementById(id).scrollIntoView({
+      behavior: 'smooth',
+      block: 'center'
+    })
   }
 
   const setloc = (id, i) => {
-    limit = Math.max(limit, i + 20)
     document.getElementById(id) ? scrollToItem(id) : (scroll = id)
   }
 
@@ -119,7 +114,7 @@
   })
 </script>
 
-<ul class="flex flex-col gap-y-0 lg:gap-y-2 {className}">
+<ul bind:this={ulRef} class="flex flex-col gap-y-0 lg:gap-y-2 {className}">
   {#each filtered as p, id (locid(p, id))}
     {#if showStarterRoute(p, filters, hideRoute)}
       <li

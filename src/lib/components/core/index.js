@@ -1,4 +1,4 @@
-export { default as AutoComplete } from './AutoComplete.svelte'
+export { default as AutoComplete } from './AutoCompleteV2.svelte'
 export { default as Input } from './Input.svelte'
 export { default as Button } from './Button.svelte'
 export { default as IconButton } from './IconButton.svelte'

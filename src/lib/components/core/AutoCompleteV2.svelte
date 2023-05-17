@@ -150,6 +150,7 @@
     {placeholder}
     bind:value={inputVal}
     bind:this={inputEl}
+    on:change
     on:input={change}
     on:focus={focus}
     on:click={focus}
@@ -271,7 +272,7 @@
     margin: 0;
     position: absolute;
     z-index: 4000;
-    bottom: -10px;
+    bottom: -8px;
     transform: translateY(100%);
 
     max-height: 420px;

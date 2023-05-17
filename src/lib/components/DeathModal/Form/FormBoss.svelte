@@ -95,11 +95,10 @@
   bind:selected={ctx.trainer}
   name={bossPlaceholder}
   placeholder={bossPlaceholder}
-  rounded
-  items={gyms}
-  label="boss"
+  itemF={(_) => gyms}
+  labelF={(_) => _.boss}
 >
-  <span class="item item--leader" slot="item" let:item let:label>
+  <span class="item item--leader" slot="option" let:option={item} let:label>
     <span>
       {@html label}
       {#if item.name.startsWith('Route')} on {item.name}{/if}
@@ -128,12 +127,11 @@
       bind:selected={ctx.opponent}
       name={pokePlaceholder}
       placeholder={pokePlaceholder}
-      rounded
-      items={opponents}
-      label="name"
+      itemF={(_) => opponents}
+      labelF={(_) => _.name}
       className="w-full"
     >
-      <span class="item" slot="item" let:item let:label>
+      <span class="item" slot="option" let:option={item} let:label>
         <span>{@html label}</span>
         <PIcon className="float-right -mr-4" name={item.alias} />
       </span>
@@ -148,12 +146,11 @@
       bind:selected={ctx.attack}
       name={movePlaceholder}
       placeholder={movePlaceholder}
-      rounded
-      items={ctx?.opponent.moves}
-      label="name"
-      className="w-full"
+      itemF={(_) => ctx?.opponent.moves}
+      labelF={(_) => _.name}
+      class="w-full"
     >
-      <span class="item" slot="item" let:item let:label>
+      <span class="item" slot="option" let:option={item} let:label>
         <span>{@html label}</span>
         <div class="inline-flex gap-x-1">
           <TypeBadge type={item.type} />
