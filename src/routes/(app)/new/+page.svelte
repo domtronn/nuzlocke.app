@@ -108,6 +108,7 @@
     />
 
     <AutoComplete
+      max={Object.keys(validGames).length}
       itemF={(_) => Object.keys(validGames)}
       labelF={(i) => i && Games[i].title}
       placeholder="Game"
