@@ -61,6 +61,15 @@
     )
   }
 
+  let greenscreen
+  $: greenscreen = document.documentElement.classList.contains('greenscreen')
+  $: if (greenscreen === true) {
+    document.documentElement.classList.add('greenscreen')
+  } else {
+    document.documentElement.classList.remove('greenscreen')
+  }
+
+
   const reset = () => {
     const [, , id] = readdata()
     const gameStore = getGameStore(id)
@@ -157,6 +166,15 @@
                 : ''}"
             />
           </div>
+        {:else if s.name === 'Greenscreen'}
+          <Toggle id='greenscreen' bind:state={greenscreen}>
+            <h2 class="text-base font-medium text-gray-900 dark:text-gray-50">
+              {s.name}
+            </h2>
+            <p class="mr-4 text-sm leading-4 text-gray-600 dark:text-gray-500">
+              {@html s.help}
+            </p>
+          </Toggle>
         {:else}
           <Toggle id={s.id} bind:state={s.state}>
             <h2 class="text-base font-medium text-gray-900 dark:text-gray-50">

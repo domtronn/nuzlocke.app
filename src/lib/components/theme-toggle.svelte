@@ -9,7 +9,7 @@
   export let className = ''
 
   const toggleTheme = (e) => {
-    if (e.metaKey)
+    if (e.altKey)
       return document.documentElement.classList.toggle('greenscreen')
 
     document.documentElement.classList.remove('greenscreen')
