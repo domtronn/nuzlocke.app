@@ -191,7 +191,7 @@
 
   <div class="mt-2 h-px w-full bg-gray-500 dark:bg-gray-500" />
 
-  <div class="mt-4 flex w-full justify-end gap-x-4">
+  <div class="mt-4 flex-col md:flex-row flex w-full justify-end gap-2 md:gap-4">
     <Button on:click={reset} rounded>Reset Run</Button>
     <Button on:click={resethidden} rounded>Reset Hidden locations</Button>
   </div>
