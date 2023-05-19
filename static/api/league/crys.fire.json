@@ -1038,557 +1038,62 @@
       }
     ]
   },
-  "r1": {
-    "name": "Silver",
+  "archer": {
+    "name": "Executive Archer",
     "speciality": "",
-    "img": "/leaders/gs-silver",
+    "img": "/leaders/gs-archer",
     "pokemon": [
       {
-        "name": "totodile",
-        "level": "5",
+        "name": "houndour",
+        "level": "33",
         "moves": [
+          {
+            "power": 60,
+            "type": "dark",
+            "damage_class": "special",
+            "name": "Feint Attack",
+            "effect": "Never misses."
+          },
+          {
+            "power": 60,
+            "type": "dark",
+            "damage_class": "special",
+            "name": "Bite",
+            "effect": "Has a 30% chance to make the target flinch."
+          },
           {
             "power": 40,
-            "type": "normal",
-            "damage_class": "physical",
-            "name": "Scratch"
+            "type": "fire",
+            "damage_class": "special",
+            "name": "Ember",
+            "effect": "Has a 10% chance to burn the target."
           },
           {
+            "priority": -6,
             "type": "normal",
             "damage_class": "status",
-            "name": "Leer",
-            "effect": "Lowers the target's Defense by one stage."
+            "name": "Roar",
+            "effect": "Immediately ends wild battles.  Forces trainers to switch Pokémon."
           }
         ],
-        "starter": "fire",
-        "sprite": "158",
+        "sprite": "228",
         "types": [
-          "water"
+          "dark",
+          "fire"
         ],
         "stats": {
-          "hp": 50,
-          "atk": 65,
-          "def": 64,
-          "spa": 44,
-          "spd": 48,
-          "spe": 43
-        }
-      }
-    ]
-  },
-  "r2": {
-    "name": "Silver",
-    "speciality": "",
-    "img": "/leaders/gs-silver",
-    "pokemon": [
-      {
-        "name": "gastly",
-        "level": "12",
-        "moves": [
-          {
-            "power": 30,
-            "type": "ghost",
-            "damage_class": "physical",
-            "name": "Lick",
-            "effect": "Has a 30% chance to paralyze the target."
-          },
-          {
-            "type": "ghost",
-            "damage_class": "status",
-            "name": "Spite",
-            "effect": "Lowers the PP of the target's last used move by 4."
-          },
-          {
-            "type": "psychic",
-            "damage_class": "status",
-            "name": "Hypnosis",
-            "effect": "Puts the target to sleep."
-          }
-        ],
-        "sprite": "92",
-        "types": [
-          "ghost",
-          "poison"
-        ],
-        "stats": {
-          "hp": 30,
-          "atk": 35,
+          "hp": 45,
+          "atk": 60,
           "def": 30,
-          "spa": 100,
-          "spd": 35,
-          "spe": 80
-        }
-      },
-      {
-        "name": "zubat",
-        "level": "14",
-        "moves": [
-          {
-            "power": 80,
-            "type": "bug",
-            "damage_class": "physical",
-            "name": "Leech Life",
-            "effect": "Drains half the damage inflicted to heal the user."
-          },
-          {
-            "type": "normal",
-            "damage_class": "status",
-            "name": "Supersonic",
-            "effect": "Confuses the target."
-          },
-          {
-            "power": 60,
-            "type": "dark",
-            "damage_class": "special",
-            "name": "Bite",
-            "effect": "Has a 30% chance to make the target flinch."
-          }
-        ],
-        "sprite": "41",
-        "types": [
-          "poison",
-          "flying"
-        ],
-        "stats": {
-          "hp": 40,
-          "atk": 45,
-          "def": 35,
-          "spa": 30,
-          "spd": 40,
-          "spe": 55
-        }
-      },
-      {
-        "name": "croconaw",
-        "level": "16",
-        "moves": [
-          {
-            "power": 40,
-            "type": "water",
-            "damage_class": "special",
-            "name": "Water Gun"
-          },
-          {
-            "power": 20,
-            "type": "normal",
-            "damage_class": "physical",
-            "name": "Rage",
-            "effect": "If the user is hit after using this move, its Attack rises by one stage."
-          },
-          {
-            "type": "normal",
-            "damage_class": "status",
-            "name": "Leer",
-            "effect": "Lowers the target's Defense by one stage."
-          },
-          {
-            "power": 40,
-            "type": "normal",
-            "damage_class": "physical",
-            "name": "Scratch"
-          }
-        ],
-        "starter": "fire",
-        "sprite": "159",
-        "types": [
-          "water"
-        ],
-        "stats": {
-          "hp": 65,
-          "atk": 80,
-          "def": 80,
-          "spa": 59,
-          "spd": 63,
-          "spe": 58
-        }
-      }
-    ]
-  },
-  "r3": {
-    "name": "Silver",
-    "speciality": "",
-    "img": "/leaders/gs-silver",
-    "pokemon": [
-      {
-        "name": "haunter",
-        "level": "20",
-        "moves": [
-          {
-            "power": 30,
-            "type": "ghost",
-            "damage_class": "physical",
-            "name": "Lick",
-            "effect": "Has a 30% chance to paralyze the target."
-          },
-          {
-            "type": "ghost",
-            "damage_class": "status",
-            "name": "Spite",
-            "effect": "Lowers the PP of the target's last used move by 4."
-          },
-          {
-            "type": "normal",
-            "damage_class": "status",
-            "name": "Mean Look",
-            "effect": "Prevents the target from leaving battle."
-          },
-          {
-            "type": "???",
-            "damage_class": "status",
-            "name": "Curse",
-            "effect": "Ghosts pay half their max HP to hurt the target every turn.  Others decrease Speed but raise Attack and Defense."
-          }
-        ],
-        "sprite": "93",
-        "types": [
-          "ghost",
-          "poison"
-        ],
-        "stats": {
-          "hp": 45,
-          "atk": 50,
-          "def": 45,
-          "spa": 115,
-          "spd": 55,
-          "spe": 95
-        }
-      },
-      {
-        "name": "magnemite",
-        "level": "18",
-        "moves": [
-          {
-            "power": 40,
-            "type": "electric",
-            "damage_class": "special",
-            "name": "Thunder Shock",
-            "effect": "Has a 10% chance to paralyze the target."
-          },
-          {
-            "type": "normal",
-            "damage_class": "status",
-            "name": "Supersonic",
-            "effect": "Confuses the target."
-          },
-          {
-            "type": "normal",
-            "damage_class": "physical",
-            "name": "Sonic Boom",
-            "effect": "Inflicts 20 points of damage."
-          },
-          {
-            "power": 40,
-            "type": "normal",
-            "damage_class": "physical",
-            "name": "Tackle"
-          }
-        ],
-        "sprite": "81",
-        "types": [
-          "electric",
-          "steel"
-        ],
-        "stats": {
-          "hp": 25,
-          "atk": 35,
-          "def": 70,
-          "spa": 95,
-          "spd": 55,
-          "spe": 45
-        }
-      },
-      {
-        "name": "zubat",
-        "level": "20",
-        "moves": [
-          {
-            "power": 80,
-            "type": "bug",
-            "damage_class": "physical",
-            "name": "Leech Life",
-            "effect": "Drains half the damage inflicted to heal the user."
-          },
-          {
-            "type": "normal",
-            "damage_class": "status",
-            "name": "Supersonic",
-            "effect": "Confuses the target."
-          },
-          {
-            "power": 60,
-            "type": "dark",
-            "damage_class": "special",
-            "name": "Bite",
-            "effect": "Has a 30% chance to make the target flinch."
-          },
-          {
-            "type": "ghost",
-            "damage_class": "status",
-            "name": "Confuse Ray",
-            "effect": "Confuses the target."
-          }
-        ],
-        "sprite": "41",
-        "types": [
-          "poison",
-          "flying"
-        ],
-        "stats": {
-          "hp": 40,
-          "atk": 45,
-          "def": 35,
-          "spa": 30,
-          "spd": 40,
-          "spe": 55
-        }
-      },
-      {
-        "name": "croconaw",
-        "level": "22",
-        "moves": [
-          {
-            "power": 40,
-            "type": "water",
-            "damage_class": "special",
-            "name": "Water Gun"
-          },
-          {
-            "power": 60,
-            "type": "dark",
-            "damage_class": "special",
-            "name": "Bite",
-            "effect": "Has a 30% chance to make the target flinch."
-          },
-          {
-            "power": 20,
-            "type": "normal",
-            "damage_class": "physical",
-            "name": "Rage",
-            "effect": "If the user is hit after using this move, its Attack rises by one stage."
-          },
-          {
-            "type": "normal",
-            "damage_class": "status",
-            "name": "Leer",
-            "effect": "Lowers the target's Defense by one stage."
-          }
-        ],
-        "starter": "fire",
-        "sprite": "159",
-        "types": [
-          "water"
-        ],
-        "stats": {
-          "hp": 65,
-          "atk": 80,
-          "def": 80,
-          "spa": 59,
-          "spd": 63,
-          "spe": 58
-        }
-      }
-    ]
-  },
-  "eusine": {
-    "name": "Eusine",
-    "speciality": "",
-    "img": "/leaders/gs-eusine",
-    "pokemon": [
-      {
-        "name": "drowzee",
-        "level": "25",
-        "moves": [
-          {
-            "type": "psychic",
-            "damage_class": "status",
-            "name": "Hypnosis",
-            "effect": "Puts the target to sleep."
-          },
-          {
-            "type": "normal",
-            "damage_class": "status",
-            "name": "Disable",
-            "effect": "Disables the target's last used move for 1-8 turns."
-          },
-          {
-            "power": 50,
-            "type": "psychic",
-            "damage_class": "special",
-            "name": "Confusion",
-            "effect": "Has a 10% chance to confuse the target."
-          },
-          {
-            "power": 100,
-            "type": "psychic",
-            "damage_class": "special",
-            "name": "Dream Eater",
-            "effect": "Only works on sleeping Pokémon.  Drains half the damage inflicted to heal the user."
-          }
-        ],
-        "sprite": "96",
-        "types": [
-          "psychic"
-        ],
-        "stats": {
-          "hp": 60,
-          "atk": 48,
-          "def": 45,
-          "spa": 43,
-          "spd": 90,
-          "spe": 42
-        }
-      },
-      {
-        "name": "haunter",
-        "level": "25",
-        "moves": [
-          {
-            "type": "psychic",
-            "damage_class": "status",
-            "name": "Hypnosis",
-            "effect": "Puts the target to sleep."
-          },
-          {
-            "power": 30,
-            "type": "ghost",
-            "damage_class": "physical",
-            "name": "Lick",
-            "effect": "Has a 30% chance to paralyze the target."
-          },
-          {
-            "type": "normal",
-            "damage_class": "status",
-            "name": "Mean Look",
-            "effect": "Prevents the target from leaving battle."
-          },
-          {
-            "type": "???",
-            "damage_class": "status",
-            "name": "Curse",
-            "effect": "Ghosts pay half their max HP to hurt the target every turn.  Others decrease Speed but raise Attack and Defense."
-          }
-        ],
-        "sprite": "93",
-        "types": [
-          "ghost",
-          "poison"
-        ],
-        "stats": {
-          "hp": 45,
-          "atk": 50,
-          "def": 45,
-          "spa": 115,
-          "spd": 55,
-          "spe": 95
-        }
-      },
-      {
-        "name": "electrode",
-        "level": "27",
-        "moves": [
-          {
-            "type": "normal",
-            "damage_class": "physical",
-            "name": "Sonic Boom",
-            "effect": "Inflicts 20 points of damage."
-          },
-          {
-            "power": 30,
-            "type": "rock",
-            "damage_class": "physical",
-            "name": "Rollout",
-            "effect": "Power doubles every turn this move is used in succession after the first, resetting after five turns."
-          },
-          {
-            "type": "normal",
-            "damage_class": "status",
-            "name": "Screech",
-            "effect": "Lowers the target's Defense by two stages."
-          },
-          {
-            "power": 110,
-            "type": "electric",
-            "damage_class": "special",
-            "name": "Thunder",
-            "effect": "Has a 30% chance to paralyze the target."
-          }
-        ],
-        "sprite": "101",
-        "types": [
-          "electric"
-        ],
-        "stats": {
-          "hp": 60,
-          "atk": 50,
-          "def": 70,
           "spa": 80,
-          "spd": 80,
-          "spe": 150
-        }
-      }
-    ]
-  },
-  "petrel1": {
-    "name": "Executive Petrel",
-    "speciality": "",
-    "img": "/leaders/gs-petrel",
-    "pokemon": [
-      {
-        "name": "zubat",
-        "level": "22",
-        "moves": [
-          {
-            "power": 80,
-            "type": "bug",
-            "damage_class": "physical",
-            "name": "Leech Life",
-            "effect": "Drains half the damage inflicted to heal the user."
-          },
-          {
-            "power": 60,
-            "type": "dark",
-            "damage_class": "special",
-            "name": "Bite",
-            "effect": "Has a 30% chance to make the target flinch."
-          },
-          {
-            "type": "normal",
-            "damage_class": "status",
-            "name": "Supersonic",
-            "effect": "Confuses the target."
-          },
-          {
-            "type": "ghost",
-            "damage_class": "status",
-            "name": "Confuse Ray",
-            "effect": "Confuses the target."
-          }
-        ],
-        "sprite": "41",
-        "types": [
-          "poison",
-          "flying"
-        ],
-        "stats": {
-          "hp": 40,
-          "atk": 45,
-          "def": 35,
-          "spa": 30,
-          "spd": 40,
-          "spe": 55
+          "spd": 50,
+          "spe": 65
         }
       },
       {
         "name": "koffing",
-        "level": "22",
+        "level": "33",
         "moves": [
-          {
-            "power": 30,
-            "type": "poison",
-            "damage_class": "physical",
-            "name": "Smog",
-            "effect": "Has a 40% chance to poison the target."
-          },
           {
             "power": 65,
             "type": "poison",
@@ -1597,17 +1102,22 @@
             "effect": "Has a 30% chance to poison the target."
           },
           {
+            "type": "normal",
+            "damage_class": "status",
+            "name": "Smokescreen",
+            "effect": "Lowers the target's accuracy by one stage."
+          },
+          {
             "power": 40,
             "type": "normal",
             "damage_class": "physical",
             "name": "Tackle"
           },
           {
-            "power": 200,
-            "type": "normal",
-            "damage_class": "physical",
-            "name": "Self-Destruct",
-            "effect": "User faints."
+            "type": "ice",
+            "damage_class": "status",
+            "name": "Haze",
+            "effect": "Resets all Pokémon's stats, accuracy, and evasion."
           }
         ],
         "sprite": "109",
@@ -1624,47 +1134,50 @@
         }
       },
       {
-        "name": "raticate",
-        "level": "24",
+        "name": "houndoom",
+        "level": "35",
         "moves": [
           {
-            "power": 80,
-            "type": "normal",
-            "damage_class": "physical",
-            "name": "Hyper Fang",
-            "effect": "Has a 10% chance to make the target flinch."
+            "power": 60,
+            "type": "dark",
+            "damage_class": "special",
+            "name": "Feint Attack",
+            "effect": "Never misses."
+          },
+          {
+            "power": 60,
+            "type": "dark",
+            "damage_class": "special",
+            "name": "Bite",
+            "effect": "Has a 30% chance to make the target flinch."
           },
           {
             "power": 40,
-            "priority": 1,
-            "type": "normal",
+            "type": "fire",
+            "damage_class": "special",
+            "name": "Ember",
+            "effect": "Has a 10% chance to burn the target."
+          },
+          {
+            "power": 30,
+            "type": "poison",
             "damage_class": "physical",
-            "name": "Quick Attack"
-          },
-          {
-            "type": "normal",
-            "damage_class": "status",
-            "name": "Scary Face",
-            "effect": "Lowers the target's Speed by two stages."
-          },
-          {
-            "type": "normal",
-            "damage_class": "status",
-            "name": "Tail Whip",
-            "effect": "Lowers the target's Defense by one stage."
+            "name": "Smog",
+            "effect": "Has a 40% chance to poison the target."
           }
         ],
-        "sprite": "20",
+        "sprite": "229",
         "types": [
-          "normal"
+          "dark",
+          "fire"
         ],
         "stats": {
-          "hp": 55,
-          "atk": 81,
-          "def": 60,
-          "spa": 50,
-          "spd": 70,
-          "spe": 97
+          "hp": 75,
+          "atk": 90,
+          "def": 50,
+          "spa": 110,
+          "spd": 80,
+          "spe": 95
         }
       }
     ]
@@ -1800,560 +1313,6 @@
           "spa": 85,
           "spd": 42,
           "spe": 91
-        }
-      }
-    ]
-  },
-  "r4": {
-    "name": "Silver",
-    "speciality": "",
-    "img": "/leaders/gs-silver",
-    "pokemon": [
-      {
-        "name": "golbat",
-        "level": "30",
-        "moves": [
-          {
-            "power": 60,
-            "type": "flying",
-            "damage_class": "physical",
-            "name": "Wing Attack"
-          },
-          {
-            "type": "ghost",
-            "damage_class": "status",
-            "name": "Confuse Ray",
-            "effect": "Confuses the target."
-          },
-          {
-            "power": 60,
-            "type": "dark",
-            "damage_class": "special",
-            "name": "Bite",
-            "effect": "Has a 30% chance to make the target flinch."
-          },
-          {
-            "power": 80,
-            "type": "bug",
-            "damage_class": "physical",
-            "name": "Leech Life",
-            "effect": "Drains half the damage inflicted to heal the user."
-          }
-        ],
-        "sprite": "42",
-        "types": [
-          "poison",
-          "flying"
-        ],
-        "stats": {
-          "hp": 75,
-          "atk": 80,
-          "def": 70,
-          "spa": 65,
-          "spd": 75,
-          "spe": 90
-        }
-      },
-      {
-        "name": "magnemite",
-        "level": "28",
-        "moves": [
-          {
-            "type": "electric",
-            "damage_class": "status",
-            "name": "Thunder Wave",
-            "effect": "Paralyzes the target."
-          },
-          {
-            "power": 40,
-            "type": "electric",
-            "damage_class": "special",
-            "name": "Thunder Shock",
-            "effect": "Has a 10% chance to paralyze the target."
-          },
-          {
-            "power": 40,
-            "type": "normal",
-            "damage_class": "physical",
-            "name": "Tackle"
-          },
-          {
-            "type": "normal",
-            "damage_class": "physical",
-            "name": "Sonic Boom",
-            "effect": "Inflicts 20 points of damage."
-          }
-        ],
-        "sprite": "81",
-        "types": [
-          "electric",
-          "steel"
-        ],
-        "stats": {
-          "hp": 25,
-          "atk": 35,
-          "def": 70,
-          "spa": 95,
-          "spd": 55,
-          "spe": 45
-        }
-      },
-      {
-        "name": "haunter",
-        "level": "30",
-        "moves": [
-          {
-            "power": 80,
-            "type": "ghost",
-            "damage_class": "physical",
-            "name": "Shadow Ball",
-            "effect": "Has a 20% chance to lower the target's Special Defense by one stage."
-          },
-          {
-            "power": 30,
-            "type": "ghost",
-            "damage_class": "physical",
-            "name": "Lick",
-            "effect": "Has a 30% chance to paralyze the target."
-          },
-          {
-            "type": "???",
-            "damage_class": "status",
-            "name": "Curse",
-            "effect": "Ghosts pay half their max HP to hurt the target every turn.  Others decrease Speed but raise Attack and Defense."
-          },
-          {
-            "type": "normal",
-            "damage_class": "status",
-            "name": "Mean Look",
-            "effect": "Prevents the target from leaving battle."
-          }
-        ],
-        "sprite": "93",
-        "types": [
-          "ghost",
-          "poison"
-        ],
-        "stats": {
-          "hp": 45,
-          "atk": 50,
-          "def": 45,
-          "spa": 115,
-          "spd": 55,
-          "spe": 95
-        }
-      },
-      {
-        "name": "sneasel",
-        "level": "32",
-        "moves": [
-          {
-            "power": 60,
-            "type": "dark",
-            "damage_class": "special",
-            "name": "Feint Attack",
-            "effect": "Never misses."
-          },
-          {
-            "power": 40,
-            "priority": 1,
-            "type": "normal",
-            "damage_class": "physical",
-            "name": "Quick Attack"
-          },
-          {
-            "type": "normal",
-            "damage_class": "status",
-            "name": "Leer",
-            "effect": "Lowers the target's Defense by one stage."
-          },
-          {
-            "type": "normal",
-            "damage_class": "status",
-            "name": "Screech",
-            "effect": "Lowers the target's Defense by two stages."
-          }
-        ],
-        "sprite": "215",
-        "types": [
-          "dark",
-          "ice"
-        ],
-        "stats": {
-          "hp": 55,
-          "atk": 95,
-          "def": 55,
-          "spa": 35,
-          "spd": 75,
-          "spe": 115
-        }
-      },
-      {
-        "name": "feraligatr",
-        "level": "32",
-        "moves": [
-          {
-            "power": 40,
-            "type": "water",
-            "damage_class": "special",
-            "name": "Water Gun"
-          },
-          {
-            "power": 60,
-            "type": "dark",
-            "damage_class": "special",
-            "name": "Bite",
-            "effect": "Has a 30% chance to make the target flinch."
-          },
-          {
-            "power": 20,
-            "type": "normal",
-            "damage_class": "physical",
-            "name": "Rage",
-            "effect": "If the user is hit after using this move, its Attack rises by one stage."
-          },
-          {
-            "type": "normal",
-            "damage_class": "status",
-            "name": "Scary Face",
-            "effect": "Lowers the target's Speed by two stages."
-          }
-        ],
-        "starter": "fire",
-        "sprite": "160",
-        "types": [
-          "water"
-        ],
-        "stats": {
-          "hp": 85,
-          "atk": 105,
-          "def": 100,
-          "spa": 79,
-          "spd": 83,
-          "spe": 78
-        }
-      }
-    ]
-  },
-  "petrel2": {
-    "name": "Executive Petrel",
-    "speciality": "",
-    "img": "/leaders/gs-petrel",
-    "pokemon": [
-      {
-        "name": "koffing",
-        "level": "30",
-        "moves": [
-          {
-            "power": 65,
-            "type": "poison",
-            "damage_class": "physical",
-            "name": "Sludge",
-            "effect": "Has a 30% chance to poison the target."
-          },
-          {
-            "type": "normal",
-            "damage_class": "status",
-            "name": "Smokescreen",
-            "effect": "Lowers the target's accuracy by one stage."
-          },
-          {
-            "power": 200,
-            "type": "normal",
-            "damage_class": "physical",
-            "name": "Self-Destruct",
-            "effect": "User faints."
-          },
-          {
-            "power": 40,
-            "type": "normal",
-            "damage_class": "physical",
-            "name": "Tackle"
-          }
-        ],
-        "sprite": "109",
-        "types": [
-          "poison"
-        ],
-        "stats": {
-          "hp": 40,
-          "atk": 65,
-          "def": 95,
-          "spa": 60,
-          "spd": 45,
-          "spe": 35
-        }
-      },
-      {
-        "name": "koffing",
-        "level": "30",
-        "moves": [
-          {
-            "power": 65,
-            "type": "poison",
-            "damage_class": "physical",
-            "name": "Sludge",
-            "effect": "Has a 30% chance to poison the target."
-          },
-          {
-            "type": "normal",
-            "damage_class": "status",
-            "name": "Smokescreen",
-            "effect": "Lowers the target's accuracy by one stage."
-          },
-          {
-            "power": 200,
-            "type": "normal",
-            "damage_class": "physical",
-            "name": "Self-Destruct",
-            "effect": "User faints."
-          },
-          {
-            "power": 40,
-            "type": "normal",
-            "damage_class": "physical",
-            "name": "Tackle"
-          }
-        ],
-        "sprite": "109",
-        "types": [
-          "poison"
-        ],
-        "stats": {
-          "hp": 40,
-          "atk": 65,
-          "def": 95,
-          "spa": 60,
-          "spd": 45,
-          "spe": 35
-        }
-      },
-      {
-        "name": "koffing",
-        "level": "30",
-        "moves": [
-          {
-            "power": 65,
-            "type": "poison",
-            "damage_class": "physical",
-            "name": "Sludge",
-            "effect": "Has a 30% chance to poison the target."
-          },
-          {
-            "type": "normal",
-            "damage_class": "status",
-            "name": "Smokescreen",
-            "effect": "Lowers the target's accuracy by one stage."
-          },
-          {
-            "power": 200,
-            "type": "normal",
-            "damage_class": "physical",
-            "name": "Self-Destruct",
-            "effect": "User faints."
-          },
-          {
-            "power": 40,
-            "type": "normal",
-            "damage_class": "physical",
-            "name": "Tackle"
-          }
-        ],
-        "sprite": "109",
-        "types": [
-          "poison"
-        ],
-        "stats": {
-          "hp": 40,
-          "atk": 65,
-          "def": 95,
-          "spa": 60,
-          "spd": 45,
-          "spe": 35
-        }
-      },
-      {
-        "name": "koffing",
-        "level": "30",
-        "moves": [
-          {
-            "power": 65,
-            "type": "poison",
-            "damage_class": "physical",
-            "name": "Sludge",
-            "effect": "Has a 30% chance to poison the target."
-          },
-          {
-            "type": "normal",
-            "damage_class": "status",
-            "name": "Smokescreen",
-            "effect": "Lowers the target's accuracy by one stage."
-          },
-          {
-            "power": 200,
-            "type": "normal",
-            "damage_class": "physical",
-            "name": "Self-Destruct",
-            "effect": "User faints."
-          },
-          {
-            "power": 40,
-            "type": "normal",
-            "damage_class": "physical",
-            "name": "Tackle"
-          }
-        ],
-        "sprite": "109",
-        "types": [
-          "poison"
-        ],
-        "stats": {
-          "hp": 40,
-          "atk": 65,
-          "def": 95,
-          "spa": 60,
-          "spd": 45,
-          "spe": 35
-        }
-      },
-      {
-        "name": "koffing",
-        "level": "30",
-        "moves": [
-          {
-            "power": 65,
-            "type": "poison",
-            "damage_class": "physical",
-            "name": "Sludge",
-            "effect": "Has a 30% chance to poison the target."
-          },
-          {
-            "type": "normal",
-            "damage_class": "status",
-            "name": "Smokescreen",
-            "effect": "Lowers the target's accuracy by one stage."
-          },
-          {
-            "power": 200,
-            "type": "normal",
-            "damage_class": "physical",
-            "name": "Self-Destruct",
-            "effect": "User faints."
-          },
-          {
-            "power": 40,
-            "type": "normal",
-            "damage_class": "physical",
-            "name": "Tackle"
-          }
-        ],
-        "sprite": "109",
-        "types": [
-          "poison"
-        ],
-        "stats": {
-          "hp": 40,
-          "atk": 65,
-          "def": 95,
-          "spa": 60,
-          "spd": 45,
-          "spe": 35
-        }
-      },
-      {
-        "name": "weezing",
-        "level": "32",
-        "moves": [
-          {
-            "power": 40,
-            "type": "normal",
-            "damage_class": "physical",
-            "name": "Tackle"
-          },
-          {
-            "power": 65,
-            "type": "poison",
-            "damage_class": "physical",
-            "name": "Sludge",
-            "effect": "Has a 30% chance to poison the target."
-          },
-          {
-            "type": "normal",
-            "damage_class": "status",
-            "name": "Smokescreen",
-            "effect": "Lowers the target's accuracy by one stage."
-          },
-          {
-            "power": 250,
-            "type": "normal",
-            "damage_class": "physical",
-            "name": "Explosion",
-            "effect": "User faints."
-          }
-        ],
-        "sprite": "110",
-        "types": [
-          "poison"
-        ],
-        "stats": {
-          "hp": 65,
-          "atk": 90,
-          "def": 120,
-          "spa": 85,
-          "spd": 70,
-          "spe": 60
-        }
-      }
-    ]
-  },
-  "proton": {
-    "name": "Executive Proton",
-    "speciality": "",
-    "img": "/leaders/gs-proton",
-    "pokemon": [
-      {
-        "name": "golbat",
-        "level": "36",
-        "moves": [
-          {
-            "power": 60,
-            "type": "flying",
-            "damage_class": "physical",
-            "name": "Wing Attack"
-          },
-          {
-            "type": "ghost",
-            "damage_class": "status",
-            "name": "Confuse Ray",
-            "effect": "Confuses the target."
-          },
-          {
-            "power": 80,
-            "type": "bug",
-            "damage_class": "physical",
-            "name": "Leech Life",
-            "effect": "Drains half the damage inflicted to heal the user."
-          },
-          {
-            "power": 60,
-            "type": "dark",
-            "damage_class": "special",
-            "name": "Bite",
-            "effect": "Has a 30% chance to make the target flinch."
-          }
-        ],
-        "sprite": "42",
-        "types": [
-          "poison",
-          "flying"
-        ],
-        "stats": {
-          "hp": 75,
-          "atk": 80,
-          "def": 70,
-          "spa": 65,
-          "spd": 75,
-          "spe": 90
         }
       }
     ]
@@ -2499,250 +1458,68 @@
       }
     ]
   },
-  "archer": {
-    "name": "Executive Archer",
-    "speciality": "",
-    "img": "/leaders/gs-archer",
+  "c": {
+    "name": "Lance",
+    "speciality": "dragon",
+    "img": "/leaders/gs-lance",
     "pokemon": [
       {
-        "name": "houndour",
-        "level": "33",
+        "name": "gyarados",
+        "level": "44",
         "moves": [
           {
-            "power": 60,
-            "type": "dark",
-            "damage_class": "special",
-            "name": "Feint Attack",
-            "effect": "Never misses."
-          },
-          {
-            "power": 60,
-            "type": "dark",
-            "damage_class": "special",
-            "name": "Bite",
-            "effect": "Has a 30% chance to make the target flinch."
-          },
-          {
-            "power": 40,
-            "type": "fire",
-            "damage_class": "special",
-            "name": "Ember",
-            "effect": "Has a 10% chance to burn the target."
-          },
-          {
-            "priority": -6,
-            "type": "normal",
+            "type": "water",
             "damage_class": "status",
-            "name": "Roar",
-            "effect": "Immediately ends wild battles.  Forces trainers to switch Pokémon."
-          }
-        ],
-        "sprite": "228",
-        "types": [
-          "dark",
-          "fire"
-        ],
-        "stats": {
-          "hp": 45,
-          "atk": 60,
-          "def": 30,
-          "spa": 80,
-          "spd": 50,
-          "spe": 65
-        }
-      },
-      {
-        "name": "koffing",
-        "level": "33",
-        "moves": [
-          {
-            "power": 65,
-            "type": "poison",
-            "damage_class": "physical",
-            "name": "Sludge",
-            "effect": "Has a 30% chance to poison the target."
+            "name": "Rain Dance",
+            "effect": "Changes the weather to rain for five turns."
           },
           {
-            "type": "normal",
-            "damage_class": "status",
-            "name": "Smokescreen",
-            "effect": "Lowers the target's accuracy by one stage."
+            "power": 90,
+            "type": "water",
+            "damage_class": "special",
+            "name": "Surf",
+            "effect": "Inflicts regular damage and can hit Dive users."
           },
           {
-            "power": 40,
-            "type": "normal",
-            "damage_class": "physical",
-            "name": "Tackle"
-          },
-          {
+            "power": 110,
             "type": "ice",
-            "damage_class": "status",
-            "name": "Haze",
-            "effect": "Resets all Pokémon's stats, accuracy, and evasion."
-          }
-        ],
-        "sprite": "109",
-        "types": [
-          "poison"
-        ],
-        "stats": {
-          "hp": 40,
-          "atk": 65,
-          "def": 95,
-          "spa": 60,
-          "spd": 45,
-          "spe": 35
-        }
-      },
-      {
-        "name": "houndoom",
-        "level": "35",
-        "moves": [
-          {
-            "power": 60,
-            "type": "dark",
             "damage_class": "special",
-            "name": "Feint Attack",
-            "effect": "Never misses."
+            "name": "Blizzard",
+            "effect": "Has a 10% chance to freeze the target."
           },
           {
-            "power": 60,
-            "type": "dark",
-            "damage_class": "special",
-            "name": "Bite",
-            "effect": "Has a 30% chance to make the target flinch."
-          },
-          {
-            "power": 40,
-            "type": "fire",
-            "damage_class": "special",
-            "name": "Ember",
-            "effect": "Has a 10% chance to burn the target."
-          },
-          {
-            "power": 30,
-            "type": "poison",
-            "damage_class": "physical",
-            "name": "Smog",
-            "effect": "Has a 40% chance to poison the target."
-          }
-        ],
-        "sprite": "229",
-        "types": [
-          "dark",
-          "fire"
-        ],
-        "stats": {
-          "hp": 75,
-          "atk": 90,
-          "def": 50,
-          "spa": 110,
-          "spd": 80,
-          "spe": 95
-        }
-      }
-    ]
-  },
-  "r5": {
-    "name": "Silver",
-    "speciality": "",
-    "img": "/leaders/gs-silver",
-    "pokemon": [
-      {
-        "name": "sneasel",
-        "level": "34",
-        "moves": [
-          {
-            "power": 60,
-            "type": "dark",
-            "damage_class": "special",
-            "name": "Feint Attack",
-            "effect": "Never misses."
-          },
-          {
-            "power": 40,
-            "priority": 1,
+            "power": 150,
             "type": "normal",
             "damage_class": "physical",
-            "name": "Quick Attack"
-          },
-          {
-            "type": "normal",
-            "damage_class": "status",
-            "name": "Screech",
-            "effect": "Lowers the target's Defense by two stages."
-          },
-          {
-            "power": 40,
-            "type": "bug",
-            "damage_class": "physical",
-            "name": "Fury Cutter",
-            "effect": "Power doubles every turn this move is used in succession after the first, maxing out after five turns."
+            "name": "Hyper Beam",
+            "effect": "User foregoes its next turn to recharge."
           }
         ],
-        "sprite": "215",
+        "sprite": "130",
         "types": [
-          "dark",
-          "ice"
-        ],
-        "stats": {
-          "hp": 55,
-          "atk": 95,
-          "def": 55,
-          "spa": 35,
-          "spd": 75,
-          "spe": 115
-        }
-      },
-      {
-        "name": "golbat",
-        "level": "36",
-        "moves": [
-          {
-            "power": 60,
-            "type": "flying",
-            "damage_class": "physical",
-            "name": "Wing Attack"
-          },
-          {
-            "type": "ghost",
-            "damage_class": "status",
-            "name": "Confuse Ray",
-            "effect": "Confuses the target."
-          },
-          {
-            "power": 60,
-            "type": "dark",
-            "damage_class": "special",
-            "name": "Bite",
-            "effect": "Has a 30% chance to make the target flinch."
-          },
-          {
-            "power": 80,
-            "type": "bug",
-            "damage_class": "physical",
-            "name": "Leech Life",
-            "effect": "Drains half the damage inflicted to heal the user."
-          }
-        ],
-        "sprite": "42",
-        "types": [
-          "poison",
+          "water",
           "flying"
         ],
         "stats": {
-          "hp": 75,
-          "atk": 80,
-          "def": 70,
-          "spa": 65,
-          "spd": 75,
-          "spe": 90
+          "hp": 95,
+          "atk": 125,
+          "def": 79,
+          "spa": 60,
+          "spd": 100,
+          "spe": 81
         }
       },
       {
-        "name": "magneton",
-        "level": "35",
+        "name": "dragonite",
+        "level": "47",
         "moves": [
+          {
+            "power": 40,
+            "type": "dragon",
+            "damage_class": "special",
+            "name": "Twister",
+            "effect": "Has a 20% chance to make the target flinch."
+          },
           {
             "type": "electric",
             "damage_class": "status",
@@ -2750,150 +1527,44 @@
             "effect": "Paralyzes the target."
           },
           {
-            "power": 40,
-            "type": "electric",
+            "power": 110,
+            "type": "ice",
             "damage_class": "special",
-            "name": "Thunder Shock",
-            "effect": "Has a 10% chance to paralyze the target."
+            "name": "Blizzard",
+            "effect": "Has a 10% chance to freeze the target."
           },
           {
+            "power": 150,
             "type": "normal",
             "damage_class": "physical",
-            "name": "Sonic Boom",
-            "effect": "Inflicts 20 points of damage."
-          },
-          {
-            "power": 60,
-            "type": "normal",
-            "damage_class": "physical",
-            "name": "Swift",
-            "effect": "Never misses."
+            "name": "Hyper Beam",
+            "effect": "User foregoes its next turn to recharge."
           }
         ],
-        "sprite": "82",
+        "sprite": "149",
         "types": [
-          "electric",
-          "steel"
+          "dragon",
+          "flying"
         ],
         "stats": {
-          "hp": 50,
-          "atk": 60,
+          "hp": 91,
+          "atk": 134,
           "def": 95,
-          "spa": 120,
-          "spd": 70,
-          "spe": 70
+          "spa": 100,
+          "spd": 100,
+          "spe": 80
         }
       },
       {
-        "name": "haunter",
-        "level": "35",
+        "name": "charizard",
+        "level": "46",
         "moves": [
           {
-            "power": 80,
-            "type": "ghost",
-            "damage_class": "physical",
-            "name": "Shadow Ball",
-            "effect": "Has a 20% chance to lower the target's Special Defense by one stage."
-          },
-          {
-            "type": "ghost",
-            "damage_class": "status",
-            "name": "Confuse Ray",
-            "effect": "Confuses the target."
-          },
-          {
-            "type": "normal",
-            "damage_class": "status",
-            "name": "Mean Look",
-            "effect": "Prevents the target from leaving battle."
-          },
-          {
-            "type": "???",
-            "damage_class": "status",
-            "name": "Curse",
-            "effect": "Ghosts pay half their max HP to hurt the target every turn.  Others decrease Speed but raise Attack and Defense."
-          }
-        ],
-        "sprite": "93",
-        "types": [
-          "ghost",
-          "poison"
-        ],
-        "stats": {
-          "hp": 45,
-          "atk": 50,
-          "def": 45,
-          "spa": 115,
-          "spd": 55,
-          "spe": 95
-        }
-      },
-      {
-        "name": "kadabra",
-        "level": "35",
-        "moves": [
-          {
-            "type": "normal",
-            "damage_class": "status",
-            "name": "Recover",
-            "effect": "Heals the user by half its max HP."
-          },
-          {
-            "type": "normal",
-            "damage_class": "status",
-            "name": "Disable",
-            "effect": "Disables the target's last used move for 1-8 turns."
-          },
-          {
-            "power": 65,
-            "type": "psychic",
+            "power": 90,
+            "type": "fire",
             "damage_class": "special",
-            "name": "Psybeam",
-            "effect": "Has a 10% chance to confuse the target."
-          },
-          {
-            "power": 120,
-            "type": "psychic",
-            "damage_class": "special",
-            "name": "Future Sight",
-            "effect": "Hits the target two turns later."
-          }
-        ],
-        "sprite": "64",
-        "types": [
-          "psychic"
-        ],
-        "stats": {
-          "hp": 40,
-          "atk": 35,
-          "def": 30,
-          "spa": 120,
-          "spd": 70,
-          "spe": 105
-        }
-      },
-      {
-        "name": "feraligatr",
-        "level": "38",
-        "moves": [
-          {
-            "power": 40,
-            "type": "water",
-            "damage_class": "special",
-            "name": "Water Gun"
-          },
-          {
-            "power": 20,
-            "type": "normal",
-            "damage_class": "physical",
-            "name": "Rage",
-            "effect": "If the user is hit after using this move, its Attack rises by one stage."
-          },
-          {
-            "type": "normal",
-            "damage_class": "status",
-            "name": "Scary Face",
-            "effect": "Lowers the target's Speed by two stages."
+            "name": "Flamethrower",
+            "effect": "Has a 10% chance to burn the target."
           },
           {
             "power": 70,
@@ -2901,20 +1572,171 @@
             "damage_class": "physical",
             "name": "Slash",
             "effect": "Has an increased chance for a critical hit."
+          },
+          {
+            "power": 60,
+            "type": "flying",
+            "damage_class": "physical",
+            "name": "Wing Attack"
+          },
+          {
+            "power": 150,
+            "type": "normal",
+            "damage_class": "physical",
+            "name": "Hyper Beam",
+            "effect": "User foregoes its next turn to recharge."
           }
         ],
-        "starter": "fire",
-        "sprite": "160",
+        "sprite": "6",
         "types": [
-          "water"
+          "fire",
+          "flying"
         ],
         "stats": {
-          "hp": 85,
+          "hp": 78,
+          "atk": 84,
+          "def": 78,
+          "spa": 109,
+          "spd": 85,
+          "spe": 100
+        }
+      },
+      {
+        "name": "aerodactyl",
+        "level": "46",
+        "moves": [
+          {
+            "power": 75,
+            "type": "rock",
+            "damage_class": "physical",
+            "name": "Rock Slide",
+            "effect": "Has a 30% chance to make the target flinch."
+          },
+          {
+            "power": 60,
+            "type": "rock",
+            "damage_class": "physical",
+            "name": "Ancient Power",
+            "effect": "Has a 10% chance to raise all of the user's stats by one stage."
+          },
+          {
+            "power": 60,
+            "type": "flying",
+            "damage_class": "physical",
+            "name": "Wing Attack"
+          },
+          {
+            "power": 150,
+            "type": "normal",
+            "damage_class": "physical",
+            "name": "Hyper Beam",
+            "effect": "User foregoes its next turn to recharge."
+          }
+        ],
+        "sprite": "142",
+        "types": [
+          "rock",
+          "flying"
+        ],
+        "stats": {
+          "hp": 80,
           "atk": 105,
-          "def": 100,
-          "spa": 79,
-          "spd": 83,
-          "spe": 78
+          "def": 65,
+          "spa": 60,
+          "spd": 75,
+          "spe": 130
+        }
+      },
+      {
+        "name": "dragonite",
+        "level": "47",
+        "moves": [
+          {
+            "power": 40,
+            "type": "dragon",
+            "damage_class": "special",
+            "name": "Twister",
+            "effect": "Has a 20% chance to make the target flinch."
+          },
+          {
+            "type": "electric",
+            "damage_class": "status",
+            "name": "Thunder Wave",
+            "effect": "Paralyzes the target."
+          },
+          {
+            "power": 110,
+            "type": "electric",
+            "damage_class": "special",
+            "name": "Thunder",
+            "effect": "Has a 30% chance to paralyze the target."
+          },
+          {
+            "power": 150,
+            "type": "normal",
+            "damage_class": "physical",
+            "name": "Hyper Beam",
+            "effect": "User foregoes its next turn to recharge."
+          }
+        ],
+        "sprite": "149",
+        "types": [
+          "dragon",
+          "flying"
+        ],
+        "stats": {
+          "hp": 91,
+          "atk": 134,
+          "def": 95,
+          "spa": 100,
+          "spd": 100,
+          "spe": 80
+        }
+      },
+      {
+        "name": "dragonite",
+        "level": "50",
+        "moves": [
+          {
+            "type": "normal",
+            "damage_class": "status",
+            "name": "Safeguard",
+            "effect": "Protects the user's field from major status ailments and confusion for five turns."
+          },
+          {
+            "power": 120,
+            "type": "dragon",
+            "damage_class": "special",
+            "name": "Outrage",
+            "effect": "Hits every turn for 2-3 turns, then confuses the user."
+          },
+          {
+            "power": 110,
+            "type": "fire",
+            "damage_class": "special",
+            "name": "Fire Blast",
+            "effect": "Has a 10% chance to burn the target."
+          },
+          {
+            "power": 150,
+            "type": "normal",
+            "damage_class": "physical",
+            "name": "Hyper Beam",
+            "effect": "User foregoes its next turn to recharge."
+          }
+        ],
+        "sprite": "149",
+        "types": [
+          "dragon",
+          "flying"
+        ],
+        "stats": {
+          "hp": 91,
+          "atk": 134,
+          "def": 95,
+          "spa": 100,
+          "spd": 100,
+          "spe": 80
         }
       }
     ]
@@ -3453,10 +2275,10 @@
           },
           {
             "power": 75,
-            "type": "ice",
+            "type": "electric",
             "damage_class": "special",
-            "name": "Ice Punch",
-            "effect": "Has a 10% chance to freeze the target."
+            "name": "Thunder Punch",
+            "effect": "Has a 10% chance to paralyze the target."
           },
           {
             "power": 40,
@@ -3850,211 +2672,121 @@
       }
     ]
   },
-  "c": {
-    "name": "Lance",
-    "speciality": "dragon",
-    "img": "/leaders/gs-lance",
+  "eusine": {
+    "name": "Eusine",
+    "speciality": "",
+    "img": "/leaders/gs-eusine",
     "pokemon": [
       {
-        "name": "gyarados",
-        "level": "44",
+        "name": "drowzee",
+        "level": "25",
         "moves": [
           {
-            "type": "water",
+            "type": "psychic",
             "damage_class": "status",
-            "name": "Rain Dance",
-            "effect": "Changes the weather to rain for five turns."
+            "name": "Hypnosis",
+            "effect": "Puts the target to sleep."
           },
           {
-            "power": 90,
-            "type": "water",
-            "damage_class": "special",
-            "name": "Surf",
-            "effect": "Inflicts regular damage and can hit Dive users."
-          },
-          {
-            "power": 110,
-            "type": "ice",
-            "damage_class": "special",
-            "name": "Blizzard",
-            "effect": "Has a 10% chance to freeze the target."
-          },
-          {
-            "power": 150,
             "type": "normal",
-            "damage_class": "physical",
-            "name": "Hyper Beam",
-            "effect": "User foregoes its next turn to recharge."
-          }
-        ],
-        "sprite": "130",
-        "types": [
-          "water",
-          "flying"
-        ],
-        "stats": {
-          "hp": 95,
-          "atk": 125,
-          "def": 79,
-          "spa": 60,
-          "spd": 100,
-          "spe": 81
-        }
-      },
-      {
-        "name": "dragonite",
-        "level": "47",
-        "moves": [
-          {
-            "power": 40,
-            "type": "dragon",
-            "damage_class": "special",
-            "name": "Twister",
-            "effect": "Has a 20% chance to make the target flinch."
-          },
-          {
-            "type": "electric",
             "damage_class": "status",
-            "name": "Thunder Wave",
-            "effect": "Paralyzes the target."
+            "name": "Disable",
+            "effect": "Disables the target's last used move for 1-8 turns."
           },
           {
-            "power": 110,
-            "type": "ice",
+            "power": 50,
+            "type": "psychic",
             "damage_class": "special",
-            "name": "Blizzard",
-            "effect": "Has a 10% chance to freeze the target."
+            "name": "Confusion",
+            "effect": "Has a 10% chance to confuse the target."
           },
           {
-            "power": 150,
-            "type": "normal",
-            "damage_class": "physical",
-            "name": "Hyper Beam",
-            "effect": "User foregoes its next turn to recharge."
+            "power": 100,
+            "type": "psychic",
+            "damage_class": "special",
+            "name": "Dream Eater",
+            "effect": "Only works on sleeping Pokémon.  Drains half the damage inflicted to heal the user."
           }
         ],
-        "sprite": "149",
+        "sprite": "96",
         "types": [
-          "dragon",
-          "flying"
+          "psychic"
         ],
         "stats": {
-          "hp": 91,
-          "atk": 134,
-          "def": 95,
-          "spa": 100,
-          "spd": 100,
-          "spe": 80
+          "hp": 60,
+          "atk": 48,
+          "def": 45,
+          "spa": 43,
+          "spd": 90,
+          "spe": 42
         }
       },
       {
-        "name": "charizard",
-        "level": "46",
+        "name": "haunter",
+        "level": "25",
         "moves": [
           {
-            "power": 90,
-            "type": "fire",
-            "damage_class": "special",
-            "name": "Flamethrower",
-            "effect": "Has a 10% chance to burn the target."
+            "type": "psychic",
+            "damage_class": "status",
+            "name": "Hypnosis",
+            "effect": "Puts the target to sleep."
           },
           {
-            "power": 70,
+            "power": 30,
+            "type": "ghost",
+            "damage_class": "physical",
+            "name": "Lick",
+            "effect": "Has a 30% chance to paralyze the target."
+          },
+          {
             "type": "normal",
-            "damage_class": "physical",
-            "name": "Slash",
-            "effect": "Has an increased chance for a critical hit."
+            "damage_class": "status",
+            "name": "Mean Look",
+            "effect": "Prevents the target from leaving battle."
           },
           {
-            "power": 60,
-            "type": "flying",
-            "damage_class": "physical",
-            "name": "Wing Attack"
-          },
-          {
-            "power": 150,
-            "type": "normal",
-            "damage_class": "physical",
-            "name": "Hyper Beam",
-            "effect": "User foregoes its next turn to recharge."
+            "type": "???",
+            "damage_class": "status",
+            "name": "Curse",
+            "effect": "Ghosts pay half their max HP to hurt the target every turn.  Others decrease Speed but raise Attack and Defense."
           }
         ],
-        "sprite": "6",
+        "sprite": "93",
         "types": [
-          "fire",
-          "flying"
+          "ghost",
+          "poison"
         ],
         "stats": {
-          "hp": 78,
-          "atk": 84,
-          "def": 78,
-          "spa": 109,
-          "spd": 85,
-          "spe": 100
+          "hp": 45,
+          "atk": 50,
+          "def": 45,
+          "spa": 115,
+          "spd": 55,
+          "spe": 95
         }
       },
       {
-        "name": "aerodactyl",
-        "level": "46",
+        "name": "electrode",
+        "level": "27",
         "moves": [
           {
-            "power": 75,
+            "type": "normal",
+            "damage_class": "physical",
+            "name": "Sonic Boom",
+            "effect": "Inflicts 20 points of damage."
+          },
+          {
+            "power": 30,
             "type": "rock",
             "damage_class": "physical",
-            "name": "Rock Slide",
-            "effect": "Has a 30% chance to make the target flinch."
+            "name": "Rollout",
+            "effect": "Power doubles every turn this move is used in succession after the first, resetting after five turns."
           },
           {
-            "power": 60,
-            "type": "rock",
-            "damage_class": "physical",
-            "name": "Ancient Power",
-            "effect": "Has a 10% chance to raise all of the user's stats by one stage."
-          },
-          {
-            "power": 60,
-            "type": "flying",
-            "damage_class": "physical",
-            "name": "Wing Attack"
-          },
-          {
-            "power": 150,
             "type": "normal",
-            "damage_class": "physical",
-            "name": "Hyper Beam",
-            "effect": "User foregoes its next turn to recharge."
-          }
-        ],
-        "sprite": "142",
-        "types": [
-          "rock",
-          "flying"
-        ],
-        "stats": {
-          "hp": 80,
-          "atk": 105,
-          "def": 65,
-          "spa": 60,
-          "spd": 75,
-          "spe": 130
-        }
-      },
-      {
-        "name": "dragonite",
-        "level": "47",
-        "moves": [
-          {
-            "power": 40,
-            "type": "dragon",
-            "damage_class": "special",
-            "name": "Twister",
-            "effect": "Has a 20% chance to make the target flinch."
-          },
-          {
-            "type": "electric",
             "damage_class": "status",
-            "name": "Thunder Wave",
-            "effect": "Paralyzes the target."
+            "name": "Screech",
+            "effect": "Lowers the target's Defense by two stages."
           },
           {
             "power": 110,
@@ -4062,73 +2794,19 @@
             "damage_class": "special",
             "name": "Thunder",
             "effect": "Has a 30% chance to paralyze the target."
-          },
-          {
-            "power": 150,
-            "type": "normal",
-            "damage_class": "physical",
-            "name": "Hyper Beam",
-            "effect": "User foregoes its next turn to recharge."
           }
         ],
-        "sprite": "149",
+        "sprite": "101",
         "types": [
-          "dragon",
-          "flying"
+          "electric"
         ],
         "stats": {
-          "hp": 91,
-          "atk": 134,
-          "def": 95,
-          "spa": 100,
-          "spd": 100,
-          "spe": 80
-        }
-      },
-      {
-        "name": "dragonite",
-        "level": "50",
-        "moves": [
-          {
-            "type": "normal",
-            "damage_class": "status",
-            "name": "Safeguard",
-            "effect": "Protects the user's field from major status ailments and confusion for five turns."
-          },
-          {
-            "power": 120,
-            "type": "dragon",
-            "damage_class": "special",
-            "name": "Outrage",
-            "effect": "Hits every turn for 2-3 turns, then confuses the user."
-          },
-          {
-            "power": 110,
-            "type": "fire",
-            "damage_class": "special",
-            "name": "Fire Blast",
-            "effect": "Has a 10% chance to burn the target."
-          },
-          {
-            "power": 150,
-            "type": "normal",
-            "damage_class": "physical",
-            "name": "Hyper Beam",
-            "effect": "User foregoes its next turn to recharge."
-          }
-        ],
-        "sprite": "149",
-        "types": [
-          "dragon",
-          "flying"
-        ],
-        "stats": {
-          "hp": 91,
-          "atk": 134,
-          "def": 95,
-          "spa": 100,
-          "spd": 100,
-          "spe": 80
+          "hp": 60,
+          "atk": 50,
+          "def": 70,
+          "spa": 80,
+          "spd": 80,
+          "spe": 150
         }
       }
     ]
@@ -4687,192 +3365,6 @@
       }
     ]
   },
-  "k5": {
-    "name": "Misty",
-    "speciality": "water",
-    "img": "/leaders/gs-misty2",
-    "pokemon": [
-      {
-        "name": "golduck",
-        "level": "42",
-        "moves": [
-          {
-            "power": 90,
-            "type": "water",
-            "damage_class": "special",
-            "name": "Surf",
-            "effect": "Inflicts regular damage and can hit Dive users."
-          },
-          {
-            "type": "normal",
-            "damage_class": "status",
-            "name": "Disable",
-            "effect": "Disables the target's last used move for 1-8 turns."
-          },
-          {
-            "power": 90,
-            "type": "psychic",
-            "damage_class": "special",
-            "name": "Psychic",
-            "effect": "Has a 10% chance to lower the target's Special Defense by one stage."
-          },
-          {
-            "type": "normal",
-            "damage_class": "status",
-            "name": "Psych Up",
-            "effect": "Discards the user's stat changes and copies the target's."
-          }
-        ],
-        "sprite": "55",
-        "types": [
-          "water"
-        ],
-        "stats": {
-          "hp": 80,
-          "atk": 82,
-          "def": 78,
-          "spa": 95,
-          "spd": 80,
-          "spe": 85
-        }
-      },
-      {
-        "name": "quagsire",
-        "level": "42",
-        "moves": [
-          {
-            "power": 90,
-            "type": "water",
-            "damage_class": "special",
-            "name": "Surf",
-            "effect": "Inflicts regular damage and can hit Dive users."
-          },
-          {
-            "type": "psychic",
-            "damage_class": "status",
-            "name": "Amnesia",
-            "effect": "Raises the user's Special Defense by two stages."
-          },
-          {
-            "type": "water",
-            "damage_class": "status",
-            "name": "Rain Dance",
-            "effect": "Changes the weather to rain for five turns."
-          },
-          {
-            "power": 100,
-            "type": "ground",
-            "damage_class": "physical",
-            "name": "Earthquake",
-            "effect": "Inflicts regular damage and can hit Dig users."
-          }
-        ],
-        "sprite": "195",
-        "types": [
-          "water",
-          "ground"
-        ],
-        "stats": {
-          "hp": 95,
-          "atk": 85,
-          "def": 85,
-          "spa": 65,
-          "spd": 65,
-          "spe": 35
-        }
-      },
-      {
-        "name": "lapras",
-        "level": "44",
-        "moves": [
-          {
-            "power": 90,
-            "type": "water",
-            "damage_class": "special",
-            "name": "Surf",
-            "effect": "Inflicts regular damage and can hit Dive users."
-          },
-          {
-            "type": "water",
-            "damage_class": "status",
-            "name": "Rain Dance",
-            "effect": "Changes the weather to rain for five turns."
-          },
-          {
-            "type": "normal",
-            "damage_class": "status",
-            "name": "Perish Song",
-            "effect": "User and target both faint after three turns."
-          },
-          {
-            "power": 110,
-            "type": "ice",
-            "damage_class": "special",
-            "name": "Blizzard",
-            "effect": "Has a 10% chance to freeze the target."
-          }
-        ],
-        "sprite": "131",
-        "types": [
-          "water",
-          "ice"
-        ],
-        "stats": {
-          "hp": 130,
-          "atk": 85,
-          "def": 80,
-          "spa": 85,
-          "spd": 95,
-          "spe": 60
-        }
-      },
-      {
-        "name": "starmie",
-        "level": "47",
-        "moves": [
-          {
-            "power": 90,
-            "type": "water",
-            "damage_class": "special",
-            "name": "Surf",
-            "effect": "Inflicts regular damage and can hit Dive users."
-          },
-          {
-            "type": "ghost",
-            "damage_class": "status",
-            "name": "Confuse Ray",
-            "effect": "Confuses the target."
-          },
-          {
-            "power": 90,
-            "type": "ice",
-            "damage_class": "special",
-            "name": "Ice Beam",
-            "effect": "Has a 10% chance to freeze the target."
-          },
-          {
-            "type": "normal",
-            "damage_class": "status",
-            "name": "Recover",
-            "effect": "Heals the user by half its max HP."
-          }
-        ],
-        "sprite": "121",
-        "types": [
-          "water",
-          "psychic"
-        ],
-        "stats": {
-          "hp": 60,
-          "atk": 75,
-          "def": 85,
-          "spa": 100,
-          "spd": 85,
-          "spe": 115
-        }
-      }
-    ]
-  },
   "k4": {
     "name": "Janine",
     "speciality": "poison",
@@ -5097,6 +3589,192 @@
           "spa": 90,
           "spd": 75,
           "spe": 90
+        }
+      }
+    ]
+  },
+  "k5": {
+    "name": "Misty",
+    "speciality": "water",
+    "img": "/leaders/gs-misty2",
+    "pokemon": [
+      {
+        "name": "golduck",
+        "level": "42",
+        "moves": [
+          {
+            "power": 90,
+            "type": "water",
+            "damage_class": "special",
+            "name": "Surf",
+            "effect": "Inflicts regular damage and can hit Dive users."
+          },
+          {
+            "type": "normal",
+            "damage_class": "status",
+            "name": "Disable",
+            "effect": "Disables the target's last used move for 1-8 turns."
+          },
+          {
+            "power": 90,
+            "type": "psychic",
+            "damage_class": "special",
+            "name": "Psychic",
+            "effect": "Has a 10% chance to lower the target's Special Defense by one stage."
+          },
+          {
+            "type": "normal",
+            "damage_class": "status",
+            "name": "Psych Up",
+            "effect": "Discards the user's stat changes and copies the target's."
+          }
+        ],
+        "sprite": "55",
+        "types": [
+          "water"
+        ],
+        "stats": {
+          "hp": 80,
+          "atk": 82,
+          "def": 78,
+          "spa": 95,
+          "spd": 80,
+          "spe": 85
+        }
+      },
+      {
+        "name": "quagsire",
+        "level": "42",
+        "moves": [
+          {
+            "power": 90,
+            "type": "water",
+            "damage_class": "special",
+            "name": "Surf",
+            "effect": "Inflicts regular damage and can hit Dive users."
+          },
+          {
+            "type": "psychic",
+            "damage_class": "status",
+            "name": "Amnesia",
+            "effect": "Raises the user's Special Defense by two stages."
+          },
+          {
+            "type": "water",
+            "damage_class": "status",
+            "name": "Rain Dance",
+            "effect": "Changes the weather to rain for five turns."
+          },
+          {
+            "power": 100,
+            "type": "ground",
+            "damage_class": "physical",
+            "name": "Earthquake",
+            "effect": "Inflicts regular damage and can hit Dig users."
+          }
+        ],
+        "sprite": "195",
+        "types": [
+          "water",
+          "ground"
+        ],
+        "stats": {
+          "hp": 95,
+          "atk": 85,
+          "def": 85,
+          "spa": 65,
+          "spd": 65,
+          "spe": 35
+        }
+      },
+      {
+        "name": "lapras",
+        "level": "44",
+        "moves": [
+          {
+            "power": 90,
+            "type": "water",
+            "damage_class": "special",
+            "name": "Surf",
+            "effect": "Inflicts regular damage and can hit Dive users."
+          },
+          {
+            "type": "water",
+            "damage_class": "status",
+            "name": "Rain Dance",
+            "effect": "Changes the weather to rain for five turns."
+          },
+          {
+            "type": "normal",
+            "damage_class": "status",
+            "name": "Perish Song",
+            "effect": "User and target both faint after three turns."
+          },
+          {
+            "power": 110,
+            "type": "ice",
+            "damage_class": "special",
+            "name": "Blizzard",
+            "effect": "Has a 10% chance to freeze the target."
+          }
+        ],
+        "sprite": "131",
+        "types": [
+          "water",
+          "ice"
+        ],
+        "stats": {
+          "hp": 130,
+          "atk": 85,
+          "def": 80,
+          "spa": 85,
+          "spd": 95,
+          "spe": 60
+        }
+      },
+      {
+        "name": "starmie",
+        "level": "47",
+        "moves": [
+          {
+            "power": 90,
+            "type": "water",
+            "damage_class": "special",
+            "name": "Surf",
+            "effect": "Inflicts regular damage and can hit Dive users."
+          },
+          {
+            "type": "ghost",
+            "damage_class": "status",
+            "name": "Confuse Ray",
+            "effect": "Confuses the target."
+          },
+          {
+            "power": 90,
+            "type": "ice",
+            "damage_class": "special",
+            "name": "Ice Beam",
+            "effect": "Has a 10% chance to freeze the target."
+          },
+          {
+            "type": "normal",
+            "damage_class": "status",
+            "name": "Recover",
+            "effect": "Heals the user by half its max HP."
+          }
+        ],
+        "sprite": "121",
+        "types": [
+          "water",
+          "psychic"
+        ],
+        "stats": {
+          "hp": 60,
+          "atk": 75,
+          "def": 85,
+          "spa": 100,
+          "spd": 85,
+          "spe": 115
         }
       }
     ]
@@ -5339,282 +4017,6 @@
           "spa": 30,
           "spd": 45,
           "spe": 70
-        }
-      }
-    ]
-  },
-  "r6": {
-    "name": "Silver",
-    "speciality": "",
-    "img": "/leaders/gs-silver",
-    "pokemon": [
-      {
-        "name": "sneasel",
-        "level": "41",
-        "moves": [
-          {
-            "power": 40,
-            "priority": 1,
-            "type": "normal",
-            "damage_class": "physical",
-            "name": "Quick Attack"
-          },
-          {
-            "type": "normal",
-            "damage_class": "status",
-            "name": "Screech",
-            "effect": "Lowers the target's Defense by two stages."
-          },
-          {
-            "power": 60,
-            "type": "dark",
-            "damage_class": "special",
-            "name": "Feint Attack",
-            "effect": "Never misses."
-          },
-          {
-            "power": 40,
-            "type": "bug",
-            "damage_class": "physical",
-            "name": "Fury Cutter",
-            "effect": "Power doubles every turn this move is used in succession after the first, maxing out after five turns."
-          }
-        ],
-        "sprite": "215",
-        "types": [
-          "dark",
-          "ice"
-        ],
-        "stats": {
-          "hp": 55,
-          "atk": 95,
-          "def": 55,
-          "spa": 35,
-          "spd": 75,
-          "spe": 115
-        }
-      },
-      {
-        "name": "golbat",
-        "level": "42",
-        "moves": [
-          {
-            "power": 60,
-            "type": "flying",
-            "damage_class": "physical",
-            "name": "Wing Attack"
-          },
-          {
-            "type": "ghost",
-            "damage_class": "status",
-            "name": "Confuse Ray",
-            "effect": "Confuses the target."
-          },
-          {
-            "power": 60,
-            "type": "dark",
-            "damage_class": "special",
-            "name": "Bite",
-            "effect": "Has a 30% chance to make the target flinch."
-          },
-          {
-            "power": 80,
-            "type": "bug",
-            "damage_class": "physical",
-            "name": "Leech Life",
-            "effect": "Drains half the damage inflicted to heal the user."
-          }
-        ],
-        "sprite": "42",
-        "types": [
-          "poison",
-          "flying"
-        ],
-        "stats": {
-          "hp": 75,
-          "atk": 80,
-          "def": 70,
-          "spa": 65,
-          "spd": 75,
-          "spe": 90
-        }
-      },
-      {
-        "name": "magneton",
-        "level": "41",
-        "moves": [
-          {
-            "power": 40,
-            "type": "electric",
-            "damage_class": "special",
-            "name": "Thunder Shock",
-            "effect": "Has a 10% chance to paralyze the target."
-          },
-          {
-            "type": "electric",
-            "damage_class": "status",
-            "name": "Thunder Wave",
-            "effect": "Paralyzes the target."
-          },
-          {
-            "power": 60,
-            "type": "normal",
-            "damage_class": "physical",
-            "name": "Swift",
-            "effect": "Never misses."
-          },
-          {
-            "type": "normal",
-            "damage_class": "physical",
-            "name": "Sonic Boom",
-            "effect": "Inflicts 20 points of damage."
-          }
-        ],
-        "sprite": "82",
-        "types": [
-          "electric",
-          "steel"
-        ],
-        "stats": {
-          "hp": 50,
-          "atk": 60,
-          "def": 95,
-          "spa": 120,
-          "spd": 70,
-          "spe": 70
-        }
-      },
-      {
-        "name": "gengar",
-        "level": "43",
-        "moves": [
-          {
-            "power": 80,
-            "type": "ghost",
-            "damage_class": "physical",
-            "name": "Shadow Ball",
-            "effect": "Has a 20% chance to lower the target's Special Defense by one stage."
-          },
-          {
-            "type": "ghost",
-            "damage_class": "status",
-            "name": "Confuse Ray",
-            "effect": "Confuses the target."
-          },
-          {
-            "type": "normal",
-            "damage_class": "status",
-            "name": "Mean Look",
-            "effect": "Prevents the target from leaving battle."
-          },
-          {
-            "type": "???",
-            "damage_class": "status",
-            "name": "Curse",
-            "effect": "Ghosts pay half their max HP to hurt the target every turn.  Others decrease Speed but raise Attack and Defense."
-          }
-        ],
-        "sprite": "94",
-        "types": [
-          "ghost",
-          "poison"
-        ],
-        "stats": {
-          "hp": 60,
-          "atk": 65,
-          "def": 60,
-          "spa": 130,
-          "spd": 75,
-          "spe": 110
-        }
-      },
-      {
-        "name": "alakazam",
-        "level": "43",
-        "moves": [
-          {
-            "power": 90,
-            "type": "psychic",
-            "damage_class": "special",
-            "name": "Psychic",
-            "effect": "Has a 10% chance to lower the target's Special Defense by one stage."
-          },
-          {
-            "power": 120,
-            "type": "psychic",
-            "damage_class": "special",
-            "name": "Future Sight",
-            "effect": "Hits the target two turns later."
-          },
-          {
-            "type": "normal",
-            "damage_class": "status",
-            "name": "Recover",
-            "effect": "Heals the user by half its max HP."
-          },
-          {
-            "type": "normal",
-            "damage_class": "status",
-            "name": "Disable",
-            "effect": "Disables the target's last used move for 1-8 turns."
-          }
-        ],
-        "sprite": "65",
-        "types": [
-          "psychic"
-        ],
-        "stats": {
-          "hp": 55,
-          "atk": 50,
-          "def": 45,
-          "spa": 135,
-          "spd": 95,
-          "spe": 120
-        }
-      },
-      {
-        "name": "feraligatr",
-        "level": "45",
-        "moves": [
-          {
-            "power": 60,
-            "type": "dark",
-            "damage_class": "special",
-            "name": "Bite",
-            "effect": "Has a 30% chance to make the target flinch."
-          },
-          {
-            "power": 40,
-            "type": "water",
-            "damage_class": "special",
-            "name": "Water Gun"
-          },
-          {
-            "power": 20,
-            "type": "normal",
-            "damage_class": "physical",
-            "name": "Rage",
-            "effect": "If the user is hit after using this move, its Attack rises by one stage."
-          },
-          {
-            "type": "normal",
-            "damage_class": "status",
-            "name": "Scary Face",
-            "effect": "Lowers the target's Speed by two stages."
-          }
-        ],
-        "starter": "fire",
-        "sprite": "160",
-        "types": [
-          "water"
-        ],
-        "stats": {
-          "hp": 85,
-          "atk": 105,
-          "def": 100,
-          "spa": 79,
-          "spd": 83,
-          "spe": 78
         }
       }
     ]
@@ -6034,6 +4436,1604 @@
           "spa": 100,
           "spd": 80,
           "spe": 95
+        }
+      }
+    ]
+  },
+  "petrel1": {
+    "name": "Executive Petrel",
+    "speciality": "",
+    "img": "/leaders/gs-petrel",
+    "pokemon": [
+      {
+        "name": "zubat",
+        "level": "22",
+        "moves": [
+          {
+            "power": 80,
+            "type": "bug",
+            "damage_class": "physical",
+            "name": "Leech Life",
+            "effect": "Drains half the damage inflicted to heal the user."
+          },
+          {
+            "power": 60,
+            "type": "dark",
+            "damage_class": "special",
+            "name": "Bite",
+            "effect": "Has a 30% chance to make the target flinch."
+          },
+          {
+            "type": "normal",
+            "damage_class": "status",
+            "name": "Supersonic",
+            "effect": "Confuses the target."
+          },
+          {
+            "type": "ghost",
+            "damage_class": "status",
+            "name": "Confuse Ray",
+            "effect": "Confuses the target."
+          }
+        ],
+        "sprite": "41",
+        "types": [
+          "poison",
+          "flying"
+        ],
+        "stats": {
+          "hp": 40,
+          "atk": 45,
+          "def": 35,
+          "spa": 30,
+          "spd": 40,
+          "spe": 55
+        }
+      },
+      {
+        "name": "koffing",
+        "level": "22",
+        "moves": [
+          {
+            "power": 30,
+            "type": "poison",
+            "damage_class": "physical",
+            "name": "Smog",
+            "effect": "Has a 40% chance to poison the target."
+          },
+          {
+            "power": 65,
+            "type": "poison",
+            "damage_class": "physical",
+            "name": "Sludge",
+            "effect": "Has a 30% chance to poison the target."
+          },
+          {
+            "power": 40,
+            "type": "normal",
+            "damage_class": "physical",
+            "name": "Tackle"
+          },
+          {
+            "power": 200,
+            "type": "normal",
+            "damage_class": "physical",
+            "name": "Self-Destruct",
+            "effect": "User faints."
+          }
+        ],
+        "sprite": "109",
+        "types": [
+          "poison"
+        ],
+        "stats": {
+          "hp": 40,
+          "atk": 65,
+          "def": 95,
+          "spa": 60,
+          "spd": 45,
+          "spe": 35
+        }
+      },
+      {
+        "name": "raticate",
+        "level": "24",
+        "moves": [
+          {
+            "power": 80,
+            "type": "normal",
+            "damage_class": "physical",
+            "name": "Hyper Fang",
+            "effect": "Has a 10% chance to make the target flinch."
+          },
+          {
+            "power": 40,
+            "priority": 1,
+            "type": "normal",
+            "damage_class": "physical",
+            "name": "Quick Attack"
+          },
+          {
+            "type": "normal",
+            "damage_class": "status",
+            "name": "Scary Face",
+            "effect": "Lowers the target's Speed by two stages."
+          },
+          {
+            "type": "normal",
+            "damage_class": "status",
+            "name": "Tail Whip",
+            "effect": "Lowers the target's Defense by one stage."
+          }
+        ],
+        "sprite": "20",
+        "types": [
+          "normal"
+        ],
+        "stats": {
+          "hp": 55,
+          "atk": 81,
+          "def": 60,
+          "spa": 50,
+          "spd": 70,
+          "spe": 97
+        }
+      }
+    ]
+  },
+  "petrel2": {
+    "name": "Executive Petrel",
+    "speciality": "",
+    "img": "/leaders/gs-petrel",
+    "pokemon": [
+      {
+        "name": "koffing",
+        "level": "30",
+        "moves": [
+          {
+            "power": 65,
+            "type": "poison",
+            "damage_class": "physical",
+            "name": "Sludge",
+            "effect": "Has a 30% chance to poison the target."
+          },
+          {
+            "type": "normal",
+            "damage_class": "status",
+            "name": "Smokescreen",
+            "effect": "Lowers the target's accuracy by one stage."
+          },
+          {
+            "power": 200,
+            "type": "normal",
+            "damage_class": "physical",
+            "name": "Self-Destruct",
+            "effect": "User faints."
+          },
+          {
+            "power": 40,
+            "type": "normal",
+            "damage_class": "physical",
+            "name": "Tackle"
+          }
+        ],
+        "sprite": "109",
+        "types": [
+          "poison"
+        ],
+        "stats": {
+          "hp": 40,
+          "atk": 65,
+          "def": 95,
+          "spa": 60,
+          "spd": 45,
+          "spe": 35
+        }
+      },
+      {
+        "name": "koffing",
+        "level": "30",
+        "moves": [
+          {
+            "power": 65,
+            "type": "poison",
+            "damage_class": "physical",
+            "name": "Sludge",
+            "effect": "Has a 30% chance to poison the target."
+          },
+          {
+            "type": "normal",
+            "damage_class": "status",
+            "name": "Smokescreen",
+            "effect": "Lowers the target's accuracy by one stage."
+          },
+          {
+            "power": 200,
+            "type": "normal",
+            "damage_class": "physical",
+            "name": "Self-Destruct",
+            "effect": "User faints."
+          },
+          {
+            "power": 40,
+            "type": "normal",
+            "damage_class": "physical",
+            "name": "Tackle"
+          }
+        ],
+        "sprite": "109",
+        "types": [
+          "poison"
+        ],
+        "stats": {
+          "hp": 40,
+          "atk": 65,
+          "def": 95,
+          "spa": 60,
+          "spd": 45,
+          "spe": 35
+        }
+      },
+      {
+        "name": "koffing",
+        "level": "30",
+        "moves": [
+          {
+            "power": 65,
+            "type": "poison",
+            "damage_class": "physical",
+            "name": "Sludge",
+            "effect": "Has a 30% chance to poison the target."
+          },
+          {
+            "type": "normal",
+            "damage_class": "status",
+            "name": "Smokescreen",
+            "effect": "Lowers the target's accuracy by one stage."
+          },
+          {
+            "power": 200,
+            "type": "normal",
+            "damage_class": "physical",
+            "name": "Self-Destruct",
+            "effect": "User faints."
+          },
+          {
+            "power": 40,
+            "type": "normal",
+            "damage_class": "physical",
+            "name": "Tackle"
+          }
+        ],
+        "sprite": "109",
+        "types": [
+          "poison"
+        ],
+        "stats": {
+          "hp": 40,
+          "atk": 65,
+          "def": 95,
+          "spa": 60,
+          "spd": 45,
+          "spe": 35
+        }
+      },
+      {
+        "name": "koffing",
+        "level": "30",
+        "moves": [
+          {
+            "power": 65,
+            "type": "poison",
+            "damage_class": "physical",
+            "name": "Sludge",
+            "effect": "Has a 30% chance to poison the target."
+          },
+          {
+            "type": "normal",
+            "damage_class": "status",
+            "name": "Smokescreen",
+            "effect": "Lowers the target's accuracy by one stage."
+          },
+          {
+            "power": 200,
+            "type": "normal",
+            "damage_class": "physical",
+            "name": "Self-Destruct",
+            "effect": "User faints."
+          },
+          {
+            "power": 40,
+            "type": "normal",
+            "damage_class": "physical",
+            "name": "Tackle"
+          }
+        ],
+        "sprite": "109",
+        "types": [
+          "poison"
+        ],
+        "stats": {
+          "hp": 40,
+          "atk": 65,
+          "def": 95,
+          "spa": 60,
+          "spd": 45,
+          "spe": 35
+        }
+      },
+      {
+        "name": "koffing",
+        "level": "30",
+        "moves": [
+          {
+            "power": 65,
+            "type": "poison",
+            "damage_class": "physical",
+            "name": "Sludge",
+            "effect": "Has a 30% chance to poison the target."
+          },
+          {
+            "type": "normal",
+            "damage_class": "status",
+            "name": "Smokescreen",
+            "effect": "Lowers the target's accuracy by one stage."
+          },
+          {
+            "power": 200,
+            "type": "normal",
+            "damage_class": "physical",
+            "name": "Self-Destruct",
+            "effect": "User faints."
+          },
+          {
+            "power": 40,
+            "type": "normal",
+            "damage_class": "physical",
+            "name": "Tackle"
+          }
+        ],
+        "sprite": "109",
+        "types": [
+          "poison"
+        ],
+        "stats": {
+          "hp": 40,
+          "atk": 65,
+          "def": 95,
+          "spa": 60,
+          "spd": 45,
+          "spe": 35
+        }
+      },
+      {
+        "name": "weezing",
+        "level": "32",
+        "moves": [
+          {
+            "power": 40,
+            "type": "normal",
+            "damage_class": "physical",
+            "name": "Tackle"
+          },
+          {
+            "power": 65,
+            "type": "poison",
+            "damage_class": "physical",
+            "name": "Sludge",
+            "effect": "Has a 30% chance to poison the target."
+          },
+          {
+            "type": "normal",
+            "damage_class": "status",
+            "name": "Smokescreen",
+            "effect": "Lowers the target's accuracy by one stage."
+          },
+          {
+            "power": 250,
+            "type": "normal",
+            "damage_class": "physical",
+            "name": "Explosion",
+            "effect": "User faints."
+          }
+        ],
+        "sprite": "110",
+        "types": [
+          "poison"
+        ],
+        "stats": {
+          "hp": 65,
+          "atk": 90,
+          "def": 120,
+          "spa": 85,
+          "spd": 70,
+          "spe": 60
+        }
+      }
+    ]
+  },
+  "proton": {
+    "name": "Executive Proton",
+    "speciality": "",
+    "img": "/leaders/gs-proton",
+    "pokemon": [
+      {
+        "name": "golbat",
+        "level": "36",
+        "moves": [
+          {
+            "power": 60,
+            "type": "flying",
+            "damage_class": "physical",
+            "name": "Wing Attack"
+          },
+          {
+            "type": "ghost",
+            "damage_class": "status",
+            "name": "Confuse Ray",
+            "effect": "Confuses the target."
+          },
+          {
+            "power": 80,
+            "type": "bug",
+            "damage_class": "physical",
+            "name": "Leech Life",
+            "effect": "Drains half the damage inflicted to heal the user."
+          },
+          {
+            "power": 60,
+            "type": "dark",
+            "damage_class": "special",
+            "name": "Bite",
+            "effect": "Has a 30% chance to make the target flinch."
+          }
+        ],
+        "sprite": "42",
+        "types": [
+          "poison",
+          "flying"
+        ],
+        "stats": {
+          "hp": 75,
+          "atk": 80,
+          "def": 70,
+          "spa": 65,
+          "spd": 75,
+          "spe": 90
+        }
+      }
+    ]
+  },
+  "r1": {
+    "name": "Silver",
+    "speciality": "",
+    "img": "/leaders/gs-silver",
+    "pokemon": [
+      {
+        "name": "totodile",
+        "level": "5",
+        "moves": [
+          {
+            "power": 40,
+            "type": "normal",
+            "damage_class": "physical",
+            "name": "Scratch"
+          },
+          {
+            "type": "normal",
+            "damage_class": "status",
+            "name": "Leer",
+            "effect": "Lowers the target's Defense by one stage."
+          }
+        ],
+        "starter": "fire",
+        "sprite": "158",
+        "types": [
+          "water"
+        ],
+        "stats": {
+          "hp": 50,
+          "atk": 65,
+          "def": 64,
+          "spa": 44,
+          "spd": 48,
+          "spe": 43
+        }
+      }
+    ]
+  },
+  "r2": {
+    "name": "Silver",
+    "speciality": "",
+    "img": "/leaders/gs-silver",
+    "pokemon": [
+      {
+        "name": "gastly",
+        "level": "12",
+        "moves": [
+          {
+            "power": 30,
+            "type": "ghost",
+            "damage_class": "physical",
+            "name": "Lick",
+            "effect": "Has a 30% chance to paralyze the target."
+          },
+          {
+            "type": "ghost",
+            "damage_class": "status",
+            "name": "Spite",
+            "effect": "Lowers the PP of the target's last used move by 4."
+          },
+          {
+            "type": "psychic",
+            "damage_class": "status",
+            "name": "Hypnosis",
+            "effect": "Puts the target to sleep."
+          }
+        ],
+        "sprite": "92",
+        "types": [
+          "ghost",
+          "poison"
+        ],
+        "stats": {
+          "hp": 30,
+          "atk": 35,
+          "def": 30,
+          "spa": 100,
+          "spd": 35,
+          "spe": 80
+        }
+      },
+      {
+        "name": "zubat",
+        "level": "14",
+        "moves": [
+          {
+            "power": 80,
+            "type": "bug",
+            "damage_class": "physical",
+            "name": "Leech Life",
+            "effect": "Drains half the damage inflicted to heal the user."
+          },
+          {
+            "type": "normal",
+            "damage_class": "status",
+            "name": "Supersonic",
+            "effect": "Confuses the target."
+          },
+          {
+            "power": 60,
+            "type": "dark",
+            "damage_class": "special",
+            "name": "Bite",
+            "effect": "Has a 30% chance to make the target flinch."
+          }
+        ],
+        "sprite": "41",
+        "types": [
+          "poison",
+          "flying"
+        ],
+        "stats": {
+          "hp": 40,
+          "atk": 45,
+          "def": 35,
+          "spa": 30,
+          "spd": 40,
+          "spe": 55
+        }
+      },
+      {
+        "name": "croconaw",
+        "level": "16",
+        "moves": [
+          {
+            "power": 40,
+            "type": "water",
+            "damage_class": "special",
+            "name": "Water Gun"
+          },
+          {
+            "power": 20,
+            "type": "normal",
+            "damage_class": "physical",
+            "name": "Rage",
+            "effect": "If the user is hit after using this move, its Attack rises by one stage."
+          },
+          {
+            "type": "normal",
+            "damage_class": "status",
+            "name": "Leer",
+            "effect": "Lowers the target's Defense by one stage."
+          },
+          {
+            "power": 40,
+            "type": "normal",
+            "damage_class": "physical",
+            "name": "Scratch"
+          }
+        ],
+        "starter": "fire",
+        "sprite": "159",
+        "types": [
+          "water"
+        ],
+        "stats": {
+          "hp": 65,
+          "atk": 80,
+          "def": 80,
+          "spa": 59,
+          "spd": 63,
+          "spe": 58
+        }
+      }
+    ]
+  },
+  "r3": {
+    "name": "Silver",
+    "speciality": "",
+    "img": "/leaders/gs-silver",
+    "pokemon": [
+      {
+        "name": "haunter",
+        "level": "20",
+        "moves": [
+          {
+            "power": 30,
+            "type": "ghost",
+            "damage_class": "physical",
+            "name": "Lick",
+            "effect": "Has a 30% chance to paralyze the target."
+          },
+          {
+            "type": "ghost",
+            "damage_class": "status",
+            "name": "Spite",
+            "effect": "Lowers the PP of the target's last used move by 4."
+          },
+          {
+            "type": "normal",
+            "damage_class": "status",
+            "name": "Mean Look",
+            "effect": "Prevents the target from leaving battle."
+          },
+          {
+            "type": "???",
+            "damage_class": "status",
+            "name": "Curse",
+            "effect": "Ghosts pay half their max HP to hurt the target every turn.  Others decrease Speed but raise Attack and Defense."
+          }
+        ],
+        "sprite": "93",
+        "types": [
+          "ghost",
+          "poison"
+        ],
+        "stats": {
+          "hp": 45,
+          "atk": 50,
+          "def": 45,
+          "spa": 115,
+          "spd": 55,
+          "spe": 95
+        }
+      },
+      {
+        "name": "magnemite",
+        "level": "18",
+        "moves": [
+          {
+            "power": 40,
+            "type": "electric",
+            "damage_class": "special",
+            "name": "Thunder Shock",
+            "effect": "Has a 10% chance to paralyze the target."
+          },
+          {
+            "type": "normal",
+            "damage_class": "status",
+            "name": "Supersonic",
+            "effect": "Confuses the target."
+          },
+          {
+            "type": "normal",
+            "damage_class": "physical",
+            "name": "Sonic Boom",
+            "effect": "Inflicts 20 points of damage."
+          },
+          {
+            "power": 40,
+            "type": "normal",
+            "damage_class": "physical",
+            "name": "Tackle"
+          }
+        ],
+        "sprite": "81",
+        "types": [
+          "electric",
+          "steel"
+        ],
+        "stats": {
+          "hp": 25,
+          "atk": 35,
+          "def": 70,
+          "spa": 95,
+          "spd": 55,
+          "spe": 45
+        }
+      },
+      {
+        "name": "zubat",
+        "level": "20",
+        "moves": [
+          {
+            "power": 80,
+            "type": "bug",
+            "damage_class": "physical",
+            "name": "Leech Life",
+            "effect": "Drains half the damage inflicted to heal the user."
+          },
+          {
+            "type": "normal",
+            "damage_class": "status",
+            "name": "Supersonic",
+            "effect": "Confuses the target."
+          },
+          {
+            "power": 60,
+            "type": "dark",
+            "damage_class": "special",
+            "name": "Bite",
+            "effect": "Has a 30% chance to make the target flinch."
+          },
+          {
+            "type": "ghost",
+            "damage_class": "status",
+            "name": "Confuse Ray",
+            "effect": "Confuses the target."
+          }
+        ],
+        "sprite": "41",
+        "types": [
+          "poison",
+          "flying"
+        ],
+        "stats": {
+          "hp": 40,
+          "atk": 45,
+          "def": 35,
+          "spa": 30,
+          "spd": 40,
+          "spe": 55
+        }
+      },
+      {
+        "name": "croconaw",
+        "level": "22",
+        "moves": [
+          {
+            "power": 40,
+            "type": "water",
+            "damage_class": "special",
+            "name": "Water Gun"
+          },
+          {
+            "power": 60,
+            "type": "dark",
+            "damage_class": "special",
+            "name": "Bite",
+            "effect": "Has a 30% chance to make the target flinch."
+          },
+          {
+            "power": 20,
+            "type": "normal",
+            "damage_class": "physical",
+            "name": "Rage",
+            "effect": "If the user is hit after using this move, its Attack rises by one stage."
+          },
+          {
+            "type": "normal",
+            "damage_class": "status",
+            "name": "Leer",
+            "effect": "Lowers the target's Defense by one stage."
+          }
+        ],
+        "starter": "fire",
+        "sprite": "159",
+        "types": [
+          "water"
+        ],
+        "stats": {
+          "hp": 65,
+          "atk": 80,
+          "def": 80,
+          "spa": 59,
+          "spd": 63,
+          "spe": 58
+        }
+      }
+    ]
+  },
+  "r4": {
+    "name": "Silver",
+    "speciality": "",
+    "img": "/leaders/gs-silver",
+    "pokemon": [
+      {
+        "name": "golbat",
+        "level": "30",
+        "moves": [
+          {
+            "power": 60,
+            "type": "flying",
+            "damage_class": "physical",
+            "name": "Wing Attack"
+          },
+          {
+            "type": "ghost",
+            "damage_class": "status",
+            "name": "Confuse Ray",
+            "effect": "Confuses the target."
+          },
+          {
+            "power": 60,
+            "type": "dark",
+            "damage_class": "special",
+            "name": "Bite",
+            "effect": "Has a 30% chance to make the target flinch."
+          },
+          {
+            "power": 80,
+            "type": "bug",
+            "damage_class": "physical",
+            "name": "Leech Life",
+            "effect": "Drains half the damage inflicted to heal the user."
+          }
+        ],
+        "sprite": "42",
+        "types": [
+          "poison",
+          "flying"
+        ],
+        "stats": {
+          "hp": 75,
+          "atk": 80,
+          "def": 70,
+          "spa": 65,
+          "spd": 75,
+          "spe": 90
+        }
+      },
+      {
+        "name": "magnemite",
+        "level": "28",
+        "moves": [
+          {
+            "type": "electric",
+            "damage_class": "status",
+            "name": "Thunder Wave",
+            "effect": "Paralyzes the target."
+          },
+          {
+            "power": 40,
+            "type": "electric",
+            "damage_class": "special",
+            "name": "Thunder Shock",
+            "effect": "Has a 10% chance to paralyze the target."
+          },
+          {
+            "power": 40,
+            "type": "normal",
+            "damage_class": "physical",
+            "name": "Tackle"
+          },
+          {
+            "type": "normal",
+            "damage_class": "physical",
+            "name": "Sonic Boom",
+            "effect": "Inflicts 20 points of damage."
+          }
+        ],
+        "sprite": "81",
+        "types": [
+          "electric",
+          "steel"
+        ],
+        "stats": {
+          "hp": 25,
+          "atk": 35,
+          "def": 70,
+          "spa": 95,
+          "spd": 55,
+          "spe": 45
+        }
+      },
+      {
+        "name": "haunter",
+        "level": "30",
+        "moves": [
+          {
+            "power": 80,
+            "type": "ghost",
+            "damage_class": "physical",
+            "name": "Shadow Ball",
+            "effect": "Has a 20% chance to lower the target's Special Defense by one stage."
+          },
+          {
+            "power": 30,
+            "type": "ghost",
+            "damage_class": "physical",
+            "name": "Lick",
+            "effect": "Has a 30% chance to paralyze the target."
+          },
+          {
+            "type": "???",
+            "damage_class": "status",
+            "name": "Curse",
+            "effect": "Ghosts pay half their max HP to hurt the target every turn.  Others decrease Speed but raise Attack and Defense."
+          },
+          {
+            "type": "normal",
+            "damage_class": "status",
+            "name": "Mean Look",
+            "effect": "Prevents the target from leaving battle."
+          }
+        ],
+        "sprite": "93",
+        "types": [
+          "ghost",
+          "poison"
+        ],
+        "stats": {
+          "hp": 45,
+          "atk": 50,
+          "def": 45,
+          "spa": 115,
+          "spd": 55,
+          "spe": 95
+        }
+      },
+      {
+        "name": "sneasel",
+        "level": "32",
+        "moves": [
+          {
+            "power": 60,
+            "type": "dark",
+            "damage_class": "special",
+            "name": "Feint Attack",
+            "effect": "Never misses."
+          },
+          {
+            "power": 40,
+            "priority": 1,
+            "type": "normal",
+            "damage_class": "physical",
+            "name": "Quick Attack"
+          },
+          {
+            "type": "normal",
+            "damage_class": "status",
+            "name": "Leer",
+            "effect": "Lowers the target's Defense by one stage."
+          },
+          {
+            "type": "normal",
+            "damage_class": "status",
+            "name": "Screech",
+            "effect": "Lowers the target's Defense by two stages."
+          }
+        ],
+        "sprite": "215",
+        "types": [
+          "dark",
+          "ice"
+        ],
+        "stats": {
+          "hp": 55,
+          "atk": 95,
+          "def": 55,
+          "spa": 35,
+          "spd": 75,
+          "spe": 115
+        }
+      },
+      {
+        "name": "feraligatr",
+        "level": "32",
+        "moves": [
+          {
+            "power": 40,
+            "type": "water",
+            "damage_class": "special",
+            "name": "Water Gun"
+          },
+          {
+            "power": 60,
+            "type": "dark",
+            "damage_class": "special",
+            "name": "Bite",
+            "effect": "Has a 30% chance to make the target flinch."
+          },
+          {
+            "power": 20,
+            "type": "normal",
+            "damage_class": "physical",
+            "name": "Rage",
+            "effect": "If the user is hit after using this move, its Attack rises by one stage."
+          },
+          {
+            "type": "normal",
+            "damage_class": "status",
+            "name": "Scary Face",
+            "effect": "Lowers the target's Speed by two stages."
+          }
+        ],
+        "starter": "fire",
+        "sprite": "160",
+        "types": [
+          "water"
+        ],
+        "stats": {
+          "hp": 85,
+          "atk": 105,
+          "def": 100,
+          "spa": 79,
+          "spd": 83,
+          "spe": 78
+        }
+      }
+    ]
+  },
+  "r5": {
+    "name": "Silver",
+    "speciality": "",
+    "img": "/leaders/gs-silver",
+    "pokemon": [
+      {
+        "name": "sneasel",
+        "level": "34",
+        "moves": [
+          {
+            "power": 60,
+            "type": "dark",
+            "damage_class": "special",
+            "name": "Feint Attack",
+            "effect": "Never misses."
+          },
+          {
+            "power": 40,
+            "priority": 1,
+            "type": "normal",
+            "damage_class": "physical",
+            "name": "Quick Attack"
+          },
+          {
+            "type": "normal",
+            "damage_class": "status",
+            "name": "Screech",
+            "effect": "Lowers the target's Defense by two stages."
+          },
+          {
+            "power": 40,
+            "type": "bug",
+            "damage_class": "physical",
+            "name": "Fury Cutter",
+            "effect": "Power doubles every turn this move is used in succession after the first, maxing out after five turns."
+          }
+        ],
+        "sprite": "215",
+        "types": [
+          "dark",
+          "ice"
+        ],
+        "stats": {
+          "hp": 55,
+          "atk": 95,
+          "def": 55,
+          "spa": 35,
+          "spd": 75,
+          "spe": 115
+        }
+      },
+      {
+        "name": "golbat",
+        "level": "36",
+        "moves": [
+          {
+            "power": 60,
+            "type": "flying",
+            "damage_class": "physical",
+            "name": "Wing Attack"
+          },
+          {
+            "type": "ghost",
+            "damage_class": "status",
+            "name": "Confuse Ray",
+            "effect": "Confuses the target."
+          },
+          {
+            "power": 60,
+            "type": "dark",
+            "damage_class": "special",
+            "name": "Bite",
+            "effect": "Has a 30% chance to make the target flinch."
+          },
+          {
+            "power": 80,
+            "type": "bug",
+            "damage_class": "physical",
+            "name": "Leech Life",
+            "effect": "Drains half the damage inflicted to heal the user."
+          }
+        ],
+        "sprite": "42",
+        "types": [
+          "poison",
+          "flying"
+        ],
+        "stats": {
+          "hp": 75,
+          "atk": 80,
+          "def": 70,
+          "spa": 65,
+          "spd": 75,
+          "spe": 90
+        }
+      },
+      {
+        "name": "magneton",
+        "level": "35",
+        "moves": [
+          {
+            "type": "electric",
+            "damage_class": "status",
+            "name": "Thunder Wave",
+            "effect": "Paralyzes the target."
+          },
+          {
+            "power": 40,
+            "type": "electric",
+            "damage_class": "special",
+            "name": "Thunder Shock",
+            "effect": "Has a 10% chance to paralyze the target."
+          },
+          {
+            "type": "normal",
+            "damage_class": "physical",
+            "name": "Sonic Boom",
+            "effect": "Inflicts 20 points of damage."
+          },
+          {
+            "power": 60,
+            "type": "normal",
+            "damage_class": "physical",
+            "name": "Swift",
+            "effect": "Never misses."
+          }
+        ],
+        "sprite": "82",
+        "types": [
+          "electric",
+          "steel"
+        ],
+        "stats": {
+          "hp": 50,
+          "atk": 60,
+          "def": 95,
+          "spa": 120,
+          "spd": 70,
+          "spe": 70
+        }
+      },
+      {
+        "name": "haunter",
+        "level": "35",
+        "moves": [
+          {
+            "power": 80,
+            "type": "ghost",
+            "damage_class": "physical",
+            "name": "Shadow Ball",
+            "effect": "Has a 20% chance to lower the target's Special Defense by one stage."
+          },
+          {
+            "type": "ghost",
+            "damage_class": "status",
+            "name": "Confuse Ray",
+            "effect": "Confuses the target."
+          },
+          {
+            "type": "normal",
+            "damage_class": "status",
+            "name": "Mean Look",
+            "effect": "Prevents the target from leaving battle."
+          },
+          {
+            "type": "???",
+            "damage_class": "status",
+            "name": "Curse",
+            "effect": "Ghosts pay half their max HP to hurt the target every turn.  Others decrease Speed but raise Attack and Defense."
+          }
+        ],
+        "sprite": "93",
+        "types": [
+          "ghost",
+          "poison"
+        ],
+        "stats": {
+          "hp": 45,
+          "atk": 50,
+          "def": 45,
+          "spa": 115,
+          "spd": 55,
+          "spe": 95
+        }
+      },
+      {
+        "name": "kadabra",
+        "level": "35",
+        "moves": [
+          {
+            "type": "normal",
+            "damage_class": "status",
+            "name": "Recover",
+            "effect": "Heals the user by half its max HP."
+          },
+          {
+            "type": "normal",
+            "damage_class": "status",
+            "name": "Disable",
+            "effect": "Disables the target's last used move for 1-8 turns."
+          },
+          {
+            "power": 65,
+            "type": "psychic",
+            "damage_class": "special",
+            "name": "Psybeam",
+            "effect": "Has a 10% chance to confuse the target."
+          },
+          {
+            "power": 120,
+            "type": "psychic",
+            "damage_class": "special",
+            "name": "Future Sight",
+            "effect": "Hits the target two turns later."
+          }
+        ],
+        "sprite": "64",
+        "types": [
+          "psychic"
+        ],
+        "stats": {
+          "hp": 40,
+          "atk": 35,
+          "def": 30,
+          "spa": 120,
+          "spd": 70,
+          "spe": 105
+        }
+      },
+      {
+        "name": "feraligatr",
+        "level": "38",
+        "moves": [
+          {
+            "power": 40,
+            "type": "water",
+            "damage_class": "special",
+            "name": "Water Gun"
+          },
+          {
+            "power": 20,
+            "type": "normal",
+            "damage_class": "physical",
+            "name": "Rage",
+            "effect": "If the user is hit after using this move, its Attack rises by one stage."
+          },
+          {
+            "type": "normal",
+            "damage_class": "status",
+            "name": "Scary Face",
+            "effect": "Lowers the target's Speed by two stages."
+          },
+          {
+            "power": 70,
+            "type": "normal",
+            "damage_class": "physical",
+            "name": "Slash",
+            "effect": "Has an increased chance for a critical hit."
+          }
+        ],
+        "starter": "fire",
+        "sprite": "160",
+        "types": [
+          "water"
+        ],
+        "stats": {
+          "hp": 85,
+          "atk": 105,
+          "def": 100,
+          "spa": 79,
+          "spd": 83,
+          "spe": 78
+        }
+      }
+    ]
+  },
+  "r6": {
+    "name": "Silver",
+    "speciality": "",
+    "img": "/leaders/gs-silver",
+    "pokemon": [
+      {
+        "name": "sneasel",
+        "level": "41",
+        "moves": [
+          {
+            "power": 40,
+            "priority": 1,
+            "type": "normal",
+            "damage_class": "physical",
+            "name": "Quick Attack"
+          },
+          {
+            "type": "normal",
+            "damage_class": "status",
+            "name": "Screech",
+            "effect": "Lowers the target's Defense by two stages."
+          },
+          {
+            "power": 60,
+            "type": "dark",
+            "damage_class": "special",
+            "name": "Feint Attack",
+            "effect": "Never misses."
+          },
+          {
+            "power": 40,
+            "type": "bug",
+            "damage_class": "physical",
+            "name": "Fury Cutter",
+            "effect": "Power doubles every turn this move is used in succession after the first, maxing out after five turns."
+          }
+        ],
+        "sprite": "215",
+        "types": [
+          "dark",
+          "ice"
+        ],
+        "stats": {
+          "hp": 55,
+          "atk": 95,
+          "def": 55,
+          "spa": 35,
+          "spd": 75,
+          "spe": 115
+        }
+      },
+      {
+        "name": "golbat",
+        "level": "42",
+        "moves": [
+          {
+            "power": 60,
+            "type": "flying",
+            "damage_class": "physical",
+            "name": "Wing Attack"
+          },
+          {
+            "type": "ghost",
+            "damage_class": "status",
+            "name": "Confuse Ray",
+            "effect": "Confuses the target."
+          },
+          {
+            "power": 60,
+            "type": "dark",
+            "damage_class": "special",
+            "name": "Bite",
+            "effect": "Has a 30% chance to make the target flinch."
+          },
+          {
+            "power": 80,
+            "type": "bug",
+            "damage_class": "physical",
+            "name": "Leech Life",
+            "effect": "Drains half the damage inflicted to heal the user."
+          }
+        ],
+        "sprite": "42",
+        "types": [
+          "poison",
+          "flying"
+        ],
+        "stats": {
+          "hp": 75,
+          "atk": 80,
+          "def": 70,
+          "spa": 65,
+          "spd": 75,
+          "spe": 90
+        }
+      },
+      {
+        "name": "magneton",
+        "level": "41",
+        "moves": [
+          {
+            "power": 40,
+            "type": "electric",
+            "damage_class": "special",
+            "name": "Thunder Shock",
+            "effect": "Has a 10% chance to paralyze the target."
+          },
+          {
+            "type": "electric",
+            "damage_class": "status",
+            "name": "Thunder Wave",
+            "effect": "Paralyzes the target."
+          },
+          {
+            "power": 60,
+            "type": "normal",
+            "damage_class": "physical",
+            "name": "Swift",
+            "effect": "Never misses."
+          },
+          {
+            "type": "normal",
+            "damage_class": "physical",
+            "name": "Sonic Boom",
+            "effect": "Inflicts 20 points of damage."
+          }
+        ],
+        "sprite": "82",
+        "types": [
+          "electric",
+          "steel"
+        ],
+        "stats": {
+          "hp": 50,
+          "atk": 60,
+          "def": 95,
+          "spa": 120,
+          "spd": 70,
+          "spe": 70
+        }
+      },
+      {
+        "name": "gengar",
+        "level": "43",
+        "moves": [
+          {
+            "power": 80,
+            "type": "ghost",
+            "damage_class": "physical",
+            "name": "Shadow Ball",
+            "effect": "Has a 20% chance to lower the target's Special Defense by one stage."
+          },
+          {
+            "type": "ghost",
+            "damage_class": "status",
+            "name": "Confuse Ray",
+            "effect": "Confuses the target."
+          },
+          {
+            "type": "normal",
+            "damage_class": "status",
+            "name": "Mean Look",
+            "effect": "Prevents the target from leaving battle."
+          },
+          {
+            "type": "???",
+            "damage_class": "status",
+            "name": "Curse",
+            "effect": "Ghosts pay half their max HP to hurt the target every turn.  Others decrease Speed but raise Attack and Defense."
+          }
+        ],
+        "sprite": "94",
+        "types": [
+          "ghost",
+          "poison"
+        ],
+        "stats": {
+          "hp": 60,
+          "atk": 65,
+          "def": 60,
+          "spa": 130,
+          "spd": 75,
+          "spe": 110
+        }
+      },
+      {
+        "name": "alakazam",
+        "level": "43",
+        "moves": [
+          {
+            "power": 90,
+            "type": "psychic",
+            "damage_class": "special",
+            "name": "Psychic",
+            "effect": "Has a 10% chance to lower the target's Special Defense by one stage."
+          },
+          {
+            "power": 120,
+            "type": "psychic",
+            "damage_class": "special",
+            "name": "Future Sight",
+            "effect": "Hits the target two turns later."
+          },
+          {
+            "type": "normal",
+            "damage_class": "status",
+            "name": "Recover",
+            "effect": "Heals the user by half its max HP."
+          },
+          {
+            "type": "normal",
+            "damage_class": "status",
+            "name": "Disable",
+            "effect": "Disables the target's last used move for 1-8 turns."
+          }
+        ],
+        "sprite": "65",
+        "types": [
+          "psychic"
+        ],
+        "stats": {
+          "hp": 55,
+          "atk": 50,
+          "def": 45,
+          "spa": 135,
+          "spd": 95,
+          "spe": 120
+        }
+      },
+      {
+        "name": "feraligatr",
+        "level": "45",
+        "moves": [
+          {
+            "power": 60,
+            "type": "dark",
+            "damage_class": "special",
+            "name": "Bite",
+            "effect": "Has a 30% chance to make the target flinch."
+          },
+          {
+            "power": 40,
+            "type": "water",
+            "damage_class": "special",
+            "name": "Water Gun"
+          },
+          {
+            "power": 20,
+            "type": "normal",
+            "damage_class": "physical",
+            "name": "Rage",
+            "effect": "If the user is hit after using this move, its Attack rises by one stage."
+          },
+          {
+            "type": "normal",
+            "damage_class": "status",
+            "name": "Scary Face",
+            "effect": "Lowers the target's Speed by two stages."
+          }
+        ],
+        "starter": "fire",
+        "sprite": "160",
+        "types": [
+          "water"
+        ],
+        "stats": {
+          "hp": 85,
+          "atk": 105,
+          "def": 100,
+          "spa": 79,
+          "spd": 83,
+          "spe": 78
         }
       }
     ]
