@@ -153,4 +153,9 @@
     content: var(--badge-content);
     z-index: -1;
   }
+
+  :global(.greenscreen) div {
+    box-shadow: none !important;
+  }
+
 </style>
