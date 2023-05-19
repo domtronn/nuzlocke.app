@@ -61,14 +61,26 @@
     )
   }
 
-  let greenscreen
-  $: greenscreen = document.documentElement.classList.contains('greenscreen')
-  $: if (greenscreen === true) {
-    document.documentElement.classList.add('greenscreen')
-  } else {
-    document.documentElement.classList.remove('greenscreen')
+  let greenscreen = 0
+  $: {
+    greenscreen = 0
+    if (document.documentElement.classList.contains('greenscreen')
+        && document.documentElement.classList.contains('green')) {
+      greenscreen = 1
+    } else if (document.documentElement.classList.contains('greenscreen')
+               && document.documentElement.classList.contains('blue')) {
+      greenscreen = 2
+    }
   }
 
+  $ : {
+    document.documentElement.classList.remove('green', 'blue', 'greenscreen')
+    if (greenscreen === 1) {
+      document.documentElement.classList.add('green', 'greenscreen')
+    } else if (greenscreen === 2) {
+      document.documentElement.classList.add('blue', 'greenscreen')
+    }
+  }
 
   const reset = () => {
     const [, , id] = readdata()
@@ -135,7 +147,7 @@
             <p
               class="mb-4 mr-4 text-sm leading-4 text-gray-600 dark:text-gray-500"
             >
-              {s.help}
+              {@html s.help}
             </p>
             {#if +s.index === 7 && Object.keys(Theme || {}).length}
               <div
@@ -157,24 +169,26 @@
             {/if}
           </div>
           <div>
-            <Radio
+            {#if s.name === 'Greenscreen'}
+              <Radio
+              name={s.name}
+              bind:selected={greenscreen}
+              options={s.options}
+              className="dark:text-gray-500 text-gray-600 {s.index === 7
+                ? 'md:mt-1'
+                : ''}"
+              />
+              {:else}
+                <Radio
               name={s.name}
               bind:selected={s.state}
               options={s.options}
               className="dark:text-gray-500 text-gray-600 {s.index === 7
                 ? 'md:mt-1'
                 : ''}"
-            />
+              />
+              {/if}
           </div>
-        {:else if s.name === 'Greenscreen'}
-          <Toggle id='greenscreen' bind:state={greenscreen}>
-            <h2 class="text-base font-medium text-gray-900 dark:text-gray-50">
-              {s.name}
-            </h2>
-            <p class="mr-4 text-sm leading-4 text-gray-600 dark:text-gray-500">
-              {@html s.help}
-            </p>
-          </Toggle>
         {:else}
           <Toggle id={s.id} bind:state={s.state}>
             <h2 class="text-base font-medium text-gray-900 dark:text-gray-50">

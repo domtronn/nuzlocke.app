@@ -151,12 +151,20 @@ body {
   @apply text-gray-200 bg-gray-800;
 }
 
+.greenscreen.green {
+  --gscreen: #09a43f;
+}
+
+.greenscreen.blue {
+  --gscreen: #0143b2;
+}
+
 .greenscreen body, .greenscreen nav, .greenscreen .modal-positioning {
-  background-color: #009933 !important; 
+  background-color: var(--gscreen) !important; 
 }
 
 .greenscreen nav::before {
-  background: linear-gradient(#009933 50%, transparent) !important;
+  background: linear-gradient(var(--gscreen), 50%, transparent) !important;
 }
 
 .greenscreen .shadow-highlight, .greenscreen .dark\:shadow-highlight,
