@@ -9,9 +9,10 @@
     read
   } from '$lib/store'
 
-  import { toDbLocation } from '$lib/utils/link'
-  import { insertList } from '$lib/utils/arr'
-  import { shortuuid } from '$lib/utils/uuid'
+  import { toDbLocation } from '$utils/link'
+  import { insertList } from '$utils/arr'
+  import { shortuuid } from '$utils/uuid'
+  import { slugify } from '$utils/string'
 
   import { Tooltip } from '$lib/components/core'
   import CustomLocation from './CustomLocation.svelte'
@@ -84,24 +85,25 @@
 
   export const setnav = (e) =>
     setloc(`boss-${e.detail.value}`, e.detail.value + 20)
+
   export const setroute =
     ({ name, id }) =>
     () =>
       setloc(`route-${name}`, id + 10)
 
-  let scroll
+  let scroll, ulRef
   const scrollToItem = (id) => {
-    const offset = window.innerWidth < 700 ? 38 : 76
-    const y =
-      document.getElementById(id).getBoundingClientRect().top +
-      window.pageYOffset
-
-    window.scrollTo({ top: y - offset, behavior: 'smooth' })
+    document.getElementById(id).scrollIntoView({
+      behavior: 'smooth',
+      block: 'center'
+    })
   }
 
   const setloc = (id, i) => {
     document.getElementById(id) ? scrollToItem(id) : (scroll = id)
   }
+
+  const locid = (p, i) => slugify(`${p.type}-${p.name}-${i}`)
 
   afterUpdate(() => {
     if (!scroll) return
@@ -110,8 +112,8 @@
   })
 </script>
 
-<ul class="flex flex-col gap-y-0 lg:gap-y-2 {className}">
-  {#each filtered as p, id (p)}
+<ul bind:this={ulRef} class="flex flex-col gap-y-0 lg:gap-y-2 {className}">
+  {#each filtered as p, id (locid(p, id))}
     {#if showStarterRoute(p, filters, hideRoute)}
       <li
         class="flex items-center gap-x-2"

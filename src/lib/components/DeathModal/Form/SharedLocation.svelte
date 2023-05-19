@@ -25,11 +25,12 @@
 
   export let placeholder = 'Encounter location',
     route = 'gym'
-
+  
   export let selected
   let routes = []
   onMount(() => {
     const [, key] = readdata()
+
     fetchRoute(Games[key].pid).then((data = []) => {
       let seen = new Set()
       return (routes = data.filter((g) => {
@@ -46,16 +47,15 @@
 </script>
 
 <AutoComplete
-  className="w-full"
+  class="w-full"
   bind:selected
   on:change={onchange}
-  items={routes}
-  label="name"
+  itemF={(_) => routes}
+  labelF={(_) => _.name}
   name={placeholder}
   {placeholder}
-  rounded
 >
-  <span slot="item" let:item let:label class="item">
+  <span slot="option" let:option={item} let:label class="item">
     <span>{@html label}</span>
 
     <span class="pointer-events-none float-right scale-150 transform">

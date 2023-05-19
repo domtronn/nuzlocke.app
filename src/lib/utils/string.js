@@ -10,7 +10,15 @@ export const capitalise = (str, lowerRest = false) => {
 export const unslugify = (s = '') => s.replace(/-/g, ' ')
 export const slugify = (s = '') => s.toLowerCase().replace(/ +/g, '-')
 
-export const normalise = (s = '') => s.replace(/[-\.]/g, '')
+export const normalise = (s = '') => {
+  try {
+    return (s || '').replace(/[-\.]/g, '')
+  } catch (e) {
+    console.error(e)
+    console.log(s)
+    return ''
+  }
+}
 
 export const toKebabCase = (str) => {
   try {

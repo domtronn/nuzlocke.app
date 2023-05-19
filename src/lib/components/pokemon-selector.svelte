@@ -12,9 +12,10 @@
   import { fly } from 'svelte/transition'
   import { Natures, NaturesMap } from '$lib/data/natures'
   import { NuzlockeStates, NuzlockeGroups } from '$lib/data/states'
-  import { IconButton, AutoComplete, Input } from '$lib/components/core'
+  import { IconButton, Input } from '$lib/components/core'
   import { Wrapper as SettingsWrapper } from '$lib/components/Settings'
 
+  import AutoCompleteV2 from '$c/core/AutoCompleteV2.svelte'
   import Popover from '$lib/components/core/Popover.svelte'
 
   import { PIcon, Icon } from '$c/core'
@@ -45,6 +46,10 @@
 
   export let encounters = []
   let encounterItems = []
+  const encounterF = (_) =>
+    getPkmns(encounters).then((e) =>
+      (encounters || []).map((id) => e[id]).filter((i) => i)
+    )
 
   let Particles, EvoModal, DeathModal
   onMount(() => {
@@ -60,12 +65,6 @@
       selected = o
     }
 
-    getPkmns(encounters).then(
-      (e) =>
-        (encounterItems = (encounters || [])
-          .map((id) => e[id])
-          .filter((i) => i))
-    )
     import('$lib/components/particles').then((m) => (Particles = m.default))
     import('$lib/components/EvolutionModal.svelte').then(
       (m) => (EvoModal = m.default)
@@ -320,42 +319,39 @@
           {:else}
             {@const fetchSearch = (search && search !== selected) || !suggest}
 
-            <AutoComplete
+
+            <AutoCompleteV2
               inset={selected ? true : '2.4em'}
-              rounded
-              fetch={fetchSearch ? getAllPkmn : null}
-              items={fetchSearch ? [] : encounterItems}
-              max={fetchSearch ? 16 : encounterItems.length}
+              itemF={(_) => (fetchSearch ? getAllPkmn() : encounterF())}
+              max={fetchSearch ? 16 : (encounters || []).length}
               on:change={(_) => (search = null)}
               bind:search
               bind:selected
               name="{location} Encounter"
               placeholder="Find encounter"
-              className="col-span-2 w-11/12 sm:w-full"
+              class="col-span-2 w-11/12 sm:w-full"
             >
               <span
                 class="flex h-8 items-center px-4 py-5 md:py-6"
                 class:hidden={dupes === 2 &&
-                  (missdupes ? misslines : dupelines).has(item?.evoline)}
+                  (missdupes ? misslines : dupelines).has(option?.evoline)}
                 class:dupe={dupes === 1 &&
-                  (missdupes ? misslines : dupelines).has(item?.evoline)}
+                  (missdupes ? misslines : dupelines).has(option?.evoline)}
                 aria-label={label}
-                slot="item"
-                let:item
+                slot="option"
+                let:option
                 let:label
               >
                 <PIcon
-                  name={item?.sprite}
+                  name={option?.sprite}
                   className="transform -mb-4 -ml-6 -mt-5 -mr-2"
                 />
                 {@html label}
-                {#if dupes === 1 && (missdupes ? misslines : dupelines).has(item?.evoline)}
+                {#if dupes === 1 && (missdupes ? misslines : dupelines).has(option?.evoline)}
                   <span class="dupe__span absolute right-4 text-tiny">dupe</span
                   >
                 {/if}
               </span>
-
-              {selected}
 
               <svelte:fragment slot="icon" let:iconClass>
                 {#if selected}
@@ -383,7 +379,7 @@
                   />
                 {/if}
               </svelte:fragment>
-            </AutoComplete>
+            </AutoCompleteV2>
           {/if}
         </SettingsWrapper>
       </SettingsWrapper>
@@ -414,19 +410,16 @@
       </div>
 
       <svelte:fragment slot="else">
-        <AutoComplete
-          wide
-          rounded
-          items={Object.values(NuzlockeStates)}
+        <AutoCompleteV2
+          itemF={(_) => Object.values(NuzlockeStates)}
+          labelF={(_) => _.state}
+          inset={status ? '2rem' : null}
           bind:search={statusSearch}
           bind:selected={status}
           name="{location} Status"
           placeholder="Status"
-          label="state"
-          inset={status ? '2rem' : null}
-          className="{!selected || hidden
-            ? 'hidden sm:block'
-            : ''} {status?.id === 4
+          class="{!selected || hidden ? 'hidden sm:block' : ''} {status?.id ===
+          4
             ? 'col-span-2 sm:col-span-1'
             : 'col-span-1'}"
         >
@@ -440,59 +433,56 @@
             {/if}
           </svelte:fragment>
 
-          <button
-            on:click={handleStatus(item.id)}
-            class="flex inline-flex items-center gap-x-2 px-3 py-2 md:py-3"
-            slot="item"
-            let:item
+          <div
+            on:click={handleStatus(option.id)}
+            class="inline-flex items-center py-2 pr-3 pl-1 md:py-3"
+            slot="option"
+            let:option
             let:label
           >
             <Icon
               inline={true}
-              icon={item.icon}
-              class="transform fill-current md:scale-125"
+              icon={option.icon}
+              class="mr-2 transform fill-current md:scale-125"
             />
             {@html label}
-          </button>
-        </AutoComplete>
+          </div>
+        </AutoCompleteV2>
       </svelte:fragment>
     </SettingsWrapper>
 
-    <AutoComplete
-      wide
-      rounded
-      items={Natures}
+    <AutoCompleteV2
+      itemF={(_) => Natures}
+      max={Natures.length}
       bind:search={natureSearch}
       bind:selected={nature}
       name="{location} Nature"
       placeholder="Nature"
-      max={Natures.length}
-      className="col-span-1 {!selected || status?.id === 4 || hidden
+      class="col-span-1 {!selected || status?.id === 4 || hidden
         ? 'hidden sm:block'
         : ''}"
-      dropdownClass="-translate-x-1/2 -ml-1 sm:translate-x-0 sm:ml-0"
     >
       <div
-        class="-mx-1 flex inline-flex w-full items-center justify-between px-5 py-2 md:px-3 md:py-3"
-        slot="item"
-        let:item
+        class="group -mx-1 flex inline-flex w-full items-center justify-between py-2 px-1 md:py-3"
+        slot="option"
+        let:option
         let:label
       >
         <span>{@html label}</span>
-        {#if item.value.length}
+        {#if option.value.length}
           <span
-            class="-my-4 -mr-3 flex items-end gap-x-2 text-tiny sm:flex-col sm:gap-x-0 sm:gap-y-1"
+            class="-my-4 -mr-3 flex items-end gap-x-2 text-tiny text-xs sm:flex-col sm:gap-x-0"
           >
             <span
-              class="inline-flex items-center justify-end text-orange-400 dark:text-orange-300"
+              class="inline-flex items-center justify-end text-orange-400 dark:group-hover:text-orange-800"
             >
-              {item.value[0]}
+              {option.value[0]}
               <Icon inline={true} icon={Chevron} class="fill-current" />
             </span>
             <span
-              class="inline-flex items-center text-blue-600 dark:text-blue-300"
+              class="inline-flex items-center text-blue-300 dark:group-hover:text-blue-600"
             >
-              {item.value[1]}
+              {option.value[1]}
               <Icon
                 inline={true}
                 icon={Chevron}
@@ -502,7 +492,7 @@
           </span>
         {/if}
       </div>
-    </AutoComplete>
+    </AutoCompleteV2>
 
     <span class="inline-flex gap-x-2 text-left">
       {#if selected && status && status.id !== 4 && status.id !== 5}

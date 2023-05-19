@@ -39,8 +39,8 @@
     />
   {:else if name}
     <PIcon
-      className="transition grayscale group-hover:grayscale-0 opacity-50 group-hover:opacity-100 {className}"
       {name}
+      className="transition grayscale group-hover:grayscale-0 opacity-50 group-hover:opacity-100 {className}"
       type="item"
     />
   {/if}

@@ -48,13 +48,11 @@
 <div class="flex w-full gap-x-2">
   <AutoComplete
     bind:selected={ctx.type}
-    className="flex-2"
+    class="flex-2"
     name={classPlaceholder}
     placeholder={classPlaceholder}
-    items={trainers}
-    rounded
-    label
-  >
+    itemF={(_) => trainers}>
+
     <span
       slot="item"
       let:label
