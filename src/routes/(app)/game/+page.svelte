@@ -143,9 +143,7 @@
     in:fade|local={{ duration: 250, delay: 300 }}
     class="container mx-auto overflow-hidden pb-24"
   >
-    <div
-      class="flex snap-start flex-row flex-wrap justify-center bg-white pb-16 dark:bg-gray-800"
-    >
+    <div class="flex snap-start flex-row flex-wrap justify-center pb-16">
       <main
         id="main"
         class="p-container relative flex flex-col gap-y-4 md:py-6"

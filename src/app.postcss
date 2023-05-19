@@ -151,6 +151,25 @@ body {
   @apply text-gray-200 bg-gray-800;
 }
 
+.greenscreen body, .greenscreen nav, .greenscreen .modal-positioning {
+  background-color: #009933 !important; 
+}
+
+.greenscreen nav::before {
+  background: linear-gradient(#009933 50%, transparent) !important;
+}
+
+.greenscreen .shadow-highlight, .greenscreen .dark\:shadow-highlight,
+.greenscreen .shadow-lg, .greenscreen .dark\:shadow-lg,
+.greenscreen .shadow-mark, .greenscreen .dark\:shadow-mark,
+.greenscreen .shadow-md, .greenscreen .dark\:shadow-md,
+.greenscreen .shadow-none, .greenscreen .dark\:shadow-none,
+.greenscreen .shadow-sm, .greenscreen .dark\:shadow-sm,
+.greenscreen .shadow-text, .greenscreen .dark\:shadow-text,
+.greenscreen .shadow-xl, .greenscreen .dark\:shadow-xl {
+  box-shadow: none !important;
+} 
+
 .g-container {
   @apply max-w-6xl mx-auto px-4 md:px-12 overflow-x-hidden;
 }
