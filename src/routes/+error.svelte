@@ -4,6 +4,10 @@
     img = 'https://img.nuzlocke.app/sprite/202.png'
 </script>
 
+<svelte:head>
+  <meta name="robots" content="nofollow, noindex" />
+</svelte:head>
+
 <div
   style="color: {text};"
   class="mx-auto flex max-w-lg flex-col items-center justify-center text-center font-mono"
