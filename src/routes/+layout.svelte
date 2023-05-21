@@ -1,6 +1,7 @@
 <script>
   import '../app.postcss'
 
+  import { page } from '$app/stores'
   import { afterUpdate } from 'svelte'
   import { CookieBanner, Footer } from '$c/navs'
 
@@ -20,18 +21,18 @@
 </script>
 
 <svelte:head>
-  <title>{title} | {subtitle}</title>
+  {#if $page.status === 200}
+    <title>{title} | {subtitle}</title>
+    <meta name="robots" content="follow, index" />
+    <meta property="og:title" content="{title} | {subtitle}" />
+    <meta name="twitter:title" content={title} />
 
-  <meta name="robots" content="follow, index" />
+    <meta content={description} name="description" />
+    <meta name="twitter:description" content={description} />
 
-  <meta property="og:title" content="{title} | {subtitle}" />
-  <meta name="twitter:title" content={title} />
-
-  <meta content={description} name="description" />
-  <meta name="twitter:description" content={description} />
-
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="dns-prefetch" href="https://img.nuzlocke.app" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="dns-prefetch" href="https://img.nuzlocke.app" crossorigin />
+  {/if}
 </svelte:head>
 
 <slot />
