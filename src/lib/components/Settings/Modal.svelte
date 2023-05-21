@@ -61,6 +61,27 @@
     )
   }
 
+  let greenscreen = 0
+  $: {
+    greenscreen = 0
+    if (document.documentElement.classList.contains('greenscreen')
+        && document.documentElement.classList.contains('green')) {
+      greenscreen = 1
+    } else if (document.documentElement.classList.contains('greenscreen')
+               && document.documentElement.classList.contains('blue')) {
+      greenscreen = 2
+    }
+  }
+
+  $ : {
+    document.documentElement.classList.remove('green', 'blue', 'greenscreen')
+    if (greenscreen === 1) {
+      document.documentElement.classList.add('green', 'greenscreen')
+    } else if (greenscreen === 2) {
+      document.documentElement.classList.add('blue', 'greenscreen')
+    }
+  }
+
   const reset = () => {
     const [, , id] = readdata()
     const gameStore = getGameStore(id)
@@ -126,7 +147,7 @@
             <p
               class="mb-4 mr-4 text-sm leading-4 text-gray-600 dark:text-gray-500"
             >
-              {s.help}
+              {@html s.help}
             </p>
             {#if +s.index === 7 && Object.keys(Theme || {}).length}
               <div
@@ -148,14 +169,25 @@
             {/if}
           </div>
           <div>
-            <Radio
+            {#if s.name === 'Greenscreen'}
+              <Radio
+              name={s.name}
+              bind:selected={greenscreen}
+              options={s.options}
+              className="dark:text-gray-500 text-gray-600 {s.index === 7
+                ? 'md:mt-1'
+                : ''}"
+              />
+              {:else}
+                <Radio
               name={s.name}
               bind:selected={s.state}
               options={s.options}
               className="dark:text-gray-500 text-gray-600 {s.index === 7
                 ? 'md:mt-1'
                 : ''}"
-            />
+              />
+              {/if}
           </div>
         {:else}
           <Toggle id={s.id} bind:state={s.state}>
@@ -173,7 +205,7 @@
 
   <div class="mt-2 h-px w-full bg-gray-500 dark:bg-gray-500" />
 
-  <div class="mt-4 flex w-full justify-end gap-x-4">
+  <div class="mt-4 flex-col md:flex-row flex w-full justify-end gap-2 md:gap-4">
     <Button on:click={reset} rounded>Reset Run</Button>
     <Button on:click={resethidden} rounded>Reset Hidden locations</Button>
   </div>
