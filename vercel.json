@@ -192,7 +192,7 @@
   ],
   "headers": [
     {
-    "source": "\.(json|css|png)$",
+      "source": "\\.(json|css|png)$",
       "headers": [
         {
           "key": "X-Robots-Tag",
