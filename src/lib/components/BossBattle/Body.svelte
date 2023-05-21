@@ -37,7 +37,7 @@
               {#each result.result as [type, { resist = 0, weak = 0 }]}
                 <div class="grid-rows-13 grid gap-1">
                   {#each Array(result.max - resist).fill() as _}
-                    <span class="h-1 w-8 rounded-sm bg-gray-700" />
+                    <span class="h-1 w-8 rounded-sm bg-gray-100 dark:bg-gray-700" />
                   {/each}
                   {#each Array(resist).fill() as _}
                     <span class="h-1 w-8 rounded-sm bg-green-500" />
@@ -58,7 +58,7 @@
                     <span class="h-1 w-8 rounded-sm bg-red-500" />
                   {/each}
                   {#each Array(result.max - weak).fill() as _}
-                    <span class="h-1 w-8 rounded-sm bg-gray-700" />
+                    <span class="h-1 w-8 rounded-sm bg-gray-100 dark:bg-gray-700" />
                   {/each}
                 </div>
               {/each}
