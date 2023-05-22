@@ -9,6 +9,7 @@
 
   export let debug = false
 
+  import { slugify } from '$utils/string'
   import { PIcon, Icon } from '$c/core'
   import { Chevron } from '$icons'
 
@@ -67,7 +68,7 @@
 
   $: selected, onSelectedChange()
 
-  const acId = `autocomplete-${id}`
+  const acId = slugify(`autocomplete-${id}`)
 
   let inputEl,
     listEl,

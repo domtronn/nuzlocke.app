@@ -319,7 +319,6 @@
           {:else}
             {@const fetchSearch = (search && search !== selected) || !suggest}
 
-
             <AutoCompleteV2
               inset={selected ? true : '2.4em'}
               itemF={(_) => (fetchSearch ? getAllPkmn() : encounterF())}
@@ -327,6 +326,7 @@
               on:change={(_) => (search = null)}
               bind:search
               bind:selected
+              id="{location} Encounter"
               name="{location} Encounter"
               placeholder="Find encounter"
               class="col-span-2 w-11/12 sm:w-full"
@@ -416,6 +416,7 @@
           inset={status ? '2rem' : null}
           bind:search={statusSearch}
           bind:selected={status}
+          id="{location} Status"
           name="{location} Status"
           placeholder="Status"
           class="{!selected || hidden ? 'hidden sm:block' : ''} {status?.id ===
@@ -456,6 +457,7 @@
       max={Natures.length}
       bind:search={natureSearch}
       bind:selected={nature}
+      id="{location} Nature"
       name="{location} Nature"
       placeholder="Nature"
       class="col-span-1 {!selected || status?.id === 4 || hidden

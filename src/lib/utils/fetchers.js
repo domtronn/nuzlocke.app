@@ -11,9 +11,10 @@ export const fetchData = async () => {
   const gen = await getGen()
   const uri = `${DATA}/pokemon/${gen}.json`
 
-  console.time(`data:${gen}`)
   if (data[gen]) return data[gen] // Return the raw data if it exists
-  if (!data[uri])
+
+  if (!data[uri]) {
+    console.time(`data:${gen}`)
     data[uri] = fetch(uri) // "Cache" the promise rather than make a new fetch each time
       .then((res) => res.json())
       .then((data) => {
@@ -27,6 +28,7 @@ export const fetchData = async () => {
         console.timeEnd(`data:${gen}`)
         return result
       })
+  }
 
   data[gen] = await data[uri]
   return data[gen]

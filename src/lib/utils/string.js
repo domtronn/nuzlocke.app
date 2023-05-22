@@ -8,7 +8,8 @@ export const capitalise = (str, lowerRest = false) => {
 }
 
 export const unslugify = (s = '') => s.replace(/-/g, ' ')
-export const slugify = (s = '') => s.toLowerCase().replace(/ +/g, '-')
+export const slugify = (s = '') =>
+  s.toLowerCase().replace(/ +/g, '-').replace(/\./g, '')
 
 export const normalise = (s = '') => {
   try {

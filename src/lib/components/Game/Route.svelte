@@ -73,10 +73,6 @@
     store.update(hidelocation(id))
   }
 
-  $: filtered = insertList(route, custom).filter(
-    filterEntry(filters, search, game.data, progress - 1)
-  )
-
   /** Event Handlers */
   const setstarter = (e) => {
     starter = e.detail.value
@@ -103,20 +99,27 @@
     document.getElementById(id) ? scrollToItem(id) : (scroll = id)
   }
 
-  const locid = (p, i) => slugify(`${p.type}-${p.name}-${i}`)
+  const locid = (p, i) =>
+    p.type === 'custom'
+      ? slugify(`${p.type}-${p.name}-${i}`)
+      : slugify(`${p.type}-${p.name}-${p.origPos}`)
 
   afterUpdate(() => {
     if (!scroll) return
     setTimeout(scrollToItem.bind({}, scroll))
     scroll = null
   })
+
+  $: routeList = insertList(route, custom)
 </script>
 
 <ul bind:this={ulRef} class="flex flex-col gap-y-0 lg:gap-y-2 {className}">
-  {#each filtered as p, id (locid(p, id))}
+  {#each routeList as p, id (locid(p, id))}
+    {@const hidden = !filterEntry(filters, search, game.data, progress - 1)(p)}
     {#if showStarterRoute(p, filters, hideRoute)}
       <li
         class="flex items-center gap-x-2"
+        class:hidden
         id="route-{p.name}"
         in:fade
         out:fade={{ duration: 100 }}
@@ -146,6 +149,7 @@
     {:else if showRoute(p, filters, hideRoute)}
       <li
         class="location"
+        class:hidden
         id="route-{p.name}"
         in:fade
         out:fade={{ duration: 100 }}
@@ -163,6 +167,7 @@
     {:else if showCustom(p, filters, hideRoute)}
       <li
         class="location flex items-center gap-x-2"
+        class:hidden
         id="custom-{p.index}"
         in:fade
         out:fade={{ duration: 100 }}
@@ -184,6 +189,7 @@
     {:else if showGym(p, filters, hideRoute)}
       <li
         class="boss -mb-4 md:my-2"
+        class:hidden
         id="boss-{id}"
         in:fade
         out:fade={{ duration: 100 }}
