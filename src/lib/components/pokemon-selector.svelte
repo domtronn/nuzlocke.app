@@ -6,6 +6,8 @@
     type = '',
     infolink = ''
 
+  import { nonnull, equal as oEqual } from '$utils/obj'
+
   import { read, readdata, patch, getTeams } from '$lib/store'
   import { capitalise } from '$lib/utils/string'
 
@@ -130,21 +132,21 @@
     )
 
   $: {
-    if (selected)
-      store.update(
-        patch({
-          [location]: {
-            id,
-            pokemon: selected?.alias,
-            status: status?.id,
-            nature: nature?.id,
-            location: locationName || location,
-            ...(nickname ? { nickname } : {}),
-            ...(hidden ? { hidden: true } : {}),
-            ...(status?.id === 5 && death ? { death } : {})
-          }
-        })
-      )
+    const topatch = nonnull({
+      id,
+      pokemon: selected?.alias,
+      status: status?.id,
+      nature: nature?.id,
+      location: locationName || location,
+      ...(nickname ? { nickname } : {}),
+      ...(hidden ? { hidden: true } : {}),
+      ...(status?.id === 5 && death ? { death } : {})
+    })
+
+    if (selected && !oEqual(topatch, resetd)) {
+      console.log('Patching', location)
+      store.update(patch({ [location]: topatch }))
+    }
 
     // TODO: Handle death state team clearin
     inteam = (team || []).includes(location)

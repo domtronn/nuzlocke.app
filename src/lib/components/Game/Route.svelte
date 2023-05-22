@@ -99,10 +99,11 @@
     document.getElementById(id) ? scrollToItem(id) : (scroll = id)
   }
 
-  const locid = (p, i) =>
-    p.type === 'custom'
-      ? slugify(`${p.type}-${p.name}-${i}`)
+  const locid = (p, i) => {
+    return p.type === 'custom'
+      ? slugify(`${p.type}-${p.name}-${p.id}`)
       : slugify(`${p.type}-${p.name}-${p.origPos}`)
+  }
 
   afterUpdate(() => {
     if (!scroll) return
