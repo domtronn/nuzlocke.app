@@ -15,6 +15,10 @@
   })
 </script>
 
+<svelte:head>
+  <meta name="robots" content="follow, index" />
+</svelte:head>
+
 <slot />
 
 <style global lang="postcss">

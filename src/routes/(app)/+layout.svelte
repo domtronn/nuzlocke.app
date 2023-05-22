@@ -61,7 +61,12 @@
 
 <svelte:window on:resize={onresize} />
 <svelte:head>
-  <link rel="preload" as="image" href="https://img.nuzlocke.app/assets/pokemon-v6.png" />
+  <meta name="robots" content="follow, index" />
+  <link
+    rel="preload"
+    as="image"
+    href="https://img.nuzlocke.app/assets/pokemon-v6.png"
+  />
 </svelte:head>
 
 <Modal

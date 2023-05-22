@@ -37,14 +37,14 @@
       >?</span
     >
     <span class="">
-        <h1
+      <h1
         class="translate-y-56 text-6xl font-bold tracking-wide drop-shadow-text"
       >
         {$page.status}
-        </h1>
+      </h1>
       <h2
         class="mb-4 translate-y-56 font-sans text-xl font-medium tracking-wide text-gray-800 dark:text-gray-400"
-        >
+      >
         {#if $page.status === 404}
           This page could not be found, or no longer exists.
         {:else}
@@ -61,20 +61,28 @@
       </p>
       <p
         class="mx-auto max-w-sm translate-y-56 font-sans text-gray-800 dark:text-gray-400 sm:max-w-md"
-        >
+      >
         {#if $page.status === 404}
-          Try going back <a href="/">home</a>, but if you think this is a mistake or can't find what you're looking reach out over on <a
-          href="https://discord.gg/gtdceegtYB"
-          target="_blank"
-          rel="noreferrer">Discord</a>.
-
+          Try going back <a href="/">home</a>, but if you think this is a
+          mistake or can't find what you're looking reach out over on
+          <a
+            href="https://discord.gg/gtdceegtYB"
+            target="_blank"
+            rel="noreferrer">Discord</a
+          >.
+        {:else}
+          {#if $page.error.action}
+            {@html $page.error.action},
           {:else}
             Try <a href="{$page.url.pathname}?force-pass={+new Date()}"
-                   >reloading the page</a>, if the problem persists report the bug on
-        <a
-          href="https://discord.gg/gtdceegtYB"
-          target="_blank"
-          rel="noreferrer">Discord</a>.
+              >reloading the page</a
+            >,
+          {/if} if the problem persists report the bug on
+          <a
+            href="https://discord.gg/gtdceegtYB"
+            target="_blank"
+            rel="noreferrer">Discord</a
+          >.
         {/if}
       </p>
     </span>
@@ -87,9 +95,12 @@
 </div>
 
 <style lang="postcss">
-
-  a { @apply underline; }
-  a:hover { @apply text-blue-500; }
+  :global(a) {
+    @apply !underline;
+  }
+  :global(a:hover) {
+    @apply text-blue-500;
+  }
 
   img {
     image-rendering: pixelated;

@@ -23,7 +23,6 @@
 <svelte:head>
   {#if $page.status === 200}
     <title>{title} | {subtitle}</title>
-    <meta name="robots" content="follow, index" />
     <meta property="og:title" content="{title} | {subtitle}" />
     <meta name="twitter:title" content={title} />
 
