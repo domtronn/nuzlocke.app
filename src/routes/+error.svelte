@@ -95,10 +95,10 @@
 </div>
 
 <style lang="postcss">
-  :global(a) {
+  a {
     @apply !underline;
   }
-  :global(a:hover) {
+  a:hover {
     @apply text-blue-500;
   }
 
