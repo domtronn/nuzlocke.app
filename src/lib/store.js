@@ -266,7 +266,7 @@ const _parse = (gameData) =>
           id,
           created,
           ...(updated ? { updated } : {}),
-          name,
+          name: decodeURIComponent(name),
           game,
           settings,
           attempts
@@ -285,7 +285,7 @@ export const format = (saveData) =>
     saveData.updated
       ? saveData.created + '>' + saveData.updated
       : saveData.created,
-    saveData.name,
+    encodeURIComponent(saveData.name),
     saveData.game,
     saveData.settings,
     +saveData.attempts || 1
