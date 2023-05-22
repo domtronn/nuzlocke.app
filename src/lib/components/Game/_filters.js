@@ -22,7 +22,6 @@ const pokemonSearch = (s, item) => {
 }
 
 export const filterEntry = (filters, search, data, progress) => (route) => {
-  debugger
   const { main: fMain, route: fRoute } = filters
   const { origPos, name } = route
 
