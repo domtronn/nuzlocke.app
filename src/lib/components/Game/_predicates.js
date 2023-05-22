@@ -31,6 +31,15 @@ export const hideRouteF = (data) => {
   }
 }
 
+export const isStarter = (route) => {
+  const { type, name } = route
+  return (type === TYPES.ROUTE && name.toLowerCase().trim() === STARTER_ID)
+}
+
+export const isRoute = (route) => route.type === TYPES.ROUTE
+export const isCustom = (route) => route.type === TYPES.CUSTOM
+export const isGym = (route) => route.type === TYPES.GYM
+
 /**
  * Predicate to say whether route data is
  * @param {} route

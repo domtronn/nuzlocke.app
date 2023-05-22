@@ -22,6 +22,11 @@
 
   import {
     hideRouteF,
+    isRoute,
+    isGym,
+    isStarter,
+    isCustom,
+
     showStarterRoute,
     showRoute,
     showGym,
@@ -117,13 +122,14 @@
 <ul bind:this={ulRef} class="flex flex-col gap-y-0 lg:gap-y-2 {className}">
   {#each routeList as p, id (locid(p, id))}
     {@const hidden = !filterEntry(filters, search, game.data, progress - 1)(p)}
-    {#if showStarterRoute(p, filters, hideRoute)}
+
+  {#if isStarter(p)}
       <li
         class="flex items-center gap-x-2"
-        class:hidden
         id="route-{p.name}"
         in:fade
         out:fade={{ duration: 100 }}
+        class:hidden={hidden || !showStarterRoute(p, filters, hideRoute)}
       >
         <PokemonSelector
           {id}
@@ -147,13 +153,13 @@
           </div>
         </PokemonSelector>
       </li>
-    {:else if showRoute(p, filters, hideRoute)}
+    {:else if isRoute(p)}
       <li
         class="location"
-        class:hidden
         id="route-{p.name}"
         in:fade
         out:fade={{ duration: 100 }}
+        class:hidden={hidden || !showRoute(p, filters, hideRoute)}
       >
         <PokemonSelector
           {id}
@@ -165,13 +171,13 @@
           on:new={onnewlocation}
         />
       </li>
-    {:else if showCustom(p, filters, hideRoute)}
+    {:else if isCustom(p)}
       <li
         class="location flex items-center gap-x-2"
-        class:hidden
         id="custom-{p.index}"
         in:fade
         out:fade={{ duration: 100 }}
+        class:hidden={hidden || !showCustom(p, filters, hideRoute)}
       >
         <PokemonSelector
           type="custom"
@@ -187,10 +193,10 @@
           </svelte:fragment>
         </PokemonSelector>
       </li>
-    {:else if showGym(p, filters, hideRoute)}
+    {:else if isGym(p)}
       <li
         class="boss -mb-4 md:my-2"
-        class:hidden
+        class:hidden={hidden || !showGym(p, filters)}
         id="boss-{id}"
         in:fade
         out:fade={{ duration: 100 }}
