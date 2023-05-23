@@ -6,12 +6,10 @@
   import { createUser, readdata } from '$lib/store'
 
   import { RegionMap } from '$lib/data/games'
-  import { GameHeading, NavHeading } from '$c/navs'
 
   import { fetchData, fetchLeague } from '$utils/fetchers'
   import { normalise } from '$utils/string'
 
-  import Modal from 'svelte-simple-modal'
   import deferStyles from '$lib/utils/defer-styles'
 
   let path = $page.url.pathname
@@ -61,7 +59,6 @@
 
 <svelte:window on:resize={onresize} />
 <svelte:head>
-  <meta name="robots" content="follow, index" />
   <link
     rel="preload"
     as="image"
@@ -69,18 +66,4 @@
   />
 </svelte:head>
 
-<Modal
-  closeButton={false}
-  styleBg={{ background: 'rgba(0, 0, 0, 0.8)', zIndex: 9999 }}
-  classBg="modal-positioning overflow-y-scroll"
-  classWindowWrap="!m-4"
-  classWindow="!bg-transparent"
-  classContent="!p-0 !overflow-visible"
->
-  {#if ['/game', '/box', '/graveyard'].includes(path)}
-    <GameHeading />
-  {:else}
-    <NavHeading />
-  {/if}
-  <slot />
-</Modal>
+<slot />
