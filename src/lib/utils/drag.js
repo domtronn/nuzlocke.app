@@ -1,15 +1,17 @@
-export function drag (node, { data, id, effect, hideImg = false }) {
+export function drag(node, { data, id, effect, hideImg = false }) {
   node.setAttribute('draggable', true)
 
   const startListener = node.addEventListener('dragstart', (evt) => {
-    const imgEl = evt.target.querySelector('[data-drag-img]')
-      || evt.target.querySelector('.data-drag-img')
-      || evt.target
+    const imgEl =
+      evt.target.querySelector('[data-drag-img]') ||
+      evt.target.querySelector('.data-drag-img')
+
+    if (!imgEl) return
 
     if (hideImg) imgEl.classList.remove('invisible')
 
-    let position = [50,40]
-    const { matches } = window.matchMedia("(max-width: 700px)")
+    let position = [50, 40]
+    const { matches } = window.matchMedia('(max-width: 700px)')
     if (matches) position = [75, 65]
 
     evt.dataTransfer.effectAllowed = effect
@@ -21,9 +23,12 @@ export function drag (node, { data, id, effect, hideImg = false }) {
 
   const endListener = node.addEventListener('dragend', (evt) => {
     if (!hideImg) return
-    const imgEl = evt.target.querySelector('[data-drag-img]')
-      || evt.target.querySelector('.data-drag-img')
-      || evt.target
+
+    const imgEl =
+      evt.target.querySelector('[data-drag-img]') ||
+      evt.target.querySelector('.data-drag-img')
+
+    if (!imgEl) return
 
     if (hideImg) imgEl.classList.add('invisible')
   })
@@ -34,5 +39,4 @@ export function drag (node, { data, id, effect, hideImg = false }) {
       node.removeEventListener('dragend', endListener)
     }
   }
-
 }
