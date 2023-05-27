@@ -48,16 +48,28 @@
     "lastUpdated": "26th April 2023"
   },
   "rrss": {
-    "pid": "rrss",
+    "pid": "rruby",
     "lid": "rrss",
-    "logo": "/logos/rising-sinking-logo",
-    "title": "Rising Ruby / Sinking Sapphire",
+    "logo": "/logos/rising-ruby-logo",
+    "title": "Rising Ruby",
     "gen": "romhack",
     "supported": true,
     "patched": true,
     "patchId": "rrss",
     "region": "hoenn",
     "lastUpdated": "3rd April 2023"
+  },
+  "ssaph": {
+    "pid": "ssaph",
+    "lid": "rrss",
+    "logo": "/logos/sinking-sapphire-logo",
+    "title": "Sinking Sapphire",
+    "gen": "romhack",
+    "supported": true,
+    "patched": true,
+    "patchId": "rrss",
+    "region": "hoenn",
+    "lastUpdated": "27th May 2023"
   },
   "unbound": {
     "pid": "unbound",
