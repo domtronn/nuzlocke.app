@@ -78428,6 +78428,29 @@
       ]
     },
     {
+      "type": "gym",
+      "name": "Malie City",
+      "value": "r5",
+      "group": "rival",
+      "boss": "Hau"
+    },
+    {
+      "type": "route",
+      "name": "Route 11",
+      "encounters": [
+        "parasect",
+        "ledian",
+        "ariados",
+        "monferno",
+        "pancham",
+        "pangoro",
+        "trumbeak",
+        "toucannon",
+        "shiinotic",
+        "komala"
+      ]
+    },
+    {
       "type": "route",
       "name": "Malie City",
       "encounters": [
@@ -78438,11 +78461,27 @@
       ]
     },
     {
-      "type": "gym",
-      "name": "Malie City",
-      "value": "r5",
-      "group": "rival",
-      "boss": "Hau"
+      "type": "route",
+      "name": "Malie Garden",
+      "encounters": [
+        "meowth-alola",
+        "persian-alola",
+        "psyduck",
+        "poliwhirl",
+        "poliwrath",
+        "goldeen",
+        "seaking",
+        "magikarp",
+        "gyarados",
+        "ledian",
+        "ariados",
+        "politoed",
+        "masquerain",
+        "castform",
+        "petilil",
+        "basculin",
+        "araquanid"
+      ]
     },
     {
       "type": "gym",
@@ -78494,50 +78533,11 @@
       "boss": "Sophocles' Trial"
     },
     {
-      "type": "route",
-      "name": "Malie Garden",
-      "encounters": [
-        "meowth-alola",
-        "persian-alola",
-        "psyduck",
-        "poliwhirl",
-        "poliwrath",
-        "goldeen",
-        "seaking",
-        "magikarp",
-        "gyarados",
-        "ledian",
-        "ariados",
-        "politoed",
-        "masquerain",
-        "castform",
-        "petilil",
-        "basculin",
-        "araquanid"
-      ]
-    },
-    {
       "type": "gym",
       "name": "Malie Garden",
       "value": "gz1",
       "group": "evil-team",
       "boss": "Guzma"
-    },
-    {
-      "type": "route",
-      "name": "Route 11",
-      "encounters": [
-        "parasect",
-        "ledian",
-        "ariados",
-        "monferno",
-        "pancham",
-        "pangoro",
-        "trumbeak",
-        "toucannon",
-        "shiinotic",
-        "komala"
-      ]
     },
     {
       "type": "route",
@@ -83037,6 +83037,52 @@
       ]
     },
     {
+      "type": "gym",
+      "name": "Malie City",
+      "value": "r5",
+      "group": "rival",
+      "boss": "Hau"
+    },
+    {
+      "type": "route",
+      "name": "Route 11",
+      "encounters": [
+        "parasect",
+        "ledian",
+        "ariados",
+        "monferno",
+        "pancham",
+        "pangoro",
+        "trumbeak",
+        "toucannon",
+        "shiinotic",
+        "komala"
+      ]
+    },
+    {
+      "type": "route",
+      "name": "Malie Garden",
+      "encounters": [
+        "meowth-alola",
+        "persian-alola",
+        "psyduck",
+        "poliwhirl",
+        "poliwrath",
+        "goldeen",
+        "seaking",
+        "magikarp",
+        "gyarados",
+        "ledian",
+        "ariados",
+        "politoed",
+        "masquerain",
+        "castform",
+        "cottonee",
+        "basculin",
+        "araquanid"
+      ]
+    },
+    {
       "type": "route",
       "name": "Malie City",
       "encounters": [
@@ -83045,13 +83091,6 @@
         "trubbish",
         "minccino"
       ]
-    },
-    {
-      "type": "gym",
-      "name": "Malie City",
-      "value": "r5",
-      "group": "rival",
-      "boss": "Hau"
     },
     {
       "type": "gym",
@@ -83103,50 +83142,11 @@
       "boss": "Sophocles' Trial"
     },
     {
-      "type": "route",
-      "name": "Malie Garden",
-      "encounters": [
-        "meowth-alola",
-        "persian-alola",
-        "psyduck",
-        "poliwhirl",
-        "poliwrath",
-        "goldeen",
-        "seaking",
-        "magikarp",
-        "gyarados",
-        "ledian",
-        "ariados",
-        "politoed",
-        "masquerain",
-        "castform",
-        "cottonee",
-        "basculin",
-        "araquanid"
-      ]
-    },
-    {
       "type": "gym",
       "name": "Malie Garden",
       "value": "gz1",
       "group": "evil-team",
       "boss": "Guzma"
-    },
-    {
-      "type": "route",
-      "name": "Route 11",
-      "encounters": [
-        "parasect",
-        "ledian",
-        "ariados",
-        "monferno",
-        "pancham",
-        "pangoro",
-        "trumbeak",
-        "toucannon",
-        "shiinotic",
-        "komala"
-      ]
     },
     {
       "type": "route",
