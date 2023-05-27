@@ -1019,60 +1019,7 @@
       "link": "https://www.deviantart.com/PKMNTrainerSpriterC"
     },
     "pokemon": [
-      {
-        "name": "ninetales",
-        "level": "36",
-        "moves": [
-          {
-            "power": 130,
-            "type": "fire",
-            "damage_class": "special",
-            "name": "Overheat",
-            "effect": "Lowers the user's Special Attack by two stages after inflicting damage."
-          },
-          {
-            "power": 120,
-            "type": "grass",
-            "damage_class": "special",
-            "name": "Solar Beam",
-            "effect": "Requires a turn to charge before attacking."
-          },
-          {
-            "power": 80,
-            "type": "psychic",
-            "damage_class": "special",
-            "name": "Extrasensory",
-            "effect": "Has a 10% chance to make the target flinch."
-          },
-          {
-            "type": "psychic",
-            "damage_class": "status",
-            "name": "Hypnosis",
-            "effect": "Puts the target to sleep."
-          }
-        ],
-        "ability": {
-          "name": "Drought",
-          "effect": "Summons strong sunlight that lasts indefinitely upon entering battle."
-        },
-        "held": {
-          "sprite": "heat-rock",
-          "name": "Heat Rock",
-          "effect": "Held: Sunny Day by the holder lasts 8 rounds instead of 5."
-        },
-        "sprite": "38",
-        "types": [
-          "fire"
-        ],
-        "stats": {
-          "hp": 73,
-          "atk": 76,
-          "def": 75,
-          "spa": 81,
-          "spd": 100,
-          "spe": 100
-        }
-      },
+      null,
       {
         "name": "houndoom",
         "level": "36",
@@ -1470,62 +1417,7 @@
           "spe": 68
         }
       },
-      {
-        "name": "staraptor",
-        "level": "40",
-        "moves": [
-          {
-            "power": 70,
-            "type": "normal",
-            "damage_class": "physical",
-            "name": "Retaliate",
-            "effect": "Has double power if a friendly Pokémon fainted last turn."
-          },
-          {
-            "power": 120,
-            "type": "fighting",
-            "damage_class": "physical",
-            "name": "Close Combat",
-            "effect": "Lowers the user's Defense and Special Defense by one stage after inflicting damage."
-          },
-          {
-            "power": 70,
-            "type": "bug",
-            "damage_class": "physical",
-            "name": "U-turn",
-            "effect": "User must switch out after attacking."
-          },
-          {
-            "power": 140,
-            "type": "flying",
-            "damage_class": "physical",
-            "name": "Sky Attack",
-            "effect": "User charges for one turn before attacking.  Has a 30% chance to make the target flinch."
-          }
-        ],
-        "ability": {
-          "name": "Intimidate",
-          "effect": "Lowers opponents' Attack one stage upon entering battle."
-        },
-        "held": {
-          "sprite": "power-herb",
-          "name": "Power Herb",
-          "effect": "Held: Both turns of a two-turn charge move happen at once. Consumed upon use."
-        },
-        "sprite": "398",
-        "types": [
-          "normal",
-          "flying"
-        ],
-        "stats": {
-          "hp": 85,
-          "atk": 120,
-          "def": 70,
-          "spa": 50,
-          "spd": 60,
-          "spe": 100
-        }
-      },
+      null,
       {
         "name": "sawsbuck",
         "level": "40",
@@ -1581,61 +1473,7 @@
           "spe": 95
         }
       },
-      {
-        "name": "bouffalant",
-        "level": "40",
-        "moves": [
-          {
-            "power": 120,
-            "type": "normal",
-            "damage_class": "physical",
-            "name": "Head Charge",
-            "effect": "User receives 1/4 the damage it inflicts in recoil."
-          },
-          {
-            "power": 80,
-            "type": "psychic",
-            "damage_class": "physical",
-            "name": "Zen Headbutt",
-            "effect": "Has a 20% chance to make the target flinch."
-          },
-          {
-            "power": 120,
-            "type": "bug",
-            "damage_class": "physical",
-            "name": "Megahorn"
-          },
-          {
-            "power": 60,
-            "priority": -4,
-            "type": "fighting",
-            "damage_class": "physical",
-            "name": "Revenge",
-            "effect": "Inflicts double damage if the user takes damage before attacking this turn."
-          }
-        ],
-        "ability": {
-          "name": "Sap Sipper",
-          "effect": "Absorbs grass moves, raising Attack one stage."
-        },
-        "held": {
-          "sprite": "silk-scarf",
-          "name": "Silk Scarf",
-          "effect": "Held: Normal-Type moves from holder do 20% more damage."
-        },
-        "sprite": "626",
-        "types": [
-          "normal"
-        ],
-        "stats": {
-          "hp": 95,
-          "atk": 110,
-          "def": 95,
-          "spa": 40,
-          "spd": 95,
-          "spe": 55
-        }
-      },
+      null,
       {
         "name": "slaking",
         "level": "42",
