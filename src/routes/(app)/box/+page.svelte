@@ -492,7 +492,7 @@
                       ? 'on'
                       : 'in'}
                     {p.customName || p.location}
-                  {:else if !p.location}
+                  {:else if !p.location || (p.customId && !p.customName)}
                     Met in an unknown place
                   {:else if p.customName}
                     Met {p.customName.startsWith('Route') ? 'on' : 'in'}
