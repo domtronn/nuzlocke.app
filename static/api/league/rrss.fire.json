@@ -2380,9 +2380,166 @@
       "link": "https://www.deviantart.com/kyle-dove"
     },
     "pokemon": [
-      null,
-      null,
-      null,
+      {
+        "name": "politoed",
+        "level": "65",
+        "moves": [
+          {
+            "power": 110,
+            "type": "water",
+            "damage_class": "special",
+            "name": "Hydro Pump"
+          },
+          {
+            "power": 90,
+            "type": "ice",
+            "damage_class": "special",
+            "name": "Ice Beam",
+            "effect": "Has a 10% chance to freeze the target."
+          },
+          {
+            "power": 120,
+            "type": "fighting",
+            "damage_class": "special",
+            "name": "Focus Blast",
+            "effect": "Has a 10% chance to lower the target's Special Defense by one stage."
+          },
+          {
+            "type": "psychic",
+            "damage_class": "status",
+            "name": "Hypnosis",
+            "effect": "Puts the target to sleep."
+          }
+        ],
+        "ability": {
+          "name": "Drizzle",
+          "effect": "Summons rain that lasts indefinitely upon entering battle."
+        },
+        "held": {
+          "sprite": "damp-rock",
+          "name": "Damp Rock",
+          "effect": "Held: Rain Dance by the holder lasts 8 rounds instead of 5."
+        },
+        "sprite": "186",
+        "types": [
+          "water"
+        ],
+        "stats": {
+          "hp": 90,
+          "atk": 75,
+          "def": 75,
+          "spa": 90,
+          "spd": 100,
+          "spe": 70
+        }
+      },
+      {
+        "name": "ludicolo",
+        "level": "65",
+        "moves": [
+          {
+            "power": 110,
+            "type": "water",
+            "damage_class": "special",
+            "name": "Hydro Pump"
+          },
+          {
+            "power": 75,
+            "type": "grass",
+            "damage_class": "special",
+            "name": "Giga Drain",
+            "effect": "Drains half the damage inflicted to heal the user."
+          },
+          {
+            "power": 90,
+            "type": "ice",
+            "damage_class": "special",
+            "name": "Ice Beam",
+            "effect": "Has a 10% chance to freeze the target."
+          },
+          {
+            "type": "water",
+            "damage_class": "status",
+            "name": "Rain Dance",
+            "effect": "Changes the weather to rain for five turns."
+          }
+        ],
+        "ability": {
+          "name": "Swift Swim",
+          "effect": "Doubles Speed during rain."
+        },
+        "held": {
+          "sprite": "life-orb",
+          "name": "Life Orb",
+          "effect": "Held: Holder's moves inflict 30% extra damage, but cost 10% max HP."
+        },
+        "sprite": "272",
+        "types": [
+          "water",
+          "grass"
+        ],
+        "stats": {
+          "hp": 80,
+          "atk": 70,
+          "def": 70,
+          "spa": 90,
+          "spd": 100,
+          "spe": 70
+        }
+      },
+      {
+        "name": "kingdra",
+        "level": "65",
+        "moves": [
+          {
+            "power": 110,
+            "type": "water",
+            "damage_class": "special",
+            "name": "Hydro Pump"
+          },
+          {
+            "power": 90,
+            "type": "ice",
+            "damage_class": "special",
+            "name": "Ice Beam",
+            "effect": "Has a 10% chance to freeze the target."
+          },
+          {
+            "power": 85,
+            "type": "dragon",
+            "damage_class": "special",
+            "name": "Dragon Pulse"
+          },
+          {
+            "type": "water",
+            "damage_class": "status",
+            "name": "Rain Dance",
+            "effect": "Changes the weather to rain for five turns."
+          }
+        ],
+        "ability": {
+          "name": "Swift Swim",
+          "effect": "Doubles Speed during rain."
+        },
+        "held": {
+          "sprite": "mystic-water",
+          "name": "Mystic Water",
+          "effect": "Held: Water-Type moves from holder do 20% more damage."
+        },
+        "sprite": "230",
+        "types": [
+          "water",
+          "dragon"
+        ],
+        "stats": {
+          "hp": 75,
+          "atk": 95,
+          "def": 95,
+          "spa": 95,
+          "spd": 95,
+          "spe": 85
+        }
+      },
       {
         "name": "starmie",
         "level": "65",
@@ -2438,8 +2595,115 @@
           "spe": 115
         }
       },
-      null,
-      null
+      {
+        "name": "milotic",
+        "level": "67",
+        "moves": [
+          {
+            "power": 110,
+            "type": "water",
+            "damage_class": "special",
+            "name": "Hydro Pump"
+          },
+          {
+            "power": 90,
+            "type": "ice",
+            "damage_class": "special",
+            "name": "Ice Beam",
+            "effect": "Has a 10% chance to freeze the target."
+          },
+          {
+            "type": "normal",
+            "damage_class": "status",
+            "name": "Recover",
+            "effect": "Heals the user by half its max HP."
+          },
+          {
+            "priority": 4,
+            "type": "normal",
+            "damage_class": "status",
+            "name": "Protect",
+            "effect": "Prevents any moves from hitting the user this turn."
+          }
+        ],
+        "ability": {
+          "name": "Cute Charm",
+          "effect": "Has a 30% chance of infatuating attacking Pokémon on contact."
+        },
+        "held": {
+          "sprite": "leftovers",
+          "name": "Leftovers",
+          "effect": "Held: Restores 1/16 (6.25%) holder's max HP at the end of each turn."
+        },
+        "sprite": "350",
+        "types": [
+          "water"
+        ],
+        "stats": {
+          "hp": 95,
+          "atk": 60,
+          "def": 79,
+          "spa": 100,
+          "spd": 125,
+          "spe": 81
+        }
+      },
+      {
+        "name": "swampert",
+        "level": "67",
+        "moves": [
+          {
+            "power": 80,
+            "type": "water",
+            "damage_class": "physical",
+            "name": "Waterfall",
+            "effect": "Has a 20% chance to make the target flinch."
+          },
+          {
+            "power": 75,
+            "type": "ice",
+            "damage_class": "physical",
+            "name": "Ice Punch",
+            "effect": "Has a 10% chance to freeze the target."
+          },
+          {
+            "power": 100,
+            "type": "ground",
+            "damage_class": "physical",
+            "name": "Earthquake",
+            "effect": "Inflicts regular damage and can hit Dig users."
+          },
+          {
+            "power": 100,
+            "type": "rock",
+            "damage_class": "physical",
+            "name": "Stone Edge",
+            "effect": "Has an increased chance for a critical hit."
+          }
+        ],
+        "ability": {
+          "name": "Torrent",
+          "effect": "Strengthens water moves to inflict 1.5× damage at 1/3 max HP or less."
+        },
+        "held": {
+          "sprite": "swampertite",
+          "name": "Swampertite",
+          "effect": "Held: Allows Swampert to Mega Evolve into Mega Swampert."
+        },
+        "sprite": "260",
+        "types": [
+          "water",
+          "ground"
+        ],
+        "stats": {
+          "hp": 100,
+          "atk": 110,
+          "def": 90,
+          "spa": 85,
+          "spd": 90,
+          "spe": 60
+        }
+      }
     ]
   },
   "c": {

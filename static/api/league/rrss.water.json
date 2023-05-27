@@ -2258,7 +2258,62 @@
           "spe": 30
         }
       },
-      null,
+      {
+        "name": "gallade",
+        "level": "62",
+        "moves": [
+          {
+            "power": 120,
+            "type": "fighting",
+            "damage_class": "physical",
+            "name": "Close Combat",
+            "effect": "Lowers the user's Defense and Special Defense by one stage after inflicting damage."
+          },
+          {
+            "power": 80,
+            "type": "psychic",
+            "damage_class": "physical",
+            "name": "Zen Headbutt",
+            "effect": "Has a 20% chance to make the target flinch."
+          },
+          {
+            "power": 65,
+            "type": "dark",
+            "damage_class": "physical",
+            "name": "Knock Off",
+            "effect": "Target drops its held item."
+          },
+          {
+            "power": 90,
+            "type": "grass",
+            "damage_class": "physical",
+            "name": "Leaf Blade",
+            "effect": "Has an increased chance for a critical hit."
+          }
+        ],
+        "ability": {
+          "name": "Justified",
+          "effect": "Raises Attack one stage upon taking damage from a dark move."
+        },
+        "held": {
+          "sprite": "life-orb",
+          "name": "Life Orb",
+          "effect": "Held: Holder's moves inflict 30% extra damage, but cost 10% max HP."
+        },
+        "sprite": "475",
+        "types": [
+          "psychic",
+          "fighting"
+        ],
+        "stats": {
+          "hp": 68,
+          "atk": 125,
+          "def": 65,
+          "spa": 65,
+          "spd": 115,
+          "spe": 80
+        }
+      },
       {
         "name": "gardevoir",
         "level": "62",

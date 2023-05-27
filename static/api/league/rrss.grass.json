@@ -2380,8 +2380,113 @@
       "link": "https://www.deviantart.com/kyle-dove"
     },
     "pokemon": [
-      null,
-      null,
+      {
+        "name": "politoed",
+        "level": "65",
+        "moves": [
+          {
+            "power": 110,
+            "type": "water",
+            "damage_class": "special",
+            "name": "Hydro Pump"
+          },
+          {
+            "power": 90,
+            "type": "ice",
+            "damage_class": "special",
+            "name": "Ice Beam",
+            "effect": "Has a 10% chance to freeze the target."
+          },
+          {
+            "power": 120,
+            "type": "fighting",
+            "damage_class": "special",
+            "name": "Focus Blast",
+            "effect": "Has a 10% chance to lower the target's Special Defense by one stage."
+          },
+          {
+            "type": "psychic",
+            "damage_class": "status",
+            "name": "Hypnosis",
+            "effect": "Puts the target to sleep."
+          }
+        ],
+        "ability": {
+          "name": "Drizzle",
+          "effect": "Summons rain that lasts indefinitely upon entering battle."
+        },
+        "held": {
+          "sprite": "damp-rock",
+          "name": "Damp Rock",
+          "effect": "Held: Rain Dance by the holder lasts 8 rounds instead of 5."
+        },
+        "sprite": "186",
+        "types": [
+          "water"
+        ],
+        "stats": {
+          "hp": 90,
+          "atk": 75,
+          "def": 75,
+          "spa": 90,
+          "spd": 100,
+          "spe": 70
+        }
+      },
+      {
+        "name": "ludicolo",
+        "level": "65",
+        "moves": [
+          {
+            "power": 110,
+            "type": "water",
+            "damage_class": "special",
+            "name": "Hydro Pump"
+          },
+          {
+            "power": 75,
+            "type": "grass",
+            "damage_class": "special",
+            "name": "Giga Drain",
+            "effect": "Drains half the damage inflicted to heal the user."
+          },
+          {
+            "power": 90,
+            "type": "ice",
+            "damage_class": "special",
+            "name": "Ice Beam",
+            "effect": "Has a 10% chance to freeze the target."
+          },
+          {
+            "type": "water",
+            "damage_class": "status",
+            "name": "Rain Dance",
+            "effect": "Changes the weather to rain for five turns."
+          }
+        ],
+        "ability": {
+          "name": "Swift Swim",
+          "effect": "Doubles Speed during rain."
+        },
+        "held": {
+          "sprite": "life-orb",
+          "name": "Life Orb",
+          "effect": "Held: Holder's moves inflict 30% extra damage, but cost 10% max HP."
+        },
+        "sprite": "272",
+        "types": [
+          "water",
+          "grass"
+        ],
+        "stats": {
+          "hp": 80,
+          "atk": 70,
+          "def": 70,
+          "spa": 90,
+          "spd": 100,
+          "spe": 70
+        }
+      },
       {
         "name": "kingdra",
         "level": "65",
@@ -4715,7 +4820,62 @@
           "spe": 95
         }
       },
-      null,
+      {
+        "name": "claydol",
+        "level": "63",
+        "moves": [
+          {
+            "priority": -7,
+            "type": "psychic",
+            "damage_class": "status",
+            "name": "Trick Room",
+            "effect": "For five turns, slower Pokémon will act before faster Pokémon."
+          },
+          {
+            "power": 100,
+            "type": "ground",
+            "damage_class": "physical",
+            "name": "Earthquake",
+            "effect": "Inflicts regular damage and can hit Dig users."
+          },
+          {
+            "power": 90,
+            "type": "psychic",
+            "damage_class": "special",
+            "name": "Psychic",
+            "effect": "Has a 10% chance to lower the target's Special Defense by one stage."
+          },
+          {
+            "power": 90,
+            "type": "ice",
+            "damage_class": "special",
+            "name": "Ice Beam",
+            "effect": "Has a 10% chance to freeze the target."
+          }
+        ],
+        "ability": {
+          "name": "Levitate",
+          "effect": "Evades ground moves."
+        },
+        "held": {
+          "sprite": "leftovers",
+          "name": "Leftovers",
+          "effect": "Held: Restores 1/16 (6.25%) holder's max HP at the end of each turn."
+        },
+        "sprite": "344",
+        "types": [
+          "ground",
+          "psychic"
+        ],
+        "stats": {
+          "hp": 60,
+          "atk": 70,
+          "def": 105,
+          "spa": 70,
+          "spd": 120,
+          "spe": 75
+        }
+      },
       {
         "name": "tyranitar",
         "level": "63",
