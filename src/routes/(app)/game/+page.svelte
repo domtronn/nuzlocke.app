@@ -132,6 +132,10 @@
   }
 </script>
 
+<svelte:head>
+  <title>Nuzlocke Tracker | Game</title>
+</svelte:head>
+
 <SupportBanner />
 
 {#await setup()}
