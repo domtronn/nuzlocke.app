@@ -225,6 +225,10 @@
   }
 </script>
 
+<svelte:head>
+  <title>Nuzlocke Tracker | Box</title>
+</svelte:head>
+
 {#if loading}
   <Loader />
 {:else}
