@@ -5207,6 +5207,12 @@
             "type": "normal",
             "damage_class": "special",
             "name": "Hyper Voice"
+          },
+          {
+            "type": "grass",
+            "damage_class": "special",
+            "name": "Grass Knot",
+            "effect": "Inflicts more damage to heavier targets, with a maximum of 120 power."
           }
         ],
         "ability": {
